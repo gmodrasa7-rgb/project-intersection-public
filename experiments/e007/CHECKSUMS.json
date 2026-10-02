@@ -1,0 +1,16 @@
+{
+  "LICENSE-APACHE-2.0.txt": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+  "LICENSE-CC-BY-4.0.txt": "d557539df68e771cc1eedcc91d13f70fca930e508d11eedcafa4b15db49e3744",
+  "LICENSE_STATUS.md": "8dd9394c9d0d1d4235d07c1376e344d96c6b0e47d51c38fcfe6047cdf73553d8",
+  "PROVENANCE.md": "1375b44c465a342b68260baccb5222a29374325875b42f240f3eb286fbbc9d4f",
+  "README.md": "9efc7618d9fc1fa7504a3214d7a673bd55cac7c02bd2f7a2729ba698de0936d8",
+  "RUN.md": "7fb896d3b82a4865e6f2b2c35b89739da4eb1809b2086df61b6436753cc8d18c",
+  "model.py": "475c4d98d8ef374fd45429558e832f67ecaabda776183da72f3dc7ed2785048a",
+  "requirements.txt": "26db60f3749b2d582ef13e54530725d1038086c5b72953678670871c2b85e15a",
+  "test_e007_model.py": "3e9a418909299c6f25200cd92adb300db2565c20e1c6e06ed2db073128480831",
+  "test_e007_timing_probe.py": "b5fa07b41b976560d07b7d021b5f7dba6a8ccdca989f73f25fd0be5ad987483e",
+  "test_e007_timing_variants.py": "c25ccd378c5efcfdb3e490916d80cd9dbd0417db6d892df460b45b8551e00f4b",
+  "timing_probe.py": "41f93e738c82582d1b269ae2928842c872b24fd92122dce5cd1cb8df972a982c",
+  "timing_summary.json": "814f14cf9c2c4a1e42f8f8c0da29b83282a471e5a266767f3bae35c0a9e700a3",
+  "timing_variants.py": "e4f93752094b30e148e96f3b766a0ae7e897471bdcfe08edb705cdfa6576d83c"
+}

@@ -1,0 +1,22 @@
+{
+  "grid_version": "kf002-v2-target-symmetric",
+  "total_cases": 72,
+  "timing_sensitive_cases": 31,
+  "classification_sensitive_cases": 17,
+  "history_sensitive_cases": 31,
+  "timing_sensitive_share": 0.4305555555555556,
+  "by_leader": {
+    "A": {
+      "total_cases": 36,
+      "timing_sensitive_cases": 13,
+      "classification_sensitive_cases": 8,
+      "history_sensitive_cases": 13
+    },
+    "B": {
+      "total_cases": 36,
+      "timing_sensitive_cases": 18,
+      "classification_sensitive_cases": 9,
+      "history_sensitive_cases": 18
+    }
+  }
+}
