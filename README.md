@@ -18,6 +18,10 @@
 >
 > The purpose of the two-language structure is therefore not simple translation duplication, but **meaning preservation, cross-checking, and discovery of new observations that may emerge from differences between languages**.
 
+### Reproduced result
+
+[E007 timing sensitivity: 26 tests; 17/72 classification changes](E007_TIMING_RESULT.md)
+
 ### Research Contents
 
 The first public map of the private research program is available here:
@@ -487,6 +491,10 @@ unless their evidence and validation status are explicitly stated.
 > 두 언어 버전 사이에서 의미상 충돌이나 해석 차이가 발견될 경우 이를 숨기거나 임의로 하나에 맞추지 않는다. 차이의 원인을 기록하고 검토하여 필요한 경우 양쪽 문서를 수정하며, 그 과정에서 발견된 새로운 관점이 연구 가치가 있다면 별도의 주장으로 명시하고 검증한다.
 >
 > 즉, 두 언어 버전의 목적은 단순한 번역 복제가 아니라 **의미 보존과 상호 검수, 그리고 언어 차이에서 발생할 수 있는 새로운 관측의 발견**이다.
+
+### 재현 결과
+
+[E007 시점 민감도: 테스트 26개, 분류 변화 17/72](E007_TIMING_RESULT.md)
 
 ### 연구 내용 목차
 
