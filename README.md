@@ -6,9 +6,17 @@
 >
 > Project Intersection public materials use **Original 1: English canonical text** followed by **Original 2: Korean mirror text**.
 >
-> The Korean mirror should preserve the meaning, structure, claim status, and version of the English canonical text. New claims should not exist in only one language version.
+> The Korean mirror preserves the meaning, structure, claim status, and version of the English canonical text as closely as possible. New claims should not exist in only one language version.
 >
-> The author primarily conducts research through **natural-language Korean prompts**. When that work is organized and translated into the English canonical version, loss of meaning, translation error, expression distortion, conceptual omission, or interpretive differences may occur. To reduce these risks and allow verification of the original research intent and context, the **original Korean text is published alongside the English canonical version**. If a semantic conflict or interpretive difference is found between the two language versions, the discrepancy should be recorded, reviewed, and corrected rather than hidden.
+> The author primarily conducts research through **natural-language Korean prompts**. Therefore, when research is organized and translated into the English canonical version, loss of meaning, translation error, expression distortion, conceptual omission, or interpretive differences may occur.
+>
+> The project seeks to reduce these differences, but does not treat all linguistic noise only as error to be removed. When informative, differences between the two languages can become an **additional observation path for discovering new interpretations, omitted perspectives, or conceptual distinctions**.
+>
+> To preserve the original research intent and context, the **original Korean text is published alongside the English canonical version**.
+>
+> If semantic conflicts or interpretive differences are found between the two language versions, they are not hidden or arbitrarily forced into agreement. Their causes are recorded and reviewed, both texts are corrected when necessary, and any newly discovered perspective with research value is stated separately as a claim and subjected to verification.
+>
+> The purpose of the two-language structure is therefore not simple translation duplication, but **meaning preservation, cross-checking, and discovery of new observations that may emerge from differences between languages**.
 
 ### Research Contents
 
@@ -468,9 +476,17 @@ unless their evidence and validation status are explicitly stated.
 >
 > Project Intersection의 공개자료는 **원문1: 영어 정본** 뒤에 **원문2: 한국어 대응본**을 둔다.
 >
-> 한국어 대응본은 영어 정본의 의미·구조·주장 상태·버전을 최대한 동일하게 유지한다. 한 언어에만 새로운 주장이 존재하지 않도록 한다.
+> 한국어 대응본은 영어 정본의 **의미·구조·주장 상태·버전**을 최대한 동일하게 유지하며, 한 언어에만 새로운 주장이 존재하지 않도록 한다.
 >
-> 작성자는 주로 **한국어 자연어 프롬프트를 통해 연구**한다. 따라서 연구 내용을 영어 정본으로 정리·번역하는 과정에서 의미 전달의 손실, 번역 오차, 표현 왜곡, 개념 누락 또는 해석 차이가 발생할 수 있다. 이를 줄이고 원래의 연구 의도와 맥락을 확인할 수 있도록 **한국어 원문을 영어 정본과 함께 동시에 게재한다.** 두 언어 버전 사이에 의미상 충돌이나 해석 차이가 발견될 경우 해당 차이를 숨기지 않고 기록·검토·수정한다.
+> 작성자는 주로 **한국어 자연어 프롬프트를 통해 연구**한다. 따라서 연구 내용을 영어 정본으로 정리·번역하는 과정에서 의미 전달의 손실, 번역 오차, 표현 왜곡, 개념 누락 또는 해석 차이가 발생할 수 있다.
+>
+> 이를 줄이는 동시에, 언어 간 차이에서 발생하는 노이즈를 단순한 오류로만 제거하지 않고 **새로운 해석·누락된 관점·개념적 차이를 발견할 수 있는 추가 관측경로**로 활용한다.
+>
+> 이를 통해 원래의 연구 의도와 맥락을 확인할 수 있도록 **한국어 원문을 영어 정본과 함께 게재한다.**
+>
+> 두 언어 버전 사이에서 의미상 충돌이나 해석 차이가 발견될 경우 이를 숨기거나 임의로 하나에 맞추지 않는다. 차이의 원인을 기록하고 검토하여 필요한 경우 양쪽 문서를 수정하며, 그 과정에서 발견된 새로운 관점이 연구 가치가 있다면 별도의 주장으로 명시하고 검증한다.
+>
+> 즉, 두 언어 버전의 목적은 단순한 번역 복제가 아니라 **의미 보존과 상호 검수, 그리고 언어 차이에서 발생할 수 있는 새로운 관측의 발견**이다.
 
 ### 연구 내용 목차
 
