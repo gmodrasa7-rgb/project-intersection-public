@@ -60,13 +60,21 @@
 >
 > Both texts are corrected when necessary.
 >
-> If a newly discovered perspective has research value,
+> If a newly discovered  
+> perspective has research value,
+>
 > it is stated separately as a claim  
 > and subjected to verification.
 >
-> The two-language structure therefore serves  
-> **meaning preservation, cross-checking, and discovery of new observations**
-> rather than simple translation duplication.
+> The two-language structure is not  
+> simple translation duplication.
+>
+> Its purpose is  
+> **meaning preservation,
+>
+> cross-checking,  
+> and discovery of new observations  
+> that may emerge from differences between languages**.
 
 ---
 
@@ -910,7 +918,8 @@ and traceable.**
 > 필요한 경우  
 > 양쪽 문서를 수정한다.
 >
-> 그 과정에서 발견된 새로운 관점이  
+> 그 과정에서 발견된  
+> 새로운 관점이  
 > 연구 가치가 있다면
 >
 > 별도의 주장으로 명시하고  
@@ -921,11 +930,11 @@ and traceable.**
 > 두 언어 버전의 목적은  
 > 단순한 번역 복제가 아니다.
 >
-> **의미 보존  
-> + 상호 검수  
-> + 언어 차이에서 발생할 수 있는 새로운 관측의 발견**
+> **의미 보존
 >
-> 이 목적이다.
+> 상호 검수  
+> 언어 차이에서 발생할 수 있는  
+> 새로운 관측의 발견**이 목적이다.
 
 ---
 
