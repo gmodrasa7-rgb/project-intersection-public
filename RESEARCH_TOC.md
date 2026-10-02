@@ -10,9 +10,19 @@
 >
 > As of **2026-10-02**, the private repository's current master semantic index reports **1,434 blobs across 96 directories**, with path/classification coverage synchronized at that checkpoint. This is structural coverage, not proof that every claim is true, externally replicated, or empirically validated.
 >
-> Public-material language rule: **Original 1 = English canonical / Original 2 = Korean mirror**.
+> Project Intersection public materials use **Original 1: English canonical text** followed by **Original 2: Korean mirror text**.
 >
-> The author primarily conducts the underlying research through natural-language Korean prompts. The Korean original is therefore published alongside English public material when released so translation loss, distortion, omission, or interpretive differences can be detected and corrected.
+> The Korean mirror preserves the meaning, structure, claim status, and version of the English canonical text as closely as possible. New claims should not exist in only one language version.
+>
+> The author primarily conducts research through **natural-language Korean prompts**. Therefore, when research is organized and translated into the English canonical version, loss of meaning, translation error, expression distortion, conceptual omission, or interpretive differences may occur.
+>
+> The project seeks to reduce these differences, but does not treat all linguistic noise only as error to be removed. When informative, differences between the two languages can become an **additional observation path for discovering new interpretations, omitted perspectives, or conceptual distinctions**.
+>
+> To preserve the original research intent and context, the **original Korean text is published alongside the English canonical version**.
+>
+> If semantic conflicts or interpretive differences are found between the two language versions, they are not hidden or arbitrarily forced into agreement. Their causes are recorded and reviewed, both texts are corrected when necessary, and any newly discovered perspective with research value is stated separately as a claim and subjected to verification.
+>
+> The purpose of the two-language structure is therefore not simple translation duplication, but **meaning preservation, cross-checking, and discovery of new observations that may emerge from differences between languages**.
 
 ---
 
@@ -447,9 +457,19 @@ The goal is to make each public claim independently understandable, falsifiable,
 >
 > **2026-10-02** 기준 비공개 저장소의 현재 통합 의미목차에는 **1,434개 blob / 96개 디렉터리**가 기록되어 있으며, 해당 체크포인트에서 경로와 분류 상태가 동기화되어 있다. 이는 구조적 coverage를 뜻하며 모든 주장의 진실성·외부독립복제·현실 경험검증을 뜻하지 않는다.
 >
-> 공개자료 언어 규칙은 **원문1 = 영어 정본 / 원문2 = 한국어 대응본**이다.
+> Project Intersection의 공개자료는 **원문1: 영어 정본** 뒤에 **원문2: 한국어 대응본**을 둔다.
 >
-> 작성자는 기초 연구를 주로 한국어 자연어 프롬프트를 통해 수행한다. 따라서 공개 시 한국어 원문을 함께 제공하여 영어 변환 과정의 의미 손실·왜곡·누락·해석 차이를 검수할 수 있게 한다.
+> 한국어 대응본은 영어 정본의 **의미·구조·주장 상태·버전**을 최대한 동일하게 유지하며, 한 언어에만 새로운 주장이 존재하지 않도록 한다.
+>
+> 작성자는 주로 **한국어 자연어 프롬프트를 통해 연구**한다. 따라서 연구 내용을 영어 정본으로 정리·번역하는 과정에서 의미 전달의 손실, 번역 오차, 표현 왜곡, 개념 누락 또는 해석 차이가 발생할 수 있다.
+>
+> 이를 줄이는 동시에, 언어 간 차이에서 발생하는 노이즈를 단순한 오류로만 제거하지 않고 **새로운 해석·누락된 관점·개념적 차이를 발견할 수 있는 추가 관측경로**로 활용한다.
+>
+> 이를 통해 원래의 연구 의도와 맥락을 확인할 수 있도록 **한국어 원문을 영어 정본과 함께 게재한다.**
+>
+> 두 언어 버전 사이에서 의미상 충돌이나 해석 차이가 발견될 경우 이를 숨기거나 임의로 하나에 맞추지 않는다. 차이의 원인을 기록하고 검토하여 필요한 경우 양쪽 문서를 수정하며, 그 과정에서 발견된 새로운 관점이 연구 가치가 있다면 별도의 주장으로 명시하고 검증한다.
+>
+> 즉, 두 언어 버전의 목적은 단순한 번역 복제가 아니라 **의미 보존과 상호 검수, 그리고 언어 차이에서 발생할 수 있는 새로운 관측의 발견**이다.
 
 ---
 
