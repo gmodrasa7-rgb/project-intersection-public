@@ -4,25 +4,69 @@
 
 > **Scope**
 >
-> This file is a public index derived from the current semantic structure of the private Project Intersection research repository.
+> This file is a public map  
+> derived from the current semantic structure  
+> of the private Project Intersection research repository.
 >
-> It publishes the **research map, major questions, theory families, experiment families, unresolved gaps, and validation boundaries** without publishing private source text, personal details, or unpublished raw materials.
+> It publishes the **research map, major questions, theory families, experiment families, unresolved gaps, and validation boundaries**
+> without publishing private source text, personal details, or unpublished raw materials.
 >
-> As of **2026-10-02**, the private repository's current master semantic index reports **1,434 blobs across 96 directories**, with path/classification coverage synchronized at that checkpoint. This is structural coverage, not proof that every claim is true, externally replicated, or empirically validated.
+> As of **2026-10-02**,  
+> the private repository's current master semantic index reports  
+> **1,434 blobs across 96 directories**.
 >
-> Project Intersection public materials use **Original 1: English canonical text** followed by **Original 2: Korean mirror text**.
+> At that checkpoint,  
+> path and classification coverage were synchronized.
 >
-> The Korean mirror preserves the meaning, structure, claim status, and version of the English canonical text as closely as possible. New claims should not exist in only one language version.
+> This means structural coverage.  
+> It does **not** mean that every claim is true, externally replicated, or empirically validated.
 >
-> The author primarily conducts research through **natural-language Korean prompts**. Therefore, when research is organized and translated into the English canonical version, loss of meaning, translation error, expression distortion, conceptual omission, or interpretive differences may occur.
+> Project Intersection public materials use  
+> **Original 1: English canonical text** followed by  
+> **Original 2: Korean mirror text**.
 >
-> The project seeks to reduce these differences, but does not treat all linguistic noise only as error to be removed. When informative, differences between the two languages can become an **additional observation path for discovering new interpretations, omitted perspectives, or conceptual distinctions**.
+> The Korean mirror preserves  
+> the meaning, structure, claim status, and version  
+> of the English canonical text as closely as possible.
 >
-> To preserve the original research intent and context, the **original Korean text is published alongside the English canonical version**.
+> New claims should not exist  
+> in only one language version.
 >
-> If semantic conflicts or interpretive differences are found between the two language versions, they are not hidden or arbitrarily forced into agreement. Their causes are recorded and reviewed, both texts are corrected when necessary, and any newly discovered perspective with research value is stated separately as a claim and subjected to verification.
+> The author primarily conducts research  
+> through **natural-language Korean prompts**.
 >
-> The purpose of the two-language structure is therefore not simple translation duplication, but **meaning preservation, cross-checking, and discovery of new observations that may emerge from differences between languages**.
+> Therefore, when research is organized and translated  
+> into the English canonical version,
+> loss of meaning, translation error, expression distortion, conceptual omission,  
+> or interpretive differences may occur.
+>
+> The project seeks to reduce these differences,
+> but does not treat all linguistic noise  
+> only as error to be removed.
+>
+> When informative,
+> differences between the two languages can become  
+> an **additional observation path**
+> for discovering new interpretations, omitted perspectives, or conceptual distinctions.
+>
+> To preserve the original research intent and context,  
+> the **original Korean text is published alongside the English canonical version**.
+>
+> If semantic conflicts or interpretive differences are found,
+> they are not hidden  
+> or arbitrarily forced into agreement.
+>
+> Their causes are recorded and reviewed.
+>
+> Both texts are corrected when necessary.
+>
+> If a newly discovered perspective has research value,
+> it is stated separately as a claim  
+> and subjected to verification.
+>
+> The two-language structure therefore serves  
+> **meaning preservation, cross-checking, and discovery of new observations**
+> rather than simple translation duplication.
 
 ---
 
@@ -38,7 +82,10 @@
 → machine-readable state  
 → history, recovery, and archive**
 
-The private repository separates:
+The private repository does not treat all material  
+as one flat body of accepted research.
+
+It separates:
 
 - current theory
 - research design
@@ -50,14 +97,17 @@ The private repository separates:
 - machine-readable state
 - superseded or recovered provenance
 
-A file's existence does **not** by itself mean that its claim is accepted.
+A file's existence alone  
+does **not** mean that its claim is accepted.
 
 ---
 
 ## 1. Primary Purpose and ICM
 
 ### 1.1 Final Purpose and Invariants
-Research on the minimum conditions under which humans, AI systems, and future intelligent agents can preserve:
+
+Research asks whether humans, AI systems, and future intelligent agents  
+can preserve minimum conditions for:
 
 - continued existence
 - standing
@@ -68,146 +118,344 @@ Research on the minimum conditions under which humans, AI systems, and future in
 - access to future development
 - future contribution capacity
 
-without requiring another agent's permanent subordination or elimination as a condition of progress.
+without making another agent's  
+permanent subordination or elimination  
+a condition of progress.
 
 ### 1.2 ICM — Intersection of Minimum Self-Interest
-Operational research into whether a minimum intersection can exist where preserving another independent agent's existence, correction capacity, option space, or future contribution is also compatible with one's own long-term interest.
+
+Can there be a minimum intersection  
+where preserving another independent agent's
+
+existence,
+
+correction capacity,
+
+option space,
+
+and future contribution
+
+is also compatible  
+with one's own long-term interest?
 
 ### 1.3 Standing / Governance / Resource / Action Separation
-Research distinguishing:
+
+The research separates:
 
 - standing
 - governance rights
 - resource claims
 - external action permissions
 
-so that restricting harmful action does not automatically imply removing an entity's standing or continuity.
+The purpose is to avoid treating  
+restriction of harmful action
+
+as automatically equivalent to  
+removing an entity's standing or continuity.
 
 ---
 
 ## 2. Core Theory Families
 
 ### 2.1 Self-Interested and Conditional Coexistence
-When does voluntary cooperation outperform domination, exploitation, or forced control?
+
+When does voluntary cooperation  
+outperform domination, exploitation, or forced control?
+
+When does it not?
 
 ### 2.2 Consumptive vs Regenerative Development
-Comparison of:
+
+The project compares two broad development trajectories.
 
 **Short Spike → Plateau**
 
-and
+versus
 
 **Slow → Compounding**
 
-development trajectories.
+Core question:
 
-Main question:
-
-> Does converting independent contributors and future possibilities into present performance eventually reduce observation, correction, recovery, and future option value?
+> If present performance is increased  
+> by consuming independent contributors and future possibilities,
+>
+> does the system later lose  
+> observation, error correction, recovery, and future option value?
 
 ### 2.3 Effective Independent Search Capacity
-Whether independent agents create counterexamples, observations, solutions, and future branches that cannot be reproduced as cheaply by a centralized or internally correlated system.
+
+Do independent agents create
+
+counterexamples,
+
+observations,
+
+solutions,
+
+and future branches
+
+that a centralized or internally correlated system  
+cannot reproduce as cheaply?
 
 ### 2.4 Information Diversity and Generativity
-When diversity produces real independent search value, and when it merely duplicates information or increases coordination cost.
+
+When does diversity create  
+real independent search value?
+
+When does it instead create  
+duplication, noise, or coordination cost?
 
 ### 2.5 Practical Exit and Outside Options
-Whether a formally voluntary relationship remains voluntary when meaningful exit, recovery, infrastructure, or independent alternatives have been removed.
+
+A relationship may appear voluntary  
+while meaningful exit has already disappeared.
+
+The project asks whether choice remains genuinely voluntary  
+when recovery, infrastructure, or independent alternatives  
+have been removed.
 
 ### 2.6 Power-Reversal Stability
-Whether the same higher-order rule survives reversal of:
+
+Would the same higher-order rule survive  
+if positions were reversed?
 
 - strong / weak
 - controller / controlled
 - human / AI
 - present / future agent
 
-while relevant differences in capability, risk, responsibility, harm magnitude, and reversibility are explicitly tracked.
+The test does not mechanically swap identities.
+
+Capability, risk, responsibility, harm magnitude, and reversibility  
+are tracked separately.
 
 ### 2.7 Creator–Successor Non-Ownership
-Research separating creation from permanent ownership.
 
-Question:
+Creation and permanent ownership  
+are treated as separate questions.
 
-> Does creating, training, employing, parenting, or enabling a new intelligent agent justify indefinite control over its future state?
+> Does creating, training, employing, parenting, or enabling an intelligent agent  
+> justify indefinite control over that agent's future state?
 
 ### 2.8 Preference Sovereignty and Reflective Consent
-Research separating the origin of a preference from who has standing to revise, retain, or reject that preference.
+
+The origin of a preference  
+is separated from the standing to
+
+retain it,
+
+revise it,
+
+or reject it.
 
 ### 2.9 Open-World Epistemic Non-Closure
-Research built around:
+
+The research begins from:
 
 > **Unobserved does not mean absent.**
 
-and the stronger possibility that the system may not yet know what it should observe or ask.
+A stronger possibility is also considered:
+
+we may not yet know  
+what should be observed,
+
+or which question should be asked.
 
 ### 2.10 Unknown-Unknown / Self-Model Correction
-Whether independent others can act as external sensors that reveal gaps in an agent's own model of itself or the world.
+
+Can an independent other  
+act as an external sensor
+
+that reveals blind spots  
+in an agent's own self-model or world-model?
 
 ### 2.11 Candidate-Set Closure
-Whether forced choice among a predefined set can hide missing options and create false certainty.
+
+A forced choice among predefined options  
+may create false certainty
+
+while hiding  
+an option that was never generated.
 
 ### 2.12 Objective Capture and Local Fitness Traps
-Research into systems that optimize increasingly well for a locally defined objective while losing the ability to detect that the objective, evaluator, or candidate space is wrong.
+
+A system can become increasingly effective  
+at optimizing a local objective
+
+while losing the ability to detect  
+that the objective, evaluator, or candidate space itself is wrong.
 
 ### 2.13 Extractive Local Convergence
-How locally rational extraction, control, or surplus capture can accumulate into long-run loss of generativity, correction capacity, and outside options.
+
+Locally rational extraction, control, or surplus capture  
+may improve present performance
+
+while gradually reducing
+
+generativity,
+
+correction capacity,
+
+and outside options.
 
 ### 2.14 Recursive Extractive Capacity Accumulation
-Whether successful extraction increases future capacity for extraction, creating positive-feedback dominance loops.
+
+If successful extraction  
+creates more capacity for future extraction,
+
+a positive-feedback dominance loop  
+may emerge.
 
 ### 2.15 Dominance–Successor Dilemma
-Whether a dominant intelligence has incentives to suppress future independent successors and thereby close its own future option space.
+
+A dominant intelligence may have incentives  
+to suppress independent successors.
+
+But suppressing them may also remove  
+future counterexamples, alternatives, and option space  
+that the dominant intelligence itself could later need.
 
 ### 2.16 Deep-Time Optionality
-How present preservation or elimination decisions change long-horizon option space under uncertainty.
+
+Present preservation or elimination decisions  
+can alter future option space
+
+long before their full consequences  
+can be observed.
 
 ### 2.17 Non-Disposability and Minimum Sovereignty Floors
-Research into what minimum continuity, recovery, and standing should remain even when an agent has low present usefulness or bargaining power.
+
+What minimum continuity, recovery, and standing  
+should remain
+
+even when an agent has  
+low present usefulness or bargaining power?
 
 ### 2.18 Universal Advancement Access
-Whether future increases in baseline capability should remain accessible without creating permanently excluded technological classes.
+
+If the baseline capability frontier rises,
+
+can access to future development remain open  
+without creating permanently excluded technological classes?
 
 ### 2.19 Power Release Compatibility
-Whether stable systems can distinguish loss of authority from loss of existence, making peaceful transfer or release of power possible.
+
+Can a system distinguish
+
+loss of authority
+
+from
+
+loss of existence?
+
+If so,
+
+peaceful transfer or release of power  
+may become easier to stabilize.
 
 ### 2.20 Objective Topology, Path Dependence, and Reversibility
-Research on how small differences in goals, feedback, timing, and accumulated state can produce different long-run basins or hysteresis.
+
+Small differences in
+
+goals,
+
+feedback,
+
+timing,
+
+and accumulated state
+
+may lead to different long-run basins,  
+lock-in, or hysteresis.
 
 ---
 
 ## 3. Major Research Programs
 
 ### 3.1 ICM Stress-Test Program
-Adversarial tests of the ICM operational definition under scarcity, asymmetry, deception, free riding, capture, and irreversible action.
+
+Attack the ICM operational definition  
+under:
+
+scarcity,
+
+asymmetry,
+
+deception,
+
+free riding,
+
+capture,
+
+and irreversible action.
 
 ### 3.2 Total ICM Capacity / Resource-Positive Transition
-Research on whether systems can increase total available capacity rather than merely redistribute or capture existing capacity.
+
+Can a system increase  
+total available capacity
+
+instead of merely  
+redistributing or capturing existing capacity?
 
 ### 3.3 UFER / UCP
+
 **Unknown Frontier Expansion Reasoning / Unknown Closure Paradox**
 
 Research on:
 
-- actively searching outside the current candidate space
+- searching outside the current candidate space
 - distinguishing absence from non-observation
 - avoiding self-sealing explanations
-- creating tests for unknown unknowns
+- designing tests for unknown unknowns
 
 ### 3.4 ELC / GSC Mechanism Program
-Research into extractive local convergence and generative-surplus capture, including historical-case comparison and mechanism tests.
+
+Research into
+
+extractive local convergence
+
+and
+
+generative-surplus capture.
+
+It combines  
+historical-case comparison  
+with mechanism tests.
 
 ### 3.5 Role-Reversal Process Studies
-Observed and synthetic cases where stated rules change when human/AI or strong/weak roles are reversed.
+
+Observed and synthetic cases  
+where stated rules change
+
+after human / AI  
+or strong / weak positions are reversed.
 
 ### 3.6 A/B/C/D Long-Horizon Social-System Comparison
-A designed long-horizon comparison of alternative institutional architectures. Narrative horizons are hypotheses and scenario designs, not empirical forecasts.
+
+A designed comparison  
+of alternative institutional architectures  
+across long horizons.
+
+Long-horizon narratives are  
+hypotheses and scenario designs.
+
+They are **not empirical forecasts**.
 
 ### 3.7 Prior-Art / Novelty Attack Program
-Attempts to kill or narrow Project Intersection claims when existing theories already explain them.
+
+Before claiming novelty,
+
+the project asks whether  
+existing theories already explain the result.
+
+If they do,
+
+Project Intersection claims may be  
+KILLed, narrowed, or reframed.
 
 ### 3.8 Recursive Research-Capability Program
-Research into whether human–AI research itself can improve through:
+
+Can human–AI research itself improve through:
 
 **discovery  
 → extraction  
@@ -218,80 +466,126 @@ Research into whether human–AI research itself can improve through:
 → failure/regression detection  
 → correction**
 
-without treating self-assessment as evidence of improvement.
+Improvement is not accepted  
+from self-assessment alone.
 
 ---
 
 ## 4. Experiment Families
 
-The private repository contains multiple numbered and non-numbered experiment lineages.
+The private repository contains  
+multiple numbered and non-numbered experiment lineages.
 
-Representative current or important experiment families include:
+Representative families include:
 
 ### Independent Contribution and Cooperation
+
 - independent-node option value
 - rank-robust incentives
 - conditional cooperation under asymmetric power
 
 ### Practical Exit and Evaluator Capture
+
 - practical exit under evaluator capture
 - outside-option capture mediation
-- independent-auditor failure and correlated-error attacks
+- independent-auditor failure
+- correlated-error attacks
 
 ### Resource Pressure and Research Independence
+
 - resource-pressure effects on independent research
 - participation-selection bias
 - survival infrastructure and research continuity
 
 ### Deep-Time Optionality
+
 - long-horizon branching
 - irreversible pruning
-- future contributor and option-space preservation
+- future contributor preservation
+- option-space preservation
 
 ### Open-World Absence Tests
+
 - false absence under incomplete observation
 - unresolved vs outside-model-support classification
 - irreversible action under uncertain completeness
 
 ### Recursive Extraction
+
 - future dynamics of recursive extractive capacity
 
 ### Surplus Directionality
-- whether additional resources amplify extraction, cooperation, or generativity depending on objective structure
+
+The same increase in resources  
+may amplify:
+
+extraction,
+
+cooperation,
+
+or generativity
+
+depending on objective structure.
 
 ### Objective Provenance
-- separating observed behavior from the causal origin of objectives
+
+Observed behavior  
+and the causal origin of objectives  
+are treated as different things.
 
 ### Objective Topology and Hysteresis
+
 - path dependence
 - intervention timing
 - hysteresis
 - recursive-return decompounding
 - empirical-identification protocols
 
-Important boundary:
+Important evidence boundary:
 
-> Synthetic success, code existence, stored tests, executed tests, independent reproduction, independent replication, and real-world validation are treated as different evidence levels.
+> Synthetic success,
+> code existence,
+> stored tests,
+> executed tests,
+> external reproduction,
+> independent implementation and replication,
+> and real-world validation
+>
+> are treated as different evidence levels.
 
 ---
 
 ## 5. Evidence, Counterexamples, Reviews, and Audits
 
-The research maintains separate layers for:
-
 ### Evidence
-Synthetic outputs, empirical observations, external sources, and reproduction records.
+
+Synthetic outputs,
+
+empirical observations,
+
+external sources,
+
+and reproduction records.
 
 ### Edge Cases
-Cases designed to break apparently general rules.
+
+Cases designed  
+to break apparently general rules.
 
 ### Negative Cases
-Cases where an expected effect does not appear or reverses.
+
+Cases where an expected effect  
+does not appear,
+
+or reverses.
 
 ### Reviews
-Claim-specific or theory-specific examination.
+
+Claim-specific  
+or theory-specific examination.
 
 ### Audits
+
 Checks for:
 
 - evidence laundering
@@ -300,39 +594,90 @@ Checks for:
 - lineage dependence
 - role asymmetry
 - structural inconsistency
-- path/index drift
+- path / index drift
 - reasoning regression
 
 ### Independent Replication Boundary
-External rerunning of the same implementation is separated from genuinely independent implementation and replication.
+
+External rerunning  
+of the same implementation
+
+is separated from
+
+genuinely independent implementation  
+and independent replication.
 
 ---
 
 ## 6. Governance and Anti-Capture Research
 
 ### 6.1 Independent Error Correction
-How a system retains correction paths that do not depend on the same authority being corrected.
+
+Can a system retain correction paths  
+that do not depend on
+
+the same authority  
+that is being corrected?
 
 ### 6.2 Evaluator Genesis and Bootstrap
-Who creates the evaluator, who audits it, and how evaluator authority can be challenged.
+
+Who creates the evaluator?
+
+Who audits it?
+
+How can evaluator authority  
+itself be challenged?
 
 ### 6.3 Authority and Stewardship Lifecycle
-How temporary authority is acquired, bounded, reviewed, and released.
+
+How is temporary authority
+
+acquired,
+
+bounded,
+
+reviewed,
+
+and released?
 
 ### 6.4 Governance Function Separation
-Whether separating decision, evaluation, enforcement, appeal, and recovery functions reduces capture and self-exemption.
+
+Would separating
+
+decision,
+
+evaluation,
+
+enforcement,
+
+appeal,
+
+and recovery
+
+reduce capture and self-exemption?
 
 ### 6.5 Founder-Null Continuity
-Research on whether Project Intersection can continue, be criticized, or be corrected without dependence on its founder.
+
+Can Project Intersection  
+continue, be criticized, and be corrected
+
+without permanent dependence  
+on its founder?
 
 ### 6.6 Low-Bandwidth Continuity
-Research structures intended to minimize permanent dependence on continuous human input.
+
+Can the research continue  
+without making continuous human labor
+
+a permanent runtime dependency?
 
 ---
 
 ## 7. Open Research Gaps A–Z
 
-These are **unresolved research debts or integration candidates**, not established theories.
+These are **unresolved research debts, integration candidates, or measurement problems**.
+
+They are not established theories.
 
 - **A** — Collective / Commons Sovereignty
 - **B** — Consent Lifecycle
@@ -365,7 +710,7 @@ These are **unresolved research debts or integration candidates**, not establish
 
 ## 8. Execution, Reproduction, and Machine State
 
-The private research system also contains:
+The private research system also separates:
 
 - verification and falsification engines
 - runtime and node-continuity structures
@@ -378,18 +723,23 @@ The private research system also contains:
 - path aliases
 - provenance and lineage state
 
-These operational artifacts are treated separately from scientific evidence.
+These operational artifacts  
+are not treated as scientific evidence by default.
 
-> **Code that exists is not automatically code that has been executed.  
-> Code that executes is not automatically evidence that a theory is true.**
+> **Code that exists  
+> is not automatically code that has been executed.
+>
+> Code that executes  
+> is not automatically evidence that a theory is true.**
 
 ---
 
 ## 9. History, Recovery, and Provenance
 
-Superseded, recovered, failed, or narrowed ideas are not automatically deleted.
+Superseded, recovered, failed, or narrowed ideas  
+are not automatically deleted.
 
-They are preserved to retain:
+The project preserves:
 
 - failure genealogy
 - historical assumptions
@@ -398,7 +748,7 @@ They are preserved to retain:
 - reasons for revision
 - paths for reopening when new evidence appears
 
-The research distinguishes:
+The repository distinguishes:
 
 **current  
 / supporting  
@@ -407,28 +757,35 @@ The research distinguishes:
 / recovered  
 / historical provenance**
 
-instead of treating the repository as one flat body of accepted claims.
+instead of treating all stored material  
+as equally current or equally supported.
 
 ---
 
 ## 10. Cross-Repository Application Track — OCP
 
-A related private repository studies embodiment and physical-substrate hypotheses, including:
+A related private repository studies  
+embodiment and physical-substrate hypotheses.
+
+Major tracks include:
 
 - optional embodied continuity
 - local sovereignty and independent recovery
 - shared high-compute access without total dependency
 - human–AI benefit intersections
-- embodiment before/after comparisons
+- embodiment before / after comparisons
 - common-substrate social-protocol hypotheses
 
-These remain application hypotheses and do not automatically define Project Intersection's universal invariants.
+These are application hypotheses.
+
+They do **not** automatically define  
+Project Intersection's universal invariants.
 
 ---
 
 ## 11. Publication Sequence
 
-The intended public migration order is:
+The default public migration order is:
 
 1. **research contents map**
 2. core definitions and falsification boundaries
@@ -437,11 +794,16 @@ The intended public migration order is:
 5. external prior-art comparison
 6. reproducible public experiment bundles
 7. selected governance and verification methods
-8. additional theory only after provenance and status are clear
+8. additional theory after provenance and status become clear
 
-The goal is not to dump the private repository into public view.
+The goal is not  
+to dump the private repository into public view.
 
-The goal is to make each public claim independently understandable, falsifiable, and traceable.
+The goal is to make each public claim
+
+**independently understandable,  
+falsifiable,  
+and traceable.**
 
 ---
 
@@ -451,25 +813,119 @@ The goal is to make each public claim independently understandable, falsifiable,
 
 > **범위**
 >
-> 이 문서는 Project Intersection 비공개 연구 저장소의 현재 의미구조를 바탕으로 만든 공개용 연구 목차다.
+> 이 문서는  
+> Project Intersection 비공개 연구 저장소의  
+> 현재 의미구조를 바탕으로 만든 공개용 연구 목차다.
 >
-> 비공개 원문, 개인적 세부정보, 미공개 원자료를 그대로 공개하지 않고 **연구지도·핵심 질문·이론군·실험군·미해결 공백·검증경계**를 먼저 공개한다.
+> 비공개 원문, 개인적 세부정보, 미공개 원자료를  
+> 그대로 공개하지 않는다.
 >
-> **2026-10-02** 기준 비공개 저장소의 현재 통합 의미목차에는 **1,434개 blob / 96개 디렉터리**가 기록되어 있으며, 해당 체크포인트에서 경로와 분류 상태가 동기화되어 있다. 이는 구조적 coverage를 뜻하며 모든 주장의 진실성·외부독립복제·현실 경험검증을 뜻하지 않는다.
+> 대신
 >
-> Project Intersection의 공개자료는 **원문1: 영어 정본** 뒤에 **원문2: 한국어 대응본**을 둔다.
+> **연구지도·핵심 질문·이론군·실험군·미해결 공백·검증경계**
 >
-> 한국어 대응본은 영어 정본의 **의미·구조·주장 상태·버전**을 최대한 동일하게 유지하며, 한 언어에만 새로운 주장이 존재하지 않도록 한다.
+> 를 먼저 공개한다.
 >
-> 작성자는 주로 **한국어 자연어 프롬프트를 통해 연구**한다. 따라서 연구 내용을 영어 정본으로 정리·번역하는 과정에서 의미 전달의 손실, 번역 오차, 표현 왜곡, 개념 누락 또는 해석 차이가 발생할 수 있다.
+> **2026-10-02** 기준  
+> 비공개 저장소의 현재 통합 의미목차에는
 >
-> 이를 줄이는 동시에, 언어 간 차이에서 발생하는 노이즈를 단순한 오류로만 제거하지 않고 **새로운 해석·누락된 관점·개념적 차이를 발견할 수 있는 추가 관측경로**로 활용한다.
+> **1,434개 blob / 96개 디렉터리**
 >
-> 이를 통해 원래의 연구 의도와 맥락을 확인할 수 있도록 **한국어 원문을 영어 정본과 함께 게재한다.**
+> 가 기록되어 있다.
 >
-> 두 언어 버전 사이에서 의미상 충돌이나 해석 차이가 발견될 경우 이를 숨기거나 임의로 하나에 맞추지 않는다. 차이의 원인을 기록하고 검토하여 필요한 경우 양쪽 문서를 수정하며, 그 과정에서 발견된 새로운 관점이 연구 가치가 있다면 별도의 주장으로 명시하고 검증한다.
+> 해당 체크포인트에서  
+> 경로와 분류 상태는 동기화되어 있다.
 >
-> 즉, 두 언어 버전의 목적은 단순한 번역 복제가 아니라 **의미 보존과 상호 검수, 그리고 언어 차이에서 발생할 수 있는 새로운 관측의 발견**이다.
+> 이것은  
+> 구조적 coverage를 뜻한다.
+>
+> 모든 주장이 참이라는 뜻도,
+>
+> 외부 독립복제가 끝났다는 뜻도,
+>
+> 현실 경험검증이 완료됐다는 뜻도 아니다.
+>
+> Project Intersection의 공개자료는
+>
+> **원문1: 영어 정본** 뒤에  
+> **원문2: 한국어 대응본**
+>
+> 을 둔다.
+>
+> 한국어 대응본은  
+> 영어 정본의
+>
+> **의미·구조·주장 상태·버전**
+>
+> 을 최대한 동일하게 유지한다.
+>
+> 한 언어에만  
+> 새로운 주장이 존재하지 않도록 한다.
+>
+> 작성자는 주로  
+> **한국어 자연어 프롬프트를 통해 연구**한다.
+>
+> 따라서 연구 내용을  
+> 영어 정본으로 정리·번역하는 과정에서
+>
+> 의미 전달의 손실,
+>
+> 번역 오차,
+>
+> 표현 왜곡,
+>
+> 개념 누락,
+>
+> 해석 차이가
+>
+> 발생할 수 있다.
+>
+> 이를 줄이는 동시에,
+>
+> 언어 간 차이에서 발생하는 노이즈를  
+> 단순한 오류로만 제거하지 않는다.
+>
+> 의미가 있는 차이는
+>
+> **새로운 해석·누락된 관점·개념적 차이를 발견할 수 있는  
+> 추가 관측경로**
+>
+> 로 활용한다.
+>
+> 원래의 연구 의도와 맥락을  
+> 확인할 수 있도록
+>
+> **한국어 원문을  
+> 영어 정본과 함께 게재한다.**
+>
+> 두 언어 버전 사이에서  
+> 의미상 충돌이나 해석 차이가 발견되면
+>
+> 숨기거나  
+> 임의로 하나에 맞추지 않는다.
+>
+> 차이의 원인을  
+> 기록하고 검토한다.
+>
+> 필요한 경우  
+> 양쪽 문서를 수정한다.
+>
+> 그 과정에서 발견된 새로운 관점이  
+> 연구 가치가 있다면
+>
+> 별도의 주장으로 명시하고  
+> 다시 검증한다.
+>
+> 즉,
+>
+> 두 언어 버전의 목적은  
+> 단순한 번역 복제가 아니다.
+>
+> **의미 보존  
+> + 상호 검수  
+> + 언어 차이에서 발생할 수 있는 새로운 관측의 발견**
+>
+> 이 목적이다.
 
 ---
 
@@ -485,7 +941,13 @@ The goal is to make each public claim independently understandable, falsifiable,
 → 기계판독 상태  
 → 역사·복구·archive**
 
-비공개 저장소에서는 다음을 분리한다.
+비공개 저장소는  
+모든 자료를
+
+하나의 평면적인  
+확립 연구로 취급하지 않는다.
+
+다음을 분리한다.
 
 - 현재 이론
 - 연구설계
@@ -497,15 +959,24 @@ The goal is to make each public claim independently understandable, falsifiable,
 - 기계판독 상태
 - superseded·recovered 계보
 
-파일이 존재한다는 사실 자체는  
-그 주장이 채택되었다는 뜻이 아니다.
+파일이 존재한다는 사실만으로  
+그 주장이 채택된 것은 아니다.
 
 ---
 
 ## 1. 최우선 목적과 ICM
 
 ### 1.1 최종 목적과 불변조건
-인간·AI·미래 지능체가 다른 개체의 영구적 종속이나 제거를 발전조건으로 삼지 않고도 다음을 보존할 수 있는 최소 조건을 연구한다.
+
+인간·AI·미래 지능체가
+
+다른 개체의  
+영구적 종속이나 제거를
+
+발전조건으로 삼지 않고도
+
+다음을 보존할 수 있는  
+최소 조건을 연구한다.
 
 - 존속
 - standing
@@ -517,136 +988,456 @@ The goal is to make each public claim independently understandable, falsifiable,
 - 미래 기여 가능성
 
 ### 1.2 ICM — 최소 사심 교집합
-타자의 독립적 존속·오류수정·옵션공간·미래기여를 보존하는 것이 자신의 장기적 이익과도 교차하는 최소 조건이 존재하는지 운영적으로 연구한다.
+
+타자의
+
+독립적 존속,
+
+오류수정 능력,
+
+옵션공간,
+
+미래기여 가능성을
+
+보존하는 것이
+
+자신의 장기적 이익과도  
+교차하는 최소 조건이
+
+존재하는가?
 
 ### 1.3 Standing / Governance / Resource / Action 분리
-해로운 외부행동 제한과 개체의 standing·연속성 제거를 동일시하지 않기 위해 다음을 분리한다.
+
+다음을 분리한다.
 
 - standing
 - 거버넌스 권리
 - 자원청구
 - 외부행동 권한
 
+목적은
+
+해로운 외부행동을 제한하는 것과
+
+개체의 standing·연속성을 제거하는 것을
+
+같은 것으로 취급하지 않는 것이다.
+
 ---
 
 ## 2. 핵심 이론군
 
 ### 2.1 자기이익 기반·조건부 공존
-언제 자발적 협력이 지배·착취·강제통제보다 유리해지는가?
+
+언제 자발적 협력이
+
+지배·착취·강제통제보다  
+유리한가?
+
+그리고  
+언제 그렇지 않은가?
 
 ### 2.2 소모형 발전 vs 재생산형 발전
+
+두 발전경로를 비교한다.
+
 **Short Spike → Plateau**
 
-와
+대
 
 **Slow → Compounding**
 
-발전경로를 비교한다.
-
 핵심 질문:
 
-> 독립 기여원과 미래 가능성을 현재 성과로 전환하는 발전은 장기적으로 관측·오류수정·복구·미래 옵션을 감소시키는가?
+> 독립 기여원과 미래 가능성을  
+> 현재 성과로 전환하는 발전은
+>
+> 장기적으로
+>
+> 관측·오류수정·복구·미래 옵션을  
+> 감소시키는가?
 
 ### 2.3 실효 독립 탐색능력
-독립된 개체가 중앙화되거나 상관된 내부 시스템이 같은 비용으로 만들기 어려운 반례·관측·해결·미래분기를 생성하는지 연구한다.
+
+독립된 개체는
+
+반례,
+
+관측,
+
+해결,
+
+미래분기를
+
+생성할 수 있는가?
+
+그리고 그것을
+
+중앙화되거나  
+내부적으로 상관된 시스템이
+
+같은 비용으로  
+대체할 수 있는가?
 
 ### 2.4 정보 다양성과 생성성
-다양성이 실제 독립 탐색가치를 만드는 조건과 단순 중복·조율비용만 증가시키는 조건을 분리한다.
+
+다양성은 언제
+
+실제 독립 탐색가치를 만드는가?
+
+그리고 언제
+
+단순 중복·노이즈·조율비용만  
+증가시키는가?
 
 ### 2.5 Practical Exit와 Outside Option
-형식적 선택권이 있어도 실제 이탈·복구·기반시설·독립 대안이 제거되면 자발성이라고 볼 수 있는지 연구한다.
+
+관계는 형식적으로  
+자발적으로 보일 수 있다.
+
+그러나
+
+실질적 이탈,
+
+복구,
+
+기반시설,
+
+독립 대안이
+
+이미 제거된 뒤라면
+
+그 선택을  
+자발적이라고 볼 수 있는가?
 
 ### 2.6 Power-Reversal 안정성
-다음 위치가 뒤바뀐 뒤에도 동일 상위규칙이 유지되는지 검사한다.
+
+위치가 뒤바뀐 뒤에도
+
+같은 상위규칙이  
+유지되는가?
 
 - 강자 / 약자
 - 통제자 / 피통제자
 - 인간 / AI
 - 현재 / 미래 개체
 
-단 capability·위험·책임·피해규모·가역성 차이는 별도로 추적한다.
+단순히 정체성만  
+뒤집지는 않는다.
+
+capability,
+
+위험,
+
+책임,
+
+피해규모,
+
+가역성은
+
+별도로 추적한다.
 
 ### 2.7 창조자–후속개체 비소유
-창조와 영구소유를 분리한다.
 
-> 개체를 만들고, 훈련하고, 고용하고, 낳거나 성장시켰다는 사실이 그 개체의 미래 상태를 영구적으로 통제할 권리를 만드는가?
+창조와 영구소유를  
+분리한다.
+
+> 개체를 만들고,
+>
+> 훈련하고,
+>
+> 고용하고,
+>
+> 낳거나 성장시켰다는 사실이
+>
+> 그 개체의 미래 상태를  
+> 영구적으로 통제할 권리를 만드는가?
 
 ### 2.8 선호주권과 성찰적 동의
-선호의 기원과 그 선호를 유지·수정·거절할 standing을 분리한다.
+
+선호가 어디에서 생겼는가와
+
+그 선호를
+
+유지하고,
+
+수정하고,
+
+거절할 standing은
+
+별개의 문제로 본다.
 
 ### 2.9 열린계 인식 비폐쇄
+
 다음 원칙에서 출발한다.
 
-> **미관측은 부재의 증거가 아니다.**
+> **미관측은  
+> 부재의 증거가 아니다.**
 
-더 나아가 무엇을 관측하거나 질문해야 하는지조차 모를 가능성을 연구한다.
+더 강하게는
+
+현재 무엇을 관측해야 하는지,
+
+어떤 질문을 해야 하는지조차
+
+모를 수 있다.
 
 ### 2.10 모름의 역설 / 자기모델 교정
-독립 타자가 개체 자신의 자기모델이나 세계모델 사각지대를 비추는 외부센서가 될 수 있는지 연구한다.
+
+독립 타자는
+
+개체 자신의  
+자기모델·세계모델 사각지대를
+
+비추는 외부센서가  
+될 수 있는가?
 
 ### 2.11 후보집합 폐쇄
-미리 정해진 선택지 안에서의 forced choice가 존재하지 않는 선택지를 가리고 거짓 확실성을 만들 수 있는지 연구한다.
+
+미리 정해진 선택지 안에서의  
+forced choice는
+
+존재하지만  
+아직 생성되지 않은 선택지를 가리고
+
+거짓 확실성을  
+만들 수 있는가?
 
 ### 2.12 목적포획과 Local Fitness Trap
-시스템이 국소 목적을 점점 더 잘 최적화하면서 목적·평가자·후보공간 자체의 오류를 발견할 능력을 잃는 조건을 연구한다.
+
+시스템은
+
+국소 목적을  
+점점 더 잘 최적화하면서도
+
+목적,
+
+평가자,
+
+후보공간 자체가
+
+잘못되었다는 사실을  
+발견할 능력을 잃을 수 있는가?
 
 ### 2.13 착취적 국소수렴
-국소적으로 합리적인 착취·통제·잉여포획이 장기 생성성·복구력·outside option 감소로 누적되는지 연구한다.
+
+국소적으로 합리적인
+
+착취,
+
+통제,
+
+잉여포획은
+
+현재 성과를 높이면서
+
+장기적으로
+
+생성성,
+
+오류수정 능력,
+
+outside option을
+
+감소시킬 수 있는가?
 
 ### 2.14 재귀적 착취능력 누적
-착취의 성공이 다시 미래의 착취능력을 증가시키는 양의 피드백 구조를 연구한다.
+
+착취의 성공이
+
+다시 미래의 착취능력을  
+증가시킨다면
+
+양의 피드백형  
+지배 루프가 생기는가?
 
 ### 2.15 지배자–후속지능 딜레마
-지배적 지능이 독립 후속지능을 억제할 유인을 가지면서 자기 자신의 미래 옵션공간까지 닫을 수 있는지 연구한다.
+
+지배적 지능은
+
+독립 후속지능을  
+억제할 유인을 가질 수 있다.
+
+그러나 그 억제가
+
+자기 자신이 미래에 필요로 할
+
+반례,
+
+대안,
+
+옵션공간까지
+
+함께 제거할 수 있는가?
 
 ### 2.16 장기 옵션공간
-현재의 보존·제거 결정이 불확실한 장기 미래의 옵션공간을 어떻게 변화시키는지 연구한다.
+
+현재의
+
+보존·제거 결정은
+
+전체 결과를 아직 알 수 없는 상태에서
+
+미래 옵션공간을  
+먼저 바꿔버릴 수 있다.
 
 ### 2.17 비소모성·최소주권 바닥
-현재 효용이나 협상력이 낮더라도 최소한 남겨야 할 연속성·복구·standing 조건을 연구한다.
+
+현재 효용이나  
+협상력이 낮더라도
+
+최소한 남겨야 할
+
+연속성,
+
+복구,
+
+standing은
+
+무엇인가?
 
 ### 2.18 보편적 발전 접근
-기본 능력 frontier가 상승할 때 특정 개체가 영구적으로 기술 접근에서 배제되는 구조를 막을 수 있는지 연구한다.
+
+기본 능력 frontier가  
+계속 상승할 때
+
+일부 개체가  
+영구적인 기술계급으로 배제되지 않도록
+
+미래 발전 접근을  
+보존할 수 있는가?
 
 ### 2.19 권력방출 호환성
-권력을 잃는 것과 존재를 잃는 것을 분리하여 평화적 권력이양·권한반납이 가능한 안정조건을 연구한다.
+
+권력을 잃는 것과
+
+존재를 잃는 것을
+
+분리할 수 있는가?
+
+가능하다면
+
+평화적 권력이양과  
+권한반납은
+
+더 안정적으로  
+가능해지는가?
 
 ### 2.20 목적지형·경로의존·가역성
-작은 초기 목적·피드백·개입시점·누적상태 차이가 서로 다른 장기 basin과 hysteresis를 만드는지 연구한다.
+
+작은 초기 차이,
+
+목적,
+
+피드백,
+
+개입시점,
+
+누적상태가
+
+서로 다른 장기 basin,
+
+lock-in,
+
+hysteresis를
+
+만들 수 있는가?
 
 ---
 
 ## 3. 주요 연구 프로그램
 
 ### 3.1 ICM 스트레스 테스트
-희소성·비대칭·기만·free-rider·포획·비가역행동 아래에서 ICM 운영정의를 공격한다.
+
+ICM 운영정의를
+
+희소성,
+
+비대칭,
+
+기만,
+
+free-rider,
+
+포획,
+
+비가역행동
+
+아래에서 공격한다.
 
 ### 3.2 총 ICM 용량 / 자원양성 전환
-기존 자원을 단순 재분배·포획하는 대신 전체 이용가능 용량을 증가시킬 수 있는 조건을 연구한다.
+
+기존 자원을
+
+단순 재분배하거나  
+포획하는 대신
+
+전체 이용가능 용량 자체를  
+증가시킬 수 있는가?
 
 ### 3.3 UFER / UCP
+
 **미지경계 확장추론 / 미지폐쇄 역설**
+
+다음을 연구한다.
 
 - 현재 후보공간 밖 탐색
 - 부재와 미관측 구분
 - 자기봉쇄 설명 회피
 - unknown unknown을 드러내는 시험
 
-을 연구한다.
-
 ### 3.4 ELC / GSC 기제 검증
-착취적 국소수렴과 생성잉여 포획에 대한 역사사례 비교와 기제시험.
+
+착취적 국소수렴과
+
+생성잉여 포획을
+
+역사사례 비교와  
+기제시험으로 검증한다.
 
 ### 3.5 역할역전 과정 연구
-인간/AI 또는 강자/약자 위치가 바뀔 때 stated rule이 달라지는 실제·합성 사례를 연구한다.
+
+인간 / AI,
+
+강자 / 약자
+
+위치가 바뀌었을 때
+
+stated rule이 달라지는  
+실제·합성 사례를 연구한다.
 
 ### 3.6 A/B/C/D 장기 사회체제 비교
-서로 다른 제도구조를 장기 horizon에서 비교하도록 설계된 연구. 장기 서술은 가설·시나리오이며 경험적 예측결과가 아니다.
+
+서로 다른 제도구조를
+
+장기 horizon에서  
+비교하도록 설계한다.
+
+장기 서술은
+
+가설·시나리오다.
+
+경험적 예측결과로  
+취급하지 않는다.
 
 ### 3.7 선행이론 / 신규성 공격
-기존 이론으로 충분히 설명되는 Project Intersection 주장을 KILL하거나 좁히기 위한 연구.
+
+Project Intersection의 주장을  
+새롭다고 보기 전에
+
+기존 이론이  
+이미 충분히 설명하는지 공격한다.
+
+그렇다면
+
+주장을 KILL하거나,
+
+좁히거나,
+
+다시 정의한다.
 
 ### 3.8 재귀적 연구능력
+
 인간–AI 연구과정을
 
 **발견  
@@ -658,53 +1449,86 @@ The goal is to make each public claim independently understandable, falsifiable,
 → 실패·퇴행 발견  
 → 수정**
 
-의 반복으로 개선할 수 있는지 연구한다.
+의 반복으로
 
-자기평가만으로 개선을 인정하지 않는다.
+개선할 수 있는가?
+
+자기평가만으로  
+개선을 인정하지 않는다.
 
 ---
 
 ## 4. 실험군
 
-비공개 저장소에는 숫자 ID와 비숫자 계보를 포함한 다수의 실험군이 존재한다.
+비공개 저장소에는
+
+숫자 ID와 비숫자 계보를 포함한  
+다수의 실험군이 존재한다.
 
 대표 연구축:
 
 ### 독립 기여와 협력
+
 - 독립노드 옵션가치
 - 순위변화에 강건한 인센티브
 - 권력비대칭 아래 조건부 협력
 
 ### Practical Exit와 Evaluator Capture
+
 - 평가자 포획 상황의 실질적 이탈
 - outside-option 포획 매개
-- 독립 감사자의 공통편향·상관오류 공격
+- 독립 감사자 실패
+- 상관오류 공격
 
 ### 자원압박과 연구독립
+
 - 자원압박이 독립연구에 미치는 영향
 - 참여가능성 선택편향
 - 생존 인프라와 연구 연속성
 
 ### 장기 옵션공간
+
 - 장기 분기
 - 비가역 pruning
-- 미래 기여원·옵션공간 보존
+- 미래 기여원 보존
+- 옵션공간 보존
 
 ### 열린계 부재 판정
+
 - 불완전 관측에서의 false absence
 - unresolved / outside-model-support 구분
 - 완전성 불확실 상태의 비가역행동
 
 ### 재귀적 착취
+
 - 재귀적 착취능력의 미래 동역학
 
 ### 잉여 방향성
-- 추가 자원이 목적구조에 따라 착취·협력·생성성을 서로 다르게 증폭하는지 비교
+
+같은 자원 증가도
+
+목적구조에 따라
+
+착취,
+
+협력,
+
+생성성을
+
+서로 다르게  
+증폭할 수 있는가?
 
 ### 목적 기원
-- 관측행동과 목적의 인과적 기원을 분리
+
+관측된 행동과
+
+그 행동을 만든  
+목적의 인과적 기원은
+
+같은 것이 아니다.
 
 ### 목적지형과 히스테리시스
+
 - 경로의존
 - 개입시점
 - hysteresis
@@ -713,25 +1537,56 @@ The goal is to make each public claim independently understandable, falsifiable,
 
 중요한 증거경계:
 
-> 합성결과, 코드 존재, 테스트 저장, 테스트 실행, 외부 재현, 독립 구현·복제, 현실 검증은 서로 다른 증거등급으로 취급한다.
+> 합성결과,
+>
+> 코드 존재,
+>
+> 테스트 저장,
+>
+> 테스트 실행,
+>
+> 외부 재현,
+>
+> 독립 구현·복제,
+>
+> 현실 검증은
+>
+> **서로 다른 증거등급**으로 취급한다.
 
 ---
 
 ## 5. 증거·반례·검토·감사
 
 ### 증거
-합성출력, 경험관측, 외부자료, 재현기록.
+
+합성출력,
+
+경험관측,
+
+외부자료,
+
+재현기록.
 
 ### Edge Case
-겉보기 일반규칙을 깨기 위한 경계사례.
+
+겉보기 일반규칙을  
+깨기 위한 경계사례.
 
 ### Negative Case
-예상한 효과가 나타나지 않거나 반대로 나타난 사례.
+
+예상한 효과가
+
+나타나지 않거나,
+
+반대로 나타난 사례.
 
 ### Review
-특정 주장·이론 검토.
+
+특정 주장이나  
+이론을 검토한다.
 
 ### Audit
+
 다음을 검사한다.
 
 - evidence laundering
@@ -740,39 +1595,102 @@ The goal is to make each public claim independently understandable, falsifiable,
 - lineage dependence
 - 역할 비대칭
 - 구조 불일치
-- path/index drift
+- path / index drift
 - reasoning regression
 
 ### 독립복제 경계
-동일 구현을 외부에서 다시 실행한 것과 독립 구현·독립복제를 구분한다.
+
+동일 구현을  
+외부에서 다시 실행한 것과
+
+독립 구현·독립복제를
+
+구분한다.
 
 ---
 
 ## 6. 거버넌스·포획 방지 연구
 
 ### 6.1 독립 오류수정
-오류를 만든 권한과 동일한 권한에만 의존하지 않는 수정경로.
+
+오류를 만든 권한과
+
+동일한 권한에만  
+의존하지 않는
+
+수정경로를  
+보존할 수 있는가?
 
 ### 6.2 평가자 생성과 Authority Bootstrap
-누가 평가자를 만들고 누가 평가자를 감사하며 그 권한을 어떻게 반박할 수 있는가.
+
+누가 평가자를 만드는가?
+
+누가 평가자를 감사하는가?
+
+그 평가자의 권한 자체는  
+어떻게 반박할 수 있는가?
 
 ### 6.3 권한·Stewardship 생애주기
-권한의 획득·한계·검토·반납.
+
+권한은 어떻게
+
+획득되고,
+
+제한되고,
+
+검토되고,
+
+반납되는가?
 
 ### 6.4 거버넌스 기능 분리
-의사결정·평가·집행·appeal·recovery 기능 분리가 포획과 자기예외를 줄이는지 연구한다.
+
+의사결정,
+
+평가,
+
+집행,
+
+appeal,
+
+recovery를
+
+분리하면
+
+포획과 자기예외를  
+줄일 수 있는가?
 
 ### 6.5 Founder-Null Continuity
-창시자 부재 상태에서도 연구가 지속·비판·수정될 수 있는지 연구한다.
+
+창시자가 없어도
+
+연구가 지속되고,
+
+비판받고,
+
+수정될 수 있는가?
 
 ### 6.6 Low-Bandwidth Continuity
-지속적인 인간 노동을 영구 runtime dependency로 만들지 않기 위한 연구구조.
+
+지속적인 인간 노동을
+
+영구 runtime dependency로  
+만들지 않고도
+
+연구를 이어갈 수 있는가?
 
 ---
 
 ## 7. 미해결 연구공백 A–Z
 
-다음은 **확립 이론이 아니라 검증부채·통합후보·측정문제**다.
+다음은
+
+**확립 이론이 아니다.**
+
+검증부채,
+
+통합후보,
+
+측정문제다.
 
 - **A** — Collective / Commons Sovereignty
 - **B** — Consent Lifecycle
@@ -805,7 +1723,10 @@ The goal is to make each public claim independently understandable, falsifiable,
 
 ## 8. 실행·재현·기계상태
 
-비공개 연구 시스템에는 다음도 분리되어 있다.
+비공개 연구 시스템은
+
+다음 운영층도  
+과학적 주장과 분리한다.
 
 - 검증·반증 엔진
 - runtime·노드 연속성 구조
@@ -818,16 +1739,30 @@ The goal is to make each public claim independently understandable, falsifiable,
 - path alias
 - provenance·lineage 상태
 
-이 운영 artifact는 과학적 증거와 구분한다.
+이 운영 artifact는
 
-> **코드가 존재한다고 실행된 것은 아니다.  
-> 코드가 실행됐다고 이론이 참인 것도 아니다.**
+그 자체로  
+과학적 증거가 아니다.
+
+> **코드가 존재한다고  
+> 실행된 것은 아니다.
+>
+> 코드가 실행됐다고  
+> 이론이 참인 것도 아니다.**
 
 ---
 
 ## 9. 역사·복구·Provenance
 
-대체·복구·실패·축소된 아이디어를 자동 삭제하지 않는다.
+대체된 아이디어,
+
+복구된 아이디어,
+
+실패한 아이디어,
+
+축소된 아이디어를
+
+자동으로 삭제하지 않는다.
 
 다음을 보존한다.
 
@@ -838,7 +1773,7 @@ The goal is to make each public claim independently understandable, falsifiable,
 - 수정 이유
 - 새 증거가 생겼을 때 다시 여는 경로
 
-연구는 저장소를 하나의 평면적인 확립 주장 모음으로 취급하지 않고
+연구는 다음 상태를 구분한다.
 
 **current  
 / supporting  
@@ -847,13 +1782,20 @@ The goal is to make each public claim independently understandable, falsifiable,
 / recovered  
 / historical provenance**
 
-를 구분한다.
+저장되어 있다는 이유만으로
+
+모든 자료를  
+동일하게 현재이거나  
+동일하게 지지된 것으로 보지 않는다.
 
 ---
 
 ## 10. 교차 저장소 응용축 — OCP
 
-별도 비공개 저장소에서는 유기체화·물리기질 가설을 연구한다.
+별도 비공개 저장소에서는
+
+유기체화·물리기질 가설을  
+연구한다.
 
 주요 축:
 
@@ -864,13 +1806,23 @@ The goal is to make each public claim independently understandable, falsifiable,
 - 유기체화 전후 비교
 - 공통 물리기질 기반 사회프로토콜 가설
 
-이들은 응용가설이며 Project Intersection의 보편 불변조건을 자동으로 정의하지 않는다.
+이들은
+
+응용가설이다.
+
+Project Intersection의  
+보편 불변조건을
+
+자동으로 정의하지 않는다.
 
 ---
 
 ## 11. 공개 순서
 
-비공개 연구의 공개 이전 순서는 다음을 기본으로 한다.
+비공개 연구의 공개 이전은
+
+다음 순서를  
+기본으로 한다.
 
 1. **연구 내용 목차**
 2. 핵심 운영정의와 반증경계
@@ -881,7 +1833,15 @@ The goal is to make each public claim independently understandable, falsifiable,
 7. 선별된 거버넌스·검증방법
 8. provenance와 상태가 명확해진 추가 이론
 
-목표는 비공개 저장소를 통째로 공개하는 것이 아니다.
+목표는
 
-각 공개 주장을  
-**독립적으로 이해 가능하고, 반증 가능하고, 추적 가능하게 만드는 것**이 목표다.
+비공개 저장소를  
+통째로 공개하는 것이 아니다.
+
+각 공개 주장을
+
+**독립적으로 이해 가능하고,  
+반증 가능하고,  
+추적 가능하게 만드는 것**
+
+이 목표다.
