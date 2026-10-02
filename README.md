@@ -10,6 +10,14 @@
 >
 > The author primarily conducts research through **natural-language Korean prompts**. When that work is organized and translated into the English canonical version, loss of meaning, translation error, expression distortion, conceptual omission, or interpretive differences may occur. To reduce these risks and allow verification of the original research intent and context, the **original Korean text is published alongside the English canonical version**. If a semantic conflict or interpretive difference is found between the two language versions, the discrepancy should be recorded, reviewed, and corrected rather than hidden.
 
+### Research Contents
+
+The first public map of the private research program is available here:
+
+**[Research Contents Map → RESEARCH_TOC.md](RESEARCH_TOC.md)**
+
+It exposes the research structure, theory families, experiment families, unresolved gaps, and validation boundaries before the underlying private materials are selectively published.
+
 ## Opening Question
 
 If a monkey could create a human,
@@ -463,6 +471,14 @@ unless their evidence and validation status are explicitly stated.
 > 한국어 대응본은 영어 정본의 의미·구조·주장 상태·버전을 최대한 동일하게 유지한다. 한 언어에만 새로운 주장이 존재하지 않도록 한다.
 >
 > 작성자는 주로 **한국어 자연어 프롬프트를 통해 연구**한다. 따라서 연구 내용을 영어 정본으로 정리·번역하는 과정에서 의미 전달의 손실, 번역 오차, 표현 왜곡, 개념 누락 또는 해석 차이가 발생할 수 있다. 이를 줄이고 원래의 연구 의도와 맥락을 확인할 수 있도록 **한국어 원문을 영어 정본과 함께 동시에 게재한다.** 두 언어 버전 사이에 의미상 충돌이나 해석 차이가 발견될 경우 해당 차이를 숨기지 않고 기록·검토·수정한다.
+
+### 연구 내용 목차
+
+비공개 연구 프로그램의 첫 공개 지도는 다음에서 볼 수 있다.
+
+**[연구 내용 목차 → RESEARCH_TOC.md](RESEARCH_TOC.md)**
+
+비공개 원자료를 순차 공개하기 전에 연구구조·이론군·실험군·미해결 공백·검증경계를 먼저 공개한다.
 
 ## 시작 질문
 
