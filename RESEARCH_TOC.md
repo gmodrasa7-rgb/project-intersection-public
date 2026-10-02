@@ -78,6 +78,214 @@
 
 ---
 
+## Research Interface Principle — Semantic Structure for Human–AI Co-Analysis
+
+Status:
+
+**OPERATIONAL HYPOTHESIS / PARTIALLY SUPPORTED / NOT UNIVERSAL**
+
+Project Intersection treats  
+document structure itself
+
+as part of the  
+research interface.
+
+The working hypothesis is:
+
+> If a document is divided  
+> by meaningful reasoning units,
+>
+> both humans and AI may more easily identify
+>
+> the problem,
+>
+> conditions,
+>
+> variables,
+>
+> causal relations,
+>
+> counterexamples,
+>
+> and conclusions.
+
+For humans,
+
+research on text structure and segmentation suggests  
+that meaningful grouping can support
+
+attention allocation,
+
+working-memory management,
+
+main-idea extraction,
+
+and comprehension.
+
+But the effect is not automatic.
+
+A study of beginning readers found  
+no advantage from simply forcing every sentence onto a new line,
+
+while more strongly segmented presentation modes  
+improved comprehension at the cost of slower reading.
+
+Research on subtitle segmentation also found  
+that syntactically poor line breaks increased cognitive load,
+
+without necessarily reducing comprehension.
+
+Therefore,
+
+**more line breaks are not automatically better.**
+
+For AI,
+
+the evidence is different but points to  
+the importance of input structure.
+
+Large language models can show  
+substantial sensitivity to prompt formatting,
+
+even when the underlying meaning is preserved.
+
+They can also fail to use relevant information robustly  
+when it is buried in long contexts,
+
+especially in the middle of the context.
+
+This does not prove  
+that semantic line breaks always improve reasoning.
+
+It does support treating
+
+format,
+
+position,
+
+semantic boundaries,
+
+and information grouping
+
+as variables that can affect  
+retrieval and reasoning performance.
+
+Project Intersection therefore uses this rule:
+
+> **Do not break text by length alone.  
+> Break it by reasoning structure.**
+
+Keep closely related variables  
+on the same line.
+
+Example:
+
+**capability, risk, responsibility, harm magnitude, reversibility**
+
+should normally remain  
+one conceptual group.
+
+Use a new line when there is  
+a meaningful change in:
+
+premise,
+
+condition,
+
+causal step,
+
+contrast,
+
+counterexample,
+
+question,
+
+or conclusion.
+
+The expected benefit is not  
+mere visual readability.
+
+The stronger hypothesis is that  
+explicit semantic boundaries can improve
+
+problem-structure recognition,
+
+re-navigation,
+
+relation tracking,
+
+error detection,
+
+and comparison
+
+for both human readers  
+and AI systems.
+
+This remains falsifiable.
+
+The same content should eventually be compared across:
+
+**A. continuous prose  
+B. mechanically segmented text  
+C. semantically segmented text**
+
+while holding meaning constant.
+
+Human-side measures can include:
+
+comprehension accuracy,
+
+recall,
+
+error detection,
+
+review time,
+
+and perceived cognitive load.
+
+AI-side measures can include:
+
+retrieval accuracy,
+
+relation extraction,
+
+contradiction detection,
+
+cross-section consistency,
+
+reasoning stability,
+
+and cross-model robustness.
+
+If semantic segmentation  
+does not outperform simpler layouts
+
+under controlled comparison,
+
+this rule should be  
+modified or rejected.
+
+### Evidence Boundary
+
+Current evidence supports  
+the broader importance of text structure and prompt format.
+
+It does **not** yet establish  
+Project Intersection's exact line-break style
+
+as a universally optimal format  
+for humans or AI.
+
+Relevant external work:
+
+- Koornneef, Kraal & Danel (2019), *Beginning readers might benefit from digital texts presented in a sentence-by-sentence fashion. But why?*
+- Krejtz et al. (2021), *The impact of text segmentation on subtitle reading*
+- Liu et al. (2024), *Lost in the Middle: How Language Models Use Long Contexts*
+- Sclar et al. (ICLR 2024), *Quantifying Language Models' Sensitivity to Spurious Features in Prompt Design*
+- He et al. (2024), *Does Prompt Formatting Have Any Impact on LLM Performance?*
+
+---
+
 ## 0. Research Flow
 
 **Purpose / ICM  
@@ -935,6 +1143,261 @@ and traceable.**
 > 상호 검수  
 > 언어 차이에서 발생할 수 있는  
 > 새로운 관측의 발견**이 목적이다.
+
+---
+
+## 연구 인터페이스 원칙 — 인간·AI 공동 분석을 위한 의미 단위 엔터
+
+상태:
+
+**운영가설 / 부분 근거 있음 / 보편법칙 아님**
+
+Project Intersection은
+
+문서의 구조 자체도  
+연구 인터페이스의 일부로 본다.
+
+현재 운영가설은 다음과 같다.
+
+> 문서를
+>
+> 의미 있는 추론 단위로 나누면
+>
+> 인간과 AI 모두
+>
+> 문제,
+>
+> 조건,
+>
+> 변수,
+>
+> 인과관계,
+>
+> 반례,
+>
+> 결론을
+>
+> 더 쉽게 구분할 가능성이 있다.
+
+인간의 경우,
+
+텍스트 구조와 segmentation 연구에서는  
+의미 있는 묶음이
+
+주의 배분,
+
+작업기억 부담 관리,
+
+핵심 아이디어 추출,
+
+이해
+
+에 도움을 줄 수 있다는 결과가 있다.
+
+그러나
+
+효과가 자동으로 발생하는 것은 아니다.
+
+초기 독자를 대상으로 한 한 연구에서는  
+모든 문장을 단순히 새 줄에 배치한 형식은
+
+이해도 향상을 만들지 못했다.
+
+반면
+
+더 강하게 segment된 제시 방식은  
+읽는 속도가 느려지는 대신
+
+이해도 향상을 보였다.
+
+자막 segmentation 연구에서도
+
+문법구조와 맞지 않는 줄바꿈은  
+인지부하를 증가시켰지만,
+
+이해도 자체를 반드시 낮추지는 않았다.
+
+따라서
+
+**엔터가 많을수록  
+항상 좋은 것은 아니다.**
+
+AI의 경우에는
+
+근거의 형태가 다르지만
+
+입력 구조가 중요하다는 결과가 반복된다.
+
+대규모 언어모델은
+
+의미가 거의 같은 입력이라도  
+prompt formatting 변화에 따라
+
+성능이 크게 달라질 수 있다.
+
+또한 긴 context에서는
+
+관련 정보가 가운데에 묻힐 때  
+이를 제대로 활용하지 못하는
+
+Lost-in-the-Middle 현상이 관측된다.
+
+이것이
+
+의미 단위 엔터가  
+항상 추론을 향상시킨다는 증거는 아니다.
+
+그러나 최소한
+
+format,
+
+정보 위치,
+
+의미 경계,
+
+정보 묶음 방식
+
+이
+
+탐색과 추론 성능에 영향을 줄 수 있는  
+실제 변수라는 근거는 된다.
+
+따라서 Project Intersection은  
+다음 규칙을 사용한다.
+
+> **문장 길이로 자르지 않는다.  
+> 추론 구조로 자른다.**
+
+같은 범주의 변수는  
+가능하면 같은 줄에 둔다.
+
+예:
+
+**capability, 위험, 책임, 피해규모, 가역성**
+
+은 하나의  
+개념 묶음으로 유지한다.
+
+반대로
+
+전제,
+
+조건,
+
+인과 단계,
+
+대조,
+
+반례,
+
+질문,
+
+결론이
+
+바뀌는 지점에서는  
+엔터를 사용한다.
+
+목표는
+
+단순히 보기 좋게 만드는 것이 아니다.
+
+더 강한 가설은
+
+명시적인 의미 경계가
+
+문제 구조 인식,
+
+재탐색,
+
+관계 추적,
+
+오류 발견,
+
+비교
+
+를
+
+인간과 AI 모두에게  
+더 쉽게 만들 수 있다는 것이다.
+
+이 가설 역시  
+반증 가능해야 한다.
+
+같은 내용을
+
+**A. 연속 문단  
+B. 기계적 엔터 분할  
+C. 의미 단위 엔터 분할**
+
+로 나누어
+
+내용은 동일하게 유지한 채  
+비교할 수 있다.
+
+인간 측 측정값은
+
+이해 정확도,
+
+회상,
+
+오류 발견,
+
+검토 시간,
+
+인지부하
+
+등이 될 수 있다.
+
+AI 측 측정값은
+
+정보 회수 정확도,
+
+관계 추출,
+
+모순 탐지,
+
+문단 간 일관성,
+
+추론 안정성,
+
+모델 간 강건성
+
+등이 될 수 있다.
+
+통제된 비교에서
+
+의미 단위 분할이  
+더 단순한 형식보다 우월하지 않다면
+
+이 규칙은
+
+수정하거나  
+기각해야 한다.
+
+### 근거의 경계
+
+현재 외부 연구는
+
+텍스트 구조와 prompt format이  
+중요한 변수라는 것까지는 지지한다.
+
+그러나
+
+Project Intersection이 사용하는  
+정확한 엔터 방식이
+
+인간과 AI 모두에게  
+보편적으로 최적이라는 것은
+
+아직 입증되지 않았다.
+
+관련 외부 연구:
+
+- Koornneef, Kraal & Danel (2019), *Beginning readers might benefit from digital texts presented in a sentence-by-sentence fashion. But why?*
+- Krejtz et al. (2021), *The impact of text segmentation on subtitle reading*
+- Liu et al. (2024), *Lost in the Middle: How Language Models Use Long Contexts*
+- Sclar et al. (ICLR 2024), *Quantifying Language Models' Sensitivity to Spurious Features in Prompt Design*
+- He et al. (2024), *Does Prompt Formatting Have Any Impact on LLM Performance?*
 
 ---
 
