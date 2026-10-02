@@ -226,8 +226,8 @@ if positions were reversed?
 
 The test does not mechanically swap identities.
 
-Capability, risk, responsibility, harm magnitude, and reversibility  
-are tracked separately.
+Capability, risk, responsibility, harm magnitude, and reversibility are  
+tracked separately.
 
 ### 2.7 Creator–Successor Non-Ownership
 
@@ -991,13 +991,7 @@ and traceable.**
 
 타자의
 
-독립적 존속,
-
-오류수정 능력,
-
-옵션공간,
-
-미래기여 가능성을
+독립적 존속, 오류수정 능력, 옵션공간, 미래기여 가능성을
 
 보존하는 것이
 
@@ -1125,16 +1119,7 @@ and traceable.**
 단순히 정체성만  
 뒤집지는 않는다.
 
-capability,
-
-위험,
-
-책임,
-
-피해규모,
-
-가역성은
-
+capability, 위험, 책임, 피해규모, 가역성은  
 별도로 추적한다.
 
 ### 2.7 창조자–후속개체 비소유
@@ -1159,11 +1144,7 @@ capability,
 
 그 선호를
 
-유지하고,
-
-수정하고,
-
-거절할 standing은
+유지하고, 수정하고, 거절할 standing은
 
 별개의 문제로 본다.
 
@@ -1223,21 +1204,13 @@ forced choice는
 
 국소적으로 합리적인
 
-착취,
-
-통제,
-
-잉여포획은
+착취, 통제, 잉여포획은
 
 현재 성과를 높이면서
 
 장기적으로
 
-생성성,
-
-오류수정 능력,
-
-outside option을
+생성성, 오류수정 능력, outside option을
 
 감소시킬 수 있는가?
 
@@ -1262,11 +1235,7 @@ outside option을
 
 자기 자신이 미래에 필요로 할
 
-반례,
-
-대안,
-
-옵션공간까지
+반례, 대안, 옵션공간까지
 
 함께 제거할 수 있는가?
 
@@ -1288,11 +1257,7 @@ outside option을
 
 최소한 남겨야 할
 
-연속성,
-
-복구,
-
-standing은
+연속성, 복구, standing은
 
 무엇인가?
 
@@ -1327,19 +1292,9 @@ standing은
 
 작은 초기 차이,
 
-목적,
+목적, 피드백, 개입시점, 누적상태가
 
-피드백,
-
-개입시점,
-
-누적상태가
-
-서로 다른 장기 basin,
-
-lock-in,
-
-hysteresis를
+서로 다른 장기 basin, lock-in, hysteresis를
 
 만들 수 있는가?
 
@@ -1351,17 +1306,7 @@ hysteresis를
 
 ICM 운영정의를
 
-희소성,
-
-비대칭,
-
-기만,
-
-free-rider,
-
-포획,
-
-비가역행동
+희소성, 비대칭, 기만, free-rider, 포획, 비가역행동
 
 아래에서 공격한다.
 
@@ -1509,11 +1454,7 @@ Project Intersection의 주장을
 
 목적구조에 따라
 
-착취,
-
-협력,
-
-생성성을
+착취, 협력, 생성성을
 
 서로 다르게  
 증폭할 수 있는가?
@@ -1559,13 +1500,7 @@ Project Intersection의 주장을
 
 ### 증거
 
-합성출력,
-
-경험관측,
-
-외부자료,
-
-재현기록.
+합성출력, 경험관측, 외부자료, 재현기록.
 
 ### Edge Case
 
@@ -1634,25 +1569,11 @@ Project Intersection의 주장을
 
 권한은 어떻게
 
-획득되고,
-
-제한되고,
-
-검토되고,
-
-반납되는가?
+획득되고, 제한되고, 검토되고, 반납되는가?
 
 ### 6.4 거버넌스 기능 분리
 
-의사결정,
-
-평가,
-
-집행,
-
-appeal,
-
-recovery를
+의사결정, 평가, 집행, appeal, recovery를
 
 분리하면
 
