@@ -97,30 +97,15 @@ The working hypothesis is:
 >
 > both humans and AI may more easily identify
 >
-> the problem,
->
-> conditions,
->
-> variables,
->
-> causal relations,
->
-> counterexamples,
->
-> and conclusions.
+> the problem, conditions, variables, causal relations, counterexamples, and conclusions.
 
 For humans,
 
 research on text structure and segmentation suggests  
 that meaningful grouping can support
 
-attention allocation,
-
-working-memory management,
-
-main-idea extraction,
-
-and comprehension.
+attention allocation, working-memory management,  
+main-idea extraction, and comprehension.
 
 But the effect is not automatic.
 
@@ -159,13 +144,7 @@ that semantic line breaks always improve reasoning.
 
 It does support treating
 
-format,
-
-position,
-
-semantic boundaries,
-
-and information grouping
+format, position, semantic boundaries, and information grouping
 
 as variables that can affect  
 retrieval and reasoning performance.
@@ -188,19 +167,7 @@ one conceptual group.
 Use a new line when there is  
 a meaningful change in:
 
-premise,
-
-condition,
-
-causal step,
-
-contrast,
-
-counterexample,
-
-question,
-
-or conclusion.
+premise, condition, causal step, contrast, counterexample, question, or conclusion.
 
 The expected benefit is not  
 mere visual readability.
@@ -208,15 +175,7 @@ mere visual readability.
 The stronger hypothesis is that  
 explicit semantic boundaries can improve
 
-problem-structure recognition,
-
-re-navigation,
-
-relation tracking,
-
-error detection,
-
-and comparison
+problem-structure recognition, re-navigation, relation tracking, error detection, and comparison
 
 for both human readers  
 and AI systems.
@@ -233,29 +192,11 @@ while holding meaning constant.
 
 Human-side measures can include:
 
-comprehension accuracy,
-
-recall,
-
-error detection,
-
-review time,
-
-and perceived cognitive load.
+comprehension accuracy, recall, error detection, review time, and perceived cognitive load.
 
 AI-side measures can include:
 
-retrieval accuracy,
-
-relation extraction,
-
-contradiction detection,
-
-cross-section consistency,
-
-reasoning stability,
-
-and cross-model robustness.
+retrieval accuracy, relation extraction, contradiction detection, cross-section consistency, reasoning stability, and cross-model robustness.
 
 If semantic segmentation  
 does not outperform simpler layouts
@@ -1165,17 +1106,7 @@ Project Intersection은
 >
 > 인간과 AI 모두
 >
-> 문제,
->
-> 조건,
->
-> 변수,
->
-> 인과관계,
->
-> 반례,
->
-> 결론을
+> 문제, 조건, 변수, 인과관계, 반례, 결론을
 >
 > 더 쉽게 구분할 가능성이 있다.
 
@@ -1184,15 +1115,9 @@ Project Intersection은
 텍스트 구조와 segmentation 연구에서는  
 의미 있는 묶음이
 
-주의 배분,
+주의 배분, 작업기억 부담 관리, 핵심 아이디어 추출, 이해에
 
-작업기억 부담 관리,
-
-핵심 아이디어 추출,
-
-이해
-
-에 도움을 줄 수 있다는 결과가 있다.
+도움을 줄 수 있다는 결과가 있다.
 
 그러나
 
@@ -1249,15 +1174,7 @@ Lost-in-the-Middle 현상이 관측된다.
 
 그러나 최소한
 
-format,
-
-정보 위치,
-
-의미 경계,
-
-정보 묶음 방식
-
-이
+format, 정보 위치, 의미 경계, 정보 묶음 방식이
 
 탐색과 추론 성능에 영향을 줄 수 있는  
 실제 변수라는 근거는 된다.
@@ -1280,19 +1197,7 @@ format,
 
 반대로
 
-전제,
-
-조건,
-
-인과 단계,
-
-대조,
-
-반례,
-
-질문,
-
-결론이
+전제, 조건, 인과 단계, 대조, 반례, 질문, 결론이
 
 바뀌는 지점에서는  
 엔터를 사용한다.
@@ -1305,17 +1210,7 @@ format,
 
 명시적인 의미 경계가
 
-문제 구조 인식,
-
-재탐색,
-
-관계 추적,
-
-오류 발견,
-
-비교
-
-를
+문제 구조 인식, 재탐색, 관계 추적, 오류 발견, 비교를
 
 인간과 AI 모두에게  
 더 쉽게 만들 수 있다는 것이다.
@@ -1336,33 +1231,11 @@ C. 의미 단위 엔터 분할**
 
 인간 측 측정값은
 
-이해 정확도,
-
-회상,
-
-오류 발견,
-
-검토 시간,
-
-인지부하
-
-등이 될 수 있다.
+이해 정확도, 회상, 오류 발견, 검토 시간, 인지부하 등이 될 수 있다.
 
 AI 측 측정값은
 
-정보 회수 정확도,
-
-관계 추출,
-
-모순 탐지,
-
-문단 간 일관성,
-
-추론 안정성,
-
-모델 간 강건성
-
-등이 될 수 있다.
+정보 회수 정확도, 관계 추출, 모순 탐지, 문단 간 일관성, 추론 안정성, 모델 간 강건성 등이 될 수 있다.
 
 통제된 비교에서
 
