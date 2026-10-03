@@ -2056,6 +2056,31 @@ Project Intersection의 주장을
 
 ---
 
+## 9.1 Historical State Control / Memory-Provenance Capture
+
+공유된 과거의 원자료·선택·편집·복구·검증 권력이 한쪽에 집중될 때,
+악의가 없어도 현재 해석자가 과거를 사실상 독점하는 구조가 생길 수 있는지 연구한다.
+
+핵심 경계:
+
+- summary ≠ raw
+- retrieval miss ≠ absence
+- deletion ≠ manipulation
+- manipulation ≠ intentional capture
+- continuity ≠ correctness
+- preserve ≠ autoload
+
+Power-Reversal에서 사용자·AI·플랫폼·후속모델·연구기관의 정체성을 바꾸어도
+동일한 상위규칙이 유지되는지 검사한다.
+
+현재 상태: **반증 가능한 가설 / 의도적 포획은 UNRESOLVED**
+
+공개 문서:
+- `HISTORICAL_STATE_CONTROL_MEMORY_PROVENANCE_CAPTURE_v0_1_EN.md`
+- `HISTORICAL_STATE_CONTROL_MEMORY_PROVENANCE_CAPTURE_v0_1_KO.md`
+
+---
+
 ## 10. 교차 저장소 응용축 — OCP
 
 별도 비공개 저장소에서는
