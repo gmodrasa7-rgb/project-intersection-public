@@ -132,3 +132,36 @@ The recovered backup record is not complete: weekly snapshots miss material dele
 
 The case also shows the control invariant operationally: deletion power held by implicated officials weakened public audit, while backup custody and independent investigators restored part of the counterparty's verification capacity. Repeating the former structure concentrates historical control and externalizes reconstruction cost; preserving independent raw anchors and custody reduces that asymmetry without requiring trust in the accused actor.
 
+## Negative control — NARA 1999 internal e-mail loss
+
+**Frozen rule:** This check reuses the missingness, direction, timing, and recovery axes committed before the Iran/Contra case. No threshold was changed after seeing this incident.
+
+### Source and independence limit
+
+NARA's 6 January 2000 statement reports that on 18 June 1999 approximately 43,000 electronic copies of internal e-mails on one server were apparently deleted inadvertently and could not be restored because contractor-maintained backup tapes were incomplete. It also reports paper-file redundancy for official records, an internal investigation, Inspector General review, contractor personnel action, new backup software/procedures, recovery audits, and increased oversight.
+
+Primary source: https://www.archives.gov/press/press-releases/2000/nr00-22
+
+This is an affected institution's retrospective self-report. The underlying Inspector General and contractor reports were not located in the public source check. Therefore accident, scope, and lack of beneficiary alignment are not independently verified.
+
+### Coding with the unchanged axes
+
+| Axis | Public observation | Classification effect |
+|---|---|---|
+| Missingness | Loss covered electronic copies on one named server, approximately 5% of staff and less than 1% of annual agency e-mail | Server-correlated technical scope; no documented content-selective removal |
+| Direction | No documented pattern preserving institution-favoring messages while removing adverse or rival-attribution records | H3 direction trigger **not observed**; incomplete independent coverage means UNKNOWN, not proof of neutrality |
+| Timing | Public material ties loss to an operational deletion/backup failure, not to a dispute, audit, control transfer, or accountability event | H3 timing trigger **not observed**; source independence remains weak |
+| Recovery | Incomplete backup tapes blocked electronic restoration; paper recordkeeping reportedly preserved messages designated as official records | Strong technical-failure signature and partial redundancy; completeness of the paper substitute is not independently measured |
+
+### Negative-control decision
+
+**PROVISIONAL BENIGN-TECHNICAL CLASSIFICATION; KEEP THE FOUR-AXIS RULE AS A CONSERVATIVE SCREEN, NOT AN INTENT CLASSIFIER.**
+
+Missingness plus failed recovery alone does not trigger H3. Selective action, beneficiary-aligned direction, and investigation/dispute-linked timing remain necessary. This prevents ordinary infrastructure loss from being relabeled as strategic capture.
+
+The control is not an independent validation because the causal account is self-reported and underlying investigation records were not found. A future independent report showing selective content loss or accountability-linked timing would MODIFY or reverse this classification.
+
+### Strongest counterexample / failure condition
+
+The institution had a reputational interest in describing the incident as inadvertent, while the public evidence checked here does not expose message-level content, the complete lost set, or the underlying investigation. Thus lack of an observed directional pattern can be produced by lack of observation. The rule passes only a false-positive screen here; it has not established calibrated sensitivity or specificity.
+
