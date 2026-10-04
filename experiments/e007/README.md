@@ -70,7 +70,7 @@ The build fails if the headline 72/31/17 counts change without review.
 
 Each generated bundle's exact source commit belongs in its generated `PROVENANCE.md`; its archive digest belongs in the external build/execution record. They are intentionally **not self-pinned inside this README**, because embedding an archive's own digest or a later commit identifier in a file inside that archive creates a circular, stale provenance problem.
 
-A public GitHub Actions workflow is provided at [.github/workflows/e007-public-repro.yml](../../.github/workflows/e007-public-repro.yml). A green run shows only that the released artifact passes the configured public regression and timing-summary checks in that run. It does **not** establish scientific truth, independent replication, external validation, or frontier-model safety.
+Green CI and isolated reproducibility show that the configured artifact behaves reproducibly. They do **not** establish scientific truth, external validation, or frontier-model safety.
 
 ## Research behavior demonstrated
 
