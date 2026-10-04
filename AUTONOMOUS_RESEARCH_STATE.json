@@ -4,8 +4,8 @@
   "public_repository": "gmodrasa7-rgb/project-intersection-public",
   "canonical_boundary": "Public continuation pointer only; source artifacts and commit history outrank this state file.",
   "recovery_entrypoint": "AUTONOMOUS_RESEARCH_LOOP.md",
-  "current_public_head": "f9b0299d75cf805fe1b0b5ac24abce67b4b26a09",
-  "updated_at": "2026-10-05T00:00:00Z",
+  "current_public_head": "224547e680991e3a5a5a4d5e467c51b70b37155e",
+  "updated_at": "2026-10-04T21:58:00Z",
   "execution_policy": {
     "atomic_material_delta_per_run": 1,
     "require_prior_art_gate": true,
@@ -206,21 +206,36 @@
     },
     {
       "id": "F005_CORE_PRIOR_ART_ATTRIBUTION_COVERAGE",
-      "status": "MODIFY_MAJOR_OVERLAPS_ATTRIBUTED_RESIDUALS_REQUIRE_REVIEW",
+      "status": "MODIFY_POWER_REVERSAL_BROAD_NOVELTY_KILLED_COMPOSITE_INCREMENTAL_VALUE_UNTESTED_OTHER_RESIDUALS_REQUIRE_REVIEW",
       "question": "Which public Project Intersection core-theory and A–Z gap labels overlap established prior research, and what residual claims remain after attribution?",
-      "evidence_boundary": "Repository-wide public concept audit mapped strong direct/adjacent prior art for cooperation/collective action, exploration-exploitation, diversity/search, exit, closed-world reasoning, bounded rationality, local fitness traps, commons extraction, lock-in, irreversibility/option value, path dependence, bargaining, information asymmetry/moral hazard, coalition-proof stability, measurement invariance, privacy, consent/autonomy, and human-AI complementarity. This is an attribution audit, not validation of Project claims.",
+      "evidence_boundary": "Repository-wide public concept audit mapped strong direct/adjacent prior art for cooperation/collective action, exploration-exploitation, diversity/search, exit, closed-world reasoning, bounded rationality, local fitness traps, commons extraction, lock-in, irreversibility/option value, path dependence, bargaining, information asymmetry/moral hazard, coalition-proof stability, measurement invariance, privacy, consent/autonomy, and human-AI complementarity. This is an attribution audit, not validation of Project claims. Power-Reversal components now have direct baselines: reversibility/role exchange, Rawlsian impartial-position reasoning, affected-stakeholder participation, role/capability-conditioned accountability, auditability, appeal, and redress. The exact co-scaling inequality remains only an unvalidated operational composition.",
       "source_artifact": "CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md",
       "decision": "MODIFY_REMOVE_OVERLAP_FROM_NOVELTY",
       "strongest_counterexample": "A Project-specific label can sound new while the underlying mechanism is already established under different disciplinary terminology. Conversely, an adjacent citation does not prove exact equivalence, so weak analogies are marked ADJACENT or UNRESOLVED rather than used to erase a genuinely distinct residual claim.",
-      "next_cheapest_discriminating_check": "Audit the remaining partially mapped concepts: Power-Reversal exact antecedents; creator-successor standing/non-ownership; mutable preference sovereignty; universal advancement access; peaceful power release; evaluator genesis; copy/fork/merge individuation; functional agency recognition. Use exact-terminology plus structural-equivalence searches before any novelty promotion."
+      "next_cheapest_discriminating_check": "Audit creator-successor standing/non-ownership next, separating human-subject autonomy, legal personhood/property, artifact ownership, moral patienthood, and artificial-agent standing before retaining any residual novelty.",
+      "last_power_reversal_prior_art_correction": {
+        "target": "Power-Reversal stability and AUTONOMY_GAIN <= COUNTERPARTY_AUDIT_EXIT_RECOVERY_GAIN",
+        "established_baselines": [
+          "John Rawls, A Theory of Justice (1971), original position and veil of ignorance, DOI 10.4159/9780674042605",
+          "Professional/engineering ethics reversibility tests, University of Virginia Online Ethics seven-step method",
+          "NIST AI RMF Core and Playbook: documented roles, affected-community consultation, auditability, feedback, appeal, and recourse",
+          "OECD AI accountability principle: responsibility according to role, context, and ability to act; documentation and auditing"
+        ],
+        "decision": "KILL_BROAD_POWER_REVERSAL_NOVELTY_KEEP_COMPOSITE_GOVERNANCE_CHECKLIST_HOLD_INCREMENTAL_SCIENTIFIC_VALUE",
+        "strongest_counterexample": "Literal role identity swapping can erase capability, responsibility, legal authority, harm magnitude, dependency, and remedy differences; established frameworks already condition accountability on role, context, and ability.",
+        "residual_candidate": "Joint permission-by-permission co-scaling of authority with independent audit, practical exit, rollback, and recovery under explicit distrust.",
+        "falsification": "In F004, freeze established baseline scores first. KILL the residual if added Project variables do not improve held-out discrimination or cannot be scored reliably by blinded coders.",
+        "nonclaim": "Absence of the exact Project inequality in checked sources does not establish novelty."
+      }
     }
   ],
   "recent_material_delta": {
-    "type": "f005_core_and_gap_prior_art_attribution",
-    "summary": "Expanded prior-art attribution across public core theory families and A–Z research gaps. Major established overlaps are now explicitly credited to original/seminal sources; unmapped residuals remain PRIOR_ART_REVIEW_REQUIRED.",
-    "basis_head": "740b30422e9f6cdfacb1c05a7df96200e39feb8f",
-    "source_artifact": "CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md",
-    "state_commit": "RESOLVE_FROM_GIT_HISTORY_AFTER_WRITE"
+    "type": "f005_power_reversal_exact_antecedent_narrowing",
+    "summary": "Role reversal, impartial-position reasoning, affected-stakeholder participation, role/capability-conditioned accountability, auditability, appeal, and redress were mapped to direct prior art. Broad Power-Reversal novelty is killed; only the joint co-scaling checklist remains, with incremental scientific value held for F004.",
+    "basis_head": "224547e680991e3a5a5a4d5e467c51b70b37155e",
+    "source_artifact": "CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md and PRIOR_ART_SAFETY_GOVERNANCE_CROSSWALK.md",
+    "state_commit": "RESOLVE_FROM_GIT_HISTORY_AFTER_WRITE",
+    "scientific_support": "Rawls; UVA engineering-ethics reversibility method; NIST AI RMF; OECD AI accountability principles"
   },
   "human_only_gates": [
     "contracts_terms_ip_license_rights_changes",
@@ -232,15 +247,14 @@
   ],
   "last_read_back": {
     "status": "VERIFIED_MATERIAL_TARGET_PRE_STATE_WRITE",
-    "verified_commit": "f9b0299d75cf805fe1b0b5ac24abce67b4b26a09",
+    "verified_commit": "224547e680991e3a5a5a4d5e467c51b70b37155e",
     "verified_blobs": {
-      "HISTORICAL_STATE_CONTROL_MEMORY_PROVENANCE_CAPTURE_v0_1_EN.md": "f54ce43bbe6562de9b023252f9bdb4aa4d00c7b1",
-      "HISTORICAL_STATE_CONTROL_MEMORY_PROVENANCE_CAPTURE_v0_1_KO.md": "5c86bec9c8a2fa6bab8114fe7fa820c15cc7d3b0",
-      "RESEARCH_TOC.md": "21bc97c85e8c9dd45506618d36d03c8ada18b94c"
+      "CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md": "e74d20d227ff1030fb9858291d36fe060748a6d9",
+      "PRIOR_ART_SAFETY_GOVERNANCE_CROSSWALK.md": "ed46bd53ce1ea898d95678db44b51c2c19b4ced9"
     },
-    "note": "Both language mirrors and the research map preserve the independent NIST standards boundary, strongest counterexample, MODIFY decision, nonclaim, power-reversal constraint, and rollback condition. State-write completion requires post-write read-back."
+    "note": "Both crosswalks preserve direct antecedents, KILL/KEEP/HOLD split, strongest counterexample, residual candidate, nonclaim, and F004 falsification route. State-write completion requires post-write read-back."
   },
-  "next_checkpoint": "F005: finish exact/structural prior-art mapping for the remaining partially mapped Project concepts before promoting novelty. F004 incremental-value holdout and F003 historical-state identification remain separate frontiers; F001 remains externally gated.",
+  "next_checkpoint": "F005: audit creator-successor standing/non-ownership, separating autonomy, legal personhood/property, moral patienthood, and artificial-agent standing. F004 incremental-value holdout, F003 historical identification, and F001 external lineage remain separate frontiers.",
   "current_public_head_semantics": "Head observed immediately before this state-file write. The commit containing this file must be resolved from Git history because a Git-tracked file cannot self-embed its own containing commit hash without changing that hash.",
   "resolved_process_findings": [
     {
@@ -253,18 +267,17 @@
     }
   ],
   "last_checkpoint_result": {
-    "checkpoint": "F005 repository-wide core/gap prior-art attribution audit",
-    "decision": "MODIFY_MAJOR_PRIOR_ART_OVERLAPS_EXPLICITLY_ATTRIBUTED",
+    "checkpoint": "F005 Power-Reversal exact-antecedent audit",
+    "decision": "KILL_BROAD_POWER_REVERSAL_NOVELTY_KEEP_COMPOSITE_CHECKLIST_HOLD_INCREMENTAL_VALUE",
     "performed": [
-      "Enumerated public repository files and core theory headings",
-      "Compared Project labels against cross-disciplinary prior research",
-      "Verified representative original/seminal sources",
-      "Created a core-theory and A–Z prior-art crosswalk",
-      "Linked the public research map to the attribution boundary"
+      "Read current public continuity protocol and state",
+      "Checked exact reversibility and role-exchange antecedents",
+      "Mapped impartial-position, stakeholder, accountability, auditability, appeal, and redress baselines",
+      "Updated core and safety-governance crosswalks"
     ],
-    "result": "Multiple Project working labels overlap established research under different terminology. Those overlaps are now attributed; only residual incremental claims remain candidates.",
-    "strongest_counterexample": "A Project-specific label can sound new while the underlying mechanism is already established under different disciplinary terminology. Conversely, an adjacent citation does not prove exact equivalence, so weak analogies are marked ADJACENT or UNRESOLVED rather than used to erase a genuinely distinct residual claim.",
-    "power_reversal": "Attribution rules apply equally to founder, model, outside researcher, and future maintainer. Project-specific wording does not transfer priority from earlier researchers."
+    "result": "The broad Power-Reversal claim is absorbed by established components. Only the explicit co-scaling and permission-by-permission composition remains as an unvalidated governance checklist.",
+    "strongest_counterexample": "Simple role swapping can erase real causal asymmetries; prior frameworks already preserve role, context, and ability differences, so asymmetry preservation is not enough for novelty.",
+    "power_reversal": "The same attribution rule applies to founder, model, and outside critic. Exact Project wording does not transfer priority from prior reversibility, justice, and accountability work."
   },
   "resolved_research_findings": [
     {
