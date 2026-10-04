@@ -311,3 +311,18 @@ The next scientifically useful step is not another narrative expansion. It is a 
 가장 강한 다음 실험은 역사사례를 더 모아 닮았다고 주장하는 것이 아니라, 기존 안전과학 변수만으로 만든 baseline과 Project 변수를 추가한 모델을 **사전등록·블라인드·holdout**으로 비교하는 것이다.
 
 추가 예측력이나 판별력이 없으면 Project 고유 과학주장은 KILL한다.
+
+
+## 7. Power-Reversal antecedent update / Power-Reversal 선행경계 갱신
+
+The separate core-theory audit now resolves the broad novelty question for R1–R2:
+
+**KILL broad novelty / KEEP operational composition / HOLD incremental scientific value.**
+
+Role reversal and reversibility, impartial-position reasoning, affected-stakeholder participation, role/capability-conditioned accountability, auditability, appeal, and redress all have direct prior-art baselines in Rawlsian justice, professional/engineering ethics, NIST AI RMF, and OECD AI accountability principles.
+
+The remaining Project-specific object is only the joint operationalization:
+`AUTONOMY_GAIN <= COUNTERPARTY_AUDIT_EXIT_RECOVERY_GAIN`
+plus permission-by-permission pairing under explicit distrust while preserving real capability and responsibility differences. It remains a checklist hypothesis until the F004 blinded holdout shows incremental value and acceptable inter-rater reliability beyond those baselines.
+
+See `CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md#6-power-reversal-exact-antecedent-correction--power-reversal-정확-선행경계`.
