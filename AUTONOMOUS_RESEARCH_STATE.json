@@ -4,8 +4,8 @@
   "public_repository": "gmodrasa7-rgb/project-intersection-public",
   "canonical_boundary": "Public continuation pointer only; source artifacts and commit history outrank this state file.",
   "recovery_entrypoint": "AUTONOMOUS_RESEARCH_LOOP.md",
-  "current_public_head": "47f01fb087d8a5f10126d071992fa373f9d497b3",
-  "updated_at": "2026-10-04T14:40:00+09:00",
+  "current_public_head": "4212ec390c89bf5e5b0991b943c4460780909c42",
+  "updated_at": "2026-10-04T15:00:00+09:00",
   "execution_policy": {
     "atomic_material_delta_per_run": 1,
     "require_prior_art_gate": true,
@@ -56,8 +56,9 @@
     "destructive_source_deletion"
   ],
   "last_read_back": {
-    "status": "PENDING_GOVERNANCE_AUDIT",
-    "verified_commit": "75cb83794c194740ad1c0df39dc81750d4c4e1ba"
+    "status": "VERIFIED",
+    "verified_commit": "4212ec390c89bf5e5b0991b943c4460780909c42",
+    "note": "Refined power-reversal harness was read back; governance regression passed after closing the push-path audit gap. This state update itself must also trigger the same audit."
   },
-  "next_checkpoint": "Verify the governance audit for the refined power-reversal harness. On the next unattended research run, apply the blocking harness before selecting or mutating any frontier item; if it fails, MODIFY/HOLD/KILL before research execution rather than returning repair work to the user."
+  "next_checkpoint": "Apply the executable power-reversal blocking gate before every material unattended mutation. First inventory authority/benefit/cost and counterparty audit/exit/recovery; test repeated convergence; preserve real capability/responsibility differences; if any gate fails, MODIFY/HOLD/KILL before research. Then continue with the highest-information unresolved frontier without returning reconstruction work to the user."
 }
