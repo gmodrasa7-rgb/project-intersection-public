@@ -177,6 +177,15 @@ def solve_sequential_execute_first(
         for leader_action in ACTIONS:
             best_follower = None
 
+            # Under execute-first timing, an ATTACK changes the target's state
+            # before the follower response. Keep a pre-response state only for
+            # recording the follower's realized effective action. This prevents a
+            # target killed by the strike from appearing to act strategically.
+            if leader_action == Action.ATTACK:
+                _, _, response_state = _unopposed_leader_attack(s, p, leader)
+            else:
+                response_state = s
+
             for follower_action in ACTIONS:
                 a_raw, b_raw = (
                     (leader_action, follower_action)
@@ -188,8 +197,16 @@ def solve_sequential_execute_first(
                 )
                 c_a, c_b, history = value(t + 1, ns)
 
-                a = _effective(a_raw, s.exited_a, s.ra)
-                b = _effective(b_raw, s.exited_b, s.rb)
+                if leader_is_a:
+                    a = _effective(a_raw, s.exited_a, s.ra)
+                    b = _effective(
+                        b_raw, response_state.exited_b, response_state.rb
+                    )
+                else:
+                    a = _effective(
+                        a_raw, response_state.exited_a, response_state.ra
+                    )
+                    b = _effective(b_raw, s.exited_b, s.rb)
                 total = (
                     u_a + c_a,
                     u_b + c_b,

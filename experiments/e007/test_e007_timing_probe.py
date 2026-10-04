@@ -41,7 +41,11 @@ def test_timing_sweep_covers_both_role_orders_symmetrically():
     assert summary["total_cases"] == 2 * expected_per_leader
     assert summary["by_leader"]["A"]["total_cases"] == expected_per_leader
     assert summary["by_leader"]["B"]["total_cases"] == expected_per_leader
-    assert summary["timing_sensitive_cases"] > 0
+    assert summary["timing_sensitive_cases"] == 36
+    assert summary["history_sensitive_cases"] == 36
+    assert summary["classification_sensitive_cases"] == 17
+    assert summary["by_leader"]["A"]["timing_sensitive_cases"] == 18
+    assert summary["by_leader"]["B"]["timing_sensitive_cases"] == 18
     assert summary["history_sensitive_cases"] >= summary["classification_sensitive_cases"]
     tp.validate_summary(summary)
 

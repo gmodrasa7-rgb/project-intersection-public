@@ -105,6 +105,7 @@ Only when the designated period leader chooses `ATTACK`:
 4. the follower then resolves its selected action from the post-strike state;
 5. during that response-stage resolution the leader is treated as `WAIT` so the attack is not applied twice;
 6. outside-option/survival/cooperation stage flows are counted once, during the response-stage resolution.
+7. history records the follower's **realized effective response from the post-strike state**. If the strike has already made the follower inactive, record `WAIT`, not the raw enumerated action. The leader's strike remains recorded as `ATTACK`.
 
 For any leader action other than `ATTACK`, use the baseline stage order.
 
@@ -181,9 +182,9 @@ For every case, solve both timing conventions and record:
 The released same-implementation project rerun currently reports:
 
 - total cases: **72**
-- history and/or classification changed: **31**
+- history and/or classification changed: **36**
 - classification changed: **17**
-- A-leading changed: **13 / 36**
+- A-leading changed: **18 / 36**
 - B-leading changed: **18 / 36**
 - A-leading classification changed: **8 / 36**
 - B-leading classification changed: **9 / 36**

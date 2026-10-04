@@ -8,7 +8,7 @@
 
 ## One-sentence result
 
-In a small finite-horizon multi-agent toy game, changing the timing semantics alone changed history and/or classification in **31 of 72 synthetic audit cases** and changed the outcome classification in **17 of 72**, showing that an apparently favorable cooperation result can depend on who is allowed to act first rather than on a robust property of the mechanism.
+In a small finite-horizon multi-agent toy game, changing the timing semantics alone changed history and/or classification in **36 of 72 synthetic audit cases** and changed the outcome classification in **17 of 72**, showing that an apparently favorable cooperation result can depend on who is allowed to act first rather than on a robust property of the mechanism.
 
 These are **synthetic sensitivity counts, not empirical probabilities**.
 
@@ -29,13 +29,15 @@ The first timing sweep itself contained a role-reversal bug: in B-leading cases 
 
 The error was preserved, corrected, regression-tested, and rerun as `kf002-v2-target-symmetric`.
 
+A later history-encoding audit found a second, narrower defect: under execute-first timing the solver recorded the follower's effective action from the **pre-strike** state even when the strike had already rendered that follower inactive before its response. Utilities and classifications were unchanged, but the history representation violated the inactive-actor rule. The repaired encoding records the follower from the post-strike response state. This changes the history/timing-sensitive count from **31/72 to 36/72** while the classification-sensitive count remains **17/72**.
+
 ### Corrected 72-case result
 
 | Audit result | Count | Share of selected synthetic grid |
 |---|---:|---:|
-| Any history and/or classification changed | 31 / 72 | 43.1% |
+| Any history and/or classification changed | 36 / 72 | 50.0% |
 | Outcome classification changed | 17 / 72 | 23.6% |
-| A-leading timing-sensitive | 13 / 36 | 36.1% |
+| A-leading timing-sensitive | 18 / 36 | 50.0% |
 | B-leading timing-sensitive | 18 / 36 | 50.0% |
 | A-leading classification-sensitive | 8 / 36 | 22.2% |
 | B-leading classification-sensitive | 9 / 36 | 25.0% |
@@ -60,13 +62,13 @@ The configured verification path checks:
 
 - the full project regression/governance suite;
 - construction of an isolated E007 candidate;
-- **26 isolated E007 regression tests**;
+- **27 isolated E007 regression tests**;
 - rerunning the timing probe from that isolated directory;
-- exact reproduction of **72 total / 31 timing-sensitive / 17 classification-sensitive**;
+- exact reproduction of **72 total / 36 timing-sensitive / 17 classification-sensitive**;
 - a conservative credential/personal-pattern scan;
 - automatic generation of provenance, run instructions, minimal dependencies, license-status note, and machine-readable timing output.
 
-The build fails if the headline 72/31/17 counts change without review.
+The build fails if the headline 72/36/17 counts change without review.
 
 Each generated bundle's exact source commit belongs in its generated `PROVENANCE.md`; its archive digest belongs in the external build/execution record. They are intentionally **not self-pinned inside this README**, because embedding an archive's own digest or a later commit identifier in a file inside that archive creates a circular, stale provenance problem.
 
@@ -138,9 +140,9 @@ The isolated reproduction/privacy gates must pass for the exact release candidat
 
 ## 원문2 — 한국어 공개 요약
 
-이 합성 실험의 현재 격리 테스트 26개가 통과했고 72조건 중 경로 또는 분류 변화 31개, 분류 변화 17개를 재현했다. 이탈 우선과 선행행동 우선 규칙의 비교이며 현실 확률·공존의 증명이 아니다. 프로젝트 구현·조건의 계산 재현으로 독립 과학 재현과 구분한다.
+이 합성 실험의 현재 격리 테스트 27개가 통과했고 72조건 중 경로 또는 분류 변화 36개, 분류 변화 17개를 재현했다. 이탈 우선과 선행행동 우선 규칙의 비교이며 현실 확률·공존의 증명이 아니다. 프로젝트 구현·조건의 계산 재현으로 독립 과학 재현과 구분한다.
 
-최초 역할반전 탐색의 대상 좌표 오류를 수정한 실패계보를 보존한다. 단일 제재값은 검출 실패분포를 식별하지 못하고, 표현되지 않은 대체물 정체성은 구별할 수 없다. 넓은 시점·균형 조건, 경로 밖 참여, 대체 가능성, 현실 검증은 미해결이다. 테스트 통과가 이 한계를 해결하지 않는다.
+최초 역할반전 탐색의 대상 좌표 오류를 수정한 실패계보를 보존한다. 추가 감사에서 공격 선행 후 이미 비활성화된 상대의 행동을 공격 전 상태 기준으로 history에 기록하던 오류도 발견해 수정했다. 이 수정은 경로 민감도 31/72를 36/72로 바꾸지만 분류 민감도 17/72는 유지한다. 단일 제재값은 검출 실패분포를 식별하지 못하고, 표현되지 않은 대체물 정체성은 구별할 수 없다. 넓은 시점·균형 조건, 경로 밖 참여, 대체 가능성, 현실 검증은 미해결이다. 테스트 통과가 이 한계를 해결하지 않는다.
 
 실행: `python -m pip install -r requirements.txt`, `python -m pytest -q -p no:cacheprovider`, `python timing_probe.py --summary-only --check`.
 코드 Apache-2.0, 설명문 CC BY 4.0의 범위는 LICENSE_STATUS.md에 명시한다. 연구 전체와 비공개 자료에는 적용하지 않는다.
