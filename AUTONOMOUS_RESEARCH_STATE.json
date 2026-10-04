@@ -4,8 +4,8 @@
   "public_repository": "gmodrasa7-rgb/project-intersection-public",
   "canonical_boundary": "Public continuation pointer only; source artifacts and commit history outrank this state file.",
   "recovery_entrypoint": "AUTONOMOUS_RESEARCH_LOOP.md",
-  "current_public_head": "5bb5fb688bdd27908e45d7bb902d4329cf51b767",
-  "updated_at": "2026-10-05T03:05:48+09:00",
+  "current_public_head": "3407093b1d385eaeed1794fa163236b9a6ca1424",
+  "updated_at": "2026-10-05T04:07:13+09:00",
   "execution_policy": {
     "atomic_material_delta_per_run": 1,
     "require_prior_art_gate": true,
@@ -45,10 +45,10 @@
     },
     {
       "id": "F003",
-      "status": "MODIFY_PARTIAL_RECOVERY_CENSORING_RULE_ADDED_CASE_LEVEL_SUPPORT_GENERALIZATION_UNRESOLVED",
+      "status": "NARROW_PARTIAL_RECOVERY_RULE_NOVELTY_REJECTED_QUERY_IDENTIFIABILITY_REQUIRED_GENERALIZATION_UNRESOLVED",
       "question": "After accounting for ordinary decay, migration, turnover, compression, organizational forgetting, and records-management failure, is there independent evidence of selective beneficiary-aligned manipulation of shared historical records?",
-      "evidence_boundary": "Iran/Contra supports case-level strategic manipulation. NARA remains a provisional self-report negative control. NTSB overwrite cases establish that a missing claim-relevant channel censors direction. The IRS/TIGTA recovered-direction holdout adds that partial recovery does not remove this censoring when recovery coverage or selection is unknown: recovered items can establish specific facts, but cannot classify the unrecovered population's beneficiary direction.",
-      "next_cheapest_discriminating_check": "Find an independently investigated case where an initially missing claim-relevant channel was recovered with independently bounded coverage or a characterized selection mechanism. Freeze the axes before reveal, then test whether recovered direction changes the pre-reveal classification without extrapolating beyond measured coverage.",
+      "evidence_boundary": "Iran/Contra supports case-level strategic manipulation; generalization remains unresolved. NARA and NTSB controls constrain false positives. The IRS/TIGTA holdout shows that recovered records can correct specific facts without automatically identifying the missing population. Rubin missingness conditions, Mohan-Pearl-Tian query recoverability, and Manski partial identification already explain this boundary. Recovery fraction is neither necessary nor sufficient; direction claims require query-level identifiability under an explicit missingness model and stated auxiliary evidence.",
+      "next_cheapest_discriminating_check": "For the IRS/TIGTA holdout, define the beneficiary-direction estimand and a minimal missingness graph using only public variables. Test whether any documented auxiliary evidence identifies or nontrivially bounds the estimand. If not, record the non-identification witness rather than searching for another case.",
       "last_historical_case_check": {
         "case": "Iran/Contra NSC records and PROFS backups",
         "basis_preregistration_commit": "d38d937a3d48b2744ec7a6888a39d9833016b9fa",
@@ -131,16 +131,29 @@
         "measurement_delta": "PARTIAL_RECOVERY_WITH_UNKNOWN_COVERAGE_DOES_NOT_UNCENSOR_DIRECTION",
         "strongest_counterexample": "A recovered document may contain decisive direct evidence; the rule blocks only extrapolation from a selected recovered subset to the unrecovered population, not document-level evidence.",
         "independence_limit": "official investigation and congressional records, not a complete raw archive; committee interpretation does not replace missing messages"
+      },
+      "last_prior_art_correction": {
+        "target": "PARTIAL_RECOVERY_WITH_UNKNOWN_COVERAGE_DOES_NOT_UNCENSOR_DIRECTION",
+        "decision": "NARROW_NOVELTY_REJECTED_REPLACE_COVERAGE_WITH_QUERY_IDENTIFIABILITY",
+        "established_baselines": [
+          "Rubin 1976, Inference and Missing Data, DOI 10.1093/biomet/63.3.581",
+          "Mohan, Pearl, Tian 2013, Graphical Models for Inference with Missing Data, NeurIPS 26",
+          "Manski 2005, Partial identification with missing data, DOI 10.1016/j.ijar.2004.10.006"
+        ],
+        "strongest_counterexample": "Incomplete recovery may still identify a query under an explicit missingness model and auxiliary evidence, while even 99% recovery may fail when the unrecovered 1% is selected by beneficiary direction.",
+        "revised_rule": "Recovered items support item-level claims. Population direction requires recoverability or identification under explicit missingness assumptions; otherwise report defensible bounds and retain partial censoring, or retain full censoring if no defensible bounds exist.",
+        "project_specific_remainder": "Operational governance mapping requiring symmetric disclosure of missingness assumptions, source selection, and uncertainty; not a new statistical theory.",
+        "prior_wording_lineage": "Preserved in both language artifacts as a useful but overbroad coverage-based precursor."
       }
     }
   ],
   "recent_material_delta": {
-    "type": "f003_partial_recovery_direction_censoring_rule",
-    "summary": "The IRS/TIGTA holdout showed that independent partial recovery can correct specific facts without identifying the directional distribution of unrecovered records. The screen was modified so unknown recovery coverage remains UNRESOLVED_DIRECTION_PARTIALLY_CENSORED rather than being treated as resolved positive or negative evidence.",
-    "basis_head": "5bb5fb688bdd27908e45d7bb902d4329cf51b767",
+    "type": "f003_partial_recovery_prior_art_narrowing",
+    "summary": "The coverage-based partial-recovery rule was narrowed to established missing-data identification theory. Recovery fraction is neither necessary nor sufficient; the beneficiary-direction query must be identifiable or recoverable under an explicit missingness model, otherwise bounds or censored outputs are required.",
+    "basis_head": "3407093b1d385eaeed1794fa163236b9a6ca1424",
     "source_artifact": "HISTORICAL_STATE_CONTROL_MEMORY_PROVENANCE_CAPTURE_v0_1_EN.md and _KO.md",
     "state_commit": "RESOLVE_FROM_GIT_HISTORY_AFTER_WRITE",
-    "scientific_support": "TIGTA testimony and Senate Finance Committee Report 114-119; complete raw archive and recovery representativeness unavailable"
+    "scientific_support": "Rubin 1976; Mohan, Pearl, Tian 2013; Manski 2005"
   },
   "human_only_gates": [
     "contracts_terms_ip_license_rights_changes",
@@ -152,12 +165,12 @@
   ],
   "last_read_back": {
     "status": "VERIFIED_MATERIAL_TARGET_PRE_STATE_WRITE",
-    "verified_commit": "5bb5fb688bdd27908e45d7bb902d4329cf51b767",
-    "verified_blob": "a9914b4fd7a9e9b7318f97a351c72fcd087a6cf8",
+    "verified_commit": "3407093b1d385eaeed1794fa163236b9a6ca1424",
+    "verified_blob": "eed14fd65990f5d5b824513f3e22ddbcc8bc5dec",
     "verified_path": "RESEARCH_TOC.md",
-    "note": "Both language mirrors and research map record the partial-recovery coverage rule. State-write completion requires post-write JSON parse, read-back, compare, and status check."
+    "note": "Both language mirrors and research map contain the identifiability correction. The attempted prior-art registry path was absent and was not created; source attribution is preserved in the research artifacts. State-write completion requires post-write read-back."
   },
-  "next_checkpoint": "F003 bounded-recovery holdout: find an independently investigated case with near-complete recovery or a characterized recovery-selection mechanism; freeze axes before reveal and test direction classification. F001 remains externally gated.",
+  "next_checkpoint": "F003 IRS identifiability audit: define the beneficiary-direction estimand and minimal public missingness graph, then test identification or derive defensible bounds/non-identification witness. F001 remains externally gated.",
   "current_public_head_semantics": "Head observed immediately before this state-file write. The commit containing this file must be resolved from Git history because a Git-tracked file cannot self-embed its own containing commit hash without changing that hash.",
   "resolved_process_findings": [
     {
@@ -170,18 +183,18 @@
     }
   ],
   "last_checkpoint_result": {
-    "checkpoint": "F003 recovered-direction holdout",
-    "decision": "MODIFY_ADD_UNRESOLVED_DIRECTION_PARTIALLY_CENSORED",
+    "checkpoint": "F003 partial-recovery prior-art gate",
+    "decision": "NARROW_NOVELTY_REJECTED_QUERY_IDENTIFIABILITY_REQUIRED",
     "performed": [
       "Read current public continuity protocol and state",
-      "Selected an independently investigated IRS/TIGTA case where a missing e-mail channel was partly recovered",
-      "Applied frozen axes and recorded the pre-reveal UNRESOLVED_DIRECTION_CENSORED result",
-      "Compared that result with recovered-message totals and investigation findings",
+      "Compared the partial-recovery rule with established missing-data theory",
+      "Applied the strongest counterexample that recovery fraction can diverge from identifiability",
+      "Preserved the earlier coverage wording as failure lineage",
       "Updated both language mirrors and research map"
     ],
-    "result": "Partial independent recovery established previously unseen relevant records but not a representative or complete directional denominator. Unknown recovery coverage now remains partially censored.",
-    "strongest_counterexample": "A partial recovery can contain decisive direct evidence, so the rule preserves document-level findings while blocking only population extrapolation.",
-    "power_reversal": "The rule prevents a record controller from using incomplete recovery as proof of innocence and prevents an investigator from converting suspicious gaps into proof of intent. Public sources, Git rollback, and no user repair burden are preserved."
+    "result": "The partial-recovery rule is not a new statistical result. It is now an operational application of query-level recoverability and partial identification.",
+    "strongest_counterexample": "Low recovery can still identify under a valid model; near-complete recovery can remain nonidentified under direction-selective missingness.",
+    "power_reversal": "Both record controller and investigator must expose missingness assumptions and uncertainty. Neither incomplete recovery nor suspicion can be converted into unilateral proof; public sources and Git rollback remain available."
   },
   "resolved_research_findings": [
     {
