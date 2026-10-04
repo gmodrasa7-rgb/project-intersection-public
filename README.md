@@ -382,9 +382,9 @@ a new concept should be narrowed or rejected within its current scope.
 
 Claims may be updated as:
 
-**KEEP / MODIFY / HOLD / KILL / UNRESOLVED / OUTSIDE_MODEL_SUPPORT**
+**ACTIVE / MODIFY / HOLD / ROS / NOVELTY_REJECTED / UNSUPPORTED / NARROWED / SUPERSEDED / UNRESOLVED / OUTSIDE_MODEL_SUPPORT**
 
-Here, **KILL does not mean deletion, forgetting, or permanent closure.**
+Here, **ROS means currently inactive but explicitly eligible for reassessment when relevant conditions change. Novelty rejection, lack of support, narrowing, and supersession are tracked separately.**
 
 It means that the claim is not adopted  
 under the current evidence and explicitly stated scope.
@@ -987,13 +987,13 @@ Project Intersection에서 발생하는
 
 주장은 필요에 따라
 
-**KEEP / MODIFY / HOLD / KILL / UNRESOLVED / OUTSIDE_MODEL_SUPPORT**
+**ACTIVE / MODIFY / HOLD / ROS / NOVELTY_REJECTED / UNSUPPORTED / NARROWED / SUPERSEDED / UNRESOLVED / OUTSIDE_MODEL_SUPPORT**
 
 로 갱신한다.
 
 여기서
 
-**KILL은 삭제·망각·영구폐쇄를 뜻하지 않는다.**
+**ROS는 현재 비활성 상태이지만 관련 조건이 바뀌면 재평가 대상이 되는 상태다. 독창성 기각·근거 부족·범위 축소·대체는 별도 상태로 구분한다.**
 
 현재의 증거와  
 명시된 적용범위에서
