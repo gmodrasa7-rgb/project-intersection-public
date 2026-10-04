@@ -3,9 +3,9 @@
 
 Status date / 상태 기준일: **2026-10-04**
 
-> **This page is a funding and research-partnership brief, not an offer of equity, securities, or a claim of secured funding.**
+> **This page describes research funding, sponsorship, and research-partnership needs. Planned or requested funding is never counted as secured funding.**
 >
-> **이 문서는 연구비·후원·연구 파트너십 안내이며, 지분·증권의 청약 또는 확보자금 주장문이 아니다.**
+> **이 문서는 연구비·후원·연구 파트너십의 필요와 산출물을 설명한다. 계획·요청 단계의 자금은 확보자금으로 계상하지 않는다.**
 
 ---
 
@@ -46,7 +46,7 @@ The strongest currently public computational artifact is [E007 timing sensitivit
 
 ### Due diligence boundary
 
-For the current funding fit, IP/licensing status, and the distinction between research funding and future equity readiness, see [DUE_DILIGENCE.md](DUE_DILIGENCE.md).
+For the current funding boundaries, evidence requirements, IP/licensing status, and sponsor-independence rules, see [DUE_DILIGENCE.md](DUE_DILIGENCE.md).
 
 ### What funding buys
 
@@ -120,7 +120,7 @@ Project Intersection은 권력·인센티브·시점·practical exit·복구능�
 
 ### 실사 경계
 
-현재 적합한 외부자금 형태, IP·라이선스 상태, 연구비와 미래 지분투자 준비상태의 구분은 [DUE_DILIGENCE.md](DUE_DILIGENCE.md)를 참조한다.
+현재 연구비 범위, 증거기준, IP·라이선스 상태, 후원자와 연구판정의 분리 원칙은 [DUE_DILIGENCE.md](DUE_DILIGENCE.md)를 참조한다.
 
 ### 자금이 실제로 만드는 것
 
