@@ -4,8 +4,8 @@
   "public_repository": "gmodrasa7-rgb/project-intersection-public",
   "canonical_boundary": "Public continuation pointer only; source artifacts and commit history outrank this state file.",
   "recovery_entrypoint": "AUTONOMOUS_RESEARCH_LOOP.md",
-  "current_public_head": "e438863a41d45115ae62b6504b8a586aceecf6f7",
-  "updated_at": "2026-10-05T02:01:44+09:00",
+  "current_public_head": "5bb5fb688bdd27908e45d7bb902d4329cf51b767",
+  "updated_at": "2026-10-05T03:05:48+09:00",
   "execution_policy": {
     "atomic_material_delta_per_run": 1,
     "require_prior_art_gate": true,
@@ -45,10 +45,10 @@
     },
     {
       "id": "F003",
-      "status": "MODIFY_DIRECTION_CENSORING_RULE_ADDED_CASE_LEVEL_SUPPORT_GENERALIZATION_UNRESOLVED",
+      "status": "MODIFY_PARTIAL_RECOVERY_CENSORING_RULE_ADDED_CASE_LEVEL_SUPPORT_GENERALIZATION_UNRESOLVED",
       "question": "After accounting for ordinary decay, migration, turnover, compression, organizational forgetting, and records-management failure, is there independent evidence of selective beneficiary-aligned manipulation of shared historical records?",
-      "evidence_boundary": "Iran/Contra supports case-level strategic manipulation. NARA remains a provisional self-report negative control. NTSB overwrite cases support a narrow false-positive boundary, but the JFK mixed-mechanism case shows a sensitivity/identifiability limit: when the claim-relevant communication channel is itself missing, beneficiary-aligned direction is censored rather than observed negative. Such cases must return UNRESOLVED_DIRECTION_CENSORED.",
-      "next_cheapest_discriminating_check": "Find a held-out independently investigated case where the initially missing claim-relevant channel was later recovered or reconstructed. Apply the frozen axes before examining the recovered direction, then score false-negative and false-positive behavior. Without recovered direction, do not count sensitivity evidence.",
+      "evidence_boundary": "Iran/Contra supports case-level strategic manipulation. NARA remains a provisional self-report negative control. NTSB overwrite cases establish that a missing claim-relevant channel censors direction. The IRS/TIGTA recovered-direction holdout adds that partial recovery does not remove this censoring when recovery coverage or selection is unknown: recovered items can establish specific facts, but cannot classify the unrecovered population's beneficiary direction.",
+      "next_cheapest_discriminating_check": "Find an independently investigated case where an initially missing claim-relevant channel was recovered with independently bounded coverage or a characterized selection mechanism. Freeze the axes before reveal, then test whether recovered direction changes the pre-reveal classification without extrapolating beyond measured coverage.",
       "last_historical_case_check": {
         "case": "Iran/Contra NSC records and PROFS backups",
         "basis_preregistration_commit": "d38d937a3d48b2744ec7a6888a39d9833016b9fa",
@@ -112,16 +112,35 @@
         "external_outcome": "NTSB later attributed incident to distraction, concurrent tasks, loss of situational awareness, and inadequate risk controls rather than record manipulation",
         "measurement_delta": "claim-relevant channel missing plus no independently observable direction must not be scored as benign or H3-negative",
         "strongest_counterexample": "requiring direction from a missing channel can make H3 impossible to trigger; inferring it from timing or noncooperation can create false positives"
+      },
+      "last_recovered_direction_holdout": {
+        "case": "IRS Exempt Organizations data loss / Lois Lerner e-mail recovery",
+        "sources": [
+          "TIGTA testimony, House hearing IRS: TIGTA Update, 26 February 2015, https://www.govinfo.gov/content/pkg/CHRG-114hhrg95249/html/CHRG-114hhrg95249.htm",
+          "Senate Finance Committee Report 114-119, https://www.govinfo.gov/content/pkg/CRPT-114srpt119/html/CRPT-114srpt119-pt1.htm"
+        ],
+        "basis_rule": "frozen missingness/direction/timing/recovery axes and prior UNRESOLVED_DIRECTION_CENSORED rule; pre-reveal classification recorded without using recovered content",
+        "pre_reveal_decision": "UNRESOLVED_DIRECTION_CENSORED",
+        "observations": {
+          "missingness": "TIGTA recovered 1,330 previously unproduced Lerner e-mails, while the full 2010–2011 communication record remained unreconstructable",
+          "direction": "some recovered messages were relevant, but representativeness of surviving/recoverable messages for the unrecovered population was not established",
+          "timing": "preservation and investigation timing raised concern; TIGTA reported no evidence that a separate tape erasure was purposeful concealment",
+          "recovery": "independent recovery disproved practical irrecoverability for part of the record, not the complete missing set"
+        },
+        "post_reveal_decision": "UNRESOLVED_DIRECTION_PARTIALLY_CENSORED",
+        "measurement_delta": "PARTIAL_RECOVERY_WITH_UNKNOWN_COVERAGE_DOES_NOT_UNCENSOR_DIRECTION",
+        "strongest_counterexample": "A recovered document may contain decisive direct evidence; the rule blocks only extrapolation from a selected recovered subset to the unrecovered population, not document-level evidence.",
+        "independence_limit": "official investigation and congressional records, not a complete raw archive; committee interpretation does not replace missing messages"
       }
     }
   ],
   "recent_material_delta": {
-    "type": "f003_direction_censoring_measurement_rule",
-    "summary": "A mixed-mechanism NTSB case showed that missing claim-relevant audio censors the beneficiary-direction axis. The screen was modified to return UNRESOLVED_DIRECTION_CENSORED instead of counting unobserved direction as negative. The later non-capture causal finding does not validate sensitivity because the decisive channel remained missing.",
-    "basis_head": "e438863a41d45115ae62b6504b8a586aceecf6f7",
+    "type": "f003_partial_recovery_direction_censoring_rule",
+    "summary": "The IRS/TIGTA holdout showed that independent partial recovery can correct specific facts without identifying the directional distribution of unrecovered records. The screen was modified so unknown recovery coverage remains UNRESOLVED_DIRECTION_PARTIALLY_CENSORED rather than being treated as resolved positive or negative evidence.",
+    "basis_head": "5bb5fb688bdd27908e45d7bb902d4329cf51b767",
     "source_artifact": "HISTORICAL_STATE_CONTROL_MEMORY_PROVENANCE_CAPTURE_v0_1_EN.md and _KO.md",
     "state_commit": "RESOLVE_FROM_GIT_HISTORY_AFTER_WRITE",
-    "scientific_support": "independent NTSB investigation and final report; no direct recovery of cockpit semantic content"
+    "scientific_support": "TIGTA testimony and Senate Finance Committee Report 114-119; complete raw archive and recovery representativeness unavailable"
   },
   "human_only_gates": [
     "contracts_terms_ip_license_rights_changes",
@@ -133,12 +152,12 @@
   ],
   "last_read_back": {
     "status": "VERIFIED_MATERIAL_TARGET_PRE_STATE_WRITE",
-    "verified_commit": "e438863a41d45115ae62b6504b8a586aceecf6f7",
-    "verified_blob": "24c5f42d32dca3daf0b4b1b5bd9d529a88694639",
+    "verified_commit": "5bb5fb688bdd27908e45d7bb902d4329cf51b767",
+    "verified_blob": "a9914b4fd7a9e9b7318f97a351c72fcd087a6cf8",
     "verified_path": "RESEARCH_TOC.md",
-    "note": "Both language mirrors preserve frozen-axis coding, censored-direction rule, pre-outcome UNRESOLVED decision, later NTSB non-capture finding, and sensitivity limit; research map aligned. Current state-write completion requires post-write read-back."
+    "note": "Both language mirrors and research map record the partial-recovery coverage rule. State-write completion requires post-write JSON parse, read-back, compare, and status check."
   },
-  "next_checkpoint": "F003 recovered-direction holdout: independently investigated case where an initially missing claim-relevant channel was later recovered/reconstructed; code before reveal, then measure false-negative/false-positive behavior. F001 remains externally gated.",
+  "next_checkpoint": "F003 bounded-recovery holdout: find an independently investigated case with near-complete recovery or a characterized recovery-selection mechanism; freeze axes before reveal and test direction classification. F001 remains externally gated.",
   "current_public_head_semantics": "Head observed immediately before this state-file write. The commit containing this file must be resolved from Git history because a Git-tracked file cannot self-embed its own containing commit hash without changing that hash.",
   "resolved_process_findings": [
     {
@@ -151,18 +170,18 @@
     }
   ],
   "last_checkpoint_result": {
-    "checkpoint": "F003 mixed-mechanism sensitivity attack",
-    "decision": "MODIFY_ADD_UNRESOLVED_DIRECTION_CENSORED",
+    "checkpoint": "F003 recovered-direction holdout",
+    "decision": "MODIFY_ADD_UNRESOLVED_DIRECTION_PARTIALLY_CENSORED",
     "performed": [
       "Read current public continuity protocol and state",
-      "Selected an independently investigated JFK case with automatic overwrite and unresolved preservation path",
-      "Applied frozen four axes without using final probable cause as H3 input",
-      "Compared the pre-outcome screen result with the later NTSB finding",
+      "Selected an independently investigated IRS/TIGTA case where a missing e-mail channel was partly recovered",
+      "Applied frozen axes and recorded the pre-reveal UNRESOLVED_DIRECTION_CENSORED result",
+      "Compared that result with recovered-message totals and investigation findings",
       "Updated both language mirrors and research map"
     ],
-    "result": "The screen correctly avoided an H3 false positive but could not provide sensitivity evidence because the missing cockpit channel censored the direction variable. Mixed cases now return UNRESOLVED_DIRECTION_CENSORED.",
-    "strongest_counterexample": "Direction required from an unrecovered channel can make strategic capture undetectable, while direction inferred from timing or behavior can generate false positives.",
-    "power_reversal": "The rule prevents a record controller from benefiting epistemically from missing evidence, while also preventing an investigator from treating suspicion as proof. It preserves independent-source links, Git rollback, and no user repair burden."
+    "result": "Partial independent recovery established previously unseen relevant records but not a representative or complete directional denominator. Unknown recovery coverage now remains partially censored.",
+    "strongest_counterexample": "A partial recovery can contain decisive direct evidence, so the rule preserves document-level findings while blocking only population extrapolation.",
+    "power_reversal": "The rule prevents a record controller from using incomplete recovery as proof of innocence and prevents an investigator from converting suspicious gaps into proof of intent. Public sources, Git rollback, and no user repair burden are preserved."
   },
   "resolved_research_findings": [
     {
