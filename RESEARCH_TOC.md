@@ -2162,3 +2162,8 @@ Project Intersection의
 추적 가능하게 만드는 것**
 
 이 목표다.
+
+
+### F003 external standards boundary (2026-10-05)
+
+NIST CFTT supplies an independent conformance framework for deleted-file recovery, but its specification also states that estimated content has no definitive expected result. Project Intersection therefore separates technical recovery validation from beneficiary-direction identification. A recovery benchmark without auditable semantic direction labels is a measurement-layer control, not an H3 classifier-calibration holdout. See both language versions of `HISTORICAL_STATE_CONTROL_MEMORY_PROVENANCE_CAPTURE_v0_1`.
