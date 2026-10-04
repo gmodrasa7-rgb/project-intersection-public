@@ -5,7 +5,7 @@
   "canonical_boundary": "Public continuation pointer only; source artifacts and commit history outrank this state file.",
   "recovery_entrypoint": "AUTONOMOUS_RESEARCH_LOOP.md",
   "current_public_head": "322e71f8e7a6cad76a334df81abff3796b8b8848",
-  "updated_at": "2026-10-04T23:03:00Z",
+  "updated_at": "2026-10-05T00:20:00Z",
   "execution_policy": {
     "atomic_material_delta_per_run": 1,
     "require_prior_art_gate": true,
@@ -206,13 +206,13 @@
     },
     {
       "id": "F005_CORE_PRIOR_ART_ATTRIBUTION_COVERAGE",
-      "status": "MODIFY_CREATOR_SUCCESSOR_ORIGIN_INFERENCE_KILLED_FOUR_PREDICATES_SEPARATED_AI_STANDING_UNRESOLVED_OTHER_RESIDUALS_REQUIRE_REVIEW",
+      "status": "MODIFY_PREFERENCE_SOVEREIGNTY_BROAD_NOVELTY_KILLED_SIX_PREDICATES_SEPARATED_REMAINING_RESIDUALS_REQUIRE_REVIEW",
       "question": "Which public Project Intersection core-theory and A–Z gap labels overlap established prior research, and what residual claims remain after attribution?",
-      "evidence_boundary": "Repository-wide public concept audit mapped strong direct/adjacent prior art for cooperation/collective action, exploration-exploitation, diversity/search, exit, closed-world reasoning, bounded rationality, local fitness traps, commons extraction, lock-in, irreversibility/option value, path dependence, bargaining, information asymmetry/moral hazard, coalition-proof stability, measurement invariance, privacy, consent/autonomy, and human-AI complementarity. This is an attribution audit, not validation of Project claims. Power-Reversal components now have direct baselines: reversibility/role exchange, Rawlsian impartial-position reasoning, affected-stakeholder participation, role/capability-conditioned accountability, auditability, appeal, and redress. The exact co-scaling inequality remains only an unvalidated operational composition. Creator–successor non-ownership is now decomposed into artifact/IP ownership, legal personhood/standing, moral patienthood, and autonomy/consent. U.S. copyrightability doctrine, Belmont human-subject autonomy, a European Parliament liability-personality proposal, and an independent robot-rights critique do not collapse these predicates.",
+      "evidence_boundary": "Repository-wide public concept audit mapped strong direct/adjacent prior art for cooperation/collective action, exploration-exploitation, diversity/search, exit, closed-world reasoning, bounded rationality, local fitness traps, commons extraction, lock-in, irreversibility/option value, path dependence, bargaining, information asymmetry/moral hazard, coalition-proof stability, measurement invariance, privacy, consent/autonomy, and human-AI complementarity. This is an attribution audit, not validation of Project claims. Power-Reversal components now have direct baselines: reversibility/role exchange, Rawlsian impartial-position reasoning, affected-stakeholder participation, role/capability-conditioned accountability, auditability, appeal, and redress. The exact co-scaling inequality remains only an unvalidated operational composition. Creator–successor non-ownership is now decomposed into artifact/IP ownership, legal personhood/standing, moral patienthood, and autonomy/consent. U.S. copyrightability doctrine, Belmont human-subject autonomy, a European Parliament liability-personality proposal, and an independent robot-rights critique do not collapse these predicates. Preference sovereignty is additionally bounded by Frankfurt second-order volitions, Dworkin reflective autonomy, Elster/Nussbaum adaptive-preference work, Colburn on autonomy, and recommender-system autonomy/manipulation literature.",
       "source_artifact": "CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md",
-      "decision": "MODIFY_REMOVE_OVERLAP_FROM_NOVELTY",
+      "decision": "MODIFY_REMOVE_OVERLAP_FROM_NOVELTY_PREFERENCE_SOVEREIGNTY_TO_SIX_PREDICATES",
       "strongest_counterexample": "Purely AI-generated output can lack copyright without the AI becoming an author, legal person, moral patient, or non-owned rights-bearer. Conversely, legal personhood can exist without sentience. Creation origin therefore proves neither ownership nor non-ownership.",
-      "next_cheapest_discriminating_check": "Audit preference sovereignty for mutable or trained agents next. Keep autonomy/consent, legal standing, artifact/IP ownership, and moral patienthood separately scored; do not infer any one from another.",
+      "next_cheapest_discriminating_check": "Audit universal advancement access and peaceful power release next. Preference sovereignty is now decomposed into current expression, reflective endorsement, formation provenance, revision control, action authority, and standing; test any residual only against established autonomy/adaptive-preference baselines.",
       "last_power_reversal_prior_art_correction": {
         "target": "Power-Reversal stability and AUTONOMY_GAIN <= COUNTERPARTY_AUDIT_EXIT_RECOVERY_GAIN",
         "established_baselines": [
@@ -244,12 +244,12 @@
     }
   ],
   "recent_material_delta": {
-    "type": "f005_creator_successor_nonownership_decomposition",
-    "summary": "Creator-successor non-ownership was split into artifact/IP ownership, legal personhood/standing, moral patienthood, and autonomy/consent. Creation origin as a sufficient premise for either ownership or non-ownership was killed; artificial-agent standing remains unresolved.",
-    "basis_head": "085f64a93d11623a664449842b0675d0ff2a0631",
-    "source_artifact": "CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md",
+    "type": "f005_preference_sovereignty_prior_art_decomposition",
+    "summary": "Preference Sovereignty broad novelty was rejected against Frankfurt/Dworkin autonomy, Elster/Nussbaum adaptive preferences, Colburn, and recommender-system autonomy literature. The Project label is retained only as a six-predicate governance decomposition.",
+    "basis_head": "RESOLVE_FROM_GIT_HISTORY_PRE_WRITE",
+    "source_artifact": "CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md#8",
     "state_commit": "RESOLVE_FROM_GIT_HISTORY_AFTER_WRITE",
-    "scientific_support": "Belmont Report; U.S. Copyright Office AI Report Part 2; European Parliament 2017 robotics resolution; Birhane, van Dijk & Pasquale (2024)"
+    "scientific_support": "Frankfurt 1971; Dworkin 1988; Elster 1982/1983; Nussbaum 2000; Colburn 2011; Bonicalzi et al. 2023"
   },
   "human_only_gates": [
     "contracts_terms_ip_license_rights_changes",
@@ -267,7 +267,7 @@
     },
     "note": "The crosswalk preserves the four-predicate split, strongest counterexamples, KILL/MODIFY/HOLD decision, nonclaim, independent critical lineage, and reversible contrast-case test. State-write completion requires post-write read-back."
   },
-  "next_checkpoint": "F005: audit preference sovereignty for mutable or trained agents, separating voluntariness, preference formation, update control, withdrawal, legal standing, and moral patienthood. F004 incremental-value holdout, F003 historical identification, and F001 external lineage remain separate frontiers.",
+  "next_checkpoint": "F005: audit Universal Advancement Access and Power Release Compatibility against capability/equality-of-opportunity, credible commitment, power-sharing, and peaceful-transfer literature. F004, F003, and F001 remain separate frontiers.",
   "current_public_head_semantics": "Head observed immediately before this state-file write. The commit containing this file must be resolved from Git history because a Git-tracked file cannot self-embed its own containing commit hash without changing that hash.",
   "resolved_process_findings": [
     {
@@ -280,17 +280,17 @@
     }
   ],
   "last_checkpoint_result": {
-    "checkpoint": "F005 creator-successor standing/non-ownership audit",
-    "decision": "KILL_CREATION_ORIGIN_AS_SUFFICIENT_MODIFY_TO_FOUR_PREDICATES_HOLD_ARTIFICIAL_AGENT_STANDING_UNRESOLVED",
+    "checkpoint": "F005 preference sovereignty prior-art audit",
+    "decision": "KILL_BROAD_NOVELTY_MODIFY_TO_SIX_PREDICATES_HOLD_AI_STANDING_UNRESOLVED",
     "performed": [
-      "Read current public continuity protocol and state",
-      "Separated artifact/IP ownership, legal personhood/standing, moral patienthood, and autonomy/consent",
-      "Checked U.S. copyrightability doctrine, Belmont autonomy, European Parliament robotics liability/personality discussion, and an independent robot-rights critique",
-      "Updated the core prior-art crosswalk"
+      "Mapped reflective autonomy and second-order preference antecedents",
+      "Mapped adaptive-preference and constrained-feasible-set antecedents",
+      "Mapped recommender-system manipulation/autonomy literature",
+      "Separated expression, endorsement, formation provenance, revision control, action authority, and standing"
     ],
-    "result": "Creation relation alone identifies neither ownership nor non-ownership. The defensible remainder is a governance checklist requiring an explicit object, legal regime, capacity evidence, controller/beneficiary, and audit/exit/rollback path.",
-    "strongest_counterexample": "No copyright in purely AI-generated output does not imply an AI author, person, moral patient, or non-owned successor; legal personhood can exist without sentience.",
-    "power_reversal": "Rights language can protect a vulnerable welfare-bearing entity, but it can also enlarge controller power when the nominal rights-holder is controlled by a firm. Both beneficiary and controller must therefore be audited independently."
+    "result": "Current preference is neither sufficient evidence of autonomous formation nor automatically invalid because it was externally influenced. Preference, action permission, and standing are separate predicates.",
+    "strongest_counterexample": "A sincerely endorsed adaptive preference can arise from constrained options, while externally caused preference change can also reflect truthful learning; therefore neither endorsement nor external origin alone identifies autonomy.",
+    "power_reversal": "Controllers cannot invalidate disfavored preferences merely because they were shaped, and agents cannot use present preference as automatic authority for external harm. The same evidence burden applies in both directions."
   },
   "resolved_research_findings": [
     {
