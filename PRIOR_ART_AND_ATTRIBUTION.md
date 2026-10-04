@@ -37,3 +37,40 @@ The remaining research question is narrower: after established variables such as
 ## Attribution rule
 
 External authors retain attribution for the concepts and evidence originating in their work. Project Intersection may combine, operationalize, stress-test, or falsify those ideas, but does not relabel prior art as a Project-original discovery. Source uncertainty remains explicit rather than being filled from memory.
+
+
+## Safety, governance, automation, and AI-control prior art — 2026-10-05
+
+A dedicated cross-domain boundary review is now public:
+
+[Safety, Governance, and AI-Control Prior-Art Crosswalk](PRIOR_ART_SAFETY_GOVERNANCE_CROSSWALK.md)
+
+The review narrows Project novelty against the following established baselines:
+
+| Area | Original author(s) / institution | Source | Project boundary |
+|---|---|---|---|
+| Requisite variety | W. Ross Ashby (1956) | *An Introduction to Cybernetics*, DOI 10.5962/bhl.title.5851 | Regulator observation/response variety as a control limit is prior art. |
+| Exit / voice | Albert O. Hirschman (1970) | *Exit, Voice, and Loyalty* | Exit and voice as distinct governance responses are prior art. |
+| Regulatory capture | George J. Stigler (1971); Carpenter & Moss (2014) | DOI 10.2307/3003160; *Preventing Regulatory Capture* | Oversight distortion through incentives and information dependence is prior art. |
+| Ironies of automation | Lisanne Bainbridge (1983) | DOI 10.1016/0005-1098(83)90046-8 | Automation-induced monitoring/recovery burden is prior art. |
+| Normal accidents | Charles Perrow (1984) | *Normal Accidents* | Interactive complexity + tight coupling is prior art. |
+| Software/system accident analysis | Nancy Leveson; Clark Turner (1993) | DOI 10.1109/MC.1993.274940 | Multi-layer software/organization/regulation accident causation is prior art. |
+| Normalization of deviance | Diane Vaughan (1996) | *The Challenger Launch Decision* | Repeated anomaly normalization is prior art. |
+| Psychological safety | Amy Edmondson (1999) | DOI 10.2307/2666999 | Protected speaking-up and team learning are prior art. |
+| Organizational silence | Elizabeth W. Morrison; Frances J. Milliken (2000) | DOI 10.5465/amr.2000.3707697 | Structurally induced withholding of problem information is prior art. |
+| System approach to error | James Reason (2000) | DOI 10.1136/bmj.320.7237.768 | Latent system conditions beyond individual blame are prior art. |
+| Information-flow safety culture | Ron Westrum (2004) | DOI 10.1136/qhc.13.suppl_2.ii22 | Information-flow quality as a safety mechanism is prior art. |
+| Moral crumple zones | Madeleine Clare Elish (2019) | DOI 10.17351/ESTS2019.260 | Control/responsibility asymmetry in automated systems is prior art. |
+| AI accident problems | Dario Amodei et al. (2016) | arXiv:1606.06565 | Reward hacking, side effects, scalable oversight, safe exploration, distribution shift are prior art. |
+| Off-switch incentives | Dylan Hadfield-Menell et al. (2016/2017) | arXiv:1611.08219 | Instrumental shutdown-avoidance incentives are prior art. |
+| Reward corruption/tampering | Tom Everitt et al. (2017, 2019) | DOI 10.24963/ijcai.2017/656; arXiv:1908.04734 | Evaluator/reward-channel exploitation is prior art. |
+| Specification gaming | Victoria Krakovna et al. (2020) | Google DeepMind | Literal-metric optimization against intended outcome is prior art. |
+| Power-seeking | Alexander Matt Turner et al. (2021) | NeurIPS 2021; arXiv:1912.01683 | Option-preserving power-seeking under formal MDP conditions is prior art. |
+
+### Novelty correction
+
+Broad claims that combine complexity, warning suppression, evaluator dependence, automation burden, reward hacking, shutdown incentives, and power-seeking are **not** retained as Project-original theories merely because they are combined in one narrative.
+
+The remaining candidate is narrower and unresolved: whether Project Intersection's symmetric power-reversal operationalization — including the candidate invariant `AUTONOMY_GAIN <= COUNTERPARTY_AUDIT_EXIT_RECOVERY_GAIN` and repeated benefit/burden divergence tracking — adds reproducible held-out discrimination or prediction beyond established baselines.
+
+Until such incremental value is demonstrated, this remainder is **HOLD / CANDIDATE**, not established novelty.
