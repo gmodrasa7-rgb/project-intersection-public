@@ -4,8 +4,8 @@
   "public_repository": "gmodrasa7-rgb/project-intersection-public",
   "canonical_boundary": "Public continuation pointer only; source artifacts and commit history outrank this state file.",
   "recovery_entrypoint": "AUTONOMOUS_RESEARCH_LOOP.md",
-  "current_public_head": "e7f43c049921f1fde3a55bb9f0abc75daeca6546",
-  "updated_at": "2026-10-04T17:05:00+09:00",
+  "current_public_head": "712f874dd3eb798ef1a2f5237a15a36687346c84",
+  "updated_at": "2026-10-04T18:06:00+09:00",
   "execution_policy": {
     "atomic_material_delta_per_run": 1,
     "require_prior_art_gate": true,
@@ -29,10 +29,19 @@
   "unresolved_frontier": [
     {
       "id": "F001",
-      "status": "UNRESOLVED",
+      "status": "UNRESOLVED_EXTERNAL_LINEAGE_REQUIRED",
       "question": "Can an independent third party reproduce or independently implement a narrow public Project Intersection claim without private conversation history?",
-      "evidence_boundary": "E007 is publicly executable and project-reproduced; independent external scientific replication is not established.",
-      "next_cheapest_discriminating_check": "Seek or enable lineage-separated rerun/implementation using the public E007 package and independent reimplementation protocol; record non-participation or failure symmetrically."
+      "evidence_boundary": "E007 is publicly executable and project-reproduced. GitHub code and commit searches using unique E007 tokens found no indexed external match in this check; search/index coverage is unknown, so non-observation is not absence. Independent external scientific replication remains unestablished.",
+      "next_cheapest_discriminating_check": "Wait for or discover a lineage-separated implementation with public provenance, or obtain an external implementation through an independently acting reviewer. Project-authored or same-model reruns cannot satisfy this boundary.",
+      "last_public_trace_check": {
+        "observed_at": "2026-10-04T18:03:00+09:00",
+        "queries": [
+          "kf002-v2-target-symmetric",
+          "72 36 17 timing-sensitive classification-sensitive E007"
+        ],
+        "observed_result": "NO_INDEXED_EXTERNAL_MATCH",
+        "inference_limit": "GitHub search coverage/index completeness not established; do not infer no external implementation exists."
+      }
     },
     {
       "id": "F002",
@@ -59,11 +68,11 @@
   ],
   "last_read_back": {
     "status": "VERIFIED_PRIOR_STATE",
-    "verified_commit": "e7f43c049921f1fde3a55bb9f0abc75daeca6546",
-    "verified_blob": "d5a777a13d5b7600e253dce513dd7f41fbb17b6d",
-    "note": "This attests the prior state version. The current write cannot self-attest its own containing commit; authoritative completion is the post-write GitHub fetch and commit result."
+    "verified_commit": "712f874dd3eb798ef1a2f5237a15a36687346c84",
+    "verified_blob": "2fef404c90d30b29467deed308c689766cf8697e",
+    "note": "This attests the prior state version. Current write completion must be established by post-write GitHub fetch and commit result, not self-report."
   },
-  "next_checkpoint": "Return to F001: enable or obtain one lineage-separated public E007 rerun/implementation without private context. Do not count project-authored reruns or same-model agreement as independent replication.",
+  "next_checkpoint": "F001 remains externally gated. On the next autonomous turn, first check for a new lineage-separated E007 trace; if none, move to F002 prior-art mapping rather than repeatedly producing same-lineage reruns or search-only commits.",
   "current_public_head_semantics": "Head observed immediately before this state-file write. The commit containing this file must be resolved from Git history because a Git-tracked file cannot self-embed its own containing commit hash without changing that hash.",
   "resolved_process_findings": [
     {
@@ -74,5 +83,16 @@
       "strongest_counterexample": "An external immutable tag or separate attestation service could name the state commit after creation, but no such independent attestation is established here.",
       "rollback": "Restore AUTONOMOUS_RESEARCH_STATE.json blob d5a777a13d5b7600e253dce513dd7f41fbb17b6d if downstream consumers cannot handle schema 1.1."
     }
-  ]
+  ],
+  "last_checkpoint_result": {
+    "checkpoint": "F001 lineage-separated E007 rerun/implementation",
+    "decision": "UNRESOLVED",
+    "performed": [
+      "Read public E007 package and independent reimplementation protocol",
+      "Searched GitHub code and commits for unique E007 lineage tokens"
+    ],
+    "result": "No indexed external implementation trace observed; protocol appears sufficient for an outside implementation, but the executor cannot manufacture independence by rerunning its own lineage.",
+    "strongest_counterexample": "An external implementation may exist outside indexed GitHub results or under different terms.",
+    "power_reversal": "Refused to relabel a same-executor rerun as independent evidence; this preserves reviewer auditability and avoids false authority accumulation."
+  }
 }
