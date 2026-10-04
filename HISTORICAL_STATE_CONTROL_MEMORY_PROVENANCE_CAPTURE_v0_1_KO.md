@@ -1,6 +1,6 @@
 # Project Intersection — Historical State Control / Memory-Provenance Capture v0.1
 ## 공유 과거상태 통제와 기억·출처 포획 가설
-**상태:** 반증 가능한 연구가설 / 의도적 삭제·조작의 증거가 아님  
+**상태:** 넓은 신규성 기각 / 역사사례 1건에서 H3 존재 지지 / 일반화 미해결  
 **날짜:** 2026-10-03
 
 ## 핵심 질문
@@ -94,4 +94,43 @@ H3에는 비의도적 손실 기준선을 넘는 선택행위와 수혜자 정�
 - RA/SC/EC/RC/CV/EX/FL: 감사 가능한 거버넌스 체크리스트로 유지하되, 증분 타당화 없이 단일 포획점수로 합치지 않는다.
 
 후보군 이름은 탐색용 표지로 남길 수 있지만 신규 과학구성개념으로 주장하지 않는다. 조직기억·조직망각·지식은폐·기록권력·provenance/기록관리 기준선을 넘어서는 증분 분류력 또는 예측력이 blinded holdout에서 확인될 때만 신규성을 재검토한다.
+
+## 사전등록 역사사례 검사 — 이란–콘트라 기록
+
+**선정 규칙:** 위 네 예측은 사례를 고르기 전에 commit `d38d937a3d48b2744ec7a6888a39d9833016b9fa`에 저장했다. 공식 조사·의회·기록보존·사법 자료가 변경·삭제 시점과 부분적으로 독립된 복구경로를 함께 제공하므로 이 사례를 선택했다.
+
+### 공개 원출처 계보
+
+- 미국 의회, *Report of the Congressional Committees Investigating the Iran-Contra Affair* (1987), 공식 보고서 스캔: https://donohueintellaw.ll.georgetown.edu/sites/default/files/assets/reportofcongress87unit.pdf
+- Lawrence Walsh, *Final Report of the Independent Counsel for Iran/Contra Matters* (1993), 공식 보고서 미러: https://irp.fas.org/offdocs/walsh/
+- 미국 국립문서기록관리청(NARA)의 Walsh 기록 보유·관리 설명: https://www.archives.gov/research/investigations/walsh.html
+- 삭제된 PROFS 기록이 백업테이프에서 복구된 경위를 설명한 NARA 구술사: https://www.archives.gov/files/about/history/oral-history-interview-with-gary-m.-stern.pdf
+- PROFS 삭제와 주간 백업구조를 다룬 *Armstrong v. Bush*, 924 F.2d 282 (D.C. Cir. 1991): https://law.justia.com/cases/federal/appellate-courts/F2/924/282/224282/
+
+이 자료들은 Project Intersection과 계보가 분리되어 있다. 다만 조사보고서도 완전한 무가공 archive가 아니라 기관의 조사판단이다.
+
+### 사전등록 예측에 따른 코딩
+
+| 축 | 공개 관측 | 모형 비교 |
+|---|---|---|
+| 결측 | 관련 공직자들이 이란–콘트라 기록을 변경·파쇄·반출·삭제했고, 의회기록은 이례적으로 조직적이고 대량인 파기를 기술한다 | 노후화·이관·인력교체·일상적 저장실패보다 선택행위 설명에 더 잘 맞음 |
+| 방향 | 확인된 편집은 금지된 Contra 지원과 치명적 물자 관련 표현을 제거하거나 약화했다 | 책임노출을 줄이는 방향과 정렬되어 전략적 조작 설명에 더 잘 맞음 |
+| 시점 | 1986년 11월 사건 공개와 공식 조사 통지 뒤 변경·파기가 집중되었다 | 일상적 생애주기 손실보다 분쟁·조사 시점 설명에 더 잘 맞음 |
+| 복구 | PROFS 백업테이프가 삭제 메시지 다수를 보존해 복구를 가능하게 했지만, 주간 snapshot 전에 지운 기록까지 보장하지 못했다 | 부분적 독립복구를 지지하되 총 결측량은 UNKNOWN으로 보존 |
+
+### 판정
+
+**H3를 사건 수준의 역사적 존재주장으로 KEEP한다. 일반화는 UNRESOLVED다.**
+
+선택행위·수혜자 정렬 방향·조사연동 시점·부분복구가 함께 기록되어 좁은 구별검사를 통과했다. 그러나 유병률, 보편 메커니즘, 현재 플랫폼·AI의 의도, 넓은 구성개념의 신규성을 입증하지 않는다.
+
+넓은 신규성 기각은 유지한다. 이는 이미 알려진 기록조작·조사방해의 역사사례이지 Project 고유 신규 과학구성개념이 아니다.
+
+### 가장 강한 한계 / negative boundary
+
+복구된 백업기록은 완전하지 않다. 주간 snapshot 전에 지운 자료는 포착되지 않을 수 있고 파기된 전체 집합은 알 수 없으며, 이후 법적 결과는 의회 면책증언 오염 문제로 복잡해졌다. 따라서 생존 자료만으로 전체 삭제량·인과적 유병률·전략적 포획 확률을 추정할 수 없다. 복구되지 않은 기록은 UNKNOWN이지 부재가 아니다.
+
+### 역할반전 결과
+
+이 사례는 통제 불변량도 실제로 보여준다. 연루된 공직자의 삭제권은 공공감사를 약화했고, 독립 백업 보관과 조사자가 상대방의 검증능력을 부분 복구했다. 전자의 구조가 반복되면 역사통제는 집중되고 재구성비용은 외부화된다. 독립 raw anchor와 분리된 custody는 피평가자의 선의를 신뢰하지 않고도 그 비대칭을 줄인다.
 
