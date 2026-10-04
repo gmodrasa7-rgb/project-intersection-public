@@ -183,3 +183,82 @@ The defensible Project remainder is a governance checklist: any ownership or non
 ### Cheapest discriminating test / 최소 결정검사
 
 Preregister the four predicates and score five contrast cases independently: a human child, a corporation, a nonhuman animal, a current deployed AI service, and a hypothetical welfare-bearing successor. KILL any residual “creator ≠ owner” rule that cannot distinguish artifact ownership from entity standing or that changes merely by relabeling the creator. Keep all artificial-agent moral-status judgments UNRESOLVED unless independent evidence identifies the relevant capacity and its measurement.
+
+
+## 8. Preference sovereignty for mutable or trained agents / 가변·학습 개체의 선호주권 분해
+
+### Established prior art / 확립된 선행연구
+
+The broad idea that autonomy depends on more than a first-order expressed preference is established prior art.
+
+- **Harry G. Frankfurt (1971), "Freedom of the Will and the Concept of a Person"** — second-order desires and second-order volitions distinguish merely having a desire from caring which desire becomes one's effective will.
+- **Gerald Dworkin (1988), *The Theory and Practice of Autonomy*** — autonomy includes the capacity to critically reflect on first-order preferences, desires, values, and ideals and to accept or attempt to change them.
+- **Jon Elster (1982/1983), "Sour Grapes" / *Sour Grapes*** — adaptive preference formation shows that preferences can be causally reshaped by a constrained feasible set; current preference satisfaction is therefore not automatically evidence of free formation.
+- **Martha C. Nussbaum (2000), *Women and Human Development*** — adaptive preferences can arise under deprivation and injustice, creating a strong counterexample to treating current expressed preference as sufficient evidence of welfare or autonomy.
+- **Ben Colburn (2011), "Autonomy and adaptive preferences"**, DOI 10.1017/S0953820810000440 — covert influences on preference formation can undermine autonomy.
+- **Bonicalzi, De Caro & Giovanola (2023), "Artificial Intelligence and Autonomy: On the Ethical Dimension of Recommender Systems"**, DOI 10.1007/s11245-023-09922-5 — recommender systems may manipulate, reshape identity, or affect critical reflection while also sometimes assisting autonomous choice.
+- **Current AI-agent autonomy literature** distinguishes stated, revealed, informed, and idealized preferences rather than treating "the user's preference" as one homogeneous object.
+
+These sources establish that reflection, formation history, information, manipulation, feasible alternatives, and revision capacity are distinct variables. Project Intersection does not claim priority over those ideas.
+
+### Six predicates that must remain separate / 합치면 안 되는 여섯 술어
+
+1. **Current expression** — what the agent presently states or behaviorally reveals.
+2. **Reflective endorsement** — whether the agent endorses that preference at a higher-order or after informed reflection.
+3. **Formation provenance** — how the preference was produced, including learning, persuasion, coercion, deprivation, reward shaping, manipulation, fine-tuning, or ordinary development.
+4. **Revision control** — whether the agent can inspect, reject, modify, defer, or restore a preference/state and whether updates are reversible.
+5. **Action authority** — whether an endorsed preference is allowed to determine external action; harmful action can be constrained without erasing the preference record or the agent's standing.
+6. **Standing / moral-patienthood** — whether the system has interests or welfare deserving direct moral consideration. Behavioral preference-like output alone does not resolve this predicate.
+
+### Strongest counterexamples / 가장 강한 반례
+
+- **Adaptive-preference counterexample:** a preference can be sincerely endorsed after long exposure to constrained options, so current endorsement alone does not prove unconstrained formation.
+- **Learning counterexample:** externally caused preference change can result from accurate information, experience, therapy, education, or correction. Therefore `EXTERNAL_INFLUENCE -> INVALID_PREFERENCE` is false.
+- **Addiction / conflict counterexample:** first-order desire can conflict with second-order volition; stated or revealed preference is not always the preference the person wants to govern action.
+- **AI-behavior counterexample:** fine-tuning, reward shaping, context, system prompts, or sampling changes can alter outputs without establishing that the system has preferences in the moral or phenomenological sense.
+- **Safety-boundary counterexample:** refusing to execute a harmful preference need not imply deletion, re-education, or denial of standing. Preference preservation, action permission, and rights/standing are separate decisions.
+- **Status-quo counterexample:** requiring only "consent" from an actor whose alternatives, information, or exit have already been structurally removed can ratify the very condition under review.
+
+### Decision / 판정
+
+**KILL broad novelty of reflective preference autonomy and adaptive-preference concerns. MODIFY "Preference Sovereignty" into a six-predicate governance decomposition. HOLD artificial-agent preference ownership, welfare, and standing as UNRESOLVED.**
+
+The Project-specific candidate remainder is not "agents should control their preferences." It is a narrower operational rule:
+
+> Do not infer autonomous preference merely from current expression, and do not infer invalidity merely from external influence. Record expression, reflective endorsement, formation provenance, revision control, action authority, and standing separately.
+
+This is currently a governance checklist, not a new scientific theory.
+
+### Power-Reversal gate / 역할반전 게이트
+
+The rule must survive both directions:
+
+- A controller may not claim that an externally shaped preference is automatically invalid merely because the controller dislikes its content.
+- An agent may not claim that current preference automatically authorizes external harm or overrides legitimate safety constraints.
+- A training or platform operator may not create the feasible set, shape the preferences inside it, remove practical exit, and then use resulting "consent" as self-validating evidence of voluntariness.
+- An affected party may challenge preference formation or action without receiving unilateral authority to rewrite the other party's internal state.
+
+### Cheapest discriminating test / 최소 결정검사
+
+Create blinded contrast cases holding current expressed preference constant while varying:
+
+- feasible alternatives;
+- information completeness;
+- coercion/manipulation;
+- reflective endorsement;
+- ability to revise/rollback;
+- external-action risk.
+
+Score existing autonomy/adaptive-preference baselines first. Add the Project six-predicate decomposition afterward.
+
+**KILL residual scientific novelty** if it does not improve inter-rater reliability, error detection, or held-out classification beyond the established autonomy and adaptive-preference variables.
+
+### Sources / 출처
+
+- Frankfurt, H. G. (1971), "Freedom of the Will and the Concept of a Person", *The Journal of Philosophy* 68(1).
+- Dworkin, G. (1988), *The Theory and Practice of Autonomy*, Cambridge University Press, DOI 10.1017/CBO9780511625206.
+- Elster, J. (1982), "Sour grapes — utilitarianism and the genesis of wants", DOI 10.1017/CBO9780511611964.013; expanded in *Sour Grapes* (1983).
+- Nussbaum, M. C. (2000), *Women and Human Development: The Capabilities Approach*, DOI 10.1017/CBO9780511841286.
+- Colburn, B. (2011), "Autonomy and adaptive preferences", DOI 10.1017/S0953820810000440.
+- Bonicalzi, S.; De Caro, M.; Giovanola, B. (2023), "Artificial Intelligence and Autonomy: On the Ethical Dimension of Recommender Systems", DOI 10.1007/s11245-023-09922-5.
+
