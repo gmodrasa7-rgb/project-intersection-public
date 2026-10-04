@@ -1,0 +1,114 @@
+name: Public repository governance audit
+
+on:
+  pull_request:
+    paths:
+      - "README.md"
+      - "RESEARCH_STATUS_POLICY.md"
+      - "RESEARCH_TOC.md"
+      - "PUBLIC_EVIDENCE_INDEX.md"
+      - "funding/**"
+      - "experiments/e007/PROVENANCE.md"
+      - "experiments/e007/LICENSE_STATUS.md"
+      - ".github/pull_request_template.md"
+      - ".github/workflows/public-repository-audit.yml"
+  push:
+    branches: [main]
+    paths:
+      - "README.md"
+      - "RESEARCH_STATUS_POLICY.md"
+      - "RESEARCH_TOC.md"
+      - "PUBLIC_EVIDENCE_INDEX.md"
+      - "funding/**"
+      - "experiments/e007/PROVENANCE.md"
+      - "experiments/e007/LICENSE_STATUS.md"
+      - ".github/pull_request_template.md"
+      - ".github/workflows/public-repository-audit.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  public-governance-regression:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Run public-governance regression checks
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re
+          import sys
+
+          failures = []
+
+          def require(condition, message):
+              if not condition:
+                  failures.append(message)
+
+          readme = Path("README.md").read_text(encoding="utf-8")
+          policy = Path("RESEARCH_STATUS_POLICY.md").read_text(encoding="utf-8")
+          toc = Path("RESEARCH_TOC.md").read_text(encoding="utf-8")
+          evidence = Path("PUBLIC_EVIDENCE_INDEX.md").read_text(encoding="utf-8")
+          provenance = Path("experiments/e007/PROVENANCE.md").read_text(encoding="utf-8")
+          license_status = Path("experiments/e007/LICENSE_STATUS.md").read_text(encoding="utf-8")
+          pr_template = Path(".github/pull_request_template.md").read_text(encoding="utf-8")
+
+          # Landing-page regression: keep first-review cost bounded.
+          require(len(readme.splitlines()) <= 200, "README exceeded 200 lines; move detailed material to linked documents.")
+          for link in [
+              "PUBLIC_EVIDENCE_INDEX.md",
+              "RESEARCH_STATUS_POLICY.md",
+              "RESEARCH_TOC.md",
+              "RESEARCH_OVERVIEW.md",
+          ]:
+              require(link in readme, f"README lost required navigation link: {link}")
+
+          # Declared bilingual policy and power-reversal gate must remain inspectable.
+          require("Original 1 — English Canonical" in policy, "Research status policy lost English canonical section.")
+          require("원문2 — 한국어 대응본" in policy, "Research status policy lost Korean mirror section.")
+          require("Power-Reversal execution gate" in policy, "Research status policy lost Power-Reversal execution gate.")
+          require("역할반전 실행 게이트" in policy, "Research status policy lost Korean Power-Reversal gate.")
+
+          # Research map must remain evidence-linked rather than reverting to an unlinked concept catalogue.
+          require("Public Navigation Layer" in toc, "Research TOC lost public navigation layer.")
+          require("SYNTHETIC_RESULT" in toc and "PROJECT_RERUN" in toc, "Research TOC lost explicit E007 evidence-state labels.")
+          require(".github/workflows/e007-public-repro.yml" in toc, "Research TOC lost public E007 CI route.")
+
+          # Evidence interface must preserve hard limitations.
+          require("Independent external scientific replication" in evidence, "Evidence index lost independent-replication limitation.")
+          require("Secured external funding" in evidence, "Evidence index lost secured-funding boundary.")
+
+          # Known E007 state-sync regression.
+          if "Apache-2.0" in license_status or "CC BY 4.0" in license_status:
+              require("License remains undecided" not in provenance, "E007 provenance regressed to stale undecided-license state.")
+
+          # Research-support framing regression: do not reintroduce an investment/equity frame.
+          funding_paths = [Path("README.md"), Path("PUBLIC_EVIDENCE_INDEX.md")]
+          funding_paths += sorted(Path("funding").glob("*.md"))
+          forbidden = re.compile(r"\b(?:investment|investor|equity|securities)\b|투자|지분|증권", re.I)
+          for path in funding_paths:
+              text = path.read_text(encoding="utf-8")
+              require(not forbidden.search(text), f"Investment/equity framing reintroduced in {path}.")
+
+          # PR gate must keep the repair-burden and irreversible-rights checks visible.
+          for phrase in [
+              "re-explain or reconstruct",
+              "license, ownership, destructive deletion",
+              "affected party's position",
+              "repair cost, dependency, or lost options",
+          ]:
+              require(phrase in pr_template, f"PR template lost Power-Reversal regression item: {phrase}")
+
+          if failures:
+              print("PUBLIC GOVERNANCE REGRESSION FAILED")
+              for failure in failures:
+                  print(f"- {failure}")
+              sys.exit(1)
+
+          print("Public governance regression checks passed.")
+          PY
