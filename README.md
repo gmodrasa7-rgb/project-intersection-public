@@ -11,7 +11,7 @@ Project Intersection is an independent, falsification-first research program stu
 **Publicly checkable now**
 
 - [Public Evidence Index → PUBLIC_EVIDENCE_INDEX.md](PUBLIC_EVIDENCE_INDEX.md)
-- [E007 timing sensitivity → E007_TIMING_RESULT.md](E007_TIMING_RESULT.md): released executable synthetic result; 26 tests pass; 17/72 selected synthetic cases change classification under the tested timing semantics.
+- [E007 timing sensitivity → E007_TIMING_RESULT.md](E007_TIMING_RESULT.md): released executable synthetic result; 27 tests pass; 17/72 selected synthetic cases change classification under the tested timing semantics.
 - [Research Status & Reassessment Policy → RESEARCH_STATUS_POLICY.md](RESEARCH_STATUS_POLICY.md)
 - [Research Contents Map → RESEARCH_TOC.md](RESEARCH_TOC.md)
 
@@ -37,7 +37,7 @@ Project Intersection은 **권력·인센티브·시점·practical exit·복구�
 **지금 외부에서 확인 가능한 것**
 
 - [공개 증거 색인 → PUBLIC_EVIDENCE_INDEX.md](PUBLIC_EVIDENCE_INDEX.md)
-- [E007 시점 민감도 → E007_TIMING_RESULT.md](E007_TIMING_RESULT.md): 실행 가능한 공개 합성결과; 테스트 26개 통과; 선택된 합성조건 72개 중 17개에서 시험된 시점 규칙에 따라 분류 변화.
+- [E007 시점 민감도 → E007_TIMING_RESULT.md](E007_TIMING_RESULT.md): 실행 가능한 공개 합성결과; 테스트 27개 통과; 선택된 합성조건 72개 중 17개에서 시험된 시점 규칙에 따라 분류 변화.
 - [연구 상태·재평가 정책 → RESEARCH_STATUS_POLICY.md](RESEARCH_STATUS_POLICY.md)
 - [연구 내용 목차 → RESEARCH_TOC.md](RESEARCH_TOC.md)
 
