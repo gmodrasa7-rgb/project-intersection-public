@@ -4,8 +4,8 @@
   "public_repository": "gmodrasa7-rgb/project-intersection-public",
   "canonical_boundary": "Public continuation pointer only; source artifacts and commit history outrank this state file.",
   "recovery_entrypoint": "AUTONOMOUS_RESEARCH_LOOP.md",
-  "current_public_head": "f511f21c67e7155f21b8ad8c963498aab6cf347c",
-  "updated_at": "2026-10-04T21:09:00+09:00",
+  "current_public_head": "fd5bbdb726df0e344bb6bf3b6da2b1c2c85a461a",
+  "updated_at": "2026-10-04T22:06:17+09:00",
   "execution_policy": {
     "atomic_material_delta_per_run": 1,
     "require_prior_art_gate": true,
@@ -42,15 +42,22 @@
         "observed_result": "NO_INDEXED_EXTERNAL_MATCH",
         "inference_limit": "GitHub search coverage/index completeness not established; do not infer no external implementation exists."
       }
+    },
+    {
+      "id": "F003",
+      "status": "UNRESOLVED_NARROW_INTENT_HYPOTHESIS",
+      "question": "After accounting for ordinary decay, migration, turnover, compression, organizational forgetting, and records-management failure, is there independent evidence of selective beneficiary-aligned manipulation of shared historical records?",
+      "evidence_boundary": "Broad H0-H2 overlap organizational memory/forgetting and records-management prior art. Outcome patterns alone do not identify intent. H3 requires evidence of selective action and beneficiary-aligned direction beyond benign-loss covariates.",
+      "next_cheapest_discriminating_check": "Use a lineage-separated public historical or organizational record set to preregister and compare benign-loss versus strategic-capture predictions for missingness, direction, timing, and recovery. Do not treat incomplete archive coverage as evidence of absence or intent."
     }
   ],
   "recent_material_delta": {
-    "type": "public_only_overlap_resolution",
-    "summary": "Resolved F002 without private disclosure. Public artifacts already cover the proposed residual axes, so a new composite metric or construct was KILLed; the existing contribution-cost document remains a multi-axis governance checklist.",
-    "basis_head": "f511f21c67e7155f21b8ad8c963498aab6cf347c",
-    "source_artifact": "CONTRIBUTION_COST_ACCOUNTING_REGRESSION.md#15",
+    "type": "prior_art_novelty_narrowing",
+    "summary": "Rejected Historical State Control / Memory-Provenance Capture as a broad new standalone construct. H0-H2 were reassigned to established organizational-memory/forgetting and records-management baselines; H3 remains a narrow UNRESOLVED intent hypothesis; H4 remains an engineering control.",
+    "basis_head": "fd5bbdb726df0e344bb6bf3b6da2b1c2c85a461a",
+    "source_artifact": "HISTORICAL_STATE_CONTROL_MEMORY_PROVENANCE_CAPTURE_v0_1_EN.md and _KO.md",
     "state_commit": "RESOLVE_FROM_GIT_HISTORY_AFTER_WRITE",
-    "scientific_support": "public provenance and construct-boundary decision; not empirical validation"
+    "scientific_support": "primary prior-art synthesis plus an ethnographic unintended-forgetting counterexample; not empirical validation of H3"
   },
   "human_only_gates": [
     "contracts_terms_ip_license_rights_changes",
@@ -62,12 +69,12 @@
   ],
   "last_read_back": {
     "status": "VERIFIED_MATERIAL_TARGET_PRE_STATE_WRITE",
-    "verified_commit": "f511f21c67e7155f21b8ad8c963498aab6cf347c",
-    "verified_blob": "1abac262248d3445504604a4550309bea601838c",
-    "verified_path": "CONTRIBUTION_COST_ACCOUNTING_REGRESSION.md",
-    "note": "Section 15, KILL decision, one-file diff, and absence of private claim wording were verified. Current state-write completion requires post-write read-back."
+    "verified_commit": "fd5bbdb726df0e344bb6bf3b6da2b1c2c85a461a",
+    "verified_blob": "fa13a5b13a1d917bbef0131ef4a3ca432aa884c2",
+    "verified_path": "PRIOR_ART_AND_ATTRIBUTION.md",
+    "note": "Both claim mirrors contained the same novelty rejection and narrow-H3 boundary; the research map and prior-art table were aligned. The pre-state compare showed only the two claim files before interface updates. Current state-write completion requires post-write read-back."
   },
-  "next_checkpoint": "F001 remains externally gated. Unless a new lineage-separated E007 trace appears, select the next public claim whose strongest counterexample can be tested from public or empirical evidence; do not repeat search-only or same-lineage reruns.",
+  "next_checkpoint": "F003: select one lineage-separated public historical or organizational record set, preregister benign-loss versus strategic-capture predictions, and test missingness direction/timing/recovery. Do not rerun same-model synthetic tests; F001 remains externally gated.",
   "current_public_head_semantics": "Head observed immediately before this state-file write. The commit containing this file must be resolved from Git history because a Git-tracked file cannot self-embed its own containing commit hash without changing that hash.",
   "resolved_process_findings": [
     {
@@ -80,17 +87,17 @@
     }
   ],
   "last_checkpoint_result": {
-    "checkpoint": "F002 public-only overlap audit",
-    "decision": "KILL_AS_NEW_METRIC_OR_CONSTRUCT_KEEP_GOVERNANCE_CHECKLIST",
+    "checkpoint": "Historical State Control / Memory-Provenance Capture prior-art kill test",
+    "decision": "NOVELTY_REJECTED_BROAD_CONSTRUCT_KEEP_NARROW_H3_UNRESOLVED",
     "performed": [
-      "Read all root-level public research and governance artifacts named by the recovery protocol",
-      "Mapped each proposed residual to existing public coverage",
-      "Separated practical-exit feasibility from post-exit accrued-contribution continuity",
-      "Defined five non-scalar observation fields and an independent-data reopening condition"
+      "Read the public continuity protocol, state, claim mirrors, prior-art boundary, evidence index, research map, and status policy",
+      "Compared the broad claim against organizational memory, organizational forgetting, unintended collective forgetting, knowledge hiding, data attrition, W3C PROV, and ISO 15489",
+      "Specified benign-loss versus strategic-capture predictions for missingness, direction, timing, and recovery",
+      "Updated both language mirrors, research map, and prior-art attribution"
     ],
-    "result": "No residual supports a new metric or standalone construct. The document remains useful as a governance checklist with separate axes.",
-    "strongest_counterexample": "Exit feasibility and historical attribution continuity can vary independently, so neither implies the other and a master score can misclassify opposite cases.",
-    "power_reversal": "The audit used public evidence only, copied no private claim wording, assigned evidence-preservation duties to the record-controlling side, and created no new proof burden for the contributor."
+    "result": "The broad candidate family is not retained as a novel scientific construct. H3 survives only as an intent hypothesis requiring selective action plus beneficiary-aligned direction beyond benign-loss baselines.",
+    "strongest_counterexample": "Foroughi and Al-Amoudi document organizational change not intended to manipulate memory that nevertheless made memories unusable/uprooted and affected power and identity; therefore the observed outcome does not identify capture intent.",
+    "power_reversal": "The revision lowers project-owned novelty, keeps adverse prior art and an intent-identification failure visible, creates no user reconstruction burden, and leaves a public rollback path in Git history."
   },
   "resolved_research_findings": [
     {
@@ -102,6 +109,16 @@
       "preserved_boundary": "The checklist remains governance methodology only; it does not establish liability, ownership, compensation amount, causal responsibility, or prevalence.",
       "source": "CONTRIBUTION_COST_ACCOUNTING_REGRESSION.md#15",
       "rollback": "Reopen as UNRESOLVED only if independent data show reliable incremental blinded classification or prediction beyond the existing public axes."
+    },
+    {
+      "id": "F003_BROAD_HISTORICAL_STATE_CAPTURE",
+      "status": "NOVELTY_REJECTED_BROAD_CONSTRUCT_KEEP_NARROW_H3_UNRESOLVED",
+      "question": "Is historical-state / memory-provenance capture a new standalone scientific construct?",
+      "decision_basis": "Organizational memory/forgetting, unintended collective forgetting, knowledge hiding, long-term data attrition, archival power, and provenance/records-management standards explain the broad H0-H2 space and H4 controls.",
+      "strongest_counterexample": "The same loss of challengeability and shifts in power/identity can arise from unintended organizational change, decay, migration, turnover, compression, or uprooted social memory.",
+      "preserved_boundary": "Intentional selective manipulation remains possible but requires independent evidence of selective action and beneficiary-aligned direction beyond benign-loss covariates.",
+      "source": "HISTORICAL_STATE_CONTROL_MEMORY_PROVENANCE_CAPTURE_v0_1_EN.md and _KO.md",
+      "rollback": "Reopen broad novelty only if blinded held-out evidence shows incremental classification or prediction beyond the cited baselines."
     }
   ]
 }
