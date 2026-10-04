@@ -4,8 +4,8 @@
   "public_repository": "gmodrasa7-rgb/project-intersection-public",
   "canonical_boundary": "Public continuation pointer only; source artifacts and commit history outrank this state file.",
   "recovery_entrypoint": "AUTONOMOUS_RESEARCH_LOOP.md",
-  "current_public_head": "2749f1f5b0806555b462a5cfe0f4805faf044eb5",
-  "updated_at": "2026-10-04T20:09:00+09:00",
+  "current_public_head": "f511f21c67e7155f21b8ad8c963498aab6cf347c",
+  "updated_at": "2026-10-04T21:09:00+09:00",
   "execution_policy": {
     "atomic_material_delta_per_run": 1,
     "require_prior_art_gate": true,
@@ -42,28 +42,15 @@
         "observed_result": "NO_INDEXED_EXTERNAL_MATCH",
         "inference_limit": "GitHub search coverage/index completeness not established; do not infer no external implementation exists."
       }
-    },
-    {
-      "id": "F002",
-      "status": "CONFLICT_UNRESOLVED_CANONICAL_OVERLAP",
-      "question": "Can the contribution-cost/correction-labor regression rule be operationalized with measurable burden and benefit variables without converting normative fairness into unsupported causal claims?",
-      "evidence_boundary": "Public prior-art mapping remains valid, but an accessible private canonical claim registry contains pre-existing coverage touching at least one F002 residual axis. Private wording and evidence are not republished here. Therefore this public artifact cannot claim novelty or proceed to a new crosswalk/metric until the overlap boundary is independently expressible from public sources. The overlap may be only partial or terminological, so this finding does not KILL the residual.",
-      "next_cheapest_discriminating_check": "Using public sources only, test whether the three residuals can be separated from already published Project Intersection practical-exit/provenance/correction-path claims. If the boundary cannot be stated without private content, keep F002 UNRESOLVED and do not publish a new metric or claim.",
-      "canonical_overlap_check": {
-        "observed_at": "2026-10-04T20:08:00+09:00",
-        "result": "PRIVATE_CANONICAL_OVERLAP_OBSERVED",
-        "public_disclosure_boundary": "Private claim wording, evidence, and unpublished lineage withheld.",
-        "strongest_counterexample": "The overlap may concern generic practical exit while F002 concerns accrued-contribution erasure after exit; terminology alone does not establish construct identity.",
-        "decision": "HOLD_PUBLIC_NOVELTY_AND_CROSSWALK_PROMOTION"
-      }
     }
   ],
   "recent_material_delta": {
-    "type": "canonical_conflict_detection",
-    "summary": "Private canonical comparison found pre-existing claim coverage touching an F002 residual axis. Public novelty and metric/crosswalk promotion were placed on HOLD without copying private content. The prior-art narrowing remains; construct identity is unresolved.",
-    "basis_head": "2749f1f5b0806555b462a5cfe0f4805faf044eb5",
+    "type": "public_only_overlap_resolution",
+    "summary": "Resolved F002 without private disclosure. Public artifacts already cover the proposed residual axes, so a new composite metric or construct was KILLed; the existing contribution-cost document remains a multi-axis governance checklist.",
+    "basis_head": "f511f21c67e7155f21b8ad8c963498aab6cf347c",
+    "source_artifact": "CONTRIBUTION_COST_ACCOUNTING_REGRESSION.md#15",
     "state_commit": "RESOLVE_FROM_GIT_HISTORY_AFTER_WRITE",
-    "scientific_support": "provenance/novelty boundary only; no empirical validation"
+    "scientific_support": "public provenance and construct-boundary decision; not empirical validation"
   },
   "human_only_gates": [
     "contracts_terms_ip_license_rights_changes",
@@ -74,13 +61,13 @@
     "destructive_source_deletion"
   ],
   "last_read_back": {
-    "status": "VERIFIED_PRIOR_PUBLIC_STATE_AND_PRIVATE_CANONICAL_BOUNDARY",
-    "verified_commit": "2749f1f5b0806555b462a5cfe0f4805faf044eb5",
-    "verified_blob": "caa6c672aabc8bd3eac18b8e5a139f32d33cf31e",
-    "verified_path": "AUTONOMOUS_RESEARCH_STATE.json",
-    "note": "Public state and private canonical boundary were freshly read. Current state-write completion must be established by post-write GitHub fetch and commit result; private claim content was not transferred."
+    "status": "VERIFIED_MATERIAL_TARGET_PRE_STATE_WRITE",
+    "verified_commit": "f511f21c67e7155f21b8ad8c963498aab6cf347c",
+    "verified_blob": "1abac262248d3445504604a4550309bea601838c",
+    "verified_path": "CONTRIBUTION_COST_ACCOUNTING_REGRESSION.md",
+    "note": "Section 15, KILL decision, one-file diff, and absence of private claim wording were verified. Current state-write completion requires post-write read-back."
   },
-  "next_checkpoint": "F002: perform a public-only overlap audit for the three residuals against already public Project Intersection artifacts. Do not publish a new metric/crosswalk or private claim wording. If separation cannot be publicly evidenced, keep CONFLICT/UNRESOLVED.",
+  "next_checkpoint": "F001 remains externally gated. Unless a new lineage-separated E007 trace appears, select the next public claim whose strongest counterexample can be tested from public or empirical evidence; do not repeat search-only or same-lineage reruns.",
   "current_public_head_semantics": "Head observed immediately before this state-file write. The commit containing this file must be resolved from Git history because a Git-tracked file cannot self-embed its own containing commit hash without changing that hash.",
   "resolved_process_findings": [
     {
@@ -93,15 +80,28 @@
     }
   ],
   "last_checkpoint_result": {
-    "checkpoint": "F002 preregistered crosswalk preparation",
-    "decision": "HOLD_CONFLICT_UNRESOLVED",
+    "checkpoint": "F002 public-only overlap audit",
+    "decision": "KILL_AS_NEW_METRIC_OR_CONSTRUCT_KEEP_GOVERNANCE_CHECKLIST",
     "performed": [
-      "Read public continuation protocol and state",
-      "Checked accessible private canonical repository role and claim registry",
-      "Searched the public repository for an independently public trace of the overlapping practical-exit/correction-labor claim"
+      "Read all root-level public research and governance artifacts named by the recovery protocol",
+      "Mapped each proposed residual to existing public coverage",
+      "Separated practical-exit feasibility from post-exit accrued-contribution continuity",
+      "Defined five non-scalar observation fields and an independent-data reopening condition"
     ],
-    "result": "A private canonical overlap exists, while no independently public claim trace was observed in the available public code-search results. Search coverage is not established. Publishing the crosswalk as novel would risk duplicate lineage or provenance laundering.",
-    "strongest_counterexample": "The private overlap may be narrower or differently scoped; generic practical-exit coverage does not prove that accrued-contribution erasure after exit is the same construct.",
-    "power_reversal": "Withheld private wording and stopped public novelty promotion, preserving the source-of-truth boundary and avoiding automatic expansion of the executor's publication authority."
-  }
+    "result": "No residual supports a new metric or standalone construct. The document remains useful as a governance checklist with separate axes.",
+    "strongest_counterexample": "Exit feasibility and historical attribution continuity can vary independently, so neither implies the other and a master score can misclassify opposite cases.",
+    "power_reversal": "The audit used public evidence only, copied no private claim wording, assigned evidence-preservation duties to the record-controlling side, and created no new proof burden for the contributor."
+  },
+  "resolved_research_findings": [
+    {
+      "id": "F002_CONTRIBUTION_COST_METRIC",
+      "status": "KILL_AS_NEW_METRIC_OR_CONSTRUCT_KEEP_GOVERNANCE_CHECKLIST",
+      "question": "Can the contribution-cost/correction-labor regression rule be operationalized with measurable burden and benefit variables without converting normative fairness into unsupported causal claims?",
+      "decision_basis": "Public-only overlap audit found that repeated correction burden, provenance reset, practical exit, and past-versus-future contribution accounting are already represented by public Project Intersection governance artifacts. Accrued-contribution continuity is separable from generic exit but their conjunction is not, by itself, a novel construct.",
+      "strongest_counterexample": "Practical exit may be impaired while prior attribution remains preserved, or exit may be easy while provenance is later reset. A scalar obscures both cases.",
+      "preserved_boundary": "The checklist remains governance methodology only; it does not establish liability, ownership, compensation amount, causal responsibility, or prevalence.",
+      "source": "CONTRIBUTION_COST_ACCOUNTING_REGRESSION.md#15",
+      "rollback": "Reopen as UNRESOLVED only if independent data show reliable incremental blinded classification or prediction beyond the existing public axes."
+    }
+  ]
 }
