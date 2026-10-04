@@ -17,7 +17,7 @@ Failure lineage: the original role-reversal sweep varied the wrong target coordi
 
 Open limits: stochastic enforcement, wider timing/equilibrium regimes, off-path participation, cheap substitution and empirical validation. This run reused project code, tests and grid: it is not independent implementation or independent scientific replication. Public readers can now execute the supplied code and grid in experiments/e007.
 
-Reproduction record: source snapshot d7242191f284d713781129c1720e233c7bd4708d; Python 3.12; pytest 9.1.1. Commands in the isolated candidate: `python -m pytest -q -p no:cacheprovider`; `python timing_probe.py --summary-only --check`. Headline counts were fixed before this rerun, not before the original experiment.
+Reproduction record: source snapshot 4830a7456989ecf94a1ccf0bc333110915b00912; Python 3.12; pytest 9.1.1. Commands in the isolated candidate: `python -m pytest -q -p no:cacheprovider`; `python timing_probe.py --summary-only --check`. Headline counts were fixed before this rerun, not before the original experiment.
 
 Next falsification: rerun the released package; challenge timing and equilibrium-selection assumptions. A mismatch weakens this computational claim; successful rerunning still does not validate real-world behavior.
 
