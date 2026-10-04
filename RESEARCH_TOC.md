@@ -607,8 +607,7 @@ existing theories already explain the result.
 
 If they do,
 
-Project Intersection claims may be  
-KILLed, narrowed, or reframed.
+Project Intersection claims may have their novelty rejected, be narrowed, reassessed, or reframed.
 
 ### 3.8 Recursive Research-Capability Program
 
@@ -1720,7 +1719,11 @@ Project Intersection의 주장을
 
 그렇다면
 
-주장을 KILL하거나,
+주장의 독창성을 기각하거나,
+
+범위를 좁히거나,
+
+ROS로 전환하거나,
 
 좁히거나,
 
