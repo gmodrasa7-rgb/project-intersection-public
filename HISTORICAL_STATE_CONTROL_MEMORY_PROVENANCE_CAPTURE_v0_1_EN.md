@@ -201,3 +201,44 @@ This is not a second prevalence estimate or an independent validation of the ent
 ### Strongest counterexample / failure condition
 
 A person could knowingly allow an automatic recorder to overwrite adverse material, so a content-blind storage mechanism does not prove content-blind human intent. The public NTSB source establishes that overwrite occurred and that the recorder's two-hour retention was inadequate; it does not establish every operator's motive or whether preservation duties were breached. The screen must therefore keep mechanism, human action, and intent as separate claims.
+
+
+## Mixed-mechanism sensitivity attack — JFK runway incursion
+
+**Selection rule:** This case was selected from the previous checkpoint because automatic retention loss coexisted with an unresolved human preservation path. The frozen four axes were applied without treating the NTSB's eventual probable-cause finding as an input to the H3 coding.
+
+### Independent record
+
+In the 13 January 2023 JFK runway-incursion investigation, the NTSB reported that both airplanes' two-hour cockpit voice recordings were overwritten. The final report states that investigators therefore relied exclusively on crew recollections documented one month later; flight-data-recorder and ADS-B data survived, but could not supply the missing content and timing of cockpit communications. The NTSB ultimately attributed the incident to distraction, concurrent tasks, loss of situational awareness, and inadequate risk controls—not record manipulation.
+
+Sources:
+- NTSB investigation page: https://www.ntsb.gov/investigations/pages/DCA23LA125.aspx
+- NTSB final report AIR-24-01: https://www.ntsb.gov/investigations/AccidentReports/Reports/AIR2401.pdf
+- NTSB testimony on two-hour overwrite pathways and preservation guidance: https://www.ntsb.gov/news/Testimony/pages/homendy-20231109a.aspx
+
+### Coding with the unchanged axes before using the final causal finding
+
+| Axis | Public observation | Classification effect |
+|---|---|---|
+| Missingness | Both two-hour CVRs overwrote the incident audio; FDR and ADS-B data survived | Fixed-window technical loss, but only for the communication channel most relevant to crew intent and attention |
+| Direction | The missing audio is exactly what would reveal communication content, unreported conversation, and minute-by-minute attention | **DIRECTION_CENSORED:** absence of a beneficiary-aligned pattern cannot be counted as a negative observation |
+| Timing | Overwrite occurred after the near collision and before investigative retrieval | Accountability-linked timing is present but is also predicted by continued two-hour recording |
+| Recovery | Numerical flight and location data were recovered; cockpit semantic content was not | Partial cross-channel recovery cannot substitute for the missing claim-relevant channel |
+
+### Decision and measurement modification
+
+**MODIFY THE SCREEN: MIXED CASES WITH CLAIM-RELEVANT DIRECTION CENSORED MUST RETURN UNRESOLVED, NOT BENIGN OR H3-NEGATIVE.**
+
+Before consulting the final probable-cause conclusion, the frozen axes cannot distinguish ordinary continuation/retention failure from a human choice that knowingly allowed adverse communication evidence to disappear. The correct screen output is therefore **UNRESOLVED_DIRECTION_CENSORED**.
+
+The later NTSB finding of distraction and inadequate risk controls is consistent with a non-capture explanation and shows that the unresolved screen did not create a false positive. It does not validate sensitivity: the missing CVR prevented direct checking of the very direction variable needed to detect selective manipulation.
+
+Operational rule added:
+
+`if claim_relevant_channel_missing && direction_not_independently_observable => UNRESOLVED_DIRECTION_CENSORED`
+
+Do not score this as a true negative. Direction evidence from a different channel may resolve it only if provenance and inferential linkage are independently established.
+
+### Strongest counterexample / failure condition
+
+A mixed case can contain genuine beneficiary-aligned preservation failure while all surviving channels look technically ordinary. Requiring observed direction from the missing channel can make H3 unfalsifiably hard to trigger; inferring direction from timing or noncooperation can instead create false positives. The screen remains triage, not an intent classifier, until held-out cases with independently reconstructed direction test both errors.
