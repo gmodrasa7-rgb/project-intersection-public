@@ -1,0 +1,60 @@
+{
+  "schema_version": "1.0",
+  "status": "ACTIVE_CONTINUITY",
+  "public_repository": "gmodrasa7-rgb/project-intersection-public",
+  "canonical_boundary": "Public continuation pointer only; source artifacts and commit history outrank this state file.",
+  "recovery_entrypoint": "AUTONOMOUS_RESEARCH_LOOP.md",
+  "current_public_head": "5e088a0f05d5aea17b472583eab85e5e56bf8a67",
+  "updated_at": "2026-10-04T14:40:00+09:00",
+  "execution_policy": {
+    "atomic_material_delta_per_run": 1,
+    "require_prior_art_gate": true,
+    "require_read_back": true,
+    "preserve_negative_failure_lineage": true,
+    "synthetic_escape_after_consecutive_same_direction_runs": 2,
+    "no_user_reconstruction_burden": true,
+    "no_self_granted_authority": true
+  },
+  "priority_order": [
+    "persistence_provenance_integrity",
+    "strong_counterexample_or_kill_test",
+    "prior_art_novelty_narrowing",
+    "independent_external_or_empirical_validation",
+    "new_synthetic_test",
+    "documentation_only"
+  ],
+  "unresolved_frontier": [
+    {
+      "id": "F001",
+      "status": "UNRESOLVED",
+      "question": "Can an independent third party reproduce or independently implement a narrow public Project Intersection claim without private conversation history?",
+      "evidence_boundary": "E007 is publicly executable and project-reproduced; independent external scientific replication is not established.",
+      "next_cheapest_discriminating_check": "Seek or enable lineage-separated rerun/implementation using the public E007 package and independent reimplementation protocol; record non-participation or failure symmetrically."
+    },
+    {
+      "id": "F002",
+      "status": "UNRESOLVED",
+      "question": "Can the contribution-cost/correction-labor regression rule be operationalized with measurable burden and benefit variables without converting normative fairness into unsupported causal claims?",
+      "evidence_boundary": "Current artifact is governance/methodology, not empirical validation and not a monetary debt determination.",
+      "next_cheapest_discriminating_check": "Map existing organizational-justice, transaction-cost, principal-agent, burnout/repair-burden, and commons/governance measures before proposing a new metric."
+    }
+  ],
+  "recent_material_delta": {
+    "type": "governance_methodology",
+    "summary": "Added contribution-cost accounting and correction-labor regression artifact and linked it into public evidence and funding due diligence.",
+    "commit": "5e088a0f05d5aea17b472583eab85e5e56bf8a67"
+  },
+  "human_only_gates": [
+    "contracts_terms_ip_license_rights_changes",
+    "payments_transfers_trades",
+    "kyc_tax_bank_inputs",
+    "private_personal_data_disclosure",
+    "external_application_email_message_submission",
+    "destructive_source_deletion"
+  ],
+  "last_read_back": {
+    "status": "PENDING_THIS_BOOTSTRAP_WRITE",
+    "verified_commit": null
+  },
+  "next_checkpoint": "Bootstrap public autonomous-continuity files, link them from README and governance audit, verify GitHub Actions pass, then let the hourly autonomous research task resume from F001/F002 without requiring user reconstruction."
+}
