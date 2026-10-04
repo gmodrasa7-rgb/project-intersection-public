@@ -1,5 +1,5 @@
 # Project Intersection — Historical State Control / Memory-Provenance Capture v0.1
-**Status:** falsifiable research hypothesis / not evidence of intentional deletion or manipulation  
+**Status:** broad novelty rejected / H3 supported in one historical existence case / generalization unresolved  
 **Date:** 2026-10-03
 
 ## Core question
@@ -92,4 +92,43 @@ H3 requires evidence of selective action plus beneficiary-aligned direction beyo
 - RA/SC/EC/RC/CV/EX/FL: retain as an auditable governance checklist; do not combine them into a scalar capture score without incremental validation.
 
 The candidate family name may remain as a navigation label, but it is not claimed as a new scientific construct. Reopen novelty only if blinded, held-out evidence shows incremental classification or prediction beyond organizational memory/forgetting, knowledge hiding, archival power, and provenance/records-management baselines.
+
+## Preregistered historical-case check — Iran/Contra records
+
+**Selection rule:** The four predictions above were committed before selecting this case (basis state commit `d38d937a3d48b2744ec7a6888a39d9833016b9fa`). The case was selected because official investigation, congressional, archival, and judicial records expose alteration/deletion timing and a partially independent recovery path.
+
+### Public source lineage
+
+- *Report of the Congressional Committees Investigating the Iran-Contra Affair* (1987), official congressional report scan: https://donohueintellaw.ll.georgetown.edu/sites/default/files/assets/reportofcongress87unit.pdf
+- Lawrence Walsh, *Final Report of the Independent Counsel for Iran/Contra Matters* (1993), official-report mirror: https://irp.fas.org/offdocs/walsh/
+- National Archives description of the Walsh records and custody: https://www.archives.gov/research/investigations/walsh.html
+- National Archives oral history describing deleted PROFS notes recovered from backup tapes: https://www.archives.gov/files/about/history/oral-history-interview-with-gary-m.-stern.pdf
+- *Armstrong v. Bush*, 924 F.2d 282 (D.C. Cir. 1991), describing PROFS deletion and weekly-backup behavior: https://law.justia.com/cases/federal/appellate-courts/F2/924/282/224282/
+
+These sources are independent of Project Intersection. The investigation reports are still institutional findings rather than an unfiltered complete archive.
+
+### Coding against the preregistered predictions
+
+| Axis | Public observation | Model comparison |
+|---|---|---|
+| Missingness | Officials altered, shredded, removed, and deleted Iran/Contra-related records; the congressional record describes unusually organized, high-volume destruction | Stronger fit to selective action than age, migration, turnover, or routine storage failure |
+| Direction | The documented edits removed or softened references to prohibited Contra assistance and lethal supplies | Direction aligns with reducing accountability exposure; stronger fit to strategic manipulation |
+| Timing | Destruction and alteration intensified after public exposure and notice of an official inquiry in November 1986 | Stronger fit to dispute/investigation timing than routine lifecycle loss |
+| Recovery | PROFS backup tapes preserved and enabled recovery of many deleted messages; weekly snapshots could not guarantee recovery of messages deleted before capture | Supports partial independent recovery while preserving an unknown-missingness boundary |
+
+### Decision
+
+**KEEP H3 AS A CASE-LEVEL HISTORICAL EXISTENCE CLAIM; GENERALIZATION REMAINS UNRESOLVED.**
+
+This case passes the narrow discriminator because selective action, beneficiary-aligned direction, investigation-linked timing, and partial recovery are jointly documented. It does **not** establish prevalence, a universal mechanism, current platform/AI intent, or novelty of the broad construct.
+
+The broad novelty rejection remains unchanged. This is a historical instance of already recognized record manipulation and obstruction, not a new Project-originated scientific construct.
+
+### Strongest limitation / negative boundary
+
+The recovered backup record is not complete: weekly snapshots miss material deleted before capture, destruction affected unknown records, and later legal outcomes were complicated by immunized congressional testimony. Therefore the surviving corpus cannot estimate the total deleted set, causal prevalence, or a calibrated probability of strategic capture. Non-recovered records remain unknown, not proven absent.
+
+### Power-reversal result
+
+The case also shows the control invariant operationally: deletion power held by implicated officials weakened public audit, while backup custody and independent investigators restored part of the counterparty's verification capacity. Repeating the former structure concentrates historical control and externalizes reconstruction cost; preserving independent raw anchors and custody reduces that asymmetry without requiring trust in the accused actor.
 
