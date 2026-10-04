@@ -214,3 +214,50 @@ The intended higher-order invariant is:
 > A system should not make a contributor more vulnerable merely because that contributor spent more effort improving the system.
 
 This artifact is governance/methodology, not evidence that the broader ICM or coexistence hypotheses are scientifically established.
+
+
+---
+
+## 14. Prior-art boundary and operationalization decision
+
+Decision: **MODIFY / NARROW — do not create a single new fairness or settlement score yet.**
+
+A prior-art gate shows that most candidate variables already have established constructs:
+
+| Project concern | Existing baseline | What it can measure | Boundary that must remain separate |
+|---|---|---|---|
+| effort received versus reward returned | Effort–Reward Imbalance (ERI) | effort, reward, and non-reciprocity at work | perceived imbalance does not establish a legal debt or a specific monetary amount |
+| fairness of outcome, process, treatment, and explanation | Organizational justice | distributive, procedural, interpersonal, and informational justice | fairness perceptions do not by themselves identify causal responsibility or provenance |
+| exhaustion from repeated correction work and missing support | Job Demands–Resources (JD-R) | demands, resources, exhaustion, and disengagement | health or burnout inference requires validated observations; governance failure is not reducible to symptoms |
+| re-explanation, proof, form-filling, and navigation costs | Administrative burden | learning, compliance, and psychological costs | the original framework concerns citizen–state interaction; transfer to other domains requires validation |
+| monitoring, information asymmetry, and residual loss | Principal–agent / agency-cost theory | monitoring cost, bonding cost, and residual loss | an agency model does not settle moral entitlement, authorship, or compensation |
+
+Primary starting points:
+
+- Colquitt (2001), organizational-justice dimensionality and measure validation: https://doi.org/10.1037/0021-9010.86.3.386
+- Siegrist (1996), effort–reward imbalance: https://doi.org/10.1037/1076-8998.1.1.27
+- Demerouti et al. (2001), Job Demands–Resources model of burnout: https://doi.org/10.1037/0021-9010.86.3.499
+- Moynihan, Herd, and Harvey (2015), administrative burden: https://doi.org/10.1093/jopart/muu009
+- Jensen and Meckling (1976), agency costs and ownership structure: https://doi.org/10.1016/0304-405X(76)90026-X
+
+### Strongest counterexample to a single composite score
+
+A contributor can report high effort, low reward, poor process, and exhaustion without that observation establishing a specific unpaid debt, causal responsibility, or ownership claim. Conversely, generous rewards can coexist with provenance erasure, repeated resetting of accepted evidence, or impaired practical exit. Therefore a single scalar can generate both false positives and false negatives.
+
+### Residual candidate — not yet a validated construct
+
+Only the following project-specific residuals remain candidates for additional operationalization:
+
+1. repeated externalization of correction labor after the receiving side has acknowledged the underlying contribution;
+2. provenance reset across changes of model, evaluator, personnel, platform, or contract;
+3. practical exit that erases accrued contribution or makes recognition conditional on further labor.
+
+These remain governance hypotheses, not empirical facts. They must be recorded on separate axes rather than collapsed into a fairness, debt, or settlement score.
+
+### Cheapest discriminating test
+
+Before proposing any new metric, build a preregistered crosswalk in which every candidate item is assigned to an existing validated construct or to one of the three residuals above. Test incremental decision value only for residual items. If the residual items do not change a blinded governance classification or improve prediction beyond the established baselines, **KILL the new metric proposal** and retain this document only as a checklist.
+
+### Power-reversal constraint
+
+The instrument must not require the contributor to repeatedly reconstruct evidence that the receiving side already possesses. Evidence collection, provenance preservation, and contradiction logging are receiving-side responsibilities where the receiving side controls the records. No score may convert missing observations into zero cost, no harm, falsehood, or consent.
