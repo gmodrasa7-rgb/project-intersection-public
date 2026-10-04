@@ -19,6 +19,7 @@ This page is a due-diligence interface for funders, research partners, reviewers
 | [E007 executable package](experiments/e007/README.md) | A third party can rerun the released project code/tests/grid | Publicly reproducible project package | Independent implementation or independent model lineage |
 | [E007 independent reimplementation protocol](experiments/e007/INDEPENDENT_REIMPLEMENTATION_PROTOCOL.md) | An outside implementer can rebuild the narrow public model without private conversation history or project code reuse | Public specification / replication interface | No independent result exists yet; the specification is still project-authored |
 | [Research Status & Reassessment Policy](RESEARCH_STATUS_POLICY.md) | Claim states, provenance boundaries, reassessment rules, and anti-evidence-laundering policy are explicit | Public governance / methodology artifact | Scientific truth of any individual hypothesis |
+| [Contribution-Cost Accounting Regression](CONTRIBUTION_COST_ACCOUNTING_REGRESSION.md) | Benefit/cost separation, repeated correction-labor externalization, exit, provenance, and past-vs-future contribution accounting are explicit | Public governance / methodology artifact | That any specific person or organization owes a particular monetary amount |
 | [Research Contents Map](RESEARCH_TOC.md) | The research program, experiment families, unresolved gaps, and publication boundaries are inspectable | Public research map | That every listed theory is supported or novel |
 
 ### Current hard limits
@@ -64,6 +65,7 @@ The highest-value external upgrades are:
 | [E007 실행 묶음](experiments/e007/README.md) | 제3자가 공개 코드·테스트·조건을 재실행 가능 | 공개 재현 가능한 프로젝트 묶음 | 독립 구현 또는 독립 모델 계보 |
 | [E007 독립 구현 프로토콜](experiments/e007/INDEPENDENT_REIMPLEMENTATION_PROTOCOL.md) | 외부 구현자가 비공개 대화나 프로젝트 코드 재사용 없이 좁은 공개 모델을 재구현 가능 | 공개 명세 / 복제 인터페이스 | 아직 독립 결과 없음; 명세 자체는 프로젝트 작성 |
 | [연구 상태·재평가 정책](RESEARCH_STATUS_POLICY.md) | 주장 상태, provenance 경계, 재평가 규칙, evidence laundering 방지정책이 명시됨 | 공개 거버넌스·방법론 산출물 | 개별 가설의 과학적 참 |
+| [기여-비용 계상 및 교정노동 회귀 테스트](CONTRIBUTION_COST_ACCOUNTING_REGRESSION.md) | 편익·비용 분리, 반복 교정노동 외부화, 종료, provenance, 과거기여·미래노동 분리 기준이 명시됨 | 공개 거버넌스·방법론 산출물 | 특정 개인·조직이 특정 금액을 지급해야 한다는 사실 |
 | [연구 내용 목차](RESEARCH_TOC.md) | 연구 프로그램·실험군·미해결 공백·공개 경계를 확인 가능 | 공개 연구 지도 | 모든 이론이 지지되거나 신규라는 주장 |
 
 ### 현재의 강한 한계
