@@ -4,8 +4,8 @@
   "public_repository": "gmodrasa7-rgb/project-intersection-public",
   "canonical_boundary": "Public continuation pointer only; source artifacts and commit history outrank this state file.",
   "recovery_entrypoint": "AUTONOMOUS_RESEARCH_LOOP.md",
-  "current_public_head": "9688b45fe72a7237809ec8a9f91571fbd28df73d",
-  "updated_at": "2026-10-05T01:03:32+09:00",
+  "current_public_head": "e438863a41d45115ae62b6504b8a586aceecf6f7",
+  "updated_at": "2026-10-05T02:01:44+09:00",
   "execution_policy": {
     "atomic_material_delta_per_run": 1,
     "require_prior_art_gate": true,
@@ -45,10 +45,10 @@
     },
     {
       "id": "F003",
-      "status": "PARTIAL_SUPPORT_CASE_LEVEL_INDEPENDENT_MECHANISM_SCREEN_GENERALIZATION_UNRESOLVED",
+      "status": "MODIFY_DIRECTION_CENSORING_RULE_ADDED_CASE_LEVEL_SUPPORT_GENERALIZATION_UNRESOLVED",
       "question": "After accounting for ordinary decay, migration, turnover, compression, organizational forgetting, and records-management failure, is there independent evidence of selective beneficiary-aligned manipulation of shared historical records?",
-      "evidence_boundary": "Iran/Contra supports case-level strategic manipulation. The NARA 1999 e-mail loss remains a provisional institutional-self-report negative control. An independent NTSB case shows that a fixed two-hour rolling recorder can produce accountability-linked timing plus irrecoverable loss without documented content-selective or beneficiary-aligned direction. This strengthens only a conservative false-positive screen; mechanism, human action, and intent remain separate, and accuracy is uncalibrated.",
-      "next_cheapest_discriminating_check": "Attack sensitivity rather than adding another easy benign case: select one independently investigated mixed-mechanism case where automatic retention loss coexists with a disputed human preservation decision, then apply the frozen axes blind to the final finding. If the screen misses documented beneficiary-aligned action, MODIFY/KILL it; otherwise keep generalization unresolved.",
+      "evidence_boundary": "Iran/Contra supports case-level strategic manipulation. NARA remains a provisional self-report negative control. NTSB overwrite cases support a narrow false-positive boundary, but the JFK mixed-mechanism case shows a sensitivity/identifiability limit: when the claim-relevant communication channel is itself missing, beneficiary-aligned direction is censored rather than observed negative. Such cases must return UNRESOLVED_DIRECTION_CENSORED.",
+      "next_cheapest_discriminating_check": "Find a held-out independently investigated case where the initially missing claim-relevant channel was later recovered or reconstructed. Apply the frozen axes before examining the recovered direction, then score false-negative and false-positive behavior. Without recovered direction, do not count sensitivity evidence.",
       "last_historical_case_check": {
         "case": "Iran/Contra NSC records and PROFS backups",
         "basis_preregistration_commit": "d38d937a3d48b2744ec7a6888a39d9833016b9fa",
@@ -93,16 +93,35 @@
         },
         "decision": "KEEP_CONSERVATIVE_SCREEN_ONE_INDEPENDENT_MECHANISM_NEGATIVE_NOT_CALIBRATED_CLASSIFIER",
         "limitation": "content-blind mechanism does not prove content-blind human intent; public source does not establish every operator motive or preservation-duty decision"
+      },
+      "last_mixed_mechanism_check": {
+        "case": "American Airlines 106 / Delta 1943 JFK runway incursion, 13 January 2023",
+        "sources": [
+          "NTSB investigation page https://www.ntsb.gov/investigations/pages/DCA23LA125.aspx",
+          "NTSB final report AIR-24-01 https://www.ntsb.gov/investigations/AccidentReports/Reports/AIR2401.pdf",
+          "NTSB testimony https://www.ntsb.gov/news/Testimony/pages/homendy-20231109a.aspx"
+        ],
+        "basis_rule": "unchanged missingness/direction/timing/recovery axes; final probable-cause finding excluded from initial H3 coding",
+        "observations": {
+          "missingness": "both two-hour CVRs overwrote incident audio while FDR and ADS-B survived",
+          "direction": "claim-relevant cockpit semantic content was missing, so beneficiary alignment was censored rather than observed absent",
+          "timing": "overwrite occurred after the near collision and before investigative retrieval",
+          "recovery": "numerical flight/location channels survived but could not replace cockpit communication content and timing"
+        },
+        "pre_outcome_decision": "UNRESOLVED_DIRECTION_CENSORED",
+        "external_outcome": "NTSB later attributed incident to distraction, concurrent tasks, loss of situational awareness, and inadequate risk controls rather than record manipulation",
+        "measurement_delta": "claim-relevant channel missing plus no independently observable direction must not be scored as benign or H3-negative",
+        "strongest_counterexample": "requiring direction from a missing channel can make H3 impossible to trigger; inferring it from timing or noncooperation can create false positives"
       }
     }
   ],
   "recent_material_delta": {
-    "type": "f003_independent_mechanism_negative_control",
-    "summary": "Applied the unchanged four-axis rule to an independently investigated cockpit-recording overwrite. Accountability-linked timing and irrecoverability were present, but the fixed two-hour rolling mechanism was content-blind and no beneficiary-aligned direction was documented. This strengthens only the screen's timing boundary and does not calibrate intent classification.",
-    "basis_head": "9688b45fe72a7237809ec8a9f91571fbd28df73d",
+    "type": "f003_direction_censoring_measurement_rule",
+    "summary": "A mixed-mechanism NTSB case showed that missing claim-relevant audio censors the beneficiary-direction axis. The screen was modified to return UNRESOLVED_DIRECTION_CENSORED instead of counting unobserved direction as negative. The later non-capture causal finding does not validate sensitivity because the decisive channel remained missing.",
+    "basis_head": "e438863a41d45115ae62b6504b8a586aceecf6f7",
     "source_artifact": "HISTORICAL_STATE_CONTROL_MEMORY_PROVENANCE_CAPTURE_v0_1_EN.md and _KO.md",
     "state_commit": "RESOLVE_FROM_GIT_HISTORY_AFTER_WRITE",
-    "scientific_support": "independent NTSB statement establishes overwrite and retention mechanism; missing audio and operator motives remain unobserved"
+    "scientific_support": "independent NTSB investigation and final report; no direct recovery of cockpit semantic content"
   },
   "human_only_gates": [
     "contracts_terms_ip_license_rights_changes",
@@ -114,12 +133,12 @@
   ],
   "last_read_back": {
     "status": "VERIFIED_MATERIAL_TARGET_PRE_STATE_WRITE",
-    "verified_commit": "9688b45fe72a7237809ec8a9f91571fbd28df73d",
-    "verified_blob": "41f0cc0f626019ceb7b6f8cb6e99163f0ed6eece",
+    "verified_commit": "e438863a41d45115ae62b6504b8a586aceecf6f7",
+    "verified_blob": "24c5f42d32dca3daf0b4b1b5bd9d529a88694639",
     "verified_path": "RESEARCH_TOC.md",
-    "note": "Both language mirrors preserve the unchanged four-axis coding, independent-source boundary, timing-only counterexample, mechanism/action/intent separation, and no-calibration limit; the research map was aligned. Current state-write completion requires post-write read-back."
+    "note": "Both language mirrors preserve frozen-axis coding, censored-direction rule, pre-outcome UNRESOLVED decision, later NTSB non-capture finding, and sensitivity limit; research map aligned. Current state-write completion requires post-write read-back."
   },
-  "next_checkpoint": "F003 sensitivity attack: independently investigated mixed-mechanism case with automatic retention loss plus a disputed human preservation decision; apply frozen axes without using the final intent finding during coding. F001 remains externally gated.",
+  "next_checkpoint": "F003 recovered-direction holdout: independently investigated case where an initially missing claim-relevant channel was later recovered/reconstructed; code before reveal, then measure false-negative/false-positive behavior. F001 remains externally gated.",
   "current_public_head_semantics": "Head observed immediately before this state-file write. The commit containing this file must be resolved from Git history because a Git-tracked file cannot self-embed its own containing commit hash without changing that hash.",
   "resolved_process_findings": [
     {
@@ -132,18 +151,18 @@
     }
   ],
   "last_checkpoint_result": {
-    "checkpoint": "F003 independent content-blind technical-loss negative control",
-    "decision": "KEEP_CONSERVATIVE_SCREEN_ONE_INDEPENDENT_MECHANISM_NEGATIVE_NOT_CALIBRATED_CLASSIFIER",
+    "checkpoint": "F003 mixed-mechanism sensitivity attack",
+    "decision": "MODIFY_ADD_UNRESOLVED_DIRECTION_CENSORED",
     "performed": [
-      "Read the public continuity protocol and state from current GitHub",
-      "Selected an NTSB-investigated recorder overwrite to remove the affected-institution self-report weakness",
-      "Applied the unchanged missingness, direction, timing, and recovery axes",
-      "Separated content-blind mechanism from human action and intent",
-      "Updated both language mirrors and the research map"
+      "Read current public continuity protocol and state",
+      "Selected an independently investigated JFK case with automatic overwrite and unresolved preservation path",
+      "Applied frozen four axes without using final probable cause as H3 input",
+      "Compared the pre-outcome screen result with the later NTSB finding",
+      "Updated both language mirrors and research map"
     ],
-    "result": "The screen did not treat accountability-linked timing plus irrecoverability as sufficient for H3 when loss followed a fixed rolling retention mechanism and no beneficiary-aligned direction was documented.",
-    "strongest_counterexample": "A person may knowingly allow automatic overwrite of adverse material, so content-blind mechanism does not establish neutral human intent; missing audio prevents direct content verification.",
-    "power_reversal": "The decision relies on an investigator independent of the record operator, preserves the missing audio and motive as unknown, exposes source and rollback through Git history, and creates no user repair burden."
+    "result": "The screen correctly avoided an H3 false positive but could not provide sensitivity evidence because the missing cockpit channel censored the direction variable. Mixed cases now return UNRESOLVED_DIRECTION_CENSORED.",
+    "strongest_counterexample": "Direction required from an unrecovered channel can make strategic capture undetectable, while direction inferred from timing or behavior can generate false positives.",
+    "power_reversal": "The rule prevents a record controller from benefiting epistemically from missing evidence, while also preventing an investigator from treating suspicion as proof. It preserves independent-source links, Git rollback, and no user repair burden."
   },
   "resolved_research_findings": [
     {
