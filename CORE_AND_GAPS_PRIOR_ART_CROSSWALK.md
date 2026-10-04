@@ -21,7 +21,7 @@ This file records earlier or adjacent work for concepts already present in the p
 | 2.3 Effective Independent Search Capacity / 실효 독립 탐색능력 | DIRECT | James G. March (1991); Daniel A. Levinthal (1997); Lu Hong & Scott E. Page (2004) | DOI 10.1287/orsc.2.1.71; DOI 10.1287/mnsc.43.7.934; DOI 10.1073/pnas.0403723101 | Exploration, rugged-landscape search, and diversity-based problem solving are prior art. "Independent agents create search value" is not novel by itself. |
 | 2.4 Information Diversity and Generativity / 정보 다양성과 생성성 | DIRECT | Lu Hong & Scott E. Page (2004); James G. March (1991) | Hong & Page, Groups of diverse problem solvers can outperform groups of high-ability problem solvers, DOI 10.1073/pnas.0403723101; March, DOI 10.1287/orsc.2.1.71 | Diversity can improve problem solving under explicit conditions, but diversity is not universally beneficial. The Project must specify incremental conditions rather than claim diversity itself as new. |
 | 2.5 Practical Exit and Outside Options / Practical Exit와 Outside Option | DIRECT | Albert O. Hirschman (1970); switching-cost literature already recorded in the main registry | Hirschman, Exit, Voice, and Loyalty; Pick & Eisend (2014), DOI 10.1007/s11747-013-0349-2 | Exit/voice and switching-cost effects are prior art. The Project-specific remainder is whether its practical-exit measurements add information beyond those constructs. |
-| 2.6 Power-Reversal Stability / Power-Reversal 안정성 | PARTIAL / CANDIDATE | No exact direct precursor assigned in this audit | Adjacent traditions include impartiality/reversibility tests, safety symmetry, and role-based fairness; see the safety-governance crosswalk | Do not claim broad novelty from "reverse the roles." Candidate novelty, if any, must come from the operational gate while preserving real capability, harm, and responsibility asymmetries. |
+| 2.6 Power-Reversal Stability / Power-Reversal 안정성 | DIRECT COMPONENTS / COMPOSITE INCREMENTAL VALUE UNTESTED | Golden Rule/reversibility traditions; John Rawls (1971); engineering-ethics reversibility tests; NIST AI RMF 1.0; OECD AI accountability principles | Rawls, *A Theory of Justice*, DOI 10.4159/9780674042605; NIST AI RMF Core/Playbook; OECD AI Principles on accountability; Online Ethics at UVA seven-step method | Role exchange, impartial-position reasoning, stakeholder impact, role/capability-conditioned accountability, auditability, appeal, and redress are prior art. KILL broad novelty. Retain the co-scaling gate only as an unvalidated governance composition. |
 | 2.7 Creator–Successor Non-Ownership / 창조자–후속개체 비소유 | ADJACENT, NOT EQUIVALENT | U.S. National Commission, Belmont Report (1979), autonomy/respect-for-persons tradition | HHS, The Belmont Report (1979) | Autonomy and protection of agents are strong prior normative baselines, but they do not directly settle ownership/standing for artificial or successor intelligences. No exact scientific equivalence is claimed. |
 | 2.8 Preference Sovereignty and Reflective Consent / 선호주권과 성찰적 동의 | ADJACENT | Belmont Report (1979) and informed-consent/autonomy literature | HHS, The Belmont Report (1979) | Voluntariness, comprehension, information, and autonomy are prior art. The Project's application to mutable AI preferences or successor agents remains unresolved. |
 | 2.9 Open-World Epistemic Non-Closure / 열린계 인식 비폐쇄 | DIRECT TERMINOLOGY + BROADER ADJACENCY | Raymond Reiter (1978) | Reiter, On Closed World Data Bases, DOI 10.1007/978-1-4684-3384-5_3 | Closed-world reasoning is established prior art. Project usage is broader and must not imply that open-world or closed-world terminology originated here. |
@@ -112,3 +112,38 @@ Highest-priority unmapped or only partially mapped areas:
 - functional agency recognition boundaries.
 
 These remain HOLD FOR PRIOR-ART REVIEW, not Project novelty.
+
+
+## 6. Power-Reversal exact-antecedent correction / Power-Reversal 정확 선행경계
+
+### Directly established components / 직접 확립된 구성요소
+
+- **Role reversal / reversibility:** professional and engineering ethics already asks whether a decision remains acceptable if the decision-maker trades places with an adversely affected person. The method is presented as a respect- and rights-oriented reversibility test, not a Project-originated device.
+- **Impartial position:** Rawls's original position and veil of ignorance remove knowledge of one's eventual social position to block self-favoring choice of principles. This is a stronger formal antecedent than a generic analogy to fairness.
+- **Affected-party voice and contestability:** NIST AI RMF calls for affected communities in assessment, documented roles and responsibilities, feedback, appeals, recourse, and auditability.
+- **Capability-conditioned accountability:** OECD AI principles allocate responsibility according to role, context, and ability to act and require documentation or auditing where justified.
+
+Sources:
+- John Rawls, *A Theory of Justice* (1971), DOI: https://doi.org/10.4159/9780674042605
+- University of Virginia Online Ethics, Seven-Step Method: https://onlineethics.virginia.edu/cases/seven-step-method-ethical-decision-making
+- NIST AI RMF Core: https://airc.nist.gov/airmf-resources/airmf/5-sec-core/
+- NIST AI RMF Govern/Measure Playbook: https://airc.nist.gov/airmf-resources/playbook/govern/ and https://airc.nist.gov/airmf-resources/playbook/measure/
+- OECD AI accountability principle: https://oecd.ai/en/dashboards/ai-principles/P9
+
+### Strongest counterexample / 가장 강한 반례
+
+A literal identity swap can erase differences in capability, responsibility, legal authority, harm magnitude, dependency, and available remedies. Existing accountability frameworks already avoid this error by conditioning duties on role, context, and ability to act. Therefore the Project cannot claim novelty merely from saying that role reversal preserves real asymmetries.
+
+Conversely, existing sources checked here do not state the exact Project inequality
+`AUTONOMY_GAIN <= COUNTERPARTY_AUDIT_EXIT_RECOVERY_GAIN`
+or its permission-by-permission mapping. Absence of that exact string does not establish scientific novelty; it identifies only a candidate operational composition.
+
+### Decision / 판정
+
+**KILL broad Power-Reversal novelty; KEEP the composite gate as an unvalidated governance checklist; HOLD scientific incremental value.**
+
+The residual candidate is narrow: whether jointly requiring distrust-resilient independent verification, practical exit, rollback, and recovery to co-scale with each specific increase in authority predicts governance failure better than the established components alone. Combination and renaming do not establish novelty.
+
+### Cheapest discriminating test / 최소 결정검사
+
+In the preregistered F004 historical holdout, score established baselines first: reversibility/impartiality, affected-stakeholder participation, role/capability-conditioned accountability, auditability, appeal, and redress. Freeze those scores. Add only the Project co-scaling and permission-by-permission variables afterward. KILL the residual scientific claim if held-out discrimination does not improve or blinded inter-rater reliability fails.
