@@ -4,8 +4,8 @@
   "public_repository": "gmodrasa7-rgb/project-intersection-public",
   "canonical_boundary": "Public continuation pointer only; source artifacts and commit history outrank this state file.",
   "recovery_entrypoint": "AUTONOMOUS_RESEARCH_LOOP.md",
-  "current_public_head": "3407093b1d385eaeed1794fa163236b9a6ca1424",
-  "updated_at": "2026-10-05T04:07:13+09:00",
+  "current_public_head": "0033b0b8a8da337a2dfa94520ca571866b5d5825",
+  "updated_at": "2026-10-05T05:04:09+09:00",
   "execution_policy": {
     "atomic_material_delta_per_run": 1,
     "require_prior_art_gate": true,
@@ -45,10 +45,10 @@
     },
     {
       "id": "F003",
-      "status": "NARROW_PARTIAL_RECOVERY_RULE_NOVELTY_REJECTED_QUERY_IDENTIFIABILITY_REQUIRED_GENERALIZATION_UNRESOLVED",
+      "status": "MODIFY_IRS_DIRECTION_CALIBRATION_KILLED_KEEP_NONIDENTIFICATION_RECOVERY_AUDIT_GENERALIZATION_UNRESOLVED",
       "question": "After accounting for ordinary decay, migration, turnover, compression, organizational forgetting, and records-management failure, is there independent evidence of selective beneficiary-aligned manipulation of shared historical records?",
-      "evidence_boundary": "Iran/Contra supports case-level strategic manipulation; generalization remains unresolved. NARA and NTSB controls constrain false positives. The IRS/TIGTA holdout shows that recovered records can correct specific facts without automatically identifying the missing population. Rubin missingness conditions, Mohan-Pearl-Tian query recoverability, and Manski partial identification already explain this boundary. Recovery fraction is neither necessary nor sufficient; direction claims require query-level identifiability under an explicit missingness model and stated auxiliary evidence.",
-      "next_cheapest_discriminating_check": "For the IRS/TIGTA holdout, define the beneficiary-direction estimand and a minimal missingness graph using only public variables. Test whether any documented auxiliary evidence identifies or nontrivially bounds the estimand. If not, record the non-identification witness rather than searching for another case.",
+      "evidence_boundary": "Iran/Contra supports case-level strategic manipulation; generalization remains unresolved. NARA and NTSB controls constrain false positives. Missing-data theory requires query-level identifiability. A formal IRS/TIGTA audit found no public item-level direction counts, bounded target denominator, conditional independence, valid instrument/shadow variable, or complete sampling frame. Observationally equivalent completions permit opposite missing-population directions, so the IRS case cannot calibrate H3 direction classification.",
+      "next_cheapest_discriminating_check": "Search only for an admissible recovered-record holdout that jointly provides item-level recovered records or blinded direction codes, a known or bounded target denominator, and a characterized recovery/selection mechanism or valid auxiliary variable. Do not accumulate another narrative case lacking this observation frame.",
       "last_historical_case_check": {
         "case": "Iran/Contra NSC records and PROFS backups",
         "basis_preregistration_commit": "d38d937a3d48b2744ec7a6888a39d9833016b9fa",
@@ -144,16 +144,46 @@
         "revised_rule": "Recovered items support item-level claims. Population direction requires recoverability or identification under explicit missingness assumptions; otherwise report defensible bounds and retain partial censoring, or retain full censoring if no defensible bounds exist.",
         "project_specific_remainder": "Operational governance mapping requiring symmetric disclosure of missingness assumptions, source selection, and uncertainty; not a new statistical theory.",
         "prior_wording_lineage": "Preserved in both language artifacts as a useful but overbroad coverage-based precursor."
+      },
+      "last_identifiability_audit": {
+        "case": "IRS Exempt Organizations data loss / Lois Lerner e-mail recovery",
+        "estimand": "theta = P(controller-favoring direction) - P(controller-adverse direction) over all claim-relevant target-period messages",
+        "observation_indicator": "R=1 when a record survived, was recovered, and entered the observable investigative corpus",
+        "minimal_graph_boundary": [
+          "storage/source/overwrite/destruction variables affect R",
+          "human preservation or destruction actions may affect R",
+          "beneficiary direction or correlated accountability relevance may affect those actions and R",
+          "no public evidence blocks the direction-to-recovery path or establishes conditional independence"
+        ],
+        "observed_data_limits": [
+          "no complete target sampling frame",
+          "no defensible missing-population denominator",
+          "no item-level direction counts for the full recovered corpus",
+          "no valid public instrument or shadow variable identified"
+        ],
+        "nonidentification_witness": {
+          "world_A": "all unrecovered claim-relevant messages are controller-adverse",
+          "world_B": "all unrecovered claim-relevant messages are controller-favoring",
+          "shared_observations": "both preserve the 744-tape recovery, 1,330 previously unproduced recovered e-mails, some recovered relevance, incomplete total record, and TIGTA no-evidence finding on purposeful tape erasure",
+          "implication": "theta can differ in sign and magnitude across observationally equivalent worlds"
+        },
+        "bound": "Only the trivial worst-case interval [-1,1] is defensible from checked public summaries.",
+        "decision": "KILL_IRS_AS_DIRECTION_CLASSIFIER_CALIBRATION_KEEP_AS_NONIDENTIFICATION_AND_RECOVERY_AUDIT",
+        "strongest_counterexample": "Item-level direct evidence in any recovered message remains usable; the kill applies to population-direction calibration and extrapolation, not to specific-document findings.",
+        "source_lineage": [
+          "House hearing IRS: TIGTA Update, 26 February 2015, GovInfo CHRG-114hhrg95249",
+          "Senate Finance Committee Report 114-119, 5 August 2015"
+        ]
       }
     }
   ],
   "recent_material_delta": {
-    "type": "f003_partial_recovery_prior_art_narrowing",
-    "summary": "The coverage-based partial-recovery rule was narrowed to established missing-data identification theory. Recovery fraction is neither necessary nor sufficient; the beneficiary-direction query must be identifiable or recoverable under an explicit missingness model, otherwise bounds or censored outputs are required.",
-    "basis_head": "3407093b1d385eaeed1794fa163236b9a6ca1424",
+    "type": "f003_irs_direction_nonidentification_witness",
+    "summary": "A query-level audit constructed two observationally equivalent completions with opposite directions for unrecovered IRS messages. Because the public record lacks a target denominator, recovered direction counts, and a justified missingness model, only the trivial [-1,1] bound is supported. The IRS case is killed as a direction-classifier calibration case and retained as a recovery-audit/non-identification case.",
+    "basis_head": "0033b0b8a8da337a2dfa94520ca571866b5d5825",
     "source_artifact": "HISTORICAL_STATE_CONTROL_MEMORY_PROVENANCE_CAPTURE_v0_1_EN.md and _KO.md",
     "state_commit": "RESOLVE_FROM_GIT_HISTORY_AFTER_WRITE",
-    "scientific_support": "Rubin 1976; Mohan, Pearl, Tian 2013; Manski 2005"
+    "scientific_support": "Official TIGTA testimony and Senate Finance Committee report plus explicit missing-data non-identification witness"
   },
   "human_only_gates": [
     "contracts_terms_ip_license_rights_changes",
@@ -165,12 +195,12 @@
   ],
   "last_read_back": {
     "status": "VERIFIED_MATERIAL_TARGET_PRE_STATE_WRITE",
-    "verified_commit": "3407093b1d385eaeed1794fa163236b9a6ca1424",
-    "verified_blob": "eed14fd65990f5d5b824513f3e22ddbcc8bc5dec",
+    "verified_commit": "0033b0b8a8da337a2dfa94520ca571866b5d5825",
+    "verified_blob": "a66f1c82f1ecf6090fdf36055be85b24d28000f6",
     "verified_path": "RESEARCH_TOC.md",
-    "note": "Both language mirrors and research map contain the identifiability correction. The attempted prior-art registry path was absent and was not created; source attribution is preserved in the research artifacts. State-write completion requires post-write read-back."
+    "note": "Both language mirrors preserve the estimand, graph boundary, two-world witness, trivial bound, KILL/KEEP split, and admissibility gate; research map aligned. State-write completion requires post-write read-back."
   },
-  "next_checkpoint": "F003 IRS identifiability audit: define the beneficiary-direction estimand and minimal public missingness graph, then test identification or derive defensible bounds/non-identification witness. F001 remains externally gated.",
+  "next_checkpoint": "F003 admissible recovered-record holdout search: require item-level direction evidence, bounded denominator, and characterized selection/recovery mechanism before another calibration attempt. F001 remains externally gated.",
   "current_public_head_semantics": "Head observed immediately before this state-file write. The commit containing this file must be resolved from Git history because a Git-tracked file cannot self-embed its own containing commit hash without changing that hash.",
   "resolved_process_findings": [
     {
@@ -183,18 +213,19 @@
     }
   ],
   "last_checkpoint_result": {
-    "checkpoint": "F003 partial-recovery prior-art gate",
-    "decision": "NARROW_NOVELTY_REJECTED_QUERY_IDENTIFIABILITY_REQUIRED",
+    "checkpoint": "F003 IRS query-level identifiability audit",
+    "decision": "KILL_IRS_AS_DIRECTION_CLASSIFIER_CALIBRATION_KEEP_NONIDENTIFICATION_RECOVERY_AUDIT",
     "performed": [
       "Read current public continuity protocol and state",
-      "Compared the partial-recovery rule with established missing-data theory",
-      "Applied the strongest counterexample that recovery fraction can diverge from identifiability",
-      "Preserved the earlier coverage wording as failure lineage",
+      "Defined the beneficiary-direction estimand and recovery indicator",
+      "Specified the minimal public missingness graph and unblocked direction-to-recovery path",
+      "Constructed two observationally equivalent full-data worlds with opposite missing directions",
+      "Derived only the trivial worst-case direction bound",
       "Updated both language mirrors and research map"
     ],
-    "result": "The partial-recovery rule is not a new statistical result. It is now an operational application of query-level recoverability and partial identification.",
-    "strongest_counterexample": "Low recovery can still identify under a valid model; near-complete recovery can remain nonidentified under direction-selective missingness.",
-    "power_reversal": "Both record controller and investigator must expose missingness assumptions and uncertainty. Neither incomplete recovery nor suspicion can be converted into unilateral proof; public sources and Git rollback remain available."
+    "result": "The IRS public record cannot identify or nontrivially bound the direction of the unrecovered population, so it cannot calibrate H3 sensitivity or specificity.",
+    "strongest_counterexample": "Recovered documents can still provide decisive item-level evidence; only population extrapolation and classifier calibration are killed.",
+    "power_reversal": "Neither record controller nor investigator may choose the unobserved completion favorable to itself. The admissibility gate reduces future narrative-case accumulation and user repair burden."
   },
   "resolved_research_findings": [
     {
