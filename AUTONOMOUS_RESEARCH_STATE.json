@@ -5,7 +5,7 @@
   "canonical_boundary": "Public continuation pointer only; source artifacts and commit history outrank this state file.",
   "recovery_entrypoint": "AUTONOMOUS_RESEARCH_LOOP.md",
   "current_public_head": "f9b0299d75cf805fe1b0b5ac24abce67b4b26a09",
-  "updated_at": "2026-10-04T21:08:00Z",
+  "updated_at": "2026-10-05T00:00:00Z",
   "execution_policy": {
     "atomic_material_delta_per_run": 1,
     "require_prior_art_gate": true,
@@ -188,15 +188,30 @@
         "nonclaim": "This does not show that no admissible historical holdout exists.",
         "rollback": "Reopen if a benchmark links blinded beneficiary-direction labels to a bounded target population and characterized selection/recovery."
       }
+    },
+    {
+      "id": "F004_SAFETY_GOVERNANCE_INCREMENTAL_VALUE",
+      "status": "HOLD_PRIOR_ART_ABSORBS_BROAD_CLAIMS_INCREMENTAL_VALUE_UNTESTED",
+      "question": "Do Project Intersection's symmetric power-reversal variables add reliable held-out discrimination or prediction beyond established safety science, organizational voice/oversight, automation, and AI-safety baselines?",
+      "evidence_boundary": "Ashby, Hirschman, Stigler/capture, Bainbridge, Perrow, Leveson, Vaughan, Edmondson, Morrison/Milliken, Reason, Westrum, HRO, Elish, and AI-safety work already explain most broad mechanisms. Historical similarity to Challenger, Therac-25, Columbia, Fukushima, Boeing 737 MAX, or the 2026 OpenAI Hugging Face incident is not Project validation.",
+      "candidate_remainder": [
+        "symmetric power-reversal operational gate with real capability/harm asymmetries preserved",
+        "AUTONOMY_GAIN <= COUNTERPARTY_AUDIT_EXIT_RECOVERY_GAIN as an unvalidated governance invariant",
+        "repeated benefit/authority gain versus correction/monitoring/recovery/exit burden divergence"
+      ],
+      "next_cheapest_discriminating_check": "Preregister a blinded historical holdout comparison. Freeze established prior-art baseline features first, then test whether the Project-specific variables add reliable out-of-sample value. KILL scientific novelty if incremental value or inter-rater reliability fails.",
+      "strongest_counterexample": "A broad cross-domain synthesis may feel novel while adding zero predictive information once known variables such as complexity, coupling, voice safety, evaluator independence, information flow, redundancy, and automation responsibility are included.",
+      "source_artifact": "PRIOR_ART_SAFETY_GOVERNANCE_CROSSWALK.md",
+      "power_reversal": "Neither controller nor controlled actor receives a self-validating exemption. Evidence preservation, appeal/contestability, proportional restriction, and rollback are applied symmetrically while preserving actual differences in capability, responsibility, legal authority, and harm."
     }
   ],
   "recent_material_delta": {
-    "type": "f003_external_recovery_conformance_direction_boundary",
-    "summary": "NIST CFTT provides an independent recovery-tool conformance framework yet explicitly lacks a definitive expected result for estimated content. Recovery measurement validation is therefore separated from beneficiary-direction identification; CFTT is a technical negative control, not an H3 classifier-calibration holdout.",
-    "basis_head": "f9b0299d75cf805fe1b0b5ac24abce67b4b26a09",
-    "source_artifact": "HISTORICAL_STATE_CONTROL_MEMORY_PROVENANCE_CAPTURE_v0_1_EN.md and _KO.md",
+    "type": "f004_prior_art_safety_governance_novelty_narrowing",
+    "summary": "Cross-domain prior-art audit absorbs most broad safety/governance claims into established cybernetics, safety science, organizational voice/silence, regulatory capture, automation, and AI-safety literature. Project-specific remainder is narrowed to an unvalidated incremental-value test of symmetric power-reversal operational variables.",
+    "basis_head": "89ddfbca19f9ca44bd757d04c27d4cbc961463cd",
+    "source_artifact": "PRIOR_ART_SAFETY_GOVERNANCE_CROSSWALK.md",
     "state_commit": "RESOLVE_FROM_GIT_HISTORY_AFTER_WRITE",
-    "scientific_support": "NIST CFTT program, deleted-file recovery specification, and raw-test framework"
+    "scientific_support": "Primary/high-authority literature and accident investigation reports listed in the crosswalk."
   },
   "human_only_gates": [
     "contracts_terms_ip_license_rights_changes",
@@ -216,7 +231,7 @@
     },
     "note": "Both language mirrors and the research map preserve the independent NIST standards boundary, strongest counterexample, MODIFY decision, nonclaim, power-reversal constraint, and rollback condition. State-write completion requires post-write read-back."
   },
-  "next_checkpoint": "F003: seek an empirical/historical holdout with blinded or item-level beneficiary-direction labels, a bounded denominator, and characterized selection/recovery. Use NIST CFTT only to validate the technical recovery layer; do not count it as direction calibration. F001 remains externally gated.",
+  "next_checkpoint": "F004: preregister a blinded historical holdout test comparing established prior-art baseline variables against Project-specific power-reversal/autonomy-audit-exit-recovery variables. KILL novelty if no reliable incremental held-out value. F001 remains externally gated; F003 remains a separate historical-state identification frontier.",
   "current_public_head_semantics": "Head observed immediately before this state-file write. The commit containing this file must be resolved from Git history because a Git-tracked file cannot self-embed its own containing commit hash without changing that hash.",
   "resolved_process_findings": [
     {
@@ -229,17 +244,18 @@
     }
   ],
   "last_checkpoint_result": {
-    "checkpoint": "F003 independent recovery-standard boundary test",
-    "decision": "MODIFY_SEPARATE_RECOVERY_CONFORMANCE_FROM_DIRECTION_IDENTIFICATION",
+    "checkpoint": "F004 cross-domain safety/governance prior-art boundary",
+    "decision": "MODIFY_BROAD_NOVELTY_REJECTED_HOLD_INCREMENTAL_OPERATIONAL_REMAINDER",
     "performed": [
-      "Read current public continuity protocol and state",
-      "Checked NIST CFTT primary program, deleted-file recovery specification, and raw-test framework",
-      "Compared technical expected results with optional content-estimation limits",
-      "Updated both language mirrors and research map"
+      "Compared Project framing against cybernetics, organizational safety, regulatory capture, automation, and AI-safety prior art",
+      "Mapped Challenger, Therac-25, Columbia, Fukushima, and Boeing 737 MAX as historical structural analogues",
+      "Separated historical similarity from scientific validation",
+      "Defined a preregistered blinded holdout kill test for Project-specific incremental value",
+      "Published source/originator attribution and novelty boundaries"
     ],
-    "result": "A validated recovery pipeline can reduce technical measurement error but does not observe semantic beneficiary direction. NIST CFTT is retained as a recovery-layer control and rejected as an H3 direction-calibration holdout.",
-    "strongest_counterexample": "A future benchmark could become admissible if it jointly supplies blinded direction labels, a bounded target population, and a characterized selection mechanism; the present finding does not establish dataset absence.",
-    "power_reversal": "Controller and investigator are equally barred from converting tool trust into claims about unobserved content. Raw tests, labels, denominator, and missingness assumptions remain separately auditable."
+    "result": "Most broad mechanisms are prior art. The only retained scientific candidate is incremental value from the joint symmetric operationalization; it remains unvalidated.",
+    "strongest_counterexample": "A broad cross-domain synthesis may feel novel while adding zero predictive information once known variables such as complexity, coupling, voice safety, evaluator independence, information flow, redundancy, and automation responsibility are included.",
+    "power_reversal": "Neither controller nor controlled actor receives a self-validating exemption. Evidence preservation, appeal/contestability, proportional restriction, and rollback are applied symmetrically while preserving actual differences in capability, responsibility, legal authority, and harm."
   },
   "resolved_research_findings": [
     {
@@ -263,4 +279,4 @@
       "rollback": "Reopen broad novelty only if blinded held-out evidence shows incremental classification or prediction beyond the cited baselines."
     }
   ]
-}
+}\n
