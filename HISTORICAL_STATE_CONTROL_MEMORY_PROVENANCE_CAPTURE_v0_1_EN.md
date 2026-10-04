@@ -318,3 +318,39 @@ The IRS/TIGTA case remains **UNRESOLVED_DIRECTION_PARTIALLY_CENSORED**, but the 
 
 The earlier wording remains above as provenance. It correctly blocked unjustified extrapolation in the IRS case, but overgeneralized from unknown coverage to non-identification. This correction is falsified if an explicit, testable missingness model identifies the directional query from the observed and recovered data.
 
+## IRS query-level identifiability audit
+
+**Target estimand:** Let the target population be all claim-relevant Lerner e-mails in the investigated 2010–2011 interval that would bear on beneficiary direction. For each record, let (D=-1) mean controller-adverse, (D=0) neutral, and (D=+1) controller-favoring. The directional estimand is (	heta=P(D=+1)-P(D=-1)). Let (R=1) denote that a record survived, was recovered, and entered the observable investigative corpus.
+
+### Minimal missingness graph
+
+The public record supports storage/source variables affecting recovery: server or local-drive location, tape membership, overwrite or destruction, and the recovery path. Human preservation or destruction actions may also affect (R). The strategic hypothesis permits (D) itself, or accountability relevance correlated with (D), to affect those actions and therefore (R).
+
+No checked public evidence blocks the path (D ightarrow R), establishes (D perp R) after conditioning on observed technical variables, supplies a valid instrument/shadow variable, or gives a complete sampling frame. The public summaries do not provide item-level direction counts even for all recovered records.
+
+### Non-identification witness
+
+Construct two full-data worlds that preserve every checked public observation:
+
+- **World A:** every unrecovered claim-relevant message is controller-adverse.
+- **World B:** every unrecovered claim-relevant message is controller-favoring.
+
+Both worlds preserve the 744-tape recovery process, the 1,330 previously unproduced recovered e-mails, the finding that some recovered messages were relevant, the incomplete total record, and TIGTA's reported lack of evidence of purposeful tape erasure. They differ only in unobserved content. Because the missing population size and recovered directional counts are not established, the sign and magnitude of (	heta) can differ across observationally equivalent worlds.
+
+### Bounds
+
+With (Din[-1,1]), but without a defensible denominator for the target missing population or direction counts for the recovered corpus, the public evidence yields only the trivial worst-case interval ([-1,1]). No nontrivial directional bound was derived.
+
+### Decision
+
+**KILL THE IRS CASE AS A DIRECTION-CLASSIFIER CALIBRATION CASE; KEEP IT AS A NON-IDENTIFICATION AND RECOVERY-AUDIT CASE.**
+
+- The case establishes that independent recovery can overturn a practical irrecoverability claim for specific records.
+- It does not estimate H3 sensitivity, specificity, prevalence, or the direction of the unrecovered population.
+- TIGTA's no-evidence finding remains negative evidence about investigated purposeful erasure, not a population-direction estimate.
+- The result is robust to role reversal: neither controller nor investigator may choose the unobserved completion favorable to its position.
+
+### Cheapest next discriminating evidence
+
+Do not accumulate another narrative case without a usable observation frame. The next admissible holdout must expose (1) item-level recovered records or blinded direction codes, (2) a known or bounded target denominator, and (3) a characterized recovery/selection mechanism or valid auxiliary variable. Otherwise it can add recovery history but cannot calibrate direction classification.
+
