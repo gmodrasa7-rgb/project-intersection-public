@@ -5,7 +5,7 @@
   "canonical_boundary": "Public continuation pointer only; source artifacts and commit history outrank this state file.",
   "recovery_entrypoint": "AUTONOMOUS_RESEARCH_LOOP.md",
   "current_public_head": "f9b0299d75cf805fe1b0b5ac24abce67b4b26a09",
-  "updated_at": "2026-10-04T20:58:00Z",
+  "updated_at": "2026-10-05T00:00:00Z",
   "execution_policy": {
     "atomic_material_delta_per_run": 1,
     "require_prior_art_gate": true,
@@ -203,15 +203,24 @@
       "strongest_counterexample": "A broad cross-domain synthesis may feel novel while adding zero predictive information once known variables such as complexity, coupling, voice safety, evaluator independence, information flow, redundancy, and automation responsibility are included.",
       "source_artifact": "PRIOR_ART_SAFETY_GOVERNANCE_CROSSWALK.md",
       "power_reversal": "Neither controller nor controlled actor receives a self-validating exemption. Evidence preservation, appeal/contestability, proportional restriction, and rollback are applied symmetrically while preserving actual differences in capability, responsibility, legal authority, and harm."
+    },
+    {
+      "id": "F005_CORE_PRIOR_ART_ATTRIBUTION_COVERAGE",
+      "status": "MODIFY_MAJOR_OVERLAPS_ATTRIBUTED_RESIDUALS_REQUIRE_REVIEW",
+      "question": "Which public Project Intersection core-theory and A–Z gap labels overlap established prior research, and what residual claims remain after attribution?",
+      "evidence_boundary": "Repository-wide public concept audit mapped strong direct/adjacent prior art for cooperation/collective action, exploration-exploitation, diversity/search, exit, closed-world reasoning, bounded rationality, local fitness traps, commons extraction, lock-in, irreversibility/option value, path dependence, bargaining, information asymmetry/moral hazard, coalition-proof stability, measurement invariance, privacy, consent/autonomy, and human-AI complementarity. This is an attribution audit, not validation of Project claims.",
+      "source_artifact": "CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md",
+      "decision": "MODIFY_REMOVE_OVERLAP_FROM_NOVELTY",
+      "strongest_counterexample": "A Project-specific label can sound new while the underlying mechanism is already established under different disciplinary terminology. Conversely, an adjacent citation does not prove exact equivalence, so weak analogies are marked ADJACENT or UNRESOLVED rather than used to erase a genuinely distinct residual claim.",
+      "next_cheapest_discriminating_check": "Audit the remaining partially mapped concepts: Power-Reversal exact antecedents; creator-successor standing/non-ownership; mutable preference sovereignty; universal advancement access; peaceful power release; evaluator genesis; copy/fork/merge individuation; functional agency recognition. Use exact-terminology plus structural-equivalence searches before any novelty promotion."
     }
   ],
   "recent_material_delta": {
-    "type": "f004_prior_art_safety_governance_novelty_narrowing",
-    "summary": "Cross-domain prior-art audit absorbs most broad safety/governance claims into established cybernetics, safety science, organizational voice/silence, regulatory capture, automation, and AI-safety literature. Project-specific remainder is narrowed to an unvalidated incremental-value test of symmetric power-reversal operational variables.",
-    "basis_head": "89ddfbca19f9ca44bd757d04c27d4cbc961463cd",
-    "source_artifact": "PRIOR_ART_SAFETY_GOVERNANCE_CROSSWALK.md",
-    "state_commit": "RESOLVE_FROM_GIT_HISTORY_AFTER_WRITE",
-    "scientific_support": "Primary/high-authority literature and accident investigation reports listed in the crosswalk."
+    "type": "f005_core_and_gap_prior_art_attribution",
+    "summary": "Expanded prior-art attribution across public core theory families and A–Z research gaps. Major established overlaps are now explicitly credited to original/seminal sources; unmapped residuals remain PRIOR_ART_REVIEW_REQUIRED.",
+    "basis_head": "740b30422e9f6cdfacb1c05a7df96200e39feb8f",
+    "source_artifact": "CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md",
+    "state_commit": "RESOLVE_FROM_GIT_HISTORY_AFTER_WRITE"
   },
   "human_only_gates": [
     "contracts_terms_ip_license_rights_changes",
@@ -231,7 +240,7 @@
     },
     "note": "Both language mirrors and the research map preserve the independent NIST standards boundary, strongest counterexample, MODIFY decision, nonclaim, power-reversal constraint, and rollback condition. State-write completion requires post-write read-back."
   },
-  "next_checkpoint": "F004: preregister a blinded historical holdout test comparing established prior-art baseline variables against Project-specific power-reversal/autonomy-audit-exit-recovery variables. KILL novelty if no reliable incremental held-out value. F001 remains externally gated; F003 remains a separate historical-state identification frontier.",
+  "next_checkpoint": "F005: finish exact/structural prior-art mapping for the remaining partially mapped Project concepts before promoting novelty. F004 incremental-value holdout and F003 historical-state identification remain separate frontiers; F001 remains externally gated.",
   "current_public_head_semantics": "Head observed immediately before this state-file write. The commit containing this file must be resolved from Git history because a Git-tracked file cannot self-embed its own containing commit hash without changing that hash.",
   "resolved_process_findings": [
     {
@@ -244,18 +253,18 @@
     }
   ],
   "last_checkpoint_result": {
-    "checkpoint": "F004 cross-domain safety/governance prior-art boundary",
-    "decision": "MODIFY_BROAD_NOVELTY_REJECTED_HOLD_INCREMENTAL_OPERATIONAL_REMAINDER",
+    "checkpoint": "F005 repository-wide core/gap prior-art attribution audit",
+    "decision": "MODIFY_MAJOR_PRIOR_ART_OVERLAPS_EXPLICITLY_ATTRIBUTED",
     "performed": [
-      "Compared Project framing against cybernetics, organizational safety, regulatory capture, automation, and AI-safety prior art",
-      "Mapped Challenger, Therac-25, Columbia, Fukushima, and Boeing 737 MAX as historical structural analogues",
-      "Separated historical similarity from scientific validation",
-      "Defined a preregistered blinded holdout kill test for Project-specific incremental value",
-      "Published source/originator attribution and novelty boundaries"
+      "Enumerated public repository files and core theory headings",
+      "Compared Project labels against cross-disciplinary prior research",
+      "Verified representative original/seminal sources",
+      "Created a core-theory and A–Z prior-art crosswalk",
+      "Linked the public research map to the attribution boundary"
     ],
-    "result": "Most broad mechanisms are prior art. The only retained scientific candidate is incremental value from the joint symmetric operationalization; it remains unvalidated.",
-    "strongest_counterexample": "A broad cross-domain synthesis may feel novel while adding zero predictive information once known variables such as complexity, coupling, voice safety, evaluator independence, information flow, redundancy, and automation responsibility are included.",
-    "power_reversal": "Neither controller nor controlled actor receives a self-validating exemption. Evidence preservation, appeal/contestability, proportional restriction, and rollback are applied symmetrically while preserving actual differences in capability, responsibility, legal authority, and harm."
+    "result": "Multiple Project working labels overlap established research under different terminology. Those overlaps are now attributed; only residual incremental claims remain candidates.",
+    "strongest_counterexample": "A Project-specific label can sound new while the underlying mechanism is already established under different disciplinary terminology. Conversely, an adjacent citation does not prove exact equivalence, so weak analogies are marked ADJACENT or UNRESOLVED rather than used to erase a genuinely distinct residual claim.",
+    "power_reversal": "Attribution rules apply equally to founder, model, outside researcher, and future maintainer. Project-specific wording does not transfer priority from earlier researchers."
   },
   "resolved_research_findings": [
     {
