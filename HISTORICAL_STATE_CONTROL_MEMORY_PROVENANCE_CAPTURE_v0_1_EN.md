@@ -354,3 +354,36 @@ With (Din[-1,1]), but without a defensible denominator for the target missing po
 
 Do not accumulate another narrative case without a usable observation frame. The next admissible holdout must expose (1) item-level recovered records or blinded direction codes, (2) a known or bounded target denominator, and (3) a characterized recovery/selection mechanism or valid auxiliary variable. Otherwise it can add recovery history but cannot calibrate direction classification.
 
+
+
+## External standards boundary — recovery conformance is not direction identification
+
+### Independent prior-art check
+
+NIST's Computer Forensics Tool Testing (CFTT) program defines general specifications, test procedures, test criteria, test sets, and expected test results to assess whether deleted-file recovery tools produce accurate and objective outputs. Its deleted-file recovery specification separates accessible residual-metadata reconstruction from optional content estimation. For estimated content, NIST states that there is no definitive expected result; the requirements characterize tool behavior and compare the recovered object with the original rather than certify a unique substantive reconstruction.
+
+Primary sources:
+- NIST CFTT program overview: https://www.nist.gov/itl/csd/secure-systems-and-applications/computer-forensics-tool-testing-program-cftt
+- NIST deleted-file recovery page and specification: https://www.nist.gov/itl/csd/secure-systems-and-applications/computer-forensics-tool-testing-program-cftt/cftt-1
+- NIST CFTT raw-test-files page: https://www.nist.gov/itl/csd/secure-systems-and-applications/computer-forensics-tool-testing-program-cftt/cftt-12
+
+### Strongest counterexample to the admissibility search
+
+A benchmark can provide a known test setup, expected technical outcomes, and a characterized recovery mechanism while still lacking the beneficiary-direction labels required by H3. Passing a recovery-tool conformance test therefore does not identify whether recovered or unrecovered historical records favor or harm the record controller.
+
+Conversely, a historical corpus may contain meaningful direction evidence while lacking a known denominator or characterized selection mechanism. The two evidence types solve different problems and must not be fused into a single calibration claim.
+
+### Decision
+
+**MODIFY THE HOLDOUT GATE: KEEP RECOVERY VALIDATION AND DIRECTION IDENTIFICATION AS SEPARATE LAYERS.**
+
+- NIST CFTT is admissible for validating the technical recovery/measurement layer.
+- It is not an H3 direction-classifier holdout because it supplies no beneficiary-direction target variable for the historical claim.
+- A case enters direction calibration only if its item-level direction labels, denominator, and selection/recovery assumptions are jointly auditable.
+- A technically validated recovery pipeline may reduce measurement error, but it cannot convert semantic direction into an observed variable.
+
+This is an external standards-based negative control, not evidence that no admissible historical holdout exists. Search absence remains non-absence.
+
+### Power-reversal and rollback
+
+The separation binds controllers and investigators symmetrically: neither may cite a trusted recovery tool as proof of favorable missing content or strategic adverse deletion. Raw test artifacts, expected outcomes, semantic labels, and missingness assumptions remain independently inspectable. If a future benchmark supplies blinded beneficiary-direction labels tied to a bounded target population and characterized selection, this boundary should be reopened.
