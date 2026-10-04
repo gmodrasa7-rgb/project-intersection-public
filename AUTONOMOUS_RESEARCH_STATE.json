@@ -4,7 +4,7 @@
   "public_repository": "gmodrasa7-rgb/project-intersection-public",
   "canonical_boundary": "Public continuation pointer only; source artifacts and commit history outrank this state file.",
   "recovery_entrypoint": "AUTONOMOUS_RESEARCH_LOOP.md",
-  "current_public_head": "5e088a0f05d5aea17b472583eab85e5e56bf8a67",
+  "current_public_head": "47f01fb087d8a5f10126d071992fa373f9d497b3",
   "updated_at": "2026-10-04T14:40:00+09:00",
   "execution_policy": {
     "atomic_material_delta_per_run": 1,
@@ -53,8 +53,9 @@
     "destructive_source_deletion"
   ],
   "last_read_back": {
-    "status": "PENDING_THIS_BOOTSTRAP_WRITE",
-    "verified_commit": null
+    "status": "VERIFIED_THROUGH_PARENT_COMMIT",
+    "verified_commit": "47f01fb087d8a5f10126d071992fa373f9d497b3",
+    "note": "Protocol/state files were read back successfully and the public governance audit passed. This pointer intentionally records the verified parent state; the commit that updates this JSON will become the next head."
   },
-  "next_checkpoint": "Bootstrap public autonomous-continuity files, link them from README and governance audit, verify GitHub Actions pass, then let the hourly autonomous research task resume from F001/F002 without requiring user reconstruction."
+  "next_checkpoint": "At the next unattended run, read AUTONOMOUS_RESEARCH_LOOP.md and this state first. Repair any persistence/provenance/test failure before research; otherwise attack F001 unless a higher-information-value unresolved frontier is evidenced. Make at most one material delta, persist it, read it back, run/inspect required checks, then update this resume pointer without requiring user reconstruction."
 }
