@@ -14,7 +14,7 @@ This document defines the smallest public specification needed to test E007 with
 A reimplementation may use this specification and may know the published headline result. To qualify as `INDEPENDENT_IMPLEMENTATION`, the reviewer should:
 
 - write new model, solver, sweep, and tests without copying/importing the released E007 Python implementation or tests;
-- disclose whether the published 72/31/17 result was seen before implementation;
+- disclose whether the published headline counts were seen before implementation (current corrected reference: 72/36/17; historical 72/31/17 was superseded after the post-strike history-encoding correction);
 - preserve a commit/archive identifier for the independent code and record language/runtime/dependencies;
 - report semantic deviations rather than silently adjusting the specification until the published count appears;
 - publish mismatches as results, not as implementation failures by default.
