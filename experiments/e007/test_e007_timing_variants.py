@@ -137,3 +137,21 @@ def test_execute_first_solver_runs_both_role_orders_for_full_horizon():
 
     assert len(a_first[2]) == 2 * p.horizon
     assert len(b_first[2]) == 2 * p.horizon
+
+
+
+def test_execute_first_history_marks_poststrike_inactive_follower_as_wait():
+    p = m.Params(
+        horizon=1,
+        attack_damage=3,
+        sabotage_damage=0,
+        attack_reward=10.0,
+        enforcement_penalty=0.0,
+    )
+    s = m.State(monitoring=False, enforcement=False)
+
+    ua, ub, history = tv.solve_sequential_execute_first(s, p, leader="A")
+
+    assert ua > 0.0
+    assert ub == 0.0
+    assert history == ("attack", "wait")
