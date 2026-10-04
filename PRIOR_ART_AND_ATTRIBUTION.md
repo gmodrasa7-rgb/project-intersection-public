@@ -74,3 +74,16 @@ Broad claims that combine complexity, warning suppression, evaluator dependence,
 The remaining candidate is narrower and unresolved: whether Project Intersection's symmetric power-reversal operationalization — including the candidate invariant `AUTONOMY_GAIN <= COUNTERPARTY_AUDIT_EXIT_RECOVERY_GAIN` and repeated benefit/burden divergence tracking — adds reproducible held-out discrimination or prediction beyond established baselines.
 
 Until such incremental value is demonstrated, this remainder is **HOLD / CANDIDATE**, not established novelty.
+
+
+## Core theory and open-gap attribution audit — 2026-10-05
+
+A repository-wide concept audit found additional direct or adjacent prior art for the public core-theory families and A–Z research gaps.
+
+[Core Theory & Open-Gap Prior-Art Crosswalk](CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md)
+
+Newly explicit attribution includes Olson, Trivers, Axelrod & Hamilton, Ostrom, March, Hong & Page, Reiter, Simon, Campbell, Hardin, Holling, Arrow & Fisher, Fisher & Krutilla, Arthur, Nash, Akerlof, Holmström, Meredith, Nissenbaum, Jarrahi, and Bernheim–Peleg–Whinston.
+
+This update does not imply that these authors endorse Project Intersection. It means that Project claims overlapping their established constructs are not counted as Project-original novelty.
+
+Unmapped Project labels remain PRIOR_ART_REVIEW_REQUIRED; absence of a located source is not treated as evidence of originality.
