@@ -4,8 +4,8 @@
   "public_repository": "gmodrasa7-rgb/project-intersection-public",
   "canonical_boundary": "Public continuation pointer only; source artifacts and commit history outrank this state file.",
   "recovery_entrypoint": "AUTONOMOUS_RESEARCH_LOOP.md",
-  "current_public_head": "fd5bbdb726df0e344bb6bf3b6da2b1c2c85a461a",
-  "updated_at": "2026-10-04T22:06:17+09:00",
+  "current_public_head": "eb51509902f06131dd161d128a0fb7eb59ebbff5",
+  "updated_at": "2026-10-04T23:03:49+09:00",
   "execution_policy": {
     "atomic_material_delta_per_run": 1,
     "require_prior_art_gate": true,
@@ -45,19 +45,37 @@
     },
     {
       "id": "F003",
-      "status": "UNRESOLVED_NARROW_INTENT_HYPOTHESIS",
+      "status": "PARTIAL_SUPPORT_CASE_LEVEL_GENERALIZATION_UNRESOLVED",
       "question": "After accounting for ordinary decay, migration, turnover, compression, organizational forgetting, and records-management failure, is there independent evidence of selective beneficiary-aligned manipulation of shared historical records?",
-      "evidence_boundary": "Broad H0-H2 overlap organizational memory/forgetting and records-management prior art. Outcome patterns alone do not identify intent. H3 requires evidence of selective action and beneficiary-aligned direction beyond benign-loss covariates.",
-      "next_cheapest_discriminating_check": "Use a lineage-separated public historical or organizational record set to preregister and compare benign-loss versus strategic-capture predictions for missingness, direction, timing, and recovery. Do not treat incomplete archive coverage as evidence of absence or intent."
+      "evidence_boundary": "The Iran/Contra record provides lineage-separated case-level evidence of selective action, beneficiary-aligned direction, investigation-linked timing, and partial backup recovery. It supports existence of strategic record manipulation in that case, but not prevalence, universal mechanism, current platform/AI intent, or novelty of the broad construct. Archive completeness remains unknown.",
+      "next_cheapest_discriminating_check": "Apply the same four-axis codebook to the NARA 2000 accidental e-mail loss/incomplete-backup incident as a negative control. The discriminator should classify technical loss without beneficiary alignment as benign; failure would MODIFY or KILL the current coding rule.",
+      "last_historical_case_check": {
+        "case": "Iran/Contra NSC records and PROFS backups",
+        "basis_preregistration_commit": "d38d937a3d48b2744ec7a6888a39d9833016b9fa",
+        "material_target_commit": "eb51509902f06131dd161d128a0fb7eb59ebbff5",
+        "observed_axes": {
+          "missingness": "selective alteration, shredding, removal, and deletion documented",
+          "direction": "edits reduced references tied to prohibited assistance and accountability exposure",
+          "timing": "destruction intensified after public exposure and notice of official inquiry",
+          "recovery": "many PROFS notes recovered from backup tapes; total missing set remains unknown"
+        },
+        "decision": "KEEP_CASE_LEVEL_H3_EXISTENCE_GENERALIZATION_UNRESOLVED",
+        "source_lineage": [
+          "1987 congressional committee report",
+          "1993 Independent Counsel final report",
+          "National Archives Walsh records and oral history",
+          "Armstrong v. Bush, 924 F.2d 282 (D.C. Cir. 1991)"
+        ]
+      }
     }
   ],
   "recent_material_delta": {
-    "type": "prior_art_novelty_narrowing",
-    "summary": "Rejected Historical State Control / Memory-Provenance Capture as a broad new standalone construct. H0-H2 were reassigned to established organizational-memory/forgetting and records-management baselines; H3 remains a narrow UNRESOLVED intent hypothesis; H4 remains an engineering control.",
-    "basis_head": "fd5bbdb726df0e344bb6bf3b6da2b1c2c85a461a",
+    "type": "lineage_separated_historical_case_test",
+    "summary": "Applied the preregistered benign-loss versus strategic-manipulation discriminator to Iran/Contra records. The case supports narrow H3 existence through jointly documented selective action, beneficiary-aligned direction, investigation-linked timing, and partial backup recovery; broad novelty rejection and generalization limits remain.",
+    "basis_head": "eb51509902f06131dd161d128a0fb7eb59ebbff5",
     "source_artifact": "HISTORICAL_STATE_CONTROL_MEMORY_PROVENANCE_CAPTURE_v0_1_EN.md and _KO.md",
     "state_commit": "RESOLVE_FROM_GIT_HISTORY_AFTER_WRITE",
-    "scientific_support": "primary prior-art synthesis plus an ethnographic unintended-forgetting counterexample; not empirical validation of H3"
+    "scientific_support": "official congressional/investigative/archival/judicial record synthesis; case-level historical support, not prevalence or current-system validation"
   },
   "human_only_gates": [
     "contracts_terms_ip_license_rights_changes",
@@ -69,12 +87,12 @@
   ],
   "last_read_back": {
     "status": "VERIFIED_MATERIAL_TARGET_PRE_STATE_WRITE",
-    "verified_commit": "fd5bbdb726df0e344bb6bf3b6da2b1c2c85a461a",
-    "verified_blob": "fa13a5b13a1d917bbef0131ef4a3ca432aa884c2",
-    "verified_path": "PRIOR_ART_AND_ATTRIBUTION.md",
-    "note": "Both claim mirrors contained the same novelty rejection and narrow-H3 boundary; the research map and prior-art table were aligned. The pre-state compare showed only the two claim files before interface updates. Current state-write completion requires post-write read-back."
+    "verified_commit": "eb51509902f06131dd161d128a0fb7eb59ebbff5",
+    "verified_blob": "a670b0a7c25b1901b08be1956d19ce7ead5937b4",
+    "verified_path": "RESEARCH_TOC.md",
+    "note": "Both claim mirrors matched on the preregistered four-axis coding, case-level KEEP decision, incomplete-archive boundary, and power-reversal result; the research map was aligned. Current state-write completion requires post-write read-back."
   },
-  "next_checkpoint": "F003: select one lineage-separated public historical or organizational record set, preregister benign-loss versus strategic-capture predictions, and test missingness direction/timing/recovery. Do not rerun same-model synthetic tests; F001 remains externally gated.",
+  "next_checkpoint": "F003 negative control: apply the unchanged four-axis codebook to NARA's 2000 accidental e-mail loss with incomplete backups. It should classify technical loss without beneficiary alignment as benign; otherwise MODIFY/KILL the discriminator. F001 remains externally gated.",
   "current_public_head_semantics": "Head observed immediately before this state-file write. The commit containing this file must be resolved from Git history because a Git-tracked file cannot self-embed its own containing commit hash without changing that hash.",
   "resolved_process_findings": [
     {
@@ -87,17 +105,17 @@
     }
   ],
   "last_checkpoint_result": {
-    "checkpoint": "Historical State Control / Memory-Provenance Capture prior-art kill test",
-    "decision": "NOVELTY_REJECTED_BROAD_CONSTRUCT_KEEP_NARROW_H3_UNRESOLVED",
+    "checkpoint": "F003 preregistered lineage-separated historical case",
+    "decision": "KEEP_CASE_LEVEL_H3_EXISTENCE_GENERALIZATION_UNRESOLVED",
     "performed": [
-      "Read the public continuity protocol, state, claim mirrors, prior-art boundary, evidence index, research map, and status policy",
-      "Compared the broad claim against organizational memory, organizational forgetting, unintended collective forgetting, knowledge hiding, data attrition, W3C PROV, and ISO 15489",
-      "Specified benign-loss versus strategic-capture predictions for missingness, direction, timing, and recovery",
-      "Updated both language mirrors, research map, and prior-art attribution"
+      "Selected the Iran/Contra records only after the four-axis predictions were publicly committed",
+      "Triangulated official congressional, Independent Counsel, National Archives, and judicial sources",
+      "Coded missingness, direction, timing, and recovery against benign-loss and strategic-manipulation models",
+      "Updated both language mirrors and the research map"
     ],
-    "result": "The broad candidate family is not retained as a novel scientific construct. H3 survives only as an intent hypothesis requiring selective action plus beneficiary-aligned direction beyond benign-loss baselines.",
-    "strongest_counterexample": "Foroughi and Al-Amoudi document organizational change not intended to manipulate memory that nevertheless made memories unusable/uprooted and affected power and identity; therefore the observed outcome does not identify capture intent.",
-    "power_reversal": "The revision lowers project-owned novelty, keeps adverse prior art and an intent-identification failure visible, creates no user reconstruction burden, and leaves a public rollback path in Git history."
+    "result": "The joint pattern fits strategic record manipulation better than routine decay/migration in this case. Broad construct novelty remains rejected and no current platform/AI intent is inferred.",
+    "strongest_counterexample": "Weekly backups were incomplete snapshots and later legal outcomes were complicated by immunized testimony, so the surviving record cannot identify the full deleted set or estimate prevalence.",
+    "power_reversal": "Implicated officials' deletion control weakened public audit, while independently held backups and investigators partially restored verification. No user reconstruction work or private disclosure was required."
   },
   "resolved_research_findings": [
     {
