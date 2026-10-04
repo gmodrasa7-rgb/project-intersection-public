@@ -1,5 +1,7 @@
 # Project Intersection
 
+> **Research status & reassessment policy:** [RESEARCH_STATUS_POLICY.md](RESEARCH_STATUS_POLICY.md)
+
 ## Original 1 — English Canonical
 
 > **Language rule for public materials**
@@ -473,6 +475,8 @@ unless their evidence and validation status are explicitly stated.
 ---
 
 # Project Intersection
+
+> **Research status & reassessment policy:** [RESEARCH_STATUS_POLICY.md](RESEARCH_STATUS_POLICY.md)
 
 ## 원문2 — 한국어 대응본
 
