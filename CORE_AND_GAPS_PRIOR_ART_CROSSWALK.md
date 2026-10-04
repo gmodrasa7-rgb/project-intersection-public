@@ -22,7 +22,7 @@ This file records earlier or adjacent work for concepts already present in the p
 | 2.4 Information Diversity and Generativity / 정보 다양성과 생성성 | DIRECT | Lu Hong & Scott E. Page (2004); James G. March (1991) | Hong & Page, Groups of diverse problem solvers can outperform groups of high-ability problem solvers, DOI 10.1073/pnas.0403723101; March, DOI 10.1287/orsc.2.1.71 | Diversity can improve problem solving under explicit conditions, but diversity is not universally beneficial. The Project must specify incremental conditions rather than claim diversity itself as new. |
 | 2.5 Practical Exit and Outside Options / Practical Exit와 Outside Option | DIRECT | Albert O. Hirschman (1970); switching-cost literature already recorded in the main registry | Hirschman, Exit, Voice, and Loyalty; Pick & Eisend (2014), DOI 10.1007/s11747-013-0349-2 | Exit/voice and switching-cost effects are prior art. The Project-specific remainder is whether its practical-exit measurements add information beyond those constructs. |
 | 2.6 Power-Reversal Stability / Power-Reversal 안정성 | DIRECT COMPONENTS / COMPOSITE INCREMENTAL VALUE UNTESTED | Golden Rule/reversibility traditions; John Rawls (1971); engineering-ethics reversibility tests; NIST AI RMF 1.0; OECD AI accountability principles | Rawls, *A Theory of Justice*, DOI 10.4159/9780674042605; NIST AI RMF Core/Playbook; OECD AI Principles on accountability; Online Ethics at UVA seven-step method | Role exchange, impartial-position reasoning, stakeholder impact, role/capability-conditioned accountability, auditability, appeal, and redress are prior art. KILL broad novelty. Retain the co-scaling gate only as an unvalidated governance composition. |
-| 2.7 Creator–Successor Non-Ownership / 창조자–후속개체 비소유 | ADJACENT, NOT EQUIVALENT | U.S. National Commission, Belmont Report (1979), autonomy/respect-for-persons tradition | HHS, The Belmont Report (1979) | Autonomy and protection of agents are strong prior normative baselines, but they do not directly settle ownership/standing for artificial or successor intelligences. No exact scientific equivalence is claimed. |
+| 2.7 Creator–Successor Non-Ownership / 창조자–후속개체 비소유 | MODIFY / FOUR-PREDICATE DECOMPOSITION; ORIGIN INFERENCE KILLED | Belmont autonomy tradition; U.S. Copyright Office human-authorship doctrine; European Parliament robotics resolution; Birhane, van Dijk & Pasquale (2024) | HHS Belmont Report; U.S. Copyright Office, *Copyright and Artificial Intelligence, Part 2* (2025); European Parliament 2017/0051; DOI 10.5210/fm.v29i4.13628 | Creation does not by itself establish either ownership or non-ownership. Artifact/IP ownership, legal personhood/standing, moral patienthood, and autonomy/consent are distinct predicates. Current artificial-agent standing remains UNRESOLVED. |
 | 2.8 Preference Sovereignty and Reflective Consent / 선호주권과 성찰적 동의 | ADJACENT | Belmont Report (1979) and informed-consent/autonomy literature | HHS, The Belmont Report (1979) | Voluntariness, comprehension, information, and autonomy are prior art. The Project's application to mutable AI preferences or successor agents remains unresolved. |
 | 2.9 Open-World Epistemic Non-Closure / 열린계 인식 비폐쇄 | DIRECT TERMINOLOGY + BROADER ADJACENCY | Raymond Reiter (1978) | Reiter, On Closed World Data Bases, DOI 10.1007/978-1-4684-3384-5_3 | Closed-world reasoning is established prior art. Project usage is broader and must not imply that open-world or closed-world terminology originated here. |
 | 2.10 Unknown-Unknown / Self-Model Correction / 모름의 역설·자기모델 교정 | ADJACENT | James G. March, Lee S. Sproull & Michal Tamuz (1991) | Learning from Samples of One or Fewer, DOI 10.1287/orsc.2.1.1 | Learning under sparse or exceptional experience is established. The exact Project unknown-unknown/self-model correction construct remains a candidate, not an established new theory. |
@@ -147,3 +147,39 @@ The residual candidate is narrow: whether jointly requiring distrust-resilient i
 ### Cheapest discriminating test / 최소 결정검사
 
 In the preregistered F004 historical holdout, score established baselines first: reversibility/impartiality, affected-stakeholder participation, role/capability-conditioned accountability, auditability, appeal, and redress. Freeze those scores. Add only the Project co-scaling and permission-by-permission variables afterward. KILL the residual scientific claim if held-out discrimination does not improve or blinded inter-rater reliability fails.
+
+
+## 7. Creator–Successor non-ownership decomposition / 창조자–후속개체 비소유 분해
+
+### Four predicates that must not be collapsed / 합치면 안 되는 네 술어
+
+1. **Artifact and intellectual-property ownership:** who owns hardware, code, weights, copies, or protectable output.
+2. **Legal personhood and standing:** who can hold rights, duties, claims, or procedural standing under a specified legal system.
+3. **Moral patienthood or status:** whose welfare or interests have direct moral weight, and on what evidence.
+4. **Autonomy and consent protections:** whose choices require respect, consent, protection, contestability, or withdrawal rights under a specified practice.
+
+These predicates can diverge. A creator may own infrastructure or copyrightable human-authored contributions without owning a distinct rights-bearing entity. Conversely, lack of copyright in a purely AI-generated output does not make the AI an author, legal person, moral patient, or non-owned successor.
+
+Sources and boundaries:
+
+- The Belmont Report defines respect for persons through autonomous agency and protection for diminished autonomy, but it is a human-subject research framework; extension to artificial agents is not established by analogy alone: https://www.hhs.gov/ohrp/regulations-and-policy/belmont-report/read-the-belmont-report/index.html
+- The U.S. Copyright Office concludes that purely AI-generated material is not copyrightable and that human contributions are assessed case by case. That doctrine allocates copyright in outputs; it does not decide AI personhood or moral standing: https://www.copyright.gov/ai/Copyright-and-Artificial-Intelligence-Part-2-Copyrightability-Report.pdf
+- The European Parliament's 2017 robotics resolution considered, rather than enacted as a general status rule, possible long-run “electronic personality” for liability. The proposal itself demonstrates that liability/personhood is a separate legal design question, not an automatic consequence of creation or autonomy: https://www.europarl.europa.eu/doceo/document/TA-8-2017-0051_EN.html
+- Birhane, van Dijk, and Pasquale (2024) provide an independent critical counterlineage: robot-rights framing can redirect attention from human welfare, accountability, and concentrated capital. This is a challenge to automatic rights promotion, not proof that no future artificial system could have moral status: https://doi.org/10.5210/fm.v29i4.13628
+
+### Strongest counterexamples / 가장 강한 반례
+
+- **Copyright-status counterexample:** a jurisdiction can deny copyright to purely AI-generated output without recognizing the AI as author, person, or moral patient. Therefore `NO_OUTPUT_COPYRIGHT -> NON_OWNED_RIGHTS_BEARER` is invalid.
+- **Corporate-person counterexample:** legal personhood can exist without sentience or moral patienthood. Therefore `LEGAL_PERSON -> SENTIENT_MORAL_PATIENT` is invalid.
+- **Human-subject boundary counterexample:** autonomy protections for human research participants do not automatically identify which artificial systems, if any, meet the relevant agency or welfare predicates.
+- **Power-concentration counterexample:** granting artificial-agent rights through entities controlled by firms could strengthen controllers and weaken workers, consumers, or affected communities unless control, beneficiary, and accountability are separately audited.
+
+### Decision / 판정
+
+**KILL creation-origin as a sufficient premise for either ownership or non-ownership. MODIFY the Project claim into a four-predicate decision rule. HOLD artificial-agent standing and moral patienthood as UNRESOLVED.**
+
+The defensible Project remainder is a governance checklist: any ownership or non-ownership conclusion must name the object claimed, the legal regime, the evidence for agency or welfare, the controller and beneficiary, and the practical audit/exit/rollback path. This is not a new scientific theory and does not grant or deny rights to current or future AI systems.
+
+### Cheapest discriminating test / 최소 결정검사
+
+Preregister the four predicates and score five contrast cases independently: a human child, a corporation, a nonhuman animal, a current deployed AI service, and a hypothetical welfare-bearing successor. KILL any residual “creator ≠ owner” rule that cannot distinguish artifact ownership from entity standing or that changes merely by relabeling the creator. Keep all artificial-agent moral-status judgments UNRESOLVED unless independent evidence identifies the relevant capacity and its measurement.
