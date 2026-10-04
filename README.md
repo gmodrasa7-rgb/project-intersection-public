@@ -29,7 +29,6 @@ Project Intersection is an independent, falsification-first research program stu
 
 The funding proposition is deliberately testable: support buys **reproducible artifacts, adversarial tests, correction lineage, and lower external verification cost**, not a predetermined favorable conclusion.
 
-> This is a research-funding / sponsorship / partnership brief, not an offer of equity or securities.
 
 ### 원문2 — 한국어 대응본
 
@@ -56,7 +55,6 @@ Project Intersection은 **권력·인센티브·시점·practical exit·복구�
 
 자금지원의 대상은 유리한 결론이 아니다. **재현 가능한 artifact, 적대적 시험, 실패·교정 계보, 외부 검증비용 감소**를 만드는 과정이다.
 
-> 이 안내는 연구비·후원·연구 파트너십용이며 지분·증권 청약문이 아니다.
 
 ---
 
