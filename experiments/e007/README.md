@@ -87,6 +87,12 @@ The intended research loop is:
 
 `claim -> rival -> attack -> failure -> correction -> regression test -> narrower claim`
 
+## Independent reimplementation path / 독립 구현 경로
+
+For a code-lineage-separated test, use [INDEPENDENT_REIMPLEMENTATION_PROTOCOL.md](INDEPENDENT_REIMPLEMENTATION_PROTOCOL.md). It specifies the game, timing variants, solver, classifier, 72-case grid, independence boundary, and required mismatch reporting without requiring private conversation history.
+
+프로젝트 코드를 재사용하지 않는 계보분리 시험은 [독립 구현 프로토콜](INDEPENDENT_REIMPLEMENTATION_PROTOCOL.md)을 사용한다. 비공개 대화 없이 모델·시점규칙·solver·분류기·72조건 격자·불일치 보고기준을 재구성할 수 있게 한다.
+
 ## Stronger evidence still missing
 
 Do not treat E007 as a validated cooperation benchmark while these remain unresolved:
