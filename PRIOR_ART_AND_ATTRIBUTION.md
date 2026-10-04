@@ -21,6 +21,12 @@ Project Intersection은 내부 용어로 다시 이름 붙였다는 이유만으
 | OSS abandonment/survival | Guilherme Avelino; Eleni Constantinou; Marco Tulio Valente; Alexander Serebrenik (2019) | ESEM; DOI 10.1109/ESEM.2019.8870181 | Maintainer/resource/governance factors are not new recovery constructs. |
 | Relicensing and hard forks | Dawn Foster; Matt Germonprez (2026) | Information Systems Journal; DOI 10.1111/isj.70060 | OpenSearch/OpenTofu/Valkey governance and collective-action mechanisms have direct prior analysis. |
 | Fork synchronization | Jiaying Zhu; Lyuye Zhang; Jiahui Wu; Chengyue Liu; Yang Liu (2026) | ISSTA 2026; DOI 10.1145/3832133 | Formal forkability does not itself establish effective recovery or synchronization. |
+| Organizational memory | James P. Walsh; Gerardo R. Ungson (1991) | Academy of Management Review; DOI 10.5465/amr.1991.4278992 | Acquisition, retention, retrieval, use, misuse, and abuse of organizational memory are prior art. |
+| Organizational forgetting | Pablo Martin de Holan; Nelson Phillips; Thomas Lawrence (2004) | Strategic Organization; DOI 10.1177/1476127004047620; MIT Sloan Management Review, *Managing Organizational Forgetting* | Memory decay, capture failure, unlearning, and managed forgetting are prior art. |
+| Unintended collective forgetting | Hamid Foroughi; Ismael Al-Amoudi (2020) | Organization Studies; DOI 10.1177/0170840619830130 | Memory can become unusable or uprooted without manipulative intent and still affect power and identity. |
+| Knowledge hiding | Catherine E. Connelly; David Zweig; Jane Webster; John P. Trougakos (2012) | Journal of Organizational Behavior; DOI 10.1002/job.737 | Intentional concealment must be distinguished from non-sharing, transfer failure, and ordinary loss. |
+| Long-term data attrition | Timothy H. Vines et al. (2014) | PLOS Biology; DOI 10.1371/journal.pbio.1001745 | Record loss can correlate strongly with age without establishing strategic capture. |
+| Provenance and records controls | W3C PROV Working Group (2013); ISO 15489-1:2016 | W3C Recommendations; ISO records-management standard | Provenance, derivation, versioning, access, authenticity, integrity, reliability, and usability are established engineering/records-management concerns. |
 
 ## Current correction
 
