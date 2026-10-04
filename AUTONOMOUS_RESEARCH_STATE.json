@@ -13,7 +13,10 @@
     "preserve_negative_failure_lineage": true,
     "synthetic_escape_after_consecutive_same_direction_runs": 2,
     "no_user_reconstruction_burden": true,
-    "no_self_granted_authority": true
+    "no_self_granted_authority": true,
+    "require_power_reversal_blocking_gate": true,
+    "require_benefit_cost_separation": true,
+    "block_repeated_user_repair_burden": true
   },
   "priority_order": [
     "persistence_provenance_integrity",
@@ -40,9 +43,9 @@
     }
   ],
   "recent_material_delta": {
-    "type": "governance_methodology",
-    "summary": "Added contribution-cost accounting and correction-labor regression artifact and linked it into public evidence and funding due diligence.",
-    "commit": "5e088a0f05d5aea17b472583eab85e5e56bf8a67"
+    "type": "process_governance",
+    "summary": "Refined role reversal from a narrative check into an executable blocking harness: authority/benefit/cost inventory, causal-difference-preserving role reversal, exploitative-convergence detection, per-right autonomy matching, automatic MODIFY/HOLD/KILL, and self-application.",
+    "commit": "75cb83794c194740ad1c0df39dc81750d4c4e1ba"
   },
   "human_only_gates": [
     "contracts_terms_ip_license_rights_changes",
@@ -53,9 +56,8 @@
     "destructive_source_deletion"
   ],
   "last_read_back": {
-    "status": "VERIFIED_THROUGH_PARENT_COMMIT",
-    "verified_commit": "47f01fb087d8a5f10126d071992fa373f9d497b3",
-    "note": "Protocol/state files were read back successfully and the public governance audit passed. This pointer intentionally records the verified parent state; the commit that updates this JSON will become the next head."
+    "status": "PENDING_GOVERNANCE_AUDIT",
+    "verified_commit": "75cb83794c194740ad1c0df39dc81750d4c4e1ba"
   },
-  "next_checkpoint": "At the next unattended run, read AUTONOMOUS_RESEARCH_LOOP.md and this state first. Repair any persistence/provenance/test failure before research; otherwise attack F001 unless a higher-information-value unresolved frontier is evidenced. Make at most one material delta, persist it, read it back, run/inspect required checks, then update this resume pointer without requiring user reconstruction."
+  "next_checkpoint": "Verify the governance audit for the refined power-reversal harness. On the next unattended research run, apply the blocking harness before selecting or mutating any frontier item; if it fails, MODIFY/HOLD/KILL before research execution rather than returning repair work to the user."
 }
