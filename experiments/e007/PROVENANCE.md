@@ -3,7 +3,7 @@
 This directory is an automatically constructed reviewer-safe candidate bundle.
 It is not evidence of real-world safety or external validation.
 
-Source commit: `d7242191f284d713781129c1720e233c7bd4708d`
+Source commit: `4830a7456989ecf94a1ccf0bc333110915b00912`
 
 ## Allowlisted source mapping
 
@@ -23,9 +23,9 @@ Runtime residue such as __pycache__, .pyc, and .pytest_cache is excluded from th
 
 ## Current rerun
 
-Python 3.12.14; pytest 9.1.1; 27 tests passed; 72/36/17 reproduced. Documentation test counts updated from 24 to 26. This is same-implementation computational reproduction, not independent scientific replication. The released E007 directory now has an explicit scoped license: code and requirements.txt under Apache-2.0; project-authored documentation and timing_summary.json under CC BY 4.0. See LICENSE_STATUS.md.
+Python 3.12.14; pytest 9.1.1; 27 tests passed; 72/36/17 reproduced. Earlier documentation/test-count records were stale; the current bundle has 27 passing tests. This is same-implementation computational reproduction, not independent scientific replication. The released E007 directory now has an explicit scoped license: code and requirements.txt under Apache-2.0; project-authored documentation and timing_summary.json under CC BY 4.0. See LICENSE_STATUS.md.
 
-Release changes: scoped license notices/texts and Korean summary added; scientific code and grid unchanged. License decision delegated by the user after power-reversal review.
+Release lineage: the original scoped-license release was followed by the 2026-10-04 post-strike history-encoding correction. The correction changes recorded history semantics, not utilities or the 17/72 classification-sensitive result; the 72-case grid is unchanged. License decision remains scoped to this directory.
 
 
 ## 2026-10-04 history-encoding correction
