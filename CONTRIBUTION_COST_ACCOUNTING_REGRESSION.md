@@ -261,3 +261,48 @@ Before proposing any new metric, build a preregistered crosswalk in which every 
 ### Power-reversal constraint
 
 The instrument must not require the contributor to repeatedly reconstruct evidence that the receiving side already possesses. Evidence collection, provenance preservation, and contradiction logging are receiving-side responsibilities where the receiving side controls the records. No score may convert missing observations into zero cost, no harm, falsehood, or consent.
+
+
+---
+
+## 15. Public-only overlap audit
+
+Decision: **KILL_AS_NEW_METRIC_OR_CONSTRUCT / KEEP_AS_GOVERNANCE_CHECKLIST.**
+
+This audit uses only artifacts already present in the public repository. It does not rely on or disclose private claim wording.
+
+| Residual proposed in Section 14 | Existing public coverage | Decision |
+|---|---|---|
+| repeated correction-labor externalization after acknowledgment | Sections 2 and 5 of this artifact; the human repair-burden test in `RESEARCH_STATUS_POLICY.md` | not a new construct; retain as an auditable failure condition |
+| provenance reset across evaluator, model, personnel, platform, or contract changes | Sections 5 and 7 of this artifact; failure-lineage preservation in `RESEARCH_STATUS_POLICY.md`; the public Historical State Control / Memory-Provenance Capture hypothesis | not a new construct; retain as a specific provenance-capture pathway, still empirically unresolved |
+| practical exit that erases accrued contribution or conditions recognition on further labor | practical-exit coverage in `README.md`, `RESEARCH_TOC.md`, and `RESEARCH_STATUS_POLICY.md`; past-versus-future accounting in Sections 4 and 6 of this artifact | narrower conjunction of two existing axes, not a standalone construct |
+
+### Construct boundary
+
+Generic practical exit asks whether an actor can actually leave without prohibitive dependency, retaliation, or recovery loss. Accrued-contribution continuity asks whether already recognized historical contribution remains attributed and accounted for after exit. These axes are separable:
+
+- exit can be practical while historical contribution is still erased;
+- exit can be impaired even when no prior contribution has been recognized;
+- both can fail together.
+
+Their conjunction may identify a serious governance failure, but conjunction alone is not evidence of a novel scientific construct.
+
+### Strongest counterexample
+
+If a system preserves attribution and accounting for all recognized past contributions after a contributor leaves, then exit does not erase accrued contribution even when the exit process is costly. Conversely, a person can have easy exit while the receiving side later resets provenance. A single score would hide these opposite cases.
+
+### Operational consequence
+
+Do not build a composite fairness, debt, settlement, or exploitation metric from these fields. Record them as separate observations:
+
+1. prior contribution recognized: yes / no / disputed / unobserved;
+2. repeated reconstruction demanded without new uncertainty: yes / no / unobserved;
+3. provenance continuity after role or system change: preserved / narrowed with evidence / reset / unobserved;
+4. practical exit: functional / impaired / unobserved;
+5. post-exit attribution and accounting: preserved / erased / conditional on further labor / unobserved.
+
+Missing observations remain `unobserved`; they are not converted to zero, false, consent, or absence of harm. These fields support governance audit only. They do not determine legal liability, ownership, causal responsibility, compensation amount, or empirical prevalence.
+
+### Falsification and stopping rule
+
+The proposal for a new metric or construct remains **KILL** unless independent data show that a residual field adds reliable blinded classification or prediction beyond the existing public axes. Until then, further naming, scaling, or synthetic scoring is documentation growth rather than scientific progress.
