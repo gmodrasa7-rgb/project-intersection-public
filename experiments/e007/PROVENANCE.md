@@ -23,6 +23,6 @@ Runtime residue such as __pycache__, .pyc, and .pytest_cache is excluded from th
 
 ## Current rerun
 
-Python 3.12.14; pytest 9.1.1; 26 tests passed; 72/31/17 reproduced. Documentation test counts updated from 24 to 26. This is same-implementation computational reproduction, not independent scientific replication. License remains undecided.
+Python 3.12.14; pytest 9.1.1; 26 tests passed; 72/31/17 reproduced. Documentation test counts updated from 24 to 26. This is same-implementation computational reproduction, not independent scientific replication. The released E007 directory now has an explicit scoped license: code and requirements.txt under Apache-2.0; project-authored documentation and timing_summary.json under CC BY 4.0. See LICENSE_STATUS.md.
 
 Release changes: scoped license notices/texts and Korean summary added; scientific code and grid unchanged. License decision delegated by the user after power-reversal review.
