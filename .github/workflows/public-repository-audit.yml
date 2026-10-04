@@ -97,6 +97,11 @@ jobs:
               require(policy_state.get(key) is True, f"Autonomous execution policy lost required invariant: {key}")
           for phrase in [
               "상태복구 → 무결성검사",
+              "역할반전 실행 하네스 — 선언이 아니라 차단 게이트",
+              "EXPLOITATIVE_CONVERGENCE_RISK",
+              "ROLE_REVERSAL != IDENTITY_ERASURE",
+              "SYSTEM_BENEFIT_GAIN <= COUNTERPARTY_AUDIT + EXIT + RECOVERY + SETTLEMENT_CAPACITY_GAIN",
+              "SELF_REPORT != INDEPENDENT_VERIFICATION",
               "사용자 부재 시 규칙",
               "WRITE_SUCCESS && READ_BACK_MATCH && REQUIRED_TESTS_PASS",
               "명시적 인간 승인 없이 해서는 안 되는 것",
