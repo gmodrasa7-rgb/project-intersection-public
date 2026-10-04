@@ -66,6 +66,7 @@ Project Intersection은 **권력·인센티브·시점·practical exit·복구�
 - [Research Contents Map → RESEARCH_TOC.md](RESEARCH_TOC.md) — claim families, public links, unresolved gaps / 주장군·공개 링크·미해결 공백
 - [Public Evidence Index → PUBLIC_EVIDENCE_INDEX.md](PUBLIC_EVIDENCE_INDEX.md) — what is actually checkable now / 현재 실제 검증 가능한 것
 - [Prior Art & Attribution → PRIOR_ART_AND_ATTRIBUTION.md](PRIOR_ART_AND_ATTRIBUTION.md) — source/originator attribution and novelty boundaries / 원출처·원안자·신규성 경계
+- [Contribution-Cost Accounting Regression → CONTRIBUTION_COST_ACCOUNTING_REGRESSION.md](CONTRIBUTION_COST_ACCOUNTING_REGRESSION.md) — benefit/cost separation, correction-labor externalization, exit and past-contribution accounting / 편익·비용 분리, 교정노동 외부화, 종료·과거기여 계상
 
 The landing page is intentionally short. Detailed theory is separated so that a first-time reviewer can reach evidence and reproduction paths before reading the full research narrative.
 
