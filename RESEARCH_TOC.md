@@ -1,3 +1,26 @@
+# Public Navigation Layer / 공개 탐색층
+
+This layer is the shortest path from a claim to its current public evidence, failure lineage, and falsification route. The detailed research map below is broader than the public evidence base and must not be read as a list of validated findings.
+
+이 층은 주장에서 현재 공개 증거·실패계보·반증경로로 이동하는 최단경로다. 아래의 상세 연구지도는 공개 증거보다 범위가 넓으며 검증된 결과 목록으로 해석하지 않는다.
+
+| Research item | Current public status | Evidence / claim file | Reproduce / provenance | Strongest current boundary |
+|---|---|---|---|---|
+| E007 timing sensitivity | **SYNTHETIC_RESULT · EXECUTABLE · PROJECT_RERUN** | [Result](E007_TIMING_RESULT.md) · [Work sample](experiments/e007/README.md) | [Run](experiments/e007/RUN.md) · [Provenance](experiments/e007/PROVENANCE.md) · [License scope](experiments/e007/LICENSE_STATUS.md) | Not independent replication; not empirical validation |
+| Historical State Control / Memory-Provenance Capture | **HYPOTHESIS · UNRESOLVED for intentional capture** | [English](HISTORICAL_STATE_CONTROL_MEMORY_PROVENANCE_CAPTURE_v0_1_EN.md) · [한국어](HISTORICAL_STATE_CONTROL_MEMORY_PROVENANCE_CAPTURE_v0_1_KO.md) | Falsification tests are listed inside the claim files | No public experimental result yet |
+| Project-wide evidence boundary | **METHODOLOGY / STATUS INTERFACE** | [Public Evidence Index](PUBLIC_EVIDENCE_INDEX.md) · [Research Status Policy](RESEARCH_STATUS_POLICY.md) | Evidence classes and reassessment rules | Does not validate any scientific claim by itself |
+| Detailed research framing | **CONCEPT / HYPOTHESIS MAP** | [Research Overview](RESEARCH_OVERVIEW.md) | Use linked claim and experiment files for evidence | Breadth of map is not evidence strength |
+
+### Evidence ordering / 증거 우선순위
+
+`CONCEPT / HYPOTHESIS` < `SYNTHETIC_RESULT` < `EXECUTABLE` < `PROJECT_RERUN` < `THIRD_PARTY_RERUN` < `INDEPENDENT_IMPLEMENTATION` < `EMPIRICAL_VALIDATION`
+
+These labels describe different dimensions and are not automatically interchangeable. A project rerun is not external replication; an executable package is not empirical validation.
+
+이 표기는 서로 다른 증거차원을 나타내며 자동으로 동치가 아니다. 프로젝트 내부 재실행은 외부 복제가 아니고, 실행 가능한 패키지는 현실검증이 아니다.
+
+---
+
 # Project Intersection — Research Contents Map
 
 ## Original 1 — English Canonical
