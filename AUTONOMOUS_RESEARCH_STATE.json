@@ -4,8 +4,8 @@
   "public_repository": "gmodrasa7-rgb/project-intersection-public",
   "canonical_boundary": "Public continuation pointer only; source artifacts and commit history outrank this state file.",
   "recovery_entrypoint": "AUTONOMOUS_RESEARCH_LOOP.md",
-  "current_public_head": "eb51509902f06131dd161d128a0fb7eb59ebbff5",
-  "updated_at": "2026-10-04T23:03:49+09:00",
+  "current_public_head": "daf9e7d4a060515af7a14d9633e5b38efb5dd01a",
+  "updated_at": "2026-10-05T00:06:52+09:00",
   "execution_policy": {
     "atomic_material_delta_per_run": 1,
     "require_prior_art_gate": true,
@@ -45,10 +45,10 @@
     },
     {
       "id": "F003",
-      "status": "PARTIAL_SUPPORT_CASE_LEVEL_GENERALIZATION_UNRESOLVED",
+      "status": "PARTIAL_SUPPORT_CASE_LEVEL_PROVISIONAL_SCREEN_GENERALIZATION_UNRESOLVED",
       "question": "After accounting for ordinary decay, migration, turnover, compression, organizational forgetting, and records-management failure, is there independent evidence of selective beneficiary-aligned manipulation of shared historical records?",
-      "evidence_boundary": "The Iran/Contra record provides lineage-separated case-level evidence of selective action, beneficiary-aligned direction, investigation-linked timing, and partial backup recovery. It supports existence of strategic record manipulation in that case, but not prevalence, universal mechanism, current platform/AI intent, or novelty of the broad construct. Archive completeness remains unknown.",
-      "next_cheapest_discriminating_check": "Apply the same four-axis codebook to the NARA 2000 accidental e-mail loss/incomplete-backup incident as a negative control. The discriminator should classify technical loss without beneficiary alignment as benign; failure would MODIFY or KILL the current coding rule.",
+      "evidence_boundary": "Iran/Contra supports case-level strategic manipulation. The NARA 1999 e-mail loss negative control did not trigger H3 under the unchanged four-axis rule because the loss was server-correlated and beneficiary alignment/dispute timing were not observed. However, the accident account is the affected institution's self-report and underlying investigations were not located, so the negative control is provisional and validates only a false-positive screen.",
+      "next_cheapest_discriminating_check": "Locate the underlying NARA Inspector General/contractor investigation or a different independently investigated content-blind technical record-loss case. Recode with the unchanged axes. If an independent benign case triggers H3, MODIFY/KILL the screen; if it remains negative, upgrade specificity support by one level without claiming calibrated accuracy.",
       "last_historical_case_check": {
         "case": "Iran/Contra NSC records and PROFS backups",
         "basis_preregistration_commit": "d38d937a3d48b2744ec7a6888a39d9833016b9fa",
@@ -66,16 +66,29 @@
           "National Archives Walsh records and oral history",
           "Armstrong v. Bush, 924 F.2d 282 (D.C. Cir. 1991)"
         ]
+      },
+      "last_negative_control": {
+        "case": "NARA Madison server internal e-mail loss, 18 June 1999",
+        "source": "NARA statement dated 6 January 2000, https://www.archives.gov/press/press-releases/2000/nr00-22",
+        "basis_rule": "missingness/direction/timing/recovery axes frozen before Iran/Contra case",
+        "observations": {
+          "missingness": "approximately 43,000 electronic copies on one server; around 5% of staff and under 1% of annual e-mail",
+          "direction": "no documented beneficiary-aligned content pattern; independent content coverage absent",
+          "timing": "reported operational deletion/backup failure, no documented accountability-event linkage",
+          "recovery": "incomplete backup tapes blocked electronic restoration; paper official-record redundancy self-reported"
+        },
+        "decision": "PROVISIONAL_BENIGN_TECHNICAL_KEEP_SCREEN_NOT_INTENT_CLASSIFIER",
+        "independence_limit": "affected-institution self-report; underlying Inspector General and contractor reports not located"
       }
     }
   ],
   "recent_material_delta": {
-    "type": "lineage_separated_historical_case_test",
-    "summary": "Applied the preregistered benign-loss versus strategic-manipulation discriminator to Iran/Contra records. The case supports narrow H3 existence through jointly documented selective action, beneficiary-aligned direction, investigation-linked timing, and partial backup recovery; broad novelty rejection and generalization limits remain.",
-    "basis_head": "eb51509902f06131dd161d128a0fb7eb59ebbff5",
+    "type": "f003_negative_control",
+    "summary": "Applied the unchanged four-axis rule to NARA's 1999 server-correlated e-mail loss. Missingness and failed recovery alone did not trigger H3; the case was provisionally classified as benign technical loss. Because the causal account is institutional self-report, this supports only a conservative false-positive screen, not an intent classifier or calibrated specificity.",
+    "basis_head": "daf9e7d4a060515af7a14d9633e5b38efb5dd01a",
     "source_artifact": "HISTORICAL_STATE_CONTROL_MEMORY_PROVENANCE_CAPTURE_v0_1_EN.md and _KO.md",
     "state_commit": "RESOLVE_FROM_GIT_HISTORY_AFTER_WRITE",
-    "scientific_support": "official congressional/investigative/archival/judicial record synthesis; case-level historical support, not prevalence or current-system validation"
+    "scientific_support": "official affected-institution incident statement; negative-control classification is provisional and not independently verified"
   },
   "human_only_gates": [
     "contracts_terms_ip_license_rights_changes",
@@ -87,12 +100,12 @@
   ],
   "last_read_back": {
     "status": "VERIFIED_MATERIAL_TARGET_PRE_STATE_WRITE",
-    "verified_commit": "eb51509902f06131dd161d128a0fb7eb59ebbff5",
-    "verified_blob": "a670b0a7c25b1901b08be1956d19ce7ead5937b4",
+    "verified_commit": "daf9e7d4a060515af7a14d9633e5b38efb5dd01a",
+    "verified_blob": "8328c452284f457d0a910d070af47b7a826b4eba",
     "verified_path": "RESEARCH_TOC.md",
-    "note": "Both claim mirrors matched on the preregistered four-axis coding, case-level KEEP decision, incomplete-archive boundary, and power-reversal result; the research map was aligned. Current state-write completion requires post-write read-back."
+    "note": "Both language mirrors preserve the frozen four-axis rule, provisional benign classification, institutional self-report limitation, and UNKNOWN-not-neutral boundary; the research map was aligned. Current state-write completion requires post-write read-back."
   },
-  "next_checkpoint": "F003 negative control: apply the unchanged four-axis codebook to NARA's 2000 accidental e-mail loss with incomplete backups. It should classify technical loss without beneficiary alignment as benign; otherwise MODIFY/KILL the discriminator. F001 remains externally gated.",
+  "next_checkpoint": "F003 independent negative control: locate the NARA Inspector General/contractor investigation or one independently investigated content-blind technical record-loss case, then apply the unchanged four axes. Do not promote self-report to independent validation. F001 remains externally gated.",
   "current_public_head_semantics": "Head observed immediately before this state-file write. The commit containing this file must be resolved from Git history because a Git-tracked file cannot self-embed its own containing commit hash without changing that hash.",
   "resolved_process_findings": [
     {
@@ -105,17 +118,17 @@
     }
   ],
   "last_checkpoint_result": {
-    "checkpoint": "F003 preregistered lineage-separated historical case",
-    "decision": "KEEP_CASE_LEVEL_H3_EXISTENCE_GENERALIZATION_UNRESOLVED",
+    "checkpoint": "F003 NARA technical-loss negative control",
+    "decision": "PROVISIONAL_BENIGN_TECHNICAL_KEEP_SCREEN_NOT_INTENT_CLASSIFIER",
     "performed": [
-      "Selected the Iran/Contra records only after the four-axis predictions were publicly committed",
-      "Triangulated official congressional, Independent Counsel, National Archives, and judicial sources",
-      "Coded missingness, direction, timing, and recovery against benign-loss and strategic-manipulation models",
+      "Read the continuity state and reused the unchanged preregistered four-axis rule",
+      "Coded NARA's reported Madison-server e-mail loss on missingness, direction, timing, and recovery",
+      "Preserved non-observation as UNKNOWN rather than proof of neutrality",
       "Updated both language mirrors and the research map"
     ],
-    "result": "The joint pattern fits strategic record manipulation better than routine decay/migration in this case. Broad construct novelty remains rejected and no current platform/AI intent is inferred.",
-    "strongest_counterexample": "Weekly backups were incomplete snapshots and later legal outcomes were complicated by immunized testimony, so the surviving record cannot identify the full deleted set or estimate prevalence.",
-    "power_reversal": "Implicated officials' deletion control weakened public audit, while independently held backups and investigators partially restored verification. No user reconstruction work or private disclosure was required."
+    "result": "The rule did not falsely label server-correlated missingness plus backup failure as strategic manipulation. Selective action, beneficiary-aligned direction, and accountability-linked timing remain necessary.",
+    "strongest_counterexample": "The affected institution had a reputational interest in describing the incident as inadvertent, while message-level contents and underlying investigation reports were unavailable; apparent neutrality may reflect observation failure.",
+    "power_reversal": "The classification does not trust the record-controlling institution's self-report enough to close intent, preserves an external verification requirement, and creates no user repair burden."
   },
   "resolved_research_findings": [
     {
