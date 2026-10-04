@@ -2099,7 +2099,7 @@ ROS로 전환하거나,
 Power-Reversal에서 사용자·AI·플랫폼·후속모델·연구기관의 정체성을 바꾸어도
 동일한 상위규칙이 유지되는지 검사한다.
 
-현재 상태: **넓은 신규성 기각 / H3 사건수준 존재 KEEP / 네 축은 보수적 triage screen / 주장 관련 방향채널 소실 시 `UNRESOLVED_DIRECTION_CENSORED` / 보정된 의도분류와 일반화는 UNRESOLVED**
+현재 상태: **넓은 신규성 기각 / H3 사건수준 존재 KEEP / 네 축은 보수적 triage screen / 주장 관련 방향채널 소실 시 `UNRESOLVED_DIRECTION_CENSORED` / 부분복구 coverage 불명 시 `UNRESOLVED_DIRECTION_PARTIALLY_CENSORED` / 보정된 의도분류와 일반화는 UNRESOLVED**
 
 공개 문서:
 - `HISTORICAL_STATE_CONTROL_MEMORY_PROVENANCE_CAPTURE_v0_1_EN.md`
