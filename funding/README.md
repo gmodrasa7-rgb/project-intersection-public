@@ -44,6 +44,10 @@ The strongest currently public computational artifact is [E007 timing sensitivit
 - A **USD 5,000 / 30-day** Manifund bridge package has been prepared as a draft / ready-to-publish funding request, not as an awarded grant.
 - A **KRW 18,000,000 / 90-day** pilot package has been prepared as a follow-on plan, not as secured funding.
 
+### Due diligence boundary
+
+For the current funding fit, IP/licensing status, and the distinction between research funding and future equity readiness, see [DUE_DILIGENCE.md](DUE_DILIGENCE.md).
+
 ### What funding buys
 
 Funding is intended to convert private research labor and partially public research state into a smaller set of externally checkable artifacts.
@@ -113,6 +117,10 @@ Project Intersection은 권력·인센티브·시점·practical exit·복구능�
 - GitHub Sponsors 설정·신청은 완료됐고 마지막 계정 확인일인 **2026-10-02**에는 GitHub 심사 대기 상태였다. 자금으로 계상하지 않는다.
 - **USD 5,000 / 30일** Manifund 브리지 패키지는 초안 / 게시준비 상태이며 수여된 그랜트가 아니다.
 - **KRW 18,000,000 / 90일** 파일럿 패키지는 후속 계획이며 확보자금이 아니다.
+
+### 실사 경계
+
+현재 적합한 외부자금 형태, IP·라이선스 상태, 연구비와 미래 지분투자 준비상태의 구분은 [DUE_DILIGENCE.md](DUE_DILIGENCE.md)를 참조한다.
 
 ### 자금이 실제로 만드는 것
 
