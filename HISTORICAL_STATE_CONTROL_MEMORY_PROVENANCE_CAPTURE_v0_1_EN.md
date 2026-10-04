@@ -242,3 +242,45 @@ Do not score this as a true negative. Direction evidence from a different channe
 ### Strongest counterexample / failure condition
 
 A mixed case can contain genuine beneficiary-aligned preservation failure while all surviving channels look technically ordinary. Requiring observed direction from the missing channel can make H3 unfalsifiably hard to trigger; inferring direction from timing or noncooperation can instead create false positives. The screen remains triage, not an intent classifier, until held-out cases with independently reconstructed direction test both errors.
+
+## Recovered-direction holdout — IRS Exempt Organizations data loss
+
+**Selection and anti-leakage rule:** This case was selected from the prior checkpoint because a claim-relevant e-mail channel reported missing was later partly reconstructed by an independent Inspector General. Before consulting the recovered-content result, the frozen axes code the reported production gap, failed hard drive, reportedly recycled backups, and investigation-linked preservation dispute as **UNRESOLVED_DIRECTION_CENSORED**: timing and suspicion cannot substitute for the missing direction variable.
+
+### Independent investigation and reveal
+
+In February 2015 testimony, TIGTA reported that it demanded the relevant backup tapes, took possession of 744 tapes, recovered five expected Lerner mailboxes, and identified 32,774 unique e-mails pending comparison with prior productions. The later bipartisan Senate Finance Committee report states that TIGTA ultimately recovered 1,330 Lerner e-mails not previously produced to Congress, some relevant to the investigation, but could not reproduce a full 2010–2011 communication record. The same report records TIGTA's finding that it did not uncover evidence that IRS employees purposely erased a separate set of backup tapes to conceal responsive e-mails.
+
+Primary public sources:
+- TIGTA testimony in the House hearing *IRS: TIGTA Update* (26 February 2015): https://www.govinfo.gov/content/pkg/CHRG-114hhrg95249/html/CHRG-114hhrg95249.htm
+- Senate Finance Committee Report 114-119, including the TIGTA investigation findings and recovered-record totals: https://www.govinfo.gov/content/pkg/CRPT-114srpt119/html/CRPT-114srpt119-pt1.htm
+
+These are official investigation and congressional records, but not a complete raw archive. Committee interpretations are not treated as an independent substitute for the missing messages.
+
+### Frozen-axis comparison
+
+| Axis | Before recovered-content reveal | After independent recovery |
+|---|---|---|
+| Missingness | Claim-relevant production gap and failed original storage | 1,330 previously unproduced e-mails recovered, but the full communication record remained incomplete |
+| Direction | Missing messages could contain controller-favoring, adverse, or neutral content; direction censored | Some recovered messages were relevant, but surviving/recoverable messages are not a demonstrated representative sample of the unrecovered population |
+| Timing | Preservation dispute and investigation timing raise concern but do not identify intent | Separate tape erasure remained a serious preservation failure; TIGTA reported no evidence of purposeful concealment |
+| Recovery | Initially represented as unavailable through ordinary production | Independent recovery disproved practical irrecoverability for part of the record, not for the entire missing set |
+
+### Decision
+
+**MODIFY: PARTIAL RECOVERY WITH UNKNOWN COVERAGE DOES NOT UNCENSOR DIRECTION.**
+
+Add the rule:
+
+> If recovered material is selected by an incompletely characterized survival or recovery process, it may establish existence and correct specific records, but it cannot by itself classify the unrecovered population's beneficiary direction. Score **UNRESOLVED_DIRECTION_PARTIALLY_CENSORED** until recovery coverage or selection is independently bounded.
+
+The holdout therefore does not count as an H3 positive or benign negative. It reveals a false-resolution risk: a screen can appear to gain sensitivity merely because some records become visible, while the recovery mechanism remains missing-not-at-random and the full directional denominator is unknown.
+
+### Strongest counterexample and boundary
+
+A partial recovery could still contain decisive direct evidence of selective manipulation; the new rule does not discard such document-level evidence. It only blocks extrapolation from recovered items to the unrecovered population. Conversely, TIGTA's lack of evidence of purposeful erasure is meaningful negative evidence about the investigated actions, but it is not proof that all missing content was direction-neutral.
+
+### Power-reversal result
+
+The rule constrains both sides symmetrically. A record controller cannot cite incomplete recovery as proof that nothing adverse remains missing, and an investigator cannot cite suspicious gaps as proof of beneficiary-aligned intent. Independent recovery links, unresolved coverage, and rollback through Git history remain visible without returning reconstruction labor to the user.
+
