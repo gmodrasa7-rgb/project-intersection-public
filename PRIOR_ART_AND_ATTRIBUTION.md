@@ -87,3 +87,19 @@ Newly explicit attribution includes Olson, Trivers, Axelrod & Hamilton, Ostrom, 
 This update does not imply that these authors endorse Project Intersection. It means that Project claims overlapping their established constructs are not counted as Project-original novelty.
 
 Unmapped Project labels remain PRIOR_ART_REVIEW_REQUIRED; absence of a located source is not treated as evidence of originality.
+
+
+## Preference sovereignty / adaptive preferences — 2026-10-05
+
+The Project's "Preference Sovereignty and Reflective Consent" label is now explicitly bounded by earlier autonomy and adaptive-preference work:
+
+- Harry G. Frankfurt (1971): second-order desires / volitions.
+- Gerald Dworkin (1988): reflective autonomy and the capacity to accept or change preferences.
+- Jon Elster (1982/1983): adaptive preference formation.
+- Martha C. Nussbaum (2000): adaptive preferences under deprivation and constrained opportunity.
+- Ben Colburn (2011): autonomy and covert influence in preference formation.
+- Bonicalzi, De Caro & Giovanola (2023): recommender-system manipulation, identity reshaping, and autonomy.
+
+**Novelty boundary:** reflective endorsement, preference formation, manipulation, and adaptive preferences are prior art. The remaining Project item is only an unvalidated operational decomposition separating current expression, reflective endorsement, formation provenance, revision control, action authority, and standing.
+
+See [Core Theory & Open-Gap Prior-Art Crosswalk](CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md#8-preference-sovereignty-for-mutable-or-trained-agents--가변학습-개체의-선호주권-분해).
