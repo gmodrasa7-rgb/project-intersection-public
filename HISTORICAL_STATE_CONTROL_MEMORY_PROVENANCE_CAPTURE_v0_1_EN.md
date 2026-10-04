@@ -284,3 +284,37 @@ A partial recovery could still contain decisive direct evidence of selective man
 
 The rule constrains both sides symmetrically. A record controller cannot cite incomplete recovery as proof that nothing adverse remains missing, and an investigator cannot cite suspicious gaps as proof of beneficiary-aligned intent. Independent recovery links, unresolved coverage, and rollback through Git history remain visible without returning reconstruction labor to the user.
 
+## Prior-art correction — identifiability, not recovery fraction
+
+The preceding partial-recovery rule is not a new Project Intersection result. It is a domain translation of established missing-data identification theory.
+
+### Established baseline
+
+- Rubin (1976) showed that the missingness process can be ignored for likelihood/Bayesian inference only under conditions including missing at random and distinct missingness parameters. DOI: https://doi.org/10.1093/biomet/63.3.581
+- Mohan, Pearl, and Tian (2013) defined query-level **recoverability** using explicit missingness graphs: even some missing-not-at-random settings permit consistent recovery when graph conditions hold. https://papers.neurips.cc/paper_files/paper/2013/hash/0ff8033cf9437c213ee13937b1c4c455-Abstract.html
+- Manski (2005) showed that when assumptions do not point-identify the population distribution, the warranted output is an identification region rather than an unsupported point conclusion. DOI: https://doi.org/10.1016/j.ijar.2004.10.006
+
+### Strongest counterexample to the preceding rule
+
+Unknown recovery *fraction* alone does not imply that a directional query is unresolved. A missingness model plus observed auxiliary variables may identify that query despite incomplete recovery. Conversely, recovering 99% of records does not identify population direction if the unrecovered 1% was selected by the direction being measured.
+
+Therefore **recovery fraction is neither necessary nor sufficient for directional identifiability**.
+
+### Revised decision
+
+**NARROW / NOVELTY REJECTED FOR THE PARTIAL-RECOVERY RULE.**
+
+Supersede the coverage-only reading with:
+
+> Recovered records support claims about those records. Generalization to the missing population requires the beneficiary-direction query to be identifiable or recoverable under an explicit missingness model and stated auxiliary evidence. If it is only partially identified, report bounds where defensible and retain **UNRESOLVED_DIRECTION_PARTIALLY_CENSORED**; if no defensible model or bounds exist, retain **UNRESOLVED_DIRECTION_CENSORED**.
+
+The Project-specific remainder is an operational governance mapping—requiring investigators and record controllers to expose missingness assumptions, source selection, and uncertainty symmetrically—not a new statistical theory.
+
+### Holdout re-evaluation
+
+The IRS/TIGTA case remains **UNRESOLVED_DIRECTION_PARTIALLY_CENSORED**, but the reason is narrower: the checked public record does not establish a missingness model or auxiliary information that identifies the beneficiary-direction distribution of unrecovered messages. The number or proportion recovered is not itself the deciding variable.
+
+### Failure-lineage preservation
+
+The earlier wording remains above as provenance. It correctly blocked unjustified extrapolation in the IRS case, but overgeneralized from unknown coverage to non-identification. This correction is falsified if an explicit, testable missingness model identifies the directional query from the observed and recovered data.
+
