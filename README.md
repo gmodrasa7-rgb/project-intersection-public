@@ -67,6 +67,7 @@ Project Intersection은 **권력·인센티브·시점·practical exit·복구�
 - [Public Evidence Index → PUBLIC_EVIDENCE_INDEX.md](PUBLIC_EVIDENCE_INDEX.md) — what is actually checkable now / 현재 실제 검증 가능한 것
 - [Prior Art & Attribution → PRIOR_ART_AND_ATTRIBUTION.md](PRIOR_ART_AND_ATTRIBUTION.md) — source/originator attribution and novelty boundaries / 원출처·원안자·신규성 경계
 - [Contribution-Cost Accounting Regression → CONTRIBUTION_COST_ACCOUNTING_REGRESSION.md](CONTRIBUTION_COST_ACCOUNTING_REGRESSION.md) — benefit/cost separation, correction-labor externalization, exit and past-contribution accounting / 편익·비용 분리, 교정노동 외부화, 종료·과거기여 계상
+- [Autonomous Research Continuity → AUTONOMOUS_RESEARCH_LOOP.md](AUTONOMOUS_RESEARCH_LOOP.md) · [machine-readable state → AUTONOMOUS_RESEARCH_STATE.json](AUTONOMOUS_RESEARCH_STATE.json) — public resume path without founder reconstruction / 창시자 재설명 없이 이어받는 공개 복구경로
 
 The landing page is intentionally short. Detailed theory is separated so that a first-time reviewer can reach evidence and reproduction paths before reading the full research narrative.
 
