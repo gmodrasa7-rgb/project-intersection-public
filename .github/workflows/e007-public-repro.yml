@@ -1,0 +1,42 @@
+name: E007 public reproducibility
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "experiments/e007/**"
+      - "E007_TIMING_RESULT.md"
+      - ".github/workflows/e007-public-repro.yml"
+  pull_request:
+    paths:
+      - "experiments/e007/**"
+      - "E007_TIMING_RESULT.md"
+      - ".github/workflows/e007-public-repro.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  reproduce-e007:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: experiments/e007
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install minimal dependencies
+        run: python -m pip install -r requirements.txt
+
+      - name: Run E007 regression tests
+        run: python -m pytest -q -p no:cacheprovider
+
+      - name: Reproduce timing summary
+        run: python timing_probe.py --summary-only --check
