@@ -4,8 +4,8 @@
   "public_repository": "gmodrasa7-rgb/project-intersection-public",
   "canonical_boundary": "Public continuation pointer only; source artifacts and commit history outrank this state file.",
   "recovery_entrypoint": "AUTONOMOUS_RESEARCH_LOOP.md",
-  "current_public_head": "0033b0b8a8da337a2dfa94520ca571866b5d5825",
-  "updated_at": "2026-10-05T05:04:09+09:00",
+  "current_public_head": "f9b0299d75cf805fe1b0b5ac24abce67b4b26a09",
+  "updated_at": "2026-10-04T21:08:00Z",
   "execution_policy": {
     "atomic_material_delta_per_run": 1,
     "require_prior_art_gate": true,
@@ -45,10 +45,10 @@
     },
     {
       "id": "F003",
-      "status": "MODIFY_IRS_DIRECTION_CALIBRATION_KILLED_KEEP_NONIDENTIFICATION_RECOVERY_AUDIT_GENERALIZATION_UNRESOLVED",
+      "status": "MODIFY_RECOVERY_CONFORMANCE_SEPARATED_FROM_DIRECTION_IDENTIFICATION_GENERALIZATION_UNRESOLVED",
       "question": "After accounting for ordinary decay, migration, turnover, compression, organizational forgetting, and records-management failure, is there independent evidence of selective beneficiary-aligned manipulation of shared historical records?",
-      "evidence_boundary": "Iran/Contra supports case-level strategic manipulation; generalization remains unresolved. NARA and NTSB controls constrain false positives. Missing-data theory requires query-level identifiability. A formal IRS/TIGTA audit found no public item-level direction counts, bounded target denominator, conditional independence, valid instrument/shadow variable, or complete sampling frame. Observationally equivalent completions permit opposite missing-population directions, so the IRS case cannot calibrate H3 direction classification.",
-      "next_cheapest_discriminating_check": "Search only for an admissible recovered-record holdout that jointly provides item-level recovered records or blinded direction codes, a known or bounded target denominator, and a characterized recovery/selection mechanism or valid auxiliary variable. Do not accumulate another narrative case lacking this observation frame.",
+      "evidence_boundary": "Iran/Contra supports case-level strategic manipulation; generalization remains unresolved. NARA and NTSB controls constrain false positives. Missing-data theory requires query-level identifiability. A formal IRS/TIGTA audit found no public item-level direction counts, bounded target denominator, conditional independence, valid instrument/shadow variable, or complete sampling frame. Observationally equivalent completions permit opposite missing-population directions, so the IRS case cannot calibrate H3 direction classification. NIST CFTT independently shows that technical deleted-file recovery conformance and semantic beneficiary-direction identification are distinct layers: expected technical outcomes can be tested while estimated content lacks a definitive expected result.",
+      "next_cheapest_discriminating_check": "Continue the admissible historical holdout search, but treat NIST CFTT only as a recovery-measurement control. Admit direction calibration only when item-level or blinded beneficiary-direction labels, a bounded target denominator, and an auditable selection/recovery model coexist.",
       "last_historical_case_check": {
         "case": "Iran/Contra NSC records and PROFS backups",
         "basis_preregistration_commit": "d38d937a3d48b2744ec7a6888a39d9833016b9fa",
@@ -174,16 +174,29 @@
           "House hearing IRS: TIGTA Update, 26 February 2015, GovInfo CHRG-114hhrg95249",
           "Senate Finance Committee Report 114-119, 5 August 2015"
         ]
+      },
+      "last_external_standards_boundary": {
+        "source": "NIST Computer Forensics Tool Testing (CFTT) deleted-file recovery specification and raw-test framework",
+        "sources": [
+          "https://www.nist.gov/itl/csd/secure-systems-and-applications/computer-forensics-tool-testing-program-cftt",
+          "https://www.nist.gov/itl/csd/secure-systems-and-applications/computer-forensics-tool-testing-program-cftt/cftt-1",
+          "https://www.nist.gov/itl/csd/secure-systems-and-applications/computer-forensics-tool-testing-program-cftt/cftt-12"
+        ],
+        "observed_boundary": "CFTT supplies test specifications, procedures, criteria, sets, and expected technical outcomes; for optional estimated content, the NIST specification states there is no definitive expected result.",
+        "decision": "MODIFY_SEPARATE_RECOVERY_MEASUREMENT_VALIDATION_FROM_BENEFICIARY_DIRECTION_IDENTIFICATION",
+        "negative_control": "A benchmark may characterize recovery and denominator while lacking beneficiary-direction labels; a historical corpus may contain semantic direction while lacking denominator or selection identification.",
+        "nonclaim": "This does not show that no admissible historical holdout exists.",
+        "rollback": "Reopen if a benchmark links blinded beneficiary-direction labels to a bounded target population and characterized selection/recovery."
       }
     }
   ],
   "recent_material_delta": {
-    "type": "f003_irs_direction_nonidentification_witness",
-    "summary": "A query-level audit constructed two observationally equivalent completions with opposite directions for unrecovered IRS messages. Because the public record lacks a target denominator, recovered direction counts, and a justified missingness model, only the trivial [-1,1] bound is supported. The IRS case is killed as a direction-classifier calibration case and retained as a recovery-audit/non-identification case.",
-    "basis_head": "0033b0b8a8da337a2dfa94520ca571866b5d5825",
+    "type": "f003_external_recovery_conformance_direction_boundary",
+    "summary": "NIST CFTT provides an independent recovery-tool conformance framework yet explicitly lacks a definitive expected result for estimated content. Recovery measurement validation is therefore separated from beneficiary-direction identification; CFTT is a technical negative control, not an H3 classifier-calibration holdout.",
+    "basis_head": "f9b0299d75cf805fe1b0b5ac24abce67b4b26a09",
     "source_artifact": "HISTORICAL_STATE_CONTROL_MEMORY_PROVENANCE_CAPTURE_v0_1_EN.md and _KO.md",
     "state_commit": "RESOLVE_FROM_GIT_HISTORY_AFTER_WRITE",
-    "scientific_support": "Official TIGTA testimony and Senate Finance Committee report plus explicit missing-data non-identification witness"
+    "scientific_support": "NIST CFTT program, deleted-file recovery specification, and raw-test framework"
   },
   "human_only_gates": [
     "contracts_terms_ip_license_rights_changes",
@@ -195,12 +208,15 @@
   ],
   "last_read_back": {
     "status": "VERIFIED_MATERIAL_TARGET_PRE_STATE_WRITE",
-    "verified_commit": "0033b0b8a8da337a2dfa94520ca571866b5d5825",
-    "verified_blob": "a66f1c82f1ecf6090fdf36055be85b24d28000f6",
-    "verified_path": "RESEARCH_TOC.md",
-    "note": "Both language mirrors preserve the estimand, graph boundary, two-world witness, trivial bound, KILL/KEEP split, and admissibility gate; research map aligned. State-write completion requires post-write read-back."
+    "verified_commit": "f9b0299d75cf805fe1b0b5ac24abce67b4b26a09",
+    "verified_blobs": {
+      "HISTORICAL_STATE_CONTROL_MEMORY_PROVENANCE_CAPTURE_v0_1_EN.md": "f54ce43bbe6562de9b023252f9bdb4aa4d00c7b1",
+      "HISTORICAL_STATE_CONTROL_MEMORY_PROVENANCE_CAPTURE_v0_1_KO.md": "5c86bec9c8a2fa6bab8114fe7fa820c15cc7d3b0",
+      "RESEARCH_TOC.md": "21bc97c85e8c9dd45506618d36d03c8ada18b94c"
+    },
+    "note": "Both language mirrors and the research map preserve the independent NIST standards boundary, strongest counterexample, MODIFY decision, nonclaim, power-reversal constraint, and rollback condition. State-write completion requires post-write read-back."
   },
-  "next_checkpoint": "F003 admissible recovered-record holdout search: require item-level direction evidence, bounded denominator, and characterized selection/recovery mechanism before another calibration attempt. F001 remains externally gated.",
+  "next_checkpoint": "F003: seek an empirical/historical holdout with blinded or item-level beneficiary-direction labels, a bounded denominator, and characterized selection/recovery. Use NIST CFTT only to validate the technical recovery layer; do not count it as direction calibration. F001 remains externally gated.",
   "current_public_head_semantics": "Head observed immediately before this state-file write. The commit containing this file must be resolved from Git history because a Git-tracked file cannot self-embed its own containing commit hash without changing that hash.",
   "resolved_process_findings": [
     {
@@ -213,19 +229,17 @@
     }
   ],
   "last_checkpoint_result": {
-    "checkpoint": "F003 IRS query-level identifiability audit",
-    "decision": "KILL_IRS_AS_DIRECTION_CLASSIFIER_CALIBRATION_KEEP_NONIDENTIFICATION_RECOVERY_AUDIT",
+    "checkpoint": "F003 independent recovery-standard boundary test",
+    "decision": "MODIFY_SEPARATE_RECOVERY_CONFORMANCE_FROM_DIRECTION_IDENTIFICATION",
     "performed": [
       "Read current public continuity protocol and state",
-      "Defined the beneficiary-direction estimand and recovery indicator",
-      "Specified the minimal public missingness graph and unblocked direction-to-recovery path",
-      "Constructed two observationally equivalent full-data worlds with opposite missing directions",
-      "Derived only the trivial worst-case direction bound",
+      "Checked NIST CFTT primary program, deleted-file recovery specification, and raw-test framework",
+      "Compared technical expected results with optional content-estimation limits",
       "Updated both language mirrors and research map"
     ],
-    "result": "The IRS public record cannot identify or nontrivially bound the direction of the unrecovered population, so it cannot calibrate H3 sensitivity or specificity.",
-    "strongest_counterexample": "Recovered documents can still provide decisive item-level evidence; only population extrapolation and classifier calibration are killed.",
-    "power_reversal": "Neither record controller nor investigator may choose the unobserved completion favorable to itself. The admissibility gate reduces future narrative-case accumulation and user repair burden."
+    "result": "A validated recovery pipeline can reduce technical measurement error but does not observe semantic beneficiary direction. NIST CFTT is retained as a recovery-layer control and rejected as an H3 direction-calibration holdout.",
+    "strongest_counterexample": "A future benchmark could become admissible if it jointly supplies blinded direction labels, a bounded target population, and a characterized selection mechanism; the present finding does not establish dataset absence.",
+    "power_reversal": "Controller and investigator are equally barred from converting tool trust into claims about unobserved content. Raw tests, labels, denominator, and missingness assumptions remain separately auditable."
   },
   "resolved_research_findings": [
     {
