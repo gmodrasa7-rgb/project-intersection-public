@@ -35,7 +35,7 @@ The fundable output is therefore a combination of:
 
 Start with [PUBLIC_EVIDENCE_INDEX.md](../PUBLIC_EVIDENCE_INDEX.md).
 
-The strongest currently public computational artifact is [E007 timing sensitivity](../E007_TIMING_RESULT.md): 26 tests pass in the released package; 17/72 selected synthetic cases change classification under the tested timing semantics. The result is deliberately scoped: it is synthetic, implementation-dependent, and not independent scientific replication.
+The strongest currently public computational artifact is [E007 timing sensitivity](../E007_TIMING_RESULT.md): 27 tests pass in the released package; 17/72 selected synthetic cases change classification under the tested timing semantics. The result is deliberately scoped: it is synthetic, implementation-dependent, and not independent scientific replication.
 
 ### Current funding state
 
@@ -109,7 +109,7 @@ Project Intersection은 권력·인센티브·시점·practical exit·복구능�
 
 [공개 증거 색인](../PUBLIC_EVIDENCE_INDEX.md)부터 확인할 수 있다.
 
-현재 가장 강한 공개 계산 artifact는 [E007 시점 민감도](../E007_TIMING_RESULT.md)다. 공개 묶음에서 테스트 26개가 통과했고, 선택된 합성조건 72개 중 17개에서 시험된 시점 규칙에 따라 분류가 변한다. 이 결과는 의도적으로 좁게 해석한다. 합성·구현의존 결과이며 독립 과학 복제가 아니다.
+현재 가장 강한 공개 계산 artifact는 [E007 시점 민감도](../E007_TIMING_RESULT.md)다. 공개 묶음에서 테스트 27개가 통과했고, 선택된 합성조건 72개 중 17개에서 시험된 시점 규칙에 따라 분류가 변한다. 이 결과는 의도적으로 좁게 해석한다. 합성·구현의존 결과이며 독립 과학 복제가 아니다.
 
 ### 현재 자금상태
 
