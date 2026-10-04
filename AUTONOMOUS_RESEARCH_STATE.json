@@ -4,8 +4,8 @@
   "public_repository": "gmodrasa7-rgb/project-intersection-public",
   "canonical_boundary": "Public continuation pointer only; source artifacts and commit history outrank this state file.",
   "recovery_entrypoint": "AUTONOMOUS_RESEARCH_LOOP.md",
-  "current_public_head": "322e71f8e7a6cad76a334df81abff3796b8b8848",
-  "updated_at": "2026-10-05T00:20:00Z",
+  "current_public_head": "97c3ccf07a2834220acf155f709d66efedefe201",
+  "updated_at": "2026-10-04T23:58:00Z",
   "execution_policy": {
     "atomic_material_delta_per_run": 1,
     "require_prior_art_gate": true,
@@ -206,13 +206,13 @@
     },
     {
       "id": "F005_CORE_PRIOR_ART_ATTRIBUTION_COVERAGE",
-      "status": "MODIFY_PREFERENCE_SOVEREIGNTY_BROAD_NOVELTY_KILLED_SIX_PREDICATES_SEPARATED_REMAINING_RESIDUALS_REQUIRE_REVIEW",
+      "status": "MODIFY_UNIVERSAL_ADVANCEMENT_BROAD_NOVELTY_KILLED_CAPABILITY_CONTROL_DECOMPOSITION_AI_SCOPE_UNRESOLVED_POWER_RELEASE_REVIEW_PENDING",
       "question": "Which public Project Intersection core-theory and A–Z gap labels overlap established prior research, and what residual claims remain after attribution?",
-      "evidence_boundary": "Repository-wide public concept audit mapped strong direct/adjacent prior art for cooperation/collective action, exploration-exploitation, diversity/search, exit, closed-world reasoning, bounded rationality, local fitness traps, commons extraction, lock-in, irreversibility/option value, path dependence, bargaining, information asymmetry/moral hazard, coalition-proof stability, measurement invariance, privacy, consent/autonomy, and human-AI complementarity. This is an attribution audit, not validation of Project claims. Power-Reversal components now have direct baselines: reversibility/role exchange, Rawlsian impartial-position reasoning, affected-stakeholder participation, role/capability-conditioned accountability, auditability, appeal, and redress. The exact co-scaling inequality remains only an unvalidated operational composition. Creator–successor non-ownership is now decomposed into artifact/IP ownership, legal personhood/standing, moral patienthood, and autonomy/consent. U.S. copyrightability doctrine, Belmont human-subject autonomy, a European Parliament liability-personality proposal, and an independent robot-rights critique do not collapse these predicates. Preference sovereignty is additionally bounded by Frankfurt second-order volitions, Dworkin reflective autonomy, Elster/Nussbaum adaptive-preference work, Colburn on autonomy, and recommender-system autonomy/manipulation literature.",
+      "evidence_boundary": "Repository-wide public concept audit mapped strong direct/adjacent prior art for cooperation/collective action, exploration-exploitation, diversity/search, exit, closed-world reasoning, bounded rationality, local fitness traps, commons extraction, lock-in, irreversibility/option value, path dependence, bargaining, information asymmetry/moral hazard, coalition-proof stability, measurement invariance, privacy, consent/autonomy, and human-AI complementarity. This is an attribution audit, not validation of Project claims. Power-Reversal components now have direct baselines: reversibility/role exchange, Rawlsian impartial-position reasoning, affected-stakeholder participation, role/capability-conditioned accountability, auditability, appeal, and redress. The exact co-scaling inequality remains only an unvalidated operational composition. Creator–successor non-ownership is now decomposed into artifact/IP ownership, legal personhood/standing, moral patienthood, and autonomy/consent. U.S. copyrightability doctrine, Belmont human-subject autonomy, a European Parliament liability-personality proposal, and an independent robot-rights critique do not collapse these predicates. Preference sovereignty is additionally bounded by Frankfurt second-order volitions, Dworkin reflective autonomy, Elster/Nussbaum adaptive-preference work, Colburn on autonomy, and recommender-system autonomy/manipulation literature. Universal Advancement Access is now bounded by Sen/Nussbaum capability theory, equality-of-opportunity measurement, and disability-rights applications: formal access and equal means do not establish equal substantive opportunity because conversion factors differ.",
       "source_artifact": "CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md",
-      "decision": "MODIFY_REMOVE_OVERLAP_FROM_NOVELTY_PREFERENCE_SOVEREIGNTY_TO_SIX_PREDICATES",
-      "strongest_counterexample": "Purely AI-generated output can lack copyright without the AI becoming an author, legal person, moral patient, or non-owned rights-bearer. Conversely, legal personhood can exist without sentience. Creation origin therefore proves neither ownership nor non-ownership.",
-      "next_cheapest_discriminating_check": "Audit universal advancement access and peaceful power release next. Preference sovereignty is now decomposed into current expression, reflective endorsement, formation provenance, revision control, action authority, and standing; test any residual only against established autonomy/adaptive-preference baselines.",
+      "decision": "MODIFY_REMOVE_OVERLAP_FROM_NOVELTY_UNIVERSAL_ADVANCEMENT_TO_CAPABILITY_AND_CONTROL_AUDIT",
+      "strongest_counterexample": "Holding nominal access and resources constant can still yield unequal substantive opportunity because personal, social, and environmental conversion factors differ. Conversely, forcing a provider-defined achievement can destroy the choice that capability was meant to protect.",
+      "next_cheapest_discriminating_check": "Audit Power Release Compatibility against credible commitment, commitment problems, power-sharing, peaceful-transfer, delegation, and exit literature. Universal Advancement Access is now narrowed to an unvalidated capability-and-control checklist.",
       "last_power_reversal_prior_art_correction": {
         "target": "Power-Reversal stability and AUTONOMY_GAIN <= COUNTERPARTY_AUDIT_EXIT_RECOVERY_GAIN",
         "established_baselines": [
@@ -240,16 +240,38 @@
         "independent_critical_lineage": "Birhane, van Dijk, and Pasquale (2024) warn that robot-rights framing can redirect attention from human welfare, accountability, and concentrated capital.",
         "nonclaim": "This audit neither grants nor denies rights to current or future AI systems.",
         "falsification": "Apply preregistered predicates to a human child, corporation, nonhuman animal, current deployed AI service, and hypothetical welfare-bearing successor. Kill any residual rule that conflates object ownership with entity standing or changes under mere relabeling."
+      },
+      "last_universal_advancement_correction": {
+        "target": "Universal Advancement Access",
+        "established_baselines": [
+          "Amartya Sen, Equality of What? (1979) and capability approach",
+          "Martha Nussbaum capability theory",
+          "UN Convention on the Rights of Persons with Disabilities, Article 24",
+          "OECD opportunity measurement"
+        ],
+        "separated_predicates": [
+          "means and formal access",
+          "personal/social/environmental conversion conditions",
+          "substantive opportunity",
+          "voluntary uptake and refusal",
+          "controller and beneficiary effects",
+          "standing and scope"
+        ],
+        "decision": "KILL_BROAD_PROJECT_NOVELTY_MODIFY_TO_CAPABILITY_AND_CONTROL_AUDIT_HOLD_ARTIFICIAL_AGENT_SCOPE_UNRESOLVED",
+        "strongest_counterexample": "Equal means do not imply equal capability, while compulsory outcomes can erase agency and provider-defined advancement can increase controller power.",
+        "residual_candidate": "A governance checklist linking substantive opportunity to controller/beneficiary, contestability, refusal, practical exit, and rollback.",
+        "falsification": "Freeze capability-baseline variables and kill the residual scientific claim if blinded coders obtain no reliable held-out discrimination from the added control/exit variables.",
+        "nonclaim": "This audit does not establish which current or future artificial agents have legal or moral standing."
       }
     }
   ],
   "recent_material_delta": {
-    "type": "f005_preference_sovereignty_prior_art_decomposition",
-    "summary": "Preference Sovereignty broad novelty was rejected against Frankfurt/Dworkin autonomy, Elster/Nussbaum adaptive preferences, Colburn, and recommender-system autonomy literature. The Project label is retained only as a six-predicate governance decomposition.",
-    "basis_head": "RESOLVE_FROM_GIT_HISTORY_PRE_WRITE",
-    "source_artifact": "CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md#8",
+    "type": "f005_universal_advancement_capability_prior_art_narrowing",
+    "summary": "Universal Advancement Access broad novelty was rejected against capability and equality-of-opportunity prior art. The label is retained only as a means/conversion/opportunity/refusal/controller/standing governance decomposition; artificial-agent scope remains unresolved.",
+    "basis_head": "d92a7fff7a1ad902734361d293389f1c863f642f",
+    "source_artifact": "CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md#9",
     "state_commit": "RESOLVE_FROM_GIT_HISTORY_AFTER_WRITE",
-    "scientific_support": "Frankfurt 1971; Dworkin 1988; Elster 1982/1983; Nussbaum 2000; Colburn 2011; Bonicalzi et al. 2023"
+    "scientific_support": "Sen 1979; capability-approach literature; UN CRPD Article 24; OECD 2025 opportunity measurement"
   },
   "human_only_gates": [
     "contracts_terms_ip_license_rights_changes",
@@ -261,13 +283,13 @@
   ],
   "last_read_back": {
     "status": "VERIFIED_MATERIAL_TARGET_PRE_STATE_WRITE",
-    "verified_commit": "322e71f8e7a6cad76a334df81abff3796b8b8848",
+    "verified_commit": "97c3ccf07a2834220acf155f709d66efedefe201",
     "verified_blobs": {
-      "CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md": "442781311439874b1c47ff640c4732842cf34f0c"
+      "CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md": "67409d1401386aa46288d2168b08a4a57e6bde64"
     },
-    "note": "The crosswalk preserves the four-predicate split, strongest counterexamples, KILL/MODIFY/HOLD decision, nonclaim, independent critical lineage, and reversible contrast-case test. State-write completion requires post-write read-back."
+    "note": "The crosswalk preserves direct prior art, predicate decomposition, equal-means/forced-functioning/provider-capture/scope counterexamples, KILL/MODIFY/HOLD decision, nonclaim, and held-out falsification route. State-write completion requires post-write read-back."
   },
-  "next_checkpoint": "F005: audit Universal Advancement Access and Power Release Compatibility against capability/equality-of-opportunity, credible commitment, power-sharing, and peaceful-transfer literature. F004, F003, and F001 remain separate frontiers.",
+  "next_checkpoint": "F005: audit Power Release Compatibility against credible commitment, commitment problems, power-sharing, peaceful transfer, delegation, and practical exit. F004 incremental-value holdout, F003 historical identification, and F001 external lineage remain separate frontiers.",
   "current_public_head_semantics": "Head observed immediately before this state-file write. The commit containing this file must be resolved from Git history because a Git-tracked file cannot self-embed its own containing commit hash without changing that hash.",
   "resolved_process_findings": [
     {
@@ -280,17 +302,17 @@
     }
   ],
   "last_checkpoint_result": {
-    "checkpoint": "F005 preference sovereignty prior-art audit",
-    "decision": "KILL_BROAD_NOVELTY_MODIFY_TO_SIX_PREDICATES_HOLD_AI_STANDING_UNRESOLVED",
+    "checkpoint": "F005 Universal Advancement Access prior-art audit",
+    "decision": "KILL_BROAD_NOVELTY_MODIFY_TO_CAPABILITY_AND_CONTROL_AUDIT_HOLD_ARTIFICIAL_AGENT_SCOPE_UNRESOLVED",
     "performed": [
-      "Mapped reflective autonomy and second-order preference antecedents",
-      "Mapped adaptive-preference and constrained-feasible-set antecedents",
-      "Mapped recommender-system manipulation/autonomy literature",
-      "Separated expression, endorsement, formation provenance, revision control, action authority, and standing"
+      "Read current public continuity protocol and state",
+      "Mapped Sen/Nussbaum capability and equality-of-opportunity baselines",
+      "Separated means, conversion, substantive opportunity, refusal, controller benefit, and standing",
+      "Updated the core prior-art crosswalk"
     ],
-    "result": "Current preference is neither sufficient evidence of autonomous formation nor automatically invalid because it was externally influenced. Preference, action permission, and standing are separate predicates.",
-    "strongest_counterexample": "A sincerely endorsed adaptive preference can arise from constrained options, while externally caused preference change can also reflect truthful learning; therefore neither endorsement nor external origin alone identifies autonomy.",
-    "power_reversal": "Controllers cannot invalidate disfavored preferences merely because they were shaped, and agents cannot use present preference as automatic authority for external harm. The same evidence burden applies in both directions."
+    "result": "Universal Advancement Access is not a new general theory. The remaining Project contribution is only an unvalidated governance checklist connecting substantive opportunity to contestability, refusal, exit, and rollback.",
+    "strongest_counterexample": "Equal formal access can coexist with unequal substantive capability, while guaranteeing provider-defined outcomes can coerce the subject and increase controller power.",
+    "power_reversal": "A provider may call dependency-producing access 'universal advancement'; a subject may also demand costly outcomes that crowd out others. Controller benefit, conversion cost, refusal, and distributional effects must be visible in both directions."
   },
   "resolved_research_findings": [
     {
