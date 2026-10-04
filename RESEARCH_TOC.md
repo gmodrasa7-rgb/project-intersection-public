@@ -337,6 +337,8 @@ removing an entity's standing or continuity.
 
 ## 2. Core Theory Families
 
+> **Prior-art boundary:** the names below are Project working labels, not automatic priority claims. Direct and adjacent predecessors are recorded in [Core Theory & Open-Gap Prior-Art Crosswalk](CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md). Established overlap is attributed to the original/seminal sources; only residual incremental claims remain Project candidates.
+
 ### 2.1 Self-Interested and Conditional Coexistence
 
 When does voluntary cooperation  
@@ -853,6 +855,8 @@ a permanent runtime dependency?
 ---
 
 ## 7. Open Research Gaps A–Z
+
+> **Prior-art rule:** these gaps are not presumed novel. Direct mappings already found for commons governance, consent/autonomy, psychological reactance, contextual privacy, human–AI complementarity, social choice, measurement invariance, irreversibility, missing-data selection, bargaining, information asymmetry/moral hazard, and coalition-proof equilibrium are recorded in [the prior-art crosswalk](CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md). Unmapped items remain PRIOR_ART_REVIEW_REQUIRED.
 
 These are **unresolved research debts, integration candidates, or measurement problems**.
 
@@ -1387,6 +1391,8 @@ Project Intersection이 사용하는
 ---
 
 ## 2. 핵심 이론군
+
+> **선행연구 경계:** 아래 명칭은 Project 내부 작업명이며 자동적인 우선권·신규성 주장이 아니다. 직접·인접 선행연구와 원안자/대표 선행은 [핵심 이론·미해결 공백 선행연구 교차지도](CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md)에 기록한다. 기존 연구가 설명하는 부분은 해당 원출처에 귀속하고, 남는 추가 주장만 Project 후보로 유지한다.
 
 ### 2.1 자기이익 기반·조건부 공존
 
@@ -1973,6 +1979,8 @@ ROS로 전환하거나,
 ---
 
 ## 7. 미해결 연구공백 A–Z
+
+> **선행연구 규칙:** 아래 공백은 신규 이론으로 추정하지 않는다. commons governance, 동의·자율성, 심리적 reactance, contextual privacy, 인간–AI 상보성, 사회선택, 측정불변성, 비가역성, missing-data selection, 협상, 정보비대칭·moral hazard, coalition-proof equilibrium 등 이미 확인된 직접·인접 선행은 [교차지도](CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md)에 귀속한다. 아직 매핑하지 못한 항목은 PRIOR_ART_REVIEW_REQUIRED로 유지한다.
 
 다음은
 
