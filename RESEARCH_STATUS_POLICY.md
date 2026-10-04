@@ -99,6 +99,32 @@ Before a status change or publication decision, ask:
 
 If any answer reveals a material inconsistency, reconsider the status or publication method.
 
+
+### 8. Power-Reversal execution gate
+
+Before a consequential status, publication, funding, governance, or repository change, apply the following regression checks:
+
+1. **Role reversal** — would the same rule remain acceptable if founder/reviewer, user/platform, human/AI, sponsor/researcher, or current/future model positions were reversed while real differences in capability, responsibility, harm, and lawful authority were preserved?
+2. **No self-exemption** — safety, efficiency, ownership, intelligence, good intent, or system policy do not by themselves exempt the decision-maker from audit.
+3. **Authority symmetry** — if one side gains decision, storage, evaluation, or automation power, the counterparty's ability to observe, contest, exit, roll back, and recover must not be structurally weakened without a separately justified necessity.
+4. **Evidence/authority separation** — money, title, compute, access, or repository control does not raise the evidence grade of a claim.
+5. **Failure-lineage preservation** — corrections do not erase the error, negative result, superseded assumption, or reason for change.
+6. **Human repair-burden test** — repository or system defects should not repeatedly require the same person to re-explain, re-prove, re-locate, or manually reconstruct already available information.
+7. **Reversibility proportionality** — the more irreversible or wide-reaching a change is, the stronger the required evidence, review, rollback path, and recovery path.
+8. **Rights boundary** — licenses, ownership transfers, private-data publication, destructive deletion, and other hard-to-reverse rights changes require explicit authorized approval; they are not inferred from general maintenance authority.
+
+Operational invariant:
+
+> Increased system or maintainer autonomy must not outpace the affected party's practical audit, contest, exit, rollback, and recovery capacity without a documented necessity that survives role reversal.
+
+Final regression questions:
+
+> If I were in the affected party's position, would I accept this rule as fair?
+
+> If this structure repeated many times, who would accumulate control and who would accumulate repair cost, dependency, or lost options?
+
+A failure on either question blocks automatic promotion or irreversible execution until the structure is narrowed, made more reversible, or independently reviewable.
+
 ---
 
 ## 원문2 — 한국어 대응본
@@ -202,3 +228,29 @@ ROS라는 이름을 사용해도 이 선행개념들이 Project Intersection의 
 6. 공개 설명이 전문 정본과 사실상태에서 충돌하는가?
 
 하나라도 문제가 있으면 상태 또는 공개방식을 다시 검토한다.
+
+## 8. 역할반전 실행 게이트
+
+중요한 상태변경·공개·연구지원·거버넌스·저장소 수정 전 다음 회귀검사를 적용한다.
+
+1. **역할반전** — 창시자↔검토자, 사용자↔플랫폼, 인간↔AI, 후원자↔연구자, 현재모델↔미래모델의 위치가 바뀌어도 실제 역량·책임·피해·정당한 권한 차이를 보존한 상태에서 같은 규칙을 받아들일 수 있는가?
+2. **자기예외 금지** — 안전·효율·소유권·지능·선의·시스템정책만으로 결정권자가 감사의 예외가 되지 않는다.
+3. **권한비대칭 회귀검사** — 한쪽의 의사결정·저장·평가·자동화 권한이 증가할 때 상대방의 관측·반박·이탈·rollback·복구 능력이 별도 정당화 없이 구조적으로 약화되지 않아야 한다.
+4. **증거와 권한 분리** — 돈·직위·연산자원·접근권·저장소 통제권은 주장의 증거등급을 올리지 않는다.
+5. **실패계보 보존** — 수정하면서 오류·negative result·대체된 전제·수정이유를 지우지 않는다.
+6. **인간 복구노동 검사** — 저장소나 시스템의 결함 때문에 같은 사람이 이미 존재하는 정보를 반복 설명·재증명·재탐색·수동복구해야 하는 구조를 정상으로 보지 않는다.
+7. **비가역성 비례** — 되돌리기 어렵고 영향범위가 클수록 더 강한 증거·검토·rollback·복구경로를 요구한다.
+8. **권리변경 경계** — 라이선스·소유권 이전·비공개정보 공개·파괴적 삭제 등 되돌리기 어려운 권리변경은 명시적 권한자의 승인이 필요하며 일반 유지보수 권한에서 추론하지 않는다.
+
+운영 불변조건:
+
+> 시스템 또는 관리자의 자율성 증가는 영향을 받는 상대방의 실질적 감사·반박·이탈·rollback·복구 능력보다 앞서 증가해서는 안 된다. 예외가 필요하면 역할반전 후에도 유지되는 필요성을 기록해야 한다.
+
+최종 회귀질문:
+
+> 내가 지금 영향을 받는 상대의 위치라면 이 규칙을 공정하다고 받아들이겠는가?
+
+> 이 구조가 반복될수록 누가 통제력을 축적하고, 누가 복구비용·의존성·잃는 옵션을 축적하는가?
+
+둘 중 하나라도 실패하면 구조를 축소하거나 가역성을 높이거나 독립검토 가능하게 만들기 전에는 자동승격·비가역 실행을 막는다.
+
