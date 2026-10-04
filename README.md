@@ -14,6 +14,7 @@ Project Intersection is an independent, falsification-first research program stu
 - [E007 timing sensitivity → E007_TIMING_RESULT.md](E007_TIMING_RESULT.md): released executable synthetic result; 26 tests pass; 17/72 selected synthetic cases change classification under the tested timing semantics.
 - [Research Status & Reassessment Policy → RESEARCH_STATUS_POLICY.md](RESEARCH_STATUS_POLICY.md)
 - [Research Contents Map → RESEARCH_TOC.md](RESEARCH_TOC.md)
+- [Prior Art & Attribution → PRIOR_ART_AND_ATTRIBUTION.md](PRIOR_ART_AND_ATTRIBUTION.md)
 
 **Current hard limits**
 
@@ -40,6 +41,7 @@ Project Intersection은 **권력·인센티브·시점·practical exit·복구�
 - [E007 시점 민감도 → E007_TIMING_RESULT.md](E007_TIMING_RESULT.md): 실행 가능한 공개 합성결과; 테스트 26개 통과; 선택된 합성조건 72개 중 17개에서 시험된 시점 규칙에 따라 분류 변화.
 - [연구 상태·재평가 정책 → RESEARCH_STATUS_POLICY.md](RESEARCH_STATUS_POLICY.md)
 - [연구 내용 목차 → RESEARCH_TOC.md](RESEARCH_TOC.md)
+- [선행연구·원안자 귀속 → PRIOR_ART_AND_ATTRIBUTION.md](PRIOR_ART_AND_ATTRIBUTION.md)
 
 **현재의 강한 한계**
 
@@ -63,8 +65,8 @@ Project Intersection은 **권력·인센티브·시점·practical exit·복구�
 - [Research Overview → RESEARCH_OVERVIEW.md](RESEARCH_OVERVIEW.md) — detailed concepts and research framing / 상세 개념·연구 프레임
 - [Research Contents Map → RESEARCH_TOC.md](RESEARCH_TOC.md) — claim families, public links, unresolved gaps / 주장군·공개 링크·미해결 공백
 - [Public Evidence Index → PUBLIC_EVIDENCE_INDEX.md](PUBLIC_EVIDENCE_INDEX.md) — what is actually checkable now / 현재 실제 검증 가능한 것
+- [Prior Art & Attribution → PRIOR_ART_AND_ATTRIBUTION.md](PRIOR_ART_AND_ATTRIBUTION.md) — source/originator attribution and novelty boundaries / 원출처·원안자·신규성 경계
 
 The landing page is intentionally short. Detailed theory is separated so that a first-time reviewer can reach evidence and reproduction paths before reading the full research narrative.
 
 첫 방문자가 전체 이론서술보다 증거·재현경로를 먼저 찾을 수 있도록 landing page는 의도적으로 짧게 유지한다.
-
