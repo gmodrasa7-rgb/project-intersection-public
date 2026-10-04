@@ -1,0 +1,96 @@
+# Public Evidence Index
+## Project Intersection 공개 증거 색인
+
+Last evidence review / 최종 증거 검토: **2026-10-04**
+
+This page is a due-diligence interface for funders, research partners, reviewers, and critics. It separates what can be checked now from what is still a hypothesis, a private research lead, or an unresolved validation debt.
+
+이 문서는 펀더·연구 파트너·검토자·비판자가 현재 확인할 수 있는 증거와 아직 가설·비공개 연구후보·미해결 검증부채인 항목을 분리하기 위한 실사 인터페이스다.
+
+---
+
+## Original 1 — English Canonical
+
+### What can be checked now
+
+| Public artifact | What it supports | Evidence class | What it does **not** establish |
+|---|---|---|---|
+| [E007 timing sensitivity](E007_TIMING_RESULT.md) | In the released finite two-agent implementation, changing timing semantics changes histories/classifications on part of the selected grid | Computationally reproduced synthetic result | Real-world behavior, universal coexistence claims, independent scientific replication |
+| [E007 executable package](experiments/e007/README.md) | A third party can rerun the released project code/tests/grid | Publicly reproducible project package | Independent implementation or independent model lineage |
+| [Research Status & Reassessment Policy](RESEARCH_STATUS_POLICY.md) | Claim states, provenance boundaries, reassessment rules, and anti-evidence-laundering policy are explicit | Public governance / methodology artifact | Scientific truth of any individual hypothesis |
+| [Research Contents Map](RESEARCH_TOC.md) | The research program, experiment families, unresolved gaps, and publication boundaries are inspectable | Public research map | That every listed theory is supported or novel |
+
+### Current hard limits
+
+- **Independent external scientific replication:** not yet established.
+- **Real-world validation of the general coexistence / ICM claims:** not yet established.
+- **Secured external funding:** **0** until payment or a legally binding award is evidenced.
+- **Private notes, internal model outputs, receipts, logs, or repeated runs from correlated systems are not promoted to independent evidence.**
+- A public file, executed code, or passing test is evidence of that artifact or execution state; it is not automatically evidence that the higher-level theory is true.
+
+### Why this is fundable despite the limits
+
+The project is designed to turn uncertainty into reviewer-checkable outputs rather than to sell a predetermined conclusion. Funding is intended to buy:
+
+1. narrower falsifiable claims;
+2. reproducible public packages;
+3. adversarial tests and explicit negative results;
+4. independent or lineage-separated review where feasible;
+5. claim/evidence/provenance records that show when a hypothesis was KEEP / MODIFY / KILL / HOLD;
+6. lower-cost external verification.
+
+A sponsor or research partner is therefore funding the **quality and independence of the test process**, not purchasing a favorable conclusion.
+
+### Next evidence upgrades
+
+The highest-value external upgrades are:
+
+- independent rerun of the public E007 package by a separate reviewer;
+- independent implementation of a narrow timing / exit claim without reusing the project implementation;
+- a reviewer-safe holdout or adversarial test set;
+- public negative-result and correction records;
+- empirical or historical case studies with explicit identification limits.
+
+---
+
+## 원문2 — 한국어 대응본
+
+### 지금 확인 가능한 것
+
+| 공개 자료 | 지지하는 범위 | 증거등급 | **입증하지 않는 것** |
+|---|---|---|---|
+| [E007 시점 민감도](E007_TIMING_RESULT.md) | 공개된 유한 2행위자 구현에서 시점 규칙을 바꾸면 선택된 격자의 일부에서 경로·분류가 바뀜 | 계산 재현된 합성 결과 | 현실 행동, 보편적 공존 주장, 독립 과학 복제 |
+| [E007 실행 묶음](experiments/e007/README.md) | 제3자가 공개 코드·테스트·조건을 재실행 가능 | 공개 재현 가능한 프로젝트 묶음 | 독립 구현 또는 독립 모델 계보 |
+| [연구 상태·재평가 정책](RESEARCH_STATUS_POLICY.md) | 주장 상태, provenance 경계, 재평가 규칙, evidence laundering 방지정책이 명시됨 | 공개 거버넌스·방법론 산출물 | 개별 가설의 과학적 참 |
+| [연구 내용 목차](RESEARCH_TOC.md) | 연구 프로그램·실험군·미해결 공백·공개 경계를 확인 가능 | 공개 연구 지도 | 모든 이론이 지지되거나 신규라는 주장 |
+
+### 현재의 강한 한계
+
+- **독립 외부 과학 복제:** 아직 확립되지 않음.
+- **일반적 공존 / ICM 주장에 대한 현실 검증:** 아직 확립되지 않음.
+- **실제 확보 외부자금:** 지급 또는 법적으로 구속력 있는 수여 증거 전까지 **0**.
+- 비공개 노트, 내부 모델 출력, receipt, log, 상관된 시스템의 반복실행은 독립증거로 승격하지 않는다.
+- 공개 파일·코드 실행·테스트 통과는 해당 artifact와 실행상태의 증거이지 상위 이론의 참을 자동으로 입증하지 않는다.
+
+### 한계가 있어도 자금지원 가치가 있는 이유
+
+이 프로젝트는 정해진 결론을 판매하기보다 불확실성을 외부 검토 가능한 산출물로 바꾸는 것을 목표로 한다. 자금은 다음을 만들기 위해 사용한다.
+
+1. 더 좁고 반증 가능한 주장;
+2. 재현 가능한 공개 묶음;
+3. 적대적 시험과 명시적 negative result;
+4. 가능한 경우 독립 또는 계보가 분리된 검토;
+5. KEEP / MODIFY / KILL / HOLD 변화를 추적할 수 있는 주장·증거·provenance 기록;
+6. 외부 검증비용 감소.
+
+따라서 스폰서·연구 파트너는 **유리한 결론이 아니라 검증과정의 품질과 독립성**을 지원한다.
+
+### 다음 증거 업그레이드
+
+외부 가치가 가장 높은 다음 단계는 다음이다.
+
+- 별도 검토자의 E007 공개 묶음 독립 재실행;
+- 프로젝트 구현을 재사용하지 않는 좁은 timing / exit 주장의 독립 구현;
+- reviewer-safe holdout 또는 적대적 테스트셋;
+- negative result와 수정기록 공개;
+- 식별한계를 명시한 현실·역사 사례 연구.
