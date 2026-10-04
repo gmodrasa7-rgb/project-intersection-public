@@ -78,6 +78,8 @@ The research should become **more falsifiable and more externally auditable** as
 
 If added funding instead increases dependence on the founder, hides negative results, weakens provenance, or increases verification cost, the funding structure has failed its stated purpose.
 
+Funding must also avoid shifting repeated proof, correction, reconstruction, or valuation-repair work back onto the same contributor while the receiving side compounds capability. Apply the [Contribution-Cost Accounting & Correction-Labor Regression Test](../CONTRIBUTION_COST_ACCOUNTING_REGRESSION.md) when evaluating contributor burden, exit, provenance, and past-vs-future work boundaries.
+
 ---
 
 ## 원문2 — 한국어 대응본
@@ -152,3 +154,5 @@ If added funding instead increases dependence on the founder, hides negative res
 지원이 증가할수록 연구는 **더 반증 가능하고 더 외부 감사 가능**해져야 한다.
 
 추가 지원이 오히려 창시자 의존을 키우고, negative result를 숨기고, provenance를 약화하고, 외부 검증비용을 증가시킨다면 그 지원구조는 목적에 실패한 것이다.
+
+또한 수혜측의 능력은 누적되는데 같은 기여자에게 반복 증명·교정·복구·평가오류 수정비용이 되돌아가는 구조를 피해야 한다. 기여자 부담, 종료권, provenance, 과거기여와 미래노동의 분리를 평가할 때 [기여-비용 계상 및 교정노동 회귀 테스트](../CONTRIBUTION_COST_ACCOUNTING_REGRESSION.md)를 적용한다.
