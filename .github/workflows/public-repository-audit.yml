@@ -7,6 +7,9 @@ on:
       - "RESEARCH_STATUS_POLICY.md"
       - "RESEARCH_TOC.md"
       - "PUBLIC_EVIDENCE_INDEX.md"
+      - "AUTONOMOUS_RESEARCH_LOOP.md"
+      - "AUTONOMOUS_RESEARCH_STATE.json"
+      - "CONTRIBUTION_COST_ACCOUNTING_REGRESSION.md"
       - "funding/**"
       - "experiments/e007/PROVENANCE.md"
       - "experiments/e007/LICENSE_STATUS.md"
@@ -41,6 +44,7 @@ jobs:
         run: |
           python - <<'PY'
           from pathlib import Path
+          import json
           import re
           import sys
 
@@ -57,6 +61,9 @@ jobs:
           provenance = Path("experiments/e007/PROVENANCE.md").read_text(encoding="utf-8")
           license_status = Path("experiments/e007/LICENSE_STATUS.md").read_text(encoding="utf-8")
           pr_template = Path(".github/pull_request_template.md").read_text(encoding="utf-8")
+          autonomous_loop = Path("AUTONOMOUS_RESEARCH_LOOP.md").read_text(encoding="utf-8")
+          autonomous_state = json.loads(Path("AUTONOMOUS_RESEARCH_STATE.json").read_text(encoding="utf-8"))
+          contribution_cost = Path("CONTRIBUTION_COST_ACCOUNTING_REGRESSION.md").read_text(encoding="utf-8")
 
           # Landing-page regression: keep first-review cost bounded.
           require(len(readme.splitlines()) <= 200, "README exceeded 200 lines; move detailed material to linked documents.")
@@ -65,8 +72,35 @@ jobs:
               "RESEARCH_STATUS_POLICY.md",
               "RESEARCH_TOC.md",
               "RESEARCH_OVERVIEW.md",
+              "AUTONOMOUS_RESEARCH_LOOP.md",
+              "AUTONOMOUS_RESEARCH_STATE.json",
+              "CONTRIBUTION_COST_ACCOUNTING_REGRESSION.md",
           ]:
               require(link in readme, f"README lost required navigation link: {link}")
+
+          # Autonomous continuity must remain resumable without founder reconstruction.
+          require(autonomous_state.get("schema_version") == "1.0", "Autonomous state schema version changed unexpectedly.")
+          require(autonomous_state.get("status") in {"ACTIVE_CONTINUITY", "HOLD", "UNRESOLVED"}, "Autonomous state has invalid status.")
+          require(autonomous_state.get("recovery_entrypoint") == "AUTONOMOUS_RESEARCH_LOOP.md", "Autonomous recovery entrypoint drifted.")
+          require(bool(autonomous_state.get("unresolved_frontier")), "Autonomous state lost unresolved frontier.")
+          require(bool(autonomous_state.get("next_checkpoint")), "Autonomous state lost next checkpoint.")
+          policy_state = autonomous_state.get("execution_policy", {})
+          for key in [
+              "require_prior_art_gate",
+              "require_read_back",
+              "preserve_negative_failure_lineage",
+              "no_user_reconstruction_burden",
+              "no_self_granted_authority",
+          ]:
+              require(policy_state.get(key) is True, f"Autonomous execution policy lost required invariant: {key}")
+          for phrase in [
+              "상태복구 → 무결성검사",
+              "사용자 부재 시 규칙",
+              "WRITE_SUCCESS && READ_BACK_MATCH && REQUIRED_TESTS_PASS",
+              "명시적 인간 승인 없이 해서는 안 되는 것",
+          ]:
+              require(phrase in autonomous_loop, f"Autonomous continuity loop lost required control: {phrase}")
+          require("benefit ledger" in contribution_cost.lower() and "cost ledger" in contribution_cost.lower(), "Contribution-cost regression lost separate ledger rule.")
 
           # Declared bilingual policy and power-reversal gate must remain inspectable.
           require("Original 1 — English Canonical" in policy, "Research status policy lost English canonical section.")
