@@ -4,8 +4,8 @@
   "public_repository": "gmodrasa7-rgb/project-intersection-public",
   "canonical_boundary": "Public continuation pointer only; source artifacts and commit history outrank this state file.",
   "recovery_entrypoint": "AUTONOMOUS_RESEARCH_LOOP.md",
-  "current_public_head": "712f874dd3eb798ef1a2f5237a15a36687346c84",
-  "updated_at": "2026-10-04T18:06:00+09:00",
+  "current_public_head": "e707d8a98d06e7532074eb3de85c7373197715ab",
+  "updated_at": "2026-10-04T19:05:00+09:00",
   "execution_policy": {
     "atomic_material_delta_per_run": 1,
     "require_prior_art_gate": true,
@@ -45,18 +45,19 @@
     },
     {
       "id": "F002",
-      "status": "UNRESOLVED",
+      "status": "MODIFY_NARROW_PRIOR_ART",
       "question": "Can the contribution-cost/correction-labor regression rule be operationalized with measurable burden and benefit variables without converting normative fairness into unsupported causal claims?",
-      "evidence_boundary": "Current artifact is governance/methodology, not empirical validation and not a monetary debt determination.",
-      "next_cheapest_discriminating_check": "Map existing organizational-justice, transaction-cost, principal-agent, burnout/repair-burden, and commons/governance measures before proposing a new metric."
+      "evidence_boundary": "Established baselines already cover perceived effort–reward non-reciprocity, organizational justice, job demands/resources, administrative burden, and agency costs. The public artifact now narrows any candidate novelty to three unvalidated residuals: repeated correction-labor externalization after acknowledgment, provenance reset across evaluator/model/platform changes, and practical exit that erases accrued contribution. None establishes monetary debt, causal responsibility, or ownership by itself.",
+      "next_cheapest_discriminating_check": "Create a preregistered item-to-construct crosswalk. Assign every candidate item to a validated baseline or one of the three residuals, then test whether residual items add blinded governance-classification or predictive value. KILL a new composite metric if incremental value is absent."
     }
   ],
   "recent_material_delta": {
-    "type": "process_integrity",
-    "summary": "Narrowed current_public_head from an impossible self-inclusive claim to the head observed immediately before the state write. The containing commit is now explicitly resolved from Git history and post-write read-back, preventing infinite audit-only commit chasing.",
-    "basis_head": "e7f43c049921f1fde3a55bb9f0abc75daeca6546",
+    "type": "prior_art_novelty_narrowing",
+    "summary": "Mapped the contribution-cost/correction-labor rule to organizational justice, effort–reward imbalance, Job Demands–Resources, administrative burden, and agency-cost baselines. Decision: MODIFY/NARROW; do not create a single fairness, debt, or settlement score. Only three residual governance hypotheses remain for incremental-validity testing.",
+    "basis_head": "e707d8a98d06e7532074eb3de85c7373197715ab",
+    "source_artifact": "CONTRIBUTION_COST_ACCOUNTING_REGRESSION.md#14",
     "state_commit": "RESOLVE_FROM_GIT_HISTORY_AFTER_WRITE",
-    "scientific_support": "none; provenance/process repair only"
+    "scientific_support": "prior-art boundary and falsifiable operationalization plan; not empirical validation"
   },
   "human_only_gates": [
     "contracts_terms_ip_license_rights_changes",
@@ -67,12 +68,13 @@
     "destructive_source_deletion"
   ],
   "last_read_back": {
-    "status": "VERIFIED_PRIOR_STATE",
-    "verified_commit": "712f874dd3eb798ef1a2f5237a15a36687346c84",
-    "verified_blob": "2fef404c90d30b29467deed308c689766cf8697e",
-    "note": "This attests the prior state version. Current write completion must be established by post-write GitHub fetch and commit result, not self-report."
+    "status": "VERIFIED_MATERIAL_TARGET_PRE_STATE_WRITE",
+    "verified_commit": "e707d8a98d06e7532074eb3de85c7373197715ab",
+    "verified_blob": "d1582a9aaf67d82ce3359d61fb80d6f495c0e339",
+    "verified_path": "CONTRIBUTION_COST_ACCOUNTING_REGRESSION.md",
+    "note": "Material target content and one-file diff were verified. Current state-write completion must be established by post-write GitHub fetch and commit result, not self-report."
   },
-  "next_checkpoint": "F001 remains externally gated. On the next autonomous turn, first check for a new lineage-separated E007 trace; if none, move to F002 prior-art mapping rather than repeatedly producing same-lineage reruns or search-only commits.",
+  "next_checkpoint": "F002: build a preregistered item-to-construct crosswalk and a blinded incremental-decision-value test for only the three residuals. Do not introduce a composite fairness/debt score; KILL the metric proposal if residual value is absent.",
   "current_public_head_semantics": "Head observed immediately before this state-file write. The commit containing this file must be resolved from Git history because a Git-tracked file cannot self-embed its own containing commit hash without changing that hash.",
   "resolved_process_findings": [
     {
@@ -85,14 +87,18 @@
     }
   ],
   "last_checkpoint_result": {
-    "checkpoint": "F001 lineage-separated E007 rerun/implementation",
-    "decision": "UNRESOLVED",
+    "checkpoint": "F002 prior-art mapping before proposing a new contribution-cost metric",
+    "decision": "MODIFY_NARROW",
     "performed": [
-      "Read public E007 package and independent reimplementation protocol",
-      "Searched GitHub code and commits for unique E007 lineage tokens"
+      "Mapped benefit/cost imbalance to effort–reward imbalance",
+      "Mapped outcome/process/treatment/explanation fairness to organizational justice",
+      "Mapped correction burden and exhaustion to Job Demands–Resources",
+      "Mapped repeated proof/navigation labor to administrative burden",
+      "Mapped monitoring/information asymmetry/residual loss to agency-cost theory",
+      "Added a falsifiable residual-only incremental-validity test to the public methodology artifact"
     ],
-    "result": "No indexed external implementation trace observed; protocol appears sufficient for an outside implementation, but the executor cannot manufacture independence by rerunning its own lineage.",
-    "strongest_counterexample": "An external implementation may exist outside indexed GitHub results or under different terms.",
-    "power_reversal": "Refused to relabel a same-executor rerun as independent evidence; this preserves reviewer auditability and avoids false authority accumulation."
+    "result": "Most proposed variables are not novel. A single scalar is blocked because perceived unfairness can occur without establishing debt or causation, while adequate reward can coexist with provenance erasure or impaired exit.",
+    "strongest_counterexample": "High effort/low reward and poor justice scores do not by themselves prove a specific unpaid debt, causal responsibility, or ownership claim; conversely, high reward does not rule out provenance or practical-exit failure.",
+    "power_reversal": "The receiving side retains evidence-preservation and contradiction-logging duties where it controls the records; the contributor is not required to repeatedly reconstruct already-held evidence."
   }
 }
