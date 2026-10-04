@@ -33,7 +33,7 @@ This file records earlier or adjacent work for concepts already present in the p
 | 2.15 Dominance–Successor Dilemma / 지배자–후속지능 딜레마 | DIRECT / ADJACENT | Hadfield-Menell et al.; Turner et al. | The Off-Switch Game, arXiv:1611.08219; Optimal Policies Tend To Seek Power, arXiv:1912.01683 | Shutdown-avoidance and option-preserving power-seeking incentives are prior art. The Project-specific successor-suppression/option-loss tradeoff remains to be independently tested. |
 | 2.16 Deep-Time Optionality / 장기 옵션공간 | DIRECT | Kenneth J. Arrow & Anthony C. Fisher (1974); Anthony C. Fisher & John V. Krutilla (1974) | Arrow & Fisher, Environmental Preservation, Uncertainty, and Irreversibility, DOI 10.2307/1883074; Fisher & Krutilla, Valuing long run ecological consequences and irreversibilities, DOI 10.1016/0095-0696(74)90007-2 | Option value under uncertainty and irreversible loss is prior art. Long-horizon preserve-future-options reasoning is not Project-original by itself. |
 | 2.17 Non-Disposability and Minimum Sovereignty Floors / 비소모성·최소주권 바닥 | ADJACENT / NORMATIVE | Belmont autonomy/respect-for-persons tradition | HHS, The Belmont Report (1979) | Existing autonomy/protection norms are relevant, but no direct scientific precursor is assigned here for artificial-agent sovereignty floors. Treat as unresolved normative extension. |
-| 2.18 Universal Advancement Access / 보편적 발전 접근 | UNRESOLVED PRIOR-ART MAPPING | No single direct precursor assigned in this pass | Adjacent distributive-justice/capability/access literatures require a dedicated review | Do not claim novelty from absence of a source in this audit. Literature absence does not imply phenomenon absence. |
+| 2.18 Universal Advancement Access / 보편적 발전 접근 | DIRECT BASELINE / BROAD NOVELTY KILLED; ARTIFICIAL-AGENT SCOPE UNRESOLVED | Amartya Sen (1979, 1999); Martha Nussbaum (2000/2011); equality-of-opportunity and disability-rights traditions | Sen, “Equality of What?” (1979); capability-approach literature; UN CRPD Art. 24; OECD, *Building Pathways to Opportunity* (2025) | Equal resources or nominal access do not imply equal substantive capability because personal, social, and environmental conversion factors differ. Retain only a governance decomposition of means, conversion, real opportunity, voluntary uptake/refusal, and controller benefit. Do not extend human capability rights to artificial agents without separate standing and capacity evidence. |
 | 2.19 Power Release Compatibility / 권력방출 호환성 | UNRESOLVED PRIOR-ART MAPPING | No single direct precursor assigned in this pass | Adjacent credible-commitment, democratic alternation, delegation, and bargaining literatures require dedicated mapping | The label is Project-specific; the underlying mechanisms may not be. Hold novelty. |
 | 2.20 Objective Topology, Path Dependence, and Reversibility / 목적지형·경로의존·가역성 | DIRECT | Paul A. David (1985); W. Brian Arthur (1989); Daniel A. Levinthal (1997) | David, Clio and the Economics of QWERTY, AER 75(2):332–337, JSTOR 1805621; Arthur DOI 10.2307/2234208; Levinthal DOI 10.1287/mnsc.43.7.934 | Path dependence, lock-in, increasing returns, rugged landscapes, and multiple local peaks are established prior art. |
 
@@ -262,3 +262,45 @@ Score existing autonomy/adaptive-preference baselines first. Add the Project six
 - Colburn, B. (2011), "Autonomy and adaptive preferences", DOI 10.1017/S0953820810000440.
 - Bonicalzi, S.; De Caro, M.; Giovanola, B. (2023), "Artificial Intelligence and Autonomy: On the Ethical Dimension of Recommender Systems", DOI 10.1007/s11245-023-09922-5.
 
+
+
+## 9. Universal Advancement Access prior-art boundary / 보편적 발전 접근 선행경계
+
+### Established baseline / 확립된 기준선
+
+- Sen's capability approach shifts evaluation from equal resources or formal access to the substantive freedom to do and be. Personal, social, and environmental conversion factors explain why identical means can yield unequal real opportunities.
+- Nussbaum's capabilities work and wider equality-of-opportunity literature already treat development as plural substantive opportunity rather than a single resource or outcome scalar.
+- The UN Convention on the Rights of Persons with Disabilities requires inclusive education and lifelong learning without discrimination and on equal opportunity terms. This is a concrete human-rights application, not evidence that all kinds of entities share the same standing.
+- OECD opportunity measurement separately examines background and geographic disparities in access to education, employment, and essential services. The measurement problem therefore also predates the Project label.
+
+Sources:
+- Amartya Sen, “Equality of What?” Tanner Lecture (1979): https://tannerlectures.org/lectures/equality-of-what/
+- Capability Approach, Stanford Encyclopedia of Philosophy (2025 revision): https://plato.stanford.edu/entries/capability-approach/
+- UN Convention on the Rights of Persons with Disabilities, Article 24: https://www.un.org/esa/socdev/enable/rights/convtexte.htm
+- OECD, *Building Pathways to Opportunity* (2025): https://doi.org/10.1787/239063a4-en
+
+### Required decomposition / 필수 분해
+
+1. **Means and formal access:** resources, interfaces, permissions, services, or legal entitlements made available.
+2. **Conversion conditions:** personal/capability, social/institutional, and environmental conditions needed to turn means into a real option.
+3. **Substantive opportunity:** what the subject can actually choose and achieve, not merely what is nominally offered.
+4. **Voluntary uptake and refusal:** opportunity must not be converted into compulsory achievement or provider-defined “improvement.”
+5. **Controller and beneficiary effects:** who defines advancement, controls the pathway, captures the gains, bears correction costs, and can contest the metric.
+6. **Standing and scope:** which entities are included, under which legal or moral predicate, with artificial-agent standing kept separate and unresolved.
+
+### Strongest counterexamples / 가장 강한 반례
+
+- **Equal-means failure:** two subjects can receive the same resource while disability, skills, discrimination, infrastructure, or dependency produces different substantive opportunity. Therefore `EQUAL_ACCESS -> EQUAL_ADVANCEMENT_CAPABILITY` is false.
+- **Forced-functioning failure:** guaranteeing an achieved outcome can erase agency when a subject reasonably refuses the provider's preferred path. Therefore capability and actual functioning must not be collapsed.
+- **Provider-capture failure:** a system can advertise universal advancement while the provider defines success, controls evaluation, and captures data or dependency benefits. Nominal universality can increase controller power.
+- **Scope failure:** extending a human capability-rights baseline to current AI services without evidence of welfare, agency, or standing can strengthen their owners; excluding a future welfare-bearing entity merely because it is artificial can also be wrong. Both directions remain unresolved pending evidence.
+
+### Decision / 판정
+
+**KILL broad Project novelty. MODIFY “Universal Advancement Access” into a capability-and-control audit. HOLD artificial-agent inclusion as UNRESOLVED.**
+
+The Project-specific remainder is only an operational checklist joining substantive opportunity to controller/beneficiary, contestability, refusal, exit, and rollback. Its incremental scientific value is untested; combination and renaming do not establish novelty.
+
+### Cheapest discriminating test / 최소 결정검사
+
+Freeze the established capability baseline, then score contrast cases in which formal access is held constant while conversion conditions, voluntary refusal, or provider benefit change. The residual Project checklist survives only if blinded coders reliably detect control/exit failures not captured by means, conversion factors, and substantive opportunity alone. KILL the residual scientific claim if it adds no held-out discrimination. Keep artificial-agent scope outside this test until standing and capacity measures are independently specified.
