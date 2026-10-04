@@ -1,11 +1,11 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "status": "ACTIVE_CONTINUITY",
   "public_repository": "gmodrasa7-rgb/project-intersection-public",
   "canonical_boundary": "Public continuation pointer only; source artifacts and commit history outrank this state file.",
   "recovery_entrypoint": "AUTONOMOUS_RESEARCH_LOOP.md",
-  "current_public_head": "4212ec390c89bf5e5b0991b943c4460780909c42",
-  "updated_at": "2026-10-04T15:00:00+09:00",
+  "current_public_head": "e7f43c049921f1fde3a55bb9f0abc75daeca6546",
+  "updated_at": "2026-10-04T17:05:00+09:00",
   "execution_policy": {
     "atomic_material_delta_per_run": 1,
     "require_prior_art_gate": true,
@@ -43,9 +43,11 @@
     }
   ],
   "recent_material_delta": {
-    "type": "process_governance",
-    "summary": "Refined role reversal from a narrative check into an executable blocking harness: authority/benefit/cost inventory, causal-difference-preserving role reversal, exploitative-convergence detection, per-right autonomy matching, automatic MODIFY/HOLD/KILL, and self-application.",
-    "commit": "75cb83794c194740ad1c0df39dc81750d4c4e1ba"
+    "type": "process_integrity",
+    "summary": "Narrowed current_public_head from an impossible self-inclusive claim to the head observed immediately before the state write. The containing commit is now explicitly resolved from Git history and post-write read-back, preventing infinite audit-only commit chasing.",
+    "basis_head": "e7f43c049921f1fde3a55bb9f0abc75daeca6546",
+    "state_commit": "RESOLVE_FROM_GIT_HISTORY_AFTER_WRITE",
+    "scientific_support": "none; provenance/process repair only"
   },
   "human_only_gates": [
     "contracts_terms_ip_license_rights_changes",
@@ -56,9 +58,21 @@
     "destructive_source_deletion"
   ],
   "last_read_back": {
-    "status": "VERIFIED",
-    "verified_commit": "4212ec390c89bf5e5b0991b943c4460780909c42",
-    "note": "Refined power-reversal harness was read back; governance regression passed after closing the push-path audit gap. This state update itself must also trigger the same audit."
+    "status": "VERIFIED_PRIOR_STATE",
+    "verified_commit": "e7f43c049921f1fde3a55bb9f0abc75daeca6546",
+    "verified_blob": "d5a777a13d5b7600e253dce513dd7f41fbb17b6d",
+    "note": "This attests the prior state version. The current write cannot self-attest its own containing commit; authoritative completion is the post-write GitHub fetch and commit result."
   },
-  "next_checkpoint": "Apply the executable power-reversal blocking gate before every material unattended mutation. First inventory authority/benefit/cost and counterparty audit/exit/recovery; test repeated convergence; preserve real capability/responsibility differences; if any gate fails, MODIFY/HOLD/KILL before research. Then continue with the highest-information unresolved frontier without returning reconstruction work to the user."
+  "next_checkpoint": "Return to F001: enable or obtain one lineage-separated public E007 rerun/implementation without private context. Do not count project-authored reruns or same-model agreement as independent replication.",
+  "current_public_head_semantics": "Head observed immediately before this state-file write. The commit containing this file must be resolved from Git history because a Git-tracked file cannot self-embed its own containing commit hash without changing that hash.",
+  "resolved_process_findings": [
+    {
+      "id": "P001_STATE_SELF_REFERENCE",
+      "status": "MODIFY_RESOLVED",
+      "finding": "Treating current_public_head as the self-containing commit creates an impossible hash fixed point and recurrent one-commit lag.",
+      "repair": "Interpret the field as the pre-write basis head; resolve the containing commit and post-write blob by Git history/read-back.",
+      "strongest_counterexample": "An external immutable tag or separate attestation service could name the state commit after creation, but no such independent attestation is established here.",
+      "rollback": "Restore AUTONOMOUS_RESEARCH_STATE.json blob d5a777a13d5b7600e253dce513dd7f41fbb17b6d if downstream consumers cannot handle schema 1.1."
+    }
+  ]
 }
