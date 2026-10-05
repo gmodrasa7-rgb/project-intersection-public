@@ -38,5 +38,14 @@
     "no_private_data_promotion": true,
     "public_state_is_pointer_not_superior_truth": true,
     "independent_replication_required_for_independent_claim": true
+  },
+  "goal_hierarchy_repair": {
+    "status": "ACTIVE_PUBLIC_AMENDMENT",
+    "file": "GOAL_HIERARCHY_REPAIR_2026-10-05_KO.md",
+    "core_order": "L0 > L1 > L2 > L3",
+    "control_plane_may_not_redefine_scientific_objective": true,
+    "meta_budget": "no_two_consecutive_material_meta_runs_unless_active_blocking_incident; >=4/6 material runs target L0/L1",
+    "failure_lineage": "CONTROL_PLANE_GOAL_INVERSION_2026-10-05",
+    "scientific_claim_status": "process_failure_only_not_direct_project_evidence"
   }
 }
