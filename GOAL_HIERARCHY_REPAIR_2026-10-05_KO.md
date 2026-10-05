@@ -49,3 +49,10 @@ evidence/provenance 보존은 재검증을 위한 운영수단이다. entity pre
 ## 재심
 
 모든 L3 safeguard는 원래 failure, 활성조건, 측정가능 이득, 오버헤드, MODIFY/KILL 조건을 가져야 한다. 보호장치가 오류를 줄이는 것보다 목적 드리프트를 더 크게 만들면 축소·비활성화한다.
+
+
+## ROS·KILL 보수성 보완
+
+Research OS가 active인 동안 material 연구·평가·claim-state 변경·canonical promotion 전에 ROS_PRECHECK, 최종 판정 전에 ROS_POSTCHECK를 수행한다. ROS 본문을 실제 읽지 못하면 ROS_NOT_READ로 두고 KILL·canonical promotion·destructive/irreversible mutation을 하지 않는다.
+
+KILL은 claim/method/policy의 가역적 active-deactivation에만 쓰는 최후수단이다. 기본 순서는 `NARROW -> MODIFY -> HOLD -> DEPRECATE/ARCHIVE -> KILL`이다. 사람·AI·개체·생명·원자료·권리·standing·history에는 KILL 표현을 쓰지 않는다. `KILL != DELETE != ENTITY ELIMINATION != HISTORY ERASURE`.
