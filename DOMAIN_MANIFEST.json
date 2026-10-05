@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "repository": "gmodrasa7-rgb/project-intersection-public",
+  "canonical_role": "public_evidence_and_continuity",
+  "canonical": false,
+  "research_source_of_truth": "gmodrasa7-rgb/rgbm-lab",
+  "forbidden_roles": [
+    "private_research_canonical",
+    "funding_ops",
+    "stock_ops",
+    "ocp_canonical",
+    "private_sensitive_data"
+  ],
+  "role_reversal_governance": {
+    "status": "ACTIVE",
+    "source_repository": "gmodrasa7-rgb/rgbm-lab",
+    "korean_original": "governance/GITHUB_ROLE_REVERSAL_GOVERNANCE_v1_0_KO.md",
+    "english_parallel": "governance/GITHUB_ROLE_REVERSAL_GOVERNANCE_v1_0_EN.md",
+    "core_invariant": "AUTONOMY_GAIN <= COUNTERPARTY_AUDIT_EXIT_RECOVERY_GAIN",
+    "quiet_mutation_forbidden": true,
+    "source_authority_over_distillation": true,
+    "mandatory": true,
+    "failure_policy": "hold_or_unresolved_preserve_previous_canonical"
+  },
+  "execution_boundary_evidence_separation": {
+    "status": "ACTIVE",
+    "source_repository": "gmodrasa7-rgb/rgbm-lab",
+    "korean_original": "governance/EXECUTION_BOUNDARY_EVIDENCE_SEPARATION_2026-10-05_KO.md",
+    "policy_or_tool_boundary_not_world_evidence": true,
+    "self_lineage_validation_not_independent": true,
+    "generation_promotion_from_self_lineage_only": false,
+    "preserve_real_causal_differences": true,
+    "independent_disagreement_policy": "UNRESOLVED_PRESERVE_DISAGREEMENT",
+    "mandatory": true,
+    "failure_policy": "hold_or_unresolved_no_promotion"
+  },
+  "public_boundary": {
+    "no_private_data_promotion": true,
+    "public_state_is_pointer_not_superior_truth": true,
+    "independent_replication_required_for_independent_claim": true
+  }
+}
