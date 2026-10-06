@@ -97,7 +97,8 @@ jobs:
           e009_matrix = json.loads(Path("experiments/e009/scenario_matrix.json").read_text(encoding="utf-8"))
           multimodel_audit = Path("MULTI_MODEL_ADVERSARIAL_AUDIT_2026-10-06.md").read_text(encoding="utf-8")
           e010_readme = Path("experiments/e010/README.md").read_text(encoding="utf-8")
-          e010_protocol = Path("experiments/e010/EXECUTABLE_PROTOCOL_v1_0.md").read_text(encoding="utf-8")
+          e010_protocol_v10 = Path("experiments/e010/EXECUTABLE_PROTOCOL_v1_0.md").read_text(encoding="utf-8")
+          e010_protocol = Path("experiments/e010/EXECUTABLE_PROTOCOL_v1_1.md").read_text(encoding="utf-8")
           e010_matrix = json.loads(Path("experiments/e010/scenario_matrix.json").read_text(encoding="utf-8"))
 
           # Landing-page regression: keep first-review cost bounded.
@@ -171,6 +172,9 @@ jobs:
           require("not independent empirical replication" in multimodel_audit, "External model critique boundary drifted.")
           require("PREREGISTERED DESIGN / NO RESULT / NOT PROJECT VALIDATION" in e010_readme, "E010 lost preregistration/no-result boundary.")
           require("PREREGISTERED EXECUTABLE SPECIFICATION / NO RESULT YET" in e010_protocol, "E010 executable protocol lost no-result boundary.")
+          require("v1.1 supersedes v1.0" in e010_protocol, "E010 lost the pre-result cost-aware baseline correction lineage.")
+          require("CONTESTABLE_COST_AWARE" in e010_protocol, "E010 lost the compliance-cost prior-art comparator.")
+          require("PREREGISTERED EXECUTABLE SPECIFICATION / NO RESULT YET" in e010_protocol_v10, "E010 v1.0 amendment lineage was deleted.")
           require(e010_matrix.get("status") == "PREREGISTERED_NO_RESULT", "E010 matrix was promoted without explicit result lineage.")
           require(len(e010_matrix.get("scenarios", [])) == 13, "E010 preregistered scenario set drifted.")
           require("검사자 공정성·독립성: PRIOR ART" in e010_readme, "E010 broad inspector-independence novelty was reintroduced.")
