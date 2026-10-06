@@ -75,6 +75,7 @@ Project Intersection은 **권력·인센티브·시점·practical exit·복구�
 - [Attribution & Contribution Boundary → ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md](ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md) — founder / AI-assistance / prior-art / independent-validation provenance separation / 창시자·AI보조·선행연구·독립검증 귀속 분리
 - [Autonomous Research Continuity → AUTONOMOUS_RESEARCH_LOOP.md](AUTONOMOUS_RESEARCH_LOOP.md) · [machine-readable state → AUTONOMOUS_RESEARCH_STATE.json](AUTONOMOUS_RESEARCH_STATE.json) — public resume path without founder reconstruction / 창시자 재설명 없이 이어받는 공개 복구경로
 - [Structured Knowledge Layer → knowledge/README.md](knowledge/README.md) · [Explorer → knowledge/explorer.html](knowledge/explorer.html) — entity/relation/qualifier index over the source artifacts / 원문 위의 객체·관계·조건 탐색층
+- [External Design Source Registry → knowledge/SOURCE_REGISTRY.md](knowledge/SOURCE_REGISTRY.md) — original/official references, verified design influence, and copyright/license/trademark boundaries / 원출처·설계영향·저작권·라이선스·상표 경계
 - [External verification contribution path → CONTRIBUTING.md](CONTRIBUTING.md) — independent rerun, reimplementation, contradiction, counterexample, prior-art correction / 독립 재현·반례·선행교정 제출경로
 
 The landing page is intentionally short. Detailed theory is separated so that a first-time reviewer can reach evidence and reproduction paths before reading the full research narrative.
