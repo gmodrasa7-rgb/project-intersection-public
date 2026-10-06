@@ -1,0 +1,296 @@
+{
+  "schema_version": "1.0",
+  "reviewed_at": "2026-10-06",
+  "purpose": "Record external design references, original/official sources, verified structural features, rights/licensing boundaries, and the exact Project Intersection reuse decision.",
+  "policy": {
+    "default_reuse": "conceptual_reference_only",
+    "copy_third_party_expression": false,
+    "copy_third_party_ui_assets": false,
+    "copy_third_party_code": false,
+    "copy_third_party_dataset": false,
+    "require_source_and_rights_metadata_for_future_imports": true,
+    "source_registry_is_not_scientific_validation": true
+  },
+  "systems": [
+    {
+      "system_id": "SYS-ORKG",
+      "name": "Open Research Knowledge Graph (ORKG)",
+      "operator": "TIB – Leibniz Information Centre for Science and Technology / ORKG project",
+      "design_influence": [
+        "research-question-centered comparisons",
+        "structured research contributions",
+        "templates that standardize comparable contribution fields",
+        "machine-actionable scholarly knowledge"
+      ],
+      "project_reuse_decision": "conceptual_reference_only",
+      "copied_material": "none",
+      "rights_boundary": "ORKG architectural concepts are cited as inspiration. Project Intersection does not copy ORKG page text, UI, source code, visual assets, or datasets. If ORKG data is imported later, its then-current data-license/source metadata must be recorded separately.",
+      "sources": [
+        {
+          "source_id": "SRC-ORKG-001",
+          "title": "ORKG About — Comparisons and structured research contributions",
+          "source_type": "official_product_documentation",
+          "url": "https://orkg.org/about",
+          "verified_points": [
+            "ORKG describes research papers in structured form.",
+            "Comparisons organize contributions addressing a research question in a tabular, filterable overview.",
+            "Templates are used to specify comparable contribution structures."
+          ],
+          "rights_note": "Used as a factual/design reference only; no page expression copied."
+        },
+        {
+          "source_id": "SRC-ORKG-002",
+          "title": "ORKG Academy — Template Course",
+          "source_type": "official_training_documentation",
+          "url": "https://academy.orkg.org/courses/template-course.html",
+          "verified_points": [
+            "Templates provide a skeleton for contribution data structures.",
+            "Templates help contributions addressing the same problem conform to a comparable structure."
+          ],
+          "rights_note": "Used as a factual/design reference only; no course text or visual asset copied."
+        },
+        {
+          "source_id": "SRC-ORKG-003",
+          "title": "FAIR scientific information with the Open Research Knowledge Graph",
+          "source_type": "peer_reviewed_publication",
+          "doi": "10.3233/FC-221513",
+          "url": "https://doi.org/10.3233/FC-221513",
+          "authors": "Markus Stocker et al.",
+          "year": 2023,
+          "verified_points": [
+            "ORKG is described as infrastructure for production, curation, publication, and use of FAIR scientific information."
+          ],
+          "rights_note": "Article is published under CC BY 4.0. Project cites the work; no article text or figures are reproduced."
+        },
+        {
+          "source_id": "SRC-ORKG-004",
+          "title": "ORKG backend repository",
+          "source_type": "official_software_repository",
+          "url": "https://github.com/TIBHannover/orkg-backend",
+          "verified_points": [
+            "The public ORKG backend repository identifies the software license as MIT."
+          ],
+          "rights_note": "Software-license fact recorded only. No ORKG code was copied into Project Intersection."
+        },
+        {
+          "source_id": "SRC-ORKG-005",
+          "title": "Rethinking the production and publication of machine-readable expressions of research findings",
+          "source_type": "peer_reviewed_publication_data_availability",
+          "url": "https://www.nature.com/articles/s41597-025-04905-0",
+          "verified_points": [
+            "The article states that the ORKG data used in its examples are published under CC0 1.0 Universal.",
+            "It states that ORKG components are open source under the MIT license."
+          ],
+          "rights_note": "Used to document a reported ORKG data/software licensing boundary. Future ORKG data imports must still verify the current license at import time."
+        }
+      ]
+    },
+    {
+      "system_id": "SYS-WIKIDATA",
+      "name": "Wikidata",
+      "operator": "Wikimedia Foundation / Wikidata community",
+      "design_influence": [
+        "typed entity identifiers",
+        "subject–predicate–object statements",
+        "qualifiers that narrow statement scope",
+        "references attached to statements"
+      ],
+      "project_reuse_decision": "conceptual_reference_only",
+      "copied_material": "none",
+      "rights_boundary": "Project Intersection independently implements its own entity/relation schema. No Wikidata UI, item text, or dumps were copied.",
+      "sources": [
+        {
+          "source_id": "SRC-WD-001",
+          "title": "Wikidata: Data model",
+          "source_type": "official_documentation",
+          "url": "https://www.wikidata.org/wiki/Wikidata:Data_model",
+          "verified_points": [
+            "Wikidata represents knowledge with entities/items and statements.",
+            "Statements use a subject/predicate/object-like structure.",
+            "Qualifiers can restrict the scope or meaning of statements."
+          ],
+          "rights_note": "Design facts cited only."
+        },
+        {
+          "source_id": "SRC-WD-002",
+          "title": "Help: Statements",
+          "source_type": "official_documentation",
+          "url": "https://www.wikidata.org/wiki/Help:Statements/en",
+          "verified_points": [
+            "Statements can include qualifiers, references, and ranks."
+          ],
+          "rights_note": "Design facts cited only."
+        },
+        {
+          "source_id": "SRC-WD-003",
+          "title": "Wikidata: Licensing",
+          "source_type": "official_license_documentation",
+          "url": "https://www.wikidata.org/wiki/Wikidata:Licensing",
+          "verified_points": [
+            "Structured data in the main, Property, Lexeme, and EntitySchema namespaces is released under CC0.",
+            "Text in other namespaces is available under CC BY-SA 4.0."
+          ],
+          "rights_note": "License boundary recorded. No Wikidata data is currently bundled."
+        }
+      ]
+    },
+    {
+      "system_id": "SYS-OPENALEX",
+      "name": "OpenAlex",
+      "operator": "OurResearch",
+      "design_influence": [
+        "stable typed entity IDs",
+        "separate entity endpoints",
+        "links to canonical external identifiers",
+        "connected scholarly metadata graph"
+      ],
+      "project_reuse_decision": "conceptual_reference_only",
+      "copied_material": "none",
+      "rights_boundary": "OpenAlex data may be reusable under CC0, but Project Intersection currently uses only architecture concepts and does not bundle OpenAlex records.",
+      "sources": [
+        {
+          "source_id": "SRC-OA-001",
+          "title": "OpenAlex Data reference",
+          "source_type": "official_documentation",
+          "url": "https://help.openalex.org/data/",
+          "verified_points": [
+            "OpenAlex models works, authors, sources, institutions, publishers, funders, topics, and other entities.",
+            "Entities are connected and have OpenAlex IDs.",
+            "OpenAlex records can map to external identifiers such as DOI, ORCID, ROR, ISSN, and Wikidata."
+          ],
+          "rights_note": "Architecture facts cited only."
+        },
+        {
+          "source_id": "SRC-OA-002",
+          "title": "OpenAlex API reference",
+          "source_type": "official_documentation",
+          "url": "https://help.openalex.org/api/",
+          "verified_points": [
+            "Entity types are exposed as REST endpoints.",
+            "The documentation states that all OpenAlex data is CC0."
+          ],
+          "rights_note": "CC0 data-license fact recorded; no OpenAlex dataset is currently copied."
+        }
+      ]
+    },
+    {
+      "system_id": "SYS-PWC",
+      "name": "Papers with Code",
+      "operator": "Community project supported by Meta AI Research",
+      "design_influence": [
+        "paper–code linkage",
+        "task–dataset–method–result organization",
+        "evaluation tables / benchmark-oriented navigation"
+      ],
+      "project_reuse_decision": "conceptual_reference_only",
+      "copied_material": "none",
+      "rights_boundary": "Papers with Code states that its content/data is CC BY-SA. Project Intersection does not import or adapt that content in v1, avoiding attribution/share-alike obligations for this architecture layer.",
+      "sources": [
+        {
+          "source_id": "SRC-PWC-001",
+          "title": "About Papers With Code",
+          "source_type": "official_product_documentation",
+          "url": "https://paperswithcode.com/about",
+          "verified_points": [
+            "Papers with Code organizes papers, code, datasets, methods, and evaluation tables.",
+            "It states that website content/data is licensed under CC BY-SA.",
+            "Benchmark results and community contribution workflows are core features."
+          ],
+          "rights_note": "Only the general architecture idea is referenced; no PWC content/data is copied."
+        },
+        {
+          "source_id": "SRC-PWC-002",
+          "title": "Papers with Code Dataset Licensing Guide",
+          "source_type": "official_license_guidance",
+          "url": "https://paperswithcode.com/datasets/license",
+          "verified_points": [
+            "The guide warns that an indexed dataset's license may differ from code or annotation licenses.",
+            "It emphasizes checking the actual dataset license and ownership."
+          ],
+          "rights_note": "Used as a rights-handling precedent, not as a license for third-party datasets."
+        }
+      ]
+    },
+    {
+      "system_id": "SYS-MITRE-ATTACK",
+      "name": "MITRE ATT&CK®",
+      "operator": "The MITRE Corporation",
+      "design_influence": [
+        "taxonomy / matrix navigation",
+        "goal-to-technique-to-sub-technique decomposition",
+        "linking abstract categories to observed procedures"
+      ],
+      "project_reuse_decision": "conceptual_reference_only",
+      "copied_material": "none",
+      "rights_boundary": "Project Intersection does not copy ATT&CK content, matrices, technique descriptions, IDs, logos, or branding. The term is used only to identify a design reference. Any future ATT&CK content reuse must reproduce MITRE's required copyright/license notice and comply with trademark rules.",
+      "sources": [
+        {
+          "source_id": "SRC-MITRE-001",
+          "title": "MITRE ATT&CK Get Started",
+          "source_type": "official_product_documentation",
+          "url": "https://attack.mitre.org/resources/",
+          "verified_points": [
+            "ATT&CK is a knowledge base of adversary techniques based on real-world observations.",
+            "Its model distinguishes tactics, techniques, sub-techniques, and procedures."
+          ],
+          "rights_note": "Architecture facts cited only."
+        },
+        {
+          "source_id": "SRC-MITRE-002",
+          "title": "MITRE ATT&CK Terms of Use",
+          "source_type": "official_terms",
+          "url": "https://attack.mitre.org/resources/terms-of-use/",
+          "verified_points": [
+            "MITRE grants a non-exclusive, royalty-free license for research, development, and commercial use.",
+            "Copies must reproduce MITRE's copyright designation and the license notice."
+          ],
+          "rights_note": "No ATT&CK content is currently copied, so the Project does not rely on this license for bundled material."
+        },
+        {
+          "source_id": "SRC-MITRE-003",
+          "title": "MITRE ATT&CK Legal & Branding",
+          "source_type": "official_trademark_guidance",
+          "url": "https://attack.mitre.org/resources/legal-and-branding/",
+          "verified_points": [
+            "MITRE ATT&CK and ATT&CK are registered trademarks.",
+            "Use must not imply MITRE sponsorship or endorsement.",
+            "ATT&CK must not be used as a Project product/service/brand name."
+          ],
+          "rights_note": "Project uses MITRE ATT&CK only as a cited external reference."
+        }
+      ]
+    }
+  ],
+  "project_design_mapping": [
+    {
+      "project_feature": "research-question / claim / experiment / evidence traversal",
+      "influences": [
+        "SYS-ORKG",
+        "SYS-PWC"
+      ],
+      "independent_project_difference": "Project adds explicit evidence-class boundaries, failure/correction lineage, and claim-status transitions."
+    },
+    {
+      "project_feature": "qualified relation with scope + evidence_class + source_path",
+      "influences": [
+        "SYS-WIKIDATA"
+      ],
+      "independent_project_difference": "Qualifiers are specialized for scientific-evidence scope and Project provenance."
+    },
+    {
+      "project_feature": "stable local typed IDs",
+      "influences": [
+        "SYS-OPENALEX",
+        "SYS-WIKIDATA"
+      ],
+      "independent_project_difference": "IDs encode Project object classes such as RQ, CL, EX, EV, FR, CR, PA, HC, NC."
+    },
+    {
+      "project_feature": "failure/mechanism matrix and traversable taxonomy direction",
+      "influences": [
+        "SYS-MITRE-ATTACK"
+      ],
+      "independent_project_difference": "Project failure objects concern research/governance failure modes, not cyber-adversary techniques."
+    }
+  ]
+}

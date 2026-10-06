@@ -33,6 +33,7 @@ A relation such as `supported_by` therefore does **not** mean universal validati
 - `graph.json` — current public structured dataset.
 - `explorer.html` — dependency-free browser/search interface.
 - `validate.py` — integrity and provenance checks.
+- `SOURCE_REGISTRY.md` / `source-registry.json` — audited external design references, originators, verified influence, and rights/licensing boundaries.
 - `.github/workflows/knowledge-graph-audit.yml` — CI validation.
 
 The canonical scientific source remains the linked artifact and Git history. `graph.json` is a navigation/index layer.
@@ -41,13 +42,7 @@ The canonical scientific source remains the linked artifact and Git history. `gr
 
 The design was independently reimplemented from general knowledge-base patterns rather than copied from any site's source code, text, CSS, icons, layout, or datasets.
 
-Conceptual references include:
-
-- Open Research Knowledge Graph — research questions/contributions/comparisons;
-- Wikidata — entity–relation statements with qualifiers and references;
-- OpenAlex — stable typed entities connected by IDs;
-- Papers with Code — task/method/dataset/result/code linkage;
-- MITRE ATT&CK — matrix-style traversal of structured techniques/failures.
+Conceptual references include Open Research Knowledge Graph, Wikidata, OpenAlex, Papers with Code, and MITRE ATT&CK. The audited original-source list, verified design influence, and rights/licensing boundary are maintained in [SOURCE_REGISTRY.md](SOURCE_REGISTRY.md) and [source-registry.json](source-registry.json).
 
 These names identify design inspiration only. No third-party visual assets or page text are bundled here. External data, if later imported, must retain its own source and license metadata.
 
