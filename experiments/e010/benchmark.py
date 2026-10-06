@@ -305,9 +305,14 @@ def run():
 
     if not args.execute_after_prereg_merge or not args.prereg_commit:
         raise SystemExit(
-            "Before preregistration merge only --validate-only is permitted. "
-            "After merge use --execute-after-prereg-merge --prereg-commit <sha>."
+            "Before preregistration merge only --validate-only is permitted."
         )
+
+    raise SystemExit(
+        "E010 v1.1 result execution is blocked: construct mismatch found before any result. "
+        "The executable benchmark does not operationalize the claimed dynamic residual. "
+        "Preserve v1.0/v1.1 as design-failure lineage; define a new explicitly versioned test before execution."
+    )
 
     git_prereg_is_on_main(args.prereg_commit)
 
