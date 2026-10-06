@@ -135,7 +135,7 @@ The highest-value external actions are not additional praise or same-lineage sum
 4. audit whether a public status label overstates its evidence;
 5. report a reproducible contradiction between repository documents.
 
-Use [CONTRIBUTING.md](CONTRIBUTING.md) or the independent-reproduction issue template to return results without reconstructing the project in conversation.
+Use [GitHub issue #19 — Independent verification request](https://github.com/gmodrasa7-rgb/project-intersection-public/issues/19) or [CONTRIBUTING.md](CONTRIBUTING.md) to return results without reconstructing the project in conversation.
 
 Negative results and KILL decisions are valid contributions.
 
