@@ -4,8 +4,8 @@
   "public_repository": "gmodrasa7-rgb/project-intersection-public",
   "canonical_boundary": "Public continuation pointer only; source artifacts and commit history outrank this state file.",
   "recovery_entrypoint": "AUTONOMOUS_RESEARCH_LOOP.md",
-  "current_public_head": "a55927e049fc7845f9cb4d5139fe0fbe962a79a4",
-  "updated_at": "2026-10-06T00:18:49Z",
+  "current_public_head": "d837d694c527f8a898845a012e61a3184cc2637f",
+  "updated_at": "2026-10-06T00:20:19Z",
   "execution_policy": {
     "atomic_material_delta_per_run": 1,
     "require_prior_art_gate": true,
@@ -268,7 +268,7 @@
   "recent_material_delta": {
     "type": "public_review_interface_completion_and_schema_audit_repair",
     "summary": "Added a bounded public reviewer path, explicit failure-regression lineage, and founder/AI/prior-art attribution boundary; repaired the public governance audit's stale schema 1.0 expectation to match the deliberate autonomous-state schema 1.1.",
-    "basis_head": "a55927e049fc7845f9cb4d5139fe0fbe962a79a4",
+    "basis_head": "d837d694c527f8a898845a012e61a3184cc2637f",
     "source_artifact": "PUBLIC_REVIEW_PACKET.md + FAILURE_REGRESSION_INDEX.md + ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md + .github/workflows/public-repository-audit.yml",
     "state_commit": "RESOLVE_FROM_GIT_HISTORY_AFTER_WRITE",
     "scientific_support": "None claimed; this delta repairs the public review/control interface and does not promote a scientific hypothesis."
@@ -282,8 +282,8 @@
     "destructive_source_deletion"
   ],
   "last_read_back": {
-    "status": "VERIFIED_PRE_STATE_WRITE",
-    "verified_commit": "a55927e049fc7845f9cb4d5139fe0fbe962a79a4",
+    "status": "VERIFIED_POST_MERGE_PRE_STATE_WRITE",
+    "verified_commit": "d837d694c527f8a898845a012e61a3184cc2637f",
     "verified_blobs": {
       "PUBLIC_REVIEW_PACKET.md": "4a9a727c9f8a3cf2651751c11e926a4987c48d1d",
       "FAILURE_REGRESSION_INDEX.md": "f6426474de70f8bf217c7dc9e261f3eb31f51c6c",
@@ -292,7 +292,7 @@
       "PUBLIC_EVIDENCE_INDEX.md": "3e29519d0fd8ce2dc564a2848364380d07561106",
       ".github/workflows/public-repository-audit.yml": "3d9f5fd4ae3968853bd1723fad3cfc4d4b284de1"
     },
-    "note": "Public interface files were read back before the state write. Scientific frontier is unchanged; this changes reviewability and repairs CI schema drift."
+    "note": "Merged public interface files were read back on main after squash merge. Scientific frontier is unchanged; this state write repairs the main-lineage pre-write head pointer."
   },
   "next_checkpoint": "F005: audit Power Release Compatibility against credible commitment, commitment problems, power-sharing, peaceful transfer, delegation, and practical exit. F004 incremental-value holdout, F003 historical identification, and F001 external lineage remain separate frontiers.",
   "current_public_head_semantics": "Head observed immediately before this state-file write. The commit containing this file must be resolved from Git history because a Git-tracked file cannot self-embed its own containing commit hash without changing that hash.",
