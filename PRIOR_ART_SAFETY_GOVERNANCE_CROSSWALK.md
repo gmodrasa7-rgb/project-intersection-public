@@ -432,3 +432,40 @@ Added sources:
 - Andrews, Turban & Tyros (2026), Regulatory compliance costs and productivity: https://doi.org/10.1787/1c1da52e-en
 - OECD (2026), Smart Regulations, Strong Business: https://www.oecd.org/en/publications/smart-regulations-strong-business_93d38770-en/
 - Hutchinson (2026), How Safety Audits are Superficially Trapped: https://doi.org/10.1016/j.shaw.2026.08.001
+
+
+### 2026-10-07 third correction — audit-society dynamics further narrow the residual
+
+Additional prior art collapses more of the E010 framing:
+
+- **Michael Power, The Audit Society (1997/1999)** analyzes how audit expands governance/control, passes costs down to regulatees, and can reshape auditees toward "auditable performance" rather than underlying professional or operational value.
+- **Power (2021), Modelling the Micro-Foundations of the Audit Society** provides a dynamic process model in which audit-trail routines reproduce and amplify auditability over time. This is directly relevant to repeated-monitoring / audit-expansion dynamics.
+- **Power (2026), Auditability in the Digital Age** warns that algorithmic/platformized auditing can undermine the independence of the evidentiary basis of audit.
+- **Safety clutter literature (2026)** distinguishes safety effort from waste within safety effort and treats duplicative, impractical, weakly risk-connected process as diagnosable clutter.
+- **Responsive regulation** already treats inspection/enforcement authority as adaptive, risk-calibrated, escalation-capable, and potentially highly discretionary rather than a single fixed inspection act.
+
+Novelty consequence:
+
+The following broad propositions are also **not Project-original**:
+
+- auditing can reshape the behavior/environment of the audited;
+- audit/monitoring systems can reproduce and amplify themselves dynamically;
+- regulatory/audit authority interacts with compliance incentives and discretion over time;
+- audit evidence can become non-independent under platformized or tightly coupled systems;
+- safety procedures can create process clutter that competes with substantive risk control.
+
+This creates a construct-validity problem for E010 v1.1. Its stated residual is dynamic authority/capacity/burden co-scaling, but its executable matrix is static and does not instantiate the relevant state transitions. The remaining executable D-vs-C2 distinction substantially overlaps established independence/contestability baselines.
+
+Decision:
+
+**BLOCK E010 v1.1 RESULT EXECUTION / PRESERVE AS PRE-RESULT DESIGN FAILURE.**
+
+A future replacement should test only one residual mechanism with explicit time-indexed state variables and a stronger prior-art baseline. It should not infer novelty from combining concepts already present in audit-society, responsive-regulation, compliance-cost, contestability, or safety-clutter literature.
+
+Added sources:
+
+- Power, M. (1997/1999), *The Audit Society: Rituals of Verification*, DOI 10.1093/acprof:oso/9780198296034.001.0001
+- Power, M. (2021), *Modelling the Micro-Foundations of the Audit Society*, DOI 10.5465/amr.2017.0212
+- Power, M. (2026), *Auditability in the Digital Age*, DOI 10.1111/ijau.70038
+- Safety clutter (2026), *Journal of Safety Research*, DOI 10.1016/j.jsr.2026.06.005
+- Ayres & Braithwaite responsive-regulation tradition; see Cambridge Legal Studies review of enforcement-pyramid discretion.
