@@ -4,8 +4,8 @@
   "public_repository": "gmodrasa7-rgb/project-intersection-public",
   "canonical_boundary": "Public continuation pointer only; source artifacts and commit history outrank this state file.",
   "recovery_entrypoint": "AUTONOMOUS_RESEARCH_LOOP.md",
-  "current_public_head": "717e6e3964b365ab6cdb47beeeb3b755cf758f74",
-  "updated_at": "2026-10-06T01:12:00Z",
+  "current_public_head": "a176b1d17bd2e16454aa3438966641d65b72f39a",
+  "updated_at": "2026-10-06T01:21:00Z",
   "execution_policy": {
     "atomic_material_delta_per_run": 1,
     "require_prior_art_gate": true,
@@ -266,12 +266,12 @@
     }
   ],
   "recent_material_delta": {
-    "type": "power_reversal_long_horizon_constraint_first_v2_and_e008_preregistration",
-    "summary": "Upgraded the dynamic long-horizon architecture after broader prior-art subtraction. Aggregate long-horizon value is now subordinate to epistemic integrity, per-party viability/irreversible-loss constraints, robust deep-uncertainty stress testing, least-restrictive intervention, and independent safeguard-amendment control. Added E008 preregistration with 16 cases / 8 reversal pairs comparing five baselines.",
-    "basis_head": "717e6e3964b365ab6cdb47beeeb3b755cf758f74",
-    "source_artifact": "LONG_HORIZON_MIN_INTERVENTION_E2E.md + CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md#10 + experiments/e008/README.md + experiments/e008/scenario_matrix.json + knowledge/graph.json",
+    "type": "mutual_acceptability_kernel_full_role_reversal_and_e008_v1_1",
+    "summary": "Added an impossibility-aware Mutual Acceptability Kernel for full role reversal. Universal outcome satisfaction is explicitly rejected; admissible policies must satisfy applicable viability/irreversible-loss constraints, realistic individual-rationality/disagreement conditions, role-reversal consistency, credible commitment, and audit/contestability/exit/recovery. Pareto-dominated options are removed; manipulation gain and coalition deviation are diagnostics; empty intersection returns NO_MUTUALLY_ACCEPTABLE_SET. E008 received a pre-execution v1.1 amendment before any result.",
+    "basis_head": "a176b1d17bd2e16454aa3438966641d65b72f39a",
+    "source_artifact": "LONG_HORIZON_MIN_INTERVENTION_E2E.md#6 + CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md#11 + experiments/e008/MUTUAL_ACCEPTABILITY_AMENDMENT_v1_1.md + knowledge/graph.json",
     "state_commit": "RESOLVE_FROM_GIT_HISTORY_AFTER_WRITE",
-    "scientific_support": "No E008 result exists. Broad novelty is rejected for constrained/safe RL, lexicographic optimization, robust decision making, option value, proportionality/least-restrictive intervention, independent change control, credible commitment/power-sharing enforcement, algorithmic constitutionalism, interruptibility/corrigibility, MPC, viability and adaptive governance. Only incremental value of the remaining composition is unresolved."
+    "scientific_support": "No universal mutual-satisfaction theorem and no E008 result. Arrow/Gibbard-Satterthwaite, Nash bargaining/individual rationality/Pareto/symmetry, cooperative-game core, and Rawlsian ex-ante role uncertainty are prior art. Only incremental operational value of the composition remains unresolved."
   },
   "human_only_gates": [
     "contracts_terms_ip_license_rights_changes",
@@ -283,17 +283,17 @@
   ],
   "last_read_back": {
     "status": "VERIFIED_POST_MERGE_PRE_STATE_WRITE",
-    "verified_commit": "717e6e3964b365ab6cdb47beeeb3b755cf758f74",
+    "verified_commit": "a176b1d17bd2e16454aa3438966641d65b72f39a",
     "verified_blobs": {
       "LONG_HORIZON_MIN_INTERVENTION_E2E.md": "RESOLVE_FROM_GIT_TREE",
       "CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md": "RESOLVE_FROM_GIT_TREE",
+      "experiments/e008/MUTUAL_ACCEPTABILITY_AMENDMENT_v1_1.md": "RESOLVE_FROM_GIT_TREE",
       "experiments/e008/README.md": "RESOLVE_FROM_GIT_TREE",
-      "experiments/e008/scenario_matrix.json": "RESOLVE_FROM_GIT_TREE",
+      "experiments/e008/validate.py": "RESOLVE_FROM_GIT_TREE",
       "knowledge/graph.json": "RESOLVE_FROM_GIT_TREE",
-      "PUBLIC_EVIDENCE_INDEX.md": "RESOLVE_FROM_GIT_TREE",
-      "PUBLIC_REVIEW_PACKET.md": "RESOLVE_FROM_GIT_TREE"
+      "PUBLIC_EVIDENCE_INDEX.md": "RESOLVE_FROM_GIT_TREE"
     },
-    "note": "PR #12 merged after E008 preregistration audit, knowledge-graph audit, and public-governance audit all passed on the final head. E008 remains specification-only with no result."
+    "note": "PR #13 merged only after E008 preregistration, knowledge-graph, and public-governance audits all passed. Mutual acceptability is a constrained operational target; empty-set outcomes remain admissible and must not be rewritten as consensus."
   },
   "next_checkpoint": "F005: audit Power Release Compatibility against credible commitment, commitment problems, power-sharing, peaceful transfer, delegation, and practical exit. F004 incremental-value holdout, F003 historical identification, and F001 external lineage remain separate frontiers.",
   "current_public_head_semantics": "Head observed immediately before this state-file write. The commit containing this file must be resolved from Git history because a Git-tracked file cannot self-embed its own containing commit hash without changing that hash.",
