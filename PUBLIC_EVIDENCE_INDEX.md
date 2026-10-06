@@ -115,4 +115,14 @@ The highest-value external upgrades are:
 | Artifact | What it establishes | Evidence class | Does not establish |
 |---|---|---|---|
 | [Multi-model adversarial audit](MULTI_MODEL_ADVERSARIAL_AUDIT_2026-10-06.md) | User-supplied Claude/Gemini critiques were prior-art checked, corrected, and distilled into enforcement/identity/oversight/selection stress variables | External-model critique synthesis / project analysis | Independent replication, model agreement as truth, empirical superiority |
-| [E009 preregistration](experiments/e009/README.md) | Predeclared baselines, 16 adversarial scenario families, and falsification conditions for the H/M/X architecture | Public preregistration / specification | Any E009 result, Project-v3 superiority, real-world validation |
+| [E009 preregistration + result](experiments/e009/README.md) | Frozen executable spec followed by a reproducible synthetic project rerun. Project-v3 failed 3/4 survival criteria; TWO_RULE_SIMPLE and MINIMAL_4VAR had lower mean regret | PROJECT_RERUN / SYNTHETIC_RESULT | Independent implementation, external replication, empirical validation, or rejection of the broad Project question |
+
+
+### E009 negative-result boundary
+
+- Executable spec frozen before result: `c36ba8e6d6df1eedcd54ca6c36091bf822fe6ace`.
+- Project-v3 stress mean regret: **0.090022**.
+- TWO_RULE_SIMPLE: **0.063241**.
+- MINIMAL_4VAR: **0.065323**.
+- Project-v3 regret was **42.35% worse than the best simple comparator** under the preregistered comparison.
+- Result class: **PROJECT_RERUN / SYNTHETIC_RESULT**, not independent validation.
