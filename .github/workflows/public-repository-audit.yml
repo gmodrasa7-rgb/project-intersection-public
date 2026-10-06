@@ -12,6 +12,9 @@ on:
       - "AUTONOMOUS_RESEARCH_LOOP.md"
       - "AUTONOMOUS_RESEARCH_STATE.json"
       - "CONTRIBUTION_COST_ACCOUNTING_REGRESSION.md"
+      - "PUBLIC_REVIEW_PACKET.md"
+      - "FAILURE_REGRESSION_INDEX.md"
+      - "ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md"
       - "funding/**"
       - "experiments/e007/PROVENANCE.md"
       - "experiments/e007/LICENSE_STATUS.md"
@@ -27,6 +30,9 @@ on:
       - "AUTONOMOUS_RESEARCH_LOOP.md"
       - "AUTONOMOUS_RESEARCH_STATE.json"
       - "CONTRIBUTION_COST_ACCOUNTING_REGRESSION.md"
+      - "PUBLIC_REVIEW_PACKET.md"
+      - "FAILURE_REGRESSION_INDEX.md"
+      - "ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md"
       - "funding/**"
       - "experiments/e007/PROVENANCE.md"
       - "experiments/e007/LICENSE_STATUS.md"
@@ -69,6 +75,9 @@ jobs:
           autonomous_loop = Path("AUTONOMOUS_RESEARCH_LOOP.md").read_text(encoding="utf-8")
           autonomous_state = json.loads(Path("AUTONOMOUS_RESEARCH_STATE.json").read_text(encoding="utf-8"))
           contribution_cost = Path("CONTRIBUTION_COST_ACCOUNTING_REGRESSION.md").read_text(encoding="utf-8")
+          review_packet = Path("PUBLIC_REVIEW_PACKET.md").read_text(encoding="utf-8")
+          failure_index = Path("FAILURE_REGRESSION_INDEX.md").read_text(encoding="utf-8")
+          attribution_boundary = Path("ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md").read_text(encoding="utf-8")
 
           # Landing-page regression: keep first-review cost bounded.
           require(len(readme.splitlines()) <= 200, "README exceeded 200 lines; move detailed material to linked documents.")
@@ -80,11 +89,14 @@ jobs:
               "AUTONOMOUS_RESEARCH_LOOP.md",
               "AUTONOMOUS_RESEARCH_STATE.json",
               "CONTRIBUTION_COST_ACCOUNTING_REGRESSION.md",
+              "PUBLIC_REVIEW_PACKET.md",
+              "FAILURE_REGRESSION_INDEX.md",
+              "ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md",
           ]:
               require(link in readme, f"README lost required navigation link: {link}")
 
           # Autonomous continuity must remain resumable without founder reconstruction.
-          require(autonomous_state.get("schema_version") == "1.0", "Autonomous state schema version changed unexpectedly.")
+          require(autonomous_state.get("schema_version") == "1.1", "Autonomous state schema version changed unexpectedly; update the audit rule with any deliberate schema migration.")
           require(autonomous_state.get("status") in {"ACTIVE_CONTINUITY", "HOLD", "UNRESOLVED"}, "Autonomous state has invalid status.")
           require(autonomous_state.get("recovery_entrypoint") == "AUTONOMOUS_RESEARCH_LOOP.md", "Autonomous recovery entrypoint drifted.")
           require(bool(autonomous_state.get("unresolved_frontier")), "Autonomous state lost unresolved frontier.")
@@ -111,6 +123,10 @@ jobs:
           ]:
               require(phrase in autonomous_loop, f"Autonomous continuity loop lost required control: {phrase}")
           require("benefit ledger" in contribution_cost.lower() and "cost ledger" in contribution_cost.lower(), "Contribution-cost regression lost separate ledger rule.")
+          require("review-interface complete" in review_packet.lower(), "Public review packet lost the explicit completion boundary.")
+          require("F-R003" in failure_index and "schema" in failure_index.lower(), "Failure index lost the autonomous-state schema/workflow drift regression.")
+          require("human-founded independent research program" in attribution_boundary.lower(), "Attribution boundary lost the human-founded project statement.")
+          require("AI assistance must not be relabeled as independent external validation." in attribution_boundary, "Attribution boundary lost AI-assistance versus independent-validation separation.")
 
           # Declared bilingual policy and power-reversal gate must remain inspectable.
           require("Original 1 — English Canonical" in policy, "Research status policy lost English canonical section.")
