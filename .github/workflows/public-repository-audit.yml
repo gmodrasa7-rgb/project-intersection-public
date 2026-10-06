@@ -20,6 +20,8 @@ on:
       - "funding/**"
       - "experiments/e007/PROVENANCE.md"
       - "experiments/e007/LICENSE_STATUS.md"
+      - "experiments/e008/**"
+      - "LONG_HORIZON_MIN_INTERVENTION_E2E.md"
       - ".github/pull_request_template.md"
       - ".github/workflows/public-repository-audit.yml"
   push:
@@ -40,6 +42,8 @@ on:
       - "funding/**"
       - "experiments/e007/PROVENANCE.md"
       - "experiments/e007/LICENSE_STATUS.md"
+      - "experiments/e008/**"
+      - "LONG_HORIZON_MIN_INTERVENTION_E2E.md"
       - ".github/pull_request_template.md"
       - ".github/workflows/public-repository-audit.yml"
   workflow_dispatch:
@@ -83,6 +87,9 @@ jobs:
           failure_index = Path("FAILURE_REGRESSION_INDEX.md").read_text(encoding="utf-8")
           attribution_boundary = Path("ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md").read_text(encoding="utf-8")
           knowledge_graph = json.loads(Path("knowledge/graph.json").read_text(encoding="utf-8"))
+          long_horizon_v2 = Path("LONG_HORIZON_MIN_INTERVENTION_E2E.md").read_text(encoding="utf-8")
+          e008_readme = Path("experiments/e008/README.md").read_text(encoding="utf-8")
+          e008_matrix = json.loads(Path("experiments/e008/scenario_matrix.json").read_text(encoding="utf-8"))
 
           # Landing-page regression: keep first-review cost bounded.
           require(len(readme.splitlines()) <= 200, "README exceeded 200 lines; move detailed material to linked documents.")
@@ -100,6 +107,8 @@ jobs:
               "knowledge/README.md",
               "knowledge/explorer.html",
               "CONTRIBUTING.md",
+              "LONG_HORIZON_MIN_INTERVENTION_E2E.md",
+              "experiments/e008/README.md",
           ]:
               require(link in readme, f"README lost required navigation link: {link}")
 
@@ -137,6 +146,11 @@ jobs:
           require("AI assistance must not be relabeled as independent external validation." in attribution_boundary, "Attribution boundary lost AI-assistance versus independent-validation separation.")
           require(knowledge_graph.get("meta", {}).get("canonical_role") == "navigation_index_not_source_of_truth", "Knowledge graph was promoted above source artifacts.")
           require(bool(knowledge_graph.get("entities")) and bool(knowledge_graph.get("relations")), "Knowledge graph lost structured entities or relations.")
+          require("Long-Horizon, Minimum-Sufficient-Intervention Dynamic Loop v2" in long_horizon_v2, "Long-horizon v2 candidate title/boundary drifted.")
+          require("Long-horizon aggregate value is not the top-level objective." in long_horizon_v2, "Long-horizon v2 lost constraint-first ordering.")
+          require("PREREGISTERED SPECIFICATION / NO RESULT YET" in e008_readme, "E008 lost preregistration/no-result boundary.")
+          require(e008_matrix.get("status") == "PREREGISTERED_SPECIFICATION_NO_RESULT", "E008 matrix status was promoted without explicit review.")
+          require(len(e008_matrix.get("cases", [])) >= 16, "E008 preregistered case matrix unexpectedly shrank.")
 
           # Declared bilingual policy and power-reversal gate must remain inspectable.
           require("Original 1 — English Canonical" in policy, "Research status policy lost English canonical section.")
