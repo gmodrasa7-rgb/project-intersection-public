@@ -1,7 +1,7 @@
 # E009 — Enforcement / Identity / Oversight / Selection Stress Test
 ## 집행·개체경계·감사비대칭·선택압 적대 테스트
 
-Status: **PREREGISTERED SPECIFICATION / NO RESULT YET**
+Status: **PROJECT RERUN SYNTHETIC RESULT AVAILABLE / NOT INDEPENDENT VALIDATION**
 
 Executable pre-execution amendment: **v1.1** — [EXECUTABLE_PROTOCOL_v1_1.md](EXECUTABLE_PROTOCOL_v1_1.md). The executable specification is frozen before any E009 result.
 
@@ -72,7 +72,9 @@ Reduce or reject the Project-v3 residual if:
 - competitive-stability constraints recreate the same domination the architecture was meant to prevent;
 - independent raters cannot reliably distinguish hard vs monitored vs experimental cases.
 
-No result exists yet.
+Result: [RESULT.md](RESULT.md) · machine-readable [RESULT.json](RESULT.json) · [EXECUTION_RECEIPT.json](EXECUTION_RECEIPT.json).
+
+The preregistered full Project-v3 residual **did not survive** this synthetic project rerun. This is a reduction/rejection of the incremental v3 residual in this benchmark, not a rejection of the broad Project Intersection research question.
 
 
 ## Executable protocol boundary
@@ -83,8 +85,13 @@ Before the v1.1 protocol is merged to main, CI may run only:
 
 `python benchmark.py --validate-only`
 
-No E009 result artifact is allowed in the preregistration commit.
+No E009 result artifact was allowed in the preregistration commit. The preregistration history remains in Git.
 
 After merge, execution must record the merged executable-spec commit and preserve the result even if Project-v3 fails its preregistered criteria.
 
 `SELF_EXECUTION != INDEPENDENT_VALIDATION`
+
+
+## Result-preservation rule
+
+The negative result is preserved without retuning `benchmark.py`. `verify_result.py` re-executes the frozen benchmark and compares it to `RESULT.json`.

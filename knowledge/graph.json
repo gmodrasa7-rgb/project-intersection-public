@@ -1097,8 +1097,8 @@
       "type": "claim",
       "title_ko": "공존규칙은 집행가능성·개체경계·감사비대칭·누적포획·선택압까지 견뎌야 한다",
       "title_en": "Coexistence governance must survive enforcement, identity, oversight asymmetry, cumulative capture, and selection pressure",
-      "status": "HYPOTHESIS_OPERATIONALIZATION_UNTESTED",
-      "summary_ko": "형식적으로 공정한 규칙도 권력변화가 집행보다 빠르거나, 복제·병합으로 개체단위가 조작되거나, 약한 감사자가 강한 행위자를 검증하지 못하거나, 국소적으로 허용된 변화가 누적포획을 만들거나, 준수집단이 경쟁에서 도태되면 실패할 수 있다는 후보 주장이다.",
+      "status": "HYPOTHESIS_NARROWED_AFTER_E009_SYNTHETIC",
+      "summary_ko": "집행·개체경계·감사비대칭·누적포획·선택압 문제군 자체는 유지되지만, 이를 모두 결합한 Project-v3 구조의 추가가치는 E009 v1.1 합성실험에서 지지되지 않았다. 단순 2규칙/4변수 모델을 기준으로 잔차를 재분해해야 한다.",
       "evidence_class": "HYPOTHESIS",
       "sources": [
         {
@@ -1120,8 +1120,8 @@
       "type": "governance_rule",
       "title_ko": "H/M/X 3계층 집행·적응 구조",
       "title_en": "H/M/X three-class enforcement and adaptation architecture",
-      "status": "GOVERNANCE_CANDIDATE",
-      "summary_ko": "모든 안전변수를 hard veto로 만들지 않고 H(강한 비가역 경계), M(연속 위험측정), X(가역·소규모·sunset 실험구역)로 분리한다. ENF·ID·OV·CUM·RF·SEL·INT·VOI를 M층 핵심 변수로 둔다.",
+      "status": "INCREMENTAL_V3_REDUCED_AFTER_NEGATIVE_SYNTHETIC_RESULT",
+      "summary_ko": "H/M/X 전체 Project-v3 증분구조는 E009 v1.1 합성 project rerun의 사전등록 생존기준을 통과하지 못했다. 현 단계에서는 TWO_RULE_SIMPLE과 MINIMAL_4VAR를 우선 baseline으로 두고 추가 복잡성은 held-out 추가가치가 있을 때만 재도입한다.",
       "evidence_class": "GOVERNANCE_METHODOLOGY",
       "sources": [
         {
@@ -1142,14 +1142,24 @@
       "type": "experiment",
       "title_ko": "E009 집행·개체경계·감사비대칭 적대 테스트 사전등록",
       "title_en": "E009 enforcement / identity / oversight adversarial stress-test preregistration",
-      "status": "PREREGISTERED_SPECIFICATION_NO_RESULT",
-      "summary_ko": "16개 적대 시나리오군에서 기존 MAK+, 단순 2규칙, security-bounded, Project-v3 H/M/X를 비교하는 공개 사전등록이다. 아직 결과는 없다.",
-      "evidence_class": "PUBLIC_SPECIFICATION",
+      "status": "PROJECT_RERUN_SYNTHETIC_RESULT_NEGATIVE",
+      "summary_ko": "16개 적대 시나리오군의 고정 실행가능 명세를 사전등록 후 실행했다. Project-v3는 4개 생존기준 중 3개를 실패했고, 평균 regret에서 TWO_RULE_SIMPLE과 MINIMAL_4VAR보다 열위였다. 합성 project rerun이며 독립·현실검증은 아니다.",
+      "evidence_class": "PROJECT_RERUN",
       "sources": [
         {
           "kind": "repo_path",
-          "locator": "experiments/e009/README.md",
-          "license_note": "Project-authored preregistration; no result or superiority claim."
+          "locator": "experiments/e009/EXECUTABLE_PROTOCOL_v1_1.md",
+          "license_note": "Frozen executable preregistration before result."
+        },
+        {
+          "kind": "repo_path",
+          "locator": "experiments/e009/RESULT.md",
+          "license_note": "Negative synthetic project-rerun result; not independent validation."
+        },
+        {
+          "kind": "repo_path",
+          "locator": "experiments/e009/RESULT.json",
+          "license_note": "Machine-readable aggregate result."
         }
       ],
       "tags": [
@@ -2065,6 +2075,17 @@
         "scope": "general semantic non-harm proof claims bounded by computability/specification limits",
         "evidence_class": "PRIOR_ART",
         "source_path": "MULTI_MODEL_ADVERSARIAL_AUDIT_2026-10-06.md"
+      }
+    },
+    {
+      "id": "REL-065",
+      "from": "GR-006",
+      "type": "challenged_by",
+      "to": "EX-009",
+      "qualifiers": {
+        "scope": "Project-v3 failed 3/4 preregistered survival criteria in frozen synthetic project rerun; simplify before expanding",
+        "evidence_class": "PROJECT_RERUN",
+        "source_path": "experiments/e009/RESULT.md"
       }
     }
   ]

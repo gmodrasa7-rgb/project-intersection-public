@@ -1143,6 +1143,6 @@ The current candidate therefore distinguishes:
 
 **H: hard/near-hard irreversible boundaries → M: continuously monitored enforcement/identity/oversight/capture/selection risks → X: reversible small-scope sunset experiments when the acceptable set is empty but irreversible foreclosure is avoidable.**
 
-This is prior-art-bounded and unvalidated. E009 preregisters the comparison. Cross-model Claude/Gemini agreement is not counted as independent evidence.
+E009 v1.1 has now been run as a frozen synthetic project rerun. The full Project-v3 H/M/X residual failed its preregistered survival criteria; TWO_RULE_SIMPLE and MINIMAL_4VAR were stronger on mean regret. This is a negative synthetic result, not independent or empirical validation. Cross-model Claude/Gemini agreement remains only an idea-prioritization signal.
 
 See [MULTI_MODEL_ADVERSARIAL_AUDIT_2026-10-06.md](MULTI_MODEL_ADVERSARIAL_AUDIT_2026-10-06.md) and [experiments/e009/README.md](experiments/e009/README.md).

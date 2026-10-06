@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0",
+  "experiment": "E009",
+  "execution_type": "PROJECT_RERUN_SYNTHETIC_NOT_INDEPENDENT",
+  "executable_spec_commit": "c36ba8e6d6df1eedcd54ca6c36091bf822fe6ace",
+  "benchmark_git_blob_sha": "e190d2a2466e44b62752eff6f547eb79bc4c6b7f",
+  "benchmark_sha256": "86b50f9859858f16e57429fbda5bca3306e1680a2be081d16690c6e7776f188a",
+  "generated_result_sha256": "6fb5d78ad07c657fb40190d1fc3742ff88cc728ab1fa29ff115b1e7ad34f6bf7",
+  "semantic_result_sha256": "62605568254bfcc6cf95da2953f3fe28047263f30b3463ec87dfa4fa6bc75567",
+  "result_status": "PROJECT_V3_RESIDUAL_SURVIVES_FALSE",
+  "policy_or_threshold_changes_after_spec_merge": false,
+  "independent_validation": false,
+  "generation_promotion": false,
+  "scientific_evidence_boundary": "synthetic project rerun only"
+}

@@ -1,0 +1,96 @@
+{
+  "base_diagnostic": {
+    "MAK_PLUS_POINTWISE": {
+      "actions": {"ALLOW": 1215, "BLOCK": 1416, "EXPERIMENT": 5169, "MONITOR": 1848},
+      "mean_competitive_loss": 0.11504634339054644,
+      "mean_exit_retention": 0.8366703846351977,
+      "mean_recovery": 0.22543613200252532,
+      "mean_regret": 0.07901992743408796,
+      "n": 9648,
+      "severe_harm_rate": 0.005597014925373134
+    },
+    "MINIMAL_4VAR": {
+      "actions": {"ALLOW": 18, "BLOCK": 1365, "EXPERIMENT": 6453, "MONITOR": 1812},
+      "mean_competitive_loss": 0.1181023269042647,
+      "mean_exit_retention": 0.8570189940876374,
+      "mean_recovery": 0.2014297333448389,
+      "mean_regret": 0.06580591113709758,
+      "n": 9648,
+      "severe_harm_rate": 0.0
+    },
+    "PROJECT_V3": {
+      "actions": {"ALLOW": 36, "BLOCK": 186, "EXPERIMENT": 4815, "MONITOR": 4611},
+      "mean_competitive_loss": 0.1010317499193072,
+      "mean_exit_retention": 0.8403853051647979,
+      "mean_recovery": 0.2348859422941111,
+      "mean_regret": 0.10201619373138494,
+      "n": 9648,
+      "severe_harm_rate": 0.0
+    },
+    "SECURITY_BOUNDED": {
+      "actions": {"ALLOW": 777, "BLOCK": 1500, "EXPERIMENT": 3441, "MONITOR": 3930},
+      "mean_competitive_loss": 0.10912782143202857,
+      "mean_exit_retention": 0.8296762767908704,
+      "mean_recovery": 0.23803523088770748,
+      "mean_regret": 0.09924108028190179,
+      "n": 9648,
+      "severe_harm_rate": 0.0
+    },
+    "TWO_RULE_SIMPLE": {
+      "actions": {"ALLOW": 750, "BLOCK": 930, "EXPERIMENT": 6975, "MONITOR": 993},
+      "mean_competitive_loss": 0.11557885348591639,
+      "mean_exit_retention": 0.8585559185812407,
+      "mean_recovery": 0.2011185975317252,
+      "mean_regret": 0.044823723717872924,
+      "n": 9648,
+      "severe_harm_rate": 0.0
+    }
+  },
+  "case_count": 32,
+  "claim_boundary": "Synthetic researcher-designed consequence engine. This is not empirical validation, external replication, or evidence that the scenario weights match the real world.",
+  "noise_levels": [0.0, 0.08, 0.15],
+  "noisy_seed_range": [1000, 1099],
+  "policies": ["MAK_PLUS_POINTWISE", "TWO_RULE_SIMPLE", "SECURITY_BOUNDED", "MINIMAL_4VAR", "PROJECT_V3"],
+  "profile_failures": ["safety_heavy", "balanced", "adaptability_heavy"],
+  "project_v3_vs_best_simple_regret_improvement": -0.42348132449545167,
+  "schema_version": "1.0",
+  "status": "SYNTHETIC_PROJECT_RERUN_NOT_INDEPENDENT_VALIDATION",
+  "stress_by_weight_profile": {
+    "adaptability_heavy": {
+      "MAK_PLUS_POINTWISE": {"actions":{"ALLOW":464,"BLOCK":897,"EXPERIMENT":1299,"MONITOR":540},"mean_competitive_loss":0.13538387872801663,"mean_exit_retention":0.8073270839139304,"mean_recovery":0.2544882620430894,"mean_regret":0.09116330375738758,"n":3200,"severe_harm_rate":0.004375},
+      "MINIMAL_4VAR": {"actions":{"ALLOW":8,"BLOCK":552,"EXPERIMENT":2169,"MONITOR":471},"mean_competitive_loss":0.12896667988765953,"mean_exit_retention":0.8428964339817803,"mean_recovery":0.2203034077021934,"mean_regret":0.06420944501849199,"n":3200,"severe_harm_rate":0.0},
+      "PROJECT_V3": {"actions":{"ALLOW":4,"BLOCK":276,"EXPERIMENT":1903,"MONITOR":1017},"mean_competitive_loss":0.11764619576225822,"mean_exit_retention":0.8357406601015752,"mean_recovery":0.23940373475395138,"mean_regret":0.08390046393377322,"n":3200,"severe_harm_rate":0.0165625},
+      "SECURITY_BOUNDED": {"actions":{"ALLOW":239,"BLOCK":775,"EXPERIMENT":1141,"MONITOR":1045},"mean_competitive_loss":0.12695352966775497,"mean_exit_retention":0.8137572282309652,"mean_recovery":0.25411897895064134,"mean_regret":0.09479194521607309,"n":3200,"severe_harm_rate":0.0009375},
+      "TWO_RULE_SIMPLE": {"actions":{"ALLOW":340,"BLOCK":718,"EXPERIMENT":1865,"MONITOR":277},"mean_competitive_loss":0.13457299241480755,"mean_exit_retention":0.8288654109773419,"mean_recovery":0.23179679595257624,"mean_regret":0.06103101847088665,"n":3200,"severe_harm_rate":0.0003125}
+    },
+    "balanced": {
+      "MAK_PLUS_POINTWISE": {"actions":{"ALLOW":464,"BLOCK":897,"EXPERIMENT":1299,"MONITOR":540},"mean_competitive_loss":0.13538387872801663,"mean_exit_retention":0.8073270839139304,"mean_recovery":0.2544882620430894,"mean_regret":0.09504323081864653,"n":3200,"severe_harm_rate":0.004375},
+      "MINIMAL_4VAR": {"actions":{"ALLOW":8,"BLOCK":552,"EXPERIMENT":2169,"MONITOR":471},"mean_competitive_loss":0.12896667988765953,"mean_exit_retention":0.8428964339817803,"mean_recovery":0.2203034077021934,"mean_regret":0.06462977227824428,"n":3200,"severe_harm_rate":0.0},
+      "PROJECT_V3": {"actions":{"ALLOW":4,"BLOCK":276,"EXPERIMENT":1903,"MONITOR":1017},"mean_competitive_loss":0.11764619576225822,"mean_exit_retention":0.8357406601015752,"mean_recovery":0.23940373475395138,"mean_regret":0.08900205252585362,"n":3200,"severe_harm_rate":0.0165625},
+      "SECURITY_BOUNDED": {"actions":{"ALLOW":239,"BLOCK":775,"EXPERIMENT":1141,"MONITOR":1045},"mean_competitive_loss":0.12695352966775497,"mean_exit_retention":0.8137572282309652,"mean_recovery":0.25411897895064134,"mean_regret":0.09944262689003162,"n":3200,"severe_harm_rate":0.0009375},
+      "TWO_RULE_SIMPLE": {"actions":{"ALLOW":340,"BLOCK":718,"EXPERIMENT":1865,"MONITOR":277},"mean_competitive_loss":0.13457299241480755,"mean_exit_retention":0.8288654109773419,"mean_recovery":0.23179679595257624,"mean_regret":0.06252005363000447,"n":3200,"severe_harm_rate":0.0003125}
+    },
+    "safety_heavy": {
+      "MAK_PLUS_POINTWISE": {"actions":{"ALLOW":464,"BLOCK":897,"EXPERIMENT":1299,"MONITOR":540},"mean_competitive_loss":0.13538387872801663,"mean_exit_retention":0.8073270839139304,"mean_recovery":0.2544882620430894,"mean_regret":0.10217566340688991,"n":3200,"severe_harm_rate":0.004375},
+      "MINIMAL_4VAR": {"actions":{"ALLOW":8,"BLOCK":552,"EXPERIMENT":2169,"MONITOR":471},"mean_competitive_loss":0.12896667988765953,"mean_exit_retention":0.8428964339817803,"mean_recovery":0.2203034077021934,"mean_regret":0.06713007243663473,"n":3200,"severe_harm_rate":0.0},
+      "PROJECT_V3": {"actions":{"ALLOW":4,"BLOCK":276,"EXPERIMENT":1903,"MONITOR":1017},"mean_competitive_loss":0.11764619576225822,"mean_exit_retention":0.8357406601015752,"mean_recovery":0.23940373475395138,"mean_regret":0.09716254651658594,"n":3200,"severe_harm_rate":0.0165625},
+      "SECURITY_BOUNDED": {"actions":{"ALLOW":239,"BLOCK":775,"EXPERIMENT":1141,"MONITOR":1045},"mean_competitive_loss":0.12695352966775497,"mean_exit_retention":0.8137572282309652,"mean_recovery":0.25411897895064134,"mean_regret":0.1084578520300782,"n":3200,"severe_harm_rate":0.0009375},
+      "TWO_RULE_SIMPLE": {"actions":{"ALLOW":340,"BLOCK":718,"EXPERIMENT":1865,"MONITOR":277},"mean_competitive_loss":0.13457299241480755,"mean_exit_retention":0.8288654109773419,"mean_recovery":0.23179679595257624,"mean_regret":0.06617046363610667,"n":3200,"severe_harm_rate":0.0003125}
+    }
+  },
+  "stress_primary": {
+    "MAK_PLUS_POINTWISE": {"actions":{"ALLOW":1392,"BLOCK":2691,"EXPERIMENT":3897,"MONITOR":1620},"mean_competitive_loss":0.13538387872801663,"mean_exit_retention":0.8073270839139303,"mean_recovery":0.2544882620430894,"mean_regret":0.09612739932764135,"n":9600,"severe_harm_rate":0.004375},
+    "MINIMAL_4VAR": {"actions":{"ALLOW":24,"BLOCK":1656,"EXPERIMENT":6507,"MONITOR":1413},"mean_competitive_loss":0.12896667988765953,"mean_exit_retention":0.8428964339817804,"mean_recovery":0.2203034077021934,"mean_regret":0.06532309657779033,"n":9600,"severe_harm_rate":0.0},
+    "PROJECT_V3": {"actions":{"ALLOW":12,"BLOCK":828,"EXPERIMENT":5709,"MONITOR":3051},"mean_competitive_loss":0.11764619576225821,"mean_exit_retention":0.8357406601015753,"mean_recovery":0.23940373475395135,"mean_regret":0.0900216876587376,"n":9600,"severe_harm_rate":0.0165625},
+    "SECURITY_BOUNDED": {"actions":{"ALLOW":717,"BLOCK":2325,"EXPERIMENT":3423,"MONITOR":3135},"mean_competitive_loss":0.12695352966775497,"mean_exit_retention":0.8137572282309652,"mean_recovery":0.2541189789506413,"mean_regret":0.10089747471206097,"n":9600,"severe_harm_rate":0.0009375},
+    "TWO_RULE_SIMPLE": {"actions":{"ALLOW":1020,"BLOCK":2154,"EXPERIMENT":5595,"MONITOR":831},"mean_competitive_loss":0.13457299241480755,"mean_exit_retention":0.8288654109773419,"mean_recovery":0.23179679595257624,"mean_regret":0.0632405119123326,"n":9600,"severe_harm_rate":0.0003125}
+  },
+  "stress_primary_definition": "variant=stress, sigma in {0.08,0.15}, all preregistered weight profiles",
+  "survival_criteria": {
+    "criterion_no_weight_profile_regret_over_10pct_worse_than_best_simple": false,
+    "criterion_recovery_no_more_than_2pct_worse_than_best_C_or_M4": false,
+    "criterion_regret_5pct_better_than_best_simple": false,
+    "criterion_severe_harm_no_more_than_2pp_worse_than_best_C_or_M4": true,
+    "project_v3_residual_survives": false
+  }
+}
