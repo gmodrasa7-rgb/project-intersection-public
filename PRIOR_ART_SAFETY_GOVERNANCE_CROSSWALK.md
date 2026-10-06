@@ -326,3 +326,70 @@ The remaining Project-specific object is only the joint operationalization:
 plus permission-by-permission pairing under explicit distrust while preserving real capability and responsibility differences. It remains a checklist hypothesis until the F004 blinded holdout shows incremental value and acceptable inter-rater reliability beyond those baselines.
 
 See `CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md#6-power-reversal-exact-antecedent-correction--power-reversal-정확-선행경계`.
+
+
+---
+
+## 2026-10-07 update — safety-inspection reversal / 안전검사 역할반전
+
+### Prior-art correction
+
+The broad proposition "safety inspection must also inspect the inspector and inspection process" is not retained as Project novelty.
+
+Direct/adjacent prior art now includes:
+
+- **ISO/IEC 17020:2026** — competence, impartiality, and consistent operation of inspection bodies; lifecycle inspection; risk-based thinking and information control.
+- **IAEA Fukushima lessons** — effective safety oversight requires regulatory independence, legal authority, technical competence, resources, and lifetime inspection/reassessment.
+- **U.S. DOT OIG 737 MAX review** — established certification can still fail when delegation, information gaps, and insufficient independence weaken oversight.
+- **NRC Safety-Conscious Work Environment** — safety depends on protected problem reporting and avoidance of retaliation/chilling effects.
+- **FAA/NASA ASRS** — confidential, voluntary, non-punitive incident reporting as an anomaly-detection mechanism.
+- **NIST AI RMF** — independent/non-development assessors, deployment-relevant evaluation, production monitoring, documentation and affected-party input.
+- **EU AI Act Article 72** — post-market monitoring for high-risk AI systems.
+- **Algorithmic contestability** — a decision may itself be wrong and must be challengeable using evidence that can support reversal.
+- **Regulatory-audit/self-audit literature** — regulatory and firm auditing interact strategically; audit presence alone does not imply optimal detection or incentives.
+
+### Novelty boundary
+
+**NOVELTY_REJECTED as broad claims:**
+- inspection of inspectors;
+- inspector independence/impartiality;
+- protected reporting;
+- appeal/contestability;
+- lifecycle/post-market reassessment;
+- evidence-access requirements.
+
+**HOLD as narrow Project-specific composition:**
+
+1. jointly measure inspector authority gain and affected-party audit/contest/exit/rollback/recovery change;
+2. maintain separate benefit and proof/correction/recovery-cost ledgers across repeated inspections;
+3. test whether safety procedures themselves create cumulative dependency or practical-exit loss;
+4. require role-reversal paired cases while preserving actual capability, responsibility, urgency and harm differences.
+
+Candidate inequality:
+
+`INSPECTOR_AUTHORITY_GAIN <= AFFECTED_PARTY_AUDIT_CONTEST_EXIT_RECOVERY_GAIN + JUSTIFIED_NECESSITY`
+
+This is not a demonstrated law. Its incremental value over established impartial-inspection + contestable-lifecycle baselines is untested.
+
+### New falsification target
+
+[E010 — Safety Inspection Power-Reversal Meta-Audit](experiments/e010/README.md) preregisters a comparison between:
+
+- OBJECT_ONLY
+- IMPARTIAL_INSPECTOR
+- CONTESTABLE_LIFECYCLE
+- POWER_REVERSAL_META
+
+The Project residual survives only if the fourth baseline adds measurable error/burden reduction over the third without increasing severe irreversible harm or emergency-response paralysis.
+
+### Added sources
+
+- ISO/IEC 17020:2026: https://www.iso.org/standard/17020
+- IAEA Fukushima lessons: https://gnssn.iaea.org/FukushimaLessonsLearned/
+- U.S. DOT OIG 737 MAX audit: https://www.oig.dot.gov/library-item/38302
+- NRC SCWE: https://www.nrc.gov/facilities-safety/safety-culture/safety-conscious-work-environment
+- FAA ASRS: https://asip.faa.gov/explore/asrs/info/about
+- NIST AI RMF Core: https://airc.nist.gov/airmf-resources/airmf/5-sec-core/
+- EU AI Act: https://eur-lex.europa.eu/eli/reg/2024/1689
+- Freiesleben, Meding & König (2026): https://arxiv.org/abs/2605.16041
+- Dai (2026), regulatory auditing and self-auditing: https://doi.org/10.1007/s11149-026-09514-2
