@@ -67,6 +67,7 @@ Project Intersection은 **권력·인센티브·시점·practical exit·복구�
 ## Detailed research map / 상세 연구 지도
 
 - [Research Overview → RESEARCH_OVERVIEW.md](RESEARCH_OVERVIEW.md) — detailed concepts and research framing / 상세 개념·연구 프레임
+- [Long-Horizon Minimum-Sufficient-Intervention Loop → LONG_HORIZON_MIN_INTERVENTION_E2E.md](LONG_HORIZON_MIN_INTERVENTION_E2E.md) — dynamic versioned long-horizon / viability / least-intervention research candidate / 동적 버전업·장기총량·viability·최소충분관여 후보
 - [Research Contents Map → RESEARCH_TOC.md](RESEARCH_TOC.md) — claim families, public links, unresolved gaps / 주장군·공개 링크·미해결 공백
 - [Public Evidence Index → PUBLIC_EVIDENCE_INDEX.md](PUBLIC_EVIDENCE_INDEX.md) — what is actually checkable now / 현재 실제 검증 가능한 것
 - [Prior Art & Attribution → PRIOR_ART_AND_ATTRIBUTION.md](PRIOR_ART_AND_ATTRIBUTION.md) — source/originator attribution and novelty boundaries / 원출처·원안자·신규성 경계
