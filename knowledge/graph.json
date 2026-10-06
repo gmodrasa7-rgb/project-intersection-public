@@ -413,10 +413,10 @@
     {
       "id": "CL-003",
       "type": "claim",
-      "title_ko": "장기총량·최소충분관여는 지속 재최적화되어야 한다",
-      "title_en": "Long-horizon value and minimum-sufficient intervention require continual re-optimization",
-      "status": "HYPOTHESIS_COMPOSITE_INCREMENTAL_VALUE_UNTESTED",
-      "summary_ko": "새 발견·기술·능력 변화로 단기보상 압력이 반복 재유입될 수 있으므로, 고정 규칙보다 버전업 가능한 장기총량 평가와 최소충분관여를 결합해야 한다는 후보 주장이다.",
+      "title_ko": "장기총량은 개체별 viability·비가역손실 제약 뒤에서 최적화되어야 한다",
+      "title_en": "Long-horizon value should be optimized only after per-party viability and irreversible-loss constraints",
+      "status": "HYPOTHESIS_V2_INCREMENTAL_VALUE_UNTESTED",
+      "summary_ko": "새 발견·능력 변화로 단기보상 압력이 반복 재유입될 수 있으므로, 원자료·불확실성을 보존하고 개체별 viability/비가역손실 경계를 먼저 통과한 뒤 deep uncertainty를 stress-test하고 장기총량·최소충분관여를 평가해야 한다는 후보 주장이다.",
       "evidence_class": "HYPOTHESIS",
       "sources": [
         {
@@ -427,18 +427,19 @@
       ],
       "tags": [
         "long-horizon",
+        "constraint-first",
+        "irreversibility",
         "minimum-intervention",
-        "adaptive",
-        "option-space"
+        "power-reversal"
       ]
     },
     {
       "id": "GR-003",
       "type": "governance_rule",
-      "title_ko": "장기총량·최소충분관여 동적 루프",
-      "title_en": "Long-horizon minimum-sufficient-intervention dynamic loop",
-      "status": "GOVERNANCE_CANDIDATE",
-      "summary_ko": "모든 영향을 받는 개체의 viability floor를 먼저 보존하고, 그 feasible set 안에서 장기 생성성·option-space를 평가한 뒤 필요한 최소 개입을 선택하고 재관측·rollback·버전업하는 end-to-end 운영후보다.",
+      "title_ko": "역할반전·제약우선 장기총량 동적 루프 v2",
+      "title_en": "Role-reversed constraint-first long-horizon dynamic loop v2",
+      "status": "GOVERNANCE_CANDIDATE_V2",
+      "summary_ko": "증거무결성→개체별 viability/비가역손실 경계→deep-uncertainty 강건성→장기총량 frontier→최소충분관여→독립 변경승인→rollback·버전업 순으로 운용하는 후보 구조다.",
       "evidence_class": "GOVERNANCE_METHODOLOGY",
       "sources": [
         {
@@ -448,10 +449,11 @@
         }
       ],
       "tags": [
-        "receding-horizon",
-        "viability",
         "power-reversal",
-        "rollback"
+        "constraint-first",
+        "robust-decision",
+        "rollback",
+        "change-control"
       ]
     },
     {
@@ -536,6 +538,243 @@
         "prior-art",
         "corrigibility",
         "updates"
+      ]
+    },
+    {
+      "id": "EX-008",
+      "type": "experiment",
+      "title_ko": "E008 동적 역할반전·장기총량 벤치마크 사전등록",
+      "title_en": "E008 dynamic power-reversal / long-horizon benchmark preregistration",
+      "status": "PREREGISTERED_SPECIFICATION_NO_RESULT",
+      "summary_ko": "16개 역할반전 쌍 사례에서 단기보상, 장기 기대값, constrained receding-horizon, robust constrained, Project v2를 비교하도록 사전등록한 공개 명세다. 결과는 아직 없다.",
+      "evidence_class": "PUBLIC_SPECIFICATION",
+      "sources": [
+        {
+          "kind": "repo_path",
+          "locator": "experiments/e008/README.md",
+          "license_note": "Project-authored preregistration; no result or validation claim."
+        }
+      ],
+      "tags": [
+        "E008",
+        "preregistration",
+        "power-reversal",
+        "long-horizon"
+      ]
+    },
+    {
+      "id": "PA-008",
+      "type": "prior_art",
+      "title_ko": "Safe RL / Constrained MDP",
+      "title_en": "Safe Reinforcement Learning / Constrained MDP",
+      "status": "ESTABLISHED_PRIOR_ART",
+      "summary_ko": "안전제약을 만족하는 영역에서 누적보상을 최적화하는 constrained RL은 확립된 선행연구다.",
+      "evidence_class": "PRIOR_ART",
+      "sources": [
+        {
+          "kind": "external_url",
+          "locator": "https://proceedings.mlr.press/v119/wachi20a.html",
+          "license_note": "Citation only; no paper text or figures copied."
+        }
+      ],
+      "tags": [
+        "prior-art",
+        "safe-RL",
+        "CMDP",
+        "constraints"
+      ]
+    },
+    {
+      "id": "PA-009",
+      "type": "prior_art",
+      "title_ko": "Lexicographic Multi-Objective Reinforcement Learning",
+      "title_en": "Lexicographic Multi-Objective Reinforcement Learning",
+      "status": "ESTABLISHED_PRIOR_ART",
+      "summary_ko": "상위 목적을 먼저 최적화하고 그 제약 안에서 다음 목적을 최적화하는 lexicographic multi-objective RL은 기존 연구다.",
+      "evidence_class": "PRIOR_ART",
+      "sources": [
+        {
+          "kind": "external_url",
+          "locator": "https://doi.org/10.24963/ijcai.2022/476",
+          "license_note": "Citation only; rights remain with authors/publisher."
+        }
+      ],
+      "tags": [
+        "prior-art",
+        "lexicographic",
+        "multi-objective"
+      ]
+    },
+    {
+      "id": "PA-010",
+      "type": "prior_art",
+      "title_ko": "Robust Decision Making under Deep Uncertainty",
+      "title_en": "Robust Decision Making under Deep Uncertainty",
+      "status": "ESTABLISHED_PRIOR_ART",
+      "summary_ko": "단일 최적예측 대신 다수의 plausible future를 stress-test하고 강건한 적응전략을 찾는 RDM은 확립된 선행연구다.",
+      "evidence_class": "PRIOR_ART",
+      "sources": [
+        {
+          "kind": "external_url",
+          "locator": "https://link.springer.com/chapter/10.1007/978-3-030-05252-2_2",
+          "license_note": "Citation only; no chapter text copied."
+        }
+      ],
+      "tags": [
+        "prior-art",
+        "deep-uncertainty",
+        "robust-decision"
+      ]
+    },
+    {
+      "id": "PA-011",
+      "type": "prior_art",
+      "title_ko": "Irreversibility / Quasi-option Value",
+      "title_en": "Irreversibility / Quasi-option Value",
+      "status": "ESTABLISHED_PRIOR_ART",
+      "summary_ko": "불확실성과 비가역성이 결합될 때 선택지를 보존하고 학습을 기다리는 가치가 생길 수 있다는 option/quasi-option value는 기존 경제학 선행연구다.",
+      "evidence_class": "PRIOR_ART",
+      "sources": [
+        {
+          "kind": "external_url",
+          "locator": "https://doi.org/10.1016/S0928-7655(00)00025-7",
+          "license_note": "Citation only; rights remain with authors/publisher."
+        }
+      ],
+      "tags": [
+        "prior-art",
+        "irreversibility",
+        "option-value"
+      ]
+    },
+    {
+      "id": "PA-012",
+      "type": "prior_art",
+      "title_ko": "Proportionality / Least-Restrictive Means",
+      "title_en": "Proportionality / Least-Restrictive Means",
+      "status": "ESTABLISHED_PRIOR_ART",
+      "summary_ko": "정당한 목적·필요성·비례성·최소제약수단을 요구하는 구조는 인권법의 확립된 제한심사 원리이며 AI lifecycle 제한에도 적용되는 선행기준이다.",
+      "evidence_class": "PRIOR_ART",
+      "sources": [
+        {
+          "kind": "external_url",
+          "locator": "https://www.coe.int/en/web/cddh-handbook-on-ai-and-hr/echr-and-esc-general-principles-in-the-context-of-ai",
+          "license_note": "Official Council of Europe reference; citation only."
+        }
+      ],
+      "tags": [
+        "prior-art",
+        "proportionality",
+        "least-restrictive",
+        "AI-governance"
+      ]
+    },
+    {
+      "id": "PA-013",
+      "type": "prior_art",
+      "title_ko": "Independent Configuration Change Control",
+      "title_en": "Independent Configuration Change Control",
+      "status": "ESTABLISHED_PRIOR_ART",
+      "summary_ko": "변경 요청자가 자기 변경을 단독 승인하지 못하게 하고 독립 검토·승인을 두는 separation-of-duties 구조는 NIST configuration management 선행기준이다.",
+      "evidence_class": "PRIOR_ART",
+      "sources": [
+        {
+          "kind": "external_url",
+          "locator": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-128-2011.pdf",
+          "license_note": "Official NIST reference; citation only."
+        }
+      ],
+      "tags": [
+        "prior-art",
+        "change-control",
+        "separation-of-duties",
+        "NIST"
+      ]
+    },
+    {
+      "id": "PA-014",
+      "type": "prior_art",
+      "title_ko": "Safe Interruptibility",
+      "title_en": "Safe Interruptibility",
+      "status": "ESTABLISHED_PRIOR_ART",
+      "summary_ko": "학습 에이전트가 보상학습 때문에 중단을 회피하지 않도록 하는 safe interruptibility는 AI safety 선행연구다.",
+      "evidence_class": "PRIOR_ART",
+      "sources": [
+        {
+          "kind": "external_url",
+          "locator": "https://ora.ox.ac.uk/objects/uuid%3A17c0e095-4e13-47fc-bace-64ec46134a3f",
+          "license_note": "Oxford research record; citation only."
+        }
+      ],
+      "tags": [
+        "prior-art",
+        "interruptibility",
+        "AI-safety"
+      ]
+    },
+    {
+      "id": "PA-015",
+      "type": "prior_art",
+      "title_ko": "Credible Commitment / Power-Sharing Enforcement",
+      "title_en": "Credible Commitment / Power-Sharing Enforcement",
+      "status": "ESTABLISHED_PRIOR_ART",
+      "summary_ko": "권력공유 약속의 안정성을 위해 실제 의사결정권·감시·제3자 집행력 재배치가 필요할 수 있다는 commitment-problem 연구는 확립된 정치학 선행연구다.",
+      "evidence_class": "PRIOR_ART",
+      "sources": [
+        {
+          "kind": "external_url",
+          "locator": "https://doi.org/10.1146/annurev-polisci-052121-020406",
+          "license_note": "Citation only; article is CC BY 4.0 but no text/figures copied."
+        }
+      ],
+      "tags": [
+        "prior-art",
+        "credible-commitment",
+        "power-sharing"
+      ]
+    },
+    {
+      "id": "PA-016",
+      "type": "prior_art",
+      "title_ko": "Constitutional Amendment Entrenchment",
+      "title_en": "Constitutional Amendment Entrenchment",
+      "status": "ESTABLISHED_PRIOR_ART",
+      "summary_ko": "일반 규칙보다 헌법개정 규칙 자체를 더 어렵게 변경하도록 보호하는 entrenchment는 기존 헌법설계 선행연구다.",
+      "evidence_class": "PRIOR_ART",
+      "sources": [
+        {
+          "kind": "external_url",
+          "locator": "https://academic.oup.com/icon/article/13/3/655/2450806",
+          "license_note": "Citation only; rights remain with author/publisher."
+        }
+      ],
+      "tags": [
+        "prior-art",
+        "constitutionalism",
+        "entrenchment",
+        "amendment"
+      ]
+    },
+    {
+      "id": "PA-017",
+      "type": "prior_art",
+      "title_ko": "Algorithmic Constitutionalism",
+      "title_en": "Algorithmic Constitutionalism",
+      "status": "ESTABLISHED_ADJACENT_PRIOR_ART",
+      "summary_ko": "operative/object-level과 핵심 원칙을 자기변경으로부터 보호하는 meta-level을 분리하고 meta-reasoning·deliberative correction을 두는 구조는 Perez & Wimer(2023)의 선행연구다.",
+      "evidence_class": "PRIOR_ART",
+      "sources": [
+        {
+          "kind": "external_url",
+          "locator": "https://cris.biu.ac.il/en/publications/algorithmic-constitutionalism/",
+          "license_note": "Peer-reviewed publication record; citation only."
+        }
+      ],
+      "tags": [
+        "prior-art",
+        "algorithmic-constitutionalism",
+        "meta-level",
+        "self-modification"
       ]
     }
   ],
@@ -813,6 +1052,127 @@
         "scope": "power-reversal and audit/exit/rollback/recovery co-scaling boundary",
         "evidence_class": "GOVERNANCE_METHODOLOGY",
         "source_path": "LONG_HORIZON_MIN_INTERVENTION_E2E.md"
+      }
+    },
+    {
+      "id": "REL-026",
+      "from": "CL-003",
+      "type": "tested_by",
+      "to": "EX-008",
+      "qualifiers": {
+        "scope": "preregistered comparison of v2 incremental value against established baselines",
+        "evidence_class": "PUBLIC_SPECIFICATION",
+        "source_path": "experiments/e008/README.md"
+      }
+    },
+    {
+      "id": "REL-027",
+      "from": "PA-008",
+      "type": "prior_art_for",
+      "to": "GR-003",
+      "qualifiers": {
+        "scope": "constraint-first reward optimization / safe region",
+        "evidence_class": "PRIOR_ART",
+        "source_path": "CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md"
+      }
+    },
+    {
+      "id": "REL-028",
+      "from": "PA-009",
+      "type": "prior_art_for",
+      "to": "GR-003",
+      "qualifiers": {
+        "scope": "lexically ordered objectives and safety-priority optimization",
+        "evidence_class": "PRIOR_ART",
+        "source_path": "CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md"
+      }
+    },
+    {
+      "id": "REL-029",
+      "from": "PA-010",
+      "type": "prior_art_for",
+      "to": "GR-003",
+      "qualifiers": {
+        "scope": "deep-uncertainty stress testing and robust strategies",
+        "evidence_class": "PRIOR_ART",
+        "source_path": "CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md"
+      }
+    },
+    {
+      "id": "REL-030",
+      "from": "PA-011",
+      "type": "prior_art_for",
+      "to": "GR-003",
+      "qualifiers": {
+        "scope": "irreversibility and option preservation under uncertainty",
+        "evidence_class": "PRIOR_ART",
+        "source_path": "CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md"
+      }
+    },
+    {
+      "id": "REL-031",
+      "from": "PA-012",
+      "type": "prior_art_for",
+      "to": "GR-003",
+      "qualifiers": {
+        "scope": "necessity, proportionality, least-restrictive intervention",
+        "evidence_class": "PRIOR_ART",
+        "source_path": "CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md"
+      }
+    },
+    {
+      "id": "REL-032",
+      "from": "PA-013",
+      "type": "prior_art_for",
+      "to": "GR-003",
+      "qualifiers": {
+        "scope": "independent approval / separation of duties for safeguard amendments",
+        "evidence_class": "PRIOR_ART",
+        "source_path": "CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md"
+      }
+    },
+    {
+      "id": "REL-033",
+      "from": "PA-014",
+      "type": "prior_art_for",
+      "to": "GR-003",
+      "qualifiers": {
+        "scope": "intervention acceptance and interruption incentives",
+        "evidence_class": "PRIOR_ART",
+        "source_path": "CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md"
+      }
+    },
+    {
+      "id": "REL-034",
+      "from": "PA-015",
+      "type": "prior_art_for",
+      "to": "GR-003",
+      "qualifiers": {
+        "scope": "credible commitment through power redistribution / third-party enforcement",
+        "evidence_class": "PRIOR_ART",
+        "source_path": "CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md"
+      }
+    },
+    {
+      "id": "REL-035",
+      "from": "PA-016",
+      "type": "prior_art_for",
+      "to": "GR-003",
+      "qualifiers": {
+        "scope": "higher threshold for changing higher-order amendment rules",
+        "evidence_class": "PRIOR_ART",
+        "source_path": "CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md"
+      }
+    },
+    {
+      "id": "REL-036",
+      "from": "PA-017",
+      "type": "prior_art_for",
+      "to": "GR-003",
+      "qualifiers": {
+        "scope": "object/meta-level separation protecting core principles from self-modification",
+        "evidence_class": "PRIOR_ART",
+        "source_path": "CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md"
       }
     }
   ]

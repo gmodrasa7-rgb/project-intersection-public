@@ -15,12 +15,13 @@ This file is the shortest reviewer path through Project Intersection. It does no
 2. [Public Evidence Index](PUBLIC_EVIDENCE_INDEX.md) — what is publicly checkable now.
 3. [Knowledge Graph Explorer](knowledge/explorer.html) — structured entity/relation view; linked source artifacts remain authoritative.
 4. [E007 timing result](E007_TIMING_RESULT.md) and [reproduction package](experiments/e007/README.md) — narrow executable synthetic result.
-5. [Research Status & Reassessment Policy](RESEARCH_STATUS_POLICY.md) — evidence classes, reassessment, and non-laundering rules.
-6. [Prior Art & Attribution](PRIOR_ART_AND_ATTRIBUTION.md) and [Core/Gaps Crosswalk](CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md) — what is prior art and what remains unresolved.
-7. [Failure Regression Index](FAILURE_REGRESSION_INDEX.md) — known process/research failures and required regression barriers.
-8. [Attribution & Contribution Boundary](ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md) — founder, AI-assistance, and external-source attribution rules.
-9. [Autonomous Research Continuity](AUTONOMOUS_RESEARCH_LOOP.md) and [state](AUTONOMOUS_RESEARCH_STATE.json) — public recovery path without founder reconstruction.
-10. [Funding due diligence](funding/DUE_DILIGENCE.md) — what support buys and what it does not buy.
+5. [E008 preregistration](experiments/e008/README.md) — discriminating benchmark specification for the v2 dynamic governance candidate; no result yet.
+6. [Research Status & Reassessment Policy](RESEARCH_STATUS_POLICY.md) — evidence classes, reassessment, and non-laundering rules.
+7. [Prior Art & Attribution](PRIOR_ART_AND_ATTRIBUTION.md) and [Core/Gaps Crosswalk](CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md) — what is prior art and what remains unresolved.
+8. [Failure Regression Index](FAILURE_REGRESSION_INDEX.md) — known process/research failures and required regression barriers.
+9. [Attribution & Contribution Boundary](ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md) — founder, AI-assistance, and external-source attribution rules.
+10. [Autonomous Research Continuity](AUTONOMOUS_RESEARCH_LOOP.md) and [state](AUTONOMOUS_RESEARCH_STATE.json) — public recovery path without founder reconstruction.
+11. [Funding due diligence](funding/DUE_DILIGENCE.md) — what support buys and what it does not buy.
 
 ---
 
@@ -29,6 +30,7 @@ This file is the shortest reviewer path through Project Intersection. It does no
 ### Publicly inspectable
 
 - A narrow synthetic E007 implementation is executable and project-rerun reproducible.
+- E008 is a public preregistration/specification only; it has no result yet and cannot support Project-v2 superiority.
 - Timing semantics affect some histories/classifications in the released finite model.
 - The repository contains explicit claim-status, prior-art, negative-result, provenance, and reassessment rules.
 - Several broad novelty claims have been narrowed or rejected after prior-art review.

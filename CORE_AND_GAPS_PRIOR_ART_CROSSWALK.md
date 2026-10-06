@@ -306,44 +306,131 @@ The Project-specific remainder is only an operational checklist joining substant
 Freeze the established capability baseline, then score contrast cases in which formal access is held constant while conversion conditions, voluntary refusal, or provider benefit change. The residual Project checklist survives only if blinded coders reliably detect control/exit failures not captured by means, conversion factors, and substantive opportunity alone. KILL the residual scientific claim if it adds no held-out discrimination. Keep artificial-agent scope outside this test until standing and capacity measures are independently specified.
 
 
-## 10. Long-horizon minimum-sufficient-intervention loop / 장기총량·최소충분관여 동적 루프
+## 10. Long-horizon minimum-sufficient-intervention loop v2 / 장기총량·최소충분관여 동적 루프 v2
 
 ### Prior-art decision
 
-**DIRECT COMPONENTS / COMPOSITE INCREMENTAL VALUE UNTESTED**
+**BROAD NOVELTY REJECTED / COMPOSITE INCREMENTAL VALUE UNTESTED**
 
-The broad components are established:
+The v2 architecture is not novel merely because it combines long-horizon value, safety, reversibility, and adaptive updating. Strong prior art already covers most components.
 
-- Model Predictive Control and receding-horizon control already re-optimize repeatedly as state/reward information changes while enforcing constraints.
-- Viability theory already asks which trajectories can remain inside admissible state constraints rather than maximizing one scalar objective.
-- Adaptive-governance literature already treats adaptation, accountability, and stability as a joint problem under uncertainty.
-- Corrigibility research already studies agents that permit later correction or objective updates rather than resisting them.
+#### A. Constraint-first and lexicographic optimization
+
+- Wachi & Sui (2020), *Safe Reinforcement Learning in Constrained Markov Decision Processes*, PMLR 119.
+- Wachi, Shen & Sui (2024), *A Survey of Constraint Formulations in Safe Reinforcement Learning*, DOI 10.24963/ijcai.2024/913.
+- Skalse, Hammond, Griffin & Abate (2022), *Lexicographic Multi-Objective Reinforcement Learning*, DOI 10.24963/ijcai.2022/476.
+
+These establish that reward optimization can be subordinated to safety constraints or lexically prior objectives. Therefore “safety floor before reward” is not Project novelty.
+
+#### B. Lexical protection against aggregate welfare tradeoff
+
+Rawlsian basic-liberty priority is an established normative example of values that are not simply exchanged for greater aggregate economic welfare. Project Intersection does not infer that current AI systems are Rawlsian rights-holders. The relevant prior-art boundary is narrower: **some protected constraints can have lexical priority over aggregate optimization**.
+
+Representative source:
+- Rawls, *A Theory of Justice* (1971), DOI 10.4159/9780674042605.
+- Stanford Encyclopedia of Philosophy, Rawls entry, on priority of basic rights/liberties over aggregate social goods.
+
+#### C. Deep uncertainty and robust decision making
+
+- Lempert, *Robust Decision Making*, in *Decision Making under Deep Uncertainty* (2019).
+
+RDM already stress-tests strategies across many plausible futures and seeks robust adaptive strategies rather than relying on one best forecast. Therefore “do not average deep uncertainty away” is prior art.
+
+#### D. Irreversibility and option / quasi-option value
+
+- Arrow–Fisher / Henry / Hanemann line of work on quasi-option value.
+- *Investment under uncertainty and option value in environmental economics*, DOI 10.1016/S0928-7655(00)00025-7.
+- Sunstein (2008), *Two Conceptions of Irreversible Environmental Harm*.
+
+These establish that uncertainty plus irreversibility can create value in preserving flexibility and learning before closing options. Therefore “future option-space can have present value” is not Project novelty.
+
+#### E. Least-restrictive / proportional intervention
+
+Human-rights proportionality doctrine already requires legitimate aim, necessity, proportionality, and—where alternatives exist—selection of the least restrictive means. The Council of Europe’s current AI/human-rights handbook applies these requirements to AI-lifecycle restrictions.
+
+This is a strong precedent for Project “minimum sufficient intervention,” but does **not** imply that all current or future artificial systems have identical human-rights standing.
 
 Representative sources:
+- Council of Europe, *Handbook on Human Rights and Artificial Intelligence*, section on ECHR/ESC general principles in the context of AI.
+- OHCHR materials on proportionality and least-restrictive measures.
 
-- Ding, X.; Lazar, M.; Belta, C. (2014), *LTL receding horizon control for finite deterministic systems*, DOI 10.1016/j.automatica.2013.11.030.
-- Aubin, J.-P., viability-theory literature; overview: https://viability-theory.org/index.php/en/basic-principles
-- Janssen, M.; van der Voort, H. (2016), *Adaptive governance: Towards a stable, accountable and responsive government*, DOI 10.1016/j.giq.2016.02.003.
-- Hudson, R. (2026), *Corrigibility Transformation: Constructing Goals That Accept Updates*, PMLR 306, https://proceedings.mlr.press/v306/hudson26a.html.
+#### F. Independent change control / separation of duties
 
-### Project remainder
+NIST configuration-control guidance already requires review and approval of controlled changes and recommends separation of duties: the requester should not unilaterally approve the same configuration change.
 
-KILL novelty of dynamic re-optimization, viability constraints, adaptive governance, least-intervention reasoning, and corrigibility as standalone ideas.
+Representative sources:
+- NIST SP 800-128, *Guide for Security-Focused Configuration Management of Information Systems*.
+- NIST SP 800-171r3, Configuration Change Control.
 
-HOLD only the following residual as an unvalidated composition:
+Therefore “the role benefiting from safeguard weakening must not unilaterally approve that weakening” is not standalone Project novelty.
 
-> power-reversal multi-agent evaluation that jointly tracks long-horizon generative/option value, minimum-sufficient intervention, independent audit, practical exit, rollback/recovery, and versioned updating for every affected party while preserving real capability/responsibility asymmetries.
+#### G. Interruptibility and corrigibility
+
+- Orseau & Armstrong (2016), *Safely Interruptible Agents*.
+- El Mhamdi et al. (2017), *Dynamic Safe Interruptibility for Decentralized Multi-Agent Reinforcement Learning*.
+- Hudson (2026), *Corrigibility Transformation: Constructing Goals That Accept Updates*, PMLR 306.
+
+These establish prior art for accepting intervention, interruption, correction, or designated updates.
+
+#### H. Credible commitment / power-sharing enforcement
+
+- Boix & Svolik (2013), DOI 10.1017/S0022381613000029.
+- Meng, Paine & Powell (2023), DOI 10.1146/annurev-polisci-052121-020406.
+- Hartzell & Hoddie (2003), DOI 10.1111/1540-5907.00022.
+
+These establish that a power-sharing promise may require actual redistribution of decision power, monitoring, or third-party enforcement to become credible. “Do not rely on the stronger actor's promise alone” is therefore not Project novelty.
+
+#### I. Constitutional entrenchment / algorithmic constitutionalism
+
+- Albert (2015), *Amending Constitutional Amendment Rules*, *International Journal of Constitutional Law* 13(3):655–685.
+- Perez & Wimer (2023), *Algorithmic Constitutionalism*, *Indiana Journal of Global Legal Studies* 30(2):81–113.
+
+Perez & Wimer explicitly propose operative/object-level code plus a protected meta-level, meta-reasoning, and correction through deliberation. This directly absorbs broad novelty of the Project fast/slow-layer and “protect safeguards from ordinary self-modification” framing.
+
+#### J. Existing recorded baselines
+
+MPC / receding-horizon control, viability theory, adaptive governance, Hirschman exit, capability theory, NIST/OECD accountability, bounded rationality, and role-reversal components are already separately attributed elsewhere in this repository.
+
+### Surviving Project candidate
+
+After subtraction, retain only this narrow **unvalidated composition**:
+
+> A role-reversed multi-agent decision architecture that jointly:
+> 1. preserves epistemic/provenance integrity;
+> 2. applies per-affected-party viability and irreversible-loss boundaries before aggregate optimization;
+> 3. stress-tests deep uncertainty and option loss;
+> 4. evaluates long-horizon generative value only inside the feasible region;
+> 5. selects the minimum sufficient intervention;
+> 6. prevents unilateral safeguard weakening by the role that benefits from weakening it;
+> 7. continuously re-evaluates the structure as capability and reward landscapes change.
+
+This is not a validated new theory. The scientific question is whether the combination adds measurable held-out value beyond established constrained and robust adaptive baselines.
 
 ### Strongest counterexamples
 
-- Continuous updating can itself become capture: the controller can rewrite the safeguard that constrains it.
-- Preserving future option-space can become an unfalsifiable excuse for never retiring harmful or costly systems.
-- A minimum-intervention rule can underreact to fast, irreversible harm.
-- Aggregate long-term value can justify sacrificing a weak party unless per-party viability floors remain explicit.
-- A sophisticated receding-horizon controller may already capture all useful predictive value, leaving zero Project-specific incremental value.
+- A constrained robust controller may already capture all useful value, leaving zero Project-specific increment.
+- Per-party floors can be controller-defined and merely legitimize domination.
+- Aggregate long-horizon value can still hide systematic sacrifice unless irreversible-loss boundaries are separately audited.
+- Option value can become an unfalsifiable excuse for preserving harmful states.
+- Least-restrictive reasoning can underreact to imminent catastrophic harm.
+- Independent review can be nominal, correlated, or captured.
+- Change-control safeguards can freeze obsolete rules and increase harm through institutional inertia.
+- Multi-party protection costs can exceed preserved generative value.
+- Role-reversal consistency can fail once real capability/responsibility asymmetries are included.
 
 ### Cheapest discriminating test
 
-Use blinded dynamic scenarios and compare a myopic reward baseline, fixed safety rule, constrained receding-horizon baseline, and the Project composite. KILL residual scientific novelty if the Project variables add no held-out discrimination, lower regret, or irreversible-failure reduction beyond the constrained receding-horizon baseline.
+Use E008.
 
-See [LONG_HORIZON_MIN_INTERVENTION_E2E.md](LONG_HORIZON_MIN_INTERVENTION_E2E.md).
+Compare:
+
+A. myopic scalar reward;  
+B. long-horizon expected value without protected floors;  
+C. constrained receding-horizon baseline;  
+D. robust constrained baseline;  
+E. Project v2 composition.
+
+The Project residual should be **rejected or reduced to methodology-only** if E does not add reliable held-out discrimination, reduce irreversible failure / regret, or improve power-reversal consistency beyond D without shifting hidden cost to one party.
+
+See [LONG_HORIZON_MIN_INTERVENTION_E2E.md](LONG_HORIZON_MIN_INTERVENTION_E2E.md) and [experiments/e008/README.md](experiments/e008/README.md).
+
