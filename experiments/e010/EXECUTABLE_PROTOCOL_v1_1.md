@@ -1,13 +1,33 @@
 # E010 Executable Protocol v1.1
 ## E010 실행가능 사전등록 v1.1
 
-Status: **PREREGISTERED EXECUTABLE SPECIFICATION / NO RESULT YET**
+Status: **SUPERSEDED AS RESULT-GENERATING SPEC / PRE-RESULT CONSTRUCT MISMATCH / NO RESULT**
 
 v1.1 supersedes v1.0 **before any E010 result execution**.
 
 Reason for amendment: v1.0 gave proof burden and exit loss only to the Project-specific policy. Subsequent prior-art review found that inspection/compliance administrative burden and the cost of regulatory procedures are established baselines. Keeping those variables exclusive to POWER_REVERSAL_META would bias the benchmark in the Project's favor.
 
 v1.0 is preserved as amendment lineage and must not be silently deleted.
+
+## 0. Pre-result invalidation note
+
+After v1.1 was written but **before any E010 result execution**, role-reversal/construct-validity review found that this executable spec does not instantiate the Project-specific residual it claims to test.
+
+The residual requires dynamic state transitions for:
+- inspector/decision authority accumulation;
+- affected-party audit/contest/exit/rollback/recovery capacity;
+- repeated benefit versus proof/correction/recovery burden;
+- practical-exit degradation over repeated interactions.
+
+The current executable matrix is static and does not represent those state transitions. After adding the cost-aware C2 baseline, the remaining D-vs-C2 executable difference is largely evaluator-dependence/evidence-asymmetry review logic, which overlaps established inspector-independence and contestability prior art.
+
+Therefore:
+
+`CLAIMED_RESIDUAL != EXECUTABLE_CONSTRUCT`
+
+This v1.1 protocol remains preserved as preregistration/design lineage but **must not be used to generate a scientific E010 result**.
+
+A replacement must be explicitly versioned and independently reviewed before execution.
 
 ## 1. Scope
 
@@ -134,6 +154,6 @@ Before preregistration v1.1 is merged, only:
 
 may be run.
 
-A result may be generated only after the v1.1 preregistration commit exists on main and the result artifact records that commit.
+No scientific result may be generated from v1.1. The execution path is intentionally blocked in benchmark.py.
 
 `SELF_EXECUTION != INDEPENDENT_VALIDATION`
