@@ -5,7 +5,7 @@
   "canonical_boundary": "Public continuation pointer only; source artifacts and commit history outrank this state file.",
   "recovery_entrypoint": "AUTONOMOUS_RESEARCH_LOOP.md",
   "current_public_head": "c2ff226441550213664373a22cbd94321041ad51",
-  "updated_at": "2026-10-06T11:10:00Z",
+  "updated_at": "2026-10-06T21:50:00Z",
   "execution_policy": {
     "atomic_material_delta_per_run": 1,
     "require_prior_art_gate": true,
@@ -202,7 +202,7 @@
         "additional RF/SEL/INT/VOI variables only if they show held-out incremental value",
         "symmetric power-reversal operationalization only where it improves blinded/external discrimination beyond established baselines"
       ],
-      "next_cheapest_discriminating_check": "Do not add another internal synthetic architecture first. Build a blinded or lineage-separated holdout comparison using TWO_RULE_SIMPLE and MINIMAL_4VAR as active baselines; add one extra variable at a time only if it improves held-out discrimination/recovery without degrading reliability.",
+      "next_cheapest_discriminating_check": "Obtain lineage-separated review of E010 preregistration and benchmark neutrality. If it passes, freeze the preregistration on main, then execute exactly the frozen benchmark as PROJECT_RERUN_SYNTHETIC; do not retune on the result. External/independent holdout remains the stronger evidence upgrade.",
       "strongest_counterexample": "The E009 negative result shows that a more comprehensive Project-specific architecture can add complexity and competitive-loss benefits while still worsening overall regret, recovery, and severe-harm frequency relative to simpler rules.",
       "source_artifact": "PRIOR_ART_SAFETY_GOVERNANCE_CROSSWALK.md",
       "power_reversal": "Neither controller nor controlled actor receives a self-validating exemption. Evidence preservation, appeal/contestability, proportional restriction, and rollback are applied symmetrically while preserving actual differences in capability, responsibility, legal authority, and harm.",
@@ -219,6 +219,22 @@
         },
         "project_v3_vs_best_simple_regret_improvement": -0.42348132449545167,
         "independent_validation": false
+      },
+      "e010_safety_inspection_meta_audit": {
+        "status": "DRAFT_PR20_PREREGISTERED_NO_RESULT_CI_VALIDATED_LINEAGE_SEPARATED_REVIEW_REQUIRED",
+        "pull_request": "https://github.com/gmodrasa7-rgb/project-intersection-public/pull/20",
+        "branch": "e010-safety-inspection-meta-audit-20261007",
+        "scope": "Test only the incremental value of authority-vs-audit/contest/exit/rollback/recovery co-scaling and separate repeated proof/repair burden accounting beyond established impartial-inspector and contestable-lifecycle baselines.",
+        "prior_art_removed": [
+          "inspector competence/impartiality/independence",
+          "protected reporting/chilling-effect controls",
+          "appeal/contestability",
+          "lifecycle/post-market monitoring"
+        ],
+        "preregistered_cases": 13,
+        "ci": "GitHub Actions Public repository governance audit run #100 passed, including E010 validate-only.",
+        "merge_gate": "Do not self-approve from the same generation lineage; require review of thresholds, prior-art attribution, and benchmark neutrality before preregistration merge.",
+        "evidence_boundary": "No E010 result exists. A future project-run synthetic result is not independent validation."
       }
     },
     {
@@ -309,7 +325,7 @@
     },
     "note": "Negative E009 result reproduced after merge. Project-v3 incremental residual remains reduced/rejected for this synthetic benchmark; no generation or independent-evidence promotion."
   },
-  "next_checkpoint": "F004: freeze simplification after the negative E009 result. Use TWO_RULE_SIMPLE and MINIMAL_4VAR as active baselines in a blinded or lineage-separated holdout; do not retune Project-v3 in place. F001 external lineage remains the highest evidence upgrade. F003 and F005 remain separate frontiers.",
+  "next_checkpoint": "F004: E009 keeps TWO_RULE_SIMPLE/MINIMAL_4VAR as active low-complexity baselines. E010 now preregisters the narrower safety-inspection residual; do not merge or execute a favorable-result run until its thresholds, prior-art boundary, and benchmark neutrality receive lineage-separated review. After preregistration is frozen on main, any project self-run remains non-independent evidence. F001 external lineage remains the highest evidence upgrade.",
   "current_public_head_semantics": "Head observed immediately before this state-file write. The commit containing this file must be resolved from Git history because a Git-tracked file cannot self-embed its own containing commit hash without changing that hash.",
   "resolved_process_findings": [
     {
