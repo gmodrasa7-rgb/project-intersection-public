@@ -39,5 +39,13 @@
     "winner",
     "expected_winner",
     "project_wins"
-  ]
+  ],
+  "pre_execution_amendment_v1_1": {
+    "status": "PREREGISTERED_EXECUTABLE_SPECIFICATION_NO_RESULT",
+    "protocol": "experiments/e009/EXECUTABLE_PROTOCOL_v1_1.md",
+    "executable": "experiments/e009/benchmark.py",
+    "secondary_comparator": "MINIMAL_4VAR",
+    "primary_stress_set": "stress variants; sigma 0.08 and 0.15; all three frozen weight profiles",
+    "result_artifact_allowed_before_merge": false
+  }
 }
