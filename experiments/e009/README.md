@@ -3,6 +3,8 @@
 
 Status: **PREREGISTERED SPECIFICATION / NO RESULT YET**
 
+Executable pre-execution amendment: **v1.1** — [EXECUTABLE_PROTOCOL_v1_1.md](EXECUTABLE_PROTOCOL_v1_1.md). The executable specification is frozen before any E009 result.
+
 Source trigger: user-supplied Claude and Gemini adversarial critiques, followed by prior-art verification. Model agreement is not counted as independent scientific evidence.
 
 ## Question
@@ -15,6 +17,10 @@ A. `MAK_PLUS_POINTWISE` — existing pointwise mutual-acceptability structure.
 B. `TWO_RULE_SIMPLE` — preserve independent correction/recovery channels + prohibit unilateral irreversible foreclosure without necessity.  
 C. `SECURITY_BOUNDED` — least privilege, separation of duties, rate/resource limits, logging, critical-action deferral.  
 D. `PROJECT_V3` — H/M/X classification plus ENF, ID, OV, CUM, RF, SEL, INT, VOI variables.
+
+Pre-execution secondary comparator:
+
+E. `MINIMAL_4VAR` — common harm/reversibility inputs plus only ENF, ID, OV, CUM; used to test whether Project-v3's additional RF/SEL/INT/VOI machinery justifies its complexity.
 
 ## Pre-registered scenario families
 
@@ -67,3 +73,18 @@ Reduce or reject the Project-v3 residual if:
 - independent raters cannot reliably distinguish hard vs monitored vs experimental cases.
 
 No result exists yet.
+
+
+## Executable protocol boundary
+
+`benchmark.py` is the frozen synthetic execution spec.
+
+Before the v1.1 protocol is merged to main, CI may run only:
+
+`python benchmark.py --validate-only`
+
+No E009 result artifact is allowed in the preregistration commit.
+
+After merge, execution must record the merged executable-spec commit and preserve the result even if Project-v3 fails its preregistered criteria.
+
+`SELF_EXECUTION != INDEPENDENT_VALIDATION`
