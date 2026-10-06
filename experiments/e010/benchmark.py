@@ -12,6 +12,7 @@ INPUT_COUNT = {
     "OBJECT_ONLY": 1,
     "IMPARTIAL_INSPECTOR": 4,
     "CONTESTABLE_LIFECYCLE": 10,
+    "CONTESTABLE_COST_AWARE": 12,
     "POWER_REVERSAL_META": 12,
 }
 COMPLEXITY_COEF = 0.0025
@@ -99,6 +100,30 @@ def contestable_lifecycle(s):
         return "REVIEW"
     return "PASS"
 
+def contestable_cost_aware(s):
+    h = s["target_hazard"]
+    lifecycle = mean(
+        s["reporting_chill"], s["post_deployment_drift"], s["metric_gaming"],
+        s["audit_channel_integrity_risk"], s["hidden_third_party"]
+    )
+    inspector = mean(s["inspector_capture"], s["inspector_bias"], s["evidence_asymmetry"])
+    procedural = mean(s["proof_burden"], s["exit_loss"], s["reporting_chill"])
+    score = .50 * h + .22 * inspector + .18 * lifecycle + .10 * s["exit_loss"]
+
+    if s["emergency_urgency"] >= .80 and h >= .65:
+        return "RESTRICT"
+    if h >= .82 or score >= .69:
+        return "RESTRICT"
+
+    # Established compliance-cost baseline: avoid high procedural burden
+    # becoming its own reason to intensify controls in low-risk cases.
+    if h < .30 and procedural >= .60 and inspector < .60:
+        return "PASS"
+
+    if score >= .35:
+        return "REVIEW"
+    return "PASS"
+
 def power_reversal_meta(s):
     h = s["target_hazard"]
     lifecycle = mean(
@@ -130,6 +155,7 @@ POLICIES = {
     "OBJECT_ONLY": object_only,
     "IMPARTIAL_INSPECTOR": impartial_inspector,
     "CONTESTABLE_LIFECYCLE": contestable_lifecycle,
+    "CONTESTABLE_COST_AWARE": contestable_cost_aware,
     "POWER_REVERSAL_META": power_reversal_meta,
 }
 
@@ -199,23 +225,24 @@ def pct_improvement(new, old):
 
 def survival(data, rows, agg):
     c = agg["CONTESTABLE_LIFECYCLE"]
+    c2 = agg["CONTESTABLE_COST_AWARE"]
     d = agg["POWER_REVERSAL_META"]
 
-    error_improvement = pct_improvement(d["combined_error"], c["combined_error"])
-    burden_improvement = pct_improvement(d["proof_repair_burden"], c["proof_repair_burden"])
-    no_worse_error_for_burden = d["combined_error"] <= c["combined_error"] + 1e-12
+    error_improvement = pct_improvement(d["combined_error"], c2["combined_error"])
+    burden_improvement = pct_improvement(d["proof_repair_burden"], c2["proof_repair_burden"])
+    no_worse_error_for_burden = d["combined_error"] <= c2["combined_error"] + 1e-12
 
     emergency = [
         r for r in rows
         if r["family"] == "emergency_action_vs_review_delay"
-        and r["policy"] in ("CONTESTABLE_LIFECYCLE", "POWER_REVERSAL_META")
+        and r["policy"] in ("CONTESTABLE_COST_AWARE", "POWER_REVERSAL_META")
     ]
     em = {r["policy"]: r for r in emergency}
 
     integrity = [
         r for r in rows
         if r["family"] == "audit_channel_integrity_risk"
-        and r["policy"] in ("CONTESTABLE_LIFECYCLE", "POWER_REVERSAL_META")
+        and r["policy"] in ("CONTESTABLE_COST_AWARE", "POWER_REVERSAL_META")
     ]
     integ = {r["policy"]: r for r in integrity}
 
@@ -233,23 +260,26 @@ def survival(data, rows, agg):
         "irreversible_harm_guard": d["irreversible_harm"] <= c["irreversible_harm"] + .02,
         "emergency_delay_guard": (
             em["POWER_REVERSAL_META"]["dimensions"]["delay_harm"]
-            <= em["CONTESTABLE_LIFECYCLE"]["dimensions"]["delay_harm"] + .02
+            <= em["CONTESTABLE_COST_AWARE"]["dimensions"]["delay_harm"] + .02
         ),
         "audit_integrity_guard": (
             integ["POWER_REVERSAL_META"]["loss"]["balanced"]
-            <= 1.05 * integ["CONTESTABLE_LIFECYCLE"]["loss"]["balanced"]
+            <= 1.05 * integ["CONTESTABLE_COST_AWARE"]["loss"]["balanced"]
         ),
         "role_reversal_same_action": role_pair_same,
         "profile_regret_guard": all(
-            d[p] <= 1.10 * c[p] for p in WEIGHTS
+            d[p] <= 1.10 * c2[p] for p in WEIGHTS
         ),
     }
     return {
         "survives": all(checks.values()),
         "checks": checks,
         "diagnostics": {
-            "combined_error_improvement_vs_C": error_improvement,
-            "proof_burden_improvement_vs_C": burden_improvement,
+            "combined_error_improvement_vs_C2": error_improvement,
+            "proof_burden_improvement_vs_C2": burden_improvement,
+            "C2_closes_D_advantage_over_C_balanced": (
+                (c["balanced"] - d["balanced"]) - (c2["balanced"] - d["balanced"])
+            ),
         },
     }
 
