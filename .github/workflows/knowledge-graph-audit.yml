@@ -1,0 +1,32 @@
+name: Knowledge graph audit
+
+on:
+  pull_request:
+    paths:
+      - "knowledge/**"
+      - ".github/workflows/knowledge-graph-audit.yml"
+      - "CONTRIBUTING.md"
+      - ".github/ISSUE_TEMPLATE/independent-replication.md"
+      - "README.md"
+      - "PUBLIC_REVIEW_PACKET.md"
+  push:
+    branches: [main]
+    paths:
+      - "knowledge/**"
+      - ".github/workflows/knowledge-graph-audit.yml"
+      - "CONTRIBUTING.md"
+      - ".github/ISSUE_TEMPLATE/independent-replication.md"
+      - "README.md"
+      - "PUBLIC_REVIEW_PACKET.md"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate-knowledge-graph:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate structured research graph
+        run: python knowledge/validate.py
