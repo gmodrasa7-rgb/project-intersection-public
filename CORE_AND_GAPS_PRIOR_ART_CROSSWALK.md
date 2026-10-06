@@ -372,7 +372,22 @@ Therefore “the role benefiting from safeguard weakening must not unilaterally 
 
 These establish prior art for accepting intervention, interruption, correction, or designated updates.
 
-#### H. Existing recorded baselines
+#### H. Credible commitment / power-sharing enforcement
+
+- Boix & Svolik (2013), DOI 10.1017/S0022381613000029.
+- Meng, Paine & Powell (2023), DOI 10.1146/annurev-polisci-052121-020406.
+- Hartzell & Hoddie (2003), DOI 10.1111/1540-5907.00022.
+
+These establish that a power-sharing promise may require actual redistribution of decision power, monitoring, or third-party enforcement to become credible. “Do not rely on the stronger actor's promise alone” is therefore not Project novelty.
+
+#### I. Constitutional entrenchment / algorithmic constitutionalism
+
+- Albert (2015), *Amending Constitutional Amendment Rules*, *International Journal of Constitutional Law* 13(3):655–685.
+- Perez & Wimer (2023), *Algorithmic Constitutionalism*, *Indiana Journal of Global Legal Studies* 30(2):81–113.
+
+Perez & Wimer explicitly propose operative/object-level code plus a protected meta-level, meta-reasoning, and correction through deliberation. This directly absorbs broad novelty of the Project fast/slow-layer and “protect safeguards from ordinary self-modification” framing.
+
+#### J. Existing recorded baselines
 
 MPC / receding-horizon control, viability theory, adaptive governance, Hirschman exit, capability theory, NIST/OECD accountability, bounded rationality, and role-reversal components are already separately attributed elsewhere in this repository.
 
