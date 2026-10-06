@@ -1,0 +1,158 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Project Intersection Knowledge Graph v1",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "meta",
+    "entities",
+    "relations"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "meta": {
+      "type": "object",
+      "required": [
+        "title",
+        "canonical_role",
+        "updated_at",
+        "evidence_boundary"
+      ],
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "canonical_role": {
+          "const": "navigation_index_not_source_of_truth"
+        },
+        "updated_at": {
+          "type": "string"
+        },
+        "evidence_boundary": {
+          "type": "string"
+        }
+      }
+    },
+    "entities": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "type",
+          "title_ko",
+          "title_en",
+          "status",
+          "summary_ko",
+          "evidence_class",
+          "sources",
+          "tags"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[A-Z]{2,4}-[0-9]{3}(?:-[0-9]{2})?$"
+          },
+          "type": {
+            "enum": [
+              "research_question",
+              "claim",
+              "governance_rule",
+              "prior_art",
+              "experiment",
+              "evidence",
+              "historical_case",
+              "negative_control",
+              "failure",
+              "correction"
+            ]
+          },
+          "title_ko": {
+            "type": "string"
+          },
+          "title_en": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "summary_ko": {
+            "type": "string"
+          },
+          "evidence_class": {
+            "type": "string"
+          },
+          "sources": {
+            "type": "array",
+            "minItems": 1
+          },
+          "tags": {
+            "type": "array"
+          }
+        }
+      }
+    },
+    "relations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "from",
+          "type",
+          "to",
+          "qualifiers"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^REL-[0-9]{3}$"
+          },
+          "from": {
+            "type": "string"
+          },
+          "type": {
+            "enum": [
+              "has_claim",
+              "tested_by",
+              "produced",
+              "supported_by",
+              "challenged_by",
+              "prior_art_for",
+              "corrected_by",
+              "narrows",
+              "governs",
+              "illustrates",
+              "negative_control_for",
+              "derived_from"
+            ]
+          },
+          "to": {
+            "type": "string"
+          },
+          "qualifiers": {
+            "type": "object",
+            "required": [
+              "scope",
+              "evidence_class",
+              "source_path"
+            ],
+            "properties": {
+              "scope": {
+                "type": "string"
+              },
+              "evidence_class": {
+                "type": "string"
+              },
+              "source_path": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

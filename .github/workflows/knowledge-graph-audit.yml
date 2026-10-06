@@ -1,0 +1,46 @@
+name: Knowledge graph audit
+
+on:
+  pull_request:
+    paths:
+      - "knowledge/**"
+      - ".github/workflows/knowledge-graph-audit.yml"
+      - "CONTRIBUTING.md"
+      - ".github/ISSUE_TEMPLATE/independent-replication.md"
+      - "README.md"
+      - "PUBLIC_REVIEW_PACKET.md"
+      - "PUBLIC_EVIDENCE_INDEX.md"
+  push:
+    branches: [main]
+    paths:
+      - "knowledge/**"
+      - ".github/workflows/knowledge-graph-audit.yml"
+      - "CONTRIBUTING.md"
+      - ".github/ISSUE_TEMPLATE/independent-replication.md"
+      - "README.md"
+      - "PUBLIC_REVIEW_PACKET.md"
+      - "PUBLIC_EVIDENCE_INDEX.md"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate-knowledge-graph:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate structured research graph
+        run: python knowledge/validate.py
+
+      - name: Check explorer JavaScript syntax
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          html = Path("knowledge/explorer.html").read_text(encoding="utf-8")
+          start = html.index("<script>") + len("<script>")
+          end = html.index("</script>", start)
+          Path("/tmp/knowledge-explorer.js").write_text(html[start:end], encoding="utf-8")
+          PY
+          node --check /tmp/knowledge-explorer.js

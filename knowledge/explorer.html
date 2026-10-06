@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Project Intersection Knowledge Explorer</title>
+<style>
+:root{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.45}
+body{margin:0;background:#f7f7f7;color:#181818}
+header{padding:24px;max-width:1200px;margin:auto}
+main{max-width:1200px;margin:auto;padding:0 24px 48px}
+.controls{display:grid;grid-template-columns:2fr 1fr 1fr;gap:10px;margin:12px 0 20px}
+input,select{padding:10px;border:1px solid #bbb;border-radius:8px;background:white}
+.grid{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(300px,.8fr);gap:18px}
+.panel{background:white;border:1px solid #ddd;border-radius:12px;padding:16px}
+.card{padding:12px 0;border-bottom:1px solid #eee;cursor:pointer}
+.card:last-child{border-bottom:0}
+.meta{font-size:.84rem;color:#666}
+.badge{display:inline-block;border:1px solid #aaa;border-radius:999px;padding:2px 8px;margin:2px 5px 2px 0;font-size:.78rem}
+h1,h2,h3{line-height:1.2}
+a{color:inherit}
+.empty{color:#777;padding:18px 0}
+.relations li{margin:7px 0}
+@media(max-width:800px){.controls,.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header>
+<h1>Project Intersection Knowledge Explorer</h1>
+<p>문서 원문을 대체하지 않는 구조화 탐색층. 관계의 범위·증거등급·출처를 함께 표시합니다.</p>
+</header>
+<main>
+<div class="controls">
+<input id="q" placeholder="검색: timing, exit, 실패, Rawls, E007…">
+<select id="type"><option value="">모든 유형</option></select>
+<select id="status"><option value="">모든 상태</option></select>
+</div>
+<div class="grid">
+<section class="panel"><div id="results"></div></section>
+<aside class="panel" id="detail"><p class="empty">왼쪽에서 객체를 선택하세요.</p></aside>
+</div>
+</main>
+<script>
+const state={data:null,selected:null};
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[c]));
+async function load(){
+  const r=await fetch("graph.json");
+  state.data=await r.json();
+  const types=[...new Set(state.data.entities.map(x=>x.type))].sort();
+  const statuses=[...new Set(state.data.entities.map(x=>x.status))].sort();
+  for(const t of types) type.insertAdjacentHTML("beforeend",`<option>${esc(t)}</option>`);
+  for(const s of statuses) status.insertAdjacentHTML("beforeend",`<option>${esc(s)}</option>`);
+  render();
+}
+function matches(e){
+  const needle=q.value.trim().toLowerCase();
+  const hay=[e.id,e.type,e.title_ko,e.title_en,e.status,e.summary_ko,...(e.tags||[])].join(" ").toLowerCase();
+  return (!needle||hay.includes(needle))&&(!type.value||e.type===type.value)&&(!status.value||e.status===status.value);
+}
+function render(){
+  const list=state.data.entities.filter(matches);
+  results.innerHTML=list.length?list.map(e=>`
+    <article class="card" data-id="${esc(e.id)}">
+      <strong>${esc(e.id)} · ${esc(e.title_ko)}</strong>
+      <div class="meta">${esc(e.type)} · ${esc(e.status)} · ${esc(e.evidence_class)}</div>
+    </article>`).join(""):`<p class="empty">일치하는 객체가 없습니다.</p>`;
+  document.querySelectorAll(".card").forEach(x=>x.onclick=()=>show(x.dataset.id));
+}
+function show(id){
+  const e=state.data.entities.find(x=>x.id===id); state.selected=id;
+  const rel=state.data.relations.filter(r=>r.from===id||r.to===id);
+  const sources=(e.sources||[]).map(s=>{
+    const loc=esc(s.locator);
+    const link=s.kind==="repo_path"?`../${loc}`:loc;
+    return `<li><a href="${link}">${loc}</a><div class="meta">${esc(s.license_note)}</div></li>`;
+  }).join("");
+  const rels=rel.map(r=>{
+    const other=r.from===id?r.to:r.from;
+    const arrow=r.from===id?"→":"←";
+    return `<li><button data-open="${esc(other)}">${esc(r.id)} ${arrow} ${esc(r.type)} ${esc(other)}</button>
+      <div class="meta">scope: ${esc(r.qualifiers.scope)} · evidence: ${esc(r.qualifiers.evidence_class)}</div></li>`;
+  }).join("");
+  detail.innerHTML=`
+    <h2>${esc(e.id)} · ${esc(e.title_ko)}</h2>
+    <p class="meta">${esc(e.title_en)}</p>
+    <p><span class="badge">${esc(e.type)}</span><span class="badge">${esc(e.status)}</span><span class="badge">${esc(e.evidence_class)}</span></p>
+    <p>${esc(e.summary_ko)}</p>
+    <h3>출처</h3><ul>${sources}</ul>
+    <h3>관계</h3><ul class="relations">${rels||"<li>없음</li>"}</ul>`;
+  detail.querySelectorAll("[data-open]").forEach(b=>b.onclick=()=>show(b.dataset.open));
+}
+[q,type,status].forEach(el=>el.addEventListener("input",render));
+load().catch(err=>{results.innerHTML=`<p class="empty">graph.json 로드 실패: ${esc(err)}</p>`;});
+</script>
+</body>
+</html>

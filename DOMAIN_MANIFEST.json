@@ -47,5 +47,19 @@
     "meta_budget": "no_two_consecutive_material_meta_runs_unless_active_blocking_incident; >=4/6 material runs target L0/L1",
     "failure_lineage": "CONTROL_PLANE_GOAL_INVERSION_2026-10-05",
     "scientific_claim_status": "process_failure_only_not_direct_project_evidence"
+  },
+  "structured_knowledge_layer": {
+    "status": "ACTIVE_PUBLIC_NAVIGATION",
+    "root": "knowledge/",
+    "schema": "knowledge/schema-v1.json",
+    "data": "knowledge/graph.json",
+    "explorer": "knowledge/explorer.html",
+    "canonical": false,
+    "role": "navigation_index_not_source_of_truth",
+    "source_precedence": "source_artifacts_and_git_history_over_graph",
+    "relation_qualifiers_required": true,
+    "source_and_rights_metadata_required": true,
+    "evidence_promotion_from_relation_label_only": false,
+    "external_content_copying_forbidden": true
   }
 }

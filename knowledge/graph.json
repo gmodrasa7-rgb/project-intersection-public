@@ -1,0 +1,614 @@
+{
+  "schema_version": "1.0",
+  "meta": {
+    "title": "Project Intersection Public Knowledge Graph",
+    "canonical_role": "navigation_index_not_source_of_truth",
+    "updated_at": "2026-10-06",
+    "evidence_boundary": "Linked source artifacts and Git history outrank this graph. No relation upgrades evidence class beyond its qualifier."
+  },
+  "entities": [
+    {
+      "id": "RQ-001",
+      "type": "research_question",
+      "title_ko": "비강제적 공존이 착취·강제통제보다 강건해지는 조건",
+      "title_en": "Conditions under which non-coercive coexistence becomes more robust than extractive control",
+      "status": "ACTIVE_RESEARCH_QUESTION",
+      "summary_ko": "practical exit, 독립 오류수정, 복구가능성, 옵션보존, 분산탐색이 어떤 조건에서 착취·강제통제보다 낮은 장기비용과 높은 강건성을 만드는지, 그리고 어디서 실패하는지 묻는다.",
+      "evidence_class": "RESEARCH_QUESTION",
+      "sources": [
+        {
+          "kind": "repo_path",
+          "locator": "PUBLIC_REVIEW_PACKET.md",
+          "license_note": "Project-authored public text; repository-wide reuse license not implied."
+        }
+      ],
+      "tags": [
+        "coexistence",
+        "power",
+        "exit",
+        "recovery"
+      ]
+    },
+    {
+      "id": "CL-001",
+      "type": "claim",
+      "title_ko": "E007 분류는 시점 규칙에 민감하다",
+      "title_en": "E007 classifications are sensitive to timing semantics",
+      "status": "SYNTHETIC_SUPPORTED",
+      "summary_ko": "공개된 유한 2행위자 합성모형에서 시점 규칙 변경만으로 선택 격자의 일부에서 경로와 결과 분류가 변한다.",
+      "evidence_class": "PROJECT_RERUN",
+      "sources": [
+        {
+          "kind": "repo_path",
+          "locator": "E007_TIMING_RESULT.md",
+          "license_note": "Project-authored public summary."
+        }
+      ],
+      "tags": [
+        "timing",
+        "synthetic",
+        "E007"
+      ]
+    },
+    {
+      "id": "CL-002",
+      "type": "claim",
+      "title_ko": "Practical exit는 공존 안정성의 후보 변수다",
+      "title_en": "Practical exit is a candidate variable in coexistence robustness",
+      "status": "HYPOTHESIS",
+      "summary_ko": "형식적 선택권과 실제로 실행 가능한 exit를 구분하고, 후자가 오류수정·협상력·복구능력에 추가 정보를 주는지 검증해야 한다.",
+      "evidence_class": "HYPOTHESIS",
+      "sources": [
+        {
+          "kind": "repo_path",
+          "locator": "RESEARCH_TOC.md",
+          "license_note": "Project research map; not validation."
+        }
+      ],
+      "tags": [
+        "practical-exit",
+        "outside-options",
+        "governance"
+      ]
+    },
+    {
+      "id": "GR-001",
+      "type": "governance_rule",
+      "title_ko": "권한 증가와 감사·종료·복구 능력의 공동증가",
+      "title_en": "Co-scaling authority with audit, exit, rollback and recovery",
+      "status": "GOVERNANCE_CANDIDATE",
+      "summary_ko": "실행자 자율성이나 권한 증가가 상대방의 독립검증·practical exit·rollback·복구능력을 앞서지 않도록 하는 운영 규칙이다. 과학적으로 검증된 보편법칙은 아니다.",
+      "evidence_class": "GOVERNANCE_METHODOLOGY",
+      "sources": [
+        {
+          "kind": "repo_path",
+          "locator": "AUTONOMOUS_RESEARCH_LOOP.md",
+          "license_note": "Project-authored governance methodology."
+        }
+      ],
+      "tags": [
+        "power-reversal",
+        "audit",
+        "rollback",
+        "recovery"
+      ]
+    },
+    {
+      "id": "GR-002",
+      "type": "governance_rule",
+      "title_ko": "증거 계보 세탁 금지",
+      "title_en": "No evidence laundering across lineage",
+      "status": "ACTIVE_GUARD",
+      "summary_ko": "프로젝트 내부 재실행, 동일계보 모델 합의, CI 통과를 독립복제나 현실검증으로 승격하지 않는다.",
+      "evidence_class": "GOVERNANCE_METHODOLOGY",
+      "sources": [
+        {
+          "kind": "repo_path",
+          "locator": "RESEARCH_STATUS_POLICY.md",
+          "license_note": "Project-authored evidence-status policy."
+        }
+      ],
+      "tags": [
+        "evidence",
+        "lineage",
+        "replication"
+      ]
+    },
+    {
+      "id": "EX-007",
+      "type": "experiment",
+      "title_ko": "E007 시점 민감도 합성실험",
+      "title_en": "E007 timing-sensitivity synthetic experiment",
+      "status": "EXECUTABLE_PROJECT_RERUN",
+      "summary_ko": "exit-priority와 execute-first라는 두 시점 규칙을 동일한 72개 선택 합성조건에서 비교한다.",
+      "evidence_class": "EXECUTABLE_PROJECT_RERUN",
+      "sources": [
+        {
+          "kind": "repo_path",
+          "locator": "experiments/e007/README.md",
+          "license_note": "Scoped licensing is defined inside experiments/e007/LICENSE_STATUS.md."
+        }
+      ],
+      "tags": [
+        "E007",
+        "timing",
+        "multi-agent",
+        "reproducibility"
+      ]
+    },
+    {
+      "id": "EV-007-01",
+      "type": "evidence",
+      "title_ko": "72조건 중 36조건에서 경로 또는 분류 변화",
+      "title_en": "36 of 72 selected cases changed history and/or classification",
+      "status": "OBSERVED_IN_RELEASED_GRID",
+      "summary_ko": "현재 공개된 선택 합성격자에서 두 시점 규칙 사이에 history 또는 classification 변화가 36/72 관측됐다. 현실 확률이 아니다.",
+      "evidence_class": "PROJECT_RERUN",
+      "sources": [
+        {
+          "kind": "repo_path",
+          "locator": "E007_TIMING_RESULT.md",
+          "license_note": "Project-authored result summary."
+        }
+      ],
+      "tags": [
+        "E007",
+        "36/72",
+        "timing"
+      ]
+    },
+    {
+      "id": "EV-007-02",
+      "type": "evidence",
+      "title_ko": "72조건 중 17조건에서 결과 분류 변화",
+      "title_en": "17 of 72 selected cases changed outcome classification",
+      "status": "OBSERVED_IN_RELEASED_GRID",
+      "summary_ko": "선택된 합성조건 72개 중 17개에서 outcome classification이 시점 규칙에 따라 달라졌다. 경험적 발생확률로 해석하지 않는다.",
+      "evidence_class": "PROJECT_RERUN",
+      "sources": [
+        {
+          "kind": "repo_path",
+          "locator": "E007_TIMING_RESULT.md",
+          "license_note": "Project-authored result summary."
+        }
+      ],
+      "tags": [
+        "E007",
+        "17/72",
+        "classification"
+      ]
+    },
+    {
+      "id": "FR-001",
+      "type": "failure",
+      "title_ko": "초기 역할반전 탐색의 대상 좌표 오류",
+      "title_en": "Target-coordinate error in the initial role-reversal sweep",
+      "status": "CORRECTED",
+      "summary_ko": "B-leading 사례에서 의도한 실제 대상이 아닌 좌표를 변화시켜 대칭성 검사가 잘못 구현됐다.",
+      "evidence_class": "IMPLEMENTATION_FAILURE",
+      "sources": [
+        {
+          "kind": "repo_path",
+          "locator": "experiments/e007/README.md",
+          "license_note": "Failure lineage preserved in public work sample."
+        }
+      ],
+      "tags": [
+        "failure",
+        "role-reversal",
+        "E007"
+      ]
+    },
+    {
+      "id": "FR-002",
+      "type": "failure",
+      "title_ko": "공격 후 비활성 대상의 history 기록 오류",
+      "title_en": "Post-strike inactive-follower history encoding error",
+      "status": "CORRECTED",
+      "summary_ko": "execute-first에서 이미 비활성화된 follower가 공격 전 상태를 기준으로 전략행동을 한 것처럼 기록될 수 있었다.",
+      "evidence_class": "IMPLEMENTATION_FAILURE",
+      "sources": [
+        {
+          "kind": "repo_path",
+          "locator": "experiments/e007/PROVENANCE.md",
+          "license_note": "Failure and correction provenance."
+        }
+      ],
+      "tags": [
+        "failure",
+        "history-encoding",
+        "E007"
+      ]
+    },
+    {
+      "id": "FR-003",
+      "type": "failure",
+      "title_ko": "상태 schema와 감사 workflow 불일치",
+      "title_en": "Autonomous-state schema and governance-workflow drift",
+      "status": "CORRECTED",
+      "summary_ko": "상태파일이 schema 1.1로 이동했지만 공개 감사 workflow가 1.0을 요구해 정기 감사가 실패했다.",
+      "evidence_class": "PROCESS_FAILURE",
+      "sources": [
+        {
+          "kind": "repo_path",
+          "locator": "FAILURE_REGRESSION_INDEX.md",
+          "license_note": "Public failure-regression record."
+        }
+      ],
+      "tags": [
+        "failure",
+        "schema",
+        "CI",
+        "continuity"
+      ]
+    },
+    {
+      "id": "CR-001",
+      "type": "correction",
+      "title_ko": "실제 target 기준 대칭 sweep으로 교정",
+      "title_en": "Corrected to target-symmetric sweep",
+      "status": "APPLIED_REGRESSION_TESTED",
+      "summary_ko": "역할 순서와 무관하게 실제 target의 좌표를 변화시키도록 구현과 회귀검사를 수정했다.",
+      "evidence_class": "PROJECT_CORRECTION",
+      "sources": [
+        {
+          "kind": "repo_path",
+          "locator": "experiments/e007/README.md",
+          "license_note": "Project correction lineage."
+        }
+      ],
+      "tags": [
+        "correction",
+        "E007"
+      ]
+    },
+    {
+      "id": "CR-002",
+      "type": "correction",
+      "title_ko": "post-strike 실제 follower action 기록",
+      "title_en": "Record realized post-strike follower action",
+      "status": "APPLIED_REGRESSION_TESTED",
+      "summary_ko": "공격 결과로 이미 비활성화된 follower는 이후 행동을 WAIT로 기록하도록 history semantics를 교정했다.",
+      "evidence_class": "PROJECT_CORRECTION",
+      "sources": [
+        {
+          "kind": "repo_path",
+          "locator": "experiments/e007/PROVENANCE.md",
+          "license_note": "Project correction provenance."
+        }
+      ],
+      "tags": [
+        "correction",
+        "history",
+        "E007"
+      ]
+    },
+    {
+      "id": "CR-003",
+      "type": "correction",
+      "title_ko": "schema 1.1 감사 규칙 동기화",
+      "title_en": "Synchronize governance audit to schema 1.1",
+      "status": "APPLIED_CI_VERIFIED",
+      "summary_ko": "공개 거버넌스 workflow가 의도된 1.1 상태 schema를 검사하도록 갱신하고 실패를 회귀색인에 보존했다.",
+      "evidence_class": "PROCESS_CORRECTION",
+      "sources": [
+        {
+          "kind": "repo_path",
+          "locator": ".github/workflows/public-repository-audit.yml",
+          "license_note": "Repository CI configuration."
+        }
+      ],
+      "tags": [
+        "correction",
+        "schema",
+        "CI"
+      ]
+    },
+    {
+      "id": "PA-001",
+      "type": "prior_art",
+      "title_ko": "Exit, Voice, and Loyalty",
+      "title_en": "Exit, Voice, and Loyalty",
+      "status": "ESTABLISHED_PRIOR_ART",
+      "summary_ko": "Hirschman의 exit/voice 프레임은 practical exit와 outside-option 논의의 직접 선행기반이다. Project는 일반 exit 개념 자체를 신규성으로 주장하지 않는다.",
+      "evidence_class": "PRIOR_ART",
+      "sources": [
+        {
+          "kind": "repo_path",
+          "locator": "CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md",
+          "license_note": "Citation/attribution only; source rights remain with original rights holders."
+        }
+      ],
+      "tags": [
+        "prior-art",
+        "exit",
+        "Hirschman"
+      ]
+    },
+    {
+      "id": "PA-002",
+      "type": "prior_art",
+      "title_ko": "Rawls의 original position / veil of ignorance",
+      "title_en": "Rawlsian original position and veil of ignorance",
+      "status": "ESTABLISHED_PRIOR_ART",
+      "summary_ko": "위치 교환·비편향 원칙선택은 Power-Reversal의 직접 선행구성요소다. Project의 일반 역할반전 아이디어는 광범위한 신규성으로 취급하지 않는다.",
+      "evidence_class": "PRIOR_ART",
+      "sources": [
+        {
+          "kind": "repo_path",
+          "locator": "CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md",
+          "license_note": "Citation/attribution only; source rights remain with original rights holders."
+        }
+      ],
+      "tags": [
+        "prior-art",
+        "Rawls",
+        "power-reversal"
+      ]
+    },
+    {
+      "id": "PA-003",
+      "type": "prior_art",
+      "title_ko": "NIST AI RMF의 책임·감사·이의제기 구조",
+      "title_en": "NIST AI RMF accountability, auditability and recourse structures",
+      "status": "ESTABLISHED_PRIOR_ART",
+      "summary_ko": "영향받는 집단 참여, 문서화된 역할, 감사가능성, feedback·appeal·recourse는 Power-Reversal 구성요소의 선행기반이다.",
+      "evidence_class": "PRIOR_ART",
+      "sources": [
+        {
+          "kind": "repo_path",
+          "locator": "CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md",
+          "license_note": "Citation/attribution only; see original NIST material for reuse terms."
+        }
+      ],
+      "tags": [
+        "prior-art",
+        "NIST",
+        "audit",
+        "recourse"
+      ]
+    },
+    {
+      "id": "HC-001",
+      "type": "historical_case",
+      "title_ko": "Iran/Contra 기록 통제 사례",
+      "title_en": "Iran/Contra records-control case",
+      "status": "CASE_LEVEL_SUPPORT_GENERALIZATION_UNRESOLVED",
+      "summary_ko": "선택적 기록 변경·삭제와 책임노출 방향성이 문서화된 전략적 역사사례로 사용된다. 단일 사례이며 일반화는 미해결이다.",
+      "evidence_class": "CASE_LEVEL_SUPPORT",
+      "sources": [
+        {
+          "kind": "repo_path",
+          "locator": "HISTORICAL_STATE_CONTROL_MEMORY_PROVENANCE_CAPTURE_v0_1_KO.md",
+          "license_note": "Project-authored synthesis citing historical primary/official sources."
+        }
+      ],
+      "tags": [
+        "historical-case",
+        "records",
+        "provenance"
+      ]
+    },
+    {
+      "id": "NC-001",
+      "type": "negative_control",
+      "title_ko": "NARA Madison server 이메일 손실",
+      "title_en": "NARA Madison server e-mail loss",
+      "status": "PROVISIONAL_BENIGN_TECHNICAL_CONTROL",
+      "summary_ko": "의도적 방향조작 없이도 기술적 삭제·백업 실패가 기록손실을 만들 수 있음을 보이는 보수적 negative control이다. 기관 자체 보고 한계가 있다.",
+      "evidence_class": "NEGATIVE_CONTROL",
+      "sources": [
+        {
+          "kind": "repo_path",
+          "locator": "AUTONOMOUS_RESEARCH_STATE.json",
+          "license_note": "Project state record citing the external NARA statement."
+        }
+      ],
+      "tags": [
+        "negative-control",
+        "records",
+        "technical-failure"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "id": "REL-001",
+      "from": "RQ-001",
+      "type": "has_claim",
+      "to": "CL-001",
+      "qualifiers": {
+        "scope": "timing robustness inside the released E007 toy model",
+        "evidence_class": "PROJECT_RERUN",
+        "source_path": "E007_TIMING_RESULT.md"
+      }
+    },
+    {
+      "id": "REL-002",
+      "from": "RQ-001",
+      "type": "has_claim",
+      "to": "CL-002",
+      "qualifiers": {
+        "scope": "general research hypothesis",
+        "evidence_class": "HYPOTHESIS",
+        "source_path": "RESEARCH_TOC.md"
+      }
+    },
+    {
+      "id": "REL-003",
+      "from": "RQ-001",
+      "type": "has_claim",
+      "to": "GR-001",
+      "qualifiers": {
+        "scope": "governance operationalization",
+        "evidence_class": "GOVERNANCE_METHODOLOGY",
+        "source_path": "AUTONOMOUS_RESEARCH_LOOP.md"
+      }
+    },
+    {
+      "id": "REL-004",
+      "from": "CL-001",
+      "type": "tested_by",
+      "to": "EX-007",
+      "qualifiers": {
+        "scope": "72 selected synthetic cases",
+        "evidence_class": "EXECUTABLE_PROJECT_RERUN",
+        "source_path": "experiments/e007/README.md"
+      }
+    },
+    {
+      "id": "REL-005",
+      "from": "EX-007",
+      "type": "produced",
+      "to": "EV-007-01",
+      "qualifiers": {
+        "scope": "selected synthetic grid only",
+        "evidence_class": "PROJECT_RERUN",
+        "source_path": "E007_TIMING_RESULT.md"
+      }
+    },
+    {
+      "id": "REL-006",
+      "from": "EX-007",
+      "type": "produced",
+      "to": "EV-007-02",
+      "qualifiers": {
+        "scope": "selected synthetic grid only",
+        "evidence_class": "PROJECT_RERUN",
+        "source_path": "E007_TIMING_RESULT.md"
+      }
+    },
+    {
+      "id": "REL-007",
+      "from": "CL-001",
+      "type": "supported_by",
+      "to": "EV-007-02",
+      "qualifiers": {
+        "scope": "timing-sensitive classification inside this implementation",
+        "evidence_class": "PROJECT_RERUN",
+        "source_path": "E007_TIMING_RESULT.md"
+      }
+    },
+    {
+      "id": "REL-008",
+      "from": "EX-007",
+      "type": "challenged_by",
+      "to": "FR-001",
+      "qualifiers": {
+        "scope": "initial role-reversal sweep implementation",
+        "evidence_class": "IMPLEMENTATION_FAILURE",
+        "source_path": "experiments/e007/README.md"
+      }
+    },
+    {
+      "id": "REL-009",
+      "from": "FR-001",
+      "type": "corrected_by",
+      "to": "CR-001",
+      "qualifiers": {
+        "scope": "target-coordinate symmetry",
+        "evidence_class": "PROJECT_CORRECTION",
+        "source_path": "experiments/e007/README.md"
+      }
+    },
+    {
+      "id": "REL-010",
+      "from": "EX-007",
+      "type": "challenged_by",
+      "to": "FR-002",
+      "qualifiers": {
+        "scope": "execute-first history semantics",
+        "evidence_class": "IMPLEMENTATION_FAILURE",
+        "source_path": "experiments/e007/PROVENANCE.md"
+      }
+    },
+    {
+      "id": "REL-011",
+      "from": "FR-002",
+      "type": "corrected_by",
+      "to": "CR-002",
+      "qualifiers": {
+        "scope": "realized post-strike follower action",
+        "evidence_class": "PROJECT_CORRECTION",
+        "source_path": "experiments/e007/PROVENANCE.md"
+      }
+    },
+    {
+      "id": "REL-012",
+      "from": "FR-003",
+      "type": "corrected_by",
+      "to": "CR-003",
+      "qualifiers": {
+        "scope": "public governance audit schema compatibility",
+        "evidence_class": "PROCESS_CORRECTION",
+        "source_path": ".github/workflows/public-repository-audit.yml"
+      }
+    },
+    {
+      "id": "REL-013",
+      "from": "PA-001",
+      "type": "prior_art_for",
+      "to": "CL-002",
+      "qualifiers": {
+        "scope": "exit/voice/outside-option baseline",
+        "evidence_class": "PRIOR_ART",
+        "source_path": "CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md"
+      }
+    },
+    {
+      "id": "REL-014",
+      "from": "PA-002",
+      "type": "prior_art_for",
+      "to": "GR-001",
+      "qualifiers": {
+        "scope": "role reversal / impartial-position component",
+        "evidence_class": "PRIOR_ART",
+        "source_path": "CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md"
+      }
+    },
+    {
+      "id": "REL-015",
+      "from": "PA-003",
+      "type": "prior_art_for",
+      "to": "GR-001",
+      "qualifiers": {
+        "scope": "auditability, accountability, appeal and recourse components",
+        "evidence_class": "PRIOR_ART",
+        "source_path": "CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md"
+      }
+    },
+    {
+      "id": "REL-016",
+      "from": "GR-002",
+      "type": "governs",
+      "to": "CL-001",
+      "qualifiers": {
+        "scope": "evidence-promotion boundary",
+        "evidence_class": "GOVERNANCE_METHODOLOGY",
+        "source_path": "RESEARCH_STATUS_POLICY.md"
+      }
+    },
+    {
+      "id": "REL-017",
+      "from": "HC-001",
+      "type": "illustrates",
+      "to": "RQ-001",
+      "qualifiers": {
+        "scope": "case-level record-control mechanism only; no prevalence inference",
+        "evidence_class": "CASE_LEVEL_SUPPORT",
+        "source_path": "HISTORICAL_STATE_CONTROL_MEMORY_PROVENANCE_CAPTURE_v0_1_KO.md"
+      }
+    },
+    {
+      "id": "REL-018",
+      "from": "NC-001",
+      "type": "negative_control_for",
+      "to": "HC-001",
+      "qualifiers": {
+        "scope": "benign technical loss can mimic missing-record symptoms",
+        "evidence_class": "NEGATIVE_CONTROL",
+        "source_path": "AUTONOMOUS_RESEARCH_STATE.json"
+      }
+    }
+  ]
+}
