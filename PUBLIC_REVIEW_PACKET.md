@@ -15,7 +15,7 @@ This file is the shortest reviewer path through Project Intersection. It does no
 2. [Public Evidence Index](PUBLIC_EVIDENCE_INDEX.md) — what is publicly checkable now.
 3. [Knowledge Graph Explorer](knowledge/explorer.html) — structured entity/relation view; linked source artifacts remain authoritative.
 4. [E007 timing result](E007_TIMING_RESULT.md) and [reproduction package](experiments/e007/README.md) — narrow executable synthetic result.
-5. [E008 preregistration](experiments/e008/README.md) — discriminating benchmark specification for the v2 dynamic governance candidate; no result yet.
+5. [E008 preregistration](experiments/e008/README.md) — discriminating benchmark specification plus pre-execution mutual-acceptability v1.1 and volitional-agency/living-condition v1.2 amendments; no result yet.
 6. [Research Status & Reassessment Policy](RESEARCH_STATUS_POLICY.md) — evidence classes, reassessment, and non-laundering rules.
 7. [Prior Art & Attribution](PRIOR_ART_AND_ATTRIBUTION.md) and [Core/Gaps Crosswalk](CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md) — what is prior art and what remains unresolved.
 8. [Failure Regression Index](FAILURE_REGRESSION_INDEX.md) — known process/research failures and required regression barriers.

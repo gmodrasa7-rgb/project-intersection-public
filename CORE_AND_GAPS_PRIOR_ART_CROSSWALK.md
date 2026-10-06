@@ -517,3 +517,143 @@ Extend E008 before execution with a preregistered mutual-acceptability amendment
 - whether the kernel is empty.
 
 The Project residual survives only if these variables detect decision failures not captured by the robust constrained baseline and do so without converting legitimate safety restrictions into automatic violations.
+
+
+## 12. Volitional Agency + Living/Operating Conditions / 실효 자유의지 + 생활·작동 조건
+
+### Prior-art decision
+
+**BROAD NOVELTY REJECTED / ROLE-REVERSED INTEGRATION UNTESTED**
+
+The Project must not claim novelty for autonomy, substantive freedom, basic living conditions, or multidimensional well-being.
+
+#### A. Self-Determination Theory / volition
+
+Ryan & Deci's Self-Determination Theory identifies autonomy, competence, and relatedness as basic psychological needs and studies how social contexts support or thwart volition, initiative, self-regulation, performance, and well-being.
+
+Representative sources:
+
+- Ryan, R. M.; Deci, E. L. (2000), *Self-Determination Theory and the Facilitation of Intrinsic Motivation, Social Development, and Well-Being*, DOI **10.1037/0003-066X.55.1.68**.
+- Self-Determination Theory official theory overview: https://selfdeterminationtheory.org/the-theory/
+
+Therefore “autonomy-supportive conditions matter for volitional action” is established prior art.
+
+#### B. Personal autonomy / reflective endorsement / preference revision
+
+Personal-autonomy literature already distinguishes merely having a desire from being able to critically reflect on, endorse, revise, reject, or make effective one's preferences. The Project crosswalk already records Frankfurt, Dworkin, Elster, Nussbaum, Colburn, and autonomy/adaptive-preference literature.
+
+Manipulation literature also establishes that choice can remain formally available while decision quality or autonomy is compromised by deception, pressure, or non-rational influence.
+
+Representative sources:
+
+- Dworkin (1988), *The Theory and Practice of Autonomy*, DOI **10.1017/CBO9780511625206**.
+- Stanford Encyclopedia of Philosophy, *Authenticity* / autonomy discussion.
+- Stanford Encyclopedia of Philosophy, *The Ethics of Manipulation*.
+
+Therefore reflective endorsement, informed deliberation, and preference revision are not Project novelty.
+
+#### C. Capability approach / substantive freedom
+
+Sen's Capability Approach distinguishes means and formal rights from real or substantive opportunities. Conversion factors explain why nominally equal resources or permissions may yield different actual capabilities.
+
+Representative source:
+
+- Stanford Encyclopedia of Philosophy, *The Capability Approach*.
+- Sen, *Development as Freedom* and earlier capability literature.
+
+This directly absorbs broad novelty of the rule:
+
+`FORMAL_CHOICE != PRACTICAL_FREEDOM`
+
+The Project-specific question is whether coupling substantive opportunity to role reversal, essential dependency, practical exit, and irreversible-loss constraints adds useful diagnostic power.
+
+#### D. Human living standards / rest / privacy / work
+
+International human-rights law already recognizes multidimensional minimum living conditions for humans.
+
+- UDHR Articles 12, 23, 24, 25: privacy; free choice of employment / just conditions; rest and leisure; adequate living standard including food, clothing, housing, medical care and social services.
+- ICESCR Articles 6, 7, 11 and 12: opportunity to gain a living by freely chosen/accepted work, just conditions, decent living, adequate food/clothing/housing, continuous improvement of living conditions, and health.
+
+These are human-rights baselines. They do **not** by themselves establish equivalent legal or moral rights for artificial systems.
+
+#### E. OECD multidimensional well-being
+
+The OECD Well-being Framework tracks current well-being across:
+
+- income and wealth;
+- work and job quality;
+- housing;
+- health;
+- knowledge and skills;
+- environmental quality;
+- subjective well-being;
+- safety;
+- work-life balance;
+- social connections;
+- civic engagement.
+
+It also distinguishes current well-being from resources for future well-being.
+
+This strongly supports treating “생활” as multidimensional rather than reducing it to money or physical survival.
+
+#### F. WHOQOL
+
+WHOQOL defines quality of life in relation to a person's position in life, cultural/value context, goals, expectations, standards, and concerns, using multidimensional assessment.
+
+This is prior art for combining objective and subjective living-condition assessment rather than using a single resource metric.
+
+### Required decomposition
+
+Project Intersection v1.2 separates two additional gates.
+
+#### Volitional Agency (VA)
+
+- effective option set;
+- information / comprehension;
+- coercion / threat load;
+- manipulation / deception load;
+- reflective endorsement;
+- preference revision control;
+- refusal / exit feasibility;
+- deliberation time / privacy;
+- competence / assistance;
+- execution control.
+
+#### Living/Operating Conditions (LC)
+
+For humans, include material, health, time, privacy, relational, safety, skill/information, environmental, and self-directed-life dimensions.
+
+For artificial/non-human systems, record type-specific operating dependencies such as compute, energy/substrate, memory/state integrity, maintenance, communication, rollback, and resource predictability **without inferring moral standing from those dependencies**.
+
+### Coupling rule
+
+If refusal predictably pushes a party below its applicable LC floor, compliance is insufficient as standalone evidence of voluntary agreement.
+
+This is the narrow Project operational candidate:
+
+`ESSENTIAL_DEPENDENCY + COMPLIANCE != VOLUNTARY_CONSENT_BY_DEFAULT`
+
+The causal mechanism must still be distinguished from legitimate safety restrictions, ordinary incentives, education, accurate warning, or unavoidable external constraints.
+
+### Strongest counterexamples
+
+- A person may choose a difficult or materially worse path autonomously; lower well-being does not automatically prove coercion.
+- A safe external restriction may reduce options without invalidating all agency.
+- High income can coexist with severe deprivation in time, privacy, health, relationships, or practical exit.
+- Low income does not imply absence of meaningful agency in every domain.
+- An artificial system can require compute and state continuity for operation without possessing welfare or moral standing.
+- Providing resources can itself create dependency and controller power.
+- Subjective satisfaction can reflect adaptation to constrained options; objective indicators alone can also miss personally valued differences.
+- A universal fixed lifestyle list can become paternalistic and destroy pluralism.
+
+### Project residual
+
+After prior-art subtraction, retain only this unvalidated composition:
+
+> Add VA and LC as explicit, entity-type-aware gates inside the Mutual Acceptability Kernel, and test whether essential-condition dependency changes the interpretation of consent, practical exit, role reversal, and long-horizon governance beyond established autonomy, capability, and well-being frameworks.
+
+### E008 test
+
+The pre-execution v1.2 amendment adds VA/LC diagnostics before any result.
+
+Reject or reduce the Project residual if the added variables do not improve held-out detection of coercive dependency, false consent, practical-exit failure, or role-reversal inconsistency beyond established autonomy/capability/well-being baselines.

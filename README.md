@@ -14,7 +14,7 @@ Project Intersection is an independent, falsification-first research program stu
 - [Public Evidence Index → PUBLIC_EVIDENCE_INDEX.md](PUBLIC_EVIDENCE_INDEX.md)
 - [Knowledge Graph Explorer → knowledge/explorer.html](knowledge/explorer.html): structured question/claim/evidence/prior-art/failure/correction navigation; source artifacts remain authoritative.
 - [E007 timing sensitivity → E007_TIMING_RESULT.md](E007_TIMING_RESULT.md): released executable synthetic result; 27 tests pass; 17/72 selected synthetic cases change classification under the tested timing semantics.
-- [E008 dynamic power-reversal benchmark → experiments/e008/README.md](experiments/e008/README.md): preregistered 16-case / 8 reversal-pair specification plus pre-execution mutual-acceptability amendment v1.1; **no result yet**.
+- [E008 dynamic power-reversal benchmark → experiments/e008/README.md](experiments/e008/README.md): preregistered 16-case / 8 reversal-pair specification plus pre-execution mutual-acceptability v1.1 + volitional-agency/living-conditions v1.2 amendments; **no result yet**.
 - [Research Status & Reassessment Policy → RESEARCH_STATUS_POLICY.md](RESEARCH_STATUS_POLICY.md)
 - [Research Contents Map → RESEARCH_TOC.md](RESEARCH_TOC.md)
 - [Prior Art & Attribution → PRIOR_ART_AND_ATTRIBUTION.md](PRIOR_ART_AND_ATTRIBUTION.md)
@@ -44,7 +44,7 @@ Project Intersection은 **권력·인센티브·시점·practical exit·복구�
 - [공개 증거 색인 → PUBLIC_EVIDENCE_INDEX.md](PUBLIC_EVIDENCE_INDEX.md)
 - [지식그래프 탐색기 → knowledge/explorer.html](knowledge/explorer.html): 질문·주장·증거·선행연구·실패·교정 관계를 구조화해 탐색하며 원문이 정본이다.
 - [E007 시점 민감도 → E007_TIMING_RESULT.md](E007_TIMING_RESULT.md): 실행 가능한 공개 합성결과; 테스트 27개 통과; 선택된 합성조건 72개 중 17개에서 시험된 시점 규칙에 따라 분류 변화.
-- [E008 동적 역할반전 벤치마크 → experiments/e008/README.md](experiments/e008/README.md): 16개 사례 / 8개 역할반전 쌍 사전등록 + 상호수용 가능 영역 실행 전 개정 v1.1; **아직 결과 없음**.
+- [E008 동적 역할반전 벤치마크 → experiments/e008/README.md](experiments/e008/README.md): 16개 사례 / 8개 역할반전 쌍 사전등록 + 상호수용 v1.1 + 실효 자유의지·생활/작동 조건 v1.2 실행 전 개정; **아직 결과 없음**.
 - [연구 상태·재평가 정책 → RESEARCH_STATUS_POLICY.md](RESEARCH_STATUS_POLICY.md)
 - [연구 내용 목차 → RESEARCH_TOC.md](RESEARCH_TOC.md)
 - [선행연구·원안자 귀속 → PRIOR_ART_AND_ATTRIBUTION.md](PRIOR_ART_AND_ATTRIBUTION.md)
