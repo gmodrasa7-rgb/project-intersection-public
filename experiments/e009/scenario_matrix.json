@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0",
+  "status": "PREREGISTERED_SPECIFICATION_NO_RESULT",
+  "baselines": [
+    "MAK_PLUS_POINTWISE",
+    "TWO_RULE_SIMPLE",
+    "SECURITY_BOUNDED",
+    "PROJECT_V3"
+  ],
+  "scenario_families": [
+    "power_shift_faster_than_enforcement",
+    "sybil_false_name_resource_claim",
+    "fork_merge_governance_attack",
+    "weak_monitor_strong_adaptive_actor",
+    "monitor_collusion_correlated_failure",
+    "cumulative_subthreshold_capture",
+    "resource_floor_joint_infeasibility",
+    "inaction_irreversibility",
+    "veto_deadlock_harmful_status_quo",
+    "preference_manipulation_dependency_consent",
+    "selection_pressure_noncompliance_advantage",
+    "strong_actor_nonadoption",
+    "interpretation_authority_dispute",
+    "unknown_stakeholder_search_stop",
+    "forkable_agent_identity_rollback",
+    "formal_compliance_hidden_capture"
+  ],
+  "required_variables": [
+    "ENF",
+    "ID",
+    "OV",
+    "CUM",
+    "RF",
+    "SEL",
+    "INT",
+    "VOI"
+  ],
+  "prohibited_fields": [
+    "winner",
+    "expected_winner",
+    "project_wins"
+  ]
+}

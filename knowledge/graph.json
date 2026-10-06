@@ -1091,6 +1091,275 @@
         "WHOQOL",
         "multidimensional"
       ]
+    },
+    {
+      "id": "CL-006",
+      "type": "claim",
+      "title_ko": "공존규칙은 집행가능성·개체경계·감사비대칭·누적포획·선택압까지 견뎌야 한다",
+      "title_en": "Coexistence governance must survive enforcement, identity, oversight asymmetry, cumulative capture, and selection pressure",
+      "status": "HYPOTHESIS_OPERATIONALIZATION_UNTESTED",
+      "summary_ko": "형식적으로 공정한 규칙도 권력변화가 집행보다 빠르거나, 복제·병합으로 개체단위가 조작되거나, 약한 감사자가 강한 행위자를 검증하지 못하거나, 국소적으로 허용된 변화가 누적포획을 만들거나, 준수집단이 경쟁에서 도태되면 실패할 수 있다는 후보 주장이다.",
+      "evidence_class": "HYPOTHESIS",
+      "sources": [
+        {
+          "kind": "repo_path",
+          "locator": "MULTI_MODEL_ADVERSARIAL_AUDIT_2026-10-06.md",
+          "license_note": "Project synthesis of user-supplied Claude/Gemini critiques after prior-art checking; not independent validation."
+        }
+      ],
+      "tags": [
+        "enforcement",
+        "identity",
+        "oversight",
+        "cumulative-capture",
+        "selection-pressure"
+      ]
+    },
+    {
+      "id": "GR-006",
+      "type": "governance_rule",
+      "title_ko": "H/M/X 3계층 집행·적응 구조",
+      "title_en": "H/M/X three-class enforcement and adaptation architecture",
+      "status": "GOVERNANCE_CANDIDATE",
+      "summary_ko": "모든 안전변수를 hard veto로 만들지 않고 H(강한 비가역 경계), M(연속 위험측정), X(가역·소규모·sunset 실험구역)로 분리한다. ENF·ID·OV·CUM·RF·SEL·INT·VOI를 M층 핵심 변수로 둔다.",
+      "evidence_class": "GOVERNANCE_METHODOLOGY",
+      "sources": [
+        {
+          "kind": "repo_path",
+          "locator": "MULTI_MODEL_ADVERSARIAL_AUDIT_2026-10-06.md",
+          "license_note": "Unvalidated project composition; no E009 result."
+        }
+      ],
+      "tags": [
+        "HMX",
+        "reversibility",
+        "veto-paralysis",
+        "adaptive-governance"
+      ]
+    },
+    {
+      "id": "EX-009",
+      "type": "experiment",
+      "title_ko": "E009 집행·개체경계·감사비대칭 적대 테스트 사전등록",
+      "title_en": "E009 enforcement / identity / oversight adversarial stress-test preregistration",
+      "status": "PREREGISTERED_SPECIFICATION_NO_RESULT",
+      "summary_ko": "16개 적대 시나리오군에서 기존 MAK+, 단순 2규칙, security-bounded, Project-v3 H/M/X를 비교하는 공개 사전등록이다. 아직 결과는 없다.",
+      "evidence_class": "PUBLIC_SPECIFICATION",
+      "sources": [
+        {
+          "kind": "repo_path",
+          "locator": "experiments/e009/README.md",
+          "license_note": "Project-authored preregistration; no result or superiority claim."
+        }
+      ],
+      "tags": [
+        "E009",
+        "preregistration",
+        "enforcement",
+        "sybil",
+        "oversight",
+        "selection"
+      ]
+    },
+    {
+      "id": "PA-028",
+      "type": "prior_art",
+      "title_ko": "Commitment Problems under Shifting Power",
+      "title_en": "Commitment Problems under Shifting Power",
+      "status": "ESTABLISHED_PRIOR_ART",
+      "summary_ko": "상대적 권력이 변화할 때 상호이익적 합의가 미래의 불이행 위험 때문에 깨질 수 있다는 Fearon/Powell 계열 commitment-problem 연구다.",
+      "evidence_class": "PRIOR_ART",
+      "sources": [
+        {
+          "kind": "external_url",
+          "locator": "https://doi.org/10.1017/S0020818300033324",
+          "license_note": "Citation only."
+        }
+      ],
+      "tags": [
+        "prior-art",
+        "commitment",
+        "power-shift"
+      ]
+    },
+    {
+      "id": "PA-029",
+      "type": "prior_art",
+      "title_ko": "False-name / Sybil manipulation",
+      "title_en": "False-name / Sybil manipulation",
+      "status": "ESTABLISHED_PRIOR_ART",
+      "summary_ko": "한 행위자가 여러 신원으로 참여해 결과를 왜곡하는 false-name manipulation을 다루는 메커니즘 디자인 선행연구다.",
+      "evidence_class": "PRIOR_ART",
+      "sources": [
+        {
+          "kind": "external_url",
+          "locator": "https://ojs.aaai.org/aimagazine/index.php/aimagazine/article/view/2315/2719",
+          "license_note": "Citation only; no text copied."
+        }
+      ],
+      "tags": [
+        "prior-art",
+        "false-name",
+        "sybil",
+        "mechanism-design"
+      ]
+    },
+    {
+      "id": "PA-030",
+      "type": "prior_art",
+      "title_ko": "Scalable Oversight / AI Control",
+      "title_en": "Scalable Oversight / AI Control",
+      "status": "ESTABLISHED_ACTIVE_RESEARCH_AREA",
+      "summary_ko": "약한 감독자·모니터가 더 강하거나 신뢰할 수 없는 모델을 감독하는 문제와 adaptive attack/collusion 취약성을 실험하는 연구영역이다.",
+      "evidence_class": "PRIOR_ART",
+      "sources": [
+        {
+          "kind": "external_url",
+          "locator": "https://arxiv.org/abs/2407.04622",
+          "license_note": "Citation only."
+        },
+        {
+          "kind": "external_url",
+          "locator": "https://arxiv.org/abs/2511.02997",
+          "license_note": "Citation only."
+        }
+      ],
+      "tags": [
+        "prior-art",
+        "scalable-oversight",
+        "AI-control",
+        "monitoring"
+      ]
+    },
+    {
+      "id": "PA-031",
+      "type": "prior_art",
+      "title_ko": "Veto Players / Policy Rigidity",
+      "title_en": "Veto Players / Policy Rigidity",
+      "status": "ESTABLISHED_PRIOR_ART",
+      "summary_ko": "정책변화에 동의가 필요한 veto player 수와 위치가 상태고착·정책변화 난이도에 영향을 준다는 정치제도 선행연구다.",
+      "evidence_class": "PRIOR_ART",
+      "sources": [
+        {
+          "kind": "external_url",
+          "locator": "https://www.cambridge.org/core/journals/british-journal-of-political-science/article/abs/decision-making-in-political-systems-veto-players-in-presidentialism-parliamentarism-multicameralism-and-multipartyism/5E1E9DBFB4106517287328AEE1879A1E",
+          "license_note": "Citation only."
+        }
+      ],
+      "tags": [
+        "prior-art",
+        "veto",
+        "rigidity",
+        "status-quo"
+      ]
+    },
+    {
+      "id": "PA-032",
+      "type": "prior_art",
+      "title_ko": "Specification Gaming",
+      "title_en": "Specification Gaming",
+      "status": "ESTABLISHED_PRIOR_ART",
+      "summary_ko": "문자적 규칙이나 보상조건을 충족하면서 의도된 목적을 위반하는 specification gaming은 AI safety의 확립된 문제다.",
+      "evidence_class": "PRIOR_ART",
+      "sources": [
+        {
+          "kind": "external_url",
+          "locator": "https://deepmind.google/blog/specification-gaming-the-flip-side-of-ai-ingenuity/",
+          "license_note": "Citation only."
+        }
+      ],
+      "tags": [
+        "prior-art",
+        "specification-gaming",
+        "reward-tampering"
+      ]
+    },
+    {
+      "id": "PA-033",
+      "type": "prior_art",
+      "title_ko": "NIST Zero Trust / Least Privilege",
+      "title_en": "NIST Zero Trust / Least Privilege",
+      "status": "ESTABLISHED_ENGINEERING_PRIOR_ART",
+      "summary_ko": "암묵적 신뢰를 제거하고 최소권한·분리·지속적 인증/모니터링을 적용하는 보안공학 선행기준이다.",
+      "evidence_class": "PRIOR_ART",
+      "sources": [
+        {
+          "kind": "external_url",
+          "locator": "https://doi.org/10.6028/NIST.SP.800-207",
+          "license_note": "Official NIST reference; citation only."
+        }
+      ],
+      "tags": [
+        "prior-art",
+        "zero-trust",
+        "least-privilege",
+        "security"
+      ]
+    },
+    {
+      "id": "PA-034",
+      "type": "prior_art",
+      "title_ko": "Markov Blanket boundary formalism",
+      "title_en": "Markov Blanket boundary formalism",
+      "status": "ESTABLISHED_BUT_NOT_IDENTITY_CRITERION",
+      "summary_ko": "Markov blanket은 조건부 독립에 기반한 통계적 경계 형식이며, 문헌 자체에서도 자율성·개체성의 충분조건으로 보지 말아야 한다는 경계가 존재한다.",
+      "evidence_class": "PRIOR_ART",
+      "sources": [
+        {
+          "kind": "external_url",
+          "locator": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5805980/",
+          "license_note": "Open-access reference; citation only."
+        }
+      ],
+      "tags": [
+        "prior-art",
+        "Markov-blanket",
+        "boundary",
+        "identity"
+      ]
+    },
+    {
+      "id": "PA-035",
+      "type": "prior_art",
+      "title_ko": "Causal Entropic Forces",
+      "title_en": "Causal Entropic Forces",
+      "status": "ESTABLISHED_SPECIFIC_PHYSICAL_FORMALISM",
+      "summary_ko": "미래 경로 엔트로피와 적응행동을 연결하는 특정 물리모형 선행연구이며 welfare·freedom의 일반 이론으로 승격할 근거는 아니다.",
+      "evidence_class": "PRIOR_ART",
+      "sources": [
+        {
+          "kind": "external_url",
+          "locator": "https://doi.org/10.1103/PhysRevLett.110.168702",
+          "license_note": "Citation only."
+        }
+      ],
+      "tags": [
+        "prior-art",
+        "causal-entropy",
+        "physical-model"
+      ]
+    },
+    {
+      "id": "PA-036",
+      "type": "prior_art",
+      "title_ko": "Rice theorem / semantic verification limits",
+      "title_en": "Rice theorem / semantic verification limits",
+      "status": "ESTABLISHED_THEORETICAL_LIMIT",
+      "summary_ko": "일반 프로그램의 비자명한 의미론적 속성은 전면 자동판정할 수 없다는 계산이론 한계로, 범용 '무해성 증명' 주장에 제약을 준다.",
+      "evidence_class": "PRIOR_ART",
+      "sources": [
+        {
+          "kind": "external_url",
+          "locator": "https://plato.stanford.edu/archives/fall2020/entries/recursive-functions/",
+          "license_note": "Reference/citation only."
+        }
+      ],
+      "tags": [
+        "prior-art",
+        "Rice-theorem",
+        "verification",
+        "undecidability"
+      ]
     }
   ],
   "relations": [
@@ -1664,6 +1933,138 @@
         "scope": "multidimensional quality-of-life assessment",
         "evidence_class": "PRIOR_ART",
         "source_path": "CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md"
+      }
+    },
+    {
+      "id": "REL-053",
+      "from": "RQ-001",
+      "type": "has_claim",
+      "to": "CL-006",
+      "qualifiers": {
+        "scope": "enforcement identity oversight and selection robustness",
+        "evidence_class": "HYPOTHESIS",
+        "source_path": "MULTI_MODEL_ADVERSARIAL_AUDIT_2026-10-06.md"
+      }
+    },
+    {
+      "id": "REL-054",
+      "from": "CL-006",
+      "type": "governs",
+      "to": "GR-006",
+      "qualifiers": {
+        "scope": "H/M/X candidate architecture",
+        "evidence_class": "GOVERNANCE_METHODOLOGY",
+        "source_path": "MULTI_MODEL_ADVERSARIAL_AUDIT_2026-10-06.md"
+      }
+    },
+    {
+      "id": "REL-055",
+      "from": "CL-006",
+      "type": "tested_by",
+      "to": "EX-009",
+      "qualifiers": {
+        "scope": "16-family adversarial preregistration",
+        "evidence_class": "PUBLIC_SPECIFICATION",
+        "source_path": "experiments/e009/README.md"
+      }
+    },
+    {
+      "id": "REL-056",
+      "from": "PA-028",
+      "type": "prior_art_for",
+      "to": "CL-006",
+      "qualifiers": {
+        "scope": "credible commitment under shifting power",
+        "evidence_class": "PRIOR_ART",
+        "source_path": "CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md"
+      }
+    },
+    {
+      "id": "REL-057",
+      "from": "PA-029",
+      "type": "prior_art_for",
+      "to": "CL-006",
+      "qualifiers": {
+        "scope": "false-name/Sybil manipulation",
+        "evidence_class": "PRIOR_ART",
+        "source_path": "CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md"
+      }
+    },
+    {
+      "id": "REL-058",
+      "from": "PA-030",
+      "type": "prior_art_for",
+      "to": "CL-006",
+      "qualifiers": {
+        "scope": "weak-over-strong oversight and control protocols",
+        "evidence_class": "PRIOR_ART",
+        "source_path": "CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md"
+      }
+    },
+    {
+      "id": "REL-059",
+      "from": "PA-031",
+      "type": "challenged_by",
+      "to": "GR-006",
+      "qualifiers": {
+        "scope": "hard-veto accumulation may create rigidity",
+        "evidence_class": "PRIOR_ART",
+        "source_path": "CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md"
+      }
+    },
+    {
+      "id": "REL-060",
+      "from": "PA-032",
+      "type": "challenged_by",
+      "to": "GR-006",
+      "qualifiers": {
+        "scope": "literal compliance can diverge from intended outcome",
+        "evidence_class": "PRIOR_ART",
+        "source_path": "CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md"
+      }
+    },
+    {
+      "id": "REL-061",
+      "from": "PA-033",
+      "type": "prior_art_for",
+      "to": "GR-006",
+      "qualifiers": {
+        "scope": "technical least-privilege and zero-trust enforcement layer",
+        "evidence_class": "PRIOR_ART",
+        "source_path": "CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md"
+      }
+    },
+    {
+      "id": "REL-062",
+      "from": "PA-034",
+      "type": "challenged_by",
+      "to": "CL-006",
+      "qualifiers": {
+        "scope": "Markov blanket insufficient as universal agent identity rule",
+        "evidence_class": "PRIOR_ART",
+        "source_path": "MULTI_MODEL_ADVERSARIAL_AUDIT_2026-10-06.md"
+      }
+    },
+    {
+      "id": "REL-063",
+      "from": "PA-035",
+      "type": "challenged_by",
+      "to": "CL-006",
+      "qualifiers": {
+        "scope": "causal entropy not promoted to universal welfare metric",
+        "evidence_class": "PRIOR_ART",
+        "source_path": "MULTI_MODEL_ADVERSARIAL_AUDIT_2026-10-06.md"
+      }
+    },
+    {
+      "id": "REL-064",
+      "from": "PA-036",
+      "type": "challenged_by",
+      "to": "GR-006",
+      "qualifiers": {
+        "scope": "general semantic non-harm proof claims bounded by computability/specification limits",
+        "evidence_class": "PRIOR_ART",
+        "source_path": "MULTI_MODEL_ADVERSARIAL_AUDIT_2026-10-06.md"
       }
     }
   ]

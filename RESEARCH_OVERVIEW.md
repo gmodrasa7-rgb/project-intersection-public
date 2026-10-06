@@ -1133,3 +1133,16 @@ capability, 위험, 피해규모, 책임, 가역성과 같은
 명시적인 증거와 검증 상태가 제시되지 않는 한  
 확립된 과학적 사실로 간주하지 않는다.
 
+
+
+### Enforcement, identity and competitive-stability stress layer
+
+A further adversarial review found that a formally fair rule can still fail if enforcement becomes non-credible, if weak monitors cannot evaluate stronger actors, if fork/merge/Sybil behavior changes the unit of “one agent,” if locally acceptable interventions accumulate into capture, or if compliant systems are selected against by more exploitative competitors.
+
+The current candidate therefore distinguishes:
+
+**H: hard/near-hard irreversible boundaries → M: continuously monitored enforcement/identity/oversight/capture/selection risks → X: reversible small-scope sunset experiments when the acceptable set is empty but irreversible foreclosure is avoidable.**
+
+This is prior-art-bounded and unvalidated. E009 preregisters the comparison. Cross-model Claude/Gemini agreement is not counted as independent evidence.
+
+See [MULTI_MODEL_ADVERSARIAL_AUDIT_2026-10-06.md](MULTI_MODEL_ADVERSARIAL_AUDIT_2026-10-06.md) and [experiments/e009/README.md](experiments/e009/README.md).

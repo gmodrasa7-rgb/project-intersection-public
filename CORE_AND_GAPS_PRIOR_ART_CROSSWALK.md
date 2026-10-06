@@ -657,3 +657,118 @@ After prior-art subtraction, retain only this unvalidated composition:
 The pre-execution v1.2 amendment adds VA/LC diagnostics before any result.
 
 Reject or reduce the Project residual if the added variables do not improve held-out detection of coercive dependency, false consent, practical-exit failure, or role-reversal inconsistency beyond established autonomy/capability/well-being baselines.
+
+
+## 13. Enforcement, identity, oversight asymmetry, and competitive selection / 집행·개체경계·감사비대칭·선택압
+
+### Prior-art decision
+
+**BROAD NOVELTY REJECTED / COMPOSITIONAL RESIDUAL UNTESTED**
+
+This section was triggered by user-supplied Claude and Gemini adversarial critiques. Cross-model agreement is treated as an idea-prioritization signal only, not independent scientific evidence.
+
+#### A. Commitment problems and shifting power
+
+- Fearon (1995), *Rationalist Explanations for War*, DOI 10.1017/S0020818300033324.
+- Powell (2006), *War as a Commitment Problem*.
+- Powell and related power-transition work.
+
+These establish that mutually preferable agreements can fail when actors cannot credibly commit, especially as relative power shifts.
+
+Project residual: whether audit/intervention/recovery latency relative to capability drift can be operationalized as a cross-domain governance variable.
+
+#### B. False-name / Sybil manipulation
+
+Mechanism-design literature already studies false-name manipulation, in which one actor creates multiple identities to alter outcomes.
+
+Representative source:
+- Conitzer & Yokoo, *Using Mechanism Design to Prevent False-Name Manipulations*.
+
+Therefore copy/fork/Sybil vulnerability is not wholly new. The unresolved Project issue is how to combine false-name resistance with welfare/standing uncertainty and fork/merge-capable artificial agents.
+
+#### C. Scalable oversight / AI control
+
+Existing work studies weak supervisors judging stronger models and control protocols for untrusted AI agents.
+
+Representative lines:
+- weak-to-strong generalization / scalable oversight;
+- debate and consultancy;
+- trusted/untrusted monitoring;
+- AI-control evaluations under adaptive red-team attacks.
+
+Therefore “a weaker auditor may fail to supervise a stronger system” is prior art. It should be measured empirically rather than described as a P-vs-NP identity.
+
+#### D. Veto players / rigidity
+
+Tsebelis's veto-player framework establishes that actors whose agreement is required for policy change can increase stability and impede change.
+
+This directly bounds novelty of the Project concern that continually adding hard safeguards can freeze a harmful status quo.
+
+#### E. Specification gaming / adaptive attacks
+
+Specification-gaming and AI-control literature establish that literal rule compliance can diverge from intended outcomes and that adaptive attackers can exploit monitors/protocol details.
+
+Therefore Project safeguards must test cumulative and adversarial behavior, not pointwise textual compliance alone.
+
+#### F. Zero trust / least privilege
+
+NIST Zero Trust Architecture and least-privilege guidance provide strong prior art for:
+- no implicit trust based on location/ownership;
+- least privilege;
+- separation of duties;
+- continuous authorization/monitoring;
+- resource-oriented protection.
+
+These support a technical enforcement layer but do not solve semantic welfare, standing, or governance questions.
+
+#### G. Markov blankets / causal entropy / formal verification limits
+
+- Markov blankets are statistical conditional-independence constructs and are not sufficient, by themselves, to establish agent identity, autonomy, or moral standing.
+- Wissner-Gross & Freer (2013), *Causal Entropic Forces*, DOI 10.1103/PhysRevLett.110.168702, is prior art for a specific future-path-entropy physical formalism, not a proof that causal entropy equals welfare or freedom.
+- Rice-style undecidability results and formal-verification practice bound any claim that arbitrary program “non-harm” can be generally proven. Cryptographic/zero-knowledge methods can establish narrow formal properties only when those properties are precisely specified.
+
+### Corrections to external-model suggestions
+
+Reject or narrow the following formulations:
+
+- `CAPABILITY_GAP = P_VS_NP` → reject; use empirical oversight-risk variables.
+- `MARKOV_BLANKET = AGENT_IDENTITY` → reject as canonical identity rule.
+- `CAUSAL_ENTROPY = WELFARE/FREEDOM` → hold only as alternate model.
+- `MUTUAL_INFORMATION_CAP = NONDOMINATION` → reject as general rule.
+- `ZK_PROOF = GENERAL_NONHARM_PROOF` → reject.
+- automatic resource burn / mutually assured degradation → adversarial baseline only, not default governance.
+- rollback equals death/person destruction → unresolved identity/standing question, not fact.
+
+### Architecture correction: three classes, not an ever-growing hard intersection
+
+The existing MAK+ remains necessary in some contexts but should not absorb every variable as a veto.
+
+Use:
+
+1. **H — Hard / near-hard boundaries** for strongly justified catastrophic/irreversible/privacy/provenance/resource-feasibility constraints.
+2. **M — Monitored continuous risks** for enforcement lag, audit gap, identity uncertainty, cumulative capture, selection pressure, interpretation disagreement, adoption incentives, stakeholder-search uncertainty.
+3. **X — Reversible experimental zone** when no mutually acceptable policy exists but irreversible foreclosure can be avoided: small scope, capped resources, sunset, observability, rollback, no automatic precedent.
+
+### New stress variables
+
+- ENF: enforcement/audit/recovery latency versus power drift.
+- ID: fork/merge/Sybil/causal-control identity integrity.
+- OV: oversight effectiveness against adaptive behavior.
+- CUM: cumulative sub-threshold capture trajectory.
+- RF: joint resource-feasibility of promised floors.
+- SEL: competitive survival of compliant/non-capture structures.
+- INT: interpretation authority and evaluator disagreement.
+- VOI: stopping rule for unknown-stakeholder search.
+
+### Residual candidate
+
+After subtraction, the strongest unvalidated residuals are:
+
+1. fork/merge-aware role reversal where agent count is endogenous;
+2. enforcement-latency versus power-drift thresholds;
+3. cumulative capture across locally acceptable steps;
+4. role reversal under large oversight/cognitive asymmetry;
+5. competitive survivability of non-capture governance;
+6. whether H/M/X classification avoids both irreversible harm and veto paralysis better than an expanding hard intersection.
+
+See [MULTI_MODEL_ADVERSARIAL_AUDIT_2026-10-06.md](MULTI_MODEL_ADVERSARIAL_AUDIT_2026-10-06.md) and [experiments/e009/README.md](experiments/e009/README.md).

@@ -91,6 +91,9 @@ jobs:
           e008_readme = Path("experiments/e008/README.md").read_text(encoding="utf-8")
           e008_matrix = json.loads(Path("experiments/e008/scenario_matrix.json").read_text(encoding="utf-8"))
           e008_agency_living = Path("experiments/e008/AGENCY_LIVING_CONDITIONS_AMENDMENT_v1_2.md").read_text(encoding="utf-8")
+          e009_readme = Path("experiments/e009/README.md").read_text(encoding="utf-8")
+          e009_matrix = json.loads(Path("experiments/e009/scenario_matrix.json").read_text(encoding="utf-8"))
+          multimodel_audit = Path("MULTI_MODEL_ADVERSARIAL_AUDIT_2026-10-06.md").read_text(encoding="utf-8")
 
           # Landing-page regression: keep first-review cost bounded.
           require(len(readme.splitlines()) <= 200, "README exceeded 200 lines; move detailed material to linked documents.")
@@ -156,6 +159,11 @@ jobs:
           require("OPERATIONAL_DEPENDENCY != MORAL_STANDING" in e008_agency_living, "E008 v1.2 collapsed operating dependency into standing.")
           require("ESSENTIAL_DEPENDENCY + COMPLIANCE != VOLUNTARY_CONSENT_BY_DEFAULT" in e008_agency_living, "E008 v1.2 lost livelihood-conditioned consent boundary.")
           require("MAK^{+}_t" in e008_agency_living, "E008 v1.2 lost expanded mutual-acceptability kernel.")
+          require("PREREGISTERED SPECIFICATION / NO RESULT YET" in e009_readme, "E009 lost preregistration/no-result boundary.")
+          require(e009_matrix.get("status") == "PREREGISTERED_SPECIFICATION_NO_RESULT", "E009 matrix was promoted without explicit review.")
+          require(len(e009_matrix.get("scenario_families", [])) == 16, "E009 scenario family set drifted.")
+          require("Model agreement is not counted as independent scientific evidence." in e009_readme, "E009 promoted cross-model agreement into evidence.")
+          require("not independent empirical replication" in multimodel_audit, "External model critique boundary drifted.")
 
           # Declared bilingual policy and power-reversal gate must remain inspectable.
           require("Original 1 — English Canonical" in policy, "Research status policy lost English canonical section.")

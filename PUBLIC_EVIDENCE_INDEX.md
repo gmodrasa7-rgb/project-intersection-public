@@ -108,3 +108,11 @@ The highest-value external upgrades are:
 - reviewer-safe holdout 또는 적대적 테스트셋;
 - negative result와 수정기록 공개;
 - 식별한계를 명시한 현실·역사 사례 연구.
+
+
+## E009 adversarial specification / E009 적대 사전등록
+
+| Artifact | What it establishes | Evidence class | Does not establish |
+|---|---|---|---|
+| [Multi-model adversarial audit](MULTI_MODEL_ADVERSARIAL_AUDIT_2026-10-06.md) | User-supplied Claude/Gemini critiques were prior-art checked, corrected, and distilled into enforcement/identity/oversight/selection stress variables | External-model critique synthesis / project analysis | Independent replication, model agreement as truth, empirical superiority |
+| [E009 preregistration](experiments/e009/README.md) | Predeclared baselines, 16 adversarial scenario families, and falsification conditions for the H/M/X architecture | Public preregistration / specification | Any E009 result, Project-v3 superiority, real-world validation |
