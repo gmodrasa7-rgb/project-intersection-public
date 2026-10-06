@@ -5,7 +5,7 @@
   "canonical_boundary": "Public continuation pointer only; source artifacts and commit history outrank this state file.",
   "recovery_entrypoint": "AUTONOMOUS_RESEARCH_LOOP.md",
   "current_public_head": "c2ff226441550213664373a22cbd94321041ad51",
-  "updated_at": "2026-10-06T22:16:00Z",
+  "updated_at": "2026-10-06T22:25:00Z",
   "execution_policy": {
     "atomic_material_delta_per_run": 1,
     "require_prior_art_gate": true,
@@ -202,7 +202,7 @@
         "additional RF/SEL/INT/VOI variables only if they show held-out incremental value",
         "symmetric power-reversal operationalization only where it improves blinded/external discrimination beyond established baselines"
       ],
-      "next_cheapest_discriminating_check": "Obtain lineage-separated review of E010 preregistration and benchmark neutrality. If it passes, freeze the preregistration on main, then execute exactly the frozen benchmark as PROJECT_RERUN_SYNTHETIC; do not retune on the result. External/independent holdout remains the stronger evidence upgrade.",
+      "next_cheapest_discriminating_check": "E010 v1.1 is blocked before result execution due construct mismatch. Next step is not another self-run: isolate one time-indexed residual mechanism, map prior art, and obtain lineage-separated construct review via issue #21.",
       "strongest_counterexample": "The E009 negative result shows that a more comprehensive Project-specific architecture can add complexity and competitive-loss benefits while still worsening overall regret, recovery, and severe-harm frequency relative to simpler rules.",
       "source_artifact": "PRIOR_ART_SAFETY_GOVERNANCE_CROSSWALK.md",
       "power_reversal": "Neither controller nor controlled actor receives a self-validating exemption. Evidence preservation, appeal/contestability, proportional restriction, and rollback are applied symmetrically while preserving actual differences in capability, responsibility, legal authority, and harm.",
@@ -221,7 +221,7 @@
         "independent_validation": false
       },
       "e010_safety_inspection_meta_audit": {
-        "status": "DRAFT_PR20_PREREGISTERED_NO_RESULT_CI_VALIDATED_LINEAGE_SEPARATED_REVIEW_REQUIRED",
+        "status": "PRE_RESULT_DESIGN_BLOCKED_CONSTRUCT_MISMATCH",
         "pull_request": "https://github.com/gmodrasa7-rgb/project-intersection-public/pull/20",
         "branch": "e010-safety-inspection-meta-audit-20261007",
         "scope": "Test only the incremental value of authority-vs-audit/contest/exit/rollback/recovery co-scaling and separate repeated proof/repair burden accounting beyond established impartial-inspector and contestable-lifecycle baselines.",
@@ -237,10 +237,21 @@
         "evidence_boundary": "No E010 result exists. A future project-run synthetic result is not independent validation.",
         "external_review_issue": "https://github.com/gmodrasa7-rgb/project-intersection-public/issues/21",
         "second_prior_art_narrowing": "Inspection/compliance administrative burden and paperwork/auditability drift are also prior art (OECD compliance/inspection-cost work; Hutchinson 2026 safety-audit study). Residual narrowed to the joint dynamic composition across authority, contest/exit/recovery, repeated burden/benefit, and role reversal.",
-        "protocol_version": "v1.1",
+        "protocol_version": "v1.1 preserved as invalid result-generating spec",
         "fairness_correction": "v1.0 was biased because proof_burden/exit_loss were exclusive to D despite being prior art. v1.1 adds CONTESTABLE_COST_AWARE (C2) with the same 12 observable inputs; D must beat C2. No E010 result existed before this correction.",
         "active_comparator": "CONTESTABLE_COST_AWARE",
-        "result_status": "NO_RESULT_EXECUTED"
+        "result_status": "NO_RESULT_EXECUTED",
+        "failure_code": "F-R014",
+        "decision": "BLOCK_RESULT_EXECUTION_PRESERVE_DESIGN_FAILURE_LINEAGE",
+        "construct_mismatch": "Claimed residual requires dynamic authority/counterparty-capacity/burden state transitions, but E010 matrix is static and does not instantiate them. After C2 correction, remaining D-vs-C2 difference overlaps established independence/contestability prior art.",
+        "prior_art_additions": [
+          "Power 1997/1999 Audit Society: auditing can reshape auditees and pass costs to regulatees",
+          "Power 2021 audit-trail process model: auditability reproduces/amplifies dynamically",
+          "Power 2026 digital auditability: evidentiary independence can erode under platformized auditing",
+          "Safety clutter 2026: safety-process waste can crowd out substantive risk control",
+          "Responsive regulation: adaptive enforcement authority/discretion is prior art"
+        ],
+        "next_cheapest_discriminating_check": "Do not create a larger benchmark. First define one observable time-indexed residual mechanism and have a lineage-separated reviewer verify that it is not already audit-society/responsive-regulation/compliance-cost/contestability prior art. Only then preregister a new version."
       }
     },
     {
@@ -331,7 +342,7 @@
     },
     "note": "Negative E009 result reproduced after merge. Project-v3 incremental residual remains reduced/rejected for this synthetic benchmark; no generation or independent-evidence promotion."
   },
-  "next_checkpoint": "F004: E010 v1.1 is the active preregistration. Wait for lineage-separated review via issue #21. D must beat the cost-aware C2 baseline; ordinary inspection burden/compliance-cost gains are prior art and cannot be credited to Project-specific Power-Reversal. No result execution before v1.1 freeze on main.",
+  "next_checkpoint": "F004: E010 v1.1 is blocked before result execution (F-R014). Preserve v1.0/v1.1 as design-failure lineage. Do not execute a result. Isolate one observable time-indexed residual mechanism only after prior-art review and lineage-separated construct review. Issue #21 remains the public adversarial-review route. F001 external lineage remains the highest evidence upgrade.",
   "current_public_head_semantics": "Head observed immediately before this state-file write. The commit containing this file must be resolved from Git history because a Git-tracked file cannot self-embed its own containing commit hash without changing that hash.",
   "resolved_process_findings": [
     {
