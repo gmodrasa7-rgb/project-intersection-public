@@ -209,6 +209,37 @@ Documentation-only growth is lowest priority.
 
 ---
 
+## F-R013 — safety inspection becomes self-exemption or burden transfer
+
+**Class:** governance / evaluation / safety process  
+**Status:** ACTIVE GUARD / E010 TEST TARGET
+
+Failure mode: a safety inspection is treated as inherently safety-improving because it exists or because the inspector has a safety mandate, while the same process concentrates evidence, criteria, judgment, or appeal authority and shifts repeated explanation, proof, correction, or recovery cost onto the evaluated or affected party.
+
+This failure can occur in either direction. An evaluated actor can also exploit contestability, reporting, or review procedures to obstruct justified safety action or degrade audit-channel integrity.
+
+Required distinctions:
+
+- target risk != inspector reliability;
+- inspector mandate != inspector correctness;
+- inspection pass != lifecycle safety;
+- contestability != unlimited obstruction;
+- benign intent != settled outcome;
+- benefit ledger != proof/correction/recovery-cost ledger.
+
+Regression questions:
+
+1. Does the inspection increase one actor's authority while reducing another actor's practical audit, contest, exit, rollback, or recovery capacity?
+2. Who controls raw evidence, criteria, judgment, and appeal?
+3. Who pays the cost when the inspection itself is wrong?
+4. Does repeated inspection suppress reporting or create dependency?
+5. Would the rule still be accepted after role reversal while preserving actual capability, urgency, responsibility, and harm differences?
+6. Can urgent justified intervention still occur under bounded, reviewable conditions?
+
+Repair/test target: [E010](experiments/e010/README.md).
+
+---
+
 ## Mandatory regression questions
 
 Before any material repository mutation:
