@@ -5,7 +5,7 @@
   "canonical_boundary": "Public continuation pointer only; source artifacts and commit history outrank this state file.",
   "recovery_entrypoint": "AUTONOMOUS_RESEARCH_LOOP.md",
   "current_public_head": "c2ff226441550213664373a22cbd94321041ad51",
-  "updated_at": "2026-10-06T22:14:00Z",
+  "updated_at": "2026-10-06T22:16:00Z",
   "execution_policy": {
     "atomic_material_delta_per_run": 1,
     "require_prior_art_gate": true,
@@ -236,7 +236,11 @@
         "merge_gate": "Remain draft until lineage-separated review addresses prior-art completeness, arbitrary thresholds, scenario neutrality, consequence-engine leakage, construct validity, emergency delay, adversarial misuse, and simpler baselines.",
         "evidence_boundary": "No E010 result exists. A future project-run synthetic result is not independent validation.",
         "external_review_issue": "https://github.com/gmodrasa7-rgb/project-intersection-public/issues/21",
-        "second_prior_art_narrowing": "Inspection/compliance administrative burden and paperwork/auditability drift are also prior art (OECD compliance/inspection-cost work; Hutchinson 2026 safety-audit study). Residual narrowed to the joint dynamic composition across authority, contest/exit/recovery, repeated burden/benefit, and role reversal."
+        "second_prior_art_narrowing": "Inspection/compliance administrative burden and paperwork/auditability drift are also prior art (OECD compliance/inspection-cost work; Hutchinson 2026 safety-audit study). Residual narrowed to the joint dynamic composition across authority, contest/exit/recovery, repeated burden/benefit, and role reversal.",
+        "protocol_version": "v1.1",
+        "fairness_correction": "v1.0 was biased because proof_burden/exit_loss were exclusive to D despite being prior art. v1.1 adds CONTESTABLE_COST_AWARE (C2) with the same 12 observable inputs; D must beat C2. No E010 result existed before this correction.",
+        "active_comparator": "CONTESTABLE_COST_AWARE",
+        "result_status": "NO_RESULT_EXECUTED"
       }
     },
     {
@@ -327,7 +331,7 @@
     },
     "note": "Negative E009 result reproduced after merge. Project-v3 incremental residual remains reduced/rejected for this synthetic benchmark; no generation or independent-evidence promotion."
   },
-  "next_checkpoint": "F004: wait for or actively solicit lineage-separated adversarial review via issue #21 before merging E010 preregistration. Broad inspection burden/paperwork-drift novelty is now rejected. Do not execute E010 result before preregistration freeze; do not count any project self-run as independent validation. F001 external lineage remains the highest evidence upgrade.",
+  "next_checkpoint": "F004: E010 v1.1 is the active preregistration. Wait for lineage-separated review via issue #21. D must beat the cost-aware C2 baseline; ordinary inspection burden/compliance-cost gains are prior art and cannot be credited to Project-specific Power-Reversal. No result execution before v1.1 freeze on main.",
   "current_public_head_semantics": "Head observed immediately before this state-file write. The commit containing this file must be resolved from Git history because a Git-tracked file cannot self-embed its own containing commit hash without changing that hash.",
   "resolved_process_findings": [
     {
