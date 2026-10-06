@@ -2185,8 +2185,10 @@ NIST CFTT supplies an independent conformance framework for deleted-file recover
 - [E010 scenario matrix](experiments/e010/scenario_matrix.json)
 - [E010 structural validator](experiments/e010/validate.py)
 
-상태: **PREREGISTERED DESIGN / NO RESULT / NOT PROJECT VALIDATION**
+상태: **PRE-RESULT DESIGN BLOCKED / CONSTRUCT MISMATCH / NO RESULT / NOT PROJECT VALIDATION**
 
-목적: 검사대상만 평가하는 안전검사에서 벗어나 검사자·검사제도·영향받는 상대까지 포함하되, 기존의 검사기관 공정성·독립성·신고보호·contestability·post-market monitoring과 겹치는 부분은 선행연구로 귀속한다. Project 잔여 후보는 검사권 증가와 상대의 audit/contest/exit/rollback/recovery 및 반복 proof/repair burden을 공동 계상하는 조합의 추가가치뿐이다.
+목적: 검사대상만 평가하는 안전검사에서 벗어나 검사자·검사제도·영향받는 상대까지 포함하되, 기존의 검사기관 공정성·독립성·신고보호·contestability·post-market monitoring·compliance cost·audit-society dynamics와 겹치는 부분은 선행연구로 귀속한다.
+
+현재 판정: E010 v1.1은 주장한 동적 residual(권한축적·상대 capacity·반복 burden/benefit 상태전이)을 실제 정적 benchmark가 구현하지 못해 결과 실행이 차단되었다. 구조 CI 통과는 과학적 construct validity를 의미하지 않는다. v1.0/v1.1은 사전결과 설계실패 계보로 보존한다.
 
 선행경계: [Safety/Governance Prior-Art Crosswalk](PRIOR_ART_SAFETY_GOVERNANCE_CROSSWALK.md)
