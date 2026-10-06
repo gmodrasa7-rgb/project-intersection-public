@@ -2175,3 +2175,18 @@ Project Intersection의
 ### F003 external standards boundary (2026-10-05)
 
 NIST CFTT supplies an independent conformance framework for deleted-file recovery, but its specification also states that estimated content has no definitive expected result. Project Intersection therefore separates technical recovery validation from beneficiary-direction identification. A recovery benchmark without auditable semantic direction labels is a measurement-layer control, not an H3 classifier-calibration holdout. See both language versions of `HISTORICAL_STATE_CONTROL_MEMORY_PROVENANCE_CAPTURE_v0_1`.
+
+
+---
+
+## E010 — 안전검사 역할반전 메타감사 (2026-10-07)
+
+- [E010 README / preregistration](experiments/e010/README.md)
+- [E010 scenario matrix](experiments/e010/scenario_matrix.json)
+- [E010 structural validator](experiments/e010/validate.py)
+
+상태: **PREREGISTERED DESIGN / NO RESULT / NOT PROJECT VALIDATION**
+
+목적: 검사대상만 평가하는 안전검사에서 벗어나 검사자·검사제도·영향받는 상대까지 포함하되, 기존의 검사기관 공정성·독립성·신고보호·contestability·post-market monitoring과 겹치는 부분은 선행연구로 귀속한다. Project 잔여 후보는 검사권 증가와 상대의 audit/contest/exit/rollback/recovery 및 반복 proof/repair burden을 공동 계상하는 조합의 추가가치뿐이다.
+
+선행경계: [Safety/Governance Prior-Art Crosswalk](PRIOR_ART_SAFETY_GOVERNANCE_CROSSWALK.md)
