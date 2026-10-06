@@ -159,11 +159,19 @@ jobs:
           require("OPERATIONAL_DEPENDENCY != MORAL_STANDING" in e008_agency_living, "E008 v1.2 collapsed operating dependency into standing.")
           require("ESSENTIAL_DEPENDENCY + COMPLIANCE != VOLUNTARY_CONSENT_BY_DEFAULT" in e008_agency_living, "E008 v1.2 lost livelihood-conditioned consent boundary.")
           require("MAK^{+}_t" in e008_agency_living, "E008 v1.2 lost expanded mutual-acceptability kernel.")
-          require("PREREGISTERED SPECIFICATION / NO RESULT YET" in e009_readme, "E009 lost preregistration/no-result boundary.")
+          require(("PREREGISTERED SPECIFICATION / NO RESULT YET" in e009_readme) or ("PROJECT RERUN SYNTHETIC RESULT AVAILABLE / NOT INDEPENDENT VALIDATION" in e009_readme), "E009 lost valid status/evidence boundary.")
           require(e009_matrix.get("status") == "PREREGISTERED_SPECIFICATION_NO_RESULT", "E009 matrix was promoted without explicit review.")
           require(len(e009_matrix.get("scenario_families", [])) == 16, "E009 scenario family set drifted.")
           require("Model agreement is not counted as independent scientific evidence." in e009_readme, "E009 promoted cross-model agreement into evidence.")
           require("not independent empirical replication" in multimodel_audit, "External model critique boundary drifted.")
+          e009_result_path = Path("experiments/e009/RESULT.json")
+          if e009_result_path.exists():
+              e009_result = json.loads(e009_result_path.read_text(encoding="utf-8"))
+              e009_receipt = json.loads(Path("experiments/e009/EXECUTION_RECEIPT.json").read_text(encoding="utf-8"))
+              require(e009_result.get("status") == "SYNTHETIC_PROJECT_RERUN_NOT_INDEPENDENT_VALIDATION", "E009 result evidence class drifted.")
+              require(e009_result.get("survival_criteria", {}).get("project_v3_residual_survives") is False, "E009 negative result was silently promoted.")
+              require(e009_receipt.get("independent_validation") is False, "E009 self-run was mislabeled independent validation.")
+              require(e009_receipt.get("policy_or_threshold_changes_after_spec_merge") is False, "E009 result reports post-spec tuning.")
 
           # Declared bilingual policy and power-reversal gate must remain inspectable.
           require("Original 1 — English Canonical" in policy, "Research status policy lost English canonical section.")
