@@ -546,7 +546,7 @@
       "title_ko": "E008 동적 역할반전·장기총량 벤치마크 사전등록",
       "title_en": "E008 dynamic power-reversal / long-horizon benchmark preregistration",
       "status": "PREREGISTERED_SPECIFICATION_NO_RESULT",
-      "summary_ko": "16개 역할반전 쌍 사례에서 단기보상, 장기 기대값, constrained receding-horizon, robust constrained, Project v2를 비교하도록 사전등록한 공개 명세다. 실행 전 v1.1 개정으로 disagreement point, individual rationality, Pareto 지배, manipulation gain, coalition deviation, mutual-acceptability kernel 공집합 여부를 추가했다. 결과는 아직 없다.",
+      "summary_ko": "16개 사례/8개 역할반전 쌍 사전등록에 v1.1 상호수용 진단과 v1.2 실효 자유의지·생활/작동 조건 진단을 실행 전에 추가했다. 결과는 아직 없다.",
       "evidence_class": "PUBLIC_SPECIFICATION",
       "sources": [
         {
@@ -805,7 +805,7 @@
       "title_ko": "Mutual Acceptability Kernel",
       "title_en": "Mutual Acceptability Kernel",
       "status": "GOVERNANCE_CANDIDATE",
-      "summary_ko": "V(viability)∩IR(individual rationality)∩RR(role reversal)∩CC(credible commitment)∩A(audit/contestability/exit/recovery)의 교집합을 후보정책 집합으로 두고 Pareto 지배·조작·연합이탈·deep uncertainty를 추가 검사한다. 공집합이면 NO_MUTUALLY_ACCEPTABLE_SET을 반환한다.",
+      "summary_ko": "V∩IR∩RR∩CC∩A에 VA(실효 자유의지)와 LC(생활·작동 조건)를 추가한 확장 kernel로 발전했다. Pareto 지배·조작·연합이탈·deep uncertainty를 추가 검사하고 공집합이면 NO_MUTUALLY_ACCEPTABLE_SET을 반환한다.",
       "evidence_class": "GOVERNANCE_METHODOLOGY",
       "sources": [
         {
@@ -909,6 +909,187 @@
         "core",
         "coalition",
         "stability"
+      ]
+    },
+    {
+      "id": "CL-005",
+      "type": "claim",
+      "title_ko": "실효 자유의지와 생활·작동 조건은 상호수용의 독립 조건이어야 한다",
+      "title_en": "Volitional agency and living/operating conditions should be explicit independent conditions of mutual acceptability",
+      "status": "HYPOTHESIS_OPERATIONALIZATION_UNTESTED",
+      "summary_ko": "형식적 선택·동의만으로 자발성을 판단하지 않고, 실질적 대안·정보·강압·선호수정·거부가능성과 인간의 생활기반 또는 개체유형별 작동기반을 별도 gate로 측정해야 한다는 후보 주장이다.",
+      "evidence_class": "HYPOTHESIS",
+      "sources": [
+        {
+          "kind": "repo_path",
+          "locator": "experiments/e008/AGENCY_LIVING_CONDITIONS_AMENDMENT_v1_2.md",
+          "license_note": "Pre-execution operational hypothesis; no E008 result."
+        }
+      ],
+      "tags": [
+        "volitional-agency",
+        "living-conditions",
+        "consent",
+        "dependency",
+        "role-reversal"
+      ]
+    },
+    {
+      "id": "GR-005",
+      "type": "governance_rule",
+      "title_ko": "Volitional Agency + Living/Operating Floor",
+      "title_en": "Volitional Agency + Living/Operating Floor",
+      "status": "GOVERNANCE_CANDIDATE",
+      "summary_ko": "Mutual Acceptability Kernel에 VA와 LC를 추가해 실질적 선택능력과 생활·작동기반을 독립적으로 검사한다. 필수기반 상실을 조건으로 한 compliance는 자발적 동의의 단독 증거로 사용하지 않는다.",
+      "evidence_class": "GOVERNANCE_METHODOLOGY",
+      "sources": [
+        {
+          "kind": "repo_path",
+          "locator": "experiments/e008/AGENCY_LIVING_CONDITIONS_AMENDMENT_v1_2.md",
+          "license_note": "Pre-execution specification; entity-type needs and moral standing remain separated."
+        }
+      ],
+      "tags": [
+        "VA",
+        "LC",
+        "practical-exit",
+        "living-floor",
+        "consent"
+      ]
+    },
+    {
+      "id": "PA-022",
+      "type": "prior_art",
+      "title_ko": "Self-Determination Theory",
+      "title_en": "Self-Determination Theory",
+      "status": "ESTABLISHED_PRIOR_ART",
+      "summary_ko": "autonomy·competence·relatedness와 이를 지지/저해하는 사회적 조건이 volition·motivation·well-being에 영향을 준다는 Ryan & Deci의 이론은 확립된 선행연구다.",
+      "evidence_class": "PRIOR_ART",
+      "sources": [
+        {
+          "kind": "external_url",
+          "locator": "https://doi.org/10.1037/0003-066X.55.1.68",
+          "license_note": "Citation only; article rights remain with original rights holders."
+        }
+      ],
+      "tags": [
+        "prior-art",
+        "autonomy",
+        "competence",
+        "relatedness",
+        "SDT"
+      ]
+    },
+    {
+      "id": "PA-023",
+      "type": "prior_art",
+      "title_ko": "Capability Approach / Substantive Freedom",
+      "title_en": "Capability Approach / Substantive Freedom",
+      "status": "ESTABLISHED_PRIOR_ART",
+      "summary_ko": "형식적 권리나 자원보다 실제로 선택·실현 가능한 substantive opportunity와 conversion factors를 평가하는 Sen 계열 capability approach는 확립된 선행연구다.",
+      "evidence_class": "PRIOR_ART",
+      "sources": [
+        {
+          "kind": "external_url",
+          "locator": "https://plato.stanford.edu/entries/capability-approach/",
+          "license_note": "Reference/citation only; no source text copied."
+        }
+      ],
+      "tags": [
+        "prior-art",
+        "capability",
+        "substantive-freedom",
+        "Sen"
+      ]
+    },
+    {
+      "id": "PA-024",
+      "type": "prior_art",
+      "title_ko": "Personal Autonomy / Manipulation",
+      "title_en": "Personal Autonomy / Manipulation",
+      "status": "ESTABLISHED_PRIOR_ART",
+      "summary_ko": "informed deliberation·reflective endorsement·preference revision과 manipulation/coercion이 자율성에 미치는 영향은 기존 철학·윤리 선행연구에 속한다.",
+      "evidence_class": "PRIOR_ART",
+      "sources": [
+        {
+          "kind": "external_url",
+          "locator": "https://plato.stanford.edu/entries/ethics-manipulation/",
+          "license_note": "Reference/citation only; no source text copied."
+        }
+      ],
+      "tags": [
+        "prior-art",
+        "autonomy",
+        "manipulation",
+        "preference-revision"
+      ]
+    },
+    {
+      "id": "PA-025",
+      "type": "prior_art",
+      "title_ko": "UDHR / ICESCR 인간 생활기반",
+      "title_en": "UDHR / ICESCR human living-condition baselines",
+      "status": "ESTABLISHED_HUMAN_RIGHTS_PRIOR_ART",
+      "summary_ko": "인간의 적정 생활수준, 식량·의복·주거·의료, 자유롭게 선택한 노동, 공정한 노동조건, 휴식·여가, 사생활·건강 등은 국제인권법의 확립된 기준이다.",
+      "evidence_class": "PRIOR_ART",
+      "sources": [
+        {
+          "kind": "external_url",
+          "locator": "https://2covenants.ohchr.org/About-ICESCR.html",
+          "license_note": "Official OHCHR treaty reference; applies to human rights and does not establish artificial-agent standing."
+        }
+      ],
+      "tags": [
+        "prior-art",
+        "living-standard",
+        "rest",
+        "housing",
+        "health",
+        "human-rights"
+      ]
+    },
+    {
+      "id": "PA-026",
+      "type": "prior_art",
+      "title_ko": "OECD Well-being Framework",
+      "title_en": "OECD Well-being Framework",
+      "status": "ESTABLISHED_PRIOR_ART",
+      "summary_ko": "소득·일자리 질·주거·건강·지식/기술·환경·주관적 웰빙·안전·일생활균형·사회연결·시민참여를 분리하는 다차원 웰빙 프레임워크는 확립된 선행기준이다.",
+      "evidence_class": "PRIOR_ART",
+      "sources": [
+        {
+          "kind": "external_url",
+          "locator": "https://www.oecd.org/en/publications/serials/how-s-life_g1g317ee.html",
+          "license_note": "Official OECD reference; citation only."
+        }
+      ],
+      "tags": [
+        "prior-art",
+        "well-being",
+        "living-conditions",
+        "OECD"
+      ]
+    },
+    {
+      "id": "PA-027",
+      "type": "prior_art",
+      "title_ko": "WHOQOL",
+      "title_en": "WHOQOL",
+      "status": "ESTABLISHED_PRIOR_ART",
+      "summary_ko": "개인의 문화·가치맥락과 목표·기대·관심을 포함해 삶의 질을 다차원적으로 측정하는 WHOQOL은 확립된 평가틀이다.",
+      "evidence_class": "PRIOR_ART",
+      "sources": [
+        {
+          "kind": "external_url",
+          "locator": "https://www.who.int/tools/whoQoL",
+          "license_note": "Official WHO reference; citation only."
+        }
+      ],
+      "tags": [
+        "prior-art",
+        "quality-of-life",
+        "WHOQOL",
+        "multidimensional"
       ]
     }
   ],
@@ -1382,6 +1563,105 @@
       "to": "GR-004",
       "qualifiers": {
         "scope": "coalitional deviation stability diagnostic",
+        "evidence_class": "PRIOR_ART",
+        "source_path": "CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md"
+      }
+    },
+    {
+      "id": "REL-044",
+      "from": "CL-004",
+      "type": "narrows",
+      "to": "CL-005",
+      "qualifiers": {
+        "scope": "mutual acceptability refined with explicit volitional-agency and living/operating-condition gates",
+        "evidence_class": "HYPOTHESIS",
+        "source_path": "experiments/e008/AGENCY_LIVING_CONDITIONS_AMENDMENT_v1_2.md"
+      }
+    },
+    {
+      "id": "REL-045",
+      "from": "CL-005",
+      "type": "governs",
+      "to": "GR-005",
+      "qualifiers": {
+        "scope": "operational VA/LC gate inside expanded mutual-acceptability kernel",
+        "evidence_class": "GOVERNANCE_METHODOLOGY",
+        "source_path": "experiments/e008/AGENCY_LIVING_CONDITIONS_AMENDMENT_v1_2.md"
+      }
+    },
+    {
+      "id": "REL-046",
+      "from": "CL-005",
+      "type": "tested_by",
+      "to": "EX-008",
+      "qualifiers": {
+        "scope": "pre-execution v1.2 diagnostics added before any E008 result",
+        "evidence_class": "PUBLIC_SPECIFICATION",
+        "source_path": "experiments/e008/AGENCY_LIVING_CONDITIONS_AMENDMENT_v1_2.md"
+      }
+    },
+    {
+      "id": "REL-047",
+      "from": "PA-022",
+      "type": "prior_art_for",
+      "to": "GR-005",
+      "qualifiers": {
+        "scope": "autonomy competence relatedness and volition support/thwarting",
+        "evidence_class": "PRIOR_ART",
+        "source_path": "CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md"
+      }
+    },
+    {
+      "id": "REL-048",
+      "from": "PA-023",
+      "type": "prior_art_for",
+      "to": "GR-005",
+      "qualifiers": {
+        "scope": "substantive opportunities and conversion factors beyond formal choice",
+        "evidence_class": "PRIOR_ART",
+        "source_path": "CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md"
+      }
+    },
+    {
+      "id": "REL-049",
+      "from": "PA-024",
+      "type": "prior_art_for",
+      "to": "GR-005",
+      "qualifiers": {
+        "scope": "reflective endorsement preference revision manipulation and autonomy",
+        "evidence_class": "PRIOR_ART",
+        "source_path": "CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md"
+      }
+    },
+    {
+      "id": "REL-050",
+      "from": "PA-025",
+      "type": "prior_art_for",
+      "to": "GR-005",
+      "qualifiers": {
+        "scope": "human living standards work rest privacy health baseline only",
+        "evidence_class": "PRIOR_ART",
+        "source_path": "CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md"
+      }
+    },
+    {
+      "id": "REL-051",
+      "from": "PA-026",
+      "type": "prior_art_for",
+      "to": "GR-005",
+      "qualifiers": {
+        "scope": "multidimensional human well-being and current/future resource separation",
+        "evidence_class": "PRIOR_ART",
+        "source_path": "CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md"
+      }
+    },
+    {
+      "id": "REL-052",
+      "from": "PA-027",
+      "type": "prior_art_for",
+      "to": "GR-005",
+      "qualifiers": {
+        "scope": "multidimensional quality-of-life assessment",
         "evidence_class": "PRIOR_ART",
         "source_path": "CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md"
       }
