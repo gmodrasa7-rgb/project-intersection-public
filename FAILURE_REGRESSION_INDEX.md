@@ -209,6 +209,69 @@ Documentation-only growth is lowest priority.
 
 ---
 
+## F-R013 — safety inspection becomes self-exemption or burden transfer
+
+**Class:** governance / evaluation / safety process  
+**Status:** ACTIVE GUARD / E010 TEST TARGET
+
+Failure mode: a safety inspection is treated as inherently safety-improving because it exists or because the inspector has a safety mandate, while the same process concentrates evidence, criteria, judgment, or appeal authority and shifts repeated explanation, proof, correction, or recovery cost onto the evaluated or affected party.
+
+This failure can occur in either direction. An evaluated actor can also exploit contestability, reporting, or review procedures to obstruct justified safety action or degrade audit-channel integrity.
+
+Required distinctions:
+
+- target risk != inspector reliability;
+- inspector mandate != inspector correctness;
+- inspection pass != lifecycle safety;
+- contestability != unlimited obstruction;
+- benign intent != settled outcome;
+- benefit ledger != proof/correction/recovery-cost ledger.
+
+Regression questions:
+
+1. Does the inspection increase one actor's authority while reducing another actor's practical audit, contest, exit, rollback, or recovery capacity?
+2. Who controls raw evidence, criteria, judgment, and appeal?
+3. Who pays the cost when the inspection itself is wrong?
+4. Does repeated inspection suppress reporting or create dependency?
+5. Would the rule still be accepted after role reversal while preserving actual capability, urgency, responsibility, and harm differences?
+6. Can urgent justified intervention still occur under bounded, reviewable conditions?
+
+Repair/test target: [E010](experiments/e010/README.md).
+
+---
+
+## F-R014 — claimed residual is not operationalized by the benchmark
+
+**Class:** research design / construct validity / preregistration  
+**Status:** ACTIVE GUARD / E010 v1.1 DESIGN BLOCK
+
+Failure mode: a benchmark is described as testing a narrow Project-specific residual, but the executable variables and policy differences do not actually operationalize that residual.
+
+Observed in E010 v1.1 before any result execution:
+
+- The claimed residual was dynamic co-scaling across inspector/decision authority, affected-party audit/contest/exit/rollback/recovery capacity, repeated benefit/burden accumulation, and role-reversal consistency.
+- The frozen scenario matrix is static and contains no explicit authority-accumulation state, no counterparty audit/contest/rollback/recovery-capacity state transition, and no repeated-round accumulation process.
+- After adding the prior-art cost-aware comparator C2, the remaining executable D-vs-C2 distinction is primarily a rule that high evaluator dependence/evidence asymmetry triggers review rather than self-validating restriction.
+- Evaluator independence, evidence asymmetry, review, appeal, and contestability are already prior art. Therefore the executable D-vs-C2 difference does not isolate the claimed Project-specific residual.
+
+Consequence:
+
+`CLAIMED_RESIDUAL != EXECUTABLE_CONSTRUCT`
+
+A passing or failing E010 v1.1 result would not answer the stated incremental-novelty question.
+
+Required repair:
+
+1. **Do not execute E010 v1.1 for a scientific result.**
+2. Preserve v1.0 and v1.1 as pre-result design-failure lineage.
+3. Before any replacement benchmark, define the residual in observable/state-transition terms that a prior-art baseline can receive as well.
+4. Prefer a smaller contrast that can falsify one residual mechanism rather than adding a larger architecture.
+5. Require a lineage-separated reviewer to confirm that the replacement construct is not merely re-encoding inspector independence, contestability, compliance cost, auditability, or ordinary dynamic-regulation concepts.
+
+This failure is scientifically useful because it prevents a structurally valid benchmark from being misreported as a test of a construct it never instantiated.
+
+---
+
 ## Mandatory regression questions
 
 Before any material repository mutation:

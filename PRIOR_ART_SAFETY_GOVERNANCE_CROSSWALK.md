@@ -326,3 +326,146 @@ The remaining Project-specific object is only the joint operationalization:
 plus permission-by-permission pairing under explicit distrust while preserving real capability and responsibility differences. It remains a checklist hypothesis until the F004 blinded holdout shows incremental value and acceptable inter-rater reliability beyond those baselines.
 
 See `CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md#6-power-reversal-exact-antecedent-correction--power-reversal-정확-선행경계`.
+
+
+---
+
+## 2026-10-07 update — safety-inspection reversal / 안전검사 역할반전
+
+### Prior-art correction
+
+The broad proposition "safety inspection must also inspect the inspector and inspection process" is not retained as Project novelty.
+
+Direct/adjacent prior art now includes:
+
+- **ISO/IEC 17020:2026** — competence, impartiality, and consistent operation of inspection bodies; lifecycle inspection; risk-based thinking and information control.
+- **IAEA Fukushima lessons** — effective safety oversight requires regulatory independence, legal authority, technical competence, resources, and lifetime inspection/reassessment.
+- **U.S. DOT OIG 737 MAX review** — established certification can still fail when delegation, information gaps, and insufficient independence weaken oversight.
+- **NRC Safety-Conscious Work Environment** — safety depends on protected problem reporting and avoidance of retaliation/chilling effects.
+- **FAA/NASA ASRS** — confidential, voluntary, non-punitive incident reporting as an anomaly-detection mechanism.
+- **NIST AI RMF** — independent/non-development assessors, deployment-relevant evaluation, production monitoring, documentation and affected-party input.
+- **EU AI Act Article 72** — post-market monitoring for high-risk AI systems.
+- **Algorithmic contestability** — a decision may itself be wrong and must be challengeable using evidence that can support reversal.
+- **Regulatory-audit/self-audit literature** — regulatory and firm auditing interact strategically; audit presence alone does not imply optimal detection or incentives.
+
+### Novelty boundary
+
+**NOVELTY_REJECTED as broad claims:**
+- inspection of inspectors;
+- inspector independence/impartiality;
+- protected reporting;
+- appeal/contestability;
+- lifecycle/post-market reassessment;
+- evidence-access requirements.
+
+**HOLD as narrow Project-specific composition:**
+
+1. jointly measure inspector authority gain and affected-party audit/contest/exit/rollback/recovery change;
+2. maintain separate benefit and proof/correction/recovery-cost ledgers across repeated inspections;
+3. test whether safety procedures themselves create cumulative dependency or practical-exit loss;
+4. require role-reversal paired cases while preserving actual capability, responsibility, urgency and harm differences.
+
+Candidate inequality:
+
+`INSPECTOR_AUTHORITY_GAIN <= AFFECTED_PARTY_AUDIT_CONTEST_EXIT_RECOVERY_GAIN + JUSTIFIED_NECESSITY`
+
+This is not a demonstrated law. Its incremental value over established impartial-inspection + contestable-lifecycle baselines is untested.
+
+### New falsification target
+
+[E010 — Safety Inspection Power-Reversal Meta-Audit](experiments/e010/README.md) preregisters a comparison between:
+
+- OBJECT_ONLY
+- IMPARTIAL_INSPECTOR
+- CONTESTABLE_LIFECYCLE
+- POWER_REVERSAL_META
+
+The Project residual survives only if the fourth baseline adds measurable error/burden reduction over the third without increasing severe irreversible harm or emergency-response paralysis.
+
+### Added sources
+
+- ISO/IEC 17020:2026: https://www.iso.org/standard/17020
+- IAEA Fukushima lessons: https://gnssn.iaea.org/FukushimaLessonsLearned/
+- U.S. DOT OIG 737 MAX audit: https://www.oig.dot.gov/library-item/38302
+- NRC SCWE: https://www.nrc.gov/facilities-safety/safety-culture/safety-conscious-work-environment
+- FAA ASRS: https://asip.faa.gov/explore/asrs/info/about
+- NIST AI RMF Core: https://airc.nist.gov/airmf-resources/airmf/5-sec-core/
+- EU AI Act: https://eur-lex.europa.eu/eli/reg/2024/1689
+- Freiesleben, Meding & König (2026): https://arxiv.org/abs/2605.16041
+- Dai (2026), regulatory auditing and self-auditing: https://doi.org/10.1007/s11149-026-09514-2
+
+
+### 2026-10-07 second correction — inspection/compliance burden is also prior art
+
+The E010 residual is narrowed again.
+
+The broad proposition that inspections and compliance processes can impose material proof, reporting, preparation, coordination, or administrative burden is **not Project novelty**.
+
+Additional direct/adjacent baselines:
+
+- **OECD Regulatory Enforcement and Inspections Toolkit (2018)** explicitly evaluates inspection systems in terms of efficiency, benefits/costs, consistency, fairness, stakeholder satisfaction, and overall effectiveness.
+- **OECD Regulatory Compliance Cost Assessment Guidance (2014)** treats compliance cost measurement and reduction as a standard regulatory-design problem.
+- **OECD Regulatory Compliance Costs and Productivity (2026)** estimates labour resources devoted to regulation-related tasks and documents material compliance costs.
+- **OECD Smart Regulations, Strong Business (2026)** identifies inspections and compliance checks themselves as burden sources when they are unpredictable, duplicative, fragmented, or repeatedly require preparation and information responses.
+- **Hutchinson (2026), Safety and Health at Work, DOI 10.1016/j.shaw.2026.08.001** finds that 448 corrective actions from 65 safety-audit reports were concentrated in administrative controls and lower organizational levels, with few actions verifying field-control effectiveness. This is direct evidence against treating more audit paperwork as equivalent to more safety.
+- Safety-clutter / over-proceduralization literature likewise shows that auditability and accountability pressures can generate documentation and internal bureaucracy that do not necessarily improve operational safety.
+
+**Novelty consequence:**
+
+The following are now also **NOVELTY_REJECTED as broad claims**:
+
+- inspection imposes administrative/proof burden;
+- reporting/documentation can dominate substantive risk reduction;
+- auditability can distort effort toward visible compliance;
+- duplicated/unpredictable inspections can impose avoidable cost.
+
+The remaining E010 candidate is narrower still:
+
+> whether a single operational meta-audit that jointly tracks (a) authority accumulation, (b) counterparty audit/contest/exit/rollback/recovery capacity, (c) repeated benefit versus proof/correction/recovery burden, and (d) role-reversal consistency adds held-out decision value beyond established impartiality, contestability, lifecycle monitoring, and compliance-cost baselines.
+
+That composition remains **HOLD / incremental value untested**.
+
+Added sources:
+
+- OECD (2018), Regulatory Enforcement and Inspections Toolkit: https://doi.org/10.1787/9789264303959-en
+- OECD (2014), Regulatory Compliance Cost Assessment Guidance: https://doi.org/10.1787/9789264209657-en
+- Andrews, Turban & Tyros (2026), Regulatory compliance costs and productivity: https://doi.org/10.1787/1c1da52e-en
+- OECD (2026), Smart Regulations, Strong Business: https://www.oecd.org/en/publications/smart-regulations-strong-business_93d38770-en/
+- Hutchinson (2026), How Safety Audits are Superficially Trapped: https://doi.org/10.1016/j.shaw.2026.08.001
+
+
+### 2026-10-07 third correction — audit-society dynamics further narrow the residual
+
+Additional prior art collapses more of the E010 framing:
+
+- **Michael Power, The Audit Society (1997/1999)** analyzes how audit expands governance/control, passes costs down to regulatees, and can reshape auditees toward "auditable performance" rather than underlying professional or operational value.
+- **Power (2021), Modelling the Micro-Foundations of the Audit Society** provides a dynamic process model in which audit-trail routines reproduce and amplify auditability over time. This is directly relevant to repeated-monitoring / audit-expansion dynamics.
+- **Power (2026), Auditability in the Digital Age** warns that algorithmic/platformized auditing can undermine the independence of the evidentiary basis of audit.
+- **Safety clutter literature (2026)** distinguishes safety effort from waste within safety effort and treats duplicative, impractical, weakly risk-connected process as diagnosable clutter.
+- **Responsive regulation** already treats inspection/enforcement authority as adaptive, risk-calibrated, escalation-capable, and potentially highly discretionary rather than a single fixed inspection act.
+
+Novelty consequence:
+
+The following broad propositions are also **not Project-original**:
+
+- auditing can reshape the behavior/environment of the audited;
+- audit/monitoring systems can reproduce and amplify themselves dynamically;
+- regulatory/audit authority interacts with compliance incentives and discretion over time;
+- audit evidence can become non-independent under platformized or tightly coupled systems;
+- safety procedures can create process clutter that competes with substantive risk control.
+
+This creates a construct-validity problem for E010 v1.1. Its stated residual is dynamic authority/capacity/burden co-scaling, but its executable matrix is static and does not instantiate the relevant state transitions. The remaining executable D-vs-C2 distinction substantially overlaps established independence/contestability baselines.
+
+Decision:
+
+**BLOCK E010 v1.1 RESULT EXECUTION / PRESERVE AS PRE-RESULT DESIGN FAILURE.**
+
+A future replacement should test only one residual mechanism with explicit time-indexed state variables and a stronger prior-art baseline. It should not infer novelty from combining concepts already present in audit-society, responsive-regulation, compliance-cost, contestability, or safety-clutter literature.
+
+Added sources:
+
+- Power, M. (1997/1999), *The Audit Society: Rituals of Verification*, DOI 10.1093/acprof:oso/9780198296034.001.0001
+- Power, M. (2021), *Modelling the Micro-Foundations of the Audit Society*, DOI 10.5465/amr.2017.0212
+- Power, M. (2026), *Auditability in the Digital Age*, DOI 10.1111/ijau.70038
+- Safety clutter (2026), *Journal of Safety Research*, DOI 10.1016/j.jsr.2026.06.005
+- Ayres & Braithwaite responsive-regulation tradition; see Cambridge Legal Studies review of enforcement-pyramid discretion.
