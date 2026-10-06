@@ -4,8 +4,8 @@
   "public_repository": "gmodrasa7-rgb/project-intersection-public",
   "canonical_boundary": "Public continuation pointer only; source artifacts and commit history outrank this state file.",
   "recovery_entrypoint": "AUTONOMOUS_RESEARCH_LOOP.md",
-  "current_public_head": "cadfdcd0de56485135eef21ce8b8ef2feb4e4f12",
-  "updated_at": "2026-10-06T02:31:00Z",
+  "current_public_head": "bb8dfb68f44c6cc6273eeaf8ec34c4335dd4c099",
+  "updated_at": "2026-10-06T03:12:00Z",
   "execution_policy": {
     "atomic_material_delta_per_run": 1,
     "require_prior_art_gate": true,
@@ -191,18 +191,33 @@
     },
     {
       "id": "F004_SAFETY_GOVERNANCE_INCREMENTAL_VALUE",
-      "status": "HOLD_PRIOR_ART_ABSORBS_BROAD_CLAIMS_INCREMENTAL_VALUE_UNTESTED",
+      "status": "NEGATIVE_SYNTHETIC_INCREMENTAL_VALUE_PROJECT_V3_REDUCED_EXTERNAL_HOLDOUT_REQUIRED",
       "question": "Do Project Intersection's symmetric power-reversal variables add reliable held-out discrimination or prediction beyond established safety science, organizational voice/oversight, automation, and AI-safety baselines?",
-      "evidence_boundary": "Ashby, Hirschman, Stigler/capture, Bainbridge, Perrow, Leveson, Vaughan, Edmondson, Morrison/Milliken, Reason, Westrum, HRO, Elish, and AI-safety work already explain most broad mechanisms. Historical similarity to Challenger, Therac-25, Columbia, Fukushima, Boeing 737 MAX, or the 2026 OpenAI Hugging Face incident is not Project validation.",
+      "evidence_boundary": "E009 v1.1 provides a frozen-spec negative synthetic project rerun: the full Project-v3 H/M/X architecture failed 3/4 preregistered survival criteria and was worse on mean regret than TWO_RULE_SIMPLE and MINIMAL_4VAR. This reduces support for added Project-v3 complexity but does not establish real-world causality or external validity.",
       "candidate_remainder": [
-        "symmetric power-reversal operational gate with real capability/harm asymmetries preserved",
-        "AUTONOMY_GAIN <= COUNTERPARTY_AUDIT_EXIT_RECOVERY_GAIN as an unvalidated governance invariant",
-        "repeated benefit/authority gain versus correction/monitoring/recovery/exit burden divergence"
+        "TWO_RULE_SIMPLE as a strong low-complexity synthetic baseline",
+        "MINIMAL_4VAR using ENF, ID, OV, CUM plus common harm/reversibility inputs",
+        "additional RF/SEL/INT/VOI variables only if they show held-out incremental value",
+        "symmetric power-reversal operationalization only where it improves blinded/external discrimination beyond established baselines"
       ],
-      "next_cheapest_discriminating_check": "Preregister a blinded historical holdout comparison. Freeze established prior-art baseline features first, then test whether the Project-specific variables add reliable out-of-sample value. KILL scientific novelty if incremental value or inter-rater reliability fails.",
-      "strongest_counterexample": "A broad cross-domain synthesis may feel novel while adding zero predictive information once known variables such as complexity, coupling, voice safety, evaluator independence, information flow, redundancy, and automation responsibility are included.",
+      "next_cheapest_discriminating_check": "Do not add another internal synthetic architecture first. Build a blinded or lineage-separated holdout comparison using TWO_RULE_SIMPLE and MINIMAL_4VAR as active baselines; add one extra variable at a time only if it improves held-out discrimination/recovery without degrading reliability.",
+      "strongest_counterexample": "The E009 negative result shows that a more comprehensive Project-specific architecture can add complexity and competitive-loss benefits while still worsening overall regret, recovery, and severe-harm frequency relative to simpler rules.",
       "source_artifact": "PRIOR_ART_SAFETY_GOVERNANCE_CROSSWALK.md",
-      "power_reversal": "Neither controller nor controlled actor receives a self-validating exemption. Evidence preservation, appeal/contestability, proportional restriction, and rollback are applied symmetrically while preserving actual differences in capability, responsibility, legal authority, and harm."
+      "power_reversal": "Neither controller nor controlled actor receives a self-validating exemption. Evidence preservation, appeal/contestability, proportional restriction, and rollback are applied symmetrically while preserving actual differences in capability, responsibility, legal authority, and harm.",
+      "last_synthetic_incremental_test": {
+        "experiment": "E009 v1.1",
+        "executable_spec_commit": "c36ba8e6d6df1eedcd54ca6c36091bf822fe6ace",
+        "result_merge_commit": "bb8dfb68f44c6cc6273eeaf8ec34c4335dd4c099",
+        "result_class": "PROJECT_RERUN_SYNTHETIC_RESULT",
+        "project_v3_survives": false,
+        "stress_mean_regret": {
+          "TWO_RULE_SIMPLE": 0.0632405119123326,
+          "MINIMAL_4VAR": 0.06532309657779033,
+          "PROJECT_V3": 0.0900216876587376
+        },
+        "project_v3_vs_best_simple_regret_improvement": -0.42348132449545167,
+        "independent_validation": false
+      }
     },
     {
       "id": "F005_CORE_PRIOR_ART_ATTRIBUTION_COVERAGE",
@@ -266,12 +281,12 @@
     }
   ],
   "recent_material_delta": {
-    "type": "claude_gemini_adversarial_synthesis_e009_enforcement_identity_oversight_selection",
-    "summary": "User-supplied Claude and Gemini adversarial critiques were treated as idea-generation inputs, checked against prior art, corrected where technically overclaimed, and distilled into an H/M/X architecture plus ENF, ID, OV, CUM, RF, SEL, INT, and VOI stress variables. E009 preregisters 16 adversarial scenario families and four baselines. No E009 result exists.",
-    "basis_head": "cadfdcd0de56485135eef21ce8b8ef2feb4e4f12",
-    "source_artifact": "MULTI_MODEL_ADVERSARIAL_AUDIT_2026-10-06.md + CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md#13 + LONG_HORIZON_MIN_INTERVENTION_E2E.md#12 + experiments/e009/",
+    "type": "e009_negative_synthetic_result_project_v3_reduced_simplification_priority",
+    "summary": "E009 executable protocol v1.1 was frozen at c36ba8e6d6df1eedcd54ca6c36091bf822fe6ace before execution. The frozen benchmark was then executed and reproduced by CI. Project-v3 failed 3 of 4 preregistered survival criteria. Stress mean regret: TWO_RULE_SIMPLE 0.063241, MINIMAL_4VAR 0.065323, PROJECT_V3 0.090022. Project-v3 was about 42.35% worse than the best simple comparator on the preregistered regret comparison. The incremental full Project-v3 residual is reduced/rejected for this synthetic benchmark; broad Project Intersection claims remain unresolved.",
+    "basis_head": "bb8dfb68f44c6cc6273eeaf8ec34c4335dd4c099",
+    "source_artifact": "experiments/e009/EXECUTABLE_PROTOCOL_v1_1.md + experiments/e009/RESULT.md + experiments/e009/RESULT.json + experiments/e009/EXECUTION_RECEIPT.json",
     "state_commit": "RESOLVE_FROM_GIT_HISTORY_AFTER_WRITE",
-    "scientific_support": "Cross-model agreement is not independent evidence. Broad novelty is rejected for commitment problems, false-name/Sybil manipulation, scalable oversight/AI control, veto-player rigidity, specification gaming, zero trust/least privilege, Markov-blanket formalism, causal-entropic forces, and computability/formal-verification limits. Project residual remains unvalidated."
+    "scientific_support": "PROJECT_RERUN / SYNTHETIC_RESULT only. Not independent implementation, external replication, or empirical validation. Negative result must be preserved without in-place threshold tuning."
   },
   "human_only_gates": [
     "contracts_terms_ip_license_rights_changes",
@@ -282,19 +297,17 @@
     "destructive_source_deletion"
   ],
   "last_read_back": {
-    "status": "VERIFIED_POST_MERGE_PRE_STATE_WRITE",
-    "verified_commit": "cadfdcd0de56485135eef21ce8b8ef2feb4e4f12",
-    "verified_blobs": {
-      "MULTI_MODEL_ADVERSARIAL_AUDIT_2026-10-06.md": "RESOLVE_FROM_GIT_TREE",
-      "CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md": "RESOLVE_FROM_GIT_TREE",
-      "LONG_HORIZON_MIN_INTERVENTION_E2E.md": "RESOLVE_FROM_GIT_TREE",
-      "experiments/e009/README.md": "RESOLVE_FROM_GIT_TREE",
-      "experiments/e009/scenario_matrix.json": "RESOLVE_FROM_GIT_TREE",
-      "knowledge/graph.json": "RESOLVE_FROM_GIT_TREE"
+    "status": "VERIFIED_POST_MERGE",
+    "verified_commit": "bb8dfb68f44c6cc6273eeaf8ec34c4335dd4c099",
+    "audits": {
+      "e009_result_reproduction": "SUCCESS",
+      "public_repository_governance": "SUCCESS",
+      "knowledge_graph": "SUCCESS",
+      "github_local_handoff": "SUCCESS"
     },
-    "note": "PR #16 merged after E009, knowledge-graph, public-governance and GitHub-local handoff audits all passed. Post-merge audits also passed. E009 remains specification-only."
+    "note": "Negative E009 result reproduced after merge. Project-v3 incremental residual remains reduced/rejected for this synthetic benchmark; no generation or independent-evidence promotion."
   },
-  "next_checkpoint": "F005: audit Power Release Compatibility against credible commitment, commitment problems, power-sharing, peaceful transfer, delegation, and practical exit. F004 incremental-value holdout, F003 historical identification, and F001 external lineage remain separate frontiers.",
+  "next_checkpoint": "F004: freeze simplification after the negative E009 result. Use TWO_RULE_SIMPLE and MINIMAL_4VAR as active baselines in a blinded or lineage-separated holdout; do not retune Project-v3 in place. F001 external lineage remains the highest evidence upgrade. F003 and F005 remain separate frontiers.",
   "current_public_head_semantics": "Head observed immediately before this state-file write. The commit containing this file must be resolved from Git history because a Git-tracked file cannot self-embed its own containing commit hash without changing that hash.",
   "resolved_process_findings": [
     {
