@@ -1,4 +1,4 @@
-name: E009 adversarial stress preregistration audit
+name: E009 preregistration and result reproduction audit
 
 on:
   pull_request:
@@ -21,4 +21,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: python experiments/e009/validate.py
-      - run: python experiments/e009/benchmark.py --validate-only
+      - name: Validate or reproduce E009
+        run: |
+          if [ -f experiments/e009/RESULT.json ]; then
+            python experiments/e009/verify_result.py
+          else
+            python experiments/e009/benchmark.py --validate-only
+          fi
