@@ -21,3 +21,4 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: python experiments/e009/validate.py
+      - run: python experiments/e009/benchmark.py --validate-only
