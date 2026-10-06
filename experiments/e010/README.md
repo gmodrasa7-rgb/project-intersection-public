@@ -1,8 +1,28 @@
 # E010 — Safety Inspection Power-Reversal Meta-Audit
 ## 안전검사 역할반전 메타감사
 
-Status: **PREREGISTERED DESIGN / NO RESULT / NOT PROJECT VALIDATION**
+Status: **PRE-RESULT DESIGN BLOCKED / CONSTRUCT MISMATCH FOUND / NO RESULT / NOT PROJECT VALIDATION**
 Date: 2026-10-07
+
+## 2026-10-07 construct-validity block
+
+입장반전 감사에서 E010 v1.1의 실행구조가 이 문서가 남겨둔 Project-specific residual을 실제로 구현하지 못한다는 문제가 확인되었다.
+
+핵심 불일치:
+
+- 주장한 잔여: 검사/결정 권한의 시간축 누적, 상대의 audit/contest/exit/rollback/recovery capacity 변화, 반복 benefit/burden 축적, practical-exit 변화.
+- 현재 matrix/benchmark: 단발성 정적 시나리오. authority accumulation state와 counterparty audit/contest/rollback/recovery capacity의 상태전이가 없음.
+- v1.1에서 C2를 추가한 뒤 남은 D-C2 실행차이는 주로 "검사자 의존성/증거비대칭이 높으면 self-validating restriction 대신 review"인데, 이는 검사자 독립성·contestability·appeal·evidence-access 선행영역과 직접 겹친다.
+
+따라서:
+
+`CLAIMED_RESIDUAL != EXECUTABLE_CONSTRUCT`
+
+E010 v1.1은 **과학결과를 생성하도록 실행하지 않는다.**
+통과/실패 어느 쪽이든 현재 주장한 residual의 incremental value를 판정할 수 없기 때문이다.
+
+v1.0/v1.1은 삭제하지 않고 사전결과 설계실패 계보로 보존한다.
+다음 단계는 더 큰 아키텍처를 추가하는 것이 아니라, 남은 residual 중 하나만 관측가능한 상태전이로 최소 구현하고 선행 baseline에도 동일 관측정보를 주는 것이다.
 
 ## 질문
 
