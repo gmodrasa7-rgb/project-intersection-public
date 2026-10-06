@@ -4,8 +4,8 @@
   "public_repository": "gmodrasa7-rgb/project-intersection-public",
   "canonical_boundary": "Public continuation pointer only; source artifacts and commit history outrank this state file.",
   "recovery_entrypoint": "AUTONOMOUS_RESEARCH_LOOP.md",
-  "current_public_head": "97c3ccf07a2834220acf155f709d66efedefe201",
-  "updated_at": "2026-10-04T23:58:00Z",
+  "current_public_head": "a55927e049fc7845f9cb4d5139fe0fbe962a79a4",
+  "updated_at": "2026-10-06T00:18:49Z",
   "execution_policy": {
     "atomic_material_delta_per_run": 1,
     "require_prior_art_gate": true,
@@ -266,12 +266,12 @@
     }
   ],
   "recent_material_delta": {
-    "type": "f005_universal_advancement_capability_prior_art_narrowing",
-    "summary": "Universal Advancement Access broad novelty was rejected against capability and equality-of-opportunity prior art. The label is retained only as a means/conversion/opportunity/refusal/controller/standing governance decomposition; artificial-agent scope remains unresolved.",
-    "basis_head": "d92a7fff7a1ad902734361d293389f1c863f642f",
-    "source_artifact": "CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md#9",
+    "type": "public_review_interface_completion_and_schema_audit_repair",
+    "summary": "Added a bounded public reviewer path, explicit failure-regression lineage, and founder/AI/prior-art attribution boundary; repaired the public governance audit's stale schema 1.0 expectation to match the deliberate autonomous-state schema 1.1.",
+    "basis_head": "a55927e049fc7845f9cb4d5139fe0fbe962a79a4",
+    "source_artifact": "PUBLIC_REVIEW_PACKET.md + FAILURE_REGRESSION_INDEX.md + ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md + .github/workflows/public-repository-audit.yml",
     "state_commit": "RESOLVE_FROM_GIT_HISTORY_AFTER_WRITE",
-    "scientific_support": "Sen 1979; capability-approach literature; UN CRPD Article 24; OECD 2025 opportunity measurement"
+    "scientific_support": "None claimed; this delta repairs the public review/control interface and does not promote a scientific hypothesis."
   },
   "human_only_gates": [
     "contracts_terms_ip_license_rights_changes",
@@ -282,12 +282,17 @@
     "destructive_source_deletion"
   ],
   "last_read_back": {
-    "status": "VERIFIED_MATERIAL_TARGET_PRE_STATE_WRITE",
-    "verified_commit": "97c3ccf07a2834220acf155f709d66efedefe201",
+    "status": "VERIFIED_PRE_STATE_WRITE",
+    "verified_commit": "a55927e049fc7845f9cb4d5139fe0fbe962a79a4",
     "verified_blobs": {
-      "CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md": "67409d1401386aa46288d2168b08a4a57e6bde64"
+      "PUBLIC_REVIEW_PACKET.md": "4a9a727c9f8a3cf2651751c11e926a4987c48d1d",
+      "FAILURE_REGRESSION_INDEX.md": "f6426474de70f8bf217c7dc9e261f3eb31f51c6c",
+      "ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md": "34a04412fab2c431c9b32d8ba4aa9213db1f1faf",
+      "README.md": "dff77595b223e23dfdc4cd123d5af1f7ab977dcf",
+      "PUBLIC_EVIDENCE_INDEX.md": "3e29519d0fd8ce2dc564a2848364380d07561106",
+      ".github/workflows/public-repository-audit.yml": "3d9f5fd4ae3968853bd1723fad3cfc4d4b284de1"
     },
-    "note": "The crosswalk preserves direct prior art, predicate decomposition, equal-means/forced-functioning/provider-capture/scope counterexamples, KILL/MODIFY/HOLD decision, nonclaim, and held-out falsification route. State-write completion requires post-write read-back."
+    "note": "Public interface files were read back before the state write. Scientific frontier is unchanged; this changes reviewability and repairs CI schema drift."
   },
   "next_checkpoint": "F005: audit Power Release Compatibility against credible commitment, commitment problems, power-sharing, peaceful transfer, delegation, and practical exit. F004 incremental-value holdout, F003 historical identification, and F001 external lineage remain separate frontiers.",
   "current_public_head_semantics": "Head observed immediately before this state-file write. The commit containing this file must be resolved from Git history because a Git-tracked file cannot self-embed its own containing commit hash without changing that hash.",
