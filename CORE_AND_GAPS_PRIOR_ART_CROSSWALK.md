@@ -434,3 +434,86 @@ The Project residual should be **rejected or reduced to methodology-only** if E 
 
 See [LONG_HORIZON_MIN_INTERVENTION_E2E.md](LONG_HORIZON_MIN_INTERVENTION_E2E.md) and [experiments/e008/README.md](experiments/e008/README.md).
 
+
+
+## 11. Mutual acceptability under full role reversal / 전면 역할반전 상호수용 가능 영역
+
+### Prior-art decision
+
+**UNIVERSAL-SATISFACTION CLAIM REJECTED / MUTUAL-ACCEPTABILITY COMPOSITION UNTESTED**
+
+A guarantee that every possible preference can be simultaneously satisfied is not available in unrestricted collective-choice settings.
+
+#### A. Social-choice impossibility
+
+- Arrow's impossibility theorem: with more than two alternatives, unrestricted domain, social ordering, weak Pareto, independence of irrelevant alternatives, and non-dictatorship cannot all be satisfied simultaneously.
+- Gibbard–Satterthwaite: with unrestricted preferences and a sufficiently rich outcome set, non-dictatorial resolute social choice cannot also be fully strategy-proof.
+
+Therefore Project Intersection must not claim a universally manipulation-proof, non-dictatorial aggregation rule satisfying every reasonable property for every possible preference profile.
+
+Representative sources:
+- Stanford Encyclopedia of Philosophy, *Arrow's Theorem* and *Social Choice Theory*.
+- Arrow, *Social Choice and Individual Values*.
+- Gibbard (1973); Satterthwaite (1975).
+
+#### B. Individual rationality / disagreement point
+
+Classical bargaining theory requires attention to the disagreement or status-quo payoff. An agreement that leaves a participant below its disagreement payoff is not individually rational in the ordinary bargaining sense.
+
+Representative sources:
+- Nash (1950), *The Bargaining Problem*.
+- Roth (1977), *Individual Rationality and Nash's Solution to the Bargaining Problem*.
+
+This is prior art for the Project requirement that realistic exit, dependency, retaliation, switching and recovery costs must be included when defining a party's non-agreement baseline.
+
+#### C. Pareto efficiency and symmetry
+
+Nash bargaining and broader welfare economics already use Pareto efficiency and symmetry as evaluation criteria. Project Intersection does not claim novelty for rejecting Pareto-dominated admissible outcomes or for symmetric treatment of role labels.
+
+#### D. Coalitional stability / the core
+
+Cooperative-game theory's core already formalizes outcomes from which no coalition can deviate to an alternative that all of its members strictly prefer.
+
+This is prior art for using coalition deviation as a stability diagnostic. A non-empty core is not guaranteed in all games, so Project Intersection does not require universal coalition stability.
+
+#### E. Ex-ante role uncertainty / original position
+
+Rawls's original-position method is strong prior art for evaluating fundamental rules from an impartial position in which a party does not know its eventual social position. Rawls also argues for maximin only under specific high-stakes/uncertainty conditions rather than as a universal decision rule.
+
+Therefore “would I accept this rule before knowing whether I am strong or weak?” is not Project novelty.
+
+### Project-specific residual candidate
+
+After subtraction, retain only this narrow unvalidated composition:
+
+> Define a dynamic Mutual Acceptability Kernel as the intersection of per-party viability / irreversible-loss constraints, realistic individual-rationality participation constraints, role-reversal consistency, credible-commitment safeguards, and audit / contestability / exit / recovery conditions; remove Pareto-dominated candidates; then stress-test the remainder for manipulation gain, coalition deviation, deep uncertainty, and long-horizon option loss.
+
+If the intersection is empty, the system must report **NO_MUTUALLY_ACCEPTABLE_SET** rather than fabricate consensus.
+
+This is a governance/operationalization candidate, not an established general solution to social choice.
+
+### Strongest counterexamples
+
+- The kernel may be empty.
+- The disagreement point may itself be manipulated by the stronger party.
+- Preferences may be incomparable or strategically misreported.
+- Coalitional stability may fail even when individual participation constraints pass.
+- A harmful actor may rationally reject restrictions that are nevertheless necessary to protect others.
+- Role-reversal symmetry can be false when real causal asymmetries differ.
+- A large number of safeguards can create veto paralysis and destroy useful adaptation.
+- Any fixed bargaining tie-breaker can embed hidden assumptions about utility comparability or bargaining power.
+
+### Cheapest discriminating test
+
+Extend E008 before execution with a preregistered mutual-acceptability amendment measuring:
+
+- realistic disagreement-point satisfaction;
+- Pareto dominance;
+- role-reversal consistency;
+- manipulation gain;
+- coalition-deviation opportunity;
+- credible-commitment integrity;
+- practical exit / recovery;
+- whether the kernel is empty.
+
+The Project residual survives only if these variables detect decision failures not captured by the robust constrained baseline and do so without converting legitimate safety restrictions into automatic violations.
