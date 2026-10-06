@@ -15,6 +15,8 @@ on:
       - "PUBLIC_REVIEW_PACKET.md"
       - "FAILURE_REGRESSION_INDEX.md"
       - "ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md"
+      - "knowledge/**"
+      - "CONTRIBUTING.md"
       - "funding/**"
       - "experiments/e007/PROVENANCE.md"
       - "experiments/e007/LICENSE_STATUS.md"
@@ -33,6 +35,8 @@ on:
       - "PUBLIC_REVIEW_PACKET.md"
       - "FAILURE_REGRESSION_INDEX.md"
       - "ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md"
+      - "knowledge/**"
+      - "CONTRIBUTING.md"
       - "funding/**"
       - "experiments/e007/PROVENANCE.md"
       - "experiments/e007/LICENSE_STATUS.md"
@@ -78,6 +82,7 @@ jobs:
           review_packet = Path("PUBLIC_REVIEW_PACKET.md").read_text(encoding="utf-8")
           failure_index = Path("FAILURE_REGRESSION_INDEX.md").read_text(encoding="utf-8")
           attribution_boundary = Path("ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md").read_text(encoding="utf-8")
+          knowledge_graph = json.loads(Path("knowledge/graph.json").read_text(encoding="utf-8"))
 
           # Landing-page regression: keep first-review cost bounded.
           require(len(readme.splitlines()) <= 200, "README exceeded 200 lines; move detailed material to linked documents.")
@@ -92,6 +97,9 @@ jobs:
               "PUBLIC_REVIEW_PACKET.md",
               "FAILURE_REGRESSION_INDEX.md",
               "ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md",
+              "knowledge/README.md",
+              "knowledge/explorer.html",
+              "CONTRIBUTING.md",
           ]:
               require(link in readme, f"README lost required navigation link: {link}")
 
@@ -127,6 +135,8 @@ jobs:
           require("F-R003" in failure_index and "schema" in failure_index.lower(), "Failure index lost the autonomous-state schema/workflow drift regression.")
           require("human-founded independent research program" in attribution_boundary.lower(), "Attribution boundary lost the human-founded project statement.")
           require("AI assistance must not be relabeled as independent external validation." in attribution_boundary, "Attribution boundary lost AI-assistance versus independent-validation separation.")
+          require(knowledge_graph.get("meta", {}).get("canonical_role") == "navigation_index_not_source_of_truth", "Knowledge graph was promoted above source artifacts.")
+          require(bool(knowledge_graph.get("entities")) and bool(knowledge_graph.get("relations")), "Knowledge graph lost structured entities or relations.")
 
           # Declared bilingual policy and power-reversal gate must remain inspectable.
           require("Original 1 — English Canonical" in policy, "Research status policy lost English canonical section.")
