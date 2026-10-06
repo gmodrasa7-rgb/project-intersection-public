@@ -4,8 +4,8 @@
   "public_repository": "gmodrasa7-rgb/project-intersection-public",
   "canonical_boundary": "Public continuation pointer only; source artifacts and commit history outrank this state file.",
   "recovery_entrypoint": "AUTONOMOUS_RESEARCH_LOOP.md",
-  "current_public_head": "c09bca1c2b2e72152b993946c0c6cfa36cc7e6fa",
-  "updated_at": "2026-10-06T00:41:12Z",
+  "current_public_head": "eb32e56347347eca180d6a2eb1d2801d3d29878d",
+  "updated_at": "2026-10-06T00:59:00Z",
   "execution_policy": {
     "atomic_material_delta_per_run": 1,
     "require_prior_art_gate": true,
@@ -266,12 +266,12 @@
     }
   ],
   "recent_material_delta": {
-    "type": "external_design_source_and_rights_registry",
-    "summary": "Audited and recorded original/official design references for ORKG, Wikidata, OpenAlex, Papers with Code, and MITRE ATT&CK, including verified structural influence, licensing/trademark boundaries, and the explicit decision to reuse only abstract information-architecture ideas in the current knowledge layer.",
-    "basis_head": "c09bca1c2b2e72152b993946c0c6cfa36cc7e6fa",
-    "source_artifact": "knowledge/SOURCE_REGISTRY.md + knowledge/source-registry.json",
+    "type": "dynamic_long_horizon_minimum_sufficient_intervention_candidate",
+    "summary": "Formalized a prior-art-bounded end-to-end candidate in which recurrent short-horizon reward pressure is handled through versioned re-optimization, per-party viability floors, multi-horizon evaluation, minimum sufficient intervention, staged execution, rollback/recovery, and power-reversal review.",
+    "basis_head": "eb32e56347347eca180d6a2eb1d2801d3d29878d",
+    "source_artifact": "LONG_HORIZON_MIN_INTERVENTION_E2E.md + CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md#10 + RESEARCH_OVERVIEW.md + knowledge/graph.json",
     "state_commit": "RESOLVE_FROM_GIT_HISTORY_AFTER_WRITE",
-    "scientific_support": "None added. This is provenance/copyright/source-boundary hardening, not scientific validation."
+    "scientific_support": "No universal law claimed. Receding-horizon control, viability theory, adaptive governance, and corrigibility are prior art; only incremental value of the multi-agent composition remains unresolved."
   },
   "human_only_gates": [
     "contracts_terms_ip_license_rights_changes",
