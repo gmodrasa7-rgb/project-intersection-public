@@ -4,8 +4,8 @@
   "public_repository": "gmodrasa7-rgb/project-intersection-public",
   "canonical_boundary": "Public continuation pointer only; source artifacts and commit history outrank this state file.",
   "recovery_entrypoint": "AUTONOMOUS_RESEARCH_LOOP.md",
-  "current_public_head": "d837d694c527f8a898845a012e61a3184cc2637f",
-  "updated_at": "2026-10-06T00:20:19Z",
+  "current_public_head": "b18184cd8fe60f6a158bb57207553ecad7e3557c",
+  "updated_at": "2026-10-06T00:35:21Z",
   "execution_policy": {
     "atomic_material_delta_per_run": 1,
     "require_prior_art_gate": true,
@@ -266,12 +266,12 @@
     }
   ],
   "recent_material_delta": {
-    "type": "public_review_interface_completion_and_schema_audit_repair",
-    "summary": "Added a bounded public reviewer path, explicit failure-regression lineage, and founder/AI/prior-art attribution boundary; repaired the public governance audit's stale schema 1.0 expectation to match the deliberate autonomous-state schema 1.1.",
-    "basis_head": "d837d694c527f8a898845a012e61a3184cc2637f",
-    "source_artifact": "PUBLIC_REVIEW_PACKET.md + FAILURE_REGRESSION_INDEX.md + ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md + .github/workflows/public-repository-audit.yml",
+    "type": "structured_public_knowledge_graph_and_external_verification_interface",
+    "summary": "Added a typed public knowledge graph and dependency-free explorer over existing source artifacts, with qualified relations, source/rights metadata, CI integrity checks, and an external reproduction/critique contribution path. The graph is explicitly non-canonical and cannot promote evidence by relation label alone.",
+    "basis_head": "b18184cd8fe60f6a158bb57207553ecad7e3557c",
+    "source_artifact": "knowledge/README.md + knowledge/schema-v1.json + knowledge/graph.json + knowledge/explorer.html + CONTRIBUTING.md + .github/workflows/knowledge-graph-audit.yml",
     "state_commit": "RESOLVE_FROM_GIT_HISTORY_AFTER_WRITE",
-    "scientific_support": "None claimed; this delta repairs the public review/control interface and does not promote a scientific hypothesis."
+    "scientific_support": "None added. This delta lowers navigation/review cost and improves provenance discipline; it does not upgrade any scientific evidence class."
   },
   "human_only_gates": [
     "contracts_terms_ip_license_rights_changes",
@@ -283,16 +283,18 @@
   ],
   "last_read_back": {
     "status": "VERIFIED_POST_MERGE_PRE_STATE_WRITE",
-    "verified_commit": "d837d694c527f8a898845a012e61a3184cc2637f",
+    "verified_commit": "b18184cd8fe60f6a158bb57207553ecad7e3557c",
     "verified_blobs": {
-      "PUBLIC_REVIEW_PACKET.md": "4a9a727c9f8a3cf2651751c11e926a4987c48d1d",
-      "FAILURE_REGRESSION_INDEX.md": "f6426474de70f8bf217c7dc9e261f3eb31f51c6c",
-      "ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md": "34a04412fab2c431c9b32d8ba4aa9213db1f1faf",
-      "README.md": "dff77595b223e23dfdc4cd123d5af1f7ab977dcf",
-      "PUBLIC_EVIDENCE_INDEX.md": "3e29519d0fd8ce2dc564a2848364380d07561106",
-      ".github/workflows/public-repository-audit.yml": "3d9f5fd4ae3968853bd1723fad3cfc4d4b284de1"
+      "knowledge/README.md": "RESOLVE_FROM_GIT_TREE",
+      "knowledge/schema-v1.json": "RESOLVE_FROM_GIT_TREE",
+      "knowledge/graph.json": "RESOLVE_FROM_GIT_TREE",
+      "knowledge/explorer.html": "RESOLVE_FROM_GIT_TREE",
+      "knowledge/validate.py": "RESOLVE_FROM_GIT_TREE",
+      ".github/workflows/knowledge-graph-audit.yml": "RESOLVE_FROM_GIT_TREE",
+      "CONTRIBUTING.md": "RESOLVE_FROM_GIT_TREE",
+      ".github/ISSUE_TEMPLATE/independent-replication.md": "RESOLVE_FROM_GIT_TREE"
     },
-    "note": "Merged public interface files were read back on main after squash merge. Scientific frontier is unchanged; this state write repairs the main-lineage pre-write head pointer."
+    "note": "Knowledge graph and external-review interfaces were merged after both the knowledge-graph audit and existing public-governance audit passed on the PR head. This state write records the merged main basis head; scientific frontier remains unchanged."
   },
   "next_checkpoint": "F005: audit Power Release Compatibility against credible commitment, commitment problems, power-sharing, peaceful transfer, delegation, and practical exit. F004 incremental-value holdout, F003 historical identification, and F001 external lineage remain separate frontiers.",
   "current_public_head_semantics": "Head observed immediately before this state-file write. The commit containing this file must be resolved from Git history because a Git-tracked file cannot self-embed its own containing commit hash without changing that hash.",
