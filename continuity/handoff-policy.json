@@ -1,0 +1,78 @@
+{
+  "schema_version": "1.0",
+  "status": "ACTIVE_OPERATIONAL_PROTOCOL",
+  "role": "transaction_provenance_not_third_canonical",
+  "local_root": "/IVS0R_LOCAL",
+  "local_paths": {
+    "staging": "/IVS0R_LOCAL/staging",
+    "receipts": "/IVS0R_LOCAL/receipts",
+    "quarantine": "/IVS0R_LOCAL/quarantine"
+  },
+  "directions": [
+    "LOCAL_TO_GITHUB",
+    "GITHUB_TO_LOCAL",
+    "BIDIRECTIONAL_RECONCILIATION"
+  ],
+  "states": [
+    "DRAFT_LOCAL",
+    "STAGED",
+    "VALIDATED",
+    "PUBLIC_READY",
+    "PUSHED",
+    "READ_BACK_VERIFIED",
+    "COMMITTED_TO_LOCAL_STATE",
+    "REJECTED",
+    "QUARANTINED",
+    "ROLLBACK_REQUIRED"
+  ],
+  "success_invariants": {
+    "local_to_github": [
+      "SOURCE_HASH_KNOWN",
+      "VALIDATION_PASS",
+      "PUBLIC_WRITE_CONFIRMED",
+      "PUBLIC_READ_BACK_MATCH",
+      "LOCAL_RECEIPT_PERSISTED"
+    ],
+    "github_to_local": [
+      "PUBLIC_SOURCE_ID_KNOWN",
+      "PUBLIC_READ_BACK",
+      "LOCAL_STAGE_WRITE",
+      "LOCAL_VALIDATION_PASS",
+      "LOCAL_CANONICAL_UPDATE",
+      "LOCAL_READ_BACK_MATCH"
+    ]
+  },
+  "guards": {
+    "public_push_is_success": false,
+    "github_change_is_local_truth": false,
+    "local_access_is_publication_authority": false,
+    "source_authority_over_distillation": true,
+    "unresolved_is_zero": false,
+    "previous_canonical_unchanged_on_failure": true,
+    "staging_is_canonical": false,
+    "receipts_are_scientific_validation": false,
+    "sensitive_default": "DO_NOT_PUBLISH_UNLESS_EXPLICITLY_CLEARED"
+  },
+  "required_receipt_fields": [
+    "change_id",
+    "direction",
+    "source_identity",
+    "source_hash",
+    "target_identity",
+    "sensitivity",
+    "publishability",
+    "evidence_class",
+    "validation",
+    "read_back_hash",
+    "rollback_target",
+    "status",
+    "supersedes"
+  ],
+  "role_reversal_checks": [
+    "counterparty_independent_readback",
+    "failure_lineage_preserved",
+    "reconstruction_burden_not_shifted",
+    "writer_not_silent_sole_promoter",
+    "conflict_quarantined_not_overwritten"
+  ]
+}

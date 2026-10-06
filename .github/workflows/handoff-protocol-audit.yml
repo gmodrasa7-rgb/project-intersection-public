@@ -1,0 +1,27 @@
+name: GitHub Local handoff protocol audit
+
+on:
+  pull_request:
+    paths:
+      - "continuity/**"
+      - ".github/workflows/handoff-protocol-audit.yml"
+      - "DOMAIN_MANIFEST.json"
+      - "README.md"
+  push:
+    branches: [main]
+    paths:
+      - "continuity/**"
+      - ".github/workflows/handoff-protocol-audit.yml"
+      - "DOMAIN_MANIFEST.json"
+      - "README.md"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate-handoff-protocol:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python continuity/validate_handoff.py

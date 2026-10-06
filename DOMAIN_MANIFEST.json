@@ -61,5 +61,25 @@
     "source_and_rights_metadata_required": true,
     "evidence_promotion_from_relation_label_only": false,
     "external_content_copying_forbidden": true
+  },
+  "github_local_handoff": {
+    "status": "ACTIVE_PUBLIC_PROTOCOL",
+    "root": "continuity/",
+    "protocol": "continuity/GITHUB_LOCAL_HANDOFF_PROTOCOL.md",
+    "policy": "continuity/handoff-policy.json",
+    "receipt_schema": "continuity/handoff-receipt-schema-v1.json",
+    "canonical": false,
+    "role": "transaction_provenance_not_third_canonical",
+    "local_root": "/IVS0R_LOCAL",
+    "local_staging": "/IVS0R_LOCAL/staging",
+    "local_receipts": "/IVS0R_LOCAL/receipts",
+    "local_quarantine": "/IVS0R_LOCAL/quarantine",
+    "invariants": [
+      "PUBLIC_PUSH != SUCCESS",
+      "GITHUB_CHANGE != LOCAL_TRUTH",
+      "LOCAL_ACCESS != PUBLICATION_AUTHORITY",
+      "SOURCE_AUTHORITY > DISTILLATION",
+      "FAILURE_PRESERVES_PREVIOUS_CANONICAL"
+    ]
   }
 }

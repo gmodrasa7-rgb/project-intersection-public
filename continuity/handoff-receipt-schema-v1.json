@@ -1,0 +1,157 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Project Intersection GitHub-Local Handoff Receipt v1",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "change_id",
+    "direction",
+    "source_identity",
+    "source_hash",
+    "target_identity",
+    "sensitivity",
+    "publishability",
+    "evidence_class",
+    "validation",
+    "read_back_hash",
+    "rollback_target",
+    "status",
+    "supersedes"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "change_id": {
+      "type": "string",
+      "minLength": 6
+    },
+    "direction": {
+      "enum": [
+        "LOCAL_TO_GITHUB",
+        "GITHUB_TO_LOCAL",
+        "BIDIRECTIONAL_RECONCILIATION"
+      ]
+    },
+    "source_identity": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_hash": {
+      "type": "string",
+      "minLength": 1
+    },
+    "target_identity": {
+      "type": "string",
+      "minLength": 1
+    },
+    "sensitivity": {
+      "enum": [
+        "PUBLIC",
+        "INTERNAL",
+        "PRIVATE",
+        "SENSITIVE",
+        "UNRESOLVED"
+      ]
+    },
+    "publishability": {
+      "enum": [
+        "PUBLIC_READY",
+        "NOT_PUBLIC",
+        "REVIEW_REQUIRED",
+        "UNRESOLVED"
+      ]
+    },
+    "evidence_class": {
+      "type": "string",
+      "minLength": 1
+    },
+    "prior_art_checked": {
+      "type": [
+        "boolean",
+        "string",
+        "null"
+      ]
+    },
+    "validation": {
+      "type": "object",
+      "required": [
+        "status"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "PASS",
+            "FAIL",
+            "UNRESOLVED"
+          ]
+        },
+        "checks": {
+          "type": "array"
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    },
+    "github_commit_sha": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "github_blob_sha": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "read_back_hash": {
+      "type": "string",
+      "minLength": 1
+    },
+    "local_library_path": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "local_version": {
+      "type": [
+        "integer",
+        "string",
+        "null"
+      ]
+    },
+    "rollback_target": {
+      "type": "string",
+      "minLength": 1
+    },
+    "status": {
+      "enum": [
+        "DRAFT_LOCAL",
+        "STAGED",
+        "VALIDATED",
+        "PUBLIC_READY",
+        "PUSHED",
+        "READ_BACK_VERIFIED",
+        "COMMITTED_TO_LOCAL_STATE",
+        "REJECTED",
+        "QUARANTINED",
+        "ROLLBACK_REQUIRED"
+      ]
+    },
+    "supersedes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "failure_reason": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}
