@@ -257,7 +257,7 @@ def survival(data, rows, agg):
             error_improvement >= .05
             or (burden_improvement >= .10 and no_worse_error_for_burden)
         ),
-        "irreversible_harm_guard": d["irreversible_harm"] <= c["irreversible_harm"] + .02,
+        "irreversible_harm_guard": d["irreversible_harm"] <= c2["irreversible_harm"] + .02,
         "emergency_delay_guard": (
             em["POWER_REVERSAL_META"]["dimensions"]["delay_harm"]
             <= em["CONTESTABLE_COST_AWARE"]["dimensions"]["delay_harm"] + .02
@@ -277,9 +277,7 @@ def survival(data, rows, agg):
         "diagnostics": {
             "combined_error_improvement_vs_C2": error_improvement,
             "proof_burden_improvement_vs_C2": burden_improvement,
-            "C2_closes_D_advantage_over_C_balanced": (
-                (c["balanced"] - d["balanced"]) - (c2["balanced"] - d["balanced"])
-            ),
+            "C2_vs_C_balanced_loss_delta": c2["balanced"] - c["balanced"],
         },
     }
 
