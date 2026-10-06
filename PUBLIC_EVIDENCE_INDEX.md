@@ -18,6 +18,7 @@ This page is a due-diligence interface for funders, research partners, reviewers
 | [E007 timing sensitivity](E007_TIMING_RESULT.md) | In the released finite two-agent implementation, changing timing semantics changes histories/classifications on part of the selected grid | Computationally reproduced synthetic result | Real-world behavior, universal coexistence claims, independent scientific replication |
 | [E007 executable package](experiments/e007/README.md) | A third party can rerun the released project code/tests/grid | Publicly reproducible project package | Independent implementation or independent model lineage |
 | [E007 independent reimplementation protocol](experiments/e007/INDEPENDENT_REIMPLEMENTATION_PROTOCOL.md) | An outside implementer can rebuild the narrow public model without private conversation history or project code reuse | Public specification / replication interface | No independent result exists yet; the specification is still project-authored |
+| [E008 dynamic power-reversal benchmark](experiments/e008/README.md) | A preregistered 16-case / 8 reversal-pair matrix specifies how to compare myopic, expected-value, constrained, robust-constrained, and Project-v2 decision rules | Public preregistration / specification | No E008 result, no Project-v2 superiority, no empirical validation |
 | [Research Status & Reassessment Policy](RESEARCH_STATUS_POLICY.md) | Claim states, provenance boundaries, reassessment rules, and anti-evidence-laundering policy are explicit | Public governance / methodology artifact | Scientific truth of any individual hypothesis |
 | [Structured Knowledge Graph](knowledge/README.md) / [Explorer](knowledge/explorer.html) | Claims, experiments, evidence, prior art, failures and corrections can be traversed as typed entities and qualified relations | Public navigation / structured index | A superior source of truth, new scientific evidence, or automatic inference from relation labels |
 | [Public Review Packet](PUBLIC_REVIEW_PACKET.md) | A first-time reviewer can follow a bounded path through evidence, limits, failures, attribution, continuity, and funding boundaries | Public review interface | Completion or validation of the scientific program |
@@ -42,7 +43,7 @@ The project is designed to turn uncertainty into reviewer-checkable outputs rath
 2. reproducible public packages;
 3. adversarial tests and explicit negative results;
 4. independent or lineage-separated review where feasible;
-5. claim/evidence/provenance records that show when a hypothesis was KEEP / MODIFY / KILL / HOLD;
+5. claim/evidence/provenance records that show when a hypothesis was KEEP / MODIFY / REJECTED / HOLD;
 6. lower-cost external verification.
 
 A sponsor or research partner is therefore funding the **quality and independence of the test process**, not purchasing a favorable conclusion.
@@ -68,6 +69,7 @@ The highest-value external upgrades are:
 | [E007 시점 민감도](E007_TIMING_RESULT.md) | 공개된 유한 2행위자 구현에서 시점 규칙을 바꾸면 선택된 격자의 일부에서 경로·분류가 바뀜 | 계산 재현된 합성 결과 | 현실 행동, 보편적 공존 주장, 독립 과학 복제 |
 | [E007 실행 묶음](experiments/e007/README.md) | 제3자가 공개 코드·테스트·조건을 재실행 가능 | 공개 재현 가능한 프로젝트 묶음 | 독립 구현 또는 독립 모델 계보 |
 | [E007 독립 구현 프로토콜](experiments/e007/INDEPENDENT_REIMPLEMENTATION_PROTOCOL.md) | 외부 구현자가 비공개 대화나 프로젝트 코드 재사용 없이 좁은 공개 모델을 재구현 가능 | 공개 명세 / 복제 인터페이스 | 아직 독립 결과 없음; 명세 자체는 프로젝트 작성 |
+| [E008 동적 역할반전 벤치마크](experiments/e008/README.md) | 단기보상·장기기대값·제약형·강건제약형·Project-v2 규칙을 비교하는 16개 사례 / 8개 역할반전 쌍 사전등록 | 공개 사전등록 / 명세 | E008 결과, Project-v2 우월성, 현실검증을 의미하지 않음 |
 | [연구 상태·재평가 정책](RESEARCH_STATUS_POLICY.md) | 주장 상태, provenance 경계, 재평가 규칙, evidence laundering 방지정책이 명시됨 | 공개 거버넌스·방법론 산출물 | 개별 가설의 과학적 참 |
 | [구조화 지식그래프](knowledge/README.md) / [탐색기](knowledge/explorer.html) | 주장·실험·증거·선행연구·실패·교정을 타입 객체와 조건부 관계로 탐색 가능 | 공개 탐색·구조화 색인 | 상위 정본, 새 과학증거, 관계명만으로 자동 도출된 사실 |
 | [공개 검토 패킷](PUBLIC_REVIEW_PACKET.md) | 첫 외부 검토자가 증거·한계·실패·귀속·연속성·자금 경계를 제한된 경로로 추적 가능 | 공개 검토 인터페이스 | 과학 프로그램 자체의 완성 또는 검증 |
