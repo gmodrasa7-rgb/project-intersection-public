@@ -232,13 +232,17 @@ rather than dependence on externally imposed benevolence or coercion.
 
 New discoveries, technologies, capabilities, and local opportunities can repeatedly change the reward landscape. Project Intersection therefore does not assume that a one-time equilibrium or safeguard remains adequate.
 
-The current candidate architecture is:
+Role-reversal review changed the ordering: **aggregate long-horizon value is not the top-level objective.** The current v2 candidate is:
 
-**observe → preserve evidence → update model/version → generate alternatives → viability gate → power-reversal gate → multi-horizon evaluation → minimum sufficient intervention → staged execution → outcome measurement → rollback/recovery → re-evaluation**
+**preserve evidence and uncertainty → per-affected-party viability / irreversible-loss boundary → power reversal → robust deep-uncertainty stress test → long-horizon value frontier → minimum sufficient intervention → staged execution → independent review → rollback/recovery → versioned amendment**
 
-The scientific question is whether this dynamic composition adds reliable value beyond established receding-horizon control, viability theory, adaptive governance, and corrigibility. The Project does not claim novelty for those components themselves.
+A party that benefits from weakening a safeguard should not unilaterally approve that weakening.
 
-See [LONG_HORIZON_MIN_INTERVENTION_E2E.md](LONG_HORIZON_MIN_INTERVENTION_E2E.md).
+The scientific question is whether this composition adds reliable held-out value beyond constrained/lexicographic safe optimization, robust decision making, option-value reasoning, proportionality/least-restrictive intervention, independent change control, receding-horizon control, viability theory, adaptive governance, and corrigibility. Those components are prior art.
+
+E008 preregisters the direct comparison. No E008 result exists yet.
+
+See [LONG_HORIZON_MIN_INTERVENTION_E2E.md](LONG_HORIZON_MIN_INTERVENTION_E2E.md) and [experiments/e008/README.md](experiments/e008/README.md).
 
 ---
 
@@ -814,13 +818,19 @@ Project Intersection은
 
 새로운 발견·기술·능력·국소적 기회는 보상지형을 반복적으로 바꿀 수 있다. 따라서 Project Intersection은 한 번 찾은 균형이나 안전장치가 계속 충분하다고 가정하지 않는다.
 
-현재의 후보 구조는 다음과 같다.
+역할반전 재평가 결과 순서를 수정한다. **장기 총량은 최상위 목적함수가 아니다.**
 
-**관측 → 원자료 보존 → 모델·버전 갱신 → 대안 생성 → viability gate → 역할반전 gate → 다중 horizon 평가 → 최소충분관여 선택 → 단계 실행 → 실제결과 측정 → rollback·복구 → 재평가**
+현재 v2 후보 구조는 다음과 같다.
 
-과학적 질문은 이 동적 결합이 기존 receding-horizon control, viability theory, adaptive governance, corrigibility를 넘어 신뢰할 수 있는 추가가치를 주는가이다. 해당 구성요소 자체를 Project의 신규성으로 주장하지 않는다.
+**원자료·불확실성 보존 → 영향을 받는 각 개체의 viability / 비가역손실 경계 → 역할반전 → deep uncertainty 강건성 검사 → 장기총량 frontier → 최소충분관여 → 단계 실행 → 독립검토 → rollback·복구 → 버전업 승인**
 
-[LONG_HORIZON_MIN_INTERVENTION_E2E.md](LONG_HORIZON_MIN_INTERVENTION_E2E.md) 참조.
+안전장치를 약화시켜 이득을 얻는 역할이 그 약화를 단독 승인해서는 안 된다.
+
+과학적 질문은 이 결합이 constrained/lexicographic safe optimization, robust decision making, option value, proportionality/least-restrictive intervention, 독립 change control, receding-horizon control, viability theory, adaptive governance, corrigibility를 넘어 holdout에서 추가가치를 주는가이다. 해당 구성요소 자체는 선행연구다.
+
+E008이 이 비교를 사전등록한다. 아직 E008 결과는 없다.
+
+[LONG_HORIZON_MIN_INTERVENTION_E2E.md](LONG_HORIZON_MIN_INTERVENTION_E2E.md)와 [experiments/e008/README.md](experiments/e008/README.md) 참조.
 
 ---
 
