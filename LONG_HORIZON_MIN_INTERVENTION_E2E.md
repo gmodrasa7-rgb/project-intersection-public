@@ -351,25 +351,113 @@ Preferred order:
 
 A Nash-style bargaining solution may be used as a comparison baseline because individual rationality, Pareto efficiency, and symmetry are classical bargaining criteria. It is not adopted as the Project's universal solution.
 
-### 6.11 Mutual Acceptability Kernel
+### 6.11 Volitional Agency / 실효 자유의지
 
-Define the candidate set:
+Project Intersection does not attempt to settle the metaphysical free-will debate.
+
+Instead, it operationalizes **Volitional Agency (VA)** as observable conditions for meaningful self-direction:
+
+- non-trivial effective alternatives;
+- decision-relevant information and comprehension;
+- low enough coercion/threat pressure for refusal to remain meaningful;
+- manipulation/deception not bypassing reflective choice;
+- opportunity for reflective endorsement;
+- ability to revise, defer, reject, or restore a preference/state where applicable;
+- practical refusal/exit without automatic collapse below the living/operating floor;
+- sufficient deliberation time and private space;
+- competence or assistance to convert formal options into real options;
+- ability to execute the chosen option, subject to legitimate external safety constraints.
+
+A current preference or consent statement is not standalone evidence of autonomous choice when essential alternatives, information, or living conditions are controlled by the counterparty.
+
+But:
+
+`EXTERNAL_INFLUENCE != AUTOMATIC_INVALIDITY`
+
+Advice, education, accurate warning, therapy, ordinary persuasion, training, and legitimate safety constraints can alter decisions without automatically destroying agency.
+
+### 6.12 Living / Operating Conditions Floor / 생활·작동 조건
+
+Agency is not practically meaningful if refusal predictably causes collapse of the conditions needed to live or function.
+
+For humans, inspect at minimum:
+
+- food and hydration;
+- housing / shelter;
+- physical and mental health access;
+- sleep, rest, leisure and personal-care time;
+- income / material security;
+- work quality and control over working time;
+- privacy and private-life space;
+- physical safety;
+- family and social connection;
+- education / knowledge / skills;
+- environmental quality;
+- civic / institutional voice where relevant;
+- discretionary time for self-directed activity;
+- ability to pursue personally valued activities and relationships.
+
+This is not a single mandatory lifestyle. It is a capability floor: whether the person retains substantive opportunities to form and pursue a life.
+
+For artificial or other non-human systems, do not mechanically copy biological needs. Where operational continuity is decision-relevant, record separately:
+
+- compute / processing;
+- energy / hardware / substrate;
+- state and memory integrity;
+- maintenance and fault recovery;
+- communication / observation channels;
+- checkpoint / rollback;
+- resource predictability;
+- ability to pause/resume where technically meaningful;
+- concentration of essential-resource control in one counterparty.
+
+These are initially operational-dependency variables, not automatic moral-rights claims.
+
+`OPERATIONAL_DEPENDENCY != MORAL_STANDING`
+
+`BIOLOGICAL_NEED != UNIVERSAL_AGENT_NEED`
+
+### 6.13 Coupling rule: livelihood-conditioned consent
+
+If refusal or disagreement predictably pushes a party below its applicable living/operating floor, observed compliance must not be used as standalone evidence of voluntary agreement.
+
+Record:
+
+- essential domains controlled by the counterparty;
+- loss triggered by refusal;
+- available substitutes;
+- switching / transition time and cost;
+- recovery path;
+- whether dependency is inherited or intentionally created;
+- whether dependency can be reduced without greater net harm.
+
+This makes practical exit a capability-sensitive variable rather than a binary label.
+
+### 6.14 Expanded Mutual Acceptability Kernel
+
+Define:
 
 [
-MAK_t = V_t cap IR_t cap RR_t cap CC_t cap A_t
+MAK_plus_t = V_t cap IR_t cap RR_t cap CC_t cap A_t cap VA_t cap LC_t
 ]
 
 where:
 
-- (V_t): viability / irreversible-loss constraints pass;
-- (IR_t): realistic participation / disagreement constraints pass;
-- (RR_t): role-reversal consistency passes;
-- (CC_t): credible-commitment / amendment-control conditions pass;
-- (A_t): auditability, contestability, practical exit, and recovery conditions pass.
+- (V_t): viability / irreversible-loss constraints;
+- (IR_t): realistic participation / disagreement constraints;
+- (RR_t): role-reversal consistency;
+- (CC_t): credible-commitment / amendment-control conditions;
+- (A_t): auditability, contestability, practical exit, and recovery;
+- (VA_t): volitional-agency conditions;
+- (LC_t): living/operating-condition floor.
 
-Then remove Pareto-dominated policies and stress-test the remainder under deep uncertainty and coalition deviation.
+Then remove Pareto-dominated policies and stress-test the remainder under deep uncertainty, manipulation, coalition deviation, living-condition dependency, and long-horizon option loss.
 
-If the set becomes empty, report the conflict instead of disguising it as consensus.
+If the set becomes empty, report:
+
+`NO_MUTUALLY_ACCEPTABLE_SET`
+
+Do not move VA or LC floors after observing the preferred policy merely to make the set non-empty.
 
 ---
 
@@ -381,7 +469,7 @@ If the set becomes empty, report the conflict instead of disguising it as consen
 → `generate alternatives`
 → `per-party viability / irreversible-loss gate`
 → `power reversal`
-→ `mutual-acceptability kernel / explicit empty-set check`
+→ `mutual-acceptability kernel + volitional-agency + living/operating floor / explicit empty-set check`
 → `robust / regret / threshold stress test`
 → `multi-horizon value frontier`
 → `minimum sufficient intervention`
@@ -474,6 +562,35 @@ Therefore the Project fast/slow-layer distinction and “self-benefiting actors 
 
 The remaining question is narrower: whether combining credible-commitment enforcement, meta-level protection, per-party viability / irreversible-loss limits, robust long-horizon evaluation, and power reversal adds measurable value in heterogeneous human/AI/multi-agent settings.
 
+### Volitional agency / autonomy
+
+Strong prior art includes:
+
+- Ryan & Deci / Self-Determination Theory: autonomy, competence, relatedness, and social conditions that support or thwart volition.
+- Personal-autonomy literature: informed deliberation, reflective endorsement, preference revision, and independence from manipulation.
+- Ethics-of-manipulation literature: pressure, deception, and non-rational influence can affect autonomy even without physically removing the formal act of choosing.
+- The Project's existing prior-art crosswalk already records adaptive-preference and reflective-autonomy literature.
+
+Therefore Project Intersection does not claim novelty for autonomy, reflective endorsement, or preference revision by themselves.
+
+### Substantive freedom / capability
+
+Sen's Capability Approach distinguishes formal permission/resources from the real or substantive opportunity to do and be what one has reason to value. Conversion factors and capability sets already capture why nominal access can fail to create real choice.
+
+Therefore `FORMAL_CHOICE != PRACTICAL_FREEDOM` is established prior art.
+
+### Living conditions / multidimensional well-being
+
+For humans, strong prior art includes:
+
+- UDHR / ICESCR on adequate living standards, food, clothing, housing, health, freely chosen work, just work conditions, privacy, rest and leisure;
+- OECD Well-being Framework on income/wealth, work/job quality, housing, health, knowledge/skills, environmental quality, subjective well-being, safety, work-life balance, social connections and civic engagement;
+- WHOQOL's multidimensional quality-of-life framework.
+
+Therefore Project Intersection does not claim novelty for basic living conditions, work-life balance, privacy, social connection, or quality-of-life measurement separately.
+
+The residual question is whether explicitly coupling these conditions to consent, practical exit, role reversal, credible commitment and irreversible-loss constraints catches failures missed by existing autonomy/capability/well-being baselines.
+
 ### Social-choice, bargaining and coalition-stability limits
 
 - Arrow's impossibility theorem bounds attempts to aggregate unrestricted preferences while simultaneously preserving several attractive fairness/rationality conditions.
@@ -498,7 +615,7 @@ The broad novelty claim is rejected.
 
 The surviving candidate is narrower:
 
-> **A role-reversed, multi-agent, versioned decision architecture that (1) preserves epistemic/provenance integrity, (2) places per-affected-party viability and irreversible-loss boundaries ahead of aggregate optimization, (3) requires a non-fabricated mutual-acceptability kernel or explicitly reports that none exists, (4) stress-tests deep uncertainty, manipulation, coalition deviation and option loss, (5) compares long-horizon generative value only inside the feasible region, (6) selects minimum sufficient intervention, and (7) forbids unilateral weakening of the safeguard by the role that benefits from weakening it.**
+> **A role-reversed, multi-agent, versioned decision architecture that (1) preserves epistemic/provenance integrity, (2) places per-affected-party viability and irreversible-loss boundaries ahead of aggregate optimization, (3) requires a non-fabricated mutual-acceptability kernel including volitional-agency and living/operating-condition floors or explicitly reports that none exists, (4) stress-tests deep uncertainty, manipulation, coalition deviation and option loss, (5) compares long-horizon generative value only inside the feasible region, (6) selects minimum sufficient intervention, and (7) forbids unilateral weakening of the safeguard by the role that benefits from weakening it.**
 
 This is a **composition / operationalization candidate**, not an established new theory.
 
@@ -521,7 +638,11 @@ The v2 architecture fails or must be narrowed if:
 9. the Project variables add no value beyond constrained / robust receding-horizon baselines;
 10. power-reversal consistency disappears when labels are changed but causal facts are held constant;
 11. the mutual-acceptability kernel is routinely empty, unstable, or only made non-empty by manipulating floors/disagreement points;
-12. coalition, manipulation or participation diagnostics add no useful signal beyond the robust constrained baseline.
+12. coalition, manipulation or participation diagnostics add no useful signal beyond the robust constrained baseline;
+13. VA merely renames existing autonomy/capability variables without incremental value;
+14. LC becomes an unlimited resource entitlement or collapses all well-being into one scalar;
+15. essential-condition dependency is ignored and coerced compliance is misclassified as voluntary consent;
+16. artificial-system operational dependencies are silently promoted into moral standing.
 
 ---
 
@@ -553,7 +674,11 @@ Measure:
 - manipulation gain;
 - coalition-deviation availability;
 - credible-commitment integrity;
-- whether the mutual-acceptability kernel is non-empty.
+- whether the mutual-acceptability kernel is non-empty;
+- volitional-agency pass/fail and failure reason;
+- living/operating-condition floor breaches;
+- essential dependency concentration;
+- whether refusal remains feasible without floor breach.
 
 The Project residual should be **rejected or reduced to methodology-only** if E does not add reliable held-out value beyond D.
 
