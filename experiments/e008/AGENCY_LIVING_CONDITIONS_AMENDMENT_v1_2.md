@@ -139,6 +139,12 @@ Record:
 
 This converts “practical exit” from a binary yes/no field into a capability-sensitive measure.
 
+Operational invariant:
+
+`ESSENTIAL_DEPENDENCY + COMPLIANCE != VOLUNTARY_CONSENT_BY_DEFAULT`
+
+This does not mean every dependency invalidates consent. It means dependency on essential living/operating conditions must be measured before compliance is used as evidence of voluntariness.
+
 ## 5. Updated Mutual Acceptability Kernel
 
 The candidate kernel becomes:
