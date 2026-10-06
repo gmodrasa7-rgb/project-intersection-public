@@ -4,8 +4,8 @@
   "public_repository": "gmodrasa7-rgb/project-intersection-public",
   "canonical_boundary": "Public continuation pointer only; source artifacts and commit history outrank this state file.",
   "recovery_entrypoint": "AUTONOMOUS_RESEARCH_LOOP.md",
-  "current_public_head": "bb8dfb68f44c6cc6273eeaf8ec34c4335dd4c099",
-  "updated_at": "2026-10-06T03:12:00Z",
+  "current_public_head": "c2ff226441550213664373a22cbd94321041ad51",
+  "updated_at": "2026-10-06T11:10:00Z",
   "execution_policy": {
     "atomic_material_delta_per_run": 1,
     "require_prior_art_gate": true,
@@ -16,13 +16,15 @@
     "no_self_granted_authority": true,
     "require_power_reversal_blocking_gate": true,
     "require_benefit_cost_separation": true,
-    "block_repeated_user_repair_burden": true
+    "block_repeated_user_repair_burden": true,
+    "e008_result_requires_frozen_executable_scoring_protocol": true,
+    "freeze_internal_complexity_expansion_after_negative_incremental_result": true
   },
   "priority_order": [
     "persistence_provenance_integrity",
+    "independent_external_or_empirical_validation",
     "strong_counterexample_or_kill_test",
     "prior_art_novelty_narrowing",
-    "independent_external_or_empirical_validation",
     "new_synthetic_test",
     "documentation_only"
   ],
@@ -32,7 +34,7 @@
       "status": "UNRESOLVED_EXTERNAL_LINEAGE_REQUIRED",
       "question": "Can an independent third party reproduce or independently implement a narrow public Project Intersection claim without private conversation history?",
       "evidence_boundary": "E007 is publicly executable and project-reproduced. GitHub code and commit searches using unique E007 tokens found no indexed external match in this check; search/index coverage is unknown, so non-observation is not absence. Independent external scientific replication remains unestablished.",
-      "next_cheapest_discriminating_check": "Wait for or discover a lineage-separated implementation with public provenance, or obtain an external implementation through an independently acting reviewer. Project-authored or same-model reruns cannot satisfy this boundary.",
+      "next_cheapest_discriminating_check": "External verification request opened at GitHub issue #19. Accept only lineage-separated rerun/clean-room implementation or independently produced contradiction as evidence for this boundary; project-authored or same-model reruns do not satisfy it.",
       "last_public_trace_check": {
         "observed_at": "2026-10-04T18:03:00+09:00",
         "queries": [
@@ -353,5 +355,28 @@
       "source": "HISTORICAL_STATE_CONTROL_MEMORY_PROVENANCE_CAPTURE_v0_1_EN.md and _KO.md",
       "rollback": "Reopen broad novelty only if blinded held-out evidence shows incremental classification or prediction beyond the cited baselines."
     }
-  ]
+  ],
+  "current_operating_decision": {
+    "id": "OD-2026-10-06-EXTERNAL-FIRST",
+    "status": "ACTIVE",
+    "decision": "EXTERNAL_VALIDATION_FIRST_INTERNAL_COMPLEXITY_FREEZE",
+    "basis": [
+      "E009 Project-v3 residual failed preregistered synthetic survival criteria.",
+      "TWO_RULE_SIMPLE and MINIMAL_4VAR outperformed PROJECT_V3 on mean regret in the frozen synthetic rerun.",
+      "Repository-growth and same-lineage evidence laundering are preserved failure modes.",
+      "E008 is preregistered but has no frozen executable scoring/consequence protocol, so generating a result now would add post-spec design degrees of freedom."
+    ],
+    "allowed_next": [
+      "lineage-separated E007 rerun or clean-room implementation",
+      "empirical or external holdout work",
+      "freeze an executable E008 scoring/consequence protocol before any E008 result",
+      "concrete maintenance that repairs provenance/status/reproducibility defects"
+    ],
+    "blocked_next": [
+      "new internal synthetic architecture before external/holdout evidence",
+      "E008 result generation before executable scoring/consequence protocol is frozen",
+      "documentation-only expansion without lower verification cost or repaired contradiction"
+    ],
+    "external_verification_issue": "https://github.com/gmodrasa7-rgb/project-intersection-public/issues/19"
+  }
 }
