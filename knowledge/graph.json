@@ -2079,9 +2079,9 @@
     },
     {
       "id": "REL-065",
-      "from": "EX-009",
-      "type": "reduces_support_for",
-      "to": "GR-006",
+      "from": "GR-006",
+      "type": "challenged_by",
+      "to": "EX-009",
       "qualifiers": {
         "scope": "Project-v3 failed 3/4 preregistered survival criteria in frozen synthetic project rerun; simplify before expanding",
         "evidence_class": "PROJECT_RERUN",
