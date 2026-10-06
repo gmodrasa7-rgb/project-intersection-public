@@ -41,15 +41,15 @@ Regression barrier: [public repository governance audit](.github/workflows/publi
 ## F-R003 — autonomous-state schema / workflow drift
 
 **Class:** continuity infrastructure  
-**Status:** ACTIVE DEFECT FOUND 2026-10-06 / REPAIR TARGET IN THIS CHANGESET
+**Status:** REPAIR APPLIED IN CURRENT MAIN / HISTORICAL FAILURE PRESERVED / LIVE CI RUN STATUS UNVERIFIED IN THIS AUDIT
 
-Observed state: `AUTONOMOUS_RESEARCH_STATE.json` uses schema `1.1`, while the public audit workflow still requires `1.0`.
+Historical observed state: `AUTONOMOUS_RESEARCH_STATE.json` had moved to schema `1.1` while the public audit workflow still required `1.0`.
 
-Observed consequence: the scheduled public governance audit at main head `b822985eec6d5f4d7342d27dfb81ced09772acfa` failed on 2026-10-06 with:
+Historical consequence: the scheduled public governance audit at main head `b822985eec6d5f4d7342d27dfb81ced09772acfa` failed on 2026-10-06 with:
 
 > Autonomous state schema version changed unexpectedly.
 
-Repair requirement: synchronize the workflow gate to the deliberate schema version and keep later version changes explicit.
+Current repository state observed in this audit: `AUTONOMOUS_RESEARCH_STATE.json` declares schema `1.1`, and `.github/workflows/public-repository-audit.yml` now explicitly requires schema `1.1`. The configuration mismatch itself is therefore repaired. This audit did not independently establish the status of the latest hosted GitHub Actions run, so it does not relabel the repair as a verified green CI execution.
 
 Regression barrier: schema changes require an audit-rule change in the same reviewed changeset or a documented compatibility rule.
 
