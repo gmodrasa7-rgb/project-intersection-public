@@ -90,6 +90,7 @@ jobs:
           long_horizon_v2 = Path("LONG_HORIZON_MIN_INTERVENTION_E2E.md").read_text(encoding="utf-8")
           e008_readme = Path("experiments/e008/README.md").read_text(encoding="utf-8")
           e008_matrix = json.loads(Path("experiments/e008/scenario_matrix.json").read_text(encoding="utf-8"))
+          e008_agency_living = Path("experiments/e008/AGENCY_LIVING_CONDITIONS_AMENDMENT_v1_2.md").read_text(encoding="utf-8")
 
           # Landing-page regression: keep first-review cost bounded.
           require(len(readme.splitlines()) <= 200, "README exceeded 200 lines; move detailed material to linked documents.")
@@ -151,6 +152,10 @@ jobs:
           require("PREREGISTERED SPECIFICATION / NO RESULT YET" in e008_readme, "E008 lost preregistration/no-result boundary.")
           require(e008_matrix.get("status") == "PREREGISTERED_SPECIFICATION_NO_RESULT", "E008 matrix status was promoted without explicit review.")
           require(len(e008_matrix.get("cases", [])) >= 16, "E008 preregistered case matrix unexpectedly shrank.")
+          require("PREREGISTERED PRE-EXECUTION AMENDMENT / NO RESULT YET" in e008_agency_living, "E008 v1.2 lost pre-execution/no-result boundary.")
+          require("OPERATIONAL_DEPENDENCY != MORAL_STANDING" in e008_agency_living, "E008 v1.2 collapsed operating dependency into standing.")
+          require("ESSENTIAL_DEPENDENCY + COMPLIANCE != VOLUNTARY_CONSENT_BY_DEFAULT" in e008_agency_living, "E008 v1.2 lost livelihood-conditioned consent boundary.")
+          require("MAK^{+}_t" in e008_agency_living, "E008 v1.2 lost expanded mutual-acceptability kernel.")
 
           # Declared bilingual policy and power-reversal gate must remain inspectable.
           require("Original 1 — English Canonical" in policy, "Research status policy lost English canonical section.")
