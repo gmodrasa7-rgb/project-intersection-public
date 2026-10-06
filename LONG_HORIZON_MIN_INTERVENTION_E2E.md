@@ -683,3 +683,65 @@ Measure:
 The Project residual should be **rejected or reduced to methodology-only** if E does not add reliable held-out value beyond D.
 
 See `experiments/e008/`.
+
+
+## 12. Enforcement / identity / oversight stress layer v3
+
+The v2 mutual-acceptability structure is **not sufficient** if safeguards cannot be enforced, if the identity unit can be multiplied or merged strategically, or if governance changes more slowly than capability/power.
+
+Do not convert every newly discovered concern into a hard veto.
+
+### H / M / X classification
+
+**H — Hard / near-hard boundary**
+
+Use only for strongly justified severe or irreversible constraints, including where applicable:
+- catastrophic irreversible harm;
+- unauthorized sensitive-data publication;
+- explicit joint resource infeasibility;
+- provenance corruption that destroys independent verification;
+- unilateral destruction of critical independent recovery without a surviving necessity case.
+
+**M — Monitored continuous risk**
+
+Measure without automatic veto:
+- ENF enforcement lag;
+- ID identity/fork/Sybil uncertainty;
+- OV oversight capability;
+- CUM cumulative capture;
+- RF resource pressure before hard infeasibility;
+- SEL competitive selection;
+- INT interpretation disagreement;
+- VOI stakeholder-search value.
+
+**X — Reversible experimental zone**
+
+When MAK+ is empty or disputed but irreversible foreclosure is avoidable, permit only bounded experiments with:
+- small scope;
+- capped resources;
+- explicit sunset;
+- high observability;
+- rollback;
+- no automatic precedent;
+- preregistered success/failure criteria.
+
+### Operational cautions
+
+- `AUDIT_EXISTS != AUDIT_EFFECTIVE`
+- `INSTANCE_COUNT != INDEPENDENT_AGENT_COUNT`
+- `POINTWISE_COMPLIANCE != NO_CUMULATIVE_CAPTURE`
+- `ACTION_IRREVERSIBILITY` must be compared with `INACTION_IRREVERSIBILITY`
+- `TECHNICAL_ENFORCEMENT != MORAL_TRUTH`
+- `CROSS_MODEL_AGREEMENT != INDEPENDENT_VALIDATION`
+
+### Next test
+
+E009 directly stress-tests the above layer against:
+- existing MAK+ pointwise governance;
+- a simpler two-rule baseline;
+- a security-bounded least-privilege baseline;
+- Project v3 H/M/X.
+
+No E009 result exists yet.
+
+See [MULTI_MODEL_ADVERSARIAL_AUDIT_2026-10-06.md](MULTI_MODEL_ADVERSARIAL_AUDIT_2026-10-06.md) and [experiments/e009/README.md](experiments/e009/README.md).
