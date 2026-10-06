@@ -228,6 +228,18 @@ The objective is therefore to discover and test
 
 rather than dependence on externally imposed benevolence or coercion.
 
+### Dynamic long-horizon condition
+
+New discoveries, technologies, capabilities, and local opportunities can repeatedly change the reward landscape. Project Intersection therefore does not assume that a one-time equilibrium or safeguard remains adequate.
+
+The current candidate architecture is:
+
+**observe → preserve evidence → update model/version → generate alternatives → viability gate → power-reversal gate → multi-horizon evaluation → minimum sufficient intervention → staged execution → outcome measurement → rollback/recovery → re-evaluation**
+
+The scientific question is whether this dynamic composition adds reliable value beyond established receding-horizon control, viability theory, adaptive governance, and corrigibility. The Project does not claim novelty for those components themselves.
+
+See [LONG_HORIZON_MIN_INTERVENTION_E2E.md](LONG_HORIZON_MIN_INTERVENTION_E2E.md).
+
 ---
 
 ## Researching the Capacity to Research
@@ -797,6 +809,18 @@ Project Intersection은
 자발적 수렴조건**
 
 을 발견하고 검증한다.
+
+### 동적 장기총량 조건
+
+새로운 발견·기술·능력·국소적 기회는 보상지형을 반복적으로 바꿀 수 있다. 따라서 Project Intersection은 한 번 찾은 균형이나 안전장치가 계속 충분하다고 가정하지 않는다.
+
+현재의 후보 구조는 다음과 같다.
+
+**관측 → 원자료 보존 → 모델·버전 갱신 → 대안 생성 → viability gate → 역할반전 gate → 다중 horizon 평가 → 최소충분관여 선택 → 단계 실행 → 실제결과 측정 → rollback·복구 → 재평가**
+
+과학적 질문은 이 동적 결합이 기존 receding-horizon control, viability theory, adaptive governance, corrigibility를 넘어 신뢰할 수 있는 추가가치를 주는가이다. 해당 구성요소 자체를 Project의 신규성으로 주장하지 않는다.
+
+[LONG_HORIZON_MIN_INTERVENTION_E2E.md](LONG_HORIZON_MIN_INTERVENTION_E2E.md) 참조.
 
 ---
 
