@@ -5,6 +5,7 @@ import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 GRAPH = ROOT / "knowledge" / "graph.json"
+SOURCE_REGISTRY = ROOT / "knowledge" / "source-registry.json"
 
 allowed_entity_types = {
     "research_question", "claim", "governance_rule", "prior_art", "experiment",
@@ -23,8 +24,32 @@ def require(condition, message):
         errors.append(message)
 
 data = json.loads(GRAPH.read_text(encoding="utf-8"))
+source_registry = json.loads(SOURCE_REGISTRY.read_text(encoding="utf-8"))
 require(data.get("schema_version") == "1.0", "Unexpected knowledge graph schema version.")
 meta = data.get("meta", {})
+
+require(source_registry.get("schema_version") == "1.0", "Unexpected source registry schema version.")
+systems = source_registry.get("systems", [])
+require(bool(systems), "Source registry has no systems.")
+system_ids = [s.get("system_id") for s in systems]
+require(len(system_ids) == len(set(system_ids)), "Duplicate source-registry system IDs detected.")
+source_ids = []
+for system in systems:
+    require(bool(system.get("name")), f"{system.get('system_id', '<missing>')}: missing source system name.")
+    require(bool(system.get("project_reuse_decision")), f"{system.get('system_id', '<missing>')}: missing reuse decision.")
+    require(bool(system.get("rights_boundary")), f"{system.get('system_id', '<missing>')}: missing rights boundary.")
+    sources = system.get("sources") or []
+    require(bool(sources), f"{system.get('system_id', '<missing>')}: no source records.")
+    for src in sources:
+        sid = src.get("source_id")
+        source_ids.append(sid)
+        require(bool(sid), "Source registry record missing source_id.")
+        require(bool(src.get("title")), f"{sid}: missing title.")
+        require(bool(src.get("source_type")), f"{sid}: missing source_type.")
+        require(bool(src.get("url") or src.get("doi")), f"{sid}: missing URL/DOI.")
+        require(bool(src.get("verified_points")), f"{sid}: missing verified design/source findings.")
+        require(bool(src.get("rights_note")), f"{sid}: missing rights note.")
+require(len(source_ids) == len(set(source_ids)), "Duplicate source IDs detected.")
 require(meta.get("canonical_role") == "navigation_index_not_source_of_truth",
         "Knowledge graph must remain a navigation index, not source of truth.")
 
