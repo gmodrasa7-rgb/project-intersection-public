@@ -1,0 +1,23 @@
+name: E009 adversarial stress preregistration audit
+
+on:
+  pull_request:
+    paths:
+      - "experiments/e009/**"
+      - ".github/workflows/e009-prereg-audit.yml"
+  push:
+    branches: [main]
+    paths:
+      - "experiments/e009/**"
+      - ".github/workflows/e009-prereg-audit.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate-e009:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python experiments/e009/validate.py
