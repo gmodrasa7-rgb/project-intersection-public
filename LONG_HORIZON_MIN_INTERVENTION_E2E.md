@@ -742,6 +742,15 @@ E009 directly stress-tests the above layer against:
 - a security-bounded least-privilege baseline;
 - Project v3 H/M/X.
 
-No E009 result exists yet.
+E009 v1.1 has now been executed as a frozen synthetic project rerun. The full Project-v3 residual **did not survive** its preregistered criteria. In the primary stress set, TWO_RULE_SIMPLE (mean regret 0.063241) and MINIMAL_4VAR (0.065323) outperformed PROJECT_V3 (0.090022). Therefore the v3 incremental residual is reduced/rejected for this synthetic benchmark. The broad Project question remains open, and no independent or empirical validation is implied.
 
 See [MULTI_MODEL_ADVERSARIAL_AUDIT_2026-10-06.md](MULTI_MODEL_ADVERSARIAL_AUDIT_2026-10-06.md) and [experiments/e009/README.md](experiments/e009/README.md).
+
+
+### E009 simplification consequence
+
+Do not patch Project-v3 thresholds in place after the negative result.
+
+Next work should treat `TWO_RULE_SIMPLE` and `MINIMAL_4VAR` as the stronger synthetic baselines and require any additional variable (RF/SEL/INT/VOI or new variable) to demonstrate held-out incremental value before re-entering the active architecture.
+
+`FAILED_INCREMENTAL_COMPLEXITY -> SIMPLIFY_BEFORE_EXPANDING`
