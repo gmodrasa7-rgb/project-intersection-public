@@ -304,6 +304,27 @@ This directly bounds Project novelty for “the constrained actor cannot unilate
 
 These establish prior art for intervention acceptance, interruption and correction in learning agents.
 
+### Credible commitment / power-sharing enforcement
+
+Political-science work on commitment problems and power sharing already shows that promises alone may be unstable when one side can later renege after the balance of power changes.
+
+- Boix & Svolik (2013), *The Foundations of Limited Authoritarian Government*, DOI **10.1017/S0022381613000029**.
+- Meng, Paine & Powell (2023), *Authoritarian Power Sharing: Concepts, Mechanisms, and Strategies*, DOI **10.1146/annurev-polisci-052121-020406**.
+- Hartzell & Hoddie (2003), *Institutionalizing Peace*, DOI **10.1111/1540-5907.00022**.
+
+A recurring mechanism is to reallocate decision power, monitoring capacity, or third-party enforcement so that reneging becomes costly. This strongly overlaps the Project intuition that nominal promises without independent audit / exit / recovery can be non-credible.
+
+### Constitutional entrenchment / meta-level protection
+
+The idea that ordinary operations should not be able to rewrite their own higher-order constraints is also established outside this Project.
+
+- Albert (2015), *Amending Constitutional Amendment Rules* — amendment rules can themselves be specially entrenched.
+- Perez & Wimer (2023), *Algorithmic Constitutionalism*, *Indiana Journal of Global Legal Studies* 30(2):81–113 — proposes operative/object-level code plus a meta-level intended to protect core principles from algorithmically initiated change, combined with meta-reasoning and deliberative correction.
+
+Therefore the Project fast/slow-layer distinction and “self-benefiting actors should not freely rewrite their own safeguards” are **not standalone novelty**.
+
+The remaining question is narrower: whether combining credible-commitment enforcement, meta-level protection, per-party viability / irreversible-loss limits, robust long-horizon evaluation, and power reversal adds measurable value in heterogeneous human/AI/multi-agent settings.
+
 ### Existing Project-recorded baselines
 
 Receding-horizon / MPC, viability theory, adaptive governance, Hirschman exit, Rawls, NIST/OECD accountability, bounded rationality, and capability theory are already recorded elsewhere in the repository.
