@@ -4,8 +4,8 @@
   "public_repository": "gmodrasa7-rgb/project-intersection-public",
   "canonical_boundary": "Public continuation pointer only; source artifacts and commit history outrank this state file.",
   "recovery_entrypoint": "AUTONOMOUS_RESEARCH_LOOP.md",
-  "current_public_head": "eb32e56347347eca180d6a2eb1d2801d3d29878d",
-  "updated_at": "2026-10-06T00:59:00Z",
+  "current_public_head": "717e6e3964b365ab6cdb47beeeb3b755cf758f74",
+  "updated_at": "2026-10-06T01:12:00Z",
   "execution_policy": {
     "atomic_material_delta_per_run": 1,
     "require_prior_art_gate": true,
@@ -266,12 +266,12 @@
     }
   ],
   "recent_material_delta": {
-    "type": "dynamic_long_horizon_minimum_sufficient_intervention_candidate",
-    "summary": "Formalized a prior-art-bounded end-to-end candidate in which recurrent short-horizon reward pressure is handled through versioned re-optimization, per-party viability floors, multi-horizon evaluation, minimum sufficient intervention, staged execution, rollback/recovery, and power-reversal review.",
-    "basis_head": "eb32e56347347eca180d6a2eb1d2801d3d29878d",
-    "source_artifact": "LONG_HORIZON_MIN_INTERVENTION_E2E.md + CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md#10 + RESEARCH_OVERVIEW.md + knowledge/graph.json",
+    "type": "power_reversal_long_horizon_constraint_first_v2_and_e008_preregistration",
+    "summary": "Upgraded the dynamic long-horizon architecture after broader prior-art subtraction. Aggregate long-horizon value is now subordinate to epistemic integrity, per-party viability/irreversible-loss constraints, robust deep-uncertainty stress testing, least-restrictive intervention, and independent safeguard-amendment control. Added E008 preregistration with 16 cases / 8 reversal pairs comparing five baselines.",
+    "basis_head": "717e6e3964b365ab6cdb47beeeb3b755cf758f74",
+    "source_artifact": "LONG_HORIZON_MIN_INTERVENTION_E2E.md + CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md#10 + experiments/e008/README.md + experiments/e008/scenario_matrix.json + knowledge/graph.json",
     "state_commit": "RESOLVE_FROM_GIT_HISTORY_AFTER_WRITE",
-    "scientific_support": "No universal law claimed. Receding-horizon control, viability theory, adaptive governance, and corrigibility are prior art; only incremental value of the multi-agent composition remains unresolved."
+    "scientific_support": "No E008 result exists. Broad novelty is rejected for constrained/safe RL, lexicographic optimization, robust decision making, option value, proportionality/least-restrictive intervention, independent change control, credible commitment/power-sharing enforcement, algorithmic constitutionalism, interruptibility/corrigibility, MPC, viability and adaptive governance. Only incremental value of the remaining composition is unresolved."
   },
   "human_only_gates": [
     "contracts_terms_ip_license_rights_changes",
@@ -283,15 +283,17 @@
   ],
   "last_read_back": {
     "status": "VERIFIED_POST_MERGE_PRE_STATE_WRITE",
-    "verified_commit": "c09bca1c2b2e72152b993946c0c6cfa36cc7e6fa",
+    "verified_commit": "717e6e3964b365ab6cdb47beeeb3b755cf758f74",
     "verified_blobs": {
-      "knowledge/SOURCE_REGISTRY.md": "RESOLVE_FROM_GIT_TREE",
-      "knowledge/source-registry.json": "RESOLVE_FROM_GIT_TREE",
-      "knowledge/README.md": "RESOLVE_FROM_GIT_TREE",
-      "knowledge/validate.py": "RESOLVE_FROM_GIT_TREE",
-      "README.md": "RESOLVE_FROM_GIT_TREE"
+      "LONG_HORIZON_MIN_INTERVENTION_E2E.md": "RESOLVE_FROM_GIT_TREE",
+      "CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md": "RESOLVE_FROM_GIT_TREE",
+      "experiments/e008/README.md": "RESOLVE_FROM_GIT_TREE",
+      "experiments/e008/scenario_matrix.json": "RESOLVE_FROM_GIT_TREE",
+      "knowledge/graph.json": "RESOLVE_FROM_GIT_TREE",
+      "PUBLIC_EVIDENCE_INDEX.md": "RESOLVE_FROM_GIT_TREE",
+      "PUBLIC_REVIEW_PACKET.md": "RESOLVE_FROM_GIT_TREE"
     },
-    "note": "Source registry merged only after both knowledge-graph and public-governance audits passed. Registry preserves design attribution and rights boundaries; it does not promote Project claims."
+    "note": "PR #12 merged after E008 preregistration audit, knowledge-graph audit, and public-governance audit all passed on the final head. E008 remains specification-only with no result."
   },
   "next_checkpoint": "F005: audit Power Release Compatibility against credible commitment, commitment problems, power-sharing, peaceful transfer, delegation, and practical exit. F004 incremental-value holdout, F003 historical identification, and F001 external lineage remain separate frontiers.",
   "current_public_head_semantics": "Head observed immediately before this state-file write. The commit containing this file must be resolved from Git history because a Git-tracked file cannot self-embed its own containing commit hash without changing that hash.",
