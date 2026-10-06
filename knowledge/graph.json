@@ -546,7 +546,7 @@
       "title_ko": "E008 동적 역할반전·장기총량 벤치마크 사전등록",
       "title_en": "E008 dynamic power-reversal / long-horizon benchmark preregistration",
       "status": "PREREGISTERED_SPECIFICATION_NO_RESULT",
-      "summary_ko": "16개 역할반전 쌍 사례에서 단기보상, 장기 기대값, constrained receding-horizon, robust constrained, Project v2를 비교하도록 사전등록한 공개 명세다. 결과는 아직 없다.",
+      "summary_ko": "16개 역할반전 쌍 사례에서 단기보상, 장기 기대값, constrained receding-horizon, robust constrained, Project v2를 비교하도록 사전등록한 공개 명세다. 실행 전 v1.1 개정으로 disagreement point, individual rationality, Pareto 지배, manipulation gain, coalition deviation, mutual-acceptability kernel 공집합 여부를 추가했다. 결과는 아직 없다.",
       "evidence_class": "PUBLIC_SPECIFICATION",
       "sources": [
         {
@@ -775,6 +775,140 @@
         "algorithmic-constitutionalism",
         "meta-level",
         "self-modification"
+      ]
+    },
+    {
+      "id": "CL-004",
+      "type": "claim",
+      "title_ko": "모든 역할에 동일한 결과만족이 아니라 상호수용 가능 영역을 찾아야 한다",
+      "title_en": "Full role reversal should target a mutual-acceptability set, not universal outcome satisfaction",
+      "status": "HYPOTHESIS_OPERATIONALIZATION_UNTESTED",
+      "summary_ko": "모든 가능한 선호를 동시에 만족시키는 보편규칙 대신, 개체별 viability·현실적 불합의 기준·역할반전 일관성·credible commitment·audit/exit/recovery의 교집합을 찾고 공집합이면 합의불가를 명시해야 한다는 후보 운영주장이다.",
+      "evidence_class": "HYPOTHESIS",
+      "sources": [
+        {
+          "kind": "repo_path",
+          "locator": "LONG_HORIZON_MIN_INTERVENTION_E2E.md",
+          "license_note": "Project synthesis after explicit social-choice and bargaining prior-art subtraction."
+        }
+      ],
+      "tags": [
+        "mutual-acceptability",
+        "role-reversal",
+        "participation",
+        "impossibility"
+      ]
+    },
+    {
+      "id": "GR-004",
+      "type": "governance_rule",
+      "title_ko": "Mutual Acceptability Kernel",
+      "title_en": "Mutual Acceptability Kernel",
+      "status": "GOVERNANCE_CANDIDATE",
+      "summary_ko": "V(viability)∩IR(individual rationality)∩RR(role reversal)∩CC(credible commitment)∩A(audit/contestability/exit/recovery)의 교집합을 후보정책 집합으로 두고 Pareto 지배·조작·연합이탈·deep uncertainty를 추가 검사한다. 공집합이면 NO_MUTUALLY_ACCEPTABLE_SET을 반환한다.",
+      "evidence_class": "GOVERNANCE_METHODOLOGY",
+      "sources": [
+        {
+          "kind": "repo_path",
+          "locator": "experiments/e008/MUTUAL_ACCEPTABILITY_AMENDMENT_v1_1.md",
+          "license_note": "Pre-execution operational specification; no result or validation claim."
+        }
+      ],
+      "tags": [
+        "kernel",
+        "individual-rationality",
+        "pareto",
+        "credible-commitment",
+        "exit"
+      ]
+    },
+    {
+      "id": "PA-018",
+      "type": "prior_art",
+      "title_ko": "Arrow 불가능성 정리",
+      "title_en": "Arrow's Impossibility Theorem",
+      "status": "ESTABLISHED_PRIOR_ART",
+      "summary_ko": "3개 이상 대안과 unrestricted domain에서 weak Pareto, IIA, 비독재 등 매력적 조건을 모두 만족하는 사회선호 집계규칙은 존재하지 않는다는 고전적 불가능성 결과다.",
+      "evidence_class": "PRIOR_ART",
+      "sources": [
+        {
+          "kind": "external_url",
+          "locator": "https://plato.stanford.edu/entries/arrows-theorem/",
+          "license_note": "Reference/citation only; no source text copied."
+        }
+      ],
+      "tags": [
+        "prior-art",
+        "social-choice",
+        "impossibility",
+        "Arrow"
+      ]
+    },
+    {
+      "id": "PA-019",
+      "type": "prior_art",
+      "title_ko": "Gibbard–Satterthwaite 조작불가능성 한계",
+      "title_en": "Gibbard–Satterthwaite strategy-proofness impossibility",
+      "status": "ESTABLISHED_PRIOR_ART",
+      "summary_ko": "충분히 풍부한 대안과 unrestricted preferences에서 비독재적 resolute social choice가 완전한 strategy-proofness까지 동시에 만족할 수 없다는 고전적 결과다.",
+      "evidence_class": "PRIOR_ART",
+      "sources": [
+        {
+          "kind": "external_url",
+          "locator": "https://plato.stanford.edu/entries/social-choice/",
+          "license_note": "Reference/citation only; no source text copied."
+        }
+      ],
+      "tags": [
+        "prior-art",
+        "strategy-proofness",
+        "manipulation",
+        "Gibbard",
+        "Satterthwaite"
+      ]
+    },
+    {
+      "id": "PA-020",
+      "type": "prior_art",
+      "title_ko": "Nash bargaining / Individual Rationality",
+      "title_en": "Nash bargaining / Individual Rationality",
+      "status": "ESTABLISHED_PRIOR_ART",
+      "summary_ko": "불합의점보다 나쁘지 않은 참여조건, Pareto 효율, 대칭성은 고전적 bargaining solution의 핵심 선행기준이다.",
+      "evidence_class": "PRIOR_ART",
+      "sources": [
+        {
+          "kind": "external_url",
+          "locator": "https://web.stanford.edu/~niederle/Nash%20Bargaining.pdf",
+          "license_note": "Academic lecture reference summarizing classical Nash bargaining axioms; citation only."
+        }
+      ],
+      "tags": [
+        "prior-art",
+        "bargaining",
+        "individual-rationality",
+        "disagreement-point"
+      ]
+    },
+    {
+      "id": "PA-021",
+      "type": "prior_art",
+      "title_ko": "Cooperative-game Core",
+      "title_en": "Cooperative-game Core",
+      "status": "ESTABLISHED_PRIOR_ART",
+      "summary_ko": "어떤 coalition도 구성원 모두가 더 선호하는 대안으로 이탈할 수 없는 안정적 결과집합인 core는 협동게임이론의 기존 해개념이다.",
+      "evidence_class": "PRIOR_ART",
+      "sources": [
+        {
+          "kind": "external_url",
+          "locator": "https://plato.stanford.edu/entries/logic-power-games/",
+          "license_note": "Reference/citation only; no source text copied."
+        }
+      ],
+      "tags": [
+        "prior-art",
+        "core",
+        "coalition",
+        "stability"
       ]
     }
   ],
@@ -1171,6 +1305,83 @@
       "to": "GR-003",
       "qualifiers": {
         "scope": "object/meta-level separation protecting core principles from self-modification",
+        "evidence_class": "PRIOR_ART",
+        "source_path": "CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md"
+      }
+    },
+    {
+      "id": "REL-037",
+      "from": "RQ-001",
+      "type": "has_claim",
+      "to": "CL-004",
+      "qualifiers": {
+        "scope": "role-reversal mutual acceptability under heterogeneous preferences",
+        "evidence_class": "HYPOTHESIS",
+        "source_path": "LONG_HORIZON_MIN_INTERVENTION_E2E.md"
+      }
+    },
+    {
+      "id": "REL-038",
+      "from": "CL-004",
+      "type": "governs",
+      "to": "GR-004",
+      "qualifiers": {
+        "scope": "operational mutual-acceptability kernel",
+        "evidence_class": "GOVERNANCE_METHODOLOGY",
+        "source_path": "LONG_HORIZON_MIN_INTERVENTION_E2E.md"
+      }
+    },
+    {
+      "id": "REL-039",
+      "from": "CL-004",
+      "type": "tested_by",
+      "to": "EX-008",
+      "qualifiers": {
+        "scope": "pre-execution v1.1 mutual-acceptability diagnostics added before any E008 result",
+        "evidence_class": "PUBLIC_SPECIFICATION",
+        "source_path": "experiments/e008/MUTUAL_ACCEPTABILITY_AMENDMENT_v1_1.md"
+      }
+    },
+    {
+      "id": "REL-040",
+      "from": "PA-018",
+      "type": "prior_art_for",
+      "to": "GR-004",
+      "qualifiers": {
+        "scope": "limits on universally satisfactory non-dictatorial preference aggregation",
+        "evidence_class": "PRIOR_ART",
+        "source_path": "CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md"
+      }
+    },
+    {
+      "id": "REL-041",
+      "from": "PA-019",
+      "type": "prior_art_for",
+      "to": "GR-004",
+      "qualifiers": {
+        "scope": "limits on universal strategy-proofness",
+        "evidence_class": "PRIOR_ART",
+        "source_path": "CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md"
+      }
+    },
+    {
+      "id": "REL-042",
+      "from": "PA-020",
+      "type": "prior_art_for",
+      "to": "GR-004",
+      "qualifiers": {
+        "scope": "disagreement point, individual rationality, Pareto efficiency and symmetry",
+        "evidence_class": "PRIOR_ART",
+        "source_path": "CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md"
+      }
+    },
+    {
+      "id": "REL-043",
+      "from": "PA-021",
+      "type": "prior_art_for",
+      "to": "GR-004",
+      "qualifiers": {
+        "scope": "coalitional deviation stability diagnostic",
         "evidence_class": "PRIOR_ART",
         "source_path": "CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md"
       }
