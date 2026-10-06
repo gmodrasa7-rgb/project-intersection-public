@@ -409,6 +409,134 @@
         "records",
         "technical-failure"
       ]
+    },
+    {
+      "id": "CL-003",
+      "type": "claim",
+      "title_ko": "장기총량·최소충분관여는 지속 재최적화되어야 한다",
+      "title_en": "Long-horizon value and minimum-sufficient intervention require continual re-optimization",
+      "status": "HYPOTHESIS_COMPOSITE_INCREMENTAL_VALUE_UNTESTED",
+      "summary_ko": "새 발견·기술·능력 변화로 단기보상 압력이 반복 재유입될 수 있으므로, 고정 규칙보다 버전업 가능한 장기총량 평가와 최소충분관여를 결합해야 한다는 후보 주장이다.",
+      "evidence_class": "HYPOTHESIS",
+      "sources": [
+        {
+          "kind": "repo_path",
+          "locator": "LONG_HORIZON_MIN_INTERVENTION_E2E.md",
+          "license_note": "Project synthesis; prior-art components explicitly attributed and incremental value unresolved."
+        }
+      ],
+      "tags": [
+        "long-horizon",
+        "minimum-intervention",
+        "adaptive",
+        "option-space"
+      ]
+    },
+    {
+      "id": "GR-003",
+      "type": "governance_rule",
+      "title_ko": "장기총량·최소충분관여 동적 루프",
+      "title_en": "Long-horizon minimum-sufficient-intervention dynamic loop",
+      "status": "GOVERNANCE_CANDIDATE",
+      "summary_ko": "모든 영향을 받는 개체의 viability floor를 먼저 보존하고, 그 feasible set 안에서 장기 생성성·option-space를 평가한 뒤 필요한 최소 개입을 선택하고 재관측·rollback·버전업하는 end-to-end 운영후보다.",
+      "evidence_class": "GOVERNANCE_METHODOLOGY",
+      "sources": [
+        {
+          "kind": "repo_path",
+          "locator": "LONG_HORIZON_MIN_INTERVENTION_E2E.md",
+          "license_note": "Project synthesis; not validated as a universal rule."
+        }
+      ],
+      "tags": [
+        "receding-horizon",
+        "viability",
+        "power-reversal",
+        "rollback"
+      ]
+    },
+    {
+      "id": "PA-004",
+      "type": "prior_art",
+      "title_ko": "Model Predictive Control / Receding Horizon Control",
+      "title_en": "Model Predictive Control / Receding Horizon Control",
+      "status": "ESTABLISHED_PRIOR_ART",
+      "summary_ko": "제약을 만족시키면서 유한 horizon을 반복 최적화하고 첫 행동만 실행한 뒤 새 상태에서 다시 푸는 구조는 확립된 제어이론 선행연구다.",
+      "evidence_class": "PRIOR_ART",
+      "sources": [
+        {
+          "kind": "external_url",
+          "locator": "https://doi.org/10.1016/j.automatica.2013.11.030",
+          "license_note": "Citation only; rights remain with the publisher/authors."
+        }
+      ],
+      "tags": [
+        "prior-art",
+        "MPC",
+        "receding-horizon"
+      ]
+    },
+    {
+      "id": "PA-005",
+      "type": "prior_art",
+      "title_ko": "Viability Theory",
+      "title_en": "Viability Theory",
+      "status": "ESTABLISHED_PRIOR_ART",
+      "summary_ko": "단일 목적함수 최대화보다 시스템이 제약집합 안에서 지속 가능한 trajectory를 유지할 수 있는 조건을 찾는 이론은 확립된 선행연구다.",
+      "evidence_class": "PRIOR_ART",
+      "sources": [
+        {
+          "kind": "external_url",
+          "locator": "https://viability-theory.org/index.php/en/basic-principles",
+          "license_note": "Citation/reference only; no source text copied."
+        }
+      ],
+      "tags": [
+        "prior-art",
+        "viability",
+        "constraints"
+      ]
+    },
+    {
+      "id": "PA-006",
+      "type": "prior_art",
+      "title_ko": "Adaptive Governance",
+      "title_en": "Adaptive Governance",
+      "status": "ESTABLISHED_PRIOR_ART",
+      "summary_ko": "불확실성·변화 아래에서 적응성, 책임성, 안정성을 함께 다루는 거버넌스 접근은 기존 연구영역이다.",
+      "evidence_class": "PRIOR_ART",
+      "sources": [
+        {
+          "kind": "external_url",
+          "locator": "https://doi.org/10.1016/j.giq.2016.02.003",
+          "license_note": "Citation only; rights remain with the publisher/authors."
+        }
+      ],
+      "tags": [
+        "prior-art",
+        "adaptive-governance",
+        "accountability"
+      ]
+    },
+    {
+      "id": "PA-007",
+      "type": "prior_art",
+      "title_ko": "Corrigibility / Goal Update Acceptance",
+      "title_en": "Corrigibility / Goal Update Acceptance",
+      "status": "ESTABLISHED_PRIOR_ART",
+      "summary_ko": "후속 수정·override·goal update를 방해하지 않는 agent 설계는 corrigibility 선행연구에 속한다.",
+      "evidence_class": "PRIOR_ART",
+      "sources": [
+        {
+          "kind": "external_url",
+          "locator": "https://proceedings.mlr.press/v306/hudson26a.html",
+          "license_note": "Citation only; no paper text or figures copied."
+        }
+      ],
+      "tags": [
+        "prior-art",
+        "corrigibility",
+        "updates"
+      ]
     }
   ],
   "relations": [
@@ -608,6 +736,83 @@
         "scope": "benign technical loss can mimic missing-record symptoms",
         "evidence_class": "NEGATIVE_CONTROL",
         "source_path": "AUTONOMOUS_RESEARCH_STATE.json"
+      }
+    },
+    {
+      "id": "REL-019",
+      "from": "RQ-001",
+      "type": "has_claim",
+      "to": "CL-003",
+      "qualifiers": {
+        "scope": "dynamic long-horizon coexistence governance hypothesis",
+        "evidence_class": "HYPOTHESIS",
+        "source_path": "LONG_HORIZON_MIN_INTERVENTION_E2E.md"
+      }
+    },
+    {
+      "id": "REL-020",
+      "from": "CL-003",
+      "type": "governs",
+      "to": "GR-003",
+      "qualifiers": {
+        "scope": "operational candidate for dynamic evaluation and minimum sufficient intervention",
+        "evidence_class": "GOVERNANCE_METHODOLOGY",
+        "source_path": "LONG_HORIZON_MIN_INTERVENTION_E2E.md"
+      }
+    },
+    {
+      "id": "REL-021",
+      "from": "PA-004",
+      "type": "prior_art_for",
+      "to": "GR-003",
+      "qualifiers": {
+        "scope": "receding-horizon repeated constrained optimization",
+        "evidence_class": "PRIOR_ART",
+        "source_path": "CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md"
+      }
+    },
+    {
+      "id": "REL-022",
+      "from": "PA-005",
+      "type": "prior_art_for",
+      "to": "GR-003",
+      "qualifiers": {
+        "scope": "viability-set constraint preservation",
+        "evidence_class": "PRIOR_ART",
+        "source_path": "CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md"
+      }
+    },
+    {
+      "id": "REL-023",
+      "from": "PA-006",
+      "type": "prior_art_for",
+      "to": "GR-003",
+      "qualifiers": {
+        "scope": "adaptive accountable governance under uncertainty",
+        "evidence_class": "PRIOR_ART",
+        "source_path": "CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md"
+      }
+    },
+    {
+      "id": "REL-024",
+      "from": "PA-007",
+      "type": "prior_art_for",
+      "to": "GR-003",
+      "qualifiers": {
+        "scope": "acceptance of later correction and updates",
+        "evidence_class": "PRIOR_ART",
+        "source_path": "CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md"
+      }
+    },
+    {
+      "id": "REL-025",
+      "from": "GR-001",
+      "type": "governs",
+      "to": "GR-003",
+      "qualifiers": {
+        "scope": "power-reversal and audit/exit/rollback/recovery co-scaling boundary",
+        "evidence_class": "GOVERNANCE_METHODOLOGY",
+        "source_path": "LONG_HORIZON_MIN_INTERVENTION_E2E.md"
       }
     }
   ]
