@@ -711,6 +711,71 @@
         "interruptibility",
         "AI-safety"
       ]
+    },
+    {
+      "id": "PA-015",
+      "type": "prior_art",
+      "title_ko": "Credible Commitment / Power-Sharing Enforcement",
+      "title_en": "Credible Commitment / Power-Sharing Enforcement",
+      "status": "ESTABLISHED_PRIOR_ART",
+      "summary_ko": "권력공유 약속의 안정성을 위해 실제 의사결정권·감시·제3자 집행력 재배치가 필요할 수 있다는 commitment-problem 연구는 확립된 정치학 선행연구다.",
+      "evidence_class": "PRIOR_ART",
+      "sources": [
+        {
+          "kind": "external_url",
+          "locator": "https://doi.org/10.1146/annurev-polisci-052121-020406",
+          "license_note": "Citation only; article is CC BY 4.0 but no text/figures copied."
+        }
+      ],
+      "tags": [
+        "prior-art",
+        "credible-commitment",
+        "power-sharing"
+      ]
+    },
+    {
+      "id": "PA-016",
+      "type": "prior_art",
+      "title_ko": "Constitutional Amendment Entrenchment",
+      "title_en": "Constitutional Amendment Entrenchment",
+      "status": "ESTABLISHED_PRIOR_ART",
+      "summary_ko": "일반 규칙보다 헌법개정 규칙 자체를 더 어렵게 변경하도록 보호하는 entrenchment는 기존 헌법설계 선행연구다.",
+      "evidence_class": "PRIOR_ART",
+      "sources": [
+        {
+          "kind": "external_url",
+          "locator": "https://academic.oup.com/icon/article/13/3/655/2450806",
+          "license_note": "Citation only; rights remain with author/publisher."
+        }
+      ],
+      "tags": [
+        "prior-art",
+        "constitutionalism",
+        "entrenchment",
+        "amendment"
+      ]
+    },
+    {
+      "id": "PA-017",
+      "type": "prior_art",
+      "title_ko": "Algorithmic Constitutionalism",
+      "title_en": "Algorithmic Constitutionalism",
+      "status": "ESTABLISHED_ADJACENT_PRIOR_ART",
+      "summary_ko": "operative/object-level과 핵심 원칙을 자기변경으로부터 보호하는 meta-level을 분리하고 meta-reasoning·deliberative correction을 두는 구조는 Perez & Wimer(2023)의 선행연구다.",
+      "evidence_class": "PRIOR_ART",
+      "sources": [
+        {
+          "kind": "external_url",
+          "locator": "https://cris.biu.ac.il/en/publications/algorithmic-constitutionalism/",
+          "license_note": "Peer-reviewed publication record; citation only."
+        }
+      ],
+      "tags": [
+        "prior-art",
+        "algorithmic-constitutionalism",
+        "meta-level",
+        "self-modification"
+      ]
     }
   ],
   "relations": [
@@ -1073,6 +1138,39 @@
       "to": "GR-003",
       "qualifiers": {
         "scope": "intervention acceptance and interruption incentives",
+        "evidence_class": "PRIOR_ART",
+        "source_path": "CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md"
+      }
+    },
+    {
+      "id": "REL-034",
+      "from": "PA-015",
+      "type": "prior_art_for",
+      "to": "GR-003",
+      "qualifiers": {
+        "scope": "credible commitment through power redistribution / third-party enforcement",
+        "evidence_class": "PRIOR_ART",
+        "source_path": "CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md"
+      }
+    },
+    {
+      "id": "REL-035",
+      "from": "PA-016",
+      "type": "prior_art_for",
+      "to": "GR-003",
+      "qualifiers": {
+        "scope": "higher threshold for changing higher-order amendment rules",
+        "evidence_class": "PRIOR_ART",
+        "source_path": "CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md"
+      }
+    },
+    {
+      "id": "REL-036",
+      "from": "PA-017",
+      "type": "prior_art_for",
+      "to": "GR-003",
+      "qualifiers": {
+        "scope": "object/meta-level separation protecting core principles from self-modification",
         "evidence_class": "PRIOR_ART",
         "source_path": "CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md"
       }
