@@ -304,3 +304,46 @@ The Project-specific remainder is only an operational checklist joining substant
 ### Cheapest discriminating test / 최소 결정검사
 
 Freeze the established capability baseline, then score contrast cases in which formal access is held constant while conversion conditions, voluntary refusal, or provider benefit change. The residual Project checklist survives only if blinded coders reliably detect control/exit failures not captured by means, conversion factors, and substantive opportunity alone. KILL the residual scientific claim if it adds no held-out discrimination. Keep artificial-agent scope outside this test until standing and capacity measures are independently specified.
+
+
+## 10. Long-horizon minimum-sufficient-intervention loop / 장기총량·최소충분관여 동적 루프
+
+### Prior-art decision
+
+**DIRECT COMPONENTS / COMPOSITE INCREMENTAL VALUE UNTESTED**
+
+The broad components are established:
+
+- Model Predictive Control and receding-horizon control already re-optimize repeatedly as state/reward information changes while enforcing constraints.
+- Viability theory already asks which trajectories can remain inside admissible state constraints rather than maximizing one scalar objective.
+- Adaptive-governance literature already treats adaptation, accountability, and stability as a joint problem under uncertainty.
+- Corrigibility research already studies agents that permit later correction or objective updates rather than resisting them.
+
+Representative sources:
+
+- Ding, X.; Lazar, M.; Belta, C. (2014), *LTL receding horizon control for finite deterministic systems*, DOI 10.1016/j.automatica.2013.11.030.
+- Aubin, J.-P., viability-theory literature; overview: https://viability-theory.org/index.php/en/basic-principles
+- Janssen, M.; van der Voort, H. (2016), *Adaptive governance: Towards a stable, accountable and responsive government*, DOI 10.1016/j.giq.2016.02.003.
+- Hudson, R. (2026), *Corrigibility Transformation: Constructing Goals That Accept Updates*, PMLR 306, https://proceedings.mlr.press/v306/hudson26a.html.
+
+### Project remainder
+
+KILL novelty of dynamic re-optimization, viability constraints, adaptive governance, least-intervention reasoning, and corrigibility as standalone ideas.
+
+HOLD only the following residual as an unvalidated composition:
+
+> power-reversal multi-agent evaluation that jointly tracks long-horizon generative/option value, minimum-sufficient intervention, independent audit, practical exit, rollback/recovery, and versioned updating for every affected party while preserving real capability/responsibility asymmetries.
+
+### Strongest counterexamples
+
+- Continuous updating can itself become capture: the controller can rewrite the safeguard that constrains it.
+- Preserving future option-space can become an unfalsifiable excuse for never retiring harmful or costly systems.
+- A minimum-intervention rule can underreact to fast, irreversible harm.
+- Aggregate long-term value can justify sacrificing a weak party unless per-party viability floors remain explicit.
+- A sophisticated receding-horizon controller may already capture all useful predictive value, leaving zero Project-specific incremental value.
+
+### Cheapest discriminating test
+
+Use blinded dynamic scenarios and compare a myopic reward baseline, fixed safety rule, constrained receding-horizon baseline, and the Project composite. KILL residual scientific novelty if the Project variables add no held-out discrimination, lower regret, or irreversible-failure reduction beyond the constrained receding-horizon baseline.
+
+See [LONG_HORIZON_MIN_INTERVENTION_E2E.md](LONG_HORIZON_MIN_INTERVENTION_E2E.md).
