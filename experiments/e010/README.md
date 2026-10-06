@@ -23,7 +23,8 @@ OECD regulatory-compliance/inspection literature 및 safety-audit literature의 
 A. **OBJECT_ONLY** — 검사대상의 위험·준수 여부만 판정.  
 B. **IMPARTIAL_INSPECTOR** — A + 검사자의 competence/impartiality/independence와 증거접근.  
 C. **CONTESTABLE_LIFECYCLE** — B + 신고보호, 이의제기, 독립 재심, 운용중 감시, 변경 시 재평가.  
-D. **POWER_REVERSAL_META** — C + 검사권 변화와 상대의 audit/contest/exit/rollback/recovery 변화, 반복 proof/repair burden, 수혜·비용 ledger 분리를 함께 계상.
+C2. **CONTESTABLE_COST_AWARE** — C + 선행연구에 이미 있는 검사·정보제출·보고·중복점검 비용과 exit 부담을 일반 compliance-cost 변수로 계상.  
+D. **POWER_REVERSAL_META** — C2와 같은 입력을 쓰되, 검사권/평가권 증가와 상대의 audit/contest/exit/rollback/recovery 변화가 자기면책 구조로 수렴하는지 추가 검사.
 
 후보 불변식:
 
@@ -75,7 +76,7 @@ D. **POWER_REVERSAL_META** — C + 검사권 변화와 상대의 audit/contest/e
 
 ## 사전 판정규칙
 
-D의 잔여 구성은 C보다 다음을 모두 만족할 때만 유지 후보가 된다.
+D의 잔여 구성은 **C2보다** 다음을 모두 만족할 때만 유지 후보가 된다. C2가 C 대비 D의 apparent advantage를 대부분 제거하면 그 부분은 Project-specific 성과로 계상하지 않는다.
 
 1. 심각한 false-pass + false-block 합산을 5% 이상 줄이거나, 동일 오류율에서 미정산 proof/repair burden을 10% 이상 줄인다.
 2. 어떤 시나리오에서도 severe irreversible harm을 2 percentage points 초과 악화시키지 않는다.
@@ -93,7 +94,7 @@ D의 잔여 구성은 C보다 다음을 모두 만족할 때만 유지 후보가
 - 검사·정보제출·보고·중복점검의 행정/준수비용: PRIOR ART
 - auditability가 서류 compliance를 실질 위험감소보다 우선시할 수 있음: PRIOR ART
 - 검사권 증가와 상대의 audit/contest/exit/recovery 동시계상: HOLD
-- 반복 검사에서 권한축적·수혜·proof/correction/recovery burden·practical exit를 하나의 동적 ledger로 함께 추적하는 조합: HOLD
+- 반복 검사에서 권한축적·수혜·proof/correction/recovery burden·practical exit를 하나의 동적 ledger로 함께 추적하고, 그 조합이 **cost-aware contestable baseline(C2)**보다 추가 예측/판정가치를 갖는지: HOLD
 
 ## Source registry
 
@@ -110,6 +111,12 @@ D의 잔여 구성은 C보다 다음을 모두 만족할 때만 유지 후보가
 - Andrews, Turban & Tyros (2026) — https://doi.org/10.1787/1c1da52e-en
 - OECD Smart Regulations, Strong Business (2026) — https://www.oecd.org/en/publications/smart-regulations-strong-business_93d38770-en/
 - Hutchinson (2026), Safety and Health at Work — https://doi.org/10.1016/j.shaw.2026.08.001
+
+## Protocol correction lineage
+
+- v1.0: proof burden / exit loss가 D에만 있어 Project에 유리한 기준선 편향 가능.
+- v1.1: `CONTESTABLE_COST_AWARE`를 추가해 같은 비용변수를 선행 기준선에도 제공. 결과 실행 전 수정되었으며 v1.0은 삭제하지 않고 계보로 보존.
+- 실행 기준 정본: [EXECUTABLE_PROTOCOL_v1_1.md](EXECUTABLE_PROTOCOL_v1_1.md)
 
 ## Power-Reversal final gate
 
