@@ -3,6 +3,8 @@
 
 Status: **PREREGISTERED SPECIFICATION / NO RESULT YET**
 
+Pre-execution amendment: **v1.1 Mutual Acceptability Kernel** — [MUTUAL_ACCEPTABILITY_AMENDMENT_v1_1.md](MUTUAL_ACCEPTABILITY_AMENDMENT_v1_1.md)
+
 Purpose: test whether the Project v2 composition adds decision value beyond established baselines.
 
 This package does **not** claim that Project Intersection is superior. It defines the comparison needed to discover that.
@@ -79,3 +81,4 @@ not:
 
 - `scenario_matrix.json` — machine-readable cases and factor values.
 - `validate.py` — structural / pairing checks.
+- `MUTUAL_ACCEPTABILITY_AMENDMENT_v1_1.md` — pre-execution mutual-acceptability diagnostics; no result.

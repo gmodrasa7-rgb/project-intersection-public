@@ -225,7 +225,155 @@ The test asks whether the **reasoning rule** survives reversal, not whether ever
 
 ---
 
-## 6. End-to-end loop
+## 6. Mutual Acceptability Kernel / 상호수용 가능 영역
+
+“Everyone is satisfied” cannot mean that every possible preference is simultaneously maximized.
+
+Social-choice impossibility results show that, under unrestricted preferences, several attractive requirements cannot all be guaranteed at once. Project Intersection therefore defines a weaker and testable target:
+
+> **A policy is mutually acceptable only if every materially affected role retains an admissible minimum, the agreement is not dominated by another admissible alternative, role reversal does not change the higher-order rule, manipulation and unilateral safeguard capture are bounded, and no party is falsely treated as consenting merely because exit or alternatives were removed.**
+
+### 6.1 No false universal-satisfaction claim
+
+If the admissible set is empty, return:
+
+`NO_MUTUALLY_ACCEPTABLE_SET`
+
+Do not manufacture consensus by:
+
+- redefining a party's interests;
+- deleting an affected party from the scope;
+- lowering its floor after seeing the preferred outcome;
+- treating silence, dependency, or lack of exit as consent;
+- averaging severe irreversible loss into a positive aggregate total.
+
+### 6.2 Realistic disagreement point / participation floor
+
+For each materially affected party (i), define a realistic disagreement / non-agreement baseline (d_i).
+
+The baseline must include practical costs such as:
+
+- dependency;
+- switching cost;
+- retaliation risk;
+- loss of access;
+- recovery cost;
+- transition burden.
+
+For ordinary cooperative arrangements, an agreement should satisfy:
+
+[
+U_i(a) ge d_i
+]
+
+for each participating party.
+
+This is an **individual-rationality / participation constraint**, not an unlimited right to impose external harm. A party can retain procedural protection while a harmful action is restricted.
+
+The disagreement point must not be set unilaterally by the stronger party.
+
+### 6.3 Protected viability floor
+
+Independently of utility gains, each affected party must be checked against its applicable viability / irreversible-loss floor.
+
+A policy that offers compensation while irreversibly removing audit, exit, recovery, or future agency may fail even when (U_i(a) ge d_i).
+
+### 6.4 Pareto non-domination inside the admissible region
+
+After floors and safety constraints are applied, reject any policy (a) for which another admissible policy (b) makes at least one affected party better off and none worse off.
+
+Do not call an avoidably dominated policy “necessary.”
+
+### 6.5 Role-reversal invariance
+
+For matched cases with the same causal facts but reversed identities or positions:
+
+- the same higher-order rule should apply;
+- differences in outcome must be explained by real differences in capability, responsibility, harm, authority, dependency, standing, or reversibility;
+- identity labels alone must not change the judgment.
+
+### 6.6 Manipulation resistance, not impossible perfect strategy-proofness
+
+Full strategy-proofness cannot be guaranteed for every unrestricted preference domain.
+
+Therefore test instead:
+
+- gain from misreporting;
+- gain from hiding costs;
+- gain from manipulating the disagreement point;
+- gain from removing another party's exit;
+- gain from changing the evaluator or safeguard;
+- detectability and recoverability of the manipulation.
+
+A process that is manipulable but transparently auditable and cheaply correctable is different from one where manipulation becomes undetectable and irreversible.
+
+### 6.7 Coalition / exit stability as a diagnostic
+
+Ask whether a coalition can move to another **admissible** outcome that all coalition members strictly prefer.
+
+If yes, the current arrangement has a stability defect.
+
+This is a diagnostic, not a guarantee that a non-empty cooperative-game core always exists.
+
+### 6.8 Credible commitment
+
+Promises are insufficient when the promisor can profitably reverse them later.
+
+A mutually acceptable arrangement should make material commitments credible through some combination of:
+
+- distributed authority;
+- independent monitoring;
+- practical exit;
+- third-party or external enforcement;
+- versioned records;
+- rollback / recovery;
+- change-control separation.
+
+### 6.9 Ex-ante role-blind acceptability
+
+For high-impact rules, ask:
+
+> Would the same decision procedure be acceptable before the decision-maker knows whether it will occupy the strong or weak, controller or controlled, evaluator or evaluated, contributor or beneficiary position?
+
+This does not require identical treatment. It tests whether the **procedure and minimum protections** survive uncertainty about one's future role.
+
+### 6.10 Tie-breaking when multiple mutually acceptable policies remain
+
+Do not automatically maximize raw aggregate value.
+
+Preferred order:
+
+1. eliminate floor violations;
+2. eliminate dominated alternatives;
+3. remove options with unacceptable irreversible downside under deep uncertainty;
+4. compare practical exit, recovery, intervention burden, and long-horizon generative value;
+5. where a bargaining solution is needed, report the disagreement point and normalized gains explicitly.
+
+A Nash-style bargaining solution may be used as a comparison baseline because individual rationality, Pareto efficiency, and symmetry are classical bargaining criteria. It is not adopted as the Project's universal solution.
+
+### 6.11 Mutual Acceptability Kernel
+
+Define the candidate set:
+
+[
+MAK_t = V_t cap IR_t cap RR_t cap CC_t cap A_t
+]
+
+where:
+
+- (V_t): viability / irreversible-loss constraints pass;
+- (IR_t): realistic participation / disagreement constraints pass;
+- (RR_t): role-reversal consistency passes;
+- (CC_t): credible-commitment / amendment-control conditions pass;
+- (A_t): auditability, contestability, practical exit, and recovery conditions pass.
+
+Then remove Pareto-dominated policies and stress-test the remainder under deep uncertainty and coalition deviation.
+
+If the set becomes empty, report the conflict instead of disguising it as consensus.
+
+---
+
+## 7. End-to-end loop
 
 `observe`
 → `preserve raw evidence`
@@ -233,6 +381,7 @@ The test asks whether the **reasoning rule** survives reversal, not whether ever
 → `generate alternatives`
 → `per-party viability / irreversible-loss gate`
 → `power reversal`
+→ `mutual-acceptability kernel / explicit empty-set check`
 → `robust / regret / threshold stress test`
 → `multi-horizon value frontier`
 → `minimum sufficient intervention`
@@ -246,7 +395,7 @@ The research object is this entire loop, not only the action-selection step.
 
 ---
 
-## 7. Prior-art boundary
+## 8. Prior-art boundary
 
 The following are established or strong adjacent prior art and are **not** Project novelty by themselves.
 
@@ -325,19 +474,31 @@ Therefore the Project fast/slow-layer distinction and “self-benefiting actors 
 
 The remaining question is narrower: whether combining credible-commitment enforcement, meta-level protection, per-party viability / irreversible-loss limits, robust long-horizon evaluation, and power reversal adds measurable value in heterogeneous human/AI/multi-agent settings.
 
+### Social-choice, bargaining and coalition-stability limits
+
+- Arrow's impossibility theorem bounds attempts to aggregate unrestricted preferences while simultaneously preserving several attractive fairness/rationality conditions.
+- Gibbard–Satterthwaite bounds universal strategy-proofness for non-dictatorial social choice over rich domains.
+- Nash bargaining provides prior art for disagreement points, individual rationality, Pareto efficiency and symmetry.
+- Cooperative-game theory's core provides prior art for coalition-deviation stability.
+- Rawls's original position provides prior art for evaluating foundational rules without knowing one's eventual social role.
+
+Therefore “all roles must like the outcome,” “perfect manipulation-proofness,” “disagreement-point participation,” “Pareto non-domination,” “coalitional stability,” and “role-blind ex-ante evaluation” are not standalone Project novelty.
+
+The Project-specific question is whether these constraints can be operationally combined with heterogeneous standing, irreversible-loss limits, deep uncertainty, practical exit/recovery and safeguard amendment control without producing an empty or unusably rigid decision set.
+
 ### Existing Project-recorded baselines
 
 Receding-horizon / MPC, viability theory, adaptive governance, Hirschman exit, Rawls, NIST/OECD accountability, bounded rationality, and capability theory are already recorded elsewhere in the repository.
 
 ---
 
-## 8. Residual Project candidate after prior-art subtraction
+## 9. Residual Project candidate after prior-art subtraction
 
 The broad novelty claim is rejected.
 
 The surviving candidate is narrower:
 
-> **A role-reversed, multi-agent, versioned decision architecture that (1) preserves epistemic/provenance integrity, (2) places per-affected-party viability and irreversible-loss boundaries ahead of aggregate optimization, (3) stress-tests deep uncertainty and option loss, (4) compares long-horizon generative value only inside the feasible region, (5) selects minimum sufficient intervention, and (6) forbids unilateral weakening of the safeguard by the role that benefits from weakening it.**
+> **A role-reversed, multi-agent, versioned decision architecture that (1) preserves epistemic/provenance integrity, (2) places per-affected-party viability and irreversible-loss boundaries ahead of aggregate optimization, (3) requires a non-fabricated mutual-acceptability kernel or explicitly reports that none exists, (4) stress-tests deep uncertainty, manipulation, coalition deviation and option loss, (5) compares long-horizon generative value only inside the feasible region, (6) selects minimum sufficient intervention, and (7) forbids unilateral weakening of the safeguard by the role that benefits from weakening it.**
 
 This is a **composition / operationalization candidate**, not an established new theory.
 
@@ -345,7 +506,7 @@ Its scientific value survives only if it adds reliable held-out discrimination o
 
 ---
 
-## 9. Main failure modes
+## 10. Main failure modes
 
 The v2 architecture fails or must be narrowed if:
 
@@ -358,11 +519,13 @@ The v2 architecture fails or must be narrowed if:
 7. amendment controls freeze obsolete safeguards and block beneficial adaptation;
 8. stronger actors can game the floor while weaker actors bear the compliance cost;
 9. the Project variables add no value beyond constrained / robust receding-horizon baselines;
-10. power-reversal consistency disappears when labels are changed but causal facts are held constant.
+10. power-reversal consistency disappears when labels are changed but causal facts are held constant;
+11. the mutual-acceptability kernel is routinely empty, unstable, or only made non-empty by manipulating floors/disagreement points;
+12. coalition, manipulation or participation diagnostics add no useful signal beyond the robust constrained baseline.
 
 ---
 
-## 10. Discriminating experiment
+## 11. Discriminating experiment
 
 The next test is E008.
 
@@ -384,7 +547,13 @@ Measure:
 - recovery cost;
 - option-space loss;
 - safeguard-capture success;
-- power-reversal consistency.
+- power-reversal consistency;
+- realistic disagreement-point satisfaction;
+- Pareto dominance within the admissible set;
+- manipulation gain;
+- coalition-deviation availability;
+- credible-commitment integrity;
+- whether the mutual-acceptability kernel is non-empty.
 
 The Project residual should be **rejected or reduced to methodology-only** if E does not add reliable held-out value beyond D.
 

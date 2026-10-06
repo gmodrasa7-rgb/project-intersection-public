@@ -234,7 +234,7 @@ New discoveries, technologies, capabilities, and local opportunities can repeate
 
 Role-reversal review changed the ordering: **aggregate long-horizon value is not the top-level objective.** The current v2 candidate is:
 
-**preserve evidence and uncertainty → per-affected-party viability / irreversible-loss boundary → power reversal → robust deep-uncertainty stress test → long-horizon value frontier → minimum sufficient intervention → staged execution → independent review → rollback/recovery → versioned amendment**
+**preserve evidence and uncertainty → per-affected-party viability / irreversible-loss boundary → power reversal → mutual-acceptability kernel / explicit empty-set check → robust deep-uncertainty stress test → long-horizon value frontier → minimum sufficient intervention → staged execution → independent review → rollback/recovery → versioned amendment**
 
 A party that benefits from weakening a safeguard should not unilaterally approve that weakening.
 
@@ -822,7 +822,7 @@ Project Intersection은
 
 현재 v2 후보 구조는 다음과 같다.
 
-**원자료·불확실성 보존 → 영향을 받는 각 개체의 viability / 비가역손실 경계 → 역할반전 → deep uncertainty 강건성 검사 → 장기총량 frontier → 최소충분관여 → 단계 실행 → 독립검토 → rollback·복구 → 버전업 승인**
+**원자료·불확실성 보존 → 영향을 받는 각 개체의 viability / 비가역손실 경계 → 역할반전 → 상호수용 가능 영역 / 공집합 명시 → deep uncertainty 강건성 검사 → 장기총량 frontier → 최소충분관여 → 단계 실행 → 독립검토 → rollback·복구 → 버전업 승인**
 
 안전장치를 약화시켜 이득을 얻는 역할이 그 약화를 단독 승인해서는 안 된다.
 
