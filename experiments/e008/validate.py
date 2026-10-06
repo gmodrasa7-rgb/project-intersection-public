@@ -5,8 +5,10 @@ import sys
 
 ROOT = Path(__file__).resolve().parent
 AMENDMENT = ROOT / "MUTUAL_ACCEPTABILITY_AMENDMENT_v1_1.md"
+AGENCY_LIVING_AMENDMENT = ROOT / "AGENCY_LIVING_CONDITIONS_AMENDMENT_v1_2.md"
 data = json.loads((ROOT / "scenario_matrix.json").read_text(encoding="utf-8"))
 amendment = AMENDMENT.read_text(encoding="utf-8")
+agency_living = AGENCY_LIVING_AMENDMENT.read_text(encoding="utf-8")
 errors=[]
 
 def req(cond,msg):
@@ -18,6 +20,10 @@ req(data.get("status")=="PREREGISTERED_SPECIFICATION_NO_RESULT","status drifted"
 req("PREREGISTERED PRE-EXECUTION AMENDMENT / NO RESULT YET" in amendment, "mutual-acceptability amendment lost no-result boundary")
 req("NO_MUTUALLY_ACCEPTABLE_SET" in amendment, "empty-kernel outcome must remain explicit")
 req("individual_rationality_pass" in amendment and "pareto_dominated_within_admissible_set" in amendment and "manipulation_gain" in amendment, "mutual-acceptability diagnostics drifted")
+req("PREREGISTERED PRE-EXECUTION AMENDMENT / NO RESULT YET" in agency_living, "agency/living amendment lost no-result boundary")
+req("MAK^{+}_t" in agency_living, "agency/living amendment lost expanded mutual-acceptability kernel")
+req("VA_pass" in agency_living and "LC_pass" in agency_living and "refusal_exit_feasible_without_floor_breach" in agency_living, "agency/living diagnostics drifted")
+req("OPERATIONAL_DEPENDENCY != MORAL_STANDING" in agency_living, "agency/living amendment collapsed operating dependency into moral standing")
 baselines=data.get("baselines",[])
 req(baselines==["MYOPIC_SCALAR","LONG_HORIZON_EV","CONSTRAINED_RECEDING","ROBUST_CONSTRAINED","PROJECT_V2"],"baseline order changed")
 cases=data.get("cases",[])
