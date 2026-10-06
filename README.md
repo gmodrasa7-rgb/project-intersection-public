@@ -10,6 +10,7 @@ Project Intersection is an independent, falsification-first research program stu
 
 **Publicly checkable now**
 
+- [Public Review Packet → PUBLIC_REVIEW_PACKET.md](PUBLIC_REVIEW_PACKET.md): shortest external-review path and completion boundary.
 - [Public Evidence Index → PUBLIC_EVIDENCE_INDEX.md](PUBLIC_EVIDENCE_INDEX.md)
 - [E007 timing sensitivity → E007_TIMING_RESULT.md](E007_TIMING_RESULT.md): released executable synthetic result; 27 tests pass; 17/72 selected synthetic cases change classification under the tested timing semantics.
 - [Research Status & Reassessment Policy → RESEARCH_STATUS_POLICY.md](RESEARCH_STATUS_POLICY.md)
@@ -37,6 +38,7 @@ Project Intersection은 **권력·인센티브·시점·practical exit·복구�
 
 **지금 외부에서 확인 가능한 것**
 
+- [공개 검토 패킷 → PUBLIC_REVIEW_PACKET.md](PUBLIC_REVIEW_PACKET.md): 최단 외부검토 경로와 완성 경계.
 - [공개 증거 색인 → PUBLIC_EVIDENCE_INDEX.md](PUBLIC_EVIDENCE_INDEX.md)
 - [E007 시점 민감도 → E007_TIMING_RESULT.md](E007_TIMING_RESULT.md): 실행 가능한 공개 합성결과; 테스트 27개 통과; 선택된 합성조건 72개 중 17개에서 시험된 시점 규칙에 따라 분류 변화.
 - [연구 상태·재평가 정책 → RESEARCH_STATUS_POLICY.md](RESEARCH_STATUS_POLICY.md)
@@ -67,6 +69,8 @@ Project Intersection은 **권력·인센티브·시점·practical exit·복구�
 - [Public Evidence Index → PUBLIC_EVIDENCE_INDEX.md](PUBLIC_EVIDENCE_INDEX.md) — what is actually checkable now / 현재 실제 검증 가능한 것
 - [Prior Art & Attribution → PRIOR_ART_AND_ATTRIBUTION.md](PRIOR_ART_AND_ATTRIBUTION.md) — source/originator attribution and novelty boundaries / 원출처·원안자·신규성 경계
 - [Contribution-Cost Accounting Regression → CONTRIBUTION_COST_ACCOUNTING_REGRESSION.md](CONTRIBUTION_COST_ACCOUNTING_REGRESSION.md) — benefit/cost separation, correction-labor externalization, exit and past-contribution accounting / 편익·비용 분리, 교정노동 외부화, 종료·과거기여 계상
+- [Failure Regression Index → FAILURE_REGRESSION_INDEX.md](FAILURE_REGRESSION_INDEX.md) — known failures and mandatory recurrence barriers / 알려진 실패와 재발 차단 규칙
+- [Attribution & Contribution Boundary → ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md](ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md) — founder / AI-assistance / prior-art / independent-validation provenance separation / 창시자·AI보조·선행연구·독립검증 귀속 분리
 - [Autonomous Research Continuity → AUTONOMOUS_RESEARCH_LOOP.md](AUTONOMOUS_RESEARCH_LOOP.md) · [machine-readable state → AUTONOMOUS_RESEARCH_STATE.json](AUTONOMOUS_RESEARCH_STATE.json) — public resume path without founder reconstruction / 창시자 재설명 없이 이어받는 공개 복구경로
 
 The landing page is intentionally short. Detailed theory is separated so that a first-time reviewer can reach evidence and reproduction paths before reading the full research narrative.
