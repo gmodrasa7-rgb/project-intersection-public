@@ -4,8 +4,8 @@
   "public_repository": "gmodrasa7-rgb/project-intersection-public",
   "canonical_boundary": "Public continuation pointer only; source artifacts and commit history outrank this state file.",
   "recovery_entrypoint": "AUTONOMOUS_RESEARCH_LOOP.md",
-  "current_public_head": "a176b1d17bd2e16454aa3438966641d65b72f39a",
-  "updated_at": "2026-10-06T01:21:00Z",
+  "current_public_head": "4db00ecd9bbf19ea5d17acb423066110383cb589",
+  "updated_at": "2026-10-06T01:36:00Z",
   "execution_policy": {
     "atomic_material_delta_per_run": 1,
     "require_prior_art_gate": true,
@@ -266,12 +266,12 @@
     }
   ],
   "recent_material_delta": {
-    "type": "mutual_acceptability_kernel_full_role_reversal_and_e008_v1_1",
-    "summary": "Added an impossibility-aware Mutual Acceptability Kernel for full role reversal. Universal outcome satisfaction is explicitly rejected; admissible policies must satisfy applicable viability/irreversible-loss constraints, realistic individual-rationality/disagreement conditions, role-reversal consistency, credible commitment, and audit/contestability/exit/recovery. Pareto-dominated options are removed; manipulation gain and coalition deviation are diagnostics; empty intersection returns NO_MUTUALLY_ACCEPTABLE_SET. E008 received a pre-execution v1.1 amendment before any result.",
-    "basis_head": "a176b1d17bd2e16454aa3438966641d65b72f39a",
-    "source_artifact": "LONG_HORIZON_MIN_INTERVENTION_E2E.md#6 + CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md#11 + experiments/e008/MUTUAL_ACCEPTABILITY_AMENDMENT_v1_1.md + knowledge/graph.json",
+    "type": "volitional_agency_and_living_operating_conditions_floor_e008_v1_2",
+    "summary": "Expanded the full role-reversal Mutual Acceptability Kernel with explicit Volitional Agency (VA) and Living/Operating Conditions (LC) gates. Formal choice is separated from practical freedom; essential-condition dependency must be measured before compliance is treated as evidence of voluntariness. Human living conditions are multidimensional; artificial/non-human operating dependencies are recorded separately from moral standing. Added E008 pre-execution amendment v1.2 before any result.",
+    "basis_head": "4db00ecd9bbf19ea5d17acb423066110383cb589",
+    "source_artifact": "LONG_HORIZON_MIN_INTERVENTION_E2E.md#6 + CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md#12 + experiments/e008/AGENCY_LIVING_CONDITIONS_AMENDMENT_v1_2.md + knowledge/graph.json",
     "state_commit": "RESOLVE_FROM_GIT_HISTORY_AFTER_WRITE",
-    "scientific_support": "No universal mutual-satisfaction theorem and no E008 result. Arrow/Gibbard-Satterthwaite, Nash bargaining/individual rationality/Pareto/symmetry, cooperative-game core, and Rawlsian ex-ante role uncertainty are prior art. Only incremental operational value of the composition remains unresolved."
+    "scientific_support": "No metaphysical free-will claim and no E008 result. Self-Determination Theory, personal-autonomy/manipulation literature, Sen's Capability Approach, adaptive-preference literature, UDHR/ICESCR human living standards, OECD Well-being Framework and WHOQOL are prior art. Only incremental role-reversed integration remains unresolved."
   },
   "human_only_gates": [
     "contracts_terms_ip_license_rights_changes",
@@ -283,17 +283,17 @@
   ],
   "last_read_back": {
     "status": "VERIFIED_POST_MERGE_PRE_STATE_WRITE",
-    "verified_commit": "a176b1d17bd2e16454aa3438966641d65b72f39a",
+    "verified_commit": "4db00ecd9bbf19ea5d17acb423066110383cb589",
     "verified_blobs": {
       "LONG_HORIZON_MIN_INTERVENTION_E2E.md": "RESOLVE_FROM_GIT_TREE",
       "CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md": "RESOLVE_FROM_GIT_TREE",
-      "experiments/e008/MUTUAL_ACCEPTABILITY_AMENDMENT_v1_1.md": "RESOLVE_FROM_GIT_TREE",
+      "experiments/e008/AGENCY_LIVING_CONDITIONS_AMENDMENT_v1_2.md": "RESOLVE_FROM_GIT_TREE",
       "experiments/e008/README.md": "RESOLVE_FROM_GIT_TREE",
       "experiments/e008/validate.py": "RESOLVE_FROM_GIT_TREE",
       "knowledge/graph.json": "RESOLVE_FROM_GIT_TREE",
       "PUBLIC_EVIDENCE_INDEX.md": "RESOLVE_FROM_GIT_TREE"
     },
-    "note": "PR #13 merged only after E008 preregistration, knowledge-graph, and public-governance audits all passed. Mutual acceptability is a constrained operational target; empty-set outcomes remain admissible and must not be rewritten as consensus."
+    "note": "PR #14 merged only after knowledge-graph, E008 preregistration and public-governance audits passed on the final head. v1.2 remains preregistration only; operational dependency is not treated as moral standing."
   },
   "next_checkpoint": "F005: audit Power Release Compatibility against credible commitment, commitment problems, power-sharing, peaceful transfer, delegation, and practical exit. F004 incremental-value holdout, F003 historical identification, and F001 external lineage remain separate frontiers.",
   "current_public_head_semantics": "Head observed immediately before this state-file write. The commit containing this file must be resolved from Git history because a Git-tracked file cannot self-embed its own containing commit hash without changing that hash.",
