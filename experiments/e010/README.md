@@ -14,6 +14,10 @@ Date: 2026-10-07
 ISO/IEC 17020, IAEA 규제독립성, NRC safety-conscious work environment,
 NIST AI RMF, EU AI Act post-market monitoring, algorithmic contestability와 직접 겹친다.
 
+또한 검사·보고·정보제출·중복 점검이 행정·준수비용을 만들고,
+auditability가 실질 위험감소보다 서류·가시적 compliance에 노력을 편향시킬 수 있다는 점도
+OECD regulatory-compliance/inspection literature 및 safety-audit literature의 선행영역으로 처리한다.
+
 ## 비교 기준선
 
 A. **OBJECT_ONLY** — 검사대상의 위험·준수 여부만 판정.  
@@ -86,8 +90,10 @@ D의 잔여 구성은 C보다 다음을 모두 만족할 때만 유지 후보가
 
 - 검사자 공정성·독립성: PRIOR ART
 - 신고보호·이의제기·운용중 재평가: PRIOR ART
+- 검사·정보제출·보고·중복점검의 행정/준수비용: PRIOR ART
+- auditability가 서류 compliance를 실질 위험감소보다 우선시할 수 있음: PRIOR ART
 - 검사권 증가와 상대의 audit/contest/exit/recovery 동시계상: HOLD
-- 반복 검사에서 수혜와 proof/repair burden의 별도 ledger: HOLD
+- 반복 검사에서 권한축적·수혜·proof/correction/recovery burden·practical exit를 하나의 동적 ledger로 함께 추적하는 조합: HOLD
 
 ## Source registry
 
@@ -99,6 +105,11 @@ D의 잔여 구성은 C보다 다음을 모두 만족할 때만 유지 후보가
 - EU AI Act — https://eur-lex.europa.eu/eli/reg/2024/1689
 - IAEA Fukushima lessons — https://gnssn.iaea.org/FukushimaLessonsLearned/
 - Freiesleben, Meding & König (2026) — https://arxiv.org/abs/2605.16041
+- OECD Regulatory Enforcement and Inspections Toolkit (2018) — https://doi.org/10.1787/9789264303959-en
+- OECD Regulatory Compliance Cost Assessment Guidance (2014) — https://doi.org/10.1787/9789264209657-en
+- Andrews, Turban & Tyros (2026) — https://doi.org/10.1787/1c1da52e-en
+- OECD Smart Regulations, Strong Business (2026) — https://www.oecd.org/en/publications/smart-regulations-strong-business_93d38770-en/
+- Hutchinson (2026), Safety and Health at Work — https://doi.org/10.1016/j.shaw.2026.08.001
 
 ## Power-Reversal final gate
 
