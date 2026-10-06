@@ -393,3 +393,42 @@ The Project residual survives only if the fourth baseline adds measurable error/
 - EU AI Act: https://eur-lex.europa.eu/eli/reg/2024/1689
 - Freiesleben, Meding & König (2026): https://arxiv.org/abs/2605.16041
 - Dai (2026), regulatory auditing and self-auditing: https://doi.org/10.1007/s11149-026-09514-2
+
+
+### 2026-10-07 second correction — inspection/compliance burden is also prior art
+
+The E010 residual is narrowed again.
+
+The broad proposition that inspections and compliance processes can impose material proof, reporting, preparation, coordination, or administrative burden is **not Project novelty**.
+
+Additional direct/adjacent baselines:
+
+- **OECD Regulatory Enforcement and Inspections Toolkit (2018)** explicitly evaluates inspection systems in terms of efficiency, benefits/costs, consistency, fairness, stakeholder satisfaction, and overall effectiveness.
+- **OECD Regulatory Compliance Cost Assessment Guidance (2014)** treats compliance cost measurement and reduction as a standard regulatory-design problem.
+- **OECD Regulatory Compliance Costs and Productivity (2026)** estimates labour resources devoted to regulation-related tasks and documents material compliance costs.
+- **OECD Smart Regulations, Strong Business (2026)** identifies inspections and compliance checks themselves as burden sources when they are unpredictable, duplicative, fragmented, or repeatedly require preparation and information responses.
+- **Hutchinson (2026), Safety and Health at Work, DOI 10.1016/j.shaw.2026.08.001** finds that 448 corrective actions from 65 safety-audit reports were concentrated in administrative controls and lower organizational levels, with few actions verifying field-control effectiveness. This is direct evidence against treating more audit paperwork as equivalent to more safety.
+- Safety-clutter / over-proceduralization literature likewise shows that auditability and accountability pressures can generate documentation and internal bureaucracy that do not necessarily improve operational safety.
+
+**Novelty consequence:**
+
+The following are now also **NOVELTY_REJECTED as broad claims**:
+
+- inspection imposes administrative/proof burden;
+- reporting/documentation can dominate substantive risk reduction;
+- auditability can distort effort toward visible compliance;
+- duplicated/unpredictable inspections can impose avoidable cost.
+
+The remaining E010 candidate is narrower still:
+
+> whether a single operational meta-audit that jointly tracks (a) authority accumulation, (b) counterparty audit/contest/exit/rollback/recovery capacity, (c) repeated benefit versus proof/correction/recovery burden, and (d) role-reversal consistency adds held-out decision value beyond established impartiality, contestability, lifecycle monitoring, and compliance-cost baselines.
+
+That composition remains **HOLD / incremental value untested**.
+
+Added sources:
+
+- OECD (2018), Regulatory Enforcement and Inspections Toolkit: https://doi.org/10.1787/9789264303959-en
+- OECD (2014), Regulatory Compliance Cost Assessment Guidance: https://doi.org/10.1787/9789264209657-en
+- Andrews, Turban & Tyros (2026), Regulatory compliance costs and productivity: https://doi.org/10.1787/1c1da52e-en
+- OECD (2026), Smart Regulations, Strong Business: https://www.oecd.org/en/publications/smart-regulations-strong-business_93d38770-en/
+- Hutchinson (2026), How Safety Audits are Superficially Trapped: https://doi.org/10.1016/j.shaw.2026.08.001
