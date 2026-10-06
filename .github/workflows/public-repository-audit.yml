@@ -21,6 +21,7 @@ on:
       - "experiments/e007/PROVENANCE.md"
       - "experiments/e007/LICENSE_STATUS.md"
       - "experiments/e008/**"
+      - "experiments/e010/**"
       - "LONG_HORIZON_MIN_INTERVENTION_E2E.md"
       - ".github/pull_request_template.md"
       - ".github/workflows/public-repository-audit.yml"
@@ -43,6 +44,7 @@ on:
       - "experiments/e007/PROVENANCE.md"
       - "experiments/e007/LICENSE_STATUS.md"
       - "experiments/e008/**"
+      - "experiments/e010/**"
       - "LONG_HORIZON_MIN_INTERVENTION_E2E.md"
       - ".github/pull_request_template.md"
       - ".github/workflows/public-repository-audit.yml"
@@ -94,6 +96,9 @@ jobs:
           e009_readme = Path("experiments/e009/README.md").read_text(encoding="utf-8")
           e009_matrix = json.loads(Path("experiments/e009/scenario_matrix.json").read_text(encoding="utf-8"))
           multimodel_audit = Path("MULTI_MODEL_ADVERSARIAL_AUDIT_2026-10-06.md").read_text(encoding="utf-8")
+          e010_readme = Path("experiments/e010/README.md").read_text(encoding="utf-8")
+          e010_protocol = Path("experiments/e010/EXECUTABLE_PROTOCOL_v1_0.md").read_text(encoding="utf-8")
+          e010_matrix = json.loads(Path("experiments/e010/scenario_matrix.json").read_text(encoding="utf-8"))
 
           # Landing-page regression: keep first-review cost bounded.
           require(len(readme.splitlines()) <= 200, "README exceeded 200 lines; move detailed material to linked documents.")
@@ -164,6 +169,12 @@ jobs:
           require(len(e009_matrix.get("scenario_families", [])) == 16, "E009 scenario family set drifted.")
           require("Model agreement is not counted as independent scientific evidence." in e009_readme, "E009 promoted cross-model agreement into evidence.")
           require("not independent empirical replication" in multimodel_audit, "External model critique boundary drifted.")
+          require("PREREGISTERED DESIGN / NO RESULT / NOT PROJECT VALIDATION" in e010_readme, "E010 lost preregistration/no-result boundary.")
+          require("PREREGISTERED EXECUTABLE SPECIFICATION / NO RESULT YET" in e010_protocol, "E010 executable protocol lost no-result boundary.")
+          require(e010_matrix.get("status") == "PREREGISTERED_NO_RESULT", "E010 matrix was promoted without explicit result lineage.")
+          require(len(e010_matrix.get("scenarios", [])) == 13, "E010 preregistered scenario set drifted.")
+          require("검사자 공정성·독립성: PRIOR ART" in e010_readme, "E010 broad inspector-independence novelty was reintroduced.")
+          require("SELF_EXECUTION != INDEPENDENT_VALIDATION" in e010_protocol, "E010 lost self-run versus independent-validation boundary.")
           e009_result_path = Path("experiments/e009/RESULT.json")
           if e009_result_path.exists():
               e009_result = json.loads(e009_result_path.read_text(encoding="utf-8"))
@@ -217,3 +228,6 @@ jobs:
 
           print("Public governance regression checks passed.")
           PY
+
+      - name: Validate E010 preregistration only
+        run: python experiments/e010/benchmark.py --validate-only
