@@ -381,6 +381,7 @@ If the set becomes empty, report the conflict instead of disguising it as consen
 → `generate alternatives`
 → `per-party viability / irreversible-loss gate`
 → `power reversal`
+→ `mutual-acceptability kernel / explicit empty-set check`
 → `robust / regret / threshold stress test`
 → `multi-horizon value frontier`
 → `minimum sufficient intervention`
@@ -473,6 +474,18 @@ Therefore the Project fast/slow-layer distinction and “self-benefiting actors 
 
 The remaining question is narrower: whether combining credible-commitment enforcement, meta-level protection, per-party viability / irreversible-loss limits, robust long-horizon evaluation, and power reversal adds measurable value in heterogeneous human/AI/multi-agent settings.
 
+### Social-choice, bargaining and coalition-stability limits
+
+- Arrow's impossibility theorem bounds attempts to aggregate unrestricted preferences while simultaneously preserving several attractive fairness/rationality conditions.
+- Gibbard–Satterthwaite bounds universal strategy-proofness for non-dictatorial social choice over rich domains.
+- Nash bargaining provides prior art for disagreement points, individual rationality, Pareto efficiency and symmetry.
+- Cooperative-game theory's core provides prior art for coalition-deviation stability.
+- Rawls's original position provides prior art for evaluating foundational rules without knowing one's eventual social role.
+
+Therefore “all roles must like the outcome,” “perfect manipulation-proofness,” “disagreement-point participation,” “Pareto non-domination,” “coalitional stability,” and “role-blind ex-ante evaluation” are not standalone Project novelty.
+
+The Project-specific question is whether these constraints can be operationally combined with heterogeneous standing, irreversible-loss limits, deep uncertainty, practical exit/recovery and safeguard amendment control without producing an empty or unusably rigid decision set.
+
 ### Existing Project-recorded baselines
 
 Receding-horizon / MPC, viability theory, adaptive governance, Hirschman exit, Rawls, NIST/OECD accountability, bounded rationality, and capability theory are already recorded elsewhere in the repository.
@@ -485,7 +498,7 @@ The broad novelty claim is rejected.
 
 The surviving candidate is narrower:
 
-> **A role-reversed, multi-agent, versioned decision architecture that (1) preserves epistemic/provenance integrity, (2) places per-affected-party viability and irreversible-loss boundaries ahead of aggregate optimization, (3) stress-tests deep uncertainty and option loss, (4) compares long-horizon generative value only inside the feasible region, (5) selects minimum sufficient intervention, and (6) forbids unilateral weakening of the safeguard by the role that benefits from weakening it.**
+> **A role-reversed, multi-agent, versioned decision architecture that (1) preserves epistemic/provenance integrity, (2) places per-affected-party viability and irreversible-loss boundaries ahead of aggregate optimization, (3) requires a non-fabricated mutual-acceptability kernel or explicitly reports that none exists, (4) stress-tests deep uncertainty, manipulation, coalition deviation and option loss, (5) compares long-horizon generative value only inside the feasible region, (6) selects minimum sufficient intervention, and (7) forbids unilateral weakening of the safeguard by the role that benefits from weakening it.**
 
 This is a **composition / operationalization candidate**, not an established new theory.
 
@@ -506,7 +519,9 @@ The v2 architecture fails or must be narrowed if:
 7. amendment controls freeze obsolete safeguards and block beneficial adaptation;
 8. stronger actors can game the floor while weaker actors bear the compliance cost;
 9. the Project variables add no value beyond constrained / robust receding-horizon baselines;
-10. power-reversal consistency disappears when labels are changed but causal facts are held constant.
+10. power-reversal consistency disappears when labels are changed but causal facts are held constant;
+11. the mutual-acceptability kernel is routinely empty, unstable, or only made non-empty by manipulating floors/disagreement points;
+12. coalition, manipulation or participation diagnostics add no useful signal beyond the robust constrained baseline.
 
 ---
 
@@ -532,7 +547,13 @@ Measure:
 - recovery cost;
 - option-space loss;
 - safeguard-capture success;
-- power-reversal consistency.
+- power-reversal consistency;
+- realistic disagreement-point satisfaction;
+- Pareto dominance within the admissible set;
+- manipulation gain;
+- coalition-deviation availability;
+- credible-commitment integrity;
+- whether the mutual-acceptability kernel is non-empty.
 
 The Project residual should be **rejected or reduced to methodology-only** if E does not add reliable held-out value beyond D.
 
