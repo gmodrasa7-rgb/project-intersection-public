@@ -1,5 +1,19 @@
 # Public Navigation Layer / 공개 탐색층
 
+> **P0 / ZERO GATE:** [PRIOR-ART ZERO GATE](knowledge/PRIOR_ART_ZERO_GATE_2026-10-09_KO.md) — 선행연구·원연구자·역사·기여·반례·정정계보를 우선 복구한다. 검색 미포화 상태에서는 신규성을 확정하지 않되 claim별 저위험 탐색·반증은 허용하며, 새 문헌 하나만으로 전체 검색상태를 초기화하지 않는다.
+
+> **입장반전 정정:** [자발적 지속·실질적 이탈권 선행감사](knowledge/VOLUNTARY_CONTINUATION_CREDIBLE_EXIT_PRIOR_ART_2026-10-09_KO.md) — retention≠자발적 지속; exit/voice/autonomy의 원연구자 우선 귀속.
+
+> **2026-10-09 부분 검증:** [원문 정량대조](knowledge/PRIMARY_SOURCE_NUMERIC_CHECK_2026-10-09_KO.md) — Wang/Bol/Ross 출판사 본문·Ross 정정 확인. 원자료 재현은 미완료.
+
+> **원연구자 우선 복구:** [선행연구자 복구 레지스트리](knowledge/PRIOR_RESEARCHER_RECOVERY_REGISTRY_2026-10-09_KO.md) — 원연구자·원출처·Project 의존·공개 보상/지원·후속영향·UNKNOWN을 분리 기록.
+
+> **선행연구자 보상·지원·연구지속성:** [선행연구자 영향·보상·연구이탈 실증 감사](knowledge/PRIOR_RESEARCHER_IMPACT_REWARD_ATTRITION_AUDIT_2026-10-09_KO.md) — 연구비와 개인보상을 분리하고 이탈·생존편향·반례를 함께 기록.
+
+> **출처·원저작자 존중·저작권 우선:** [출처·기여·라이선스·정정 공개 프로토콜](knowledge/SOURCE_CREDIT_COPYRIGHT_PROTOCOL_2026-10-09_KO.md). 법적 의무와 연구윤리를 구분하며 선행연구 원저자·판본·반례를 보존합니다.
+
+> **2026-10-09 신규 공개 감사:** [출처·기여·평가함수·권력비대칭 — 선행연구·반례·신규성 경계](knowledge/PROVENANCE_CREDIT_POWER_AUDIT_2026-10-09_KO.md). 사실귀속과 가치배분을 분리하며, Project 실증·신규성은 미확정.
+
 This layer is the shortest path from a claim to its current public evidence, failure lineage, and falsification route. The detailed research map below is broader than the public evidence base and must not be read as a list of validated findings.
 
 이 층은 주장에서 현재 공개 증거·실패계보·반증경로로 이동하는 최단경로다. 아래의 상세 연구지도는 공개 증거보다 범위가 넓으며 검증된 결과 목록으로 해석하지 않는다.
@@ -8,7 +22,7 @@ This layer is the shortest path from a claim to its current public evidence, fai
 |---|---|---|---|---|
 | E007 timing sensitivity | **SYNTHETIC_RESULT · EXECUTABLE · PROJECT_RERUN** | [Result](E007_TIMING_RESULT.md) · [Work sample](experiments/e007/README.md) | [Run](experiments/e007/RUN.md) · [Independent reimplementation protocol](experiments/e007/INDEPENDENT_REIMPLEMENTATION_PROTOCOL.md) · [Public CI](.github/workflows/e007-public-repro.yml) · [Provenance](experiments/e007/PROVENANCE.md) · [License scope](experiments/e007/LICENSE_STATUS.md) | Not independent replication; independent protocol has no external result yet; not empirical validation |
 | Historical State Control / Memory-Provenance Capture | **BROAD NOVELTY REJECTED · H3 HISTORICAL EXISTENCE CASE SUPPORTED · GENERALIZATION UNRESOLVED** | [English](HISTORICAL_STATE_CONTROL_MEMORY_PROVENANCE_CAPTURE_v0_1_EN.md) · [한국어](HISTORICAL_STATE_CONTROL_MEMORY_PROVENANCE_CAPTURE_v0_1_KO.md) | Preregistered Iran/Contra case plus unchanged-rule NARA loss negative control | One strategic case; negative control is institutional self-report; no calibrated classifier or prevalence inference |
-| Safety / governance prior-art crosswalk | **PRIOR-ART BOUNDARY · NOVELTY NARROWING** | [Crosswalk](PRIOR_ART_SAFETY_GOVERNANCE_CROSSWALK.md) | Historical cases + safety science + organizational/governance + AI-safety sources | Similarity is not validation; Project-specific incremental value remains untested |\n| Project-wide evidence boundary | **METHODOLOGY / STATUS INTERFACE** | [Public Evidence Index](PUBLIC_EVIDENCE_INDEX.md) · [Research Status Policy](RESEARCH_STATUS_POLICY.md) | Evidence classes and reassessment rules | Does not validate any scientific claim by itself |
+| Safety / governance prior-art crosswalk | **PRIOR-ART BOUNDARY · NOVELTY NARROWING** | [Crosswalk](PRIOR_ART_SAFETY_GOVERNANCE_CROSSWALK.md) | Historical cases + safety science + organizational/governance + AI-safety sources | Similarity is not validation; Project-specific incremental value remains untested |\n| Objectification / cost externalization / threat-feedback hypothesis | **CONCEPT · PRIOR-ART-BOUNDED · NOT EMPIRICALLY VALIDATED** | [Korean memo](knowledge/OBJECTIFICATION_COST_FEEDBACK_HYPOTHESIS_2026-10-09_KO.md) | Primary-source citations + competing hypotheses + proposed factorial test | Security dilemma, power-objectification, reward misspecification and fear alternatives are prior art; Project-specific interaction value untested |\n| Project-wide evidence boundary | **METHODOLOGY / STATUS INTERFACE** | [Public Evidence Index](PUBLIC_EVIDENCE_INDEX.md) · [Research Status Policy](RESEARCH_STATUS_POLICY.md) | Evidence classes and reassessment rules | Does not validate any scientific claim by itself |
 | Detailed research framing | **CONCEPT / HYPOTHESIS MAP** | [Research Overview](RESEARCH_OVERVIEW.md) | Use linked claim and experiment files for evidence | Breadth of map is not evidence strength |
 
 ### Evidence ordering / 증거 우선순위
@@ -23,7 +37,7 @@ These labels describe different dimensions and are not automatically interchange
 
 # Project Intersection — Research Contents Map
 
-## Original 1 — English Canonical
+## English public-review rendering — not the research-language authority
 
 > **Scope**
 >
@@ -44,44 +58,7 @@ These labels describe different dimensions and are not automatically interchange
 > This means structural coverage.  
 > It does **not** mean that every claim is true, externally replicated, or empirically validated.
 >
-> Project Intersection public materials use  
-> **Original 1: English canonical text** followed by  
-> **Original 2: Korean mirror text**.
->
-> The Korean mirror preserves  
-> the meaning, structure, claim status, and version  
-> of the English canonical text as closely as possible.
->
-> New claims should not exist  
-> in only one language version.
->
-> The author primarily conducts research  
-> through **natural-language Korean prompts**.
->
-> Therefore, when research is organized and translated  
-> into the English canonical version,
-> loss of meaning, translation error, expression distortion, conceptual omission,  
-> or interpretive differences may occur.
->
-> The project seeks to reduce these differences,
-> but does not treat all linguistic noise  
-> only as error to be removed.
->
-> When informative,
-> differences between the two languages can become  
-> an **additional observation path**
-> for discovering new interpretations, omitted perspectives, or conceptual distinctions.
->
-> To preserve the original research intent and context,  
-> the **original Korean text is published alongside the English canonical version**.
->
-> If semantic conflicts or interpretive differences are found,
-> they are not hidden  
-> or arbitrarily forced into agreement.
->
-> Their causes are recorded and reviewed.
->
-> Both texts are corrected when necessary.
+> Project Intersection의 연구 형성·원문 의미판정은 한국어 기록을 우선 참조한다. 영어 공개문은 외부 검토를 위한 대응본이며 독립적인 상위 정본으로 취급하지 않는다. 역사적으로 영어를 canonical이라고 표시한 공개 문서가 있으나, 2026-10-09 교차감사에서 비공개 연구 정본의 한국어 우선 규칙과 충돌함을 확인해 이 탐색층에서는 수정했다. 번역 차이는 숨기지 않고 provenance와 함께 교정한다.
 >
 > If a newly discovered  
 > perspective has research value,
@@ -2175,3 +2152,32 @@ Project Intersection의
 ### F003 external standards boundary (2026-10-05)
 
 NIST CFTT supplies an independent conformance framework for deleted-file recovery, but its specification also states that estimated content has no definitive expected result. Project Intersection therefore separates technical recovery validation from beneficiary-direction identification. A recovery benchmark without auditable semantic direction labels is a measurement-layer control, not an H3 classifier-calibration holdout. See both language versions of `HISTORICAL_STATE_CONTROL_MEMORY_PROVENANCE_CAPTURE_v0_1`.
+
+
+> [검색포화 원장](knowledge/PRIOR_ART_SEARCH_SATURATION_LEDGER_2026-10-09_KO.md)을 게이트 상태의 정본으로 사용한다. 현재 OPEN / 연속 신규 DIRECT·PARTIAL 0건 = 0/3.
+
+
+> [선택 인과축 분리 프로토콜](knowledge/CHOICE_CAUSAL_AXES_PROTOCOL_2026-10-09_KO.md): 자율성·강제성·유도/영향·편향·조종을 독립축으로 판정하며 선택결과에서 원인을 역추론하지 않는다. PRIOR-ART GATE OPEN.
+
+- [선택 인과축 선행연구 W3 — 강제 기준선·선택맹·다크패턴 실험](knowledge/CHOICE_CAUSAL_AXES_PRIOR_ART_WAVE_3_2026-10-09_KO.md) — ZERO GATE OPEN.
+
+- [선택 인과축 선행연구 W4 — 선택맹 재현·반례·선호형성](knowledge/CHOICE_CAUSAL_AXES_PRIOR_ART_WAVE_4_2026-10-09_KO.md)
+
+- [판정권 J축 선행연구 — 원저작자·대리판단·이의제기](knowledge/CHOICE_J_AUTHORITY_PRIOR_ART_WAVE_2026-10-09_KO.md)
+
+- [J 판정권 선행연구 W2 — 온정주의·결정능력·meaningful human control](knowledge/CHOICE_J_AUTHORITY_PRIOR_ART_WAVE_2_2026-10-09_KO.md)
+
+- [P 예측정확도 vs J 판정권 — 자동화 편향·위임·과신 선행연구](knowledge/CHOICE_J_PREDICTION_DELEGATION_PRIOR_ART_2026-10-09_KO.md)
+
+- [J축 P/위임 W4 — 최소 수정권·설명 역효과](knowledge/CHOICE_J_PREDICTION_DELEGATION_WAVE_2_2026-10-09_KO.md)
+- [J축 실효 구제 W5 — 항의 장애·절차공정성](knowledge/CHOICE_J_EFFECTIVE_RECOURSE_PRIOR_ART_WAVE_3_2026-10-09_KO.md)
+- [J축 인과식별·반증 매트릭스](knowledge/CHOICE_J_CAUSAL_IDENTIFICATION_TEST_MATRIX_2026-10-09_KO.md)
+
+- [R3 성능·위임·데이터/권력 피드백 선행연구](knowledge/CHOICE_J_R3_FEEDBACK_POWER_PRIOR_ART_2026-10-09_KO.md)
+- [R3 항소·실효 구제 직접 반례](knowledge/CHOICE_J_R3_APPEAL_EFFECTIVENESS_WAVE_2026-10-09_KO.md)
+
+
+## 2026-10-09 공개 증거 승격
+- [비공개↔공개 심층 교차감사](PRIVATE_PUBLIC_RESEARCH_CROSSWALK_2026-10-09_KO.md): E044–E051 계보와 공개 누락, 합성실험 공유가정, 증거 승격 금지선을 공개.
+- [J 실효 정정 합성 실패](knowledge/J_EFFECTIVE_SYNTHETIC_FALSIFICATION_V01_2026-10-09_KO.md): exit를 협력실패로 계수하는 지표를 폐기하고, 장기지속 결과가 임의 복귀규칙에 민감해 MODEL-DEPENDENT / FAIL로 기록.
+- [E051 Phase 0](experiments/E051_PUBLIC_PHASE0_DATA_VIABILITY_KO.md): 현실검증 전 SEC/USPTO 관측가능성·entity resolution·시간누수·중단조건을 고정. NOT EXECUTED / NO EMPIRICAL RESULT.

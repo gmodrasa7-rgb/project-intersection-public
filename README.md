@@ -1,5 +1,23 @@
 # Project Intersection
 
+> **심층 교차감사:** [비공개↔공개 연구계보·반례·증거등급](PRIVATE_PUBLIC_RESEARCH_CROSSWALK_2026-10-09_KO.md) · [E051 공개 실증 Phase 0 게이트](experiments/E051_PUBLIC_PHASE0_DATA_VIABILITY_KO.md). E044 미실행, E045–E050 합성·공유가정, E051 실증 미실행을 구분합니다.
+
+> **처음 보는 외부 검토자:** [공개 연구 3분 검토 — 검증 가능한 결과·실패·재현·비공개 경계](PUBLIC_START_HERE_KO.md). 공개 검증 범위와 미확정 주장을 먼저 확인하세요.
+
+> **P0 / ZERO GATE:** [PRIOR-ART ZERO GATE](knowledge/PRIOR_ART_ZERO_GATE_2026-10-09_KO.md) — 선행연구·원연구자·역사·기여·반례·정정계보를 우선 복구한다. 신규성 확정은 보류하되, claim별 검토와 저위험 탐색·반증은 허용한다. 단순 신규 문헌 발견만으로 전체 검색을 무한 초기화하지 않는다.
+
+> **입장반전 정정:** [자발적 지속·실질적 이탈권 선행감사](knowledge/VOLUNTARY_CONTINUATION_CREDIBLE_EXIT_PRIOR_ART_2026-10-09_KO.md) — retention≠자발적 지속; exit/voice/autonomy의 원연구자 우선 귀속.
+
+> **원연구자 우선 복구:** [선행연구자 복구 레지스트리](knowledge/PRIOR_RESEARCHER_RECOVERY_REGISTRY_2026-10-09_KO.md) — 원연구자·원출처·Project 의존·공개 보상/지원·후속영향·UNKNOWN을 분리 기록.
+
+> **선행연구자 보상·지원·연구지속성:** [선행연구자 영향·보상·연구이탈 실증 감사](knowledge/PRIOR_RESEARCHER_IMPACT_REWARD_ATTRITION_AUDIT_2026-10-09_KO.md) — 연구비와 개인보상을 분리하고 이탈·생존편향·반례를 함께 기록.
+
+> **기여자 발굴·역사복원·지원·후속연구:** [Contributor Discovery & Reproduction Protocol](knowledge/CONTRIBUTOR_DISCOVERY_REPRODUCTION_PROTOCOL_2026-10-09_KO.md) — 결과뿐 아니라 문제제기·반례·수정·검증·실패계보를 복구 가능하게 보존합니다.
+
+> **출처·원저작자 존중·저작권 우선:** [출처·기여·라이선스·정정 공개 프로토콜](knowledge/SOURCE_CREDIT_COPYRIGHT_PROTOCOL_2026-10-09_KO.md) · [Provenance & Rights Manifest](PROVENANCE_AND_RIGHTS_MANIFEST.md). 법적 의무와 연구윤리를 구분하며 선행연구 원저자·판본·반례를 보존합니다.
+
+> **Research audit / 선행연구 경계:** [출처·기여·평가함수·권력비대칭 공개 감사](knowledge/PROVENANCE_CREDIT_POWER_AUDIT_2026-10-09_KO.md) — 기존 이론의 원저자·반례·신규성 제거·최소 반증 설계. **No new empirical result.**
+
 <!-- FUNDING_READINESS_2026-10-04 -->
 
 한국어 검토자는 [공개 검토 패킷](PUBLIC_REVIEW_PACKET.md)의 재현 명령·기대 결과부터 확인할 수 있습니다. E009의 부정적 결과를 포함하며, 코드 재현과 독립·현실 검증을 구분합니다.
@@ -8,7 +26,7 @@
 
 ## Start Here — Evidence, Funding, and External Review
 
-### Original 1 — English Canonical
+### English reviewer-facing text — historical label corrected
 
 Project Intersection is an independent, falsification-first research program studying when **power, incentives, timing, practical exit, recovery capacity, and independent error-correction** make cooperation or coexistence more robust than exploitative local optimization—and where that hypothesis fails.
 
@@ -39,7 +57,7 @@ Project Intersection is an independent, falsification-first research program stu
 The funding proposition is deliberately testable: support buys **reproducible artifacts, adversarial tests, correction lineage, and lower external verification cost**, not a predetermined favorable conclusion.
 
 
-### 원문2 — 한국어 대응본
+### 한국어 연구 정본 기준의 공개 안내
 
 Project Intersection은 **권력·인센티브·시점·practical exit·복구능력·독립 오류수정**이 어떤 조건에서 착취적 국소최적화보다 협력·공존을 더 강건하게 만드는지, 그리고 그 가설이 어디서 깨지는지를 시험하는 독립 반증우선 연구 프로그램이다.
 
@@ -91,3 +109,6 @@ Project Intersection은 **권력·인센티브·시점·practical exit·복구�
 The landing page is intentionally short. Detailed theory is separated so that a first-time reviewer can reach evidence and reproduction paths before reading the full research narrative.
 
 첫 방문자가 전체 이론서술보다 증거·재현경로를 먼저 찾을 수 있도록 landing page는 의도적으로 짧게 유지한다.
+
+
+> **Conversation-wide research distillation / 대화 전체 연구정제:** [CONVERSATION_TO_PUBLIC_RESEARCH_AUDIT_2026-10-09_KO.md](CONVERSATION_TO_PUBLIC_RESEARCH_AUDIT_2026-10-09_KO.md) — repeated corrections, rejected strong claims, evidence gates, and the M0→M4 empirical falsification sequence; conversation content itself is not treated as scientific evidence.

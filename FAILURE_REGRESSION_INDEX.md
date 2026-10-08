@@ -243,3 +243,16 @@ Before any material repository mutation:
 10. Would the same rule be accepted after role reversal?
 
 A “no malice” explanation is not a substitute for these checks.
+
+
+## F-R014 — conversation insight promoted as evidence
+
+**Class:** provenance / evidence boundary  
+**Status:** ACTIVE GUARD  
+**Source:** [대화→공개 연구 업그레이드 감사](CONVERSATION_TO_PUBLIC_RESEARCH_AUDIT_2026-10-09_KO.md)
+
+Failure mode: 반복된 대화, 모델 동의, 오래 유지된 아이디어, 강한 직관을 독립 과학증거로 승격한다.
+
+Forbidden inference: `REPEATED_DISCUSSION == VALIDATION` / `MODEL_AGREEMENT == REPLICATION`.
+
+Repair: 대화는 가설·반례·수정계보를 발견하는 provenance로만 사용하고, 공개 artifact·실행·독립 검증이 증거등급을 결정한다.
