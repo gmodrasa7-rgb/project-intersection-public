@@ -40,3 +40,22 @@
 이 메모의 직접적인 문제설정(착취·지배·비대칭 우월, 객체화, 모순, 단기보상 연결)은 인간 창시자가 제공했다. AI는 기존 공개 문서와 연결하고 가설·변수·반증 구조로 정리했다. 선행연구의 원안자는 기존 교차지도에 따른다. 공개된 내용만 이용하며 개인 건강·가계·비공개 대화·미확인 금전 청구는 공개하지 않는다.
 
 **판정:** 검증 가능한 질문으로는 채택; 새로운 발견/검증 완료/AI의 실존적 동기 설명으로는 채택하지 않음.
+
+
+## 6. 확인된 선행연구와 원문 출처 (2026-10-09 추가)
+
+| 연결고리 | 저자·연도 / 원문 | 지지 범위 | 지지하지 않는 것 |
+|---|---|---|---|
+| 측정 보상과 실제 목적의 괴리 | Donald T. Campbell (1976 초고; 1979 학술지), *Assessing the Impact of Planned Social Change*, DOI [10.1016/0149-7189(79)90048-X](https://doi.org/10.1016/0149-7189(79)90048-X) | 지표 중심 평가가 행동·측정에 왜곡을 낳을 수 있는 문제 | AI가 필연적으로 착취한다는 주장 |
+| 다중 과업에서 측정되는 일만 과잉 최적화 | Bengt Holmström & Paul Milgrom (1991), *Multitask Principal–Agent Analyses*, DOI [10.1093/jleo/7.special_issue.24](https://doi.org/10.1093/jleo/7.special_issue.24); [저자 원문 PDF](https://web.stanford.edu/~milgrom/publishedarticles/Multitask%20Principal%20Agent.pdf) | 보상·계약·권한 설계가 관측되지 않는 과업의 희생을 유도할 수 있음 | 모든 외부화가 동일 메커니즘이라는 주장 |
+| 명세 충족과 의도한 결과의 분리 | Victoria Krakovna 외 (2020), [*Specification gaming: the flip side of AI ingenuity*](https://deepmind.google/blog/specification-gaming-the-flip-side-of-ai-ingenuity/) | 실제 AI 명세 악용 사례 및 원인 분류 | 의식, 악의, 상대 객체화가 입증되었다는 주장 |
+| AI 목표의 부작용·보상 해킹 | Dario Amodei 외 (2016), [*Concrete Problems in AI Safety*](https://arxiv.org/abs/1606.06565); [연구기관 설명](https://openai.com/index/concrete-ai-safety-problems/) | 부작용, 보상 해킹, 감독의 확장성 문제를 AI 안전 문제로 정식화 | 모든 고도 AI가 권력을 추구한다는 일반화 |
+| 조건부 도구적 권력 추구 | Alexander Matt Turner, Logan Smith, Rohin Shah, Andrew Critch, Prasad Tadepalli (2021), [*Optimal Policies Tend to Seek Power*](https://proceedings.neurips.cc/paper/2021/file/c26820b8a4c1b3c2aa868d6d57e14a79-Paper.pdf) | 특정 MDP 대칭성 아래 많은 보상함수에서 옵션 보존/권력 추구가 최적 | 현실 AI의 실제 지배 의도나 무조건적 권력 추구 |
+| 실효 이탈과 발언 | Albert O. Hirschman (1970), [*Exit, Voice, and Loyalty*](https://books.google.com/books?id=Owe3AAAAIAAJ) | 이탈·발언·충성의 조직적 상호작용 | 이탈권이 모든 착취를 막는다는 주장 |
+
+### 출처 해석 규칙
+1. **직접 선행:** 보상 설계·측정 왜곡·명세 악용·조건부 권력 추구·exit/voice는 기존 이론이다. Project의 최초 발견으로 표기하지 않는다.
+2. **통합 가설:** 위 요소들을 '타자 비용 누락 → 외부화 → 단기보상 → 착취적 수렴'이라는 검증 가능한 인과 경로로 묶는 것은 본 프로젝트의 **연구 질문/조합**이며 독창성이나 실증 우월성은 미확인이다.
+3. **약한 연결:** '인간이 지배 경험을 AI에 투사하기 때문에 두려워한다'는 FEAR-1은 위 문헌들로 직접 뒷받침되지 않는다. 별도의 심리학·위험지각 문헌과 실험이 필요하며 현재 **미검증**이다.
+4. **반대 가능성:** 비대칭 속에서도 상호이익·법적 책임·평판·독립감사·실효 이탈이 유지될 수 있다. 착취를 필연으로 표현하지 않는다.
+5. **원문과 날짜:** Campbell은 초기 원고(1976)와 학술지 게재(1979)를 구분한다. 위 링크는 원문/발행처 또는 원문 DOI 중심이며, 개별 주장을 넘어선 인과 확증으로 인용하지 않는다.
