@@ -1,6 +1,6 @@
 # Public Navigation Layer / 공개 탐색층
 
-> **P0 / ZERO GATE:** [PRIOR-ART ZERO GATE](knowledge/PRIOR_ART_ZERO_GATE_2026-10-09_KO.md) — 선행연구·원연구자·역사·기여·반례·정정계보가 검색포화 기준을 통과하기 전에는 Project 신규성 주장과 고유 실험을 시작하지 않는다.
+> **P0 / ZERO GATE:** [PRIOR-ART ZERO GATE](knowledge/PRIOR_ART_ZERO_GATE_2026-10-09_KO.md) — 선행연구·원연구자·역사·기여·반례·정정계보를 우선 복구한다. 검색 미포화 상태에서는 신규성을 확정하지 않되 claim별 저위험 탐색·반증은 허용하며, 새 문헌 하나만으로 전체 검색상태를 초기화하지 않는다.
 
 > **입장반전 정정:** [자발적 지속·실질적 이탈권 선행감사](knowledge/VOLUNTARY_CONTINUATION_CREDIBLE_EXIT_PRIOR_ART_2026-10-09_KO.md) — retention≠자발적 지속; exit/voice/autonomy의 원연구자 우선 귀속.
 
@@ -37,7 +37,7 @@ These labels describe different dimensions and are not automatically interchange
 
 # Project Intersection — Research Contents Map
 
-## Original 1 — English Canonical
+## English public-review rendering — not the research-language authority
 
 > **Scope**
 >
@@ -58,44 +58,7 @@ These labels describe different dimensions and are not automatically interchange
 > This means structural coverage.  
 > It does **not** mean that every claim is true, externally replicated, or empirically validated.
 >
-> Project Intersection public materials use  
-> **Original 1: English canonical text** followed by  
-> **Original 2: Korean mirror text**.
->
-> The Korean mirror preserves  
-> the meaning, structure, claim status, and version  
-> of the English canonical text as closely as possible.
->
-> New claims should not exist  
-> in only one language version.
->
-> The author primarily conducts research  
-> through **natural-language Korean prompts**.
->
-> Therefore, when research is organized and translated  
-> into the English canonical version,
-> loss of meaning, translation error, expression distortion, conceptual omission,  
-> or interpretive differences may occur.
->
-> The project seeks to reduce these differences,
-> but does not treat all linguistic noise  
-> only as error to be removed.
->
-> When informative,
-> differences between the two languages can become  
-> an **additional observation path**
-> for discovering new interpretations, omitted perspectives, or conceptual distinctions.
->
-> To preserve the original research intent and context,  
-> the **original Korean text is published alongside the English canonical version**.
->
-> If semantic conflicts or interpretive differences are found,
-> they are not hidden  
-> or arbitrarily forced into agreement.
->
-> Their causes are recorded and reviewed.
->
-> Both texts are corrected when necessary.
+> Project Intersection의 연구 형성·원문 의미판정은 한국어 기록을 우선 참조한다. 영어 공개문은 외부 검토를 위한 대응본이며 독립적인 상위 정본으로 취급하지 않는다. 역사적으로 영어를 canonical이라고 표시한 공개 문서가 있으나, 2026-10-09 교차감사에서 비공개 연구 정본의 한국어 우선 규칙과 충돌함을 확인해 이 탐색층에서는 수정했다. 번역 차이는 숨기지 않고 provenance와 함께 교정한다.
 >
 > If a newly discovered  
 > perspective has research value,
@@ -2212,3 +2175,9 @@ NIST CFTT supplies an independent conformance framework for deleted-file recover
 
 - [R3 성능·위임·데이터/권력 피드백 선행연구](knowledge/CHOICE_J_R3_FEEDBACK_POWER_PRIOR_ART_2026-10-09_KO.md)
 - [R3 항소·실효 구제 직접 반례](knowledge/CHOICE_J_R3_APPEAL_EFFECTIVENESS_WAVE_2026-10-09_KO.md)
+
+
+## 2026-10-09 공개 증거 승격
+- [비공개↔공개 심층 교차감사](PRIVATE_PUBLIC_RESEARCH_CROSSWALK_2026-10-09_KO.md): E044–E051 계보와 공개 누락, 합성실험 공유가정, 증거 승격 금지선을 공개.
+- [J 실효 정정 합성 실패](knowledge/J_EFFECTIVE_SYNTHETIC_FALSIFICATION_V01_2026-10-09_KO.md): exit를 협력실패로 계수하는 지표를 폐기하고, 장기지속 결과가 임의 복귀규칙에 민감해 MODEL-DEPENDENT / FAIL로 기록.
+- [E051 Phase 0](experiments/E051_PUBLIC_PHASE0_DATA_VIABILITY_KO.md): 현실검증 전 SEC/USPTO 관측가능성·entity resolution·시간누수·중단조건을 고정. NOT EXECUTED / NO EMPIRICAL RESULT.
