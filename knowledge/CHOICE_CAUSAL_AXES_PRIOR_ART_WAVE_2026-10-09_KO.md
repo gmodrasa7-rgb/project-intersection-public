@@ -45,3 +45,12 @@
 - 신규 직접/부분 원출처: **0건 아님** → 포화 0/3.
 - 검색 한계: forward/backward exhaustive citation, 한국어·비영어권·학위논문 추가 조사 미완료; 일부 원문 유료.
 - 다음 파동: Mills 1991 참고문헌과 후속 인용, 조종 의도 필요조건 논쟁, choice architecture/dark patterns 실증, 강제·유인·착취의 역사적 원전.
+
+
+## 후속 인용에서 새로 발견한 직접 실증연구 (2026)
+
+**Christos Bechlivanidis; Magda Osman (2026)**, *You're Free When You Choose What I Like: Flexible Attributions of Free Choice Under Manipulation*, *Consciousness and Cognition* 144:104111, DOI **10.1016/j.concog.2026.104111**. 2024-07 사전공개 → 2025-01 수정 → 2026-03 원고 → 2026-08/09 학술지 발행 계보 확인. 세 연구, N=1,462; 관찰자들이 실제 조종 성공 상황에서도 자율성이 손상됐다고 반드시 판정하지 않으며 결과에 대한 호감이 자유판단에 영향을 줌. **DIRECT PRIOR ART**: '관측된 선택·평가자 판단에서 자율/조종을 역추론하면 안 됨'의 실증적 선행. 단, 논문은 '조종이 자율성에 객관적으로 영향 없다'는 증명이 아니라 **사람들이 자율성을 어떻게 판정하는가**의 연구. 원출처: https://www.sciencedirect.com/science/article/pii/S1053810026001194 ; 서지 https://pubmed.ncbi.nlm.nih.gov/42636748/ ; 2024판 https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4907731 .
+
+**Claudia Jane Mills (1991)** 원저작자 역사 보완: University of Colorado 소속 공개 이력서에서 Princeton 철학 박사학위 1991, 지도교수 **Thomas M. Scanlon** 확인. 이는 계보·맥락이지 지도교수를 공동저작자로 추가하는 근거가 아니다. https://www.colorado.edu/philosophy/sites/default/files/attached-files/cv_mills.pdf
+
+**이번 파동 원전 17건 이상 확인, 신규 직접 원출처 계속 발견 → 검색포화 0/3 유지.**
