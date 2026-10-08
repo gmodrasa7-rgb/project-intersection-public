@@ -1,5 +1,7 @@
 # Public Navigation Layer / 공개 탐색층
 
+> **2026-10-09 신규 공개 감사:** [출처·기여·평가함수·권력비대칭 — 선행연구·반례·신규성 경계](knowledge/PROVENANCE_CREDIT_POWER_AUDIT_2026-10-09_KO.md). 사실귀속과 가치배분을 분리하며, Project 실증·신규성은 미확정.
+
 This layer is the shortest path from a claim to its current public evidence, failure lineage, and falsification route. The detailed research map below is broader than the public evidence base and must not be read as a list of validated findings.
 
 이 층은 주장에서 현재 공개 증거·실패계보·반증경로로 이동하는 최단경로다. 아래의 상세 연구지도는 공개 증거보다 범위가 넓으며 검증된 결과 목록으로 해석하지 않는다.
