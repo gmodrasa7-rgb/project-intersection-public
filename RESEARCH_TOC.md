@@ -2192,3 +2192,6 @@ NIST CFTT supplies an independent conformance framework for deleted-file recover
 
 
 > [검색포화 원장](knowledge/PRIOR_ART_SEARCH_SATURATION_LEDGER_2026-10-09_KO.md)을 게이트 상태의 정본으로 사용한다. 현재 OPEN / 연속 신규 DIRECT·PARTIAL 0건 = 0/3.
+
+
+> [선택 인과축 분리 프로토콜](knowledge/CHOICE_CAUSAL_AXES_PROTOCOL_2026-10-09_KO.md): 자율성·강제성·유도/영향·편향·조종을 독립축으로 판정하며 선택결과에서 원인을 역추론하지 않는다. PRIOR-ART GATE OPEN.
