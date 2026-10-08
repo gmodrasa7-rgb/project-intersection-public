@@ -340,3 +340,25 @@ Emerson에 따라 비대칭을 단일 능력 점수로 대체하지 말고 **A�
 
 ### 14.5 현재 상태
 이 절은 **선행연구 crosswalk + 사전 가설**이다. Project 자체 실험결과가 아니며 신규성도 확정하지 않는다. 다음 단계는 동일한 결합효과를 이미 직접 검증한 조직행동·절차적 정의·분쟁해결·알고리즘 거버넌스 연구가 있는지 추가 검색한 뒤, 남는 잔차에 대해서만 실험을 수행하는 것이다.
+
+
+## 15. 반증 우선 선행연구 재감사 — 절차만 존재하는 이의제기와 권력집중 (2026-10-09)
+
+### 신규성의 직접 축소: 1995년 연구
+**Peter Feuille; Denise R. Chachere (1995)**, *Looking Fair or Being Fair: Remedial Voice Procedures in Nonunion Workplaces*, *Journal of Management* **21(1):27–42**. 출판사 [ScienceDirect 원문 서지](https://www.sciencedirect.com/science/article/abs/pii/0149206395900322), DOI **10.1016/0149-2063(95)90032-2**; [SAGE 저자·원문 페이지](https://journals.sagepub.com/doi/10.1177/014920639502100102). **195개 민간기업**의 비노조 고충처리 절차를 분석한 결과, 직원에게 이의제기권과 형식적 절차를 제공하면서도 경영진이 절차 통제권과 결정 통제권의 대부분을 보유했다. 따라서 **'이의제기권이 있어도 강자가 평가·결정권을 장악할 수 있다'는 명제 자체는 1995년부터 직접 연구된 선행기술**이며 Project 신규성에서 제거한다. 이 연구는 출처기록의 정확성·성과배분의 실제 오차·독립적 집행권의 요인별 인과효과까지 동일한 실험으로 증명하지는 않는다.
+
+### 반례 및 인접 연구
+- **Kristen Vaccaro; Christian Sandvig; Karrie Karahalios (2020)**, *“At the End of the Day Facebook Does What It Wants”: How Users Experience Contesting Algorithmic Content Moderation*, *Proceedings of the ACM on Human-Computer Interaction* **4(CSCW2), article 167**, DOI **10.1145/3415238**. [일리노이대학교 기관 서지](https://experts.illinois.edu/en/publications/at-the-end-of-the-day-facebook-does-what-it-wants-how-users-exper/). 대규모 온라인 실험에서 **시험한 이의제기 설계 중 어느 것도 이의제기 불가능 조건 대비 공정성·책임성·신뢰성·통제감(FACT) 인식을 개선하지 못했다.** 따라서 '이의제기권을 부여하면 인식이 반드시 좋아진다'는 보편 명제는 폐기. 인식의 무효과가 실제 정정·구제의 무효과를 증명하지는 않는다.
+- **Donald E. Conlon (1993)**, *Some Tests of the Self-Interest and Group-Value Models of Procedural Justice: Evidence from an Organizational Appeal Procedure*, *Academy of Management Journal* **36(5)**, DOI **10.5465/256648**, [원발행처](https://journals.aom.org/doi/10.5465/256648). 실제 대학 주차 위반 이의제기 사례에서 **결과·항소 방식·집단 소속**이 절차·분배 공정성 판단에 영향을 미치는지 분석. 2017년 웹 온라인 등록일을 1993년 최초 출판연도로 오인하지 않는다.
+- **Elizabeth A. Hoffmann (2005)**, *Dispute Resolution in a Worker Cooperative: Formal Procedures and Procedural Justice*, *Law & Society Review* **39(1):51–82**, DOI **10.1111/j.0023-9216.2005.00077.x**, [Wiley 발행처](https://onlinelibrary.wiley.com/doi/10.1111/j.0023-9216.2005.00077.x). 협동조합 내부에서도 성별에 따라 고충처리 절차에 대한 경험·전략이 달랐음. **형식적 소유구조만으로 절차 접근의 동등성을 보장하지 않는다.**
+- **Steven L. Blader; Chia-Chi Chang; Tom R. Tyler (2001)**, *Procedural Justice and Retaliation in Organizations: Comparing Cross-Nationally the Importance of Fair Group Processes*, *International Journal of Conflict Management* **12(4):295–311**, DOI **10.1108/eb022860**, [Emerald 원발행처](https://www.emerald.com/ijcma/article-abstract/12/4/295/123053/PROCEDURAL-JUSTICE-AND-RETALIATION-IN). 미국·대만 직원 표본에서 절차적 공정성과 보복 행동의 관계를 비교했고 문화적 차이를 보고. **저자는 'Bidder'가 아니라 원발행처 기준 'Blader'**.
+- **Mohammad N. S. Jahromi; Soren Holm; Thomas B. Moeslund; Thomas Ploug (2026)**, *Operationalizing AI contestability through technical feasibility analysis*, *Discover Artificial Intelligence* **6:648**, DOI **10.1007/s44163-026-01381-2**, [Springer 원문](https://link.springer.com/article/10.1007/s44163-026-01381-2). 여러 분야의 AI 이의제기 요건을 **완전 계산가능 / 부분 계산가능 / 계산만으로 해결 불가**로 분리. 규범적 이의제기권의 존재와 실제 구현 가능성은 구별해야 함. 저자 전원은 출판사 표시 기준.
+
+### Project 가설에 대한 정정
+1. **H-PA1**('형식적 이의제기와 권력집중의 공존')은 Feuille–Chachere(1995)와 직접 겹친다. **개념 신규성: 없음**.
+2. **H-PA2**('voice가 공정성 인식을 개선')의 보편적 버전은 Vaccaro–Sandvig–Karahalios(2020)의 무효과 실험과 충돌한다. **상황의존적 가설로만 유지**.
+3. **H-PA3**('권력비대칭·보복·이의제기 비용')은 조직 연구에 선행자료가 존재한다. **단일요소 신규성: 없음**.
+4. **H-PA4**의 잔여 후보는 **실제 기여귀속 오차·성과배분 오차를 정답이 알려진 과제에서 측정**하면서 provenance × 독립재심 × 집행력의 **추가 상호작용**을 사전등록해 검증하는 것으로 한정한다. 이 결합의 완전한 신규성은 아직 미확정.
+5. **부정적 결과를 필수 포함**: 인식만 좋아지고 실질 구제가 없는 경우, 인식도 구제도 없는 경우, 독립재심이 비용만 증가시키는 경우를 모두 기록한다.
+
+**근거 등급:** 이 절의 문헌 내용은 원발행처/기관 공개 초록 및 서지 기반이며 전문 전수검토·원자료 재분석은 하지 않았다. 이번 절 자체는 연구설계·선행연구 감사이고 실험 결과가 아니다.
