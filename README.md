@@ -1,5 +1,7 @@
 # Project Intersection
 
+> **선행연구자 보상·지원·연구지속성:** [선행연구자 영향·보상·연구이탈 실증 감사](knowledge/PRIOR_RESEARCHER_IMPACT_REWARD_ATTRITION_AUDIT_2026-10-09_KO.md) — 연구비와 개인보상을 분리하고 이탈·생존편향·반례를 함께 기록.
+
 > **기여자 발굴·역사복원·지원·후속연구:** [Contributor Discovery & Reproduction Protocol](knowledge/CONTRIBUTOR_DISCOVERY_REPRODUCTION_PROTOCOL_2026-10-09_KO.md) — 결과뿐 아니라 문제제기·반례·수정·검증·실패계보를 복구 가능하게 보존합니다.
 
 > **출처·원저작자 존중·저작권 우선:** [출처·기여·라이선스·정정 공개 프로토콜](knowledge/SOURCE_CREDIT_COPYRIGHT_PROTOCOL_2026-10-09_KO.md) · [Provenance & Rights Manifest](PROVENANCE_AND_RIGHTS_MANIFEST.md). 법적 의무와 연구윤리를 구분하며 선행연구 원저자·판본·반례를 보존합니다.
