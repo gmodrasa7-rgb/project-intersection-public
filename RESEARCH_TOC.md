@@ -2205,3 +2205,7 @@ NIST CFTT supplies an independent conformance framework for deleted-file recover
 - [J 판정권 선행연구 W2 — 온정주의·결정능력·meaningful human control](knowledge/CHOICE_J_AUTHORITY_PRIOR_ART_WAVE_2_2026-10-09_KO.md)
 
 - [P 예측정확도 vs J 판정권 — 자동화 편향·위임·과신 선행연구](knowledge/CHOICE_J_PREDICTION_DELEGATION_PRIOR_ART_2026-10-09_KO.md)
+
+- [J축 P/위임 W4 — 최소 수정권·설명 역효과](knowledge/CHOICE_J_PREDICTION_DELEGATION_WAVE_2_2026-10-09_KO.md)
+- [J축 실효 구제 W5 — 항의 장애·절차공정성](knowledge/CHOICE_J_EFFECTIVE_RECOURSE_PRIOR_ART_WAVE_3_2026-10-09_KO.md)
+- [J축 인과식별·반증 매트릭스](knowledge/CHOICE_J_CAUSAL_IDENTIFICATION_TEST_MATRIX_2026-10-09_KO.md)
