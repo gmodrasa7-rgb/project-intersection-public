@@ -39,3 +39,6 @@ paternalism, relational autonomy, adaptive preferences, epistemic injustice, sup
 
 ## J축 역사적 선행 추가
 Dworkin(1972) 온정주의, Buchanan & Brock(1989) 대리결정, Christman(1991) 역사적 자율성, Santoni de Sio & van den Hoven(2018) meaningful human control을 직접 선행으로 등록했다. 예측/성과 우위와 정당한 판정권을 분리한다는 일반론은 Project 신규성에서 제외한다. [W2](CHOICE_J_AUTHORITY_PRIOR_ART_WAVE_2_2026-10-09_KO.md)
+
+## P/J 구분 보강
+[예측 정확도와 위임 실증 선행연구](CHOICE_J_PREDICTION_DELEGATION_PRIOR_ART_2026-10-09_KO.md) 확인. 정확도 P, 인지된 정확도, 조언 가중치, 실제 위임, 규범적 판정권 J, 정정/이탈 R을 합산하지 않는다. AI 설명 제공이 적절한 신뢰를 보장하지 않으며 교정 개입에도 부담과 분배효과가 있다. ZERO GATE OPEN.
