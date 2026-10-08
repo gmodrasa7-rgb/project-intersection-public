@@ -362,3 +362,45 @@ Emerson에 따라 비대칭을 단일 능력 점수로 대체하지 말고 **A�
 5. **부정적 결과를 필수 포함**: 인식만 좋아지고 실질 구제가 없는 경우, 인식도 구제도 없는 경우, 독립재심이 비용만 증가시키는 경우를 모두 기록한다.
 
 **근거 등급:** 이 절의 문헌 내용은 원발행처/기관 공개 초록 및 서지 기반이며 전문 전수검토·원자료 재분석은 하지 않았다. 이번 절 자체는 연구설계·선행연구 감사이고 실험 결과가 아니다.
+
+
+## 16. H-PA4 추가 선행연구 제거 감사: 독립성·집행·이의제기의 결합 (2026-10-09)
+
+### 16.1 독립적 제3자/중립성도 신규 개념이 아니다
+- **John Thibaut; Laurens Walker (1975)**, *Procedural Justice: A Psychological Analysis* (Lawrence Erlbaum Associates). 절차통제·결정통제와 제3자 분쟁해결을 체계화한 고전. Project의 '독립 재심' 일반개념을 신규 주장하지 않는다.
+- **Tom R. Tyler (1988)**, *What Is Procedural Justice? Criteria Used by Citizens to Assess the Fairness of Legal Procedures*, *Law & Society Review* **22(1):103–135**, DOI **10.2307/3053563**. [Cambridge 원발행처](https://www.cambridge.org/core/journals/law-and-society-review/article/abs/what-is-procedural-justice-criteria-used-by-citizens-to-assess-the-fairness-of-legal-procedures/). 의사결정자의 중립성·신뢰성 등 절차평가 기준 연구. 독립/중립 평가의 중요성 자체는 선행연구.
+- **Rebecca Hollander-Blumoff; Tom R. Tyler (2008)**, *Procedural Justice in Negotiation: Procedural Fairness, Outcome Acceptance, and Integrative Potential*, *Law & Social Inquiry* **33(2):473–500**, DOI **10.1111/j.1747-4469.2008.00110.x**. [Cambridge 원발행처](https://www.cambridge.org/core/journals/law-and-social-inquiry/article/abs/procedural-justice-in-negotiation-procedural-fairness-outcome-acceptance-and-integrative-potential/). 절차적 공정성과 결과 수용의 관계를 다룸. 결과 수용을 객관적 결과 정확성과 혼동하지 않는다.
+
+### 16.2 집행 가능성도 별도 선행영역이다
+- **Felix Hadwiger (2017)**, *Contracting International Employee Participation: Global Framework Agreements*, Springer. 글로벌 프레임워크 협약에서 노동자 참여·분쟁절차와 실제 이행/집행의 문제를 다룸. '규칙 존재 ≠ 집행'이라는 일반 명제는 Project 신규성이 아니다.
+- 알고리즘 거버넌스에서도 contestability 문헌은 **결정 이유 접근, 인간 검토, 수정/구제 가능성**을 별개 요건으로 다룬다. 따라서 '이의제기권과 실질적 구제는 다르다'는 구분 자체도 신규성으로 주장하지 않는다.
+
+### 16.3 H-PA4의 추가 축소
+기존 H-PA4:
+> provenance + contestation + independent review의 결합이 각 요소 단독보다 실제 귀속오류·복구비용·협력 지속성에 추가 예측력을 제공하는가.
+
+**수정 H-PA4R:**
+> **정답 기여구조(ground truth)가 사전에 알려진 공동작업 과제**에서, provenance 기록의 정확도를 고정한 뒤 **재심 주체의 독립성 × 정정결과의 실제 집행 가능성 × 권력비대칭**을 조작할 때, (a) 객관적 기여귀속 오차와 (b) 정정 후 잔여오차가 어떻게 달라지는가.
+
+이 축소의 이유:
+1. voice, process control, decision control, neutrality, appeal, grievance, remedy/enforcement 각각은 이미 선행연구가 풍부하다.
+2. 공정성 인식·결과 수용도 이미 많이 연구됐다.
+3. Project가 검증할 가치가 남으려면 **주관적 공정성 대신 알려진 정답 대비 attribution error**를 핵심 결과변수로 삼아야 한다.
+4. provenance 자체의 신규성도 주장하지 않는다. **정확한 provenance를 통제변수로 고정**하고 제도적 권한배치가 객관적 오류를 바꾸는지만 본다.
+
+### 16.4 최소 사전등록 후보
+- 과제: 여러 행위자가 분리된 검증가능 기여를 수행하고 ground-truth contribution log를 자동 생성.
+- 평가자: 이해관계가 있는 원평가자 vs 이해관계 없는 독립평가자.
+- 정정: 권고만 가능 vs 결과를 실제 수정할 수 있음.
+- 권력비대칭: 평가자가 후속 자원/기회 배분권 없음 vs 있음.
+- provenance: 모든 조건에서 동일한 완전 로그 제공.
+- 1차 결과: attribution error before appeal, residual attribution error after appeal.
+- 2차 결과: correction success, appeal cost, retaliation/disadvantage, repeated cooperation.
+- **폐기 기준:** 독립성·집행·권력비대칭의 주효과/상호작용이 보류 표본에서 객관적 오류를 개선하지 않거나, 동일 설계를 이미 검증한 직접 선행연구가 발견되면 신규성/가설을 축소 또는 폐기.
+
+### 16.5 현재 신규성 판정
+**개념 신규성: 거의 없음.**
+**결합 실험 신규성: 미확정.**
+**가장 방어 가능한 잔차:** provenance를 완전히 동일하게 제공하고 ground truth가 알려진 상태에서, 권한배치가 **실제 attribution correction accuracy**에 주는 인과효과를 측정하는 실험.
+
+이 절은 선행연구 감사와 사전설계다. Project의 실증결과가 아니다.
