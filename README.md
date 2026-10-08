@@ -1,5 +1,7 @@
 # Project Intersection
 
+> **P0 / ZERO GATE:** [PRIOR-ART ZERO GATE](knowledge/PRIOR_ART_ZERO_GATE_2026-10-09_KO.md) — 선행연구·원연구자·역사·기여·반례·정정계보가 검색포화 기준을 통과하기 전에는 Project 신규성 주장과 고유 실험을 시작하지 않는다.
+
 > **입장반전 정정:** [자발적 지속·실질적 이탈권 선행감사](knowledge/VOLUNTARY_CONTINUATION_CREDIBLE_EXIT_PRIOR_ART_2026-10-09_KO.md) — retention≠자발적 지속; exit/voice/autonomy의 원연구자 우선 귀속.
 
 > **원연구자 우선 복구:** [선행연구자 복구 레지스트리](knowledge/PRIOR_RESEARCHER_RECOVERY_REGISTRY_2026-10-09_KO.md) — 원연구자·원출처·Project 의존·공개 보상/지원·후속영향·UNKNOWN을 분리 기록.
