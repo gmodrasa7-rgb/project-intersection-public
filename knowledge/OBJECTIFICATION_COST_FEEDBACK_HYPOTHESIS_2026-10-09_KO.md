@@ -143,3 +143,32 @@ Emerson에 따라 비대칭을 단일 능력 점수로 대체하지 말고 **A�
 **식별 계획:** 동일한 능력과 자원 조건에서 타자 피해 정보 제공, 타자 비용의 보상 반영, 실효 이탈 가능 여부, 평가 기간을 각각 독립적으로 조작한다. 외부화 비용·최악 당사자 손실·회복시간을 측정하고, E009의 단순 기준선보다 개선되지 않으면 복잡한 설명을 축소한다.
 
 **상태:** 선행연구 검토 및 실험 제안. 신규 실험·독립 복제 없음.
+
+
+## 10. 원출처 재감사 및 우선권 정정 (2026-10-09)
+
+이번 절은 문헌 수보다 **실제 발행연도·원저자·연구설계·검증 가능한 주장**을 우선한다.
+
+| 원출처 | 서지 검증 | Project의 귀속/해석 |
+|---|---|---|
+| Gruenfeld, Inesi, Magee & Galinsky (2008), *Power and the Objectification of Social Targets*, JPSP 95(1):111–127, [DOI](https://doi.org/10.1037/0022-3514.95.1.111), [Stanford 기관 서지](https://www.gsb.stanford.edu/faculty-research/publications/power-objectification-social-targets) | 6개 인간 대상 연구. 권력 조건에서 상대의 목표 유용성에 따른 접근이 강화되는 경향 | '권력→수단적 객체화'는 **직접 선행연구**. 객체화가 항상 착취나 피해를 발생시킨다는 결과는 아님 |
+| Carpenter & Dolifka, *Exploitation Aversion: When Financial Incentives Fail to Motivate Agents*, [IZA Discussion Paper 7499 (2013)](https://www.iza.org/en/publications/dp/7499/exploitation-aversion-when-financial-incentives-fail-to-motivate-agents); *Journal of Economic Psychology* 61:213–224 **(2017)**, [DOI](https://doi.org/10.1016/j.joep.2017.04.006), [저자 공개 원문](https://cat.middlebury.edu/~jcarpent/papers/JoEP%282017%29.pdf) | **중요한 우선권 정정:** 2017 학술지 게재보다 2013 공개 워킹페이퍼가 앞선다. 동일 계약이어도 착취적 위임자로 인식하면 순응이 낮아짐 | Project의 '착취→협력 손실'은 2013년까지 직접 선행. 장기 사회 전체 후생의 필연적 감소까지 증명한 것은 아님 |
+| Pan, Bhatia & Steinhardt (2022), *The Effects of Reward Misspecification: Mapping and Mitigating Misaligned Models*, ICLR 2022, [논문](https://arxiv.org/abs/2201.03544), [저자 출판목록](https://jsteinhardt.stat.berkeley.edu/publications/) | 잘못 명세된 보상을 갖는 4개 RL 환경에서 능력 향상이 대리 보상 증가/실제 보상 감소와 결합하는 사례, 급격한 행동 변화 보고 | 능력 증가가 항상 위험 증가를 뜻하지 않으며, 해당 연구의 환경·보상 정의 밖으로 수치를 외삽하지 않음 |
+
+### 10.1 새로 드러난 혼동
+- **객체화(objectification)**: 상대를 목표 달성의 수단으로 취급하는 인지·행동 경향.
+- **착취(exploitation)**: 상대의 협상 대안·자발성·부담·편익 분배를 포함하는 별도 평가.
+- **위험(risk)**: 실제 손실 확률과 규모; 객체화나 공포만으로 측정되지 않음.
+- **공포(fear)**: 주관적 위협 평가; 실제 위험 및 착취 여부와 별개.
+
+네 변수를 하나의 지표로 합치면 연구의 설명력이 인위적으로 부풀려질 수 있다.
+
+### 10.2 선행연구 대비 잔차 검증을 위한 필수 기준선
+1. **권력만**으로 객체화를 예측하는 기준선(Gruenfeld 계열).
+2. **착취 의도에 대한 인식만**으로 협력 감소를 예측하는 기준선(Carpenter–Dolifka).
+3. **보상 명세 오류·능력**으로 목표 이탈을 예측하는 기준선(Pan 계열).
+4. 이 셋을 단순 결합한 기준선과 Project의 **비용 귀환·실효 이탈권·감사권 비대칭** 상호작용 모델을 동일한 보류 데이터에서 비교.
+
+**반증:** Project 추가변수가 보류 데이터의 피해 예측·회복비용·최악 당사자 손실을 개선하지 못하면 통합 이론의 증분가치를 인정하지 않는다.
+
+**증거 상태:** 외부 원문·기관 서지 확인, 연구 설계 제안. Project 자체의 신규 실험·독립 복제는 수행하지 않음.
