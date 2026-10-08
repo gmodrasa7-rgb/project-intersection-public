@@ -47,3 +47,6 @@ SATURATION-CANDIDATE는 '문헌이 없다'가 아니다. 이후 새 원출처가
 W3: **authorship dispute → career/funding/collaboration/exit outcomes** 직접 인과/종단연구.
 W4: **non-author technical/data/software contributors → career recognition/retention**.
 W5: **비영어권·학위논문·기술보고서·조직연구에서 provenance/correction/exit 결합**.
+
+
+> [선택 인과축 분리 프로토콜](CHOICE_CAUSAL_AXES_PROTOCOL_2026-10-09_KO.md): 자율성·강제성·유도/영향·편향·조종을 독립축으로 판정하며 선택결과에서 원인을 역추론하지 않는다. PRIOR-ART GATE OPEN.
