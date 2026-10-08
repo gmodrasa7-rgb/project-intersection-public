@@ -92,3 +92,13 @@ A contributor's departure from a project, institution, field, or collaboration d
 - When stronger prior art is verified, reduce Project novelty before reducing prior-researcher attribution.
 
 **Exit ≠ erasure. Credit ≠ captivity. Support ≠ control.**
+
+
+## Invisible-contribution audit
+Authorship is not treated as a complete inventory of contribution. Where relevant and lawfully observable, audits should also test for problem discovery, counterexample/error discovery, data generation/curation, software, technical investigation, validation/replication, maintenance, translation/accessibility, project administration, negative results, and correction work.
+
+Evidence volume is not contribution magnitude. Citation count, search visibility, authorship status, and public compensation records must not be used as automatic proxies for contribution.
+
+The Project's minimum prior-research output should preserve: **all verified original creators → year → original title → persistent source → verified contribution → exact Project dependency → differences/counterevidence → version/correction status**.
+
+Data/software/contributorship practices are prior art, including FORCE11 Data Citation Principles, FORCE11 Software Citation Principles, and NISO CRediT. The Project claims no originality for role-based contribution recording itself.
