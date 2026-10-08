@@ -1,5 +1,7 @@
 # Public Navigation Layer / 공개 탐색층
 
+> **P0 / ZERO GATE:** [PRIOR-ART ZERO GATE](knowledge/PRIOR_ART_ZERO_GATE_2026-10-09_KO.md) — 선행연구·원연구자·역사·기여·반례·정정계보가 검색포화 기준을 통과하기 전에는 Project 신규성 주장과 고유 실험을 시작하지 않는다.
+
 > **입장반전 정정:** [자발적 지속·실질적 이탈권 선행감사](knowledge/VOLUNTARY_CONTINUATION_CREDIBLE_EXIT_PRIOR_ART_2026-10-09_KO.md) — retention≠자발적 지속; exit/voice/autonomy의 원연구자 우선 귀속.
 
 > **2026-10-09 부분 검증:** [원문 정량대조](knowledge/PRIMARY_SOURCE_NUMERIC_CHECK_2026-10-09_KO.md) — Wang/Bol/Ross 출판사 본문·Ross 정정 확인. 원자료 재현은 미완료.
