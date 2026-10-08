@@ -1,5 +1,7 @@
 # Public Navigation Layer / 공개 탐색층
 
+> **원연구자 우선 복구:** [선행연구자 복구 레지스트리](knowledge/PRIOR_RESEARCHER_RECOVERY_REGISTRY_2026-10-09_KO.md) — 원연구자·원출처·Project 의존·공개 보상/지원·후속영향·UNKNOWN을 분리 기록.
+
 > **선행연구자 보상·지원·연구지속성:** [선행연구자 영향·보상·연구이탈 실증 감사](knowledge/PRIOR_RESEARCHER_IMPACT_REWARD_ATTRITION_AUDIT_2026-10-09_KO.md) — 연구비와 개인보상을 분리하고 이탈·생존편향·반례를 함께 기록.
 
 > **출처·원저작자 존중·저작권 우선:** [출처·기여·라이선스·정정 공개 프로토콜](knowledge/SOURCE_CREDIT_COPYRIGHT_PROTOCOL_2026-10-09_KO.md). 법적 의무와 연구윤리를 구분하며 선행연구 원저자·판본·반례를 보존합니다.
