@@ -42,3 +42,10 @@
 - 원문/원자료/판본/정정·철회 전수조사 미완료.
 - 한국어·비영어권 문헌 및 비저자 기여계보 미완료.
 - 본 파동은 원전 다수 확인, 따라서 **ZERO GATE OPEN / 0/3**.
+
+
+## W2 보완 — Goodin 원전 확인
+
+**Robert E. Goodin (1980)**, *Manipulatory Politics*, New Haven: Yale University Press, ISBN 0300024630. https://philpapers.org/rec/GOOMP ; https://openlibrary.org/books/OL4423157M/Manipulatory_politics . 1981년 **John R. Champlin**의 서평도 확인: *APSR* 75(2):477–478, DOI 10.2307/1961387. **원서의 서지와 역사적 우선성 확인, 원문 전체 미열람**. 후속 논문에서 Goodin의 은폐·상대 의지에 반하는 개입 논의 확인: https://philarchive.org/archive/NOGMIP . 원전 텍스트를 직접 열람하기 전 세부 주장 검증 상태는 SECONDARY-CONFIRMED.
+
+**추가 역사 계보:** Goodin의 *Exploiting a Situation and Exploiting a Person* (1985, University of Essex working paper)도 조종/착취 구분을 위한 후속 원전 후보. https://obnb.uk/a00141700-robert-e-goodin . 제목/서지 수준, 주장 미검증.
