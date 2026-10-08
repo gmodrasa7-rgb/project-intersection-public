@@ -79,3 +79,8 @@ W-CHOICE-2 원장: [원저작자·역사·출처·기여](CHOICE_CAUSAL_AXES_PRI
 | W-CHOICE-J3 | 2026-10-09 | P 정확도·algorithm aversion/appreciation·XAI 과신·교정 비용 | 신규 DIRECT/PARTIAL 있음 | 설명은 오답 수용도 높일 수 있음; 교정 개입 비용 | RESET→0 |
 
 [예측 정확도와 판정권 선행조사](CHOICE_J_PREDICTION_DELEGATION_PRIOR_ART_2026-10-09_KO.md).
+
+| W-CHOICE-J4 | 2026-10-09 | automation bias 원전, 최소 수정권, 설명의 역효과, 인간-AI 가이드 | 신규 DIRECT 다수 | 통제감≠실질 정정; 설명≠오류발견 | RESET→0 |
+| W-CHOICE-J5 | 2026-10-09 | actionable recourse, 절차공정성, 실제 이의제기 장애, 시간동학 | 신규 DIRECT/PARTIAL 다수 | 법적 항소/설명≠집행 가능한 구제 | RESET→0 |
+
+[W4 P/J 수정·설명 반례](CHOICE_J_PREDICTION_DELEGATION_WAVE_2_2026-10-09_KO.md); [W5 실질적 구제 선행](CHOICE_J_EFFECTIVE_RECOURSE_PRIOR_ART_WAVE_3_2026-10-09_KO.md). 포화 0/3 유지.
