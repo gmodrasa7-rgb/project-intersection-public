@@ -40,3 +40,28 @@
 
 ## 중단조건
 '새 논문이 더는 안 나온다'는 단 한 번의 검색으로 판정 불가. 검색어·데이터베이스·인용추적·시기·언어·포함/제외기준을 기록하고, 연속된 독립 검색에서 새 **관련 원출처**가 추가되지 않는 상태를 확인한 뒤에만 **검색 포화 후보**로 표기. 현재 **포화 미달**.
+
+
+## 서지 복구·출판연도 정정 (원출처 확인)
+- **Elizaveta Savchenko · Ariel Rosenfeld (2024)**, *Authorship conflicts in academia: an international cross-discipline survey*, *Scientometrics* 129:2101–2121, DOI 10.1007/s11192-024-04972-x. 752명·93개국·41분야; **초대 15,362건 대비 응답률 4.89%**이므로 표본대표성 주장과 비응답편향 위험을 분리. https://link.springer.com/article/10.1007/s11192-024-04972-x
+- **Elise Smith · Bryn Williams-Jones · Zubin Master · Vincent Larivière · Cassidy R. Sugimoto · Adèle Paul-Hus · Min Shi · David B. Resnik (온라인 2019 / 권호 2020)**, *Misconduct and Misbehavior Related to Authorship Disagreements in Collaborative Science*, *Science and Engineering Ethics* 26:1967–1993, DOI 10.1007/s11948-019-00112-4. 8,364명 전체 응답, 핵심문항 6,673명, 저자명 관련 분쟁 46.6% **응답자 비율**. 원문에는 각 저자의 기여역할 설명이 존재한다. https://link.springer.com/article/10.1007/s11948-019-00112-4
+- **Marie K. Norman · Chelsea N. Proulx · Doris M. Rubio · Colleen A. Mayowski (온라인 2021-11-19 / 권호 2023)**, *Reducing tensions and expediting manuscript submission via an authorship agreement for early-career researchers: A pilot study*, *Accountability in Research* 30(7):379–392, DOI 10.1080/08989621.2021.2002693. 65명 pilot. 기존 '2023 논문' 표기는 권호연도 기준임을 명시. https://pubmed.ncbi.nlm.nih.gov/34743618/
+- **Rossella Salandra · Marisa Miraldo · Paola Criscuolo (2026-01-06)**, *Attribution of credit in acknowledgements: The case of systematic reviews in medicine*, *PLOS ONE* 21(1):e0338714, DOI 10.1371/journal.pone.0338714. 2,091건의 Cochrane 리뷰 원본/개정 쌍에서 규정상 인정해야 할 비저자 기여자를 분석. **약 40%는 적격 리뷰의 부적절한 acknowledgement 누락 비율**, 전체 의학 논문 누락률 아님. 연구자들이 표적 배제보다 관행/지리적 차이를 지적한 점도 보존. 자료 DOI **10.15125/BATH-01609**. https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0338714
+- **Zhiyi Chen · Xuerong Liu · Kuan Miao · Xingya Liao · Xiaoling Zhang · Zhengzhi Feng · Hu Chuan-Peng (2023-01-12; volume 16/2022)**, *Engaging the open science framework in quantifying and tracing scientists’ research credits*, *Frontiers in Integrative Neuroscience* 16:1028986, DOI 10.3389/fnint.2022.1028986. **2022년 출판이라고 기록한 앞선 표기는 정정**: 2023-01-12 발행, 2022 권호·DOI 문자열. **Opinion 논문**, 효과검증 실험 아님. https://www.frontiersin.org/journals/integrative-neuroscience/articles/10.3389/fnint.2022.1028986/full
+- **Hoon C. Shin · Peyman Yousefi · Samuel Park · David J. Yu · Marco A. Janssen · Sechindra Vallury · Eduardo Araral (2023)**, *Coping With Unreliable Water Supply: An Experimental Study of Exit and Voice*, *Water Resources Research* 59(6):e2022WR032468, DOI 10.1029/2022WR032468. 272명, 제공자 1명+이용자 3명 4인 실험. **voice 조건이 exit 포함 조건보다 협력에 유리한 결과**: 'exit는 언제나 협력을 개선한다'의 반례. 연구자 기여기록에 대한 직접 실험은 아님. https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2022WR032468
+- **Robert A. Ping Jr. (1993)**, *The effects of satisfaction and structural constraints on retailer exiting, voice, loyalty, opportunism, and neglect*, *Journal of Retailing* 69(3):320–352, DOI 10.1016/0022-4359(93)90010-G. 전환비용·대안매력·관계투자와 exit/voice 관련 구조적 제약의 오래된 선행성. https://www.sciencedirect.com/science/article/pii/002243599390010G
+
+## 추가로 발견한 선행 계보 (본문 미대조: 인용추적 대기)
+- **Rasmussen et al. (2023)**, *Authorship agreements benefit researchers and research culture*, *Nature Human Behaviour*, DOI **10.1038/s41562-023-01758-8**. 저자권 합의 개입에 관한 선행 논의. 논문의 실증 여부/효과크기 미확인.
+- **Rasmussen et al. (2020)**, *Authorship policies at U.S. doctoral universities: A review and recommendations for future policies*, DOI **10.1007/s11948-020-00273-7**. 제도적 authorship policy의 선행성.
+- **Ahmed · Hadi · Choudhury (2010)**, *Authorship conflict in Bangladesh: An exploratory study*, *Learned Publishing* 23(4):319–325, DOI **10.1087/20100406**. 비서구권 연구 우선 추적.
+- **Puljak · Sambunjak (2020)**, *Can authorship be denied for contract work?*, DOI **10.1007/s11948-019-00173-5**. 계약/보수와 저자권 구분의 선행성.
+
+## 이번 파동의 반례와 경계
+1. 출판 연도·권호연도·온라인 선공개연도 혼용은 기여계보 왜곡 위험. 세 시점을 분리 기록.
+2. 4.89% 응답률 연구의 대표성 주장은 저자 주장으로 기록하고, 일반화에 별도 제한.
+3. 40% acknowledgement 누락은 규정상 적격 Cochrane 개정 리뷰에 한정.
+4. **실험적 exit 선택지 추가가 협력을 악화시킬 수 있음**. credible exit는 규범적 가치와 관측 협력성과를 분리.
+5. credit 추적 논문은 Opinion; 저자권 합의는 pilot; 관찰설문은 인과검증이 아님.
+
+**검색 포화 상태: NOT REACHED.** 새로운 직접 원출처와 반례가 계속 추가됨.
