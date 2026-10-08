@@ -40,3 +40,34 @@
 - Bol의 47%는 상대증가이며 절대증가는 9%p.
 - Ross의 13.24/58.40%는 상대격차, 절대효과는 각각 −0.4210/−0.7652%p.
 - 원문 본문을 확인한 수치와 미검증 수치를 검증 큐에서 구분해야 함.
+
+
+## 4. Wei Yang Tham · Joseph Staudt · Elisabeth Ruth Perlman · Stephanie D. Cheng
+- 원문: https://arxiv.org/abs/2402.07235
+- **중요한 판본 정정:** arXiv 식별자는 2024년 최초 등록이지만, 현재 제공되는 전문에는 **2026-03-22** 개정일이 표기되어 있다. 따라서 '2024년판 수치'라고 단정하지 않는다. **ARXIV CURRENT-TEXT CHECKED / EXACT VERSION-ID PENDING**.
+- 표본/설계: NIH R01 성공적 갱신 연구실, 단일 R01 연구실의 **30일 초과 자금 공백**과 지속지원 연구실 비교; 행정 고용·소득·출판자료를 연결한 difference-in-differences.
+- 원문 초록/Introduction: 미국 내 비고용(nonemployment) 확률 **+3 percentage points**, 기준 대비 **약 40% 상대증가**. 이는 실업(unemployment) 확률과 동일하지 않으며 미국 밖 취업을 포함할 수 있다.
+- 충격으로 미국 비고용 상태가 된 인력 중 **약 절반은 미국을 떠난 것으로 추정**. '연구를 영구 포기한 절반'이 아니다.
+- 계속 미국에서 일하는 인력의 임금은 지속지원 비교집단보다 **20% 낮음**. 전체 연구자/PI의 소득효과로 확대 금지.
+- 초록은 관련 집단의 특정 연도 출판확률 **90% 낮음**이라고 표현. 본문에는 충격 유발 비고용자의 **약 87%가 출판활동을 줄였음**도 별도로 기술한다. **90% 출판확률과 87% 출판활동 감소를 같은 통계로 합치지 않는다.**
+- 본문은 faculty 집단의 고용 outcome 효과를 찾지 못했다고 보고; 복수 R01 연구실도 고용 outcome 변화가 0에 가깝다고 보고. 중요한 반례/완충조건.
+- **PRIMARY TEXT VERIFIED / EXACT VERSION AND TABLE ESTIMANDS PENDING / NOT INDEPENDENTLY REPLICATED**.
+
+## 5. Ryan Hill · Carolyn Stein (2025)
+- 출판사 원문: https://www.journals.uchicago.edu/doi/full/10.1086/733398
+- DOI: 10.1086/733398; *Journal of Political Economy* 133(3):793–845.
+- 구조생물학 Protein Data Bank에서 발견 우선권 경쟁을 비교.
+- 원문 본문 Section IV: 선점당한 연구의 논문 출판확률 **−2.6 percentage points** (승자 기준 출판율 **88%**). 이는 상대 약 3% 감소이며 '2.6% 감소'와 혼용하지 않는다.
+- 상위 10위권 저널 게재확률 **−6 percentage points** (상대 약 20% 감소).
+- 첫 5년 인용 **21% 감소**. 이는 21 percentage points가 아니다.
+- 상위 10% 인용 논문이 될 확률 **−3.6 percentage points** (상대 약 24% 감소).
+- 패배한 연구도 다수가 출판: 저자들이 인용한 PDB 자료에서 선점당한 프로젝트 **약 85% 출판**. winner-take-all이 아님.
+- 저자는 승자/패자 두 논문의 전체 인용 중 패자 몫을 **약 44%**로 추정.
+- 원문은 비상업적 이용 조건 **CC BY-NC 4.0** 표기; 인용/요약과 본문 재배포 권리를 구별.
+- 저자들은 논문의 데이터/코드 복제 자료를 Harvard Dataverse **10.7910/DVN/TJ5VCW**로 안내.
+- **PUBLISHER TEXT VERIFIED / DATA-CODE REPLICATION PENDING**.
+
+## Project 반증 업데이트
+- **강한 반례 1:** 연구비 공백의 충격은 모든 연구인력에 균일하지 않다. 단일 R01의 trainees/staff와 faculty/복수 R01은 다르다.
+- **강한 반례 2:** 우선권 상실은 전면적 성과소멸이 아니다. 다수 패배팀이 논문을 출판한다.
+- 따라서 Project는 '지원 부족→필연적 소멸' 및 'credit 상실→winner-take-all'을 보편명제로 주장하지 않는다.
