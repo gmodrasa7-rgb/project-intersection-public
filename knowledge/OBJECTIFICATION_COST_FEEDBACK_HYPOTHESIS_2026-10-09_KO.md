@@ -216,3 +216,22 @@ Emerson에 따라 비대칭을 단일 능력 점수로 대체하지 말고 **A�
 | 보상 명세 오류와 보상 해킹 | **Alexander Pan; Kush Bhatia; Jacob Steinhardt** | 2022, *The Effects of Reward Misspecification: Mapping and Mitigating Misaligned Models*, *International Conference on Learning Representations (ICLR)*; 사전공개 arXiv **2201.03544** | [저자 공개 실험 코드·권장 인용](https://github.com/aypan17/reward-misspecification), [논문 원문](https://arxiv.org/abs/2201.03544), [학회 심사 기록](https://openreview.net/forum?id=JYtwGwIL7ye) | 모델 능력·관측 노이즈·훈련 조건과 명세 오류 악용의 관계는 직접 선행. 비용 외부화·객체화·이탈권 결합의 Project 고유 인과 검증은 아님. **arXiv 번호는 DOI와 구별**해 표기. |
 
 **서지 판정 규칙:** (1) 저자 전원과 순서 보존, (2) 인쇄/학회 연도와 웹 게시일 구별, (3) DOI·arXiv·학회 식별자 구분, (4) 직접 검증한 메커니즘과 Project의 외삽을 분리, (5) 원문 미확인 시 '초록/서지 확인'으로 제한, (6) 단일 원안자가 확정되지 않는 분야는 '대표 선행연구'로 표기. 기존 6–8절의 추가 문헌은 이 표가 모두 재검증했다는 뜻이 아니다.
+
+
+## 10. 원발행처 재대조: 저자 전원·우선권·근거등급 (2026-10-09)
+
+이 표의 **저자명과 순서는 발행처 서지 기준**이다. 문헌의 저자에게 이론/실험의 우선권을 귀속하며 Project 창시자의 문제제기·통합가설과 혼동하지 않는다.
+
+| 선행연구와 원저자(순서 유지) | 최초 공개와 정식 출판 구분 | 원발행처·식별자 | 직접 확인된 내용 / 외삽 금지 |
+|---|---|---|---|
+| **Robert Jervis** — *Cooperation under the Security Dilemma* | **1978년 1월**, *World Politics* **30(2):167–214**; Cambridge 웹의 2011년은 **온라인 등록일** | [Cambridge 발행처](https://www.cambridge.org/core/journals/world-politics/article/abs/cooperation-under-the-security-dilemma/C8907431CCEFEFE762BFCA32F091C526), DOI **10.2307/2009958** | 공격·방어 구별성과 방어 우위가 안보 딜레마를 완화하는 조건. 인간/AI 일반의 필연적 위협 나선을 증명하지 않음. |
+| **Barry M. Staw; Lance E. Sandelands; Jane E. Dutton** — *Threat Rigidity Effects in Organizational Behavior: A Multilevel Analysis* | **1981년 12월**, *Administrative Science Quarterly* **26(4):501–524** | [JSTOR 발행처 서지](https://www.jstor.org/stable/2392337), DOI **10.2307/2392337** | 위협 아래 정보처리·통제 범위 축소의 다층 분석. 개별 AI가 공포를 경험한다는 증거 아님. |
+| **Jeffrey P. Carpenter; David Dolifka** — *Exploitation Aversion: When Financial Incentives Fail to Motivate Agents* | **2013년 7월 IZA Discussion Paper 7499** → **2017년 8월** *Journal of Economic Psychology* **61:213–224** | [2013년 IZA 원서지](https://www.iza.org/en/publications/dp/7499/exploitation-aversion-when-financial-incentives-fail-to-motivate-agents); [2017년 발행처](https://www.sciencedirect.com/science/article/pii/S0167487016306158); DOI **10.1016/j.joep.2017.04.006** | 착취 의도를 드러낸 위임자에 대한 협조 감소. **2013년 초록은 착취 회피 성향이 효과를 조절(moderate)한다고 서술**하고, **2017년 초록은 매개(mediate)한다고 서술**한다. 두 버전의 분석·표본·척도 동일성을 확인하지 않고 '같은 통계결과'라고 합치지 않는다. |
+
+### 인용 오류 방지 체크
+- **2011 ≠ Jervis 최초 출판연도**: 온라인 등록과 1978년 논문 발표를 분리.
+- **Staw–Sandelands–Dutton 저자 전원 표기**: ‘Staw 외’만 반복하지 말고 최소 첫 등장에는 세 명을 표기.
+- **Carpenter–Dolifka 2013/2017**: 워킹페이퍼의 선공개 우선권을 인정하되, 2017 학술지 DOI를 2013 문서의 DOI처럼 붙이지 않음.
+- **통계 용어 주의**: ‘매개’와 ‘조절’은 서로 다른 가설이다. 원문 모형을 재확인하기 전에는 두 판본의 차이를 미해결로 유지.
+- **근거 등급**: 발행처 서지·초록 대조 = 서지/초록 검증. 전문·원자료 재분석, 외부 복제, Project의 독립 실험과 구분.
+- **Project 잔차**: 위협 → 통제 경직, 안보 딜레마, 착취 거부는 각각 기존 선행연구. 이탈·복구·감사권·비용 귀환의 추가 설명력은 미검증.
