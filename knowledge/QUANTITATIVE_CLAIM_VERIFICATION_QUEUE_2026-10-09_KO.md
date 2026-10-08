@@ -1,10 +1,14 @@
 # 정량 주장 검증 큐 — 2026-10-09
 
+> **2026-10-09 부분 검증:** [원문 정량대조](PRIMARY_SOURCE_NUMERIC_CHECK_2026-10-09_KO.md) — Wang/Bol/Ross 출판사 본문·Ross 정정 확인. 원자료 재현은 미완료.
+
 **상태:** P0 EVIDENCE HYGIENE / NO NEW RESULT
 
 공개 문서의 숫자는 인상강화용 장식이 아니다. 모집단·기간·분모·단위·모형·불확실성까지 원문에서 복구되지 않으면 Project의 확정 근거로 사용하지 않는다.
 
 ## P0 — 재검증 전 인용 제한
+
+**상태 갱신:** Wang/Bol/Ross = PRIMARY TEXT VERIFIED; Ross correction VERIFIED. 세 연구 모두 SUPPLEMENTARY/RAW REPRODUCTION PENDING. 나머지는 미검증.
 | 연구 | 현재 확인해야 할 주장 | 실패하기 쉬운 지점 | 검증 완료 전 처리 |
 |---|---|---|---|
 | Wang, Jones & Wang 2019 | near-miss와 10년 NIH-system attrition | 12.6%의 의미, 절대수준/차이/상대효과 혼동 | 방향만 유지; 효과크기 보류 |
