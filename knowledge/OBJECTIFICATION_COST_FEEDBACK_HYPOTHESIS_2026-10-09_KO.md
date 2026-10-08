@@ -246,3 +246,21 @@ Emerson에 따라 비대칭을 단일 능력 점수로 대체하지 말고 **A�
 3. **Jervis, Robert (1978)** — *Cooperation under the Security Dilemma*. *World Politics* **30(2):167–214**, DOI **10.2307/2009958**, [Cambridge 원발행처](https://www.cambridge.org/core/journals/world-politics/article/abs/cooperation-under-the-security-dilemma/C8907431CCEFEFE762BFCA32F091C526). 출판연도는 1978년이며 웹 게시연도와 구별. **방어 우위와 공격/방어 구별성**은 안보 딜레마 완화의 직접 선행 조건이다.
 
 **정정 우선순위:** 저자 정체성 추정으로 원발행처 서지를 덮어쓰지 않음 > 매개/조절 혼용 금지 > 선공개와 정식출판 구분 > DOI 귀속 정확성 > AI 분야로의 외삽 제한. 기존 10절은 유지하되 이 절의 검증 주석을 우선 적용한다.
+
+
+## 12. 원문 대조 감사: 연구결과와 서지의 분리 (2026-10-09)
+
+**확인 수준:** 아래 3건은 발행처 서지·초록을 대조했으며 Carpenter–Dolifka의 2017년 저자 공개 전문도 확인 가능한 상태다. 전체 연구의 재현·원자료 재분석을 완료했다는 뜻이 아니다.
+
+| 논문 / 정확한 저자 | 우선권과 출판정보 | 직접 근거 및 해석 한계 |
+|---|---|---|
+| **Gruenfeld, Deborah H.; Inesi, M. Ena; Magee, Joe C.; Galinsky, Adam D.** (2008), *Power and the Objectification of Social Targets* | *Journal of Personality and Social Psychology* **95(1):111–127, 2008년 7월**, DOI **10.1037/0022-3514.95.1.111**. [Stanford 기관 서지](https://www.gsb.stanford.edu/faculty-research/publications/power-objectification-social-targets); [PubMed](https://pubmed.ncbi.nlm.nih.gov/18605855/). **기관별 웹 기록의 1월 1일은 실제 학술지 발행월과 혼동 금지.** | 6개 연구에서 **권력 + 활성 목표** 조건의 수단적 접근 경향. '권력만 있으면 반드시 착취한다'는 결과가 아니다. |
+| **Staw, Barry M.; Sandelands, Lance E.; Dutton, Jane E.** (1981), *Threat Rigidity Effects in Organizational Behavior: A Multilevel Analysis* | *Administrative Science Quarterly* **26(4):501–524, 1981년 12월**, DOI **10.2307/2392337**, [원발행처 서지](https://www.jstor.org/stable/2392337). | 개인·집단·조직의 위협 상황에서 정보처리와 통제의 경직성을 다루는 **다층 이론·문헌 논의**. AI의 정서나 필연적 통제 강화에 대한 직접 실험이 아니다. |
+| **Carpenter, Jeffrey P.; Dolifka, David** (2013/2017), *Exploitation Aversion: When Financial Incentives Fail to Motivate Agents* | [2013년 IZA DP 7499](https://www.iza.org/en/publications/dp/7499/exploitation-aversion-when-financial-incentives-fail-to-motivate-agents) → *Journal of Economic Psychology* **61:213–224, 2017년 8월**, DOI **10.1016/j.joep.2017.04.006**, [학술지 초록](https://www.sciencedirect.com/science/article/pii/S0167487016306158), [저자 공개 전문](https://cat.middlebury.edu/~jcarpent/papers/JoEP%282017%29.pdf). | 동일 계약에서도 위임자의 착취적 이해관계에 따라 순응이 낮아질 수 있다는 결과. **2013 초록은 조절(moderation), 2017 초록은 매개(mediation)**라고 쓰므로 판본별 통계모형 확인 전 동등한 결과로 묶지 않는다. |
+
+### 중복·오류 처리 규칙
+1. 6–11절에 같은 논문이 여러 번 나와도 **동일 연구 1건**으로 센다. 인용 횟수는 독립 증거 수가 아니다.
+2. 발행처 초록에서 확인된 결과, 저자 공개 전문에서 확인된 분석, Project가 새로 제안한 인과 연결을 구별한다.
+3. **객체화 → 착취 → 위협 → 통제 → 복구손실** 전체 연쇄를 위 논문들이 하나의 실험에서 검증한 것은 아니다.
+4. 원저자 귀속은 저자 순서대로, Project 창시자 귀속은 **통합 문제설정·가설·반증 설계**에 한정한다.
+5. 2013/2017 매개·조절 차이는 **해결된 통계적 사실이 아니라 판본 차이로 확인된 미해결 검증 항목**으로 남긴다.
