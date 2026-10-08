@@ -75,3 +75,7 @@ W-CHOICE-2 원장: [원저작자·역사·출처·기여](CHOICE_CAUSAL_AXES_PRI
 | W-CHOICE-J2 | 2026-10-09 | 온정주의·결정능력·역사적 자율성·meaningful human control·컴퓨터 편향 | 신규 DIRECT/PARTIAL 있음 | 복지↔자율성, 현재승인↔형성역사의 긴장 확인 | RESET→0 |
 
 [J축 W2 원저작자·역사](CHOICE_J_AUTHORITY_PRIOR_ART_WAVE_2_2026-10-09_KO.md).
+
+| W-CHOICE-J3 | 2026-10-09 | P 정확도·algorithm aversion/appreciation·XAI 과신·교정 비용 | 신규 DIRECT/PARTIAL 있음 | 설명은 오답 수용도 높일 수 있음; 교정 개입 비용 | RESET→0 |
+
+[예측 정확도와 판정권 선행조사](CHOICE_J_PREDICTION_DELEGATION_PRIOR_ART_2026-10-09_KO.md).
