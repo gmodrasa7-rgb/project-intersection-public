@@ -22,3 +22,11 @@ effective_exit_return: error/delegation ≈ 0.1991, correction/error ≈ 0.5246;
 
 ## 실패 기준
 결론이 trust/exit/return 갱신식 선택만으로 쉽게 반전되면 해당 claim은 '모델 의존'으로 기각한다. 합성 결과를 사람/AI 실제 행동으로 외삽하지 않는다.
+
+
+## 민감도 sweep — 즉시 실패 판정
+내부 재실행: effective_correction ∈ {0,.25,.5,.75,1}, return_probability ∈ {0,.1,.35,.7,1}, 각 셀 n=3,000, seed=11. 정정률은 입력된 appeal×correction 구조를 따라 움직였고, exit 조건의 available rounds/return은 return_probability 선택에 크게 좌우됐다. 예: correction=0일 때 return_probability 0→.35 변화만으로 평균 available rounds가 약 13.55→27.39로 변했다.
+
+**판정: 현재 모형으로 '실효적 정정/exit가 장기 협력을 증가시킨다'는 claim은 검증 불가. MODEL-DEPENDENT / FAIL.** 장기 지속 결과가 외생적으로 지정한 trust/return 규칙에서 생성되기 때문이다.
+
+보존되는 가치: empirical calibration에서 반드시 직접 측정해야 할 변수를 식별했다 — appeal 시도율, appeal 성공률, 정정 지연, 실패 후 위임 변화, exit 발생, exit 후 재참여, 재참여 비용. 이 값들을 관측하기 전 장기 공존 효과량을 생성하지 않는다.
