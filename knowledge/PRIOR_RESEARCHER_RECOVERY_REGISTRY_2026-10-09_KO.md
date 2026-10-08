@@ -160,3 +160,80 @@
 
 ## F. Project에 대한 강제효과
 이 레지스트리에서 직접 선행성이 확인된 claim은 Project의 '최초 발견' 목록에서 제거한다. Project의 잔여 연구질문은 **기여 사실→credit/발견가능성→다차원 지원→이탈/잔존→후속연구 지속성**을 동일 개인/팀 수준에서 연결하고, provenance/exit/correction 구조가 이 경로를 어떻게 바꾸는지 검증하는 통합 문제로 제한한다.
+
+
+## G. IVS-0R 역방향 발굴: 이름이 남지 않은 기여자를 찾는 방법
+
+### G1. 결과물→사람 검색만으로는 구조적으로 부족
+최종 논문·특허의 저자명단에서 시작하면 이미 credit를 받은 사람만 높은 확률로 복구된다. 따라서 **pre-output evidence**에서 출발한다.
+
+우선순위:
+1. 연구팀 roster/고용·프로젝트 참여기록
+2. 데이터·실험 생성 provenance
+3. 코드 commit/review/issue 기록
+4. 초안·버전 변경계보
+5. funding proposal과 project personnel
+6. acknowledgements/supporting information
+7. 논문/특허 저자목록
+8. 후속 인용·수상·언론기록
+
+위 순서는 모든 프로젝트에서 자료가 존재한다는 뜻이 아니다. 공개·합법·동의된 자료만 사용한다.
+
+### G2. 선행표준: contributorship는 authorship보다 세분화되어야 함
+
+#### Liz Allen · Jo Scott · Amy Brand · Marjorie Hlava · Micah Altman (2014)
+- 원연구: *Publishing: Credit where credit is due*, **Nature** 508:312–313.
+- DOI: **10.1038/508312a**
+- 핵심기여: 저자명 하나에 여러 종류의 연구기여를 압축하는 문제와 contributor-role taxonomy 개발을 설명.
+- Project 의존: '누가 무엇을 했는가'를 역할별로 기록해야 한다는 직접 선행계보.
+- Project novelty 효과: 역할기반 기여기록은 Project 신규개념 아님.
+
+#### Amy Brand · Liz Allen · Micah Altman · Marjorie Hlava · Jo Scott (2015)
+- 원연구: *Beyond authorship: attribution, contribution, collaboration, and credit*, **Learned Publishing** 28(2):151–155.
+- DOI: **10.1087/20150211**
+- 핵심기여: CRediT taxonomy와 기여역할의 표준화를 설명.
+- Project 의존: authorship와 factual contribution을 분리하는 선행근거.
+- 현재 표준 연결: CRediT은 이후 ANSI/NISO Z39.104-2022 표준으로 발전.
+- 개인 경제보상: **UNKNOWN**.
+
+### G3. Project가 지켜야 할 검색 비대칭
+이미 유명한 사람에게는 검색자료가 많고, 누락된 사람에게는 자료가 적다. 따라서 **증거량을 기여량으로 사용하지 않는다.**
+
+금지:
+- 검색결과가 적음 → 기여가 작음
+- 인용이 적음 → 영향이 작음
+- 최종 저자 아님 → 기여 없음
+- 후속논문 없음 → 능력 부족
+- 공개 보상 없음 → 무보상
+
+허용되는 표현:
+- 공개증거 부족
+- attribution 불확정
+- contribution 확인됨/부분확인/미확인
+- downstream impact 확인됨/미확인
+- compensation UNKNOWN
+
+### G4. 독립발견과 역사복구
+같은 개념이 여러 곳에서 독립적으로 나타났을 가능성을 기본 가설 중 하나로 유지한다.
+- 가장 이른 문헌 하나를 찾았다고 '유일한 창시자'로 확정하지 않는다.
+- 동시/독립발견은 병렬 lineage로 기록한다.
+- 후대 용어가 과거 개념을 재명명했는지 검사한다.
+- 번역·지역 학술지·학위논문·기술보고서·워크숍 자료가 주류 데이터베이스에 덜 노출될 가능성을 별도 한계로 기록한다.
+
+### G5. 복구 우선순위 점수 — 보상점수가 아님
+다음은 **조사 우선순위**만 정한다.
+- Project 핵심 claim과 직접 겹침
+- 원출처/원저자 불확실
+- 후속문헌에서 반복 인용되지만 최초출처가 희석됨
+- 저자목록과 실제 팀 참여의 차이를 검증할 자료가 존재
+- correction/retraction/version conflict 존재
+- 후속 연구가 해당 기여에 강하게 의존
+
+이 점수를 credit·저자권·금전보상으로 변환하지 않는다.
+
+## H. 현재 복구 레지스트리의 자기감사
+- 현재 목록은 **Project가 이미 알고 있던 문헌에서 출발했기 때문에 selection bias가 있다.**
+- 영어권·DOI 보유·주요 저널 연구가 과대표집되어 있을 가능성이 높다.
+- 논문이 아닌 코드·데이터·기술·실험지원·유지보수 기여자가 과소표집되어 있다.
+- 역사적 연구자의 실제 개인 보상은 대부분 UNKNOWN이다.
+- 따라서 현재 레지스트리는 '기여자 전체 목록'이 아니라 **복구를 시작하기 위한 seed registry**다.
