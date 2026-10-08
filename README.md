@@ -1,5 +1,7 @@
 # Project Intersection
 
+> **심층 교차감사:** [비공개↔공개 연구계보·반례·증거등급](PRIVATE_PUBLIC_RESEARCH_CROSSWALK_2026-10-09_KO.md) · [E051 공개 실증 Phase 0 게이트](experiments/E051_PUBLIC_PHASE0_DATA_VIABILITY_KO.md). E044 미실행, E045–E050 합성·공유가정, E051 실증 미실행을 구분합니다.
+
 > **처음 보는 외부 검토자:** [공개 연구 3분 검토 — 검증 가능한 결과·실패·재현·비공개 경계](PUBLIC_START_HERE_KO.md). 공개 검증 범위와 미확정 주장을 먼저 확인하세요.
 
 > **P0 / ZERO GATE:** [PRIOR-ART ZERO GATE](knowledge/PRIOR_ART_ZERO_GATE_2026-10-09_KO.md) — 선행연구·원연구자·역사·기여·반례·정정계보를 우선 복구한다. 신규성 확정은 보류하되, claim별 검토와 저위험 탐색·반증은 허용한다. 단순 신규 문헌 발견만으로 전체 검색을 무한 초기화하지 않는다.
