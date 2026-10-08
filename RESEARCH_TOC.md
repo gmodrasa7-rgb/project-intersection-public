@@ -1,5 +1,7 @@
 # Public Navigation Layer / 공개 탐색층
 
+> **입장반전 정정:** [자발적 지속·실질적 이탈권 선행감사](knowledge/VOLUNTARY_CONTINUATION_CREDIBLE_EXIT_PRIOR_ART_2026-10-09_KO.md) — retention≠자발적 지속; exit/voice/autonomy의 원연구자 우선 귀속.
+
 > **2026-10-09 부분 검증:** [원문 정량대조](knowledge/PRIMARY_SOURCE_NUMERIC_CHECK_2026-10-09_KO.md) — Wang/Bol/Ross 출판사 본문·Ross 정정 확인. 원자료 재현은 미완료.
 
 > **원연구자 우선 복구:** [선행연구자 복구 레지스트리](knowledge/PRIOR_RESEARCHER_RECOVERY_REGISTRY_2026-10-09_KO.md) — 원연구자·원출처·Project 의존·공개 보상/지원·후속영향·UNKNOWN을 분리 기록.
