@@ -16,12 +16,42 @@ This file is the shortest reviewer path through Project Intersection. It does no
 3. [Knowledge Graph Explorer](knowledge/explorer.html) — structured entity/relation view; linked source artifacts remain authoritative.
 4. [E007 timing result](E007_TIMING_RESULT.md) and [reproduction package](experiments/e007/README.md) — narrow executable synthetic result.
 5. [E008 preregistration](experiments/e008/README.md) — discriminating benchmark specification plus pre-execution mutual-acceptability v1.1 and volitional-agency/living-condition v1.2 amendments; no result yet.
-6. [Research Status & Reassessment Policy](RESEARCH_STATUS_POLICY.md) — evidence classes, reassessment, and non-laundering rules.
-7. [Prior Art & Attribution](PRIOR_ART_AND_ATTRIBUTION.md) and [Core/Gaps Crosswalk](CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md) — what is prior art and what remains unresolved.
-8. [Failure Regression Index](FAILURE_REGRESSION_INDEX.md) — known process/research failures and required regression barriers.
-9. [Attribution & Contribution Boundary](ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md) — founder, AI-assistance, and external-source attribution rules.
-10. [Autonomous Research Continuity](AUTONOMOUS_RESEARCH_LOOP.md) and [state](AUTONOMOUS_RESEARCH_STATE.json) — public recovery path without founder reconstruction.
-11. [Funding due diligence](funding/DUE_DILIGENCE.md) — what support buys and what it does not buy.
+6. [E009 negative result](experiments/e009/RESULT.md) and [reproduction verifier](experiments/e009/verify_result.py) — the full Project-v3 residual did not survive the preregistered synthetic comparison; not independent validation.
+7. [Research Status & Reassessment Policy](RESEARCH_STATUS_POLICY.md) — evidence classes, reassessment, and non-laundering rules.
+8. [Prior Art & Attribution](PRIOR_ART_AND_ATTRIBUTION.md) and [Core/Gaps Crosswalk](CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md) — what is prior art and what remains unresolved.
+9. [Failure Regression Index](FAILURE_REGRESSION_INDEX.md) — known process/research failures and required regression barriers.
+10. [Attribution & Contribution Boundary](ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md) — founder, AI-assistance, and external-source attribution rules.
+11. [Autonomous Research Continuity](AUTONOMOUS_RESEARCH_LOOP.md) and [state](AUTONOMOUS_RESEARCH_STATE.json) — public recovery path without founder reconstruction.
+12. [Funding due diligence](funding/DUE_DILIGENCE.md) — what support buys and what it does not buy.
+
+---
+
+## 1a. Reproduce from a fresh checkout / 처음 받은 자료 재현하기
+
+Python 3.12 is the E007 CI reference environment. Run from the repository root; record `git rev-parse HEAD` with your results. These commands rerun public code and do not require private files or paid APIs.
+
+Python 3.12가 E007 CI 기준 환경이다. 저장소 최상위 폴더에서 실행하고 `git rev-parse HEAD`로 확인한 커밋을 결과와 함께 남긴다. 비공개 자료·유료 API는 필요 없다.
+
+```bash
+git clone https://github.com/gmodrasa7-rgb/project-intersection-public.git
+cd project-intersection-public
+python -m pip install -r experiments/e007/requirements.txt
+python -m pytest -q -p no:cacheprovider experiments/e007
+python experiments/e007/timing_probe.py --summary-only --check
+python experiments/e008/validate.py
+python experiments/e009/verify_result.py
+```
+
+| Check / 검사 | Expected boundary / 기대 결과와 한계 |
+|---|---|
+| E007 tests / 테스트 | 27 tests pass / 27개 통과; implementation regression only / 구현 회귀검사 |
+| E007 timing / 시점 | 72 total, 36 history-or-classification-sensitive, 17 classification-sensitive / 합성조건 수이며 현실 확률 아님 |
+| E008 | 16 cases, 8 reversal pairs; specification audit only, no experiment result / 명세검사만 수행·실험결과 없음 |
+| E009 | Frozen benchmark reproduces committed negative result and hashes / 고정 코드·저장 결과·해시 일치; Project-v3 잔차 미통과 유지 |
+
+A mismatch is a finding to report, not a reason to retune the frozen benchmark. Dependency installation requires internet access; subsequent checks use local artifacts. A project-authored rerun is not independent replication.
+
+불일치는 보고할 결과다. 숫자를 맞추려고 고정 벤치마크를 수정하지 않는다. 의존성 설치에는 인터넷이 필요하고 이후 검사는 로컬 자료를 사용한다. 프로젝트 측 재실행을 독립 복제로 세지 않는다.
 
 ---
 
@@ -30,6 +60,7 @@ This file is the shortest reviewer path through Project Intersection. It does no
 ### Publicly inspectable
 
 - A narrow synthetic E007 implementation is executable and project-rerun reproducible.
+- E009 preserves a negative synthetic project rerun: Project-v3 failed 3/4 survival criteria; simpler comparators had lower mean regret. The broad research question remains unresolved.
 - E008 is a public preregistration/specification only; it has no result yet and cannot support Project-v2 superiority.
 - Timing semantics affect some histories/classifications in the released finite model.
 - The repository contains explicit claim-status, prior-art, negative-result, provenance, and reassessment rules.

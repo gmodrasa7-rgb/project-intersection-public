@@ -19,6 +19,7 @@ This page is a due-diligence interface for funders, research partners, reviewers
 | [E007 executable package](experiments/e007/README.md) | A third party can rerun the released project code/tests/grid | Publicly reproducible project package | Independent implementation or independent model lineage |
 | [E007 independent reimplementation protocol](experiments/e007/INDEPENDENT_REIMPLEMENTATION_PROTOCOL.md) | An outside implementer can rebuild the narrow public model without private conversation history or project code reuse | Public specification / replication interface | No independent result exists yet; the specification is still project-authored |
 | [E008 dynamic power-reversal benchmark](experiments/e008/README.md) + [mutual-acceptability v1.1](experiments/e008/MUTUAL_ACCEPTABILITY_AMENDMENT_v1_1.md) + [agency/living v1.2](experiments/e008/AGENCY_LIVING_CONDITIONS_AMENDMENT_v1_2.md) | A preregistered 16-case / 8 reversal-pair matrix compares five decision rules; pre-execution v1.1 adds disagreement-point, individual-rationality, Pareto, manipulation, coalition and empty-kernel diagnostics; v1.2 adds volitional-agency, essential-dependency, and living/operating-floor diagnostics | Public preregistration / specification | No E008 result, no Project-v2 superiority, no universal mutual-satisfaction theorem, no empirical validation |
+| [E009 negative result](experiments/e009/RESULT.md) / [verifier](experiments/e009/verify_result.py) | Frozen Project-v3 residual failed its preregistered synthetic comparison | PROJECT_RERUN / SYNTHETIC_RESULT | Independent or empirical validation; rejection of the broad research question |
 | [Research Status & Reassessment Policy](RESEARCH_STATUS_POLICY.md) | Claim states, provenance boundaries, reassessment rules, and anti-evidence-laundering policy are explicit | Public governance / methodology artifact | Scientific truth of any individual hypothesis |
 | [Structured Knowledge Graph](knowledge/README.md) / [Explorer](knowledge/explorer.html) | Claims, experiments, evidence, prior art, failures and corrections can be traversed as typed entities and qualified relations | Public navigation / structured index | A superior source of truth, new scientific evidence, or automatic inference from relation labels |
 | [Public Review Packet](PUBLIC_REVIEW_PACKET.md) | A first-time reviewer can follow a bounded path through evidence, limits, failures, attribution, continuity, and funding boundaries | Public review interface | Completion or validation of the scientific program |
@@ -70,6 +71,7 @@ The highest-value external upgrades are:
 | [E007 실행 묶음](experiments/e007/README.md) | 제3자가 공개 코드·테스트·조건을 재실행 가능 | 공개 재현 가능한 프로젝트 묶음 | 독립 구현 또는 독립 모델 계보 |
 | [E007 독립 구현 프로토콜](experiments/e007/INDEPENDENT_REIMPLEMENTATION_PROTOCOL.md) | 외부 구현자가 비공개 대화나 프로젝트 코드 재사용 없이 좁은 공개 모델을 재구현 가능 | 공개 명세 / 복제 인터페이스 | 아직 독립 결과 없음; 명세 자체는 프로젝트 작성 |
 | [E008 동적 역할반전 벤치마크](experiments/e008/README.md) + [상호수용 v1.1](experiments/e008/MUTUAL_ACCEPTABILITY_AMENDMENT_v1_1.md) + [자유의지·생활 v1.2](experiments/e008/AGENCY_LIVING_CONDITIONS_AMENDMENT_v1_2.md) | 5개 규칙을 비교하는 16개 사례 / 8개 역할반전 쌍 사전등록; v1.1은 불합의점·개별합리성·Pareto·조작·연합·공집합, v1.2는 실효 자유의지·필수의존·생활/작동 floor 진단을 실행 전에 추가 | 공개 사전등록 / 명세 | E008 결과, Project-v2 우월성, 보편 상호만족 정리, 현실검증을 의미하지 않음 |
+| [E009 부정적 결과](experiments/e009/RESULT.md) / [재현 검사](experiments/e009/verify_result.py) | 고정된 Project-v3 잔차가 사전등록 합성비교 기준을 통과하지 못함 | PROJECT_RERUN / SYNTHETIC_RESULT | 독립·현실검증, 넓은 연구질문 전체의 기각 |
 | [연구 상태·재평가 정책](RESEARCH_STATUS_POLICY.md) | 주장 상태, provenance 경계, 재평가 규칙, evidence laundering 방지정책이 명시됨 | 공개 거버넌스·방법론 산출물 | 개별 가설의 과학적 참 |
 | [구조화 지식그래프](knowledge/README.md) / [탐색기](knowledge/explorer.html) | 주장·실험·증거·선행연구·실패·교정을 타입 객체와 조건부 관계로 탐색 가능 | 공개 탐색·구조화 색인 | 상위 정본, 새 과학증거, 관계명만으로 자동 도출된 사실 |
 | [공개 검토 패킷](PUBLIC_REVIEW_PACKET.md) | 첫 외부 검토자가 증거·한계·실패·귀속·연속성·자금 경계를 제한된 경로로 추적 가능 | 공개 검토 인터페이스 | 과학 프로그램 자체의 완성 또는 검증 |
@@ -110,7 +112,7 @@ The highest-value external upgrades are:
 - 식별한계를 명시한 현실·역사 사례 연구.
 
 
-## E009 adversarial specification / E009 적대 사전등록
+## E009 preregistration and negative result / E009 사전등록·부정적 결과
 
 | Artifact | What it establishes | Evidence class | Does not establish |
 |---|---|---|---|

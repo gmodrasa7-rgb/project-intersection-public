@@ -2,6 +2,10 @@
 
 <!-- FUNDING_READINESS_2026-10-04 -->
 
+한국어 검토자는 [공개 검토 패킷](PUBLIC_REVIEW_PACKET.md)의 재현 명령·기대 결과부터 확인할 수 있습니다. E009의 부정적 결과를 포함하며, 코드 재현과 독립·현실 검증을 구분합니다.
+
+[Fresh-checkout reproduction commands and expected results](PUBLIC_REVIEW_PACKET.md#1a-reproduce-from-a-fresh-checkout--처음-받은-자료-재현하기).
+
 ## Start Here — Evidence, Funding, and External Review
 
 ### Original 1 — English Canonical

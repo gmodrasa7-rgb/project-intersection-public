@@ -209,6 +209,24 @@ Documentation-only growth is lowest priority.
 
 ---
 
+## F-R013 — negative result omitted from first-review path
+
+**Class:** public navigation / audit coverage
+**Status:** REPAIR APPLIED / LOCAL CHECKS PASSED / HOSTED CI PENDING
+**Observed source:** public main `4583bd9cdabf00ef728b30bbc415f8ef9317a788` (2026-10-08 audit).
+
+E009's negative result existed in the experiment and README, but the shortest review packet omitted it. The evidence index placed it below both language sections under a specification heading. The public governance workflow read E009 and the multi-model audit without including those paths in its push/PR filters. The separate E009 reproduction workflow was already present; this was a governance-trigger gap, not an absence of E009 CI.
+
+Repair: expose the negative result in the review path and both evidence tables, add repository-root reproduction commands with expected outputs, and align governance triggers with the files they read. The governance regression requires the packet's E009 result link, negative-result boundary and verifier command.
+
+반대근거·한계: README와 E009 폴더에는 이미 결과가 공개돼 있었다. 따라서 결과 은폐나 과학적 부정행위를 입증하는 사례가 아니다. 이번 수정은 첫 검토 비용과 누락 위험을 줄이며 새 과학증거를 만들지 않는다. 고정 benchmark·결과·해시·라이선스·원기여는 변경하지 않는다.
+
+**Sources:** [review packet](PUBLIC_REVIEW_PACKET.md), [evidence index](PUBLIC_EVIDENCE_INDEX.md), [governance audit](.github/workflows/public-repository-audit.yml), [E009 result](experiments/e009/RESULT.md).
+
+**Recovery:** revert the dedicated navigation/audit repair commit; its parent retains the previous public interface. No research artifact deletion or evidence promotion is part of the change. No new human decision gate is introduced.
+
+---
+
 ## Mandatory regression questions
 
 Before any material repository mutation:
