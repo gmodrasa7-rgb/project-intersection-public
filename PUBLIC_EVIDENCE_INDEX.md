@@ -1,7 +1,11 @@
 # Public Evidence Index
 ## Project Intersection 공개 증거 색인
 
-Last evidence review / 최종 증거 검토: **2026-10-06**
+Last evidence review / 최종 증거 검토: **2026-10-09** (new J scaffold is project-reported, not independently rerun)
+
+[한국어 공개 검토 시작 — PUBLIC_START_HERE_KO.md](PUBLIC_START_HERE_KO.md) | [J 합성실험 실패·지표 감사](knowledge/J_EFFECTIVE_SYNTHETIC_FALSIFICATION_V01_2026-10-09_KO.md)
+
+**Cross-repository disclosure boundary:** private research materials were reviewed for navigation and status alignment, not bulk-published. No private-only outcome is promoted to public empirical evidence. The J synthetic scaffold and its numeric claims remain PROJECT-REPORTED / UNVERIFIED until independently rerun.
 
 This page is a due-diligence interface for funders, research partners, reviewers, and critics. It separates what can be checked now from what is still a hypothesis, a private research lead, or an unresolved validation debt.
 
