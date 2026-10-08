@@ -36,3 +36,6 @@ paternalism, relational autonomy, adaptive preferences, epistemic injustice, sup
 
 ## 선행성 경고
 [판정권 J축 선행연구](CHOICE_J_AUTHORITY_PRIOR_ART_WAVE_2026-10-09_KO.md)에서 관계적 자율성, 대리/지원결정, 인식적 부정의, 자동화 권력, 이의제기/실질 수정권의 직접 선행을 확인했다. 이 항목을 Project 고유 신규성으로 주장하지 않는다. 포화 0/3.
+
+## J축 역사적 선행 추가
+Dworkin(1972) 온정주의, Buchanan & Brock(1989) 대리결정, Christman(1991) 역사적 자율성, Santoni de Sio & van den Hoven(2018) meaningful human control을 직접 선행으로 등록했다. 예측/성과 우위와 정당한 판정권을 분리한다는 일반론은 Project 신규성에서 제외한다. [W2](CHOICE_J_AUTHORITY_PRIOR_ART_WAVE_2_2026-10-09_KO.md)
