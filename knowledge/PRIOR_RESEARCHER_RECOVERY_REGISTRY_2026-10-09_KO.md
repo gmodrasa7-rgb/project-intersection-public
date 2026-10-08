@@ -237,3 +237,49 @@
 - 논문이 아닌 코드·데이터·기술·실험지원·유지보수 기여자가 과소표집되어 있다.
 - 역사적 연구자의 실제 개인 보상은 대부분 UNKNOWN이다.
 - 따라서 현재 레지스트리는 '기여자 전체 목록'이 아니라 **복구를 시작하기 위한 seed registry**다.
+
+
+## I. 발견되지 않은 선행연구를 위한 검색 프로토콜
+
+### I1. Claim-first search
+Project 용어를 그대로 검색하지 않는다. 각 claim을 일반 학술언어로 분해한다.
+- 기여기록 손실 → authorship omission / contributorship / credit allocation / invisible labor
+- 지원부족과 연구이탈 → funding shock / grant discontinuity / career attrition / scientific workforce
+- 평가권력 → endogenous rules / agenda control / mechanism selection / constitutional choice
+- 이의제기와 실질통제 → procedural justice / voice / decision control / appeal / contestability
+- provenance 손실 → provenance / attribution / priority / version lineage / citation distortion
+- 후속연구 단절 → research continuation / career persistence / project termination / knowledge loss
+
+### I2. Citation-chain search
+확인된 원문마다:
+1. 그 논문이 인용한 더 오래된 직접 선행연구(backward chaining)
+2. 해당 논문을 인용한 후속 정정·반증·메타분석(forward chaining)
+3. 같은 construct의 다른 명칭
+4. 저자의 이전 working paper/학위논문/보고서
+5. correction/retraction/erratum
+을 확인한다.
+
+### I3. 언어·매체 편향
+영어 논문만으로 '최초'를 확정하지 않는다. 비영어권·학위논문·기관보고서·학회자료·소프트웨어·데이터셋은 발견가능성이 낮다는 한계를 명시한다. 실제 확인 전에는 특정 미발견 문헌의 존재를 사실로 주장하지 않는다.
+
+### I4. 최초성 판정등급
+- **DIRECT PRIOR ART**: 핵심 claim/기제가 직접 존재.
+- **PARTIAL PRIOR ART**: 일부 변수/관계만 존재.
+- **ADJACENT**: 문제영역은 같으나 핵심관계 다름.
+- **INDEPENDENT PARALLEL**: 독립발견 증거가 있음.
+- **NO PRIOR ART FOUND YET**: 현재 검색에서 못 찾았을 뿐 최초성 증거가 아님.
+- **UNRESOLVED**: 판본/연도/저자/우선권 충돌.
+
+Project 문서에서 **NO PRIOR ART FOUND YET를 ORIGINAL로 자동 승격하지 않는다.**
+
+## J. 복구의 목적
+원연구자 복구는 Project의 권위를 강화하기 위한 장식이 아니다. 최소 목적은:
+1. 역사적 사실 정확성,
+2. 원기여자의 발견가능성,
+3. 후속 연구자가 원자료로 돌아갈 수 있는 경로,
+4. 중복연구와 반복실패 감소,
+5. 반례와 실패계보 보존,
+6. 지원·credit·협력 판단에 사용할 수 있는 증거,
+7. Project가 잘못 주장한 신규성을 스스로 축소할 수 있는 외부감사 가능성.
+
+**복구된 기여자를 Project의 소유·회원·지지자로 취급하지 않는다.**
