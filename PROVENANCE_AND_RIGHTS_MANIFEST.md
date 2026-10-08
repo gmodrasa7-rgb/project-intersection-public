@@ -1,5 +1,7 @@
 # Provenance & Rights Manifest / 출처·권리 감사 매니페스트
 
+> **기여자 발굴·역사복원·지원·후속연구:** [Contributor Discovery & Reproduction Protocol](knowledge/CONTRIBUTOR_DISCOVERY_REPRODUCTION_PROTOCOL_2026-10-09_KO.md) — 결과뿐 아니라 문제제기·반례·수정·검증·실패계보를 복구 가능하게 보존합니다.
+
 Status: **PUBLIC AUDIT CONTROL / PARTIAL COVERAGE**  
 이 문서는 저장소 전체가 저작권 검증을 통과했다는 인증서가 아니다. 공개자료가 추가·변형될 때 원저작자·출처·라이선스·변경계보·기여가 사라지는 것을 막기 위한 최소 감사 인터페이스다.
 
