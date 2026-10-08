@@ -1,6 +1,8 @@
 # Project Intersection
 
-> **P0 / ZERO GATE:** [PRIOR-ART ZERO GATE](knowledge/PRIOR_ART_ZERO_GATE_2026-10-09_KO.md) — 선행연구·원연구자·역사·기여·반례·정정계보가 검색포화 기준을 통과하기 전에는 Project 신규성 주장과 고유 실험을 시작하지 않는다.
+> **처음 보는 외부 검토자:** [공개 연구 3분 검토 — 검증 가능한 결과·실패·재현·비공개 경계](PUBLIC_START_HERE_KO.md). 공개 검증 범위와 미확정 주장을 먼저 확인하세요.
+
+> **P0 / ZERO GATE:** [PRIOR-ART ZERO GATE](knowledge/PRIOR_ART_ZERO_GATE_2026-10-09_KO.md) — 선행연구·원연구자·역사·기여·반례·정정계보를 우선 복구한다. 신규성 확정은 보류하되, claim별 검토와 저위험 탐색·반증은 허용한다. 단순 신규 문헌 발견만으로 전체 검색을 무한 초기화하지 않는다.
 
 > **입장반전 정정:** [자발적 지속·실질적 이탈권 선행감사](knowledge/VOLUNTARY_CONTINUATION_CREDIBLE_EXIT_PRIOR_ART_2026-10-09_KO.md) — retention≠자발적 지속; exit/voice/autonomy의 원연구자 우선 귀속.
 
@@ -22,7 +24,7 @@
 
 ## Start Here — Evidence, Funding, and External Review
 
-### Original 1 — English Canonical
+### English reviewer-facing text — historical label corrected
 
 Project Intersection is an independent, falsification-first research program studying when **power, incentives, timing, practical exit, recovery capacity, and independent error-correction** make cooperation or coexistence more robust than exploitative local optimization—and where that hypothesis fails.
 
@@ -53,7 +55,7 @@ Project Intersection is an independent, falsification-first research program stu
 The funding proposition is deliberately testable: support buys **reproducible artifacts, adversarial tests, correction lineage, and lower external verification cost**, not a predetermined favorable conclusion.
 
 
-### 원문2 — 한국어 대응본
+### 한국어 연구 정본 기준의 공개 안내
 
 Project Intersection은 **권력·인센티브·시점·practical exit·복구능력·독립 오류수정**이 어떤 조건에서 착취적 국소최적화보다 협력·공존을 더 강건하게 만드는지, 그리고 그 가설이 어디서 깨지는지를 시험하는 독립 반증우선 연구 프로그램이다.
 
