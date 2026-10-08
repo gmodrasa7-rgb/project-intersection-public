@@ -137,3 +137,10 @@ The highest-value external upgrades are:
 
 
 > **독립 재구현 경로:** [E045–E050 공개 독립 재구현 사양](experiments/E045_E050_INDEPENDENT_PUBLIC_REIMPLEMENTATION_SPEC_KO.md) — 비공개 코드·수치에 맞추지 않고 choice rule·feedback·초기조건·개입시점을 바꿔 합성 반례의 모델 의존성을 공격합니다. 아직 공개 실행결과 없음.
+
+
+## 2026-10-09 IVS-0R 증거경계 강화
+- E041의 내부 인과식별 감사에 따라 `practical exit의 추가 예측정보`와 `practical exit 자체의 인과효과`를 분리한다. 관측 예측 개선만으로 후자를 주장하지 않는다.
+- E051 Phase1이 향후 성공하더라도 SEC+USPTO만으로 직접 지지 가능한 범위는 `미국 공개기업의 미래 특허생산 동학`까지다. 특허수=총혁신, 특허 stock 예측력=인과적 지식 stock, G/H 결과=A/K 포획이라는 등치는 금지한다.
+- E051은 H0 정적 충분성, H1 예측적 역사, H2 음의 경로의존, H3 지속적 이질성, H4 특허성향/측정기계 경쟁설명을 함께 유지한다. 양(+) 부호를 성공조건으로 두지 않는다.
+- 외부 재현의 positive support는 executor/reviewer ID 분리뿐 아니라 공통 evaluator·gateway·operator·data pipeline 같은 의미적 shared dependency가 해결되기 전까지 보류한다.
