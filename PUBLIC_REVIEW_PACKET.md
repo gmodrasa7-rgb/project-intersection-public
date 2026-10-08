@@ -1,5 +1,7 @@
 # Public Review Packet
 
+> **출처·원저작자 존중·저작권 우선:** [출처·기여·라이선스·정정 공개 프로토콜](knowledge/SOURCE_CREDIT_COPYRIGHT_PROTOCOL_2026-10-09_KO.md). 법적 의무와 연구윤리를 구분하며 선행연구 원저자·판본·반례를 보존합니다.
+
 > **추가 선행연구 감사 (가설·실험 아님):** [출처·기여·평가함수·권력비대칭](knowledge/PROVENANCE_CREDIT_POWER_AUDIT_2026-10-09_KO.md). 원연구자 귀속·반례·부정적 결과·반증조건·미해결 서지 포함.
 ## 공개 검토 패킷
 
