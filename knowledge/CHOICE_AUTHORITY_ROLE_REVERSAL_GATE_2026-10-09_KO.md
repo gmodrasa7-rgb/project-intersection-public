@@ -42,3 +42,6 @@ Dworkin(1972) 온정주의, Buchanan & Brock(1989) 대리결정, Christman(1991)
 
 ## P/J 구분 보강
 [예측 정확도와 위임 실증 선행연구](CHOICE_J_PREDICTION_DELEGATION_PRIOR_ART_2026-10-09_KO.md) 확인. 정확도 P, 인지된 정확도, 조언 가중치, 실제 위임, 규범적 판정권 J, 정정/이탈 R을 합산하지 않는다. AI 설명 제공이 적절한 신뢰를 보장하지 않으며 교정 개입에도 부담과 분배효과가 있다. ZERO GATE OPEN.
+
+## 실제 판정권 J 실효성 분리 (추가 선행 대조)
+J_formal(명목상 판정·정정권), J_effective(실제 정정 처리), C_perceived(통제감), E_correct(오류발견·수정), R(이의제기·복귀·이탈), P_actual/P_perceived, W/D를 별도 관측한다. 수정 버튼이 있다고 실제 정정이 가능하다고 가정하지 않는다. 설명량 증가가 오류발견에 이롭다는 가정도 금지. [W4](CHOICE_J_PREDICTION_DELEGATION_WAVE_2_2026-10-09_KO.md), [W5](CHOICE_J_EFFECTIVE_RECOURSE_PRIOR_ART_WAVE_3_2026-10-09_KO.md), [식별매트릭스](CHOICE_J_CAUSAL_IDENTIFICATION_TEST_MATRIX_2026-10-09_KO.md). 신규성 미확정.
