@@ -2195,3 +2195,5 @@ NIST CFTT supplies an independent conformance framework for deleted-file recover
 
 
 > [선택 인과축 분리 프로토콜](knowledge/CHOICE_CAUSAL_AXES_PROTOCOL_2026-10-09_KO.md): 자율성·강제성·유도/영향·편향·조종을 독립축으로 판정하며 선택결과에서 원인을 역추론하지 않는다. PRIOR-ART GATE OPEN.
+
+- [선택 인과축 선행연구 W3 — 강제 기준선·선택맹·다크패턴 실험](knowledge/CHOICE_CAUSAL_AXES_PRIOR_ART_WAVE_3_2026-10-09_KO.md) — ZERO GATE OPEN.
