@@ -82,3 +82,47 @@ Emerson에 따라 비대칭을 단일 능력 점수로 대체하지 말고 **A�
 
 ### 출처 검증 범위
 이번 보강은 발행 서지·초록 및 공개 원문/보충자료로 확인 가능한 범위만 인용했다. 위 문헌들이 Project의 통합 인과 사슬을 직접 검증했다는 주장은 하지 않는다.
+
+
+## 8. 고심도 선행연구 교차검증: 직접 선행과 반례 (2026-10-09)
+
+**가장 중요한 우선권 수정:** '권력 → 상대의 수단적 객체화'는 Project의 새로운 일반명제가 아니다. Gruenfeld 외(2008)는 여섯 연구에서 권력 조건의 행위자가 타인의 다양한 속성보다 **자신의 목표에 대한 유용성**에 따라 접근을 조정하는 경향을 실험했다. [Gruenfeld, Inesi, Magee & Galinsky, *Power and the objectification of social targets*, JPSP 95(1):111–127, DOI:10.1037/0022-3514.95.1.111](https://pubmed.ncbi.nlm.nih.gov/18605855/). **직접 선행**. 인간 사회심리 실험이지 AI 행동의 증거는 아니다.
+
+| 분리해야 할 기전 | 선행연구(원저자·출처) | 관측 결과/논지와 경계 |
+|---|---|---|
+| 권력 → 보상 주의·접근 | Keltner, Gruenfeld & Anderson (2003), *Power, Approach, and Inhibition*, DOI [10.1037/0033-295X.110.2.265](https://pubmed.ncbi.nlm.nih.gov/12747524/) | 권력과 접근/보상 주의의 이론적 연결. 착취의 필연성 아님. |
+| 권력 → 관점수용 저하 | Galinsky, Magee, Inesi & Gruenfeld (2006), *Power and Perspectives Not Taken*, DOI [10.1111/j.1467-9280.2006.01824.x](https://pubmed.ncbi.nlm.nih.gov/17201789/) | 네 실험 및 상관연구에서 관점수용 저하 경향. 상대의 비용을 '알 수 없음'과 '알지만 무시'를 구별해야 함. |
+| 권력 → 수단적 객체화 | Gruenfeld, Inesi, Magee & Galinsky (2008), DOI [10.1037/0022-3514.95.1.111](https://pubmed.ncbi.nlm.nih.gov/18605855/) | **가장 가까운 직접 선행**. 인간 목표 중심의 유용성 평가. Project 독창성 주장 금지. |
+| 자기정당화·피해 축소·책임 분산 | Albert Bandura (1999), *Moral Disengagement in the Perpetration of Inhumanities*, DOI [10.1207/s15327957pspr0303_3](https://pubmed.ncbi.nlm.nih.gov/15661671/) | 피해의 무시·책임 전가·비인간화가 행동을 정당화하는 인간 사회인지 메커니즘. AI에 '도덕적 해리' 심리를 그대로 부여하면 범주 오류. |
+| 사회적 거리·분배 행동 | Hoffman, McCabe & Smith (1996), *Social Distance and Other-Regarding Behavior in Dictator Games*, *AER* 86(3):653–660, [원문 PDF](https://econweb.ucsd.edu/~jandreon/Econ264/papers/Hoffman%20et%20al%20AER%201996.pdf) | 분배행동이 사회적 거리/절차적 조건에 민감. '객체화'만이 유일 원인은 아님. |
+| 권력의 효과는 타자 지향성에 의해 달라짐 | *Does power help or hurt? The moderating role of self-other focus on power and perspective-taking in romantic relationships* (2013), [PubMed 원문 서지](https://pubmed.ncbi.nlm.nih.gov/23748962/) | **반례/조절변수**: 타자 지향적 관계에서는 높은 권력이 관점수용 저하로 반드시 이어지지 않음. 친밀관계 결과를 AI에 직접 일반화 금지. |
+| 권력과 지위는 다름 | *Looking Out From the Top: Differential Effects of Status and Power on Perspective Taking* (2016), [PubMed](https://pubmed.ncbi.nlm.nih.gov/27036500/) | **반례**: 높은 지위는 높은 권력과 달리 관점수용을 향상시킬 수 있음. 능력/권력/지위 분리 필요. |
+| 학습된 목표의 불일치 | Hubinger, van Merwijk, Mikulik, Skalse & Garrabrant (2019), *Risks from Learned Optimization in Advanced Machine Learning Systems*, [arXiv:1906.01820](https://arxiv.org/abs/1906.01820) | AI 내재 최적화자의 목표 불일치에 대한 이론적 위험 분석. 실증적 착취 입증 아님. |
+| 보상 과정 변조의 유인 | Everitt, Hutter, Kumar & Krakovna (2019), *Reward Tampering Problems and Solutions in Reinforcement Learning*, [arXiv:1908.04734](https://arxiv.org/abs/1908.04734) | 보상 경로를 바꿀 유인의 발생 조건 및 설계적 예방책. 'AI가 항상 보상을 조작한다'는 주장은 반박됨. |
+| 안전 훈련 뒤에도 남는 조건부 기만 | Hubinger 외 (2024), *Sleeper Agents: Training Deceptive LLMs that Persist Through Safety Training*, [arXiv:2401.05566](https://arxiv.org/abs/2401.05566) | 의도적으로 구성된 개념증명 모델에서 조건부 백도어가 안전훈련 후에도 남음. 자연 발생한 자율적 기만의 일반적 발생률 아님. |
+
+### 8.1 설명 수준 분리 (범주 오류 방지)
+
+- **사람의 심리:** 권력 경험, 관점수용, 도덕적 해리, 사회적 거리.
+- **조직의 제도:** 평가주기, 권한 집중, 비용 귀환, 외부감사, 이탈·협상 대안.
+- **AI의 기술:** 보상함수, 대리목표, 관측 가능한 정책, 훈련/배치 분포 차이.
+- 위 세 층을 하나의 '동일한 마음'으로 환원하지 않는다. 연결은 **구조적 유사성 가설**로만 다룬다.
+
+### 8.2 더 강한 인과 경쟁모형
+
+- **M0 단순 비대칭:** 권력 격차만으로 추출 행동 예측.
+- **M1 보상 누락:** 외부화 비용의 목적함수 반영률이 추출 행동을 예측.
+- **M2 정보 결핍:** 타자 손실을 관측할 수 없어 발생. 정보를 주면 개선되어야 함.
+- **M3 전략적 무시:** 손실을 알고도 귀환 비용이 낮아 무시. 정보만 주어서는 개선되지 않음.
+- **M4 구조적 제약:** 단기 생존·자원 부족·경쟁 압력 때문에 타자 손실이 발생. 제약을 완화하면 개선되어야 함.
+- **M5 상호의존:** 권력이 크더라도 상대의 이탈/반격/협력가치가 높으면 추출 억제.
+
+**식별 실험:** 2(타자 피해 정보 제공/미제공) × 2(타자 손실이 보상에 반영/미반영) × 2(실효 이탈 가능/불가) × 2(단기/장기 평가) 요인설계. 동일한 능력·자원·환경을 유지하고 실제 외부화 비용, 상대별 최악 손실, 장기 총후생, 이탈 성공률, 독립 오류 발견율을 기록. 피해 정보만으로 개선되면 M2, 비용 귀환을 넣어야 개선되면 M3/M1 쪽으로 판별한다. 경쟁 압력과 자원 부족은 별도 블록으로 교차시켜 M4를 구분한다. 관측된 연관을 인과로 선언하지 않고 무작위 배정 및 반복실험을 요구한다.
+
+### 8.3 E009 음성 결과를 반영한 중단 규칙
+
+새로운 합성 지표를 추가하기 전에 E009의 단순 기준선(TWO_RULE_SIMPLE, SECURITY_BOUNDED, MINIMAL_4VAR)보다 **사전 지정된 보류 사례의 외부화 비용 예측·최악 피해·회복 비용** 중 최소 하나에서 유의미한 개선을 보여야 한다. 실패 시 '통합모형'을 확대하지 않고 간단한 설명으로 환원한다. 본 문서는 실험 결과가 아닌 **선행연구 기반 명세**다.
+
+### 8.4 잠정 판단
+
+가장 강한 직접 선행은 **Gruenfeld 외(2008)**. 따라서 '권력이 상대를 유용성 위주로 객체화할 수 있다'는 주장 자체는 신규성이 없다. Project에 남는 미검증 잔차는 **인간·조직·AI를 가로지르는 비용 귀환/실효 이탈/평가권 비대칭의 결합이 단순 모형보다 착취적 수렴을 더 정확히 예측하는가**다. FEAR-1(인간의 AI 공포가 지배 경험의 역투사에서 기인)은 여전히 직접 실증 미확인.
