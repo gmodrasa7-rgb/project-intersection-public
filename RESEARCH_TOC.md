@@ -1,5 +1,7 @@
 # Public Navigation Layer / 공개 탐색층
 
+> **출처·원저작자 존중·저작권 우선:** [출처·기여·라이선스·정정 공개 프로토콜](knowledge/SOURCE_CREDIT_COPYRIGHT_PROTOCOL_2026-10-09_KO.md). 법적 의무와 연구윤리를 구분하며 선행연구 원저자·판본·반례를 보존합니다.
+
 > **2026-10-09 신규 공개 감사:** [출처·기여·평가함수·권력비대칭 — 선행연구·반례·신규성 경계](knowledge/PROVENANCE_CREDIT_POWER_AUDIT_2026-10-09_KO.md). 사실귀속과 가치배분을 분리하며, Project 실증·신규성은 미확정.
 
 This layer is the shortest path from a claim to its current public evidence, failure lineage, and falsification route. The detailed research map below is broader than the public evidence base and must not be read as a list of validated findings.
