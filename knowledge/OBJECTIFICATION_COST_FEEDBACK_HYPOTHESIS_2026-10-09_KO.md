@@ -59,3 +59,26 @@
 3. **약한 연결:** '인간이 지배 경험을 AI에 투사하기 때문에 두려워한다'는 FEAR-1은 위 문헌들로 직접 뒷받침되지 않는다. 별도의 심리학·위험지각 문헌과 실험이 필요하며 현재 **미검증**이다.
 4. **반대 가능성:** 비대칭 속에서도 상호이익·법적 책임·평판·독립감사·실효 이탈이 유지될 수 있다. 착취를 필연으로 표현하지 않는다.
 5. **원문과 날짜:** Campbell은 초기 원고(1976)와 학술지 게재(1979)를 구분한다. 위 링크는 원문/발행처 또는 원문 DOI 중심이며, 개별 주장을 넘어선 인과 확증으로 인용하지 않는다.
+
+
+## 7. 추가 교차검증: 권력의 관계성, 마음 지각, 알고리즘 회피 (2026-10-09)
+
+| 근거 | 원안자·원출처 | 연결 강도 / 해석 경계 |
+|---|---|---|
+| 권력은 행위자의 절대적 속성만이 아니라 상대의 의존과 대안에 따라 달라진다 | Richard M. Emerson (1962), *Power-Dependence Relations*, *American Sociological Review* 27(1), 31–41, [DOI:10.2307/2089716](https://doi.org/10.2307/2089716), [원문 PDF (MIT 호스팅)](https://web.mit.edu/curhan/www/docs/Articles/15341_Readings/Power/Emerson_1962_Power-dependence_relations.pdf) | **직접 선행:** 권력·의존·대안. '능력 우위 = 지배'의 단순 등식을 반박하며 실효 이탈권을 관계적 변수로 측정할 근거. AI 특유의 착취는 미입증. |
+| 행위주체성(agency)과 경험능력(experience)에 대한 마음 지각은 분리될 수 있다 | Heather M. Gray, Kurt Gray, Daniel M. Wegner (2007), *Dimensions of Mind Perception*, *Science* 315, 619, [DOI:10.1126/science.1134475](https://doi.org/10.1126/science.1134475), [PubMed 서지/초록](https://pubmed.ncbi.nlm.nih.gov/17272713/) | **인접 선행:** 타자를 어떤 종류의 주체로 지각하는가에 대한 심리적 측정 틀. AI 공포가 '착취 역투사'에서 생긴다는 FEAR-1의 직접 증거는 아님. |
+| 알고리즘의 오류 관찰 뒤 인간보다 더 빠르게 신뢰를 잃을 수 있다 | Berkeley J. Dietvorst, Joseph P. Simmons, Cade Massey (2015), *Algorithm Aversion: People Erroneously Avoid Algorithms After Seeing Them Err*, *Journal of Experimental Psychology: General* 144(1), 114–126, [DOI:10.1037/xge0000033](https://doi.org/10.1037/xge0000033), [PubMed](https://pubmed.ncbi.nlm.nih.gov/25401381/), [실험 보충자료](https://supp.apa.org/psycarticles/supplemental/xge0000033/xge0000033_supp.html) | **경쟁 설명:** AI에 대한 회피·불신이 반드시 권력/착취 투사 때문은 아니다. 오류 민감성만으로 일부 설명 가능. 고도 AI의 존재론적 공포와 동일시 금지. |
+
+### FEAR-1 식별을 위한 경쟁가설
+- F1: 권력 역전/착취 경험의 투사.
+- F2: 인간/비인간 행위주체성·경험능력 지각 차이.
+- F3: 관측된 오류에 대한 알고리즘 특유의 신뢰 손실.
+- F4: 실제 통제 불가능성과 피해 규모에 대한 합리적 위험 평가.
+
+**실험 최소조건:** 동일한 AI 능력·오류율·피해 규모를 고정하고 과거 지배 경험 단서와 권력 역전 단서만 무작위 조작해 두려움 변화를 측정한다. 이어서 오류 노출·행위주체성 지각·실제 통제 가능성을 별도 요인으로 추가한다. F1의 고유 효과가 사라지면 '착취 역투사' 설명을 축소한다. 이 실험은 아직 수행하지 않았다.
+
+### 위험 메커니즘 측정 수정
+Emerson에 따라 비대칭을 단일 능력 점수로 대체하지 말고 **A의 B에 대한 통제력, B의 A 의존도, B의 실제 대안, 전환비용**을 각각 기록한다. 권력 격차만으로 착취를 예측하는 모형을 반드시 기준선으로 둔다.
+
+### 출처 검증 범위
+이번 보강은 발행 서지·초록 및 공개 원문/보충자료로 확인 가능한 범위만 인용했다. 위 문헌들이 Project의 통합 인과 사슬을 직접 검증했다는 주장은 하지 않는다.
