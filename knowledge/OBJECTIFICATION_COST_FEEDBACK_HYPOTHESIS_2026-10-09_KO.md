@@ -289,7 +289,7 @@ Emerson에 따라 비대칭을 단일 능력 점수로 대체하지 말고 **A�
 
 ### 13.3 DOI 직접 교차검증 정정 및 판본 우선권
 
-- **Ziegelmeyer, Schmelz & Ploner (2012)의 정확한 DOI는 `10.1007/s10683-011-9302-8`**. 13절에 처음 기록된 `...9305-1` 링크는 오류였으므로 **원문에서 즉시 교체**했다. [Cambridge 학술지 원문 서지](https://www.cambridge.org/core/journals/experimental-economics/article/abs/hidden-costs-of-control-four-repetitions-and-an-extension/359691AD3C6B4A51779371AF1A9F9419), [Queen's University Belfast 기관 서지](https://pure.qub.ac.uk/en/publications/hidden-costs-of-control-four-repetitions-and-an-extension/).
+- **Ziegelmeyer, Schmelz & Ploner (2012)의 정확한 DOI는 `10.1007/s10683-011-9302-8`**. 초기 조사 과정에서 다른 DOI가 잘못 연결된 이력이 있었으며, **현재 활성 인용은 `10.1007/s10683-011-9302-8`만 사용한다**. 오류 문자열은 공개문서에서 반복하지 않는다. [Cambridge 학술지 원문 서지](https://www.cambridge.org/core/journals/experimental-economics/article/abs/hidden-costs-of-control-four-repetitions-and-an-extension/359691AD3C6B4A51779371AF1A9F9419), [Queen's University Belfast 기관 서지](https://pure.qub.ac.uk/en/publications/hidden-costs-of-control-four-repetitions-and-an-extension/).
 - **선공개 판본도 다르다.** 2010년 Jena Economic Research Papers 2010-007은 *Hidden Costs of Control: Three Repetitions and an Extension*, 저자 표기 **Matteo Ploner; Katrin Schmelz; Anthony Ziegelmeyer**. 2012년 학술지 최종판은 **Four Repetitions**, 저자 표기 **Anthony Ziegelmeyer; Katrin Schmelz; Matteo Ploner**. **서로 다른 판본의 저자 순서·반복 횟수·표본을 혼합하지 않는다.** [2010 저자 공개 사본](https://www.researchgate.net/publication/45140025_Hidden_costs_of_control_four_repetitions_and_an_extension), [2012 학술지](https://doi.org/10.1007/s10683-011-9302-8).
 - **반증 강도 재평가:** 2012년 결과는 '통제 비용의 존재'를 대체로 반복 확인했지만 '비용이 통제 편익을 언제나 초과한다'는 강한 명제를 지지하지 않았다. 반증 대상은 **보편적 순효과 주장**이지 비용 메커니즘의 존재 자체가 아니다.
 
@@ -385,11 +385,11 @@ Emerson에 따라 비대칭을 단일 능력 점수로 대체하지 말고 **A�
 이 축소의 이유:
 1. voice, process control, decision control, neutrality, appeal, grievance, remedy/enforcement 각각은 이미 선행연구가 풍부하다.
 2. 공정성 인식·결과 수용도 이미 많이 연구됐다.
-3. Project가 검증할 가치가 남으려면 **주관적 공정성 대신 알려진 정답 대비 attribution error**를 핵심 결과변수로 삼아야 한다.
-4. provenance 자체의 신규성도 주장하지 않는다. **정확한 provenance를 통제변수로 고정**하고 제도적 권한배치가 객관적 오류를 바꾸는지만 본다.
+3. Project가 검증할 가치가 남으려면 **주관적 공정성 대신 실험자가 검증 가능한 행동 사실 대비 factual-attribution error**를 핵심 결과변수로 삼아야 한다.
+4. provenance 자체의 신규성도 주장하지 않는다. **동일한 검증가능 provenance/action log를 통제변수로 고정**하고 제도적 권한배치가 객관적 오류를 바꾸는지만 본다.
 
 ### 16.4 최소 사전등록 후보
-- 과제: 여러 행위자가 분리된 검증가능 기여를 수행하고 ground-truth contribution log를 자동 생성.
+- 과제: 여러 행위자가 분리된 검증가능 행동·산출물을 수행하고 **ground-truth action/factual-attribution log**를 자동 생성. 단일한 '기여 가치의 정답'은 가정하지 않는다.
 - 평가자: 이해관계가 있는 원평가자 vs 이해관계 없는 독립평가자.
 - 정정: 권고만 가능 vs 결과를 실제 수정할 수 있음.
 - 권력비대칭: 평가자가 후속 자원/기회 배분권 없음 vs 있음.
@@ -425,7 +425,7 @@ Emerson에 따라 비대칭을 단일 능력 점수로 대체하지 말고 **A�
 - appeal/voice/remedy/enforcement 구별 → 기존 연구.
 
 **잔여 H-PA4RR:**
-> ground-truth contribution log가 모든 평가자에게 동일하게 제공되는 통제된 공동과제에서, **이해상충 평가자와 독립평가자의 객관적 attribution error 차이**가 (a) 실제 정정 집행 가능성과 (b) 평가자의 후속 자원배분권에 의해 상호작용하는지 측정한다.
+> **ground-truth action/factual-attribution log**가 모든 평가자에게 동일하게 제공되는 통제된 공동과제에서, **이해상충 평가자와 독립평가자의 객관적 attribution error 차이**가 (a) 실제 정정 집행 가능성과 (b) 평가자의 후속 자원배분권에 의해 상호작용하는지 측정한다.
 
 이것도 **개념적 신규성은 주장하지 않는다.** 가치가 있다면 여러 기존 연구축을 동일한 ground-truth 결과변수로 비교하는 **통합·재현 실험**이다.
 
@@ -437,6 +437,6 @@ Emerson에 따라 비대칭을 단일 능력 점수로 대체하지 말고 **A�
 4. 아무 요소도 추가 예측력이 없으면 **negative result**로 공개한다.
 
 ### 17.5 중단 규칙
-동일한 2×2×2 설계와 ground-truth attribution error를 직접 측정한 고품질 선행연구가 확인되면 독자 실험의 신규성 주장을 중단한다. 그 경우 Project의 역할은 기존 결과의 재현·외적 타당성 검증 또는 다른 미해결 문제로 이동한다.
+동일한 2×2×2 설계와 **검증가능 행동 사실 대비 attribution error**를 직접 측정한 고품질 선행연구가 확인되면 독자 실험의 신규성 주장을 중단한다. 그 경우 Project의 역할은 기존 결과의 재현·외적 타당성 검증 또는 다른 미해결 문제로 이동한다.
 
 **현재 판정:** 독창적 이론 후보가 아니라 **선행이론 통합·반증용 실험 후보**. 실험은 아직 수행하지 않았다.
