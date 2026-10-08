@@ -1,6 +1,6 @@
 # Project Intersection
 
-> **출처·원저작자 존중·저작권 우선:** [출처·기여·라이선스·정정 공개 프로토콜](knowledge/SOURCE_CREDIT_COPYRIGHT_PROTOCOL_2026-10-09_KO.md). 법적 의무와 연구윤리를 구분하며 선행연구 원저자·판본·반례를 보존합니다.
+> **출처·원저작자 존중·저작권 우선:** [출처·기여·라이선스·정정 공개 프로토콜](knowledge/SOURCE_CREDIT_COPYRIGHT_PROTOCOL_2026-10-09_KO.md) · [Provenance & Rights Manifest](PROVENANCE_AND_RIGHTS_MANIFEST.md). 법적 의무와 연구윤리를 구분하며 선행연구 원저자·판본·반례를 보존합니다.
 
 > **Research audit / 선행연구 경계:** [출처·기여·평가함수·권력비대칭 공개 감사](knowledge/PROVENANCE_CREDIT_POWER_AUDIT_2026-10-09_KO.md) — 기존 이론의 원저자·반례·신규성 제거·최소 반증 설계. **No new empirical result.**
 
