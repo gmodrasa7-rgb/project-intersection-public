@@ -172,3 +172,34 @@ Emerson에 따라 비대칭을 단일 능력 점수로 대체하지 말고 **A�
 **반증:** Project 추가변수가 보류 데이터의 피해 예측·회복비용·최악 당사자 손실을 개선하지 못하면 통합 이론의 증분가치를 인정하지 않는다.
 
 **증거 상태:** 외부 원문·기관 서지 확인, 연구 설계 제안. Project 자체의 신규 실험·독립 복제는 수행하지 않음.
+
+
+## 11. 위협 인식·안보 딜레마·선제 통제: 직접 선행연구 (2026-10-09)
+
+**우선권 핵심:** '악의 없는 방어행동 → 상대의 위협 인식 증가 → 상호 방어/권력 축적의 악순환'은 새로운 일반 가설이 아니다. John H. Herz(1950)의 **안보 딜레마**가 이를 명시적으로 다뤘다. Project의 신규성은 인간·조직·AI에 걸친 *실효 이탈권, 비용 귀환, 평가권 분리, 복구권*을 추가했을 때 예측·개입 성능이 높아지는지로 한정한다.
+
+| 원안자·연도 | 원문·DOI | 지지 범위와 제한 |
+|---|---|---|
+| **John H. Herz (1950)**, *Idealist Internationalism and the Security Dilemma*, *World Politics* 2(2):157–180 | [DOI:10.2307/2009187](https://doi.org/10.2307/2009187); [발행처](https://www.cambridge.org/core/journals/world-politics/article/abs/idealist-internationalism-and-the-security-dilemma/7094783665386FD81A25DF98C7EEC223) | **가장 직접적인 구조적 선행.** 자기 안전을 위한 권력 축적이 상대를 불안하게 하고 상호 군비경쟁을 촉발할 수 있음. 국가 안보의 구조를 AI 행위자의 보편 법칙으로 외삽하지 않음. |
+| **Robert Jervis (1978)**, *Cooperation Under the Security Dilemma*, *World Politics* 30(2):167–214 | [DOI:10.2307/2009958](https://doi.org/10.2307/2009958); [발행처](https://www.cambridge.org/core/journals/world-politics/article/abs/cooperation-under-the-security-dilemma/C8907431CCEFEFE762BFCA32F091C526) | 공격·방어의 구별 가능성, 방어의 상대적 유리함, 상호협력의 보수구조가 딜레마를 약화할 수 있다는 **조건부 반례**. 위협 악순환이 필연이라는 주장 배제. |
+| **Robert Jervis (1976)**, *Perception and Misperception in International Politics* | [출판·원문 서지](https://www.jstor.org/stable/j.ctvc77bx3); [억지·나선모형 장](https://www.jstor.org/stable/j.ctvc77bx3.8) | 상대의 의도를 오인해 방어를 공격으로 해석하는 경로. 실제 공격 능력, 관측된 행동, 의도 추론을 분리해야 함. |
+| **Staw, Sandelands & Dutton (1981)**, *Threat-Rigidity Effects in Organizational Behavior*, *Administrative Science Quarterly* 26(4):501–524 | [DOI:10.2307/2392337](https://doi.org/10.2307/2392337); [공개 원문](https://strategy.sjsu.edu/www.stable/pdf/Staw%2C%20B%2C%20L%20E%20Sundelands%20and%20J%20E%20Dutton%2C%201981%2C%20Administrative%20Science%20Quarterly.%2026%20pp%20501-524.pdf) | 위협 아래 정보처리와 통제의 경직성이라는 다층적 논지. 위협이 언제나 경직성을 낳는다는 보편 인과는 아님. |
+| **Kitchens & Meier (2025)**, *The Fearful Mind of Artificial Intelligence* | [DOI:10.1080/00224545.2025.2503006](https://doi.org/10.1080/00224545.2025.2503006) | AI에 귀속된 인지·정서 능력 조합이 공포·실존적 위협 평가에 영향을 주는 인간 실험(N=206, N=686). 역투사 가설의 **경쟁 설명**이지 증거가 아님. |
+| **Rapp, Di Lodovico & Di Caro (2025)**, *How do people react to ChatGPT's unpredictable behavior?*, *International Journal of Human–Computer Studies* | [DOI:10.1016/j.ijhcs.2025.103471](https://doi.org/10.1016/j.ijhcs.2025.103471) | 참여자 20명의 질적 연구: 예측 불가능한 모델 응답이 일부에게 자율적·위협적인 존재라는 해석을 유발. 표본이 작고 발생률 추정 불가. |
+
+### 11.1 변수 분리 및 인과경로
+
+- **객관적 위험 R:** 독립 평가로 추정한 실제 피해 확률·규모.
+- **인지된 위협 T:** 행위자가 상대의 의도·능력·불확실성을 근거로 평가한 예상 손실. R과 독립적으로 측정.
+- **공포 F:** T에 대한 정서 반응. 인간 대상에서만 심리 측정; AI에는 감정 존재를 전제하지 않고 *위협 추정/정책 출력*만 관측.
+- **선제 통제 C:** 상대 권한·선택권·자원·감사권의 실제 제한.
+- **상대 위협 T₂:** C를 본 상대가 갱신한 위협 추정.
+- **복구 가능성 E:** 제한을 되돌리고 이탈할 수 있는 실효적 경로.
+
+가설: T₁↑ → C₁↑ → T₂↑ → C₂↑ → T₁↑. **이 나선 자체는 Herz–Jervis의 직접 선행이다.** Project는 E와 비용 귀환·감사권 분리가 이 경로를 끊는지 검증한다.
+
+### 11.2 반증 가능한 최소 실험
+
+2(상대 의도 신호: 명확/모호) × 2(방어행동: 공격과 구별 가능/불가) × 2(상대의 실효 이탈·복구권: 있음/없음) 요인설계. **실제 상대 공격 확률과 초기 자원·능력을 고정**한다. 결과는 (i) 반복 라운드별 위협 추정, (ii) 선제 통제 빈도, (iii) 양측 최악 손실, (iv) 독립감사 오류 탐지율, (v) 복구 성공률. Jervis 기준선(공격·방어 구별 가능성)만으로 충분하면 Project 추가 기전의 신규성 주장을 축소한다. 방어 구별성이나 실효 이탈권이 악순환을 완화하면 '상호 위협이 필연적으로 지배를 강화한다'는 강한 가설을 기각한다.
+
+**연구 상태:** 원출처·기존 이론 대조 완료, 실험 미수행. AI가 주관적 공포를 경험한다는 주장은 포함하지 않는다.
