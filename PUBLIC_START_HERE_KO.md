@@ -47,3 +47,6 @@
 
 
 > **독립 재구현 경로:** [E045–E050 공개 독립 재구현 사양](experiments/E045_E050_INDEPENDENT_PUBLIC_REIMPLEMENTATION_SPEC_KO.md) — 비공개 코드·수치에 맞추지 않고 choice rule·feedback·초기조건·개입시점을 바꿔 합성 반례의 모델 의존성을 공격합니다. 아직 공개 실행결과 없음.
+
+
+> **전계보 통합:** [비공개 본연구 census 기반 중복 제거·기각 claim·검증부채·다음 우선순위](RESEARCH_LINEAGE_INTEGRATION_2026-10-09_KO.md). 최근 Choice/J축을 기존 E011/E025/E028/E041과 대조해 중복을 제거하고, 다음 핵심을 독립 현실 target 검증으로 축소했습니다.
