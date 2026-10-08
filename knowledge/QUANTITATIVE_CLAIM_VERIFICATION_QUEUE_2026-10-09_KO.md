@@ -8,12 +8,12 @@
 
 ## P0 — 재검증 전 인용 제한
 
-**상태 갱신:** Wang/Bol/Ross = PRIMARY TEXT VERIFIED; Ross correction VERIFIED. 세 연구 모두 SUPPLEMENTARY/RAW REPRODUCTION PENDING. 나머지는 미검증.
+**상태 갱신:** Wang/Bol/Ross = PRIMARY TEXT VERIFIED; Ross correction VERIFIED. 세 연구 모두 SUPPLEMENTARY/RAW REPRODUCTION PENDING. Tham/Hill & Stein도 원문 본문 확인. Tham은 2026-03-22 개정 텍스트가 확인되어 정확한 arXiv 판본 고정 필요. 나머지는 미검증.
 | 연구 | 현재 확인해야 할 주장 | 실패하기 쉬운 지점 | 검증 완료 전 처리 |
 |---|---|---|---|
 | Wang, Jones & Wang 2019 | near-miss와 10년 NIH-system attrition | 12.6%의 의미, 절대수준/차이/상대효과 혼동 | 방향만 유지; 효과크기 보류 |
 | Bol, de Vaan & van de Rijt 2018 | 8년 후속 연구비, €180k, 2배+, full-professor 결과 | 초기 grant 포함 여부, 회귀/기술통계, % vs %p | 원표 대조 전 숫자로 Project 효과 계산 금지 |
-| Tham et al. 2024 | funding gap→US employment, earnings, publication | working-paper 판본, 3pp/40%, 20%, 90%의 정확한 outcome | 판본 고정 후 표/부록 대조 |
+| Tham et al. 2024 (현재 원문 2026-03-22 개정) | funding gap→US employment, earnings, publication | working-paper 판본, 3pp/40%, 20%, 90%의 정확한 outcome | 판본 고정 후 표/부록 대조 |
 | Hill & Stein 2025 | scooping→citation/top-journal/publication | 상대%와 percentage-point 혼동 | 원표 대조 전 범용계수 금지 |
 | Ross et al. 2022 | women credit gaps, survey exclusion | adjusted relative gap vs raw/pp, correction 반영 | 최신 correction 포함 후 확정 |
 | Stavropoulou & Viney 2026 | funding→income/publication/citation, sex heterogeneity | outcome 정의·추정모형·새 논문 판본 | 원문/보충자료 대조 |
