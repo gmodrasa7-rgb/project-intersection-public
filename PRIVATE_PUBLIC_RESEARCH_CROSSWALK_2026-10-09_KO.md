@@ -37,3 +37,6 @@ DESIGNED ≠ EXECUTED; CODE ASSERT PASS ≠ independent replication; synthetic c
 6. 더 단순한 정적 모형이 out-of-sample에서 같은 성능을 내는가?
 
 결론: **새로운 보편 이론의 입증 없음.** 공개 효용은 연구계보·반례·실증 게이트를 제3자가 독립적으로 비판할 수 있게 만드는 데 있다.
+
+
+> **독립 재구현 경로:** [E045–E050 공개 독립 재구현 사양](experiments/E045_E050_INDEPENDENT_PUBLIC_REIMPLEMENTATION_SPEC_KO.md) — 비공개 코드·수치에 맞추지 않고 choice rule·feedback·초기조건·개입시점을 바꿔 합성 반례의 모델 의존성을 공격합니다. 아직 공개 실행결과 없음.
