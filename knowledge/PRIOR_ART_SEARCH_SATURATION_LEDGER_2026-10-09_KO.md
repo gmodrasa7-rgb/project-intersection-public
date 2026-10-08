@@ -84,3 +84,7 @@ W-CHOICE-2 원장: [원저작자·역사·출처·기여](CHOICE_CAUSAL_AXES_PRI
 | W-CHOICE-J5 | 2026-10-09 | actionable recourse, 절차공정성, 실제 이의제기 장애, 시간동학 | 신규 DIRECT/PARTIAL 다수 | 법적 항소/설명≠집행 가능한 구제 | RESET→0 |
 
 [W4 P/J 수정·설명 반례](CHOICE_J_PREDICTION_DELEGATION_WAVE_2_2026-10-09_KO.md); [W5 실질적 구제 선행](CHOICE_J_EFFECTIVE_RECOURSE_PRIOR_ART_WAVE_3_2026-10-09_KO.md). 포화 0/3 유지.
+
+| W-CHOICE-J6 | 2026-10-09 | procedural justice, voice/exit, perceived vs effective control | 신규 직접·부분 선행 다수 | 검색포화 RESET 0 |
+
+관련: CHOICE_J_AUTHORITY_COOPERATION_PRIOR_ART_WAVE_4_2026-10-09_KO.md / CHOICE_J_RESIDUAL_CLAIM_MAP_2026-10-09_KO.md
