@@ -67,3 +67,7 @@ W-CHOICE-2 원장: [원저작자·역사·출처·기여](CHOICE_CAUSAL_AXES_PRI
 | W-CHOICE-4 | 2026-10-09 | 선택맹 정치/도덕 실험·선호형성 방법론·후속 인용 | 신규 DIRECT/PARTIAL 있음 | 스웨덴 2013 vs 아르헨티나 2017 정치 결과 차이 | RESET→0 |
 
 [W4 원저자·원전·반례](CHOICE_CAUSAL_AXES_PRIOR_ART_WAVE_4_2026-10-09_KO.md).
+
+| W-CHOICE-J1 | 2026-10-09 | J 판정권: 관계적 자율성·인식적 부정의·지원/대리결정·AI contestability | 새 DIRECT/PARTIAL 있음 | 2022 contestability framework는 J축 일반론의 직접 선행 | RESET→0 |
+
+[J축 선행연구 원저작자·역사](CHOICE_J_AUTHORITY_PRIOR_ART_WAVE_2026-10-09_KO.md).
