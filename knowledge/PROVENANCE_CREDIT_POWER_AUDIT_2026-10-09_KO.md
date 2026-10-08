@@ -88,3 +88,42 @@
 5. 연구자 이름·연도·DOI·판본·부정적 결과 중 잘못 기록된 것이 있는가?
 
 **현재 판정:** 새로운 공존 법칙 발견 아님. **선행이론 통합·재현·반증을 위한 공개 연구 설계 후보.**
+
+
+## 8. 규칙 선택권·내생적 제도 선행연구 추가 감사 (2026-10-09)
+
+**판정: '누가 평가함수/규칙을 선택하는가가 권력이다'는 명제 자체의 신규성은 제거한다.** 이는 특정 Project 독창 이론이 아니라 헌법적 정치경제학, 공공선택, 내생적 제도설계 및 메커니즘 디자인과 직접 중복된다.
+
+| 원연구자·출판 | 원출처 | Project와 겹치는 내용 | 남는 한계 |
+|---|---|---|---|
+| **James M. Buchanan; Gordon Tullock (1962)**, *The Calculus of Consent* | [후속 원저자 설명](https://www.econlib.org/library/Buchanan/buchCv10.html?chapter_num=10) | 규칙 안에서의 선택과 **규칙 자체의 선택**을 분리 | 연구 기여귀속 정확도 실험과 동일하지 않음 |
+| **Geoffrey Brennan; James M. Buchanan (1985)**, *The Reason of Rules* | [원문](https://www.econlib.org/library/Buchanan/buchCv10.html) | 현재 배분결과뿐 아니라 헌법적 규칙선택을 분석 | 동일한 provenance 기반 귀속 실험은 아님 |
+| **Philippe Aghion; Alberto Alesina; Francesco Trebbi (2004)**, *Endogenous Political Institutions*, *QJE* 119(2):565–611 | [Harvard 원저자 서지](https://dash.harvard.edu/entities/publication/73120378-80f3-6bd4-e053-0100007fdf3b), DOI [10.1162/0033553041382148](https://doi.org/10.1162/0033553041382148) | **지도자의 견제받지 않는 권력**과 지나친 견제에 따른 의사결정 교착을 함께 모형화 | 중앙집중이 항상 열등하다는 주장에 직접 제약 |
+| **Jon X. Eguia; Kenneth A. Shepsle (2015)**, *Legislative Bargaining with Endogenous Rules*, *Journal of Politics* 77(4) | [원발행처](https://doi.org/10.1086/682389) | 구성원이 스스로 의제·교섭 규칙을 선택할 때 특정 구성원에게 유리한 권한 배분이 내생적으로 발생 | 기여 기록·재심·정정 실험과 동일하지 않음 |
+| **Felix Bierbrauer; Nick Netzer (2016)**, *Mechanism Design and Intentions*, *Journal of Economic Theory* 163:557–603 | [원발행처](https://www.sciencedirect.com/science/article/pii/S002205311600034X), DOI [10.1016/j.jet.2016.02.013](https://doi.org/10.1016/j.jet.2016.02.013) | 설계자가 **왜 그 규칙을 선택했는지**에 대한 행위자의 의도 추론이 행동을 바꿀 수 있음; 설계자도 행위자로 고려 | Project의 악의 없는 규칙선택→협력 영향 일반론과 중복 |
+| **Gabriel A. Madeira; Robert M. Townsend (2008)**, *Endogenous Groups and Dynamic Selection in Mechanism Design*, *JET* 142(1):259–293 | [원발행처](https://www.sciencedirect.com/science/article/pii/S0022053107000750), DOI [10.1016/j.jet.2007.03.007](https://doi.org/10.1016/j.jet.2007.03.007) | 조직형태·불평등·규칙체계의 동태적 상호결정 | 특정 attribution 결과변수와는 구별 |
+| **Jonathan Bendor; Terry M. Moe (1986)**, *Agenda Control, Committee Capture, and the Dynamics of Institutional Politics*, *APSR* | [원발행처](https://www.cambridge.org/core/journals/american-political-science-review/article/abs/agenda-control-committee-capture-and-the-dynamics-of-institutional-politics/0879FC41EEA204A025B1783831E0E02F) | 의제설정 권력·제도 포획·제한된 인지능력과 제도변화 | 기여배분의 직접 실험은 아님 |
+| **미확인 저자 (2011)**, *Substance vs. Procedure: Constitutional Enforcement and Constitutional Choice*, *JEBO* 80(2):309–318 | [원발행처](https://www.sciencedirect.com/science/article/abs/pii/S0167268111001752), DOI [10.1016/j.jebo.2011.06.030](https://doi.org/10.1016/j.jebo.2011.06.030) | **규칙선택 × 실제 집행 × 사법심사**의 결합 자체도 기존 연구 | 저자 원문 검증 전 임의 귀속 금지 |
+
+### 8.1 추가로 폐기·축소하는 주장
+
+- **'평가함수 선택권은 권력이다'** → 개념 신규성 **없음**.
+- **'강자의 규칙선택은 강자에게 유리하게 내생화될 수 있다'** → 기존 내생적 제도·의제설정 연구와 겹침.
+- **'규칙의 존재와 집행은 다르다'** → 헌법 집행·사법심사 연구와 겹침.
+- **'설계자의 악의가 없어도 규칙의 의도 해석이 협력에 영향'** → Bierbrauer–Netzer의 직접 인접 선행연구.
+- **'권력 분산이 항상 좋다'** → Aghion–Alesina–Trebbi의 교착 비용 모델이 중요한 반례 조건.
+
+### 8.2 가장 작은 잔여 연구 후보
+
+**'동일한 검증가능 행동 사실 로그 G를 제공하는 공동연구 과제에서, 규칙 선택권의 배분과 이의제기·재심·집행·이탈 조건이 (a) 사실귀속 오류, (b) 가치배분 차이, (c) 복구비용, (d) 장기 자발적 협력에 어떤 추가 예측력을 갖는가?'**
+
+이것도 **통합·재현 실험 후보**일 뿐이며 최초 개념/법칙이 아니다. 우선적으로 기존 연구가 동일 결과변수를 측정했는지 확인해야 한다.
+
+### 8.3 공개 반증·중단조건
+
+1. 동일한 실험조합이 선행연구에 있으면 신규성 주장을 중단.
+2. 규칙선택 분산이 사실귀속 정확도·복구·협력에 추가효과를 주지 않으면 잔여 가설 약화.
+3. 분산으로 인한 교착·담합·집행 지연·관리비용이 편익을 초과하면 분산 우위 주장 폐기.
+4. 인간·정치제도 연구의 결과를 AI 개체의 권리·감정·공존에 자동 일반화하지 않는다.
+
+**증거등급:** 출판사·기관의 서지/초록 중심 선행연구 확인. 전문 전수검토나 Project 실험을 수행한 것은 아니다.
