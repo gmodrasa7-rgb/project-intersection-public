@@ -7,6 +7,8 @@ Last evidence review / 최종 증거 검토: **2026-10-09** (new J scaffold is p
 
 **Cross-repository disclosure boundary:** private research materials were reviewed for navigation and status alignment, not bulk-published. No private-only outcome is promoted to public empirical evidence. The J synthetic scaffold and its numeric claims remain PROJECT-REPORTED / UNVERIFIED until independently rerun.
 
+[심층 연구 교차감사](PRIVATE_PUBLIC_RESEARCH_CROSSWALK_2026-10-09_KO.md) · [E051 Phase 0 공개 실증 프로토콜](experiments/E051_PUBLIC_PHASE0_DATA_VIABILITY_KO.md)
+
 This page is a due-diligence interface for funders, research partners, reviewers, and critics. It separates what can be checked now from what is still a hypothesis, a private research lead, or an unresolved validation debt.
 
 이 문서는 펀더·연구 파트너·검토자·비판자가 현재 확인할 수 있는 증거와 아직 가설·비공개 연구후보·미해결 검증부채인 항목을 분리하기 위한 실사 인터페이스다.
