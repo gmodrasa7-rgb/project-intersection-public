@@ -42,3 +42,6 @@ A/C/I/B/M 원인을 잘 맞히는 평가자가 그 정확성을 J의 정당화�
 
 ## 연구 우선순위
 R3 → R1 → R2 → R4 → R5. 이유: R3가 Project Intersection의 권력비대칭·자기강화·공존 핵심과 가장 직접 연결되고, 기존 단발 human-AI advice 연구와 차별 가능성이 가장 큼. 단, 선행검색 전 신규성 주장 금지.
+
+## R3 선행연구 재판정
+[피드백 원전](CHOICE_J_R3_FEEDBACK_POWER_PRIOR_ART_2026-10-09_KO.md)으로 일반적인 '추천/예측→행동→데이터→재학습', increasing returns, 알고리즘 관리의 정보비대칭을 신규성에서 제거. [항소 실험/구제 반례](CHOICE_J_R3_APPEAL_EFFECTIVENESS_WAVE_2026-10-09_KO.md)로 항소 채널 존재·구제거리 최소화·설명·시간적 recourse도 단독 신규성에서 제거. 남은 후보는 이 메커니즘들을 동일 인과설계에서 교차식별하는 좁은 잔차이며 아직 ORIGINAL 아님.
