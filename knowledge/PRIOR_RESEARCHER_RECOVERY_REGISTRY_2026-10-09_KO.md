@@ -349,3 +349,60 @@ Project가 선행연구를 이용할 때 가능한 경우 최소:
 **원저자 전체 이름 → 연도 → 원제목 → 원출처/DOI → 그들이 실제로 한 기여 → Project가 가져온 부분 → Project와 다른 부분/반례 → 판본·정정 상태**.
 
 '관련 연구가 있다'는 표현만으로 원연구자를 배경으로 밀어내지 않는다. 동시에 저자의 논문이 말하지 않은 가치판단·정치적 입장·Project 지지를 저자에게 귀속하지 않는다.
+
+
+## O. Project 내부 신조어 자기감사: 이름을 붙였다고 신규성이 생기지 않는다
+
+앞서 제안한 **Contributor Continuation Gap (CCG)**, **Provenance Recovery Rate (PRR)**, **Support-to-Continuation Elasticity (SCE)**는 현재부터 **WORKING LABEL / NOT A NOVEL CONSTRUCT**로 강등한다.
+
+이유:
+- CCG는 career persistence/attrition, funding shock, survival/retention 분석과 직접 인접.
+- SCE는 경제학의 elasticity/response-to-treatment 계열 표현을 특정 연구지원 문제에 적용한 형태이며, 이름 자체의 신규성을 주장할 근거 없음.
+- PRR은 provenance completeness/traceability/recoverability 및 정보검색의 precision/recall류 측정과 선행교차검증이 필요.
+
+따라서 선행용어·동일 측정치가 확인되면 **기존 용어를 우선 채택**한다. Project 용어는 독립적인 측정상 이점이 입증될 때만 유지한다.
+
+### O1. 신규성 판정의 최소 단위
+새 이름이 아니라 다음 조합을 최소 단위로 본다.
+`population + treatment/exposure + factual-ground-truth + outcome + counterfactual/control + governance intervention`
+
+예:
+- population: 실제 연구팀/초기 연구자
+- exposure: factual contribution credit의 누락 또는 resource shock
+- outcome: 관측 가능한 연구 지속성
+- governance intervention: 독립 provenance/정정/exit 구조
+- control: 근접 심사점수·동일팀·외생적 공백 등
+
+이 조합까지 동일한 선행연구가 있으면 Project 잔차를 다시 축소한다.
+
+## P. '착취' 판정의 증거 사다리
+Project는 불공정·누락·저보상·이탈을 자동으로 착취라고 부르지 않는다.
+
+- **E0 관측:** 기여/credit/resource/outcome 차이 존재.
+- **E1 대안설명 통제:** 경력·분야·역량·독립발견 등 주요 교란 일부 제거.
+- **E2 편익 연결:** 다른 행위자/기관이 해당 기여에서 실질적 편익을 얻음.
+- **E3 비대칭 연결:** 기여자의 정정·exit·협상·대체지원 접근이 구조적으로 더 약함.
+- **E4 통제/조작 증거:** provenance 삭제·변조, 정정 차단, 사후규칙 변경 등 검증 가능한 행위.
+- **E5 착취 판정 후보:** E2–E4와 비용/편익 전가가 함께 확인되고 경쟁 설명보다 설명력이 높음.
+
+악의적 의도는 필수조건으로 두지 않지만 **의도를 증거 없이 발명하지 않는다**. 법적 의미의 착취 판정과 Project 분석용 분류를 구분한다.
+
+## Q. '소멸' 판정의 증거 사다리
+- **L0:** 특정 데이터베이스에서 후속 산출물 미발견.
+- **L1:** 동일 분야/기관/지원체계에서 활동중단 관측.
+- **L2:** 여러 독립 자료에서 연구활동 중단 확인.
+- **L3:** 특정 연구계보/팀/인프라의 종료 확인.
+- **L4:** 비교설계를 통해 shock 이후 continuation 감소 추정.
+- **금지:** L0–L3만으로 '생겨날 발견이 사라졌다'고 단정.
+
+미생성 발견은 반사실이므로 **lost option / reduced continuation opportunity**로만 다룬다.
+
+## R. 보상 정당성의 별도 문제
+실제 받은 보상과 '정당했어야 할 보상'은 다른 변수다.
+- observed compensation: 공개·검증 가능한 실제 지급/지원.
+- contractual entitlement: 계약·정책에 따른 권리.
+- legal entitlement: 관할 법률에 따른 권리.
+- normative allocation: 어떤 규칙이 공정한지에 대한 규범모델.
+- counterfactual support: 다른 지원이 있었다면 지속성이 달라졌을 가능성.
+
+Project는 observed compensation에서 normative allocation을 역산하지 않는다. Shapley value, CRediT role, citation count, revenue share 어느 하나도 자동 정산공식으로 쓰지 않는다.
