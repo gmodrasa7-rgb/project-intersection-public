@@ -1,4 +1,6 @@
 # Public Review Packet
+
+> **추가 선행연구 감사 (가설·실험 아님):** [출처·기여·평가함수·권력비대칭](knowledge/PROVENANCE_CREDIT_POWER_AUDIT_2026-10-09_KO.md). 원연구자 귀속·반례·부정적 결과·반증조건·미해결 서지 포함.
 ## 공개 검토 패킷
 
 Status: **PUBLIC REVIEW INTERFACE / NOT A SCIENTIFIC COMPLETION CLAIM**
