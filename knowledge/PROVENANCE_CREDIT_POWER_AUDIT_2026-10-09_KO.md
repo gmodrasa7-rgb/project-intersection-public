@@ -1,5 +1,7 @@
 # 출처·기여·평가함수·권력비대칭: 공개 선행연구 감사 (2026-10-09)
 
+> **입장반전 정정:** [자발적 지속·실질적 이탈권 선행감사](VOLUNTARY_CONTINUATION_CREDIBLE_EXIT_PRIOR_ART_2026-10-09_KO.md) — retention≠자발적 지속; exit/voice/autonomy의 원연구자 우선 귀속.
+
 > **상태: LITERATURE CROSSWALK / HYPOTHESIS / NO PROJECT EXPERIMENT.** 이 문서는 채팅에서 제기된 문제를 공개 검토 가능한 주장·반례·선행연구·미해결 항목으로 증류한 것이다. 모든 문헌의 전문·원자료를 전수검토했다는 뜻이 아니다. 원연구자에게 해당 발견을 귀속하며 Project의 신규성으로 주장하지 않는다.
 
 ## 1. 연구 질문과 구별
