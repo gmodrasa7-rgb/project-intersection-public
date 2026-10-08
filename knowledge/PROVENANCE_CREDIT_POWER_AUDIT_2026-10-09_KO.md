@@ -127,3 +127,30 @@
 4. 인간·정치제도 연구의 결과를 AI 개체의 권리·감정·공존에 자동 일반화하지 않는다.
 
 **증거등급:** 출판사·기관의 서지/초록 중심 선행연구 확인. 전문 전수검토나 Project 실험을 수행한 것은 아니다.
+
+
+## 18. IVS-0R 잔차축소: 현재 Project가 주장하지 않는 것
+후속 선행연구·기여자 복구 감사에 따라 다음은 Project 고유 신규성에서 제외하거나 보류한다.
+
+1. 역할별 contributorship 기록 자체 — CRediT 및 이전 contributorship 계보.
+2. 데이터·소프트웨어의 독립적 citation/credit — FORCE11 선행원칙.
+3. 초기 연구지원의 누적우위 — Bol et al. 및 과학자원배분 문헌.
+4. funding gap이 연구활동/인력에 미치는 영향 — Tham 계열 연구.
+5. priority가 citation/publication reward에 미치는 영향 — Hill & Stein.
+6. 실제 팀 참여와 최종 authorship/credit의 불일치 — Ross et al.
+7. voice와 decision control의 구분 — Thibaut/Walker 및 후속 절차공정성 문헌.
+8. rule selection/endogenous institutions 자체 — Buchanan/Tullock, Brennan/Buchanan, Aghion/Alesina/Trebbi 등.
+9. CCG/PRR/SCE라는 이름 — 선행측정법 감사 전 **NOT NOVEL**.
+
+### 현재 남는 연구질문
+현재 공개 선행조사에서 아직 동일 설계가 확인되지 않은 좁은 질문은:
+
+> **검증 가능한 factual-contribution ground truth가 있는 협업 환경에서, provenance의 독립성·정정 집행력·평가/배분권 집중·실질적 exit/대체지원 가능성을 함께 조작 또는 준실험적으로 관찰할 때, credit 오류와 지원배분, contributor continuation이 어떻게 공동 변화하는가?**
+
+이것도 **NO PRIOR ART FOUND YET**일 뿐 ORIGINAL 판정이 아니다.
+
+### 강제 반증
+- 동일 변수조합과 outcome을 이미 검증한 선행연구가 발견되면 잔차 삭제.
+- provenance/정정 구조가 continuation에 추가 설명력을 주지 않으면 통합가설 약화.
+- 권력분산 비용·deadlock·privacy 비용이 이득보다 크면 제도권고 축소.
+- factual attribution 정확성이 높아져도 지원/continuation이 변하지 않으면 attribution→continuation 경로 분리.
