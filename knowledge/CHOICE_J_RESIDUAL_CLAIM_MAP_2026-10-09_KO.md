@@ -70,3 +70,21 @@ R3 → R1 → R2 → R4 → R5. 이유: R3가 Project Intersection의 권력비�
 측정: J_formal, J_effective, P_actual, P_perceived, D, W, 오류정정률, 정정 지연, 항소 비용, exit 비용, 반복 협력률. 실패 기준: 효과 0, 효과 방향 반대, 설명/기대 차이로만 설명됨, 기존 실험과 조작이 동형.
 
 **판정:** ZERO GATE claim별 관리로 전환 / 신규성 미확정 / 합성 시뮬레이션 설계 가능. 실제 실험 수행 및 데이터 확보는 아직 없음.
+
+
+## 2026-10-09 내부 계보 교차감사에 따른 대폭 축소
+[전계보 통합](../RESEARCH_LINEAGE_INTEGRATION_2026-10-09_KO.md)에서 비공개 E011/E025/E028/E041과 대조했다.
+
+- E011은 expressed consent vs manipulated/legitimate preference change, formal exit, independent advice, source-lineage correlation, evaluator capture, diagnostic→action 연결, overprotective false rejection을 이미 합성 공격했다.
+- E025는 nominal vs practical exit와 evaluator capture를 다뤘으나 target-definition leakage가 있었고, E041은 독립 target 최소 측정기로 수정했다.
+- E028은 source independence / reflective endorsement / counterfactual autonomy / self-modification retention / developmental integration을 별도 차원으로 둔다.
+
+따라서 **R1·R2·R4의 상당 부분은 Project 내부에서도 선행**이다. 최근 J축을 별도 신규 이론처럼 확장하지 않는다.
+
+### 남는 실질 잔차
+1. 이 변수들이 **독립적인 현실 downstream target**에서 baseline 대비 추가 정보를 주는가.
+2. 실효적 정정/이탈/정보계보가 장기 outcome에 미치는 효과를 **평가자와 outcome 생성자를 분리한 설계**에서 식별할 수 있는가.
+3. synthetic에서 발견된 보호↔정상적 선호변화 trade-off가 현실에서도 존재하는가.
+4. 시간·경로·re-entry 정보가 정적 현재상태보다 out-of-sample 예측을 개선하는가.
+
+이 네 질문이 아니면 Choice/J 관련 새 toy·새 용어 생성은 기본 HOLD.
