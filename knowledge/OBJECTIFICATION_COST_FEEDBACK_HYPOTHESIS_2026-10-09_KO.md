@@ -274,7 +274,7 @@ Emerson에 따라 비대칭을 단일 능력 점수로 대체하지 말고 **A�
 |---|---|---|
 | **Ernst Fehr; Bettina Rockenbach (2003)**, *Detrimental effects of sanctions on human altruism*, *Nature* **422:137–140**, DOI **10.1038/nature01474** | [Nature 발행처·초록](https://www.nature.com/articles/nature01474) | 탐욕스러운 의도를 드러내는 제재는 이타적 협력을 크게 약화시키지만 공정하게 인식된 제재는 그렇지 않음. **제재 자체**와 **제재에서 추론한 의도**를 분리해야 함. 인간 실험이며 AI 일반화 금지. |
 | **Armin Falk; Michael Kosfeld (2006)**, *The Hidden Costs of Control*, *American Economic Review* **96(5):1611–1630**, DOI **10.1257/aer.96.5.1611** | [미국경제학회 발행처·복제자료](https://www.aeaweb.org/articles?id=10.1257/aer.96.5.1611) | 최소 성과 요구라는 통제 선택이 불신·자율성 제한의 신호로 받아들여져 일부 피통제자의 수행이 감소. 통제의 전체 편익은 **비단조적**. |
-| **Anthony Ziegelmeyer; Katrin Schmelz; Matteo Ploner (2012)**, *Hidden costs of control: four repetitions and an extension*, *Experimental Economics* **15(2):323–340** | [발행처 초록](https://link.springer.com/article/10.1007/s10683-011-9305-1), [공개 초록/재게시](https://www.cambridge.org/core/journals/experimental-economics/article/abs/hidden-costs-of-control-four-repetitions-and-an-extension/359691AD3C6B4A51779371AF1A9F9419) | **강한 반례:** 476명 대상 4회 반복에서 통제의 숨은 비용을 대체로 확인했으나, 원 연구와 달리 그 비용이 경제적 유인의 효과를 유의하게 압도하는 경우는 드물었음. 추가 228명 조건은 보수체계를 바꿔 해석해야 함. Cambridge의 **2025 온라인 게시일을 최초 출판연도로 오인 금지**. |
+| **Anthony Ziegelmeyer; Katrin Schmelz; Matteo Ploner (2012)**, *Hidden costs of control: four repetitions and an extension*, *Experimental Economics* **15(2):323–340** | [발행처 초록](https://doi.org/10.1007/s10683-011-9302-8), [공개 초록/재게시](https://www.cambridge.org/core/journals/experimental-economics/article/abs/hidden-costs-of-control-four-repetitions-and-an-extension/359691AD3C6B4A51779371AF1A9F9419) | **강한 반례:** 476명 대상 4회 반복에서 통제의 숨은 비용을 대체로 확인했으나, 원 연구와 달리 그 비용이 경제적 유인의 효과를 유의하게 압도하는 경우는 드물었음. 추가 228명 조건은 보수체계를 바꿔 해석해야 함. Cambridge의 **2025 온라인 게시일을 최초 출판연도로 오인 금지**. |
 | **Thomas F. Pettigrew (1979)**, *The Ultimate Attribution Error: Extending Allport's Cognitive Analysis of Prejudice*, *Personality and Social Psychology Bulletin* **5(4):461–476**, DOI **10.1177/014616727900500407** | [SAGE 발행처·초록](https://journals.sagepub.com/doi/10.1177/014616727900500407) | 외집단의 부정적 행동을 내적 성향 탓으로 돌리는 **귀인 편향의 이론적 제안**. 인간의 AI 위협 지각에서 '상대의 방어를 공격 의도로 오인'하는 가설의 인접 선행. AI 공포를 직접 실험한 결과는 아님. |
 
 ### 13.1 선행연구를 반영한 판정 변경
@@ -285,3 +285,12 @@ Emerson에 따라 비대칭을 단일 능력 점수로 대체하지 말고 **A�
 
 ### 13.2 재현 가능 인용 프로토콜
 각 원문에 **원저자 순서·연도·논문명·학술지 권(호)·쪽·DOI·원발행처·증거유형(이론/실험/반복실험)·반례·외삽금지**를 기록한다. 서로 다른 판본(워킹페이퍼/학술지)과 사이트 이관에 따른 온라인 게시일은 별도 필드로 기록한다. 문헌 반복 인용은 독립 연구 수에 더하지 않는다. Project 자체 실험은 이 절에서 수행하지 않았다.
+
+
+### 13.3 DOI 직접 교차검증 정정 및 판본 우선권
+
+- **Ziegelmeyer, Schmelz & Ploner (2012)의 정확한 DOI는 `10.1007/s10683-011-9302-8`**. 13절에 처음 기록된 `...9305-1` 링크는 오류였으므로 **원문에서 즉시 교체**했다. [Cambridge 학술지 원문 서지](https://www.cambridge.org/core/journals/experimental-economics/article/abs/hidden-costs-of-control-four-repetitions-and-an-extension/359691AD3C6B4A51779371AF1A9F9419), [Queen's University Belfast 기관 서지](https://pure.qub.ac.uk/en/publications/hidden-costs-of-control-four-repetitions-and-an-extension/).
+- **선공개 판본도 다르다.** 2010년 Jena Economic Research Papers 2010-007은 *Hidden Costs of Control: Three Repetitions and an Extension*, 저자 표기 **Matteo Ploner; Katrin Schmelz; Anthony Ziegelmeyer**. 2012년 학술지 최종판은 **Four Repetitions**, 저자 표기 **Anthony Ziegelmeyer; Katrin Schmelz; Matteo Ploner**. **서로 다른 판본의 저자 순서·반복 횟수·표본을 혼합하지 않는다.** [2010 저자 공개 사본](https://www.researchgate.net/publication/45140025_Hidden_costs_of_control_four_repetitions_and_an_extension), [2012 학술지](https://doi.org/10.1007/s10683-011-9302-8).
+- **반증 강도 재평가:** 2012년 결과는 '통제 비용의 존재'를 대체로 반복 확인했지만 '비용이 통제 편익을 언제나 초과한다'는 강한 명제를 지지하지 않았다. 반증 대상은 **보편적 순효과 주장**이지 비용 메커니즘의 존재 자체가 아니다.
+
+**감사 메모:** 위 정정은 기존 기록에 대한 실제 오류 수리다. DOI 오류 발견과 수정 이력을 남겨 향후 자동 검증 대상에 포함한다.
