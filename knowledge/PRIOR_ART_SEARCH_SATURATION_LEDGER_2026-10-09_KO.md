@@ -88,3 +88,8 @@ W-CHOICE-2 원장: [원저작자·역사·출처·기여](CHOICE_CAUSAL_AXES_PRI
 | W-CHOICE-J6 | 2026-10-09 | procedural justice, voice/exit, perceived vs effective control | 신규 직접·부분 선행 다수 | 검색포화 RESET 0 |
 
 관련: CHOICE_J_AUTHORITY_COOPERATION_PRIOR_ART_WAVE_4_2026-10-09_KO.md / CHOICE_J_RESIDUAL_CLAIM_MAP_2026-10-09_KO.md
+
+| W-R3-1 | 2026-10-09 | platform increasing returns, recommendation/predictive feedback, algorithmic management | 신규 DIRECT | 피드백 일반형 신규성 제거 | RESET 0 |
+| W-R3-2 | 2026-10-09 | appeal experiment, recourse acceptance, marginal contestability, temporal recourse | 신규 DIRECT | 항소 인터페이스 ≠ 실효적 복구 | RESET 0 |
+
+[피드백 선행](CHOICE_J_R3_FEEDBACK_POWER_PRIOR_ART_2026-10-09_KO.md); [항소 반례](CHOICE_J_R3_APPEAL_EFFECTIVENESS_WAVE_2026-10-09_KO.md).
