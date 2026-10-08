@@ -36,3 +36,11 @@ R&D ≠ 모든 생성행동; lobbying/시장집중 ≠ 자동 포획; 특허 sto
 후속 공개 결과는 `data_snapshot_date, source_version, unit_count, firm_year_count, coverage_by_tag, unmatched_rate, ambiguous_rate, time_split, leakage_audit, negative_control, baseline_metric, dynamic_metric, code_commit, independent_reproduction_status`를 포함한다. 아직 모두 **NOT MEASURED**.
 
 원천·기여 귀속: SEC와 USPTO는 공공 데이터 원천·관리기관이며, Project는 연구 질문·측정설계의 출처만 별도로 표시한다. 제3자의 연구방법을 Project 독창성으로 주장하지 않는다.
+
+
+## 2026-10-09 경쟁가설·측정범위 보정
+비공개 E051 측정 스키마의 기존 사전고정 조건을 반영한다. H0 정적 흐름 충분성, H1 역사 stock의 **부호 제한 없는** 추가 예측력, H2 음의 경로의존, H3 기업 고정 이질성, H4 특허성향/측정기계 설명을 경쟁시킨다. 동일한 특허자료로 H와 Y를 구성할 때 기계적 자기상관을 반드시 점검한다. 동적 예측 개선은 인과적 지식축적이나 전체 혁신의 증거가 아니다.
+
+**외부 원천 확인:** SEC companyfacts는 비표준 기업별 taxonomy 전체를 포함하지 않으며 R&D 태그 부재는 0이 아니다. USPTO PatentsView annualized data는 2025년 12월까지 갱신되었고, 조직명 disambiguation 자체에 측정오류 가능성이 있다. 출처: https://www.sec.gov/search-filings/edgar-application-programming-interfaces ; https://www.uspto.gov/ip-policy/economic-research/patentsview .
+
+**실행상태:** 공식 API와 데이터 제공범위는 문서로 재확인했지만, 기업별 SEC/USPTO 원자료 다운로드·매칭·결측률 산출은 이 작업에서 실행하지 않았다. Phase 0은 계속 NOT EXECUTED이다.
