@@ -2209,3 +2209,6 @@ NIST CFTT supplies an independent conformance framework for deleted-file recover
 - [J축 P/위임 W4 — 최소 수정권·설명 역효과](knowledge/CHOICE_J_PREDICTION_DELEGATION_WAVE_2_2026-10-09_KO.md)
 - [J축 실효 구제 W5 — 항의 장애·절차공정성](knowledge/CHOICE_J_EFFECTIVE_RECOURSE_PRIOR_ART_WAVE_3_2026-10-09_KO.md)
 - [J축 인과식별·반증 매트릭스](knowledge/CHOICE_J_CAUSAL_IDENTIFICATION_TEST_MATRIX_2026-10-09_KO.md)
+
+- [R3 성능·위임·데이터/권력 피드백 선행연구](knowledge/CHOICE_J_R3_FEEDBACK_POWER_PRIOR_ART_2026-10-09_KO.md)
+- [R3 항소·실효 구제 직접 반례](knowledge/CHOICE_J_R3_APPEAL_EFFECTIVENESS_WAVE_2026-10-09_KO.md)
