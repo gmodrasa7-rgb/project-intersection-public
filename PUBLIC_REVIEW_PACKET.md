@@ -22,7 +22,8 @@ This file is the shortest reviewer path through Project Intersection. It does no
 9. [Failure Regression Index](FAILURE_REGRESSION_INDEX.md) — known process/research failures and required regression barriers.
 10. [Attribution & Contribution Boundary](ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md) — founder, AI-assistance, and external-source attribution rules.
 11. [Autonomous Research Continuity](AUTONOMOUS_RESEARCH_LOOP.md) and [state](AUTONOMOUS_RESEARCH_STATE.json) — public recovery path without founder reconstruction.
-12. [Funding due diligence](funding/DUE_DILIGENCE.md) — what support buys and what it does not buy.
+12. [Objectification · cost externalization · threat feedback memo](knowledge/OBJECTIFICATION_COST_FEEDBACK_HYPOTHESIS_2026-10-09_KO.md) — prior-art-bounded hypothesis map separating objectification, exploitation, threat, risk and fear; no new empirical result.
+13. [Funding due diligence](funding/DUE_DILIGENCE.md) — what support buys and what it does not buy.
 
 ---
 
