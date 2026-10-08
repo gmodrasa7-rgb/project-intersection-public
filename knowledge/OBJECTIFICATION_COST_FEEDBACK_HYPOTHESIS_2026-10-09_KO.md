@@ -404,3 +404,39 @@ Emerson에 따라 비대칭을 단일 능력 점수로 대체하지 말고 **A�
 **가장 방어 가능한 잔차:** provenance를 완전히 동일하게 제공하고 ground truth가 알려진 상태에서, 권한배치가 **실제 attribution correction accuracy**에 주는 인과효과를 측정하는 실험.
 
 이 절은 선행연구 감사와 사전설계다. Project의 실증결과가 아니다.
+
+
+## 17. 마지막 잔차 감사: 기여귀속 정확도·재심·권력비대칭 (2026-10-09)
+
+### 17.1 직접 인접 선행연구
+- **Stephen M. Garcia; Avishalom Tor; Tyrone M. Schiff (2013)**, *The Psychology of Competition: A Social Comparison Perspective*, *Perspectives on Psychological Science* **8(6):634–650**, DOI **10.1177/1745691613504114**. 경쟁·평가 맥락이 행위와 판단을 바꾸는 광범위한 선행 틀. '자원배분권이 있는 평가자가 이해관계로 인해 판단을 왜곡할 수 있다'는 일반 아이디어 자체는 신규성이 아니다.
+- **Max H. Bazerman; George Loewenstein; Don A. Moore (2002)**, *Why Good Accountants Do Bad Audits*, *Harvard Business Review* **80(11):96–103, 134**. 감사자의 이해상충과 무의식적 자기편향 문제. 독립성의 필요성을 '악의 없는 편향'과 연결하는 일반 논리 역시 선행연구가 있다.
+- **Don A. Moore; Philip E. Tetlock; Lloyd Tanlu; Max H. Bazerman (2006)**, *Conflicts of Interest and the Case of Auditor Independence: Moral Seduction and Strategic Issue Cycling*, *Academy of Management Review* **31(1):10–29**, DOI **10.5465/amr.2006.19379621**. [Academy of Management 원발행처](https://journals.aom.org/doi/10.5465/amr.2006.19379621). 감사 독립성과 이해상충을 구조적으로 분석. '독립 평가자' 자체의 신규성은 제거.
+- **Francesca Gino; Don A. Moore; Max H. Bazerman (2009)**, *No Harm, No Foul: The Outcome Bias in Ethical Judgments*, HBS Working Paper 계열 및 후속 출판 연구. 결과·이해관계가 판단에 미치는 편향을 다룸. Project에서 평가자의 선의만으로 객관성이 확보된다고 가정하지 않는다.
+
+### 17.2 더 중요한 선행 경계: 기여도 배분 자체의 편향
+공동성과에 대한 개인 기여 평가는 사회심리학의 **egocentric bias / responsibility allocation** 연구와 겹친다. 개인은 공동 결과에서 자신의 기여를 과대평가할 수 있으며, 정보·관점·역할에 따라 책임 배분이 달라질 수 있다. 따라서 '기여귀속 오류가 발생한다'는 현상 자체도 Project 신규성이 아니다.
+
+### 17.3 마지막 잔차를 다시 축소
+기존 H-PA4R에서 다음을 제거한다.
+- 이해상충 평가자가 편향될 수 있음 → 기존 연구.
+- 독립 감사/평가가 필요할 수 있음 → 기존 연구.
+- 공동성과 기여배분이 편향될 수 있음 → 기존 연구.
+- appeal/voice/remedy/enforcement 구별 → 기존 연구.
+
+**잔여 H-PA4RR:**
+> ground-truth contribution log가 모든 평가자에게 동일하게 제공되는 통제된 공동과제에서, **이해상충 평가자와 독립평가자의 객관적 attribution error 차이**가 (a) 실제 정정 집행 가능성과 (b) 평가자의 후속 자원배분권에 의해 상호작용하는지 측정한다.
+
+이것도 **개념적 신규성은 주장하지 않는다.** 가치가 있다면 여러 기존 연구축을 동일한 ground-truth 결과변수로 비교하는 **통합·재현 실험**이다.
+
+### 17.4 신규성 대신 재현·통합 가치로 프레임 변경
+이 시점부터 이 연구축의 성공 기준을 '새 개념 발견'에서 다음으로 변경한다.
+1. 기존 문헌의 서로 다른 결과를 하나의 객관적 attribution-error 지표로 재현 가능한가.
+2. 공정성 인식과 실제 귀속 정확도가 분리되는가.
+3. 독립성·집행력·자원배분권 중 어떤 요소가 보류 데이터에서 추가 예측력을 갖는가.
+4. 아무 요소도 추가 예측력이 없으면 **negative result**로 공개한다.
+
+### 17.5 중단 규칙
+동일한 2×2×2 설계와 ground-truth attribution error를 직접 측정한 고품질 선행연구가 확인되면 독자 실험의 신규성 주장을 중단한다. 그 경우 Project의 역할은 기존 결과의 재현·외적 타당성 검증 또는 다른 미해결 문제로 이동한다.
+
+**현재 판정:** 독창적 이론 후보가 아니라 **선행이론 통합·반증용 실험 후보**. 실험은 아직 수행하지 않았다.
