@@ -203,3 +203,16 @@ Emerson에 따라 비대칭을 단일 능력 점수로 대체하지 말고 **A�
 2(상대 의도 신호: 명확/모호) × 2(방어행동: 공격과 구별 가능/불가) × 2(상대의 실효 이탈·복구권: 있음/없음) 요인설계. **실제 상대 공격 확률과 초기 자원·능력을 고정**한다. 결과는 (i) 반복 라운드별 위협 추정, (ii) 선제 통제 빈도, (iii) 양측 최악 손실, (iv) 독립감사 오류 탐지율, (v) 복구 성공률. Jervis 기준선(공격·방어 구별 가능성)만으로 충분하면 Project 추가 기전의 신규성 주장을 축소한다. 방어 구별성이나 실효 이탈권이 악순환을 완화하면 '상호 위협이 필연적으로 지배를 강화한다'는 강한 가설을 기각한다.
 
 **연구 상태:** 원출처·기존 이론 대조 완료, 실험 미수행. AI가 주관적 공포를 경험한다는 주장은 포함하지 않는다.
+
+
+## 9. 서지 검증·저자 귀속 강화 (2026-10-09)
+
+다음은 **원 발행처·저자 소속기관·논문 저자 공개 저장소**로 저자명, 발행연도, 출처를 교차확인한 항목이다. 인용의 우선권은 해당 연구자에게 있으며 Project의 고유 실증성과로 간주하지 않는다.
+
+| 기전 | 전체 저자(원저자 순서) | 최초 발행·서지·식별자 | 확인 가능한 1차 출처 | Project와의 경계 |
+|---|---|---|---|---|
+| 안전 딜레마 | **John H. Herz** | 1950, *Idealist Internationalism and the Security Dilemma*, *World Politics* 2(2):157–180, DOI **10.2307/2009187** | [Cambridge University Press](https://www.cambridge.org/core/journals/world-politics/article/abs/idealist-internationalism-and-the-security-dilemma/7094783665386FD81A25DF98C7EEC223) | 상대의 방어적 권력 증대가 타자의 불안을 높이는 구조는 Herz의 선행 논의. 인간이 AI를 두려워하는 원인을 직접 실험한 논문은 아님. **1950년 인쇄 출판**과 2011년 온라인 게시를 혼동하지 말 것. |
+| 권력과 객체화 | **Deborah H. Gruenfeld; M. Ena Inesi; Joe C. Magee; Adam D. Galinsky** | 2008, *Power and the Objectification of Social Targets*, *Journal of Personality and Social Psychology* 95(1):111–127, DOI **10.1037/0022-3514.95.1.111** | [Stanford GSB 저자·서지](https://www.gsb.stanford.edu/faculty-research/publications/power-objectification-social-targets), [PubMed](https://pubmed.ncbi.nlm.nih.gov/18605855/) | 권력자가 타인의 목표 유용성을 우선해 접근하는 현상은 여섯 인간 대상 연구의 선행 결과. AI의 심리·자각·필연적 착취까지 확장 불가. |
+| 보상 명세 오류와 보상 해킹 | **Alexander Pan; Kush Bhatia; Jacob Steinhardt** | 2022, *The Effects of Reward Misspecification: Mapping and Mitigating Misaligned Models*, *International Conference on Learning Representations (ICLR)*; 사전공개 arXiv **2201.03544** | [저자 공개 실험 코드·권장 인용](https://github.com/aypan17/reward-misspecification), [논문 원문](https://arxiv.org/abs/2201.03544), [학회 심사 기록](https://openreview.net/forum?id=JYtwGwIL7ye) | 모델 능력·관측 노이즈·훈련 조건과 명세 오류 악용의 관계는 직접 선행. 비용 외부화·객체화·이탈권 결합의 Project 고유 인과 검증은 아님. **arXiv 번호는 DOI와 구별**해 표기. |
+
+**서지 판정 규칙:** (1) 저자 전원과 순서 보존, (2) 인쇄/학회 연도와 웹 게시일 구별, (3) DOI·arXiv·학회 식별자 구분, (4) 직접 검증한 메커니즘과 Project의 외삽을 분리, (5) 원문 미확인 시 '초록/서지 확인'으로 제한, (6) 단일 원안자가 확정되지 않는 분야는 '대표 선행연구'로 표기. 기존 6–8절의 추가 문헌은 이 표가 모두 재검증했다는 뜻이 아니다.
