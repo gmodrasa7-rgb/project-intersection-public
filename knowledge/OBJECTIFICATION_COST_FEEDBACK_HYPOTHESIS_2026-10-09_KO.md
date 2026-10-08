@@ -264,3 +264,24 @@ Emerson에 따라 비대칭을 단일 능력 점수로 대체하지 말고 **A�
 3. **객체화 → 착취 → 위협 → 통제 → 복구손실** 전체 연쇄를 위 논문들이 하나의 실험에서 검증한 것은 아니다.
 4. 원저자 귀속은 저자 순서대로, Project 창시자 귀속은 **통합 문제설정·가설·반증 설계**에 한정한다.
 5. 2013/2017 매개·조절 차이는 **해결된 통계적 사실이 아니라 판본 차이로 확인된 미해결 검증 항목**으로 남긴다.
+
+
+## 13. 직접 반증 문헌과 반복실험을 포함한 우선권 감사 (2026-10-09)
+
+**핵심 정정:** 통제·제재가 상대의 자발성을 훼손한다는 메커니즘은 Project의 독창적 발견이 아니다. 또한 그 효과가 언제나 통제의 실익보다 크다는 주장도 반복실험으로 지지되지 않는다.
+
+| 원저자 순서 / 서지 | 출처·검증 수준 | 실제 결과와 경계 |
+|---|---|---|
+| **Ernst Fehr; Bettina Rockenbach (2003)**, *Detrimental effects of sanctions on human altruism*, *Nature* **422:137–140**, DOI **10.1038/nature01474** | [Nature 발행처·초록](https://www.nature.com/articles/nature01474) | 탐욕스러운 의도를 드러내는 제재는 이타적 협력을 크게 약화시키지만 공정하게 인식된 제재는 그렇지 않음. **제재 자체**와 **제재에서 추론한 의도**를 분리해야 함. 인간 실험이며 AI 일반화 금지. |
+| **Armin Falk; Michael Kosfeld (2006)**, *The Hidden Costs of Control*, *American Economic Review* **96(5):1611–1630**, DOI **10.1257/aer.96.5.1611** | [미국경제학회 발행처·복제자료](https://www.aeaweb.org/articles?id=10.1257/aer.96.5.1611) | 최소 성과 요구라는 통제 선택이 불신·자율성 제한의 신호로 받아들여져 일부 피통제자의 수행이 감소. 통제의 전체 편익은 **비단조적**. |
+| **Anthony Ziegelmeyer; Katrin Schmelz; Matteo Ploner (2012)**, *Hidden costs of control: four repetitions and an extension*, *Experimental Economics* **15(2):323–340** | [발행처 초록](https://link.springer.com/article/10.1007/s10683-011-9305-1), [공개 초록/재게시](https://www.cambridge.org/core/journals/experimental-economics/article/abs/hidden-costs-of-control-four-repetitions-and-an-extension/359691AD3C6B4A51779371AF1A9F9419) | **강한 반례:** 476명 대상 4회 반복에서 통제의 숨은 비용을 대체로 확인했으나, 원 연구와 달리 그 비용이 경제적 유인의 효과를 유의하게 압도하는 경우는 드물었음. 추가 228명 조건은 보수체계를 바꿔 해석해야 함. Cambridge의 **2025 온라인 게시일을 최초 출판연도로 오인 금지**. |
+| **Thomas F. Pettigrew (1979)**, *The Ultimate Attribution Error: Extending Allport's Cognitive Analysis of Prejudice*, *Personality and Social Psychology Bulletin* **5(4):461–476**, DOI **10.1177/014616727900500407** | [SAGE 발행처·초록](https://journals.sagepub.com/doi/10.1177/014616727900500407) | 외집단의 부정적 행동을 내적 성향 탓으로 돌리는 **귀인 편향의 이론적 제안**. 인간의 AI 위협 지각에서 '상대의 방어를 공격 의도로 오인'하는 가설의 인접 선행. AI 공포를 직접 실험한 결과는 아님. |
+
+### 13.1 선행연구를 반영한 판정 변경
+- **폐기할 강한 명제:** '통제권을 행사하면 반드시 협력이 줄고 총후생이 감소한다.' Falk–Kosfeld와 Ziegelmeyer–Schmelz–Ploner의 결과가 그 보편화를 허용하지 않음.
+- **유지할 약한 가설:** 통제 방식·의도 신호·대안·보수체계에 따라 일부 조건에서 자발성/협력 비용이 발생한다.
+- **Project에서 검증할 추가 설명력:** (i) 상대의 실제 이탈·복구권, (ii) 피해 비용의 보상 귀환, (iii) 감사 독립성을 추가할 때, 기존 **통제/불신 신호/보수** 기준선보다 보류 데이터에서 더 나은 예측을 하는가.
+- **인과 분리:** 객관적 위험 R, 인지된 위협 T, 추론된 적대 의도 I, 통제 C, 자발성 V, 실제 손실 L은 별도 측정한다. 공포는 인간의 정서 반응에서만 측정하고 AI에 귀속하지 않는다.
+
+### 13.2 재현 가능 인용 프로토콜
+각 원문에 **원저자 순서·연도·논문명·학술지 권(호)·쪽·DOI·원발행처·증거유형(이론/실험/반복실험)·반례·외삽금지**를 기록한다. 서로 다른 판본(워킹페이퍼/학술지)과 사이트 이관에 따른 온라인 게시일은 별도 필드로 기록한다. 문헌 반복 인용은 독립 연구 수에 더하지 않는다. Project 자체 실험은 이 절에서 수행하지 않았다.
