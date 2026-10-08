@@ -33,3 +33,6 @@ J는 선택을 분류·재평가하는 주체, 정정 경로, 이의제기 가�
 paternalism, relational autonomy, adaptive preferences, epistemic injustice, supported decision-making, substituted judgment, mental integrity, algorithmic paternalism, preference prediction, decision authority, consent capacity, contestability 문헌과 대조하기 전 신규성 주장 금지.
 
 현재: PROJECT RESIDUAL UNRESOLVED.
+
+## 선행성 경고
+[판정권 J축 선행연구](CHOICE_J_AUTHORITY_PRIOR_ART_WAVE_2026-10-09_KO.md)에서 관계적 자율성, 대리/지원결정, 인식적 부정의, 자동화 권력, 이의제기/실질 수정권의 직접 선행을 확인했다. 이 항목을 Project 고유 신규성으로 주장하지 않는다. 포화 0/3.
