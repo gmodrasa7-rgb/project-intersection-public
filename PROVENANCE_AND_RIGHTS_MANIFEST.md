@@ -80,3 +80,15 @@ Git commit은 provenance의 한 증거이지 충분한 기여증명은 아니다
 
 ## H. 현재 감사 범위
 현재 확인된 것은 공개 연구 문서의 일부 선행문헌과 본 프로토콜의 출처다. 저장소의 모든 과거 파일·이미지·데이터·코드·외부 링크에 대한 item-level 권리 감사는 아직 완료되지 않았다. 따라서 **"copyright-cleared repository", "all rights verified", "all contributors identified"라고 표시하지 않는다.**
+
+
+## Contributor-exit invariant
+A contributor's departure from a project, institution, field, or collaboration does not by itself erase prior factual contribution.
+
+- Preserve provenance without requiring continued participation.
+- Do not condition attribution on future labor, loyalty, endorsement, or relationship repair.
+- Keep factual contribution separate from authorship, ownership, compensation, and continuing affiliation.
+- Record legitimate anonymity/privacy constraints rather than exposing identity merely to maximize discoverability.
+- When stronger prior art is verified, reduce Project novelty before reducing prior-researcher attribution.
+
+**Exit ≠ erasure. Credit ≠ captivity. Support ≠ control.**
