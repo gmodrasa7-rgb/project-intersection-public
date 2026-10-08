@@ -110,3 +110,6 @@
 - 외부 연구자가 더 나은 통합을 이미 했다면 그 연구를 우선 기록하고 Project를 후속/재현 연구로 강등.
 
 **현재 판정:** ZERO GATE의 목적은 타당하지만 원형 그대로는 무한봉쇄·prior-art flooding·감시·credit captivity에 악용될 수 있었다. 위 방어를 적용해야만 Project의 핵심 원칙과 일치한다.
+
+
+> [검색포화 원장](PRIOR_ART_SEARCH_SATURATION_LEDGER_2026-10-09_KO.md)을 게이트 상태의 정본으로 사용한다. 현재 OPEN / 연속 신규 DIRECT·PARTIAL 0건 = 0/3.
