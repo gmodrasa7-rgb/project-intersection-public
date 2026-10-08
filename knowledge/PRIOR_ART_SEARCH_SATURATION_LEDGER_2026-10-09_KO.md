@@ -64,3 +64,6 @@ W-CHOICE-2 원장: [원저작자·역사·출처·기여](CHOICE_CAUSAL_AXES_PRI
 | W-CHOICE-3 | 2026-10-09 | 강제의 기준선·choice blindness·실험 다크패턴 | 새 DIRECT/PARTIAL 원전 있음 | 강한 패턴의 반발; 자기보고 불일치 | RESET→0 |
 
 [W3 원저자·원출처·기여](CHOICE_CAUSAL_AXES_PRIOR_ART_WAVE_3_2026-10-09_KO.md).
+| W-CHOICE-4 | 2026-10-09 | 선택맹 정치/도덕 실험·선호형성 방법론·후속 인용 | 신규 DIRECT/PARTIAL 있음 | 스웨덴 2013 vs 아르헨티나 2017 정치 결과 차이 | RESET→0 |
+
+[W4 원저자·원전·반례](CHOICE_CAUSAL_AXES_PRIOR_ART_WAVE_4_2026-10-09_KO.md).
