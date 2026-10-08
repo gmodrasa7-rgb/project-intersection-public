@@ -126,3 +126,6 @@ Project 창시자/현재 AI/현재 관리자는 '무엇이 선행연구인지'�
 ## 8. 악용 방지
 
 [ZERO GATE 악용·우회·착취 위협모델](PRIOR_ART_ZERO_GATE_ABUSE_THREAT_MODEL_2026-10-09_KO.md)을 이 게이트의 필수 보조규칙으로 적용한다. 무한봉쇄, prior-art flooding, provenance surveillance, credit captivity, 검색포화 게임을 허용하지 않는다.
+
+
+> [검색포화 원장](PRIOR_ART_SEARCH_SATURATION_LEDGER_2026-10-09_KO.md)을 게이트 상태의 정본으로 사용한다. 현재 OPEN / 연속 신규 DIRECT·PARTIAL 0건 = 0/3.
