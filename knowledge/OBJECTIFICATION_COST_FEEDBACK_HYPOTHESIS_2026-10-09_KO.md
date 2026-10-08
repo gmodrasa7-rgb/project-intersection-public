@@ -294,3 +294,49 @@ Emerson에 따라 비대칭을 단일 능력 점수로 대체하지 말고 **A�
 - **반증 강도 재평가:** 2012년 결과는 '통제 비용의 존재'를 대체로 반복 확인했지만 '비용이 통제 편익을 언제나 초과한다'는 강한 명제를 지지하지 않았다. 반증 대상은 **보편적 순효과 주장**이지 비용 메커니즘의 존재 자체가 아니다.
 
 **감사 메모:** 위 정정은 기존 기록에 대한 실제 오류 수리다. DOI 오류 발견과 수정 이력을 남겨 향후 자동 검증 대상에 포함한다.
+
+
+## 14. 기여 귀속 × 절차 통제 × 결정 통제: 선행연구 기준선과 잔여 가설 (2026-10-09)
+
+### 14.1 신규성 경계
+다음 요소는 Project 고유 발견으로 주장하지 않는다.
+
+- **과학적 인정의 누적우위:** Robert K. Merton (1968), *The Matthew Effect in Science*, *Science* 159(3810):56–63, DOI **10.1126/science.159.3810.56**.
+- **발견 우선권과 구조적 불평등:** Hannah Rubin; Mike D. Schneider (2021), *Priority and Privilege in Scientific Discovery*, *Studies in History and Philosophy of Science Part A* 89:202–211, DOI **10.1016/j.shpsa.2021.08.005**.
+- **저자권·인용 조작:** Eric A. Fong; Allen W. Wilhite (2017), *Authorship and Citation Manipulation in Academic Research*, *PLOS ONE* 12(12):e0187394, DOI **10.1371/journal.pone.0187394**.
+- **절차 통제(process control)와 결정 통제(decision control)의 분리:** Pauline Houlden; Stephen LaTour; Laurens Walker; John Thibaut (1978), *Preference for Modes of Dispute Resolution as a Function of Process and Decision Control*, *Journal of Experimental Social Psychology* 14(1):13–30, DOI **10.1016/0022-1031(78)90057-4**.
+- **발언권(voice)과 절차적 공정성:** E. Allan Lind; Ruth Kanfer; Paul C. Earley (1990), *Voice, Control, and Procedural Justice*, *Journal of Personality and Social Psychology* 59(5):952–959, DOI **10.1037/0022-3514.59.5.952**.
+- **AI 결정에 대한 contestation:** Margot E. Kaminski; Jennifer M. Urban (2021), *The Right to Contest AI*, *Columbia Law Review* 121:1957–2048. [원문](https://columbialawreview.org/content/the-right-to-contest-ai/).
+
+### 14.2 Project가 아직 주장할 수 없는 것
+- 출처표시만으로 착취가 감소한다.
+- 발언권만으로 실제 배분 결과가 공정해진다.
+- 독립 재심이 언제나 중앙 평가보다 정확하다.
+- provenance 보존이 권력집중을 자동 억제한다.
+- 인간의 절차적 공정성 결과가 AI↔AI 또는 인간↔AI 관계에 그대로 일반화된다.
+
+### 14.3 잔여 결합가설
+선행연구의 단일 요소를 재발견하는 대신 다음 **상호작용의 추가 설명력**만 검증 대상으로 둔다.
+
+**H-PA1:** 기여 provenance가 정확해도 최종 평가·집행권이 단일 강자에게 집중되면 객관적 기여귀속 오류와 성과배분 왜곡이 잔존할 수 있다.
+
+**H-PA2:** voice/contestation은 절차적 공정성 인식을 개선할 수 있으나, 독립 재심과 집행 가능성이 없으면 실제 정정 성공률은 크게 개선되지 않을 수 있다.
+
+**H-PA3:** 독립 재심의 효과는 권력비대칭, 이의제기 비용, 보복 위험, 증거 접근성에 의해 조절될 수 있다.
+
+**H-PA4:** provenance + contestation + independent review의 결합이 각 요소 단독보다 실제 귀속오류·복구비용·협력 지속성에 추가 예측력을 제공하는지는 미검증이다.
+
+### 14.4 최소 반증 설계
+요인설계 후보:
+- provenance: 없음 / 정확
+- voice·contestation: 없음 / 있음
+- review: 원평가자 / 독립평가자
+- enforcement: 권고만 / 정정 집행 가능
+- power asymmetry: 낮음 / 높음
+
+**주요 종속변수:** (1) 실제 기여귀속 오차, (2) 성과배분 오차, (3) 정정 성공률, (4) 이의제기 비용, (5) 보복/불이익률, (6) 반복 협력률, (7) 독립 복구비용.
+
+**핵심 반증:** provenance만으로 결과가 충분히 개선되거나, 독립 review/enforcement가 추가 설명력을 전혀 제공하지 않으면 H-PA2~4를 약화 또는 폐기한다. 반대로 공정성 '인식'만 좋아지고 객관적 배분·정정 결과가 개선되지 않으면 voice의 효과를 실질 보호로 확대해석하지 않는다.
+
+### 14.5 현재 상태
+이 절은 **선행연구 crosswalk + 사전 가설**이다. Project 자체 실험결과가 아니며 신규성도 확정하지 않는다. 다음 단계는 동일한 결합효과를 이미 직접 검증한 조직행동·절차적 정의·분쟁해결·알고리즘 거버넌스 연구가 있는지 추가 검색한 뒤, 남는 잔차에 대해서만 실험을 수행하는 것이다.
