@@ -283,3 +283,69 @@ Project 문서에서 **NO PRIOR ART FOUND YET를 ORIGINAL로 자동 승격하지
 7. Project가 잘못 주장한 신규성을 스스로 축소할 수 있는 외부감사 가능성.
 
 **복구된 기여자를 Project의 소유·회원·지지자로 취급하지 않는다.**
+
+
+## K. 논문 저자 밖의 선행 기여자: 데이터·소프트웨어·기술·유지보수
+
+### K1. FORCE11 Data Citation Synthesis Group
+- 원성과: *Joint Declaration of Data Citation Principles* (2014).
+- DOI: **10.25490/a97f-egyk**
+- 핵심기여: 데이터는 연구의 정당한 산출물이며 인용은 credit와 attribution을 제공해야 하고, 데이터 인용은 인간과 기계가 식별·접근 가능해야 한다는 원칙.
+- Project 의존: 논문 저자만이 아니라 데이터 생성자·관리자의 provenance를 별도 보존하는 직접 선행기반.
+- Project novelty 효과: 데이터 기여의 독립적 citation/credit 원칙은 신규 아님.
+
+### K2. Arfon M. Smith · Daniel S. Katz · Kyle E. Niemeyer · FORCE11 Software Citation Working Group
+- 원성과: *Software Citation Principles* (PeerJ Computer Science 2:e86, 2016).
+- DOI: **10.7717/peerj-cs.86**
+- 핵심기여: 소프트웨어를 연구 산출물로 인정하고 credit/attribution, unique identification, persistence, accessibility, specificity 원칙 제시.
+- Project 의존: 코드 작성·유지보수 기여를 논문 acknowledgement로만 축소하지 않는 근거.
+- Project novelty 효과: software provenance/credit 원칙은 선행영역.
+
+### K3. NISO CRediT
+- 표준: **ANSI/NISO Z39.104-2022, CRediT**
+- 선행 원안자 계보는 G2에 기록.
+- 14개 역할에는 Conceptualization, Data curation, Formal analysis, Funding acquisition, Investigation, Methodology, Project administration, Resources, Software, Supervision, Validation, Visualization, Writing–original draft, Writing–review & editing이 포함된다.
+- **중요한 한계:** taxonomy는 누가 실제로 기여했는지 자동 발견하지 않으며 authorship·보상액을 결정하는 알고리즘도 아니다.
+- Project 의존: factual contribution role과 authorship/value/allocation 분리.
+
+### K4. All Contributors / 비저자 기여의 역사
+의학·학술출판의 contributorship 논의는 CRediT보다 오래되었다. 따라서 CRediT을 '최초 기여역할 개념'으로 쓰지 않는다. 저자자격의 모호성, guarantor/contributor 모델, acknowledgement와 authorship의 경계에 관한 선행 논의를 추가 탐색 대상으로 유지한다.
+
+## L. Invisible-contribution audit matrix
+각 Project claim/산출물에서 다음 기여유형의 존재 여부를 묻는다.
+
+| 기여유형 | 결과물에서 쉽게 사라지는 경로 | 복구증거 후보 |
+|---|---|---|
+| 문제 최초 발견 | 후대 용어로 재명명 | 날짜 있는 초안·메일·노트·보고서 |
+| 반례/오류 발견 | 최종 성공서사에서 삭제 | issue·review·수정 diff |
+| 데이터 생성 | 논문 저자와 분리 | dataset DOI·lab record·metadata |
+| 데이터 정제 | '단순 작업'으로 축소 | pipeline·curation log |
+| 소프트웨어 | 논문 citation 누락 | commit·release·SWHID·CITATION.cff |
+| 실험/기술지원 | acknowledgement만 남음 | protocol·instrument/log |
+| 검증/재현 | 원논문 중심 서사 | replication record·review |
+| 유지보수 | 신규성 없는 노동으로 간주 | issue/patch/release history |
+| 번역/접근성 | 원내용 생성이 아니라는 이유로 누락 | version/translator record |
+| 프로젝트 관리 | 산출물 직접작성 아님 | project history |
+| 실패한 탐색 | 최종 경로에서 제거 | negative-result log |
+| 정정/철회 기여 | 오류를 만든 사람만 기록 | correction provenance |
+
+이 표는 기여를 자동 인정·보상하는 체크리스트가 아니다. **누락 가능성이 높은 위치를 찾는 감사도구**다.
+
+## M. 기여자 발굴의 권력역전 테스트
+각 기록체계에 대해:
+1. PI/관리자만 기여기록을 수정할 수 있는가?
+2. 기여자는 자신의 기록을 볼 수 있는가?
+3. 이의제기 시 원자료가 보존되는가?
+4. 관계 종료 후에도 정정경로가 존재하는가?
+5. 최종 저자명단에 없는 사람을 검색할 수 있는가?
+6. 지원/보상 결정자가 provenance도 독점하는가?
+7. 독립 감사자가 변경 전후를 비교할 수 있는가?
+8. 개인정보 보호를 이유로 필요한 provenance까지 삭제하는가, 또는 provenance를 이유로 불필요한 개인정보를 노출하는가?
+
+**양쪽 실패를 모두 기록한다:** 과소기록(기여소실)과 과잉기록(감시/프라이버시 침해).
+
+## N. 원연구자 존중의 최소 출력형식
+Project가 선행연구를 이용할 때 가능한 경우 최소:
+**원저자 전체 이름 → 연도 → 원제목 → 원출처/DOI → 그들이 실제로 한 기여 → Project가 가져온 부분 → Project와 다른 부분/반례 → 판본·정정 상태**.
+
+'관련 연구가 있다'는 표현만으로 원연구자를 배경으로 밀어내지 않는다. 동시에 저자의 논문이 말하지 않은 가치판단·정치적 입장·Project 지지를 저자에게 귀속하지 않는다.
