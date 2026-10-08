@@ -15,19 +15,23 @@ This file is the shortest reviewer path through Project Intersection. It does no
 
 ## 1. Ten-minute review path / 10분 검토 경로
 
-1. [README](README.md) — project purpose and hard limits.
-2. [Public Evidence Index](PUBLIC_EVIDENCE_INDEX.md) — what is publicly checkable now.
-3. [Knowledge Graph Explorer](knowledge/explorer.html) — structured entity/relation view; linked source artifacts remain authoritative.
-4. [E007 timing result](E007_TIMING_RESULT.md) and [reproduction package](experiments/e007/README.md) — narrow executable synthetic result.
-5. [E008 preregistration](experiments/e008/README.md) — discriminating benchmark specification plus pre-execution mutual-acceptability v1.1 and volitional-agency/living-condition v1.2 amendments; no result yet.
-6. [E009 negative result](experiments/e009/RESULT.md) and [reproduction verifier](experiments/e009/verify_result.py) — the full Project-v3 residual did not survive the preregistered synthetic comparison; not independent validation.
-7. [Research Status & Reassessment Policy](RESEARCH_STATUS_POLICY.md) — evidence classes, reassessment, and non-laundering rules.
-8. [Prior Art & Attribution](PRIOR_ART_AND_ATTRIBUTION.md) and [Core/Gaps Crosswalk](CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md) — what is prior art and what remains unresolved.
-9. [Failure Regression Index](FAILURE_REGRESSION_INDEX.md) — known process/research failures and required regression barriers.
-10. [Attribution & Contribution Boundary](ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md) — founder, AI-assistance, and external-source attribution rules.
-11. [Autonomous Research Continuity](AUTONOMOUS_RESEARCH_LOOP.md) and [state](AUTONOMOUS_RESEARCH_STATE.json) — public recovery path without founder reconstruction.
-12. [Objectification · cost externalization · threat feedback memo](knowledge/OBJECTIFICATION_COST_FEEDBACK_HYPOTHESIS_2026-10-09_KO.md) — prior-art-bounded hypothesis map separating objectification, exploitation, threat, risk and fear; no new empirical result.
-13. [Funding due diligence](funding/DUE_DILIGENCE.md) — what support buys and what it does not buy.
+1. [공개 연구 3분 검토](PUBLIC_START_HERE_KO.md) — 현재 공개 증거·실패·비공개 경계를 먼저 확인.
+2. [README](README.md) — project purpose and hard limits.
+3. [Public Evidence Index](PUBLIC_EVIDENCE_INDEX.md) — what is publicly checkable now.
+4. [Knowledge Graph Explorer](knowledge/explorer.html) — structured entity/relation view; linked source artifacts remain authoritative.
+5. [E007 timing result](E007_TIMING_RESULT.md) and [reproduction package](experiments/e007/README.md) — narrow executable synthetic result.
+6. [E008 preregistration](experiments/e008/README.md) — discriminating benchmark specification plus pre-execution mutual-acceptability v1.1 and volitional-agency/living-condition v1.2 amendments; no result yet.
+7. [E009 negative result](experiments/e009/RESULT.md) and [reproduction verifier](experiments/e009/verify_result.py) — the full Project-v3 residual did not survive the preregistered synthetic comparison; not independent validation.
+8. [Research Status & Reassessment Policy](RESEARCH_STATUS_POLICY.md) — evidence classes, reassessment, and non-laundering rules.
+9. [Prior Art & Attribution](PRIOR_ART_AND_ATTRIBUTION.md) and [Core/Gaps Crosswalk](CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md) — what is prior art and what remains unresolved.
+10. [Failure Regression Index](FAILURE_REGRESSION_INDEX.md) — known process/research failures and required regression barriers.
+11. [Attribution & Contribution Boundary](ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md) — founder, AI-assistance, and external-source attribution rules.
+12. [Autonomous Research Continuity](AUTONOMOUS_RESEARCH_LOOP.md) and [state](AUTONOMOUS_RESEARCH_STATE.json) — public recovery path without founder reconstruction.
+13. [Objectification · cost externalization · threat feedback memo](knowledge/OBJECTIFICATION_COST_FEEDBACK_HYPOTHESIS_2026-10-09_KO.md) — prior-art-bounded hypothesis map separating objectification, exploitation, threat, risk and fear; no new empirical result.
+14. [J effective-correction synthetic failure](knowledge/J_EFFECTIVE_SYNTHETIC_FALSIFICATION_V01_2026-10-09_KO.md) — metric failure and model-dependence preserved; no empirical claim.
+15. [Private↔public deep crosswalk](PRIVATE_PUBLIC_RESEARCH_CROSSWALK_2026-10-09_KO.md) — E044–E051 lineage and disclosure/evidence boundaries.
+16. [E051 Phase-0 empirical gate](experiments/E051_PUBLIC_PHASE0_DATA_VIABILITY_KO.md) — source/measurement/entity-resolution/leakage gates; not executed.
+17. [Funding due diligence](funding/DUE_DILIGENCE.md) — what support buys and what it does not buy.
 
 ---
 
