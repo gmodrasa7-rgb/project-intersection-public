@@ -235,3 +235,14 @@ Emerson에 따라 비대칭을 단일 능력 점수로 대체하지 말고 **A�
 - **통계 용어 주의**: ‘매개’와 ‘조절’은 서로 다른 가설이다. 원문 모형을 재확인하기 전에는 두 판본의 차이를 미해결로 유지.
 - **근거 등급**: 발행처 서지·초록 대조 = 서지/초록 검증. 전문·원자료 재분석, 외부 복제, Project의 독립 실험과 구분.
 - **Project 잔차**: 위협 → 통제 경직, 안보 딜레마, 착취 거부는 각각 기존 선행연구. 이탈·복구·감사권·비용 귀환의 추가 설명력은 미검증.
+
+
+## 11. 독립 원출처 대조 감사: 통계·저자·서지 (2026-10-09)
+
+**감사 범위:** 출판사·원 논문 저장소의 공개 서지 및 초록. 모든 본문·원자료를 재분석한 것은 아니다.
+
+1. **Carpenter, Jeffrey P.; Dolifka, David (2013/2017)** — *Exploitation Aversion: When Financial Incentives Fail to Motivate Agents*. [2013 IZA DP 7499 원문](https://docs.iza.org/dp7499.pdf), [2017 학술지 원문·초록](https://www.sciencedirect.com/science/article/pii/S0167487016306158), DOI **10.1016/j.joep.2017.04.006**. **서지/초록 수준에서 확인된 불일치:** 2013년 초록은 착취 회피 척도가 실험효과를 *조절(moderates)*한다고 쓰고, 2017년 초록은 *매개(mediates)*한다고 쓴다. 두 효과는 통계적으로 동일하지 않다. **원문 모형·데이터를 비교하기 전에는 어느 효과가 재현되었는지 단정하지 않는다.** 2017 DOI를 2013 DP에 소급 귀속하지 않는다.
+2. **Staw, Barry M.; Sandelands, Lance E.; Dutton, Jane E. (1981)** — *Threat Rigidity Effects in Organizational Behavior: A Multilevel Analysis*. *Administrative Science Quarterly* **26(4):501–524**, DOI **10.2307/2392337**, [JSTOR 발행처](https://www.jstor.org/stable/2392337). **원발행처 표기 'Lance E. Sandelands' 우선.** 일부 저자 프로필/재게시처의 'Lloyd Sandelands'와 불일치하므로 논문 서지 인용에서는 원발행처를 따른다. 문헌은 다층 이론·근거 검토로, Project의 AI 실험 증거가 아니다.
+3. **Jervis, Robert (1978)** — *Cooperation under the Security Dilemma*. *World Politics* **30(2):167–214**, DOI **10.2307/2009958**, [Cambridge 원발행처](https://www.cambridge.org/core/journals/world-politics/article/abs/cooperation-under-the-security-dilemma/C8907431CCEFEFE762BFCA32F091C526). 출판연도는 1978년이며 웹 게시연도와 구별. **방어 우위와 공격/방어 구별성**은 안보 딜레마 완화의 직접 선행 조건이다.
+
+**정정 우선순위:** 저자 정체성 추정으로 원발행처 서지를 덮어쓰지 않음 > 매개/조절 혼용 금지 > 선공개와 정식출판 구분 > DOI 귀속 정확성 > AI 분야로의 외삽 제한. 기존 10절은 유지하되 이 절의 검증 주석을 우선 적용한다.
