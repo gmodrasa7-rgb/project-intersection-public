@@ -60,3 +60,7 @@ W5: **비영어권·학위논문·기술보고서·조직연구에서 provenance
 | W-CHOICE-2 | 2026-10-09 | 원전: 동의/조종 역사, 적응적 선호, 심리적 반발, 설득 기술·다크패턴 | 다수(신규 직접/부분 원전 존재, 전체 중복제거 미완료) | Mathur 2019 분류 정정 확인 | RESET→0 |
 
 W-CHOICE-2 원장: [원저작자·역사·출처·기여](CHOICE_CAUSAL_AXES_PRIOR_ART_WAVE_2_2026-10-09_KO.md). 기존 W-CHOICE-1과 별개 검색축. 검색포화 0/3.
+
+| W-CHOICE-3 | 2026-10-09 | 강제의 기준선·choice blindness·실험 다크패턴 | 새 DIRECT/PARTIAL 원전 있음 | 강한 패턴의 반발; 자기보고 불일치 | RESET→0 |
+
+[W3 원저자·원출처·기여](CHOICE_CAUSAL_AXES_PRIOR_ART_WAVE_3_2026-10-09_KO.md).
