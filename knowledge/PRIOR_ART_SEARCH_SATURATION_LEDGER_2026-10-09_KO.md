@@ -71,3 +71,7 @@ W-CHOICE-2 원장: [원저작자·역사·출처·기여](CHOICE_CAUSAL_AXES_PRI
 | W-CHOICE-J1 | 2026-10-09 | J 판정권: 관계적 자율성·인식적 부정의·지원/대리결정·AI contestability | 새 DIRECT/PARTIAL 있음 | 2022 contestability framework는 J축 일반론의 직접 선행 | RESET→0 |
 
 [J축 선행연구 원저작자·역사](CHOICE_J_AUTHORITY_PRIOR_ART_WAVE_2026-10-09_KO.md).
+
+| W-CHOICE-J2 | 2026-10-09 | 온정주의·결정능력·역사적 자율성·meaningful human control·컴퓨터 편향 | 신규 DIRECT/PARTIAL 있음 | 복지↔자율성, 현재승인↔형성역사의 긴장 확인 | RESET→0 |
+
+[J축 W2 원저작자·역사](CHOICE_J_AUTHORITY_PRIOR_ART_WAVE_2_2026-10-09_KO.md).
