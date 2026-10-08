@@ -134,3 +134,6 @@ The highest-value external upgrades are:
 - MINIMAL_4VAR: **0.065323**.
 - Project-v3 regret was **42.35% worse than the best simple comparator** under the preregistered comparison.
 - Result class: **PROJECT_RERUN / SYNTHETIC_RESULT**, not independent validation.
+
+
+> **독립 재구현 경로:** [E045–E050 공개 독립 재구현 사양](experiments/E045_E050_INDEPENDENT_PUBLIC_REIMPLEMENTATION_SPEC_KO.md) — 비공개 코드·수치에 맞추지 않고 choice rule·feedback·초기조건·개입시점을 바꿔 합성 반례의 모델 의존성을 공격합니다. 아직 공개 실행결과 없음.
