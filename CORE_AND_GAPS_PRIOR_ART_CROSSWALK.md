@@ -12,6 +12,14 @@ This file records earlier or adjacent work for concepts already present in the p
 
 "원안자"를 단일 인물로 확정하기 어려운 성숙 학문은 억지로 한 사람에게 귀속하지 않고 대표적·기초적 선행연구로 표기한다.
 
+### Epistemic handling of prior work / 선행연구의 인식론적 처리
+
+선행연구는 정답·상위진실이 아니라 검증 대상인 evidence lineage로 취급한다. 인용수, 기관 명성, 표준 채택, 컨센서스, 메타분석이라는 이유만으로 참으로 승격하지 않는다.
+
+각 선행연구는 가능하면 다음을 분리해 기록한다: (1) 실제 관측·원자료, (2) 저자의 해석, (3) 미검증 가정, (4) 자금·산업·정책 이해상충, (5) 데이터·모델·기관 계보, (6) 독립 재현 여부, (7) 반대 결과·철회·수정·논쟁, (8) 표본·측정·분석 자유도와 출판편향 가능성. 같은 기관·데이터·모델 계보의 반복은 독립 재현으로 세지 않는다.
+
+역사적으로 산업후원·로비·선택적 출판·권위 효과 때문에 널리 유통된 연구가 뒤늦게 수정되거나 반박된 사례가 있으므로, Project는 선행문헌을 효율·사례·귀속을 위한 입력으로 사용하되 자체 검증을 생략하는 면허로 사용하지 않는다. `prior art != truth`, `citation count != validity`, `institutional prestige != independence`, `consensus != independent replication`, `standard != empirical proof`를 유지한다.
+
 ## 1. Core theory families / 핵심 이론군
 
 | Project section | Prior-art relationship | Originator / seminal prior work | Source | Attribution / novelty boundary |
