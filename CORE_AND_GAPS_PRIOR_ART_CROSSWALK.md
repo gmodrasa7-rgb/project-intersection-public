@@ -1195,6 +1195,88 @@ alternative resources
 6. 초기 우위가 diminishing return으로 안정화되는 경우와 tipping-point/hysteresis로 넘어가는 경우의 판별변수.
 7. self-reinforcing concentration이 실제 장기 효율을 높이는 경우와 장기 탐색공간을 파괴하는 경우를 가르는 조건.
 
+### Counter-convergence and escape dynamics / 반수렴·탈출 동역학
+
+집중·lock-in 쪽 문헌만 보면 연구가 한 방향으로 편향될 수 있으므로, **수렴을 깨는 메커니즘**도 별도 선행연구 축으로 둔다.
+
+#### 1. Exploration versus exploitation
+
+- James G. March (1991), DOI 10.1287/orsc.2.1.71은 exploitation이 exploration보다 더 빠르게 단기효율을 개선할 수 있지만, 그 적응과정이 장기적으로 self-destructive해질 수 있음을 모델링했다.
+- 핵심 재사용점: 단기 성과 상승이 장기 탐색능력 감소와 동시에 일어날 수 있다는 구조.
+- Project 연결: 현재 경로의 성과 증가와 option-space·independent search 감소를 반드시 동시에 측정한다.
+
+**반수렴 후보:**  
+`preserved exploration capacity + independent search + delayed irreversible commitment → lock-in pressure ↓`
+
+#### 2. Rugged landscapes and local adaptation
+
+- Daniel Levinthal (1997), DOI 10.1287/mnsc.43.7.934은 상호작용이 큰 rugged landscape에서 시작점이 장기형태에 지속적 영향을 주며, tightly coupled 조직은 환경변화에 취약할 수 있음을 모델링했다.
+- 핵심 재사용점: local optimum과 path dependence를 구분하고, coupling 강도가 적응가능성을 바꾼다는 점.
+- Project 연결: option-space의 수뿐 아니라 **대안 간 독립성·coupling·복구가능성**을 측정해야 한다.
+
+**반수렴 후보:**  
+`lower coupling + viable alternative paths + local adaptation capacity → catastrophic lock-in risk ↓`
+
+#### 3. Threshold and cascade reversal
+
+- Mark Granovetter (1978), DOI 10.1086/226707은 개인의 threshold 분포가 집단결과를 비선형적으로 바꿀 수 있음을 보여주며, 비슷한 평균 선호를 가진 집단도 전혀 다른 집단수준 결과를 만들 수 있다고 지적했다.
+- 핵심 재사용점: 집단수렴을 개별 actor의 동일 의도나 합의로 역추론하면 안 됨.
+- Project 연결: 비대칭·통제 수렴이 보이더라도 "모두가 그것을 원했다"는 해석을 배제하고 threshold distribution과 cascade 구조를 별도 추적한다.
+
+**반수렴 후보:**  
+`small change in threshold distribution / visible independent defections / alternative signal → cascade can break`
+
+#### 4. Exit is necessary but not sufficient
+
+- Hirschman 계열과 Dowding et al. (2000), DOI 10.1023/A:1007134730724는 exit·voice·loyalty 관계가 단순하지 않음을 보여준다.
+- competition이 커져 exit가 쉬워져도 voice가 자동 강화되는 것은 아니며, exit가 voice를 약화시킬 수도 있다.
+- Project 연결: `practical exit`를 단일 해결책으로 두지 않고 **exit + voice + recovery + comparator preservation**의 결합으로 본다.
+
+**반수렴 후보:**  
+`practical exit + effective voice + independent recovery + surviving comparators → concentration correction capacity ↑`
+
+#### 5. 현재 문헌들의 양방향 수렴
+
+선행연구들을 한 상태전이 언어로 바꾸면 두 방향이 동시에 나타난다.
+
+**집중 방향**
+
+```
+short-term exploitation
++ initial advantage
++ dependence
++ switching cost
++ positive feedback
++ institutionalization
++ social proof
++ comparator loss
+→ self-reinforcing concentration
+```
+
+**탈출/복구 방향**
+
+```
+exploration preservation
++ lower coupling
++ independent alternatives
++ practical exit
++ effective voice
++ independent recovery
++ surviving comparators
++ countervailing information
+→ concentration can stall, reverse, or remain bounded
+```
+
+따라서 Project의 핵심 검증대상은 "집중이 생기는가" 하나가 아니다.
+
+더 중요한 질문은:
+
+1. 어떤 조합에서 집중이 **self-reinforcing**해지는가?
+2. 어떤 조합에서 같은 초기 비대칭이 **bounded** 상태로 멈추는가?
+3. 어떤 개입이 실제로 option-space와 falsifiability를 복구하는가?
+4. 어떤 경우에는 분산이 오히려 조정실패·중복비용·안전저하를 만드는가?
+5. exploration을 얼마나 유지해야 장기 적응성이 올라가며, 그 비용은 누가 부담하는가?
+
 ### Project-added integration and unresolved candidates
 
 After integrating prior work and preserving its attribution, the strongest unvalidated Project-added combinations or unresolved candidates are:
