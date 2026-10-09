@@ -1697,3 +1697,124 @@ Does source:
 `PRIOR_ART_FIRST_ORDER_SATURATED`
 
 후에도 반례·왜곡·측정·신규 실증은 계속 추적한다.
+
+
+---
+
+## 22. 여섯 번째 포화확장: 다양성·veto의 비단조 경계
+
+이번 라운드는 안전공학·생태 resilience·헌정 veto 구조를 독립 분야로 탐색해
+새 1차 causal edge가 추가되는지 검사했다.
+
+### AS. response diversity / redundancy의 효과는 단조롭지 않음
+
+대표:
+- Mori et al. (2013), response diversity review, DOI 10.1111/brv.12004
+- Biggs et al. (2020), functional redundancy meta-analysis, DOI 10.1002/ecs2.3184
+- Folke et al. (2004), regime shifts and resilience, DOI 10.1146/annurev.ecolsys.35.021103.105711
+- 2024 response-diversity critique, DOI 10.1111/1440-1703.12434
+
+핵심:
+response diversity와 redundancy가 resilience를 높일 수 있다는 이론·사례가 있지만,
+경험적 효과는 이질적이고 일부 분석에서는 음의 효과도 나타난다.
+response diversity가 stability에 직접 연결된다는 강한 경험적 근거는 여전히 제한적이라는 비판도 있다.
+
+Project 판정:
+
+```
+nominal diversity ↑
+!= effective response diversity ↑
+!= resilience automatically ↑
+```
+
+필요 측정:
+- lineage independence
+- response correlation under shared shock
+- recovery-path diversity
+- functional substitutability
+- coordination cost
+
+기존 매핑:
+K7 `CORRELATED-INDEPENDENCE FAILURE` + K8 `CAPABILITY–OVERSIGHT GAP`.
+
+새 1차 causal edge: 없음.
+대신 "다양성은 많을수록 좋다"라는 단조 가정을 약화한다.
+
+---
+
+### AT. veto player는 보호장치이자 정책개발 마찰일 수 있음
+
+대표:
+- Tsebelis 계열 veto-player theory
+- Hirsch & Shotts (2026), *Veto Players and Policy Development*
+
+최근 이론은 veto player의 위치가
+단순히 "veto 수 증가 → gridlock 증가"만으로 설명되지 않을 수 있음을 보여준다.
+일부 조건에서는 비교적 온건한 veto player가 정책제안의 질·위치를 바꾸는 유인을 만들 수 있고,
+매우 극단적인 veto 구조는 정책개발 자체를 중단시키는 방향으로 작동할 수 있다.
+
+Project 연결:
+
+```
+countervailing authority ↑
+→ capture resistance may ↑
+but
+→ proposal/search/correction cost may also ↑
+```
+
+따라서 control decentralization도 비단조 함수로 둔다.
+
+```
+NetCorrectionCapacity =
+  CaptureResistanceGain
+- CoordinationCost
+- DecisionLatency
+- VetoParalysisRisk
+```
+
+기존 매핑:
+K2 lock-in / 기존 veto-paralysis 경계 / K8 oversight capacity.
+
+새 1차 causal edge: 없음.
+새 경계조건: veto 강도와 위치에 따른 비선형 효과.
+
+---
+
+### AU. 안전공학의 중앙집중/분산 긴장은 기존 커널로 충분히 설명됨
+
+Normal Accident / High Reliability 계열을 추가 확인했으나,
+이번 라운드에서는 기존:
+
+```
+complexity ↑ → local expertise/delegation value ↑
+tight coupling ↑ → rapid coordination/centralization value ↑
+```
+
+의 긴장을 넘어서는 새 1차 edge는 확인하지 못했다.
+
+판정:
+`DUPLICATE_SUPPORT / NO NEW FIRST-ORDER EDGE`
+
+---
+
+## 23. 여섯 번째 라운드 포화 판정
+
+```
+NEW_FIRST_ORDER_CAUSAL_EDGES = 0
+NEW_EDGE_REVERSALS = 0
+NEW_NONLINEAR_BOUNDARIES = 2
+NEW_SCOPE-CHANGING_COUNTEREXAMPLES = 1
+NEW_CORE_MEASUREMENTS = 2
+```
+
+구조적 delta:
+- diversity/resilience 효과의 비단조성·이질성 강화
+- veto player의 보호/마찰 양면성 강화
+- nominal diversity와 effective response diversity 분리
+
+상태:
+
+`FIRST CLEAR ZERO-FIRST-ORDER ROUND`
+
+아직 포화 선언 금지.
+현재 규칙상 넓은 독립 분야에서 3회 연속 zero-first-order가 필요하다.
