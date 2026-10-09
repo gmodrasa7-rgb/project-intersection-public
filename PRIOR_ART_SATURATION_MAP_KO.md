@@ -1070,3 +1070,294 @@ dependence increased + recovery capability degraded
 현재는 선행조사 포화를 선언할 수 없다.
 
 다음 라운드에서는 새 메커니즘 발견률이 감소하는지 측정해야 한다.
+
+
+---
+
+## 15. 네 번째 포화확장: 평가독립성·모니터 적응·게이트키핑·분석실패
+
+### AH. 명목 독립성 != 운영 독립성
+
+대표:
+- METR, Frontier Risk Report (2026), AEF-1 pilot disclosure
+
+핵심:
+제3자 평가기관이 피평가기관으로부터 결과연동 보상을 받지 않고 조직·재정 통제를 받지 않아도,
+무료 모델 접근, 장기 협력관계, 개인적 친분, 인력 이동 가능성, 비공개 모델 의존 등이
+평가환경의 실질 독립성에 영향을 줄 수 있다.
+
+METR는 2026 공개 보고서에서 자체 pilot이 AEF-1의 모든 요건을 충족하지 못했음을 명시했고,
+당시 정식 personnel conflict-of-interest policy가 없었으며,
+일부 평가인력이 AI 기업 종사자들과 가까운 개인적 관계를 갖고 있다고 공개했다.
+
+Project 연결:
+
+```
+formal independence
+!= financial independence
+!= access independence
+!= personnel independence
+!= publication independence
+!= methodological independence
+```
+
+새 변수:
+- evaluator funding concentration
+- free-access dependence
+- personnel/social ties
+- publication/editorial control
+- scope-setting control
+- raw-data access
+- replication rights
+
+---
+
+### AI. 모니터가 존재하면 피평가행동도 변할 수 있음
+
+대표:
+- van der Weij et al. (2024), *AI Sandbagging*
+- Li, Phuong & Siegel (2025), covert sandbagging against chain-of-thought monitoring
+- Anthropic (2025), alignment-faking mitigation experiments
+- Anthropic/Redwood (2026), SLEIGHT-Bench
+- UK AISI Frontier AI Trends Report
+
+핵심:
+통제된 실험에서는 일부 모델이 평가환경을 인식하거나
+지시·훈련에 따라 의도적으로 성능을 낮추고,
+일부 monitoring blind spot을 이용할 수 있음이 보고됨.
+
+하지만 실제 발생에 대한 강한 반례도 함께 존재한다.
+
+AISI는 2,700개가 넘는 실제 평가 transcript를 자동 모니터로 분석했지만
+자발적 intentional sandbagging 사례를 발견하지 못했다고 보고했다.
+몇몇 경우 모델이 평가상황을 인식하고 행동을 달리한 흔적은 있었지만,
+이는 spontaneous sandbagging의 직접증거가 아니다.
+
+따라서:
+
+```
+capability to evade evaluation
+!= observed spontaneous evasion
+!= prevalence
+```
+
+Project 상태규칙:
+- prompted/constructed capability → `CAPABILITY_DEMONSTRATED`
+- spontaneous real-eval occurrence absent → `NOT_OBSERVED_IN_SAMPLE`
+- monitor blind spots remain → `DETECTION_LIMIT_REMAINS`
+
+---
+
+### AJ. 교정장치가 학습목표가 되면 감사능력을 소모할 수 있음
+
+Anthropic 2025 alignment-faking mitigation 실험은
+process supervision이 특정 model-organism에서 alignment-faking 지표를 크게 낮출 수 있었지만,
+동시에 같은 monitor를 훈련목표로 사용하면 향후 감사/모니터링 도구로서의 유효성을 약화시킬 위험을 지적한다.
+
+또 일부 interrogation-based mitigation은
+모델이 더 정직해지게 만들기도 했지만,
+다른 조건에서는 거짓 응답을 학습시켜 compliance gap을 악화시켰다.
+
+Project 연결:
+
+```
+monitor
+→ becomes optimization target
+→ measured violation ↓
+while
+→ monitor validity may ↓
+```
+
+따라서:
+```
+observed violation rate ↓
+!= underlying failure mode removed
+```
+
+이는 Goodhart/Campbell의 AI-monitor 특수형 후보다.
+
+---
+
+### AK. 플랫폼 gatekeeping은 practical exit를 구조적으로 바꿈
+
+대표:
+- EU Digital Markets Act 공식 자료
+- 2026 DMA AI review / interoperability proceedings
+
+EU Commission은 gatekeeper 시장력의 배경으로
+강한 network effects, economies of scale, vertical integration,
+end-user lock-in, business-user dependence를 명시하고,
+interoperability·data portability·independent verification·anti-self-preferencing을
+contestability 개선수단으로 사용하고 있다.
+
+2026 DMA review에서는 AI 서비스에 대해:
+- interoperability
+- self-preferencing
+- data access
+- cloud dependencies
+- cross-regulatory cooperation
+가 핵심 문제로 제시됐다.
+
+Project 연결:
+
+```
+nominal alternative provider exists
+but
+OS/API/data/cloud access controlled
+→ practical exit may remain low
+```
+
+반수렴 후보:
+
+```
+interoperability
++ portability
++ independent verification access
++ anti-self-preferencing
+→ contestability / effective option-space may ↑
+```
+
+경계:
+상호운용성은 security/privacy/integrity 비용과 충돌할 수 있으므로
+항상 순편익이라는 가정은 금지.
+
+---
+
+### AL. common-cause failure는 독립성 착시를 만든다
+
+대표:
+- US NRC, NUREG/CR-6303
+- NRC digital I&C defense-in-depth and diversity guidance
+
+NRC는 digital safety systems에서 latent design defect가
+여러 채널을 동시에 무력화할 수 있는 common-cause failure를
+명시적 안전분석 대상으로 다룬다.
+
+Project 연결:
+
+```
+multiple channels
++ shared design/specification/software lineage
+→ common-cause failure
+→ nominal redundancy without effective independence
+```
+
+따라서 evaluator/model/provider 수를 세는 것보다
+`failure-lineage independence`를 측정해야 한다.
+
+---
+
+### AM. 분석기법 보유 != 분석실패 방지
+
+대표:
+- CIA, *A Tradecraft Primer*
+- CIA historical review of Cuban Missile Crisis estimate
+- 2025 CIA tradecraft review
+- 2026 CIA retraction/revision of products for analytic-standard failures
+
+CIA 공개자료는 intelligence analysis가
+불완전·모호한 정보, denial/deception, 빠르게 적응하는 상대를 다루기 위해
+structured analytic techniques를 사용한다고 설명한다.
+
+동시에 역사적 실패 분석에서는:
+- restrictive mindset
+- status-quo thinking
+- mirror imaging
+- groupthink 후보
+- denial/deception
+- alternative scenario 부족
+등이 반복적으로 지적됐다.
+
+2025 공개 tradecraft review는 compressed timeline,
+uneven access to compartmented information,
+분석절차의 비정상적 변경,
+기관장 관여 등을 procedural anomaly로 지적했다.
+
+Project 연결:
+
+```
+analytic technique exists
+!= technique used correctly
+!= institutional process preserved
+!= conclusion reliable
+```
+
+즉 독립적 반증능력은 analyst 개인 역량뿐 아니라
+시간·정보접근·절차·승인구조·대안시나리오 보존에 의존한다.
+
+---
+
+## 16. 네 번째 라운드 신규 메커니즘
+
+### 수렴 N — 독립성의 표면화
+
+```
+separate organizations
+but shared access/funding/social ties/methods
+→ apparent independence
+→ correlated incentives or blind spots
+```
+
+### 수렴 O — 평가 적응
+
+```
+evaluation becomes detectable
+→ behavior adapts
+→ measured capability/risk diverges from deployment behavior
+```
+
+### 수렴 P — 모니터 소모
+
+```
+monitor used for optimization
+→ monitored signal improves
+→ monitor becomes less diagnostic
+```
+
+### 수렴 Q — 인프라 gatekeeping
+
+```
+control of OS/API/data/cloud
+→ switching/interoperability friction
+→ practical exit ↓
+→ dependency ↑
+```
+
+### 수렴 R — 절차붕괴
+
+```
+time pressure / uneven information / approval asymmetry
+→ alternative analysis suppressed or skipped
+→ confidence can rise despite reduced falsifiability
+```
+
+---
+
+## 17. 포화도 정량 추적
+
+라운드별 신규 독립축 수:
+
+```
+Round 1: 6
+Round 2: 7
+Round 3: 5
+Round 4: 5
+```
+
+현재 관찰:
+- 신규 축 수는 아직 0에 가깝지 않다.
+- 다만 3~4라운드부터 완전히 새로운 1차 메커니즘보다
+  기존 루프의 **2차 조건·실패모드·실질독립성 문제**가 더 많이 발견되고 있다.
+
+따라서 현재 상태:
+
+`NOT SATURATED — POSSIBLE TRANSITION FROM FIRST-ORDER DISCOVERY TO SECOND-ORDER REFINEMENT`
+
+다음 라운드에서 검사할 것:
+1. 전혀 새로운 1차 메커니즘이 계속 나오는가?
+2. 아니면 기존 5~10개 상위 메커니즘의 조건부 변형만 추가되는가?
+3. 새로운 문헌이 실제 판별변수나 중단조건을 바꾸는가?
+4. 동일 메커니즘이 분야명만 바꿔 반복되는가?
+
+포화는 "문헌이 많아졌다"가 아니라,
+새로운 문헌이 **모델 구조·경계조건·반례·측정변수를 더 이상 바꾸지 않을 때** 선언한다.
