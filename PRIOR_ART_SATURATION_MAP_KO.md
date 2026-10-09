@@ -1952,3 +1952,181 @@ NEW_DISTORTION_LINEAGES = 1
 다음 넓은 독립 분야 라운드에서도 새 1차 causal edge가 0이고
 핵심 판별조건이 바뀌지 않으면
 `PRIOR_ART_FIRST_ORDER_SATURATED` 후보 조건이 충족된다.
+
+
+---
+
+## 26. 여덟 번째 포화확장: 생태·유전·소프트웨어·집단지능 교차검사
+
+이번 라운드는 생태학·진화/유전학·사이버보안·collective intelligence를 독립 분야로 탐색했다.
+
+### AZ. monoculture / genetic diversity는 correlated-failure 커널로 흡수
+
+대표:
+- King & Lively (2012), genetic diversity and disease
+- genetic diversity/disease review, DOI 10.1111/evo.14395
+- crop genetic erosion review, DOI 10.1111/nph.17733
+
+이 문헌군은 유전적으로 동질적인 집단이 특정 병원체·환경충격에
+동시에 취약해질 수 있고, 다양성이 일부 조건에서 전파와 피해를 완충할 수 있음을 다룬다.
+
+Project 매핑:
+
+```
+shared vulnerability lineage
+→ correlated response to shock
+→ simultaneous failure risk ↑
+```
+
+= K7 `CORRELATED-INDEPENDENCE FAILURE`.
+
+새 1차 edge: 없음.
+
+경계:
+어떤 다양성이 얼마나 필요한지, 어떤 질병/환경에서 보호효과가 나는지는 조건부이며
+"다양성 많음 = 항상 안정"으로 일반화할 수 없다.
+
+---
+
+### BA. software monoculture도 같은 failure-lineage 문제
+
+대표:
+- Temizkan, Park & Saydam (2017), DOI 10.1287/isre.2017.0722
+
+널리 쓰이는 동일 소프트웨어 채택은 규모·운영 편익을 만들 수 있지만
+shared vulnerability를 통해 공격/오류의 공통 실패면을 키울 수 있다.
+
+Project 매핑:
+
+```
+nominally many nodes
++ same software/vulnerability lineage
+→ correlated compromise
+```
+
+= K7.
+
+새 1차 edge: 없음.
+
+---
+
+### BB. social influence는 집단지능을 악화시키기도, 개선하기도 함
+
+대표:
+- Lorenz et al. (2011), DOI 10.1073/pnas.1008636108
+- network dynamics of social influence / collective intelligence 후속 실험
+- Kameda, Toyokawa & Tindale (2022), collective intelligence review
+
+Lorenz et al.에서는 약한 social influence도
+의견 다양성을 줄이면서 집단오차를 개선하지 않고,
+개인의 confidence만 높이는 조건이 관측됐다.
+
+그러나 후속 network experiments에서는
+분산된 communication network에서 social influence가
+개별 추정치를 더 비슷하게 만들면서도 집단 정확도를 높이는 조건이 관측됐다.
+중앙화된 네트워크에서는 central individual 영향이 커질수록 오차 위험이 증가할 수 있었다.
+
+따라서:
+
+```
+independence good / influence bad
+```
+
+라는 단순규칙은 기각한다.
+
+더 정확한 후보:
+
+```
+CollectiveAccuracy =
+f(
+  source quality,
+  error correlation,
+  network topology,
+  influence weights,
+  information diversity,
+  central-node bias,
+  task structure
+)
+```
+
+Project 매핑:
+K5 `SUPPRESSION–APPARENT CONSENSUS`
++ K7 `CORRELATED-INDEPENDENCE FAILURE`
++ 기존 network phase-transition 경계.
+
+새 1차 edge: 없음.
+중요 edge reversal/boundary: social influence의 부호는 조건에 따라 바뀔 수 있음.
+
+---
+
+### BC. diversity–stability의 portfolio effect도 상관구조에 의존
+
+대표:
+- Valone & Barber (2008), DOI 10.1890/07-0153.1
+- Lhomme & Winkel (2002), DOI 10.1006/tpbi.2002.1612
+
+단순 통계적 averaging만으로 diversity가 stability를 자동 보장하지 않는다.
+구성요소 간 covariance/correlation과 환경에 대한 공통반응이 핵심이다.
+
+Project 연결:
+
+```
+nominal option count ↑
+while response correlation ≈ 1
+→ effective diversity gain may ≈ 0
+```
+
+이는 기존 `nominal_option_count != effective_option_count`와 K7을 강화한다.
+
+새 1차 edge: 없음.
+
+---
+
+## 27. 여덟 번째 라운드 포화 판정
+
+```
+NEW_FIRST_ORDER_CAUSAL_EDGES = 0
+NEW_EDGE_REVERSALS = 1
+NEW_NONLINEAR_BOUNDARIES = 2
+NEW_SCOPE-CHANGING_COUNTEREXAMPLES = 1
+NEW_CORE_MEASUREMENTS = 0
+NEW_DISTORTION_LINEAGES = 0
+```
+
+새로운 상위 커널은 추가되지 않았다.
+
+중요한 수정:
+- 독립성·다양성·분산은 그 자체가 목적함수가 아님.
+- 핵심은 lineage-independent error/response diversity와 실제 correction/recovery capacity.
+- social influence도 topology와 정보구조에 따라 도움 또는 해가 될 수 있음.
+
+상태:
+
+`THIRD CONSECUTIVE CLEAR ZERO-FIRST-ORDER ROUND`
+
+따라서 사전에 정한 중단기준을 충족한다.
+
+`PRIOR_ART_FIRST_ORDER_SATURATED`
+
+이 상태는 다음을 뜻한다.
+
+- 현재 탐색범위에서 새로운 1차 causal mechanism을 찾기 위한 광범위 확장은 한계수익이 낮아졌다.
+- 선행연구 조사를 종료한다는 뜻은 아니다.
+- 반례·edge reversal·비선형 경계·측정법·재현 실패·철회·왜곡 lineage·신규 AI 실증은 계속 추적한다.
+- 앞으로의 우선순위는 새 개념 증식보다 기존 8개 커널을 실제 사례에서 서로 구분하는 discriminating evidence다.
+
+---
+
+## 28. 포화 후 연구모드
+
+광범위 신규 개념 검색의 기본 우선순위를 낮추고 다음으로 전환한다.
+
+1. 강한 반례가 8개 커널 중 어떤 것을 실제로 깨는지 추적.
+2. 같은 현상을 여러 커널이 설명할 때 최소 구별검사를 설계.
+3. 역사/자연실험 사례에서 P/I/E/R/O/B/C/K/L/Q를 직접 또는 proxy로 코딩.
+4. AI evaluator/audit/governance 사례에서 capability, observed behavior, prevalence, detector limitation을 분리.
+5. Project Intersection 자체에 동일한 formalism을 적용해 self-validation loop를 검사.
+6. 새 문헌은 구조적 delta가 있을 때만 본문 승격하고 나머지는 evidence registry 수준에 둔다.
+
+다음 최우선 실증:
+`동일 사례 하나를 K1–K8 경쟁모형으로 동시에 설명한 뒤, 어떤 관측이 각 모델을 구별하는지 판별표 작성`.
