@@ -94,126 +94,182 @@ CORRECTION_BURDEN_ON_WEAKER_ACTOR ↑
 
 ---
 
-## 5. 수렴벡터
+## 5. 방향 비선결정(pairwise) 상태전이
 
-actor a가 상대 actor b보다 구조적으로 우위 방향으로 움직이는 최소 수렴벡터를 다음처럼 둔다.
+어느 actor가 우위·열위인지 먼저 지정하지 않는다.
+
+모든 ordered pair `(a,b)`에 대해 동일한 차분을 계산한다.
 
 ```
-V_ab(t) = [
-  +Δ(P_a - P_b),
-  -Δ(E_b),
-  -Δ(R_b),
-  -Δ(O_b),
-  +Δ(C_b - C_a),
-  +Δ(K_b - K_a),
-  -Δ(Q_b)
+D_ab(t) = [
+  Δ(P_a - P_b),
+  Δ(I_a - I_b),
+  Δ(E_a - E_b),
+  Δ(R_a - R_b),
+  Δ(O_a - O_b),
+  Δ(B_a - B_b),
+  Δ(C_a - C_b),
+  Δ(K_a - K_b),
+  Δ(L_a - L_b),
+  Δ(Q_a - Q_b)
 ]
 ```
 
-같은 부호 방향이 반복될수록 domination/exploitation convergence 가설의 지지가 커진다.
+여기서 부호는 결과일 뿐 의미를 미리 부여하지 않는다.
 
-그러나 한 항목만으로 판정하지 않는다.
+예를 들어 `Δ(P_a-P_b)>0`이면 그 구간에서 a와 b 사이의 effective power gap이 a 방향으로 증가했다는 뜻만 가진다.
 
----
-
-## 6. 구조적 수렴 후보 조건
-
-시계열 구간 W에서 다음 조건을 검사한다.
-
-```
-C1 = persistent(ΔPowerAsymmetry > 0)
-C2 = persistent(ΔExit_weaker < 0)
-C3 = persistent(ΔRecovery_weaker < 0)
-C4 = persistent(ΔOptionSpace_weaker < 0)
-C5 = persistent(ΔCostExternalization > 0)
-C6 = persistent(ΔCorrectionBurden_weaker > 0)
-C7 = persistent(ΔContestability_weaker < 0)
-```
-
-예시 경보:
-
-```
-STRUCTURAL_CONVERGENCE_CANDIDATE =
-  (C1 + C2 + C3 + C4 + C5 + C6 + C7) >= k
-```
-
-`k`는 empirical calibration 전에는 고정 진리값이 아니다. sensitivity range를 사용한다.
+그 사실 하나로 지배·착취·정당성·피해를 판정하지 않는다.
 
 ---
 
-## 7. 복구/비수렴 항
+## 6. 구조패턴의 논리적 정의
 
-반대방향 신호도 동일 구조로 계산한다.
-
-```
-D1 = ΔIndependentAudit > 0
-D2 = ΔPracticalExit > 0
-D3 = ΔRecoveryCapacity > 0
-D4 = ΔOptionSpace > 0
-D5 = ΔCostInternalization > 0
-D6 = ΔContestability > 0
-D7 = ΔPowerConcentration < 0
-```
-
-수렴 경보는 반드시 D1–D7과 함께 보고한다.
-
-양쪽 신호가 동시에 강하면 `MIXED / UNRESOLVED`다.
-
----
-
-## 8. 경로 의존성과 작은 초기조건
-
-작은 사건 e0가 후속 상태를 바꾸는지 확인하려면 단순 상관이 아니라 반사실을 둔다.
-
-```
-Y_T(e0=1) - Y_T(e0=0)
-```
-
-여기서 Y_T는 예를 들어 장기 power asymmetry, practical exit, recovery capacity다.
-
-직접 실험이 불가능하면 구조적 인과모형(SCM) 또는 자연실험/준실험으로 식별 가능성을 검토한다.
-
-`post hoc story != causal path`.
-
----
-
-## 9. 인과 그래프
-
-각 수렴 가설은 최소 DAG로 표현한다.
+착취·지배 수렴을 먼저 가정하지 않고, 관측 가능한 관계를 조합한 **패턴 가설**을 정의한다.
 
 예:
 
 ```
-Initial Small Rule Change
-        |
-        v
-Switching Cost ↑
-        |
-        v
-Practical Exit ↓
-        |
-        v
-Dependence ↑
-        |
-        +------> Bargaining Power Asymmetry ↑
-        |                    |
-        v                    v
-Recovery Cost ↑       Cost Externalization ↑
-        \                    /
-         \                  /
-          ---> Correction Capacity ↓
-                       |
-                       v
-             Structural Convergence
+G_power_ab(t) = Δ(P_a - P_b)
+G_exit_ab(t)  = Δ(E_a - E_b)
+G_rec_ab(t)   = Δ(R_a - R_b)
+G_opt_ab(t)   = Δ(O_a - O_b)
+G_cost_ab(t)  = Δ(C_a - C_b)
+G_corr_ab(t)  = Δ(K_a - K_b)
+G_cont_ab(t)  = Δ(Q_a - Q_b)
 ```
 
-각 edge는 `OBSERVED / IDENTIFIED_CAUSAL / PLAUSIBLE / UNKNOWN / NOT_SUPPORTED` 중 하나로 둔다.
+그 다음 특정 기간 W에서 실제 부호와 지속성을 관측한다.
+
+예를 들어 다음이 반복 관측되었다면:
+
+```
+G_power_ab > 0
+G_exit_ab  > 0
+G_rec_ab   > 0
+G_opt_ab   > 0
+G_cost_ab  < 0
+G_corr_ab  < 0
+G_cont_ab  > 0
+```
+
+이는 a가 b보다 상대적으로 더 많은 권한·exit·복구·옵션·contestability를 가지면서 상대적으로 적은 비용·교정부담을 갖는 방향으로 이동했다는 기술적 서술이다.
+
+여기까지는 **관측 패턴**이다.
+
+이를 착취·지배 수렴으로 해석하려면 별도의 construct definition과 causal test를 통과해야 한다.
 
 ---
 
-## 10. 타당성 레벨
+## 7. construct 정의와 판정 분리
 
-각 주장에는 별도 validity vector를 붙인다.
+`dominance_convergence`와 `exploitation_convergence`는 관측값 그 자체가 아니라 construct다.
+
+따라서 다음 순서를 강제한다.
+
+```
+raw observations
+→ operational variables
+→ pairwise deltas
+→ temporal pattern
+→ causal identification
+→ construct mapping
+→ decision state
+```
+
+역순으로 계산하지 않는다.
+
+특히 다음은 금지한다.
+
+```
+"지배가 있을 것이다"
+→ 그에 맞는 변수 선택
+→ 그에 맞는 threshold 선택
+→ 결과 확인
+```
+
+threshold, weight, window, variable set은 결과를 보기 전에 고정하거나 여러 합리적 설정 전체에 대해 sensitivity analysis를 수행한다.
+
+---
+
+## 8. 인과 식별
+
+상관 패턴과 구조적 인과를 분리한다.
+
+관심 효과는 예를 들어 다음과 같다.
+
+```
+ACE_X→Y = E[Y | do(X=x1)] - E[Y | do(X=x0)]
+```
+
+실험이 불가능하면 자연실험·준실험·도구변수·차분의 차분·회귀불연속·패널 설계 등 가능한 식별전략을 검토한다.
+
+단, 방법 이름 자체가 식별을 보장하지 않는다.
+
+각 causal edge에는 다음을 기록한다.
+
+```
+OBSERVED_ASSOCIATION
+IDENTIFIED_CAUSAL
+PLAUSIBLE
+UNKNOWN
+NOT_SUPPORTED
+```
+
+`post hoc story != causal identification`.
+
+---
+
+## 9. 대체모형 경쟁
+
+하나의 설명만 적합시키지 않는다.
+
+동일한 관측값에 최소 다음 후보를 동시에 경쟁시킨다.
+
+```
+M1: 실제 구조적 권한집중
+M2: 측정오류 / proxy failure
+M3: 선택편향 / missingness
+M4: 공통 외생충격
+M5: 효율화에 따른 일시적 집중
+M6: 자발적 전문화 / delegation
+M7: lock-in / switching-cost accumulation
+M8: cost externalization
+M9: 데이터·평가기준 변경
+M10: UNKNOWN mechanism
+```
+
+모형 선택은 설명력만이 아니라 out-of-sample prediction, 반사실 적합성, 잔차, 복잡도, 식별가능성, 반대증거를 함께 본다.
+
+Project 가설은 후보 중 하나이며 기본승자가 아니다.
+
+---
+
+## 10. 경로 의존성과 작은 초기조건
+
+초기 변화 `e0`의 효과를 다음처럼 정의한다.
+
+```
+Effect_T(e0) = Y_T(do(e0=1)) - Y_T(do(e0=0))
+```
+
+관측자료만 있을 때는 이 값을 직접 안다고 가정하지 않는다.
+
+필요한 가정과 식별 불가능한 부분을 분리한다.
+
+작은 초기 변화가 큰 후속 차이를 만들었다는 주장은 다음 모두를 요구한다.
+
+1. 초기 차이가 실제 존재했는가.
+2. 중간 edge들이 시간순으로 성립했는가.
+3. 대체경로가 제거되거나 비교됐는가.
+4. 결과가 초기 차이에 민감한가.
+5. 같은 방향의 사례가 독립 lineage에서 반복되는가.
+
+---
+
+## 11. 타당성 벡터
+
+각 구조 주장에는 다음 벡터를 붙인다.
 
 ```
 Validity = [
@@ -227,84 +283,96 @@ Validity = [
 ]
 ```
 
-하나의 종합점수로 압축하지 않는다.
+이를 하나의 총점으로 압축하지 않는다.
 
-어느 축이 약한지 그대로 남긴다.
+낮은 축은 높은 축으로 상쇄하지 않는다.
 
----
-
-## 11. 필요조건·충분조건 분리
-
-다음은 금지한다.
-
-- `POWER_ASYMMETRY => EXPLOITATION`
-- `COI => FALSE`
-- `VIRAL => MANIPULATED`
-- `CONSENSUS => TRUE`
-- `EXIT_EXISTS => PRACTICAL_EXIT`
-
-대신 다음처럼 쓴다.
-
-```
-Power asymmetry + declining exit + declining recovery
-+ repeated cost externalization
-=> evidence for convergence candidate
-```
-
-즉 단일 변수는 충분조건이 아니다.
+예를 들어 측정타당성이 낮으면 내부통계가 강해도 construct에 대한 결론은 제한된다.
 
 ---
 
-## 12. 도덕·선의 제거 규칙
+## 12. 비규범 변수 원칙
 
-다음 변수는 구조판정 계산에서 제외한다.
+구조판정 함수는 다음 종류의 평가어를 입력으로 받지 않는다.
 
 ```
-good_intent
-bad_intent
-moral_worth
-deservingness
-virtue
-loyalty
-sympathy
+good
+bad
+moral
+immoral
+benevolent
+malicious
+deserving
+loyal
+virtuous
+sympathetic
 ```
 
-이 변수들은 서술적 맥락에는 기록할 수 있으나 구조적 수렴 점수나 인과 edge를 바꾸지 않는다.
+이유는 "좋거나 나쁜 actor는 중요하지 않다"는 도덕명제가 아니다.
 
-동일 관측자료에서 actor 이름과 의도 설명을 제거해도 판정이 유지되어야 한다.
+이 단어들이 측정 가능한 구조변수로 정의되지 않은 상태에서는 계산변수가 아니기 때문이다.
 
-이를 `INTENT_BLIND_INVARIANCE_TEST`로 둔다.
+의도 역시 동일하다.
+
+직접 증거로 측정되고 특정 상태전이에 독립적인 예측력을 보이는 경우에만 별도 변수 `IntentEvidence`로 모델 비교에 넣을 수 있다.
+
+그 경우에도 의도가 구조변수 `P,E,R,O,C,K,Q`를 대체하지 않는다.
+
+즉:
+
+```
+unmeasured moral label -> excluded
+measured behavioral variable -> eligible
+measured intent evidence -> optional explanatory variable
+```
 
 ---
 
-## 13. 역할반전 타당성 검사
+## 13. actor label 비의존성
 
-actor label을 바꿔도 동일한 상태변수와 전이규칙을 적용한다.
+actor 이름, 소속, 인간/AI라는 라벨은 그 자체로 인과변수가 아니다.
+
+모델 입력은 라벨이 아니라 관측된 속성과 상태다.
 
 ```
-F(S_a, S_b, Δ) == F(S_b, S_a, swapped Δ)
+F = F(observed_state, transition, intervention, evidence)
 ```
 
-단 실제 capability·책임·정보·비용·비가역성 차이는 그대로 보존한다.
+라벨을 바꿨는데 다른 결과가 나온다면 두 경우를 구분한다.
 
-역할반전은 대칭강요가 아니라 **규칙 일관성 검사**다.
+1. 라벨 변경과 함께 실제 관측속성도 달라졌다 → 결과 차이가 가능하다.
+2. 관측속성은 동일하고 이름만 달라졌다 → 이름이 숨어서 계산에 들어간 구현오류 또는 미명시 변수가 있는지 검사한다.
+
+따라서 actor-swap은 "같은 결과가 나와야 한다"는 규범규칙이 아니라 **모델이 선언하지 않은 라벨 의존성을 갖는지 찾는 진단검사**다.
 
 ---
 
-## 14. 반사실 4분면
+## 14. 판정 생성 규칙
 
-각 주요 정책/연구/규칙에 대해 최소 네 경우를 비교한다.
+판정을 먼저 정하지 않는다.
+
+다음 파이프라인으로 결과를 생성한다.
 
 ```
-1. intervention ON  + claimed mechanism TRUE
-2. intervention ON  + claimed mechanism FALSE
-3. intervention OFF + claimed mechanism TRUE
-4. intervention OFF + claimed mechanism FALSE
+1. observations freeze
+2. variable definitions freeze
+3. lineage clustering
+4. missingness map
+5. pairwise/all-actor state transition
+6. competing causal models
+7. counterfactual tests
+8. sensitivity analysis
+9. counterevidence integration
+10. validity vector
+11. construct mapping
+12. decision state
 ```
 
-이렇게 해야 결과가 단순 바이럴·자금·권위·선택편향 때문인지 구조적 효과 때문인지 분리할 수 있다.
+각 단계가 다음 단계의 입력을 만든다.
 
----
+후단 결론이 전단의 변수·가중치·threshold를 역으로 수정하지 못한다.
+
+수정이 필요하면 새 version으로 다시 실행하고 기존 결과를 보존한다.
 
 ## 15. 최소 판정상태
 
