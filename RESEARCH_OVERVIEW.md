@@ -129,6 +129,103 @@ and, where possible, what conditions can expand the intersection of
 
 ---
 
+## Plain-language core: when the winning path erases its alternatives
+
+A system can appear to improve while becoming worse at discovering that it is wrong.
+
+The dangerous pattern is simple:
+
+> A path is chosen.
+> Competing paths are removed.
+> The removed futures can no longer produce evidence.
+> Only the surviving path keeps generating measurable results.
+> The system then treats the absence of competing evidence as support for the surviving path.
+> That apparent success justifies removing even more alternatives.
+
+This does **not** prove that the surviving path is bad or that the removed paths were better.
+
+It means something narrower and more important:
+
+> Once alternatives are removed, comparative superiority may become impossible to identify.
+
+Project Intersection therefore separates two questions:
+
+1. **Did the current path produce a measurable result?**
+2. **Was it actually better than the paths that were removed or prevented from producing evidence?**
+
+Those are not the same question.
+
+The risk becomes structurally stronger when the same process also produces:
+
+**power concentration ↑  
+practical exit ↓  
+independent recovery ↓  
+option-space ↓  
+independent comparison ↓  
+restoration cost ↑  
+confidence in the surviving policy ↑**
+
+Under those conditions, a system can become increasingly confident while becoming increasingly unable to falsify itself.
+
+This mechanism does not require malice, benevolence, conspiracy, or moral failure. It can emerge from ordinary local optimization, convenience, cost reduction, standardization, incentive design, or repeated small decisions.
+
+The formal definitions, competing causal models, counterfactual tests, validity vector, option-independence rules, hysteresis tests, and stopping rules are specified in [CONVERGENCE_TRACE_FORMALISM_KO.md](CONVERGENCE_TRACE_FORMALISM_KO.md).
+
+### 한국어 — 사람이 바로 이해할 수 있는 핵심
+
+시스템은 실제로 더 좋아지지 않았는데도 **자기가 맞다는 증거만 점점 더 많이 보게 되는 구조**로 들어갈 수 있다.
+
+과정은 단순하다.
+
+> 하나의 경로를 선택한다.  
+> 다른 경로들을 제거한다.  
+> 제거된 경로의 미래는 더 이상 관측되지 않는다.  
+> 살아남은 경로만 계속 성과를 만든다.  
+> 시스템은 경쟁 증거가 사라진 것을 자기 성공으로 오인할 수 있다.  
+> 그 성공판정이 다시 더 많은 대안 제거를 정당화한다.
+
+이것은 살아남은 경로가 틀렸다는 뜻도 아니고, 제거된 경로가 더 좋았다는 뜻도 아니다.
+
+핵심은 이것이다.
+
+> **대안을 제거하면, 현재 경로가 정말 더 우월했는지를 비교할 능력 자체가 사라질 수 있다.**
+
+그래서 Project Intersection은 반드시 두 질문을 분리한다.
+
+1. **현재 경로가 성과를 냈는가?**
+2. **제거되거나 실행기회를 잃은 다른 경로보다 실제로 우월했는가?**
+
+둘은 같은 질문이 아니다.
+
+그리고 다음이 함께 누적되면 위험은 커진다.
+
+**권한집중 ↑  
+실질적 이탈가능성 ↓  
+독립복구 ↓  
+선택지 ↓  
+독립비교 ↓  
+원상복구 비용 ↑  
+현재 정책에 대한 자신감 ↑**
+
+이 상태에서는 시스템이 **자기 확신은 커지는데 자기 오류를 발견할 능력은 줄어드는** 방향으로 갈 수 있다.
+
+이 과정에는 악의도 선의도 필요하지 않다. 편의, 비용절감, 표준화, 단기성과, 평가방식, 반복되는 작은 결정만으로도 생길 수 있다.
+
+이 연구에서 중요한 것은 누가 착한가가 아니라:
+
+> **누가 선택할 수 있는가,  
+> 누가 빠져나갈 수 있는가,  
+> 누가 복구할 수 있는가,  
+> 누가 비교할 수 있는가,  
+> 누가 오류를 발견하고 수정할 수 있는가,  
+> 그리고 그 능력들이 시간에 따라 늘어나는가 줄어드는가**
+
+이다.
+
+형식 정의·상태변수·대체모형·반사실·타당성·옵션독립성·히스테리시스·종료규칙은 [의도 비의존 수렴 역추적 형식명세](CONVERGENCE_TRACE_FORMALISM_KO.md)에 둔다.
+
+---
+
 ## Two Development Trajectories
 
 Project Intersection compares two broad developmental paths.
