@@ -1379,6 +1379,73 @@ multiple independent metrics
 
 그러나 각각의 장치도 다시 Goodhart/Campbell 대상이 될 수 있으므로, **교정장치 자체의 평가권·인센티브·lineage를 재귀적으로 추적**해야 한다.
 
+### Short-horizon incentives and manipulable evaluation channels / 단기보상·평가재가공권 선행연구
+
+이 축은 행위자의 의도·도덕·윤리·선악을 설명변수로 사용하지 않는다.
+핵심 질문은 **실제 상태를 개선하는 행동과 평가채널을 재가공하는 행동의 한계보상이 어떻게 달라지는가**이다.
+
+| Prior work | 재사용 가능한 결과 | Project 경계/추가 연결 |
+|---|---|---|
+| Holmström & Milgrom (1991), *Multitask Principal-Agent Analyses*, DOI 10.1093/jleo/7.special_issue.24 | 여러 과업/차원 중 일부만 강하게 측정·보상하면 노력배분이 측정 가능한 차원으로 왜곡될 수 있음을 formalize | `e_T` 실제상태 개선과 `e_R` 평가재가공의 자원배분으로 재표현. 단기보상과 평가재가공권의 interaction을 별도 추적 |
+| Baker (1992), *Incentive Contracts and Performance Measurement*, DOI 10.1086/261831 | payoff가 principal의 실제 objective가 아닌 성과측정치에 연결될 때 first-best incentive가 일반적으로 보장되지 않으며 performance-measure gaming을 직접 분석 | `metric != objective`를 `M_t != Y_t`로 operationalize |
+| Heckman, Heinrich & Smith (2002), *The Performance of Performance Standards*, DOI 10.3386/w9002 | JTPA에서 단기 performance measure가 장기 impact와 약하거나 때로 반대 방향으로 연결되고, 운영기관이 performance standard에 반응함을 실증 | `short-horizon M ↑`가 `long-horizon Y ↑`를 뜻하지 않는 직접 public-sector 사례 |
+| Ekmekci et al. (2022), *Learning from Manipulable Signals*, DOI 10.1257/aer.20211158 | principal이 관측하는 noisy performance signal을 agent가 costly hidden action으로 조정할 수 있는 동적게임에서 signal manipulation과 learning distortion을 분석 | evaluator가 관측하는 signal 자체가 endogenous한 경우 `IV/RDA/DP×RC`가 식별력에 미치는 효과를 비교 |
+| Edmans, Fang & Lewellen (2017), *Equity Vesting and Investment* | 예정된 단기 vesting incentive가 R&D/capex 감소와 단기 earnings 관련 행동 변화에 연결되는 증거 | reward horizon을 단순 심리변수가 아니라 계약/보상시계 변수 `RH`로 측정 |
+| Ladika & Sautner (2020), *Managerial Short-Termism and Investment*, DOI 10.1093/rof/rfz012 | option vesting horizon의 외생적 단축을 이용해 더 짧은 incentive horizon 뒤 투자 감소·단기 earnings 상승을 보고 | `STI↑ → Y_long-term investment↓ while M_short-term↑` 후보의 준실험 evidence |
+| Kronlund (2026), *How Do Short-Term Incentives Affect Long-Term Productivity?*, DOI 10.1093/rfs/hhae064 | EPS-driven buyback incentive가 투자·고용 조정과 장기 plant/firm productivity 감소에 연결된다고 보고 | short-term reward와 장기 real outcome divergence를 생산성 자료로 검사하는 현대 사례 |
+
+#### 기능적 수렴
+
+기존 문헌을 Project 언어로 번역하면:
+
+```
+reward tied to observable proxy
++ proxy incomplete relative to underlying objective
++ actor can influence proxy
+→ effort can shift toward proxy-responsive actions
+```
+
+시간축을 넣으면:
+
+```
+short reward horizon
++ high evaluation-channel influence
+→ short-horizon measured performance may rise
+while
+long-horizon objective performance can remain flat or decline
+```
+
+이것은 필연법칙이 아니다.
+
+반대조건:
+- proxy가 실제 objective와 매우 congruent함
+- 평가재가공이 실제 상태개선과 동일한 행동임
+- independent verification이 강함
+- raw data가 외부에서 재구성 가능함
+- 장기 비용이 현재 행위자에게 내부화됨
+- 보상 horizon이 장기 outcome과 정렬됨
+
+에서는 `M-Y` divergence가 작거나 역전될 수 있다.
+
+#### Project incremental integration
+
+Project가 추가로 결합해 검증할 부분:
+
+```
+STI × ERP × IV × RDA × CI × RH
+```
+
+특히:
+
+1. 단기보상 강도 `STI`와 평가재가공권 `ERP`가 서로 대체관계인지 보완관계인지;
+2. 독립검증 `IV`와 raw-data access `RDA`가 `ERP` 효과를 얼마나 감쇠시키는지;
+3. 비용내부화 `CI`와 reward horizon `RH`가 장기 `Y` 손실을 줄이는지;
+4. K4a(test/metric), K4b(disclosure/visibility), K4c(evidence-context)에서 같은 함수형태가 성립하는지;
+5. `M↑,Y↑` / `M↑,Y≈` / `M↑,Y↓`를 실제 데이터에서 구별할 수 있는지.
+
+현재 판정:
+`NO NEW FIRST-ORDER KERNEL / K4 FORMALIZATION + MEASUREMENT UPGRADE`
+
 ### Project-added integration and unresolved candidates
 
 After integrating prior work and preserving its attribution, the strongest unvalidated Project-added combinations or unresolved candidates are:
