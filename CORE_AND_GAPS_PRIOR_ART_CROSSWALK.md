@@ -190,6 +190,8 @@ This file records earlier or adjacent work for concepts already present in the p
 
 ## Intent-agnostic convergence trace / 의도 비의존 수렴 역추적
 
+형식 계산 규칙·상태벡터·인과 DAG·반사실·타당성 벡터·의도 블라인드 불변성 검사는 [CONVERGENCE_TRACE_FORMALISM_KO.md](CONVERGENCE_TRACE_FORMALISM_KO.md)를 정본 후보로 사용한다.
+
 Project Intersection의 핵심 위험은 악의 여부가 아니라 **작은 비대칭·비용전가·권한집중·옵션소멸이 반복되며 착취·지배·흡수 방향으로 수렴하는 경로**다. 따라서 의도는 보조변수이며, 기본 추적 단위는 결과와 구조다.
 
 ### C0. Intent separation / 의도 분리
