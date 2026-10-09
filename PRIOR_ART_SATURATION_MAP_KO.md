@@ -1361,3 +1361,339 @@ Round 4: 5
 
 포화는 "문헌이 많아졌다"가 아니라,
 새로운 문헌이 **모델 구조·경계조건·반례·측정변수를 더 이상 바꾸지 않을 때** 선언한다.
+
+
+---
+
+## 18. 다섯 번째 포화확장: 교정잔류·관측부채·평가절단
+
+이번 라운드의 목적은 새로운 분야명을 늘리는 것이 아니라,
+기존 메커니즘을 실제로 바꾸는 독립축이 계속 나오는지 검사하는 것이다.
+
+### AN. 공식 교정이 생겨도 오류의 영향은 즉시 사라지지 않음
+
+대표:
+- Hsiao & Schneider, *Continued use of retracted papers*, DOI 10.1162/qss_a_00155
+- retracted systematic-review citation analysis, DOI 10.1016/j.jclinepi.2022.05.013
+- Candal-Pedreira et al., DOI 10.1136/bmjgh-2020-003719
+- unofficial-information-channel study, DOI 10.1016/j.respol.2023.104815
+
+관측:
+- 7,813개 PubMed retracted paper의 169,434개 citation을 추적한 연구에서 post-retraction citation이 계속됨.
+- 13,252개 post-retraction citation context 중 retraction을 명시한 것은 약 5.4%.
+- 153개 retracted systematic review 조사에서도 post-retraction citation이 다수 관측됨.
+- 공식 retraction notice만으로 correction diffusion이 충분하지 않을 수 있고, 비공식 정보채널이 correction propagation에 영향을 줄 수 있다는 연구가 있음.
+
+Project 연결:
+
+```
+error published
+→ citation / institutional embedding
+→ formal correction
+→ correction propagation lag
+→ downstream use persists
+→ prior error can survive after source-level correction
+```
+
+이를 `EPISTEMIC_RESIDUE` 후보로 기록한다.
+
+중요 경계:
+post-retraction citation이 모두 오류 전파를 뜻하지 않는다.
+문제연구를 비판·역사·방법론 사례로 인용하는 정상적 사용도 있으므로
+citation context를 분리해야 한다.
+
+기존 변수와의 매핑:
+- 새 core variable 추가 없음.
+- `ENF / correction latency`, `I`, provenance, lineage tracking으로 흡수.
+
+---
+
+### AO. 시스템 능력 증가와 함께 oversight observability가 감소할 수 있음
+
+대표:
+- UK AISI (2026), *Loss of Oversight: How AI Systems May Become Harder to Audit, Monitor, and Investigate*
+- UK AISI (2026), *Transect: Retaining Observability for Long-Horizon LLM Agent Evaluations*
+
+AISI는 현재 oversight가 의존하는 기반이
+모델 발전에 따라 약화될 수 있는 20개 이상의 경로를 정리한다.
+
+장기 agent evaluation에서는:
+- 수백 페이지 이상의 transcript
+- multi-agent interaction
+- sub-agent delegation
+- judge-model analysis
+- evaluator analytic degrees of freedom
+때문에 evaluator가 신뢰성 있게 추론할 수 있는 `observability envelope`가 좁아질 수 있다고 보고한다.
+
+Project 연결:
+
+```
+system/action horizon ↑
++ interaction complexity ↑
++ delegation depth ↑
+→ evaluator reconstruction burden ↑
+→ effective observability ↓
+→ audit disagreement / hidden-path risk ↑
+```
+
+이를 별도 독립변수로 늘리지 않고 기존:
+- `I = usable information access`
+- `Q = contestability`
+- `FalsifiabilityReserve`
+- `K = correction/verification burden`
+에 매핑한다.
+
+즉 새 문헌이 core ontology를 확장하기보다
+기존 변수의 **시간축·복잡도 의존성**을 강화한다.
+
+---
+
+### AP. 평가 resource cap 자체가 능력추정치를 절단할 수 있음
+
+대표:
+- UK AISI (2026), inference-scaling in cyber evaluations
+
+AISI는 2025년 11월 이후 일부 frontier model이
+기존 평가의 token/turn budget보다 10–50배 큰 inference budget을
+생산적으로 활용해 성공률을 높이고,
+이전에는 풀지 못한 task까지 해결한 사례를 보고했다.
+
+Project 연결:
+
+```
+evaluation budget cap
+→ observed capability ceiling
+→ evaluator infers plateau
+while
+true capability under larger budget may be higher
+```
+
+따라서:
+
+```
+measured plateau != capability plateau
+```
+
+새 독립 core variable은 추가하지 않는다.
+기존 measurement validity와 evaluation-condition provenance에 흡수한다.
+
+필수 기록:
+- token/turn/time/compute budget
+- retries
+- scaffold
+- tool access
+- human intervention
+- stopping rule
+
+---
+
+### AQ. 비상권한 ratchet은 강한 보편법칙이 아니라 조건부 가설
+
+최근 working paper:
+- Mukherjee (2026), *Emergency Powers As Precedent: The Ratchet Thesis Revisited*, SSRN 7118898, DOI 10.2139/ssrn.7118898
+
+이 논문은 emergency-power persistence가 자동적이지 않고,
+다음 조건에 따라 달라질 수 있다고 제안한다.
+
+- institutional home
+- sunset clause의 genuine contestability
+- threat가 종료 가능한지
+- 권한 유지에 이해관계를 가진 constituency가 생기는지
+
+현재 상태:
+`NOT_YET_INDEPENDENTLY_AUDITED / WORKING_PAPER`
+
+Project 가치:
+기존 `emergency authority → ratchet` 표현을 더 약하게 만든다.
+
+```
+temporary authority
++ institutionalization
++ open-ended threat
++ survival constituency
+→ persistence risk may ↑
+
+contestable sunset
++ closable threat
++ real renewal vote
+→ expiry probability may ↑
+```
+
+즉 ratchet은 조건부 메커니즘 후보이며 보편법칙이 아니다.
+
+---
+
+### AR. 조직 침묵 문헌은 별도 1차 메커니즘보다 기존 합의착시를 강화
+
+대표:
+- systematic review of 92 employee-silence studies, DOI 10.1016/j.emj.2022.12.004
+- later review separating organizational vs employee silence, DOI 10.1108/EJTD-06-2024-0077
+
+이번 문헌은 새로운 상위 메커니즘보다는 기존:
+
+```
+voice cost
+→ dissent visibility ↓
+→ perceived consensus ↑
+→ confidence ↑
+```
+
+의 측정경계와 수준구분을 강화한다.
+
+중요:
+- individual employee silence
+- collective organizational silence
+
+를 동일 construct로 취급하지 않는다.
+
+---
+
+## 19. 5차 라운드의 포화 판정
+
+이번 라운드 신규 항목을 1차/2차로 분류한다.
+
+### 새로운 1차 메커니즘
+
+```
+0–1 candidate
+```
+
+`EPISTEMIC_RESIDUE`는 correction-latency의 특수형으로 볼 수 있어
+완전한 독립 1차 메커니즘 여부는 보류한다.
+
+### 새로운 2차 조건·측정·실패모드
+
+```
+4+
+```
+
+- correction propagation lag
+- complexity-dependent observability loss
+- evaluation-budget truncation
+- conditional emergency-power persistence
+- individual vs organizational silence distinction
+
+따라서 발견양상은 명확히 바뀌었다.
+
+```
+Rounds 1–2: first-order discovery dominant
+Rounds 3–4: mixed
+Round 5: second-order refinement dominant
+```
+
+현재 상태:
+
+`NOT FULLY SATURATED — FIRST-ORDER MECHANISM SATURATION CANDIDATE`
+
+의미:
+- 전체 선행연구가 끝났다는 뜻이 아님.
+- 새로운 분야를 더 검색할 가치가 여전히 있음.
+- 그러나 새로운 문헌 대부분이 이제 기존 상위루프를 확장하기보다
+  조건·측정·식별·실패모드를 정제하고 있음.
+
+---
+
+## 20. 중복 제거 후 상위 메커니즘 커널
+
+지금까지 분야별 이름을 제거하고 구조만 남기면
+대부분은 다음 8개 커널로 압축된다.
+
+### K1. DEPENDENCE–POWER
+
+```
+critical dependency ↑
+→ bargaining/control asymmetry ↑
+```
+
+### K2. POSITIVE-FEEDBACK–LOCK-IN
+
+```
+initial advantage
+→ reinforcement
+→ switching/restoration cost ↑
+→ persistence
+```
+
+### K3. ENDOGENOUS-OBSERVATION
+
+```
+system action
+→ environment changes
+→ changed environment becomes evidence/data
+→ system updates from self-shaped evidence
+```
+
+### K4. METRIC–CONTROL FEEDBACK
+
+```
+metric allocates reward/control
+→ actors optimize metric
+→ construct validity may decline
+→ metric retains authority
+```
+
+### K5. SUPPRESSION–APPARENT CONSENSUS
+
+```
+voice/expression cost ↑
+→ visible dissent ↓
+→ perceived consensus ↑
+→ further suppression
+```
+
+### K6. COUNTERFACTUAL EXTINCTION
+
+```
+alternative removed
+→ alternative future unobserved
+→ surviving path owns evidence stream
+→ comparative superiority becomes nonidentified
+```
+
+### K7. CORRELATED-INDEPENDENCE FAILURE
+
+```
+nominal multiplicity
++ shared lineage/spec/data/incentive
+→ correlated blind spots
+→ false redundancy
+```
+
+### K8. CAPABILITY–OVERSIGHT GAP
+
+```
+system complexity/capability/horizon ↑ faster than
+observability/evaluation/recovery capacity
+→ effective oversight margin ↓
+```
+
+대부분의 후속 문헌은 이 8개 중 하나 이상에 매핑된다.
+
+---
+
+## 21. 포화검색 다음 단계 규칙
+
+다음 검색부터는 문헌을 추가하기 전에 먼저 다음을 판정한다.
+
+```
+Does source:
+1. add a new causal edge?
+2. reverse an existing edge?
+3. add a nonlinear threshold?
+4. add a counterexample that changes scope?
+5. add a new measurement needed for discrimination?
+6. expose a new distortion lineage?
+```
+
+모두 아니면:
+`DUPLICATE_SUPPORT / NO STRUCTURAL DELTA`
+
+로 기록하고 본문 확장을 최소화한다.
+
+3개 연속 넓은 독립 분야 라운드에서
+새 1차 causal edge가 0이고
+핵심 판별조건도 바뀌지 않으면:
+
+`PRIOR_ART_FIRST_ORDER_SATURATED`
+
+후에도 반례·왜곡·측정·신규 실증은 계속 추적한다.
