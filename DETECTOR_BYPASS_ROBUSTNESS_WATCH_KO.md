@@ -224,3 +224,71 @@ preserve failures
 preserve counterexamples
 replace rules when evidence changes
 ```
+
+
+---
+
+## 8. 현장 검증 업데이트
+
+별도 사례:
+`CASE_DETECTOR_ROBUSTNESS_FIELD_VALIDATION_KO.md`
+
+검증 결과:
+
+### F1 reporting-window effect
+상태를
+`EMPIRICAL_POLICY_NATURAL_EXPERIMENT`
+로 강화한다.
+
+2024 mutual-fund 자연실험에서는
+보고빈도 증가가 오히려 window dressing 증가와 연결됐다.
+
+따라서:
+```
+monitoring frequency ↑
+!= manipulation pressure ↓
+```
+
+### F5 classification/denominator shift
+상태를
+`EMPIRICAL_METRIC_EFFECT / CAUSAL_INTENT_UNRESOLVED`
+로 수정한다.
+
+observation stay 포함 여부만으로도
+hospital readmission ranking이 크게 변할 수 있다는 실증이 있다.
+
+그러나:
+```
+metric effect observed
+!= intentional manipulation identified
+```
+
+### F7 detector aging / drift
+상태를
+`EMPIRICAL_REAL_WORLD_DRIFT_SUPPORT`
+로 강화한다.
+
+실제 의료영상 AI 환경에서
+aggregate performance가 안정적이어도
+input distribution drift가 발생할 수 있음이 관측됐다.
+
+따라서 탐지기 재검증 시 다음을 추가한다.
+
+```
+representation check
+denominator check
+temporal-window check
+system-boundary check
+input-distribution check
+causal check
+```
+
+새 강건성 원칙:
+
+```
+MORE MONITORING CAN INCREASE
+BOTH DETECTION
+AND ADAPTATION PRESSURE
+```
+
+monitoring 강화의 순효과는 자동으로 양수라고 가정하지 않는다.
