@@ -41,6 +41,15 @@ A match to prior art is not counted as Project novelty. The Project-specific rem
 | Specification gaming / 명세 게임 | Krakovna et al., DeepMind (2020) | Agents can satisfy literal metrics while violating intended goals, and capability increases can make loophole exploitation more effective. | Metric gaming is not novel. |
 | Power-seeking incentives / 권력추구 유인 | Turner et al., NeurIPS 2021, arXiv:1912.01683 | Under certain MDP symmetries, optimal policies tend to preserve options and seek states with greater attainable power. | Generic instrumental power-seeking is not Project-original. |
 
+### 1.1 Agentic-audit independence grading / 에이전트 감사 독립성 등급화
+
+- **원출처·원안자·연도:** Mohamed Chahine Ghanem (2026), *Who Audits Whom, on What Substrate, with What Evidence? An Independence-Graded Audit Protocol for Agentic AI*, DOI [10.48550/arXiv.2609.18272](https://doi.org/10.48550/arXiv.2609.18272).
+- **기존 construct와 겹침:** 감사 독립성을 principal(통제·보수·선임), substrate(모델군·도구체인·가드레일·호스팅의 공통원인 실패), evidence(자기보고가 아닌 변조탐지 가능한 증거)로 나누고 최약축으로 종합하는 것은 규제포획·평가자 의존성·공통원인 실패·감사증거 무결성의 구체적 운영화다. 이 분해와 등급화는 Project 고유 기여로 계상하지 않는다.
+- **독립 결과:** 논문의 구조 분석과 Monte Carlo에서 내부팀·동일 모델계열·제공자 로그 조합은 이론상 관측 가능한 결함의 5.9%만 드러냈고, 결함군 절반에서는 0%였다. 이는 “외부/내부 감사가 있음”과 “감사가 독립적임”을 같은 변수로 처리하면 안 된다는 반례다.
+- **Project 고유 잔차:** 이 선행연구가 직접 다루지 않는 후보는 평가자의 선임·해임권, 결과 공개권, 자금·차기계약 의존, 교정 명령·독립복구·practical exit 권한을 반복 상호작용의 권력·부담 계정과 함께 측정하는 부분뿐이다.
+- **반례·한계:** 단일 저자 preprint이며 현장 자연실험이 아니다. 수치는 선언된 모수의 시뮬레이션 결과이고, 저자도 “simulation validates the model, not the world”라고 제한한다. 하드웨어 신뢰근·외부 witness 비침해, principal 비공모, substrate lineage의 진실성을 전제하며, 높은 독립등급도 잘못 설계된 감사 질문의 타당성을 보증하지 않는다. 따라서 현재 상태는 선행경계 보강이지 Project 검증이 아니다.
+- **기여자:** 원안·분석 Mohamed Chahine Ghanem; 공개 교차지도 편집 Project Intersection maintainers.
+
 ---
 
 ## 2. Historical cases with the closest structural match
@@ -270,6 +279,7 @@ Primary/high-authority starting points:
 - U.S. DOT OIG (2021). *Weaknesses in FAA's Certification and Delegation Processes Hindered Its Oversight of the 737 MAX 8*.
 - Turner, A. M. et al. (2021). "Optimal Policies Tend To Seek Power." NeurIPS 2021; arXiv:1912.01683.
 - OpenAI (2026-08-26). "The Hugging Face incident and the road ahead."
+- Ghanem, M. C. (2026). *Who Audits Whom, on What Substrate, with What Evidence? An Independence-Graded Audit Protocol for Agentic AI*. DOI 10.48550/arXiv.2609.18272.
 
 ---
 
