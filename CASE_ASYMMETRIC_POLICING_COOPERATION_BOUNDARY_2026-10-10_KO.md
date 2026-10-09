@@ -343,3 +343,47 @@ distribution:
 단속건수가 같아도 사고가 줄고 사후부담이 증가하면 `deterrence benefit + extraction burden`의 동시발생으로 판정한다. 사고만 보고 공존으로, 부담만 보고 총실패로 닫지 않는다.
 
 반복될수록 더 강해질 수 있는 주체는 수입과 배치권을 함께 가진 주정부·지방정부이며, 더 소모되는 주체는 안전편익을 공유하더라도 짧은 납부기한·연체·면허정지 비용이 집중되는 피단속자다. 역할반전에서는 예산권자와 집행자가 동일한 납부기한·연체제재·이의비용을 부담해도 그 강도를 수용하는지 검사한다.
+
+
+## 12. 표적선택 역전: 구조적 취약성보다 회수가능성·이의비용·정치비용
+
+- 판정일: 2026-10-10
+- scientific delta: `STRONG COUNTEREXAMPLE + TARGET-SELECTION MEASUREMENT`
+- 판정: `MODIFY / SCOPE NARROWING`. 재정압박이 한계 단속을 늘려도 그 증가분이 반드시 기존 최취약집단에 집중된다는 명제는 유지하지 않는다.
+
+### 외부 증거와 귀속
+
+| 계보 | 원안자·연도 | 설계·실제 관측 | DOI/공식 링크 | 독립성·한계 |
+|---|---|---|---|---|
+| L-F Massachusetts 교통범칙금 | Michael D. Makowsky & Thomas Stratmann, 2009 | 지방경찰의 과속범칙금은 속도뿐 아니라 운전자의 이의제기 기회비용·거주지와 지방재정 조건에 반응했다. 재정압박과 재산세 제약 아래 비거주 운전자 표적화가 커졌다. | [AER, 10.1257/aer.99.1.509](https://doi.org/10.1257/aer.99.1.509); [복제자료, 10.3886/E113290V1](https://doi.org/10.3886/E113290V1) | 저자 제공 자료·코드는 공개됐지만 ICPSR이 독립 검증한 복제는 아니다. 범칙금 선택자료로 장기 복지·인종별 기본부담을 직접 식별하지 않는다. |
+| L-G Missouri 재정압박 | Alexes Harris, Elliott Ash & Jeffrey Fagan, 2020 | 2001–2012년 기관자료에서 지방 예산압박은 citation·교통정지 arrest 증가와 연관됐지만 한계효과는 White 운전자에 집중됐고 Black/Latino 운전자에서는 확인되지 않았다. White-to-Black 소득비가 큰 곳과 Black 운전자가 이미 더 과잉단속된 곳에서 상대적 White 효과가 컸다. | [Journal of Race, Ethnicity, and Politics, 10.1017/rep.2020.10](https://doi.org/10.1017/rep.2020.10) | bare budget shortfall 인근 RD를 포함한 준실험이나 무작위 실험은 아니다. White 집중은 Black 운전자의 기본부담 감소나 공정성을 뜻하지 않는다. 능력지불 해석도 관측 proxy에 의존한다. |
+| L-H Indiana 수입보유·재정수요 | Siân Mughan & Akheil Singla, 2023 | 재정수요가 높고 지방정부가 범칙금 수입을 보유할 때 부유한 운전자, 특히 White 운전자의 citation 가능성이 높아졌다. 법원은 미납채무도 더 적극적으로 추심했다. | [Public Administration Review, 10.1111/puar.13595](https://doi.org/10.1111/puar.13595) | L-F/L-G와 연구팀·주·자료가 다른 보완계보이나 직접재현은 아니다. 소득·인종 proxy와 제도경계 밖 부담·안전효과에는 잔여 혼란이 남는다. |
+
+세 계보의 공통 결과는 “취약한 집단이 덜 피해를 본다”가 아니다. 이미 높은 기본단속 부담과 재정압박 뒤의 **한계 증가분**을 분리하면, 집행자는 회수가능성·이의제기 비용·정치적 보복 가능성이 결합된 표적을 선택할 수 있다는 강한 반례다.
+
+### claim 및 측정 수정
+
+- `HIGHEST BASELINE BURDEN != LARGEST MARGINAL REVENUE-TARGETING EFFECT`.
+- `LOW STRUCTURAL POWER != HIGHEST EXPECTED EXTRACTION YIELD`.
+- 구조적 취약성만으로 표적을 예측하지 않고 다음을 경쟁모형으로 둔다.
+
+```
+expected_net_extraction
+  = collectability / ability_to_pay
+  × contest_opportunity_cost
+  × low_electoral_or_political_retaliation
+  × revenue_retention
+  × fiscal_pressure
+  - enforcement_and_collection_cost
+```
+
+이 식은 세 연구가 직접 추정한 단일 방정식이 아니라 Project의 구별용 합성가설이다. 방향과 함수형태를 사실로 승격하지 않는다. 기존 K1 `DEPENDENCE–POWER`, K4 `METRIC–CONTROL FEEDBACK`, K5 `SUPPRESSION–APPARENT CONSENSUS` 안의 표적선택 경계이며 새 first-order kernel은 열지 않는다.
+
+frozen 비교에는 최소한 `resident/nonresident`, 소득·차량가치 등 지불능력 proxy, 법원까지 거리·시간·변호비용, 지역 투표권·정치적 voice, 수입보유 규칙, 예산충격, 집단별 기본 stop/citation/search/arrest 수준과 충격 뒤 한계변화, 실제 납부·연체·채무추심·면허정지, 안전성과를 함께 기록한다. 명목 citation 증가만으로 표적 취약성 또는 공익을 판정하지 않는다.
+
+### 역할반전과 다음 결정검사
+
+- 반복될수록 더 강해지는 주체: 수입을 보유하고 회수가능성이 높은 표적을 선택하는 집행·예산·법원 행위자.
+- 더 소모되는 주체: 기본 과잉단속을 계속 부담하는 집단과, 지방 정치에서 voice가 약하거나 이의비용이 높아 새로 한계 표적이 되는 비거주·고회수가능 집단.
+- 역할반전: 집행자·지역 유권자가 비거주자가 되어 동일한 이동비용·이의절차·추심제재를 감수해도 같은 규칙을 수용하는지 검사한다.
+- 다음 결정검사: 독립 지역의 사전고정 event/RD 설계에서 `fiscal shock × retention × resident status × ability_to_pay × baseline overpolicing` 상호작용과 안전·징수부담을 동시에 측정한다. 기존 최취약집단의 기본부담은 높은데 한계효과만 다른 집단으로 이동하면 표적선택 역전을 지지한다. 미관측은 부재로 닫지 않는다.
