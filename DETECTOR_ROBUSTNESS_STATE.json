@@ -1,14 +1,14 @@
 {
   "schema_version": "1.0",
-  "detector_version": "1.1",
-  "robustness_taxonomy_version": "1.0",
+  "detector_version": "1.2",
+  "robustness_taxonomy_version": "1.1",
   "status": "ACTIVE_ROBUSTNESS_WATCH",
   "first_order_prior_art_status": "PRIOR_ART_FIRST_ORDER_SATURATED",
   "known_failure_modes": [
     {
       "id": "F1",
       "name": "REPORTING_WINDOW_EFFECT",
-      "evidence": "EMPIRICAL"
+      "evidence": "EMPIRICAL_POLICY_NATURAL_EXPERIMENT"
     },
     {
       "id": "F2",
@@ -28,7 +28,7 @@
     {
       "id": "F5",
       "name": "CLASSIFICATION_DENOMINATOR_SHIFT",
-      "evidence": "CROSS_DOMAIN"
+      "evidence": "EMPIRICAL_METRIC_EFFECT_CAUSAL_INTENT_UNRESOLVED"
     },
     {
       "id": "F6",
@@ -38,7 +38,7 @@
     {
       "id": "F7",
       "name": "DETECTOR_AGING",
-      "evidence": "STRUCTURAL"
+      "evidence": "EMPIRICAL_REAL_WORLD_DRIFT_SUPPORT"
     }
   ],
   "invariants": [
@@ -46,7 +46,8 @@
     "CORRELATED_AGREEMENT != INDEPENDENT_CONFIRMATION",
     "POINT_IN_TIME_METRIC != LONG_HORIZON_STATE",
     "LOCAL_METRIC_IMPROVEMENT != SYSTEM_LEVEL_IMPROVEMENT",
-    "DETECTOR_DEPLOYMENT_CAN_CHANGE_BEHAVIOR"
+    "DETECTOR_DEPLOYMENT_CAN_CHANGE_BEHAVIOR",
+    "MORE_MONITORING_CAN_INCREASE_DETECTION_AND_ADAPTATION_PRESSURE"
   ],
   "reopen_conditions": [
     "NEW_CAUSAL_FAILURE_MODE",
@@ -59,17 +60,22 @@
     "DETECTOR_FALSE_POSITIVE_EVIDENCE"
   ],
   "open_unknowns": [
-    "LOW_AND_SLOW_DIRECT_FIELD_CASE",
     "SHADOW_MEASURE_CONTAMINATION_FIELD_CASE",
     "MONITOR_DIVERSITY_EFFECT_SIZE",
-    "LINEAGE_INDEPENDENCE_MINIMUM_METRIC"
+    "LINEAGE_INDEPENDENCE_MINIMUM_METRIC",
+    "MONITORING_INTENSITY_NET_EFFECT"
   ],
   "failed_rules": [],
   "superseded_rules": [],
   "last_material_delta": {
-    "type": "ROBUSTNESS_TAXONOMY_CREATED",
-    "source_file": "DETECTOR_BYPASS_ROBUSTNESS_WATCH_KO.md"
+    "type": "FIELD_ROBUSTNESS_VALIDATION",
+    "source_file": "CASE_DETECTOR_ROBUSTNESS_FIELD_VALIDATION_KO.md",
+    "findings": [
+      "F1 strengthened by reporting-frequency natural experiment",
+      "F5 upgraded to empirical metric effect; intentional manipulation remains unresolved",
+      "F7 upgraded with real-world data-drift evidence"
+    ]
   },
-  "next_discriminating_test": "Find a public time-series case where a detector or regulatory metric changed, then test whether behavior migrated across time, organizational perimeter, classification, or verifier lineage.",
-  "update_policy": "Material delta only; preserve counterexamples and failed rules; reopen prior conclusions when detector validity changes."
+  "next_discriminating_test": "Find a public before/after case where a new monitor or metric was introduced, then test whether improvement remained in long-horizon system-level outcomes after fixed-definition replay.",
+  "update_policy": "Material delta only; preserve counterexamples and failed rules; revalidate representation, denominator, temporal window, system boundary, and data distribution before extending detector confidence."
 }
