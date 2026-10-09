@@ -77,6 +77,7 @@ Project Intersection은 **권력·인센티브·시점·practical exit·복구�
 
 - [Research Overview → RESEARCH_OVERVIEW.md](RESEARCH_OVERVIEW.md) — detailed concepts and research framing / 상세 개념·연구 프레임
 - [Core Research Specification v1 → CORE_RESEARCH_SPEC_V1_KO.md](CORE_RESEARCH_SPEC_V1_KO.md) — minimum executable logic linking asymmetry, counterfactual extinction, option-space, causal identification, and Project self-audit / 비대칭·반사실 소멸·옵션공간·인과식별·자기감사를 연결한 최소 실행 명세
+- [Public Continuity Capsule → CONTINUITY_CAPSULE_PUBLIC_KO.md](CONTINUITY_CAPSULE_PUBLIC_KO.md) — minimum handoff/restart path if the current AI session or subscription is unavailable / 현재 AI 세션·구독 없이도 이어가기 위한 최소 인계·재개 경로
 - [Counterfactual Extinction / Convergence Trace → CONVERGENCE_TRACE_FORMALISM_KO.md](CONVERGENCE_TRACE_FORMALISM_KO.md) — when removed alternatives make comparative superiority unidentifiable, and how to trace power/exit/recovery/option-space changes without preselecting a moral conclusion / 제거된 대안 때문에 비교우월성 식별이 사라지는 구조와 권한·exit·복구·옵션 변화를 결과 선결정 없이 역추적하는 형식명세
 - [Long-Horizon Minimum-Sufficient-Intervention Loop → LONG_HORIZON_MIN_INTERVENTION_E2E.md](LONG_HORIZON_MIN_INTERVENTION_E2E.md) — dynamic versioned long-horizon / viability / least-intervention research candidate / 동적 버전업·장기총량·viability·최소충분관여 후보
 - [Research Contents Map → RESEARCH_TOC.md](RESEARCH_TOC.md) — claim families, public links, unresolved gaps / 주장군·공개 링크·미해결 공백
