@@ -145,3 +145,5 @@ The landing page is intentionally short. Detailed theory is separated so that a 
 - [FINAL_PURPOSE_EXECUTION_STATE.json](FINAL_PURPOSE_EXECUTION_STATE.json) — 최종목적 우선순위·hard limits·재개조건 machine-readable 상태
 
 - [TERMINOLOGY_STRUCTURAL_POSITION_ADVANTAGE_KO.md](TERMINOLOGY_STRUCTURAL_POSITION_ADVANTAGE_KO.md) — 구조적 위치우위(SPA), 목적함수 비대칭(OA), 기존지위(INC), 관측행동(BHV)을 분리하는 용어 정본
+
+- [TERMINOLOGY_POWER_ASYMMETRY_GOAL_INCONGRUENCE_KO.md](TERMINOLOGY_POWER_ASYMMETRY_GOAL_INCONGRUENCE_KO.md) — 권력비대칭(PA), 목표불일치(GI), 정보비대칭(IA), 기존지위(INC), 관측행동(BHV)을 분리하는 현재 용어 정본
