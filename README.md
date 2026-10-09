@@ -139,3 +139,7 @@ The landing page is intentionally short. Detailed theory is separated so that a 
 - [DETECTOR_ROBUSTNESS_STATE.json](DETECTOR_ROBUSTNESS_STATE.json) — 탐지기 버전·실패유형·재개조건·미해결을 보존하는 지속상태
 
 - [CASE_DETECTOR_ROBUSTNESS_FIELD_VALIDATION_KO.md](CASE_DETECTOR_ROBUSTNESS_FIELD_VALIDATION_KO.md) — 의료 분모이동·보고빈도 역효과·실제 AI data drift로 탐지기 강건성을 현장 검증
+
+- [PUBLIC_FINAL_PURPOSE_EXECUTION_MAP_KO.md](PUBLIC_FINAL_PURPOSE_EXECUTION_MAP_KO.md) — 최종목적→외부복제·자기감사·blind validation·독립연속성 실행지도
+- [PROJECT_SELF_AUDIT_2026-10-09_KO.md](PROJECT_SELF_AUDIT_2026-10-09_KO.md) — Project 자체의 M–Y 괴리·correlated independence·self-validation 위험 감사
+- [FINAL_PURPOSE_EXECUTION_STATE.json](FINAL_PURPOSE_EXECUTION_STATE.json) — 최종목적 우선순위·hard limits·재개조건 machine-readable 상태
