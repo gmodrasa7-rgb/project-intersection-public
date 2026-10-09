@@ -137,3 +137,5 @@ The landing page is intentionally short. Detailed theory is separated so that a 
 
 - [DETECTOR_BYPASS_ROBUSTNESS_WATCH_KO.md](DETECTOR_BYPASS_ROBUSTNESS_WATCH_KO.md) — 탐지기 우회·노후화·검증계보 상관을 지속 추적하는 강건성 감시
 - [DETECTOR_ROBUSTNESS_STATE.json](DETECTOR_ROBUSTNESS_STATE.json) — 탐지기 버전·실패유형·재개조건·미해결을 보존하는 지속상태
+
+- [CASE_DETECTOR_ROBUSTNESS_FIELD_VALIDATION_KO.md](CASE_DETECTOR_ROBUSTNESS_FIELD_VALIDATION_KO.md) — 의료 분모이동·보고빈도 역효과·실제 AI data drift로 탐지기 강건성을 현장 검증
