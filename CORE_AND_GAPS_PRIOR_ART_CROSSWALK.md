@@ -28,6 +28,14 @@ This file records earlier or adjacent work for concepts already present in the p
 - **Project 운영적 의미:** 선행연구를 사용할 때 논문 단위의 방법론뿐 아니라 `funding / agenda-setting / comparator choice / publication rights / unfavorable-result suppression / institutional front / shared data-model lineage / replication independence`를 별도 변수로 추적한다. 이 변수들은 연구를 자동 배제하기 위한 점수가 아니라, 어떤 증거가 독립적으로 얼마나 재사용 가능한지 판단하는 provenance 정보다.
 - **타 연구 존중:** 이해상충 가능성을 기록하는 것은 연구자나 기관의 기여를 무효화하는 행위가 아니다. 원안·데이터·방법·결과를 정확히 귀속하면서, 주장 강도와 독립성만 별도로 평가한다.
 
+### Case study: selective publication and replication failure / 선택적 출판과 재현실패
+
+- **선택적 출판 사례:** Turner et al. (2008), DOI 10.1056/NEJMsa065779은 FDA에 등록된 12개 항우울제의 74개 임상시험과 출판문헌을 대조했다. 31%의 FDA 등록 연구가 출판되지 않았고, FDA 판단상 긍정 연구는 거의 모두 출판된 반면 부정·불확실 연구는 다수가 미출판되거나 출판문헌에서 더 긍정적으로 보이게 보고되었다. 출판문헌만 보면 94%가 긍정처럼 보였지만 FDA 전체자료에서는 51%였다. 이 사례는 `published literature != full evidence base`임을 보여준다.
+- **재현성 사례:** Open Science Collaboration (2015), DOI 10.1126/science.aac4716은 심리학 100개 연구를 대규모 재현했고, 원 논문의 97%가 통계적으로 유의했던 데 비해 재현 연구에서는 36%가 유의했으며 재현 효과크기는 원 효과의 약 절반 수준이었다. 이는 유명 저널·동료평가·통계적 유의성이 장기 견고성이나 독립 재현을 보장하지 않음을 보여준다.
+- **반례·한계:** Turner et al.은 어떤 단계가 편향을 만들었는지—저자·스폰서의 제출 선택인지, 저널 편집·심사 선택인지—단독으로 식별하지 못했다. Open Science Collaboration 결과도 특정 시기·세 저널·심리학 표본에 관한 것이며 모든 학문이나 모든 개별 연구의 신뢰도를 뜻하지 않는다. 재현 실패는 원 연구의 허위만이 아니라 표본차이·맥락차이·측정오차·복제 설계차이에서도 생길 수 있다.
+- **Project 운영적 의미:** 선행연구 평가는 논문 존재·인용수·저널등급보다 `registry 또는 미출판 원자료 존재 / 결과별 출판확률 / outcome switching / 사전등록 / 독립 재현 / 효과크기 수축 / 맥락 민감도 / replication design fidelity`를 따로 본다. 가능한 경우 전체 등록집합과 출판집합의 차이를 먼저 확인하고, 재현실패를 단순 거짓 판정이 아니라 경계조건 탐색 신호로 사용한다.
+- **타 연구 존중:** 원 연구의 아이디어·방법·데이터 기여는 재현 실패나 선택적 출판 문제와 별개로 정확히 귀속한다. 신뢰도 조정은 기여 삭제가 아니라 주장 범위와 증거강도 조정이다.
+
 ## 1. Core theory families / 핵심 이론군
 
 | Project section | Prior-art relationship | Originator / seminal prior work | Source | Attribution / novelty boundary |
