@@ -134,3 +134,6 @@ The landing page is intentionally short. Detailed theory is separated so that a 
 
 - [EARLY_WARNING_EVALUATION_REPROCESSING_DETECTOR_KO.md](EARLY_WARNING_EVALUATION_REPROCESSING_DETECTOR_KO.md) — 단기보상×평가재가공권 조기탐지기: M–Y 괴리·threshold·shadow/retest·S0–S5
 - [EVALUATION_REPROCESSING_DETECTOR_SCHEMA.json](EVALUATION_REPROCESSING_DETECTOR_SCHEMA.json) — 조기탐지기 machine-readable 입력/판정 schema
+
+- [DETECTOR_BYPASS_ROBUSTNESS_WATCH_KO.md](DETECTOR_BYPASS_ROBUSTNESS_WATCH_KO.md) — 탐지기 우회·노후화·검증계보 상관을 지속 추적하는 강건성 감시
+- [DETECTOR_ROBUSTNESS_STATE.json](DETECTOR_ROBUSTNESS_STATE.json) — 탐지기 버전·실패유형·재개조건·미해결을 보존하는 지속상태
