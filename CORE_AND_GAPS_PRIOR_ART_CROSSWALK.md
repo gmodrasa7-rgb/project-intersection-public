@@ -1032,6 +1032,169 @@ Project가 별도로 검증해야 할 결합:
 
 이 교차지도는 기존 이론을 Project의 정답으로 채택하지 않는다. 각 부분모형이 설명하는 범위를 재사용하고, 서로 충돌하거나 조건부인 결과를 그대로 보존한 뒤, 위 결합항의 증분 설명력과 실제 식별가능성을 시험한다.
 
+### Cross-literature convergence map / 선행연구 수렴방향 지도
+
+서로 다른 학문은 동일한 단어를 쓰지 않지만, 여러 선행연구가 반복적으로 비슷한 동역학을 가리킨다. 여기서 "수렴"은 연구자 합의나 진실확정을 뜻하지 않고, **독립된 이론군에서 반복해서 나타나는 구조적 방향**을 뜻한다.
+
+#### 1. 의존 → 권력 비대칭
+
+- Emerson (1962), *Power-Dependence Relations*, DOI 10.2307/2089716: actor A의 B에 대한 권력은 B의 A에 대한 의존과 연결된다.
+- Pfeffer & Salancik (1978), *The External Control of Organizations*: 조직은 외부 자원 의존 때문에 제약·통제를 받으며, 불확실성을 줄이기 위해 환경을 바꾸거나 관계를 흡수·관리하려는 행동을 할 수 있다.
+
+**수렴방향 후보:**  
+`critical-resource dependence ↑ → bargaining asymmetry ↑ → control-seeking / uncertainty absorption ↑`
+
+**경계:** 의존은 고정되지 않으며 대체자원·다중관계·환경변화로 재균형될 수 있다.
+
+#### 2. 작은 우위 → 누적우위
+
+- Merton (1968), *The Matthew Effect in Science*, DOI 10.1126/science.159.3810.56: 이미 인정받은 과학자가 더 많은 신용과 가시성을 얻는 누적우위 문제를 제기했다.
+- van de Rijt et al. (2014), DOI 10.1073/pnas.1316836111: 무작위로 부여된 초기 성공이 이후 성공률을 유의하게 높였지만, 초기 우위 크기에 대한 수익은 감소해 runaway가 무제한적이지 않음을 보였다.
+
+**수렴방향 후보:**  
+`initial advantage → visibility/reward ↑ → future advantage probability ↑`
+
+**경계:** positive feedback에는 diminishing return이 있을 수 있고, 누적우위가 무한확대된다는 강한 버전은 지지되지 않는다.
+
+#### 3. 사회적 관측 → cascade·불평등·예측불가능성
+
+- Bikhchandani, Hirshleifer & Welch (1992), DOI 10.1086/261849: 앞선 사람의 행동을 본 개인이 자기 사적정보보다 기존 행동을 따르는 informational cascade 가능성을 모델링했다.
+- Salganik, Dodds & Watts (2006), DOI 10.1126/science.1121066: 인위적 음악시장에서 사회적 영향이 강할수록 성공의 불평등과 예측불가능성이 증가했다.
+
+**수렴방향 후보:**  
+`social observation ↑ → independent signal use ↓ → correlated choice ↑ → concentration / unpredictability ↑`
+
+**경계:** 품질은 완전히 무관하지 않았고, cascade는 취약해서 새로운 정보로 깨질 수 있다.
+
+#### 4. positive feedback → path dependence·lock-in
+
+- Arthur (1989), DOI 10.2307/2234208: increasing returns 아래에서 역사적 사건이 경제를 반드시 효율적이지 않은 기술경로에 lock-in시킬 수 있으며 rational expectations도 이를 강화할 수 있음을 모델링했다.
+- Sydow, Schreyögg & Koch (2009/2020), DOI 10.5465/amr.34.4.zok689; DOI 10.5465/amr.2020.0163: 조직의 path dependence를 self-reinforcing mechanism과 lock-in의 단계적 과정으로 이론화하고 이후 비판·확장을 검토했다.
+
+**수렴방향 후보:**  
+`local reinforcement ↑ → alternative relative viability ↓ → switching/restoration cost ↑ → path persistence ↑`
+
+**경계:** path dependence가 곧 비효율을 의미하지 않으며, 어떤 self-reinforcing mechanism이 실제 작동했는지 식별해야 한다.
+
+#### 5. 신뢰성·정당성 → 구조적 관성
+
+- Hannan & Freeman (1984), DOI 10.2307/2095567: 조직의 reliability/accountability와 선택과정이 구조적 inertia와 연결될 수 있음을 제시했다.
+- Hannan (1997), DOI 10.1177/017084069701800202: population aging, institutionalization, population structure가 조직집단의 inertia와 진입패턴에 영향을 줄 수 있음을 경험적으로 검토했다.
+
+**수렴방향 후보:**  
+`reproducibility / institutionalization ↑ → core-structure persistence ↑ → adaptation cost ↑`
+
+**경계:** 관성은 단순 무능이 아니라 신뢰성·책임성의 부산물일 수 있다. 따라서 변화저항을 자동으로 해로운 기득권으로 해석하면 안 된다.
+
+#### 6. 불확실성·의존 → 조직 동형화
+
+- DiMaggio & Powell (1983), DOI 10.2307/2095101: coercive, mimetic, normative isomorphism을 통해 조직들이 점점 비슷해질 수 있음을 설명하고, 자원의 중앙집중·의존·목표모호성·기술불확실성 등을 관련 조건으로 제시했다.
+
+**수렴방향 후보:**  
+`uncertainty/dependence ↑ → imitation/coercion/professional normalization ↑ → structural diversity ↓`
+
+**경계:** similarity는 반드시 지배·착취가 아니며 coordination·legibility·compatibility 편익도 있을 수 있다.
+
+#### 7. 위임·정보비대칭 → 감시·통제 확대
+
+- Miller (2005), DOI 10.1146/annurev.polisci.8.082103.104840 및 Gailmard & Patty (2012), DOI 10.1146/annurev-polisci-031710-103314: principal-agent 관계에서 정보비대칭·위임·전문성이 monitoring과 control design 문제를 만든다는 광범위한 문헌을 정리한다.
+- Poth & Selck (2009), DOI 10.1111/j.1467-9256.2009.01349.x: principal-agent 관계에서 'artificial information asymmetry' 자체를 별도 분석대상으로 제안했다.
+
+**수렴방향 후보:**  
+`delegation/expertise gap ↑ → information asymmetry ↑ → monitoring/control demand ↑`
+
+**Project 중요 경계:** 감시 확대가 실제 정보비대칭을 줄이는지, 아니면 raw-data/평가권을 한쪽에 더 집중시켜 2차 비대칭을 만드는지는 별도 검증해야 한다.
+
+#### 8. 규제·평가권 → capture 가능성, 그러나 비필연성
+
+- Stigler/Peltzman 계열은 규제와 이해집단 편익을 self-interest 관점에서 모델링했다.
+- Carpenter & Moss (eds., 2013/2014), DOI 10.1017/CBO9781139565875는 capture가 정도와 형태에서 다양하며 ubiquitous하지 않고 부분적으로 예방 가능하다고 정리한다.
+
+**수렴방향 후보:**  
+`concentrated stakes + privileged access + weak countervailing capacity → capture risk ↑`
+
+**반대수렴:**  
+`transparency + institutional capacity + countervailing actors + review/appeal → capture risk ↓`
+
+#### 9. 조직 성장 → oligarchy 가설, 그러나 철칙 아님
+
+- Michels의 고전적 oligarchy 가설은 조직화가 지도부·전문성·정보집중을 통해 권력집중으로 갈 수 있다고 주장했다.
+- Leach (2005), DOI 10.1111/j.0735-2751.2005.00256.x는 oligarchy 개념과 측정의 불충분성을 지적했다.
+- Diefenbach (2019), DOI 10.1177/0170840617751007 및 NGO 연구(DOI 10.1016/0305-750X(94)90065-5)는 oligarchization이 필연이라는 강한 명제를 비판하고 수평·수직 네트워크가 민주적 특성을 유지할 가능성을 제시했다.
+
+**수렴방향 후보:**  
+`coordination complexity ↑ → specialized leadership/information concentration ↑ → oligarchic tendency possible`
+
+**반대수렴:**  
+`horizontal ties + distributed participation + countervailing organization → concentration can be interrupted`
+
+---
+
+### 통합 수렴지도
+
+여러 분야를 공통 상태전이 언어로 바꾸면 다음 후보구조가 반복된다.
+
+```
+initial advantage / critical resource control / expertise gap
+        ↓
+dependence or information asymmetry
+        ↓
+monitoring·coordination·control concentration
+        ↓
+switching cost / institutionalization / imitation / social proof
+        ↓
+alternative independence and diversity decline
+        ↓
+current path receives more data·resources·legitimacy
+        ↓
+relative performance of incumbent path appears stronger
+        ↓
+further dependence / reinforcement
+```
+
+이는 Project의 다음 루프와 강하게 겹친다.
+
+```
+control-rights concentration
+→ option-space reduction
+→ dependence increase
+→ switching/restoration cost increase
+→ incumbent relative performance increases or appears to increase
+→ legitimacy / necessity increases
+→ additional control-rights concentration
+```
+
+하지만 선행연구의 **공통 반례 방향**도 분명하다.
+
+```
+alternative resources
++ practical exit
++ horizontal/countervailing networks
++ independent information
++ appeal/review
++ recoverability
++ preserved comparators
+→ self-reinforcing concentration can weaken or reverse
+```
+
+따라서 현재 문헌이 가리키는 가장 강한 결론은 "권력집중은 필연"이 아니다.
+
+더 좁게는:
+
+> **의존·positive feedback·switching cost·정보비대칭·제도화가 동시에 증가하고, 독립 대안·exit·복구·countervailing capacity가 감소하면 자기강화 집중이 발생할 조건이 증가한다. 반대로 독립 대안과 교정경로가 살아 있으면 동일한 초기 비대칭이 반드시 지배적 lock-in으로 이어지지는 않는다.**
+
+### Project 추가 검증 잔차
+
+기존 문헌을 통합한 뒤 남는 중요한 검증문제:
+
+1. 위 메커니즘들이 하나의 시스템에서 동시에 존재할 때 상호작용이 단순합인지 비선형인지.
+2. `control-rights concentration`이 어느 임계점에서 option-space의 실질 독립성을 급격히 떨어뜨리는지.
+3. comparator 제거가 실제 성과와 자기검증 착시를 얼마나 분리불가능하게 만드는지.
+4. practical exit와 recovery를 함께 보존할 때 lock-in이 얼마나 약화되는지.
+5. AI처럼 인지·평가·정보선택·실행을 동시에 수행할 수 있는 actor에서 고전적 조직/시장 메커니즘이 어떻게 달라지는지.
+6. 초기 우위가 diminishing return으로 안정화되는 경우와 tipping-point/hysteresis로 넘어가는 경우의 판별변수.
+7. self-reinforcing concentration이 실제 장기 효율을 높이는 경우와 장기 탐색공간을 파괴하는 경우를 가르는 조건.
+
 ### Project-added integration and unresolved candidates
 
 After integrating prior work and preserving its attribution, the strongest unvalidated Project-added combinations or unresolved candidates are:
