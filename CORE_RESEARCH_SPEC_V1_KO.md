@@ -803,6 +803,42 @@ RC  = expected consequence/cost if detected
 
 ---
 
+### 32.1 STI/ERP 벡터화
+
+교차사례 검증 결과, `STI`와 `ERP`를 단일 scalar로 두면 정보가 손실된다.
+
+```
+STI = [
+  monetary,
+  employment,
+  promotion,
+  reputation,
+  hierarchy_target,
+  resource,
+  temporal
+]
+
+ERP = [
+  object_creation,
+  data_entry,
+  sampling,
+  timing,
+  metric_definition,
+  disclosure_visibility,
+  evidence_context,
+  evaluation_aware_behavior
+]
+```
+
+따라서 이후에는 `STI × ERP`를 하나의 수치로 곱하기보다
+어떤 incentive component와 어떤 reprocessing channel이 결합했는지 기록한다.
+
+Wells Fargo / Phoenix VA / Atlanta APS 교차사례는
+`STI != cash incentive only`와
+`ERP != report editing only`를 보여주는 비교사례다.
+
+---
+
 ## 33. 선택식
 
 행위자는 관측된 보상구조 아래에서
