@@ -95,3 +95,5 @@ Project Intersection은 **권력·인센티브·시점·practical exit·복구�
 The landing page is intentionally short. Detailed theory is separated so that a first-time reviewer can reach evidence and reproduction paths before reading the full research narrative.
 
 첫 방문자가 전체 이론서술보다 증거·재현경로를 먼저 찾을 수 있도록 landing page는 의도적으로 짧게 유지한다.
+
+- [PRIOR_ART_SATURATION_MAP_KO.md](PRIOR_ART_SATURATION_MAP_KO.md) — 선행연구 포화검색·수렴/반수렴·왜곡·경계조건 지도
