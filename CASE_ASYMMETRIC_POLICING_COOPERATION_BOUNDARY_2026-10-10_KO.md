@@ -174,3 +174,56 @@ CENTRALIZED_ENFORCEMENT_EFFECT
 - evaluator 수익과 대상 손실의 반복 누적
 
 유급 조건의 협력 저하가 독립팀·현실제도 자료에서도 재현되고, 오제재 불가능성과 수익분리를 통해 회복되면 `profit-linked enforcement reversal`을 Project의 현실 경계조건으로 승격한다. 미재현은 부재가 아니라 해당 모집단·기간·제도경계에서의 negative result로 남긴다.
+
+
+## 9. 현실 자연실험: 수익연계 집행의 혼합효과와 시스템 경계
+
+- 판정일: 2026-10-10
+- scientific delta: `STRONG COUNTEREXAMPLE + OUTCOME-DOMAIN REVERSAL + SYSTEM-BOUNDARY MEASUREMENT`
+- 판정: `MODIFY / SCOPE NARROWING`. 앞 절의 온라인 실험에서 관측된 협력 저하를 현실 집행제도의 보편효과로 승격하지 않는다.
+
+### 상반된 외부 계보
+
+| 계보 | 원안자·연도 | 설계·실제 관측 | DOI/공식 링크 | lineage·이해상충·한계 |
+|---|---|---|---|---|
+| L-D 미국 1984년 연방 수익배분 자연실험 | Shawn Kantor, Carl T. Kitchens, Steven Pawlowski, 2021 | 1984년 Comprehensive Crime Control Act가 합동 연방작전 몰수수익의 최대 80%를 지방 집행기관에 배분한 변화와 기존 주법 차이를 이용했다. 연방제도가 기존 주법보다 더 많은 보유를 허용한 지역에서 범죄가 약 17% 감소했고 마약체포는 약 37% 증가했으나, 교통단속에서 자원이 이동한 것으로 보이는 도로 사망 증가도 보고됐다. | [Economic Inquiry, 10.1111/ecin.12952](https://doi.org/10.1111/ecin.12952) | FBI UCR·정부자료 기반, 공개자료 배지. 범죄감소와 자원재배치를 함께 보인 강한 반례지만, 재산권 침해·분배부담·신뢰·장기 회복을 직접 측정하지 않았고 모든 동시 정책변화를 완전히 제거했다고 단정할 수 없다. |
+| L-E 뉴멕시코 2015년 몰수개혁 비교 | Jennifer McDonald, Harrison Weeks, Dick M. Carpenter II, 2024(온라인 공개; 2026 권·호) | 민사몰수와 형사몰수의 기관 재정유인을 없앤 뉴멕시코 개혁 전후 9년 월별 자료를 콜로라도·텍사스와 비교했다. 개혁 뒤 범죄 악화나 체포 감소를 발견하지 못했다. | [Criminal Justice Review, 10.1177/07340168241285569](https://doi.org/10.1177/07340168241285569) | L-D와 다른 시기·자료·개입의 별도 계보이나 직접재현은 아니다. 저자 전원이 몰수개혁을 지지·소송하는 Institute for Justice 소속이므로 사명 기반 이해관계를 명시한다. 예산 보전·대체와 장기 표적 이동이 null을 가릴 가능성이 남는다. |
+
+보조 관측으로 Holcomb et al.(2011)은 주법이 몰수에 더 제한적이고 재정적으로 덜 보상적일수록 연방 equitable-sharing 수입이 많다는 연관을 보고했다. 이는 제한을 우회하는 경로와 수익유인에 대한 집행행동 반응을 시사하지만 자연실험 수준의 인과증거로 세지 않는다. [Journal of Criminal Justice, 10.1016/j.jcrimjus.2011.02.004](https://doi.org/10.1016/j.jcrimjus.2011.02.004)
+
+### 사실 / 해석 / 미검증 가정
+
+- 사실: L-D에서는 수익보유 유인이 커진 뒤 범죄감소·마약체포 증가·도로사망 증가가 함께 관측됐다.
+- 사실: L-E에서는 재정유인을 제거한 뒤 비교주 대비 범죄·체포 악화가 관측되지 않았다.
+- 해석: 수익연계 집행은 전체 노력량만 바꾸는 것이 아니라 수익성이 높은 영역으로 집행을 재배치하고, 선택한 시스템 경계 밖에 비용을 이동시킬 수 있다.
+- 미검증: L-D의 범죄감소가 재산상실·오류·회복비용보다 큰 총복지 개선인지, L-E의 null이 예산 보전·표적 대체·측정창 밖 효과 때문이 아닌지는 확정되지 않았다.
+- 두 연구의 불일치는 어느 한쪽을 폐기할 근거가 아니라 `budget additionality / appropriation backfill / effort reallocation / outcome domain / target burden`을 경쟁가설 판별변수로 추가할 근거다.
+
+### claim 재수정
+
+- `PROFIT_LINKED_ENFORCEMENT != UNIFORMLY HARMFUL`.
+- `LOCAL CRIME REDUCTION != SYSTEM_LEVEL WELFARE IMPROVEMENT`.
+- `MORE ENFORCEMENT IN ONE DOMAIN CAN REDUCE ENFORCEMENT ELSEWHERE`.
+- 제재자의 사적 수익은 협력을 낮출 수도 있지만 특정 범죄를 낮출 수도 있다. 방향은 수익의 예산 추가성, 지방예산 상계, 집행 대체 가능성, 표적·비표적 집단의 부담, 관측기간과 시스템 경계의 함수다.
+- Project 고유 잔차는 “수익동기” 개념이 아니라 범죄·체포 같은 수혜지표와 재산박탈·오류·이의제기·교통사망·예산대체를 같은 frozen boundary에서 함께 판정하는 설계다.
+- 새 first-order kernel은 열지 않는다. 결과는 K1 `DEPENDENCE–POWER`, K4 `METRIC–CONTROL FEEDBACK`, K6 `COUNTERFACTUAL EXTINCTION`에 매핑하며 `PRIOR_ART_FIRST_ORDER_SATURATED`를 유지한다.
+
+### 다음 최소 결정검사
+
+여러 주의 수익보유·몰수개혁을 대상으로 개입 전 분석계획과 시스템 경계를 고정한 stacked event-study 또는 synthetic-control 비교를 수행한다.
+
+1. 처리: 법정 보유율뿐 아니라 실제 몰수수입, 기관예산에 추가된 순액, 지방교부·세출 상계.
+2. 집행 재배치: 범죄유형별 체포, 마약·교통 단속, 인력시간과 지출.
+3. 수혜: 범죄유형별 피해·신고·검거와 장기 추세.
+4. 부담: 압수 건수·가액·유죄판결 여부, 집단별 분포, 이의제기율, 반환시간·법률비용.
+5. 경계 밖 효과: 교통사망, 인접관할 이동, 대체 수입원·proxy migration.
+6. 회복·독립성: appeal/return 성공, 기관 외부 검토, 예산충격 후 서비스 회복.
+
+범죄만 개선되고 표적 부담·교통사망·예산의존이 악화되면 `aggregate benefit masking redistributed harm`이 강화된다. 재정유인을 제거해도 범죄·체포가 유지되고 부담·외부비용이 낮아지면 수익연계의 필요성 주장은 약해진다. 반대로 독립자료에서 순예산 추가성과 범죄감소가 재현되고 외부비용·분배부담이 증가하지 않으면 앞 절의 보편적 역전 해석은 더 좁혀야 한다.
+
+### 역할반전과 반복구조
+
+- 반복될수록 더 강해질 수 있는 주체: 몰수수익을 보유하고 집행영역을 선택하는 기관, 그 수입을 예산에 내재화한 지방정부.
+- 더 소모될 수 있는 주체: 재산을 먼저 잃고 반환비용을 부담하는 대상, 수익성이 낮아진 안전업무의 수혜자, 집행재배치로 도로위험을 떠안는 대중.
+- 역할반전: 현재 수익보유 기관이 압수 대상이 되어도 동일한 증명책임·선집행·반환지연을 수용하는가. 범죄감소의 수혜자가 재산상실·교통위험 비용까지 같은 확률로 부담해도 제도를 선택하는가.
+- 결론: 현실 자료는 “수익유인→협력 붕괴”의 단선적 외삽을 반증한다. 동시에 단일 범죄지표 개선만으로 장기 공존·독립성·총복지 개선을 판정하는 것도 반증한다.
