@@ -450,3 +450,193 @@ Project의 수렴 주장에 최소 필요한 것은 다음이다.
 10. 외부 사례로 일반화할 때 transfer assumption을 명시할 것.
 
 이 조건을 통과하지 못하면 도덕적 직관이나 서사와 무관하게 `UNRESOLVED`로 둔다.
+
+
+---
+
+## 19. Counterfactual extinction / 제거된 미래의 미관측
+
+시스템이 어떤 선택으로 대안 경로를 제거하면, 제거된 경로의 후속 성과는 실제 관측되지 않는다.
+
+따라서 관측 데이터는 구조적으로 다음처럼 비대칭해질 수 있다.
+
+```
+chosen path outcome      -> observed
+eliminated path outcome  -> unobserved / counterfactual
+```
+
+이 비대칭 때문에 다음 자기강화 루프가 가능하다.
+
+```
+choice
+→ alternative path removed
+→ removed future becomes unobservable
+→ only chosen-path outcome remains measurable
+→ measured success attributed to current policy
+→ confidence in current policy increases
+→ additional alternatives removed
+```
+
+이를 `COUNTERFACTUAL_EXTINCTION_LOOP`로 둔다.
+
+핵심은 제거된 미래가 실제로 더 좋았다고 가정하는 것이 아니다.
+
+핵심은 **비교대상 자체가 사라져 성과비교가 불가능해지는 구조**다.
+
+---
+
+## 20. Unobserved option loss / 미관측 선택지 손실
+
+시점 t의 option-space를 `O(t)`라고 할 때 단순한 현재 옵션 수만 보지 않는다.
+
+```
+ObservedOptionLoss(t) = O(t) - O(t+1)
+```
+
+그러나 제거된 옵션의 미래가치는 관측되지 않으므로 다음 항을 별도로 둔다.
+
+```
+UOL(t) = Unobserved Future Value of Removed Options
+```
+
+`UOL(t)`은 직접 측정값이 아닐 수 있으므로 수치 하나로 임의 추정하지 않는다.
+
+대신 다음 proxy를 추적한다.
+
+```
+- number of eliminated alternatives
+- reversibility of elimination
+- cost to restore eliminated options
+- diversity of removed strategies
+- independence of removed actors/data/models
+- time horizon over which restoration remains possible
+- evidence that removed options had unique search value
+```
+
+따라서 `미관측 = 0`으로 두지 않는다.
+
+```
+unobserved counterfactual value != zero
+```
+
+---
+
+## 21. Self-validation bias from path pruning / 경로가지치기 자기검증 편향
+
+다음 조건이 동시에 생기면 현재 정책의 성과평가가 자기검증적으로 왜곡될 수 있다.
+
+```
+A1 = alternatives removed
+A2 = removed alternatives no longer generate comparable outcomes
+A3 = evaluator observes only surviving path
+A4 = success metric is defined on surviving path
+A5 = restoration/re-entry cost increases over time
+```
+
+이 경우:
+
+```
+ObservedSuccess(current_path)
+```
+
+는
+
+```
+CurrentPath > EliminatedAlternatives
+```
+
+를 증명하지 않는다.
+
+즉:
+
+```
+survivor performance != comparative superiority
+```
+
+---
+
+## 22. Counterfactual preservation requirement / 반사실 보존 요구
+
+가능한 경우 대안을 완전히 제거하기 전에 최소한 다음 중 하나를 보존한다.
+
+```
+shadow evaluation
+holdout branch
+parallel pilot
+archived policy state
+reversible rollback point
+independent external comparator
+simulation replay
+delayed irreversible commitment
+```
+
+목적은 대안을 영구 유지하는 것이 아니라, 비교가능성을 완전히 소멸시키지 않는 것이다.
+
+이 요구는 도덕규칙이 아니라 **식별가능성 보존 규칙**이다.
+
+---
+
+## 23. Counterfactual observability score / 반사실 관측가능성
+
+결정 d에 대해 다음 축을 별도로 기록한다.
+
+```
+COBS(d) = [
+  ComparatorPersistence,
+  Reversibility,
+  Replayability,
+  IndependentMeasurement,
+  RestorationFeasibility,
+  AlternativeLineageDiversity
+]
+```
+
+총점 하나로 압축하지 않는다.
+
+축 중 어느 것이 붕괴했는지 그대로 남긴다.
+
+---
+
+## 24. 폐루프 경보조건
+
+다음 조합은 `COUNTERFACTUAL_EXTINCTION_RISK` 후보로 올린다.
+
+```
+OptionSpace ↓
+Reversibility ↓
+ComparatorPersistence ↓
+RestorationCost ↑
+CurrentPolicyConfidence ↑
+IndependentCorrection ↓
+```
+
+여기서 마지막 두 항이 중요하다.
+
+현재 정책에 대한 신뢰가 높아질수록 독립 비교경로가 줄어드는 구조라면, 성과가 실제 우월성인지 비교대상 제거의 산물인지 분리하기 어려워진다.
+
+---
+
+## 25. 타당성 규칙
+
+다음 추론은 금지한다.
+
+```
+"다른 경로는 관측되지 않았다"
+→ "다른 경로는 가치가 없었다"
+```
+
+또한 다음도 금지한다.
+
+```
+"현재 경로가 성과를 냈다"
+→ "제거된 대안보다 우월하다"
+```
+
+허용되는 결론은 다음 수준이다.
+
+```
+current-path performance observed
+comparative superiority unresolved unless counterfactual preserved/identified
+```
+
+이 규칙은 Project 내부 연구, AI 시스템, 조직, 정책, 시장구조 모두에 동일하게 적용한다.
