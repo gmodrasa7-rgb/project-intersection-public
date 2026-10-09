@@ -67,6 +67,15 @@ A match to prior art is not counted as Project novelty. The Project-specific rem
 - **반례·한계:** 세 문서는 모두 **Active PAR**이며 최종 승인 표준이 아니다. 공개된 것은 개발 범위와 목표이고, 규정 준수의 현장 효과·감사 독립성·실제 rollback 성공·피해 당사자 exit 개선을 입증한 empirical evidence가 아니다. 따라서 Project claim의 자동 반증이나 지지는 아니며, 현재 효과는 prior-art boundary를 좁히는 것에 한정한다.
 - **기여자:** IEEE SA 및 각 working group의 표준개발 작업; 공개 교차지도 편집 Project Intersection maintainers.
 
+### 1.4 Recovery capability and external-effect safety / 복구능력과 외부효과 안전성
+
+- **원출처·원안자·연도:** Dolly Sah, Tanmay Sah, Harshul Jain, Tanya Sah (2026), *UndoBench: Separating Task Competence from Recovery Capability in Tool-Using AI Agents*, DOI [10.48550/arXiv.2610.05622](https://doi.org/10.48550/arXiv.2610.05622). 직접 선행기술은 Garcia-Molina & Salem의 Sagas (1987, DOI 10.1145/38713.38742), Mohan et al.의 ARIES (1992, DOI 10.1145/128765.128770), Helland의 idempotence 논의 (2012, DOI 10.1145/2160718.2160734)다.
+- **기존 construct와 겹침:** paired fault injection, 조건부 복구율, idempotency, write-ahead logging, compensating transaction, 외부효과 이력은 기존 신뢰성·분산시스템·agent benchmark 선행기술이다. 명목 task 성공과 recovery, 내부 rollback과 외부효과 복구를 분리하는 것 자체는 Project 고유 기여로 계상하지 않는다.
+- **독립 실험·negative result:** 12개 held-out workflow, 두 open-weight model, 두 framework, 세 recovery 방식의 2,880 paired trials에서 명목 성공은 83.54%였지만 조건부 복구 성공은 46.72%였다. 확인응답 유실 뒤 naive retry는 53.33%에서 중복 외부효과를 만들었다. client-side idempotency의 평균 우위는 task-cluster 보정 후 통계적으로 확정되지 않았다.
+- **Project 고유 잔차:** 남는 후보는 복구를 ‘내부 상태 복원 / 외부 상태 조정 / 중복·누락 효과 / 피해 당사자 복구비용’으로 분해하고, 이를 복구 실행자의 독립성·시정권·practical exit 및 반복 권력·부담 계정과 함께 측정하는 부분뿐이다.
+- **반례·한계:** 동료평가 전 합성 benchmark이며 frozen confirmatory 실험은 sandbox의 단일 lost-acknowledgment 장애에 집중한다. 다른 장애시점 결과는 post-freeze extension이고 partial-mutation 검사는 적격 workflow 4개뿐이다. 단일 장애 주입은 연쇄·적대적 실패나 실제 피해복구를 입증하지 않으며, 특정 recovery 방식의 보편적 우위도 확정하지 않는다. 미관측은 부재로 닫지 않고 Project 검증으로 계상하지 않는다.
+- **기여자:** benchmark·실험 Dolly Sah, Tanmay Sah, Harshul Jain, Tanya Sah; 분산복구 선행개념 Garcia-Molina, Salem, Mohan 외, Helland; 공개 교차지도 편집 Project Intersection maintainers.
+
 ---
 
 ## 2. Historical cases with the closest structural match
@@ -301,6 +310,10 @@ Primary/high-authority starting points:
 - IEEE Standards Association (2026). P1968, *Recommended Practice for the Governance of Autonomous Artificial Intelligence (AI) Agent Systems*. Active PAR; approved 2026-09-25. https://standards.ieee.org/ieee/1968/12749/
 - IEEE Standards Association (2026). P4211, *Standard for Operational Lifecycle Management and Governance of Generative Artificial Intelligence Systems in Production Environments*. Active PAR; approved 2026-09-25. https://standards.ieee.org/ieee/4211/12757/
 - IEEE Standards Association (2026). P4213, *Standard for Observability of Artificial Intelligence Systems*. Active PAR; approved 2026-09-25. https://standards.ieee.org/ieee/4213/12758/
+- Garcia-Molina, H.; Salem, K. (1987). *Sagas*. DOI 10.1145/38713.38742.
+- Mohan, C. et al. (1992). *ARIES: A Transaction Recovery Method Supporting Fine-Granularity Locking and Partial Rollbacks Using Write-Ahead Logging*. DOI 10.1145/128765.128770.
+- Helland, P. (2012). *Idempotence is not a medical condition*. DOI 10.1145/2160718.2160734.
+- Sah, D.; Sah, T.; Jain, H.; Sah, T. (2026). *UndoBench: Separating Task Competence from Recovery Capability in Tool-Using AI Agents*. DOI 10.48550/arXiv.2610.05622.
 
 ---
 
