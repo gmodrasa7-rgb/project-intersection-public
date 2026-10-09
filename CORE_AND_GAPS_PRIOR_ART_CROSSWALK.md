@@ -1000,6 +1000,38 @@ Use:
 - INT: interpretation authority and evaluator disagreement.
 - VOI: stopping rule for unknown-stakeholder search.
 
+### Incumbency, lock-in, exit, and policy-feedback prior art / 기득권·고착·이탈·정책피드백 선행연구
+
+다음 선행연구는 Project의 최근 `기득권 재생산 / 통제권 집중 / practical exit / option-space / comparator loss` 모델과 직접 겹친다. 이들은 정답이 아니라 재사용 가능한 부분모형과 경계조건이다.
+
+| Prior work | Established contribution / 재사용 가치 | Boundary / 반례·한계 | Project-added integration |
+|---|---|---|---|
+| Albert O. Hirschman (1970), *Exit, Voice, and Loyalty* | 조직·시장 악화에 대한 대응을 exit와 voice로 분리하고, loyalty가 둘의 관계를 바꿀 수 있음을 제시 | 후속 검토는 exit·voice 관계가 단순하지 않고 경험적 결과가 혼합적이라고 지적함; exit 감소가 항상 voice 증가로 이어지지 않음 | practical exit를 단순 존재가 아니라 실제 전환비용·복구가능성·contestability와 연결 |
+| Paul Klemperer (1987), *Markets with Consumer Switching Costs*, DOI 10.2307/1885068 | 학습·거래·인위적 switching cost가 현재 공급자와 미래 경쟁구조를 바꾸고 incumbent advantage를 만들 수 있음을 모델링 | switching cost는 항상 독점·착취를 뜻하지 않으며 초기 경쟁을 강화할 수도 있음 | exit 감소를 권한집중·복구비용·비교대안 소멸과 결합해 장기 동역학으로 추적 |
+| W. Brian Arthur (1989/1994), increasing returns and lock-in | 작은 초기 사건·positive feedback·increasing returns가 비효율적 경로까지 self-reinforcing lock-in시킬 수 있음을 형식화 | lock-in은 네트워크효과만으로 설명되지 않을 수 있고, 모든 path dependence가 비효율을 뜻하지 않음 | 작은 통제 변화가 option-space와 comparator를 제거해 자기검증 폐루프로 가는지 별도 측정 |
+| Paul Pierson (1993; 2000), policy feedback / increasing returns in politics | 정책이 자원·인센티브와 정보·해석틀을 만들며 후속 정치·제도 경로를 바꾸고, timing/sequence와 increasing returns가 장기 지속성을 만들 수 있음을 정리 | 원 논문도 당시 evidence가 많은 경우 illustrative/anecdotal임을 명시; 경로의 존재가 normatively bad를 뜻하지 않음 | 정책·규칙이 자기 정당화 자료와 actor 자원을 동시에 만들어 통제권을 재생산하는지 추적 |
+| George J. Stigler (1971), *The Theory of Economic Regulation*, DOI 10.2307/3003160; Sam Peltzman (1976), DOI 10.1086/466865 | 규제수요·공급을 self-interest/interest-group 관점에서 분석하고, 지배집단의 편익에도 정치적 비용과 한계가 있음을 모델링 | capture는 보편법칙이 아니며 규제는 여러 집단·비용·경쟁의 결과일 수 있음; Peltzman은 지배집단의 이득도 무한히 커지지 않는다고 모델링 | 규제·평가·감사권 집중을 자동 capture로 판정하지 않고 benefit/cost/power/exit 변화와 경쟁모형으로 검증 |
+| Dowding et al. (2000), DOI 10.1023/A:1007134730724 | Hirschman 계열의 exit/voice/loyalty를 경험적으로 검토하고 단순 도식보다 세부 조건 구분이 필요함을 강조 | 원래 직관의 경험적 성과가 기대보다 제한적이라고 평가 | Project가 exit를 단일 binary가 아니라 접근성·전환비용·복구·대안독립성 벡터로 분해해야 한다는 경계조건 |
+
+#### 기능 분해
+
+기존 연구가 이미 강하게 설명하는 부분:
+- switching cost가 의존과 경쟁구조를 바꿀 수 있음;
+- increasing returns와 positive feedback가 path dependence/lock-in을 만들 수 있음;
+- 정책·규칙이 후속 actor의 자원·인센티브·해석틀을 바꾸는 feedback을 만들 수 있음;
+- 규제·평가구조가 이해집단의 이익과 연결될 수 있음;
+- exit/voice 관계가 단순하지 않고 조건부임.
+
+Project가 별도로 검증해야 할 결합:
+- `통제권 집중 + practical exit 감소 + 독립복구 감소 + comparator diversity 감소 + verification/error/recovery cost externalization`의 공동 시계열;
+- 제거된 대안 때문에 비교우월성 식별 자체가 약화되는 `counterfactual extinction`;
+- incumbent가 평가·정보·공개·복구권까지 함께 보유할 때 생기는 self-validation loop;
+- 명목 옵션 수가 아니라 lineage-independent effective option-space;
+- 통제 철회 후에도 상태가 복원되지 않는 hysteresis와 restoration cost;
+- AI/인간/기관 간 역전 가능한 power asymmetry에서 동일 formalism이 성립하는지.
+
+이 교차지도는 기존 이론을 Project의 정답으로 채택하지 않는다. 각 부분모형이 설명하는 범위를 재사용하고, 서로 충돌하거나 조건부인 결과를 그대로 보존한 뒤, 위 결합항의 증분 설명력과 실제 식별가능성을 시험한다.
+
 ### Project-added integration and unresolved candidates
 
 After integrating prior work and preserving its attribution, the strongest unvalidated Project-added combinations or unresolved candidates are:
