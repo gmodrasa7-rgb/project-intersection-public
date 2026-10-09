@@ -998,3 +998,33 @@ STI × ERP × CI
 
 도덕평가가 아니라
 보상구조·권한구조·관측구조가 행동분배를 어떻게 바꾸는지 검증한다.
+
+
+---
+
+## 38. 조기탐지기 연결
+
+단기보상 × 평가재가공권 가설의 실제 탐지는 다음 정본을 사용한다.
+
+- `EARLY_WARNING_EVALUATION_REPROCESSING_DETECTOR_KO.md`
+- `EVALUATION_REPROCESSING_DETECTOR_SCHEMA.json`
+
+판정단계:
+
+```
+S0 NO_STRUCTURAL_EXPOSURE
+S1 STRUCTURAL_EXPOSURE
+S2 STATISTICAL_DISCREPANCY
+S3 REPRODUCIBLE_M_Y_DIVERGENCE
+S4 REPROCESSING_MECHANISM_OBSERVED
+S5 CAUSAL_INFLUENCE_IDENTIFIED
+```
+
+핵심 규칙:
+
+```
+structural exposure != discrepancy != mechanism != causal effect
+```
+
+강한 incentive/target 자체는 이상판정 근거가 아니다.
+독립 shadow measure·field measure·controlled retest가 없는 경우 과도한 승격을 금지한다.
