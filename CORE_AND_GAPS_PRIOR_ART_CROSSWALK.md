@@ -20,6 +20,14 @@ This file records earlier or adjacent work for concepts already present in the p
 
 역사적으로 산업후원·로비·선택적 출판·권위 효과 때문에 널리 유통된 연구가 뒤늦게 수정되거나 반박된 사례가 있으므로, Project는 선행문헌을 효율·사례·귀속을 위한 입력으로 사용하되 자체 검증을 생략하는 면허로 사용하지 않는다. `prior art != truth`, `citation count != validity`, `institutional prestige != independence`, `consensus != independent replication`, `standard != empirical proof`를 유지한다.
 
+### Case study: sponsorship can distort the evidence ecosystem / 산업후원이 증거생태계를 왜곡한 사례
+
+- **담배산업 내부문서 사례:** Drope & Chapman (2001), DOI 10.1136/jech.55.8.588은 1985–1995년 담배회사 내부문서를 분석해, 업계가 환경담배연기 위험을 축소하는 데 우호적인 과학자 네트워크를 구축하고, 법무가 연구 의제에 개입하며, 업계와 분리되어 보이는 조직에 연구비를 제공하고, 불리한 연구의 공개를 막은 사례를 보고했다. 이것은 단순히 '틀린 논문이 있었다'가 아니라 **연구 생산·선택·유통·권위 형성의 lineage 자체가 조작될 수 있음**을 보여주는 역사적 사례다.
+- **산업후원 메타연구:** Lundh et al.의 Cochrane review/update (2017/2018; DOI 10.1002/14651858.MR000033.pub3; DOI 10.1007/s00134-018-5293-7)는 제약·의료기기 연구 75편의 비교문헌을 포함해 산업후원 연구가 비산업후원 연구보다 유리한 efficacy 결과와 결론을 더 자주 보고하는 연관성을 제시했다. 표준 risk-of-bias 항목만으로 이 차이가 충분히 설명되지 않았다는 점도 중요하다.
+- **반대증거·한계:** sponsorship은 bias의 위험요인이지 결과가 거짓임을 뜻하지 않는다. Cochrane 계열 검토 자체도 포함 연구의 높은 편향위험, 이질성, clustering·중복 가능성, confounding 문제를 가진다. 산업후원 연구 중 방법론적으로 강한 연구도 존재할 수 있다. 따라서 `industry funded -> false`도 금지하고, `non-industry -> independent/true`도 금지한다.
+- **Project 운영적 의미:** 선행연구를 사용할 때 논문 단위의 방법론뿐 아니라 `funding / agenda-setting / comparator choice / publication rights / unfavorable-result suppression / institutional front / shared data-model lineage / replication independence`를 별도 변수로 추적한다. 이 변수들은 연구를 자동 배제하기 위한 점수가 아니라, 어떤 증거가 독립적으로 얼마나 재사용 가능한지 판단하는 provenance 정보다.
+- **타 연구 존중:** 이해상충 가능성을 기록하는 것은 연구자나 기관의 기여를 무효화하는 행위가 아니다. 원안·데이터·방법·결과를 정확히 귀속하면서, 주장 강도와 독립성만 별도로 평가한다.
+
 ## 1. Core theory families / 핵심 이론군
 
 | Project section | Prior-art relationship | Originator / seminal prior work | Source | Attribution / novelty boundary |
