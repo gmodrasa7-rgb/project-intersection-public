@@ -85,6 +85,15 @@ A match to prior art is not counted as Project novelty. The Project-specific rem
 - **반례·한계:** 금융감사와 frontier-AI 평가는 법적 책임·데이터형태·기술변화속도·공급자 전문성 구조가 다르므로 직접 전이할 수 없다. 2019 결과는 관측자료의 연관성이며 concentration의 인과효과를 단독 확정하지 않는다. audit-quality proxy도 실제 위해탐지와 동일하지 않다. 따라서 이 문헌은 AI 평가 포획의 증거가 아니라 historical/empirical analogue와 측정 baseline이다.
 - **기여자:** Gunn, Kawada, Michas 및 위 반대증거 연구 저자들; 공개 교차지도 편집 Project Intersection maintainers.
 
+### 1.6 AEF-1 operating conditions and a field self-audit / AEF-1 운영조건과 실제 자체감사
+
+- **원출처·주체·연도:** AI Evaluator Forum (2025), *AEF-1: Minimum Operating Conditions for Independent Third Party AI Evaluations*, Version 1, updated 2025-12-04. 공식 페이지: https://aievaluatorforum.org/initiatives/minimum-operating-conditions . 2026년 METR *Frontier Risk Report (February to March 2026)*는 해당 기준을 실제 third-party assessment에 적용한 operating-conditions 표를 공개했다: https://metr.org/blog/2026-05-19-frontier-risk-report/ .
+- **기존 construct와 겹침:** AEF-1은 independent third-party evaluation의 신뢰조건을 충분한 접근·자원, 이해상충 최소화, 분석 자율성, 투명성, 민감정보 보호 등 운영조건으로 명시한다. 따라서 독립성을 단일 라벨이 아니라 access, conflict-of-interest, analysis autonomy, publication/transparency 조건으로 분해해야 한다는 아이디어는 Project 고유 신규성이 아니다.
+- **실제 적용·negative result:** METR는 2026 Frontier Risk Report에서 프로젝트 시작 시 적용 가능한 personnel conflict-of-interest 정책이 없었고 formal recusal/disclosure 절차를 수행하지 않아 AEF-1 요구조건 전부를 충족하지 못했다고 스스로 공개했다. 동시에 METR는 AI 기업·임원으로부터 현금기부를 받지 않는 기관자금 독립 원칙을 두고 있다고 밝히고, 일부 직원의 AI 기업 직원과의 강한 사회적 관계 및 AI lab 인력이 있는 shared research center 사용도 공개했다. 이는 독립 평가기관이라는 조직 라벨만으로 실제 독립조건 충족을 추정하면 안 된다는 현장 운영사례다.
+- **Project 고유 잔차:** 남는 후보는 AEF-1형 절차 공개를 넘어, 평가자 지정·해임권, 반복 계약·매출 의존, 원자료 접근, 불리한 결과의 공개·수정 거부권, 시정·복구 실행권, affected counterpart의 practical exit를 실제 결과변수와 연결해 어느 조건이 탐지·교정·복구 성능을 바꾸는지 검증하는 부분이다.
+- **반례·한계:** AEF-1은 자발적 표준이며 방법론 자체의 타당성이나 실제 위해탐지 성능을 보장하지 않는다. METR 사례도 evaluator의 self-report이므로 독립 외부검증으로 세지 않는다. non-compliance 한 건은 독립성이 붕괴했다는 증거가 아니고, 공개 자체는 오히려 transparency가 작동했다는 반대신호다. 따라서 Project claim을 지지하거나 반증하는 empirical proof가 아니라 prior-art boundary와 측정 baseline으로만 사용한다.
+- **기여자:** AI Evaluator Forum 참여기관 및 AEF-1 작성진; METR의 운영조건 공개; 공개 교차지도 편집 Project Intersection maintainers.
+
 ---
 
 ## 2. Historical cases with the closest structural match
