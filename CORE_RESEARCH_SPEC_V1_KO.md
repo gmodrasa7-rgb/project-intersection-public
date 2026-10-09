@@ -1071,3 +1071,28 @@ more monitoring can increase both detection and adaptation pressure
 representation, denominator, temporal window, system boundary,
 input distribution 중 하나라도 변하면
 이전 validation을 자동 연장하지 않는다.
+
+---
+
+## 40. 구조적 위치우위(SPA) 용어 게이트
+
+정본: `TERMINOLOGY_STRUCTURAL_POSITION_ADVANTAGE_KO.md`
+
+행위자 라벨 하나에 구조·목적·기존지위·행동을 합치지 않는다.
+
+`POSITION != OBJECTIVE != INCUMBENCY != BEHAVIOR`
+
+핵심 변수:
+- `SPA` = Structural Position Advantage / 구조적 위치우위
+- `OA` = Objective Asymmetry / 목적함수 비대칭
+- `INC` = Incumbency / 기존지위
+- `BHV` = Observed Behavior / 관측행동
+- `STI` = Short-Term Incentive
+- `ERP` = Evaluation-Reprocessing Power
+
+행위자 지칭이 필요할 때만 `SAA = Structurally Advantaged Actor`를 사용한다.
+`SAI = Structurally Advantaged Incumbent`는 SPA와 INC가 둘 다 확인된 경우에만 사용한다.
+`SAIA`는 핵심변수로 사용하지 않는다.
+
+오해방지 규칙:
+`SPA alone -> no behavioral conclusion`
