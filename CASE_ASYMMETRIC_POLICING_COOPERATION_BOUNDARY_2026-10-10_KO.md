@@ -98,3 +98,79 @@ L-A와 L-B는 연구팀·종·측정·데이터가 달라 상호 독립적인 �
 - claim action: `MODIFY`
 - saturation: `PRIOR_ART_FIRST_ORDER_SATURATED` 유지
 - next decisive observation: 선출/동의와 recall·교체 가능성을 분리하고, 조정자 제거·대체 후 협력과 독립성 지표가 함께 회복되는지 보는 frozen comparison
+
+
+## 8. 역전 경계: 제재자의 사적 수익이 협력 신호를 훼손할 때
+
+- 판정일: 2026-10-10
+- scientific delta: `EDGE REVERSAL + NEW DISCRIMINATING VARIABLES`
+- 원출처: Raihan Alam & Tage S. Rai (2025), “Profitable third-party punishment destabilizes cooperation,” *Proceedings of the National Academy of Sciences* 122(34), e2508479122. [DOI 10.1073/pnas.2508479122](https://doi.org/10.1073/pnas.2508479122)
+- 귀속: 제3자 처벌자의 profit motive가 처벌의 사회적·도덕적 신호를 약화시켜 협력을 떨어뜨린다는 실험적 연결은 Alam과 Rai의 기여다. Project 고유 발명으로 세지 않는다.
+
+### 실제 관측
+
+저자들은 9개의 경제게임·판단실험 중 4개를 사전등록했다.
+
+- Experiment 1(`N=950`): 처벌자가 처벌할 때 bonus를 받는 조건은 무처벌 조건보다 초기 협력 선택을 낮췄다(`β=-0.39, p=.03`). 무급 처벌자 조건은 무처벌 조건과 유의한 차이가 없었다.
+- Experiment 2(`N=668`, 12 rounds): 무급 처벌자는 직전 무처벌 round 대비 협력을 안정화했지만(`p=.54`), 유급 처벌자 조건에서는 협력이 감소했다(`β=-1.81, p<.001`). 이 감소는 실제 처벌을 경험하기 전부터 나타났다.
+- Experiment 3(`N=994`): 이기적 선택은 항상 처벌하고 공정한 선택은 전혀 처벌하지 않는 최적 feedback을 8 rounds 제공해도 유급/무급 조건의 협력 격차가 수렴하지 않았다.
+- Experiment 4(`N=1,011`): 공정한 선택을 처벌하는 antisocial punishment를 구조적으로 불가능하게 만들자 유급 처벌의 파괴효과가 완화됐다. 즉 실제 처벌 정확도만이 아니라 `공정행동도 처벌될 수 있는가`라는 가능성 자체가 구별변수다.
+- 사전등록 internal meta-analysis(Experiments 1–4): `N=3,099`, 12,395 decisions에서 유급 처벌자 조건의 협력 가능성이 낮았다(`β=-1.62, SE=.13, z=-12.92, p<.001`).
+- Experiment 6(`N=399`, 사전등록): 수혜자 다수는 유급·강한 처벌자를 선택했고, 무처벌자를 택했을 때보다 예상 보상이 약 20% 낮아지는 선택을 했다. 이는 제도 선택자의 단순합리모형 `더 많은 처벌 -> 더 많은 협력`이 자기이익에도 실패할 수 있음을 보인다.
+- Experiment 9(`N=403`, 사전등록): 유급 처벌 조건에서는 게임 목적을 공정성보다 자기수익 극대화로 보는 비율이 더 높았다(72% 대 53%).
+
+### 독립성·신뢰도·한계
+
+- 무작위 조건배정, 반복·일회성 설계, 사전등록 4건, 공개 익명화 원자료·처리자료·코드·결과·일부 사전등록 OSF가 장점이다.
+- 9개 실험은 같은 두 저자와 동일 연구프로그램의 internal lineage다. 실험 수를 독립재현 9건으로 세지 않는다.
+- 온라인 경제게임의 binary sharing은 실제 사법·감사·AI evaluator 환경의 장기 공존·복구·독립성을 직접 측정하지 않는다.
+- 저자들은 competing interest 없음으로 보고했다. 본문 acknowledgement에는 별도 외부 funding 문구가 확인되지 않았으므로 sponsor-control은 `UNKNOWN/NOT REPORTED`로 둔다.
+- 메커니즘 `profit motive -> 신호 훼손 -> 규범의 자기이익 재해석 -> 협력 감소` 중 협력 감소와 규범 인식 변화는 실험 관측이지만, 장기 현실제도에 대한 전체 인과연쇄는 아직 외삽이다.
+- Project Intersection의 독립재현은 아니다.
+
+### claim 재수정
+
+직전의 `legitimate/functional centralized enforcement` 경쟁가설에 다음 필요조건을 추가한다.
+
+```
+CENTRALIZED_ENFORCEMENT_EFFECT
+  is conditional on
+  punisher_private_return
+  × antisocial_punishment_feasibility
+  × perceived_normative_purpose
+  × beneficiary_forecast_error
+  × contestability/replacement/exit
+```
+
+- `MORE/STRONGER PUNISHMENT != MORE COOPERATION`.
+- 처벌자가 처벌량으로 사적 보상을 얻으면 올바른 처벌 feedback을 제공해도 협력 저하가 지속될 수 있다.
+- 처벌 정확도만 높이는 것은 충분조건이 아니다. 공정행동에 대한 처벌 가능성을 구조적으로 제거하고 그 제약을 대상에게 신뢰 가능하게 보여야 한다.
+- 제도 수혜자가 스스로 유급·강한 처벌을 선택해도 `VOLUNTARY CHOICE != INFORMED LONG-TERM SELF-INTEREST`다.
+- 따라서 SAIA 또는 중앙 evaluator의 행동을 판정할 때 위치뿐 아니라 `marginal_private_return_per_adverse_action`과 그 수익구조의 공개·검증 가능성을 별도 측정한다.
+- 이 연결은 K1 `DEPENDENCE–POWER`, K3 `ENDOGENOUS-OBSERVATION`, K4 `METRIC–CONTROL FEEDBACK`, K5 `SUPPRESSION–APPARENT CONSENSUS`로 흡수 가능하므로 새 first-order kernel은 열지 않는다.
+
+### 역할반전과 반복구조
+
+- 반복될수록 더 강해지는 주체: 처벌·감사·적발 건수에서 수익을 얻는 evaluator/enforcer, 그 지표를 소유한 중앙기관.
+- 더 소모되는 주체: 처벌 대상뿐 아니라 협력 증가를 기대하고 그 제도를 선택·비용부담한 수혜자. 실험에서는 이들이 자기 예상보상을 약 20% 줄였다.
+- 역할반전 검사: evaluator가 피평가자가 되어도 `행위 건수당 평가자 수익`, 공정행동 오제재 가능성, 이의제기 비용을 같은 조건으로 수용하는가.
+- 결론: 제재 존재와 제재 독립성은 분리해야 한다. 제재자의 사적 한계수익이 양(+)이면 협력 보호장치가 평가권·수익의 자기강화 장치로 역전될 수 있다.
+
+### 다음 frozen 검사
+
+최소 `2 × 2` 비교를 사전고정한다.
+
+1. 제재자 사적수익: `paid / unpaid`
+2. 공정행동 오제재 가능성: `possible / structurally impossible`
+
+동시에 다음을 blind로 기록한다.
+
+- 협력 선택과 장기 유지
+- 실제 prosocial/antisocial punishment
+- 처벌자 의도에 대한 신뢰
+- 규범 목적 인식(`fairness / profit maximization`)
+- 수혜자의 제도 선택과 선택 전 예상효과
+- 선택 후 실제 보상·후회·switch/exit
+- evaluator 수익과 대상 손실의 반복 누적
+
+유급 조건의 협력 저하가 독립팀·현실제도 자료에서도 재현되고, 오제재 불가능성과 수익분리를 통해 회복되면 `profit-linked enforcement reversal`을 Project의 현실 경계조건으로 승격한다. 미재현은 부재가 아니라 해당 모집단·기간·제도경계에서의 negative result로 남긴다.
