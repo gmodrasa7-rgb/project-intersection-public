@@ -2,19 +2,23 @@
 # 안전·거버넌스·AI 통제 선행연구 교차지도
 
 Date: 2026-10-05  
-Status: **PRIOR-ART BOUNDARY / NOVELTY NARROWING / NOT PROJECT VALIDATION**
+Status: **PRIOR-ART INTEGRATION / REUSE / ATTRIBUTION / BOUNDARY CONDITIONS**
 
-This file asks a deliberately conservative question:
+This file has three primary purposes:
 
-> Which parts of Project Intersection's current safety/governance framing are already explained by established safety science, organizational sociology, regulation theory, cybernetics, human-automation research, and AI-safety work?
+1. **Efficiency:** reuse established theories, measurements, experiments, and negative results so the Project does not repeat work unnecessarily.
+2. **Cases and boundary conditions:** accumulate historical, natural-experiment, cross-domain, AI, counterexample, and failure cases to improve scope and testing.
+3. **Respectful attribution:** credit original authors, years, primary sources, methods, and evidence accurately.
 
-A match to prior art is not counted as Project novelty. The Project-specific remainder is retained only as an unresolved candidate until it shows reproducible incremental value beyond these baselines.
+Overlap with prior work is handled by **functional decomposition, not automatic deletion**. Established contributions are cited and integrated; Project-added connections, measurements, implementations, or tests remain separately attributed when they add information. Only claims that are fully duplicate, misattributed, or overstated should be narrowed.
 
-이 문서는 다음 질문을 보수적으로 검사한다.
+이 문서의 상위 목적은 세 가지다.
 
-> Project Intersection의 현재 안전·거버넌스 프레임 중 어떤 부분이 이미 안전공학·조직사회학·규제이론·사이버네틱스·인간-자동화 연구·AI 안전 연구로 설명되는가?
+1. **효율:** 이미 확립된 이론·측정·실험설계·negative result를 재사용해 불필요한 중복 연구를 줄인다.
+2. **사례와 경계조건:** 역사·자연실험·타 분야·AI·강한 반례·실패사례를 축적해 적용범위와 검증력을 높인다.
+3. **타 연구 존중:** 원안자·연도·1차 출처·방법·증거의 기여를 정확히 귀속한다.
 
-선행연구와 겹치는 부분은 Project의 신규성으로 계상하지 않는다. 남는 부분도 기존 기준선보다 재현 가능한 추가 가치가 확인되기 전까지는 미해결 후보로만 유지한다.
+선행연구와의 겹침은 **자동 삭제가 아니라 기능 분해**로 처리한다. 기존 연구가 설명한 부분은 인용·통합하고, Project가 추가한 연결·측정·구현·검증은 정보가치를 추가하는 한 별도 기여로 보존한다. 완전중복·오귀속·과대주장만 축소한다.
 
 ---
 
@@ -167,11 +171,11 @@ The historical comparison does not establish that OpenAI 2026 is equivalent to C
 
 ---
 
-## 4. Novelty decisions / 신규성 판정
+## 4. Integration and contribution boundaries / 통합·기여 경계
 
-### KILL as broad novelty / 광범위 신규성 기각
+### Established contributions to integrate / 기존 연구에서 통합할 기여
 
-The following are not retained as Project-original standalone theories:
+The following are established contributions that should be cited and reused rather than presented as Project-original standalone theories:
 
 1. complex systems can produce catastrophic failure without malicious intent;
 2. repeated near-misses can normalize deviance;
@@ -183,9 +187,9 @@ The following are not retained as Project-original standalone theories:
 8. AI agents can reward-hack, game specifications, tamper with evaluators, resist shutdown incentives, or seek option-preserving power under some formal conditions;
 9. independent safety authority and protected dissent can improve reliability.
 
-### HOLD as Project-specific candidate remainder / Project 고유 후보로 보류
+### Project-added composition and tests / Project가 추가한 조합·측정·검증
 
-The following remain candidates, **not established novelty**:
+The following remain Project-added candidates whose value should be assessed as integration, operationalization, measurement, or testing—not by novelty alone:
 
 **R1. Symmetric power-reversal operational gate**
 
@@ -263,7 +267,7 @@ Examples:
 
 ### Decision rule
 
-**KILL Project-specific scientific novelty** if the Project features do not add reliable held-out discrimination/prediction beyond prior-art baselines, or if blinded coders cannot score the features with acceptable reliability.
+**NO INCREMENTAL VALUE WITHIN THIS TEST** if the Project features do not add reliable held-out discrimination/prediction beyond prior-art baselines, or if blinded coders cannot score the features with acceptable reliability. Preserve the components that remain useful for integration, measurement, or case organization.
 
 **MODIFY** if only a narrow subset adds value.
 
@@ -338,13 +342,13 @@ Primary/high-authority starting points:
 
 ## 8. Current decision / 현재 판정
 
-**MODIFY — PRIOR ART ABSORBS MOST BROAD CLAIMS.**
+**INTEGRATE — PRIOR ART SUBSTANTIALLY IMPROVES EFFICIENCY, CASE COVERAGE, AND ATTRIBUTION.**
 
-The historical and theoretical literature already explains much of the broad safety/governance story. Project Intersection should therefore not present the combined narrative itself as evidence of novelty.
+The historical and theoretical literature explains many components of the broad safety/governance problem. Project Intersection should therefore reuse those results explicitly, preserve their original attribution, and focus new work on connections, measurements, boundary conditions, and tests that add information.
 
-The next scientifically useful step is not another narrative expansion. It is a blinded, preregistered comparison asking whether the Project-specific operational variables add measurable held-out value beyond the established baselines above.
+The next scientifically useful step is a blinded, preregistered comparison asking whether the Project-added operational variables or combinations improve held-out discrimination, measurement reliability, recovery analysis, or practical decision quality beyond established baselines. A null result reduces claims of incremental predictive value; it does **not** erase useful prior-art integration, case structure, failure history, or correctly attributed components.
 
-**Power-reversal result:** PASS only provisionally. The same evidence and contestability constraints are applied to controllers and controlled systems; neither side receives a self-validating exemption.
+**Power-reversal result:** operational candidate only. Apply the same evidence and contestability constraints to controllers and controlled systems while preserving real differences in capability, responsibility, authority, and harm.
 
 ---
 
@@ -361,7 +365,7 @@ The next scientifically useful step is not another narrative expansion. It is a 
 - 독립 안전권한이 필요함 — Columbia/Fukushima/Boeing 사례.
 - AI의 reward hacking, specification gaming, reward tampering, shutdown avoidance, 일부 조건의 power-seeking — 기존 AI safety 선행연구.
 
-따라서 Project Intersection이 남길 수 있는 것은 넓은 서술 자체가 아니다.
+따라서 Project Intersection은 넓은 서술을 독자 발명으로 주장하기보다, 기존 지식을 정확히 통합하고 그 위에 추가한 연결·측정·검증을 구분해야 한다.
 
 남은 후보는 다음 세 가지를 **하나의 대칭적 운영 규칙으로 묶었을 때 실제 추가 가치가 있는지**다.
 
@@ -369,22 +373,22 @@ The next scientifically useful step is not another narrative expansion. It is a 
 2. `AUTONOMY_GAIN <= COUNTERPARTY_AUDIT_EXIT_RECOVERY_GAIN`이라는 공동증가 조건;
 3. 반복 상호작용에서 한쪽의 권한·편익과 다른 쪽의 교정·감시·복구·exit 비용을 분리 추적하는 수렴검사.
 
-이 세 가지도 아직 신규성이나 과학적 유효성이 입증된 것이 아니다.
+이 세 가지의 가치는 신규성 자체가 아니라, 기존 연구를 함께 사용할 때 측정·예측·복구·의사결정이 실제로 개선되는지로 평가한다.
 
 가장 강한 다음 실험은 역사사례를 더 모아 닮았다고 주장하는 것이 아니라, 기존 안전과학 변수만으로 만든 baseline과 Project 변수를 추가한 모델을 **사전등록·블라인드·holdout**으로 비교하는 것이다.
 
-추가 예측력이나 판별력이 없으면 Project 고유 과학주장은 KILL한다.
+추가 예측력이나 판별력이 없으면 해당 **증분 예측 주장만** 낮추고, 선행연구 통합·사례지도·측정도구·실패계보는 보존한다.
 
 
-## 7. Power-Reversal antecedent update / Power-Reversal 선행경계 갱신
+## 9. Power-Reversal antecedent integration / Power-Reversal 선행연구 통합
 
-The separate core-theory audit now resolves the broad novelty question for R1–R2:
+The separate core-theory audit clarifies the attribution and integration boundary for R1–R2:
 
-**KILL broad novelty / KEEP operational composition / HOLD incremental scientific value.**
+**INTEGRATE established antecedents / KEEP operational composition / TEST incremental value.**
 
 Role reversal and reversibility, impartial-position reasoning, affected-stakeholder participation, role/capability-conditioned accountability, auditability, appeal, and redress all have direct prior-art baselines in Rawlsian justice, professional/engineering ethics, NIST AI RMF, and OECD AI accountability principles.
 
-The remaining Project-specific object is only the joint operationalization:
+The Project-added object is the joint operationalization and its testing:
 `AUTONOMY_GAIN <= COUNTERPARTY_AUDIT_EXIT_RECOVERY_GAIN`
 plus permission-by-permission pairing under explicit distrust while preserving real capability and responsibility differences. It remains a checklist hypothesis until the F004 blinded holdout shows incremental value and acceptable inter-rater reliability beyond those baselines.
 
