@@ -124,4 +124,5 @@ The landing page is intentionally short. Detailed theory is separated so that a 
 
 첫 방문자가 전체 이론서술보다 증거·재현경로를 먼저 찾을 수 있도록 landing page는 의도적으로 짧게 유지한다.
 
-- [PRIOR_ART_SATURATION_MAP_KO.md](PRIOR_ART_SATURATION_MAP_KO.md) — 선행연구 포화검색·수렴/반수렴·왜곡·경계조건 지도
+- [PRIOR_ART_SATURATION_MAP_KO.md](PRIOR_ART_SATURATION_MAP_KO.md)
+- [CASE_AI_EVALUATOR_INDEPENDENCE_2026_KO.md](CASE_AI_EVALUATOR_INDEPENDENCE_2026_KO.md) — K1–K8 실증 적용: AI evaluator 독립성·관측한계·negative evidence — 선행연구 1차 메커니즘 포화 완료 · 반례/왜곡/측정 지속 감시 지도
