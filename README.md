@@ -131,3 +131,6 @@ The landing page is intentionally short. Detailed theory is separated so that a 
 - [CASE_CROSS_INDUSTRY_CONCEALMENT_COMPARISON_KO.md](CASE_CROSS_INDUSTRY_CONCEALMENT_COMPARISON_KO.md) — DuPont/PFOA · Exxon · Volkswagen · Purdue · Kanemi 비교검증: 은폐/평가조작/선택적 커뮤니케이션/근거증폭/과실 분리
 
 - [CASE_SHORT_TERM_REWARD_EVALUATION_REPROCESSING_KO.md](CASE_SHORT_TERM_REWARD_EVALUATION_REPROCESSING_KO.md) — Wells Fargo · Phoenix VA · Atlanta APS: 단기보상/목표압력 × 평가재가공권 교차사례
+
+- [EARLY_WARNING_EVALUATION_REPROCESSING_DETECTOR_KO.md](EARLY_WARNING_EVALUATION_REPROCESSING_DETECTOR_KO.md) — 단기보상×평가재가공권 조기탐지기: M–Y 괴리·threshold·shadow/retest·S0–S5
+- [EVALUATION_REPROCESSING_DETECTOR_SCHEMA.json](EVALUATION_REPROCESSING_DETECTOR_SCHEMA.json) — 조기탐지기 machine-readable 입력/판정 schema
