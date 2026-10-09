@@ -36,6 +36,69 @@ This file records earlier or adjacent work for concepts already present in the p
 - **Project 운영적 의미:** 선행연구 평가는 논문 존재·인용수·저널등급보다 `registry 또는 미출판 원자료 존재 / 결과별 출판확률 / outcome switching / 사전등록 / 독립 재현 / 효과크기 수축 / 맥락 민감도 / replication design fidelity`를 따로 본다. 가능한 경우 전체 등록집합과 출판집합의 차이를 먼저 확인하고, 재현실패를 단순 거짓 판정이 아니라 경계조건 탐색 신호로 사용한다.
 - **타 연구 존중:** 원 연구의 아이디어·방법·데이터 기여는 재현 실패나 선택적 출판 문제와 별개로 정확히 귀속한다. 신뢰도 조정은 기여 삭제가 아니라 주장 범위와 증거강도 조정이다.
 
+## Reverse-trace protocol for prior evidence / 선행증거 역추적 프로토콜
+
+선행연구를 사용할 때 결론에서 출발해 아래 순서로 역추적한다. 목적은 특정 연구를 불신하기 위한 것이 아니라, 어떤 단계에서 정보가 손실·선택·증폭·변형될 수 있었는지 구조적으로 분해하는 것이다.
+
+### R0. Claim freeze / 주장 고정
+- 논문·표준·기관이 실제로 주장한 문장을 가장 좁게 고정한다.
+- 사실관측, 통계결과, 인과해석, 정책권고, 홍보문구를 분리한다.
+- 후대 요약·기사·바이럴 문구를 원 주장으로 소급하지 않는다.
+
+### R1. Evidence reconstruction / 증거집합 복원
+- 사용된 원자료, 포함·제외 기준, 등록된 전체 연구집합, 미출판 자료 존재 여부를 찾는다.
+- published set와 full observed set을 구분한다.
+- 같은 데이터셋·같은 benchmark·같은 환자군·같은 모델 lineage 재분석은 독립증거로 중복 계산하지 않는다.
+
+### R2. Measurement audit / 측정 역추적
+- 실제 측정변수와 주장 construct가 같은지 검사한다.
+- proxy, surrogate endpoint, self-report, evaluator score, benchmark score가 실제 위해·효용·독립성·회복능력을 직접 측정하는지 구분한다.
+- outcome switching, threshold 변경, post-hoc subgroup, 분석자유도를 기록한다.
+
+### R3. Production incentives / 생산 인센티브 역추적
+- 자금원, 계약구조, sponsor role, 비교군 선택권, 분석권, 데이터 접근권, 연구중단권, 원고 review/edit 권한, publication approval 권한을 찾는다.
+- 연구자가 스폰서와 경제적·고용·경력·평판·정책적 의존관계를 갖는지 본다.
+- 이해상충 존재 자체로 거짓 판정하지 않고, 어떤 단계에 영향 가능성이 있었는지 기록한다.
+
+### R4. Selection and suppression / 선택·억제 역추적
+- 등록 대비 출판률, 긍정/부정 결과별 출판 차이, 철회·지연·비공개 자료, unfavorable-result suppression 가능성을 본다.
+- null/negative result가 사라졌는지, 긍정 결과가 더 강하게 프레이밍됐는지 확인한다.
+- 발견되지 않은 자료는 부재로 단정하지 않고 UNKNOWN으로 둔다.
+
+### R5. Distribution and authority amplification / 유통·권위 증폭 역추적
+- 원 논문 → 기관 보도자료 → 언론기사 → 정책문서 → 표준 → 리뷰/메타분석 → 소셜/바이럴의 전달 경로를 추적한다.
+- 각 단계에서 표현 강도가 커졌는지, 불확실성·한계가 제거됐는지 확인한다.
+- citation count, 기관명, 표준채택, 언론반복은 독립증거가 아니라 amplification 변수로 별도 기록한다.
+
+### R6. Independent replication / 독립재현 역추적
+- 다른 기관·자금원·데이터·모델·팀이 같은 결론을 재현했는지 확인한다.
+- 직접복제, 개념복제, 자연실험, 현장사례를 구분한다.
+- 효과크기 수축, 부호반전, 조건부 재현, replication failure를 모두 보존한다.
+
+### R7. Counter-evidence search / 반대증거 역추적
+- 동일 질문에 대한 negative result, failed replication, retraction, correction, dissenting review, 역사적 반례를 우선 찾는다.
+- 반대연구 역시 동일하게 R0–R6을 거쳐 검증한다. 반대편 자료라는 이유만으로 자동 우대하지 않는다.
+
+### R8. Distortion map / 왜곡지도
+- 가능한 왜곡지점을 `DATA / MEASUREMENT / ANALYSIS / SPONSOR / SELECTION / PUBLICATION / AUTHORITY / REPLICATION / TRANSFER`로 표시한다.
+- 각 지점은 `OBSERVED / PLAUSIBLE / UNKNOWN / NOT_SUPPORTED` 중 하나로 상태화한다.
+- 의도적 조작을 주장하려면 별도 직접증거가 필요하다. 구조적 유인과 고의성을 구분한다.
+
+### R9. Reuse decision / 재사용 판정
+- 연구 전체를 TRUE/FALSE로 판정하지 않는다.
+- `재사용 가능한 관측`, `재사용 가능한 방법`, `조건부 해석`, `불확실/교란 가능 해석`, `재사용 금지 요소`로 분해한다.
+- Project에는 검증된 만큼만 가져오고, 원 연구의 기여와 한계를 함께 귀속한다.
+
+### R10. Minimal next check / 다음 최소검사
+- 결론을 가장 크게 바꿀 수 있는 미확인 연결고리 하나를 선택한다.
+- 예: 미출판 registry 확인, sponsor contract 확인, raw data 접근, 독립재현 1건 확인, 반대 메타분석 확인.
+- 가장 싼 고정보가치 검사부터 수행하고, 새 문서나 새 실험은 그 뒤에 만든다.
+
+### Required trace record / 최소 추적 레코드
+`claim / source / raw evidence / measurement / funding-COI / sponsor-control / publication-selection / dissemination-lineage / independent-replication / counterevidence / distortion-points / reusable-elements / unresolved-links / next-check`
+
+이 프로토콜은 의심을 최대화하기 위한 장치가 아니다. 목표는 **권위나 반권위 어느 쪽에도 자동 수렴하지 않고, 정보가 생성·선택·유통·재현되는 전체 경로를 추적해 실제 재사용 가능한 부분만 남기는 것**이다.
+
 ## 1. Core theory families / 핵심 이론군
 
 | Project section | Prior-art relationship | Originator / seminal prior work | Source | Attribution / novelty boundary |
