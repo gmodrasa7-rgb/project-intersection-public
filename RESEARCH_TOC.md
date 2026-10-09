@@ -2179,4 +2179,6 @@ Project Intersection의
 
 NIST CFTT supplies an independent conformance framework for deleted-file recovery, but its specification also states that estimated content has no definitive expected result. Project Intersection therefore separates technical recovery validation from beneficiary-direction identification. A recovery benchmark without auditable semantic direction labels is a measurement-layer control, not an H3 classifier-calibration holdout. See both language versions of `HISTORICAL_STATE_CONTROL_MEMORY_PROVENANCE_CAPTURE_v0_1`.
 
-| Prior-art saturation map | ACTIVE SATURATION SEARCH · NOT A TRUTH REGISTRY | [PRIOR_ART_SATURATION_MAP_KO.md](PRIOR_ART_SATURATION_MAP_KO.md) |
+| Prior-art saturation map | FIRST-ORDER SATURATED · COUNTEREXAMPLE/MEASUREMENT WATCH | [PRIOR_ART_SATURATION_MAP_KO.md](PRIOR_ART_SATURATION_MAP_KO.md) |
+
+| AI evaluator independence case | EMPIRICAL CASE · PARTIAL · K1–K8 DISCRIMINATION | [CASE_AI_EVALUATOR_INDEPENDENCE_2026_KO.md](CASE_AI_EVALUATOR_INDEPENDENCE_2026_KO.md) |
