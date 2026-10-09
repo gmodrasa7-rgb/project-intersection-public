@@ -143,3 +143,5 @@ The landing page is intentionally short. Detailed theory is separated so that a 
 - [PUBLIC_FINAL_PURPOSE_EXECUTION_MAP_KO.md](PUBLIC_FINAL_PURPOSE_EXECUTION_MAP_KO.md) — 최종목적→외부복제·자기감사·blind validation·독립연속성 실행지도
 - [PROJECT_SELF_AUDIT_2026-10-09_KO.md](PROJECT_SELF_AUDIT_2026-10-09_KO.md) — Project 자체의 M–Y 괴리·correlated independence·self-validation 위험 감사
 - [FINAL_PURPOSE_EXECUTION_STATE.json](FINAL_PURPOSE_EXECUTION_STATE.json) — 최종목적 우선순위·hard limits·재개조건 machine-readable 상태
+
+- [TERMINOLOGY_STRUCTURAL_POSITION_ADVANTAGE_KO.md](TERMINOLOGY_STRUCTURAL_POSITION_ADVANTAGE_KO.md) — 구조적 위치우위(SPA), 목적함수 비대칭(OA), 기존지위(INC), 관측행동(BHV)을 분리하는 용어 정본
