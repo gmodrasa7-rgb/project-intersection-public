@@ -1074,25 +1074,28 @@ input distribution 중 하나라도 변하면
 
 ---
 
-## 40. 구조적 위치우위(SPA) 용어 게이트
+## 40. 비대칭·목표·기존지위 용어 게이트
 
-정본: `TERMINOLOGY_STRUCTURAL_POSITION_ADVANTAGE_KO.md`
+정본: `TERMINOLOGY_POWER_ASYMMETRY_GOAL_INCONGRUENCE_KO.md`
 
-행위자 라벨 하나에 구조·목적·기존지위·행동을 합치지 않는다.
+새 actor-type을 먼저 만들지 않는다.
 
-`POSITION != OBJECTIVE != INCUMBENCY != BEHAVIOR`
+`POWER != GOAL != INFORMATION != INCUMBENCY != BEHAVIOR`
 
-핵심 변수:
-- `SPA` = Structural Position Advantage / 구조적 위치우위
-- `OA` = Objective Asymmetry / 목적함수 비대칭
+기본축:
+- `PA` = Power Asymmetry / 권력·영향력 비대칭
+- `GI` = Goal Incongruence / 목표 불일치
+- `IA` = Information Asymmetry / 정보 비대칭
 - `INC` = Incumbency / 기존지위
 - `BHV` = Observed Behavior / 관측행동
 - `STI` = Short-Term Incentive
 - `ERP` = Evaluation-Reprocessing Power
 
-행위자 지칭이 필요할 때만 `SAA = Structurally Advantaged Actor`를 사용한다.
-`SAI = Structurally Advantaged Incumbent`는 SPA와 INC가 둘 다 확인된 경우에만 사용한다.
-`SAIA`는 핵심변수로 사용하지 않는다.
+`SPA/OA/SAA/SAI/SAIA`는 2026-10-10 재점검에서 핵심용어에서 강등했다.
 
 오해방지 규칙:
-`SPA alone -> no behavioral conclusion`
+- `PA alone -> no behavioral conclusion`
+- `GI alone -> no behavioral conclusion`
+- `INC alone -> no behavioral conclusion`
+
+행위자를 꼭 지칭해야 할 때는 새 고유명 대신 `권력비대칭에서 우위에 있는 행위자`, `비대칭 관계의 기존지위 행위자`처럼 설명구를 사용한다.
