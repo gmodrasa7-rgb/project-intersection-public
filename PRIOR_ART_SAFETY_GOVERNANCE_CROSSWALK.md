@@ -76,6 +76,15 @@ A match to prior art is not counted as Project novelty. The Project-specific rem
 - **반례·한계:** 동료평가 전 합성 benchmark이며 frozen confirmatory 실험은 sandbox의 단일 lost-acknowledgment 장애에 집중한다. 다른 장애시점 결과는 post-freeze extension이고 partial-mutation 검사는 적격 workflow 4개뿐이다. 단일 장애 주입은 연쇄·적대적 실패나 실제 피해복구를 입증하지 않으며, 특정 recovery 방식의 보편적 우위도 확정하지 않는다. 미관측은 부재로 닫지 않고 Project 검증으로 계상하지 않는다.
 - **기여자:** benchmark·실험 Dolly Sah, Tanmay Sah, Harshul Jain, Tanya Sah; 분산복구 선행개념 Garcia-Molina, Salem, Mohan 외, Helland; 공개 교차지도 편집 Project Intersection maintainers.
 
+### 1.5 Audit-market concentration, economic dependence, and independence / 감사시장 집중·경제적 의존·독립성
+
+- **원출처·원안자·연도:** Gunn, Kawada & Michas (2019), *Audit market concentration, audit fees, and audit quality: A cross-country analysis of complex audit clients*, DOI [10.1016/j.jaccpubpol.2019.106693](https://doi.org/10.1016/j.jaccpubpol.2019.106693); 추가 반대증거로 *Auditor independence and fee dependence* (2002), DOI [10.1016/S0165-4101(02)00044-7](https://doi.org/10.1016/S0165-4101(02)00044-7); Donelson, Ege, Imdieke & Maksymov (2020), *The revival of large consulting practices at the Big 4 and audit quality*, DOI [10.1016/j.aos.2020.101157](https://doi.org/10.1016/j.aos.2020.101157).
+- **기존 construct와 겹침:** 국제 감사시장에서 공급자 집중·대체가능성·경제적 의존·컨설팅 겸업이 독립성·품질과 연결될 수 있다는 문제는 AI 평가시장보다 앞선 실증 문헌이 있다. Gunn et al.은 28개국 자료에서 진입장벽이 높은 복잡 고객군의 Big-4 내부 집중도가 높을수록 감사료가 높고 일부 품질 proxy가 낮아지는 연관성을 보고했다. 따라서 복수 감사자 존재와 실질적 독립 감사 생태계가 다르며, 대체가능성·집중도 자체를 측정해야 한다는 아이디어는 Project 고유 신규성으로 계상하지 않는다.
+- **강한 반례·negative/mixed result:** 2002 fee-dependence 연구는 국가·로컬 office 수준의 수수료 의존도가 qualified opinion 성향을 약화시킨다는 증거를 찾지 못했다. Donelson et al. (2020)은 Big-4의 consulting acquisition 효과도 일률적이지 않았으며, 감사 관련 전문성을 주는 acquisition 뒤에는 품질이 개선되고 비감사 관련 acquisition 뒤에는 품질이 악화되는 방향을 보고했다. 즉 concentration/economic tie에서 capture·lower quality로 가는 관계는 단조 법칙이 아니다.
+- **Project 고유 잔차:** 남는 후보는 AI 평가 생태계에서 시장집중 자체가 아니라 평가자 대체가능성, 피평가자에 대한 매출·계약 의존, 평가자 지정·해임권, 원자료 접근, 불리한 결과 공개권, 실제 시정·복구권, affected counterpart의 practical exit를 동시에 조작·측정해 어느 조합에서 독립검증의 추가가치가 사라지거나 회복되는지 확인하는 것이다.
+- **반례·한계:** 금융감사와 frontier-AI 평가는 법적 책임·데이터형태·기술변화속도·공급자 전문성 구조가 다르므로 직접 전이할 수 없다. 2019 결과는 관측자료의 연관성이며 concentration의 인과효과를 단독 확정하지 않는다. audit-quality proxy도 실제 위해탐지와 동일하지 않다. 따라서 이 문헌은 AI 평가 포획의 증거가 아니라 historical/empirical analogue와 측정 baseline이다.
+- **기여자:** Gunn, Kawada, Michas 및 위 반대증거 연구 저자들; 공개 교차지도 편집 Project Intersection maintainers.
+
 ---
 
 ## 2. Historical cases with the closest structural match
