@@ -50,6 +50,15 @@ A match to prior art is not counted as Project novelty. The Project-specific rem
 - **반례·한계:** 단일 저자 preprint이며 현장 자연실험이 아니다. 수치는 선언된 모수의 시뮬레이션 결과이고, 저자도 “simulation validates the model, not the world”라고 제한한다. 하드웨어 신뢰근·외부 witness 비침해, principal 비공모, substrate lineage의 진실성을 전제하며, 높은 독립등급도 잘못 설계된 감사 질문의 타당성을 보증하지 않는다. 따라서 현재 상태는 선행경계 보강이지 Project 검증이 아니다.
 - **기여자:** 원안·분석 Mohamed Chahine Ghanem; 공개 교차지도 편집 Project Intersection maintainers.
 
+### 1.2 Evidence–conclusion dependence in LLM audit / LLM 감사의 증거–결론 의존
+
+- **원출처·원안자·연도:** Paul-Peter Arslan (2026), *Audit Without Verification: When LLM Accountability Layers Relay Rather Than Check*, DOI [10.48550/arXiv.2609.07680](https://doi.org/10.48550/arXiv.2609.07680); 사전등록 DOI [10.17605/OSF.IO/GBR3V](https://doi.org/10.17605/OSF.IO/GBR3V).
+- **기존 construct와 겹침:** anchoring·automation bias와 위 1.1의 evidence independence를 다중-agent 감사 인터페이스에서 통제한 사례다. “평가자가 보고서를 읽는다”와 “평가자가 결론과 독립된 증거로 재판단한다”의 구분은 Project 고유 construct가 아니다.
+- **독립 실험·negative result:** 두 chain model, 6-agent 분할 pipeline, model당 345,600 requests에서 upstream agent가 정답 원인을 제안하지 않은 조건의 보고서 기반 감사 정확도는 4.1%, 같은 사건의 원자료 기반은 60.3%였다. 관찰은 유지하고 agent 결론 한 절만 제거하자 45.2%로 상승했다. 반면 사전등록 핵심가설인 “공동책임 framing의 chain-length 증가에 따른 악화”는 지지되지 않았다.
+- **Project 고유 잔차:** 남는 후보는 조직·계약 독립성과 별도로 ‘관찰+upstream 결론 / 동일 관찰만 / 원자료’를 교차시켜 정보적 독립성이 실제 탐지·귀책·교정·복구결정에 주는 추가효과를 측정하고, 그 효과를 평가자 선임·공개·시정권 및 피해 당사자의 practical exit와 연결하는 부분뿐이다.
+- **반례·한계:** 단일 저자 preprint의 합성 2-domain 연구이고 인간 조직행동을 검증하지 않는다. 등록한 restricted interface를 구현 시 변경했고, 결론 한 절 제거는 exploratory follow-up이다. upstream 제안이 맞은 조건에서는 제거가 정확도를 70.5%에서 55.7%로 낮췄으므로 “결론 필드를 항상 제거”하는 정책도 지지하지 않는다. 미관측은 부재로 닫지 않으며 Project 검증으로 계상하지 않는다.
+- **기여자:** 원안·실험 Paul-Peter Arslan; 공개 교차지도 편집 Project Intersection maintainers.
+
 ---
 
 ## 2. Historical cases with the closest structural match
@@ -280,6 +289,7 @@ Primary/high-authority starting points:
 - Turner, A. M. et al. (2021). "Optimal Policies Tend To Seek Power." NeurIPS 2021; arXiv:1912.01683.
 - OpenAI (2026-08-26). "The Hugging Face incident and the road ahead."
 - Ghanem, M. C. (2026). *Who Audits Whom, on What Substrate, with What Evidence? An Independence-Graded Audit Protocol for Agentic AI*. DOI 10.48550/arXiv.2609.18272.
+- Arslan, P.-P. (2026). *Audit Without Verification: When LLM Accountability Layers Relay Rather Than Check*. DOI 10.48550/arXiv.2609.07680; preregistration DOI 10.17605/OSF.IO/GBR3V.
 
 ---
 
