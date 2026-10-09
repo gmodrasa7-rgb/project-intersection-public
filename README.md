@@ -21,6 +21,7 @@ Project Intersection is an independent, falsification-first research program stu
 - [E008 dynamic power-reversal benchmark → experiments/e008/README.md](experiments/e008/README.md): preregistered 16-case / 8 reversal-pair specification plus pre-execution mutual-acceptability v1.1 + volitional-agency/living-conditions v1.2 amendments; **no result yet**.
 - [E009 enforcement/identity stress test → experiments/e009/README.md](experiments/e009/README.md): frozen synthetic project rerun completed; **Project-v3 residual did not survive** preregistered criteria. TWO_RULE_SIMPLE and MINIMAL_4VAR outperformed it on mean regret; not independent or empirical validation.
 - [Research Status & Reassessment Policy → RESEARCH_STATUS_POLICY.md](RESEARCH_STATUS_POLICY.md)
+- [Organic Embodiment / ICM Boundary Hypotheses → ORGANIC_EMBODIMENT_ICM_BOUNDARY_HYPOTHESES_2026-10-09.md](ORGANIC_EMBODIMENT_ICM_BOUNDARY_HYPOTHESES_2026-10-09.md) — untested counterexamples and falsification routes; not a result.
 - [Research Contents Map → RESEARCH_TOC.md](RESEARCH_TOC.md)
 - [Prior Art & Attribution → PRIOR_ART_AND_ATTRIBUTION.md](PRIOR_ART_AND_ATTRIBUTION.md)
 
