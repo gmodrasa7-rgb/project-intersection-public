@@ -853,3 +853,220 @@ but beyond threshold
 8. scientific fraud detection / image/data forensics / retraction dynamics
 9. AI evaluator independence / adaptive monitoring / sandbagging
 10. human-AI co-adaptation / automation bias / deskilling / learned dependence
+
+
+---
+
+## 11. 세 번째 포화확장: 안전·비상권한·도덕적해이·자동화의존
+
+### AC. 복잡성 × tight coupling → 안전전략의 충돌
+
+대표:
+- Normal Accident Theory 계열
+- High Reliability Organization 계열
+- Rijpma (1997), DOI 10.1111/1468-5973.00033
+- Bierly & Spender (1995), DOI 10.1016/0149-2063(95)90003-9
+- Sutcliffe (2011), DOI 10.1016/j.bpa.2011.03.001
+
+핵심:
+complexity와 tight coupling이 큰 시스템에서는
+중앙집중이 빠른 조정에 유리할 수 있는 동시에
+현장 전문성과 분산 대응이 필요한 구조적 긴장이 생긴다.
+
+Project 연결:
+
+```
+centralization benefit under tight coupling
+vs
+decentralized expertise benefit under complexity
+```
+
+따라서 "더 많은 중앙통제"와 "더 많은 분산" 중 하나를 보편해법으로 채택하지 않는다.
+
+---
+
+### AD. 비상권한 → 지속·확대 유인
+
+대표:
+- Scheuerman (2006), *Emergency Powers*, DOI 10.1146/annurev.lawsocsci.2.061206.074644
+
+핵심:
+현대 행정부의 제도적 맥락에서는 비상상황을 선언·지속·활용할 유인이 생길 수 있다는 문헌이 존재한다.
+
+Project 연결:
+
+```
+exceptional risk
+→ temporary control expansion
+→ incumbent capacity/resources increase
+→ future continuation cost falls
+→ temporary authority may persist
+```
+
+검증규칙:
+비상권한 확대를 곧바로 남용으로 판정하지 않고,
+sunset, independent review, rollback completeness, residual authority를 실제 추적한다.
+
+---
+
+### AE. bailout expectation → moral hazard / 자기확대 가능성
+
+대표:
+- Andersen & Jensen (2022), DOI 10.1057/s41308-022-00167-7
+- Berndt, Duffie & Zhu (2025), DOI 10.1257/aer.20220846
+
+핵심:
+덴마크 역사적 자연실험 연구는 bailout 이후 TBTF 은행들의 자본비율 감소를 보고했다.
+반면 2025 AER 연구는 금융위기 이후 미국 GSIB의 시장내재 bailout probability가 크게 감소했다고 추정한다.
+
+Project에 중요한 점:
+**도덕적해이 메커니즘이 존재할 수 있지만 제도개혁으로 약화될 수도 있다.**
+
+```
+expected rescue ↑
+→ downside externalization ↑
+→ risk/concentration incentive may ↑
+```
+
+그러나:
+```
+credible loss allocation / resolution reform
+→ bailout expectation ↓
+→ prior loop can weaken
+```
+
+이는 자기강화가 불가역 법칙이 아니라 정책설계에 따라 깨질 수 있음을 보여주는 반례축이다.
+
+---
+
+### AF. 인간-AI 의존 → automation bias / deskilling / 복구능력 감소
+
+대표:
+- Alon-Barkat & Busuioc (2022/2023), DOI 10.1093/jopart/muac007
+- automation-bias review literature
+- Nelson & Wright (2026), DOI 10.1093/ajhp/zxag227
+- technology-driven skill degradation systematic review (2026)
+
+핵심 후보:
+```
+automation reliance ↑
+→ independent checking ↓
+→ skill practice ↓
+→ human recovery capability ↓
+→ future reliance ↑
+```
+
+이 구조는 Project의 기존 의존-통제 루프와 직접 닿지만,
+현재 분야·과업별 효과크기와 인과방향은 별도 검증해야 한다.
+
+새 변수:
+- independent task competence
+- override frequency
+- recovery-without-system performance
+- verification effort
+- skill-retention half-life
+- automation error detection rate
+
+---
+
+### AG. citation metric → citation cartel / 평가권 왜곡
+
+대표:
+- Fister, Fister & Perc (2016), DOI 10.3389/fphy.2016.00049
+- Perez et al. (2019), DOI 10.1111/1468-2230.12405
+
+핵심:
+citation count가 평가·순위의 보상채널이 되면,
+상호인용·폐쇄적 citation network 같은 metric-inflation 경로가 생길 수 있음.
+
+Project 연결:
+
+```
+citation/prestige metric
+→ resource/reputation allocation
+→ incentive to optimize citation network
+→ metric inflation
+→ prestige reinforces visibility
+→ future citation probability ↑
+```
+
+주의:
+높은 상호인용 자체는 cartel 증거가 아니며,
+주제유사성·학문공동체 구조·정상적 인용을 통제해야 한다.
+
+---
+
+## 12. 세 번째 라운드가 추가한 상위 메커니즘
+
+### 수렴 J — 의존에 의한 복구능력 소실
+
+```
+tool reliance ↑
+→ independent competence / checking ↓
+→ failure recovery capacity ↓
+→ dependence ↑
+```
+
+### 수렴 K — 예외권한 ratchet 후보
+
+```
+exception
+→ temporary authority
+→ authority-generated capacity/incentive
+→ continuation
+→ normalized expanded authority
+```
+
+### 수렴 L — 구조적으로 보호되는 downside
+
+```
+expected rescue / cost externalization
+→ private upside retained
+→ downside borne elsewhere
+→ risk or scale incentive ↑
+```
+
+### 수렴 M — 평가 네트워크의 자기보상
+
+```
+metric allocates prestige/resources
+→ actors optimize network position
+→ metric increases
+→ more prestige/resources
+```
+
+---
+
+## 13. 현재 메커니즘 지도에서 중요한 비대칭
+
+지금까지 선행연구는 단순히 "통제는 나쁘다"로 수렴하지 않는다.
+
+반복되는 더 강한 패턴은 다음이다.
+
+```
+benefit internalized + downside externalized
+control concentrated + correction externalized
+measurement concentrated + alternatives unobserved
+dependence increased + recovery capability degraded
+```
+
+즉 핵심 위험변수는 **집중 그 자체보다 비대칭적인 편익·비용·관측·복구 분배**에 더 가깝다.
+
+---
+
+## 14. 포화 상태 갱신
+
+`NOT SATURATED — THIRD EXPANSION STILL PRODUCED NEW MECHANISMS`
+
+이번 라운드에서 추가된 독립 축:
+
+- Normal Accident vs High Reliability의 구조적 긴장
+- emergency-power persistence incentive
+- too-big-to-fail moral hazard와 제도개혁 반례
+- human-AI automation dependence / deskilling
+- citation-metric cartelization
+
+세 번 연속 넓은 분야 확장에서 새 메커니즘이 나왔으므로
+현재는 선행조사 포화를 선언할 수 없다.
+
+다음 라운드에서는 새 메커니즘 발견률이 감소하는지 측정해야 한다.
