@@ -760,3 +760,205 @@ Then:
 단, "may"를 유지한다.
 
 이 가설은 현실 사례·대체모형·반사실로 검증되어야 한다.
+
+
+---
+
+## 32. 단기보상 × 평가재가공권 동역학
+
+이 절에서는 의도·도덕·윤리·선악을 변수에서 제외한다.
+
+분석 대상은 다음 두 행동 사이의 자원배분이다.
+
+```
+e_T = 실제 상태·장기성과를 변화시키는 노력
+e_R = 평가·측정·공개·가시성 채널을 재가공하는 노력
+```
+
+여기서 "평가재가공"은 거짓말 여부가 아니라 다음을 포함하는 중립적 조작가능성이다.
+
+- 측정대상 선택
+- 측정시점 선택
+- 표본 선택
+- 지표 정의·가중치 변경
+- 결과의 공개/비공개 선택
+- 맥락 축약·확장
+- 평가환경 탐지 후 행동변경
+- comparator 선택
+- 보고 형식·집계방식 변경
+- 평가자가 볼 수 있는 입력범위 변경
+
+핵심 변수:
+
+```
+STI = short-term incentive intensity
+ERP = evaluation reprocessing power
+IV  = independent verification capacity
+RDA = external raw-data access
+CI  = cost internalization
+RH  = reward horizon
+DP  = detection probability of reprocessing
+RC  = expected consequence/cost if detected
+```
+
+---
+
+## 33. 선택식
+
+행위자는 관측된 보상구조 아래에서
+각 행동의 기대 한계편익과 비용에 따라 자원을 배분할 수 있다.
+
+```
+EU_R =
+  short_term_reward_from(e_R)
++ long_term_reward_from(e_R)
+- direct_cost(e_R)
+- DP × RC
+
+EU_T =
+  short_term_reward_from(e_T)
++ long_term_reward_from(e_T)
+- direct_cost(e_T)
+```
+
+후보 예측:
+
+```
+If EU_R > EU_T,
+then allocation toward e_R may increase.
+```
+
+특히 다음 조합에서 차이가 커지는지 검사한다.
+
+```
+STI ↑
+ERP ↑
+IV ↓
+RDA ↓
+CI ↓
+RH shorter
+DP × RC ↓
+```
+
+이는 자동 판정식이 아니다.
+각 항의 실제 값과 상호작용을 경험적으로 식별해야 한다.
+
+---
+
+## 34. 관측성과–실제성과 괴리
+
+정의:
+
+```
+M_t = 평가·보고·지표상 관측성과
+Y_t = 독립적으로 재구성한 실제 목표상태 또는 장기성과
+G_t = distance(M_t, Y_t)
+```
+
+Project 가설:
+
+> 단기보상 강도와 평가재가공권이 함께 증가하고, 독립검증·원자료 접근·비용내부화가 약해질수록 `G_t`가 증가할 조건이 커질 수 있다.
+
+중요:
+- `M_t ↑`는 `Y_t ↑`를 자동 의미하지 않는다.
+- `e_R ↑`는 `Y_t ↓`를 자동 의미하지도 않는다.
+- 평가재가공이 실제 정보품질·노이즈제거·효율을 높이는 경우도 경쟁모형으로 유지한다.
+
+따라서 최소 세 상태를 구분한다.
+
+```
+A. M ↑, Y ↑      # 실제 개선과 평가 개선 동행
+B. M ↑, Y ~      # 평가채널 개선/재가공 중심
+C. M ↑, Y ↓      # 관측성과와 실제성과 역행
+```
+
+---
+
+## 35. K4 세부형과 연결
+
+기존 K4 `METRIC–CONTROL FEEDBACK`을 다음 세 하위형으로 측정한다.
+
+```
+K4a METRIC / TEST REPROCESSING
+    평가조건·측정규칙·행동전환으로 M을 변화
+
+K4b DISCLOSURE / VISIBILITY REPROCESSING
+    어떤 정보가 평가자·규제자·대중에게 보이는지 변화
+
+K4c EVIDENCE-CONTEXT REPROCESSING
+    동일 증거의 맥락·집계·일반화 범위를 변화
+```
+
+예시 mapping:
+- Volkswagen → K4a
+- DuPont/PFOA → K4b
+- Purdue/Porter-Jick lineage → K4c
+- AI benchmark/reward optimization → K4a 또는 K4a+K4b
+
+이 mapping은 사례를 동일시하지 않는다.
+공통 변수구조만 비교한다.
+
+---
+
+## 36. 경쟁모형과 반증
+
+다음 설명을 동시에 경쟁시킨다.
+
+```
+M1 실제 상태 개선이 관측성과 상승의 주원인
+M2 평가재가공이 관측성과 상승의 주원인
+M3 둘 다 기여
+M4 외생환경 변화
+M5 측정오류/표본변화
+M6 평가재가공이 오히려 정보품질을 개선
+M7 UNKNOWN / NONIDENTIFIED
+```
+
+가설에 불리한 관측:
+
+- STI가 강해져도 e_R이 증가하지 않음
+- ERP가 커져도 M–Y gap이 증가하지 않음
+- IV/RDA가 낮아져도 독립재현 결과가 유지됨
+- 장기보상 전환 후에도 행동배분이 변하지 않음
+- 평가권 분리 후에도 동일 효과가 지속됨
+- 재가공권이 높은 집단에서 오히려 장기 Y가 더 개선됨
+
+이 경우 가설을 유지하려면 별도 식별증거가 필요하다.
+
+---
+
+## 37. 최소 판별설계
+
+가능하면 동일 actor/system에서 다음 조건을 비교한다.
+
+```
+T1 short reward / low ERP
+T2 short reward / high ERP
+T3 long reward / high ERP
+T4 short reward / high ERP / high independent verification
+```
+
+측정:
+
+```
+ΔM
+ΔY
+Δ|M-Y|
+effort allocation toward e_T / e_R
+raw-data divergence
+comparator survival
+correction cost
+long-horizon persistence
+```
+
+핵심 상호작용:
+
+```
+STI × ERP
+STI × ERP × IV
+STI × ERP × RDA
+STI × ERP × CI
+```
+
+도덕평가가 아니라
+보상구조·권한구조·관측구조가 행동분배를 어떻게 바꾸는지 검증한다.
