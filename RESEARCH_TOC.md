@@ -12,6 +12,7 @@ This layer is the shortest path from a claim to its current public evidence, fai
 | Detailed research framing | **CONCEPT / HYPOTHESIS MAP** | [Research Overview](RESEARCH_OVERVIEW.md) | Use linked claim and experiment files for evidence | Breadth of map is not evidence strength |
 | Counterfactual extinction / convergence trace | **FORMALIZATION CANDIDATE · NOT EMPIRICAL VALIDATION** | [Formalism](CONVERGENCE_TRACE_FORMALISM_KO.md) · [Plain-language overview](RESEARCH_OVERVIEW.md#plain-language-core-when-the-winning-path-erases-its-alternatives) | State transitions, competing causal models, counterfactual identifiability, option-space and falsifiability reserve | Removed alternatives may be unobserved; current-path performance alone does not identify comparative superiority |
 | Core research specification v1 | **CORE SPEC CANDIDATE · NOT EMPIRICAL VALIDATION** | [Core spec](CORE_RESEARCH_SPEC_V1_KO.md) | Minimum end-to-end logic from observations to competing models, validity, decision state, and Project self-audit | Consolidates the current framework; does not itself validate any empirical claim |
+| Public continuity capsule | **HANDOFF / CONTINUITY · NOT SCIENTIFIC VALIDATION** | [Continuity capsule](CONTINUITY_CAPSULE_PUBLIC_KO.md) | Minimal restart order, unresolved checkpoints, next three validations, and failure guards | Designed to reduce dependence on one AI session/subscription; does not add evidence |
 
 ### Evidence ordering / 증거 우선순위
 
