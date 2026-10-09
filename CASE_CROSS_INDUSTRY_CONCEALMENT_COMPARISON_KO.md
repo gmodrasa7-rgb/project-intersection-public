@@ -460,3 +460,92 @@ K4c + K7을 계량할 수 있다.
 시간축으로 만들면
 `information asymmetry → correction latency → recovery cost`
 를 직접 측정할 수 있다.
+
+
+---
+
+## 10. DuPont/PFOA 판별장부 — K4b/K8과 경쟁설명 분리
+
+이 장부의 목적은 “장기간 지속됐다”는 서술을 여러 커널의 동시 증거로 재사용하지 않고,
+**같은 관측이 어느 설명을 실제로 구별하는지** 고정하는 것이다.
+
+### 관측·변수 코딩
+
+| 변수 | 현재 코딩 | 관측형태와 한계 |
+|---|---|---|
+| P | DuPont의 자료 생성·공개 통제력이 EPA보다 컸음 | EPA 집행기록이 직접 지지. 전체 산업권력의 크기는 미측정 |
+| I | 1981–1997 회사 보유정보와 규제기관 가용정보 사이 격차 | EPA가 1981–2001의 복수 미보고와 1997년 불완전 제출을 적시 |
+| E / R / O | `UNKNOWN` | 주민의 practical exit, 독립복구, 실제 선택공간은 이 집행자료만으로 추정하지 않음 |
+| B | `UNKNOWN` | 제품·공정 편익은 개연성이 있어도 현재 공식 집행자료가 크기·귀속을 계량하지 않음 |
+| C | 오염·노출은 관측, 질환별 비용은 별도 계보 | EPA 집행자료는 보고행위를 강하게 뒷받침하지만 질환별 인과·회복비용의 독립 증명은 아님 |
+| K | 외부 변호사가 2001년 자료를 EPA에 전달한 경로가 관측됨 | 교정·검증 부담의 외부 이전을 시사하지만 누가 얼마를 부담했는지는 `UNKNOWN` |
+| L | 법정 보고의무와 2005년 벌금·SEP는 관측 | 합의는 DuPont의 책임 인정이 아님 |
+| Q | 소송→EPA 집행→합의→과학평가로 이의제기 경로가 확장 | 확장의 완전성·접근성·지속성은 미측정 |
+
+관측수준:
+- **직접관측/공식 기록:** EPA가 적시한 미보고·불완전 제출 시점, 2001년 외부 변호사 전달, 2004년 집행, 2005년 합의.
+- **공식 self-report:** SEC 공시의 2017년 약 3,550건·$670.7M 합의와 책임불인정 문구.
+- **별도 실증 lineage:** C8 Science Panel 및 이를 인용한 EPA health advisory.
+- **UNKNOWN:** 주민별 exit/recovery, 회사 편익, 조기공개 시 규제대응, 총 교정비용.
+
+### K1–K8 경쟁가설과 최소 판별관측
+
+| 커널 | 현재 판정 | 같은 사실로 과대추론하지 않기 위한 판별관측 |
+|---|---|---|
+| K1 DEPENDENCE–POWER | **부분 지지** | EPA가 회사 협조 없이 같은 원자료를 언제 확보할 수 있었는지, 독립 sampling·subpoena·검사권의 실제 사용시점 |
+| K2 POSITIVE-FEEDBACK–LOCK-IN | **미식별** | 시간 경과에 따라 미보고 유인·자산의존·정책전환비용이 자기강화됐다는 시계열. 단순 장기지속은 충분하지 않음 |
+| K3 ENDOGENOUS-OBSERVATION | **부분/미식별** | 공개 지연이 표본구성·노출분포·후속 연구질문을 어떻게 바꿨는지. 사후 노출자료만으로 feedback 크기를 확정하지 않음 |
+| K4b DISCLOSURE / VISIBILITY CONTROL | **가장 강한 직접지지** | 회사 내부 지식시점과 법정 제출시점의 문서별 차이, 제출요청 범위, 실제 누락항목 |
+| K5 SUPPRESSION–APPARENT CONSENSUS | **가능하나 미계량** | 공개 전후 문헌·정책의 주장분포와 citation context가 변했는지. 미보고 자체를 곧바로 사회적 합의 왜곡으로 등치하지 않음 |
+| K6 COUNTERFACTUAL EXTINCTION | **미식별** | 1981·1991·1997년에 완전공개됐을 때 EPA가 취했을 조치의 비교가능 사례. “더 일찍 막았을 것”은 아직 반사실 |
+| K7 CORRELATED-INDEPENDENCE FAILURE | **미해결** | 연구·자문·데이터의 자금, cohort, 분석, 기관 lineage. 보고서 수를 독립재현 수로 세지 않음 |
+| K8 CAPABILITY–OVERSIGHT GAP | **역사적 지지** | 규제기관의 독립측정 능력·자료접근권·집행자원과 실제 탐지시점. 규칙 존재와 탐지능력을 분리 |
+
+따라서 현재 최소 결론은:
+
+`
+K4b 직접증거 + K8 역사적 oversight gap
+!= K2 자기강화 확정
+!= K5 사회적 합의왜곡 규모 확정
+!= K6 조기규제 반사실 확정
+!= K7 독립성 실패 확정
+`
+
+### 반대증거·경계조건
+
+1. 2005년 행정합의와 2017년 MDL 합의는 각각 행위·청구를 종결했지만 DuPont의 책임 인정은 아니다.
+2. C8 Science Panel은 6개 질환에는 probable link를, 만성 신장질환·관상동맥질환 등 여러 결과에는 no probable link를 냈다. 따라서 이 계보는 “모든 질환 확인”이 아니라 **질환별 양·음 결과가 함께 있는 경계증거**다.
+3. C8 자료는 settlement에서 형성된 연구거버넌스와 Mid-Ohio Valley cohort를 공유한다. 여러 보고서를 자동으로 여러 독립재현으로 계산하지 않는다.
+4. EPA 집행기록은 보고의무·자료가시성에는 강하지만, 개별 질환의 역학적 인과나 주민별 회복비용을 단독으로 증명하지 않는다.
+5. `not observed != false`: K2·K5·K6·K7의 현재 미식별은 해당 메커니즘의 부재 판정이 아니다.
+
+### 출처와 기여 귀속
+
+- US EPA, 2004, PFOA 정보 미보고 집행 공지  
+  https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/826fe743d67d744685256f620074c136.html
+- US EPA, 2005, DuPont PFOA 합의  
+  https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/fdcb2f665cac66bb852570d7005d6665.html
+- US EPA, 2005, EAB transmittal memo / count별 계보  
+  https://www.epa.gov/sites/default/files/2013-08/documents/eabmemodupontpfoasettlement121405.pdf
+- C8 Science Panel, 2011–2012, 질환별 probable-link / no-probable-link 보고  
+  https://www.c8sciencepanel.org/prob_link.html
+- US EPA, 2016, PFOA Drinking Water Health Advisory(패널의 양·음 결과 요약)  
+  https://www.epa.gov/sites/default/files/2016-05/documents/pfoa_health_advisory_final_508.pdf
+- DuPont SEC filing, 2018, 2017 MDL 합의와 책임불인정  
+  https://www.sec.gov/Archives/edgar/data/30554/000003055418000005/dd-331201810xq.htm
+
+기존 연구·기관의 기여:
+EPA는 보고의무 위반 계보를, C8 Science Panel은 질환별 판정을, SEC 공시는 합의범위와 책임불인정을 제공한다.
+
+Project의 추가기여:
+새 사실의 발명이 아니라, 동일 사건을 P/I/E/R/O/B/C/K/L/Q와 K1–K8 경쟁가설로 분해하고
+**K4b/K8 직접지지와 K2/K5/K6/K7 미식별을 분리한 판별장부**다.
+
+### 다음 최소 판별 checkpoint
+
+1981 → 1980년대 중반 → 1991 → 1997 → 2001 → 2004 → 2005의 문서별 시점을 고정하고,
+각 시점의 `regulator-independent data availability`, `요청범위 대비 누락항목`,
+`외부 검증비용 부담자`, `공개 전후 정책·인용 변화`만 추출한다.
+
+이 관측은 K4b/K8을 K2/K5/K7과 구별하며,
+새 1차 커널을 추가하지 않는다.
