@@ -283,3 +283,63 @@ statutory_retention
 5. 단속유형별 인력시간·체포·안전성과 및 대상별 반환부담.
 
 반복될수록 더 강해지는 주체는 몰수권을 가진 경찰만이 아니라 세출을 상계·재배치하는 지방 예산권자일 수 있다. 더 소모되는 주체는 몰수 대상과 수익성 낮은 업무의 수혜자뿐 아니라, 표시상 특정 목적 재원이 실제로 대체된 공공서비스 수혜자다. 역할반전 시 예산권자가 자신의 독립재원을 같은 방식으로 사후 상계당해도 해당 규칙을 수용하는지 검사한다.
+
+
+## 11. 단속건수 미탐과 이중효과: 안전개선·징수부담의 동시발생
+
+- 판정일: 2026-10-10
+- scientific delta: `EDGE REVERSAL + DETECTOR FALSE-NEGATIVE CONDITION + DISTRIBUTED-WELFARE SPLIT`
+- 원출처: Anna Harvey (2020), “Fiscal Incentives in Law Enforcement,” *American Law and Economics Review* 22(1), 173–210. [DOI 10.1093/aler/ahaa001](https://doi.org/10.1093/aler/ahaa001).
+- 귀속: 범칙금 귀속의 인구기준 불연속을 이용해 재정유인, 교통안전, 피단속자 사후부담을 함께 식별한 것은 Harvey의 기여다.
+
+### strongest counterexample와 실제 관측
+
+Saskatchewan의 RCMP 계약지역에서는 1999년부터 1996년 인구 500명 미만 지역의 범칙금 수입을 주정부가 100% 보유했지만, 500명 이상 지역에서는 주정부 몫이 25%로 줄고 지방정부가 75%를 보유했다. RCMP 비용·지휘는 주정부가 담당했다.
+
+1995–2016년 자료의 population-threshold regression discontinuity에서:
+
+- 주정부의 한계수익이 낮은 500명 이상 지역은 바로 아래 지역보다 사고 빈도·사고차량·사고비용·부상이 더 높았다.
+- 그러나 교통정지·citation 빈도에는 불연속이 관측되지 않았다.
+- 주정부가 100% 수익을 보유한 500명 미만 지역의 피단속자는 납부기한이 더 짧고 제때 납부하지 못할 가능성이 높아, 연체료와 면허정지 위험이 커졌다.
+- 도입 전 기간, 인접 비처리지역, 복수 placebo threshold에서는 같은 불연속이 확인되지 않았다.
+
+따라서 수익유인은 한편으로 단속노력을 높여 위험행동과 사고를 줄이는 공공안전 편익을 만들 수 있고, 다른 한편으로 이미 단속된 사람에게 더 강한 징수부담을 부과할 수 있다. `PROFIT MOTIVE -> ONLY EXPLOITATION`과 `PROFIT MOTIVE -> ONLY PUBLIC BENEFIT` 모두 기각 대상이다.
+
+### 독립성·한계
+
+- 미국 몰수자료를 사용한 L-D/L-E 및 Baicker–Jacobson 계보와 국가·정책수단·자료·식별전략이 다른 독립 보완계보다. Project Intersection의 복제는 아니다.
+- population RD와 사전기간·공간·가짜 임계값 점검은 인과식별을 강화하지만, 임계점 인근 소도시·RCMP 계약구조의 국소효과다.
+- citation 빈도 불변은 노력 불변의 증거가 아니다. 잠재 위반자가 단속확률에 반응하면 노력 증가와 위반 감소가 서로 상쇄될 수 있다.
+- 사고감소와 징수부담의 총복지 비교, 집단별 분포, 장기 신뢰·exit·복구는 직접 식별하지 않았다.
+- 동 연구의 working-paper·기관 소개·저널판은 동일 계보로 한 번만 센다. 별도 funding·conflict disclosure가 확인되지 않아 `UNKNOWN/NOT REPORTED`로 둔다.
+
+### claim 및 detector 수정
+
+- `FINANCIAL ENFORCEMENT INCENTIVE != UNIFORMLY ANTISOCIAL`.
+- `STABLE CITATION COUNT != STABLE ENFORCEMENT EFFORT`.
+- `AGGREGATE SAFETY BENEFIT != FAIR BURDEN OR INDEPENDENCE PRESERVATION`.
+- `SAME INCENTIVE CAN DETER PRE-OFFENSE HARM AND INTENSIFY POST-CITATION HARM`.
+- 기존 `punisher_private_return` 측정에 수익 귀속뿐 아니라 지휘권·비용부담 주체를 결합한다. 수익을 얻는 주체와 단속을 배치하는 주체가 다르면 명목 수익률만으로 행동방향을 예측하지 않는다.
+- detector는 citation/arrest count만 보지 않고 사고·위반 proxy, 납부기한, 연체료, 면허정지, contest·복구비용을 별도 outcome channel로 둔다.
+- 새 first-order kernel은 열지 않는다. K1 `DEPENDENCE–POWER`, K3 `ENDOGENOUS-OBSERVATION`, K4 `METRIC–CONTROL FEEDBACK`에 흡수한다.
+
+### 다음 결정검사와 역할반전
+
+frozen 비교의 최소 결과벡터를 다음처럼 고정한다.
+
+```
+enforcement input:
+  patrol hours / deployment / detection probability
+observable action:
+  stops / citations / arrests
+pre-offense outcome:
+  violations / accidents / injuries
+post-action burden:
+  payment window / late fee / license suspension / contest cost / recovery time
+distribution:
+  resident status / income / political voice / repeat exposure
+```
+
+단속건수가 같아도 사고가 줄고 사후부담이 증가하면 `deterrence benefit + extraction burden`의 동시발생으로 판정한다. 사고만 보고 공존으로, 부담만 보고 총실패로 닫지 않는다.
+
+반복될수록 더 강해질 수 있는 주체는 수입과 배치권을 함께 가진 주정부·지방정부이며, 더 소모되는 주체는 안전편익을 공유하더라도 짧은 납부기한·연체·면허정지 비용이 집중되는 피단속자다. 역할반전에서는 예산권자와 집행자가 동일한 납부기한·연체제재·이의비용을 부담해도 그 강도를 수용하는지 검사한다.
