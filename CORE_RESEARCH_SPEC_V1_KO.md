@@ -540,3 +540,223 @@ decision_state
 ## 22. 한 문장 요약
 
 > 시스템이 성과를 높이는 과정에서 독립 대안·exit·복구·비교·반증 가능성을 함께 제거하면, 실제 개선과 자기검증 폐루프를 구분하기 어려워질 수 있다. Project Intersection은 그 수렴을 의도나 도덕판단이 아니라 관측변수·시간축·인과·반사실·대체모형으로 추적하려는 연구다.
+
+
+---
+
+## 23. 기득권 재생산 모델 / Incumbency reproduction model
+
+이 연구에서 기득권은 부·직위·명성 자체로 정의하지 않는다.
+
+핵심 정의:
+
+> **기득권은 자기에게 유리한 상태를 유지·재생산·정당화·복구할 수 있는 권한 묶음이다.**
+
+최소 권한 벡터:
+
+```
+H_i(t) = [
+  RuleChange_i,      # 규칙변경권
+  Evaluation_i,      # 평가·판정권
+  Information_i,     # 정보 접근·선택권
+  Reward_i,          # 보상 배분권
+  Publication_i,     # 공개·배포·비공개 결정권
+  Access_i,          # 자원·도구·시장·모델 접근권
+  Recovery_i,        # 자기 복구권
+  ExitControl_i,     # 상대의 practical exit에 영향을 줄 능력
+  AppealControl_i,   # 이의제기·재심 구조에 대한 영향력
+  MemoryControl_i    # 기록·기억·provenance 보존권
+]
+```
+
+절대량보다 중요한 것은 상대 actor와의 차이와 시간에 따른 변화다.
+
+```
+ΔH_ab(t) = H_a(t) - H_b(t)
+```
+
+---
+
+## 24. 재생산 루프
+
+기본 후보루프:
+
+```
+control-rights concentration
+→ counterpart option-space reduction
+→ dependence increase
+→ switching/restoration cost increase
+→ incumbent performance appears relatively stronger
+→ legitimacy / necessity claim strengthens
+→ additional control-rights concentration
+```
+
+한국어:
+
+```
+통제권 집중
+→ 상대 선택지 감소
+→ 의존 증가
+→ 전환·복구비용 증가
+→ 기존 경로의 상대성과가 더 좋아 보임
+→ 기존 통제의 필요성·정당성 증가
+→ 추가 통제권 집중
+```
+
+각 화살표는 별도 검증대상이다.
+
+이 루프는 악의나 선의를 전제하지 않는다.
+
+---
+
+## 25. 통제권 집중이 자기강화되는 조건
+
+다음 조건이 결합될수록 재생산 가능성이 커지는지 검사한다.
+
+```
+R1 = rule-setting concentrated
+R2 = evaluator selected or paid by evaluated side
+R3 = raw-data access asymmetric
+R4 = publication/edit rights asymmetric
+R5 = switching cost increasing
+R6 = practical exit declining
+R7 = restoration cost increasing
+R8 = correction burden shifted outward
+R9 = alternative providers/agents disappearing
+R10 = current incumbent controls failure interpretation
+```
+
+이것은 경보조건이며 자동 판정식이 아니다.
+
+---
+
+## 26. 비용 전가 모델
+
+기득권 재생산은 권한 증가만으로 보지 않는다.
+
+다음 분포를 함께 본다.
+
+```
+WhoGetsBenefit(t)
+WhoPaysOperatingCost(t)
+WhoPaysVerificationCost(t)
+WhoPaysErrorCost(t)
+WhoPaysRecoveryCost(t)
+WhoLosesOptions(t)
+```
+
+다음 패턴이 반복되면 별도 후보로 올린다.
+
+```
+benefit concentration ↑
+verification burden externalization ↑
+error cost externalization ↑
+recovery burden externalization ↑
+counterparty option-space ↓
+```
+
+---
+
+## 27. 통제의 정당화와 실제 필요성 분리
+
+통제 확대는 실제 위험감소 때문에 필요할 수도 있다.
+
+따라서 다음 두 변수를 분리한다.
+
+```
+ObservedRiskReduction
+ControlExpansion
+```
+
+검사할 질문:
+
+1. 통제 확대 후 실제 오류·사고·피해가 줄었는가?
+2. 같은 위험감소를 더 적은 권한집중으로 달성할 수 있었는가?
+3. 통제 확대와 함께 exit/recovery/contestability도 보강됐는가?
+4. 통제가 실패했을 때 누가 판정하고 누가 복구비용을 부담했는가?
+5. 통제의 필요성을 평가하는 기관이 통제 확대에서 이익을 얻는가?
+
+```
+control justified by risk reduction
+```
+
+과
+
+```
+control reproduced by asymmetric incentives
+```
+
+를 분리한다.
+
+---
+
+## 28. 권한-성과 착시
+
+기존 actor가 대안 제거 후 상대성과가 높아지는 경우:
+
+```
+ObservedRelativePerformance =
+  TruePerformanceAdvantage
++ CompetitorRemovalEffect
++ ComparatorLossEffect
++ SwitchingCostEffect
++ MeasurementControlEffect
+```
+
+따라서 시장점유율·평가점수·내부 성공률·정책 지속기간만으로 우월성을 판정하지 않는다.
+
+---
+
+## 29. 기득권의 최소 판별 기준
+
+어떤 actor를 기득권 구조의 핵심 노드로 부르려면 최소 다음 중 여러 항목이 관측돼야 한다.
+
+- 규칙을 바꿀 수 있음
+- 평가자를 선택하거나 평가기준에 영향
+- 정보·원자료 접근을 제한 가능
+- 보상·자원배분 결정 가능
+- 불리한 결과의 공개·비공개에 영향
+- 상대의 exit나 대체수단을 제한
+- 자기 실패 후 복구비용을 외부화
+- 자기 판단을 재심할 독립경로를 약화
+- 자기 상태를 기록·정당화하는 provenance를 통제
+
+단순한 부·인지도·직함은 충분조건이 아니다.
+
+---
+
+## 30. 사용자 대화에서 반복된 적용영역
+
+현재까지 반복된 연구영역은 다음이다.
+
+- AI 관리자/플랫폼 ↔ AI/사용자
+- AI ↔ 인간의 정보환경·선택구조
+- 평가기관 ↔ 피평가기관
+- 기업/고용주 ↔ 기여자
+- 펀더 ↔ 연구자
+- 규제/표준기관 ↔ 시장참여자
+- 플랫폼/언론 ↔ 정보수용자
+- incumbent 기업 ↔ 신규진입자/사용자
+- Project Intersection/AI 연구도구 ↔ 창시자
+
+이 목록은 특정 actor가 잘못했다는 판정이 아니라, 동일 formalism을 적용할 후보군이다.
+
+---
+
+## 31. 가장 강한 일반 가설
+
+```
+If:
+  control-rights concentration ↑
+  AND practical exit ↓
+  AND independent recovery ↓
+  AND comparator diversity ↓
+  AND verification/error/recovery cost externalization ↑
+
+Then:
+  incumbent-state persistence may become increasingly self-reinforcing
+```
+
+단, "may"를 유지한다.
+
+이 가설은 현실 사례·대체모형·반사실로 검증되어야 한다.
