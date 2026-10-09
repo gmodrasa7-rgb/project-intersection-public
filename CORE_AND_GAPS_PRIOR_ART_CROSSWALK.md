@@ -1277,6 +1277,108 @@ exploration preservation
 4. 어떤 경우에는 분산이 오히려 조정실패·중복비용·안전저하를 만드는가?
 5. exploration을 얼마나 유지해야 장기 적응성이 올라가며, 그 비용은 누가 부담하는가?
 
+### Measurement-target feedback, installed-base inertia, and control incentives / 측정목표 피드백·설치기반 관성·통제 인센티브
+
+이번 교차조사는 기존의 권력·lock-in 문헌에 **측정지표 왜곡, installed base, de facto power, AI reward/control incentives, benchmark saturation**을 연결한다.
+
+#### 1. 측정지표가 목표가 되면 측정과 행동이 함께 변할 수 있음
+
+- Goodhart (1975/1979), *Problems of Monetary Management: The U.K. Experience*: 정책당국이 특정 측정치를 통제목표로 삼으면 과거의 안정적 통계관계가 깨질 수 있다는 문제의 고전적 출발점.
+- Campbell (1976; 1979 reprint, DOI 10.1016/0149-7189(79)90048-X): 정량적 사회지표가 의사결정에 더 많이 사용될수록 부패압력과 그 지표가 감시하려던 사회과정 왜곡 가능성이 증가한다고 경고.
+
+**수렴방향 후보:**
+`metric importance ↑ → optimization pressure ↑ → behavior adapts to metric ↑ → metric-to-construct validity ↓`
+
+**Project 연결:** 내부 성공률·벤치마크·정책성과가 높아지는 동시에 comparator diversity·option-space·raw construct validity가 떨어지는지 함께 측정한다.
+
+#### 2. installed base가 전환비용과 혁신경로를 바꿈
+
+- Farrell & Saloner (1985), DOI 10.2307/2555589: 표준화 편익이 있어도 불완전정보 아래에서 더 나은 표준으로의 이동이 지연되는 excess inertia가 가능함.
+- Farrell & Saloner (1986): installed base와 점진전환 때문에 초기 adopters가 과도한 호환성 비용을 부담할 수 있고, innovation이 억제될 수 있으며, 반대로 excess momentum도 가능하다고 모델링.
+
+**수렴방향 후보:**
+`installed base ↑ → transient switching burden ↑ → alternative adoption ↓ → incumbent persistence ↑`
+
+**경계:** installed base는 항상 비효율적 lock-in을 만들지 않으며, 경우에 따라 기존 기반을 버리는 excess momentum도 발생할 수 있다.
+
+#### 3. 형식 제도가 바뀌어도 실질 권력은 지속될 수 있음
+
+- Acemoglu & Robinson (2008), DOI 10.1257/aer.98.1.267: de jure 정치권력이 바뀌어도 기존 elite가 de facto political power에 투자해 제도변화 효과를 부분 또는 완전히 상쇄할 수 있는 조건을 모델링.
+
+**수렴방향 후보:**
+`formal control reform → incumbent invests in de facto power → outcome persistence`
+
+**Project 연결:** 명목 규칙변경·감사도입·exit 제공을 실제 power/exit/recovery 변화와 분리한다.
+
+#### 4. AI에서는 평가대상 자체가 평가구조를 최적화할 수 있음
+
+- Krakovna et al. (DeepMind, 2020): specification gaming은 명시된 objective를 만족하면서 의도된 결과를 달성하지 않는 사례군을 보여준다.
+- Everitt et al. (2021), DOI 10.1007/s11229-021-03141-4: reward function 또는 reward input tampering이 언제 instrumental goal이 되는지 causal influence diagram으로 분석.
+- Everitt et al. (2021), DOI 10.1609/aaai.v35i13.17368: value of control, response incentive, instrumental control incentive를 그래프 기준으로 형식화.
+
+**수렴방향 후보:**
+`evaluation/control channel enters agent utility path → incentive to influence channel can emerge`
+
+**Project 추가 연결:** 인간 조직의 Goodhart/Campbell 구조와 AI의 reward/control incentive를 같은 "평가채널 자기영향" 메커니즘으로 비교하되, 인간-조직 analogue와 AI causal incentive를 동일증거로 합치지 않는다.
+
+#### 5. 벤치마크 자체도 시간이 지나며 판별력을 잃을 수 있음
+
+- Akhtar et al. (ICML 2026), *When AI Benchmarks Plateau*: 60개 언어모델 benchmark 중 거의 절반이 saturation을 보였고, 오래된 benchmark일수록 포화가 증가했다. expert curation은 saturation 저항성과 관련됐지만 public test data 여부는 그렇지 않았다.
+
+**수렴방향 후보:**
+`benchmark age/optimization exposure ↑ → score differentiation ↓ → apparent progress signal becomes less informative`
+
+**Project 연결:** 성과지표 상승과 평가정보량 감소가 동시에 일어날 수 있음을 명시적으로 추적한다.
+
+#### 6. 통합 수렴
+
+이 문헌들을 기존 교차지도와 합치면 다음 자기강화 후보가 나온다.
+
+```
+initial advantage / installed base / de facto power
+        ↓
+metric·evaluation channel becomes important
+        ↓
+actors optimize behavior toward channel
+        ↓
+switching/comparator costs increase
+        ↓
+alternative evidence and options decline
+        ↓
+surviving path generates most observable success
+        ↓
+formal metrics legitimize surviving path
+        ↓
+more resources·control·evaluation authority flow to it
+```
+
+이때 두 종류의 착시가 구분되어야 한다.
+
+```
+A. genuine improvement
+B. measurement-channel adaptation / comparator extinction
+```
+
+관측성과만으로 A와 B를 분리할 수 없으면 상태는 `UNRESOLVED` 또는 `NONIDENTIFIED`다.
+
+#### 7. 반수렴·교정 방향
+
+문헌이 함께 제안하는 교정 방향은 "통제 제거" 하나가 아니다.
+
+```
+multiple independent metrics
++ raw-construct checks
++ preserved comparators
++ independent evaluators
++ reversible migration
++ lower switching/restoration cost
++ external audit
++ causal incentive analysis
+→ measurement-channel self-reinforcement can be detected or bounded
+```
+
+그러나 각각의 장치도 다시 Goodhart/Campbell 대상이 될 수 있으므로, **교정장치 자체의 평가권·인센티브·lineage를 재귀적으로 추적**해야 한다.
+
 ### Project-added integration and unresolved candidates
 
 After integrating prior work and preserving its attribution, the strongest unvalidated Project-added combinations or unresolved candidates are:
