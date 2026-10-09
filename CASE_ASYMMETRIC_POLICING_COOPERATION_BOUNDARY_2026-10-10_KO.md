@@ -227,3 +227,59 @@ CENTRALIZED_ENFORCEMENT_EFFECT
 - 더 소모될 수 있는 주체: 재산을 먼저 잃고 반환비용을 부담하는 대상, 수익성이 낮아진 안전업무의 수혜자, 집행재배치로 도로위험을 떠안는 대중.
 - 역할반전: 현재 수익보유 기관이 압수 대상이 되어도 동일한 증명책임·선집행·반환지연을 수용하는가. 범죄감소의 수혜자가 재산상실·교통위험 비용까지 같은 확률로 부담해도 제도를 선택하는가.
 - 결론: 현실 자료는 “수익유인→협력 붕괴”의 단선적 외삽을 반증한다. 동시에 단일 범죄지표 개선만으로 장기 공존·독립성·총복지 개선을 판정하는 것도 반증한다.
+
+
+## 10. 예산권자의 적응: 법정 보유율과 실질 사적수익의 분리
+
+- 판정일: 2026-10-10
+- scientific delta: `CAUSAL-MEDIATOR CORRECTION + MULTI-LEVEL ADAPTATION + MEASUREMENT REVISION`
+- 선행출처: Katherine Baicker & Mireille Jacobson (2007), “Finders Keepers: Forfeiture Laws, Policing Incentives, and Local Budgets,” *Journal of Public Economics* 91(11–12), 2113–2136. [DOI 10.1016/j.jpubeco.2007.03.009](https://doi.org/10.1016/j.jpubeco.2007.03.009). 2004년 NBER working-paper DOI는 [10.3386/w10484](https://doi.org/10.3386/w10484)이며 같은 연구계보로 한 번만 센다.
+- 귀속: 법정 배분율과 지방정부의 예산상계를 합쳐 `de facto sharing`을 구성하고 경찰행동을 설명한 것은 Baicker와 Jacobson의 선행기여다.
+
+### 실제 관측
+
+- 48개 미국 본토 주의 1991–1999년 카운티 패널에서 DOJ 몰수 1달러 증가는 다음 해 경찰예산 배정 약 82센트 감소와 연관됐다. 당시 DOJ 반환분 80센트와 비슷해, 법정상 “경찰 귀속”이 순 경찰자원 증가를 뜻하지 않았다.
+- 카운티 적자가 1인당 100달러 커질 때 DOJ 몰수 상계율은 30–40센트 더 커졌다. 재정난 카운티는 상계재원을 다른 용도로 이동시켰다.
+- 몰수 1달러당 교정·사법예산은 약 50센트 증가했다. 따라서 경찰 단독 경계와 형사사법 전체 경계는 순자원 변화가 다르다.
+- 법정 배분율보다 예산상계를 반영한 실질 배분율이 경찰행동을 더 잘 설명했다. 평균 실질 배분율에서 1% 증가는 마약체포율 약 0.66% 증가와 연관됐고, 교정·사법예산까지 포함하면 저자 추정 탄력성은 약 0.23으로 낮아졌다.
+- 체포 변화는 수익성이 높은 헤로인 포함 범주에서 나타났지만, 더 크고 덜 수익적인 마리화나 시장의 전체 체포율에는 효과가 확인되지 않았다. 이는 전체 단속 증가보다 구성 재배치 설명과 더 잘 맞는다.
+
+### 독립성·한계
+
+- 직전 L-D(1984년 법개정) 및 L-E(뉴멕시코 개혁)와 연구팀·시기·자료가 다른 선행 계보다. 그러나 같은 정책영역의 직접재현은 아니며, L-D보다 먼저 발표된 prior art다.
+- 원 논문은 신규 몰수·카운티 예산·체포자료를 결합하고 고정효과·주별 추세 및 여러 역인과 점검을 사용했다. 그러나 몰수 자체와 예산결정의 내생성을 완전히 제거한 무작위 실험은 아니다.
+- 경찰·형사사법 내부 자원과 체포를 측정했지만 재산회수 성공, 대상별 오류·부담, 신뢰, 교통사망, 장기 총복지는 측정하지 않았다.
+- 논문 본문에서 별도 funding·conflict disclosure를 확인하지 못했으므로 자금·sponsor-control은 `UNKNOWN/NOT REPORTED`로 둔다.
+- 같은 논문의 2004 NBER판·2007 저널판·NBER digest를 독립증거로 중복 합산하지 않는다.
+
+### claim 및 측정 수정
+
+직전 section 9의 인과모형을 다음처럼 수정한다.
+
+```
+statutory_retention
+→ gross_seizure_return
+→ local_budget_offset
+→ net_agency_resource_gain
+→ enforcement_reallocation
+→ multi-domain benefit / burden
+```
+
+- `STATUTORY RETENTION != DE FACTO PRIVATE RETURN`.
+- `AGENCY REVENUE GAIN != AGENCY RESOURCE GAIN`.
+- `LOCAL GOVERNMENT OFFSET CAN ATTENUATE, REDIRECT, OR SOCIALIZE AN AGENCY INCENTIVE`.
+- 따라서 `punisher_private_return`은 법률상 배분율로 대체 측정하지 않는다. 실제 순예산·비현금 자산·추가 사용권·차년도 세출상계까지 포함해야 한다.
+- 예산권자는 중립 배경이 아니라 별도 목적함수를 가진 상위 행위자다. 경찰의 수익동기를 약화시키면서도 그 수입을 교정·사법 또는 복지재원으로 흡수할 수 있다.
+- 이는 새 first-order kernel이 아니라 K1 `DEPENDENCE–POWER`와 K4 `METRIC–CONTROL FEEDBACK` 안의 누락된 중개경로다. saturation 상태는 유지한다.
+
+### 수정된 결정검사와 역할반전
+
+다음 비교에서는 법정개혁만 처리로 두지 않고 기관-예산권자 연도별 순흐름을 고정한다.
+
+1. 총 몰수수입과 기관 직접반환액.
+2. 경찰 본예산·보충예산·현물장비의 전년 대비 변화.
+3. 교정·사법·복지 등 인접예산으로의 이동.
+4. 재정적자·빈곤율·세입제약과 상계율의 상호작용.
+5. 단속유형별 인력시간·체포·안전성과 및 대상별 반환부담.
+
+반복될수록 더 강해지는 주체는 몰수권을 가진 경찰만이 아니라 세출을 상계·재배치하는 지방 예산권자일 수 있다. 더 소모되는 주체는 몰수 대상과 수익성 낮은 업무의 수혜자뿐 아니라, 표시상 특정 목적 재원이 실제로 대체된 공공서비스 수혜자다. 역할반전 시 예산권자가 자신의 독립재원을 같은 방식으로 사후 상계당해도 해당 규칙을 수용하는지 검사한다.
