@@ -2130,3 +2130,28 @@ NEW_DISTORTION_LINEAGES = 0
 
 다음 최우선 실증:
 `동일 사례 하나를 K1–K8 경쟁모형으로 동시에 설명한 뒤, 어떤 관측이 각 모델을 구별하는지 판별표 작성`.
+
+
+---
+
+## 29. 포화 후 경계사례: 안전장치와 행동적응
+
+### 안전장치의 직접 보호효과와 risk compensation을 분리한다
+
+- **원안·원출처:** Sam Peltzman (1975), *The Effects of Automobile Safety Regulation*, DOI [10.1086/260352](https://doi.org/10.1086/260352)은 안전규제가 운전자 행동을 바꿔 기대 편익을 상쇄할 수 있다고 주장했다. 논문의 time-series 결과는 거의 완전한 상쇄 및 탑승자 편익과 보행자 피해의 교환과 일치했지만 cross-section 결과는 그렇지 않았다.
+- **강한 반대결과:** Alma Cohen & Liran Einav (2003), DOI [10.1162/003465303772815754](https://doi.org/10.1162/003465303772815754)은 1983–1997년 미국 주 패널에서 안전벨트 사용의 내생성을 도구변수로 처리한 뒤 non-occupant 사망 증가나 유의한 compensating behavior를 확인하지 못했고, 전체 교통사망은 감소한다고 추정했다. 메커니즘의 가능성과 특정 정책의 순효과를 분리해야 한다.
+- **시간경과 재검사:** Anderson, Liang & Sabia (2024), DOI [10.1002/jae.3026](https://doi.org/10.1002/jae.3026)은 원 추정을 재현하고 1998–2019년을 추가해 primary seatbelt law가 탑승자 사망을 5–9% 줄이는 연관성을 보고했다. secondary law 효과는 작고 모형선택에 민감했다. 데이터·부록은 공개됐지만 관측정책자료이므로 모든 행동경로의 인과를 확정하지 않는다.
+- **신뢰도·lineage·이해상충:** 세 연구는 저자·시기·분석이 달라 동일 lineage 반복은 아니다. 다만 2024 연구는 Cohen–Einav 자료·질문의 명시적 재현·확장 계보다. 2024 논문은 Sabia의 CHEPS 지원과 Charles Koch Foundation·Troesh Family Foundation 자금지원을 공개했다. 자금지원은 결과의 거짓을 뜻하지 않으며 sponsor의 설계·분석·출판 통제는 확인되지 않아 `UNKNOWN`이다.
+- **재사용 측정:** `직접 보호효과 / 행동적응 / 노출량 / 사고발생 / 사용자 피해 / 비사용자·제3자 피해 / 집행방식 / 초기 사용률 / 시간지연`을 분리한다. 총사고만 비교하거나 행동변화 가능성만으로 순편익을 부정하지 않는다.
+- **Project 적용:** AI guardrail·감사·복구장치도 존재 자체의 효과와 actor adaptation을 함께 측정하되, `control added → risk compensation → safety unchanged`를 기본값으로 두지 않는다. 보호효과가 적응을 압도하는 경우, 적응이 관측되지 않는 경우, 비용이 제3자에게 이동하는 경우를 각각 보존한다.
+
+커널 매핑:
+- K3 `ENDOGENOUS-OBSERVATION`: 개입이 행위와 이후 관측결과를 바꿈.
+- K4 `METRIC–CONTROL FEEDBACK`: 안전성과가 보상·통제지표가 될 때 추가 적응 가능.
+- K8 `CAPABILITY–OVERSIGHT GAP`: 적응경로를 측정하지 못하면 명목 안전과 실제 위해가 갈라질 수 있음.
+
+판정:
+
+`NO NEW FIRST-ORDER EDGE / SCOPE-CHANGING COUNTEREXAMPLE / NEW DISCRIMINATING MEASUREMENT SET`
+
+포화상태는 유지한다. 이 사례는 새 커널을 추가하지 않고, 안전·통제 개입의 순효과를 판별하는 측정설계를 강화한다.
