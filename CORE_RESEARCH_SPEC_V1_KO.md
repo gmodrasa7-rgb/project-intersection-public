@@ -1028,3 +1028,46 @@ structural exposure != discrepancy != mechanism != causal effect
 
 강한 incentive/target 자체는 이상판정 근거가 아니다.
 독립 shadow measure·field measure·controlled retest가 없는 경우 과도한 승격을 금지한다.
+
+
+---
+
+## 39. 탐지기 강건성 재검증
+
+평가재가공 탐지기는 고정규칙으로 취급하지 않는다.
+
+정본:
+- `DETECTOR_BYPASS_ROBUSTNESS_WATCH_KO.md`
+- `DETECTOR_ROBUSTNESS_STATE.json`
+- `CASE_DETECTOR_ROBUSTNESS_FIELD_VALIDATION_KO.md`
+
+재검증 상태:
+
+```
+R0 DETECTOR_NOT_DEPLOYED
+R1 DETECTOR_DEPLOYED
+R2 VALIDITY_RECHECK_REQUIRED
+R3 ROBUSTNESS_FAILURE_SIGNAL
+R4 FAILURE_MODE_IDENTIFIED
+R5 DETECTOR_RULE_UPDATED
+R6 UPDATED_RULE_INDEPENDENTLY_REVALIDATED
+R7 NEW_FAILURE_AFTER_UPDATE
+```
+
+R7은 종료상태가 아니다.
+새 실패증거가 생기면 R2로 되돌아간다.
+
+핵심 불변량:
+
+```
+correlated agreement != independent confirmation
+point-in-time metric != long-horizon state
+local metric improvement != system-level improvement
+stable performance metric != stable data-generating process
+more monitoring can increase both detection and adaptation pressure
+```
+
+탐지기 신뢰도는 버전별로만 유지한다.
+representation, denominator, temporal window, system boundary,
+input distribution 중 하나라도 변하면
+이전 validation을 자동 연장하지 않는다.
