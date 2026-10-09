@@ -1,0 +1,312 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Project Intersection Evaluation Reprocessing Detector",
+  "type": "object",
+  "required": [
+    "case_id",
+    "metric",
+    "underlying_objective",
+    "sti",
+    "erp",
+    "verification",
+    "signals",
+    "state",
+    "competing_models",
+    "next_discriminating_observation"
+  ],
+  "properties": {
+    "case_id": {
+      "type": "string"
+    },
+    "time_window": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "metric": {
+      "type": "object",
+      "required": [
+        "name",
+        "definition"
+      ],
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "definition": {
+          "type": "string"
+        },
+        "reward_link": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "threshold": {
+          "type": [
+            "string",
+            "number",
+            "null"
+          ]
+        },
+        "measurement_frequency": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "underlying_objective": {
+      "type": "object",
+      "required": [
+        "name",
+        "definition"
+      ],
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "definition": {
+          "type": "string"
+        },
+        "observation_lag": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "independent_measure_available": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        }
+      }
+    },
+    "sti": {
+      "type": "object",
+      "properties": {
+        "monetary": {
+          "$ref": "#/$defs/evidenceState"
+        },
+        "employment": {
+          "$ref": "#/$defs/evidenceState"
+        },
+        "promotion": {
+          "$ref": "#/$defs/evidenceState"
+        },
+        "reputation": {
+          "$ref": "#/$defs/evidenceState"
+        },
+        "hierarchy_target": {
+          "$ref": "#/$defs/evidenceState"
+        },
+        "resource": {
+          "$ref": "#/$defs/evidenceState"
+        },
+        "temporal": {
+          "$ref": "#/$defs/evidenceState"
+        }
+      }
+    },
+    "erp": {
+      "type": "object",
+      "properties": {
+        "object_creation": {
+          "$ref": "#/$defs/evidenceState"
+        },
+        "data_entry": {
+          "$ref": "#/$defs/evidenceState"
+        },
+        "sampling": {
+          "$ref": "#/$defs/evidenceState"
+        },
+        "timing": {
+          "$ref": "#/$defs/evidenceState"
+        },
+        "metric_definition": {
+          "$ref": "#/$defs/evidenceState"
+        },
+        "disclosure_visibility": {
+          "$ref": "#/$defs/evidenceState"
+        },
+        "evidence_context": {
+          "$ref": "#/$defs/evidenceState"
+        },
+        "evaluation_aware_behavior": {
+          "$ref": "#/$defs/evidenceState"
+        }
+      }
+    },
+    "verification": {
+      "type": "object",
+      "properties": {
+        "independent_verification": {
+          "$ref": "#/$defs/evidenceState"
+        },
+        "raw_data_access": {
+          "$ref": "#/$defs/evidenceState"
+        },
+        "lineage_independence": {
+          "$ref": "#/$defs/evidenceState"
+        },
+        "shadow_measure": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "verification_lag": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "signals": {
+      "type": "object",
+      "properties": {
+        "threshold_bunching": {
+          "$ref": "#/$defs/signalState"
+        },
+        "target_discontinuity": {
+          "$ref": "#/$defs/signalState"
+        },
+        "metric_without_objective_confirmation": {
+          "$ref": "#/$defs/signalState"
+        },
+        "implausible_joint_pattern": {
+          "$ref": "#/$defs/signalState"
+        },
+        "zero_missing_reclassification_shift": {
+          "$ref": "#/$defs/signalState"
+        },
+        "variance_compression": {
+          "$ref": "#/$defs/signalState"
+        },
+        "field_metric_divergence": {
+          "$ref": "#/$defs/signalState"
+        },
+        "post_incentive_distribution_shift": {
+          "$ref": "#/$defs/signalState"
+        },
+        "independent_retest_reversal": {
+          "$ref": "#/$defs/signalState"
+        },
+        "mechanism_trace": {
+          "$ref": "#/$defs/signalState"
+        }
+      }
+    },
+    "state": {
+      "enum": [
+        "S0_NO_STRUCTURAL_EXPOSURE",
+        "S1_STRUCTURAL_EXPOSURE",
+        "S2_STATISTICAL_DISCREPANCY",
+        "S3_REPRODUCIBLE_M_Y_DIVERGENCE",
+        "S4_REPROCESSING_MECHANISM_OBSERVED",
+        "S5_CAUSAL_INFLUENCE_IDENTIFIED",
+        "NONIDENTIFIED_DATA_REQUIRED"
+      ]
+    },
+    "competing_models": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "C1_GENUINE_IMPROVEMENT",
+          "C2_DELIBERATE_METRIC_REPROCESSING",
+          "C3_NONDELIBERATE_PROCEDURAL_ADAPTATION",
+          "C4_RULE_AMBIGUITY_OR_TRAINING_FAILURE",
+          "C5_RESOURCE_CAPACITY_CONSTRAINT",
+          "C6_SELECTION_COMPOSITION_CHANGE",
+          "C7_MEASUREMENT_ERROR",
+          "C8_EXOGENOUS_SHOCK",
+          "C9_MIXED",
+          "C10_UNKNOWN"
+        ]
+      }
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "claim",
+          "source_type",
+          "status"
+        ],
+        "properties": {
+          "claim": {
+            "type": "string"
+          },
+          "source": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "source_type": {
+            "enum": [
+              "RAW_DATA",
+              "PRIMARY_DOCUMENT",
+              "OFFICIAL_REPORT",
+              "PEER_REVIEWED",
+              "LEGAL_RECORD",
+              "SELF_REPORT",
+              "SECONDARY",
+              "OTHER"
+            ]
+          },
+          "status": {
+            "enum": [
+              "OBSERVED",
+              "OFFICIAL_SELF_REPORT",
+              "PROXY",
+              "CONFLICTING",
+              "UNKNOWN",
+              "NOT_SUPPORTED"
+            ]
+          },
+          "lineage": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      }
+    },
+    "counterevidence": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "next_discriminating_observation": {
+      "type": "string"
+    }
+  },
+  "$defs": {
+    "evidenceState": {
+      "enum": [
+        "OBSERVED",
+        "PROXY",
+        "UNKNOWN",
+        "NOT_PRESENT",
+        "CONFLICTING"
+      ]
+    },
+    "signalState": {
+      "enum": [
+        "PRESENT",
+        "ABSENT",
+        "UNKNOWN",
+        "CONFLICTING"
+      ]
+    }
+  },
+  "additionalProperties": false
+}
