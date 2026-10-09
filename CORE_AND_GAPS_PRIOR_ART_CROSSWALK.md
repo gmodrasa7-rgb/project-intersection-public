@@ -2,13 +2,13 @@
 # 핵심 이론·미해결 공백 선행연구 교차지도
 
 Date: 2026-10-05
-Status: PRIOR-ART / ATTRIBUTION BOUNDARY — NOT PROJECT VALIDATION
+Status: PRIOR-ART INTEGRATION / REUSE / ATTRIBUTION / BOUNDARY CONDITIONS — NOT PROJECT VALIDATION
 
-This file records earlier or adjacent work for concepts already present in the public Project Intersection repository. It is designed to prevent accidental priority claims.
+This file records earlier or adjacent work for concepts already present in the public Project Intersection repository. Its primary purposes are to reduce duplicated research effort, reuse stronger existing theories and measurements, expand historical/cross-domain cases and boundary conditions, and preserve accurate attribution.
 
 "Originator" is used only where a defensible priority attribution exists. Mature fields often have no single originator; in those cases this file records seminal / representative prior work instead of inventing a single owner.
 
-이 문서는 Project Intersection 공개 저장소에 이미 존재하는 개념과 겹치는 선행연구를 기록한다. 목적은 Project 내부 명칭이 다르다는 이유로 기존 학문의 우선권을 지우지 않는 것이다.
+이 문서는 Project Intersection 공개 저장소에 이미 존재하는 개념과 겹치는 선행연구를 기록한다. 상위 목적은 (1) 이미 해결·검증·실패한 접근을 재사용해 연구 효율을 높이고, (2) 역사·자연실험·타 분야·AI 사례와 반례·negative result로 적용범위와 경계조건을 넓히며, (3) 기존 연구의 원안자·출처·방법·증거를 정확히 귀속하는 것이다. 선행연구 발견 자체를 Project 연구 삭제나 독립성 하향의 근거로 사용하지 않는다.
 
 "원안자"를 단일 인물로 확정하기 어려운 성숙 학문은 억지로 한 사람에게 귀속하지 않고 대표적·기초적 선행연구로 표기한다.
 
@@ -760,9 +760,9 @@ Use:
 - INT: interpretation authority and evaluator disagreement.
 - VOI: stopping rule for unknown-stakeholder search.
 
-### Residual candidate
+### Project-added integration and unresolved candidates
 
-After subtraction, the strongest unvalidated residuals are:
+After integrating prior work and preserving its attribution, the strongest unvalidated Project-added combinations or unresolved candidates are:
 
 1. fork/merge-aware role reversal where agent count is endogenous;
 2. enforcement-latency versus power-drift thresholds;
