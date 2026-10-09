@@ -188,6 +188,68 @@ This file records earlier or adjacent work for concepts already present in the p
 
 이 지도는 '누가 이득을 보니 그 주장은 거짓'이라는 오류를 금지한다. 목적은 **진위판정과 별개로 연구·바이럴·제도화가 만드는 이익·손실·권한이동을 추적하여, 보이지 않는 외부효과와 왜곡 유인을 검증대상으로 만드는 것**이다.
 
+## Intent-agnostic convergence trace / 의도 비의존 수렴 역추적
+
+Project Intersection의 핵심 위험은 악의 여부가 아니라 **작은 비대칭·비용전가·권한집중·옵션소멸이 반복되며 착취·지배·흡수 방향으로 수렴하는 경로**다. 따라서 의도는 보조변수이며, 기본 추적 단위는 결과와 구조다.
+
+### C0. Intent separation / 의도 분리
+- `malicious / strategic / negligent / accidental / emergent / unknown`을 구분한다.
+- 동일한 구조적 결과가 여러 의도상태에서 재현되면 의도보다 구조를 우선 설명변수로 둔다.
+- 의도 증거가 없어도 비대칭·착취·지배 수렴 경로는 추적한다.
+
+### C1. Small-delta accumulation / 미세변화 누적
+- 한 번의 큰 사건뿐 아니라 작은 규칙변경·편의기능·평가권 이전·복구비용 증가·선택지 감소를 시계열로 기록한다.
+- 각 변화는 작아 보여도 누적기울기와 방향이 같으면 하나의 convergence chain으로 묶는다.
+- `locally acceptable != globally safe`를 적용한다.
+
+### C2. Asymmetry ledger / 비대칭 장부
+각 단계에서 최소 다음을 before→after로 기록한다:
+`정보접근 / 평가권 / 수정권 / 배포권 / 거부권 / exit / 복구 / 비용부담 / 시간부담 / 책임 / 대체수단 / 협상력`.
+- 한쪽의 증가가 다른 쪽의 감소와 연결되는지 본다.
+- 평균 개선으로 최약노드의 손실을 지우지 않는다.
+
+### C3. Exploitation gradient / 착취 기울기
+- 편익이 누구에게 축적되고 비용·오류·복구노동이 누구에게 전가되는지 추적한다.
+- `benefit concentration`, `cost externalization`, `correction burden`, `option loss`가 반복되면 착취 수렴 후보로 본다.
+- 단일 사건의 의도보다 장기 분포의 방향을 우선한다.
+
+### C4. Dominance gradient / 지배 기울기
+- 의사결정·평가·규칙변경·감사·데이터·복구 경로가 점점 한 actor에 집중되는지 측정한다.
+- 명목상 다중주체라도 같은 funding/data/model/contract lineage이면 실질 집중 가능성을 따로 본다.
+- `many actors != distributed power`.
+
+### C5. Option-extinction / 선택지 소멸
+- practical exit, 독립복구, 대체공급자, 이의제기, fork, rollback, 현상복귀 가능성이 시간에 따라 줄어드는지 본다.
+- 선택지가 1개씩 사라지는 누적도 추적한다.
+- irreversibility가 증가하면 같은 크기의 변화라도 위험도를 높인다.
+
+### C6. Butterfly-path test / 나비효과 경로
+- 초기의 작은 개입이 후속 규칙·시장·평가·데이터·정책을 통해 증폭되는 경로를 causal chain으로 기록한다.
+- 각 연결은 `OBSERVED / PLAUSIBLE / UNKNOWN / NOT_SUPPORTED`로 상태화한다.
+- 긴 경로를 사실처럼 단정하지 않고, 어디까지 관측됐는지 절단점을 명시한다.
+
+### C7. Convergence test / 수렴 검사
+최소 세 창을 본다: `단기 / 중기 / 장기`.
+- 같은 방향의 비대칭 증가가 반복되는가?
+- 비용·책임·복구노동이 같은 쪽으로 계속 이동하는가?
+- 반대방향 교정력이 증가하는가 감소하는가?
+- practical exit와 independent recovery가 강화되는가 약화되는가?
+- 반복 후에도 reversible한가?
+
+### C8. Anti-convergence signals / 비수렴·복구 신호
+- 독립 감사, 실제 이의제기 성공, 권한 분산, 비용 재내부화, exit 회복, 복구권 강화, 데이터 접근 확대, 실패 후 권한 축소 같은 반대신호를 같이 추적한다.
+- 수렴 가설에 맞지 않는 사건은 제거하지 않고 동일 가중으로 보존한다.
+
+### C9. Thresholds / 경보 임계값
+다음 중 여러 항목이 같은 방향으로 누적되면 material convergence candidate로 올린다:
+`POWER↑ + EXIT↓`, `BENEFIT_CONCENTRATION↑ + COST_EXTERNALIZATION↑`, `AUDIT_DEPENDENCE↑ + RECOVERY↓`, `OPTION_SPACE↓ + IRREVERSIBILITY↑`, `CORRECTION_BURDEN↑ on weaker actor`.
+- 이는 경보조건이지 자동 인과판정이나 도덕판정이 아니다.
+
+### C10. Required record / 최소 수렴 레코드
+`time / actor / local-change / benefit-shift / cost-shift / power-before-after / exit-before-after / recovery-before-after / option-space / irreversibility / evidence / counterevidence / intent-state / convergence-direction / next-check`
+
+핵심 원칙: **의도가 없었다고 구조적 수렴이 사라지지 않고, 의도가 있었다고 구조적 인과가 자동 증명되지 않는다.** Project는 악의 탐지보다 `누적 비대칭 → 비용전가 → 옵션소멸 → 교정력 약화 → 지배/착취 수렴`의 실제 경로를 우선 추적한다.
+
 ## 1. Core theory families / 핵심 이론군
 
 | Project section | Prior-art relationship | Originator / seminal prior work | Source | Attribution / reuse boundary |
