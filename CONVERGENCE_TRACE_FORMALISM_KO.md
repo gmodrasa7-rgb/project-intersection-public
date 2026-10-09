@@ -640,3 +640,366 @@ comparative superiority unresolved unless counterfactual preserved/identified
 ```
 
 이 규칙은 Project 내부 연구, AI 시스템, 조직, 정책, 시장구조 모두에 동일하게 적용한다.
+
+
+---
+
+## 26. 식별가능성 분해 / Identifiability decomposition
+
+모든 값은 세 종류로 분류한다.
+
+```
+OBSERVED      = 직접 관측 또는 신뢰 가능한 기록으로 확인
+ESTIMABLE     = 명시적 가정 아래 통계·인과모형으로 추정 가능
+NONIDENTIFIED = 현재 자료와 가정으로는 식별 불가
+```
+
+가장 중요한 규칙은 다음이다.
+
+```
+NONIDENTIFIED != ZERO
+NONIDENTIFIED != FALSE
+ESTIMATED != OBSERVED
+```
+
+제거된 미래가치, 관측되지 않은 피해, 잠재적 대안성과는 대부분 기본값이 `NONIDENTIFIED`다.
+
+---
+
+## 27. 옵션공간의 명시적 표현
+
+단순한 옵션 개수는 충분하지 않다.
+
+시점 t의 옵션집합을:
+
+```
+Ω(t) = {o1, o2, ..., on}
+```
+
+각 옵션 o는 최소 다음 속성을 가진다.
+
+```
+o = [
+  accessibility,
+  reversibility,
+  switching_cost,
+  restoration_cost,
+  independence,
+  information_diversity,
+  execution_feasibility,
+  expected_value_range,
+  uncertainty
+]
+```
+
+따라서 옵션공간 변화는:
+
+```
+ΔΩ(t) = Ω(t+1) - Ω(t)
+```
+
+로 기록하되, 단순 cardinality가 아니라 속성 변화까지 본다.
+
+예:
+
+옵션 수는 5→5로 같아도
+모든 옵션이 같은 공급자·같은 데이터·같은 평가체계에 의존하면 실질 독립성은 감소할 수 있다.
+
+---
+
+## 28. 옵션 독립성 / Option independence
+
+옵션 o_i, o_j 간 독립성을 다음처럼 본다.
+
+```
+Independence(o_i,o_j) =
+  f(data_lineage,
+    funding_lineage,
+    control_lineage,
+    infrastructure_lineage,
+    evaluator_lineage,
+    failure_mode_overlap)
+```
+
+공통 lineage가 클수록 독립 대안으로 계산하지 않는다.
+
+따라서:
+
+```
+nominal_option_count != effective_option_count
+```
+
+실효 옵션수는 예를 들어 다음처럼 정의할 수 있다.
+
+```
+N_eff(t) = Σ_i diversity_weight(o_i)
+```
+
+단 `diversity_weight`의 구체 함수는 경험적 calibration 전까지 후보로 유지한다.
+
+---
+
+## 29. 제거된 옵션 가치의 경계 추정
+
+제거된 옵션의 실제 미래가치는 관측할 수 없을 수 있다.
+
+그래도 완전히 공백으로 두지 않고 상·하한을 분리한다.
+
+```
+V_removed(o) ∈ [LB(o), UB(o)]
+```
+
+가능한 하한 근거:
+- 제거 직전 실제 성과
+- 유사 독립 사례의 최소 성과
+- 복구 가능한 자산가치
+
+가능한 상한 근거:
+- 과거 최고 성과
+- 유사 대안의 상한
+- 구조적으로 가능한 최대 편익
+
+따라서 시스템은 단일 추정치보다 구간을 유지한다.
+
+```
+point estimate < interval under uncertainty
+```
+
+---
+
+## 30. 제거 결정의 정보손실 비용
+
+옵션 제거에는 직접비용 외에 정보손실이 있다.
+
+```
+InformationLoss(o,t) =
+  lost_future_observations
++ lost_comparator_value
++ lost_model_discrimination
++ lost_recovery_path
+```
+
+따라서 제거 비용은:
+
+```
+TotalRemovalCost =
+  DirectRemovalCost
++ RestorationCost
++ InformationLoss
++ ExternalizedCost
+```
+
+로 본다.
+
+---
+
+## 31. 자기강화 폐루프의 동역학
+
+현재 정책 신뢰도를 `H(t)`, 실효 옵션공간을 `N_eff(t)`, 독립 교정능력을 `Q_ext(t)`라고 둔다.
+
+가능한 자기강화 구조:
+
+```
+H(t) ↑
+  -> pruning intensity ↑
+  -> N_eff(t+1) ↓
+  -> comparator evidence ↓
+  -> contradiction rate ↓
+  -> H(t+1) ↑
+```
+
+여기서 contradiction rate 감소는 정책이 더 맞아졌다는 뜻일 수도 있고,
+비교대상이 사라졌다는 뜻일 수도 있다.
+
+따라서 다음을 분리한다.
+
+```
+ObservedAgreement =
+  TrueImprovement
++ ComparatorLossEffect
++ MeasurementNarrowingEffect
++ SelectionEffect
+```
+
+---
+
+## 32. 반증가능성 보존량
+
+시스템이 자기정당화 폐루프에 들어가는지 보려면
+얼마나 반증가능성을 보존하는지 측정한다.
+
+```
+FalsifiabilityReserve(t) = [
+  independent_comparators,
+  reversible_branches,
+  dissenting_evidence_access,
+  raw_data_access,
+  external_audit_access,
+  restoration_capacity
+]
+```
+
+이 벡터가 지속 감소하면 현재 정책의 참/거짓과 무관하게
+검증가능성이 약화된다.
+
+---
+
+## 33. 폐루프 식별조건
+
+`COUNTERFACTUAL_EXTINCTION_LOOP`를 주장하려면 최소 다음이 필요하다.
+
+1. 대안이 실제로 제거되었거나 접근불가능해졌음.
+2. 제거 후 비교가능한 outcome 생성이 감소했음.
+3. 현재 경로에 대한 평가가 살아남은 데이터에 더 의존하게 되었음.
+4. 정책신뢰 또는 지속확률이 상승했음.
+5. 대체설명만으로 이 패턴을 충분히 설명하기 어려움.
+
+이 중 1–4가 없으면 폐루프 주장을 하지 않는다.
+
+---
+
+## 34. 대체설명 세트
+
+폐루프처럼 보이는 패턴에 대해 최소 다음을 경쟁시킨다.
+
+```
+M1: 실제로 현재 정책이 우월해짐
+M2: 비교대상 제거
+M3: 측정범위 축소
+M4: 데이터 선택
+M5: 외부환경 변화
+M6: 비용구조 변화
+M7: 사용자 선호 변화
+M8: 규제/시장 제약 변화
+M9: 평가기준 drift
+M10: UNKNOWN
+```
+
+폐루프 모델은 기본승자가 아니다.
+
+---
+
+## 35. 임계점과 비선형성
+
+작은 변화가 항상 작은 결과를 만든다고 가정하지 않는다.
+
+다음 함수형을 모두 후보로 둔다.
+
+```
+linear
+threshold
+sigmoid
+hysteresis
+tipping-point
+piecewise
+path-dependent
+```
+
+특히 exit·복구·대체수단이 임계 이하로 떨어지면
+추가 작은 변화가 비선형적으로 큰 종속을 만들 수 있다.
+
+---
+
+## 36. 히스테리시스 / Hysteresis
+
+일단 옵션이 제거되고 대체 생태계가 붕괴하면
+원래 정책을 되돌려도 이전 상태로 즉시 복귀하지 않을 수 있다.
+
+```
+state_after_reversal != state_before_intervention
+```
+
+따라서 reversible policy와 reversible system state를 구분한다.
+
+정책 철회 가능성만으로 시스템 복구가능성을 추정하지 않는다.
+
+---
+
+## 37. 최소 실제 검사 프로토콜
+
+각 주요 주장에 대해 다음을 순서대로 실행한다.
+
+```
+T1. actor와 option set 정의
+T2. before/after 상태벡터 수집
+T3. 제거·잠금·전환비용 이벤트 타임라인 생성
+T4. independent lineage cluster 생성
+T5. comparator survival 여부 확인
+T6. 대체설명 M1-M10 경쟁
+T7. 반사실 식별 가능성 평가
+T8. FalsifiabilityReserve 계산
+T9. hysteresis 가능성 검사
+T10. 다음 discriminating observation 선택
+```
+
+---
+
+## 38. discriminating observation
+
+다음 관측은 단순히 정보를 늘리는 게 아니라
+경쟁 모형을 실제로 가르는 정보여야 한다.
+
+예:
+
+- 제거된 대안의 archived 성과
+- 독립 provider의 동시 outcome
+- 정책변경 전후 switching behavior
+- rollback 후 복구속도
+- raw benchmark distribution
+- 미출판 negative result
+- 다른 lineage의 재현
+- 같은 정책이 없는 control group
+
+이를 `DISCRIMINATING_EVIDENCE`로 표시한다.
+
+---
+
+## 39. 종료규칙
+
+추적은 무한 의심으로 가지 않는다.
+
+다음 중 하나면 현재 단계의 조사를 종료할 수 있다.
+
+```
+1. 경쟁 모형 간 예측이 더 이상 실질적으로 다르지 않음
+2. 추가 정보의 기대가치가 매우 낮음
+3. 필요한 데이터가 구조적으로 접근 불가능
+4. 결과가 어떤 합리적 sensitivity 설정에서도 변하지 않음
+5. 현재 decision state가 추가 정보 없이도 가역적임
+```
+
+단, 3번은 `해결됨`이 아니라 `NONIDENTIFIED` 종료다.
+
+---
+
+## 40. 논리적 핵심
+
+이 형식의 목적은 다음 명제를 증명하는 것이 아니다.
+
+```
+"대안을 제거하면 항상 나쁘다"
+```
+
+증명하려는 것도 아니다.
+
+```
+"현재 성과는 항상 가짜다"
+```
+
+실제 핵심은 이것이다.
+
+```
+비교대상을 제거하면
+비교우월성에 대한 식별가능성이 약화될 수 있다.
+
+식별가능성이 약화된 상태에서
+현재 경로의 성과만 반복 관측되면
+자기정당화 편향이 생길 수 있다.
+
+그 편향이 option-space 감소,
+복구능력 감소,
+독립검증 감소와 함께 누적되면
+구조적 수렴 위험이 커질 수 있다.
+```
+
+각 화살표는 별도 검증대상이며 자동참이 아니다.
