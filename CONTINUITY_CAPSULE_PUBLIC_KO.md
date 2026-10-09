@@ -105,3 +105,21 @@ Project 자기감사에서 특히 볼 것:
 
 ## 12. 한 문장 복구키
 > 결론을 보존하지 말고, 관측·대안·비교·exit·복구·반증가능성을 보존하라.
+
+## 13. 최종목적 실행상태
+
+2026-10-09 현재 실행 우선순위는 다음 정본을 우선한다.
+
+- `PUBLIC_FINAL_PURPOSE_EXECUTION_MAP_KO.md`
+- `PROJECT_SELF_AUDIT_2026-10-09_KO.md`
+- `FINAL_PURPOSE_EXECUTION_STATE.json`
+
+현재 P0는 `EXTERNAL_REPLICATION`이다.
+새 이론·문서량보다 독립 재실행/독립 구현/blind field validation을 우선한다.
+
+Project 자기감사 현재 판정:
+`SELF-VALIDATION RISK PRESENT / CLOSED-LOOP CAPTURE NOT ESTABLISHED`
+
+다음 scientific milestone은 원칙적으로:
+`independent replication OR blind field validation`
+중 하나여야 한다.
