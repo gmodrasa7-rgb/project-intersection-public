@@ -1,0 +1,75 @@
+{
+  "schema_version": "1.0",
+  "detector_version": "1.1",
+  "robustness_taxonomy_version": "1.0",
+  "status": "ACTIVE_ROBUSTNESS_WATCH",
+  "first_order_prior_art_status": "PRIOR_ART_FIRST_ORDER_SATURATED",
+  "known_failure_modes": [
+    {
+      "id": "F1",
+      "name": "REPORTING_WINDOW_EFFECT",
+      "evidence": "EMPIRICAL"
+    },
+    {
+      "id": "F2",
+      "name": "REGULATORY_PERIMETER_SHIFT",
+      "evidence": "EMPIRICAL"
+    },
+    {
+      "id": "F3",
+      "name": "EVALUATION_AWARE_ADAPTATION",
+      "evidence": "EXPERIMENTAL"
+    },
+    {
+      "id": "F4",
+      "name": "VERIFIER_LINEAGE_CORRELATION",
+      "evidence": "EMPIRICAL"
+    },
+    {
+      "id": "F5",
+      "name": "CLASSIFICATION_DENOMINATOR_SHIFT",
+      "evidence": "CROSS_DOMAIN"
+    },
+    {
+      "id": "F6",
+      "name": "PROXY_MIGRATION",
+      "evidence": "STRUCTURAL"
+    },
+    {
+      "id": "F7",
+      "name": "DETECTOR_AGING",
+      "evidence": "STRUCTURAL"
+    }
+  ],
+  "invariants": [
+    "STRUCTURAL_EXPOSURE != DISCREPANCY != MECHANISM != CAUSAL_EFFECT",
+    "CORRELATED_AGREEMENT != INDEPENDENT_CONFIRMATION",
+    "POINT_IN_TIME_METRIC != LONG_HORIZON_STATE",
+    "LOCAL_METRIC_IMPROVEMENT != SYSTEM_LEVEL_IMPROVEMENT",
+    "DETECTOR_DEPLOYMENT_CAN_CHANGE_BEHAVIOR"
+  ],
+  "reopen_conditions": [
+    "NEW_CAUSAL_FAILURE_MODE",
+    "EDGE_REVERSAL",
+    "NEW_NONLINEAR_THRESHOLD",
+    "STRONG_COUNTEREXAMPLE",
+    "NEW_MEASUREMENT_REQUIRED",
+    "NEW_DISTORTION_LINEAGE",
+    "DETECTOR_FALSE_NEGATIVE_EVIDENCE",
+    "DETECTOR_FALSE_POSITIVE_EVIDENCE"
+  ],
+  "open_unknowns": [
+    "LOW_AND_SLOW_DIRECT_FIELD_CASE",
+    "SHADOW_MEASURE_CONTAMINATION_FIELD_CASE",
+    "MONITOR_DIVERSITY_EFFECT_SIZE",
+    "LINEAGE_INDEPENDENCE_MINIMUM_METRIC"
+  ],
+  "failed_rules": [],
+  "superseded_rules": [],
+  "last_material_delta": {
+    "type": "ROBUSTNESS_TAXONOMY_CREATED",
+    "source_file": "DETECTOR_BYPASS_ROBUSTNESS_WATCH_KO.md"
+  },
+  "next_discriminating_test": "Find a public time-series case where a detector or regulatory metric changed, then test whether behavior migrated across time, organizational perimeter, classification, or verifier lineage.",
+  "update_policy": "Material delta only; preserve counterexamples and failed rules; reopen prior conclusions when detector validity changes."
+}
