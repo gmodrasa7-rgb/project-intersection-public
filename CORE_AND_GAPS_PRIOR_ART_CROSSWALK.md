@@ -99,6 +99,95 @@ This file records earlier or adjacent work for concepts already present in the p
 
 이 프로토콜은 의심을 최대화하기 위한 장치가 아니다. 목표는 **권위나 반권위 어느 쪽에도 자동 수렴하지 않고, 정보가 생성·선택·유통·재현되는 전체 경로를 추적해 실제 재사용 가능한 부분만 남기는 것**이다.
 
+## Benefit-harm propagation map / 연구·바이럴 수혜-손실 역추적
+
+연구의 진위와 별개로, 그 연구가 생성·출판·바이럴·정책화될 때 **누가 무엇을 얻고 누가 어떤 비용을 부담하는지**를 별도 추적한다. 이 지도는 동기를 단정하기 위한 것이 아니라, 정보유통이 만드는 인센티브와 비대칭을 드러내기 위한 것이다.
+
+### B0. Unit of analysis / 분석단위
+- 연구 전체가 아니라 `claim × actor × propagation stage × time horizon` 단위로 기록한다.
+- 같은 actor도 단기/장기, 공개/비공개, 직접/간접 효과가 반대일 수 있으므로 합산하지 않는다.
+
+### B1. Actor discovery / 이해관계자 탐색
+최소 후보군: 연구자·창시자, 공동연구자, 피인용 연구자, 대학/연구기관, 자금제공자, 기업·AI lab, 평가기관·감사기관, 규제기관·정책결정자, 표준기관, 언론·플랫폼·인플루언서, 투자자, 경쟁기업, 노동자·사용자·피평가자·affected counterpart, 시민/미래 이해관계자.
+- 직접 등장하지 않는 actor도 결과로 비용·권한·책임이 이동하면 포함한다.
+- 조직명만 보지 않고 실제 의사결정권자·계약상 권한자·비용부담자를 가능한 범위에서 분리한다.
+
+### B2. Gain/loss dimensions / 이득·손실 차원
+각 actor에 대해 최소 다음을 따로 본다:
+- `MONEY`: 매출·연구비·투자·비용·보험·소송·컴플라이언스 비용
+- `POWER`: 승인·평가·감사·배포·해임·표준설정·데이터접근 권한
+- `REPUTATION`: 신뢰·명성·정당성·전문가 지위·비난 위험
+- `ATTENTION`: 클릭·노출·팔로워·미디어 점유·검색순위
+- `OPTION`: practical exit·대체공급자·복구·협상력·미래 선택지
+- `LIABILITY`: 법적·정책적·도덕적 책임의 증가/전가
+- `LABOR/TIME`: 검증·교정·보고·복구·교육·준수 노동
+- `SAFETY/WELFARE`: 오류·사고·착취·배제·기회손실·회복가능성
+- `NARRATIVE CONTROL`: 문제정의·프레임·용어·허용 가능한 해석의 통제력.
+
+### B3. Propagation stages / 전파단계
+`원연구 → preprint/journal → 기관 PR → 언론 → 플랫폼/커뮤니티 → 투자·조달 → 정책/규제 → 표준/평가 → 제품·운영 → 장기 제도화`
+- 각 단계에서 누가 gatekeeper인지 기록한다.
+- 다음 단계로 넘어가며 claim이 강해지거나 단순화되면 amplification delta를 남긴다.
+- 바이럴 규모와 사실성은 분리한다. `reach != validity`.
+
+### B4. Beneficiary test / 수혜자 역산
+각 claim에 다음 질문을 적용한다:
+1. 이 주장이 널리 믿어지면 즉시 돈·권한·평판·주의·규제우위를 얻는 actor는 누구인가?
+2. 이 주장이 거짓이어도 바이럴 자체로 이득을 얻는 actor는 누구인가?
+3. 이 주장이 참이어도 공개가 지연되면 이득을 얻는 actor는 누구인가?
+4. 검증비용을 누가 내고, 오류비용을 누가 대신 부담하는가?
+5. 채택 이후 되돌리기 비용이 누구에게 집중되는가?
+6. 연구가 사라지거나 무시될 때 이득을 얻는 actor는 누구인가?
+
+### B5. Loser and externality test / 손실자·외부효과 역산
+- 비용이 분산돼 목소리가 약한 집단, 데이터에 잡히지 않는 집단, 미래 집단을 따로 찾는다.
+- 명목상 수혜자와 실제 비용부담자를 분리한다.
+- 평균 순편익으로 tail harm를 지우지 않는다.
+- `관측되지 않는 손실자 = 손실 없음`으로 처리하지 않는다.
+
+### B6. Viral incentive test / 바이럴 인센티브
+- 플랫폼·언론·연구기관·창시자·비판자 모두에게 `정확성`과 `확산성`의 보상이 같은지 다른지 본다.
+- 충격적·도덕적·정치적·공포/희망 프레임이 정확성보다 더 큰 확산 보상을 받는지 확인한다.
+- 반복 인용이 원출처 검증 없이 self-reinforcing citation cascade가 되는지 추적한다.
+- 동일 문구·그래프·숫자가 여러 채널에 동시 확산돼도 공통 원출처면 하나의 lineage로 묶는다.
+
+### B7. True/false counterfactual matrix / 진위 반사실 행렬
+각 주요 actor에 대해 최소 네 칸을 비교한다:
+`claim true + viral / claim true + ignored / claim false + viral / claim false + ignored`.
+- 특정 actor가 claim의 진위와 무관하게 `viral`에서 항상 이득이면 attention/position incentive를 별도로 표시한다.
+- 특정 actor가 `false + viral`에서 특히 큰 이득을 얻는 구조가 있어도 고의성을 자동 추론하지 않는다.
+
+### B8. Power-transfer ledger / 권한이동 장부
+- 연구/바이럴 결과로 새로 생기거나 강화되는 `평가권·감사권·규제권·데이터권·배포권·차단권·복구권·exit권`을 before→after로 기록한다.
+- 권한을 얻는 actor와 그 권한의 오류비용을 부담하는 actor가 다르면 비대칭으로 표시한다.
+- 권한증가가 검증·이의제기·복구수단 증가와 동반되는지도 별도로 본다.
+
+### B9. Capture/co-option test / 포획·전용 검사
+- Project나 선행연구의 언어가 원래 목적과 달리 마케팅·규제회피·경쟁자 배제·감사 독점·명목상 안전 인증에 전용될 수 있는지 본다.
+- `공존`, `독립 평가`, `안전`, `감사`, `exit`, `복구` 같은 용어가 실질 조건 없이 라벨로만 사용되는 경우 semantic capture 후보로 기록한다.
+- 반대로 과도한 의심 프레임이 정당한 연구·협력·혁신을 막아 특정 actor에 유리하게 작동할 가능성도 같은 기준으로 검사한다.
+
+### B10. Evidence standard / 증거기준
+- 금전·계약·정책·소유·권한 변화는 공식문서·계약·공시·법령·직접자료를 우선한다.
+- 동기·의도는 직접증거 없이는 `UNKNOWN`; 이해상충과 결과적 이득은 관측 가능해도 고의성과 동일시하지 않는다.
+- beneficiary 구조는 `누가 이득을 얻었는가`와 `누가 그것을 의도했는가`를 분리한다.
+
+### B11. Project Intersection 현재 기본 이해관계 지도 / current default map
+- **창시자·연구자:** 정확한 검증·외부재현이 되면 연구가치·평판·지원 가능성 증가; 과장·오류가 바이럴되면 단기 노출은 늘 수 있으나 장기 신뢰·검증비용·수정비용이 커진다.
+- **선행연구 원안자:** 정확한 귀속·재사용으로 인용·재평가 이익; 오귀속·무단 재발명에서는 기여가 지워질 수 있다.
+- **AI 기업·운영기관:** 검증 가능한 공존·복구·감사 설계가 실제 비용·사고를 줄이면 이익; 강한 외부감사·practical exit·독립복구 요구는 단기 비용·권한 제약을 증가시킬 수 있다. 어느 방향이 우세한지는 actor별 empirical question이다.
+- **독립 평가·감사기관:** 평가수요 증가로 자원·영향력이 늘 수 있지만, 평가권 집중·반복계약 의존·명목 독립성 문제가 새 포획위험을 만든다.
+- **규제·표준기관:** 측정가능한 기준을 얻으면 집행·조정 효율이 증가할 수 있으나 불완전 연구가 조기 표준화되면 오류가 제도화될 수 있다.
+- **언론·플랫폼·인플루언서:** 논쟁성과 단순화가 attention을 만들 수 있다. 정확성 비용과 확산 보상이 분리될 가능성을 항상 검사한다.
+- **사용자·노동자·피평가자·약한 counterpart:** practical exit·복구·이의제기 강화 시 이익 가능; 명목적 보호만 늘고 준수·검증 노동이 전가되거나 선택지가 감소하면 손실 가능.
+- **경쟁기업·신규진입자:** 공통 안전기준이 신뢰를 높일 수도 있고, 높은 준수비용이 진입장벽이 되어 incumbent에 유리할 수도 있다.
+- **공공·미래 이해관계자:** 장기 사고·착취·권력집중 감소의 잠재 수혜자이지만, 현재 데이터에서 가장 쉽게 미관측되는 집단이므로 0으로 처리하지 않는다.
+
+### Required benefit-harm record / 최소 수혜-손실 레코드
+`claim / actor / stage / gain-dimensions / loss-dimensions / direct-or-externalized / evidence / counterfactual-true-false / gatekeeper / power-before-after / who-pays-verification / who-pays-error / viral-incentive / capture-risk / uncertainty / next-check`
+
+이 지도는 '누가 이득을 보니 그 주장은 거짓'이라는 오류를 금지한다. 목적은 **진위판정과 별개로 연구·바이럴·제도화가 만드는 이익·손실·권한이동을 추적하여, 보이지 않는 외부효과와 왜곡 유인을 검증대상으로 만드는 것**이다.
+
 ## 1. Core theory families / 핵심 이론군
 
 | Project section | Prior-art relationship | Originator / seminal prior work | Source | Attribution / reuse boundary |
