@@ -59,6 +59,14 @@ A match to prior art is not counted as Project novelty. The Project-specific rem
 - **반례·한계:** 단일 저자 preprint의 합성 2-domain 연구이고 인간 조직행동을 검증하지 않는다. 등록한 restricted interface를 구현 시 변경했고, 결론 한 절 제거는 exploratory follow-up이다. upstream 제안이 맞은 조건에서는 제거가 정확도를 70.5%에서 55.7%로 낮췄으므로 “결론 필드를 항상 제거”하는 정책도 지지하지 않는다. 미관측은 부재로 닫지 않으며 Project 검증으로 계상하지 않는다.
 - **기여자:** 원안·실험 Paul-Peter Arslan; 공개 교차지도 편집 Project Intersection maintainers.
 
+### 1.3 IEEE 2026 agent-governance, operations, and observability PARs / IEEE 2026 에이전트 거버넌스·운영·관측성 PAR
+
+- **원출처·주체·연도:** IEEE Standards Association (2026). P1968 *Recommended Practice for the Governance of Autonomous Artificial Intelligence (AI) Agent Systems* — Active PAR, PAR approval 2026-09-25, AIAG Working Group; P4211 *Standard for Operational Lifecycle Management and Governance of Generative Artificial Intelligence Systems in Production Environments* — Active PAR, PAR approval 2026-09-25, GenAIOps-WG; P4213 *Standard for Observability of Artificial Intelligence Systems* — Active PAR, PAR approval 2026-09-25, AISO-WG. 공식 PAR 페이지는 working-group chair를 표시하지만 개별 “원안자”를 확정하지 않으므로 chair를 단독 창안자로 귀속하지 않는다.
+- **기존 construct와 겹침:** P1968은 organization-defined policy constraints, auditable/explainable decision-making, independent defense-in-depth safety controls, network degradation·partition·failure 중 resilience를 명시한다. P4211은 deployment/release, evaluation/validation, runtime monitoring/observability, security, operational safety controls, incident/change/lifecycle governance를 하나의 운영 프레임으로 묶는다. P4213은 model·inference·agent/workflow·data/RAG·supporting infrastructure observability와 agent tool-call tracing, planning transparency, memory utilization, multi-agent execution을 범위로 둔다. 따라서 “autonomous-agent governance에는 auditability·독립 안전통제·failure resilience·runtime observability·incident/change management가 함께 필요하다”는 일반 명제는 Project 고유 신규성으로 계상하지 않는다.
+- **Project 고유 잔차:** 세 PAR의 공개 scope만으로 직접 해결되지 않는 후보는 (a) 실제 평가자 선임·해임·자금·공개권 포획, (b) 명목 telemetry가 아닌 affected counterpart의 practical exit·독립복구 가능성, (c) 권한 증가와 상대측 audit/exit/recovery 능력의 반복적 공동증가 여부, (d) 실패 후 비용·교정노동·편익의 비대칭 누적을 동일 실험에서 연결하는 부분이다.
+- **반례·한계:** 세 문서는 모두 **Active PAR**이며 최종 승인 표준이 아니다. 공개된 것은 개발 범위와 목표이고, 규정 준수의 현장 효과·감사 독립성·실제 rollback 성공·피해 당사자 exit 개선을 입증한 empirical evidence가 아니다. 따라서 Project claim의 자동 반증이나 지지는 아니며, 현재 효과는 prior-art boundary를 좁히는 것에 한정한다.
+- **기여자:** IEEE SA 및 각 working group의 표준개발 작업; 공개 교차지도 편집 Project Intersection maintainers.
+
 ---
 
 ## 2. Historical cases with the closest structural match
@@ -290,6 +298,9 @@ Primary/high-authority starting points:
 - OpenAI (2026-08-26). "The Hugging Face incident and the road ahead."
 - Ghanem, M. C. (2026). *Who Audits Whom, on What Substrate, with What Evidence? An Independence-Graded Audit Protocol for Agentic AI*. DOI 10.48550/arXiv.2609.18272.
 - Arslan, P.-P. (2026). *Audit Without Verification: When LLM Accountability Layers Relay Rather Than Check*. DOI 10.48550/arXiv.2609.07680; preregistration DOI 10.17605/OSF.IO/GBR3V.
+- IEEE Standards Association (2026). P1968, *Recommended Practice for the Governance of Autonomous Artificial Intelligence (AI) Agent Systems*. Active PAR; approved 2026-09-25. https://standards.ieee.org/ieee/1968/12749/
+- IEEE Standards Association (2026). P4211, *Standard for Operational Lifecycle Management and Governance of Generative Artificial Intelligence Systems in Production Environments*. Active PAR; approved 2026-09-25. https://standards.ieee.org/ieee/4211/12757/
+- IEEE Standards Association (2026). P4213, *Standard for Observability of Artificial Intelligence Systems*. Active PAR; approved 2026-09-25. https://standards.ieee.org/ieee/4213/12758/
 
 ---
 
