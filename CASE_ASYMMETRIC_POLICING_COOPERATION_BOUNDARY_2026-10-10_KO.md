@@ -387,3 +387,44 @@ frozen 비교에는 최소한 `resident/nonresident`, 소득·차량가치 등 �
 - 더 소모되는 주체: 기본 과잉단속을 계속 부담하는 집단과, 지방 정치에서 voice가 약하거나 이의비용이 높아 새로 한계 표적이 되는 비거주·고회수가능 집단.
 - 역할반전: 집행자·지역 유권자가 비거주자가 되어 동일한 이동비용·이의절차·추심제재를 감수해도 같은 규칙을 수용하는지 검사한다.
 - 다음 결정검사: 독립 지역의 사전고정 event/RD 설계에서 `fiscal shock × retention × resident status × ability_to_pay × baseline overpolicing` 상호작용과 안전·징수부담을 동시에 측정한다. 기존 최취약집단의 기본부담은 높은데 한계효과만 다른 집단으로 이동하면 표적선택 역전을 지지한다. 미관측은 부재로 닫지 않는다.
+
+
+## 13. 감독효과의 비식별성: 집행감소와 안전방향을 분리한다
+
+- 판정일: 2026-10-10
+- scientific delta: `DIRECT REPLICATION CORRECTION + DETECTOR FALSE-POSITIVE/FALSE-NEGATIVE BOUNDARY`
+- 판정: `MODIFY / MEASUREMENT REVISION`. 감독 뒤 arrest·stop이 줄었다는 사실만으로 과소집행, 권리보호 또는 안전변화를 판정하지 않는다.
+
+### 상반된 증거와 직접 재분석
+
+| 계보 | 원안자·연도 | 실제 관측·판정 | DOI/공식 링크 | lineage·한계 |
+|---|---|---|---|---|
+| L-I Cincinnati 감독충격 | Lan Shi, 2009 | 2001년 총격·폭동 뒤 언론·DOJ 조사·소송으로 오류의 예상제재가 급증한 기간에 misdemeanor arrest가 크게 줄고 felony crime이 증가했으며, arrest 감소는 오류율이 높은 재량영역과 Black 주민 비중이 높은 지역에서 더 컸다. | [Journal of Public Economics, 10.1016/j.jpubeco.2008.07.007](https://doi.org/10.1016/j.jpubeco.2008.07.007) | 단일 도시·복합 충격이며 폭동·신뢰·신고행태·동시변화를 완전히 분리하지 못한다. 감독 일반이 아니라 사건 직후 개인오류 제재위험의 국소효과다. |
+| L-J NYC slowdown 원연구 | Christopher M. Sullivan & Zachary P. O’Keeffe, 2017 | 2014–2015년 7주간 proactive policing 급감 중·직후 주요범죄 신고가 감소했다고 보고했다. | [Nature Human Behaviour, 10.1038/s41562-017-0211-5](https://doi.org/10.1038/s41562-017-0211-5) | 단일 도시의 짧은 aggregate 시계열이며 slowdown 강도의 지역차를 식별에 사용하지 않았다. |
+| L-K L-J 직접 재분석 | Aaron Chalfin, David Mitre-Becerril & Morgan C. Williams Jr., 2024 | 동일 공개 microdata를 2006–2019로 확장했다. aggregate 감소는 재현했으나, slowdown이 더 강한 지역에서 범죄감소가 더 크지 않았고 다른 연도쌍에도 유의한 변화가 반복됐다. 감소가 주택 내부 범죄에 집중되는 등 제안 메커니즘과 맞지 않아 단기 범죄가 어느 방향으로 변했다는 증거가 약하다고 결론냈다. | [JCRE, 10.18718/81781.36](https://doi.org/10.18718/81781.36) | 원연구 결론을 직접 공격하는 독립 연구팀·공개 코드/자료 계보다. 그러나 NYC 한 사건의 재분석이며 모든 종류의 proactive policing 효과를 부정하지 않는다. 저자들은 영리 컨설팅 기원과 알려진 재정 이해상충이 없다고 보고했다. |
+| L-L Cincinnati 업무재설계 | Robin S. Engel et al., 2017 | 2008년 jail capacity 36% 감소 뒤 경찰이 arrest를 제한자원으로 취급하도록 대응했으며 interrupted time series에서 arrest와 crime이 함께 감소했다. | [Criminology & Public Policy, 10.1111/1745-9133.12299](https://doi.org/10.1111/1745-9133.12299) | 감독충격이 아니라 수용능력 제약과 evidence-based policing의 결합이다. 동시추세와 정확한 작동기제에는 잔여 불확실성이 있다. L-I와 같은 도시라도 시기·개입·연구팀이 달라 직접재현은 아니다. |
+
+핵심 반례는 방향이 서로 다른 결과 자체다. 동일한 `arrest 감소`가 L-I에서는 범죄증가와, L-L에서는 범죄감소와 결합됐다. L-J의 범죄감소 주장은 L-K에서 인과근거가 약화됐다. 따라서 `MORE OVERSIGHT -> LESS POLICING -> MORE/LESS CRIME`의 단선 경로는 유지하지 않는다.
+
+### claim 및 detector 수정
+
+- `ARREST/STOP REDUCTION != ENFORCEMENT CAPABILITY REDUCTION`.
+- `OVERSIGHT SHOCK != INSTITUTIONAL ACCOUNTABILITY REFORM`.
+- `AGGREGATE TIME BREAK != LOCAL TREATMENT RESPONSE`.
+- `REPORTED CRIME != TRUE VICTIMIZATION`.
+- 감독의 효과는 최소한 `penalty target(individual error/system outcome) × discretion/error risk × task substitution × institutional redesign × reporting/trust × local treatment intensity`의 함수로 판정한다.
+- L-K가 지적한 지역별 slowdown dose, 다년 placebo window, 범죄발생 장소와 가능한 메커니즘을 필수 validity gate로 추가한다.
+- 이는 K3 `ENDOGENOUS-OBSERVATION`, K4 `METRIC–CONTROL FEEDBACK`, K7 `CORRELATED-INDEPENDENCE FAILURE`, K8 `CAPABILITY–OVERSIGHT GAP`에 흡수한다. 새 first-order kernel은 열지 않는다.
+
+### 최소 frozen 검사와 역할반전
+
+사전고정 결과벡터는 다음을 분리한다.
+
+1. 감독형태: 사건반응·개인제재 / 독립 monitor / 업무·인센티브 재설계.
+2. 투입·구성: patrol time, response time, proactive stop, low-level arrest, violent-crime investigation, clearance.
+3. 오류·부담: false arrest, force, complaint, civil claim, 집단별 접촉·오류율.
+4. 안전: 신고범죄와 독립 victimization, 장소·범죄유형·시간대별 결과.
+5. 식별: 지역별 실제 treatment dose, 사전추세, 다중 placebo window, spillover·신고행태.
+6. 지속성: 외부감독 중·종료 뒤 성과와 backsliding.
+
+반복될수록 더 강해질 수 있는 주체는 감독지표와 제재권을 소유한 기관 또는 재량을 철회해 책임을 회피하는 집행자다. 더 소모되는 주체는 오집행 피해자와 필요한 보호가 철회된 지역 모두일 수 있다. 역할반전에서는 감독자도 자신의 aggregate 지표가 지역별 dose·오류·피해·신고변화로 분해되어 평가받는지, 집행자도 동일한 이의·복구 절차를 수용하는지 검사한다.
