@@ -612,3 +612,244 @@ N_distortion_path ≈ 0
 9. scientific institution incentives / peer-review capture / citation cartels
 10. AI evaluator independence / benchmark gaming / monitoring adaptation
 
+
+
+---
+
+## 8. 두 번째 포화확장: 공통원인·침묵·네트워크·상호운용성
+
+### V. 다수 시스템 ≠ 독립 실패
+
+대표:
+- Knight & Leveson (1986), *An Experimental Evaluation of the Assumption of Independence in Multiversion Programming*, DOI 10.1109/TSE.1986.6312924
+- NRC NUREG/CR-6303, diversity and defense-in-depth analysis
+
+핵심:
+독립적으로 개발한 여러 소프트웨어 버전도 실패가 기대만큼 독립적이지 않을 수 있음.
+공통 specification, 공통 환경, 공통 해석, 공통 데이터가 correlated/common-mode failure를 만들 수 있다.
+
+Project 연결:
+
+```
+nominal evaluator count != lineage-independent evaluator count
+nominal model diversity != failure-mode diversity
+```
+
+따라서 comparator diversity는 개수보다 lineage·specification·data·incentive·failure correlation을 측정해야 한다.
+
+---
+
+### W. 분산 합의는 신뢰 가정에 의존
+
+대표:
+- Lamport, Shostak & Pease (1982), *The Byzantine Generals Problem*, DOI 10.1145/357172.357176
+
+핵심:
+분산된 구성요소가 존재한다는 사실만으로 신뢰 가능한 합의가 생기지 않는다.
+failure/adversarial assumptions, communication structure, fault bounds가 합의가능성을 결정한다.
+
+Project 연결:
+"중앙집중을 분산시키면 해결"도 자동 결론이 아니다.
+
+```
+distributed control
++ correlated failure / bad protocol / insufficient observability
+→ false security possible
+```
+
+---
+
+### X. 조직적 침묵 → 보이는 합의의 왜곡
+
+대표:
+- Morrison & Milliken (2000), DOI 10.5465/amr.2000.3707697
+- Detert & Edmondson (2011), DOI 10.5465/amj.2011.61967925
+
+핵심:
+조직 구성원이 문제를 알고도 발언이 위험하거나 부적절하다고 믿으면
+잠재적으로 조직에 유익한 정보까지 억제될 수 있음.
+
+Project 연결:
+
+```
+knowledge exists
+→ perceived voice cost ↑
+→ reporting probability ↓
+→ management observes low dissent
+→ perceived consensus / policy confidence ↑
+```
+
+이는 pluralistic ignorance와 별개의 조직정보 억제 경로다.
+
+새 변수:
+- voice cost
+- retaliation expectation
+- escalation access
+- anonymous reporting effectiveness
+- issue closure authority
+
+---
+
+### Y. groupthink는 강한 보편법칙으로 사용 금지
+
+대표:
+- Aldag & Fuller (1993), DOI 10.1037/0033-2909.113.3.533
+
+핵심:
+고전적 groupthink 설명은 직관적으로 매력적이지만,
+후속 검토는 핵심 명제와 부정적 결과 연결에 대한 경험적 지지가 충분히 강하지 않다고 평가했다.
+
+Project 규칙:
+```
+cohesive group + bad outcome != groupthink proven
+```
+
+groupthink는 사례 레이블이 아니라 경쟁가설 중 하나로만 사용한다.
+
+이 사례 자체가 Project의 "바이럴한 설명모형도 선행연구라고 해서 정답이 아니다" 규칙의 좋은 메타사례다.
+
+---
+
+### Z. 네트워크 연결성의 phase transition
+
+대표:
+- Acemoglu, Ozdaglar & Tahbaz-Salehi (2015), DOI 10.1257/aer.20130456
+
+핵심:
+금융 네트워크에서 더 높은 연결성은 작은 충격에는 위험분산과 안정성을 높일 수 있지만,
+충격이 임계점을 넘으면 동일 연결성이 contagion 경로가 되어 더 큰 취약성을 만들 수 있음.
+
+Project 연결:
+
+```
+same structural property
+→ resilience under regime A
+→ fragility under regime B
+```
+
+따라서 중앙집중/분산, 연결/격리, 다양성/표준화를 선악 단일축으로 두지 않고
+**shock magnitude × topology × recovery capacity** 조건부로 평가한다.
+
+이는 비선형 임계점 및 hysteresis 후보를 강화한다.
+
+---
+
+### AA. interoperability / multihoming → practical exit의 실제 구현
+
+대표:
+- Guo et al. (2023), DOI 10.1016/j.trc.2023.104233
+- Teh et al. (2023), DOI 10.1257/mic.20210324
+- White & Wu (2025), DOI 10.1287/mnsc.2023.02810
+- Kim (2025/2026), DOI 10.1111/jems.12643
+
+핵심:
+플랫폼 경쟁에서 nominal choice보다 switching/multihoming friction이 실제 행동·시장점유율·후생을 바꿈.
+interoperability와 portability는 전환비용을 줄일 수 있지만,
+보안·privacy·liability trade-off도 만들 수 있음.
+
+Project 연결:
+
+```
+nominal exit != practical exit
+practical exit = function(
+  portability,
+  interoperability,
+  switching cost,
+  multihoming feasibility,
+  data/control continuity,
+  restoration cost
+)
+```
+
+즉 exit를 "계정 삭제 버튼 존재" 같은 명목변수로 측정하면 안 된다.
+
+---
+
+### AB. checks and balances ↔ veto paralysis
+
+대표:
+- Tsebelis (2000), DOI 10.1111/0952-1895.00141
+
+핵심:
+veto player 증가는 정책안정성·제약·독립성 같은 효과를 가질 수 있으나
+동시에 변화가능성을 낮출 수 있다.
+
+Project 연결:
+
+```
+countervailing authority ↑
+→ capture resistance may ↑
+but
+→ adaptation / correction latency may also ↑
+```
+
+따라서 권력분산 자체를 목표함수로 두지 않고
+`capture resistance - correction paralysis`의 조건부 trade-off를 측정한다.
+
+---
+
+## 9. 이번 라운드에서 갱신된 상위 구조
+
+기존 6개 수렴 외에 세 축을 추가한다.
+
+### 수렴 G — 가짜 독립성
+
+```
+multiple evaluators/models/components
+→ shared specification/data/incentives
+→ correlated failure
+→ apparent redundancy
+→ common-mode blind spot survives
+```
+
+### 수렴 H — 침묵 기반 자기확신
+
+```
+voice/retaliation cost ↑
+→ dissent visibility ↓
+→ perceived consensus ↑
+→ policy confidence ↑
+→ voice cost or closure ↑
+```
+
+### 수렴 I — 연결성의 조건부 역전
+
+```
+connectivity ↑
+→ resilience under small shocks
+but beyond threshold
+→ contagion / systemic fragility ↑
+```
+
+이 때문에 Project의 어떤 핵심 변수도 단조(monotonic) 효과를 기본값으로 가정하지 않는다.
+
+---
+
+## 10. 포화 상태 갱신
+
+`NOT SATURATED — SECOND EXPANSION PRODUCED NEW MECHANISMS`
+
+이번 라운드의 신규 독립 기여축:
+
+- common-mode failure / correlated independence failure
+- distributed consensus assumptions
+- organizational silence
+- empirical critique of groupthink
+- network phase transition
+- interoperability / multihoming as practical exit
+- veto-player trade-off
+
+따라서 아직 검색을 멈출 근거가 없다.
+
+다음 우선검색은 다음처럼 갱신한다.
+
+1. constitutional safeguards / emergency powers / ratchet effects
+2. intelligence failures / red-team independence / warning suppression
+3. safety engineering / normal accidents / high-reliability organizations
+4. evolutionary monoculture / genetic bottlenecks / diversity collapse
+5. antitrust gatekeeping / vertical integration / self-preferencing
+6. financial moral hazard / too-big-to-fail / bailout expectations
+7. citation cartels / peer-review rings / institutional prestige cascades
+8. scientific fraud detection / image/data forensics / retraction dynamics
+9. AI evaluator independence / adaptive monitoring / sandbagging
+10. human-AI co-adaptation / automation bias / deskilling / learned dependence
