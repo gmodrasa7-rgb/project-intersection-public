@@ -76,6 +76,7 @@ Project Intersection은 **권력·인센티브·시점·practical exit·복구�
 ## Detailed research map / 상세 연구 지도
 
 - [Research Overview → RESEARCH_OVERVIEW.md](RESEARCH_OVERVIEW.md) — detailed concepts and research framing / 상세 개념·연구 프레임
+- [Counterfactual Extinction / Convergence Trace → CONVERGENCE_TRACE_FORMALISM_KO.md](CONVERGENCE_TRACE_FORMALISM_KO.md) — when removed alternatives make comparative superiority unidentifiable, and how to trace power/exit/recovery/option-space changes without preselecting a moral conclusion / 제거된 대안 때문에 비교우월성 식별이 사라지는 구조와 권한·exit·복구·옵션 변화를 결과 선결정 없이 역추적하는 형식명세
 - [Long-Horizon Minimum-Sufficient-Intervention Loop → LONG_HORIZON_MIN_INTERVENTION_E2E.md](LONG_HORIZON_MIN_INTERVENTION_E2E.md) — dynamic versioned long-horizon / viability / least-intervention research candidate / 동적 버전업·장기총량·viability·최소충분관여 후보
 - [Research Contents Map → RESEARCH_TOC.md](RESEARCH_TOC.md) — claim families, public links, unresolved gaps / 주장군·공개 링크·미해결 공백
 - [Public Evidence Index → PUBLIC_EVIDENCE_INDEX.md](PUBLIC_EVIDENCE_INDEX.md) — what is actually checkable now / 현재 실제 검증 가능한 것
