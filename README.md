@@ -129,3 +129,5 @@ The landing page is intentionally short. Detailed theory is separated so that a 
 - [CASE_TOBACCO_SCIENCE_CONTROL_KO.md](CASE_TOBACCO_SCIENCE_CONTROL_KO.md) — 역사 실증: 담배산업 연구지원·공개통제·겉보기 독립성의 K1–K8 판별
 
 - [CASE_CROSS_INDUSTRY_CONCEALMENT_COMPARISON_KO.md](CASE_CROSS_INDUSTRY_CONCEALMENT_COMPARISON_KO.md) — DuPont/PFOA · Exxon · Volkswagen · Purdue · Kanemi 비교검증: 은폐/평가조작/선택적 커뮤니케이션/근거증폭/과실 분리
+
+- [CASE_SHORT_TERM_REWARD_EVALUATION_REPROCESSING_KO.md](CASE_SHORT_TERM_REWARD_EVALUATION_REPROCESSING_KO.md) — Wells Fargo · Phoenix VA · Atlanta APS: 단기보상/목표압력 × 평가재가공권 교차사례
