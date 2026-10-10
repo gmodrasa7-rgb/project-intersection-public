@@ -1,0 +1,34 @@
+{
+  "case_id": "ISHPP-20261010-HALOS-SAFETY-GATE",
+  "sources": [
+    {
+      "id": "S1",
+      "publisher": "ANAB",
+      "url": "https://anab.ansi.org/anab-accredits-nvidia-halos-ai-inspection-lab-advancing-independent-assurance-for-physical-ai-safety/",
+      "evidence": "independent accreditation of inspection body",
+      "date": "2026-06-22"
+    },
+    {
+      "id": "S2",
+      "publisher": "NVIDIA",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-halos-for-robotics-the-industrys-first-full-stack-safety-system-for-physical-ai",
+      "evidence": "vendor architecture",
+      "date": "2026-06-22"
+    },
+    {
+      "id": "S3",
+      "publisher": "Agility Robotics",
+      "url": "https://www.agilityrobotics.com/content/agility-unveils-digit-5-humanoid-robot-built-for-cooperatively-safe-work-at-scale",
+      "evidence": "manufacturer integration self-report",
+      "date": "2026-09-15"
+    },
+    {
+      "id": "S4",
+      "publisher": "Ars Technica",
+      "url": "https://arstechnica.com/ai/2026/10/nvidias-big-bet-on-physical-ai-aims-for-safer-robotaxis-humanoid-robots/",
+      "evidence": "independent reporting; quotes not independent outcome replication",
+      "date": "2026-10-08"
+    }
+  ],
+  "caution": "ANAB accreditation verifies inspection-body competence; it does not itself certify individual deployed robots. No measured field harm or portability."
+}
