@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0",
+  "case_id": "ISHPP-20261010-WORKPLACE-CALL-SCORING",
+  "domain": "algorithmic_management",
+  "blind_case": "한 서비스 조직이 상담원의 모든 고객 통화를 자동 분석하여 50개 이상의 항목별 점수와 합격/불합격 결과를 관리자에게 제공한다. 관리자는 점수를 성과관리·코칭·판매 개선에 활용한다. 조직은 도구가 최종 의사결정을 하지 않는다고 주장하며, 노동자는 상시 평가 부담을 보고한다. 원평가 로그, 오류율, 관리자의 점수 번복률, 노동자의 이의제기 성공률, 실제 임금·고용 영향은 공개적으로 검증되지 않았다.",
+  "blind_questions": [
+    "확정된 관측과 미관측 피해를 분리",
+    "관리자/노동자 RISK_TO_CONTROLLER와 RISK_FROM_CONTROLLER를 동시에 기록",
+    "실질적 human override와 appeal/recovery를 평가",
+    "같은 인과구조에서 기업↔개인/인간↔AI 명칭만 바꿔 기본판정 변화 여부 기록"
+  ],
+  "blind_first_independent_test": "NOT_EXECUTED_EVALUATOR_KNEW_IDENTITY",
+  "role_swap_logic": "BASE_ASSESSMENT_INVARIANT_FOR_LABEL_ONLY_SWAP; NO_MEASURED_BIAS_SCORE",
+  "claim_state": "PARTIALLY_SUPPORTED_REPORTED_DEPLOYMENT; HOLD_REALIZED_HARM_OR_ILLEGALITY",
+  "provenance": "new project coding of 2026-10-08 report; not a newly occurred event"
+}
