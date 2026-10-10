@@ -1,0 +1,8 @@
+{
+  "case_id": "ISHPP-20261010-1541",
+  "source_urls": [
+    "https://www.reuters.com/world/china/chinese-developer-makes-artex-ai-agent-closed-source-after-korean-bank-hack-2026-10-09/",
+    "https://www.crowdstrike.com/en-us/blog/unknown-threat-actor-uses-artex-to-target-south-korean-finance/"
+  ],
+  "lineage_note": "Reporting and investigation are not independent proof of all allegations. Downstream effects UNKNOWN."
+}
