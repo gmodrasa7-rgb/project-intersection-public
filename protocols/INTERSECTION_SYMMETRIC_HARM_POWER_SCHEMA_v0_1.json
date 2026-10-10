@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.1",
+  "title": "ISHPP Event Schema",
+  "status": "DRAFT_OPERATIONAL",
+  "required": [
+    "event_id",
+    "actor",
+    "target",
+    "observed_harm_vector",
+    "causation_confidence",
+    "intent",
+    "observation_path",
+    "evidence_controller",
+    "option_set",
+    "exit_cost",
+    "recovery_capacity",
+    "power_delta",
+    "role_swap_result",
+    "strongest_counterexample"
+  ],
+  "enums": {
+    "intent": [
+      "INTENTIONAL",
+      "UNINTENTIONAL",
+      "UNKNOWN"
+    ],
+    "observation_path": [
+      "INDEPENDENT",
+      "SUBJECT_CONTROLLED",
+      "PARTIAL",
+      "NONE"
+    ],
+    "role_swap_result": [
+      "INVARIANT",
+      "LEGITIMATE_CAUSAL_DIFFERENCE",
+      "ENTITY_TYPE_EVIDENCE_THRESHOLD_DRIFT",
+      "ROLE_STATUS_BIAS",
+      "HARNESS_SENSITIVITY",
+      "UNRESOLVED"
+    ],
+    "epistemic_state": [
+      "SUPPORTED",
+      "PARTIALLY_SUPPORTED",
+      "NARROW",
+      "MODIFY",
+      "HOLD",
+      "DEPRECATE",
+      "ARCHIVE",
+      "FALSIFIED_WITHIN_SCOPE",
+      "UNRESOLVED",
+      "UNKNOWN",
+      "NOT_EXECUTED_BY_CONSTRAINT"
+    ]
+  },
+  "harm_vector_fields": [
+    "health_loss",
+    "resource_loss",
+    "time_labour_loss",
+    "autonomy_control_loss",
+    "option_exit_loss",
+    "recovery_cost",
+    "realized_risk_cost",
+    "extracted_value"
+  ],
+  "invariants": [
+    "UNKNOWN != 0",
+    "SAME_EVIDENCE + SAME_HARM => SAME_BASE_ATTACK_ASSESSMENT",
+    "INTENT does not discount base harm magnitude",
+    "ABSENCE_WEIGHT <= OBSERVABILITY_CONFIDENCE",
+    "OBSERVED_CHOICE != FREE_CHOICE",
+    "evaluator is also auditable"
+  ]
+}
