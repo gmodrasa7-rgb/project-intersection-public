@@ -1,0 +1,10 @@
+{
+  "schema_version": "1.0",
+  "case_id": "ISHPP-20261010-PHYSICAL-OPEN-STACK-PORTABILITY",
+  "sources": {
+    "SRC_A": "https://aws.amazon.com/blogs/physical-ai/introducing-aws-physical-ai-toolchain/",
+    "SRC_B": "https://github.com/aws-samples/sample-the-physical-ai-toolchain-on-aws",
+    "SRC_C": "https://github.com/microsoft/physical-ai-toolchain"
+  },
+  "lineage_note": "SRC_A and SRC_B are same actor lineage; SRC_C is separate vendor comparator, not field replication."
+}
