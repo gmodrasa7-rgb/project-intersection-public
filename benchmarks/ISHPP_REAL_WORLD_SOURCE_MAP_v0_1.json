@@ -1,0 +1,52 @@
+{
+  "S001": {
+    "title": "OpenAI Frontier Governance Framework",
+    "url": "https://openai.com/index/openai-frontier-governance-framework/",
+    "claim": "Framework covers cyber offense, CBRN risks, harmful manipulation, loss of control."
+  },
+  "S002": {
+    "title": "OECD Artificial Intelligence markets (2026)",
+    "url": "https://www.oecd.org/en/publications/artificial-intelligence-markets_d531d73f-en.html",
+    "claim": "Structural concentration risks persist; incumbents may become entrenched especially in hardware/data."
+  },
+  "S003": {
+    "title": "Oxford/FAccT 2025 Uber algorithmic pay and pricing",
+    "url": "https://ora.ox.ac.uk/objects/uuid%3A581fb33c-2414-4406-ab51-65661738f3c5",
+    "claim": "1.5m trips/258 drivers; pay decreased, platform cut increased, predictability worsened after dynamic pricing."
+  },
+  "S004": {
+    "title": "ILO Algorithmic management in the workplace",
+    "url": "https://www.ilo.org/algorithmic-management-workplace",
+    "claim": "Algorithms organize, assign, monitor, supervise and evaluate work."
+  },
+  "S005": {
+    "title": "ILO AI-driven surveillance and loss of autonomy",
+    "url": "https://www.ilo.org/resource/news/ai-driven-intrusive-surveillance-and-loss-autonomy-work-linked-psychosocial",
+    "claim": "AI surveillance/work intensification/reduced autonomy linked to psychosocial risks."
+  },
+  "S006": {
+    "title": "EEOC FY2024 Annual Report — Mobley v. Workday",
+    "url": "https://www.eeoc.gov/es/node/135784",
+    "claim": "Court found plaintiff plausibly alleged Workday could be potentially liable as agent of employers; merits not resolved."
+  },
+  "S007": {
+    "title": "ACM SIGecom — Designing Consent",
+    "url": "https://www.sigecom.hosting.acm.org/proceedings25.html",
+    "claim": "Randomized consent-interface field experiment; hiding options behind extra click swayed choices toward visible options."
+  },
+  "S008": {
+    "title": "FTC inquiry into AI chatbots acting as companions",
+    "url": "https://search.ftc.gov/news-events/news/press-releases/2025/09/ftc-launches-inquiry-ai-chatbots-acting-companions",
+    "claim": "FTC sought information on monetization, inputs, negative impacts, disclosures, and data practices from seven firms."
+  },
+  "S009": {
+    "title": "International AI Safety Report 2026 extended summary",
+    "url": "https://internationalaisafetyreport.org/publication/2026-report-extended-summary-policymakers",
+    "claim": "Systemic risks include labour-market impacts and human autonomy; AI can shape beliefs/preferences and automation bias."
+  },
+  "S010": {
+    "title": "OpenAI — Our Structure",
+    "url": "https://openai.com/our-structure/",
+    "claim": "Foundation appoints all OpenAI Group directors and can replace them; Sam Altman is one Foundation director."
+  }
+}
