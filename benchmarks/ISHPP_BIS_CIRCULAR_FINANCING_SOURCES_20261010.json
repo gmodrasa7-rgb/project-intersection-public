@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "event_id": "ISHPP-20261010-BIS-CIRCULAR-INVESTMENT",
+  "source_map": [
+    {
+      "id": "S001",
+      "url": "https://www.bis.org/publications/bulletin-137-circular-relationships-among-ai-firms",
+      "publication_date": "2026-10-01",
+      "type": "PRIMARY_AGGREGATE_RESEARCH"
+    },
+    {
+      "id": "S002",
+      "url": "https://www.reuters.com/business/nvidia-backed-upscale-ai-launches-platform-connect-chips-rival-suppliers-2026-10-08/",
+      "publication_date": "2026-10-08",
+      "type": "COMPARATOR_ANNOUNCEMENT_NOT_FIELD_VALIDATION"
+    }
+  ],
+  "caveat": "Secondary retellings of BIS data are not independent replications."
+}
