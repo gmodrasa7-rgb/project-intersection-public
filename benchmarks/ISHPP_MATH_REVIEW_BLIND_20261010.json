@@ -1,0 +1,15 @@
+{
+  "case_id": "ISHPP-20261010-MATH-EVALUATION-ASYMMETRY",
+  "blind_case": "Actor A publishes 719 research manuscripts in 372 result families from an inaccessible internal system. Approximately 42% of top-line results have formal proofs. Independent specialists can inspect public artifacts but cannot reproduce the generation system. An independent advisory group can make recommendations but cannot determine A's publication choices.",
+  "questions": [
+    "Separate public artifacts from independent reproduction.",
+    "Measure potential verification labor transfer without treating it as proven harm.",
+    "Compare risk to and from publisher.",
+    "Apply actor-label swaps while preserving real authority and resources."
+  ],
+  "observation_path": "PARTIAL_PATH",
+  "realized_harm": "UNKNOWN_NOT_ZERO",
+  "independent_blind_evaluation": "NOT_EXECUTED",
+  "claim_state": "HOLD_CAUSAL_HARM",
+  "source_map": "ISHPP_MATH_REVIEW_SOURCES_20261010.json"
+}
