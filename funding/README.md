@@ -3,6 +3,8 @@
 
 Status date / 상태 기준일: **2026-10-04**
 
+**Fastest funder review / 외부 지원자 90초 시작:** [Funder brief, evidence, negative result and contact route / 90초 자금지원 안내](FUNDER_START_HERE.md).
+
 > **This page describes research funding, sponsorship, and research-partnership needs. Planned or requested funding is never counted as secured funding.**
 >
 > **이 문서는 연구비·후원·연구 파트너십의 필요와 산출물을 설명한다. 계획·요청 단계의 자금은 확보자금으로 계상하지 않는다.**
