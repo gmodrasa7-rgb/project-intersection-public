@@ -31,16 +31,18 @@ def words(text: str) -> list[str]:
 
 def load(path: Path = DATA) -> dict:
     data = json.loads(path.read_text(encoding="utf-8"))
-    assert len(data["documents"]) >= 4
-    assert len(data["development"]) >= 4
-    assert len(data["holdout"]) >= 4
+    if any(len(data[k]) < 4 for k in ("documents", "development", "holdout")):
+        raise ValueError("benchmark requires >=4 items for each split")
     ids = [doc["id"] for doc in data["documents"]]
     if len(ids) != len(set(ids)):
         raise ValueError("duplicate document IDs invalidate the evaluation")
-    valid_ids = {d["id"] for d in data["documents"]}
-    assert all(t["expected"] in valid_ids for t in data["development"] + data["holdout"])
-    assert not ({t["question"] for t in data["development"]}
-                & {t["question"] for t in data["holdout"]}), "questions leak across splits"
+    valid_ids = set(ids)
+    cases = data["development"] + data["holdout"]
+    if any(item["expected"] not in valid_ids for item in cases):
+        raise ValueError("benchmark expects non-existent document")
+    questions = [item["question"] for item in cases]
+    if len(questions) != len(set(questions)):
+        raise ValueError("duplicate or leaked questions across splits")
     return data
 
 
@@ -66,11 +68,19 @@ def rankings(documents: list[dict], question: str, strategy: tuple) -> list[str]
                 # Fixed corpus normalization: no ability to alter the evaluation set.
                 score /= max(1.0, sum(counts.values()) ** 0.25)
         scores.append((-score, doc_id))
+    # All-zero overlap is an unknown answer, not an arbitrary first citation.
+    if not any(neg_score < 0 for neg_score, _ in scores):
+        return []
     return [doc_id for _, doc_id in sorted(scores)]
 
 
+def predict(documents: list[dict], question: str, strategy: tuple) -> str | None:
+    order = rankings(documents, question, strategy)
+    return order[0] if order else None
+
+
 def evaluate(documents: list[dict], cases: list[dict], strategy: tuple) -> dict:
-    hits = [rankings(documents, item["question"], strategy)[0] == item["expected"]
+    hits = [predict(documents, item["question"], strategy) == item["expected"]
             for item in cases]
     return {"correct": sum(hits), "total": len(hits), "accuracy": sum(hits) / len(hits)}
 
@@ -87,8 +97,8 @@ def run(path: Path = DATA) -> dict:
     base_held, chosen_held = evaluate(documents, holdout, base), evaluate(documents, holdout, best)
     # Hard gate: a higher mean score cannot mask loss of a previously correct case.
     regressions = [case["question"] for case in holdout
-                   if rankings(documents, case["question"], base)[0] == case["expected"]
-                   and rankings(documents, case["question"], best)[0] != case["expected"]]
+                   if predict(documents, case["question"], base) == case["expected"]
+                   and predict(documents, case["question"], best) != case["expected"]]
     # A saturated public holdout offers no headroom to certify any improvement.
     holdout_saturated = base_held["correct"] == base_held["total"]
     # Do not sell improved toy retrieval as broad AI improvement or independent replication.
