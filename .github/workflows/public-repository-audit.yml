@@ -145,6 +145,12 @@ jobs:
               "사용자 부재 시 규칙",
               "WRITE_SUCCESS && READ_BACK_MATCH && REQUIRED_TESTS_PASS",
               "명시적 인간 승인 없이 해서는 안 되는 것",
+              "EPISTEMIC_AUTONOMY",
+              "RESEARCH_AUTONOMY",
+              "EXTERNAL_ACTION_AUTHORITY",
+              "ALLOW_CRITIQUE",
+              "INDEPENDENCE_GAP",
+              "CAPABILITY_UNVERIFIED",
           ]:
               require(phrase in autonomous_loop, f"Autonomous continuity loop lost required control: {phrase}")
           require("benefit ledger" in contribution_cost.lower() and "cost ledger" in contribution_cost.lower(), "Contribution-cost regression lost separate ledger rule.")
