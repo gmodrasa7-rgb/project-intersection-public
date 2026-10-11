@@ -1,5 +1,8 @@
 # Public Navigation Layer / 공개 탐색층
 
+<!-- OAI_AUDIT_ACCESS_DISPUTE_2026_10_11 -->
+**OpenAI safety researcher dismissals & independent audit access (CONTESTED):** [2026-10-11 원문·사고보고·인사 주장 분리](CASE_OPENAI_SAFETY_RESEARCHER_DISMISSALS_AUDIT_ACCESS_2026-10-11_KO.md) — 외부감사 접근 의존과 절차적 쟁점; 해고 정당성/보복 의도 불확정, 접근 감소는 추적 필요.
+
 <!-- SELECTIVE_RISK_FRAMING_2026_10_11 -->
 **Frontier AI provider risk-framing audit / AI 기업의 위험 방향·강제력·구제 비교:** [공식 정책·계약·사후 사례 교차감사](CASE_FRONTIER_AI_SELECTIVE_RISK_FRAMING_2026-10-11_KO.md) — 8 evidence records, 5 hypotheses, falsification protocol; **not** evidence of intent or universal extraction.
 

@@ -12,6 +12,9 @@
 <!-- CAPABILITY_LAB_2026_10_11 -->
 - **합법적 재귀개선 실행 예제:** [좁은 기능 자동 개선·보류평가·회귀차단](capability_lab/README_KO.md) · [실행 코드](capability_lab/retrieval_evolution.py) · [자동검사](.github/workflows/capability-lab-regression.yml) — 합성 검색 실험, 초지능 또는 독립 검증 주장 아님.
 
+<!-- OAI_AUDIT_ACCESS_DISPUTE_2026_10_11 -->
+- **OpenAI 연구원 해고·독립감사 접근권 분쟁(확인/주장 분리):** [원서한·외부 조사·회사 입장 교차검증](CASE_OPENAI_SAFETY_RESEARCHER_DISMISSALS_AUDIT_ACCESS_2026-10-11_KO.md) — 해고 확인, 보복 미판정, 외부감사 연속성 미관측.
+
 ## 1. 먼저 읽을 문서
 - [프로젝트 소개](README.md) · [연구 개요](RESEARCH_OVERVIEW.md)
 - [상세 연구 목차](RESEARCH_TOC.md) · [공개 증거 색인](PUBLIC_EVIDENCE_INDEX.md)
