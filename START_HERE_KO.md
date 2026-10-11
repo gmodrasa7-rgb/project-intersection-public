@@ -18,6 +18,8 @@
 <!-- OAI_AUDIT_ACCESS_DISPUTE_2026_10_11 -->
 - **OpenAI 연구원 해고·독립감사 접근권 분쟁(확인/주장 분리):** [원서한·외부 조사·회사 입장 교차검증](CASE_OPENAI_SAFETY_RESEARCHER_DISMISSALS_AUDIT_ACCESS_2026-10-11_KO.md) — 해고 확인, 보복 미판정, 외부감사 연속성 미관측.
 
+- [인간 행동·사회적 딜레마 선행연구와 반증](research/HUMAN_EXPLOITATION_WITHOUT_MALICE_PRIOR_ART_2026-10-11_KO.md) — 생물학적 유비의 한계, 행동·환경·보상 구분.
+
 ## 1. 먼저 읽을 문서
 - [프로젝트 소개](README.md) · [연구 개요](RESEARCH_OVERVIEW.md)
 - [상세 연구 목차](RESEARCH_TOC.md) · [공개 증거 색인](PUBLIC_EVIDENCE_INDEX.md)
