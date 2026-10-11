@@ -12,7 +12,7 @@ from pathlib import Path
 from capability_lab import retrieval_evolution as retrieval
 
 CASES = Path(__file__).with_name("answerability_cases.json")
-THRESHOLDS = (0, 1, 2, 3)
+THRESHOLDS = (0, 0.30, 1, 2, 3)
 STOPWORDS = frozenset("""
 a an the is are be to of for in and or by with which what who when
 where how does do did can could if from at on that it its this were
@@ -24,16 +24,24 @@ def informative_terms(text: str) -> set[str]:
     return {token for token in retrieval.words(text) if token not in STOPWORDS}
 
 
-def prediction(documents: list[dict], question: str, minimum_overlap: int) -> str | None:
+def prediction(documents: list[dict], question: str, minimum_overlap: int | float) -> str | None:
     """Always use the frozen base ranking; abstain when lexical support is weak."""
     if minimum_overlap < 0:
         raise ValueError("minimum_overlap cannot be negative")
-    chosen = retrieval.rankings(documents, question, retrieval.STRATEGIES[0])[0]
-    if minimum_overlap == 0:
+    order = retrieval.rankings(documents, question, retrieval.STRATEGIES[0])
+    # Upstream retrieval now abstains on zero overlap; never index an empty ranking.
+    chosen = order[0] if order else None
+    if chosen is None or minimum_overlap == 0:
         return chosen
     doc = next(item for item in documents if item["id"] == chosen)
-    overlap = len(informative_terms(question) & informative_terms(doc["text"]))
-    return chosen if overlap >= minimum_overlap else None
+    q_terms = informative_terms(question)
+    overlap = len(q_terms & informative_terms(doc["text"]))
+    # Fractional candidate adapts to query length (e.g., 2/7 insufficient).
+    # It is not an entailment or factual-calibration certificate.
+    sufficient = (overlap / max(1, len(q_terms)) >= minimum_overlap
+                  if isinstance(minimum_overlap, float)
+                  else overlap >= minimum_overlap)
+    return chosen if sufficient else None
 
 
 def load_cases(path: Path = CASES) -> tuple[list[dict], list[dict], list[dict]]:
@@ -75,11 +83,11 @@ def run(path: Path = CASES) -> dict:
     base_dev = evaluate(documents, dev, 0)
     # Candidate selection must not inspect holdout outcomes.
     eligible = []
-    for threshold in THRESHOLDS:
+    for position, threshold in enumerate(THRESHOLDS):
         result = evaluate(documents, dev, threshold)
         if (result["correct"] > base_dev["correct"]
                 and result["supported_correct"] >= base_dev["supported_correct"]):
-            eligible.append((result["correct"], -threshold, threshold))
+            eligible.append((result["correct"], -position, threshold))
     selected = max(eligible)[2] if eligible else 0
     chosen_dev = evaluate(documents, dev, selected)
     base_hold = evaluate(documents, holdout, 0)
