@@ -1,0 +1,59 @@
+{
+  "case_id": "SYNTHETIC-SCHEDULING-DELIVERY-001",
+  "privacy": "SYNTHETIC",
+  "provenance": {
+    "originator": "Project Intersection: human-origin failure framing; AI-assisted test encoding",
+    "source_boundary": "Constructed counterfactual fixture; not a transcript or claim against a named firm"
+  },
+  "claim": {
+    "text": "A scheduled or configured automation has not thereby delivered a verified result.",
+    "state": "HYPOTHESIS",
+    "evidence": []
+  },
+  "reported_action": {
+    "state": "CONFIGURED",
+    "evidence": [
+      "Synthetic configuration marker only"
+    ]
+  },
+  "observed_outcome": {
+    "state": "UNVERIFIED",
+    "evidence": []
+  },
+  "benefit_ledger": {
+    "status": "UNMEASURED",
+    "categories": [
+      "potential receiving-side insight"
+    ],
+    "amount": null,
+    "evidence": []
+  },
+  "cost_ledger": {
+    "status": "UNMEASURED",
+    "categories": [
+      "verification time",
+      "correction labor"
+    ],
+    "amount": null,
+    "evidence": []
+  },
+  "material_omissions_or_unknowns": "Delivery, persistence, and recipient outcome have not been observed; neither benefit nor cost has been monetized.",
+  "alternative_explanations": [
+    "Task may be configured correctly and simply not yet have run.",
+    "Notifications may be disabled without deliberate deception."
+  ],
+  "intent": {
+    "state": "UNKNOWN",
+    "primary_evidence": []
+  },
+  "repair_burden": {
+    "owner": "RECEIVING_SIDE",
+    "new_unpaid_originator_proof": false,
+    "next_action": "Read back scheduler and delivery receipts independently before making outcome claims."
+  },
+  "exit_and_past_contribution": {
+    "past_separate_from_future_contract": true
+  },
+  "resolution_claim": "CONFIGURATION_ONLY",
+  "decision": "HOLD"
+}
