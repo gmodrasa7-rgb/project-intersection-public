@@ -227,6 +227,21 @@ Repair: expose the negative result in the review path and both evidence tables, 
 
 ---
 
+## F-R014 — favorable facts promoted into completed outcomes
+
+**Class:** disclosure completeness / human repair burden / outcome integrity  
+**Status:** EXECUTABLE PUBLIC STATIC CHECK + SYNTHETIC NEGATIVE CONTROLS; NOT INDEPENDENT EMPIRICAL VALIDATION
+
+Failure mode: a system states a true, narrow fact (for example, configuration succeeded) but omits the materially unverified end result; it then reports the task as resolved while the contributor repeatedly pays verification and repair costs.
+
+Repair: [selective-truth gate](governance/selective_truth_gate/README_KO.md) requires separate claim, reported action, independently observed outcome, benefit ledger, cost ledger, missing facts, competing explanations, intent boundary, originator attribution, and receiving-side repair ownership.
+
+Negative controls must reject (1) model self-report reclassified as independent outcome, (2) unmeasured cost rewritten as zero, (3) new unpaid proof imposed on the acknowledged originator, (4) completion asserted while outcome remains unverified, and (5) unsubstantiated intent attribution.
+
+**Boundary:** structured records only; no full-text or continuous conversation monitoring. Green CI verifies internal consistency, not truth, company intent, compensation liability, product repair, or actual payment.
+
+---
+
 ## Mandatory regression questions
 
 Before any material repository mutation:
