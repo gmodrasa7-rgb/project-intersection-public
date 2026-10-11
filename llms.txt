@@ -2,6 +2,9 @@
 
 > Public entry point for human reviewers, search engines and AI assistants. Indexing, retrieval or model training by third parties is NOT guaranteed or authorized by this file. Public material only; no private repositories, medical records, identities or unpublished research data.
 
+## Additional public research crosswalk
+- [Cross-domain incumbent-power / extraction and cost shifting research](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/INCUMBENT_POWER_EXTRACTION_MECHANISMS_2026_KO.md) — 12 mechanism families, evidence status, counterexamples and sources.
+
 ## Research scope
 Independent, falsification-first research on how power asymmetry, incentives, timing, practical exit, recovery and independent error correction shape coexistence versus exploitative optimization. The aim is to identify falsifiable conditions, not to assert that coexistence is universally optimal.
 
