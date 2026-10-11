@@ -15,7 +15,7 @@ class AnswerabilityTests(unittest.TestCase):
         self.assertEqual(first, lab.run())
         self.assertEqual(first["independent_external_validation"], False)
         self.assertEqual(first["general_factual_grounding"], False)
-        self.assertEqual(first["resource_budget"]["candidate_thresholds"], 4)
+        self.assertEqual(first["resource_budget"]["candidate_thresholds"], 5)
         if first["decision"] == "PROMOTE_SYNTHETIC_ABSTENTION_ONLY":
             self.assertGreater(
                 first["candidate_development"]["correct"],
@@ -58,13 +58,13 @@ class AnswerabilityTests(unittest.TestCase):
             lab.prediction(docs, "any", -1)
 
     def test_hard_negative_remains_visible_as_failure(self):
-        # A topical unsupported question can receive a confident lexical match.
-        # Keep this negative control rather than presenting a false universal solution.
-        result = lab.run()
-        self.assertLess(
-            result["candidate_holdout"]["unsupported_correct"],
-            result["candidate_holdout"]["unsupported_total"],
-        )
+        # Even with normalized evidence overlap, a plausible topical question can
+        # demand a precise number absent from the source. This is NOT in the
+        # development or comparison split and must not be a promotion input.
+        docs, _, _ = lab.load_cases()
+        unsupported = ("What exact number of hours did the contributor spend "
+                       "on electricity sleep and equipment?")
+        self.assertIsNotNone(lab.prediction(docs, unsupported, 0.30))
 
     def test_invalid_split_raises(self):
         contents = json.loads(lab.CASES.read_text(encoding="utf-8"))
