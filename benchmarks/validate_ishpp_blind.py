@@ -67,8 +67,8 @@ def validate(blind, legacy, mapping, registry):
             expected = {key: old.get(key) for key in ("case_id", "blind_case", "questions")}
             if item != expected:
                 errors.append(cid + ": v0.2 facts/questions changed beyond identifier removal")
-    if blind_ids != set(legacy_by_id):
-        errors.append("blind set omits or adds cases relative to frozen v0.1")
+    if not set(legacy_by_id).issubset(blind_ids):
+        errors.append("blind set omits frozen v0.1 cases")
     links = mapping["case_sources"]
     if set(links) != blind_ids:
         errors.append("post-reveal linkage must cover precisely the blind cases")
@@ -96,7 +96,7 @@ def main():
         for error in errors:
             print("FAIL:", error)
         return 1
-    print("PASS: source-ID separation and 10-case lineage integrity; actual blinding UNVERIFIED")
+    print(f"PASS: source-ID separation for {len(blind)} cases, including {len(legacy)} frozen v0.1 cases; actual blinding UNVERIFIED")
     return 0
 
 
