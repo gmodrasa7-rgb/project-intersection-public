@@ -20,6 +20,22 @@ class EvolutionTests(unittest.TestCase):
             self.assertIn(task["expected"], ids)
         self.assertEqual(len(ids), len(data["documents"]))
 
+    def test_duplicate_ids_are_rejected(self):
+        data = lab.load()
+        altered = copy.deepcopy(data)
+        altered["documents"][1]["id"] = altered["documents"][0]["id"]
+        with tempfile.TemporaryDirectory() as td:
+            p = Path(td) / "duplicate.json"
+            p.write_text(json.dumps(altered), encoding="utf-8")
+            with self.assertRaises(ValueError):
+                lab.load(p)
+
+    def test_public_saturated_holdout_cannot_certify_improvement(self):
+        report = lab.run()
+        self.assertTrue(report["holdout_saturated_at_baseline"])
+        self.assertTrue(report["public_holdout_not_independent"])
+        self.assertEqual(report["decision"], "HOLD")
+
     def test_bounded_and_repeatable(self):
         a, b = lab.run(), lab.run()
         self.assertEqual(a, b)
