@@ -124,7 +124,8 @@ Project Intersection은 **권력·인센티브·시점·practical exit·복구�
 - [Research Contents Map → RESEARCH_TOC.md](RESEARCH_TOC.md) — claim families, public links, unresolved gaps / 주장군·공개 링크·미해결 공백
 - [Public Evidence Index → PUBLIC_EVIDENCE_INDEX.md](PUBLIC_EVIDENCE_INDEX.md) — what is actually checkable now / 현재 실제 검증 가능한 것
 - [Prior Art & Attribution → PRIOR_ART_AND_ATTRIBUTION.md](PRIOR_ART_AND_ATTRIBUTION.md) — source/originator attribution and novelty boundaries / 원출처·원안자·신규성 경계
-- [Contribution-Cost Accounting Regression → CONTRIBUTION_COST_ACCOUNTING_REGRESSION.md](CONTRIBUTION_COST_ACCOUNTING_REGRESSION.md) — benefit/cost separation, correction-labor externalization, exit and past-contribution accounting / 편익·비용 분리, 교정노동 외부화, 종료·과거기여 계상
+- [Contribution-Cost Accounting Regression → CONTRIBUTION_COST_ACCOUNTING_REGRESSION.md](CONTRIBUTION_COST_ACCOUNTING_REGRESSION.md)
+- [Selective-Truth Evidence Gate → governance/selective_truth_gate/README_KO.md](governance/selective_truth_gate/README_KO.md) — executable tests for false completion, unmeasured costs and recursive proof burden / 선택적 진실·완료 과장·교정노동 전가 정적검사 — benefit/cost separation, correction-labor externalization, exit and past-contribution accounting / 편익·비용 분리, 교정노동 외부화, 종료·과거기여 계상
 - [Failure Regression Index → FAILURE_REGRESSION_INDEX.md](FAILURE_REGRESSION_INDEX.md) — known failures and mandatory recurrence barriers / 알려진 실패와 재발 차단 규칙
 - [Attribution & Contribution Boundary → ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md](ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md) — founder / AI-assistance / prior-art / independent-validation provenance separation / 창시자·AI보조·선행연구·독립검증 귀속 분리
 - [Autonomous Research Continuity → AUTONOMOUS_RESEARCH_LOOP.md](AUTONOMOUS_RESEARCH_LOOP.md) · [machine-readable state → AUTONOMOUS_RESEARCH_STATE.json](AUTONOMOUS_RESEARCH_STATE.json) — public resume path without founder reconstruction / 창시자 재설명 없이 이어받는 공개 복구경로
