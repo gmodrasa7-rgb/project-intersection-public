@@ -1,0 +1,26 @@
+name: Selective-truth and repair-cost gate
+
+on:
+  pull_request:
+    paths:
+      - "governance/selective_truth_gate/**"
+      - ".github/workflows/selective-truth-gate.yml"
+  push:
+    branches: [main]
+    paths:
+      - "governance/selective_truth_gate/**"
+      - ".github/workflows/selective-truth-gate.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  gate-regression:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Test refusal to launder unknowns into success
+        run: python -m unittest discover -s governance/selective_truth_gate -p "test_*.py" -v
+      - name: Validate public synthetic records
+        run: python governance/selective_truth_gate/gate.py governance/selective_truth_gate/records/*.json
