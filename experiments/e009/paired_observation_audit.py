@@ -57,7 +57,6 @@ def paired_stress():
             "mean_competitive_loss": statistics.fmean(x[4] for x in rr),
             "severe_harm_events": sum(by_family[policy].values()),
             "severe_harm_by_family": dict(sorted(by_family[policy].items())),
-            "severe_harm_action_count": actions[policy].get("MONITOR", 0),
             "actions": dict(actions[policy]),
         }
     return result
