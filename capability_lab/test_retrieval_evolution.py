@@ -70,6 +70,33 @@ class EvolutionTests(unittest.TestCase):
                                report["baseline_holdout"]["correct"])
             self.assertEqual(report["regressed_holdout_cases"], [])
 
+    def test_zero_evidence_must_abstain(self):
+        data = lab.load()
+        question = "unicorn plutonium orchid nebula"
+        for strategy in lab.STRATEGIES:
+            self.assertEqual(lab.rankings(data["documents"], question, strategy), [])
+            self.assertIsNone(lab.predict(data["documents"], question, strategy))
+            result = lab.evaluate(data["documents"],
+                                  [{"question": question, "expected": "validation"}],
+                                  strategy)
+            self.assertEqual(result["correct"], 0)
+
+    def test_duplicate_questions_must_be_rejected(self):
+        for split in ("development", "holdout"):
+            data = copy.deepcopy(lab.load())
+            data[split][0]["question"] = data["development"][1]["question"]
+            with tempfile.TemporaryDirectory() as td:
+                p = Path(td) / "invalid.json"
+                p.write_text(json.dumps(data), encoding="utf-8")
+                with self.assertRaisesRegex(ValueError, "duplicate or leaked"):
+                    lab.load(p)
+
+    def test_known_baseline_is_not_rewritten(self):
+        report = lab.run()
+        self.assertEqual(report["baseline_development"]["correct"], 7)
+        self.assertEqual(report["baseline_holdout"]["correct"], 7)
+        self.assertEqual(report["decision"], "HOLD")
+
     def test_length_and_tokenization_bounded(self):
         data = lab.load()
         for method in lab.STRATEGIES:
