@@ -25,9 +25,11 @@ class BlindBoundaryTests(unittest.TestCase):
             self.registry
         )
 
-    def test_frozen_ten_cases_have_no_structural_source_leak(self):
+    def test_frozen_ten_and_appended_case_have_no_structural_source_leak(self):
         self.assertEqual(self.errors(), [])
-        self.assertEqual(len(self.blind), 10)
+        self.assertEqual(len(self.legacy), 10)
+        self.assertEqual(len(self.blind), 11)
+        self.assertIn("RW011", {item["case_id"] for item in self.blind})
 
     def test_source_ids_inside_blind_record_rejected(self):
         data = copy.deepcopy(self.blind)
@@ -46,6 +48,12 @@ class BlindBoundaryTests(unittest.TestCase):
 
     def test_missing_case_rejected(self):
         self.assertTrue(self.errors(blind=self.blind[:-1]))
+
+    def test_frozen_case_cannot_be_removed_with_its_mapping(self):
+        data = [item for item in self.blind if item["case_id"] != "RW001"]
+        mapping = copy.deepcopy(self.mapping)
+        del mapping["case_sources"]["RW001"]
+        self.assertTrue(self.errors(blind=data, mapping=mapping))
 
     def test_cherrypicked_rewording_rejected(self):
         data = copy.deepcopy(self.blind)
