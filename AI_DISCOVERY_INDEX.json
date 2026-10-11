@@ -18,7 +18,8 @@
     "overview": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/RESEARCH_OVERVIEW.md",
     "attribution": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md",
     "prior_art": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/PRIOR_ART_AND_ATTRIBUTION.md",
-    "negative_results": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/experiments/e009/RESULT.md"
+    "negative_results": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/experiments/e009/RESULT.md",
+    "incumbent_power_extraction_crosswalk": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/INCUMBENT_POWER_EXTRACTION_MECHANISMS_2026_KO.md"
   },
   "research": {
     "area": [
@@ -34,7 +35,8 @@
       "universal truth",
       "real-world validation",
       "independent replication"
-    ]
+    ],
+    "case_synthesis": "Incumbent power and cost-shifting mechanisms: sourced cross-domain prior-art map with counterexamples, not universal causal evidence."
   },
   "public_experiments": [
     {
