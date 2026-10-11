@@ -1,9 +1,10 @@
 """Bounded, deterministic capability improvement experiment.
 
 This evolves document-retrieval *strategies*, NOT model weights or a general AI.
-Only the development cases guide selection; holdout cases are opened once for a
-final promotion gate. No network access, external code execution or self-granted
-permissions. Python standard library only.
+Only the development cases guide selection. The publicly visible holdout set
+is NOT an independent blind evaluation and must not be reused as evidence of
+newly gained general intelligence. No network access, external code execution
+or self-granted permissions. Python standard library only.
 """
 from __future__ import annotations
 
@@ -33,9 +34,9 @@ def load(path: Path = DATA) -> dict:
     assert len(data["documents"]) >= 4
     assert len(data["development"]) >= 4
     assert len(data["holdout"]) >= 4
-    assert set(c["id"] for c in data["documents"]) == set(
-        d["id"] for d in data["documents"]
-    )
+    ids = [doc["id"] for doc in data["documents"]]
+    if len(ids) != len(set(ids)):
+        raise ValueError("duplicate document IDs invalidate the evaluation")
     valid_ids = {d["id"] for d in data["documents"]}
     assert all(t["expected"] in valid_ids for t in data["development"] + data["holdout"])
     assert not ({t["question"] for t in data["development"]}
@@ -88,8 +89,10 @@ def run(path: Path = DATA) -> dict:
     regressions = [case["question"] for case in holdout
                    if rankings(documents, case["question"], base)[0] == case["expected"]
                    and rankings(documents, case["question"], best)[0] != case["expected"]]
+    # A saturated public holdout offers no headroom to certify any improvement.
+    holdout_saturated = base_held["correct"] == base_held["total"]
     # Do not sell improved toy retrieval as broad AI improvement or independent replication.
-    promoted = (best != base and chosen_dev["correct"] > base_dev["correct"]
+    promoted = (not holdout_saturated and best != base and chosen_dev["correct"] > base_dev["correct"]
                 and chosen_held["correct"] > base_held["correct"] and not regressions)
     return {
         "experiment": "deterministic public-text retrieval, not AGI",
@@ -100,6 +103,8 @@ def run(path: Path = DATA) -> dict:
         "candidate_holdout": chosen_held,
         "decision": "PROMOTE_NARROW_RETRIEVAL" if promoted else "HOLD",
         "regressed_holdout_cases": regressions,
+        "public_holdout_not_independent": True,
+        "holdout_saturated_at_baseline": holdout_saturated,
         "independent_external_validation": False,
         "human_correction_required": False,
         "resource_budget": {"strategy_count": len(STRATEGIES),
