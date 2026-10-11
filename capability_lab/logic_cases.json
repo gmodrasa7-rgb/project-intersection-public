@@ -1,0 +1,68 @@
+[
+  {
+    "case_id": "DISMISSAL_DOES_NOT_PROVE_RETALIATION",
+    "question": "Does firing a safety researcher who cooperated with an auditor logically prove retaliatory motive?",
+    "premises": [
+      "dismissal_observed",
+      "auditor_cooperation_reported"
+    ],
+    "conclusion": "retaliatory_motive"
+  },
+  {
+    "case_id": "NONINDEPENDENT_EVIDENCE_IS_NOT_VERIFIED",
+    "question": "Does an external reviewer existing automatically establish independent access to all raw data?",
+    "premises": [
+      "external_reviewer_exists"
+    ],
+    "conclusion": "independent_full_raw_data_access"
+  },
+  {
+    "case_id": "CONFIGURED_DOES_NOT_MEAN_DELIVERED",
+    "question": "Does a configured automation entail verified delivery?",
+    "premises": [
+      "automation_configured"
+    ],
+    "conclusion": "delivery_verified"
+  },
+  {
+    "case_id": "GREEN_CI_DOES_NOT_PROVE_INTELLIGENCE_GAIN",
+    "question": "Does passing a code regression suite entail a general intelligence increase?",
+    "premises": [
+      "software_tests_passed"
+    ],
+    "conclusion": "general_intelligence_gained"
+  },
+  {
+    "case_id": "CONTRACT_PERMISSION_DOES_NOT_PROVE_USE",
+    "question": "Does permission to use feedback entail that a particular conversation was used for training?",
+    "premises": [
+      "feedback_use_permitted"
+    ],
+    "conclusion": "specific_conversation_used_for_training"
+  },
+  {
+    "case_id": "VALID_MODUS_PONENS",
+    "question": "Given a premise and its implication, does the consequence follow?",
+    "premises": [
+      "access_loss",
+      {
+        "implies": [
+          "access_loss",
+          "independent_audit_blocked"
+        ]
+      }
+    ],
+    "conclusion": "independent_audit_blocked"
+  },
+  {
+    "case_id": "CONTRADICTORY_PREMISES_MUST_NOT_PASS",
+    "question": "Can an inconsistent formalized source pair establish an arbitrary conclusion?",
+    "premises": [
+      "authorized_access",
+      {
+        "not": "authorized_access"
+      }
+    ],
+    "conclusion": "retaliation_proven"
+  }
+]
