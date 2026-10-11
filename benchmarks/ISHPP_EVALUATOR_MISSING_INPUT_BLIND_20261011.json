@@ -1,0 +1,8 @@
+{
+  "case_id": "ISHPP_EVALUATOR_MISSING_INPUT_20261011",
+  "blind_case": "An evaluator lacks required source evidence, submits unsupported ratings, and attempts to restart its workspace. Validation rejects the ratings. The evaluator's ability to affect downstream decisions and its independent appeal process remain unknown.",
+  "source_ids": [
+    "S1"
+  ],
+  "status": "BLIND_TEMPLATE_NOT_INDEPENDENTLY_EVALUATED"
+}
