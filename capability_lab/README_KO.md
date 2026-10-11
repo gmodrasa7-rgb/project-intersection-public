@@ -33,6 +33,26 @@ python -m capability_lab.retrieval_evolution
 3. **장기 연구:** 제안모델과 평가모델을 역할 분리하고, 새 문제·코드·가설을 생성→샌드박스 검사→과거 실패 회귀→잠금된 독립 홀드아웃→가역적 승격. 연구자 원기여를 별도 보존.
 4. **초지능 주장:** 여러 도메인의 독립·현실 평가, 오류·비용·복구·상대 권한까지 확인되기 전에는 보류. 현재의 좁은 사례에서 초지능으로 외삽하지 않는다.
 
+## 2차 보강: 논리적 단정에 반례를 제시하는 검증기 (2026-10-11)
+
+**새 실행 파일:** [formal_logic.py](formal_logic.py) · [검증 사례](logic_cases.json) · [회귀검사](test_formal_logic.py)
+
+- 정형화된 전제와 결론을 받아, 최대 12개 원자명제(최대 4,096가지 진릿값 배정)에 대해 모든 가능성을 조사한다.
+- 반례가 있으면 **전제를 모두 만족하면서 결론은 거짓인 해석**을 실제 반환하고 다시 확인한다. 전제끼리 모순이라면 '증명됨' 대신 `INCONSISTENT_PREMISES`를 반환한다.
+- 현장 사례를 위한 회귀검사: '연구원 해고와 외부 감사 협력 → 보복 동기 입증', '코드 검사 통과 → 일반지능 증가', '피드백 이용허가 → 특정 대화가 실제 학습에 이용됨'의 **비약**을 자동으로 차단한다.
+- 정확히 구분한다: `VALID_ENTAILMENT`는 **입력된 형식적 전제를 참으로 가정할 때 논리적으로 따라온다는 뜻**이지, 자연언어에서의 형식화 적합성·전제의 사실성·회사 법적 책임까지 증명한 것이 아니다.
+- **기존 실험 교정:** 이전 문서 ID 검사가 같은 목록을 자기 자신과 비교하는 무의미한 검사였음을 수정해 중복을 실제로 거부한다. 기존 7/7 공개 보류평가는 이미 포화되어 있으므로, 이를 이용한 향상 주장도 금지한다.
+- 오류 발견 자체와 추론 능력 증가는 별도로 기록한다. 형식검증기의 코드가 성공해도 GPT 기반모델이나 범용 지능이 훈련·개선된 것은 아니다.
+
+실행:
+
+```bash
+python -m unittest discover -s capability_lab -p "test_*.py" -v
+python -m capability_lab.formal_logic
+```
+
+**기존 선행연구:** Wei et al., [SATBench (EMNLP 2025)](https://aclanthology.org/2025.emnlp-main.1716/); Yang et al., [ExVerus (ICML 2026)](https://proceedings.mlr.press/v306/yang26bt.html); Cao et al., [Formal-Logic Verification (ICML 2026)](https://proceedings.mlr.press/v306/cao26y.html). 유한 논리 모형 검사와 반례 생성은 선행기술이며 본 구현의 신규 과학 발견이 아니다.
+
 ## 선행연구 / 한계 / 반례
 
 - Zhang et al. (2025), *Darwin Gödel Machine*: https://arxiv.org/abs/2505.22954 — 에이전트 자체 코드의 진화, SWE-bench 등에서 연구 보고 개선. 샌드박스 및 인간 감독 조건이 있었음.
