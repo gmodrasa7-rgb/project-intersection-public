@@ -35,7 +35,7 @@ python -m capability_lab.retrieval_evolution
 
 ## 2차 보강: 논리적 단정에 반례를 제시하는 검증기 (2026-10-11)
 
-**새 실행 파일:** [formal_logic.py](formal_logic.py) · [검증 사례](logic_cases.json) · [회귀검사](test_formal_logic.py)
+**새 실행 파일:** [formal_logic.py](formal_logic.py) · [검증 사례](logic_cases.json) · [회귀검사](test_formal_logic.py) · [실제 20개 회귀검사 결과 및 한계](RESULT_FORMAL_LOGIC_2026-10-11_KO.md)
 
 - 정형화된 전제와 결론을 받아, 최대 12개 원자명제(최대 4,096가지 진릿값 배정)에 대해 모든 가능성을 조사한다.
 - 반례가 있으면 **전제를 모두 만족하면서 결론은 거짓인 해석**을 실제 반환하고 다시 확인한다. 전제끼리 모순이라면 '증명됨' 대신 `INCONSISTENT_PREMISES`를 반환한다.
