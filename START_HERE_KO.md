@@ -12,6 +12,7 @@
 - [증거·검증 상태 규칙](RESEARCH_STATUS_POLICY.md) · [외부 검토 묶음](PUBLIC_REVIEW_PACKET.md)
 - [기여·출처 경계](ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md) · [선행연구·기여 구분](PRIOR_ART_AND_ATTRIBUTION.md)
 - [실패·회귀 색인](FAILURE_REGRESSION_INDEX.md)
+- [ISHPP 인간·AI 평가 시작 및 blind v0.2 누출 방지 절차](START_HERE_HUMAN_AI_KO.md) — 이전 v0.1 출처 ID 노출(F-R015) 보존; 구조검사 통과는 외부독립 검증이 아님
 
 ## 2. 주장 → 증거 → 재현 → 반증
 | 구분 | 진입점 | 상태 경계 |
