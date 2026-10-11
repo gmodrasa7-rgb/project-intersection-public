@@ -1,5 +1,7 @@
 # Project Intersection
 
+**For research funders and paid evaluation partners:** [90-second funding brief, current public evidence and contact route](funding/FUNDER_START_HERE.md). / **연구지원·유상 평가협력:** [90초 안내 및 연락 경로](funding/FUNDER_START_HERE.md).
+
 <!-- INCUMBENT_EXTRACTION_2026_10_11 -->
 - **New cross-domain study / 기득권·착취 구조:** [INCUMBENT_POWER_EXTRACTION_MECHANISMS_2026_KO.md](INCUMBENT_POWER_EXTRACTION_MECHANISMS_2026_KO.md) — 12 mechanisms, nine case groups, negative controls, 17 sources; a prior-art synthesis, **not** a universal causal finding.
 
