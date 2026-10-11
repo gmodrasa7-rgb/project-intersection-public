@@ -15,7 +15,7 @@
     "RW008": ["S009"],
     "RW009": ["S010"],
     "RW010": ["S011", "S012"],
-    "RW011": ["S013"]
+    "RW011": ["S013", "S014", "S015"]
   },
   "interpretation": "Public-source ID separation is a mechanical leakage mitigation, not proof of evaluator blinding, no training contamination, or external independence."
 }

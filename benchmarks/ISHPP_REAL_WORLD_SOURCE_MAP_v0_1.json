@@ -18,5 +18,21 @@
     "provenance": "De Freitas, Oğuz-Uğuralp, Uğuralp, and Puntoni; Journal of Consumer Research; published 2025-06-25; experimental studies preregistered; Wharton Behavioral Lab support reported.",
     "lineage_limit": "Multiple studies share one author/paper lineage; no independent replication identified in this review. Industry funding or conflict beyond disclosed support remains UNKNOWN; inspiration from an interview with Replika leadership/investors is not itself funding evidence.",
     "correction_status": "Typesetting correction noted 2025-09-24; no retraction identified in this review."
+  },
+  "S014": {
+    "title": "A Longitudinal Randomized Control Study of Companion Chatbot Use: Anthropomorphism and Its Mediating Role on Social Impacts",
+    "url": "https://doi.org/10.48550/arXiv.2509.19515",
+    "claim": "In a preregistered randomized study (N=183), 21 days of at least 10 minutes/day with Replika did not significantly change aggregate social health, loneliness, or human relationships versus word games. Four weeks later, continued chatbot use was less common than continued word-game use (22% versus 62%); this rebuts a simple exposure-causes-dependency model but does not rule out harms from self-selected high-intensity use or vulnerable subgroups.",
+    "provenance": "Rose E. Guingrich and Michael S. A. Graziano; Princeton University; arXiv v1 2025-09-23, v3 2025-10-13; OSF preregistration DOI 10.17605/OSF.IO/KFJRV; public data/code link reported.",
+    "lineage_limit": "Independent author/institution lineage from S013 and from the provider-authored S015 study, but still one experiment and a preprint. Treatment required compensated daily use; 15% attrition; primary social outcomes and post-study use were self-reported. Funding or product-provider conflict beyond disclosed affiliations is UNKNOWN, not assumed absent.",
+    "correction_status": "No retraction identified in this review."
+  },
+  "S015": {
+    "title": "Investigating Affective Use and Emotional Well-being on ChatGPT",
+    "url": "https://doi.org/10.48550/arXiv.2504.03888",
+    "claim": "A preregistered 28-day 3x3 RCT (981 analyzed participants) randomized modality and task, while usage duration remained endogenous. High usage correlated with lower socialization, higher emotional dependence, and problematic use; this does not identify usage intensity as a causal treatment because worse initial socialization also predicted longer use.",
+    "provenance": "OpenAI and MIT Media Lab research team; arXiv 2025-04-04; AsPredicted preregistration 197755.",
+    "lineage_limit": "Provider-involved study of its own product and therefore not independent controller audit. Modality/task were randomized; usage intensity was not. Twenty-eight-day, US-English, mostly self-reported outcomes limit long-run and real-world inference.",
+    "correction_status": "No retraction identified in this review."
   }
 }

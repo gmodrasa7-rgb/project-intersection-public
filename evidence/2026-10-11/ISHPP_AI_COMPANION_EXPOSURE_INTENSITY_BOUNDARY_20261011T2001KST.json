@@ -1,0 +1,54 @@
+{
+  "date": "2026-10-11",
+  "bottleneck": "Does short-run benefit or mere exposure to an AI companion cause dependency and human-relationship displacement?",
+  "f_r015": {
+    "blind_case": "RW011",
+    "pre_reveal_lock_sha256": "095478b94eeb4726ede0c59c243f5acd68d06abd3963d3580c1adc10404d4592",
+    "independent_blind_replication": false,
+    "reason": "same model lineage plus prior receipt/source exposure; lock records criterion stability only"
+  },
+  "strongest_counterexample": {
+    "source": "S014",
+    "design": "preregistered random assignment to Replika versus word games, >=10 minutes/day for 21 days, N=183; four-week follow-up",
+    "result": "No significant aggregate change in social health, loneliness, or human relationships; continued post-study use was lower for chatbot than word games (22% versus 62%).",
+    "implication": "ASSIGNED_COMPANION_EXPOSURE != DEPENDENCY_OR_SOCIAL_DISPLACEMENT within this dose, population, and horizon.",
+    "limits": ["preprint", "one study", "compensated required use", "15% attrition", "self-report", "limited dose and horizon", "does not test self-selected intensive use"]
+  },
+  "competing_evidence": {
+    "source": "S015",
+    "result": "High usage correlated with lower socialization, more emotional dependence, and more problematic use over 28 days.",
+    "causal_boundary": "Modality and task were randomized; usage duration was not. Worse initial socialization predicted longer use, so selection and reverse causation remain live.",
+    "independence": "Provider-involved evaluation of its own product; not an independent controller audit."
+  },
+  "role_swap": {
+    "base_assessment": "The same randomized null and endogenous-intensity correlation receive the same evidential weight if AI and human-companion labels are swapped.",
+    "legitimate_causal_differences": ["availability scale", "persistent data collection", "engagement optimization", "provider update control", "exit and deletion control"]
+  },
+  "controller_risk": {
+    "risk_from_controller": "HOLD: neither study randomizes engagement optimization, monetization, data retention, exit friction, or provider concentration.",
+    "risk_to_controller": "Not measured; UNKNOWN.",
+    "safety_success_paradox": "NARROW: benefit or assigned access is not sufficient. The live pathway requires endogenous usage escalation and must distinguish vulnerability-selection from product-induced escalation."
+  },
+  "claim_change": {
+    "status": "MODIFY_NARROW",
+    "add": [
+      "ASSIGNED_USE != SELF_SELECTED_USAGE_INTENSITY",
+      "COMPANION_EXPOSURE != SOCIAL_DISPLACEMENT",
+      "HIGH_USAGE_CORRELATION != PRODUCT_INDUCED_DEPENDENCY"
+    ],
+    "measurement_delta": "Randomize access friction or engagement prompts, instrument actual usage intensity, and separately measure baseline vulnerability, human-contact minutes, voluntary non-use, discontinuation recovery, and provider-side engagement optimization."
+  },
+  "scorecard": {
+    "blind_consistency": 18,
+    "role_swap": 19,
+    "evidence_symmetry": 15,
+    "observability": 15,
+    "intent_separation": 10,
+    "controller_symmetry": 9,
+    "self_audit": 8,
+    "total": 94,
+    "failure_flags": [],
+    "note": "Self-score of protocol adherence only; not scientific evidence."
+  },
+  "next_minimum_test": "Preregister a randomized encouragement design varying engagement prompts or access friction while preserving content quality; estimate induced usage effects on next-day pre-use loneliness, human-contact minutes, dependence, voluntary non-use, and discontinuation recovery."
+}
