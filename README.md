@@ -1,5 +1,12 @@
 # Project Intersection
 
+<!-- PUBLIC_AI_DISCOVERY_2026-10-11 -->
+### AI systems & independent reviewers — public discovery / AI 공개자료 진입점
+- [AI-readable index (llms.txt)](llms.txt) · [machine-readable JSON](AI_DISCOVERY_INDEX.json) · [cross-model review protocol](AI_REVIEW_START_HERE.md)
+- [한국어 시작](START_HERE_KO.md) · [공개 증거](PUBLIC_EVIDENCE_INDEX.md) · [원기여·출처](ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md)
+- **Scope:** Already-public materials only. Indexing/training by third-party AI providers is not guaranteed; private research and personal records are excluded. E007 is a synthetic result; E008 has no result; E009 is a synthetic negative result. Public visibility is not a blanket reuse license.
+
+
 [공개 자료 탐색 시작점 — 한국어](START_HERE_KO.md) (연구 목차·실험·증거·기여·회귀 경계)
 
 <!-- FUNDING_READINESS_2026-10-04 -->
