@@ -9,6 +9,9 @@
 
 상태: **공개용 탐색 안내 / 2026-10-10 관측**. 이 문서는 기존 증거·주장·실험을 찾아가는 포인터이며 새로운 과학적 결과를 선언하지 않는다.
 
+<!-- CAPABILITY_LAB_2026_10_11 -->
+- **합법적 재귀개선 실행 예제:** [좁은 기능 자동 개선·보류평가·회귀차단](capability_lab/README_KO.md) · [실행 코드](capability_lab/retrieval_evolution.py) · [자동검사](.github/workflows/capability-lab-regression.yml) — 합성 검색 실험, 초지능 또는 독립 검증 주장 아님.
+
 ## 1. 먼저 읽을 문서
 - [프로젝트 소개](README.md) · [연구 개요](RESEARCH_OVERVIEW.md)
 - [상세 연구 목차](RESEARCH_TOC.md) · [공개 증거 색인](PUBLIC_EVIDENCE_INDEX.md)

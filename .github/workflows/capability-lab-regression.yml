@@ -1,0 +1,26 @@
+name: Bounded capability evolution regression
+on:
+  pull_request:
+    paths:
+      - "capability_lab/**"
+      - ".github/workflows/capability-lab-regression.yml"
+  push:
+    branches: [main]
+    paths:
+      - "capability_lab/**"
+      - ".github/workflows/capability-lab-regression.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test-bounded-search:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check split integrity and anti-regression selection
+        run: python -m unittest discover -s capability_lab -p "test_*.py" -v
+      - name: Record actual holdout result (not an AGI claim)
+        run: python -m capability_lab.retrieval_evolution
