@@ -84,9 +84,13 @@ def run(path: Path = DATA) -> dict:
     best = max(dev_scores)[2]
     base_dev, chosen_dev = evaluate(documents, dev, base), evaluate(documents, dev, best)
     base_held, chosen_held = evaluate(documents, holdout, base), evaluate(documents, holdout, best)
+    # Hard gate: a higher mean score cannot mask loss of a previously correct case.
+    regressions = [case["question"] for case in holdout
+                   if rankings(documents, case["question"], base)[0] == case["expected"]
+                   and rankings(documents, case["question"], best)[0] != case["expected"]]
     # Do not sell improved toy retrieval as broad AI improvement or independent replication.
     promoted = (best != base and chosen_dev["correct"] > base_dev["correct"]
-                and chosen_held["correct"] > base_held["correct"])
+                and chosen_held["correct"] > base_held["correct"] and not regressions)
     return {
         "experiment": "deterministic public-text retrieval, not AGI",
         "development_selected": best[0],
@@ -95,6 +99,7 @@ def run(path: Path = DATA) -> dict:
         "baseline_holdout": base_held,
         "candidate_holdout": chosen_held,
         "decision": "PROMOTE_NARROW_RETRIEVAL" if promoted else "HOLD",
+        "regressed_holdout_cases": regressions,
         "independent_external_validation": False,
         "human_correction_required": False,
         "resource_budget": {"strategy_count": len(STRATEGIES),
