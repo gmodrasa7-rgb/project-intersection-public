@@ -74,6 +74,8 @@ Reduce or reject the Project-v3 residual if:
 
 Result: [RESULT.md](RESULT.md) · machine-readable [RESULT.json](RESULT.json) · [EXECUTION_RECEIPT.json](EXECUTION_RECEIPT.json).
 
+**2026-10-11 posthoc audit (project lineage, not independent validation):** [paired-observation + complexity sensitivity report](../../E009_RANDOMNESS_COMPLEXITY_POSTHOC_AUDIT_2026-10-11_KO.md) · [executable paired-observation auditor](paired_observation_audit.py). Original preregistered negative result remains unchanged.
+
 The preregistered full Project-v3 residual **did not survive** this synthetic project rerun. This is a reduction/rejection of the incremental v3 residual in this benchmark, not a rejection of the broad Project Intersection research question.
 
 
