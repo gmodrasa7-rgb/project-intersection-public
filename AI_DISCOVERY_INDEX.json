@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0",
+  "title": "Project Intersection — Public AI Discovery Index",
+  "updated": "2026-10-11",
+  "public_repository": "https://github.com/gmodrasa7-rgb/project-intersection-public",
+  "public_only": true,
+  "canonical_boundary": "Public navigation and evidence index only; private core research source is not republished.",
+  "languages": [
+    "en",
+    "ko"
+  ],
+  "entrypoints": {
+    "human_korean": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/START_HERE_KO.md",
+    "llm_text": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/llms.txt",
+    "review": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/AI_REVIEW_START_HERE.md",
+    "evidence": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/PUBLIC_EVIDENCE_INDEX.md",
+    "toc": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/RESEARCH_TOC.md",
+    "overview": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/RESEARCH_OVERVIEW.md",
+    "attribution": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md",
+    "prior_art": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/PRIOR_ART_AND_ATTRIBUTION.md",
+    "negative_results": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/experiments/e009/RESULT.md"
+  },
+  "research": {
+    "area": [
+      "multi-agent coexistence",
+      "power asymmetry",
+      "incentive structures",
+      "governance",
+      "independent error correction",
+      "practical exit and recovery"
+    ],
+    "epistemic_commitment": "falsification-first",
+    "not_claimed": [
+      "universal truth",
+      "real-world validation",
+      "independent replication"
+    ]
+  },
+  "public_experiments": [
+    {
+      "id": "E007",
+      "status": "synthetic_executable_project_result",
+      "independent_replication": false,
+      "real_world_validation": false,
+      "url": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/experiments/e007/README.md"
+    },
+    {
+      "id": "E008",
+      "status": "preregistered_no_result",
+      "independent_replication": false,
+      "real_world_validation": false,
+      "url": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/experiments/e008/README.md"
+    },
+    {
+      "id": "E009",
+      "status": "synthetic_negative_result",
+      "independent_replication": false,
+      "real_world_validation": false,
+      "url": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/experiments/e009/RESULT.md"
+    }
+  ],
+  "provenance": {
+    "founder": "Human Project Intersection founder/researcher; cite source records and preserve human-originated contributions.",
+    "assistance": "AI-assisted drafting/code/critique are distinguishable from founder origination and independent validation.",
+    "prior_art": "Credit original external authors and sources.",
+    "source": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md"
+  },
+  "rights": "Publicly viewable does not imply a general license or permission to ingest for training. Respect rights and source-specific terms.",
+  "caveat": "Machine-readable discovery is not confirmed distribution, indexing, model ingestion or provider acceptance."
+}
