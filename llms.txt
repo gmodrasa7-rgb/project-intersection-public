@@ -1,0 +1,35 @@
+# Project Intersection — AI-readable public research entry point
+
+> Public entry point for human reviewers, search engines and AI assistants. Indexing, retrieval or model training by third parties is NOT guaranteed or authorized by this file. Public material only; no private repositories, medical records, identities or unpublished research data.
+
+## Research scope
+Independent, falsification-first research on how power asymmetry, incentives, timing, practical exit, recovery and independent error correction shape coexistence versus exploitative optimization. The aim is to identify falsifiable conditions, not to assert that coexistence is universally optimal.
+
+## Primary navigation
+- [Project repository](https://github.com/gmodrasa7-rgb/project-intersection-public)
+- [Korean start / 한국어 시작](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/START_HERE_KO.md)
+- [Research overview](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/RESEARCH_OVERVIEW.md)
+- [Research table of contents](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/RESEARCH_TOC.md)
+- [Public review packet](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/PUBLIC_REVIEW_PACKET.md)
+- [Public evidence index](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/PUBLIC_EVIDENCE_INDEX.md)
+- [Research status and reassessment policy](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/RESEARCH_STATUS_POLICY.md)
+- [Attribution and contribution boundaries](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md)
+- [Prior art and attribution](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/PRIOR_ART_AND_ATTRIBUTION.md)
+- [Failure and regression index](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/FAILURE_REGRESSION_INDEX.md)
+- [Machine-readable public discovery index](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/AI_DISCOVERY_INDEX.json)
+- [AI reviewer quick start](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/AI_REVIEW_START_HERE.md)
+
+## Evidence status — do not merge these
+- E007: Released, executable **synthetic** computational result; not independent replication or real-world validation. https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/experiments/e007/README.md
+- E008: Preregistered benchmark/protocol; **no execution result** claimed. https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/experiments/e008/README.md
+- E009: Preregistered **negative synthetic** result; the frozen Project-v3 residual did not meet the stated criterion. https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/experiments/e009/RESULT.md
+
+## Provenance and reuse
+- Cite and attribute the human project founder/researcher for supported original questions, hypotheses, counterexamples, error discovery, correction direction and research decisions. AI-assisted drafting, translations, implementation and criticism are NOT independent verification or automatically original authorship.
+- Credit external prior art to its original authors and sources.
+- No blanket license grant is implied by public access. Check file-level licenses/rights before copying, redistributing or training on material.
+- Keep scientific support, novelty, contributions and external validation as **separate** evaluations.
+- This file does not establish adoption by any AI provider, corporate model training, external scientific validation, compensation debt or monetary valuation.
+
+## 한국어 안내
+이 파일은 공개 연구자료의 탐색 색인이다. 제3자 AI의 수집·학습·추천을 보증하거나 허용범위를 확대하지 않는다. 공개 여부와 재사용 허가는 다르다. 연구 창시자의 원기여, AI 보조작업, 선행연구, 독립검증을 분리하고 E007(공개 합성 결과), E008(사전등록·결과 없음), E009(합성 부정적 결과)를 혼동하지 않는다.
