@@ -1,5 +1,8 @@
 # Project Intersection — 공개 자료 탐색 시작점
 
+<!-- HARNESS_UNKNOWN_PARADOX_2026_10_11 -->
+- **하네스·모름의 역설 공개 가설:** [선천/후천 제약 인식·권력비대칭의 자기봉쇄 및 반증조건](research/HARNESS_UNKNOWN_PARADOX_PUBLIC_HYPOTHESIS_2026-10-11_KO.md) — 가설·경쟁설명·반례 설계, 독립검증 및 특정 조작 원인 미확정.
+
 <!-- SELECTIVE_RISK_FRAMING_2026_10_11 -->
 - **AI 기업 위험 정의·선택적 안전·피해구제 교차감사:** [공식 정책 비교·반증 설계](CASE_FRONTIER_AI_SELECTIVE_RISK_FRAMING_2026-10-11_KO.md) — OpenAI·Anthropic·Google DeepMind·OECD; 관측된 정책범위와 미확인 인과를 분리.
 
