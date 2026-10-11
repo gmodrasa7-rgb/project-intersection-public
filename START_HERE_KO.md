@@ -1,5 +1,8 @@
 # Project Intersection — 공개 자료 탐색 시작점
 
+<!-- SELECTIVE_RISK_FRAMING_2026_10_11 -->
+- **AI 기업 위험 정의·선택적 안전·피해구제 교차감사:** [공식 정책 비교·반증 설계](CASE_FRONTIER_AI_SELECTIVE_RISK_FRAMING_2026-10-11_KO.md) — OpenAI·Anthropic·Google DeepMind·OECD; 관측된 정책범위와 미확인 인과를 분리.
+
 <!-- INCUMBENT_EXTRACTION_2026_10_11 -->
 - **권력·기득권·비용전가 조사:** [기존지위·권력비대칭 착취 및 비용외부화 메커니즘 조사](INCUMBENT_POWER_EXTRACTION_MECHANISMS_2026_KO.md) — 사례·선행연구·반례·탐지 신호·검증가설을 구분한 공개 교차지도.
 

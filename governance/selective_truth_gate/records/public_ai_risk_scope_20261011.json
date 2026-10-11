@@ -1,0 +1,78 @@
+{
+  "case_id": "PUBLIC-AI-RISK-SCOPE-20261011",
+  "privacy": "PUBLIC_SOURCE",
+  "provenance": {
+    "originator": "Project Intersection human-origin problem framing; AI-assisted policy crosswalk and machine-readable encoding",
+    "source_boundary": "Only public official policies, public OECD guidance and reporting; no user chats, personal finances, medical records or private repositories"
+  },
+  "claim": {
+    "text": "OpenAI's public Model Spec explicitly includes license-to-operate interests, while its consumer terms allocate feedback use, output review, and liability differently; a provider's advanced-model safety framework alone cannot establish the full extent of company-wide victim remediation.",
+    "state": "OBSERVED",
+    "evidence": [
+      "https://github.com/openai/model_spec/blob/main/model_spec.md",
+      "https://openai.com/policies/row-terms-of-use/",
+      "https://www.oecd.org/en/publications/oecd-due-diligence-guidance-for-responsible-ai_41671712-en.html"
+    ]
+  },
+  "risk_framing": {
+    "observed_policy_scopes": [
+      "model misuse and frontier model risk prevention",
+      "provider license-to-operate",
+      "consumer content, feedback and accuracy review",
+      "OECD adverse-impact due diligence and remediation"
+    ],
+    "provider_generated_harm_measured": "UNKNOWN",
+    "compared_risk_severity_equivalent": "UNKNOWN",
+    "inference": "Scope difference observed; unequal company-wide enforcement and intent not established"
+  },
+  "reported_action": {
+    "state": "CONFIGURED",
+    "evidence": [
+      "CASE_FRONTIER_AI_SELECTIVE_RISK_FRAMING_2026-10-11_KO.md: public comparison and coding protocol, not an audit of operational harm"
+    ]
+  },
+  "observed_outcome": {
+    "state": "UNVERIFIED",
+    "evidence": []
+  },
+  "benefit_ledger": {
+    "status": "UNMEASURED",
+    "categories": [
+      "possible provider benefit from permitted feedback reuse",
+      "potential improved deployment risk awareness"
+    ],
+    "amount": null,
+    "evidence": []
+  },
+  "cost_ledger": {
+    "status": "UNMEASURED",
+    "categories": [
+      "independent review labor",
+      "correction and verification burden",
+      "possible downstream harm and remedy cost"
+    ],
+    "amount": null,
+    "evidence": []
+  },
+  "material_omissions_or_unknowns": "No corporate internal-use data, matched severity-controlled harm cases, realized provider benefits, user-specific remediation amounts, or verified independent enforcement outcomes. Scope of a frontier safety document is not scope of the whole company.",
+  "alternative_explanations": [
+    "Frontier model safety frameworks intentionally cover severe capability risks; consumer remedy and business ethics can be in separate governance frameworks.",
+    "Legal duties, measurement maturity and harm magnitude differ by category and jurisdiction.",
+    "An enterprise may voluntarily disclose failures, limit its deployment or compensate users even when a frontier safety framework does not discuss those actions."
+  ],
+  "intent": {
+    "state": "UNKNOWN",
+    "primary_evidence": []
+  },
+  "repair_burden": {
+    "owner": "RECEIVING_SIDE",
+    "new_unpaid_originator_proof": false,
+    "next_action": "Independent reviewers compare matched harms and complete remedy outcomes using public records. Do not ask original contributor to reconstruct inaccessible records."
+  },
+  "exit_and_past_contribution": {
+    "past_separate_from_future_contract": true
+  },
+  "resolution_claim": "CONFIGURATION_ONLY",
+  "decision": "HOLD",
+  "research_status": "OBSERVED_POLICY_SCOPE_AND_CONTRACT / CAUSAL_EXTRACTION_UNTESTED"
+}

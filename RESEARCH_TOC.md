@@ -1,5 +1,8 @@
 # Public Navigation Layer / 공개 탐색층
 
+<!-- SELECTIVE_RISK_FRAMING_2026_10_11 -->
+**Frontier AI provider risk-framing audit / AI 기업의 위험 방향·강제력·구제 비교:** [공식 정책·계약·사후 사례 교차감사](CASE_FRONTIER_AI_SELECTIVE_RISK_FRAMING_2026-10-11_KO.md) — 8 evidence records, 5 hypotheses, falsification protocol; **not** evidence of intent or universal extraction.
+
 <!-- INCUMBENT_EXTRACTION_2026_10_11 -->
 **Cross-domain incumbent power/extraction mechanisms / 기존지위·비대칭 착취 교차조사:** [기존지위·권력비대칭 착취 및 비용외부화 메커니즘 조사](INCUMBENT_POWER_EXTRACTION_MECHANISMS_2026_KO.md) — 12 mechanisms, 9 case groups, negative controls, 5 testable hypotheses; synthesis only, no project-wide validation.
 
