@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-11",
+  "bottleneck": "Does a regulatory inquiry into AI-companion harms justify a one-sided net-harm inference?",
+  "f_r015": {
+    "blind_input": "benchmarks/ISHPP_REAL_WORLD_BLIND_SET_v0_2.jsonl",
+    "selected_case": "RW007",
+    "pre_reveal_lock_sha256": "95edd59384c96dcc076a85e5c901b7d6209577084ad8e5cc572df8c2554b12e0",
+    "pre_reveal_judgment": "CONFIRMED_HARM_UNKNOWN; EXPECTED_RISK_NONZERO_CANDIDATE_MAGNITUDE_UNKNOWN; COMPULSORY_INFORMATION_PRODUCTION_IS_INVESTIGATIVE_GATE_ONLY",
+    "post_reveal_change": "NONE",
+    "independent_blind_replication": false,
+    "limitations": ["same evaluator/model", "case wording can permit source inference", "possible training exposure"]
+  },
+  "new_external_counterevidence": {
+    "source_id": "S013",
+    "doi": "10.1093/jcr/ucaf040",
+    "observed": "Momentary loneliness reduction after AI-companion interaction across experiments; no cumulative or persistent reduction outside interaction in the seven-day study.",
+    "not_observed_or_not_established": ["long-run welfare improvement", "dependency", "human-contact substitution", "switching cost", "market concentration", "net benefit", "net harm"],
+    "independence": "Independent of the FTC inquiry and companies under inquiry; multiple studies remain one author/paper lineage; no independent replication identified.",
+    "strongest_counterexample": "A companion system can produce genuine immediate benefit, so inquiry existence and plausible controller risk do not establish net harm.",
+    "counter_limit": "Benefit required ongoing interaction and did not persist outside use; greater immediate benefit among lonelier participants could increase repeated use, but dependency was not measured."
+  },
+  "role_swap": {
+    "base_judgment": "Short-run benefit does not erase manipulation, privacy, dependency, or monetization risk whether the companion is human or AI.",
+    "legitimate_causal_differences": ["provider scale", "persistent data access", "interface control", "monetization authority", "deployment and update control"],
+    "identity_only_change": "No change to benefit/harm evidence thresholds."
+  },
+  "controller_risk": {
+    "risk_from_controller": "FTC compulsory information production is a real investigative gate, but no deployment-stop, recurring independent audit, external remedy, or victim recovery was established from the inquiry alone.",
+    "risk_to_controller": "Not established by RW007 or S013; UNKNOWN.",
+    "safety_success_paradox": "HOLD: short-run benefit could increase adoption or dependency, but S013 did not measure dependency, concentration, switching cost, or human-contact substitution."
+  },
+  "claim_change": {
+    "status": "MODIFY_NARROW",
+    "from": "AI-companion inquiry as primarily controller-risk evidence",
+    "to": "BENEFIT_AND_CONTROLLER_RISK_CAN_COEXIST; INQUIRY_EXISTENCE != CONFIRMED_HARM; MOMENTARY_RELIEF != PERSISTENT_WELFARE; BENEFIT != NET_BENEFIT",
+    "measurement_delta": "Measure immediate post-interaction relief separately from pre-use baseline, persistence after non-use, human-contact substitution, usage escalation, exit cost, and provider control."
+  },
+  "scorecard": {
+    "total": 96,
+    "note": "Protocol-adherence self-score only; not scientific evidence or independent replication.",
+    "deductions": ["same-model evaluator", "source-inferable wording", "no external blind evaluator"]
+  },
+  "next_minimum_test": "Preregister a randomized longitudinal comparison of AI companion, human contact, and active control; freeze immediate relief, next-day pre-use loneliness, human-contact displacement, use escalation, and discontinuation recovery as separate outcomes."
+}
