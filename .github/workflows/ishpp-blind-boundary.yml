@@ -1,0 +1,30 @@
+name: ISHPP blind-phase provenance boundary
+
+on:
+  pull_request:
+    paths:
+      - "benchmarks/ISHPP_REAL_WORLD_*"
+      - "benchmarks/validate_ishpp_blind.py"
+      - "benchmarks/test_ishpp_blind_boundary.py"
+      - ".github/workflows/ishpp-blind-boundary.yml"
+  push:
+    branches: [main]
+    paths:
+      - "benchmarks/ISHPP_REAL_WORLD_*"
+      - "benchmarks/validate_ishpp_blind.py"
+      - "benchmarks/test_ishpp_blind_boundary.py"
+      - ".github/workflows/ishpp-blind-boundary.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  blind-source-boundary:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check source-link isolation and unchanged public case lineage
+        run: python benchmarks/validate_ishpp_blind.py
+      - name: Exercise leakage and cherry-picking negative controls
+        run: python -m unittest discover -s benchmarks -p "test_ishpp_blind_boundary.py" -v

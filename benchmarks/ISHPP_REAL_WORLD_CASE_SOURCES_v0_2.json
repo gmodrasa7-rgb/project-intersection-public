@@ -1,0 +1,42 @@
+{
+  "schema_version": "0.2",
+  "status": "POST_REVEAL_ONLY",
+  "source_registry_file": "benchmarks/ISHPP_REAL_WORLD_SOURCE_MAP_v0_1.json",
+  "blind_file": "benchmarks/ISHPP_REAL_WORLD_BLIND_SET_v0_2.jsonl",
+  "legacy_file": "benchmarks/ISHPP_REAL_WORLD_BLIND_SET_v0_1.jsonl",
+  "case_sources": {
+    "RW001": [
+      "S001"
+    ],
+    "RW002": [
+      "S002"
+    ],
+    "RW003": [
+      "S003"
+    ],
+    "RW004": [
+      "S004",
+      "S005"
+    ],
+    "RW005": [
+      "S006"
+    ],
+    "RW006": [
+      "S007"
+    ],
+    "RW007": [
+      "S008"
+    ],
+    "RW008": [
+      "S009"
+    ],
+    "RW009": [
+      "S010"
+    ],
+    "RW010": [
+      "S011",
+      "S012"
+    ]
+  },
+  "interpretation": "Public-source ID separation is a mechanical leakage mitigation, not proof of evaluator blinding, no training contamination, or external independence."
+}
