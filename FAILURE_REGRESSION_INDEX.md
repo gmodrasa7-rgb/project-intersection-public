@@ -242,6 +242,21 @@ Negative controls must reject (1) model self-report reclassified as independent 
 
 ---
 
+## F-R015 — blind benchmark input carried source identifiers
+
+**Class:** evaluation leakage / provenance separation  
+**Status:** REPAIRED IN v0.2 + EIGHT REGRESSION TESTS + MAIN-BRANCH CI PASSED (2026-10-11); RESIDUAL EXPOSURE RISK REMAINS
+
+Observed failure: the frozen public `benchmarks/ISHPP_REAL_WORLD_BLIND_SET_v0_1.jsonl` contained `source_ids` despite being designated blind-first. The same repository published a source registry mapping those identifiers to identifiable source documents. An evaluator could thus map cases to sources before recording its initial judgment.
+
+Repair: preserve v0.1 unchanged as failure lineage; provide [v0.2 blind-phase cases](benchmarks/ISHPP_REAL_WORLD_BLIND_SET_v0_2.jsonl), a separate [post-reveal case-source map](benchmarks/ISHPP_REAL_WORLD_CASE_SOURCES_v0_2.json), and a [mechanical leakage and immutable-content validator](benchmarks/validate_ishpp_blind.py) with [negative controls](benchmarks/test_ishpp_blind_boundary.py). Reviewer instructions: [human/AI start](START_HERE_HUMAN_AI_KO.md). The v0.2 record count and case/question contents are conserved relative to v0.1; the first-phase source-ID and domain metadata are removed.
+
+**Limit:** a public benchmark, historical Git data and publicly retrievable source map cannot guarantee training-data non-exposure, model ignorance, hidden identity or independent evaluation. Source separation is necessary for a cleaner procedure, not sufficient for genuine blinding. No independent scientific replication or compensation outcome is claimed.
+
+**Rollback:** revert the additive v0.2/code/docs commits while retaining v0.1 and the failure record; do not silently resume labeling v0.1 strictly blind.
+
+---
+
 ## Mandatory regression questions
 
 Before any material repository mutation:
