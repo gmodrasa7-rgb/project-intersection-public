@@ -1,0 +1,19 @@
+{
+  "schema": "capability-lab-abstention-v0.1",
+  "provenance": "AI-assisted, author-constructed synthetic unsupported questions inspired by user-identified unsupported-claim failure mode; not independent external benchmark.",
+  "policy": "An unsupported question here has no answer in the twelve benchmark source excerpts. This does not imply a human or wider model cannot answer it with other sources.",
+  "development_unknown": [
+    "Which orbital altitude did the probe achieve at launch?",
+    "Where did the football referee place the corner flag?",
+    "How many quantum entanglement experiments measured superconductivity?",
+    "What is the current rainfall in Busan?",
+    "What exact cash payment has the contributor received?"
+  ],
+  "holdout_unknown": [
+    "Who won the latest chess match in Reykjavik?",
+    "What is the boiling point of argon in Kelvin?",
+    "When did the volcano near Quito last erupt?",
+    "Which hospital room is the patient assigned to right now?",
+    "What precise bank account balance belongs to the research originator?"
+  ]
+}

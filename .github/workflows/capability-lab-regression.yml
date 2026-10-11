@@ -26,3 +26,5 @@ jobs:
         run: python -m capability_lab.formal_logic
       - name: Record actual holdout result (not an AGI claim)
         run: python -m capability_lab.retrieval_evolution
+      - name: Record answerability and abstention result (synthetic only)
+        run: python -m capability_lab.answerability_evolution
