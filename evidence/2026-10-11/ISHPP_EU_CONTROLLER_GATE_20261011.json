@@ -1,0 +1,90 @@
+{
+  "receipt_id": "ISHPP_EU_CONTROLLER_GATE_20261011",
+  "recorded_at_utc": "2026-10-11",
+  "status": "MATERIAL_DELTA",
+  "ros_precheck": {
+    "source": "Project Intersection Research OS",
+    "read_at_run": true,
+    "relevant_sections": [
+      "Reasoning protocol",
+      "Open-world discipline",
+      "Source authority",
+      "Harness minimization / relevance-gated precheck"
+    ]
+  },
+  "bottleneck": "Does a corporate RISK_FROM_CONTROLLER gate omission imply an ecosystem-level absence of hard gates?",
+  "strongest_counterexample": {
+    "event": "EU DSA.100121 — TikTok Lite Rewards programme",
+    "observation": "An external regulator converted a permanent feature-withdrawal commitment and anti-circumvention commitment into a binding decision.",
+    "evidence_boundary": "This demonstrates gate existence and operation; it does not establish realized addictive harm or a causal welfare effect."
+  },
+  "blind_first": {
+    "case_id": "RW010",
+    "identity_withheld": true,
+    "initial_classification": "EXPECTED_RISK_AND_PROCEDURAL_GATE; REALIZED_HARM=UNKNOWN; INTENT=UNKNOWN",
+    "observability_confidence": "HIGH for formal decision and feature withdrawal; LOW/UNKNOWN for realized harm magnitude"
+  },
+  "identity_reveal": {
+    "controller": "TikTok/ByteDance",
+    "evaluator_enforcer": "European Commission",
+    "legal_basis": "Digital Services Act Article 71",
+    "decision_date": "2024-08-05"
+  },
+  "role_swap": {
+    "invariant": "If either party used rewards and interface control to steer repeated engagement under the same causal structure and evidence, the same baseline expected-risk assessment applies.",
+    "legitimate_causal_difference": "The platform controlled interface, reward schedule, deployment scale and relevant risk-assessment duty; an ordinary user did not.",
+    "outcome": "PASS_WITH_LEGITIMATE_CAUSAL_DIFFERENCE"
+  },
+  "hard_gates": {
+    "risk_to_controller": {
+      "examples": [
+        "GPAI systemic-risk evaluations",
+        "adversarial testing",
+        "incident reporting",
+        "model access or availability restrictions"
+      ],
+      "quantitative_threshold": "AI Act systemic-risk presumption uses a compute threshold; applicability and revisions are separate questions"
+    },
+    "risk_from_controller": {
+      "examples": [
+        "DSA formal proceeding",
+        "binding feature withdrawal",
+        "anti-circumvention commitment",
+        "external complaints and fines"
+      ],
+      "quantitative_threshold": "No comparable general numeric threshold for dependency, concentration or switching-cost harm identified"
+    },
+    "selective_operationalization": "PARTIALLY_SUPPORTED_MULTI_LAYER"
+  },
+  "claim_effect": {
+    "prior_overreach": "CORPORATE_GATE_ASYMMETRY => ECOSYSTEM_GATE_ABSENCE",
+    "decision": "NARROW",
+    "replacement": "CORPORATE_GATE_ASYMMETRY != ECOSYSTEM_GATE_ASYMMETRY; measure cross-institution gate topology, coverage and enforcement latency.",
+    "safety_success_paradox": "HOLD; this case does not test whether technical safety increases adoption, dependency, concentration or switching costs."
+  },
+  "independence": {
+    "regulator_controller_lineage_separated": true,
+    "independent_scientific_replication": false,
+    "company_commitment_same_lineage_with_subject": true,
+    "binding_decision_external_to_subject": true
+  },
+  "evaluator_self_audit": {
+    "likely_error": "Confusing existence of a corporate gate with ecosystem-wide gate absence.",
+    "correction": "Add external law/regulator layer before inferring absence.",
+    "remaining_unknowns": [
+      "realized harm magnitude",
+      "counterfactual behavior without proceedings",
+      "generalization beyond one jurisdiction and platform"
+    ]
+  },
+  "repeated_structure_question": {
+    "who_gains_strength": "External enforcement gains leverage when commitments become binding and anti-circumvention is enforceable.",
+    "who_bears_cost": "The platform loses a growth/engagement mechanism; users' avoided or realized harm remains unquantified.",
+    "role_reversal_note": "Power difference is causal and preserved, not treated as identity privilege."
+  },
+  "next_decisive_test": "Across matched platform launches, compare pre-launch risk assessment, launch/withdrawal timing, regulator intervention and engagement outcomes; freeze coding before revealing jurisdiction or firm identity.",
+  "sources": [
+    "S011",
+    "S012"
+  ]
+}

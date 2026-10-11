@@ -48,5 +48,15 @@
     "title": "OpenAI — Our Structure",
     "url": "https://openai.com/our-structure/",
     "claim": "Foundation appoints all OpenAI Group directors and can replace them; Sam Altman is one Foundation director."
+  },
+  "S011": {
+    "title": "European Commission Decision of 5 August 2024 — TikTok Lite Rewards programme (DSA.100121)",
+    "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52024DSA100121",
+    "claim": "The Commission made TikTok's commitments to permanently withdraw the Rewards programme and not circumvent the withdrawal binding under Article 71 DSA; this establishes an external controller-risk gate, not proof of realized addictive harm."
+  },
+  "S012": {
+    "title": "European Commission — Enforcement of the AI Act",
+    "url": "https://digital-strategy.ec.europa.eu/en/policies/enforcement-ai-act",
+    "claim": "The AI Office and national authorities can investigate, request access and corrective measures, restrict availability, receive complaints, and impose fines; powers and application dates differ by obligation."
   }
 }
