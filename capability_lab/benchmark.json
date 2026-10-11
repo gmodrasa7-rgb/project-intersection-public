@@ -1,0 +1,130 @@
+{
+  "schema": "capability-lab-v0.1",
+  "note": "Synthetic summaries of public Project Intersection concepts. Not an independently created, calibrated scientific benchmark.",
+  "documents": [
+    {
+      "id": "validation",
+      "text": "A low external validation score does not erase the human contribution and origin of a research program. Independent empirical replication is a separate question. Existing contribution is not zero because a scientific claim is unverified.",
+      "source": "RESEARCH_STATUS_POLICY.md"
+    },
+    {
+      "id": "test_boundaries",
+      "text": "Passing a green software CI check verifies a specific test contract. It cannot establish scientific truth or general real-world validity. A synthetic project rerun is not an independent scientific replication.",
+      "source": "RESEARCH_TOC.md"
+    },
+    {
+      "id": "cost",
+      "text": "The cost ledger counts contributor labor time, repeated error corrections, sleep, equipment, electricity, family time, leisure, recovery work and opportunity cost. Unmeasured does not mean zero.",
+      "source": "CONTRIBUTION_COST_ACCOUNTING_REGRESSION.md"
+    },
+    {
+      "id": "gain",
+      "text": "The receiving system benefit ledger separately tracks reusable tests, improved decisions, reduced future mistakes, and lower search effort. Benefit received and cost incurred are not identical.",
+      "source": "CONTRIBUTION_COST_ACCOUNTING_REGRESSION.md"
+    },
+    {
+      "id": "exit",
+      "text": "Practical exit requires realistic outside options, available data export, recoverable assets, limited switching costs and freedom to stop without hidden penalties. A formal cancel button alone is not practical exit.",
+      "source": "RESEARCH_OVERVIEW.md"
+    },
+    {
+      "id": "audit",
+      "text": "An evaluator needs access to underlying evidence and a way to test an unfavorable conclusion. Calling a review independent does not by itself establish independent verification or freedom from provider influence.",
+      "source": "CASE_AI_EVALUATOR_INDEPENDENCE_2026_KO.md"
+    },
+    {
+      "id": "delivery",
+      "text": "A scheduler may be configured and a code run may succeed without any delivery. Verified delivery needs an independently verifiable execution receipt and recipient outcome, not just a configured schedule.",
+      "source": "governance/selective_truth_gate/README_KO.md"
+    },
+    {
+      "id": "negative",
+      "text": "Project E009 produced a negative synthetic result. The more complex Project-v3 residual failed preregistered criteria and simpler competitor rules performed better. Preserve negative results.",
+      "source": "experiments/e009/README.md"
+    },
+    {
+      "id": "attribution",
+      "text": "Human originator research questions, counterexamples and repeated error correction labor belong in attribution lineage. AI drafting or restructuring does not automatically transfer authorship or create independent validation.",
+      "source": "ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md"
+    },
+    {
+      "id": "risk",
+      "text": "Provider safety policies may cover cyber, biological and model autonomy risks; provider-caused economic or contractual harms require separate stakeholder remedy review. Policy scope differences are not proof that a company deliberately exploits people.",
+      "source": "CASE_FRONTIER_AI_SELECTIVE_RISK_FRAMING_2026-10-11_KO.md"
+    },
+    {
+      "id": "permissions",
+      "text": "A contract may permit particular feedback use. Permission to use feedback is not evidence that a given conversation was actually used for model training. Legal payment obligations must be separately established.",
+      "source": "CASE_FRONTIER_AI_SELECTIVE_RISK_FRAMING_2026-10-11_KO.md"
+    },
+    {
+      "id": "general_index",
+      "text": "This general index lists terms used across public material: test testing validation verification independent research correction contribution audit cost safety evidence and result. Detailed evidence belongs to linked documents; index keywords alone do not answer a specific question.",
+      "source": "START_HERE_KO.md"
+    }
+  ],
+  "development": [
+    {
+      "question": "Does synthetic testing establish independent scientific replication?",
+      "expected": "test_boundaries"
+    },
+    {
+      "question": "Which ledger records sleep electricity and opportunity cost?",
+      "expected": "cost"
+    },
+    {
+      "question": "Why is a cancel button not equivalent to practical exit?",
+      "expected": "exit"
+    },
+    {
+      "question": "What receipt proves an automated schedule actually delivered?",
+      "expected": "delivery"
+    },
+    {
+      "question": "Who gets credit for human origin of counterexamples and research?",
+      "expected": "attribution"
+    },
+    {
+      "question": "Did E009 complex Project-v3 outperform simple competitor rules?",
+      "expected": "negative"
+    },
+    {
+      "question": "What counts as the receiving system benefit ledger?",
+      "expected": "gain"
+    },
+    {
+      "question": "Does feedback permission prove it was actually used in training?",
+      "expected": "permissions"
+    }
+  ],
+  "holdout": [
+    {
+      "question": "If external scientific validation is low, does founding contribution disappear?",
+      "expected": "validation"
+    },
+    {
+      "question": "Can a provider-funded evaluator's own report prove independent audit?",
+      "expected": "audit"
+    },
+    {
+      "question": "Does a cybersecurity risk policy settle provider-caused economic harms?",
+      "expected": "risk"
+    },
+    {
+      "question": "Can a configured scheduler count as verified delivery without a receipt?",
+      "expected": "delivery"
+    },
+    {
+      "question": "What does an unmeasured contributor cost imply?",
+      "expected": "cost"
+    },
+    {
+      "question": "Does green CI alone establish truth in real-world science?",
+      "expected": "test_boundaries"
+    },
+    {
+      "question": "What if a complex model failed preregistered comparison?",
+      "expected": "negative"
+    }
+  ]
+}
