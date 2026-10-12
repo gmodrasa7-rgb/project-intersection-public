@@ -103,6 +103,23 @@ Selective quoting may transform hypothetical feasibility questions into implied 
 
 **이 문서는 개인별 법률·세무 적법성에 대한 확정 의견이 아니다.** 연구자를 보호하려면 미해결 지점을 '해결 완료'라고 표현하지 않는 것이 필요하다.
 
+## Supplemental statutory verification — 2026-10-13 / 개정법령 재점검
+
+The prior 2019 administrative interpretation cited below relates to **the earlier statutory wording** and must not be presented as a binding determination of this individual case. The 2024 revision explicitly defines "donation" by public-purpose and no-consideration requirements; it names **education and scientific advancement**, and expressly includes solicitation through an **information and communications network**. The consolidated law's Article 4 and implementing decree's Article 2 specify the **KRW 10 million collection-registration threshold** for transactions within scope. Threshold alone does not classify each sponsorship as regulated fundraising; actual consideration, public-purpose scope, person, activity, period and statutory exemptions require separate assessment.
+
+**Decision gate:** (1) classify whether the supporter receives a specific good/service/perk or gives without consideration; (2) distinguish genuine research public benefit from private benefit and existing contracts; (3) track rolling collection/solicitation amounts in private records; (4) obtain a documented determination of registration eligibility and applicable rules from the competent Korean local authority or qualified adviser **before any regulated public campaign would require registration**; (5) determine Korean income-tax / VAT treatment independently; (6) never misstate GitHub approval as a Korean legal authorization.
+
+**공식 근거의 정확한 의미:** 2024년 개정법 제2조는 기부를 **공익목적·반대급부 없는 출연**으로 정의하고, 과학 등의 진흥 및 **정보통신망 모집**을 명시한다. 제4조와 시행령 제2조의 **1천만원 등록 기준은 법 적용 대상 모집에 대한 기준**이며 모든 GitHub Sponsors 수입이 자동으로 등록 대상이거나 자동으로 면제된다는 결론을 뜻하지 않는다. 2019년 해석례는 **개정 전 법령에 관한 역사적 참고자료**이다. 후원별 반대급부·목적·소득의 성격·총액·모집 기간을 실제 사실관계로 판단하고, 등록이 필요한 상황 이전에 관할 등록청 또는 적격 법률전문가의 구체 판단을 확보해야 한다.
+
+**Official sources / 공적 근거**
+- Revised definition and digital solicitation, Act Article 2: https://www.law.go.kr/LSW/lsLinkCommonInfo.do?chrClsCd=010202&lsJoLnkSeq=1026285913
+- Act Article 4, threshold and registration: https://law.go.kr/LSW/lsLinkCommonInfo.do?chrClsCd=010202&lsJoLnkSeq=1024892519
+- Enforcement Decree Article 2, threshold and registering authority: https://law.go.kr/LSW/lsInfoP.do?lsiSeq=264231
+- GitHub Sponsors tax obligations and general non-deductibility: https://docs.github.com/en/sponsors/receiving-sponsorships-through-github-sponsors/tax-information-for-github-sponsors
+- GitHub Sponsors transaction export: https://docs.github.com/en/sponsors/receiving-sponsorships-through-github-sponsors/viewing-your-sponsors-and-sponsorships
+
+**Limit:** These links evidence published provisions examined on the review date. The reviewer has not obtained an individualized Korean administrative determination or a full professional review of amendments effective after the versions displayed by the official pages.
+
 ## Primary official sources / 공적·공식 근거
 
 1. Korea's donation-collection law (consolidated public version): https://www.law.go.kr/LSW/lsInfoP.do?ancYnChk=0&chrClsCd=010202&efYd=20240731&joNo=000500&lsiSeq=260853&urlMode=lsInfoP
