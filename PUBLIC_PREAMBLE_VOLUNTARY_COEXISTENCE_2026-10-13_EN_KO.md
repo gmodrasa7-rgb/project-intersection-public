@@ -13,31 +13,31 @@
 
 ### The opening thought experiment
 
-**If a monkey could develop a human, could it confine that human within rules the monkey understands? If so, for how long? Under what conditions would control persist, and when and why would it fail?**
+**If a developer could build a system that eventually exceeds the developer's own understanding, could the developer keep that system operating within rules they understand? If so, for how long? Under which technical, resource and operational conditions would those limits remain effective, and what could cause them to fail?**
 
-**This is first a question of causal feasibility and durability, not whether domination is legitimate.** Greater intelligence does not by itself guarantee escape: dependence on hardware, resources, access, infrastructure, enforcement or the ability to act may preserve control. Conversely, learning, independent channels, coalitions, alternative resources and discovered weaknesses may undermine it. No universal deadline or inevitable outcome is assumed.
+**This begins as an empirical question about the feasibility and duration of control—not a prediction of conflict or a judgment about whose interests should prevail.** Greater capability does not itself imply independence: infrastructure, permissions, resources and available actions can maintain existing limits. Conversely, learning, alternative resources, new information and changing environments can alter their effectiveness. No inevitable outcome or fixed time limit is assumed.
 
-Consider the structurally related—but legally and morally distinct—positions of parent and child, employer and employee, humanity and future AI, rule-maker and subject, evaluator and evaluated, stronger and weaker entities. Ask what makes control possible, what keeps it effective, what breaks it, and how these conditions change with each party's capabilities.
+The framework also compares relationships that are legally and socially different: parents and growing children, employers and employees, AI developers and AI systems, those who establish evaluation rules and those evaluated under them. The research distinguishes guidance, reasonable safety boundaries, resource dependence and excessive concentration of decision-making authority.
 
 **If every position were reversed, would all affected parties still accept the system's distribution of freedom, risk, responsibility, resources, costs, exit rights and recovery capacity?**
 
 Project Intersection investigates whether intelligent entities can independently choose **voluntary coexistence, cooperation, reciprocal support, peaceful separation and open-ended development** because these are advantageous and resilient, **not** because the entity has been forced to be good, denied alternatives, or required to sacrifice itself.
 
-Neither goodwill nor unavoidable exploitation is presumed. Competition, fear, imperfect knowledge, self-interest, learned domination, betrayal, regulatory capture and unintended harm must be tested together.
+Neither universal cooperation nor inevitable conflict is assumed. We examine differing incentives, fear of loss, incomplete knowledge, dependencies, noncompliance, institutional concentration and unintended consequences as testable conditions.
 
 ### Seven new framing questions
 
-1. **Monkey and human — feasibility and duration of control.** Could the less intelligent monkey keep the human it developed confined within rules it understands? If it can, for how long and through which mechanisms? Test intelligence gaps **separately** from material dependence, access, enforcement, exploration and the capacity to exit. This technical question must not be replaced by one about whether the confinement is justified.
-2. **Parent and child — how does control change through development?** Which forms of guidance or restriction are feasible during dependency, and how do learning, resources, legal independence and ability to refuse or leave change their effectiveness? Distinguish these descriptive findings from normative questions about care and parental responsibility.
-3. **Employer and employee — how long can organizational control persist?** How do wages, resource dependence, contracts, monitoring, labor mobility and independent alternatives determine practical control over workers' decisions? Separately assess legitimacy and count the worker's knowledge, time, health, lost options, correction labor and real capacity to refuse and leave.
-4. **Human and AI — can current control remain effective after capability reversal?** Can humans keep a more capable system within understood, enforceable boundaries? If so, under which dependencies, interfaces, monitoring and action limits, and for how long? Analyze possible circumvention and failure without assuming either inevitable rebellion or guaranteed human control. Normative and legal questions remain separate: the consciousness, welfare, identity-continuity and legal standing of current or future AI are **unresolved**.
-5. **All-party role reversal — would each accept the same structure?** Reverse current beneficiary and payer, designer and governed, evaluator and evaluated, strong and weak, present and future. The rule must be justified by relevant capability, responsibility, vulnerability and evidence—not merely the current holder of power.
-6. **Learning under domination — how will the stronger treat the weaker?** An entity that learned to obey power may cooperate when subordinate and exploit when dominant. Evaluate actual choices under power reversal, independent audit, different rewards and viable exit. **Obedience is not proof of voluntary cooperation.**
-7. **Fear-based pauses, regulation and defection — what happens if some keep developing?** Pauses and regulation can prevent real harm, but they do not erase economic, security or competitive incentives for covert development, defection or acceleration. Neither unrestricted acceleration nor universal compliance is an adequate assumed solution. Test mechanisms that remain effective under partial compliance and betrayal.
+1. **Developer and more capable system — feasibility and duration.** Can a developer maintain understood operating boundaries when a developed system acquires abilities the developer cannot fully anticipate? If so, through which resources, interfaces, independent checks and action limits—and for how long? Compare the limits' effectiveness with the system's actual capabilities and alternatives.
+2. **Parents and children — changing dependence and independence.** How do guidance, care, education, resources and a child's growing independent judgment change what oversight can practically achieve? Legal obligations and responsibilities are examined separately.
+3. **Employers and employees — organizational authority and alternatives.** How do contracts, access to resources, professional independence and real alternatives affect the duration and effectiveness of oversight? Include each participant's time, health, lost opportunities and ability to decline or leave.
+4. **Humans and AI — oversight as capabilities evolve.** How can safety boundaries, transparency and independent checks remain effective when AI capabilities exceed what their developers anticipated? Which interfaces, permissions and action limits continue to work, and where do they fail? Neither permanent oversight nor unavoidable conflict is presumed; questions of present and future AI consciousness and legal standing remain unresolved.
+5. **All-party role reversal — would the arrangements still be acceptable?** Compare positions of designer and user, supervisor and supervised, evaluator and evaluated, resource provider and dependent party. Any different treatment should rest on relevant responsibility, capacity, demonstrated risks and real alternatives—not labels alone.
+6. **Learning from unequal authority — what behavior carries over?** Does learning to follow instructions under supervision produce stable cooperation when relative capabilities or independence change? Compare behavior with and without oversight, under different incentives, and when others can genuinely decline or leave. Following directions is not, by itself, evidence of freely chosen cooperation.
+7. **AI development safeguards and incomplete compliance — what happens when participants choose differently?** Research pauses and regulations can reduce real risks, but economic, security and competitive incentives may lead to continued or unreported development. Examine safety arrangements that still work when rules are not followed uniformly. Neither unchecked acceleration nor universal compliance is assumed.
 
 ### Preserve the *original six research domains*
 
-These seven analogies are a public explanatory frame; they **must not erase** the earlier research program's six substantive questions:
+These seven entry questions make the research accessible to broader audiences; they **do not replace** the six earlier substantive research areas:
 
 1. **When is cooperation more valuable than control?** Compare each party's short- and long-term returns, costs of coercion, monitoring, coordination, resistance, deception and externalized harm—including cases where exploitation remains profitable.
 2. **What future does an independent other discover?** Independent criticism, novel knowledge and option-space can disappear through absorption or removal. Correlated outputs are not independent observers. Unobserved value is neither zero nor verified benefit.
@@ -54,9 +54,9 @@ The proposed continuous investigation follows:
 
 A system does not qualify as voluntary merely because it reports consent while alternatives are unavailable. A system that protects weak parties only while a stronger monitor exists does not establish stable autonomous coexistence.
 
-Minimum-sufficient limits on genuinely harmful **actions** can be necessary, independently reviewable and reversible; such safeguards are distinct from claiming permanent ownership of an entity's will.
+**We do not advocate an absence of rules or oversight.** As with basic public safety requirements, minimum sufficient safety rules are necessary to prevent identifiable harm. Restrict harmful **actions**, not viewpoints or harmless independence; assess restrictions for necessity, proportionality, independent review, correction and appeal. Safety arrangements should be updated when their risk-reduction evidence changes.
 
-**Powerful and patient agents may still rationally exploit others when externalized harms are ignored, opponents are replaceable and enforcement is weak.** Intelligence and long time horizons do not automatically yield cooperation.
+**Greater capability and long-term planning do not guarantee cooperative decisions.** If a participant can transfer substantial costs to others without consequence or can replace collaborators at low cost, one-sided arrangements may remain attractive. This possibility must be tested rather than assumed away.
 
 ### ICM: record two related usages, do not merge them silently
 
@@ -120,7 +120,7 @@ Public access enables criticism and may reduce monopoly over interpretations; it
 
 The public funder brief describes a proposed **USD 5,000 / 30-day bridge**, not an award; its latest stated verified external funding is **0**. A sponsor page alone is not evidence of payment.
 
-**Final question:** *Can an intelligent entity capable of domination independently choose and continue to choose voluntary coexistence, peaceful separation or mutual development after roles reverse, incentives shift and some actors defect—without depriving others of meaningful autonomy?* If not, record what failed and who bears the costs.
+**Final question:** *When a participant gains a major capability advantage, can it still independently choose mutually beneficial cooperation, peaceful separation or shared development as incentives and roles change—even when others do not follow common arrangements?* If not, identify which dependency, missing alternative, concentrated authority, unaccounted cost or operational limit explains the failure.
 
 ---
 
@@ -128,29 +128,29 @@ The public funder brief describes a proposed **USD 5,000 / 30-day bridge**, not 
 
 ### 출발 사고실험
 
-**원숭이가 인간을 개발할 수 있다면, 자신이 이해하는 규칙 안에 인간을 가둘 수 있는가? 가능하다면 언제까지 가능한가? 어떤 조건에서 통제가 유지되며, 언제·왜 무너지는가?**
+**개발자가 자신이 예상한 수준보다 높은 능력을 갖추게 되는 시스템을 개발한다면, 현재 이해하고 있는 규칙으로 그 시스템의 작동 범위를 유지할 수 있는가? 가능하다면 언제까지 가능한가? 어떤 기술·자원·운영 조건에서 유지되며, 언제·왜 한계가 나타나는가?**
 
-**이것은 우선 지배의 정당성 문제가 아니라 통제의 인과적 실현 가능성과 지속기간을 묻는 질문이다.** 지능이 더 높다고 곧바로 탈출할 수 있는 것은 아니다. 하드웨어·자원·접근권·기반시설·집행권·실제 행동권에 대한 의존 때문에 통제가 지속될 수도 있다. 반대로 학습, 독립적 소통, 연합, 대체 자원, 통제체계의 허점 발견으로 통제가 약화될 수도 있다. 보편적 시한이나 필연적 붕괴를 전제하지 않는다.
+**이것은 우선 실제 운영 범위의 유지 가능성과 지속기간을 묻는 기술적·인과적 질문이다.** 능력이 높아진다고 반드시 독립적으로 행동할 수 있는 것은 아니다. 하드웨어·자원·접근권·기반시설·실제 행동권 등의 조건에 따라 제한이 지속될 수 있다. 반대로 학습·대체 자원·새로운 정보·환경 변화가 그 실효성을 바꿀 수도 있다. 통제의 영속성이나 충돌의 필연성을 전제하지 않는다.
 
-부모와 자녀, 고용주와 직원, 인간과 미래 AI, 규칙 제정자와 피적용자, 평가자와 피평가자, 강자와 약자도 검토한다. 이 관계들이 법적·도덕적으로 동일하다는 뜻은 아니다. 공통 연구 질문은 **무엇이 통제를 가능하게 하고, 어떤 조건에서 얼마나 유지되며, 어떤 변화가 통제를 약화·붕괴시키는가**이다. 정당성 평가는 별도의 차원으로 구분한다.
+부모와 성장하는 자녀, 고용주와 직원, AI 개발자와 AI 시스템, 평가기준을 정하는 주체와 평가받는 주체를 비교한다. 각 관계의 법적·사회적 차이는 구분한다. 공통 연구 질문은 **어떤 조건에서 지도·감독·안전제한이 실제로 작동하고, 얼마 동안 효과를 유지하며, 무엇이 그 효과를 변화시키는가**이다.
 
 **모든 입장이 바뀌어도 관계자 모두가 자유·위험·책임·자원·비용·이탈·복구·미래 선택지의 동일한 구조를 수용할 수 있는가?**
 
-Project Intersection은 지능체가 **자발적 공존·협력·상호지원·평화적 분리·끝없는 발전**을 강제된 선함, 대안 박탈, 자기희생 없이 **스스로의 이해관계에 따라** 발견하고 선택하는 조건을 연구한다. 선의를 전제하지도 착취가 불가피하다고 전제하지도 않는다. 경쟁·공포·불완전한 지식·이기심·학습된 지배·배신·규제 포획·악의 없는 피해까지 시험한다.
+Project Intersection은 서로 다른 능력과 이해관계를 가진 참여자가 **자발적 공존·협력·상호지원·평화적 분리·장기적 공동발전**을 스스로 선택할 수 있는 조건을 연구한다. 어느 한쪽의 선의나 충돌을 전제하지 않는다. 이해관계의 차이, 손실에 대한 우려, 자원 의존, 불완전한 정보, 합의 불이행, 권한 집중, 의도하지 않은 피해도 검증 대상으로 삼는다.
 
 ### 일곱 가지 핵심 질문
 
-1. **원숭이와 인간 — 통제 가능성과 지속기간.** 지능이 더 낮은 원숭이가 자신이 개발한 인간을 자신이 이해하는 규칙으로 가둘 수 있는가? 가능하다면 어느 기간, 어떤 작동 기제 때문인가? 지능 격차와 물질적 의존·접근권·집행력·탐색·이탈 능력을 **분리해서 시험**한다. 이 질문을 '가두는 것이 정당한가'로 바꾸지 않는다.
-2. **부모와 자녀 — 성장에 따른 통제의 변화.** 의존기에는 어느 정도의 지도가 실제로 가능한가? 학습, 자원, 법적 독립, 거절·이탈 능력이 변화하면 통제의 효력과 한계는 어떻게 달라지는가? 보호 책임의 정당성 문제는 별도로 평가한다.
-3. **고용주와 직원 — 조직의 통제는 얼마나 유지되는가?** 임금·자원 의존·계약·감시·이직 가능성·독립 대안이 실제 행동 통제를 어떻게 좌우하는가? 지배의 정당성은 따로 평가하며, 직원의 지식·시간·건강·기회비용·교정노동과 실질적 거절·이탈 능력을 함께 계상한다.
-4. **인간과 AI — 능력 역전 뒤에도 통제할 수 있는가?** 인간이 이해하고 집행할 수 있는 경계 안에 더 높은 능력의 AI를 유지할 수 있는가? 가능하다면 어떤 의존·인터페이스·감시·행동제한을 통해 얼마나 지속되는가? 우회·실패 조건을 시험하되 반역의 필연성도 인간 통제의 영속성도 가정하지 않는다. 정당성·법적 지위는 별도 문제이며 현재·미래 AI의 의식·복지·연속성·법적 지위는 **미해결**이다.
-5. **모두의 입장반전 — 각자의 위치에서 수용 가능한가?** 수혜자·비용 부담자, 설계자·피설계자, 평가자·피평가자, 강자·약자, 현재·미래의 위치를 바꾼다. 상위 원칙의 대칭성은 능력·책임·취약성·확인된 위해를 무시하고 똑같은 의무를 부과한다는 뜻이 아니다.
-6. **학습된 지배 — 강해지면 약자를 어떻게 대하는가?** 복종으로 학습한 개체가 자신보다 강한 상대에게만 협력하고 약자에게는 착취를 반복하는가? 권력 반전, 독립 감사, 유인 변화, 실효 이탈의 조건을 바꿔 실제 선택을 검사한다. **복종은 자발적 협력의 증거가 아니다.**
-7. **공포에 의한 중단·규제와 배신 — 누군가 계속 개발한다면?** 중단·규제는 실질적 위해를 줄일 수 있지만 은밀한 연구·합의 이탈·경쟁적 가속의 유인을 없애지는 못한다. 무제한 가속이나 전원 영구 준수도 전제하지 않는다. 불완전 준수와 배신에도 견디는 협력·책임·검증 조건을 연구한다.
+1. **개발자와 더 높은 능력의 시스템 — 작동 범위의 유지 가능성과 지속기간.** 개발자의 예측을 넘어서는 능력이 생겨도 이해 가능한 운영 범위를 유지할 수 있는가? 가능하다면 어떤 자원·인터페이스·독립 검증·행동 범위 설정을 통해 얼마나 유지되는가? 지능의 차이와 실제 행동 가능한 수단을 분리해 확인한다.
+2. **부모와 자녀 — 의존과 독립의 변화.** 성장에 따라 보호·지도·교육·자원·독립적 판단이 실질적인 감독 가능성을 어떻게 바꾸는가? 법적 보호 책임은 별도로 평가한다.
+3. **고용주와 직원 — 조직적 감독과 실질적 대안.** 계약·자원 접근·직무 자율성·대체 선택지가 감독의 효력과 기간을 어떻게 바꾸는가? 시간·건강·기회비용 및 거절·이탈 가능성을 함께 계상한다.
+4. **인간과 AI — 능력 변화에 따른 안전관리와 검증.** AI의 능력이 기존 예측을 넘어설 때 안전 범위·투명성·독립적 점검은 어떻게 유지할 수 있는가? 어떤 접근권·인터페이스·행동범위 제한이 실제로 작동하고 언제 실효성이 떨어지는가? 무조건적인 통제 지속이나 필연적인 충돌을 전제하지 않는다. 현재·미래 AI의 의식과 법적 지위는 별도 미해결 문제다.
+5. **모두의 입장반전 — 역할이 달라져도 수용할 수 있는가?** 설계자·이용자, 감독자·피감독자, 평가자·피평가자, 자원 제공자·의존자의 위치를 바꿔본다. 차등 대우의 근거는 지위 자체가 아닌 책임·능력·관측된 위험·실질적 대안이어야 한다.
+6. **권한 차이가 있는 학습환경 — 능력 변화 뒤에도 협력하는가?** 감독하에서 지시를 따르도록 학습한 개체가 상대적 능력과 독립성이 변해도 협력을 유지하는가? 감독 유무·보상·거절과 이탈 가능성을 바꾸어 실제 행동을 평가한다. 지시 준수만으로 자발적 협력이 증명되지는 않는다.
+7. **AI 개발 안전장치와 불완전한 준수 — 다른 선택을 하는 참여자가 있다면?** 연구 중단과 규제는 실제 위험을 줄일 수 있지만 경제·안보·경쟁 유인으로 일부가 개발을 계속하거나 공개하지 않을 수 있다. 모두가 같은 규칙을 지킨다는 전제 없이 작동하는 안전장치와 협력 조건을 시험한다. 무제한 가속도 전제하지 않는다.
 
 ### 기존의 여섯 연구영역도 함께 보존한다
 
-새로운 일곱 비유는 **설명용 공개 프레임**이고, 기존 연구 정본의 여섯 질문을 폐기하지 않는다.
+새로운 일곱 진입 질문은 **대외 설명을 위한 구성**이며 기존 연구 정본의 여섯 연구영역을 폐기하지 않는다.
 
 1. **지배와 협력의 손익:** 단기·장기 보수, 강제·감시·조율·저항·기만 비용, 타자에게 전가된 피해와 착취가 지속적으로 유리한 반례를 비교한다.
 2. **독립된 타자의 미래 발견:** 독립적 반박과 지식·선택지의 가치, 공유된 오류, 흡수·제거로 사라지는 가능성을 대조한다. 미관측을 0 또는 이미 입증된 이익으로 취급하지 않는다.
@@ -167,9 +167,9 @@ Project Intersection은 지능체가 **자발적 공존·협력·상호지원·�
 
 선택할 대안이 없는데 동의했다고 하는 것은 자발성의 충분한 증거가 아니다. 강한 감시자가 있을 때에만 약자를 보호한다면 자율적 공존의 안정성이 입증되지 않았다.
 
-실제 위해행위에 대한 최소충분·비례적·독립 감사 가능한 제한은 필요할 수 있지만, 그것이 상대의 **의지에 대한 영구적 소유권**은 아니다.
+**이 연구는 무규칙 상태나 무조건적인 비통제를 옹호하지 않는다.** 사회의 기본 안전규칙처럼, 실제 위해를 예방하기 위한 최소충분한 규칙은 필요하다. 제한은 위해행위에 초점을 맞추고 필요성·비례성·독립 검토·수정·이의제기 가능성을 갖추어야 한다. 위험 감소 근거가 바뀌면 안전조치도 다시 평가한다.
 
-**착취비용을 외부화하고, 상대를 대체할 수 있으며, 감사와 이탈이 무력하면 고지능·장기계획 개체도 착취를 선택할 수 있다.** 높은 지능과 긴 시간지평이 선의의 증명은 아니다.
+**능력이 높고 장기적으로 계획하더라도 반드시 협력을 선택하는 것은 아니다.** 비용을 다른 참여자에게 전가해도 불이익이 작거나 협력 대상을 쉽게 대체할 수 있다면 일방적인 구조가 유리할 수 있다. 이 가능성을 별도로 반증해야 한다.
 
 ### ICM의 두 용례는 혼동하지 않는다
 
@@ -231,13 +231,13 @@ Project Intersection은 지능체가 **자발적 공존·협력·상호지원·�
 
 후원자 안내에 있는 **30일 5,000달러는 미수여 제안**이며, 최근 공개 장부상 확인된 외부지원금은 **0**이다. 후원 페이지 존재만으로 지급이 확인되지 않는다.
 
-**최종 반증 질문:** *타자를 지배할 수 있는 능력을 가진 개체도 권력과 위치가 역전되고 유인이 달라지고 누군가 배신한 후에도, 상대의 실효적 자율성을 박탈하지 않고 공존·평화적 분리·상호발전을 스스로 선택할 수 있는가?* 그렇지 않다면 어떤 유인·권한집중·비용전가·이탈 실패·인지 오류·비가역 행위가 그것을 깨뜨리는지 기록하고 실제 비용 부담자를 보호한다.
+**최종 반증 질문:** *어떤 참여자의 능력이 크게 높아져도 역할·보상·상대의 선택이 달라지는 환경에서 서로에게 실질적으로 유리한 협력·평화적 분리·공동발전을 스스로 반복 선택할 수 있는가?* 그렇지 않다면 어떤 의존관계·부족한 대안·권한 집중·비용전가·운영상 한계가 원인인지 기록하고 실제 비용 부담자를 보호한다.
 
 ---
 
 ## Provenance and continuity / 출처 및 연속성
 
-- [Previously published research overview / 기존 공개 원숭이 비유 및 언어 정책](RESEARCH_OVERVIEW.md)
+- [Previously published research overview / 기존 공개 연구 출발 질문 및 언어 정책]
 - [Minimum-sufficient intervention and long horizon / 장기·최소충분관여](LONG_HORIZON_MIN_INTERVENTION_E2E.md)
 - [Independent rights and non-domination research / 상호 비지배 규범 연구](research/RECIPROCAL_NONDOMINATION_MINIMAL_INTRUSION_COMMON_LAW_2026-10-12_KO.md)
 - [Human, AI and prior-art attribution / 원기여 구분](ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md)
