@@ -1,5 +1,9 @@
 # Project Intersection — AI-readable public research entry point
 
+## Research mission and public commons / 연구 목적과 공개기부
+- [한국어: 공개 기부·반포획 연구 설계·반증·출처·실효 권리](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/research/OPEN_KNOWLEDGE_ANTI_CAPTURE_MISSION_2026-10-12_KO.md) — not empirical validation; human founder original research direction and protected attribution.
+- Repository is public/readable, but GitHub API reports no detected repository-wide license as of 2026-10-12. Public access is not a blanket reuse/training permission.
+
 ## New public multigenerational research (2026-10-12)
 - [한국어: Intergenerational traits, wealth, power, institutions and AI feedback](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/research/INTERGENERATIONAL_TRAITS_WEALTH_POWER_AI_CONVERGENCE_2026-10-12_KO.md) — 17 mechanisms, prior art, negative cases, untested causal synthesis.
 - [한국어: AI-provider risk-warning incentive hypotheses](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/research/AI_RISK_WARNING_INCENTIVES_2026-10-12_KO.md) — five structural pathways, not proven firm intent or quantified ranking.

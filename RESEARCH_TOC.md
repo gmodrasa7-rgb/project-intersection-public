@@ -1,5 +1,8 @@
 # Public Navigation Layer / 공개 탐색층
 
+<!-- COMMONS_ANTI_CAPTURE_2026_10_12 -->
+**Project purpose & public commons anti-capture architecture / 공개기부 목적·반포획 구조:** [인과모형·6개 가설·독립검증·실효 권리·기여 비용 분리](research/OPEN_KNOWLEDGE_ANTI_CAPTURE_MISSION_2026-10-12_KO.md) — 설계이며 독립적인 실증 검증은 아직 없음.
+
 <!-- INTERGENERATIONAL_AI_PUBLIC_2026_10_12 -->
 **New cross-generation research / 다세대 기질·환경·부·제도·AI 피드백:** [17개 채널·문헌·반례·검증 경계](research/INTERGENERATIONAL_TRAITS_WEALTH_POWER_AI_CONVERGENCE_2026-10-12_KO.md) — 가설, 인과 미검증.
 

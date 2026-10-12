@@ -1,5 +1,8 @@
 # Project Intersection — 공개 자료 탐색 시작점
 
+<!-- COMMONS_ANTI_CAPTURE_2026_10_12 -->
+- **최상위 목적·오픈소스 공개 기부의 의미:** [공개 지식으로 권력포획을 견제하는 연구 설계](research/OPEN_KNOWLEDGE_ANTI_CAPTURE_MISSION_2026-10-12_KO.md) — 다세대 수렴·AI 증폭·실효 이탈/복구·검증·권리경계를 연결.
+
 <!-- INTERGENERATIONAL_AI_PUBLIC_2026_10_12 -->
 - **다세대 행동·부·교육·권력·AI 증폭:** [17개 전승·증폭 경로와 반증](./research/INTERGENERATIONAL_TRAITS_WEALTH_POWER_AI_CONVERGENCE_2026-10-12_KO.md) — 선행연구와 미검증 통합가설을 구분.
 - **AI 기업 위기 경고의 이해관계:** [5가지 가능 경로와 반례](./research/AI_RISK_WARNING_INCENTIVES_2026-10-12_KO.md) — 특정 기업의 숨은 의도 확정 아님.
