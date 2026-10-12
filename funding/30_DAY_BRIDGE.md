@@ -3,6 +3,10 @@
 
 Status / 상태: **Prepared funding package; not awarded / 준비된 자금요청 패키지, 미수여**
 
+**Historical funding-proposal note / 기존 제안서 이력:** This **unawarded four-item proposal remains preserved as originally scoped**. On 2026-10-13, the researcher chose to prioritize a separate, simpler **direct individual sponsorship** route (researcher's working-time compensation + LLM usage) to reduce single-institution dependence and potential sponsor-related bias, while publishing reviewable progress, negative results, corrections and anonymized fund use. This is **not an amendment of this proposal, an allegation of actual institutional interference or a claim of receiving funds**. See the [single current personal-sponsorship policy and ledger](SPONSORSHIP_PUBLIC_LEDGER.md).
+
+**연구비 제안 이력 안내:** 이 **미수여 4항목 제안서는 기존 내용 그대로 보존**한다. 2026-10-13 연구자는 특정 기관 의존과 이해상충·편향 위험을 낮추고 연구 진행·성과·부정적 결과·교정·익명화된 후원금 사용내역을 공개하며 발전시키기 위해 별도의 **개인 직접 후원(연구자 1인 인건비·LLM 사용료)** 방식을 우선하기로 했다. 이는 본 제안서의 소급 변경·수여 사실이나 과거 기관의 실제 부당개입 주장이 아니다. 운영 정본은 [개인후원 통합 장부](SPONSORSHIP_PUBLIC_LEDGER.md)에 기록한다.
+
 Proposed public title / 제안 공개 제목:
 
 **Adversarial Exit & Continuity Benchmark — 30-Day Independent AI Safety Sprint**
