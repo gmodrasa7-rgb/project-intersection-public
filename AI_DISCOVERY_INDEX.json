@@ -22,7 +22,8 @@
     "incumbent_power_extraction_crosswalk": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/INCUMBENT_POWER_EXTRACTION_MECHANISMS_2026_KO.md",
     "intergenerational_ai_feedback": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/research/INTERGENERATIONAL_TRAITS_WEALTH_POWER_AI_CONVERGENCE_2026-10-12_KO.md",
     "ai_risk_warning_incentives": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/research/AI_RISK_WARNING_INCENTIVES_2026-10-12_KO.md",
-    "public_study_navigation": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/START_HERE_KO.md"
+    "public_study_navigation": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/START_HERE_KO.md",
+    "public_commons_mission": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/research/OPEN_KNOWLEDGE_ANTI_CAPTURE_MISSION_2026-10-12_KO.md"
   },
   "research": {
     "area": [
@@ -53,7 +54,12 @@
         "status": "structural_hypotheses_not_firm_intent",
         "url": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/research/AI_RISK_WARNING_INCENTIVES_2026-10-12_KO.md"
       }
-    ]
+    ],
+    "public_commons_design": {
+      "status": "design_untested_integrated_causal_hypotheses",
+      "description": "Intergenerational incentive reproduction, AI amplification, independent validation, practical exit/recovery, contribution-cost separation.",
+      "url": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/research/OPEN_KNOWLEDGE_ANTI_CAPTURE_MISSION_2026-10-12_KO.md"
+    }
   },
   "public_experiments": [
     {
@@ -84,6 +90,6 @@
     "prior_art": "Credit original external authors and sources.",
     "source": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md"
   },
-  "rights": "Publicly viewable does not imply a general license or permission to ingest for training. Respect rights and source-specific terms.",
+  "rights": "Publicly viewable does not imply a general license or permission to ingest for training. Respect rights and source-specific terms. GitHub API license=null as of 2026-10-12; repository visibility does not create an open-source license; explicit grant absent.",
   "caveat": "Machine-readable discovery is not confirmed distribution, indexing, model ingestion or provider acceptance."
 }
