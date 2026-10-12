@@ -47,7 +47,7 @@ Sponsor-account approval is user-reported; funds and payouts were not verified h
 **Control:** Use "approved (per researcher report)" for sponsor status and "UNVERIFIED" for actual transactions until reconciled. Keep [evidence classes](../PUBLIC_EVIDENCE_INDEX.md) and failure E009 accessible. Never invent beneficiaries, supporter counts, receipts or independent reviewers.
 
 ### R08 — Public promises, perks and liabilities (MEDIUM)
-A generic research sponsorship should not promise guaranteed publication dates, exact discoveries, guaranteed investment returns, exclusive data, paid services or refunds unless explicit written terms and legal obligations have been reviewed. Offering special perks or services can affect how payments are legally classified.
+A generic research sponsorship should not promise guaranteed publication dates, exact discoveries, guaranteed financial returns, exclusive data, paid services or refunds unless explicit written terms and legal obligations have been reviewed. Offering special perks or services can affect how payments are legally classified.
 
 **Control:** State realistic update cadence and limitations, reserve necessary private materials, and distinguish donation/support, grants and paid contracts. Update policy prospectively, with previous versions in Git history.
 
