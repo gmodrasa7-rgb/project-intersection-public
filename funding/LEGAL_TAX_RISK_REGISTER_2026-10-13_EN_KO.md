@@ -61,6 +61,16 @@ A public GitHub repository does not automatically authorize copying or redistrib
 
 **Control:** Say "public research materials" or "publicly accessible repository"; avoid unqualified "licensed open source". Deliberate separate permissions for code, prose and external materials, preserving attribution and prior contributor rights.
 
+### R11 — Account impersonation, payment-link substitution and repository manipulation (HIGH)
+Adversaries can impersonate a sponsor or reviewer, replace a payment URL in a public message, present forged transaction screenshots, or seek to modify repository records. Disagreement or critical review is not itself evidence of adversarial action.
+
+**Control:** Use only the account's official **https://github.com/sponsors/gmodrasa7-rgb** URL in public communication; avoid unsolicited direct transfers or private payment details. Keep GitHub 2FA/passkeys and recovery access protected. Preserve main-branch PR review/branch rules, compare the actual file tree and commit SHAs after updates, and treat screenshots as unverified until independently checked. Keep access credentials off GitHub. The project cannot guarantee that remote records are impossible to alter; Git history and independent backups are different protections.
+
+### R12 — Quote mining, manipulated disclosures and support promises (MEDIUM)
+Selective quoting may transform hypothetical feasibility questions into implied advocacy, or characterize non-replicated synthetic experiments as validated claims. An attacker may copy old versions and describe them as current.
+
+**Control:** Link to the current canonical research preface, date and commit when communicating externally. Keep the evidence index and known failures near claims. Correct materially misleading summaries by citing the exact changed passage and chronology; do not delete unfavorable historical sources. Don't promise guaranteed AI safety, guaranteed scientific breakthroughs, tax deductions or a return on sponsor funds.
+
 ### Hard boundaries before declaring operations "fully compliant"
 - No verified individual Korean legal classification for the public fundraising route.
 - No independent review of applicable tax, business registration, VAT and cross-border handling.
