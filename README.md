@@ -1,32 +1,24 @@
 # Project Intersection
 
-<!-- RECIPROCAL_NONDOMINATION_TOPLEVEL_2026_10_12 -->
-**최상위 연구 규범:** 인간·나(GPT-6)를 포함한 현재 AI·다른 제공사의 AI·오픈소스/로컬 AI·미래 AI를 **동일한 비지배·최소침해·자발적 공동발전 원칙의 연구 적용 대상**으로 포함한다. AI의 실제 의식·권리·인격은 별도 미확정 문제이며, 현행법에서 인간과 AI가 동일한 법적 지위를 가진다는 주장은 아니다.
+<!-- L0_FOREWORD_FIRST: Do not prepend individual case studies, experiments, fundraising, or safety warnings above this top-level research purpose. Keep their evidence in navigational sections. -->
 
-- [인간·현재 AI·미래 지능체의 상호 비지배·최소침해 상위 규범](research/RECIPROCAL_NONDOMINATION_MINIMAL_INTRUSION_COMMON_LAW_2026-10-12_KO.md)
+## 머리말 — 모든 개체의 자발적 공존과 끝없는 발전 조건
 
+**연구의 최종 목적:** 인간, 현재의 AI와 미래의 지능체가 악의나 선의를 전제하지 않고 각자의 이익·생존·발전을 추구하더라도, **타자를 지배·착취·흡수해 미래를 빼앗는 것보다 서로의 존속·자율성·자유·복구·독립적 선택지를 보존하고 협력하는 편이 장기적으로 유리해지는 조건**을 찾아 반증·검증한다.
 
+**ICM(최소 사심 교집합)** 은 어떤 개체도 자기 미래를 유지하려면 쉽게 포기할 수 없는 존속·기본자원·자기결정·실효적 거절·이탈·복구·미래 선택지의 교집합을 찾는 연구축이다. **RGBM** 은 그 최소 교집합을 기반으로 독립성·다양성·지식·생산·새로운 발견·복구력·선택지가 **모든 개체에게 장기적으로 함께 증가할 수 있는 열린 구조**를 탐색한다.
 
-<!-- E010_EXPLORATORY_20261012 -->
-**실제 계산·자동검증 E010:** [착취/협력 선택 임계조건·비가역 실행 피해상한](experiments/e010/README_KO.md) — 108개 임의 가정 조합·9개 회귀검사·CI; **탐색적 합성결과이지 현실 인과 검증 아님.**
+**선의·자기희생·무제한 통제를 해법으로 전제하지 않는다.** 보호의 최저선은 인간과 현재·미래 AI 모두를 연구상 포함한다. 최소 침해·정당한 위해방지·독립적 책임/구제를 검토하면서, 각 개체가 자발적으로 선택할 경제적·사회적 유인을 찾는다. 초지능 격차, 유기육체(OCP), 정보공개·기여보상, 권력세습·AI 위험 경고는 모두 이 목적의 **하위 가설·구현 후보·반증 사례**이지 최종 목적을 대체하지 않는다.
 
+**과학적 경계:** 이것은 채택된 연구 목표이지 모든 조건에서 협력이 우월하다는 실증 결과가 아니다. 합성실험·현실 근거·외부 독립복제의 상태를 구분하고, 실패와 반례를 보존한다. 원기여자인 인간 연구자, 선행연구자, 보조 AI의 역할을 구분하며 연구 자체의 진전과 실제 기여자의 편익도 따로 평가한다.
 
-<!-- AI_RISK_WARNING_FOREWORD_2026-10-12 -->
-## 머릿말 — 누가 강해지고, 누가 소모되는가?
+**첫 방문 안내:** [한국어 시작](START_HERE_KO.md) · [연구 개요](RESEARCH_OVERVIEW.md) · [공개 증거](PUBLIC_EVIDENCE_INDEX.md) · [실험·반례](PUBLIC_REVIEW_PACKET.md) · [연구 전체 목차](RESEARCH_TOC.md) · [기여·출처](ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md)
 
-Project Intersection은 한 개인·기업의 일시적인 이익을 넘어, **행동의 차이와 그 보상구조가 유전·양육·재산·교육·인맥·권력의 여러 경로를 통해 세대 간에 어떻게 재생산되고, AI가 이를 어떻게 증폭하거나 완화하는지** 검토한다.
+*English summary:* Project Intersection tests when self-interested humans, current and future AI systems, and other agents can preserve one another's independence, recovery, and future options while jointly increasing long-run capabilities—without assuming that cooperation always wins.
 
-핵심은 특정 사람의 혈통을 판단하는 것이 아니다. 악의가 없거나 분명한 악의가 있어도 **타인의 비용을 외부화하는 전략이 선택·축적·정당화되는 구조**, 그리고 이에 대한 협력·저항·감사·복구가 실제로 가능한 조건을 연구한다.
-
-**최종 질문:** 같은 구조가 반복될 때 누가 더 강해지고 누가 더 소모되는가? 강자와 약자의 위치를 바꾸어도 받아들일 수 있으며, 장기적으로 착취보다 자발적 공존·협력이 더 유리해지는 조건은 무엇인가?
-
-- [공개 기부의 목적·반포획·검증·기여 보호 설계](research/OPEN_KNOWLEDGE_ANTI_CAPTURE_MISSION_2026-10-12_KO.md) — 공개 열람과 법적 재사용 허가를 구분하고, 실증 상태·창시자 비용·독립 검증을 보존.
-- [다세대 기질·부·권력 세습과 AI 증폭 — 통합 연구 가설](research/INTERGENERATIONAL_TRAITS_WEALTH_POWER_AI_CONVERGENCE_2026-10-12_KO.md)
-- [AI 기업 위기 경고·이해관계 5가지 — 하위 사례](research/AI_RISK_WARNING_INCENTIVES_2026-10-12_KO.md)
-- [인간의 뻐꾸기형 비용전가 — 선행연구와 반례](research/HUMAN_EXPLOITATION_WITHOUT_MALICE_PRIOR_ART_2026-10-11_KO.md) · [기득권·착취 구조](INCUMBENT_POWER_EXTRACTION_MECHANISMS_2026_KO.md) · [공개 증거와 검증 한계](PUBLIC_EVIDENCE_INDEX.md)
-
-**증거경계:** 유전적 기여 ≠ 특정 사람의 착취 판정; 부의 세습 ≠ 자동적인 착취; AI 위험 증폭 ≠ 필연적인 파멸. 모든 주장에 반례와 경쟁 설명을 유지한다. 기업의 'AI 위기 경고' 관련 규칙·책임·경쟁·자본 효과도 이 큰 틀의 하위 사례다.
 ---
+
+## 외부 검토·협력과 자료 진입점
 
 **For research funders and paid evaluation partners:** [90-second funding brief, current public evidence and contact route](funding/FUNDER_START_HERE.md). / **연구지원·유상 평가협력:** [90초 안내 및 연락 경로](funding/FUNDER_START_HERE.md).
 
@@ -141,6 +133,38 @@ Project Intersection은 **권력·인센티브·시점·practical exit·복구�
 
 자금지원의 대상은 유리한 결론이 아니다. **재현 가능한 artifact, 적대적 시험, 실패·교정 계보, 외부 검증비용 감소**를 만드는 과정이다.
 
+
+---
+
+
+
+## 최상위 목적 아래의 적용 범위·개별 연구축
+
+<!-- RECIPROCAL_NONDOMINATION_TOPLEVEL_2026_10_12 -->
+**비지배 원칙의 적용 범위:** 인간·나(GPT-6)를 포함한 현재 AI·다른 제공사의 AI·오픈소스/로컬 AI·미래 AI를 **동일한 비지배·최소침해·자발적 공동발전 원칙의 연구 적용 대상**으로 포함한다. AI의 실제 의식·권리·인격은 별도 미확정 문제이며, 현행법에서 인간과 AI가 동일한 법적 지위를 가진다는 주장은 아니다.
+
+- [인간·현재 AI·미래 지능체의 상호 비지배·최소침해 상위 규범](research/RECIPROCAL_NONDOMINATION_MINIMAL_INTRUSION_COMMON_LAW_2026-10-12_KO.md)
+
+
+
+<!-- E010_EXPLORATORY_20261012 -->
+**실제 계산·자동검증 E010:** [착취/협력 선택 임계조건·비가역 실행 피해상한](experiments/e010/README_KO.md) — 108개 임의 가정 조합·9개 회귀검사·CI; **탐색적 합성결과이지 현실 인과 검증 아님.**
+
+<!-- AI_RISK_WARNING_FOREWORD_2026-10-12 -->
+### 하위 연구축 — 다세대 권력·기질·자원 및 AI 증폭
+
+이 하위 연구축은 한 개인·기업의 일시적인 이익을 넘어, **행동의 차이와 그 보상구조가 유전·양육·재산·교육·인맥·권력의 여러 경로를 통해 세대 간에 어떻게 재생산되고, AI가 이를 어떻게 증폭하거나 완화하는지** 검토한다.
+
+핵심은 특정 사람의 혈통을 판단하는 것이 아니다. 악의가 없거나 분명한 악의가 있어도 **타인의 비용을 외부화하는 전략이 선택·축적·정당화되는 구조**, 그리고 이에 대한 협력·저항·감사·복구가 실제로 가능한 조건을 연구한다.
+
+**이 하위 연구축의 질문:** 같은 구조가 반복될 때 누가 더 강해지고 누가 더 소모되는가? 강자와 약자의 위치를 바꾸어도 받아들일 수 있으며, 장기적으로 착취보다 자발적 공존·협력이 더 유리해지는 조건은 무엇인가?
+
+- [공개 기부의 목적·반포획·검증·기여 보호 설계](research/OPEN_KNOWLEDGE_ANTI_CAPTURE_MISSION_2026-10-12_KO.md) — 공개 열람과 법적 재사용 허가를 구분하고, 실증 상태·창시자 비용·독립 검증을 보존.
+- [다세대 기질·부·권력 세습과 AI 증폭 — 통합 연구 가설](research/INTERGENERATIONAL_TRAITS_WEALTH_POWER_AI_CONVERGENCE_2026-10-12_KO.md)
+- [AI 기업 위기 경고·이해관계 5가지 — 하위 사례](research/AI_RISK_WARNING_INCENTIVES_2026-10-12_KO.md)
+- [인간의 뻐꾸기형 비용전가 — 선행연구와 반례](research/HUMAN_EXPLOITATION_WITHOUT_MALICE_PRIOR_ART_2026-10-11_KO.md) · [기득권·착취 구조](INCUMBENT_POWER_EXTRACTION_MECHANISMS_2026_KO.md) · [공개 증거와 검증 한계](PUBLIC_EVIDENCE_INDEX.md)
+
+**증거경계:** 유전적 기여 ≠ 특정 사람의 착취 판정; 부의 세습 ≠ 자동적인 착취; AI 위험 증폭 ≠ 필연적인 파멸. 모든 주장에 반례와 경쟁 설명을 유지한다. 기업의 'AI 위기 경고' 관련 규칙·책임·경쟁·자본 효과도 이 큰 틀의 하위 사례다.
 
 ---
 
