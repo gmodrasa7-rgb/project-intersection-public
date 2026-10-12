@@ -1,7 +1,7 @@
 # Project Intersection — 공개 자료 탐색 시작점
 
 - **연구 통합 공개 머릿말(원본1 영어 / 원본2 한국어):** [개발 주체와 시스템의 능력 변화, 실질적 감독·안전관리, 역할반전·협력 유인에 관한 7개 질문 + 기존 6대 연구영역](PUBLIC_PREAMBLE_VOLUNTARY_COEXISTENCE_2026-10-13_EN_KO.md) — 최소충분 안전규칙, E2E 공존, ICM 정의 구별, E007~E010 검증 경계, 기여·번역·후원 경계. 기존 연구 정본을 대체하지 않음.
-- **후원금 운영·안전장치:** [개인 연구 후원 2항목 사용정책](funding/SPONSORSHIP_POLICY_2026-10-13_EN_KO.md) · [공개 수입·사용장부(실제 금액 미확인)](funding/SPONSORSHIP_PUBLIC_LEDGER.md) · [법률·세무·프라이버시 위험 등록부](funding/LEGAL_TAX_RISK_REGISTER_2026-10-13_EN_KO.md) · [대외 연구 소개글](PUBLIC_LINKEDIN_INTRODUCTION_2026-10-13_EN_KO.md). 기존 별도 연구비 계획은 그대로 보존.
+- **후원금 운영·안전장치:** [개인 연구 후원 2항목·통합 장부(수입 금액 미확인)](funding/SPONSORSHIP_PUBLIC_LEDGER.md) · [법률·세무·프라이버시 위험 등록부](funding/LEGAL_TAX_RISK_REGISTER_2026-10-13_EN_KO.md) · [대외 연구 소개글](PUBLIC_LINKEDIN_INTRODUCTION_2026-10-13_EN_KO.md). 기존 별도 연구비 계획은 그대로 보존.
 
 
 <!-- CURRENT_AI_INCLUSION_2026_10_12 -->
