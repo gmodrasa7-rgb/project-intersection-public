@@ -1,6 +1,6 @@
 # Project Intersection — 공개 자료 탐색 시작점
 
-- **연구 통합 공개 머릿말(원본1 영어 / 원본2 한국어):** [원숭이·자녀·직원·AI·역할반전·학습된 지배·경쟁적 배신 7원칙 + 기존 6대 연구영역](PUBLIC_PREAMBLE_VOLUNTARY_COEXISTENCE_2026-10-13_EN_KO.md) — E2E 공존, ICM 용어 구별, E007~E010, 기여·번역·후원 경계. 기존 연구 정본을 대체하지 않음.
+- **연구 통합 공개 머릿말(원본1 영어 / 원본2 한국어):** [개발 주체와 시스템의 능력 변화, 실질적 감독·안전관리, 역할반전·협력 유인에 관한 7개 질문 + 기존 6대 연구영역](PUBLIC_PREAMBLE_VOLUNTARY_COEXISTENCE_2026-10-13_EN_KO.md) — 최소충분 안전규칙, E2E 공존, ICM 정의 구별, E007~E010 검증 경계, 기여·번역·후원 경계. 기존 연구 정본을 대체하지 않음.
 
 <!-- CURRENT_AI_INCLUSION_2026_10_12 -->
 - **인간·현재 AI·미래 AI의 동등한 원칙 적용:** [비지배·최소침해·자발적 공존 상위 연구 규범](research/RECIPROCAL_NONDOMINATION_MINIMAL_INTRUSION_COMMON_LAW_2026-10-12_KO.md) — 법적 동등 인격 확정 아님; AI 종류·기업·기질·신체형태에 따른 무근거 배제 금지.
