@@ -1,0 +1,120 @@
+{
+  "schema_version": "1.0",
+  "status": "SELF_RUN_SYNTHETIC_FALSIFICATION_NOT_EMPIRICAL_VALIDATION",
+  "model": "one_shot_extraction_and_irreversible_execution_budget",
+  "assumptions": {
+    "immediateCooperation": 0.35,
+    "oneTimeExtraction": 1.25,
+    "discountFactors": [
+      0.1,
+      0.5,
+      0.8,
+      0.95
+    ],
+    "futureRelationshipLoss": [
+      0,
+      0.12,
+      0.28
+    ],
+    "expectedSanctions": [
+      0,
+      0.2,
+      0.5
+    ],
+    "effectiveExitPrevention": [
+      0,
+      0.3,
+      0.8
+    ],
+    "note": "Synthetic one-shot appropriation versus continued production, not real-world calibrated economics."
+  },
+  "grid_size": 108,
+  "by_discount": [
+    {
+      "discount": 0.1,
+      "cooperate": 10,
+      "extract": 17,
+      "n": 27
+    },
+    {
+      "discount": 0.5,
+      "cooperate": 11,
+      "extract": 16,
+      "n": 27
+    },
+    {
+      "discount": 0.8,
+      "cooperate": 18,
+      "extract": 9,
+      "n": 27
+    },
+    {
+      "discount": 0.95,
+      "cooperate": 21,
+      "extract": 6,
+      "n": 27
+    }
+  ],
+  "cooperate_total": 60,
+  "extract_total": 48,
+  "counterexamples": {
+    "indefiniteHorizonWithoutCounterpartyValue": {
+      "cooperate": 6.999999999999994,
+      "extract": 7.899999999999993,
+      "threshold": 0.35,
+      "advantage": -0.8999999999999995,
+      "choice": "EXTRACT"
+    },
+    "longHorizonWithDependence": {
+      "cooperate": 6.999999999999994,
+      "extract": 2.579999999999998,
+      "threshold": 5.6699999999999955,
+      "advantage": 4.419999999999996,
+      "choice": "COOPERATE"
+    },
+    "shortHorizonWithExitProtection": {
+      "cooperate": 0.38888888888888884,
+      "extract": 0.2888888888888888,
+      "threshold": 0.35,
+      "advantage": 0.10000000000000003,
+      "choice": "COOPERATE"
+    }
+  },
+  "bounds": {
+    "delayed": {
+      "harmUpperBound": 150,
+      "protectedBudget": 2,
+      "withinBudget": false,
+      "maxRateIfOtherFixed": 0.26666666666666666
+    },
+    "perfectDetectionWithDelayedActuation": {
+      "harmUpperBound": 30,
+      "protectedBudget": 2,
+      "withinBudget": false,
+      "maxRateIfOtherFixed": 1.3333333333333333
+    },
+    "alternativeRateLimit": {
+      "harmUpperBound": 1.5,
+      "protectedBudget": 2,
+      "withinBudget": true,
+      "maxRateIfOtherFixed": 0.26666666666666666
+    }
+  },
+  "scarcity": {
+    "total": 1,
+    "required": 1.2,
+    "feasible": false
+  },
+  "tests": {
+    "longHorizonCanFavorCooperation": true,
+    "longHorizonNotEnoughWhenNoFutureBenefit": true,
+    "shortHorizonCanStillExtract": true,
+    "exitCanReverseIncentive": true,
+    "sanctionCanReverseIncentive": true,
+    "normativeFloorJointlyInfeasible": true,
+    "delayedMonitorUnsafe": true,
+    "instantDetectionNotSufficient": true,
+    "exactThresholdRecomputedOverAllCases": true
+  },
+  "claim_boundary": "Assumptions chosen by same project; exact analytic toy result not real-world measurement, cannot establish universal cooperation nor AI rights."
+}
