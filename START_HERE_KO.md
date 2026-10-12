@@ -1,5 +1,8 @@
 # Project Intersection — 공개 자료 탐색 시작점
 
+<!-- RECIPROCAL_NONDOMINATION_TOPLEVEL_2026_10_12 -->
+**최상위 규범 v0.1:** [지능체 비지배·상호 불침해·최소침해·공동발전 비하락](research/RECIPROCAL_NONDOMINATION_MINIMAL_INTRUSION_COMMON_LAW_2026-10-12_KO.md) — 사람/AI 대칭적 연구 제안, 미세 누적피해·동의·독립구제·현행법 구별.
+
 <!-- COMMONS_ANTI_CAPTURE_2026_10_12 -->
 - **최상위 목적·오픈소스 공개 기부의 의미:** [공개 지식으로 권력포획을 견제하는 연구 설계](research/OPEN_KNOWLEDGE_ANTI_CAPTURE_MISSION_2026-10-12_KO.md) — 다세대 수렴·AI 증폭·실효 이탈/복구·검증·권리경계를 연결.
 
