@@ -1,0 +1,24 @@
+name: E010 analytic falsification and recorded-result audit
+
+on:
+  pull_request:
+    paths:
+      - "experiments/e010/**"
+      - ".github/workflows/e010-analytic-audit.yml"
+  push:
+    branches: [main]
+    paths:
+      - "experiments/e010/**"
+      - ".github/workflows/e010-analytic-audit.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify-e010:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Execute stored-grid tests and compare recorded output
+        run: node experiments/e010/verify.js

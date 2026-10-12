@@ -1,5 +1,9 @@
 # Project Intersection — 공개 자료 탐색 시작점
 
+<!-- E010_EXPLORATORY_20261012 -->
+- **재현 가능한 반증 실험 E010:** [장기 협력/착취 손익·실행 지연·개체별 자원 최저선 충돌](experiments/e010/README_KO.md) — 108개 합성조건, 검증가능 코드, 실제 CI. 실증 아님.
+
+
 <!-- COMMONS_ANTI_CAPTURE_2026_10_12 -->
 - **최상위 목적·오픈소스 공개 기부의 의미:** [공개 지식으로 권력포획을 견제하는 연구 설계](research/OPEN_KNOWLEDGE_ANTI_CAPTURE_MISSION_2026-10-12_KO.md) — 다세대 수렴·AI 증폭·실효 이탈/복구·검증·권리경계를 연결.
 

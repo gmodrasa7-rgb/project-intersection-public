@@ -1,5 +1,9 @@
 # Project Intersection — AI-readable public research entry point
 
+## New executable counterexample (2026-10-12) / E010 탐색반증
+- [E010: incentive crossover and irreversible execution budget](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/experiments/e010/README_KO.md) — self-run deterministic 108 synthetic cases; nine code tests; not preregistered or empirical. Verify via [source](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/experiments/e010/run.js) and [stored JSON](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/experiments/e010/RESULT.json).
+
+
 ## Research mission and public commons / 연구 목적과 공개기부
 - [한국어: 공개 기부·반포획 연구 설계·반증·출처·실효 권리](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/research/OPEN_KNOWLEDGE_ANTI_CAPTURE_MISSION_2026-10-12_KO.md) — not empirical validation; human founder original research direction and protected attribution.
 - Repository is public/readable, but GitHub API reports no detected repository-wide license as of 2026-10-12. Public access is not a blanket reuse/training permission.

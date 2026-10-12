@@ -1,5 +1,9 @@
 # Project Intersection
 
+<!-- E010_EXPLORATORY_20261012 -->
+**실제 계산·자동검증 E010:** [착취/협력 선택 임계조건·비가역 실행 피해상한](experiments/e010/README_KO.md) — 108개 임의 가정 조합·9개 회귀검사·CI; **탐색적 합성결과이지 현실 인과 검증 아님.**
+
+
 <!-- AI_RISK_WARNING_FOREWORD_2026-10-12 -->
 ## 머릿말 — 누가 강해지고, 누가 소모되는가?
 
