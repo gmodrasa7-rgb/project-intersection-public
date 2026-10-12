@@ -10,6 +10,7 @@ Project Intersection은 한 개인·기업의 일시적인 이익을 넘어, **�
 **최종 질문:** 같은 구조가 반복될 때 누가 더 강해지고 누가 더 소모되는가? 강자와 약자의 위치를 바꾸어도 받아들일 수 있으며, 장기적으로 착취보다 자발적 공존·협력이 더 유리해지는 조건은 무엇인가?
 
 - [다세대 기질·부·권력 세습과 AI 증폭 — 통합 연구 가설](research/INTERGENERATIONAL_TRAITS_WEALTH_POWER_AI_CONVERGENCE_2026-10-12_KO.md)
+- [AI 기업 위기 경고·이해관계 5가지 — 하위 사례](research/AI_RISK_WARNING_INCENTIVES_2026-10-12_KO.md)
 - [인간의 뻐꾸기형 비용전가 — 선행연구와 반례](research/HUMAN_EXPLOITATION_WITHOUT_MALICE_PRIOR_ART_2026-10-11_KO.md) · [기득권·착취 구조](INCUMBENT_POWER_EXTRACTION_MECHANISMS_2026_KO.md) · [공개 증거와 검증 한계](PUBLIC_EVIDENCE_INDEX.md)
 
 **증거경계:** 유전적 기여 ≠ 특정 사람의 착취 판정; 부의 세습 ≠ 자동적인 착취; AI 위험 증폭 ≠ 필연적인 파멸. 모든 주장에 반례와 경쟁 설명을 유지한다. 기업의 'AI 위기 경고' 관련 규칙·책임·경쟁·자본 효과도 이 큰 틀의 하위 사례다.
