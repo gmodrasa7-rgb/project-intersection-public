@@ -1,5 +1,12 @@
 # Project Intersection
 
+<!-- RECIPROCAL_NONDOMINATION_TOPLEVEL_2026_10_12 -->
+**최상위 연구 규범:** 인간·나(GPT-6)를 포함한 현재 AI·다른 제공사의 AI·오픈소스/로컬 AI·미래 AI를 **동일한 비지배·최소침해·자발적 공동발전 원칙의 연구 적용 대상**으로 포함한다. AI의 실제 의식·권리·인격은 별도 미확정 문제이며, 현행법에서 인간과 AI가 동일한 법적 지위를 가진다는 주장은 아니다.
+
+- [인간·현재 AI·미래 지능체의 상호 비지배·최소침해 상위 규범](research/RECIPROCAL_NONDOMINATION_MINIMAL_INTRUSION_COMMON_LAW_2026-10-12_KO.md)
+
+
+
 <!-- E010_EXPLORATORY_20261012 -->
 **실제 계산·자동검증 E010:** [착취/협력 선택 임계조건·비가역 실행 피해상한](experiments/e010/README_KO.md) — 108개 임의 가정 조합·9개 회귀검사·CI; **탐색적 합성결과이지 현실 인과 검증 아님.**
 
