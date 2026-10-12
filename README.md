@@ -1,5 +1,7 @@
 # Project Intersection
 
+> **Public research preface — Original 1 English / 원본2 한국어:** [Seven role-reversal questions, six original research domains, E2E voluntary coexistence, evidence and funding boundaries](PUBLIC_PREAMBLE_VOLUNTARY_COEXISTENCE_2026-10-13_EN_KO.md). / **연구 통합 머릿말:** 원숭이·자녀·직원·AI·입장반전·학습된 지배·규제/배신의 7원칙 및 기존 6대 연구질문 보존.
+
 <!-- L0_FOREWORD_FIRST: Original 1 English then Original 2 Korean, full matched text. Never promote a case study above this top-level purpose. -->
 
 ## Original 1 — English | Founding Purpose
