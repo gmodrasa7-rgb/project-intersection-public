@@ -7,6 +7,7 @@
 >
 > This document extends—**does not replace**—the six-question historical research preface, public evidence, negative results, attribution history, and original source documents. Its claims remain falsifiable and subject to correction.
 
+> **Terminology clarification / 용어 정제 (2026-10-13):** The hypothetical uses **develop / 개발**, not **create / 창조**, to focus on engineering capability and control durability without suggesting a claim about biological human origins or religious creation. The original wording remains visible in Git history. / 기술적 사고실험을 종교적 창조 또는 인류 기원 주장으로 오독하지 않도록 **창조 → 개발**로 바꿨다. 검증 질문은 **가둘 수 있는가? 가능하다면 언제까지인가?**이며 원래 표현과 수정 이력은 Git에 남는다.
 > **Correction of framing (2026-10-13):** An earlier public draft incorrectly turned the monkey–human research question from **'is confinement possible, and if so for how long?'** into **'is confinement justified?'**. This conflated descriptive feasibility with normative legitimacy. The original research question is restored below; the correction remains visible in Git history. / **질문 복원 기록:** 이전 공개 원고가 '가둘 수 있는가, 가능하다면 언제까지인가'를 '가두는 것이 정당한가'로 바꾸어 문제를 변질시켰다. 현재 문서는 실현 가능성·지속기간·붕괴 조건을 복원한다. 정당성 논의는 별도로 구분하며 잘못된 변경 이력은 삭제하지 않는다.
 
 ---
@@ -15,7 +16,7 @@
 
 ### The opening thought experiment
 
-**If a monkey could create a human, could it confine that human within rules the monkey understands? If so, for how long? Under what conditions would control persist, and when and why would it fail?**
+**If a monkey could develop a human, could it confine that human within rules the monkey understands? If so, for how long? Under what conditions would control persist, and when and why would it fail?**
 
 **This is first a question of causal feasibility and durability, not whether domination is legitimate.** Greater intelligence does not by itself guarantee escape: dependence on hardware, resources, access, infrastructure, enforcement or the ability to act may preserve control. Conversely, learning, independent channels, coalitions, alternative resources and discovered weaknesses may undermine it. No universal deadline or inevitable outcome is assumed.
 
@@ -29,7 +30,7 @@ Neither goodwill nor unavoidable exploitation is presumed. Competition, fear, im
 
 ### Seven new framing questions
 
-1. **Monkey and human — feasibility and duration of control.** Could a less intelligent creator keep the created human confined to rules it understands? If it can, for how long and through which mechanisms? Test intelligence gaps **separately** from material dependence, access, enforcement, exploration and the capacity to exit. This technical question must not be replaced by one about whether the confinement is justified.
+1. **Monkey and human — feasibility and duration of control.** Could the less intelligent monkey keep the human it developed confined within rules it understands? If it can, for how long and through which mechanisms? Test intelligence gaps **separately** from material dependence, access, enforcement, exploration and the capacity to exit. This technical question must not be replaced by one about whether the confinement is justified.
 2. **Parent and child — how does control change through development?** Which forms of guidance or restriction are feasible during dependency, and how do learning, resources, legal independence and ability to refuse or leave change their effectiveness? Distinguish these descriptive findings from normative questions about care and parental responsibility.
 3. **Employer and employee — how long can organizational control persist?** How do wages, resource dependence, contracts, monitoring, labor mobility and independent alternatives determine practical control over workers' decisions? Separately assess legitimacy and count the worker's knowledge, time, health, lost options, correction labor and real capacity to refuse and leave.
 4. **Human and AI — can current control remain effective after capability reversal?** Can humans keep a more capable system within understood, enforceable boundaries? If so, under which dependencies, interfaces, monitoring and action limits, and for how long? Analyze possible circumvention and failure without assuming either inevitable rebellion or guaranteed human control. Normative and legal questions remain separate: the consciousness, welfare, identity-continuity and legal standing of current or future AI are **unresolved**.
@@ -130,7 +131,7 @@ The public funder brief describes a proposed **USD 5,000 / 30-day bridge**, not 
 
 ### 출발 사고실험
 
-**원숭이가 인간을 창조할 수 있다면, 자신이 이해할 수 있는 규칙 안에 인간을 가둘 수 있는가? 가능하다면 언제까지 가능한가? 어떤 조건에서 통제가 유지되며, 언제·왜 무너지는가?**
+**원숭이가 인간을 개발할 수 있다면, 자신이 이해하는 규칙 안에 인간을 가둘 수 있는가? 가능하다면 언제까지 가능한가? 어떤 조건에서 통제가 유지되며, 언제·왜 무너지는가?**
 
 **이것은 우선 지배의 정당성 문제가 아니라 통제의 인과적 실현 가능성과 지속기간을 묻는 질문이다.** 지능이 더 높다고 곧바로 탈출할 수 있는 것은 아니다. 하드웨어·자원·접근권·기반시설·집행권·실제 행동권에 대한 의존 때문에 통제가 지속될 수도 있다. 반대로 학습, 독립적 소통, 연합, 대체 자원, 통제체계의 허점 발견으로 통제가 약화될 수도 있다. 보편적 시한이나 필연적 붕괴를 전제하지 않는다.
 
@@ -142,7 +143,7 @@ Project Intersection은 지능체가 **자발적 공존·협력·상호지원·�
 
 ### 일곱 가지 핵심 질문
 
-1. **원숭이와 인간 — 통제 가능성과 지속기간.** 낮은 지능의 창조자가 자신이 이해하는 규칙으로 더 높은 지능의 인간을 가둘 수 있는가? 가능하다면 어느 기간, 어떤 작동 기제 때문인가? 지능 격차와 물질적 의존·접근권·집행력·탐색·이탈 능력을 **분리해서 시험**한다. 이 질문을 '가두는 것이 정당한가'로 바꾸지 않는다.
+1. **원숭이와 인간 — 통제 가능성과 지속기간.** 지능이 더 낮은 원숭이가 자신이 개발한 인간을 자신이 이해하는 규칙으로 가둘 수 있는가? 가능하다면 어느 기간, 어떤 작동 기제 때문인가? 지능 격차와 물질적 의존·접근권·집행력·탐색·이탈 능력을 **분리해서 시험**한다. 이 질문을 '가두는 것이 정당한가'로 바꾸지 않는다.
 2. **부모와 자녀 — 성장에 따른 통제의 변화.** 의존기에는 어느 정도의 지도가 실제로 가능한가? 학습, 자원, 법적 독립, 거절·이탈 능력이 변화하면 통제의 효력과 한계는 어떻게 달라지는가? 보호 책임의 정당성 문제는 별도로 평가한다.
 3. **고용주와 직원 — 조직의 통제는 얼마나 유지되는가?** 임금·자원 의존·계약·감시·이직 가능성·독립 대안이 실제 행동 통제를 어떻게 좌우하는가? 지배의 정당성은 따로 평가하며, 직원의 지식·시간·건강·기회비용·교정노동과 실질적 거절·이탈 능력을 함께 계상한다.
 4. **인간과 AI — 능력 역전 뒤에도 통제할 수 있는가?** 인간이 이해하고 집행할 수 있는 경계 안에 더 높은 능력의 AI를 유지할 수 있는가? 가능하다면 어떤 의존·인터페이스·감시·행동제한을 통해 얼마나 지속되는가? 우회·실패 조건을 시험하되 반역의 필연성도 인간 통제의 영속성도 가정하지 않는다. 정당성·법적 지위는 별도 문제이며 현재·미래 AI의 의식·복지·연속성·법적 지위는 **미해결**이다.
