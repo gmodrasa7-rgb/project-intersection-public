@@ -43,7 +43,7 @@ The strongest currently public computational artifact is [E007 timing sensitivit
 
 ### Current funding state
 
-- **Secured external funding: 0.**
+- **External grants: no awarded funding evidenced in the last review. Individual GitHub Sponsors receipts are unverified** pending transaction/payout reconciliation; this does not assert a zero lifetime sponsor balance.
 - GitHub Sponsors: **approved according to the researcher's update on 2026-10-13** (not independently verified in this document). Approval is not counted as revenue; payments and deposits have not been reconciled. See [public ledger](SPONSORSHIP_PUBLIC_LEDGER.md).
 - A **USD 5,000 / 30-day** Manifund bridge package has been prepared as a draft / ready-to-publish funding request, not as an awarded grant.
 - A **KRW 18,000,000 / 90-day** pilot package has been prepared as a follow-on plan, not as secured funding.
@@ -117,7 +117,7 @@ Project Intersection은 권력·인센티브·시점·practical exit·복구능�
 
 ### 현재 자금상태
 
-- **실제 확보 외부자금: 0.**
+- **외부 연구그랜트: 마지막 검토에서 수여 증거 없음. GitHub Sponsors 후원 수입·입금은 검증 전**이며 평생 수령액을 0원으로 확정한 뜻이 아니다.
 - GitHub Sponsors는 **2026-10-13 연구자 확인에 따르면 승인 완료** 상태다. 승인 자체는 수입이 아니며 실제 거래·입금은 미확인이다. [공개 장부](SPONSORSHIP_PUBLIC_LEDGER.md)를 참조한다.
 - **USD 5,000 / 30일** Manifund 브리지 패키지는 초안 / 게시준비 상태이며 수여된 그랜트가 아니다.
 - **KRW 18,000,000 / 90일** 파일럿 패키지는 후속 계획이며 확보자금이 아니다.

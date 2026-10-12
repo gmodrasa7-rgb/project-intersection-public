@@ -1,0 +1,35 @@
+name: Public sponsorship integrity
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "funding/**"
+      - "PUBLIC_LINKEDIN_INTRODUCTION_2026-10-13_EN_KO.md"
+      - "README.md"
+      - "START_HERE_KO.md"
+      - "tools/check_public_sponsorship.py"
+      - ".github/workflows/public-sponsorship-integrity.yml"
+  pull_request:
+    paths:
+      - "funding/**"
+      - "PUBLIC_LINKEDIN_INTRODUCTION_2026-10-13_EN_KO.md"
+      - "README.md"
+      - "START_HERE_KO.md"
+      - "tools/check_public_sponsorship.py"
+      - ".github/workflows/public-sponsorship-integrity.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Validate public financial disclosure only
+        run: python3 tools/check_public_sponsorship.py

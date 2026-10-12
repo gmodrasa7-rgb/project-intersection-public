@@ -47,7 +47,7 @@ Sponsor-account approval is user-reported; funds and payouts were not verified h
 **Control:** Use "approved (per researcher report)" for sponsor status and "UNVERIFIED" for actual transactions until reconciled. Keep [evidence classes](../PUBLIC_EVIDENCE_INDEX.md) and failure E009 accessible. Never invent beneficiaries, supporter counts, receipts or independent reviewers.
 
 ### R08 — Public promises, perks and liabilities (MEDIUM)
-A generic research sponsorship should not promise guaranteed publication dates, exact discoveries, guaranteed investment returns, exclusive data, paid services or refunds unless explicit written terms and legal obligations have been reviewed. Offering special perks or services can affect how payments are legally classified.
+A generic research sponsorship should not promise guaranteed publication dates, exact discoveries, guaranteed financial returns, exclusive data, paid services or refunds unless explicit written terms and legal obligations have been reviewed. Offering special perks or services can affect how payments are legally classified.
 
 **Control:** State realistic update cadence and limitations, reserve necessary private materials, and distinguish donation/support, grants and paid contracts. Update policy prospectively, with previous versions in Git history.
 
@@ -102,6 +102,23 @@ Selective quoting may transform hypothetical feasibility questions into implied 
 **가장 보수적인 실행 순서:** ① 공개 설명은 정확한 목적·면책 범위로 제한 ② 플랫폼 결제/지급 내역의 비공개 보관과 월별 익명 공개장부 준비 ③ 수입이 실제 발생할 때 소득·사업자등록·세금 문제 확인 ④ 국내 기부금품 모집 등록 적용 가능성과 모집 규모가 커지기 전 등록·유권해석 경로 확인 ⑤ 공적 세액공제 영수증이나 무제한 재사용 허용처럼 검증되지 않은 약속을 하지 않음.
 
 **이 문서는 개인별 법률·세무 적법성에 대한 확정 의견이 아니다.** 연구자를 보호하려면 미해결 지점을 '해결 완료'라고 표현하지 않는 것이 필요하다.
+
+## Supplemental statutory verification — 2026-10-13 / 개정법령 재점검
+
+The prior 2019 administrative interpretation cited below relates to **the earlier statutory wording** and must not be presented as a binding determination of this individual case. The 2024 revision explicitly defines "donation" by public-purpose and no-consideration requirements; it names **education and scientific advancement**, and expressly includes solicitation through an **information and communications network**. The consolidated law's Article 4 and implementing decree's Article 2 specify the **KRW 10 million collection-registration threshold** for transactions within scope. Threshold alone does not classify each sponsorship as regulated fundraising; actual consideration, public-purpose scope, person, activity, period and statutory exemptions require separate assessment.
+
+**Decision gate:** (1) classify whether the supporter receives a specific good/service/perk or gives without consideration; (2) distinguish genuine research public benefit from private benefit and existing contracts; (3) track rolling collection/solicitation amounts in private records; (4) obtain a documented determination of registration eligibility and applicable rules from the competent Korean local authority or qualified adviser **before any regulated public campaign would require registration**; (5) determine Korean income-tax / VAT treatment independently; (6) never misstate GitHub approval as a Korean legal authorization.
+
+**공식 근거의 정확한 의미:** 2024년 개정법 제2조는 기부를 **공익목적·반대급부 없는 출연**으로 정의하고, 과학 등의 진흥 및 **정보통신망 모집**을 명시한다. 제4조와 시행령 제2조의 **1천만원 등록 기준은 법 적용 대상 모집에 대한 기준**이며 모든 GitHub Sponsors 수입이 자동으로 등록 대상이거나 자동으로 면제된다는 결론을 뜻하지 않는다. 2019년 해석례는 **개정 전 법령에 관한 역사적 참고자료**이다. 후원별 반대급부·목적·소득의 성격·총액·모집 기간을 실제 사실관계로 판단하고, 등록이 필요한 상황 이전에 관할 등록청 또는 적격 법률전문가의 구체 판단을 확보해야 한다.
+
+**Official sources / 공적 근거**
+- Revised definition and digital solicitation, Act Article 2: https://www.law.go.kr/LSW/lsLinkCommonInfo.do?chrClsCd=010202&lsJoLnkSeq=1026285913
+- Act Article 4, threshold and registration: https://law.go.kr/LSW/lsLinkCommonInfo.do?chrClsCd=010202&lsJoLnkSeq=1024892519
+- Enforcement Decree Article 2, threshold and registering authority: https://law.go.kr/LSW/lsInfoP.do?lsiSeq=264231
+- GitHub Sponsors tax obligations and general non-deductibility: https://docs.github.com/en/sponsors/receiving-sponsorships-through-github-sponsors/tax-information-for-github-sponsors
+- GitHub Sponsors transaction export: https://docs.github.com/en/sponsors/receiving-sponsorships-through-github-sponsors/viewing-your-sponsors-and-sponsorships
+
+**Limit:** These links evidence published provisions examined on the review date. The reviewer has not obtained an individualized Korean administrative determination or a full professional review of amendments effective after the versions displayed by the official pages.
 
 ## Primary official sources / 공적·공식 근거
 
