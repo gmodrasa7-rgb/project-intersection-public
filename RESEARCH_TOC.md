@@ -1,5 +1,7 @@
 # Public Navigation Layer / 공개 탐색층
 
+**Research roadmap v0.1 / 연구 순환 6단계:** [English Original 1 · 한국어 원본2](research/RESEARCH_ROADMAP_v0_1_EN_KO.md) — theory framing → prior work → scoped search saturation → critical reuse → contributor attribution → falsifiable new research; multiple-AI review, public updates, two-use sponsor budget. **PROCESS DESIGN / NOT SIX-STAGE EXECUTION**.
+
 **ICM independent-choice and evidence anti-capture audit (PUBLIC / HOLD):** [Original 1 English](research/ICM_INDEPENDENT_CHOICE_AUDIT_2026-10-13_EN.md) · [원본2 한국어](research/ICM_INDEPENDENT_CHOICE_AUDIT_2026-10-13_KO.md) — central access support versus veto power, independently achievable choices, privacy and falsification; not a functioning infrastructure or validated theory.
 
 <!-- E010_EXPLORATORY_20261012 -->
