@@ -9,7 +9,7 @@
 
 ### Project Intersection: Intelligence, Safety, and Voluntary Coexistence
 
-Suppose a developer develops a system that eventually becomes more capable than the developer originally anticipated. Can the developer continue to maintain effective operating boundaries? **If so, for how long, under which conditions, and what causes the boundaries to stop working?**
+Suppose a developer builds a system that eventually becomes more capable than the developer originally anticipated. Can the developer continue to maintain effective operating boundaries? **If so, for how long, under which conditions, and what causes the boundaries to stop working?**
 
 This question also arises whenever people or organizations differ in experience, information, resources, or decision-making authority. Project Intersection is an independent research initiative based in South Korea that explores when intelligent systems and their human counterparts can choose **safety, meaningful autonomy, cooperation, mutual support, and peaceful coexistence** through their own long-term interests.
 
@@ -21,8 +21,16 @@ The program asks how capability development changes oversight, how meaningful al
 
 An underlying research question is whether the interests of independent entities can overlap enough to make cooperation a sustainable choice. But cooperation is **not** assumed to win in all situations. Independent observations, hidden costs, genuine ability to decline, and recoverability can change outcomes.
 
+### A concrete research question: what makes choice and cooperation real?
+
+One project term is **ICM — Intersection of Minimum Self-Interest**: the search for conditions under which independent participants, with different interests, still find that protecting one another's basic options benefits them in the long run. The research distinguishes **a safety rule that prevents actual harm** from a rule that unnecessarily removes lawful alternatives. This is a hypothesis and evaluation target, not a proven formula.
+
+An important test is whether accessible shared research/evidence services actually **expand people's meaningful choices and ability to verify contributions**, or instead create a central authorization bottleneck that can deny participation, retain sensitive records or block independent appeal. The same test applies when a system's capabilities or authority change. We propose to compare simple decentralized baselines with more integrated candidates, count effective refusal/exit/recovery and independent evidence access, and record unobserved outcomes as **UNKNOWN rather than zero**. This remains an **unexecuted design question**, not an available product.
+
+**Research definition and prior-art audit:** https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/research/ICM_INDEPENDENT_CHOICE_AUDIT_2026-10-13_EN.md
+
 ### Work that can already be examined
-The public project contains reproducible **synthetic** timing-related work (E007), an **uncompleted preregistered** role-reversal specification (E008), a **negative synthetic** test in which a more complex candidate failed its stated criterion (E009), and **exploratory synthetic** long-horizon counterexamples (E010). These are limited research artifacts, **not** independent external scientific replication or a universal proven theory.
+The public project contains reproducible **synthetic** timing-related work ([E007](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/E007_TIMING_RESULT.md)), an **uncompleted preregistered** role-reversal specification ([E008](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/experiments/e008/README.md)), a **negative synthetic** test in which a more complex candidate was **42.35% worse in mean regret** than a simple baseline ([E009](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/experiments/e009/RESULT.md)), and a **posthoc exploratory synthetic** grid of 108 selected cases with 60 cooperative and 48 extractive decisions ([E010](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/experiments/e010/README_KO.md)). These are limited research artifacts, **not** independent external scientific replication or a universal proven theory.
 
 The research began primarily through Korean-language collaboration between the human founder and large language models. The human researcher contributed questions, directions, problem framing, counterexamples, corrections, and final judgments. LLMs helped organize research, translate, draft, code, and critique. Original contribution, external prior literature, and AI assistance are kept distinct.
 
@@ -66,8 +74,16 @@ Separate grants or paid research contracts are tracked under their **own approve
 
 독립된 참여자의 이익 사이에 자발적 협력을 지속하게 만드는 교집합이 존재하는지를 찾습니다. 그러나 **협력이 언제나 우월하다고 전제하지 않습니다.** 관측의 독립성·보이지 않는 비용·실질적 거절권·복구 가능성에 따라 결과가 달라질 수 있습니다.
 
+### 실효적인 선택과 협력을 어떻게 검증하는가?
+
+연구 개념 중 하나는 **ICM — 최소 사심 교집합(Intersection of Minimum Self-Interest)**이다. 서로 다른 이해관계를 가진 개체들이 각자의 이익을 추구하면서도 타자의 기본 선택권을 보존할 이유가 생기는 조건을 찾는다. 동시에 **실제 피해를 방지하는 안전규칙**과 정당한 대안을 불필요하게 제거하는 규칙을 구별한다. 이는 검증할 연구목표이지 완성된 수학법칙이 아니다.
+
+중요한 적용 질문은 공통 연구지원·증거기반이 **실제 접근성 및 기여 입증을 높이는지**, 아니면 단일 운영자의 허가 거부·사생활 기록 독점·독립 심사 차단을 초래하는지다. 능력·권한이 변할 때도 동일하게 시험해야 한다. 단순하고 독립적인 기존 방식을 기준으로 통합 후보를 비교하며, 실질적인 거절·이탈·복구·증거 접근을 측정한다. 관측하지 못한 결과는 **0이 아니라 UNKNOWN**으로 남긴다. 현재는 **미실행 설계 가설**이며 운영 중인 제품이 아니다.
+
+**반증 중심 연구·선행연구 검토:** https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/research/ICM_INDEPENDENT_CHOICE_AUDIT_2026-10-13_KO.md
+
 ### 공개된 연구의 검증 수준
-E007은 재현 가능한 **합성 계산결과**, E008은 **실험 결과가 아직 없는 사전등록 명세**, E009는 복잡한 후보가 기준을 통과하지 못한 **부정적 합성결과**, E010은 장기 유인에 관한 **탐색적 합성 반례**입니다. 외부 독립 과학복제나 보편적 공존 이론의 현실검증이 완료됐다고 주장하지 않습니다.
+[E007](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/E007_TIMING_RESULT.md)은 재현 가능한 **합성 계산결과**, [E008](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/experiments/e008/README.md)은 **실험 결과가 아직 없는 사전등록 명세**, [E009](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/experiments/e009/RESULT.md)는 복잡한 후보의 평균 regret이 단순 기준보다 **약 42.35% 나빴던 부정적 합성결과**, [E010](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/experiments/e010/README_KO.md)은 임의 선택한 **108개 탐색적 합성 조건 중 협력 60·착취 48**이라는 모형 결과입니다. 외부 독립 과학복제나 보편적 공존 이론의 현실검증이 완료됐다고 주장하지 않습니다.
 
 연구는 주로 인간 연구자와 LLM의 한국어 소통에서 발전했습니다. 인간 연구자는 문제 발견·연구 방향·반례·교정·최종 판단에 기여했고, LLM은 문헌 정리·번역·작성·코딩·비판적 검토를 보조했습니다. 원기여와 외부 선행연구, AI 보조 작업은 구분합니다.
 
