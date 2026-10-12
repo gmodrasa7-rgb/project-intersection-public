@@ -7,6 +7,16 @@
 
 ## Original 1 — English
 
+### 0. Research integrity under current AI and resource constraints — applies to every stage
+
+Project Intersection explicitly accounts for **current LLM reasoning and performance limitations; insufficient research capital; shallow, truncated or incomplete outputs resulting from limited token and computational budgets; hallucinations; finite context windows; context loss between sessions; fragmented research records; duplicated and tangled documentation; performance differences between models; and the risk of recurrent, compounding errors**.
+
+These are **distinct failure causes**, not a single alleged defect of all AI systems. Research capital and token limits constrain how much searching, checking and reasoning can actually be performed; long responses or more tokens alone do not establish truth or scientific quality. No research stage may be marked complete merely because an AI asserts completion.
+
+**Cross-stage failure controls:** retrieve the canonical source and earlier failures before proposing changes; track a source-linked claim and an explicit UNKNOWN status when evidence is missing; divide work into bounded, independently checkable units; preserve concise, versioned checkpoints with unresolved questions and next tests; avoid duplicate canonical documents; check register/index paths and cross-model disagreements; perform minimal regression checks and read-back after edits; and record correction or rollback when a change reduces accuracy or independent recoverability. Record model/provider/version when known, actual token or budget constraints when available, and any limitations of inaccessible or unexecuted verification. **Do not fabricate cost/token measurements.**
+
+**Improvement criterion:** promote a change only when its benefit over the current simple baseline is evidenced by reproducible accuracy, source traceability, recovery quality or reduced time/cost, **without hiding failures or shifting verification labor to the researcher**. A successful GitHub check establishes only the gate it tests, not broad research validity.
+
 ### 1. Objective and six-stage research cycle
 
 The research investigates when actors with different interests and changing capabilities preserve their own and each other's continued existence, agency, effective refusal/exit, recovery, cooperation and future options—and which conditions favor extraction or exclusion instead. **Normative protection aims** and **empirical claims** are distinct; cooperation's superiority is not assumed.
@@ -44,6 +54,16 @@ Distinguish **FACT / PRIOR_ART / HYPOTHESIS / DESIGN / SYNTHETIC_RESULT / PROJEC
 ---
 
 ## 원본2 — 한국어
+
+### 0. 현행 AI 성능·연구 자원 제약을 고려한 연구 무결성·연속성 원칙 — 모든 단계에 적용
+
+Project Intersection은 **현재 LLM의 추론·성능 한계, 연구 자본 부족, 제한된 토큰·연산 예산으로 인한 저밀도·축약·누락·미완성 결과물, 할루시네이션, 컨텍스트 윈도우 제한, 세션 간 맥락 손실, 연구자료 파편화, 중복과 스파게티화, 모델별 성능 차이, 오류의 반복·누적 가능성**을 명시적으로 고려한다.
+
+이는 **서로 다른 원인의 실패 요인**이다. 연구 자금·토큰 한계는 실제 조사·추론·검수 범위를 좁힐 수 있으며, 토큰이나 답변 길이를 늘리는 것만으로 정확성·과학성이 입증되지는 않는다. **AI의 완료 선언만으로 연구 단계가 완료된 것으로 취급하지 않는다.**
+
+**전 단계 공통 방호:** 새 작업 전에 기존 정본·원출처·실패 이력 확인 → 주장별 근거 연결 및 결측 시 UNKNOWN 기록 → 검증 가능한 작은 단위로 분할 → 미해결·다음 시험을 포함한 버전별 체크포인트 저장 → 중복 정본 생성 방지 → 색인·등록부·참조와 모델 간 불일치 대조 → 최소 회귀검사 및 저장 후 재조회 → 오류 발견 시 이력을 남긴 교정·롤백. 실제 확인 가능한 경우 모델·제공자·버전과 토큰·예산 제한을 기록하되 **측정하지 않은 비용·토큰을 꾸며내지 않는다.**
+
+**개선 판정:** 기존의 단순 기준과 비교해 재현 가능한 정확도·출처 추적·세션 간 복원·시간 및 비용이 실제로 개선되는 경우에만 승격한다. 실패를 은폐하거나 검증 노동을 연구자에게 떠넘긴 개선은 인정하지 않는다. GitHub 자동검사 통과는 해당 검사 범위의 통과이지 보편적인 연구 타당성의 증명이 아니다.
 
 ### 1. 연구 목적과 6단계 순환
 
