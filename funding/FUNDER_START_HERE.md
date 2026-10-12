@@ -31,7 +31,7 @@ A first-time reviewer can reproduce the released artifacts through the [Public R
 The 30-day outcome is a narrower independently attackable evidence package, a known-failure record, and a reasoned continuation/narrowing/hold decision. Negative findings are legitimate outcomes. The [90-day pilot](90_DAY_PILOT.md) is a **separate, unawarded** follow-on proposal.
 
 **No double funding:** every accepted grant will trigger an overlap check before spending; a cost funded in one route cannot be charged again elsewhere. Funding neither validates the scientific hypothesis nor settles any past contribution/compensation dispute.
-**Separate individual sponsorship route:** [policy: research-time support + LLM services](SPONSORSHIP_POLICY_2026-10-13_EN_KO.md); [public ledger](SPONSORSHIP_PUBLIC_LEDGER.md); [Korean legal/tax uncertainties](LEGAL_TAX_RISK_REGISTER_2026-10-13_EN_KO.md). This route does **not** retroactively alter the 30-day USD 5,000 proposal's four-item budget. GitHub Sponsors approval was reported by the researcher on 2026-10-13; actual transactions/payouts have **not** been verified in this audit. / **개인 후원 2항목과 별도 연구비 제안 4항목을 혼동하지 않으며, 금전 수령·세액공제·규제면제는 확인되지 않았다.**
+**Separate individual sponsorship route:** [single two-use policy and ledger](SPONSORSHIP_PUBLIC_LEDGER.md); [Korean legal/tax uncertainties](LEGAL_TAX_RISK_REGISTER_2026-10-13_EN_KO.md). This route does **not** retroactively alter the 30-day USD 5,000 proposal's four-item budget. GitHub Sponsors approval was reported by the researcher on 2026-10-13; actual transactions/payouts have **not** been verified in this audit. / **개인 후원 2항목과 별도 연구비 제안 4항목을 혼동하지 않으며, 금전 수령·세액공제·규제면제는 확인되지 않았다.**
 
 
 ## Contact / actionable next step for funders

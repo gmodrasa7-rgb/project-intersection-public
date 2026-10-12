@@ -4,7 +4,7 @@
 Status date / 상태 기준일: **2026-10-04**
 
 **Fastest funder review / 외부 지원자 90초 시작:** [Funder brief, evidence, negative result and contact route / 90초 자금지원 안내](FUNDER_START_HERE.md).
-**New individual sponsorship governance / 개인 연구 후원 운영기준 (2026-10-13):** [Two-use sponsorship policy](SPONSORSHIP_POLICY_2026-10-13_EN_KO.md) · [Public income/use ledger](SPONSORSHIP_PUBLIC_LEDGER.md) · [Legal/tax risk register](LEGAL_TAX_RISK_REGISTER_2026-10-13_EN_KO.md). / **신규 개인 후원**은 연구자 연구시간 보수와 LLM 비용 두 항목을 우선 사용한다. 별도 **30일 연구비 제안**의 4개 항목, **90일 파일럿**, 유상 계약은 다른 재원으로 유지하며 이중계상을 금지한다. 개인 Sponsors 거래액·입금액은 원자료 미확인 상태로 0이라고 단정하지 않는다.
+**New individual sponsorship governance / 개인 연구 후원 운영기준 (2026-10-13):** [One canonical two-use policy + public ledger](SPONSORSHIP_PUBLIC_LEDGER.md) · [Legal/tax risk register](LEGAL_TAX_RISK_REGISTER_2026-10-13_EN_KO.md). / **신규 개인 후원**의 자율적 사용처는 연구자 1인 인건비와 LLM 사용료의 두 가지로 한정한다. 별도 **30일 연구비 제안**의 4개 항목, **90일 파일럿**, 유상 계약은 다른 재원으로 유지하며 이중계상을 금지한다. 개인 Sponsors 거래액·입금액은 원자료 미확인 상태로 0이라고 단정하지 않는다.
 
 
 > **This page describes research funding, sponsorship, and research-partnership needs. Planned or requested funding is never counted as secured funding.**
@@ -56,7 +56,7 @@ For the current funding boundaries, evidence requirements, IP/licensing status, 
 
 Funding is intended to convert private research labor and partially public research state into a smaller set of externally checkable artifacts.
 
-Priority spending categories:
+Priority spending categories for **separate research grants and paid partnerships (not individual GitHub Sponsors)**:
 
 1. protected research and engineering time;
 2. API / compute / tooling;
@@ -130,7 +130,7 @@ Project Intersection은 권력·인센티브·시점·practical exit·복구능�
 
 자금의 목적은 비공개 연구노동과 부분 공개 상태를 더 적은 수의 외부 검증가능 artifact로 전환하는 것이다.
 
-우선 사용범위:
+**별도 연구그랜트·유상협업 예산(개인 Sponsors 후원금과 다름)**의 우선 사용범위:
 
 1. 보호된 연구·엔지니어링 시간;
 2. API / compute / 도구비;

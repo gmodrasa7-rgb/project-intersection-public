@@ -29,7 +29,7 @@ The research began primarily through Korean-language collaboration between the h
 ### Why independent research support matters
 The individual researcher reports working **full-time without current research compensation**. Continued progress requires sustainable research time and access to LLM services.
 
-**New individual GitHub Sponsors support has two intended primary uses:**
+**Individual GitHub Sponsors support is limited to two discretionary research uses:**
 1. **Reasonable support for the researcher's working time**, including investigation, experiment design, analysis, checking and documenting results.
 2. **LLM subscriptions and usage fees** for research, investigation, analysis, experiments, verification, and continuing research development.
 
@@ -41,8 +41,7 @@ Separate grants or paid research contracts are tracked under their **own approve
 
 **Public research:** https://github.com/gmodrasa7-rgb/project-intersection-public  
 **Evidence and review:** https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/PUBLIC_REVIEW_PACKET.md  
-**Public sponsorship ledger:** https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/funding/SPONSORSHIP_PUBLIC_LEDGER.md  
-**Sponsorship policy:** https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/funding/SPONSORSHIP_POLICY_2026-10-13_EN_KO.md  
+**Single sponsorship policy and ledger:** https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/funding/SPONSORSHIP_PUBLIC_LEDGER.md  
 **Support:** https://github.com/sponsors/gmodrasa7-rgb
 
 **Central question:** Under what conditions can increasing capability, accountable safety, autonomy and voluntary cooperation continue advancing together?
@@ -73,7 +72,7 @@ E007은 재현 가능한 **합성 계산결과**, E008은 **실험 결과가 아
 ### 전업 독립 연구의 지속을 위한 지원
 연구자는 현재 **전업으로 연구하고 있으나 연구에 대한 보수를 받지 못하고 있다고 밝힙니다**. 지속적인 전진에는 연구시간의 경제적 기반과 LLM 사용비용이 필요합니다.
 
-**신규 개인 GitHub Sponsors 후원금의 초기 두 가지 우선 사용처는 다음과 같습니다.**
+**개인 GitHub Sponsors 후원금의 사용처는 다음 두 가지로 한정합니다.**
 
 1. **독립 연구자 1인의 적정 연구 수행 보수:** 조사·연구·실험 설계·분석·검증·교정·공개문서 작성에 투입하는 시간.
 2. **LLM 구독 및 사용비용:** 연구·조사·분석·실험·검증 및 **지속적인 연구 발전**에 필요한 AI 서비스 구독료와 사용료.
@@ -86,8 +85,7 @@ E007은 재현 가능한 **합성 계산결과**, E008은 **실험 결과가 아
 
 **공개 연구:** https://github.com/gmodrasa7-rgb/project-intersection-public  
 **연구 증거·검토:** https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/PUBLIC_REVIEW_PACKET.md  
-**공개 후원금 장부:** https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/funding/SPONSORSHIP_PUBLIC_LEDGER.md  
-**후원금 사용·공개정책:** https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/funding/SPONSORSHIP_POLICY_2026-10-13_EN_KO.md  
+**개인 후원 사용원칙·단일 공개장부:** https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/funding/SPONSORSHIP_PUBLIC_LEDGER.md  
 **독립 연구 후원:** https://github.com/sponsors/gmodrasa7-rgb
 
 **최종 질문:** 지능이 발전하면서 안전·자율성·자발적 협력도 함께 발전할 조건은 무엇인가?

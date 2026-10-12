@@ -37,9 +37,9 @@ Git history is durable; once a sensitive record is pushed, removing it in later 
 **Control:** Publish only privacy-preserving monthly aggregates and spending categories; keep unredacted source documents offline/private. Apply a separate review before any financial-document upload. Avoid identifying anonymous sponsors or their tier. Do not claim a private donor consented to public attribution.
 
 ### R06 — Budget conflict and duplicate-charge accusation (HIGH)
-The published [30-day bridge](30_DAY_BRIDGE.md) has **four intended categories** (USD 3,200 time; 1,000 API; 500 outside review; 300 documentation), while new individual sponsorship policy prioritizes **two** categories (researcher's time and LLM). Historical grant drafts remain unawarded; silently rewriting them would conceal history.
+The published [30-day bridge](30_DAY_BRIDGE.md) has **four intended categories** (USD 3,200 time; 1,000 API; 500 outside review; 300 documentation), while individual sponsorship policy limits **discretionary spending to two** categories (researcher's time and LLM). Historical grant drafts remain unawarded; silently rewriting them would conceal history.
 
-**Control:** Maintain distinct income streams, authorized scope and expense allocation. No same service, subscription or research hour twice. Grant-restricted expenditure must follow its **own written contract**, not a generic sponsor message. Record restrictions and proposed budget changes openly. See [policy](SPONSORSHIP_POLICY_2026-10-13_EN_KO.md).
+**Control:** Maintain distinct income streams, authorized scope and expense allocation. No same service, subscription or research hour twice. Grant-restricted expenditure must follow its **own written contract**, not a generic sponsor message. Record restrictions and proposed budget changes openly. See [single policy and ledger](SPONSORSHIP_PUBLIC_LEDGER.md).
 
 ### R07 — Unsupported payment, results or sponsor-status claims (HIGH)
 Sponsor-account approval is user-reported; funds and payouts were not verified here. A funding proposal does not mean a grant has been awarded. Synthetic tests do not constitute external empirical validation, and external review invitations do not establish actual independent review.
