@@ -100,7 +100,7 @@ H_exposure = q*(τ_o+τ_e)*(1-r)
 
 - Sugaya & Wolitzky (2023), *Monitoring versus Discounting in Repeated Games*, Econometrica. https://doi.org/10.3982/ECTA20206 — 모니터링 정확성과 할인률의 전략 상호작용.
 - Tsodikovich, Venel & Zseleva (2024), *Folk theorems in repeated games with switching costs*, Games and Economic Behavior. https://doi.org/10.1016/j.geb.2024.05.006 — 이탈·전환 비용과 반복게임의 균형.
-- Paccagnan et al. (2024), *Resolving social dilemmas with minimal reward transfer*, Autonomous Agents and Multi-Agent Systems. https://doi.org/10.1007/s10458-024-09675-4 — 보상을 통한 협력 유인 설계.
+- Willis, Du, Leibo & Luck (2024), *Resolving social dilemmas with minimal reward transfer*, Autonomous Agents and Multi-Agent Systems. https://doi.org/10.1007/s10458-024-09675-4 — 보상을 통한 협력 유인 설계.
 - Metcalf (2025/2026), *AI safety and regulatory capture*, AI & Society. https://doi.org/10.1007/s00146-025-02534-0 — 안전 규칙 자체의 포획 위험.
 - Huang, Xiao & Vishnoi (2026), *Delegation And Verification Under AI*, Yale Cowles DP 2500. https://cowles.yale.edu/research/cfdp-2500-delegation-and-verification-under-ai — 검증 능력의 작은 차이가 위임 행동을 크게 바꿀 수 있음.
 
