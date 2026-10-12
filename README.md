@@ -97,6 +97,8 @@ Current concrete state: E007 has a released synthetic computational result; E008
 
 [Full bilingual evidence and funding guide / 영어·한국어 증거·후원 상세안내](START_HERE_EVIDENCE_FUNDING_BILINGUAL.md)
 
+**Essential preserved navigation / 필수 연구 경로:** [RESEARCH_STATUS_POLICY.md](RESEARCH_STATUS_POLICY.md).
+
 **Verify:** [Public review packet](PUBLIC_REVIEW_PACKET.md) · [Evidence index](PUBLIC_EVIDENCE_INDEX.md) · [Knowledge graph explorer](knowledge/explorer.html) · [E008 preregistration](experiments/e008/README.md).
 
 **Funding:** [Research partnership guide](funding/README.md) · [Personal sponsorship ledger](funding/SPONSORSHIP_PUBLIC_LEDGER.md). The previous grant review had no confirmed award; personal sponsorship payments remain **unverified**.
