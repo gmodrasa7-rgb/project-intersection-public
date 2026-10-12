@@ -23,7 +23,8 @@
     "intergenerational_ai_feedback": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/research/INTERGENERATIONAL_TRAITS_WEALTH_POWER_AI_CONVERGENCE_2026-10-12_KO.md",
     "ai_risk_warning_incentives": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/research/AI_RISK_WARNING_INCENTIVES_2026-10-12_KO.md",
     "public_study_navigation": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/START_HERE_KO.md",
-    "public_commons_mission": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/research/OPEN_KNOWLEDGE_ANTI_CAPTURE_MISSION_2026-10-12_KO.md"
+    "public_commons_mission": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/research/OPEN_KNOWLEDGE_ANTI_CAPTURE_MISSION_2026-10-12_KO.md",
+    "reciprocal_nondomination_minimal_intrusion": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/research/RECIPROCAL_NONDOMINATION_MINIMAL_INTRUSION_COMMON_LAW_2026-10-12_KO.md"
   },
   "research": {
     "area": [
@@ -59,6 +60,18 @@
       "status": "design_untested_integrated_causal_hypotheses",
       "description": "Intergenerational incentive reproduction, AI amplification, independent validation, practical exit/recovery, contribution-cost separation.",
       "url": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/research/OPEN_KNOWLEDGE_ANTI_CAPTURE_MISSION_2026-10-12_KO.md"
+    },
+    "top_level_normative_proposal": {
+      "status": "proposed_normative_research_spec_not_existing_law_or_independent_empirical_validation",
+      "human_ai_symmetry": "reciprocal non-domination; non-harm; least intrusive proportional harm prevention; no compelled sacrifice for aggregate benefit",
+      "includes": [
+        "cumulative unintended microharm",
+        "informed voluntary cooperation",
+        "individual viability floors",
+        "independent contestation and remedy",
+        "human-origin attribution"
+      ],
+      "url": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/research/RECIPROCAL_NONDOMINATION_MINIMAL_INTRUSION_COMMON_LAW_2026-10-12_KO.md"
     }
   },
   "public_experiments": [
