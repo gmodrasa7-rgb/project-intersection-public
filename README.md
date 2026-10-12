@@ -4,6 +4,8 @@
 > **Public sponsorship accountability / 공개 연구 후원 투명성:** [Single two-use sponsorship policy and ledger / 개인후원 2항목·단일 장부](funding/SPONSORSHIP_PUBLIC_LEDGER.md) · [Legal/tax uncertainty register / 법률·세무 위험](funding/LEGAL_TAX_RISK_REGISTER_2026-10-13_EN_KO.md) · [LinkedIn research introduction / 연구 소개글](PUBLIC_LINKEDIN_INTRODUCTION_2026-10-13_EN_KO.md). Personal sponsor transactions remain **unverified**, not zero. / 후원 승인=실제 수령 증빙 아님.
 
 
+> **New falsifiable research audit / 신규 반증 중심 감사:** [Original 1 EN](research/ICM_INDEPENDENT_CHOICE_AUDIT_2026-10-13_EN.md) · [원본2 KO](research/ICM_INDEPENDENT_CHOICE_AUDIT_2026-10-13_KO.md) — practical freedom, central permission denial, privacy, evidence and benchmarks; **HOLD / not empirically validated**.
+
 <!-- L0_FOREWORD_FIRST: Original 1 English then Original 2 Korean, full matched text. Never promote a case study above this top-level purpose. -->
 
 ## Original 1 — English | Founding Purpose
