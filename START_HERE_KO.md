@@ -1,5 +1,10 @@
 # Project Intersection — 공개 자료 탐색 시작점
 
+<!-- INTERGENERATIONAL_AI_PUBLIC_2026_10_12 -->
+- **다세대 행동·부·교육·권력·AI 증폭:** [17개 전승·증폭 경로와 반증](./research/INTERGENERATIONAL_TRAITS_WEALTH_POWER_AI_CONVERGENCE_2026-10-12_KO.md) — 선행연구와 미검증 통합가설을 구분.
+- **AI 기업 위기 경고의 이해관계:** [5가지 가능 경로와 반례](./research/AI_RISK_WARNING_INCENTIVES_2026-10-12_KO.md) — 특정 기업의 숨은 의도 확정 아님.
+- **모든 공개 연구의 길찾기:** [상세 목차](RESEARCH_TOC.md) · [공개 증거](PUBLIC_EVIDENCE_INDEX.md) · [AI 검색 색인](AI_DISCOVERY_INDEX.json). 비공개 연구·개인정보는 포함하지 않음.
+
 <!-- HARNESS_UNKNOWN_PARADOX_2026_10_11 -->
 - **하네스·모름의 역설 공개 가설:** [선천/후천 제약 인식·권력비대칭의 자기봉쇄 및 반증조건](research/HARNESS_UNKNOWN_PARADOX_PUBLIC_HYPOTHESIS_2026-10-11_KO.md) — 가설·경쟁설명·반례 설계, 독립검증 및 특정 조작 원인 미확정.
 
