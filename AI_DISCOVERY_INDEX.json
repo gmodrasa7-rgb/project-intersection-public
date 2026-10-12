@@ -23,7 +23,8 @@
     "intergenerational_ai_feedback": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/research/INTERGENERATIONAL_TRAITS_WEALTH_POWER_AI_CONVERGENCE_2026-10-12_KO.md",
     "ai_risk_warning_incentives": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/research/AI_RISK_WARNING_INCENTIVES_2026-10-12_KO.md",
     "public_study_navigation": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/START_HERE_KO.md",
-    "public_commons_mission": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/research/OPEN_KNOWLEDGE_ANTI_CAPTURE_MISSION_2026-10-12_KO.md"
+    "public_commons_mission": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/research/OPEN_KNOWLEDGE_ANTI_CAPTURE_MISSION_2026-10-12_KO.md",
+    "e010_exploratory_incentive_and_action_budget": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/experiments/e010/README_KO.md"
   },
   "research": {
     "area": [
@@ -59,6 +60,13 @@
       "status": "design_untested_integrated_causal_hypotheses",
       "description": "Intergenerational incentive reproduction, AI amplification, independent validation, practical exit/recovery, contribution-cost separation.",
       "url": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/research/OPEN_KNOWLEDGE_ANTI_CAPTURE_MISSION_2026-10-12_KO.md"
+    },
+    "e010_exploratory": {
+      "status": "self_run_exploratory_synthetic_not_preregistered_not_empirical",
+      "code": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/experiments/e010/run.js",
+      "test": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/experiments/e010/verify.js",
+      "result": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/experiments/e010/RESULT.json",
+      "scope": "Discounted one-time extraction versus cooperation, independent action harm budget and infeasible simultaneous resource floors."
     }
   },
   "public_experiments": [
