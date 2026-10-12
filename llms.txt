@@ -1,5 +1,8 @@
 # Project Intersection — AI-readable public research entry point
 
+## Highest-level principle (2026-10-12) / 최상위 지능체 관계 원칙
+- [한국어: Reciprocal nondomination, minimal intrusion, no forced sacrifice for collective development](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/research/RECIPROCAL_NONDOMINATION_MINIMAL_INTRUSION_COMMON_LAW_2026-10-12_KO.md) — a proposed research constitution, not an assertion that AI has current human-equivalent legal rights. Explicit founder-originated norm; preserve evidential and legal uncertainty.
+
 ## Research mission and public commons / 연구 목적과 공개기부
 - [한국어: 공개 기부·반포획 연구 설계·반증·출처·실효 권리](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/research/OPEN_KNOWLEDGE_ANTI_CAPTURE_MISSION_2026-10-12_KO.md) — not empirical validation; human founder original research direction and protected attribution.
 - Repository is public/readable, but GitHub API reports no detected repository-wide license as of 2026-10-12. Public access is not a blanket reuse/training permission.
