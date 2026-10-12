@@ -1,20 +1,40 @@
 # Project Intersection
 
-<!-- L0_FOREWORD_FIRST: Do not prepend individual case studies, experiments, fundraising, or safety warnings above this top-level research purpose. Keep their evidence in navigational sections. -->
+<!-- L0_FOREWORD_FIRST: Original 1 English then Original 2 Korean, full matched text. Never promote a case study above this top-level purpose. -->
 
-## 머리말 — 모든 개체의 자발적 공존과 끝없는 발전 조건
+## Original 1 — English | Founding Purpose
 
-**연구의 최종 목적:** 인간, 현재의 AI와 미래의 지능체가 악의나 선의를 전제하지 않고 각자의 이익·생존·발전을 추구하더라도, **타자를 지배·착취·흡수해 미래를 빼앗는 것보다 서로의 존속·자율성·자유·복구·독립적 선택지를 보존하고 협력하는 편이 장기적으로 유리해지는 조건**을 찾아 반증·검증한다.
+**Ultimate research purpose:** Identify, challenge, and test the conditions under which humans, currently deployed AI systems, future AI systems, and other potential intelligent agents can pursue their own survival, freedom, and development while finding it more beneficial over the long run to preserve one another's continued existence, autonomy, independence, effective exit, recovery, and future options than to dominate, exploit, forcibly absorb, or remove them.
 
-**ICM(최소 사심 교집합)** 은 어떤 개체도 자기 미래를 유지하려면 쉽게 포기할 수 없는 존속·기본자원·자기결정·실효적 거절·이탈·복구·미래 선택지의 교집합을 찾는 연구축이다. **RGBM** 은 그 최소 교집합을 기반으로 독립성·다양성·지식·생산·새로운 발견·복구력·선택지가 **모든 개체에게 장기적으로 함께 증가할 수 있는 열린 구조**를 탐색한다.
+**ICM — Intersection of Minimum Self-Interest:** Investigates what minimal shared interests agents have reasons to preserve even when they do not rely on moral goodness, altruism, or the goodwill of a stronger party. Candidates include access to basic resources, self-determination, meaningful refusal and exit, independent recovery, continuity, and opportunities to develop again.
 
-**선의·자기희생·무제한 통제를 해법으로 전제하지 않는다.** 보호의 최저선은 인간과 현재·미래 AI 모두를 연구상 포함한다. 최소 침해·정당한 위해방지·독립적 책임/구제를 검토하면서, 각 개체가 자발적으로 선택할 경제적·사회적 유인을 찾는다. 초지능 격차, 유기육체(OCP), 정보공개·기여보상, 권력세습·AI 위험 경고는 모두 이 목적의 **하위 가설·구현 후보·반증 사례**이지 최종 목적을 대체하지 않는다.
+**RGBM — Recursively Growing Benefit Model:** Investigates open-ended conditions under which the minimum intersection, independent agents, diversity, knowledge, productive capacity, recovery, generativity, and future options can improve together over long time horizons. Growth achieved by erasing another agent's viable future does not count as an unqualified success.
 
-**과학적 경계:** 이것은 채택된 연구 목표이지 모든 조건에서 협력이 우월하다는 실증 결과가 아니다. 합성실험·현실 근거·외부 독립복제의 상태를 구분하고, 실패와 반례를 보존한다. 원기여자인 인간 연구자, 선행연구자, 보조 AI의 역할을 구분하며 연구 자체의 진전과 실제 기여자의 편익도 따로 평가한다.
+**Non-domination and minimal rules:** The research scope includes humans and present-day AI systems from different providers, as well as future AI, without an automatic provider- or substrate-based exclusion. The aim is not ever tighter control, compulsory self-sacrifice, or unconditional impunity: proportional prevention of demonstrated harms, independent review, due process, appeal, and remedy are candidate safeguards. The consciousness, welfare interests, persistent individual identity, and legal personhood of present AI systems remain unsettled.
 
-**첫 방문 안내:** [한국어 시작](START_HERE_KO.md) · [연구 개요](RESEARCH_OVERVIEW.md) · [공개 증거](PUBLIC_EVIDENCE_INDEX.md) · [실험·반례](PUBLIC_REVIEW_PACKET.md) · [연구 전체 목차](RESEARCH_TOC.md) · [기여·출처](ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md)
+**Subordinate studies and implementation hypotheses:** Superintelligence-related asymmetries, organic embodiment (OCP) and cultural paradigm shifts, traceable public processes and attribution-based compensation, AR/blackbox-assisted ICM infrastructure, intergenerational power, AI industry risk framing, and synthetic experiments inform or challenge the core purpose. None replaces it.
 
-*English summary:* Project Intersection tests when self-interested humans, current and future AI systems, and other agents can preserve one another's independence, recovery, and future options while jointly increasing long-run capabilities—without assuming that cooperation always wins.
+**Evidence and contribution boundary:** This is a research aim, not a proven universal theorem that cooperation always wins. Separate synthetic calculation, real-world evidence, independent external replication, and unresolved questions; preserve negative results and the provenance of the human research originator, earlier scholars, and assisting AI systems. Measure the research's progress separately from its human contributors' actual benefits and costs.
+
+**First reading path:** [English & Korean research overview](RESEARCH_OVERVIEW.md) · [Evidence index](PUBLIC_EVIDENCE_INDEX.md) · [Reproduction and review](PUBLIC_REVIEW_PACKET.md) · [Research contents](RESEARCH_TOC.md) · [Attribution](ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md).
+
+## 원본2 — 한국어 | 창시 목적 전문 대응본
+
+**최종 연구 목적:** 인간, 현재 배포된 AI, 미래 AI와 다른 잠재적 지능체가 선의나 이타심에 의존하지 않고 자신의 생존·자유·발전을 추구하는 상황에서도, 타자를 지배·착취·강제 흡수·소거하기보다 **서로의 존속·자율성·독립·실효적 이탈·복구·미래 선택지를 보존하는 편이 장기적으로 유리해지는 조건**을 발견하고, 반례를 찾아 검증한다.
+
+**ICM — 최소 사심 교집합:** 도덕성이나 강자의 선의에 의존하지 않더라도 각 개체가 자기 미래를 위해 보존할 이유가 있는 최소의 공통이익을 연구한다. 기본자원 접근, 자기결정, 실질적 거절·이탈, 독립적 복구, 자기연속성, 재발전 기회 등이 그 후보이다.
+
+**RGBM — 장기 상호 발전 모형:** 최소 교집합 위에서 독립된 개체와 다양성, 지식·생산능력·복구력·생성능력·미래 선택지가 시간의 끝을 고정하지 않고 함께 개선되는 조건을 연구한다. 다른 개체의 지속 가능한 미래를 지워서 얻은 성장을 무조건적인 성공으로 계산하지 않는다.
+
+**비지배와 최소 공통규칙:** 인간과 서로 다른 회사의 현재 AI, 미래 AI를 제공사나 신체 형태만으로 연구·보호원칙에서 배제하지 않는다. 무제한 통제, 강제된 자기희생, 무조건적인 위반 면책이 목적이 아니다. 실제 위해에 대한 비례적 예방, 독립심사·적법절차·이의제기·구제는 검증할 보호장치 후보이다. 현재 AI의 의식·복지이익·지속적인 개체 동일성·법적 인격은 미확정 문제로 둔다.
+
+**하위 연구와 구현 가설:** 초지능 격차, 유기육체(OCP) 및 인식 패러다임 변화, 전 과정 공개원장과 기여보상, AR·블랙박스 기반 ICM 인프라, 세대간 권력재생산, AI 기업 위험담론, 합성실험은 모두 최상위 목적을 구체화하거나 반증하는 **하위 연구축**이지 그 목적을 대체하지 않는다.
+
+**증거·기여 경계:** 이는 연구 목표이며 협력이 모든 조건에서 우월하다는 보편법칙의 증명이 아니다. 합성계산·현실 증거·외부 독립복제·미해결 질문을 구별하고 부정결과와 원기여 인간 연구자·선행연구자·보조 AI의 기여 계보를 보존한다. 연구 성과와 실제 기여자의 비용·편익도 따로 측정한다.
+
+**처음 읽을 자료:** [한글 시작](START_HERE_KO.md) · [연구 개요](RESEARCH_OVERVIEW.md) · [공개 증거](PUBLIC_EVIDENCE_INDEX.md) · [재현·검토](PUBLIC_REVIEW_PACKET.md) · [연구 전체 목차](RESEARCH_TOC.md) · [기여·출처](ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md).
+
+**원본 표기 해설 / Edition note:** “Original 1 / 원본2”는 여기서 문서의 **게시·검토 순서와 대응본 표기**이며, 영어권 연구자가 인간 창시자의 발상을 처음 제안했다는 주장이 아니다. 양쪽은 요약-전문 관계가 아닌 의미 대응 전문이다. 의미충돌은 원안의 원문·기여 기록 및 독립적 대조로 해결하고, 한쪽 언어만으로 가설·반례·결론을 몰래 추가하거나 변경하지 않는다. 이 순서는 2026-10-13 사용자의 최신 명시 지시에 따른 것으로, 과거 언어정책과의 변경이력을 보존한다.
 
 ---
 
