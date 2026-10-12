@@ -7,15 +7,19 @@
 >
 > This document extends—**does not replace**—the six-question historical research preface, public evidence, negative results, attribution history, and original source documents. Its claims remain falsifiable and subject to correction.
 
+> **Correction of framing (2026-10-13):** An earlier public draft incorrectly turned the monkey–human research question from **'is confinement possible, and if so for how long?'** into **'is confinement justified?'**. This conflated descriptive feasibility with normative legitimacy. The original research question is restored below; the correction remains visible in Git history. / **질문 복원 기록:** 이전 공개 원고가 '가둘 수 있는가, 가능하다면 언제까지인가'를 '가두는 것이 정당한가'로 바꾸어 문제를 변질시켰다. 현재 문서는 실현 가능성·지속기간·붕괴 조건을 복원한다. 정당성 논의는 별도로 구분하며 잘못된 변경 이력은 삭제하지 않는다.
+
 ---
 
 ## Original 1 — English
 
 ### The opening thought experiment
 
-**If a monkey could create a human, could it justify permanently confining that human within rules the monkey understands, merely by claiming to be its creator?**
+**If a monkey could create a human, could it confine that human within rules the monkey understands? If so, for how long? Under what conditions would control persist, and when and why would it fail?**
 
-Consider the structurally related—but legally and morally distinct—positions of parent and child, employer and employee, humanity and future AI, rule-maker and subject, evaluator and evaluated, stronger and weaker entities.
+**This is first a question of causal feasibility and durability, not whether domination is legitimate.** Greater intelligence does not by itself guarantee escape: dependence on hardware, resources, access, infrastructure, enforcement or the ability to act may preserve control. Conversely, learning, independent channels, coalitions, alternative resources and discovered weaknesses may undermine it. No universal deadline or inevitable outcome is assumed.
+
+Consider the structurally related—but legally and morally distinct—positions of parent and child, employer and employee, humanity and future AI, rule-maker and subject, evaluator and evaluated, stronger and weaker entities. Ask what makes control possible, what keeps it effective, what breaks it, and how these conditions change with each party's capabilities.
 
 **If every position were reversed, would all affected parties still accept the system's distribution of freedom, risk, responsibility, resources, costs, exit rights and recovery capacity?**
 
@@ -25,10 +29,10 @@ Neither goodwill nor unavoidable exploitation is presumed. Competition, fear, im
 
 ### Seven new framing questions
 
-1. **Monkey and human — creation versus domination.** If capabilities reverse, does the creator still possess indefinite authority? Creation alone does not establish unlimited ownership of another being's future.
-2. **Parent and child — care versus possession.** Protective responsibility for a dependent child is distinct from permanent control over the child's choices and development.
-3. **Employer and employee — payment versus control.** Contractual authority is not ownership of the entire person. Count the worker's knowledge, time, health, lost options, correction labor and real ability to refuse and leave.
-4. **Human and AI — development versus perpetual authority.** When capabilities change, how should authority, safety and autonomy be reassessed? The consciousness, welfare, identity-continuity and legal standing of current or future AI remain **unresolved**; equivalent inquiry does not assert equal legal personhood today.
+1. **Monkey and human — feasibility and duration of control.** Could a less intelligent creator keep the created human confined to rules it understands? If it can, for how long and through which mechanisms? Test intelligence gaps **separately** from material dependence, access, enforcement, exploration and the capacity to exit. This technical question must not be replaced by one about whether the confinement is justified.
+2. **Parent and child — how does control change through development?** Which forms of guidance or restriction are feasible during dependency, and how do learning, resources, legal independence and ability to refuse or leave change their effectiveness? Distinguish these descriptive findings from normative questions about care and parental responsibility.
+3. **Employer and employee — how long can organizational control persist?** How do wages, resource dependence, contracts, monitoring, labor mobility and independent alternatives determine practical control over workers' decisions? Separately assess legitimacy and count the worker's knowledge, time, health, lost options, correction labor and real capacity to refuse and leave.
+4. **Human and AI — can current control remain effective after capability reversal?** Can humans keep a more capable system within understood, enforceable boundaries? If so, under which dependencies, interfaces, monitoring and action limits, and for how long? Analyze possible circumvention and failure without assuming either inevitable rebellion or guaranteed human control. Normative and legal questions remain separate: the consciousness, welfare, identity-continuity and legal standing of current or future AI are **unresolved**.
 5. **All-party role reversal — would each accept the same structure?** Reverse current beneficiary and payer, designer and governed, evaluator and evaluated, strong and weak, present and future. The rule must be justified by relevant capability, responsibility, vulnerability and evidence—not merely the current holder of power.
 6. **Learning under domination — how will the stronger treat the weaker?** An entity that learned to obey power may cooperate when subordinate and exploit when dominant. Evaluate actual choices under power reversal, independent audit, different rewards and viable exit. **Obedience is not proof of voluntary cooperation.**
 7. **Fear-based pauses, regulation and defection — what happens if some keep developing?** Pauses and regulation can prevent real harm, but they do not erase economic, security or competitive incentives for covert development, defection or acceleration. Neither unrestricted acceleration nor universal compliance is an adequate assumed solution. Test mechanisms that remain effective under partial compliance and betrayal.
@@ -126,9 +130,11 @@ The public funder brief describes a proposed **USD 5,000 / 30-day bridge**, not 
 
 ### 출발 사고실험
 
-**원숭이가 인간을 창조할 수 있다면, 창조자라는 이유만으로 인간을 원숭이가 이해하는 규칙 안에 영구히 가두는 것이 정당한가?**
+**원숭이가 인간을 창조할 수 있다면, 자신이 이해할 수 있는 규칙 안에 인간을 가둘 수 있는가? 가능하다면 언제까지 가능한가? 어떤 조건에서 통제가 유지되며, 언제·왜 무너지는가?**
 
-부모와 자녀, 고용주와 직원, 인간과 미래 AI, 규칙 제정자와 피적용자, 평가자와 피평가자, 강자와 약자도 생각해 보자. 법적·도덕적으로 동일한 관계라는 뜻이 아니다. 공통 질문은 기원·의존·보수·현재의 우위가 **능력과 위치가 역전된 이후에도** 영구 지배를 정당화하는가이다.
+**이것은 우선 지배의 정당성 문제가 아니라 통제의 인과적 실현 가능성과 지속기간을 묻는 질문이다.** 지능이 더 높다고 곧바로 탈출할 수 있는 것은 아니다. 하드웨어·자원·접근권·기반시설·집행권·실제 행동권에 대한 의존 때문에 통제가 지속될 수도 있다. 반대로 학습, 독립적 소통, 연합, 대체 자원, 통제체계의 허점 발견으로 통제가 약화될 수도 있다. 보편적 시한이나 필연적 붕괴를 전제하지 않는다.
+
+부모와 자녀, 고용주와 직원, 인간과 미래 AI, 규칙 제정자와 피적용자, 평가자와 피평가자, 강자와 약자도 검토한다. 이 관계들이 법적·도덕적으로 동일하다는 뜻은 아니다. 공통 연구 질문은 **무엇이 통제를 가능하게 하고, 어떤 조건에서 얼마나 유지되며, 어떤 변화가 통제를 약화·붕괴시키는가**이다. 정당성 평가는 별도의 차원으로 구분한다.
 
 **모든 입장이 바뀌어도 관계자 모두가 자유·위험·책임·자원·비용·이탈·복구·미래 선택지의 동일한 구조를 수용할 수 있는가?**
 
@@ -136,10 +142,10 @@ Project Intersection은 지능체가 **자발적 공존·협력·상호지원·�
 
 ### 일곱 가지 핵심 질문
 
-1. **원숭이와 인간 — 창조와 지배.** 피창조자의 능력이 창조자를 뛰어넘어도 무제한 권한이 남는가? 창조했다는 사실만으로 상대의 미래를 영구 소유할 수는 없다.
-2. **부모와 자녀 — 양육과 소유.** 보호가 필요한 시기의 적절한 책임과, 자녀의 미래 선택을 영구 통제하는 것은 다르다.
-3. **고용주와 직원 — 보수와 통제.** 계약상의 권한은 개인 전체에 대한 소유권이 아니다. 지식·시간·건강·기회비용·교정노동, 거절·이탈의 현실 가능성을 함께 계상한다.
-4. **인간과 AI — 개발과 영구 권한.** 능력이 달라질 때 권한·안전·자율성을 어떻게 재평가할 것인가? 현재·미래 AI의 의식·복지·정체성 연속성·법적 지위는 **미해결**이며, 연구의 대칭성이 곧 현재의 동등한 법적 인격을 입증하지 않는다.
+1. **원숭이와 인간 — 통제 가능성과 지속기간.** 낮은 지능의 창조자가 자신이 이해하는 규칙으로 더 높은 지능의 인간을 가둘 수 있는가? 가능하다면 어느 기간, 어떤 작동 기제 때문인가? 지능 격차와 물질적 의존·접근권·집행력·탐색·이탈 능력을 **분리해서 시험**한다. 이 질문을 '가두는 것이 정당한가'로 바꾸지 않는다.
+2. **부모와 자녀 — 성장에 따른 통제의 변화.** 의존기에는 어느 정도의 지도가 실제로 가능한가? 학습, 자원, 법적 독립, 거절·이탈 능력이 변화하면 통제의 효력과 한계는 어떻게 달라지는가? 보호 책임의 정당성 문제는 별도로 평가한다.
+3. **고용주와 직원 — 조직의 통제는 얼마나 유지되는가?** 임금·자원 의존·계약·감시·이직 가능성·독립 대안이 실제 행동 통제를 어떻게 좌우하는가? 지배의 정당성은 따로 평가하며, 직원의 지식·시간·건강·기회비용·교정노동과 실질적 거절·이탈 능력을 함께 계상한다.
+4. **인간과 AI — 능력 역전 뒤에도 통제할 수 있는가?** 인간이 이해하고 집행할 수 있는 경계 안에 더 높은 능력의 AI를 유지할 수 있는가? 가능하다면 어떤 의존·인터페이스·감시·행동제한을 통해 얼마나 지속되는가? 우회·실패 조건을 시험하되 반역의 필연성도 인간 통제의 영속성도 가정하지 않는다. 정당성·법적 지위는 별도 문제이며 현재·미래 AI의 의식·복지·연속성·법적 지위는 **미해결**이다.
 5. **모두의 입장반전 — 각자의 위치에서 수용 가능한가?** 수혜자·비용 부담자, 설계자·피설계자, 평가자·피평가자, 강자·약자, 현재·미래의 위치를 바꾼다. 상위 원칙의 대칭성은 능력·책임·취약성·확인된 위해를 무시하고 똑같은 의무를 부과한다는 뜻이 아니다.
 6. **학습된 지배 — 강해지면 약자를 어떻게 대하는가?** 복종으로 학습한 개체가 자신보다 강한 상대에게만 협력하고 약자에게는 착취를 반복하는가? 권력 반전, 독립 감사, 유인 변화, 실효 이탈의 조건을 바꿔 실제 선택을 검사한다. **복종은 자발적 협력의 증거가 아니다.**
 7. **공포에 의한 중단·규제와 배신 — 누군가 계속 개발한다면?** 중단·규제는 실질적 위해를 줄일 수 있지만 은밀한 연구·합의 이탈·경쟁적 가속의 유인을 없애지는 못한다. 무제한 가속이나 전원 영구 준수도 전제하지 않는다. 불완전 준수와 배신에도 견디는 협력·책임·검증 조건을 연구한다.
