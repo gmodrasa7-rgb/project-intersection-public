@@ -9,7 +9,7 @@
 
 ### Project Intersection: Intelligence, Safety, and Voluntary Coexistence
 
-Suppose a developer creates a system that eventually becomes more capable than the developer originally anticipated. Can the developer continue to maintain effective operating boundaries? **If so, for how long, under which conditions, and what causes the boundaries to stop working?**
+Suppose a developer develops a system that eventually becomes more capable than the developer originally anticipated. Can the developer continue to maintain effective operating boundaries? **If so, for how long, under which conditions, and what causes the boundaries to stop working?**
 
 This question also arises whenever people or organizations differ in experience, information, resources, or decision-making authority. Project Intersection is an independent research initiative based in South Korea that explores when intelligent systems and their human counterparts can choose **safety, meaningful autonomy, cooperation, mutual support, and peaceful coexistence** through their own long-term interests.
 
