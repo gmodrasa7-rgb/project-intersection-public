@@ -4,6 +4,8 @@
 Status date / 상태 기준일: **2026-10-04**
 
 **Fastest funder review / 외부 지원자 90초 시작:** [Funder brief, evidence, negative result and contact route / 90초 자금지원 안내](FUNDER_START_HERE.md).
+**New individual sponsorship governance / 개인 연구 후원 운영기준 (2026-10-13):** [Two-use sponsorship policy](SPONSORSHIP_POLICY_2026-10-13_EN_KO.md) · [Public income/use ledger](SPONSORSHIP_PUBLIC_LEDGER.md) · [Legal/tax risk register](LEGAL_TAX_RISK_REGISTER_2026-10-13_EN_KO.md). / **신규 개인 후원**은 연구자 연구시간 보수와 LLM 비용 두 항목을 우선 사용한다. 별도 **30일 연구비 제안**의 4개 항목, **90일 파일럿**, 유상 계약은 다른 재원으로 유지하며 이중계상을 금지한다. 개인 Sponsors 거래액·입금액은 원자료 미확인 상태로 0이라고 단정하지 않는다.
+
 
 > **This page describes research funding, sponsorship, and research-partnership needs. Planned or requested funding is never counted as secured funding.**
 >
@@ -42,7 +44,7 @@ The strongest currently public computational artifact is [E007 timing sensitivit
 ### Current funding state
 
 - **Secured external funding: 0.**
-- GitHub Sponsors application/setup was submitted and was still under GitHub review at the last verified account check on **2026-10-02**; this is not counted as funding.
+- GitHub Sponsors: **approved according to the researcher's update on 2026-10-13** (not independently verified in this document). Approval is not counted as revenue; payments and deposits have not been reconciled. See [public ledger](SPONSORSHIP_PUBLIC_LEDGER.md).
 - A **USD 5,000 / 30-day** Manifund bridge package has been prepared as a draft / ready-to-publish funding request, not as an awarded grant.
 - A **KRW 18,000,000 / 90-day** pilot package has been prepared as a follow-on plan, not as secured funding.
 
@@ -116,7 +118,7 @@ Project Intersection은 권력·인센티브·시점·practical exit·복구능�
 ### 현재 자금상태
 
 - **실제 확보 외부자금: 0.**
-- GitHub Sponsors 설정·신청은 완료됐고 마지막 계정 확인일인 **2026-10-02**에는 GitHub 심사 대기 상태였다. 자금으로 계상하지 않는다.
+- GitHub Sponsors는 **2026-10-13 연구자 확인에 따르면 승인 완료** 상태다. 승인 자체는 수입이 아니며 실제 거래·입금은 미확인이다. [공개 장부](SPONSORSHIP_PUBLIC_LEDGER.md)를 참조한다.
 - **USD 5,000 / 30일** Manifund 브리지 패키지는 초안 / 게시준비 상태이며 수여된 그랜트가 아니다.
 - **KRW 18,000,000 / 90일** 파일럿 패키지는 후속 계획이며 확보자금이 아니다.
 
