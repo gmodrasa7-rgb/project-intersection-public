@@ -32,7 +32,7 @@ This page is a due-diligence interface for funders, research partners, reviewers
 
 - **Independent external scientific replication:** not yet established.
 - **Real-world validation of the general coexistence / ICM claims:** not yet established.
-- **External research-grant funding:** No payment or legally binding award was evidenced in the last grant review. **Individual GitHub Sponsors transaction and payout totals have not been reconciled**; do not describe them as confirmed zero. [Public sponsorship ledger](funding/SPONSORSHIP_PUBLIC_LEDGER.md).
+- **Secured external funding — research grants:** No payment or legally binding award was evidenced in the last grant review. **Individual GitHub Sponsors transaction and payout totals have not been reconciled**; do not describe them as confirmed zero. [Public sponsorship ledger](funding/SPONSORSHIP_PUBLIC_LEDGER.md).
 - **Private notes, internal model outputs, receipts, logs, or repeated runs from correlated systems are not promoted to independent evidence.**
 - A public file, executed code, or passing test is evidence of that artifact or execution state; it is not automatically evidence that the higher-level theory is true.
 
