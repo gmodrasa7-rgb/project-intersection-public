@@ -1,5 +1,26 @@
 # Project Intersection
 
+<!-- AI_RISK_WARNING_FOREWORD_2026-10-12 -->
+## 머릿말 — AI 위기 경고, 누구에게 유리한가?
+
+AI의 위험은 실제일 수 있다. 그러나 **위험을 경고하는 기업이 그 경고로 더 강해지는 구조**도 동시에 살펴야 한다.
+
+이 자료실은 AI 기업의 위험 경고에서 나타날 수 있는 다섯 가지 이해관계를 검토한다.
+
+1. **규칙 장악** — 위험을 정의하는 기업이 평가기준과 규칙에도 영향력을 행사할 수 있다.
+2. **책임 전가** — 이익은 기업에 집중되고 사고 비용은 사회에 남을 수 있다.
+3. **개발 가속** — 경쟁사가 먼저 개발하면 위험하다는 주장으로 속도 경쟁이 정당화될 수 있다.
+4. **경쟁자 배제** — 높은 안전 비용이 작은 기업의 진입장벽이 될 수 있다.
+5. **돈과 영향력 집중** — 위기 담론이 자본과 정책 영향력 확보에 유리하게 작용할 수 있다.
+
+**이것은 특정 기업의 악의를 확정한 결론이 아니라 검증할 구조적 가설이다.** 위험의 실재 여부, 기업의 의도, 기업이 얻는 편익, 외부에 전가되는 비용을 구분한다. 반례와 실패한 가설도 기록한다.
+
+**핵심 질문:** 같은 구조가 반복되면 누가 더 강해지고, 누가 더 소모되는가? 위험을 판단할 권한과 실제 책임은 누구에게 있는가?
+
+관련 탐색: [기득권·착취 구조의 선행연구 종합](INCUMBENT_POWER_EXTRACTION_MECHANISMS_2026_KO.md) · [연구 증거와 한계](PUBLIC_EVIDENCE_INDEX.md)
+
+---
+
 **For research funders and paid evaluation partners:** [90-second funding brief, current public evidence and contact route](funding/FUNDER_START_HERE.md). / **연구지원·유상 평가협력:** [90초 안내 및 연락 경로](funding/FUNDER_START_HERE.md).
 
 <!-- INCUMBENT_EXTRACTION_2026_10_11 -->
