@@ -1,5 +1,11 @@
 # Public Navigation Layer / 공개 탐색층
 
+<!-- INTERGENERATIONAL_AI_PUBLIC_2026_10_12 -->
+**New cross-generation research / 다세대 기질·환경·부·제도·AI 피드백:** [17개 채널·문헌·반례·검증 경계](research/INTERGENERATIONAL_TRAITS_WEALTH_POWER_AI_CONVERGENCE_2026-10-12_KO.md) — 가설, 인과 미검증.
+
+**AI risk-warning incentives / 기업 위기 경고의 다섯 이해관계:** [하위 사례·부정 대조](research/AI_RISK_WARNING_INCENTIVES_2026-10-12_KO.md) — 실증 순위 및 기업 의도 아님.
+
+
 <!-- OAI_AUDIT_ACCESS_DISPUTE_2026_10_11 -->
 **OpenAI safety researcher dismissals & independent audit access (CONTESTED):** [2026-10-11 원문·사고보고·인사 주장 분리](CASE_OPENAI_SAFETY_RESEARCHER_DISMISSALS_AUDIT_ACCESS_2026-10-11_KO.md) — 외부감사 접근 의존과 절차적 쟁점; 해고 정당성/보복 의도 불확정, 접근 감소는 추적 필요.
 

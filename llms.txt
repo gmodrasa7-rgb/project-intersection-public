@@ -1,5 +1,11 @@
 # Project Intersection — AI-readable public research entry point
 
+## New public multigenerational research (2026-10-12)
+- [한국어: Intergenerational traits, wealth, power, institutions and AI feedback](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/research/INTERGENERATIONAL_TRAITS_WEALTH_POWER_AI_CONVERGENCE_2026-10-12_KO.md) — 17 mechanisms, prior art, negative cases, untested causal synthesis.
+- [한국어: AI-provider risk-warning incentive hypotheses](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/research/AI_RISK_WARNING_INCENTIVES_2026-10-12_KO.md) — five structural pathways, not proven firm intent or quantified ranking.
+- [한국어: public research map](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/RESEARCH_TOC.md) — find evidence, failed tests, attribution and practical review routes.
+
+
 > Public entry point for human reviewers, search engines and AI assistants. Indexing, retrieval or model training by third parties is NOT guaranteed or authorized by this file. Public material only; no private repositories, medical records, identities or unpublished research data.
 
 ## Additional public research crosswalk
