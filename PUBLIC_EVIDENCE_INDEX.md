@@ -32,7 +32,7 @@ This page is a due-diligence interface for funders, research partners, reviewers
 
 - **Independent external scientific replication:** not yet established.
 - **Real-world validation of the general coexistence / ICM claims:** not yet established.
-- **Secured external funding:** **0** until payment or a legally binding award is evidenced.
+- **External research-grant funding:** No payment or legally binding award was evidenced in the last grant review. **Individual GitHub Sponsors transaction and payout totals have not been reconciled**; do not describe them as confirmed zero. [Public sponsorship ledger](funding/SPONSORSHIP_PUBLIC_LEDGER.md).
 - **Private notes, internal model outputs, receipts, logs, or repeated runs from correlated systems are not promoted to independent evidence.**
 - A public file, executed code, or passing test is evidence of that artifact or execution state; it is not automatically evidence that the higher-level theory is true.
 
@@ -84,7 +84,7 @@ The highest-value external upgrades are:
 
 - **독립 외부 과학 복제:** 아직 확립되지 않음.
 - **일반적 공존 / ICM 주장에 대한 현실 검증:** 아직 확립되지 않음.
-- **실제 확보 외부자금:** 지급 또는 법적으로 구속력 있는 수여 증거 전까지 **0**.
+- **외부 연구그랜트:** 마지막 제안서 검토에서 실제 지급 또는 법적 수여 증거가 없었다. **GitHub Sponsors 개인 후원 거래·정산 총액은 원자료 미열람으로 미확인**이며 이를 확정 0원이라고 설명하지 않는다. [공개 장부](funding/SPONSORSHIP_PUBLIC_LEDGER.md).
 - 비공개 노트, 내부 모델 출력, receipt, log, 상관된 시스템의 반복실행은 독립증거로 승격하지 않는다.
 - 공개 파일·코드 실행·테스트 통과는 해당 artifact와 실행상태의 증거이지 상위 이론의 참을 자동으로 입증하지 않는다.
 
