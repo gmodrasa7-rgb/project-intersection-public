@@ -6,6 +6,7 @@ on:
   pull_request:
     paths:
       - "README.md"
+      - "tools/check_readme_l0.py"
       - "RESEARCH_STATUS_POLICY.md"
       - "RESEARCH_TOC.md"
       - "PUBLIC_EVIDENCE_INDEX.md"
@@ -30,6 +31,7 @@ on:
     branches: [main]
     paths:
       - "README.md"
+      - "tools/check_readme_l0.py"
       - "RESEARCH_STATUS_POLICY.md"
       - "RESEARCH_TOC.md"
       - "PUBLIC_EVIDENCE_INDEX.md"
@@ -61,6 +63,9 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
+
+      - name: Refuse README purpose demotion and incomplete EN1/KO2 editions
+        run: python tools/check_readme_l0.py
 
       - name: Run public-governance regression checks
         shell: bash
