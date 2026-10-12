@@ -2,6 +2,8 @@
 ## 연구비·후원 실사 기준
 
 Review date / 검토일: **2026-10-04**
+> **2026-10-13 governance update / 현행 운영 참고:** [Individual sponsorship use policy](SPONSORSHIP_POLICY_2026-10-13_EN_KO.md) · [public ledger](SPONSORSHIP_PUBLIC_LEDGER.md) · [Korean legal/tax risk register](LEGAL_TAX_RISK_REGISTER_2026-10-13_EN_KO.md). This supplement does not represent a legally cleared fundraising route or verified payout. / 신규 개인 후원은 별도 2항목, 이전 연구비 제안은 기존 약정 예산과 분리, 실제 입금 미확인.
+
 
 ---
 

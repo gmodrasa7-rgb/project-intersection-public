@@ -1,6 +1,8 @@
 # Project Intersection
 
 > **Public research preface — Original 1 English / 원본2 한국어:** [Seven research questions on practical oversight, role reversal, voluntary cooperation and minimum safety rules; six original research domains, evidence and funding boundaries](PUBLIC_PREAMBLE_VOLUNTARY_COEXISTENCE_2026-10-13_EN_KO.md). / **연구 통합 머릿말:** 개발자·시스템의 능력 변화, 부모·자녀, 고용관계, 실질적인 감독·이탈·협력과 최소 안전규칙에 관한 7개 질문 및 기존 6대 연구영역.
+> **Public sponsorship accountability / 공개 연구 후원 투명성:** [Individual sponsorship policy / 개인후원 사용원칙](funding/SPONSORSHIP_POLICY_2026-10-13_EN_KO.md) · [Public income/use ledger / 수입·지출 장부](funding/SPONSORSHIP_PUBLIC_LEDGER.md) · [Legal/tax uncertainty register / 법률·세무 위험](funding/LEGAL_TAX_RISK_REGISTER_2026-10-13_EN_KO.md) · [LinkedIn research introduction / 연구 소개글](PUBLIC_LINKEDIN_INTRODUCTION_2026-10-13_EN_KO.md). Personal sponsor transactions remain **unverified**, not zero. / 후원 승인=실제 수령 증빙 아님.
+
 
 <!-- L0_FOREWORD_FIRST: Original 1 English then Original 2 Korean, full matched text. Never promote a case study above this top-level purpose. -->
 
