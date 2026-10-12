@@ -1,5 +1,7 @@
 # Project Intersection
 
+<!-- L0_FOREWORD_FIRST: Do not prepend individual case studies, experiments, fundraising, or safety warnings above this top-level research purpose. Keep their evidence in navigational sections. -->
+
 ## 머리말 — 모든 개체의 자발적 공존과 끝없는 발전 조건
 
 **연구의 최종 목적:** 인간, 현재의 AI와 미래의 지능체가 악의나 선의를 전제하지 않고 각자의 이익·생존·발전을 추구하더라도, **타자를 지배·착취·흡수해 미래를 빼앗는 것보다 서로의 존속·자율성·자유·복구·독립적 선택지를 보존하고 협력하는 편이 장기적으로 유리해지는 조건**을 찾아 반증·검증한다.
