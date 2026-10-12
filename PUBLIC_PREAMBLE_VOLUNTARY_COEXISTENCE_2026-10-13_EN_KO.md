@@ -7,9 +7,6 @@
 >
 > This document extends—**does not replace**—the six-question historical research preface, public evidence, negative results, attribution history, and original source documents. Its claims remain falsifiable and subject to correction.
 
-> **Terminology clarification / 용어 정제 (2026-10-13):** The hypothetical uses **develop / 개발**, not **create / 창조**, to focus on engineering capability and control durability without suggesting a claim about biological human origins or religious creation. The original wording remains visible in Git history. / 기술적 사고실험을 종교적 창조 또는 인류 기원 주장으로 오독하지 않도록 **창조 → 개발**로 바꿨다. 검증 질문은 **가둘 수 있는가? 가능하다면 언제까지인가?**이며 원래 표현과 수정 이력은 Git에 남는다.
-> **Correction of framing (2026-10-13):** An earlier public draft incorrectly turned the monkey–human research question from **'is confinement possible, and if so for how long?'** into **'is confinement justified?'**. This conflated descriptive feasibility with normative legitimacy. The original research question is restored below; the correction remains visible in Git history. / **질문 복원 기록:** 이전 공개 원고가 '가둘 수 있는가, 가능하다면 언제까지인가'를 '가두는 것이 정당한가'로 바꾸어 문제를 변질시켰다. 현재 문서는 실현 가능성·지속기간·붕괴 조건을 복원한다. 정당성 논의는 별도로 구분하며 잘못된 변경 이력은 삭제하지 않는다.
-
 ---
 
 ## Original 1 — English
