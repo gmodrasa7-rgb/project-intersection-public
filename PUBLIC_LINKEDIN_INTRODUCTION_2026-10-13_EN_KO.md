@@ -33,6 +33,8 @@ An important test is whether accessible shared research/evidence services actual
 
 The working cycle is **(1) specify the research question and falsifiable initial theory → (2) search and collect prior work → (3) test whether the *documented search scope* is saturated → (4) verify, refine, reuse and challenge existing research → (5) preserve original authors' contributions → (6) accelerate only the new, testable residual questions.** The cycle reopens when better evidence appears; it never claims that all possible earlier studies have been found.
 
+The research also explicitly accounts for **current LLM performance and reasoning limits, insufficient funding, constrained token budgets and resulting incomplete outputs, hallucinations, finite context windows, session-to-session loss, fragmentation, duplicate documentation and compounding errors**. It uses source-linked checkpoints, read-back and falsification gates to reduce these failures; their complete elimination is not claimed.
+
 Different available LLMs are used to challenge one another's claims, but **model agreement is not independent replication**. Public GitHub updates preserve failures, corrections and supported results; confirmed sponsorship receipts and uses are reported as anonymized aggregates.
 
 **Roadmap (English / Korean):** https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/research/RESEARCH_ROADMAP_v0_1_EN_KO.md
@@ -93,6 +95,8 @@ Separate grants or paid research contracts are tracked under their **own approve
 ### 연구의 발전 절차 — 로드맵 v0.1
 
 연구는 **① 주제·이론 초안과 반증조건 구체화 → ② 선행연구 수집 → ③ 정해진 범위에서 조사 포화 점검 → ④ 원문 검수·정제·개선·응용 → ⑤ 선행연구 원저자·기여자 기록 → ⑥ 남은 새 가설의 검증과 연구 가속** 순환을 따른다. 새로운 증거가 나오면 앞 단계로 돌아간다. 조사가 포화됐다는 제한적 판단은 세상에 더 이상 선행연구가 없다는 뜻이 아니다.
+
+연구 과정에서는 **현행 LLM 추론 성능의 한계, 연구 자본 부족, 제한된 토큰 예산에 따른 불완전한 결과, 할루시네이션, 컨텍스트 제한·세션 간 맥락 손실, 자료 파편화·중복·스파게티화, 모델 차이 및 오류 누적**을 명시적으로 고려한다. 정본·출처 연계·체크포인트 복원·수정 후 재검증을 적용하지만, 이러한 문제가 완전히 제거됐다고 주장하지 않는다.
 
 서로 다른 AI를 교차 연구에 활용하지만 **모델끼리의 동의는 독립적인 과학적 복제가 아니다**. 연구 실패·수정·확인된 성과는 GitHub에 갱신하고, 실제 대사된 후원금의 수입·사용액은 익명 집계로 공개한다.
 
