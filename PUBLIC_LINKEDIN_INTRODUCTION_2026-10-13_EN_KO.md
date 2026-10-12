@@ -29,6 +29,8 @@ The research began primarily through Korean-language collaboration between the h
 ### Why independent research support matters
 The individual researcher reports working **full-time without current research compensation**. Continued progress requires sustainable research time and access to LLM services.
 
+The project chose to prioritize direct individual sponsorship over dependence on a single institutional funding route. The purpose is to **reduce affiliation-related conflicts and incentives that could bias research**, while openly documenting research progress, results (including negative findings), corrections and the use of support funds. This choice does not itself guarantee independence or allege misconduct by any previous funder.
+
 **Individual GitHub Sponsors support is limited to two discretionary research uses:**
 1. **Reasonable support for the researcher's working time**, including investigation, experiment design, analysis, checking and documenting results.
 2. **LLM subscriptions and usage fees** for research, investigation, analysis, experiments, verification, and continuing research development.
@@ -71,6 +73,8 @@ E007은 재현 가능한 **합성 계산결과**, E008은 **실험 결과가 아
 
 ### 전업 독립 연구의 지속을 위한 지원
 연구자는 현재 **전업으로 연구하고 있으나 연구에 대한 보수를 받지 못하고 있다고 밝힙니다**. 지속적인 전진에는 연구시간의 경제적 기반과 LLM 사용비용이 필요합니다.
+
+기존의 연구과제별 연구비 제안보다 개인 직접 후원을 우선하는 이유는 **특정 기관·소속에 대한 의존과 그로 인한 이해상충·연구 편향 위험을 줄이기 위해서**다. 연구 진행 과정과 결과, 부정적 결과·오류교정, 후원금 사용내역을 공개 가능한 범위에서 지속적으로 공유하며 발전시키고자 한다. 후원 방식의 변경만으로 편향이 사라진다고 단정하거나 과거 지원기관의 부당한 개입을 주장하는 것은 아니다.
 
 **개인 GitHub Sponsors 후원금의 사용처는 다음 두 가지로 한정합니다.**
 
