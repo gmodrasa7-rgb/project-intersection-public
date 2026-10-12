@@ -168,7 +168,7 @@ def self_test():
     assert not validate_rows(valid), validate_rows(valid)
     assert any("balance" in x for x in validate_rows([valid[0].replace("| 3000 | VERIFIED", "| 2000 | VERIFIED")]))
     assert any("Opening" in x for x in validate_rows([valid[0], valid[1].replace("| 3000 | 2000", "| 5000 | 2000")]))
-    assert any("overlapping" in x or "Overlapping" in x for x in validate_rows([valid[0], valid[0]]))
+    assert any("duplicate" in x.lower() or "overlap" in x.lower() for x in validate_rows([valid[0], valid[0]]))
     assert any("VERIFIED" in x for x in validate_rows([valid[0].replace("VERIFIED", "PENDING")]))
     print("PASS: internal valid arithmetic, tampered balance, carry, duplicate period and status controls.")
     return 0
