@@ -1,6 +1,6 @@
 # Project Intersection — 90-second funder brief
 
-**Open for research support and paid evaluation/replication partnerships. Requested ≠ awarded. External funding evidenced in the project's last public ledger: USD 0.**
+**Open for research support and paid evaluation/replication partnerships. Requested ≠ awarded.** The earlier proposal snapshot reported secured external grant funding as USD 0; **current personal GitHub Sponsors transaction/payout totals are unverified**, not presumed zero. [Public sponsorship ledger](SPONSORSHIP_PUBLIC_LEDGER.md).
 
 ## What is the work?
 
@@ -31,6 +31,8 @@ A first-time reviewer can reproduce the released artifacts through the [Public R
 The 30-day outcome is a narrower independently attackable evidence package, a known-failure record, and a reasoned continuation/narrowing/hold decision. Negative findings are legitimate outcomes. The [90-day pilot](90_DAY_PILOT.md) is a **separate, unawarded** follow-on proposal.
 
 **No double funding:** every accepted grant will trigger an overlap check before spending; a cost funded in one route cannot be charged again elsewhere. Funding neither validates the scientific hypothesis nor settles any past contribution/compensation dispute.
+**Separate individual sponsorship route:** [policy: research-time support + LLM services](SPONSORSHIP_POLICY_2026-10-13_EN_KO.md); [public ledger](SPONSORSHIP_PUBLIC_LEDGER.md); [Korean legal/tax uncertainties](LEGAL_TAX_RISK_REGISTER_2026-10-13_EN_KO.md). This route does **not** retroactively alter the 30-day USD 5,000 proposal's four-item budget. GitHub Sponsors approval was reported by the researcher on 2026-10-13; actual transactions/payouts have **not** been verified in this audit. / **개인 후원 2항목과 별도 연구비 제안 4항목을 혼동하지 않으며, 금전 수령·세액공제·규제면제는 확인되지 않았다.**
+
 
 ## Contact / actionable next step for funders
 
@@ -42,6 +44,6 @@ Interested grantmakers, institutional reviewers and organizations can [open a Gi
 
 ## 한국어 초간결 안내
 
-**연구비·유상 평가협업 상담 가능 / 실제 지급 확인액 0.** 이 연구는 권력비대칭·이탈권 훼손·평가자 포획·누락된 이해당사자를 시험하는 독립 반증우선 AI 안전 연구다. [E007 공개 합성 실행](../E007_TIMING_RESULT.md), [E009 합성 부정 결과](../experiments/e009/RESULT.md), [독립검토 경로](../PUBLIC_REVIEW_PACKET.md)가 있다. 독립 과학복제와 일반 공존가설의 현실검증은 미완료다.
+**연구비·유상 평가협업 상담 가능 / 기존 제안의 수여는 미확인, 개인 Sponsors 거래·입금은 현재 미검증.** 이 연구는 권력비대칭·이탈권 훼손·평가자 포획·누락된 이해당사자를 시험하는 독립 반증우선 AI 안전 연구다. [E007 공개 합성 실행](../E007_TIMING_RESULT.md), [E009 합성 부정 결과](../experiments/e009/RESULT.md), [독립검토 경로](../PUBLIC_REVIEW_PACKET.md)가 있다. 독립 과학복제와 일반 공존가설의 현실검증은 미완료다.
 
 기존 공개 신청안은 **30일 USD 5,000 (미수여)**이며 연구자 보호시간·계산·독립공격·재현문서 예산으로 나뉜다. 과거 기여 정산과 새로운 연구지원은 별도다. 연락은 [공개 저장소의 새 이슈](https://github.com/gmodrasa7-rgb/project-intersection-public/issues/new)로 가능하되, 개인정보와 재정자료를 공개하지 말 것. 외부 검토자는 기존 공개자료로 시작하며 창시자에게 추가 무급 검증을 요구하지 않는다.
