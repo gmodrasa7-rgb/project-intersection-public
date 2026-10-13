@@ -129,7 +129,7 @@ function buildReport(data){
 }
 if(require.main===module){
  const root=__dirname, bytes=fs.readFileSync(path.join(root,'scenario_matrix.json'));
- const sha=crypto.createHash('sha1').update('blob '+bytes.length+'\\0'.replace('\\0','\0')).update(bytes).digest('hex');
+ const sha=crypto.createHash('sha1').update('blob '+bytes.length).update(Buffer.from([0])).update(bytes).digest('hex');
  assert.equal(sha,"bf7d863182844c21ce2de5f63006eea127962b80",'Original prereg scenario blob changed; need explicit new version');
  const data=JSON.parse(bytes.toString('utf8'));
  const output=buildReport(data);
