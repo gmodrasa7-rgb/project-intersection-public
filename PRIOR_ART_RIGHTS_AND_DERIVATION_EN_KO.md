@@ -3,6 +3,7 @@
 
 **Status / 상태:** PARTIAL SEED — NOT A COMPLETE RIGHTS OR HISTORICAL-PRIORITY AUDIT / 부분 등록. 전수 저작권·최초발안 검증 완료 아님.
 **Snapshot / 기준:** 2026-10-13; 211 file-path inventory entries (Markdown/JSON/JS/Python) on public `main`, 25 seeded work/source rows.
+**File-and-line source discovery / 파일·행 출처 탐색:** [Pilot occurrence index: 7 core documents, 294 DOI/URL candidates / 핵심문서 7개에서 294개 출처 후보](knowledge/source-occurrence-pilot-2026-10-13.json). **Candidate extraction ≠ confirmed citation or copyright/author audit / 출처 후보 자동추출은 실제 인용·권리자 검증이 아님.**
 **Machine-readable / 기계판독 정본:** [knowledge/prior-art-rights-register-2026-10-13.json](knowledge/prior-art-rights-register-2026-10-13.json)
 **Existing studies / 기존 원장:** [PRIOR_ART_AND_ATTRIBUTION.md](PRIOR_ART_AND_ATTRIBUTION.md) · [PRIOR_ART_SAFETY_GOVERNANCE_CROSSWALK.md](PRIOR_ART_SAFETY_GOVERNANCE_CROSSWALK.md) · [knowledge/SOURCE_REGISTRY.md](knowledge/SOURCE_REGISTRY.md)
 **Project copyright boundary / 우리 이용허락 범위:** [RESEARCH_RIGHTS_SCOPE_EN_KO.md](RESEARCH_RIGHTS_SCOPE_EN_KO.md) (does NOT cover others' materials).
