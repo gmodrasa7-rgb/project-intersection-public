@@ -30,6 +30,10 @@ on:
       - "research/AI_SELF_OBSERVABILITY_AUDIT_DILEMMA_2026-10-13_EN_KO.md"
       - "tools/probe_observational_equivalence.py"
       - "tools/check_roadmap_bilingual_gate.py"
+      - "tools/check_public_navigation.py"
+      - "*.md"
+      - "*.json"
+      - "**/*.md"
       - ".github/pull_request_template.md"
       - ".github/workflows/public-repository-audit.yml"
   push:
@@ -60,6 +64,10 @@ on:
       - "research/AI_SELF_OBSERVABILITY_AUDIT_DILEMMA_2026-10-13_EN_KO.md"
       - "tools/probe_observational_equivalence.py"
       - "tools/check_roadmap_bilingual_gate.py"
+      - "tools/check_public_navigation.py"
+      - "*.md"
+      - "*.json"
+      - "**/*.md"
       - ".github/pull_request_template.md"
       - ".github/workflows/public-repository-audit.yml"
   workflow_dispatch:
@@ -82,6 +90,12 @@ jobs:
 
       - name: Verify observation equivalence negative control (toy only)
         run: python tools/probe_observational_equivalence.py
+
+      - name: Check internal public reference links and root clutter
+        run: |
+          python tools/check_public_navigation.py --self-test
+          python tools/check_public_navigation.py --strict-core
+          python tools/check_public_navigation.py --report-all
 
       - name: Run public-governance regression checks
         shell: bash
