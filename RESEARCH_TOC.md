@@ -1,5 +1,5 @@
 # Public Navigation Layer / 공개 탐색층
-**PIA(PI-ANCHOR) v0.1 연구자료 시스템 업그레이드:** [PI 로드맵 v0.2 운영 보충 — 영문 원본1·한국어 원본2](research/RESEARCH_ROADMAP_v0_2_EN_KO.md#operational-appendix--pia-v01-upgrade-track-2026-10-13) — 기존 PI 6단계 유지, P0~P5·PIA v0.2~v1.0 **목표/승격조건(미완료)** 명시. PIA 현재 버전 **v0.1** 유지.
+**PIA(PI-ANCHOR) v0.1 연구자료 시스템 업그레이드:** [PI 로드맵 v0.2 운영 보충 — 영문 원본1·한국어 원본2](research/RESEARCH_ROADMAP_v0_2_EN_KO.md) — 기존 PI 6단계 유지, P0~P5·PIA v0.2~v1.0 **목표/승격조건(미완료)** 명시. PIA 현재 버전 **v0.1** 유지.
 
 **PI Roadmap v0.2.2 / 숨은 위험·현재 경로 판단 선행연구 보충:** [English Original 1 · 한국어 원본2, 선행자료 22건](research/PI_ROADMAP_HIDDEN_ROUTE_PRIOR_ART_V0_2_2_EN_KO.md) — 보이지 않는 실제 상태·검사 미탐·정보가치·사용/확인/우회/중단. 기존 여섯 단계와 v0.2.1 보존. **22 SOURCES RECHECKED / PI TEST NOT EXECUTED.**
 
