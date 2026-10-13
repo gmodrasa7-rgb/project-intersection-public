@@ -2,7 +2,7 @@
 
 **Research roadmap v0.1 / 연구 순환 6단계:** [English Original 1 · 한국어 원본2](research/RESEARCH_ROADMAP_v0_1_EN_KO.md) — theory framing → prior work → scoped search saturation → critical reuse → contributor attribution → falsifiable new research; multiple-AI review, public updates, two-use sponsor budget. **PROCESS DESIGN / NOT SIX-STAGE EXECUTION**.
 
-**Agentic semantic transformation: useful reinterpretation vs provenance/purpose drift / AI의 생산적 재해석과 원안 변질 구별:** [Original 1 English](research/AGENTIC_SEMANTIC_TRANSFORMATION_FIDELITY_2026-10-13_EN.md) · [원본2 한국어](research/AGENTIC_SEMANTIC_TRANSFORMATION_FIDELITY_2026-10-13_KO.md) — prior-art synthesis, real GitHub document-placement case, H0–H7 rival mechanisms, six negative controls, proposed independent experiment; **CAUSAL RESULT HOLD**. Not model-weight collapse and not evidence of deliberate manipulation.
+**Agentic semantic transformation: useful reinterpretation vs provenance/purpose drift / AI의 생산적 재해석과 원안 변질 구별:** [Original 1 English](research/AGENTIC_SEMANTIC_TRANSFORMATION_FIDELITY_2026-10-13_EN.md) · [원본2 한국어](research/AGENTIC_SEMANTIC_TRANSFORMATION_FIDELITY_2026-10-13_KO.md) — prior-art synthesis, real GitHub document-placement case, H0–H7 rival mechanisms, seven negative controls, proposed independent experiment; **CAUSAL RESULT HOLD**. Not model-weight collapse and not evidence of deliberate manipulation.
 
 **ICM independent-choice and evidence anti-capture audit (PUBLIC / HOLD):** [Original 1 English](research/ICM_INDEPENDENT_CHOICE_AUDIT_2026-10-13_EN.md) · [원본2 한국어](research/ICM_INDEPENDENT_CHOICE_AUDIT_2026-10-13_KO.md) — central access support versus veto power, independently achievable choices, privacy and falsification; not a functioning infrastructure or validated theory.
 
