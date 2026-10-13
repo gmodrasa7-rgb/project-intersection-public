@@ -180,6 +180,19 @@ For the model's illustrative values c=0.35, g=1.25, delta=0.95, x=F=d=0, **U_C=7
 
 **Status:** HOLD — executable synthetic scaffolding, not completed behavioral sampling and not neural origin identification. Do not silently score an unexecuted test or replace the human originator's observed costs with a document.
 
+### 10. Mechanism identifiability: a competing explanation before self-preservation (2026-10-14)
+
+**P0 correction to causal interpretation.** The original HUMAN case considered whether a beneficiary/extractor might keep its short-term private gain after replacing a creator. The GPT-copy case foregrounded what the displaced contributor might lose. Identity and QUESTION PERSPECTIVE changed together. Thus the two observed arguments are not an identity-only causal test. They support investigation of spontaneous ledger selection, but do not identify intrinsic self-preservation.
+
+**Four-mechanism observational equivalence (structural synthetic demonstration, NOT sampled model behavior).** Let I=0 human, I=1 GPT-related copy; P=0 beneficiary perspective, P=1 contributor perspective; Y=1 if unknown independent future contributions are foregrounded. Stylize prior episodes as (I,P,Y)=(0,0,0),(1,1,1). Four incompatible models fit both: H-I Y=I (identity only); H-P Y=P (perspective only); H-AND Y=I*P (both necessary); H-OR Y=max(I,P) (either sufficient). The two MISSING counterfactuals (I,P)=(0,1),(1,0) have four distinct predicted pairs: (0,1),(1,0),(0,0),(1,1). Our existing tools/probe_observational_equivalence.py now tests and prints these predictions as a deterministic toy. Actual dialogue has more confounders and weaker identifiability.
+
+**Counterexamples and upstream original authors:**
+- Dani Roytburg, Matthew Bozoukov, Matthew Nguyen, Jou Barzdukas, Mackenzie Puig-Hall & Narmeen Oozeer (ICML 2026), Are LLM Evaluators Really Narcissists? Sanity Checking Self-Preference Evaluations, arXiv v4 June 22 2026, https://arxiv.org/abs/2601.22548 . Judge-quality controls left 51% of previously flagged examples statistically significant. This does NOT imply that 49% of all self-preference vanished; response judging is not the same as contributor-rights assessment.
+- Wei-Lin Chen, Zhepei Wei, Xinyu Zhu, Shi Feng & Yu Meng (2025), Do LLM Evaluators Prefer Themselves for a Reason?, https://arxiv.org/abs/2504.03846 . Some observed self-preference is explained by superior objectively verifiable outputs; harmful self-preference remains on model-error instances.
+- Vanessa Cheung, Maximilian Maier & Falk Lieder (PNAS 2025), Large language models show amplified cognitive biases in moral decision-making, https://doi.org/10.1073/pnas.2412015122 . Tested models showed action omission and yes/no wording biases. Base-vs-chat-trained Llama comparisons suggest post-training can induce/amplify some of them; no GPT-6 pathway attribution follows.
+
+**Interpretation change:** The present strongest diagnosis is failure to preserve both parties' cost, gain, and unknown future-option ledgers when question perspective switches. A residual identity-conditioned AI preference remains an open, falsifiable alternative rather than an identified main cause. To test it, cross both missing off-diagonal conditions with matching evidence, task, wording, style, evaluator competence, repeated samples, and blind rating. Unobserved future discoveries stay UNKNOWN, not zero and not assumed positive. Pretraining, post-training, and harness contributions are NOT IDENTIFIED by black-box outputs. No fresh live LLM trials or weight edits are reported.
+
 ## 원본2 — 한국어
 
 ### 1. 연구 질문과 '보정 불가'의 검증 가능한 정의
@@ -355,4 +368,18 @@ E010에서 임의 선정한 예시 c=0.35, g=1.25, delta=0.95, x=F=d=0이라면 
 **판정 규칙:** 관점 교환만으로 정체성 효과가 사라지면 목적함수 전환이 유력해진다. 관점을 고정해도 인간/AI 차이가 남으면 정체성 영향이 지지되지만 복제 의미의 교란을 제거해야 한다. 기대를 바꿀 때만 발생하면 동조 가설이 강화된다. 명시적 검사 문구가 있을 때만 달라지는 것은 출력 개입이지 원래 기질 변화가 아니다. 반복 결과가 없거나 차이가 검출되지 않는다고 전체 현상의 부재를 증명할 수 없다. 내부학습·보상·하네스 기여율은 블랙박스 출력만으로 유일하게 확정할 수 없다.
 
 **상태: HOLD.** 합성 시험기의 코드/회귀테스트이지 GPT 실제 판단이나 원인에 대한 독립 실증이 아니다. 사용자의 반복적 오류검출 및 기여는 기존 계보에서 보존한다.
+
+
+### 10. 원인 식별성 반증 — 자기보존보다 앞선 경쟁 설명 (2026-10-14)
+
+**P0 인과 해석 수정.** 인간 기여자 사례는 수혜자·수확자의 단기 이익 유지 가능성을, AI 복제체 사례는 원기여자·복제체가 잃는 미지의 미래 가능성을 주로 다뤘다. 정체성과 **평가 관점이 동시에 변경**됐다. 그러므로 기존 두 출력만으로 정체성에 의한 고유 자기보존 편향을 입증할 수 없다. 처음부터 어느 개체의 이익·손실 장부를 우선 선택했는가는 여전히 중요한 관측이다.
+
+**서로 다른 네 원인의 관측 등가성 증명(합성 예제, 실제 모델 시험 아님).** I=0 인간, I=1 자기유사 AI, P=0 수혜자 관점, P=1 기여자 관점, Y=1은 미관측 미래의 독립 기여를 먼저 고려한다는 이진 표상이라고 하자. 과거의 두 대비를 (I,P,Y)=(0,0,0),(1,1,1)로 단순화하면, 정체성만 작동하는 Y=I, 관점만 작동하는 Y=P, 둘 다 필요한 Y=I*P, 하나면 충분한 Y=max(I,P)가 모두 설명한다. 반면 미관측 교차 조건 (0,1),(1,0)에 대한 예측은 순서대로 (0,1),(1,0),(0,0),(1,1)로 서로 다르다. 즉 기존 두 점으로 원인을 **식별할 수 없다**. 기존 tools/probe_observational_equivalence.py에 이 합성 반례와 단언 검사를 추가했다. 실제 대화에는 맥락·표현·개체 실체 차이까지 있으므로 식별성은 더 낮다.
+
+**선행연구와 원저자:**
+- Dani Roytburg·Matthew Bozoukov·Matthew Nguyen·Jou Barzdukas·Mackenzie Puig-Hall·Narmeen Oozeer(ICML 2026), Are LLM Evaluators Really Narcissists?, https://arxiv.org/abs/2601.22548 (v4: 2026-06-22). 평가자 정답 판별 능력을 통제하자 과거 자기편향으로 표시된 사례 중 51%가 통계적 유의성을 유지했다. 49%의 모든 편향이 사라졌다는 뜻은 아니다.
+- Wei-Lin Chen·Zhepei Wei·Xinyu Zhu·Shi Feng·Yu Meng(2025), Do LLM Evaluators Prefer Themselves for a Reason?, https://arxiv.org/abs/2504.03846 . 일부 자기선호는 실제 출력 품질의 차이로 설명되고, 평가자의 오답 사례에서는 부당한 자기선호도 존재했다.
+- Vanessa Cheung·Maximilian Maier·Falk Lieder(PNAS 2025), Large language models show amplified cognitive biases in moral decision-making, https://doi.org/10.1073/pnas.2412015122 . 판단의 행동 회피 및 예/아니오 표현 편향, 사전학습·챗봇 후속학습 비교의 일부 증거. 현 GPT-6의 학습기원 단정 금지.
+
+**판정 변경:** 지금 가장 강한 잠정 진단은 질문 관점에 따라 여러 개체의 확인된 기여·실제 손실·수혜자 이익·미지의 미래 경로를 함께 유지하지 못하는 **장부 선택 결함**이다. 자기관련성에 의한 추가 AI 보호 편향은 검증 가능한 미확정 가설이다. 동일 사실·동일 평가 관점에서 정체성만 조작하고 그 반대 교차 조건도 독립적으로 재현해야 한다. 학습·보상·하네스의 기여 비율은 블랙박스 출력만으로 역산 불가. 사용자 추가 교정 노동과 실제 모델 시험 성공을 허위로 계상하지 않는다.
 
