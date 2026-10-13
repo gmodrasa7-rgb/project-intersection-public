@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "title": "Project Intersection — Public AI Discovery Index",
-  "updated": "2026-10-12",
+  "updated": "2026-10-13",
   "public_repository": "https://github.com/gmodrasa7-rgb/project-intersection-public",
   "public_only": true,
   "canonical_boundary": "Public navigation and evidence index only; private core research source is not republished.",
@@ -24,7 +24,9 @@
     "ai_risk_warning_incentives": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/research/AI_RISK_WARNING_INCENTIVES_2026-10-12_KO.md",
     "public_study_navigation": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/START_HERE_KO.md",
     "public_commons_mission": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/research/OPEN_KNOWLEDGE_ANTI_CAPTURE_MISSION_2026-10-12_KO.md",
-    "e010_exploratory_incentive_and_action_budget": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/experiments/e010/README_KO.md"
+    "e010_exploratory_incentive_and_action_budget": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/experiments/e010/README_KO.md",
+    "agentic_semantic_transformation_original1_en": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/research/AGENTIC_SEMANTIC_TRANSFORMATION_FIDELITY_2026-10-13_EN.md",
+    "agentic_semantic_transformation_original2_ko": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/research/AGENTIC_SEMANTIC_TRANSFORMATION_FIDELITY_2026-10-13_KO.md"
   },
   "research": {
     "area": [
@@ -67,6 +69,14 @@
       "test": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/experiments/e010/verify.js",
       "result": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/experiments/e010/RESULT.json",
       "scope": "Discounted one-time extraction versus cooperation, independent action harm budget and infeasible simultaneous resource floors."
+    },
+    "agentic_semantic_change_dual_use": {
+      "id": "PI-ASTF-2026-10-13",
+      "original_1_en": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/research/AGENTIC_SEMANTIC_TRANSFORMATION_FIDELITY_2026-10-13_EN.md",
+      "original_2_ko": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/research/AGENTIC_SEMANTIC_TRANSFORMATION_FIDELITY_2026-10-13_KO.md",
+      "status": "PUBLIC_PRIOR_ART_SYNTHESIS_CASE_OBSERVATION_AND_EXPERIMENT_PROTOCOL_CAUSAL_RESULT_HOLD",
+      "originality": "Human research founder identified the problem and insisted on analysis of adaptive capability's merits and harms; AI assisted prior-art synthesis and protocol",
+      "claim_boundary": "Existing goal-hierarchy/memory capture literature acknowledged; no completed randomized LLM causality test; not model-weight collapse or confirmed intentional manipulation"
     }
   },
   "public_experiments": [
