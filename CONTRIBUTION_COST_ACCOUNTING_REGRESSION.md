@@ -2,6 +2,7 @@
 ## 기여-비용 계상 및 교정노동 회귀 테스트
 
 Status: **PUBLIC GOVERNANCE / METHODOLOGY ARTIFACT**
+**Additional loss not visible in money totals / 단순 금전손해를 넘어선 인식손실:** [Contributor loss × Unknown Paradox — English Original 1 / 한국어 원본2](research/CONTRIBUTOR_LOSS_UNKNOWN_PARADOX_v0_1_EN_KO.md). Coverage loss is a hypothesis requiring independent fault detection, not proof that all contributor departures are harmful. / 기여자 손실 후 독립 오류발견 경로와 메타관측 소실을 별도로 검증하며 경고 감소를 곧 안전성 증거로 판정하지 않는다.
 
 This document defines a role-reversible audit rule for systems, organizations, research programs, and AI-assisted workflows that learn from, benefit from, or are repeatedly corrected by a contributor.
 

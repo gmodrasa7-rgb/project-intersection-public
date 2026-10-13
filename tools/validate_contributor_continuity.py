@@ -82,6 +82,46 @@ def audit() -> tuple[list[str], dict]:
         check(hypothesis["id"] and hypothesis["empirical_status"] in ("NOT_TESTED_BY_THIS_REGISTRY", "NEEDS_EQUAL_TESTING"), "Unfounded prediction promoted to fact", errors)
     check(data["safety"]["no_private_health_family_financial_disclosures"] is True, "Missing privacy boundary", errors)
     check(data["safety"]["no_auto_copyright_claim"] is True, "Missing ownership boundary", errors)
+    # The loss-to-unknown hypothesis adds a new epistemic mechanism; do not pass
+    # generated prose off as observed harm or actual compensation evidence.
+    unknown_report = ROOT / "research" / "CONTRIBUTOR_LOSS_UNKNOWN_PARADOX_v0_1_EN_KO.md"
+    unknown_registry = ROOT / "knowledge" / "contributor-loss-unknown-paradox-v0_1.json"
+    check(unknown_report.is_file(), "Missing bilingual loss-to-unknown source", errors)
+    check(unknown_registry.is_file(), "Missing loss-to-unknown claims", errors)
+    if unknown_registry.is_file():
+        u = load(unknown_registry)
+        known_ids = {f"CLUP-{n:02d}" for n in range(1, 7)}
+        found_ids = {item.get("id") for item in u.get("claim_states", [])}
+        check(found_ids == known_ids, "Missing/duplicate CLUP hypotheses", errors)
+        check(len(u.get("claim_states", [])) == len(found_ids), "Duplicate CLUP claim IDs", errors)
+        check(u.get("status") == "HYPOTHESIS_PENDING_INDEPENDENT_VALIDATION",
+              "Loss-to-unknown mechanism prematurely promoted as fact", errors)
+        check(u.get("test_plan", {}).get("data_safety") is not None,
+              "Human-subject/health privacy boundary missing", errors)
+        for claim in u.get("claim_states", []):
+            cid = claim.get("id")
+            check(claim.get("empirical_status") == "NOT_TESTED", f"{cid}: unsupported empirical result", errors)
+            check(claim.get("independent_replication") is None, f"{cid}: fabricated replication", errors)
+            check(claim.get("effect_size") is None, f"{cid}: fabricated effect size", errors)
+            check(bool(claim.get("disconfirmer")), f"{cid}: missing counterexample", errors)
+            check(claim.get("harm_or_intent_attributed_to_named_company") is False,
+                  f"{cid}: unsupported named-company allegation", errors)
+        check(len(u.get("provenance_sources", [])) >= 6,
+              "Missing original authors in prior-art source comparison", errors)
+        existing = next((item for item in data["theoretical_scenarios"]
+                         if item.get("id") == "HS-04"), None)
+        check(existing is not None, "Continuity ledger not linked to HS-04", errors)
+        if existing is not None:
+            check(existing.get("public_spec") == unknown_report.relative_to(ROOT).as_posix(),
+                  "HS-04 has wrong report link", errors)
+            check(existing.get("empirical_status") == "NOT_TESTED_BY_THIS_REGISTRY",
+                  "HS-04 prematurely promoted to fact", errors)
+    if unknown_report.is_file():
+        raw = unknown_report.read_text(encoding="utf-8")
+        check("## Original 1 — English" in raw and "## 원본2 — 한국어" in raw,
+              "Missing fully paired EN1/KO2 hypotheses", errors)
+        check("consent" in raw.lower() and "이탈" in raw,
+              "Contributor exit protection omitted", errors)
     summary = {"source_records": len(records), "snapshot_artifacts": len(files),
                "file_level_audits": data["snapshot"]["known_file_level_audits"],
                "scenario_count": len(data["theoretical_scenarios"]),
