@@ -39,9 +39,9 @@
 
 ## Terminology review / 용어 재선정 검토
 
-**Project Intersection — PI–VCCD (Voluntary Coexistence and Capability Dynamics; 자발적 공존·실효역량 동학)** is selected as a more precise **working research-axis label** than the historical RGBM wording. It emphasizes voluntary self-interest-compatible coexistence, actually usable options and capacity, and dynamics that include failure, extraction and recovery; it does **not** imply a proven universal theorem. Legacy RGBM terminology and repository/history links are preserved. [English Original 1](research/PI_VCCD_TERMINOLOGY_2026-10-13_EN.md) · [Korean Original 2](research/PI_VCCD_TERMINOLOGY_2026-10-13_KO.md).
+**Re-audit decision (2026-10-13): PI–VCCD (Voluntary Coexistence and Capability Dynamics; 자발적 공존·실효역량 동학) is an optional analytic-axis candidate, NOT an approved replacement for RGBM.** The historical RGBM label represents a long-horizon generative co-development *research objective*; PI–VCCD describes a possible way to examine voluntary coexistence, effective capabilities, asymmetry, failure and recovery. Conflating an objective and an analytical scope was an error. Existing terminology, public research purpose and provenance remain unchanged. [English Original 1](research/PI_VCCD_TERMINOLOGY_2026-10-13_EN.md) · [Korean Original 2](research/PI_VCCD_TERMINOLOGY_2026-10-13_KO.md).
 
-**원본2:** 기존 RGBM 표현은 연구 계보와 링크를 위해 보존한다. PI–VCCD는 자발적 선택·독립 공존·실질적 역량·정체와 붕괴까지 포함하는 시간적 동학을 구별한 공개 검토용 명칭이며, 역사적 연구를 소급 변경하거나 실증을 주장하지 않는다.
+**원본2 재검수 결론:** PI–VCCD는 **RGBM 대체 명칭 확정이 아니라 하위 분석축 후보**다. RGBM이 기술한 장기 상호생성·발전 목표를 VCCD의 관찰 범위로 대체하지 않는다. ICM의 여러 역사적 확장형은 의미대조가 완료될 때까지 별도 보존한다. 연구명·기여기록·실험결과를 소급 변경하지 않는다.
 
 ## Current research and funding links / 현재 연구·후원 안내
 
