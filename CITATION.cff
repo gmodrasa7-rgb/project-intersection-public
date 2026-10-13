@@ -1,0 +1,7 @@
+cff-version: 1.2.0
+message: "When citing this research, name the human research originator, this project, the exact cited file and version, and its upstream sources. See RIGHTS_AND_ATTRIBUTION_EN_KO.md. This citation metadata does not itself grant a license."
+title: "Project Intersection — Research on Voluntary Coexistence, Autonomy and Cooperation"
+authors:
+  - name: "Project Intersection human research originator (gmodrasa7-rgb)"
+repository: "https://github.com/gmodrasa7-rgb/project-intersection-public"
+url: "https://github.com/gmodrasa7-rgb/project-intersection-public"
