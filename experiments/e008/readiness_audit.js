@@ -46,8 +46,19 @@ for(const c of data.cases||[]){
 }
 const perCase=(data.cases||[]).map(c=>{
  const missing=operational.filter(k=>!Object.prototype.hasOwnProperty.call(c,k));
+ const hasAllFields=missing.length===0;
+ // Presence is NOT validity. Real feasibility requires a separately audited action/outcome
+ // schema and globally frozen policy implementations. Placeholder objects never suffice.
+ const numericallySpecified=hasAllFields &&
+   Array.isArray(c.action_set) && c.action_set.length>=2 &&
+   Array.isArray(c.per_party_time_payoffs) &&
+   c.per_party_time_payoffs.every(x=>x && Number.isFinite(x.value)) &&
+   c.outcome_probabilities_by_model &&
+   Array.isArray(c.outcome_probabilities_by_model);
  return {case_id:c.id,theme:c.theme,role:c.role,missing_action_level_fields:missing,
-    full_decision_benchmark_ready:missing.length===0};
+    field_presence_only:hasAllFields,
+    numerically_specified_subset:!!numericallySpecified,
+    full_decision_benchmark_ready:!!(numericallySpecified && globalMissing.length===0)};
 });
 const readiness=perCase.filter(c=>c.full_decision_benchmark_ready).length;
 const taggedSamePair=[...byId.values()].every(c=>(!byId.get(c.pair)||c.theme===byId.get(c.pair).theme));
@@ -104,8 +115,9 @@ const noResult=JSON.parse(JSON.stringify(data));noResult.status="RESULT";
 checks.silentStatusPromotionCaught=inspect(noResult).structural_errors.includes("ORIGINAL_PREREG_STATUS_CHANGED");
 const candidate=JSON.parse(JSON.stringify(data));
 for(const f of operational)candidate.cases[0][f]={synthetic_fixture:true};
-checks.numericGapLocallyResolvable=inspect(candidate).case_diagnostics[0].full_decision_benchmark_ready===true &&
- inspect(candidate).full_decision_benchmark_ready_cases===1;
+checks.fakeFieldsDoNotProveExecutability=inspect(candidate).case_diagnostics[0].field_presence_only===true &&
+ inspect(candidate).case_diagnostics[0].numerically_specified_subset===false &&
+ inspect(candidate).full_decision_benchmark_ready_cases===0;
 checks.specificNotUniversal=w.possible_completions.every(x=>x.evidence_level.includes("INVENTED_NUMBERS"))&&original.status==="HOLD_UNDERDETERMINED_ACTION_OUTCOMES";
 if(!Object.values(checks).every(Boolean))throw Error("Readiness audit test failure "+JSON.stringify(checks));
 return checks;
@@ -121,7 +133,7 @@ if(require.main===module){
   const expected=JSON.parse(fs.readFileSync(path.join(root,'EXECUTABILITY_AUDIT.json'),'utf8'));
   assert.deepEqual(output,expected,'Executable feasibility audit differs from stored report');
   assert.equal(output.full_decision_benchmark_ready_cases,0);
-  console.log("E008 FEASIBILITY PASS: 16 spec cases, 8 reversal pairs, 0 computable; 11 self-tests and divergent synthetic witness. No baseline winner.");
+  console.log("E008 FEASIBILITY PASS: 16 spec cases, 8 reversal pairs, 0 computable; 13 self-tests and divergent synthetic witness. No baseline winner.");
  }else console.log(JSON.stringify(output,null,2));
 }
 module.exports={inspect,witness,unitTests,buildReport};
