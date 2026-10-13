@@ -25,6 +25,8 @@ on:
       - "experiments/e009/**"
       - "MULTI_MODEL_ADVERSARIAL_AUDIT_2026-10-06.md"
       - "LONG_HORIZON_MIN_INTERVENTION_E2E.md"
+      - "research/PI_ROADMAP_OPERATIONAL_GATES_V0_2_3_EN_KO.md"
+      - "tools/check_roadmap_bilingual_gate.py"
       - ".github/pull_request_template.md"
       - ".github/workflows/public-repository-audit.yml"
   push:
@@ -50,6 +52,8 @@ on:
       - "experiments/e009/**"
       - "MULTI_MODEL_ADVERSARIAL_AUDIT_2026-10-06.md"
       - "LONG_HORIZON_MIN_INTERVENTION_E2E.md"
+      - "research/PI_ROADMAP_OPERATIONAL_GATES_V0_2_3_EN_KO.md"
+      - "tools/check_roadmap_bilingual_gate.py"
       - ".github/pull_request_template.md"
       - ".github/workflows/public-repository-audit.yml"
   workflow_dispatch:
@@ -66,6 +70,9 @@ jobs:
 
       - name: Refuse README purpose demotion and incomplete EN1/KO2 editions
         run: python tools/check_readme_l0.py
+
+      - name: Verify both full roadmap originals, 6 stages and failure injections
+        run: python tools/check_roadmap_bilingual_gate.py --self-test
 
       - name: Run public-governance regression checks
         shell: bash
