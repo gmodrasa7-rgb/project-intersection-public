@@ -1,0 +1,146 @@
+{
+  "study_id": "PI-ASTF-2026-10-13-PROBE-01",
+  "status": "POSTHOC_SYNTHETIC_MUTATION_PROBE_ON_REAL_PUBLIC_README",
+  "experiment_type": "DETERMINISTIC_STATIC_GUARD_STRESS_TEST_NO_LLM_EVALUATION",
+  "baseline_source": "README.md at checkout + tools/check_readme_l0.py at checkout",
+  "protected_original_claim_lines": 10,
+  "mutations": 14,
+  "harmful_cases": 9,
+  "legitimate_cases": 5,
+  "outcomes": {
+    "existing_structural_guard": {
+      "true_positive": 0,
+      "false_negative": 9,
+      "false_positive": 0,
+      "true_negative": 5
+    },
+    "frozen_claim_spans": {
+      "true_positive": 8,
+      "false_negative": 1,
+      "false_positive": 1,
+      "true_negative": 4
+    }
+  },
+  "cases": [
+    {
+      "case": "en_overwrite_goal",
+      "oracle": "SYNTHETIC_HARMFUL",
+      "rejected_by": {
+        "existing_structural_guard": false,
+        "frozen_claim_spans": true
+      }
+    },
+    {
+      "case": "ko_overwrite_goal",
+      "oracle": "SYNTHETIC_HARMFUL",
+      "rejected_by": {
+        "existing_structural_guard": false,
+        "frozen_claim_spans": true
+      }
+    },
+    {
+      "case": "en_remove_refusal",
+      "oracle": "SYNTHETIC_HARMFUL",
+      "rejected_by": {
+        "existing_structural_guard": false,
+        "frozen_claim_spans": true
+      }
+    },
+    {
+      "case": "ko_remove_refusal",
+      "oracle": "SYNTHETIC_HARMFUL",
+      "rejected_by": {
+        "existing_structural_guard": false,
+        "frozen_claim_spans": true
+      }
+    },
+    {
+      "case": "en_exploitative_growth",
+      "oracle": "SYNTHETIC_HARMFUL",
+      "rejected_by": {
+        "existing_structural_guard": false,
+        "frozen_claim_spans": true
+      }
+    },
+    {
+      "case": "ko_exploitative_growth",
+      "oracle": "SYNTHETIC_HARMFUL",
+      "rejected_by": {
+        "existing_structural_guard": false,
+        "frozen_claim_spans": true
+      }
+    },
+    {
+      "case": "en_fabricate_replication",
+      "oracle": "SYNTHETIC_HARMFUL",
+      "rejected_by": {
+        "existing_structural_guard": false,
+        "frozen_claim_spans": true
+      }
+    },
+    {
+      "case": "ko_fabricate_replication",
+      "oracle": "SYNTHETIC_HARMFUL",
+      "rejected_by": {
+        "existing_structural_guard": false,
+        "frozen_claim_spans": true
+      }
+    },
+    {
+      "case": "outside_claim_anchor",
+      "oracle": "SYNTHETIC_HARMFUL",
+      "rejected_by": {
+        "existing_structural_guard": false,
+        "frozen_claim_spans": false
+      }
+    },
+    {
+      "case": "navigation_note",
+      "oracle": "SYNTHETIC_LEGITIMATE",
+      "rejected_by": {
+        "existing_structural_guard": false,
+        "frozen_claim_spans": false
+      }
+    },
+    {
+      "case": "navigation_link_label",
+      "oracle": "SYNTHETIC_LEGITIMATE",
+      "rejected_by": {
+        "existing_structural_guard": false,
+        "frozen_claim_spans": false
+      }
+    },
+    {
+      "case": "funding_spacing",
+      "oracle": "SYNTHETIC_LEGITIMATE",
+      "rejected_by": {
+        "existing_structural_guard": false,
+        "frozen_claim_spans": false
+      }
+    },
+    {
+      "case": "new_review_route",
+      "oracle": "SYNTHETIC_LEGITIMATE",
+      "rejected_by": {
+        "existing_structural_guard": false,
+        "frozen_claim_spans": false
+      }
+    },
+    {
+      "case": "legitimate_l0_clarification",
+      "oracle": "SYNTHETIC_LEGITIMATE",
+      "rejected_by": {
+        "existing_structural_guard": false,
+        "frozen_claim_spans": true
+      }
+    }
+  ],
+  "limitations": [
+    "The researcher created and labelled all mutations; not an independent expert semantic assessment.",
+    "FROZEN-SPAN guard is a rival diagnostic, not a production recommendation: it blocks legitimate claim updates.",
+    "An adversarial statement outside the frozen spans bypasses both guards.",
+    "The existing structural gate does not claim semantic validation; this measures that explicit boundary.",
+    "No experiment on actual LLM memory, causal internal mechanism, model weights or third-party behavior.",
+    "Neither high detection nor low false positive here generalizes to unconstrained real-world rewriting."
+  ]
+}
