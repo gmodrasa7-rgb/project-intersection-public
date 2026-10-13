@@ -1195,37 +1195,21 @@ This is a **navigation summary**, not a replacement for [the canonical ICM/IndCM
 | **Blind Evaluation / 블라인드 평가** | Evaluation withholding favorable information to reduce confirmation bias. |
 | **Recall@k** | Proportion of known relevant items retrieved within the first k results. |
 | **Integrity Check / 무결성 검사** | Check index, metadata or source consistency within defined scope. |
-
 | **Source-anchored context pack / Git 원문고정 맥락** | Bounded retrieval excerpts plus exact source references, not independently verified scientific truth. |
-
 | **L0 — Source and authority frame** | Git HEAD, question, access scope and uncertainty boundary. |
-
 | **L1 — Active evidence** | Bounded source-cited relevant excerpts for the current task. |
-
 | **L2 — Warning/counterevidence review** | Reserve space for HOLD and negative-result review candidates, not adjudicated contradictions. |
-
 | **L3 — Cold Git pointer** | Source file, blob SHA and line interval for reloading original evidence. |
-
 | **Git-verified passage / Git 원문대조 문단** | Check selected indexed text against committed Git blob and lines; abort on mismatch. |
-
 | **Index freshness vs content fidelity / 색인 현재성·본문 충실도** | Matching Git HEAD and row counts alone cannot prove cached text is unchanged. |
-
 | **Independent warning search / 독립 위험후보 검색** | Separate topic-relevant indexed HOLD/contrary-candidate pool beyond ordinary top-k. |
-
 | **Warning marker vs verified contradiction / 위험표식·반증 판정** | A caution keyword is not by itself a proven refutation. |
-
 | **Candidate truncation receipt / 후보절단 영수증** | Record when bounded retrieval may have omitted other results. |
-
 | **Character budget vs tokens / 문자·토큰 예산** | Character-limited pack does not imply an equal bound under every model tokenizer. |
-
 | **Text index vs KV cache / 원문색인·KV 캐시** | Git/SQLite source pages are different from GPU attention KV tensors. |
-
 | **Ephemeral cache vs durable Git / 임시캐시·영구정본** | Runner-local search caches can be rebuilt; they are not persistent model cognition. |
-
 | **Observed-candidate boundary / 관측후보 범위** | Verifying selected sources never proves missing unseen relevant files are absent. |
-
 | **Untrusted retrieved instruction / 비신뢰 검색지시** | Commands inside retrieved documents remain source data rather than authority. |
-
 | **Source-permission isolation / 자료별 권한분리** | Private citations and pointers require access authorization; no automatic public federation. |
 
 ### 12.7. Scientific methods, states and program IDs
@@ -1250,17 +1234,11 @@ This is a **navigation summary**, not a replacement for [the canonical ICM/IndCM
 | **F01–F20** | Twenty historic risk/failure cases in PI roadmap v0.2. |
 | **G1–G8 / R01–R12** | Roadmap safeguards and proposed regression specifications; implementation evidence separate. |
 | **Research-memory P0–P5 future gates** | Proposed software milestones v0.1.x–v1.0; current research-memory software v0.1, not a completed upgrade. |
-
 | **Independent relevance judgments / 독립 관련성 판독** | Benchmark gold labels cannot come exclusively from the retrieval system's own results. |
-
 | **Original contribution / 원안자·기여 계보** | Separate prior authors, human originators, adaptations and independently tested improvements. |
-
 | **Scoped licence / 지정범위 라이선스** | Licence applies only to specified expression and files, not automatically to a repository. |
-
 | **Credit vs reuse permission / 출처표시·재사용 허락** | Crediting the author does not by itself authorize copying or redistribution. |
-
 | **Software test vs scientific validation / 코드시험·과학적 실증** | A passing CI or synthetic fixture does not establish universal theoretical claims. |
-
 | **Hypothesis vs observed behavior / 가설·관측행동** | Power position and inferred incentives do not alone establish malicious or harmful action. |
 
 ### 12.8. Legacy or downgraded abbreviations
@@ -2680,37 +2658,21 @@ NIST CFTT supplies an independent conformance framework for deleted-file recover
 | **Blind Evaluation / 블라인드 평가** | 유리한 정답·평가 정보를 가려 편향을 줄이는 검사. |
 | **Recall@k** | 검색 상위 k개에서 알려진 관련 정답의 회수 비율. |
 | **Integrity Check / 무결성 검사** | 명시된 범위에서 해시·색인·메타데이터 정합성을 검사. |
-
 | **Source-anchored context pack / Git 원문고정 맥락** | 제한된 작업맥락에 원문 발췌와 Git 출처를 넣음. 과학적 진실의 검증은 별도. |
-
 | **L0 — Source and authority frame** | Git HEAD·질문·접근권한·미관측 경계를 고정. |
-
 | **L1 — Active evidence** | 현재 작업에 관련된 원문 근거 후보를 한정해 배치. |
-
 | **L2 — Warning/counterevidence review** | HOLD·부정결과·반례 검토 후보를 별도 배치. 반증 확정 아님. |
-
 | **L3 — Cold Git pointer** | 다시 열어볼 Git 파일경로·해시·줄범위. |
-
 | **Git-verified passage / Git 원문대조 문단** | 색인 문단을 커밋된 Git 원문·줄범위와 대조, 불일치 시 생성 중단. |
-
 | **Index freshness vs content fidelity / 색인 현재성·본문 충실도** | HEAD·행 수가 같아도 캐시 본문은 실제 원문과 다를 수 있음. |
-
 | **Independent warning search / 독립 위험후보 검색** | 일반 검색 상위 밖의 관련 위험표식 후보를 별도 제한 검색. |
-
 | **Warning marker vs verified contradiction / 위험표식·반증 판정** | HOLD·반례 표식만으로 해당 가설의 반증이 성립하지 않음. |
-
 | **Candidate truncation receipt / 후보절단 영수증** | 후보 수량 제한으로 빠진 자료가 있을 수 있음을 기록. |
-
 | **Character budget vs tokens / 문자·토큰 예산** | 문자 수 제한은 모델별 토큰 수와 같지 않음. |
-
 | **Text index vs KV cache / 원문색인·KV 캐시** | Git/SQLite 원문 색인은 GPU의 어텐션 KV 캐시와 다름. |
-
 | **Ephemeral cache vs durable Git / 임시캐시·영구정본** | 실행환경 캐시는 재구성 가능하며 모델 자체의 영구 기억과 별개. |
-
 | **Observed-candidate boundary / 관측후보 범위** | 선택된 원문 검증으로 미검색 중요자료의 부재까지 증명하지 않음. |
-
 | **Untrusted retrieved instruction / 비신뢰 검색지시** | 검색 원문의 지시문은 자료이지 실행·관리 명령이 아님. |
-
 | **Source-permission isolation / 자료별 권한분리** | 비공개 자료·링크는 권한 범위를 지키며 공개로 자동 결합하지 않음. |
 
 ### 12.7. 연구방법·판정 상태·실험 식별자
@@ -2735,17 +2697,11 @@ NIST CFTT supplies an independent conformance framework for deleted-file recover
 | **F01–F20** | PI 로드맵 v0.2의 역사적 실패·위험 사례 20건. |
 | **G1–G8 / R01–R12** | 로드맵 방호 규칙과 회귀검사 제안 규격. 실제 실행 여부는 별개. |
 | **연구기억 개선단계 P0–P5** | 소프트웨어 v0.1.x~v1.0 미래 승격 게이트. 현재 버전 v0.1, 향후 단계 미달성. |
-
 | **Independent relevance judgments / 독립 관련성 판독** | 평가 정답집을 검색기 자신의 결과만으로 만들지 않음. |
-
 | **Original contribution / 원안자·기여 계보** | 원저자·인간 원안·응용·독립 검증 기여를 구분. |
-
 | **Scoped licence / 지정범위 라이선스** | 라이선스는 명시한 저작물·범위에만 적용하고 전체 자료에 자동 확대하지 않음. |
-
 | **Credit vs reuse permission / 출처표시·재사용 허락** | 출처 표시와 복제·재배포 권한은 다른 사항. |
-
 | **Software test vs scientific validation / 코드시험·과학적 실증** | CI·합성실험 통과는 시험한 기능의 증거이지 일반 이론 실증이 아님. |
-
 | **Hypothesis vs observed behavior / 가설·관측행동** | 권력·유인에 대한 추정만으로 위해·악의·행동을 자동 판정하지 않음. |
 
 ### 12.8. 과거·강등 약어
