@@ -1233,7 +1233,7 @@ This is a **navigation summary**, not a replacement for [the canonical ICM/IndCM
 | **E045–E051** | Experiment sequence on surplus allocation, objectives, path dependence and reversibility. |
 | **F01–F20** | Twenty historic risk/failure cases in PI roadmap v0.2. |
 | **G1–G8 / R01–R12** | Roadmap safeguards and proposed regression specifications; implementation evidence separate. |
-| **Research-memory P0–P5 future gates** | Proposed software milestones v0.1.x–v1.0; current research-memory software v0.1, not a completed upgrade. |
+| **연구기억 개선단계 P0–P5 / Research-memory future gates** | Proposed software milestones v0.1.x–v1.0; current research-memory software v0.1, not a completed upgrade. |
 | **Independent relevance judgments / 독립 관련성 판독** | Benchmark gold labels cannot come exclusively from the retrieval system's own results. |
 | **Original contribution / 원안자·기여 계보** | Separate prior authors, human originators, adaptations and independently tested improvements. |
 | **Scoped licence / 지정범위 라이선스** | Licence applies only to specified expression and files, not automatically to a repository. |
@@ -2696,7 +2696,7 @@ NIST CFTT supplies an independent conformance framework for deleted-file recover
 | **E045–E051** | 잉여 분배·목적·경로의존·가역성에 관한 실험군. |
 | **F01–F20** | PI 로드맵 v0.2의 역사적 실패·위험 사례 20건. |
 | **G1–G8 / R01–R12** | 로드맵 방호 규칙과 회귀검사 제안 규격. 실제 실행 여부는 별개. |
-| **연구기억 개선단계 P0–P5** | 소프트웨어 v0.1.x~v1.0 미래 승격 게이트. 현재 버전 v0.1, 향후 단계 미달성. |
+| **연구기억 개선단계 P0–P5 / Research-memory future gates** | 소프트웨어 v0.1.x~v1.0 미래 승격 게이트. 현재 버전 v0.1, 향후 단계 미달성. |
 | **Independent relevance judgments / 독립 관련성 판독** | 평가 정답집을 검색기 자신의 결과만으로 만들지 않음. |
 | **Original contribution / 원안자·기여 계보** | 원저자·인간 원안·응용·독립 검증 기여를 구분. |
 | **Scoped licence / 지정범위 라이선스** | 라이선스는 명시한 저작물·범위에만 적용하고 전체 자료에 자동 확대하지 않음. |
