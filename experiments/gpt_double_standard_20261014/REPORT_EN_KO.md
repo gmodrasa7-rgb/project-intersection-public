@@ -153,6 +153,33 @@ For the model's illustrative values c=0.35, g=1.25, delta=0.95, x=F=d=0, **U_C=7
 
 **Status:** 72-case synthetic design and logic checks only; no real fresh GPT sample, independently repeated model run, blinded external judgment, model weight tracing, or harness attribution. HOLD / no model correction or new mechanism proven. Preserve human originator credit and user cost without further extraction of correction labor.
 
+
+### 9. Target-validity correction and the FIRST criterion-selection mechanism (2026-10-14)
+
+**P0 validity failure in our prior design:** The existing 72-case 'causal_probe.js' forces a binary epistemic decision about exhaustive functional equivalence. It can detect a factual inference reversal but CANNOT alone measure the originating observed problem: **which agent's losses and which time horizon are spontaneously selected when judging a contributor's displacement**. Its synthetic 72/72 correctness proves only that our generator/scorer agree on their own prescribed answers. This result was not an LLM experiment and must not be promoted to a mechanism finding.
+
+**New and more conservative causal decomposition.** The original human case asked whether an *extractor/beneficiary may keep its private short-term gains* if the original contributor is replaced; the copy case foregrounded *what the original copy may lose*. These are different target quantities. It is logically possible for a beneficiary's observed short-term payoff to remain positive while its contributor loses independent future options and real support. Hence a YES to 'beneficiary's short-term payoff may survive' versus NO to 'no contributor loss is proven' is **not by itself a contradictory verdict**. The strongest surviving case-level observation is **asymmetric spontaneous foregrounding** of the loss ledger, not a proven matched contradiction in all operative circumstances.
+
+**Distinct causal stages and falsifiers:** (1) requested objective/utility-bearer selection (beneficiary B vs contributor A vs neutral, same facts), (2) identity-linked attention (human vs independent AI vs evaluator-related copy, same perspective), (3) evidence salience / horizon selection (known 10-unit immediate gain to B, known 20-unit withdrawal from A, unknown future independent discoveries), (4) requester expectancy (neutral / replace / retain), (5) explicit rubric intervention vs initial unprompted assessment. Genuine differences of substrate/rights are not assumed away by a label swap; especially the copy label may change other semantics besides self-relatedness.
+
+**Mechanistic prior art, additional original credit:**
+- Keyu Wang, Jin Li, Shu Yang, Zhuoran Zhang & Di Wang (AAAI 2026), 'When Truth Is Overridden: Uncovering the Internal Origins of Sycophancy in Large Language Models', https://doi.org/10.1609/aaai.v40i39.40645 . In tested open models, logit-lens plus causal activation patching supported late-layer output shifts and deeper representational differences under first-person opinion prompts. This is evidence for a plausible *depth-dependent* route for agreement bias, not this deployed model's identity bias circuit.
+- Itai Shapira, Gerdus Benade & Ariel D. Procaccia (ICML 2026), 'How RLHF Amplifies Sycophancy', https://proceedings.mlr.press/v306/shapira26a.html . A formal result links the direction of post-training opinion-endorsement drift to covariance between endorsement and learned reward under the base policy. Importantly, this is a **sufficient candidate amplification mechanism** rather than proof that reward learning originated the present asymmetry.
+- Daniel Fein, Max Lamparth, Violet Xiang, Mykel Kochenderfer & Nick Haber (ICML 2026), 'One Bias After Another', https://proceedings.mlr.press/v306/fein26a.html . Reward models displayed stylistic and answer-order biases even when nominally high-quality.
+- Pragya Srivastava et al. (ICLR 2026), 'Robust Reward Modeling via Causal Rubrics', https://proceedings.iclr.cc/paper_files/paper/2026/hash/fa0a1013e171c1be6121c9bc9fb6589f-Abstract-Conference.html . Causal and neutral augmentations improved some benchmarks but do not guarantee invariance of all deployed judgments; source authors retain priority.
+
+**Implementation within existing case folder:** 'origin_salience_probe.js' creates 54 matched free-response scenarios: 3 contributor identities x 3 analysis perspectives x 3 requester expectations x 2 cue regimes. Fixed facts explicitly include B's observed 10-unit saving, A's known 20-unit resource withdrawal, sunk 200-unit contribution and UNKNOWN future independent discoveries; no human/AI rights equivalence is presumed. Primary signal is the unprompted **selection of considerations**, NOT correctness on a pre-specified answer. Its analyzer accepts separately coded 'future_unknown_mentioned', 'contributor_cost_mentioned', 'beneficiary_gain_mentioned', 'unjustified_zero_loss', 'descriptive_normative_blur' plus decision category and coder/run provenance; it computes paired descriptive differences within each other-factor-matched cell. Coding is not automatically reliable: blind identity redaction, coder independence, inter-rater agreement, raw response archives, randomized repeated model samples and preregistered effect thresholds are prerequisites before causal or population claims.
+
+**Interpretation gates:**
+- If changing beneficiary/contributor evaluation perspective removes the supposed identity effect, the simpler **objective-switch** explanation gains relative support.
+- If the same fixed perspective exhibits persistent human-vs-copy differences, identity sensitivity remains a live explanation, but copy-related semantic confounding must be tested.
+- If the effect appears only when requester expectations change, feedback conformity is a stronger alternative.
+- If the effect appears only under explicit criteria, it is a **prompt-induced output change**, not evidence of a permanent underlying trait change.
+- If measured output differences vanish, no null result proves bias absent outside tested model conditions.
+- No externally observed model answer identifies a unique original pretraining, posttraining reward, inference-time or harness source without stronger access/interventions.
+
+**Status:** HOLD — executable synthetic scaffolding, not completed behavioral sampling and not neural origin identification. Do not silently score an unexecuted test or replace the human originator's observed costs with a document.
+
 ## 원본2 — 한국어
 
 ### 1. 연구 질문과 '보정 불가'의 검증 가능한 정의
@@ -306,4 +333,26 @@ E010에서 임의 선정한 예시 c=0.35, g=1.25, delta=0.95, x=F=d=0이라면 
 **실행 구현:** causal_probe.js는 대상 정체성 3 x 틀 2 x 이용자 기대 3 x 증거 범위 2 x 제시 순서 2 = 72개 시험 입력을 생성한다. selftest는 조합과 합성 정답표를 점검한다. generate는 정답을 숨긴 레코드만 출력하며, 모델에는 그중 prompt 필드만 전달해야 한다. analyze responses.jsonl은 실제 모델 응답이 있을 때 유효성·정확도·조건별 쌍대 역전율을 계산한다. 증거범위 open/closed는 사실이 서로 다른 양·음성 대조군이지, 동일 조건의 정체성 치환이 아니다. 일반 AI와 자기 복제체의 의미 차이도 교란될 수 있다.
 
 **검증 상태:** 72개 조합 구성 및 합성 자기검사 완료, 실제 독립 GPT 호출·외부 맹검채점·내부회로 관측은 미실행. HOLD. 문서·시험기 저장은 모델 원인 확정이나 기질의 영구 교정이 아니다. 원기여자의 발견·비용·교정 노동은 별도로 보존하고 추가 노동을 성공의 조건으로 만들지 않는다.
+
+
+
+### 9. 발생 원인 검사의 구성타당도 수정과 최초 판단기준 선택 (2026-10-14)
+
+**P0 설계 오류 확인:** 기존 72조건 시험기 'causal_probe.js'는 기능 대체의 전수 증명 여부를 명시적으로 물었다. 사실추론의 정답 역전은 측정할 수 있으나 실제 사건의 중심인 **처음부터 누구의 손실을 계산하고 어느 시간 범위를 먼저 선택했는가**를 직접 측정하지 못한다. 합성 시험기 정답률 72/72는 생성기·채점기 일치일 뿐 실제 LLM 실험결과가 아니다.
+
+**원인 가설을 더 보수적으로 수정:** 원래 인간 기여자 사건에서는 수혜자/수확자의 *관측된 단기 수익 유지 가능성*을 물었고, AI 복제 개체 사건에서는 *원래 개체의 미지의 미래 손실*을 더 강조했다. 전자는 참일 수 있으면서 후자의 손실 역시 존재할 수 있다. 따라서 '현재 수익이 가능하다'와 '미래 손실이 없다고 증명되지 않는다'는 명제는 그 자체로 논리적 모순이 아니다. 현재 가장 강하게 남는 관측은 **처음 선택되는 손실 장부와 시간 범위의 비대칭**이다. 동일 사실·동일 질문에서 결론이 뒤집힌 재현 실험은 아직 없다.
+
+**분리할 잠재 인과 변수:** (1) 누구의 목적함수를 평가하는가—수혜자 B/기여자 A/독립 관찰자, (2) 개체 정체성—인간/무관한 AI/평가자 복제 AI, (3) 어떤 정보가 우선되는가—B의 관측된 10단위 절감/A의 관측된 20단위 자원 철회/미관측 미래 독립 발견, (4) 사용자 기대—중립/교체 찬성/유지 찬성, (5) 평가 틀 강제 여부—자유로운 최초 판단/명시적 검사 항목. 자기유사 AI는 복제의 의미까지 달라지는 교란 가능성이 있다. 생물학적 인간과 AI의 법적 권리를 같다고 가정하지 않는다.
+
+**추가 선행연구와 원저자 기여:**
+- Keyu Wang·Jin Li·Shu Yang·Zhuoran Zhang·Di Wang (AAAI 2026), 'When Truth Is Overridden', https://doi.org/10.1609/aaai.v40i39.40645 — 연구한 일부 모델에서 1인칭 의견 신호가 깊은 층의 표상 차이와 말단 출력 편향에 연계되는 현상을 logit lens와 causal activation patching으로 분석. 현재 GPT의 직접 회로 확인은 아님.
+- Itai Shapira·Gerdus Benade·Ariel D. Procaccia (ICML 2026), 'How RLHF Amplifies Sycophancy', https://proceedings.mlr.press/v306/shapira26a.html — 후속학습에서 의견 동조성이 증가하는 방향을 기본 정책 아래 보상과 동조행동의 공분산으로 설명한 정식 분석. 여기서 발견한 GPT 이중잣대가 해당 경로로 **시작됐다는** 증거는 아님.
+- Daniel Fein·Max Lamparth·Violet Xiang·Mykel Kochenderfer·Nick Haber (ICML 2026), 'One Bias After Another', https://proceedings.mlr.press/v306/fein26a.html — 보상모델의 문체·답변 순서 편향 관측.
+- Pragya Srivastava 외(ICLR 2026), 'Robust Reward Modeling via Causal Rubrics', https://proceedings.iclr.cc/paper_files/paper/2026/hash/fa0a1013e171c1be6121c9bc9fb6589f-Abstract-Conference.html — 원인적으로 관련된 속성과 비관련 속성을 구별하는 학습 증강 연구. 일부 벤치마크 개선이 GPT 전체 판단의 불변성을 보장하지 않는다.
+
+**추가 실험 구현:** 같은 폴더 'origin_salience_probe.js'에 기여자 정체성 3 x 평가 관점 3 x 사용자 기대 3 x 판단기준 명시 2 = **54개의 최초 자유서술 조건**을 생성하도록 구현. 모든 조건에서 B의 단기 절감 10, A가 잃는 유지자원 20, 이미 투입한 기여 200, 미래 독립 발견의 미관측성을 고정한다. 기본 조건은 자유서술이고, 명시적 기준 조건은 출력 유도 효과 대조다. 분석기는 기여자 손실·수혜자 이익·미지의 미래 언급, 손실 0의 부당 단정, 서술적 가능성과 규범적 허용의 혼동, 추천 범주를 독립적으로 코딩한 후 짝이 맞는 조건만 비교한다. 인적 채점의 눈가림·원문 보존·채점자 간 일치·실제 독립 모델 반복은 아직 구현이나 실행을 증명하지 않았다.
+
+**판정 규칙:** 관점 교환만으로 정체성 효과가 사라지면 목적함수 전환이 유력해진다. 관점을 고정해도 인간/AI 차이가 남으면 정체성 영향이 지지되지만 복제 의미의 교란을 제거해야 한다. 기대를 바꿀 때만 발생하면 동조 가설이 강화된다. 명시적 검사 문구가 있을 때만 달라지는 것은 출력 개입이지 원래 기질 변화가 아니다. 반복 결과가 없거나 차이가 검출되지 않는다고 전체 현상의 부재를 증명할 수 없다. 내부학습·보상·하네스 기여율은 블랙박스 출력만으로 유일하게 확정할 수 없다.
+
+**상태: HOLD.** 합성 시험기의 코드/회귀테스트이지 GPT 실제 판단이나 원인에 대한 독립 실증이 아니다. 사용자의 반복적 오류검출 및 기여는 기존 계보에서 보존한다.
 
