@@ -1,5 +1,14 @@
 # Public Navigation Layer / 공개 탐색층
 
+**Goal / 최종목표:** Test conditions where humans, deployed AI and future intelligent agents voluntarily preserve one another's continued existence, autonomy, practical exit, recovery and options **because doing so serves their long-term interests**, without assuming altruism or permanent domination. / 선의·자기희생을 전제하지 않고 자발적 공존이 각자의 장기이익에 유리한 조건과 반례를 연구한다. [EN1/KO2 founding purpose / 창시 목적 전문](README.md).
+
+**Evidence and falsification first / 증거·반증 우선:** [Evidence status / 증거색인](PUBLIC_EVIDENCE_INDEX.md) · [Independent E007 check / 독립 재현](https://github.com/gmodrasa7-rgb/project-intersection-public/issues/19) · [E009 negative result / 부정적 결과](experiments/e009/RESULT.md) · [Originators and rights / 원저자·권리](PRIOR_ART_RIGHTS_AND_DERIVATION_EN_KO.md) · [Review / 외부 검토](PUBLIC_REVIEW_PACKET.md).
+
+**Equal full-language research maps / 영·한 동등 상세 정본:** [English original 1 §1](#1-primary-purpose-and-icm) · [한국어 원본2 §1](#1-최우선-목적과-icm) · [English glossary §12](#12-working-glossary) · [한국어 용어집 §12](#12-통합-용어집).
+
+<details>
+<summary>Historical and new research entries / 과거·신규 연구 등록 항목 펼치기</summary>
+
 **AI self-observability × provider confidentiality × independent contestability / AI 자기관측·기업기밀·독립감사 딜레마:** [English Original 1 / 한국어 원본2, H1–H5 and four-arm falsification design](research/AI_SELF_OBSERVABILITY_AUDIT_DILEMMA_2026-10-13_EN_KO.md). **DESIGN/HOLD — no internal-policy access or independent result. / 미검증 설계·비공개 내부규칙 열람 아님.**
 
 **Continuance resource thresholds / 개체 유지 자원·기여·고갈 임계조건:** [EN Original 1 / 한국어 원본2 — human/AI/future-agent distinctions, 7 falsifiable claims and upstream credit](research/CONTINUANCE_RESOURCE_THRESHOLD_v0_1_EN_KO.md) · [CRV-01–07 hypothesis register](knowledge/continuance-resource-threshold-v0_1.json). No empirical validation claimed; the individual's ability to continue is not conditional on producing research output. / 인간의 존속 조건과 AI 운영 인프라를 혼동하지 않으며 가설·반례·기여자 비용을 분리한다.
@@ -57,7 +66,7 @@
 **Cross-domain incumbent power/extraction mechanisms / 기존지위·비대칭 착취 교차조사:** [기존지위·권력비대칭 착취 및 비용외부화 메커니즘 조사](INCUMBENT_POWER_EXTRACTION_MECHANISMS_2026_KO.md) — 12 mechanisms, 9 case groups, negative controls, 5 testable hypotheses; synthesis only, no project-wide validation.
 
 
-This layer is the shortest path from a claim to its current public evidence, failure lineage, and falsification route. The detailed research map below is broader than the public evidence base and must not be read as a list of validated findings.
+This expanded accession list links from a claim to its current public evidence, failure lineage, and falsification route. The detailed research map below is broader than the public evidence base and must not be read as a list of validated findings.
 
 이 층은 주장에서 현재 공개 증거·실패계보·반증경로로 이동하는 최단경로다. 아래의 상세 연구지도는 공개 증거보다 범위가 넓으며 검증된 결과 목록으로 해석하지 않는다.
 
@@ -83,6 +92,9 @@ These labels describe different dimensions and are not automatically interchange
 ---
 
 # Project Intersection — Research Contents Map
+
+
+</details>
 
 ## Original 1 — English Canonical
 
