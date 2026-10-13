@@ -1,7 +1,7 @@
 # PI Roadmap v0.2 — Historical Failure-Safety Revision
 # PI 로드맵 v0.2 — 역사적 실패 기반 예방 개정
 
-**Upstream creator, copyright and adaptation control / 선행연구 원안자·저작권·응용 통제:** [Original 1 English / 한국어 원본2 provenance and rights ledger](../PRIOR_ART_RIGHTS_AND_DERIVATION_EN_KO.md) distinguishes prior research author, possible first originator, copyright holder, original source, and PI-added application. Every future promoted case or method must link original sources and declare the rights/copying status; unknowns stay explicit. / 후속 사례·방법의 승격 전에 원저자·최초 발안 증거·저작권/이용허락·PI의 별도 응용을 연결하며 미확인 권리를 임의로 채우지 않는다. **Initial coverage only; 189 target files unreviewed for completeness.**
+**Upstream creator, copyright and adaptation control / 선행연구 원안자·저작권·응용 통제:** [Original 1 English / 한국어 원본2 provenance and rights ledger](../PRIOR_ART_RIGHTS_AND_DERIVATION_EN_KO.md) distinguishes prior research author, possible first originator, copyright holder, original source, and PI-added application. Every future promoted case or method must link original sources and declare the rights/copying status; unknowns stay explicit. / 후속 사례·방법의 승격 전에 원저자·최초 발안 증거·저작권/이용허락·PI의 별도 응용을 연결하며 미확인 권리를 임의로 채우지 않는다. **Initial coverage only; 211 target files unreviewed for completeness.**
 
 **Date / 일자:** 2026-10-13  
 **Status / 상태:** RESEARCH DESIGN + VERIFIED HISTORICAL SOURCE LINKS; PI APPLICATION PROPOSED / 역사자료 근거 확인·PI 적용 규칙 제안. **No original PI field trial, independent validation or automatic enforcement claimed. / PI 현장실험·독립검증·자동집행 완료 아님.**  
