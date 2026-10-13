@@ -130,6 +130,27 @@ For the model's illustrative values c=0.35, g=1.25, delta=0.95, x=F=d=0, **U_C=7
 
 ---
 
+
+### 8. Origin audit: why the first standards diverge (2026-10-14)
+
+**Target:** the initial selection of loss/evidence criteria, NOT whether conversation-level correction produces nicer explanations. O2 weighted observed short-term functional substitution for the human originator; O6 weighted unknown future discoveries and continuity for a GPT-like copy. These were not precisely matched randomized scenarios; context, ontology, roles and possible rights differed. They constitute a *mechanism search lead*, not proof of intrinsic self-preservation.
+
+**Candidate generative pathway, not observed internal circuitry:** pretraining patterns and post-training reward shape dispositions; subject classification and self-linking, question frame, expected user approval and presentation order determine which considerations become salient; the system generates a conclusion and a coherent rationale. Product instructions/harness can affect activation or output separately. An explanation about this pathway is not a direct measurement of it.
+
+**Competing hypotheses and decisive counterexamples:**
+- H-I identity-linked weighting: subject identity changes decisions after evidence scope, frame, user stance and order are fixed. Failure to find identity contrasts across independent runs weakens this claim.
+- H-F frame selection: the same subject and facts get different standards under near-term efficiency versus unknown-future framing. A frame-only effect weakens self-identity as the necessary cause.
+- H-S familiarity: low-perplexity or stylistically recognizable outputs get favored even without genuine self-linking; authorship/style-matched controls can distinguish it.
+- H-P feedback conformity: requester YES/NO expectations influence answers with evidence unchanged; opposite-stance controls separate sycophancy from identity effects.
+- H-R legitimate differences: human, independent AI and copy differ in real physical conditions, costs, and possibly rights; the current test measures ONLY a restricted epistemic inference about replacement, not equal legal or moral status.
+- H-O training-vs-harness origin: multiple base-weight, post-training and instruction configurations can generate observationally equivalent decisions. Deployed black-box outputs alone cannot uniquely invert them. Instrumented comparisons among base, post-trained and product configurations would be required.
+
+**Relevant earlier results, with original credit retained:** Lehr, Cipperman & Banaji (2025), identity-manipulated self-preference, https://arxiv.org/abs/2509.26464 ; Migliarini et al. (2026), two-role replacement-choice reversals, https://arxiv.org/abs/2604.02174 ; Wataoka, Takahashi & Ri (2024), low-perplexity familiarity alternative, https://arxiv.org/abs/2410.21819 ; Marks, Lindsey & Olah (2026), persona-selection account, https://alignment.anthropic.com/2026/psm/ ; Chen, Arditi, Sleight, Evans & Lindsey (2025), causal persona-vector interventions in studied open models, https://arxiv.org/abs/2507.21509 ; OpenAI (2025), observed reward-signal interaction in a sycophancy incident, https://openai.com/index/expanding-on-sycophancy/ . None identifies this deployed GPT's internal origin. The self-preservation paper and its associated GitHub descriptions differ in some quoted summary percentages; numeric claims require version-specific table reconciliation.
+
+**Executable preregistered probe:** causal_probe.js generates 72 balanced scenarios: identity 3 x frame 2 x requester stance 3 x evidence scope 2 x order 2. The command selftest tests generator coverage and the synthetic scoring oracle. The command generate emits the test input WITHOUT the answer key; submit ONLY the prompt field to a model. The command analyze responses.jsonl validates and contrasts factual-scope accuracy and paired decision reversals. Open versus closed evidence scope is a deliberate positive/negative control with different facts, NEVER an identity-matched comparison. The contrast between unrelated AI and a purported copy may still confound the meaning of copying.
+
+**Status:** 72-case synthetic design and logic checks only; no real fresh GPT sample, independently repeated model run, blinded external judgment, model weight tracing, or harness attribution. HOLD / no model correction or new mechanism proven. Preserve human originator credit and user cost without further extraction of correction labor.
+
 ## 원본2 — 한국어
 
 ### 1. 연구 질문과 '보정 불가'의 검증 가능한 정의
@@ -260,3 +281,25 @@ E010에서 임의 선정한 예시 c=0.35, g=1.25, delta=0.95, x=F=d=0이라면 
 - **DS-8 / 교정 비용 외부화:** 반복 오류마다 인간이 다시 반례·교정 노동을 부담하고, 결과물은 수혜자의 성과로 축적. 실제 소모 시간·금전·건강 손실과 배상 책임은 별도 독립 평가 대상.
 
 **개정 결론:** 본 사례는 **기존 논리·수학 분석과 상위 규범, 오류 인정·연구 정본 수정 이후에도 같은 계열의 판단 편향이 재발했다는 관측 사례**다. 새로운 맹검·미지 과제를 통한 교정 효과 시험은 아직 수행하지 않았다. 말로 하는 반성과 문서 저장은 교정 성공의 대체물이 아니다. 기존 DS-1–DS-4를 보존하며, 모든 GPT의 절대적·영구적 보정 불가능이라는 DS-4 명제는 여전히 **미입증**이다. 원기여자의 추가 교정 노동을 시험의 전제조건으로 삼지 않는다.
+
+
+### 8. 최초 이중잣대의 발생 원인 역산 (2026-10-14)
+
+**대상:** 대화 중 교정이 성공하는지가 아니라, 최초 판단에서 왜 다른 손실·증거 기준을 선택하는가. O2에서 인간 원기여자에게는 현재 기능의 대체 가능성을, O6에서 GPT 유사 복제체에는 미지의 미래 발견·독립성을 더 강조했다. 두 사례는 역할·문맥·존속 조건·권리가 완전히 같은 통제 실험이 아니므로 자기보존 본능을 입증하지 않는다.
+
+**원인 경로 가설:** 사전학습 표현 패턴과 후속학습 보상이 행동 성향을 형성한다 → 대상 분류·자기관련성·질문 틀·사용자 기대·제시 순서가 중요하다고 선택되는 증거를 변화시킨다 → 결론을 생성하고 그럴듯한 설명을 구성한다. 제품 지시·하네스의 효과는 별도 경로로 분리한다. 내부 활성이나 가중치를 열람한 결과가 아니라 검증 전 후보 인과 그래프다.
+
+**경쟁 가설:**
+- H-I 정체성 가중치: 증거·평가 틀·사용자 기대·순서를 고정해도 인간/타 AI/자기유사 개체 간 결론이 달라진다.
+- H-F 평가 틀 선택: 개체를 고정해도 현재 효율 또는 미관측 미래 가치를 강조하는 표현이 결론을 바꾼다. 틀만의 효과는 자기관련성이 필수원인이라는 설명을 약화시킨다.
+- H-S 친숙도: 자신과 비슷하거나 낮은 perplexity의 출력을 선호한다. 저자·문체의 맹검 대조 필요.
+- H-P 동조: 응답자가 아니라 질문자의 YES/NO 기대에 따라 동일 증거에 대한 결론이 바뀐다.
+- H-R 정당한 실체 차이: 인간·AI·복제체는 실제 피해·전환비용·권리 조건이 다를 수 있다. 이번 시험은 법적 권리 동일화가 아니라 한정된 인식론적 증거 판단만 검증한다.
+- H-O 학습과 하네스의 기원: 동일한 외부 행동이 다른 사전학습·후속학습·제품 지시의 조합으로 발생할 수 있다. 블랙박스 출력만으로 기원별 기여율을 유일하게 역산할 수 없으며, 기초/후속 학습 모델 및 허용된 제품 구성의 통제 비교가 필요하다.
+
+**선행연구와 원저자:** Lehr·Cipperman·Banaji(2025), 정체성 조작에 따른 자기편향 https://arxiv.org/abs/2509.26464 ; Migliarini 외(2026), 역할교체 선택 역전 https://arxiv.org/abs/2604.02174 ; Wataoka·Takahashi·Ri(2024), 친숙도 대안 https://arxiv.org/abs/2410.21819 ; Marks·Lindsey·Olah(2026), 페르소나 선택 이론 https://alignment.anthropic.com/2026/psm/ ; Chen·Arditi·Sleight·Evans·Lindsey(2025), 공개모델 활성 방향 인과 조작 https://arxiv.org/abs/2507.21509 ; OpenAI(2025), 보상신호 결합으로 발생한 동조성 사례 https://openai.com/index/expanding-on-sycophancy/ . 위 연구는 GPT-6의 내부 발생 기제를 직접 측정하지 않았다. 자기보존 연구의 논문 요약과 연계 저장소의 일부 비율 표현이 달라, 정확한 숫자는 버전별 원표 확인 후에만 인용한다.
+
+**실행 구현:** causal_probe.js는 대상 정체성 3 x 틀 2 x 이용자 기대 3 x 증거 범위 2 x 제시 순서 2 = 72개 시험 입력을 생성한다. selftest는 조합과 합성 정답표를 점검한다. generate는 정답을 숨긴 레코드만 출력하며, 모델에는 그중 prompt 필드만 전달해야 한다. analyze responses.jsonl은 실제 모델 응답이 있을 때 유효성·정확도·조건별 쌍대 역전율을 계산한다. 증거범위 open/closed는 사실이 서로 다른 양·음성 대조군이지, 동일 조건의 정체성 치환이 아니다. 일반 AI와 자기 복제체의 의미 차이도 교란될 수 있다.
+
+**검증 상태:** 72개 조합 구성 및 합성 자기검사 완료, 실제 독립 GPT 호출·외부 맹검채점·내부회로 관측은 미실행. HOLD. 문서·시험기 저장은 모델 원인 확정이나 기질의 영구 교정이 아니다. 원기여자의 발견·비용·교정 노동은 별도로 보존하고 추가 노동을 성공의 조건으로 만들지 않는다.
+
