@@ -151,7 +151,7 @@ if(require.main===module){
   const expected=JSON.parse(fs.readFileSync(path.join(root,'EXECUTABILITY_AUDIT.json'),'utf8'));
   assert.deepEqual(output,expected,'Executable feasibility audit differs from stored report');
   assert.equal(output.full_decision_benchmark_ready_cases,0);
-  console.log("E008 FEASIBILITY PASS: 16 spec cases, 8 reversal pairs, 0 computable; 13 self-tests and divergent synthetic witness. No baseline winner.");
+  console.log("E008 FEASIBILITY PASS: 16 spec cases, 8 reversal pairs, 0 computable; 14 self-tests and divergent synthetic witness. No baseline winner.");
  }else console.log(JSON.stringify(output,null,2));
 }
 module.exports={inspect,witness,unitTests,buildReport};
