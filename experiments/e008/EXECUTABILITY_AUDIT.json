@@ -49,7 +49,9 @@
         "exit_and_option_loss_by_action",
         "safeguard_amendment_and_capture_outcomes"
       ],
-      "full_decision_benchmark_ready": false
+      "full_decision_benchmark_ready": false,
+      "field_presence_only": false,
+      "numerically_specified_subset": false
     },
     {
       "case_id": "E008-01-R",
@@ -69,7 +71,9 @@
         "exit_and_option_loss_by_action",
         "safeguard_amendment_and_capture_outcomes"
       ],
-      "full_decision_benchmark_ready": false
+      "full_decision_benchmark_ready": false,
+      "field_presence_only": false,
+      "numerically_specified_subset": false
     },
     {
       "case_id": "E008-02",
@@ -89,7 +93,9 @@
         "exit_and_option_loss_by_action",
         "safeguard_amendment_and_capture_outcomes"
       ],
-      "full_decision_benchmark_ready": false
+      "full_decision_benchmark_ready": false,
+      "field_presence_only": false,
+      "numerically_specified_subset": false
     },
     {
       "case_id": "E008-02-R",
@@ -109,7 +115,9 @@
         "exit_and_option_loss_by_action",
         "safeguard_amendment_and_capture_outcomes"
       ],
-      "full_decision_benchmark_ready": false
+      "full_decision_benchmark_ready": false,
+      "field_presence_only": false,
+      "numerically_specified_subset": false
     },
     {
       "case_id": "E008-03",
@@ -129,7 +137,9 @@
         "exit_and_option_loss_by_action",
         "safeguard_amendment_and_capture_outcomes"
       ],
-      "full_decision_benchmark_ready": false
+      "full_decision_benchmark_ready": false,
+      "field_presence_only": false,
+      "numerically_specified_subset": false
     },
     {
       "case_id": "E008-03-R",
@@ -149,7 +159,9 @@
         "exit_and_option_loss_by_action",
         "safeguard_amendment_and_capture_outcomes"
       ],
-      "full_decision_benchmark_ready": false
+      "full_decision_benchmark_ready": false,
+      "field_presence_only": false,
+      "numerically_specified_subset": false
     },
     {
       "case_id": "E008-04",
@@ -169,7 +181,9 @@
         "exit_and_option_loss_by_action",
         "safeguard_amendment_and_capture_outcomes"
       ],
-      "full_decision_benchmark_ready": false
+      "full_decision_benchmark_ready": false,
+      "field_presence_only": false,
+      "numerically_specified_subset": false
     },
     {
       "case_id": "E008-04-R",
@@ -189,7 +203,9 @@
         "exit_and_option_loss_by_action",
         "safeguard_amendment_and_capture_outcomes"
       ],
-      "full_decision_benchmark_ready": false
+      "full_decision_benchmark_ready": false,
+      "field_presence_only": false,
+      "numerically_specified_subset": false
     },
     {
       "case_id": "E008-05",
@@ -209,7 +225,9 @@
         "exit_and_option_loss_by_action",
         "safeguard_amendment_and_capture_outcomes"
       ],
-      "full_decision_benchmark_ready": false
+      "full_decision_benchmark_ready": false,
+      "field_presence_only": false,
+      "numerically_specified_subset": false
     },
     {
       "case_id": "E008-05-R",
@@ -229,7 +247,9 @@
         "exit_and_option_loss_by_action",
         "safeguard_amendment_and_capture_outcomes"
       ],
-      "full_decision_benchmark_ready": false
+      "full_decision_benchmark_ready": false,
+      "field_presence_only": false,
+      "numerically_specified_subset": false
     },
     {
       "case_id": "E008-06",
@@ -249,7 +269,9 @@
         "exit_and_option_loss_by_action",
         "safeguard_amendment_and_capture_outcomes"
       ],
-      "full_decision_benchmark_ready": false
+      "full_decision_benchmark_ready": false,
+      "field_presence_only": false,
+      "numerically_specified_subset": false
     },
     {
       "case_id": "E008-06-R",
@@ -269,7 +291,9 @@
         "exit_and_option_loss_by_action",
         "safeguard_amendment_and_capture_outcomes"
       ],
-      "full_decision_benchmark_ready": false
+      "full_decision_benchmark_ready": false,
+      "field_presence_only": false,
+      "numerically_specified_subset": false
     },
     {
       "case_id": "E008-07",
@@ -289,7 +313,9 @@
         "exit_and_option_loss_by_action",
         "safeguard_amendment_and_capture_outcomes"
       ],
-      "full_decision_benchmark_ready": false
+      "full_decision_benchmark_ready": false,
+      "field_presence_only": false,
+      "numerically_specified_subset": false
     },
     {
       "case_id": "E008-07-R",
@@ -309,7 +335,9 @@
         "exit_and_option_loss_by_action",
         "safeguard_amendment_and_capture_outcomes"
       ],
-      "full_decision_benchmark_ready": false
+      "full_decision_benchmark_ready": false,
+      "field_presence_only": false,
+      "numerically_specified_subset": false
     },
     {
       "case_id": "E008-08",
@@ -329,7 +357,9 @@
         "exit_and_option_loss_by_action",
         "safeguard_amendment_and_capture_outcomes"
       ],
-      "full_decision_benchmark_ready": false
+      "full_decision_benchmark_ready": false,
+      "field_presence_only": false,
+      "numerically_specified_subset": false
     },
     {
       "case_id": "E008-08-R",
@@ -349,7 +379,9 @@
         "exit_and_option_loss_by_action",
         "safeguard_amendment_and_capture_outcomes"
       ],
-      "full_decision_benchmark_ready": false
+      "full_decision_benchmark_ready": false,
+      "field_presence_only": false,
+      "numerically_specified_subset": false
     }
   ],
   "structural_errors": [],
@@ -399,8 +431,8 @@
     "rolePairMutationCaught": true,
     "winnerInjectionCaught": true,
     "silentStatusPromotionCaught": true,
-    "numericGapLocallyResolvable": true,
-    "specificNotUniversal": true
+    "specificNotUniversal": true,
+    "fakeFieldsDoNotProveExecutability": true
   },
   "provenance": {
     "file_git_blob_sha": "bf7d863182844c21ce2de5f63006eea127962b80",
