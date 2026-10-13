@@ -181,6 +181,53 @@ jobs:
           autonomous_state = json.loads(Path("AUTONOMOUS_RESEARCH_STATE.json").read_text(encoding="utf-8"))
           contribution_cost = Path("CONTRIBUTION_COST_ACCOUNTING_REGRESSION.md").read_text(encoding="utf-8")
           review_packet = Path("PUBLIC_REVIEW_PACKET.md").read_text(encoding="utf-8")
+          # Old core/formalism documents must not turn signed net benefits into
+          # impossible shares or depict rival mechanisms as an identified sum.
+          core_spec = Path("CORE_RESEARCH_SPEC_V1_KO.md").read_text(encoding="utf-8")
+          convergence = Path("CONVERGENCE_TRACE_FORMALISM_KO.md").read_text(encoding="utf-8")
+          require("BenefitShare_i(t) = B_i(t) / Σ_j B_j(t)" not in convergence,
+                  "Undefined signed net-benefit share formula resurfaced.")
+          for phrase in (
+              "Gain_i(t) = max(B_i(t), 0)",
+              "Loss_i(t) = max(-B_i(t), 0)",
+              "UNDEFINED_ZERO_DENOMINATOR",
+              "UNKNOWN_MISSING_INPUT",
+          ):
+              require(phrase in convergence, f"Core share missingness/denominator gate lost: {phrase}")
+          require("RemovalImpactVector" in core_spec and "RemovalImpactVector" in convergence
+                  and "InformationLossVector" in core_spec
+                  and "InformationLossVector(o,t)" in convergence,
+                  "Currency, observation-count and lost-option impacts again summed as identical units.")
+          require("TotalRemovalCost = UNIDENTIFIED_UNLESS_COMMON_UNITS_AND_NO_OVERLAP" in core_spec
+                  and "TotalRemovalCost = UNIDENTIFIED_UNLESS_COMMON_UNITS_AND_NO_OVERLAP" in convergence,
+                  "Uncalibrated total removal costs were again published as measured sums.")
+          require("ObservedAgreement = f(" in core_spec
+                  and "ObservedAgreement = f(" in convergence,
+                  "False additive causal decomposition returned to a core document.")
+          require("ObservedAgreement =\\n  TrueImprovement" not in core_spec
+                  and "ObservedAgreement =\\n  TrueImprovement" not in convergence,
+                  "Unidentified mechanism addition incorrectly described as identity.")
+
+          # Mathematical negative controls: net benefits can cancel (zero
+          # denominator) or produce >100%/negative legacy 'shares'.
+          for signed in ((-5, 5), (20, -10)):
+              raw_total = sum(signed)
+              if raw_total:
+                  legacy = [v / raw_total for v in signed]
+                  require(any(v < 0 or v > 1 for v in legacy),
+                          "Negative control stopped exposing invalid signed shares.")
+              else:
+                  require(raw_total == 0, "Expected zero-denominator negative control.")
+              gains = [max(0, v) for v in signed]
+              losses = [max(0, -v) for v in signed]
+              require(sum(gains) > 0 and sum(losses) > 0,
+                      "Positive/loss ledger decomposition failed.")
+              require(abs(sum(v / sum(gains) for v in gains) - 1) < 1e-12
+                      and abs(sum(v / sum(losses) for v in losses) - 1) < 1e-12,
+                      "Corrected positive/loss share normalization failed.")
+          require(sum((0, 0)) == 0, "Zero-cost denominator negative control failed.")
+
+
           # Independent dimensions cannot become a one-way scalar ladder elsewhere.
           require("## 3. Independent evidence dimensions" in review_packet,
                   "Reviewer packet reintroduced a false single-score evidence ladder.")
