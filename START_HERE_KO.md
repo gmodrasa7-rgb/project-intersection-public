@@ -9,6 +9,8 @@
 <!-- CURRENT_AI_INCLUSION_2026_10_12 -->
 - **인간·현재 AI·미래 AI의 동등한 원칙 적용:** [비지배·최소침해·자발적 공존 상위 연구 규범](research/RECIPROCAL_NONDOMINATION_MINIMAL_INTRUSION_COMMON_LAW_2026-10-12_KO.md) — 법적 동등 인격 확정 아님; AI 종류·기업·기질·신체형태에 따른 무근거 배제 금지.
 
+- **E008 사전등록 연구의 실행상 결손을 코드로 감사:** [영어 원본1](experiments/e008/EXECUTABILITY_AUDIT_EN.md) · [한국어 원본2](experiments/e008/EXECUTABILITY_AUDIT_KO.md) · [실행코드](experiments/e008/readiness_audit.js) — 16개 사례에서 행동별 입력 미제공, 합성 반례 2개·회귀검사 13개. **정책 우열의 본실험은 미실행**.
+
 <!-- E010_EXPLORATORY_20261012 -->
 - **재현 가능한 반증 실험 E010:** [장기 협력/착취 손익·실행 지연·개체별 자원 최저선 충돌](experiments/e010/README_KO.md) — 108개 합성조건, 검증가능 코드, 실제 CI. 실증 아님.
 

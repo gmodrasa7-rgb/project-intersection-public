@@ -86,3 +86,10 @@ not:
 - `validate.py` — structural / pairing checks.
 - `MUTUAL_ACCEPTABILITY_AMENDMENT_v1_1.md` — pre-execution mutual-acceptability diagnostics; no result.
 - `AGENCY_LIVING_CONDITIONS_AMENDMENT_v1_2.md` — pre-execution volitional-agency and living/operating-condition diagnostics; no result.
+
+## Executability check after preregistration (2026-10-13)
+
+**No E008 policy-performance result yet.** The original frozen 16-case scenario matrix is categorical and cannot determine the actions of all five baselines without additional numeric/structural operationalization. An [English Original 1 full audit](EXECUTABILITY_AUDIT_EN.md) and [Korean Original 2 full audit](EXECUTABILITY_AUDIT_KO.md) now provide a bounded, executable **readiness** check, with [recomputable code](readiness_audit.js) and [case-by-case machine receipt](EXECUTABILITY_AUDIT.json).
+
+Run `node experiments/e008/readiness_audit.js --verify` to verify **16/16 presently underdetermined**, two invented numerical completions with opposite aggregate-action choices, and 13 adversarial self-checks. This is **POST-PREREG FEASIBILITY AUDIT**, **NOT the previously preregistered E008 experiment result**, independent replication, or a proof that Project v2 wins. Original pre-execution v1.0/v1.1/v1.2 spec files stay unchanged. The CI gate pins the original JSON Git blob and detects missing readiness receipts.
+

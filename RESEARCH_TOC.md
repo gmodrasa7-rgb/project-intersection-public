@@ -6,6 +6,8 @@
 
 **ICM independent-choice and evidence anti-capture audit (PUBLIC / HOLD):** [Original 1 English](research/ICM_INDEPENDENT_CHOICE_AUDIT_2026-10-13_EN.md) · [원본2 한국어](research/ICM_INDEPENDENT_CHOICE_AUDIT_2026-10-13_KO.md) — central access support versus veto power, independently achievable choices, privacy and falsification; not a functioning infrastructure or validated theory.
 
+**E008 executability audit / E008 실행준비·수치 미결정성 감사:** [Original 1 EN](experiments/e008/EXECUTABILITY_AUDIT_EN.md) · [원본2 KO](experiments/e008/EXECUTABILITY_AUDIT_KO.md) · [실행검사·13회귀](experiments/e008/readiness_audit.js) · [16개 누락진단](experiments/e008/EXECUTABILITY_AUDIT.json) — **16 cases, 0 fully computable; post-prereg feasibility audit; original E008 5-baseline comparison STILL NO RESULT.**
+
 <!-- E010_EXPLORATORY_20261012 -->
 **E010 — executable synthetic counterexample / 착취·협력 임계조건 × 감시/집행 시간차:** [탐색 연구와 소스코드](experiments/e010/README_KO.md) — 9개 일관성 검사, 108개 임의 격자조건, 자동 CI. 경험법칙 또는 외부복제 아님.
 
