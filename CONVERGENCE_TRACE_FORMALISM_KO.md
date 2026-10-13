@@ -790,24 +790,28 @@ point estimate < interval under uncertainty
 옵션 제거에는 직접비용 외에 정보손실이 있다.
 
 ```
-InformationLoss(o,t) =
-  lost_future_observations
-+ lost_comparator_value
-+ lost_model_discrimination
-+ lost_recovery_path
+InformationLossVector(o,t) = [
+  lost_future_observations,
+  lost_comparator_value,
+  lost_model_discrimination,
+  lost_recovery_path
+]
 ```
 
 따라서 제거 비용은:
 
 ```
-TotalRemovalCost =
-  DirectRemovalCost
-+ RestorationCost
-+ InformationLoss
-+ ExternalizedCost
+RemovalImpactVector = [
+  DirectRemovalCost,
+  RestorationCost,
+  InformationLossVector,
+  ExternalizedCost
+]
+
+TotalRemovalCost = UNIDENTIFIED_UNLESS_COMMON_UNITS_AND_NO_OVERLAP
 ```
 
-로 본다.
+로 구분한다. 동일 단위로 정당화된 측정·화폐환산과 중복제거가 없으면 합계는 **미식별**이다. 정보 손실(관측 횟수·비교 가능성·복구경로)과 직접비용(화폐)을 임의로 더할 수 없다. 구성항목의 비용과 외부화된 비용을 중복계상해서도 안 된다. 단순 관계식은 검증 전 개념도이며 실증 수치가 아니다.
 
 ---
 
