@@ -101,6 +101,20 @@ jobs:
           readme = Path("README.md").read_text(encoding="utf-8")
           policy = Path("RESEARCH_STATUS_POLICY.md").read_text(encoding="utf-8")
           toc = Path("RESEARCH_TOC.md").read_text(encoding="utf-8")
+          # De-spaghetti + epistemic guard: the human/AI research mission must
+          # remain visible before the append-only intake list; evidence labels
+          # cannot be collapsed into a scalar hierarchy.
+          require("**Goal / 최종목표:**" in toc.split("<details>", 1)[0],
+                  "Full TOC lost its visible mission-first entrance.")
+          require("<summary>Historical and new research entries" in toc and "</details>" in toc,
+                  "TOC append-only intake accidentally moved above the fast mission routes.")
+          require("Evidence cannot be ranked on one scale" in toc,
+                  "False one-dimensional evidence ladder reintroduced.")
+          require("`CONCEPT / HYPOTHESIS` < `SYNTHETIC_RESULT`" not in toc,
+                  "Executable or synthetic artifact must not automatically outrank another evidential dimension.")
+          require("[English original 1 §1]" in toc and "[한국어 원본2 §1]" in toc,
+                  "TOC no longer navigates both equal full canonical versions.")
+
           # Equal-status language gate for the public research glossary.
           # A navigation mirror/translation label is not a full Korean Original 2.
           require("## Original 1 — English Canonical" in toc,
@@ -125,6 +139,27 @@ jobs:
               require(False, "Bilingual glossary or full-text boundary missing.")
 
           evidence = Path("PUBLIC_EVIDENCE_INDEX.md").read_text(encoding="utf-8")
+          # Paired public evidence ledgers: verify *source identities*, not
+          # translated semantic truth. Avoid EN-only negative-result addenda.
+          en_boundary = "## Original 1 — English | Full Public Evidence Ledger"
+          ko_boundary = "## 원본2 — 한국어 | 동등한 공개 증거 정본"
+          appendix_boundary = "## E009 preregistration and negative result"
+          require(all(marker in evidence for marker in
+                      (en_boundary, ko_boundary, appendix_boundary)),
+                  "Public evidence lost one equal full ledger/appendix boundary.")
+          if all(marker in evidence for marker in (en_boundary, ko_boundary, appendix_boundary)):
+              evidence_en = evidence.split(en_boundary, 1)[1].split(ko_boundary, 1)[0]
+              evidence_ko = evidence.split(ko_boundary, 1)[1].split(appendix_boundary, 1)[0]
+              # Match the first link in each source row; a full semantic audit is separate.
+              row_re = r"^\| \[[^\]]+\]\(([^)]+)\)"
+              paths_en = re.findall(row_re, evidence_en, re.M)
+              paths_ko = re.findall(row_re, evidence_ko, re.M)
+              require(len(paths_en) == 17 and paths_en == paths_ko,
+                      "EN1/KO2 public evidence source identities/order diverged.")
+          require("### E009 부정적 결과의 경계 — 한국어 증거 정본" in evidence
+                  and "### E009 negative-result boundary" in evidence,
+                  "Negative E009 comparison result retained in only one public language.")
+
           provenance = Path("experiments/e007/PROVENANCE.md").read_text(encoding="utf-8")
           license_status = Path("experiments/e007/LICENSE_STATUS.md").read_text(encoding="utf-8")
           pr_template = Path(".github/pull_request_template.md").read_text(encoding="utf-8")

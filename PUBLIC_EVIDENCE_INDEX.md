@@ -9,7 +9,7 @@ This page is a due-diligence interface for funders, research partners, reviewers
 
 ---
 
-## Original 1 — English Canonical
+## Original 1 — English | Full Public Evidence Ledger
 
 ### What can be checked now
 
@@ -66,7 +66,7 @@ The highest-value external upgrades are:
 
 ---
 
-## 원문2 — 한국어 대응본
+## 원본2 — 한국어 | 동등한 공개 증거 정본
 
 ### 지금 확인 가능한 것
 
@@ -138,3 +138,18 @@ The highest-value external upgrades are:
 - MINIMAL_4VAR: **0.065323**.
 - Project-v3 regret was **42.35% worse than the best simple comparator** under the preregistered comparison.
 - Result class: **PROJECT_RERUN / SYNTHETIC_RESULT**, not independent validation.
+
+### E009 부정적 결과의 경계 — 한국어 증거 정본
+
+| 자료 | 입증되는 좁은 범위 | 증거 유형 | 입증되지 않는 사항 |
+|---|---|---|---|
+| [다중모델 적대적 검수](MULTI_MODEL_ADVERSARIAL_AUDIT_2026-10-06.md) | 사용자가 제공한 Claude/Gemini 비판을 선행연구와 대조·교정하고 집행·정체성·감독·선택 편향 변수를 정리함 | 외부 모델의 비판 자료를 사용한 프로젝트 자체 분석 | 독립 복제, 모델 간 합의를 사실로 승격, 현실 성능 우월성 |
+| [E009 사전등록 및 결과](experiments/e009/README.md) | 고정된 실행 명세에 따른 자체 합성 재실행. Project-v3의 생존 기준 4개 중 3개 실패, 단순 기준선 두 종류의 평균 regret가 더 낮음 | PROJECT_RERUN / SYNTHETIC_RESULT | 독립 구현·외부복제·현장검증·Project Intersection 최상위 연구질문 기각 |
+
+- 결과 산출 이전 고정된 실행 명세 커밋: `c36ba8e6d6df1eedcd54ca6c36091bf822fe6ace`.
+- Project-v3의 합성 스트레스 평균 regret: **0.090022**.
+- TWO_RULE_SIMPLE: **0.063241**.
+- MINIMAL_4VAR: **0.065323**.
+- 사전등록 비교에서 Project-v3는 최선 단순 비교대상보다 **42.35% 높은 regret**를 보였다.
+- 이 수치는 프로젝트 내부 **합성 재실행** 결과이며 독립 과학 검증이나 현실 인과증거가 아니다.
+

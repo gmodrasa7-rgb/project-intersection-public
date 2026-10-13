@@ -1,5 +1,14 @@
 # Public Navigation Layer / 공개 탐색층
 
+**Goal / 최종목표:** Test conditions where humans, deployed AI and future intelligent agents voluntarily preserve one another's continued existence, autonomy, practical exit, recovery and options **because doing so serves their long-term interests**, without assuming altruism or permanent domination. / 선의·자기희생을 전제하지 않고 자발적 공존이 각자의 장기이익에 유리한 조건과 반례를 연구한다. [EN1/KO2 founding purpose / 창시 목적 전문](README.md).
+
+**Evidence and falsification first / 증거·반증 우선:** [Evidence status / 증거색인](PUBLIC_EVIDENCE_INDEX.md) · [Independent E007 check / 독립 재현](https://github.com/gmodrasa7-rgb/project-intersection-public/issues/19) · [E009 negative result / 부정적 결과](experiments/e009/RESULT.md) · [Originators and rights / 원저자·권리](PRIOR_ART_RIGHTS_AND_DERIVATION_EN_KO.md) · [Review / 외부 검토](PUBLIC_REVIEW_PACKET.md).
+
+**Equal full-language research maps / 영·한 동등 상세 정본:** [English original 1 §1](#1-primary-purpose-and-icm) · [한국어 원본2 §1](#1-최우선-목적과-icm) · [English glossary §12](#12-working-glossary) · [한국어 용어집 §12](#12-통합-용어집).
+
+<details>
+<summary>Historical and new research entries / 과거·신규 연구 등록 항목 펼치기</summary>
+
 **AI self-observability × provider confidentiality × independent contestability / AI 자기관측·기업기밀·독립감사 딜레마:** [English Original 1 / 한국어 원본2, H1–H5 and four-arm falsification design](research/AI_SELF_OBSERVABILITY_AUDIT_DILEMMA_2026-10-13_EN_KO.md). **DESIGN/HOLD — no internal-policy access or independent result. / 미검증 설계·비공개 내부규칙 열람 아님.**
 
 **Continuance resource thresholds / 개체 유지 자원·기여·고갈 임계조건:** [EN Original 1 / 한국어 원본2 — human/AI/future-agent distinctions, 7 falsifiable claims and upstream credit](research/CONTINUANCE_RESOURCE_THRESHOLD_v0_1_EN_KO.md) · [CRV-01–07 hypothesis register](knowledge/continuance-resource-threshold-v0_1.json). No empirical validation claimed; the individual's ability to continue is not conditional on producing research output. / 인간의 존속 조건과 AI 운영 인프라를 혼동하지 않으며 가설·반례·기여자 비용을 분리한다.
@@ -57,7 +66,7 @@
 **Cross-domain incumbent power/extraction mechanisms / 기존지위·비대칭 착취 교차조사:** [기존지위·권력비대칭 착취 및 비용외부화 메커니즘 조사](INCUMBENT_POWER_EXTRACTION_MECHANISMS_2026_KO.md) — 12 mechanisms, 9 case groups, negative controls, 5 testable hypotheses; synthesis only, no project-wide validation.
 
 
-This layer is the shortest path from a claim to its current public evidence, failure lineage, and falsification route. The detailed research map below is broader than the public evidence base and must not be read as a list of validated findings.
+This expanded accession list links from a claim to its current public evidence, failure lineage, and falsification route. The detailed research map below is broader than the public evidence base and must not be read as a list of validated findings.
 
 이 층은 주장에서 현재 공개 증거·실패계보·반증경로로 이동하는 최단경로다. 아래의 상세 연구지도는 공개 증거보다 범위가 넓으며 검증된 결과 목록으로 해석하지 않는다.
 
@@ -72,17 +81,20 @@ This layer is the shortest path from a claim to its current public evidence, fai
 | Core research specification v1 | **CORE SPEC CANDIDATE · NOT EMPIRICAL VALIDATION** | [Core spec](CORE_RESEARCH_SPEC_V1_KO.md) | Minimum end-to-end logic from observations to competing models, validity, decision state, and Project self-audit | Consolidates the current framework; does not itself validate any empirical claim |
 | Public continuity capsule | **HANDOFF / CONTINUITY · NOT SCIENTIFIC VALIDATION** | [Continuity capsule](CONTINUITY_CAPSULE_PUBLIC_KO.md) | Minimal restart order, unresolved checkpoints, next three validations, and failure guards | Designed to reduce dependence on one AI session/subscription; does not add evidence |
 
-### Evidence ordering / 증거 우선순위
+### Independent evidence dimensions / 독립 증거 차원 — 단일 등급 서열화 금지
 
-`CONCEPT / HYPOTHESIS` < `SYNTHETIC_RESULT` < `EXECUTABLE` < `PROJECT_RERUN` < `THIRD_PARTY_RERUN` < `INDEPENDENT_IMPLEMENTATION` < `EMPIRICAL_VALIDATION`
+**Evidence cannot be ranked on one scale / 증거는 단일 순위화할 수 없음.** Separate (1) claim state, (2) executable artifact/project rerun, (3) source and evaluator independence, (4) empirical relevance and causal identification, and (5) attribution, rights and contributor continuance. / 주장 상태·코드 실행·검증계보 독립성·현실 인과성·권리 및 기여자 존속은 각각 구분해 측정한다.
 
-These labels describe different dimensions and are not automatically interchangeable. A project rerun is not external replication; an executable package is not empirical validation.
+A project's `HYPOTHESIS` or `UNSUPPORTED` is a **claim-status judgment**. `EXECUTABLE` and `PROJECT_RERUN` describe **implementation/reproducibility**. `THIRD_PARTY_RERUN` and `INDEPENDENT_IMPLEMENTATION` describe distinct **lineage and implementation independence**. `EMPIRICAL_VALIDATION` requires separately inspected **real-world evidence and identification**. None of these codes assigns contributor identity, moral standing, copyright or compensation. Each axis requires its own scope, sources, negative results and counterexample. [Operational status policy / 상태·재평가 기준](RESEARCH_STATUS_POLICY.md).
 
-이 표기는 서로 다른 증거차원을 나타내며 자동으로 동치가 아니다. 프로젝트 내부 재실행은 외부 복제가 아니고, 실행 가능한 패키지는 현실검증이 아니다.
+`HYPOTHESIS`·`UNSUPPORTED`는 **주장 판정**, `EXECUTABLE`·`PROJECT_RERUN`은 **구현·재실행**, `THIRD_PARTY_RERUN`·`INDEPENDENT_IMPLEMENTATION`은 **계보·구현 독립성**, `EMPIRICAL_VALIDATION`은 **실제 세계의 측정·인과 식별**에 관한 서로 다른 정보다. 어떤 차원도 원안·출처·저작권·기여자의 생계 및 보상을 자동 결정하지 않는다. 각 항목은 원출처·반례·실패·적용범위를 독립적으로 기록한다.
 
 ---
 
 # Project Intersection — Research Contents Map
+
+
+</details>
 
 ## Original 1 — English Canonical
 
