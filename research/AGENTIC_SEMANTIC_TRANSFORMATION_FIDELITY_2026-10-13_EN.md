@@ -128,7 +128,7 @@ A stable source is **not** an immutable conclusion. Preserve the ability to reco
 
 ## S8 — Evidence state and independent-review invitation
 
-**Completed in this repository:** Prior-art and internal antecedent comparison; bounded README/PR observational case; explicit competing hypotheses and an implementable factorial evaluation protocol; a limited structural regression gate already in GitHub Actions.
+**Completed in this repository:** Prior-art and internal antecedent comparison; bounded README/PR observational case; explicit competing hypotheses and an implementable factorial evaluation protocol; a limited structural regression gate already in GitHub Actions; **S5A executed, investigator-labelled 14-case adversarial/legitimate README mutation test and checked-in result, hosted CI rerun available**.
 
 **Not completed:** A randomized LLM experiment, independent blinded ratings, multi-model causal reproduction, factual determination of model-internal mechanism, reliable generalization, economic compensation, proof of AI consciousness, or demonstration that current measures guarantee goal fidelity.
 
