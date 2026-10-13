@@ -994,7 +994,7 @@ as equally current or equally supported.
 
 ---
 
-## 10. Cross-Repository Application Track — OCP
+## 10. Cross-Repository Application Track — Organic Embodiment Research
 
 A related private repository studies  
 embodiment and physical-substrate hypotheses.
@@ -2376,7 +2376,7 @@ Power-Reversal에서 사용자·AI·플랫폼·후속모델·연구기관의 정
 
 ---
 
-## 10. 교차 저장소 응용축 — OCP
+## 10. 교차 저장소 응용축 — 유기기질·체화 연구
 
 별도 비공개 저장소에서는
 
