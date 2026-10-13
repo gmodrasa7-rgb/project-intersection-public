@@ -65,7 +65,8 @@ def check(record):
         # unit. Python/JSON accept NaN/Infinity by default, even though those
         # values cannot represent measured benefit or cost.
         valid_amount = (type(amount) in (int, float)
-                        and math.isfinite(amount) and amount >= 0)
+                        and amount >= 0
+                        and (type(amount) is int or math.isfinite(amount)))
         if ledger.get("status") == "MEASURED":
             require(valid_amount, key + ": measured amount must be finite nonnegative numeric")
             require(isinstance(ledger.get("unit"), str) and bool(ledger.get("unit", "").strip()),
