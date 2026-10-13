@@ -1,4 +1,6 @@
 # Public Navigation Layer / 공개 탐색층
+**PI Roadmap v0.2.1 / 변화의 함정 개정 보충 (현행 적용 규칙 제안):** [English Original 1 · 한국어 원본2](research/PI_ROADMAP_CHANGE_TRAP_V0_2_1_EN_KO.md) — 성공 사례 복제의 생존자편향·환경 전이·시간 변화·내생적 적응·안전규칙 고착 예방. 기존 6단계와 v0.2 20건 보존. **DESIGN / NOT VALIDATED**.
+
 
 **PI Roadmap v0.2 / PI 로드맵 — 역사적 실패 예방 개정 (현재 제안 정본):** [영어 원본1 · 한국어 원본2 및 20개 근거사례](research/RESEARCH_ROADMAP_v0_2_EN_KO.md) — 실패 사례 F01–F20, 공통 위험 8종, 방호 G1–G8, 회귀검사 제안 R01–R12. **DESIGN / NOT EXECUTED / 독립 실증 완료 아님.**
 
