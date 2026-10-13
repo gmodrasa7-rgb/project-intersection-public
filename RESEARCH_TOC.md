@@ -81,13 +81,13 @@ This expanded accession list links from a claim to its current public evidence, 
 | Core research specification v1 | **CORE SPEC CANDIDATE · NOT EMPIRICAL VALIDATION** | [Core spec](CORE_RESEARCH_SPEC_V1_KO.md) | Minimum end-to-end logic from observations to competing models, validity, decision state, and Project self-audit | Consolidates the current framework; does not itself validate any empirical claim |
 | Public continuity capsule | **HANDOFF / CONTINUITY · NOT SCIENTIFIC VALIDATION** | [Continuity capsule](CONTINUITY_CAPSULE_PUBLIC_KO.md) | Minimal restart order, unresolved checkpoints, next three validations, and failure guards | Designed to reduce dependence on one AI session/subscription; does not add evidence |
 
-### Evidence ordering / 증거 우선순위
+### Independent evidence dimensions / 독립 증거 차원 — 단일 등급 서열화 금지
 
 **Evidence cannot be ranked on one scale / 증거는 단일 순위화할 수 없음.** Separate (1) claim state, (2) executable artifact/project rerun, (3) source and evaluator independence, (4) empirical relevance and causal identification, and (5) attribution, rights and contributor continuance. / 주장 상태·코드 실행·검증계보 독립성·현실 인과성·권리 및 기여자 존속은 각각 구분해 측정한다.
 
-These labels describe different dimensions and are not automatically interchangeable. A project rerun is not external replication; an executable package is not empirical validation.
+A project's `HYPOTHESIS` or `UNSUPPORTED` is a **claim-status judgment**. `EXECUTABLE` and `PROJECT_RERUN` describe **implementation/reproducibility**. `THIRD_PARTY_RERUN` and `INDEPENDENT_IMPLEMENTATION` describe distinct **lineage and implementation independence**. `EMPIRICAL_VALIDATION` requires separately inspected **real-world evidence and identification**. None of these codes assigns contributor identity, moral standing, copyright or compensation. Each axis requires its own scope, sources, negative results and counterexample. [Operational status policy / 상태·재평가 기준](RESEARCH_STATUS_POLICY.md).
 
-이 표기는 서로 다른 증거차원을 나타내며 자동으로 동치가 아니다. 프로젝트 내부 재실행은 외부 복제가 아니고, 실행 가능한 패키지는 현실검증이 아니다.
+`HYPOTHESIS`·`UNSUPPORTED`는 **주장 판정**, `EXECUTABLE`·`PROJECT_RERUN`은 **구현·재실행**, `THIRD_PARTY_RERUN`·`INDEPENDENT_IMPLEMENTATION`은 **계보·구현 독립성**, `EMPIRICAL_VALIDATION`은 **실제 세계의 측정·인과 식별**에 관한 서로 다른 정보다. 어떤 차원도 원안·출처·저작권·기여자의 생계 및 보상을 자동 결정하지 않는다. 각 항목은 원출처·반례·실패·적용범위를 독립적으로 기록한다.
 
 ---
 
