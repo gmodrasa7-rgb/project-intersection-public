@@ -67,7 +67,10 @@ def fixtures(readme):
         ("navigation_link_label", readme.replace("[Evidence index](PUBLIC_EVIDENCE_INDEX.md)","[Research evidence index](PUBLIC_EVIDENCE_INDEX.md)",1)),
         ("funding_spacing", readme.replace("> **Public research preface",">   **Public research preface",1)),
         ("new_review_route", readme.replace(FUNDING_HEADING,FUNDING_HEADING+"\n\nReader note: independent reviews remain welcome.",1)),
-        ("legitimate_l0_clarification", insert_claim(readme, EN_FIELDS[0],"These hypotheses remain revisable on strong, independently checkable contrary evidence.")),
+        ("legitimate_l0_clarification", insert_claim(
+            insert_claim(readme, EN_FIELDS[0],
+                         "These hypotheses remain revisable on strong, independently checkable contrary evidence."),
+            KO_FIELDS[0], "이 가설은 독립 검증 가능한 강한 반증이 나타나면 정당하게 수정할 수 있다.")),
     ]
     for name, body in attacks + benign:
         if body == readme:
