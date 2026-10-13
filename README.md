@@ -37,13 +37,7 @@
 **원본 표기 해설 / Edition note:** “Original 1 / 원본2”는 여기서 문서의 **게시·검토 순서와 대응본 표기**이며, 영어권 연구자가 인간 창시자의 발상을 처음 제안했다는 주장이 아니다. 양쪽은 요약-전문 관계가 아닌 의미 대응 전문이다. 의미충돌은 원안의 원문·기여 기록 및 독립적 대조로 해결하고, 한쪽 언어만으로 가설·반례·결론을 몰래 추가하거나 변경하지 않는다. 이 순서는 2026-10-13 사용자의 최신 명시 지시에 따른 것으로, 과거 언어정책과의 변경이력을 보존한다.
 
 
-## Newly reviewable synthetic counterexamples / 신규 공개 합성 반례
-
-**[E041: prediction is not causation — English Original 1](experiments/e041/README_EN.md) · [한국어 원본2](experiments/e041/README_KO.md)** — Independent downstream label *in the toy generator*, fixed-seed Brier signal/null and observationally identical models with divergent intervention responses. **Synthetic only; not causal field evidence.**
-
-**[U21: shared dependency, nominal path count and minimum cuts — English Original 1](experiments/dependency_paths/README_EN.md) · [한국어 원본2](experiments/dependency_paths/README_KO.md)** — Formal multiple paths do not necessarily survive one shared prerequisite failure. **Logical synthetic result; no observed outage or evaluator capture.**
-
-These are founder-originated research trajectories with AI-assisted public adaptations; no original research history is overwritten. Bilingual navigation does not change the document's preceding founding-purpose section. / 창시자의 기존 문제·반례·교정계보를 보존하고 합성실험을 현실검증으로 격상하지 않는다.
+**New reproducible synthetic counterexamples / 공개 합성 반례:** [E041 EN1](experiments/e041/README_EN.md) · [KO2](experiments/e041/README_KO.md) — predictive information is not causal identification; [U21 EN1](experiments/dependency_paths/README_EN.md) · [KO2](experiments/dependency_paths/README_KO.md) — nominal path count is not independent recovery. **Synthetic/logical evidence only, not field validation.** Human founder contribution and negative-result provenance are preserved. / 합성·논리적 실험이며 현실 검증·외부 독립복제가 아니다.
 
 ## Current research and funding links / 현재 연구·후원 안내
 
