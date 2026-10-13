@@ -246,6 +246,8 @@ Promotion requires **all applicable**: (a) source/claim tracing, (b) strongest c
 
 **Evaluation protocol:** Freeze the target source HEAD; construct expert-reviewed relevance labels *without only pooling PIA's own results* (avoid circular evaluation); reserve hidden questions and negative cases; compare baseline and upgrade under the same permissions/hardware/clock; report denominators, missing/unsupported input, absolute error counts, source-span verification, CI execution evidence, and who pays the verification burden. Predefine minimum acceptable critical-regression behavior before observing results. A search result count, benchmark pass or CI green badge alone is not a promotion gate.
 
+**External evaluation precedent:** [NIST TREC Total Recall 2015](https://trec.nist.gov/data/total-recall/2015/Total%20Recall%20Guidelines%202015.html) jointly considers finding relevant items and assessor workload; [NIST AI RMF Measure](https://airc.nist.gov/airmf-resources/airmf/5-sec-core/) emphasizes benchmarked, uncertainty-aware evaluation and regular checks. These justify selecting measurement dimensions, **not** a claim that PIA already achieved their benchmarks.
+
 **Public/private boundary and attribution:** Public roadmap records architecture, safeguards and high-level evaluation. Implementation source, private research, credentials, funding and unpublished negative data remain in each owning repository. Researchers responsible for prior art retain credit. The PI human originator contributed the research-management objective and PIA naming/integration direction. Automated assistant changes and errors are separately traceable. PIA does not negotiate, authorize or satisfy retrospective compensation; do not condition past credit/redress on future testing.
 
 ### 원본2 — 한국어
@@ -268,6 +270,8 @@ Promotion requires **all applicable**: (a) source/claim tracing, (b) strongest c
 **기존 연구 6단계 그대로 적용:** 1단계 가설·전제·버전 확인 → 2단계 선행연구와 반례 검색 → 3단계 한정된 자료 포화·미관측 보고 → 4단계 근거 변경과 경쟁가설 파급검토 → 5단계 원저자·인간 원기여·교정·한영 계보 보존 → 6단계 사전등록·시험·실패·재현·롤백·실제 비용 검증. **PIA 검색 성능 향상은 ICM 가설 입증과 별개**다.
 
 **평가 설계:** 평가할 Git HEAD와 권한을 고정한다. PIA 자신이 찾아준 자료만으로 정답집을 만들면 순환 평가이므로 외부 검토·독립 탐색·숨은 반례를 포함한다. 검색 방식마다 같은 권한·환경·시간 범위에서 기준선과 비교한다. 분모·표본·놓친 자료·지원하지 않는 입력·원문 인용 위치·실제 실행 로그·사람의 비용을 나눠 보고하고, 성공 기준은 결과를 보기 전에 정한다. 검색결과 수나 CI 성공만으로 실증 성공을 선언하지 않는다.
+
+**평가 선행근거:** [NIST TREC Total Recall 2015](https://trec.nist.gov/data/total-recall/2015/Total%20Recall%20Guidelines%202015.html)는 관련 문서 회수량과 검토 비용의 균형을 평가하고, [NIST AI RMF Measure](https://airc.nist.gov/airmf-resources/airmf/5-sec-core/)는 기준선 비교·불확실성·주기적 검사를 강조한다. 이는 평가 설계의 선행근거일 뿐 **PIA가 해당 기준을 달성했다는 뜻이 아니다**.
 
 **공개·비공개·기여 경계:** 공개 로드맵에는 설계·방호·평가 개요만 둔다. 비공개 실험 원문·미발표 실패·자격증명·재무자료는 소유 저장소에 남긴다. 선행기술 원저자의 기여와 PI 연구자 자신의 문제제기·PIA 명명/통합 기여를 따로 보존한다. 과거 기여 정산과 미래 고용·시험·PIA 업데이트는 독립이며, PIA 기능이나 자동화가 과거 정산을 대신하지 않는다.
 
