@@ -1,4 +1,6 @@
 # Public Navigation Layer / 공개 탐색층
+
+**Terminology / 용어 설명:** 이 목차의 [영어 원본1 용어집 §12](#12-working-glossary) · [한국어 원본2 용어집 §12](#12-통합-용어집)에는 약어·핵심 가설·자료관리 모듈·실험상태·A–Z 공백의 한 줄 정의가 수록되어 있다. 상세 정의와 근거는 기존 정본 링크를 우선한다.
 **Epistemic pathway / 선행지식·역사적 이해 경로 연구:** [22 prior-art entries, strong countercases, four opt-in reading routes, unrun comparative evaluation and 12 proposed regressions / 선행연구 22개·반례·선택적 진입 4경로·미실행 비교검증·회귀검사 12종 (Original 1 English / 원본2 한국어)](research/EPISTEMIC_PATHWAY_COMMUNICATION_PRIOR_ART_2026-10-13_EN_KO.md). **DESIGN ONLY / NOT EMPIRICALLY VALIDATED.** Full conclusions and sources always available without a readiness gate.
 
 **PIA(PI-ANCHOR) v0.1 연구자료 시스템 업그레이드:** [PI 로드맵 v0.2 운영 보충 — 영문 원본1·한국어 원본2](research/RESEARCH_ROADMAP_v0_2_EN_KO.md) — 기존 PI 6단계 유지, P0~P5·PIA v0.2~v1.0 **목표/승격조건(미완료)** 명시. PIA 현재 버전 **v0.1** 유지.
@@ -1036,7 +1038,7 @@ falsifiable,
 and traceable.**
 
 
-## 12. Working glossary — research terminology, evidence states and system names
+## 12. Working glossary
 
 This is a **navigation summary**, not a replacement for [the canonical ICM/IndCM bilingual preamble](PUBLIC_PREAMBLE_VOLUNTARY_COEXISTENCE_2026-10-13_EN_KO.md), [power terminology standard](TERMINOLOGY_POWER_ASYMMETRY_GOAL_INCONGRUENCE_KO.md), [status policy](RESEARCH_STATUS_POLICY.md), [roadmap](research/RESEARCH_ROADMAP_v0_2_EN_KO.md) or per-source original evidence. Each entry summarizes a **concept, working hypothesis, prior-art term, operational feature or historical label**; the word “theory” does not establish scientific validity. An acronym lacking verified expansion is intentionally not expanded.
 
@@ -2457,7 +2459,7 @@ NIST CFTT supplies an independent conformance framework for deleted-file recover
 
 ---
 
-## 12. 통합 약어·용어집 — 연구개념·증거상태·자료관리 시스템
+## 12. 통합 용어집
 
 이 표는 **목차용 짧은 설명**이다. 상세 정의는 [ICM/IndCM 공식 머릿말](PUBLIC_PREAMBLE_VOLUNTARY_COEXISTENCE_2026-10-13_EN_KO.md), [권력·목표·정보비대칭 용어 정본](TERMINOLOGY_POWER_ASYMMETRY_GOAL_INCONGRUENCE_KO.md), [연구 상태 규정](RESEARCH_STATUS_POLICY.md), [연구 로드맵](research/RESEARCH_ROADMAP_v0_2_EN_KO.md), 각 원문을 우선한다. 연구개념·미검증 가설·외부 선행기술·구현 기능·역사적 약어를 혼동하지 않는다. **표의 수록은 과학적 입증이나 독창성 승인이 아니다.**
 
