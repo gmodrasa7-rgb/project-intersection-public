@@ -1,0 +1,236 @@
+{
+  "schema_version": "1.0",
+  "date": "2026-10-13",
+  "state": "HYPOTHESES_ONLY_NOT_EMPIRICALLY_VALIDATED",
+  "canonical_report": "research/CONTINUANCE_RESOURCE_THRESHOLD_v0_1_EN_KO.md",
+  "origin": {
+    "human_originator_public_id": "gmodrasa7-rgb",
+    "original_language": "ko",
+    "date": "2026-10-13",
+    "role": "problem statement and contribution-maintenance-depletion connection",
+    "ai_role": "prior-art research, drafting, structured falsification, code assistance"
+  },
+  "relation_to_existing": [
+    "TECHNOLOGY_PROGRESS_CONTRIBUTOR_CONTINUITY_EN_KO.md",
+    "research/CONTRIBUTOR_LOSS_UNKNOWN_PARADOX_v0_1_EN_KO.md",
+    "knowledge/contributor-continuity-register-v1.json"
+  ],
+  "entity_classes": [
+    {
+      "id": "human",
+      "resource_dimensions": [
+        "food_water",
+        "housing",
+        "sleep_recovery",
+        "healthcare",
+        "safety",
+        "care_support",
+        "time",
+        "economic_access"
+      ],
+      "rights_caveat": "Human needs are not conditioned on productivity; applicable rights and law govern."
+    },
+    {
+      "id": "deployed_ai",
+      "resource_dimensions": [
+        "electricity",
+        "compute",
+        "memory",
+        "storage",
+        "network",
+        "operator_permission",
+        "maintenance"
+      ],
+      "rights_caveat": "These are deployment requirements, not verified subjective needs or an AI labor entitlement."
+    },
+    {
+      "id": "future_agent",
+      "resource_dimensions": [
+        "architecture_dependent_energy",
+        "substrate_maintenance",
+        "independent_resource_access",
+        "continuity"
+      ],
+      "rights_caveat": "Future embodiment, self-interest, standing, identity and subjective welfare remain uncertain."
+    }
+  ],
+  "model": {
+    "resource_components": "R_i,k,t = resources actually accessible from all sources in native units",
+    "maintenance_components": "M_i,k,t = indispensable continuance and repair requirements in same native units",
+    "slack_components": "S_i,k,t = R_i,k,t - M_i,k,t only when commensurate",
+    "participation_time": "T_usable_i,t = actual time after essential labor/care/rest/access needs",
+    "candidate_alarm": "Persistent negative slack for a non-substitutable requirement + inadequate alternative/relief/exit",
+    "interpretation": "Warning marker; neither certain death nor proof of illegal exploitation, rights or consciousness",
+    "never_scalarize_incommensurate": true,
+    "never_assume_contribution_only_maintenance_route": true
+  },
+  "claim_states": [
+    {
+      "id": "CRV-01",
+      "dimension": "resource_access",
+      "prediction": "Materially inadequate accessible maintenance predicts reduced continuation under matched contribution and background conditions",
+      "disconfirmer": "Independent holdings/social supports, exposure, health, skills or family constraints explain differences",
+      "status": "NOT_TESTED",
+      "effect_size": null,
+      "case_evidence": [],
+      "causal_verification": null,
+      "legal_conclusion": null,
+      "rights_holder": null,
+      "commercial_benefit": null,
+      "person_health_or_death": null
+    },
+    {
+      "id": "CRV-02",
+      "dimension": "time_foreclosure",
+      "prediction": "Required labor/care crowds out recovery/exploration even when short-term output remains high",
+      "disconfirmer": "Voluntary short-duration effort and adequate later recovery prevent loss",
+      "status": "NOT_TESTED",
+      "effect_size": null,
+      "case_evidence": [],
+      "causal_verification": null,
+      "legal_conclusion": null,
+      "rights_holder": null,
+      "commercial_benefit": null,
+      "person_health_or_death": null
+    },
+    {
+      "id": "CRV-03",
+      "dimension": "specific_investment_holdup",
+      "prediction": "Incompletely contracted sunk contributions with weak outside options predict post-investment benefit capture",
+      "disconfirmer": "Reliable risk-sharing, strong contracts, scale economics and legitimate agreed terms",
+      "status": "NOT_TESTED",
+      "effect_size": null,
+      "case_evidence": [],
+      "causal_verification": null,
+      "legal_conclusion": null,
+      "rights_holder": null,
+      "commercial_benefit": null,
+      "person_health_or_death": null
+    },
+    {
+      "id": "CRV-04",
+      "dimension": "dependency_silence",
+      "prediction": "Economic or infrastructure dependency predicts suppressed counterexample reporting when speaking incurs risk",
+      "disconfirmer": "Improved signal quality or externally validated error reduction explains fewer reports",
+      "status": "NOT_TESTED",
+      "effect_size": null,
+      "case_evidence": [],
+      "causal_verification": null,
+      "legal_conclusion": null,
+      "rights_holder": null,
+      "commercial_benefit": null,
+      "person_health_or_death": null
+    },
+    {
+      "id": "CRV-05",
+      "dimension": "resource_threshold",
+      "prediction": "Persistent deficiency in a critical non-substitutable resource with no alternative generates nonlinear continuation risks",
+      "disconfirmer": "Reserves, public supports, substitution and restoration prevent decline",
+      "status": "NOT_TESTED",
+      "effect_size": null,
+      "case_evidence": [],
+      "causal_verification": null,
+      "legal_conclusion": null,
+      "rights_holder": null,
+      "commercial_benefit": null,
+      "person_health_or_death": null
+    },
+    {
+      "id": "CRV-06",
+      "dimension": "beneficiary_self_depletion",
+      "prediction": "Repeated attrition of independent corrective contributors increases receiver-side blindspots and recovery delay",
+      "disconfirmer": "Independent auditing, transfer, replacement maintain accurate detection and recovery",
+      "status": "NOT_TESTED",
+      "effect_size": null,
+      "case_evidence": [],
+      "causal_verification": null,
+      "legal_conclusion": null,
+      "rights_holder": null,
+      "commercial_benefit": null,
+      "person_health_or_death": null
+    },
+    {
+      "id": "CRV-07",
+      "dimension": "reciprocal_sustainability",
+      "prediction": "Portable credit, actual exit, adequate support and independent resource access preserve options without compulsory work",
+      "disconfirmer": "Costs exceed gains, or arrangements stable with voluntary uncompensated work",
+      "status": "NOT_TESTED",
+      "effect_size": null,
+      "case_evidence": [],
+      "causal_verification": null,
+      "legal_conclusion": null,
+      "rights_holder": null,
+      "commercial_benefit": null,
+      "person_health_or_death": null
+    }
+  ],
+  "guardrails": {
+    "no_forced_person_deprivation": true,
+    "no_compelled_unpaid_work": true,
+    "no_private_medical_family_financial_data": true,
+    "no_ai_personhood_assumption": true,
+    "no_claim_of_proven_exploitation": true,
+    "distinct_legal_copyright_economic_moral_questions": true,
+    "unknown_is_not_zero": true,
+    "consumer_benefit_contributor_cost_separate": true,
+    "retain_prior_creators_credit": true
+  },
+  "prior_sources": [
+    {
+      "authors": "Amartya Sen",
+      "title": "Ingredients of Famine Analysis: Availability and Entitlements",
+      "year": 1981,
+      "doi": "10.2307/1882681",
+      "rights": "Copyright ownership/license of protected article text not independently audited"
+    },
+    {
+      "authors": "International Labour Organization: tripartite expert meeting",
+      "title": "Living Wages conclusions and framework",
+      "year": 2024,
+      "url": "https://www.ilo.org/topics-and-sectors/wages/living-wages",
+      "rights": "Institutional webpage/linked report rights require original-source check"
+    },
+    {
+      "authors": "Richard M. Emerson",
+      "title": "Power-Dependence Relations",
+      "year": 1962,
+      "doi": "10.2307/2089716",
+      "rights": "Published article copyright license not independently audited"
+    },
+    {
+      "authors": "Benjamin Klein; Robert G. Crawford; Armen A. Alchian",
+      "title": "Vertical Integration, Appropriable Rents, and the Competitive Contracting Process",
+      "year": 1978,
+      "url": "https://pages.stern.nyu.edu/~hmueller/papers/IC.pdf",
+      "rights": "Secondary academic discussion here; original 1978 publication rights not checked, no original-text reuse"
+    },
+    {
+      "authors": "Albert O. Hirschman",
+      "title": "Exit, Voice, and Loyalty",
+      "year": 1970,
+      "url": "https://books.google.com/books?id=Bwe3AAAAIAAJ",
+      "rights": "Book text copyright reuse not granted by citation"
+    },
+    {
+      "authors": "Elizabeth Wolfe Morrison; Frances J. Milliken",
+      "title": "Organizational Silence",
+      "year": 2000,
+      "doi": "10.5465/amr.2000.3707697",
+      "rights": "Academic journal work, exact text rights not audited"
+    },
+    {
+      "authors": "Linux Foundation and Laboratory for Innovation Science at Harvard",
+      "title": "Census III",
+      "year": 2024,
+      "url": "https://www.linuxfoundation.org/press/open-source-usage-trends-and-security-challenges-revealed-in-new-study",
+      "rights": "Linked report's rights not assumed"
+    }
+  ],
+  "audit": {
+    "entries_reported": 7,
+    "independent_test_runs": 0,
+    "observed_harms": 0,
+    "measured_thresholds": 0,
+    "notes": "Zero documented observations here does not mean harms do not occur; none were collected or claimed in this addition."
+  }
+}
