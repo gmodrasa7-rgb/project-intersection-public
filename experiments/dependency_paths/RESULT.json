@@ -1,0 +1,41 @@
+{
+  "separate": {
+    "paths": 2,
+    "minimum_cut_size": 2,
+    "minimal_cuts": [
+      [
+        "C1",
+        "C2"
+      ]
+    ]
+  },
+  "shared": {
+    "paths": 2,
+    "minimum_cut_size": 1,
+    "minimal_cuts": [
+      [
+        "C"
+      ]
+    ]
+  },
+  "nominal_copy": {
+    "paths": 3,
+    "minimum_cut_size": 1,
+    "minimal_cuts": [
+      [
+        "C"
+      ]
+    ]
+  },
+  "independent_backup": {
+    "paths": 3,
+    "minimum_cut_size": 2,
+    "minimal_cuts": [
+      [
+        "C",
+        "D"
+      ]
+    ]
+  },
+  "evidence_status": "LOGICAL_SYNTHETIC_COMMON_CAUSE_ONLY"
+}
