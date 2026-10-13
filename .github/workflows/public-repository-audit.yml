@@ -23,6 +23,7 @@ on:
       - "experiments/e007/LICENSE_STATUS.md"
       - "experiments/e008/**"
       - "experiments/e009/**"
+      - "experiments/e010/**"
       - "MULTI_MODEL_ADVERSARIAL_AUDIT_2026-10-06.md"
       - "LONG_HORIZON_MIN_INTERVENTION_E2E.md"
       - "research/PI_ROADMAP_OPERATIONAL_GATES_V0_2_3_EN_KO.md"
@@ -50,6 +51,7 @@ on:
       - "experiments/e007/LICENSE_STATUS.md"
       - "experiments/e008/**"
       - "experiments/e009/**"
+      - "experiments/e010/**"
       - "MULTI_MODEL_ADVERSARIAL_AUDIT_2026-10-06.md"
       - "LONG_HORIZON_MIN_INTERVENTION_E2E.md"
       - "research/PI_ROADMAP_OPERATIONAL_GATES_V0_2_3_EN_KO.md"
@@ -132,7 +134,26 @@ jobs:
           e008_agency_living = Path("experiments/e008/AGENCY_LIVING_CONDITIONS_AMENDMENT_v1_2.md").read_text(encoding="utf-8")
           e009_readme = Path("experiments/e009/README.md").read_text(encoding="utf-8")
           e009_matrix = json.loads(Path("experiments/e009/scenario_matrix.json").read_text(encoding="utf-8"))
+          e010_text = Path("experiments/e010/README_KO.md").read_text(encoding="utf-8")
+          e010_result = json.loads(Path("experiments/e010/RESULT.json").read_text(encoding="utf-8"))
           multimodel_audit = Path("MULTI_MODEL_ADVERSARIAL_AUDIT_2026-10-06.md").read_text(encoding="utf-8")
+
+          # A 2026-10-06 draft reused E010 for a different blocked safety-inspection
+          # protocol; current main E010 is a 2026-10-12 exploratory analytic toy.
+          # Never silently merge the historical benchmark over the published model.
+          require("실험 ID 충돌 경고" in e010_text and "PR #20" in e010_text,
+                  "E010 lost explicit historical ID-collision and provenance boundary.")
+          require("POSTHOC DESIGN / NOT PRE-REGISTERED" in e010_text,
+                  "Published exploratory E010 falsely relabelled preregistered.")
+          require(e010_result.get("model") == "one_shot_extraction_and_irreversible_execution_budget",
+                  "E010 model identity replaced; do not merge unrelated experiment into this ID.")
+          require(e010_result.get("status") == "SELF_RUN_SYNTHETIC_FALSIFICATION_NOT_EMPIRICAL_VALIDATION",
+                  "E010 synthetic status improperly upgraded.")
+          require(not Path("experiments/e010/benchmark.py").exists(),
+                  "Blocked safety-inspection benchmark conflicts with the published E010 identity.")
+          require("Historical E010 safety-inspection draft PR #20" in evidence
+                  and "과거 E010 안전감사 설계초안 PR #20" in evidence,
+                  "Public evidence index lost E010 collision disclosure in EN/KO.")
 
           # Landing-page regression: keep first-review cost bounded.
           require(len(readme.splitlines()) <= 200, "README exceeded 200 lines; move detailed material to linked documents.")
