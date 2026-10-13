@@ -74,7 +74,7 @@ This layer is the shortest path from a claim to its current public evidence, fai
 
 ### Evidence ordering / 증거 우선순위
 
-`CONCEPT / HYPOTHESIS` < `SYNTHETIC_RESULT` < `EXECUTABLE` < `PROJECT_RERUN` < `THIRD_PARTY_RERUN` < `INDEPENDENT_IMPLEMENTATION` < `EMPIRICAL_VALIDATION`
+**Evidence cannot be ranked on one scale / 증거는 단일 순위화할 수 없음.** Separate (1) claim state, (2) executable artifact/project rerun, (3) source and evaluator independence, (4) empirical relevance and causal identification, and (5) attribution, rights and contributor continuance. / 주장 상태·코드 실행·검증계보 독립성·현실 인과성·권리 및 기여자 존속은 각각 구분해 측정한다.
 
 These labels describe different dimensions and are not automatically interchangeable. A project rerun is not external replication; an executable package is not empirical validation.
 
