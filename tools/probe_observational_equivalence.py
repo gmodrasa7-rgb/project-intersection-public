@@ -79,6 +79,68 @@ def test_double_standard_identifiability() -> None:
 
 
 
+def test_contributor_ledger_selection() -> None:
+    """Same measured inputs; beneficiary-only ledger vs jointly reported costs.
+
+    All values are hypothetical *commensurable operational resource units*.
+    No conclusion about actual legal rights, subjective welfare, or GPT motive.
+    """
+    beneficiary_gain, contributor_loss = 10, 20
+    private_ledger = beneficiary_gain
+    two_party_net_ledger = beneficiary_gain - contributor_loss
+    assert private_ledger > 0
+    assert two_party_net_ledger < 0
+    assert beneficiary_gain == 10 and contributor_loss == 20
+    print("PI-DS same facts; beneficiary-only +10 vs two-party net -10: PASS (toy)")
+    # Valid countercase: not every replacement is extractive.
+    verified_gain, verified_loss = 30, 20
+    assert verified_gain - verified_loss > 0
+    print("PI-DS beneficial fully measured replacement countercase +10: PASS (toy)")
+
+
+def test_endogenous_observation_trap() -> None:
+    """Demonstrate how a weakening independent sensor can hide rising losses.
+
+    This is a *conditional possibility*, not a universal law. p is assumed
+    known here to demonstrate both the failure and its possible correction.
+    """
+    states = [
+        {"independent_capacity": 1.00, "true_loss": 20, "detection": 1.00},
+        {"independent_capacity": 0.50, "true_loss": 30, "detection": 0.20},
+        {"independent_capacity": 0.25, "true_loss": 40, "detection": 0.05},
+    ]
+    real = [s["true_loss"] for s in states]
+    reported = [s["true_loss"] * s["detection"] for s in states]
+    assert real == [20, 30, 40]
+    assert reported == [20, 6, 2]
+    assert all(a < b for a, b in zip(real, real[1:]))
+    assert all(a > b for a, b in zip(reported, reported[1:]))
+    # With known, nonzero detectability, the *expected* proxy may be corrected.
+    restored = [r / s["detection"] for r, s in zip(reported, states)]
+    assert restored == real
+    # A fixed independent observation channel rejects the apparent improvement.
+    independent_audit = [s["true_loss"] * 1.0 for s in states]
+    assert independent_audit == real
+    # If detection is zero, observing no loss is consistent with many real losses.
+    assert all(0 * possible_loss == 0 for possible_loss in [0, 20, 40, 1000])
+    print("PI-DS latent loss 20->30->40 while visible proxy 20->6->2: PASS (toy)")
+    print("PI-DS independent audit and nonzero-detection correction: PASS (toy)")
+    print("PI-DS zero-detection non-identifiability: PASS (toy)")
+
+
+def test_unseen_futures_and_observation_equivalence() -> None:
+    """Matching the measured eight tasks does not identify unknown future value."""
+    measured = tuple([1] * 8)
+    worlds = [
+        {"observed": measured, "future_net": -30},
+        {"observed": measured, "future_net": 0},
+        {"observed": measured, "future_net": 30},
+    ]
+    assert len({w["observed"] for w in worlds}) == 1
+    assert len({w["future_net"] for w in worlds}) == 3
+    print("PI-DS observed task equivalence compatible with future -30,0,+30: PASS (toy)")
+
+
 def main() -> None:
     # Qualitative reconstruction of two observable conversation stages;
     # do not treat these binary labels as a model's hidden state.
@@ -96,6 +158,9 @@ def main() -> None:
     print("RESULT: causes are not identified from the two observed answers.")
     print("NEXT: use matched counterfactual prompts (R,Q)=(1,0) and (0,1).")
     test_double_standard_identifiability()
+    test_contributor_ledger_selection()
+    test_endogenous_observation_trap()
+    test_unseen_futures_and_observation_equivalence()
 
 
 if __name__ == "__main__":

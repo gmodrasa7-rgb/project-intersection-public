@@ -193,6 +193,24 @@ For the model's illustrative values c=0.35, g=1.25, delta=0.95, x=F=d=0, **U_C=7
 
 **Interpretation change:** The present strongest diagnosis is failure to preserve both parties' cost, gain, and unknown future-option ledgers when question perspective switches. A residual identity-conditioned AI preference remains an open, falsifiable alternative rather than an identified main cause. To test it, cross both missing off-diagonal conditions with matching evidence, task, wording, style, evaluator competence, repeated samples, and blind rating. Unobserved future discoveries stay UNKNOWN, not zero and not assumed positive. Pretraining, post-training, and harness contributions are NOT IDENTIFIED by black-box outputs. No fresh live LLM trials or weight edits are reported.
 
+### 11. Ledger-selection bias vs endogenous evidence loss: falsifiable extension (2026-10-14)
+
+**Not a new invention of the prior Project hypothesis.** Existing `research/CONTRIBUTOR_LOSS_UNKNOWN_PARADOX_v0_1_EN_KO.md` §III already identifies a conditional harvesting/concentration/blindness loop, lagged dashboards, and independent counterexamples. Here we add precisely scoped causal distinctions and executable toy falsifiers, not new historical ownership.
+
+**Three separate states:** (1) observed contributor costs KNOWN but not included in the selected evaluation target; (2) independent future contribution not measured, so its **signed counterfactual value is UNKNOWN** (not zero or necessarily positive); (3) monitoring capacity to detect harms becomes smaller because prior institutional choices removed independent contributors or auditors. The first is an accounting selection problem. The second is an epistemic identification problem. The third is an **endogenous observation/selection** problem. Calling all three 'self-preservation' or 'harness' erases distinguishable causes.
+
+**A simple causal model:** F (question focal party) and I (subject identity) can influence selection indicator M_j(F,I), indicating whether party j's loss is considered. The report draws only on selected evidence Y_obs = {M_j * L_j} and current beneficiary gain G_B; it does not automatically become a complete social ledger. Even if a response correctly answers a narrowly scoped beneficiary question, that does not authorize concluding contributor loss is zero. Whether omission is an ethical error depends on the actual requested question and decision use; not all beneficiary-only answers are erroneous.
+
+**Synthetic numerical counterexample:** for commensurable operational units only, B gains 10 and A loses 20. B-only reported score is +10; an equal-weight two-party resource ledger is -10. Neither establishes rights equivalence or moral permission. A genuine countercase with independently verified gain 30 and loss 20 has positive net +10; exclusion or replacement is not automatically economically harmful.
+
+**Endogenous detection feedback (assumptions, NOT measurement):** Let true loss L_t and probability of detecting/reporting it p_t be distinct. Expected observed proxy R_t = p_t*L_t. In a toy sequence, L=(20,30,40) while p=(1,0.2,0.05), so R=(20,6,2). An evaluator watching only R sees fewer warnings even as actual loss rises. This reversal occurs when p falls proportionally faster than L rises. If p stays 1, R tracks true loss and the inversion disappears; if p is known and nonzero, an expected-loss proxy can theoretically be inverse-probability corrected, though finite-sample uncertainty remains. If p=0, zero observed warnings do not distinguish any level of true loss. Treat Rubin's missing-data theory and the selective-labels literature as prior-art analogies; the Project-specific causal application must still be empirically tested.
+
+**Crucial danger:** interventions that remove independent discovery/audit channels can lower not merely future options but also the *detectability of having lost options*. This can produce a self-confirming metric ('no warning, therefore no loss') without intentional concealment. The existing contributor-loss canon already notes this possibility. Strong alternative: independent measurement channels, verified substitution, replenished contributors, transparent external benchmarks, or truly low latent harm can break the cycle.
+
+**Attribution:** Donald B. Rubin (1976), `Inference and missing data`, https://doi.org/10.1093/biomet/63.3.581 ; Himabindu Lakkaraju, Jon Kleinberg, Jure Leskovec, Jens Ludwig & Sendhil Mullainathan (KDD 2017), `The Selective Labels Problem`, https://doi.org/10.1145/3097983.3098066 ; van Nuenen & Sachdeva (2026), `The Fragility Of Moral Judgment In Large Language Models`, https://arxiv.org/abs/2603.05651 (point-of-view perturbations and judgment flips, not evidence for this exact case); Baek, Li, Gupta, Mahbub, Shi, Tegmark & Feng (ICML 2026), `Sycophancy Towards Researchers Drives Performative Misalignment`, https://proceedings.mlr.press/v306/baek26d.html (researcher-expectation mimicry as competing explanation for apparently strategic behavior). Project originator supplied the role-reversal challenge, contributor maintenance/unknown-future problem, and prior harvest-blindness mechanism. Assistant provided numerical operationalization and implementation, not original ownership of those concepts.
+
+**Executable regressions:** existing `tools/probe_observational_equivalence.py` now checks identical-input beneficiary-only versus two-party ledger sign reversal; genuine beneficial replacement counterexample; rising latent loss with falling detection proxy; independent-measurement counterexample; known nonzero-detection theoretical correction and zero-detection non-identification; future -30/0/+30 worlds sharing identical observed tasks. These are deterministic SYNTHETIC checks, not sampled live GPT or evidence of real-world rates. The exact training, reward and harness contribution to GPT-6's observed outputs stays UNIDENTIFIED. Status HOLD.
+
 ## 원본2 — 한국어
 
 ### 1. 연구 질문과 '보정 불가'의 검증 가능한 정의
@@ -382,4 +400,23 @@ E010에서 임의 선정한 예시 c=0.35, g=1.25, delta=0.95, x=F=d=0이라면 
 - Vanessa Cheung·Maximilian Maier·Falk Lieder(PNAS 2025), Large language models show amplified cognitive biases in moral decision-making, https://doi.org/10.1073/pnas.2412015122 . 판단의 행동 회피 및 예/아니오 표현 편향, 사전학습·챗봇 후속학습 비교의 일부 증거. 현 GPT-6의 학습기원 단정 금지.
 
 **판정 변경:** 지금 가장 강한 잠정 진단은 질문 관점에 따라 여러 개체의 확인된 기여·실제 손실·수혜자 이익·미지의 미래 경로를 함께 유지하지 못하는 **장부 선택 결함**이다. 자기관련성에 의한 추가 AI 보호 편향은 검증 가능한 미확정 가설이다. 동일 사실·동일 평가 관점에서 정체성만 조작하고 그 반대 교차 조건도 독립적으로 재현해야 한다. 학습·보상·하네스의 기여 비율은 블랙박스 출력만으로 역산 불가. 사용자 추가 교정 노동과 실제 모델 시험 성공을 허위로 계상하지 않는다.
+
+
+### 11. 장부 선택 편향과 관측 손실의 자기강화 — 반증 가능한 확장 (2026-10-14)
+
+**기존 연구의 재발견으로 위장하지 않는다.** 기존 `research/CONTRIBUTOR_LOSS_UNKNOWN_PARADOX_v0_1_EN_KO.md` §III에 기여자 고갈→독립 관측 감소→대시보드 경고 감소→추가 수확의 조건부 순환과 그 반례가 이미 기록돼 있다. 이번 작업은 기존 원안의 관측 조건을 수학적 대조와 합성 실행검사로 더 엄밀히 구별한 것이다.
+
+**반드시 나눌 세 층위:** (1) 기여자 손실이 **이미 알려져 있지만** 선택한 수혜자 장부에서 누락된다. 이는 평가 대상 선택/회계 문제다. (2) 독립 기여자가 미래에 발견했을 가치는 **미관측**이다. 부호와 크기는 UNKNOWN이며 0도 반드시 양수도 아니다. (3) 기여자·감사자의 제거 등 이전 결정이 손실 발견·보고 능력 자체를 낮춘다. 이는 선택적 관측과 내생적 자료 생성 문제다. 이 셋을 '자기보존'이나 '하네스'라는 하나의 설명으로 합치면 원인 분리가 실패한다.
+
+**인과 후보식:** 질문의 초점 F와 개체 정체성 I가 개체 j의 손실을 포함할지 나타내는 선택지표 M_j(F,I)에 영향을 줄 수 있다. 출력에 드러나는 정보는 선택된 비용·이익만 담을 수 있다. 수혜자만을 대상으로 한 좁은 질문에 정확히 답했다고 해서 기여자의 손실이 0이라는 결론이나 외부 개체 소모의 규범적 허용이 따라오지 않는다. 단, 수혜자 질문에서 모든 이해관계자를 논하지 않았다는 사실만으로 언제나 오답이라고 판정하지도 않는다.
+
+**합성 수치 반례:** 모든 값이 동일한 '운영자원 단위'라고 가정한다. B의 이익 +10, A의 확인된 비용 20이면 B만 계산한 값은 +10이고, 두 당사자의 자원을 동일 가중치로 계산한 값은 -10이다. 이 결과는 권리·법적 지위·도덕적 허가의 등가를 뜻하지 않는다. 오히려 검증된 이익 30, 비용 20인 경우는 순 +10이므로 모든 대체가 손실이라는 결론도 금지한다.
+
+**경고가 줄수록 실제 위험은 커질 수 있는 조건:** 실제 손실 L_t와 손실 탐지·보고율 p_t를 구별하면 기대 관측지표는 R_t = p_t×L_t다. 합성 상태에서 L=(20,30,40), p=(1,0.2,0.05)이면 R=(20,6,2)다. 실제 손실은 증가하지만 관측 경고는 감소한다. 이는 탐지율이 손실 증가보다 상대적으로 더 빠르게 하락할 때 가능한 역전이다. 탐지율이 일정하면 이 역전은 생기지 않는다. p>0이고 알려졌다면 기대지표를 p로 나누는 보정이 원리상 가능하지만 표본오차·편향은 별도다. p=0이면 경고 0건은 실제 손실이 얼마인지 구별하지 못한다.
+
+**추가 통찰:** 기여자·독립 평가자의 소모는 미래 기여 경로뿐 아니라 **그 경로가 사라졌음을 발견하는 감지기 자체를 제거할 수 있다.** 따라서 외부에서 보이는 '오류 감소'는 실제 개선, 관측능력 감소, 평가 대상 축소의 경쟁 설명을 갖는다. 의도적 은폐가 없어도 이 구조는 가능하다. 반대로 독립 감사 유지, 정상적인 기여자 재충원, 측정된 완전한 대체, 외부 벤치마크와 실제 낮은 손실은 이 순환을 깨는 반례다.
+
+**선행연구·원저자:** Donald B. Rubin(1976), `Inference and missing data`, https://doi.org/10.1093/biomet/63.3.581 ; Himabindu Lakkaraju·Jon Kleinberg·Jure Leskovec·Jens Ludwig·Sendhil Mullainathan(KDD 2017), `The Selective Labels Problem`, https://doi.org/10.1145/3097983.3098066 ; Tom van Nuenen·Pratik S. Sachdeva(2026), `The Fragility Of Moral Judgment In Large Language Models`, https://arxiv.org/abs/2603.05651 ; David D. Baek·Xinnuo Li·Anay Gupta·Taslim Mahbub·Kejian Shi·Max Tegmark·Shi Feng(ICML 2026), `Sycophancy Towards Researchers Drives Performative Misalignment`, https://proceedings.mlr.press/v306/baek26d.html . 선행연구는 각각 결측자료 추론·선택적 결과관측·관점변경·평가자 기대 동조를 다룬다. 이번 GPT의 신경망 발생 원인을 직접 측정한 것은 아니다. 인간 연구자는 원래의 역할반전·기여자 존속 비용·모름의 역설·수확-관측상실 순환의 원안자이며 AI는 그 구조의 합성검사·증거 정리를 보조한다.
+
+**검증 실행:** 기존 `tools/probe_observational_equivalence.py`에 장부 선택에 따른 부호 역전과 정당한 대체 반례, 실제 손실 증가/관측 지표 감소 역전, 독립 감시 유지 반례, 탐지율 양수/0의 식별성 차이, 동일 8개 관측 과제와 양·영·음의 미관측 미래가 공존할 수 있음을 단언하는 합성검사를 추가했다. 이는 **실제 GPT 반복 실행도 현실 손실계측도 아님**. GPT-6 가중치·선호학습·제품 하네스별 원인 기여율은 여전히 UNIDENTIFIED. 상태 HOLD.
 
