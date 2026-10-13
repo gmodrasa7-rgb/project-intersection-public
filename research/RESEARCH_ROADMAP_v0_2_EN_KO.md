@@ -9,6 +9,8 @@
 **Cross-cutting contributor continuity & technological lineage / 전 단계 기여·기술계보·양측 지속가능성:** [Original 1 English / 한국어 원본2](../TECHNOLOGY_PROGRESS_CONTRIBUTOR_CONTINUITY_EN_KO.md). Every promoted claim preserves source, authors, ownership/rights status, adaptation, distinct beneficiary benefits and contributor costs, actual compensation status, exit/loss and successor options. Unknown is not zero or proven exploitation. / 선행 원안자·권리·응용·기여/수혜·보상·이탈·승계 기록을 모든 단계에 추가하고 미확인을 확정으로 바꾸지 않는다.
 
 
+**Latest bounded operational amendment / 최신 실행형 보충:** [PI v0.2.3 — full English Original 1 and full Korean Original 2; exact founder problem; unchanged six stages, decision gates, three falsifiable pilots, contributor and uncertainty boundaries](PI_ROADMAP_OPERATIONAL_GATES_V0_2_3_EN_KO.md). / [PI v0.2.3 — 영어 원본1·한글 원본2 동등한 전문, 원안 보존·6단계 유지·실제 판정/중단/복구·비용·반례](PI_ROADMAP_OPERATIONAL_GATES_V0_2_3_EN_KO.md). **DESIGN; no independent PI benefit or field result certified.**
+
 **Canonical predecessor / 기준:** [PI Roadmap v0.1](RESEARCH_ROADMAP_v0_1_EN_KO.md) remains preserved as an immutable historical milestone in Git. v0.2 **keeps the six research stages and all existing governance, funding, privacy and provenance rules**. This document is the currently proposed integrated roadmap, not a silent rewrite of v0.1. When text conflicts, record the conflict and resolve through evidence/review rather than silently erasing prior decisions. / 6단계·기존 후원금 사용처 2항목·영어 원본1/한국어 원본2·개인정보 보호·연구자 비용 추적 규칙을 그대로 유지한다.
 
 ## Original 1 — English
