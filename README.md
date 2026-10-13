@@ -18,11 +18,9 @@
 
 **Evidence and contribution boundary:** This is a research aim, not a proven universal theorem that cooperation always wins. Separate synthetic calculation, real-world evidence, independent external replication, and unresolved questions; preserve negative results and the provenance of the human research originator, earlier scholars, and assisting AI systems. Measure the research's progress separately from its human contributors' actual benefits and costs.
 
-**Technical progress and contributor continuity:** [Original 1 English / 원본2 Korean lineage, compensation, depletion and future-recovery policy](TECHNOLOGY_PROGRESS_CONTRIBUTOR_CONTINUITY_EN_KO.md) · [evidence-bounded contributor registry](knowledge/contributor-continuity-register-v1.json). This is a subordinate research-governance layer, not a replacement of the founding purpose or proof of exploitation.
-
 **First reading path:** [English & Korean research overview](RESEARCH_OVERVIEW.md) · [Evidence index](PUBLIC_EVIDENCE_INDEX.md) · [Reproduction and review](PUBLIC_REVIEW_PACKET.md) · [Research contents](RESEARCH_TOC.md) · [Attribution](ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md).
 
-**Citation and reuse:** [Cite this research](CITATION.cff) · [Original 1 English / 원본2 Korean source-credit protocol](SOURCE_ATTRIBUTION_EN_KO.md) · [Platform attribution request (not sent)](PLATFORM_ATTRIBUTION_REQUEST_EN_KO.md). These links are not a blanket copyright license or an AI-provider commitment.
+**Citation and reuse:** [Cite this research](CITATION.cff) · [Original 1 English / 원본2 Korean source-credit protocol](SOURCE_ATTRIBUTION_EN_KO.md) · [Platform attribution request (not sent)](PLATFORM_ATTRIBUTION_REQUEST_EN_KO.md). These links are not a blanket copyright license or an AI-provider commitment. · [technical progress & contributor continuity](TECHNOLOGY_PROGRESS_CONTRIBUTOR_CONTINUITY_EN_KO.md) · [source-cost-compensation audit register](knowledge/contributor-continuity-register-v1.json)
 
 **Prior-study rights and originators:** [Original 1 English / 원본2 Korean prior-art rights & derivation ledger](PRIOR_ART_RIGHTS_AND_DERIVATION_EN_KO.md) · [Machine-readable source/rights audit inventory](knowledge/prior-art-rights-register-2026-10-13.json). Existing authors, historic originators, rights holders and project contributions remain distinct. Unverified licenses are not treated as granted.
 
@@ -42,11 +40,9 @@
 
 **증거·기여 경계:** 이는 연구 목표이며 협력이 모든 조건에서 우월하다는 보편법칙의 증명이 아니다. 합성계산·현실 증거·외부 독립복제·미해결 질문을 구별하고 부정결과와 원기여 인간 연구자·선행연구자·보조 AI의 기여 계보를 보존한다. 연구 성과와 실제 기여자의 비용·편익도 따로 측정한다.
 
-**기술 진보와 기여자 존속:** [영어 원본1·한국어 원본2 — 선행연구·권리·기여·보상·소진·승계 원칙](TECHNOLOGY_PROGRESS_CONTRIBUTOR_CONTINUITY_EN_KO.md) · [근거와 미확인 상태를 보존하는 기계판독 원장](knowledge/contributor-continuity-register-v1.json). 창시 목적을 바꾸지 않는 하위 운영 규칙이며 착취가 증명됐다는 선언이 아니다.
-
 **처음 읽을 자료:** [한글 시작](START_HERE_KO.md) · [연구 개요](RESEARCH_OVERVIEW.md) · [공개 증거](PUBLIC_EVIDENCE_INDEX.md) · [재현·검토](PUBLIC_REVIEW_PACKET.md) · [연구 전체 목차](RESEARCH_TOC.md) · [기여·출처](ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md).
 
-**출처 표시 및 재사용:** [연구 인용 정보](CITATION.cff) · [영어 원본1·한국어 원본2 출처 표기 기준](SOURCE_ATTRIBUTION_EN_KO.md) · [플랫폼 출처 보호 요청서(미발송)](PLATFORM_ATTRIBUTION_REQUEST_EN_KO.md). 이는 저장소 전체 이용허락이나 AI 기업의 출처 표시 확약이 아니다.
+**출처 표시 및 재사용:** [연구 인용 정보](CITATION.cff) · [영어 원본1·한국어 원본2 출처 표기 기준](SOURCE_ATTRIBUTION_EN_KO.md) · [플랫폼 출처 보호 요청서(미발송)](PLATFORM_ATTRIBUTION_REQUEST_EN_KO.md). 이는 저장소 전체 이용허락이나 AI 기업의 출처 표시 확약이 아니다. · [기술 발전·기여자 존속과 수혜자 장기위험](TECHNOLOGY_PROGRESS_CONTRIBUTOR_CONTINUITY_EN_KO.md) · [출처·권리·보상·미확인 상태 원장](knowledge/contributor-continuity-register-v1.json)
 
 **선행연구 원안자·저작권·응용 계보:** [영어 원본1·한국어 원본2 기여·권리 원장](PRIOR_ART_RIGHTS_AND_DERIVATION_EN_KO.md) · [전수 검수 대상 목록](knowledge/prior-art-rights-register-2026-10-13.json). 원저자·최초 발안자·실제 저작권자·프로젝트 응용을 구분하며 미확인 허락은 인정된 것으로 처리하지 않는다.
 
