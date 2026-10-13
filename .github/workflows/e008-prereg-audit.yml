@@ -21,3 +21,5 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: python experiments/e008/validate.py
+      - name: Audit E008 executability, frozen prereg source and synthetic counterexample
+        run: node experiments/e008/readiness_audit.js --verify
