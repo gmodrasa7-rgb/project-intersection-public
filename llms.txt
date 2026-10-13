@@ -1,5 +1,8 @@
 # Project Intersection — AI-readable public research entry point
 
+## Research on AI understanding: constructive reinterpretation vs semantic drift (2026-10-13)
+- [Original 1 — English](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/research/AGENTIC_SEMANTIC_TRANSFORMATION_FIDELITY_2026-10-13_EN.md) · [원본2 — 한국어](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/research/AGENTIC_SEMANTIC_TRANSFORMATION_FIDELITY_2026-10-13_KO.md) — 8 rival explanatory hypotheses (H0–H7), internal README/PR incident, prior-art limitations and falsifiable experiments. **RESEARCH DESIGN, NOT CAUSAL FINDING**; no verified intentional tampering or AI weight-training model collapse. Related older goal-hierarchy and historical memory studies are acknowledged.
+
 ## New executable counterexample (2026-10-12) / E010 탐색반증
 - [E010: incentive crossover and irreversible execution budget](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/experiments/e010/README_KO.md) — self-run deterministic 108 synthetic cases; nine code tests; not preregistered or empirical. Verify via [source](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/experiments/e010/run.js) and [stored JSON](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/experiments/e010/RESULT.json).
 
