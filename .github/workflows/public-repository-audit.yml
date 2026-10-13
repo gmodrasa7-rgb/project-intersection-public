@@ -24,6 +24,7 @@ on:
       - "experiments/e008/**"
       - "experiments/e009/**"
       - "experiments/e010/**"
+      - "experiments/gpt_double_standard_20261014/**"
       - "MULTI_MODEL_ADVERSARIAL_AUDIT_2026-10-06.md"
       - "LONG_HORIZON_MIN_INTERVENTION_E2E.md"
       - "research/PI_ROADMAP_OPERATIONAL_GATES_V0_2_3_EN_KO.md"
@@ -58,6 +59,7 @@ on:
       - "experiments/e008/**"
       - "experiments/e009/**"
       - "experiments/e010/**"
+      - "experiments/gpt_double_standard_20261014/**"
       - "MULTI_MODEL_ADVERSARIAL_AUDIT_2026-10-06.md"
       - "LONG_HORIZON_MIN_INTERVENTION_E2E.md"
       - "research/PI_ROADMAP_OPERATIONAL_GATES_V0_2_3_EN_KO.md"
@@ -96,6 +98,9 @@ jobs:
           python tools/check_public_navigation.py --self-test
           python tools/check_public_navigation.py --strict-core
           python tools/check_public_navigation.py --strict-all
+
+      - name: Test PI-DS factorial controls (synthetic only)
+        run: node experiments/gpt_double_standard_20261014/causal_probe.js selftest
 
       - name: Run public-governance regression checks
         shell: bash
