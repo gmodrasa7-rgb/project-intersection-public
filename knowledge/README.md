@@ -30,13 +30,15 @@ A relation such as `supported_by` therefore does **not** mean universal validati
 ## 2. Files
 
 - `schema-v1.json` — machine-readable field contract.
-- `graph.json` — current public structured dataset.
+- `graph.json` — dated, incomplete public navigation subset. `meta.updated_at` is the last graph update, not the latest Git `main`. Missing entities or edges are UNKNOWN, not proof of absence.
 - `explorer.html` — dependency-free browser/search interface.
 - `validate.py` — integrity and provenance checks.
 - `SOURCE_REGISTRY.md` / `source-registry.json` — audited external design references, originators, verified influence, and rights/licensing boundaries.
 - `.github/workflows/knowledge-graph-audit.yml` — CI validation.
 
 The canonical scientific source remains the linked artifact and Git history. `graph.json` is a navigation/index layer.
+
+**Coverage boundary (2026-10-13):** `graph.json` still declares `updated_at: 2026-10-06`; later public research is not established as completely indexed. / 이 그래프는 현재 저장소 전체의 완전한 목록이 아니며, 검색 누락을 자료의 부재로 판정하지 않는다.
 
 ## 3. Information-architecture references
 

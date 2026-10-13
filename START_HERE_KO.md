@@ -19,14 +19,14 @@
 
 - **연구기억(구 PIA/피아) 자료관리 시스템 업그레이드 로드맵:** [PI v0.2 연구 로드맵 운영 보충, 영어 원본1·한국어 원본2](research/RESEARCH_ROADMAP_v0_2_EN_KO.md). 현재 PIA v0.1, P0~P5 목표·실측 게이트·롤백·권한분리. PI 연구 6단계는 변경하지 않음.
 
-- **PI 로드맵 v0.2.2(현재 보충):** [숨은 지반·현재 길·검사 한계·우회 판단, 선행자료 22건(원본1 영/원본2 한)](research/PI_ROADMAP_HIDDEN_ROUTE_PRIOR_ART_V0_2_2_EN_KO.md) — HP1~3 제안, HP-R01~06 미실행. 이전 v0.1~v0.2.1 보존.
+- **PI 로드맵 v0.2.2(이전 보충; 현행 v0.2.3 아님):** [숨은 지반·현재 길·검사 한계·우회 판단, 선행자료 22건(원본1 영/원본2 한)](research/PI_ROADMAP_HIDDEN_ROUTE_PRIOR_ART_V0_2_2_EN_KO.md) — HP1~3 제안, HP-R01~06 미실행. 이전 v0.1~v0.2.1 보존.
 
-- **PI 로드맵 v0.2.1(변화의 함정 보충, 현재):** [영어 원본1·한국어 원본2](research/PI_ROADMAP_CHANGE_TRAP_V0_2_1_EN_KO.md) — 과거 성공 사례 비복제 원칙, 전이 가능성 검사 TG1~TG5, 실패유형 CT1~CT7, 회귀검사 설계 CT-R01~04. **효과 미실증.**
+- **PI 로드맵 v0.2.1(변화의 함정에 관한 이전 보충):** [영어 원본1·한국어 원본2](research/PI_ROADMAP_CHANGE_TRAP_V0_2_1_EN_KO.md) — 과거 성공 사례 비복제 원칙, 전이 가능성 검사 TG1~TG5, 실패유형 CT1~CT7, 회귀검사 설계 CT-R01~04. **효과 미실증.**
 
 
 - **AI 이해 연구 — 지식의 생산적 재구성과 원안 변질의 양면성:** [영어 원본1](research/AGENTIC_SEMANTIC_TRANSFORMATION_FIDELITY_2026-10-13_EN.md) · [한국어 원본2](research/AGENTIC_SEMANTIC_TRANSFORMATION_FIDELITY_2026-10-13_KO.md) — README 변질·복구를 관측사례로 사용하며 맥락·요약·자기인용·규칙 고착·합리적 문서배치 등 경쟁설명을 분리. 인과 실험과 독립검증 미실행.
 - **연구 통합 공개 머릿말(원본1 영어 / 원본2 한국어):** [개발 주체와 시스템의 능력 변화, 실질적 감독·안전관리, 역할반전·협력 유인에 관한 7개 질문 + 기존 6대 연구영역](PUBLIC_PREAMBLE_VOLUNTARY_COEXISTENCE_2026-10-13_EN_KO.md) — 최소충분 안전규칙, E2E 공존, ICM 정의 구별, E007~E010 검증 경계, 기여·번역·후원 경계. 기존 연구 정본을 대체하지 않음.
-- **PI 로드맵 v0.2(현행 역사적 실패 예방 개정안):** [영어 원본1·한국어 원본2, 역사적 20개 사례와 방호·중단·회귀 기준](research/RESEARCH_ROADMAP_v0_2_EN_KO.md) — 6단계 보존, F01–F20·G1–G8·R01–R12 추가. **역사자료 근거 + 제안, PI 파일럿 미실행·독립검증 미완료.**
+- **PI 로드맵 v0.2(현행 v0.2.3의 선행 개정안):** [영어 원본1·한국어 원본2, 역사적 20개 사례와 방호·중단·회귀 기준](research/RESEARCH_ROADMAP_v0_2_EN_KO.md) — 6단계 보존, F01–F20·G1–G8·R01–R12 추가. **역사자료 근거 + 제안, PI 파일럿 미실행·독립검증 미완료.**
 - **PI 로드맵 v0.1(이전 기준선, 보존):** [초안 구체화 → 선행연구 수집 → 조사 포화 판정 → 검수·정제·응용 → 원기여자 기록 → 신연구 검증·가속](research/RESEARCH_ROADMAP_v0_1_EN_KO.md) — 영어 원본1·한국어 원본2; 설계, 전단계 실행 완료가 아님.
 - **후원금 운영·안전장치:** [개인 연구 후원 2항목·통합 장부(수입 금액 미확인)](funding/SPONSORSHIP_PUBLIC_LEDGER.md) · [법률·세무·프라이버시 위험 등록부](funding/LEGAL_TAX_RISK_REGISTER_2026-10-13_EN_KO.md) · [대외 연구 소개글](PUBLIC_LINKEDIN_INTRODUCTION_2026-10-13_EN_KO.md). 기존 별도 연구비 계획은 그대로 보존.
 
@@ -58,7 +58,7 @@
 - **권력·기득권·비용전가 조사:** [기존지위·권력비대칭 착취 및 비용외부화 메커니즘 조사](INCUMBENT_POWER_EXTRACTION_MECHANISMS_2026_KO.md) — 사례·선행연구·반례·탐지 신호·검증가설을 구분한 공개 교차지도.
 
 
-상태: **공개용 탐색 안내 / 2026-10-10 관측**. 이 문서는 기존 증거·주장·실험을 찾아가는 포인터이며 새로운 과학적 결과를 선언하지 않는다.
+상태: **공개용 탐색 안내**. 일부 항목은 2026-10-10 당시 기록이며, 최신 과학적 증거나 현재 Git HEAD 상태를 뜻하지 않는다. 이 문서는 기존 증거·주장·실험을 찾아가는 포인터이며 새로운 과학적 결과를 선언하지 않는다.
 
 <!-- CAPABILITY_LAB_2026_10_11 -->
 - **합법적 재귀개선 실행 예제:** [좁은 기능 자동 개선·보류평가·회귀차단](capability_lab/README_KO.md) · [실행 코드](capability_lab/retrieval_evolution.py) · [자동검사](.github/workflows/capability-lab-regression.yml) — 합성 검색 실험, 초지능 또는 독립 검증 주장 아님.
