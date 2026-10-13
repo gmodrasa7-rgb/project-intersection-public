@@ -27,6 +27,8 @@ on:
       - "MULTI_MODEL_ADVERSARIAL_AUDIT_2026-10-06.md"
       - "LONG_HORIZON_MIN_INTERVENTION_E2E.md"
       - "research/PI_ROADMAP_OPERATIONAL_GATES_V0_2_3_EN_KO.md"
+      - "research/AI_SELF_OBSERVABILITY_AUDIT_DILEMMA_2026-10-13_EN_KO.md"
+      - "tools/probe_observational_equivalence.py"
       - "tools/check_roadmap_bilingual_gate.py"
       - ".github/pull_request_template.md"
       - ".github/workflows/public-repository-audit.yml"
@@ -55,6 +57,8 @@ on:
       - "MULTI_MODEL_ADVERSARIAL_AUDIT_2026-10-06.md"
       - "LONG_HORIZON_MIN_INTERVENTION_E2E.md"
       - "research/PI_ROADMAP_OPERATIONAL_GATES_V0_2_3_EN_KO.md"
+      - "research/AI_SELF_OBSERVABILITY_AUDIT_DILEMMA_2026-10-13_EN_KO.md"
+      - "tools/probe_observational_equivalence.py"
       - "tools/check_roadmap_bilingual_gate.py"
       - ".github/pull_request_template.md"
       - ".github/workflows/public-repository-audit.yml"
@@ -75,6 +79,9 @@ jobs:
 
       - name: Verify both full roadmap originals, 6 stages and failure injections
         run: python tools/check_roadmap_bilingual_gate.py --self-test
+
+      - name: Verify observation equivalence negative control (toy only)
+        run: python tools/probe_observational_equivalence.py
 
       - name: Run public-governance regression checks
         shell: bash
