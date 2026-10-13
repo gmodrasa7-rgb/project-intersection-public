@@ -181,6 +181,21 @@ jobs:
           autonomous_state = json.loads(Path("AUTONOMOUS_RESEARCH_STATE.json").read_text(encoding="utf-8"))
           contribution_cost = Path("CONTRIBUTION_COST_ACCOUNTING_REGRESSION.md").read_text(encoding="utf-8")
           review_packet = Path("PUBLIC_REVIEW_PACKET.md").read_text(encoding="utf-8")
+          # Independent dimensions cannot become a one-way scalar ladder elsewhere.
+          require("## 3. Independent evidence dimensions" in review_packet,
+                  "Reviewer packet reintroduced a false single-score evidence ladder.")
+          require("## 3. Current evidence ladder" not in review_packet,
+                  "External reviewers still receive the superseded evidence ladder.")
+          for dimension in (
+              "Claim status / 주장 상태",
+              "Artifact & execution / 구현·실행",
+              "Independence / 검증 계보",
+              "Empirical applicability / 현실 적용성",
+              "Credit, rights and continuance / 출처·권리·존속",
+          ):
+              require(dimension in review_packet,
+                      f"Reviewer packet silently dropped independent dimension: {dimension}")
+
           failure_index = Path("FAILURE_REGRESSION_INDEX.md").read_text(encoding="utf-8")
           attribution_boundary = Path("ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md").read_text(encoding="utf-8")
           knowledge_graph = json.loads(Path("knowledge/graph.json").read_text(encoding="utf-8"))
