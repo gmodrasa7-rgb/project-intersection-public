@@ -1,6 +1,8 @@
 # External Design Source Registry
 ## 외부 설계 출처·라이선스 레지스트리
 
+**Extended citation and originator-rights ledger (2026-10-13) / 원안자·저작권 확장원장:** [English Original 1 / 한국어 원본2](../PRIOR_ART_RIGHTS_AND_DERIVATION_EN_KO.md) · [machine-auditable inventory](prior-art-rights-register-2026-10-13.json). This registry's existing descriptions of ORKG/Wikidata/OpenAlex/Papers with Code/MITRE licenses apply only to the identified components and as of the dates reviewed. They do not imply ownership, an unrestricted right to import every referenced work, or that original design concepts are PI-owned. / 기존 출처별 허락 조건을 전체 저작물에 확대하지 않으며 미확인 최초발안·저작권자는 미확인으로 남긴다.
+
 Review date / 조사일: **2026-10-06**
 
 Purpose: record the original/official sources used to inform the Project Intersection structured knowledge layer, what was actually learned from each source, and what copyright/license/trademark boundary applies.
