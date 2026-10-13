@@ -5,6 +5,8 @@ on:
     paths:
       - "TECHNOLOGY_PROGRESS_CONTRIBUTOR_CONTINUITY_EN_KO.md"
       - "knowledge/contributor-continuity-register-v1.json"
+      - "knowledge/continuance-resource-threshold-v0_1.json"
+      - "research/CONTINUANCE_RESOURCE_THRESHOLD_v0_1_EN_KO.md"
       - "knowledge/contributor-loss-unknown-paradox-v0_1.json"
       - "research/CONTRIBUTOR_LOSS_UNKNOWN_PARADOX_v0_1_EN_KO.md"
       - "knowledge/prior-art-rights-register-2026-10-13.json"
@@ -15,6 +17,8 @@ on:
     paths:
       - "TECHNOLOGY_PROGRESS_CONTRIBUTOR_CONTINUITY_EN_KO.md"
       - "knowledge/contributor-continuity-register-v1.json"
+      - "knowledge/continuance-resource-threshold-v0_1.json"
+      - "research/CONTINUANCE_RESOURCE_THRESHOLD_v0_1_EN_KO.md"
       - "knowledge/contributor-loss-unknown-paradox-v0_1.json"
       - "research/CONTRIBUTOR_LOSS_UNKNOWN_PARADOX_v0_1_EN_KO.md"
       - "knowledge/prior-art-rights-register-2026-10-13.json"

@@ -111,6 +111,32 @@
       ],
       "empirical_status": "NOT_TESTED_BY_THIS_REGISTRY",
       "caveat": "Voluntary exit is protected; cannot compel unpaid proof or coerce contributors to remain."
+    },
+    {
+      "id": "HS-05",
+      "name": "Continuance resource threshold and time foreclosure",
+      "type": "HYPOTHESIS",
+      "public_spec": "research/CONTINUANCE_RESOURCE_THRESHOLD_v0_1_EN_KO.md",
+      "evidence_registry": "knowledge/continuance-resource-threshold-v0_1.json",
+      "conditions": [
+        "Actual accessible resources in at least one critical dimension remain below repair/maintenance demand",
+        "Alternative resource paths, social support, lawful exit or substitution are inadequate",
+        "Contributor is dependent on a receiver/controller of access or reward"
+      ],
+      "potential_chain": "shortfall or uncompensated time costs -> capacity erosion and constrained exit -> fewer independent corrections and future choices -> potential recipient self-depletion or unknown-paradox closure",
+      "counterexamples": [
+        "Independent support covers human necessities",
+        "Sustainable voluntary unpaid participation",
+        "Substitutes, safer working hours, effective redistribution or funded recovery prevent degradation",
+        "Observed low output has independent confounding causes"
+      ],
+      "empirical_status": "NOT_TESTED_BY_THIS_REGISTRY",
+      "caveats": [
+        "Human dignity and basic needs are not contingent on productivity",
+        "Current AI hosting costs do not establish AI subjective needs or equivalent legal status",
+        "Predation is a structural metaphor pending specific evidence",
+        "No cash metric may mix incommensurate critical resources"
+      ]
     }
   ],
   "upstream_records": [
@@ -5219,5 +5245,11 @@
     "mechanism_state": "UNVALIDATED_NOT_UNIVERSAL",
     "observation_loss_not_just_labor_loss": true,
     "owner_beneficiary_loss_unproved": true
+  },
+  "related_continuance_threshold": {
+    "report": "research/CONTINUANCE_RESOURCE_THRESHOLD_v0_1_EN_KO.md",
+    "claims_registry": "knowledge/continuance-resource-threshold-v0_1.json",
+    "status": "NOT_TESTED",
+    "source_credit": "gmodrasa7-rgb (human originator), plus separately cited earlier authors"
   }
 }

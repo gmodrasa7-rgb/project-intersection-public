@@ -3,6 +3,7 @@
 
 Status: **PUBLIC GOVERNANCE / METHODOLOGY ARTIFACT**
 **Additional loss not visible in money totals / 단순 금전손해를 넘어선 인식손실:** [Contributor loss × Unknown Paradox — English Original 1 / 한국어 원본2](research/CONTRIBUTOR_LOSS_UNKNOWN_PARADOX_v0_1_EN_KO.md). Coverage loss is a hypothesis requiring independent fault detection, not proof that all contributor departures are harmful. / 기여자 손실 후 독립 오류발견 경로와 메타관측 소실을 별도로 검증하며 경고 감소를 곧 안전성 증거로 판정하지 않는다.
+**Actual maintenance-access constraints / 실제 개체 유지조건:** [Continuance resource threshold report, English 1 / 한국어 2](research/CONTINUANCE_RESOURCE_THRESHOLD_v0_1_EN_KO.md) · [structured CRV claims](knowledge/continuance-resource-threshold-v0_1.json). Access to food, housing, healthcare and real recovery time is not reducible to a notional research invoice; present AI hosting inputs are recorded as system dependencies, not verified sentient needs. / 미래 고갈을 가정해 즉시 보상채무를 추정하지 않는다.
 
 This document defines a role-reversible audit rule for systems, organizations, research programs, and AI-assisted workflows that learn from, benefit from, or are repeatedly corrected by a contributor.
 

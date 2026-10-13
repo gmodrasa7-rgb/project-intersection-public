@@ -122,6 +122,50 @@ def audit() -> tuple[list[str], dict]:
               "Missing fully paired EN1/KO2 hypotheses", errors)
         check("consent" in raw.lower() and "이탈" in raw,
               "Contributor exit protection omitted", errors)
+    # Continuance and resource thresholds — must not invent suffering or
+    # equate today's deployed AI infrastructure with human rights.
+    cpath = ROOT / "research" / "CONTINUANCE_RESOURCE_THRESHOLD_v0_1_EN_KO.md"
+    cdata_path = ROOT / "knowledge" / "continuance-resource-threshold-v0_1.json"
+    check(cpath.is_file(), "Missing EN1/KO2 continuance-threshold research", errors)
+    check(cdata_path.is_file(), "Missing maintenance-threshold data", errors)
+    if cpath.is_file():
+        prose = cpath.read_text(encoding="utf-8")
+        check("## Original 1 — English" in prose and "## 원본2 — 한국어" in prose,
+              "New continuance research lost paired full editions", errors)
+        check(("present deployed ai" in prose.lower() or "현재 배포된 AI" in prose) and "의식" in prose,
+              "Current-AI legal/welfare status limit missing", errors)
+    if cdata_path.is_file():
+        crv = load(cdata_path)
+        check(crv.get("state") == "HYPOTHESES_ONLY_NOT_EMPIRICALLY_VALIDATED",
+              "Continuance risk prematurely promoted to established fact", errors)
+        check(crv.get("model", {}).get("never_scalarize_incommensurate") is True,
+              "Critical resources illegally reduced to one scalar", errors)
+        check(crv.get("model", {}).get("never_assume_contribution_only_maintenance_route") is True,
+              "Human subsistence conditioned on productivity", errors)
+        ids = {x.get("id") for x in crv.get("claim_states", [])}
+        check(ids == {f"CRV-{n:02d}" for n in range(1, 8)},
+              "Missing or extra resource-threshold claim IDs", errors)
+        check(len(crv.get("claim_states", [])) == len(ids),
+              "Duplicate resource-threshold claims", errors)
+        for claim in crv.get("claim_states", []):
+            cid = claim.get("id")
+            check(claim.get("status") == "NOT_TESTED",
+                  f"{cid} claimed empirical verification without test", errors)
+            check(claim.get("effect_size") is None and claim.get("legal_conclusion") is None,
+                  f"{cid} invented effect size or legal finding", errors)
+            check(claim.get("person_health_or_death") is None,
+                  f"{cid} prohibited personal health or death assertion", errors)
+            check(bool(claim.get("disconfirmer")), f"{cid} has no falsification", errors)
+        guards = crv.get("guardrails", {})
+        for guard in ("no_forced_person_deprivation", "no_compelled_unpaid_work",
+                      "no_private_medical_family_financial_data",
+                      "no_ai_personhood_assumption", "unknown_is_not_zero"):
+            check(guards.get(guard) is True, f"Missing continuance guard {guard}", errors)
+        ch = next((x for x in data["theoretical_scenarios"] if x.get("id") == "HS-05"), None)
+        check(ch is not None and ch.get("empirical_status") == "NOT_TESTED_BY_THIS_REGISTRY",
+              "Missing evidence-bounded HS-05 resource threshold connection", errors)
+        check(crv.get("audit", {}).get("independent_test_runs") == 0,
+              "Unverified experiments counted as actual", errors)
     summary = {"source_records": len(records), "snapshot_artifacts": len(files),
                "file_level_audits": data["snapshot"]["known_file_level_audits"],
                "scenario_count": len(data["theoretical_scenarios"]),
