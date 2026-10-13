@@ -68,14 +68,14 @@ A system does not qualify as voluntary merely because it reports consent while a
 
 **Greater capability and long-term planning do not guarantee cooperative decisions.** If a participant can transfer substantial costs to others without consequence or can replace collaborators at low cost, one-sided arrangements may remain attractive. This possibility must be tested rather than assumed away.
 
-### ICM: record two related usages, do not merge them silently
+### ICM versus IndCM: distinct abbreviations for distinct constructs
 
-The term **ICM** appears in different historical formulations:
+**Current shorthand (2026-10-13):**
 
-- **Minimal Self-Interest Intersection (최소 사심 교집합):** potential overlap in independently pursued interests supporting cooperation without coercion.
-- **Independent Continuance Margin (독립 존속 여력):** practical room to continue, refuse, exit, restore oneself, learn and generate future possibilities without dependence on one controller.
+- **ICM — Minimal Self-Interest Intersection (최소 사심 교집합):** potential overlap in independently pursued interests supporting cooperation without coercion. Keep the historical Project Intersection primary shorthand **ICM**.
+- **IndCM — Independent Continuance Margin (독립 존속 여력):** practical room to continue, refuse, exit, restore oneself, learn and generate future possibilities without dependence on one controller. The old shorthand **ICM** for this *different* construct is **LEGACY / AMBIGUOUS** and is no longer used for new statements; original historical text remains intact.
 
-The first concerns **incentive compatibility**, the second **viable alternatives and continuance**. Their mapping is a research task rather than a settled identity or a proven universal formula.
+**The English concept phrases are unchanged; only the duplicate shorthand is disambiguated.** ICM concerns **incentive compatibility** and IndCM concerns **viable alternatives and independent continuance**. They may be related but are not established to be equivalent, causally linked, or interchangeable. In historical evidence, an unqualified legacy “ICM” must be interpreted from its original source context, never silently replaced.
 
 A stronger cooperation score cannot override a party's justified minimum protection. Where scarcity makes all requested floors physically impossible, identify the conflict, minimally harmful alternatives, representation, appeal and recovery rather than claiming a magic optimum.
 
@@ -191,14 +191,14 @@ Project Intersection은 서로 다른 능력과 이해관계를 가진 참여자
 
 **능력이 높고 장기적으로 계획하더라도 반드시 협력을 선택하는 것은 아니다.** 비용을 다른 참여자에게 전가해도 불이익이 작거나 협력 대상을 쉽게 대체할 수 있다면 일방적인 구조가 유리할 수 있다. 이 가능성을 별도로 반증해야 한다.
 
-### ICM의 두 용례는 혼동하지 않는다
+### ICM과 IndCM — 중복 약어 해소
 
-기존 연구에서 ICM에는 관련 있지만 다른 용례가 있다.
+**2026-10-13부터 적용하는 표기:**
 
-- **최소 사심 교집합(Minimal Self-Interest Intersection):** 독립적 자기이익 사이에서 강제 없는 협력을 가능하게 할 수 있는 교집합.
-- **독립 존속 여력(Independent Continuance Margin):** 특정 통제자에게 영구 복종하지 않고 존속·거절·이탈·복구·학습·미래 생성이 가능한 실질적 최소 여력.
+- **ICM — 최소 사심 교집합(Minimal Self-Interest Intersection):** 독립적 자기이익 사이에서 강제 없는 협력을 가능하게 할 수 있는 교집합. 기존 핵심 연구 약어 **ICM을 유지**한다.
+- **IndCM — 독립 존속 여력(Independent Continuance Margin):** 특정 통제자에게 영구 복종하지 않고 존속·거절·이탈·복구·학습·미래 생성이 가능한 실질적 최소 여력. 이 뜻에 쓰였던 예전 약어 **ICM은 역사적 중복·모호 표기**로 보존하되 신규 연구에는 사용하지 않는다.
 
-전자는 **유인의 양립 가능성**, 후자는 **실효 대안·존속 능력**이다. 서로 관련 있지만 아직 동치라고 확정하지 않는다.
+**개념 이름과 정의는 바꾸지 않고 단축 표기만 구별한다.** ICM은 **유인의 양립 가능성**, IndCM은 **실효 대안·독립 존속 능력**에 관한 것이다. 둘의 관계는 검증 대상이며 동치·인과·자동 환산을 주장하지 않는다. 옛 문헌 속 ICM은 문맥·출처를 확인해 해석하고 과거 원문을 일괄 변경하지 않는다.
 
 전체 공존 점수가 높아도 개체별 정당한 보호최저선을 마음대로 상쇄할 수 없다. 자원이 부족해 모두의 최저 요구를 동시에 충족할 수 없다면, 충돌과 대안·최소피해·대리·이의제기·구제를 명시한다.
 
