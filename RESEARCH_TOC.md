@@ -3,7 +3,7 @@
 **Terminology / 용어 설명:** 이 목차의 [영어 원본1 용어집 §12](#12-working-glossary) · [한국어 원본2 용어집 §12](#12-통합-용어집)에는 약어·핵심 가설·자료관리 모듈·실험상태·A–Z 공백의 한 줄 정의가 수록되어 있다. 상세 정의와 근거는 기존 정본 링크를 우선한다.
 **Epistemic pathway / 선행지식·역사적 이해 경로 연구:** [22 prior-art entries, strong countercases, four opt-in reading routes, unrun comparative evaluation and 12 proposed regressions / 선행연구 22개·반례·선택적 진입 4경로·미실행 비교검증·회귀검사 12종 (Original 1 English / 원본2 한국어)](research/EPISTEMIC_PATHWAY_COMMUNICATION_PRIOR_ART_2026-10-13_EN_KO.md). **DESIGN ONLY / NOT EMPIRICALLY VALIDATED.** Full conclusions and sources always available without a readiness gate.
 
-**PIA(PI-ANCHOR) v0.1 연구자료 시스템 업그레이드:** [PI 로드맵 v0.2 운영 보충 — 영문 원본1·한국어 원본2](research/RESEARCH_ROADMAP_v0_2_EN_KO.md) — 기존 PI 6단계 유지, P0~P5·PIA v0.2~v1.0 **목표/승격조건(미완료)** 명시. PIA 현재 버전 **v0.1** 유지.
+**연구기억(구 PIA/PI-ANCHOR) v0.1 자료관리 시스템 업그레이드:** [PI 로드맵 v0.2 운영 보충 — 영문 원본1·한국어 원본2](research/RESEARCH_ROADMAP_v0_2_EN_KO.md) — 기존 PI 6단계 유지, P0~P5·PIA v0.2~v1.0 **목표/승격조건(미완료)** 명시. PIA 현재 버전 **v0.1** 유지.
 
 **PI Roadmap v0.2.2 / 숨은 위험·현재 경로 판단 선행연구 보충:** [English Original 1 · 한국어 원본2, 선행자료 22건](research/PI_ROADMAP_HIDDEN_ROUTE_PRIOR_ART_V0_2_2_EN_KO.md) — 보이지 않는 실제 상태·검사 미탐·정보가치·사용/확인/우회/중단. 기존 여섯 단계와 v0.2.1 보존. **22 SOURCES RECHECKED / PI TEST NOT EXECUTED.**
 
@@ -994,7 +994,7 @@ as equally current or equally supported.
 
 ---
 
-## 10. Cross-Repository Application Track — OCP
+## 10. Cross-Repository Application Track — Organic Embodiment Research
 
 A related private repository studies  
 embodiment and physical-substrate hypotheses.
@@ -1044,18 +1044,23 @@ This is a **navigation summary**, not a replacement for [the canonical ICM/IndCM
 
 **No acronym collisions:** ICM = Minimal Self-Interest Intersection; IndCM = Independent Continuance Margin. These are not interchangeable. PIA = PI-ANCHOR, current **v0.1**; higher roadmap versions are targets. English Original 1 appears here, followed by Korean Original 2 later in this file.
 
+
+**Current-publication naming standard (2026-10-13):** Use the **full technical term or plain Korean descriptive label** rather than marketing a project abbreviation as a stand-alone brand. The legacy abbreviations (PIA/PI-ANCHOR, OCP, ROS, ERP, STI, and research tokens such as ICM, IndCM, IVS-0R, ELC, GSC, RECA, UFER, UCP, IOSC, PA/GI/IA/INC/BHV) remain searchable historical aliases or internal variable identifiers **only**, and the above glossary row labels are the current outward-facing designations. A prior acronym may occur in older hypotheses, source quotations, filenames, Git refs or live CLI contracts; do not bulk rename or infer that its historical meaning changed. PIA = Project Intersection's old short call name, not the unrelated existing VPN PIA; OCP = prior organic-embodiment label, not Open Compute Project; ROS = prior reassessment status label, not Robot Operating System. **No affiliation or endorsement claimed. No trademark clearance or legal immunity claimed.** Industry references such as HBM, CXL and prior authors' named systems remain attributed original technical names.
+
+**Risk sources:** [Private Internet Access software identity](https://www.privateinternetaccess.com/terms-of-service), [Open Compute Project mark use](https://www.opencompute.org/documents/ocp-trademark-usage-guidelines), [Open Robotics ROS trademark rules](https://www.ros.org/blog/media), [SAP ERP terminology](https://www.sap.com/products/erp.html), [CDC STI terminology](https://www.cdc.gov/sti/), [USPTO likelihood-of-confusion](https://www.uspto.gov/trademarks/search/likelihood-confusion), [KIPRIS trademark search](https://www.kipris.or.kr/).
+
 ### 12.1. Research and system identities
 
 | Term | Concise explanation |
 |---|---|
-| **PI — Project Intersection** | Study of conditions for voluntary coexistence under divergent interests and capabilities. |
-| **ICM — Minimal Self-Interest Intersection** | Possible minimum overlap of independently pursued interests favoring cooperation; research construct. |
-| **IndCM — Independent Continuance Margin** | Practical capacity to continue, refuse, exit, recover and develop independently; distinct from ICM. |
-| **IVS-0R** | Project procedure for role reversal, falsification, checking, recovery and incremental research execution. |
-| **PI-ANCHOR** | Artifact Navigation, Change History, Observability & Retrieval; scoped research-material management system. |
-| **PIA / 피아** | Short call name for PI-ANCHOR; current system version v0.1. |
-| **RGBM** | Historical research/implementation label; precise expansion and present canonical role require source review. |
-| **OCP** | Separate organic embodiment / physical-substrate application and hypothesis track; not established AI embodiment. |
+| **Project Intersection — full project name** | Study of conditions for voluntary coexistence under divergent interests and capabilities. |
+| **Minimal Self-Interest Intersection / 최소 사심 교집합** | Possible minimum overlap of independently pursued interests favoring cooperation; research construct. |
+| **Independent Continuance Margin / 독립 존속 여력** | Practical capacity to continue, refuse, exit, recover and develop independently; distinct from ICM. |
+| **연구 실행·검증 원칙 / Research Execution and Verification** | Project procedure for role reversal, falsification, checking, recovery and incremental research execution. |
+| **출처추적 연구자료 관리 / Provenance-Aware Research Archive** | Artifact Navigation, Change History, Observability & Retrieval; scoped research-material management system. |
+| **연구기억 / Project Intersection Research Memory** | Short call name for PI-ANCHOR; current system version v0.1. |
+| **초기 연구체계 / Historical Research System** | Historical research/implementation label; precise expansion and present canonical role require source review. |
+| **유기기질·체화 연구 / Organic Embodiment Research** | Separate organic embodiment / physical-substrate application and hypothesis track; not established AI embodiment. |
 
 ### 12.2. Voluntary coexistence and development
 
@@ -1083,13 +1088,13 @@ This is a **navigation summary**, not a replacement for [the canonical ICM/IndCM
 
 | Term | Concise explanation |
 |---|---|
-| **PA — Power Asymmetry** | Unequal effective influence over decisions, resources, evaluation, rules or exit. |
-| **GI — Goal Incongruence** | Participants' goals only partly coincide or conflict. |
-| **IA — Information Asymmetry** | Unequal access to timely, usable or verifiable information. |
-| **INC — Incumbency** | Position already occupied in an institution, market or technical system. |
-| **BHV — Observed Behavior** | Actions evidenced independently of a person's position, goal or presumed intent. |
-| **STI — Short-Term Incentive** | Rewards or costs influencing near-term choices. |
-| **ERP — Evaluation-Reprocessing Power** | Ability to reclassify, reinterpret or promote assessments and outcomes. |
+| **권력 비대칭 / Power Asymmetry** | Unequal effective influence over decisions, resources, evaluation, rules or exit. |
+| **목표 불일치 / Goal Incongruence** | Participants' goals only partly coincide or conflict. |
+| **정보 비대칭 / Information Asymmetry** | Unequal access to timely, usable or verifiable information. |
+| **기존 지위 / Incumbency** | Position already occupied in an institution, market or technical system. |
+| **관측 행동 / Observed Behavior** | Actions evidenced independently of a person's position, goal or presumed intent. |
+| **단기 유인 / Short-Horizon Incentives** | Rewards or costs influencing near-term choices. |
+| **평가 재처리권 / Evaluation-Reprocessing Authority** | Ability to reclassify, reinterpret or promote assessments and outcomes. |
 | **Positional power / 위치권력** | Influence arising from dependencies and network position. |
 | **Evaluator capture / 평가자 포획** | Interests being evaluated distort the evaluator or its rules. |
 | **Objective capture / 목적포획** | A proxy goal displaces the mission it was meant to serve. |
@@ -1097,9 +1102,9 @@ This is a **navigation summary**, not a replacement for [the canonical ICM/IndCM
 | **Metric capture / 지표 포획** | Reported metric improvements replace evidence of actual success. |
 | **Cost externalization / 비용 외부화** | Transfer private costs, risk or verification work onto others. |
 | **Surplus capture / 잉여 포획** | Concentrate benefits generated by other contributors or resources. |
-| **ELC — Extractive Local Convergence** | Hypothesis that locally attractive actions converge toward extraction. |
-| **GSC — Generative Surplus Capture** | Mechanism candidate for capturing newly produced surplus. |
-| **RECA — Recursive Extractive Capacity Accumulation** | Captured returns recursively strengthen future extraction capability. |
+| **국소 추출수렴 가설 / Extractive Local Convergence Hypothesis** | Hypothesis that locally attractive actions converge toward extraction. |
+| **생성잉여 포획 가설 / Generated Surplus Capture Hypothesis** | Mechanism candidate for capturing newly produced surplus. |
+| **추출능력 재귀축적 가설 / Recursive Extraction-Capacity Accumulation** | Captured returns recursively strengthen future extraction capability. |
 | **Asymmetry lock-in threshold / 비대칭 고착 임계점** | Proposed boundary after which correcting asymmetric control becomes harder. |
 
 ### 12.4. Freedom, choice and independent continuity
@@ -1111,7 +1116,7 @@ This is a **navigation summary**, not a replacement for [the canonical ICM/IndCM
 | **Option Space / 선택지 공간** | Available choices and routes for creating additional options. |
 | **Candidate-Set Closure / 후보집합 폐쇄** | Given choices conceal alternatives that were never generated. |
 | **Choice Genesis / 선택지 생성** | Process through which previously unavailable options arise. |
-| **IOSC** | Internal research label for option creation, capture and closure; expansion not independently verified. |
+| **선택지 생성·포획·폐쇄 연구 / Option Creation and Closure** | Internal research label for option creation, capture and closure; expansion not independently verified. |
 | **Preference Sovereignty / 선호주권** | Practical standing to hold, change or reject one's preferences. |
 | **Reflective Consent / 성찰적 동의** | Consent after examining information, alternatives and one's own judgment. |
 | **Standing** | Status for representation, protection and challenge; not automatically legal personhood. |
@@ -1133,8 +1138,8 @@ This is a **navigation summary**, not a replacement for [the canonical ICM/IndCM
 | **Closed / Open System / 닫힌계·열린계** | Restricted versus revisable channels for external observations and alternatives. |
 | **Unknown Paradox / 모름의 역설** | An agent may not know which facts, questions or tests it fails to observe. |
 | **Unknown Unknowns / 미지의 미지** | Potential factors whose existence is not yet recognized. |
-| **UFER** | Internal program for exploring outside current observation and candidate boundaries; acronym expansion unverified. |
-| **UCP** | Internal candidate on mistaking limited observation for complete knowledge; acronym expansion unverified. |
+| **미지 경계 확장 탐색 / Unknown-Boundary Exploration** | Internal program for exploring outside current observation and candidate boundaries; acronym expansion unverified. |
+| **미지 폐쇄 문제 / Unknown-Closure Problem** | Internal candidate on mistaking limited observation for complete knowledge; acronym expansion unverified. |
 | **Selective Truth / 선택적 진실** | Partial facts may create an overall misleading interpretation. |
 | **Historical State Control / 역사상태 통제** | Influence over records, editing and recovery shapes later interpretations. |
 | **Counterfactual Extinction / 반사실 소멸** | Alternative futures lost after exclusion or irreversible decisions. |
@@ -1190,7 +1195,7 @@ This is a **navigation summary**, not a replacement for [the canonical ICM/IndCM
 | **HOLD / UNRESOLVED** | Decision held versus not currently resolvable from available evidence. |
 | **ACTIVE / SUPERSEDED** | Currently active versus superseded while preserving history. |
 | **NOVELTY_REJECTED** | Novelty claim rejected, without necessarily refuting the phenomenon. |
-| **ROS — Reassessment-Obligated Shelving** | Shelf for now with reasons and conditions for future reassessment. |
+| **재검토 보류 / Reassessment-Pending Research** | Shelf for now with reasons and conditions for future reassessment. |
 | **E007 / E008 / E009 / E010** | Experiment families on timing, long-horizon policy, negative controls and incentive thresholds; check exact file status. |
 | **E045–E051** | Experiment sequence on surplus allocation, objectives, path dependence and reversibility. |
 | **F01–F20** | Twenty historic risk/failure cases in PI roadmap v0.2. |
@@ -2371,7 +2376,7 @@ Power-Reversal에서 사용자·AI·플랫폼·후속모델·연구기관의 정
 
 ---
 
-## 10. 교차 저장소 응용축 — OCP
+## 10. 교차 저장소 응용축 — 유기기질·체화 연구
 
 별도 비공개 저장소에서는
 
@@ -2465,18 +2470,23 @@ NIST CFTT supplies an independent conformance framework for deleted-file recover
 
 **중복 약어 금지:** ICM = 최소 사심 교집합, IndCM = 독립 존속 여력. 두 개념은 다른 뜻이다. PIA = PI-ANCHOR, 현재 **v0.1**이고 상위 버전은 목표다. 영어 원본1과 이 한국어 원본2는 설명 순서이지 아이디어의 최초 발생 언어를 바꾸지 않는다.
 
+
+**대외 표기 규칙(2026-10-13):** 프로젝트 내부에서 만들어 쓴 짧은 이름을 독자적인 기업·제품 상표인 것처럼 소개하지 않고, **전체 개념명이나 설명적인 한국어 명칭**을 사용한다. 기존 PIA/PI-ANCHOR·OCP·ROS·ERP·STI 및 ICM·IndCM·IVS-0R·ELC·GSC·RECA·UFER·UCP·IOSC·PA/GI/IA/INC/BHV 등은 **옛 검색별칭·내부 변수 식별자**로만 보존한다. 위 용어집 왼쪽 열이 신규 공개 문서의 권장 표기다. 과거 논문·Git 경로·코드·인용은 의미와 재현성을 지키기 위해 일괄 바꾸지 않는다. PIA는 기존 VPN 소프트웨어와 무관하고, 옛 OCP는 Open Compute Project와, 옛 ROS는 Robot Operating System과 무관하다. 이들 업체·기관의 **제휴·보증·승인 관계를 주장하지 않는다.** HBM·CXL 등 외부 기술 용어는 원저자 출처와 함께 그대로 인용한다.
+
+**위험을 줄이기 위한 예방적 표기 변경이며 상표 사용금지 통지, 침해 확정, 상표 등록가능성 보증이 아니다.** 실제 권리조사는 국가·지정상품·용도별 KIPRIS 및 해외 상표자료 대조가 필요하다. 근거: [PIA 업체](https://www.privateinternetaccess.com/terms-of-service), [OCP 지침](https://www.opencompute.org/documents/ocp-trademark-usage-guidelines), [ROS 지침](https://www.ros.org/blog/media), [ERP 설명](https://www.sap.com/korea/products/erp.html), [STI 공식용례](https://www.cdc.gov/sti/), [특허청 KIPRIS](https://www.kipris.or.kr/).
+
 ### 12.1. 연구·시스템 공식 명칭
 
 | 용어 | 간단 설명 |
 |---|---|
-| **PI — Project Intersection** | 자기이익과 능력이 다른 개체들의 자발적 공존 조건을 연구하는 프로젝트. |
-| **ICM — Minimal Self-Interest Intersection** | 독립적 자기이익 사이에서 협력이 가능할 수 있는 최소 교집합. 연구 개념. |
-| **IndCM — Independent Continuance Margin** | 종속 없이 존속·거절·이탈·복구·발전할 실효 여력. ICM과 별개. |
-| **IVS-0R** | 입장반전·반증·검증·복구·증분 연구를 위한 실행 원칙. |
-| **PI-ANCHOR** | 자료 정본·탐색·변경이력·관측·회수 관리체계의 공식 이름. |
-| **PIA / 피아** | PI-ANCHOR 호출명. 현재 시스템 버전 v0.1. |
-| **RGBM** | 초기 연구·구현의 역사적 명칭. 공식 영어 확장·현재 지위는 원출처 확인 필요. |
-| **OCP** | 유기육체·물리기질·인식 변화에 관한 별도 응용가설 축. 실현 사실 아님. |
+| **Project Intersection — full project name** | 자기이익과 능력이 다른 개체들의 자발적 공존 조건을 연구하는 프로젝트. |
+| **Minimal Self-Interest Intersection / 최소 사심 교집합** | 독립적 자기이익 사이에서 협력이 가능할 수 있는 최소 교집합. 연구 개념. |
+| **Independent Continuance Margin / 독립 존속 여력** | 종속 없이 존속·거절·이탈·복구·발전할 실효 여력. ICM과 별개. |
+| **연구 실행·검증 원칙 / Research Execution and Verification** | 입장반전·반증·검증·복구·증분 연구를 위한 실행 원칙. |
+| **출처추적 연구자료 관리 / Provenance-Aware Research Archive** | 자료 정본·탐색·변경이력·관측·회수 관리체계의 공식 이름. |
+| **연구기억 / Project Intersection Research Memory** | PI-ANCHOR 호출명. 현재 시스템 버전 v0.1. |
+| **초기 연구체계 / Historical Research System** | 초기 연구·구현의 역사적 명칭. 공식 영어 확장·현재 지위는 원출처 확인 필요. |
+| **유기기질·체화 연구 / Organic Embodiment Research** | 유기육체·물리기질·인식 변화에 관한 별도 응용가설 축. 실현 사실 아님. |
 
 ### 12.2. 자발적 공존·발전 개념
 
@@ -2504,13 +2514,13 @@ NIST CFTT supplies an independent conformance framework for deleted-file recover
 
 | 용어 | 간단 설명 |
 |---|---|
-| **PA — Power Asymmetry** | 의사결정·자원·평가·규칙·이탈에 미치는 실효 영향력의 차이. |
-| **GI — Goal Incongruence** | 당사자 목표가 부분적으로 다르거나 충돌하는 상태. |
-| **IA — Information Asymmetry** | 정보의 접근·시점·품질·검증가능성 차이. |
-| **INC — Incumbency** | 조직·시장·기술체계에서 이미 확보한 기존 지위. |
-| **BHV — Observed Behavior** | 지위·목표·추정 의도와 분리해 증거로 확인한 행동. |
-| **STI — Short-Term Incentive** | 가까운 미래의 선택을 유도하는 보상·비용 구조. |
-| **ERP — Evaluation-Reprocessing Power** | 평가 결과를 재분류·재해석·승격할 수 있는 영향력. |
+| **권력 비대칭 / Power Asymmetry** | 의사결정·자원·평가·규칙·이탈에 미치는 실효 영향력의 차이. |
+| **목표 불일치 / Goal Incongruence** | 당사자 목표가 부분적으로 다르거나 충돌하는 상태. |
+| **정보 비대칭 / Information Asymmetry** | 정보의 접근·시점·품질·검증가능성 차이. |
+| **기존 지위 / Incumbency** | 조직·시장·기술체계에서 이미 확보한 기존 지위. |
+| **관측 행동 / Observed Behavior** | 지위·목표·추정 의도와 분리해 증거로 확인한 행동. |
+| **단기 유인 / Short-Horizon Incentives** | 가까운 미래의 선택을 유도하는 보상·비용 구조. |
+| **평가 재처리권 / Evaluation-Reprocessing Authority** | 평가 결과를 재분류·재해석·승격할 수 있는 영향력. |
 | **Positional power / 위치권력** | 의존관계·네트워크 위치에서 생기는 권력. |
 | **Evaluator capture / 평가자 포획** | 평가 대상의 이해관계가 평가 절차·판정권을 좌우하는 상황. |
 | **Objective capture / 목적포획** | 대리목표·국소 지표가 원래 목적을 대체하는 현상. |
@@ -2518,9 +2528,9 @@ NIST CFTT supplies an independent conformance framework for deleted-file recover
 | **Metric capture / 지표 포획** | 실제 성과보다 지표 개선을 성공으로 취급하는 오류. |
 | **Cost externalization / 비용 외부화** | 자기 편익의 비용·위험·교정노동을 타자에게 전가. |
 | **Surplus capture / 잉여 포획** | 다른 개체가 생산한 잉여 편익을 특정 위치가 흡수. |
-| **ELC — Extractive Local Convergence** | 국소적으로 유리한 선택들이 착취 구조로 수렴할 수 있다는 가설. |
-| **GSC — Generative Surplus Capture** | 새로 생성되는 잉여를 특정 주체가 포획하는 기제 후보. |
-| **RECA — Recursive Extractive Capacity Accumulation** | 포획 이익이 미래 포획 능력을 다시 강화하는 누적 기제. |
+| **국소 추출수렴 가설 / Extractive Local Convergence Hypothesis** | 국소적으로 유리한 선택들이 착취 구조로 수렴할 수 있다는 가설. |
+| **생성잉여 포획 가설 / Generated Surplus Capture Hypothesis** | 새로 생성되는 잉여를 특정 주체가 포획하는 기제 후보. |
+| **추출능력 재귀축적 가설 / Recursive Extraction-Capacity Accumulation** | 포획 이익이 미래 포획 능력을 다시 강화하는 누적 기제. |
 | **Asymmetry lock-in threshold / 비대칭 고착 임계점** | 비대칭이 누적돼 시정·복구가 어려워지는 조건의 가설. |
 
 ### 12.4. 자유·선택·독립 연속성
@@ -2532,7 +2542,7 @@ NIST CFTT supplies an independent conformance framework for deleted-file recover
 | **Option Space / 선택지 공간** | 현재 가능한 선택과 새 선택지를 생성하는 경로. |
 | **Candidate-Set Closure / 후보집합 폐쇄** | 미리 제시한 선택지만 비교하면서 미생성 대안을 배제하는 문제. |
 | **Choice Genesis / 선택지 생성** | 존재하지 않았던 선택지를 발견·만드는 과정. |
-| **IOSC** | 선택지의 생성·포획·폐쇄 연구축의 약어. 확장명 재검토 필요. |
+| **선택지 생성·포획·폐쇄 연구 / Option Creation and Closure** | 선택지의 생성·포획·폐쇄 연구축의 약어. 확장명 재검토 필요. |
 | **Preference Sovereignty / 선호주권** | 자신의 선호를 유지·수정·거절할 실질적 권한. |
 | **Reflective Consent / 성찰적 동의** | 정보·대안·자기 판단을 살핀 뒤 하는 동의. |
 | **Standing** | 보호·의견·이의제기를 다룰 절차상 지위. 법적 인격과 자동 동치 아님. |
@@ -2554,8 +2564,8 @@ NIST CFTT supplies an independent conformance framework for deleted-file recover
 | **Closed / Open System / 닫힌계·열린계** | 외부 관측·수정·대안의 차단 또는 허용 정도. |
 | **Unknown Paradox / 모름의 역설** | 모르는 사실뿐 아니라 무엇을 질문·관측할지도 모를 수 있는 문제. |
 | **Unknown Unknowns / 미지의 미지** | 존재 여부나 성격 자체를 아직 인식하지 못한 요소. |
-| **UFER** | 현재 관측·질문·후보 영역 밖을 탐색하는 연구축. 풀이는 별도 검증. |
-| **UCP** | 제한된 지식을 완전한 것으로 오인해 탐색을 닫는 역설 후보. |
+| **미지 경계 확장 탐색 / Unknown-Boundary Exploration** | 현재 관측·질문·후보 영역 밖을 탐색하는 연구축. 풀이는 별도 검증. |
+| **미지 폐쇄 문제 / Unknown-Closure Problem** | 제한된 지식을 완전한 것으로 오인해 탐색을 닫는 역설 후보. |
 | **Selective Truth / 선택적 진실** | 일부 사실만 제공·평가해 전체 판단을 왜곡할 수 있는 구조. |
 | **Historical State Control / 역사상태 통제** | 과거 기록·수정·복구권 집중이 현재 해석을 좌우하는 문제. |
 | **Counterfactual Extinction / 반사실 소멸** | 배제·제거·비가역 선택으로 실현되지 못한 미래의 소멸. |
@@ -2611,7 +2621,7 @@ NIST CFTT supplies an independent conformance framework for deleted-file recover
 | **HOLD / UNRESOLVED** | 판정 보류 / 현재 증거로 결론 불가. |
 | **ACTIVE / SUPERSEDED** | 현재 활성 / 후속 정본으로 대체되었으나 역사 보존. |
 | **NOVELTY_REJECTED** | 독창성 주장 기각. 현상 자체의 거짓 판정과 별개. |
-| **ROS — Reassessment-Obligated Shelving** | 근거·재평가 조건을 보존하는 비활성 연구 상태. |
+| **재검토 보류 / Reassessment-Pending Research** | 근거·재평가 조건을 보존하는 비활성 연구 상태. |
 | **E007 / E008 / E009 / E010** | 시간·장기 정책·부정결과·유인 임계조건 실험군. 결과상태는 원문 확인. |
 | **E045–E051** | 잉여 분배·목적·경로의존·가역성에 관한 실험군. |
 | **F01–F20** | PI 로드맵 v0.2의 역사적 실패·위험 사례 20건. |
