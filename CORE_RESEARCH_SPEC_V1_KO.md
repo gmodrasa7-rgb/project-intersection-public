@@ -200,24 +200,30 @@ V_removed(o) ∈ [LB(o), UB(o)]
 옵션 제거비용은 단순 직접비용이 아니다.
 
 ```
-TotalRemovalCost =
-  DirectRemovalCost
-+ RestorationCost
-+ InformationLoss
-+ ExternalizedCost
+RemovalImpactVector = [
+  DirectRemovalCost,       # direct cost in declared units
+  RestorationCost,         # recovery cost in declared units
+  InformationLossVector,   # not automatically money
+  ExternalizedCost         # separately attributed, no double counting
+]
+
+TotalRemovalCost = UNIDENTIFIED_UNLESS_COMMON_UNITS_AND_NO_OVERLAP
 ```
 
 여기서:
 
 ```
-InformationLoss =
-  lost_future_observations
-+ lost_comparator_value
-+ lost_model_discrimination
-+ lost_recovery_path
+InformationLossVector = [
+  lost_future_observations,    # observation count / observation potential
+  lost_comparator_value,      # value estimate/range, not necessarily money
+  lost_model_discrimination,  # information/identifiability loss
+  lost_recovery_path         # feasibility or restoration effect
+]
 ```
 
 즉 대안 제거는 정보생성능력 제거일 수 있다.
+
+서로 다른 단위(화폐·관측 횟수·정보량·복구 가능성)를 더한 합계는 정의되지 않는다. 독립적인 손실 벡터로 남긴 뒤 동일 단위로 정당화된 가치환산, 중복제거, 기준시점과 불확실성 구간이 있을 때에만 **조건부** 화폐합계를 산출할 수 있다. 정보손실을 임의 금액으로 대체하거나 비용 외부화를 기존 직접비용과 이중계상해서는 안 된다. 이는 검증 전 **분석 설계**이지 측정된 실증식이 아니다.
 
 ---
 
