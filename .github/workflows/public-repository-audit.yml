@@ -199,6 +199,34 @@ jobs:
           failure_index = Path("FAILURE_REGRESSION_INDEX.md").read_text(encoding="utf-8")
           attribution_boundary = Path("ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md").read_text(encoding="utf-8")
           knowledge_graph = json.loads(Path("knowledge/graph.json").read_text(encoding="utf-8"))
+          # Keep the AI-readable experiment inventory aligned with public main.
+          # Draft PR #20 reused E010 for a different, unexecuted safety audit.
+          ai_index = json.loads(Path("AI_DISCOVERY_INDEX.json").read_text(encoding="utf-8"))
+          public_experiments = ai_index.get("public_experiments", [])
+          experiment_ids = [item.get("id") for item in public_experiments]
+          require(len(experiment_ids) == len(set(experiment_ids)),
+                  "AI experiment discovery index silently duplicated an experiment ID.")
+          by_id = {item.get("id"): item for item in public_experiments}
+          expected = {
+              "E007": "synthetic_executable_project_result",
+              "E008": "preregistered_no_result",
+              "E009": "synthetic_negative_result",
+              "E010": "self_run_exploratory_synthetic_not_preregistered_not_empirical",
+          }
+          for experiment_id, status in expected.items():
+              entry = by_id.get(experiment_id, {})
+              require(entry.get("status") == status,
+                      f"AI discovery omission / unsupported evidence promotion: {experiment_id}")
+              require(entry.get("independent_replication") is False
+                      and entry.get("real_world_validation") is False,
+                      f"AI discovery falsely claims independent or field validation: {experiment_id}")
+          latest_e010 = by_id.get("E010", {})
+          require("experiments/e010/README_KO.md" in latest_e010.get("url", ""),
+                  "AI discovery points to the wrong E010 research source.")
+          require(latest_e010.get("legacy_draft_url", "").endswith("/pull/20")
+                  and ai_index.get("research", {}).get("e010_exploratory", {}).get("public_experiment_id") == "E010",
+                  "AI discovery lost archived E010 collision and backward-compatible pointer.")
+
           long_horizon_v2 = Path("LONG_HORIZON_MIN_INTERVENTION_E2E.md").read_text(encoding="utf-8")
           e008_readme = Path("experiments/e008/README.md").read_text(encoding="utf-8")
           e008_matrix = json.loads(Path("experiments/e008/scenario_matrix.json").read_text(encoding="utf-8"))
