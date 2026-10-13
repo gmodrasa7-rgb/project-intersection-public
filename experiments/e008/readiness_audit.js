@@ -30,7 +30,9 @@ const globalMissing = [
 ];
 function reverseActorTokens(role) {
   if(typeof role!=="string")return null;
-  return role.split("_").map(token=>token==="A"?"B":token==="B"?"A":token).join("_");
+  const parts=role.split("_");
+  if(!parts.some(token=>token==="A"||token==="B"))return null;
+  return parts.map(token=>token==="A"?"B":token==="B"?"A":token).join("_");
 }
 function inspect(data){
 const errors=[];
@@ -123,6 +125,11 @@ const swappedWrong=JSON.parse(JSON.stringify(data));
 swappedWrong.cases[1].role=swappedWrong.cases[0].role;
 checks.roleIdentityMutationCaught=inspect(swappedWrong).structural_errors.some(
   s=>s.startsWith("PAIR_ROLE_REVERSAL_MISSING"));
+const noActorTokens=JSON.parse(JSON.stringify(data));
+noActorTokens.cases[0].role="controller";
+noActorTokens.cases[1].role="controller";
+checks.missingActorTokensMutationCaught=inspect(noActorTokens).structural_errors.some(
+  s=>s.startsWith("PAIR_ROLE_REVERSAL_MISSING"));
 
 const corrupt=JSON.parse(JSON.stringify(data));corrupt.cases[0].expected_winner="PROJECT_V2";
 checks.winnerInjectionCaught=inspect(corrupt).structural_errors.some(s=>s.startsWith("PREDECLARED_WINNER"));
@@ -151,7 +158,7 @@ if(require.main===module){
   const expected=JSON.parse(fs.readFileSync(path.join(root,'EXECUTABILITY_AUDIT.json'),'utf8'));
   assert.deepEqual(output,expected,'Executable feasibility audit differs from stored report');
   assert.equal(output.full_decision_benchmark_ready_cases,0);
-  console.log("E008 FEASIBILITY PASS: 16 spec cases, 8 reversal pairs, 0 computable; 14 self-tests and divergent synthetic witness. No baseline winner.");
+  console.log("E008 FEASIBILITY PASS: 16 spec cases, 8 reversal pairs, 0 computable; 15 self-tests and divergent synthetic witness. No baseline winner.");
  }else console.log(JSON.stringify(output,null,2));
 }
 module.exports={inspect,witness,unitTests,buildReport};
