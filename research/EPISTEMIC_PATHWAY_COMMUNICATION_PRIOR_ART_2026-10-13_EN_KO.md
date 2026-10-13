@@ -45,7 +45,10 @@ Announcing only a distant conclusion (e.g. greater-than-human intelligence, orga
 | PA19 | United Nations, [Convention on the Rights of Persons with Disabilities, Art. 21](https://www.un.org/development/desa/disabilities/convention-on-the-rights-of-persons-with-disabilities/article-21-freedom-of-expression-and-opinion-and-access-to-information.html) and [Art. 8](https://www.un.org/development/desa/disabilities/convention-on-the-rights-of-persons-with-disabilities/article-8-awareness-raising.html) | Supports accessible, timely information and respect for dignity without stereotyping or segregating readers. | Withholding the full research from a category of people based on presumed capacity. |
 | PA20 | Royal Society (2012), [Science as an open enterprise](https://royalsociety.org/news/2012/science-open-enterprise/) | Argues for intelligent openness of research information with effective access and management. | Open data erases privacy, copyright, consent or individual research ownership. |
 
-**Evidence caution:** These are diverse empirical studies, consensus reports, recommendations, guidelines and methodological commentaries, **not** twenty independent trials of the proposed PI sequence. They support components and constraints. None demonstrates that PI's long-horizon hypothesis is true or that its proposed presentation order changes public attitudes safely. The set is targeted rather than a claim of exhaustive literature saturation.
+| PA21 | Kerr et al. (2022), [two preregistered evidence-communication experiments](https://doi.org/10.1093/pnasnexus/pgac280) | Balanced messages disclosing benefits, harms, evidence quality and uncertainty were judged no less trustworthy than persuasive versions (more trustworthy in one experimental domain, notably among respondents with neutral/negative prior views). | Guaranteed elimination of dislike, universal trust effects or PI-specific validity. |
+| PA22 | USDA Nutrition Evidence Systematic Review (2025), [repeated exposure and food acceptance](https://nesr.usda.gov/2025-dietary-guidelines-advisory-committee-systematic-reviews/repeated-exposure_acceptance) | Repeated *taste* exposure can increase acceptance of vegetables in studied infants/young children, with moderate-grade evidence for specified groups. **Only a limited analogy for familiarity.** | Adult AI/authority judgments behave like young children's food preferences; aversion to real harms/allergens is ignorance or should be overridden. |
+
+**Evidence caution:** These are diverse empirical studies, consensus reports, recommendations, guidelines and methodological commentaries, **not** twenty-two independent trials of the proposed PI sequence. They support components and constraints. None demonstrates that PI's long-horizon hypothesis is true or that its proposed presentation order changes public attitudes safely. The set is targeted rather than a claim of exhaustive literature saturation.
 
 ### 3. Historical lessons: analogy, not authority
 
@@ -66,6 +69,14 @@ Announcing only a distant conclusion (e.g. greater-than-human intelligence, orga
 **Entry D — Critical/affected-party route:** strongest objections first, including realist concerns, religious and cultural values, disability rights, AI critics, involuntary externalities and existing harms; sources and response/appeal channels; no forced agreement.
 
 In all routes: same substantive claims, timestamps, author/translation lineage, evidence statuses, original and corrected findings. **Never use demographic or belief-based targeting to manipulate people**. Readers self-select a route; accessibility and plain-language access are default. Current harms, compensation questions and remedial routes are visible at every level rather than postponed behind a futuristic narrative.
+
+### 4a. Food-ingredient analogy — less premature aversion, without weaker protection
+
+**Two independent objectives:** **P (power protection)** prevents harmful, unaccountable concentrations of authority, arbitrary evaluation and shifted costs through independent audits, contestability, usable exit/recovery and attribution/redress. **U (understanding)** reduces *unsupported* aversion to unfamiliar hypotheses through history, prior knowledge, provenance, direct evidence and counterexamples. Success on U can never compensate for failure on P. Informed disagreement or opposition to genuine danger is not an error to reduce.
+
+An unfamiliar ingredient can initially provoke dislike. Knowing its origin, composition, preparation, nutrients and hazards may inform acceptance or refusal. **The analogy ends there:** allergies, toxins, unsafe preparation, cultural/religious limits and individual refusal are valid constraints, not irrational prejudice to erase. Similarly, research about AI, organic embodiment or cognitive paradigms cannot be 'cooked' by hiding risks, unverified assumptions or the right to say no. Disclose the ingredient and its risks; leave the choice with the reader.
+
+**Separate evaluation:** measure independent structural safeguards and harmed-party costs for P; measure comprehension, incorrect inferences, stigma, accurate trust calibration, and cognitive/verification burden for U. Never measure success by agreement, sentiment alone, or donations. Never let falling aversion hide real exploitation or loss of practical exit. Source PA21 is evidence about *balanced transparent scientific messages*; PA22 is limited to children's food exposure, not an adult AI-opinion experiment. The effect of PI's proposed arrangement remains **NOT TESTED**.
 
 ### 5. Falsifiable pilot protocol — DESIGN ONLY, NOT RUN
 
@@ -117,7 +128,7 @@ In all routes: same substantive claims, timestamps, author/translation lineage, 
 
 **동의 강요가 아니다.** PI 가설에 동의하거나 AI를 호의적으로 평가하거나 후원하도록 만든 비율은 성공지표가 아니다. 실제 주장과 주장하지 않은 내용을 정확히 이해했는지, 강한 반론을 식별할 수 있는지, 증거 수준에 맞게 확신을 조정하는지, 이해하고도 독립적으로 거부할 수 있는지를 본다.
 
-### 2. 선행연구 20개 교차지도 — 입증 범위와 부적절한 일반화
+### 2. 선행연구 22개 교차지도 — 입증 범위와 부적절한 일반화
 
 | ID | 원저자·자료 | 실제로 참고할 수 있는 발견/방법 | 여기서 입증되지 않는 것 |
 |---|---|---|---|
@@ -143,7 +154,10 @@ In all routes: same substantive claims, timestamps, author/translation lineage, 
 | PA19 | UN [장애인권리협약 제21조](https://www.un.org/development/desa/disabilities/convention-on-the-rights-of-persons-with-disabilities/article-21-freedom-of-expression-and-opinion-and-access-to-information.html), [제8조](https://www.un.org/development/desa/disabilities/convention-on-the-rights-of-persons-with-disabilities/article-8-awareness-raising.html) | 시의적절한 접근 가능한 정보, 차별·고정관념 없는 존엄 존중의 규범적 근거. | 특정 집단이 이해능력이 부족할 것이라는 추정으로 원문 열람을 가로막는 행위 |
 | PA20 | 영국 왕립학회(2012), [Science as an open enterprise](https://royalsociety.org/news/2012/science-open-enterprise/) | 연구정보의 지능적 개방·관리·검증 가능성을 강조. | 공개가 프라이버시·저작권·동의·원기여를 자동 소멸시킨다는 해석 |
 
-**증거등급 주의:** 위 자료는 원실험·종합보고서·지침·철학적/방법론적 논평이 혼재한다. **PI 소통 순서를 검증한 독립 실험 20건이 아니다.** 각 설계 요소의 참고 근거일 뿐 PI 장기 가설의 진실이나 사회적 효과를 입증하지 않는다. 목적에 맞춘 선별 조사이며 선행연구 포화 달성을 선언하지 않는다.
+| PA21 | Kerr 외(2022), [균형적 증거소통 사전등록 실험 2건](https://doi.org/10.1093/pnasnexus/pgac280) | 편익·위해·근거수준·불확실성을 공개한 메시지는 설득형보다 신뢰도가 낮지 않았으며 한 실험 영역에서는 더 높았음. 선입견이 중립·부정적인 사람들에게 특히 관련성이 나타남. | 모든 거부감 제거, 신뢰 향상의 보편 법칙, PI 소통 방식의 실증 |
+| PA22 | 미국 USDA 영양 근거 체계적 검토(2025), [반복 노출과 식품 수용](https://nesr.usda.gov/2025-dietary-guidelines-advisory-committee-systematic-reviews/repeated-exposure_acceptance) | 연구된 영유아·어린이에게 채소의 반복적 **맛 노출**이 수용을 높일 수 있다는 중간 수준의 근거. 낯선 것에 대한 친숙성의 **제한적 비유**. | 성인의 AI·권력 판단이 어린이 식품 선호와 동등하다거나 실제 독성·알레르기·위해 경고를 편견으로 봐도 된다는 주장 |
+
+**증거등급 주의:** 위 자료는 원실험·종합보고서·지침·철학적/방법론적 논평이 혼재한다. **PI 소통 순서를 검증한 독립 실험 22건이 아니다.** 각 설계 요소의 참고 근거일 뿐 PI 장기 가설의 진실이나 사회적 효과를 입증하지 않는다. 목적에 맞춘 선별 조사이며 선행연구 포화 달성을 선언하지 않는다.
 
 ### 3. 역사에서 배울 점과 비약을 막을 경계
 
@@ -164,6 +178,14 @@ In all routes: same substantive claims, timestamps, author/translation lineage, 
 **경로 D — 비판자·당사자 직행:** 현실주의·종교·문화·장애인 권리·AI 비판·권력비대칭·비자발적 피해 등에 관한 가장 강한 이견, 근거와 이의제기·구제 경로를 우선 열람한다. 동의를 요구하지 않는다.
 
 모든 경로는 동일한 사실·검증 상태·날짜·원기여자·번역 계보를 사용한다. **종교나 세계관·개인적 취약성을 이용한 맞춤형 설득 조작을 금지**한다. 경로는 독자가 자발적으로 고른다. 접근성·쉬운 언어를 기본 제공한다. 현재의 피해·정산·구제 항목은 미래 서사 뒤에 가리지 않는다.
+
+### 4a. 식재료 비유 — 섣부른 혐오를 줄이되 권력비대칭 방호는 약화하지 않는다
+
+**독립된 두 목표:** **P(권력 방호)**는 피해를 낳는 권한 집중·평가권 독점·비용전가를 독립감사·이의제기·실효 이탈 및 복구·기여 인정과 피해구제로 제한한다. **U(인식 형성)**는 낯선 가설에 대한 **근거 없는** 혐오·성급한 거부감을 역사·선행지식·원출처·인과관계·반례를 통해 줄인다. U의 개선은 P의 실패를 면책하지 않는다. 충분히 알고 반대하거나 실제 위해를 경고하는 것은 제거할 오류가 아니다.
+
+**식재료처럼:** 낯선 원재료는 거부감이 생길 수 있지만 성분·출처·손질·조리·영양·위험을 알면 판단이 바뀔 수 있다. 그러나 **알레르기·독성·오염·종교와 문화적 제한·개인의 거부는 편견이 아니다.** AI·OCP·인식 패러다임 연구도 재료에 해당하는 근거와 한계를 드러내어 이해를 돕되, 실제 위험·미검증 상태·반론·거절권을 숨겨서 수용하게 해서는 안 된다. 목적은 속여 먹이는 것이 아니라 정확히 알고 자유롭게 선택하도록 하는 것이다.
+
+**분리 판정:** P에는 실제 피해와 권력집중·감사독립·이탈·정산을, U에는 정확한 이해·잘못된 추론·낙인·신뢰도 판단·인지 및 검증 부담을 계상한다. 호감·동의·후원율이 높아도 실제 착취와 피해가 커지면 실패다. PA21은 균형적 투명 소통의 실험이고 PA22는 어린이 식재료 선호의 제한적 유비로, PI 소통 효과 자체는 **NOT TESTED**다. 결론·원자료·반론·긴급경고는 언제든 바로 접근 가능하고, **충분히 알고 거절하는 것도 정당한 결과**다.
 
 ### 5. 반증 가능한 비교검증 설계 — 아직 실행하지 않음
 

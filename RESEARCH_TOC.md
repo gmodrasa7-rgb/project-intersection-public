@@ -1,5 +1,5 @@
 # Public Navigation Layer / 공개 탐색층
-**Epistemic pathway / 선행지식·역사적 이해 경로 연구:** [20 prior-art entries, strong countercases, four opt-in reading routes, unrun comparative evaluation and 12 proposed regressions / 선행연구 20개·반례·선택적 진입 4경로·미실행 비교검증·회귀검사 12종 (Original 1 English / 원본2 한국어)](research/EPISTEMIC_PATHWAY_COMMUNICATION_PRIOR_ART_2026-10-13_EN_KO.md). **DESIGN ONLY / NOT EMPIRICALLY VALIDATED.** Full conclusions and sources always available without a readiness gate.
+**Epistemic pathway / 선행지식·역사적 이해 경로 연구:** [22 prior-art entries, strong countercases, four opt-in reading routes, unrun comparative evaluation and 12 proposed regressions / 선행연구 22개·반례·선택적 진입 4경로·미실행 비교검증·회귀검사 12종 (Original 1 English / 원본2 한국어)](research/EPISTEMIC_PATHWAY_COMMUNICATION_PRIOR_ART_2026-10-13_EN_KO.md). **DESIGN ONLY / NOT EMPIRICALLY VALIDATED.** Full conclusions and sources always available without a readiness gate.
 
 **PIA(PI-ANCHOR) v0.1 연구자료 시스템 업그레이드:** [PI 로드맵 v0.2 운영 보충 — 영문 원본1·한국어 원본2](research/RESEARCH_ROADMAP_v0_2_EN_KO.md) — 기존 PI 6단계 유지, P0~P5·PIA v0.2~v1.0 **목표/승격조건(미완료)** 명시. PIA 현재 버전 **v0.1** 유지.
 
