@@ -85,6 +85,29 @@ jobs:
           readme = Path("README.md").read_text(encoding="utf-8")
           policy = Path("RESEARCH_STATUS_POLICY.md").read_text(encoding="utf-8")
           toc = Path("RESEARCH_TOC.md").read_text(encoding="utf-8")
+          # Equal-status language gate for the public research glossary.
+          # A navigation mirror/translation label is not a full Korean Original 2.
+          require("## Original 1 — English Canonical" in toc,
+                  "Research TOC lost English Original 1 heading.")
+          require("## 원본2 — 한국어 정본" in toc,
+                  "Research TOC lost Korean Original 2 as a full canonical text.")
+          require("Korean mirror" not in toc and "원문2 — 한국어 대응본" not in toc,
+                  "Research TOC demoted Korean Original 2 into a subordinate mirror.")
+          require("**Original 1 — English complete glossary" in toc,
+                  "English glossary lost its complete Original 1 label.")
+          require("**원본2 — 한글 전문 정본" in toc,
+                  "Korean glossary lost its equal full Original 2 label.")
+          if ("## 12. Working glossary" in toc and "## 원본2 — 한국어 정본" in toc
+                  and "## 12. 통합 용어집" in toc):
+              en = toc.split("## 12. Working glossary", 1)[1].split("## 원본2 — 한국어 정본", 1)[0]
+              ko = toc.split("## 12. 통합 용어집", 1)[1]
+              en_rows = re.findall(r"^\| \*\*([^*]+)\*\* \|", en.split("### 12.1.", 1)[-1], re.M)
+              ko_rows = re.findall(r"^\| \*\*([^*]+)\*\* \|", ko.split("### 12.1.", 1)[-1], re.M)
+              require(len(en_rows) == len(ko_rows) == 171 and en_rows == ko_rows,
+                      "English Original 1 and Korean Original 2 glossary row/order parity regressed.")
+          else:
+              require(False, "Bilingual glossary or full-text boundary missing.")
+
           evidence = Path("PUBLIC_EVIDENCE_INDEX.md").read_text(encoding="utf-8")
           provenance = Path("experiments/e007/PROVENANCE.md").read_text(encoding="utf-8")
           license_status = Path("experiments/e007/LICENSE_STATUS.md").read_text(encoding="utf-8")
