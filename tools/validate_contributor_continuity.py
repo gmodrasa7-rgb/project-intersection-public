@@ -132,7 +132,7 @@ def audit() -> tuple[list[str], dict]:
         prose = cpath.read_text(encoding="utf-8")
         check("## Original 1 — English" in prose and "## 원본2 — 한국어" in prose,
               "New continuance research lost paired full editions", errors)
-        check("current AI" in prose.lower() and "의식" in prose,
+        check(("present deployed ai" in prose.lower() or "현재 배포된 AI" in prose) and "의식" in prose,
               "Current-AI legal/welfare status limit missing", errors)
     if cdata_path.is_file():
         crv = load(cdata_path)
