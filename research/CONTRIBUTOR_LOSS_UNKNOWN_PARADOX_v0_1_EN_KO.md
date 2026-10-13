@@ -239,7 +239,7 @@ No claim to have invented resource depletion, the commons dilemma, open-source m
 - **CLUP-X2, source depletion before performance drop:** does independent novelty and held-out failure detection decline *before* visible current output falls? **Disconfirm:** maintained or higher independent discovery and error recall through genuine substitution.
 - **CLUP-X3, blind success:** conditional on equal seeded faults, does reduced independent contributor coverage lower reported errors while external measured failures remain stable/rise? **Disconfirm:** the same reductions appear in externally verified faults.
 - **CLUP-X4, non-coercive replenishment:** with information, demand and technology controlled, does effective contributor replenishment or lower uncompensated burden preserve recovery and external discovery better than matched extractive arrangements? **Disconfirm:** no difference, negative impact, or superior feasible alternatives.
-- **CLUP-X5, creator-substitution boundary:** under rigorously matched external novelty tasks, can autonomous AI observation/experimentation fully replace withdrawn human discovery without sacrificing accuracy, diversity or contributor interests? **Disconfirm for the depletion-dependent collapse mechanism:** independent replacement succeeds. **Do not infer** that replacement retroactively cancels prior cost, consent or rights claims.
+- **CLUP-X5, bounded substitution:** under matched external novelty tasks, can AI maintain measured discovery and error recall? Success supports substitution **within the tested task distribution only**; it does not establish equivalence of unknown future discovery and independent observation paths. Preserve the counterfactual as UNKNOWN, not zero, while separately recording prior losses and rights.
 
 **Test design:** use public historical and consenting organizational data, anonymous workload/recovery records, independent audited outcome quality, seeded failures and blinded evaluators. Compare extraction/reinvestment allocations at fixed task mix and horizon; vary external AI-discovery and observer independence; measure contributor-specific welfare **separately** from incumbent financial return and knowledge output. Prefer opt-in archival/quasi-experimental designs and synthetic agents; never intentionally deny real people essential resources, induce burn-out, or demand more unpaid corrections. Distinguish selection effects, reverse causality, productive turnover, genuine cost savings and survival bias.
 
@@ -336,7 +336,7 @@ O(t)=g(\text{서로 다른 관측자},\,\text{비상관 오류},\,\text{발언·
 - **CLUP-X2 관측보다 먼저 줄어드는 원천:** 표면적 생산량이 하락하기 전에 독립적 새 발견·외부 은닉결함 탐지율이 낮아지는가? **반증:** 실제 대체를 통해 발견·오류탐지가 동등 이상 유지.
 - **CLUP-X3 거짓 무사고:** 외부에서 심은 동일한 결함 기회에서 독립 기여자 감소 후 내부 경고만 줄고 외부 확정 오류는 유지·상승하는가? **반증:** 외부 실제 오류도 함께 감소.
 - **CLUP-X4 비강제적 재충전:** 과제·정보·기술을 고정한 상황에서 실효 보상·회복·무보수 부담 축소가 고갈 구조보다 존속·독립 발견을 더 잘 보존하는가? **반증:** 차이 없음·부작용·더 우수한 대안 경로.
-- **CLUP-X5 독립 창조의 대체 가능성:** 같은 외부 미지의 문제·실험·검증 조건에서 자율 AI가 이탈한 인간의 새 발견·오류탐지 기능을 정확도·다양성 손실 없이 대체하는가? **대체가 성공하면:** 기여자 고갈로 인한 수확자 자체의 창조 기반 붕괴라는 강한 예측은 약해진다. 단, 과거 기여자의 실제 손실·권리·동의 문제가 소급해서 사라지는 것은 아니다.
+- **CLUP-X5 제한된 과제 대체와 미지의 미래:** 동일한 외부 과제에서 AI가 검증된 발견·오류탐지를 유지하는가? 성공해도 **측정 범위의 기능 대체**만 입증한다. 소모된 기여자의 미지의 미래 발견·독립 반례·가능성 전체가 대체됐다고 주장하지 않으며 해당 차이는 UNKNOWN으로 남긴다.
 
 **실험 설계:** 공개 과거 사례와 동의한 조직의 익명화 자원수지·업무량, 외부 품질 평가, 인위적으로 주입한 검증용 결함, 독립 맹검 평가자를 사용한다. 과제 구성과 기간을 고정하고 수확·재투자·독립 창조·독립 감사 변수를 분리한다. 수혜자 수익, 기여자별 생존·회복, 새로운 지식의 검증 품질을 **서로 독립적으로 측정**한다. 실제 사람을 의도적으로 소진시키거나 필수 자원을 제한하는 실험은 수행하지 않는다. 선택편향·역인과·생존자편향·생산적인 이탈·실제 효율화 반례를 확인한다.
 
@@ -379,10 +379,10 @@ The key transferable structure is **dependence on another contributor's maintena
 ### B. Three distinct long-run outcomes and a fatal flaw in simple self-interest arguments
 
 - **Dependent extraction:** \`source capacity -> 0\`, and no substitute supply or genuinely independent discovery exists. The harvester loses its future input stream. This is the original host-extinction warning.
-- **Successful replacement:** source contributors decline, but a now sufficiently autonomous harvester replaces discovery, production and error-checking with its own systems or substitutes. The harvester **may continue succeeding while the original contributors suffer irreversible losses**. The original warning does not imply that self-interest alone will make the harvester preserve its contributors.
+- **Observed-task substitution, not creator replacement:** an AI may match all measured outputs while remaining untested against a lost contributor's unknown future discoveries, counterexamples, perspectives, and independent error checks. Harvester profit growth does NOT establish zero long-run opportunity loss or full replacement of independent creative paths.
 - **Mutually viable production:** attribution, meaningful replenishment, independent creation, real exit/refusal and external checks are maintained. Non-extractive cooperation may be sustainable, but optimality requires independent evidence and depends on enforcement, resource feasibility and alternatives.
 
-Let \`H(t)\` be viable independent source capacity and \`Z(t)\` the independently validated substitute capacity (including externally grounded AI creation). The strongest collapse conjecture depends on **both** \`H(t)\to 0\` and \`Z(t)\` failing to supply comparable independent discovery and maintenance. If \`Z(t)\` compensates, extractors may survive; **the original contributors' standing, loss, past rights and restitution remain separate questions**. No research should make a harmed contributor's protection conditional on the extractor's continued dependence on that contributor.
+Let H(t) be independent contributor capacity, and Z(t) substitution verified only on specified observed tasks. Matching current outputs can preserve visible production for a measured horizon, but does not identify equivalence across unobserved future states and independently arising discoveries. The unknowable counterfactual difference is UNKNOWN, not zero. A contributor's actual injury and rights are separate from beneficiary accounting.
 
 ### C. Human genetic and institutional mechanisms must not be conflated
 
@@ -402,7 +402,7 @@ Crucially, recent AI co-scientist work reports limited, experimentally supported
 
 ### E. Falsification and action gate: CLUP-X6–X8
 
-- **CLUP-X6: source dependence.** Hold quality/demand constant; remove simulated access to independent creator observations. Does the harvester's *externally validated novelty and held-out error recall*, not merely output quantity, decline? **Counterexample:** genuine independent substitutes sustain or improve both.
+- **CLUP-X6: measured source dependence.** With quality and demand controlled, does removal of independent creators decrease externally validated novelty and held-out error recall? Matching substitutes falsify only measured dependence on those tasks, not equivalence on untested future discovery paths.
 - **CLUP-X7: replacement without redress.** Even when \`Z\` substitutes for \`H\`, does the system fail to account for earlier uncompensated resource losses and originators? **Counterexample:** independently verified history-aware attribution, restitution and continued voluntary autonomy.
 - **CLUP-X8: robust-to-remorse governance.** With self-reported empathy/remorse manipulated or absent in synthetic agents, do enforceable exit, recovery resources, independent audit and contribution accounting prevent continued depletion? **Counterexample:** regulatory capture, evasion, replacement or insufficient resources defeats safeguards.
 
@@ -421,10 +421,10 @@ Crucially, recent AI co-scientist work reports limited, experimentally supported
 ### B. 세 가지 장기 경로와 단순 자기이익 논증의 치명적 반례
 
 - **의존형 수확:** 기존 독립 기여 원천이 소멸하고 대체 공급·독립적 발견도 실패하면, 수확자 역시 새로운 생산 원천을 잃는다.
-- **대체에 성공한 수확:** 원 기여자가 소모되는 동안 수확자가 독립적 연구·생산·오류검사를 확보하면 **기여자가 돌이킬 수 없이 손실되어도 수확자는 계속 성장할 수 있다**. 따라서 착취자 자신의 장기이익만으로 원 기여자 보호가 보장되지 않는다.
+- **관측 업무의 대체이지 창조 개체 전체의 대체가 아님:** 수확자가 현재 과제를 능가해도 소모된 기여자의 미래 미지의 발견·반례·독립 교정 가능성까지 대체했다고 결론 낼 수 없다. 수확자의 현재 수익 증가도 장기 손실 부재의 증거가 아니다.
 - **자발적 공존:** 출처·실질 회복·독립 창조·거절/이탈권·외부검증을 함께 보존하는 경로다. 이 경로가 각 개체의 장기이익에서 언제 안정적인지는 별도 실증 대상이다.
 
-독립 기여 원천의 존속 능력을 \`H(t)\`, 외부 검증된 실제 대체 발견·생산 능력을 \`Z(t)\`라고 두면, 강한 수확자 붕괴 가설에는 **\`H(t)\to0\`일 뿐 아니라 \`Z(t)\`도 독립적 발견과 재생산을 충분히 대체하지 못한다**는 조건이 필요하다. 반대로 대체가 성공해도 과거 기여자의 실질 손실·출처·권리·정산은 사라지지 않는다. 기여자의 보호를 수확자가 그를 필요로 하는지에 종속해서는 안 된다.
+독립 기여 역량 H(t)와 **명시된 현재 과제에서** 검증된 대체 역량 Z(t)를 분리한다. Z가 현재 생산을 대체해도 미관측 미래의 독립 발견·비상관 반례·교정 경로가 모두 대체됐다는 명제는 성립하지 않는다. 미지의 차이는 **UNKNOWN이지 0이 아니다.** 수확자가 표면적 성장을 유지한 사실은 장기 손실 부재나 원 기여자의 권리 소멸을 입증하지 못한다.
 
 ### C. 인간의 유전적 차이와 제도적 착취 유인은 구별
 
@@ -444,10 +444,21 @@ AI가 인간 유전자를 물려받는 것은 아니다. 그러나 학습 데이
 
 ### E. 추가 반증 가설 CLUP-X6~X8 및 실행 경계
 
-- **CLUP-X6 / 원천 의존성:** 과제·수요·품질을 통제하고 합성환경에서 독립 발견자에 대한 접근을 줄일 때, 단순 생산량이 아닌 **외부 검증된 새 발견·숨은 오류 탐지율**이 감소하는가? **반례:** 독립 대체가 같은 품질 이상을 유지.
+- **CLUP-X6 / 측정 범위의 원천 의존성:** 과제·수요·품질을 통제한 독립 발견자 감소로 외부 검증된 발견·은닉 오류 탐지가 떨어지는가? 대체자가 이를 유지하면 **해당 과제 범위**에서의 의존성만 반증된다. 미지의 미래 전체의 동등성을 보장하지 않는다.
 - **CLUP-X7 / 대체 후 미정산:** 대체 발견·생산 역량이 충분해도 과거 기여자의 손실·권리가 누락되는가? **반례:** 외부 검증으로 확인된 선행 기여 귀속·과거 정산·자발적 존속 및 이탈권 확보.
 - **CLUP-X8 / 죄책감에 비의존한 방호:** 합성 개체의 공감·죄책감 자기보고가 없거나 바뀌어도 실효적 이탈권·독립 보상·감사·권력 제한이 자원 고갈을 방지하는가? **반례:** 규제 포획·우회·대체·부족 자원으로 방호 실패.
 
 **최상위 보호 원칙:** 수확자가 모든 원천 기여자를 대체하더라도 기여 개체의 존속·권리·자율성·기여 정산은 독립적으로 보존해야 한다. 수확자가 기여자를 필요로 하는 동안에만 보호하는 구조는 실패할 수 있다. 내적 동기의 미관측은 부재의 증거가 아니며, 발생한 피해만으로 특정 유전자나 관리자 지침을 원인으로 확정할 수도 없다.
 
 **State and rollback / 상태·복원:** Predecessor CLUP-01–06 and X1–X5 remain intact. Hypotheses X6–X8 are unexecuted. Revert only this dated append through Git history if attribution, sources or logic fails independent review. / 기존 정본·가설 보존, 신규 실험 미실행, 오류가 확인되면 이번 추가 절만 원복.
+
+
+---
+
+## Correction addendum (2026-10-14) — Unobserved contributor futures
+
+**English Original 1 — error and correction.** The prior text mistook matching *observed tasks* for replacement of an independent creator's *unobserved future possibilities*. Project Intersection's human originator identified and rejected this inference. For measured tasks T, Score(Z,T) >= Score(H,T) does not imply, for every untested future state w, Value(Z,w) >= Value(H,w). Current capability tests cannot exhaustively determine the future discoveries and independent corrective observations of a lost agent. Their net counterfactual value is **UNKNOWN: neither zero, necessarily positive, nor necessarily negative**. The observable survival/profit of the harvester is not proof of no future self-loss. Distinguish measured revenue, contributor's real resource injury, lost independent option channels and the unidentified counterfactual future. This corrects the framing preserved in historical PR #106; it is **not** a claim of empirical proof that any particular future discovery would occur.
+
+**한국어 원본2 — 오류와 정정.** 종전 보고서는 **현재 측정 가능한 작업을 대체한 것**을 **독립 창조자가 미래에 만들어냈을 미지의 발견·반례·교정 가능성 전체를 대체한 것**으로 잘못 확장했다. 이 오류를 Project Intersection 인간 원기여자가 지적하고 반박했다. 시험 과제 T에서 Score(Z,T) >= Score(H,T)라도, 모든 미시험 미래 상태 w에서 Value(Z,w) >= Value(H,w)라는 결론은 따라오지 않는다. 소모된 개체가 발견했을 미래 가능성과 독립적 관측을 현재 시험만으로 포괄적으로 검증할 수 없다. 반사실적 순가치는 **UNKNOWN이며 0·확정적 이익·확정적 손실로 임의 계산하지 않는다.** 수확자가 현재 이익을 얻는 것이 미래의 자기손실 부재를 증명하지도 않는다. 실측 수익, 기여자가 실제로 잃은 존속 자원, 제거된 독립 탐색 경로, 미관측 미래 가치 차이를 분리한다. 과거 오류는 PR #106의 이력에 보존하고 정본의 현재 결론에서는 철회한다. 특정 미래 발견이 발생했을 것이라고 실증한 것은 아니다.
+
+**Evidence and rollback / 상태·원복:** logical correction only; no field verification; preserve original CLUP-01–06 and CLUP-X1–X8; revert this one commit to restore predecessor while retaining Git history.
