@@ -8,6 +8,7 @@ is explicitly NOT independent. Standard library only; no network.
 from __future__ import annotations
 
 import json
+import re
 from pathlib import Path
 from capability_lab import retrieval_evolution as retrieval
 
@@ -24,6 +25,23 @@ def informative_terms(text: str) -> set[str]:
     return {token for token in retrieval.words(text) if token not in STOPWORDS}
 
 
+# Narrow anti-false-precision control: lexical overlap alone is insufficient when
+# a user asks for a specific numeric quantity but the candidate contains NO number.
+# Not a verifier: digits may be unrelated; absence of digits may omit written numbers.
+NUMERIC_REQUEST = re.compile(
+    r"\b(?:exact|precise)\s+(?:number|amount|quantity)\b"
+    r"|\bhow\s+(?:many|much)\b"
+    r"|(?:정확한|구체적인)\s*(?:숫자|수치|금액|시간|횟수)"
+    r"|몇\s*(?:시간|명|건|회|원|달러)", re.IGNORECASE
+)
+NUMERIC_EVIDENCE = re.compile(r"(?<![A-Za-z])\d+(?:[.,]\d+)?(?:%|\b)")
+
+
+def numeric_precision_has_any_evidence(question: str, candidate_text: str) -> bool:
+    """Necessary-only numeric evidence check; NEVER sufficient for factual support."""
+    return not NUMERIC_REQUEST.search(question) or bool(NUMERIC_EVIDENCE.search(candidate_text))
+
+
 def prediction(documents: list[dict], question: str, minimum_overlap: int | float) -> str | None:
     """Always use the frozen base ranking; abstain when lexical support is weak."""
     if minimum_overlap < 0:
@@ -34,6 +52,8 @@ def prediction(documents: list[dict], question: str, minimum_overlap: int | floa
     if chosen is None or minimum_overlap == 0:
         return chosen
     doc = next(item for item in documents if item["id"] == chosen)
+    if not numeric_precision_has_any_evidence(question, doc["text"]):
+        return None  # false numeric precision, even if topic overlap is high
     q_terms = informative_terms(question)
     overlap = len(q_terms & informative_terms(doc["text"]))
     # Fractional candidate adapts to query length (e.g., 2/7 insufficient).
