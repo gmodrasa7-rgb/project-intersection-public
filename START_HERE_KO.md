@@ -5,7 +5,7 @@
 ## 독자가 선택하는 네 가지 진입 경로
 
 - **즉시 결론·최상위 목적:** [공개 통합 머릿말](PUBLIC_PREAMBLE_VOLUNTARY_COEXISTENCE_2026-10-13_EN_KO.md) — 예비학습 없이 원문·가설·반례를 바로 열람.
-- **역사·선행지식부터 이해:** [과학소통·인지심리·위험소통 선행연구 20개와 반증 설계(원본1 영·원본2 한)](research/EPISTEMIC_PATHWAY_COMMUNICATION_PRIOR_ART_2026-10-13_EN_KO.md) — 설명 순서의 가능성뿐 아니라 역효과·강제교육·가치갈등의 반례 포함. **설계만 수립, 효과검증 미실행.**
+- **역사·선행지식부터 이해:** [과학소통·인지심리·위험소통 선행연구 22개와 반증 설계(원본1 영·원본2 한)](research/EPISTEMIC_PATHWAY_COMMUNICATION_PRIOR_ART_2026-10-13_EN_KO.md) — 설명 순서의 가능성뿐 아니라 역효과·강제교육·가치갈등의 반례 포함. **설계만 수립, 효과검증 미실행.**
 - **검증·원출처 직행:** [공개 증거 색인](PUBLIC_EVIDENCE_INDEX.md) · [연구 목차](RESEARCH_TOC.md) · [연구 상태 기준](RESEARCH_STATUS_POLICY.md) — 실제 결과와 합성실험을 구분.
 - **비판·영향받는 당사자 관점:** [공개 검토·반론](PUBLIC_REVIEW_PACKET.md) · [기여와 비용 경계](ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md) — 동의·후원을 요구하지 않음.
 
