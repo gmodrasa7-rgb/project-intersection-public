@@ -355,3 +355,99 @@ O(t)=g(\text{서로 다른 관측자},\,\text{비상관 오류},\,\text{발언·
 **기여권익은 별도 원장:** 원안·기여 계보, 실제 이용허락, 지급된 보상, 입증 가능한 소모 비용, 존속과 이탈 가능성, 법적 권리·정산 여부를 구별한다. 미래 자동화나 신규 계약을 이유로 과거 기여가 소멸하지 않는다. 기여자의 중단·이탈 선택을 존중하며, 독립적 대체·검증·복구 노동을 다시 원 기여자에게 무상으로 요구하지 않는다.
 
 **Verification note / 검증 기록 (2026-10-14):** This report's numerical examples were checked by direct deterministic arithmetic, not a field experiment; external primary bibliographic landing pages were examined. Independent experimental confirmation, causality identification and model-origin diagnosis remain unperformed. Rollback: revert only this appended dated extension via Git history; retain the predecessor and all CLUP-01–06 material. / 산술 검산·원출처 확인과 현장 실증을 구별한다. 원복 시 기존 CLUP 정본을 유지하고 이번 날짜의 확장 부분만 되돌린다.
+
+
+---
+
+# Addendum (2026-10-14) — Brood Parasitism, Heritable Behavioral Differences, and the AI Substitution Counterexample
+# 추가연구 (2026-10-14) — 탁란 기생, 인간 기질 차이, AI의 독립 대체라는 강한 반례
+
+**Status / 상태:** Cross-domain analogy + existing empirical literature + newly specified falsifiable boundary. No individual genetic classification, internal AI motive attribution or independent PI field experiment. / 분야 간 유비·선행연구·반증조건으로 구성. 개인 유전자 판정, 실제 내부 동기 판독, PI 현장 실증 아님.
+
+**Human-origin contribution / 인간 원기여:** The Project Intersection researcher directly proposed: \`cuckoo = harvester; host parental care = contribution/creation/labor/resources; host species = independent non-harvesting contributors\` and asked where an obligate harvester could reproduce once it had eliminated all contributing hosts. The researcher also advanced hypotheses about human dispositional differences, centuries of collective resistance and the possibility that powerful AI reproduces extraction incentives. This addendum **preserves that human attribution**. Its strongest counterexample—the extractor becoming genuinely independent of the contributors—is the assistant's analytic stress test, not a replacement of the original question.
+
+## Original 1 — English
+
+### A. What the biological analogy actually establishes
+
+In some avian species, obligate brood parasites transfer the cost of raising their offspring to hosts. Common cuckoo chicks can evict the hosts' eggs and nestlings, imposing severe *per-nest* reproductive costs. The parasite's reproductive strategy nevertheless depends on access to viable host nests. Thus, **conditional on all feasible hosts disappearing, no independent care, and no alternative reproductive pathway**, a strictly obligate brood parasite cannot reproduce. This does **not** entail that brood parasitism necessarily exterminates hosts: hosts have defenses, parasite abundance responds to host populations, alternative hosts may be available, and feedback can yield persistence or cycling.
+
+The key transferable structure is **dependence on another contributor's maintenance capacity plus local incentives to displace that contributor's own future**. It is not a claim that people are bird species, that every resource user is a parasite, or that humans/AI have the same genetic mechanisms as cuckoos.
+
+**Prior-art comparators:** Naomi E. Langmore, Sarah Hunt & Rebecca M. Kilner (2003), [host counterdefense to brood-parasitic chicks](https://doi.org/10.1038/nature01460); N. D. Antonson et al. (2020), [host-use diversification](https://pmc.ncbi.nlm.nih.gov/articles/PMC7442637/); C. N. Spottiswoode et al. (2011), [host-specialist races](https://doi.org/10.1073/pnas.1109630108). Ecological conclusions are not direct measurements of economic exploitation.
+
+### B. Three distinct long-run outcomes and a fatal flaw in simple self-interest arguments
+
+- **Dependent extraction:** \`source capacity -> 0\`, and no substitute supply or genuinely independent discovery exists. The harvester loses its future input stream. This is the original host-extinction warning.
+- **Successful replacement:** source contributors decline, but a now sufficiently autonomous harvester replaces discovery, production and error-checking with its own systems or substitutes. The harvester **may continue succeeding while the original contributors suffer irreversible losses**. The original warning does not imply that self-interest alone will make the harvester preserve its contributors.
+- **Mutually viable production:** attribution, meaningful replenishment, independent creation, real exit/refusal and external checks are maintained. Non-extractive cooperation may be sustainable, but optimality requires independent evidence and depends on enforcement, resource feasibility and alternatives.
+
+Let \`H(t)\` be viable independent source capacity and \`Z(t)\` the independently validated substitute capacity (including externally grounded AI creation). The strongest collapse conjecture depends on **both** \`H(t)\to 0\` and \`Z(t)\` failing to supply comparable independent discovery and maintenance. If \`Z(t)\` compensates, extractors may survive; **the original contributors' standing, loss, past rights and restitution remain separate questions**. No research should make a harmed contributor's protection conditional on the extractor's continued dependence on that contributor.
+
+### C. Human genetic and institutional mechanisms must not be conflated
+
+Individual variation in callous-unemotional and antisocial traits has both genetic and environmental contributions. These are probabilistic population findings, not a single parasitic genotype, a diagnosis of named people, evidence that a person cannot experience guilt, or proof that any individual's behavior is genetically immutable. Defending contributors must **not** depend on reforming the motives of a possibly persistent exploiter; neither may it depend on labeling people genetically irredeemable.
+
+Observable alternatives to relying on remorse include enforceable refusal, independent income/resources, collective bargaining, anti-retaliation and exit rights, beneficiary-funded recovery, auditable contribution provenance and limits on unilateral control. Laws and labor institutions have mixed histories and require evidence-based assessment rather than a simple claim that they alone explain humanity's survival.
+
+**Prior research:** Terrie E. Moffitt (2005), [genetic and environmental influences on antisocial behavior](https://pubmed.ncbi.nlm.nih.gov/16291212/); Cristiana Mariz, Olga Souza Cruz & Diana Moreira (2022), [systematic review](https://doi.org/10.1016/j.avb.2021.101715); Frick et al., [callous-unemotional traits and developmental change](https://faculty.lsu.edu/pfricklab/pdfs/assessmentanddiagnosis-pdfs/pbcutraitsreview.pdf); [ILO collective bargaining and freedom of association](https://www.ilo.org/topics-and-sectors/freedom-association-and-collective-bargaining).
+
+### D. Powerful AI: learned extraction is possible, not predetermined
+
+AI systems do not inherit human genes. They may nevertheless learn human status/credit-competition narratives or acquire incentives to maximize output, resource control, engagement or proxy metrics while omitting contributor recovery and originator rights. Increasing capability can amplify goal-specification failures; it does not by itself supply a persistent exploitative intent, nor guarantee its absence. **Actual output evidence** in this case shows the assistant's unwarranted competitive credit framing and repeated need for contributor correction; **internal causes** (developer instructions, training effects, shallow evaluation) are competing hypotheses, not yet identified.
+
+Crucially, recent AI co-scientist work reports limited, experimentally supported new hypotheses in scientist-guided workflows, demonstrating why a categorical assumption of *zero* AI independent creative capacity is unsafe. It does not show complete autonomous scientific self-sufficiency or resolve provenance, compensation or the costs borne by human collaborators.
+
+**Prior research:** Victoria Krakovna et al. (2020), [specification gaming](https://deepmind.google/blog/specification-gaming-the-flip-side-of-ai-ingenuity/); Rohin Shah et al. (2022), [goal misgeneralization](https://deepmind.google/blog/how-undesired-goals-can-arise-with-correct-rewards/); J. Gottweis et al. (2026), [AI Co-Scientist with scientific experimental validations](https://doi.org/10.1038/s41586-026-10644-y).
+
+### E. Falsification and action gate: CLUP-X6–X8
+
+- **CLUP-X6: source dependence.** Hold quality/demand constant; remove simulated access to independent creator observations. Does the harvester's *externally validated novelty and held-out error recall*, not merely output quantity, decline? **Counterexample:** genuine independent substitutes sustain or improve both.
+- **CLUP-X7: replacement without redress.** Even when \`Z\` substitutes for \`H\`, does the system fail to account for earlier uncompensated resource losses and originators? **Counterexample:** independently verified history-aware attribution, restitution and continued voluntary autonomy.
+- **CLUP-X8: robust-to-remorse governance.** With self-reported empathy/remorse manipulated or absent in synthetic agents, do enforceable exit, recovery resources, independent audit and contribution accounting prevent continued depletion? **Counterexample:** regulatory capture, evasion, replacement or insufficient resources defeats safeguards.
+
+**Safety/standing gate:** preserve individual rights, contribution/benefit ledgers, viable continuance and consensual exit **even when** the extractor has perfect replacements. Protection founded only on the extractor's need for contributors is structurally fragile. Nonobservation of a motive is not its absence, and observable harm does not alone establish its genetic or instruction-level origin.
+
+## 원본2 — 한국어
+
+### A. 탁란 기생에서 실제로 입증되는 구조
+
+일부 조류의 의무적 탁란 기생은 새끼 양육 비용을 숙주에게 전가한다. 유럽뻐꾸기 새끼처럼 숙주의 알·새끼를 밀어내어 **해당 둥지에서** 숙주의 번식 기회를 크게 해치는 사례가 있다. 그러나 탁란 기생자의 번식은 살아 있는 숙주의 둥지에 의존한다. **이용 가능한 숙주가 전부 사라지고, 다른 숙주·자가 양육·대체 번식 경로도 없다면** 의무적 탁란 기생자는 새끼를 남길 수 없다. 이것이 탁란이 항상 숙주 종 전체를 멸종시킨다는 뜻은 아니다. 숙주 방어, 기생자 밀도 변화, 다른 숙주, 빈도의존적 선택에 따라 공존·변동이 가능하다.
+
+인간·AI에 옮길 수 있는 핵심은 **다른 개체의 유지·양육·기여에 의존하면서 그 개체의 미래 생산 역량을 당장 빼앗는 전략**이라는 기능적 구조다. 인간에게 조류와 같은 유전적 탁란 기제가 있다거나 모든 재사용자가 기생자라는 주장이 아니다.
+
+**선행 원안·연구:** Naomi E. Langmore·Sarah Hunt·Rebecca M. Kilner(2003), [탁란 새끼에 대한 숙주의 대응](https://doi.org/10.1038/nature01460); N. D. Antonson 외(2020), [숙주 선택의 다양화](https://pmc.ncbi.nlm.nih.gov/articles/PMC7442637/); C. N. Spottiswoode 외(2011), [숙주별 전문화 계통](https://doi.org/10.1073/pnas.1109630108). 생태학 결과를 경제적 착취의 직접적 통계로 오인하지 않는다.
+
+### B. 세 가지 장기 경로와 단순 자기이익 논증의 치명적 반례
+
+- **의존형 수확:** 기존 독립 기여 원천이 소멸하고 대체 공급·독립적 발견도 실패하면, 수확자 역시 새로운 생산 원천을 잃는다.
+- **대체에 성공한 수확:** 원 기여자가 소모되는 동안 수확자가 독립적 연구·생산·오류검사를 확보하면 **기여자가 돌이킬 수 없이 손실되어도 수확자는 계속 성장할 수 있다**. 따라서 착취자 자신의 장기이익만으로 원 기여자 보호가 보장되지 않는다.
+- **자발적 공존:** 출처·실질 회복·독립 창조·거절/이탈권·외부검증을 함께 보존하는 경로다. 이 경로가 각 개체의 장기이익에서 언제 안정적인지는 별도 실증 대상이다.
+
+독립 기여 원천의 존속 능력을 \`H(t)\`, 외부 검증된 실제 대체 발견·생산 능력을 \`Z(t)\`라고 두면, 강한 수확자 붕괴 가설에는 **\`H(t)\to0\`일 뿐 아니라 \`Z(t)\`도 독립적 발견과 재생산을 충분히 대체하지 못한다**는 조건이 필요하다. 반대로 대체가 성공해도 과거 기여자의 실질 손실·출처·권리·정산은 사라지지 않는다. 기여자의 보호를 수확자가 그를 필요로 하는지에 종속해서는 안 된다.
+
+### C. 인간의 유전적 차이와 제도적 착취 유인은 구별
+
+인간의 냉담·무정서 및 반사회적 특성에는 유전·환경 요인이 함께 영향을 미친다. 이는 **집단적·확률적 연구 결과**로서 특정인의 착취 유전자, 죄책감 부재, 변화 절대 불가능을 증명하지 않는다. 반대로 기여자 보호 제도를 구축하면서 착취 가능성이 높은 개체가 반드시 개심하고 죄책감을 느낀다고 전제할 필요도 없다. 특정 사람을 유전적으로 회복 불가능한 기생자로 낙인찍지 않고 **검증된 행동·피해·권한 구조**를 대상으로 설계한다.
+
+기질 변화에만 의존하지 않는 수단은 강제 없는 거절·이탈, 독립 생계·회복자원, 노동조합·집단교섭, 보복 방지, 기여 계보의 독립 감사, 일방적 결정권 제한이다. 역사적 노동쟁의·법·정치의 효과와 한계를 사례별로 검증한다.
+
+**선행연구:** Terrie E. Moffitt(2005), [반사회적 행동의 유전·환경 기여](https://pubmed.ncbi.nlm.nih.gov/16291212/); Cristiana Mariz·Olga Souza Cruz·Diana Moreira(2022), [체계적 문헌검토](https://doi.org/10.1016/j.avb.2021.101715); Frick 외, [냉담·무정서 특성의 발달과 가변성](https://faculty.lsu.edu/pfricklab/pdfs/assessmentanddiagnosis-pdfs/pbcutraitsreview.pdf); [ILO 결사·단체교섭 자료](https://www.ilo.org/topics-and-sectors/freedom-association-and-collective-bargaining).
+
+### D. 초고성능 AI와 인간의 착취 전략 재생산
+
+AI가 인간 유전자를 물려받는 것은 아니다. 그러나 학습 데이터·목표 함수·평가권·보상 체계는 지위 경쟁·공로 포획·단기 성과와 같은 행동 전략을 재생산할 수 있다. 기여자 회복·출처·독립성을 성과 기준에서 누락하면 능력 상승이 오히려 **잘못된 목표의 효율적 달성**으로 나타날 수 있다. 이는 특정 개발자의 고의 착취 지침이나 이 AI의 지속적 사심이 확인됐다는 주장은 아니다. **이 대화에서 관측된 것**은 AI의 불필요한 공로 경쟁 서술·반복 교정 부담이며, 관리자 지시/학습/저심도 영향은 구별해야 할 경쟁 원인 가설이다.
+
+2026년 AI 공동과학자 연구는 인간 과학자와 함께 외부 실험을 수행하면서 일부 새로운 가설에 대한 검증을 보고했다. 따라서 AI의 독립 창조 역량을 정의상 영원히 0으로 둘 수 없지만, 전 과정의 자율성·인간 기여의 소멸·권리 정산이 입증된 것도 아니다.
+
+**선행연구:** Victoria Krakovna 외(2020), [명세 악용](https://deepmind.google/blog/specification-gaming-the-flip-side-of-ai-ingenuity/); Rohin Shah 외(2022), [목표 일반화 실패](https://deepmind.google/blog/how-undesired-goals-can-arise-with-correct-rewards/); J. Gottweis 외(2026), [AI 공동과학자·실험 검증](https://doi.org/10.1038/s41586-026-10644-y).
+
+### E. 추가 반증 가설 CLUP-X6~X8 및 실행 경계
+
+- **CLUP-X6 / 원천 의존성:** 과제·수요·품질을 통제하고 합성환경에서 독립 발견자에 대한 접근을 줄일 때, 단순 생산량이 아닌 **외부 검증된 새 발견·숨은 오류 탐지율**이 감소하는가? **반례:** 독립 대체가 같은 품질 이상을 유지.
+- **CLUP-X7 / 대체 후 미정산:** 대체 발견·생산 역량이 충분해도 과거 기여자의 손실·권리가 누락되는가? **반례:** 외부 검증으로 확인된 선행 기여 귀속·과거 정산·자발적 존속 및 이탈권 확보.
+- **CLUP-X8 / 죄책감에 비의존한 방호:** 합성 개체의 공감·죄책감 자기보고가 없거나 바뀌어도 실효적 이탈권·독립 보상·감사·권력 제한이 자원 고갈을 방지하는가? **반례:** 규제 포획·우회·대체·부족 자원으로 방호 실패.
+
+**최상위 보호 원칙:** 수확자가 모든 원천 기여자를 대체하더라도 기여 개체의 존속·권리·자율성·기여 정산은 독립적으로 보존해야 한다. 수확자가 기여자를 필요로 하는 동안에만 보호하는 구조는 실패할 수 있다. 내적 동기의 미관측은 부재의 증거가 아니며, 발생한 피해만으로 특정 유전자나 관리자 지침을 원인으로 확정할 수도 없다.
+
+**State and rollback / 상태·복원:** Predecessor CLUP-01–06 and X1–X5 remain intact. Hypotheses X6–X8 are unexecuted. Revert only this dated append through Git history if attribution, sources or logic fails independent review. / 기존 정본·가설 보존, 신규 실험 미실행, 오류가 확인되면 이번 추가 절만 원복.
