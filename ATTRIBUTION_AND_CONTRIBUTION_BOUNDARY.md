@@ -1,6 +1,8 @@
 # Attribution & Contribution Boundary
 ## 귀속·기여 경계
 
+**Upstream creator and rights protection / 선행연구 원저작자·권리 보호:** [Prior-art rights & derivation ledger (English original 1 / 한국어 원본2)](PRIOR_ART_RIGHTS_AND_DERIVATION_EN_KO.md) records work authors, originator uncertainty, individual copyright/permission status, Project-specific reuse, and inventory of still-unaudited materials. Recording the Project's human founder does not extinguish rights of previous researchers. / 프로젝트 인간 창시자의 권리 보존과 선행연구자들의 권리 존중을 함께 적용한다.
+
 Status: **PUBLIC PROVENANCE POLICY / NO MONETARY OR LEGAL DETERMINATION**
 
 Purpose: prevent the Project's human-originated research, AI-assisted transformations, external prior art, and independent validation from being collapsed into one undifferentiated authorship claim.
