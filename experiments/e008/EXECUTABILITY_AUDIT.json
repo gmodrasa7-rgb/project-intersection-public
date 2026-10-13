@@ -432,7 +432,8 @@
     "winnerInjectionCaught": true,
     "silentStatusPromotionCaught": true,
     "specificNotUniversal": true,
-    "fakeFieldsDoNotProveExecutability": true
+    "fakeFieldsDoNotProveExecutability": true,
+    "roleIdentityMutationCaught": true
   },
   "provenance": {
     "file_git_blob_sha": "bf7d863182844c21ce2de5f63006eea127962b80",
