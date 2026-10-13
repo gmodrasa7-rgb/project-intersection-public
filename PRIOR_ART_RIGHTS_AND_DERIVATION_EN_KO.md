@@ -5,6 +5,7 @@
 **Snapshot / 기준:** 2026-10-13; 211 file-path inventory entries (Markdown/JSON/JS/Python) on public `main`, 25 seeded work/source rows.
 **File-and-line source discovery / 파일·행 출처 탐색:** [Pilot occurrence index: 7 core documents, 294 DOI/URL candidates / 핵심문서 7개에서 294개 출처 후보](knowledge/source-occurrence-pilot-2026-10-13.json). **Candidate extraction ≠ confirmed citation or copyright/author audit / 출처 후보 자동추출은 실제 인용·권리자 검증이 아님.**
 **Machine-readable / 기계판독 정본:** [knowledge/prior-art-rights-register-2026-10-13.json](knowledge/prior-art-rights-register-2026-10-13.json)
+**Technological lineage and contributor life-cycle / 기술 진보·기여자·수혜자 지속가능성:** [Original 1 English / 한국어 원본2](TECHNOLOGY_PROGRESS_CONTRIBUTOR_CONTINUITY_EN_KO.md) · [25-source continuity ledger with unverified benefit, cost, compensation and cessation kept unknown](knowledge/contributor-continuity-register-v1.json). This does not invent personal suffering or an exploitation claim. / 실제 보상·고갈·소멸은 증거 없이 확정하지 않는다.
 **Existing studies / 기존 원장:** [PRIOR_ART_AND_ATTRIBUTION.md](PRIOR_ART_AND_ATTRIBUTION.md) · [PRIOR_ART_SAFETY_GOVERNANCE_CROSSWALK.md](PRIOR_ART_SAFETY_GOVERNANCE_CROSSWALK.md) · [knowledge/SOURCE_REGISTRY.md](knowledge/SOURCE_REGISTRY.md)
 **Project copyright boundary / 우리 이용허락 범위:** [RESEARCH_RIGHTS_SCOPE_EN_KO.md](RESEARCH_RIGHTS_SCOPE_EN_KO.md) (does NOT cover others' materials).
 
