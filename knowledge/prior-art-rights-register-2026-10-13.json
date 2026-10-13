@@ -9,7 +9,10 @@
     "registered_prior_works": 25,
     "repository_eligible_files_in_snapshot": 211,
     "marked_file_level_audited": 0,
-    "repository_blob_files_in_snapshot": 211
+    "repository_blob_files_in_snapshot": 211,
+    "component_scoped_license_verified": 4,
+    "work_specific_copyright_holders_verified": 1,
+    "first_historical_originators_verified": 0
   },
   "required_fields_for_verified_entry": [
     "original_work",
@@ -482,12 +485,13 @@
       "reuse_type": "CONCEPTUAL_BASELINE_OR_CITATION_AS_REPORTED_BY_EXISTING_PI_DOCUMENT",
       "copied_protected_expression_status": "NOT_DETERMINED_BY_THIS_AUDIT",
       "specific_copyright_holder": null,
-      "copyright_holder_verification": "NOT_VERIFIED",
-      "license_id": null,
-      "license_scope": "NOT_VERIFIED_FOR_UNDERLYING_SOURCE",
+      "copyright_holder_verification": "SPECIFIC_COMPONENT_LICENSE_VERIFIED; INDIVIDUAL COPYRIGHT HOLDERS NOT VERIFIED",
+      "license_id": "MIT (ORKG backend software ONLY)",
+      "license_scope": "https://github.com/TIBHannover/orkg-backend ; not ORKG publications, datasets, UI assets or all contributions",
       "source_license_research_note": "Existing knowledge/SOURCE_REGISTRY.md discusses component-specific rights; do not infer a single license for whole project or third-party contributions.",
-      "reuse_permission": "CITATION_AND_INDEPENDENT_CONCEPTUAL_ANALYSIS_ONLY_UNTIL_RIGHTS_CHECK",
-      "item_status": "BIBLIOGRAPHICALLY_REFERENCED_IN_PI_REQUIRES_RIGHTS_AND_ORIGINATOR_AUDIT"
+      "reuse_permission": "MIT_LICENSE_APPLIES_ONLY_TO_ORKG_BACKEND_SOFTWARE; NO_BACKEND_CODE_COPIED_BY_PI_AS_REPORTED",
+      "item_status": "BIBLIOGRAPHICALLY_REFERENCED_IN_PI_REQUIRES_RIGHTS_AND_ORIGINATOR_AUDIT",
+      "rights_evidence_url": "https://github.com/TIBHannover/orkg-backend"
     },
     {
       "id": "PA-022",
@@ -504,12 +508,13 @@
       "reuse_type": "CONCEPTUAL_BASELINE_OR_CITATION_AS_REPORTED_BY_EXISTING_PI_DOCUMENT",
       "copied_protected_expression_status": "NOT_DETERMINED_BY_THIS_AUDIT",
       "specific_copyright_holder": null,
-      "copyright_holder_verification": "NOT_VERIFIED",
-      "license_id": null,
-      "license_scope": "NOT_VERIFIED_FOR_UNDERLYING_SOURCE",
+      "copyright_holder_verification": "LICENSES_VERIFIED_FOR_IDENTIFIED_COMPONENTS; CONTRIBUTOR_COPYRIGHT_NOT_INDIVIDUALLY_VERIFIED",
+      "license_id": "CC0 1.0 structured data; CC BY-SA 4.0 other Wikidata page text",
+      "license_scope": "Structured main/Property/Lexeme/EntitySchema vs text in other namespaces; other assets separately evaluated",
       "source_license_research_note": "Existing knowledge/SOURCE_REGISTRY.md discusses component-specific rights; do not infer a single license for whole project or third-party contributions.",
-      "reuse_permission": "CITATION_AND_INDEPENDENT_CONCEPTUAL_ANALYSIS_ONLY_UNTIL_RIGHTS_CHECK",
-      "item_status": "BIBLIOGRAPHICALLY_REFERENCED_IN_PI_REQUIRES_RIGHTS_AND_ORIGINATOR_AUDIT"
+      "reuse_permission": "STRUCTURED_DATA_CC0_AND_TEXT_CC_BY_SA_ONLY_BY_COMPONENT; PI_RECORDS_CONCEPTUAL_REFERENCE_NO_IMPORT",
+      "item_status": "BIBLIOGRAPHICALLY_REFERENCED_IN_PI_REQUIRES_RIGHTS_AND_ORIGINATOR_AUDIT",
+      "rights_evidence_url": "https://www.wikidata.org/wiki/Wikidata:Licensing"
     },
     {
       "id": "PA-023",
@@ -526,12 +531,14 @@
       "reuse_type": "CONCEPTUAL_BASELINE_OR_CITATION_AS_REPORTED_BY_EXISTING_PI_DOCUMENT",
       "copied_protected_expression_status": "NOT_DETERMINED_BY_THIS_AUDIT",
       "specific_copyright_holder": null,
-      "copyright_holder_verification": "NOT_VERIFIED",
-      "license_id": null,
-      "license_scope": "NOT_VERIFIED_FOR_UNDERLYING_SOURCE",
+      "copyright_holder_verification": "DATA_CC0_CONFIRMED; UNDERLYING_WORKS_INDEPENDENT_RIGHTS",
+      "license_id": "CC0 for OpenAlex scholarly metadata dataset (NOT full-text PDFs)",
+      "license_scope": "OpenAlex data and metadata; downloaded source-PDF original rights preserved and work-specific licenses must be checked",
       "source_license_research_note": "Existing knowledge/SOURCE_REGISTRY.md discusses component-specific rights; do not infer a single license for whole project or third-party contributions.",
-      "reuse_permission": "CITATION_AND_INDEPENDENT_CONCEPTUAL_ANALYSIS_ONLY_UNTIL_RIGHTS_CHECK",
-      "item_status": "BIBLIOGRAPHICALLY_REFERENCED_IN_PI_REQUIRES_RIGHTS_AND_ORIGINATOR_AUDIT"
+      "reuse_permission": "METADATA_DATASET_CC0; PI_REPORTS_CONCEPTUAL_REFERENCE_ONLY",
+      "item_status": "BIBLIOGRAPHICALLY_REFERENCED_IN_PI_REQUIRES_RIGHTS_AND_ORIGINATOR_AUDIT",
+      "rights_evidence_url": "https://help.openalex.org/data/how-its-built/",
+      "additional_rights_evidence_url": "https://help.openalex.org/access/fulltext/"
     },
     {
       "id": "PA-024",
@@ -547,13 +554,14 @@
       "project_application_note": "Organizing hierarchical mechanisms and observed procedures as taxonomy precedent.",
       "reuse_type": "CONCEPTUAL_BASELINE_OR_CITATION_AS_REPORTED_BY_EXISTING_PI_DOCUMENT",
       "copied_protected_expression_status": "NOT_DETERMINED_BY_THIS_AUDIT",
-      "specific_copyright_holder": null,
-      "copyright_holder_verification": "NOT_VERIFIED",
-      "license_id": null,
-      "license_scope": "NOT_VERIFIED_FOR_UNDERLYING_SOURCE",
+      "specific_copyright_holder": "The MITRE Corporation (ATT&CK materials within named official terms)",
+      "copyright_holder_verification": "OFFICIAL_COPYRIGHT_DESIGNATION_VERIFIED_FOR_ATTCK",
+      "license_id": "MITRE ATT&CK Terms of Use (specific custom permission; NOT MIT license)",
+      "license_scope": "ATT&CK research, development, commercial reuse under official terms; copies must retain copyright designation and license; trademark separate",
       "source_license_research_note": "Existing knowledge/SOURCE_REGISTRY.md discusses component-specific rights; do not infer a single license for whole project or third-party contributions.",
-      "reuse_permission": "CITATION_AND_INDEPENDENT_CONCEPTUAL_ANALYSIS_ONLY_UNTIL_RIGHTS_CHECK",
-      "item_status": "BIBLIOGRAPHICALLY_REFERENCED_IN_PI_REQUIRES_RIGHTS_AND_ORIGINATOR_AUDIT"
+      "reuse_permission": "ATTCK_MAY_BE_COPIED_WITH_REQUIRED_OFFICIAL_COPYRIGHT_AND_LICENSE_NOTICES; PI_REPORTS_NO_IMPORTED_MATERIAL",
+      "item_status": "BIBLIOGRAPHICALLY_REFERENCED_IN_PI_REQUIRES_RIGHTS_AND_ORIGINATOR_AUDIT",
+      "rights_evidence_url": "https://attack.mitre.org/resources/terms-of-use/"
     },
     {
       "id": "PA-025",
