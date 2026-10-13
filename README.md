@@ -129,8 +129,6 @@ Current concrete state: E007 has a released synthetic computational result; E008
 
 - [인간·현재 AI·미래 지능체의 상호 비지배·최소침해 상위 규범](research/RECIPROCAL_NONDOMINATION_MINIMAL_INTRUSION_COMMON_LAW_2026-10-12_KO.md)
 
-
-
 <!-- E010_EXPLORATORY_20261012 -->
 **실제 계산·자동검증 E010:** [착취/협력 선택 임계조건·비가역 실행 피해상한](experiments/e010/README_KO.md) — 108개 임의 가정 조합·9개 회귀검사·CI; **탐색적 합성결과이지 현실 인과 검증 아님.**
 
