@@ -11,6 +11,14 @@
 
 ## Original 1 — English
 
+### Public communication sequence — human needs first
+
+**Start with lives people are living now.** Public introductions prioritize food and housing security, healthcare and preventable disease, disability access and inclusion, caregiving, healthy years of life, livelihood, and meaningful freedom to consent, refuse, leave and recover. No person's dignity or claim to protection depends on ability, health, economic output or predicted longevity. Research on intelligent entities must not be advertised as a substitute for these needs or as grounds for making people expendable.
+
+**Present in a graduated sequence:** (1) present-day needs, affected-party costs and measurable improvements; (2) evidence-backed mechanisms for reducing exploitation, concentrated evaluation power, unsafe automation and barriers to redress; (3) clearly labeled, increasingly speculative long-horizon questions only with explicit uncertainty, relevant evidence, and room for informed disagreement. This ordering governs **public emphasis, not the right to investigate**: safety-critical future scenarios may require research before deployment, while present-day credit, audit, transparency and remedy cannot be deferred.
+
+Communication must not frame disagreement as ignorance or immaturity. Religious, cultural, disability-rights, technical and AI-critical perspectives may raise legitimate competing values and risks. Nor should a hypothesis be presented as established truth simply because its eventual implications could be important. Retain the unchanged research record, sources, counterevidence and falsification paths; do not conceal safety-relevant findings. This distinction is consistent with the [National Academies' evidence review on science communication](https://www.nationalacademies.org/read/23674/chapter/2), which rejects a simplistic information-deficit model.
+
 ### The opening thought experiment
 
 **If a developer could build a system that eventually exceeds the developer's own understanding, could the developer keep that system operating within rules they understand? If so, for how long? Under which technical, resource and operational conditions would those limits remain effective, and what could cause them to fail?**
