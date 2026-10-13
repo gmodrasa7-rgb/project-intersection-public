@@ -89,6 +89,28 @@
       ],
       "potential_chain": "receiver grows without demonstrable exploitation or systemic depletion",
       "empirical_status": "NEEDS_EQUAL_TESTING"
+    },
+    {
+      "id": "HS-04",
+      "name": "Contributor attrition and unknown-paradox epistemic closure",
+      "type": "HYPOTHESIS",
+      "public_spec": "research/CONTRIBUTOR_LOSS_UNKNOWN_PARADOX_v0_1_EN_KO.md",
+      "evidence_registry": "knowledge/contributor-loss-unknown-paradox-v0_1.json",
+      "conditions": [
+        "previously independent contributors can detect fault classes unseen by current evaluators",
+        "contributor losses diminish detection channels more than replacements recover",
+        "receiver scores success using selectively missing internal reports",
+        "the loss of observation coverage is unregistered"
+      ],
+      "potential_chain": "contributor cost/voice loss -> observer loss -> fewer recorded counterexamples -> ungrounded confidence -> further underfunding or exclusion -> larger unobserved failure space and receiver-side fragility",
+      "counterexamples": [
+        "actual fault rates fall rather than only reporting rates",
+        "adequate knowledge transfer or independent sensors replace lost coverage",
+        "departures remove only redundant noisy feedback",
+        "reviewers remain independent and calibrate error probabilities externally"
+      ],
+      "empirical_status": "NOT_TESTED_BY_THIS_REGISTRY",
+      "caveat": "Voluntary exit is protected; cannot compel unpaid proof or coerce contributors to remain."
     }
   ],
   "upstream_records": [
@@ -5190,5 +5212,12 @@
       "continuation_status": "NOT_ASSESSED",
       "audit_note": "Listing is not verification of authorship, reuse, costs, payment, harm, or dependence."
     }
-  ]
+  ],
+  "related_epistemic_unknown_paradox": {
+    "public_document": "research/CONTRIBUTOR_LOSS_UNKNOWN_PARADOX_v0_1_EN_KO.md",
+    "testable_claims_path": "knowledge/contributor-loss-unknown-paradox-v0_1.json",
+    "mechanism_state": "UNVALIDATED_NOT_UNIVERSAL",
+    "observation_loss_not_just_labor_loss": true,
+    "owner_beneficiary_loss_unproved": true
+  }
 }
