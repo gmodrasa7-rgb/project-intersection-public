@@ -6,7 +6,7 @@
 **Prior-art DOI/URL candidate trace / 선행 출처 후보 행별 탐색:** [7 core files / 294 source candidates, unverified](knowledge/source-occurrence-pilot-2026-10-13.json). / 핵심문서 7개 DOI·외부 URL 294개 후보 자동 색인(권리 검수 완료 아님).
 **Prior-art originators, copyright, and Project adaptations / 선행연구 원안자·저작권·응용 계보:** [25 initial source mappings, Original 1 English and 원본2 Korean](PRIOR_ART_RIGHTS_AND_DERIVATION_EN_KO.md) · [211 document/code/data audit targets and evidence status](knowledge/prior-art-rights-register-2026-10-13.json). **PARTIAL — NOT A COMPLETED REPOSITORY RIGHTS AUDIT / 1차 등록, 전수검수 완료 아님.**
 
-**Terminology / 용어 설명:** 이 목차의 [영어 원본1 용어집 §12](#12-working-glossary) · [한국어 원본2 용어집 §12](#12-통합-용어집)에는 약어·핵심 가설·자료관리 모듈·실험상태·A–Z 공백의 한 줄 정의가 수록되어 있다. 상세 정의와 근거는 기존 정본 링크를 우선한다.
+**용어집 정본 한 쌍 — 원본1 영어(Original 1 English) / 원본2 한글(Original 2 Korean):** [원본1 영어 전문 §12](#12-working-glossary) · [원본2 한글 전문 §12](#12-통합-용어집). **동등한 정본**으로 각각 171개 정의·과거 별칭 8건·A–Z 연구공백 26개를 보존한다. 영어 우선은 공개 배열일 뿐, 한국어로 진행된 원안·실제 기여의 귀속을 변경하거나 한글 전문을 요약·번역 부록으로 격하하지 않는다. 자세한 사실·가설·기여·반례·권리는 해당 원출처를 확인한다.
 **Epistemic pathway / 선행지식·역사적 이해 경로 연구:** [22 prior-art entries, strong countercases, four opt-in reading routes, unrun comparative evaluation and 12 proposed regressions / 선행연구 22개·반례·선택적 진입 4경로·미실행 비교검증·회귀검사 12종 (Original 1 English / 원본2 한국어)](research/EPISTEMIC_PATHWAY_COMMUNICATION_PRIOR_ART_2026-10-13_EN_KO.md). **DESIGN ONLY / NOT EMPIRICALLY VALIDATED.** Full conclusions and sources always available without a readiness gate.
 
 **연구기억(구 PIA/PI-ANCHOR) v0.1 자료관리 시스템 업그레이드:** [PI 로드맵 v0.2 운영 보충 — 영문 원본1·한국어 원본2](research/RESEARCH_ROADMAP_v0_2_EN_KO.md) — 기존 PI 6단계 유지, P0~P5·PIA v0.2~v1.0 **목표/승격조건(미완료)** 명시. PIA 현재 버전 **v0.1** 유지.
