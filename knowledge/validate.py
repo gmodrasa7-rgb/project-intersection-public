@@ -52,6 +52,13 @@ for system in systems:
 require(len(source_ids) == len(set(source_ids)), "Duplicate source IDs detected.")
 require(meta.get("canonical_role") == "navigation_index_not_source_of_truth",
         "Knowledge graph must remain a navigation index, not source of truth.")
+require(bool(meta.get("updated_at")), "Graph index date missing; readers cannot assess staleness.")
+explorer = (ROOT / "knowledge" / "explorer.html").read_text(encoding="utf-8")
+require('id="coverage-note"' in explorer and 'state.data.meta?.updated_at' in explorer,
+        "Explorer lost graph timestamp/partial-coverage warning.")
+readme = (ROOT / "knowledge" / "README.md").read_text(encoding="utf-8")
+require("dated, incomplete public navigation subset" in readme,
+        "Graph documentation again claims exhaustive current coverage.")
 
 entities = data.get("entities", [])
 relations = data.get("relations", [])
@@ -73,7 +80,14 @@ for entity in entities:
         require(bool(locator), f"{eid}: missing source locator.")
         require(bool(source.get("license_note")), f"{eid}: missing source rights/license note.")
         if kind == "repo_path" and locator:
-            require((ROOT / locator).exists(), f"{eid}: referenced repository path does not exist: {locator}")
+            parts = Path(locator).parts
+            require(not Path(locator).is_absolute() and ".." not in parts,
+                    f"{eid}: repository path must not escape root: {locator}")
+            if not Path(locator).is_absolute() and ".." not in parts:
+                require((ROOT / locator).exists(), f"{eid}: referenced repository path does not exist: {locator}")
+        if kind == "external_url" and locator:
+            require(locator.startswith("https://"),
+                    f"{eid}: unsafe/non-HTTPS external link scheme: {locator}")
 
 relation_ids = [r.get("id") for r in relations]
 require(len(relation_ids) == len(set(relation_ids)), "Duplicate relation IDs detected.")
