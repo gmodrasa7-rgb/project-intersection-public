@@ -156,7 +156,9 @@ jobs:
                   "Public evidence index lost E010 collision disclosure in EN/KO.")
 
           # Landing-page regression: keep first-review cost bounded.
-          require(len(readme.splitlines()) <= 200, "README exceeded 200 lines; move detailed material to linked documents.")
+          require(len(readme.splitlines()) <= 120, "README exceeded 120 lines; detailed research belongs in the existing TOC.")
+          require(len(re.findall(r"\[[^\]]+\]\([^)]+\)", readme)) <= 75,
+                  "README exceeded 75 links; move case inventories to the existing research TOC.")
           for link in [
               "PUBLIC_EVIDENCE_INDEX.md",
               "RESEARCH_STATUS_POLICY.md",
