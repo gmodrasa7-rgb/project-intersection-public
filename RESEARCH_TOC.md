@@ -1,5 +1,6 @@
 # Public Navigation Layer / 공개 탐색층
 
+**Prior-art DOI/URL candidate trace / 선행 출처 후보 행별 탐색:** [7 core files / 294 source candidates, unverified](knowledge/source-occurrence-pilot-2026-10-13.json). / 핵심문서 7개 DOI·외부 URL 294개 후보 자동 색인(권리 검수 완료 아님).
 **Prior-art originators, copyright, and Project adaptations / 선행연구 원안자·저작권·응용 계보:** [25 initial source mappings, Original 1 English and 원본2 Korean](PRIOR_ART_RIGHTS_AND_DERIVATION_EN_KO.md) · [211 document/code/data audit targets and evidence status](knowledge/prior-art-rights-register-2026-10-13.json). **PARTIAL — NOT A COMPLETED REPOSITORY RIGHTS AUDIT / 1차 등록, 전수검수 완료 아님.**
 
 **Terminology / 용어 설명:** 이 목차의 [영어 원본1 용어집 §12](#12-working-glossary) · [한국어 원본2 용어집 §12](#12-통합-용어집)에는 약어·핵심 가설·자료관리 모듈·실험상태·A–Z 공백의 한 줄 정의가 수록되어 있다. 상세 정의와 근거는 기존 정본 링크를 우선한다.
