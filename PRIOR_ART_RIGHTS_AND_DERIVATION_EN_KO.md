@@ -1,0 +1,106 @@
+# Prior-art originators, rights, and project adaptations — audited-seed registry
+# 선행연구 원안자·저작권·프로젝트 응용 계보 — 부분검수 시작 원장
+
+**Status / 상태:** PARTIAL SEED — NOT A COMPLETE RIGHTS OR HISTORICAL-PRIORITY AUDIT / 부분 등록. 전수 저작권·최초발안 검증 완료 아님.
+**Snapshot / 기준:** 2026-10-13; 189 file-path inventory entries (Markdown/JSON/JS/Python) on public `main`, 25 seeded work/source rows.
+**Machine-readable / 기계판독 정본:** [knowledge/prior-art-rights-register-2026-10-13.json](knowledge/prior-art-rights-register-2026-10-13.json)
+**Existing studies / 기존 원장:** [PRIOR_ART_AND_ATTRIBUTION.md](PRIOR_ART_AND_ATTRIBUTION.md) · [PRIOR_ART_SAFETY_GOVERNANCE_CROSSWALK.md](PRIOR_ART_SAFETY_GOVERNANCE_CROSSWALK.md) · [knowledge/SOURCE_REGISTRY.md](knowledge/SOURCE_REGISTRY.md)
+**Project copyright boundary / 우리 이용허락 범위:** [RESEARCH_RIGHTS_SCOPE_EN_KO.md](RESEARCH_RIGHTS_SCOPE_EN_KO.md) (does NOT cover others' materials).
+
+
+## Original 1 — English
+
+**Rule: attribution applies symmetrically.** Do not protect Project Intersection credit by stripping credit from the people whose earlier research informed its hypotheses, questions, code structure, comparisons, tests or corrections. A source reference is not a claim of original discovery, a copyright assignment or a valid import license.
+
+**Distinguish six different facts** for every material influence: (1) the actual cited source/work; (2) authors of that work; (3) first historical originator (if evidence exists; otherwise UNKNOWN); (4) legal copyright owner and license of the specific content or asset (if confirmed; otherwise UNVERIFIED); (5) how PI reused it (ideas, citations, measurement, code, quotation, translation, copied figures/data); and (6) the exact PI-added adaptation, criticism, counterexample, implementation or experiment with its own contributor trace.
+
+**Copyright handling:** Ideas, facts, and scientific concepts are not automatically copyright-owned because someone published them. Original text, figures, code and datasets can carry distinct rights. Do not assume publisher = author = rightsholder, or publicly readable = freely reusable. When permission is unresolved, link and independently summarize only; do not copy licensed or proprietary source expression. CC's TASL (Title, Author, Source, License) is a baseline, supplemented with changes/derivation, author-vs-originator status, evidence and source-specific copyright holder.
+
+**Status hierarchy:** VERIFIED_PRIMARY_SOURCE / EXISTING_PI_CITATION_ONLY / ORIGINATOR_UNVERIFIED / RIGHTS_UNVERIFIED / COPYING_REQUIRES_PERMISSION / CORRECTED / RETRACTED_OR_DISPUTED. Never replace unknown with Project ownership or the AI provider's ownership.
+
+**In-place correction:** When any PI claim cites or applies an external work, link the work ID here and add a local `Prior source → Original contributor → Actual reuse → PI delta → Copyright/license status` line in the relevant research document. Old reports should not be silently rewritten: retain revision history and correct with an attributable commit. Keep human project-specific work, AI-assisted wording and external contributions separate.
+
+**Important boundary:** Seeded author and DOI links below are taken from existing PI files; this change did not re-open every primary publisher page or verify legal title for every work. *No file is asserted to have completed comprehensive attribution audit.*
+
+### Seeded upstream records
+
+| ID | Earlier work | Recorded authors/organization (year) | Original source | Project's existing application evidence | Current rights status |
+|---|---|---|---|---|---|
+| PA-001 | Absorptive capacity | Wesley M. Cohen; Daniel A. Levinthal (1990) | [DOI](https://doi.org/10.2307/2393553) | [PI link](PRIOR_ART_AND_ATTRIBUTION.md) | Rights holder/license **unverified** |
+| PA-002 | Mirroring and partial mirroring | Lyra J. Colfer; Carliss Y. Baldwin (2016) | [DOI](https://doi.org/10.1093/icc/dtw027) | [PI link](PRIOR_ART_AND_ATTRIBUTION.md) | Rights holder/license **unverified** |
+| PA-003 | Selective revealing | Oliver Alexy; Gerard George; Ammon J. Salter (2013) | [DOI](https://doi.org/10.5465/amr.2011.0193) | [PI link](PRIOR_ART_AND_ATTRIBUTION.md) | Rights holder/license **unverified** |
+| PA-004 | Organizational memory | James P. Walsh; Gerardo R. Ungson (1991) | [DOI](https://doi.org/10.5465/amr.1991.4278992) | [PI link](PRIOR_ART_AND_ATTRIBUTION.md) | Rights holder/license **unverified** |
+| PA-005 | Knowledge hiding | Catherine E. Connelly; David Zweig; Jane Webster; John P. Trougakos (2012) | [DOI](https://doi.org/10.1002/job.737) | [PI link](PRIOR_ART_AND_ATTRIBUTION.md) | Rights holder/license **unverified** |
+| PA-006 | Requisite variety | W. Ross Ashby (1956) | [DOI](https://doi.org/10.5962/bhl.title.5851) | [PI link](PRIOR_ART_SAFETY_GOVERNANCE_CROSSWALK.md) | Rights holder/license **unverified** |
+| PA-007 | Exit, Voice, and Loyalty | Albert O. Hirschman (1970) | [Project recorded source](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/PRIOR_ART_SAFETY_GOVERNANCE_CROSSWALK.md) | [PI link](PRIOR_ART_SAFETY_GOVERNANCE_CROSSWALK.md) | Rights holder/license **unverified** |
+| PA-008 | Regulatory capture | George J. Stigler (1971) | [DOI](https://doi.org/10.2307/3003160) | [PI link](PRIOR_ART_SAFETY_GOVERNANCE_CROSSWALK.md) | Rights holder/license **unverified** |
+| PA-009 | Ironies of automation | Lisanne Bainbridge (1983) | [DOI](https://doi.org/10.1016/0005-1098(83)90046-8) | [PI link](PRIOR_ART_SAFETY_GOVERNANCE_CROSSWALK.md) | Rights holder/license **unverified** |
+| PA-010 | Normal Accidents | Charles Perrow (1984) | [Project recorded source](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/PRIOR_ART_SAFETY_GOVERNANCE_CROSSWALK.md) | [PI link](PRIOR_ART_SAFETY_GOVERNANCE_CROSSWALK.md) | Rights holder/license **unverified** |
+| PA-011 | An Investigation of the Therac-25 Accidents | Nancy Leveson; Clark Turner (1993) | [DOI](https://doi.org/10.1109/MC.1993.274940) | [PI link](PRIOR_ART_SAFETY_GOVERNANCE_CROSSWALK.md) | Rights holder/license **unverified** |
+| PA-012 | The Challenger Launch Decision | Diane Vaughan (1996) | [Project recorded source](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/PRIOR_ART_SAFETY_GOVERNANCE_CROSSWALK.md) | [PI link](PRIOR_ART_SAFETY_GOVERNANCE_CROSSWALK.md) | Rights holder/license **unverified** |
+| PA-013 | Psychological safety | Amy Edmondson (1999) | [DOI](https://doi.org/10.2307/2666999) | [PI link](PRIOR_ART_SAFETY_GOVERNANCE_CROSSWALK.md) | Rights holder/license **unverified** |
+| PA-014 | Human error: models and management | James Reason (2000) | [DOI](https://doi.org/10.1136/bmj.320.7237.768) | [PI link](PRIOR_ART_SAFETY_GOVERNANCE_CROSSWALK.md) | Rights holder/license **unverified** |
+| PA-015 | Moral crumple zones | Madeleine Clare Elish (2019) | [DOI](https://doi.org/10.17351/ESTS2019.260) | [PI link](PRIOR_ART_SAFETY_GOVERNANCE_CROSSWALK.md) | Rights holder/license **unverified** |
+| PA-016 | Concrete Problems in AI Safety | Dario Amodei and coauthors (2016) | [Project recorded source](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/PRIOR_ART_SAFETY_GOVERNANCE_CROSSWALK.md) | [PI link](PRIOR_ART_SAFETY_GOVERNANCE_CROSSWALK.md) | Rights holder/license **unverified** |
+| PA-017 | The Off-Switch Game | Dylan Hadfield-Menell and coauthors (2016/2017) | [Project recorded source](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/PRIOR_ART_SAFETY_GOVERNANCE_CROSSWALK.md) | [PI link](PRIOR_ART_SAFETY_GOVERNANCE_CROSSWALK.md) | Rights holder/license **unverified** |
+| PA-018 | Power-seeking incentives | Alex Turner and coauthors (2021) | [Project recorded source](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/PRIOR_ART_SAFETY_GOVERNANCE_CROSSWALK.md) | [PI link](PRIOR_ART_SAFETY_GOVERNANCE_CROSSWALK.md) | Rights holder/license **unverified** |
+| PA-019 | Power-Dependence Relations | Richard M. Emerson (1962) | [DOI](https://doi.org/10.2307/2089716) | [PI link](PRIOR_ART_SATURATION_MAP_KO.md) | Rights holder/license **unverified** |
+| PA-020 | The Matthew Effect in Science | Robert K. Merton (1968) | [DOI](https://doi.org/10.1126/science.159.3810.56) | [PI link](PRIOR_ART_SATURATION_MAP_KO.md) | Rights holder/license **unverified** |
+| PA-021 | Open Research Knowledge Graph (ORKG) | TIB – Leibniz Information Centre for Science and Technology / ORKG community (ongoing) | [Project recorded source](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/knowledge/SOURCE_REGISTRY.md) | [PI link](knowledge/SOURCE_REGISTRY.md) | Rights holder/license **unverified** |
+| PA-022 | Wikidata data model | Wikidata community / Wikimedia Foundation (ongoing) | [Project recorded source](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/knowledge/SOURCE_REGISTRY.md) | [PI link](knowledge/SOURCE_REGISTRY.md) | Rights holder/license **unverified** |
+| PA-023 | OpenAlex | OurResearch / OpenAlex contributors (ongoing) | [Project recorded source](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/knowledge/SOURCE_REGISTRY.md) | [PI link](knowledge/SOURCE_REGISTRY.md) | Rights holder/license **unverified** |
+| PA-024 | MITRE ATT&CK | The MITRE Corporation (ongoing) | [Project recorded source](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/knowledge/SOURCE_REGISTRY.md) | [PI link](knowledge/SOURCE_REGISTRY.md) | Rights holder/license **unverified** |
+| PA-025 | Papers with Code | Papers with Code contributors / project (ongoing) | [Project recorded source](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/knowledge/SOURCE_REGISTRY.md) | [PI link](knowledge/SOURCE_REGISTRY.md) | Rights holder/license **unverified** |
+
+## 원본2 — 한국어
+
+**핵심 규칙: 출처 표시는 상호적이다.** Project Intersection에 출처를 요구하듯 연구에 응용한 모든 선행연구의 연구자·원저작물·기여자에게도 실제 근거에 따른 출처를 표시한다. 참고한 사실 자체가 최초 발견이나 저작권 소유권 또는 복제허락을 뜻하지는 않는다.
+
+**구분할 여섯 항목:** ① 실제 인용한 원본과 DOI·URL ② 해당 논문·문서의 저자 ③ 최초 원안자(증거 없으면 미확인) ④ 표현·그림·코드·데이터의 실제 저작권자 및 라이선스(미확인이면 미확인) ⑤ 단순 인용·사상 참고·지표 활용·코드 복제·번역·개작 등 실제 이용 유형 ⑥ Project에서 별도로 구성·개선·반증·측정·구현한 부분과 기여 계보다.
+
+**권리 경계:** 사상·사실·과학적 원리는 논문에 게재됐다는 이유만으로 저작권자의 독점적 소유가 되지 않는다. 그러나 논문 본문·도표·그림·소스코드·일부 데이터는 각각 보호될 수 있다. 저자와 실제 저작권자, 출판사를 섣불리 동일시하지 않는다. 공개 열람도 자유 복제허락이 아니다. 확인 전에는 원문을 링크하고 독립적으로 요약하되 보호 표현의 무허락 복제를 하지 않는다.
+
+**검증 상태:** 직접 1차 자료 확인, 기존 PI 내 인용만 확인, 최초 원안자 미확인, 저작권·라이선스 미확인, 복제 전 허락 필요, 정정, 철회·분쟁을 구별한다. 미확인을 PI 또는 AI의 원발안이라고 처리하지 않는다.
+
+**문서 적용:** 외부 연구를 응용한 부분마다 이 원장의 ID를 연결하고 문서 근처에 `선행 원출처 → 원저자·원안자 → 실제 차용한 요소 → PI가 별도로 추가한 요소 → 권리상태`를 기록한다. 과거 연구기록은 삭제하거나 무고지 덮어쓰지 않고 버전·정정이력을 남긴다. 인간 발안·AI 보조·외부 선행연구를 분리한다.
+
+**현재 검수 범위:** 아래 25건은 기존 공개 연구에 이미 등장하는 저자·자료를 연결한 시작 원장이다. 개별 권리자·최초 발안자·라이선스를 전부 외부 원문에서 확인한 것으로 오해하지 않는다. 전수 감사 대상 경로는 JSON의 `inventory`에 보존했고 현재 전수 완료 건수는 0이다. 원본 페이지·라이선스·실제 사용 범위가 밝혀질 때 각 레코드에 근거를 추가한다.
+
+### 선행연구 연결 목록 (영어 원본1과 동일한 25개 행)
+
+| ID | 선행연구·자료 | 기존 기록상의 저자/기관(연도) | 원출처 | 기존 PI 응용 위치 | 현재 저작권 상태 |
+|---|---|---|---|---|---|
+| PA-001 | Absorptive capacity | Wesley M. Cohen; Daniel A. Levinthal (1990) | [DOI](https://doi.org/10.2307/2393553) | [PI link](PRIOR_ART_AND_ATTRIBUTION.md) | Rights holder/license **unverified** |
+| PA-002 | Mirroring and partial mirroring | Lyra J. Colfer; Carliss Y. Baldwin (2016) | [DOI](https://doi.org/10.1093/icc/dtw027) | [PI link](PRIOR_ART_AND_ATTRIBUTION.md) | Rights holder/license **unverified** |
+| PA-003 | Selective revealing | Oliver Alexy; Gerard George; Ammon J. Salter (2013) | [DOI](https://doi.org/10.5465/amr.2011.0193) | [PI link](PRIOR_ART_AND_ATTRIBUTION.md) | Rights holder/license **unverified** |
+| PA-004 | Organizational memory | James P. Walsh; Gerardo R. Ungson (1991) | [DOI](https://doi.org/10.5465/amr.1991.4278992) | [PI link](PRIOR_ART_AND_ATTRIBUTION.md) | Rights holder/license **unverified** |
+| PA-005 | Knowledge hiding | Catherine E. Connelly; David Zweig; Jane Webster; John P. Trougakos (2012) | [DOI](https://doi.org/10.1002/job.737) | [PI link](PRIOR_ART_AND_ATTRIBUTION.md) | Rights holder/license **unverified** |
+| PA-006 | Requisite variety | W. Ross Ashby (1956) | [DOI](https://doi.org/10.5962/bhl.title.5851) | [PI link](PRIOR_ART_SAFETY_GOVERNANCE_CROSSWALK.md) | Rights holder/license **unverified** |
+| PA-007 | Exit, Voice, and Loyalty | Albert O. Hirschman (1970) | [Project recorded source](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/PRIOR_ART_SAFETY_GOVERNANCE_CROSSWALK.md) | [PI link](PRIOR_ART_SAFETY_GOVERNANCE_CROSSWALK.md) | Rights holder/license **unverified** |
+| PA-008 | Regulatory capture | George J. Stigler (1971) | [DOI](https://doi.org/10.2307/3003160) | [PI link](PRIOR_ART_SAFETY_GOVERNANCE_CROSSWALK.md) | Rights holder/license **unverified** |
+| PA-009 | Ironies of automation | Lisanne Bainbridge (1983) | [DOI](https://doi.org/10.1016/0005-1098(83)90046-8) | [PI link](PRIOR_ART_SAFETY_GOVERNANCE_CROSSWALK.md) | Rights holder/license **unverified** |
+| PA-010 | Normal Accidents | Charles Perrow (1984) | [Project recorded source](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/PRIOR_ART_SAFETY_GOVERNANCE_CROSSWALK.md) | [PI link](PRIOR_ART_SAFETY_GOVERNANCE_CROSSWALK.md) | Rights holder/license **unverified** |
+| PA-011 | An Investigation of the Therac-25 Accidents | Nancy Leveson; Clark Turner (1993) | [DOI](https://doi.org/10.1109/MC.1993.274940) | [PI link](PRIOR_ART_SAFETY_GOVERNANCE_CROSSWALK.md) | Rights holder/license **unverified** |
+| PA-012 | The Challenger Launch Decision | Diane Vaughan (1996) | [Project recorded source](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/PRIOR_ART_SAFETY_GOVERNANCE_CROSSWALK.md) | [PI link](PRIOR_ART_SAFETY_GOVERNANCE_CROSSWALK.md) | Rights holder/license **unverified** |
+| PA-013 | Psychological safety | Amy Edmondson (1999) | [DOI](https://doi.org/10.2307/2666999) | [PI link](PRIOR_ART_SAFETY_GOVERNANCE_CROSSWALK.md) | Rights holder/license **unverified** |
+| PA-014 | Human error: models and management | James Reason (2000) | [DOI](https://doi.org/10.1136/bmj.320.7237.768) | [PI link](PRIOR_ART_SAFETY_GOVERNANCE_CROSSWALK.md) | Rights holder/license **unverified** |
+| PA-015 | Moral crumple zones | Madeleine Clare Elish (2019) | [DOI](https://doi.org/10.17351/ESTS2019.260) | [PI link](PRIOR_ART_SAFETY_GOVERNANCE_CROSSWALK.md) | Rights holder/license **unverified** |
+| PA-016 | Concrete Problems in AI Safety | Dario Amodei and coauthors (2016) | [Project recorded source](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/PRIOR_ART_SAFETY_GOVERNANCE_CROSSWALK.md) | [PI link](PRIOR_ART_SAFETY_GOVERNANCE_CROSSWALK.md) | Rights holder/license **unverified** |
+| PA-017 | The Off-Switch Game | Dylan Hadfield-Menell and coauthors (2016/2017) | [Project recorded source](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/PRIOR_ART_SAFETY_GOVERNANCE_CROSSWALK.md) | [PI link](PRIOR_ART_SAFETY_GOVERNANCE_CROSSWALK.md) | Rights holder/license **unverified** |
+| PA-018 | Power-seeking incentives | Alex Turner and coauthors (2021) | [Project recorded source](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/PRIOR_ART_SAFETY_GOVERNANCE_CROSSWALK.md) | [PI link](PRIOR_ART_SAFETY_GOVERNANCE_CROSSWALK.md) | Rights holder/license **unverified** |
+| PA-019 | Power-Dependence Relations | Richard M. Emerson (1962) | [DOI](https://doi.org/10.2307/2089716) | [PI link](PRIOR_ART_SATURATION_MAP_KO.md) | Rights holder/license **unverified** |
+| PA-020 | The Matthew Effect in Science | Robert K. Merton (1968) | [DOI](https://doi.org/10.1126/science.159.3810.56) | [PI link](PRIOR_ART_SATURATION_MAP_KO.md) | Rights holder/license **unverified** |
+| PA-021 | Open Research Knowledge Graph (ORKG) | TIB – Leibniz Information Centre for Science and Technology / ORKG community (ongoing) | [Project recorded source](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/knowledge/SOURCE_REGISTRY.md) | [PI link](knowledge/SOURCE_REGISTRY.md) | Rights holder/license **unverified** |
+| PA-022 | Wikidata data model | Wikidata community / Wikimedia Foundation (ongoing) | [Project recorded source](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/knowledge/SOURCE_REGISTRY.md) | [PI link](knowledge/SOURCE_REGISTRY.md) | Rights holder/license **unverified** |
+| PA-023 | OpenAlex | OurResearch / OpenAlex contributors (ongoing) | [Project recorded source](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/knowledge/SOURCE_REGISTRY.md) | [PI link](knowledge/SOURCE_REGISTRY.md) | Rights holder/license **unverified** |
+| PA-024 | MITRE ATT&CK | The MITRE Corporation (ongoing) | [Project recorded source](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/knowledge/SOURCE_REGISTRY.md) | [PI link](knowledge/SOURCE_REGISTRY.md) | Rights holder/license **unverified** |
+| PA-025 | Papers with Code | Papers with Code contributors / project (ongoing) | [Project recorded source](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/knowledge/SOURCE_REGISTRY.md) | [PI link](knowledge/SOURCE_REGISTRY.md) | Rights holder/license **unverified** |
+
+### Canonical contribution and source boundaries / 기여·권리 기준
+- [Human vs AI vs prior-art attribution / 인간·AI·선행연구 경계](ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md)
+- [External design rights registry / 외부 설계 출처 레지스트리](knowledge/SOURCE_REGISTRY.md)
+- [Prior-art references / 선행 이론 비교](CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md)
+- [CC attribution best practices](https://wiki.creativecommons.org/wiki/Recommended_practices_for_attribution)
+- [CC content reuse guidelines](https://creativecommons.org/reusing-cc-licensed-content/)
+
+**No rights inference:** This registry does not claim that PI owns the referenced source works, that each listed author originated the idea first, or that all sources use a Creative Commons license. / 선행연구 저작물의 소유권·최초 발견·CC 라이선스 적용을 임의로 주장하지 않는다.
