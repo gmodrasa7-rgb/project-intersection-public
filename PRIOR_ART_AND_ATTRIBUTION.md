@@ -30,6 +30,14 @@ Project Intersection은 내부 용어로 다시 이름 붙였다는 이유만으
 | Long-term data attrition | Timothy H. Vines et al. (2014) | PLOS Biology; DOI 10.1371/journal.pbio.1001745 | Record loss can correlate strongly with age without establishing strategic capture. |
 | Provenance and records controls | W3C PROV Working Group (2013); ISO 15489-1:2016 | W3C Recommendations; ISO records-management standard | Provenance, derivation, versioning, access, authenticity, integrity, reliability, and usability are established engineering/records-management concerns. |
 
+## 2026-10-14 E007 timing/game-form prior-art boundary
+
+| Established concept | Credited prior authors/reviewers | Checked source | What the Project Intersection implementation adds — and does not invent |
+|---|---|---|---|
+| Sequential vs simultaneous actions, information sets, equilibrium/backward-induction and order-of-play effects | John von Neumann & Oskar Morgenstern (1944, modern game-theory foundations); Reinhard Selten (1975, extensive-game equilibrium refinements); Don Ross (2023 revised overview, secondary source); MIT Sloan faculty/course material (2004) | [Don Ross, *Game Theory*, Stanford Encyclopedia of Philosophy, 2023 edition, §§2.3–2.6](https://plato.stanford.edu/archives/fall2023/entries/game-theory/index.html); [MIT OpenCourseWare, *Game Theory for Managers*, lectures 3–6](https://ocw.mit.edu/courses/15-040-game-theory-for-managers-spring-2004/pages/lecture-notes/) | Action timing, first/last-moving effects and distinct strategic game forms **are prior art**. E007 is a specific founder-directed research question and a narrow auditable synthetic implementation/counterexample, not the invention of game theory, timing sensitivity, backward induction or simultaneous-action analysis. The 2026-10-14 A-before-B code-order defect, and matched simultaneous control, are project-specific implementation findings, *not* independent replication or empirical cooperation evidence. |
+
+Source hierarchy / 선행연구 계보: the SEP entry is **Don Ross's later explanatory review**, not a claim that Ross invented extensive-form games; the original mathematical/game-theoretic traditions predate E007. The exact attribution to every historical founder of each timing concept remains researchable and must not be inferred from a secondary citation alone. / 역사적 발명 순위까지 단정하지 않으며, 인간 연구자의 E007 문제설정·반증노동과 AI 보조 코드 구현을 구분한다.
+
 ## Current correction
 
 The following broad novelty claims are not retained: selective information permeability as a new standalone theory; independent adoption/rejection as a new standalone construct; dependence/lock-in as inherently equivalent to capture; formal exit as sufficient evidence of material recovery.

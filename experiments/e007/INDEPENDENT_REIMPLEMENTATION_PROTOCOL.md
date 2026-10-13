@@ -9,6 +9,8 @@ This document defines the smallest public specification needed to test E007 with
 
 ---
 
+**Game-theory priority / 게임이론 선행연구:** Distinctions between strategic-form/simultaneous and extensive-form/sequential games, action order, information sets and backward induction precede this project. See the [credited primary/secondary tradition and E007 scope](../../PRIOR_ART_AND_ATTRIBUTION.md#2026-10-14-e007-timinggame-form-prior-art-boundary) and Don Ross's [2023 Stanford Encyclopedia overview](https://plato.stanford.edu/archives/fall2023/entries/game-theory/index.html). E007's narrower contribution is *an executable project-specific failure test for timing/role assumptions*, not invention of those established concepts. / 동시·순차게임, 정보집합과 역진귀납은 기존 게임이론이다. 본 연구는 특정 공존 모형에서 이 시점 가정과 고정 A 선공 처리 오류를 반증 가능한 형태로 시험한 응용이다.
+
 ## 1. Independence boundary / 독립성 경계
 
 A reimplementation may use this specification and may know the published headline result. To qualify as `INDEPENDENT_IMPLEMENTATION`, the reviewer should:
