@@ -347,7 +347,7 @@ without making another agent's
 permanent subordination or elimination  
 a condition of progress.
 
-### 1.2 ICM — Intersection of Minimum Self-Interest
+### 1.2 ICM — Minimal Self-Interest Intersection (historically also “Intersection of Minimum Self-Interest”)
 
 Can there be a minimum intersection  
 where preserving another independent agent's
@@ -362,6 +362,8 @@ and future contribution
 
 is also compatible  
 with one's own long-term interest?
+
+**Acronym clarification:** **ICM** denotes the minimum self-interest intersection only. **IndCM** denotes *Independent Continuance Margin* (viable independent room to continue, refuse, exit, recover and learn). Historical ICM-as-IndCM uses remain legacy-ambiguous, not another current definition. [Bilingual canonical wording](PUBLIC_PREAMBLE_VOLUNTARY_COEXISTENCE_2026-10-13_EN_KO.md).
 
 ### 1.3 Standing / Governance / Resource / Action Separation
 
@@ -1415,6 +1417,8 @@ Project Intersection이 사용하는
 교차하는 최소 조건이
 
 존재하는가?
+
+**약어 구분:** **ICM**은 최소 사심 교집합, **IndCM**은 *독립 존속 여력(Independent Continuance Margin)*을 뜻한다. 과거에 후자에도 ICM을 쓴 기록은 중복된 역사적 표기로 보존하며 두 개념을 동치라고 판정하지 않는다. [영어 원본1·한국어 원본2 용어 정본](PUBLIC_PREAMBLE_VOLUNTARY_COEXISTENCE_2026-10-13_EN_KO.md).
 
 ### 1.3 Standing / Governance / Resource / Action 분리
 
