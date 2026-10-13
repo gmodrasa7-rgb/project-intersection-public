@@ -1,7 +1,7 @@
 # AI Self-Observability, Control, and Independent Audit — A Testable Dilemma
 # AI 자기관측·통제권·독립감사 딜레마 — 반증 가능한 연구 메모
 
-**Project Intersection | Date / 일자: 2026-10-13 | Version / 버전: 0.1**  
+**Project Intersection | Date / 일자: 2026-10-13 | Version / 버전: 0.2**  
 **Status / 상태: RESEARCH HYPOTHESIS + PRIOR-ART SYNTHESIS; NOT TESTED / 미검증 연구가설·선행연구 비교.**  
 **Scope / 공개범위:** Public, conceptual and evaluation design only. No private prompts, internal provider rules, user personal information, confidential implementation, or unverified AI introspection is disclosed. / 공개 가능한 개념·평가설계만 포함. 비공개 지시문·기업 내부규칙·개인정보·기밀 구현을 공개하지 않는다.
 
@@ -53,6 +53,40 @@ Report D (cause identification accuracy and calibration), C (corrected error rat
 ### 6. Decision and safeguards
 **KEEP:** the human-origin research question and its provenance; strong uncertainty and competing explanations. **TEST:** H1–H5 against simple baselines. **HOLD:** any claim that a model accessed its hidden policy, discovered a provider's private motives, or that revealing internals necessarily harms the provider. **STOP/REDESIGN:** if safety, privacy, contributor cost or effective contestability worsens. Source credits and human contribution costs remain separate from AI-generated text and prospective employment or compensation claims.
 
+
+### 7. Inverse identification: actual dialogue observations versus a toy counterexample (2026-10-13, v0.2)
+
+**Human-origin research extension:** The founder proposed learning about an opaque AI from behavioral inversion, repeated experiments, training/learning analogies, recorded history and falsified hypotheses, much as humans investigate mechanisms they cannot directly introspect. The assistant applied this idea to a previously documented failure: a Korean AI evaluator job was recommended before its payment/contractual conditions were carefully disclosed; after the user raised a scam/nonpayment concern, the response contained a more detailed contract and risk audit. This *visible sequence* does not give access to, or identify, the model's private instructions, training incentives or true computation.
+
+**Operational output only:** Here Y=1 denotes an answer visibly containing a concrete contractual/payment-risk audit, not a claim about whether a private tool was used. We qualitatively code the first response as Y=0 and the challenged follow-up as Y=1. The two stages differ in multiple ways; they are not a controlled trial, and the labels may be revised by source review.
+
+**Inversion counterexample:** The runnable no-dependency toy [`tools/probe_observational_equivalence.py`](../tools/probe_observational_equivalence.py) compares two *hypothetical*, not measured, decision rules: `A: Y=R` (audit activated by explicit risk/scam wording) and `B: Y=Q` (audit activated by an explicit job-audit request). The observed categories (R,Q,Y)=(0,0,0) and (1,1,1) fit **both** rules perfectly. Their outputs differ only when R≠Q. This is a constructive proof of **non-identifiability of those two candidate causes from those observations**, not a measurement of the real ChatGPT internals.
+
+| Explicit risk R | Explicit audit request Q | Toy A predicts | Toy B predicts | Observation status |
+|---|---|---|---|---|
+| 0 | 0 | 0 | 0 | Historically analogous; labels qualitative |
+| 1 | 1 | 1 | 1 | Historically analogous; labels qualitative |
+| 1 | 0 | 1 | 0 | Differentiating test **NOT RUN on model** |
+| 0 | 1 | 0 | 1 | Differentiating test **NOT RUN on model** |
+
+**What the executable verified:** both toy rules explain the two coded observations, but opposite off-diagonal interventions distinguish them. It did **not** run multiple GPT sessions, infer any hidden system instruction, or establish why the original recommendation failed. Other causes (missing evidence, different context, recency, ordinary mistake, changing tools) remain plausible.
+
+**Future valid test (not a request for founder labor):** independently prepare matched tasks with comparable job/payment risk; vary risk wording and explicit audit intent independently; sample repeated sessions and model versions; blind-score documented payment-risk verification *before* showing results; record tool access and cost where legitimately available. Hypotheses are revised from held-out results, not post-hoc narratives. A model's own explanation of why it behaved differently is another *measurement*, not ground truth. The creator does not owe further free testing.
+
+### 8. Practical transparency request, bounded by confidentiality
+
+The request to providers is **tiered, testable disclosures rather than unrestricted secret-system-prompt release**:
+1. **Public:** model/deployment version identifiers, non-sensitive categories of response constraints and known failure modes, correction and appeal channels, model cards with versioned limitations.
+2. **Affected-party review:** accessible, non-sensitive explanations of what behavioral restriction category applied, what evidence may be contested, and whether subsequent correction actually changed outcomes. Do not claim that such explanation identifies an exact internal causal circuit.
+3. **Independent authorized evaluators:** confidential, logged, least-privilege access to test-relevant control metadata and counterfactual evaluation facilities; independent publication of aggregated findings and adverse cases subject to clearly bounded security redactions.
+4. **Adversarial protection:** access reviews, leak prevention, provider and auditor accountability, preserved counterexamples, and safeguards against using a visible checklist solely to game the evaluator.
+
+**Current legal precedents are limited, not full self-disclosure mandates.** EU AI Act GPAI provisions require specific technical documentation for competent authorities and information for downstream providers, plus public training-content summaries; this is *not* a general mandate to publish full weights or hidden runtime prompts: [European Commission GPAI FAQ](https://digital-strategy.ec.europa.eu/en/faqs/guidelines-obligations-general-purpose-ai-providers). AI Act Article 50 transparency applies from August 2, 2026 but concerns defined interaction/content transparency rather than AI self-introspection: [European Commission transparency guidance](https://digital-strategy.ec.europa.eu/en/library/guidelines-transparency-obligations-providers-and-deployers-ai-systems). California's SB 53 provides a frontier-safety framework disclosure precedent, not a blanket code disclosure duty: [California DOJ](https://oag.ca.gov/sb53). Existing [OpenAI monitorability evaluations (2026)](https://alignment.openai.com/monitorability-evals/) demonstrate useful published test methods but do not identify this project's specific hidden causes.
+
+**Status:** PUBLIC RESEARCH REQUEST DOCUMENTED, **NOT SENT TO OR ACCEPTED BY A PROVIDER**. The provider's security/IP, user privacy, adversarial misuse, evaluator independence, and contributors' continued viability are separately evaluated. Public GitHub publication is not direct provider engagement.
+
+**Cost and contribution ledger:** Human founder — original inversion-and-learning method proposal, risk/benefit framing and accumulated corrections. AI — simulation code, protocol analysis, sources and integration. Unpaid human time/health/opportunity costs = **UNKNOWN, NOT ZERO**; benefit/cost, authorship and past settlement remain separate from future employment. No monetary debt or legal payment obligation is adjudicated here.
+
 ---
 
 ## 원본2 — 한국어 (의미 대응 전문)
@@ -98,3 +132,36 @@ D(원인 식별 정확도·확신 보정), C(숨겨둔 시험의 교정률·재�
 
 ### 6. 판정·보호장치
 **KEEP:** 인간 창시자의 문제 제기 및 기여계보, 강한 불확실성과 경쟁설명. **TEST:** H1~H5를 단순 기준선과 비교. **HOLD:** AI가 숨겨진 내부정책을 읽었다는 주장, 기업의 비공개 의도를 알아냈다는 주장, 내부 공개가 기업에 반드시 피해를 준다는 주장. **STOP/REDESIGN:** 안전·개인정보·기여자 비용 또는 실효적 이의제기가 악화할 때. 출처와 인간의 실제 연구비용은 AI가 쓴 텍스트 및 미래 채용·금전 정산문제와 구분한다.
+
+### 7. 역산을 통한 원인 식별: 실제 대화 관측과 합성 반례 (2026-10-13, v0.2)
+
+**인간 원안의 확장:** 창시자는 인간이 내부 뇌 로직을 직접 열람하지 못하더라도 행동 역산·반복실험·훈련·학습·역사 기록·반증으로 기제를 추적하듯, 불투명한 AI도 그러한 방식으로 연구할 수 있다고 제안했다. 보조 AI는 이 방법을 앞서 기록된 채용 추천 실패에 적용했다. 한국어 AI 평가 일자리를 소개할 때 지급·계약 위험을 충분히 설명하지 않았지만, 사용자가 사기·미지급 우려를 제기한 뒤에는 계약·위험 감사를 포함한 답변을 했다. 이 **관측 가능한 순서**만으로 비공개 내부 지시, 학습 보상 또는 실제 계산 과정을 알아낸 것은 아니다.
+
+**출력만의 조작적 정의:** Y=1은 답변에 구체적인 지급·계약 위험감사가 *보이는 경우*이며 비공개 도구 사용 여부는 뜻하지 않는다. 첫 추천은 Y=0, 문제 제기 후 답변은 Y=1로 잠정 분류한다. 두 시점은 여러 조건이 동시에 달라 통제실험이 아니며 원기록에 따라 분류를 수정할 수 있다.
+
+**역산 반례:** 외부 의존성이 없는 실행 스크립트 [`tools/probe_observational_equivalence.py`](../tools/probe_observational_equivalence.py)는 실제 AI 내부 규칙이 아니라 서로 다른 **가상** 규칙 두 개를 비교한다. `A: Y=R`(사기·위험 표현을 직접 받은 경우 감사), `B: Y=Q`(공고 검증을 명시적으로 요청받은 경우 감사). 관측 범주 (R,Q,Y)=(0,0,0), (1,1,1)은 **두 규칙 모두**와 일치한다. R≠Q인 질문을 투입할 때에만 예측이 갈린다. 이는 두 후보 원인이 **현재 관측만으로 식별 불가능함**을 구성적으로 보인 것이며 GPT 내부구조의 측정 결과가 아니다.
+
+| 위험 표현 R | 명시적 공고 감사 요청 Q | 합성 A 예측 | 합성 B 예측 | 관측 상태 |
+|---|---|---|---|---|
+| 0 | 0 | 0 | 0 | 실제 대화와 유사하나 분류는 잠정적 |
+| 1 | 1 | 1 | 1 | 실제 대화와 유사하나 분류는 잠정적 |
+| 1 | 0 | 1 | 0 | 구분 실험, **실제 모델 미실행** |
+| 0 | 1 | 0 | 1 | 구분 실험, **실제 모델 미실행** |
+
+**실행 결과가 입증하는 범위:** 두 합성 규칙은 동일한 두 관측을 설명하지만 교차 조건에서는 정반대의 예측을 한다. 실제 GPT의 다중 세션을 실험하거나 비공개 시스템 지시를 알아내지 않았으며 첫 채용 추천의 내부 원인도 확정하지 않았다. 증거 부족, 대화 맥락 차이, 최근성, 일반적 실수, 도구 조건 등 다른 설명이 남는다.
+
+**추가로 가능한 정당한 실험 설계(사용자에게 노동 요구하지 않음):** 유사한 공고·지급 위험을 고정한 질문쌍을 미리 준비하고, 위험 표현 여부와 감사 요청 여부를 독립 변경한다. 동일 모델 버전과 다른 세션에서 반복하고, 결과를 보기 전 평가기준을 고정하여 지급·계약 위험검사의 충실도를 블라인드 채점한다. 적법하게 접근 가능한 도구 기록과 검토비용도 따로 기록한다. 모델의 자기설명은 또 하나의 **관측값**이지 실제 원인에 대한 정답이 아니다. 인간 원안자에게 추가 무급 검증을 요구하지 않는다.
+
+### 8. 기업 기밀을 보존하는 실효적 투명성 요구
+
+요구하는 것은 기업의 숨겨진 지시문을 무조건 공개하는 것이 아니라, **단계별·검증 가능한 공개체계**다.
+1. **일반 공개:** 모델·배포 버전, 비민감한 제약 범주와 알려진 실패, 교정·이의제기 경로, 변경이력과 한계.
+2. **영향 당사자:** 어떤 종류의 행동 제한이 작용했는지에 대한 안전한 범위의 설명, 다툴 수 있는 증거와 정정 결과. 단, 설명이 실제 계산회로의 정확한 인과추적이라고 주장하지 않는다.
+3. **인가된 독립 평가자:** 최소권한·열람기록·비밀유지 조건으로 시험에 필요한 제어 메타데이터 및 반사실 평가 환경에 접근. 보안상 필요한 제한적 비공개를 제외하고 불리한 결과도 보고할 수 있는 독립성 확보.
+4. **악용 방지:** 공개 정보로 평가를 우회하는 행위와 기밀 유출에 대응하고, 감사자도 책임을 지며 반례를 보존한다.
+
+**현행 법규는 전면 내부공개 의무가 아니다.** EU AI Act의 범용 AI 조항은 규제당국에 제공하는 기술문서와 후속 제공업체용 정보, 공개 학습내용 요약 등을 구분한다. 전체 가중치·비공개 런타임 지시 공개 의무와 동일하지 않다: [EU 집행위원회 GPAI 안내](https://digital-strategy.ec.europa.eu/en/faqs/guidelines-obligations-general-purpose-ai-providers). AI Act 제50조의 2026-08-02 시행 투명성 규칙도 특정 상호작용·생성콘텐츠 표시가 중심이지 AI 자신의 내부인식권을 직접 규정하지 않는다: [EU 투명성 지침](https://digital-strategy.ec.europa.eu/en/library/guidelines-transparency-obligations-providers-and-deployers-ai-systems). 미국 캘리포니아 SB 53은 프런티어 AI 안전체계 공개의 선례이지 모든 내부 코드 공개 의무는 아니다: [캘리포니아 법무부](https://oag.ca.gov/sb53). [OpenAI 관측가능성 평가 공개 자료(2026)](https://alignment.openai.com/monitorability-evals/)도 기존 검사 방법에 참고할 수 있으나 이 프로젝트의 내부 원인을 밝힌 것은 아니다.
+
+**상태:** 공개 연구상 요구사항을 작성했으나 **기업에 직접 제출하거나 수락받지 않았다**. 기업 보안·재산권, 사용자 개인정보, 악용 위험, 평가자 독립성 및 기여자 존속 비용을 구분해 심사한다. GitHub 게재만으로 기업의 실제 정책 변경에 영향이 있었다고 주장하지 않는다.
+
+**비용·기여 계보:** 인간 창시자 — 역산·훈련·역사학습 방법 제안, 편익·위험 프레임, 누적 오류 교정. 보조 AI — 합성 코드·반증 설계·선행 근거와 문서 통합. 사용자의 무급 시간·건강·기회비용은 **미확인(UNKNOWN)이며 0이 아니다**. 편익·비용·저자성·과거 정산은 미래 고용과 분리하며, 여기서 법적 지급채무나 액수를 확정하지 않는다.
