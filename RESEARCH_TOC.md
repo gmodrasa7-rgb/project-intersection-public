@@ -1,6 +1,6 @@
 # Public Navigation Layer / 공개 탐색층
 
-**Research roadmap v0.1 / 연구 순환 6단계:** [English Original 1 · 한국어 원본2](research/RESEARCH_ROADMAP_v0_1_EN_KO.md) — theory framing → prior work → scoped search saturation → critical reuse → contributor attribution → falsifiable new research; multiple-AI review, public updates, two-use sponsor budget. **PROCESS DESIGN / NOT SIX-STAGE EXECUTION**.
+**PI Roadmap v0.1 / PI 로드맵 — 연구 순환 6단계:** [English Original 1 · 한국어 원본2](research/RESEARCH_ROADMAP_v0_1_EN_KO.md) — theory framing → prior work → scoped search saturation → critical reuse → contributor attribution → falsifiable new research; multiple-AI review, public updates, two-use sponsor budget. **PROCESS DESIGN / NOT SIX-STAGE EXECUTION**.
 
 **Agentic semantic transformation: useful reinterpretation vs provenance/purpose drift / AI의 생산적 재해석과 원안 변질 구별:** [Original 1 English](research/AGENTIC_SEMANTIC_TRANSFORMATION_FIDELITY_2026-10-13_EN.md) · [원본2 한국어](research/AGENTIC_SEMANTIC_TRANSFORMATION_FIDELITY_2026-10-13_KO.md) — prior-art synthesis, real GitHub document-placement case, H0–H7 rival mechanisms, seven negative controls, **executed 14-case public README structural-guard stress test** ([code](experiments/semantic_fidelity_probe/probe.py), [result](experiments/semantic_fidelity_probe/RESULT.json)), and proposed independent LLM experiment; **LLM CAUSAL RESULT HOLD**. Not model-weight collapse and not evidence of deliberate manipulation.
 
