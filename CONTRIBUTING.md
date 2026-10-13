@@ -1,6 +1,8 @@
 # Contributing to Project Intersection Public Review
 
 The highest-value contributions are independent checks, stronger prior art, counterexamples, reproduction failures, and evidence-boundary corrections.
+**Source, copyright, contributor and future-continuity respect:** [Original 1 English / 한국어 원본2](TECHNOLOGY_PROGRESS_CONTRIBUTOR_CONTINUITY_EN_KO.md). New or promoted research should identify upstream work, original author vs earliest originator, actual rights holder/license scope where verified, the contributor's actual delta, and evidence-bounded benefit/cost/compensation/exit/succession outcomes. Automated maintainers should reuse existing Git/source records; do not demand repeated personal proof, health details or uncompensated correction from contributors. / 출처·권리·기여·보상·이탈·후세의 기록은 기존 증거를 재사용하며 개인의 추가 무보수 노동을 강제하지 않는다.
+
 
 ## Preferred contribution types
 

@@ -6,6 +6,8 @@ Status: **PUBLIC GOVERNANCE / METHODOLOGY ARTIFACT**
 This document defines a role-reversible audit rule for systems, organizations, research programs, and AI-assisted workflows that learn from, benefit from, or are repeatedly corrected by a contributor.
 
 이 문서는 기여자의 연구·문제발견·반례·오류교정·검증노동으로부터 편익을 얻는 시스템·조직·연구·AI 보조 워크플로가 그 비용을 다시 같은 기여자에게 외부화하지 않는지 점검하기 위한 역할반전 감사 규칙이다.
+**Related technical-history and dual-survival tracking / 기술계보·양측 존속 추적:** [Original 1 English / 원본2 한국어](TECHNOLOGY_PROGRESS_CONTRIBUTOR_CONTINUITY_EN_KO.md) · [source/rights/benefit/cost/compensation/continuity data](knowledge/contributor-continuity-register-v1.json). The contributor's cost and the recipient's long-run fragility must be separately evidenced. / 기여자의 부담과 수혜자의 장기 취약성은 별도 증거로 확인한다.
+
 
 ---
 

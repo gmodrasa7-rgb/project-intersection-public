@@ -1,5 +1,8 @@
 # Public Navigation Layer / 공개 탐색층
 
+**Technology progress, contributor continuity and reciprocal sustainability / 기술 진보의 계보·기여자 존속·양측 지속가능성:** [Original 1 English / 한국어 원본2](TECHNOLOGY_PROGRESS_CONTRIBUTOR_CONTINUITY_EN_KO.md) · [25 upstream research links + snapshot inventory of 214 files / 선행연구 25건·기준 시점 파일 214개](knowledge/contributor-continuity-register-v1.json) · [validation script](tools/validate_contributor_continuity.py). **BASELINE INVENTORY, NOT A COMPLETE AUDIT / 전수검수 완료 아님.**
+
+
 **Prior-art DOI/URL candidate trace / 선행 출처 후보 행별 탐색:** [7 core files / 294 source candidates, unverified](knowledge/source-occurrence-pilot-2026-10-13.json). / 핵심문서 7개 DOI·외부 URL 294개 후보 자동 색인(권리 검수 완료 아님).
 **Prior-art originators, copyright, and Project adaptations / 선행연구 원안자·저작권·응용 계보:** [25 initial source mappings, Original 1 English and 원본2 Korean](PRIOR_ART_RIGHTS_AND_DERIVATION_EN_KO.md) · [211 document/code/data audit targets and evidence status](knowledge/prior-art-rights-register-2026-10-13.json). **PARTIAL — NOT A COMPLETED REPOSITORY RIGHTS AUDIT / 1차 등록, 전수검수 완료 아님.**
 
