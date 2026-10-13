@@ -68,7 +68,8 @@
       "code": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/experiments/e010/run.js",
       "test": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/experiments/e010/verify.js",
       "result": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/experiments/e010/RESULT.json",
-      "scope": "Discounted one-time extraction versus cooperation, independent action harm budget and infeasible simultaneous resource floors."
+      "scope": "Discounted one-time extraction versus cooperation, independent action harm budget and infeasible simultaneous resource floors.",
+      "public_experiment_id": "E010"
     },
     "agentic_semantic_change_dual_use": {
       "id": "PI-ASTF-2026-10-13",
@@ -100,6 +101,16 @@
       "independent_replication": false,
       "real_world_validation": false,
       "url": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/experiments/e009/RESULT.md"
+    },
+    {
+      "id": "E010",
+      "status": "self_run_exploratory_synthetic_not_preregistered_not_empirical",
+      "independent_replication": false,
+      "real_world_validation": false,
+      "url": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/experiments/e010/README_KO.md",
+      "result_url": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/experiments/e010/RESULT.json",
+      "legacy_id_collision": "The unrelated safety-inspection E010 preregistration draft #20 is archived, construct-mismatched, unexecuted and not part of this model.",
+      "legacy_draft_url": "https://github.com/gmodrasa7-rgb/project-intersection-public/pull/20"
     }
   ],
   "provenance": {
