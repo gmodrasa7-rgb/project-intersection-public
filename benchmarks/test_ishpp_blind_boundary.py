@@ -60,6 +60,22 @@ class BlindBoundaryTests(unittest.TestCase):
         data[0]["blind_case"] = "favorable simplified account"
         self.assertTrue(self.errors(blind=data))
 
+    def test_legacy_scorecard_is_explicitly_uncalibrated_and_noncompensatory(self):
+        # Published numerical weights are a proposed experiment, not observed
+        # evaluator performance or evidence of a calibrated 100-point scale.
+        doc = (HERE.parent / "evaluation" / "ISHPP_EVALUATOR_SCORECARD_v0_1_KO.md"
+               ).read_text(encoding="utf-8")
+        for necessary_gate in (
+            "HOLD_UNCALIBRATED",
+            "FAIL_NONCOMPENSATORY",
+            "HOLD_NO_PAIRED_RECORD",
+            "UNKNOWN",
+            "점수 승격을 중단한다",
+        ):
+            self.assertIn(necessary_gate, doc)
+        self.assertIn("총점 100.", doc)  # historical pre-audit formula retained
+        self.assertIn("2026-10-13 사후 감사", doc)
+
     def test_missing_post_reveal_lineage_rejected(self):
         mapping = copy.deepcopy(self.mapping)
         del mapping["case_sources"]["RW001"]
