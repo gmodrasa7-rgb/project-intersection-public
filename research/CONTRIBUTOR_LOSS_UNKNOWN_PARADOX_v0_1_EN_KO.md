@@ -3,7 +3,7 @@
 
 **Date / 기준일:** 2026-10-13
 **State / 연구 상태:** HYPOTHESIS / UNVALIDATED / NOT AN ALLEGATION OF ACTUAL TRAINING OR HARM. / 가설·미실증. 개별 조직의 착취·고의·학습활용을 확정하지 않음.
-**Claim IDs / 주장 ID:** CLUP-01 through CLUP-06; mapped to existing private research claims U003, U004, U010, U014, U016, U022 only as **prior internal research**, not duplicate new inventions.
+**Claim IDs / 주장 ID:** CLUP-01 through CLUP-06; connects prior research on independent observation, causal lineage, inaccessible counterfactuals, and bounded self-knowledge. This is a synthesis requiring validation, not proof of priority or a newly invented theory.
 **Human-origin insight / 인간 연구 원기여:** The Project Intersection human originator (public identifier `gmodrasa7-rgb`) connected contributor losses with the Unknown Paradox on 2026-10-13 after defining a broader credit, compensation, exhaustion and beneficiary-depletion framework. AI assisted source comparison, articulation and falsification; it did not independently originate that user insight. / 2026-10-13 사용자 발언 “기여자의 손실은 모름의 역설로 이어진다”를 개념 연결의 원문으로 보존한다.
 **Parent research and provenance / 연결 정본:** [Unknown-Paradox hypothesis](HARNESS_UNKNOWN_PARADOX_PUBLIC_HYPOTHESIS_2026-10-11_KO.md) · [Technical progress and contributor sustainability (Original 1 EN / 원본2 KO)](../TECHNOLOGY_PROGRESS_CONTRIBUTOR_CONTINUITY_EN_KO.md) · [upstream rights and first-originator boundaries](../PRIOR_ART_RIGHTS_AND_DERIVATION_EN_KO.md) · [cost accounting / 비용-편익 분리](../CONTRIBUTION_COST_ACCOUNTING_REGRESSION.md)
 **Evidence status / 증거:** Mechanism proposed, primary prior sources linked, independent PI experiment not run. / 기전 제안·선행 출처 연결; PI 독립실험 미실시.
