@@ -11,6 +11,14 @@
 
 ## Original 1 — English
 
+### Public communication sequence — human needs first
+
+**Start with lives people are living now.** Public introductions prioritize food and housing security, healthcare and preventable disease, disability access and inclusion, caregiving, healthy years of life, livelihood, and meaningful freedom to consent, refuse, leave and recover. No person's dignity or claim to protection depends on ability, health, economic output or predicted longevity. Research on intelligent entities must not be advertised as a substitute for these needs or as grounds for making people expendable.
+
+**Present in a graduated sequence:** (1) present-day needs, affected-party costs and measurable improvements; (2) evidence-backed mechanisms for reducing exploitation, concentrated evaluation power, unsafe automation and barriers to redress; (3) clearly labeled, increasingly speculative long-horizon questions only with explicit uncertainty, relevant evidence, and room for informed disagreement. This ordering governs **public emphasis, not the right to investigate**: safety-critical future scenarios may require research before deployment, while present-day credit, audit, transparency and remedy cannot be deferred.
+
+Communication must not frame disagreement as ignorance or immaturity. Religious, cultural, disability-rights, technical and AI-critical perspectives may raise legitimate competing values and risks. Nor should a hypothesis be presented as established truth simply because its eventual implications could be important. Retain the unchanged research record, sources, counterevidence and falsification paths; do not conceal safety-relevant findings. This distinction is consistent with the [National Academies' evidence review on science communication](https://www.nationalacademies.org/read/23674/chapter/2), which rejects a simplistic information-deficit model.
+
 ### The opening thought experiment
 
 **If a developer could build a system that eventually exceeds the developer's own understanding, could the developer keep that system operating within rules they understand? If so, for how long? Under which technical, resource and operational conditions would those limits remain effective, and what could cause them to fail?**
@@ -125,6 +133,14 @@ The public funder brief describes a proposed **USD 5,000 / 30-day bridge**, not 
 ---
 
 ## 원본2 — 한국어
+
+### 공개 설명 순서 — 현재 인간의 삶을 먼저
+
+**대외 설명은 지금 살아가는 사람의 조건에서 출발한다.** 의식주 안정, 의료와 예방 가능한 질병, 장애 접근성과 포용, 돌봄, 건강하게 살 수 있는 시간, 생계, 동의·거절·이탈·복구의 실질적 자유를 우선한다. 인간의 존엄과 보호 필요성은 능력·건강·경제적 생산성·예상 수명으로 결정되지 않는다. 지능체 연구를 이런 현실적 필요의 대체물이나 누군가를 소모해도 된다는 근거로 설명하지 않는다.
+
+**대외 서술은 세 층으로 전개한다.** (1) 현재의 인간 생활문제와 당사자가 부담한 비용 및 측정 가능한 개선, (2) 착취·평가권 독점·불안전한 자동화·피해구제 장애를 줄이는 근거 기반의 장치, (3) 근거 수준·불확실성·반례를 밝힌 장기 미래 가설과 충분한 이견 제기 기회. 이는 **공개 강조 순서이지 연구 금지 순서가 아니다.** 안전에 중요한 미래 위험은 선행 연구할 수 있지만, 현재의 기여 인정·감사·투명성·정산과 구제는 미래로 미룰 수 없다.
+
+반대 의견을 무지·미성숙으로 해석하지 않는다. 종교·문화·장애인 권리·기술적 현실주의·AI 비판 등에서 서로 다른 정당한 가치와 위험 판단이 나올 수 있다. 미래 영향이 크다고 가설을 입증된 진실로 승격하지 않는다. 원연구·출처·반례·반증경로는 보존하며 안전상 중요한 사실을 은폐하지 않는다. 이는 과학 소통의 단순한 '지식 부족' 모델을 경계하는 [미국 국립과학아카데미의 선행연구 종합](https://www.nationalacademies.org/read/23674/chapter/2)과 부합한다.
 
 ### 출발 사고실험
 
