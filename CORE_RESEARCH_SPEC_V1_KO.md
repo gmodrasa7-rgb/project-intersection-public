@@ -61,6 +61,8 @@ S_i(t) = [
 
 직접 관측이 불가능하면 proxy와 construct를 분리한다.
 
+**편익·비용 자료형 검증:** `B_i(t)`가 음수를 허용하는 **순편익**이면 `B_i/ΣB_j`는 점유율이 아니다. `ΣB_j=0`이 가능하고 음수 또는 100% 초과 값을 만들기 때문이다. **[수렴 역추적 형식명세 §4](CONVERGENCE_TRACE_FORMALISM_KO.md#4-편익집중과-비용전가)**의 양의 편익/손실 분할과 분모>0 조건을 적용한다. `C_i`는 측정된 비음수 부담비용으로 정의하고, 비용 미관측과 비용 0을 구분한다. 음의 순편익을 0으로 지우지 않으며, 계상하지 못한 부담을 성과로 처리하지 않는다.
+
 `score != construct`
 
 ---
@@ -234,14 +236,16 @@ H↑
 → H↑
 ```
 
-따라서 contradiction 감소를 자동으로 성과개선으로 해석하지 않는다.
+따라서 contradiction 감소를 자동으로 성과개선으로 해석하지 않는다. **다음은 통계적으로 식별한 가산 분해식이 아니라 경쟁 원인을 나타내는 함수 의존성**이다. 각 원인은 상호작용할 수 있으며 비교대상·관측가능성 통제 없이 고유 효과를 계산할 수 없다.
 
 ```
-ObservedAgreement =
-  TrueImprovement
-+ ComparatorLossEffect
-+ MeasurementNarrowingEffect
-+ SelectionEffect
+ObservedAgreement = f(
+  RealErrorReduction,
+  ComparatorLoss,
+  MeasurementNarrowing,
+  Selection,
+  InteractionAndUnobservedFactors
+)
 ```
 
 ---
