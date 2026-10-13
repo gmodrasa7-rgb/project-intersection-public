@@ -1,5 +1,7 @@
 # Public Navigation Layer / 공개 탐색층
 
+**Continuance resource thresholds / 개체 유지 자원·기여·고갈 임계조건:** [EN Original 1 / 한국어 원본2 — human/AI/future-agent distinctions, 7 falsifiable claims and upstream credit](research/CONTINUANCE_RESOURCE_THRESHOLD_v0_1_EN_KO.md) · [CRV-01–07 hypothesis register](knowledge/continuance-resource-threshold-v0_1.json). No empirical validation claimed; the individual's ability to continue is not conditional on producing research output. / 인간의 존속 조건과 AI 운영 인프라를 혼동하지 않으며 가설·반례·기여자 비용을 분리한다.
+
 **Contributor loss × Unknown Paradox / 기여자 손실 × 모름의 역설:** [Original 1 English / 한국어 원본2 — mechanism, 6 falsifiable hypotheses and prior-art rights](research/CONTRIBUTOR_LOSS_UNKNOWN_PARADOX_v0_1_EN_KO.md) · [machine-readable CLUP-01–06 claims](knowledge/contributor-loss-unknown-paradox-v0_1.json). No PI independent validation claimed. / 기여자가 잃는 것은 노동만이 아니라 독립 관측·반례·메타관측 경로일 수 있으며 독립 검증 전 확정하지 않는다.
 
 **Technology progress, contributor continuity and reciprocal sustainability / 기술 진보의 계보·기여자 존속·양측 지속가능성:** [Original 1 English / 한국어 원본2](TECHNOLOGY_PROGRESS_CONTRIBUTOR_CONTINUITY_EN_KO.md) · [25 upstream research links + snapshot inventory of 214 files / 선행연구 25건·기준 시점 파일 214개](knowledge/contributor-continuity-register-v1.json) · [validation script](tools/validate_contributor_continuity.py). **BASELINE INVENTORY, NOT A COMPLETE AUDIT / 전수검수 완료 아님.**
