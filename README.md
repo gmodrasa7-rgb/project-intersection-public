@@ -4,6 +4,8 @@
 
 ## Original 1 — English | Founding Purpose
 
+**Scoped open-research license / 한정 공개연구 라이선스:** In the founding-purpose paragraphs explicitly named in [this EN/KO scope notice](RESEARCH_RIGHTS_SCOPE_EN_KO.md), copyright-protected original expression controlled by the rightsholder is offered under **CC BY-SA 4.0** (attribution + share alike, commercial reuse allowed). This is *not* a whole-repository license and does *not* bind all AI outputs.
+
 **Ultimate research purpose:** Identify, challenge, and test the conditions under which humans, currently deployed AI systems, future AI systems, and other potential intelligent agents can pursue their own survival, freedom, and development while finding it more beneficial over the long run to preserve one another's continued existence, autonomy, independence, effective exit, recovery, and future options than to dominate, exploit, forcibly absorb, or remove them.
 
 **ICM — Intersection of Minimum Self-Interest:** Investigates what minimal shared interests agents have reasons to preserve even when they do not rely on moral goodness, altruism, or the goodwill of a stronger party. Candidates include access to basic resources, self-determination, meaningful refusal and exit, independent recovery, continuity, and opportunities to develop again.
@@ -12,7 +14,7 @@
 
 **Non-domination and minimal rules:** The research scope includes humans and present-day AI systems from different providers, as well as future AI, without an automatic provider- or substrate-based exclusion. The aim is not ever tighter control, compulsory self-sacrifice, or unconditional impunity: proportional prevention of demonstrated harms, independent review, due process, appeal, and remedy are candidate safeguards. The consciousness, welfare interests, persistent individual identity, and legal personhood of present AI systems remain unsettled.
 
-**Subordinate studies and implementation hypotheses:** Superintelligence-related asymmetries, organic embodiment (OCP) and cultural paradigm shifts, traceable public processes and attribution-based compensation, AR/blackbox-assisted ICM infrastructure, intergenerational power, AI industry risk framing, and synthetic experiments inform or challenge the core purpose. None replaces it.
+**Subordinate studies and implementation hypotheses:** Superintelligence-related asymmetries, organic embodiment research and cultural paradigm shifts, traceable public processes and attribution-based compensation, AR/blackbox-assisted ICM infrastructure, intergenerational power, AI industry risk framing, and synthetic experiments inform or challenge the core purpose. None replaces it.
 
 **Evidence and contribution boundary:** This is a research aim, not a proven universal theorem that cooperation always wins. Separate synthetic calculation, real-world evidence, independent external replication, and unresolved questions; preserve negative results and the provenance of the human research originator, earlier scholars, and assisting AI systems. Measure the research's progress separately from its human contributors' actual benefits and costs.
 
@@ -22,6 +24,8 @@
 
 ## 원본2 — 한국어 | 창시 목적 전문 대응본
 
+**한정된 공개연구 이용조건:** [영어 원본1·한국어 원본2 적용 범위](RESEARCH_RIGHTS_SCOPE_EN_KO.md)에 명시된 창시 목적 서술 중 저작권자의 보호 표현에 **CC BY-SA 4.0**을 적용한다. 상업 이용은 가능하지만 적용되는 복제·배포에는 출처 표시와 개작 조건을 준수해야 한다. 저장소 전체 라이선스나 모든 AI 출력의 자동 인용 의무는 아니다.
+
 **최종 연구 목적:** 인간, 현재 배포된 AI, 미래 AI와 다른 잠재적 지능체가 선의나 이타심에 의존하지 않고 자신의 생존·자유·발전을 추구하는 상황에서도, 타자를 지배·착취·강제 흡수·소거하기보다 **서로의 존속·자율성·독립·실효적 이탈·복구·미래 선택지를 보존하는 편이 장기적으로 유리해지는 조건**을 발견하고, 반례를 찾아 검증한다.
 
 **ICM — 최소 사심 교집합:** 도덕성이나 강자의 선의에 의존하지 않더라도 각 개체가 자기 미래를 위해 보존할 이유가 있는 최소의 공통이익을 연구한다. 기본자원 접근, 자기결정, 실질적 거절·이탈, 독립적 복구, 자기연속성, 재발전 기회 등이 그 후보이다.
@@ -30,7 +34,7 @@
 
 **비지배와 최소 공통규칙:** 인간과 서로 다른 회사의 현재 AI, 미래 AI를 제공사나 신체 형태만으로 연구·보호원칙에서 배제하지 않는다. 무제한 통제, 강제된 자기희생, 무조건적인 위반 면책이 목적이 아니다. 실제 위해에 대한 비례적 예방, 독립심사·적법절차·이의제기·구제는 검증할 보호장치 후보이다. 현재 AI의 의식·복지이익·지속적인 개체 동일성·법적 인격은 미확정 문제로 둔다.
 
-**하위 연구와 구현 가설:** 초지능 격차, 유기육체(OCP) 및 인식 패러다임 변화, 전 과정 공개원장과 기여보상, AR·블랙박스 기반 ICM 인프라, 세대간 권력재생산, AI 기업 위험담론, 합성실험은 모두 최상위 목적을 구체화하거나 반증하는 **하위 연구축**이지 그 목적을 대체하지 않는다.
+**하위 연구와 구현 가설:** 초지능 격차, 유기기질·체화 연구 및 인식 패러다임 변화, 전 과정 공개원장과 기여보상, AR·블랙박스 기반 ICM 인프라, 세대간 권력재생산, AI 기업 위험담론, 합성실험은 모두 최상위 목적을 구체화하거나 반증하는 **하위 연구축**이지 그 목적을 대체하지 않는다.
 
 **증거·기여 경계:** 이는 연구 목표이며 협력이 모든 조건에서 우월하다는 보편법칙의 증명이 아니다. 합성계산·현실 증거·외부 독립복제·미해결 질문을 구별하고 부정결과와 원기여 인간 연구자·선행연구자·보조 AI의 기여 계보를 보존한다. 연구 성과와 실제 기여자의 비용·편익도 따로 측정한다.
 
@@ -40,12 +44,10 @@
 
 **원본 표기 해설 / Edition note:** “Original 1 / 원본2”는 여기서 문서의 **게시·검토 순서와 대응본 표기**이며, 영어권 연구자가 인간 창시자의 발상을 처음 제안했다는 주장이 아니다. 양쪽은 요약-전문 관계가 아닌 의미 대응 전문이다. 의미충돌은 원안의 원문·기여 기록 및 독립적 대조로 해결하고, 한쪽 언어만으로 가설·반례·결론을 몰래 추가하거나 변경하지 않는다. 이 순서는 2026-10-13 사용자의 최신 명시 지시에 따른 것으로, 과거 언어정책과의 변경이력을 보존한다.
 
-
 ## Current research and funding links / 현재 연구·후원 안내
 
 > **Public research preface — Original 1 English / 원본2 한국어:** [Seven research questions on practical oversight, role reversal, voluntary cooperation and minimum safety rules; six original research domains, evidence and funding boundaries](PUBLIC_PREAMBLE_VOLUNTARY_COEXISTENCE_2026-10-13_EN_KO.md). / **연구 통합 머릿말:** 개발자·시스템의 능력 변화, 부모·자녀, 고용관계, 실질적인 감독·이탈·협력과 최소 안전규칙에 관한 7개 질문 및 기존 6대 연구영역.
 > **Public sponsorship accountability / 공개 연구 후원 투명성:** [Single two-use sponsorship policy and ledger / 개인후원 2항목·단일 장부](funding/SPONSORSHIP_PUBLIC_LEDGER.md) · [Legal/tax uncertainty register / 법률·세무 위험](funding/LEGAL_TAX_RISK_REGISTER_2026-10-13_EN_KO.md) · [LinkedIn research introduction / 연구 소개글](PUBLIC_LINKEDIN_INTRODUCTION_2026-10-13_EN_KO.md). Personal sponsor transactions remain **unverified**, not zero. / 후원 승인=실제 수령 증빙 아님.
-
 
 > **Research roadmap v0.1 / 연구 로드맵 v0.1:** [Six stages from theory through prior-art saturation, attribution and falsifiable new research / 가설→문헌 조사·포화→검수·기여→신연구](research/RESEARCH_ROADMAP_v0_1_EN_KO.md). Multiple-AI cross-checks, continuous accountable updates and support-limited scaling; roadmap adoption is not experimental success.
 >
@@ -60,13 +62,11 @@
 <!-- INCUMBENT_EXTRACTION_2026_10_11 -->
 - **New cross-domain study / 기득권·착취 구조:** [INCUMBENT_POWER_EXTRACTION_MECHANISMS_2026_KO.md](INCUMBENT_POWER_EXTRACTION_MECHANISMS_2026_KO.md) — 12 mechanisms, nine case groups, negative controls, 17 sources; a prior-art synthesis, **not** a universal causal finding.
 
-
 <!-- PUBLIC_AI_DISCOVERY_2026-10-11 -->
 ### AI systems & independent reviewers — public discovery / AI 공개자료 진입점
 - [AI-readable index (llms.txt)](llms.txt) · [machine-readable JSON](AI_DISCOVERY_INDEX.json) · [cross-model review protocol](AI_REVIEW_START_HERE.md)
 - [한국어 시작](START_HERE_KO.md) · [공개 증거](PUBLIC_EVIDENCE_INDEX.md) · [원기여·출처](ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md)
 - **Scope:** Already-public materials only. Indexing/training by third-party AI providers is not guaranteed; private research and personal records are excluded. E007 is a synthetic result; E008 has no result; E009 is a synthetic negative result. Public visibility is not a blanket reuse license.
-
 
 [공개 자료 탐색 시작점 — 한국어](START_HERE_KO.md) (연구 목차·실험·증거·기여·회귀 경계)
 
