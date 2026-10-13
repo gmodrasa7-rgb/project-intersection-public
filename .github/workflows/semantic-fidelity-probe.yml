@@ -1,0 +1,30 @@
+name: Semantic-fidelity bounded adversarial probe
+
+on:
+  pull_request:
+    paths:
+      - "README.md"
+      - "tools/check_readme_l0.py"
+      - "experiments/semantic_fidelity_probe/**"
+      - "research/AGENTIC_SEMANTIC_TRANSFORMATION_FIDELITY_2026-10-13_*.md"
+      - ".github/workflows/semantic-fidelity-probe.yml"
+  push:
+    branches: [main]
+    paths:
+      - "README.md"
+      - "tools/check_readme_l0.py"
+      - "experiments/semantic_fidelity_probe/**"
+      - "research/AGENTIC_SEMANTIC_TRANSFORMATION_FIDELITY_2026-10-13_*.md"
+      - ".github/workflows/semantic-fidelity-probe.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  controlled-public-document-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Execute deterministic real-README adversarial and legitimacy controls
+        run: python experiments/semantic_fidelity_probe/probe.py

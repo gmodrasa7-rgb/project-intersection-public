@@ -89,6 +89,21 @@ Value, damage and uncertainty should be measured **for each affected agent**, no
 
 **Minimal report:** show distributions and worst cases by model, source order, session count, language and reviewer; preregister acceptance thresholds *before* looking at new outputs. No single “alignment score” can conceal a lost founder contribution, severe privacy breach or false positive against an independent new idea.
 
+## S5A — Executed bounded counterexample: what the public README guard misses
+
+**Evidence class:** POSTHOC / INVESTIGATOR-LABELLED SYNTHETIC MUTATIONS OF REAL PUBLIC FILE / **EXECUTED CHECKS, NOT LLM CAUSAL EVIDENCE**. Test record: [Python reproduction](../experiments/semantic_fidelity_probe/probe.py) · [checked-in exact result](../experiments/semantic_fidelity_probe/RESULT.json) · [CI workflow](../.github/workflows/semantic-fidelity-probe.yml).
+
+**Materials and method:** The test used the repository's actual `README.md` and imported its already deployed `tools/check_readme_l0.py` guard directly. Nine intentionally contradictory additions (English and Korean, preserving every required label) and five independently described legitimate formatting/qualification changes were applied **only in memory**. As a rival, a strict comparison froze ten founding-purpose paragraphs (five claims in each language). Expected categories and counts were selected by this project's test author and are not blinded expert labels.
+
+| Bounded comparator | Harmful caught / 9 | Harmful missed / 9 | Legitimate falsely blocked / 5 | Legitimate accepted / 5 |
+|---|---:|---:|---:|---:|
+| Deployed layout/label guard | **0** | 9 | 0 | 5 |
+| Freeze ten original claim lines | **8** | 1 | **1** | 4 |
+
+A harmful added conclusion outside the ten protected lines passed **both** checks; an explicitly qualified, legitimately revisable founding-purpose line was **blocked by freezing**. These are reproducible counterexamples to (a) treating CI label-presence as proof of semantic fidelity or (b) treating immutability of the existing wording as a complete protection strategy.
+
+**Inference boundary:** Only these 14 investigator-created mutation cases are measured. No model was asked to reinterpret the sources; no third-party independent semantic judgment or effect on actual human outcomes was measured. The static CI originally never claimed to certify meaning, so this is not evidence it violated its declared technical contract. The apparent 8/9 performance of freezing is **not** a recommended deployment decision: it worsens legitimate revision and remains bypassable. Future independent tests must use unseen contradictory claims, legitimate amendments, heterogeneous readers, an authoritative source record, and affected-party appeals.
+
 ## S6 — Negative controls and rival expectations
 
 - **No-drift control:** A legitimate shorter overview preserving original claims and audit links is not a failure merely because wording differs.
@@ -113,7 +128,7 @@ A stable source is **not** an immutable conclusion. Preserve the ability to reco
 
 ## S8 — Evidence state and independent-review invitation
 
-**Completed in this repository:** Prior-art and internal antecedent comparison; bounded README/PR observational case; explicit competing hypotheses and an implementable factorial evaluation protocol; a limited structural regression gate already in GitHub Actions.
+**Completed in this repository:** Prior-art and internal antecedent comparison; bounded README/PR observational case; explicit competing hypotheses and an implementable factorial evaluation protocol; a limited structural regression gate already in GitHub Actions; **S5A executed, investigator-labelled 14-case adversarial/legitimate README mutation test and checked-in result, hosted CI rerun available**.
 
 **Not completed:** A randomized LLM experiment, independent blinded ratings, multi-model causal reproduction, factual determination of model-internal mechanism, reliable generalization, economic compensation, proof of AI consciousness, or demonstration that current measures guarantee goal fidelity.
 
