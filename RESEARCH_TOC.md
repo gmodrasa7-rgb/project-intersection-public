@@ -95,12 +95,13 @@ These labels describe different dimensions and are not automatically interchange
 > It does **not** mean that every claim is true, externally replicated, or empirically validated.
 >
 > Project Intersection public materials use  
-> **Original 1: English canonical text** followed by  
-> **Original 2: Korean mirror text**.
+> **Original 1: English complete canonical text**, followed by  
+> **Original 2: Korean complete canonical text (한글 원본2)**.
 >
-> The Korean mirror preserves  
-> the meaning, structure, claim status, and version  
-> of the English canonical text as closely as possible.
+> Both are **equal-authority, independently readable full texts**.  
+> The Korean Original 2 is not a subordinate mirror, abbreviated translation,  
+> or merely an optional appendix. Scope, evidence status, sources,  
+> counterexamples, originators, rights and version must match in both.
 >
 > New claims should not exist  
 > in only one language version.
@@ -1043,6 +1044,8 @@ and traceable.**
 
 ## 12. Working glossary
 
+**Original 1 — English complete glossary (equal canonical standing with Korean Original 2).**
+
 This is a **navigation summary**, not a replacement for [the canonical ICM/IndCM bilingual preamble](PUBLIC_PREAMBLE_VOLUNTARY_COEXISTENCE_2026-10-13_EN_KO.md), [power terminology standard](TERMINOLOGY_POWER_ASYMMETRY_GOAL_INCONGRUENCE_KO.md), [status policy](RESEARCH_STATUS_POLICY.md), [roadmap](research/RESEARCH_ROADMAP_v0_2_EN_KO.md) or per-source original evidence. Each entry summarizes a **concept, working hypothesis, prior-art term, operational feature or historical label**; the word “theory” does not establish scientific validity. An acronym lacking verified expansion is intentionally not expanded.
 
 **Active display names and machine keys:** **Project Intersection Research Memory / 교집합 연구기억** is the descriptive public name of the software, while **PIA / PI-ANCHOR** remain historical/API identifiers. **ICM** (minimum self-interest intersection) and **IndCM** (independent continuance margin) are different concepts. PIA software remains **v0.1**, separate from the PI research roadmap. English Original 1 is publication order: most original research work arose in Korean.
@@ -1291,7 +1294,7 @@ Research questions awaiting stronger evidence, not established new theories.
 
 # Project Intersection — 연구 내용 목차
 
-## 원문2 — 한국어 대응본
+## 원본2 — 한국어 정본
 
 > **범위**
 >
@@ -2505,6 +2508,8 @@ NIST CFTT supplies an independent conformance framework for deleted-file recover
 ---
 
 ## 12. 통합 용어집
+
+**원본2 — 한글 전문 정본 (영어 원본1과 동등한 독립 열람·검토·수정 대상).**
 
 이 표는 **목차용 짧은 설명**이다. 상세 정의는 [ICM/IndCM 공식 머릿말](PUBLIC_PREAMBLE_VOLUNTARY_COEXISTENCE_2026-10-13_EN_KO.md), [권력·목표·정보비대칭 용어 정본](TERMINOLOGY_POWER_ASYMMETRY_GOAL_INCONGRUENCE_KO.md), [연구 상태 규정](RESEARCH_STATUS_POLICY.md), [연구 로드맵](research/RESEARCH_ROADMAP_v0_2_EN_KO.md), 각 원문을 우선한다. 연구개념·미검증 가설·외부 선행기술·구현 기능·역사적 약어를 혼동하지 않는다. **표의 수록은 과학적 입증이나 독창성 승인이 아니다.**
 
