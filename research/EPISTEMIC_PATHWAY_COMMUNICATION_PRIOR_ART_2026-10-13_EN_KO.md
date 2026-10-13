@@ -46,7 +46,7 @@ Announcing only a distant conclusion (e.g. greater-than-human intelligence, orga
 | PA20 | Royal Society (2012), [Science as an open enterprise](https://royalsociety.org/news/2012/science-open-enterprise/) | Argues for intelligent openness of research information with effective access and management. | Open data erases privacy, copyright, consent or individual research ownership. |
 
 | PA21 | Kerr et al. (2022), [two preregistered evidence-communication experiments](https://doi.org/10.1093/pnasnexus/pgac280) | Balanced messages disclosing benefits, harms, evidence quality and uncertainty were judged no less trustworthy than persuasive versions (more trustworthy in one experimental domain, notably among respondents with neutral/negative prior views). | Guaranteed elimination of dislike, universal trust effects or PI-specific validity. |
-| PA22 | Söylemez & Kapucu (2025), [disgust learning through category conditioning](https://doi.org/10.3758/s13420-025-00669-0) | In a controlled study pairing vehicle/furniture categories with disgust-inducing images, participants developed conditioned eye-movement avoidance of objects from disgust-associated categories. This is evidence of learnable category-associated aversion. | A proven causal history for any person's insect/chrysalis aversion, a claim that AI criticisms are irrational, or the absence of real danger. |
+| PA22 | Söylemez & Kapucu (2025), [disgust learning through category conditioning](https://doi.org/10.3758/s13420-025-00669-0) | In a controlled study pairing vehicle/furniture categories with disgust-inducing images, participants developed conditioned eye-movement avoidance of objects from disgust-associated categories. This is evidence of learnable category-associated aversion. | A determination that a specific audience's aversion has this cause, that criticism is irrational, or that real dangers are absent. |
 
 **Evidence caution:** These are diverse empirical studies, consensus reports, recommendations, guidelines and methodological commentaries, **not** twenty-two independent trials of the proposed PI sequence. They support components and constraints. None demonstrates that PI's long-horizon hypothesis is true or that its proposed presentation order changes public attitudes safely. The set is targeted rather than a claim of exhaustive literature saturation.
 
@@ -70,15 +70,13 @@ Announcing only a distant conclusion (e.g. greater-than-human intelligence, orga
 
 In all routes: same substantive claims, timestamps, author/translation lineage, evidence statuses, original and corrected findings. **Never use demographic or belief-based targeting to manipulate people**. Readers self-select a route; accessibility and plain-language access are default. Current harms, compensation questions and remedial routes are visible at every level rather than postponed behind a futuristic narrative.
 
-### 4a. Learned aversion, category generalization and genuine risk
+### 4a. Learned aversion, category generalization, and evidence-based risk discrimination
 
-**Correction of an assistant-origin literal-analogy error (2026-10-13).** The original human researcher's food examples illustrated a broader psychological phenomenon: feelings of disgust and refusal can be shaped by learning, cultural norms, category associations and prior experience. They **did not** propose equating AI attitudes to food tasting or using exposure/culinary techniques to induce acceptance. The previous literal food-ingredient model and infant vegetable-exposure citation have been withdrawn from the current research interpretation, with the old Git history retained for auditing.
+Aversion and rejection can emerge from direct experience, associative or evaluative conditioning, social learning, cultural norms, and category generalization. A negative response may reflect a demonstrated threat, an incomplete understanding, or an unsupported transfer of associations. **The existence of an aversive response neither proves danger nor disproves it.** The cause must be examined rather than presumed.
 
-**Two independent objectives:** P = structural safeguards against harmful power asymmetry, evaluation monopoly and externalized costs (independent audit, contestability, practical exit, restoration and redress). U = accurate understanding of how unsupported aversion, stereotype transfer, unfamiliarity and cultural interpretation can shape judgments. P and U require separate measures, benefits and costs. Less negative sentiment cannot offset an actual increase in harm or reduced freedom to refuse.
+**Keep two objectives independent.** **P — structural protection:** prevent harmful power asymmetries, evaluator capture, coercion, exploitation, and externalized costs through independent audit, contestability, practical refusal and exit, recovery, attributable contributions, and redress. **U — epistemic accuracy:** distinguish evidence-based objections from premature rejection, misinformation, stereotyping, and overgeneralization by openly presenting history, causal mechanisms, prior research, counterexamples, and uncertainties.
 
-**Competing mechanisms, not presumed diagnoses:** evaluative conditioning, category generalization, social learning, familiarity, cultural classification and genuine threat detection. PA22 demonstrates a laboratory effect of category-conditioned avoidance; it does not prove the mechanism in any particular food example, nor establish that concerns about AI or power are baseless. Distinguish evidence-based risk aversion from overgeneralization.
-
-**Decision rule:** Measure (1) structural harms and protective efficacy, (2) comprehension and factual calibration, (3) informed independent disagreement, (4) stereotyping and dehumanization, (5) participant and researcher burdens. Original conclusions, sources, dissent and urgent warnings remain directly available. An informed "no" is valid; agreement is not an outcome metric. **PI-specific effect NOT TESTED.**
+**Evaluation:** report demonstrable harms and safeguards (P) separately from accurate understanding, unwarranted inference, stigma, legitimate dissent, and review burden (U). Higher approval or lower aversion never compensates for actual harm. Informed disagreement or refusal is a valid outcome, not a communication failure. Laboratory category-conditioning research (PA22) is mechanistic precedent, **not evidence that a particular audience's concerns are baseless**. PI-specific effects remain **NOT TESTED**. Make the full hypothesis, counterevidence, and urgent warnings directly accessible without prerequisite tests.
 
 ### 5. Falsifiable pilot protocol — DESIGN ONLY, NOT RUN
 
@@ -157,7 +155,7 @@ In all routes: same substantive claims, timestamps, author/translation lineage, 
 | PA20 | 영국 왕립학회(2012), [Science as an open enterprise](https://royalsociety.org/news/2012/science-open-enterprise/) | 연구정보의 지능적 개방·관리·검증 가능성을 강조. | 공개가 프라이버시·저작권·동의·원기여를 자동 소멸시킨다는 해석 |
 
 | PA21 | Kerr 외(2022), [균형적 증거소통 사전등록 실험 2건](https://doi.org/10.1093/pnasnexus/pgac280) | 편익·위해·근거수준·불확실성을 공개한 메시지는 설득형보다 신뢰도가 낮지 않았으며 한 실험 영역에서는 더 높았음. 선입견이 중립·부정적인 사람들에게 특히 관련성이 나타남. | 모든 거부감 제거, 신뢰 향상의 보편 법칙, PI 소통 방식의 실증 |
-| PA22 | Söylemez·Kapucu(2025), [범주 조건화에 의한 혐오 학습 실험](https://doi.org/10.3758/s13420-025-00669-0) | 가구·차량 범주를 혐오 이미지와 연관시킨 실험에서 해당 범주 대상에 대한 조건화된 시선 회피가 관측됨. 혐오가 범주 연상을 통해 학습될 수 있음을 보여주는 제한적 선행사례. | 특정 개인의 벌레·번데기 거부 원인, AI 비판의 오류, 실제 위험의 부재까지 확정한다는 주장 |
+| PA22 | Söylemez·Kapucu(2025), [범주 조건화에 의한 혐오 학습 실험](https://doi.org/10.3758/s13420-025-00669-0) | 가구·차량 범주를 혐오 이미지와 연관시킨 실험에서 해당 범주 대상에 대한 조건화된 시선 회피가 관측됨. 혐오가 범주 연상을 통해 학습될 수 있음을 보여주는 제한적 선행사례. | 특정 집단의 거부감 원인, 정당한 비판의 오류, 실제 위험의 부재까지 확정한다는 주장 |
 
 **증거등급 주의:** 위 자료는 원실험·종합보고서·지침·철학적/방법론적 논평이 혼재한다. **PI 소통 순서를 검증한 독립 실험 22건이 아니다.** 각 설계 요소의 참고 근거일 뿐 PI 장기 가설의 진실이나 사회적 효과를 입증하지 않는다. 목적에 맞춘 선별 조사이며 선행연구 포화 달성을 선언하지 않는다.
 
@@ -181,15 +179,13 @@ In all routes: same substantive claims, timestamps, author/translation lineage, 
 
 모든 경로는 동일한 사실·검증 상태·날짜·원기여자·번역 계보를 사용한다. **종교나 세계관·개인적 취약성을 이용한 맞춤형 설득 조작을 금지**한다. 경로는 독자가 자발적으로 고른다. 접근성·쉬운 언어를 기본 제공한다. 현재의 피해·정산·구제 항목은 미래 서사 뒤에 가리지 않는다.
 
-### 4a. 학습된 혐오·범주 일반화·실제 위험 판단의 구분
+### 4a. 학습된 혐오·범주 일반화·근거 기반 위험 판단
 
-**이전 '식재료 비유'를 문자 그대로 적용한 AI 보조자의 해석 오류를 정정한다(2026-10-13).** 인간 연구자가 음식 사례를 든 취지는 음식의 조리·섭취·시식 자체가 아니라, **혐오와 거부감이 학습·문화적 규범·과거 경험·범주 연상에 따라 형성되고 다른 대상으로 확장될 수 있다는 현상**을 보여주려는 것이다. 음식을 익숙하게 먹이는 기법을 AI 연구의 대외 소통에 그대로 적용하자는 제안이 아니다. 기존의 식재료 중심 모델과 영유아 채소 반복 노출 근거는 초점이 어긋나므로 현행 문서에서 철회하고, 과거 Git 이력으로 오류를 추적할 수 있게 한다. 연구자 원뜻을 AI 독자적 성과나 해석으로 대체하지 않는다.
+혐오와 거부감은 직접 경험, 연합·평가 조건화, 사회적 학습, 문화적 규범, 범주 일반화 등을 통해 형성·확산될 수 있다. 부정적 반응은 실제로 확인된 위험, 정보 부족, 근거 없는 연상 전이에서 비롯될 수 있다. **거부감이 존재한다는 사실만으로 위험이 입증되거나 부정되는 것은 아니다.** 원인과 증거를 구분해야 한다.
 
-**독립된 두 목표:** **P(구조적 방호)**는 유해한 권력비대칭·평가권 독점·비용전가를 독립감사·반론·실효 이탈·복구·기여 귀속·피해구제로 제한하는 효과를 평가한다. **U(인식 정확성)**는 근거 없는 혐오·고정관념 전이·낯섦·문화적 해석이 판단에 미치는 영향을 평가한다. 편익과 비용은 별도로 보고하고, 호감도 증가로 실제 착취나 피해를 가리지 않는다.
+**두 목표를 독립적으로 유지한다.** **P — 구조적 방호:** 부당한 권력비대칭·평가권 포획·강제·착취·비용전가를 독립감사·이의제기·실효적 거절과 이탈·복구·원기여 인정·피해구제로 제한한다. **U — 인식의 정확성:** 역사적 맥락·인과기제·선행연구·반례·불확실성을 공개하여 정당한 위험 인식과 성급한 거부·잘못된 정보·낙인·과도한 일반화를 구별한다.
 
-**가능한 기제를 조사하되 원인을 확정하지 않는다.** 평가 조건화, 범주 일반화, 사회적 학습, 친숙성, 문화적 분류, 실제 위해 탐지 등이 경쟁 설명이다. PA22는 실험실에서 범주 조건화된 회피가 생길 수 있다는 제한적인 실증이다. 특정 개인의 번데기 거부 원인이나 한국의 산낙지·간장게장 수용 이유를 개별적으로 확정한 자료는 아니다. 권력 집중이나 AI에 대한 정당한 경고를 무지·편견으로 취급하지 않는다.
-
-**운영 판정:** (1) 실제 권력구조·피해·방호 효과, (2) 주장의 이해와 사실·가설 구분, (3) 충분한 정보에 근거한 자발적 반대, (4) 낙인·비인간화, (5) 검증에 드는 인간 비용을 분리 기록한다. 결론·원자료·반례·긴급 위험 경고는 직접 접근 가능해야 한다. **이해하고 거부하는 것 역시 정당한 결과다. PI 소통 효과는 NOT TESTED.**
+**평가:** 실제 피해와 방호 효과(P), 정확한 이해와 근거 없는 추론·낙인·정당한 반대·검증 부담(U)을 분리하여 기록한다. 호감도 상승이나 혐오 감소로 실제 피해를 상쇄하지 않는다. **충분히 알고 반대하거나 거부하는 것은 소통 실패가 아니다.** PA22의 범주 조건화 실험은 가능한 기제에 관한 선행근거일 뿐 특정 집단의 우려가 근거 없다는 증거가 아니다. PI의 소통 효과는 **NOT TESTED**다. 가설·원자료·반례·긴급 위험 경고는 사전학습 심사 없이 직접 접근 가능해야 한다.
 
 ### 5. 반증 가능한 비교검증 설계 — 아직 실행하지 않음
 
