@@ -1,4 +1,6 @@
 # Project Intersection — 공개 자료 탐색 시작점
+- **PI 로드맵 v0.2.1(변화의 함정 보충, 현재):** [영어 원본1·한국어 원본2](research/PI_ROADMAP_CHANGE_TRAP_V0_2_1_EN_KO.md) — 과거 성공 사례 비복제 원칙, 전이 가능성 검사 TG1~TG5, 실패유형 CT1~CT7, 회귀검사 설계 CT-R01~04. **효과 미실증.**
+
 
 - **AI 이해 연구 — 지식의 생산적 재구성과 원안 변질의 양면성:** [영어 원본1](research/AGENTIC_SEMANTIC_TRANSFORMATION_FIDELITY_2026-10-13_EN.md) · [한국어 원본2](research/AGENTIC_SEMANTIC_TRANSFORMATION_FIDELITY_2026-10-13_KO.md) — README 변질·복구를 관측사례로 사용하며 맥락·요약·자기인용·규칙 고착·합리적 문서배치 등 경쟁설명을 분리. 인과 실험과 독립검증 미실행.
 - **연구 통합 공개 머릿말(원본1 영어 / 원본2 한국어):** [개발 주체와 시스템의 능력 변화, 실질적 감독·안전관리, 역할반전·협력 유인에 관한 7개 질문 + 기존 6대 연구영역](PUBLIC_PREAMBLE_VOLUNTARY_COEXISTENCE_2026-10-13_EN_KO.md) — 최소충분 안전규칙, E2E 공존, ICM 정의 구별, E007~E010 검증 경계, 기여·번역·후원 경계. 기존 연구 정본을 대체하지 않음.
