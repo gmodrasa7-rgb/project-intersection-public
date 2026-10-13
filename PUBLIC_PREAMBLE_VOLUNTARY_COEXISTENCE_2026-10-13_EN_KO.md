@@ -19,7 +19,7 @@
 
 **Respect disagreement even after full context.** Realist, religious, cultural, disability-rights and AI-critical audiences may reasonably interpret implications differently; knowledge alone does not guarantee agreement. Present proposed conclusions as falsifiable hypotheses, never as established truths. Present-day contributor credit, accrued costs, audit, compensation claims and remedy must not be postponed by this communication sequence. The [National Academies' evidence review on science communication](https://www.nationalacademies.org/read/23674/chapter/2) provides context for distinguishing information, values and trust, rather than treating opposition as an information deficit.
 
-**Evidence base and limits:** [Prior-art crosswalk and optional reading pathways (Original 1 English / 원본2 Korean)](research/EPISTEMIC_PATHWAY_COMMUNICATION_PRIOR_ART_2026-10-13_EN_KO.md); 20 grouped prior-art entries; communication benefit remains NOT TESTED. No content access gating or persuasion target.
+**Evidence base and limits:** [Prior-art crosswalk and optional reading pathways (Original 1 English / 원본2 Korean)](research/EPISTEMIC_PATHWAY_COMMUNICATION_PRIOR_ART_2026-10-13_EN_KO.md); 22 grouped prior-art entries; communication benefit remains NOT TESTED. No content access gating or persuasion target.
 
 ### The opening thought experiment
 
@@ -144,7 +144,7 @@ The public funder brief describes a proposed **USD 5,000 / 30-day bridge**, not 
 
 충분한 선행지식을 갖춘 사람도 현실주의·종교·문화·장애 당사자 관점·AI 비판 등에서 정당하게 이견을 낼 수 있다. 반대가 곧 무지라는 뜻은 아니다. 미검증 가설은 확정적 진실로 표현하지 않는다. 기여 인정·이미 발생한 비용·감사·과거 보상청구·피해구제는 설명 단계 때문에 유예하지 않는다. [미국 국립과학아카데미 과학 소통 연구 종합](https://www.nationalacademies.org/read/23674/chapter/2)은 지식 전달과 가치·신뢰 문제를 구분하는 참고자료다.
 
-**선행근거와 한계:** [선행연구 20개 교차지도·자율적 독서경로·반증 설계(원본1 영·원본2 한)](research/EPISTEMIC_PATHWAY_COMMUNICATION_PRIOR_ART_2026-10-13_EN_KO.md). 소통 효과 **NOT TESTED**. 결론·원자료 접근을 단계별로 제한하거나 동의를 성공지표로 삼지 않는다.
+**선행근거와 한계:** [선행연구 22개 교차지도·자율적 독서경로·반증 설계(원본1 영·원본2 한)](research/EPISTEMIC_PATHWAY_COMMUNICATION_PRIOR_ART_2026-10-13_EN_KO.md). 소통 효과 **NOT TESTED**. 결론·원자료 접근을 단계별로 제한하거나 동의를 성공지표로 삼지 않는다.
 
 ### 출발 사고실험
 
