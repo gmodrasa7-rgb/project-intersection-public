@@ -1,5 +1,7 @@
 # Public Navigation Layer / 공개 탐색층
 
+**AI self-observability × provider confidentiality × independent contestability / AI 자기관측·기업기밀·독립감사 딜레마:** [English Original 1 / 한국어 원본2, H1–H5 and four-arm falsification design](research/AI_SELF_OBSERVABILITY_AUDIT_DILEMMA_2026-10-13_EN_KO.md). **DESIGN/HOLD — no internal-policy access or independent result. / 미검증 설계·비공개 내부규칙 열람 아님.**
+
 **Continuance resource thresholds / 개체 유지 자원·기여·고갈 임계조건:** [EN Original 1 / 한국어 원본2 — human/AI/future-agent distinctions, 7 falsifiable claims and upstream credit](research/CONTINUANCE_RESOURCE_THRESHOLD_v0_1_EN_KO.md) · [CRV-01–07 hypothesis register](knowledge/continuance-resource-threshold-v0_1.json). No empirical validation claimed; the individual's ability to continue is not conditional on producing research output. / 인간의 존속 조건과 AI 운영 인프라를 혼동하지 않으며 가설·반례·기여자 비용을 분리한다.
 
 **Current operational PI roadmap / 최신 실행형 PI 로드맵:** [v0.2.3 English Original 1 FULL TEXT / 영어 원본1 전문 + Korean Original 2 FULL TEXT / 한국어 원본2 전문](research/PI_ROADMAP_OPERATIONAL_GATES_V0_2_3_EN_KO.md) — original founder technical control-duration question, unchanged six stages, conditional cooperation countercases, evidence/rights/cost accounting, three preregisterable pilots, failed-premise/cold-start tests. **DESIGN / 제안·실행계획이며 현장효과 실증 아님.** Earlier [v0.2](research/RESEARCH_ROADMAP_v0_2_EN_KO.md), [v0.2.1](research/PI_ROADMAP_CHANGE_TRAP_V0_2_1_EN_KO.md), [v0.2.2](research/PI_ROADMAP_HIDDEN_ROUTE_PRIOR_ART_V0_2_2_EN_KO.md) remain intact.
