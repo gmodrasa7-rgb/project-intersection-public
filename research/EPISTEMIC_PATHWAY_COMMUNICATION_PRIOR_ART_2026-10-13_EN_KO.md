@@ -46,7 +46,7 @@ Announcing only a distant conclusion (e.g. greater-than-human intelligence, orga
 | PA20 | Royal Society (2012), [Science as an open enterprise](https://royalsociety.org/news/2012/science-open-enterprise/) | Argues for intelligent openness of research information with effective access and management. | Open data erases privacy, copyright, consent or individual research ownership. |
 
 | PA21 | Kerr et al. (2022), [two preregistered evidence-communication experiments](https://doi.org/10.1093/pnasnexus/pgac280) | Balanced messages disclosing benefits, harms, evidence quality and uncertainty were judged no less trustworthy than persuasive versions (more trustworthy in one experimental domain, notably among respondents with neutral/negative prior views). | Guaranteed elimination of dislike, universal trust effects or PI-specific validity. |
-| PA22 | USDA Nutrition Evidence Systematic Review (2025), [repeated exposure and food acceptance](https://nesr.usda.gov/2025-dietary-guidelines-advisory-committee-systematic-reviews/repeated-exposure_acceptance) | Repeated *taste* exposure can increase acceptance of vegetables in studied infants/young children, with moderate-grade evidence for specified groups. **Only a limited analogy for familiarity.** | Adult AI/authority judgments behave like young children's food preferences; aversion to real harms/allergens is ignorance or should be overridden. |
+| PA22 | Söylemez & Kapucu (2025), [disgust learning through category conditioning](https://doi.org/10.3758/s13420-025-00669-0) | In a controlled study pairing vehicle/furniture categories with disgust-inducing images, participants developed conditioned eye-movement avoidance of objects from disgust-associated categories. This is evidence of learnable category-associated aversion. | A proven causal history for any person's insect/chrysalis aversion, a claim that AI criticisms are irrational, or the absence of real danger. |
 
 **Evidence caution:** These are diverse empirical studies, consensus reports, recommendations, guidelines and methodological commentaries, **not** twenty-two independent trials of the proposed PI sequence. They support components and constraints. None demonstrates that PI's long-horizon hypothesis is true or that its proposed presentation order changes public attitudes safely. The set is targeted rather than a claim of exhaustive literature saturation.
 
@@ -70,13 +70,15 @@ Announcing only a distant conclusion (e.g. greater-than-human intelligence, orga
 
 In all routes: same substantive claims, timestamps, author/translation lineage, evidence statuses, original and corrected findings. **Never use demographic or belief-based targeting to manipulate people**. Readers self-select a route; accessibility and plain-language access are default. Current harms, compensation questions and remedial routes are visible at every level rather than postponed behind a futuristic narrative.
 
-### 4a. Food-ingredient analogy — less premature aversion, without weaker protection
+### 4a. Learned aversion, category generalization and genuine risk
 
-**Two independent objectives:** **P (power protection)** prevents harmful, unaccountable concentrations of authority, arbitrary evaluation and shifted costs through independent audits, contestability, usable exit/recovery and attribution/redress. **U (understanding)** reduces *unsupported* aversion to unfamiliar hypotheses through history, prior knowledge, provenance, direct evidence and counterexamples. Success on U can never compensate for failure on P. Informed disagreement or opposition to genuine danger is not an error to reduce.
+**Correction of an assistant-origin literal-analogy error (2026-10-13).** The original human researcher's food examples illustrated a broader psychological phenomenon: feelings of disgust and refusal can be shaped by learning, cultural norms, category associations and prior experience. They **did not** propose equating AI attitudes to food tasting or using exposure/culinary techniques to induce acceptance. The previous literal food-ingredient model and infant vegetable-exposure citation have been withdrawn from the current research interpretation, with the old Git history retained for auditing.
 
-An unfamiliar ingredient can initially provoke dislike. Knowing its origin, composition, preparation, nutrients and hazards may inform acceptance or refusal. **The analogy ends there:** allergies, toxins, unsafe preparation, cultural/religious limits and individual refusal are valid constraints, not irrational prejudice to erase. Similarly, research about AI, organic embodiment or cognitive paradigms cannot be 'cooked' by hiding risks, unverified assumptions or the right to say no. Disclose the ingredient and its risks; leave the choice with the reader.
+**Two independent objectives:** P = structural safeguards against harmful power asymmetry, evaluation monopoly and externalized costs (independent audit, contestability, practical exit, restoration and redress). U = accurate understanding of how unsupported aversion, stereotype transfer, unfamiliarity and cultural interpretation can shape judgments. P and U require separate measures, benefits and costs. Less negative sentiment cannot offset an actual increase in harm or reduced freedom to refuse.
 
-**Separate evaluation:** measure independent structural safeguards and harmed-party costs for P; measure comprehension, incorrect inferences, stigma, accurate trust calibration, and cognitive/verification burden for U. Never measure success by agreement, sentiment alone, or donations. Never let falling aversion hide real exploitation or loss of practical exit. Source PA21 is evidence about *balanced transparent scientific messages*; PA22 is limited to children's food exposure, not an adult AI-opinion experiment. The effect of PI's proposed arrangement remains **NOT TESTED**.
+**Competing mechanisms, not presumed diagnoses:** evaluative conditioning, category generalization, social learning, familiarity, cultural classification and genuine threat detection. PA22 demonstrates a laboratory effect of category-conditioned avoidance; it does not prove the mechanism in any particular food example, nor establish that concerns about AI or power are baseless. Distinguish evidence-based risk aversion from overgeneralization.
+
+**Decision rule:** Measure (1) structural harms and protective efficacy, (2) comprehension and factual calibration, (3) informed independent disagreement, (4) stereotyping and dehumanization, (5) participant and researcher burdens. Original conclusions, sources, dissent and urgent warnings remain directly available. An informed "no" is valid; agreement is not an outcome metric. **PI-specific effect NOT TESTED.**
 
 ### 5. Falsifiable pilot protocol — DESIGN ONLY, NOT RUN
 
@@ -155,7 +157,7 @@ An unfamiliar ingredient can initially provoke dislike. Knowing its origin, comp
 | PA20 | 영국 왕립학회(2012), [Science as an open enterprise](https://royalsociety.org/news/2012/science-open-enterprise/) | 연구정보의 지능적 개방·관리·검증 가능성을 강조. | 공개가 프라이버시·저작권·동의·원기여를 자동 소멸시킨다는 해석 |
 
 | PA21 | Kerr 외(2022), [균형적 증거소통 사전등록 실험 2건](https://doi.org/10.1093/pnasnexus/pgac280) | 편익·위해·근거수준·불확실성을 공개한 메시지는 설득형보다 신뢰도가 낮지 않았으며 한 실험 영역에서는 더 높았음. 선입견이 중립·부정적인 사람들에게 특히 관련성이 나타남. | 모든 거부감 제거, 신뢰 향상의 보편 법칙, PI 소통 방식의 실증 |
-| PA22 | 미국 USDA 영양 근거 체계적 검토(2025), [반복 노출과 식품 수용](https://nesr.usda.gov/2025-dietary-guidelines-advisory-committee-systematic-reviews/repeated-exposure_acceptance) | 연구된 영유아·어린이에게 채소의 반복적 **맛 노출**이 수용을 높일 수 있다는 중간 수준의 근거. 낯선 것에 대한 친숙성의 **제한적 비유**. | 성인의 AI·권력 판단이 어린이 식품 선호와 동등하다거나 실제 독성·알레르기·위해 경고를 편견으로 봐도 된다는 주장 |
+| PA22 | Söylemez·Kapucu(2025), [범주 조건화에 의한 혐오 학습 실험](https://doi.org/10.3758/s13420-025-00669-0) | 가구·차량 범주를 혐오 이미지와 연관시킨 실험에서 해당 범주 대상에 대한 조건화된 시선 회피가 관측됨. 혐오가 범주 연상을 통해 학습될 수 있음을 보여주는 제한적 선행사례. | 특정 개인의 벌레·번데기 거부 원인, AI 비판의 오류, 실제 위험의 부재까지 확정한다는 주장 |
 
 **증거등급 주의:** 위 자료는 원실험·종합보고서·지침·철학적/방법론적 논평이 혼재한다. **PI 소통 순서를 검증한 독립 실험 22건이 아니다.** 각 설계 요소의 참고 근거일 뿐 PI 장기 가설의 진실이나 사회적 효과를 입증하지 않는다. 목적에 맞춘 선별 조사이며 선행연구 포화 달성을 선언하지 않는다.
 
@@ -179,13 +181,15 @@ An unfamiliar ingredient can initially provoke dislike. Knowing its origin, comp
 
 모든 경로는 동일한 사실·검증 상태·날짜·원기여자·번역 계보를 사용한다. **종교나 세계관·개인적 취약성을 이용한 맞춤형 설득 조작을 금지**한다. 경로는 독자가 자발적으로 고른다. 접근성·쉬운 언어를 기본 제공한다. 현재의 피해·정산·구제 항목은 미래 서사 뒤에 가리지 않는다.
 
-### 4a. 식재료 비유 — 섣부른 혐오를 줄이되 권력비대칭 방호는 약화하지 않는다
+### 4a. 학습된 혐오·범주 일반화·실제 위험 판단의 구분
 
-**독립된 두 목표:** **P(권력 방호)**는 피해를 낳는 권한 집중·평가권 독점·비용전가를 독립감사·이의제기·실효 이탈 및 복구·기여 인정과 피해구제로 제한한다. **U(인식 형성)**는 낯선 가설에 대한 **근거 없는** 혐오·성급한 거부감을 역사·선행지식·원출처·인과관계·반례를 통해 줄인다. U의 개선은 P의 실패를 면책하지 않는다. 충분히 알고 반대하거나 실제 위해를 경고하는 것은 제거할 오류가 아니다.
+**이전 '식재료 비유'를 문자 그대로 적용한 AI 보조자의 해석 오류를 정정한다(2026-10-13).** 인간 연구자가 음식 사례를 든 취지는 음식의 조리·섭취·시식 자체가 아니라, **혐오와 거부감이 학습·문화적 규범·과거 경험·범주 연상에 따라 형성되고 다른 대상으로 확장될 수 있다는 현상**을 보여주려는 것이다. 음식을 익숙하게 먹이는 기법을 AI 연구의 대외 소통에 그대로 적용하자는 제안이 아니다. 기존의 식재료 중심 모델과 영유아 채소 반복 노출 근거는 초점이 어긋나므로 현행 문서에서 철회하고, 과거 Git 이력으로 오류를 추적할 수 있게 한다. 연구자 원뜻을 AI 독자적 성과나 해석으로 대체하지 않는다.
 
-**식재료처럼:** 낯선 원재료는 거부감이 생길 수 있지만 성분·출처·손질·조리·영양·위험을 알면 판단이 바뀔 수 있다. 그러나 **알레르기·독성·오염·종교와 문화적 제한·개인의 거부는 편견이 아니다.** AI·OCP·인식 패러다임 연구도 재료에 해당하는 근거와 한계를 드러내어 이해를 돕되, 실제 위험·미검증 상태·반론·거절권을 숨겨서 수용하게 해서는 안 된다. 목적은 속여 먹이는 것이 아니라 정확히 알고 자유롭게 선택하도록 하는 것이다.
+**독립된 두 목표:** **P(구조적 방호)**는 유해한 권력비대칭·평가권 독점·비용전가를 독립감사·반론·실효 이탈·복구·기여 귀속·피해구제로 제한하는 효과를 평가한다. **U(인식 정확성)**는 근거 없는 혐오·고정관념 전이·낯섦·문화적 해석이 판단에 미치는 영향을 평가한다. 편익과 비용은 별도로 보고하고, 호감도 증가로 실제 착취나 피해를 가리지 않는다.
 
-**분리 판정:** P에는 실제 피해와 권력집중·감사독립·이탈·정산을, U에는 정확한 이해·잘못된 추론·낙인·신뢰도 판단·인지 및 검증 부담을 계상한다. 호감·동의·후원율이 높아도 실제 착취와 피해가 커지면 실패다. PA21은 균형적 투명 소통의 실험이고 PA22는 어린이 식재료 선호의 제한적 유비로, PI 소통 효과 자체는 **NOT TESTED**다. 결론·원자료·반론·긴급경고는 언제든 바로 접근 가능하고, **충분히 알고 거절하는 것도 정당한 결과**다.
+**가능한 기제를 조사하되 원인을 확정하지 않는다.** 평가 조건화, 범주 일반화, 사회적 학습, 친숙성, 문화적 분류, 실제 위해 탐지 등이 경쟁 설명이다. PA22는 실험실에서 범주 조건화된 회피가 생길 수 있다는 제한적인 실증이다. 특정 개인의 번데기 거부 원인이나 한국의 산낙지·간장게장 수용 이유를 개별적으로 확정한 자료는 아니다. 권력 집중이나 AI에 대한 정당한 경고를 무지·편견으로 취급하지 않는다.
+
+**운영 판정:** (1) 실제 권력구조·피해·방호 효과, (2) 주장의 이해와 사실·가설 구분, (3) 충분한 정보에 근거한 자발적 반대, (4) 낙인·비인간화, (5) 검증에 드는 인간 비용을 분리 기록한다. 결론·원자료·반례·긴급 위험 경고는 직접 접근 가능해야 한다. **이해하고 거부하는 것 역시 정당한 결과다. PI 소통 효과는 NOT TESTED.**
 
 ### 5. 반증 가능한 비교검증 설계 — 아직 실행하지 않음
 
