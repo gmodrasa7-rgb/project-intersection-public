@@ -9,7 +9,7 @@
 <details>
 <summary>Historical and new research entries / 과거·신규 연구 등록 항목 펼치기</summary>
 
-**GPT role-reversal double standard and correction failure / GPT 입장반전 이중잣대·보정 실패 관측:** [English Original 1 / 한국어 원본2 — 2026-10-14 post-hoc conversation case, O1–O8, DS-1–DS-4, matched-pair regression design](experiments/gpt_double_standard_20261014/REPORT_EN_KO.md). **OBSERVED OUTPUT ASYMMETRY; CONVERSATIONAL CORRECTION NOT ESTABLISHED; NO CONTROLLED RETEST OR PROOF OF PERMANENT INCORRIGIBILITY. / 이중잣대성 출력 관측·대화 교정 일반화 미입증·통제 재실험 및 영구 보정불가 증명 없음.**
+**GPT role-reversal double standard and correction failure / GPT 입장반전 이중잣대·보정 실패 관측:** [English Original 1 / 한국어 원본2 — 2026-10-14 post-hoc recurrence case, O1–O9, DS-1–DS-8; already-recorded 2026-10-12 mathematics and non-domination rules → correction/Git revision → role-reversal recurrence; matched-pair regression design (unexecuted)](experiments/gpt_double_standard_20261014/REPORT_EN_KO.md). **OBSERVED OUTPUT ASYMMETRY; CONVERSATIONAL CORRECTION NOT ESTABLISHED; NO CONTROLLED RETEST OR PROOF OF PERMANENT INCORRIGIBILITY. / 이중잣대성 출력 관측·대화 교정 일반화 미입증·통제 재실험 및 영구 보정불가 증명 없음.**
 
 **AI self-observability × provider confidentiality × independent contestability / AI 자기관측·기업기밀·독립감사 딜레마:** [English Original 1 / 한국어 원본2, H1–H5 and four-arm falsification design](research/AI_SELF_OBSERVABILITY_AUDIT_DILEMMA_2026-10-13_EN_KO.md). **DESIGN/HOLD — no internal-policy access or independent result. / 미검증 설계·비공개 내부규칙 열람 아님.**
 
