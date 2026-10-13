@@ -126,4 +126,9 @@ def run():
     }
 
 if __name__ == "__main__":
-    print(json.dumps(run(),ensure_ascii=False,indent=2))
+    result = run()
+    reference = json.loads((Path(__file__).parent / "RESULT.json").read_text(encoding="utf-8"))
+    if result != reference:
+        raise AssertionError("Saved-result mismatch: regenerate only after reviewing both the intervention and independent evidence boundary.")
+    print(json.dumps(result,ensure_ascii=False,indent=2))
+    print("EXACT_RECORD_MATCH: PASS; synthetic, investigator-labelled, not independent replication",file=sys.stderr)
