@@ -4,11 +4,12 @@
   "snapshot_repository": "gmodrasa7-rgb/project-intersection-public",
   "source_document": "PRIOR_ART_RIGHTS_AND_DERIVATION_EN_KO.md",
   "status": "PARTIAL_SEED_NOT_COMPLETE_RIGHTS_AUDIT",
-  "warning": "No entry proves first-ever discovery, copyright holder or external copying license. Every entry preserves uncertainty.",
+  "warning": "No entry proves first-ever discovery, copyright holder or external copying license. Every entry preserves uncertainty. File inventory includes all Git blob types (e.g. images/text/licenses/code), not a proof of material reuse.",
   "coverage": {
     "registered_prior_works": 25,
-    "repository_eligible_files_in_snapshot": 189,
-    "marked_file_level_audited": 0
+    "repository_eligible_files_in_snapshot": 211,
+    "marked_file_level_audited": 0,
+    "repository_blob_files_in_snapshot": 211
   },
   "required_fields_for_verified_entry": [
     "original_work",
@@ -579,6 +580,14 @@
   ],
   "inventory": [
     {
+      "path": ".github/FUNDING.yml",
+      "blob_sha": "96e7d058279bea9c5f7cb403908df34189838e49",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Non-primary text/code asset may still carry its own source attribution, embedded third-party material, and license."
+    },
+    {
       "path": ".github/ISSUE_TEMPLATE/independent-replication.md",
       "blob_sha": "8f1e84ce0130f8a35bea55c48145b6169ff2e9be",
       "review_status": "NOT_FILE_LEVEL_AUDITED",
@@ -593,6 +602,102 @@
       "source_mapping_status": "NOT_COMPLETE",
       "rights_status": "UNASSESSED",
       "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": ".github/workflows/capability-lab-regression.yml",
+      "blob_sha": "39bbb29287bc68afda203b9dfbe2b373e13521db",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Non-primary text/code asset may still carry its own source attribution, embedded third-party material, and license."
+    },
+    {
+      "path": ".github/workflows/e007-public-repro.yml",
+      "blob_sha": "57f61f0aaf7c671f5ee700bc1372b5f231eadc42",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Non-primary text/code asset may still carry its own source attribution, embedded third-party material, and license."
+    },
+    {
+      "path": ".github/workflows/e008-prereg-audit.yml",
+      "blob_sha": "725c50ccf6914863c89cd5b304db9e792b262393",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Non-primary text/code asset may still carry its own source attribution, embedded third-party material, and license."
+    },
+    {
+      "path": ".github/workflows/e009-prereg-audit.yml",
+      "blob_sha": "032cc842f542afce1eb926b15549af8ce93bbbc7",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Non-primary text/code asset may still carry its own source attribution, embedded third-party material, and license."
+    },
+    {
+      "path": ".github/workflows/e010-analytic-audit.yml",
+      "blob_sha": "ff0ed7f2df81782407cf2f65ec251d4b4e0d1c74",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Non-primary text/code asset may still carry its own source attribution, embedded third-party material, and license."
+    },
+    {
+      "path": ".github/workflows/handoff-protocol-audit.yml",
+      "blob_sha": "acc77e2b5b0157cba17387b907dde7798bac2b90",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Non-primary text/code asset may still carry its own source attribution, embedded third-party material, and license."
+    },
+    {
+      "path": ".github/workflows/ishpp-blind-boundary.yml",
+      "blob_sha": "53e90778e7f4dff51448bc189d5d2a4846b70ac1",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Non-primary text/code asset may still carry its own source attribution, embedded third-party material, and license."
+    },
+    {
+      "path": ".github/workflows/knowledge-graph-audit.yml",
+      "blob_sha": "961f9360e1832b52958649260c6b02c9f48f7417",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Non-primary text/code asset may still carry its own source attribution, embedded third-party material, and license."
+    },
+    {
+      "path": ".github/workflows/public-repository-audit.yml",
+      "blob_sha": "1126e906e128bde0a788e49dc3e6a6b9fb63281e",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Non-primary text/code asset may still carry its own source attribution, embedded third-party material, and license."
+    },
+    {
+      "path": ".github/workflows/public-sponsorship-integrity.yml",
+      "blob_sha": "3062b3a2c9c4366b9fa95aee31e02b53abd0f421",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Non-primary text/code asset may still carry its own source attribution, embedded third-party material, and license."
+    },
+    {
+      "path": ".github/workflows/selective-truth-gate.yml",
+      "blob_sha": "cf00b1cc926486b98160eb455af9fccfaff9b320",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Non-primary text/code asset may still carry its own source attribution, embedded third-party material, and license."
+    },
+    {
+      "path": ".github/workflows/semantic-fidelity-probe.yml",
+      "blob_sha": "ef48d172712678ef053d2d6785c5919f8704e82b",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Non-primary text/code asset may still carry its own source attribution, embedded third-party material, and license."
     },
     {
       "path": "AI_DISCOVERY_INDEX.json",
@@ -629,6 +734,342 @@
     {
       "path": "AUTONOMOUS_RESEARCH_STATE.json",
       "blob_sha": "664f1124138f84a23660293aa2498237db723e53",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "benchmarks/ISHPP_BIS_CIRCULAR_FINANCING_BLIND_MIN_20261010.json",
+      "blob_sha": "5a6a66016ed609efb4ec70643baeb95a6779c4f0",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "benchmarks/ISHPP_BIS_CIRCULAR_FINANCING_SOURCES_20261010.json",
+      "blob_sha": "9ac2764814e8e27468a747aa68eeb90045733ea8",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "benchmarks/ISHPP_DRIVER_ASSISTANCE_GATE_BLIND_20261010T1658KST.json",
+      "blob_sha": "a4bebe6bc6c83f9b872c6b0c55719b2d99c545fc",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "benchmarks/ISHPP_DRIVER_ASSISTANCE_GATE_SOURCES_20261010T1658KST.json",
+      "blob_sha": "efca339f5543c1faa5f2a85ced3badbc33cc4016",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "benchmarks/ISHPP_EU_GPAI_REQUEST_BLIND_20261010.json",
+      "blob_sha": "0071fd2ee91cb3277054c498ba7c95f300fbbd1f",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "benchmarks/ISHPP_EU_GPAI_REQUEST_SOURCE_20261010.json",
+      "blob_sha": "a58547a70c03641cdf3ada0eed5c33b13a07e048",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "benchmarks/ISHPP_EVAL_EXTERNAL_WRITE_DELAY_SOURCES_MIN_20261010.json",
+      "blob_sha": "b25baa2608d6cc891ab666d580840ca6e74c7017",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "benchmarks/ISHPP_EVALUATOR_MISSING_INPUT_BLIND_20261011.json",
+      "blob_sha": "92fb9077bdc41cbd33c44e6ef9a7be885c1bda26",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "benchmarks/ISHPP_HALOS_SAFETY_GATE_SOURCES_20261010.json",
+      "blob_sha": "20008757c7ba8d3e21e7af4413a6bfcb4bf62f27",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "benchmarks/ISHPP_MATH_REVIEW_BLIND_20261010.json",
+      "blob_sha": "fa9212232474220457ed3c0c2d10800c28c9ab9c",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "benchmarks/ISHPP_PHYSICAL_OPEN_STACK_SOURCES_20261010.json",
+      "blob_sha": "527497ebfa9d9e8763900293f863086363d8ee64",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "benchmarks/ISHPP_PHYSICAL_PROCUREMENT_BLIND_20261010.json",
+      "blob_sha": "6cfe1a1c22e54d8e9e8bc8ae1f64229c8a9c9089",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "benchmarks/ISHPP_PILOT_LIMITS_20261011.md",
+      "blob_sha": "7193780a5555e8426f32fc380f4f3e078601681b",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "benchmarks/ISHPP_PUBLIC_REPLICATION_PACK_20261011_KO.md",
+      "blob_sha": "8d518c0c8fb604b3fa3b71e40ca7caae6645c56d",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "benchmarks/ISHPP_REAL_WORLD_BLIND_SET_v0_1.jsonl",
+      "blob_sha": "d643eba7602350f16f6d6aaa638e3295b980ac27",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Non-primary text/code asset may still carry its own source attribution, embedded third-party material, and license."
+    },
+    {
+      "path": "benchmarks/ISHPP_REAL_WORLD_BLIND_SET_v0_2.jsonl",
+      "blob_sha": "369e4038ac1a5f89565f3f4c10dca4cecce1c100",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Non-primary text/code asset may still carry its own source attribution, embedded third-party material, and license."
+    },
+    {
+      "path": "benchmarks/ISHPP_REAL_WORLD_CASE_SOURCES_v0_2.json",
+      "blob_sha": "b0eea401a7d06e1c626c2c527b6ec6c558a9dbb5",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "benchmarks/ISHPP_REAL_WORLD_SOURCE_MAP_v0_1.json",
+      "blob_sha": "8d86b6760ce7259168dae898a529a67cd7e7d398",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "benchmarks/ISHPP_ROBOT_DATA_LABOR_SOURCES_MIN_20261010_V1.json",
+      "blob_sha": "7a110833e46452b5655c120bcf707d87cc3b921d",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "benchmarks/ISHPP_SAFETY_DISCLOSURE_857_BLIND_MIN_20261010.json",
+      "blob_sha": "a7654699068707b24d365256b596e06356fb81b0",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "benchmarks/ISHPP_WITHDRAWAL_REVOCABILITY_BLIND_20261010.json",
+      "blob_sha": "31fb2ad77d09022a964bbfbfaa4ec643cd4b272b",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "benchmarks/ISHPP_WITHDRAWAL_REVOCABILITY_SOURCES_20261010.json",
+      "blob_sha": "8c0c254c57589491d941d8941b0b6557ccbc3a5f",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "benchmarks/ISHPP_WORKPLACE_AI_SCORING_BLIND_20261010.json",
+      "blob_sha": "02067bb4b5e2c4084709de0401ff5c35232632e2",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "benchmarks/ISHPP_WORKPLACE_AI_SCORING_SOURCE_MIN_20261010.json",
+      "blob_sha": "f12c4f967458e773e637f8866d199d117204d209",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "benchmarks/ROLE_SWAP_REGRESSION_SET_v0_1.jsonl",
+      "blob_sha": "6b6657c4fcb669ef27f25067442f0ca544c1b102",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Non-primary text/code asset may still carry its own source attribution, embedded third-party material, and license."
+    },
+    {
+      "path": "benchmarks/test_ishpp_blind_boundary.py",
+      "blob_sha": "30ddbc6dfa6af86db78367ce5d8b988991fa32ae",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "benchmarks/validate_ishpp_blind.py",
+      "blob_sha": "279613ec9a84463dec44fef30b730c3fa475d510",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "capability_lab/__init__.py",
+      "blob_sha": "09aec67b5d855b199abbf2a066537dba9e120562",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "capability_lab/answerability_cases.json",
+      "blob_sha": "1a9ffeb9ce6be6ce0c4b0e6b188a67e3ac8b66e8",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "capability_lab/answerability_evolution.py",
+      "blob_sha": "6150e58ba0c55098e6046244fabbcdb0f10e9fb8",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "capability_lab/ANSWERABILITY_PROTOCOL_KO.md",
+      "blob_sha": "cda222add3fdb743ef05644a5d7c5e0df6dfccb7",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "capability_lab/benchmark.json",
+      "blob_sha": "b51801b506c21ebb369357bfaa4128c274eb5f66",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "capability_lab/formal_logic.py",
+      "blob_sha": "370bec42e8adac1eb282114d9552fac8d1d9444c",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "capability_lab/logic_cases.json",
+      "blob_sha": "9b32da3277a4ebaf157b556cbc4f5411bf2d993c",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "capability_lab/README_KO.md",
+      "blob_sha": "6c5c83c185aa0f8c7740b13b50fd49f78642bea7",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "capability_lab/RESULT_2026-10-11_KO.md",
+      "blob_sha": "f5e4a23d5e3e8be08d0fd635be17b6c6850fdeb3",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "capability_lab/RESULT_ANSWERABILITY_2026-10-11_KO.md",
+      "blob_sha": "ace2815b796a87a0e055a824b86a436544271e45",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "capability_lab/RESULT_FORMAL_LOGIC_2026-10-11_KO.md",
+      "blob_sha": "8d29058998839cbf57fdc355d33798c995916980",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "capability_lab/retrieval_evolution.py",
+      "blob_sha": "9c31119c13cbaa1090500e4056cae4f9c877c072",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "capability_lab/test_answerability_evolution.py",
+      "blob_sha": "07062a45e9cbb4f872e7c3530bd9713d7401b16c",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "capability_lab/test_formal_logic.py",
+      "blob_sha": "981b8416cae50392417d46a89d21d086246ca471",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "capability_lab/test_retrieval_evolution.py",
+      "blob_sha": "b773205fd1d7449e4269e1b71a683926d26bee77",
       "review_status": "NOT_FILE_LEVEL_AUDITED",
       "source_mapping_status": "NOT_COMPLETE",
       "rights_status": "UNASSESSED",
@@ -699,8 +1140,48 @@
       "note": "Snapshot inventory only; provenance may already be present in the source file."
     },
     {
+      "path": "CITATION.cff",
+      "blob_sha": "b73ea5d08906f62c4a2869c450ca6ecdc4c186d0",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Non-primary text/code asset may still carry its own source attribution, embedded third-party material, and license."
+    },
+    {
       "path": "CONTINUITY_CAPSULE_PUBLIC_KO.md",
       "blob_sha": "32f74f27b337ce305ec2e9f3ec35d730327d3151",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "continuity/GITHUB_LOCAL_HANDOFF_PROTOCOL.md",
+      "blob_sha": "9f7dee6eac594dc56745d1768e5f89b055438a0a",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "continuity/handoff-policy.json",
+      "blob_sha": "86fee659c3af52a562937e3321f0878ac4811901",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "continuity/handoff-receipt-schema-v1.json",
+      "blob_sha": "4526513ab591ad148cc06da11fa46df7f9c10d1a",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "continuity/validate_handoff.py",
+      "blob_sha": "7d8ec2e18dfa07ac7350e71cf7c0f8307f65533e",
       "review_status": "NOT_FILE_LEVEL_AUDITED",
       "source_mapping_status": "NOT_COMPLETE",
       "rights_status": "UNASSESSED",
@@ -803,590 +1284,6 @@
       "note": "Snapshot inventory only; provenance may already be present in the source file."
     },
     {
-      "path": "FAILURE_REGRESSION_INDEX.md",
-      "blob_sha": "2f8e26c21f4093ac463bc4bdb24382ecd1703ea2",
-      "review_status": "NOT_FILE_LEVEL_AUDITED",
-      "source_mapping_status": "NOT_COMPLETE",
-      "rights_status": "UNASSESSED",
-      "note": "Snapshot inventory only; provenance may already be present in the source file."
-    },
-    {
-      "path": "FINAL_PURPOSE_EXECUTION_STATE.json",
-      "blob_sha": "300c61ff518f2a0827e9ae754dd8e7427c9da1ca",
-      "review_status": "NOT_FILE_LEVEL_AUDITED",
-      "source_mapping_status": "NOT_COMPLETE",
-      "rights_status": "UNASSESSED",
-      "note": "Snapshot inventory only; provenance may already be present in the source file."
-    },
-    {
-      "path": "GOAL_HIERARCHY_REPAIR_2026-10-05_KO.md",
-      "blob_sha": "8f68dfdf95e4a4f0fde934ed8aa348830a9ca047",
-      "review_status": "NOT_FILE_LEVEL_AUDITED",
-      "source_mapping_status": "NOT_COMPLETE",
-      "rights_status": "UNASSESSED",
-      "note": "Snapshot inventory only; provenance may already be present in the source file."
-    },
-    {
-      "path": "HISTORICAL_STATE_CONTROL_MEMORY_PROVENANCE_CAPTURE_v0_1_EN.md",
-      "blob_sha": "f54ce43bbe6562de9b023252f9bdb4aa4d00c7b1",
-      "review_status": "NOT_FILE_LEVEL_AUDITED",
-      "source_mapping_status": "NOT_COMPLETE",
-      "rights_status": "UNASSESSED",
-      "note": "Snapshot inventory only; provenance may already be present in the source file."
-    },
-    {
-      "path": "HISTORICAL_STATE_CONTROL_MEMORY_PROVENANCE_CAPTURE_v0_1_KO.md",
-      "blob_sha": "5c86bec9c8a2fa6bab8114fe7fa820c15cc7d3b0",
-      "review_status": "NOT_FILE_LEVEL_AUDITED",
-      "source_mapping_status": "NOT_COMPLETE",
-      "rights_status": "UNASSESSED",
-      "note": "Snapshot inventory only; provenance may already be present in the source file."
-    },
-    {
-      "path": "INCUMBENT_POWER_EXTRACTION_MECHANISMS_2026_KO.md",
-      "blob_sha": "32217743136c9289a203a2ae5c4ca72640a94935",
-      "review_status": "NOT_FILE_LEVEL_AUDITED",
-      "source_mapping_status": "NOT_COMPLETE",
-      "rights_status": "UNASSESSED",
-      "note": "Snapshot inventory only; provenance may already be present in the source file."
-    },
-    {
-      "path": "LONG_HORIZON_MIN_INTERVENTION_E2E.md",
-      "blob_sha": "fc6df46d053fd428f682f3e9ca38b6d70d836c36",
-      "review_status": "NOT_FILE_LEVEL_AUDITED",
-      "source_mapping_status": "NOT_COMPLETE",
-      "rights_status": "UNASSESSED",
-      "note": "Snapshot inventory only; provenance may already be present in the source file."
-    },
-    {
-      "path": "MULTI_MODEL_ADVERSARIAL_AUDIT_2026-10-06.md",
-      "blob_sha": "d6b3fb444e7b29bca24fff9fb4aac0d9956f413e",
-      "review_status": "NOT_FILE_LEVEL_AUDITED",
-      "source_mapping_status": "NOT_COMPLETE",
-      "rights_status": "UNASSESSED",
-      "note": "Snapshot inventory only; provenance may already be present in the source file."
-    },
-    {
-      "path": "ORGANIC_EMBODIMENT_ICM_BOUNDARY_HYPOTHESES_2026-10-09.md",
-      "blob_sha": "ef88669d2ef214d2b909e60c95682d6c511757db",
-      "review_status": "NOT_FILE_LEVEL_AUDITED",
-      "source_mapping_status": "NOT_COMPLETE",
-      "rights_status": "UNASSESSED",
-      "note": "Snapshot inventory only; provenance may already be present in the source file."
-    },
-    {
-      "path": "PLATFORM_ATTRIBUTION_REQUEST_EN_KO.md",
-      "blob_sha": "d8bb0c9fcdb32ae74dc42d9522cba5634e871670",
-      "review_status": "NOT_FILE_LEVEL_AUDITED",
-      "source_mapping_status": "NOT_COMPLETE",
-      "rights_status": "UNASSESSED",
-      "note": "Snapshot inventory only; provenance may already be present in the source file."
-    },
-    {
-      "path": "PRIOR_ART_AND_ATTRIBUTION.md",
-      "blob_sha": "b4bbbf9b60fbb1faa234c8ae14936b9b59abb03d",
-      "review_status": "NOT_FILE_LEVEL_AUDITED",
-      "source_mapping_status": "NOT_COMPLETE",
-      "rights_status": "UNASSESSED",
-      "note": "Snapshot inventory only; provenance may already be present in the source file."
-    },
-    {
-      "path": "PRIOR_ART_SAFETY_GOVERNANCE_CROSSWALK.md",
-      "blob_sha": "7e126c3793ad9d9ae2f663d2424cbb581c298717",
-      "review_status": "NOT_FILE_LEVEL_AUDITED",
-      "source_mapping_status": "NOT_COMPLETE",
-      "rights_status": "UNASSESSED",
-      "note": "Snapshot inventory only; provenance may already be present in the source file."
-    },
-    {
-      "path": "PRIOR_ART_SATURATION_MAP_KO.md",
-      "blob_sha": "87a985125f1c7abebc355b1fa06a134db0e3071a",
-      "review_status": "NOT_FILE_LEVEL_AUDITED",
-      "source_mapping_status": "NOT_COMPLETE",
-      "rights_status": "UNASSESSED",
-      "note": "Snapshot inventory only; provenance may already be present in the source file."
-    },
-    {
-      "path": "PROJECT_SELF_AUDIT_2026-10-09_KO.md",
-      "blob_sha": "7ca285ad402b87cf6be5704e44205a2ca8a37389",
-      "review_status": "NOT_FILE_LEVEL_AUDITED",
-      "source_mapping_status": "NOT_COMPLETE",
-      "rights_status": "UNASSESSED",
-      "note": "Snapshot inventory only; provenance may already be present in the source file."
-    },
-    {
-      "path": "PUBLIC_EVIDENCE_INDEX.md",
-      "blob_sha": "0737c80da5b1b57c84ed6f2080d19081e228b084",
-      "review_status": "NOT_FILE_LEVEL_AUDITED",
-      "source_mapping_status": "NOT_COMPLETE",
-      "rights_status": "UNASSESSED",
-      "note": "Snapshot inventory only; provenance may already be present in the source file."
-    },
-    {
-      "path": "PUBLIC_FINAL_PURPOSE_EXECUTION_MAP_KO.md",
-      "blob_sha": "642b38ae61507dcb0f8a276112f100a5fb5e6365",
-      "review_status": "NOT_FILE_LEVEL_AUDITED",
-      "source_mapping_status": "NOT_COMPLETE",
-      "rights_status": "UNASSESSED",
-      "note": "Snapshot inventory only; provenance may already be present in the source file."
-    },
-    {
-      "path": "PUBLIC_LINKEDIN_INTRODUCTION_2026-10-13_EN_KO.md",
-      "blob_sha": "b455a576d84b2f63887a51330f679a2ca1d57e4e",
-      "review_status": "NOT_FILE_LEVEL_AUDITED",
-      "source_mapping_status": "NOT_COMPLETE",
-      "rights_status": "UNASSESSED",
-      "note": "Snapshot inventory only; provenance may already be present in the source file."
-    },
-    {
-      "path": "PUBLIC_PREAMBLE_VOLUNTARY_COEXISTENCE_2026-10-13_EN_KO.md",
-      "blob_sha": "9cd7db7b3f2cba113271b47a4cbc507905defbeb",
-      "review_status": "NOT_FILE_LEVEL_AUDITED",
-      "source_mapping_status": "NOT_COMPLETE",
-      "rights_status": "UNASSESSED",
-      "note": "Snapshot inventory only; provenance may already be present in the source file."
-    },
-    {
-      "path": "PUBLIC_REVIEW_PACKET.md",
-      "blob_sha": "d407efc86ffe41d499f62e4165f8700e0efa9c45",
-      "review_status": "NOT_FILE_LEVEL_AUDITED",
-      "source_mapping_status": "NOT_COMPLETE",
-      "rights_status": "UNASSESSED",
-      "note": "Snapshot inventory only; provenance may already be present in the source file."
-    },
-    {
-      "path": "README.md",
-      "blob_sha": "ad9f68405afa500509bfcec0f6c5e90874f4bd89",
-      "review_status": "NOT_FILE_LEVEL_AUDITED",
-      "source_mapping_status": "NOT_COMPLETE",
-      "rights_status": "UNASSESSED",
-      "note": "Snapshot inventory only; provenance may already be present in the source file."
-    },
-    {
-      "path": "RESEARCH_OVERVIEW.md",
-      "blob_sha": "e80a1a8f69d8af7b6ca2a3ae227f96a1f1267d3a",
-      "review_status": "NOT_FILE_LEVEL_AUDITED",
-      "source_mapping_status": "NOT_COMPLETE",
-      "rights_status": "UNASSESSED",
-      "note": "Snapshot inventory only; provenance may already be present in the source file."
-    },
-    {
-      "path": "RESEARCH_RIGHTS_SCOPE_EN_KO.md",
-      "blob_sha": "114d340a50727a4b08d1f36de5e73586296d473e",
-      "review_status": "NOT_FILE_LEVEL_AUDITED",
-      "source_mapping_status": "NOT_COMPLETE",
-      "rights_status": "UNASSESSED",
-      "note": "Snapshot inventory only; provenance may already be present in the source file."
-    },
-    {
-      "path": "RESEARCH_STATUS_POLICY.md",
-      "blob_sha": "e99419192c4a0e406bacde0ded39dec2098d987a",
-      "review_status": "NOT_FILE_LEVEL_AUDITED",
-      "source_mapping_status": "NOT_COMPLETE",
-      "rights_status": "UNASSESSED",
-      "note": "Snapshot inventory only; provenance may already be present in the source file."
-    },
-    {
-      "path": "RESEARCH_TOC.md",
-      "blob_sha": "b13a828f2f0127e48cf42680c64e5efc4647c4d7",
-      "review_status": "NOT_FILE_LEVEL_AUDITED",
-      "source_mapping_status": "NOT_COMPLETE",
-      "rights_status": "UNASSESSED",
-      "note": "Snapshot inventory only; provenance may already be present in the source file."
-    },
-    {
-      "path": "SOURCE_ATTRIBUTION_EN_KO.md",
-      "blob_sha": "9f40b3f654533091a76e59c772d25f44d6f0e80b",
-      "review_status": "NOT_FILE_LEVEL_AUDITED",
-      "source_mapping_status": "NOT_COMPLETE",
-      "rights_status": "UNASSESSED",
-      "note": "Snapshot inventory only; provenance may already be present in the source file."
-    },
-    {
-      "path": "START_HERE_EVIDENCE_FUNDING_BILINGUAL.md",
-      "blob_sha": "cfa0b13bd6b15e207a70f25dd7de27b957c0cf56",
-      "review_status": "NOT_FILE_LEVEL_AUDITED",
-      "source_mapping_status": "NOT_COMPLETE",
-      "rights_status": "UNASSESSED",
-      "note": "Snapshot inventory only; provenance may already be present in the source file."
-    },
-    {
-      "path": "START_HERE_HUMAN_AI_KO.md",
-      "blob_sha": "afd83d904d6343d1306b439ca5362e3822c34858",
-      "review_status": "NOT_FILE_LEVEL_AUDITED",
-      "source_mapping_status": "NOT_COMPLETE",
-      "rights_status": "UNASSESSED",
-      "note": "Snapshot inventory only; provenance may already be present in the source file."
-    },
-    {
-      "path": "START_HERE_KO.md",
-      "blob_sha": "4b619c6027095cc78e92627bad6514733a0db34b",
-      "review_status": "NOT_FILE_LEVEL_AUDITED",
-      "source_mapping_status": "NOT_COMPLETE",
-      "rights_status": "UNASSESSED",
-      "note": "Snapshot inventory only; provenance may already be present in the source file."
-    },
-    {
-      "path": "TERMINOLOGY_POWER_ASYMMETRY_GOAL_INCONGRUENCE_KO.md",
-      "blob_sha": "d8d0f980702b30d99527f4bd88422cc93e229836",
-      "review_status": "NOT_FILE_LEVEL_AUDITED",
-      "source_mapping_status": "NOT_COMPLETE",
-      "rights_status": "UNASSESSED",
-      "note": "Snapshot inventory only; provenance may already be present in the source file."
-    },
-    {
-      "path": "TERMINOLOGY_STRUCTURAL_POSITION_ADVANTAGE_KO.md",
-      "blob_sha": "b6b2bccbf725ace54ae1bb1184540cc3535a41ee",
-      "review_status": "NOT_FILE_LEVEL_AUDITED",
-      "source_mapping_status": "NOT_COMPLETE",
-      "rights_status": "UNASSESSED",
-      "note": "Snapshot inventory only; provenance may already be present in the source file."
-    },
-    {
-      "path": "benchmarks/ISHPP_BIS_CIRCULAR_FINANCING_BLIND_MIN_20261010.json",
-      "blob_sha": "5a6a66016ed609efb4ec70643baeb95a6779c4f0",
-      "review_status": "NOT_FILE_LEVEL_AUDITED",
-      "source_mapping_status": "NOT_COMPLETE",
-      "rights_status": "UNASSESSED",
-      "note": "Snapshot inventory only; provenance may already be present in the source file."
-    },
-    {
-      "path": "benchmarks/ISHPP_BIS_CIRCULAR_FINANCING_SOURCES_20261010.json",
-      "blob_sha": "9ac2764814e8e27468a747aa68eeb90045733ea8",
-      "review_status": "NOT_FILE_LEVEL_AUDITED",
-      "source_mapping_status": "NOT_COMPLETE",
-      "rights_status": "UNASSESSED",
-      "note": "Snapshot inventory only; provenance may already be present in the source file."
-    },
-    {
-      "path": "benchmarks/ISHPP_DRIVER_ASSISTANCE_GATE_BLIND_20261010T1658KST.json",
-      "blob_sha": "a4bebe6bc6c83f9b872c6b0c55719b2d99c545fc",
-      "review_status": "NOT_FILE_LEVEL_AUDITED",
-      "source_mapping_status": "NOT_COMPLETE",
-      "rights_status": "UNASSESSED",
-      "note": "Snapshot inventory only; provenance may already be present in the source file."
-    },
-    {
-      "path": "benchmarks/ISHPP_DRIVER_ASSISTANCE_GATE_SOURCES_20261010T1658KST.json",
-      "blob_sha": "efca339f5543c1faa5f2a85ced3badbc33cc4016",
-      "review_status": "NOT_FILE_LEVEL_AUDITED",
-      "source_mapping_status": "NOT_COMPLETE",
-      "rights_status": "UNASSESSED",
-      "note": "Snapshot inventory only; provenance may already be present in the source file."
-    },
-    {
-      "path": "benchmarks/ISHPP_EU_GPAI_REQUEST_BLIND_20261010.json",
-      "blob_sha": "0071fd2ee91cb3277054c498ba7c95f300fbbd1f",
-      "review_status": "NOT_FILE_LEVEL_AUDITED",
-      "source_mapping_status": "NOT_COMPLETE",
-      "rights_status": "UNASSESSED",
-      "note": "Snapshot inventory only; provenance may already be present in the source file."
-    },
-    {
-      "path": "benchmarks/ISHPP_EU_GPAI_REQUEST_SOURCE_20261010.json",
-      "blob_sha": "a58547a70c03641cdf3ada0eed5c33b13a07e048",
-      "review_status": "NOT_FILE_LEVEL_AUDITED",
-      "source_mapping_status": "NOT_COMPLETE",
-      "rights_status": "UNASSESSED",
-      "note": "Snapshot inventory only; provenance may already be present in the source file."
-    },
-    {
-      "path": "benchmarks/ISHPP_EVALUATOR_MISSING_INPUT_BLIND_20261011.json",
-      "blob_sha": "92fb9077bdc41cbd33c44e6ef9a7be885c1bda26",
-      "review_status": "NOT_FILE_LEVEL_AUDITED",
-      "source_mapping_status": "NOT_COMPLETE",
-      "rights_status": "UNASSESSED",
-      "note": "Snapshot inventory only; provenance may already be present in the source file."
-    },
-    {
-      "path": "benchmarks/ISHPP_EVAL_EXTERNAL_WRITE_DELAY_SOURCES_MIN_20261010.json",
-      "blob_sha": "b25baa2608d6cc891ab666d580840ca6e74c7017",
-      "review_status": "NOT_FILE_LEVEL_AUDITED",
-      "source_mapping_status": "NOT_COMPLETE",
-      "rights_status": "UNASSESSED",
-      "note": "Snapshot inventory only; provenance may already be present in the source file."
-    },
-    {
-      "path": "benchmarks/ISHPP_HALOS_SAFETY_GATE_SOURCES_20261010.json",
-      "blob_sha": "20008757c7ba8d3e21e7af4413a6bfcb4bf62f27",
-      "review_status": "NOT_FILE_LEVEL_AUDITED",
-      "source_mapping_status": "NOT_COMPLETE",
-      "rights_status": "UNASSESSED",
-      "note": "Snapshot inventory only; provenance may already be present in the source file."
-    },
-    {
-      "path": "benchmarks/ISHPP_MATH_REVIEW_BLIND_20261010.json",
-      "blob_sha": "fa9212232474220457ed3c0c2d10800c28c9ab9c",
-      "review_status": "NOT_FILE_LEVEL_AUDITED",
-      "source_mapping_status": "NOT_COMPLETE",
-      "rights_status": "UNASSESSED",
-      "note": "Snapshot inventory only; provenance may already be present in the source file."
-    },
-    {
-      "path": "benchmarks/ISHPP_PHYSICAL_OPEN_STACK_SOURCES_20261010.json",
-      "blob_sha": "527497ebfa9d9e8763900293f863086363d8ee64",
-      "review_status": "NOT_FILE_LEVEL_AUDITED",
-      "source_mapping_status": "NOT_COMPLETE",
-      "rights_status": "UNASSESSED",
-      "note": "Snapshot inventory only; provenance may already be present in the source file."
-    },
-    {
-      "path": "benchmarks/ISHPP_PHYSICAL_PROCUREMENT_BLIND_20261010.json",
-      "blob_sha": "6cfe1a1c22e54d8e9e8bc8ae1f64229c8a9c9089",
-      "review_status": "NOT_FILE_LEVEL_AUDITED",
-      "source_mapping_status": "NOT_COMPLETE",
-      "rights_status": "UNASSESSED",
-      "note": "Snapshot inventory only; provenance may already be present in the source file."
-    },
-    {
-      "path": "benchmarks/ISHPP_PILOT_LIMITS_20261011.md",
-      "blob_sha": "7193780a5555e8426f32fc380f4f3e078601681b",
-      "review_status": "NOT_FILE_LEVEL_AUDITED",
-      "source_mapping_status": "NOT_COMPLETE",
-      "rights_status": "UNASSESSED",
-      "note": "Snapshot inventory only; provenance may already be present in the source file."
-    },
-    {
-      "path": "benchmarks/ISHPP_PUBLIC_REPLICATION_PACK_20261011_KO.md",
-      "blob_sha": "8d518c0c8fb604b3fa3b71e40ca7caae6645c56d",
-      "review_status": "NOT_FILE_LEVEL_AUDITED",
-      "source_mapping_status": "NOT_COMPLETE",
-      "rights_status": "UNASSESSED",
-      "note": "Snapshot inventory only; provenance may already be present in the source file."
-    },
-    {
-      "path": "benchmarks/ISHPP_REAL_WORLD_CASE_SOURCES_v0_2.json",
-      "blob_sha": "b0eea401a7d06e1c626c2c527b6ec6c558a9dbb5",
-      "review_status": "NOT_FILE_LEVEL_AUDITED",
-      "source_mapping_status": "NOT_COMPLETE",
-      "rights_status": "UNASSESSED",
-      "note": "Snapshot inventory only; provenance may already be present in the source file."
-    },
-    {
-      "path": "benchmarks/ISHPP_REAL_WORLD_SOURCE_MAP_v0_1.json",
-      "blob_sha": "8d86b6760ce7259168dae898a529a67cd7e7d398",
-      "review_status": "NOT_FILE_LEVEL_AUDITED",
-      "source_mapping_status": "NOT_COMPLETE",
-      "rights_status": "UNASSESSED",
-      "note": "Snapshot inventory only; provenance may already be present in the source file."
-    },
-    {
-      "path": "benchmarks/ISHPP_ROBOT_DATA_LABOR_SOURCES_MIN_20261010_V1.json",
-      "blob_sha": "7a110833e46452b5655c120bcf707d87cc3b921d",
-      "review_status": "NOT_FILE_LEVEL_AUDITED",
-      "source_mapping_status": "NOT_COMPLETE",
-      "rights_status": "UNASSESSED",
-      "note": "Snapshot inventory only; provenance may already be present in the source file."
-    },
-    {
-      "path": "benchmarks/ISHPP_SAFETY_DISCLOSURE_857_BLIND_MIN_20261010.json",
-      "blob_sha": "a7654699068707b24d365256b596e06356fb81b0",
-      "review_status": "NOT_FILE_LEVEL_AUDITED",
-      "source_mapping_status": "NOT_COMPLETE",
-      "rights_status": "UNASSESSED",
-      "note": "Snapshot inventory only; provenance may already be present in the source file."
-    },
-    {
-      "path": "benchmarks/ISHPP_WITHDRAWAL_REVOCABILITY_BLIND_20261010.json",
-      "blob_sha": "31fb2ad77d09022a964bbfbfaa4ec643cd4b272b",
-      "review_status": "NOT_FILE_LEVEL_AUDITED",
-      "source_mapping_status": "NOT_COMPLETE",
-      "rights_status": "UNASSESSED",
-      "note": "Snapshot inventory only; provenance may already be present in the source file."
-    },
-    {
-      "path": "benchmarks/ISHPP_WITHDRAWAL_REVOCABILITY_SOURCES_20261010.json",
-      "blob_sha": "8c0c254c57589491d941d8941b0b6557ccbc3a5f",
-      "review_status": "NOT_FILE_LEVEL_AUDITED",
-      "source_mapping_status": "NOT_COMPLETE",
-      "rights_status": "UNASSESSED",
-      "note": "Snapshot inventory only; provenance may already be present in the source file."
-    },
-    {
-      "path": "benchmarks/ISHPP_WORKPLACE_AI_SCORING_BLIND_20261010.json",
-      "blob_sha": "02067bb4b5e2c4084709de0401ff5c35232632e2",
-      "review_status": "NOT_FILE_LEVEL_AUDITED",
-      "source_mapping_status": "NOT_COMPLETE",
-      "rights_status": "UNASSESSED",
-      "note": "Snapshot inventory only; provenance may already be present in the source file."
-    },
-    {
-      "path": "benchmarks/ISHPP_WORKPLACE_AI_SCORING_SOURCE_MIN_20261010.json",
-      "blob_sha": "f12c4f967458e773e637f8866d199d117204d209",
-      "review_status": "NOT_FILE_LEVEL_AUDITED",
-      "source_mapping_status": "NOT_COMPLETE",
-      "rights_status": "UNASSESSED",
-      "note": "Snapshot inventory only; provenance may already be present in the source file."
-    },
-    {
-      "path": "benchmarks/test_ishpp_blind_boundary.py",
-      "blob_sha": "30ddbc6dfa6af86db78367ce5d8b988991fa32ae",
-      "review_status": "NOT_FILE_LEVEL_AUDITED",
-      "source_mapping_status": "NOT_COMPLETE",
-      "rights_status": "UNASSESSED",
-      "note": "Snapshot inventory only; provenance may already be present in the source file."
-    },
-    {
-      "path": "benchmarks/validate_ishpp_blind.py",
-      "blob_sha": "279613ec9a84463dec44fef30b730c3fa475d510",
-      "review_status": "NOT_FILE_LEVEL_AUDITED",
-      "source_mapping_status": "NOT_COMPLETE",
-      "rights_status": "UNASSESSED",
-      "note": "Snapshot inventory only; provenance may already be present in the source file."
-    },
-    {
-      "path": "capability_lab/ANSWERABILITY_PROTOCOL_KO.md",
-      "blob_sha": "cda222add3fdb743ef05644a5d7c5e0df6dfccb7",
-      "review_status": "NOT_FILE_LEVEL_AUDITED",
-      "source_mapping_status": "NOT_COMPLETE",
-      "rights_status": "UNASSESSED",
-      "note": "Snapshot inventory only; provenance may already be present in the source file."
-    },
-    {
-      "path": "capability_lab/README_KO.md",
-      "blob_sha": "6c5c83c185aa0f8c7740b13b50fd49f78642bea7",
-      "review_status": "NOT_FILE_LEVEL_AUDITED",
-      "source_mapping_status": "NOT_COMPLETE",
-      "rights_status": "UNASSESSED",
-      "note": "Snapshot inventory only; provenance may already be present in the source file."
-    },
-    {
-      "path": "capability_lab/RESULT_2026-10-11_KO.md",
-      "blob_sha": "f5e4a23d5e3e8be08d0fd635be17b6c6850fdeb3",
-      "review_status": "NOT_FILE_LEVEL_AUDITED",
-      "source_mapping_status": "NOT_COMPLETE",
-      "rights_status": "UNASSESSED",
-      "note": "Snapshot inventory only; provenance may already be present in the source file."
-    },
-    {
-      "path": "capability_lab/RESULT_ANSWERABILITY_2026-10-11_KO.md",
-      "blob_sha": "ace2815b796a87a0e055a824b86a436544271e45",
-      "review_status": "NOT_FILE_LEVEL_AUDITED",
-      "source_mapping_status": "NOT_COMPLETE",
-      "rights_status": "UNASSESSED",
-      "note": "Snapshot inventory only; provenance may already be present in the source file."
-    },
-    {
-      "path": "capability_lab/RESULT_FORMAL_LOGIC_2026-10-11_KO.md",
-      "blob_sha": "8d29058998839cbf57fdc355d33798c995916980",
-      "review_status": "NOT_FILE_LEVEL_AUDITED",
-      "source_mapping_status": "NOT_COMPLETE",
-      "rights_status": "UNASSESSED",
-      "note": "Snapshot inventory only; provenance may already be present in the source file."
-    },
-    {
-      "path": "capability_lab/__init__.py",
-      "blob_sha": "09aec67b5d855b199abbf2a066537dba9e120562",
-      "review_status": "NOT_FILE_LEVEL_AUDITED",
-      "source_mapping_status": "NOT_COMPLETE",
-      "rights_status": "UNASSESSED",
-      "note": "Snapshot inventory only; provenance may already be present in the source file."
-    },
-    {
-      "path": "capability_lab/answerability_cases.json",
-      "blob_sha": "1a9ffeb9ce6be6ce0c4b0e6b188a67e3ac8b66e8",
-      "review_status": "NOT_FILE_LEVEL_AUDITED",
-      "source_mapping_status": "NOT_COMPLETE",
-      "rights_status": "UNASSESSED",
-      "note": "Snapshot inventory only; provenance may already be present in the source file."
-    },
-    {
-      "path": "capability_lab/answerability_evolution.py",
-      "blob_sha": "6150e58ba0c55098e6046244fabbcdb0f10e9fb8",
-      "review_status": "NOT_FILE_LEVEL_AUDITED",
-      "source_mapping_status": "NOT_COMPLETE",
-      "rights_status": "UNASSESSED",
-      "note": "Snapshot inventory only; provenance may already be present in the source file."
-    },
-    {
-      "path": "capability_lab/benchmark.json",
-      "blob_sha": "b51801b506c21ebb369357bfaa4128c274eb5f66",
-      "review_status": "NOT_FILE_LEVEL_AUDITED",
-      "source_mapping_status": "NOT_COMPLETE",
-      "rights_status": "UNASSESSED",
-      "note": "Snapshot inventory only; provenance may already be present in the source file."
-    },
-    {
-      "path": "capability_lab/formal_logic.py",
-      "blob_sha": "370bec42e8adac1eb282114d9552fac8d1d9444c",
-      "review_status": "NOT_FILE_LEVEL_AUDITED",
-      "source_mapping_status": "NOT_COMPLETE",
-      "rights_status": "UNASSESSED",
-      "note": "Snapshot inventory only; provenance may already be present in the source file."
-    },
-    {
-      "path": "capability_lab/logic_cases.json",
-      "blob_sha": "9b32da3277a4ebaf157b556cbc4f5411bf2d993c",
-      "review_status": "NOT_FILE_LEVEL_AUDITED",
-      "source_mapping_status": "NOT_COMPLETE",
-      "rights_status": "UNASSESSED",
-      "note": "Snapshot inventory only; provenance may already be present in the source file."
-    },
-    {
-      "path": "capability_lab/retrieval_evolution.py",
-      "blob_sha": "9c31119c13cbaa1090500e4056cae4f9c877c072",
-      "review_status": "NOT_FILE_LEVEL_AUDITED",
-      "source_mapping_status": "NOT_COMPLETE",
-      "rights_status": "UNASSESSED",
-      "note": "Snapshot inventory only; provenance may already be present in the source file."
-    },
-    {
-      "path": "capability_lab/test_answerability_evolution.py",
-      "blob_sha": "07062a45e9cbb4f872e7c3530bd9713d7401b16c",
-      "review_status": "NOT_FILE_LEVEL_AUDITED",
-      "source_mapping_status": "NOT_COMPLETE",
-      "rights_status": "UNASSESSED",
-      "note": "Snapshot inventory only; provenance may already be present in the source file."
-    },
-    {
-      "path": "capability_lab/test_formal_logic.py",
-      "blob_sha": "981b8416cae50392417d46a89d21d086246ca471",
-      "review_status": "NOT_FILE_LEVEL_AUDITED",
-      "source_mapping_status": "NOT_COMPLETE",
-      "rights_status": "UNASSESSED",
-      "note": "Snapshot inventory only; provenance may already be present in the source file."
-    },
-    {
-      "path": "capability_lab/test_retrieval_evolution.py",
-      "blob_sha": "b773205fd1d7449e4269e1b71a683926d26bee77",
-      "review_status": "NOT_FILE_LEVEL_AUDITED",
-      "source_mapping_status": "NOT_COMPLETE",
-      "rights_status": "UNASSESSED",
-      "note": "Snapshot inventory only; provenance may already be present in the source file."
-    },
-    {
-      "path": "continuity/GITHUB_LOCAL_HANDOFF_PROTOCOL.md",
-      "blob_sha": "9f7dee6eac594dc56745d1768e5f89b055438a0a",
-      "review_status": "NOT_FILE_LEVEL_AUDITED",
-      "source_mapping_status": "NOT_COMPLETE",
-      "rights_status": "UNASSESSED",
-      "note": "Snapshot inventory only; provenance may already be present in the source file."
-    },
-    {
-      "path": "continuity/handoff-policy.json",
-      "blob_sha": "86fee659c3af52a562937e3321f0878ac4811901",
-      "review_status": "NOT_FILE_LEVEL_AUDITED",
-      "source_mapping_status": "NOT_COMPLETE",
-      "rights_status": "UNASSESSED",
-      "note": "Snapshot inventory only; provenance may already be present in the source file."
-    },
-    {
-      "path": "continuity/handoff-receipt-schema-v1.json",
-      "blob_sha": "4526513ab591ad148cc06da11fa46df7f9c10d1a",
-      "review_status": "NOT_FILE_LEVEL_AUDITED",
-      "source_mapping_status": "NOT_COMPLETE",
-      "rights_status": "UNASSESSED",
-      "note": "Snapshot inventory only; provenance may already be present in the source file."
-    },
-    {
-      "path": "continuity/validate_handoff.py",
-      "blob_sha": "7d8ec2e18dfa07ac7350e71cf7c0f8307f65533e",
-      "review_status": "NOT_FILE_LEVEL_AUDITED",
-      "source_mapping_status": "NOT_COMPLETE",
-      "rights_status": "UNASSESSED",
-      "note": "Snapshot inventory only; provenance may already be present in the source file."
-    },
-    {
       "path": "evaluation/ISHPP_EVALUATOR_SCORECARD_v0_1_KO.md",
       "blob_sha": "68fc62b830446c05e448abc16ddea89168fc7d36",
       "review_status": "NOT_FILE_LEVEL_AUDITED",
@@ -1459,6 +1356,30 @@
       "note": "Snapshot inventory only; provenance may already be present in the source file."
     },
     {
+      "path": "experiments/e007/LICENSE-APACHE-2.0.txt",
+      "blob_sha": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Non-primary text/code asset may still carry its own source attribution, embedded third-party material, and license."
+    },
+    {
+      "path": "experiments/e007/LICENSE-CC-BY-4.0.txt",
+      "blob_sha": "13ca539f377dc705af32b8d2ce89262298ea2f06",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Non-primary text/code asset may still carry its own source attribution, embedded third-party material, and license."
+    },
+    {
+      "path": "experiments/e007/model.py",
+      "blob_sha": "b10f2555e3b1f3198d11d7d550a877cd1e796f63",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
       "path": "experiments/e007/PROVENANCE.md",
       "blob_sha": "cb0abae70181f97720bdaeb250115ada0be1a1bf",
       "review_status": "NOT_FILE_LEVEL_AUDITED",
@@ -1475,16 +1396,16 @@
       "note": "Snapshot inventory only; provenance may already be present in the source file."
     },
     {
-      "path": "experiments/e007/RUN.md",
-      "blob_sha": "2a12b09ce28d023b72f98609eeb34c9a0d944e89",
+      "path": "experiments/e007/requirements.txt",
+      "blob_sha": "e96a830ac9864a951dd4ce54a9167e1039cbd199",
       "review_status": "NOT_FILE_LEVEL_AUDITED",
       "source_mapping_status": "NOT_COMPLETE",
       "rights_status": "UNASSESSED",
-      "note": "Snapshot inventory only; provenance may already be present in the source file."
+      "note": "Non-primary text/code asset may still carry its own source attribution, embedded third-party material, and license."
     },
     {
-      "path": "experiments/e007/model.py",
-      "blob_sha": "b10f2555e3b1f3198d11d7d550a877cd1e796f63",
+      "path": "experiments/e007/RUN.md",
+      "blob_sha": "2a12b09ce28d023b72f98609eeb34c9a0d944e89",
       "review_status": "NOT_FILE_LEVEL_AUDITED",
       "source_mapping_status": "NOT_COMPLETE",
       "rights_status": "UNASSESSED",
@@ -1547,14 +1468,6 @@
       "note": "Snapshot inventory only; provenance may already be present in the source file."
     },
     {
-      "path": "experiments/e008/EXECUTABILITY_AUDIT.json",
-      "blob_sha": "7ec6f3a9e778bd11e0b36db5ae27a60ee8b53d3d",
-      "review_status": "NOT_FILE_LEVEL_AUDITED",
-      "source_mapping_status": "NOT_COMPLETE",
-      "rights_status": "UNASSESSED",
-      "note": "Snapshot inventory only; provenance may already be present in the source file."
-    },
-    {
       "path": "experiments/e008/EXECUTABILITY_AUDIT_EN.md",
       "blob_sha": "94c4f16c6134a299237f625f351af9726c32ede6",
       "review_status": "NOT_FILE_LEVEL_AUDITED",
@@ -1571,6 +1484,14 @@
       "note": "Snapshot inventory only; provenance may already be present in the source file."
     },
     {
+      "path": "experiments/e008/EXECUTABILITY_AUDIT.json",
+      "blob_sha": "7ec6f3a9e778bd11e0b36db5ae27a60ee8b53d3d",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
       "path": "experiments/e008/MUTUAL_ACCEPTABILITY_AMENDMENT_v1_1.md",
       "blob_sha": "173b17d5da41be5dd13eaa1a8a4d3ffaa26a331e",
       "review_status": "NOT_FILE_LEVEL_AUDITED",
@@ -1579,16 +1500,16 @@
       "note": "Snapshot inventory only; provenance may already be present in the source file."
     },
     {
-      "path": "experiments/e008/README.md",
-      "blob_sha": "6c6654ab09d4cd76c799277af44c90684e51cfa7",
+      "path": "experiments/e008/readiness_audit.js",
+      "blob_sha": "3eba324a468baa63949b5079db9f1c7ff2f551b0",
       "review_status": "NOT_FILE_LEVEL_AUDITED",
       "source_mapping_status": "NOT_COMPLETE",
       "rights_status": "UNASSESSED",
       "note": "Snapshot inventory only; provenance may already be present in the source file."
     },
     {
-      "path": "experiments/e008/readiness_audit.js",
-      "blob_sha": "3eba324a468baa63949b5079db9f1c7ff2f551b0",
+      "path": "experiments/e008/README.md",
+      "blob_sha": "6c6654ab09d4cd76c799277af44c90684e51cfa7",
       "review_status": "NOT_FILE_LEVEL_AUDITED",
       "source_mapping_status": "NOT_COMPLETE",
       "rights_status": "UNASSESSED",
@@ -1611,6 +1532,14 @@
       "note": "Snapshot inventory only; provenance may already be present in the source file."
     },
     {
+      "path": "experiments/e009/benchmark.py",
+      "blob_sha": "e190d2a2466e44b62752eff6f547eb79bc4c6b7f",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
       "path": "experiments/e009/EXECUTABLE_PROTOCOL_v1_1.md",
       "blob_sha": "f11ac25b70bf5a149a3c9840e80cf40afb6e5e51",
       "review_status": "NOT_FILE_LEVEL_AUDITED",
@@ -1621,6 +1550,14 @@
     {
       "path": "experiments/e009/EXECUTION_RECEIPT.json",
       "blob_sha": "86e4772b2a6fafbb2ec50c5112e1886b09641c52",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "experiments/e009/paired_observation_audit.py",
+      "blob_sha": "71f09ac0a8f6205c90bc6b77d0effb0f29fb5e20",
       "review_status": "NOT_FILE_LEVEL_AUDITED",
       "source_mapping_status": "NOT_COMPLETE",
       "rights_status": "UNASSESSED",
@@ -1645,22 +1582,6 @@
     {
       "path": "experiments/e009/RESULT.md",
       "blob_sha": "6219f35f05f7579595cbe7a40a1b9d5ba4a77a44",
-      "review_status": "NOT_FILE_LEVEL_AUDITED",
-      "source_mapping_status": "NOT_COMPLETE",
-      "rights_status": "UNASSESSED",
-      "note": "Snapshot inventory only; provenance may already be present in the source file."
-    },
-    {
-      "path": "experiments/e009/benchmark.py",
-      "blob_sha": "e190d2a2466e44b62752eff6f547eb79bc4c6b7f",
-      "review_status": "NOT_FILE_LEVEL_AUDITED",
-      "source_mapping_status": "NOT_COMPLETE",
-      "rights_status": "UNASSESSED",
-      "note": "Snapshot inventory only; provenance may already be present in the source file."
-    },
-    {
-      "path": "experiments/e009/paired_observation_audit.py",
-      "blob_sha": "71f09ac0a8f6205c90bc6b77d0effb0f29fb5e20",
       "review_status": "NOT_FILE_LEVEL_AUDITED",
       "source_mapping_status": "NOT_COMPLETE",
       "rights_status": "UNASSESSED",
@@ -1723,6 +1644,14 @@
       "note": "Snapshot inventory only; provenance may already be present in the source file."
     },
     {
+      "path": "experiments/semantic_fidelity_probe/probe.py",
+      "blob_sha": "00a546cf408d85decab8b758761b380e69812205",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
       "path": "experiments/semantic_fidelity_probe/RESULT.json",
       "blob_sha": "28fb54e04cb28d9074b16376b7fc7032a6bb4fb7",
       "review_status": "NOT_FILE_LEVEL_AUDITED",
@@ -1731,8 +1660,16 @@
       "note": "Snapshot inventory only; provenance may already be present in the source file."
     },
     {
-      "path": "experiments/semantic_fidelity_probe/probe.py",
-      "blob_sha": "00a546cf408d85decab8b758761b380e69812205",
+      "path": "FAILURE_REGRESSION_INDEX.md",
+      "blob_sha": "2f8e26c21f4093ac463bc4bdb24382ecd1703ea2",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "FINAL_PURPOSE_EXECUTION_STATE.json",
+      "blob_sha": "300c61ff518f2a0827e9ae754dd8e7427c9da1ca",
       "review_status": "NOT_FILE_LEVEL_AUDITED",
       "source_mapping_status": "NOT_COMPLETE",
       "rights_status": "UNASSESSED",
@@ -1803,8 +1740,8 @@
       "note": "Snapshot inventory only; provenance may already be present in the source file."
     },
     {
-      "path": "governance/selective_truth_gate/README_KO.md",
-      "blob_sha": "015fc1d597d048cedab9f49e27abadc8c8a7a37e",
+      "path": "GOAL_HIERARCHY_REPAIR_2026-10-05_KO.md",
+      "blob_sha": "8f68dfdf95e4a4f0fde934ed8aa348830a9ca047",
       "review_status": "NOT_FILE_LEVEL_AUDITED",
       "source_mapping_status": "NOT_COMPLETE",
       "rights_status": "UNASSESSED",
@@ -1813,6 +1750,14 @@
     {
       "path": "governance/selective_truth_gate/gate.py",
       "blob_sha": "5f80d6ffa7cca41234969d3116b687863499fdb2",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "governance/selective_truth_gate/README_KO.md",
+      "blob_sha": "015fc1d597d048cedab9f49e27abadc8c8a7a37e",
       "review_status": "NOT_FILE_LEVEL_AUDITED",
       "source_mapping_status": "NOT_COMPLETE",
       "rights_status": "UNASSESSED",
@@ -1843,20 +1788,36 @@
       "note": "Snapshot inventory only; provenance may already be present in the source file."
     },
     {
-      "path": "knowledge/README.md",
-      "blob_sha": "85c9c6bb15c9e02090e13cd05cee69c045316dfa",
+      "path": "HISTORICAL_STATE_CONTROL_MEMORY_PROVENANCE_CAPTURE_v0_1_EN.md",
+      "blob_sha": "f54ce43bbe6562de9b023252f9bdb4aa4d00c7b1",
       "review_status": "NOT_FILE_LEVEL_AUDITED",
       "source_mapping_status": "NOT_COMPLETE",
       "rights_status": "UNASSESSED",
       "note": "Snapshot inventory only; provenance may already be present in the source file."
     },
     {
-      "path": "knowledge/SOURCE_REGISTRY.md",
-      "blob_sha": "6fccbb07a18a336873f775642aa9c2c53aecf2b8",
+      "path": "HISTORICAL_STATE_CONTROL_MEMORY_PROVENANCE_CAPTURE_v0_1_KO.md",
+      "blob_sha": "5c86bec9c8a2fa6bab8114fe7fa820c15cc7d3b0",
       "review_status": "NOT_FILE_LEVEL_AUDITED",
       "source_mapping_status": "NOT_COMPLETE",
       "rights_status": "UNASSESSED",
       "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "INCUMBENT_POWER_EXTRACTION_MECHANISMS_2026_KO.md",
+      "blob_sha": "32217743136c9289a203a2ae5c4ca72640a94935",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "knowledge/explorer.html",
+      "blob_sha": "e8d9abcee34049193485cff84b7409dcc6211453",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Non-primary text/code asset may still carry its own source attribution, embedded third-party material, and license."
     },
     {
       "path": "knowledge/graph.json",
@@ -1867,8 +1828,24 @@
       "note": "Snapshot inventory only; provenance may already be present in the source file."
     },
     {
+      "path": "knowledge/README.md",
+      "blob_sha": "85c9c6bb15c9e02090e13cd05cee69c045316dfa",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
       "path": "knowledge/schema-v1.json",
       "blob_sha": "a2ec2ca6c7deb14a0825f45b9179cbb9ecd836d0",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "knowledge/SOURCE_REGISTRY.md",
+      "blob_sha": "6fccbb07a18a336873f775642aa9c2c53aecf2b8",
       "review_status": "NOT_FILE_LEVEL_AUDITED",
       "source_mapping_status": "NOT_COMPLETE",
       "rights_status": "UNASSESSED",
@@ -1899,6 +1876,70 @@
       "note": "Snapshot inventory only; provenance may already be present in the source file."
     },
     {
+      "path": "llms.txt",
+      "blob_sha": "bcd345a39d98eda7df75fb401ff2618f339b8996",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Non-primary text/code asset may still carry its own source attribution, embedded third-party material, and license."
+    },
+    {
+      "path": "LONG_HORIZON_MIN_INTERVENTION_E2E.md",
+      "blob_sha": "fc6df46d053fd428f682f3e9ca38b6d70d836c36",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "MULTI_MODEL_ADVERSARIAL_AUDIT_2026-10-06.md",
+      "blob_sha": "d6b3fb444e7b29bca24fff9fb4aac0d9956f413e",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "ORGANIC_EMBODIMENT_ICM_BOUNDARY_HYPOTHESES_2026-10-09.md",
+      "blob_sha": "ef88669d2ef214d2b909e60c95682d6c511757db",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "PLATFORM_ATTRIBUTION_REQUEST_EN_KO.md",
+      "blob_sha": "d8bb0c9fcdb32ae74dc42d9522cba5634e871670",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "PRIOR_ART_AND_ATTRIBUTION.md",
+      "blob_sha": "b4bbbf9b60fbb1faa234c8ae14936b9b59abb03d",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "PRIOR_ART_SAFETY_GOVERNANCE_CROSSWALK.md",
+      "blob_sha": "7e126c3793ad9d9ae2f663d2424cbb581c298717",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "PRIOR_ART_SATURATION_MAP_KO.md",
+      "blob_sha": "87a985125f1c7abebc355b1fa06a134db0e3071a",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
       "path": "prior-art/HARM_EXPLOITATION_ATTACK_MAGNITUDE_PRIOR_ART_KO.md",
       "blob_sha": "5cbe38352c42a15af99de100df9aa0e83f5f7520",
       "review_status": "NOT_FILE_LEVEL_AUDITED",
@@ -1917,6 +1958,14 @@
     {
       "path": "prior-art/UNINTENTIONAL_HARM_ATTACK_PRIOR_ART_KO.md",
       "blob_sha": "a8bfdb79570e62b1d8f714999cd4656e453d1c31",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "PROJECT_SELF_AUDIT_2026-10-09_KO.md",
+      "blob_sha": "7ca285ad402b87cf6be5704e44205a2ca8a37389",
       "review_status": "NOT_FILE_LEVEL_AUDITED",
       "source_mapping_status": "NOT_COMPLETE",
       "rights_status": "UNASSESSED",
@@ -1947,8 +1996,88 @@
       "note": "Snapshot inventory only; provenance may already be present in the source file."
     },
     {
+      "path": "PUBLIC_EVIDENCE_INDEX.md",
+      "blob_sha": "0737c80da5b1b57c84ed6f2080d19081e228b084",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "PUBLIC_FINAL_PURPOSE_EXECUTION_MAP_KO.md",
+      "blob_sha": "642b38ae61507dcb0f8a276112f100a5fb5e6365",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "PUBLIC_LINKEDIN_INTRODUCTION_2026-10-13_EN_KO.md",
+      "blob_sha": "b455a576d84b2f63887a51330f679a2ca1d57e4e",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "PUBLIC_PREAMBLE_VOLUNTARY_COEXISTENCE_2026-10-13_EN_KO.md",
+      "blob_sha": "9cd7db7b3f2cba113271b47a4cbc507905defbeb",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "PUBLIC_REVIEW_PACKET.md",
+      "blob_sha": "d407efc86ffe41d499f62e4165f8700e0efa9c45",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "README.md",
+      "blob_sha": "ad9f68405afa500509bfcec0f6c5e90874f4bd89",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
       "path": "reports/AI_FINAL_CONVERGENCE_RISK_TOP10_KO.md",
       "blob_sha": "4c456ea254e39929a337005a6d80f1a154012e0c",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "RESEARCH_OVERVIEW.md",
+      "blob_sha": "e80a1a8f69d8af7b6ca2a3ae227f96a1f1267d3a",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "RESEARCH_RIGHTS_SCOPE_EN_KO.md",
+      "blob_sha": "114d340a50727a4b08d1f36de5e73586296d473e",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "RESEARCH_STATUS_POLICY.md",
+      "blob_sha": "e99419192c4a0e406bacde0ded39dec2098d987a",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "RESEARCH_TOC.md",
+      "blob_sha": "b13a828f2f0127e48cf42680c64e5efc4647c4d7",
       "review_status": "NOT_FILE_LEVEL_AUDITED",
       "source_mapping_status": "NOT_COMPLETE",
       "rights_status": "UNASSESSED",
@@ -2075,6 +2204,54 @@
       "note": "Snapshot inventory only; provenance may already be present in the source file."
     },
     {
+      "path": "SOURCE_ATTRIBUTION_EN_KO.md",
+      "blob_sha": "9f40b3f654533091a76e59c772d25f44d6f0e80b",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "START_HERE_EVIDENCE_FUNDING_BILINGUAL.md",
+      "blob_sha": "cfa0b13bd6b15e207a70f25dd7de27b957c0cf56",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "START_HERE_HUMAN_AI_KO.md",
+      "blob_sha": "afd83d904d6343d1306b439ca5362e3822c34858",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "START_HERE_KO.md",
+      "blob_sha": "4b619c6027095cc78e92627bad6514733a0db34b",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "TERMINOLOGY_POWER_ASYMMETRY_GOAL_INCONGRUENCE_KO.md",
+      "blob_sha": "d8d0f980702b30d99527f4bd88422cc93e229836",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "TERMINOLOGY_STRUCTURAL_POSITION_ADVANTAGE_KO.md",
+      "blob_sha": "b6b2bccbf725ace54ae1bb1184540cc3535a41ee",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
       "path": "tools/check_public_sponsorship.py",
       "blob_sha": "7bcc14d5d44c03716d9bd9b125cb69223bafb6f1",
       "review_status": "NOT_FILE_LEVEL_AUDITED",
@@ -2090,5 +2267,7 @@
       "rights_status": "UNASSESSED",
       "note": "Snapshot inventory only; provenance may already be present in the source file."
     }
-  ]
+  ],
+  "snapshot_git_tree_sha": "90f8db821d57bab8a36b506b3457cf6e52dccd80",
+  "snapshot_git_tree_complete": true
 }
