@@ -1,0 +1,17 @@
+{
+  "evidence_status": "PROJECT_SYNTHETIC_DETECTION_ONLY_NOT_CAUSAL",
+  "signal": {
+    "baseline_brier": 0.22554567092153407,
+    "with_exit_brier": 0.2173797149009564,
+    "improvement": 0.00816595602057768
+  },
+  "null": {
+    "baseline_brier": 0.1853427201357943,
+    "with_exit_brier": 0.18553836290983347,
+    "improvement": -0.00019564277403916197
+  },
+  "pre_registered_test": {
+    "signal_pass": true,
+    "null_pass": true
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "n": 8000,
+  "observational_rows_identical": true,
+  "do_x0_minus_do_x2_risk_causal_model": 0.2399999999999896,
+  "do_x0_minus_do_x2_risk_proxy_model": 0,
+  "evidence_status": "SYNTHETIC_OBSERVATIONAL_NONIDENTIFICATION_ONLY"
+}

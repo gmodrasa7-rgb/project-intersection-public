@@ -37,6 +37,8 @@
 **원본 표기 해설 / Edition note:** “Original 1 / 원본2”는 여기서 문서의 **게시·검토 순서와 대응본 표기**이며, 영어권 연구자가 인간 창시자의 발상을 처음 제안했다는 주장이 아니다. 양쪽은 요약-전문 관계가 아닌 의미 대응 전문이다. 의미충돌은 원안의 원문·기여 기록 및 독립적 대조로 해결하고, 한쪽 언어만으로 가설·반례·결론을 몰래 추가하거나 변경하지 않는다. 이 순서는 2026-10-13 사용자의 최신 명시 지시에 따른 것으로, 과거 언어정책과의 변경이력을 보존한다.
 
 
+**New reproducible synthetic counterexamples / 공개 합성 반례:** [E041 EN1](experiments/e041/README_EN.md) · [KO2](experiments/e041/README_KO.md) — predictive information is not causal identification; [U21 EN1](experiments/dependency_paths/README_EN.md) · [KO2](experiments/dependency_paths/README_KO.md) — nominal path count is not independent recovery. **Synthetic/logical evidence only, not field validation.** Human founder contribution and negative-result provenance are preserved. / 합성·논리적 실험이며 현실 검증·외부 독립복제가 아니다.
+
 ## Current research and funding links / 현재 연구·후원 안내
 
 > **Public research preface — Original 1 English / 원본2 한국어:** [Seven research questions on practical oversight, role reversal, voluntary cooperation and minimum safety rules; six original research domains, evidence and funding boundaries](PUBLIC_PREAMBLE_VOLUNTARY_COEXISTENCE_2026-10-13_EN_KO.md). / **연구 통합 머릿말:** 개발자·시스템의 능력 변화, 부모·자녀, 고용관계, 실질적인 감독·이탈·협력과 최소 안전규칙에 관한 7개 질문 및 기존 6대 연구영역.

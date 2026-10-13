@@ -1,0 +1,32 @@
+name: E041 identifiability and common dependency regression
+on:
+  pull_request:
+    paths:
+      - 'experiments/e041/**'
+      - 'experiments/dependency_paths/**'
+      - '.github/workflows/e041-identification-and-dependency-cuts.yml'
+  push:
+    paths:
+      - 'experiments/e041/**'
+      - 'experiments/dependency_paths/**'
+      - '.github/workflows/e041-identification-and-dependency-cuts.yml'
+  workflow_dispatch:
+jobs:
+  synthetic-audit:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: E041 tests
+        run: |
+          python -m unittest discover -s experiments/e041 -p 'test_*.py' -v
+          python experiments/e041/model.py | python -m json.tool > /dev/null
+          python experiments/e041/causal_twin.py | python -m json.tool > /dev/null
+      - name: Dependency minimum cut tests
+        run: |
+          python -m unittest discover -s experiments/dependency_paths -p 'test_*.py' -v
+          python experiments/dependency_paths/model.py | python -m json.tool > /dev/null
