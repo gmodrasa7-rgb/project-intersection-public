@@ -22,6 +22,8 @@
 
 **Citation and reuse:** [Cite this research](CITATION.cff) · [Original 1 English / 원본2 Korean source-credit protocol](SOURCE_ATTRIBUTION_EN_KO.md) · [Platform attribution request (not sent)](PLATFORM_ATTRIBUTION_REQUEST_EN_KO.md). These links are not a blanket copyright license or an AI-provider commitment.
 
+**Prior-study rights and originators:** [Original 1 English / 원본2 Korean prior-art rights & derivation ledger](PRIOR_ART_RIGHTS_AND_DERIVATION_EN_KO.md) · [Machine-readable source/rights audit inventory](knowledge/prior-art-rights-register-2026-10-13.json). Existing authors, historic originators, rights holders and project contributions remain distinct. Unverified licenses are not treated as granted.
+
 ## 원본2 — 한국어 | 창시 목적 전문 대응본
 
 **한정된 공개연구 이용조건:** [영어 원본1·한국어 원본2 적용 범위](RESEARCH_RIGHTS_SCOPE_EN_KO.md)에 명시된 창시 목적 서술 중 저작권자의 보호 표현에 **CC BY-SA 4.0**을 적용한다. 상업 이용은 가능하지만 적용되는 복제·배포에는 출처 표시와 개작 조건을 준수해야 한다. 저장소 전체 라이선스나 모든 AI 출력의 자동 인용 의무는 아니다.
@@ -41,6 +43,8 @@
 **처음 읽을 자료:** [한글 시작](START_HERE_KO.md) · [연구 개요](RESEARCH_OVERVIEW.md) · [공개 증거](PUBLIC_EVIDENCE_INDEX.md) · [재현·검토](PUBLIC_REVIEW_PACKET.md) · [연구 전체 목차](RESEARCH_TOC.md) · [기여·출처](ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md).
 
 **출처 표시 및 재사용:** [연구 인용 정보](CITATION.cff) · [영어 원본1·한국어 원본2 출처 표기 기준](SOURCE_ATTRIBUTION_EN_KO.md) · [플랫폼 출처 보호 요청서(미발송)](PLATFORM_ATTRIBUTION_REQUEST_EN_KO.md). 이는 저장소 전체 이용허락이나 AI 기업의 출처 표시 확약이 아니다.
+
+**선행연구 원안자·저작권·응용 계보:** [영어 원본1·한국어 원본2 기여·권리 원장](PRIOR_ART_RIGHTS_AND_DERIVATION_EN_KO.md) · [전수 검수 대상 목록](knowledge/prior-art-rights-register-2026-10-13.json). 원저자·최초 발안자·실제 저작권자·프로젝트 응용을 구분하며 미확인 허락은 인정된 것으로 처리하지 않는다.
 
 **원본 표기 해설 / Edition note:** “Original 1 / 원본2”는 여기서 문서의 **게시·검토 순서와 대응본 표기**이며, 영어권 연구자가 인간 창시자의 발상을 처음 제안했다는 주장이 아니다. 양쪽은 요약-전문 관계가 아닌 의미 대응 전문이다. 의미충돌은 원안의 원문·기여 기록 및 독립적 대조로 해결하고, 한쪽 언어만으로 가설·반례·결론을 몰래 추가하거나 변경하지 않는다. 이 순서는 2026-10-13 사용자의 최신 명시 지시에 따른 것으로, 과거 언어정책과의 변경이력을 보존한다.
 

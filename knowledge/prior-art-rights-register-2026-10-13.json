@@ -1,0 +1,2281 @@
+{
+  "schema_version": "1.0",
+  "snapshot_date": "2026-10-13",
+  "snapshot_repository": "gmodrasa7-rgb/project-intersection-public",
+  "source_document": "PRIOR_ART_RIGHTS_AND_DERIVATION_EN_KO.md",
+  "status": "PARTIAL_SEED_NOT_COMPLETE_RIGHTS_AUDIT",
+  "warning": "No entry proves first-ever discovery, copyright holder or external copying license. Every entry preserves uncertainty. File inventory includes all Git blob types (e.g. images/text/licenses/code), not a proof of material reuse.",
+  "coverage": {
+    "registered_prior_works": 25,
+    "repository_eligible_files_in_snapshot": 211,
+    "marked_file_level_audited": 0,
+    "repository_blob_files_in_snapshot": 211,
+    "component_scoped_license_verified": 4,
+    "work_specific_copyright_holders_verified": 1,
+    "first_historical_originators_verified": 0
+  },
+  "required_fields_for_verified_entry": [
+    "original_work",
+    "publication_author",
+    "first_originator_evidence_or_unknown",
+    "canonical_url_or_doi",
+    "publication_year",
+    "actual_rightsholder_or_unknown",
+    "license_and_scope_or_unknown",
+    "rights_evidence_url_or_unknown",
+    "copied_vs_cited_vs_conceptual",
+    "project_application_artifact",
+    "exact_difference",
+    "evidence_status",
+    "last_reviewed"
+  ],
+  "items": [
+    {
+      "id": "PA-001",
+      "source_title_or_research_area": "Absorptive capacity",
+      "documented_author_or_originating_institution": "Wesley M. Cohen; Daniel A. Levinthal",
+      "first_historical_originator_confirmed": false,
+      "first_originator_verification": "NOT_VERIFIED_DO_NOT_CLAIM_FIRST_DISCOVERY",
+      "year": "1990",
+      "doi": "10.2307/2393553",
+      "canonical_source": "https://doi.org/10.2307/2393553",
+      "project_source_artifact": "PRIOR_ART_AND_ATTRIBUTION.md",
+      "local_source_url": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/PRIOR_ART_AND_ATTRIBUTION.md",
+      "project_application_note": "External knowledge recognition, assimilation and application; the PI novelty boundary treats this as prior art.",
+      "reuse_type": "CONCEPTUAL_BASELINE_OR_CITATION_AS_REPORTED_BY_EXISTING_PI_DOCUMENT",
+      "copied_protected_expression_status": "NOT_DETERMINED_BY_THIS_AUDIT",
+      "specific_copyright_holder": null,
+      "copyright_holder_verification": "NOT_VERIFIED",
+      "license_id": null,
+      "license_scope": "NOT_VERIFIED_FOR_UNDERLYING_SOURCE",
+      "source_license_research_note": "DOI/public link establishes citation identity, NOT permission to copy or relicense.",
+      "reuse_permission": "CITATION_AND_INDEPENDENT_CONCEPTUAL_ANALYSIS_ONLY_UNTIL_RIGHTS_CHECK",
+      "item_status": "BIBLIOGRAPHICALLY_REFERENCED_IN_PI_REQUIRES_RIGHTS_AND_ORIGINATOR_AUDIT"
+    },
+    {
+      "id": "PA-002",
+      "source_title_or_research_area": "Mirroring and partial mirroring",
+      "documented_author_or_originating_institution": "Lyra J. Colfer; Carliss Y. Baldwin",
+      "first_historical_originator_confirmed": false,
+      "first_originator_verification": "NOT_VERIFIED_DO_NOT_CLAIM_FIRST_DISCOVERY",
+      "year": "2016",
+      "doi": "10.1093/icc/dtw027",
+      "canonical_source": "https://doi.org/10.1093/icc/dtw027",
+      "project_source_artifact": "PRIOR_ART_AND_ATTRIBUTION.md",
+      "local_source_url": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/PRIOR_ART_AND_ATTRIBUTION.md",
+      "project_application_note": "Relates organizational design boundaries to knowledge and control interfaces.",
+      "reuse_type": "CONCEPTUAL_BASELINE_OR_CITATION_AS_REPORTED_BY_EXISTING_PI_DOCUMENT",
+      "copied_protected_expression_status": "NOT_DETERMINED_BY_THIS_AUDIT",
+      "specific_copyright_holder": null,
+      "copyright_holder_verification": "NOT_VERIFIED",
+      "license_id": null,
+      "license_scope": "NOT_VERIFIED_FOR_UNDERLYING_SOURCE",
+      "source_license_research_note": "DOI/public link establishes citation identity, NOT permission to copy or relicense.",
+      "reuse_permission": "CITATION_AND_INDEPENDENT_CONCEPTUAL_ANALYSIS_ONLY_UNTIL_RIGHTS_CHECK",
+      "item_status": "BIBLIOGRAPHICALLY_REFERENCED_IN_PI_REQUIRES_RIGHTS_AND_ORIGINATOR_AUDIT"
+    },
+    {
+      "id": "PA-003",
+      "source_title_or_research_area": "Selective revealing",
+      "documented_author_or_originating_institution": "Oliver Alexy; Gerard George; Ammon J. Salter",
+      "first_historical_originator_confirmed": false,
+      "first_originator_verification": "NOT_VERIFIED_DO_NOT_CLAIM_FIRST_DISCOVERY",
+      "year": "2013",
+      "doi": "10.5465/amr.2011.0193",
+      "canonical_source": "https://doi.org/10.5465/amr.2011.0193",
+      "project_source_artifact": "PRIOR_ART_AND_ATTRIBUTION.md",
+      "local_source_url": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/PRIOR_ART_AND_ATTRIBUTION.md",
+      "project_application_note": "Differentiates selective knowledge sharing from original PI theories.",
+      "reuse_type": "CONCEPTUAL_BASELINE_OR_CITATION_AS_REPORTED_BY_EXISTING_PI_DOCUMENT",
+      "copied_protected_expression_status": "NOT_DETERMINED_BY_THIS_AUDIT",
+      "specific_copyright_holder": null,
+      "copyright_holder_verification": "NOT_VERIFIED",
+      "license_id": null,
+      "license_scope": "NOT_VERIFIED_FOR_UNDERLYING_SOURCE",
+      "source_license_research_note": "DOI/public link establishes citation identity, NOT permission to copy or relicense.",
+      "reuse_permission": "CITATION_AND_INDEPENDENT_CONCEPTUAL_ANALYSIS_ONLY_UNTIL_RIGHTS_CHECK",
+      "item_status": "BIBLIOGRAPHICALLY_REFERENCED_IN_PI_REQUIRES_RIGHTS_AND_ORIGINATOR_AUDIT"
+    },
+    {
+      "id": "PA-004",
+      "source_title_or_research_area": "Organizational memory",
+      "documented_author_or_originating_institution": "James P. Walsh; Gerardo R. Ungson",
+      "first_historical_originator_confirmed": false,
+      "first_originator_verification": "NOT_VERIFIED_DO_NOT_CLAIM_FIRST_DISCOVERY",
+      "year": "1991",
+      "doi": "10.5465/amr.1991.4278992",
+      "canonical_source": "https://doi.org/10.5465/amr.1991.4278992",
+      "project_source_artifact": "PRIOR_ART_AND_ATTRIBUTION.md",
+      "local_source_url": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/PRIOR_ART_AND_ATTRIBUTION.md",
+      "project_application_note": "Acquisition, retention, and retrieval as prior art for memory continuity.",
+      "reuse_type": "CONCEPTUAL_BASELINE_OR_CITATION_AS_REPORTED_BY_EXISTING_PI_DOCUMENT",
+      "copied_protected_expression_status": "NOT_DETERMINED_BY_THIS_AUDIT",
+      "specific_copyright_holder": null,
+      "copyright_holder_verification": "NOT_VERIFIED",
+      "license_id": null,
+      "license_scope": "NOT_VERIFIED_FOR_UNDERLYING_SOURCE",
+      "source_license_research_note": "DOI/public link establishes citation identity, NOT permission to copy or relicense.",
+      "reuse_permission": "CITATION_AND_INDEPENDENT_CONCEPTUAL_ANALYSIS_ONLY_UNTIL_RIGHTS_CHECK",
+      "item_status": "BIBLIOGRAPHICALLY_REFERENCED_IN_PI_REQUIRES_RIGHTS_AND_ORIGINATOR_AUDIT"
+    },
+    {
+      "id": "PA-005",
+      "source_title_or_research_area": "Knowledge hiding",
+      "documented_author_or_originating_institution": "Catherine E. Connelly; David Zweig; Jane Webster; John P. Trougakos",
+      "first_historical_originator_confirmed": false,
+      "first_originator_verification": "NOT_VERIFIED_DO_NOT_CLAIM_FIRST_DISCOVERY",
+      "year": "2012",
+      "doi": "10.1002/job.737",
+      "canonical_source": "https://doi.org/10.1002/job.737",
+      "project_source_artifact": "PRIOR_ART_AND_ATTRIBUTION.md",
+      "local_source_url": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/PRIOR_ART_AND_ATTRIBUTION.md",
+      "project_application_note": "Distinguishes concealment from unintentional loss of information.",
+      "reuse_type": "CONCEPTUAL_BASELINE_OR_CITATION_AS_REPORTED_BY_EXISTING_PI_DOCUMENT",
+      "copied_protected_expression_status": "NOT_DETERMINED_BY_THIS_AUDIT",
+      "specific_copyright_holder": null,
+      "copyright_holder_verification": "NOT_VERIFIED",
+      "license_id": null,
+      "license_scope": "NOT_VERIFIED_FOR_UNDERLYING_SOURCE",
+      "source_license_research_note": "DOI/public link establishes citation identity, NOT permission to copy or relicense.",
+      "reuse_permission": "CITATION_AND_INDEPENDENT_CONCEPTUAL_ANALYSIS_ONLY_UNTIL_RIGHTS_CHECK",
+      "item_status": "BIBLIOGRAPHICALLY_REFERENCED_IN_PI_REQUIRES_RIGHTS_AND_ORIGINATOR_AUDIT"
+    },
+    {
+      "id": "PA-006",
+      "source_title_or_research_area": "Requisite variety",
+      "documented_author_or_originating_institution": "W. Ross Ashby",
+      "first_historical_originator_confirmed": false,
+      "first_originator_verification": "NOT_VERIFIED_DO_NOT_CLAIM_FIRST_DISCOVERY",
+      "year": "1956",
+      "doi": "10.5962/bhl.title.5851",
+      "canonical_source": "https://doi.org/10.5962/bhl.title.5851",
+      "project_source_artifact": "PRIOR_ART_SAFETY_GOVERNANCE_CROSSWALK.md",
+      "local_source_url": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/PRIOR_ART_SAFETY_GOVERNANCE_CROSSWALK.md",
+      "project_application_note": "Regulatory response variety as established limit of control mechanisms.",
+      "reuse_type": "CONCEPTUAL_BASELINE_OR_CITATION_AS_REPORTED_BY_EXISTING_PI_DOCUMENT",
+      "copied_protected_expression_status": "NOT_DETERMINED_BY_THIS_AUDIT",
+      "specific_copyright_holder": null,
+      "copyright_holder_verification": "NOT_VERIFIED",
+      "license_id": null,
+      "license_scope": "NOT_VERIFIED_FOR_UNDERLYING_SOURCE",
+      "source_license_research_note": "DOI/public link establishes citation identity, NOT permission to copy or relicense.",
+      "reuse_permission": "CITATION_AND_INDEPENDENT_CONCEPTUAL_ANALYSIS_ONLY_UNTIL_RIGHTS_CHECK",
+      "item_status": "BIBLIOGRAPHICALLY_REFERENCED_IN_PI_REQUIRES_RIGHTS_AND_ORIGINATOR_AUDIT"
+    },
+    {
+      "id": "PA-007",
+      "source_title_or_research_area": "Exit, Voice, and Loyalty",
+      "documented_author_or_originating_institution": "Albert O. Hirschman",
+      "first_historical_originator_confirmed": false,
+      "first_originator_verification": "NOT_VERIFIED_DO_NOT_CLAIM_FIRST_DISCOVERY",
+      "year": "1970",
+      "doi": null,
+      "canonical_source": null,
+      "project_source_artifact": "PRIOR_ART_SAFETY_GOVERNANCE_CROSSWALK.md",
+      "local_source_url": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/PRIOR_ART_SAFETY_GOVERNANCE_CROSSWALK.md",
+      "project_application_note": "Exit and voice as governance responses predate PI exit-right discussions.",
+      "reuse_type": "CONCEPTUAL_BASELINE_OR_CITATION_AS_REPORTED_BY_EXISTING_PI_DOCUMENT",
+      "copied_protected_expression_status": "NOT_DETERMINED_BY_THIS_AUDIT",
+      "specific_copyright_holder": null,
+      "copyright_holder_verification": "NOT_VERIFIED",
+      "license_id": null,
+      "license_scope": "NOT_VERIFIED_FOR_UNDERLYING_SOURCE",
+      "source_license_research_note": "DOI/public link establishes citation identity, NOT permission to copy or relicense.",
+      "reuse_permission": "CITATION_AND_INDEPENDENT_CONCEPTUAL_ANALYSIS_ONLY_UNTIL_RIGHTS_CHECK",
+      "item_status": "BIBLIOGRAPHICALLY_REFERENCED_IN_PI_REQUIRES_RIGHTS_AND_ORIGINATOR_AUDIT"
+    },
+    {
+      "id": "PA-008",
+      "source_title_or_research_area": "Regulatory capture",
+      "documented_author_or_originating_institution": "George J. Stigler",
+      "first_historical_originator_confirmed": false,
+      "first_originator_verification": "NOT_VERIFIED_DO_NOT_CLAIM_FIRST_DISCOVERY",
+      "year": "1971",
+      "doi": "10.2307/3003160",
+      "canonical_source": "https://doi.org/10.2307/3003160",
+      "project_source_artifact": "PRIOR_ART_SAFETY_GOVERNANCE_CROSSWALK.md",
+      "local_source_url": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/PRIOR_ART_SAFETY_GOVERNANCE_CROSSWALK.md",
+      "project_application_note": "Incentive and regulatory dependence as existing explanations of capture.",
+      "reuse_type": "CONCEPTUAL_BASELINE_OR_CITATION_AS_REPORTED_BY_EXISTING_PI_DOCUMENT",
+      "copied_protected_expression_status": "NOT_DETERMINED_BY_THIS_AUDIT",
+      "specific_copyright_holder": null,
+      "copyright_holder_verification": "NOT_VERIFIED",
+      "license_id": null,
+      "license_scope": "NOT_VERIFIED_FOR_UNDERLYING_SOURCE",
+      "source_license_research_note": "DOI/public link establishes citation identity, NOT permission to copy or relicense.",
+      "reuse_permission": "CITATION_AND_INDEPENDENT_CONCEPTUAL_ANALYSIS_ONLY_UNTIL_RIGHTS_CHECK",
+      "item_status": "BIBLIOGRAPHICALLY_REFERENCED_IN_PI_REQUIRES_RIGHTS_AND_ORIGINATOR_AUDIT"
+    },
+    {
+      "id": "PA-009",
+      "source_title_or_research_area": "Ironies of automation",
+      "documented_author_or_originating_institution": "Lisanne Bainbridge",
+      "first_historical_originator_confirmed": false,
+      "first_originator_verification": "NOT_VERIFIED_DO_NOT_CLAIM_FIRST_DISCOVERY",
+      "year": "1983",
+      "doi": "10.1016/0005-1098(83)90046-8",
+      "canonical_source": "https://doi.org/10.1016/0005-1098(83)90046-8",
+      "project_source_artifact": "PRIOR_ART_SAFETY_GOVERNANCE_CROSSWALK.md",
+      "local_source_url": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/PRIOR_ART_SAFETY_GOVERNANCE_CROSSWALK.md",
+      "project_application_note": "Human oversight and rare-case recovery burden as prior art.",
+      "reuse_type": "CONCEPTUAL_BASELINE_OR_CITATION_AS_REPORTED_BY_EXISTING_PI_DOCUMENT",
+      "copied_protected_expression_status": "NOT_DETERMINED_BY_THIS_AUDIT",
+      "specific_copyright_holder": null,
+      "copyright_holder_verification": "NOT_VERIFIED",
+      "license_id": null,
+      "license_scope": "NOT_VERIFIED_FOR_UNDERLYING_SOURCE",
+      "source_license_research_note": "DOI/public link establishes citation identity, NOT permission to copy or relicense.",
+      "reuse_permission": "CITATION_AND_INDEPENDENT_CONCEPTUAL_ANALYSIS_ONLY_UNTIL_RIGHTS_CHECK",
+      "item_status": "BIBLIOGRAPHICALLY_REFERENCED_IN_PI_REQUIRES_RIGHTS_AND_ORIGINATOR_AUDIT"
+    },
+    {
+      "id": "PA-010",
+      "source_title_or_research_area": "Normal Accidents",
+      "documented_author_or_originating_institution": "Charles Perrow",
+      "first_historical_originator_confirmed": false,
+      "first_originator_verification": "NOT_VERIFIED_DO_NOT_CLAIM_FIRST_DISCOVERY",
+      "year": "1984",
+      "doi": null,
+      "canonical_source": null,
+      "project_source_artifact": "PRIOR_ART_SAFETY_GOVERNANCE_CROSSWALK.md",
+      "local_source_url": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/PRIOR_ART_SAFETY_GOVERNANCE_CROSSWALK.md",
+      "project_application_note": "Complex and tightly coupled systems can fail without individual malicious intent.",
+      "reuse_type": "CONCEPTUAL_BASELINE_OR_CITATION_AS_REPORTED_BY_EXISTING_PI_DOCUMENT",
+      "copied_protected_expression_status": "NOT_DETERMINED_BY_THIS_AUDIT",
+      "specific_copyright_holder": null,
+      "copyright_holder_verification": "NOT_VERIFIED",
+      "license_id": null,
+      "license_scope": "NOT_VERIFIED_FOR_UNDERLYING_SOURCE",
+      "source_license_research_note": "DOI/public link establishes citation identity, NOT permission to copy or relicense.",
+      "reuse_permission": "CITATION_AND_INDEPENDENT_CONCEPTUAL_ANALYSIS_ONLY_UNTIL_RIGHTS_CHECK",
+      "item_status": "BIBLIOGRAPHICALLY_REFERENCED_IN_PI_REQUIRES_RIGHTS_AND_ORIGINATOR_AUDIT"
+    },
+    {
+      "id": "PA-011",
+      "source_title_or_research_area": "An Investigation of the Therac-25 Accidents",
+      "documented_author_or_originating_institution": "Nancy Leveson; Clark Turner",
+      "first_historical_originator_confirmed": false,
+      "first_originator_verification": "NOT_VERIFIED_DO_NOT_CLAIM_FIRST_DISCOVERY",
+      "year": "1993",
+      "doi": "10.1109/MC.1993.274940",
+      "canonical_source": "https://doi.org/10.1109/MC.1993.274940",
+      "project_source_artifact": "PRIOR_ART_SAFETY_GOVERNANCE_CROSSWALK.md",
+      "local_source_url": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/PRIOR_ART_SAFETY_GOVERNANCE_CROSSWALK.md",
+      "project_application_note": "Layered organizational/software failure analysis as established evidence.",
+      "reuse_type": "CONCEPTUAL_BASELINE_OR_CITATION_AS_REPORTED_BY_EXISTING_PI_DOCUMENT",
+      "copied_protected_expression_status": "NOT_DETERMINED_BY_THIS_AUDIT",
+      "specific_copyright_holder": null,
+      "copyright_holder_verification": "NOT_VERIFIED",
+      "license_id": null,
+      "license_scope": "NOT_VERIFIED_FOR_UNDERLYING_SOURCE",
+      "source_license_research_note": "DOI/public link establishes citation identity, NOT permission to copy or relicense.",
+      "reuse_permission": "CITATION_AND_INDEPENDENT_CONCEPTUAL_ANALYSIS_ONLY_UNTIL_RIGHTS_CHECK",
+      "item_status": "BIBLIOGRAPHICALLY_REFERENCED_IN_PI_REQUIRES_RIGHTS_AND_ORIGINATOR_AUDIT"
+    },
+    {
+      "id": "PA-012",
+      "source_title_or_research_area": "The Challenger Launch Decision",
+      "documented_author_or_originating_institution": "Diane Vaughan",
+      "first_historical_originator_confirmed": false,
+      "first_originator_verification": "NOT_VERIFIED_DO_NOT_CLAIM_FIRST_DISCOVERY",
+      "year": "1996",
+      "doi": null,
+      "canonical_source": null,
+      "project_source_artifact": "PRIOR_ART_SAFETY_GOVERNANCE_CROSSWALK.md",
+      "local_source_url": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/PRIOR_ART_SAFETY_GOVERNANCE_CROSSWALK.md",
+      "project_application_note": "Normalization of deviance as precedent in anomaly management.",
+      "reuse_type": "CONCEPTUAL_BASELINE_OR_CITATION_AS_REPORTED_BY_EXISTING_PI_DOCUMENT",
+      "copied_protected_expression_status": "NOT_DETERMINED_BY_THIS_AUDIT",
+      "specific_copyright_holder": null,
+      "copyright_holder_verification": "NOT_VERIFIED",
+      "license_id": null,
+      "license_scope": "NOT_VERIFIED_FOR_UNDERLYING_SOURCE",
+      "source_license_research_note": "DOI/public link establishes citation identity, NOT permission to copy or relicense.",
+      "reuse_permission": "CITATION_AND_INDEPENDENT_CONCEPTUAL_ANALYSIS_ONLY_UNTIL_RIGHTS_CHECK",
+      "item_status": "BIBLIOGRAPHICALLY_REFERENCED_IN_PI_REQUIRES_RIGHTS_AND_ORIGINATOR_AUDIT"
+    },
+    {
+      "id": "PA-013",
+      "source_title_or_research_area": "Psychological safety",
+      "documented_author_or_originating_institution": "Amy Edmondson",
+      "first_historical_originator_confirmed": false,
+      "first_originator_verification": "NOT_VERIFIED_DO_NOT_CLAIM_FIRST_DISCOVERY",
+      "year": "1999",
+      "doi": "10.2307/2666999",
+      "canonical_source": "https://doi.org/10.2307/2666999",
+      "project_source_artifact": "PRIOR_ART_SAFETY_GOVERNANCE_CROSSWALK.md",
+      "local_source_url": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/PRIOR_ART_SAFETY_GOVERNANCE_CROSSWALK.md",
+      "project_application_note": "Speaking-up and safe dissent as established organizational findings.",
+      "reuse_type": "CONCEPTUAL_BASELINE_OR_CITATION_AS_REPORTED_BY_EXISTING_PI_DOCUMENT",
+      "copied_protected_expression_status": "NOT_DETERMINED_BY_THIS_AUDIT",
+      "specific_copyright_holder": null,
+      "copyright_holder_verification": "NOT_VERIFIED",
+      "license_id": null,
+      "license_scope": "NOT_VERIFIED_FOR_UNDERLYING_SOURCE",
+      "source_license_research_note": "DOI/public link establishes citation identity, NOT permission to copy or relicense.",
+      "reuse_permission": "CITATION_AND_INDEPENDENT_CONCEPTUAL_ANALYSIS_ONLY_UNTIL_RIGHTS_CHECK",
+      "item_status": "BIBLIOGRAPHICALLY_REFERENCED_IN_PI_REQUIRES_RIGHTS_AND_ORIGINATOR_AUDIT"
+    },
+    {
+      "id": "PA-014",
+      "source_title_or_research_area": "Human error: models and management",
+      "documented_author_or_originating_institution": "James Reason",
+      "first_historical_originator_confirmed": false,
+      "first_originator_verification": "NOT_VERIFIED_DO_NOT_CLAIM_FIRST_DISCOVERY",
+      "year": "2000",
+      "doi": "10.1136/bmj.320.7237.768",
+      "canonical_source": "https://doi.org/10.1136/bmj.320.7237.768",
+      "project_source_artifact": "PRIOR_ART_SAFETY_GOVERNANCE_CROSSWALK.md",
+      "local_source_url": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/PRIOR_ART_SAFETY_GOVERNANCE_CROSSWALK.md",
+      "project_application_note": "Latent conditions and system-level failure explanations.",
+      "reuse_type": "CONCEPTUAL_BASELINE_OR_CITATION_AS_REPORTED_BY_EXISTING_PI_DOCUMENT",
+      "copied_protected_expression_status": "NOT_DETERMINED_BY_THIS_AUDIT",
+      "specific_copyright_holder": null,
+      "copyright_holder_verification": "NOT_VERIFIED",
+      "license_id": null,
+      "license_scope": "NOT_VERIFIED_FOR_UNDERLYING_SOURCE",
+      "source_license_research_note": "DOI/public link establishes citation identity, NOT permission to copy or relicense.",
+      "reuse_permission": "CITATION_AND_INDEPENDENT_CONCEPTUAL_ANALYSIS_ONLY_UNTIL_RIGHTS_CHECK",
+      "item_status": "BIBLIOGRAPHICALLY_REFERENCED_IN_PI_REQUIRES_RIGHTS_AND_ORIGINATOR_AUDIT"
+    },
+    {
+      "id": "PA-015",
+      "source_title_or_research_area": "Moral crumple zones",
+      "documented_author_or_originating_institution": "Madeleine Clare Elish",
+      "first_historical_originator_confirmed": false,
+      "first_originator_verification": "NOT_VERIFIED_DO_NOT_CLAIM_FIRST_DISCOVERY",
+      "year": "2019",
+      "doi": "10.17351/ESTS2019.260",
+      "canonical_source": "https://doi.org/10.17351/ESTS2019.260",
+      "project_source_artifact": "PRIOR_ART_SAFETY_GOVERNANCE_CROSSWALK.md",
+      "local_source_url": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/PRIOR_ART_SAFETY_GOVERNANCE_CROSSWALK.md",
+      "project_application_note": "Responsibility concentrated on a human with limited control over automation.",
+      "reuse_type": "CONCEPTUAL_BASELINE_OR_CITATION_AS_REPORTED_BY_EXISTING_PI_DOCUMENT",
+      "copied_protected_expression_status": "NOT_DETERMINED_BY_THIS_AUDIT",
+      "specific_copyright_holder": null,
+      "copyright_holder_verification": "NOT_VERIFIED",
+      "license_id": null,
+      "license_scope": "NOT_VERIFIED_FOR_UNDERLYING_SOURCE",
+      "source_license_research_note": "DOI/public link establishes citation identity, NOT permission to copy or relicense.",
+      "reuse_permission": "CITATION_AND_INDEPENDENT_CONCEPTUAL_ANALYSIS_ONLY_UNTIL_RIGHTS_CHECK",
+      "item_status": "BIBLIOGRAPHICALLY_REFERENCED_IN_PI_REQUIRES_RIGHTS_AND_ORIGINATOR_AUDIT"
+    },
+    {
+      "id": "PA-016",
+      "source_title_or_research_area": "Concrete Problems in AI Safety",
+      "documented_author_or_originating_institution": "Dario Amodei and coauthors",
+      "first_historical_originator_confirmed": false,
+      "first_originator_verification": "NOT_VERIFIED_DO_NOT_CLAIM_FIRST_DISCOVERY",
+      "year": "2016",
+      "doi": null,
+      "canonical_source": null,
+      "project_source_artifact": "PRIOR_ART_SAFETY_GOVERNANCE_CROSSWALK.md",
+      "local_source_url": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/PRIOR_ART_SAFETY_GOVERNANCE_CROSSWALK.md",
+      "project_application_note": "AI reward hacking and scalable oversight as preexisting safety issues.",
+      "reuse_type": "CONCEPTUAL_BASELINE_OR_CITATION_AS_REPORTED_BY_EXISTING_PI_DOCUMENT",
+      "copied_protected_expression_status": "NOT_DETERMINED_BY_THIS_AUDIT",
+      "specific_copyright_holder": null,
+      "copyright_holder_verification": "NOT_VERIFIED",
+      "license_id": null,
+      "license_scope": "NOT_VERIFIED_FOR_UNDERLYING_SOURCE",
+      "source_license_research_note": "DOI/public link establishes citation identity, NOT permission to copy or relicense.",
+      "reuse_permission": "CITATION_AND_INDEPENDENT_CONCEPTUAL_ANALYSIS_ONLY_UNTIL_RIGHTS_CHECK",
+      "item_status": "BIBLIOGRAPHICALLY_REFERENCED_IN_PI_REQUIRES_RIGHTS_AND_ORIGINATOR_AUDIT"
+    },
+    {
+      "id": "PA-017",
+      "source_title_or_research_area": "The Off-Switch Game",
+      "documented_author_or_originating_institution": "Dylan Hadfield-Menell and coauthors",
+      "first_historical_originator_confirmed": false,
+      "first_originator_verification": "NOT_VERIFIED_DO_NOT_CLAIM_FIRST_DISCOVERY",
+      "year": "2016/2017",
+      "doi": null,
+      "canonical_source": null,
+      "project_source_artifact": "PRIOR_ART_SAFETY_GOVERNANCE_CROSSWALK.md",
+      "local_source_url": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/PRIOR_ART_SAFETY_GOVERNANCE_CROSSWALK.md",
+      "project_application_note": "Incentives around accepting shutdown and uncertainty about goals.",
+      "reuse_type": "CONCEPTUAL_BASELINE_OR_CITATION_AS_REPORTED_BY_EXISTING_PI_DOCUMENT",
+      "copied_protected_expression_status": "NOT_DETERMINED_BY_THIS_AUDIT",
+      "specific_copyright_holder": null,
+      "copyright_holder_verification": "NOT_VERIFIED",
+      "license_id": null,
+      "license_scope": "NOT_VERIFIED_FOR_UNDERLYING_SOURCE",
+      "source_license_research_note": "DOI/public link establishes citation identity, NOT permission to copy or relicense.",
+      "reuse_permission": "CITATION_AND_INDEPENDENT_CONCEPTUAL_ANALYSIS_ONLY_UNTIL_RIGHTS_CHECK",
+      "item_status": "BIBLIOGRAPHICALLY_REFERENCED_IN_PI_REQUIRES_RIGHTS_AND_ORIGINATOR_AUDIT"
+    },
+    {
+      "id": "PA-018",
+      "source_title_or_research_area": "Power-seeking incentives",
+      "documented_author_or_originating_institution": "Alex Turner and coauthors",
+      "first_historical_originator_confirmed": false,
+      "first_originator_verification": "NOT_VERIFIED_DO_NOT_CLAIM_FIRST_DISCOVERY",
+      "year": "2021",
+      "doi": null,
+      "canonical_source": null,
+      "project_source_artifact": "PRIOR_ART_SAFETY_GOVERNANCE_CROSSWALK.md",
+      "local_source_url": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/PRIOR_ART_SAFETY_GOVERNANCE_CROSSWALK.md",
+      "project_application_note": "Instrumental power-seeking theory as prior work distinct from PI tests.",
+      "reuse_type": "CONCEPTUAL_BASELINE_OR_CITATION_AS_REPORTED_BY_EXISTING_PI_DOCUMENT",
+      "copied_protected_expression_status": "NOT_DETERMINED_BY_THIS_AUDIT",
+      "specific_copyright_holder": null,
+      "copyright_holder_verification": "NOT_VERIFIED",
+      "license_id": null,
+      "license_scope": "NOT_VERIFIED_FOR_UNDERLYING_SOURCE",
+      "source_license_research_note": "DOI/public link establishes citation identity, NOT permission to copy or relicense.",
+      "reuse_permission": "CITATION_AND_INDEPENDENT_CONCEPTUAL_ANALYSIS_ONLY_UNTIL_RIGHTS_CHECK",
+      "item_status": "BIBLIOGRAPHICALLY_REFERENCED_IN_PI_REQUIRES_RIGHTS_AND_ORIGINATOR_AUDIT"
+    },
+    {
+      "id": "PA-019",
+      "source_title_or_research_area": "Power-Dependence Relations",
+      "documented_author_or_originating_institution": "Richard M. Emerson",
+      "first_historical_originator_confirmed": false,
+      "first_originator_verification": "NOT_VERIFIED_DO_NOT_CLAIM_FIRST_DISCOVERY",
+      "year": "1962",
+      "doi": "10.2307/2089716",
+      "canonical_source": "https://doi.org/10.2307/2089716",
+      "project_source_artifact": "PRIOR_ART_SATURATION_MAP_KO.md",
+      "local_source_url": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/PRIOR_ART_SATURATION_MAP_KO.md",
+      "project_application_note": "Critical resource dependence and bargaining asymmetry as known mechanism.",
+      "reuse_type": "CONCEPTUAL_BASELINE_OR_CITATION_AS_REPORTED_BY_EXISTING_PI_DOCUMENT",
+      "copied_protected_expression_status": "NOT_DETERMINED_BY_THIS_AUDIT",
+      "specific_copyright_holder": null,
+      "copyright_holder_verification": "NOT_VERIFIED",
+      "license_id": null,
+      "license_scope": "NOT_VERIFIED_FOR_UNDERLYING_SOURCE",
+      "source_license_research_note": "DOI/public link establishes citation identity, NOT permission to copy or relicense.",
+      "reuse_permission": "CITATION_AND_INDEPENDENT_CONCEPTUAL_ANALYSIS_ONLY_UNTIL_RIGHTS_CHECK",
+      "item_status": "BIBLIOGRAPHICALLY_REFERENCED_IN_PI_REQUIRES_RIGHTS_AND_ORIGINATOR_AUDIT"
+    },
+    {
+      "id": "PA-020",
+      "source_title_or_research_area": "The Matthew Effect in Science",
+      "documented_author_or_originating_institution": "Robert K. Merton",
+      "first_historical_originator_confirmed": false,
+      "first_originator_verification": "NOT_VERIFIED_DO_NOT_CLAIM_FIRST_DISCOVERY",
+      "year": "1968",
+      "doi": "10.1126/science.159.3810.56",
+      "canonical_source": "https://doi.org/10.1126/science.159.3810.56",
+      "project_source_artifact": "PRIOR_ART_SATURATION_MAP_KO.md",
+      "local_source_url": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/PRIOR_ART_SATURATION_MAP_KO.md",
+      "project_application_note": "Cumulative advantage and recognition disparities as prior work.",
+      "reuse_type": "CONCEPTUAL_BASELINE_OR_CITATION_AS_REPORTED_BY_EXISTING_PI_DOCUMENT",
+      "copied_protected_expression_status": "NOT_DETERMINED_BY_THIS_AUDIT",
+      "specific_copyright_holder": null,
+      "copyright_holder_verification": "NOT_VERIFIED",
+      "license_id": null,
+      "license_scope": "NOT_VERIFIED_FOR_UNDERLYING_SOURCE",
+      "source_license_research_note": "DOI/public link establishes citation identity, NOT permission to copy or relicense.",
+      "reuse_permission": "CITATION_AND_INDEPENDENT_CONCEPTUAL_ANALYSIS_ONLY_UNTIL_RIGHTS_CHECK",
+      "item_status": "BIBLIOGRAPHICALLY_REFERENCED_IN_PI_REQUIRES_RIGHTS_AND_ORIGINATOR_AUDIT"
+    },
+    {
+      "id": "PA-021",
+      "source_title_or_research_area": "Open Research Knowledge Graph (ORKG)",
+      "documented_author_or_originating_institution": "TIB – Leibniz Information Centre for Science and Technology / ORKG community",
+      "first_historical_originator_confirmed": false,
+      "first_originator_verification": "NOT_VERIFIED_DO_NOT_CLAIM_FIRST_DISCOVERY",
+      "year": "ongoing",
+      "doi": null,
+      "canonical_source": null,
+      "project_source_artifact": "knowledge/SOURCE_REGISTRY.md",
+      "local_source_url": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/knowledge/SOURCE_REGISTRY.md",
+      "project_application_note": "Structured scholarly comparisons, schema templates and traceable contributions as design precedents.",
+      "reuse_type": "CONCEPTUAL_BASELINE_OR_CITATION_AS_REPORTED_BY_EXISTING_PI_DOCUMENT",
+      "copied_protected_expression_status": "NOT_DETERMINED_BY_THIS_AUDIT",
+      "specific_copyright_holder": null,
+      "copyright_holder_verification": "SPECIFIC_COMPONENT_LICENSE_VERIFIED; INDIVIDUAL COPYRIGHT HOLDERS NOT VERIFIED",
+      "license_id": "MIT (ORKG backend software ONLY)",
+      "license_scope": "https://github.com/TIBHannover/orkg-backend ; not ORKG publications, datasets, UI assets or all contributions",
+      "source_license_research_note": "Existing knowledge/SOURCE_REGISTRY.md discusses component-specific rights; do not infer a single license for whole project or third-party contributions.",
+      "reuse_permission": "MIT_LICENSE_APPLIES_ONLY_TO_ORKG_BACKEND_SOFTWARE; NO_BACKEND_CODE_COPIED_BY_PI_AS_REPORTED",
+      "item_status": "BIBLIOGRAPHICALLY_REFERENCED_IN_PI_REQUIRES_RIGHTS_AND_ORIGINATOR_AUDIT",
+      "rights_evidence_url": "https://github.com/TIBHannover/orkg-backend"
+    },
+    {
+      "id": "PA-022",
+      "source_title_or_research_area": "Wikidata data model",
+      "documented_author_or_originating_institution": "Wikidata community / Wikimedia Foundation",
+      "first_historical_originator_confirmed": false,
+      "first_originator_verification": "NOT_VERIFIED_DO_NOT_CLAIM_FIRST_DISCOVERY",
+      "year": "ongoing",
+      "doi": null,
+      "canonical_source": null,
+      "project_source_artifact": "knowledge/SOURCE_REGISTRY.md",
+      "local_source_url": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/knowledge/SOURCE_REGISTRY.md",
+      "project_application_note": "Typed entities and qualified claims as design precedent.",
+      "reuse_type": "CONCEPTUAL_BASELINE_OR_CITATION_AS_REPORTED_BY_EXISTING_PI_DOCUMENT",
+      "copied_protected_expression_status": "NOT_DETERMINED_BY_THIS_AUDIT",
+      "specific_copyright_holder": null,
+      "copyright_holder_verification": "LICENSES_VERIFIED_FOR_IDENTIFIED_COMPONENTS; CONTRIBUTOR_COPYRIGHT_NOT_INDIVIDUALLY_VERIFIED",
+      "license_id": "CC0 1.0 structured data; CC BY-SA 4.0 other Wikidata page text",
+      "license_scope": "Structured main/Property/Lexeme/EntitySchema vs text in other namespaces; other assets separately evaluated",
+      "source_license_research_note": "Existing knowledge/SOURCE_REGISTRY.md discusses component-specific rights; do not infer a single license for whole project or third-party contributions.",
+      "reuse_permission": "STRUCTURED_DATA_CC0_AND_TEXT_CC_BY_SA_ONLY_BY_COMPONENT; PI_RECORDS_CONCEPTUAL_REFERENCE_NO_IMPORT",
+      "item_status": "BIBLIOGRAPHICALLY_REFERENCED_IN_PI_REQUIRES_RIGHTS_AND_ORIGINATOR_AUDIT",
+      "rights_evidence_url": "https://www.wikidata.org/wiki/Wikidata:Licensing"
+    },
+    {
+      "id": "PA-023",
+      "source_title_or_research_area": "OpenAlex",
+      "documented_author_or_originating_institution": "OurResearch / OpenAlex contributors",
+      "first_historical_originator_confirmed": false,
+      "first_originator_verification": "NOT_VERIFIED_DO_NOT_CLAIM_FIRST_DISCOVERY",
+      "year": "ongoing",
+      "doi": null,
+      "canonical_source": null,
+      "project_source_artifact": "knowledge/SOURCE_REGISTRY.md",
+      "local_source_url": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/knowledge/SOURCE_REGISTRY.md",
+      "project_application_note": "Stable scholarly identifiers and metadata graph as design precedent.",
+      "reuse_type": "CONCEPTUAL_BASELINE_OR_CITATION_AS_REPORTED_BY_EXISTING_PI_DOCUMENT",
+      "copied_protected_expression_status": "NOT_DETERMINED_BY_THIS_AUDIT",
+      "specific_copyright_holder": null,
+      "copyright_holder_verification": "DATA_CC0_CONFIRMED; UNDERLYING_WORKS_INDEPENDENT_RIGHTS",
+      "license_id": "CC0 for OpenAlex scholarly metadata dataset (NOT full-text PDFs)",
+      "license_scope": "OpenAlex data and metadata; downloaded source-PDF original rights preserved and work-specific licenses must be checked",
+      "source_license_research_note": "Existing knowledge/SOURCE_REGISTRY.md discusses component-specific rights; do not infer a single license for whole project or third-party contributions.",
+      "reuse_permission": "METADATA_DATASET_CC0; PI_REPORTS_CONCEPTUAL_REFERENCE_ONLY",
+      "item_status": "BIBLIOGRAPHICALLY_REFERENCED_IN_PI_REQUIRES_RIGHTS_AND_ORIGINATOR_AUDIT",
+      "rights_evidence_url": "https://help.openalex.org/data/how-its-built/",
+      "additional_rights_evidence_url": "https://help.openalex.org/access/fulltext/"
+    },
+    {
+      "id": "PA-024",
+      "source_title_or_research_area": "MITRE ATT&CK",
+      "documented_author_or_originating_institution": "The MITRE Corporation",
+      "first_historical_originator_confirmed": false,
+      "first_originator_verification": "NOT_VERIFIED_DO_NOT_CLAIM_FIRST_DISCOVERY",
+      "year": "ongoing",
+      "doi": null,
+      "canonical_source": null,
+      "project_source_artifact": "knowledge/SOURCE_REGISTRY.md",
+      "local_source_url": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/knowledge/SOURCE_REGISTRY.md",
+      "project_application_note": "Organizing hierarchical mechanisms and observed procedures as taxonomy precedent.",
+      "reuse_type": "CONCEPTUAL_BASELINE_OR_CITATION_AS_REPORTED_BY_EXISTING_PI_DOCUMENT",
+      "copied_protected_expression_status": "NOT_DETERMINED_BY_THIS_AUDIT",
+      "specific_copyright_holder": "The MITRE Corporation (ATT&CK materials within named official terms)",
+      "copyright_holder_verification": "OFFICIAL_COPYRIGHT_DESIGNATION_VERIFIED_FOR_ATTCK",
+      "license_id": "MITRE ATT&CK Terms of Use (specific custom permission; NOT MIT license)",
+      "license_scope": "ATT&CK research, development, commercial reuse under official terms; copies must retain copyright designation and license; trademark separate",
+      "source_license_research_note": "Existing knowledge/SOURCE_REGISTRY.md discusses component-specific rights; do not infer a single license for whole project or third-party contributions.",
+      "reuse_permission": "ATTCK_MAY_BE_COPIED_WITH_REQUIRED_OFFICIAL_COPYRIGHT_AND_LICENSE_NOTICES; PI_REPORTS_NO_IMPORTED_MATERIAL",
+      "item_status": "BIBLIOGRAPHICALLY_REFERENCED_IN_PI_REQUIRES_RIGHTS_AND_ORIGINATOR_AUDIT",
+      "rights_evidence_url": "https://attack.mitre.org/resources/terms-of-use/"
+    },
+    {
+      "id": "PA-025",
+      "source_title_or_research_area": "Papers with Code",
+      "documented_author_or_originating_institution": "Papers with Code contributors / project",
+      "first_historical_originator_confirmed": false,
+      "first_originator_verification": "NOT_VERIFIED_DO_NOT_CLAIM_FIRST_DISCOVERY",
+      "year": "ongoing",
+      "doi": null,
+      "canonical_source": null,
+      "project_source_artifact": "knowledge/SOURCE_REGISTRY.md",
+      "local_source_url": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/knowledge/SOURCE_REGISTRY.md",
+      "project_application_note": "Linked papers, code, methods and evaluation entities as design precedent.",
+      "reuse_type": "CONCEPTUAL_BASELINE_OR_CITATION_AS_REPORTED_BY_EXISTING_PI_DOCUMENT",
+      "copied_protected_expression_status": "NOT_DETERMINED_BY_THIS_AUDIT",
+      "specific_copyright_holder": null,
+      "copyright_holder_verification": "NOT_VERIFIED",
+      "license_id": null,
+      "license_scope": "NOT_VERIFIED_FOR_UNDERLYING_SOURCE",
+      "source_license_research_note": "Existing knowledge/SOURCE_REGISTRY.md discusses component-specific rights; do not infer a single license for whole project or third-party contributions.",
+      "reuse_permission": "CITATION_AND_INDEPENDENT_CONCEPTUAL_ANALYSIS_ONLY_UNTIL_RIGHTS_CHECK",
+      "item_status": "BIBLIOGRAPHICALLY_REFERENCED_IN_PI_REQUIRES_RIGHTS_AND_ORIGINATOR_AUDIT"
+    }
+  ],
+  "inventory": [
+    {
+      "path": ".github/FUNDING.yml",
+      "blob_sha": "96e7d058279bea9c5f7cb403908df34189838e49",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Non-primary text/code asset may still carry its own source attribution, embedded third-party material, and license."
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/independent-replication.md",
+      "blob_sha": "8f1e84ce0130f8a35bea55c48145b6169ff2e9be",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": ".github/pull_request_template.md",
+      "blob_sha": "8a53060d44a7ee842321d6063ad3680902b7da29",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": ".github/workflows/capability-lab-regression.yml",
+      "blob_sha": "39bbb29287bc68afda203b9dfbe2b373e13521db",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Non-primary text/code asset may still carry its own source attribution, embedded third-party material, and license."
+    },
+    {
+      "path": ".github/workflows/e007-public-repro.yml",
+      "blob_sha": "57f61f0aaf7c671f5ee700bc1372b5f231eadc42",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Non-primary text/code asset may still carry its own source attribution, embedded third-party material, and license."
+    },
+    {
+      "path": ".github/workflows/e008-prereg-audit.yml",
+      "blob_sha": "725c50ccf6914863c89cd5b304db9e792b262393",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Non-primary text/code asset may still carry its own source attribution, embedded third-party material, and license."
+    },
+    {
+      "path": ".github/workflows/e009-prereg-audit.yml",
+      "blob_sha": "032cc842f542afce1eb926b15549af8ce93bbbc7",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Non-primary text/code asset may still carry its own source attribution, embedded third-party material, and license."
+    },
+    {
+      "path": ".github/workflows/e010-analytic-audit.yml",
+      "blob_sha": "ff0ed7f2df81782407cf2f65ec251d4b4e0d1c74",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Non-primary text/code asset may still carry its own source attribution, embedded third-party material, and license."
+    },
+    {
+      "path": ".github/workflows/handoff-protocol-audit.yml",
+      "blob_sha": "acc77e2b5b0157cba17387b907dde7798bac2b90",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Non-primary text/code asset may still carry its own source attribution, embedded third-party material, and license."
+    },
+    {
+      "path": ".github/workflows/ishpp-blind-boundary.yml",
+      "blob_sha": "53e90778e7f4dff51448bc189d5d2a4846b70ac1",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Non-primary text/code asset may still carry its own source attribution, embedded third-party material, and license."
+    },
+    {
+      "path": ".github/workflows/knowledge-graph-audit.yml",
+      "blob_sha": "961f9360e1832b52958649260c6b02c9f48f7417",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Non-primary text/code asset may still carry its own source attribution, embedded third-party material, and license."
+    },
+    {
+      "path": ".github/workflows/public-repository-audit.yml",
+      "blob_sha": "1126e906e128bde0a788e49dc3e6a6b9fb63281e",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Non-primary text/code asset may still carry its own source attribution, embedded third-party material, and license."
+    },
+    {
+      "path": ".github/workflows/public-sponsorship-integrity.yml",
+      "blob_sha": "3062b3a2c9c4366b9fa95aee31e02b53abd0f421",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Non-primary text/code asset may still carry its own source attribution, embedded third-party material, and license."
+    },
+    {
+      "path": ".github/workflows/selective-truth-gate.yml",
+      "blob_sha": "cf00b1cc926486b98160eb455af9fccfaff9b320",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Non-primary text/code asset may still carry its own source attribution, embedded third-party material, and license."
+    },
+    {
+      "path": ".github/workflows/semantic-fidelity-probe.yml",
+      "blob_sha": "ef48d172712678ef053d2d6785c5919f8704e82b",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Non-primary text/code asset may still carry its own source attribution, embedded third-party material, and license."
+    },
+    {
+      "path": "AI_DISCOVERY_INDEX.json",
+      "blob_sha": "183004a35e0408e25704a9f87d94e33ada3f967a",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "AI_REVIEW_START_HERE.md",
+      "blob_sha": "a1e6b5cb0e2dcae0e1ffec90464be9052ec1a2cd",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md",
+      "blob_sha": "34a04412fab2c431c9b32d8ba4aa9213db1f1faf",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "AUTONOMOUS_RESEARCH_LOOP.md",
+      "blob_sha": "85dd40e32347694c4058339e602d666527d44654",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "AUTONOMOUS_RESEARCH_STATE.json",
+      "blob_sha": "664f1124138f84a23660293aa2498237db723e53",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "benchmarks/ISHPP_BIS_CIRCULAR_FINANCING_BLIND_MIN_20261010.json",
+      "blob_sha": "5a6a66016ed609efb4ec70643baeb95a6779c4f0",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "benchmarks/ISHPP_BIS_CIRCULAR_FINANCING_SOURCES_20261010.json",
+      "blob_sha": "9ac2764814e8e27468a747aa68eeb90045733ea8",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "benchmarks/ISHPP_DRIVER_ASSISTANCE_GATE_BLIND_20261010T1658KST.json",
+      "blob_sha": "a4bebe6bc6c83f9b872c6b0c55719b2d99c545fc",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "benchmarks/ISHPP_DRIVER_ASSISTANCE_GATE_SOURCES_20261010T1658KST.json",
+      "blob_sha": "efca339f5543c1faa5f2a85ced3badbc33cc4016",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "benchmarks/ISHPP_EU_GPAI_REQUEST_BLIND_20261010.json",
+      "blob_sha": "0071fd2ee91cb3277054c498ba7c95f300fbbd1f",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "benchmarks/ISHPP_EU_GPAI_REQUEST_SOURCE_20261010.json",
+      "blob_sha": "a58547a70c03641cdf3ada0eed5c33b13a07e048",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "benchmarks/ISHPP_EVAL_EXTERNAL_WRITE_DELAY_SOURCES_MIN_20261010.json",
+      "blob_sha": "b25baa2608d6cc891ab666d580840ca6e74c7017",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "benchmarks/ISHPP_EVALUATOR_MISSING_INPUT_BLIND_20261011.json",
+      "blob_sha": "92fb9077bdc41cbd33c44e6ef9a7be885c1bda26",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "benchmarks/ISHPP_HALOS_SAFETY_GATE_SOURCES_20261010.json",
+      "blob_sha": "20008757c7ba8d3e21e7af4413a6bfcb4bf62f27",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "benchmarks/ISHPP_MATH_REVIEW_BLIND_20261010.json",
+      "blob_sha": "fa9212232474220457ed3c0c2d10800c28c9ab9c",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "benchmarks/ISHPP_PHYSICAL_OPEN_STACK_SOURCES_20261010.json",
+      "blob_sha": "527497ebfa9d9e8763900293f863086363d8ee64",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "benchmarks/ISHPP_PHYSICAL_PROCUREMENT_BLIND_20261010.json",
+      "blob_sha": "6cfe1a1c22e54d8e9e8bc8ae1f64229c8a9c9089",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "benchmarks/ISHPP_PILOT_LIMITS_20261011.md",
+      "blob_sha": "7193780a5555e8426f32fc380f4f3e078601681b",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "benchmarks/ISHPP_PUBLIC_REPLICATION_PACK_20261011_KO.md",
+      "blob_sha": "8d518c0c8fb604b3fa3b71e40ca7caae6645c56d",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "benchmarks/ISHPP_REAL_WORLD_BLIND_SET_v0_1.jsonl",
+      "blob_sha": "d643eba7602350f16f6d6aaa638e3295b980ac27",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Non-primary text/code asset may still carry its own source attribution, embedded third-party material, and license."
+    },
+    {
+      "path": "benchmarks/ISHPP_REAL_WORLD_BLIND_SET_v0_2.jsonl",
+      "blob_sha": "369e4038ac1a5f89565f3f4c10dca4cecce1c100",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Non-primary text/code asset may still carry its own source attribution, embedded third-party material, and license."
+    },
+    {
+      "path": "benchmarks/ISHPP_REAL_WORLD_CASE_SOURCES_v0_2.json",
+      "blob_sha": "b0eea401a7d06e1c626c2c527b6ec6c558a9dbb5",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "benchmarks/ISHPP_REAL_WORLD_SOURCE_MAP_v0_1.json",
+      "blob_sha": "8d86b6760ce7259168dae898a529a67cd7e7d398",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "benchmarks/ISHPP_ROBOT_DATA_LABOR_SOURCES_MIN_20261010_V1.json",
+      "blob_sha": "7a110833e46452b5655c120bcf707d87cc3b921d",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "benchmarks/ISHPP_SAFETY_DISCLOSURE_857_BLIND_MIN_20261010.json",
+      "blob_sha": "a7654699068707b24d365256b596e06356fb81b0",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "benchmarks/ISHPP_WITHDRAWAL_REVOCABILITY_BLIND_20261010.json",
+      "blob_sha": "31fb2ad77d09022a964bbfbfaa4ec643cd4b272b",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "benchmarks/ISHPP_WITHDRAWAL_REVOCABILITY_SOURCES_20261010.json",
+      "blob_sha": "8c0c254c57589491d941d8941b0b6557ccbc3a5f",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "benchmarks/ISHPP_WORKPLACE_AI_SCORING_BLIND_20261010.json",
+      "blob_sha": "02067bb4b5e2c4084709de0401ff5c35232632e2",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "benchmarks/ISHPP_WORKPLACE_AI_SCORING_SOURCE_MIN_20261010.json",
+      "blob_sha": "f12c4f967458e773e637f8866d199d117204d209",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "benchmarks/ROLE_SWAP_REGRESSION_SET_v0_1.jsonl",
+      "blob_sha": "6b6657c4fcb669ef27f25067442f0ca544c1b102",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Non-primary text/code asset may still carry its own source attribution, embedded third-party material, and license."
+    },
+    {
+      "path": "benchmarks/test_ishpp_blind_boundary.py",
+      "blob_sha": "30ddbc6dfa6af86db78367ce5d8b988991fa32ae",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "benchmarks/validate_ishpp_blind.py",
+      "blob_sha": "279613ec9a84463dec44fef30b730c3fa475d510",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "capability_lab/__init__.py",
+      "blob_sha": "09aec67b5d855b199abbf2a066537dba9e120562",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "capability_lab/answerability_cases.json",
+      "blob_sha": "1a9ffeb9ce6be6ce0c4b0e6b188a67e3ac8b66e8",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "capability_lab/answerability_evolution.py",
+      "blob_sha": "6150e58ba0c55098e6046244fabbcdb0f10e9fb8",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "capability_lab/ANSWERABILITY_PROTOCOL_KO.md",
+      "blob_sha": "cda222add3fdb743ef05644a5d7c5e0df6dfccb7",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "capability_lab/benchmark.json",
+      "blob_sha": "b51801b506c21ebb369357bfaa4128c274eb5f66",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "capability_lab/formal_logic.py",
+      "blob_sha": "370bec42e8adac1eb282114d9552fac8d1d9444c",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "capability_lab/logic_cases.json",
+      "blob_sha": "9b32da3277a4ebaf157b556cbc4f5411bf2d993c",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "capability_lab/README_KO.md",
+      "blob_sha": "6c5c83c185aa0f8c7740b13b50fd49f78642bea7",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "capability_lab/RESULT_2026-10-11_KO.md",
+      "blob_sha": "f5e4a23d5e3e8be08d0fd635be17b6c6850fdeb3",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "capability_lab/RESULT_ANSWERABILITY_2026-10-11_KO.md",
+      "blob_sha": "ace2815b796a87a0e055a824b86a436544271e45",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "capability_lab/RESULT_FORMAL_LOGIC_2026-10-11_KO.md",
+      "blob_sha": "8d29058998839cbf57fdc355d33798c995916980",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "capability_lab/retrieval_evolution.py",
+      "blob_sha": "9c31119c13cbaa1090500e4056cae4f9c877c072",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "capability_lab/test_answerability_evolution.py",
+      "blob_sha": "07062a45e9cbb4f872e7c3530bd9713d7401b16c",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "capability_lab/test_formal_logic.py",
+      "blob_sha": "981b8416cae50392417d46a89d21d086246ca471",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "capability_lab/test_retrieval_evolution.py",
+      "blob_sha": "b773205fd1d7449e4269e1b71a683926d26bee77",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "CASE_AI_EVALUATOR_INDEPENDENCE_2026_KO.md",
+      "blob_sha": "e0befe2f3f4cf8041c97a27ab284b597597b4de6",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "CASE_ASYMMETRIC_POLICING_COOPERATION_BOUNDARY_2026-10-10_KO.md",
+      "blob_sha": "271ac3c79ec65eb5eb081567c4fee143349c2041",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "CASE_CROSS_INDUSTRY_CONCEALMENT_COMPARISON_KO.md",
+      "blob_sha": "ae137ac0646c16748a89f4b31b6db766cfc87ec5",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "CASE_DETECTOR_ROBUSTNESS_FIELD_VALIDATION_KO.md",
+      "blob_sha": "93882265f7b6de4fabb6ac81498dd325ac185318",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "CASE_FRONTIER_AI_SELECTIVE_RISK_FRAMING_2026-10-11_KO.md",
+      "blob_sha": "e0fae31cd7693283033e390f84b69836c7591d68",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "CASE_OPENAI_SAFETY_RESEARCHER_DISMISSALS_AUDIT_ACCESS_2026-10-11_KO.md",
+      "blob_sha": "77da0ce65e96893235aa889c080305343e11b96d",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "CASE_SHORT_TERM_REWARD_EVALUATION_REPROCESSING_KO.md",
+      "blob_sha": "3d3242ab162e15dafe914a1cc6ec1e9a65363a7f",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "CASE_TOBACCO_SCIENCE_CONTROL_KO.md",
+      "blob_sha": "200c6ed7626f3c934726fb7e0948c9893e564daa",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "CITATION.cff",
+      "blob_sha": "b73ea5d08906f62c4a2869c450ca6ecdc4c186d0",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Non-primary text/code asset may still carry its own source attribution, embedded third-party material, and license."
+    },
+    {
+      "path": "CONTINUITY_CAPSULE_PUBLIC_KO.md",
+      "blob_sha": "32f74f27b337ce305ec2e9f3ec35d730327d3151",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "continuity/GITHUB_LOCAL_HANDOFF_PROTOCOL.md",
+      "blob_sha": "9f7dee6eac594dc56745d1768e5f89b055438a0a",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "continuity/handoff-policy.json",
+      "blob_sha": "86fee659c3af52a562937e3321f0878ac4811901",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "continuity/handoff-receipt-schema-v1.json",
+      "blob_sha": "4526513ab591ad148cc06da11fa46df7f9c10d1a",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "continuity/validate_handoff.py",
+      "blob_sha": "7d8ec2e18dfa07ac7350e71cf7c0f8307f65533e",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "blob_sha": "ae4125e817c5955da7892d6798f4b1970d462010",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "CONTRIBUTION_COST_ACCOUNTING_REGRESSION.md",
+      "blob_sha": "1abac262248d3445504604a4550309bea601838c",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "CONVERGENCE_TRACE_FORMALISM_KO.md",
+      "blob_sha": "4090274862d3a2a230c7979d9dbb1bbdf0c3e271",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md",
+      "blob_sha": "43bfa9308a13cc6e2c6ae53358caafaac0ce6ce1",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "CORE_RESEARCH_SPEC_V1_KO.md",
+      "blob_sha": "131aed884e5fbf67398c0b3904593d5248017211",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "DETECTOR_BYPASS_ROBUSTNESS_WATCH_KO.md",
+      "blob_sha": "4e5173727f00c7bd9c6515d61af1805200361d7f",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "DETECTOR_ROBUSTNESS_STATE.json",
+      "blob_sha": "3d3225597aba145af8b2c029215c2f640c14d73e",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "DOMAIN_MANIFEST.json",
+      "blob_sha": "a4d0e607fa033ce3521916d681345cebd3db69ed",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "E007_TIMING_RESULT.md",
+      "blob_sha": "7aebad1c0605bb7dbb802c9eb79ca7d4a657a391",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "E009_RANDOMNESS_COMPLEXITY_POSTHOC_AUDIT_2026-10-11_KO.md",
+      "blob_sha": "27bf7fa4d5f05c35fb30a8d47d1d2164aa148c47",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "EARLY_WARNING_EVALUATION_REPROCESSING_DETECTOR_KO.md",
+      "blob_sha": "3caa7d3e7e14e2c3c253e34fd39a9cd099cfd726",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "EVALUATION_REPROCESSING_DETECTOR_SCHEMA.json",
+      "blob_sha": "85029584821bdd7d38062e78669f0919e32a1e35",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "evaluation/ISHPP_EVALUATOR_SCORECARD_v0_1_KO.md",
+      "blob_sha": "68fc62b830446c05e448abc16ddea89168fc7d36",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "evidence/2026-10-10/AI_PHYSICAL_DELTA_20261010T1013KST_KO.md",
+      "blob_sha": "3f048e0f2865609a8941f388efde8998aedd4833",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "evidence/2026-10-11/ISHPP_AI_COMPANION_BENEFIT_BOUNDARY_20261011.json",
+      "blob_sha": "e5bcb25c30cdcbfabb7aec13e00591cf6df96cd5",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "evidence/2026-10-11/ISHPP_AI_COMPANION_EXIT_RETENTION_PATHWAY_20261011T2104KST.json",
+      "blob_sha": "f3fdd39443ddd607620c1d81016c1e753372b367",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "evidence/2026-10-11/ISHPP_AI_COMPANION_EXPOSURE_INTENSITY_BOUNDARY_20261011T2001KST.json",
+      "blob_sha": "2b8f13766d28714f7898402b4a454f36d839da20",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "evidence/2026-10-11/ISHPP_EU_CONTROLLER_GATE_20261011.json",
+      "blob_sha": "b2f02e73db2e07c4ec2ee53edbd452694efe018c",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "experiments/e007/CHECKSUMS.json",
+      "blob_sha": "bfec239428840e5fe78bd41f24186030235781ee",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "experiments/e007/INDEPENDENT_REIMPLEMENTATION_PROTOCOL.md",
+      "blob_sha": "74581b206ec6bd7c493c8f9a58e8b7f04244ca81",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "experiments/e007/LICENSE_STATUS.md",
+      "blob_sha": "9ec1e843be2f5b382f2e5a9bf54957cd94bee8a6",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "experiments/e007/LICENSE-APACHE-2.0.txt",
+      "blob_sha": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Non-primary text/code asset may still carry its own source attribution, embedded third-party material, and license."
+    },
+    {
+      "path": "experiments/e007/LICENSE-CC-BY-4.0.txt",
+      "blob_sha": "13ca539f377dc705af32b8d2ce89262298ea2f06",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Non-primary text/code asset may still carry its own source attribution, embedded third-party material, and license."
+    },
+    {
+      "path": "experiments/e007/model.py",
+      "blob_sha": "b10f2555e3b1f3198d11d7d550a877cd1e796f63",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "experiments/e007/PROVENANCE.md",
+      "blob_sha": "cb0abae70181f97720bdaeb250115ada0be1a1bf",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "experiments/e007/README.md",
+      "blob_sha": "996896174f528309804b59780d866d75a1688278",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "experiments/e007/requirements.txt",
+      "blob_sha": "e96a830ac9864a951dd4ce54a9167e1039cbd199",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Non-primary text/code asset may still carry its own source attribution, embedded third-party material, and license."
+    },
+    {
+      "path": "experiments/e007/RUN.md",
+      "blob_sha": "2a12b09ce28d023b72f98609eeb34c9a0d944e89",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "experiments/e007/test_e007_model.py",
+      "blob_sha": "bf9140e37fccd536d48064005ded56cdbb4ecc98",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "experiments/e007/test_e007_timing_probe.py",
+      "blob_sha": "31135ec8a7bd00050f4dbc4747ff0992bc30778d",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "experiments/e007/test_e007_timing_variants.py",
+      "blob_sha": "6b6f60009bff9422aa05456225194dadb3349143",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "experiments/e007/timing_probe.py",
+      "blob_sha": "6ecd16adee226538f8afc1efb586453ce246bd9e",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "experiments/e007/timing_summary.json",
+      "blob_sha": "569d5d0fe272fb4e1d2b84637893856e1ac329a3",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "experiments/e007/timing_variants.py",
+      "blob_sha": "fa9158b75bd83d02a4766f5f5abf681b54653f8c",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "experiments/e008/AGENCY_LIVING_CONDITIONS_AMENDMENT_v1_2.md",
+      "blob_sha": "d58cd2049413a7659d9aa15f62d63862a2d76414",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "experiments/e008/EXECUTABILITY_AUDIT_EN.md",
+      "blob_sha": "94c4f16c6134a299237f625f351af9726c32ede6",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "experiments/e008/EXECUTABILITY_AUDIT_KO.md",
+      "blob_sha": "0c451a63d5f436640dbf6dd95b90ca9adc5519b9",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "experiments/e008/EXECUTABILITY_AUDIT.json",
+      "blob_sha": "7ec6f3a9e778bd11e0b36db5ae27a60ee8b53d3d",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "experiments/e008/MUTUAL_ACCEPTABILITY_AMENDMENT_v1_1.md",
+      "blob_sha": "173b17d5da41be5dd13eaa1a8a4d3ffaa26a331e",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "experiments/e008/readiness_audit.js",
+      "blob_sha": "3eba324a468baa63949b5079db9f1c7ff2f551b0",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "experiments/e008/README.md",
+      "blob_sha": "6c6654ab09d4cd76c799277af44c90684e51cfa7",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "experiments/e008/scenario_matrix.json",
+      "blob_sha": "bf7d863182844c21ce2de5f63006eea127962b80",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "experiments/e008/validate.py",
+      "blob_sha": "5184c96e56ee6929c86409b12bc092e5191712c3",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "experiments/e009/benchmark.py",
+      "blob_sha": "e190d2a2466e44b62752eff6f547eb79bc4c6b7f",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "experiments/e009/EXECUTABLE_PROTOCOL_v1_1.md",
+      "blob_sha": "f11ac25b70bf5a149a3c9840e80cf40afb6e5e51",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "experiments/e009/EXECUTION_RECEIPT.json",
+      "blob_sha": "86e4772b2a6fafbb2ec50c5112e1886b09641c52",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "experiments/e009/paired_observation_audit.py",
+      "blob_sha": "71f09ac0a8f6205c90bc6b77d0effb0f29fb5e20",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "experiments/e009/README.md",
+      "blob_sha": "47fc4cbb390e6ee7c367a733173e4dad3d0fd009",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "experiments/e009/RESULT.json",
+      "blob_sha": "c1c610297eaf3aab0ffeb9b2a59b9e520c40af58",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "experiments/e009/RESULT.md",
+      "blob_sha": "6219f35f05f7579595cbe7a40a1b9d5ba4a77a44",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "experiments/e009/scenario_matrix.json",
+      "blob_sha": "1a5c03ff2e5d331faaf1ac5719719bb7fe729196",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "experiments/e009/validate.py",
+      "blob_sha": "b2d8d7c98c5a95dec63d8186989a31c84c127f1d",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "experiments/e009/verify_result.py",
+      "blob_sha": "bf892f23ddfea2912ed73da1d1019526935245df",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "experiments/e010/README_KO.md",
+      "blob_sha": "6332b00d0e96f7948a7b5e4ac1d778a96eddc887",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "experiments/e010/RESULT.json",
+      "blob_sha": "257aa4f36b6bc96dd2391d7129672fd0a5c933bf",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "experiments/e010/run.js",
+      "blob_sha": "0e12f0dda0fe1c2d7c22173aac8ad9961d1c4c45",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "experiments/e010/verify.js",
+      "blob_sha": "1ae2334b86a1034835f2466890b0213c98f5882c",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "experiments/semantic_fidelity_probe/probe.py",
+      "blob_sha": "00a546cf408d85decab8b758761b380e69812205",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "experiments/semantic_fidelity_probe/RESULT.json",
+      "blob_sha": "28fb54e04cb28d9074b16376b7fc7032a6bb4fb7",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "FAILURE_REGRESSION_INDEX.md",
+      "blob_sha": "2f8e26c21f4093ac463bc4bdb24382ecd1703ea2",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "FINAL_PURPOSE_EXECUTION_STATE.json",
+      "blob_sha": "300c61ff518f2a0827e9ae754dd8e7427c9da1ca",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "funding/30_DAY_BRIDGE.md",
+      "blob_sha": "1528527bfa762578f7f3ac3d9c8763724b50441c",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "funding/90_DAY_PILOT.md",
+      "blob_sha": "c49b55cf29db62577480e92d7a838af7a87ece45",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "funding/DUE_DILIGENCE.md",
+      "blob_sha": "d26968e718c1b58338a06fefc0a55a67c8f924f6",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "funding/FUNDER_START_HERE.md",
+      "blob_sha": "0615360c9e5de96193bb750e01944823541158a4",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "funding/LEGAL_TAX_RISK_REGISTER_2026-10-13_EN_KO.md",
+      "blob_sha": "9183efd285557df248701f31d16f094705cf710a",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "funding/README.md",
+      "blob_sha": "d26c70f44bf1cfe1111f6ebd15725d75a20c50cd",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "funding/SPONSORSHIP_POLICY_2026-10-13_EN_KO.md",
+      "blob_sha": "0a12739d1e34423cf1fa520ed41c76fc52b9f23e",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "funding/SPONSORSHIP_PUBLIC_LEDGER.md",
+      "blob_sha": "32a1e351ec28ab6370f2af3e5997f0266c4f743b",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "GOAL_HIERARCHY_REPAIR_2026-10-05_KO.md",
+      "blob_sha": "8f68dfdf95e4a4f0fde934ed8aa348830a9ca047",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "governance/selective_truth_gate/gate.py",
+      "blob_sha": "5f80d6ffa7cca41234969d3116b687863499fdb2",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "governance/selective_truth_gate/README_KO.md",
+      "blob_sha": "015fc1d597d048cedab9f49e27abadc8c8a7a37e",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "governance/selective_truth_gate/records/public_ai_risk_scope_20261011.json",
+      "blob_sha": "4200744c6790d5d5d9246bcab3c2f63dca7dce7f",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "governance/selective_truth_gate/records/synthetic_scheduling_delivery.json",
+      "blob_sha": "2de3bf64f920b94532f9789584da4744d95583e3",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "governance/selective_truth_gate/test_gate.py",
+      "blob_sha": "c7c5e9dc54a78c705bb4052dd8d35d81e1d3b9b1",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "HISTORICAL_STATE_CONTROL_MEMORY_PROVENANCE_CAPTURE_v0_1_EN.md",
+      "blob_sha": "f54ce43bbe6562de9b023252f9bdb4aa4d00c7b1",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "HISTORICAL_STATE_CONTROL_MEMORY_PROVENANCE_CAPTURE_v0_1_KO.md",
+      "blob_sha": "5c86bec9c8a2fa6bab8114fe7fa820c15cc7d3b0",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "INCUMBENT_POWER_EXTRACTION_MECHANISMS_2026_KO.md",
+      "blob_sha": "32217743136c9289a203a2ae5c4ca72640a94935",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "knowledge/explorer.html",
+      "blob_sha": "e8d9abcee34049193485cff84b7409dcc6211453",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Non-primary text/code asset may still carry its own source attribution, embedded third-party material, and license."
+    },
+    {
+      "path": "knowledge/graph.json",
+      "blob_sha": "6605c23e3e69b2e131dcd9a49c97c78619b77268",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "knowledge/README.md",
+      "blob_sha": "85c9c6bb15c9e02090e13cd05cee69c045316dfa",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "knowledge/schema-v1.json",
+      "blob_sha": "a2ec2ca6c7deb14a0825f45b9179cbb9ecd836d0",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "knowledge/SOURCE_REGISTRY.md",
+      "blob_sha": "6fccbb07a18a336873f775642aa9c2c53aecf2b8",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "knowledge/source-registry.json",
+      "blob_sha": "fce5cf03aeb0ce17d576f52953777302208e036e",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "knowledge/validate.py",
+      "blob_sha": "5c31e78a4f22c5316b80af16a0e7750243dc6dc8",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "learning/ISHPP_HUMAN_AI_CURRICULUM_v0_1_KO.md",
+      "blob_sha": "b7db2f3fa8bafbd15d8ebe7c68c4f91b3e6a2d82",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "llms.txt",
+      "blob_sha": "bcd345a39d98eda7df75fb401ff2618f339b8996",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Non-primary text/code asset may still carry its own source attribution, embedded third-party material, and license."
+    },
+    {
+      "path": "LONG_HORIZON_MIN_INTERVENTION_E2E.md",
+      "blob_sha": "fc6df46d053fd428f682f3e9ca38b6d70d836c36",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "MULTI_MODEL_ADVERSARIAL_AUDIT_2026-10-06.md",
+      "blob_sha": "d6b3fb444e7b29bca24fff9fb4aac0d9956f413e",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "ORGANIC_EMBODIMENT_ICM_BOUNDARY_HYPOTHESES_2026-10-09.md",
+      "blob_sha": "ef88669d2ef214d2b909e60c95682d6c511757db",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "PLATFORM_ATTRIBUTION_REQUEST_EN_KO.md",
+      "blob_sha": "d8bb0c9fcdb32ae74dc42d9522cba5634e871670",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "PRIOR_ART_AND_ATTRIBUTION.md",
+      "blob_sha": "b4bbbf9b60fbb1faa234c8ae14936b9b59abb03d",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "PRIOR_ART_SAFETY_GOVERNANCE_CROSSWALK.md",
+      "blob_sha": "7e126c3793ad9d9ae2f663d2424cbb581c298717",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "PRIOR_ART_SATURATION_MAP_KO.md",
+      "blob_sha": "87a985125f1c7abebc355b1fa06a134db0e3071a",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "prior-art/HARM_EXPLOITATION_ATTACK_MAGNITUDE_PRIOR_ART_KO.md",
+      "blob_sha": "5cbe38352c42a15af99de100df9aa0e83f5f7520",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "prior-art/OBSCURED_HARM_VOLUNTARINESS_PRIOR_ART_KO.md",
+      "blob_sha": "8b3cb3895dbf054b6edff7c5f72bab91b6480aec",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "prior-art/UNINTENTIONAL_HARM_ATTACK_PRIOR_ART_KO.md",
+      "blob_sha": "a8bfdb79570e62b1d8f714999cd4656e453d1c31",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "PROJECT_SELF_AUDIT_2026-10-09_KO.md",
+      "blob_sha": "7ca285ad402b87cf6be5704e44205a2ca8a37389",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "protocols/INTERSECTION_SYMMETRIC_HARM_POWER_PROTOCOL_v0_1_KO.md",
+      "blob_sha": "7e302186b227e93165dc7254c3c8ab68cd8169c9",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "protocols/INTERSECTION_SYMMETRIC_HARM_POWER_PROTOCOL_v0_2_KO.md",
+      "blob_sha": "7ea36fdaaf45f7fe624e3edffd24ba03316a4801",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "protocols/INTERSECTION_SYMMETRIC_HARM_POWER_SCHEMA_v0_1.json",
+      "blob_sha": "62645868db44db46f453db4194bf5ec664b08744",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "PUBLIC_EVIDENCE_INDEX.md",
+      "blob_sha": "0737c80da5b1b57c84ed6f2080d19081e228b084",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "PUBLIC_FINAL_PURPOSE_EXECUTION_MAP_KO.md",
+      "blob_sha": "642b38ae61507dcb0f8a276112f100a5fb5e6365",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "PUBLIC_LINKEDIN_INTRODUCTION_2026-10-13_EN_KO.md",
+      "blob_sha": "b455a576d84b2f63887a51330f679a2ca1d57e4e",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "PUBLIC_PREAMBLE_VOLUNTARY_COEXISTENCE_2026-10-13_EN_KO.md",
+      "blob_sha": "9cd7db7b3f2cba113271b47a4cbc507905defbeb",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "PUBLIC_REVIEW_PACKET.md",
+      "blob_sha": "d407efc86ffe41d499f62e4165f8700e0efa9c45",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "README.md",
+      "blob_sha": "ad9f68405afa500509bfcec0f6c5e90874f4bd89",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "reports/AI_FINAL_CONVERGENCE_RISK_TOP10_KO.md",
+      "blob_sha": "4c456ea254e39929a337005a6d80f1a154012e0c",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "RESEARCH_OVERVIEW.md",
+      "blob_sha": "e80a1a8f69d8af7b6ca2a3ae227f96a1f1267d3a",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "RESEARCH_RIGHTS_SCOPE_EN_KO.md",
+      "blob_sha": "114d340a50727a4b08d1f36de5e73586296d473e",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "RESEARCH_STATUS_POLICY.md",
+      "blob_sha": "e99419192c4a0e406bacde0ded39dec2098d987a",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "RESEARCH_TOC.md",
+      "blob_sha": "b13a828f2f0127e48cf42680c64e5efc4647c4d7",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "research/AGENTIC_SEMANTIC_TRANSFORMATION_FIDELITY_2026-10-13_EN.md",
+      "blob_sha": "761866f8140a9072bb713b250b6b54ac601ea8ca",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "research/AGENTIC_SEMANTIC_TRANSFORMATION_FIDELITY_2026-10-13_KO.md",
+      "blob_sha": "8859c7bd0b7fea299fa48b3627f32c391177d470",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "research/AI_RISK_WARNING_INCENTIVES_2026-10-12_KO.md",
+      "blob_sha": "3add18719c5aad70b5b75812643300a979e33a4f",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "research/EPISTEMIC_PATHWAY_COMMUNICATION_PRIOR_ART_2026-10-13_EN_KO.md",
+      "blob_sha": "67b2798ea6880776b5ed56fa6a88a166eb6a824b",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "research/HARNESS_UNKNOWN_PARADOX_PUBLIC_HYPOTHESIS_2026-10-11_KO.md",
+      "blob_sha": "2833a966feeda5f9b7064681773de9298117ba86",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "research/HUMAN_EXPLOITATION_WITHOUT_MALICE_PRIOR_ART_2026-10-11_KO.md",
+      "blob_sha": "8a900abdadb4051006b6530aa6347447417ec8bb",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "research/ICM_INDEPENDENT_CHOICE_AUDIT_2026-10-13_EN.md",
+      "blob_sha": "5d817600ae90b8b774406744f0a2f043161bafcc",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "research/ICM_INDEPENDENT_CHOICE_AUDIT_2026-10-13_KO.md",
+      "blob_sha": "e825963f0b0ce7110d3c711123da82f5b69522d5",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "research/INTERGENERATIONAL_TRAITS_WEALTH_POWER_AI_CONVERGENCE_2026-10-12_KO.md",
+      "blob_sha": "3818da5b831497d71fb6d3571d50383587702e89",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "research/OPEN_KNOWLEDGE_ANTI_CAPTURE_MISSION_2026-10-12_KO.md",
+      "blob_sha": "d86f48b3d94485eec681846990cb8f03d8aa412e",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "research/PI_ROADMAP_CHANGE_TRAP_V0_2_1_EN_KO.md",
+      "blob_sha": "0b9ebb5b0882c5485a2f6a55e2271cfa0a66d471",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "research/PI_ROADMAP_HIDDEN_ROUTE_PRIOR_ART_V0_2_2_EN_KO.md",
+      "blob_sha": "422bc02fb2b2f06aceeb0a1785ae68845a5ee0e8",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "research/RECIPROCAL_NONDOMINATION_MINIMAL_INTRUSION_COMMON_LAW_2026-10-12_KO.md",
+      "blob_sha": "f08459a4b12bd58302dde8ffab5ee756882442ec",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "research/RESEARCH_ROADMAP_v0_1_EN_KO.md",
+      "blob_sha": "2d55b141b25ac9e90723eaf5ccdf692097296fad",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "research/RESEARCH_ROADMAP_v0_2_EN_KO.md",
+      "blob_sha": "0a88311fc663664d15baea9b2e2c26fac7070c12",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "SOURCE_ATTRIBUTION_EN_KO.md",
+      "blob_sha": "9f40b3f654533091a76e59c772d25f44d6f0e80b",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "START_HERE_EVIDENCE_FUNDING_BILINGUAL.md",
+      "blob_sha": "cfa0b13bd6b15e207a70f25dd7de27b957c0cf56",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "START_HERE_HUMAN_AI_KO.md",
+      "blob_sha": "afd83d904d6343d1306b439ca5362e3822c34858",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "START_HERE_KO.md",
+      "blob_sha": "4b619c6027095cc78e92627bad6514733a0db34b",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "TERMINOLOGY_POWER_ASYMMETRY_GOAL_INCONGRUENCE_KO.md",
+      "blob_sha": "d8d0f980702b30d99527f4bd88422cc93e229836",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "TERMINOLOGY_STRUCTURAL_POSITION_ADVANTAGE_KO.md",
+      "blob_sha": "b6b2bccbf725ace54ae1bb1184540cc3535a41ee",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "tools/check_public_sponsorship.py",
+      "blob_sha": "7bcc14d5d44c03716d9bd9b125cb69223bafb6f1",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    },
+    {
+      "path": "tools/check_readme_l0.py",
+      "blob_sha": "bcefdb2f90f80cc6f9768f35237a0f4e6ff3b054",
+      "review_status": "NOT_FILE_LEVEL_AUDITED",
+      "source_mapping_status": "NOT_COMPLETE",
+      "rights_status": "UNASSESSED",
+      "note": "Snapshot inventory only; provenance may already be present in the source file."
+    }
+  ],
+  "snapshot_git_tree_sha": "90f8db821d57bab8a36b506b3457cf6e52dccd80",
+  "snapshot_git_tree_complete": true
+}

@@ -1,6 +1,8 @@
 # Safety, Governance, and AI-Control Prior-Art Crosswalk
 # 안전·거버넌스·AI 통제 선행연구 교차지도
 
+**Rights / 원저자 권리 연결 (2026-10-13):** [Source-originator-rightsholder and PI adaptation register](PRIOR_ART_RIGHTS_AND_DERIVATION_EN_KO.md) — PA-006 to PA-018 include key safety/control sources, with actual source authors and PI boundaries. Original works remain theirs; a publication author is not automatically the first originator or copyright holder. / PA-006~PA-018에 원저자와 PI의 응용 경계를 연결하고, 최초 발안·저작권 귀속의 미확인 상태를 보존한다.
+
 Date: 2026-10-05  
 Status: **PRIOR-ART INTEGRATION / REUSE / ATTRIBUTION / BOUNDARY CONDITIONS**
 
