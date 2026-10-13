@@ -2,7 +2,7 @@
 
 - **AI 이해 연구 — 지식의 생산적 재구성과 원안 변질의 양면성:** [영어 원본1](research/AGENTIC_SEMANTIC_TRANSFORMATION_FIDELITY_2026-10-13_EN.md) · [한국어 원본2](research/AGENTIC_SEMANTIC_TRANSFORMATION_FIDELITY_2026-10-13_KO.md) — README 변질·복구를 관측사례로 사용하며 맥락·요약·자기인용·규칙 고착·합리적 문서배치 등 경쟁설명을 분리. 인과 실험과 독립검증 미실행.
 - **연구 통합 공개 머릿말(원본1 영어 / 원본2 한국어):** [개발 주체와 시스템의 능력 변화, 실질적 감독·안전관리, 역할반전·협력 유인에 관한 7개 질문 + 기존 6대 연구영역](PUBLIC_PREAMBLE_VOLUNTARY_COEXISTENCE_2026-10-13_EN_KO.md) — 최소충분 안전규칙, E2E 공존, ICM 정의 구별, E007~E010 검증 경계, 기여·번역·후원 경계. 기존 연구 정본을 대체하지 않음.
-- **공식 연구 로드맵 v0.1:** [초안 구체화 → 선행연구 수집 → 조사 포화 판정 → 검수·정제·응용 → 원기여자 기록 → 신연구 검증·가속](research/RESEARCH_ROADMAP_v0_1_EN_KO.md) — 영어 원본1·한국어 원본2; 설계, 전단계 실행 완료가 아님.
+- **PI 로드맵 v0.1(공식 연구 로드맵):** [초안 구체화 → 선행연구 수집 → 조사 포화 판정 → 검수·정제·응용 → 원기여자 기록 → 신연구 검증·가속](research/RESEARCH_ROADMAP_v0_1_EN_KO.md) — 영어 원본1·한국어 원본2; 설계, 전단계 실행 완료가 아님.
 - **후원금 운영·안전장치:** [개인 연구 후원 2항목·통합 장부(수입 금액 미확인)](funding/SPONSORSHIP_PUBLIC_LEDGER.md) · [법률·세무·프라이버시 위험 등록부](funding/LEGAL_TAX_RISK_REGISTER_2026-10-13_EN_KO.md) · [대외 연구 소개글](PUBLIC_LINKEDIN_INTRODUCTION_2026-10-13_EN_KO.md). 기존 별도 연구비 계획은 그대로 보존.
 
 
