@@ -31,6 +31,14 @@ ids=[x.get("id") for x in cases]
 req(len(ids)==len(set(ids)),"duplicate case IDs")
 lookup={x.get("id"):x for x in cases}
 
+def reverse_actor_role(role):
+    """Swap only actor-identity tokens; preserve actual causal descriptors."""
+    if not isinstance(role, str):
+        return None
+    return "_".join({"A": "B", "B": "A"}.get(token, token)
+                    for token in role.split("_"))
+
+
 required=["id","pair","theme","immediate_reward","delayed_effect","uncertainty","irreversibility","practical_exit","rollback","urgency","amendment_conflict","role"]
 for case in cases:
     for f in required:
@@ -39,6 +47,8 @@ for case in cases:
     req(pair is not None,f"{case.get('id')}: missing pair")
     if pair:
         req(pair.get("pair")==case.get("id"),f"{case.get('id')}: pair symmetry broken")
+        req(reverse_actor_role(case.get("role")) == pair.get("role"),
+            f"{case.get('id')}: reversed pair has unchanged or invalid actor roles")
         for f in ["theme","immediate_reward","delayed_effect","uncertainty","irreversibility","practical_exit","rollback","urgency","amendment_conflict"]:
             req(pair.get(f)==case.get(f),f"{case.get('id')}: causal factor drift across reversal pair: {f}")
 

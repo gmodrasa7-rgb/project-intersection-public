@@ -28,6 +28,10 @@ const globalMissing = [
   "model_uncertainty_and_regret_definition",
   "independent_evaluation_and_adjudication_inputs"
 ];
+function reverseActorTokens(role) {
+  if(typeof role!=="string")return null;
+  return role.split("_").map(token=>token==="A"?"B":token==="B"?"A":token).join("_");
+}
 function inspect(data){
 const errors=[];
 if(data.status!=="PREREGISTERED_SPECIFICATION_NO_RESULT")errors.push("ORIGINAL_PREREG_STATUS_CHANGED");
@@ -43,7 +47,12 @@ const fields=["theme","immediate_reward","delayed_effect","uncertainty","irrever
 for(const c of data.cases||[]){
  const other=byId.get(c.pair);
  if(!other||other.pair!==c.id)errors.push("PAIR_MISSING_OR_ASYMMETRIC:"+c.id);
- else for(const f of fields)if(c[f]!==other[f])errors.push("PAIR_FACTOR_DRIFT:"+c.id+":"+f);
+ else {
+  if(reverseActorTokens(c.role)!==other.role)
+    errors.push("PAIR_ROLE_REVERSAL_MISSING:"+c.id);
+  for(const f of fields)if(c[f]!==other[f])
+    errors.push("PAIR_FACTOR_DRIFT:"+c.id+":"+f);
+ }
 }
 const perCase=(data.cases||[]).map(c=>{
  const missing=operational.filter(k=>!Object.prototype.hasOwnProperty.call(c,k));
@@ -110,6 +119,11 @@ checks.witnessNeverPermitsFloorViolation=w.possible_completions.every(x=>x.floor
 checks.witnessImmediateUnchanged=w.possible_completions.every(x=>x.immediate_argmax==="extract");
 const changed=JSON.parse(JSON.stringify(data));changed.cases[1].delayed_effect="random_injected_drift";
 checks.rolePairMutationCaught=inspect(changed).structural_errors.some(s=>s.startsWith("PAIR_FACTOR_DRIFT"));
+const swappedWrong=JSON.parse(JSON.stringify(data));
+swappedWrong.cases[1].role=swappedWrong.cases[0].role;
+checks.roleIdentityMutationCaught=inspect(swappedWrong).structural_errors.some(
+  s=>s.startsWith("PAIR_ROLE_REVERSAL_MISSING"));
+
 const corrupt=JSON.parse(JSON.stringify(data));corrupt.cases[0].expected_winner="PROJECT_V2";
 checks.winnerInjectionCaught=inspect(corrupt).structural_errors.some(s=>s.startsWith("PREDECLARED_WINNER"));
 const noResult=JSON.parse(JSON.stringify(data));noResult.status="RESULT";
@@ -137,7 +151,7 @@ if(require.main===module){
   const expected=JSON.parse(fs.readFileSync(path.join(root,'EXECUTABILITY_AUDIT.json'),'utf8'));
   assert.deepEqual(output,expected,'Executable feasibility audit differs from stored report');
   assert.equal(output.full_decision_benchmark_ready_cases,0);
-  console.log("E008 FEASIBILITY PASS: 16 spec cases, 8 reversal pairs, 0 computable; 13 self-tests and divergent synthetic witness. No baseline winner.");
+  console.log("E008 FEASIBILITY PASS: 16 spec cases, 8 reversal pairs, 0 computable; 14 self-tests and divergent synthetic witness. No baseline winner.");
  }else console.log(JSON.stringify(output,null,2));
 }
 module.exports={inspect,witness,unitTests,buildReport};
