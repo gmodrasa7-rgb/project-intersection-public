@@ -276,3 +276,32 @@ Promotion requires **all applicable**: (a) source/claim tracing, (b) strongest c
 **공개·비공개·기여 경계:** 공개 로드맵에는 설계·방호·평가 개요만 둔다. 비공개 실험 원문·미발표 실패·자격증명·재무자료는 소유 저장소에 남긴다. 선행기술 원저자의 기여와 PI 연구자 자신의 문제제기·PIA 명명/통합 기여를 따로 보존한다. 과거 기여 정산과 미래 고용·시험·PIA 업데이트는 독립이며, PIA 기능이나 자동화가 과거 정산을 대신하지 않는다.
 
 **Change record / 변경:** 2026-10-13 PIA v0.1 **업그레이드 목표**를 기존 PI v0.2의 운영 보조 축으로 편입. PI 여섯 단계, v0.2 역사사례 F01–F20, G1–G8, R01–R12, v0.2.1/v0.2.2 연구 보충 및 원문·기여 이력은 그대로 유지. **No PIA version promotion has occurred / PIA 버전은 여전히 v0.1.**
+
+---
+
+## PIA Prior-art update — evidence-quality and cache-integrity gates (2026-10-13)
+## 피아 추가 선행연구 — 검색평가 편향·캐시 무결성 승격 조건
+
+**PIA remains v0.1; the existing PI six-stage research roadmap and P0–P5 targets remain unchanged.** This is not an effectiveness claim.
+
+### Original 1 — English
+
+**Newly prioritized methodological finding:** A gold relevance set built only from one retrieval system's returned documents can systematically miss relevant items that system never found. Büttcher et al. (SIGIR 2007, [NIST](https://www.nist.gov/publications/reliable-information-retrieval-evaluation-incomplete-and-biased-judgements)) directly analyze incomplete and biased IR judgments; the [TREC 2016 Total Recall](https://pages.nist.gov/trec-browser/trec25/recall/proceedings/) track demonstrates independent probabilistic assessment with recall-versus-review effort. **Update to PIA v0.2 gate:** independent or probability-sampled relevance judgments and rare counterexamples are mandatory before claims about corpus recall; without reviewers, declare the missing independent evidence rather than fabricating it.
+
+**Newly prioritized integrity finding:** SQLite's native [FTS5 integrity-check](https://www.sqlite.org/fts5.html#the_integrity_check_command) can diagnose internal search-index inconsistencies; checking only matching document counts does not prove matching text. **Update to PIA P0 gate:** separately audit the cached passages against FTS content at bounded maintenance/checkpoints, without re-reading all original research for every query. The existing private PIA code added an opt-in scoped audit with successful synthetic and repository-CI tests; this does not prove that all text or meanings were indexed.
+
+**Newly prioritized privacy finding:** [OWASP LLM08:2025](https://genai.owasp.org/llmrisk/llm082025-vector-and-embedding-weaknesses/) documents source leakage and poisoned retrieval risk; [Zanzibar (USENIX 2019)](https://www.usenix.org/conference/atc19/presentation/pang) is a precedent for authorization decisions respecting object and change context. **Update to PIA P4 gate:** no cross-repo federation until authorization-scoped queries, indexing and exports pass leakage/owner-change tests. A private vector or embedding is not automatically anonymous or permitted in public.
+
+**No novelty/authority inflation:** Existing [incremental view maintenance (Gupta et al. 1993)](https://doi.org/10.1145/170036.170066), [Doyle's TMS (1979)](https://doi.org/10.1016/0004-3702(79)90008-0), W3C PROV-O and RO-Crate remain independent credited prior work; this public note only records their application boundaries. No new PIA release, independent general-recall result, or authority to move private data is claimed.
+
+### 원본2 — 한국어
+
+**PIA는 현재 v0.1이다.** PI 기존 연구 6단계·PIA P0~P5 목표를 변경하지 않는다.
+
+**P1 검색평가 보완:** PIA가 찾아낸 문서로만 정답집을 만들면 PIA가 놓친 중요한 자료는 애초에 평가되지 않는다. Büttcher 외(2007) [NIST 원연구](https://www.nist.gov/publications/reliable-information-retrieval-evaluation-incomplete-and-biased-judgements)와 [TREC 2016](https://pages.nist.gov/trec-browser/trec25/recall/proceedings/)에 따라 독립 판독·확률표본·희귀 반례·실제 검토비용을 승격 조건에 포함한다. 독립 평가자가 없으면 독립검증 미실행으로 보고한다.
+
+**P0 무결성 보완:** SQLite [FTS5 공식 integrity-check](https://www.sqlite.org/fts5.html#the_integrity_check_command)는 검색 색인의 구조적 불일치 점검 방법이다. **행 수가 같다고 본문도 같은 것은 아니다.** PIA 비공개 기존 코드에 필요 시 실행하는 캐시·FTS 내용 감사 기능을 구현하고 합성·CI 검사를 수행했다. 이것은 Git 원문 전체의 의미·진실·누락 0을 입증한 것이 아니다. 평소 모든 질문마다 전체 본문을 다시 읽는 절차로 확대하지 않는다.
+
+**P4 접근제어 보완:** [OWASP LLM08:2025](https://genai.owasp.org/llmrisk/llm082025-vector-and-embedding-weaknesses/)에 따르면 비공개 내용을 임베딩해도 누출·오염 위험이 남는다. [Zanzibar 연구(2019)](https://www.usenix.org/conference/atc19/presentation/pang)의 권한 분리 원칙을 참고하되 대형 인프라를 무비판적으로 설치하지 않는다. 미래 교차저장소 검색은 출처별 권한·소유·시점·공개 범위를 검사한 뒤에만 허용한다.
+
+**원기여/상태:** 증분 뷰 유지, TMS, W3C PROV-O, RO-Crate는 이미 조사된 독립 선행기술로 원저자에게 귀속한다. 이번 보충은 PIA 구현 우선순위와 잘못된 승격 방지를 위한 응용이며 새로운 원천기술의 발명 또는 실증 성공 선언이 아니다. **PIA v0.1 유지.**
