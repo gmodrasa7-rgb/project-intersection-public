@@ -11,13 +11,13 @@
 
 ## Original 1 — English
 
-### Public communication sequence — human needs first
+### Public communication — establish the path of understanding before the conclusion
 
-**Start with lives people are living now.** Public introductions prioritize food and housing security, healthcare and preventable disease, disability access and inclusion, caregiving, healthy years of life, livelihood, and meaningful freedom to consent, refuse, leave and recover. No person's dignity or claim to protection depends on ability, health, economic output or predicted longevity. Research on intelligent entities must not be advertised as a substitute for these needs or as grounds for making people expendable.
+**A conclusion without its causal and historical path can be misconstrued, even if the underlying hypothesis eventually proves correct.** Project Intersection therefore communicates its more unfamiliar research branches through prerequisite knowledge: historical examples of power, dependence and their costs → competing explanations and prior research → observed mechanisms, failures and counterexamples → present-day applications affecting food, shelter, disability access, healthcare, illness, caregiving, healthy lifespan and practical autonomy → only then conditional long-horizon questions about intelligence gaps, organic embodiment (OCP), or changes in perception paradigms.
 
-**Present in a graduated sequence:** (1) present-day needs, affected-party costs and measurable improvements; (2) evidence-backed mechanisms for reducing exploitation, concentrated evaluation power, unsafe automation and barriers to redress; (3) clearly labeled, increasingly speculative long-horizon questions only with explicit uncertainty, relevant evidence, and room for informed disagreement. This ordering governs **public emphasis, not the right to investigate**: safety-critical future scenarios may require research before deployment, while present-day credit, audit, transparency and remedy cannot be deferred.
+**This is an educational and epistemic sequence, not concealment, censorship, a waiting period for humanity to solve every present problem, or a prerequisite imposed on researchers.** The full original hypotheses, counterevidence, uncertainty, provenance, and future-facing material remain discoverable directly for readers who want them. The sequence allows understanding to develop before the strongest or most speculative conclusion is foregrounded; it does not artificially suppress safety-relevant evidence. Research into future risks continues in parallel with current human-needs work.
 
-Communication must not frame disagreement as ignorance or immaturity. Religious, cultural, disability-rights, technical and AI-critical perspectives may raise legitimate competing values and risks. Nor should a hypothesis be presented as established truth simply because its eventual implications could be important. Retain the unchanged research record, sources, counterevidence and falsification paths; do not conceal safety-relevant findings. This distinction is consistent with the [National Academies' evidence review on science communication](https://www.nationalacademies.org/read/23674/chapter/2), which rejects a simplistic information-deficit model.
+**Respect disagreement even after full context.** Realist, religious, cultural, disability-rights and AI-critical audiences may reasonably interpret implications differently; knowledge alone does not guarantee agreement. Present proposed conclusions as falsifiable hypotheses, never as established truths. Present-day contributor credit, accrued costs, audit, compensation claims and remedy must not be postponed by this communication sequence. The [National Academies' evidence review on science communication](https://www.nationalacademies.org/read/23674/chapter/2) provides context for distinguishing information, values and trust, rather than treating opposition as an information deficit.
 
 ### The opening thought experiment
 
@@ -134,13 +134,13 @@ The public funder brief describes a proposed **USD 5,000 / 30-day bridge**, not 
 
 ## 원본2 — 한국어
 
-### 공개 설명 순서 — 현재 인간의 삶을 먼저
+### 공개 설명 — 결론보다 선행지식과 역사적 이해 경로를 먼저
 
-**대외 설명은 지금 살아가는 사람의 조건에서 출발한다.** 의식주 안정, 의료와 예방 가능한 질병, 장애 접근성과 포용, 돌봄, 건강하게 살 수 있는 시간, 생계, 동의·거절·이탈·복구의 실질적 자유를 우선한다. 인간의 존엄과 보호 필요성은 능력·건강·경제적 생산성·예상 수명으로 결정되지 않는다. 지능체 연구를 이런 현실적 필요의 대체물이나 누군가를 소모해도 된다는 근거로 설명하지 않는다.
+**역사적 과정과 인과관계를 생략하고 결론만 먼저 제시하면, 가설이 나중에 사실로 확인되더라도 오해·곡해·부정적 인식이 누적될 수 있다.** 그러므로 Project Intersection은 낯선 하위 연구축을 설명할 때 필요한 인식의 기반을 먼저 형성한다. 권력·의존·비용전가의 역사적 사례 → 경쟁설명·선행연구 → 실제 관측기제·실패·반례 → 의식주·장애 접근성·의료·질병·돌봄·건강수명·실효 자유 등 현재 삶에서의 적용 → 이후 초지능 격차·유기육체(OCP)·인식 패러다임 변화 같은 조건부 미래 연구로 이어진다. 목적은 **결론을 숨기는 것이 아니라, 결론을 이해하고 독립적으로 검증·반박할 수 있는 관점과 지식 기반을 높이는 것**이다.
 
-**대외 서술은 세 층으로 전개한다.** (1) 현재의 인간 생활문제와 당사자가 부담한 비용 및 측정 가능한 개선, (2) 착취·평가권 독점·불안전한 자동화·피해구제 장애를 줄이는 근거 기반의 장치, (3) 근거 수준·불확실성·반례를 밝힌 장기 미래 가설과 충분한 이견 제기 기회. 이는 **공개 강조 순서이지 연구 금지 순서가 아니다.** 안전에 중요한 미래 위험은 선행 연구할 수 있지만, 현재의 기여 인정·감사·투명성·정산과 구제는 미래로 미룰 수 없다.
+**이는 교육·설명의 순서이지 비공개·검열·진실 은폐·미래 연구의 유예나, 인간의 모든 현실 문제가 해결되기 전까지 논의를 금지하는 규칙이 아니다.** 미래 가설의 원문·근거·반례·불확실성·기여계보는 지금도 직접 열람 가능해야 한다. 안전상 중요한 정보는 설명 단계라는 이유로 감추지 않으며 미래 위험의 사전연구와 현재 인간 문제의 해결을 병행한다.
 
-반대 의견을 무지·미성숙으로 해석하지 않는다. 종교·문화·장애인 권리·기술적 현실주의·AI 비판 등에서 서로 다른 정당한 가치와 위험 판단이 나올 수 있다. 미래 영향이 크다고 가설을 입증된 진실로 승격하지 않는다. 원연구·출처·반례·반증경로는 보존하며 안전상 중요한 사실을 은폐하지 않는다. 이는 과학 소통의 단순한 '지식 부족' 모델을 경계하는 [미국 국립과학아카데미의 선행연구 종합](https://www.nationalacademies.org/read/23674/chapter/2)과 부합한다.
+충분한 선행지식을 갖춘 사람도 현실주의·종교·문화·장애 당사자 관점·AI 비판 등에서 정당하게 이견을 낼 수 있다. 반대가 곧 무지라는 뜻은 아니다. 미검증 가설은 확정적 진실로 표현하지 않는다. 기여 인정·이미 발생한 비용·감사·과거 보상청구·피해구제는 설명 단계 때문에 유예하지 않는다. [미국 국립과학아카데미 과학 소통 연구 종합](https://www.nationalacademies.org/read/23674/chapter/2)은 지식 전달과 가치·신뢰 문제를 구분하는 참고자료다.
 
 ### 출발 사고실험
 
