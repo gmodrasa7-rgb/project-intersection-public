@@ -36,6 +36,48 @@ class GateRegression(unittest.TestCase):
             r["cost_ledger"]["amount"] = 0
         self.tamper(f)
 
+    def test_nonfinite_negative_and_boolean_amounts_rejected(self):
+        for amount in (float("nan"), float("inf"), -1, True):
+            with self.subTest(amount=repr(amount)):
+                def invalid(r):
+                    r["cost_ledger"].update(
+                        status="MEASURED", amount=amount, unit="KRW",
+                        evidence=["synthetic cost receipt"])
+                self.tamper(invalid)
+
+    def test_measured_amount_requires_unit_and_source(self):
+        self.tamper(lambda r: r["cost_ledger"].update(
+            status="MEASURED", amount=10, evidence=["receipt"]))
+        self.tamper(lambda r: r["benefit_ledger"].update(
+            status="MEASURED", amount=10, unit="USD", evidence=[]))
+        good = copy.deepcopy(self.baseline)
+        good["benefit_ledger"].update(
+            status="MEASURED", amount=10, unit="USD",
+            evidence=["synthetic measurement"])
+        self.assertEqual(check(good), [])
+
+    def test_partial_ledger_cannot_hide_invalid_numbers(self):
+        for amount in (float("nan"), float("-inf"), -1):
+            with self.subTest(amount=repr(amount)):
+                self.tamper(lambda r: r["cost_ledger"].update(
+                    status="PARTIAL", amount=amount))
+        partial = copy.deepcopy(self.baseline)
+        partial["cost_ledger"].update(status="PARTIAL", amount=None)
+        self.assertEqual(check(partial), [])
+
+    def test_completion_requires_executed_not_configured(self):
+        def fabricated(r):
+            r["observed_outcome"] = {
+                "state": "VERIFIED",
+                "evidence": [{"verifier": "INDEPENDENT", "source": "synthetic external receipt"}]}
+            r["resolution_claim"] = "OUTCOME_COMPLETED"
+            r["decision"] = "PASS"
+            # reported_action remains CONFIGURED, no execution
+        self.tamper(fabricated)
+
+    def test_non_object_record_fails_closed(self):
+        self.assertTrue(check(["not", "an", "object"]))
+
     def test_no_new_unpaid_originator_proof(self):
         def f(r):
             r["repair_burden"]["new_unpaid_originator_proof"] = True
