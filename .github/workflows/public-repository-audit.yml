@@ -194,6 +194,13 @@ jobs:
               "UNKNOWN_MISSING_INPUT",
           ):
               require(phrase in convergence, f"Core share missingness/denominator gate lost: {phrase}")
+          require("RemovalImpactVector" in core_spec and "RemovalImpactVector" in convergence
+                  and "InformationLossVector" in core_spec
+                  and "InformationLossVector(o,t)" in convergence,
+                  "Currency, observation-count and lost-option impacts again summed as identical units.")
+          require("TotalRemovalCost = UNIDENTIFIED_UNLESS_COMMON_UNITS_AND_NO_OVERLAP" in core_spec
+                  and "TotalRemovalCost = UNIDENTIFIED_UNLESS_COMMON_UNITS_AND_NO_OVERLAP" in convergence,
+                  "Uncalibrated total removal costs were again published as measured sums.")
           require("ObservedAgreement = f(" in core_spec
                   and "ObservedAgreement = f(" in convergence,
                   "False additive causal decomposition returned to a core document.")
