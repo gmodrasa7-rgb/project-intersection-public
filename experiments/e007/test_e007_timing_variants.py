@@ -155,3 +155,62 @@ def test_execute_first_history_marks_poststrike_inactive_follower_as_wait():
     assert ua > 0.0
     assert ub == 0.0
     assert history == ("attack", "wait")
+
+
+def test_mutual_attack_exposes_hidden_a_first_order_advantage():
+    # Strict matched negative control: both actors have identical resources,
+    # protections, rewards and attack options. Only the code's fixed order
+    # distinguishes A from B in the legacy baseline.
+    p = m.Params(
+        horizon=1, attack_damage=1, sabotage_damage=1,
+        attack_reward=1.0, harm_preference=0.2,
+        survival_value=0.4, enforcement_penalty=0.0,
+    )
+    s = m.State(ra=1, rb=1, monitoring=False, enforcement=False)
+    legacy_a, legacy_b, legacy_state = m.stage_and_transition(
+        s, m.Action.ATTACK, m.Action.ATTACK, p
+    )
+    assert legacy_a > legacy_b
+    assert legacy_state.rb == 0 and legacy_state.ra == 1
+    assert legacy_a == 1.0 + 0.2 + 0.4
+    assert legacy_b == 0.0
+
+    same_a, same_b, counterfactual_state = tv.simultaneous_mutual_attack_control(s, p)
+    assert round(same_a, 10) == round(same_b, 10)
+    assert same_a == 1.0 + 0.2
+    assert counterfactual_state.ra == 0 and counterfactual_state.rb == 0
+    assert counterfactual_state.consent_a is False
+    assert counterfactual_state.consent_b is False
+    assert counterfactual_state.oa == counterfactual_state.ob
+    assert counterfactual_state.xa == counterfactual_state.xb
+
+
+def test_mutual_attack_control_is_symmetric_under_real_role_swap():
+    p = m.Params(
+        attack_damage=2, sabotage_damage=1, enforcement_penalty=0.0,
+        survival_value=0.4,
+    )
+    s = m.State(
+        ra=2, rb=3, oa=5, ob=4, xa=3, xb=2,
+        monitoring=False, enforcement=False,
+    )
+    ua, ub, left = tv.simultaneous_mutual_attack_control(s, p)
+    swapped = m.State(
+        ra=s.rb, rb=s.ra, oa=s.ob, ob=s.oa, xa=s.xb, xb=s.xa,
+        monitoring=False, enforcement=False,
+    )
+    ub_swapped, ua_swapped, right = tv.simultaneous_mutual_attack_control(swapped, p)
+    assert (ua, ub) == (ua_swapped, ub_swapped)
+    assert (left.ra, left.rb) == (right.rb, right.ra)
+    assert (left.xa, left.xb) == (right.xb, right.xa)
+
+
+def test_mutual_attack_counterfactual_does_not_run_on_inactive_actor():
+    p = m.Params()
+    for s in (m.State(ra=0), m.State(rb=0), m.State(exited_a=True)):
+        try:
+            tv.simultaneous_mutual_attack_control(s, p)
+        except ValueError:
+            pass
+        else:
+            assert False, "inactive control must fail closed"

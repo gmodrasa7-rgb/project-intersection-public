@@ -93,6 +93,10 @@ For each period:
 
 기준 규칙의 핵심은 **같은 기간의 성공한 EXIT가 ATTACK보다 먼저 해결된다**는 점이다.
 
+**Historical code-order disclosure / 2026-10-14 구현 처리순서 추가:** In the project-derived E007 code, after exit resolution, A's ATTACK branch runs **before** B's ATTACK branch. If both choose ATTACK, A can disable B before B's branch executes. The published counts refer to that **ordered sequential transition**, not a simultaneous-attack semantics or fully role-exchangeable physical process. E.g., both start with `ra=rb=1`, `attack_damage=1`, and choose ATTACK; A's hit leaves `ra=1,rb=0` and B does not hit. / 공격 분기는 A→B 순서이므로 동시 상호공격에서 고정적인 A 우선권이 나타날 수 있다. 이 해석은 초기 코드의 한계이며 선행/후행 역할만 바꿔서는 제거되지 않는다.
+
+**Independent falsification target / 독립 구현 추가 반례:** Compare this exact ordered case with a same-snapshot simultaneous mutual-attack control in which both hits use *pre-strike* resources, protection and outside options. Record both state transitions and utilities and whether renaming A↔B preserves the counterfactual. Do not silently patch the frozen E007 baseline to make its published count match a different ordering. / 독립 구현자는 우선권의 영향과 대칭적 상호공격 대조를 따로 기록하고, 서로 다른 시점 명세의 결과를 동일 지표로 합치지 않는다.
+
 ---
 
 ## 4. Adversarial timing: leader attack executes first / 적대 시점 규칙
