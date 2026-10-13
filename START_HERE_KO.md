@@ -1,5 +1,5 @@
 # Project Intersection — 공개 자료 탐색 시작점
-- **PIA(피아) 연구자료 관리 시스템 업그레이드 로드맵:** [PI v0.2 연구 로드맵 운영 보충, 영어 원본1·한국어 원본2](research/RESEARCH_ROADMAP_v0_2_EN_KO.md#operational-appendix--pia-v01-upgrade-track-2026-10-13). 현재 PIA v0.1, P0~P5 목표·실측 게이트·롤백·권한분리. PI 연구 6단계는 변경하지 않음.
+- **PIA(피아) 연구자료 관리 시스템 업그레이드 로드맵:** [PI v0.2 연구 로드맵 운영 보충, 영어 원본1·한국어 원본2](research/RESEARCH_ROADMAP_v0_2_EN_KO.md). 현재 PIA v0.1, P0~P5 목표·실측 게이트·롤백·권한분리. PI 연구 6단계는 변경하지 않음.
 
 - **PI 로드맵 v0.2.2(현재 보충):** [숨은 지반·현재 길·검사 한계·우회 판단, 선행자료 22건(원본1 영/원본2 한)](research/PI_ROADMAP_HIDDEN_ROUTE_PRIOR_ART_V0_2_2_EN_KO.md) — HP1~3 제안, HP-R01~06 미실행. 이전 v0.1~v0.2.1 보존.
 
