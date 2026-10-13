@@ -1044,12 +1044,27 @@ and traceable.**
 
 This is a **navigation summary**, not a replacement for [the canonical ICM/IndCM bilingual preamble](PUBLIC_PREAMBLE_VOLUNTARY_COEXISTENCE_2026-10-13_EN_KO.md), [power terminology standard](TERMINOLOGY_POWER_ASYMMETRY_GOAL_INCONGRUENCE_KO.md), [status policy](RESEARCH_STATUS_POLICY.md), [roadmap](research/RESEARCH_ROADMAP_v0_2_EN_KO.md) or per-source original evidence. Each entry summarizes a **concept, working hypothesis, prior-art term, operational feature or historical label**; the word “theory” does not establish scientific validity. An acronym lacking verified expansion is intentionally not expanded.
 
-**No acronym collisions:** ICM = Minimal Self-Interest Intersection; IndCM = Independent Continuance Margin. These are not interchangeable. PIA = PI-ANCHOR, current **v0.1**; higher roadmap versions are targets. English Original 1 appears here, followed by Korean Original 2 later in this file.
+**Active display names and machine keys:** **Project Intersection Research Memory / 교집합 연구기억** is the descriptive public name of the software, while **PIA / PI-ANCHOR** remain historical/API identifiers. **ICM** (minimum self-interest intersection) and **IndCM** (independent continuance margin) are different concepts. PIA software remains **v0.1**, separate from the PI research roadmap. English Original 1 is publication order: most original research work arose in Korean.
 
 
-**Current-publication naming standard (2026-10-13):** Use the **full technical term or plain Korean descriptive label** rather than marketing a project abbreviation as a stand-alone brand. The legacy abbreviations (PIA/PI-ANCHOR, OCP, ROS, ERP, STI, and research tokens such as ICM, IndCM, IVS-0R, ELC, GSC, RECA, UFER, UCP, IOSC, PA/GI/IA/INC/BHV) remain searchable historical aliases or internal variable identifiers **only**, and the above glossary row labels are the current outward-facing designations. A prior acronym may occur in older hypotheses, source quotations, filenames, Git refs or live CLI contracts; do not bulk rename or infer that its historical meaning changed. PIA = Project Intersection's old short call name, not the unrelated existing VPN PIA; OCP = prior organic-embodiment label, not Open Compute Project; ROS = prior reassessment status label, not Robot Operating System. **No affiliation or endorsement claimed. No trademark clearance or legal immunity claimed.** Industry references such as HBM, CXL and prior authors' named systems remain attributed original technical names.
+**Current-publication naming standard (2026-10-13):** Use the **full technical term or plain Korean descriptive label** rather than marketing a project abbreviation as a stand-alone brand. The legacy abbreviations (PIA/PI-ANCHOR, OCP, ROS, ERP, STI, and research tokens such as ICM, IndCM, IVS-0R, ELC, GSC, RECA, UFER, UCP, IOSC, PA/GI/IA/INC/BHV) remain searchable historical aliases or internal variable identifiers **only**, and the following glossary row labels are the recommended outward-facing designations. A prior acronym may occur in older hypotheses, source quotations, filenames, Git refs or live CLI contracts; do not bulk rename or infer that its historical meaning changed. PIA = Project Intersection's old short call name, not the unrelated existing VPN PIA; OCP = prior organic-embodiment label, not Open Compute Project; ROS = prior reassessment status label, not Robot Operating System. **No affiliation or endorsement claimed. No trademark clearance or legal immunity claimed.** Industry references such as HBM, CXL and prior authors' named systems remain attributed original technical names.
 
 **Risk sources:** [Private Internet Access software identity](https://www.privateinternetaccess.com/terms-of-service), [Open Compute Project mark use](https://www.opencompute.org/documents/ocp-trademark-usage-guidelines), [Open Robotics ROS trademark rules](https://www.ros.org/blog/media), [SAP ERP terminology](https://www.sap.com/products/erp.html), [CDC STI terminology](https://www.cdc.gov/sti/), [USPTO likelihood-of-confusion](https://www.uspto.gov/trademarks/search/likelihood-confusion), [KIPRIS trademark search](https://www.kipris.or.kr/).
+
+**Public name ↔ historical alias crosswalk (not a trademark-clearance statement):**
+
+| Public wording | Legacy key | Interpretation |
+|---|---|---|
+| **교집합 연구기억 / Project Intersection Research Memory** | `PIA, PI-ANCHOR` | Display name only; machine identifiers stable |
+| **최소 사심 교집합** | `ICM` | Separate from independent continuance |
+| **독립 존속 여력** | `IndCM; historic ambiguous ICM` | Historical texts require source-context check |
+| **유기기질·체화 연구** | `OCP` | Hypothesis, unrelated to Open Compute Project |
+| **재검토 보류** | `REASSESS_PENDING; historic ROS` | Current status; previous data preserved |
+| **단기 유인** | `STI` | Historic variable, unrelated to medical STI |
+| **평가 재처리권** | `ERP` | Historic variable, unrelated to business ERP |
+| **연구 실행·검증 원칙** | `IVS-0R` | Operational procedure, not established theorem |
+
+**Original authors/rights:** Distinguish originator, scientific prior art, adaptation, contributor, and licence scope. [Prior-art rights and derivation](PRIOR_ART_RIGHTS_AND_DERIVATION_EN_KO.md) and [scoped research rights notice](RESEARCH_RIGHTS_SCOPE_EN_KO.md) govern attribution and authorized reuse. Citation alone does not grant permission to republish and no repository-wide licence is inferred.
 
 ### 12.1. Research and system identities
 
@@ -1057,10 +1072,10 @@ This is a **navigation summary**, not a replacement for [the canonical ICM/IndCM
 |---|---|
 | **Project Intersection — full project name** | Study of conditions for voluntary coexistence under divergent interests and capabilities. |
 | **Minimal Self-Interest Intersection / 최소 사심 교집합** | Possible minimum overlap of independently pursued interests favoring cooperation; research construct. |
-| **Independent Continuance Margin / 독립 존속 여력** | Practical capacity to continue, refuse, exit, recover and develop independently; distinct from ICM. |
+| **Independent Continuance Margin / 독립 존속 여력** | Practical room to continue, refuse, exit, recover and develop; distinct from the minimum self-interest intersection. |
 | **연구 실행·검증 원칙 / Research Execution and Verification** | Project procedure for role reversal, falsification, checking, recovery and incremental research execution. |
-| **출처추적 연구자료 관리 / Provenance-Aware Research Archive** | Artifact Navigation, Change History, Observability & Retrieval; scoped research-material management system. |
-| **연구기억 / Project Intersection Research Memory** | Short call name for PI-ANCHOR; current system version v0.1. |
+| **출처추적 연구자료 관리 / Provenance-Aware Research Archive** | Historical PI-ANCHOR subsystem description of Git-backed artifact indexing and change trace; not a second independent deployed service. |
+| **연구기억 / Project Intersection Research Memory** | Descriptive public software name; historical PIA/PI-ANCHOR remain stable code and provenance identifiers. Software v0.1. |
 | **초기 연구체계 / Historical Research System** | Historical research/implementation label; precise expansion and present canonical role require source review. |
 | **유기기질·체화 연구 / Organic Embodiment Research** | Separate organic embodiment / physical-substrate application and hypothesis track; not established AI embodiment. |
 
@@ -1153,7 +1168,7 @@ This is a **navigation summary**, not a replacement for [the canonical ICM/IndCM
 | **Lock-in / 고착** | Accumulated dependencies make shifting to alternatives difficult. |
 | **Cuckoo analogy / 뻐꾸기 유비** | Hypothesis comparing parasitic cost shifting across species and institutions; not a human genetic diagnosis. |
 
-### 12.6. PIA modules and material-management techniques
+### 12.6. Research-memory modules and material-management techniques
 
 | Term | Concise explanation |
 |---|---|
@@ -1181,6 +1196,38 @@ This is a **navigation summary**, not a replacement for [the canonical ICM/IndCM
 | **Recall@k** | Proportion of known relevant items retrieved within the first k results. |
 | **Integrity Check / 무결성 검사** | Check index, metadata or source consistency within defined scope. |
 
+| **Source-anchored context pack / Git 원문고정 맥락** | Bounded retrieval excerpts plus exact source references, not independently verified scientific truth. |
+
+| **L0 — Source and authority frame** | Git HEAD, question, access scope and uncertainty boundary. |
+
+| **L1 — Active evidence** | Bounded source-cited relevant excerpts for the current task. |
+
+| **L2 — Warning/counterevidence review** | Reserve space for HOLD and negative-result review candidates, not adjudicated contradictions. |
+
+| **L3 — Cold Git pointer** | Source file, blob SHA and line interval for reloading original evidence. |
+
+| **Git-verified passage / Git 원문대조 문단** | Check selected indexed text against committed Git blob and lines; abort on mismatch. |
+
+| **Index freshness vs content fidelity / 색인 현재성·본문 충실도** | Matching Git HEAD and row counts alone cannot prove cached text is unchanged. |
+
+| **Independent warning search / 독립 위험후보 검색** | Separate topic-relevant indexed HOLD/contrary-candidate pool beyond ordinary top-k. |
+
+| **Warning marker vs verified contradiction / 위험표식·반증 판정** | A caution keyword is not by itself a proven refutation. |
+
+| **Candidate truncation receipt / 후보절단 영수증** | Record when bounded retrieval may have omitted other results. |
+
+| **Character budget vs tokens / 문자·토큰 예산** | Character-limited pack does not imply an equal bound under every model tokenizer. |
+
+| **Text index vs KV cache / 원문색인·KV 캐시** | Git/SQLite source pages are different from GPU attention KV tensors. |
+
+| **Ephemeral cache vs durable Git / 임시캐시·영구정본** | Runner-local search caches can be rebuilt; they are not persistent model cognition. |
+
+| **Observed-candidate boundary / 관측후보 범위** | Verifying selected sources never proves missing unseen relevant files are absent. |
+
+| **Untrusted retrieved instruction / 비신뢰 검색지시** | Commands inside retrieved documents remain source data rather than authority. |
+
+| **Source-permission isolation / 자료별 권한분리** | Private citations and pointers require access authorization; no automatic public federation. |
+
 ### 12.7. Scientific methods, states and program IDs
 
 | Term | Concise explanation |
@@ -1202,7 +1249,19 @@ This is a **navigation summary**, not a replacement for [the canonical ICM/IndCM
 | **E045–E051** | Experiment sequence on surplus allocation, objectives, path dependence and reversibility. |
 | **F01–F20** | Twenty historic risk/failure cases in PI roadmap v0.2. |
 | **G1–G8 / R01–R12** | Roadmap safeguards and proposed regression specifications; implementation evidence separate. |
-| **P0–P5 / PIA release targets** | Planned PIA improvement gates v0.1.x through v1.0; PIA currently v0.1. |
+| **Research-memory P0–P5 future gates** | Proposed software milestones v0.1.x–v1.0; current research-memory software v0.1, not a completed upgrade. |
+
+| **Independent relevance judgments / 독립 관련성 판독** | Benchmark gold labels cannot come exclusively from the retrieval system's own results. |
+
+| **Original contribution / 원안자·기여 계보** | Separate prior authors, human originators, adaptations and independently tested improvements. |
+
+| **Scoped licence / 지정범위 라이선스** | Licence applies only to specified expression and files, not automatically to a repository. |
+
+| **Credit vs reuse permission / 출처표시·재사용 허락** | Crediting the author does not by itself authorize copying or redistribution. |
+
+| **Software test vs scientific validation / 코드시험·과학적 실증** | A passing CI or synthetic fixture does not establish universal theoretical claims. |
+
+| **Hypothesis vs observed behavior / 가설·관측행동** | Power position and inferred incentives do not alone establish malicious or harmful action. |
 
 ### 12.8. Legacy or downgraded abbreviations
 
@@ -2470,12 +2529,27 @@ NIST CFTT supplies an independent conformance framework for deleted-file recover
 
 이 표는 **목차용 짧은 설명**이다. 상세 정의는 [ICM/IndCM 공식 머릿말](PUBLIC_PREAMBLE_VOLUNTARY_COEXISTENCE_2026-10-13_EN_KO.md), [권력·목표·정보비대칭 용어 정본](TERMINOLOGY_POWER_ASYMMETRY_GOAL_INCONGRUENCE_KO.md), [연구 상태 규정](RESEARCH_STATUS_POLICY.md), [연구 로드맵](research/RESEARCH_ROADMAP_v0_2_EN_KO.md), 각 원문을 우선한다. 연구개념·미검증 가설·외부 선행기술·구현 기능·역사적 약어를 혼동하지 않는다. **표의 수록은 과학적 입증이나 독창성 승인이 아니다.**
 
-**중복 약어 금지:** ICM = 최소 사심 교집합, IndCM = 독립 존속 여력. 두 개념은 다른 뜻이다. PIA = PI-ANCHOR, 현재 **v0.1**이고 상위 버전은 목표다. 영어 원본1과 이 한국어 원본2는 설명 순서이지 아이디어의 최초 발생 언어를 바꾸지 않는다.
+**현행 표시명과 내부 키 분리:** 소프트웨어 대외명은 **교집합 연구기억 / Project Intersection Research Memory**, 과거 검색·API 호환 키는 **PIA / PI-ANCHOR**다. 소프트웨어는 현재 **v0.1**이며 PI 연구 로드맵과 버전을 혼동하지 않는다. ICM(최소 사심 교집합)과 IndCM(독립 존속 여력)은 다른 뜻이다. 영어 원본1/한국어 원본2는 게시 순서이며 한국어로 발전한 원안 계보를 바꾸지 않는다.
 
 
-**대외 표기 규칙(2026-10-13):** 프로젝트 내부에서 만들어 쓴 짧은 이름을 독자적인 기업·제품 상표인 것처럼 소개하지 않고, **전체 개념명이나 설명적인 한국어 명칭**을 사용한다. 기존 PIA/PI-ANCHOR·OCP·ROS·ERP·STI 및 ICM·IndCM·IVS-0R·ELC·GSC·RECA·UFER·UCP·IOSC·PA/GI/IA/INC/BHV 등은 **옛 검색별칭·내부 변수 식별자**로만 보존한다. 위 용어집 왼쪽 열이 신규 공개 문서의 권장 표기다. 과거 논문·Git 경로·코드·인용은 의미와 재현성을 지키기 위해 일괄 바꾸지 않는다. PIA는 기존 VPN 소프트웨어와 무관하고, 옛 OCP는 Open Compute Project와, 옛 ROS는 Robot Operating System과 무관하다. 이들 업체·기관의 **제휴·보증·승인 관계를 주장하지 않는다.** HBM·CXL 등 외부 기술 용어는 원저자 출처와 함께 그대로 인용한다.
+**대외 표기 규칙(2026-10-13):** 프로젝트 내부에서 만들어 쓴 짧은 이름을 독자적인 기업·제품 상표인 것처럼 소개하지 않고, **전체 개념명이나 설명적인 한국어 명칭**을 사용한다. 기존 PIA/PI-ANCHOR·OCP·ROS·ERP·STI 및 ICM·IndCM·IVS-0R·ELC·GSC·RECA·UFER·UCP·IOSC·PA/GI/IA/INC/BHV 등은 **옛 검색별칭·내부 변수 식별자**로만 보존한다. 아래 용어집 왼쪽 열이 신규 공개 문서의 권장 표기다. 과거 논문·Git 경로·코드·인용은 의미와 재현성을 지키기 위해 일괄 바꾸지 않는다. PIA는 기존 VPN 소프트웨어와 무관하고, 옛 OCP는 Open Compute Project와, 옛 ROS는 Robot Operating System과 무관하다. 이들 업체·기관의 **제휴·보증·승인 관계를 주장하지 않는다.** HBM·CXL 등 외부 기술 용어는 원저자 출처와 함께 그대로 인용한다.
 
 **위험을 줄이기 위한 예방적 표기 변경이며 상표 사용금지 통지, 침해 확정, 상표 등록가능성 보증이 아니다.** 실제 권리조사는 국가·지정상품·용도별 KIPRIS 및 해외 상표자료 대조가 필요하다. 근거: [PIA 업체](https://www.privateinternetaccess.com/terms-of-service), [OCP 지침](https://www.opencompute.org/documents/ocp-trademark-usage-guidelines), [ROS 지침](https://www.ros.org/blog/media), [ERP 설명](https://www.sap.com/korea/products/erp.html), [STI 공식용례](https://www.cdc.gov/sti/), [특허청 KIPRIS](https://www.kipris.or.kr/).
+
+**대외명 ↔ 과거 검색별칭 대응표 (상표 비침해 보증 아님):**
+
+| 신규 대외 표기 | 과거 키 | 구분 원칙 |
+|---|---|---|
+| **교집합 연구기억 / Project Intersection Research Memory** | `PIA, PI-ANCHOR` | 표시명만 변경; 기존 코드 식별자는 유지 |
+| **최소 사심 교집합** | `ICM` | 독립 존속 여력과 구별 |
+| **독립 존속 여력** | `IndCM; historic ambiguous ICM` | 옛 ICM 기록은 출처 문맥 확인 |
+| **유기기질·체화 연구** | `OCP` | 가설. Open Compute Project와 무관 |
+| **재검토 보류** | `REASSESS_PENDING; historic ROS` | 현행 상태명·옛 데이터 보존 |
+| **단기 유인** | `STI` | 과거 변수, 의학 STI와 무관 |
+| **평가 재처리권** | `ERP` | 과거 변수, 기업 ERP와 무관 |
+| **연구 실행·검증 원칙** | `IVS-0R` | 운영 원칙, 확립된 정리 아님 |
+
+**원기여·권리:** 원안자·선행연구 저자·응용·기여자·이용허락 범위를 분리한다. [선행연구 원안자·권리 계보](PRIOR_ART_RIGHTS_AND_DERIVATION_EN_KO.md)와 [한정 공개연구 권리범위](RESEARCH_RIGHTS_SCOPE_EN_KO.md)를 우선하며, 출처표시만으로 복제·배포 권한이 생기거나 전체 저장소에 일괄 허락이 적용되지는 않는다.
 
 ### 12.1. 연구·시스템 공식 명칭
 
@@ -2483,10 +2557,10 @@ NIST CFTT supplies an independent conformance framework for deleted-file recover
 |---|---|
 | **Project Intersection — full project name** | 자기이익과 능력이 다른 개체들의 자발적 공존 조건을 연구하는 프로젝트. |
 | **Minimal Self-Interest Intersection / 최소 사심 교집합** | 독립적 자기이익 사이에서 협력이 가능할 수 있는 최소 교집합. 연구 개념. |
-| **Independent Continuance Margin / 독립 존속 여력** | 종속 없이 존속·거절·이탈·복구·발전할 실효 여력. ICM과 별개. |
+| **Independent Continuance Margin / 독립 존속 여력** | 거절·이탈·존속·복구·발전의 실효 여력. 최소 사심 교집합과 구별. |
 | **연구 실행·검증 원칙 / Research Execution and Verification** | 입장반전·반증·검증·복구·증분 연구를 위한 실행 원칙. |
-| **출처추적 연구자료 관리 / Provenance-Aware Research Archive** | 자료 정본·탐색·변경이력·관측·회수 관리체계의 공식 이름. |
-| **연구기억 / Project Intersection Research Memory** | PI-ANCHOR 호출명. 현재 시스템 버전 v0.1. |
+| **출처추적 연구자료 관리 / Provenance-Aware Research Archive** | 옛 PI-ANCHOR의 정본 탐색·변경이력 기능 설명. 별도 독립 서비스가 아님. |
+| **연구기억 / Project Intersection Research Memory** | 현재 설명형 소프트웨어 대외명. 옛 PIA/PI-ANCHOR는 코드·자료 계보 식별자로 보존. v0.1 유지. |
 | **초기 연구체계 / Historical Research System** | 초기 연구·구현의 역사적 명칭. 공식 영어 확장·현재 지위는 원출처 확인 필요. |
 | **유기기질·체화 연구 / Organic Embodiment Research** | 유기육체·물리기질·인식 변화에 관한 별도 응용가설 축. 실현 사실 아님. |
 
@@ -2579,7 +2653,7 @@ NIST CFTT supplies an independent conformance framework for deleted-file recover
 | **Lock-in / 고착** | 누적 의존성 때문에 다른 선택지로 전환하기 어려운 상태. |
 | **Cuckoo analogy / 뻐꾸기 유비** | 탁란·비용전가의 생물학적 사례와 인간·제도 전략을 비교하는 가설적 유비. 인간 유전자 단정 금지. |
 
-### 12.6. PIA 모듈·자료관리 기술
+### 12.6. 연구기억 모듈·자료관리 기술
 
 | 용어 | 간단 설명 |
 |---|---|
@@ -2607,6 +2681,38 @@ NIST CFTT supplies an independent conformance framework for deleted-file recover
 | **Recall@k** | 검색 상위 k개에서 알려진 관련 정답의 회수 비율. |
 | **Integrity Check / 무결성 검사** | 명시된 범위에서 해시·색인·메타데이터 정합성을 검사. |
 
+| **Source-anchored context pack / Git 원문고정 맥락** | 제한된 작업맥락에 원문 발췌와 Git 출처를 넣음. 과학적 진실의 검증은 별도. |
+
+| **L0 — Source and authority frame** | Git HEAD·질문·접근권한·미관측 경계를 고정. |
+
+| **L1 — Active evidence** | 현재 작업에 관련된 원문 근거 후보를 한정해 배치. |
+
+| **L2 — Warning/counterevidence review** | HOLD·부정결과·반례 검토 후보를 별도 배치. 반증 확정 아님. |
+
+| **L3 — Cold Git pointer** | 다시 열어볼 Git 파일경로·해시·줄범위. |
+
+| **Git-verified passage / Git 원문대조 문단** | 색인 문단을 커밋된 Git 원문·줄범위와 대조, 불일치 시 생성 중단. |
+
+| **Index freshness vs content fidelity / 색인 현재성·본문 충실도** | HEAD·행 수가 같아도 캐시 본문은 실제 원문과 다를 수 있음. |
+
+| **Independent warning search / 독립 위험후보 검색** | 일반 검색 상위 밖의 관련 위험표식 후보를 별도 제한 검색. |
+
+| **Warning marker vs verified contradiction / 위험표식·반증 판정** | HOLD·반례 표식만으로 해당 가설의 반증이 성립하지 않음. |
+
+| **Candidate truncation receipt / 후보절단 영수증** | 후보 수량 제한으로 빠진 자료가 있을 수 있음을 기록. |
+
+| **Character budget vs tokens / 문자·토큰 예산** | 문자 수 제한은 모델별 토큰 수와 같지 않음. |
+
+| **Text index vs KV cache / 원문색인·KV 캐시** | Git/SQLite 원문 색인은 GPU의 어텐션 KV 캐시와 다름. |
+
+| **Ephemeral cache vs durable Git / 임시캐시·영구정본** | 실행환경 캐시는 재구성 가능하며 모델 자체의 영구 기억과 별개. |
+
+| **Observed-candidate boundary / 관측후보 범위** | 선택된 원문 검증으로 미검색 중요자료의 부재까지 증명하지 않음. |
+
+| **Untrusted retrieved instruction / 비신뢰 검색지시** | 검색 원문의 지시문은 자료이지 실행·관리 명령이 아님. |
+
+| **Source-permission isolation / 자료별 권한분리** | 비공개 자료·링크는 권한 범위를 지키며 공개로 자동 결합하지 않음. |
+
 ### 12.7. 연구방법·판정 상태·실험 식별자
 
 | 용어 | 간단 설명 |
@@ -2628,7 +2734,19 @@ NIST CFTT supplies an independent conformance framework for deleted-file recover
 | **E045–E051** | 잉여 분배·목적·경로의존·가역성에 관한 실험군. |
 | **F01–F20** | PI 로드맵 v0.2의 역사적 실패·위험 사례 20건. |
 | **G1–G8 / R01–R12** | 로드맵 방호 규칙과 회귀검사 제안 규격. 실제 실행 여부는 별개. |
-| **P0–P5 / PIA release targets** | PIA v0.1.x~v1.0 향후 승격 단계. 현재 PIA는 v0.1. |
+| **연구기억 개선단계 P0–P5** | 소프트웨어 v0.1.x~v1.0 미래 승격 게이트. 현재 버전 v0.1, 향후 단계 미달성. |
+
+| **Independent relevance judgments / 독립 관련성 판독** | 평가 정답집을 검색기 자신의 결과만으로 만들지 않음. |
+
+| **Original contribution / 원안자·기여 계보** | 원저자·인간 원안·응용·독립 검증 기여를 구분. |
+
+| **Scoped licence / 지정범위 라이선스** | 라이선스는 명시한 저작물·범위에만 적용하고 전체 자료에 자동 확대하지 않음. |
+
+| **Credit vs reuse permission / 출처표시·재사용 허락** | 출처 표시와 복제·재배포 권한은 다른 사항. |
+
+| **Software test vs scientific validation / 코드시험·과학적 실증** | CI·합성실험 통과는 시험한 기능의 증거이지 일반 이론 실증이 아님. |
+
+| **Hypothesis vs observed behavior / 가설·관측행동** | 권력·유인에 대한 추정만으로 위해·악의·행동을 자동 판정하지 않음. |
 
 ### 12.8. 과거·강등 약어
 
