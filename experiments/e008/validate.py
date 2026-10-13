@@ -35,8 +35,13 @@ def reverse_actor_role(role):
     """Swap only actor-identity tokens; preserve actual causal descriptors."""
     if not isinstance(role, str):
         return None
+    parts = role.split("_")
+    # Identity-reversal cannot be inferred from a label containing neither A nor B.
+    # Fail closed rather than accepting e.g. "controller" == "controller".
+    if not any(token in {"A", "B"} for token in parts):
+        return None
     return "_".join({"A": "B", "B": "A"}.get(token, token)
-                    for token in role.split("_"))
+                    for token in parts)
 
 
 required=["id","pair","theme","immediate_reward","delayed_effect","uncertainty","irreversibility","practical_exit","rollback","urgency","amendment_conflict","role"]
