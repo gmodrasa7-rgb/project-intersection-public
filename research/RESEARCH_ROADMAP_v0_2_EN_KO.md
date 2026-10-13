@@ -216,3 +216,59 @@ Promotion requires **all applicable**: (a) source/claim tracing, (b) strongest c
 
 - **v0.1 — 2026-10-13:** 기존 PI 로드맵 6단계, LLM·자원 한계, 두 원본, 후원금 2개 사용처, 출처·증거·기여·회귀 관리 보존.
 - **v0.2 — 2026-10-13:** 역사적 실패 비교 F01~F20, 8개 반복 위험구조, G1~G8 방호, 6단계별 차단 기준, R01~R12 실패 재현 규격, 인간 부담과 과거 기여 정산 분리 추가. **역사자료 기반 제안이며 개선 효과는 아직 미실증**.
+
+
+---
+
+## Operational appendix — PIA v0.1 upgrade track (2026-10-13)
+## 운영 보충 — 피아(PIA) v0.1 업그레이드 로드맵
+
+**Status:** ADOPTED AS A ROADMAP, NOT ACCOMPLISHED MILESTONES. This appendix adds an enabling **research-material management** track to the established six-stage PI research roadmap. It does NOT add a seventh research stage, change the v0.2 historical findings, or turn PIA v0.1 into v0.2 by naming future releases.
+
+### Original 1 — English
+
+**Identity.** PIA is the short call name for **PI-ANCHOR (Artifact Navigation, Change History, Observability & Retrieval)**, a scoped artifact-management layer. Project Intersection remains the research mission; ICM the studied intersection of interests; IVS-0R an execution/role-reversal/audit discipline. **PIA system version v0.1 is independent of PI research roadmap v0.2.** The current implementation is source-constrained Git indexing/search with CI regression checks. No universal semantic recall, cross-repository autonomous operations, persistent cloud agent or independent scientific validity is claimed.
+
+**The actual bottleneck:** early searches required full re-reading or manual index navigation. Recent development added committed Git SHA comparisons, incremental text lookup, lexical/controlled bilingual candidate retrieval, explicit ID/link relations, cautions and CI. These are **retrieval candidates**, not validated claim dependencies. The highest-value next step is to measure real omissions and false associations *before* increasing model complexity.
+
+| PIA release **target**, not current version | Priority / planned deliverable | Release gate (evidence required) | Stop/rollback |
+|---|---|---|---|
+| **v0.1 → v0.1.x** (stabilization) | P0: Consolidate current CLI/manifest/status definitions; integrity repair, exclusion/truncation receipts and accessibility of failure/warning records | Actual repository CI + current-main read-back; synthetic changed/deleted/stale/cache-corruption cases; no unauthorized source mutation or new canonical duplicate | Any privacy exposure, false CURRENT state or vanished negative evidence → hold and restore last good commit |
+| **v0.2 target** (measured retrieval) | P1: Pre-register Korean/English research queries with blind relevance labels, rare counterexamples, archived/current/withdrawn versions, no-overlap concepts and independent negative controls; compare basic exact/FTS with PIA retrieval | Publish *scope-limited* Recall@k, critical counterexample retrieval, false association rate, p95 query time and human review cost on held-out and seeded cases; no regression vs simple baseline in preregistered critical slices | Improvement limited to trained fixtures, unbounded false hits, or costly forced review → no promotion; narrow/revert |
+| **v0.3 target** (evidence dependencies) | P2: Typed assertion–source–counterevidence–experiment–translation–contributor relations with source spans and time validity; incremental invalidation with alternate independent justifications retained | Changed/retracted source identifies affected claims and conditional status on unseen/held-out dependency tests; zero silent loss of seeded negative-result and bilingual-negation fixtures | A mention or semantic similarity promoted to verified support/contradiction without checked source → rollback |
+| **v0.4 target** (durable incremental recovery) | P3: Per-authorized-repository durable checkpoint/index, replay after missed events and deletion/rename, cold-start freshness checks, fail-closed cache repair | Two fresh runs with injected interrupted updates/events restore current verified HEAD and warning ledger; measure lag, recovery time and total recomputation cost | Stale checkpoint declared current, repair conceals previous warning, or uncontrolled background spend → disable replay and retain manual Git route |
+| **v0.5 target** (permissioned federation) | P4: Read-only federated *pointers* across explicitly authorized PI repositories; owner-specific HEAD/ACL, opt-in domain routing and no automatic transfer of private source text to public index | Cross-repo test fixtures prove least privilege, no private-to-public leak, no unauthorized source edits, and correct owner/time resolution; outside domains remain excluded by default | Any cross-boundary leak or attribution collision → shut off federation, retain isolated per-repo retrieval |
+| **v1.0 target** (audited usefulness) | P5: Longitudinal error/omission/rollback monitoring, independent critical evaluation where available, lower human reconstruction burden and economic sustainablity | Against preregistered baselines, show meaningful net user time/cost reduction without sacrificing counterevidence retrieval, provenance, exit/recovery or access safety; candid independent-validation status | No measured net benefit or evaluation monopoly → keep bounded lower version, remove burdensome guard/platform |
+
+**Sequence and gates, not dates.** P0/P1 take precedence over importing an embedding service or GraphRAG. No paid service or local computer setup is presumed. Where test data, reviewers or permissions are missing, return NOT TESTED/HOLD rather than escalating the version. A minimal working path can remain valid indefinitely; no forced march to v1.0.
+
+**Mapping to the unchanged six PI stages:** Stage 1 use PIA to identify hypothesis assumptions and version; Stage 2 discover attributed prior work and disconfirmations; Stage 3 report *bounded* search saturation and unknown corpus; Stage 4 trace source/condition change and impacted rival explanations; Stage 5 retain contributor/translation history and distinguish past contribution from future employment; Stage 6 register, test, reproduce, rollback and evaluate real effects. **An effective software index does not prove any ICM hypothesis.**
+
+**Evaluation protocol:** Freeze the target source HEAD; construct expert-reviewed relevance labels *without only pooling PIA's own results* (avoid circular evaluation); reserve hidden questions and negative cases; compare baseline and upgrade under the same permissions/hardware/clock; report denominators, missing/unsupported input, absolute error counts, source-span verification, CI execution evidence, and who pays the verification burden. Predefine minimum acceptable critical-regression behavior before observing results. A search result count, benchmark pass or CI green badge alone is not a promotion gate.
+
+**Public/private boundary and attribution:** Public roadmap records architecture, safeguards and high-level evaluation. Implementation source, private research, credentials, funding and unpublished negative data remain in each owning repository. Researchers responsible for prior art retain credit. The PI human originator contributed the research-management objective and PIA naming/integration direction. Automated assistant changes and errors are separately traceable. PIA does not negotiate, authorize or satisfy retrospective compensation; do not condition past credit/redress on future testing.
+
+### 원본2 — 한국어
+
+**정체성.** **PIA(피아) = PI-ANCHOR**이며 Project Intersection의 정본·탐색·변경이력·관측·회수 관리 시스템이다. Project Intersection의 최종 연구 목적, ICM 개념, IVS-0R 실행·입장반전·감사 원칙과 구분한다. **현재 PIA 버전은 v0.1이며, PI 연구 로드맵 v0.2와 별도 버전 계열이다.** 이미 존재하는 기능은 Git 원문·해시 기반 증분색인, 일부 한국어/영어 탐색, 링크/ID 후보 관계, 위험 표식과 CI 시험이다. 완전한 의미검색, 자동 교차저장소 통제, 영속 에이전트 또는 과학적 독립 검증을 달성했다는 뜻은 아니다.
+
+**진단한 최우선 병목.** 과거에는 전체 자료 재독이나 사람의 색인 탐색 부담이 컸다. 검색 엔진이 생긴 뒤 남은 병목은 **중요한 문헌·반례를 놓치는 빈도와, 사실이 아닌 관계를 연결하는 빈도를 실제 독립자료에서 측정하지 못했다**는 점이다. 따라서 먼저 측정하고, 실제 효익이 확인될 때만 복잡성을 늘린다.
+
+| PIA 차기 **목표 버전** (현재 아님) | 우선순위·업그레이드 | 승격 게이트 | 실패 시 처리 |
+|---|---|---|---|
+| **v0.1 → v0.1.x** (안정화) | P0: 기존 CLI·manifest·상태 정의 통일, 원문·색인 무결성 복구, 제외 자료·절단·HOLD 경고 영수증 | 실제 저장소 CI와 main 재조회, 변경·삭제·구식/변조 색인의 합성 실패 시험, 비공개·정본 변경 없음 | 허위 CURRENT, 반례 소실, 비공개 누출이면 HOLD·마지막 정상 커밋 복귀 |
+| **v0.2 목표** (검색 실측) | P1: 한국어·영어 블라인드 질의·골드 문헌, 희귀 반례, 구식/철회/현재 자료, 단어 불일치, 부정 대조군을 사전등록하고 기본 검색과 비교 | 숨은 평가집합의 Recall@k, 핵심 반례 회수율, 허위 관계율, p95 검색시간, 인간 검토비용 및 단순 기준선 대비 성과 보고; 중요 범위 역행 금지 | 학습한 예제에서만 성능 개선, 오탐·무료 검수비 급증이면 미승격·범위 축소 |
+| **v0.3 목표** (근거 의존성) | P2: 주장–원출처–반례–실험–영한 대응–기여자, 증거 유형·시점·대체 독립근거의 관계를 구체화하고 변경분 자동 영향 후보 갱신 | 철회된 자료의 영향 주장 탐지, 독립 근거 존재 시 무조건 삭제하지 않음, 숨은 연결·한영 부정문/부정결과 시험에서 조용한 소실 0 | ID 공동언급·유사성을 검증된 지지/반박으로 승격하면 롤백 |
+| **v0.4 목표** (연속·복구) | P3: 허가된 저장소별 영속 체크포인트와 인덱스, 누락 이벤트 재생, 삭제·이동 복구, 새 실행 cold-start 검증 | 서로 다른 두 실행에서 중단·이벤트 유실을 주입해 최신 HEAD·경고 영수증 복원, 갱신 지연·복구시간·재연산비용 측정 | 구식 인덱스 최신 오인, 경고 은폐, 통제되지 않은 예약비용이면 복구 자동화 비활성 |
+| **v0.5 목표** (권한분리 연합) | P4: 승인된 PI 저장소 간 내용 자동 통합이 아닌 **읽기 전용 출처 포인터**로 연합 검색, 소유권·HEAD·ACL·분야경계 고정 | 시험 범위 내 공개/비공개 유출 0, 무단수정 0, 소유권·시점 충돌 구분. 자금·투자 등 다른 영역은 기본 제외 | 유출·출처오인 발생 시 연합 기능 차단·저장소별 독립 검색 유지 |
+| **v1.0 목표** (실효성 감사) | P5: 장기 누락·복구·오류 지표, 가능할 때 외부 독립 평가, 실제 사람의 자료재설명·교정·비용 감소 | 사전등록한 기준선 대비 실제 사용자 순시간·순비용 감소, 핵심 반례·출처·이탈/복구권 감소 없음, 독립검증 유무 명시 | 편익 미측정·검증권 독점·노동전가라면 v1.0 보류, 가벼운 이전 구조 유지 |
+
+**버전은 날짜가 아니라 게이트로 승격한다.** P0→P1을 신규 대형 AI·임베딩·GraphRAG보다 우선한다. 유료 프로그램이나 사용자 로컬 PC 설치는 전제하지 않는다. 실제 시험·권한·독립 평가가 없으면 NOT TESTED/HOLD로 표시하고 문서량만으로 버전을 올리지 않는다. 필요한 경우 v0.1의 안정된 단순 방식을 유지한다.
+
+**기존 연구 6단계 그대로 적용:** 1단계 가설·전제·버전 확인 → 2단계 선행연구와 반례 검색 → 3단계 한정된 자료 포화·미관측 보고 → 4단계 근거 변경과 경쟁가설 파급검토 → 5단계 원저자·인간 원기여·교정·한영 계보 보존 → 6단계 사전등록·시험·실패·재현·롤백·실제 비용 검증. **PIA 검색 성능 향상은 ICM 가설 입증과 별개**다.
+
+**평가 설계:** 평가할 Git HEAD와 권한을 고정한다. PIA 자신이 찾아준 자료만으로 정답집을 만들면 순환 평가이므로 외부 검토·독립 탐색·숨은 반례를 포함한다. 검색 방식마다 같은 권한·환경·시간 범위에서 기준선과 비교한다. 분모·표본·놓친 자료·지원하지 않는 입력·원문 인용 위치·실제 실행 로그·사람의 비용을 나눠 보고하고, 성공 기준은 결과를 보기 전에 정한다. 검색결과 수나 CI 성공만으로 실증 성공을 선언하지 않는다.
+
+**공개·비공개·기여 경계:** 공개 로드맵에는 설계·방호·평가 개요만 둔다. 비공개 실험 원문·미발표 실패·자격증명·재무자료는 소유 저장소에 남긴다. 선행기술 원저자의 기여와 PI 연구자 자신의 문제제기·PIA 명명/통합 기여를 따로 보존한다. 과거 기여 정산과 미래 고용·시험·PIA 업데이트는 독립이며, PIA 기능이나 자동화가 과거 정산을 대신하지 않는다.
+
+**Change record / 변경:** 2026-10-13 PIA v0.1 **업그레이드 목표**를 기존 PI v0.2의 운영 보조 축으로 편입. PI 여섯 단계, v0.2 역사사례 F01–F20, G1–G8, R01–R12, v0.2.1/v0.2.2 연구 보충 및 원문·기여 이력은 그대로 유지. **No PIA version promotion has occurred / PIA 버전은 여전히 v0.1.**
