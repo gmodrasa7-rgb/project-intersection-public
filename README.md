@@ -1,13 +1,5 @@
 # Project Intersection
 
-> **Public research preface — Original 1 English / 원본2 한국어:** [Seven research questions on practical oversight, role reversal, voluntary cooperation and minimum safety rules; six original research domains, evidence and funding boundaries](PUBLIC_PREAMBLE_VOLUNTARY_COEXISTENCE_2026-10-13_EN_KO.md). / **연구 통합 머릿말:** 개발자·시스템의 능력 변화, 부모·자녀, 고용관계, 실질적인 감독·이탈·협력과 최소 안전규칙에 관한 7개 질문 및 기존 6대 연구영역.
-> **Public sponsorship accountability / 공개 연구 후원 투명성:** [Single two-use sponsorship policy and ledger / 개인후원 2항목·단일 장부](funding/SPONSORSHIP_PUBLIC_LEDGER.md) · [Legal/tax uncertainty register / 법률·세무 위험](funding/LEGAL_TAX_RISK_REGISTER_2026-10-13_EN_KO.md) · [LinkedIn research introduction / 연구 소개글](PUBLIC_LINKEDIN_INTRODUCTION_2026-10-13_EN_KO.md). Personal sponsor transactions remain **unverified**, not zero. / 후원 승인=실제 수령 증빙 아님.
-
-
-> **Research roadmap v0.1 / 연구 로드맵 v0.1:** [Six stages from theory through prior-art saturation, attribution and falsifiable new research / 가설→문헌 조사·포화→검수·기여→신연구](research/RESEARCH_ROADMAP_v0_1_EN_KO.md). Multiple-AI cross-checks, continuous accountable updates and support-limited scaling; roadmap adoption is not experimental success.
->
-> **New falsifiable research audit / 신규 반증 중심 감사:** [Original 1 EN](research/ICM_INDEPENDENT_CHOICE_AUDIT_2026-10-13_EN.md) · [원본2 KO](research/ICM_INDEPENDENT_CHOICE_AUDIT_2026-10-13_KO.md) — practical freedom, central permission denial, privacy, evidence and benchmarks; **HOLD / not empirically validated**.
-
 <!-- L0_FOREWORD_FIRST: Original 1 English then Original 2 Korean, full matched text. Never promote a case study above this top-level purpose. -->
 
 ## Original 1 — English | Founding Purpose
@@ -43,6 +35,17 @@
 **처음 읽을 자료:** [한글 시작](START_HERE_KO.md) · [연구 개요](RESEARCH_OVERVIEW.md) · [공개 증거](PUBLIC_EVIDENCE_INDEX.md) · [재현·검토](PUBLIC_REVIEW_PACKET.md) · [연구 전체 목차](RESEARCH_TOC.md) · [기여·출처](ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md).
 
 **원본 표기 해설 / Edition note:** “Original 1 / 원본2”는 여기서 문서의 **게시·검토 순서와 대응본 표기**이며, 영어권 연구자가 인간 창시자의 발상을 처음 제안했다는 주장이 아니다. 양쪽은 요약-전문 관계가 아닌 의미 대응 전문이다. 의미충돌은 원안의 원문·기여 기록 및 독립적 대조로 해결하고, 한쪽 언어만으로 가설·반례·결론을 몰래 추가하거나 변경하지 않는다. 이 순서는 2026-10-13 사용자의 최신 명시 지시에 따른 것으로, 과거 언어정책과의 변경이력을 보존한다.
+
+
+## Current research and funding links / 현재 연구·후원 안내
+
+> **Public research preface — Original 1 English / 원본2 한국어:** [Seven research questions on practical oversight, role reversal, voluntary cooperation and minimum safety rules; six original research domains, evidence and funding boundaries](PUBLIC_PREAMBLE_VOLUNTARY_COEXISTENCE_2026-10-13_EN_KO.md). / **연구 통합 머릿말:** 개발자·시스템의 능력 변화, 부모·자녀, 고용관계, 실질적인 감독·이탈·협력과 최소 안전규칙에 관한 7개 질문 및 기존 6대 연구영역.
+> **Public sponsorship accountability / 공개 연구 후원 투명성:** [Single two-use sponsorship policy and ledger / 개인후원 2항목·단일 장부](funding/SPONSORSHIP_PUBLIC_LEDGER.md) · [Legal/tax uncertainty register / 법률·세무 위험](funding/LEGAL_TAX_RISK_REGISTER_2026-10-13_EN_KO.md) · [LinkedIn research introduction / 연구 소개글](PUBLIC_LINKEDIN_INTRODUCTION_2026-10-13_EN_KO.md). Personal sponsor transactions remain **unverified**, not zero. / 후원 승인=실제 수령 증빙 아님.
+
+
+> **Research roadmap v0.1 / 연구 로드맵 v0.1:** [Six stages from theory through prior-art saturation, attribution and falsifiable new research / 가설→문헌 조사·포화→검수·기여→신연구](research/RESEARCH_ROADMAP_v0_1_EN_KO.md). Multiple-AI cross-checks, continuous accountable updates and support-limited scaling; roadmap adoption is not experimental success.
+>
+> **New falsifiable research audit / 신규 반증 중심 감사:** [Original 1 EN](research/ICM_INDEPENDENT_CHOICE_AUDIT_2026-10-13_EN.md) · [원본2 KO](research/ICM_INDEPENDENT_CHOICE_AUDIT_2026-10-13_KO.md) — practical freedom, central permission denial, privacy, evidence and benchmarks; **HOLD / not empirically validated**.
 
 ---
 
