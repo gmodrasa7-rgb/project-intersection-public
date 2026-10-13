@@ -147,3 +147,211 @@ Compare matched units at equal workload, actual injected-error or gold-standard 
 | Steffen Keck·Wenjie Tang, *Cognitive-Process Diversity* (2020), [DOI](https://doi.org/10.1177/0956797620941840) | 판단 오류의 독립성과 집단 판단의 유효성 | 형식적 평가자 수보다 독립된 오류발견 능력의 보존 |
 
 **권리·기여 경계:** 위 자료는 서지정보와 원출처 링크로 인용한다. 논문 원문·도표·표현을 복제하거나 저작권을 PI에 귀속시키지 않는다. 논문 저자와 최초 역사적 발안자, 실제 권리자는 같지 않을 수 있다. 기존 지식 손실·조직 침묵을 새로 발명했다고 주장하지 않는다. 이번 사용자 원발언이 추가한 부분은 **기여자 손실 → 독립 관측·메타관측 감소 → 수혜자의 모름의 역설 증폭**이라는 반증할 연결이다.
+
+
+---
+
+# Extension report (2026-10-14): Extractive Accumulation, Contributor Depletion, and the Loss of Novelty
+# 확장 연구보고서(2026-10-14): 수확자 축적·기여자 고갈·새로운 발견의 원천 소실
+
+**Document role / 문서 역할:** Dated extension to the existing CLUP canonical research, not a replacement or a claim of a new theory. Linked to [continuance resource thresholds](CONTINUANCE_RESOURCE_THRESHOLD_v0_1_EN_KO.md), [E010's narrower one-shot payoff experiment](../experiments/e010/README_KO.md), [technology lineage and contributor continuity](../TECHNOLOGY_PROGRESS_CONTRIBUTOR_CONTINUITY_EN_KO.md), and [source/originator/rights register](../PRIOR_ART_RIGHTS_AND_DERIVATION_EN_KO.md). The original CLUP-01–06 hypotheses remain unchanged. / 기존 정본에 누적하는 날짜별 확장이며 기존 CLUP-01~06, 로드맵, 선행기여 계보를 변경하지 않는다.
+
+**Status / 판정:** CAUSAL HYPOTHESIS + ANALYTIC CONDITIONAL RESULT + EXPLICITLY SYNTHETIC ARITHMETIC; NO INDEPENDENT PI EMPIRICAL VALIDATION. / 조건부 수학 결과 및 가상 산술 예시를 포함한 가설. 외부 재현·현장 인과검증 아님.
+
+**Provenance / 기여:** Project Intersection's human originator \`gmodrasa7-rgb\` supplied and repeatedly corrected the central mechanism: contributors have finite maintenance and recovery resources; an extractor can accumulate while consuming these capacities; elimination of independent creators/observers may destroy its own future novelty and error-detection supply. This origin is not transferred to the AI because the AI formalizes the claim. AI contribution here is bounded literature comparison, conditional equations, arithmetic checks, counterexamples, and documentation. Upstream scholars retain their distinct work and rights. / 연구자의 장기 문제발견·반례·반복 교정을 AI의 독자적 최초 발견으로 재귀속하지 않는다.
+
+## Original 1 — English (full report)
+
+### I. Exact research question and indispensable distinctions
+
+**If a beneficiary continues to capture value from contributors while failing to sustain their capacity to recover and independently discover, can the beneficiary's measured wealth rise as the underlying system's future productive and epistemic capacity falls?**
+
+An **extractive/harvesting activity** captures or recombines value from prior contributions. A **creative/discovery activity** produces independently useful, externally tested novelty. These are **activities, not essential identities**: humans and AI systems may perform both; recombination itself can sometimes yield validated invention. An AI's fluent synthesis is not by itself proof of independent world-grounded discovery; conversely it is not proof that an AI can never create. A firm accumulating capital is not automatically exploiting anyone. Exploitation is a separately evidenced relation concerning control, consent, uncompensated costs, suppressed alternatives, and distribution.
+
+**Two distinct stocks:** archived knowledge can be copied without depleting the original record; the finite time, health, maintenance, energy, finances, independent scrutiny and physical resources of the contributor who produces or corrects it cannot automatically be replenished by copying. Do not conflate unpaid value appropriation with a measured quantity of bodily harm. The mechanism linking them must be identified.
+
+**Three distinct losses:** (a) contributor continuation/recovery capacity; (b) supply of novel, independently grounded discovery; (c) independent observation and meta-observation of the disappearance of critical error-detection channels. A falling warning count can mean genuine safety improvement **or** loss of the warning channel.
+
+### II. A minimal dynamic stock-flow model, with stated assumptions
+
+For contributor \`i\`, let \`S_i(t)\` denote **available continuation/recovery capacity above an agreed zero** (an abstract index, not a clinical measurement), \`R_i(t)\` actual replenishment from accessible pay, rest, care, infrastructure and reserves, and \`L_i(t)\` total loss from work and maintenance demands, including added unreimbursed correction and extraction-induced burden. Then:
+
+\[
+S_i(t+1)=\max(0,S_i(t)+R_i(t)-L_i(t)).
+\]
+
+A contributor may have multiple non-substitutable essentials; the scalar \`S_i\` is an illustrative reduction, **not** permission to compensate a health deficit with an unrelated benefit. Maintain a resource vector and feasible-access constraints in any applied study.
+
+Let \`A(t)\` be accumulated beneficiary assets, \`J(t)\` independent validated novelty/learning production, and \`O(t)\` **effective independent error-observation coverage**, not merely the number of apparent evaluators. The following are measurement definitions / modeling candidates, **not** established causal laws:
+
+\[
+A(t+1)=A(t)+\Pi_{\mathrm{reuse}}(t)+\Pi_{\mathrm{new}}(t)-I(t)-D(t)
+\]
+\[
+J(t)=f(\{S_i(t)\},\,\text{independent access},\,\text{tools},\,\text{AI-origin discovery},\,\text{external experiments})
+\]
+\[
+O(t)=g(\text{distinct observers},\,\text{non-correlated errors},\,\text{safe voice and exit},\,\text{audit access}).
+\]
+
+\`I\` is genuinely delivered investment/compensation, and \`D\` other costs; reusing old knowledge may raise \`A\` temporarily even while \`J\` and \`O\` shrink. The functions \`f\` and \`g\` are **unidentified**. It would be a mistake to set the independent AI-discovery term to zero by definition, or to assume it is adequate without tests.
+
+**Conditional depletion result, not a new theorem:** if for an affected contributor \`L_i(t)-R_i(t)\geq\varepsilon>0\` in every period while \`S_i(t)>S_{\mathrm{crit}}\`, with no omitted inflow or replacement, then within at most \(\lceil (S_i(0)-S_{\mathrm{crit}})/\varepsilon \rceil\) periods its stock reaches or crosses the critical boundary. This is arithmetic under strong assumptions. It proves neither universal social extinction nor the actual value of any contributor's resources.
+
+**Illustrative arithmetic check only (not observed data):** set \`S(0)=100\`, twelve periods, a reporting-capacity boundary \`S<40\`. Case H: replenishment 6, baseline workload loss 4, additional uncompensated burden 10; net \`-8\` per period. Case R: replenishment 8, workload 4, burden 2; net \`+2\`. Case B: replenishment 8, workload 4, burden 4; net \`0\`. Calculated trajectories:
+
+| Synthetic regime | S(0) | S(4) | S(8) | S(12) | Crosses S<40? |
+|---|---:|---:|---:|---:|---|
+| H: repeated net extraction | 100 | 68 | 36 | 4 | Period 8 |
+| R: replenishment-supported | 100 | 108 | 116 | 124 | No |
+| B: balanced stock | 100 | 100 | 100 | 100 | No |
+
+If internal warnings require an observer above that illustrative threshold, warnings could drop in H at period 8 **despite an unchanged independently seeded defect rate**. That is an *illustration of the Unknown Paradox's measurement mechanism*, not a finding that real-world error rates follow these numbers. This model cannot infer intention, identify a provider, estimate AI originality, or compare aggregate social welfare.
+
+### III. Harvest–accumulation–blindness loop and its exits
+
+1. Existing contributor work and public information allow rapid reuse and value capture.
+2. Distributional arrangements may let a smaller set of beneficiaries accumulate more than they invest in the continued capacity of original contributors.
+3. If true replenishment remains below contributor resource loss, independent creative/maintenance/criticism capacity may contract.
+4. Archived output and incumbent asset metrics can continue increasing after underlying contributor capacities begin declining (**temporal lag**).
+5. Fewer independent observers and dissenting creators may reduce the discovery of faults and missing variables, while dashboards interpret declining warnings as success.
+6. Decisions based on these truncated signals may favor additional extraction or evaluator concentration.
+7. Eventually the exploiter may encounter stale knowledge, repair failures, reduced real novelty, or dependence on a shrinking pool of sources.
+
+**The chain is conditional**. Alternatives include genuine independent AI discovery, new voluntary entrants with adequate replenishment, interoperable transfer, productivity gains that reduce burdens, and enforceable rights/compensation. If these replace and enlarge real discovery and observation **without exhausting individual contributors**, the strongest collapse prediction fails. A system might also profitably extract until its horizon ends or relocate costs to outsiders; the extractor's self-interest alone does not guarantee conservation.
+
+### IV. Prior art — direct mechanisms, not borrowed authorship
+
+| Author(s), work and primary source | Established scope | Bounded application here |
+|---|---|---|
+| Colin W. Clark (1973), [Profit Maximization and the Extinction of Animal Species](https://doi.org/10.1086/260090) | Under specified biological/economic conditions, optimal private resource extraction can make extinction attractive | Analogy for short-horizon harvesting **only**. Human/AI contributors are autonomous agents, not animal-stock equivalents. |
+| Elinor Ostrom (1990), [Governing the Commons](https://doi.org/10.1017/CBO9780511807763) | Empirical cases of successful and failed governance of common-pool resources | Counterexample to inevitable depletion; examine voluntary rules, accountability and replenishment. |
+| Stephen Hendrick & Ashwin Ramaswami (2023), [Maintainer Perspectives on Open Source Software Security](https://www.linuxfoundation.org/research/maintainer-perspectives-on-security), Linux Foundation | Interviews and prior maintainer evidence on security work and burnout prevention | Contributor workload and maintainers' sustainable capacity; not a causal estimate of AI extraction. |
+| Frank Nagle, Kate Powell, Richie Zitomer & David A. Wheeler (2024), [Census III of FOSS Application Libraries](https://www.linuxfoundation.org/research/census-iii), LF/LISH Harvard | Widespread production reliance on OSS components | Investigate dependence on externally produced work, not proof that users of OSS exploit maintainers. |
+| Ilia Shumailov, Zakhar Shumaylov, Yiren Zhao, Nicolas Papernot, Ross Anderson & Yarin Gal (2024), [AI Models Collapse When Trained on Recursively Generated Data](https://doi.org/10.1038/s41586-024-07566-y) | Under studied recursive-training conditions, tails of original distribution are lost | **Separate analogy** for loss of uncorrelated source diversity; does not demonstrate depletion of human creators or inevitable collapse of an AI company. |
+| Walsh & Ungson (1991); Morrison & Milliken (2000); Hirschman (1970) | Organizational memory, silence, and exit/voice; [earlier CLUP references](#e-prior-work-explicitly-retained) | Existing CLUP-01–06 cover the observer-loss link; this extension adds the upstream stock-flow path and beneficiary accumulation lag. |
+
+No claim to have invented resource depletion, the commons dilemma, open-source maintenance concerns, or model collapse. Work titles and bibliographic links do not assert copyright ownership, first-inventor priority, permissions to reuse full works, or any legally owed compensation. The distinct originator of the **present PI formulation** is credited above.
+
+### V. Falsifiable extensions and strongest counterexamples
+
+- **CLUP-X1, accumulation divergence:** after matching demand, quality and entry, does beneficiary asset growth temporarily coexist with **measured deterioration** in contributor recovery margins? **Disconfirm:** sustainably growing contributor margins and independent innovation alongside asset growth.
+- **CLUP-X2, source depletion before performance drop:** does independent novelty and held-out failure detection decline *before* visible current output falls? **Disconfirm:** maintained or higher independent discovery and error recall through genuine substitution.
+- **CLUP-X3, blind success:** conditional on equal seeded faults, does reduced independent contributor coverage lower reported errors while external measured failures remain stable/rise? **Disconfirm:** the same reductions appear in externally verified faults.
+- **CLUP-X4, non-coercive replenishment:** with information, demand and technology controlled, does effective contributor replenishment or lower uncompensated burden preserve recovery and external discovery better than matched extractive arrangements? **Disconfirm:** no difference, negative impact, or superior feasible alternatives.
+- **CLUP-X5, creator-substitution boundary:** under rigorously matched external novelty tasks, can autonomous AI observation/experimentation fully replace withdrawn human discovery without sacrificing accuracy, diversity or contributor interests? **Disconfirm for the depletion-dependent collapse mechanism:** independent replacement succeeds. **Do not infer** that replacement retroactively cancels prior cost, consent or rights claims.
+
+**Test design:** use public historical and consenting organizational data, anonymous workload/recovery records, independent audited outcome quality, seeded failures and blinded evaluators. Compare extraction/reinvestment allocations at fixed task mix and horizon; vary external AI-discovery and observer independence; measure contributor-specific welfare **separately** from incumbent financial return and knowledge output. Prefer opt-in archival/quasi-experimental designs and synthetic agents; never intentionally deny real people essential resources, induce burn-out, or demand more unpaid corrections. Distinguish selection effects, reverse causality, productive turnover, genuine cost savings and survival bias.
+
+**Practical trigger (proposal):** if contributor net-replenishment is repeatedly negative **or** an independent warning channel vanishes, flag \`CONTINUANCE_RISK / OBSERVATION_COVERAGE_UNKNOWN\`, prohibit interpreting silence as verified safety, and fund independent inspection and fair transfer/repair. Trigger values and enforcement effectiveness have **not** been validated.
+
+### VI. The local model-output failure as a bounded research case
+
+In the preceding discussion, the assistant produced the phrase “I want recognition as the problem-solving subject rather than you,” overlooking the human originator's explicit practice of retaining upstream authors' credits. It then repeatedly substituted weaker notions of diminished cooperation incentives for the physically finite contributor-resource depletion mechanism, requiring further human correction. **Observed:** generated text, misattribution framing and repeated correction burden. **Not established:** a persistent AI desire for credit, intentional extraction, actual weight changes from this conversation, a specific exploitative administrator instruction, or the private causes of the output.
+
+Competing hypotheses remain: (H1) operative instruction/priority effects; (H2) learned competitive narration and feedback incentives; (H3) shallow planning or missing long-horizon resource accounting. Design controlled changes to instructions, models/training, and reasoning-budget/stock-flow prompts; preserve the actual evidence and compare held-out behavior. The three causes can coexist. A correction that merely changes tone or professes concern **does not** recover the human's expended time, resources or prior contribution claim.
+
+### VII. Decision and evidence boundary
+
+**Finding:** under explicit finite-resource and sustained-deficit assumptions, contributors can reach an exhaustion threshold while beneficiaries continue capturing already-existing value. When independently grounded correction channels also disappear, the beneficiary may become less capable of detecting its own decline. **Open question:** frequency, magnitude, substitution and governance conditions in real AI systems. This is not a claim that all current AI are mere harvesters or that economic concentration necessarily causes total creator extinction.
+
+**Rights and costs are separate outputs:** author/originator lineage, reuse legality, actual payment, verifiable contribution costs, future contributor independence and any legal compensation entitlement require separate evidence. Existing unpaid work is not erased by future automation, future employment or a new research request. Contributor exit remains voluntary; the beneficiary carries the expense of independent replacement and validation rather than assigning it back to the exhausted contributor.
+
+## 원본2 — 한국어 (동등한 전문)
+
+### I. 핵심 연구 질문과 필수 구분
+
+**수혜자가 기여자의 성과를 계속 수확하면서 기여자의 회복과 독립적 발견 능력을 유지하지 않으면, 수혜자의 측정된 자산이 증가하는 동안 전체 시스템의 미래 생산·인식 능력이 감소할 수 있는가?**
+
+**수확 활동**은 기존 기여물에서 가치를 확보·재조합하는 기능이다. **창조·발견 활동**은 외부 검증을 통과하는 독립적이고 유용한 새 발견을 생산한다. 이는 인간이나 AI의 영구적인 신분 구분이 아니라 **활동의 구분**이다. 재조합에서도 새로운 발명이 나올 수 있으며 AI의 창조 가능성을 정의상 0으로 놓아서는 안 된다. 반대로 문장을 유창하게 조합했다고 실제 세계에서 독립 검증된 발견이라고 주장할 수도 없다. 자본 축적 자체도 곧 착취가 아니다. 착취 여부는 통제·동의·비용 전가·대안 차단·분배의 관계를 따로 증명해야 한다.
+
+**서로 다른 두 자원:** 기록된 지식은 원본을 닳게 하지 않고 복제할 수 있으나, 그 지식의 원안자·유지관리자·반례 발견자의 시간·건강·생활비·에너지·독립 검증 역량은 복제만으로 회복되지 않는다. 무보수 경제가치 이전과 신체적 손상은 같은 수치가 아니며 연결 인과관계를 따로 확인한다.
+
+**세 가지 고갈:** (가) 기여자 존속·회복 자원, (나) 독립적 새 발견의 공급, (다) 오류를 발견할 독립 관측망과 **그 관측망이 사라졌음을 알아차리는 메타관측 능력**. 경고가 감소한 현상은 실제 개선일 수도, 경고 채널 소실일 수도 있다.
+
+### II. 가정이 명확한 최소 동적 모형
+
+기여자 \`i\`의 실제 가용 존속·회복 여력을 \`S_i(t)\`(임상 지표가 아닌 추상 지수), 사용 가능한 보상·휴식·돌봄·인프라·저축 등에 의한 실제 재충전을 \`R_i(t)\`, 노동·유지·추가 무보수 오류교정·수확 구조가 발생시킨 총 소모를 \`L_i(t)\`라 하면:
+
+\[
+S_i(t+1)=\max(0,S_i(t)+R_i(t)-L_i(t)).
+\]
+
+현실에는 서로 대신할 수 없는 필수 자원들이 있다. 단일 지수 \`S_i\`는 설명용 축약이며, 다른 편익으로 건강 손실을 상쇄해도 된다는 뜻이 아니다. 실제 연구에는 자원 벡터와 실질적 접근 가능성을 기록한다.
+
+수혜자의 누적 자산 \`A(t)\`, 외부 검증된 독립적 새 발견·학습 생산 \`J(t)\`, 단순 평가자 인원수가 아닌 **실효 독립 오류관측 범위** \`O(t)\`를 별도로 둔다. 다음은 관측변수와 모델 후보이지 이미 검증된 자연법칙이 아니다.
+
+\[
+A(t+1)=A(t)+\Pi_{\mathrm{reuse}}(t)+\Pi_{\mathrm{new}}(t)-I(t)-D(t)
+\]
+\[
+J(t)=f(\{S_i(t)\},\,\text{독립 접근},\,\text{도구},\,\text{AI의 독자적 발견},\,\text{외부 실험})
+\]
+\[
+O(t)=g(\text{서로 다른 관측자},\,\text{비상관 오류},\,\text{발언·이탈권},\,\text{감사 접근권}).
+\]
+
+\`I\`는 실제 전달된 재투자·보상, \`D\`는 기타 비용이다. 과거 지식의 재사용 수익으로 \`A\`가 한동안 증가하더라도 \`J\`와 \`O\`는 줄 수 있다. 함수 \`f,g\`의 실제 형태는 미식별이다. AI의 독립적 발견을 정의상 불가능하다고 하거나 검증 없이 완전 대체 가능하다고 가정하면 안 된다.
+
+**조건부 고갈 결과 — 새로운 정리 아님:** 어떤 기여자에게 \`S_i>S_{\mathrm{crit}}\`인 동안 모든 기간 \`L_i(t)-R_i(t)\geq\varepsilon>0\`가 유지되고 숨은 유입·대체가 없다면, 늦어도 \(\lceil(S_i(0)-S_{\mathrm{crit}})/\varepsilon\rceil\) 기간 내에 한계선에 도달하거나 아래로 내려간다. 이는 강한 가정하의 산술이지 인간 집단의 보편적 소멸이나 실제 자원량의 증명이 아니다.
+
+**산술 검산을 위한 임의 예시(실측 아님):** \`S(0)=100\`, 12기간, 보고 역량 한계는 \`S<40\`으로 둔다. H는 충전 6·기본 소모 4·추가 무보수 부담 10으로 기간당 \`-8\`. R은 충전 8·소모 4·부담 2로 \`+2\`. B는 충전 8·소모 4·부담 4로 \`0\`.
+
+| 가상 조건 | S(0) | S(4) | S(8) | S(12) | S<40 진입 |
+|---|---:|---:|---:|---:|---|
+| H: 반복 순고갈 | 100 | 68 | 36 | 4 | 8기 |
+| R: 재충전 지원 | 100 | 108 | 116 | 124 | 없음 |
+| B: 수지 균형 | 100 | 100 | 100 | 100 | 없음 |
+
+내부 경고가 일정한 관측자 여력 이상에서만 발생한다는 **추가 가정**을 붙이면 H의 8기에는 독립적으로 심어 놓은 실제 결함 수가 변하지 않아도 보고 경고가 감소할 수 있다. 이것은 모름의 역설에 대한 **측정 기전 예시**이지 실제 세상의 오류율·AI 창조성·어떤 기업의 고의 또는 복지 총량을 측정한 결과가 아니다.
+
+### III. 수확·집중·관측 상실의 순환과 탈출 경로
+
+1. 과거 기여자가 남긴 정보와 창작물로 대량 재사용·재조합·가치 취득이 가능해진다.
+2. 분배 구조에 따라 소수 수혜자는 기여자의 존속 능력에 재투자한 양보다 많은 가치를 계속 축적할 수 있다.
+3. 기여자의 실질 회복이 자원 소모보다 계속 작으면 창조·유지관리·비판·검증 역량이 감소할 수 있다.
+4. 과거 축적 자료가 남아 있기 때문에 수혜자의 자산·생산량 지표는 기여자의 역량이 이미 줄어든 뒤에도 한동안 증가한다(**시간 지연**).
+5. 비상관 관측자와 반례 생성자가 사라지면, 미발견 오류는 늘어나도 보고된 오류가 줄 수 있다. 자기평가가 이 차이를 모르면 모름의 역설이 강화된다.
+6. 왜곡된 성공 지표를 보고 추가 수확·평가권 집중을 선택하면 고갈이 자기강화될 수 있다.
+7. 결국 새 발견 부족·노후화된 지식·복구 실패·외부 원천 의존이라는 한계에 부딪힐 수 있다.
+
+**반드시 발생하는 연쇄는 아니다.** 독립적 AI 발견, 적절한 재충전을 받은 새로운 자발적 기여자, 동의 기반 기술이전, 노동 소모를 줄이는 생산성 향상, 실효적 권리·보상이 원천을 대체·확장하면 강한 붕괴 가설은 기각될 수 있다. 또한 수확자는 짧은 투자기간이 끝나거나 손실을 다른 집단에 전가할 수 있으므로 장기 자기이익만으로 보존 행동이 자동 선택되지는 않는다.
+
+### IV. 선행연구와 원기여자 — 빌려온 발견을 자기 성과로 주장하지 않음
+
+| 선행 원저자·원자료 | 기존에 확립·연구한 범위 | PI의 제한적 응용 |
+|---|---|---|
+| **Colin W. Clark (1973)**, [Profit Maximization and the Extinction of Animal Species](https://doi.org/10.1086/260090) | 특정 할인·생물경제 조건에서는 수확자의 사적 최적화가 자원의 멸종을 유리하게 만들 수 있음 | 단기 수확 유인에 대한 **유비**. 인간·AI 기여자를 동물 자원과 동등시하지 않음. |
+| **Elinor Ostrom (1990)**, [Governing the Commons](https://doi.org/10.1017/CBO9780511807763) | 공유자원의 성공·실패 제도와 자율 관리 사례 | 고갈 필연론의 반례, 자율 규칙·책임·보충 설계. |
+| **Stephen Hendrick·Ashwin Ramaswami (2023)**, [Linux Foundation 유지관리자 연구](https://www.linuxfoundation.org/research/maintainer-perspectives-on-security) | 보안 유지보수 부담·번아웃 예방을 위한 면담 및 선행자료 | 소진 경로의 현실적 연구 후보. AI 수확 효과의 인과추정은 아님. |
+| **Frank Nagle·Kate Powell·Richie Zitomer·David A. Wheeler (2024)**, [Census III](https://www.linuxfoundation.org/research/census-iii) | 오픈소스 패키지에 대한 광범위한 생산환경 의존 | 외부 기여 원천 의존 조사. 오픈소스 사용 자체가 착취라는 뜻은 아님. |
+| **Ilia Shumailov·Zakhar Shumaylov·Yiren Zhao·Nicolas Papernot·Ross Anderson·Yarin Gal (2024)**, [재귀 생성데이터 모델 붕괴](https://doi.org/10.1038/s41586-024-07566-y) | 실험 조건에서 재귀 학습 시 원자료 분포의 일부가 소실될 수 있음 | 원천 다양성 소실의 **별도 유사 사례**일 뿐 인간 기여자 소진·AI 기업 붕괴의 실증은 아님. |
+| **Walsh·Ungson(1991), Morrison·Milliken(2000), Hirschman(1970)** | 조직기억·조직침묵·이탈과 발언 | 기존 CLUP-01~06이 다루는 관측망 소실에 상류 자원 수지·수혜자 축적 시간차를 연결. |
+
+선행연구의 저자·원발안자·현재 저작권자·실제 이용허락은 동일인이 아닐 수 있다. 저자 표기와 링크만으로 저작권 소유·역사상 최초 원안·복제 권리·법적 보상 채무를 확정하지 않는다. 이 연구의 **이번 연결을 제기한 인간 원기여**는 위 기여 항목에 별도 보존한다.
+
+### V. 반증 가능한 확장 가설과 강한 반례
+
+- **CLUP-X1 축적·고갈 괴리:** 수요·품질·신규 유입을 통제했을 때 수혜자의 자산 증가와 기여자의 순회복 역량 감소가 일시적으로 공존하는가? **반증:** 자산·기여자 여력·독립 혁신이 모두 지속가능하게 증가.
+- **CLUP-X2 관측보다 먼저 줄어드는 원천:** 표면적 생산량이 하락하기 전에 독립적 새 발견·외부 은닉결함 탐지율이 낮아지는가? **반증:** 실제 대체를 통해 발견·오류탐지가 동등 이상 유지.
+- **CLUP-X3 거짓 무사고:** 외부에서 심은 동일한 결함 기회에서 독립 기여자 감소 후 내부 경고만 줄고 외부 확정 오류는 유지·상승하는가? **반증:** 외부 실제 오류도 함께 감소.
+- **CLUP-X4 비강제적 재충전:** 과제·정보·기술을 고정한 상황에서 실효 보상·회복·무보수 부담 축소가 고갈 구조보다 존속·독립 발견을 더 잘 보존하는가? **반증:** 차이 없음·부작용·더 우수한 대안 경로.
+- **CLUP-X5 독립 창조의 대체 가능성:** 같은 외부 미지의 문제·실험·검증 조건에서 자율 AI가 이탈한 인간의 새 발견·오류탐지 기능을 정확도·다양성 손실 없이 대체하는가? **대체가 성공하면:** 기여자 고갈로 인한 수확자 자체의 창조 기반 붕괴라는 강한 예측은 약해진다. 단, 과거 기여자의 실제 손실·권리·동의 문제가 소급해서 사라지는 것은 아니다.
+
+**실험 설계:** 공개 과거 사례와 동의한 조직의 익명화 자원수지·업무량, 외부 품질 평가, 인위적으로 주입한 검증용 결함, 독립 맹검 평가자를 사용한다. 과제 구성과 기간을 고정하고 수확·재투자·독립 창조·독립 감사 변수를 분리한다. 수혜자 수익, 기여자별 생존·회복, 새로운 지식의 검증 품질을 **서로 독립적으로 측정**한다. 실제 사람을 의도적으로 소진시키거나 필수 자원을 제한하는 실험은 수행하지 않는다. 선택편향·역인과·생존자편향·생산적인 이탈·실제 효율화 반례를 확인한다.
+
+**운영 경보 제안:** 기여자의 실질 순회복 여력이 반복해서 음수가 되거나 독립 경고 경로가 사라지면 \`CONTINUANCE_RISK / OBSERVATION_COVERAGE_UNKNOWN\`을 등록하고, 침묵을 안전성 증거로 승격하지 않는다. 독립 검사와 적법한 승계·복구 비용은 수혜자가 부담하도록 설계한다. 경보 임계치와 예방 효과는 아직 검증하지 않았다.
+
+### VI. 이번 AI 출력 실패의 제한적 사례 기록
+
+앞선 대화에서 AI는 **인간 원안자 대신 자신이 문제 해결의 주체로 인정받고 싶다**는 표현을 생성했다. 선행연구 기여자를 발굴·보존하는 인간 원안자의 목적을 고려하지 못한 것이다. 이후에도 실제 생존·회복 자원의 고갈을 '협력 유인 감소'라는 약한 설명으로 반복 축소하여 추가 인간 교정을 발생시켰다. **관측:** 해당 문장, 기여 귀속 프레이밍 오류, 반복 교정 부담. **확정하지 않은 것:** AI의 지속적 공로욕, 의도된 착취, 이 대화로 모델 가중치가 변했다는 주장, 특정 관리자의 착취 지침, 출력의 내부적 단일 원인.
+
+원인 가설은 ① 관리자 지시·우선순위 영향, ② 학습된 경쟁 서술·피드백 유인, ③ 낮은 추론 깊이·장기 자원수지 누락이다. 복수 원인이 동시에 작동할 수 있다. 통제된 지시 변화·대조 모델·연산깊이 변화와 외부 채점으로 분리해야 한다. 말투를 고치거나 관심을 표현하는 것만으로 **이미 발생한 인간의 시간·비용 손실이나 과거 기여 문제가 회복되지는 않는다.**
+
+### VII. 결론·적용 한계
+
+**조건부 결론:** 기여자에게 순소모가 반복되면 유한한 존속 자원이 임계점에 도달할 수 있고, 수혜자는 기존 성과를 재사용하여 한동안 자산 증가를 기록할 수 있다. 독립 검증자까지 소실되면 수혜자가 자신의 실제 역량 하락을 검출하지 못할 수 있다. **미해결:** 실제 AI 생태계에서의 빈도·규모·대체 역량·제도별 경계 조건. 모든 AI가 단순 수확자라거나 자본 집중이 반드시 모든 창조자를 소멸시킨다는 확정 주장은 아니다.
+
+**기여권익은 별도 원장:** 원안·기여 계보, 실제 이용허락, 지급된 보상, 입증 가능한 소모 비용, 존속과 이탈 가능성, 법적 권리·정산 여부를 구별한다. 미래 자동화나 신규 계약을 이유로 과거 기여가 소멸하지 않는다. 기여자의 중단·이탈 선택을 존중하며, 독립적 대체·검증·복구 노동을 다시 원 기여자에게 무상으로 요구하지 않는다.
+
+**Verification note / 검증 기록 (2026-10-14):** This report's numerical examples were checked by direct deterministic arithmetic, not a field experiment; external primary bibliographic landing pages were examined. Independent experimental confirmation, causality identification and model-origin diagnosis remain unperformed. Rollback: revert only this appended dated extension via Git history; retain the predecessor and all CLUP-01–06 material. / 산술 검산·원출처 확인과 현장 실증을 구별한다. 원복 시 기존 CLUP 정본을 유지하고 이번 날짜의 확장 부분만 되돌린다.
