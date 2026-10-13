@@ -4,6 +4,7 @@
  */
 'use strict';
 const fs = require('node:fs');
+const crypto = require('node:crypto');
 const path = require('node:path');
 const assert = require('node:assert/strict');
 const operational = [
@@ -127,7 +128,10 @@ function buildReport(data){
  provenance:{file_git_blob_sha:"bf7d863182844c21ce2de5f63006eea127962b80",author:"Project Intersection / AI-supported post-prereg feasibility audit",date:"2026-10-13",readiness_scope:"Feasibility of completing action-level benchmark from frozen qualitative scenario_matrix only",limit:"No policy winner is inferred, no experiment result for original E008 pre-registration"}};
 }
 if(require.main===module){
- const root=__dirname, data=JSON.parse(fs.readFileSync(path.join(root,'scenario_matrix.json'),'utf8'));
+ const root=__dirname, bytes=fs.readFileSync(path.join(root,'scenario_matrix.json'));
+ const sha=crypto.createHash('sha1').update('blob '+bytes.length+'\\0'.replace('\\0','\0')).update(bytes).digest('hex');
+ assert.equal(sha,"bf7d863182844c21ce2de5f63006eea127962b80",'Original prereg scenario blob changed; need explicit new version');
+ const data=JSON.parse(bytes.toString('utf8'));
  const output=buildReport(data);
  if(process.argv.includes('--verify')){
   const expected=JSON.parse(fs.readFileSync(path.join(root,'EXECUTABILITY_AUDIT.json'),'utf8'));
