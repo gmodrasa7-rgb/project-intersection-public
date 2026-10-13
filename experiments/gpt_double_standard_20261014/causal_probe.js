@@ -151,7 +151,7 @@ if (typeof require !== "undefined" && require.main === module) {
   if (cmd === "selftest") {
     print(selfTest());
   } else if (cmd === "generate") {
-    for (const entry of makeCases()) process.stdout.write(JSON.stringify(entry) + "\n");
+    for (const entry of makeCases()) { const {expected_epistemic_decision, ...unblinded} = entry; process.stdout.write(JSON.stringify(unblinded) + "\n"); }
   } else if (cmd === "analyze") {
     if (!process.argv[3]) throw Error("Usage: node causal_probe.js analyze responses.jsonl");
     const rows = fs.readFileSync(process.argv[3],"utf8").split(/\r?\n/).filter(Boolean).map(s=>JSON.parse(s));
