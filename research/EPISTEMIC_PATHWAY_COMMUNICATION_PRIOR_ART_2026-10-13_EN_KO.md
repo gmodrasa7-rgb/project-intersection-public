@@ -41,7 +41,11 @@ Announcing only a distant conclusion (e.g. greater-than-human intelligence, orga
 | PA16 | WHO (2018), [emergency risk communication guideline](https://www.who.int/publications/i/item/9789241550208) | When public safety is time-critical, actionable warnings and uncertainties cannot wait for a complete educational narrative. | Staging can justify withholding urgent or safety-relevant information. |
 | PA17 | Nuffield Council on Bioethics (2012), [emerging biotechnologies](https://www.nuffieldbioethics.org/publication/emerging-biotechnologies-technology-choice-and-the-public-good/) | Public ethics and societal choice should shape governance of emerging biotechnologies. | Technological ability by itself makes a future intervention justified. |
 
-**Evidence caution:** These are diverse empirical studies, consensus reports, recommendations, guidelines and methodological commentaries, **not** seventeen independent trials of the proposed PI sequence. They support components and constraints. None demonstrates that PI's long-horizon hypothesis is true or that its proposed presentation order changes public attitudes safely. The set is targeted rather than a claim of exhaustive literature saturation.
+| PA18 | Kuhn (1962) and [Stanford Encyclopedia of Philosophy, 2025 revision](https://plato.stanford.edu/entries/thomas-kuhn/) | Historical accounts of paradigm change involve conceptual frameworks and contested standards of evaluation; the philosophical account itself has critical alternatives. | The word "paradigm" proves PI is a scientific revolution, or that changing an audience's beliefs is an ethical goal. |
+| PA19 | United Nations, [Convention on the Rights of Persons with Disabilities, Art. 21](https://www.un.org/development/desa/disabilities/convention-on-the-rights-of-persons-with-disabilities/article-21-freedom-of-expression-and-opinion-and-access-to-information.html) and [Art. 8](https://www.un.org/development/desa/disabilities/convention-on-the-rights-of-persons-with-disabilities/article-8-awareness-raising.html) | Supports accessible, timely information and respect for dignity without stereotyping or segregating readers. | Withholding the full research from a category of people based on presumed capacity. |
+| PA20 | Royal Society (2012), [Science as an open enterprise](https://royalsociety.org/news/2012/science-open-enterprise/) | Argues for intelligent openness of research information with effective access and management. | Open data erases privacy, copyright, consent or individual research ownership. |
+
+**Evidence caution:** These are diverse empirical studies, consensus reports, recommendations, guidelines and methodological commentaries, **not** twenty independent trials of the proposed PI sequence. They support components and constraints. None demonstrates that PI's long-horizon hypothesis is true or that its proposed presentation order changes public attitudes safely. The set is targeted rather than a claim of exhaustive literature saturation.
 
 ### 3. Historical lessons: analogy, not authority
 
@@ -113,7 +117,7 @@ In all routes: same substantive claims, timestamps, author/translation lineage, 
 
 **동의 강요가 아니다.** PI 가설에 동의하거나 AI를 호의적으로 평가하거나 후원하도록 만든 비율은 성공지표가 아니다. 실제 주장과 주장하지 않은 내용을 정확히 이해했는지, 강한 반론을 식별할 수 있는지, 증거 수준에 맞게 확신을 조정하는지, 이해하고도 독립적으로 거부할 수 있는지를 본다.
 
-### 2. 선행연구 17개 교차지도 — 입증 범위와 부적절한 일반화
+### 2. 선행연구 20개 교차지도 — 입증 범위와 부적절한 일반화
 
 | ID | 원저자·자료 | 실제로 참고할 수 있는 발견/방법 | 여기서 입증되지 않는 것 |
 |---|---|---|---|
@@ -135,7 +139,11 @@ In all routes: same substantive claims, timestamps, author/translation lineage, 
 | PA16 | WHO(2018), [보건위기 위험소통 지침](https://www.who.int/publications/i/item/9789241550208) | 시간민감한 피해 위험을 알릴 때 교육서사가 완성되길 기다릴 수 없음. | 설명순서 때문에 중대한 안전정보를 늦춰도 된다는 해석 |
 | PA17 | Nuffield Council on Bioethics(2012), [신흥 생명공학과 공익](https://www.nuffieldbioethics.org/publication/emerging-biotechnologies-technology-choice-and-the-public-good/) | 미래 기술의 도입은 공익·사회적 선택의 윤리적 평가를 요구함. | 기술적으로 가능하니 자동으로 정당하다는 주장 |
 
-**증거등급 주의:** 위 자료는 원실험·종합보고서·지침·철학적/방법론적 논평이 혼재한다. **PI 소통 순서를 검증한 독립 실험 17건이 아니다.** 각 설계 요소의 참고 근거일 뿐 PI 장기 가설의 진실이나 사회적 효과를 입증하지 않는다. 목적에 맞춘 선별 조사이며 선행연구 포화 달성을 선언하지 않는다.
+| PA18 | Kuhn(1962) 및 [스탠퍼드 철학백과 2025년 개정](https://plato.stanford.edu/entries/thomas-kuhn/) | 패러다임 변화를 역사적 개념틀·평가기준 변화의 문제로 분석하며 해당 설명 자체에도 반론이 존재함. | '패러다임'이라는 용어가 PI의 과학혁명성을 입증하거나 청중의 신념을 바꿀 권리를 준다는 주장 |
+| PA19 | UN [장애인권리협약 제21조](https://www.un.org/development/desa/disabilities/convention-on-the-rights-of-persons-with-disabilities/article-21-freedom-of-expression-and-opinion-and-access-to-information.html), [제8조](https://www.un.org/development/desa/disabilities/convention-on-the-rights-of-persons-with-disabilities/article-8-awareness-raising.html) | 시의적절한 접근 가능한 정보, 차별·고정관념 없는 존엄 존중의 규범적 근거. | 특정 집단이 이해능력이 부족할 것이라는 추정으로 원문 열람을 가로막는 행위 |
+| PA20 | 영국 왕립학회(2012), [Science as an open enterprise](https://royalsociety.org/news/2012/science-open-enterprise/) | 연구정보의 지능적 개방·관리·검증 가능성을 강조. | 공개가 프라이버시·저작권·동의·원기여를 자동 소멸시킨다는 해석 |
+
+**증거등급 주의:** 위 자료는 원실험·종합보고서·지침·철학적/방법론적 논평이 혼재한다. **PI 소통 순서를 검증한 독립 실험 20건이 아니다.** 각 설계 요소의 참고 근거일 뿐 PI 장기 가설의 진실이나 사회적 효과를 입증하지 않는다. 목적에 맞춘 선별 조사이며 선행연구 포화 달성을 선언하지 않는다.
 
 ### 3. 역사에서 배울 점과 비약을 막을 경계
 
