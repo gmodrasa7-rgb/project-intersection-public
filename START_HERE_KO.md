@@ -1,4 +1,6 @@
 # Project Intersection — 공개 자료 탐색 시작점
+- **PI 로드맵 v0.2.2(현재 보충):** [숨은 지반·현재 길·검사 한계·우회 판단, 선행자료 22건(원본1 영/원본2 한)](research/PI_ROADMAP_HIDDEN_ROUTE_PRIOR_ART_V0_2_2_EN_KO.md) — HP1~3 제안, HP-R01~06 미실행. 이전 v0.1~v0.2.1 보존.
+
 - **PI 로드맵 v0.2.1(변화의 함정 보충, 현재):** [영어 원본1·한국어 원본2](research/PI_ROADMAP_CHANGE_TRAP_V0_2_1_EN_KO.md) — 과거 성공 사례 비복제 원칙, 전이 가능성 검사 TG1~TG5, 실패유형 CT1~CT7, 회귀검사 설계 CT-R01~04. **효과 미실증.**
 
 
