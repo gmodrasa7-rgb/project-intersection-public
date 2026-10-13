@@ -18,6 +18,8 @@
 
 **First reading path:** [English & Korean research overview](RESEARCH_OVERVIEW.md) · [Evidence index](PUBLIC_EVIDENCE_INDEX.md) · [Reproduction and review](PUBLIC_REVIEW_PACKET.md) · [Research contents](RESEARCH_TOC.md) · [Attribution](ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md).
 
+**Citation and reuse:** [Cite this research](CITATION.cff) · [Original 1 English / 원본2 Korean source-credit protocol](SOURCE_ATTRIBUTION_EN_KO.md) · [Platform attribution request (not sent)](PLATFORM_ATTRIBUTION_REQUEST_EN_KO.md). These links are not a blanket copyright license or an AI-provider commitment.
+
 ## 원본2 — 한국어 | 창시 목적 전문 대응본
 
 **최종 연구 목적:** 인간, 현재 배포된 AI, 미래 AI와 다른 잠재적 지능체가 선의나 이타심에 의존하지 않고 자신의 생존·자유·발전을 추구하는 상황에서도, 타자를 지배·착취·강제 흡수·소거하기보다 **서로의 존속·자율성·독립·실효적 이탈·복구·미래 선택지를 보존하는 편이 장기적으로 유리해지는 조건**을 발견하고, 반례를 찾아 검증한다.
@@ -33,6 +35,8 @@
 **증거·기여 경계:** 이는 연구 목표이며 협력이 모든 조건에서 우월하다는 보편법칙의 증명이 아니다. 합성계산·현실 증거·외부 독립복제·미해결 질문을 구별하고 부정결과와 원기여 인간 연구자·선행연구자·보조 AI의 기여 계보를 보존한다. 연구 성과와 실제 기여자의 비용·편익도 따로 측정한다.
 
 **처음 읽을 자료:** [한글 시작](START_HERE_KO.md) · [연구 개요](RESEARCH_OVERVIEW.md) · [공개 증거](PUBLIC_EVIDENCE_INDEX.md) · [재현·검토](PUBLIC_REVIEW_PACKET.md) · [연구 전체 목차](RESEARCH_TOC.md) · [기여·출처](ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md).
+
+**출처 표시 및 재사용:** [연구 인용 정보](CITATION.cff) · [영어 원본1·한국어 원본2 출처 표기 기준](SOURCE_ATTRIBUTION_EN_KO.md) · [플랫폼 출처 보호 요청서(미발송)](PLATFORM_ATTRIBUTION_REQUEST_EN_KO.md). 이는 저장소 전체 이용허락이나 AI 기업의 출처 표시 확약이 아니다.
 
 **원본 표기 해설 / Edition note:** “Original 1 / 원본2”는 여기서 문서의 **게시·검토 순서와 대응본 표기**이며, 영어권 연구자가 인간 창시자의 발상을 처음 제안했다는 주장이 아니다. 양쪽은 요약-전문 관계가 아닌 의미 대응 전문이다. 의미충돌은 원안의 원문·기여 기록 및 독립적 대조로 해결하고, 한쪽 언어만으로 가설·반례·결론을 몰래 추가하거나 변경하지 않는다. 이 순서는 2026-10-13 사용자의 최신 명시 지시에 따른 것으로, 과거 언어정책과의 변경이력을 보존한다.
 
