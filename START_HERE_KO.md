@@ -37,7 +37,7 @@
 - **E008 사전등록 연구의 실행상 결손을 코드로 감사:** [영어 원본1](experiments/e008/EXECUTABILITY_AUDIT_EN.md) · [한국어 원본2](experiments/e008/EXECUTABILITY_AUDIT_KO.md) · [실행코드](experiments/e008/readiness_audit.js) — 16개 사례에서 행동별 입력 미제공, 합성 반례 2개·회귀검사 13개. **정책 우열의 본실험은 미실행**.
 
 <!-- E010_EXPLORATORY_20261012 -->
-- **재현 가능한 반증 실험 E010:** [장기 협력/착취 손익·실행 지연·개체별 자원 최저선 충돌](experiments/e010/README_KO.md) — 108개 합성조건, 검증가능 코드, 실제 CI. 실증 아님.
+- **공개 E010 탐색적 합성모형:** [장기 협력/착취 손익·실행 지연·개체별 자원 최저선 충돌](experiments/e010/README_KO.md) — 2026-10-12 사후 설계, 108개 선정 합성조건 및 코드·CI 검사. **독립검증·현실실증 아님.** [2026-10-06 이전에 같은 E010 번호로 작성한 안전감사 초안 PR #20](https://github.com/gmodrasa7-rgb/project-intersection-public/pull/20)은 별개 미병합·실행전 보류 설계다. 두 연구의 결과·사전등록·검증 상태를 합치지 않는다.
 
 
 <!-- COMMONS_ANTI_CAPTURE_2026_10_12 -->
