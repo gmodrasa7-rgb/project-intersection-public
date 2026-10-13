@@ -78,19 +78,21 @@ A mismatch is a finding to report, not a reason to retune the frozen benchmark. 
 
 ---
 
-## 3. Current evidence ladder / 현재 증거 사다리
+## 3. Independent evidence dimensions / 독립 증거 차원 — 단일 서열 금지
 
-`CONCEPT / HYPOTHESIS`
-< `SYNTHETIC_RESULT`
-< `EXECUTABLE`
-< `PROJECT_RERUN`
-< `THIRD_PARTY_RERUN`
-< `INDEPENDENT_IMPLEMENTATION`
-< `EMPIRICAL_VALIDATION`
+The old one-dimensional "evidence ladder" was misleading: a runnable program, a third-party rerun, a causal field study and the rights of a human contributor address **different questions**, not successive levels of a universal score. / 기존 '증거 사다리'는 실행·재현·현실인과·기여자 권리를 단일 서열로 오해하게 만들었다. 각 차원을 별도 기록한다.
 
-These are not interchangeable. A passing workflow is operational evidence about a repository state, not real-world validation of a scientific claim.
+| Dimension / 구분 | What to verify / 실제 확인할 것 | Never infer / 자동 추정 금지 |
+|---|---|---|
+| **Claim status / 주장 상태** | Scope, hypotheses, counterexamples, `HOLD`, `UNSUPPORTED`, `NARROWED` | A useful question is already true / 중요성이 참의 증거 |
+| **Artifact & execution / 구현·실행** | Specification, executable code, checks, `PROJECT_RERUN`, failed runs | Running code proves causation / 실행이 인과 증명 |
+| **Independence / 검증 계보** | Same-code outside rerun vs clean-room implementation vs independent measurement; who selected tests | Third-party rerun guarantees independent assumptions / 재실행만으로 독립성 확정 |
+| **Empirical applicability / 현실 적용성** | Field measurement, selection, confounders, causal identification, transfer limits | A synthetic result is a real-world rate / 합성 격자를 현실 발생률로 일반화 |
+| **Credit, rights and continuance / 출처·권리·존속** | Originators, upstream licenses, AI assistance, actual cost, access, exit, recovery and compensation evidence | A low scientific score erases contributions, or a high score creates a legal payment obligation / 연구 점수가 기여·금전채무를 자동 결정 |
 
-이 등급은 서로 대체할 수 없다. CI 통과는 저장소 상태에 대한 운영 증거이지 현실세계 과학주장의 검증이 아니다.
+**Apply all axes to each claim.** E007 remains a project-executable synthetic timing study; E008 has no computational policy result; E009 preserves a negative synthetic comparison; the current posthoc E010 analytic study is distinct from the unmerged, construct-mismatched historical E010 safety-inspection draft. None establishes universal voluntary coexistence, independent field validation, or a legal attribution/payment ruling. / 연구의 최상위 목적은 인간·현재 AI·미래 지능체가 선의·자기희생 없이도 자발적 공존을 장기 자기이익으로 선택하는 조건과 반례를 밝히는 것이다. 위 결과는 그 목적의 검증을 돕는 좁은 자료이며 목적을 입증한 것은 아니다.
+
+For canonical scope and exact source links use [status policy](RESEARCH_STATUS_POLICY.md), [evidence ledger](PUBLIC_EVIDENCE_INDEX.md), and [mission-first research map](RESEARCH_TOC.md). / 추가 자료는 별도 요약·원장으로 복제하지 않고 기존 정본을 참조한다.
 
 ---
 
