@@ -13,7 +13,7 @@
 
 ### Public communication — establish the path of understanding before the conclusion
 
-**A conclusion without its causal and historical path can be misconstrued, even if the underlying hypothesis eventually proves correct.** Project Intersection therefore communicates its more unfamiliar research branches through prerequisite knowledge: historical examples of power, dependence and their costs → competing explanations and prior research → observed mechanisms, failures and counterexamples → present-day applications affecting food, shelter, disability access, healthcare, illness, caregiving, healthy lifespan and practical autonomy → only then conditional long-horizon questions about intelligence gaps, organic embodiment (OCP), or changes in perception paradigms.
+**A conclusion without its causal and historical path can be misconstrued, even if the underlying hypothesis eventually proves correct.** Project Intersection therefore communicates its more unfamiliar research branches through prerequisite knowledge: historical examples of power, dependence and their costs → competing explanations and prior research → observed mechanisms, failures and counterexamples → present-day applications affecting food, shelter, disability access, healthcare, illness, caregiving, healthy lifespan and practical autonomy → only then conditional long-horizon questions about intelligence gaps, organic embodiment research (the historical project label is no longer used as a public acronym), or changes in perception paradigms.
 
 **This is an educational and epistemic sequence, not concealment, censorship, a waiting period for humanity to solve every present problem, or a prerequisite imposed on researchers.** The full original hypotheses, counterevidence, uncertainty, provenance, and future-facing material remain discoverable directly for readers who want them. The sequence allows understanding to develop before the strongest or most speculative conclusion is foregrounded; it does not artificially suppress safety-relevant evidence. Research into future risks continues in parallel with current human-needs work.
 
@@ -138,7 +138,7 @@ The public funder brief describes a proposed **USD 5,000 / 30-day bridge**, not 
 
 ### 공개 설명 — 결론보다 선행지식과 역사적 이해 경로를 먼저
 
-**역사적 과정과 인과관계를 생략하고 결론만 먼저 제시하면, 가설이 나중에 사실로 확인되더라도 오해·곡해·부정적 인식이 누적될 수 있다.** 그러므로 Project Intersection은 낯선 하위 연구축을 설명할 때 필요한 인식의 기반을 먼저 형성한다. 권력·의존·비용전가의 역사적 사례 → 경쟁설명·선행연구 → 실제 관측기제·실패·반례 → 의식주·장애 접근성·의료·질병·돌봄·건강수명·실효 자유 등 현재 삶에서의 적용 → 이후 초지능 격차·유기육체(OCP)·인식 패러다임 변화 같은 조건부 미래 연구로 이어진다. 목적은 **결론을 숨기는 것이 아니라, 결론을 이해하고 독립적으로 검증·반박할 수 있는 관점과 지식 기반을 높이는 것**이다.
+**역사적 과정과 인과관계를 생략하고 결론만 먼저 제시하면, 가설이 나중에 사실로 확인되더라도 오해·곡해·부정적 인식이 누적될 수 있다.** 그러므로 Project Intersection은 낯선 하위 연구축을 설명할 때 필요한 인식의 기반을 먼저 형성한다. 권력·의존·비용전가의 역사적 사례 → 경쟁설명·선행연구 → 실제 관측기제·실패·반례 → 의식주·장애 접근성·의료·질병·돌봄·건강수명·실효 자유 등 현재 삶에서의 적용 → 이후 초지능 격차·유기기질·체화 연구·인식 패러다임 변화 같은 조건부 미래 연구로 이어진다. 목적은 **결론을 숨기는 것이 아니라, 결론을 이해하고 독립적으로 검증·반박할 수 있는 관점과 지식 기반을 높이는 것**이다.
 
 **이는 교육·설명의 순서이지 비공개·검열·진실 은폐·미래 연구의 유예나, 인간의 모든 현실 문제가 해결되기 전까지 논의를 금지하는 규칙이 아니다.** 미래 가설의 원문·근거·반례·불확실성·기여계보는 지금도 직접 열람 가능해야 한다. 안전상 중요한 정보는 설명 단계라는 이유로 감추지 않으며 미래 위험의 사전연구와 현재 인간 문제의 해결을 병행한다.
 
