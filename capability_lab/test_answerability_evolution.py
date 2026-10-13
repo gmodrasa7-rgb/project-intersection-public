@@ -57,14 +57,37 @@ class AnswerabilityTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             lab.prediction(docs, "any", -1)
 
-    def test_hard_negative_remains_visible_as_failure(self):
-        # Even with normalized evidence overlap, a plausible topical question can
-        # demand a precise number absent from the source. This is NOT in the
-        # development or comparison split and must not be a promotion input.
+    def test_historical_hard_negative_fixed_outside_selected_benchmark(self):
+        # This historical failure was previously an adversarial negative outside
+        # both selection/dev and public holdout; do NOT count it as independent gain.
         docs, _, _ = lab.load_cases()
         unsupported = ("What exact number of hours did the contributor spend "
                        "on electricity sleep and equipment?")
-        self.assertIsNotNone(lab.prediction(docs, unsupported, 0.30))
+        # Preserve the previous baseline failure for an auditable before/after.
+        self.assertIsNotNone(lab.prediction(docs, unsupported, 0))
+        self.assertIsNone(lab.prediction(docs, unsupported, 0.30))
+
+    def test_numeric_precision_guard_needed_not_sufficient(self):
+        # Topic-level lexical overlap cannot conjure an exact unmentioned number.
+        self.assertFalse(lab.numeric_precision_has_any_evidence(
+            "What exact amount did it cost?", "The cost was not recorded."))
+        self.assertFalse(lab.numeric_precision_has_any_evidence(
+            "How many hours were spent on repairs?", "The repair log has no hours."))
+        self.assertFalse(lab.numeric_precision_has_any_evidence(
+            "정확한 금액은 얼마인가?", "연구자 비용과 후원 상태는 미확인이다."))
+        # A source containing digits passes only this necessary test, not
+        # causal relevance, correct unit, verified provenance or factual truth.
+        self.assertTrue(lab.numeric_precision_has_any_evidence(
+            "What exact amount did it cost?", "2026 audit described the costs."))
+        self.assertTrue(lab.numeric_precision_has_any_evidence(
+            "What are the governance concerns?", "No quantitative measure here."))
+
+    def test_numeric_precision_does_not_block_non_numeric_retrieval(self):
+        docs, _, _ = lab.load_cases()
+        self.assertIsNotNone(
+            lab.prediction(docs, "electricity sleep opportunity cost", 1))
+        self.assertIsNone(
+            lab.prediction(docs, "How many hours were spent on electricity sleep and equipment?", 0.30))
 
     def test_invalid_split_raises(self):
         contents = json.loads(lab.CASES.read_text(encoding="utf-8"))
