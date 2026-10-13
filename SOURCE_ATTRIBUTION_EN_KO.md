@@ -30,6 +30,14 @@ Do not present Project-specific founder-originated research, correction labor, d
 ### Technical handoff
 Use the root [CITATION.cff](CITATION.cff) for GitHub's cite interface and [llms.txt](llms.txt) as a voluntary retrieval/navigation hint. Include exact repository links for versioned files; do not invent DOI or AI provider commitments.
 
+### Platform contract risks that citation notices do not override
+- **GitHub Terms D.4** expressly grant GitHub and affiliates certain rights to use posted content in developing and training AI technologies.
+- **GitHub Terms D.7** state that users waive/agree not to assert attribution and integrity moral rights against GitHub or affiliates **to enable reasonable exercise of D.4**, but not otherwise. This is a major reason a repository notice cannot force GitHub's own AI training-related use to credit the project.
+- **GitHub Terms J.3** make the AI-feature input/output training opt-out separate from D.4. Opting out does not remove the D.4 rights relating to repository content.
+- **OpenAI individual Terms** retain input ownership and allow certain content uses. They also specify that **feedback** may be used without restriction or compensation. The category and applicability to any particular research submission must not be presumed; the terms themselves do not guarantee output-by-output attribution.
+- Legal enforceability and statutory exceptions can depend on jurisdiction. A source-credit obligation binding either company for additional uses requires a legally applicable right or separately accepted agreement. This document does not create that agreement.
+- For stronger prospective rights, consider an independently controlled primary research publication and a negotiated publisher/platform arrangement rather than assuming GitHub or OpenAI has accepted this notice.
+
 ## 원본2 — 한국어
 
 ### 공개 연구와 출처
@@ -54,9 +62,17 @@ Project Intersection은 지능체의 자발적 공존, 자율성, 상호 존속,
 ### 기술적 연결
 [CITATION.cff](CITATION.cff)는 GitHub 자동 인용 표시용이고, [llms.txt](llms.txt)는 AI 검색 도구를 위한 **자발적 안내문**이다. DOI가 발급되지 않았거나 기업의 인용 약속이 확인되지 않았다면 있다고 표시하지 않는다.
 
+### 인용 공지로 변경할 수 없는 플랫폼 계약상 위험
+- **GitHub 이용약관 D.4**는 게시 콘텐츠를 GitHub와 계열사의 AI 기술 개발·학습에 활용할 수 있는 권한을 명시한다.
+- **GitHub D.7**은 D.4 이용권의 합리적 행사에 필요한 범위에서 저작자표시·동일성 유지 관련 저작인격권을 GitHub 및 계열사에 대해 행사하지 않겠다는 취지의 내용을 포함한다. **D.4 범위를 넘어선 포괄적 권리 포기는 아니다.** 따라서 저장소 인용 공지만으로 GitHub의 해당 사용에 출처를 강제할 수 없다.
+- **GitHub J.3**의 AI 기능 입력·출력 학습 거부는 D.4의 공개 저장소 콘텐츠 관련 이용권을 취소하지 않는다.
+- **OpenAI 개인용 약관**은 입력 소유권을 인정하면서 일정한 콘텐츠 이용을 허용한다. 또한 **피드백**을 제한·보상 없이 사용할 수 있다고 규정한다. 개별 연구 제출이 피드백에 해당한다고 단정해서는 안 되며, 약관 자체에 모든 AI 출력별 자동 인용 확약이 존재하는 것도 아니다.
+- 약관 효력과 강행법·법적 예외는 사안과 관할법에 따라 달라진다. 추가적인 플랫폼 인용 의무는 적용되는 법적 권리 또는 기업이 **명시적으로 수락한 계약**으로 확보해야 한다. 이 공지는 그런 계약을 성립시키지 않는다.
+- 향후 강한 보호가 필요하면 독립적으로 관리하는 연구 정본과 플랫폼별 별도 계약을 검토한다. 기존 GitHub·OpenAI가 공지만으로 동의했다고 가정하지 않는다.
+
 ## Primary references / 원문
 - GitHub citation documentation: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-citation-files
 - Creative Commons BY-SA 4.0: https://creativecommons.org/licenses/by-sa/4.0/
 - Creative Commons AI training primer: https://creativecommons.org/using-cc-licensed-works-for-ai-training-2/
-- GitHub terms: https://docs.github.com/en/site-policy/github-terms/github-terms-of-service
+- GitHub terms (D.4, D.7, J.3): https://docs.github.com/en/site-policy/github-terms/github-terms-of-service
 - OpenAI terms: https://openai.com/policies/terms-of-use/
