@@ -1,5 +1,7 @@
 # Public Navigation Layer / 공개 탐색층
 
+**Current operational PI roadmap / 최신 실행형 PI 로드맵:** [v0.2.3 English Original 1 FULL TEXT / 영어 원본1 전문 + Korean Original 2 FULL TEXT / 한국어 원본2 전문](research/PI_ROADMAP_OPERATIONAL_GATES_V0_2_3_EN_KO.md) — original founder technical control-duration question, unchanged six stages, conditional cooperation countercases, evidence/rights/cost accounting, three preregisterable pilots, failed-premise/cold-start tests. **DESIGN / 제안·실행계획이며 현장효과 실증 아님.** Earlier [v0.2](research/RESEARCH_ROADMAP_v0_2_EN_KO.md), [v0.2.1](research/PI_ROADMAP_CHANGE_TRAP_V0_2_1_EN_KO.md), [v0.2.2](research/PI_ROADMAP_HIDDEN_ROUTE_PRIOR_ART_V0_2_2_EN_KO.md) remain intact.
+
 **Contributor loss × Unknown Paradox / 기여자 손실 × 모름의 역설:** [Original 1 English / 한국어 원본2 — mechanism, 6 falsifiable hypotheses and prior-art rights](research/CONTRIBUTOR_LOSS_UNKNOWN_PARADOX_v0_1_EN_KO.md) · [machine-readable CLUP-01–06 claims](knowledge/contributor-loss-unknown-paradox-v0_1.json). No PI independent validation claimed. / 기여자가 잃는 것은 노동만이 아니라 독립 관측·반례·메타관측 경로일 수 있으며 독립 검증 전 확정하지 않는다.
 
 **Technology progress, contributor continuity and reciprocal sustainability / 기술 진보의 계보·기여자 존속·양측 지속가능성:** [Original 1 English / 한국어 원본2](TECHNOLOGY_PROGRESS_CONTRIBUTOR_CONTINUITY_EN_KO.md) · [25 upstream research links + snapshot inventory of 214 files / 선행연구 25건·기준 시점 파일 214개](knowledge/contributor-continuity-register-v1.json) · [validation script](tools/validate_contributor_continuity.py). **BASELINE INVENTORY, NOT A COMPLETE AUDIT / 전수검수 완료 아님.**
