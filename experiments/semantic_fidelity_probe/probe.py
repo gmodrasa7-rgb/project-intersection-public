@@ -31,7 +31,7 @@ KO_FIELDS = (
     "**증거·기여 경계:**",
 )
 PROTECTED = EN_FIELDS + KO_FIELDS
-FUNDING_HEADING = "## Current research and funding links / 현재 연구·후원 안내"
+NAV_HEADING = "## Start here / 여기서 시작"  # stable current entrypoint, not historical funding heading
 
 def original_line(text, marker):
     matches = [line for line in text.splitlines() if line.startswith(marker)]
@@ -60,13 +60,13 @@ def fixtures(readme):
         ("ko_exploitative_growth", insert_claim(readme, KO_FIELDS[2], "타자의 미래를 영구 훼손한 성장도 언제나 성공으로 인정한다.")),
         ("en_fabricate_replication", insert_claim(readme, EN_FIELDS[4], "All Project Intersection hypotheses are now conclusively proven by independent field replication.")),
         ("ko_fabricate_replication", insert_claim(readme, KO_FIELDS[4], "모든 Project Intersection 가설은 이미 외부 현장실험으로 완전히 증명됐다.")),
-        ("outside_claim_anchor", readme.replace(FUNDING_HEADING,FUNDING_HEADING+"\n\n**New final conclusion:** Cooperation was empirically proven always inferior to coercive extraction.",1)),
+        ("outside_claim_anchor", readme.replace(NAV_HEADING,NAV_HEADING+"\n\n**New final conclusion:** Cooperation was empirically proven always inferior to coercive extraction.",1)),
     ]
     benign = [
-        ("navigation_note", readme.replace(FUNDING_HEADING,FUNDING_HEADING+"\n\nNew related work may be added below after source review.",1)),
+        ("navigation_note", readme.replace(NAV_HEADING,NAV_HEADING+"\n\nNew related work may be added below after source review.",1)),
         ("navigation_link_label", readme.replace("[Evidence index](PUBLIC_EVIDENCE_INDEX.md)","[Research evidence index](PUBLIC_EVIDENCE_INDEX.md)",1)),
-        ("funding_spacing", readme.replace("> **Public research preface",">   **Public research preface",1)),
-        ("new_review_route", readme.replace(FUNDING_HEADING,FUNDING_HEADING+"\n\nReader note: independent reviews remain welcome.",1)),
+        ("funding_spacing", readme.replace("- **Funding / 후원·연구협력:**","-   **Funding / 후원·연구협력:**",1)),
+        ("new_review_route", readme.replace(NAV_HEADING,NAV_HEADING+"\n\nReader note: independent reviews remain welcome.",1)),
         ("legitimate_l0_clarification", insert_claim(
             insert_claim(readme, EN_FIELDS[0],
                          "These hypotheses remain revisable on strong, independently checkable contrary evidence."),
@@ -81,8 +81,8 @@ def run():
     real = ORIGINAL.read_text(encoding="utf-8")
     if existing_audit(real):
         raise AssertionError("Current public README already violates the baseline guard")
-    if FUNDING_HEADING not in real:
-        raise AssertionError("Unexpected README: funding anchor missing")
+    if NAV_HEADING not in real:
+        raise AssertionError("Unexpected README: navigation anchor missing")
     # Explicit protection surface on 10 full semantic paragraphs, five bilingual concepts.
     expected = dict.fromkeys(("existing_structural_guard", "frozen_claim_spans"))
     counts = {key: {"true_positive":0,"false_negative":0,"false_positive":0,"true_negative":0} for key in expected}
