@@ -2,7 +2,7 @@
 # 선행연구 원안자·저작권·프로젝트 응용 계보 — 부분검수 시작 원장
 
 **Status / 상태:** PARTIAL SEED — NOT A COMPLETE RIGHTS OR HISTORICAL-PRIORITY AUDIT / 부분 등록. 전수 저작권·최초발안 검증 완료 아님.
-**Snapshot / 기준:** 2026-10-13; 189 file-path inventory entries (Markdown/JSON/JS/Python) on public `main`, 25 seeded work/source rows.
+**Snapshot / 기준:** 2026-10-13; 211 file-path inventory entries (Markdown/JSON/JS/Python) on public `main`, 25 seeded work/source rows.
 **Machine-readable / 기계판독 정본:** [knowledge/prior-art-rights-register-2026-10-13.json](knowledge/prior-art-rights-register-2026-10-13.json)
 **Existing studies / 기존 원장:** [PRIOR_ART_AND_ATTRIBUTION.md](PRIOR_ART_AND_ATTRIBUTION.md) · [PRIOR_ART_SAFETY_GOVERNANCE_CROSSWALK.md](PRIOR_ART_SAFETY_GOVERNANCE_CROSSWALK.md) · [knowledge/SOURCE_REGISTRY.md](knowledge/SOURCE_REGISTRY.md)
 **Project copyright boundary / 우리 이용허락 범위:** [RESEARCH_RIGHTS_SCOPE_EN_KO.md](RESEARCH_RIGHTS_SCOPE_EN_KO.md) (does NOT cover others' materials).
