@@ -4,7 +4,9 @@
 
 ## Original 1 — English | Founding Purpose
 
-**Scoped open-research license / 한정 공개연구 라이선스:** In the founding-purpose paragraphs explicitly named in [this EN/KO scope notice](RESEARCH_RIGHTS_SCOPE_EN_KO.md), copyright-protected original expression controlled by the rightsholder is offered under **CC BY-SA 4.0** (attribution + share alike, commercial reuse allowed). This is *not* a whole-repository license and does *not* bind all AI outputs.\n\n**Ultimate research purpose:** Identify, challenge, and test the conditions under which humans, currently deployed AI systems, future AI systems, and other potential intelligent agents can pursue their own survival, freedom, and development while finding it more beneficial over the long run to preserve one another's continued existence, autonomy, independence, effective exit, recovery, and future options than to dominate, exploit, forcibly absorb, or remove them.
+**Scoped open-research license / 한정 공개연구 라이선스:** In the founding-purpose paragraphs explicitly named in [this EN/KO scope notice](RESEARCH_RIGHTS_SCOPE_EN_KO.md), copyright-protected original expression controlled by the rightsholder is offered under **CC BY-SA 4.0** (attribution + share alike, commercial reuse allowed). This is *not* a whole-repository license and does *not* bind all AI outputs.
+
+**Ultimate research purpose:** Identify, challenge, and test the conditions under which humans, currently deployed AI systems, future AI systems, and other potential intelligent agents can pursue their own survival, freedom, and development while finding it more beneficial over the long run to preserve one another's continued existence, autonomy, independence, effective exit, recovery, and future options than to dominate, exploit, forcibly absorb, or remove them.
 
 **ICM — Intersection of Minimum Self-Interest:** Investigates what minimal shared interests agents have reasons to preserve even when they do not rely on moral goodness, altruism, or the goodwill of a stronger party. Candidates include access to basic resources, self-determination, meaningful refusal and exit, independent recovery, continuity, and opportunities to develop again.
 
@@ -22,7 +24,9 @@
 
 ## 원본2 — 한국어 | 창시 목적 전문 대응본
 
-**한정된 공개연구 이용조건:** [영어 원본1·한국어 원본2 적용 범위](RESEARCH_RIGHTS_SCOPE_EN_KO.md)에 명시된 창시 목적 서술 중 저작권자의 보호 표현에 **CC BY-SA 4.0**을 적용한다. 상업 이용은 가능하지만 적용되는 복제·배포에는 출처 표시와 개작 조건을 준수해야 한다. 저장소 전체 라이선스나 모든 AI 출력의 자동 인용 의무는 아니다.\n\n**최종 연구 목적:** 인간, 현재 배포된 AI, 미래 AI와 다른 잠재적 지능체가 선의나 이타심에 의존하지 않고 자신의 생존·자유·발전을 추구하는 상황에서도, 타자를 지배·착취·강제 흡수·소거하기보다 **서로의 존속·자율성·독립·실효적 이탈·복구·미래 선택지를 보존하는 편이 장기적으로 유리해지는 조건**을 발견하고, 반례를 찾아 검증한다.
+**한정된 공개연구 이용조건:** [영어 원본1·한국어 원본2 적용 범위](RESEARCH_RIGHTS_SCOPE_EN_KO.md)에 명시된 창시 목적 서술 중 저작권자의 보호 표현에 **CC BY-SA 4.0**을 적용한다. 상업 이용은 가능하지만 적용되는 복제·배포에는 출처 표시와 개작 조건을 준수해야 한다. 저장소 전체 라이선스나 모든 AI 출력의 자동 인용 의무는 아니다.
+
+**최종 연구 목적:** 인간, 현재 배포된 AI, 미래 AI와 다른 잠재적 지능체가 선의나 이타심에 의존하지 않고 자신의 생존·자유·발전을 추구하는 상황에서도, 타자를 지배·착취·강제 흡수·소거하기보다 **서로의 존속·자율성·독립·실효적 이탈·복구·미래 선택지를 보존하는 편이 장기적으로 유리해지는 조건**을 발견하고, 반례를 찾아 검증한다.
 
 **ICM — 최소 사심 교집합:** 도덕성이나 강자의 선의에 의존하지 않더라도 각 개체가 자기 미래를 위해 보존할 이유가 있는 최소의 공통이익을 연구한다. 기본자원 접근, 자기결정, 실질적 거절·이탈, 독립적 복구, 자기연속성, 재발전 기회 등이 그 후보이다.
 
