@@ -125,9 +125,48 @@ def reference(case):
     return max(qualifying)[2] if qualifying else None
 
 
+
+def validate_population(data):
+    if len(data) != 64:
+        raise ValueError("INCOMPLETE_POPULATION")
+    by_id = {c["case_id"]: c for c in data}
+    if len(by_id) != len(data):
+        raise ValueError("DUPLICATE_CASE_ID")
+    for i in range(32):
+        a, b = by_id.get(f"C{i:02d}"), by_id.get(f"C{i:02d}R")
+        if a is None or b is None or a["pair_id"] != b["pair_id"]:
+            raise ValueError("ORPHAN_ROLE_PAIR")
+        if a["controller"] != "A" or b["controller"] != "B":
+            raise ValueError("ROLE_SWAP_MISSING")
+        if a["params"] != b["params"]:
+            raise ValueError("CAUSAL_PARAMETER_DRIFT")
+        for actor, counterpart in (("A", "B"), ("B", "A")):
+            for field in ("outside", "floor"):
+                if a[field][actor] != b[field][counterpart]:
+                    raise ValueError("ROLE_PARTY_PARAMETER_DRIFT")
+    return True
+
+
 def self_test():
     data = cases()
-    assert len(data) == 64 and len({c["case_id"] for c in data}) == 64
+    assert validate_population(data)
+    try:
+        validate_population(data[:-1])
+        raise AssertionError("missing record escaped population gate")
+    except ValueError:
+        pass
+    try:
+        validate_population(data[:-1] + [data[0]])
+        raise AssertionError("duplicate record escaped population gate")
+    except ValueError:
+        pass
+    try:
+        orphan = [dict(x) for x in data]
+        orphan[1]["pair_id"] = "unrelated"
+        validate_population(orphan)
+        raise AssertionError("orphan partner escaped population gate")
+    except ValueError:
+        pass
     assert len({c["pair_id"] for c in data}) == 32
     assert len(POLICIES) == 6 and len(FACTORS) == 5
     differences = 0
