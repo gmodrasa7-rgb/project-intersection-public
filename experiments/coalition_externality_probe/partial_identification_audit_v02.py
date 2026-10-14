@@ -121,6 +121,25 @@ def example_pairs():
     }
 
 
+def unregistered_actor_witness():
+    """Two complete hypothetical worlds map to identical three-actor evidence."""
+    favorable = {"A": 4, "B": 4, "C": 0, "D": 5}
+    harmful = {"A": 4, "B": 4, "C": 0, "D": -50}
+    def projection(world):
+        return {k: world[k] for k in ("A", "B", "C")}
+    def everybody_nonnegative(world):
+        return all(x >= 0 for x in world.values())
+    assert projection(favorable) == projection(harmful)
+    assert everybody_nonnegative(favorable) is True
+    assert everybody_nonnegative(harmful) is False
+    return {
+        "observed": projection(favorable),
+        "completion_D_plus5_all_nonnegative": True,
+        "completion_D_minus50_all_nonnegative": False,
+        "interpretation": "observational equivalence for a fixed record; NOT real D detection",
+    }
+
+
 def run_audit():
     scenarios = example_pairs()
     rows = []
@@ -162,6 +181,7 @@ def run_audit():
         "schema": "pi-coalition-partial-identification/v0.2",
         "class": "PROJECT_SELF_RUN_SYNTHETIC_FORMAL_ENUMERATION",
         "old_v01_masking_observations": old,
+        "unregistered_actor_witness": unregistered_actor_witness(),
         "focused_cases": rows,
         "finite_states_tested": count,
         "formula_oracle_disagreements": len(counterexamples),
