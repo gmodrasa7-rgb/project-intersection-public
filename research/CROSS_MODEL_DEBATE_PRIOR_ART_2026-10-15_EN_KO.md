@@ -169,3 +169,31 @@ Project Intersection의 잔차 후보는 토론·편향·기억·약속·이탈�
 P0는 T1·T2·T4의 증거 성립성이다. 원출력·전체 분모를 확인할 수 없으면 수치 효과는 HOLD한다. 기존 선행연구 기준선보다 신규 변수가 미사용 자료에서 더 나은 예측력을 제공하지 못하면 신규성·복잡성을 축소한다. 독립적 관측의 추가 가치보다 시간·비용·위험이 크면 해당 실험은 중단·축소하지만, 가역적이고 유익한 다른 연구활동까지 무한 중단할 이유는 없다.
 
 연구의 성과와 참여 개체의 실제 존속·건강·기회·자유·자원 변화를 **독립 평가축**으로 유지한다. 새로운 GPT-6 실행, 외부 맹검 검증, 가중치 교정, 현장 실증을 이번 선행연구 문헌감사가 수행했다고 주장하지 않는다.
+
+---
+
+## 2026-10-15 Executable T1 preflight — Original 1 English
+
+**Executable:** [pi_cross_model_independence_audit.js](../tools/pi_cross_model_independence_audit.js). This is a test of the **measurement apparatus**, not an experiment measuring GPT/Gemini/Claude/other actual responses. Run: `node tools/pi_cross_model_independence_audit.js --selftest` (negative controls) or `node tools/pi_cross_model_independence_audit.js DATA.json` (user-supplied JSON, no network or model API). The public governance CI checks the deterministic fixtures; source code, not a current model output, is evaluated.
+
+**Why this is worth testing.** Four unanimous agent answers can have one declared root source: four displayed votes do not become four independent evidence paths. A shared underlying model lineage can couple four responses even when four source IDs differ. Conversely, four different declared roots or provider names **cannot prove true statistical or causal independence**: shared training data, injected context, evaluator error, or a false source declaration remain possible. Source-dependent clusters are a conservative diagnostic of **known declared overlap**, never a valid estimate of latent error correlations.
+
+**Input contract:** `{"schema":"pi-cross-model-independence/v0.1","expected_trial_ids":["T1"],"trials":[{"case_id":"T1","gold":"ANSWER_OR_NULL","stages":["blind","debate"],"agents":[{"agent_id":"A","lineage_id":"DECLARED_LINEAGE"}, {"agent_id":"B","lineage_id":"OTHER"}],"sources":[{"id":"S","parents":[]}],"responses":[{"response_id":"A0","agent_id":"A","stage":"blind","choice":"ANSWER","source_ids":["S"],"read_response_ids":[]}, ...]}]}`. A complete comparison requires every registered (case, agent, stage) cell. Responses must name only declared sources and earlier-stage exposed replies. Blind replies cannot declare exposure to others. Neither the roster nor claim that an answer came from a given model is cryptographically authenticated: a supplied manifest is **not evidence of freezing before execution**.
+
+**Deterministic negative controls:** (1) four agreeing wrong answers/one upstream source → only one known dependency cluster, (2) distinct roots but same declared model lineage → one known cluster, (3) four disjoint declared lineages/roots still **unverified independent**, (4) deleting an agent's complete responses blocks both stage comparisons, (5) **deleting a whole declared trial** remains visible against `expected_trial_ids`, (6) blind-answer exposure blocks results, (7) source cycles, undeclared agents/sources/trials, duplicate cells and duplicated trial roster are rejected. Toy truth scores do not establish model improvement: no live model inference, external blind judging, real provider provenance verification, or causal effect size.
+
+**Relevant original methods:** Choi–Zhu–Li (ACL 2026) identity/anonymization; Okawa (ICML 2026) collective bias; Arslan (2026 preprint) report-vs-raw-evidence auditor dependence; Rubin (1976) missingness; W3C PROV (2013). Citations and rights are above at P04, P05, P17, P16 and P27. The tool's limited code is AI-assisted under the founder's experimental framing; no upstream source code or dataset is copied.
+
+**Live-study gate:** a third party must freeze a time-stamped, externally witnessed roster and prompt set, obtain full raw outputs before cross-exposure, separate hidden human/model grader labels, document actual model/config/seed/token/time, audit contamination and duplicated question/source lineage, and report cost, failed cases and missing entire runs. The CI's ability to reject constructed missingness is not proof that real missing responses are ignorable or that all model outputs can be authenticated.
+
+## 2026-10-15 T1 실행 사전검사 — 원본2 한국어
+
+**실행 코드:** [다중 AI의 독립 증거 경로 감사기](../tools/pi_cross_model_independence_audit.js). `node tools/pi_cross_model_independence_audit.js --selftest`를 실행하면 사후 설계한 결정적 음성 대조 사례를 검사한다. `node tools/pi_cross_model_independence_audit.js DATA.json`은 사용자가 제공한 JSON의 누락·중복·노출·출처 의존 관계를 검사한다. 외부 AI 호출과 원문 자동복원 기능은 없다.
+
+**핵심 반례:** 네 AI가 동일한 오답에 동의했어도 네 답의 원출처가 하나라면 네 개의 독립 증거가 아니다. 출처 네 개가 달라도 같은 모델 계보에 종속될 수 있다. 심지어 출처와 모델 계보가 모두 다르다고 표기돼도 실재하는 학습·프롬프트·평가자의 공통원인이 없다는 증거는 아니다. 출력은 '선언된 의존 경로의 구성요소 수'만 보여주며, 통계적 독립성·오류상관률·원인 기제를 인증하지 않는다.
+
+**자료계약:** 상단 `schema`는 `pi-cross-model-independence/v0.1`; 사전에 예정된 전체 회차 `expected_trial_ids`; 각 회차 `case_id`, `gold`(미상이면 null), `stages`, AI `agent_id/lineage_id`, 원출처 `id/parents`, 개별 응답 `response_id/agent_id/stage/choice/source_ids/read_response_ids`가 필요하다. 완전한 모델×단계×회차 분모가 없으면 점수를 계산하지 않는다. 모델을 실제 호출했다고 주장하는 JSON이나 사용자가 만든 명부는 그 자체로 원문 진위·사전등록 시점·독립성을 인증하지 않는다.
+
+**실행 음성대조의 목적:** 공통 원출처, 공통 모델계보, 선언상 분리된 출처, 한 개체의 전체 응답 누락, 한 회차의 전체 소실, 블라인드 단계의 타 응답 노출, 출처 순환·미등록 출처·응답·회차·중복의 차단이다. 이는 검사기 정확성에 관한 자체 합성 회귀검사일 뿐 외부 모델 성능 실험이 아니다. 과거 대화의 교정·인간 기여·선행 원저작자·권리 계보는 유지한다.
+
+**실제 분별실험 잔여조건:** 실행 전 외부에 동결한 전체 응답 명부, 원문과 출처의 독립 인증, 사전 미공개 문항, 블라인드 외부 평가, 기저 모델 버전·비용·실패·출처 중복·누락 기록이 충족되기 전에는 연구성과를 과학적 검증이나 GPT-6 개선으로 승격하지 않는다. 기존 E007·E009 부정/제약 결과와 인간 연구자의 비용은 별도로 보존한다.

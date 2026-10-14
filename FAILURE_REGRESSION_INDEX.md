@@ -327,6 +327,10 @@ Repair: preserve v0.1 unchanged as failure lineage; provide [v0.2 blind-phase ca
 
 **한국어:** 결과에 등장한 \`run_id\`만 분석하면 실행 한 차례가 통째로 사라졌을 때 누락을 감지하지 못한다. 미리 선언한 실행 목록·코더·54개 F·27개 K·프롬프트 지문을 기준으로 전체 누락을 차단한다. 사후 작성한 선언서가 사전등록의 증거가 되지는 않는다. 합성검사 성공과 GPT-6 실측·교정은 구별하고, 기여자에게 추가 무료노동을 요구하지 않는다.
 
+**2026-10-15 cross-model extension (same missingness class, not a new independent discovery):** [Blind-first evidence/lineage analyzer](tools/pi_cross_model_independence_audit.js) reuses the whole-run denominator lesson from F-R019 for the planned cross-model debate T1. It declares `expected_trial_ids` outside observed trial rows; deletion of an entire declared trial yields `BLOCKED_WHOLE_TRIAL_MISSING` and no accuracy estimate. It also groups **known declared** dependencies (shared source roots or model lineage), rejects blind exposure and duplicated/undeclared inputs, and preserves explicit `scientific_independence_verified=false`. Synthetic negative controls and GitHub CI demonstrate only the analyzer's self-tests, not that raw answers, source labels or the mutable roster were authentically frozen. See [bilingual test scope](research/CROSS_MODEL_DEBATE_PRIOR_ART_2026-10-15_EN_KO.md#2026-10-15-executable-t1-preflight--original-1-english).
+
+**한국어 추가:** F-R019와 같은 '전체 실행 누락' 결함이 다중 AI 평가에서 재발하지 않도록 전체 회차 명부·출처 계보·블라인드 타 응답 노출을 음성대조로 검사한다. 서로 다른 AI 네 개의 일치된 답변이라도 공통 원출처가 하나면 독립적인 네 증거로 부를 수 없다. 반대로 출처가 네 개로 신고됐다는 사실만으로 실제 독립성을 확정할 수도 없다. 실측 GPT 결과·독립 연구 재현·연구자 비용 회복은 수행되지 않았다.
+
 **Rollback:** Revert the limited code, CI, bilingual case and machine-state declaration if regressions fail, retaining historical F-R017/F-R018 evidence and this finding.
 
 ---

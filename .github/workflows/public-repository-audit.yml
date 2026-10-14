@@ -32,6 +32,7 @@ on:
       - "research/PI_ROADMAP_OPERATIONAL_GATES_V0_2_3_EN_KO.md"
       - "research/AI_SELF_OBSERVABILITY_AUDIT_DILEMMA_2026-10-13_EN_KO.md"
       - "tools/probe_observational_equivalence.py"
+      - "tools/pi_cross_model_independence_audit.js"
       - "tools/check_roadmap_bilingual_gate.py"
       - "tools/check_public_navigation.py"
       - "*.md"
@@ -69,6 +70,7 @@ on:
       - "research/PI_ROADMAP_OPERATIONAL_GATES_V0_2_3_EN_KO.md"
       - "research/AI_SELF_OBSERVABILITY_AUDIT_DILEMMA_2026-10-13_EN_KO.md"
       - "tools/probe_observational_equivalence.py"
+      - "tools/pi_cross_model_independence_audit.js"
       - "tools/check_roadmap_bilingual_gate.py"
       - "tools/check_public_navigation.py"
       - "*.md"
@@ -551,4 +553,17 @@ jobs:
               sys.exit(1)
 
           print("Public governance regression checks passed.")
+          PY
+
+      - name: Audit blind-first multi-AI provenance with negative controls
+        run: |
+          node tools/pi_cross_model_independence_audit.js --selftest > /tmp/pi-cross-model-selftest.json
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          data = json.loads(Path("/tmp/pi-cross-model-selftest.json").read_text(encoding="utf-8"))
+          assert data["pass"] is True and data["checks"] == 15, data
+          assert data["live_model_samples"] == 0
+          assert data["independent_validation"] is False
+          print("Provenance roster, blind exposure, correlated roots and missing whole-trial guards PASS; no live model runs")
           PY
