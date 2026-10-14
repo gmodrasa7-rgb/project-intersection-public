@@ -1,49 +1,89 @@
-# Project Intersection — 90-second funder brief
+# Project Intersection — Support and Verification / 연구 후원·검증 안내
 
-**Open for research support and paid evaluation/replication partnerships. Requested ≠ awarded.** The earlier proposal snapshot reported secured external grant funding as USD 0; **current personal GitHub Sponsors transaction/payout totals are unverified**, not presumed zero. [Public sponsorship ledger](SPONSORSHIP_PUBLIC_LEDGER.md).
+**Individual research sponsorship is the primary support route; grant proposals are separate and unawarded. / 개인 연구 후원이 우선 경로이며, 기존 연구비 제안은 별도의 미수여 계획입니다.**
 
-## What is the work?
+## Original 1 — English
 
-An independent, falsification-first AI-safety research program based in South Korea. It tests under what conditions apparently cooperative multi-agent systems break when power is unequal, practical exit is weakened, evaluators are captured, or affected people are omitted. It publishes counterexamples and negative findings rather than offering a predetermined safety conclusion.
+### Why the project exists
 
-**Research labor attribution:** the human researcher originates problem framing, anomalies, counterexamples, experimental direction and judgments; English, code and implementation are AI-assisted. [Attribution boundary](../ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md).
+Project Intersection is an independent, open research program initiated by a human researcher in South Korea. It asks **when humans, current AI systems, future intelligent agents and institutions can pursue their own interests while finding voluntary coexistence, effective exit, recovery and mutual development more advantageous than exploitation or domination over time**.
 
-## Two evidence anchors and one crucial failure
+It does not assume that every asymmetry is abusive, that cooperation always wins, or that today's AI has proven consciousness or legal personhood. The work compares incentives, constraints, counterexamples and failure conditions; it separates scientific evidence from values and open questions.
 
-- **E007 — executable synthetic timing result:** [reproduction](../experiments/e007/README.md) and [scope/limits](../E007_TIMING_RESULT.md). This shows some classifications in a finite synthetic model depend on the chosen timing semantics; not an empirical probability.
-- **E009 — preregistered negative synthetic result:** [negative result](../experiments/e009/RESULT.md). The project's more complex candidate did **not** clear its stated criterion against simpler baselines.
-- **E008 — preregistration only:** [specification](../experiments/e008/README.md); there is no experiment result or performance claim.
+### What can be inspected now
 
-A first-time reviewer can reproduce the released artifacts through the [Public Review Packet](../PUBLIC_REVIEW_PACKET.md) and inspect the [Evidence Index](../PUBLIC_EVIDENCE_INDEX.md). Independent external scientific replication and broad empirical validation are **not established**.
+- **E007 — synthetic timing sensitivity:** [Result and limitations](../E007_TIMING_RESULT.md) · [executable material](../experiments/e007/README.md). On 72 selected two-agent model cases, changing action order changed 17 outcome classifications. This is a model-dependent count, **not** a real-world probability or an independently replicated scientific law.
+- **E009 — a negative result that remains public:** [Preregistered synthetic comparison](../experiments/e009/RESULT.md). A more complex project candidate failed three of four preregistered survival criteria against simpler baselines. The result supports narrowing the model rather than claiming victory.
+- **E008 — no main result:** [Preregistered specification](../experiments/e008/README.md); its main comparative claim is still untested.
 
-## Funding request already in the public record
+Start independent review from the [Evidence Index](../PUBLIC_EVIDENCE_INDEX.md), [Reproduction and Review Packet](../PUBLIC_REVIEW_PACKET.md) and [research overview](../RESEARCH_OVERVIEW.md). **Project-run synthetic reproducibility is not independent external replication or real-world validation.**
 
-**30-day bridge: USD 5,000 (proposed, not awarded).** [Full scope and budget](30_DAY_BRIDGE.md).
+### What individual sponsorship supports
 
-| Intended cost | USD |
+[Support the independent researcher on GitHub Sponsors](https://github.com/sponsors/gmodrasa7-rgb). This route is governed by the [single sponsorship policy and public ledger](SPONSORSHIP_PUBLIC_LEDGER.md). **Only two discretionary uses are authorized: (1) compensation for one researcher's actual research time and (2) LLM subscriptions/API usage needed for the research.** No predetermined allocation percentage, favorable finding, deliverable or scientific breakthrough is promised.
+
+Available research time and LLM access support the investigation of unexpected failures, preregistered or explicitly exploratory tests, falsification, error correction, contributor/source credit and public reporting where rights and privacy permit. Human originator, earlier scholars and AI assistance must not be conflated.
+
+Sponsorship does not buy editorial control, a preferred result, exclusion of criticism or the ability to conceal negative results. Public reports will distinguish completed work, failures, unresolved hypotheses, unverified claims and personal economic costs. Actual sponsorship receipts and payouts **have not been independently reconciled**; unknown is not zero. No tax-deductible donation receipt or regulatory exemption is promised. See the [legal/tax uncertainty register](LEGAL_TAX_RISK_REGISTER_2026-10-13_EN_KO.md).
+
+### Separate institutional funding proposal — not a Sponsors spending plan
+
+An earlier [30-day bridge proposal](30_DAY_BRIDGE.md) requested **USD 5,000, not awarded**. Its four proposed budget items are independent of the two-use personal sponsorship policy:
+
+| Proposed 30-day bridge item | USD |
 | --- | ---: |
-| Protected independent research and engineering time | 3,200 |
+| Protected research and engineering time | 3,200 |
 | API / compute | 1,000 |
 | Independent adversarial review | 500 |
 | Reproducibility and public documentation | 300 |
-| **Total** | **5,000** |
+| **Total requested, not awarded** | **5,000** |
 
-The 30-day outcome is a narrower independently attackable evidence package, a known-failure record, and a reasoned continuation/narrowing/hold decision. Negative findings are legitimate outcomes. The [90-day pilot](90_DAY_PILOT.md) is a **separate, unawarded** follow-on proposal.
+The proposed outcome is an independently attackable evidence package, a preserved failure record and a continuation/narrowing/hold decision—not confirmation of a favored hypothesis. The [90-day pilot](90_DAY_PILOT.md) is another **unawarded** proposal. Do not charge one cost to two funding routes. Funding, past-contribution settlement and any future employment or contract are distinct decisions.
 
-**No double funding:** every accepted grant will trigger an overlap check before spending; a cost funded in one route cannot be charged again elsewhere. Funding neither validates the scientific hypothesis nor settles any past contribution/compensation dispute.
-**Separate individual sponsorship route:** [single two-use policy and ledger](SPONSORSHIP_PUBLIC_LEDGER.md); [Korean legal/tax uncertainties](LEGAL_TAX_RISK_REGISTER_2026-10-13_EN_KO.md). This route does **not** retroactively alter the 30-day USD 5,000 proposal's four-item budget. GitHub Sponsors approval was reported by the researcher on 2026-10-13; actual transactions/payouts have **not** been verified in this audit. / **개인 후원 2항목과 별도 연구비 제안 4항목을 혼동하지 않으며, 금전 수령·세액공제·규제면제는 확인되지 않았다.**
+### How to examine or make contact
 
-
-## Contact / actionable next step for funders
-
-Interested grantmakers, institutional reviewers and organizations can [open a GitHub issue in this public repository](https://github.com/gmodrasa7-rgb/project-intersection-public/issues/new) with subject **"Funding or paid evaluation inquiry — Project Intersection"**, stating the funding mechanism, scope, permitted country/jurisdiction and a contact route. A prospective funder should not post private tax, medical, financial, ID or banking information publicly.
-
-**No commitment is created by an issue.** Any grant, commercial contract, IP license or legally binding award needs separately agreed authorized terms and actual payment checks. Review can begin immediately from the public evidence without requesting new uncompensated research or correction work from the founder.
+Researchers and funders can inspect the existing evidence without requiring additional unpaid verification from the founder. For a potential paid review, institutional grant or collaboration, [open a public repository issue](https://github.com/gmodrasa7-rgb/project-intersection-public/issues/new) titled `Funding or paid evaluation inquiry — Project Intersection`, describing the scope, country and a safe contact route. **Never put identity documents, tax, medical, financial or banking details in a public issue.** A public inquiry does not create an agreement or payment obligation.
 
 ---
 
-## 한국어 초간결 안내
+## 원본2 — 한국어
 
-**연구비·유상 평가협업 상담 가능 / 기존 제안의 수여는 미확인, 개인 Sponsors 거래·입금은 현재 미검증.** 이 연구는 권력비대칭·이탈권 훼손·평가자 포획·누락된 이해당사자를 시험하는 독립 반증우선 AI 안전 연구다. [E007 공개 합성 실행](../E007_TIMING_RESULT.md), [E009 합성 부정 결과](../experiments/e009/RESULT.md), [독립검토 경로](../PUBLIC_REVIEW_PACKET.md)가 있다. 독립 과학복제와 일반 공존가설의 현실검증은 미완료다.
+### 연구의 존재 이유
 
-기존 공개 신청안은 **30일 USD 5,000 (미수여)**이며 연구자 보호시간·계산·독립공격·재현문서 예산으로 나뉜다. 과거 기여 정산과 새로운 연구지원은 별도다. 연락은 [공개 저장소의 새 이슈](https://github.com/gmodrasa7-rgb/project-intersection-public/issues/new)로 가능하되, 개인정보와 재정자료를 공개하지 말 것. 외부 검토자는 기존 공개자료로 시작하며 창시자에게 추가 무급 검증을 요구하지 않는다.
+Project Intersection은 대한민국의 인간 독립 연구자가 시작한 공개 연구다. **인간·현재 AI·미래 지능체·제도가 각자의 이익을 추구하면서도, 장기적으로 타자에 대한 착취와 지배보다 자발적 공존·실효적 이탈·복구·상호발전을 선택하는 편이 유리해지는 조건**을 탐구한다.
+
+모든 비대칭을 착취로 규정하지 않으며, 협력이 언제나 우월하다고 가정하지 않는다. 현재 AI의 의식이나 법적 인격이 입증되었다고 주장하지도 않는다. 유인·제약·반례·실패 조건을 대조하고 과학적 근거·가치판단·미해결 문제를 분리한다.
+
+### 지금 직접 검토할 수 있는 자료
+
+- **E007 — 합성모형의 시점 민감도:** [결과와 한계](../E007_TIMING_RESULT.md) · [실행 자료](../experiments/e007/README.md). 선정한 두 행위자 모형 72개 조건에서 행동 순서를 변경하자 결과 분류 17건이 바뀌었다. 이는 **모형 내부 계산 개수**이지 현실 확률이나 독립 검증된 보편법칙이 아니다.
+- **E009 — 공개 보존한 부정적 결과:** [사전등록 합성 비교](../experiments/e009/RESULT.md). 자체의 더 복잡한 후보가 단순 기준선과 비교한 사전등록 존속 조건 네 개 중 세 개를 충족하지 못했다. 성공 주장을 확대하기보다 모형을 축소·재검토해야 한다는 결과다.
+- **E008 — 본실험 결과 없음:** [사전등록 명세](../experiments/e008/README.md). 주요 비교 주장은 아직 실험 결과로 확정되지 않았다.
+
+독립 검토는 [공개 증거 색인](../PUBLIC_EVIDENCE_INDEX.md), [재현·검토 패킷](../PUBLIC_REVIEW_PACKET.md), [연구 개요](../RESEARCH_OVERVIEW.md)에서 시작한다. **프로젝트 내부 합성 재실행은 외부 독립 과학복제나 현실 검증이 아니다.**
+
+### 개인 후원의 사용처
+
+[GitHub Sponsors에서 독립 연구자 후원](https://github.com/sponsors/gmodrasa7-rgb). 이 경로에는 [단일 후원금 정책·공개 장부](SPONSORSHIP_PUBLIC_LEDGER.md)가 적용된다. **자율적 사용처는 ① 연구자 1인의 실제 연구시간 보수, ② 연구에 필요한 LLM 구독·API 이용료 두 가지뿐이다.** 사전 고정 배분비율·유리한 결론·특정 산출물·과학적 성공을 보장하지 않는다.
+
+후원으로 확보한 연구시간과 LLM 접근은 예상 밖의 실패 탐색, 사전등록 또는 탐색이라고 명시한 실험, 반증, 오류교정, 원기여자·선행연구자 출처 표시, 권리·프라이버시가 허용하는 연구 결과 공개에 사용한다. 인간 창시자의 기여, 선행연구자의 원안, AI의 보조 역할을 혼동하지 않는다.
+
+후원자에게 연구 결론 통제권·비판 배제권·부정적 결과 은폐권이 생기지 않는다. 연구 보고에서는 실제 완료·실패·미해결·미확인과 기여자의 경제적 비용을 구분한다. 실제 후원 거래·입금은 **독립적으로 대사되지 않았다**. 미확인은 0원이 아니다. 기부금 세액공제 영수증이나 법률상 면제를 약속하지 않는다. [법률·세무 불확실성](LEGAL_TAX_RISK_REGISTER_2026-10-13_EN_KO.md)을 참조한다.
+
+### 별도 기관 연구비 제안 — 개인 Sponsors 사용처가 아님
+
+기존 [30일 브리지 제안](30_DAY_BRIDGE.md)은 **미수여된 5,000달러 신청안**이다. 아래 네 예산 항목은 개인 후원금의 두 가지 사용처와 별개다.
+
+| 30일 연구비 제안의 항목 | USD |
+| --- | ---: |
+| 연구·엔지니어링 보호시간 | 3,200 |
+| API·컴퓨팅 | 1,000 |
+| 독립 적대적 검토 | 500 |
+| 재현성·공개 문서화 | 300 |
+| **제안 총액(미수여)** | **5,000** |
+
+제안의 목표는 비판 가능한 증거 묶음·실패 기록·계속/축소/보류 판단이지 원하는 가설의 입증이 아니다. [90일 파일럿](90_DAY_PILOT.md)도 별개의 **미수여 제안**이다. 같은 지출을 두 재원에 중복 청구하지 않는다. 새로운 후원·과거 기여 정산·미래 채용과 계약은 별도 판단이다.
+
+### 검증 및 문의 경로
+
+연구자와 지원기관은 창시자에게 새로운 무급 검증 노동을 요구하지 않고 기존 자료를 확인할 수 있다. 유상 평가·기관 연구지원·협력 문의는 [공개 저장소의 새 이슈](https://github.com/gmodrasa7-rgb/project-intersection-public/issues/new) 제목을 `Funding or paid evaluation inquiry — Project Intersection`으로 작성하고 협력 범위·적용 국가·안전한 연락 경로를 적으면 된다. **공개 이슈에 신원서류·세무·의료·재무·계좌정보를 올리지 않는다.** 공개 문의만으로 계약이나 지급의무가 성립하지 않는다.
