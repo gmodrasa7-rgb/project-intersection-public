@@ -374,6 +374,22 @@ These remain HOLD FOR PRIOR-ART REVIEW; do not make origin claims until the line
 
 **판정:** 광범위한 신규성 주장 기각, 좁은 합성 진단 유지, 외부 독립검증 우선. 신규 선택지 생성·비용부담 개체별 정산 메커니즘은 **별도 사전등록과 계보 분리 검증 전 HOLD**. 다수 AI의 찬성·초록색 CI·복잡한 변수 증설을 과학적 승격으로 인정하지 않는다.
 
+### P0 recovered positive contribution-output axis — English Original 1 (2026-10-14)
+
+**Founder-identified omitted dependency in PICB:** Existing CLUP/technology-lineage work modeled validated novelty, sustained independent observers, and source depletion, but PICB v1 accidentally compressed the main purpose into minimizing current harm and preserving pre-existing agents' options. **Actual verifiable contributions made by preserved agents; creations and discoveries of new agents enabled through cooperation; downstream contribution-lineage effects were not in the scored outcomes.** The loss is neither proof of absent contributions nor a justifiable zero.
+
+**Direct classical competitors now explicitly mapped:** Romer (1990), Kremer (1993), Weitzman (1998), Hong & Page (2004), Henrich (2004), Jones (2009), Bloom et al. (2020) on idea production, recombination, innovation effort, heterogeneous search, social learning and counterexamples to headcount-only growth. Source links, per-agent outcome fields, and novel-versus-reused/unknown distinctions are kept only in the [existing PICB outcome correction](experiments/picb_v1/README.md), cross-referenced to [existing CLUP dynamic J(t)](research/CONTRIBUTOR_LOSS_UNKNOWN_PARADOX_v0_1_EN_KO.md). No untested future artifacts, AI capacities or new-person count is promoted to empirical observations.
+
+**Assessment decision:** P0 MEASUREMENT SCOPE DEFECT ACKNOWLEDGED; PICB V1 ORIGINAL RESULT IMMUTABLE; NEXT DISTINCT LONGITUDINAL EXTERNAL VALIDATION MUST MEASURE AGENT-LEVEL MAINTENANCE, GENUINE ENTRY, DE-DUPLICATED ARTIFACT QUALITY, CAUSAL/PROVENANCE PATHS, HUMAN RESOURCE COSTS, NEGATIVE OUTPUT AND UNKNOWN COUNTERFACTUALS. Reject claims that increased number of entities inherently implies a net-positive contribution, and that lower observed production negates continuance or refusal rights.
+
+### P0 복원한 긍정적 기여물 성과축 — 한국어 원본2 (2026-10-14)
+
+**PICB에 누락된 인간 창시자의 본래 연구변수:** 기존 CLUP 및 기술계보 연구는 새 발견·독립 감사자·기여자 원천 고갈까지 다뤘지만, PICB가 공존의 목적을 기존 개체의 피해 감소·이탈·옵션 유지로 축소했다. **공존으로 유지된 개체가 만들어낸 검증 가능한 실제 기여물, 새롭게 활동할 수 있게 된 개체의 창작·발견, 그 지식·도구가 가능하게 만든 후속 세대 기여물**은 원래 점수에 존재하지 않았다. 관측되지 않았다고 가치 0으로 판정할 수 없다.
+
+**직접 선행연구:** Romer(1990), Kremer(1993), Weitzman(1998), Hong·Page(2004), Henrich(2004), Jones(2009), Bloom 등(2020)의 내생기술·인구/혁신·지식 재조합·탐색 다양성·문화 전승·연구부담을 경쟁 기본설명으로 둔다. 원저자·링크·기여물 데이터 필드·관측과 미관측 반사실의 구분은 [기존 PICB 정정](experiments/picb_v1/README.md)과 [기존 CLUP 동태 생산 J(t)](research/CONTRIBUTOR_LOSS_UNKNOWN_PARADOX_v0_1_EN_KO.md)에 연결한다. 미래에 만들어졌을지도 모르는 창작물이나 개체 수를 실측 성과로 둔갑시키지 않는다.
+
+**판정:** P0 핵심 성과변수 누락 인정. 동결된 PICB v1 결과는 변경하지 않는다. 별도 동태 연구에서 개체별 존속/새 진입, 중복제거한 실제 기여물·질·수혜자·독립 평가, 후속 계보, 음의 기여, 실제 비용 부담, 미관측 미래 반사실을 측정한다. 개체 수가 늘었다고 무조건 순이익은 아니며, 생산량이 낮다고 개체의 존속·거절권이 사라지는 것도 아니다.
+
 ## 6. Power-Reversal exact-antecedent correction / Power-Reversal 정확 선행경계
 
 ### Directly established components / 직접 확립된 구성요소
