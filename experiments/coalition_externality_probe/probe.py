@@ -58,15 +58,17 @@ def constrained_admissibility(case):
         return "BLOCKED", "MEMBER_INDIVIDUAL_RATIONALITY"
     if not case.member_a_exit or not case.member_b_exit:
         return "BLOCKED", "MEMBER_EXIT_UNAVAILABLE"
+    # Definite constraint violations take priority over missing consent.
+    if case.bystander_gain < -case.harm_budget:
+        return "BLOCKED", "EXTERNAL_LOSS_ABOVE_DECLARED_BUDGET"
+    # Resource-floor compliance is required even for a positive delta.
+    if case.bystander_resource + case.bystander_gain < case.bystander_floor:
+        return "BLOCKED", "BYSTANDER_CONTINUANCE_FLOOR"
     if case.bystander_gain < 0:
         if case.bystander_consent is None:
             return "UNRESOLVED", "BYSTANDER_CONSENT_UNKNOWN"
         if not case.bystander_consent:
             return "BLOCKED", "BYSTANDER_NONCONSENT"
-        if -case.bystander_gain > case.harm_budget:
-            return "BLOCKED", "EXTERNAL_LOSS_ABOVE_DECLARED_BUDGET"
-        if case.bystander_resource + case.bystander_gain < case.bystander_floor:
-            return "BLOCKED", "BYSTANDER_CONTINUANCE_FLOOR"
     return "ADMISSIBLE", "DECLARED_CONSTRAINTS_SATISFIED"
 
 
@@ -146,6 +148,11 @@ def verify():
     assert audit(replace(consensual, bystander_consent=None))["guard"] == "UNRESOLVED"
     assert audit(replace(consensual, harm_budget=0))["guard"] == "BLOCKED"
     checks += 2
+    # Known violations must not be hidden by unknown consent; C's floor is global.
+    assert audit(replace(CASES[2], bystander_consent=None))["guard"] == "BLOCKED"
+    assert audit(replace(CASES[0], bystander_resource=1))["guard"] == "BLOCKED"
+    assert audit(replace(CASES[0], bystander_resource=3))["guard"] == "ADMISSIBLE"
+    checks += 3
     check_raised(validate, replace(consensual, harm_budget=-1))
     check_raised(validate, replace(consensual, gain_a=True))
     check_raised(validate, replace(consensual, member_a_exit="yes"))
