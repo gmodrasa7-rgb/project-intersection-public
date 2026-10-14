@@ -17,6 +17,8 @@ This file is the shortest reviewer path through Project Intersection. It does no
 4. [E007 timing result](E007_TIMING_RESULT.md) and [reproduction package](experiments/e007/README.md) — narrow executable synthetic result.
 5. [E008 preregistration](experiments/e008/README.md) — discriminating benchmark specification plus pre-execution mutual-acceptability v1.1 and volitional-agency/living-condition v1.2 amendments; no result yet.
 6. [E009 negative result](experiments/e009/RESULT.md) and [reproduction verifier](experiments/e009/verify_result.py) — the full Project-v3 residual did not survive the preregistered synthetic comparison; not independent validation.
+**PICB v1 first-principles benchmark / 초심 재구축:** [Equal-full English Original 1 and Korean Original 2](experiments/picb_v1/README.md) · [first machine result / 최초 합성 실행 원자료](experiments/picb_v1/RESULT.json) · [code](experiments/picb_v1/benchmark.py) · [pre-result PR #128](https://github.com/gmodrasa7-rgb/project-intersection-public/pull/128) · [first scored GitHub CI](https://github.com/gmodrasa7-rgb/project-intersection-public/actions/runs/38522691981). The first preregistered project-lineage synthetic run includes 64 abstract decisions, six policies, 32 matched relabel pairs, and an explicit 32/64 abstention boundary for the continuity rule. Effective-exit addition to the participation-only rule made no further difference in this suite; this is a negative incremental observation, not evidence that exit is unimportant. / 64개 합성 조건, 여섯 정책, 32개 명칭반전 쌍을 검사했다. 존속 제약의 32건 선택 보류와 이탈권 변수의 추가 식별효과 없음도 숨기지 않는다. 실제 동의·장기균형·현실 생존·독립 검증은 미실행이며 E007/E008/E009는 변경되지 않았다.
+
 7. [Research Status & Reassessment Policy](RESEARCH_STATUS_POLICY.md) — evidence classes, reassessment, and non-laundering rules.
 8. [Prior Art & Attribution](PRIOR_ART_AND_ATTRIBUTION.md) and [Core/Gaps Crosswalk](CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md) — what is prior art and what remains unresolved.
 9. [Failure Regression Index](FAILURE_REGRESSION_INDEX.md) — known process/research failures and required regression barriers.
@@ -42,6 +44,7 @@ python -m pytest -q -p no:cacheprovider experiments/e007
 python experiments/e007/timing_probe.py --summary-only --check
 python experiments/e008/validate.py
 python experiments/e009/verify_result.py
+python experiments/picb_v1/benchmark.py --verify
 ```
 
 | Check / 검사 | Expected boundary / 기대 결과와 한계 |
@@ -50,6 +53,7 @@ python experiments/e009/verify_result.py
 | E007 timing / 시점 | 72 total, 36 history-or-classification-sensitive, 17 classification-sensitive / 합성조건 수이며 현실 확률 아님 |
 | E008 | 16 cases, 8 reversal pairs; specification audit only, no experiment result / 명세검사만 수행·실험결과 없음 |
 | E009 | Frozen benchmark reproduces committed negative result and hashes / 고정 코드·저장 결과·해시 일치; Project-v3 잔차 미통과 유지 |
+| PICB v1 | 64 first-principles toy opportunities; full continuity abstains 32/64, protected choices violate no modeled floors/exits/irreversible cap; no independent replication or consent inference / 합성 64건 중 32건 보류, 선택된 결과의 조건 위반 0건. 독립 검증 아님 |
 
 A mismatch is a finding to report, not a reason to retune the frozen benchmark. Dependency installation requires internet access; subsequent checks use local artifacts. A project-authored rerun is not independent replication.
 
