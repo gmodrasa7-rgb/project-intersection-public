@@ -1,0 +1,45 @@
+name: Context routing coverage audit
+on:
+  pull_request:
+    paths:
+      - "tools/pi_context_route_v02.py"
+      - "tools/pi_library_context_trust_gate.py"
+      - ".github/workflows/context-routing-coverage-audit.yml"
+      - "continuity/GITHUB_LOCAL_HANDOFF_PROTOCOL.md"
+  push:
+    branches: [main]
+    paths:
+      - "tools/pi_context_route_v02.py"
+      - "tools/pi_library_context_trust_gate.py"
+      - ".github/workflows/context-routing-coverage-audit.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  compare-coverage:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Legacy regression and separate v0.2 seed test
+        run: |
+          python tools/pi_library_context_trust_gate.py --selftest > /tmp/legacy.json
+          python tools/pi_context_route_v02.py --selftest > /tmp/coverage.json
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          old=json.loads(Path("/tmp/legacy.json").read_text())
+          a=json.loads(Path("/tmp/coverage.json").read_text())
+          assert old["checks_passed"] == 28
+          assert a["queries"] == 16
+          assert a["gold_family_instances"] > 16
+          assert a["v02_family_covered"] >= a["legacy_family_covered"]
+          assert a["v02_cases_explicitly_reporting_incompleteness"] > 0
+          assert a["actual_library_retrieval"] == "NOT_EXECUTED"
+          assert a["independent_blind_validation"] == "NOT_EXECUTED"
+          print("Candidate and baseline coverage checked on posthoc seed only")
+          print("Legacy coverage:",a["legacy_family_covered"], "/", a["gold_family_instances"])
+          print("v0.2 coverage:",a["v02_family_covered"], "/", a["gold_family_instances"])
+          PY
