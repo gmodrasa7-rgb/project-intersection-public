@@ -12,6 +12,18 @@
 
 **존속–기여 경로 가설(2026-10-14, 인간 사례 자료):** [영어 원본1·한국어 원본2: 연구 정의, 직접/간접 기여, 위기 탐지·영감·나비효과와 일반 시민 OC01–OC19·생존/배제 HC01–HC15의 원출처·반례](CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md) · [동일 사례의 지식그래프 탐색](knowledge/graph.json) · [PICB v1이 실제 기여를 측정하지 않았다는 경계](experiments/picb_v1/README.md) · [증거등급과 검증 한계](PUBLIC_EVIDENCE_INDEX.md). 19+15는 **목적선정 사례 행**으로 독립 인과실험 34건이나 성공 34건이 아니다. 주관적 영감·맞지만 무시된 경고와 실제로 예방·생산된 편익을 혼동하지 않고, 미관측 미래 기여는 UNKNOWN으로 둔다. 사람의 기본 존속·돌봄·거절권은 기여 실적과 무관하다.
 
+## Three logical levels / 공개 자료실 3단계
+
+| Level / 레벨 | Purpose (Original 1 — English) / 목적 (원본2 — 한국어) | Documents and directories / 진입 자료 |
+| --- | --- | --- |
+| **1 — Discovery / 탐색·입장** | Find the founding purpose and a reliable starting route. / 최상위 연구 목적과 처음 읽을 경로 확인 | [README](README.md) · [Korean guide / 한국어 안내](START_HERE_KO.md) · [AI review](AI_REVIEW_START_HERE.md) · [llms.txt](llms.txt) · [AI index](AI_DISCOVERY_INDEX.json) |
+| **2 — Interpretation & audit / 이해·검증** | Distinguish hypothesis, execution, evidence, failure, rights, and review criteria. / 가설·실행·증거·실패·권리·검토기준 분리 | [Overview](RESEARCH_OVERVIEW.md) · [Contents](RESEARCH_TOC.md) · [Evidence](PUBLIC_EVIDENCE_INDEX.md) · [Review packet](PUBLIC_REVIEW_PACKET.md) · [Status](RESEARCH_STATUS_POLICY.md) · [Failures](FAILURE_REGRESSION_INDEX.md) · [Attribution](ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md) · [Contribution](CONTRIBUTING.md) |
+| **3 — Artifacts & operations / 실험·확장·운영** | Inspect original work, reproducible code, prior art, cases, and maintenance records. / 원자료·코드·선행연구·사례·운영기록 직접 확인 | [Experiments](experiments/) · [Research](research/) · [Prior art](prior-art/) · [Case paths in TOC](RESEARCH_TOC.md) · [Knowledge](knowledge/README.md) · [Governance](governance/) · [Continuity](continuity/) · [Funding](funding/) · [Tools](tools/) |
+
+**Four activities, three levels / 활동은 네 종류, 레벨은 세 단계:** discovery → understanding → falsification/reproduction → maintenance/extension. The last two activities coexist at level 3; the level numbers do not rank scientific merit. / 탐색 → 이해 → 검증·재현 → 확장·운영의 활동 흐름을 세 단계로 배치한다. 검증과 운영은 모두 3단계의 하위 활동이며, 레벨은 증거의 우열을 뜻하지 않는다.
+
+**Boundary / 판정 경계:** A file or graph being discoverable does not establish validity. / 파일이나 지식그래프의 검색 가능성만으로 주장 입증·독립재현·외부 도입을 주장하지 않는다. 상세 판정은 [증거 색인](PUBLIC_EVIDENCE_INDEX.md), [연구 상태 규칙](RESEARCH_STATUS_POLICY.md), [원출처](RESEARCH_TOC.md)를 따른다.
+
 ## 독자가 선택하는 네 가지 진입 경로
 
 - **즉시 결론·최상위 목적:** [공개 통합 머릿말](PUBLIC_PREAMBLE_VOLUNTARY_COEXISTENCE_2026-10-13_EN_KO.md) — 예비학습 없이 원문·가설·반례를 바로 열람.
@@ -71,13 +83,20 @@
 
 - [인간 행동·사회적 딜레마 선행연구와 반증](research/HUMAN_EXPLOITATION_WITHOUT_MALICE_PRIOR_ART_2026-10-11_KO.md) — 생물학적 유비의 한계, 행동·환경·보상 구분.
 
-## 1. 먼저 읽을 문서
-- [프로젝트 소개](README.md) · [연구 개요](RESEARCH_OVERVIEW.md)
-- [상세 연구 목차](RESEARCH_TOC.md) · [공개 증거 색인](PUBLIC_EVIDENCE_INDEX.md)
-- [증거·검증 상태 규칙](RESEARCH_STATUS_POLICY.md) · [외부 검토 묶음](PUBLIC_REVIEW_PACKET.md)
-- [기여·출처 경계](ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md) · [선행연구·기여 구분](PRIOR_ART_AND_ATTRIBUTION.md)
-- [실패·회귀 색인](FAILURE_REGRESSION_INDEX.md)
-- [ISHPP 인간·AI 평가 시작 및 blind v0.2 누출 방지 절차](START_HERE_HUMAN_AI_KO.md) — 이전 v0.1 출처 ID 노출(F-R015) 보존; 구조검사 통과는 외부독립 검증이 아님
+## 1. 핵심 문서 10개 / Ten anchor documents
+
+1. [README.md](README.md) — Founding purpose and entry router / 최상위 목적·첫 진입점.
+2. [START_HERE_KO.md](START_HERE_KO.md) — Korean reading route / 한국어 탐색 경로.
+3. [RESEARCH_OVERVIEW.md](RESEARCH_OVERVIEW.md) — Research questions and framework, not proof / 연구문제·체계, 그 자체가 증명은 아님.
+4. [PUBLIC_EVIDENCE_INDEX.md](PUBLIC_EVIDENCE_INDEX.md) — Supported, synthetic, unresolved claims / 확인·합성·미확인 구분.
+5. [PUBLIC_REVIEW_PACKET.md](PUBLIC_REVIEW_PACKET.md) — Independent review route and limits / 외부 검토 경로·한계.
+6. [RESEARCH_TOC.md](RESEARCH_TOC.md) — Detailed map and source paths / 전체 지도·원문 링크.
+7. [ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md](ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md) — Originator, upstream author, assistance and rights boundaries / 창시자·선행연구자·AI 보조·권리 경계.
+8. [FAILURE_REGRESSION_INDEX.md](FAILURE_REGRESSION_INDEX.md) — Known failures, recurrence controls / 실패·재발 통제 기록.
+9. [knowledge/README.md](knowledge/README.md) — Derived graph and provenance, not evidence replacement / 출처 기반 그래프의 한계.
+10. [experiments/e010/README_KO.md](experiments/e010/README_KO.md) — One concrete **posthoc, self-run synthetic** example, not a universal theorem / 사후·자체 실행 합성사례, 보편법칙 아님.
+
+**Specialized evaluation route / 전문 평가 경로:** [ISHPP human–AI evaluation start and blind v0.2 leakage control](START_HERE_HUMAN_AI_KO.md) — earlier v0.1 source-ID leakage (F-R015) retained; passing structural checks is not independent validation. / 이전 v0.1 출처 ID 노출(F-R015) 보존; 구조검사 통과는 외부 독립 검증이 아님.
 
 ## 2. 주장 → 증거 → 재현 → 반증
 | 구분 | 진입점 | 상태 경계 |
