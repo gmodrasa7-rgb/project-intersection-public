@@ -20,6 +20,39 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Guard founder-origin positive contribution outcome and frozen PICB v1 source
+        shell: bash
+        run: |
+          python - <<'PY'
+          import subprocess
+          from pathlib import Path
+          p = Path("experiments/picb_v1/README.md").read_text(encoding="utf-8")
+          c = Path("CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md").read_text(encoding="utf-8")
+          expected_source = "abdefdfeb440715d503074a8e4005cd5b0f69a7d"
+          source = subprocess.check_output(
+              ["git", "hash-object", "experiments/picb_v1/benchmark.py"], text=True
+          ).strip()
+          assert source == expected_source, "Frozen first PICB spec was modified"
+          for phrase in (
+              "### P0 positive-outcome omission correction",
+              "### P0 핵심 성과변수 누락 정정",
+              "NO NEW OBSERVED DATA",
+              "신규 실측 데이터 0",
+              "CONTRIBUTOR_LOSS_UNKNOWN_PARADOX",
+              "newly enabled agents",
+              "실제 기여물",
+              "UNKNOWN",
+              "미관측",
+          ):
+              assert phrase in p, "Missing output or evidence boundary: " + phrase
+          for phrase in (
+              "### P0 recovered positive contribution-output axis",
+              "### P0 복원한 긍정적 기여물 성과축",
+          ):
+              assert phrase in c, "Crosswalk lost original-positive-outcome origin: " + phrase
+          print("PICB P0 POSITIVE OUTCOME GATE PASS: preserved/new agent contributions explicit; no fabricated observations")
+          PY
+
       - name: Core schema, role-label and negative-control self-tests
         run: python experiments/picb_v1/benchmark.py --self-test
       - name: Freeze-before-result enforcement; run only on merged main
