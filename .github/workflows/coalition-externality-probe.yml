@@ -53,6 +53,10 @@ jobs:
           assert data["finite_states_tested"] == 108864
           assert data["formula_oracle_disagreements"] == 0
           assert data["member_identity_swap_disagreements"] == 0
+          w = data["unregistered_actor_witness"]
+          assert w["observed"] == {"A": 4, "B": 4, "C": 0}
+          assert w["completion_D_plus5_all_nonnegative"] is True
+          assert w["completion_D_minus50_all_nonnegative"] is False
           assert data["old_v01_masking_observations"] == {
               "member_loss_c_missing": "UNRESOLVED",
               "exit_c_missing": "UNRESOLVED",
