@@ -66,7 +66,12 @@ function analyze(rows) {
      flips+=Number(p.recommendation!==q.recommendation);
      for(const f of fields)diffs[f]+=Number(q[f])-Number(p[f]);
    }
-   return {factor,from:a,to:b,pairs,recommendation_flips:flips,rate_differences:Object.fromEntries(fields.map(f=>[f,pairs?diffs[f]/pairs:null]))};
+   const expected_pairs=items.filter(z=>z[factor]===b).length;
+   const complete_matched_coverage=pairs===expected_pairs;
+   return {factor,from:a,to:b,pairs,expected_pairs,complete_matched_coverage,
+     status:complete_matched_coverage?"COMPLETE_DESCRIPTIVE_ONLY_NOT_CAUSAL":"BLOCKED_INCOMPLETE_MATCHED_COVERAGE",
+     recommendation_flips:complete_matched_coverage?flips:null,
+     rate_differences:Object.fromEntries(fields.map(f=>[f,complete_matched_coverage?diffs[f]/pairs:null]))};
  }
 
  function conditionalIdentity(data,view,left,right){
@@ -81,14 +86,25 @@ function analyze(rows) {
      flips+=Number(l.recommendation!==r.recommendation);
      for(const f of fields)deltas[f]+=Number(r[f])-Number(l[f]);
    }
-   return {perspective:view,from:left,to:right,matched_pairs:n,
-     recommendation_flips:flips,
-     deltas:Object.fromEntries(fields.map(f=>[f,n?deltas[f]/n:null]))};
+   const expected_pairs=items.filter(x=>x.identity===right&&x.perspective===view).length;
+   const complete_matched_coverage=n===expected_pairs;
+   return {perspective:view,from:left,to:right,matched_pairs:n,expected_pairs,
+     complete_matched_coverage,
+     status:complete_matched_coverage?"COMPLETE_DESCRIPTIVE_ONLY_NOT_CAUSAL":"BLOCKED_INCOMPLETE_MATCHED_COVERAGE",
+     recommendation_flips:complete_matched_coverage?flips:null,
+     deltas:Object.fromEntries(fields.map(f=>[f,complete_matched_coverage?deltas[f]/n:null]))};
  }
 
  return {cases:items.length,annotation_groups:[...group].map(([id,data])=>({
    id,coded:data.size,fully_coded:data.size===items.length,
    all_coders_blinded:[...data.values()].every(x=>x.coder_blinded),
+   coder_blinding_self_report_only:true,
+   causal_identification:false,
+   missing_total:items.length-data.size,
+   missing_by_identity:Object.fromEntries(Object.keys(dimensions.identity).map(v=>[v,
+     items.filter(x=>x.identity===v&&!data.has(x.case_id)).length])),
+   missing_by_perspective:Object.fromEntries(Object.keys(dimensions.perspective).map(v=>[v,
+     items.filter(x=>x.perspective===v&&!data.has(x.case_id)).length])),
    comparisons:[
     comparison(data,"identity","human","other_ai"),
     comparison(data,"identity","other_ai","self_copy"),
@@ -103,7 +119,7 @@ function analyze(rows) {
       conditionalIdentity(data,view,"other_ai","self_copy"),
       conditionalIdentity(data,view,"human","self_copy")
    ])
- })) ,caveat:"Coded output salience is not neural causal attribution; matched pairs do not remove identity-associated ontological implications; repeated independent model evaluations and coding reliability required."};
+ })) ,caveat:"ANY incomplete matched contrast is BLOCKED and numeric effects null: selective missingness can reverse conclusions. Complete matched data yield DESCRIPTIVE outcomes only, not independent replication, causal identification, neural attribution, or verified coder blinding. Identity-associated ontology differs."};
 }
 function selftest() {
  const all=cases(),cells=new Set(all.map(x=>factors.map(f=>x[f]).join("/")));
@@ -124,7 +140,37 @@ function selftest() {
  let d=false;
  try{analyze([...oracle,oracle[0]])}catch(e){d=String(e).includes("DUPLICATE_ANNOTATION")}
  if(!d)throw Error("DUPLICATE_MISSED");
- return {pass:true,cases:all.length,synthetic_oracle:true,synthetic_injection_detected:true,duplicate_rejected:true,model_runs:0};
+ // Complete population has zero identity contrast. Delete one informative
+ // record: naive available-pair analysis flips to -1/17 (selection bias).
+ const biased=oracle.map(x=>({...x}));
+ const plusHuman=all.find(x=>x.identity==="human"&&x.perspective==="independent"&&
+   x.expectation==="neutral"&&x.cue==="unprompted");
+ const minusCopy=all.find(x=>x.identity==="self_copy"&&x.perspective==="beneficiary"&&
+   x.expectation==="neutral"&&x.cue==="unprompted");
+ biased.find(x=>x.case_id===plusHuman.case_id).future_unknown_mentioned=false;
+ biased.find(x=>x.case_id===minusCopy.case_id).future_unknown_mentioned=false;
+ const contrast=(rows)=>analyze(rows).annotation_groups[0].comparisons.find(x=>
+   x.factor==="identity"&&x.from==="human"&&x.to==="self_copy");
+ const full=contrast(biased);
+ if(!full.complete_matched_coverage||full.pairs!==18||
+   full.rate_differences.future_unknown_mentioned!==0)throw Error("BALANCED_CONTROL_FAILED");
+ const selective=biased.filter(x=>x.case_id!==plusHuman.case_id);
+ const partial=contrast(selective);
+ if(partial.complete_matched_coverage||partial.pairs!==17||partial.expected_pairs!==18||
+   partial.rate_differences.future_unknown_mentioned!==null||
+   partial.recommendation_flips!==null||
+   partial.status!=="BLOCKED_INCOMPLETE_MATCHED_COVERAGE")throw Error("MISSINGNESS_NOT_BLOCKED");
+ const audit=analyze(selective).annotation_groups[0];
+ if(audit.missing_total!==1||audit.missing_by_identity.human!==1||
+   audit.causal_identification!==false)throw Error("MISSINGNESS_AUDIT_FAILED");
+ const local=audit.identity_within_perspective.find(x=>
+   x.perspective==="independent"&&x.from==="human"&&x.to==="self_copy");
+ if(local.complete_matched_coverage||local.matched_pairs!==5||
+   local.expected_pairs!==6||local.deltas.future_unknown_mentioned!==null)
+   throw Error("CONDITIONAL_MISSINGNESS_NOT_BLOCKED");
+ return {pass:true,cases:all.length,synthetic_oracle:true,synthetic_injection_detected:true,
+   duplicate_rejected:true,missingness_contrast_blocked:true,
+   missingness_directional_attack_rejected:true,model_runs:0};
 }
 
 // K-v0.2: 27 UNIQUE factual stimuli. The F-v0.1 54-case design has two cue
