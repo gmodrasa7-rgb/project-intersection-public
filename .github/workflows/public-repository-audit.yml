@@ -155,7 +155,7 @@ jobs:
 
           # Terms concern market/trading discussions, not scientific resource stocks.
           forbidden = re.compile(
-              r"현대\s*(?:차|자동차|모비스)|주식|공매도|개미털기|(?<!숙)주가(?!설)|"
+              r"현대\s*(?:차|자동차|모비스)|주식|공매도|개미털기|(?<![가-힣])주가(?!설)|"
               r"(?i:\bhyundai\b|\bstock[\s-]*(?:price|market|trading)\b|"
               r"\b(?:share|equity)[\s-]*(?:price|trading)\b|\b005380\b)"
           )
@@ -163,6 +163,7 @@ jobs:
           assert forbidden.search("stock-price prediction")
           assert not forbidden.search("숙주가 저항하지 않는다")
           assert not forbidden.search("사전등록 주가설")
+          assert not forbidden.search("암세포주가 사용되었다")
           assert not forbidden.search("contributor resource stock-flow")
 
           violations = []
