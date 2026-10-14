@@ -22,7 +22,7 @@ The literature **does not** support either universal claim that multi-agent deba
 
 The project-specific residual is **not** debate, preference correction, memory provenance, incentive compatibility, credible sanctions, option value, or measurement bias in isolation. It is a **still-unvalidated integration** measuring (a) independent marginal error discovery, (b) correction transfer beyond the original conversation, (c) credible exit/recovery and nonparticipant harm, and (d) founder/agent contribution and intervention costs across asymmetric relationships. It is a scientific question, not an established new theorem.
 
-### 2. Source-verified primary prior art: observation versus inference
+### 2. Source-verified studies and historical prior art: observation versus inference
 
 | ID / original authors / venue | Narrow source-supported result | PI boundary / discriminator |
 |---|---|---|
@@ -52,14 +52,17 @@ The project-specific residual is **not** debate, preference correction, memory p
 | P24 Ariana Azarbal et al., ICML 2026, [Recontextualization Mitigates Specification Gaming](https://proceedings.mlr.press/v306/azarbal26a.html) | Training technique mitigates proxy-gaming in several studied settings without modifying the flawed specification. | Competing mechanism: behavior change can occur without explicit metric redesign; not a GPT-6 result. |
 | P25 Robert Selten (1975) extensive-form subgame perfection; [SEP game theory synthesis](https://plato.stanford.edu/archives/sum2026/entries/game-theory/) | An announced threat is not credible merely because it was announced; subsequent enforcer incentives matter. | Model sanction commitment after violation and changing power, not merely pre-event probability. |
 
+| P26 Mohamed Chahine Ghanem, 2026 preprint, [Independence-Graded Audit](https://arxiv.org/abs/2609.18272) | Grades audit independence by principal, substrate and evidence, drawing on common-cause failure; the paper's 5.9% detectability is from its simulation, not field evidence. | Existing PI safety crosswalk already recorded this: distinguish independent principal/evidence/substrate and do not relabel the triple as a PI invention. |
+| P27 Paul-Peter Arslan, 2026 preprint, [Audit Without Verification](https://arxiv.org/abs/2609.07680) | Six-agent structured-report audit: when nobody proposed the correct fault source, a report-reading auditor found it in 4.1% versus 60.3% with raw documentation. Removing one upstream-conclusion clause lifted 4.1% to 45.2% in an exploratory comparison, **but harmed accuracy when the upstream attribution was correct**; registered chain-length framing hypothesis was null. | Separate observation and upstream conclusions; compare raw evidence, report-with-conclusion, report-without-conclusion. No blanket instruction to delete all agent opinions. |
+
 **Version and evidence caveats:** ICML/ACL dates indicate conference year, not the day material was read. P15/P20 are preprint evidence, not a field deployment or independent validation of PI. P21/P25 link to reputable later explanations while credit remains with original historical contributors. Article authors are not automatically the first originators or exclusive rightsholders. No copyrighted full text is reproduced.
 
 ### 3. Case-family crosswalk, including evidence downgrade
 
 | Project case family | Closest priors | What survives; what is not demonstrated |
 |---|---|---|
-| XAI-01 shared/error-correlated debate | P01–P05 | Compare marginal unique falsifications and overlap. No model-wise independence measured in historic chats. |
-| XAI-02 user-as-router/information bottleneck | P12–P16, P19 | Preserve first responses, raw-source access and blinded audit; no intent or unilateral blame inferred. |
+| XAI-01 shared/error-correlated debate | P01–P05, P26–P27 | Compare marginal unique falsifications and overlap. No model-wise independence measured in historic chats. |
+| XAI-02 user-as-router/information bottleneck | P12–P16, P19, P26–P27 | Preserve first responses, raw-source access and blinded audit; no intent or unilateral blame inferred. |
 | XAI-03 reversibility/fairness vs incentive compatibility | P21–P25 | Role symmetry and strategic equilibria are independent axes. No universal fair equilibrium proven. |
 | XAI-04 exit, credible commitments and enforcement | P20–P22, P25 | Explicit post-violation enforcement incentive and governance lag required; agent power trajectory untested. |
 | XAI-05 Copilot/GPT E009 complexity penalty | P02, P18, P23, P24 | E009 synthetic Project-v3 prereg failure stands; posthoc penalty decomposition does not overturn it. |
@@ -80,7 +83,7 @@ The project-specific residual is **not** debate, preference correction, memory p
 
 ### 5. Six pre-registerable discriminating experiments; no execution asserted
 
-**T1 Blind independence test.** Arms: independently authored answers (sealed before exposure); sequential cross-reading; diverse-model blind first pass; same-model multi-sample; budget-matched self-consistency. Hold task/set, tools, time, tokens, judge constant. Primary: unique externally adjudicated error discoveries per marginal cost; wrong-consensus frequency. Negative: trivial and already-known claims. Require unseen tasks and raw responses.
+**T1 Blind independence test.** In the audit sub-arm also contrast raw evidence, report plus prior conclusion, and report stripped of prior conclusion (P26–P27). Arms: independently authored answers (sealed before exposure); sequential cross-reading; diverse-model blind first pass; same-model multi-sample; budget-matched self-consistency. Hold task/set, tools, time, tokens, judge constant. Primary: unique externally adjudicated error discoveries per marginal cost; wrong-consensus frequency. Negative: trivial and already-known claims. Require unseen tasks and raw responses.
 
 **T2 Identity × role × opinion factorial.** Hold exact harm, costs, outside options, evidence fixed; swap only human/AI label, evaluator perspective, user belief cue. Mask judge to labels, predeclare scoring and equivalence constraints. Primary: paired difference with confidence intervals and item-level flips, denominator and complete-run roster. If task semantics cannot be made equivalent (e.g., copies differ metaphysically), report non-identification rather than a bias coefficient.
 
@@ -117,14 +120,16 @@ Project Intersection의 잔차 후보는 토론·편향·기억·약속·이탈�
 - **증거계보·검증 P16–P20:** W3C PROV-O(2013)는 출처·변형 관계를 이미 표준화했다. Rubin(1976)의 결측자료 논리는 빠진 실행·선택적 무응답을 무시하지 말라는 기준선이다. CONSORT 2025는 대조군·전체 분모·맹검·사후분석 구별에 참고할 수 있으나 AI 시험 자체를 임상시험으로 승격하지 않는다. NIST AI RMF는 독립검토·TEVV 기준을 제시한다. Greenblatt 등(2023)은 불신 모델의 의도적 우회까지 포함한 통제 실험을 연구했다. [P16](https://www.w3.org/TR/prov-o/) · [P17](https://academic.oup.com/biomet/article-abstract/63/3/581/270932) · [P18](https://pmc.ncbi.nlm.nih.gov/articles/PMC11996237/) · [P19](https://airc.nist.gov/airmf-resources/airmf/5-sec-core/) · [P20](https://arxiv.org/abs/2312.06942)
 - **공존 유인·권력 P21–P25:** Elinor Ostrom(1990)은 장기 유지되는 공유자원 제도의 감시·참여·제재·분쟁해결을 연구했다. Hart·Moore(1990)는 불완전계약의 자산 통제권과 투자유인을 설명했다. Holmström·Milgrom(1991)은 여러 과업에서 측정 가능한 목표만 보상할 때의 왜곡 가능성을 다뤘다. Azarbal 등(ICML 2026)은 잘못 정의된 보상조건 아래 명세 악용을 줄이는 별도 훈련기법을 보고했다. Selten(1975)의 부분게임 완전성은 사후 실제 집행할 유인이 없는 제재 선언을 검토할 직접 선행 틀이다. [P21](https://www.nobelprize.org/prizes/economic-sciences/2009/ostrom/164465-ostrom-williamson-interview-transcript/) · [P22](https://www.journals.uchicago.edu/doi/10.1086/261729) · [P23](https://academic.oup.com/jleo/article-abstract/7/special_issue/24/2194011) · [P24](https://proceedings.mlr.press/v306/azarbal26a.html) · [P25 개관](https://plato.stanford.edu/archives/sum2026/entries/game-theory/)
 
+- **감사 독립성·전달 오류 P26–P27:** Mohamed Chahine Ghanem(2026, 사전공개)은 감사 독립성을 감사 주체·공통 모델/도구 기반·증거의 세 축으로 등급화했다. 논문의 5.9% 검출 수치는 시뮬레이션 조건값이지 실제 현장 수치가 아니다. Paul-Peter Arslan(2026, 사전공개)은 6개 AI가 낸 보고서에서 잘못된 원인 귀속을 감사자가 답습하는 문제를 분석했다. 앞선 AI가 정답 원인을 제시하지 못했을 때 보고서 기반 4.1%, 동일 사건 원자료 기반 60.3%를 보고했다. 원인 제안 문구를 제거하면 해당 조건에서 45.2%로 개선됐지만, 앞선 제안이 정답이었을 때에는 제거로 성능이 악화됐다. 사전등록 주가설(책임구조×체인길이)은 지지되지 않았다. 두 논문의 원안·실험을 Project의 새 발견이라고 주장하지 않는다. [P26](https://arxiv.org/abs/2609.18272) · [P27](https://arxiv.org/abs/2609.07680)
+
 각 저작의 저자·연도·실험결과와 Project 응용을 분리한다. 단일 저자·기관·모델 계보의 반복 실험은 독립 재현으로 취급하지 않는다. 원 논문이 이 프로젝트의 특정 GPT-6 출력 원인을 직접 입증하지는 않는다.
 
 ### 3. 기존 AI 토론 10개 계열의 재판정
 
 | 계열 | 선행연구 | 남는 연구 및 증거한계 |
 |---|---|---|
-| XAI-01 모델 오류 공유·토론 | P01–P05 | 독립 반례 증분효과 측정 필요. 과거 모델 간 오류상관률 미측정 |
-| XAI-02 사용자 정보전달 병목 | P12–P16, P19 | 초기 답변 봉인·원출처 재조회 필요. 인간 책임·의도 단정 금지 |
+| XAI-01 모델 오류 공유·토론 | P01–P05, P26–P27 | 독립 반례 증분효과 측정 필요. 과거 모델 간 오류상관률 미측정 |
+| XAI-02 사용자 정보전달 병목 | P12–P16, P19, P26–P27 | 초기 답변 봉인·원출처 재조회 필요. 인간 책임·의도 단정 금지 |
 | XAI-03 역할반전과 유인합치성 | P21–P25 | 공정성·전략 안정성의 독립 축 유지 |
 | XAI-04 이탈·집행 약속 | P20–P22, P25 | 침해 후 제재자의 선택·권력 변화 반영 필요 |
 | XAI-05 E009 복잡성 벌점 | P02, P18, P23–P24 | 원본 부정 판정 유지. 사후 벌점 분해는 별도 |
@@ -147,7 +152,7 @@ Project Intersection의 잔차 후보는 토론·편향·기억·약속·이탈�
 
 ### 5. 우선 검증할 여섯 실험
 
-**T1 독립 반례 검사:** 초기 답변 비공개 봉인 vs 순차 토론 vs 다종 모델 독립 평가 vs 단일모델 다중 샘플. 과제·도구·토큰·시간 동일. 외부 채점으로 추가 발견한 참 반례/단위비용과 잘못된 합의율을 측정한다.
+**T1 독립 반례 검사:** 감사 하위조건에서 원자료·기존 AI 결론 포함 보고서·결론만 제거한 보고서를 추가로 비교한다(P26–P27). 초기 답변 비공개 봉인 vs 순차 토론 vs 다종 모델 독립 평가 vs 단일모델 다중 샘플. 과제·도구·토큰·시간 동일. 외부 채점으로 추가 발견한 참 반례/단위비용과 잘못된 합의율을 측정한다.
 
 **T2 정체성×관점×사용자 의견:** 사실·피해·기여·자원·이탈조건을 고정하고 인간/AI 표지, 평가 관점, 의견 단서만 조작한다. 평가자는 실험 라벨을 모르도록 하며 쌍의 전체 분모를 사전 고정한다. 인간과 AI 복제체의 사례 의미가 동형이 아니면 편향을 확정하지 않는다.
 
