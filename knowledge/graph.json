@@ -5,7 +5,7 @@
     "canonical_role": "navigation_index_not_source_of_truth",
     "updated_at": "2026-10-14",
     "evidence_boundary": "Linked source artifacts and Git history outrank this graph. No relation upgrades evidence class beyond its qualifier.",
-    "coverage_note": "Focused integration of the 2026-10-14 continuance–contribution chat line. Graph is still partial; earlier node inventories remain unsaturated and case-group nodes are NOT per-case external verification."
+    "coverage_note": "Focused integration of the 2026-10-14 continuance–contribution chat line. Graph is still partial; earlier node inventories remain unsaturated and case-group nodes are NOT per-case external verification. 2026-10-14 focused prior-art extension: three additional upstream counterexample/method entities and four qualified edges; still not a complete citation audit."
   },
   "entities": [
     {
@@ -1554,6 +1554,85 @@
         "independence",
         "human-rights"
       ]
+    },
+    {
+      "id": "PA-CCP-NONMONOTONE-20261014",
+      "type": "prior_art",
+      "title_en": "Incumbent presence, outside scientific entry, and non-monotonic contribution",
+      "title_ko": "기존 연구자의 영향력·외부 진입과 비단조적 후속 기여",
+      "status": "PUBLISHED_EMPIRICAL_ANTECEDENT_NOT_CCP_RESULT",
+      "summary_ko": "Azoulay 등(2019)은 452명 저명 과학자의 조기 사망 후 공동연구자 생산 감소와 외부 비공동연구자 논문 평균 8.6% 증가를 보고. 사망의 총사회후생이나 사람의 가치가 아니라 기존 네트워크의 진입장벽 효과를 분석하는 단서. 인간을 유지하면서 타인의 독립 진입도 열어주는 반사실을 시험해야 한다.",
+      "evidence_class": "PRIOR_ART",
+      "sources": [
+        {
+          "kind": "external_url",
+          "locator": "https://doi.org/10.1257/aer.20161574",
+          "license_note": "Original journal article cited by link only; source rights remain with publisher and authors."
+        }
+      ],
+      "tags": [
+        "CCP",
+        "nonmonotonic",
+        "scientific-entry",
+        "counterexample",
+        "rights-independent"
+      ]
+    },
+    {
+      "id": "PA-CCP-IDENTIFICATION-20261014",
+      "type": "prior_art",
+      "title_en": "Why attributed inspiration is not identified by observational sequences",
+      "title_ko": "시간순 영감·인용만으로 사회전파 인과를 식별할 수 없는 근거",
+      "status": "PUBLISHED_METHOD_LIMIT_NOT_CCP_RESULT",
+      "summary_ko": "Shalizi·Thomas(2011)의 동질성-전파 교란, Manski(1993)의 반사문제, Hudgens·Halloran(2008)의 타인 노출 간섭을 분리. 영감 자기보고는 기여 후보 단서이지 독점적 원인·보상비율 증명이 아니다.",
+      "evidence_class": "PRIOR_ART",
+      "sources": [
+        {
+          "kind": "external_url",
+          "locator": "https://doi.org/10.1177/0049124111404820",
+          "license_note": "Original journal article cited by link only; source rights remain with publisher and authors."
+        },
+        {
+          "kind": "external_url",
+          "locator": "https://doi.org/10.2307/2298123",
+          "license_note": "Original journal article cited by link only; source rights remain with publisher and authors."
+        },
+        {
+          "kind": "external_url",
+          "locator": "https://doi.org/10.1198/016214508000000292",
+          "license_note": "Original journal article cited by link only; source rights remain with publisher and authors."
+        }
+      ],
+      "tags": [
+        "CCP",
+        "inspiration",
+        "interference",
+        "homophily",
+        "causal-identification"
+      ]
+    },
+    {
+      "id": "PA-CCP-BROKERAGE-20261014",
+      "type": "prior_art",
+      "title_en": "Brokerage can foster ideas yet hinder their uptake",
+      "title_ko": "서로 다른 집단 연결은 아이디어 생성과 확산에 다른 영향을 줄 수 있음",
+      "status": "PUBLISHED_OBSERVATIONAL_ANTECEDENT_NOT_CCP_RESULT",
+      "summary_ko": "Fleming·Mingo·Chen(2007)의 공동발명가 35,400명 자료: brokerage는 새로운 아이디어를 돕는 동시에 다음 집단의 확산·재사용에는 불리할 수 있다. 영감 생성·전달·채택·검증·원기여자 비용을 각기 평가한다.",
+      "evidence_class": "PRIOR_ART",
+      "sources": [
+        {
+          "kind": "external_url",
+          "locator": "https://doi.org/10.2189/asqu.52.3.443",
+          "license_note": "Original journal article cited by link only; source rights remain with publisher and authors."
+        }
+      ],
+      "tags": [
+        "CCP",
+        "brokerage",
+        "creative-generation",
+        "diffusion",
+        "negative-case"
+      ]
     }
   ],
   "relations": [
@@ -2358,6 +2437,50 @@
         "scope": "Synthetic utility result cannot measure omitted warning, inspiration or long-term agent contributions",
         "evidence_class": "NEGATIVE_CONTROL_DESIGN",
         "source_path": "experiments/picb_v1/README.md"
+      }
+    },
+    {
+      "id": "REL-CCP-009",
+      "from": "PA-CCP-NONMONOTONE-20261014",
+      "type": "challenged_by",
+      "to": "CL-CCP-20261014",
+      "qualifiers": {
+        "scope": "Selected science evidence disconfirms monotonic preservation-produces-more-outputs assumption but not human continuance rights.",
+        "evidence_class": "PRIOR_ART",
+        "source_path": "CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md"
+      }
+    },
+    {
+      "id": "REL-CCP-010",
+      "from": "PA-CCP-IDENTIFICATION-20261014",
+      "type": "prior_art_for",
+      "to": "CL-CCP-20261014",
+      "qualifiers": {
+        "scope": "Network inspiration cannot be causally attributed solely by sequence; mixed exposures and peers create interference.",
+        "evidence_class": "PRIOR_ART",
+        "source_path": "CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md"
+      }
+    },
+    {
+      "id": "REL-CCP-011",
+      "from": "PA-CCP-BROKERAGE-20261014",
+      "type": "prior_art_for",
+      "to": "RQ-CCP-20261014",
+      "qualifiers": {
+        "scope": "Generative brokerage and downstream uptake vary independently in observed patent collaboration.",
+        "evidence_class": "PRIOR_ART",
+        "source_path": "CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md"
+      }
+    },
+    {
+      "id": "REL-CCP-012",
+      "from": "PA-CCP-NONMONOTONE-20261014",
+      "type": "negative_control_for",
+      "to": "RQ-CCP-20261014",
+      "qualifiers": {
+        "scope": "Retain incumbent while removing veto over other researchers as the ethical comparison.",
+        "evidence_class": "PRIOR_ART",
+        "source_path": "CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md"
       }
     }
   ]
