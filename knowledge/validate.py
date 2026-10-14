@@ -167,6 +167,75 @@ for entity in entities:
         external = any(s.get("kind") in {"external_url", "doi"} for s in entity.get("sources", []))
         require(external, f"{entity.get('id')}: independent evidence class requires external source lineage.")
 
+# Public findability regression: five bilingual routes must resolve to existing
+# canonical artifacts. This is a structural check, NOT a human comprehension
+# trial or an independent verification of the underlying scientific claims.
+discovery = json.loads((ROOT / "AI_DISCOVERY_INDEX.json").read_text(encoding="utf-8"))
+route = discovery.get("review_tasks") or {}
+require(route.get("status") == "NAVIGATION_ONLY_NOT_INDEPENDENT_VALIDATION",
+        "Public review routes were promoted from navigation to scientific verification.")
+require(route.get("human_guide") == "PUBLIC_REVIEW_PACKET.md",
+        "Review-task index no longer identifies its public human guide.")
+packet = (ROOT / "PUBLIC_REVIEW_PACKET.md").read_text(encoding="utf-8")
+tasks = route.get("tasks") or []
+require(isinstance(tasks, list) and len(tasks) == 5,
+        "Expected exactly five canonical public-review questions.")
+expected_task_ids = [f"NAV-Q{i}" for i in range(1, 6)]
+require([t.get("id") for t in tasks if isinstance(t, dict)] == expected_task_ids,
+        "Public review-task IDs are incomplete, duplicated or reordered.")
+
+def check_public_path(path, label):
+    if not isinstance(path, str) or not path:
+        require(False, f"{label}: missing repository path")
+        return
+    ref = Path(path)
+    if ref.is_absolute() or ".." in ref.parts or "://" in path or path.startswith("/"):
+        require(False, f"{label}: unsafe or nonlocal repository path: {path}")
+        return
+    require((ROOT / path).exists(), f"{label}: unresolved repository path: {path}")
+
+levels = (discovery.get("navigation_levels") or {})
+for group, expected_len in [
+    ("level_1_discovery", 5),
+    ("level_2_understanding_and_audit", 8),
+    ("level_3_artifacts_and_operations", 9),
+]:
+    paths = levels.get(group) or []
+    require(isinstance(paths, list) and len(paths) == expected_len,
+            f"{group}: three-level navigation contract changed")
+    for linked in paths:
+        check_public_path(linked, group)
+
+for task in tasks:
+    if not isinstance(task, dict):
+        require(False, "Review-task must be an object.")
+        continue
+    tid = task.get("id", "<missing>")
+    for key in ("question_en", "question_ko", "limitation_en", "limitation_ko"):
+        require(bool(task.get(key)), f"{tid}: missing bilingual question/boundary: {key}")
+    primary = task.get("primary_path")
+    check_public_path(primary, tid)
+    require(tid in packet, f"{tid}: human review packet lost task identifier")
+    require(isinstance(primary, str) and f"({primary})" in packet,
+            f"{tid}: human guide no longer links to its primary source")
+    verification_paths = task.get("verification_paths") or []
+    require(isinstance(verification_paths, list) and len(verification_paths) > 0,
+            f"{tid}: no verification/counterexample source")
+    for linked in verification_paths:
+        check_public_path(linked, tid)
+
+# Prevent semantic promotion of the four distinct experimental states.
+states = (levels.get("representative_experiment_status") or {})
+for identifier in ("E007", "E008", "E009", "E010"):
+    require(isinstance(states.get(identifier), str) and bool(states[identifier]),
+            f"{identifier}: missing scope-limited evidence status")
+require("negative" in states.get("E009", "").lower(),
+        "E009 synthetic negative result was erased")
+require("not executed" in states.get("E008", "").lower(),
+        "E008 preregistered protocol was misrepresented as executed")
+require("posthoc" in states.get("E010", "").lower(),
+        "E010 exploratory posthoc status was erased")
+
 if errors:
     print("KNOWLEDGE GRAPH AUDIT FAILED")
     for error in errors:
