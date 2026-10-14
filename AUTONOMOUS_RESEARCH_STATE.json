@@ -4,8 +4,8 @@
   "public_repository": "gmodrasa7-rgb/project-intersection-public",
   "canonical_boundary": "Public continuation pointer only; source artifacts and commit history outrank this state file.",
   "recovery_entrypoint": "AUTONOMOUS_RESEARCH_LOOP.md",
-  "current_public_head": "69e6a0b098e9b24680cf86522972f79aca36f351",
-  "updated_at": "2026-10-14T02:37:30Z",
+  "current_public_head": "b37ddbf2a22f1fdfcef5af9c57ea881465c959ce",
+  "updated_at": "2026-10-14T03:11:16Z",
   "execution_policy": {
     "atomic_material_delta_per_run": 1,
     "require_prior_art_gate": true,
@@ -380,6 +380,27 @@
     "external_verification_issue": "https://github.com/gmodrasa7-rgb/project-intersection-public/issues/19"
   },
   "last_maintenance_checkpoint": {
+    "check_date": "2026-10-14",
+    "scope": "PI-DS F-R018 selective missingness output-contrast false-effect prevention",
+    "status": "VERIFIED_SYNTHETIC_PIPELINE_REPAIR_NOT_MODEL_EVIDENCE",
+    "observed_pre_write_main": "b37ddbf2a22f1fdfcef5af9c57ea881465c959ce",
+    "source_pr": "https://github.com/gmodrasa7-rgb/project-intersection-public/pull/123",
+    "source_code": "experiments/gpt_double_standard_20261014/origin_salience_probe.js",
+    "source_record": "FAILURE_REGRESSION_INDEX.md#f-r018--selective-response-attrition-masquerading-as-an-identity-effect",
+    "issue_to_enable_independent_review": "https://github.com/gmodrasa7-rgb/project-intersection-public/issues/23#issuecomment-6160034983",
+    "defect": "Partial matched F responses could emit nonzero identity contrasts even when full 18-pair population contrast zero; missing F/K strata could disappear completely.",
+    "falsification_toy": "Full 18/18 matched contrasts: zero. Selectively remove 1 human response: naive retained sample -1/17. Corrected analyzer returns NULL/BLOCKED_INCOMPLETE_MATCHED_COVERAGE.",
+    "repair": "Completeness guard on all matched contrasts; 18 expected F/K strata exposed even when n=0; missing-by-identity and missing-by-perspective diagnostics; unverified coder_blinded flag labelled self-reported.",
+    "ci_run": "https://github.com/gmodrasa7-rgb/project-intersection-public/actions/runs/38504932389",
+    "ci_status": "SUCCESS",
+    "main_read_back": "VERIFIED_MAIN_CODE_AND_ISSUE",
+    "measured_gpt6_model_calls": 0,
+    "verified_external_replications": 0,
+    "verified_internal_causal_origin": false,
+    "next_gate": "External lineage first. Accept independent blinded/fully enumerated outputs including failures; do not count project-authored synthetic passes as scientific confirmation.",
+    "human_cost": "No required extra founder coding, paid API, retesting, or explanatory labor."
+  },
+  "previous_maintenance_checkpoint": {
     "check_date": "2026-10-14",
     "scope": "PI-DS-20261014-01 factual-access experimental reproducibility and provenance repair",
     "status": "VERIFIED_SYNTHETIC_REGRESSION_ONLY",
