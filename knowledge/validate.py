@@ -116,13 +116,16 @@ focused = {
     "HC-HUM-20261014": ("historical_case", "CURATED_MIXED_SOURCE_QUALITIES_SELECTION_BIAS"),
     "PA-CCP-20261014": ("prior_art", "EXISTING_UPSTREAM_THEORIES_NOT_PI_DISCOVERIES"),
     "NC-CCP-20261014": ("negative_control", "TEST_PROTOCOL_UNEXECUTED"),
+    "PA-CCP-NONMONOTONE-20261014": ("prior_art", "PUBLISHED_EMPIRICAL_ANTECEDENT_NOT_CCP_RESULT"),
+    "PA-CCP-IDENTIFICATION-20261014": ("prior_art", "PUBLISHED_METHOD_LIMIT_NOT_CCP_RESULT"),
+    "PA-CCP-BROKERAGE-20261014": ("prior_art", "PUBLISHED_OBSERVATIONAL_ANTECEDENT_NOT_CCP_RESULT"),
 }
 for eid, (etype, status) in focused.items():
     node = entity_by_id.get(eid, {})
     require(node.get("type") == etype and node.get("status") == status,
             f"2026-10-14 contribution graph node missing or incorrectly promoted: {eid}")
     require(bool(node.get("sources")), f"{eid}: origin path or scholar sources erased")
-focused_edges = {f"REL-CCP-{k:03d}" for k in range(1, 9)}
+focused_edges = {f"REL-CCP-{k:03d}" for k in range(1, 13)}
 require(focused_edges.issubset(set(relation_ids)),
         "Founder contribution graph lost at least one qualified linkage")
 source = (ROOT / "CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md").read_text(encoding="utf-8")
@@ -132,6 +135,15 @@ for term in (
     "2026-10-14 founder correction: risk detection",
     "2026-10-14 인간 창시자 정정",
     "OBSERVED / PLAUSIBLE / UNKNOWN / NOT_SUPPORTED",
+    "### CCP deep prior-art update — Original 1 English",
+    "### CCP 심층 선행연구 추가 검토 — 한국어 원본2",
+    "CP04 — Azoulay",
+    "CP10 — Shalizi",
+    "CP06 — Ronald Burt",
+    "CP14 — Romer",
+    "452",
+    "8.6%",
+    "35,400",
 ):
     require(term in source, "Bilingual core contribution definition disappeared: " + term)
 for prefix, expected in (("OC", 19), ("HC", 15)):
