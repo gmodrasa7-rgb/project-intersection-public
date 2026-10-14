@@ -207,8 +207,7 @@ def run():
                 round(sum(r["aggregate"] for r in decided) / len(decided), 6)
                 if decided else None),
             "worst_party_margin_conditional_on_decision": (
-                round(min(r["margin_A"] for r in decided for _ in (0,) )
-                      if False else min(min(r["margin_A"], r["margin_B"]) for r in decided), 6)
+                round(min(min(r["margin_A"], r["margin_B"]) for r in decided), 6)
                 if decided else None),
             "chosen_ids": [r["choice"] for r in rows],
         }
