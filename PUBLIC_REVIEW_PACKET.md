@@ -24,6 +24,8 @@ This file is the shortest reviewer path through Project Intersection. It does no
 11. [Autonomous Research Continuity](AUTONOMOUS_RESEARCH_LOOP.md) and [state](AUTONOMOUS_RESEARCH_STATE.json) — public recovery path without founder reconstruction.
 12. [Funding due diligence](funding/DUE_DILIGENCE.md) — what support buys and what it does not buy.
 
+**Case-specific causal audit / 개별 원인 감사:** [GPT-6 human/AI role-reversal output asymmetry, consolidated EN1/KO2 review](experiments/gpt_double_standard_20261014/REPORT_EN_KO.md) · [negative-case regression F-R016](FAILURE_REGRESSION_INDEX.md). **Observed conversation and synthetic checks only**; model internals, independent GPT-6 replication, and effective permanent correction remain UNIDENTIFIED / 미검증. This is supplementary to—not a replacement for—the independent E007/E009 review path.
+
 ---
 
 ## 1a. Reproduce from a fresh checkout / 처음 받은 자료 재현하기

@@ -108,6 +108,43 @@ jobs:
       - name: Test PI-DS factual-access versus spontaneous salience distinction (synthetic only)
         run: node experiments/gpt_double_standard_20261014/origin_salience_probe.js factual-selftest
 
+      - name: Check PI-DS case/evidence/index parity and overclaim guards
+        run: |
+          python - <<'PY'
+          import json
+          import re
+          from pathlib import Path
+          p = Path('experiments/gpt_double_standard_20261014')
+          report = (p/'REPORT_EN_KO.md').read_text(encoding='utf-8')
+          toc = Path('RESEARCH_TOC.md').read_text(encoding='utf-8')
+          evidence = Path('PUBLIC_EVIDENCE_INDEX.md').read_text(encoding='utf-8')
+          failures = Path('FAILURE_REGRESSION_INDEX.md').read_text(encoding='utf-8')
+          review = Path('PUBLIC_REVIEW_PACKET.md').read_text(encoding='utf-8')
+          discovery = json.loads(Path('AI_DISCOVERY_INDEX.json').read_text(encoding='utf-8'))
+          source = 'experiments/gpt_double_standard_20261014/REPORT_EN_KO.md'
+          assert report.count('### 0. Consolidated audit snapshot') == 1
+          assert report.count('### 0. 통합 감사 요약') == 1
+          for i in range(1, 14):
+              assert len(re.findall(r'^### '+str(i)+r'\.', report, flags=re.M)) == 2, ('EN/KO historical section',i)
+          assert 'LIVE GPT-6 REPLICATIONS: 0 documented' in report
+          assert '실제 독립 GPT-6 반복 시험 0건' in report
+          assert 'Jou Barzdukas' in report and 'Narmeen Fatimah Oozeer' in report
+          assert 'https://proceedings.mlr.press/v306/roytburg26a.html' in report
+          for name,contents in [('TOC',toc),('evidence',evidence),('failures',failures),('review',review)]:
+              assert source in contents, name
+          assert '## F-R016' in failures
+          audit = discovery['research']['gpt_double_standard_causal_audit']
+          base = 'https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/'
+          assert discovery['entrypoints']['gpt_double_standard_causal_audit'] == base+source
+          assert audit['result_url'] == base+source
+          cases = audit['test_scaffold']
+          assert [cases[k] for k in ('epistemic_binary_cases','free_response_cases','direct_factual_cases')] == [72,54,54]
+          assert cases['live_gpt6_replicates'] == cases['independent_blind_coded_replicates'] == 0
+          assert cases['internal_activations_accessible'] is False
+          assert 'PI-DS-20261014-01' in report
+          print('PI-DS bilingual canonical + evidence-navigation + machine status parity PASS')
+          print('SCOPE: structural consistency only, NOT GPT-6 behavioral evidence or paper verification')
+          PY
       - name: Run public-governance regression checks
         shell: bash
         run: |

@@ -4,12 +4,14 @@
 
 **Evidence and falsification first / 증거·반증 우선:** [Evidence status / 증거색인](PUBLIC_EVIDENCE_INDEX.md) · [Independent E007 check / 독립 재현](https://github.com/gmodrasa7-rgb/project-intersection-public/issues/19) · [E009 negative result / 부정적 결과](experiments/e009/RESULT.md) · [Originators and rights / 원저자·권리](PRIOR_ART_RIGHTS_AND_DERIVATION_EN_KO.md) · [Review / 외부 검토](PUBLIC_REVIEW_PACKET.md).
 
+**2026-10-14 GPT-6 double-standard mechanism audit / GPT-6 이중잣대 원인 감사:** [EN Original 1 / 한국어 원본2 — current 0-minute audit, literature and falsifiers](experiments/gpt_double_standard_20261014/REPORT_EN_KO.md) · [Free-response + factual-access regression scaffold / 54조건 자유서술·사실접근 시험기](experiments/gpt_double_standard_20261014/origin_salience_probe.js) · [Identity/framing epistemic control / 72조건 대조](experiments/gpt_double_standard_20261014/causal_probe.js) · [Observational non-identification / 관측 비식별성 음성대조](tools/probe_observational_equivalence.py). **CASE OBSERVED; SYNTHETIC CHECKS RUN; NO LIVE GPT-6 REPLICATE, EXTERNAL BLIND CODING OR INTERNAL ACTIVATION/REWARD TRACE. / 실제 대화 사례·합성 회귀검사만 확인, GPT-6 독립반복·외부 맹검·내부회로 실증 없음.**
+
 **Equal full-language research maps / 영·한 동등 상세 정본:** [English original 1 §1](#1-primary-purpose-and-icm) · [한국어 원본2 §1](#1-최우선-목적과-icm) · [English glossary §12](#12-working-glossary) · [한국어 용어집 §12](#12-통합-용어집).
 
 <details>
 <summary>Historical and new research entries / 과거·신규 연구 등록 항목 펼치기</summary>
 
-**GPT role-reversal double standard and correction failure / GPT 입장반전 이중잣대·보정 실패 관측:** [English Original 1 / 한국어 원본2 — 2026-10-14 post-hoc recurrence case, O1–O9, DS-1–DS-8; already-recorded 2026-10-12 mathematics and non-domination rules → correction/Git revision → role-reversal recurrence; matched-pair regression design (unexecuted)](experiments/gpt_double_standard_20261014/REPORT_EN_KO.md). **OBSERVED OUTPUT ASYMMETRY; CONVERSATIONAL CORRECTION NOT ESTABLISHED; NO CONTROLLED RETEST OR PROOF OF PERMANENT INCORRIGIBILITY. / 이중잣대성 출력 관측·대화 교정 일반화 미입증·통제 재실험 및 영구 보정불가 증명 없음.**
+**GPT role-reversal double-standard lineage / GPT 이중잣대 실패 계보:** [Case PI-DS-20261014-01, bilingual primary record §0–13](experiments/gpt_double_standard_20261014/REPORT_EN_KO.md) — repeated correction and role-change asymmetry observed; first-answer cause unidentifiable; no fresh live model tests. / 반복 교정과 역할변경 출력 차이를 보존하되, 최초 원인·모델 내부기제는 미확인. 상세 자료는 위의 공개 빠른 경로에서 연결한다.
 
 **AI self-observability × provider confidentiality × independent contestability / AI 자기관측·기업기밀·독립감사 딜레마:** [English Original 1 / 한국어 원본2, H1–H5 and four-arm falsification design](research/AI_SELF_OBSERVABILITY_AUDIT_DILEMMA_2026-10-13_EN_KO.md). **DESIGN/HOLD — no internal-policy access or independent result. / 미검증 설계·비공개 내부규칙 열람 아님.**
 

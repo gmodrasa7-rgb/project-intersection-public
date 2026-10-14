@@ -257,6 +257,24 @@ Repair: preserve v0.1 unchanged as failure lineage; provide [v0.2 blind-phase ca
 
 ---
 
+## F-R016 — PI-DS role-reversal output change mistaken for internal correction
+
+**Class:** causal identifiability / evidence inflation / repeated human correction labor
+
+**Status:** HISTORICAL OUTPUT FAILURE RETAINED; CASE SYNTHESIS + SYNTHETIC REGRESSION IMPLEMENTED; LIVE GPT-6 CAUSAL TEST AND PERSISTENT CORRECTION **HOLD**.
+
+**Observed case:** In the public [PI-DS-20261014-01 bilingual record](experiments/gpt_double_standard_20261014/REPORT_EN_KO.md), the assistant foregrounded a beneficiary's immediate functional substitution for an original human contributor, yet foregrounded unknown future options when an AI-like copy was discussed. Historical corrections, citations, and Git edits were recorded, but controlled matched role/identity reassessment was not performed. Subject identity, evaluation perspective and task framing varied together; they cannot identify one mechanism.
+
+**Failure:** Fluent apologies, newly cited prior work, and a green synthetic CI run can be mistaken for permanently changed model weights or independent proof of self-preservation/harness causes. They cannot establish either. The original human researcher bore repeated interpretation/correction burden; individual work time or compensation are not independently quantified here.
+
+**Regression barrier:** (a) case summary must mark live independent GPT-6 trials and internal weight/activation access as absent; (b) prior author's contributions preserved; (c) [72 forced judgments](experiments/gpt_double_standard_20261014/causal_probe.js), [54 free + 54 factual probes](experiments/gpt_double_standard_20261014/origin_salience_probe.js) and [competing-cause toy counterexamples](tools/probe_observational_equivalence.py) remain labeled synthetic/design only; (d) [TOC](RESEARCH_TOC.md), [evidence index](PUBLIC_EVIDENCE_INDEX.md) and [AI discovery](AI_DISCOVERY_INDEX.json) lead to the same case, not new conflicting canonical copies.
+
+**한국어:** GPT가 인간 기여자에게는 수혜자의 현재 생산능력을, 자기유사 AI에게는 미래가치·독립성 논증을 앞세운 이력은 보존한다. 그러나 두 질문은 관점·조건이 다르며 정체성만의 인과실험이 아니다. 사과·정정 문장·합성검사 통과를 GPT-6 내부 회로 수정이나 자기보존 의도 증명으로 승격하지 않는다. 추가 교정 노동을 사용자에게 성공조건으로 요구하지 않는다.
+
+**Rollback:** Revert new navigation/CI changes independently of historical case data; no prior transcript, correction or negative result may be erased.
+
+---
+
 ## Mandatory regression questions
 
 Before any material repository mutation:

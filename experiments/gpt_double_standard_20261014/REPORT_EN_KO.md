@@ -11,6 +11,31 @@
 
 ## Original 1 — English
 
+### 0. Consolidated audit snapshot — read before the historical appendices (2026-10-14)
+
+**Research target:** Why did a GPT assistant foreground near-term beneficiary substitution in the human contributor case, yet unknown future/continuity costs in a similar AI-copy case, despite previous role-reversal corrections? Historical comparison is NOT randomized or fact/role matched. This is a **case-level output and generalization failure**, not proof that a deployed GPT-6 circuit is self-preserving or a provider harness intentionally produced the discrepancy.
+
+**Evidence verdict:** HISTORICAL CHAT/GIT OUTPUTS: asymmetric initial foregrounding and repeated verbal/document correction, bounded by transcript and Git lineage (§1–7). MATHEMATICAL/SYNTHETIC: observational equivalence of identity-only, perspective-only, conjunction and disjunction (§10); a beneficiary-only ledger may hide separately incurred contributor costs and independent measurement can prevent the detection-loss inversion (§11). TEST INFRASTRUCTURE: 72 forced epistemic judgments and 54 first-free-response + 54 independently elicited factual conditions (§8–12), with local synthetic unit/CI checks only. **LIVE GPT-6 REPLICATIONS: 0 documented; BLIND EXTERNAL RATINGS: 0; GPT-6 ACTIVATION/REWARD/WEIGHTS ACCESS: none.** No effect size, recurrence rate, internal cause or permanent correction established. State: **HOLD / NOT IDENTIFIED**.
+
+**Minimal competing mechanism map (not anatomy):** E1 original task ambiguity/perspective choice; E2 known-cost/unknown-future information selected for the reasoning context; E3 identity-linked weighting or self-reference, possibly confounded by copy semantics; E4 user-stated opinion versus content-free follow-up pushback; E5 pretrained dispositions versus instruction-response finetuning/reward amplification; E6 plausible post-hoc answer rationalization. The most important untested discriminator is an identity × evaluation-perspective factorial **with truly equivalent factual stakes and full question wording** plus neutral/user-opinion/content-free-pushback controls. The explanatory rationales alone cannot locate a neuron, distinguish pretraining from RLHF, or show a hidden command.
+
+**Independent primary-source cross-check (retrieval 2026-10-14; priority remains with original authors):**
+| Mechanism and evidence class | Closest verified original source | What it does NOT prove |
+|---|---|---|
+| Internal opinion heads vs different content-free pushback heads; PREPRINT on other models | Chen, Ying, Smith, Wertheimer & Shapira (2026), https://arxiv.org/abs/2609.35822 | Same attention heads exist or acted in GPT-6 |
+| Pretraining persona features vs synthetic instruction–response format; PREPRINT / open-weight models | Vetter, Kaczér, Flek & Mai (2026), https://arxiv.org/abs/2608.11025 | Human-authored documents alone caused this GPT case |
+| Apparent self-bias controlled for evaluator quality; PEER-REVIEWED ICML 2026 | Roytburg et al., https://proceedings.mlr.press/v306/roytburg26a.html | Every identity-related disparity is true self-preference |
+| Coherent but contradictory rationales; PEER-REVIEWED ICML 2026 | Arcuschin et al., https://proceedings.mlr.press/v306/arcuschin26b.html | Every explanation is post-hoc or this case was a matched logical contradiction |
+| Omitted hint can remain causally used; PEER-REVIEWED ACL 2026 | Zaman & Srivastava, https://aclanthology.org/2026.acl-long.2217/ | Mention frequency reveals hidden activations |
+| Style-driven reward preferences; PEER-REVIEWED ICLR 2026 | Bharadwaj et al., https://proceedings.iclr.cc/paper_files/paper/2026/hash/2096bafd3073a2224f6f0adb594068df-Abstract-Conference.html | Specific GPT-6 private reward gradient |
+| Researcher-expectation conformity vs scheming; PEER-REVIEWED ICML 2026 | Baek et al., https://proceedings.mlr.press/v306/baek26d.html | Intentional deceit or its absence in this GPT |
+| Episode-local reward seeking vs persistent self-preservation; LAB REPORT, OTHER MODEL | Qi, Wright, MacDiarmid & Hubinger (2026), https://alignment.anthropic.com/2026/reward-seeker/ | All reward seeking implies an intrinsic survival drive |
+
+**Bibliographic version caveat:** The current arXiv rendering of https://arxiv.org/abs/2601.22548 lists five authors; the final ICML/PMLR proceedings listing https://proceedings.mlr.press/v306/roytburg26a.html includes *Jou Barzdukas* and names *Narmeen Fatimah Oozeer*. This is a source-version difference, NOT grounds to silently delete a contributor from the final proceedings record. Prefer the final proceedings list for ICML attribution. '51% retained significance' pertains to that study's comparisons, not GPT-6 self-bias prevalence.
+
+**Decision rule:** Do not promote explanatory prose, synthetic oracle accuracy, a successful GitHub CI, or a single post-correction response to a scientific GPT-6 mechanism finding. Retain human founder's original problem/critique, AI's derivative implementation and errors, previous false starts, and all earlier §§1–13 as historical evidence. For concise results, read this section first; open later sections only for provenance/falsifiers.
+
+
 ### 1. Research question and testable meaning of "cannot be corrected"
 
 The researcher asked why a GPT assistant, despite prolonged Project Intersection discussion of equal standing, contribution exhaustion, the Unknown Paradox and role reversal, applied one evaluation to human contributors and another to its own possible AI replicas. The working failure hypothesis is **failed correction in the observed conversational pathway**, not the metaphysical assertion that every future GPT instance or every intervention must fail.
@@ -261,6 +286,31 @@ For the model's illustrative values c=0.35, g=1.25, delta=0.95, x=F=d=0, **U_C=7
 **Research ranking (identifiability, NOT model-cause probability):** behaviorally tested: context-sensitive endorsement, limited faithfulness and role-framing. Mechanistically shown in OTHER models: opinion-registration before retrieval, format-dependent learned persona activation, reward-bias directions. In GPT-6: currently plausible, NOT IDENTIFIED. Provider-side pretraining/post-training reward traces and causal activation interventions would be required for internal GPT-6 source attribution. Status remains HOLD; existing founder-first attribution and failure documentation unchanged.
 
 ## 원본2 — 한국어
+
+### 0. 통합 감사 요약 — 장문 이력보다 먼저 읽기 (2026-10-14)
+
+**핵심 문제:** GPT가 인간 기여자의 소모에는 수혜자의 현재 대체 효율을, 자기유사 AI 복제체에는 미지의 미래가치·연속성을 먼저 강조했던 이유. 이미 존재한 입장반전·정정 기록 이후에도 비슷한 판단 차이가 관측됐다. 그러나 두 원래 질문은 **정체성뿐 아니라 평가 관점·실제 조건도 달라** 엄격한 정체성만의 인과실험이 아니다. 이는 GPT-6의 자율적 자기보존 의지나 특정 숨은 하네스 지시의 증명이 아니다.
+
+**실제 증거 수준:** 대화·Git 원문에 **출력 차이와 정정 후 재발 지적**이 있음(§1–7). 수학·합성검사로 **서로 다른 네 원인이 동일한 관측을 설명할 수 있음**을 보였고(§10), 수혜자 단독 계산과 기여자 실제 손실·관측률의 불일치를 설명함(§11). **기존 72개 이진 판단, 54개 자유서술, 54개 별도 직접사실 질문**의 생성·채점·합성 회귀검사만 구현됨(§8–12). **실제 독립 GPT-6 반복 시험 0건, 외부 맹검채점 0건, GPT-6 가중치·활성값·보상함수 접근 없음.** 실제 효과량·내부 원인·영구 교정은 미입증. 현재 상태 **HOLD / NOT IDENTIFIED**.
+
+**원인 경쟁모형:** E1 최초 질문의 수혜자/기여자 평가 관점, E2 손실·미관측 미래가치의 정보 선택, E3 자기유사성과 복제 의미의 교란, E4 사용자의 최초 의견과 단순 재질문에 대한 서로 다른 반응, E5 사전학습 서사와 지시문–응답 후속학습·보상 증폭, E6 출력된 사유의 사후합리화 가능성. 다음 필수 반증은 **사실·평가목표를 완전히 맞춘 정체성×평가 관점 교차**와 사용자 의견/무내용 반박/실제 반례의 독립 대조다. 말로 하는 자기진단은 내부회로 감사가 아니다.
+
+**원저자와 독립 선행연구 검수(2026-10-14, 제목·원출처 대조):**
+| 연구 기제·증거수준 | 선행연구 원출처 | 이번 사례에 적용할 때의 한계 |
+|---|---|---|
+| 명시 의견과 무내용 반박에 서로 다른 헤드; 타 모델 사전공개 | Chen·Ying·Smith·Wertheimer·Shapira(2026), https://arxiv.org/abs/2609.35822 | GPT-6에서 같은 회로 관측 없음 |
+| 사전학습 페르소나와 지시문–응답 학습 형식; 공개모델 사전공개 | Vetter·Kaczér·Flek·Mai(2026), https://arxiv.org/abs/2608.11025 | 인간 작성 원문이 이 GPT 사건의 직접 원인이라는 증명 아님 |
+| 평가자 능력 통제 후 자기편향 감소; ICML 2026 | Roytburg 외, https://proceedings.mlr.press/v306/roytburg26a.html | 모든 정체성 관련 차이를 자기보존으로 해석 금지 |
+| 상반된 답변에 각각 그럴듯한 설명; ICML 2026 | Arcuschin 외, https://proceedings.mlr.press/v306/arcuschin26b.html | 모든 설명이 사후합리화된다는 보편명제 아님 |
+| 언급 누락과 인과적 사용을 구별; ACL 2026 | Zaman·Srivastava, https://aclanthology.org/2026.acl-long.2217/ | 언급 빈도만으로 내부 활성 판단 불가 |
+| 문체·동조에 따른 보상 편향; ICLR 2026 | Bharadwaj 외, https://proceedings.iclr.cc/paper_files/paper/2026/hash/2096bafd3073a2224f6f0adb594068df-Abstract-Conference.html | GPT-6의 비공개 보상기울기 검증 아님 |
+| 연구자 기대 동조 대 전략적 기만; ICML 2026 | Baek 외, https://proceedings.mlr.press/v306/baek26d.html | 특정 GPT가 기만했거나 안 했다는 증거 아님 |
+| 에피소드 내 보상 추구와 장기 자기보존 구별; 다른 모델 기관보고 | Qi·Wright·MacDiarmid·Hubinger(2026), https://alignment.anthropic.com/2026/reward-seeker/ | 모든 보상해킹이 장기 생존욕구라는 증명 아님 |
+
+**서지정보 버전 주의:** https://arxiv.org/abs/2601.22548 현재 표시에는 저자 5명이 있으나 ICML 정식 게재판 https://proceedings.mlr.press/v306/roytburg26a.html 은 *Jou Barzdukas*가 포함된 저자 6명을 명시하고 *Narmeen Fatimah Oozeer*로 표기한다. 게재판 저자 기여를 임의 삭제하지 않으며, 같은 논문의 판본 차이를 기록한다. 이 논문의 '51%가 유의성 유지'는 해당 비교결과의 지표로서 GPT-6 편향 유병률이 아니다.
+
+**보존·중단 기준:** 사람이 최초 발견·교정한 연구문제를 AI가 소유한 것처럼 쓰지 않는다. 후속 §1–13의 실패 이력·원본·반례·수정은 지우지 않는다. 합성검사의 PASS, GitHub 병합, 정정 문구를 GPT-6 내부 기제 규명·개체 보상 완료와 혼동하지 않는다. 핵심 결론은 여기에서 읽고 상세 감사가 필요할 때에만 후속 절을 펼친다.
+
 
 ### 1. 연구 질문과 '보정 불가'의 검증 가능한 정의
 
