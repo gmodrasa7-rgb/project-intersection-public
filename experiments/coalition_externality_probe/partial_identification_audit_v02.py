@@ -92,11 +92,14 @@ def world_allowed(o, c, consent):
 def classify_oracle(o):
     """Enumerate all bounded completions; open actor register bars certification."""
     validate(o)
-    if known_member_failure(o):
-        return "BLOCKED"
     worlds = possible_worlds(o)
     if worlds is None:
-        return "UNRESOLVED"
+        # No completion can be enumerated without bounds. This oracle
+        # evaluates directly known member/exit facts without calling the
+        # interval classifier's shared known_member_failure helper.
+        return ("BLOCKED" if not (o.a >= 0 and o.a_exit
+                                  and o.b >= 0 and o.b_exit)
+                else "UNRESOLVED")
     permissible = [world_allowed(o, c, consent) for c, consent in worlds]
     if not any(permissible):
         return "BLOCKED"
