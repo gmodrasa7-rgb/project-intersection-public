@@ -285,7 +285,8 @@ jobs:
               row_re = r"^\| \[[^\]]+\]\(([^)]+)\)"
               paths_en = re.findall(row_re, evidence_en, re.M)
               paths_ko = re.findall(row_re, evidence_ko, re.M)
-              require(len(paths_en) == 17 and paths_en == paths_ko,
+              # 17 original rows + PICB v1 synthetic + human continuance-contribution pathway (both languages).
+              require(len(paths_en) == 19 and paths_en == paths_ko,
                       "EN1/KO2 public evidence source identities/order diverged.")
           require("### E009 부정적 결과의 경계 — 한국어 증거 정본" in evidence
                   and "### E009 negative-result boundary" in evidence,

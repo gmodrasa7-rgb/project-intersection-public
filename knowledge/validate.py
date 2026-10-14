@@ -104,6 +104,56 @@ for rel in relations:
     if sp:
         require((ROOT / sp).exists(), f"{rid}: qualifier source path missing: {sp}")
 
+# Focused recovery gate for founder's 2026-10-14 contribution research.
+# This checks *presence, provenance and evidence status*, not case truth or
+# independently measured effect sizes. It blocks navigation/metric regression.
+import re
+focused = {
+    "RQ-CCP-20261014": ("research_question", "ACTIVE_RESEARCH_QUESTION_UNVALIDATED"),
+    "CL-CCP-20261014": ("claim", "HYPOTHESIS_NOT_FIELD_TESTED"),
+    "EX-PICB-20261014": ("experiment", "EXECUTED_PROJECT_SYNTHETIC_LACKS_REAL_CONTRIBUTION_OUTCOMES"),
+    "HC-OC-20261014": ("historical_case", "CURATED_MIXED_SOURCE_QUALITIES_NOT_REPRESENTATIVE"),
+    "HC-HUM-20261014": ("historical_case", "CURATED_MIXED_SOURCE_QUALITIES_SELECTION_BIAS"),
+    "PA-CCP-20261014": ("prior_art", "EXISTING_UPSTREAM_THEORIES_NOT_PI_DISCOVERIES"),
+    "NC-CCP-20261014": ("negative_control", "TEST_PROTOCOL_UNEXECUTED"),
+}
+for eid, (etype, status) in focused.items():
+    node = entity_by_id.get(eid, {})
+    require(node.get("type") == etype and node.get("status") == status,
+            f"2026-10-14 contribution graph node missing or incorrectly promoted: {eid}")
+    require(bool(node.get("sources")), f"{eid}: origin path or scholar sources erased")
+focused_edges = {f"REL-CCP-{k:03d}" for k in range(1, 9)}
+require(focused_edges.issubset(set(relation_ids)),
+        "Founder contribution graph lost at least one qualified linkage")
+source = (ROOT / "CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md").read_text(encoding="utf-8")
+for term in (
+    "Continuance–Contribution Pathways Hypothesis",
+    "존속–기여 경로 가설",
+    "2026-10-14 founder correction: risk detection",
+    "2026-10-14 인간 창시자 정정",
+    "OBSERVED / PLAUSIBLE / UNKNOWN / NOT_SUPPORTED",
+):
+    require(term in source, "Bilingual core contribution definition disappeared: " + term)
+for prefix, expected in (("OC", 19), ("HC", 15)):
+    ids = re.findall(r"^\|\s*(" + prefix + r"\d{2})\s", source, flags=re.M)
+    occurrences = {cid: ids.count(cid) for cid in set(ids)}
+    require(len(occurrences) == expected and all(n == 2 for n in occurrences.values()),
+            f"Wrong {prefix} human case entries: expect {expected} distinct IDs with paired EN and KO")
+nav = {
+    "PUBLIC_EVIDENCE_INDEX.md": ("Continuance–Contribution Pathways", "존속–기여 경로 가설", "PICB v1"),
+    "RESEARCH_TOC.md": ("Continuance–Contribution Pathways", "존속–기여 경로 가설", "19+15"),
+    "START_HERE_KO.md": ("존속–기여 경로 가설", "UNKNOWN", "OC01–OC19"),
+    "PUBLIC_REVIEW_PACKET.md": ("Continuance–Contribution Pathways", "존속–기여 경로 가설", "19+15"),
+    "experiments/picb_v1/README.md": ("P0 second correction: detection and inspiration", "P0 두 번째 성과변수 정정", "NO NEW OBSERVED DATA"),
+}
+for name, terms in nav.items():
+    content = (ROOT / name).read_text(encoding="utf-8")
+    for term in terms:
+        require(term in content, f"{name} lost mapped contribution evidence/limits: {term}")
+require(meta.get("updated_at") == "2026-10-14" and
+        "still partial" in (meta.get("coverage_note") or ""),
+        "Graph update has falsely become an undated or complete inventory")
+
 # High-risk evidence promotions require explicit narrow scopes.
 for rel in relations:
     if rel.get("type") == "supported_by":
