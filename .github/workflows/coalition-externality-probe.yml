@@ -1,0 +1,44 @@
+name: Coalition externality probe
+
+on:
+  pull_request:
+    paths:
+      - "experiments/coalition_externality_probe/**"
+      - ".github/workflows/coalition-externality-probe.yml"
+      - "PUBLIC_EVIDENCE_INDEX.md"
+  push:
+    branches: [main]
+    paths:
+      - "experiments/coalition_externality_probe/**"
+      - ".github/workflows/coalition-externality-probe.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  synthetic-probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Deterministic self-checks and result receipt
+        run: |
+          python experiments/coalition_externality_probe/probe.py --verify > /tmp/pi-coalition-externality.json
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          data = json.loads(Path("/tmp/pi-coalition-externality.json").read_text())
+          assert data["self_checks_passed"] == 65
+          assert data["counts"] == {
+              "total": 10,
+              "member_select": 9,
+              "aggregate_select": 8,
+              "guard_admissible": 3,
+              "guard_blocked": 6,
+              "guard_unresolved": 1,
+          }
+          print("RESULT: project-authored deterministic synthetic probe PASS")
+          PY
