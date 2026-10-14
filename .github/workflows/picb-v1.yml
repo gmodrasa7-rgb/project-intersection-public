@@ -40,6 +40,11 @@ jobs:
               "신규 실측 데이터 0",
               "CONTRIBUTOR_LOSS_UNKNOWN_PARADOX",
               "newly enabled agents",
+              "P0 second correction: detection and inspiration",
+              "signal_reporter_id",
+              "inspirer_id",
+              "edge_evidence_status",
+              "위기 탐지·영감은 결과물이 없어도",
               "실제 기여물",
               "UNKNOWN",
               "미관측",
@@ -48,6 +53,9 @@ jobs:
           for phrase in (
               "### P0 recovered positive contribution-output axis",
               "### P0 복원한 긍정적 기여물 성과축",
+              "2026-10-14 founder correction: risk detection",
+              "2026-10-14 인간 창시자 정정",
+              "C6 나비효과 경로 검사",
           ):
               assert phrase in c, "Crosswalk lost original-positive-outcome origin: " + phrase
           print("PICB P0 POSITIVE OUTCOME GATE PASS: preserved/new agent contributions explicit; no fabricated observations")
