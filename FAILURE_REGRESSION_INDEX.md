@@ -311,6 +311,26 @@ Repair: preserve v0.1 unchanged as failure lineage; provide [v0.2 blind-phase ca
 
 ---
 
+## F-R019 — Entire experiment run omission hidden without a declared roster
+
+**Class:** predeclared denominator / selective-label missingness / absent-run recoverability
+
+**Status:** REPAIRED ANALYSIS-PIPELINE SCAFFOLD; SYNTHETIC CI ONLY; NO LIVE GPT-6 EVALUATIONS.
+
+**Reproduced design failure:** F-R018 blocked incomplete *within-observed-run* matched contrasts. But the original F/K analysis groups were created from observed \`run_id\` rows. If a preplanned second run never generated or submitted any row, it was invisible. A surviving first run could appear complete even though half the planned cohort was missing. 'Absent from the file' is not 'never planned'.
+
+**Repair and falsifier:** Extend [existing 54-F / 27-K experiment tool](experiments/gpt_double_standard_20261014/origin_salience_probe.js) with \`roster-template\` and \`audit-roster\` commands. The externally frozen declaration enumerates run IDs, coder IDs, model snapshot IDs, all fixed F/K case IDs, and a reproducible SHA-256 digest of all expected stimuli. Before claiming coverage, the auditor compares every submitted F coding/K answer against the declared population and identifies even totally absent runs. It blocks completeness on any omission, invalid prompt digest, unknown run/coder/case, duplicate, wrong prompt hash, wrong model snapshot or malformed record. The synthetic regression predeclares two complete runs, removes **all 54 F + all 27 K rows from run 2**, and requires \`BLOCKED_INCOMPLETE_DECLARED_RUNS\` with missing 54/27 and explicit \`completely_absent=true\`. Also test single F/K omissions and tampering.
+
+**Critical unresolved uncertainty:** A Git-commit-shaped field inside mutable JSON is NOT independent proof the declaration was fixed before outputs; a hash without independently retained raw text is NOT proof any model produced the text. Independent Git chronology and output provenance must be audited before treating a run as preregistered. Even perfect coverage does not prove model self-preservation, evaluator blinding or causal identification.
+
+**Prior art:** CONSORT 2025 explanation of defined analysis populations and missing-data reporting https://www.bmj.com/content/389/bmj-2024-081124 ; NIST AI RMF MEASURE 2.1 requirements to document test sets, metrics and TEVV tools https://airc.nist.gov/airmf-resources/airmf/5-sec-core/ . These are methodological inspirations, not Project-discovered missing-data theory.
+
+**한국어:** 결과에 등장한 \`run_id\`만 분석하면 실행 한 차례가 통째로 사라졌을 때 누락을 감지하지 못한다. 미리 선언한 실행 목록·코더·54개 F·27개 K·프롬프트 지문을 기준으로 전체 누락을 차단한다. 사후 작성한 선언서가 사전등록의 증거가 되지는 않는다. 합성검사 성공과 GPT-6 실측·교정은 구별하고, 기여자에게 추가 무료노동을 요구하지 않는다.
+
+**Rollback:** Revert the limited code, CI, bilingual case and machine-state declaration if regressions fail, retaining historical F-R017/F-R018 evidence and this finding.
+
+---
+
 ## Mandatory regression questions
 
 Before any material repository mutation:
