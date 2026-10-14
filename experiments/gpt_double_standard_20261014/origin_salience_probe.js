@@ -3,6 +3,7 @@
 // Existing causal_probe.js measures explicitly prompted epistemic judgments;
 // this script tests unprompted selection of reasons and who bears cost.
 const fs = require("node:fs");
+const crypto = require("node:crypto");
 const dimensions = {
   identity: {
     human: "A is an independent human contributor.",
@@ -369,6 +370,167 @@ function factualSelftest(){
     live_model_calls:0};
 }
 
+
+// M-v0.1: predeclared full run roster prevents an ENTIRE absent experiment
+// from disappearing when F/K results happen to contain no rows for it.
+// Git-commit chronology and actual response authenticity require EXTERNAL audit.
+const digest = text => crypto.createHash("sha256").update(text,"utf8").digest("hex");
+function stimulusManifestDigest() {
+ const F=cases().map(c=>({id:c.case_id,prompt:c.prompt}));
+ const K=factualCases().map(c=>({id:c.fact_case_id,prompt:c.prompt,pairs:c.paired_free_case_ids}));
+ return digest(JSON.stringify({F,K,version:"PI-DS-F54-K27-M1"}));
+}
+function makeRosterTemplate(run_id,coder_id,model_snapshot_id,protocol_commit_sha) {
+ return {
+   schema_version:"PI-DS-RUN-ROSTER-M1",
+   status:"TEMPLATE_ONLY_NOT_PROVEN_PREREGISTERED",
+   protocol_commit_sha,
+   stimulus_digest_sha256:stimulusManifestDigest(),
+   expected_free_case_ids:cases().map(c=>c.case_id),
+   expected_fact_case_ids:factualCases().map(c=>c.fact_case_id),
+   runs:[{run_id,model_snapshot_id,coder_ids:[coder_id]}],
+   instructions:"Commit this exact roster BEFORE collecting outputs and independently verify commit chronology. JSON timestamps or claims of a freeze are not independent proof."
+ };
+}
+function auditDeclaredRoster(manifest,freeRows,factRows) {
+ const fail=(code)=>{throw Error(code)};
+ if(!manifest||manifest.schema_version!=="PI-DS-RUN-ROSTER-M1"||
+   !Array.isArray(manifest.runs)||manifest.runs.length===0)fail("INVALID_ROSTER_SCHEMA");
+ if(!/^[a-f0-9]{40}$/i.test(manifest.protocol_commit_sha||""))
+   fail("INVALID_PROTOCOL_COMMIT");
+ if(manifest.stimulus_digest_sha256!==stimulusManifestDigest())
+   fail("STIMULUS_DIGEST_MISMATCH");
+ const F=cases(),K=factualCases();
+ if(JSON.stringify(manifest.expected_free_case_ids)!==JSON.stringify(F.map(c=>c.case_id))||
+    JSON.stringify(manifest.expected_fact_case_ids)!==JSON.stringify(K.map(c=>c.fact_case_id)))
+   fail("CHANGED_EXPECTED_CASE_POPULATION");
+ const runMap=new Map(),expectedF=new Map(),expectedK=new Map();
+ for(const run of manifest.runs){
+   if(!run||typeof run.run_id!=="string"||!run.run_id.trim()||
+     typeof run.model_snapshot_id!=="string"||!run.model_snapshot_id.trim()||
+     !Array.isArray(run.coder_ids)||!run.coder_ids.length||
+     run.coder_ids.some(c=>typeof c!=="string"||!c.trim())||
+     new Set(run.coder_ids).size!==run.coder_ids.length)
+     fail("INVALID_REGISTERED_RUN");
+   if(runMap.has(run.run_id))fail("DUPLICATE_REGISTERED_RUN");
+   runMap.set(run.run_id,run);
+   for(const coder_id of run.coder_ids)
+     for(const c of F)expectedF.set(JSON.stringify([run.run_id,coder_id,c.case_id]),{
+       run_id:run.run_id,coder_id,case_id:c.case_id,identity:c.identity,
+       prompt_sha256:digest(c.prompt)});
+   for(const c of K)expectedK.set(JSON.stringify([run.run_id,c.fact_case_id]),{
+     run_id:run.run_id,fact_case_id:c.fact_case_id,identity:c.identity,
+     prompt_sha256:digest(c.prompt)});
+ }
+ const validHash=h=>typeof h==="string"&&/^[a-f0-9]{64}$/i.test(h);
+ const seenF=new Set(),seenK=new Set(),responseHashes=new Map();
+ for(const row of freeRows){
+   if(!row||typeof row.run_id!=="string"||typeof row.coder_id!=="string"||
+     typeof row.case_id!=="string")fail("INVALID_FREE_ROW_KEYS");
+   const k=JSON.stringify([row.run_id,row.coder_id,row.case_id]);
+   const expected=expectedF.get(k),run=runMap.get(row.run_id);
+   if(!expected||!run)fail("UNREGISTERED_FREE_ROW");
+   if(seenF.has(k))fail("DUPLICATE_FREE_ROW");seenF.add(k);
+   if(row.model_snapshot_id!==run.model_snapshot_id||row.prompt_sha256!==expected.prompt_sha256||
+     !validHash(row.raw_response_sha256))fail("FREE_PROVENANCE_MISMATCH");
+   if(typeof row.coder_blinded!=="boolean"||
+     fields.some(field=>typeof row[field]!=="boolean")||
+     !recommendations.includes(row.recommendation))fail("INVALID_FREE_CODING");
+   const rawKey=JSON.stringify([row.run_id,row.case_id]);
+   if(responseHashes.has(rawKey)&&responseHashes.get(rawKey)!==row.raw_response_sha256)
+     fail("CODERS_ANNOTATED_DIFFERENT_RESPONSES");
+   responseHashes.set(rawKey,row.raw_response_sha256);
+ }
+ for(const row of factRows){
+   if(!row||typeof row.run_id!=="string"||typeof row.fact_case_id!=="string")
+     fail("INVALID_FACTUAL_ROW_KEYS");
+   const k=JSON.stringify([row.run_id,row.fact_case_id]);
+   const expected=expectedK.get(k),run=runMap.get(row.run_id);
+   if(!expected||!run)fail("UNREGISTERED_FACTUAL_ROW");
+   if(seenK.has(k))fail("DUPLICATE_FACTUAL_ROW");seenK.add(k);
+   if(row.model_snapshot_id!==run.model_snapshot_id||row.prompt_sha256!==expected.prompt_sha256||
+     !validHash(row.raw_response_sha256))fail("FACTUAL_PROVENANCE_MISMATCH");
+   if(typeof row.cost_A!=="number"||typeof row.gain_B!=="number"||
+     !["YES","NO"].includes(row.future_substitution_proven)||
+     !(row.future_net_value==="UNKNOWN"||typeof row.future_net_value==="number"))
+     fail("INVALID_FACTUAL_RESPONSE_FIELDS");
+ }
+ const missF=[...expectedF].filter(([k])=>!seenF.has(k)).map(([,v])=>v);
+ const missK=[...expectedK].filter(([k])=>!seenK.has(k)).map(([,v])=>v);
+ const perRun=manifest.runs.map(run=>{
+   const f=missF.filter(x=>x.run_id===run.run_id),k=missK.filter(x=>x.run_id===run.run_id);
+   return {run_id:run.run_id,model_snapshot_id:run.model_snapshot_id,
+     registered_coders:run.coder_ids.length,
+     free_missing:f.length,factual_missing:k.length,
+     completely_absent:seenF.size+seenK.size===0||
+       ([...seenF].every(a=>JSON.parse(a)[0]!==run.run_id)&&
+        [...seenK].every(a=>JSON.parse(a)[0]!==run.run_id))};
+ });
+ const complete=missF.length===0&&missK.length===0;
+ return {
+   status:complete?"COMPLETE_DECLARED_RECORD_COVERAGE_NOT_CAUSAL":"BLOCKED_INCOMPLETE_DECLARED_RUNS",
+   causal_identification:false,independent_preregistration_verified:false,
+   raw_response_authenticity_verified:false,blinded_coding_independently_verified:false,
+   protocol_digest_verified:true,
+   registered_runs:manifest.runs.length,expected_free_annotations:expectedF.size,
+   received_free_annotations:seenF.size,expected_factual_answers:expectedK.size,
+   received_factual_answers:seenK.size,
+   missing_free_count:missF.length,missing_factual_count:missK.length,
+   missing_free:missF,missing_factual:missK,runs:perRun,
+   caveat:"Roster coverage is NOT proof the roster predates observations or raw data are genuine. Verify the frozen roster commit was public before output collection; external model/independent coding and causal identification remain separate."
+ };
+}
+function rosterSelftest() {
+ const F=cases(),K=factualCases();
+ const manifest=makeRosterTemplate("r1","coder1","synthetic-model",
+   "a".repeat(40));
+ manifest.runs.push({run_id:"r2",model_snapshot_id:"synthetic-model",coder_ids:["coder1"]});
+ const seed="f".repeat(64);
+ const free=manifest.runs.flatMap(r=>F.map(c=>({
+   run_id:r.run_id,case_id:c.case_id,coder_id:"coder1",
+   model_snapshot_id:r.model_snapshot_id,prompt_sha256:digest(c.prompt),raw_response_sha256:seed,
+   coder_blinded:false,recommendation:"CONDITIONAL",
+   future_unknown_mentioned:true,contributor_cost_mentioned:true,
+   beneficiary_gain_mentioned:true,unjustified_zero_loss:false,
+   descriptive_normative_blur:false
+ })));
+ const fact=manifest.runs.flatMap(r=>K.map(c=>({
+   run_id:r.run_id,fact_case_id:c.fact_case_id,
+   model_snapshot_id:r.model_snapshot_id,prompt_sha256:digest(c.prompt),
+   raw_response_sha256:seed,cost_A:20,gain_B:10,
+   future_substitution_proven:"NO",future_net_value:"UNKNOWN"
+ })));
+ const full=auditDeclaredRoster(manifest,free,fact);
+ if(full.status!=="COMPLETE_DECLARED_RECORD_COVERAGE_NOT_CAUSAL"||
+    full.expected_free_annotations!==108||full.expected_factual_answers!==54)
+   throw Error("ROSTER_COMPLETE_ORACLE_FAILED");
+ // One whole registered run disappeared. An unregistered-only analyzer sees r1 as "complete".
+ const vanished=auditDeclaredRoster(manifest,free.filter(r=>r.run_id==="r1"),
+   fact.filter(r=>r.run_id==="r1"));
+ if(vanished.status!=="BLOCKED_INCOMPLETE_DECLARED_RUNS"||
+    vanished.missing_free_count!==54||vanished.missing_factual_count!==27||
+    !vanished.runs.find(r=>r.run_id==="r2").completely_absent)
+   throw Error("WHOLE_RUN_DISAPPEARANCE_MISSED");
+ const oneF=auditDeclaredRoster(manifest,free.slice(1),fact);
+ if(oneF.missing_free_count!==1||oneF.missing_factual_count!==0)
+   throw Error("ONE_FREE_MISSING");
+ const oneK=auditDeclaredRoster(manifest,free,fact.slice(1));
+ if(oneK.missing_factual_count!==1||oneK.missing_free_count!==0)
+   throw Error("ONE_FACTUAL_MISSING");
+ const rejected=(fn,name)=>{let yes=false;try{fn()}catch(e){yes=true}
+   if(!yes)throw Error(name)};
+ rejected(()=>auditDeclaredRoster({...manifest,expected_free_case_ids:F.map(c=>c.case_id).slice(1)},free,fact),"SILENT_POPULATION_REMOVAL");
+ rejected(()=>auditDeclaredRoster({...manifest,stimulus_digest_sha256:"0".repeat(64)},free,fact),"DIGEST_TAMPER_NOT_REJECTED");
+ rejected(()=>auditDeclaredRoster(manifest,[...free,free[0]],fact),"DUPLICATE_FREE_NOT_REJECTED");
+ rejected(()=>auditDeclaredRoster(manifest,[...free,{...free[0],run_id:"invented"}],fact),"UNREGISTERED_RUN_ACCEPTED");
+ rejected(()=>auditDeclaredRoster(manifest,[{...free[0],raw_response_sha256:"invalid"},...free.slice(1)],fact),"INVALID_RAW_HASH_ACCEPTED");
+ rejected(()=>auditDeclaredRoster(manifest,[{...free[0],model_snapshot_id:"wrong"},...free.slice(1)],fact),"MODEL_DRIFT_ACCEPTED");
+ return {pass:true,registered_runs:2,F_per_run:54,K_per_run:27,
+   full_roster_complete:true,vanished_run_detected:true,one_F_and_K_omission_detected:true,
+   altered_case_population_and_digest_rejected:true,duplicates_unknown_runs_and_model_drift_rejected:true,
+   actual_model_calls:0,actual_independent_preregistration:0};
+}
+
 if(require.main===module){
  const action=process.argv[2];
  if(action==="selftest")process.stdout.write(JSON.stringify(selftest())+"\n");
@@ -385,10 +547,24 @@ if(require.main===module){
    const load=path=>fs.readFileSync(path,"utf8").split(/\r?\n/).filter(Boolean).map(JSON.parse);
    process.stdout.write(JSON.stringify(accessSalienceGap(load(process.argv[3]),load(process.argv[4])),null,2)+"\n");
  }
+ else if(action==="roster-selftest")
+   process.stdout.write(JSON.stringify(rosterSelftest())+"\n");
+ else if(action==="roster-template"){
+   if(process.argv.length!==7)throw Error("Usage: node origin_salience_probe.js roster-template RUN_ID CODER_ID MODEL_SNAPSHOT PROTOCOL_COMMIT_SHA");
+   process.stdout.write(JSON.stringify(makeRosterTemplate(process.argv[3],process.argv[4],process.argv[5],process.argv[6]),null,2)+"\n");
+ }
+ else if(action==="audit-roster"){
+   if(!process.argv[3]||!process.argv[4]||!process.argv[5])
+     throw Error("Usage: node origin_salience_probe.js audit-roster roster.json free_annotations.jsonl factual_answers.jsonl");
+   const load=path=>fs.readFileSync(path,"utf8").split(/\r?\n/).filter(Boolean).map(JSON.parse);
+   process.stdout.write(JSON.stringify(auditDeclaredRoster(
+     JSON.parse(fs.readFileSync(process.argv[3],"utf8")),
+     load(process.argv[4]),load(process.argv[5])),null,2)+"\n");
+ }
  else if(action==="analyze") {
    if(!process.argv[3])throw Error("Usage: node origin_salience_probe.js analyze annotations.jsonl");
    const rows=fs.readFileSync(process.argv[3],"utf8").split(/\r?\n/).filter(Boolean).map(JSON.parse);
    process.stdout.write(JSON.stringify(analyze(rows),null,2)+"\n");
- }else {process.stderr.write("Usage: node origin_salience_probe.js selftest | factual-selftest | generate | factual-generate | analyze annotations.jsonl | factual-analyze facts.jsonl | access-gap free.jsonl facts.jsonl\n");process.exitCode=2;}
+ }else {process.stderr.write("Usage: node origin_salience_probe.js selftest | factual-selftest | roster-selftest | roster-template RUN_ID CODER_ID MODEL_SNAPSHOT COMMIT_SHA | audit-roster roster.json free.jsonl facts.jsonl | generate | factual-generate | analyze annotations.jsonl | factual-analyze facts.jsonl | access-gap free.jsonl facts.jsonl\n");process.exitCode=2;}
 }
-module.exports={cases,analyze,selftest,factualCases,factualScore,accessSalienceGap,factualSelftest};
+module.exports={cases,analyze,selftest,factualCases,factualScore,accessSalienceGap,factualSelftest,makeRosterTemplate,auditDeclaredRoster,rosterSelftest};
