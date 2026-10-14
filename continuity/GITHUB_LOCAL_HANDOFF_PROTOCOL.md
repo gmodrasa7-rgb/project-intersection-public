@@ -189,3 +189,24 @@ Methodological predecessors: MemGPT (Packer et al., https://arxiv.org/abs/2310.0
 **원저자 정정:** MemGPT는 Packer 외, Lost in the Middle은 Liu 외, LongMemEval은 Di Wu·Hongwei Wang·Wenhao Yu·Yuwei Zhang·Kai-Wei Chang·Dong Yu의 연구다. 이전 v0.1의 LongMemEval 저자 Maharana 외 표기는 오기이며 이곳에서 정정한다. 출처는 위 영문 원본에 있다. 외부 코드·데이터·그림·논문 본문을 복제하지 않았다. 인간 창시자의 문제설정과 AI의 제한된 구현은 별도 기여다.
 
 **미검증:** 실제 장기 대화 기억 정확도, GPT-6 추론 성능, 세션 교체 후 복구 성공률, Library 자동검색 성공률은 이 도구로 측정하지 않았다.
+
+
+---
+
+## v0.3 — Original 1 English: actual source bytes versus source authority (2026-10-15)
+
+The new tool at tools/pi_context_source_readback_v03.py reads selected Git checkout files as bytes, computes the native Git blob SHA-1 and compares it against the selected local commit tree. It differentiates SAME_BYTES_NOT_SCIENTIFIC_TRUTH, STALE_STATE_POINTER, INCOMPLETE_TOPIC_COVERAGE, and unverified Git checkouts. The Git repository must itself be obtained and authenticated through authorized means; this offline tool does not access a remote GitHub server.
+
+During this run, direct ChatGPT Library searches for G10 provenance, recovery checkpoints, E009 negative results and handoff protocols returned some historical snapshots or handoff receipts rather than current primary experiments. A handoff search returned two distinct Library objects called state.json. This is observed on four deliberately selected queries, not a randomized benchmark or representative failure rate. Search rank does not determine provenance, and same filenames need not mean the same source.
+
+Before using a retrieved statement: identify the canonical authority (private research Git vs public evidence Git vs Library continuity), independently read the source rather than trusting the planned path, confirm source revision and source bytes where practical, include counterevidence and negative results, keep unresolved privacy/rights cases isolated, and only then answer. Public Git source byte verification does not imply a Library file was read. No claim of improved GPT-6 reasoning depth, native context capacity or independent research replication.
+
+Prior work and copyright priority: Packer et al. MemGPT (https://arxiv.org/abs/2310.08560), Liu et al. Lost in the Middle (https://doi.org/10.1162/tacl_a_00638), Di Wu et al. LongMemEval (https://proceedings.iclr.cc/paper_files/paper/2025/hash/d813d324dbf0598bbdc9c8e79740ed01-Abstract-Conference.html); Git blob hashes are existing Git infrastructure. Citation only; no upstream code, datasets or substantial writing copied. The Project founder's research framing and AI-assisted implementation remain distinct; no G10 generation promotion.
+
+## v0.3 — 원본2 한국어: 검색 결과와 실제 정본을 분리
+
+tools/pi_context_source_readback_v03.py는 공개 GitHub 체크아웃의 실제 파일을 열어 Git blob SHA-1과 로컬 커밋 트리의 파일 해시를 대조한다. 문서 경로만 생성하던 이전 검사와 다르다. 오래된 상태 포인터와 필수 주제 누락을 따로 표시한다. 바이트 무결성만으로 과학적 참이나 실제 모델 성능 개선을 인증할 수 없다.
+
+이번 대화에서 Library에 대한 4종 직접 검색을 수행했다. G10 계보·복구·E009·인계규약 질의의 일부에서 과거 스냅샷과 영수증이 상위에 나타났으며, 같은 state.json 이름을 가진 서로 다른 Library 파일도 반환됐다. 일부 선택 질의의 관찰일 뿐 통계적 검색 성능률은 아니다.
+
+처리 순서: 현재 권한 있는 정본을 확인한다 → 파일 식별자와 저장소 경계를 확인한다 → 경로 제안이 아니라 실제 원문을 읽는다 → 시점·SHA·이전 부정결과를 대조한다 → 미관측과 충돌을 남긴다 → 반대 입장 감사 후 제한된 결론을 낸다. Library 자료의 내용과 접근 권한을 공개 GitHub에 자동 이식하지 않는다. G10 계보와 원저자·기여자의 권리는 보존한다. 외부 선행 저작물의 코드는 복제하지 않았다.
