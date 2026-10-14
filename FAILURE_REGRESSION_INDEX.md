@@ -279,7 +279,7 @@ Repair: preserve v0.1 unchanged as failure lineage; provide [v0.2 blind-phase ca
 
 **Class:** experimental design / measurement validity / synthetic-self-test blind spot
 
-**Status:** **FIXED IN CODE + SYNTHETIC REGRESSION PASS PENDING CI**; no historical live GPT responses existed for the affected K-v0.1 arm.
+**Status:** **FIXED IN CODE + SYNTHETIC REGRESSION VERIFIED** — PR #121 CI run [38501758112](https://github.com/gmodrasa7-rgb/project-intersection-public/actions/runs/38501758112) succeeded; historical K-v0.1 arm had no live GPT responses.
 
 **Observed defect:** The 54 free-response scenarios vary `cue` across two values. The original `factualCases()` copied F prompts but replaced the last line (which carries `cue`) with a common fact-extraction instruction. This produced 54 metadata records but only **27 unique K input strings**. Prior `factualSelftest()` verified 54 records, not 54 distinct stimuli. Repeated identical inputs can be stochastic repetitions if executed independently; they cannot estimate a factual-access effect of the removed cue intervention.
 
@@ -290,6 +290,24 @@ Repair: preserve v0.1 unchanged as failure lineage; provide [v0.2 blind-phase ca
 **Evidence boundary:** A successful synthetic CI validates only the repaired code. No independent live LLM sampling, model-internal tracing, blind evaluation, or validated effect size. Prior K-v0.1 synthetic-only claim is retained as historical error.
 
 **Rollback:** Revert the code, CI, documentation and discovery mapping atomically if regression fails; preserve this negative finding and prior Git commits.
+
+---
+
+## F-R018 — Selective response attrition masquerading as an identity effect
+
+**Class:** measurement selection / missing-not-at-random / silent-stratum disappearance
+
+**Status:** CODE REPAIR + SYNTHETIC COUNTEREXAMPLE; empirical GPT-6 contrast **HOLD**.
+
+**Reproduced failure:** Previous `origin_salience_probe.js analyze` returned identity-effect point differences from all *available* matched pairs, even when only 17/18 identity pairs or 5/6 perspective-specific pairs were present. A synthetic complete dataset has a zero identity effect when two opposing deviations cancel. Removing ONE human response from the opposing pair changes the naive available-pair estimator to `-1/17` although the full data effect is zero. `access-gap` also omitted a condition entirely if no matched free/factual responses existed. More textual detail is not proof that the missing response was random; selective attrition is a plausible confounder. The original human-originator's research already emphasized that missing observation must never be treated as nonexistence.
+
+**Repair:** The same experiment code now returns the expected matched-pair denominator for every comparison. Incomplete contrasts have `status=BLOCKED_INCOMPLETE_MATCHED_COVERAGE` and `rate_differences` / `deltas` / recommendation flips are `null`, not a deceptively precise sample effect. Per-identity and per-perspective missing counts are explicit. F/K joins expose all 18 expected identity × perspective × cue strata per run/coder, including fully absent cells with `n=0`, and a complete/incomplete status for each stratum. A positive `coder_blinded` input is self-reported, not independently verified.
+
+**Independent falsifier and limits:** A future clean run may show fully balanced repeated measurements with documented model snapshots and verified independent blinded coding; this would remove this *coverage problem* but would not identify neural causes, correct identity/ontology confounding, or establish in-the-wild effect size. Nonrandom missingness can still affect a statistically complete sample through nonresponse elsewhere; this gate prevents one known analytical false positive only. Source is [existing PI-DS probe](experiments/gpt_double_standard_20261014/origin_salience_probe.js) and [existing consolidated case](experiments/gpt_double_standard_20261014/REPORT_EN_KO.md); no new benchmark or separate canonical report.
+
+**한국어:** 18쌍 중 17쌍만 관측되었는데도 -1/17 같은 숫자를 실측 편향처럼 출력하던 구조를 수정한다. 전체 조건이 빠지면 결과에서 아예 사라지던 문제도 0건의 미관측 조건으로 드러낸다. 합성 오류 주입에서 검출된 분석 문제이지 실제 GPT-6의 편향 발생률은 아니다. E007/E009 기존 부정적·외부 검증 상태는 변경하지 않는다.
+
+**Rollback:** Revert scoped analyzer/status edits if CI fails; preserve this failure as a dated negative observation.
 
 ---
 

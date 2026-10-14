@@ -145,6 +145,13 @@ jobs:
           assert cases['free_cases_per_factual_prompt'] == 2
           assert cases['factual_probe_version'] == 'K-v0.2'
           assert '## F-R017' in failures
+          assert '## F-R018' in failures
+          assert 'P0 selective-attrition measurement repair' in report
+          assert 'P0 선택적 미관측 오류 수정' in report
+          assert cases['analysis_missing_pairs_blocked'] is True
+          assert cases['access_gap_missing_strata_exposed'] is True
+          assert cases['coder_blinding_claim_independently_verified'] is False
+          assert cases['complete_matched_pairs_are_descriptive_not_causal'] is True
           assert 'PI-DS-20261014-01' in report
           print('PI-DS bilingual canonical + evidence-navigation + machine status parity PASS')
           print('SCOPE: structural consistency only, NOT GPT-6 behavioral evidence or paper verification')
