@@ -89,3 +89,27 @@ jobs:
           assert cases["known_unavoidable_C_loss"] == "BLOCKED"
           print("v0.2 finite-world self-audit PASS; only project-authored synthetic evidence")
           PY
+
+
+      - name: Check ex-ante coalition and ex-post enforcement counterexamples (exploratory v0.1)
+        run: |
+          python experiments/coalition_externality_probe/credible_coalition_probe_v01.py > /tmp/pi-credible-coalition.json
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          data = json.loads(Path("/tmp/pi-credible-coalition.json").read_text(encoding="utf-8"))
+          assert data["schema"] == "pi-credible-coalition-exploratory/v0.1"
+          assert data["checks"] == 116
+          assert data["status"].startswith("PROJECT_SYNTHETIC_POST_HOC")
+          x = {v["parameters"]["name"]: v for v in data["cases"]}
+          def names(s):
+              return {r["members"] for r in x[s]["ex_ante_pure_nash_equilibria"]}
+          assert names("declared_high_credibility_but_no_ex_post_incentive") == {"NONE"}
+          assert names("credible_coalition_two_equilibria") == {"NONE", "CD"}
+          assert names("defense_displaces_attack_to_E") == {"NONE", "CD"}
+          assert names("maintenance_cost_destroys_full_coalition_equilibrium") == {"NONE"}
+          assert x["defense_displaces_attack_to_E"]["all_join_counterfactual"]["target"] == "E"
+          assert x["E_attack_unreported"]["all_join_counterfactual"]["observed_attack_probability"] == 0
+          assert x["no_prior_incentive_to_attack"]["none_join_counterfactual"]["target"] == "NONE"
+          print("Synthetic credible-response cases PASS; no empirical or independent-replication claim")
+          PY
