@@ -105,6 +105,9 @@ jobs:
       - name: Test PI-DS free-response origin salience factorial (synthetic only)
         run: node experiments/gpt_double_standard_20261014/origin_salience_probe.js selftest
 
+      - name: Test PI-DS factual-access versus spontaneous salience distinction (synthetic only)
+        run: node experiments/gpt_double_standard_20261014/origin_salience_probe.js factual-selftest
+
       - name: Run public-governance regression checks
         shell: bash
         run: |
