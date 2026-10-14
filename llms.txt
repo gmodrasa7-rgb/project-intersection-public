@@ -35,6 +35,13 @@
 Independent, falsification-first research on how power asymmetry, incentives, timing, practical exit, recovery and independent error correction shape coexistence versus exploitative optimization. The aim is to identify falsifiable conditions, not to assert that coexistence is universally optimal.
 
 ## Primary navigation
+### Three logical levels / 3단계 공개 탐색
+
+- **Level 1 — Entry / 탐색:** README.md; START_HERE_KO.md; AI_REVIEW_START_HERE.md; llms.txt; AI_DISCOVERY_INDEX.json.
+- **Level 2 — Interpretation / 이해·검증:** RESEARCH_OVERVIEW.md; RESEARCH_TOC.md; PUBLIC_EVIDENCE_INDEX.md; PUBLIC_REVIEW_PACKET.md; RESEARCH_STATUS_POLICY.md; FAILURE_REGRESSION_INDEX.md; ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md; CONTRIBUTING.md.
+- **Level 3 — Artifacts and operations / 실험·확장·운영:** experiments/; research/; prior-art/; CASE_* documents via RESEARCH_TOC.md; knowledge/; governance/; continuity/; funding/; tools/.
+- These are **logical reader routes**. Do not infer empirical support, independent validation, training permissions, a complete index, or file relocation from these levels. / 탐색 편의 구분이며 실증·독립검증·재사용 허가·전수색인·파일이동을 의미하지 않는다.
+
 - [Project repository](https://github.com/gmodrasa7-rgb/project-intersection-public)
 - [Korean start / 한국어 시작](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/START_HERE_KO.md)
 - [Research overview](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/RESEARCH_OVERVIEW.md)
