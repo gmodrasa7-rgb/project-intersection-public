@@ -37,6 +37,15 @@ For external material, add citation metadata and a rights/license note. Do not c
 
 Do not submit unnecessary health, family, banking, tax, credential, or private conversation information.
 
+
+## Public research scope / 공개 연구 범위
+
+Only publish material with a traceable connection to Project Intersection's questions, methods, prior art, falsifiable cases, evidence, governance, or research funding. Do not import unrelated personal conversations as evidence. Exclude personal financial positions, securities transactions, price forecasts, account/debt details, and unrelated life or consumer topics. Removing such material does **not** justify suppressing relevant counterexamples, negative results, contributor costs, or scientific uncertainties.
+
+Economic incentives, institutional finance and investment as *research mechanisms* remain in scope when they have a documented causal relevance and proper source attribution; they are not personal trading advice. During cleanup, preserve in-scope provenance, stable identifiers and Git rollback capability. Do not repeat private details in pull-request descriptions or audit logs.
+
+공개 자료에는 Project Intersection의 연구 질문·방법·선행연구·반증 가능한 사례·증거·거버넌스·연구지원과 연결되는 내용만 수록한다. 사적인 대화를 연구 근거로 전용하지 않으며 개인 금융 포지션·증권 거래·가격 예측·계좌·부채 및 연구와 무관한 생활 주제는 제외한다. 그러나 **연구상 관련된** 경제적 유인, 제도적 금융·투자 기제, 기여 비용, 반례, 부정 결과와 불확실성은 출처와 인과적 관련성을 확인하여 보존한다. 정리 과정에서 식별자·기여 계보·되돌리기 가능성을 유지하고 공개 변경 기록에 사적 세부사항을 재기재하지 않는다.
+
 ## Result interpretation
 
 A successful reproduction strengthens only the narrow reproduced claim.

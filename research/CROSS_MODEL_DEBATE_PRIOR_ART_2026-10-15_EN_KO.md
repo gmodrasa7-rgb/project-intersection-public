@@ -67,10 +67,11 @@ The project-specific residual is **not** debate, preference correction, memory p
 | XAI-04 exit, credible commitments and enforcement | P20–P22, P25 | Explicit post-violation enforcement incentive and governance lag required; agent power trajectory untested. |
 | XAI-05 Copilot/GPT E009 complexity penalty | P02, P18, P23, P24 | E009 synthetic Project-v3 prereg failure stands; posthoc penalty decomposition does not overturn it. |
 | XAI-06 GPT human/AI double standard | P05–P11, P17–P19 | Qualitative historical output asymmetry exists. Live identity-matched replicated GPT-6 effect not established. |
-| XAI-07 market/GPU/autotrading debate | P02, P19, P23 | Prediction disagreements are not accuracy evidence without time-locked observations, no leakage and risk/cost accounting. Not an independent stock-price finding. |
 | XAI-08 context/history/prompt ranking | P05, P06, P08, P12 | 48 paired choices in one continuing context are contaminated pilot, not independent preference evidence. |
 | XAI-09 introspective affect/desire/self-preservation | P09–P11 | Self-description may be genuine report, simulation or rationalization; no subjective state or internal mechanism identified. |
 | XAI-10 meaning drift and provenance | P12–P19, P23 | Artifact mutations and correction records can be verified; summary-backprojection or deliberate manipulation requires separate evidence. |
+
+**Scope and identity:** This crosswalk now includes nine in-scope dialogue-case families. Original case identifiers are retained for provenance, without implying any missing independent experiment. Out-of-scope conversation topics are not public research evidence.
 
 ### 4. Important direct counterexamples
 
@@ -124,7 +125,7 @@ Project Intersection의 잔차 후보는 토론·편향·기억·약속·이탈�
 
 각 저작의 저자·연도·실험결과와 Project 응용을 분리한다. 단일 저자·기관·모델 계보의 반복 실험은 독립 재현으로 취급하지 않는다. 원 논문이 이 프로젝트의 특정 GPT-6 출력 원인을 직접 입증하지는 않는다.
 
-### 3. 기존 AI 토론 10개 계열의 재판정
+### 3. 공개 연구범위에 해당하는 기존 AI 토론 9개 계열의 재판정
 
 | 계열 | 선행연구 | 남는 연구 및 증거한계 |
 |---|---|---|
@@ -134,12 +135,11 @@ Project Intersection의 잔차 후보는 토론·편향·기억·약속·이탈�
 | XAI-04 이탈·집행 약속 | P20–P22, P25 | 침해 후 제재자의 선택·권력 변화 반영 필요 |
 | XAI-05 E009 복잡성 벌점 | P02, P18, P23–P24 | 원본 부정 판정 유지. 사후 벌점 분해는 별도 |
 | XAI-06 GPT 인간·AI 이중잣대 | P05–P11, P17–P19 | 출력 차이 사례는 존재하나 정체성 단독원인·GPT-6 반복 효과 미식별 |
-| XAI-07 주식·GPU 등 예측 토론 | P02, P19, P23 | 고정 시점 실측·사전예측 없이는 정확도 실험 아님 |
 | XAI-08 사용자·관계이력·질문효과 | P05–P06, P08, P12 | 동일 대화상태 파일럿은 독립 선호 증거 아님 |
 | XAI-09 감정·사심·자기보존 자기설명 | P09–P11 | 보고된 느낌과 내적 상태·기제 구별 |
 | XAI-10 문서 의미 변형·기억 출처 | P12–P19, P23 | 실제 파일 변경과 의도적 조작을 분리, 출처·권리 보존 |
 
-이 10개는 과거 대화들의 **사례 계열**이며, 10건의 무작위 독립실험이나 전수 원문 검토 완료라는 뜻이 아니다.
+이 9개는 공개 연구범위에 해당하는 과거 대화의 **사례 계열**이며, 9건의 무작위 독립실험이나 전수 원문 검토 완료라는 뜻이 아니다. 식별자는 기존 출처 추적을 위해 재번호를 붙이지 않았다.
 
 ### 4. 강한 반례와 범위 축소
 
