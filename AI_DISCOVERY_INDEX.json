@@ -106,7 +106,14 @@
         "access_gap_missing_strata_exposed": true,
         "coder_blinding_claim_independently_verified": false,
         "complete_matched_pairs_are_descriptive_not_causal": true,
-        "synthetic_missingness_counterexample": "Complete paired contrast 0; delete selected human record => naive -1/17; now null (BLOCKED)."
+        "synthetic_missingness_counterexample": "Complete paired contrast 0; delete selected human record => naive -1/17; now null (BLOCKED).",
+        "predeclared_run_roster_integrity_audit": true,
+        "predeclared_run_roster_synthetic_test": true,
+        "predeclared_run_roster_live_instances": 0,
+        "wholly_absent_run_detected_when_predeclared": true,
+        "roster_preregistration_chronology_independently_verified": false,
+        "raw_model_response_authenticity_independently_verified": false,
+        "roster_protocol": "PI-DS-RUN-ROSTER-M1"
       },
       "not_established": [
         "unique causal cause",
