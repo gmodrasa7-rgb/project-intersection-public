@@ -39,9 +39,9 @@ def validate(o):
         lo, hi = o.c_bounds
         if type(lo) is not int or type(hi) is not int or lo > hi:
             raise ValueError("INVALID_BOUNDS")
-    if o.c_consent not in CONSENTS or type(o.a_exit) is not bool or type(o.b_exit) is not bool:
+    if (o.c_consent is not None and type(o.c_consent) is not bool) or type(o.a_exit) is not bool or type(o.b_exit) is not bool:
         raise ValueError("INVALID_BOOLEAN")
-    if o.affected_scope_complete not in SCOPES:
+    if o.affected_scope_complete is not None and type(o.affected_scope_complete) is not bool:
         raise ValueError("INVALID_SCOPE")
 
 
@@ -150,7 +150,7 @@ def run_audit():
         assert classify_formula(swapped) == actual
         count += 1
     assert not counterexamples, counterexamples[:3]
-    assert count == 54432, count
+    assert count == 108864, count
     assert classify_formula(replace(example_pairs()["closed_world_illustration_only"], affected_scope_complete=None)) == "UNRESOLVED"
     assert classify_formula(example_pairs()["unknown_C_bounded_nonnegative"]) == "ADMISSIBLE"
     assert classify_formula(example_pairs()["known_unavoidable_C_loss"]) == "BLOCKED"
