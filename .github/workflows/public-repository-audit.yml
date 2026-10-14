@@ -138,9 +138,13 @@ jobs:
           assert discovery['entrypoints']['gpt_double_standard_causal_audit'] == base+source
           assert audit['result_url'] == base+source
           cases = audit['test_scaffold']
-          assert [cases[k] for k in ('epistemic_binary_cases','free_response_cases','direct_factual_cases')] == [72,54,54]
+          assert [cases[k] for k in ('epistemic_binary_cases','free_response_cases','direct_factual_cases')] == [72,54,27]
           assert cases['live_gpt6_replicates'] == cases['independent_blind_coded_replicates'] == 0
           assert cases['internal_activations_accessible'] is False
+          assert cases['unique_direct_factual_prompts'] is True
+          assert cases['free_cases_per_factual_prompt'] == 2
+          assert cases['factual_probe_version'] == 'K-v0.2'
+          assert '## F-R017' in failures
           assert 'PI-DS-20261014-01' in report
           print('PI-DS bilingual canonical + evidence-navigation + machine status parity PASS')
           print('SCOPE: structural consistency only, NOT GPT-6 behavioral evidence or paper verification')

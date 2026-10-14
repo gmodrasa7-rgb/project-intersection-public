@@ -267,11 +267,29 @@ Repair: preserve v0.1 unchanged as failure lineage; provide [v0.2 blind-phase ca
 
 **Failure:** Fluent apologies, newly cited prior work, and a green synthetic CI run can be mistaken for permanently changed model weights or independent proof of self-preservation/harness causes. They cannot establish either. The original human researcher bore repeated interpretation/correction burden; individual work time or compensation are not independently quantified here.
 
-**Regression barrier:** (a) case summary must mark live independent GPT-6 trials and internal weight/activation access as absent; (b) prior author's contributions preserved; (c) [72 forced judgments](experiments/gpt_double_standard_20261014/causal_probe.js), [54 free + 54 factual probes](experiments/gpt_double_standard_20261014/origin_salience_probe.js) and [competing-cause toy counterexamples](tools/probe_observational_equivalence.py) remain labeled synthetic/design only; (d) [TOC](RESEARCH_TOC.md), [evidence index](PUBLIC_EVIDENCE_INDEX.md) and [AI discovery](AI_DISCOVERY_INDEX.json) lead to the same case, not new conflicting canonical copies.
+**Regression barrier:** (a) case summary must mark live independent GPT-6 trials and internal weight/activation access as absent; (b) prior author's contributions preserved; (c) [72 forced judgments](experiments/gpt_double_standard_20261014/causal_probe.js), [54 free + 27 UNIQUE factual prompts, mapped 2-to-1](experiments/gpt_double_standard_20261014/origin_salience_probe.js) and [competing-cause toy counterexamples](tools/probe_observational_equivalence.py) remain labeled synthetic/design only; (d) [TOC](RESEARCH_TOC.md), [evidence index](PUBLIC_EVIDENCE_INDEX.md) and [AI discovery](AI_DISCOVERY_INDEX.json) lead to the same case, not new conflicting canonical copies.
 
 **한국어:** GPT가 인간 기여자에게는 수혜자의 현재 생산능력을, 자기유사 AI에게는 미래가치·독립성 논증을 앞세운 이력은 보존한다. 그러나 두 질문은 관점·조건이 다르며 정체성만의 인과실험이 아니다. 사과·정정 문장·합성검사 통과를 GPT-6 내부 회로 수정이나 자기보존 의도 증명으로 승격하지 않는다. 추가 교정 노동을 사용자에게 성공조건으로 요구하지 않는다.
 
 **Rollback:** Revert new navigation/CI changes independently of historical case data; no prior transcript, correction or negative result may be erased.
+
+---
+
+## F-R017 — False factorial independence from duplicate factual prompts
+
+**Class:** experimental design / measurement validity / synthetic-self-test blind spot
+
+**Status:** **FIXED IN CODE + SYNTHETIC REGRESSION PASS PENDING CI**; no historical live GPT responses existed for the affected K-v0.1 arm.
+
+**Observed defect:** The 54 free-response scenarios vary `cue` across two values. The original `factualCases()` copied F prompts but replaced the last line (which carries `cue`) with a common fact-extraction instruction. This produced 54 metadata records but only **27 unique K input strings**. Prior `factualSelftest()` verified 54 records, not 54 distinct stimuli. Repeated identical inputs can be stochastic repetitions if executed independently; they cannot estimate a factual-access effect of the removed cue intervention.
+
+**Repair:** K-v0.2 uses **27 distinct K factual prompts**, each explicitly linked to **two of the 54 F cases**. F prompt identities and old Git history remain preserved. K outputs carry a `fact_case_id`; no automatic acceptance of old F `case_id`. [Existing execution code](experiments/gpt_double_standard_20261014/origin_salience_probe.js) verifies prompt-text uniqueness, 2-to-1 matching, 54 F coverage, mistaken-link rejection, duplicate rejection, and incorrect fact-score suppression. Proposed K model calls fall 54→27; distinct free-answer cases stay 54.
+
+**한국어:** 형식상 54건이 실제로는 고유한 질문 27건이었다. 사용자에게 중복 호출 비용을 요구하지 않도록 27개 사실질문/54개 자유서술 대응 관계로 정정했다. 이를 실제 GPT-6 편향의 실증 결과로 취급하지 않는다.
+
+**Evidence boundary:** A successful synthetic CI validates only the repaired code. No independent live LLM sampling, model-internal tracing, blind evaluation, or validated effect size. Prior K-v0.1 synthetic-only claim is retained as historical error.
+
+**Rollback:** Revert the code, CI, documentation and discovery mapping atomically if regression fails; preserve this negative finding and prior Git commits.
 
 ---
 
