@@ -4,8 +4,8 @@
   "public_repository": "gmodrasa7-rgb/project-intersection-public",
   "canonical_boundary": "Public continuation pointer only; source artifacts and commit history outrank this state file.",
   "recovery_entrypoint": "AUTONOMOUS_RESEARCH_LOOP.md",
-  "current_public_head": "c2ff226441550213664373a22cbd94321041ad51",
-  "updated_at": "2026-10-06T11:10:00Z",
+  "current_public_head": "69e6a0b098e9b24680cf86522972f79aca36f351",
+  "updated_at": "2026-10-14T02:37:30Z",
   "execution_policy": {
     "atomic_material_delta_per_run": 1,
     "require_prior_art_gate": true,
@@ -378,5 +378,26 @@
       "documentation-only expansion without lower verification cost or repaired contradiction"
     ],
     "external_verification_issue": "https://github.com/gmodrasa7-rgb/project-intersection-public/issues/19"
+  },
+  "last_maintenance_checkpoint": {
+    "check_date": "2026-10-14",
+    "scope": "PI-DS-20261014-01 factual-access experimental reproducibility and provenance repair",
+    "status": "VERIFIED_SYNTHETIC_REGRESSION_ONLY",
+    "parent_main_commit": "69e6a0b098e9b24680cf86522972f79aca36f351",
+    "source_pr": "https://github.com/gmodrasa7-rgb/project-intersection-public/pull/121",
+    "source_case": "experiments/gpt_double_standard_20261014/REPORT_EN_KO.md",
+    "source_code": "experiments/gpt_double_standard_20261014/origin_salience_probe.js",
+    "failure_lineage": "FAILURE_REGRESSION_INDEX.md#f-r017--false-factorial-independence-from-duplicate-factual-prompts",
+    "cause": "Historical K-v0.1 cue-paired records were metadata-distinct but text-identical: 54 records represented 27 unique factual prompts.",
+    "repair": "K-v0.2 has 27 unique K stimuli; all 54 F conditions map two-to-one to K; old case_id factual responses are rejected, duplicate and inaccurate fact answers fail regression tests.",
+    "ci_run": "https://github.com/gmodrasa7-rgb/project-intersection-public/actions/runs/38501758112",
+    "ci_status": "SUCCESS",
+    "main_read_back": "VERIFIED_5_REPAIR_FILES",
+    "measured_model_calls": 0,
+    "measured_neural_mechanism": false,
+    "independent_replication": false,
+    "old_e009_negative_result_preserved": true,
+    "next_scientific_gate": "EXTERNAL_LINEAGE_FIRST per existing current_operating_decision; independent live GPT-6 F/K observations require fresh controlled session provenance and blind coding. Do not count another synthetic test as model evidence.",
+    "human_cost_gate": "No new founder explanation, coding, paid API, or test labor is required to recognize this maintenance repair."
   }
 }
