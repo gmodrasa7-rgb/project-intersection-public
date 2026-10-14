@@ -111,9 +111,6 @@ jobs:
       - name: Test PI-DS predeclared whole-run and stimulus integrity (synthetic only)
         run: node experiments/gpt_double_standard_20261014/origin_salience_probe.js roster-selftest
 
-      - name: Test PI-DS predeclared run roster incl absent full execution (synthetic only)
-        run: node experiments/gpt_double_standard_20261014/origin_salience_probe.js roster-selftest
-
       - name: Check PI-DS case/evidence/index parity and overclaim guards
         run: |
           python - <<'PY'
