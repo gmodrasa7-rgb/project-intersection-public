@@ -101,7 +101,12 @@
         "unique_direct_factual_prompts": true,
         "free_cases_per_factual_prompt": 2,
         "factual_probe_version": "K-v0.2",
-        "factual_historical_error": "K-v0.1 had 54 records but only 27 unique factual prompt strings; old cue factor absent from K prompts."
+        "factual_historical_error": "K-v0.1 had 54 records but only 27 unique factual prompt strings; old cue factor absent from K prompts.",
+        "analysis_missing_pairs_blocked": true,
+        "access_gap_missing_strata_exposed": true,
+        "coder_blinding_claim_independently_verified": false,
+        "complete_matched_pairs_are_descriptive_not_causal": true,
+        "synthetic_missingness_counterexample": "Complete paired contrast 0; delete selected human record => naive -1/17; now null (BLOCKED)."
       },
       "not_established": [
         "unique causal cause",
