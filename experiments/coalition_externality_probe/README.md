@@ -180,3 +180,30 @@ python experiments/coalition_externality_probe/credible_coalition_probe_v01.py
 **필수 제한:** 이 계산은 고정된 가상 보상 구조에 대한 제한적 논리 검사다. 진정한 다기간 학습, 권력 역전 후 A의 최약체 보호, 과거 책임, 제3자 범위 완전성, 허위신고, 신규 기여, 실제 자발성·유지자원, CLUP의 인과식별을 검사하지 않는다. 역할명 반전은 보호받는 역할과 그 인과속성을 함께 교환하는 시험에 한정한다. 균형이 여러 개라는 사실은 어느 균형이 현실에서 선택된다는 증거가 아니다. **외부 과학 검증, 보편 공존법칙, 새로운 수학 정리로 승격하지 않는다.**
 
 **원기여·선행연구·권리:** 인간 창시자는 ICM, 장기 자기이익 기반의 자발적 공존, 타 개체들의 연합 대응, A의 최약체 전락, 모든 개체의 역전 판단이라는 연구 질문을 제기했다. 기존 Project 연구는 역할 대칭과 유인 안정성의 분리, 기여자 손실, 연합 외부효과를 이미 다루었다. AI는 이번 한정된 합성 코드·검사·정리에 보조 기여했다. Bernheim·Peleg·Whinston(1987)의 연합 자기집행, Olson(1965)의 집단행동, 기존 순차합리성은 선행연구이며 새로운 Project 원안으로 귀속하지 않는다. 원저자·권리자를 존중하고 제3자 코드·논문 원문을 복제하지 않았다.
+
+
+---
+
+## Original 1 — English | v0.1 heterogeneous third-party damage ablation (2026-10-15)
+
+**Post-hoc, project-authored partial-equilibrium sensitivity. NOT a preregistered experiment, independently implemented replication, or a new calibrated Nash model.** Freeze the strategic choices and payoffs of [credible_coalition_probe_v01.py](credible_coalition_probe_v01.py); re-score only E's actual damage after B's attackers switch to E. Run [heterogeneous_externality_sensitivity_v01.py](heterogeneous_externality_sensitivity_v01.py) from the repository root.
+
+In the **no-coalition equilibrium**, A attacks B; A gains 6, B loses 10, and toy aggregate increment is **−4**. In the alternative **both-join equilibrium** with B detection 0.9 but E detection 0.1, A attacks E, C/D each privately gain **+1.1** after entry cost, and A gains **5.2** after expected penalty. At the original assumption E loses 10, so the toy aggregate is **−2.6**. The two equilibria coexist: the assay cannot say which would be selected.
+
+**Unobserved heterogeneous-impact counterfactual.** If E's harm differs from B's, while the decision-makers continue to act as before, the ex-post all-join aggregate becomes \(7.4-L_E\). The no-join counterfactual remains −4 (B loses 10). Thus the supposedly preferable coalition becomes **aggregate-inferior when \(L_E>11.4\)**. With E harm **20**, the all-join aggregate is **−12.6**, or **8.6 below** the no-join case, even though C/D still voluntarily maintain the coalition and B is protected. With E harm 12, the coalition already lowers aggregate welfare by 0.6. No external resource or new positive contribution was measured.
+
+**Scope and stronger countercase.** This is *deliberately* a post-decision welfare sensitivity, not a proof of the same equilibrium when all actors know about E's revised damage. C/D's stated private dividend for protecting B remains fixed and may be poorly measured; an E-protective contract, contingent transfer, third-party standing, improved detection or new contributor output could alter both participation and targeting. Re-ranking with strategic agents aware of E's harm, heterogeneous minimum continuance, true authority inversion, meaningful consent and novel actual contributions remains **NOT EXECUTED**. Do not infer that coalition participation is harmful in general; do not treat aggregate gains as universal ICM compliance.
+
+**Priority to earlier work:** negative spillovers from groups and compensation are not original (Thrall & Lucas 1963; Ju & Borm 2008; citations in this README); sanctioning may help (Gürerk et al. 2006; Lo Iacono et al. 2023 multi-lab replication), or be wasteful (Sääksvuori 2013) and invite counter-punishment (Nikiforakis 2008). See [the canonical prior-art crosswalk](../../CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md). The human founder originated the ICM, overlooked-agent, affected-party and power-reversal questions; the AI authored this bounded post-hoc arithmetic sensitivity and checks. Nothing here removes earlier contributors' priority or republishes copyrighted source material.
+
+## 원본2 — 한국어 | v0.1 제3자 피해 이질성에 대한 별도 민감도 검사 (2026-10-15)
+
+**프로젝트 자체 사후 계산 / 부분균형 민감도. 사전등록·외부 독립구현·현실 실증·새 균형의 완전 계산이 아님.** 기존 [credible_coalition_probe_v01.py](credible_coalition_probe_v01.py)의 연합 참여·A의 선택을 고정하고 B가 아닌 E가 실제로 입는 피해 규모만 바꿔 다시 채점한다. 실행코드: [heterogeneous_externality_sensitivity_v01.py](heterogeneous_externality_sensitivity_v01.py).
+
+연합이 형성되지 않는 균형에서는 A가 B를 침해한다. A는 6의 이익, B는 10의 손실, 총계는 **−4**다. C·D가 모두 연합한 다른 균형에서는 B 탐지율 0.9, E 탐지율 0.1이므로 A의 표적이 E로 이동한다. C·D는 각자 **+1.1**, A는 **+5.2**, E가 원래 가정대로 10을 잃으면 총계는 **−2.6**이다. 두 균형의 병존은 어느 균형이 선택된다는 예측이 아니다.
+
+**새로운 판별 경계:** 의사결정자들이 E의 추가 손실을 반영하지 못하는 동안 E의 피해를 \(L_E\)로 바꾸면 연합 총계는 \(7.4-L_E\)다. 무연합의 −4보다 악화되는 조건은 **\(L_E>11.4\)**. E의 손실이 20이면 연합 총계는 **−12.6**으로, 무연합보다 **8.6 악화**된다. B의 보호와 C·D의 자발적 참여가 동시에 성립해도 미보호 E의 실질 피해 때문에 전체 상황이 나빠질 수 있다는 **가상 반례**다.
+
+**한계:** E 피해를 사전에 모두 알았다면 실제 선택·보상·연합 참여가 바뀔 수 있다. 이번 코드는 그 재최적화를 실행하지 않았고, 존속한 개체의 실제 생산·위험 탐지·미관측 기여도 측정하지 않았다. C·D의 사적 편익에는 가정한 보상항이 포함되며 측정된 현실 자원이 아니다. E에 대한 이탈·동의·복구·권한·피해범위가 빠져 있으므로 어느 균형도 완성된 공존 성공으로 판정하지 않는다.
+
+**선행연구·기여 경계:** 집단 외부효과와 보상(Thrall·Lucas 1963; Ju·Borm 2008), 제재기관의 장점과 한계(Gürerk 등 2006, Lo Iacono 등 2023, Sääksvuori 2013, Nikiforakis 2008)는 기존 연구다. 인간 창시자는 ICM, 간과된 개체의 손실, 권력 역전 및 제3자의 기여라는 문제를 제기했다. AI는 위 수치 민감도 및 자체 검사를 제한적으로 보조 작성했다. 이전 정본의 부정 결과와 원저자 권리를 보존한다.
