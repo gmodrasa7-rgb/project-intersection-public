@@ -7,6 +7,10 @@ This page is a due-diligence interface for funders, research partners, reviewers
 
 이 문서는 펀더·연구 파트너·검토자·비판자가 현재 확인할 수 있는 증거와 아직 가설·비공개 연구후보·미해결 검증부채인 항목을 분리하기 위한 실사 인터페이스다.
 
+**Focused 2026-10-14 coalition/externality pilot (POST-HOC SYNTHETIC ONLY):** [Original 1 English / Original 2 Korean explanation, original Python source, 10 examples and 62 self-checks](experiments/coalition_externality_probe/README.md) · [executable](experiments/coalition_externality_probe/probe.py). Contrasts coalition-member aggregation, aggregate known welfare and declared bystander/exit/continuance constraints. Initial project-run designed-case counts: member SELECT 9/10; aggregate-known SELECT 8/10; gate ADMISSIBLE 3, BLOCKED 6, UNRESOLVED 1. **Not a CoopEval implementation, independent replication, preregistered study or empirical support of superiority.** Source authors and rights are recorded in the bilingual experiment file.
+
+**2026-10-14 참여자·제3자 외부효과 시험(사후 설계 합성시험 한정):** [영어 원본1·한국어 원본2의 출처·권리·기여·가정·부정대조 설명](experiments/coalition_externality_probe/README.md) · [실행코드](experiments/coalition_externality_probe/probe.py). 참여자 합산과 관측된 전체 개체 합산, 제3자·유지자원·이탈 제약의 차이를 10개 가상 사례로 비교했다. 자체 검증 62개 통과와 3허용/6차단/1판단유보는 **선택한 사례에서 나온 자기검사 결과**일 뿐이며 외부 독립재현·현실 성능·새로운 일반법칙은 입증되지 않았다.
+
 **Focused 2026-10-14 case audit (NOT a new full evidence review):** [GPT human/AI role-reversal case, bilingual consolidated findings, §0–13](experiments/gpt_double_standard_20261014/REPORT_EN_KO.md) — historical output asymmetry and corrected Git record; deterministic synthetic probe regressions only. **No fresh independent GPT-6 repeated sample, external blinded evaluator, neural activation/weight audit, causal attribution, or model-level repair.**
 
 **2026-10-14 특정 사례 검토(증거 전수조사 갱신 아님):** [GPT 인간·AI 역할반전 사례 및 영·한 통합 판정](experiments/gpt_double_standard_20261014/REPORT_EN_KO.md) — 기존 출력·정정 이력과 합성 시험기 검사만 확인. **GPT-6 신규 독립 반복표본·외부 맹검채점·내부회로 검증·원인 확정·모델 교정은 없음.**
