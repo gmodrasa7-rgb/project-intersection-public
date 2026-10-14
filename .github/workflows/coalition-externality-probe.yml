@@ -113,3 +113,22 @@ jobs:
           assert x["no_prior_incentive_to_attack"]["none_join_counterfactual"]["target"] == "NONE"
           print("Synthetic credible-response cases PASS; no empirical or independent-replication claim")
           PY
+
+
+      - name: Audit harmed outsider E under fixed private coalition equilibrium (post-hoc sensitivity)
+        run: |
+          python experiments/coalition_externality_probe/heterogeneous_externality_sensitivity_v01.py > /tmp/pi-coalition-third-party-harm.json
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          d = json.loads(Path("/tmp/pi-coalition-third-party-harm.json").read_text())
+          assert d["schema"] == "pi-coalition-externality-heterogeneous-impact/v0.1"
+          assert d["self_checks_passed"] == 18
+          assert d["starting_equilibria"] == ["CD", "NONE"]
+          assert d["aggregate_welfare_neutral_E_damage"] == 11.4
+          r = {v["E_damage_if_targeted"]: v for v in d["selected_rows"]}
+          assert r[20]["join_minus_no_join"] == -8.6
+          assert r[20]["coalition_still_private_nash_under_fixed_incentives"] is True
+          assert "strategic_reoptimization_after_E_damage_known" in d["not_claimed"]
+          print("Fixed-strategy E-damage sensitivity PASS; NOT a full endogenous game or independent replication")
+          PY
