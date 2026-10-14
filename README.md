@@ -56,7 +56,7 @@ This landing page is a **short router**, not a second research index. All origin
 - **Reading in Korean / 한국어 탐색:** [START_HERE_KO.md](START_HERE_KO.md) · [full research map and historical case index / 전체 연구목차](RESEARCH_TOC.md).
 - **Checking the evidence / 증거 확인:** [evidence index / 증거등급](PUBLIC_EVIDENCE_INDEX.md) · [fresh-checkout reproduction and review / 독립검토 패킷](PUBLIC_REVIEW_PACKET.md) · [claim-status policy / 상태정본](RESEARCH_STATUS_POLICY.md).
 - **Independent critique / 외부 반증·기여:** [contribution and contradiction route](CONTRIBUTING.md) · [AI/cross-model review entry](AI_REVIEW_START_HERE.md) · [knowledge navigation / 지식그래프](knowledge/README.md) ([explorer / 탐색기](knowledge/explorer.html)).
-- **Funding / 후원·연구협력:** [90-second contact route](funding/FUNDER_START_HERE.md) · [public sponsorship ledger / 개인후원 장부](funding/SPONSORSHIP_PUBLIC_LEDGER.md) · [legal and tax uncertainty / 법률·세무 경계](funding/LEGAL_TAX_RISK_REGISTER_2026-10-13_EN_KO.md). Sponsorship receipts remain **unverified**, not proven zero / 후원 실수령 미확인.
+- **Funding / 후원·연구협력:** [GitHub Sponsors — individual research support / 개인 연구 후원](https://github.com/sponsors/gmodrasa7-rgb) · [90-second funder brief / 90초 연구지원 안내](funding/FUNDER_START_HERE.md) · [sponsorship-use policy and public ledger / 후원금 사용 원칙·공개 장부](funding/SPONSORSHIP_PUBLIC_LEDGER.md) · [legal and tax uncertainties / 법률·세무 미확정 사항](funding/LEGAL_TAX_RISK_REGISTER_2026-10-13_EN_KO.md). Personal sponsorship supports only the independent researcher's work time and LLM usage, not a guaranteed result; actual receipts remain **unverified**. / 개인 후원금 사용처는 연구자 1인 연구시간 보수와 LLM 이용료로 한정하며, 특정 연구 성과를 보장하지 않는다. 실제 수령액은 **미확인**이다.
 
 ## What the evidence means / 검증 결과의 의미
 
