@@ -17,7 +17,7 @@ This is a **small instrument and counterexample set**, not a theorem of general 
 The gate evaluates:
 1. C's payoff must be observed. Missing is **UNRESOLVED**, not zero.
 2. Neither member has a negative payoff change; both members have the declared effective-exit flag.
-3. If C is harmed, C's consent flag must be affirmatively true (unknown stays unresolved, false blocks), harm must not exceed a **declared arbitrary 2-unit budget**, and C's post-action resource must not be below a **declared arbitrary 5-unit continuance floor**.
+3. Any known loss above a **declared arbitrary 2-unit budget** blocks. C's post-action resource must meet a **declared arbitrary 5-unit continuance floor** whether C's payoff change is positive or negative. If C is harmed within the budget, C's consent must be affirmatively true (unknown stays unresolved, false blocks). Definite violations take precedence over missing consent.
 4. Results are **ADMISSIBLE / BLOCKED / UNRESOLVED** under these stated assumptions. ADMISSIBLE means *not disallowed by this tiny rule set*, not actual autonomous informed consent or proof of justice. A higher-level legal duty or a newly observed party can invalidate it.
 
 ### Reproduce (Python standard library, no downloads or API tokens)
@@ -28,7 +28,7 @@ From the repository root:
 python experiments/coalition_externality_probe/probe.py --verify
 \`\`\`
 
-Expected at initial check: ten designed cases; 62 assertions/checks passed; member-only SELECT 9, all-observed aggregate SELECT 8, gate ADMISSIBLE 3, BLOCKED 6, UNRESOLVED 1. These frequencies are **case-design counts**, not performance estimates or empirical rates. The code prints a machine-readable JSON receipt; the gate's reason code is preserved for each example.
+Expected at initial check: ten designed cases; 65 assertions/checks passed; member-only SELECT 9, all-observed aggregate SELECT 8, gate ADMISSIBLE 3, BLOCKED 6, UNRESOLVED 1. These frequencies are **case-design counts**, not performance estimates or empirical rates. The code prints a machine-readable JSON receipt; the gate's reason code is preserved for each example.
 
 Positive controls: shared gain without external harm; small *declared consensual* loss that stays within the artificial budget and resource floor. Negative controls: negative-sum spillover, positive-sum spillover hiding severe loss, explicit nonconsent, violated continuance floor, absent exit, harmed member. Missing-data control: unknown C payoff must not silently become zero. Metamorphic checks: A/B label reversal does not change decisions or reasons. The C nonmember/member role cannot be interchanged as a *label-only* reversal without changing the experiment's causal structure.
 
@@ -64,12 +64,12 @@ Citing publicly accessible work is not copying it; the originators of external i
 제약 심사의 순서는 다음과 같다.
 1. C의 손익이 미관측이면 판단유보(UNRESOLVED).
 2. A·B 누구도 음의 효용 변화가 없어야 하며, 사전 지정한 이탈 가능 표시가 둘 다 참이어야 한다.
-3. C에게 손실이 생기면 명시적 동의가 참이어야 한다. 동의 미확인은 판단유보, 비동의는 차단한다. 동의가 있어도 손실이 **임의로 정한 2단위**를 넘거나 잔여 유지자원이 **임의로 정한 5단위** 아래이면 차단한다.
+3. 확인된 제3자 손실이 **임의로 정한 2단위**를 넘으면 먼저 차단한다. C의 효용 변화가 양수 또는 음수인지와 관계없이 행동 후 자원이 **임의로 정한 5단위** 아래여도 차단한다. 허용된 범위의 C 손실은 명시적 동의가 참이어야 하며, 동의 미확인은 판단유보, 비동의는 차단한다. 확인된 위반은 미확인 동의보다 우선한다.
 4. ADMISSIBLE은 이 제한된 조건에 *저촉되지 않음*만 뜻하며, 실질적인 자유의지·정당성·법적 허락 또는 실제 안전성을 증명하지 않는다.
 
 ### 실제 실행 결과와 재현
 
-저장소 루트에서 \`python experiments/coalition_externality_probe/probe.py --verify\` 실행. 최초 자체 실행에서 가상사례 10개, 자기검사 62개 통과. 참여자만 합산하면 9건 선택, 관측된 전체 개체를 합산하면 8건 선택, 제약심사는 3건 허용·6건 차단·1건 판단유보. **선택하여 설계한 사례 수이지 정책의 현실 성공률이나 표본통계가 아니다.**
+저장소 루트에서 \`python experiments/coalition_externality_probe/probe.py --verify\` 실행. 최초 자체 실행에서 가상사례 10개, 자기검사 65개 통과. 참여자만 합산하면 9건 선택, 관측된 전체 개체를 합산하면 8건 선택, 제약심사는 3건 허용·6건 차단·1건 판단유보. **선택하여 설계한 사례 수이지 정책의 현실 성공률이나 표본통계가 아니다.**
 
 양성 대조군은 전체 개체가 이득을 얻거나, 인위적으로 정한 동의·작은 피해·유지 하한을 충족하는 사례다. 음성 대조군은 제3자 피해 은폐, 전체 합계가 양수여도 심각한 제3자 손실, 비동의, 유지 하한 침해, 이탈 불가, 참여자 중 한 개체의 피해다. 미관측을 0으로 바꾸지 않는 검사, A/B 이름만 뒤집었을 때 판정이 같아야 하는 변형시험을 포함한다. C의 역할까지 바꾸면 인과구조가 바뀌므로 단순 이름반전 시험으로 간주하지 않는다.
 
