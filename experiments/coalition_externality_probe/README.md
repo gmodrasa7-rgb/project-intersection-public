@@ -82,3 +82,44 @@ Citing publicly accessible work is not copying it; the originators of external i
 ### 아직 남은 반증
 
 영향을 받는 C 외에 누락된 D·E나 미래 개체가 있을 수 있다. 발명된 동의·이탈 표시로 실질적 동의·이탈을 증명할 수 없고, 현재의 제약 심사가 미래 기여·생태계·안전과 공정성에 어떤 효과를 낼지도 미측정이다. 지나친 제약으로 모두에게 유리한 선택을 불필요하게 막을 위험도 남는다. 본 시험은 **사후 설계 합성 결과**이며 독립 검증이 아니다. E007·E008·E009·PICB v1의 원래 명세와 부정결과는 수정하지 않는다.
+
+
+---
+
+## Original 1 — English | v0.2 Known-failure, missingness and scope audit
+
+**2026-10-14 · PROJECT POST-HOC SYNTHETIC LOGIC AUDIT / NO EXTERNAL VALIDATION.** The v0.1 source, 10 designed scenarios and 65 original self-checks remain unchanged. Run: python experiments/coalition_externality_probe/partial_identification_audit_v02.py . This separately versioned script uses v0.1 only to demonstrate old counterexamples.
+
+**F01 — Missingness masks certain violations.** The v0.1 function returns UNRESOLVED as soon as C's payoff is unknown, even when member A's known payoff is negative or A's exit is known unavailable. Either is already a sufficient failure under the toy constraints. v0.2 places definitive known failures ahead of outcome uncertainty. A code defect is confirmed, not real-world harm.
+
+**F02 — Affected-actor scope is not observed.** Same recorded A:+4, B:+4, C:0 can coexist with a benefitted unregistered D (+5) or severely harmed unregistered D (−50). Thus positive results limited to A/B/C cannot prove safety for D. v0.2 adds an explicit affected_scope_complete flag. True means closure ASSUMED by the toy-case creator, not independently verified. False/unknown precludes an affirmative admissible finding unless an existing definite violation gives BLOCKED. This does not identify actual unseen parties.
+
+**F03 — Partial identification, not always abstention.** If C's outcome is unknown but defensibly bounded, v0.2 considers all integers in that assumed interval and both consent states when consent is unknown. BLOCKED if every completion fails or a member's known violation independently suffices; ADMISSIBLE if every completion passes and affected scope is assumed complete; UNRESOLVED if completions disagree, there is no defensible interval, or affected scope is open. Overconfident assumptions about interval width or scope will cause false assurance.
+
+**Executable comparison:** exactly 108,864 finite parameter combinations in the declared bounded domain; compare a symbolic interval decision to a separately implemented exhaustive Boolean-world oracle; check A/B relabeling for every case. Zero disagreements, when the job passes, establish agreement about a limited mathematical definition, NOT independent scientific replication, a population rate, or real autonomy and consent.
+
+**Upstream provenance and intellectual property:** 
+- R. M. Thrall & W. F. Lucas (1963), N-person games in partition function form, https://doi.org/10.1002/nav.3800100126 .
+- Yuan Ju & Peter Borm (2008), Externalities and compensation: Primeval games and solutions, https://doi.org/10.1016/j.jmateco.2007.06.002 . This specifically anticipates individual externalities and compensation; the general idea is NOT a PI invention.
+- Charles F. Manski (2005), Partial identification with missing data: concepts and findings, https://doi.org/10.1016/j.ijar.2004.10.006 . Bounded conclusions under missing data are prior art.
+- Emanuel Tewolde, Xiao Zhang, David Guzman Piedrahita, Vincent Conitzer & Zhijing Jin (2026), CoopEval, https://proceedings.mlr.press/v306/tewolde26a.html .
+
+Authors and rightsholders retain their credit/rights. Bibliographic and conceptual references only: NO upstream source code, copyrighted figures, datasets or substantial passages copied. Founder's long-term voluntary coexistence, effective exit, affected-party survival, and missing-contribution questions are distinguished from the AI-assisted v0.2 code and audit. No rights or scientific originality are conferred by resemblance.
+
+**Important unresolved issues:** hidden D discovery, evaluators declaring false scope completeness, actual consent/revocation, resource substitution, dynamic coalition entry, causal attribution, absent future contribution, compensatory transfers, independent real data, legitimate emergency exceptions, and cost of false blocking. This is a deliberately limited three-observed-actor problem, not a complete AI governance solution.
+
+## 원본2 — 한국어 | v0.2 확정 위반·미관측·피해자 범위 감사
+
+**2026-10-14 · 자체 사후 합성검사 / 독립 학술복제 아님.** 실행: python experiments/coalition_externality_probe/partial_identification_audit_v02.py . v0.1 원본, 10개 사례, 65개 기존 검사는 바꾸지 않는다.
+
+**F01 — 미관측에 확정 위반이 가려진다.** v0.1은 C의 손익을 모른다는 이유로, A가 손해를 입었거나 이탈권이 없다는 확정된 위반조차 판단유보로 처리한다. v0.2는 이미 확정된 위반을 우선 차단한다. 실제 시험기의 결함이며 현실 피해 발생의 증거는 아니다.
+
+**F02 — 빠진 개체 D의 문제.** A:+4, B:+4, C:0 관측이 같아도 D는 +5 또는 −50일 수 있다. A·B·C의 계산만으로 외부 피해자 전원을 찾았다고 확정할 수 없다. v0.2의 affected_scope_complete은 가상의 피해자 목록이 완전하다는 명시적 가정일 뿐, 현실 조사 성공을 증명하지 않는다. 피해자 범위 미확인 상태에서 제한적 통과 판정을 내리지 않는다.
+
+**F03 — 부분식별을 이용한 조건부 판정.** C의 손익을 정확히 모르더라도 신뢰할 수 있는 범위가 있다면 전 가능한 손익·동의 상태에 동일한 제약을 적용한다. 모든 가능성이 위반하면 차단, 모든 가능성이 충족되고 피해자 목록을 닫혔다고 가정한 가상사례에서만 제한적 허용, 혼재되거나 범위/목록 미확정이면 판단유보다. 가정한 경계를 임의로 좁히면 잘못된 확신이 생긴다.
+
+**실행 검증:** 108,864개 가상 조합에서 구간판정식과 별도로 작성한 가능한 상태 전수열거를 비교하며, A↔B 명칭·역할 반전에도 판정이 일치하는지 검사한다. 불일치 0이 나온다 해도 자체 알고리즘 일치만 의미하며 현실 성능이나 독립 과학 검증은 아니다.
+
+**선행 원안·권리:** Thrall·Lucas(1963)의 집단 외부효과, Ju·Borm(2008)의 개체 간 외부효과·보상, Manski(2005)의 미관측 결과 부분식별, Tewolde 외 4명(2026)의 CoopEval이 선행기술이다. 저자·권리자·논문명·DOI는 영어 원본에 기록했다. 원문·그림·코드·데이터를 무단 복제하지 않는다. 인간 창시자의 연구 목적·개체존속·실효 이탈·기여손실 발견과 AI의 제한된 코드 작성 역할을 분리한다.
+
+**잔여 미해결:** 실제 숨겨진 피해자, 피해자 목록의 감사권력, 실질 동의·거부와 철회, 개체별 존속 자원, 탈락한 개체의 실제 후속 기여, 보상 정산, 규칙의 과잉 차단, 합법적 긴급 개입·현장 검증은 수행되지 않았다.
