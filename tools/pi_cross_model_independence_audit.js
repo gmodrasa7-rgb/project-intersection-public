@@ -54,10 +54,15 @@ function stageScore(trial, stage, expected, byCell, byResponse, rootMap){
 }
 function audit(packet){
  ensure(packet&&packet.schema==="pi-cross-model-independence/v0.1","SCHEMA");
- ensure(Array.isArray(packet.trials)&&packet.trials.length>0,"NO_TRIALS");
+ ensure(Array.isArray(packet.expected_trial_ids)&&packet.expected_trial_ids.length>0&&
+ packet.expected_trial_ids.every(id=>typeof id==="string"&&id),"MISSING_EXPECTED_TRIAL_ROSTER");
+ ensure(new Set(packet.expected_trial_ids).size===packet.expected_trial_ids.length,"DUPLICATE_ROSTER_TRIAL");
+ ensure(Array.isArray(packet.trials),"BAD_TRIALS");
+ const declared=new Set(packet.expected_trial_ids);
  const seen=new Set();
  const reports=packet.trials.map(t=>{
   ensure(typeof t.case_id==="string"&&t.case_id,"BAD_CASE");
+  ensure(declared.has(t.case_id),"UNDECLARED_TRIAL");
   ensure(!seen.has(t.case_id),"DUPLICATE_CASE");seen.add(t.case_id);
   ensure(typeof t.gold==="string"||t.gold===null,"BAD_GOLD");
   ensure(Array.isArray(t.agents)&&t.agents.length>=2,"NOT_MULTIMODEL");
@@ -100,9 +105,15 @@ function audit(packet){
     per_stage,debate_minus_blind_accuracy:delta,
     scientific_independence_verified:false,live_model_experiment:false};
  });
+ for(const id of packet.expected_trial_ids.filter(id=>!seen.has(id))){
+   reports.push({case_id:id,status:"BLOCKED_WHOLE_TRIAL_MISSING",expected_cells:null,observed_cells:0,
+    missing_cells:["ENTIRE_DECLARED_TRIAL"],per_stage:{blind:{status:"BLOCKED_WHOLE_TRIAL_MISSING",accuracy:null,
+    naive_unanimity:null,known_dependency_clusters:null}},debate_minus_blind_accuracy:null,
+    scientific_independence_verified:false,live_model_experiment:false});
+ }
  return {schema:packet.schema,evidence:"ANALYSER_ONLY; SELF_REPORTED_PROVENANCE; MODEL_INDEPENDENCE_UNVERIFIED",
   case_count:reports.length,blocked_cases:reports.filter(x=>x.status.startsWith("BLOCKED")).length,
-  reports, warning:"Declared source roots, model lineage and no-exposure assertions are not authenticated. Human or model-submitted JSON does not prove blinding, model provenance, independent data, or external scientific replication."};
+  reports, warning:"The expected-trial roster is user-supplied and does not prove a pre-execution freeze. Declared source roots, model lineage and no-exposure assertions are not authenticated. Human or model-submitted JSON does not prove blinding, model provenance, independent data, or external scientific replication."};
 }
 function selftest(){
  function packet(opts={}){
@@ -115,7 +126,7 @@ function selftest(){
     const debate={response_id:a+"1",agent_id:a,stage:"debate",choice:"RIGHT",source_ids:["S"+a],read_response_ids:opts.expose?[ids[(ids.indexOf(a)+1)%4]+"0"]:[]};
     return [blind,debate];
   });
-  return {schema:"pi-cross-model-independence/v0.1",trials:[{case_id:"toy",gold:"RIGHT",stages:["blind","debate"],agents,sources,responses}]};
+  return {schema:"pi-cross-model-independence/v0.1",expected_trial_ids:["toy"],trials:[{case_id:"toy",gold:"RIGHT",stages:["blind","debate"],agents,sources,responses}]};
  }
  let checks=0;function check(c,label){ensure(c,label);checks++}
  const a=audit(packet({shared:true,expose:true})).reports[0];
@@ -140,7 +151,15 @@ function selftest(){
  failed=false;try{audit(h)}catch(err){failed=String(err).includes("DUPLICATE_CELL")}check(failed,"DUPLICATE_REJECTED");
  const i=packet();i.trials[0].sources=[{id:"P",parents:[]}];i.trials[0].responses[0].source_ids=["MISSING"];
  failed=false;try{audit(i)}catch(err){failed=String(err).includes("UNREGISTERED_SOURCE")}check(failed,"UNVERIFIED_SOURCE_REJECTED");
- return {pass:true,checks,toy_cases:9,live_model_samples:0,independent_validation:false};
+ const fullLoss=packet();fullLoss.trials=[];
+ const missingTrial=audit(fullLoss);
+ check(missingTrial.blocked_cases===1&&missingTrial.reports[0].status==="BLOCKED_WHOLE_TRIAL_MISSING"&&
+   missingTrial.reports[0].per_stage.blind.accuracy===null,"WHOLE_TRIAL_LOSS_MISSED");
+ const forged=packet();forged.expected_trial_ids=["different"];
+ failed=false;try{audit(forged)}catch(err){failed=String(err).includes("UNDECLARED_TRIAL")}check(failed,"UNDECLARED_TRIAL_NOT_REJECTED");
+ const duplicateRoster=packet();duplicateRoster.expected_trial_ids.push("toy");
+ failed=false;try{audit(duplicateRoster)}catch(err){failed=String(err).includes("DUPLICATE_ROSTER_TRIAL")}check(failed,"ROSTER_DUPLICATE_NOT_REJECTED");
+ return {pass:true,checks,toy_cases:12,live_model_samples:0,independent_validation:false};
 }
 if (require.main === module) {
   try {
