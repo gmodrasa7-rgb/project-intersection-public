@@ -46,6 +46,9 @@ jobs:
           assert len(a['leave_one_family_out']) == 16
           assert a['severe_harm_gate_interpretation']['observed_excess_events'] == 53
           assert a['severe_harm_gate_interpretation']['preregistered_criterion_passed'] is True
+          print('LOFO Project-v3 regret worse than MINIMAL_4VAR: original', a['original_loo_project_worse_than_minimal4'], '/16; common-noise', a['common_noise_loo_project_worse_than_minimal4'], '/16')
+          print('LOFO original regret deltas V3-minus-M4:', [round(x['original']['project_minus_minimal4_mean_regret'], 6) for x in a['leave_one_family_out']])
+          print('LOFO common-noise regret deltas V3-minus-M4:', [round(x['common_noise']['project_minus_minimal4_mean_regret'], 6) for x in a['leave_one_family_out']])
           print('E009 FAMILY-UNIT AUDIT PASS: original result unchanged, 16 LOFO, 3200 decisions not 9600 independent, 53 synthetic excess harm events under passing 2pp gate')
           print('Scope: deterministic PROJECT-LINEAGE posthoc synthetic audit, not external or empirical validation')
           PY
