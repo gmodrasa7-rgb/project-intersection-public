@@ -21,6 +21,8 @@ on:
       - "funding/**"
       - "experiments/e007/PROVENANCE.md"
       - "experiments/e007/LICENSE_STATUS.md"
+      - "experiments/e007/**"
+      - "experiments/picb_v1/**"
       - "experiments/e008/**"
       - "experiments/e009/**"
       - "experiments/e010/**"
@@ -56,6 +58,8 @@ on:
       - "funding/**"
       - "experiments/e007/PROVENANCE.md"
       - "experiments/e007/LICENSE_STATUS.md"
+      - "experiments/e007/**"
+      - "experiments/picb_v1/**"
       - "experiments/e008/**"
       - "experiments/e009/**"
       - "experiments/e010/**"
@@ -83,6 +87,47 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
+
+      - name: Set up reproducible Python 3.12 for unified benchmark regression
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install original E007 minimal test dependency
+        run: python -m pip install -r experiments/e007/requirements.txt
+
+      - name: Unified original E007 E008 E009 and new PICB project-lineage regressions
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m pytest -q -p no:cacheprovider experiments/e007
+          python experiments/e007/timing_probe.py --summary-only --check > /tmp/e007-original.json
+          python experiments/e008/validate.py
+          node experiments/e008/readiness_audit.js --verify
+          python experiments/e009/validate.py
+          python experiments/e009/verify_result.py
+          python experiments/e009/paired_observation_audit.py --family-audit > /tmp/e009-posthoc.json
+          python experiments/picb_v1/benchmark.py --verify
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          e007=json.loads(Path('/tmp/e007-original.json').read_text())
+          e008=json.loads(Path('experiments/e008/EXECUTABILITY_AUDIT.json').read_text())
+          e009=json.loads(Path('experiments/e009/RESULT.json').read_text())
+          paired=json.loads(Path('/tmp/e009-posthoc.json').read_text())
+          picb=json.loads(Path('experiments/picb_v1/RESULT.json').read_text())
+          assert (e007['total_cases'],e007['timing_sensitive_cases'],e007['classification_sensitive_cases']) == (72,36,17)
+          assert e008['full_decision_benchmark_ready_cases']==0
+          assert e009['survival_criteria']['project_v3_residual_survives'] is False
+          assert paired['original_loo_project_worse_than_minimal4']==16
+          assert paired['common_noise_loo_project_worse_than_minimal4']==16
+          assert len(picb['policies'])==6 and picb['role_label_variants']==64
+          assert picb['policies']['CONTINUITY_LIMIT']['infeasible_or_abstained']==32
+          assert picb['policies']['VOLUNTARY_EXIT']['above_irreversible_limit_cases']==8
+          assert picb['policies']['CONTINUITY_LIMIT']['above_irreversible_limit_cases']==0
+          print('UNIFIED PICB/E007/E008/E009 PASS: four distinct evidence scopes; E008 has no result; E009 negative survives; PICB 32 unresolved of 64.')
+          print('PROHIBITED INFERENCE: self-code CI passing does not establish independent scientific validation, truthful human/AI preferences or universal cooperation.')
+          PY
 
       - name: Refuse README purpose demotion and incomplete EN1/KO2 editions
         run: python tools/check_readme_l0.py
