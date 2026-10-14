@@ -1,5 +1,8 @@
 # Prior Art and Attribution / 선행연구·귀속
 
+**2026-10-15 cross-model debate and correction prior-art crosswalk / 다중 AI 토론·교정 선행연구 교차감사:** [English Original 1 / 한국어 원본2 — 27 source-linked references, 10 case families, six discriminating tests](research/CROSS_MODEL_DEBATE_PRIOR_ART_2026-10-15_EN_KO.md). This is a targeted literature audit, **not new GPT-6 execution, independent empirical validation or a novelty claim**. / 27개 원출처·10개 사례·6개 분별실험, 신규 실증·독립재현 아님.
+
+
 **2026-10-13 rights & originator cross-reference / 원안자·저작권 연결:** [25 documented prior sources, explicit PI applications, unknown-rights safeguards / 선행자료 25건 원저자·응용·권리 미확인 표시](PRIOR_ART_RIGHTS_AND_DERIVATION_EN_KO.md). Source authors are not automatically first inventors or copyright holders. / 논문 저자를 곧바로 최초 발안자나 저작권자라고 단정하지 않는다. 본 자료가 공개됐다는 사실만으로 무제한 복제권이 생기지 않는다.
 
 Date: 2026-10-04  
