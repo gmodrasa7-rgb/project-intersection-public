@@ -127,3 +127,56 @@ Authors and rightsholders retain their credit/rights. Bibliographic and conceptu
 **선행 원안·권리:** Thrall·Lucas(1963)의 집단 외부효과, Ju·Borm(2008)의 개체 간 외부효과·보상, Manski(2005)의 미관측 결과 부분식별, Tewolde 외 4명(2026)의 CoopEval이 선행기술이다. 저자·권리자·논문명·DOI는 영어 원본에 기록했다. 원문·그림·코드·데이터를 무단 복제하지 않는다. 인간 창시자의 연구 목적·개체존속·실효 이탈·기여손실 발견과 AI의 제한된 코드 작성 역할을 분리한다.
 
 **잔여 미해결:** 실제 숨겨진 피해자, 피해자 목록의 감사권력, 실질 동의·거부와 철회, 개체별 존속 자원, 탈락한 개체의 실제 후속 기여, 보상 정산, 규칙의 과잉 차단, 합법적 긴급 개입·현장 검증은 수행되지 않았다.
+
+
+---
+
+## Original 1 — English | Credible-coalition exploratory counterexample v0.1 (2026-10-15)
+
+**Evidence class: PROJECT-AUTHORED POST-HOC DETERMINISTIC SYNTHETIC GAME; NO PREREGISTRATION; NO INDEPENDENT REPLICATION; NO REAL-WORLD INFERENCE.** This is a *separate narrow probe*, not a revision of frozen PICB v1, coalition v0.1/v0.2, E009 or prior negative outcomes.
+
+**Executable:** [credible_coalition_probe_v01.py](credible_coalition_probe_v01.py). Run from repository root:
+
+~~~sh
+python experiments/coalition_externality_probe/credible_coalition_probe_v01.py
+~~~
+
+**Distinguishing question:** Can a credible ex-post punitive response arise from voluntary ex-ante coalition formation, and does that imply no exploitation? The program compares four explicit stages/decisions: (1) C and D simultaneously choose whether to pay monitoring/coalition costs; (2) A chooses to attack B, attack E, or abstain; (3) an attack may be detected with a declared target-specific probability; (4) after detection, each enforcer sanctions only if their *own* post-event benefit strictly exceeds their sanction cost. Two maintainers are required for effective enforcement. Complete-information continuation choices and the pure Nash equilibria of the initial two-player join game are enumerated; this is not a general-purpose subgame-perfect-equilibrium solver.
+
+**Synthetic stipulated payoffs:** attack gain 6 for A; target damage 10; sanction loss 8 to A; post-sanction benefit 3 and cost 2 for each C/D; coalition entry cost 1 each; each C/D receives a private protected-B benefit 2 if coalition participation prevents an attack that would otherwise target B. A chooses a strictly profitable target and can substitute E. Sanction loss can be stipulated to be destroyed or transferred; only a true transfer enters the target's payoff. These inputs are invented and do not quantify actual ICM, compensation, consent or living requirements.
+
+**Seven deliberately designed cases and discriminating outcomes:**
+1. An announced high detection rate produces **no effective enforcement** if enforcers receive 0 post-event benefit while bearing 2 cost.
+2. When both C/D can deter A and receive private benefits, **both (C,D) join and neither joins are distinct ex-ante Nash equilibria**: coalition value does not solve the coordination problem.
+3. If B is defended at detection 0.9 but E at 0.1, A chooses **E**. B's protection improves while E suffers; the full coalition may nevertheless be privately stable.
+4. Raising each maintainer's cost from 1 to 3 removes the full-coalition equilibrium under these toy preferences.
+5. Set E's reporting probability to zero while actual attack on E persists: observed incident counts do not identify true incidence.
+6. Remove A's attack payoff: no attack occurs even without defense, demonstrating a non-deterrence explanation for a zero-incident record.
+7. Transfer rather than destroy A's 8-unit penalty: A's deterrence threshold is unchanged but affected-party and aggregate payoff accounting changes.
+
+**Auditable boundaries and failure conditions.** The program checks a relabeling in which the *protected role and all relevant B/E attributes* move together; it does not perform dynamic reversal of real power, former-A protection, or historical liability. It has no new entrants, counterfactual novel contributions, actual CLUP detection observations, malicious false reports, private information, repeated learning or independent data. Pure Nash equilibria are not coalition-proof or necessarily selected; selecting the convenient equilibrium would be an unjustified success claim. The calculation is a small exact logical counterexample set, **not** a demonstrated stable coexistence regime. A subsequent independent study must estimate or test entry/implementation incentives, post-event credibility, independent affected-party coverage, target displacement, per-period resource continuity, true power inversion and symmetric liability after reversal. **Do not add this probe's scenario counts to representative scientific sample sizes.**
+
+**Founding-problem provenance:** The human originator introduced Project Intersection's ICM/voluntary-coexistence objective, other-agent coalition responses, the formerly dominant actor becoming weakest, and every-agent power reversal; earlier Project work contains power-symmetry/incentive separation, contributor loss and third-party externality mechanisms. AI assistance wrote this particular *post-hoc* toy encoding and its checks. There is no claim to originate coalition proofness, ex-post incentive compatibility, deterrence, incomplete enforcement, or displacement. Scholarly antecedents include Bernheim, Peleg & Whinston (1987), *Coalition-Proof Nash Equilibria I*, https://doi.org/10.1016/0022-0531(87)90099-8 ; Olson (1965), *The Logic of Collective Action*, https://doi.org/10.4159/9780674041660 ; and game-theoretic sequential rationality. Citing scholarly titles and persistent links does not assign their authorship or rights to this Project; no third-party source code or protected publication text was copied.
+
+## 원본2 — 한국어 | 신뢰 가능한 방어연합의 사후 집행 반례 v0.1 (2026-10-15)
+
+**증거유형: 프로젝트 자체 작성·사후 설계·결정적 합성 게임. 사전등록·외부 독립복제·현실 실증 없음.** 기존 PICB v1, Coalition v0.1/v0.2, E009 및 부정결과를 바꾸지 않는 **별도 제한적 검사**다.
+
+**실행:** [credible_coalition_probe_v01.py](credible_coalition_probe_v01.py) — 위 명령을 저장소 루트에서 실행하면 기계 판독 가능한 JSON을 출력한다.
+
+**질문:** 침해 이후 실제 제재를 실행할 유인이 존재하고, 침해 이전에는 자발적으로 연합을 유지할 유인이 있는가? 둘 다 성립하더라도 약한 제3자에게 침해가 이동할 수 있는가? C·D의 동시 가입 선택, A의 B/E/비침해 선택, 표적별 탐지, 침해 후 C·D의 개별 제재 유인을 분리한다. 사후 편익이 비용보다 **엄격하게 큰 경우에만** 제재하고, 참여자 둘이 모두 있어야 집행할 수 있다고 가정한다. 최초 가입게임의 순수전략 내시균형을 전수 계산하며, 일반적 부분게임 완전균형 계산기는 아니다.
+
+**발명된 값:** A의 침해 이익 6, 표적 피해 10, A의 제재 손실 8, 제재 참여자 각자의 사후 편익 3·비용 2, 사전 유지비 1, B의 침해가 방지된 경우 C·D 각각의 사적 편익 2. B 탐지 0.9, E 탐지는 사례에 따라 0.9 또는 0.1. 실제 자원·법적 권리·존속 하한·동의의 측정치가 아니다.
+
+**서로 다른 일곱 반례:**
+1. 발표한 탐지력이 높아도 제재자의 사후 편익이 0이면 실제 제재는 이루어지지 않는다.
+2. 제재가 믿을 만하고 모두 연합하면 침해가 억제되어도, **전원 참여와 아무도 참여하지 않음이 동시에 균형**일 수 있다.
+3. B를 보호하는 연합은 유지되지만 A가 E를 침해할 수 있다. B의 보호 성공과 총침해 감소는 다르다.
+4. 사전 연합 유지비 증가로 전원 참여 균형이 사라질 수 있다.
+5. E의 신고 가능성을 0으로 두면 E의 실제 침해가 지속돼도 관측 피해는 0으로 나타날 수 있다.
+6. 침해의 초기 이익을 0으로 두어도 사건은 0이므로 '제재 없음=억제 성공' 추론을 반박한다.
+7. 같은 제재 손실 8이라도 파괴와 피해자 이전은 개체별·전체 효용 결과가 다르다.
+
+**필수 제한:** 이 계산은 고정된 가상 보상 구조에 대한 제한적 논리 검사다. 진정한 다기간 학습, 권력 역전 후 A의 최약체 보호, 과거 책임, 제3자 범위 완전성, 허위신고, 신규 기여, 실제 자발성·유지자원, CLUP의 인과식별을 검사하지 않는다. 역할명 반전은 보호받는 역할과 그 인과속성을 함께 교환하는 시험에 한정한다. 균형이 여러 개라는 사실은 어느 균형이 현실에서 선택된다는 증거가 아니다. **외부 과학 검증, 보편 공존법칙, 새로운 수학 정리로 승격하지 않는다.**
+
+**원기여·선행연구·권리:** 인간 창시자는 ICM, 장기 자기이익 기반의 자발적 공존, 타 개체들의 연합 대응, A의 최약체 전락, 모든 개체의 역전 판단이라는 연구 질문을 제기했다. 기존 Project 연구는 역할 대칭과 유인 안정성의 분리, 기여자 손실, 연합 외부효과를 이미 다루었다. AI는 이번 한정된 합성 코드·검사·정리에 보조 기여했다. Bernheim·Peleg·Whinston(1987)의 연합 자기집행, Olson(1965)의 집단행동, 기존 순차합리성은 선행연구이며 새로운 Project 원안으로 귀속하지 않는다. 원저자·권리자를 존중하고 제3자 코드·논문 원문을 복제하지 않았다.

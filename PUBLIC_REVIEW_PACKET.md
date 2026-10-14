@@ -209,3 +209,14 @@ Further documentation is justified only when it:
 - prevents founder reconstruction burden.
 
 Otherwise prefer empirical, independent, or adversarial work.
+
+
+## 9. Blind-first claim-discrimination request / 블라인드 우선 주장 판별 요청
+
+**Original 1 — English.** For a reviewer who has previously seen model-generated summaries or the founder's criticisms, agreement is not independent discovery. Record (i) which original source files were actually opened, (ii) which executable files were run and which output hashes were checked, (iii) which counterexample was independently constructed **before** seeing others' criticism, (iv) known prior scholarship and Project-origin attribution, and (v) a disconfirming condition. Do not request the founder to repeat or supply information already available in the repository. Compare blinded reviewer outputs across fresh context and criticism-conditioned context before inferring an improvement in independent reasoning. This is a proposed reviewer protocol; no blind performance benchmark or outside review has been conducted.
+
+**Concrete narrow challenge.** Read [Coalition Externality v0.1/v0.2 and the new post-hoc credible response subprobe](experiments/coalition_externality_probe/README.md). Check the historical three formerly positive classifications downgraded under unknown affected scope; distinguish ex-ante C/D joining, ex-post incentive to punish, A's attack/no-attack/target-switch, under-reporting and sanction transfer/destruction. Verify that both full participation and zero participation can be Nash equilibria without implying a unique predicted social outcome. Construct a counterexample that reverses the expected policy ranking or reports an implementation mismatch; cite exact code path. A run of the Project's own code is **internal reproduction**, not independent implementation; a favorable synthetic score is not external evidence.
+
+**원본2 — 한국어.** 이전 AI 요약이나 창시자의 비판을 본 검토자의 동의는 독립 발견이 아니다. 원자료 중 실제 열람한 파일, 직접 실행한 코드와 출력 검증, 타인의 지적을 보기 전에 독립 구성한 반례, 선행연구·원기여 경계, 반증 조건을 구분하여 기록한다. 새 대화 조건과 기존 비판을 제공한 조건을 블라인드 비교하기 전에는 독립 추론 성능 향상으로 승격하지 않는다. 이미 저장소에 있는 자료를 다시 창시자에게 요구하지 않는다. **이것은 독립 실험이 완료된 보고서가 아니라 외부 검토자가 재사용할 제안 절차다.**
+
+**구체 과제:** [연합 외부효과 v0.1/v0.2와 사후 제재 유인 별도 계산](experiments/coalition_externality_probe/README.md)을 검사한다. 미관측 영향권에서 기존 허용 3건이 판단유보로 바뀐 기록을 보존하고, 사전 연합 참여·사후 제재·A의 표적 선택·신고 누락·제재의 파괴/이전을 구분한다. 전원 참여와 무참여가 동시에 균형일 수 있으므로 임의로 편리한 균형을 선택하지 않는다. 선행 평가를 재서술하는 대신 코드의 새 반례 또는 오류, 정책 순위의 반전 조건을 구체적으로 제시한다. 프로젝트 코드 재실행만으로 독립 구현이나 현장 실증을 주장하지 않는다.
