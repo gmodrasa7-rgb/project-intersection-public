@@ -42,3 +42,26 @@ jobs:
           }
           print("RESULT: project-authored deterministic synthetic probe PASS")
           PY
+
+      - name: Run partial-identification and role-reversal finite oracle (v0.2)
+        run: |
+          python experiments/coalition_externality_probe/partial_identification_audit_v02.py > /tmp/pi-coalition-v02.json
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          data = json.loads(Path("/tmp/pi-coalition-v02.json").read_text(encoding="utf-8"))
+          assert data["finite_states_tested"] == 108864
+          assert data["formula_oracle_disagreements"] == 0
+          assert data["member_identity_swap_disagreements"] == 0
+          assert data["old_v01_masking_observations"] == {
+              "member_loss_c_missing": "UNRESOLVED",
+              "exit_c_missing": "UNRESOLVED",
+          }
+          cases = {x["case"]: x["classification"] for x in data["focused_cases"]}
+          assert cases["known_member_loss_hidden_by_missing_C"] == "BLOCKED"
+          assert cases["known_exit_block_hidden_by_missing_C"] == "BLOCKED"
+          assert cases["positive_C_but_unverified_affected_register"] == "UNRESOLVED"
+          assert cases["unknown_C_bounded_nonnegative"] == "ADMISSIBLE"
+          assert cases["known_unavoidable_C_loss"] == "BLOCKED"
+          print("v0.2 finite-world self-audit PASS; only project-authored synthetic evidence")
+          PY
