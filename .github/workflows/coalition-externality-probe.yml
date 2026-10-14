@@ -31,7 +31,7 @@ jobs:
           import json
           from pathlib import Path
           data = json.loads(Path("/tmp/pi-coalition-externality.json").read_text())
-          assert data["self_checks_passed"] == 62
+          assert data["self_checks_passed"] == 65
           assert data["counts"] == {
               "total": 10,
               "member_select": 9,
