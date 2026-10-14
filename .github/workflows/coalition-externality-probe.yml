@@ -61,6 +61,26 @@ jobs:
               "member_loss_c_missing": "UNRESOLVED",
               "exit_c_missing": "UNRESOLVED",
           }
+          # The frozen v0.1 decisions remain recorded; unknown affected
+          # scope cannot be promoted to a positive v0.2 clearance.
+          from collections import Counter
+          legacy = data["legacy_v01_reassessment_open_scope"]
+          assert len(legacy) == 10 and len({r["id"] for r in legacy}) == 10
+          assert Counter(r["legacy_v01_guard"] for r in legacy) == {
+              "ADMISSIBLE": 3, "BLOCKED": 6, "UNRESOLVED": 1,
+          }
+          assert Counter(r["v02_open_scope_guard"] for r in legacy) == {
+              "UNRESOLVED": 4, "BLOCKED": 6,
+          }
+          assert all(r["affected_scope_complete"] is None for r in legacy)
+          changed = {r["id"] for r in legacy
+                     if r["legacy_v01_guard"] != r["v02_open_scope_guard"]}
+          assert changed == {"win_all", "consented_bounded_loss",
+                             "zero_member_incentive"}
+          assert all(r["legacy_v01_guard"] == "ADMISSIBLE"
+                     and r["v02_open_scope_guard"] == "UNRESOLVED"
+                     for r in legacy if r["id"] in changed)
+          print("Legacy v0.1 -> v0.2 open-scope reassessment PASS; 3 positive claims downgraded")
           cases = {x["case"]: x["classification"] for x in data["focused_cases"]}
           assert cases["known_member_loss_hidden_by_missing_C"] == "BLOCKED"
           assert cases["known_exit_block_hidden_by_missing_C"] == "BLOCKED"

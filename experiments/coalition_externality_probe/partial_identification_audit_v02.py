@@ -7,7 +7,7 @@ import itertools
 import json
 from dataclasses import dataclass, replace
 
-from probe import Case, constrained_admissibility
+from probe import CASES, Case, audit, constrained_admissibility
 
 VALUES = (-2, 0, 2)
 C_VALUES = tuple(range(-3, 4))
@@ -92,11 +92,14 @@ def world_allowed(o, c, consent):
 def classify_oracle(o):
     """Enumerate all bounded completions; open actor register bars certification."""
     validate(o)
-    if known_member_failure(o):
-        return "BLOCKED"
     worlds = possible_worlds(o)
     if worlds is None:
-        return "UNRESOLVED"
+        # No completion can be enumerated without bounds. This oracle
+        # evaluates directly known member/exit facts without calling the
+        # interval classifier's shared known_member_failure helper.
+        return ("BLOCKED" if not (o.a >= 0 and o.a_exit
+                                  and o.b >= 0 and o.b_exit)
+                else "UNRESOLVED")
     permissible = [world_allowed(o, c, consent) for c, consent in worlds]
     if not any(permissible):
         return "BLOCKED"
@@ -140,6 +143,25 @@ def unregistered_actor_witness():
     }
 
 
+def reassess_legacy_cases():
+    """Reclassify original v0.1 cases without modifying their historical results."""
+    rows = []
+    for case in CASES:
+        bounds = (case.bystander_gain, case.bystander_gain) if case.bystander_gain is not None else None
+        obs = Observation(case.gain_a, case.gain_b, bounds, case.bystander_consent,
+                          case.bystander_resource, case.bystander_floor,
+                          case.member_a_exit, case.member_b_exit, case.harm_budget, None)
+        rows.append({"id": case.id, "legacy_v01_guard": audit(case)["guard"],
+                     "v02_open_scope_guard": classify_formula(obs),
+                     "affected_scope_complete": None})
+    assert len(rows) == 10
+    assert sum(r["legacy_v01_guard"] == "ADMISSIBLE" for r in rows) == 3
+    assert sum(r["v02_open_scope_guard"] == "ADMISSIBLE" for r in rows) == 0
+    assert sum(r["v02_open_scope_guard"] == "BLOCKED" for r in rows) == 6
+    assert sum(r["v02_open_scope_guard"] == "UNRESOLVED" for r in rows) == 4
+    return rows
+
+
 def run_audit():
     scenarios = example_pairs()
     rows = []
@@ -181,6 +203,7 @@ def run_audit():
         "schema": "pi-coalition-partial-identification/v0.2",
         "class": "PROJECT_SELF_RUN_SYNTHETIC_FORMAL_ENUMERATION",
         "old_v01_masking_observations": old,
+        "legacy_v01_reassessment_open_scope": reassess_legacy_cases(),
         "unregistered_actor_witness": unregistered_actor_witness(),
         "focused_cases": rows,
         "finite_states_tested": count,

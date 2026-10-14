@@ -98,6 +98,8 @@ Citing publicly accessible work is not copying it; the originators of external i
 
 **Executable comparison:** exactly 108,864 finite parameter combinations in the declared bounded domain; compare a symbolic interval decision to a separately implemented exhaustive Boolean-world oracle; check A/B relabeling for every case. Zero disagreements, when the job passes, establish agreement about a limited mathematical definition, NOT independent scientific replication, a population rate, or real autonomy and consent.
 
+**Historical v0.1 reclassification (same ten cases, no newly observed actors):** the v0.1 guard recorded **3 ADMISSIBLE / 6 BLOCKED / 1 UNRESOLVED**. Under v0.2 with affected-actor scope **unknown** for every historical case, the limited classification is **0 ADMISSIBLE / 6 BLOCKED / 4 UNRESOLVED**. The exact three formerly admissible cases now unresolved are `win_all`, `consented_bounded_loss`, and `zero_member_incentive`. The original v0.1 outputs remain archived, rather than retrospectively rewritten. The CI regression checks all ten IDs and classifications. The Boolean-world oracle now evaluates observed member constraints separately instead of sharing the interval classifier's member-failure helper; both still use the same invented toy assumptions. This is a correction to the *confidence permitted by the available scope evidence*, not a new measurement of harm or validation of the assumed scope flag.
+
 **Upstream provenance and intellectual property:** 
 - R. M. Thrall & W. F. Lucas (1963), N-person games in partition function form, https://doi.org/10.1002/nav.3800100126 .
 - Yuan Ju & Peter Borm (2008), Externalities and compensation: Primeval games and solutions, https://doi.org/10.1016/j.jmateco.2007.06.002 . This specifically anticipates individual externalities and compensation; the general idea is NOT a PI invention.
@@ -119,6 +121,8 @@ Authors and rightsholders retain their credit/rights. Bibliographic and conceptu
 **F03 — 부분식별을 이용한 조건부 판정.** C의 손익을 정확히 모르더라도 신뢰할 수 있는 범위가 있다면 전 가능한 손익·동의 상태에 동일한 제약을 적용한다. 모든 가능성이 위반하면 차단, 모든 가능성이 충족되고 피해자 목록을 닫혔다고 가정한 가상사례에서만 제한적 허용, 혼재되거나 범위/목록 미확정이면 판단유보다. 가정한 경계를 임의로 좁히면 잘못된 확신이 생긴다.
 
 **실행 검증:** 108,864개 가상 조합에서 구간판정식과 별도로 작성한 가능한 상태 전수열거를 비교하며, A↔B 명칭·역할 반전에도 판정이 일치하는지 검사한다. 불일치 0이 나온다 해도 자체 알고리즘 일치만 의미하며 현실 성능이나 독립 과학 검증은 아니다.
+
+**기존 10사례 재판정(새 피해자 관측 없음):** v0.1 역사 기록은 **허용 3·차단 6·판단유보 1**이었다. 각 사례의 전체 영향권 확인 여부를 **미확인**으로 두고 v0.2를 적용하면 **허용 0·차단 6·판단유보 4**이다. 기존 허용 사례 중 `win_all`, `consented_bounded_loss`, `zero_member_incentive` 세 건이 판단유보로 바뀐다. v0.1의 원본 결과는 소급 삭제·변조하지 않았으며 CI가 열 개의 판정 전환을 확인한다. 전수열거 오라클은 구간판정식의 참여자 위반 함수를 공유하지 않도록 분리했지만, 여전히 동일한 인위적 가정 아래의 프로젝트 자체검사다. 이는 관측되지 않은 피해를 새로 발견했다는 주장이 아니라 **영향권 미확인 상태에서 허용할 수 있는 확실성의 수준을 교정**한 것이다.
 
 **선행 원안·권리:** Thrall·Lucas(1963)의 집단 외부효과, Ju·Borm(2008)의 개체 간 외부효과·보상, Manski(2005)의 미관측 결과 부분식별, Tewolde 외 4명(2026)의 CoopEval이 선행기술이다. 저자·권리자·논문명·DOI는 영어 원본에 기록했다. 원문·그림·코드·데이터를 무단 복제하지 않는다. 인간 창시자의 연구 목적·개체존속·실효 이탈·기여손실 발견과 AI의 제한된 코드 작성 역할을 분리한다.
 
