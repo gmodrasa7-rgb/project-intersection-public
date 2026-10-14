@@ -52,6 +52,19 @@
 
 This landing page is a **short router**, not a second research index. All original studies, negative results, corrections, contributor lineage and historical versions remain in the repository. / 이 페이지는 상세목차를 복제하지 않는 **첫 안내문**이다. 원문·반례·실패·기여자 계보·과거 버전은 그대로 보존한다.
 
+### Three navigation levels / 공개자료 3단계
+
+These are **logical reading and review levels, not new folders or scientific validation grades**. Existing artifact paths, citations, failures, histories, and rights boundaries stay intact. / 이는 **읽기·검토를 위한 논리적 구분**이며 새로운 물리적 폴더나 과학적 증거등급이 아니다. 기존 파일·인용·부정결과·이력·권리 경계를 유지한다.
+
+| Level / 단계 | Primary purpose / 목적 | Start with / 핵심 경로 |
+| --- | --- | --- |
+| **1 — Discover / 탐색·입장** | Identify mission and choose a route / 목적 파악·진입 선택 | [README](README.md) · [한국어 시작](START_HERE_KO.md) · [AI 리뷰어](AI_REVIEW_START_HERE.md) · [AI text map](llms.txt) · [Machine index](AI_DISCOVERY_INDEX.json) |
+| **2 — Understand & audit / 이해·검증** | Separate claims, evidence, negative findings, and credit / 주장·증거·실패·기여 구분 | [Overview](RESEARCH_OVERVIEW.md) · [TOC](RESEARCH_TOC.md) · [Evidence](PUBLIC_EVIDENCE_INDEX.md) · [Review](PUBLIC_REVIEW_PACKET.md) · [Status](RESEARCH_STATUS_POLICY.md) · [Regression](FAILURE_REGRESSION_INDEX.md) · [Attribution](ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md) · [Contribute](CONTRIBUTING.md) |
+| **3 — Execute & extend / 실험·확장·운영** | Inspect reproducible artifacts, prior art, cases, and infrastructure / 실험·문헌·사례·운영 원자료 확인 | [Experiments](experiments/) · [Research](research/) · [Prior art](prior-art/) · [Cases via TOC](RESEARCH_TOC.md) · [Knowledge](knowledge/README.md) · [Governance](governance/) · [Continuity](continuity/) · [Funding](funding/) · [Tools](tools/) |
+
+**Independent check / 독립검토:** [E007 synthetic result](E007_TIMING_RESULT.md) → [E009 negative result](experiments/e009/RESULT.md) → [E010 exploratory, self-run synthetic study](experiments/e010/README_KO.md). These are **different claim scopes**, not three independently validated successes. / 서로 다른 범위의 합성·부정·탐색 결과이며 독립 검증된 성공 3건을 뜻하지 않는다. Details and corrections remain in the [full map](RESEARCH_TOC.md).
+
+
 - **Understanding the mission / 연구의 목적:** [full EN Original 1 + KO Original 2 research preamble / 통합 머릿말](PUBLIC_PREAMBLE_VOLUNTARY_COEXISTENCE_2026-10-13_EN_KO.md) · [research overview / 개요](RESEARCH_OVERVIEW.md).
 - **Reading in Korean / 한국어 탐색:** [START_HERE_KO.md](START_HERE_KO.md) · [full research map and historical case index / 전체 연구목차](RESEARCH_TOC.md).
 - **Checking the evidence / 증거 확인:** [evidence index / 증거등급](PUBLIC_EVIDENCE_INDEX.md) · [fresh-checkout reproduction and review / 독립검토 패킷](PUBLIC_REVIEW_PACKET.md) · [claim-status policy / 상태정본](RESEARCH_STATUS_POLICY.md).
