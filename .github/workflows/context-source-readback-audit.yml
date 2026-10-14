@@ -1,0 +1,53 @@
+name: Context source readback audit
+
+on:
+  pull_request:
+    paths:
+      - "tools/pi_context_source_readback_v03.py"
+      - "tools/pi_context_route_v02.py"
+      - "tools/pi_library_context_trust_gate.py"
+      - ".github/workflows/context-source-readback-audit.yml"
+  push:
+    branches: [main]
+    paths:
+      - "tools/pi_context_source_readback_v03.py"
+      - "tools/pi_context_route_v02.py"
+      - "tools/pi_library_context_trust_gate.py"
+      - ".github/workflows/context-source-readback-audit.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  source-readback:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Recheck v0.1, v0.2, and actual Git-tree source bytes
+        run: |
+          python tools/pi_library_context_trust_gate.py --selftest > /tmp/a.json
+          python tools/pi_context_route_v02.py --selftest > /tmp/b.json
+          python tools/pi_context_source_readback_v03.py --selftest > /tmp/c.json
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          a=json.loads(Path("/tmp/a.json").read_text())
+          b=json.loads(Path("/tmp/b.json").read_text())
+          c=json.loads(Path("/tmp/c.json").read_text())
+          assert a["checks_passed"] == 28
+          assert b["queries"] == 16
+          assert c["tested_queries"] == 3
+          assert c["binary_byte_checks"] == "MATCHED_COMMIT_TREE"
+          statuses = [x["status"] for x in c["case_results"]]
+          assert statuses == [
+            "SOURCE_BYTES_CHECKED_NOT_CLAIMS",
+            "REQUIRES_FRESH_STATE",
+            "COVERAGE_INCOMPLETE",
+          ]
+          assert c["independent_model_test"] is False
+          print("Git-source readback checks pass; no LLM or Library-performance claim")
+          PY
