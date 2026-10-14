@@ -185,9 +185,16 @@ The highest-value external actions are not additional praise or same-lineage sum
 
 Use [GitHub issue #19 — Independent verification request](https://github.com/gmodrasa7-rgb/project-intersection-public/issues/19) or [CONTRIBUTING.md](CONTRIBUTING.md) to return results without reconstructing the project in conversation.
 
-Negative results and KILL decisions are valid contributions.
+Negative results and documented pause/stop decisions are valid contributions. / 부정결과와 근거를 갖춘 보류·중단 판단도 유효한 기여이다.
 
 ---
+
+## 8a. Design sources and falsification boundary / 자료실 설계의 선행연구·반증 경계
+
+**Original 1 — English:** This review-navigation change adapts, rather than claims to invent, existing principles: Daniele Procida's [Diátaxis](https://diataxis.fr/) (user-need-specific content; do not force empty folders); Wilkinson et al. (2016), [FAIR](https://doi.org/10.1038/sdata.2016.18) (qualified findability and provenance); Barker et al. (2022), [FAIR4RS](https://doi.org/10.1038/s41597-022-01710-x) (software identifiers and reuse); Grant et al. (2026), [TOP 2025](https://doi.org/10.1186/s41073-026-00223-0) (separating reporting, verification practice and verification studies); and the [Turing Way research compendia](https://book.the-turing-way.org/reproducible-research/compendia/) (reproducible inputs, environment and outputs). The five short questions are a **Project-specific selection**, not a validated new standard. For usability, a future independent tree test should measure wrong turns, direct retrieval, time, and interpretation accuracy; no external human test has been run here.
+
+**원본2 — 한국어:** 이 변경은 기존 선행원칙을 활용한 응용이지 원리 자체의 독창적 발명이 아니다. **Daniele Procida의 Diátaxis**(독자별 문서 필요), **Wilkinson 등(2016)의 FAIR**(탐색·출처), **Barker 등(2022)의 FAIR4RS**(연구코드 식별·재사용), **Grant 등(2026)의 TOP 2025**(보고·검증활동·검증연구 구별), **The Turing Way 참여자들의 연구 패키징**(입력·환경·결과 연결)을 인용한다. 다섯 질문의 선정은 Project Intersection에 맞춘 설계 제안이며 독립 검증된 새 표준이 아니다. 이용자 이해·길찾기 성공률·오해율·소요시간의 외부 실험은 **미실행**이다.
+
 
 ## 8. Stop rule / 중단 규칙
 
