@@ -529,5 +529,29 @@
     ],
     "next_discriminating_gate": "Do not expand PICB v1 post hoc. First secure independent adjudication/sample of primary-source cases and a distinct, explicit preregistered longitudinal/negative-control outcome contract. Compare fixed-cost voluntary coexistence and alternatives with actual warning detection, observer independence, idea stimulus, realized downstream outputs and per-party continuance, including false warnings, parallel inventions and nonresponse. No new founder labour requirement.",
     "rollback_and_boundary": "This keyed research-continuity index may be reverted without removing historical cases, frozen benchmark results, user contributions, original CLUP mechanisms, source citations or permissions. Full private chat is not uploaded publicly."
+  },
+  "ccp_deep_prior_art_20261014": {
+    "status": "PRIMARY_PRIOR_ART_ADDED_NO_NEW_EXPERIMENT_OR_CAUSAL_CCP_EFFECT",
+    "scope": "Deepen founder's Continuance–Contribution Pathways Hypothesis using primary peer-reviewed and operational antecedents while preserving originators. Human case data only in this stream, not an exclusion of AI from full project.",
+    "sources_index": "CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md / CP01–CP14 (14 research topic/source groups in English Original 1 and Korean Original 2)",
+    "most_discriminating_falsifier": {
+      "source": "Azoulay, Fons-Rosen, Graff Zivin (2019), AER, 10.1257/aer.20161574",
+      "observation": "452 prematurely deceased star life scientists, non-collaborators' field publications rose on average ~8.6% whereas collaborators' output declined.",
+      "limitation": "Not the welfare benefit of a death, not a license for deprivation; distinguishes incumbent life/participation from incumbent ability to control outside entry.",
+      "safer_comparator": "Existing contributor continuing to participate while independent outsiders keep access to funding, idea dissemination, peer review and exit, under matched budgets."
+    },
+    "additional_critical_priors": [
+      "Fleming, Mingo & Chen (2007), 10.2189/asqu.52.3.443: brokerage may stimulate creative generation yet hinder downstream idea uptake.",
+      "Shalizi & Thomas (2011), 10.1177/0049124111404820; Manski (1993), 10.2307/2298123: reported inspiration and network proximity do not identify exclusive causal effects.",
+      "Hudgens & Halloran (2008), 10.1198/016214508000000292: account for interference; actor outputs not independent samples.",
+      "Ke et al (2015), 10.1073/pnas.1424329112 vs Wang, Mei & Hicks (2014), 10.1126/science.1248770: delayed citation and severe predictive model limitations."
+    ],
+    "core_revision": "Continuance PLUS open participation, independent warnings, idea generation, uptake and proven downstream contributions; not monotone headcount or output maximization. Person's subsistence/rights not contingent on measurable contributions.",
+    "new_research_effect_size": null,
+    "new_observed_real_contribution_dataset": false,
+    "next_test": "Pre-register consent-based nonessential information access, truthful ignored warning controls, innovation with outsider entry, independent adjudicated novelty and third-party burden; negative outcomes and unidentified counterfactuals retained. No deprivation, intrusive private records, or extra founder correction labor.",
+    "navigation_graph": "knowledge/graph.json +3 upstream-prior-art entities / +4 scoped relations; previous 69/73 -> 72/77",
+    "regression": "knowledge/validate.py continues to protect original 19+15 case groups and this update's bilingual CP entries.",
+    "rollback": "Revert only new current-turn documents/index/metadata; preserve frozen PICB/e009 negative/prior founder contributions."
   }
 }
