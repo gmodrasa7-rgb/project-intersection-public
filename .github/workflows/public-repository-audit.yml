@@ -108,6 +108,9 @@ jobs:
       - name: Test PI-DS factual-access versus spontaneous salience distinction (synthetic only)
         run: node experiments/gpt_double_standard_20261014/origin_salience_probe.js factual-selftest
 
+      - name: Test PI-DS predeclared whole-run and stimulus integrity (synthetic only)
+        run: node experiments/gpt_double_standard_20261014/origin_salience_probe.js roster-selftest
+
       - name: Test PI-DS predeclared run roster incl absent full execution (synthetic only)
         run: node experiments/gpt_double_standard_20261014/origin_salience_probe.js roster-selftest
 
@@ -148,7 +151,17 @@ jobs:
           assert cases['free_cases_per_factual_prompt'] == 2
           assert cases['factual_probe_version'] == 'K-v0.2'
           assert '## F-R017' in failures
-          assert '## F-R018' in failures
+          assert '## F-R018' in failures 
+          assert '## F-R019' in failures
+          assert 'P0 predeclared-run denominator repair' in report
+          assert 'P0 사전선언 실행모집단 복구' in report
+          assert cases['predeclared_run_roster_integrity_audit'] is True
+          assert cases['predeclared_run_roster_synthetic_test'] is True
+          assert cases['predeclared_run_roster_live_instances'] == 0
+          assert cases['wholly_absent_run_detected_when_predeclared'] is True
+          assert cases['roster_preregistration_chronology_independently_verified'] is False
+          assert cases['raw_model_response_authenticity_independently_verified'] is False
+          assert cases['roster_protocol'] == 'PI-DS-RUN-ROSTER-M1'
           assert 'P0 selective-attrition measurement repair' in report
           assert 'P0 선택적 미관측 오류 수정' in report
           assert cases['analysis_missing_pairs_blocked'] is True
