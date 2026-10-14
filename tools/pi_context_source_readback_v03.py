@@ -49,11 +49,12 @@ def check_document(root: Path, revision: str | None, path: str) -> dict:
     if not isinstance(path, str) or not path or path.startswith("/") or ".." in Path(path).parts:
         return {"path": path, "status": "INVALID_PATH"}
     root = root.resolve()
-    dest = (root / path).resolve()
+    candidate = root / path
+    if candidate.is_symlink():
+        return {"path": path, "status": "SYMLINK_BLOCKED"}
+    dest = candidate.resolve()
     if not dest.is_relative_to(root) or not dest.is_file():
         return {"path": path, "status": "MISSING_OR_UNSAFE"}
-    if dest.is_symlink():
-        return {"path": path, "status": "SYMLINK_BLOCKED"}
     size = dest.stat().st_size
     if size > MAX_BYTES:
         return {"path": path, "status": "TOO_LARGE", "bytes": size}
