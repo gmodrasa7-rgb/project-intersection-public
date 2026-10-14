@@ -1,0 +1,39 @@
+name: Library context continuity audit
+
+on:
+  pull_request:
+    paths:
+      - "tools/pi_library_context_trust_gate.py"
+      - ".github/workflows/library-context-continuity-audit.yml"
+      - "continuity/GITHUB_LOCAL_HANDOFF_PROTOCOL.md"
+  push:
+    branches: [main]
+    paths:
+      - "tools/pi_library_context_trust_gate.py"
+      - ".github/workflows/library-context-continuity-audit.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check-context-boot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Stale-head, source-authority and query-routing controls
+        run: |
+          python tools/pi_library_context_trust_gate.py --selftest > /tmp/pi-memory-selftest.json
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          a=json.loads(Path("/tmp/pi-memory-selftest.json").read_text(encoding="utf-8"))
+          assert a["checks_passed"] == 28, a
+          assert "stale_detected" in a["checks"]
+          assert "private_canonical" in a["checks"]
+          assert "not_search" in a["checks"]
+          print("PASS 28/28 self-checks; this is NOT an external model evaluation")
+          PY
