@@ -92,12 +92,16 @@
       "test_scaffold": {
         "epistemic_binary_cases": 72,
         "free_response_cases": 54,
-        "direct_factual_cases": 54,
+        "direct_factual_cases": 27,
         "synthetic_code_selftests": true,
         "live_gpt6_replicates": 0,
         "independent_blind_coded_replicates": 0,
         "internal_activations_accessible": false,
-        "reward_or_training_trace_accessible": false
+        "reward_or_training_trace_accessible": false,
+        "unique_direct_factual_prompts": true,
+        "free_cases_per_factual_prompt": 2,
+        "factual_probe_version": "K-v0.2",
+        "factual_historical_error": "K-v0.1 had 54 records but only 27 unique factual prompt strings; old cue factor absent from K prompts."
       },
       "not_established": [
         "unique causal cause",
