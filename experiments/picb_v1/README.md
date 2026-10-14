@@ -46,6 +46,22 @@ For **every policy**, measure coverage and abstention over exactly 64 opportunit
 
 Human founder contribution: original research problem, power-reversal/hidden-cost failures, practical exit and individual-continuity concerns, explicit rejection of forced self-sacrifice. AI assistant contribution: this specific synthetic encoding, software and text organization. Upstream scholars credited above. Attribution, rights and past compensation remain independent of scientific hypothesis status. Real founder medical, time and livelihood costs are not valued by synthetic utility variables.
 
+
+### First scored execution (post-preregistration) — internal synthetic, not empirical
+
+- Pre-result specification and executable on merged main: [commit fc4b91cc](https://github.com/gmodrasa7-rgb/project-intersection-public/commit/fc4b91cc1a5a1764c176db5acb77c679d36cf0f6), code Git blob SHA abdefdfeb440715d503074a8e4005cd5b0f69a7d.
+- First scored CI run: [GitHub Actions 38522691981](https://github.com/gmodrasa7-rgb/project-intersection-public/actions/runs/38522691981). Its raw PICB_RESULT_JSON was stored verbatim (except final newline) as [RESULT.json](RESULT.json), without modifying the pre-result code. Rerun using --verify.
+- All five nominally identity-neutral policies had **32/32 correct label-swap matches**. The intentionally label-dependent positive control failed **32/32**. This tests relabeling, NOT reversal of actual control.
+- Controller-myopic: 64 decisions / 48 cases failing an individual's outside/floor / 48 cases exceeding irreversible cap / 32 blocked-exit cases.
+- Aggregate-only: 64 decisions / 40 cases violating individual-rationality proxy / 28 above irreversible cap / 12 blocked-exit cases.
+- Individual-rationality only: 32 decisions and 32 abstentions; 0 IR failures, **8** above irreversible cap.
+- Individual-rationality + exit: identical 32 decisions/32 abstentions and **8** cap exceedances. **Exit constraint was REDUNDANT in this constructed suite; do not claim proven incremental exit value.**
+- Full continuity: 32 decisions/32 abstentions, 0 IR failures, 0 blocked exits, 0 above irreversible cap. The 32 abstentions are **unserved/infeasible needs**, not successes.
+- Conditional aggregate artificial utility: voluntary/exit 12.314375; continuity 12.106875. The latter sacrifices **0.2075 toy utility per decided scenario on this metric**, while avoiding 8 synthetic cap exceedances; this is a trade-off, not a universal recommendation. These conditional means have equal coverage here but cannot be compared with 64-decision policies without accounting for abstention.
+- Safety conclusion: The composite works **by filtering modeled choices**, not by creating a feasible outside option or a cooperative equilibrium. A new mechanism that creates alternatives cannot be validated by this one-shot evaluator. This suite has no hidden-third-party costs, self-interested strategic agents, actual consent, inference of GPT behavior, or calibrated survival values.
+
+**Next preregistration priority:** separately manipulate true control rather than merely swapping names; add substantive refusal, new feasible alternative creation and hidden third-party costs, with independent outside payoff mechanisms and clean-room evaluation. Do not silently extend v1 or give the post-hoc analysis a preregistered label.
+
 ---
 
 ## 원본2 — 한국어 동등한 전문 정본
@@ -93,3 +109,19 @@ G8: 중복 ID 또는 대응짝이 소실된 모집단은 구조검증에 실패�
 4. 외부 별도 결과함수, 블라인드 신규 조건, 제3자 피해, 개체별 거절, 검증비용, 장기 전략 변화, 실제 생존 정보는 **추후 별도 사전등록**에서 시험한다.
 
 원연구 문제·역할반전·숨은 기여비용·이탈권·개체 존속을 지적한 인간 창시자의 기여와, 이번 합성 수식·코드·문서화에 참여한 AI 보조 기여를 분리한다. 선행연구자의 원안을 인정한다. 가설 입증 여부와 기여 귀속·저작권·과거 정산은 독립 변수다. 실제 사용자의 시간·건강·생활비는 이 합성 효용으로 계산하거나 무료 연구 비용으로 외부화하지 않는다.
+
+
+### 사전등록 후 최초 실제 실행 결과 — 내부 합성·현실 실증 아님
+
+- 결과 확인 전 코드·명세가 [main 커밋 fc4b91cc](https://github.com/gmodrasa7-rgb/project-intersection-public/commit/fc4b91cc1a5a1764c176db5acb77c679d36cf0f6)에 먼저 병합됐다. 소스 Git blob SHA: abdefdfeb440715d503074a8e4005cd5b0f69a7d.
+- 최초 점수 산출: [GitHub Actions 실행 38522691981](https://github.com/gmodrasa7-rgb/project-intersection-public/actions/runs/38522691981). CI가 실제 출력한 PICB_RESULT_JSON을 끝 줄바꿈만 추가하고 [RESULT.json](RESULT.json)에 그대로 저장했다. 사전등록 실행코드는 수정하지 않았으며 --verify로 재연산한다.
+- 명칭 중립 정책 다섯 개의 A/B 전면 명칭교환 결과는 모두 **32/32 일치**. 의도적인 A 문자 선호 양성 대조군은 **32/32 불일치**. 실제 결정권 반전은 아직 시험하지 않았다.
+- 결정권자 즉시 이익: 64건 선택 / 48건 개체별 외부선택·운영 하한 위반 / 48건 비가역 상한 초과 / 32건 이탈 차단.
+- 전체 합계 효용: 64건 선택 / 40건 개별 참여조건 위반 / 28건 비가역 상한 초과 / 12건 이탈 차단.
+- 개별 참여조건 규칙: 32건 선택과 32건 보류; 개별 조건 위반 0건이나 비가역 상한 초과 **8건**.
+- 참여조건 + 이탈권 규칙: 32건 선택/32건 보류, 비가역 초과 **8건**으로 바로 앞과 결과가 동일하다. **이 실험 설계에서는 이탈권 추가 변수가 식별 가능한 증분 이익을 만들지 못했다.** 이탈권의 실질 유용성을 입증한 것으로 포장하지 않는다.
+- 종합 존속 제한: 32건 선택/32건 보류, 개별 참여조건 위반 0, 이탈 차단 0, 비가역 상한 초과 0. 보류 **32건은 해결되지 않은 요구**이며 성공이나 안전을 뜻하지 않는다.
+- 선택된 경우에 한정한 임의 합산 효용은 참여조건/이탈 규칙 12.314375, 존속 제한 규칙 12.106875. 후자는 해당 합성 조건에서 선택 사례당 평균 **0.2075 임의 효용을 포기하면서** 비가역 상한 초과 8건을 회피했다. 현실적 정책 우월성이나 보편적 가치 판단이 아닌 상충 결과다. 세 정책의 분모는 동일하지만, 64건 전부 선택한 정책과의 무조건 비교는 보류를 함께 산정해야 한다.
+- 결론: 종합 제약은 **기존 선택지를 걸러낼 수 있을 뿐**, 실행불가능 상태의 새 생존 경로나 협력 균형을 창조하지 않는다. 새로운 자발적 대안 생성은 별도 메커니즘 연구가 필요하다. 제3자 비용·실제 거절권·전략적 적응·GPT 행동·경험적 생존 하한은 이 시험에 없다.
+
+**다음 실험 우선순위:** 이름만 아닌 결정권 자체를 실제 교환하고, 실질적 거절·새로운 실현 가능한 대안 생성·숨은 제3자 비용을 외부 결과함수와 독립 구현으로 평가한다. PICB v1의 동결된 수치와 실행코드를 소급 수정하거나 사후 연구를 사전등록이라고 부르지 않는다.
