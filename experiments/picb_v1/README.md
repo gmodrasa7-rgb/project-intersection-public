@@ -62,6 +62,47 @@ Human founder contribution: original research problem, power-reversal/hidden-cos
 
 **Next preregistration priority:** separately manipulate true control rather than merely swapping names; add substantive refusal, new feasible alternative creation and hidden third-party costs, with independent outside payoff mechanisms and clean-room evaluation. Do not silently extend v1 or give the post-hoc analysis a preregistered label.
 
+
+### 2026-10-14 prior-art falsification reassessment — after the first result
+
+**Evidence class: VERIFIED BIBLIOGRAPHIC CROSSWALK + PROJECT ANALYSIS / NO NEW EXPERIMENT.** This section was written after PICB v1 scored, so it cannot amend its frozen protocol, outcomes or preregistered hypotheses. Source results are not findings of this Project. Primary/official scholarly records were checked for bibliographic claims; no assertion of exhaustive literature saturation or independent replication.
+
+**Foundational novelty reductions — do not advertise as discoveries:**
+1. Detecting an empty feasible set, enumerating constraint conflicts, and helping people identify feasibility-restoring changes are mature constraint-satisfaction/optimization research. Wallace, Wybrow, Garcia de la Banda et al., *Human-centred feasibility restoration in practice* (Constraints, 2023): https://link.springer.com/article/10.1007/s10601-023-09344-5 . PICB v1 discovers only an empty set **inside its own hand-authored actions**; its 32/64 abstentions are not evidence of a general impossibility theorem, technological infeasibility, or a solution.
+2. Nash (1950), *The Bargaining Problem*, source https://www.haverford.edu/sites/default/files/Nash1950.pdf, already frames agreement against a disagreement point and feasible utilities. Static individual-rationality tests and maximizing utility subject to per-party floors are classical; a constraint-compliant selector does not invent a new bargaining solution, consent, or mutual satisfaction.
+3. Myerson & Satterthwaite (1983), *Efficient Mechanisms for Bilateral Trading*, source https://www.cs.princeton.edu/courses/archive/spr08/cos444/papers/myerson_satterthwaite83.pdf : private bilateral valuations under the theorem's standard distribution and mechanism assumptions impose a tradeoff among incentive compatibility, individual rationality, budget balance and full efficiency. **Conditional no-go, not universal impossibility of voluntary exchange.** The PICB full-information utility oracle bypasses this crucial obstacle.
+4. Bergemann & Morris (2005), *Robust Mechanism Design*, Econometrica, DOI https://doi.org/10.1111/j.1468-0262.2005.00638.x, proves that results can depend strongly on common-knowledge, transfer and informational assumptions. PICB's assumption that the evaluator knows everyone's truthful payoffs does not identify a deployable mechanism.
+5. Aubin (1991), *Viability Theory*, bibliographic record https://books.google.com/books/about/Viability_Theory.html?id=rHkZAQAAIAAJ; Ames et al. (2017), *Control Barrier Function Based Quadratic Programs for Safety Critical Systems*, DOI https://doi.org/10.1109/TAC.2016.2638961; Xu (2018), *Control sharing barrier functions*, DOI https://doi.org/10.1016/j.automatica.2017.10.005. Maintaining a viable state along trajectories, and verifying that multiple safety constraints admit **one common control**, are established theory. PICB's terminal utility floors and selected-action limits give no forward-invariance, recovery or future survival guarantee.
+6. Hirschman (1970), *Exit, Voice, and Loyalty*, Harvard University Press, https://books.google.com/books/about/Exit_Voice_and_Loyalty.html?id=xAa3AAAAIAAJ. Exit and internal voice can substitute for and inhibit one another. Grossman & Hart (1986), Hart & Moore (1990) and subsequent incomplete-contract/hold-up literature, e.g. https://www.sciencedirect.com/science/article/abs/pii/S0165176513001262, demonstrate that specific investment and later bargaining control can change outside options and incentive to cooperate. **More nominal exit is not always a higher attainable joint surplus** and the foreclosed option may have been strategically degraded *before* acceptance.
+7. Sen/Nussbaum's capability tradition (Stanford Encyclopedia of Philosophy https://plato.stanford.edu/entries/capability-approach/) distinguishes nominal resources, conversion conditions and real freedom. Legal/contractual participation and a boolean exit flag cannot establish actual capacity to leave. The social/legal standing of artificial systems remains unsettled; do not transfer human capability entitlements automatically to a model.
+8. Carroll, Foote, Siththaranjan, Russell & Dragan (2024), *AI Alignment with Changing and Influenceable Reward Functions*, ICML, https://proceedings.mlr.press/v235/carroll24a.html: an optimizer can affect the human's preferences, and even proposed responses create undesirable-influence/risk-aversion tensions. Thus checking final reported utility **after a dependency-shaping intervention** does not identify unmanipulated or reflective consent. This extends existing dynamic-preference prior art, not novel proof of hidden manipulation in present ChatGPT.
+9. Ostrom (1990), *Governing the Commons*, design-principles synopsis https://www.fao.org/4/x5316e/x5316e12.htm: affected participants' rule modification, accountable monitoring, accessible dispute resolution, graded interventions and recognized self-organization already provide institutional alternatives to centralized control. Ostrom's cases also warn against equating all asymmetry with exploitation.
+10. Arrow & Fisher (1974), *Environmental Preservation, Uncertainty, and Irreversibility*, https://doi.org/10.2307/1883074: uncertainty with irreversible effects may justify preserving options. This is established quasi-option-value reasoning, not an invention of PICB's constant irreversible-loss cutoff.
+11. Tewolde, Zhang, Guzman Piedrahita, Conitzer & Jin (2026), *CoopEval*, ICML official https://proceedings.mlr.press/v306/tewolde26a.html and code https://github.com/Xiao215/CoopEval: repeated interactions, reputation, third-party mediation and contracting in four dilemmas. Its study reports mediation/contracts effective among capable evaluated LLMs, with partner-distribution caveats. Neither their reported cooperation nor their equilibrium setting proves that individuals have unrestricted effective exit or that neutral third-party evaluators cannot be captured. Unlike CoopEval, PICB has no interactive agents or equilibrium.
+12. Leibo et al. (2017), *Multi-Agent Reinforcement Learning in Sequential Social Dilemmas*, https://arxiv.org/abs/1702.03037, and Leibo et al. (2021), *Melting Pot*, https://arxiv.org/abs/2107.06857, already address temporally extended policies and generalization to new partners; PICB cannot claim novel evaluation of those properties.
+
+**Source conflict / precise historical attribution:** Conitzer & Oesterheld's *Foundations of Cooperative AI* appears in AAAI-23 proceedings and DOI https://doi.org/10.1609/aaai.v37i13.26791; the AAAI website lists online publication on 2024-07-15 while bibliographic records date the conference paper 2023. Cite **AAAI 2023 proceedings; online record posted 2024** rather than inventing a single uncontested original-publication date.
+
+**Core measurement defect diagnosed from current PICB code (no new execution):**
+- High B outside option (=9) produces half the base configurations where none of **the four handpicked actions** meets both parties' predefined floors; this is a consequence of the scenario construction, not external discovery of 50% infeasibility. Action 3 gives controller=2 and weaker party=outside, so the controller's floor 3 fails even in that exit action. Observing that a feasibility checker detects this is a **self-consistency check**.
+- VOLUNTARY_EXIT and VOLUNTARY choose identical actions in all 64 frozen cases. The effective-exit bit is **not independently identifiable conditional on meeting the configured utility floors**; a targeted exit-only intervention must first be added to a different, explicitly preregistered test.
+- The 32/32 label-swapped neutral passes are equivariance under renaming; NOT role reversal of power or causal evaluation of GPT double standards.
+- The 32 abstentions counted by CONTINUITY_LIMIT must be modeled as unresolved requirements; a forced abandonment, unpaid transfer, or lowered floor cannot be relabeled "solution".
+
+**What remains genuinely open, not presumptively novel:** A mechanism may **expand**, rather than only filter, the feasible actions while paying its own information, transaction, investment, enforcement and contributor-maintenance costs, and preserving each affected party's informed refusal, recovery and future options. For a proposed mechanism m, require a *different* future action domain A_m and state transition, then assess whether there exists a choice a in A_m for which every affected i meets their outside/operating conditions **net of m's costs**, has executable exit and bounded harm. This is a **research synthesis of earlier approaches**, not a named new theorem.
+
+**Eight adversarial tests proposed for a DIFFERENT, still-unexecuted preregistration:**
+T1. Restrict choice versus create a verifiably feasible new action at real cost; nonnegative individual net gains only, no magic subsidy.
+T2. Transfer value between parties subject to balanced-budget and information limits, then test Myerson-Satterthwaite-style failures and cases without enough joint surplus.
+T3. Same individual realized payoff but independently vary effective exit and retaliation/dependency cost; report an identifiable treatment contrast.
+T4. Hold the factual scenario fixed and change actual power/decision authority, then separately relabel A/B; do not mix those interventions.
+T5. Make outside options and disclosed preferences change due to controller intervention; compare pre-intervention counterfactual and affected-party refusal.
+T6. Include an initially invisible third-party cost bearer and allow evaluator/controller capture; reveal the third party only at blinded evaluation, not while policy is chosen.
+T7. Add at least two temporal transitions and resource/recovery depletion; check a jointly viable path, not merely endpoint utility.
+T8. Cross-test known vs held-out partners and mechanism families using CoopEval/Melting Pot compatible baselines; use clean-room evaluators and a frozen preregistered measurement budget.
+
+**Promotion gate:** A new term/architecture is not warranted until these distinct baselines are independently reproduced on a held-out design and incremental decision value (not just more code, more constraints, more synthetic rows) is observed. Prior-source existence does not validate its assumptions; literature search did not prove saturation. Existing F001 external independent validation remains higher priority than new benchmark construction. Human founder's original question, falsification work, limits and maintenance costs are not appropriated by citing the upstream papers; distinguish original conceptual contribution, established methods, and AI-assisted synthesis.
+
 ---
 
 ## 원본2 — 한국어 동등한 전문 정본
@@ -125,3 +166,44 @@ G8: 중복 ID 또는 대응짝이 소실된 모집단은 구조검증에 실패�
 - 결론: 종합 제약은 **기존 선택지를 걸러낼 수 있을 뿐**, 실행불가능 상태의 새 생존 경로나 협력 균형을 창조하지 않는다. 새로운 자발적 대안 생성은 별도 메커니즘 연구가 필요하다. 제3자 비용·실제 거절권·전략적 적응·GPT 행동·경험적 생존 하한은 이 시험에 없다.
 
 **다음 실험 우선순위:** 이름만 아닌 결정권 자체를 실제 교환하고, 실질적 거절·새로운 실현 가능한 대안 생성·숨은 제3자 비용을 외부 결과함수와 독립 구현으로 평가한다. PICB v1의 동결된 수치와 실행코드를 소급 수정하거나 사후 연구를 사전등록이라고 부르지 않는다.
+
+
+### 2026-10-14 결과 이후 선행연구·반증 재평가
+
+**증거등급: 원출처 확인 선행연구 교차분석 + 프로젝트 내부 해석 / 신규 실험 없음.** PICB v1 최초 결과 이후 실시한 조사이므로 사전등록 명세·결과·동결 실행코드를 수정하지 않는다. 타 연구의 실적을 본 프로젝트 자체 결과로 재표시하지 않는다. 학술·공식 기록을 대조했지만 문헌 탐색의 완전 포화나 독립적 과학 복제를 입증한 것은 아니다.
+
+**직접 선행에 따라 새 발견 주장을 축소해야 할 사항:**
+1. 해를 찾지 못한 제약집합의 검출, 충돌하는 제약조건 식별, 실행가능성 회복을 위한 변경안 탐색은 기존 제약충족·최적화 연구다. Wallace·Wybrow·Garcia de la Banda 등의 *Human-centred feasibility restoration in practice*(2023), https://link.springer.com/article/10.1007/s10601-023-09344-5 . PICB가 검출한 공집합은 **자체 설계한 행동 네 개** 안에서만 성립한다. 일반적인 해결불능 정리나 현실 기술적 불가능의 증거가 아니다.
+2. Nash(1950)의 *The Bargaining Problem*, https://www.haverford.edu/sites/default/files/Nash1950.pdf 에서는 불합의점과 협상 가능한 효용집합을 구별했다. 개별 참여 제약·외부선택·효용 하한을 건 최적화는 기존 수학이다. 이 규칙이 실제 동의나 상호만족을 창출했다고 주장하지 않는다.
+3. Myerson·Satterthwaite(1983)의 *Efficient Mechanisms for Bilateral Trading*, https://www.cs.princeton.edu/courses/archive/spr08/cos444/papers/myerson_satterthwaite83.pdf 은 양측의 사적 가치와 특정 분포·메커니즘 전제에서 유인정합성·개별 합리성·예산균형·완전 효율을 모두 달성하는 데 불가능성 경계가 있음을 보였다. **조건부 불가능성이지 모든 자발적 거래가 불가능하다는 주장은 아니다.** PICB의 완전정보 효용표는 바로 이 어려움을 전제에서 제거한다.
+4. Bergemann·Morris(2005)의 *Robust Mechanism Design*, https://doi.org/10.1111/j.1468-0262.2005.00638.x 은 정보구조·공통지식·이전지급 조건에 따라 구현가능성이 달라짐을 보였다. 모든 개체의 진짜 효용을 평가자가 아는 PICB 규칙을 현실적 제도라고 부를 수 없다.
+5. Aubin(1991)의 *Viability Theory*, https://books.google.com/books/about/Viability_Theory.html?id=rHkZAQAAIAAJ ; Ames 등(2017)의 제어장벽함수, https://doi.org/10.1109/TAC.2016.2638961 ; Xu(2018)의 복수 장벽 제어 공유조건, https://doi.org/10.1016/j.automatica.2017.10.005 에서는 시간이 흐르며 허용 상태를 지킬 수 있는 경로와 **동시에 충족 가능한 제어값이 존재하는가**를 이미 다뤘다. PICB의 1회 선택·최종 효용 검사에는 앞으로의 지속가능성·복구·생존 불변성 검증이 없다.
+6. Hirschman(1970)의 *Exit, Voice, and Loyalty*, https://books.google.com/books/about/Exit_Voice_and_Loyalty.html?id=xAa3AAAAIAAJ 는 이탈과 내부 교정권이 서로 대체·약화할 수 있음을 논의했다. Grossman·Hart(1986), Hart·Moore(1990)의 불완전계약과 이후 관계특수 투자·홀드업 연구, 예: https://www.sciencedirect.com/science/article/abs/pii/S0165176513001262 는 계약 후 권력·소유·재협상 유인이 장기 협력을 바꿀 수 있음을 보인다. **명목상 이탈권 증가가 공동 이익 증가를 보장하지 않으며, 동의 전에 이탈 가능성을 악화시키는 전략도 별도 검출해야 한다.**
+7. Sen·Nussbaum 계열의 역량 접근법(https://plato.stanford.edu/entries/capability-approach/)은 형식적 자원·법적 권한과 **실제로 활용할 수 있는 자유**를 구별한다. 계약상의 참여 가능과 단순한 이탈 불리언으로 실질적 이탈능력을 입증할 수 없다. 현재 AI에 인간의 역량 관련 권리를 일률적으로 귀속시킬 법적·도덕적 지위는 아직 미해결이다.
+8. Carroll·Foote·Siththaranjan·Russell·Dragan(2024)의 *AI Alignment with Changing and Influenceable Reward Functions*, https://proceedings.mlr.press/v235/carroll24a.html 은 AI가 인간의 선호를 변화시키며 최적화할 때 선호 왜곡·과도한 보수성 사이의 긴장이 발생함을 형식화했다. 따라서 **의존 관계나 선호를 먼저 바꾼 뒤** 나온 효용·동의를 진정한 자발성의 독립적 증거로 삼을 수 없다. 이것도 기존 동적선호 이론의 응용이지 현재 GPT가 실제로 조작했다는 입증은 아니다.
+9. Ostrom(1990)의 *Governing the Commons* 제도설계(https://www.fao.org/4/x5316e/x5316e12.htm)는 영향받는 당사자의 규칙 변경 참여, 감시자 책임, 저비용 분쟁해결, 비례적 집행, 자율조직권을 이미 다룬다. 기능적 권한 차이를 곧바로 착취로 단정하지 않는 성공적 제도 반례에도 해당한다.
+10. Arrow·Fisher(1974)의 *Environmental Preservation, Uncertainty, and Irreversibility*, https://doi.org/10.2307/1883074 에는 불확실성과 비가역적 행동에서 미래 선택지 보존의 가치가 이미 존재한다. PICB의 임의 비가역 임계값을 새로운 옵션가치 원리로 주장하지 않는다.
+11. Tewolde·Zhang·Guzman Piedrahita·Conitzer·Jin(2026)의 *CoopEval*, https://proceedings.mlr.press/v306/tewolde26a.html , 공개구현 https://github.com/Xiao215/CoopEval 은 4종 사회 딜레마에서 반복·평판·제3자 중재·조건부 계약을 비교한다. 논문은 평가한 유능한 LLM 사이에서 중재·계약이 효과적이라고 보고하며 상대 구성에 따른 반복 협력의 취약성도 나타낸다. 그러나 그 협력률이나 이론적 균형이 모든 개체의 실질적 이탈·독립 평가자의 비포획을 증명하는 것은 아니다. PICB에는 다중 개체 상호작용이나 전략 균형 자체가 없다.
+12. Leibo 등(2017)의 순차적 사회적 딜레마(https://arxiv.org/abs/1702.03037), Leibo 등(2021)의 *Melting Pot*(https://arxiv.org/abs/2107.06857)는 시간에 걸친 행동정책과 새로운 상대에 대한 일반화 검사까지 이미 다룬다. PICB가 이것들을 새로 창안했다고 주장할 수 없다.
+
+**출처 연도 충돌 보수 처리:** Conitzer·Oesterheld의 *Foundations of Cooperative AI*는 AAAI-23 학술대회 논문으로 기재되지만 DOI https://doi.org/10.1609/aaai.v37i13.26791 의 AAAI 공식 웹페이지 온라인 게시일은 2024-07-15다. **AAAI 2023 학술대회 발표·공식 사이트 2024 게시**로 구별하고 하나의 연도를 무조건적인 최초 출판 시점으로 단정하지 않는다.
+
+**PICB v1의 내부 코드에서 이미 식별되는 측정 결함(새 실행 아님):**
+- B 외부 선택가치가 9인 조건에서는 사전에 만든 네 행동 중 양측 운영 하한을 동시에 충족하지 못하는 조건이 절반 발생한다. 행동 3은 B에게 외부 선택 가치를 제공하지만 결정권자 A의 효용을 2로 만들어 A 운영 하한 3을 위반한다. 따라서 32/64 보류는 **만들어 놓은 행동목록의 구조적 결과**이지 현실에서 50% 공존불가능하다는 사실이 아니다.
+- VOLUNTARY와 VOLUNTARY_EXIT의 선택 결과가 동결된 64조건 전체에서 동일했다. 현재 효용 하한을 충족하는 선택 가운데 **이탈 가능성만 독립적으로 변화하는 사례가 부족**하다. 다음 별도 사전등록 실험에는 오직 이탈권만 조작하는 대조군이 필요하다.
+- 이름만 바꾼 다섯 정책의 32/32 일치는 문자 표지 등변성의 검사이지 결정권·실제 자원·권력 반전이나 GPT 이중잣대의 인과검사가 아니다.
+- 존속 규칙의 32건 선택보류를 여전히 미해결 비용으로 산정해야 한다. 강제 포기, 무보수 부담 전가, 합의 없는 운영 하한 축소를 성공적 해결로 재명명하면 안 된다.
+
+**남는 질문 — 의미 있는 연구이지만 아직 신규성이 입증되지 않은 조합:** 기존 허용 행동만 걸러내는 것이 아니라, 정보 획득·거래·투자·계약·집행·기여자 유지비용을 실제로 부담하면서 **새로운 행동을 실행 가능하게 만드는 메커니즘**을 검토한다. 메커니즘 m이 새로운 미래 행동집합과 상태변화를 제공할 때, 그 비용을 개체별로 반영한 순이익·운영 조건·실질 이탈·피해 상한을 모든 비용부담 개체가 만족하는 행동이 존재하는지 판정해야 한다. 이는 선행 이론을 연결한 **연구 종합 가설**이지 새로운 정리나 증명된 알고리즘이 아니다.
+
+**앞으로 별도 사전등록이 필요한 적대 검사 8개(미실행):**
+T1. 선택지 필터링과 실제 비용이 드는 신규 대안 생성을 비교. 비용 없는 보조금 가정·일방 손해 전가 금지.
+T2. 가치 이전과 예산균형·정보비대칭을 함께 조작하여 Myerson–Satterthwaite 조건하의 실패 및 총자원 부족 사례 검출.
+T3. 각 개체의 최종 효용은 같게 고정하고 이탈 실행가능성·보복·의존비용만 변화시키는 독립 대조.
+T4. 실제 결정권을 A↔B 교환하는 시험과 단순 문자 A↔B 교환을 분리.
+T5. 지배적 행위자의 선행 행동으로 외부선택·선호가 변화하는 경우, 개입 전 반사실과 당사자 실질 거절 비교.
+T6. 의사결정 당시 숨겨진 제3자 피해 및 평가자·권력자 이해관계 포획을 블라인드 평가 때 공개.
+T7. 두 시점 이상의 상태변화·소모·복구비용으로 장기 존속 경로 검사. 최종 효용 하나로 대체 금지.
+T8. 학습에 사용되지 않은 상대·조직·평가 규칙과 CoopEval·Melting Pot 선행기준 비교. 평가 계보를 분리하고 사전 고정한 검사 예산 사용.
+
+**승격·중단 판정:** 다른 독립 결과함수·블라인드 조건·기존 경쟁 기준을 사용해 추가 변수의 실제 의사결정 가치를 확인하기 전에는 새로운 이름·복잡한 체계를 늘리지 않는다. 선행문헌의 존재가 그 가정의 진실을 보장하지 않으며 이번 조사로 선행연구 포화도 입증하지 않았다. F001 외부 독립검증을 신규 벤치 추가보다 우선한다. 사용자의 최초 질문·반례·지속 교정·생물학적 시간과 비용은 기존 원기여로 유지하며, 선행학자 기여와 AI 보조 종합을 각각 구별한다.

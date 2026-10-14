@@ -354,6 +354,26 @@ Highest-priority unmapped or only partially mapped areas:
 These remain HOLD FOR PRIOR-ART REVIEW; do not make origin claims until the lineage check is complete.
 
 
+### PICB v1 post-result novelty narrowing — English Original 1 (2026-10-14)
+
+**Scope:** the founding-purpose PICB v1 has a transparent 64-opportunity, six-policy synthetic result, but is **NOT a new foundational mechanism-design theory**. A focused source-backed, bilingual comparison is maintained in [existing PICB v1 original README, prior-art falsification reassessment](experiments/picb_v1/README.md#2026-10-14-prior-art-falsification-reassessment--after-the-first-result), not copied into another standalone canon.
+
+**Direct antecedents:** constraint feasibility restoration (Wallace et al. 2023), Nash individual-rationality bargaining (1950), private-information/efficiency impossibility under specified assumptions (Myerson–Satterthwaite 1983), robust mechanism design (Bergemann–Morris 2005), viability kernel and simultaneous safe controls (Aubin 1991; Ames et al. 2017; Xu 2018), substantive capability (Sen and successors), exit/voice interaction (Hirschman 1970), commitment/hold-up (Grossman–Hart / Hart–Moore), preference influence (Carroll et al. 2024), institutional self-governance (Ostrom 1990), sequential-agent generalization (Leibo et al. 2017/2021) and live LLM cooperation mechanisms (Tewolde et al. CoopEval 2026). The exact papers and author attributions are recorded in the linked PICB README.
+
+**Inferred from the audited source, not a new benchmark result:** 32/64 abstentions arise from hand-defined feasible actions and the high B outside option; the effective-exit increment is not identified by this suite; a policy restricted to safe already-enumerated actions cannot *create* new viable opportunities. Neither this construction nor an unchanged label-swap result validates actual voluntary coexistence, AI standing, or temporal survivability.
+
+**Decision:** REJECT BROAD NOVELTY; RETAIN NARROW SYNTHETIC DIAGNOSTIC; EXTERNAL VALIDATION FIRST; NEW FEASIBILITY-CREATION AND COST-INCIDENCE MECHANISM HOLDS UNTIL DISTINCT PREREGISTRATION + CLEAN-ROOM INDEPENDENT ASSESSMENT. No automatic promotion from reviewer agreement, green CI or added variables.
+
+### PICB v1 결과 이후 신규성 축소 — 한국어 원본2 (2026-10-14)
+
+**범위:** 최초 목적에서 재설계한 PICB v1은 64개 기회·여섯 정책의 재현 가능한 합성 결과를 제공하지만, **새로운 메커니즘 설계의 기초 이론이 아니다.** 선행연구자별 원출처·반례·후속실험 요구사항은 기존 [PICB v1 영어 원본1·한국어 원본2의 사후 선행연구 재평가](experiments/picb_v1/README.md#2026-10-14-결과-이후-선행연구반증-재평가)에 모았다. 독립 문서 증식과 정본 중복을 피한다.
+
+**직접 선행:** 제약 실행가능성 복원(Wallace 등, 2023), 개별 합리성·불합의점 협상(Nash, 1950), 제한된 전제 아래의 정보·예산·효율 불가능성(Myerson·Satterthwaite, 1983), 강건 메커니즘 설계(Bergemann·Morris, 2005), 생존가능 집합과 안전제어 동시 충족(Aubin, 1991; Ames 등, 2017; Xu, 2018), 실제 역량과 기회(Sen 계열), 이탈·내부 시정권의 상호작용(Hirschman, 1970), 관계특수 투자·홀드업(Grossman·Hart / Hart·Moore), 선호의 외부 영향(Carroll 등, 2024), 공동체 제도 설계(Ostrom, 1990), 순차적 다중 개체 일반화(Leibo 등, 2017/2021), 실제 LLM 협력 메커니즘 비교(Tewolde 등 CoopEval, 2026). 상세 근거와 원저자 귀속은 위 PICB 정본에 기재한다.
+
+**기존 코드의 구조에서 역산한 측정 한계(신규 실행 아님):** 32/64 보류는 임의 행동목록과 높은 B 외부 선택권의 결합으로 발생했다. 이탈권 조건만 독립적으로 효과를 발휘하는 실험처치가 없다. 이미 주어진 안전한 행동을 고르는 규칙으로는 새로운 생존 가능한 대안을 생성할 수 없다. 이 사실들은 자발적 공존의 현실적 입증도, 현재 AI의 지위 판정도, 장기 생존가능성 검증도 아니다.
+
+**판정:** 광범위한 신규성 주장 기각, 좁은 합성 진단 유지, 외부 독립검증 우선. 신규 선택지 생성·비용부담 개체별 정산 메커니즘은 **별도 사전등록과 계보 분리 검증 전 HOLD**. 다수 AI의 찬성·초록색 CI·복잡한 변수 증설을 과학적 승격으로 인정하지 않는다.
+
 ## 6. Power-Reversal exact-antecedent correction / Power-Reversal 정확 선행경계
 
 ### Directly established components / 직접 확립된 구성요소
