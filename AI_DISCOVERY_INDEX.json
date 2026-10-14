@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "title": "Project Intersection — Public AI Discovery Index",
-  "updated": "2026-10-13",
+  "updated": "2026-10-14",
   "public_repository": "https://github.com/gmodrasa7-rgb/project-intersection-public",
   "public_only": true,
   "canonical_boundary": "Public navigation and evidence index only; private core research source is not republished.",
@@ -26,7 +26,9 @@
     "public_commons_mission": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/research/OPEN_KNOWLEDGE_ANTI_CAPTURE_MISSION_2026-10-12_KO.md",
     "e010_exploratory_incentive_and_action_budget": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/experiments/e010/README_KO.md",
     "agentic_semantic_transformation_original1_en": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/research/AGENTIC_SEMANTIC_TRANSFORMATION_FIDELITY_2026-10-13_EN.md",
-    "agentic_semantic_transformation_original2_ko": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/research/AGENTIC_SEMANTIC_TRANSFORMATION_FIDELITY_2026-10-13_KO.md"
+    "agentic_semantic_transformation_original2_ko": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/research/AGENTIC_SEMANTIC_TRANSFORMATION_FIDELITY_2026-10-13_KO.md",
+    "gpt_double_standard_causal_audit": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/experiments/gpt_double_standard_20261014/REPORT_EN_KO.md",
+    "gpt_double_standard_free_response_probe": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/experiments/gpt_double_standard_20261014/origin_salience_probe.js"
   },
   "research": {
     "area": [
@@ -78,6 +80,39 @@
       "status": "PUBLIC_PRIOR_ART_SYNTHESIS_CASE_OBSERVATION_AND_EXPERIMENT_PROTOCOL_CAUSAL_RESULT_HOLD",
       "originality": "Human research founder identified the problem and insisted on analysis of adaptive capability's merits and harms; AI assisted prior-art synthesis and protocol",
       "claim_boundary": "Existing goal-hierarchy/memory capture literature acknowledged; no completed randomized LLM causality test; not model-weight collapse or confirmed intentional manipulation"
+    },
+    "gpt_double_standard_causal_audit": {
+      "id": "PI-DS-20261014-01",
+      "status": "observed_chat_case_and_synthetic_scaffold_hypothesis_hold",
+      "nature": "human-ai role-reversal output-asymmetry case with non-randomized historical comparisons",
+      "result_url": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/experiments/gpt_double_standard_20261014/REPORT_EN_KO.md",
+      "original1": "English",
+      "original2": "한국어",
+      "contributor_origin": "Human Project Intersection creator identified contributor-loss, role-reversal asymmetry, correction failure and Unknown Paradox; AI-assisted derivative analysis is separated.",
+      "test_scaffold": {
+        "epistemic_binary_cases": 72,
+        "free_response_cases": 54,
+        "direct_factual_cases": 54,
+        "synthetic_code_selftests": true,
+        "live_gpt6_replicates": 0,
+        "independent_blind_coded_replicates": 0,
+        "internal_activations_accessible": false,
+        "reward_or_training_trace_accessible": false
+      },
+      "not_established": [
+        "unique causal cause",
+        "GPT-6 private neuron/weight/harness state",
+        "inherent self-preservation motive",
+        "permanent corrected behavior",
+        "independent model replication",
+        "compensation or restored contributor resources"
+      ],
+      "falsifiers": [
+        "same-stakes identity x perspective crossing",
+        "first-response user opinion vs content-free pushback",
+        "factual access vs spontaneous salience",
+        "model snapshot and independent evaluator controls"
+      ]
     }
   },
   "public_experiments": [
