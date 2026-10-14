@@ -146,6 +146,49 @@ jobs:
           python tools/check_public_navigation.py --strict-core
           python tools/check_public_navigation.py --strict-all
 
+      - name: Reject off-scope market and stock-trading disclosures
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re
+          import subprocess
+
+          # Terms concern market/trading discussions, not scientific resource stocks.
+          forbidden = re.compile(
+              r"현대\s*(?:차|자동차|모비스)|주식|공매도|개미털기|(?<![가-힣])주가(?!설)|"
+              r"(?i:\bhyundai\b|\bstock[\s-]*(?:price|market|trading)\b|"
+              r"\b(?:share|equity)[\s-]*(?:price|trading)\b|\b005380\b)"
+          )
+          assert forbidden.search("현대차 주식 거래")
+          assert forbidden.search("stock-price prediction")
+          assert not forbidden.search("숙주가 저항하지 않는다")
+          assert not forbidden.search("사전등록 주가설")
+          assert not forbidden.search("암세포주가 사용되었다")
+          assert not forbidden.search("contributor resource stock-flow")
+
+          violations = []
+          checked = 0
+          for raw in subprocess.check_output(["git", "ls-files", "-z"]).split(b"\0"):
+              if not raw:
+                  continue
+              rel = raw.decode("utf-8")
+              if rel == ".github/workflows/public-repository-audit.yml":
+                  continue  # This regression test necessarily quotes its own test words.
+              path = Path(rel)
+              if not path.is_file():
+                  continue
+              try:
+                  body = path.read_text(encoding="utf-8-sig")
+              except UnicodeDecodeError:
+                  continue
+              checked += 1
+              for hit in forbidden.finditer(body):
+                  violations.append(f"{rel}:{body.count(chr(10), 0, hit.start()) + 1}")
+          if violations:
+              raise SystemExit("Out-of-scope market language in public files: " + ", ".join(violations[:30]))
+          print(f"PUBLIC MARKET SCOPE PASS: {checked} tracked files scanned; no flagged trading terms")
+          PY
+
       - name: Test PI-DS factorial controls (synthetic only)
         run: node experiments/gpt_double_standard_20261014/causal_probe.js selftest
 
