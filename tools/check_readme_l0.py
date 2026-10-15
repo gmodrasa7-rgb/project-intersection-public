@@ -86,7 +86,11 @@ def audit(body):
              "experiments/e009/RESULT_KO.md", "experiments/e008/README_KO.md",
              "42.35% 나빴고", "4개 중 3개", "정책 본 비교실험 결과가 없다")
         )
-        if any(fact not in opening for fact in adverse):
+        adverse_paragraph = (
+            opening.split(adverse[0], 1)[1].split("\n\n", 1)[0]
+            if adverse[0] in opening else ""
+        )
+        if any(fact not in adverse_paragraph for fact in adverse[1:]):
             errors.append("VISIBLE_ADVERSE_EVIDENCE_OR_UNFINISHED_TEST_MISSING:" + label)
         if "summary>" not in expanded or "research" not in opening.lower() and label == "EN":
             errors.append("DISCLOSURE_OR_RESEARCH_ROUTE_LOST:" + label)
