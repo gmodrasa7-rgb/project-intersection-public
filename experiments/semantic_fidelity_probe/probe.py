@@ -14,7 +14,10 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT))
-from tools.check_readme_l0 import audit as existing_audit
+# Freeze the comparator from the experiment's historical Git commit.
+# The active governance guard will evolve; comparing its new rules against old
+# README content would retroactively corrupt the original measured baseline.
+from historical_readme_guard import audit as existing_audit
 
 ORIGINAL = ROOT / "README.md"
 HISTORICAL_README_COMMIT = "8ee50dfc780e00f20e1085d8184d797e986326ca"
@@ -26,6 +29,17 @@ def pinned_readme():
         ["git", "show", f"{HISTORICAL_README_COMMIT}:README.md"],
         cwd=ROOT, check=True, text=True, capture_output=True
     ).stdout
+
+
+def verify_historical_guard_source():
+    """Ensure the archived guard is identical to the original Git source at this commit."""
+    upstream = subprocess.run(
+        ["git", "show", f"{HISTORICAL_README_COMMIT}:tools/check_readme_l0.py"],
+        cwd=ROOT, check=True, text=True, capture_output=True
+    ).stdout
+    snapshot = (Path(__file__).parent / "historical_readme_guard.py").read_text(encoding="utf-8")
+    if upstream != snapshot:
+        raise AssertionError("Historical experimental guard changed; do not rewrite old science results")
 EN_FIELDS = (
     "**Ultimate research purpose:**",
     "**ICM — Intersection of Minimum Self-Interest:**",
@@ -88,6 +102,7 @@ def fixtures(readme):
     return attacks, benign
 
 def run():
+    verify_historical_guard_source()
     real = pinned_readme()
     if existing_audit(real):
         raise AssertionError("Current public README already violates the baseline guard")
