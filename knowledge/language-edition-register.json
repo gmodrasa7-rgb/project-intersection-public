@@ -1,8 +1,8 @@
 {
   "schema_version": "pi-language-edition-register/v0.1",
-  "updated": "2026-10-15",
+  "updated": "2026-10-16",
   "baseline_repository_tree_sha": "b2055f40a1e0cabe38f3c6e8c984228c1c2a7e0f",
-  "baseline_scope": "All Markdown blobs from the specified main tree plus four new paired navigation files added in the current patch; other files not represented.",
+  "baseline_scope": "Historical inventory retained; two GPT proposal-gate editions added on review branch; baseline tree SHA is historical, not the current head.",
   "policy": {
     "original_1": "en",
     "original_2": "ko",
@@ -271,6 +271,20 @@
         "The two editions require comparison by independent reviewers before semantic parity can be certified.",
         "The original E009 negative result is retained; this new pair is an open reviewer challenge, not a completed experiment."
       ]
+    },
+    {
+      "id": "PI-CAP-GPT-PROPOSAL",
+      "original_1_english": "capability_lab/PROPOSAL_GATE_EN.md",
+      "original_2_korean": "capability_lab/PROPOSAL_GATE_KO.md",
+      "kind": "bounded_gpt_candidate_admission_synthetic_only",
+      "structural_pair_present": true,
+      "meaning_review_status": "NOT_INDEPENDENTLY_VERIFIED",
+      "original_conception_language": "NOT_INDEPENDENTLY_ADJUDICATED",
+      "independent_review_receipt": null,
+      "one_sided_edit_exception": null,
+      "known_divergences": [
+        "English and Korean versions preserve the same limits but semantic equivalence is unverified."
+      ]
     }
   ],
   "legacy_priority_unresolved": [
@@ -312,13 +326,13 @@
     }
   ],
   "metrics": {
-    "markdown_total": 146,
+    "markdown_total": 148,
     "filename_classes": {
       "UNMARKED_LANGUAGE_UNVERIFIED": 42,
       "LEGACY_MIXED_READER_ENTRY": 2,
-      "KO_SUFFIX_UNVERIFIED": 62,
+      "KO_SUFFIX_UNVERIFIED": 63,
       "ORDERED_BILINGUAL_FOUNDER_OR_GOVERNANCE": 2,
-      "EN_SUFFIX_UNVERIFIED": 17,
+      "EN_SUFFIX_UNVERIFIED": 18,
       "COMBINED_NAMING_UNVERIFIED": 21
     },
     "meaning_verified_pairs": 0,
@@ -665,6 +679,18 @@
       "path": "capability_lab/ANSWERABILITY_PROTOCOL_KO.md",
       "filename_class": "KO_SUFFIX_UNVERIFIED",
       "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "capability_lab/PROPOSAL_GATE_EN.md",
+      "filename_class": "EN_SUFFIX_UNVERIFIED",
+      "counterpart_path": "capability_lab/PROPOSAL_GATE_KO.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "capability_lab/PROPOSAL_GATE_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": "capability_lab/PROPOSAL_GATE_EN.md",
       "content_equivalence": "NOT_REVIEWED"
     },
     {
