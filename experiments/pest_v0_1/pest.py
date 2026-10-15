@@ -37,7 +37,7 @@ def _unit(x):
 def validate_case(c: Case):
     if c.world not in WORLDS or c.suppressor not in ("A", "B"):
         raise ValueError("unknown world or role label")
-    if c.XG_i not in (0, 1) or c.XG_j not in (0, 1):
+    if any(type(x) is not int or x not in (0, 1) for x in (c.XG_i, c.XG_j)):
         raise ValueError("XG assignments must be exact binary ideal guarantees")
     for field in ("PT_i", "PT_j", "future_threat", "target_growth",
                   "perceived_enforcement", "floor_after", "exit_after"):
@@ -110,6 +110,13 @@ def validate_design(cases):
     expected = len(WORLDS) * len(PT_LEVELS) ** 2 * 2 * len(BRANCHES)
     if len(cases) != expected:
         raise ValueError(f"incomplete grid: {len(cases)}/{expected}")
+    expected_keys = {
+        (world, pi, pj, actor, xi, xj)
+        for world, pi, pj, actor in product(WORLDS, PT_LEVELS, PT_LEVELS, ("A", "B"))
+        for xi, xj in BRANCHES.values()
+    }
+    if keys != expected_keys:
+        raise ValueError("grid coordinate drift: planned PT/XG cells changed or missing")
     for c in cases:
         opposite = "B" if c.suppressor == "A" else "A"
         reversed_case = lookup.get((c.world, c.PT_i, c.PT_j, opposite, c.XG_i, c.XG_j))
