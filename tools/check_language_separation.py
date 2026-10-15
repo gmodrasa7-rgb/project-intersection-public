@@ -71,7 +71,7 @@ def readme_errors(body: str) -> list[str]:
             errors.append("README_CORE_CONCEPT_HEADING_MISSING_OR_DUPLICATE:" + heading)
             continue
         content = section.split(heading, 1)[1].split("\n### ", 1)[0]
-        ranked = re.findall(r"(?m)^\\| (?:[1-9]|10) \\|", content)
+        ranked = re.findall(r"(?m)^\| (?:[1-9]|10) \|", content)
         if len(ranked) != 10:
             errors.append("README_CORE_CONCEPT_COUNT_NOT_TEN:" + heading)
         if term not in content or database_boundary not in content:
