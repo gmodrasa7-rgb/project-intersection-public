@@ -31,8 +31,6 @@ TOC_CRITICAL = (
     "../CONTRIBUTION_COST_ACCOUNTING_REGRESSION.md",
 )
 REVIEW_CRITICAL = (
-    "../experiments/e007/README.md",
-    "../experiments/e008/README.md",
     "../CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md",
 )
 
@@ -80,6 +78,8 @@ def comparable_source_path(raw: str) -> str:
             return stem + ".md"
         if stem.endswith("experiments/e010/README"):
             return stem + "_KO.md"
+        if stem.endswith(("experiments/e007/README", "experiments/e008/README")):
+            return stem + ".md"
     return raw
 
 
@@ -190,6 +190,34 @@ def inspect(registry: dict, overrides: dict[str, str] | None = None, full_invent
                 for target in relative_links(path, body):
                     if target and not ((ROOT / path).parent / target).exists():
                         issues.append("EXPERIMENT_BROKEN_LINK:" + path + ":" + target)
+            if pid == "PI-EXP-E007-TIMING":
+                def result_table(body: str) -> list[tuple[str, str]]:
+                    rows = []
+                    for s in body.splitlines():
+                        bits = [x.strip() for x in s.split("|")[1:-1]]
+                        if len(bits) == 3 and re.fullmatch(r"(?:8|9|17|18|36) / (?:36|72)", bits[1]):
+                            rows.append((bits[1], bits[2]))
+                    return rows
+                expected = [
+                    ("36 / 72", "50.0%"), ("17 / 72", "23.6%"),
+                    ("18 / 36", "50.0%"), ("18 / 36", "50.0%"),
+                    ("8 / 36", "22.2%"), ("9 / 36", "25.0%"),
+                ]
+                if (result_table(load(source)) != expected or
+                        result_table(load(en)) != expected or result_table(load(ko)) != expected):
+                    issues.append("E007_TIMING_CORRECTION_TABLE_DRIFT")
+                for token in ("31/72", "36/72", "17/72", "27"):
+                    if token not in load(en) or token not in load(ko):
+                        issues.append("E007_FAILURE_HISTORY_MISSING:" + token)
+            if pid == "PI-EXP-E008-SPEC":
+                for token in ("16/16", "15", "PROJECT_V2",
+                              "MAIN POLICY COMPARISON RESULT: NOT EXECUTED"):
+                    if token not in load(en) or token not in load(ko):
+                        issues.append("E008_NOT_EXECUTED_STATUS_MISSING:" + token)
+                for code in ("MYOPIC_SCALAR", "LONG_HORIZON_EV",
+                             "CONSTRAINED_RECEDING", "ROBUST_CONSTRAINED", "PROJECT_V2"):
+                    if code not in load(en) or code not in load(ko):
+                        issues.append("E008_BASELINE_LOST:" + code)
             if pid == "PI-EXP-E009-RESULT":
                 keys = ("TWO_RULE_SIMPLE", "MINIMAL_4VAR", "PROJECT_V3",
                         "MAK_PLUS_POINTWISE", "SECURITY_BOUNDED")
@@ -264,6 +292,10 @@ def inspect(registry: dict, overrides: dict[str, str] | None = None, full_invent
                 for source in core:
                     if source not in linked:
                         issues.append("REQUIRED_EVIDENCE_ROUTE_MISSING:" + path + ":" + source)
+                for study in ("e007", "e008"):
+                    study_path = "../experiments/" + study + "/README_" + ("EN.md" if lang == "en" else "KO.md")
+                    if study_path not in linked:
+                        issues.append("PREVIOUS_STUDY_LANGUAGE_ROUTE_MISSING:" + path + ":" + study_path)
                 for stem in ("PUBLIC_REVIEW_PACKET",):
                     required = "../research/" + stem + ("_EN.md" if lang == "en" else "_KO.md")
                     if required not in linked:
@@ -352,7 +384,13 @@ def run_mutations(registry: dict) -> None:
     e010 = "experiments/e010/README_EN.md"
     wrong_grid = (ROOT / e010).read_text(encoding="utf-8").replace("| 0.95 | 21 | 6 |", "| 0.95 | 20 | 7 |", 1)
     assert "E010_FIXED_GRID_DRIFT" in inspect(registry, overrides={e010: wrong_grid}, full_inventory=False)
-    print("Independent-language structural negative mutants: 9/9 detected")
+    e007 = "experiments/e007/README_KO.md"
+    bad = (ROOT / e007).read_text(encoding="utf-8").replace("| 36 / 72 | 50.0% |", "| 35 / 72 | 50.0% |", 1)
+    assert "E007_TIMING_CORRECTION_TABLE_DRIFT" in inspect(registry, overrides={e007: bad}, full_inventory=False)
+    e008 = "experiments/e008/README_EN.md"
+    false_success = (ROOT / e008).read_text(encoding="utf-8").replace("MAIN POLICY COMPARISON RESULT: NOT EXECUTED", "MAIN POLICY COMPARISON RESULT: EXECUTED", 1)
+    assert any("E008_NOT_EXECUTED_STATUS_MISSING" in x for x in inspect(registry, overrides={e008: false_success}, full_inventory=False))
+    print("Independent-language structural negative mutants: 11/11 detected")
 
 
 def main():
