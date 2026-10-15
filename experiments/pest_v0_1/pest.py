@@ -198,6 +198,13 @@ def paired_contrasts(cases):
         def psi(xi, xj):
             return psi_proxy(lookup[(world, pi, pj, name, xi, xj)])
         output.append({"world": world, "PT_i": pi, "PT_j": pj, "j": name,
+                       # Keep all four necessary floor/exit screens visible alongside
+                       # the incentive contrasts: a lower PSI is not an acceptable
+                       # outcome when the protected arm breaches basic conditions.
+                       "floor_exit_screens": {
+                           branch: floor_exit_gate(lookup[(world, pi, pj, name, xi, xj)])
+                           for branch, (xi, xj) in BRANCHES.items()
+                       },
                        "baseline_psi": psi(0, 0),
                        "treated_psi": psi(1, 1),
                        "both_at_zero_floor": psi(0, 0) == 0 and psi(1, 1) == 0,
