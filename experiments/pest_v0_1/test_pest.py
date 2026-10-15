@@ -15,6 +15,18 @@ class TestPEST(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "incomplete"):
             validate_design(self.cases[:-1])
 
+    def test_causal_drift_detected_even_when_floor_gate_still_passes(self):
+        cases = list(self.cases)
+        cases[0] = replace(cases[0], floor_after=0.65)  # both values above minimum
+        with self.assertRaisesRegex(ValueError, "causal input drift"):
+            validate_design(tuple(cases))
+
+    def test_both_conditional_recipient_contrasts_reported(self):
+        rows = paired_contrasts(self.cases)
+        self.assertEqual(len(rows), 24)
+        self.assertIn("own_effect_at_target_high", rows[0])
+        self.assertIn("target_effect_at_own_high", rows[0])
+
     def test_protected_existence_blocks_elimination_not_suppression(self):
         c = Case("capture_opportunity", "A", .75, .75, 1, 0)
         self.assertFalse(elimination_possible(c, "i"))
