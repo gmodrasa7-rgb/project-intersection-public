@@ -83,6 +83,9 @@ Many historical sources are Korean-only or bilingual; linked **source titles, fi
 
 ## 10. Scope, languages and verification status
 
+**Machine-source fidelity:** [Four-experiment claim source contract](../knowledge/claim-source-lock.json) identifies the exact E007–E010 result JSON for numerical checks and their evidence status. E010's frozen `effectiveExitPrevention` key may be misread as blocking an agent's exit; in the code, larger `x` reduces an exploiter's immediate extraction gain. The machine name is preserved for provenance, not treated as a right-to-exit measure. A passed audit means bounded data consistency, **not** independent scientific or complete translation verification.
+
+
 - [Research status policy](../research/RESEARCH_STATUS_POLICY_EN.md) and [failure regression index](../FAILURE_REGRESSION_INDEX.md) govern the interpretation of these links.
 - A negative result remains negative; a local rerun is not independent scientific verification.
 - The [earlier detailed bilingual index](../RESEARCH_TOC.md) remains available for historical continuity, but is **not** a clean single-language page and cannot certify translation completeness.
