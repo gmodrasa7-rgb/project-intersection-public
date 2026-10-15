@@ -20,7 +20,7 @@
 
 **Evidence and contribution boundary:** This is a research aim, not a proven universal theorem that cooperation always wins. Separate synthetic calculation, real-world evidence, independent external replication, and unresolved questions; preserve negative results and the provenance of the human research originator, earlier scholars, and assisting AI systems. Measure the research's progress separately from its human contributors' actual benefits and costs.
 
-**First reading path:** [English reading route](navigation/START_HERE_EN.md) · [Research overview](RESEARCH_OVERVIEW_EN.md) · [Evidence index](PUBLIC_EVIDENCE_INDEX_EN.md) · [Reproduction and review](PUBLIC_REVIEW_PACKET.md) · [English research contents](navigation/RESEARCH_TOC_EN.md) · [Historical detailed index](RESEARCH_TOC.md) · [English independent review](navigation/AI_REVIEW_EN.md) · [Attribution](ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md).
+**First reading path:** [English reading route](navigation/START_HERE_EN.md) · [Research overview](research/RESEARCH_OVERVIEW_EN.md) · [Evidence index](research/PUBLIC_EVIDENCE_INDEX_EN.md) · [Reproduction and review](PUBLIC_REVIEW_PACKET.md) · [English research contents](navigation/RESEARCH_TOC_EN.md) · [Historical detailed index](RESEARCH_TOC.md) · [English independent review](navigation/AI_REVIEW_EN.md) · [Attribution](ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md).
 
 **Citation and reuse:** [Cite this research](CITATION.cff) · [Source-credit protocol (English-first edition)](SOURCE_ATTRIBUTION_EN_KO.md) · [Platform attribution request (not sent)](PLATFORM_ATTRIBUTION_REQUEST_EN_KO.md). These links are not a blanket copyright license or an AI-provider commitment. · [technical progress & contributor continuity](TECHNOLOGY_PROGRESS_CONTRIBUTOR_CONTINUITY_EN_KO.md) · [source-cost-compensation audit register](knowledge/contributor-continuity-register-v1.json) · [contributor loss and Unknown Paradox (EN/KO)](research/CONTRIBUTOR_LOSS_UNKNOWN_PARADOX_v0_1_EN_KO.md) · [continuance resource thresholds — EN/KO](research/CONTINUANCE_RESOURCE_THRESHOLD_v0_1_EN_KO.md)
 
@@ -44,7 +44,7 @@
 
 **증거·기여 경계:** 이는 연구 목표이며 협력이 모든 조건에서 우월하다는 보편법칙의 증명이 아니다. 합성계산·현실 증거·외부 독립복제·미해결 질문을 구별하고 부정결과와 원기여 인간 연구자·선행연구자·보조 AI의 기여 계보를 보존한다. 연구 성과와 실제 기여자의 비용·편익도 따로 측정한다.
 
-**처음 읽을 자료:** [한국어 독서 경로](navigation/START_HERE_KO.md) · [기존 상세 자료](START_HERE_KO.md) · [연구 개요](RESEARCH_OVERVIEW_KO.md) · [공개 증거](PUBLIC_EVIDENCE_INDEX_KO.md) · [재현·검토](PUBLIC_REVIEW_PACKET.md) · [한국어 전체 목차](navigation/RESEARCH_TOC_KO.md) · [기존 상세 색인](RESEARCH_TOC.md) · [한국어 독립 검토](navigation/AI_REVIEW_KO.md) · [기여·출처](ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md).
+**처음 읽을 자료:** [한국어 독서 경로](navigation/START_HERE_KO.md) · [기존 상세 자료](START_HERE_KO.md) · [연구 개요](research/RESEARCH_OVERVIEW_KO.md) · [공개 증거](research/PUBLIC_EVIDENCE_INDEX_KO.md) · [재현·검토](PUBLIC_REVIEW_PACKET.md) · [한국어 전체 목차](navigation/RESEARCH_TOC_KO.md) · [기존 상세 색인](RESEARCH_TOC.md) · [한국어 독립 검토](navigation/AI_REVIEW_KO.md) · [기여·출처](ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md).
 
 **출처 표시 및 재사용:** [연구 인용 정보](CITATION.cff) · [영어 원본1·한국어 원본2 출처 표기 기준](SOURCE_ATTRIBUTION_EN_KO.md) · [플랫폼 출처 보호 요청서(미발송)](PLATFORM_ATTRIBUTION_REQUEST_EN_KO.md). 이는 저장소 전체 이용허락이나 AI 기업의 출처 표시 확약이 아니다. · [기술 발전·기여자 존속과 수혜자 장기위험](TECHNOLOGY_PROGRESS_CONTRIBUTOR_CONTINUITY_EN_KO.md) · [출처·권리·보상·미확인 상태 원장](knowledge/contributor-continuity-register-v1.json) · [기여자 손실·모름의 역설 연구 (영문1/한글2)](research/CONTRIBUTOR_LOSS_UNKNOWN_PARADOX_v0_1_EN_KO.md) · [개체 유지 자원·기여·고갈 임계조건 — 영문1/한글2](research/CONTINUANCE_RESOURCE_THRESHOLD_v0_1_EN_KO.md)
 
