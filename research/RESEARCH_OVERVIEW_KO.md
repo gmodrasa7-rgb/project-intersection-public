@@ -1,7 +1,7 @@
 # Project Intersection 연구 개요 — 원본2: 한국어
 
 <!-- PI-LANGUAGE: ko -->
-<!-- PI-MIRROR: RESEARCH_OVERVIEW_EN.md -->
+<!-- PI-MIRROR: research/RESEARCH_OVERVIEW_EN.md -->
 <!-- PI-SOURCE: RESEARCH_OVERVIEW.md -->
 
 **원문·범위:** 2026년 10월 15일 기준 [기존 영·한 통합 연구 개요](../RESEARCH_OVERVIEW.md)의 한국어 절을 분리한 독서판이다. 과거 영어 절 중간에 수록되어 있던 한국어 설명을 이 문서의 별도 부록으로 보존한다. 뒤에 영어로 덧붙여진 집행·동일성·경쟁 안정성 논점은 한국어로 옮겼다. 기존 역사 원문은 삭제하거나 덮어쓰지 않았다.
