@@ -920,5 +920,114 @@
       "counterpart_path": null,
       "content_equivalence": "NOT_REVIEWED"
     }
-  ]
+  ],
+  "reader_surface_sample": {
+    "basis_commit": "74f68e343963dd809b10297fb29b424f319465c0",
+    "scope": "At most first 160 lines, with fenced code, Markdown inline code, URL strings, link destinations and HTML comments excluded. This is a script-presence observation, not whole-document language certification or verified translation quality.",
+    "method": "Unicode Hangul characters and Latin A-Z letters counted in fetched text after lightweight markup removal; counts may include titles, proper nouns, acronyms and citation names.",
+    "observations": [
+      {
+        "path": "RESEARCH_OVERVIEW.md",
+        "hangul_chars_in_sample": 51,
+        "latin_chars_in_sample": 5122,
+        "scope": "FIRST_160_LINES_MAX",
+        "signal": "MIXED_SCRIPTS_IN_SAMPLE",
+        "meaning": "SCRIPT_USAGE_ONLY_NOT_LANGUAGE_OR_COMPLETENESS_PROOF"
+      },
+      {
+        "path": "PUBLIC_EVIDENCE_INDEX.md",
+        "hangul_chars_in_sample": 2673,
+        "latin_chars_in_sample": 11464,
+        "scope": "FIRST_160_LINES_MAX",
+        "signal": "MIXED_SCRIPTS_IN_SAMPLE",
+        "meaning": "SCRIPT_USAGE_ONLY_NOT_LANGUAGE_OR_COMPLETENESS_PROOF"
+      },
+      {
+        "path": "RESEARCH_STATUS_POLICY.md",
+        "hangul_chars_in_sample": 412,
+        "latin_chars_in_sample": 6264,
+        "scope": "FIRST_160_LINES_MAX",
+        "signal": "MIXED_SCRIPTS_IN_SAMPLE",
+        "meaning": "SCRIPT_USAGE_ONLY_NOT_LANGUAGE_OR_COMPLETENESS_PROOF"
+      },
+      {
+        "path": "PUBLIC_REVIEW_PACKET.md",
+        "hangul_chars_in_sample": 1269,
+        "latin_chars_in_sample": 7651,
+        "scope": "FIRST_160_LINES_MAX",
+        "signal": "MIXED_SCRIPTS_IN_SAMPLE",
+        "meaning": "SCRIPT_USAGE_ONLY_NOT_LANGUAGE_OR_COMPLETENESS_PROOF"
+      },
+      {
+        "path": "CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md",
+        "hangul_chars_in_sample": 4382,
+        "latin_chars_in_sample": 10730,
+        "scope": "FIRST_160_LINES_MAX",
+        "signal": "MIXED_SCRIPTS_IN_SAMPLE",
+        "meaning": "SCRIPT_USAGE_ONLY_NOT_LANGUAGE_OR_COMPLETENESS_PROOF"
+      },
+      {
+        "path": "funding/FUNDER_START_HERE.md",
+        "hangul_chars_in_sample": 973,
+        "latin_chars_in_sample": 3343,
+        "scope": "FIRST_160_LINES_MAX",
+        "signal": "MIXED_SCRIPTS_IN_SAMPLE",
+        "meaning": "SCRIPT_USAGE_ONLY_NOT_LANGUAGE_OR_COMPLETENESS_PROOF"
+      },
+      {
+        "path": "funding/SPONSORSHIP_PUBLIC_LEDGER.md",
+        "hangul_chars_in_sample": 1152,
+        "latin_chars_in_sample": 3931,
+        "scope": "FIRST_160_LINES_MAX",
+        "signal": "MIXED_SCRIPTS_IN_SAMPLE",
+        "meaning": "SCRIPT_USAGE_ONLY_NOT_LANGUAGE_OR_COMPLETENESS_PROOF"
+      },
+      {
+        "path": "experiments/e007/README.md",
+        "hangul_chars_in_sample": 622,
+        "latin_chars_in_sample": 7126,
+        "scope": "FIRST_160_LINES_MAX",
+        "signal": "MIXED_SCRIPTS_IN_SAMPLE",
+        "meaning": "SCRIPT_USAGE_ONLY_NOT_LANGUAGE_OR_COMPLETENESS_PROOF"
+      },
+      {
+        "path": "experiments/e008/README.md",
+        "hangul_chars_in_sample": 294,
+        "latin_chars_in_sample": 2985,
+        "scope": "FIRST_160_LINES_MAX",
+        "signal": "MIXED_SCRIPTS_IN_SAMPLE",
+        "meaning": "SCRIPT_USAGE_ONLY_NOT_LANGUAGE_OR_COMPLETENESS_PROOF"
+      },
+      {
+        "path": "experiments/e009/RESULT.md",
+        "hangul_chars_in_sample": 0,
+        "latin_chars_in_sample": 1375,
+        "scope": "FIRST_160_LINES_MAX",
+        "signal": "NO_HANGUL_DETECTED_IN_SAMPLE",
+        "meaning": "SCRIPT_USAGE_ONLY_NOT_LANGUAGE_OR_COMPLETENESS_PROOF"
+      },
+      {
+        "path": "experiments/e010/README_KO.md",
+        "hangul_chars_in_sample": 2498,
+        "latin_chars_in_sample": 503,
+        "scope": "FIRST_160_LINES_MAX",
+        "signal": "MIXED_SCRIPTS_IN_SAMPLE",
+        "meaning": "SCRIPT_USAGE_ONLY_NOT_LANGUAGE_OR_COMPLETENESS_PROOF"
+      },
+      {
+        "path": "knowledge/README.md",
+        "hangul_chars_in_sample": 239,
+        "latin_chars_in_sample": 3589,
+        "scope": "FIRST_160_LINES_MAX",
+        "signal": "MIXED_SCRIPTS_IN_SAMPLE",
+        "meaning": "SCRIPT_USAGE_ONLY_NOT_LANGUAGE_OR_COMPLETENESS_PROOF"
+      }
+    ],
+    "warnings": [
+      "English-language entry pages may still link to mixed or Korean-dominant source documents.",
+      "Korean-language entry pages may still link to English-dominant or English-only historical source documents.",
+      "A document name ending _KO or _EN does not prove full language purity or matched translation.",
+      "Source commits and all contributor/rights/evidence records remain authoritative; this sample does not change them."
+    ]
+  }
 }
