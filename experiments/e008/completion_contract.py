@@ -67,6 +67,23 @@ def swapped_actor_outcome_match(a, b):
     return True
 
 
+def swapped_actor_outcomes_match(first, second):
+    """Check a multiset of outcomes: distribution records have no order semantics."""
+    if len(first) != len(second):
+        return False
+    unmatched = list(second)
+    for outcome in first:
+        match_index = next(
+            (i for i, candidate in enumerate(unmatched)
+             if swapped_actor_outcome_match(outcome, candidate)),
+            None,
+        )
+        if match_index is None:
+            return False
+        unmatched.pop(match_index)
+    return not unmatched
+
+
 def audit_declared_role_twins(rows, original):
     """Requires explicit label-only mirror OR reports role heterogeneity HOLD.
 
@@ -88,9 +105,7 @@ def audit_declared_role_twins(rows, original):
         for aid in sorted(own):
             outs1 = own[aid]["outcomes"]
             outs2 = twin[aid]["outcomes"]
-            if (len(outs1) != len(outs2)
-                or any(not swapped_actor_outcome_match(x, y)
-                       for x, y in zip(outs1, outs2))):
+            if not swapped_actor_outcomes_match(outs1, outs2):
                 discrepancies.append((key, mate, aid))
     return {"pair_count": len(reviewed) // 2,
             "label_only_mirror_discrepancies": discrepancies}
@@ -231,6 +246,28 @@ def self_test(original):
     clean = fixture(original)
     require(validate_completion(clean, original)["unique_cases"] == 16,
             "valid constructed fixture not accepted")
+
+    # Probabilistic branches are an unordered multiset, not a paired row order.
+    # Reversing only the -R twin must not invent a causal difference.
+    permuted = copy.deepcopy(clean)
+    for row in permuted["cases"]:
+        for action in row["actions"]:
+            lower = copy.deepcopy(action["outcomes"][0])
+            upper = copy.deepcopy(action["outcomes"][0])
+            lower["probability"] = 0.25
+            upper["probability"] = 0.75
+            action["outcomes"] = ([upper, lower] if row["case_id"].endswith("-R")
+                                  else [lower, upper])
+    require(validate_completion(permuted, original)["unique_cases"] == 16,
+            "equivalent permuted role-twin outcomes were rejected")
+    corrupted = copy.deepcopy(permuted)
+    corrupted["cases"][1]["actions"][0]["outcomes"][0]["intervention_cost"] = 0.2
+    try:
+        validate_completion(corrupted, original)
+    except ValueError:
+        pass
+    else:
+        raise AssertionError("mismatched role-twin outcome escaped despite permutation")
     mutations = [
         ("false independence", lambda x: x.update(evidence_status="EMPIRICAL_VALIDATED")),
         ("injected winner", lambda x: x.update(winner="PROJECT_V2")),
@@ -272,6 +309,8 @@ def self_test(original):
         "status": "PASS_SCHEMA_SMOKE_ONLY",
         "negative_controls_rejected": len(mutations),
         "uncertain_role_reversal_held": True,
+        "permuted_equivalent_branches_accepted": True,
+        "permuted_mismatched_branches_rejected": True,
         "negative_controls": [x[0] for x in mutations],
         "experiment_result": "NOT_EXECUTED",
         "independent_evaluation": "NOT_OBTAINED",
