@@ -148,6 +148,87 @@ def test_mutations(text):
         assert audit(test), "Mutation bypassed safeguard: " + name
     return len(mutants)
 
+def audit_e009_focus_gate(en: str, ko: str, frozen: dict, e008: dict) -> list[str]:
+    """Static decision-scope guard; no independent scientific validation implied."""
+    errors = []
+    anchors = (
+        ("EN", en, "## Five execution priorities — bounded decision, not new evidence",
+         "## Freeze the existing negative result"),
+        ("KO", ko, "## 실행 우선순위 5개 — 새로운 검증 결과가 아닌 한정된 운영 결정",
+         "## 기존 부정결과 고정"),
+    )
+    sections = {}
+    for label, body, start, end in anchors:
+        if body.count(start) != 1 or body.count(end) != 1 or body.index(start) > body.index(end):
+            errors.append("FOCUS_SECTION_MISSING_OR_MOVED:" + label)
+            continue
+        sections[label] = body.split(start, 1)[1].split(end, 1)[0]
+
+    required = {
+        "EN": [
+            "**Priority 1 — One active decision:**",
+            "**Priority 2 — Preserve adverse evidence:**",
+            "**Priority 3 — Evidence lineage:**",
+            "**Priority 4 — Contributor burden:**",
+            "**Priority 5 — No documentation inflation:**",
+            "0 hours", "not independent scientific validation",
+            "HOLD / EXTERNAL_VALIDATION_NOT_OBTAINED",
+            "competitive-loss score", "issue #26",
+        ],
+        "KO": [
+            "**우선순위 1 — 단일 판단:**",
+            "**우선순위 2 — 불리한 증거 보존:**",
+            "**우선순위 3 — 증거 계보 분리:**",
+            "**우선순위 4 — 기여자 부담:**",
+            "**우선순위 5 — 문서 팽창 금지:**",
+            "0시간", "독립적인 과학적 검증이 아니다",
+            "HOLD / EXTERNAL_VALIDATION_NOT_OBTAINED",
+            "경쟁 손실 지표", "이슈 #26",
+        ],
+    }
+    for label, tokens in required.items():
+        section = sections.get(label, "")
+        for token in tokens:
+            if token not in section:
+                errors.append("FOCUS_BOUNDARY_LOST:" + label + ":" + token)
+
+    a = frozen["stress_primary"]
+    v3, two, m4 = (a[n] for n in ("PROJECT_V3", "TWO_RULE_SIMPLE", "MINIMAL_4VAR"))
+    regret_pct = 100 * (v3["mean_regret"] / two["mean_regret"] - 1)
+    severe_multiple = v3["severe_harm_rate"] / two["severe_harm_rate"]
+    if not (42.34 < regret_pct < 42.36 and abs(severe_multiple - 53) < 1e-8
+            and m4["mean_regret"] < v3["mean_regret"]
+            and v3["mean_competitive_loss"] < two["mean_competitive_loss"]
+            and frozen["survival_criteria"]["project_v3_residual_survives"] is False):
+        errors.append("FROZEN_E009_BOUNDARY_CHANGED")
+    if e008["full_decision_benchmark_ready_cases"] != 0:
+        errors.append("E008_INCOMPLETE_STATUS_REVERSED")
+    for label, token in (("EN", f"{regret_pct:.2f}% worse"),
+                         ("EN", f"{severe_multiple:.0f}x"),
+                         ("KO", f"{regret_pct:.2f}% 나빴으며"),
+                         ("KO", f"{severe_multiple:.0f}배")):
+        if token not in sections.get(label, ""):
+            errors.append("FROZEN_NEGATIVE_RESULT_NOT_VISIBLE:" + label + ":" + token)
+    return errors
+
+
+def e009_focus_mutation_checks(en: str, ko: str, frozen: dict, e008: dict) -> int:
+    assert not audit_e009_focus_gate(en, ko, frozen, e008), "Original focus gate failed"
+    mutants = [
+        (en.replace("42.35% worse", "42.35% better", 1), ko),
+        (en.replace("53x", "0.53x", 1), ko),
+        (en.replace("0 hours", "12 hours", 1), ko),
+        (en.replace("**Priority 3 — Evidence lineage:**", "**Unspecified:**", 1), ko),
+        (en, ko.replace("0시간", "12시간", 1)),
+        (en, ko.replace("**우선순위 5 — 문서 팽창 금지:**", "**미확인:**", 1)),
+    ]
+    for index, (altered_en, altered_ko) in enumerate(mutants, 1):
+        assert audit_e009_focus_gate(altered_en, altered_ko, frozen, e008), (
+            "E009 negative mutation escaped:", index
+        )
+    return len(mutants)
+
+
 if __name__ == "__main__":
     current = Path("README.md").read_text(encoding="utf-8")
     contributors = Path("CONTRIBUTING.md").read_text(encoding="utf-8")
@@ -161,4 +242,14 @@ if __name__ == "__main__":
     assert priority_support_errors(contributors, failure_index.replace(
         "## F-R020 — Shared-source error survives bilingual agreement", "## Missing")), "Missing fail lineage gate"
     print("Priority-0 supporting document negative controls: 2/2 detected")
+    import json
+    en_gate = Path("research/E009_INDEPENDENT_DECISION_GATE_EN.md").read_text(encoding="utf-8")
+    ko_gate = Path("research/E009_INDEPENDENT_DECISION_GATE_KO.md").read_text(encoding="utf-8")
+    frozen_e009 = json.loads(Path("experiments/e009/RESULT.json").read_text(encoding="utf-8"))
+    e008_audit = json.loads(Path("experiments/e008/EXECUTABILITY_AUDIT.json").read_text(encoding="utf-8"))
+    focus_errors = audit_e009_focus_gate(en_gate, ko_gate, frozen_e009, e008_audit)
+    if focus_errors:
+        raise SystemExit("E009 focus gate FAIL: " + "; ".join(focus_errors))
+    print("E009 bounded-focus EN/KO and frozen adverse result PASS; negative mutations:",
+          e009_focus_mutation_checks(en_gate, ko_gate, frozen_e009, e008_audit))
     print("NOTE: static coverage is not scientific or translation semantic parity.")
