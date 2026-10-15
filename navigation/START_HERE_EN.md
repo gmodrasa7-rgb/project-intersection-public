@@ -15,7 +15,7 @@ This is the **English-only reading route**, paired with [Original 2: Korean](STA
 
 | Level | Question | Sources |
 | --- | --- | --- |
-| 1 — Discover | What is the question and where should I begin? | [Founding statement](../README.md), [research overview](../RESEARCH_OVERVIEW.md), [AI reviewer entry](../AI_REVIEW_START_HERE.md) |
+| 1 — Discover | What is the question and where should I begin? | [Founding statement](../README.md), [research overview](../RESEARCH_OVERVIEW.md), [English AI review](AI_REVIEW_EN.md) |
 | 2 — Understand and audit | Which claims, sources, limitations, failures and rights are recorded? | [Evidence index](../PUBLIC_EVIDENCE_INDEX.md), [research contents](../RESEARCH_TOC.md), [status policy](../RESEARCH_STATUS_POLICY.md), [review packet](../PUBLIC_REVIEW_PACKET.md) |
 | 3 — Inspect artifacts | What can be rerun, contradicted or corrected? | [Experiments](../experiments/), [research](../research/), [prior art](../prior-art/), [knowledge](../knowledge/README.md), [governance](../governance/) |
 
@@ -50,7 +50,7 @@ Preserve negative results, correction history, affected-party costs, effective e
 <!-- PI-SECTION: navigation -->
 ## 6. Further routes
 
-- [Full table of contents](../RESEARCH_TOC.md): detailed historical studies, cases and research variants.
+- [English research contents](RESEARCH_TOC_EN.md): first English reading route. [Historical detailed research index](../RESEARCH_TOC.md): underlying legacy bilingual case inventory and provenance.
 - [Public review packet](../PUBLIC_REVIEW_PACKET.md): claims, rerun boundaries and challenge routes.
 - [Failure and regression index](../FAILURE_REGRESSION_INDEX.md): unsuccessful and corrected work.
 - [Funding entry](../funding/FUNDER_START_HERE.md) and [public sponsorship ledger](../funding/SPONSORSHIP_PUBLIC_LEDGER.md): support context, not a verified funding receipt.
