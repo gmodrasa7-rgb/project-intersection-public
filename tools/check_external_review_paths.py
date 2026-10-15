@@ -181,6 +181,29 @@ def check(overrides: dict[str, str] | None = None) -> list[str]:
             if target not in neighbors_here:
                 errors.append(f"REVIEW_GUIDE_EVIDENCE_ROUTE_MISSING:{guide}:{target}")
 
+    # Independently readable reviewer protocol, not a claim of human benefit.
+    # No participant can be exposed to both comparison versions as the primary
+    # between-subjects test: this would reintroduce a learning confound.
+    frozen_baseline = "15444868329870a883884705b96f553b641f408f"
+    methods = (
+        ("navigation/AI_REVIEW_EN.md",
+         ("one immutable Git revision only (between-subjects, not crossover)",
+          "Frozen answer key", "42.35%", "3/4",
+          "../experiments/e008/README_EN.md",
+          "../experiments/e009/RESULT_EN.md",
+          "../experiments/e007/README_EN.md")),
+        ("navigation/AI_REVIEW_KO.md",
+         ("한 사람은 한 판본만 읽는다", "정답 기준과 원자료",
+          "42.35%", "4개 중 3개",
+          "../experiments/e008/README_KO.md",
+          "../experiments/e009/RESULT_KO.md",
+          "../experiments/e007/README_KO.md")),
+    )
+    for reviewer, requirements in methods:
+        body = load(reviewer)
+        if frozen_baseline not in body or any(token not in body for token in requirements):
+            errors.append("READER_EVALUATION_UNGROUNDED_OR_LEARNING_CONFOUNDED:" + reviewer)
+
     # Check local headings in the small externally promoted gateway set. This
     # catches dangling anchors even when the destination file itself exists.
     for page in GATEWAYS:
@@ -325,13 +348,30 @@ def self_test():
         "navigation/START_HERE_EN.md": inverted
     })
 
+    review_en = document("navigation/AI_REVIEW_EN.md")
+    assert "READER_EVALUATION_UNGROUNDED_OR_LEARNING_CONFOUNDED" in " ".join(check({
+        "navigation/AI_REVIEW_EN.md":
+        review_en.replace("one immutable Git revision only (between-subjects, not crossover)",
+                          "both versions in a single crossover session")
+    }))
+    review_ko = document("navigation/AI_REVIEW_KO.md")
+    assert "READER_EVALUATION_UNGROUNDED_OR_LEARNING_CONFOUNDED" in " ".join(check({
+        "navigation/AI_REVIEW_KO.md":
+        review_ko.replace("한 사람은 한 판본만 읽는다", "한 사람이 두 판본을 연속해 읽는다")
+    }))
+    assert "READER_EVALUATION_UNGROUNDED_OR_LEARNING_CONFOUNDED" in " ".join(check({
+        "navigation/AI_REVIEW_EN.md": review_en.replace(
+            "../experiments/e009/RESULT_EN.md",
+            "../experiments/e009/RESULT_KO.md")
+    }))
+
     result = json.loads(document("experiments/e009/RESULT.json"))
     result["survival_criteria"]["project_v3_residual_survives"] = True
     assert "REVIEW_E009_FAILURE_SOURCE_STATUS_CHANGED" in check({
         "experiments/e009/RESULT.json": json.dumps(result)
     })
 
-    print("External-review route guard: PASS (9 deliberate defects rejected)")
+    print("External-review route guard: PASS (12 deliberate defects rejected)")
     print("Boundary: static graph/anchor/status checks, not visitor usability or scientific validation")
 
 
