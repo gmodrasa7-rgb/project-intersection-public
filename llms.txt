@@ -4,6 +4,13 @@
 
 ## Language routing
 
+- English contents (Original 1): https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/navigation/RESEARCH_TOC_EN.md
+- Korean contents (Original 2): https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/navigation/RESEARCH_TOC_KO.md
+- English independent review: https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/navigation/AI_REVIEW_EN.md
+- Korean independent review: https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/navigation/AI_REVIEW_KO.md
+- Machine-readable language edition and unresolved legacy inventory: https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/knowledge/language-edition-register.json
+
+
 - Original 1 — English reading guide: https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/navigation/START_HERE_EN.md
 - Original 2 — Korean reading guide: https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/navigation/START_HERE_KO.md
 - Full founding statement with separate English-first and Korean-second editions: https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/README.md
