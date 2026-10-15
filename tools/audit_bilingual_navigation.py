@@ -81,7 +81,7 @@ def comparable_source_path(raw: str) -> str:
 
 
 def git_blob_digest(content: bytes) -> str:
-    return hashlib.sha1(b"blob " + str(len(content)).encode("ascii") + b"\\x00" + content).hexdigest()
+    return hashlib.sha1(b"blob " + str(len(content)).encode("ascii") + b"\x00" + content).hexdigest()
 
 
 def inspect(registry: dict, overrides: dict[str, str] | None = None, full_inventory: bool = True) -> list[str]:
