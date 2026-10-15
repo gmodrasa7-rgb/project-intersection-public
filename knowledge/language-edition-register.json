@@ -2,7 +2,7 @@
   "schema_version": "pi-language-edition-register/v0.1",
   "updated": "2026-10-16",
   "baseline_repository_tree_sha": "b2055f40a1e0cabe38f3c6e8c984228c1c2a7e0f",
-  "baseline_scope": "Historical inventory retained; two GPT proposal-gate editions added on review branch; baseline tree SHA is historical, not the current head.",
+  "baseline_scope": "Historical baseline tree SHA, not current branch HEAD; registered PEST-v0.1 draft English/Korean pairs are unreviewed and not scientific results.",
   "policy": {
     "original_1": "en",
     "original_2": "ko",
@@ -285,6 +285,36 @@
       "known_divergences": [
         "English and Korean versions preserve the same limits but semantic equivalence is unverified."
       ]
+    },
+    {
+      "id": "PI-PEST-DESIGN",
+      "original_1_english": "experiments/pest_v0_1/README_EN.md",
+      "original_2_korean": "experiments/pest_v0_1/README_KO.md",
+      "kind": "synthetic_96_cell_design_candidate_not_frozen_or_executed",
+      "structural_pair_present": true,
+      "meaning_review_status": "NOT_INDEPENDENTLY_VERIFIED",
+      "original_conception_language": "NOT_INDEPENDENTLY_ADJUDICATED",
+      "independent_review_receipt": null,
+      "one_sided_edit_exception": null,
+      "known_divergences": [
+        "Meaning-equivalence is not independently reviewed.",
+        "Neither draft edition constitutes a preregistered scientific result."
+      ]
+    },
+    {
+      "id": "PI-PEST-AMENDMENT",
+      "original_1_english": "research/POWER_EXISTENCE_SEPARATION_AMENDMENT_v0_1_EN.md",
+      "original_2_korean": "research/POWER_EXISTENCE_SEPARATION_AMENDMENT_v0_1_KO.md",
+      "kind": "research_amendment_candidate_not_merged_or_empirically_validated",
+      "structural_pair_present": true,
+      "meaning_review_status": "NOT_INDEPENDENTLY_VERIFIED",
+      "original_conception_language": "NOT_INDEPENDENTLY_ADJUDICATED",
+      "independent_review_receipt": null,
+      "one_sided_edit_exception": null,
+      "known_divergences": [
+        "Meaning-equivalence is not independently reviewed.",
+        "Neither draft edition constitutes a preregistered scientific result."
+      ]
     }
   ],
   "legacy_priority_unresolved": [
@@ -326,13 +356,13 @@
     }
   ],
   "metrics": {
-    "markdown_total": 148,
+    "markdown_total": 152,
     "filename_classes": {
       "UNMARKED_LANGUAGE_UNVERIFIED": 42,
       "LEGACY_MIXED_READER_ENTRY": 2,
-      "KO_SUFFIX_UNVERIFIED": 63,
+      "KO_SUFFIX_UNVERIFIED": 65,
       "ORDERED_BILINGUAL_FOUNDER_OR_GOVERNANCE": 2,
-      "EN_SUFFIX_UNVERIFIED": 18,
+      "EN_SUFFIX_UNVERIFIED": 20,
       "COMBINED_NAMING_UNVERIFIED": 21
     },
     "meaning_verified_pairs": 0,
@@ -886,6 +916,18 @@
       "content_equivalence": "NOT_REVIEWED"
     },
     {
+      "path": "experiments/pest_v0_1/README_EN.md",
+      "filename_class": "EN_SUFFIX_UNVERIFIED",
+      "counterpart_path": "experiments/pest_v0_1/README_KO.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "experiments/pest_v0_1/README_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": "experiments/pest_v0_1/README_EN.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
       "path": "experiments/picb_v1/README.md",
       "filename_class": "UNMARKED_LANGUAGE_UNVERIFIED",
       "counterpart_path": null,
@@ -1159,6 +1201,18 @@
       "path": "research/PI_ROADMAP_OPERATIONAL_GATES_V0_2_3_EN_KO.md",
       "filename_class": "COMBINED_NAMING_UNVERIFIED",
       "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "research/POWER_EXISTENCE_SEPARATION_AMENDMENT_v0_1_EN.md",
+      "filename_class": "EN_SUFFIX_UNVERIFIED",
+      "counterpart_path": "research/POWER_EXISTENCE_SEPARATION_AMENDMENT_v0_1_KO.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "research/POWER_EXISTENCE_SEPARATION_AMENDMENT_v0_1_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": "research/POWER_EXISTENCE_SEPARATION_AMENDMENT_v0_1_EN.md",
       "content_equivalence": "NOT_REVIEWED"
     },
     {
