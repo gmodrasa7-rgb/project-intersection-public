@@ -28,3 +28,7 @@ jobs:
         run: python -m capability_lab.retrieval_evolution
       - name: Record answerability and abstention result (synthetic only)
         run: python -m capability_lab.answerability_evolution
+
+      - name: Audit one fixed GPT-authored declarative candidate, without API spending
+        run: |
+          python -c 'import json; from capability_lab import proposal_gate as g; p={"schema":g.SCHEMA,"strategy":"unique_overlap","threshold":0.3}; print(json.dumps(g.assess(p), ensure_ascii=False, indent=2))'
