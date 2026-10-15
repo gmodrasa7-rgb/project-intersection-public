@@ -1,7 +1,7 @@
 # Public Evidence and Limits — Original 1: English
 
 <!-- PI-LANGUAGE: en -->
-<!-- PI-MIRROR: PUBLIC_EVIDENCE_INDEX_KO.md -->
+<!-- PI-MIRROR: research/PUBLIC_EVIDENCE_INDEX_KO.md -->
 <!-- PI-SOURCE: PUBLIC_EVIDENCE_INDEX.md -->
 
 **Status:** Public due-diligence index of bounded claims, results, sources and invalid inferences. [Korean Original 2](PUBLIC_EVIDENCE_INDEX_KO.md) · [Original historical combined record](../PUBLIC_EVIDENCE_INDEX.md) · [English research contents](../navigation/RESEARCH_TOC_EN.md).
