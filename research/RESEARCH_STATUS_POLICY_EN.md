@@ -1,7 +1,7 @@
 # Research Status and Reassessment Policy — Original 1: English
 
 <!-- PI-LANGUAGE: en -->
-<!-- PI-MIRROR: RESEARCH_STATUS_POLICY_KO.md -->
+<!-- PI-MIRROR: research/RESEARCH_STATUS_POLICY_KO.md -->
 <!-- PI-SOURCE: RESEARCH_STATUS_POLICY.md -->
 
 **Status: PUBLIC RESEARCH-STATUS INTERFACE.** This is a source-preserving, separately navigable edition extracted from the existing English section of the [historical combined policy](../RESEARCH_STATUS_POLICY.md) on 2026-10-15. The original remains intact. This is not an independent audit of the scientific claims, legal rights or translation equivalence.
