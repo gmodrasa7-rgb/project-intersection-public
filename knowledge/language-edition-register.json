@@ -262,11 +262,11 @@
     }
   ],
   "metrics": {
-    "markdown_total": 141,
+    "markdown_total": 140,
     "filename_classes": {
       "COMBINED_NAMING_UNVERIFIED": 21,
       "EN_SUFFIX_UNVERIFIED": 14,
-      "KO_SUFFIX_UNVERIFIED": 60,
+      "KO_SUFFIX_UNVERIFIED": 59,
       "LEGACY_MIXED_READER_ENTRY": 2,
       "ORDERED_BILINGUAL_FOUNDER_OR_GOVERNANCE": 2,
       "UNMARKED_LANGUAGE_UNVERIFIED": 42
@@ -771,12 +771,6 @@
       "path": "experiments/e010/README_EN.md",
       "filename_class": "EN_SUFFIX_UNVERIFIED",
       "counterpart_path": "experiments/e010/README_KO.md",
-      "content_equivalence": "NOT_REVIEWED"
-    },
-    {
-      "path": "experiments/e010/README_KO.md",
-      "filename_class": "KO_SUFFIX_UNVERIFIED",
-      "counterpart_path": null,
       "content_equivalence": "NOT_REVIEWED"
     },
     {
