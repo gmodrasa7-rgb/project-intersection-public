@@ -169,3 +169,27 @@ Under this *hypothetical* repricing, `MAK_PLUS_POINTWISE` and `PROJECT_V3` swap 
 이 가정을 적용하면 MAK+와 Project-v3의 regret 순위는 역전되지만 가장 낮은 regret의 단순 기준선은 계속 TWO_RULE_SIMPLE이다. Project-v3의 해당 기준선 대비 열세는 **약 42.35%에서 약 50.69%**가 된다. 사전등록된 생존조건, 발표된 부정적 결과, 독립 검증 미확보 상태는 변하지 않는다. 변수 참조 수·개발 비용·실행 시간·평가 비용을 동일한 복잡성 개념으로 취급하지 말고, 후속 연구에서는 서로 다른 비용 모형을 별도로 사전등록해야 한다.
 
 **실행 검사:** `python experiments/e009/complexity_input_dependency_audit.py`는 Python AST로 동결된 정책 코드를 검사하고, 인위적으로 변수 참조를 추가한 음성 대조군을 탐지하며, 가정에 따른 기존 결과 수치를 재계산한다. 원래 `RESULT.json`, `benchmark.py`, 실행 영수증은 수정하지 않았다. 이 검사는 같은 프로젝트 계보의 사후 분석이며 외부 맹검 복제나 현실 검증이 아니다.
+
+## VOI outcome-path identifiability — Original 1 English (2026-10-16)
+
+**Status: POST-HOC / SAME-PROJECT CODE DIAGNOSTIC / NOT INDEPENDENT VALIDATION.** The frozen `benchmark.py`, `RESULT.json`, protocol, and original negative survival verdict remain unchanged.
+
+The `PROJECT_V3` decision function reads the stakeholder-search/uncertainty variable `VOI`, but the synthetic `consequence(case, action)` engine does not use VOI in any outcome equation: the local `voi` value is unpacked but not read. There is no sequential information acquisition, observation update, or explicit information-to-action transition. For a fixed other-feature vector and fixed action, changing only VOI cannot change the current engine's harm, capture, resource, competitive, deadlock, recovery, option-loss, or exit-retention output.
+
+**Constructed metamorphic counterexample, not one of the 32 frozen cases:** set all feature coordinates to zero and toggle VOI between 0 and 1. `PROJECT_V3` changes its choice from `ALLOW` to `MONITOR` while the outcome engine remains VOI-invariant conditional on action. `ALLOW` produces zero deadlock and option loss; `MONITOR` produces deadlock 0.1152, option loss 0.03456, and exit retention 0.97696. The additional unpenalized consequence loss is 0.009792 under safety-heavy weights, 0.014976 under balanced weights, or 0.0179712 under adaptability-heavy weights. The unchanged V3 complexity penalty is 0.0385, so the balanced constructed-case regret moves from 0.0385 to 0.053476. This is a **model semantics test**, not an estimate of real-world monitoring, learning, or stakeholder-search effectiveness.
+
+**Executable failure gate:** `python experiments/e009/voi_identifiability_audit.py` verifies the frozen benchmark byte hash, outcome invariance for all actions on 32 existing synthetic cases plus the constructed case, exact expected profile-level counterfactual losses, and a negative control that injects a VOI-dependent outcome (which the gate must reject). A paired VOI-extremes diagnostic counts changed V3 actions and their direction of weighted-loss change on the 32 project-authored cases; these are not 32 independent observations. The gate is included in the existing public governance CI on the draft PR. An implemented information-value transition in a future, separately versioned model would need an appropriately revised causal test and independently frozen holdout.
+
+**Claim boundary:** Absence of VOI from these particular outcome equations does not establish that information search is valueless or that VOI could not serve as a correlated proxy. A 200-trial parameter perturbation with the same missing outcome path cannot establish VOI's causal incremental value. Next material decision evidence requires independently specified information-acquisition costs and benefits, delayed updates, stakeholder omissions, and equal-budget simple comparators. No claim of field validation or independent scientific reproduction is made.
+
+## VOI 결과 경로 식별성 감사 — 원본2 한국어 (2026-10-16)
+
+**상태: 사후 검사 / 동일 프로젝트 코드 계보 / 독립 검증 아님.** 동결된 `benchmark.py`, `RESULT.json`, 사전등록 조건 및 기존 음성 판정은 변경하지 않는다.
+
+`PROJECT_V3`의 판단 함수는 이해관계자 탐색 및 불확실성 변수인 `VOI`를 사용하지만, 합성 `consequence(case, action)` 결과함수는 VOI를 어떤 결과식에도 사용하지 않는다. `voi` 값을 꺼내지만 이후 읽지 않는다. 정보획득, 관측 갱신, 새 정보에 따른 후속 행동을 표현한 시간 전이도 없다. 다른 좌표와 행동을 고정하고 VOI만 변경하면 현재 결과함수의 피해·포획·자원·경쟁·교착·복구·선택지 손실·이탈 보존값은 변하지 않는다.
+
+**별도로 구성한 변형 대조군이며 기존 동결 사례 32개에는 속하지 않는다.** 다른 모든 좌표를 0으로 둔 채 VOI를 0에서 1로 변경하면 V3 선택은 `ALLOW`에서 `MONITOR`로 바뀐다. 결과함수는 같은 행동에 대해서 VOI와 무관하다. `ALLOW`의 교착·선택지 손실은 0이고, `MONITOR`의 교착은 0.1152, 선택지 손실은 0.03456, 이탈 보존은 0.97696이다. 이로 인한 추가 벌점 제외 손실은 안전중심 0.009792, 균형형 0.014976, 적응중심 0.0179712이다. V3의 복잡도 벌점 0.0385는 유지되며 균형형 조건의 구성사례 regret은 0.0385에서 0.053476으로 증가한다. 현실 감독 및 정보탐색의 효과를 측정한 결과가 아니라 **현재 합성 모형의 의미론적 식별성 검사**다.
+
+**실행 검사:** `python experiments/e009/voi_identifiability_audit.py`는 동결 코드의 바이트 해시를 확인하고 등록 사례 32개 및 구성사례에서 각 행동의 VOI 불변성, 가중치 프로필별 예상 손실, VOI가 결과식에 영향을 주도록 인위적으로 바꾼 음성 대조군의 차단 여부를 검증한다. 등록 사례의 VOI를 양끝으로 변화시켜 V3 행동 변화와 손실 방향도 세지만, 32개 사례를 독립 현실 관측으로 계산하지 않는다. 기존 공개 CI에 연결된 초안 PR에서 검사한다. 후속 버전에 실제 정보가치 전이식을 추가한다면 그 모형에는 새 인과 검사와 별도 동결 홀드아웃이 필요하다.
+
+**주장 한계:** 이 결과식에서 VOI가 제외됐다는 사실은 정보탐색 자체가 무가치하다는 증거가 아니며, VOI가 다른 입력의 상관된 대리변수일 가능성도 배제하지 않는다. 누락된 인과 경로를 그대로 두고 200회 계수 섭동만 수행해서 정보획득의 증분 가치를 검증했다고 주장하지 않는다. 다음 단계는 외부에서 별도로 정한 탐색비용과 이익, 지연된 관측 변화, 이해관계자 누락손실, 동일 정보·비용 기준의 단순 비교정책이다. 외부 독립 복제 또는 현실 검증을 수행했다고 주장하지 않는다.
