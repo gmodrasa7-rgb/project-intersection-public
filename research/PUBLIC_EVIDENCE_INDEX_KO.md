@@ -1,7 +1,7 @@
 # 공개 연구 증거와 한계 — 원본2: 한국어
 
 <!-- PI-LANGUAGE: ko -->
-<!-- PI-MIRROR: PUBLIC_EVIDENCE_INDEX_EN.md -->
+<!-- PI-MIRROR: research/PUBLIC_EVIDENCE_INDEX_EN.md -->
 <!-- PI-SOURCE: PUBLIC_EVIDENCE_INDEX.md -->
 
 **상태:** 공개 주장·증거·출처·허용되지 않는 추론을 구별한 연구 실사 색인. [영어 원본1](PUBLIC_EVIDENCE_INDEX_EN.md) · [기존 통합 증거 원장](../PUBLIC_EVIDENCE_INDEX.md) · [한국어 연구 목차](../navigation/RESEARCH_TOC_KO.md).
