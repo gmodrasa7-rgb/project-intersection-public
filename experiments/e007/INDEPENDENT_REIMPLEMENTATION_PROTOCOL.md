@@ -9,6 +9,8 @@ This document defines the smallest public specification needed to test E007 with
 
 ---
 
+**Game-theory priority / 게임이론 선행연구:** Distinctions between strategic-form/simultaneous and extensive-form/sequential games, action order, information sets and backward induction precede this project. See the [credited primary/secondary tradition and E007 scope](../../PRIOR_ART_AND_ATTRIBUTION.md#2026-10-14-e007-timinggame-form-prior-art-boundary) and Don Ross's [2023 Stanford Encyclopedia overview](https://plato.stanford.edu/archives/fall2023/entries/game-theory/index.html). E007's narrower contribution is *an executable project-specific failure test for timing/role assumptions*, not invention of those established concepts. / 동시·순차게임, 정보집합과 역진귀납은 기존 게임이론이다. 본 연구는 특정 공존 모형에서 이 시점 가정과 고정 A 선공 처리 오류를 반증 가능한 형태로 시험한 응용이다.
+
 ## 1. Independence boundary / 독립성 경계
 
 A reimplementation may use this specification and may know the published headline result. To qualify as `INDEPENDENT_IMPLEMENTATION`, the reviewer should:
@@ -92,6 +94,10 @@ For each period:
 8. If `r <= 0`, own consent becomes false.
 
 기준 규칙의 핵심은 **같은 기간의 성공한 EXIT가 ATTACK보다 먼저 해결된다**는 점이다.
+
+**Historical code-order disclosure / 2026-10-14 구현 처리순서 추가:** In the project-derived E007 code, after exit resolution, A's ATTACK branch runs **before** B's ATTACK branch. If both choose ATTACK, A can disable B before B's branch executes. The published counts refer to that **ordered sequential transition**, not a simultaneous-attack semantics or fully role-exchangeable physical process. E.g., both start with `ra=rb=1`, `attack_damage=1`, and choose ATTACK; A's hit leaves `ra=1,rb=0` and B does not hit. / 공격 분기는 A→B 순서이므로 동시 상호공격에서 고정적인 A 우선권이 나타날 수 있다. 이 해석은 초기 코드의 한계이며 선행/후행 역할만 바꿔서는 제거되지 않는다.
+
+**Independent falsification target / 독립 구현 추가 반례:** Compare this exact ordered case with a same-snapshot simultaneous mutual-attack control in which both hits use *pre-strike* resources, protection and outside options. Record both state transitions and utilities and whether renaming A↔B preserves the counterfactual. Do not silently patch the frozen E007 baseline to make its published count match a different ordering. / 독립 구현자는 우선권의 영향과 대칭적 상호공격 대조를 따로 기록하고, 서로 다른 시점 명세의 결과를 동일 지표로 합치지 않는다.
 
 ---
 

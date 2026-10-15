@@ -27,3 +27,12 @@ Describe the smallest necessary change and the public claim, evidence, or operat
 - [ ] Repeating this structure would not systematically concentrate control on one side while concentrating repair cost, dependency, or lost options on the other.
 
 If a box cannot honestly be checked, narrow the change, document the exception, or route it for explicit authorized review rather than treating the exception as normal.
+
+## Language publication gate — Original 1 English / Original 2 Korean
+
+- [ ] Reader-facing new research text has a complete English first edition and a corresponding complete Korean second edition, or an explicitly documented exception.
+- [ ] Languages are not interleaved within prose, headings, or table cells; both reader routes are discoverable.
+- [ ] Claims, sources, evidence status, limits and contributor credit have been compared; any missing or outdated translation is disclosed rather than invented.
+- [ ] Existing originals, stable links, negative results and revision history are preserved.
+
+The language gate is a structural check, not a certificate of semantic fidelity. See [contribution policy](../CONTRIBUTING.md).

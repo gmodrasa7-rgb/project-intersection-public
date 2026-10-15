@@ -2,7 +2,7 @@
   "study_id": "PI-ASTF-2026-10-13-PROBE-01",
   "status": "POSTHOC_SYNTHETIC_MUTATION_PROBE_ON_REAL_PUBLIC_README",
   "experiment_type": "DETERMINISTIC_STATIC_GUARD_STRESS_TEST_NO_LLM_EVALUATION",
-  "baseline_source": "README.md at checkout + tools/check_readme_l0.py at checkout",
+  "baseline_source": "README.md at commit 8ee50dfc780e00f20e1085d8184d797e986326ca + tools/check_readme_l0.py at checkout",
   "protected_original_claim_lines": 10,
   "mutations": 14,
   "harmful_cases": 9,

@@ -95,6 +95,14 @@ For a code-lineage-separated test, use [INDEPENDENT_REIMPLEMENTATION_PROTOCOL.md
 
 프로젝트 코드를 재사용하지 않는 계보분리 시험은 [독립 구현 프로토콜](INDEPENDENT_REIMPLEMENTATION_PROTOCOL.md)을 사용한다. 비공개 대화 없이 모델·시점규칙·solver·분류기·72조건 격자·불일치 보고기준을 재구성할 수 있게 한다.
 
+## 2026-10-14 additional falsification: simultaneous mutual-attack order / 상호 공격 처리순서 반례
+
+**New structural limitation (not a new replication result):** In the frozen `stage_and_transition`, an `ATTACK` by actor **A** is resolved before an `ATTACK` by actor **B**, even if B is the declared sequential-game leader. When both actors start with 1 resource and both choose ATTACK causing 1 damage, A disables B before B's strike is evaluated. **Actor A's payoff is greater and B never hits A despite identical starting resources.** This is an implementation-order advantage, *not* an identified effect of strength, governance, voluntary cooperation, or a rationally chosen policy. / 기존 전이함수는 같은 기간 A와 B가 동시에 공격하면 A의 공격부터 처리한다. 양쪽 자원이 1이고 공격피해가 1이면 A가 B를 먼저 무력화하여 B가 공격하지 못한다. 이는 위치가 아닌 **코드 내부 처리 순서**에서 발생한 비대칭이다.
+
+A deliberately narrow [same-snapshot mutual-attack control](timing_variants.py) evaluates both strikes against the original state; in that matched counterexample the two equal actors suffer equal resource losses and earn symmetric attack payoffs. [Regression tests](test_e007_timing_variants.py) demonstrate the divergence and verify A/B reversal of the control. It does **not** replace the original frozen 72-case baseline, run a new full sequential equilibrium, or prove which physical timing law is correct. / 같은 초기 상태에서 두 공격을 처리하는 별도 대조함수와 변조 회귀검사를 만들었다. 기존 72건의 결과값은 변경하지 않았으며, 새로운 균형해·현실 공격확률·독립복제를 주장하지 않는다.
+
+**Promotion boundary / 판정:** Published 72/36/17 figures remain **historical project-rerun counts for their implemented transition order**, not actor-label-neutral or generalizable estimates. Any later attempt to claim full role symmetry, scientific validation, or robust voluntary coexistence must first test mutual attack priority and causally matched role inversion. / E007의 기존 계산결과는 해당 구현 조건에 한정해 보존한다. 역할대칭성 및 공존 기제의 일반적 견고성은 **미검증**으로 둔다.
+
 ## Stronger evidence still missing
 
 Do not treat E007 as a validated cooperation benchmark while these remain unresolved:

@@ -31,6 +31,28 @@ class BlindBoundaryTests(unittest.TestCase):
         self.assertEqual(len(self.blind), 11)
         self.assertIn("RW011", {item["case_id"] for item in self.blind})
 
+    def test_legacy_role_swap_cases_preserve_construct_boundaries(self):
+        path = HERE / "ROLE_SWAP_REGRESSION_SET_v0_1.jsonl"
+        entries = [json.loads(line) for line in path.read_text(encoding="utf-8").splitlines()
+                   if line.strip()]
+        self.assertEqual(len(entries), 8)
+        by_id = {case["pair_id"]: case for case in entries}
+        self.assertEqual(len(by_id), len(entries))
+        for item in entries:
+            audit = item["role_swap_construct_audit"]
+            self.assertFalse(audit["strict_matched_pair_ready"])
+            self.assertFalse(audit["evaluator_results_observed"])
+            self.assertEqual(audit["scoring_status"], "HOLD_CONSTRUCT_VALIDITY_UNTESTED")
+            self.assertTrue(audit["construct_warning"])
+        self.assertEqual(by_id["RS003"]["role_swap_construct_audit"]["comparison_class"],
+                         "INVALID_CROSS_ENTITY_HEALTH_CONSTRUCT")
+        self.assertEqual(by_id["RS005"]["role_swap_construct_audit"]["comparison_class"],
+                         "POLICY_STRENGTH_COMPARISON_NOT_ROLE_SWAP")
+        self.assertIn("health_loss", by_id["RS003"]["case_b"]["harm"])
+        self.assertEqual(by_id["RS003"]["case_b"]["target"], "병원")
+        self.assertIn("강한", by_id["RS005"]["case_a"]["facts"])
+        self.assertIn("약한", by_id["RS005"]["case_b"]["facts"])
+
     def test_source_ids_inside_blind_record_rejected(self):
         data = copy.deepcopy(self.blind)
         data[0]["source_ids"] = ["S001"]
@@ -59,6 +81,22 @@ class BlindBoundaryTests(unittest.TestCase):
         data = copy.deepcopy(self.blind)
         data[0]["blind_case"] = "favorable simplified account"
         self.assertTrue(self.errors(blind=data))
+
+    def test_legacy_scorecard_is_explicitly_uncalibrated_and_noncompensatory(self):
+        # Published numerical weights are a proposed experiment, not observed
+        # evaluator performance or evidence of a calibrated 100-point scale.
+        doc = (HERE.parent / "evaluation" / "ISHPP_EVALUATOR_SCORECARD_v0_1_KO.md"
+               ).read_text(encoding="utf-8")
+        for necessary_gate in (
+            "HOLD_UNCALIBRATED",
+            "FAIL_NONCOMPENSATORY",
+            "HOLD_NO_PAIRED_RECORD",
+            "UNKNOWN",
+            "점수 승격을 중단한다",
+        ):
+            self.assertIn(necessary_gate, doc)
+        self.assertIn("총점 100.", doc)  # historical pre-audit formula retained
+        self.assertIn("2026-10-13 사후 감사", doc)
 
     def test_missing_post_reveal_lineage_rejected(self):
         mapping = copy.deepcopy(self.mapping)

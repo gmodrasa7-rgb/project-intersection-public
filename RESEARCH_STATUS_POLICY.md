@@ -22,7 +22,7 @@ Privacy, third-party information, security, legitimate contractual confidentiali
 
 - **ACTIVE** — currently active research
 - **HOLD** — judgment deferred
-- **ROS** — currently inactive, but explicitly eligible for reassessment when relevant conditions change
+- **REASSESS_PENDING** — currently inactive, but explicitly eligible for reassessment when relevant conditions change (old `ROS` accepted as a historic data alias)
 - **NARROWED** — claim scope reduced
 - **UNSUPPORTED** — not supported by current evidence
 - **NOVELTY_REJECTED** — novelty claim not adopted for the stated scope
@@ -32,9 +32,9 @@ Privacy, third-party information, security, legitimate contractual confidentiali
 
 Scientific-support status and novelty status are separate. Rejecting novelty because prior work already covers a claim does not make the underlying phenomenon false.
 
-### 3. Status of ROS
+### 3. Reassessment-pending research status
 
-ROS means **Reassessment-Obligated Shelving**. Project Intersection does not claim ROS as a new scientific theory or discovery.
+The current outward-facing status is **reassessment pending** (`REASSESS_PENDING`). Earlier documents and data used **ROS — Reassessment-Obligated Shelving**; it is a legacy alias, not a new scientific theory, a robotics product, or a claim of affiliation with Open Robotics.
 
 It is a compact research-management label related to existing ideas such as goal shelving, deferred status, deferred review/reassessment, and work on uncertainty, irreversibility, and option preservation. Priority for those component ideas remains with the relevant prior work and practice.
 
@@ -45,9 +45,9 @@ Representative references:
 - W3C APA Spec Review Deferred: https://www.w3.org/WAI/APA/wiki/Spec_Review
 - Fisher, A. C. & Krutilla, J. V. (1974), uncertainty and irreversibility. DOI: https://doi.org/10.1016/0095-0696(74)90007-2
 
-Using the ROS label does not transfer those prior concepts to Project Intersection.
+Using a project research status, including its legacy ROS label, does not transfer those prior concepts to Project Intersection.
 
-### 4. What ROS means operationally
+### 4. What reassessment pending means operationally
 
 Under current knowledge, evidence, technology, cost, risk, and measurement capability, a research line may be removed from active work.
 
@@ -146,7 +146,7 @@ A failure on either question blocks automatic promotion or irreversible executio
 
 - **ACTIVE** — 현재 활성 연구
 - **HOLD** — 판단 유보
-- **ROS** — 현재는 비활성화하는 것이 합리적이지만 관련 조건 변화 시 재평가
+- **REASSESS_PENDING — 재검토 보류** — 현재는 비활성화하는 것이 합리적이지만 관련 조건 변화 시 재평가(옛 `ROS`는 역사적 데이터 별칭)
 - **NARROWED** — 주장 범위 축소
 - **UNSUPPORTED** — 현재 증거로 지지되지 않음
 - **NOVELTY_REJECTED** — 해당 범위의 독창성 주장을 채택하지 않음
@@ -156,9 +156,9 @@ A failure on either question blocks automatic promotion or irreversible executio
 
 과학적 지지상태와 독창성 상태는 분리한다. 기존 문헌과 겹쳐 novelty가 부정되어도 현상 자체가 거짓이라는 뜻은 아니다.
 
-## 3. ROS의 지위
+## 3. 재검토 보류의 지위
 
-ROS는 **Reassessment-Obligated Shelving**의 약칭이며 Project Intersection의 신규 이론이나 학술적 발견으로 주장하지 않는다.
+신규 표기 **재검토 보류(REASSESS_PENDING)**는 조건 변화 시 다시 판단할 연구 상태다. 과거 명칭 **ROS — Reassessment-Obligated Shelving**는 Git·데이터 호환성을 위한 역사적 별칭으로만 유지하며, Open Robotics의 Robot Operating System 등 외부 ROS와 무관하다. 신규 과학 이론이나 학술적 발견으로 주장하지 않는다.
 
 연구관리 효율을 위한 압축표기다.
 
@@ -171,9 +171,9 @@ ROS는 **Reassessment-Obligated Shelving**의 약칭이며 Project Intersection�
 - W3C APA Spec Review Deferred: https://www.w3.org/WAI/APA/wiki/Spec_Review
 - Fisher, A. C. & Krutilla, J. V. (1974), uncertainty and irreversibility. DOI: https://doi.org/10.1016/0095-0696(74)90007-2
 
-ROS라는 이름을 사용해도 이 선행개념들이 Project Intersection의 것으로 이전되지 않는다.
+이 상태명이나 과거 ROS 표기를 사용한다고 선행개념의 원기여가 Project Intersection으로 이전되지 않는다.
 
-## 4. ROS가 뜻하는 것
+## 4. 재검토 보류의 운영 의미
 
 현재의 지식·증거·기술·비용·위험·측정능력 아래에서는 해당 연구를 활성영역에서 내려놓을 수 있다.
 

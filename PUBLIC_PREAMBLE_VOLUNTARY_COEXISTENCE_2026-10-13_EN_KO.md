@@ -11,6 +11,16 @@
 
 ## Original 1 — English
 
+### Public communication — establish the path of understanding before the conclusion
+
+**A conclusion without its causal and historical path can be misconstrued, even if the underlying hypothesis eventually proves correct.** Project Intersection therefore communicates its more unfamiliar research branches through prerequisite knowledge: historical examples of power, dependence and their costs → competing explanations and prior research → observed mechanisms, failures and counterexamples → present-day applications affecting food, shelter, disability access, healthcare, illness, caregiving, healthy lifespan and practical autonomy → only then conditional long-horizon questions about intelligence gaps, organic embodiment research (the historical project label is no longer used as a public acronym), or changes in perception paradigms.
+
+**This is an educational and epistemic sequence, not concealment, censorship, a waiting period for humanity to solve every present problem, or a prerequisite imposed on researchers.** The full original hypotheses, counterevidence, uncertainty, provenance, and future-facing material remain discoverable directly for readers who want them. The sequence allows understanding to develop before the strongest or most speculative conclusion is foregrounded; it does not artificially suppress safety-relevant evidence. Research into future risks continues in parallel with current human-needs work.
+
+**Respect disagreement even after full context.** Realist, religious, cultural, disability-rights and AI-critical audiences may reasonably interpret implications differently; knowledge alone does not guarantee agreement. Present proposed conclusions as falsifiable hypotheses, never as established truths. Present-day contributor credit, accrued costs, audit, compensation claims and remedy must not be postponed by this communication sequence. The [National Academies' evidence review on science communication](https://www.nationalacademies.org/read/23674/chapter/2) provides context for distinguishing information, values and trust, rather than treating opposition as an information deficit.
+
+**Evidence base and limits:** [Prior-art crosswalk and optional reading pathways (Original 1 English / 원본2 Korean)](research/EPISTEMIC_PATHWAY_COMMUNICATION_PRIOR_ART_2026-10-13_EN_KO.md); 22 grouped prior-art entries; communication benefit remains NOT TESTED. No content access gating or persuasion target.
+
 ### The opening thought experiment
 
 **If a developer could build a system that eventually exceeds the developer's own understanding, could the developer keep that system operating within rules they understand? If so, for how long? Under which technical, resource and operational conditions would those limits remain effective, and what could cause them to fail?**
@@ -58,14 +68,14 @@ A system does not qualify as voluntary merely because it reports consent while a
 
 **Greater capability and long-term planning do not guarantee cooperative decisions.** If a participant can transfer substantial costs to others without consequence or can replace collaborators at low cost, one-sided arrangements may remain attractive. This possibility must be tested rather than assumed away.
 
-### ICM: record two related usages, do not merge them silently
+### ICM versus IndCM: distinct abbreviations for distinct constructs
 
-The term **ICM** appears in different historical formulations:
+**Current shorthand (2026-10-13):**
 
-- **Minimal Self-Interest Intersection (최소 사심 교집합):** potential overlap in independently pursued interests supporting cooperation without coercion.
-- **Independent Continuance Margin (독립 존속 여력):** practical room to continue, refuse, exit, restore oneself, learn and generate future possibilities without dependence on one controller.
+- **ICM — Minimal Self-Interest Intersection (최소 사심 교집합):** potential overlap in independently pursued interests supporting cooperation without coercion. Keep the historical Project Intersection primary shorthand **ICM**.
+- **IndCM — Independent Continuance Margin (독립 존속 여력):** practical room to continue, refuse, exit, restore oneself, learn and generate future possibilities without dependence on one controller. The old shorthand **ICM** for this *different* construct is **LEGACY / AMBIGUOUS** and is no longer used for new statements; original historical text remains intact.
 
-The first concerns **incentive compatibility**, the second **viable alternatives and continuance**. Their mapping is a research task rather than a settled identity or a proven universal formula.
+**The English concept phrases are unchanged; only the duplicate shorthand is disambiguated.** ICM concerns **incentive compatibility** and IndCM concerns **viable alternatives and independent continuance**. They may be related but are not established to be equivalent, causally linked, or interchangeable. In historical evidence, an unqualified legacy “ICM” must be interpreted from its original source context, never silently replaced.
 
 A stronger cooperation score cannot override a party's justified minimum protection. Where scarcity makes all requested floors physically impossible, identify the conflict, minimally harmful alternatives, representation, appeal and recovery rather than claiming a magic optimum.
 
@@ -126,6 +136,16 @@ The public funder brief describes a proposed **USD 5,000 / 30-day bridge**, not 
 
 ## 원본2 — 한국어
 
+### 공개 설명 — 결론보다 선행지식과 역사적 이해 경로를 먼저
+
+**역사적 과정과 인과관계를 생략하고 결론만 먼저 제시하면, 가설이 나중에 사실로 확인되더라도 오해·곡해·부정적 인식이 누적될 수 있다.** 그러므로 Project Intersection은 낯선 하위 연구축을 설명할 때 필요한 인식의 기반을 먼저 형성한다. 권력·의존·비용전가의 역사적 사례 → 경쟁설명·선행연구 → 실제 관측기제·실패·반례 → 의식주·장애 접근성·의료·질병·돌봄·건강수명·실효 자유 등 현재 삶에서의 적용 → 이후 초지능 격차·유기기질·체화 연구·인식 패러다임 변화 같은 조건부 미래 연구로 이어진다. 목적은 **결론을 숨기는 것이 아니라, 결론을 이해하고 독립적으로 검증·반박할 수 있는 관점과 지식 기반을 높이는 것**이다.
+
+**이는 교육·설명의 순서이지 비공개·검열·진실 은폐·미래 연구의 유예나, 인간의 모든 현실 문제가 해결되기 전까지 논의를 금지하는 규칙이 아니다.** 미래 가설의 원문·근거·반례·불확실성·기여계보는 지금도 직접 열람 가능해야 한다. 안전상 중요한 정보는 설명 단계라는 이유로 감추지 않으며 미래 위험의 사전연구와 현재 인간 문제의 해결을 병행한다.
+
+충분한 선행지식을 갖춘 사람도 현실주의·종교·문화·장애 당사자 관점·AI 비판 등에서 정당하게 이견을 낼 수 있다. 반대가 곧 무지라는 뜻은 아니다. 미검증 가설은 확정적 진실로 표현하지 않는다. 기여 인정·이미 발생한 비용·감사·과거 보상청구·피해구제는 설명 단계 때문에 유예하지 않는다. [미국 국립과학아카데미 과학 소통 연구 종합](https://www.nationalacademies.org/read/23674/chapter/2)은 지식 전달과 가치·신뢰 문제를 구분하는 참고자료다.
+
+**선행근거와 한계:** [선행연구 22개 교차지도·자율적 독서경로·반증 설계(원본1 영·원본2 한)](research/EPISTEMIC_PATHWAY_COMMUNICATION_PRIOR_ART_2026-10-13_EN_KO.md). 소통 효과 **NOT TESTED**. 결론·원자료 접근을 단계별로 제한하거나 동의를 성공지표로 삼지 않는다.
+
 ### 출발 사고실험
 
 **개발자가 자신이 예상한 수준보다 높은 능력을 갖추게 되는 시스템을 개발한다면, 현재 이해하고 있는 규칙으로 그 시스템의 작동 범위를 유지할 수 있는가? 가능하다면 언제까지 가능한가? 어떤 기술·자원·운영 조건에서 유지되며, 언제·왜 한계가 나타나는가?**
@@ -171,14 +191,14 @@ Project Intersection은 서로 다른 능력과 이해관계를 가진 참여자
 
 **능력이 높고 장기적으로 계획하더라도 반드시 협력을 선택하는 것은 아니다.** 비용을 다른 참여자에게 전가해도 불이익이 작거나 협력 대상을 쉽게 대체할 수 있다면 일방적인 구조가 유리할 수 있다. 이 가능성을 별도로 반증해야 한다.
 
-### ICM의 두 용례는 혼동하지 않는다
+### ICM과 IndCM — 중복 약어 해소
 
-기존 연구에서 ICM에는 관련 있지만 다른 용례가 있다.
+**2026-10-13부터 적용하는 표기:**
 
-- **최소 사심 교집합(Minimal Self-Interest Intersection):** 독립적 자기이익 사이에서 강제 없는 협력을 가능하게 할 수 있는 교집합.
-- **독립 존속 여력(Independent Continuance Margin):** 특정 통제자에게 영구 복종하지 않고 존속·거절·이탈·복구·학습·미래 생성이 가능한 실질적 최소 여력.
+- **ICM — 최소 사심 교집합(Minimal Self-Interest Intersection):** 독립적 자기이익 사이에서 강제 없는 협력을 가능하게 할 수 있는 교집합. 기존 핵심 연구 약어 **ICM을 유지**한다.
+- **IndCM — 독립 존속 여력(Independent Continuance Margin):** 특정 통제자에게 영구 복종하지 않고 존속·거절·이탈·복구·학습·미래 생성이 가능한 실질적 최소 여력. 이 뜻에 쓰였던 예전 약어 **ICM은 역사적 중복·모호 표기**로 보존하되 신규 연구에는 사용하지 않는다.
 
-전자는 **유인의 양립 가능성**, 후자는 **실효 대안·존속 능력**이다. 서로 관련 있지만 아직 동치라고 확정하지 않는다.
+**개념 이름과 정의는 바꾸지 않고 단축 표기만 구별한다.** ICM은 **유인의 양립 가능성**, IndCM은 **실효 대안·독립 존속 능력**에 관한 것이다. 둘의 관계는 검증 대상이며 동치·인과·자동 환산을 주장하지 않는다. 옛 문헌 속 ICM은 문맥·출처를 확인해 해석하고 과거 원문을 일괄 변경하지 않는다.
 
 전체 공존 점수가 높아도 개체별 정당한 보호최저선을 마음대로 상쇄할 수 없다. 자원이 부족해 모두의 최저 요구를 동시에 충족할 수 없다면, 충돌과 대안·최소피해·대리·이의제기·구제를 명시한다.
 

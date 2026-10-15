@@ -28,6 +28,7 @@ a{color:inherit}
 <header>
 <h1>Project Intersection Knowledge Explorer</h1>
 <p>문서 원문을 대체하지 않는 구조화 탐색층. 관계의 범위·증거등급·출처를 함께 표시합니다.</p>
+<p id="coverage-note">전수 색인이 아니며 누락된 항목이 없다는 뜻은 아닙니다. 원문과 현재 Git 기록이 우선입니다.</p>
 </header>
 <main>
 <div class="controls">
@@ -46,6 +47,8 @@ const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&
 async function load(){
   const r=await fetch("graph.json");
   state.data=await r.json();
+  const indexedAt=state.data.meta?.updated_at||"날짜 미확인";
+  document.getElementById("coverage-note").textContent=`그래프 기준일: ${indexedAt}. 전수 색인이 아닙니다. 검색에 없는 항목도 원문·현재 Git 정본에서 확인해야 합니다.`;
   const types=[...new Set(state.data.entities.map(x=>x.type))].sort();
   const statuses=[...new Set(state.data.entities.map(x=>x.status))].sort();
   for(const t of types) type.insertAdjacentHTML("beforeend",`<option>${esc(t)}</option>`);

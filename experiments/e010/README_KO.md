@@ -1,5 +1,7 @@
 # E010 — 장기 공존의 필요조건과 초지능 실행권의 비가역 노출
 
+**실험 ID 충돌 경고 (2026-10-13):** 이 `main`의 E010은 **2026-10-12 자체 실행한 사후/탐색적 합성 분석**이다. 더 이른 [안전검사 권력반전 E010 초안 PR #20](https://github.com/gmodrasa7-rgb/project-intersection-public/pull/20)은 **다른 연구**이며, 주장한 동적 축적을 정적 사례로 시험하려다 구성개념 불일치로 실행 전 차단된 미병합 설계다. [외부 검토 Issue #21](https://github.com/gmodrasa7-rgb/project-intersection-public/issues/21)도 해당 과거 초안만 가리킨다. 같은 E010 번호를 공유한다고 해서 결과·사전등록·선행연구·검증 상태를 합산하지 않는다. 과거 실패 설계는 PR 이력으로 보존하고, 그대로 이 경로에 병합하지 않는다.
+
 상태: **EXPLORATORY / SELF-RUN SYNTHETIC / POSTHOC DESIGN / NOT PRE-REGISTERED / NOT INDEPENDENT VALIDATION** (2026-10-12 KST)
 
 이 실험은 기존 [E009 실패](../e009/RESULT.md)와 [복잡도·관측노이즈 감사](../../E009_RANDOMNESS_COMPLEXITY_POSTHOC_AUDIT_2026-10-11_KO.md)를 **교체하지 않는다**. 동태게임이론·독립 감사·사회계약의 선행연구를 재사용한 작은 *분별용 모델*이다. 전체 Project Intersection의 새로운 증명이나 초지능 현장검증이 아니다.

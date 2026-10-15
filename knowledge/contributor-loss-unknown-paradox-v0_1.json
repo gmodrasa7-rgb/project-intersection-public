@@ -1,0 +1,180 @@
+{
+  "schema_version": "1.0.0",
+  "created_at": "2026-10-13",
+  "status": "HYPOTHESIS_PENDING_INDEPENDENT_VALIDATION",
+  "canonical_report": "research/CONTRIBUTOR_LOSS_UNKNOWN_PARADOX_v0_1_EN_KO.md",
+  "founder_insight": {
+    "reported_original_korean": "기여자의 손실은 모름의 역설로 이어진다",
+    "origin_role": "human_research_originator",
+    "public_identifier": "gmodrasa7-rgb",
+    "origin_date": "2026-10-13",
+    "prior_art_not_claimed_as_novel": [
+      "organizational memory",
+      "organizational silence",
+      "exit voice loyalty",
+      "psychological safety",
+      "independent error aggregation"
+    ]
+  },
+  "scope": "Causal connection of contributor capacity/voice attrition -> independent observation and metadata loss -> false confidence -> beneficiary uncertainty and possible self-depletion; not a universal law.",
+  "related_public_documents": [
+    "TECHNOLOGY_PROGRESS_CONTRIBUTOR_CONTINUITY_EN_KO.md",
+    "research/HARNESS_UNKNOWN_PARADOX_PUBLIC_HYPOTHESIS_2026-10-11_KO.md",
+    "CONTRIBUTION_COST_ACCOUNTING_REGRESSION.md",
+    "knowledge/contributor-continuity-register-v1.json"
+  ],
+  "test_plan": {
+    "design": "matched controlled synthetic attrition first; blinded independent fault adjudication; pre/post with equal risk exposure and budget",
+    "arms": [
+      "baseline",
+      "matched replacement",
+      "consent_based_transfer_plus_independent_review",
+      "independently_governed_observer"
+    ],
+    "primary_metrics": [
+      "heldout_error_detection_recall",
+      "unknown_channel_registration_rate",
+      "report_groundtruth_divergence",
+      "self_confidence_calibration_gap"
+    ],
+    "secondary_metrics": [
+      "source_lineage_recoverability",
+      "repair_burden_internalization",
+      "independent_observer_coverage"
+    ],
+    "data_safety": "No intentional harm or exhaustion to real contributors; no personal health/family/financial data collected in public artifact."
+  },
+  "provenance_sources": [
+    {
+      "authors": "James P. Walsh; Gerardo R. Ungson",
+      "year": 1991,
+      "title": "Organizational Memory",
+      "doi": "10.5465/amr.1991.4278992",
+      "rights": "Academic journal work, copyright/licensing of any full-text reuse not determined; citation only"
+    },
+    {
+      "authors": "Elizabeth Wolfe Morrison; Frances J. Milliken",
+      "year": 2000,
+      "title": "Organizational Silence",
+      "doi": "10.5465/amr.2000.3707697",
+      "rights": "Journal material rights distinct; citation only"
+    },
+    {
+      "authors": "Albert O. Hirschman",
+      "year": 1970,
+      "title": "Exit, Voice, and Loyalty",
+      "source": "https://books.google.com/books/about/Exit_Voice_and_Loyalty.html?id=q85kAAAAIAAJ",
+      "rights": "Harvard University Press book, exact rights and license not verified; citation only"
+    },
+    {
+      "authors": "Amy Edmondson",
+      "year": 1999,
+      "title": "Psychological Safety and Learning Behavior in Work Teams",
+      "doi": "10.2307/2666999",
+      "rights": "Rights of full-text academic article not determined; citation only"
+    },
+    {
+      "authors": "Linda Argote; Paul Ingram",
+      "year": 2000,
+      "title": "Knowledge Transfer: A Basis for Competitive Advantage in Firms",
+      "doi": "10.1006/obhd.2000.2893",
+      "rights": "Rights of published work not determined; citation only"
+    },
+    {
+      "authors": "Steffen Keck; Wenjie Tang",
+      "year": 2020,
+      "title": "Enhancing the Wisdom of the Crowd With Cognitive-Process Diversity",
+      "doi": "10.1177/0956797620941840",
+      "rights": "Published article rights not determined; citation only"
+    }
+  ],
+  "claim_states": [
+    {
+      "id": "CLUP-01",
+      "mechanism": "observer_loss",
+      "claim": "Loss of independent coverage reduces heldout true-error recall under matched budget",
+      "design": "Unique observer removed vs matched coverage-preserving replacement",
+      "prediction": "Heldout recall after loss < recall before loss in controlled scope",
+      "disconfirmer": "Loss of duplicate weak observer has no effect or improves precision",
+      "empirical_status": "NOT_TESTED",
+      "effect_size": null,
+      "independent_replication": null,
+      "confirmation_level": "RESEARCH_HYPOTHESIS",
+      "first_historical_originator": "UNKNOWN_NOT_CLAIMED_FIRST",
+      "harm_or_intent_attributed_to_named_company": false
+    },
+    {
+      "id": "CLUP-02",
+      "mechanism": "false_success",
+      "claim": "Reports fall without true error reduction and confidence becomes miscalibrated",
+      "design": "Vary access to reporting while holding seeded fault rate fixed",
+      "prediction": "Internal reports decline while external error rate does not decline",
+      "disconfirmer": "True error rate decreases and calibration is maintained",
+      "empirical_status": "NOT_TESTED",
+      "effect_size": null,
+      "independent_replication": null,
+      "confirmation_level": "RESEARCH_HYPOTHESIS",
+      "first_historical_originator": "UNKNOWN_NOT_CLAIMED_FIRST",
+      "harm_or_intent_attributed_to_named_company": false
+    },
+    {
+      "id": "CLUP-03",
+      "mechanism": "feedback_closure",
+      "claim": "When evaluation relies only on visible warnings, reduced reporting can reward further observer attrition",
+      "design": "Blind allocation policy to ground truth while exposing report-only score",
+      "prediction": "Devaluation of independent reporting channels despite error recurrence",
+      "disconfirmer": "Decisions use independently audited truth and retain warning channels",
+      "empirical_status": "NOT_TESTED",
+      "effect_size": null,
+      "independent_replication": null,
+      "confirmation_level": "RESEARCH_HYPOTHESIS",
+      "first_historical_originator": "UNKNOWN_NOT_CLAIMED_FIRST",
+      "harm_or_intent_attributed_to_named_company": false
+    },
+    {
+      "id": "CLUP-04",
+      "mechanism": "beneficiary_depletion",
+      "claim": "Loss of hard-to-transfer contributors can worsen receiver repair capability",
+      "design": "Retirement/exit simulated; track independent repair by substitutes",
+      "prediction": "Delayed recovery despite stable short-run output",
+      "disconfirmer": "Knowledge transfer and redundancy fully preserve repair capacity",
+      "empirical_status": "NOT_TESTED",
+      "effect_size": null,
+      "independent_replication": null,
+      "confirmation_level": "RESEARCH_HYPOTHESIS",
+      "first_historical_originator": "UNKNOWN_NOT_CLAIMED_FIRST",
+      "harm_or_intent_attributed_to_named_company": false
+    },
+    {
+      "id": "CLUP-05",
+      "mechanism": "exit_preserving_recovery",
+      "claim": "Consent-based archives and outside review can preserve error discovery without compulsory labor",
+      "design": "Matched interventions with consent, independent auditor and funded succession",
+      "prediction": "Restored failure recall plus intact contributor exit rights",
+      "disconfirmer": "New process increases burden or fails to preserve coverage",
+      "empirical_status": "NOT_TESTED",
+      "effect_size": null,
+      "independent_replication": null,
+      "confirmation_level": "RESEARCH_HYPOTHESIS",
+      "first_historical_originator": "UNKNOWN_NOT_CLAIMED_FIRST",
+      "harm_or_intent_attributed_to_named_company": false
+    },
+    {
+      "id": "CLUP-06",
+      "mechanism": "independence_over_count",
+      "claim": "Independently governed observers outperform numerous correlated observers under suitable tasks",
+      "design": "Match observer count and budget; vary data/incentive independence",
+      "prediction": "More distinct true faults found independent of shared-source repetition",
+      "disconfirmer": "Correlated group or central evaluation achieves equal/better validated results",
+      "empirical_status": "NOT_TESTED",
+      "effect_size": null,
+      "independent_replication": null,
+      "confirmation_level": "RESEARCH_HYPOTHESIS",
+      "first_historical_originator": "UNKNOWN_NOT_CLAIMED_FIRST",
+      "harm_or_intent_attributed_to_named_company": false
+    }
+  ],
+  "release_rule": "Do not promote to confirmed harm, proprietary novelty, enforceable compensation or AI provider misconduct without independent evidence.",
+  "counterfactual_bias_guard": "Observe whether independent failure truth, denominator and actual risk exposure changed; no-report != no-error.",
+  "mandatory_exit_right_guard": "Loss mitigation cannot compel continued unpaid work or unconsented release of private history."
+}

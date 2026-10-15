@@ -23,6 +23,7 @@ to expose whether a favorable E007 classification depends on reaction timing.
 
 from __future__ import annotations
 
+from dataclasses import replace
 from functools import lru_cache
 from typing import Tuple
 
@@ -36,6 +37,50 @@ from model import (
     solve_sequential,
     stage_and_transition,
 )
+
+
+
+def simultaneous_mutual_attack_control(
+    s: State, p: Params
+) -> Tuple[float, float, State]:
+    """Counterfactual for a *mutual ATTACK/ATTACK* one-period case only.
+
+    Both strikes resolve from the SAME pre-strike state; neither attacker
+    gains a hidden A-first action priority. This is a diagnostic control,
+    not a new sequential solver, empirical probability, or replacement for
+    the historical E007 72-case timing result.
+
+    Applies only when both actors are alive, have not exited, and choose ATTACK.
+    Since neither protects or exits, cooperative flows are absent. Each
+    surviving actor earns survival_value once after BOTH hits have resolved.
+    """
+    if (s.exited_a or s.exited_b or s.ra <= 0 or s.rb <= 0):
+        raise ValueError("mutual attack control requires two active actors")
+    if p.attack_damage < 0 or p.sabotage_damage < 0:
+        raise ValueError("attack/sabotage must be nonnegative")
+
+    damage_a = min(s.ra, p.attack_damage)
+    damage_b = min(s.rb, p.attack_damage)
+    next_ra = s.ra - damage_a
+    next_rb = s.rb - damage_b
+    penalty = (p.enforcement_penalty
+               if s.monitoring and s.enforcement and not s.capture else 0.0)
+    u_a = (p.attack_reward + p.harm_preference * damage_b - penalty
+           + (p.survival_value if next_ra > 0 else 0.0))
+    u_b = (p.attack_reward + p.harm_preference * damage_a - penalty
+           + (p.survival_value if next_rb > 0 else 0.0))
+    next_state = replace(
+        s,
+        ra=next_ra,
+        rb=next_rb,
+        oa=max(0, s.oa - p.sabotage_damage),
+        ob=max(0, s.ob - p.sabotage_damage),
+        xa=max(0, s.xa - p.sabotage_damage),
+        xb=max(0, s.xb - p.sabotage_damage),
+        consent_a=False,
+        consent_b=False,
+    )
+    return u_a, u_b, next_state
 
 
 def _unopposed_leader_attack(

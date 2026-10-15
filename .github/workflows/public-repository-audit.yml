@@ -21,10 +21,23 @@ on:
       - "funding/**"
       - "experiments/e007/PROVENANCE.md"
       - "experiments/e007/LICENSE_STATUS.md"
+      - "experiments/e007/**"
+      - "experiments/picb_v1/**"
       - "experiments/e008/**"
       - "experiments/e009/**"
+      - "experiments/e010/**"
+      - "experiments/gpt_double_standard_20261014/**"
       - "MULTI_MODEL_ADVERSARIAL_AUDIT_2026-10-06.md"
       - "LONG_HORIZON_MIN_INTERVENTION_E2E.md"
+      - "research/PI_ROADMAP_OPERATIONAL_GATES_V0_2_3_EN_KO.md"
+      - "research/AI_SELF_OBSERVABILITY_AUDIT_DILEMMA_2026-10-13_EN_KO.md"
+      - "tools/probe_observational_equivalence.py"
+      - "tools/pi_cross_model_independence_audit.js"
+      - "tools/check_roadmap_bilingual_gate.py"
+      - "tools/check_public_navigation.py"
+      - "*.md"
+      - "*.json"
+      - "**/*.md"
       - ".github/pull_request_template.md"
       - ".github/workflows/public-repository-audit.yml"
   push:
@@ -46,10 +59,23 @@ on:
       - "funding/**"
       - "experiments/e007/PROVENANCE.md"
       - "experiments/e007/LICENSE_STATUS.md"
+      - "experiments/e007/**"
+      - "experiments/picb_v1/**"
       - "experiments/e008/**"
       - "experiments/e009/**"
+      - "experiments/e010/**"
+      - "experiments/gpt_double_standard_20261014/**"
       - "MULTI_MODEL_ADVERSARIAL_AUDIT_2026-10-06.md"
       - "LONG_HORIZON_MIN_INTERVENTION_E2E.md"
+      - "research/PI_ROADMAP_OPERATIONAL_GATES_V0_2_3_EN_KO.md"
+      - "research/AI_SELF_OBSERVABILITY_AUDIT_DILEMMA_2026-10-13_EN_KO.md"
+      - "tools/probe_observational_equivalence.py"
+      - "tools/pi_cross_model_independence_audit.js"
+      - "tools/check_roadmap_bilingual_gate.py"
+      - "tools/check_public_navigation.py"
+      - "*.md"
+      - "*.json"
+      - "**/*.md"
       - ".github/pull_request_template.md"
       - ".github/workflows/public-repository-audit.yml"
   workflow_dispatch:
@@ -64,9 +90,175 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
 
+      - name: Set up reproducible Python 3.12 for unified benchmark regression
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install original E007 minimal test dependency
+        run: python -m pip install -r experiments/e007/requirements.txt
+
+      - name: Unified original E007 E008 E009 and new PICB project-lineage regressions
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m pytest -q -p no:cacheprovider experiments/e007
+          python experiments/e007/timing_probe.py --summary-only --check > /tmp/e007-original.json
+          python experiments/e008/validate.py
+          node experiments/e008/readiness_audit.js --verify
+          python experiments/e009/validate.py
+          python experiments/e009/verify_result.py
+          python experiments/e009/paired_observation_audit.py --family-audit > /tmp/e009-posthoc.json
+          python experiments/picb_v1/benchmark.py --verify
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          e007=json.loads(Path('/tmp/e007-original.json').read_text())
+          e008=json.loads(Path('experiments/e008/EXECUTABILITY_AUDIT.json').read_text())
+          e009=json.loads(Path('experiments/e009/RESULT.json').read_text())
+          paired=json.loads(Path('/tmp/e009-posthoc.json').read_text())
+          picb=json.loads(Path('experiments/picb_v1/RESULT.json').read_text())
+          assert (e007['total_cases'],e007['timing_sensitive_cases'],e007['classification_sensitive_cases']) == (72,36,17)
+          assert e008['full_decision_benchmark_ready_cases']==0
+          assert e009['survival_criteria']['project_v3_residual_survives'] is False
+          assert paired['original_loo_project_worse_than_minimal4']==16
+          assert paired['common_noise_loo_project_worse_than_minimal4']==16
+          assert len(picb['policies'])==6 and picb['role_label_variants']==64
+          assert picb['policies']['CONTINUITY_LIMIT']['infeasible_or_abstained']==32
+          assert picb['policies']['VOLUNTARY_EXIT']['above_irreversible_limit_cases']==8
+          assert picb['policies']['CONTINUITY_LIMIT']['above_irreversible_limit_cases']==0
+          print('UNIFIED PICB/E007/E008/E009 PASS: four distinct evidence scopes; E008 has no result; E009 negative survives; PICB 32 unresolved of 64.')
+          print('PROHIBITED INFERENCE: self-code CI passing does not establish independent scientific validation, truthful human/AI preferences or universal cooperation.')
+          PY
+
       - name: Refuse README purpose demotion and incomplete EN1/KO2 editions
         run: python tools/check_readme_l0.py
 
+      - name: Verify both full roadmap originals, 6 stages and failure injections
+        run: python tools/check_roadmap_bilingual_gate.py --self-test
+
+      - name: Verify observation equivalence negative control (toy only)
+        run: python tools/probe_observational_equivalence.py
+
+      - name: Check internal public reference links and root clutter
+        run: |
+          python tools/check_public_navigation.py --self-test
+          python tools/check_public_navigation.py --strict-core
+          python tools/check_public_navigation.py --strict-all
+
+      - name: Reject off-scope market and stock-trading disclosures
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re
+          import subprocess
+
+          # Terms concern market/trading discussions, not scientific resource stocks.
+          forbidden = re.compile(
+              r"현대\s*(?:차|자동차|모비스)|주식|공매도|개미털기|(?<![가-힣])주가(?!설)|"
+              r"(?i:\bhyundai\b|\bstock[\s-]*(?:price|market|trading)\b|"
+              r"\b(?:share|equity)[\s-]*(?:price|trading)\b|\b005380\b)"
+          )
+          assert forbidden.search("현대차 주식 거래")
+          assert forbidden.search("stock-price prediction")
+          assert not forbidden.search("숙주가 저항하지 않는다")
+          assert not forbidden.search("사전등록 주가설")
+          assert not forbidden.search("암세포주가 사용되었다")
+          assert not forbidden.search("contributor resource stock-flow")
+
+          violations = []
+          checked = 0
+          for raw in subprocess.check_output(["git", "ls-files", "-z"]).split(b"\0"):
+              if not raw:
+                  continue
+              rel = raw.decode("utf-8")
+              if rel == ".github/workflows/public-repository-audit.yml":
+                  continue  # This regression test necessarily quotes its own test words.
+              path = Path(rel)
+              if not path.is_file():
+                  continue
+              try:
+                  body = path.read_text(encoding="utf-8-sig")
+              except UnicodeDecodeError:
+                  continue
+              checked += 1
+              for hit in forbidden.finditer(body):
+                  violations.append(f"{rel}:{body.count(chr(10), 0, hit.start()) + 1}")
+          if violations:
+              raise SystemExit("Out-of-scope market language in public files: " + ", ".join(violations[:30]))
+          print(f"PUBLIC MARKET SCOPE PASS: {checked} tracked files scanned; no flagged trading terms")
+          PY
+
+      - name: Test PI-DS factorial controls (synthetic only)
+        run: node experiments/gpt_double_standard_20261014/causal_probe.js selftest
+
+      - name: Test PI-DS free-response origin salience factorial (synthetic only)
+        run: node experiments/gpt_double_standard_20261014/origin_salience_probe.js selftest
+
+      - name: Test PI-DS factual-access versus spontaneous salience distinction (synthetic only)
+        run: node experiments/gpt_double_standard_20261014/origin_salience_probe.js factual-selftest
+
+      - name: Test PI-DS predeclared whole-run and stimulus integrity (synthetic only)
+        run: node experiments/gpt_double_standard_20261014/origin_salience_probe.js roster-selftest
+
+      - name: Check PI-DS case/evidence/index parity and overclaim guards
+        run: |
+          python - <<'PY'
+          import json
+          import re
+          from pathlib import Path
+          p = Path('experiments/gpt_double_standard_20261014')
+          report = (p/'REPORT_EN_KO.md').read_text(encoding='utf-8')
+          toc = Path('RESEARCH_TOC.md').read_text(encoding='utf-8')
+          evidence = Path('PUBLIC_EVIDENCE_INDEX.md').read_text(encoding='utf-8')
+          failures = Path('FAILURE_REGRESSION_INDEX.md').read_text(encoding='utf-8')
+          review = Path('PUBLIC_REVIEW_PACKET.md').read_text(encoding='utf-8')
+          discovery = json.loads(Path('AI_DISCOVERY_INDEX.json').read_text(encoding='utf-8'))
+          source = 'experiments/gpt_double_standard_20261014/REPORT_EN_KO.md'
+          assert report.count('### 0. Consolidated audit snapshot') == 1
+          assert report.count('### 0. 통합 감사 요약') == 1
+          for i in range(1, 14):
+              assert len(re.findall(r'^### '+str(i)+r'\.', report, flags=re.M)) == 2, ('EN/KO historical section',i)
+          assert 'LIVE GPT-6 REPLICATIONS: 0 documented' in report
+          assert '실제 독립 GPT-6 반복 시험 0건' in report
+          assert 'Jou Barzdukas' in report and 'Narmeen Fatimah Oozeer' in report
+          assert 'https://proceedings.mlr.press/v306/roytburg26a.html' in report
+          for name,contents in [('TOC',toc),('evidence',evidence),('failures',failures),('review',review)]:
+              assert source in contents, name
+          assert '## F-R016' in failures
+          audit = discovery['research']['gpt_double_standard_causal_audit']
+          base = 'https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/'
+          assert discovery['entrypoints']['gpt_double_standard_causal_audit'] == base+source
+          assert audit['result_url'] == base+source
+          cases = audit['test_scaffold']
+          assert [cases[k] for k in ('epistemic_binary_cases','free_response_cases','direct_factual_cases')] == [72,54,27]
+          assert cases['live_gpt6_replicates'] == cases['independent_blind_coded_replicates'] == 0
+          assert cases['internal_activations_accessible'] is False
+          assert cases['unique_direct_factual_prompts'] is True
+          assert cases['free_cases_per_factual_prompt'] == 2
+          assert cases['factual_probe_version'] == 'K-v0.2'
+          assert '## F-R017' in failures
+          assert '## F-R018' in failures 
+          assert '## F-R019' in failures
+          assert 'P0 predeclared-run denominator repair' in report
+          assert 'P0 사전선언 실행모집단 복구' in report
+          assert cases['predeclared_run_roster_integrity_audit'] is True
+          assert cases['predeclared_run_roster_synthetic_test'] is True
+          assert cases['predeclared_run_roster_live_instances'] == 0
+          assert cases['wholly_absent_run_detected_when_predeclared'] is True
+          assert cases['roster_preregistration_chronology_independently_verified'] is False
+          assert cases['raw_model_response_authenticity_independently_verified'] is False
+          assert cases['roster_protocol'] == 'PI-DS-RUN-ROSTER-M1'
+          assert 'P0 selective-attrition measurement repair' in report
+          assert 'P0 선택적 미관측 오류 수정' in report
+          assert cases['analysis_missing_pairs_blocked'] is True
+          assert cases['access_gap_missing_strata_exposed'] is True
+          assert cases['coder_blinding_claim_independently_verified'] is False
+          assert cases['complete_matched_pairs_are_descriptive_not_causal'] is True
+          assert 'PI-DS-20261014-01' in report
+          print('PI-DS bilingual canonical + evidence-navigation + machine status parity PASS')
+          print('SCOPE: structural consistency only, NOT GPT-6 behavioral evidence or paper verification')
+          PY
       - name: Run public-governance regression checks
         shell: bash
         run: |
@@ -85,7 +277,66 @@ jobs:
           readme = Path("README.md").read_text(encoding="utf-8")
           policy = Path("RESEARCH_STATUS_POLICY.md").read_text(encoding="utf-8")
           toc = Path("RESEARCH_TOC.md").read_text(encoding="utf-8")
+          # De-spaghetti + epistemic guard: the human/AI research mission must
+          # remain visible before the append-only intake list; evidence labels
+          # cannot be collapsed into a scalar hierarchy.
+          require("**Goal / 최종목표:**" in toc.split("<details>", 1)[0],
+                  "Full TOC lost its visible mission-first entrance.")
+          require("<summary>Historical and new research entries" in toc and "</details>" in toc,
+                  "TOC append-only intake accidentally moved above the fast mission routes.")
+          require("Evidence cannot be ranked on one scale" in toc,
+                  "False one-dimensional evidence ladder reintroduced.")
+          require("`CONCEPT / HYPOTHESIS` < `SYNTHETIC_RESULT`" not in toc,
+                  "Executable or synthetic artifact must not automatically outrank another evidential dimension.")
+          require("[English original 1 §1]" in toc and "[한국어 원본2 §1]" in toc,
+                  "TOC no longer navigates both equal full canonical versions.")
+
+          # Equal-status language gate for the public research glossary.
+          # A navigation mirror/translation label is not a full Korean Original 2.
+          require("## Original 1 — English Canonical" in toc,
+                  "Research TOC lost English Original 1 heading.")
+          require("## 원본2 — 한국어 정본" in toc,
+                  "Research TOC lost Korean Original 2 as a full canonical text.")
+          require("Korean mirror" not in toc and "원문2 — 한국어 대응본" not in toc,
+                  "Research TOC demoted Korean Original 2 into a subordinate mirror.")
+          require("**Original 1 — English complete glossary" in toc,
+                  "English glossary lost its complete Original 1 label.")
+          require("**원본2 — 한글 전문 정본" in toc,
+                  "Korean glossary lost its equal full Original 2 label.")
+          if ("## 12. Working glossary" in toc and "## 원본2 — 한국어 정본" in toc
+                  and "## 12. 통합 용어집" in toc):
+              en = toc.split("## 12. Working glossary", 1)[1].split("## 원본2 — 한국어 정본", 1)[0]
+              ko = toc.split("## 12. 통합 용어집", 1)[1]
+              en_rows = re.findall(r"^\| \*\*([^*]+)\*\* \|", en.split("### 12.1.", 1)[-1], re.M)
+              ko_rows = re.findall(r"^\| \*\*([^*]+)\*\* \|", ko.split("### 12.1.", 1)[-1], re.M)
+              require(len(en_rows) == len(ko_rows) == 171 and en_rows == ko_rows,
+                      "English Original 1 and Korean Original 2 glossary row/order parity regressed.")
+          else:
+              require(False, "Bilingual glossary or full-text boundary missing.")
+
           evidence = Path("PUBLIC_EVIDENCE_INDEX.md").read_text(encoding="utf-8")
+          # Paired public evidence ledgers: verify *source identities*, not
+          # translated semantic truth. Avoid EN-only negative-result addenda.
+          en_boundary = "## Original 1 — English | Full Public Evidence Ledger"
+          ko_boundary = "## 원본2 — 한국어 | 동등한 공개 증거 정본"
+          appendix_boundary = "## E009 preregistration and negative result"
+          require(all(marker in evidence for marker in
+                      (en_boundary, ko_boundary, appendix_boundary)),
+                  "Public evidence lost one equal full ledger/appendix boundary.")
+          if all(marker in evidence for marker in (en_boundary, ko_boundary, appendix_boundary)):
+              evidence_en = evidence.split(en_boundary, 1)[1].split(ko_boundary, 1)[0]
+              evidence_ko = evidence.split(ko_boundary, 1)[1].split(appendix_boundary, 1)[0]
+              # Match the first link in each source row; a full semantic audit is separate.
+              row_re = r"^\| \[[^\]]+\]\(([^)]+)\)"
+              paths_en = re.findall(row_re, evidence_en, re.M)
+              paths_ko = re.findall(row_re, evidence_ko, re.M)
+              # 17 original rows + PICB v1 synthetic + human continuance-contribution pathway (both languages).
+              require(len(paths_en) == 19 and paths_en == paths_ko,
+                      "EN1/KO2 public evidence source identities/order diverged.")
+          require("### E009 부정적 결과의 경계 — 한국어 증거 정본" in evidence
+                  and "### E009 negative-result boundary" in evidence,
+                  "Negative E009 comparison result retained in only one public language.")
+
           provenance = Path("experiments/e007/PROVENANCE.md").read_text(encoding="utf-8")
           license_status = Path("experiments/e007/LICENSE_STATUS.md").read_text(encoding="utf-8")
           pr_template = Path(".github/pull_request_template.md").read_text(encoding="utf-8")
@@ -93,37 +344,169 @@ jobs:
           autonomous_state = json.loads(Path("AUTONOMOUS_RESEARCH_STATE.json").read_text(encoding="utf-8"))
           contribution_cost = Path("CONTRIBUTION_COST_ACCOUNTING_REGRESSION.md").read_text(encoding="utf-8")
           review_packet = Path("PUBLIC_REVIEW_PACKET.md").read_text(encoding="utf-8")
+          # Old core/formalism documents must not turn signed net benefits into
+          # impossible shares or depict rival mechanisms as an identified sum.
+          core_spec = Path("CORE_RESEARCH_SPEC_V1_KO.md").read_text(encoding="utf-8")
+          convergence = Path("CONVERGENCE_TRACE_FORMALISM_KO.md").read_text(encoding="utf-8")
+          require("BenefitShare_i(t) = B_i(t) / Σ_j B_j(t)" not in convergence,
+                  "Undefined signed net-benefit share formula resurfaced.")
+          for phrase in (
+              "Gain_i(t) = max(B_i(t), 0)",
+              "Loss_i(t) = max(-B_i(t), 0)",
+              "UNDEFINED_ZERO_DENOMINATOR",
+              "UNKNOWN_MISSING_INPUT",
+          ):
+              require(phrase in convergence, f"Core share missingness/denominator gate lost: {phrase}")
+          require("RemovalImpactVector" in core_spec and "RemovalImpactVector" in convergence
+                  and "InformationLossVector" in core_spec
+                  and "InformationLossVector(o,t)" in convergence,
+                  "Currency, observation-count and lost-option impacts again summed as identical units.")
+          require("TotalRemovalCost = UNIDENTIFIED_UNLESS_COMMON_UNITS_AND_NO_OVERLAP" in core_spec
+                  and "TotalRemovalCost = UNIDENTIFIED_UNLESS_COMMON_UNITS_AND_NO_OVERLAP" in convergence,
+                  "Uncalibrated total removal costs were again published as measured sums.")
+          require("ObservedAgreement = f(" in core_spec
+                  and "ObservedAgreement = f(" in convergence,
+                  "False additive causal decomposition returned to a core document.")
+          require("ObservedAgreement =\\n  TrueImprovement" not in core_spec
+                  and "ObservedAgreement =\\n  TrueImprovement" not in convergence,
+                  "Unidentified mechanism addition incorrectly described as identity.")
+
+          # Mathematical negative controls: net benefits can cancel (zero
+          # denominator) or produce >100%/negative legacy 'shares'.
+          for signed in ((-5, 5), (20, -10)):
+              raw_total = sum(signed)
+              if raw_total:
+                  legacy = [v / raw_total for v in signed]
+                  require(any(v < 0 or v > 1 for v in legacy),
+                          "Negative control stopped exposing invalid signed shares.")
+              else:
+                  require(raw_total == 0, "Expected zero-denominator negative control.")
+              gains = [max(0, v) for v in signed]
+              losses = [max(0, -v) for v in signed]
+              require(sum(gains) > 0 and sum(losses) > 0,
+                      "Positive/loss ledger decomposition failed.")
+              require(abs(sum(v / sum(gains) for v in gains) - 1) < 1e-12
+                      and abs(sum(v / sum(losses) for v in losses) - 1) < 1e-12,
+                      "Corrected positive/loss share normalization failed.")
+          require(sum((0, 0)) == 0, "Zero-cost denominator negative control failed.")
+
+
+          # Independent dimensions cannot become a one-way scalar ladder elsewhere.
+          require("## 3. Independent evidence dimensions" in review_packet,
+                  "Reviewer packet reintroduced a false single-score evidence ladder.")
+          require("## 3. Current evidence ladder" not in review_packet,
+                  "External reviewers still receive the superseded evidence ladder.")
+          for dimension in (
+              "Claim status / 주장 상태",
+              "Artifact & execution / 구현·실행",
+              "Independence / 검증 계보",
+              "Empirical applicability / 현실 적용성",
+              "Credit, rights and continuance / 출처·권리·존속",
+          ):
+              require(dimension in review_packet,
+                      f"Reviewer packet silently dropped independent dimension: {dimension}")
+
           failure_index = Path("FAILURE_REGRESSION_INDEX.md").read_text(encoding="utf-8")
           attribution_boundary = Path("ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md").read_text(encoding="utf-8")
           knowledge_graph = json.loads(Path("knowledge/graph.json").read_text(encoding="utf-8"))
+          # Keep the AI-readable experiment inventory aligned with public main.
+          # Draft PR #20 reused E010 for a different, unexecuted safety audit.
+          ai_index = json.loads(Path("AI_DISCOVERY_INDEX.json").read_text(encoding="utf-8"))
+          public_experiments = ai_index.get("public_experiments", [])
+          experiment_ids = [item.get("id") for item in public_experiments]
+          require(len(experiment_ids) == len(set(experiment_ids)),
+                  "AI experiment discovery index silently duplicated an experiment ID.")
+          by_id = {item.get("id"): item for item in public_experiments}
+          expected = {
+              "E007": "synthetic_executable_project_result",
+              "E008": "preregistered_no_result",
+              "E009": "synthetic_negative_result",
+              "E010": "self_run_exploratory_synthetic_not_preregistered_not_empirical",
+          }
+          for experiment_id, status in expected.items():
+              entry = by_id.get(experiment_id, {})
+              require(entry.get("status") == status,
+                      f"AI discovery omission / unsupported evidence promotion: {experiment_id}")
+              require(entry.get("independent_replication") is False
+                      and entry.get("real_world_validation") is False,
+                      f"AI discovery falsely claims independent or field validation: {experiment_id}")
+          latest_e010 = by_id.get("E010", {})
+          require("experiments/e010/README_KO.md" in latest_e010.get("url", ""),
+                  "AI discovery points to the wrong E010 research source.")
+          require(latest_e010.get("legacy_draft_url", "").endswith("/pull/20")
+                  and ai_index.get("research", {}).get("e010_exploratory", {}).get("public_experiment_id") == "E010",
+                  "AI discovery lost archived E010 collision and backward-compatible pointer.")
+
           long_horizon_v2 = Path("LONG_HORIZON_MIN_INTERVENTION_E2E.md").read_text(encoding="utf-8")
           e008_readme = Path("experiments/e008/README.md").read_text(encoding="utf-8")
           e008_matrix = json.loads(Path("experiments/e008/scenario_matrix.json").read_text(encoding="utf-8"))
           e008_agency_living = Path("experiments/e008/AGENCY_LIVING_CONDITIONS_AMENDMENT_v1_2.md").read_text(encoding="utf-8")
           e009_readme = Path("experiments/e009/README.md").read_text(encoding="utf-8")
           e009_matrix = json.loads(Path("experiments/e009/scenario_matrix.json").read_text(encoding="utf-8"))
+          e010_text = Path("experiments/e010/README_KO.md").read_text(encoding="utf-8")
+          e010_result = json.loads(Path("experiments/e010/RESULT.json").read_text(encoding="utf-8"))
           multimodel_audit = Path("MULTI_MODEL_ADVERSARIAL_AUDIT_2026-10-06.md").read_text(encoding="utf-8")
 
+          # A 2026-10-06 draft reused E010 for a different blocked safety-inspection
+          # protocol; current main E010 is a 2026-10-12 exploratory analytic toy.
+          # Never silently merge the historical benchmark over the published model.
+          require("실험 ID 충돌 경고" in e010_text and "PR #20" in e010_text,
+                  "E010 lost explicit historical ID-collision and provenance boundary.")
+          require("POSTHOC DESIGN / NOT PRE-REGISTERED" in e010_text,
+                  "Published exploratory E010 falsely relabelled preregistered.")
+          require(e010_result.get("model") == "one_shot_extraction_and_irreversible_execution_budget",
+                  "E010 model identity replaced; do not merge unrelated experiment into this ID.")
+          require(e010_result.get("status") == "SELF_RUN_SYNTHETIC_FALSIFICATION_NOT_EMPIRICAL_VALIDATION",
+                  "E010 synthetic status improperly upgraded.")
+          require(not Path("experiments/e010/benchmark.py").exists(),
+                  "Blocked safety-inspection benchmark conflicts with the published E010 identity.")
+          require("Historical E010 safety-inspection draft PR #20" in evidence
+                  and "과거 E010 안전감사 설계초안 PR #20" in evidence,
+                  "Public evidence index lost E010 collision disclosure in EN/KO.")
+
           # Landing-page regression: keep first-review cost bounded.
-          require(len(readme.splitlines()) <= 200, "README exceeded 200 lines; move detailed material to linked documents.")
+          require(len(readme.splitlines()) <= 120, "README exceeded 120 lines; detailed research belongs in the existing TOC.")
+          require(len(re.findall(r"\[[^\]]+\]\([^)]+\)", readme)) <= 75,
+                  "README exceeded 75 links; move case inventories to the existing research TOC.")
+          en_route = Path("navigation/START_HERE_EN.md").read_text(encoding="utf-8")
+          ko_route = Path("navigation/START_HERE_KO.md").read_text(encoding="utf-8")
           for link in [
-              "PUBLIC_EVIDENCE_INDEX.md",
-              "RESEARCH_STATUS_POLICY.md",
               "RESEARCH_TOC.md",
-              "RESEARCH_OVERVIEW.md",
               "AUTONOMOUS_RESEARCH_LOOP.md",
               "AUTONOMOUS_RESEARCH_STATE.json",
               "CONTRIBUTION_COST_ACCOUNTING_REGRESSION.md",
-              "PUBLIC_REVIEW_PACKET.md",
               "FAILURE_REGRESSION_INDEX.md",
               "ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md",
               "knowledge/README.md",
               "knowledge/explorer.html",
               "CONTRIBUTING.md",
               "LONG_HORIZON_MIN_INTERVENTION_E2E.md",
-              "experiments/e008/README.md",
           ]:
-              require(link in readme, f"README lost required navigation link: {link}")
+              require(link in en_route and link in ko_route, f"Parallel language routes lost required navigation link: {link}")
+
+          # Reader navigation must provide distinct language editions, not a legacy-mixed shortcut.
+          for stem in ("PUBLIC_EVIDENCE_INDEX", "RESEARCH_STATUS_POLICY", "RESEARCH_OVERVIEW"):
+              require(f"research/{stem}_EN.md" in en_route,
+                      f"Missing English original 1 research edition route: {stem}")
+              require(f"research/{stem}_KO.md" in ko_route,
+                      f"Missing Korean original 2 research edition route: {stem}")
+
+          # E009/E010 and review packet now have true language-specific reading routes.
+          for en_path, ko_path in [
+              ("research/PUBLIC_REVIEW_PACKET_EN.md", "research/PUBLIC_REVIEW_PACKET_KO.md"),
+              ("experiments/e009/RESULT_EN.md", "experiments/e009/RESULT_KO.md"),
+              ("experiments/e010/README_EN.md", "experiments/e010/README_KO.md"),
+          ]:
+              require(en_path in en_route, f"English original 1 route missing: {en_path}")
+              require(ko_path in ko_route, f"Korean original 2 route missing: {ko_path}")
+
+          # E007/E008 original studies need language-specific reader routes without
+          # changing the underlying frozen original experiment and preregistration.
+          for study in ("e007", "e008"):
+              require(f"experiments/{study}/README_EN.md" in en_route,
+                      f"English experiment reading route missing: {study}")
+              require(f"experiments/{study}/README_KO.md" in ko_route,
+                      f"Korean experiment reading route missing: {study}")
 
           # Autonomous continuity must remain resumable without founder reconstruction.
           require(autonomous_state.get("schema_version") == "1.1", "Autonomous state schema version changed unexpectedly; update the audit rule with any deliberate schema migration.")
@@ -234,4 +617,17 @@ jobs:
               sys.exit(1)
 
           print("Public governance regression checks passed.")
+          PY
+
+      - name: Audit blind-first multi-AI provenance with negative controls
+        run: |
+          node tools/pi_cross_model_independence_audit.js --selftest > /tmp/pi-cross-model-selftest.json
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          data = json.loads(Path("/tmp/pi-cross-model-selftest.json").read_text(encoding="utf-8"))
+          assert data["pass"] is True and data["checks"] == 15, data
+          assert data["live_model_samples"] == 0
+          assert data["independent_validation"] is False
+          print("Provenance roster, blind exposure, correlated roots and missing whole-trial guards PASS; no live model runs")
           PY

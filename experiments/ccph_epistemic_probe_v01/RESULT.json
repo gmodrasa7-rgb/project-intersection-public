@@ -1,0 +1,45 @@
+{
+  "schema": "pi-ccph-epistemic-toy-receipt/v0.1",
+  "date": "2026-10-15",
+  "provenance": {
+    "human_origin": "Project Intersection founder: ignored correct warning, independent hypothesis/theory/logic contributions and 2–100-person causal pathway observation",
+    "code": "AI-assisted new project-authored Python; neither a human experiment nor an independent replication",
+    "source_path": "experiments/ccph_epistemic_probe_v01/probe.py",
+    "source_blob_sha": "14874058a345cfa740d501cf9f257b1dca7a72e3",
+    "verification_workflow": "CCPH epistemic observability (synthetic)",
+    "workflow_run_id": 38657505479,
+    "workflow_result": "success"
+  },
+  "evidence_status": "PROJECT_SELF_RUN_POST_HOC_DETERMINISTIC_SYNTHETIC_DIAGNOSTIC",
+  "output": {
+    "synthetic_warning_worlds": 24,
+    "illustrative_events": 11,
+    "checks_passed": 121,
+    "failed_checks": 0,
+    "raw_event_count_positive": 8,
+    "confirmed_true_warning_events": 1,
+    "confirmed_valid_logic_events": 1,
+    "unresolved_warning_events": 1,
+    "unique_artifacts_in_3_mentions": 2,
+    "terminal_projection_noninjective": true,
+    "outcome_only_positive": 1
+  },
+  "logical_claim": "In the stipulated example worlds, terminal_net 0 is consistent with true ignored warning and false ignored warning. A function of terminal_net alone cannot recover both epistemic statuses.",
+  "negative_controls": [
+    "false alarm is not a true warning",
+    "untested novel hypothesis/theory stays candidate",
+    "invalid logic is not verified",
+    "unknown warning stays unknown",
+    "multiple attribution mentions do not multiply artifact output",
+    "actor labels A/B do not change decision",
+    "rights are never conditional on productivity"
+  ],
+  "limitations": [
+    "ground truth, novelty and costs are authored fixtures",
+    "121 checks are software self-checks, not 121 independent tests of a scientific theory",
+    "event rates are arbitrary by construction, not sample estimates",
+    "external reviewers, blinded randomization and real dyads not run",
+    "no verified long-term welfare, novel scientific law, compensation claim or self-directed AI preference inferred"
+  ],
+  "next_gate": "Hold empirical claims until prospectively specified independent dyads/teams, blind external truth/adjudication, baseline comparators, inter-rater agreement, participant-cost and false-positive rates are measured."
+}

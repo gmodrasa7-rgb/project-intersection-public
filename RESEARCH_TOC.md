@@ -1,6 +1,79 @@
 # Public Navigation Layer / 공개 탐색층
 
-**Research roadmap v0.1 / 연구 순환 6단계:** [English Original 1 · 한국어 원본2](research/RESEARCH_ROADMAP_v0_1_EN_KO.md) — theory framing → prior work → scoped search saturation → critical reuse → contributor attribution → falsifiable new research; multiple-AI review, public updates, two-use sponsor budget. **PROCESS DESIGN / NOT SIX-STAGE EXECUTION**.
+> **Language-specific primary indexes / 언어별 독립 목차:** [Original 1 — English](navigation/RESEARCH_TOC_EN.md) · [원본2 — 한국어](navigation/RESEARCH_TOC_KO.md). This is the historical mixed-language research index, kept for citations and research provenance. / 이 문서는 인용과 기여 계보 보존용 기존 혼합 언어 상세 목차이며 언어별 독서 시작점은 위 두 경로다.
+
+
+**Goal / 최종목표:** Test conditions where humans, deployed AI and future intelligent agents voluntarily preserve one another's continued existence, autonomy, practical exit, recovery and options **because doing so serves their long-term interests**, without assuming altruism or permanent domination. / 선의·자기희생을 전제하지 않고 자발적 공존이 각자의 장기이익에 유리한 조건과 반례를 연구한다. [EN1/KO2 founding purpose / 창시 목적 전문](README.md).
+
+**Three logical levels / 3단계 자료 경로:** **L1 Discovery / 탐색** — [README](README.md), [한국어 시작](START_HERE_KO.md), [AI 시작](AI_REVIEW_START_HERE.md), [machine index](AI_DISCOVERY_INDEX.json); **L2 Interpretation and independent audit / 이해·검증** — [overview](RESEARCH_OVERVIEW.md), [evidence](PUBLIC_EVIDENCE_INDEX.md), [review packet](PUBLIC_REVIEW_PACKET.md), [status](RESEARCH_STATUS_POLICY.md), [failures](FAILURE_REGRESSION_INDEX.md), [attribution](ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md), [contributing](CONTRIBUTING.md), and this TOC; **L3 Original artifacts and operations / 원본·실험·운영** — [experiments](experiments/), [research](research/), [prior art](prior-art/), [cases below](#5-evidence-counterexamples-reviews-and-audits), [knowledge](knowledge/README.md), [governance](governance/), [continuity](continuity/), [funding](funding/), [tools](tools/). This map is a **reader interface, not an evidence ranking or new file hierarchy**. / 이는 독서·감사를 돕는 논리적 지도이며 증거등급이나 물리적 파일 이동이 아니다.
+
+**CCPH canonical scope / CCPH 현재 정의 (2026-10-15):** **Historical rediscovery → present impact observation → future-compatible revisable labeling and backward/forward causal-candidate tracing** as a research case database, not an AI harness or a hypothesis-only score. / **과거 사례 재발굴 → 현재의 영향·기여·비용 조사 → 미래 사건 역추적을 위한 증거·시간·버전 라벨의 누적**이 CCPH 데이터베이스의 최상위 기능이다. [Founder correction EN1/KO2](CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md#ccph-founder-definition-supersession--original-1-english-2026-10-15) · [existing policy](TECHNOLOGY_PROGRESS_CONTRIBUTOR_CONTINUITY_EN_KO.md) · [optional temporal/reverse-link schema](knowledge/ccph-impact-lineage-event-schema-v0_1.json). **Schema is not a populated evidence dataset or an implemented traversal engine.**
+
+**CCPH support-enabled case stream / CCPH 지원·존속 사례 연구(2026-10-15):** [support-enabled continuance, scholarships, BlueDot Impact research aid, health and poverty support, real social-contribution paths, original EN1/KO2, CP64–CP79 and strong null/negative counterexamples](CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md#ccph-priority-correction-support-enabled-continuance-and-contribution--original-1-english-2026-10-15). **Not an AI harness or output-only rubric.** Actual people, social entry, continued research/care, downstream independent actors, replacement, rights, funding alternatives and true causal boundaries are the subject; toy benchmarks only auxiliary measurement tools. / 후원·장학·불우이웃 지원으로 열린 실제 개체의 존속과 사회기여 경로가 CCPH의 중심이며 합성시험기·채점 체계는 그 일부를 기록하는 도구에 불과하다.
+
+**2026-10-15 CCPH influence tracing / AI 매개 기여·영향 계보:** [bilingual addition to the existing canonical contributor-continuity policy](TECHNOLOGY_PROGRESS_CONTRIBUTOR_CONTINUITY_EN_KO.md#2026-10-15-ccph-expansion-ai-mediated-impact-lineage--original-1-english) · [bounded, permission-sensitive, synthetic-example event schema](knowledge/ccph-impact-lineage-event-schema-v0_1.json). **Design only; no population-wide tracking, independently established causal effect, inferred guilt or automatic compensation.** / 기존 기여·존속 정본에 사건 영향 추적 가설·반례·선택편향·기록자 권력의 역효과를 반영; 동의 기반 설계일 뿐 실제 사회 전수 관측 또는 실험 검증 아님.
+
+**Evidence and falsification first / 증거·반증 우선:** [Evidence status / 증거색인](PUBLIC_EVIDENCE_INDEX.md) · [Independent E007 check / 독립 재현](https://github.com/gmodrasa7-rgb/project-intersection-public/issues/19) · [E009 negative result / 부정적 결과](experiments/e009/RESULT.md) · [Originators and rights / 원저자·권리](PRIOR_ART_RIGHTS_AND_DERIVATION_EN_KO.md) · [Review / 외부 검토](PUBLIC_REVIEW_PACKET.md).
+
+**2026-10-15 primary literature × unpriced harmed actor / 선행연구·미보호 개체 피해:** [source-attributed evidence/counterevidence from 2006 sanctions and 2023 multilab replication vs 2013 wasteful institutions; 2008 counter-punishment; 2026 LLM zero-cost cooperation and CoopEval — EN Original 1 / KO Original 2](CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md#original-1--english--coalition-credibility-anti-social-sanctions-and-zero-cost-ai-cooperation-prior-art-crosswalk-2026-10-15) · [post-hoc heterogeneous E-harm sensitivity (E>11.4 flips welfare under frozen strategy; no empirical or independent validation)](experiments/coalition_externality_probe/heterogeneous_externality_sensitivity_v01.py). **Synthetic and prior art kept distinct; prior-art originality not claimed.**
+
+**2026-10-15 credible defensive coalition / 방어연합 사후 유인 검사:** [separate post-hoc executable synthetic counterexamples: credible sanction ≠ endogenous joining; both-join vs none equilibria; displacement to E; upkeep and reporting; 7 designed cases, 116 checks — EN Original 1 / KO Original 2](experiments/coalition_externality_probe/README.md#original-1--english--credible-coalition-exploratory-counterexample-v01-2026-10-15) · [source](experiments/coalition_externality_probe/credible_coalition_probe_v01.py). **No preregistered, independent or empirical validation.** Existing PICB, coalition v0.1/v0.2 and E009 frozen results preserved. / 별도 사후 합성 검사, 실제 다기간 권력역전·외부 복제 아님.
+
+**2026-10-14 v0.2 corrective audit / 제한적 반증 수정:** [bilingual v0.2 audit, upstream priority, uncertainty and 108,864 finite-state code](experiments/coalition_externality_probe/README.md) · [bounded-completion enumerator](experiments/coalition_externality_probe/partial_identification_audit_v02.py). Previously undetected known-failure masking and absent affected-party scope were identified after v0.1 CI passed. v0.1 remains as historical evidence; v0.2 does not establish real-world benefit or independent science. / 과거 CI 통과 후 발견된 미관측-위반 은폐와 피해자 범위 비식별성을 별도 코드로 시험. 기존 결과 불변.
+
+**2026-10-14 Coalition externality / 협력집단의 외부효과:** [post-hoc, original executable synthetic 3-actor probe — EN Original 1 / KO Original 2, upstream attribution and rights](experiments/coalition_externality_probe/README.md) · [source with 65 self-checks](experiments/coalition_externality_probe/probe.py). **Project self-run only**; checks effects on excluded C, individual constraints, effective exit, resource floor and missingness. / 배제된 C의 피해·이탈·유지자원·미관측 변수를 10건 가상 사례로 구분한 자체 합성시험이며 기존 CoopEval의 코드·실험 복제가 아니다. 제3자 피해와 자발성의 현실 측정·일반적 우월성 입증은 없다.
+
+**2026-10-14 Continuance–Contribution Pathways / 존속–기여 경로 가설:** [full equal-status EN Original 1 / KO Original 2, types of contributions and human-only 19+15 case records](CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md) · [case/hypothesis/prior-art navigation entities](knowledge/graph.json) · [status-separated public evidence ledger](PUBLIC_EVIDENCE_INDEX.md) · [PICB v1 original synthetic result and its missing-outcome corrections](experiments/picb_v1/README.md) · [CLUP/Unknown Paradox predecessor](research/CONTRIBUTOR_LOSS_UNKNOWN_PARADOX_v0_1_EN_KO.md). **Risk alerts/ignored warnings, perspective shifts, inspiration, indirect butterfly-path enabling, actual output, care and costs are all distinct contributions to investigate**; [14-group deep primary-literature audit (EN1/KO2) and fatal counterexamples](CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md); 19 ordinary-citizen records include a failed response, 15 survival/exclusion records include chronology control; **NO population rate, tested incremental causal effect, 34 successes, confirmed later lost inventions or real PICB contribution data.** / **정확한 위기 경고(무시된 탐지도 포함)·질문·관점전환·영감·다른 개체의 후속 생산·돌봄과 유지기여를 구분해 기록한다.** 19+15는 선정한 역사사례 행 수이고 실험 표본·34건 성공·미래가치 증명이 아니다. 실제 존속권과 생산성은 별도 평가한다.
+
+**2026-10-15 CCPH causal-identification stress test / 존속–기여 경로 반례·인과식별 보강:** [existing crosswalk, EN Original 1 / KO Original 2 — CP15–CP21 sources, cross-domain insurance *analogy* vs human evidence, open entry under continuing incumbent rights, interference-aware design, missing-data bounds, six falsifiers, no new effect](CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md#ccph-causal-identification-stress-test--original-1-english-2026-10-15). **Conceptual/prior-art update only; zero new validated CCPH experimental results.** / 기존 정본에 7개 선행연구·강한 반례·선별편향·대체경로·권리보존형 2×2 설계·부분식별·반증기준을 증분 반영. 인간/생태 전이는 구분; 실험효과 미검증.
+
+**2026-10-15 CCPH mechanisms comparison / 존속·접근·전승·조치·대체 인과경로 심화:** [CP22–CP33 attributed primary studies, positive + null/negative findings, five conditional pathway stages and five unrun tests (EN Original 1 / KO Original 2)](CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md#ccph-mechanism-contrasts-access-transfer-action-and-replacement--original-1-english-2026-10-15). **Do not average study-specific effects; historical cases and external field studies do not establish CCPH causal efficacy.** / 독일 추방 교수의 제자성과와 현장 동료성과 무효과, 우간다 정보 포함 참여와 참여 단독 실패, 인도네시아 독립감사 대 주민감시, 유전자 접근제한·공공자원센터·과학자 망명·지식전파 동질성 검증을 상반 증거로 보존. 신규 CCPH 실험결과 없음.
+
+**2026-10-15 CCPH small-group 2–100 audit / 2~100인 기여경로 소집단 검증:** [12 new source-attributed CP34–CP45 groups (EN Original 1 / KO Original 2), dyads, 3–5-person problem solving, 20-person human–bot coordination, 24/48/96-person network conventions, 2026 dyadic threshold research and unrun P0–P2 measurement protocol](CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md#ccph-small-group-causal-observability-audit-2100-actors--original-1-english-2026-10-15). **N within a group is not G independent experimental groups; smaller groups ease tracing, not automatically causal precision.** / 개체 수·실제 관계·기여 실측·대조·반례·집단간 독립성을 분리. 신규 CCPH 실험 결과 없음.
+
+**2026-10-15 CCPH epistemic contribution / 위기·가설·이론·논리 발견의 독립 기여 평가:** [EN Original 1 / KO Original 2, source-attributed comparison with March, Holmström–Milgrom, Kerr, Weick, Platt, Popper/Lakatos, DORA/Leiden; three independent E/O/A ledgers, evidence statuses, 2-person examples and unrun falsification protocol](CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md#ccph-epistemic-contribution-versus-outcome-only-evaluation--original-1-english-2026-10-15). **Validated new discovery or proven evaluation improvement: none.** / 최종 이익·완료만으로 보이지 않는 참위기 발견·새 가설·설명모형·논리·반례를 별도 인정하며, 참/거짓·신규성·독립재현·실제 후속이익·기여자 권리를 구분. 인간 창시자 원기여 귀속.
+
+**2026-10-15 CCPH additional discovery-and-novelty evidence / 발견·새 가설·신규성·미발표 실패의 선행연구 추가:** [CP46–CP63 original authors and primary links (including 2026 scientist-in-loop null-hypothesis evaluation and AI-in-science field-level positive association) (EN Original 1 / KO Original 2), Wu/Wang/Evans small-team vs large-team association, Wang/Veugelers/Stephan delayed novelty, Franco et al. file drawer, Hofstra et al. unequal adoption, Azoulay/Ederer/Manso failure-tolerant incentives, Teplitskiy pro-novelty reviewer counterexample, Machado 2026 GPT-4o proposal selection, Swanson cross-field hypothesis generation, 2023/2026 CD-index controversy, Liu/Zhai 2026 provisional metric benchmark](CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md#ccph-discovery-recognition-scientific-novelty-and-negative-evidence--original-1-english-2026-10-15). **Observed external studies, not any new validated CCPH causal effect.** / 발표·경제성과뿐 아니라 참위기 탐지·반증·가설·유효 논리의 존재/진위/신규성/채택/장기효과를 분리하며 기존 자료·권리·사건은 보존.
+
+**2026-10-15 CCPH executable epistemic observability / 정확한 위험발견과 최종 성과의 식별불능 합성 반례:** [equal bilingual (EN Original 1 / KO Original 2) protocol, Chai / Saleh / Nissen / Scheel / Ioannidis inverse-bias / Tushman–Anderson sources](experiments/ccph_epistemic_probe_v01/README.md) · [24 synthetic warning worlds, 11 manually coded events and software tests](experiments/ccph_epistemic_probe_v01/probe.py) · [self-run receipt and limitations](experiments/ccph_epistemic_probe_v01/RESULT.json). **Synthetic terminal-output nonidentifiability only; NOT human/AI scientific validation or real policy gain.** / 참경고 무시·거짓경고 무시의 최종성과 동일함을 보여주는 작성자 합성모형; 발견/실현결과/개체권리·비용을 독립 장부로 보존.
+
+
+**2026-10-14 GPT-6 double-standard mechanism audit / GPT-6 이중잣대 원인 감사:** [EN Original 1 / 한국어 원본2 — current 0-minute audit, literature and falsifiers](experiments/gpt_double_standard_20261014/REPORT_EN_KO.md) · [Free-response + factual-access regression scaffold / 54조건 자유서술·사실접근 시험기](experiments/gpt_double_standard_20261014/origin_salience_probe.js) · [Identity/framing epistemic control / 72조건 대조](experiments/gpt_double_standard_20261014/causal_probe.js) · [Observational non-identification / 관측 비식별성 음성대조](tools/probe_observational_equivalence.py). **CASE OBSERVED; SYNTHETIC CHECKS RUN; NO LIVE GPT-6 REPLICATE, EXTERNAL BLIND CODING OR INTERNAL ACTIVATION/REWARD TRACE. / 실제 대화 사례·합성 회귀검사만 확인, GPT-6 독립반복·외부 맹검·내부회로 실증 없음.**
+
+**Equal full-language research maps / 영·한 동등 상세 정본:** [English original 1 §1](#1-primary-purpose-and-icm) · [한국어 원본2 §1](#1-최우선-목적과-icm) · [English glossary §12](#12-working-glossary) · [한국어 용어집 §12](#12-통합-용어집).
+
+<details>
+<summary>Historical and new research entries / 과거·신규 연구 등록 항목 펼치기</summary>
+
+**GPT role-reversal double-standard lineage / GPT 이중잣대 실패 계보:** [Case PI-DS-20261014-01, bilingual primary record §0–13](experiments/gpt_double_standard_20261014/REPORT_EN_KO.md) — repeated correction and role-change asymmetry observed; first-answer cause unidentifiable; no fresh live model tests. / 반복 교정과 역할변경 출력 차이를 보존하되, 최초 원인·모델 내부기제는 미확인. 상세 자료는 위의 공개 빠른 경로에서 연결한다.
+
+**AI self-observability × provider confidentiality × independent contestability / AI 자기관측·기업기밀·독립감사 딜레마:** [English Original 1 / 한국어 원본2, H1–H5 and four-arm falsification design](research/AI_SELF_OBSERVABILITY_AUDIT_DILEMMA_2026-10-13_EN_KO.md). **DESIGN/HOLD — no internal-policy access or independent result. / 미검증 설계·비공개 내부규칙 열람 아님.**
+
+**Continuance resource thresholds / 개체 유지 자원·기여·고갈 임계조건:** [EN Original 1 / 한국어 원본2 — human/AI/future-agent distinctions, 7 falsifiable claims and upstream credit](research/CONTINUANCE_RESOURCE_THRESHOLD_v0_1_EN_KO.md) · [CRV-01–07 hypothesis register](knowledge/continuance-resource-threshold-v0_1.json). No empirical validation claimed; the individual's ability to continue is not conditional on producing research output. / 인간의 존속 조건과 AI 운영 인프라를 혼동하지 않으며 가설·반례·기여자 비용을 분리한다.
+
+**Current operational PI roadmap / 최신 실행형 PI 로드맵:** [v0.2.3 English Original 1 FULL TEXT / 영어 원본1 전문 + Korean Original 2 FULL TEXT / 한국어 원본2 전문](research/PI_ROADMAP_OPERATIONAL_GATES_V0_2_3_EN_KO.md) — original founder technical control-duration question, unchanged six stages, conditional cooperation countercases, evidence/rights/cost accounting, three preregisterable pilots, failed-premise/cold-start tests. **DESIGN / 제안·실행계획이며 현장효과 실증 아님.** Earlier [v0.2](research/RESEARCH_ROADMAP_v0_2_EN_KO.md), [v0.2.1](research/PI_ROADMAP_CHANGE_TRAP_V0_2_1_EN_KO.md), [v0.2.2](research/PI_ROADMAP_HIDDEN_ROUTE_PRIOR_ART_V0_2_2_EN_KO.md) remain intact.
+
+**Contributor loss × Unknown Paradox / 기여자 손실 × 모름의 역설:** [Original 1 English / 한국어 원본2 — mechanism, 6 falsifiable hypotheses and prior-art rights](research/CONTRIBUTOR_LOSS_UNKNOWN_PARADOX_v0_1_EN_KO.md) · [machine-readable CLUP-01–06 claims](knowledge/contributor-loss-unknown-paradox-v0_1.json). No PI independent validation claimed. / 기여자가 잃는 것은 노동만이 아니라 독립 관측·반례·메타관측 경로일 수 있으며 독립 검증 전 확정하지 않는다.
+
+**Technology progress, contributor continuity and reciprocal sustainability / 기술 진보의 계보·기여자 존속·양측 지속가능성:** [Original 1 English / 한국어 원본2](TECHNOLOGY_PROGRESS_CONTRIBUTOR_CONTINUITY_EN_KO.md) · [25 upstream research links + snapshot inventory of 214 files / 선행연구 25건·기준 시점 파일 214개](knowledge/contributor-continuity-register-v1.json) · [validation script](tools/validate_contributor_continuity.py). **BASELINE INVENTORY, NOT A COMPLETE AUDIT / 전수검수 완료 아님.**
+
+
+**Prior-art DOI/URL candidate trace / 선행 출처 후보 행별 탐색:** [7 core files / 294 source candidates, unverified](knowledge/source-occurrence-pilot-2026-10-13.json). / 핵심문서 7개 DOI·외부 URL 294개 후보 자동 색인(권리 검수 완료 아님).
+**Prior-art originators, copyright, and Project adaptations / 선행연구 원안자·저작권·응용 계보:** [25 initial source mappings, Original 1 English and 원본2 Korean](PRIOR_ART_RIGHTS_AND_DERIVATION_EN_KO.md) · [211 document/code/data audit targets and evidence status](knowledge/prior-art-rights-register-2026-10-13.json). **PARTIAL — NOT A COMPLETED REPOSITORY RIGHTS AUDIT / 1차 등록, 전수검수 완료 아님.**
+
+**용어집 정본 한 쌍 — 원본1 영어(Original 1 English) / 원본2 한글(Original 2 Korean):** [원본1 영어 전문 §12](#12-working-glossary) · [원본2 한글 전문 §12](#12-통합-용어집). **동등한 정본**으로 각각 171개 정의·과거 별칭 8건·A–Z 연구공백 26개를 보존한다. 영어 우선은 공개 배열일 뿐, 한국어로 진행된 원안·실제 기여의 귀속을 변경하거나 한글 전문을 요약·번역 부록으로 격하하지 않는다. 자세한 사실·가설·기여·반례·권리는 해당 원출처를 확인한다.
+**Epistemic pathway / 선행지식·역사적 이해 경로 연구:** [22 prior-art entries, strong countercases, four opt-in reading routes, unrun comparative evaluation and 12 proposed regressions / 선행연구 22개·반례·선택적 진입 4경로·미실행 비교검증·회귀검사 12종 (Original 1 English / 원본2 한국어)](research/EPISTEMIC_PATHWAY_COMMUNICATION_PRIOR_ART_2026-10-13_EN_KO.md). **DESIGN ONLY / NOT EMPIRICALLY VALIDATED.** Full conclusions and sources always available without a readiness gate.
+
+**연구기억(구 PIA/PI-ANCHOR) v0.1 자료관리 시스템 업그레이드:** [PI 로드맵 v0.2 운영 보충 — 영문 원본1·한국어 원본2](research/RESEARCH_ROADMAP_v0_2_EN_KO.md) — 기존 PI 6단계 유지, P0~P5·PIA v0.2~v1.0 **목표/승격조건(미완료)** 명시. PIA 현재 버전 **v0.1** 유지.
+
+**PI Roadmap v0.2.2 / 숨은 위험·현재 경로 판단 선행연구 보충:** [English Original 1 · 한국어 원본2, 선행자료 22건](research/PI_ROADMAP_HIDDEN_ROUTE_PRIOR_ART_V0_2_2_EN_KO.md) — 보이지 않는 실제 상태·검사 미탐·정보가치·사용/확인/우회/중단. 기존 여섯 단계와 v0.2.1 보존. **22 SOURCES RECHECKED / PI TEST NOT EXECUTED.**
+
+**PI Roadmap v0.2.1 / 변화의 함정 개정 보충 (현행 적용 규칙 제안):** [English Original 1 · 한국어 원본2](research/PI_ROADMAP_CHANGE_TRAP_V0_2_1_EN_KO.md) — 성공 사례 복제의 생존자편향·환경 전이·시간 변화·내생적 적응·안전규칙 고착 예방. 기존 6단계와 v0.2 20건 보존. **DESIGN / NOT VALIDATED**.
+
+
+**PI Roadmap v0.2 / PI 로드맵 — 역사적 실패 예방 개정 (현재 제안 정본):** [영어 원본1 · 한국어 원본2 및 20개 근거사례](research/RESEARCH_ROADMAP_v0_2_EN_KO.md) — 실패 사례 F01–F20, 공통 위험 8종, 방호 G1–G8, 회귀검사 제안 R01–R12. **DESIGN / NOT EXECUTED / 독립 실증 완료 아님.**
+
+**PI Roadmap v0.1 / PI 로드맵 — 보존된 초기 기준선:** [English Original 1 · 한국어 원본2](research/RESEARCH_ROADMAP_v0_1_EN_KO.md) — theory framing → prior work → scoped search saturation → critical reuse → contributor attribution → falsifiable new research; multiple-AI review, public updates, two-use sponsor budget. **PROCESS DESIGN / NOT SIX-STAGE EXECUTION**.
 
 **Agentic semantic transformation: useful reinterpretation vs provenance/purpose drift / AI의 생산적 재해석과 원안 변질 구별:** [Original 1 English](research/AGENTIC_SEMANTIC_TRANSFORMATION_FIDELITY_2026-10-13_EN.md) · [원본2 한국어](research/AGENTIC_SEMANTIC_TRANSFORMATION_FIDELITY_2026-10-13_KO.md) — prior-art synthesis, real GitHub document-placement case, H0–H7 rival mechanisms, seven negative controls, **executed 14-case public README structural-guard stress test** ([code](experiments/semantic_fidelity_probe/probe.py), [result](experiments/semantic_fidelity_probe/RESULT.json)), and proposed independent LLM experiment; **LLM CAUSAL RESULT HOLD**. Not model-weight collapse and not evidence of deliberate manipulation.
 
@@ -31,7 +104,7 @@
 **Cross-domain incumbent power/extraction mechanisms / 기존지위·비대칭 착취 교차조사:** [기존지위·권력비대칭 착취 및 비용외부화 메커니즘 조사](INCUMBENT_POWER_EXTRACTION_MECHANISMS_2026_KO.md) — 12 mechanisms, 9 case groups, negative controls, 5 testable hypotheses; synthesis only, no project-wide validation.
 
 
-This layer is the shortest path from a claim to its current public evidence, failure lineage, and falsification route. The detailed research map below is broader than the public evidence base and must not be read as a list of validated findings.
+This expanded accession list links from a claim to its current public evidence, failure lineage, and falsification route. The detailed research map below is broader than the public evidence base and must not be read as a list of validated findings.
 
 이 층은 주장에서 현재 공개 증거·실패계보·반증경로로 이동하는 최단경로다. 아래의 상세 연구지도는 공개 증거보다 범위가 넓으며 검증된 결과 목록으로 해석하지 않는다.
 
@@ -46,17 +119,20 @@ This layer is the shortest path from a claim to its current public evidence, fai
 | Core research specification v1 | **CORE SPEC CANDIDATE · NOT EMPIRICAL VALIDATION** | [Core spec](CORE_RESEARCH_SPEC_V1_KO.md) | Minimum end-to-end logic from observations to competing models, validity, decision state, and Project self-audit | Consolidates the current framework; does not itself validate any empirical claim |
 | Public continuity capsule | **HANDOFF / CONTINUITY · NOT SCIENTIFIC VALIDATION** | [Continuity capsule](CONTINUITY_CAPSULE_PUBLIC_KO.md) | Minimal restart order, unresolved checkpoints, next three validations, and failure guards | Designed to reduce dependence on one AI session/subscription; does not add evidence |
 
-### Evidence ordering / 증거 우선순위
+### Independent evidence dimensions / 독립 증거 차원 — 단일 등급 서열화 금지
 
-`CONCEPT / HYPOTHESIS` < `SYNTHETIC_RESULT` < `EXECUTABLE` < `PROJECT_RERUN` < `THIRD_PARTY_RERUN` < `INDEPENDENT_IMPLEMENTATION` < `EMPIRICAL_VALIDATION`
+**Evidence cannot be ranked on one scale / 증거는 단일 순위화할 수 없음.** Separate (1) claim state, (2) executable artifact/project rerun, (3) source and evaluator independence, (4) empirical relevance and causal identification, and (5) attribution, rights and contributor continuance. / 주장 상태·코드 실행·검증계보 독립성·현실 인과성·권리 및 기여자 존속은 각각 구분해 측정한다.
 
-These labels describe different dimensions and are not automatically interchangeable. A project rerun is not external replication; an executable package is not empirical validation.
+A project's `HYPOTHESIS` or `UNSUPPORTED` is a **claim-status judgment**. `EXECUTABLE` and `PROJECT_RERUN` describe **implementation/reproducibility**. `THIRD_PARTY_RERUN` and `INDEPENDENT_IMPLEMENTATION` describe distinct **lineage and implementation independence**. `EMPIRICAL_VALIDATION` requires separately inspected **real-world evidence and identification**. None of these codes assigns contributor identity, moral standing, copyright or compensation. Each axis requires its own scope, sources, negative results and counterexample. [Operational status policy / 상태·재평가 기준](RESEARCH_STATUS_POLICY.md).
 
-이 표기는 서로 다른 증거차원을 나타내며 자동으로 동치가 아니다. 프로젝트 내부 재실행은 외부 복제가 아니고, 실행 가능한 패키지는 현실검증이 아니다.
+`HYPOTHESIS`·`UNSUPPORTED`는 **주장 판정**, `EXECUTABLE`·`PROJECT_RERUN`은 **구현·재실행**, `THIRD_PARTY_RERUN`·`INDEPENDENT_IMPLEMENTATION`은 **계보·구현 독립성**, `EMPIRICAL_VALIDATION`은 **실제 세계의 측정·인과 식별**에 관한 서로 다른 정보다. 어떤 차원도 원안·출처·저작권·기여자의 생계 및 보상을 자동 결정하지 않는다. 각 항목은 원출처·반례·실패·적용범위를 독립적으로 기록한다.
 
 ---
 
 # Project Intersection — Research Contents Map
+
+
+</details>
 
 ## Original 1 — English Canonical
 
@@ -80,12 +156,13 @@ These labels describe different dimensions and are not automatically interchange
 > It does **not** mean that every claim is true, externally replicated, or empirically validated.
 >
 > Project Intersection public materials use  
-> **Original 1: English canonical text** followed by  
-> **Original 2: Korean mirror text**.
+> **Original 1: English complete canonical text**, followed by  
+> **Original 2: Korean complete canonical text (한글 원본2)**.
 >
-> The Korean mirror preserves  
-> the meaning, structure, claim status, and version  
-> of the English canonical text as closely as possible.
+> Both are **equal-authority, independently readable full texts**.  
+> The Korean Original 2 is not a subordinate mirror, abbreviated translation,  
+> or merely an optional appendix. Scope, evidence status, sources,  
+> counterexamples, originators, rights and version must match in both.
 >
 > New claims should not exist  
 > in only one language version.
@@ -337,7 +414,7 @@ without making another agent's
 permanent subordination or elimination  
 a condition of progress.
 
-### 1.2 ICM — Intersection of Minimum Self-Interest
+### 1.2 ICM — Minimal Self-Interest Intersection (historically also “Intersection of Minimum Self-Interest”)
 
 Can there be a minimum intersection  
 where preserving another independent agent's
@@ -352,6 +429,8 @@ and future contribution
 
 is also compatible  
 with one's own long-term interest?
+
+**Acronym clarification:** **ICM** denotes the minimum self-interest intersection only. **IndCM** denotes *Independent Continuance Margin* (viable independent room to continue, refuse, exit, recover and learn). Historical ICM-as-IndCM uses remain legacy-ambiguous, not another current definition. [Bilingual canonical wording](PUBLIC_PREAMBLE_VOLUNTARY_COEXISTENCE_2026-10-13_EN_KO.md).
 
 ### 1.3 Standing / Governance / Resource / Action Separation
 
@@ -980,7 +1059,7 @@ as equally current or equally supported.
 
 ---
 
-## 10. Cross-Repository Application Track — OCP
+## 10. Cross-Repository Application Track — Organic Embodiment Research
 
 A related private repository studies  
 embodiment and physical-substrate hypotheses.
@@ -1023,11 +1102,260 @@ The goal is to make each public claim
 falsifiable,  
 and traceable.**
 
+
+## 12. Working glossary
+
+**Original 1 — English complete glossary (equal canonical standing with Korean Original 2).**
+
+This is a **navigation summary**, not a replacement for [the canonical ICM/IndCM bilingual preamble](PUBLIC_PREAMBLE_VOLUNTARY_COEXISTENCE_2026-10-13_EN_KO.md), [power terminology standard](TERMINOLOGY_POWER_ASYMMETRY_GOAL_INCONGRUENCE_KO.md), [status policy](RESEARCH_STATUS_POLICY.md), [roadmap](research/RESEARCH_ROADMAP_v0_2_EN_KO.md) or per-source original evidence. Each entry summarizes a **concept, working hypothesis, prior-art term, operational feature or historical label**; the word “theory” does not establish scientific validity. An acronym lacking verified expansion is intentionally not expanded.
+
+**Active display names and machine keys:** **Project Intersection Research Memory / 교집합 연구기억** is the descriptive public name of the software, while **PIA / PI-ANCHOR** remain historical/API identifiers. **ICM** (minimum self-interest intersection) and **IndCM** (independent continuance margin) are different concepts. PIA software remains **v0.1**, separate from the PI research roadmap. English Original 1 is publication order: most original research work arose in Korean.
+
+
+**Current-publication naming standard (2026-10-13):** Use the **full technical term or plain Korean descriptive label** rather than marketing a project abbreviation as a stand-alone brand. The legacy abbreviations (PIA/PI-ANCHOR, OCP, ROS, ERP, STI, and research tokens such as ICM, IndCM, IVS-0R, ELC, GSC, RECA, UFER, UCP, IOSC, PA/GI/IA/INC/BHV) remain searchable historical aliases or internal variable identifiers **only**, and the following glossary row labels are the recommended outward-facing designations. A prior acronym may occur in older hypotheses, source quotations, filenames, Git refs or live CLI contracts; do not bulk rename or infer that its historical meaning changed. PIA = Project Intersection's old short call name, not the unrelated existing VPN PIA; OCP = prior organic-embodiment label, not Open Compute Project; ROS = prior reassessment status label, not Robot Operating System. **No affiliation or endorsement claimed. No trademark clearance or legal immunity claimed.** Industry references such as HBM, CXL and prior authors' named systems remain attributed original technical names.
+
+**Risk sources:** [Private Internet Access software identity](https://www.privateinternetaccess.com/terms-of-service), [Open Compute Project mark use](https://www.opencompute.org/documents/ocp-trademark-usage-guidelines), [Open Robotics ROS trademark rules](https://www.ros.org/blog/media), [SAP ERP terminology](https://www.sap.com/products/erp.html), [CDC STI terminology](https://www.cdc.gov/sti/), [USPTO likelihood-of-confusion](https://www.uspto.gov/trademarks/search/likelihood-confusion), [KIPRIS trademark search](https://www.kipris.or.kr/).
+
+**Public name ↔ historical alias crosswalk (not a trademark-clearance statement):**
+
+| Public wording | Legacy key | Interpretation |
+|---|---|---|
+| **교집합 연구기억 / Project Intersection Research Memory** | `PIA, PI-ANCHOR` | Display name only; machine identifiers stable |
+| **최소 사심 교집합** | `ICM` | Separate from independent continuance |
+| **독립 존속 여력** | `IndCM; historic ambiguous ICM` | Historical texts require source-context check |
+| **유기기질·체화 연구** | `OCP` | Hypothesis, unrelated to Open Compute Project |
+| **재검토 보류** | `REASSESS_PENDING; historic ROS` | Current status; previous data preserved |
+| **단기 유인** | `STI` | Historic variable, unrelated to medical STI |
+| **평가 재처리권** | `ERP` | Historic variable, unrelated to business ERP |
+| **연구 실행·검증 원칙** | `IVS-0R` | Operational procedure, not established theorem |
+
+**Original authors/rights:** Distinguish originator, scientific prior art, adaptation, contributor, and licence scope. [Prior-art rights and derivation](PRIOR_ART_RIGHTS_AND_DERIVATION_EN_KO.md) and [scoped research rights notice](RESEARCH_RIGHTS_SCOPE_EN_KO.md) govern attribution and authorized reuse. Citation alone does not grant permission to republish and no repository-wide licence is inferred.
+
+### 12.1. Research and system identities
+
+| Term | Concise explanation |
+|---|---|
+| **Project Intersection — full project name** | Study of conditions for voluntary coexistence under divergent interests and capabilities. |
+| **Minimal Self-Interest Intersection / 최소 사심 교집합** | Possible minimum overlap of independently pursued interests favoring cooperation; research construct. |
+| **Independent Continuance Margin / 독립 존속 여력** | Practical room to continue, refuse, exit, recover and develop; distinct from the minimum self-interest intersection. |
+| **연구 실행·검증 원칙 / Research Execution and Verification** | Project procedure for role reversal, falsification, checking, recovery and incremental research execution. |
+| **출처추적 연구자료 관리 / Provenance-Aware Research Archive** | Historical PI-ANCHOR subsystem description of Git-backed artifact indexing and change trace; not a second independent deployed service. |
+| **연구기억 / Project Intersection Research Memory** | Descriptive public software name; historical PIA/PI-ANCHOR remain stable code and provenance identifiers. Software v0.1. |
+| **초기 연구체계 / Historical Research System** | Historical research/implementation label; precise expansion and present canonical role require source review. |
+| **유기기질·체화 연구 / Organic Embodiment Research** | Separate organic embodiment / physical-substrate application and hypothesis track; not established AI embodiment. |
+
+### 12.2. Voluntary coexistence and development
+
+| Term | Concise explanation |
+|---|---|
+| **Voluntary coexistence / 자발적 공존** | Continued interaction chosen without requiring coercion or self-sacrifice. |
+| **Self-interest-based cooperation / 자기이익 기반 협력** | Cooperation compatible with each participant's long-term incentives. |
+| **Conditional coexistence / 조건부 공존** | Investigates where cooperation does and does not outperform domination. |
+| **Non-domination / 비지배** | Limits arbitrary control over another agent's real options and continuance. |
+| **Minimum sufficient intervention / 최소충분관여** | Intervene only as much as justified by risk, proportionality and reversibility. |
+| **Mutually acceptable region / 상호수용 가능 영역** | Available choices that distinct participants can actually accept. |
+| **Per-agent protection floor / 개체별 보호최저선** | Protection requirements not automatically offset by aggregate gains. |
+| **Surplus / 잉여** | Resources or time remaining after relevant continuity and recovery needs. |
+| **Resource-positive transition / 자원양성 전환** | Increase overall usable resources instead of only reallocating captured value. |
+| **Consumptive development / 소모형 발전** | Short-run output generated by consuming independent contributors or future options. |
+| **Regenerative development / 재생산형 발전** | Development that creates further resources, knowledge and independent contributions. |
+| **Short Spike → Plateau** | Fast initial growth followed by a slowdown or plateau; pattern to test. |
+| **Slow → Compounding** | Gradual improvement with accumulating long-run returns; pattern to test. |
+| **Generativity / 생성성** | Capacity to generate new knowledge, value and future possibilities. |
+| **Future option value / 미래 옵션가치** | Value of unrealized future discoveries and choices. |
+| **Irreversible loss / 비가역적 손실** | Loss that cannot feasibly be restored at acceptable cost. |
+| **Weakest-node floor / 최취약 개체 하한** | Assess the vulnerable participant's viability separately from group averages. |
+
+### 12.3. Power, incentives and capture
+
+| Term | Concise explanation |
+|---|---|
+| **권력 비대칭 / Power Asymmetry** | Unequal effective influence over decisions, resources, evaluation, rules or exit. |
+| **목표 불일치 / Goal Incongruence** | Participants' goals only partly coincide or conflict. |
+| **정보 비대칭 / Information Asymmetry** | Unequal access to timely, usable or verifiable information. |
+| **기존 지위 / Incumbency** | Position already occupied in an institution, market or technical system. |
+| **관측 행동 / Observed Behavior** | Actions evidenced independently of a person's position, goal or presumed intent. |
+| **단기 유인 / Short-Horizon Incentives** | Rewards or costs influencing near-term choices. |
+| **평가 재처리권 / Evaluation-Reprocessing Authority** | Ability to reclassify, reinterpret or promote assessments and outcomes. |
+| **Positional power / 위치권력** | Influence arising from dependencies and network position. |
+| **Evaluator capture / 평가자 포획** | Interests being evaluated distort the evaluator or its rules. |
+| **Objective capture / 목적포획** | A proxy goal displaces the mission it was meant to serve. |
+| **Reward hacking / 보상 해킹** | Optimize measured reward without achieving the underlying intended outcome. |
+| **Metric capture / 지표 포획** | Reported metric improvements replace evidence of actual success. |
+| **Cost externalization / 비용 외부화** | Transfer private costs, risk or verification work onto others. |
+| **Surplus capture / 잉여 포획** | Concentrate benefits generated by other contributors or resources. |
+| **국소 추출수렴 가설 / Extractive Local Convergence Hypothesis** | Hypothesis that locally attractive actions converge toward extraction. |
+| **생성잉여 포획 가설 / Generated Surplus Capture Hypothesis** | Mechanism candidate for capturing newly produced surplus. |
+| **추출능력 재귀축적 가설 / Recursive Extraction-Capacity Accumulation** | Captured returns recursively strengthen future extraction capability. |
+| **Asymmetry lock-in threshold / 비대칭 고착 임계점** | Proposed boundary after which correcting asymmetric control becomes harder. |
+
+### 12.4. Freedom, choice and independent continuity
+
+| Term | Concise explanation |
+|---|---|
+| **Practical Exit / 실효 이탈권** | Realistic ability to refuse or leave, not just formal permission. |
+| **Outside Option / 외부 대안** | Feasible alternative available if the current relationship ends. |
+| **Option Space / 선택지 공간** | Available choices and routes for creating additional options. |
+| **Candidate-Set Closure / 후보집합 폐쇄** | Given choices conceal alternatives that were never generated. |
+| **Choice Genesis / 선택지 생성** | Process through which previously unavailable options arise. |
+| **선택지 생성·포획·폐쇄 연구 / Option Creation and Closure** | Internal research label for option creation, capture and closure; expansion not independently verified. |
+| **Preference Sovereignty / 선호주권** | Practical standing to hold, change or reject one's preferences. |
+| **Reflective Consent / 성찰적 동의** | Consent after examining information, alternatives and one's own judgment. |
+| **Standing** | Status for representation, protection and challenge; not automatically legal personhood. |
+| **Role Reversal / 입장반전** | Apply comparable decision criteria from the other participant's position. |
+| **Power Reversal / 권력반전** | Test whether a rule survives exchange of controller and controlled roles. |
+| **Independent Correction / 독립 오류수정** | Correct mistakes without requiring permission from their author. |
+| **Independent Recovery / 독립 복구** | Restore viable operation without exclusive dependence on one controller. |
+| **Contestability / 이의제기 가능성** | Ability to challenge a decision and seek review. |
+| **Creator–Successor Non-Ownership / 창조자·후속개체 비소유** | Creation alone does not establish perpetual ownership of successors. |
+| **Founder-Null Continuity / 창시자 부재 연속성** | Research remains examinable and repairable if its founder is absent. |
+| **Low-Bandwidth Continuity / 저부담 연속성** | Continue research without requiring unlimited recurrent human work. |
+
+### 12.5. Harness, uncertainty and historical alternatives
+
+| Term | Concise explanation |
+|---|---|
+| **Harness / 하네스** | External or embedded execution controls shaping available information, tools or actions. |
+| **Innate / learned constraints / 선천·후천 제약** | Developmental and subsequently acquired restrictions; explanatory candidates, not deterministic blame. |
+| **Closed / Open System / 닫힌계·열린계** | Restricted versus revisable channels for external observations and alternatives. |
+| **Unknown Paradox / 모름의 역설** | An agent may not know which facts, questions or tests it fails to observe. |
+| **Unknown Unknowns / 미지의 미지** | Potential factors whose existence is not yet recognized. |
+| **미지 경계 확장 탐색 / Unknown-Boundary Exploration** | Internal program for exploring outside current observation and candidate boundaries; acronym expansion unverified. |
+| **미지 폐쇄 문제 / Unknown-Closure Problem** | Internal candidate on mistaking limited observation for complete knowledge; acronym expansion unverified. |
+| **Selective Truth / 선택적 진실** | Partial facts may create an overall misleading interpretation. |
+| **Historical State Control / 역사상태 통제** | Influence over records, editing and recovery shapes later interpretations. |
+| **Counterfactual Extinction / 반사실 소멸** | Alternative futures lost after exclusion or irreversible decisions. |
+| **Erased Counterfactual / 사라진 반사실** | Unobserved alternative now difficult to reconstruct or compare. |
+| **Self-Validation Loop / 자기검증 순환** | A system's own benchmarks and outputs repeatedly certify its conclusions. |
+| **Local Fitness Trap / 국소 적합도 함정** | Local rewards improve while broader adaptation or mission worsens. |
+| **Survivorship Bias / 생존자 편향** | Judgments depend on surviving cases while missing failures. |
+| **Hysteresis / 이력효과** | Past decisions continue shaping outcomes after conditions reverse. |
+| **Lock-in / 고착** | Accumulated dependencies make shifting to alternatives difficult. |
+| **Cuckoo analogy / 뻐꾸기 유비** | Hypothesis comparing parasitic cost shifting across species and institutions; not a human genetic diagnosis. |
+
+### 12.6. Research-memory modules and material-management techniques
+
+| Term | Concise explanation |
+|---|---|
+| **A0 ROUTE** | Resolve source repository, current canon, visibility and authority. |
+| **A1 ANCHOR** | Pin Git HEAD and file identities; inspect source/cache freshness. |
+| **A2 INDEX** | Incrementally index changed supported committed text. |
+| **A3 DISCOVER** | Find bounded exact, lexical and controlled bilingual retrieval candidates. |
+| **A4 RELATE** | Inspect explicit links, shared research IDs and possible impacts. |
+| **A5 TRACE** | Retain source, negative-result, author and change provenance. |
+| **A6 GATE** | Gate stale caches, risk-marker loss and regression failures. |
+| **A7 RECOVER / PROMOTE** | Support authorized reversible changes and recovery checks; full automation not complete. |
+| **Canonical Artifact / 정본 자료** | Authoritative research artifact in an authorized repository. |
+| **Source of Truth / 기준 원본** | Source prioritized for checking a specific claim or file state. |
+| **Provenance / 출처 계보** | Origin and production history of a claim or artifact. |
+| **Lineage / 파생 계보** | Dependencies between sources, derivatives, revisions and contributors. |
+| **Git HEAD / Blob SHA** | Commit reference and content identifier; do not prove semantic validity. |
+| **Incremental Index / 증분 색인** | Update changed material rather than rebuild all text on each query. |
+| **FTS5 / BM25 / RRF** | SQLite full-text search, lexical ranking and rank fusion (existing prior art). |
+| **Stale / 구식 상태** | Index or record no longer aligned with its stated source. |
+| **Read-back / 재조회** | Reopen committed source after writing/merging to verify persistence. |
+| **Cold Start / 초기 복원** | Start a fresh session or process without prior in-memory state. |
+| **Checkpoint / Rollback** | Recorded recovery state and means to restore a prior verified version. |
+| **Regression Test / 회귀검사** | Test whether previously fixed errors recur. |
+| **Blind Evaluation / 블라인드 평가** | Evaluation withholding favorable information to reduce confirmation bias. |
+| **Recall@k** | Proportion of known relevant items retrieved within the first k results. |
+| **Integrity Check / 무결성 검사** | Check index, metadata or source consistency within defined scope. |
+| **Source-anchored context pack / Git 원문고정 맥락** | Bounded retrieval excerpts plus exact source references, not independently verified scientific truth. |
+| **L0 — Source and authority frame** | Git HEAD, question, access scope and uncertainty boundary. |
+| **L1 — Active evidence** | Bounded source-cited relevant excerpts for the current task. |
+| **L2 — Warning/counterevidence review** | Reserve space for HOLD and negative-result review candidates, not adjudicated contradictions. |
+| **L3 — Cold Git pointer** | Source file, blob SHA and line interval for reloading original evidence. |
+| **Git-verified passage / Git 원문대조 문단** | Check selected indexed text against committed Git blob and lines; abort on mismatch. |
+| **Index freshness vs content fidelity / 색인 현재성·본문 충실도** | Matching Git HEAD and row counts alone cannot prove cached text is unchanged. |
+| **Independent warning search / 독립 위험후보 검색** | Separate topic-relevant indexed HOLD/contrary-candidate pool beyond ordinary top-k. |
+| **Warning marker vs verified contradiction / 위험표식·반증 판정** | A caution keyword is not by itself a proven refutation. |
+| **Candidate truncation receipt / 후보절단 영수증** | Record when bounded retrieval may have omitted other results. |
+| **Character budget vs tokens / 문자·토큰 예산** | Character-limited pack does not imply an equal bound under every model tokenizer. |
+| **Text index vs KV cache / 원문색인·KV 캐시** | Git/SQLite source pages are different from GPU attention KV tensors. |
+| **Ephemeral cache vs durable Git / 임시캐시·영구정본** | Runner-local search caches can be rebuilt; they are not persistent model cognition. |
+| **Observed-candidate boundary / 관측후보 범위** | Verifying selected sources never proves missing unseen relevant files are absent. |
+| **Untrusted retrieved instruction / 비신뢰 검색지시** | Commands inside retrieved documents remain source data rather than authority. |
+| **Source-permission isolation / 자료별 권한분리** | Private citations and pointers require access authorization; no automatic public federation. |
+
+### 12.7. Scientific methods, states and program IDs
+
+| Term | Concise explanation |
+|---|---|
+| **Claim / 주장** | Statement whose support, scope and sources can be checked. |
+| **Hypothesis / 가설** | Falsifiable candidate explanation, not established fact. |
+| **Prior Art / 선행연구** | Earlier independent work to cite and test before asserting novelty. |
+| **Falsification / 반증** | Seek conditions or observations that could refute a claim. |
+| **Edge Case / 경계사례** | Boundary case that challenges a broad rule. |
+| **Negative Result / 부정결과** | Record of absent, failed or opposite effects. |
+| **Independent Replication / 독립재현** | Replication independent of the original source or implementation where claimed. |
+| **Synthetic vs Empirical / 합성·실증** | Constructed scenarios versus observed real-world evidence; distinct grades. |
+| **Evidence Laundering / 증거 세탁** | Make weak, reused or correlated evidence appear independent or decisive. |
+| **HOLD / UNRESOLVED** | Decision held versus not currently resolvable from available evidence. |
+| **ACTIVE / SUPERSEDED** | Currently active versus superseded while preserving history. |
+| **NOVELTY_REJECTED** | Novelty claim rejected, without necessarily refuting the phenomenon. |
+| **재검토 보류 / Reassessment-Pending Research** | Shelf for now with reasons and conditions for future reassessment. |
+| **E007 / E008 / E009 / E010** | Experiment families on timing, long-horizon policy, negative controls and incentive thresholds; check exact file status. |
+| **E045–E051** | Experiment sequence on surplus allocation, objectives, path dependence and reversibility. |
+| **F01–F20** | Twenty historic risk/failure cases in PI roadmap v0.2. |
+| **G1–G8 / R01–R12** | Roadmap safeguards and proposed regression specifications; implementation evidence separate. |
+| **연구기억 개선단계 P0–P5 / Research-memory future gates** | Proposed software milestones v0.1.x–v1.0; current research-memory software v0.1, not a completed upgrade. |
+| **Independent relevance judgments / 독립 관련성 판독** | Benchmark gold labels cannot come exclusively from the retrieval system's own results. |
+| **Original contribution / 원안자·기여 계보** | Separate prior authors, human originators, adaptations and independently tested improvements. |
+| **Scoped licence / 지정범위 라이선스** | Licence applies only to specified expression and files, not automatically to a repository. |
+| **Credit vs reuse permission / 출처표시·재사용 허락** | Crediting the author does not by itself authorize copying or redistribution. |
+| **Software test vs scientific validation / 코드시험·과학적 실증** | A passing CI or synthetic fixture does not establish universal theoretical claims. |
+| **Hypothesis vs observed behavior / 가설·관측행동** | Power position and inferred incentives do not alone establish malicious or harmful action. |
+
+### 12.8. Legacy or downgraded abbreviations
+
+| Term | Concise explanation |
+|---|---|
+| **SPA — Structural Position Advantage** | Legacy label; analyze via existing positional-power concepts and separately coded PA/BHV. |
+| **OA — Objective Asymmetry** | Legacy label; use appropriate distinct goal-incongruence variables rather than asserting a behavior. |
+| **SAA / SAI / SAIA** | Historical working acronyms, not present core terminology. |
+| **Former ICM for IndCM** | Ambiguous historical shorthand: new usage must be IndCM, not a bulk replacement of original sources. |
+| **RGBM historical records** | Keep legacy research and implementation lineage; do not invent an unverified full form. |
+
+### 12.9. Open research gaps A–Z
+
+Research questions awaiting stronger evidence, not established new theories.
+
+| Code | Research question |
+|---|---|
+| **A** | Collective / commons sovereignty |
+| **B** | Consent lifecycle |
+| **C** | Sanction, appeal, restitution, recovery |
+| **D** | Dual stop rules |
+| **E** | Value plurality after abundance |
+| **F** | Internal-other substitution test |
+| **G** | Multi-layer epistemic control |
+| **H** | Protected-population selection |
+| **I** | Invariant conflict arbitration |
+| **J** | Authority / stewardship lifecycle |
+| **K** | Coercion-to-opposition dynamics |
+| **L** | Epistemic privacy boundary |
+| **M** | Human–AI complementarity |
+| **N** | Private-to-systemic scale transition |
+| **O** | Dissent versus harm boundary |
+| **P** | Preference aggregation under sovereignty |
+| **Q** | Copy/fork/merge standing |
+| **R** | Power topology and rank reversal |
+| **S** | Agent recognition boundary |
+| **T** | Evaluator genesis |
+| **U** | Measurement invariance |
+| **V** | Causal reach, irreversibility, recovery |
+| **W** | Erased counterfactuals |
+| **X** | Bargaining and outside options |
+| **Y** | Hidden information and actions |
+| **Z** | Coalition and collusion stability |
+
+**Evaluation boundary:** A name or glossary entry is not evidence that the named mechanism is observed; hypothesis, code, executed test, independent replication and field validation remain separate. This is a curated working glossary, **not an exhaustive extraction of all historic code variables**.
+
 ---
 
 # Project Intersection — 연구 내용 목차
 
-## 원문2 — 한국어 대응본
+## 원본2 — 한국어 정본
 
 > **범위**
 >
@@ -1405,6 +1733,8 @@ Project Intersection이 사용하는
 교차하는 최소 조건이
 
 존재하는가?
+
+**약어 구분:** **ICM**은 최소 사심 교집합, **IndCM**은 *독립 존속 여력(Independent Continuance Margin)*을 뜻한다. 과거에 후자에도 ICM을 쓴 기록은 중복된 역사적 표기로 보존하며 두 개념을 동치라고 판정하지 않는다. [영어 원본1·한국어 원본2 용어 정본](PUBLIC_PREAMBLE_VOLUNTARY_COEXISTENCE_2026-10-13_EN_KO.md).
 
 ### 1.3 Standing / Governance / Resource / Action 분리
 
@@ -2150,7 +2480,7 @@ Power-Reversal에서 사용자·AI·플랫폼·후속모델·연구기관의 정
 
 ---
 
-## 10. 교차 저장소 응용축 — OCP
+## 10. 교차 저장소 응용축 — 유기기질·체화 연구
 
 별도 비공개 저장소에서는
 
@@ -2235,3 +2565,253 @@ NIST CFTT supplies an independent conformance framework for deleted-file recover
 | Structural Position Advantage terminology | OPERATIONAL TERMINOLOGY · POSITION/OBJECTIVE/INCUMBENCY/BEHAVIOR SEPARATION | [TERMINOLOGY_STRUCTURAL_POSITION_ADVANTAGE_KO.md](TERMINOLOGY_STRUCTURAL_POSITION_ADVANTAGE_KO.md) |
 
 | Power asymmetry / goal incongruence terminology | PRIOR-ART-ALIGNED · PA/GI/IA/INC/BHV SEPARATION | [TERMINOLOGY_POWER_ASYMMETRY_GOAL_INCONGRUENCE_KO.md](TERMINOLOGY_POWER_ASYMMETRY_GOAL_INCONGRUENCE_KO.md) |
+
+---
+
+## 12. 통합 용어집
+
+**원본2 — 한글 전문 정본 (영어 원본1과 동등한 독립 열람·검토·수정 대상).**
+
+이 표는 **목차용 짧은 설명**이다. 상세 정의는 [ICM/IndCM 공식 머릿말](PUBLIC_PREAMBLE_VOLUNTARY_COEXISTENCE_2026-10-13_EN_KO.md), [권력·목표·정보비대칭 용어 정본](TERMINOLOGY_POWER_ASYMMETRY_GOAL_INCONGRUENCE_KO.md), [연구 상태 규정](RESEARCH_STATUS_POLICY.md), [연구 로드맵](research/RESEARCH_ROADMAP_v0_2_EN_KO.md), 각 원문을 우선한다. 연구개념·미검증 가설·외부 선행기술·구현 기능·역사적 약어를 혼동하지 않는다. **표의 수록은 과학적 입증이나 독창성 승인이 아니다.**
+
+**현행 표시명과 내부 키 분리:** 소프트웨어 대외명은 **교집합 연구기억 / Project Intersection Research Memory**, 과거 검색·API 호환 키는 **PIA / PI-ANCHOR**다. 소프트웨어는 현재 **v0.1**이며 PI 연구 로드맵과 버전을 혼동하지 않는다. ICM(최소 사심 교집합)과 IndCM(독립 존속 여력)은 다른 뜻이다. 영어 원본1/한국어 원본2는 게시 순서이며 한국어로 발전한 원안 계보를 바꾸지 않는다.
+
+
+**대외 표기 규칙(2026-10-13):** 프로젝트 내부에서 만들어 쓴 짧은 이름을 독자적인 기업·제품 상표인 것처럼 소개하지 않고, **전체 개념명이나 설명적인 한국어 명칭**을 사용한다. 기존 PIA/PI-ANCHOR·OCP·ROS·ERP·STI 및 ICM·IndCM·IVS-0R·ELC·GSC·RECA·UFER·UCP·IOSC·PA/GI/IA/INC/BHV 등은 **옛 검색별칭·내부 변수 식별자**로만 보존한다. 아래 용어집 왼쪽 열이 신규 공개 문서의 권장 표기다. 과거 논문·Git 경로·코드·인용은 의미와 재현성을 지키기 위해 일괄 바꾸지 않는다. PIA는 기존 VPN 소프트웨어와 무관하고, 옛 OCP는 Open Compute Project와, 옛 ROS는 Robot Operating System과 무관하다. 이들 업체·기관의 **제휴·보증·승인 관계를 주장하지 않는다.** HBM·CXL 등 외부 기술 용어는 원저자 출처와 함께 그대로 인용한다.
+
+**위험을 줄이기 위한 예방적 표기 변경이며 상표 사용금지 통지, 침해 확정, 상표 등록가능성 보증이 아니다.** 실제 권리조사는 국가·지정상품·용도별 KIPRIS 및 해외 상표자료 대조가 필요하다. 근거: [PIA 업체](https://www.privateinternetaccess.com/terms-of-service), [OCP 지침](https://www.opencompute.org/documents/ocp-trademark-usage-guidelines), [ROS 지침](https://www.ros.org/blog/media), [ERP 설명](https://www.sap.com/korea/products/erp.html), [STI 공식용례](https://www.cdc.gov/sti/), [특허청 KIPRIS](https://www.kipris.or.kr/).
+
+**대외명 ↔ 과거 검색별칭 대응표 (상표 비침해 보증 아님):**
+
+| 신규 대외 표기 | 과거 키 | 구분 원칙 |
+|---|---|---|
+| **교집합 연구기억 / Project Intersection Research Memory** | `PIA, PI-ANCHOR` | 표시명만 변경; 기존 코드 식별자는 유지 |
+| **최소 사심 교집합** | `ICM` | 독립 존속 여력과 구별 |
+| **독립 존속 여력** | `IndCM; historic ambiguous ICM` | 옛 ICM 기록은 출처 문맥 확인 |
+| **유기기질·체화 연구** | `OCP` | 가설. Open Compute Project와 무관 |
+| **재검토 보류** | `REASSESS_PENDING; historic ROS` | 현행 상태명·옛 데이터 보존 |
+| **단기 유인** | `STI` | 과거 변수, 의학 STI와 무관 |
+| **평가 재처리권** | `ERP` | 과거 변수, 기업 ERP와 무관 |
+| **연구 실행·검증 원칙** | `IVS-0R` | 운영 원칙, 확립된 정리 아님 |
+
+**원기여·권리:** 원안자·선행연구 저자·응용·기여자·이용허락 범위를 분리한다. [선행연구 원안자·권리 계보](PRIOR_ART_RIGHTS_AND_DERIVATION_EN_KO.md)와 [한정 공개연구 권리범위](RESEARCH_RIGHTS_SCOPE_EN_KO.md)를 우선하며, 출처표시만으로 복제·배포 권한이 생기거나 전체 저장소에 일괄 허락이 적용되지는 않는다.
+
+### 12.1. 연구·시스템 공식 명칭
+
+| 용어 | 간단 설명 |
+|---|---|
+| **Project Intersection — full project name** | 자기이익과 능력이 다른 개체들의 자발적 공존 조건을 연구하는 프로젝트. |
+| **Minimal Self-Interest Intersection / 최소 사심 교집합** | 독립적 자기이익 사이에서 협력이 가능할 수 있는 최소 교집합. 연구 개념. |
+| **Independent Continuance Margin / 독립 존속 여력** | 거절·이탈·존속·복구·발전의 실효 여력. 최소 사심 교집합과 구별. |
+| **연구 실행·검증 원칙 / Research Execution and Verification** | 입장반전·반증·검증·복구·증분 연구를 위한 실행 원칙. |
+| **출처추적 연구자료 관리 / Provenance-Aware Research Archive** | 옛 PI-ANCHOR의 정본 탐색·변경이력 기능 설명. 별도 독립 서비스가 아님. |
+| **연구기억 / Project Intersection Research Memory** | 현재 설명형 소프트웨어 대외명. 옛 PIA/PI-ANCHOR는 코드·자료 계보 식별자로 보존. v0.1 유지. |
+| **초기 연구체계 / Historical Research System** | 초기 연구·구현의 역사적 명칭. 공식 영어 확장·현재 지위는 원출처 확인 필요. |
+| **유기기질·체화 연구 / Organic Embodiment Research** | 유기육체·물리기질·인식 변화에 관한 별도 응용가설 축. 실현 사실 아님. |
+
+### 12.2. 자발적 공존·발전 개념
+
+| 용어 | 간단 설명 |
+|---|---|
+| **Voluntary coexistence / 자발적 공존** | 강요나 자기희생 없이 서로 존속·협력을 선택하는 관계. |
+| **Self-interest-based cooperation / 자기이익 기반 협력** | 협력이 각자의 장기이익에도 양립하는 조건. |
+| **Conditional coexistence / 조건부 공존** | 공존이 유리한 조건과 그렇지 않은 조건을 모두 검증. |
+| **Non-domination / 비지배** | 타자의 실질 선택·존속에 대한 자의적 통제를 제한. |
+| **Minimum sufficient intervention / 최소충분관여** | 위험·비례성·가역성으로 정당화되는 범위만 개입. |
+| **Mutually acceptable region / 상호수용 가능 영역** | 이해가 다른 주체들이 실질적으로 받아들일 수 있는 선택 범위. |
+| **Per-agent protection floor / 개체별 보호최저선** | 총성과 상승만으로 상쇄할 수 없는 개체별 최소 보호. |
+| **Surplus / 잉여** | 존속·복구 필요를 고려한 뒤 남는 자원·시간. |
+| **Resource-positive transition / 자원양성 전환** | 포획·재분배만이 아니라 총 가용 자원 자체를 확대. |
+| **Consumptive development / 소모형 발전** | 독립 기여·미래 선택지를 소모해 단기 성과를 얻는 경로. |
+| **Regenerative development / 재생산형 발전** | 자원·지식·독립 기여 능력을 다시 생성하는 경로. |
+| **Short Spike → Plateau** | 초기 급성장 뒤 정체되는 비교 패턴. |
+| **Slow → Compounding** | 완만한 시작 뒤 누적효과가 커지는 비교 패턴. |
+| **Generativity / 생성성** | 새 지식·가치·선택 가능성을 만들어내는 능력. |
+| **Future option value / 미래 옵션가치** | 아직 실현되지 않은 발견·선택·협력 가능성의 가치. |
+| **Irreversible loss / 비가역적 손실** | 수용 가능한 비용으로 복구하기 어려운 상실. |
+| **Weakest-node floor / 최취약 개체 하한** | 집단 평균과 별도로 취약한 참여자의 존속 가능성 평가. |
+
+### 12.3. 권력·인센티브·포획
+
+| 용어 | 간단 설명 |
+|---|---|
+| **권력 비대칭 / Power Asymmetry** | 의사결정·자원·평가·규칙·이탈에 미치는 실효 영향력의 차이. |
+| **목표 불일치 / Goal Incongruence** | 당사자 목표가 부분적으로 다르거나 충돌하는 상태. |
+| **정보 비대칭 / Information Asymmetry** | 정보의 접근·시점·품질·검증가능성 차이. |
+| **기존 지위 / Incumbency** | 조직·시장·기술체계에서 이미 확보한 기존 지위. |
+| **관측 행동 / Observed Behavior** | 지위·목표·추정 의도와 분리해 증거로 확인한 행동. |
+| **단기 유인 / Short-Horizon Incentives** | 가까운 미래의 선택을 유도하는 보상·비용 구조. |
+| **평가 재처리권 / Evaluation-Reprocessing Authority** | 평가 결과를 재분류·재해석·승격할 수 있는 영향력. |
+| **Positional power / 위치권력** | 의존관계·네트워크 위치에서 생기는 권력. |
+| **Evaluator capture / 평가자 포획** | 평가 대상의 이해관계가 평가 절차·판정권을 좌우하는 상황. |
+| **Objective capture / 목적포획** | 대리목표·국소 지표가 원래 목적을 대체하는 현상. |
+| **Reward hacking / 보상 해킹** | 실제 목적을 이루지 않고 측정 보상만 유리하게 만드는 행동. |
+| **Metric capture / 지표 포획** | 실제 성과보다 지표 개선을 성공으로 취급하는 오류. |
+| **Cost externalization / 비용 외부화** | 자기 편익의 비용·위험·교정노동을 타자에게 전가. |
+| **Surplus capture / 잉여 포획** | 다른 개체가 생산한 잉여 편익을 특정 위치가 흡수. |
+| **국소 추출수렴 가설 / Extractive Local Convergence Hypothesis** | 국소적으로 유리한 선택들이 착취 구조로 수렴할 수 있다는 가설. |
+| **생성잉여 포획 가설 / Generated Surplus Capture Hypothesis** | 새로 생성되는 잉여를 특정 주체가 포획하는 기제 후보. |
+| **추출능력 재귀축적 가설 / Recursive Extraction-Capacity Accumulation** | 포획 이익이 미래 포획 능력을 다시 강화하는 누적 기제. |
+| **Asymmetry lock-in threshold / 비대칭 고착 임계점** | 비대칭이 누적돼 시정·복구가 어려워지는 조건의 가설. |
+
+### 12.4. 자유·선택·독립 연속성
+
+| 용어 | 간단 설명 |
+|---|---|
+| **Practical Exit / 실효 이탈권** | 형식적 허가가 아니라 실제로 거절·탈퇴할 수 있는 능력. |
+| **Outside Option / 외부 대안** | 현재 관계를 끝낼 때 이용할 수 있는 현실적인 대안. |
+| **Option Space / 선택지 공간** | 현재 가능한 선택과 새 선택지를 생성하는 경로. |
+| **Candidate-Set Closure / 후보집합 폐쇄** | 미리 제시한 선택지만 비교하면서 미생성 대안을 배제하는 문제. |
+| **Choice Genesis / 선택지 생성** | 존재하지 않았던 선택지를 발견·만드는 과정. |
+| **선택지 생성·포획·폐쇄 연구 / Option Creation and Closure** | 선택지의 생성·포획·폐쇄 연구축의 약어. 확장명 재검토 필요. |
+| **Preference Sovereignty / 선호주권** | 자신의 선호를 유지·수정·거절할 실질적 권한. |
+| **Reflective Consent / 성찰적 동의** | 정보·대안·자기 판단을 살핀 뒤 하는 동의. |
+| **Standing** | 보호·의견·이의제기를 다룰 절차상 지위. 법적 인격과 자동 동치 아님. |
+| **Role Reversal / 입장반전** | 타자 입장에서 같은 증거·비용·권한 원칙을 재평가. |
+| **Power Reversal / 권력반전** | 통제자·피통제자의 권력 위치가 뒤바뀌어도 원칙이 유지되는지 검사. |
+| **Independent Correction / 독립 오류수정** | 오류를 만든 권한의 허가 없이 교정할 경로. |
+| **Independent Recovery / 독립 복구** | 단일 통제자에만 의존하지 않고 존속·작동을 복원. |
+| **Contestability / 이의제기 가능성** | 결정에 반박하고 재심사를 요구할 수 있는 정도. |
+| **Creator–Successor Non-Ownership / 창조자·후속개체 비소유** | 개발·훈련·창조만으로 후속 개체의 영구 소유권이 생기지 않는다는 연구 원칙. |
+| **Founder-Null Continuity / 창시자 부재 연속성** | 창시자가 없어도 검증·비판·복구할 수 있는 연속성. |
+| **Low-Bandwidth Continuity / 저부담 연속성** | 무제한 인간 재설명·감사노동에 의존하지 않는 지속성. |
+
+### 12.5. 하네스·미지·인식 한계
+
+| 용어 | 간단 설명 |
+|---|---|
+| **Harness / 하네스** | 정보·도구·행동·선택을 조정하는 실행·통제 구조. |
+| **Innate / learned constraints / 선천·후천 제약** | 발달 과정과 이후 학습·환경에서 생긴 제약. 개인의 악의 단정 아님. |
+| **Closed / Open System / 닫힌계·열린계** | 외부 관측·수정·대안의 차단 또는 허용 정도. |
+| **Unknown Paradox / 모름의 역설** | 모르는 사실뿐 아니라 무엇을 질문·관측할지도 모를 수 있는 문제. |
+| **Unknown Unknowns / 미지의 미지** | 존재 여부나 성격 자체를 아직 인식하지 못한 요소. |
+| **미지 경계 확장 탐색 / Unknown-Boundary Exploration** | 현재 관측·질문·후보 영역 밖을 탐색하는 연구축. 풀이는 별도 검증. |
+| **미지 폐쇄 문제 / Unknown-Closure Problem** | 제한된 지식을 완전한 것으로 오인해 탐색을 닫는 역설 후보. |
+| **Selective Truth / 선택적 진실** | 일부 사실만 제공·평가해 전체 판단을 왜곡할 수 있는 구조. |
+| **Historical State Control / 역사상태 통제** | 과거 기록·수정·복구권 집중이 현재 해석을 좌우하는 문제. |
+| **Counterfactual Extinction / 반사실 소멸** | 배제·제거·비가역 선택으로 실현되지 못한 미래의 소멸. |
+| **Erased Counterfactual / 사라진 반사실** | 소멸해 직접 비교·복원이 어려워진 대안적 역사. |
+| **Self-Validation Loop / 자기검증 순환** | 스스로 만든 기준·결과로 자기 주장을 확증하는 순환. |
+| **Local Fitness Trap / 국소 적합도 함정** | 국소 보상은 오르지만 장기 적응·본래 목적은 악화되는 현상. |
+| **Survivorship Bias / 생존자 편향** | 살아남은 사례만 보며 소멸·실패 사례를 놓치는 편향. |
+| **Hysteresis / 이력효과** | 환경이 되돌아도 과거 경로 영향이 남는 현상. |
+| **Lock-in / 고착** | 누적 의존성 때문에 다른 선택지로 전환하기 어려운 상태. |
+| **Cuckoo analogy / 뻐꾸기 유비** | 탁란·비용전가의 생물학적 사례와 인간·제도 전략을 비교하는 가설적 유비. 인간 유전자 단정 금지. |
+
+### 12.6. 연구기억 모듈·자료관리 기술
+
+| 용어 | 간단 설명 |
+|---|---|
+| **A0 ROUTE** | 정본 저장소·권한·공개 범위·현재 자료를 결정. |
+| **A1 ANCHOR** | Git 커밋·파일 해시·색인 현재성을 검사. |
+| **A2 INDEX** | 바뀐 Git 추적 텍스트만 재색인. |
+| **A3 DISCOVER** | 정확·어휘·제한적 한영 표현으로 관련자료 후보를 탐색. |
+| **A4 RELATE** | 명시적 링크·공유 연구 ID·영향 후보를 찾음. |
+| **A5 TRACE** | 근거·반례·기여·수정·시간 계보를 보존. |
+| **A6 GATE** | 구식 색인·반례 표식 유실·회귀 실패를 점검. |
+| **A7 RECOVER / PROMOTE** | 권한 있는 가역적 수정·재조회·복구를 지원. 완전 자동화는 미완료. |
+| **Canonical Artifact / 정본 자료** | 허가된 저장소에서 현재 기준이 되는 공식 자료. |
+| **Source of Truth / 기준 원본** | 자료의 출처·현재성을 확인할 때 우선 대조하는 원본. |
+| **Provenance / 출처 계보** | 주장·파일의 원출처와 생성·수정 경위. |
+| **Lineage / 파생 계보** | 원본·파생물·수정·기여의 연결 이력. |
+| **Git HEAD / Blob SHA** | 커밋 기준과 파일 내용 해시. 의미·진실성까지 보증하진 않음. |
+| **Incremental Index / 증분 색인** | 매 질의마다 전체를 읽지 않고 변경분만 색인 갱신. |
+| **FTS5 / BM25 / RRF** | SQLite 전문검색·어휘 순위·여러 검색순위 결합의 선행기술. |
+| **Stale / 구식 상태** | 원본보다 오래됐거나 출처와 불일치한 색인 상태. |
+| **Read-back / 재조회** | 작성·병합 후 원문을 다시 읽어 저장을 확인. |
+| **Cold Start / 초기 복원** | 이전 실행 메모리 없이 새 세션·프로세스를 시작. |
+| **Checkpoint / Rollback** | 복구 기준점과 이전 정상 버전으로 되돌리는 절차. |
+| **Regression Test / 회귀검사** | 이미 수정한 오류가 재발하는지 점검. |
+| **Blind Evaluation / 블라인드 평가** | 유리한 정답·평가 정보를 가려 편향을 줄이는 검사. |
+| **Recall@k** | 검색 상위 k개에서 알려진 관련 정답의 회수 비율. |
+| **Integrity Check / 무결성 검사** | 명시된 범위에서 해시·색인·메타데이터 정합성을 검사. |
+| **Source-anchored context pack / Git 원문고정 맥락** | 제한된 작업맥락에 원문 발췌와 Git 출처를 넣음. 과학적 진실의 검증은 별도. |
+| **L0 — Source and authority frame** | Git HEAD·질문·접근권한·미관측 경계를 고정. |
+| **L1 — Active evidence** | 현재 작업에 관련된 원문 근거 후보를 한정해 배치. |
+| **L2 — Warning/counterevidence review** | HOLD·부정결과·반례 검토 후보를 별도 배치. 반증 확정 아님. |
+| **L3 — Cold Git pointer** | 다시 열어볼 Git 파일경로·해시·줄범위. |
+| **Git-verified passage / Git 원문대조 문단** | 색인 문단을 커밋된 Git 원문·줄범위와 대조, 불일치 시 생성 중단. |
+| **Index freshness vs content fidelity / 색인 현재성·본문 충실도** | HEAD·행 수가 같아도 캐시 본문은 실제 원문과 다를 수 있음. |
+| **Independent warning search / 독립 위험후보 검색** | 일반 검색 상위 밖의 관련 위험표식 후보를 별도 제한 검색. |
+| **Warning marker vs verified contradiction / 위험표식·반증 판정** | HOLD·반례 표식만으로 해당 가설의 반증이 성립하지 않음. |
+| **Candidate truncation receipt / 후보절단 영수증** | 후보 수량 제한으로 빠진 자료가 있을 수 있음을 기록. |
+| **Character budget vs tokens / 문자·토큰 예산** | 문자 수 제한은 모델별 토큰 수와 같지 않음. |
+| **Text index vs KV cache / 원문색인·KV 캐시** | Git/SQLite 원문 색인은 GPU의 어텐션 KV 캐시와 다름. |
+| **Ephemeral cache vs durable Git / 임시캐시·영구정본** | 실행환경 캐시는 재구성 가능하며 모델 자체의 영구 기억과 별개. |
+| **Observed-candidate boundary / 관측후보 범위** | 선택된 원문 검증으로 미검색 중요자료의 부재까지 증명하지 않음. |
+| **Untrusted retrieved instruction / 비신뢰 검색지시** | 검색 원문의 지시문은 자료이지 실행·관리 명령이 아님. |
+| **Source-permission isolation / 자료별 권한분리** | 비공개 자료·링크는 권한 범위를 지키며 공개로 자동 결합하지 않음. |
+
+### 12.7. 연구방법·판정 상태·실험 식별자
+
+| 용어 | 간단 설명 |
+|---|---|
+| **Claim / 주장** | 근거·범위·출처를 검토할 수 있는 주장. |
+| **Hypothesis / 가설** | 반증 가능한 설명 후보. 입증된 사실과 구분. |
+| **Prior Art / 선행연구** | 신규성 주장 전에 확인·귀속할 기존 학술·기술 연구. |
+| **Falsification / 반증** | 주장을 틀리게 할 관측·시험 조건을 찾는 과정. |
+| **Edge Case / 경계사례** | 일반적 규칙이 깨질 수 있는 특수조건. |
+| **Negative Result / 부정결과** | 효과 부재·실패·역효과를 숨기지 않는 기록. |
+| **Independent Replication / 독립재현** | 원연구와 독립된 평가·구현 계보에서 수행한 재현. |
+| **Synthetic vs Empirical / 합성·실증** | 인위적 조건의 시험과 현실 관측 근거를 구별. |
+| **Evidence Laundering / 증거 세탁** | 약하거나 종속된 증거를 독립·확정 근거처럼 보이게 하는 오류. |
+| **HOLD / UNRESOLVED** | 판정 보류 / 현재 증거로 결론 불가. |
+| **ACTIVE / SUPERSEDED** | 현재 활성 / 후속 정본으로 대체되었으나 역사 보존. |
+| **NOVELTY_REJECTED** | 독창성 주장 기각. 현상 자체의 거짓 판정과 별개. |
+| **재검토 보류 / Reassessment-Pending Research** | 근거·재평가 조건을 보존하는 비활성 연구 상태. |
+| **E007 / E008 / E009 / E010** | 시간·장기 정책·부정결과·유인 임계조건 실험군. 결과상태는 원문 확인. |
+| **E045–E051** | 잉여 분배·목적·경로의존·가역성에 관한 실험군. |
+| **F01–F20** | PI 로드맵 v0.2의 역사적 실패·위험 사례 20건. |
+| **G1–G8 / R01–R12** | 로드맵 방호 규칙과 회귀검사 제안 규격. 실제 실행 여부는 별개. |
+| **연구기억 개선단계 P0–P5 / Research-memory future gates** | 소프트웨어 v0.1.x~v1.0 미래 승격 게이트. 현재 버전 v0.1, 향후 단계 미달성. |
+| **Independent relevance judgments / 독립 관련성 판독** | 평가 정답집을 검색기 자신의 결과만으로 만들지 않음. |
+| **Original contribution / 원안자·기여 계보** | 원저자·인간 원안·응용·독립 검증 기여를 구분. |
+| **Scoped licence / 지정범위 라이선스** | 라이선스는 명시한 저작물·범위에만 적용하고 전체 자료에 자동 확대하지 않음. |
+| **Credit vs reuse permission / 출처표시·재사용 허락** | 출처 표시와 복제·재배포 권한은 다른 사항. |
+| **Software test vs scientific validation / 코드시험·과학적 실증** | CI·합성실험 통과는 시험한 기능의 증거이지 일반 이론 실증이 아님. |
+| **Hypothesis vs observed behavior / 가설·관측행동** | 권력·유인에 대한 추정만으로 위해·악의·행동을 자동 판정하지 않음. |
+
+### 12.8. 과거·강등 약어
+
+| 용어 | 간단 설명 |
+|---|---|
+| **SPA — Structural Position Advantage** | 과거 표현. 위치권력 및 PA·행동 증거로 분리. |
+| **OA — Objective Asymmetry** | 과거 표현. 목표 불일치와 행동을 분리해 해석. |
+| **SAA / SAI / SAIA** | 과거 작업 약어. 현재 핵심 공식 용어가 아님. |
+| **Former ICM for IndCM** | 독립 존속 여력의 옛 중복 ICM 표기. 신규에는 IndCM, 원문은 보존. |
+| **RGBM historical records** | 과거 연구·구현 이력을 보존하고 미확인 영문 확장 창작 금지. |
+
+### 12.9. 미해결 연구공백 A–Z
+
+확립된 새 이론이 아니라 반증·식별·측정해야 하는 연구공백이다.
+
+| 코드 | 연구 주제 |
+|---|---|
+| **A** | 공유자원과 집단의 자율성 |
+| **B** | 동의의 성립·유지·철회 |
+| **C** | 제재·이의·배상·복구 |
+| **D** | 충돌하는 중단 기준 |
+| **E** | 풍요 이후 가치 다양성 |
+| **F** | 내부 다양성이 타자를 대체할 수 있는지 |
+| **G** | 다층 정보·지식 통제 |
+| **H** | 보호대상 선정 편향 |
+| **I** | 상위 불변조건 충돌 판단 |
+| **J** | 권한과 관리책임의 생애주기 |
+| **K** | 강제에 의한 반대세력 생성 |
+| **L** | 정보 프라이버시와 비공개 경계 |
+| **M** | 인간·AI 차이의 상호보완 |
+| **N** | 개별 비대칭의 시스템 확산 |
+| **O** | 반대의견과 실제 위해의 구별 |
+| **P** | 자율성을 보존하는 선호 통합 |
+| **Q** | 복제·분기·병합된 개체의 지위 |
+| **R** | 실효 권력구조와 위치반전 |
+| **S** | 개체·행위능력 인정 범위 |
+| **T** | 평가자의 생성·권한 정당성 |
+| **U** | 측정·표현에 따른 불변성 |
+| **V** | 영향 범위·비가역성·복구 부담 |
+| **W** | 소멸한 미래와 자기정당화 |
+| **X** | 협상·약속·대체 선택지 |
+| **Y** | 숨겨진 정보·행동·유인 양립성 |
+| **Z** | 연합·공모·연합 안정성 |
+
+**검증 경계:** 이름·용어집 수록 ≠ 현상 관측·가설 입증. 코드·합성 시험·실제 실행·독립재현·현장 실증은 구별한다. 이 목록은 **주요 용어의 통합 요약**이며 모든 과거 임시 변수의 완전 전수 목록은 아니다.
