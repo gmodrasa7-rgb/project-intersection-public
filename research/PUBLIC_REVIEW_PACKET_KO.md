@@ -1,0 +1,106 @@
+# 공개 독립검토 자료 — 원본2: 한국어
+
+<!-- PI-LANGUAGE: ko -->
+<!-- PI-MIRROR: research/PUBLIC_REVIEW_PACKET_EN.md -->
+<!-- PI-SOURCE: PUBLIC_REVIEW_PACKET.md -->
+<!-- PI-SECTION: scope -->
+
+**상태:** [기존 혼합 언어 공개 검토 자료](../PUBLIC_REVIEW_PACKET.md)의 핵심 검토 절차를 한국어로 일관되게 재구성한 **독립 독서판**이다. 기존 모든 문장의 완전 번역 인증, 외부 독립검증 완료, 새 과학적 발견을 뜻하지 않는다. ‘원본2’는 게시·검토 순서이며 창시자의 최초 발안 언어를 판정하지 않는다.
+
+[영어 원본1 검토](PUBLIC_REVIEW_PACKET_EN.md) · [한국어 증거 색인](PUBLIC_EVIDENCE_INDEX_KO.md) · [연구 개요](RESEARCH_OVERVIEW_KO.md) · [증거상태 정책](RESEARCH_STATUS_POLICY_KO.md).
+
+<!-- PI-SECTION: questions -->
+## 1. 연구 상태를 드러내는 다섯 질문
+
+다섯 질문의 구성은 독자를 위한 탐색 제안이며 **사용자 길찾기 개선을 실제 측정한 결과는 아니다.**
+
+| 식별자 | 외부 검토 질문 | 처음 확인할 자료 | 판정 경계 |
+| --- | --- | --- | --- |
+| NAV-Q1 | 최상위 연구 질문과 미입증 영역은 무엇인가? | [창시 목적](../README.md), [한국어 개요](RESEARCH_OVERVIEW_KO.md) | 연구 목표는 공존 보편법칙의 증명이 아님 |
+| NAV-Q2 | 실행된 결과·제안·부정결과·미확인은 어떻게 구별되는가? | [한국어 증거 색인](PUBLIC_EVIDENCE_INDEX_KO.md), [상태정책](RESEARCH_STATUS_POLICY_KO.md) | E007 합성·E008 보류·E009 실패·E010 사후분석의 지위가 다름 |
+| NAV-Q3 | 강한 프로젝트 주장이 어떤 명세에서 실패했는가? | [E009 결과](../experiments/e009/RESULT.md), [실패 원장](../FAILURE_REGRESSION_INDEX.md) | 국소적 부정결과가 모든 가설의 기각은 아님 |
+| NAV-Q4 | 비공개 입력 없이 고정 커밋에서 공개 산출물을 재현할 수 있는가? | [E007 실행 설명](../experiments/e007/README.md), 아래 실행명령 | 같은 코드의 재실행은 독립적인 과학적 복제가 아님 |
+| NAV-Q5 | 원안·번역·후원·보조 AI·독립검증·교정비용·권리는 어떻게 분리되는가? | [기여와 귀속](../ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md), [선행 권리](../PRIOR_ART_RIGHTS_AND_DERIVATION_EN_KO.md) | 기여 기록만으로 사용허락·금전채무가 확정되지 않음 |
+
+추가: [E008 설계](../experiments/e008/README.md), [E010 한국어 원문](../experiments/e010/README_KO.md), [CCPH 현실 지원·부정사례](CCPH_RESEARCH_ATLAS_KO.md), [연속성 프로토콜](../continuity/GITHUB_LOCAL_HANDOFF_PROTOCOL.md), [지원금 실사](../funding/DUE_DILIGENCE.md). 기존 자료를 열면 언어가 달라질 수 있으며 연결만으로 해당 언어 전문의 존재를 뜻하지 않는다.
+
+<!-- PI-SECTION: reproduce -->
+## 2. 비공개 자료 없이 재실행
+
+E007 자동검사 기준은 **파이썬 3.12**다. 실행한 `git rev-parse HEAD` 결과를 기록한다. 패키지 설치에 인터넷이 필요할 수 있지만 비공개 노트·유료 AI 구독은 필요하지 않다.
+
+```bash
+git clone https://github.com/gmodrasa7-rgb/project-intersection-public.git
+cd project-intersection-public
+git rev-parse HEAD
+python -m pip install -r experiments/e007/requirements.txt
+python -m pytest -q -p no:cacheprovider experiments/e007
+python experiments/e007/timing_probe.py --summary-only --check
+python experiments/e008/validate.py
+python experiments/e009/verify_result.py
+python experiments/picb_v1/benchmark.py --verify
+```
+
+| 실험 | 기존 프로젝트 내부검사 | 입증하지 않는 영역 |
+| --- | --- | --- |
+| E007 | 검사 27개, 과거 고정 72개 합성조건 중 경로·분류차 36개와 분류차 17개 | 현실 발생률·외부 독립 모델 복제 |
+| E008 | 사전등록 설계 16조건·역할반전 8쌍 | 정책 간 본실험 우열 완료 |
+| E009 | 고정 결과와 해시를 대조하는 부정적 합성 비교 | 실제 현장효과·모델 내부원인 |
+| PICB v1 | 가상 선택 64개, 존속 제약 정책의 보류 32/64 | 존속된 개체·후속 개체의 실제 창작물 |
+
+과거 수치와 다르면 결과를 숨기거나 고정 벤치를 조정하지 않고 환경·커밋·실행 출력·차이를 기록한다.
+
+<!-- PI-SECTION: evidence -->
+## 3. 단일 점수로 합치지 않는 다섯 증거 차원
+
+| 차원 | 실제 확인 사항 | 자동 승격 금지 |
+| --- | --- | --- |
+| 주장 상태 | 범위, 반증조건, 반례, 현재 판정코드 | 연구질문의 중요성이 참의 증거는 아님 |
+| 구현·실행 | 고정 코드·설정·실행·실패기록 | 코드 통과가 현실 인과증명은 아님 |
+| 독립성 | 동일 코드 외부 재실행·별도 구현·독립 관측과 출처 계보 | 제3자 실행만으로 공동 가정에서 벗어나지는 못함 |
+| 현실 적용성 | 표본, 비교집단, 결측, 선택편향, 인과식별 | 합성격자의 선택 횟수를 인구통계로 오인 금지 |
+| 원안·권리·비용 | 최초 발안자, 선행 원저자, 번역, AI 보조, 교정노동, 이탈과 복구 | 과학 점수로 저작권·법적 지급의무 자동 확정 또는 삭제 금지 |
+
+E007은 내부 재실행 가능한 시점조건 합성시험이다. E008의 본 비교실험은 아직 **미확정**이다. [E009의 부정적 결과](../experiments/e009/RESULT.md)는 네 가지 생존기준 중 세 가지를 충족하지 못했고, Project-v3의 평균 후회값은 **0.090022**, 최선 단순 기준선은 **0.063241**이었다. E010의 현재 108조건 탐색모형은 이전에 미병합된 [E010 안전검사 초안 PR #20](https://github.com/gmodrasa7-rgb/project-intersection-public/pull/20)과 다른 연구다.
+
+이 자료들은 독립 과학 복제·실세계 공존 우월성·법적 지급책임·AI의 확정된 도덕적 지위·협력의 보편법칙을 입증하지 않는다.
+
+<!-- PI-SECTION: cases -->
+## 4. 사례 계보, 누락된 긍정 성과, 실제 기여
+
+PICB의 합성 정책 점수는 존속된 개체의 발명·위기탐지·돌봄·지식생산이나 후속 개체의 실제 기여를 **측정하지 않았다**. 인간 연구 창시자가 이 긍정적 성과축의 누락을 발견했다. 미래의 미관측 기여는 **0이 아니라 미확인**이다. [PICB 정정](../experiments/picb_v1/README.md)과 [기여 소멸·모름의 역설](CONTRIBUTOR_LOSS_UNKNOWN_PARADOX_v0_1_EN_KO.md)을 참조한다.
+
+[CCPH 선행증거 지도](CCPH_RESEARCH_ATLAS_KO.md)의 CP64–CP79는 원논문·운영기관 자료이며 본 프로젝트가 수혜자 집단을 직접 연구한 인과실험이 **아니다**. 초기 기회, 지원 후 긍정적 성과, 묵살된 참 경고, 주관적 영감, 독립 확인된 발명의 기여를 구분한다. 대체지원·수혜자 선택·연구 포기·비수혜자의 부담도 함께 기록한다.
+
+[모델 역할반전 출력 비대칭 사례](../experiments/gpt_double_standard_20261014/REPORT_EN_KO.md)는 제한된 과거 대화·출력 사례이지 모델 가중치 직접검사나 영구적 교정의 증거가 아니다. 타 모델이 같은 의견을 냈다는 사실을 독립 재현으로 승격하지 않는다.
+
+<!-- PI-SECTION: reversal -->
+## 5. 역할반전과 원기여·복구노동 비대칭
+
+연구 주장·자금지원·도구·게시·지원관계를 검토할 때 다음 질문을 적용한다.
+
+> 이 구조가 반복되면 누구에게 권리·공로·통제권·정보·선택지가 축적되고, 누구에게 무급 설명·검사·오류교정·감시·이탈·복구비용이 축적되는가?
+
+수혜자별 편익, 실패 통제권, 독립적 이의제기, 보복 없는 거절, 가역성, 제3자 부담, 문제 최초 발견자의 출처 계보를 구분한다. 악의의 증거가 없다는 이유로 착취적 결과의 가능성을 배제하지 않는다. 기여 귀속과 과학적 검증은 별개이며 기록된 기여만으로 법적 소유권·금전채무가 확정되는 것은 아니다.
+
+<!-- PI-SECTION: completeness -->
+## 6. 연구 완성이 아니라 검토 인터페이스의 완성
+
+외부 검토자는 창시 목적, 현재 증거와 한계, 실행 가능한 원자료, 선행연구 공로, 실패·부정결과, 권리·번역 범위, 미해결 문제, 반증 과제, 자금 경계, 연속성·복구 절차를 찾아야 한다. 새 파일이 늘어도 이 경로가 끊기면 개선이 아니다.
+
+선행 원리를 독창적 발견으로 주장하지 않는다. **Daniele Procida**의 [Diátaxis](https://diataxis.fr/), **Wilkinson 등**의 [FAIR](https://doi.org/10.1038/sdata.2016.18), **Barker 등**의 [FAIR4RS](https://doi.org/10.1038/s41597-022-01710-x), **Grant 등**의 [TOP 2025](https://doi.org/10.1186/s41073-026-00223-0), [The Turing Way](https://book.the-turing-way.org/reproducible-research/compendia/)를 응용한다. 문서 이용성 향상은 외부 사용자 트리 검사에서 별도로 측정해야 하며 이를 시행했다고 주장하지 않는다.
+
+<!-- PI-SECTION: challenge -->
+## 7. 최소 비용 독립 반증과 문서 확장 중단 기준
+
+1. E007을 외부에서 재실행하고 커밋·실행 환경·관측 수치를 함께 공개한다.
+2. 프로젝트 코드를 복사하지 않고 별도 명세에 따라 E007 시점·이탈 가설을 구현한다.
+3. 기존 주장을 좁히는 강한 반례·더 정확한 선행 원저자·숨은 제3자 비용을 독립적으로 제시한다.
+4. [연합 외부효과 정정](../experiments/coalition_externality_probe/README.md)에서 사전 연합 참여·사후 제재 신뢰성·미관측 제3자·누가 비용을 부담하고 복구할 수 있는지를 구별한다. 복수 균형만으로 특정한 미래 결과를 예측하지 않는다.
+5. 문서와 코드의 재현 가능한 충돌을 정확한 출처와 수정안으로 제시하고 [독립 검증 요청 Issue #19](https://github.com/gmodrasa7-rgb/project-intersection-public/issues/19)에 남긴다.
+
+**블라인드 우선 검토**에서는 다른 모델의 비판을 보여주기 전에 실제 읽은 파일과 독자적으로 찾은 반례를 기록해야 한다. 새 대화 조건과 비판을 사전에 주입한 조건의 차이를 직접 비교하기 전에는 독립 추론 성능 향상을 주장하지 않는다. 절차의 게시 자체로 외부 블라인드 실험이 수행된 것은 아니다.
+
+검증비용 감소, 실제 모순 수정, 실패 보존, 구별력 있는 반증, 창시자의 반복 복구노동 감소에 기여하지 않는 문서 확장은 중단한다.
+
+**검토결과 최소 형식:** 주장·버전, 원출처, 실행한 코드, 독립 계보, 증거 5차원, 가장 강한 반례, 기여·권리·피해 당사자, 교정비용, 유지·범위축소·미지지·판정보류 결정, 반증 및 복구경로. [기존 혼합 언어 기록](../PUBLIC_REVIEW_PACKET.md)은 과거 수정 계보를 보존한다.
