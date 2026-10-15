@@ -207,14 +207,31 @@ def check_public_path(path, label):
     require((ROOT / path).exists(), f"{label}: unresolved repository path: {path}")
 
 levels = (discovery.get("navigation_levels") or {})
-for group, expected_len in [
-    ("level_1_discovery", 7),
-    ("level_2_understanding_and_audit", 8),
-    ("level_3_artifacts_and_operations", 9),
-]:
+# Validate purpose, EN/KO visibility, uniqueness, and actual paths rather than
+# freezing an arbitrary 7/8/9 count that prevents improving the reader routes.
+essential_routes = {
+    "level_1_discovery": {
+        "README.md", "navigation/START_HERE_EN.md", "navigation/START_HERE_KO.md",
+    },
+    "level_2_understanding_and_audit": {
+        "research/RESEARCH_OVERVIEW_EN.md", "research/RESEARCH_OVERVIEW_KO.md",
+        "research/PUBLIC_EVIDENCE_INDEX_EN.md", "research/PUBLIC_EVIDENCE_INDEX_KO.md",
+        "research/PUBLIC_REVIEW_PACKET_EN.md", "research/PUBLIC_REVIEW_PACKET_KO.md",
+    },
+    "level_3_artifacts_and_operations": {
+        "experiments/", "research/", "knowledge/", "tools/",
+    },
+}
+for group, essentials in essential_routes.items():
     paths = levels.get(group) or []
-    require(isinstance(paths, list) and len(paths) == expected_len,
-            f"{group}: three-level navigation contract changed")
+    if not isinstance(paths, list):
+        require(False, f"{group}: expected a list of existing paths")
+        continue
+    require(len(paths) <= 24 and len(paths) >= len(essentials),
+            f"{group}: missing routes or excessive branching")
+    require(len(paths) == len(set(paths)), f"{group}: duplicate discovery routes")
+    require(essentials.issubset(set(paths)),
+            f"{group}: essential human/verification routes missing")
     for linked in paths:
         check_public_path(linked, group)
 
