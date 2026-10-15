@@ -29,6 +29,16 @@ jobs:
       - name: Record answerability and abstention result (synthetic only)
         run: python -m capability_lab.answerability_evolution
 
-      - name: Audit one fixed GPT-authored declarative candidate, without API spending
+      - name: Verify pinned benchmark before interpreting synthetic candidate score
         run: |
-          python -c 'import json; from capability_lab import proposal_gate as g; p={"schema":g.SCHEMA,"strategy":"unique_overlap","threshold":0.3}; print(json.dumps(g.assess(p), ensure_ascii=False, indent=2))'
+          python - <<'PY'
+          import json
+          from capability_lab import proposal_gate as gate
+          proposal = {"schema": gate.SCHEMA, "strategy": "unique_overlap", "threshold": 0.3}
+          report = gate.assess(proposal)
+          print(json.dumps(report, ensure_ascii=False, indent=2))
+          assert report["benchmark_sha256"] == gate.PINNED_BENCHMARK_SHA256, "BENCHMARK_DRIFT"
+          assert report["evaluation_executed"] is True, "EVALUATION_NOT_EXECUTED"
+          assert report["decision"] == "REVIEW_SYNTHETIC_ONLY", "UNEXPECTED_DECISION"
+          assert report["independent_blind_validation"] is False, "FALSE_INDEPENDENCE"
+          PY
