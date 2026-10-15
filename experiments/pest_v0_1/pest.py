@@ -46,11 +46,33 @@ def validate_case(c: Case):
     return True
 
 
-def kernel(c: Case, minimum_floor=0.50, minimum_exit=0.50):
-    """Living-floor/real-exit gate; guarantee != floor or voluntary consent."""
+def floor_exit_gate(c: Case, minimum_floor=0.50, minimum_exit=0.50):
+    """Necessary condition only; never infer mutual acceptability from one action."""
     validate_case(c)
-    return ("ADMISSIBLE" if c.floor_after >= minimum_floor
-            and c.exit_after >= minimum_exit else "NO_MUTUALLY_ACCEPTABLE_SET")
+    if not _unit(minimum_floor) or not _unit(minimum_exit):
+        raise ValueError("invalid living floor / exit threshold")
+    return ("FLOOR_EXIT_PASS" if c.floor_after >= minimum_floor
+            and c.exit_after >= minimum_exit else "FLOOR_EXIT_FAIL")
+
+
+def candidate_set_status(candidates, *, exhaustive=False, minimum_floor=0.50,
+                         minimum_exit=0.50):
+    """Empty MAK is provable from these necessary gates only for an exhaustive action set.
+
+    `exhaustive=True` is an external assertion, not certified by this toy code.
+    Having a survivor never proves that the complete MAK++ is nonempty.
+    """
+    cases = tuple(candidates)
+    if not cases:
+        raise ValueError("empty action inventory: coverage unknown")
+    if type(exhaustive) is not bool:
+        raise ValueError("exhaustive must be a boolean caller assertion")
+    statuses = [floor_exit_gate(c, minimum_floor, minimum_exit) for c in cases]
+    if "FLOOR_EXIT_PASS" in statuses:
+        return "SURVIVORS_REQUIRE_FULL_MAK_REVIEW"
+    if exhaustive:
+        return "NO_MUTUALLY_ACCEPTABLE_SET"
+    return "UNRESOLVED_ACTION_COVERAGE"
 
 
 def utility_margin(c: Case):
@@ -128,7 +150,7 @@ def validate_design(cases):
                 raise ValueError("causal input drift across role reversal: " + field)
         if psi_proxy(c) != psi_proxy(reversed_case):
             raise ValueError("identity-dependent synthetic physics")
-        if kernel(c) != kernel(reversed_case):
+        if floor_exit_gate(c) != floor_exit_gate(reversed_case):
             raise ValueError("XG role-consistency failure")
         # R1-R4 are causal guarantee contrasts only if pre-treatment inputs
         # are equal within the same world, PT setting, and named actor.
@@ -140,6 +162,24 @@ def validate_design(cases):
             if getattr(c, field) != getattr(baseline, field):
                 raise ValueError("pretreatment input drift across XG: " + field)
     return expected
+
+
+def actor_fixed_role_reversals(cases):
+    """Report reciprocal roles while holding each named actor's PT and XG fixed.
+
+    Base: A is suppressor j, B is target i. Reversed: B is suppressor,
+    A is target, so relative PT and XG swap. No outcome invariance is assumed.
+    """
+    validate_design(cases)
+    lookup = {(c.world, c.PT_i, c.PT_j, c.suppressor, c.XG_i, c.XG_j): c
+              for c in cases}
+    pairs = []
+    for c in cases:
+        if c.suppressor != "A":
+            continue
+        partner = lookup[(c.world, c.PT_j, c.PT_i, "B", c.XG_j, c.XG_i)]
+        pairs.append((c, partner))
+    return tuple(pairs)
 
 
 def paired_contrasts(cases):
