@@ -40,6 +40,38 @@ REQUIRED = {
     "KO independent critique": "research/PUBLIC_REVIEW_PACKET_KO.md",
     "Funding and contact": "funding/FUNDER_START_HERE.md",
 }
+# Top-level skeptical-reader tasks should require only one click from README.
+DIRECT_FROM_README = {
+    "E009 negative EN": "experiments/e009/RESULT_EN.md",
+    "E009 negative KO": "experiments/e009/RESULT_KO.md",
+    "E007 reproduction EN": "experiments/e007/README_EN.md",
+    "E007 reproduction KO": "experiments/e007/README_KO.md",
+    "Prior art EN": "research/PUBLIC_REVIEW_PACKET_EN.md",
+    "Prior art KO": "research/PUBLIC_REVIEW_PACKET_KO.md",
+    "Funder": "funding/FUNDER_START_HERE.md",
+}
+# The language-specific reader guides must still carry independent evidence
+# routes; direct README links cannot mask removal of a language-guide link.
+GUIDE_REQUIRED = {
+    "navigation/START_HERE_EN.md": (
+        "experiments/e007/README_EN.md",
+        "experiments/e008/README_EN.md",
+        "experiments/e009/RESULT_EN.md",
+        "experiments/e010/README_EN.md",
+        "research/CCPH_RESEARCH_ATLAS_EN.md",
+        "research/PUBLIC_REVIEW_PACKET_EN.md",
+        "funding/FUNDER_START_HERE.md",
+    ),
+    "navigation/START_HERE_KO.md": (
+        "experiments/e007/README_KO.md",
+        "experiments/e008/README_KO.md",
+        "experiments/e009/RESULT_KO.md",
+        "experiments/e010/README_KO.md",
+        "research/CCPH_RESEARCH_ATLAS_KO.md",
+        "research/PUBLIC_REVIEW_PACKET_KO.md",
+        "funding/FUNDER_START_HERE.md",
+    ),
+}
 GATEWAYS = (
     "README.md",
     "navigation/START_HERE_EN.md",
@@ -137,6 +169,17 @@ def check(overrides: dict[str, str] | None = None) -> list[str]:
         if found is None:
             errors.append(f"REVIEW_ROUTE_OVER_TWO_CLICKS_OR_WRONG_LANGUAGE:{label}:{destination}")
 
+    direct = {path for path, _ in neighbors("README.md")}
+    for label, destination in DIRECT_FROM_README.items():
+        if destination not in direct:
+            errors.append(f"REVIEW_TASK_NOT_DIRECTLY_LINKED:{label}:{destination}")
+
+    for guide, targets in GUIDE_REQUIRED.items():
+        neighbors_here = {path for path, _ in neighbors(guide)}
+        for target in targets:
+            if target not in neighbors_here:
+                errors.append(f"REVIEW_GUIDE_EVIDENCE_ROUTE_MISSING:{guide}:{target}")
+
     # Check local headings in the small externally promoted gateway set. This
     # catches dangling anchors even when the destination file itself exists.
     for page in GATEWAYS:
@@ -175,8 +218,14 @@ def self_test():
     en = document("navigation/START_HERE_EN.md")
     drift = en.replace("../experiments/e009/RESULT_EN.md",
                        "../experiments/e009/RESULT_KO.md")
-    assert "REVIEW_ROUTE_OVER_TWO_CLICKS_OR_WRONG_LANGUAGE" in " ".join(
+    assert "REVIEW_GUIDE_EVIDENCE_ROUTE_MISSING" in " ".join(
         check({"navigation/START_HERE_EN.md": drift}))
+
+    readme = document("README.md")
+    missing_direct = readme.replace(
+        "(experiments/e009/RESULT_EN.md)", "(experiments/e009/RESULT_KO.md)")
+    assert "REVIEW_TASK_NOT_DIRECTLY_LINKED" in " ".join(
+        check({"README.md": missing_direct}))
 
     ko = document("navigation/START_HERE_KO.md")
     changed = ko.replace("#원본2--한국어", "#missing-korean-anchor")
@@ -196,7 +245,7 @@ def self_test():
                         "Historical grant proposals")
     })
 
-    print("External-review route guard: PASS (4 deliberate defects rejected)")
+    print("External-review route guard: PASS (5 deliberate defects rejected)")
     print("Boundary: static graph/anchor/status checks, not visitor usability or scientific validation")
 
 
