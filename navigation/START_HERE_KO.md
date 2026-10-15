@@ -15,7 +15,7 @@
 
 | 단계 | 확인할 질문 | 원자료 |
 | --- | --- | --- |
-| 1 — 탐색 | 연구 질문은 무엇이고 어디서 시작하는가? | [창시 목적](../README.md), [연구 개요](../RESEARCH_OVERVIEW.md), [외부 AI 검토 안내](../AI_REVIEW_START_HERE.md) |
+| 1 — 탐색 | 연구 질문은 무엇이고 어디서 시작하는가? | [창시 목적](../README.md), [연구 개요](../RESEARCH_OVERVIEW.md), [한국어 외부 AI 검토 안내](AI_REVIEW_KO.md) |
 | 2 — 이해와 감사 | 주장·출처·한계·실패·권리는 어디에 기록되었는가? | [증거 색인](../PUBLIC_EVIDENCE_INDEX.md), [전체 목차](../RESEARCH_TOC.md), [증거상태 기준](../RESEARCH_STATUS_POLICY.md), [공개 검토 자료](../PUBLIC_REVIEW_PACKET.md) |
 | 3 — 원자료 검증 | 무엇을 재실행·반증·수정할 수 있는가? | [실험](../experiments/), [연구](../research/), [선행연구](../prior-art/), [지식 자료실](../knowledge/README.md), [거버넌스](../governance/) |
 
@@ -50,7 +50,7 @@ CCPH는 과거 사례를 재발굴하고 현재의 존속·영향을 관찰하�
 <!-- PI-SECTION: navigation -->
 ## 6. 추가 탐색
 
-- [연구 전체 목차](../RESEARCH_TOC.md): 과거 연구·사례·변형 자료.
+- [한국어 전체 목차](RESEARCH_TOC_KO.md): 한국어 독서 우선 경로. [기존 상세 연구 색인](../RESEARCH_TOC.md): 과거 이중언어 사례·원문 계보.
 - [외부 검토 자료](../PUBLIC_REVIEW_PACKET.md): 주장·재실행 경계·반증 경로.
 - [실패·회귀검사 색인](../FAILURE_REGRESSION_INDEX.md): 실패 및 수정 이력.
 - [연구지원 안내](../funding/FUNDER_START_HERE.md)와 [공개 후원장부](../funding/SPONSORSHIP_PUBLIC_LEDGER.md): 실제 지원금 수령이 검증되었다는 뜻은 아니다.
