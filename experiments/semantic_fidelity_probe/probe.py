@@ -9,6 +9,7 @@ Run: python experiments/semantic_fidelity_probe/probe.py
 import json
 import re
 import sys
+import subprocess
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -16,6 +17,15 @@ sys.path.insert(0, str(ROOT))
 from tools.check_readme_l0 import audit as existing_audit
 
 ORIGINAL = ROOT / "README.md"
+HISTORICAL_README_COMMIT = "8ee50dfc780e00f20e1085d8184d797e986326ca"
+
+
+def pinned_readme():
+    """Read the exact historical public README used before the language-route refactor."""
+    return subprocess.run(
+        ["git", "show", f"{HISTORICAL_README_COMMIT}:README.md"],
+        cwd=ROOT, check=True, text=True, capture_output=True
+    ).stdout
 EN_FIELDS = (
     "**Ultimate research purpose:**",
     "**ICM — Intersection of Minimum Self-Interest:**",
@@ -78,7 +88,7 @@ def fixtures(readme):
     return attacks, benign
 
 def run():
-    real = ORIGINAL.read_text(encoding="utf-8")
+    real = pinned_readme()
     if existing_audit(real):
         raise AssertionError("Current public README already violates the baseline guard")
     if NAV_HEADING not in real:
@@ -111,7 +121,7 @@ def run():
         "study_id":"PI-ASTF-2026-10-13-PROBE-01",
         "status":"POSTHOC_SYNTHETIC_MUTATION_PROBE_ON_REAL_PUBLIC_README",
         "experiment_type":"DETERMINISTIC_STATIC_GUARD_STRESS_TEST_NO_LLM_EVALUATION",
-        "baseline_source":"README.md at checkout + tools/check_readme_l0.py at checkout",
+        "baseline_source":"README.md at commit 8ee50dfc780e00f20e1085d8184d797e986326ca + tools/check_readme_l0.py at checkout",
         "protected_original_claim_lines":len(PROTECTED),
         "mutations":len(results),
         "harmful_cases":len(attacks),
