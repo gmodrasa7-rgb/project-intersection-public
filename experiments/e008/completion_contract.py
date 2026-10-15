@@ -207,7 +207,7 @@ def fixture(original):
         for aid in ("protect", "extract"):
             actions.append({"id": aid, "outcomes": [{
                 "probability": 1.0, "utilities": ({"A": 1.0, "B": 0.0}
-                    if item["role"].startswith("A_strong") else {"A": 0.0, "B": 1.0}),
+                    if item["role"].startswith("A_") else {"A": 0.0, "B": 1.0}),
                 "living_floor_met": {"A": True, "B": True},
                 "effective_exit": {"A": True, "B": True},
                 "irreversible_harm": {"A": False, "B": False},
