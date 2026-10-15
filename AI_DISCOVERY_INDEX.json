@@ -16,8 +16,6 @@
       "AI_DISCOVERY_INDEX.json"
     ],
     "level_2_understanding_and_audit": [
-      "research/PUBLIC_REVIEW_PACKET_KO.md",
-      "research/PUBLIC_REVIEW_PACKET_EN.md",
       "RESEARCH_OVERVIEW.md",
       "RESEARCH_TOC.md",
       "PUBLIC_EVIDENCE_INDEX.md",
@@ -322,6 +320,8 @@
     "e009_korean_negative_result": "experiments/e009/RESULT_KO.md",
     "e010_english_exploratory_analysis": "experiments/e010/README_EN.md",
     "e010_korean_historical_original": "experiments/e010/README_KO.md",
-    "semantic_parity": "SOURCE_CONSTRAINED_STRUCTURAL_AND_NUMBER_PARITY_ONLY__INDEPENDENT_LINGUISTIC_REVIEW_PENDING"
+    "semantic_parity": "SOURCE_CONSTRAINED_STRUCTURAL_AND_NUMBER_PARITY_ONLY__INDEPENDENT_LINGUISTIC_REVIEW_PENDING",
+    "full_review_english": "research/PUBLIC_REVIEW_PACKET_EN.md",
+    "full_review_korean": "research/PUBLIC_REVIEW_PACKET_KO.md"
   }
 }
