@@ -4,6 +4,14 @@
 
 ## Language routing
 
+- Independent English review packet: https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/research/PUBLIC_REVIEW_PACKET_EN.md
+- Independent Korean review packet: https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/research/PUBLIC_REVIEW_PACKET_KO.md
+- E009 negative synthetic result, English: https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/experiments/e009/RESULT_EN.md
+- E009 negative synthetic result, Korean: https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/experiments/e009/RESULT_KO.md
+- E010 exploratory analytic source, English translation: https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/experiments/e010/README_EN.md
+- E010 exploratory analytic source, Korean historical original: https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/experiments/e010/README_KO.md
+
+
 - English contents (Original 1): https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/navigation/RESEARCH_TOC_EN.md
 - Korean contents (Original 2): https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/navigation/RESEARCH_TOC_KO.md
 - English independent review: https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/navigation/AI_REVIEW_EN.md
