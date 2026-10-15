@@ -107,6 +107,73 @@
       "original_conception_language": "NOT_VERIFIED",
       "independent_review_receipt": null,
       "one_sided_edit_exception": null
+    },
+    {
+      "id": "PI-CORE-RESEARCH-OVERVIEW",
+      "original_1_english": "research/RESEARCH_OVERVIEW_EN.md",
+      "original_2_korean": "research/RESEARCH_OVERVIEW_KO.md",
+      "source_legacy_path": "RESEARCH_OVERVIEW.md",
+      "source_blob_sha_at_split": "e80a1a8f69d8af7b6ca2a3ae227f96a1f1267d3a",
+      "kind": "extracted_historical_language_sections_with_disclosed_editorial_repairs",
+      "structural_pair_present": true,
+      "meaning_review_status": "NOT_INDEPENDENTLY_VERIFIED",
+      "original_conception_language": "NOT_VERIFIED",
+      "independent_review_receipt": null,
+      "one_sided_edit_exception": null,
+      "known_divergences": [
+        "Original English combined section contained a Korean explanation moved into the Korean reader edition.",
+        "An English adversarial appendix after the Korean section was retained in English and rendered in Korean in the paired reader edition.",
+        "English and Korean historical narrative lengths differ; full semantic parity has not been independently established."
+      ]
+    },
+    {
+      "id": "PI-CORE-PUBLIC-EVIDENCE-INDEX",
+      "original_1_english": "research/PUBLIC_EVIDENCE_INDEX_EN.md",
+      "original_2_korean": "research/PUBLIC_EVIDENCE_INDEX_KO.md",
+      "source_legacy_path": "PUBLIC_EVIDENCE_INDEX.md",
+      "source_blob_sha_at_split": "7d42a259065e060739ddd56b9a324a3921fd92e4",
+      "kind": "extracted_historical_language_sections_with_disclosed_editorial_repairs",
+      "structural_pair_present": true,
+      "meaning_review_status": "NOT_INDEPENDENTLY_VERIFIED",
+      "original_conception_language": "NOT_VERIFIED",
+      "independent_review_receipt": null,
+      "one_sided_edit_exception": null,
+      "known_divergences": [
+        "Earlier Korean combined ledger omitted the later executed investigator-labeled 14-case static guard; the new Korean reader edition reports the later narrower result without deleting the historical version.",
+        "The Korean recorded status transition used a different terminal label in one legacy funding subsection; the English record used REJECTED."
+      ]
+    },
+    {
+      "id": "PI-CORE-RESEARCH-STATUS-POLICY",
+      "original_1_english": "research/RESEARCH_STATUS_POLICY_EN.md",
+      "original_2_korean": "research/RESEARCH_STATUS_POLICY_KO.md",
+      "source_legacy_path": "RESEARCH_STATUS_POLICY.md",
+      "source_blob_sha_at_split": "e99419192c4a0e406bacde0ded39dec2098d987a",
+      "kind": "extracted_historical_language_sections_with_disclosed_editorial_repairs",
+      "structural_pair_present": true,
+      "meaning_review_status": "NOT_INDEPENDENTLY_VERIFIED",
+      "original_conception_language": "NOT_VERIFIED",
+      "independent_review_receipt": null,
+      "one_sided_edit_exception": null,
+      "known_divergences": []
+    },
+    {
+      "id": "PI-CORE-CCPH-RESEARCH-ATLAS",
+      "original_1_english": "research/CCPH_RESEARCH_ATLAS_EN.md",
+      "original_2_korean": "research/CCPH_RESEARCH_ATLAS_KO.md",
+      "source_legacy_path": "CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md",
+      "source_blob_sha_at_split": "bb02f635d74aa4e39237825e18625451870f1903",
+      "kind": "source-attributed_finite_case_atlas_not_complete_translation",
+      "structural_pair_present": true,
+      "meaning_review_status": "NOT_INDEPENDENTLY_VERIFIED",
+      "original_conception_language": "ko_founder_defined_per_historical_source_not_independently_adjudicated",
+      "independent_review_receipt": null,
+      "one_sided_edit_exception": null,
+      "case_id_alignment": "CP64-CP79; 16 distinct source families or documents, not 16 project experiments",
+      "known_divergences": [
+        "Atlas is a deliberately bounded source map, not full crosswalk translation.",
+        "Source result quotations and effect estimates are paraphrased with explicit identification limits; external original paper verification remains necessary."
+      ]
     }
   ],
   "legacy_priority_unresolved": [
@@ -145,13 +212,13 @@
     }
   ],
   "metrics": {
-    "markdown_total": 127,
+    "markdown_total": 135,
     "filename_classes": {
       "UNMARKED_LANGUAGE_UNVERIFIED": 42,
       "LEGACY_MIXED_READER_ENTRY": 2,
-      "KO_SUFFIX_UNVERIFIED": 53,
+      "KO_SUFFIX_UNVERIFIED": 57,
+      "EN_SUFFIX_UNVERIFIED": 11,
       "ORDERED_BILINGUAL_FOUNDER_OR_GOVERNANCE": 2,
-      "EN_SUFFIX_UNVERIFIED": 7,
       "COMBINED_NAMING_UNVERIFIED": 21
     },
     "meaning_verified_pairs": 0,
@@ -825,6 +892,18 @@
       "content_equivalence": "NOT_REVIEWED"
     },
     {
+      "path": "research/CCPH_RESEARCH_ATLAS_EN.md",
+      "filename_class": "EN_SUFFIX_UNVERIFIED",
+      "counterpart_path": "research/CCPH_RESEARCH_ATLAS_KO.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "research/CCPH_RESEARCH_ATLAS_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": "research/CCPH_RESEARCH_ATLAS_EN.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
       "path": "research/CONTINUANCE_RESOURCE_THRESHOLD_v0_1_EN_KO.md",
       "filename_class": "COMBINED_NAMING_UNVERIFIED",
       "counterpart_path": null,
@@ -903,9 +982,33 @@
       "content_equivalence": "NOT_REVIEWED"
     },
     {
+      "path": "research/PUBLIC_EVIDENCE_INDEX_EN.md",
+      "filename_class": "EN_SUFFIX_UNVERIFIED",
+      "counterpart_path": "research/PUBLIC_EVIDENCE_INDEX_KO.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "research/PUBLIC_EVIDENCE_INDEX_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": "research/PUBLIC_EVIDENCE_INDEX_EN.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
       "path": "research/RECIPROCAL_NONDOMINATION_MINIMAL_INTRUSION_COMMON_LAW_2026-10-12_KO.md",
       "filename_class": "KO_SUFFIX_UNVERIFIED",
       "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "research/RESEARCH_OVERVIEW_EN.md",
+      "filename_class": "EN_SUFFIX_UNVERIFIED",
+      "counterpart_path": "research/RESEARCH_OVERVIEW_KO.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "research/RESEARCH_OVERVIEW_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": "research/RESEARCH_OVERVIEW_EN.md",
       "content_equivalence": "NOT_REVIEWED"
     },
     {
@@ -918,6 +1021,18 @@
       "path": "research/RESEARCH_ROADMAP_v0_2_EN_KO.md",
       "filename_class": "COMBINED_NAMING_UNVERIFIED",
       "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "research/RESEARCH_STATUS_POLICY_EN.md",
+      "filename_class": "EN_SUFFIX_UNVERIFIED",
+      "counterpart_path": "research/RESEARCH_STATUS_POLICY_KO.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "research/RESEARCH_STATUS_POLICY_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": "research/RESEARCH_STATUS_POLICY_EN.md",
       "content_equivalence": "NOT_REVIEWED"
     }
   ],
@@ -1029,5 +1144,33 @@
       "A document name ending _KO or _EN does not prove full language purity or matched translation.",
       "Source commits and all contributor/rights/evidence records remain authoritative; this sample does not change them."
     ]
-  }
+  },
+  "disclosure_history": [
+    {
+      "as_of": "2026-10-15",
+      "status": "READER_EDITIONS_CREATED_NOT_INDEPENDENTLY_TRANSLATION_CERTIFIED",
+      "new_documents": [
+        "research/RESEARCH_OVERVIEW_EN.md",
+        "research/RESEARCH_OVERVIEW_KO.md",
+        "research/PUBLIC_EVIDENCE_INDEX_EN.md",
+        "research/PUBLIC_EVIDENCE_INDEX_KO.md",
+        "research/RESEARCH_STATUS_POLICY_EN.md",
+        "research/RESEARCH_STATUS_POLICY_KO.md"
+      ],
+      "new_edition_pairs": 3,
+      "editorial_notes": "Source combined files kept unchanged; no deleted negative results or rights records; Korean source drift in evidence index disclosed.",
+      "reviewer_actions": "Independent numeric and claim-level semantic comparison remains pending"
+    },
+    {
+      "as_of": "2026-10-15",
+      "status": "CCPH_ATLAS_BOUNDED_EDITION",
+      "new_documents": [
+        "research/CCPH_RESEARCH_ATLAS_EN.md",
+        "research/CCPH_RESEARCH_ATLAS_KO.md"
+      ],
+      "case_rows": "CP64-CP79",
+      "translation_status": "bounded authored summaries, not 290KB historical crosswalk translation or independent paper re-verification"
+    }
+  ],
+  "path_layout_policy": "Keep the project root entry-only; bilingual full research editions live in existing research/ and their original historical combined documents retain stable root URLs."
 }

@@ -19,7 +19,6 @@ KO_README = "## 원본2 — 한국어 | 창시 목적 전문 대응본"
 SECTIONS = ("purpose", "levels", "evidence", "ccph", "rights", "navigation", "limitations")
 REQUIRED = (
     "../README.md",
-    "../PUBLIC_EVIDENCE_INDEX.md",
     "../RESEARCH_TOC.md",
     "../ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md",
     "../CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md",
@@ -85,7 +84,12 @@ def guide_errors(path: str, body: str, language: str) -> list[str]:
         if len(KOREAN.findall(human_text(body))) < 100:
             errors.append(f"{path}:INSUFFICIENT_KOREAN_READING_CONTENT")
     links = set(MD_LINK.findall(body))
-    for mandatory in REQUIRED:
+    required = REQUIRED + (
+        "../research/PUBLIC_EVIDENCE_INDEX_EN.md" if language == "en" else "../research/PUBLIC_EVIDENCE_INDEX_KO.md",
+        "../research/RESEARCH_OVERVIEW_EN.md" if language == "en" else "../research/RESEARCH_OVERVIEW_KO.md",
+        "../research/RESEARCH_STATUS_POLICY_EN.md" if language == "en" else "../research/RESEARCH_STATUS_POLICY_KO.md",
+    )
+    for mandatory in required:
         if mandatory not in links:
             errors.append(f"{path}:REQUIRED_ROUTE_MISSING:{mandatory}")
     if language == "en" and "START_HERE_KO.md" not in body:
