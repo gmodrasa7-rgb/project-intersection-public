@@ -187,7 +187,7 @@ def check(overrides: dict[str, str] | None = None) -> list[str]:
     frozen_baseline = "15444868329870a883884705b96f553b641f408f"
     methods = (
         ("navigation/AI_REVIEW_EN.md",
-         ("one immutable Git revision only (between-subjects, not crossover)",
+         ("**one** immutable Git revision only (between-subjects, not crossover)",
           "Frozen answer key", "42.35%", "3/4",
           "../experiments/e008/README_EN.md",
           "../experiments/e009/RESULT_EN.md",
@@ -351,7 +351,7 @@ def self_test():
     review_en = document("navigation/AI_REVIEW_EN.md")
     assert "READER_EVALUATION_UNGROUNDED_OR_LEARNING_CONFOUNDED" in " ".join(check({
         "navigation/AI_REVIEW_EN.md":
-        review_en.replace("one immutable Git revision only (between-subjects, not crossover)",
+        review_en.replace("**one** immutable Git revision only (between-subjects, not crossover)",
                           "both versions in a single crossover session")
     }))
     review_ko = document("navigation/AI_REVIEW_KO.md")
