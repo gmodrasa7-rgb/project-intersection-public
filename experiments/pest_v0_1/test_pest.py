@@ -202,6 +202,49 @@ class TestPEST(unittest.TestCase):
             self.assertEqual(set(row["floor_exit_screens"].values()),
                              {"FLOOR_EXIT_PASS"})
 
+    def test_all_gates_pass_but_material_floor_exit_loss_is_visible(self):
+        # Previously PASS/PASS obscured a drop from 0.70 to 0.51/0.52;
+        # label-twin mutation is matched, so the factorial is still valid.
+        cases = tuple(replace(c, floor_after=.51, exit_after=.52)
+                      if (c.world == "survival_fear" and c.PT_i == .75
+                          and c.PT_j == .75 and c.XG_i == 1 and c.XG_j == 1)
+                      else c for c in self.cases)
+        self.assertEqual(validate_design(cases), 96)
+        rows = [r for r in paired_contrasts(cases)
+                if r["world"] == "survival_fear"
+                and r["PT_i"] == .75 and r["PT_j"] == .75]
+        self.assertEqual(len(rows), 2)  # label twins; not independent observations
+        for row in rows:
+            self.assertLess(row["both_high_minus_both_low"], -DELTA)
+            self.assertEqual(set(row["floor_exit_screens"].values()), {"FLOOR_EXIT_PASS"})
+            levels = row["floor_exit_values"]
+            self.assertEqual(set(levels), set(row["floor_exit_screens"]))
+            self.assertEqual(levels["R1_BOTH_PROTECTED"],
+                             {"floor_after": .51, "exit_after": .52})
+            self.assertEqual(levels["R2_NEITHER_PROTECTED"],
+                             {"floor_after": .70, "exit_after": .70})
+            self.assertAlmostEqual(row["joint_floor_change"], -.19)
+            self.assertAlmostEqual(row["joint_exit_change"], -.18)
+        self.assertEqual({k: v for k, v in rows[0].items() if k != "j"},
+                         {k: v for k, v in rows[1].items() if k != "j"})
+
+    def test_target_only_above_threshold_loss_not_hidden_by_joint_delta(self):
+        # Joint contrast alone also misses a material target-only change.
+        cases = tuple(replace(c, floor_after=.53, exit_after=.54)
+                      if (c.world == "capture_opportunity" and c.PT_i == .75
+                          and c.PT_j == .25 and c.XG_i == 1 and c.XG_j == 0)
+                      else c for c in self.cases)
+        rows = [r for r in paired_contrasts(cases)
+                if r["world"] == "capture_opportunity"
+                and r["PT_i"] == .75 and r["PT_j"] == .25]
+        self.assertEqual(len(rows), 2)
+        for row in rows:
+            self.assertEqual(set(row["floor_exit_screens"].values()), {"FLOOR_EXIT_PASS"})
+            self.assertEqual(row["floor_exit_values"]["R3_TARGET_ONLY"],
+                             {"floor_after": .53, "exit_after": .54})
+            self.assertEqual(row["joint_floor_change"], 0)
+            self.assertEqual(row["joint_exit_change"], 0)
+
     def test_identity_swap_no_payoff_change(self):
         a = Case("backlash", "A", .75, .75, 1, 1)
         self.assertEqual(psi_proxy(a), psi_proxy(replace(a, suppressor="B")))
