@@ -4,6 +4,10 @@
 
 ## Language routing
 
+- Source-first numeric/negative-status cross-language contract for E007–E010: https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/knowledge/claim-source-lock.json
+- Legacy E010 JSON field `effectiveExitPrevention` means the fraction of *extraction gain blocked*, not the probability of suppressing the other actor's exit. Do not invert the causal sign. This contract is not a scientific validity or translation certificate.
+
+
 - E007 timing report, English: https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/experiments/e007/README_EN.md
 - E007 timing report, Korean: https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/experiments/e007/README_KO.md
 - E008 preregistered study, English (NO MAIN RESULT): https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/experiments/e008/README_EN.md
