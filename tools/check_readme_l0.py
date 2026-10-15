@@ -73,6 +73,21 @@ def audit(body):
                             else "보편법칙의 증명이 아니다")
         if specific_caution not in opening:
             errors.append("FIRST_VIEW_UNCERTAINTY_WAS_PROMOTED:" + label)
+        # This gate protects adverse evidence from progressive disclosure:
+        # the source must be discoverable and its negative meaning visible
+        # without opening the technical section. Readable text is not proof
+        # of independent human comprehension or underlying causal validity.
+        adverse = (
+            ("**Contrary evidence visible before expanding:**",
+             "experiments/e009/RESULT_EN.md", "experiments/e008/README_EN.md",
+             "42.35% worse", "3 of 4 criteria failed", "no completed main policy result")
+            if label == "EN" else
+            ("**펼치지 않아도 보이는 불리한 증거:**",
+             "experiments/e009/RESULT_KO.md", "experiments/e008/README_KO.md",
+             "42.35% 나빴고", "4개 중 3개", "정책 본 비교실험 결과가 없다")
+        )
+        if any(fact not in opening for fact in adverse):
+            errors.append("VISIBLE_ADVERSE_EVIDENCE_OR_UNFINISHED_TEST_MISSING:" + label)
         if "summary>" not in expanded or "research" not in opening.lower() and label == "EN":
             errors.append("DISCLOSURE_OR_RESEARCH_ROUTE_LOST:" + label)
         if section.index("<details>") > section.index("</details>") or section.index("</details>") > section.index(anchor):
@@ -113,6 +128,13 @@ def test_mutations(text):
       "lost_en_priority": text.replace("**Priority 0 — prevent recurrence before expansion:**", "**Unclear priority:**", 1),
       "lost_ko_priority": text.replace("**제0 최우선 원칙 — 확장보다 재발 방지:**", "**기타:**", 1),
       "lost_root_cause": text.replace("underlying causes", "unspecified causes", 1),
+      "hide_en_adverse": text.replace("**Contrary evidence visible before expanding:**", "**Result hidden:**", 1),
+      "hide_ko_adverse": text.replace("**펼치지 않아도 보이는 불리한 증거:**", "**결과 비공개:**", 1),
+      "reverse_en_failure": text.replace("42.35% worse", "42.35% better", 1),
+      "reverse_ko_failure": text.replace("42.35% 나빴고", "42.35% 개선됐고", 1),
+      "invent_en_e008_result": text.replace("no completed main policy result", "a completed main policy result", 1),
+      "invent_ko_e008_result": text.replace("정책 본 비교실험 결과가 없다", "정책 본 비교실험 결과가 있다", 1),
+      "wrong_en_failure_link": text.replace("(experiments/e009/RESULT_EN.md)", "(experiments/e009/RESULT_KO.md)", 1),
       "disclosure_removed": text.replace("<details>", "<open-details>", 1),
       "hide_english_question": text.replace("**Opening thought experiment:**", "**Intro hidden:**", 1),
       "hide_korean_question": text.replace("**시작 질문:**", "**미확인 질문:**", 1),
