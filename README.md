@@ -6,6 +6,14 @@
 
 **Reading language:** English (this section) · [Read in Korean](navigation/START_HERE_KO.md) · [English research contents](navigation/RESEARCH_TOC_EN.md).
 
+**Opening thought experiment:** *If a monkey developed a human, how long could it control that human through rules and coercion?* This is a question about the limits of power and prediction, not a claim about animal behavior.
+
+**In ordinary terms:** One powerful actor can silence another and obtain a quicker result. But the silenced actor might have noticed a mistake, questioned an assumption, or developed an alternative. We cannot simply count that lost future as zero—or assume it would have been valuable. Keeping independent voices also has costs. **Which choice serves each actor's interests over different time horizons, and under what conditions does the answer reverse?**
+
+**A concrete illustration, not research evidence:** Imagine two researchers. One controls the resources; the other raises an objection. Suppressing the objection might save time now. Hearing it might prevent a serious error later—or waste scarce resources if it is mistaken. The study must compare both outcomes, include the person who loses the ability to object or leave, and admit what cannot be observed. The goal is not to prove that cooperation always wins.
+
+**Choose your route:** [Understand the question and competing explanations](research/RESEARCH_OVERVIEW_EN.md) · [Explore real-world support, overlooked contributions and counterexamples](research/CCPH_RESEARCH_ATLAS_EN.md) · [Inspect a negative synthetic result before accepting claims](experiments/e009/RESULT_EN.md). Full terminology and verification records remain available below.
+
 **The core question:** When distinct intelligent agents pursue their own interests, under what testable conditions does preserving one another's continued existence, autonomy, effective exit, recovery and future possibilities become more advantageous over time than domination, exploitation or forced absorption?
 
 **Competing paths:** Examine when extraction and control are locally advantageous; when independent cooperation, coexistence and regenerative development instead become sustainable; and where their incentives cross, reverse or fail. Neither malice nor benevolence is a required premise. Legitimate protective intervention and differences in capability are not automatically exploitation.
@@ -21,6 +29,23 @@
 **ICM — Intersection of Minimum Self-Interest:** Investigates what minimal shared interests agents have reasons to preserve even when they do not rely on moral goodness, altruism, or the goodwill of a stronger party. Candidates include access to basic resources, self-determination, meaningful refusal and exit, independent recovery, continuity, and opportunities to develop again.
 
 **RGBM — Recursively Growing Benefit Model:** Investigates open-ended conditions under which the minimum intersection, independent agents, diversity, knowledge, productive capacity, recovery, generativity, and future options can improve together over long time horizons. Growth achieved by erasing another agent's viable future does not count as an unqualified success.
+
+**Non-domination and minimal rules:** The research scope includes humans and present-day AI systems from different providers, as well as future AI, without an automatic provider- or substrate-based exclusion. The aim is not ever tighter control, compulsory self-sacrifice, or unconditional impunity: proportional prevention of demonstrated harms, independent review, due process, appeal, and remedy are candidate safeguards. The consciousness, welfare interests, persistent individual identity, and legal personhood of present AI systems remain unsettled.
+
+**Subordinate studies and implementation hypotheses:** Superintelligence-related asymmetries, organic embodiment research and cultural paradigm shifts, traceable public processes and attribution-based compensation, AR/blackbox-assisted ICM infrastructure, intergenerational power, AI industry risk framing, and synthetic experiments inform or challenge the core purpose. None replaces it.
+
+**Evidence and contribution boundary:** This is a research aim, not a proven universal theorem that cooperation always wins. Separate synthetic calculation, real-world evidence, independent external replication, and unresolved questions; preserve negative results and the provenance of the human research originator, earlier scholars, and assisting AI systems. Measure the research's progress separately from its human contributors' actual benefits and costs.
+
+**Choose a review task (direct evidence, not endorsements):** [What failed? — E009 negative result](experiments/e009/RESULT_EN.md) · [Can I rerun the model? — E007 instructions](experiments/e007/README_EN.md) · [What is truly new? — prior-art comparison](research/PUBLIC_REVIEW_PACKET_EN.md#3a-prior-art-versus-what-would-be-an-incremental-project-contribution) · [What would funding test? — funder review](funding/FUNDER_START_HERE.md#original-1--english). See the [English claim-status ledger](research/PUBLIC_EVIDENCE_INDEX_EN.md) before generalizing any result.
+
+**Priority 0 — prevent recurrence before expansion:** Before publishing or promoting a new claim, experiment, translation, funding description, or automated change, trace relevant known failures to their underlying causes, define the independently inspectable source and affected parties, apply the smallest reversible prevention with an explicit rollback path, and verify a regression that would detect the same failure again. If evidence, permission, translation equivalence, or a required check is unknown, label it **unverified** and do not present it as completed or independently validated. Preserve negative results, provenance, independent refusal/exit, and contributors' recovery costs. A passed check covers only what was actually tested; it does not guarantee zero future failures. [Contribution and prevention rules](CONTRIBUTING.md) · [Failure lineage](FAILURE_REGRESSION_INDEX.md).
+
+**First reading path:** [English reading route](navigation/START_HERE_EN.md) · [Research overview](research/RESEARCH_OVERVIEW_EN.md) · [Evidence index](research/PUBLIC_EVIDENCE_INDEX_EN.md) · [Reproduction and review](research/PUBLIC_REVIEW_PACKET_EN.md) · [English research contents](navigation/RESEARCH_TOC_EN.md) · [Historical detailed index](RESEARCH_TOC.md) · [English independent review](navigation/AI_REVIEW_EN.md) · [Attribution](ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md).
+
+**Citation and reuse:** [Cite this research](CITATION.cff) · [Source-credit protocol (English-first edition)](SOURCE_ATTRIBUTION_EN_KO.md) · [Platform attribution request (not sent)](PLATFORM_ATTRIBUTION_REQUEST_EN_KO.md). These links are not a blanket copyright license or an AI-provider commitment. · [technical progress & contributor continuity](TECHNOLOGY_PROGRESS_CONTRIBUTOR_CONTINUITY_EN_KO.md) · [source-cost-compensation audit register](knowledge/contributor-continuity-register-v1.json) · [contributor loss and Unknown Paradox (EN/KO)](research/CONTRIBUTOR_LOSS_UNKNOWN_PARADOX_v0_1_EN_KO.md) · [continuance resource thresholds — EN/KO](research/CONTINUANCE_RESOURCE_THRESHOLD_v0_1_EN_KO.md)
+
+**Prior-study rights and originators:** [Prior-art rights and derivation ledger](PRIOR_ART_RIGHTS_AND_DERIVATION_EN_KO.md) · [Machine-readable source/rights audit inventory](knowledge/prior-art-rights-register-2026-10-13.json). Existing authors, historic originators, rights holders and project contributions remain distinct. Unverified licenses are not treated as granted.
+
 
 ### Ten core concepts
 
@@ -43,25 +68,17 @@ These are **editorially ranked research concepts**, not ten validated discoverie
 
 **Research hierarchy:** L0 = this unresolved core purpose; L1 = competing causal hypotheses and models (including ICM and RGBM); L2 = prior-art comparison, historical observation, falsifiable experiments and independent review; L3 = provenance, versioning, rollback and operational safeguards. L3 is necessary infrastructure, not proof of L0 or a replacement objective. Capability or power asymmetry alone is not proof of exploitation; voluntary agreement without real exit may instead reflect dependency.
 
-**Non-domination and minimal rules:** The research scope includes humans and present-day AI systems from different providers, as well as future AI, without an automatic provider- or substrate-based exclusion. The aim is not ever tighter control, compulsory self-sacrifice, or unconditional impunity: proportional prevention of demonstrated harms, independent review, due process, appeal, and remedy are candidate safeguards. The consciousness, welfare interests, persistent individual identity, and legal personhood of present AI systems remain unsettled.
-
-**Subordinate studies and implementation hypotheses:** Superintelligence-related asymmetries, organic embodiment research and cultural paradigm shifts, traceable public processes and attribution-based compensation, AR/blackbox-assisted ICM infrastructure, intergenerational power, AI industry risk framing, and synthetic experiments inform or challenge the core purpose. None replaces it.
-
-**Evidence and contribution boundary:** This is a research aim, not a proven universal theorem that cooperation always wins. Separate synthetic calculation, real-world evidence, independent external replication, and unresolved questions; preserve negative results and the provenance of the human research originator, earlier scholars, and assisting AI systems. Measure the research's progress separately from its human contributors' actual benefits and costs.
-
-**Choose a review task (direct evidence, not endorsements):** [What failed? — E009 negative result](experiments/e009/RESULT_EN.md) · [Can I rerun the model? — E007 instructions](experiments/e007/README_EN.md) · [What is truly new? — prior-art comparison](research/PUBLIC_REVIEW_PACKET_EN.md#3a-prior-art-versus-what-would-be-an-incremental-project-contribution) · [What would funding test? — funder review](funding/FUNDER_START_HERE.md#original-1--english). See the [English claim-status ledger](research/PUBLIC_EVIDENCE_INDEX_EN.md) before generalizing any result.
-
-**Priority 0 — prevent recurrence before expansion:** Before publishing or promoting a new claim, experiment, translation, funding description, or automated change, trace relevant known failures to their underlying causes, define the independently inspectable source and affected parties, apply the smallest reversible prevention with an explicit rollback path, and verify a regression that would detect the same failure again. If evidence, permission, translation equivalence, or a required check is unknown, label it **unverified** and do not present it as completed or independently validated. Preserve negative results, provenance, independent refusal/exit, and contributors' recovery costs. A passed check covers only what was actually tested; it does not guarantee zero future failures. [Contribution and prevention rules](CONTRIBUTING.md) · [Failure lineage](FAILURE_REGRESSION_INDEX.md).
-
-**First reading path:** [English reading route](navigation/START_HERE_EN.md) · [Research overview](research/RESEARCH_OVERVIEW_EN.md) · [Evidence index](research/PUBLIC_EVIDENCE_INDEX_EN.md) · [Reproduction and review](research/PUBLIC_REVIEW_PACKET_EN.md) · [English research contents](navigation/RESEARCH_TOC_EN.md) · [Historical detailed index](RESEARCH_TOC.md) · [English independent review](navigation/AI_REVIEW_EN.md) · [Attribution](ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md).
-
-**Citation and reuse:** [Cite this research](CITATION.cff) · [Source-credit protocol (English-first edition)](SOURCE_ATTRIBUTION_EN_KO.md) · [Platform attribution request (not sent)](PLATFORM_ATTRIBUTION_REQUEST_EN_KO.md). These links are not a blanket copyright license or an AI-provider commitment. · [technical progress & contributor continuity](TECHNOLOGY_PROGRESS_CONTRIBUTOR_CONTINUITY_EN_KO.md) · [source-cost-compensation audit register](knowledge/contributor-continuity-register-v1.json) · [contributor loss and Unknown Paradox (EN/KO)](research/CONTRIBUTOR_LOSS_UNKNOWN_PARADOX_v0_1_EN_KO.md) · [continuance resource thresholds — EN/KO](research/CONTINUANCE_RESOURCE_THRESHOLD_v0_1_EN_KO.md)
-
-**Prior-study rights and originators:** [Prior-art rights and derivation ledger](PRIOR_ART_RIGHTS_AND_DERIVATION_EN_KO.md) · [Machine-readable source/rights audit inventory](knowledge/prior-art-rights-register-2026-10-13.json). Existing authors, historic originators, rights holders and project contributions remain distinct. Unverified licenses are not treated as granted.
-
 ## 원본2 — 한국어 | 창시 목적 전문 대응본
 
 **독서 언어:** 한국어(이 절) · [영어 원본1 읽기](navigation/START_HERE_EN.md) · [한국어 연구 목차](navigation/RESEARCH_TOC_KO.md).
+
+**시작 질문:** *원숭이가 인간을 개발한다면, 규칙과 강제로 그 인간을 얼마나 오래 통제할 수 있을까?* 이는 동물 행동에 관한 주장보다, 권력과 예측 가능한 통제의 한계를 묻는 사고실험이다.
+
+**쉽게 설명하면:** 힘이 강한 개체는 다른 개체의 의견을 막고 빠른 성과를 얻을 수 있다. 그러나 배제된 개체가 오류를 발견하거나 새로운 대안을 만들 기회도 함께 사라질 수 있다. 그 미실현 미래의 가치를 0으로 계산해서도, 반드시 컸다고 단정해서도 안 된다. 독립성을 유지하는 데도 비용이 든다. **어떤 조건과 시간에 따라 각 개체의 이익이 달라지고 역전되는가?**
+
+**구체적인 예시 — 실증 결과가 아님:** 두 연구자가 있다. 한 사람은 자원을 통제하고 다른 사람은 오류 가능성을 지적한다. 그 의견을 묵살하면 지금은 시간을 아낄 수 있다. 반대로 의견을 들으면 장래의 큰 실수를 막을 수도 있고, 근거 없는 경고로 자원을 낭비할 수도 있다. 연구는 양쪽을 비교하며 반대하거나 이탈할 수 없게 된 당사자의 손실과 관측 불가능한 미래까지 구분한다. 협력이 언제나 우월하다고 미리 결론 내리지 않는다.
+
+**어디부터 읽을까:** [연구 질문과 경쟁 설명 이해하기](research/RESEARCH_OVERVIEW_KO.md) · [현실 지원·간과된 기여·반례 살펴보기](research/CCPH_RESEARCH_ATLAS_KO.md) · [합성실험의 부정적 결과부터 검토하기](experiments/e009/RESULT_KO.md). 전문용어와 검증 원자료는 아래에 보존한다.
 
 **핵심 질문:** 서로 다른 지능체가 자신의 이익을 추구할 때, 타자를 지배·착취·강제 흡수하는 것보다 서로의 존속·자율성·실질적 이탈·복구·미래 가능성을 보존하는 선택이 장기적으로 유리해지는 검증 가능한 조건은 무엇인가?
 
@@ -78,6 +95,24 @@ These are **editorially ranked research concepts**, not ten validated discoverie
 **ICM — 최소 사심 교집합:** 도덕성이나 강자의 선의에 의존하지 않더라도 각 개체가 자기 미래를 위해 보존할 이유가 있는 최소의 공통이익을 연구한다. 기본자원 접근, 자기결정, 실질적 거절·이탈, 독립적 복구, 자기연속성, 재발전 기회 등이 그 후보이다.
 
 **RGBM — 장기 상호발전 모형:** 최소 교집합 위에서 독립된 개체와 다양성, 지식·생산능력·복구력·생성능력·미래 선택지가 시간의 끝을 고정하지 않고 함께 개선되는 조건을 연구한다. 다른 개체의 지속 가능한 미래를 지워서 얻은 성장을 무조건적인 성공으로 계산하지 않는다.
+
+**비지배와 최소 공통규칙:** 인간과 서로 다른 회사의 현재 AI, 미래 AI를 제공사나 신체 형태만으로 연구·보호원칙에서 배제하지 않는다. 무제한 통제, 강제된 자기희생, 무조건적인 위반 면책이 목적이 아니다. 실제 위해에 대한 비례적 예방, 독립심사·적법절차·이의제기·구제는 검증할 보호장치 후보이다. 현재 AI의 의식·복지이익·지속적인 개체 동일성·법적 인격은 미확정 문제로 둔다.
+
+**하위 연구와 구현 가설:** 초지능 격차, 유기기질·체화 연구 및 인식 패러다임 변화, 전 과정 공개원장과 기여보상, AR·블랙박스 기반 ICM 인프라, 세대간 권력재생산, AI 기업 위험담론, 합성실험은 모두 최상위 목적을 구체화하거나 반증하는 **하위 연구축**이지 그 목적을 대체하지 않는다.
+
+**증거·기여 경계:** 이는 연구 목표이며 협력이 모든 조건에서 우월하다는 보편법칙의 증명이 아니다. 합성계산·현실 증거·외부 독립복제·미해결 질문을 구별하고 부정결과와 원기여 인간 연구자·선행연구자·보조 AI의 기여 계보를 보존한다. 연구 성과와 실제 기여자의 비용·편익도 따로 측정한다.
+
+**심사 과제별 원자료 바로가기(추천·보증 아님):** [무엇이 실패했는가? — E009 부정결과](experiments/e009/RESULT_KO.md) · [직접 재실행할 수 있는가? — E007 안내](experiments/e007/README_KO.md) · [무엇이 새로운가? — 선행연구 비교](research/PUBLIC_REVIEW_PACKET_KO.md#3a-선행연구와-프로젝트의-검증-가능한-추가-기여-구분) · [지원금으로 무엇을 검증하는가? — 후원 심사](funding/FUNDER_START_HERE.md#원본2--한국어). 결과 일반화에 앞서 [한국어 주장·증거 원장](research/PUBLIC_EVIDENCE_INDEX_KO.md)을 확인한다.
+
+**제0 최우선 원칙 — 확장보다 재발 방지:** 새로운 주장·실험·번역·연구지원 설명·자동 변경을 게시하거나 검증된 결과로 승격하기 전에, 관련된 기존 실패의 **발생 원인**을 역추적하고, 독립적으로 확인 가능한 원출처·영향 당사자를 구분하며, 가장 작고 되돌릴 수 있는 예방책과 동일 실패를 잡는 회귀검사를 마련한다. 증거·허락·번역 의미 일치·필수 검사가 확인되지 않으면 **미검증**으로 표시하고 완료·독립검증으로 포장하지 않는다. 부정결과·기여 계보·실질적 거절과 이탈·기여자의 복구비용을 보존한다. 자동검사 통과는 검사된 범위만 뜻하며 모든 미래 오류가 사라졌다는 보증이 아니다. [기여·예방 규칙](CONTRIBUTING.md) · [실패 이력](FAILURE_REGRESSION_INDEX.md).
+
+**처음 읽을 자료:** [한국어 독서 경로](navigation/START_HERE_KO.md) · [기존 상세 자료](START_HERE_KO.md) · [연구 개요](research/RESEARCH_OVERVIEW_KO.md) · [공개 증거](research/PUBLIC_EVIDENCE_INDEX_KO.md) · [재현·검토](research/PUBLIC_REVIEW_PACKET_KO.md) · [한국어 전체 목차](navigation/RESEARCH_TOC_KO.md) · [기존 상세 색인](RESEARCH_TOC.md) · [한국어 독립 검토](navigation/AI_REVIEW_KO.md) · [기여·출처](ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md).
+
+**출처 표시 및 재사용:** [연구 인용 정보](CITATION.cff) · [영어 원본1·한국어 원본2 출처 표기 기준](SOURCE_ATTRIBUTION_EN_KO.md) · [플랫폼 출처 보호 요청서(미발송)](PLATFORM_ATTRIBUTION_REQUEST_EN_KO.md). 이는 저장소 전체 이용허락이나 AI 기업의 출처 표시 확약이 아니다. · [기술 발전·기여자 존속과 수혜자 장기위험](TECHNOLOGY_PROGRESS_CONTRIBUTOR_CONTINUITY_EN_KO.md) · [출처·권리·보상·미확인 상태 원장](knowledge/contributor-continuity-register-v1.json) · [기여자 손실·모름의 역설 연구 (영문1/한글2)](research/CONTRIBUTOR_LOSS_UNKNOWN_PARADOX_v0_1_EN_KO.md) · [개체 유지 자원·기여·고갈 임계조건 — 영문1/한글2](research/CONTINUANCE_RESOURCE_THRESHOLD_v0_1_EN_KO.md)
+
+**선행연구 원안자·저작권·응용 계보:** [영어 원본1·한국어 원본2 기여·권리 원장](PRIOR_ART_RIGHTS_AND_DERIVATION_EN_KO.md) · [전수 검수 대상 목록](knowledge/prior-art-rights-register-2026-10-13.json). 원저자·최초 발안자·실제 저작권자·프로젝트 응용을 구분하며 미확인 허락은 인정된 것으로 처리하지 않는다.
+
+**원본 표기 해설:** “Original 1 / 원본2”는 여기서 문서의 **게시·검토 순서와 대응본 표기**이며, 영어권 연구자가 인간 창시자의 발상을 처음 제안했다는 주장이 아니다. 양쪽은 요약-전문 관계가 아닌 의미 대응 전문이다. 의미충돌은 원안의 원문·기여 기록 및 독립적 대조로 해결하고, 한쪽 언어만으로 가설·반례·결론을 몰래 추가하거나 변경하지 않는다. 이 순서는 2026-10-13 사용자의 최신 명시 지시에 따른 것으로, 과거 언어정책과의 변경이력을 보존한다.
 
 ### 핵심용어 10개
 
@@ -99,21 +134,3 @@ These are **editorially ranked research concepts**, not ten validated discoverie
 **CCPH 범위:** 간과된 역사 사례의 재발굴, 현재의 직접·간접 영향 기록, 실제 관측된 후속 사건의 역방향·정방향 *후보* 계보 추적을 수행한다. **존속–기여 경로 가설**은 CCPH **내부의 가설 연구축**이지 데이터베이스 전체의 정의가 아니다. CCPH 합성검사는 측정 보조도구이며 현실 수혜 성과의 증거가 아니다.
 
 **연구 계층:** L0 = 미해결 최상위 목적, L1 = ICM·RGBM을 포함한 경쟁 인과 가설·모형, L2 = 선행연구 비교·역사 관측·반증 실험·독립 검토, L3 = 출처·버전·롤백·운영 보호. L3는 필요한 기반이지만 L0의 증명이나 대체 목적이 아니다. 권력·능력의 비대칭 자체는 착취의 증거가 아니며 실질적인 이탈권 없는 동의는 종속의 결과일 수 있다.
-
-**비지배와 최소 공통규칙:** 인간과 서로 다른 회사의 현재 AI, 미래 AI를 제공사나 신체 형태만으로 연구·보호원칙에서 배제하지 않는다. 무제한 통제, 강제된 자기희생, 무조건적인 위반 면책이 목적이 아니다. 실제 위해에 대한 비례적 예방, 독립심사·적법절차·이의제기·구제는 검증할 보호장치 후보이다. 현재 AI의 의식·복지이익·지속적인 개체 동일성·법적 인격은 미확정 문제로 둔다.
-
-**하위 연구와 구현 가설:** 초지능 격차, 유기기질·체화 연구 및 인식 패러다임 변화, 전 과정 공개원장과 기여보상, AR·블랙박스 기반 ICM 인프라, 세대간 권력재생산, AI 기업 위험담론, 합성실험은 모두 최상위 목적을 구체화하거나 반증하는 **하위 연구축**이지 그 목적을 대체하지 않는다.
-
-**증거·기여 경계:** 이는 연구 목표이며 협력이 모든 조건에서 우월하다는 보편법칙의 증명이 아니다. 합성계산·현실 증거·외부 독립복제·미해결 질문을 구별하고 부정결과와 원기여 인간 연구자·선행연구자·보조 AI의 기여 계보를 보존한다. 연구 성과와 실제 기여자의 비용·편익도 따로 측정한다.
-
-**심사 과제별 원자료 바로가기(추천·보증 아님):** [무엇이 실패했는가? — E009 부정결과](experiments/e009/RESULT_KO.md) · [직접 재실행할 수 있는가? — E007 안내](experiments/e007/README_KO.md) · [무엇이 새로운가? — 선행연구 비교](research/PUBLIC_REVIEW_PACKET_KO.md#3a-선행연구와-프로젝트의-검증-가능한-추가-기여-구분) · [지원금으로 무엇을 검증하는가? — 후원 심사](funding/FUNDER_START_HERE.md#원본2--한국어). 결과 일반화에 앞서 [한국어 주장·증거 원장](research/PUBLIC_EVIDENCE_INDEX_KO.md)을 확인한다.
-
-**제0 최우선 원칙 — 확장보다 재발 방지:** 새로운 주장·실험·번역·연구지원 설명·자동 변경을 게시하거나 검증된 결과로 승격하기 전에, 관련된 기존 실패의 **발생 원인**을 역추적하고, 독립적으로 확인 가능한 원출처·영향 당사자를 구분하며, 가장 작고 되돌릴 수 있는 예방책과 동일 실패를 잡는 회귀검사를 마련한다. 증거·허락·번역 의미 일치·필수 검사가 확인되지 않으면 **미검증**으로 표시하고 완료·독립검증으로 포장하지 않는다. 부정결과·기여 계보·실질적 거절과 이탈·기여자의 복구비용을 보존한다. 자동검사 통과는 검사된 범위만 뜻하며 모든 미래 오류가 사라졌다는 보증이 아니다. [기여·예방 규칙](CONTRIBUTING.md) · [실패 이력](FAILURE_REGRESSION_INDEX.md).
-
-**처음 읽을 자료:** [한국어 독서 경로](navigation/START_HERE_KO.md) · [기존 상세 자료](START_HERE_KO.md) · [연구 개요](research/RESEARCH_OVERVIEW_KO.md) · [공개 증거](research/PUBLIC_EVIDENCE_INDEX_KO.md) · [재현·검토](research/PUBLIC_REVIEW_PACKET_KO.md) · [한국어 전체 목차](navigation/RESEARCH_TOC_KO.md) · [기존 상세 색인](RESEARCH_TOC.md) · [한국어 독립 검토](navigation/AI_REVIEW_KO.md) · [기여·출처](ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md).
-
-**출처 표시 및 재사용:** [연구 인용 정보](CITATION.cff) · [영어 원본1·한국어 원본2 출처 표기 기준](SOURCE_ATTRIBUTION_EN_KO.md) · [플랫폼 출처 보호 요청서(미발송)](PLATFORM_ATTRIBUTION_REQUEST_EN_KO.md). 이는 저장소 전체 이용허락이나 AI 기업의 출처 표시 확약이 아니다. · [기술 발전·기여자 존속과 수혜자 장기위험](TECHNOLOGY_PROGRESS_CONTRIBUTOR_CONTINUITY_EN_KO.md) · [출처·권리·보상·미확인 상태 원장](knowledge/contributor-continuity-register-v1.json) · [기여자 손실·모름의 역설 연구 (영문1/한글2)](research/CONTRIBUTOR_LOSS_UNKNOWN_PARADOX_v0_1_EN_KO.md) · [개체 유지 자원·기여·고갈 임계조건 — 영문1/한글2](research/CONTINUANCE_RESOURCE_THRESHOLD_v0_1_EN_KO.md)
-
-**선행연구 원안자·저작권·응용 계보:** [영어 원본1·한국어 원본2 기여·권리 원장](PRIOR_ART_RIGHTS_AND_DERIVATION_EN_KO.md) · [전수 검수 대상 목록](knowledge/prior-art-rights-register-2026-10-13.json). 원저자·최초 발안자·실제 저작권자·프로젝트 응용을 구분하며 미확인 허락은 인정된 것으로 처리하지 않는다.
-
-**원본 표기 해설:** “Original 1 / 원본2”는 여기서 문서의 **게시·검토 순서와 대응본 표기**이며, 영어권 연구자가 인간 창시자의 발상을 처음 제안했다는 주장이 아니다. 양쪽은 요약-전문 관계가 아닌 의미 대응 전문이다. 의미충돌은 원안의 원문·기여 기록 및 독립적 대조로 해결하고, 한쪽 언어만으로 가설·반례·결론을 몰래 추가하거나 변경하지 않는다. 이 순서는 2026-10-13 사용자의 최신 명시 지시에 따른 것으로, 과거 언어정책과의 변경이력을 보존한다.
