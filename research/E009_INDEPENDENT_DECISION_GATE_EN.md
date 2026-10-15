@@ -8,6 +8,18 @@
 
 This is a falsifiable *incremental policy comparison*, not a test of the general desirability of voluntary coexistence.
 
+## Five execution priorities — bounded decision, not new evidence
+
+1. **Priority 1 — One active decision:** For this review, compare PROJECT_V3 with TWO_RULE_SIMPLE and MINIMAL_4VAR before adding another policy, benchmark, theory label or governance document. Urgent factual, rights or safety corrections are not blocked.
+2. **Priority 2 — Preserve adverse evidence:** V3 remains unsupported on frozen E009. A favorable single metric cannot cancel regret, severe harm, exit or third-party losses. An independent review may change only its own scoped verdict, not the historical result.
+3. **Priority 3 — Evidence lineage:** AI-written proposals, project reruns, external clean-room implementations and empirical studies receive distinct labels. A second AI agreeing with the first is not independent scientific validation.
+4. **Priority 4 — Contributor burden:** Required founder effort for this review is **0 hours**. No mandatory founder interviews, repeated corrections, paid services or private records. Voluntary reviewer time and actual computing costs must still be disclosed; neither is presumed zero.
+5. **Priority 5 — No documentation inflation:** Reuse this English/Korean pair, the frozen result and existing issue #26. Make at most one decision-relevant change at a time, with before/after evidence, a rollback path and no fabricated result.
+
+**Frozen adverse-result cross-check:** In the selected project-designed synthetic stress grid, V3 mean regret was **42.35% worse** than TWO_RULE_SIMPLE; V3's severe-event frequency was **53x** TWO's (1.65625% versus 0.03125%). These are in-grid comparisons, not real-world risk estimates; the ratio is especially sensitive to a rare baseline event. V3 had a better competitive-loss score, so report that opposing result too.
+
+**Stop condition:** Without an independently specified, genuinely comparable evaluation, record **HOLD / EXTERNAL_VALIDATION_NOT_OBTAINED**. Do not substitute more project-authored documentation or require the founder to fill the evidence gap. Reverse this *operational edit*, if needed, without altering the frozen E009 record.
+
 ## Freeze the existing negative result
 
 Original E009: [result](../experiments/e009/RESULT_EN.md), [frozen benchmark](../experiments/e009/benchmark.py), [execution receipt](../experiments/e009/EXECUTION_RECEIPT.json). In the project's own synthetic stress test, mean regret was 0.063241 (TWO), 0.065323 (M4), 0.090022 (V3). V3 failed **3 of 4** preregistered survival criteria. Published [complexity/noise/family checks](../experiments/e009/README.md) are also *project-lineage synthetic* audits.
