@@ -15,8 +15,8 @@
 
 | 단계 | 확인할 질문 | 원자료 |
 | --- | --- | --- |
-| 1 — 탐색 | 연구 질문은 무엇이고 어디서 시작하는가? | [창시 목적](../README.md), [연구 개요](../RESEARCH_OVERVIEW_KO.md), [한국어 외부 AI 검토 안내](AI_REVIEW_KO.md) |
-| 2 — 이해와 감사 | 주장·출처·한계·실패·권리는 어디에 기록되었는가? | [증거 색인](../PUBLIC_EVIDENCE_INDEX_KO.md), [전체 목차](../RESEARCH_TOC.md), [증거상태 기준](../RESEARCH_STATUS_POLICY_KO.md), [공개 검토 자료](../PUBLIC_REVIEW_PACKET.md) |
+| 1 — 탐색 | 연구 질문은 무엇이고 어디서 시작하는가? | [창시 목적](../README.md), [연구 개요](../research/RESEARCH_OVERVIEW_KO.md), [한국어 외부 AI 검토 안내](AI_REVIEW_KO.md) |
+| 2 — 이해와 감사 | 주장·출처·한계·실패·권리는 어디에 기록되었는가? | [증거 색인](../research/PUBLIC_EVIDENCE_INDEX_KO.md), [전체 목차](../RESEARCH_TOC.md), [증거상태 기준](../research/RESEARCH_STATUS_POLICY_KO.md), [공개 검토 자료](../PUBLIC_REVIEW_PACKET.md) |
 | 3 — 원자료 검증 | 무엇을 재실행·반증·수정할 수 있는가? | [실험](../experiments/), [연구](../research/), [선행연구](../prior-art/), [지식 자료실](../knowledge/README.md), [거버넌스](../governance/) |
 
 세 단계는 **독서·검증 경로**이며 증거등급이나 실제 폴더 이동을 뜻하지 않는다.
@@ -31,11 +31,11 @@
 | [E009](../experiments/e009/RESULT.md) | 사전등록 합성실험의 부정적 결과 | 공존 가설 전체의 보편적 실패 |
 | [E010](../experiments/e010/README_KO.md) | 사후 탐색적 합성 계산 | 사전등록·외부 독립검증·현실 효과 |
 
-개별 주장과 한계는 [공개 증거 색인](../PUBLIC_EVIDENCE_INDEX_KO.md)을 따른다. CI 통과는 독립적인 과학적 재현이 아니다.
+개별 주장과 한계는 [공개 증거 색인](../research/PUBLIC_EVIDENCE_INDEX_KO.md)을 따른다. CI 통과는 독립적인 과학적 재현이 아니다.
 
 <!-- PI-SECTION: ccph -->
 
-[한국어 CCPH 증거 지도](../CCPH_RESEARCH_ATLAS_KO.md)는 실제 지원·부정사례 CP64–CP79를 원저자·인과식별 한계와 함께 정리한다.
+[한국어 CCPH 증거 지도](../research/CCPH_RESEARCH_ATLAS_KO.md)는 실제 지원·부정사례 CP64–CP79를 원저자·인과식별 한계와 함께 정리한다.
 
 ## 4. CCPH: 현실의 존속·기여 역사
 
