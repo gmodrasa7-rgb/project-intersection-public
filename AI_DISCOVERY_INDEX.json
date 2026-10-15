@@ -10,17 +10,22 @@
       "README.md",
       "navigation/START_HERE_EN.md",
       "navigation/START_HERE_KO.md",
-      "START_HERE_KO.md",
-      "AI_REVIEW_START_HERE.md",
+      "navigation/AI_REVIEW_EN.md",
+      "navigation/AI_REVIEW_KO.md",
       "llms.txt",
       "AI_DISCOVERY_INDEX.json"
     ],
     "level_2_understanding_and_audit": [
-      "RESEARCH_OVERVIEW.md",
-      "RESEARCH_TOC.md",
-      "PUBLIC_EVIDENCE_INDEX.md",
-      "PUBLIC_REVIEW_PACKET.md",
-      "RESEARCH_STATUS_POLICY.md",
+      "research/RESEARCH_OVERVIEW_EN.md",
+      "research/RESEARCH_OVERVIEW_KO.md",
+      "navigation/RESEARCH_TOC_EN.md",
+      "navigation/RESEARCH_TOC_KO.md",
+      "research/PUBLIC_EVIDENCE_INDEX_EN.md",
+      "research/PUBLIC_EVIDENCE_INDEX_KO.md",
+      "research/PUBLIC_REVIEW_PACKET_EN.md",
+      "research/PUBLIC_REVIEW_PACKET_KO.md",
+      "research/RESEARCH_STATUS_POLICY_EN.md",
+      "research/RESEARCH_STATUS_POLICY_KO.md",
       "FAILURE_REGRESSION_INDEX.md",
       "ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md",
       "CONTRIBUTING.md"
@@ -29,7 +34,6 @@
       "experiments/",
       "research/",
       "prior-art/",
-      "RESEARCH_TOC.md",
       "knowledge/",
       "governance/",
       "continuity/",
@@ -134,17 +138,17 @@
     "human_korean": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/navigation/START_HERE_KO.md",
     "human_korean_legacy": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/START_HERE_KO.md",
     "llm_text": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/llms.txt",
-    "review": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/AI_REVIEW_START_HERE.md",
-    "evidence": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/PUBLIC_EVIDENCE_INDEX.md",
-    "toc": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/RESEARCH_TOC.md",
-    "overview": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/RESEARCH_OVERVIEW.md",
+    "review": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/navigation/AI_REVIEW_EN.md",
+    "evidence": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/research/PUBLIC_EVIDENCE_INDEX_EN.md",
+    "toc": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/navigation/RESEARCH_TOC_EN.md",
+    "overview": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/research/RESEARCH_OVERVIEW_EN.md",
     "attribution": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md",
     "prior_art": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/PRIOR_ART_AND_ATTRIBUTION.md",
-    "negative_results": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/experiments/e009/RESULT.md",
+    "negative_results": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/experiments/e009/RESULT_EN.md",
     "incumbent_power_extraction_crosswalk": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/INCUMBENT_POWER_EXTRACTION_MECHANISMS_2026_KO.md",
     "intergenerational_ai_feedback": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/research/INTERGENERATIONAL_TRAITS_WEALTH_POWER_AI_CONVERGENCE_2026-10-12_KO.md",
     "ai_risk_warning_incentives": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/research/AI_RISK_WARNING_INCENTIVES_2026-10-12_KO.md",
-    "public_study_navigation": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/START_HERE_KO.md",
+    "public_study_navigation": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/navigation/START_HERE_KO.md",
     "public_commons_mission": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/research/OPEN_KNOWLEDGE_ANTI_CAPTURE_MISSION_2026-10-12_KO.md",
     "e010_exploratory_incentive_and_action_budget": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/experiments/e010/README_KO.md",
     "agentic_semantic_transformation_original1_en": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/research/AGENTIC_SEMANTIC_TRANSFORMATION_FIDELITY_2026-10-13_EN.md",
@@ -155,7 +159,12 @@
     "human_korean_contents": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/navigation/RESEARCH_TOC_KO.md",
     "independent_review_english": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/navigation/AI_REVIEW_EN.md",
     "independent_review_korean": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/navigation/AI_REVIEW_KO.md",
-    "language_edition_registry": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/knowledge/language-edition-register.json"
+    "language_edition_registry": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/knowledge/language-edition-register.json",
+    "review_ko": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/navigation/AI_REVIEW_KO.md",
+    "evidence_ko": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/research/PUBLIC_EVIDENCE_INDEX_KO.md",
+    "toc_ko": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/navigation/RESEARCH_TOC_KO.md",
+    "overview_ko": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/research/RESEARCH_OVERVIEW_KO.md",
+    "negative_results_ko": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/experiments/e009/RESULT_KO.md"
   },
   "research": {
     "area": [
@@ -334,5 +343,23 @@
     "machine_to_english_korean_validation_scope": "BOUNDED_NUMERIC_AND_EVIDENCE_STATUS_ONLY",
     "e010_model_parameter_x": "fraction_of_immediate_extraction_gain_blocked_not_suppression_of_agent_exit",
     "source_science_status": "PROJECT_AUTHORED_SYNTHETIC_NOT_EXTERNAL_VALIDATION"
+  },
+  "historical_entrypoints": {
+    "role": "Preserved historical mixed-language and superseded navigation references, not default/current reading routes. See Git history and the language edition register; these originals remain citable.",
+    "prior_values": {
+      "review": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/AI_REVIEW_START_HERE.md",
+      "evidence": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/PUBLIC_EVIDENCE_INDEX.md",
+      "toc": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/RESEARCH_TOC.md",
+      "overview": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/RESEARCH_OVERVIEW.md",
+      "negative_results": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/experiments/e009/RESULT.md",
+      "public_study_navigation": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/START_HERE_KO.md"
+    }
+  },
+  "reader_contract": {
+    "human_first": "Question and one labeled illustration first, evidence and limitations without requiring glossary study.",
+    "current_edition_default": "Original 1 English then Original 2 Korean in separately labeled routes.",
+    "avoid_outdated_default": "Legacy mixed-language files remain citeable but are not present-day default landing paths.",
+    "depth": "An introductory path is not an experimental result; direct source paths and historical provenance remain inspectable.",
+    "validation": "Navigation and structural tests only; user comprehension, cross-language semantic parity and field effects remain independently unverified."
   }
 }
