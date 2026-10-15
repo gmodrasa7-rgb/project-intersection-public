@@ -207,7 +207,7 @@ def audit_e009_focus_gate(en: str, ko: str, frozen: dict, e008: dict) -> list[st
                          ("EN", f"{severe_multiple:.0f}x"),
                          ("KO", f"{regret_pct:.2f}% 나빴으며"),
                          ("KO", f"{severe_multiple:.0f}배")):
-        if token not in sections.get(label, ""):
+        if re.search(r"(?<![0-9.])" + re.escape(token) + r"(?![0-9])", sections.get(label, "")) is None:
             errors.append("FROZEN_NEGATIVE_RESULT_NOT_VISIBLE:" + label + ":" + token)
     return errors
 
