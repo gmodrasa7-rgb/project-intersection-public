@@ -24,6 +24,10 @@ THRESHOLDS = abstention.THRESHOLDS
 DEFAULT = {"schema": SCHEMA, "strategy": "baseline_frequency", "threshold": 0}
 ALLOWED_KEYS = frozenset({"schema", "strategy", "threshold"})
 API_ENDPOINT = "https://api.openai.com/v1/responses"
+# Anchored to the 2026-10-16 CI read-back for this public toy benchmark.
+# A change needs explicit code review. This cannot protect against an attacker
+# who can change code, benchmark data and review decisions together.
+PINNED_BENCHMARK_SHA256 = "b8daa492e4e0e2a659adf0720252d81d5c787b203f7139aa1da34f624a492057"
 
 
 def validate_proposal(value: object) -> dict:
@@ -74,9 +78,30 @@ def grade(documents: list[dict], cases: list[dict], proposal: dict) -> tuple[dic
     return metrics, outputs
 
 
+def benchmark_fingerprint(documents: list[dict], development: list[dict],
+                          holdout: list[dict]) -> str:
+    """Canonical JSON digest of ALL interpreted evaluation data, including labels."""
+    return hashlib.sha256(json.dumps(
+        {"documents": documents, "development": development, "holdout": holdout},
+        sort_keys=True, ensure_ascii=False).encode("utf-8")).hexdigest()
+
+
 def assess(proposal: object, *, cases_path: Path = abstention.CASES) -> dict:
     proposal = validate_proposal(proposal)
     documents, development, holdout = abstention.load_cases(cases_path)
+    fingerprint = benchmark_fingerprint(documents, development, holdout)
+    if fingerprint != PINNED_BENCHMARK_SHA256:
+        return {
+            "schema": "pi-proposal-evaluation/v1",
+            "proposal": proposal,
+            "benchmark_sha256": fingerprint,
+            "pinned_benchmark_sha256": PINNED_BENCHMARK_SHA256,
+            "decision": "HOLD_BENCHMARK_DRIFT",
+            "evaluation_executed": False,
+            "independent_blind_validation": False,
+            "autonomous_promotion": False,
+            "claim_validity": "NONE_UNTIL_REVIEWED_BENCHMARK_REVISION",
+        }
     base_dev, base_dev_output = grade(documents, development, DEFAULT)
     cand_dev, cand_dev_output = grade(documents, development, proposal)
     base_hold, base_output = grade(documents, holdout, DEFAULT)
@@ -95,13 +120,12 @@ def assess(proposal: object, *, cases_path: Path = abstention.CASES) -> dict:
         decision = "HOLD_NO_HOLDOUT_GAIN"
     else:
         decision = "REVIEW_SYNTHETIC_ONLY"
-    fingerprint = hashlib.sha256(json.dumps(
-        {"documents": documents, "development": development, "holdout": holdout},
-        sort_keys=True, ensure_ascii=False).encode("utf-8")).hexdigest()
     return {
         "schema": "pi-proposal-evaluation/v1",
         "proposal": proposal,
         "benchmark_sha256": fingerprint,
+        "pinned_benchmark_sha256": PINNED_BENCHMARK_SHA256,
+        "evaluation_executed": True,
         "baseline_development": base_dev,
         "candidate_development": cand_dev,
         "baseline_holdout": base_hold,
@@ -122,7 +146,9 @@ def assess(proposal: object, *, cases_path: Path = abstention.CASES) -> dict:
 
 def development_payload(cases_path: Path = abstention.CASES) -> dict:
     """Only development records are transmitted to GPT, never holdout records."""
-    documents, development, _holdout = abstention.load_cases(cases_path)
+    documents, development, holdout = abstention.load_cases(cases_path)
+    if benchmark_fingerprint(documents, development, holdout) != PINNED_BENCHMARK_SHA256:
+        raise ValueError("BENCHMARK_DRIFT")
     return {
         "scope": "public, author-made synthetic retrieval",
         "documents": documents,
