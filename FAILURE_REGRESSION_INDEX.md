@@ -361,6 +361,34 @@ Repair: preserve v0.1 unchanged as failure lineage; provide [v0.2 blind-phase ca
 
 ---
 
+## F-R021 — Scheduled GitHub write refusal can be misreported as completed work
+
+**Class:** execution-vs-intention confusion / host safety boundary / persistence and observability.
+
+**Status:** HISTORICAL TASK-REPORTED REFUSAL; CURRENT DOCUMENTATION GAP VERIFIED; PREVENTIVE PROTOCOL CHANGE PROPOSED. **Not a reproduced host denial in this audit and not a tested scheduler-runtime fix.**
+
+**Origin and observation — Original 1 English (2026-10-16).** In the October 14–16 scheduled-task feedback, a GitHub write was reported to have returned `This tool call was blocked by OpenAI's safety checks.` The present audit directly read [Section 9 of the public continuity protocol](AUTONOMOUS_RESEARCH_LOOP.md) at its pre-change blob `b1681374671d89468ad4033b588f200c6e3bf2f5`: it required write/readback/tests but did not distinguish an OpenAI host safety refusal from GitHub API errors. A configured task, a timestamp, a created branch and an attempted PR/comment are not remote content persistence. The old task report is not an independently reproduced runtime trace, and the specific safety decision rationale is not known.
+
+**Root-cause hypotheses and competing account.** (H1) An executor treats task intention or connector invocation as task completion; (H2) the recovery path conflates host refusal with HTTP authorization/conflict failure; (H3) a real remote write preceded the refusal and can be demonstrated by immutable commit and content read-back. H3 is the critical counterexample to an overbroad 'nothing was saved' claim: check the exact target and timestamp read-only before judging. Neither a refusal nor repeated failed attempts establishes malicious intent or platform-wide GitHub unavailability.
+
+**Scoped intervention.** Add [continuity §9.1](AUTONOMOUS_RESEARCH_LOOP.md) in full English Original 1 then Korean Original 2; classify `HOST_SAFETY_REFUSAL`, prohibit tool/account/endpoint bypass of refused content, require read-only SHA/content verification, distinguish `REFUSED_NOT_SAVED` from `WRITE_UNCONFIRMED`, and prevent scientific inference from operational CI. Do not add a new automated service, synthetic scientific result, or duplicate issue.
+
+**Falsifier / minimum future test (not yet executed).** Independently inspect an actual scheduler write receipt, GitHub target blob and branch/main commit history. Inject a refused-write response into an allowed mock executor and require no follow-on mutating tool calls and `REFUSED_NOT_SAVED`; inject an acknowledged-but-stale read-back and require `WRITE_UNCONFIRMED`. A genuine remote material change with matching bytes and relevant checks disproves the 'not saved' classification for that individual attempt, not the safety-boundary need. The current text-only protocol cannot enforce these tests; runtime remediation and adoption remain UNRESOLVED.
+
+**Effects and rollback.** Benefits are more accurate provenance and lower founder verification burden; possible costs are extra status handling and conservative holds. Scientific claims, E007–E010 data, historical failures and contributor credit remain unchanged. Roll back only this scoped procedural addition if it causes wrong stop classifications; retain the dated failure history.
+
+**원인과 관측 — 원본2 한국어 (2026-10-16).** 10월 14~16일 예약작업 피드백은 GitHub 쓰기 중 `This tool call was blocked by OpenAI's safety checks.`라는 오류가 발생했다고 보고했다. 이번 감사에서 [공개 연속성 규약 9절](AUTONOMOUS_RESEARCH_LOOP.md)의 변경 전 blob `b1681374671d89468ad4033b588f200c6e3bf2f5`를 실제로 읽은 결과, 쓰기·재읽기·테스트 요건은 있었으나 호스트 안전검사 거부를 GitHub API 오류와 분리하지 않았다. 예약 설정·실행 시각·브랜치 생성·PR/댓글 작성 시도는 원격 본문 저장 증거가 아니다. 과거 예약작업의 보고는 이번 실행에서 직접 재현한 호스트 오류 로그가 아니며 구체적인 안전 판정 이유도 확인되지 않았다.
+
+**경쟁 원인과 반례.** (H1) 실행자에게 계획이나 도구 호출을 완료로 오인하는 문제가 있다. (H2) 호스트 안전 거부와 HTTP 권한·충돌 오류를 같은 복구 절차로 처리한다. (H3) 거부 전에 실제 원격 저장이 진행됐으며 불변 커밋·본문 재열람으로 입증할 수 있다. H3가 '아무것도 저장되지 않았다'는 과도한 단정의 핵심 반례다. 우선 정확한 대상과 시점의 원격 상태를 읽기 전용으로 확인한다. 거부나 실패 반복만으로 악의·플랫폼 전체의 GitHub 불가를 단정할 수 없다.
+
+**범위 내 수정.** [연속성 규약 9.1절](AUTONOMOUS_RESEARCH_LOOP.md)에 영어 원본1·한국어 원본2를 대응 기록한다. `HOST_SAFETY_REFUSAL`을 분리하고, 거부된 내용의 다른 도구·계정·API 경로 우회를 금지하며, 읽기 전용 SHA/본문 검증을 요구한다. `REFUSED_NOT_SAVED`와 `WRITE_UNCONFIRMED`를 구별하고 운영상 CI 성공으로 과학 증거를 승격하지 않는다. 새로운 자동화·합성 실험결과·중복 이슈는 만들지 않는다.
+
+**반증 및 후속 최소검사(아직 실행하지 않음).** 실제 예약 실행 영수증·GitHub 대상 blob 및 브랜치/main 커밋을 분리 재확인한다. 허용된 모의 실행기에서 쓰기 거부를 주입했을 때 후속 변형 호출 없이 `REFUSED_NOT_SAVED`가 나와야 하고, 수신 확인 후 낡은 원격 본문을 주입하면 `WRITE_UNCONFIRMED`가 나와야 한다. 정확한 원격 변경·본문 일치·관련 검사로 확인된 사례는 해당 시도의 미저장 판정을 기각하지만 안전 경계의 필요성까지 없애지는 않는다. 현재는 문서 규칙만 있으며 실제 예약 런타임의 강제 구현·적용 검증은 UNRESOLVED다.
+
+**편익·비용·복구.** 기록의 정확성과 인간 창시자의 반복 확인 부담 감소가 기대 편익이고, 상태관리 증가와 보수적 보류가 잠재 비용이다. 기존 과학 주장·E007~E010 데이터·실패 이력·기여 계보는 바꾸지 않는다. 잘못된 중단 판정이 발견되면 이 최소 절차 변경만 되돌리고 과거 실패 기록은 보존한다.
+
+---
+
 ## Mandatory regression questions
 
 Before any material repository mutation:
