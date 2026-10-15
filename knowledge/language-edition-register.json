@@ -224,6 +224,38 @@
         "Historically conceived Korean original remains unchanged; Original 1 English means publication-route order only.",
         "E010 collision with unmerged historical static safety audit PR #20 is explicit."
       ]
+    },
+    {
+      "id": "PI-EXP-E007-TIMING",
+      "original_1_english": "experiments/e007/README_EN.md",
+      "original_2_korean": "experiments/e007/README_KO.md",
+      "source_legacy_path": "experiments/e007/README.md",
+      "source_blob_sha_at_split": "7649c694fb8f8340d91feb6121b3de0ad67366f3",
+      "kind": "source_preserving_bilingual_e007_timing_corrections_and_attack_order_reader_editions",
+      "structural_pair_present": true,
+      "meaning_review_status": "NOT_INDEPENDENTLY_VERIFIED",
+      "original_conception_language": "NOT_INDEPENDENTLY_ADJUDICATED",
+      "independent_review_receipt": null,
+      "one_sided_edit_exception": null,
+      "known_divergences": [
+        "Both new editions reproduce fixed 72/36/17 and 31-to-36 coding-correction lineage but do not certify independent semantic translation."
+      ]
+    },
+    {
+      "id": "PI-EXP-E008-SPEC",
+      "original_1_english": "experiments/e008/README_EN.md",
+      "original_2_korean": "experiments/e008/README_KO.md",
+      "source_legacy_path": "experiments/e008/README.md",
+      "source_blob_sha_at_split": "25a2e80e20332742bb26cc297ed9e31b3004ac7d",
+      "kind": "source_preserving_bilingual_e008_preregistration_and_readiness_only",
+      "structural_pair_present": true,
+      "meaning_review_status": "NOT_INDEPENDENTLY_VERIFIED",
+      "original_conception_language": "NOT_INDEPENDENTLY_ADJUDICATED",
+      "independent_review_receipt": null,
+      "one_sided_edit_exception": null,
+      "known_divergences": [
+        "Both editions emphasize 16/16 underdetermined for five-baseline main experiment, not a completed result."
+      ]
     }
   ],
   "legacy_priority_unresolved": [
@@ -262,14 +294,14 @@
     }
   ],
   "metrics": {
-    "markdown_total": 140,
+    "markdown_total": 144,
     "filename_classes": {
-      "COMBINED_NAMING_UNVERIFIED": 21,
-      "EN_SUFFIX_UNVERIFIED": 14,
-      "KO_SUFFIX_UNVERIFIED": 59,
+      "UNMARKED_LANGUAGE_UNVERIFIED": 42,
       "LEGACY_MIXED_READER_ENTRY": 2,
+      "KO_SUFFIX_UNVERIFIED": 61,
       "ORDERED_BILINGUAL_FOUNDER_OR_GOVERNANCE": 2,
-      "UNMARKED_LANGUAGE_UNVERIFIED": 42
+      "EN_SUFFIX_UNVERIFIED": 16,
+      "COMBINED_NAMING_UNVERIFIED": 21
     },
     "meaning_verified_pairs": 0,
     "meaning_verified_pairs_is_a_status_count_not_a_claim_that_no_reviews_ever_occurred": true
@@ -702,6 +734,18 @@
       "content_equivalence": "NOT_REVIEWED"
     },
     {
+      "path": "experiments/e007/README_EN.md",
+      "filename_class": "EN_SUFFIX_UNVERIFIED",
+      "counterpart_path": "experiments/e007/README_KO.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "experiments/e007/README_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": "experiments/e007/README_EN.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
       "path": "experiments/e007/RUN.md",
       "filename_class": "UNMARKED_LANGUAGE_UNVERIFIED",
       "counterpart_path": null,
@@ -735,6 +779,18 @@
       "path": "experiments/e008/README.md",
       "filename_class": "UNMARKED_LANGUAGE_UNVERIFIED",
       "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "experiments/e008/README_EN.md",
+      "filename_class": "EN_SUFFIX_UNVERIFIED",
+      "counterpart_path": "experiments/e008/README_KO.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "experiments/e008/README_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": "experiments/e008/README_EN.md",
       "content_equivalence": "NOT_REVIEWED"
     },
     {
@@ -1262,6 +1318,17 @@
         "experiments/e010/README_EN.md"
       ],
       "note": "No results changed; historical sources pinned, negative results and original research origin retained. No independent translation or empirical verification."
+    },
+    {
+      "as_of": "2026-10-15",
+      "status": "E007_E008_SOURCE_PRESERVING_EDITION_PAIR",
+      "new_documents": [
+        "experiments/e007/README_EN.md",
+        "experiments/e007/README_KO.md",
+        "experiments/e008/README_EN.md",
+        "experiments/e008/README_KO.md"
+      ],
+      "bounds": "No new benchmarks run; no scientific certification of translation; historical sources unchanged."
     }
   ],
   "path_layout_policy": "Keep the project root entry-only; bilingual full research editions live in existing research/ and their original historical combined documents retain stable root URLs."
