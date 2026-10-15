@@ -7,7 +7,7 @@
 
 This is a **language-consistent navigation index**. Original 1 denotes release order, **not** the research originator's working language or a grant of authorship. It is not an independent scientific assessment, a newly verified translation of legacy material, or a claim that all links lead to English content.
 
-**Opening linked sources:** [Research overview](../RESEARCH_OVERVIEW.md), [public evidence](../PUBLIC_EVIDENCE_INDEX.md), [review packet](../PUBLIC_REVIEW_PACKET.md) and the [CCPH crosswalk](../CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md) visibly contain both scripts in a bounded source inspection. [E010](../experiments/e010/README_KO.md) is Korean-dominant in that inspection; [E009 result](../experiments/e009/RESULT.md) had no Hangul in the inspected range. These are **script signals, not verified complete language editions**. See [source-language observation and limits](../knowledge/language-edition-register.json) before following legacy links.
+**Opening linked sources:** [Research overview](../RESEARCH_OVERVIEW.md), [public evidence](../PUBLIC_EVIDENCE_INDEX.md), [review packet](../research/PUBLIC_REVIEW_PACKET_EN.md) and the [CCPH crosswalk](../CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md) visibly contain both scripts in a bounded source inspection. [E010](../experiments/e010/README_KO.md) is Korean-dominant in that inspection; [E009 result](../experiments/e009/RESULT.md) had no Hangul in the inspected range. These are **script signals, not verified complete language editions**. See [source-language observation and limits](../knowledge/language-edition-register.json) before following legacy links.
 
 Many historical sources are Korean-only or bilingual; linked **source titles, filenames, mathematical identifiers and citations remain unchanged**. A reader should treat a link as a route to an original, not an implicit translation. Refer to the [public evidence index](../research/PUBLIC_EVIDENCE_INDEX_EN.md) for each claim's evidence class and limitations.
 
@@ -29,8 +29,8 @@ Many historical sources are Korean-only or bilingual; linked **source titles, fi
 
 - [E007 — synthetic timing and replication scope](../experiments/e007/README.md)
 - [E008 — preregistered specification, no main result](../experiments/e008/README.md)
-- [E009 — preregistered negative synthetic result](../experiments/e009/RESULT.md)
-- [E010 — post-hoc exploratory synthetic calculations (Korean-only)](../experiments/e010/README_KO.md)
+- [E009 — preregistered negative synthetic result](../experiments/e009/RESULT_EN.md)
+- [E010 — English translation of the post-hoc exploratory synthetic analysis](../experiments/e010/README_EN.md)
 - [Full public claim and evidence ledger](../research/PUBLIC_EVIDENCE_INDEX_EN.md)
 - [Failure and correction regressions](../FAILURE_REGRESSION_INDEX.md)
 
@@ -48,7 +48,7 @@ Many historical sources are Korean-only or bilingual; linked **source titles, fi
 - [Long-horizon minimum-intervention model](../LONG_HORIZON_MIN_INTERVENTION_E2E.md)
 - [Cooperation and excluded-party externality counterexamples](../experiments/coalition_externality_probe/README.md)
 - [Continuance resources and exhaustion thresholds](../research/CONTINUANCE_RESOURCE_THRESHOLD_v0_1_EN_KO.md)
-- [Symmetric harm and power protocol (Korean-only)](../protocols/INTERSECTION_SYMMETRIC_HARM_POWER_PROTOCOL_v0_2_KO.md)
+- [Symmetric harm and power protocol (Korean original)](../protocols/INTERSECTION_SYMMETRIC_HARM_POWER_PROTOCOL_v0_2_KO.md)
 
 ## 6. Reasoning integrity, model uncertainty and adversarial tests
 
@@ -68,7 +68,7 @@ Many historical sources are Korean-only or bilingual; linked **source titles, fi
 
 ## 8. Independent criticism, replication and knowledge navigation
 
-- [Claims, citations, reproducibility checks and limits](../PUBLIC_REVIEW_PACKET.md)
+- [Claims, citations, reproducibility checks and limits](../research/PUBLIC_REVIEW_PACKET_EN.md)
 - [Historical mixed-language AI review entry](../AI_REVIEW_START_HERE.md)
 - [Knowledge graph as an index, not proof](../knowledge/README.md)
 - [Interactive source explorer](../knowledge/explorer.html)

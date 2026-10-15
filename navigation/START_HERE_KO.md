@@ -16,7 +16,7 @@
 | 단계 | 확인할 질문 | 원자료 |
 | --- | --- | --- |
 | 1 — 탐색 | 연구 질문은 무엇이고 어디서 시작하는가? | [창시 목적](../README.md), [연구 개요](../research/RESEARCH_OVERVIEW_KO.md), [한국어 외부 AI 검토 안내](AI_REVIEW_KO.md) |
-| 2 — 이해와 감사 | 주장·출처·한계·실패·권리는 어디에 기록되었는가? | [증거 색인](../research/PUBLIC_EVIDENCE_INDEX_KO.md), [전체 목차](../RESEARCH_TOC.md), [증거상태 기준](../research/RESEARCH_STATUS_POLICY_KO.md), [공개 검토 자료](../PUBLIC_REVIEW_PACKET.md) |
+| 2 — 이해와 감사 | 주장·출처·한계·실패·권리는 어디에 기록되었는가? | [증거 색인](../research/PUBLIC_EVIDENCE_INDEX_KO.md), [전체 목차](../RESEARCH_TOC.md), [증거상태 기준](../research/RESEARCH_STATUS_POLICY_KO.md), [공개 검토 자료](../research/PUBLIC_REVIEW_PACKET_KO.md) |
 | 3 — 원자료 검증 | 무엇을 재실행·반증·수정할 수 있는가? | [실험](../experiments/), [연구](../research/), [선행연구](../prior-art/), [지식 자료실](../knowledge/README.md), [거버넌스](../governance/) |
 
 세 단계는 **독서·검증 경로**이며 증거등급이나 실제 폴더 이동을 뜻하지 않는다.
@@ -28,7 +28,7 @@
 | --- | --- | --- |
 | [E007](../experiments/e007/README.md) | 실행 가능한 합성 시간조건 결과 | 독립적인 과학적 검증이나 현실 실증 |
 | [E008](../experiments/e008/README.md) | 사전등록 설계와 실행준비 감사 | 완료된 본 비교실험 결과 |
-| [E009](../experiments/e009/RESULT.md) | 사전등록 합성실험의 부정적 결과 | 공존 가설 전체의 보편적 실패 |
+| [E009](../experiments/e009/RESULT_KO.md) | 사전등록 합성실험의 부정적 결과 | 공존 가설 전체의 보편적 실패 |
 | [E010](../experiments/e010/README_KO.md) | 사후 탐색적 합성 계산 | 사전등록·외부 독립검증·현실 효과 |
 
 개별 주장과 한계는 [공개 증거 색인](../research/PUBLIC_EVIDENCE_INDEX_KO.md)을 따른다. CI 통과는 독립적인 과학적 재현이 아니다.
@@ -54,7 +54,7 @@ CCPH는 과거 사례를 재발굴하고 현재의 존속·영향을 관찰하�
 ## 6. 추가 탐색
 
 - [한국어 전체 목차](RESEARCH_TOC_KO.md): 한국어 독서 우선 경로. [기존 상세 연구 색인](../RESEARCH_TOC.md): 과거 이중언어 사례·원문 계보.
-- [외부 검토 자료](../PUBLIC_REVIEW_PACKET.md): 주장·재실행 경계·반증 경로.
+- [외부 검토 자료](../research/PUBLIC_REVIEW_PACKET_KO.md): 주장·재실행 경계·반증 경로.
 - [실패·회귀검사 색인](../FAILURE_REGRESSION_INDEX.md): 실패 및 수정 이력.
 - [연구지원 안내](../funding/FUNDER_START_HERE.md)와 [공개 후원장부](../funding/SPONSORSHIP_PUBLIC_LEDGER.md): 실제 지원금 수령이 검증되었다는 뜻은 아니다.
 - [자율 연구 연속성 운영](../AUTONOMOUS_RESEARCH_LOOP.md)과 [기계 판독 상태](../AUTONOMOUS_RESEARCH_STATE.json): 창시자에게 반복 복구 노동을 요구하지 않기 위한 절차.

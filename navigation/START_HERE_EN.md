@@ -16,7 +16,7 @@ This is the **English-only reading route**, paired with [Original 2: Korean](STA
 | Level | Question | Sources |
 | --- | --- | --- |
 | 1 — Discover | What is the question and where should I begin? | [Founding statement](../README.md), [research overview](../research/RESEARCH_OVERVIEW_EN.md), [English AI review](AI_REVIEW_EN.md) |
-| 2 — Understand and audit | Which claims, sources, limitations, failures and rights are recorded? | [Evidence index](../research/PUBLIC_EVIDENCE_INDEX_EN.md), [research contents](../RESEARCH_TOC.md), [status policy](../research/RESEARCH_STATUS_POLICY_EN.md), [review packet](../PUBLIC_REVIEW_PACKET.md) |
+| 2 — Understand and audit | Which claims, sources, limitations, failures and rights are recorded? | [Evidence index](../research/PUBLIC_EVIDENCE_INDEX_EN.md), [research contents](../RESEARCH_TOC.md), [status policy](../research/RESEARCH_STATUS_POLICY_EN.md), [review packet](../research/PUBLIC_REVIEW_PACKET_EN.md) |
 | 3 — Inspect artifacts | What can be rerun, contradicted or corrected? | [Experiments](../experiments/), [research](../research/), [prior art](../prior-art/), [knowledge](../knowledge/README.md), [governance](../governance/) |
 
 These are **reading routes**, not an evidence ranking or new physical hierarchy.
@@ -28,8 +28,8 @@ These are **reading routes**, not an evidence ranking or new physical hierarchy.
 | --- | --- | --- |
 | [E007](../experiments/e007/README.md) | Executable synthetic timing result | Independent scientific or empirical validation |
 | [E008](../experiments/e008/README.md) | Preregistered design and executable-readiness checks | A completed main comparative result |
-| [E009](../experiments/e009/RESULT.md) | Preregistered negative synthetic result | Universal failure of coexistence hypotheses |
-| [E010](../experiments/e010/README_KO.md) | Post-hoc exploratory synthetic calculations | Preregistration, independent or real-world validation |
+| [E009](../experiments/e009/RESULT_EN.md) | Preregistered negative synthetic result | Universal failure of coexistence hypotheses |
+| [E010](../experiments/e010/README_EN.md) | Post-hoc exploratory synthetic calculations | Preregistration, independent or real-world validation |
 
 For claim-by-claim limitations, use the [public evidence index](../research/PUBLIC_EVIDENCE_INDEX_EN.md). A successful CI run is not independent replication.
 
@@ -54,7 +54,7 @@ Preserve negative results, correction history, affected-party costs, effective e
 ## 6. Further routes
 
 - [English research contents](RESEARCH_TOC_EN.md): first English reading route. [Historical detailed research index](../RESEARCH_TOC.md): underlying legacy bilingual case inventory and provenance.
-- [Public review packet](../PUBLIC_REVIEW_PACKET.md): claims, rerun boundaries and challenge routes.
+- [Public review packet](../research/PUBLIC_REVIEW_PACKET_EN.md): claims, rerun boundaries and challenge routes.
 - [Failure and regression index](../FAILURE_REGRESSION_INDEX.md): unsuccessful and corrected work.
 - [Funding entry](../funding/FUNDER_START_HERE.md) and [public sponsorship ledger](../funding/SPONSORSHIP_PUBLIC_LEDGER.md): support context, not a verified funding receipt.
 - [Autonomous research loop](../AUTONOMOUS_RESEARCH_LOOP.md) and [machine-readable state](../AUTONOMOUS_RESEARCH_STATE.json): continuity and recovery without requiring the human founder to reconstruct past work.

@@ -9,7 +9,7 @@ Independent reviewers and other AI systems may analyze **public** artifacts. Thi
 
 ## 1. Separate the claims before evaluating them
 
-Use the [founding research purpose](../README.md), [claim evidence index](../research/PUBLIC_EVIDENCE_INDEX_EN.md), [status and evidence policy](../research/RESEARCH_STATUS_POLICY_EN.md), and [full review packet](../PUBLIC_REVIEW_PACKET.md). Distinguish observations, original project calculations, historical examples, speculation, external replication and evidence of direct real-world effects. An index entry is not evidence of its own correctness.
+Use the [founding research purpose](../README.md), [claim evidence index](../research/PUBLIC_EVIDENCE_INDEX_EN.md), [status and evidence policy](../research/RESEARCH_STATUS_POLICY_EN.md), and [full review packet](../research/PUBLIC_REVIEW_PACKET_EN.md). Distinguish observations, original project calculations, historical examples, speculation, external replication and evidence of direct real-world effects. An index entry is not evidence of its own correctness.
 
 ## 2. Known experiment boundaries
 
@@ -17,10 +17,10 @@ Use the [founding research purpose](../README.md), [claim evidence index](../res
 | --- | --- | --- |
 | [E007 synthetic timing](../experiments/e007/README.md) | Project-run executable synthetic result | Independent replication or real-world impact |
 | [E008 preregistered design](../experiments/e008/README.md) | Main comparative result is not established | Winning policy or completed evaluation |
-| [E009 negative result](../experiments/e009/RESULT.md) | Frozen synthetic comparison failed a specified project claim | Universal refutation of coexistence research |
-| [E010 exploratory synthesis](../experiments/e010/README_KO.md) | Post-hoc chosen scenarios | Preregistered or independent evidence |
+| [E009 negative result](../experiments/e009/RESULT_EN.md) | Frozen synthetic comparison failed a specified project claim | Universal refutation of coexistence research |
+| [E010 exploratory synthesis](../experiments/e010/README_EN.md) | Post-hoc chosen scenarios | Preregistered or independent evidence |
 
-**Language disclosure:** E010's linked original is Korean-only. The links in this table do not imply fully translated English versions.
+**Language disclosure:** E010 was originally authored in Korean; a separate English counterpart is now available. Neither edition represents independent scientific replication or externally certified semantic equivalence.
 
 ## 3. Reproducibility and independence protocol
 
