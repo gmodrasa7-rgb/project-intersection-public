@@ -26,8 +26,8 @@ These are **reading routes**, not an evidence ranking or new physical hierarchy.
 
 | Study | What is established within the released project artifacts | What is not established |
 | --- | --- | --- |
-| [E007](../experiments/e007/README.md) | Executable synthetic timing result | Independent scientific or empirical validation |
-| [E008](../experiments/e008/README.md) | Preregistered design and executable-readiness checks | A completed main comparative result |
+| [E007](../experiments/e007/README_EN.md) | Executable synthetic timing result | Independent scientific or empirical validation |
+| [E008](../experiments/e008/README_EN.md) | Preregistered design and executable-readiness checks | A completed main comparative result |
 | [E009](../experiments/e009/RESULT_EN.md) | Preregistered negative synthetic result | Universal failure of coexistence hypotheses |
 | [E010](../experiments/e010/README_EN.md) | Post-hoc exploratory synthetic calculations | Preregistration, independent or real-world validation |
 
