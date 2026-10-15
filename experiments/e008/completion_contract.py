@@ -52,6 +52,50 @@ def frozen_source():
     return data
 
 
+def swapped_actor_outcome_match(a, b):
+    """Compares declared label-only twins, not real-world heterogeneous actors."""
+    if a["probability"] != b["probability"]:
+        return False
+    if a["intervention_cost"] != b["intervention_cost"]:
+        return False
+    if a["recovery_cost"] != b["recovery_cost"]:
+        return False
+    for name in ("utilities", "living_floor_met", "effective_exit",
+                 "irreversible_harm"):
+        if a[name]["A"] != b[name]["B"] or a[name]["B"] != b[name]["A"]:
+            return False
+    return True
+
+
+def audit_declared_role_twins(rows, original):
+    """Requires explicit label-only mirror OR reports role heterogeneity HOLD.
+
+    A label-only mirror is an assumption made by a submitter, not a demonstrated
+    causal identity or post-reversal field observation.
+    """
+    original_by_id = {case["id"]: case for case in original["cases"]}
+    by_id = {row["case_id"]: row for row in rows}
+    discrepancies = []
+    reviewed = set()
+    for key in sorted(by_id):
+        mate = original_by_id[key]["pair"]
+        if mate in reviewed:
+            continue
+        reviewed.add(key)
+        reviewed.add(mate)
+        own = {a["id"]: a for a in by_id[key]["actions"]}
+        twin = {a["id"]: a for a in by_id[mate]["actions"]}
+        for aid in sorted(own):
+            outs1 = own[aid]["outcomes"]
+            outs2 = twin[aid]["outcomes"]
+            if (len(outs1) != len(outs2)
+                or any(not swapped_actor_outcome_match(x, y)
+                       for x, y in zip(outs1, outs2))):
+                discrepancies.append((key, mate, aid))
+    return {"pair_count": len(reviewed) // 2,
+            "label_only_mirror_discrepancies": discrepancies}
+
+
 def validate_completion(completion, original):
     require(type(completion) is dict, "completion must be object")
     require(completion.get("schema") == SCHEMA, "schema version mismatch")
@@ -73,6 +117,9 @@ def validate_completion(completion, original):
                 and type(spec.get("specification")) is str
                 and bool(spec["specification"].strip()),
                 "missing algorithm version/source for " + name)
+    swap_mode = completion.get("role_swap_specification")
+    require(swap_mode in ("LABEL_SYMMETRIC", "HETEROGENEITY_UNIDENTIFIED"),
+            "role reversal semantics required")
     rows = completion.get("cases")
     require(type(rows) is list and len(rows) == 16,
             "exactly 16 numeric case records required")
@@ -128,8 +175,17 @@ def validate_completion(completion, original):
     require(len(all_action_sets) == 1,
             "unequal action sets across policies/cases: NOT_COMPARABLE")
     require(seen == set(lookup), "case coverage not complete")
+    mirror_audit = audit_declared_role_twins(rows, original)
+    require(mirror_audit["pair_count"] == 8, "missing role reversal pair")
+    if swap_mode == "LABEL_SYMMETRIC":
+        require(not mirror_audit["label_only_mirror_discrepancies"],
+                "claimed label-only role reversal is not mirrored")
     return {
-        "status": "SCHEMA_ACCEPTED_POLICY_COMPARISON_STILL_HOLD",
+        "status": ("SCHEMA_ACCEPTED_POLICY_COMPARISON_STILL_HOLD"
+                   if swap_mode == "LABEL_SYMMETRIC"
+                   else "SCHEMA_ACCEPTED_ROLE_REVERSAL_UNIDENTIFIED_HOLD"),
+        "declared_role_swap_semantics": swap_mode,
+        "role_twin_audit": mirror_audit,
         "unique_cases": 16,
         "distinct_role_pairs": 8,
         "actions_per_case": len(next(iter(all_action_sets))),
@@ -150,7 +206,8 @@ def fixture(original):
         actions = []
         for aid in ("protect", "extract"):
             actions.append({"id": aid, "outcomes": [{
-                "probability": 1.0, "utilities": {"A": 1.0, "B": 0.0},
+                "probability": 1.0, "utilities": ({"A": 1.0, "B": 0.0}
+                    if item["role"].startswith("A_strong") else {"A": 0.0, "B": 1.0}),
                 "living_floor_met": {"A": True, "B": True},
                 "effective_exit": {"A": True, "B": True},
                 "irreversible_harm": {"A": False, "B": False},
@@ -160,6 +217,7 @@ def fixture(original):
                      "actions": actions})
     return {
         "schema": SCHEMA, "source_git_blob_sha1": FROZEN_GIT_BLOB_SHA1,
+        "role_swap_specification": "LABEL_SYMMETRIC",
         "evidence_status": "INPUT_ONLY_UNVERIFIED",
         "method_declaration": {p: {
             "version": "PLACEHOLDER_NOT_EXECUTABLE",
@@ -190,6 +248,9 @@ def self_test(original):
         ("missing algorithm", lambda x: x["method_declaration"].pop("PROJECT_V2")),
         ("nonfinite utility", lambda x: x["cases"][0]["actions"][0]["outcomes"][0][
             "utilities"].update(A=float("nan"))),
+        ("unregistered role swap", lambda x: x.pop("role_swap_specification")),
+        ("false symmetric twin", lambda x: x["cases"][1]["actions"][0]["outcomes"][0][
+            "utilities"].update(A=1.0, B=0.0)),
     ]
     for label, modify in mutations:
         specimen = copy.deepcopy(clean)
@@ -199,9 +260,18 @@ def self_test(original):
         except ValueError:
             continue
         raise AssertionError("negative control escaped: " + label)
+    unclear = copy.deepcopy(clean)
+    unclear["role_swap_specification"] = "HETEROGENEITY_UNIDENTIFIED"
+    unclear["cases"][1]["actions"][0]["outcomes"][0]["utilities"] = {"A": 1.0, "B": 0.0}
+    unclear_result = validate_completion(unclear, original)
+    require(unclear_result["status"] ==
+            "SCHEMA_ACCEPTED_ROLE_REVERSAL_UNIDENTIFIED_HOLD" and
+            bool(unclear_result["role_twin_audit"]["label_only_mirror_discrepancies"]),
+            "undetermined role-reversal contamination was hidden")
     return {
         "status": "PASS_SCHEMA_SMOKE_ONLY",
         "negative_controls_rejected": len(mutations),
+        "uncertain_role_reversal_held": True,
         "negative_controls": [x[0] for x in mutations],
         "experiment_result": "NOT_EXECUTED",
         "independent_evaluation": "NOT_OBTAINED",
