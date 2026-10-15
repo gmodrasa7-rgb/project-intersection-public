@@ -59,8 +59,10 @@ def candidate_set_status(candidates, *, exhaustive=False, minimum_floor=0.50,
                          minimum_exit=0.50):
     """Empty MAK is provable from these necessary gates only for an exhaustive action set.
 
-    `exhaustive=True` is an external assertion, not certified by this toy code.
-    Having a survivor never proves that the complete MAK++ is nonempty.
+    `exhaustive=True` is an unverified caller assertion, not a coverage receipt.
+    Even if every supplied candidate fails, the empty-set conclusion is
+    conditional on a genuinely complete choice set. Never return a definitive
+    empty-set verdict based only on this flag.
     """
     cases = tuple(candidates)
     if not cases:
@@ -71,7 +73,7 @@ def candidate_set_status(candidates, *, exhaustive=False, minimum_floor=0.50,
     if "FLOOR_EXIT_PASS" in statuses:
         return "SURVIVORS_REQUIRE_FULL_MAK_REVIEW"
     if exhaustive:
-        return "NO_MUTUALLY_ACCEPTABLE_SET"
+        return "CONDITIONAL_EMPTY_IF_SCOPE_COMPLETE"
     return "UNRESOLVED_ACTION_COVERAGE"
 
 
