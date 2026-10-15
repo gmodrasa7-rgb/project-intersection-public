@@ -37,9 +37,8 @@ def validate_proposal(value: object) -> dict:
     threshold = value["threshold"]
     # Equality-based membership is unsafe: JSON 1.0 == 1 in Python, but
     # prediction interprets float 1.0 as a ratio and int 1 as a count.
-    allowed_integer = type(threshold) is int and threshold in (0, 1, 2, 3)
-    allowed_fraction = type(threshold) is float and threshold == 0.30
-    if not (allowed_integer or allowed_fraction):
+    if not any(type(threshold) is type(option) and threshold == option
+               for option in THRESHOLDS):
         raise ValueError("INVALID_THRESHOLD")
     return dict(value)
 
