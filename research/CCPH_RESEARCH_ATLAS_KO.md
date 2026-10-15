@@ -1,7 +1,7 @@
 # CCPH 연구 증거 지도 — 원본2: 한국어
 
 <!-- PI-LANGUAGE: ko -->
-<!-- PI-MIRROR: CCPH_RESEARCH_ATLAS_EN.md -->
+<!-- PI-MIRROR: research/CCPH_RESEARCH_ATLAS_EN.md -->
 <!-- PI-SOURCE: CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md -->
 
 **상태:** [기존 선행연구·공백 전체 교차지도](../CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md)의 출처와 기여 계보를 보존해 재배치한 제한된 탐색판이며, 원문 전체 대체나 외부 논문의 독립 재검증이 아니다. [영어 원본1](CCPH_RESEARCH_ATLAS_EN.md) · [한국어 증거 색인](PUBLIC_EVIDENCE_INDEX_KO.md).
