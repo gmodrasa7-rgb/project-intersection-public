@@ -74,7 +74,7 @@ CCPH는 과거 사례를 재발굴하고 현재의 존속·영향을 관찰하�
 - [한국어 전체 목차](RESEARCH_TOC_KO.md): 한국어 독서 우선 경로. [기존 상세 연구 색인](../RESEARCH_TOC.md): 과거 이중언어 사례·원문 계보.
 - [외부 검토 자료](../research/PUBLIC_REVIEW_PACKET_KO.md): 주장·재실행 경계·반증 경로.
 - [실패·회귀검사 색인](../FAILURE_REGRESSION_INDEX.md): 실패 및 수정 이력.
-- [연구지원 안내](../funding/FUNDER_START_HERE.md)와 [공개 후원장부](../funding/SPONSORSHIP_PUBLIC_LEDGER.md): 실제 지원금 수령이 검증되었다는 뜻은 아니다.
+- [연구지원 안내 — 한국어](../funding/FUNDER_START_HERE.md#원본2--한국어)와 [공개 후원장부](../funding/SPONSORSHIP_PUBLIC_LEDGER.md): 실제 지원금 수령이 검증되었다는 뜻은 아니다.
 - [자율 연구 연속성 운영](../AUTONOMOUS_RESEARCH_LOOP.md)과 [기계 판독 상태](../AUTONOMOUS_RESEARCH_STATE.json): 창시자에게 반복 복구 노동을 요구하지 않기 위한 절차.
 - [기여자 비용 별도 회귀검사](../CONTRIBUTION_COST_ACCOUNTING_REGRESSION.md): 연구 성과와 기여자의 실익·손실 구분.
 - [지식그래프 탐색기](../knowledge/explorer.html): 원자료를 대체하지 않는 출처 연계 탐색.
