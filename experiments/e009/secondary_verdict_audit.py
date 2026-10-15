@@ -30,6 +30,19 @@ def number(value, name):
             and math.isfinite(value), f"{name}: nonfinite or nonnumeric")
     return value
 
+def checked_action_counts(actions, n, label):
+    """Reject impossible counts even if the aggregate sums stay unchanged."""
+    require(type(n) is int and n > 0, f"{label}: row count must be a positive integer")
+    require(isinstance(actions, dict) and set(actions) ==
+            {"ALLOW", "BLOCK", "EXPERIMENT", "MONITOR"},
+            f"{label}: invalid action inventory")
+    require(all(type(value) is int and 0 <= value <= n
+                for value in actions.values()),
+            f"{label}: action counts must be nonnegative integers")
+    require(sum(actions.values()) == n,
+            f"{label}: action total disagrees with row count")
+
+
 def audit(result, receipt):
     require(result.get("status") == "SYNTHETIC_PROJECT_RERUN_NOT_INDEPENDENT_VALIDATION",
             "invalid result evidence class")
@@ -46,10 +59,8 @@ def audit(result, receipt):
     require(set(profiles) == set(PROFILES), "frozen scoring profile missing")
     for policy in POLICIES:
         p = primary[policy]
+        checked_action_counts(p["actions"], p["n"], f"{policy}.stress_primary")
         require(p["n"] == 9600, f"{policy}: primary row count")
-        require(set(p["actions"]) == {"ALLOW", "BLOCK", "EXPERIMENT", "MONITOR"},
-                f"{policy}: missing action")
-        require(sum(p["actions"].values()) == 9600, f"{policy}: action total")
         for field in ("mean_regret", "mean_recovery", "severe_harm_rate"):
             number(p[field], f"{policy}.{field}")
         require(0 <= p["severe_harm_rate"] <= 1, "severe harm fraction outside [0,1]")
@@ -57,6 +68,9 @@ def audit(result, receipt):
                     - round(p["severe_harm_rate"] * 3200)) < 1e-9,
                 f"{policy}: severe-event count not integral for unique decisions")
         rows = [profiles[w][policy] for w in PROFILES]
+        for w in PROFILES:
+            row = profiles[w][policy]
+            checked_action_counts(row["actions"], row["n"], f"{policy}.{w}")
         require(all(row["n"] == 3200 for row in rows), f"{policy}: per-profile count")
         require(all(row["actions"] == rows[0]["actions"] for row in rows),
                 f"{policy}: actions unexpectedly depend on scoring weights")
@@ -99,6 +113,29 @@ def audit(result, receipt):
             "v3_regret_worse_percent": round(-100 * improvement, 6),
             "v3_severe_events_per_3200": 53}
 
+def poison_negative_actions_preserving_totals(result):
+    """Original 12 / 4 ALLOW counts become -3 / -1; all sums still match."""
+    policy = "PROJECT_V3"
+    primary = result["stress_primary"][policy]["actions"]
+    primary["ALLOW"] -= 15
+    primary["BLOCK"] += 15
+    for profile in PROFILES:
+        actions = result["stress_by_weight_profile"][profile][policy]["actions"]
+        actions["ALLOW"] -= 5
+        actions["BLOCK"] += 5
+
+
+def poison_fractional_actions_preserving_totals(result):
+    policy = "PROJECT_V3"
+    primary = result["stress_primary"][policy]["actions"]
+    primary["ALLOW"] += 1.5
+    primary["BLOCK"] -= 1.5
+    for profile in PROFILES:
+        actions = result["stress_by_weight_profile"][profile][policy]["actions"]
+        actions["ALLOW"] += 0.5
+        actions["BLOCK"] -= 0.5
+
+
 def main():
     result = json.loads((ROOT / "RESULT.json").read_text(encoding="utf-8"))
     receipt = json.loads((ROOT / "EXECUTION_RECEIPT.json").read_text(encoding="utf-8"))
@@ -121,6 +158,10 @@ def main():
          lambda d: d["stress_by_weight_profile"].pop("balanced")),
         ("duplicated row count", "result",
          lambda d: d["stress_primary"]["PROJECT_V3"].__setitem__("n", 19200)),
+        ("negative action counts despite valid totals and profile ratios", "result",
+         poison_negative_actions_preserving_totals),
+        ("fractional action counts despite valid totals and profile ratios", "result",
+         poison_fractional_actions_preserving_totals),
     ]
     for name, target, mutation in negatives:
         r, rec = copy.deepcopy(result), copy.deepcopy(receipt)
