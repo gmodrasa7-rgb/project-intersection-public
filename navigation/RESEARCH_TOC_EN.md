@@ -36,6 +36,8 @@ Many historical sources are Korean-only or bilingual; linked **source titles, fi
 
 ## 4. CCPH: continuance, support and contribution pathways
 
+- [English CCPH evidence atlas (CP64–CP79)](../CCPH_RESEARCH_ATLAS_EN.md)
+
 - [Historical cases, assistance, indirect influence, negative results](../CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md)
 - [Proposed event lineage schema; not a populated societal database](../knowledge/ccph-impact-lineage-event-schema-v0_1.json)
 - [Synthetic CCPH pilot](../experiments/ccph_01/README.md)
