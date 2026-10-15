@@ -303,9 +303,12 @@
     },
     {
       "path": "experiments/e010/README_KO.md",
-      "issue": "ENGLISH_COUNTERPART_UNAVAILABLE",
-      "replacement_routes": [],
-      "action": "HONESTLY_LABEL_MISSING"
+      "issue": "ENGLISH_COUNTERPART_PRESENT_MEANING_REVIEW_PENDING",
+      "replacement_routes": [
+        "experiments/e010/README_EN.md",
+        "experiments/e010/README_KO.md"
+      ],
+      "action": "PRESERVE_HISTORICAL_KOREAN_ORIGINAL_AND_UNVERIFIED_ENGLISH_EDITION"
     }
   ],
   "metrics": {
