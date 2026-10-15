@@ -109,7 +109,20 @@ class TestPEST(unittest.TestCase):
         self.assertEqual(candidate_set_status((bad,), exhaustive=False),
                          "UNRESOLVED_ACTION_COVERAGE")
         self.assertEqual(candidate_set_status((bad,), exhaustive=True),
-                         "NO_MUTUALLY_ACCEPTABLE_SET")
+                         "CONDITIONAL_EMPTY_IF_SCOPE_COMPLETE")
+
+    def test_asserted_exhaustiveness_cannot_certify_empty_global_set(self):
+        # One observed failing action plus an unobserved acceptable option:
+        # no local boolean can prove the true global action set is exhausted.
+        bad = replace(self.cases[0], floor_after=.10)
+        unseen_good = replace(bad, floor_after=.70)
+        conditional = candidate_set_status((bad,), exhaustive=True)
+        self.assertEqual(conditional, "CONDITIONAL_EMPTY_IF_SCOPE_COMPLETE")
+        self.assertNotEqual(conditional, "NO_MUTUALLY_ACCEPTABLE_SET")
+        self.assertEqual(candidate_set_status((bad, unseen_good), exhaustive=True),
+                         "SURVIVORS_REQUIRE_FULL_MAK_REVIEW")
+        self.assertEqual(candidate_set_status((bad,), exhaustive=False),
+                         "UNRESOLVED_ACTION_COVERAGE")
 
     def test_empty_candidate_inventory_is_unknown(self):
         with self.assertRaisesRegex(ValueError, "empty action inventory"):
