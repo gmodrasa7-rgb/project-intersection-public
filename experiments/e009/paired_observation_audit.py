@@ -196,6 +196,7 @@ def family_unit_audit(canonical):
     m4_count = orig["MINIMAL_4VAR"]["severe_events"]
     return {
         "status": "E009_POSTHOC_DESCRIPTIVE_FAMILY_UNIT_AUDIT_ONLY",
+        "construct_validity_diagnostic": construct_audit(canonical),
         "original_frozen_benchmark_changed": False,
         "independent_validation": False,
         "family_count": len(b.FAMILIES),
