@@ -1,0 +1,460 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/knowledge/ccph-impact-lineage-event-schema-v0_1.json",
+  "title": "Project Intersection CCPH opt-in impact-lineage event v0.1",
+  "description": "An evidence-limited event and influence-claim record. Never infer legal guilt, rights ownership, causal effect, compensation, or human worth from a tag. Not an exhaustive log.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "event_id",
+    "record_class",
+    "event_kind",
+    "participants",
+    "influence_edges",
+    "outcomes",
+    "evidence",
+    "uncertainty",
+    "privacy_and_control",
+    "review"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "0.1.0"
+    },
+    "event_id": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 160
+    },
+    "record_class": {
+      "enum": [
+        "REAL_OBSERVED",
+        "PARTICIPANT_REPORTED",
+        "HYPOTHETICAL",
+        "SYNTHETIC_TEST"
+      ]
+    },
+    "event_kind": {
+      "enum": [
+        "SUPPORT_OR_GRANT",
+        "EDUCATION_OR_MENTORSHIP",
+        "CARE_OR_MAINTENANCE",
+        "QUESTION_OR_PROBLEM_DISCOVERY",
+        "HYPOTHESIS_OR_THEORY",
+        "WARNING_OR_NEGATIVE_RESULT",
+        "VALIDATION_OR_ERROR_CORRECTION",
+        "INSPIRATION_OR_IDEA_TRANSFER",
+        "ARTIFACT_OR_SERVICE_CREATION",
+        "SHARING_OR_COOPERATION",
+        "ATTRIBUTION_OR_REUSE",
+        "BENEFIT_OR_RESOURCE_TRANSFER",
+        "PROMISE_OR_AGREEMENT",
+        "ALLEGED_DECEPTION_OR_BREACH",
+        "EXIT_OR_DISCONTINUITY",
+        "OTHER"
+      ]
+    },
+    "event_time": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "participants": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "actor_ref",
+          "actor_type",
+          "role"
+        ],
+        "properties": {
+          "actor_ref": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Pseudonymous, consented or already-public identifier; no private names."
+          },
+          "actor_type": {
+            "enum": [
+              "HUMAN",
+              "AI_SYSTEM",
+              "ORGANIZATION",
+              "GROUP",
+              "UNKNOWN"
+            ]
+          },
+          "role": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Case-specific role; not automatic authorship or ownership."
+          }
+        }
+      }
+    },
+    "influence_edges": {
+      "type": "array",
+      "description": "Documented relations or explicitly non-causal hypotheses. Missing edges may exist.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "from_ref",
+          "to_ref",
+          "relation",
+          "causal_status",
+          "evidence_ids"
+        ],
+        "properties": {
+          "from_ref": {
+            "type": "string",
+            "minLength": 1
+          },
+          "to_ref": {
+            "type": "string",
+            "minLength": 1
+          },
+          "relation": {
+            "enum": [
+              "SUPPORTED",
+              "ENABLED_ACCESS",
+              "PROVIDED_CARE",
+              "PROPOSED",
+              "WARNED",
+              "INSPIRED",
+              "USED",
+              "DERIVED_FROM",
+              "TESTED",
+              "CORRECTED",
+              "SHARED",
+              "BENEFITED",
+              "BORE_COST",
+              "RECEIVED_CREDIT",
+              "RECEIVED_PAYMENT",
+              "ALLEGED_MISREPRESENTATION",
+              "ALLEGED_PROMISE_BREACH",
+              "WITHDREW",
+              "OTHER"
+            ]
+          },
+          "causal_status": {
+            "enum": [
+              "PROCESS_DOCUMENTED_NOT_EFFECT_IDENTIFIED",
+              "CAUSAL_EFFECT_INDEPENDENTLY_SUPPORTED",
+              "CORRELATED_ONLY",
+              "HYPOTHESIZED",
+              "UNKNOWN"
+            ]
+          },
+          "evidence_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "uniqueItems": true
+          }
+        }
+      }
+    },
+    "outcomes": {
+      "type": "array",
+      "description": "Keep epistemic event, actual downstream outcome, and actor continuity/cost separate.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "actor_ref",
+          "ledger",
+          "direction",
+          "measurement",
+          "evidence_ids"
+        ],
+        "properties": {
+          "actor_ref": {
+            "type": "string",
+            "minLength": 1
+          },
+          "ledger": {
+            "enum": [
+              "E_DISCOVERY",
+              "O_OUTCOME",
+              "A_ACTOR_CONTINUITY_AND_RIGHTS"
+            ]
+          },
+          "direction": {
+            "enum": [
+              "BENEFIT",
+              "COST",
+              "MIXED",
+              "NEUTRAL",
+              "UNKNOWN"
+            ]
+          },
+          "measurement": {
+            "enum": [
+              "VERIFIED",
+              "REPORTED",
+              "DISPUTED",
+              "MODELLED",
+              "UNKNOWN"
+            ]
+          },
+          "quantity": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "unit": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "description": {
+            "type": "string"
+          },
+          "evidence_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "evidence_id",
+          "status",
+          "source_pointer"
+        ],
+        "properties": {
+          "evidence_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "status": {
+            "enum": [
+              "PRIMARY",
+              "CORROBORATED_SECONDARY",
+              "PARTICIPANT_REPORTED",
+              "DISPUTED",
+              "UNVERIFIED",
+              "NOT_ASSESSED"
+            ]
+          },
+          "source_pointer": {
+            "type": "string",
+            "description": "Public, permissioned URL/DOI/repository reference or non-reversible local reference; avoid exposing chat logs."
+          },
+          "rights_or_permission": {
+            "enum": [
+              "PUBLIC_WITH_ATTRIBUTION",
+              "CONSENTED",
+              "RESTRICTED",
+              "UNKNOWN"
+            ]
+          },
+          "independent_review": {
+            "enum": [
+              "YES",
+              "NO",
+              "UNKNOWN"
+            ]
+          }
+        }
+      }
+    },
+    "uncertainty": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "unobserved_actors",
+        "unobserved_edges",
+        "selection_mechanism",
+        "counterfactual_identified"
+      ],
+      "properties": {
+        "unobserved_actors": {
+          "enum": [
+            "KNOWN_PRESENT",
+            "POSSIBLE",
+            "NONE_WITHIN_BOUNDED_AUDIT",
+            "UNKNOWN"
+          ]
+        },
+        "unobserved_edges": {
+          "enum": [
+            "KNOWN_PRESENT",
+            "POSSIBLE",
+            "NONE_WITHIN_BOUNDED_AUDIT",
+            "UNKNOWN"
+          ]
+        },
+        "selection_mechanism": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Who could enter the record and who was not observed?"
+        },
+        "counterfactual_identified": {
+          "type": "boolean"
+        },
+        "limitations": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "privacy_and_control": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "publication_scope",
+        "participant_consent",
+        "subject_correction_channel",
+        "collect_only_minimum_data"
+      ],
+      "properties": {
+        "publication_scope": {
+          "enum": [
+            "PUBLIC_NONIDENTIFYING",
+            "PRIVATE_RESTRICTED"
+          ]
+        },
+        "participant_consent": {
+          "enum": [
+            "CONFIRMED",
+            "NOT_APPLICABLE_SYNTHETIC",
+            "PUBLIC_RECORD_WITH_REVIEW",
+            "UNKNOWN_DO_NOT_PUBLISH"
+          ]
+        },
+        "subject_correction_channel": {
+          "type": "string",
+          "minLength": 1
+        },
+        "collect_only_minimum_data": {
+          "const": true
+        },
+        "retention_or_withdrawal_rule": {
+          "type": "string"
+        }
+      }
+    },
+    "review": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "adjudicator_separation",
+        "unresolved_claims"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "UNREVIEWED",
+            "INDEPENDENTLY_REVIEWED",
+            "DISPUTED",
+            "CORRECTED",
+            "RETRACTED"
+          ]
+        },
+        "adjudicator_separation": {
+          "enum": [
+            "INDEPENDENT",
+            "SAME_AS_RECORDER",
+            "NOT_APPLICABLE",
+            "UNKNOWN"
+          ]
+        },
+        "unresolved_claims": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "version_of_event": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Use a versioned correction rather than silent replacement."
+        }
+      }
+    }
+  },
+  "examples": [
+    {
+      "schema_version": "0.1.0",
+      "event_id": "SYNTH-CCPH-0001",
+      "record_class": "SYNTHETIC_TEST",
+      "event_kind": "SUPPORT_OR_GRANT",
+      "event_time": null,
+      "participants": [
+        {
+          "actor_ref": "A",
+          "actor_type": "HUMAN",
+          "role": "supporter"
+        },
+        {
+          "actor_ref": "B",
+          "actor_type": "HUMAN",
+          "role": "recipient"
+        }
+      ],
+      "influence_edges": [
+        {
+          "from_ref": "A",
+          "to_ref": "B",
+          "relation": "SUPPORTED",
+          "causal_status": "HYPOTHESIZED",
+          "evidence_ids": []
+        }
+      ],
+      "outcomes": [
+        {
+          "actor_ref": "B",
+          "ledger": "A_ACTOR_CONTINUITY_AND_RIGHTS",
+          "direction": "UNKNOWN",
+          "measurement": "MODELLED",
+          "quantity": null,
+          "unit": null,
+          "description": "No real person or effect was measured.",
+          "evidence_ids": []
+        }
+      ],
+      "evidence": [],
+      "uncertainty": {
+        "unobserved_actors": "UNKNOWN",
+        "unobserved_edges": "POSSIBLE",
+        "selection_mechanism": "Author-selected synthetic illustration, not population sampling.",
+        "counterfactual_identified": false,
+        "limitations": [
+          "No real downstream outcomes measured."
+        ]
+      },
+      "privacy_and_control": {
+        "publication_scope": "PUBLIC_NONIDENTIFYING",
+        "participant_consent": "NOT_APPLICABLE_SYNTHETIC",
+        "subject_correction_channel": "Repository issue for public synthetic data",
+        "collect_only_minimum_data": true
+      },
+      "review": {
+        "status": "UNREVIEWED",
+        "adjudicator_separation": "SAME_AS_RECORDER",
+        "unresolved_claims": [],
+        "version_of_event": null
+      }
+    }
+  ]
+}
