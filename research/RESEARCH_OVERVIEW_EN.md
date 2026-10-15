@@ -130,6 +130,45 @@ and, where possible, what conditions can expand the intersection of
 
 ---
 
+<!-- PI-SECTION: purpose-condition-process-bridge-v1 -->
+## Purpose → conditions → process: a falsifiable bridge (research design, 2026-10-15)
+
+**Status: DESIGN, not an empirical result.** This section operationalizes the established founding purpose without replacing the existing [dynamic-loop analysis](../LONG_HORIZON_MIN_INTERVENTION_E2E.md), [E008 preregistration](../experiments/e008/README.md), [E009 negative result](../experiments/e009/README.md), or [CCPH historical-observation program](CCPH_RESEARCH_ATLAS_EN.md). The project does not assume that voluntary coexistence is always feasible or superior.
+
+### 1. Keep four distinct objects
+
+1. **Purpose (normative, revisable by explicit evidence and affected-party review):** investigate feasible arrangements under which heterogeneous agents, pursuing their own ends, can preserve each other's continuance, effective refusal/exit, independent recovery, and future development without relying on benevolence. This is a research objective, not a theorem.
+2. **Outcomes (empirical and actor-indexed):** for each affected actor, including leavers, excluded third parties, future entrants and cost bearers where observable, report continuance, real choice and exit, recovery, contribution/opportunity, harms, resource costs, and the evidence/missingness of each. Distinct dimensions are not automatically interchangeable; an increased aggregate or a growing repository cannot compensate for an unreported actor's irreversible loss.
+3. **Conditions (causal hypotheses, not project values):** distinguish necessary, sufficient, facilitating, obstructing, and impossible conditions relative to an explicitly stated population, game, information regime and time horizon.
+4. **Process (evidence-producing method):** derive predictions, compare simple alternatives, preregister discriminatory tests, keep disconfirming evidence, check identification, repeat with independent observers and revise claims. Better documentation is not itself evidence of better real-world outcomes.
+
+For a precisely defined target outcome O and condition C **within an identified domain**: C is *necessary* only if O implies C (refute with O and not-C); C is *sufficient* only if C implies O (refute with C and not-O). A correlation, an intuitive safeguard or a one-run simulation establishes neither. A nonempty mutually acceptable policy set must be checked, not postulated; an **empty set** is a legitimate result, not an invitation to hide an affected party.
+
+### 2. An exact small counterexample to universal cooperation claims
+
+Consider an illustrative symmetric repeated game with payoff pairs: mutual cooperation (3,3), unilateral defection (5,-1) or (-1,5), mutual defection (0,0). In the **one-shot game**, defection is strictly dominant. If agents interact indefinitely, observe actions perfectly and can credibly revert to mutual defection after a deviation, the proposed cooperative path under a grim-trigger strategy satisfies the deviation incentive condition only when 3/(1−δ) ≥ 5, or **δ ≥ 0.4**, where δ is the effective continuation discount factor. This is a conditional mathematical example, **not** a measured universal threshold or evidence that the strategy preserves actual exit rights, third parties or long-run generativity. If monitoring, identity continuity, continuation incentives or outside options change, the conclusion must be recalculated. The one-shot failure and the conditional repeated-game success must both be reported.
+
+### 3. The erased-comparator identification limit
+
+Two worlds can produce exactly the **same observed performance of survivors** while a removed actor would have produced zero future contribution in one world and substantial future contribution in the other. Without additional assumptions or observation, the lost counterfactual contribution is **not point-identified**. Non-observation is neither proof of zero benefit nor proof of hidden greatness. Use explicit UNKNOWN or defensible partial bounds, compare retained controls when ethically possible, and record displacement and spillovers. CCPH documents **real histories and traceable influence**, not an invented synthetic success score.
+
+### 4. Competing causal explanations and decision gates
+
+| Candidate explanation | Distinguishing prediction or counterexample |
+| --- | --- |
+| Repeated incentives / direct reciprocity | Holding other factors fixed, a more valuable reliable continuation can sustain cooperation; a short horizon can defeat it |
+| Credible accountability and distributed enforcement | Accountability adds value only if information, execution incentives and appeal work after a violation; decorative oversight fails |
+| Apparent cooperation through dependency or captured exit | Headline agreement rises while independent refusal, recovery or third-party welfare deteriorate |
+| Survivor-only measurement and lost alternatives | Apparent improvement weakens or becomes unidentifiable when leavers, denied entrants, opportunity costs and spillovers enter the denominator |
+
+**Minimum decision transaction:** (a) name agents and the affected-party boundary; (b) specify baseline, time horizon, observable outcomes and unobserved counterfactuals; (c) classify proposed conditions, predictions and strongest contradictory model; (d) run a low-cost, bounded comparison against the simplest credible baseline; (e) evaluate each actor's costs and benefits, reverse roles and check an empty feasible set; (f) publish result as SUPPORTED-IN-SCOPE, REFUTED-IN-SCOPE, NON-IDENTIFIED, or NOT-YET-TESTED; (g) append only *observed, source-linked real events* to the existing CCPH record, and preserve version, originators, rights and rollback.
+
+**Stop/rollback:** Stop upgrading the claim when a simple baseline outperforms the expanded framework, a necessary/sufficient assertion meets a counterexample, the outcome is not identified, an irreversible affected-party loss is obscured, or translation changes the condition's quantifier. E009 already provides a relevant negative synthetic warning; it does not settle the founding research question. External causality, stable AI-agent interests and general long-run gains remain unverified.
+
+**Prior art (not claimed as PI inventions):** Nowak (2006), cooperation mechanisms [DOI](https://doi.org/10.1126/science.1133755); Ostrom (2009), self-organization and institutional conditions [DOI](https://doi.org/10.1126/science.1172133); Fudenberg & Maskin (1986), repeated-game equilibria [bibliography](https://ideas.repec.org/a/ecm/emetrp/v54y1986i3p533-54.html); Aubin (1990), viability theory [DOI](https://doi.org/10.1137/0328044); Imai, Jiang & Malani (2021), spillovers/interference [paper](https://imai.sites.fas.harvard.edu/research/spillover/); Manski (2003), partial identification [book](https://doi.org/10.1007/b97478). Project-specific incremental predictive value above these established approaches remains **unproven**.
+
+---
+
 ## Plain-language core: when the winning path erases its alternatives
 
 A system can appear to improve while becoming worse at discovering that it is wrong.
