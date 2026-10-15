@@ -15,6 +15,7 @@ Many historical sources are Korean-only or bilingual; linked **source titles, fi
 
 - [Founding research purpose](../README.md)
 - [Research overview](../research/RESEARCH_OVERVIEW_EN.md)
+- [Ten core concepts and their claim boundaries](../README.md#ten-core-concepts)
 - [Evidence and status rules](../research/RESEARCH_STATUS_POLICY_EN.md)
 - [Core research framing (historical bilingual file)](../PUBLIC_PREAMBLE_VOLUNTARY_COEXISTENCE_2026-10-13_EN_KO.md)
 
@@ -34,7 +35,7 @@ Many historical sources are Korean-only or bilingual; linked **source titles, fi
 - [Full public claim and evidence ledger](../research/PUBLIC_EVIDENCE_INDEX_EN.md)
 - [Failure and correction regressions](../FAILURE_REGRESSION_INDEX.md)
 
-## 4. CCPH: continuance, support and contribution pathways
+## 4. CCPH evidence database: traced support, continuance and contribution
 
 - [English CCPH evidence atlas (CP64–CP79)](../research/CCPH_RESEARCH_ATLAS_EN.md)
 

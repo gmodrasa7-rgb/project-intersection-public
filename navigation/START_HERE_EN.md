@@ -10,6 +10,8 @@ This is the **English-only reading route**, paired with [Original 2: Korean](STA
 
 [Project Intersection's founding statement](../README.md) investigates when humans, deployed AI, future AI and other intelligent agents can find voluntary coexistence, autonomy, effective exit, recovery and mutual development more advantageous than exploitation or domination over the long term, without assuming altruism. The project's hypotheses do **not** establish a universal law that cooperation always wins.
 
+**Core vocabulary:** [Ten precisely scoped concepts](../README.md#ten-core-concepts). ICM and RGBM are candidate models; the Paradox of the Unknown and counterfactual extinction are different but interacting limits; CCPH is a source-linked reality-oriented evidence database, not an AI harness or a proven causal effect. Research objective, hypotheses, methods and repository operations occupy different levels.
+
 ### External assessment: decision brief
 
 **Research question (unresolved):** Under what conditions can agents with different capabilities and authority prefer voluntary coexistence, effective exit, recovery and mutual development over extraction or domination, including after power reversals?
