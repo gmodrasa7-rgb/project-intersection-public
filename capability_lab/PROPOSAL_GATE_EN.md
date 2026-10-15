@@ -38,6 +38,14 @@ python -m capability_lab.proposal_gate --gpt --model gpt-4.1-mini
 
 No live endpoint request is part of CI. No scheduling, autonomous writing, tool execution, privilege elevation or model-weight modification is performed.
 
+## Pinned evaluation-integrity amendment (2026-10-16)
+
+The entire *interpreted* public test corpus, development labels, and holdout labels now have a fixed fingerprint: `b8daa492e4e0e2a659adf0720252d81d5c787b203f7139aa1da34f624a492057`. If any question, document, or answer label changes, the gate returns `HOLD_BENCHMARK_DRIFT` **without scoring**. It also blocks the optional API request before any data transmission; the CI now requires the same fingerprint before accepting a synthetic review signal.
+
+Adversarial controls modify a development label, a holdout label, and an unsupported-question record. Those controls are expected to be rejected. The fingerprint is anchored in evaluation code, so a future test-set revision must deliberately update both artifacts and undergo new review. This is not a tamper-proof signature: an actor controlling the code and tests can change the anchor. A public repeated holdout is still not blind, and a green check never provides external scientific validation.
+
+See Dwork et al. (2015), *The Reusable Holdout* (https://research.ibm.com/publications/the-reusable-holdout-preserving-validity-in-adaptive-data-analysis), and Han et al. (2025), *Search-Time Data Contamination* (https://arxiv.org/abs/2508.13180), for distinct risks from adaptivity and exposed evaluation labels.
+
 ## Limits and falsification
 
 The existing public holdout is author-constructed and reusable: it is NOT independent, confidential, or a blind test. Scores on lexical document matching do not imply general reasoning, truth or AGI improvement. Published examples, small samples, lexical shortcuts and changed abstention rate are alternative explanations. Input text sent to GPT is untrusted data; GPT output cannot be executed as instructions. Dataset hashes identify local bytes, not independently authenticated provenance. External review and a genuinely unseen third-party test are required for stronger claims.
