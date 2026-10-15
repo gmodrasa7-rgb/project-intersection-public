@@ -110,8 +110,8 @@
     },
     {
       "id": "PI-CORE-RESEARCH-OVERVIEW",
-      "original_1_english": "RESEARCH_OVERVIEW_EN.md",
-      "original_2_korean": "RESEARCH_OVERVIEW_KO.md",
+      "original_1_english": "research/RESEARCH_OVERVIEW_EN.md",
+      "original_2_korean": "research/RESEARCH_OVERVIEW_KO.md",
       "source_legacy_path": "RESEARCH_OVERVIEW.md",
       "source_blob_sha_at_split": "e80a1a8f69d8af7b6ca2a3ae227f96a1f1267d3a",
       "kind": "extracted_historical_language_sections_with_disclosed_editorial_repairs",
@@ -128,8 +128,8 @@
     },
     {
       "id": "PI-CORE-PUBLIC-EVIDENCE-INDEX",
-      "original_1_english": "PUBLIC_EVIDENCE_INDEX_EN.md",
-      "original_2_korean": "PUBLIC_EVIDENCE_INDEX_KO.md",
+      "original_1_english": "research/PUBLIC_EVIDENCE_INDEX_EN.md",
+      "original_2_korean": "research/PUBLIC_EVIDENCE_INDEX_KO.md",
       "source_legacy_path": "PUBLIC_EVIDENCE_INDEX.md",
       "source_blob_sha_at_split": "7d42a259065e060739ddd56b9a324a3921fd92e4",
       "kind": "extracted_historical_language_sections_with_disclosed_editorial_repairs",
@@ -145,8 +145,8 @@
     },
     {
       "id": "PI-CORE-RESEARCH-STATUS-POLICY",
-      "original_1_english": "RESEARCH_STATUS_POLICY_EN.md",
-      "original_2_korean": "RESEARCH_STATUS_POLICY_KO.md",
+      "original_1_english": "research/RESEARCH_STATUS_POLICY_EN.md",
+      "original_2_korean": "research/RESEARCH_STATUS_POLICY_KO.md",
       "source_legacy_path": "RESEARCH_STATUS_POLICY.md",
       "source_blob_sha_at_split": "e99419192c4a0e406bacde0ded39dec2098d987a",
       "kind": "extracted_historical_language_sections_with_disclosed_editorial_repairs",
@@ -159,8 +159,8 @@
     },
     {
       "id": "PI-CORE-CCPH-RESEARCH-ATLAS",
-      "original_1_english": "CCPH_RESEARCH_ATLAS_EN.md",
-      "original_2_korean": "CCPH_RESEARCH_ATLAS_KO.md",
+      "original_1_english": "research/CCPH_RESEARCH_ATLAS_EN.md",
+      "original_2_korean": "research/CCPH_RESEARCH_ATLAS_KO.md",
       "source_legacy_path": "CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md",
       "source_blob_sha_at_split": "bb02f635d74aa4e39237825e18625451870f1903",
       "kind": "source-attributed_finite_case_atlas_not_complete_translation",
@@ -301,18 +301,6 @@
       "path": "CASE_TOBACCO_SCIENCE_CONTROL_KO.md",
       "filename_class": "KO_SUFFIX_UNVERIFIED",
       "counterpart_path": null,
-      "content_equivalence": "NOT_REVIEWED"
-    },
-    {
-      "path": "CCPH_RESEARCH_ATLAS_EN.md",
-      "filename_class": "EN_SUFFIX_UNVERIFIED",
-      "counterpart_path": "CCPH_RESEARCH_ATLAS_KO.md",
-      "content_equivalence": "NOT_REVIEWED"
-    },
-    {
-      "path": "CCPH_RESEARCH_ATLAS_KO.md",
-      "filename_class": "KO_SUFFIX_UNVERIFIED",
-      "counterpart_path": "CCPH_RESEARCH_ATLAS_EN.md",
       "content_equivalence": "NOT_REVIEWED"
     },
     {
@@ -466,18 +454,6 @@
       "content_equivalence": "NOT_REVIEWED"
     },
     {
-      "path": "PUBLIC_EVIDENCE_INDEX_EN.md",
-      "filename_class": "EN_SUFFIX_UNVERIFIED",
-      "counterpart_path": "PUBLIC_EVIDENCE_INDEX_KO.md",
-      "content_equivalence": "NOT_REVIEWED"
-    },
-    {
-      "path": "PUBLIC_EVIDENCE_INDEX_KO.md",
-      "filename_class": "KO_SUFFIX_UNVERIFIED",
-      "counterpart_path": "PUBLIC_EVIDENCE_INDEX_EN.md",
-      "content_equivalence": "NOT_REVIEWED"
-    },
-    {
       "path": "PUBLIC_FINAL_PURPOSE_EXECUTION_MAP_KO.md",
       "filename_class": "KO_SUFFIX_UNVERIFIED",
       "counterpart_path": null,
@@ -514,18 +490,6 @@
       "content_equivalence": "NOT_REVIEWED"
     },
     {
-      "path": "RESEARCH_OVERVIEW_EN.md",
-      "filename_class": "EN_SUFFIX_UNVERIFIED",
-      "counterpart_path": "RESEARCH_OVERVIEW_KO.md",
-      "content_equivalence": "NOT_REVIEWED"
-    },
-    {
-      "path": "RESEARCH_OVERVIEW_KO.md",
-      "filename_class": "KO_SUFFIX_UNVERIFIED",
-      "counterpart_path": "RESEARCH_OVERVIEW_EN.md",
-      "content_equivalence": "NOT_REVIEWED"
-    },
-    {
       "path": "RESEARCH_RIGHTS_SCOPE_EN_KO.md",
       "filename_class": "COMBINED_NAMING_UNVERIFIED",
       "counterpart_path": null,
@@ -535,18 +499,6 @@
       "path": "RESEARCH_STATUS_POLICY.md",
       "filename_class": "UNMARKED_LANGUAGE_UNVERIFIED",
       "counterpart_path": null,
-      "content_equivalence": "NOT_REVIEWED"
-    },
-    {
-      "path": "RESEARCH_STATUS_POLICY_EN.md",
-      "filename_class": "EN_SUFFIX_UNVERIFIED",
-      "counterpart_path": "RESEARCH_STATUS_POLICY_KO.md",
-      "content_equivalence": "NOT_REVIEWED"
-    },
-    {
-      "path": "RESEARCH_STATUS_POLICY_KO.md",
-      "filename_class": "KO_SUFFIX_UNVERIFIED",
-      "counterpart_path": "RESEARCH_STATUS_POLICY_EN.md",
       "content_equivalence": "NOT_REVIEWED"
     },
     {
@@ -940,6 +892,18 @@
       "content_equivalence": "NOT_REVIEWED"
     },
     {
+      "path": "research/CCPH_RESEARCH_ATLAS_EN.md",
+      "filename_class": "EN_SUFFIX_UNVERIFIED",
+      "counterpart_path": "research/CCPH_RESEARCH_ATLAS_KO.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "research/CCPH_RESEARCH_ATLAS_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": "research/CCPH_RESEARCH_ATLAS_EN.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
       "path": "research/CONTINUANCE_RESOURCE_THRESHOLD_v0_1_EN_KO.md",
       "filename_class": "COMBINED_NAMING_UNVERIFIED",
       "counterpart_path": null,
@@ -1018,9 +982,33 @@
       "content_equivalence": "NOT_REVIEWED"
     },
     {
+      "path": "research/PUBLIC_EVIDENCE_INDEX_EN.md",
+      "filename_class": "EN_SUFFIX_UNVERIFIED",
+      "counterpart_path": "research/PUBLIC_EVIDENCE_INDEX_KO.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "research/PUBLIC_EVIDENCE_INDEX_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": "research/PUBLIC_EVIDENCE_INDEX_EN.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
       "path": "research/RECIPROCAL_NONDOMINATION_MINIMAL_INTRUSION_COMMON_LAW_2026-10-12_KO.md",
       "filename_class": "KO_SUFFIX_UNVERIFIED",
       "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "research/RESEARCH_OVERVIEW_EN.md",
+      "filename_class": "EN_SUFFIX_UNVERIFIED",
+      "counterpart_path": "research/RESEARCH_OVERVIEW_KO.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "research/RESEARCH_OVERVIEW_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": "research/RESEARCH_OVERVIEW_EN.md",
       "content_equivalence": "NOT_REVIEWED"
     },
     {
@@ -1033,6 +1021,18 @@
       "path": "research/RESEARCH_ROADMAP_v0_2_EN_KO.md",
       "filename_class": "COMBINED_NAMING_UNVERIFIED",
       "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "research/RESEARCH_STATUS_POLICY_EN.md",
+      "filename_class": "EN_SUFFIX_UNVERIFIED",
+      "counterpart_path": "research/RESEARCH_STATUS_POLICY_KO.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "research/RESEARCH_STATUS_POLICY_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": "research/RESEARCH_STATUS_POLICY_EN.md",
       "content_equivalence": "NOT_REVIEWED"
     }
   ],
@@ -1150,12 +1150,12 @@
       "as_of": "2026-10-15",
       "status": "READER_EDITIONS_CREATED_NOT_INDEPENDENTLY_TRANSLATION_CERTIFIED",
       "new_documents": [
-        "RESEARCH_OVERVIEW_EN.md",
-        "RESEARCH_OVERVIEW_KO.md",
-        "PUBLIC_EVIDENCE_INDEX_EN.md",
-        "PUBLIC_EVIDENCE_INDEX_KO.md",
-        "RESEARCH_STATUS_POLICY_EN.md",
-        "RESEARCH_STATUS_POLICY_KO.md"
+        "research/RESEARCH_OVERVIEW_EN.md",
+        "research/RESEARCH_OVERVIEW_KO.md",
+        "research/PUBLIC_EVIDENCE_INDEX_EN.md",
+        "research/PUBLIC_EVIDENCE_INDEX_KO.md",
+        "research/RESEARCH_STATUS_POLICY_EN.md",
+        "research/RESEARCH_STATUS_POLICY_KO.md"
       ],
       "new_edition_pairs": 3,
       "editorial_notes": "Source combined files kept unchanged; no deleted negative results or rights records; Korean source drift in evidence index disclosed.",
@@ -1165,11 +1165,12 @@
       "as_of": "2026-10-15",
       "status": "CCPH_ATLAS_BOUNDED_EDITION",
       "new_documents": [
-        "CCPH_RESEARCH_ATLAS_EN.md",
-        "CCPH_RESEARCH_ATLAS_KO.md"
+        "research/CCPH_RESEARCH_ATLAS_EN.md",
+        "research/CCPH_RESEARCH_ATLAS_KO.md"
       ],
       "case_rows": "CP64-CP79",
       "translation_status": "bounded authored summaries, not 290KB historical crosswalk translation or independent paper re-verification"
     }
-  ]
+  ],
+  "path_layout_policy": "Keep the project root entry-only; bilingual full research editions live in existing research/ and their original historical combined documents retain stable root URLs."
 }
