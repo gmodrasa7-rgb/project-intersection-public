@@ -11,6 +11,7 @@ PAIRS = (
     ("**Non-domination and minimal rules:**", "**비지배와 최소 공통규칙:**"),
     ("**Subordinate studies and implementation hypotheses:**", "**하위 연구와 구현 가설:**"),
     ("**Evidence and contribution boundary:**", "**증거·기여 경계:**"),
+    ("**Priority 0 — prevent recurrence before expansion:**", "**제0 최우선 원칙 — 확장보다 재발 방지:**"),
     ("**First reading path:**", "**처음 읽을 자료:**"),
 )
 
@@ -38,9 +39,39 @@ def audit(body):
         errors.append("UNCERTAINTY_REMOVED")
     if "human research originator" not in english or "원기여 인간 연구자" not in korean:
         errors.append("ORIGINATOR_ERASED")
+    if "underlying causes" not in english.lower():
+        errors.append("ROOT_CAUSE_REQUIREMENT_REMOVED")
+    if "발생 원인" not in korean:
+        errors.append("KO_ROOT_CAUSE_REQUIREMENT_REMOVED")
+    if "regression" not in english.lower() or "회귀검사" not in korean:
+        errors.append("REPEAT_FAILURE_TEST_REQUIREMENT_REMOVED")
+    if "rollback" not in english.lower() or "되돌릴" not in korean:
+        errors.append("RECOVERY_REQUIREMENT_REMOVED")
     if "currently deployed AI" not in english or "현재 배포된 AI" not in korean:
         errors.append("PRESENT_AI_EXCLUDED")
     return errors
+
+
+def priority_support_errors(contributing: str, failures: str) -> list[str]:
+    problems = []
+    required = [
+        ("CONTRIBUTOR_EN_PRIORITY_MISSING", "### 0. Highest precedence — prevent recurrence by addressing causes"),
+        ("CONTRIBUTOR_KO_PRIORITY_MISSING", "### 0. 최상위 우선순위 — 발생 원인부터 재발 차단"),
+        ("FAILURE_REASON_REQUIRED", "1. **Failure model:**"),
+        ("PREVENTION_AND_TEST_REQUIRED", "4. **Prevent / test / recover:**"),
+        ("POST_MERGE_CHECK_REQUIRED", "6. **Verify after merge:**"),
+        ("KOREAN_HOLD_REQUIRED", "**보류 / 미검증**"),
+    ]
+    for label, token in required:
+        if token not in contributing:
+            problems.append(label)
+    if "## Priority 0 — Prevent recurrence before expansion" not in failures:
+        problems.append("FAILURE_INDEX_PRIMACY_MISSING")
+    if "## F-R020 — Shared-source error survives bilingual agreement" not in failures:
+        problems.append("SHARED_SOURCE_FAILURE_ID_MISSING")
+    if "tools/audit_claim_source_lock.py" not in failures:
+        problems.append("CAUSAL_SOURCE_PREVENTION_LINK_MISSING")
+    return problems
 
 def test_mutations(text):
     assert not audit(text), audit(text)
@@ -51,6 +82,9 @@ def test_mutations(text):
       "missing_english_caution": text.replace("not a proven universal theorem", "confirmed", 1),
       "lost_origin": text.replace("human research originator", "unknown party", 1),
       "lost_current_ai": text.replace("currently deployed AI", "future AI", 1),
+      "lost_en_priority": text.replace("**Priority 0 — prevent recurrence before expansion:**", "**Unclear priority:**", 1),
+      "lost_ko_priority": text.replace("**제0 최우선 원칙 — 확장보다 재발 방지:**", "**기타:**", 1),
+      "lost_root_cause": text.replace("underlying causes", "unspecified causes", 1),
     }
     for name, test in mutants.items():
         assert audit(test), "Mutation bypassed safeguard: " + name
@@ -58,8 +92,15 @@ def test_mutations(text):
 
 if __name__ == "__main__":
     current = Path("README.md").read_text(encoding="utf-8")
-    failures = audit(current)
+    contributors = Path("CONTRIBUTING.md").read_text(encoding="utf-8")
+    failure_index = Path("FAILURE_REGRESSION_INDEX.md").read_text(encoding="utf-8")
+    failures = audit(current) + priority_support_errors(contributors, failure_index)
     if failures:
-        raise SystemExit("README guard FAIL: " + "; ".join(failures))
-    print("README L0 structural PASS; negative mutations:", test_mutations(current))
+        raise SystemExit("README / Priority-0 guard FAIL: " + "; ".join(failures))
+    print("README L0 / source-root-cause prevention policy: PASS; negative mutations:", test_mutations(current))
+    assert priority_support_errors(contributors.replace(
+        "### 0. 최상위 우선순위 — 발생 원인부터 재발 차단", "### 0. 미확인"), failure_index), "Missing KO gate"
+    assert priority_support_errors(contributors, failure_index.replace(
+        "## F-R020 — Shared-source error survives bilingual agreement", "## Missing")), "Missing fail lineage gate"
+    print("Priority-0 supporting document negative controls: 2/2 detected")
     print("NOTE: static coverage is not scientific or translation semantic parity.")

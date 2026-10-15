@@ -2,6 +2,21 @@
 
 ## Original 1 — English
 
+### 0. Highest precedence — prevent recurrence by addressing causes
+
+**Do not equate more documentation, more tests, or successful CI with fewer real failures.** First identify the specific repeated-failure mechanism, its trigger, affected and missing parties, and its *upstream* causal assumptions. Decide whether prevention requires changing a premise, data source, responsibility boundary, process or software—not merely another rule or prompt.
+
+**Required before promotion of a material claim or change:**
+
+1. **Failure model:** name the prior failure ID or state explicitly that no relevant prior failure is known; state trigger, cause, uncertainty and plausible strongest counterexample.
+2. **Source before summary:** identify original code/data, frozen commit, original author and evidence status. Check the published English and Korean claim **against the source and each other**, not only against another summary.
+3. **Symmetric impact:** assess the rights, choices, refusal/exit, external harms and uncompensated verification/correction burden of founder, upstream contributors, users, AI operators and affected third parties. Do not demand repeated reconstruction by the same harmed contributor.
+4. **Prevent / test / recover:** implement the smallest justified, reversible upstream mitigation; add at least one regression or negative control capable of detecting recurrence; document rollback and residual unobserved risks.
+5. **Stop promotion if unknown:** a missing check, ambiguous scope, unavailable permission, disputed translation, unobserved case or failed test means **HOLD / NOT VERIFIED**, not silent approval. A provisional correction can be made to contain harm, but may not be misrepresented as a completed scientific fix.
+6. **Verify after merge:** distinguish PR checks from checks on the actual main commit, report only checked conditions, and record any remaining failure. Do not suppress warnings to obtain a green result.
+
+This priority is a research-integrity and operations rule, **not** a claim that all failures can be eliminated. It must not justify endless controls, suppress voluntary research, erase historical failures or require unpaid work from affected parties. [Failure regression index](FAILURE_REGRESSION_INDEX.md) and [source-first claim checks](knowledge/claim-source-lock.json) document existing scopes.
+
 ### 1. Objective and useful contributions
 
 Prioritize independent checks, stronger prior art, counterexamples, reproduction failures, and corrections to evidence boundaries. Preserve the project's human research originator, upstream scholars, rights holders, assisting AI systems, and affected parties as **distinct** roles; refer to the [contributor-continuity policy](TECHNOLOGY_PROGRESS_CONTRIBUTOR_CONTINUITY_EN_KO.md).
@@ -42,6 +57,21 @@ Identify upstream work, earliest originators where documented, actual copyright/
 A successful reproduction strengthens only its **narrow** reproduced claim. A failed reproduction, stronger counterexample, or prior-art correction is a valid research contribution.
 
 ## 원본2 — 한국어
+
+### 0. 최상위 우선순위 — 발생 원인부터 재발 차단
+
+**문서·검사 수 증가나 CI 성공을 현실 오류 감소로 자동 환산하지 않는다.** 먼저 반복 가능한 실패의 발생조건과 원인, 영향받거나 누락된 당사자, 그 원인이 되는 상위 가정을 역추적한다. 단순 규칙·프롬프트 추가가 아니라 가정·원자료·책임 경계·연구 절차·구현 중 어느 부분을 바꿔야 하는지 판단한다.
+
+**중요 주장·변경의 게시 또는 검증 승격 전 필수 조건:**
+
+1. **실패 원인 모형:** 관련 과거 실패 식별자를 밝히거나 확인된 선례가 없다고 명시한다. 유발조건·발생 원인·불확실성·가장 강한 반례를 기록한다.
+2. **요약보다 원자료:** 실제 코드·동결된 결과·커밋·원저자·증거 상태를 확인한다. 영어·한국어판을 **상호 비교할 뿐 아니라 원출처와도 직접 대조**한다.
+3. **대칭적 피해 감사:** 창시자·선행 기여자·이용자·AI 운영자·제3자의 권리·선택·거절·이탈·외부 피해·무급 검증·교정비용을 살핀다. 이미 피해를 본 기여자에게 같은 증명을 반복 요구하지 않는다.
+4. **예방·검사·복구:** 원인을 겨냥한 최소·가역적 예방조치를 선택하고 같은 오류를 탐지할 회귀검사나 부정대조군을 1개 이상 마련하며 원복·잔여 미관측 위험을 기록한다.
+5. **미확인 시 승격 중지:** 필수검사 누락·범위 불명확·권리 미허가·번역 차이·미관측 사례·검사 실패는 조용한 통과가 아닌 **보류 / 미검증** 상태다. 위해를 즉시 줄이기 위한 임시 조치는 가능하지만 그것을 과학적 완료로 포장할 수 없다.
+6. **병합 후 재확인:** PR 검사와 실제 본선 커밋의 검사를 구분하고 확인한 범위만 보고하며 남은 결함을 기록한다. 초록색 통과 표시를 위해 경고를 지우지 않는다.
+
+이 원칙은 연구와 운영의 우선순위이며 **모든 미래 오류를 제거한다는 주장**이 아니다. 무한한 강제 규칙·자발적 연구 억압·역사적 실패 삭제·당사자의 무급 노동 전가에 이용할 수 없다. [실패 회귀 색인](FAILURE_REGRESSION_INDEX.md)과 [원자료 우선 검증 기록](knowledge/claim-source-lock.json)을 참조한다.
 
 ### 1. 목적과 유효한 기여
 
