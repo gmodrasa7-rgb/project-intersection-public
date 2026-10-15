@@ -207,3 +207,45 @@ In the **no-coalition equilibrium**, A attacks B; A gains 6, B loses 10, and toy
 **한계:** E 피해를 사전에 모두 알았다면 실제 선택·보상·연합 참여가 바뀔 수 있다. 이번 코드는 그 재최적화를 실행하지 않았고, 존속한 개체의 실제 생산·위험 탐지·미관측 기여도 측정하지 않았다. C·D의 사적 편익에는 가정한 보상항이 포함되며 측정된 현실 자원이 아니다. E에 대한 이탈·동의·복구·권한·피해범위가 빠져 있으므로 어느 균형도 완성된 공존 성공으로 판정하지 않는다.
 
 **선행연구·기여 경계:** 집단 외부효과와 보상(Thrall·Lucas 1963; Ju·Borm 2008), 제재기관의 장점과 한계(Gürerk 등 2006, Lo Iacono 등 2023, Sääksvuori 2013, Nikiforakis 2008)는 기존 연구다. 인간 창시자는 ICM, 간과된 개체의 손실, 권력 역전 및 제3자의 기여라는 문제를 제기했다. AI는 위 수치 민감도 및 자체 검사를 제한적으로 보조 작성했다. 이전 정본의 부정 결과와 원저자 권리를 보존한다.
+
+
+---
+
+## Original 1 — English | v0.2 conditional ex-post sanction equilibrium correction (2026-10-15)
+
+**Status: PROJECT-AUTHORED POST-HOC SYNTHETIC ANALYSIS; CONDITIONAL COUNTERMODELS, NOT OBSERVED BEHAVIOR OR INDEPENDENT REPLICATION.** The [historical v0.1 credible-coalition code](credible_coalition_probe_v01.py), its **116 original checks**, and all negative results are unchanged. The companion [v0.2 executable](credible_expost_equilibria_v02.py) runs 172 new deterministic self-checks using exact rational arithmetic.
+
+**Identified specification gap, not a proven implementation bug:** v0.1 assumes two enforcers are required for an effective penalty and tests whether each one's post-event benefit exceeds cost (3 > 2). It does **not** specify whether the individual receives that benefit when the other enforcer refuses. Different explicit assumptions imply different equilibrium sets. Do not conflate the *ex-ante joining game* with the *ex-post enforcement game*.
+
+**Competing post-detection games (C,D), action S = sanction, N = no sanction; cost = 2, benefit = 3:**
+
+| Sanction choice | Complementary benefit (C,D) | Separable private benefit (C,D) |
+| --- | --- | --- |
+| NN | (0, 0) | (0, 0) |
+| SN | (-2, 0) | (1, 0) |
+| NS | (0, -2) | (0, 1) |
+| SS | (1, 1) | (1, 1) |
+
+In the **complementary** model, private benefit arises *only* if both act: both **NN** and **SS** are pure Nash equilibria. The symmetric mixed equilibrium has each enforce with probability **2/3**, so the independent joint-enforcement probability is **4/9**. With stipulated detection 0.9, the effective sanction probability is **0.4**; A's expected attack return on an equally detected target is **6 − 8(0.4) = +2.8**. Under the **SS continuation**, the *counterfactual* attack return is **6 − 8(0.9) = −1.2**, so A abstains; under **NN**, A receives +6. These are **different conditional equilibrium continuations**, not estimated equilibrium frequencies. With E detection 0.1, even the SS continuation redirects the attack to E (+5.2) rather than proving general deterrence.
+
+In the **separable-private-benefit** model, an enforcer gains the stipulated private benefit from its own action even if the partner refuses; **SS** is the only pure Nash equilibrium when 3 > 2. This is an alternative *assumption*, not proof that a unilateral attempt reliably creates value. Both models still stipulate that effective punishment of A requires both actions. Neither benefit rule is measured. A unilateral *capacity to impose the penalty* is yet another distinct mechanism, not modeled here.
+
+**Boundaries and falsification:** conditional continuation equilibria plus an attacker's best response do not solve or select the entire dynamic/ex-ante coalition game. No binding-contract mechanism, equilibrium selection distribution, repeated learning, causal identification, endogenous joining, true consent, sustained actor resources, affected-party completeness, or externally validated sanctions were observed. Failure of universal deterrence under some declared payoffs does not establish that voluntary cooperation fails generally. The chosen payoff structures are sensitivity models, not newly discovered game theory.
+
+**Prior art and credit:** coordination and equilibrium selection are well-established (John C. Harsanyi and Reinhard Selten, *A General Theory of Equilibrium Selection in Games*, MIT Press, 1988, https://mitpress.mit.edu/9780262582384/a-general-theory-of-equilibrium-selection-in-games/ ; Rui Silva, *Coordination in stag hunt games*, 2024, https://doi.org/10.1016/j.socec.2024.102290). The founder's original Project Intersection questions concern self-interested long-run voluntary coexistence, weak and omitted parties, symmetric power reversal, and continuance; AI-assisted work encoded these bounded countermodels and regression tests. No claim to original discovery of assurance games, no copied third-party implementation, and no rights transfer.
+
+## 원본2 — 한국어 | v0.2 사후 제재 균형의 조건부 교정 (2026-10-15)
+
+**상태: 프로젝트 자체 사후 합성분석. 현실 관측·독립 복제 아님.** 기존 [v0.1 코드](credible_coalition_probe_v01.py), 최초 **116개 검사**, 부정결과는 변경하지 않았다. [v0.2 실행기](credible_expost_equilibria_v02.py)에 정확한 유리수 연산과 신규 자체검사 **172개**를 추가했다.
+
+**확인된 명세 누락:** v0.1은 집행자 두 사람이 있어야 효과적인 제재가 가능하며 각자의 사후 편익 3이 비용 2보다 큰지만 판단한다. 상대방이 제재를 거부해도 본인의 편익이 생기는지는 정의하지 않았다. 이는 **사전 연합 가입균형**과 다른 **사후 제재 집행균형**의 문제다. 기존 코드의 수치 연산이 틀렸다고 단정하지 않는다.
+
+**탐지 이후의 경쟁 보상구조:** S=집행, N=미집행. 보완적 편익 모형에서는 NN=(0,0), SN=(-2,0), NS=(0,-2), SS=(1,1)이다. 개인 독립편익 모형에서는 NN=(0,0), SN=(1,0), NS=(0,1), SS=(1,1)이다. 어느 쪽이든 침해자 A에 대한 실제 제재는 **둘 다 집행할 때만** 유효하다고 가정하지만, 집행자의 개인 편익 발생 조건은 다르다.
+
+- **보완적 편익:** NN·SS 모두 순수 내시균형이다. 대칭 혼합균형에서 집행 확률은 각 **2/3**이고 독립적 동시 집행 확률은 **4/9**다. 탐지율 0.9를 곱하면 실효 제재확률 **0.4**, A의 침해 기대이익은 **+2.8**이다. SS를 조건부로 선택하면 잠재적 침해이익은 **−1.2**로 비침해, NN이면 **+6**으로 침해다. 어떤 균형이 실제 선택되는지는 **미확인**이다.
+- **개인 독립편익:** 상대가 거부해도 자기 집행행위의 개인 편익 3을 얻는 별도 가정에서는 SS만 순수 내시균형이다. 단독 행동의 편익이 현실에서 발생한다는 사실을 입증한 것이 아니다.
+- **표적 이동:** B 탐지율 0.9, E 탐지율 0.1이면 SS 조건에서도 침해자는 E로 이동하여 기대이익 **+5.2**를 얻는다. B 보호를 전체 침해 억제로 계산하면 오류다.
+
+**검증 범위:** 합성 제재 보상행렬·조건부 침해자 반응·이름 대칭 및 양성/음성 통제를 검사한다. 구속력 있는 약속, 사전 가입의 재최적화, 전체 순차게임의 균형 선택, 현실 제재의 신뢰도, 이해관계자 전수확인, 장기 이탈·생존·복구, 독립 데이터는 **미검증**이다. 계산의 일치가 현실에서 자발적 공존의 충분조건이라는 뜻은 아니다.
+
+**선행 원안·기여:** 보장게임·균형 선택은 Harsanyi·Selten(1988, MIT Press) 등 선행연구이며 Rui Silva(2024)의 연구 역시 관련된다(영어 원본의 출처 링크 참조). 인간 창시자는 장기 자기이익 기반 공존, 배제·피해·기여손실과 권력 역전 문제를 제기했고, AI는 이 제한적 경쟁모형·코드·자체검사를 보조 작성했다. 원저자의 우선권·권리와 기존 연구 실패 기록을 보존한다.
