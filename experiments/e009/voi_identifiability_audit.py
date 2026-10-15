@@ -99,6 +99,7 @@ def audit():
     # Paired deterministic diagnostic on the 32 project-authored cases.
     # No claim of 32 independent samples or new preregistered evidence.
     flips = dict(action_flips=0, higher_loss=0, lower_loss=0, same_loss=0)
+    changed_case_details = []
     for case in cases:
         a = {**case, "VOI": 0.0}
         z = {**case, "VOI": 1.0}
@@ -109,6 +110,9 @@ def audit():
         flips["action_flips"] += 1
         difference = (unpenalized_loss(z, action_z, "balanced")
                       - unpenalized_loss(a, action_a, "balanced"))
+        changed_case_details.append({"case_id": case["case_id"], "low_voi_action": action_a,
+                                     "high_voi_action": action_z,
+                                     "balanced_unpenalized_loss_change": round(difference, 12)})
         if difference > 1e-12:
             flips["higher_loss"] += 1
         elif difference < -1e-12:
@@ -128,6 +132,7 @@ def audit():
         "constructed_actions": {"voi_0": "ALLOW", "voi_1": "MONITOR"},
         "constructed_incremental_loss": extra_losses,
         "registered_case_voi_extremes_diagnostic": flips,
+        "registered_case_action_flip_details": changed_case_details,
         "independent_replication": False,
         "empirical_validation": False,
         "frozen_verdict_changed": False,
