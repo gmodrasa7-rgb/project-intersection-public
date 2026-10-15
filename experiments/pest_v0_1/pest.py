@@ -178,6 +178,12 @@ def actor_fixed_role_reversals(cases):
         if c.suppressor != "A":
             continue
         partner = lookup[(c.world, c.PT_j, c.PT_i, "B", c.XG_j, c.XG_i)]
+        # Unlike role-label twins, actor-fixed comparisons swap PT/XG.
+        # Their exogenous background must still be matched; post-treatment
+        # floor/exit may vary and must not be forced equal.
+        for field in ("future_threat", "target_growth", "perceived_enforcement"):
+            if getattr(c, field) != getattr(partner, field):
+                raise ValueError("actor-fixed reversal pretreatment drift: " + field)
         pairs.append((c, partner))
     return tuple(pairs)
 
