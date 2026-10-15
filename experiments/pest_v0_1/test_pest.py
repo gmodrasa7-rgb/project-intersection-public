@@ -58,6 +58,33 @@ class TestPEST(unittest.TestCase):
                    if r["world"] == "capture_opportunity" and r["PT_i"] == .75)
         self.assertGreater(row["target_effect_at_own_low"], 0)
 
+    def test_cross_guarantee_pretreatment_drift_rejected(self):
+        # Keep A/B role-reversal twins aligned: old validator still passed.
+        # Only R1's pre-treatment growth changes, so R1/R2 is confounded.
+        cases = tuple(replace(c, target_growth=.05)
+                      if (c.world, c.PT_i, c.PT_j, c.XG_i, c.XG_j)
+                      == ("capture_opportunity", .75, .75, 1, 1) else c
+                      for c in self.cases)
+        with self.assertRaisesRegex(ValueError, "pretreatment input drift across XG"):
+            validate_design(cases)
+
+    def test_paired_contrasts_must_validate_pairs(self):
+        cases = tuple(replace(c, target_growth=.05)
+                      if (c.world, c.PT_i, c.PT_j, c.XG_i, c.XG_j)
+                      == ("capture_opportunity", .75, .75, 1, 1) else c
+                      for c in self.cases)
+        with self.assertRaisesRegex(ValueError, "pretreatment input drift across XG"):
+            paired_contrasts(cases)
+
+    def test_post_guarantee_floor_outcomes_may_differ(self):
+        # Floor/exit are post-treatment outputs; matching them across XG
+        # would hide or condition away genuine pathways of guarantee effects.
+        cases = tuple(replace(c, floor_after=.60, exit_after=.55)
+                      if (c.world, c.PT_i, c.PT_j, c.XG_i, c.XG_j)
+                      == ("capture_opportunity", .75, .75, 1, 1) else c
+                      for c in self.cases)
+        self.assertEqual(validate_design(cases), 96)
+
     def test_identity_swap_no_payoff_change(self):
         a = Case("backlash", "A", .75, .75, 1, 1)
         self.assertEqual(psi_proxy(a), psi_proxy(replace(a, suppressor="B")))
