@@ -156,6 +156,24 @@
       "independent_review_receipt": null,
       "one_sided_edit_exception": null,
       "known_divergences": []
+    },
+    {
+      "id": "PI-CORE-CCPH-RESEARCH-ATLAS",
+      "original_1_english": "CCPH_RESEARCH_ATLAS_EN.md",
+      "original_2_korean": "CCPH_RESEARCH_ATLAS_KO.md",
+      "source_legacy_path": "CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md",
+      "source_blob_sha_at_split": "bb02f635d74aa4e39237825e18625451870f1903",
+      "kind": "source-attributed_finite_case_atlas_not_complete_translation",
+      "structural_pair_present": true,
+      "meaning_review_status": "NOT_INDEPENDENTLY_VERIFIED",
+      "original_conception_language": "ko_founder_defined_per_historical_source_not_independently_adjudicated",
+      "independent_review_receipt": null,
+      "one_sided_edit_exception": null,
+      "case_id_alignment": "CP64-CP79; 16 distinct source families or documents, not 16 project experiments",
+      "known_divergences": [
+        "Atlas is a deliberately bounded source map, not full crosswalk translation.",
+        "Source result quotations and effect estimates are paraphrased with explicit identification limits; external original paper verification remains necessary."
+      ]
     }
   ],
   "legacy_priority_unresolved": [
@@ -194,13 +212,13 @@
     }
   ],
   "metrics": {
-    "markdown_total": 133,
+    "markdown_total": 135,
     "filename_classes": {
       "UNMARKED_LANGUAGE_UNVERIFIED": 42,
       "LEGACY_MIXED_READER_ENTRY": 2,
-      "KO_SUFFIX_UNVERIFIED": 56,
+      "KO_SUFFIX_UNVERIFIED": 57,
+      "EN_SUFFIX_UNVERIFIED": 11,
       "ORDERED_BILINGUAL_FOUNDER_OR_GOVERNANCE": 2,
-      "EN_SUFFIX_UNVERIFIED": 10,
       "COMBINED_NAMING_UNVERIFIED": 21
     },
     "meaning_verified_pairs": 0,
@@ -283,6 +301,18 @@
       "path": "CASE_TOBACCO_SCIENCE_CONTROL_KO.md",
       "filename_class": "KO_SUFFIX_UNVERIFIED",
       "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "CCPH_RESEARCH_ATLAS_EN.md",
+      "filename_class": "EN_SUFFIX_UNVERIFIED",
+      "counterpart_path": "CCPH_RESEARCH_ATLAS_KO.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "CCPH_RESEARCH_ATLAS_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": "CCPH_RESEARCH_ATLAS_EN.md",
       "content_equivalence": "NOT_REVIEWED"
     },
     {
@@ -1130,6 +1160,16 @@
       "new_edition_pairs": 3,
       "editorial_notes": "Source combined files kept unchanged; no deleted negative results or rights records; Korean source drift in evidence index disclosed.",
       "reviewer_actions": "Independent numeric and claim-level semantic comparison remains pending"
+    },
+    {
+      "as_of": "2026-10-15",
+      "status": "CCPH_ATLAS_BOUNDED_EDITION",
+      "new_documents": [
+        "CCPH_RESEARCH_ATLAS_EN.md",
+        "CCPH_RESEARCH_ATLAS_KO.md"
+      ],
+      "case_rows": "CP64-CP79",
+      "translation_status": "bounded authored summaries, not 290KB historical crosswalk translation or independent paper re-verification"
     }
   ]
 }
