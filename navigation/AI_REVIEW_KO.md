@@ -9,7 +9,7 @@
 
 ## 1. 먼저 주장과 증거를 분리한다
 
-[최상위 창시 목적](../README.md), [주장·증거 색인](../PUBLIC_EVIDENCE_INDEX.md), [연구 상태 판정](../RESEARCH_STATUS_POLICY.md), [전체 공개 검토 자료](../PUBLIC_REVIEW_PACKET.md)를 사용한다. 관측사실·프로젝트 자체 계산·역사적 사례·추정·외부 독립검증·현실 효과의 증거를 구분한다. 색인에 수록됐다는 사실만으로 주장의 정확성이 증명되지 않는다.
+[최상위 창시 목적](../README.md), [주장·증거 색인](../PUBLIC_EVIDENCE_INDEX_KO.md), [연구 상태 판정](../RESEARCH_STATUS_POLICY_KO.md), [전체 공개 검토 자료](../PUBLIC_REVIEW_PACKET.md)를 사용한다. 관측사실·프로젝트 자체 계산·역사적 사례·추정·외부 독립검증·현실 효과의 증거를 구분한다. 색인에 수록됐다는 사실만으로 주장의 정확성이 증명되지 않는다.
 
 ## 2. 기존 실험의 증거 경계
 
