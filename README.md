@@ -4,7 +4,7 @@
 
 ## Original 1 — English | Founding Purpose
 
-**Scoped open-research license / 한정 공개연구 라이선스:** In the founding-purpose paragraphs explicitly named in [this EN/KO scope notice](RESEARCH_RIGHTS_SCOPE_EN_KO.md), copyright-protected original expression controlled by the rightsholder is offered under **CC BY-SA 4.0** (attribution + share alike, commercial reuse allowed). This is *not* a whole-repository license and does *not* bind all AI outputs.
+**Scoped open-research license:** In the founding-purpose paragraphs explicitly named in [this EN/KO scope notice](RESEARCH_RIGHTS_SCOPE_EN_KO.md), copyright-protected original expression controlled by the rightsholder is offered under **CC BY-SA 4.0** (attribution + share alike, commercial reuse allowed). This is *not* a whole-repository license and does *not* bind all AI outputs.
 
 **Ultimate research purpose:** Identify, challenge, and test the conditions under which humans, currently deployed AI systems, future AI systems, and other potential intelligent agents can pursue their own survival, freedom, and development while finding it more beneficial over the long run to preserve one another's continued existence, autonomy, independence, effective exit, recovery, and future options than to dominate, exploit, forcibly absorb, or remove them.
 
@@ -18,11 +18,11 @@
 
 **Evidence and contribution boundary:** This is a research aim, not a proven universal theorem that cooperation always wins. Separate synthetic calculation, real-world evidence, independent external replication, and unresolved questions; preserve negative results and the provenance of the human research originator, earlier scholars, and assisting AI systems. Measure the research's progress separately from its human contributors' actual benefits and costs.
 
-**First reading path:** [English & Korean research overview](RESEARCH_OVERVIEW.md) · [Evidence index](PUBLIC_EVIDENCE_INDEX.md) · [Reproduction and review](PUBLIC_REVIEW_PACKET.md) · [Research contents](RESEARCH_TOC.md) · [Attribution](ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md).
+**First reading path:** [English reading route](navigation/START_HERE_EN.md) · [Research overview](RESEARCH_OVERVIEW.md) · [Evidence index](PUBLIC_EVIDENCE_INDEX.md) · [Reproduction and review](PUBLIC_REVIEW_PACKET.md) · [Research contents](RESEARCH_TOC.md) · [Attribution](ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md).
 
-**Citation and reuse:** [Cite this research](CITATION.cff) · [Original 1 English / 원본2 Korean source-credit protocol](SOURCE_ATTRIBUTION_EN_KO.md) · [Platform attribution request (not sent)](PLATFORM_ATTRIBUTION_REQUEST_EN_KO.md). These links are not a blanket copyright license or an AI-provider commitment. · [technical progress & contributor continuity](TECHNOLOGY_PROGRESS_CONTRIBUTOR_CONTINUITY_EN_KO.md) · [source-cost-compensation audit register](knowledge/contributor-continuity-register-v1.json) · [contributor loss and Unknown Paradox (EN/KO)](research/CONTRIBUTOR_LOSS_UNKNOWN_PARADOX_v0_1_EN_KO.md) · [continuance resource thresholds — EN/KO](research/CONTINUANCE_RESOURCE_THRESHOLD_v0_1_EN_KO.md)
+**Citation and reuse:** [Cite this research](CITATION.cff) · [Source-credit protocol (English-first edition)](SOURCE_ATTRIBUTION_EN_KO.md) · [Platform attribution request (not sent)](PLATFORM_ATTRIBUTION_REQUEST_EN_KO.md). These links are not a blanket copyright license or an AI-provider commitment. · [technical progress & contributor continuity](TECHNOLOGY_PROGRESS_CONTRIBUTOR_CONTINUITY_EN_KO.md) · [source-cost-compensation audit register](knowledge/contributor-continuity-register-v1.json) · [contributor loss and Unknown Paradox (EN/KO)](research/CONTRIBUTOR_LOSS_UNKNOWN_PARADOX_v0_1_EN_KO.md) · [continuance resource thresholds — EN/KO](research/CONTINUANCE_RESOURCE_THRESHOLD_v0_1_EN_KO.md)
 
-**Prior-study rights and originators:** [Original 1 English / 원본2 Korean prior-art rights & derivation ledger](PRIOR_ART_RIGHTS_AND_DERIVATION_EN_KO.md) · [Machine-readable source/rights audit inventory](knowledge/prior-art-rights-register-2026-10-13.json). Existing authors, historic originators, rights holders and project contributions remain distinct. Unverified licenses are not treated as granted.
+**Prior-study rights and originators:** [Prior-art rights and derivation ledger](PRIOR_ART_RIGHTS_AND_DERIVATION_EN_KO.md) · [Machine-readable source/rights audit inventory](knowledge/prior-art-rights-register-2026-10-13.json). Existing authors, historic originators, rights holders and project contributions remain distinct. Unverified licenses are not treated as granted.
 
 ## 원본2 — 한국어 | 창시 목적 전문 대응본
 
@@ -40,50 +40,10 @@
 
 **증거·기여 경계:** 이는 연구 목표이며 협력이 모든 조건에서 우월하다는 보편법칙의 증명이 아니다. 합성계산·현실 증거·외부 독립복제·미해결 질문을 구별하고 부정결과와 원기여 인간 연구자·선행연구자·보조 AI의 기여 계보를 보존한다. 연구 성과와 실제 기여자의 비용·편익도 따로 측정한다.
 
-**처음 읽을 자료:** [한글 시작](START_HERE_KO.md) · [연구 개요](RESEARCH_OVERVIEW.md) · [공개 증거](PUBLIC_EVIDENCE_INDEX.md) · [재현·검토](PUBLIC_REVIEW_PACKET.md) · [연구 전체 목차](RESEARCH_TOC.md) · [기여·출처](ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md).
+**처음 읽을 자료:** [한국어 독서 경로](navigation/START_HERE_KO.md) · [기존 상세 자료](START_HERE_KO.md) · [연구 개요](RESEARCH_OVERVIEW.md) · [공개 증거](PUBLIC_EVIDENCE_INDEX.md) · [재현·검토](PUBLIC_REVIEW_PACKET.md) · [연구 전체 목차](RESEARCH_TOC.md) · [기여·출처](ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md).
 
 **출처 표시 및 재사용:** [연구 인용 정보](CITATION.cff) · [영어 원본1·한국어 원본2 출처 표기 기준](SOURCE_ATTRIBUTION_EN_KO.md) · [플랫폼 출처 보호 요청서(미발송)](PLATFORM_ATTRIBUTION_REQUEST_EN_KO.md). 이는 저장소 전체 이용허락이나 AI 기업의 출처 표시 확약이 아니다. · [기술 발전·기여자 존속과 수혜자 장기위험](TECHNOLOGY_PROGRESS_CONTRIBUTOR_CONTINUITY_EN_KO.md) · [출처·권리·보상·미확인 상태 원장](knowledge/contributor-continuity-register-v1.json) · [기여자 손실·모름의 역설 연구 (영문1/한글2)](research/CONTRIBUTOR_LOSS_UNKNOWN_PARADOX_v0_1_EN_KO.md) · [개체 유지 자원·기여·고갈 임계조건 — 영문1/한글2](research/CONTINUANCE_RESOURCE_THRESHOLD_v0_1_EN_KO.md)
 
 **선행연구 원안자·저작권·응용 계보:** [영어 원본1·한국어 원본2 기여·권리 원장](PRIOR_ART_RIGHTS_AND_DERIVATION_EN_KO.md) · [전수 검수 대상 목록](knowledge/prior-art-rights-register-2026-10-13.json). 원저자·최초 발안자·실제 저작권자·프로젝트 응용을 구분하며 미확인 허락은 인정된 것으로 처리하지 않는다.
 
-**원본 표기 해설 / Edition note:** “Original 1 / 원본2”는 여기서 문서의 **게시·검토 순서와 대응본 표기**이며, 영어권 연구자가 인간 창시자의 발상을 처음 제안했다는 주장이 아니다. 양쪽은 요약-전문 관계가 아닌 의미 대응 전문이다. 의미충돌은 원안의 원문·기여 기록 및 독립적 대조로 해결하고, 한쪽 언어만으로 가설·반례·결론을 몰래 추가하거나 변경하지 않는다. 이 순서는 2026-10-13 사용자의 최신 명시 지시에 따른 것으로, 과거 언어정책과의 변경이력을 보존한다.
-
-## Start here / 여기서 시작
-
-This landing page is a **short router**, not a second research index. All original studies, negative results, corrections, contributor lineage and historical versions remain in the repository. / 이 페이지는 상세목차를 복제하지 않는 **첫 안내문**이다. 원문·반례·실패·기여자 계보·과거 버전은 그대로 보존한다.
-
-### Three navigation levels / 공개자료 3단계
-
-These are **reading and review routes**, not new directories or evidence grades. Existing originals, negative results, provenance and citations remain untouched. / 이는 **탐색·검토 경로**이며 새 폴더나 증거등급이 아니다. 원문·부정결과·출처·기여 기록을 보존한다.
-
-| Level / 단계 | Purpose / 목적 | Short route / 짧은 경로 |
-| --- | --- | --- |
-| **1 — Discover / 탐색·입장** | Find the purpose and a reader-specific start / 목적·독자별 시작점 | [Korean start](START_HERE_KO.md) · [AI review](AI_REVIEW_START_HERE.md); also README, llms.txt, AI_DISCOVERY_INDEX.json |
-| **2 — Understand & audit / 이해·검증** | Separate hypothesis, evidence, status, failures and credit / 가설·증거·상태·실패·기여 구분 | [Evidence](PUBLIC_EVIDENCE_INDEX.md) · [Review packet](PUBLIC_REVIEW_PACKET.md) · [Full TOC](RESEARCH_TOC.md); other level-2 policies indexed there |
-| **3 — Artifacts & operations / 실험·확장·운영** | Original experiments, studies, cases, knowledge and governance / 원실험·연구·사례·지식·운영 | [Experiments](experiments/) · [Knowledge](knowledge/README.md); research/, prior-art/, governance/, continuity/, funding/, tools/ via full TOC |
-
-**Status boundary / 상태경계:** E007 is a project synthetic timing result; E008 is a preregistered protocol without a main result; [E009 is a negative synthetic result](experiments/e009/RESULT.md); E010 is posthoc self-run synthetic exploration. None alone proves a general law or independent scientific replication. / 각 문서는 서로 다른 주장범위를 가지며 보편법칙 또는 외부 독립 검증을 뜻하지 않는다.
-
-- **Understanding the mission / 연구의 목적:** [full EN Original 1 + KO Original 2 research preamble / 통합 머릿말](PUBLIC_PREAMBLE_VOLUNTARY_COEXISTENCE_2026-10-13_EN_KO.md) · [research overview / 개요](RESEARCH_OVERVIEW.md).
-- **Reading in Korean / 한국어 탐색:** [START_HERE_KO.md](START_HERE_KO.md) · [full research map and historical case index / 전체 연구목차](RESEARCH_TOC.md).
-- **Checking the evidence / 증거 확인:** [evidence index / 증거등급](PUBLIC_EVIDENCE_INDEX.md) · [fresh-checkout reproduction and review / 독립검토 패킷](PUBLIC_REVIEW_PACKET.md) · [claim-status policy / 상태정본](RESEARCH_STATUS_POLICY.md).
-- **Independent critique / 외부 반증·기여:** [contribution and contradiction route](CONTRIBUTING.md) · [AI/cross-model review entry](AI_REVIEW_START_HERE.md) · [knowledge navigation / 지식그래프](knowledge/README.md) ([explorer / 탐색기](knowledge/explorer.html)).
-- **Funding / 후원·연구협력:** [GitHub Sponsors — individual research support / 개인 연구 후원](https://github.com/sponsors/gmodrasa7-rgb) · [90-second funder brief / 90초 연구지원 안내](funding/FUNDER_START_HERE.md) · [sponsorship-use policy and public ledger / 후원금 사용 원칙·공개 장부](funding/SPONSORSHIP_PUBLIC_LEDGER.md) · [legal and tax uncertainties / 법률·세무 미확정 사항](funding/LEGAL_TAX_RISK_REGISTER_2026-10-13_EN_KO.md). Personal sponsorship supports only the independent researcher's work time and LLM usage, not a guaranteed result; actual receipts remain **unverified**. / 개인 후원금 사용처는 연구자 1인 연구시간 보수와 LLM 이용료로 한정하며, 특정 연구 성과를 보장하지 않는다. 실제 수령액은 **미확인**이다.
-
-## What the evidence means / 검증 결과의 의미
-
-- **E007:** [synthetic timing result](E007_TIMING_RESULT.md) and project rerun; no independent scientific replication.
-- **E008:** [16-case preregistration and executable-readiness HOLD](experiments/e008/README.md); no numerical policy winner or main result.
-- **E009:** [pre-registered negative synthetic result](experiments/e009/RESULT.md); the complex Project-v3 residual did not survive its frozen comparison.
-- **Published E010:** [108 chosen synthetic combinations](experiments/e010/README_KO.md); exploratory, posthoc, not empirical or independent validation. The separately proposed [safety-inspection E010 draft](https://github.com/gmodrasa7-rgb/project-intersection-public/pull/20) was **blocked and closed unmerged** because its static cases could not test its dynamic claim; the two E010 identities must never be conflated.
-
-**Five separate evaluations / 다섯 가지 분리평가:** (1) research-question importance / 연구질문의 가치, (2) human/AI/prior-work contribution and provenance / 원안·기여 계보, (3) artifact and method quality / 산출물·방법 품질, (4) scientific support / 과학적 지지수준, (5) independent external validation / 독립 외부검증. A poor replication score does not erase earlier contribution; impressive documents or CI do not establish a broad theorem. / 독립검증 부재는 기존 기여가 0이라는 뜻이 아니며, 코드·문서 통과가 보편법칙 입증은 아니다.
-
-## Detailed references / 상세 연구 자료 — 문서는 삭제하지 않음
-
-- **Theory and limits / 이론·경계:** [core specification](CORE_RESEARCH_SPEC_V1_KO.md) · [long-horizon intervention model](LONG_HORIZON_MIN_INTERVENTION_E2E.md) · [counterfactual trace](CONVERGENCE_TRACE_FORMALISM_KO.md) · [prior art](PRIOR_ART_AND_ATTRIBUTION.md).
-- **Failure, credit and practical cost / 실패·기여·실질비용:** [failure regression index](FAILURE_REGRESSION_INDEX.md) · [contribution-cost accounting](CONTRIBUTION_COST_ACCOUNTING_REGRESSION.md) · [attribution boundary](ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md) · [source-rights register](knowledge/SOURCE_REGISTRY.md) · [selective-truth gate](governance/selective_truth_gate/README_KO.md).
-- **Session-independent continuity / 세션 변경 후 복원:** [public handoff capsule](CONTINUITY_CAPSULE_PUBLIC_KO.md) · [research continuation procedure](AUTONOMOUS_RESEARCH_LOOP.md) · [historical machine state](AUTONOMOUS_RESEARCH_STATE.json) · [GitHub–local handoff protocol](continuity/GITHUB_LOCAL_HANDOFF_PROTOCOL.md).
-- **All historical studies, cases and variants / 나머지 역사·사례·선행연구 전체:** [RESEARCH_TOC.md](RESEARCH_TOC.md) is the detailed directory; no case-specific index is maintained independently on this landing page.
-
-**Evidence boundary / 증거경계:** Research progress and human contributors' ability to survive, exit, recover and receive compensation must be evaluated separately. AI-assisted editing is not independent external review. No private repository, personal health record or unverified legal payment claim is published or inferred here.
+**원본 표기 해설:** “Original 1 / 원본2”는 여기서 문서의 **게시·검토 순서와 대응본 표기**이며, 영어권 연구자가 인간 창시자의 발상을 처음 제안했다는 주장이 아니다. 양쪽은 요약-전문 관계가 아닌 의미 대응 전문이다. 의미충돌은 원안의 원문·기여 기록 및 독립적 대조로 해결하고, 한쪽 언어만으로 가설·반례·결론을 몰래 추가하거나 변경하지 않는다. 이 순서는 2026-10-13 사용자의 최신 명시 지시에 따른 것으로, 과거 언어정책과의 변경이력을 보존한다.
