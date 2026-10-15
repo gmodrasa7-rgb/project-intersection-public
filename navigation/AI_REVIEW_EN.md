@@ -47,6 +47,9 @@ Project openness is not universal license permission. Assistance by an AI is not
 
 ## 6. Structured review output
 
+**Machine-source fidelity:** [Four-experiment claim source contract](../knowledge/claim-source-lock.json) identifies the exact E007–E010 result JSON for numerical checks and their evidence status. E010's frozen `effectiveExitPrevention` key may be misread as blocking an agent's exit; in the code, larger `x` reduces an exploiter's immediate extraction gain. The machine name is preserved for provenance, not treated as a right-to-exit measure. A passed audit means bounded data consistency, **not** independent scientific or complete translation verification.
+
+
 Report: claim ID and commit; source and competing prior art; reproduction steps; what was observed; what remains unknown; strongest opposing evidence; contribution/rights boundary; possible asymmetric external costs; recommended claim-status revision; next falsification experiment; rollback route.
 
 **No semantic translation certification is implied.** Compare the [English contents](RESEARCH_TOC_EN.md) with the [Korean contents](RESEARCH_TOC_KO.md) for navigation alignment, not as proof of complete translation of their linked documents. The [historical bilingual AI review page](../AI_REVIEW_START_HERE.md) remains readable for audit continuity.
