@@ -4,6 +4,12 @@
 
 ## Language routing
 
+- E007 timing report, English: https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/experiments/e007/README_EN.md
+- E007 timing report, Korean: https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/experiments/e007/README_KO.md
+- E008 preregistered study, English (NO MAIN RESULT): https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/experiments/e008/README_EN.md
+- E008 preregistered study, Korean (NO MAIN RESULT): https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/experiments/e008/README_KO.md
+
+
 - Independent English review packet: https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/research/PUBLIC_REVIEW_PACKET_EN.md
 - Independent Korean review packet: https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/research/PUBLIC_REVIEW_PACKET_KO.md
 - E009 negative synthetic result, English: https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/experiments/e009/RESULT_EN.md
