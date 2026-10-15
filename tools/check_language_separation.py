@@ -60,6 +60,24 @@ def readme_errors(body: str) -> list[str]:
     for link in ("navigation/START_HERE_EN.md", "navigation/START_HERE_KO.md"):
         if link not in body:
             errors.append("README_LANGUAGE_ROUTE_MISSING:" + link)
+    # Regression for the founder-defined concept boundary, not an assertion of scientific validity.
+    for heading, term, database_boundary, section in (
+        ("### Ten core concepts", "ICM — Intersection of Minimum Self-Interest",
+         "CCPH — contribution and impact provenance database", first_en),
+        ("### 핵심용어 10개", "ICM — 최소 사심 교집합",
+         "CCPH — 기여·영향 계보 데이터베이스", first_ko),
+    ):
+        if section.count(heading) != 1:
+            errors.append("README_CORE_CONCEPT_HEADING_MISSING_OR_DUPLICATE:" + heading)
+            continue
+        content = section.split(heading, 1)[1].split("\n### ", 1)[0]
+        ranked = re.findall(r"(?m)^\\| (?:[1-9]|10) \\|", content)
+        if len(ranked) != 10:
+            errors.append("README_CORE_CONCEPT_COUNT_NOT_TEN:" + heading)
+        if term not in content or database_boundary not in content:
+            errors.append("README_CORE_TERMINOLOGY_DRIFT:" + heading)
+    if "Continuance–Contribution Pathways Hypothesis" not in first_en or "내부의 가설 연구축" not in first_ko:
+        errors.append("README_CCPH_DATABASE_VERSUS_HYPOTHESIS_BOUNDARY_MISSING")
     return errors
 
 
@@ -186,6 +204,8 @@ def self_test(en: str, ko: str, readme: str) -> None:
         guide_errors(KO_PATH, ko.replace("<!-- PI-MIRROR:", "<!-- MISSING:", 1), "ko"),
         guide_errors(KO_PATH, ko.replace("../experiments/e009/RESULT_KO.md", "../none.md"), "ko"),
         readme_errors(readme.replace(KO_README, "## Korean version", 1)),
+        readme_errors(readme.replace("CCPH — contribution and impact provenance database", "CCPH — validated AI harness", 1)),
+        readme_errors(readme.replace("### 핵심용어 10개", "### 이름이 지워짐", 1)),
     ]
     assert all(mutations), "Mutation bypassed language guard"
     print(f"Language routing mutation regressions: {len(mutations)} / {len(mutations)} PASS")
