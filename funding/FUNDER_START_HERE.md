@@ -82,7 +82,7 @@ Project Intersection은 대한민국의 인간 독립 연구자가 시작한 공
 - **E009 — 공개 보존한 부정적 결과:** [한국어 사전등록 합성 비교](../experiments/e009/RESULT_KO.md). 자체의 더 복잡한 후보가 단순 기준선과 비교한 사전등록 존속 조건 네 개 중 세 개를 충족하지 못했다. 성공 주장을 확대하기보다 모형을 축소·재검토해야 한다는 결과다.
 - **E008 — 본실험 결과 없음:** [한국어 사전등록 명세](../experiments/e008/README_KO.md). 주요 비교 주장은 아직 실험 결과로 확정되지 않았다.
 
-독립 검토는 [공개 증거 색인](../PUBLIC_EVIDENCE_INDEX.md), [재현·검토 패킷](../PUBLIC_REVIEW_PACKET.md), [연구 개요](../RESEARCH_OVERVIEW.md)에서 시작한다. **프로젝트 내부 합성 재실행은 외부 독립 과학복제나 현실 검증이 아니다.**
+독립 검토는 [한국어 증거 색인](../research/PUBLIC_EVIDENCE_INDEX_KO.md), [한국어 재현·검토 절차](../research/PUBLIC_REVIEW_PACKET_KO.md), [한국어 연구 개요](../research/RESEARCH_OVERVIEW_KO.md)에서 시작한다. **프로젝트 내부 합성 재실행은 외부 독립 과학복제나 현실 검증이 아니다.**
 
 ### 개인 후원의 사용처
 
