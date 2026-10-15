@@ -28,9 +28,9 @@
 >
 > The purpose of the two-language structure is therefore not simple translation duplication, but **meaning preservation, cross-checking, and discovery of new observations that may emerge from differences between languages**.
 
-### Reproduced result
+### Project-run computational check (not independent replication)
 
-[E007 timing sensitivity: 26 tests; 17/72 classification changes](../E007_TIMING_RESULT.md)
+[E007 timing sensitivity: 27 standalone regression tests; 17/72 selected synthetic classification changes](../E007_TIMING_RESULT.md)
 
 ### Research Contents
 
