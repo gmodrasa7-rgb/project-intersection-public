@@ -8,6 +8,8 @@
     "meaning": "Logical reader/reviewer pathways, not physical folder relocation or evidence grades. Index coverage is incomplete; omissions are UNKNOWN, not proof of absence. / 논리적 탐색 경로이며 파일 이동·증거등급이 아님. 색인 누락은 미확인.",
     "level_1_discovery": [
       "README.md",
+      "navigation/START_HERE_EN.md",
+      "navigation/START_HERE_KO.md",
       "START_HERE_KO.md",
       "AI_REVIEW_START_HERE.md",
       "llms.txt",
@@ -125,7 +127,9 @@
     "ko"
   ],
   "entrypoints": {
-    "human_korean": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/START_HERE_KO.md",
+    "human_english": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/navigation/START_HERE_EN.md",
+    "human_korean": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/navigation/START_HERE_KO.md",
+    "human_korean_legacy": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/START_HERE_KO.md",
     "llm_text": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/llms.txt",
     "review": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/AI_REVIEW_START_HERE.md",
     "evidence": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/PUBLIC_EVIDENCE_INDEX.md",
@@ -286,5 +290,12 @@
     "source": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md"
   },
   "rights": "Publicly viewable does not imply a general license or permission to ingest for training. Respect rights and source-specific terms. GitHub API license=null as of 2026-10-12; repository visibility does not create an open-source license; explicit grant absent.",
-  "caveat": "Machine-readable discovery is not confirmed distribution, indexing, model ingestion or provider acceptance."
+  "caveat": "Machine-readable discovery is not confirmed distribution, indexing, model ingestion or provider acceptance.",
+  "language_access": {
+    "original_1_english": "navigation/START_HERE_EN.md",
+    "original_2_korean": "navigation/START_HERE_KO.md",
+    "edition_semantics": "Original 1/2 denote reading and publication order, not originator language.",
+    "validation_scope": "Navigation guide structure only; historical linked research may be Korean-only or mixed; no semantic translation certification.",
+    "legacy_translation_status": "incomplete"
+  }
 }
