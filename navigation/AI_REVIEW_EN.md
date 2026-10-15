@@ -15,8 +15,8 @@ Use the [founding research purpose](../README.md), [claim evidence index](../res
 
 | Artifact | Research state | Invalid inference |
 | --- | --- | --- |
-| [E007 synthetic timing](../experiments/e007/README.md) | Project-run executable synthetic result | Independent replication or real-world impact |
-| [E008 preregistered design](../experiments/e008/README.md) | Main comparative result is not established | Winning policy or completed evaluation |
+| [E007 synthetic timing](../experiments/e007/README_EN.md) | Project-run executable synthetic result | Independent replication or real-world impact |
+| [E008 preregistered design](../experiments/e008/README_EN.md) | Main comparative result is not established | Winning policy or completed evaluation |
 | [E009 negative result](../experiments/e009/RESULT_EN.md) | Frozen synthetic comparison failed a specified project claim | Universal refutation of coexistence research |
 | [E010 exploratory synthesis](../experiments/e010/README_EN.md) | Post-hoc chosen scenarios | Preregistered or independent evidence |
 
