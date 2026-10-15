@@ -15,6 +15,21 @@ class TestPEST(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "incomplete"):
             validate_design(self.cases[:-1])
 
+    def test_reject_rebalanced_off_grid_pt_without_changing_cell_count(self):
+        # Original validator accepted 96 unique cells with unplanned PT=0.30.
+        cases = tuple(replace(c, PT_i=.30) if c.PT_i == .25 else c
+                      for c in self.cases)
+        self.assertEqual(len(cases), 96)
+        with self.assertRaisesRegex(ValueError, "grid coordinate drift"):
+            validate_design(cases)
+
+    def test_exact_binary_xg_rejects_booleans_and_floats(self):
+        # In Python True == 1, 1.0 == 1; neither is an exact integer assignment.
+        for invalid in (True, False, 0.0, 1.0):
+            with self.subTest(invalid=invalid):
+                with self.assertRaisesRegex(ValueError, "exact binary"):
+                    validate_case(replace(self.cases[0], XG_i=invalid))
+
     def test_causal_drift_detected_even_when_floor_gate_still_passes(self):
         cases = list(self.cases)
         cases[0] = replace(cases[0], floor_after=0.65)  # both values above minimum
