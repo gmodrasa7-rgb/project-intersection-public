@@ -8,6 +8,7 @@ on:
       - "tools/check_language_separation.py"
       - "tools/audit_bilingual_navigation.py"
       - "tools/audit_claim_source_lock.py"
+      - "tools/check_external_review_paths.py"
       - "knowledge/claim-source-lock.json"
       - "experiments/e007/timing_summary.json"
       - "experiments/e008/EXECUTABILITY_AUDIT.json"
@@ -24,6 +25,7 @@ on:
       - "tools/check_language_separation.py"
       - "tools/audit_bilingual_navigation.py"
       - "tools/audit_claim_source_lock.py"
+      - "tools/check_external_review_paths.py"
       - "knowledge/claim-source-lock.json"
       - "experiments/e007/timing_summary.json"
       - "experiments/e008/EXECUTABILITY_AUDIT.json"
@@ -49,6 +51,8 @@ jobs:
           python-version: "3.12"
       - name: Validate founding-page separation, paired guides and negative mutations
         run: python tools/check_language_separation.py --self-test
+      - name: Guard English/Korean external reviewer routes, anchors and four negative mutations
+        run: python tools/check_external_review_paths.py --self-test
       - name: Audit all language-edition inventory and paired navigation; challenge five negative mutations
         run: python tools/audit_bilingual_navigation.py --self-test
       - name: Derive four studies' EN/KO published claims from numeric original results and inject six mistakes
