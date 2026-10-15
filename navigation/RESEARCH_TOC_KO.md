@@ -9,13 +9,13 @@
 
 **원자료 이동 전 안내:** [연구 개요](../RESEARCH_OVERVIEW.md), [공개 증거](../PUBLIC_EVIDENCE_INDEX.md), [검토 자료](../PUBLIC_REVIEW_PACKET.md), [CCPH 교차지도](../CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md)는 표본 구간에서 영어와 한국어 문자가 모두 관측됐다. [E010](../experiments/e010/README_KO.md)은 관측 구간에서 한국어 비중이 높고, [E009 결과](../experiments/e009/RESULT.md)에서는 검사한 구간에 한글 문자가 발견되지 않았다. 이는 **문자 분포 신호이지 번역 완료나 문서 전체 언어 인증이 아니다.** 연결 문서에 들어가기 전에 [표본 관측과 한계](../knowledge/language-edition-register.json)를 확인할 수 있다.
 
-일부 과거 연구는 한국어만 존재하거나 두 언어가 혼재되어 있다. **원출처 파일명·논문 제목·수학적 식별자·인용**은 그대로 보존한다. 연결된 원문을 번역 완료 문서로 오인하지 않도록 하며, 개별 주장과 증거등급은 [공개 증거 색인](../PUBLIC_EVIDENCE_INDEX_KO.md)을 따른다.
+일부 과거 연구는 한국어만 존재하거나 두 언어가 혼재되어 있다. **원출처 파일명·논문 제목·수학적 식별자·인용**은 그대로 보존한다. 연결된 원문을 번역 완료 문서로 오인하지 않도록 하며, 개별 주장과 증거등급은 [공개 증거 색인](../research/PUBLIC_EVIDENCE_INDEX_KO.md)을 따른다.
 
 ## 1. 최상위 연구질문과 연구 상태
 
 - [창시 목적 전문](../README.md)
-- [연구 개요](../RESEARCH_OVERVIEW_KO.md)
-- [증거·상태 구분 규칙](../RESEARCH_STATUS_POLICY_KO.md)
+- [연구 개요](../research/RESEARCH_OVERVIEW_KO.md)
+- [증거·상태 구분 규칙](../research/RESEARCH_STATUS_POLICY_KO.md)
 - [핵심 연구 틀(기존 혼합 언어 자료)](../PUBLIC_PREAMBLE_VOLUNTARY_COEXISTENCE_2026-10-13_EN_KO.md)
 
 ## 2. 로드맵과 실행·검증 기준
@@ -31,12 +31,12 @@
 - [E008 — 사전등록 설계·본실험 결과 없음](../experiments/e008/README.md)
 - [E009 — 사전등록 합성 부정결과](../experiments/e009/RESULT.md)
 - [E010 — 사후 탐색적 합성계산(한국어 원문)](../experiments/e010/README_KO.md)
-- [공개 주장·증거 원장](../PUBLIC_EVIDENCE_INDEX_KO.md)
+- [공개 주장·증거 원장](../research/PUBLIC_EVIDENCE_INDEX_KO.md)
 - [실패·교정 회귀검사](../FAILURE_REGRESSION_INDEX.md)
 
 ## 4. CCPH: 존속·지원·기여 경로
 
-- [한국어 CCPH 선행 증거 지도(CP64–CP79)](../CCPH_RESEARCH_ATLAS_KO.md)
+- [한국어 CCPH 선행 증거 지도(CP64–CP79)](../research/CCPH_RESEARCH_ATLAS_KO.md)
 
 - [역사사례·지원·간접영향·부정결과](../CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md)
 - [제안된 사건 계보 규격·사회 전수 데이터 아님](../knowledge/ccph-impact-lineage-event-schema-v0_1.json)
@@ -83,7 +83,7 @@
 
 ## 10. 범위·언어·검증 상태
 
-- [연구 상태 규칙](../RESEARCH_STATUS_POLICY_KO.md)과 [실패 회귀검사 색인](../FAILURE_REGRESSION_INDEX.md)을 우선 적용한다.
+- [연구 상태 규칙](../research/RESEARCH_STATUS_POLICY_KO.md)과 [실패 회귀검사 색인](../FAILURE_REGRESSION_INDEX.md)을 우선 적용한다.
 - 부정결과는 그대로 보존하고 내부 재실행을 외부 독립검증으로 승격하지 않는다.
 - [기존 상세 이중언어 목차](../RESEARCH_TOC.md)는 과거 기록과 상세 참조를 위해 유지하지만, **언어 분리가 완료된 단일언어 문서는 아니다.**
 - [언어판 등록부](../knowledge/language-edition-register.json)는 문서쌍·미번역·의미대조 미완료를 구별한다.
