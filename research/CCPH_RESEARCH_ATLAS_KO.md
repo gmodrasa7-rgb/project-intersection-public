@@ -61,7 +61,7 @@
 
 | 원저자·연구설계 | 원출처가 보고한 결과 | 가장 강한 반례·식별 한계 |
 | --- | --- | --- |
-| [Adrian Barnett, Tony Blakely, Mengyao Liu, Luke Garland, Philip Clarke(2024)](https://doi.org/10.1093/scipol/scae042), 수정 추첨식 연구비 배분, 연구자 88명 | 논문 게재율 비 0.95(95% 신용구간 0.67–1.39), 인용률 비 1.06(0.79–1.43). | 이 표본에서 평균 논문·인용 증가가 명확히 검출되지 않았다. 신용구간이 넓어 효과가 0이라고 확정할 수 없고, 존속·자율성·비공식 기여·상실된 선택지는 측정하지 않았다. |
+| [Adrian Barnett, Tony Blakely, Mengyao Liu, Luke Garland, Philip Clarke(2024)](https://doi.org/10.1093/scipol/scae045), 수정 추첨식 연구비 배분, 연구자 88명 | 논문 게재율 비 0.95(95% 신용구간 0.67–1.39), 인용률 비 1.06(0.79–1.43). | 이 표본에서 평균 논문·인용 증가가 명확히 검출되지 않았다. 신용구간이 넓어 효과가 0이라고 확정할 수 없고, 존속·자율성·비공식 기여·상실된 선택지는 측정하지 않았다. |
 | [Wei Yang Tham(2023)](https://doi.org/10.1371/journal.pone.0280576), 미국 NIH R01 갱신 지연의 이중차분 분석 | R01 하나에 의존한 연구자의 NIH 관련 지출은 중단 전후 특정 16개월 구간에서 약 52% 감소했고, 다른 지원금 보유가 충격을 완화했다. | 지연은 무작위 배정이 아니며 연구비 지출 감소가 곧 논문·지식 생산 감소는 아니다. 논문 성과의 효과는 정확히 판정하지 못했다. |
 | [Matěj Bajgar, Suren Karapetyan(2026)](https://doi.org/10.1016/j.econlet.2026.112862), 체코 의학 연구비 선정 경계의 회귀불연속 분석 | 출판본 추정에서 전체 논문 약 3.1편(22%) 증가, 제1저자·최종저자 논문 각각 59%·41% 증가. | 선정 경계의 국소 효과이지 모든 지원금의 보편 효과가 아니다. 저자 위치는 지적 기여의 제한적 대리지표다. 수치가 다른 [2025년 작업논문 판본](https://ies.fsv.cuni.cz/en/research-grants-and-independent-scientific-contributions-evidence-authorship-position)을 독립 재현으로 중복 계산하지 않는다. |
 
