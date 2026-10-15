@@ -121,3 +121,22 @@ After merge, execution must record the merged executable-spec commit and preserv
 ## Result-preservation rule
 
 The negative result is preserved without retuning `benchmark.py`. `verify_result.py` re-executes the frozen benchmark and compares it to `RESULT.json`.
+
+## E009 secondary verdict audit — Original 1 English (2026-10-16)
+
+The existing `verify_result.py` re-executes the frozen same-project E009 simulation. A separate `secondary_verdict_audit.py` now **recalculates the four preregistered survival criteria without importing the simulation's policy/decision/criterion functions**, checking the published summary, all three weight-profile row counts, score aggregation, the frozen benchmark's byte and Git-blob hashes, and five deliberate negative-control mutations. The validator is run in `.github/workflows/public-repository-audit.yml`.
+
+Run from repository root:
+
+```bash
+python experiments/e009/verify_result.py
+python experiments/e009/secondary_verdict_audit.py
+```
+
+**Evidence limit:** both programs use project-authored experiment inputs and published output. Passing these gates does not independently reconstruct the 16 synthetic consequence families, prove correctness of the original policies or scenario weights, establish independent implementation, or demonstrate real-world effects. Reproducibility of arithmetic verdicts is not a second experiment. The published E009 Project-v3 negative result remains unchanged. An unaffiliated blind implementation has **not** been obtained.
+
+## E009 2차 판정 감사 — 원본2 한국어 (2026-10-16)
+
+기존 `verify_result.py`는 같은 프로젝트가 작성한 E009 동결 시뮬레이션을 재실행한다. 별도로 추가한 `secondary_verdict_audit.py`는 **원 실험의 정책·결정·판정 함수를 불러오지 않고** 사전등록 생존조건 네 개를 다시 계산한다. 공개 요약수치, 가중치 프로필 세 개의 행 수, 평균값 집계, 동결 코드의 바이트 해시 및 Git 객체 해시를 확인하고, 의도적으로 변조한 음성 대조군 다섯 개가 모두 차단되는지 검사한다. 이 검사는 기존 공개 저장소 거버넌스 CI에 연결했다.
+
+위의 두 명령어를 저장소 루트에서 순서대로 실행할 수 있다. **증거 한계:** 두 검사는 동일 프로젝트가 만든 데이터와 평가 환경을 사용한다. 16개 합성 결과함수·정책·가중치를 독립적으로 다시 구현하거나 외부 현실 효과를 증명한 것이 아니다. 판정 수치의 별도 계산은 새로운 실험이나 제3자 독립 복제가 아니다. E009의 기존 부정적 결과는 유지되며, 외부 이해관계 없는 평가자의 맹검 독립 구현은 아직 확보되지 않았다.
