@@ -30,7 +30,7 @@
 
 ### Project-run computational check (not independent replication)
 
-[E007 timing sensitivity: 27 standalone regression tests; 17/72 selected synthetic classification changes](../E007_TIMING_RESULT.md)
+[E007 timing sensitivity: 27 standalone regression tests; 17/72 selected synthetic classification changes](../experiments/e007/README_EN.md)
 
 ### Research Contents
 
