@@ -15,8 +15,8 @@ This is the **English-only reading route**, paired with [Original 2: Korean](STA
 
 | Level | Question | Sources |
 | --- | --- | --- |
-| 1 — Discover | What is the question and where should I begin? | [Founding statement](../README.md), [research overview](../RESEARCH_OVERVIEW_EN.md), [English AI review](AI_REVIEW_EN.md) |
-| 2 — Understand and audit | Which claims, sources, limitations, failures and rights are recorded? | [Evidence index](../PUBLIC_EVIDENCE_INDEX_EN.md), [research contents](../RESEARCH_TOC.md), [status policy](../RESEARCH_STATUS_POLICY_EN.md), [review packet](../PUBLIC_REVIEW_PACKET.md) |
+| 1 — Discover | What is the question and where should I begin? | [Founding statement](../README.md), [research overview](../research/RESEARCH_OVERVIEW_EN.md), [English AI review](AI_REVIEW_EN.md) |
+| 2 — Understand and audit | Which claims, sources, limitations, failures and rights are recorded? | [Evidence index](../research/PUBLIC_EVIDENCE_INDEX_EN.md), [research contents](../RESEARCH_TOC.md), [status policy](../research/RESEARCH_STATUS_POLICY_EN.md), [review packet](../PUBLIC_REVIEW_PACKET.md) |
 | 3 — Inspect artifacts | What can be rerun, contradicted or corrected? | [Experiments](../experiments/), [research](../research/), [prior art](../prior-art/), [knowledge](../knowledge/README.md), [governance](../governance/) |
 
 These are **reading routes**, not an evidence ranking or new physical hierarchy.
@@ -31,11 +31,11 @@ These are **reading routes**, not an evidence ranking or new physical hierarchy.
 | [E009](../experiments/e009/RESULT.md) | Preregistered negative synthetic result | Universal failure of coexistence hypotheses |
 | [E010](../experiments/e010/README_KO.md) | Post-hoc exploratory synthetic calculations | Preregistration, independent or real-world validation |
 
-For claim-by-claim limitations, use the [public evidence index](../PUBLIC_EVIDENCE_INDEX_EN.md). A successful CI run is not independent replication.
+For claim-by-claim limitations, use the [public evidence index](../research/PUBLIC_EVIDENCE_INDEX_EN.md). A successful CI run is not independent replication.
 
 <!-- PI-SECTION: ccph -->
 
-[English CCPH source atlas](../CCPH_RESEARCH_ATLAS_EN.md) records direct support and counterexamples CP64–CP79 with original scholars and explicit causal limits.
+[English CCPH source atlas](../research/CCPH_RESEARCH_ATLAS_EN.md) records direct support and counterexamples CP64–CP79 with original scholars and explicit causal limits.
 
 ## 4. CCPH: real-world continuance and contribution histories
 
