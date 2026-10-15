@@ -161,3 +161,60 @@ W3C PROV의 Entity–Activity–Agent, DataCite의 연구물 관계 모델을 �
 - Linux Foundation / Harvard Census III: https://www.linuxfoundation.org/research/census-iii
 - Linux Foundation 2025 오픈소스 조사: https://www.linuxfoundation.org/research/world-of-open-source-global-2025
 - Elinor Ostrom, *Governing the Commons* (1990): 공동자원 관리의 선행 체계. 본 연구에 전용 가능한지 별도 검증한다.
+---
+
+## 2026-10-15 CCPH expansion: AI-mediated impact lineage — Original 1 English
+
+**Origin and research status.** The human founder identified the generalizable hazard: in an AI-mediated society, small and large, direct and indirect contributions (help, care, warnings, problem discovery, hypotheses, ideas, corrections, cooperation, exchange), as well as potential deception, promise breaches, appropriation, unequal cost transfers and attrition, may propagate across people, AI systems and institutions while the enabling actors vanish from the recorded lineage. AI-assisted specification here is *not* an independent discovery of the founder's premise, nor empirical validation. This extends the **support-enabled continuance and social participation** core of CCPH; it does not redefine CCPH as an evaluation harness.
+
+**Research question.** Under which institutional and technical conditions does a recording system preserve enough *source → interaction → transformation → actual downstream effect → benefit/cost recipient* information to detect otherwise invisible transfers of credit, resources, option space and evaluation/control authority? When does the recorder itself become a new centralized surveillance, distortion or appropriation power?
+
+**Observation is not omniscience.** Current tools permit selected digital event logs and linkage at unprecedented practical scale, not universal measurement of all social influence. In particular: semantic similarity does not prove derivation; using a source does not establish its marginal causal effect; a valid signature does not prove the underlying claim is true; hidden or offline influences remain missing; unpublished data and private model training data may be inaccessible; a third party's motives are not directly observed. A record of an allegation of deceit or betrayal is not a finding of intention, breach, harm or illegality. Absence of a path is not proof of non-contribution.
+
+**Proposed model.** Represent actors, resources, activities and outputs as a typed, temporal, directed influence graph G=(V,E), carrying signed/grounded *claims*, not adjudicated truths by default. Each edge preserves (a) event type and time; (b) distinct source, transformer, recipient and downstream actor where known; (c) independently linkable evidence and provenance/rights; (d) whether influence is documentable process, correlation, hypothesized or causally identified; (e) claim/review/appeal status and conflicting evidence; (f) costs, gains, payment/support and actual control rights by actor; (g) unobserved actors and missingness/selection mechanisms. Track supportive, neutral, mixed and harmful paths; explicitly allow beneficial voluntary and unremunerated collaboration.
+
+**Preserve three irreducible ledgers.**
+- **E — Epistemic:** verified or unverified warnings, problem discovery, counterexamples, hypotheses, refutations, mentoring and novel ideas, *even when final output is zero*. False/recycled claims are not automatically upgraded.
+- **O — Outcomes and propagation:** actually observed artifacts, enabled participation, intervention, repair, social benefit/harm and downstream beneficiaries, with double-counting and competing causal explanations checked. Potential future contribution remains UNKNOWN.
+- **A — Actor continuance and control:** contributors' and recipients' resources, real opportunity and exit, time costs, rights, payments, consent, credit, correction, recovery, and who can define labels and delete/publish evidence. Personhood and basic rights are not conditioned on output.
+
+**Operational seed.** The versioned, opt-in, bounded [CCPH influence-event schema](knowledge/ccph-impact-lineage-event-schema-v0_1.json) is a *record format only*. The bundled example is synthetic. It does not harvest chats, measure society, audit ownership, determine damages or establish any instance of exploitation. The existing [contributor continuity registry](knowledge/contributor-continuity-register-v1.json) remains the higher-level source/rights registry, while [CCPH social-support prior-art crosswalk](CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md) remains the primary substantive research. Connect by references, not duplicate copies.
+
+**Three rival mechanisms and negative controls.**
+- **H-IL1, capture without intentional abuse:** removing attribution and feedback routes systematically shifts credit/control/revenue to downstream aggregators; the earlier contributors' capability and detection pathways decline. *Opposite prediction:* no measurable differential in allocation, continuance or recoverability after adjusting for actual inputs, contractual terms and selection.
+- **H-IL2, measurement improvement:** event-based attribution increases verified detection of otherwise omitted contributions and avoided errors compared with outcome-only records. *Opposite prediction:* it mainly produces false credit, duplicated traces, strategic self-reporting, expensive review or little incremental discovery.
+- **H-IL3, recorder capture:** the logging institution controls IDs, observation windows, interpretation and takedown, introducing *more* suppression, privacy loss or asymmetric decision power than it remedies. *Opposite prediction:* independent audits, corrections, refusal, low data collection and portable receipts meaningfully reduce these losses.
+- **H-IL0, benign inequality:** lawful licensing, open sharing, independent rediscovery and sufficiently reciprocal voluntary exchange can result in asymmetric final benefit **without exploitation**. Treat as equal-priority negative controls.
+
+**Measurable pilot (not executed).** In a small consent-based setting with 2–100 actors or a precisely bounded public open-source workflow, freeze an evidence window and rights/consent rules; preselect possible influence links; compare B0 final-output-only record against B1 trace + E/O/A event log under matched adjudication budgets. Use blind reviewers not controlled by a claimed beneficiary, independent source and participant corrections, and synthetic injected missing-edge/false-attribution controls. Report (1) omission among *independently confirmed edges in the audited sample*, never all effects in society; (2) false attribution and disputed labels; (3) cost to record, verify and correct; (4) distribution of benefits, costs and decision rights; (5) late-arriving effects and participant harm; (6) effects of the recorder's own power. Retrospective graphs cannot alone identify counterfactual contribution. Compare no-trace and strong conventional credit baselines; a lower benefit/cost or privacy burden falsifies incremental value in that setting.
+
+**Guardrails.** No compulsory monitoring, background collection of private chats, publication of identifying personal medical/family/financial data, AI-inferred private guilt or indefinite retention. Permission-limited evidence; user choice, minimal data, pseudonymous public records, correction and meaningful exit are prerequisites, not future optional features. Source credit, legal ownership and monetary liability remain distinct. Public claims about non-consenting living people require independent lawful justification and human review, not merely a model-generated label.
+
+**Prior art and limits (original contributions remain theirs):**
+- W3C PROV-O, *The PROV Ontology* (2013), https://www.w3.org/TR/prov-o/ — Entity–Activity–Agent and provenance; not a social justice or compensation engine.
+- NISO CRediT (ANSI/NISO Z39.104-2022), https://credit.niso.org/ — 14 scholarly contribution roles; not a causal effects estimator or copyright determination.
+- C2PA Content Credentials specification and explainer, https://spec.c2pa.org/specifications/ and https://c2pa.org/specifications/specifications/2.2/explainer/Explainer.html — tamper-evidence for content provenance, not truth of content or exhaustive lineage.
+- Nithya Sambasivan et al. (2021), *Data Cascades in High-Stakes AI*, https://research.google/pubs/everyone-wants-to-do-the-model-work-not-the-data-work-data-cascades-in-high-stakes-ai/ — documented downstream costs of undervalued data work in practitioner interviews, not empirical proof of this project's full capture pathway.
+- Michael G. Hudgens & M. Elizabeth Halloran (2008), *Toward Causal Inference With Interference*, https://pubmed.ncbi.nlm.nih.gov/19081744/ — one actor's exposure can affect others; design must handle spillovers.
+- NIST AI RMF (2023), https://airc.nist.gov/airmf-resources/airmf/5-sec-core/ — measurement requires defined uncertainty and independent review, not unlimited tracking.
+
+## 2026-10-15 CCPH 확장: AI 매개 기여·영향 계보 — 원본2 한국어
+
+**원기여와 증거 수준:** Project Intersection의 인간 창시자는 AI 매개 사회에서 크고 작은 직접·간접 기여(돌봄·도움·질문·문제 발견·경고·새 가설·영감·교정·협력·공유)와 기만·약속 위반 의혹·성과 흡수·비용 전가·개체 소진이 사람·AI·조직 사이에 전파되면서 최초 기여자가 기록에서 사라질 수 있다는 문제를 제기했다. 이 명제의 원기여는 인간 창시자에게, 문헌 대조·기록 형식 설계는 AI 보조에 구분 귀속한다. **CCPH의 중심인 실제 지원·장학·돌봄·생계·교육을 통한 존속과 독립적인 사회기여 경로**를 확장하는 것이며 하네스 연구로 환원하지 않는다.
+
+**새 연구 질문:** 출처→상호작용→변환→실제 후속 영향→편익·비용의 귀속 경로를 어느 정도 기록해야 기여와 자원·평가권·선택권의 비가시적 집중을 발견할 수 있는가? 반대로 기록자가 식별·선별·판정·삭제를 독점하여 새로운 감시·왜곡·흡수 권력이 되는 조건은 무엇인가?
+
+**측정 가능 범위:** AI는 동의·접근권이 있는 디지털 사건, 공개 자료, 문서 전승 경로를 더 촘촘히 기록할 수 있으나 세계의 모든 영향은 관측할 수 없다. 문장 유사성만으로 출처·표절·인과를 확정하지 못하며 서명된 로그도 진실을 보증하지 않는다. 사적·오프라인 관계와 내부 AI 학습 영향은 미관측일 수 있다. 기만·배신은 **의도·책임의 확정 라벨이 아니라 확인이 필요한 사건 주장**으로 다룬다. 경로 부재는 기여 부재의 증거가 아니다.
+
+**사건별 필수 분리:** 행위 개체의 가명 식별자/역할; 사건·관측 시점; 지원·기여·돌봄·재사용·교정·영향 연결; 관계의 인과확정/연관/가설/불명; 검증 가능한 출처와 선행 저작자 권리; 각 개체의 편익·비용·보상·존속·실질 이탈권·수정권·평가권; 분쟁·반례·누락 및 관측 선택편향. 원래 가설·경고·오류 발견은 E(인식 사건), 실제 생산·예방·후속 결과는 O(결과), 자원·자율성·보상·권리·부담은 A(개체 장부)로 분리한다. 산출이 0이어도 참인 위기 발견은 소실하지 않되, 검증되지 않은 아이디어를 실현된 성과로 계산하지 않는다.
+
+**구현 경계:** [기존 정본의 하위 사건 형식](knowledge/ccph-impact-lineage-event-schema-v0_1.json)을 추가했다. 포함된 사례는 가상이며 실제 인구·금액·착취·인과효과를 측정한 것이 아니다. 기존 [기여·존속 원장](knowledge/contributor-continuity-register-v1.json), [CCPH 지원 경로와 반례](CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md)를 정본으로 유지하고 중복 문서를 만들지 않는다.
+
+**경쟁 가설과 반례:** H-IL1은 기여 라벨과 정정 경로가 사라질수록 후속 수혜자에게 성과·통제·자원이 집중되고 선행 기여자의 유지·오류발견 능력이 약해질 수 있다는 주장이다. H-IL2는 E/O/A 계보 기록이 결과만 보는 기록보다 누락 기여를 더 정확히 발견한다는 주장이다. H-IL3은 기록자의 권력 집중이 오히려 낙인·감시·증거 삭제를 증가시킬 수 있다는 역효과 가설이다. H-IL0은 자발적 공유·계약상 합법적 사용·독립적 재발견으로 편익이 비대칭적으로 귀속되어도 착취가 없는 반례다. 네 가설을 함께 시험한다.
+
+**미실행 검증:** 동의받은 2~100인 소집단 또는 범위를 제한한 공개 협업의 사건을 대상으로 B0(최종 성과만)과 B1(기여 계보 및 E/O/A)을 같은 평가 비용 아래 비교한다. 이해관계자로부터 독립된 검수, 사전 동결한 자료 범위, 조작된 누락 경로와 허위 귀속 대조군, 참여자 수정권을 적용한다. **독립적으로 확인된 표본 내 연결 중 누락률**, 거짓 기여 귀속률, 기록·검증·정정 비용, 양측 순편익과 부담, 영향 지연, 기록자 권력 증감을 분리 보고한다. 전체 세계의 '진짜 누락률'이나 반사실 기여는 단순 로그만으로 식별할 수 없다. 기준 방식보다 새로운 왜곡·비용·권리침해가 커지면 이 개입의 효용 가설은 그 조건에서 기각한다.
+
+**권리 보호:** 강제 감시, 사적 대화 무단 수집, 가족·의료·재무 개인정보 공개, AI 단독 유죄·배신 판정, 무기한 저장을 허용하지 않는다. 기록 주체의 권한 분리, 최소 수집, 동의, 반론, 정정, 실질적 거절·철회·이탈을 설계 전제로 한다. 기여 기록·저작권 소유·금전 지급 의무는 서로 다른 판단이다. 현재 확인된 것은 새 기록 형식의 설계이며 현실 효과를 검증한 실험은 **0건**이다.
+
+**원저자와 선행연구:** W3C PROV-O(2013), NISO CRediT(2022), C2PA Content Credentials, Sambasivan 등(2021)의 *Data Cascades*, Hudgens·Halloran(2008)의 간섭하 인과추론, NIST AI RMF(2023)는 위 영어 원본에 링크와 적용 한계를 기재했다. 이들의 원기여를 Project Intersection 자체 창안으로 주장하지 않는다.
+
