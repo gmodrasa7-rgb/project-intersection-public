@@ -328,6 +328,11 @@
     "e008_english_preregistration": "experiments/e008/README_EN.md",
     "e008_korean_preregistration": "experiments/e008/README_KO.md",
     "e008_main_policy_result": "NOT_EXECUTED",
-    "e007_result_scope": "PROJECT_RERUN_SYNTHETIC_TIMING_72_36_17_WITH_IMPLEMENTATION_ORDER_LIMIT"
+    "e007_result_scope": "PROJECT_RERUN_SYNTHETIC_TIMING_72_36_17_WITH_IMPLEMENTATION_ORDER_LIMIT",
+    "computed_claim_source_contract": "knowledge/claim-source-lock.json",
+    "computed_claim_source_validator": "tools/audit_claim_source_lock.py",
+    "machine_to_english_korean_validation_scope": "BOUNDED_NUMERIC_AND_EVIDENCE_STATUS_ONLY",
+    "e010_model_parameter_x": "fraction_of_immediate_extraction_gain_blocked_not_suppression_of_agent_exit",
+    "source_science_status": "PROJECT_AUTHORED_SYNTHETIC_NOT_EXTERNAL_VALIDATION"
   }
 }
