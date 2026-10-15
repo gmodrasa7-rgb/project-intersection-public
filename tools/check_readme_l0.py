@@ -7,7 +7,7 @@ KO = "## 원본2 — 한국어 | 창시 목적 전문 대응본"
 PAIRS = (
     ("**Ultimate research purpose:**", "**최종 연구 목적:**"),
     ("**ICM — Intersection of Minimum Self-Interest:**", "**ICM — 최소 사심 교집합:**"),
-    ("**RGBM — Recursively Growing Benefit Model:**", "**RGBM — 장기 상호 발전 모형:**"),
+    ("**RGBM — Recursively Growing Benefit Model:**", "**RGBM — 장기 상호발전 모형:**"),
     ("**Non-domination and minimal rules:**", "**비지배와 최소 공통규칙:**"),
     ("**Subordinate studies and implementation hypotheses:**", "**하위 연구와 구현 가설:**"),
     ("**Evidence and contribution boundary:**", "**증거·기여 경계:**"),
