@@ -28,6 +28,8 @@ This is the **English-only reading route**, paired with [Original 2: Korean](STA
 
 **Decision worth making:** Whether a **small, independently falsifiable pilot** merits support, not whether a large archive itself proves the research claims. The next discriminating check is an independent reimplementation or held-out comparison against a simple baseline, preserving negative outcomes. Funding eligibility and scientific validity require separate judgments.
 
+**One concrete external task:** [E009 independent decision gate](../research/E009_INDEPENDENT_DECISION_GATE_EN.md) — rerun the negative result, then test PROJECT_V3 against simple baselines under independently fixed cases and consequence rules. **No outside result has been obtained yet.**
+
 <!-- PI-SECTION: levels -->
 ## 2. Three reading levels
 

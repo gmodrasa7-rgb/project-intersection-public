@@ -256,6 +256,21 @@
       "known_divergences": [
         "Both editions emphasize 16/16 underdetermined for five-baseline main experiment, not a completed result."
       ]
+    },
+    {
+      "id": "PI-REVIEW-E009-INDEPENDENT-DECISION",
+      "original_1_english": "research/E009_INDEPENDENT_DECISION_GATE_EN.md",
+      "original_2_korean": "research/E009_INDEPENDENT_DECISION_GATE_KO.md",
+      "kind": "externally_falsifiable_review_task_not_observed_external_result",
+      "structural_pair_present": true,
+      "meaning_review_status": "NOT_INDEPENDENTLY_VERIFIED",
+      "original_conception_language": "NOT_ADJUDICATED_AND_NOT_REASSIGNED_BY_PUBLICATION_ORDER",
+      "independent_review_receipt": null,
+      "one_sided_edit_exception": null,
+      "known_divergences": [
+        "The two editions require comparison by independent reviewers before semantic parity can be certified.",
+        "The original E009 negative result is retained; this new pair is an open reviewer challenge, not a completed experiment."
+      ]
     }
   ],
   "legacy_priority_unresolved": [
@@ -294,13 +309,13 @@
     }
   ],
   "metrics": {
-    "markdown_total": 144,
+    "markdown_total": 146,
     "filename_classes": {
       "UNMARKED_LANGUAGE_UNVERIFIED": 42,
       "LEGACY_MIXED_READER_ENTRY": 2,
-      "KO_SUFFIX_UNVERIFIED": 61,
+      "KO_SUFFIX_UNVERIFIED": 62,
       "ORDERED_BILINGUAL_FOUNDER_OR_GOVERNANCE": 2,
-      "EN_SUFFIX_UNVERIFIED": 16,
+      "EN_SUFFIX_UNVERIFIED": 17,
       "COMBINED_NAMING_UNVERIFIED": 21
     },
     "meaning_verified_pairs": 0,
@@ -1046,6 +1061,18 @@
       "content_equivalence": "NOT_REVIEWED"
     },
     {
+      "path": "research/E009_INDEPENDENT_DECISION_GATE_EN.md",
+      "filename_class": "EN_SUFFIX_UNVERIFIED",
+      "counterpart_path": "research/E009_INDEPENDENT_DECISION_GATE_KO.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "research/E009_INDEPENDENT_DECISION_GATE_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": "research/E009_INDEPENDENT_DECISION_GATE_EN.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
       "path": "research/EPISTEMIC_PATHWAY_COMMUNICATION_PRIOR_ART_2026-10-13_EN_KO.md",
       "filename_class": "COMBINED_NAMING_UNVERIFIED",
       "counterpart_path": null,
@@ -1329,6 +1356,17 @@
         "experiments/e008/README_KO.md"
       ],
       "bounds": "No new benchmarks run; no scientific certification of translation; historical sources unchanged."
+    },
+    {
+      "as_of": "2026-10-15",
+      "status": "E009_EXTERNAL_DECISION_CHALLENGE_REGISTERED_NO_EXTERNAL_RESULT",
+      "new_documents": [
+        "research/E009_INDEPENDENT_DECISION_GATE_EN.md",
+        "research/E009_INDEPENDENT_DECISION_GATE_KO.md"
+      ],
+      "meaning_review": "NOT_INDEPENDENTLY_VERIFIED",
+      "method_scope": "One question, two comparison baselines, project-code rerun distinct from independent held-out outcome design; original E009 negative verdict retained",
+      "ci_status": "NOT_INFERRED_FROM_REGISTRY"
     }
   ],
   "path_layout_policy": "Keep the project root entry-only; bilingual full research editions live in existing research/ and their original historical combined documents retain stable root URLs."
