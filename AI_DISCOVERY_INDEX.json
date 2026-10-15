@@ -147,7 +147,12 @@
     "agentic_semantic_transformation_original1_en": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/research/AGENTIC_SEMANTIC_TRANSFORMATION_FIDELITY_2026-10-13_EN.md",
     "agentic_semantic_transformation_original2_ko": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/research/AGENTIC_SEMANTIC_TRANSFORMATION_FIDELITY_2026-10-13_KO.md",
     "gpt_double_standard_causal_audit": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/experiments/gpt_double_standard_20261014/REPORT_EN_KO.md",
-    "gpt_double_standard_free_response_probe": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/experiments/gpt_double_standard_20261014/origin_salience_probe.js"
+    "gpt_double_standard_free_response_probe": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/experiments/gpt_double_standard_20261014/origin_salience_probe.js",
+    "human_english_contents": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/navigation/RESEARCH_TOC_EN.md",
+    "human_korean_contents": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/navigation/RESEARCH_TOC_KO.md",
+    "independent_review_english": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/navigation/AI_REVIEW_EN.md",
+    "independent_review_korean": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/navigation/AI_REVIEW_KO.md",
+    "language_edition_registry": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/knowledge/language-edition-register.json"
   },
   "research": {
     "area": [
@@ -296,6 +301,15 @@
     "original_2_korean": "navigation/START_HERE_KO.md",
     "edition_semantics": "Original 1/2 denote reading and publication order, not originator language.",
     "validation_scope": "Navigation guide structure only; historical linked research may be Korean-only or mixed; no semantic translation certification.",
-    "legacy_translation_status": "incomplete"
+    "legacy_translation_status": "incomplete",
+    "english_contents": "navigation/RESEARCH_TOC_EN.md",
+    "korean_contents": "navigation/RESEARCH_TOC_KO.md",
+    "english_independent_review": "navigation/AI_REVIEW_EN.md",
+    "korean_independent_review": "navigation/AI_REVIEW_KO.md",
+    "translation_and_revision_register": "knowledge/language-edition-register.json",
+    "historic_bilingual_contents": "RESEARCH_TOC.md",
+    "historic_bilingual_ai_review": "AI_REVIEW_START_HERE.md",
+    "semantic_translation_certification": "NOT_DONE",
+    "editorial_repair_cost_policy": "reuse project files and Git provenance; do not require recurring founder reconstruction"
   }
 }
