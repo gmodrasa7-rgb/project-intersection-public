@@ -30,10 +30,14 @@
 ## 타당성 보강 — 개별 정책·대안집합·실제 역할반전 구별
 
 - **공집합 오판 방지:** `floor_exit_gate(case)`는 개별 후보 정책의 생활·이탈 하한이라는 필요조건만 검증한다. 반환값은 `FLOOR_EXIT_PASS` 또는 `FLOOR_EXIT_FAIL`이며, 정책 하나가 탈락했다고 전체 상호수용 가능 집합이 공집합인 것은 아니다.
-- `candidate_set_status(candidates, exhaustive=True)`는 **후보가 모두 필요조건에 실패하고 대안집합의 완전성이 독립적으로 확인된 경우**에만 `NO_MUTUALLY_ACCEPTABLE_SET`을 반환할 수 있다. `exhaustive=True`는 호출자의 주장일 뿐 코드가 완전성을 인증하지 않는다. 그렇지 않으면 `UNRESOLVED_ACTION_COVERAGE`를 반환하며, 생존 후보가 있다고 MAK++ 통과가 입증된 것도 아니다.
+- `candidate_set_status(candidates, exhaustive=True)`는 **제공된 후보 전부가 필요조건에 실패한 경우** `CONDITIONAL_EMPTY_IF_SCOPE_COMPLETE`을 반환한다. `exhaustive=True`는 호출자의 주장일 뿐 대안 전체를 관측했다는 독립 증거가 아니다. 목록 밖에 적합한 대안이 존재하면 공집합 추론은 무효다. 범위가 미확정이면 `UNRESOLVED_ACTION_COVERAGE`이며, 생존 후보가 있어도 MAK++ 전체 통과는 미입증이다. 조건부 결과를 확정적 `NO_MUTUALLY_ACCEPTABLE_SET`으로 자동 승격하지 않는다.
 - 96개 조건의 PT/XG 좌표 전체를 사전 선언한 격자와 일치시키도록 검증한다. 조건 수를 보존하며 PT값을 무단 교체하는 변조를 거부한다.
 - `actor_fixed_role_reversals`는 A·B 개체의 원래 PT·XG를 보존하고 억제자·대상 위치를 바꾸는 **48개 대응 쌍**을 생성한다. 결과 동일성을 강제하지 않으며 상위 원칙의 일관성을 입증하지 않는다. 이름 교환만으로 실제 역할반전 통과라고 판단할 수 없다.
 - 세계별 합성 보수식은 부호 대조군을 의도적으로 내장한다. 회귀검사 통과는 측정체계 작동만 보여주며 존속 보장 가설의 경험적 지지는 아니다.
+
+### 대안집합 완전성은 관측이 아니라 검증 대상이다
+
+검사한 정책 목록은 가능한 전체 대안과 같다는 보장이 없다. `exhaustive=True`는 사용자가 전달한 선언일 뿐 누락된 대안에 대한 독립 검증이 아니다. 따라서 `CONDITIONAL_EMPTY_IF_SCOPE_COMPLETE`은 **대안집합이 완전하다는 조건하의 결론**이지 보편적 불가능성을 확증하지 않는다. 이 구별은 [W3C OWL 2의 열린 세계 가정](https://www.w3.org/TR/owl-primer/) 및 [Manski(2005)의 부분 식별과 추가 가정 구분](https://doi.org/10.1016/j.ijar.2004.10.006)과 방법론적으로 연결된다. 해당 선행연구를 프로젝트의 독자적 실증증거로 간주하지 않는다.
 
 ### 네 가지 존속 보장 배치에서 생활·이탈 필요조건 동시 표시
 
