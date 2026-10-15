@@ -34,7 +34,7 @@ This is the **English-only reading route**, paired with [Original 2: Korean](STA
 | Level | Question | Sources |
 | --- | --- | --- |
 | 1 — Discover | What is the question and where should I begin? | [Founding statement](../README.md), [research overview](../research/RESEARCH_OVERVIEW_EN.md), [English AI review](AI_REVIEW_EN.md) |
-| 2 — Understand and audit | Which claims, sources, limitations, failures and rights are recorded? | [Evidence index](../research/PUBLIC_EVIDENCE_INDEX_EN.md), [research contents](../RESEARCH_TOC.md), [status policy](../research/RESEARCH_STATUS_POLICY_EN.md), [review packet](../research/PUBLIC_REVIEW_PACKET_EN.md) |
+| 2 — Understand and audit | Which claims, sources, limitations, failures and rights are recorded? | [Evidence index](../research/PUBLIC_EVIDENCE_INDEX_EN.md), [English research contents](RESEARCH_TOC_EN.md), [status policy](../research/RESEARCH_STATUS_POLICY_EN.md), [review packet](../research/PUBLIC_REVIEW_PACKET_EN.md) |
 | 3 — Inspect artifacts | What can be rerun, contradicted or corrected? | [Experiments](../experiments/), [research](../research/), [prior art](../prior-art/), [knowledge](../knowledge/README.md), [governance](../governance/) |
 
 These are **reading routes**, not an evidence ranking or new physical hierarchy.
