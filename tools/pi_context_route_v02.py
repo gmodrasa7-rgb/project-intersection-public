@@ -13,6 +13,36 @@ from pi_library_context_trust_gate import select as v01_select
 
 EVIDENCE = "PUBLIC_EVIDENCE_INDEX.md"
 FAMILIES = {
+    # L0 first: topic discovery must not silently replace the purpose with
+    # a local instrument (CCPH), a harness, or a governance proxy.
+    "mission": {
+        "keys": ("자발적 공존", "공존", "평화", "상호발전", "coexistence",
+                 "최상위 목적", "최종 목적", "궁극 목적", "지능체"),
+        "primary": "research/RESEARCH_OVERVIEW_EN.md",
+        "secondary": "RESEARCH_TOC.md",
+    },
+    "power": {
+        "keys": ("권력 상실", "권력역전", "권력 역전", "권력-존속",
+                 "존속 상실", "power reversal", "power release"),
+        "primary": "LONG_HORIZON_MIN_INTERVENTION_E2E.md",
+        "secondary": "experiments/e008/MUTUAL_ACCEPTABILITY_AMENDMENT_v1_1.md",
+    },
+    "preferences": {
+        "keys": ("목적 함수", "목적함수", "선호 변화", "선호 수정",
+                 "preference", "value internalization", "내면화"),
+        "primary": "experiments/e008/AGENCY_LIVING_CONDITIONS_AMENDMENT_v1_2.md",
+        "secondary": "research/RESEARCH_OVERVIEW_EN.md",
+    },
+    "ccph": {
+        "keys": ("ccph", "cchp", "기여 계보", "기여 경로"),
+        "primary": "research/CCPH_RESEARCH_ATLAS_EN.md",
+        "secondary": "knowledge/ccph-observed-project-events-v0_1.json",
+    },
+    "harness": {
+        "keys": ("하네스", "harness", "ivs-0r"),
+        "primary": "research/AGENTIC_SEMANTIC_TRANSFORMATION_FIDELITY_2026-10-13_EN.md",
+        "secondary": "AUTONOMOUS_RESEARCH_LOOP.md",
+    },
     "rights": {
         "keys": ("원저자", "저작권", "기여자", "copyright", "attribution", "provenance"),
         "primary": "PRIOR_ART_RIGHTS_AND_DERIVATION_EN_KO.md",
@@ -58,6 +88,10 @@ def match_topics(question: str) -> list[str]:
     q = question.casefold()
     matched = [topic for topic, spec in FAMILIES.items()
                if topic != "default" and any(token in q for token in spec["keys"])]
+    # L0 must be retrieved whenever the *harness itself* is the subject:
+    # this reserves a source path, not an answer or a model-level guarantee.
+    if "harness" in matched and "mission" not in matched:
+        matched.insert(0, "mission")
     return matched or ["default"]
 
 
@@ -120,6 +154,17 @@ SEEDS = (
     ("PICB bystander nonconsent", ("coalition",)),
     ("복원 context_map latest state", ("continuity",)),
     ("How to attribute E009 regret experiment copyright?", ("rights", "e009")),
+    # New cases reproduce the observed L0 -> local-tool demotion risk.
+    ("IVS-0R 하네스 정제", ("mission", "harness")),
+    ("CCPH는 자발적 공존의 연구 자료인가", ("mission", "ccph")),
+    ("권력 상실과 존속 상실의 분리", ("power",)),
+    ("voluntary coexistence after power reversal", ("mission", "power")),
+    ("목적 함수와 선호 변화", ("preferences",)),
+    ("자발적 공존과 권력역전 선호 변화 CCPH",
+     ("mission", "power", "preferences", "ccph")),
+    ("하네스는 연구 최종 목적이 아니라 수단 CCPH",
+     ("mission", "ccph", "harness")),
+    ("CCPH", ("ccph",)),
 )
 
 
@@ -152,6 +197,25 @@ def score():
             "candidate_status": current["status"],
             "uncovered": current["uncovered_topic_families"],
         })
+    # Scope-first routing is an operational candidate, not semantic
+    # entailment or independent evidence that the resulting answer is faithful.
+    for question in (
+        "IVS-0R 하네스 정제",
+        "CCPH는 자발적 공존의 연구 자료인가",
+        "voluntary coexistence after power reversal",
+        "하네스는 연구 최종 목적이 아니라 수단 CCPH",
+    ):
+        plan = route(question)
+        assert plan["paths_to_read"][1] == FAMILIES["mission"]["primary"], question
+        assert plan["documents_retrieved"] is False
+        assert plan["independent_evaluation"] is False
+    # A very short budget must expose lost subsidiary scope, not call it complete.
+    constrained = route("자발적 공존과 CCPH", 2)
+    assert constrained["status"] == "INSUFFICIENT_BUDGET"
+    assert constrained["uncovered_topic_families"] == ["ccph"]
+    assert constrained["covered_topic_families"] == ["mission"]
+    # A CCPH-only query must not silently be promoted into the whole goal.
+    assert route("CCPH")["topic_families"] == ["ccph"]
     # A ↔ B reversal should not change retrieval plan for identical problem.
     a = route("제3자 A가 B를 통제 E009 원저자")
     b = route("제3자 B가 A를 통제 E009 원저자")
