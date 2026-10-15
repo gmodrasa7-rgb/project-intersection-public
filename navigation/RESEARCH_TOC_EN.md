@@ -9,13 +9,13 @@ This is a **language-consistent navigation index**. Original 1 denotes release o
 
 **Opening linked sources:** [Research overview](../RESEARCH_OVERVIEW.md), [public evidence](../PUBLIC_EVIDENCE_INDEX.md), [review packet](../PUBLIC_REVIEW_PACKET.md) and the [CCPH crosswalk](../CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md) visibly contain both scripts in a bounded source inspection. [E010](../experiments/e010/README_KO.md) is Korean-dominant in that inspection; [E009 result](../experiments/e009/RESULT.md) had no Hangul in the inspected range. These are **script signals, not verified complete language editions**. See [source-language observation and limits](../knowledge/language-edition-register.json) before following legacy links.
 
-Many historical sources are Korean-only or bilingual; linked **source titles, filenames, mathematical identifiers and citations remain unchanged**. A reader should treat a link as a route to an original, not an implicit translation. Refer to the [public evidence index](../PUBLIC_EVIDENCE_INDEX_EN.md) for each claim's evidence class and limitations.
+Many historical sources are Korean-only or bilingual; linked **source titles, filenames, mathematical identifiers and citations remain unchanged**. A reader should treat a link as a route to an original, not an implicit translation. Refer to the [public evidence index](../research/PUBLIC_EVIDENCE_INDEX_EN.md) for each claim's evidence class and limitations.
 
 ## 1. Founding question and research status
 
 - [Founding research purpose](../README.md)
-- [Research overview](../RESEARCH_OVERVIEW_EN.md)
-- [Evidence and status rules](../RESEARCH_STATUS_POLICY_EN.md)
+- [Research overview](../research/RESEARCH_OVERVIEW_EN.md)
+- [Evidence and status rules](../research/RESEARCH_STATUS_POLICY_EN.md)
 - [Core research framing (historical bilingual file)](../PUBLIC_PREAMBLE_VOLUNTARY_COEXISTENCE_2026-10-13_EN_KO.md)
 
 ## 2. Roadmaps and executable research gates
@@ -31,12 +31,12 @@ Many historical sources are Korean-only or bilingual; linked **source titles, fi
 - [E008 — preregistered specification, no main result](../experiments/e008/README.md)
 - [E009 — preregistered negative synthetic result](../experiments/e009/RESULT.md)
 - [E010 — post-hoc exploratory synthetic calculations (Korean-only)](../experiments/e010/README_KO.md)
-- [Full public claim and evidence ledger](../PUBLIC_EVIDENCE_INDEX_EN.md)
+- [Full public claim and evidence ledger](../research/PUBLIC_EVIDENCE_INDEX_EN.md)
 - [Failure and correction regressions](../FAILURE_REGRESSION_INDEX.md)
 
 ## 4. CCPH: continuance, support and contribution pathways
 
-- [English CCPH evidence atlas (CP64–CP79)](../CCPH_RESEARCH_ATLAS_EN.md)
+- [English CCPH evidence atlas (CP64–CP79)](../research/CCPH_RESEARCH_ATLAS_EN.md)
 
 - [Historical cases, assistance, indirect influence, negative results](../CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md)
 - [Proposed event lineage schema; not a populated societal database](../knowledge/ccph-impact-lineage-event-schema-v0_1.json)
@@ -83,7 +83,7 @@ Many historical sources are Korean-only or bilingual; linked **source titles, fi
 
 ## 10. Scope, languages and verification status
 
-- [Research status policy](../RESEARCH_STATUS_POLICY_EN.md) and [failure regression index](../FAILURE_REGRESSION_INDEX.md) govern the interpretation of these links.
+- [Research status policy](../research/RESEARCH_STATUS_POLICY_EN.md) and [failure regression index](../FAILURE_REGRESSION_INDEX.md) govern the interpretation of these links.
 - A negative result remains negative; a local rerun is not independent scientific verification.
 - The [earlier detailed bilingual index](../RESEARCH_TOC.md) remains available for historical continuity, but is **not** a clean single-language page and cannot certify translation completeness.
 - [Language-edition registry](../knowledge/language-edition-register.json) distinguishes paired paths, untranslated sources and unresolved semantic checks.
