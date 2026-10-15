@@ -34,7 +34,7 @@
 | 단계 | 확인할 질문 | 원자료 |
 | --- | --- | --- |
 | 1 — 탐색 | 연구 질문은 무엇이고 어디서 시작하는가? | [창시 목적](../README.md), [연구 개요](../research/RESEARCH_OVERVIEW_KO.md), [한국어 외부 AI 검토 안내](AI_REVIEW_KO.md) |
-| 2 — 이해와 감사 | 주장·출처·한계·실패·권리는 어디에 기록되었는가? | [증거 색인](../research/PUBLIC_EVIDENCE_INDEX_KO.md), [전체 목차](../RESEARCH_TOC.md), [증거상태 기준](../research/RESEARCH_STATUS_POLICY_KO.md), [공개 검토 자료](../research/PUBLIC_REVIEW_PACKET_KO.md) |
+| 2 — 이해와 감사 | 주장·출처·한계·실패·권리는 어디에 기록되었는가? | [증거 색인](../research/PUBLIC_EVIDENCE_INDEX_KO.md), [한국어 전체 목차](RESEARCH_TOC_KO.md), [증거상태 기준](../research/RESEARCH_STATUS_POLICY_KO.md), [공개 검토 자료](../research/PUBLIC_REVIEW_PACKET_KO.md) |
 | 3 — 원자료 검증 | 무엇을 재실행·반증·수정할 수 있는가? | [실험](../experiments/), [연구](../research/), [선행연구](../prior-art/), [지식 자료실](../knowledge/README.md), [거버넌스](../governance/) |
 
 세 단계는 **독서·검증 경로**이며 증거등급이나 실제 폴더 이동을 뜻하지 않는다.
