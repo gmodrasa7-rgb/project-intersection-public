@@ -1,6 +1,8 @@
 # CCPH-01 — Independent Contribution Detection Pilot (v0.1)
 # CCPH-01 — 독립 기여·오류 탐지 검증 파일럿
 
+**Scope precedence (2026-10-15) / 중심 연구와 시험기의 구별:** CCPH is **not this pilot or an AI evaluation harness**. Its primary founder-specified research addresses real people whose continuance, learning, scientific opportunity and independent social contributions are enabled by grants (such as BlueDot Impact), scholarships, poverty relief, care, health, housing, and mentoring. This frozen toy instrument checks only a narrow recording problem; neither its example count nor software checks represent actual support recipients, welfare effects or social emergence. See the [equal EN/KO primary support-pathways crosswalk, CP64–CP79](../../CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md#ccph-priority-correction-support-enabled-continuance-and-contribution--original-1-english-2026-10-15). / **CCPH는 하네스가 아니며**, 이 파일은 실제 연구지원·장학·돌봄으로 열린 개체의 사회기여를 관측하는 연구에 종속된 검사도구일 뿐이다.
+
 **Status: INSTRUMENT TESTED / AI COMPARISON NOT RUN / CCPH UNVALIDATED.** 2026-10-15.
 **Provenance:** The founder of Project Intersection identified the missing positive contribution outcome in PICB v1 and specified the research question; AI-assisted implementation constructed this bounded testing instrument. Upstream methods are credited below. This is **not** an independently validated causal study.
 
