@@ -55,3 +55,9 @@ More predecessors, authors and original rights: ../../CORE_AND_GAPS_PRIOR_ART_CR
 **실패기준·다음 검증:** 실제 경고의 참/거짓, 새로운 논리의 참·신규성, 영감의 인과, 대체자, 미래 기여, 누가 비용을 냈는지는 이 코드로 파악하지 못한다. 독립된 여러 2인조와 눈가림 검증자, 동일한 가상 위험/자원 조건에서 최종성과 전용·보고건수 전용·E/O/A 분리 평가의 실제 **정확도·오탐·논리검증·시간·검수비·참가자 유지비·거절권**을 대조해야 한다. 분리 평가가 오히려 검증비용, 오류, 권력편향, 무급 재검증을 늘리면 해당 우월성 가설은 기각한다. 생계·실제 건강·필수 자원을 박탈하는 실험은 금지한다.
 
 **결과 지위:** Project 자체가 사후 설계한 결정적 합성 검증기. 실제 CCPH 인과 효과·독립 재현·일반적 우월성·새 발견의 현실 비율·보상금액 **모두 미확정**. 기존 실험 결과는 불변.
+
+## Post-hoc CI failure preservation / 사후 CI 실패·복구 이력
+
+**Original defect observed:** [failed GitHub Actions run 38657698389](https://github.com/gmodrasa7-rgb/project-intersection-public/actions/runs/38657698389) passed the source's 121 consistency checks and adversarial role/unknown tests, but failed the subsequently added **receipt parity** test with KeyError for outcome_only_positive. The manually prepared RESULT.json recorded a different key (output_only_positive). This was **an actual documentation/result-schema mismatch**, not new evidence for or against CCPH. The mismatch could have been missed if only the original PASS count had been reported. The receipt was corrected in the next commit; subsequent full CI is the acceptance gate. Historical failure remains visible in GitHub Actions.
+
+**원인 및 경계:** [실패한 실행 #38657698389](https://github.com/gmodrasa7-rgb/project-intersection-public/actions/runs/38657698389)에서 코드 자체의 121개 내부검사는 통과했지만, 결과 영수증의 필드 명칭 오류(output_only_positive 대 outcome_only_positive)가 별도의 검증 단계에서 발견됐다. 정답·가설의 실패가 아니라 **기록 계보·결과 재현성 실패**다. 기록을 삭제하거나 PASS로 덮지 않고, 결과 필드를 수정한 뒤 전체 검사를 다시 통과해야 병합한다. 실제 CCPH 인과 검증과는 무관하다.
