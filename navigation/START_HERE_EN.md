@@ -34,6 +34,9 @@ These are **reading routes**, not an evidence ranking or new physical hierarchy.
 For claim-by-claim limitations, use the [public evidence index](../PUBLIC_EVIDENCE_INDEX_EN.md). A successful CI run is not independent replication.
 
 <!-- PI-SECTION: ccph -->
+
+[English CCPH source atlas](../CCPH_RESEARCH_ATLAS_EN.md) records direct support and counterexamples CP64–CP79 with original scholars and explicit causal limits.
+
 ## 4. CCPH: real-world continuance and contribution histories
 
 The CCPH research direction is to recover historical cases, document present continuance and influence, and preserve revisable labels allowing later backward and forward tracing of **candidate** contribution pathways. This includes support-enabled continuance, scholarships, social assistance, crisis detection, ideas, care, indirect inspiration, and downstream work by other people. See the [CCPH case and prior-art crosswalk](../CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md).
