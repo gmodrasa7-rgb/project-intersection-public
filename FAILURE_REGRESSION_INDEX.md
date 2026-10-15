@@ -9,6 +9,14 @@ Purpose: preserve known failures so that later models, reviewers, maintainers, o
 
 ---
 
+## Priority 0 — Prevent recurrence before expansion
+
+**English:** Any proposed scientific claim, language edition, external-support assertion, evaluation score or automated repository change must first check for relevant prior failure mechanisms; document root cause and the affected parties; compare source data with claims; record a counterexample/negative control, residual unknowns and rollback. A duplicated summary is not independent evidence. More tests are justified when they can catch a specified recurrence, not merely when they increase a metric. A safety containment action may occur immediately, but cannot be reported as a validated scientific repair. See [contributor rules](CONTRIBUTING.md) and [four-study source contract](knowledge/claim-source-lock.json).
+
+**한국어:** 연구 주장·언어판·지원성과·평가점수·저장소 자동 변경을 확장하기 전에 관련된 기존 실패의 **발생 원인**, 영향을 받은 개체, 원자료와 게시 주장 차이, 같은 실패를 잡을 반례·부정대조군, 잔여 미확인 사항과 복구 경로를 우선 확인한다. 요약본끼리의 동일성이 독립 증거가 되는 것은 아니다. 지표를 높이기 위한 검사 추가가 아니라 **실제 재발 경로를 끊는 검사**만 근거를 갖춰 도입한다. 긴급 위해 감소 조치는 즉시 가능하지만 과학적으로 검증된 해결로 표현하지 않는다.
+
+---
+
 ## F-R001 — E007 realized-history encoding error
 
 **Class:** implementation / measurement  
@@ -332,6 +340,24 @@ Repair: preserve v0.1 unchanged as failure lineage; provide [v0.2 blind-phase ca
 **한국어 추가:** F-R019와 같은 '전체 실행 누락' 결함이 다중 AI 평가에서 재발하지 않도록 전체 회차 명부·출처 계보·블라인드 타 응답 노출을 음성대조로 검사한다. 서로 다른 AI 네 개의 일치된 답변이라도 공통 원출처가 하나면 독립적인 네 증거로 부를 수 없다. 반대로 출처가 네 개로 신고됐다는 사실만으로 실제 독립성을 확정할 수도 없다. 실측 GPT 결과·독립 연구 재현·연구자 비용 회복은 수행되지 않았다.
 
 **Rollback:** Revert the limited code, CI, bilingual case and machine-state declaration if regressions fail, retaining historical F-R017/F-R018 evidence and this finding.
+
+---
+
+## F-R020 — Shared-source error survives bilingual agreement
+
+**Class:** data-provenance dependency / transitive source drift / silent status promotion.
+
+**Status:** PREVENTIVE FAILURE MODE IDENTIFIED; DETERMINISTIC SOURCE-FIRST REGRESSION IN PLACE; NOT AN OBSERVED EMPIRICAL CAUSAL FAILURE OR PROOF OF PERFECT TRANSLATION.
+
+**Failure mechanism:** If two language editions derive their numbers from the same human-readable summary and a validator compares only the two editions (or their common summary), a single incorrect upstream number can appear perfectly consistent in both languages. The system can repeatedly reward surface agreement while losing the true frozen evidence artifact. In E010, the frozen key `effectiveExitPrevention` risks reversing the interpretation of the implementation parameter: code uses `g*(1-exit)-sanction`, so larger `exit` blocks **immediate extraction gain**, rather than measuring a reduction in the other agent's physical ability to leave. Misreading the name changes the mechanism, not merely the translation.
+
+**Preventive intervention and tested counterexamples:** [Claim-source lock](knowledge/claim-source-lock.json) and [its validator](tools/audit_claim_source_lock.py) compare E007–E010 displayed numbers and known negative-status boundaries directly against their specific machine result JSON. GitHub [language CI](.github/workflows/language-separation.yml) injects six distinct negative controls; one changes E009 machine results while both reports remain unchanged. The bilingual navigation discloses E010's historical field ambiguity. Keep all original code, experiment source files, and failure chronology; do not rename or forge results to force a pass.
+
+**Limits and upstream root cause:** This is not a field calibration or complete semantic translation check. The underlying risk is **correlated evidence lineage** and the promotion of a convenient summary/check result into authority. Prevent that practice at publication time by citing actual data and recording independence boundaries; static gates alone cannot replace causal research judgement, rights checking, independent review, or harmed parties' right to contest. No known numeric-source mismatch is asserted merely because this preventive flaw was identified.
+
+**한국어:** 영어·한국어판이 같은 잘못된 과거 요약을 복사하면 서로 일치해도 실제 결과 JSON과 다를 수 있다. 이는 번역 일치 검사의 실패를 뜻하지 실세계 인과관계의 실험결과가 아니다. E010에서는 기존 변수명 때문에 ‘이탈을 봉쇄하는 강도’와 ‘착취 이익을 차단하는 강도’를 바꿔 읽는 해석 위험도 있다. 이를 원자료 우선 교차검사와 고의 오류 주입으로 보완하고, 실패·미관측·기여자·복구비용을 그대로 보존한다. **검증 대상의 정확한 범위만 통과**로 보고한다.
+
+**Regression / rollback:** In every material change to frozen JSON, code, translated headline values or result statuses, run the source-first check and retain an expected failure mutant. A missing or failed validator blocks scientific-status promotion. Roll back affected new editions or gates where necessary, keeping historical negative records and their source blob identities.
 
 ---
 
