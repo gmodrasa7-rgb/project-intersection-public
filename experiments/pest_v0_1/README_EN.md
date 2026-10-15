@@ -35,6 +35,12 @@ The original `XG_ALONE_INEFFECTIVE` threshold flag is **retained unchanged**. Wh
 - `actor_fixed_role_reversals` creates **48 actor-fixed reciprocal pairs**, swapping relative PT and XG when A and B exchange suppressor/target roles. It records those pairs; it does not assume equal outcomes or certify higher-order rule consistency. Simple A/B label symmetry alone is insufficient.
 - The world-specific payoff equations are synthetic and deliberately sign-selecting; tests prove only instrumentation behavior, not empirical support for either guarantee hypothesis.
 
+### Necessary-condition visibility across all four guarantee assignments
+
+The design-only `paired_contrasts()` now carries `floor_exit_screens` for **R1, R2, R3 and R4**, using the existing `floor_exit_gate()` and the same matched world/PT/actor cells. These screens are reported **separately** from suppression-incentive changes; neither screen passing nor a negative PSI contrast certifies MAK++ or real-world welfare.
+
+Adversarial software test: in the two A/B label-twin `survival_fear` cells at `PT_i=PT_j=0.75`, lower R1's post-treatment `floor_after` to 0.10, below the pre-existing minimum 0.50. R2 PSI is 0.24175 and R1 PSI is zero; the favorable contrast **must** co-appear with `R1_BOTH_PROTECTED=FLOOR_EXIT_FAIL` and `R2_NEITHER_PROTECTED=FLOOR_EXIT_PASS`. This is a **constructed negative control**, not evidence that a real existence guarantee causes livelihood loss. All other tests, historical experiment conclusions, and the `--execute` HOLD are unchanged.
+
 ## Execution gate
 
 These run **schema and adversarial smoke tests only**, not preregistered results:
