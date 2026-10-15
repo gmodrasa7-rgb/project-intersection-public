@@ -45,6 +45,23 @@ The design-only `paired_contrasts()` now carries `floor_exit_screens` for **R1, 
 
 Adversarial software test: in the two A/B label-twin `survival_fear` cells at `PT_i=PT_j=0.75`, lower R1's post-treatment `floor_after` to 0.10, below the pre-existing minimum 0.50. R2 PSI is 0.24175 and R1 PSI is zero; the favorable contrast **must** co-appear with `R1_BOTH_PROTECTED=FLOOR_EXIT_FAIL` and `R2_NEITHER_PROTECTED=FLOOR_EXIT_PASS`. This is a **constructed negative control**, not evidence that a real existence guarantee causes livelihood loss. All other tests, historical experiment conclusions, and the `--execute` HOLD are unchanged.
 
+### Independent prior-art comparator: commitment without containment (2026)
+
+**External evidence, not a PEST result:** [Lu Dong and Lingbo Huang (2026), *Curtailed ambition: Endogenous power shift and preventive war*, *Journal of Economic Behavior & Organization* 242, 107413](https://doi.org/10.1016/j.jebo.2026.107413) experimentally compare growth self-containment with binding future-payoff commitments that leave the power shift intact. They report that both can reduce preventive conflict but rising actors adopt self-containment less readily; declining actors sometimes pay for coercive containment instead of trusting voluntary restraint. Their additional survey informs perceived plausibility, **not actual cross-country causal effects**. Earlier [Abbink, Dong and Huang (2023)](https://doi.org/10.1016/j.geb.2023.08.018) tested preventive conflict with power shifts and commitment.
+
+**Material rival explanation:** Reduced preemptive suppression may arise from credible future benefit allocation **without a guarantee of the declining actor's physical/operational existence**, and without arresting the rising actor's development. This is different from the present PEST `XG_i/XG_j` intervention. Conversely, an offered but unenforceable promise might not reduce conflict. The 2026 experiment makes commitment enforceable **inside its bargaining game**; this assumption is not an observation of real-world enforceability.
+
+| Successor intervention or comparator | Manipulation to isolate | Must not be silently relabeled |
+| --- | --- | --- |
+| Existence assurance | Independently vary protection of each actor's continued existence | Binding future benefit transfer |
+| Credible future allocation | Guarantee a future distribution while leaving power growth unconstrained | Existence guarantee |
+| Voluntary containment | Rising actor chooses to restrict own development | Costless mutual cooperation |
+| Coercive containment | Incumbent forcibly restricts rival development, with cost to both | Voluntary consent or free security |
+
+**Discriminating successor test, not executed:** Independently manipulate existence assurance, enforceable allocation, and available growth-restraint options. Separate random *policy availability/assignment* from *actual adoption*; report both rather than interpreting self-selection as the treatment effect. Hold baseline stakes, power-shift timing and information comparable. Predeclare conflict/suppression, each actor's retained future options, payoff, effective exit, credibility/enforcement cost, and third-party loss; use the same measures under actor-fixed power reversal. Test whether XG adds incremental value after credible allocation is provided. If credible allocation alone performs as well, reject the claim that an XG-specific mechanism was identified.
+
+**Stop/lineage:** This is a proposed external-comparator design only; `pest.py` has no allocation, adoption, or coerced-containment treatment variables, and no data from the cited paper have been analyzed by this project here. The authors' [public replication-data link](https://lingbohuang.com/uploads/2026-preventive-war-endo-software-data.zip) was identified but **not fetched, inspected or rerun**. Do not import the paper's observed effects as synthetic PEST outputs, retrofit the 96-cell design, or promote this note to field validation.
+
 ## Execution gate
 
 These run **schema and adversarial smoke tests only**, not preregistered results:
