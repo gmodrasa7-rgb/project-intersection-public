@@ -282,6 +282,31 @@ material mutation 직전 최신 target SHA/ref를 다시 읽는다.
 
 복구 불가 시 기존 정본을 보존하고 다음 단일 checkpoint를 남긴다.
 
+### 9.1 Automated-write refusal and evidence-state contract — Original 1 English (2026-10-16)
+
+**Scope and origin.** October 14–16 scheduled research feedback reported GitHub write attempts rejected with `This tool call was blocked by OpenAI's safety checks.` This is a *reported host refusal*, not evidence that GitHub received or rejected an API request. At this revision, the repository's Section 9 listed API/network failures without a host-safety category. An enabled schedule, a run timestamp, an agent's intention, and even a newly created branch do not prove a substantive repository write.
+
+**Fail-closed classification.** Use `HOST_SAFETY_REFUSAL` separately from `AUTH_PERMISSION`, `CONFLICT_STALE_SHA`, `PATH_EXISTS`, `RATE_LIMIT`, `TOOL_NETWORK`, `INVALID_CONTENT` and `TEST_FAILURE`. Upon an explicit host safety refusal, stop the denied mutation. **Do not** relay the refused payload through another API, identity, GitHub Action, client or tool; do not split or reword it to evade the control. The refusal's underlying policy rationale is UNKNOWN without host evidence. Only a read-only check of the intended branch, file SHA/content, PR or main is appropriate to determine whether anything actually persisted. A harmless branch creation alone is not the proposed material delta.
+
+**Receipt states.** Record the intended path and pre-write blob SHA when known, action class, error verbatim if available, read-only remote observation, and status from `PLANNED / REFUSED_NOT_SAVED / WRITE_UNCONFIRMED / READBACK_CONFIRMED / TESTED_VERIFIED`. Treat `REFUSED_NOT_SAVED` as the default after an explicit refusal unless remote evidence independently proves an earlier write; do not label a write as successful based on a task summary, CI badge, scheduling status, or commit unrelated to the intended change. A scientific-result claim also requires independent scientific evidence: `TESTED_VERIFIED` here certifies only the stated repository transaction and scoped regressions.
+
+**Ownership and checkpoint.** The hourly critical-research task gathers criticism and independent sources **read-only**; the hourly public-repository task alone owns proposed GitHub mutations. A separately initiated review must read existing PRs and exact file contents before proposing a change, avoiding simultaneous writes, duplicate experiments, and counting same-lineage AI feedback as independent evidence. Keep an unsaved proposal within an authorized private receipt if feasible; do not publish it via a new route after host refusal. Preserve one next evidence-bearing checkpoint without requiring the human originator to reconstruct or repair the work.
+
+**Minimal regression cases (specification, not executed by this paragraph):** explicit host refusal → `REFUSED_NOT_SAVED`; GitHub write acknowledgment but mismatched remote bytes → `WRITE_UNCONFIRMED`; branch exists but intended file unmodified → no material write; draft-PR CI green without a main merge → no main-state claim; matching remote content and relevant checks → `TESTED_VERIFIED` for repository integrity **only**. A future executor should attach actual receipts for these cases; the existence of this rule is not proof that a runtime enforces it.
+
+### 9.1 예약작업 쓰기 거부·증거상태 계약 — 원본2 한국어 (2026-10-16)
+
+**범위와 출처.** 10월 14~16일 예약 연구 피드백에는 GitHub 쓰기 시도가 `This tool call was blocked by OpenAI's safety checks.`로 거부됐다는 보고가 있다. 이는 **호스트 안전검사 거부 보고**이며 GitHub가 API 요청을 실제로 받거나 거부했다는 증거는 아니다. 이 개정 전 9절에는 API·네트워크 실패만 분류돼 있고 호스트 안전검사 항목이 없었다. 예약 활성화, 실행 시각, 실행자의 의도, 새 브랜치 생성만으로 실질적 저장을 입증할 수 없다.
+
+**실패 시 차단 분류.** `HOST_SAFETY_REFUSAL`을 `AUTH_PERMISSION`, `CONFLICT_STALE_SHA`, `PATH_EXISTS`, `RATE_LIMIT`, `TOOL_NETWORK`, `INVALID_CONTENT`, `TEST_FAILURE`와 구분한다. 명시적인 호스트 안전 거부를 받으면 해당 변경을 중지한다. 거부된 내용을 다른 API·계정·GitHub Actions·클라이언트·도구로 다시 보내거나 분할·문구 변경으로 통제를 회피하지 않는다. 거부의 구체적 정책 원인은 호스트 근거가 없으면 UNKNOWN이다. 지정 브랜치·파일 SHA와 본문·PR·main을 **읽기 전용**으로 확인해 저장 여부를 판별한다. 브랜치만 생성됐으면 material delta를 저장한 것이 아니다.
+
+**실행 영수증 상태.** 가능한 경우 대상 경로와 쓰기 전 blob SHA, 작업 종류, 오류 원문, 원격 읽기 관측, 상태 `PLANNED / REFUSED_NOT_SAVED / WRITE_UNCONFIRMED / READBACK_CONFIRMED / TESTED_VERIFIED`를 남긴다. 명시적 거부 직후에는 이전 저장이 원격 증거로 별도 확인되지 않는 한 `REFUSED_NOT_SAVED`다. 예약 실행 보고·CI 배지·해당 변경과 무관한 커밋으로 저장 성공을 선언하지 않는다. `TESTED_VERIFIED`도 명시된 저장 트랜잭션과 범위 내 회귀검사만 인증할 뿐, 독립적인 과학적 타당성을 뜻하지 않는다.
+
+**담당 분리와 체크포인트.** 매시간 연구·비판 예약작업은 외부증거와 반례를 **읽기만** 하고, 공개자료실 예약작업만 GitHub 변경 담당이다. 별도 검토는 기존 PR 및 실제 파일을 재확인하고 동시 수정·중복 실험·동일 AI 계보 피드백의 독립 증거 오인을 방지한다. 미저장 제안은 허용된 비공개 작업 기록에만 남길 수 있으며 안전거부 이후 다른 경로로 공개하지 않는다. 인간 원기여자에게 설명·검수·복구를 다시 떠넘기지 않고 증거가 있는 다음 단일 체크포인트를 남긴다.
+
+**최소 회귀 사례(이 문단 자체는 실행 결과가 아닌 규격):** 호스트 안전 거부 → `REFUSED_NOT_SAVED`; GitHub 수신 확인 후 원격 본문 불일치 → `WRITE_UNCONFIRMED`; 브랜치만 있고 파일 미변경 → 실질 저장 없음; 초안 PR의 CI만 성공하고 main 미병합 → main 변경 주장 금지; 본문 대조와 관련 검사가 모두 통과 → 해당 저장 무결성에 한하여 `TESTED_VERIFIED`. 후속 실행자는 실제 검증 영수증을 남겨야 하며 규칙 문구 자체가 런타임 강제를 입증하지 않는다.
+
+
 ## 10. 상태파일
 
 `AUTONOMOUS_RESEARCH_STATE.json`은 진실의 상위 원장이 아니다.
