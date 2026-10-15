@@ -132,3 +132,25 @@ jobs:
           assert "strategic_reoptimization_after_E_damage_known" in d["not_claimed"]
           print("Fixed-strategy E-damage sensitivity PASS; NOT a full endogenous game or independent replication")
           PY
+
+      - name: Check conditional enforcement coordination models (post-hoc v0.2)
+        run: |
+          python experiments/coalition_externality_probe/credible_expost_equilibria_v02.py > /tmp/pi-expost-v02.json
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          d = json.loads(Path("/tmp/pi-expost-v02.json").read_text(encoding="utf-8"))
+          assert d["schema"] == "pi-credible-coalition-expost-conditional/v0.2"
+          assert d["self_checks_passed"] == 172
+          assert d["upstream_v01_unchanged"] is True
+          assert d["models"]["complementary"]["conditional_on_detection_pure_nash"] == ["NN", "SS"]
+          assert d["models"]["complementary"]["symmetric_interior_mixed_p_each"] == "2/3"
+          assert d["models"]["separable"]["conditional_on_detection_pure_nash"] == ["SS"]
+          assert d["models"]["separable"]["symmetric_interior_mixed_p_each"] is None
+          assert d["symmetric_detection"]["full_enforcement"]["target"] == "NONE"
+          assert d["symmetric_detection"]["complementary_mixed_enforcement"]["attacker_expected_gain"] == "14/5"
+          assert d["symmetric_detection"]["complementary_mixed_enforcement"]["effective_detection_B"] == "2/5"
+          assert d["target_displacement"]["full_enforcement_B_high_E_low"]["target"] == "E"
+          assert d["all_equilibria_must_be_considered"] is True
+          print("Conditional ex-post equilibrium countermodels PASS; original v0.1 remains frozen")
+          PY
