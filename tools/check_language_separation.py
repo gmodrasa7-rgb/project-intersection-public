@@ -85,9 +85,9 @@ def guide_errors(path: str, body: str, language: str) -> list[str]:
             errors.append(f"{path}:INSUFFICIENT_KOREAN_READING_CONTENT")
     links = set(MD_LINK.findall(body))
     required = REQUIRED + (
-        "../PUBLIC_EVIDENCE_INDEX_EN.md" if language == "en" else "../PUBLIC_EVIDENCE_INDEX_KO.md",
-        "../RESEARCH_OVERVIEW_EN.md" if language == "en" else "../RESEARCH_OVERVIEW_KO.md",
-        "../RESEARCH_STATUS_POLICY_EN.md" if language == "en" else "../RESEARCH_STATUS_POLICY_KO.md",
+        "../research/PUBLIC_EVIDENCE_INDEX_EN.md" if language == "en" else "../research/PUBLIC_EVIDENCE_INDEX_KO.md",
+        "../research/RESEARCH_OVERVIEW_EN.md" if language == "en" else "../research/RESEARCH_OVERVIEW_KO.md",
+        "../research/RESEARCH_STATUS_POLICY_EN.md" if language == "en" else "../research/RESEARCH_STATUS_POLICY_KO.md",
     )
     for mandatory in required:
         if mandatory not in links:
