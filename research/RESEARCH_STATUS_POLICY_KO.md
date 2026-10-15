@@ -1,7 +1,7 @@
 # 연구 상태 및 재평가 정책 — 원본2: 한국어
 
 <!-- PI-LANGUAGE: ko -->
-<!-- PI-MIRROR: RESEARCH_STATUS_POLICY_EN.md -->
+<!-- PI-MIRROR: research/RESEARCH_STATUS_POLICY_EN.md -->
 <!-- PI-SOURCE: RESEARCH_STATUS_POLICY.md -->
 
 **상태: 공개 연구 상태 해석 규칙.** [기존 영·한 통합 정책](../RESEARCH_STATUS_POLICY.md)의 한국어 절을 2026년 10월 15일 기준으로 추출한 독립 독서판이다. 역사 원문은 유지한다. 과학적 타당성·법률 권리·번역 의미의 독립 인증을 뜻하지 않는다.
