@@ -54,6 +54,8 @@ class ProposalGateTests(unittest.TestCase):
         b = gate.assess(self.base)
         self.assertEqual(a, b)
         self.assertEqual(len(a["benchmark_sha256"]), 64)
+        self.assertEqual(a["benchmark_sha256"], gate.PINNED_BENCHMARK_SHA256)
+        self.assertTrue(a["evaluation_executed"])
 
     def test_valid_options_only(self):
         for name in gate.STRATEGIES:
@@ -140,6 +142,40 @@ class ProposalGateTests(unittest.TestCase):
             path.write_text(json.dumps(data), encoding="utf-8")
             altered = gate.assess(self.base, cases_path=path)
         self.assertNotEqual(original, altered["benchmark_sha256"])
+        self.assertEqual(altered["decision"], "HOLD_BENCHMARK_DRIFT")
+        self.assertFalse(altered["evaluation_executed"])
+        self.assertNotIn("candidate_holdout", altered)
+        with TemporaryDirectory() as tmp:
+            path = Path(tmp) / "cases.json"
+            path.write_text(json.dumps(data), encoding="utf-8")
+            with self.assertRaisesRegex(ValueError, "BENCHMARK_DRIFT"):
+                gate.development_payload(path)
+
+    def test_label_poisoning_blocks_score_and_gpt_transport(self):
+        original = gate.retrieval.load()
+        corrupted = copy.deepcopy(original)
+        first = corrupted["development"][0]
+        first["expected"] = next(d["id"] for d in corrupted["documents"]
+                                 if d["id"] != first["expected"])
+        mock = FakeTransport(response_for(self.base))
+        with patch.object(gate.retrieval, "load", return_value=corrupted):
+            report = gate.assess(self.base)
+            self.assertEqual(report["decision"], "HOLD_BENCHMARK_DRIFT")
+            self.assertNotIn("baseline_development", report)
+            with self.assertRaisesRegex(ValueError, "BENCHMARK_DRIFT"):
+                gate.propose_with_gpt(model="gpt-test", api_key="test", transport=mock)
+        self.assertEqual(mock.requests, [])
+
+    def test_holdout_label_poisoning_is_detected(self):
+        original = gate.retrieval.load()
+        corrupted = copy.deepcopy(original)
+        first = corrupted["holdout"][0]
+        first["expected"] = next(d["id"] for d in corrupted["documents"]
+                                 if d["id"] != first["expected"])
+        with patch.object(gate.retrieval, "load", return_value=corrupted):
+            report = gate.assess(self.base)
+        self.assertEqual(report["decision"], "HOLD_BENCHMARK_DRIFT")
+        self.assertFalse(report["evaluation_executed"])
 
     def test_correct_old_cases_cannot_be_regressed_if_review_is_allowed(self):
         docs, dev, hold = gate.abstention.load_cases()
