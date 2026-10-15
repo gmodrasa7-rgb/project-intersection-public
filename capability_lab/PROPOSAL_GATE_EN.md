@@ -13,7 +13,7 @@ This extends the existing capability laboratory. Candidates only choose a lexica
 1. Accept JSON with exactly three keys: schema, strategy, threshold. Schema is pi-capability-proposal/v1.
 2. An explicit --gpt option makes at most one paid OpenAI Responses API request using only public synthetic documents and development examples. JSON proposals run offline.
 3. Compare the candidate to the frozen baseline on development and public holdout; record supported correctness, unsupported correctness, regression indices and dataset fingerprint.
-4. Require strict improvement on both splits and zero regressions of previously correct holdout answers.
+4. Require strict improvement on both splits and zero regressions of previously correct development or holdout answers.
 5. Even after passing those conditions, return REVIEW_SYNTHETIC_ONLY, never auto-merge or rewrite evaluation data.
 
 ## Reproduction
