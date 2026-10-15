@@ -125,6 +125,17 @@ class TestPEST(unittest.TestCase):
                          ("B", .75, .25, 1, 0))
         self.assertNotEqual((a.PT_i, a.PT_j), (b.PT_i, b.PT_j))
 
+    def test_actor_fixed_reversal_rejects_unmatched_pretreatment(self):
+        # Each local guarantee quadrant and A/B name twin remains valid.
+        # Earlier actor-fixed matching silently paired different growth inputs.
+        cases = tuple(replace(c, target_growth=.05)
+                      if (c.PT_i, c.PT_j) == (.25, .75) else c
+                      for c in self.cases)
+        self.assertEqual(validate_design(cases), 96)
+        with self.assertRaisesRegex(ValueError,
+                                    "actor-fixed reversal pretreatment drift: target_growth"):
+            actor_fixed_role_reversals(cases)
+
     def test_zero_baseline_floor_not_misreported_as_protection_failure(self):
         row = next(r for r in paired_contrasts(self.cases)
                    if r["world"] == "survival_fear"
