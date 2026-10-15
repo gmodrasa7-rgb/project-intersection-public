@@ -7,6 +7,8 @@
 
 This is a **language-consistent navigation index**. Original 1 denotes release order, **not** the research originator's working language or a grant of authorship. It is not an independent scientific assessment, a newly verified translation of legacy material, or a claim that all links lead to English content.
 
+**Opening linked sources:** [Research overview](../RESEARCH_OVERVIEW.md), [public evidence](../PUBLIC_EVIDENCE_INDEX.md), [review packet](../PUBLIC_REVIEW_PACKET.md) and the [CCPH crosswalk](../CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md) visibly contain both scripts in a bounded source inspection. [E010](../experiments/e010/README_KO.md) is Korean-dominant in that inspection; [E009 result](../experiments/e009/RESULT.md) had no Hangul in the inspected range. These are **script signals, not verified complete language editions**. See [source-language observation and limits](../knowledge/language-edition-register.json) before following legacy links.
+
 Many historical sources are Korean-only or bilingual; linked **source titles, filenames, mathematical identifiers and citations remain unchanged**. A reader should treat a link as a route to an original, not an implicit translation. Refer to the [public evidence index](../PUBLIC_EVIDENCE_INDEX.md) for each claim's evidence class and limitations.
 
 ## 1. Founding question and research status
