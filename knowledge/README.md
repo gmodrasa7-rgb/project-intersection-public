@@ -29,6 +29,9 @@ A relation such as `supported_by` therefore does **not** mean universal validati
 
 ## 2. Files
 
+**CCPH real events / 현실 연구 사건 (2026-10-15):** [CCPH observed Project Intersection event ledger](ccph-observed-project-events-v0_1.json) contains three *actual verified public GitHub research-process changes* (PRs #167–169), linked to the [event schema](ccph-impact-lineage-event-schema-v0_1.json) and [research execution loop](../AUTONOMOUS_RESEARCH_LOOP.md). These are not synthetic benchmarks; verified file changes are not verified scientific, welfare or causal improvements. / **CCPH 실제 관측 원장**은 공개 GitHub 병합 사건 3건을 최초 실증 기록으로 보존한다. 변경된 파일 수는 실제 활동량이지만 연구 발전의 순효과·사회적 편익이 아니다. 증거·기여자·후속 영향·미확인을 별도 기록하며 선택 표본의 전체 대표성을 주장하지 않는다.
+
+
 - `schema-v1.json` — machine-readable field contract.
 - `graph.json` — dated, incomplete public navigation subset. `meta.updated_at` is the last graph update, not the latest Git `main`. Missing entities or edges are UNKNOWN, not proof of absence.
 - `explorer.html` — dependency-free browser/search interface.
