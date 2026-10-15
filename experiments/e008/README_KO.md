@@ -89,3 +89,12 @@ E007은 자체 실행된 시점조건 합성 실험이고 E009는 자체 실행�
 본 비교를 수행하려면 다섯 정책이 공평하게 사용하는 행동·전이·보상값의 수치화와 비교규칙을 먼저 선언하고, 최초 범주형 자료와 사전 보완문서를 보존해야 한다. 독립적인 보류 조건에서 행동·역할반전·누락된 피해를 측정하고 결과를 본 뒤 채점 규칙을 바꾸면 안 된다. 실패·무차이·판정보류도 결과로 공개한다.
 
 **권리·기여 경계:** 인간 연구 창시자의 문제발견, 선행연구 원저자, AI 문서 보조, 실제 독립 평가를 분리한다. 번역판 생성이 새로운 과학적 발견이나 원저작자 변경을 의미하지 않는다. 역사적 [기존 원문](README.md)을 보존한다.
+
+
+## 8. 선택적 수치입력 검문 — 2026-10-16 (사전등록 후 추가)
+
+[completion_contract.py](completion_contract.py)는 **신규 입력 유효성 검사기**이지, 기존 16개 사례의 수치 완성본·동결된 다섯 정책 구현·E008 실험결과가 아니다. 기존 `scenario_matrix.json`, 보완문서, 실행준비 부정결과는 변경하지 않았다. 원본 바이트의 Git 객체 SHA-1이 바뀌면 중단한다. 정확히 16개 고유 사례와 올바른 행위자 역할, 모든 사례에 같은 행동집합, 행동별 확률 합계 1, A/B별 효용·실효 이탈·생활최저선·비가역 위해, 개입·복구 비용을 요구한다. 다섯 정책의 이름·구현 출처 문자열은 필수지만 그 문자열의 알고리즘 정확성이나 실행가능성은 **검증하지 않는다**.
+
+`python experiments/e008/completion_contract.py`는 현재 HOLD를 보고하고, `python experiments/e008/completion_contract.py --self-test`는 **연구자 제작** 완성 예제와 의도적으로 훼손한 12개 사례로 검문기를 시험한다. 예제의 정책 구현에는 실행할 수 없는 자리표시자만 있으므로 정책 순위를 계산할 수 없다. 외부 JSON은 `--completion PATH`로 구조 검사할 수 있지만 통과해도 `SCHEMA_ACCEPTED_POLICY_COMPARISON_STILL_HOLD`로 유지된다. 독립 검증·정책 승리라는 입력 측 주장은 거부한다. CI 통과도 과학적 유효성 증명이 아니다. 별도로 정당화된 수치/전이·독립 결과함수·보류조건 평가·현실 근거는 확보되지 않았다.
+
+관련 **미병합** 초안을 E008 증거로 합치지 않는다: [E009 감사 PR #193](https://github.com/gmodrasa7-rgb/project-intersection-public/pull/193), [권력–존속 분리 PR #197](https://github.com/gmodrasa7-rgb/project-intersection-public/pull/197), [CCPH 기준선 PR #199](https://github.com/gmodrasa7-rgb/project-intersection-public/pull/199). 다섯 정책의 독립 본실험은 여전히 HOLD다. 실제 참여자 모집·개입은 실시하지 않았다.
