@@ -98,3 +98,8 @@ E007은 자체 실행된 시점조건 합성 실험이고 E009는 자체 실행�
 `python experiments/e008/completion_contract.py`는 현재 HOLD를 보고하고, `python experiments/e008/completion_contract.py --self-test`는 **연구자 제작** 완성 예제와 의도적으로 훼손한 12개 사례로 검문기를 시험한다. 예제의 정책 구현에는 실행할 수 없는 자리표시자만 있으므로 정책 순위를 계산할 수 없다. 외부 JSON은 `--completion PATH`로 구조 검사할 수 있지만 통과해도 `SCHEMA_ACCEPTED_POLICY_COMPARISON_STILL_HOLD`로 유지된다. 독립 검증·정책 승리라는 입력 측 주장은 거부한다. CI 통과도 과학적 유효성 증명이 아니다. 별도로 정당화된 수치/전이·독립 결과함수·보류조건 평가·현실 근거는 확보되지 않았다.
 
 관련 **미병합** 초안을 E008 증거로 합치지 않는다: [E009 감사 PR #193](https://github.com/gmodrasa7-rgb/project-intersection-public/pull/193), [권력–존속 분리 PR #197](https://github.com/gmodrasa7-rgb/project-intersection-public/pull/197), [CCPH 기준선 PR #199](https://github.com/gmodrasa7-rgb/project-intersection-public/pull/199). 다섯 정책의 독립 본실험은 여전히 HOLD다. 실제 참여자 모집·개입은 실시하지 않았다.
+
+
+### 역할반전 의미 검문 (같은 선택적 입력검사이며 성능 주장 없음)
+
+수치 입력은 이제 `role_swap_specification`을 `LABEL_SYMMETRIC` 또는 `HETEROGENEITY_UNIDENTIFIED`로 명시한다. 제출자가 **이름표만 바뀐 대칭**을 가정한다면 대응 행동의 A/B 효용·이탈·생활최저선·피해는 서로 뒤집혀 일치하고, 분기별 확률과 개입·복구 비용은 대응해야 한다. 위배하면 거부한다. 행위자별 고유 차이가 식별되지 않은 경우 대칭을 억지로 가정하지 않고 `SCHEMA_ACCEPTED_ROLE_REVERSAL_UNIDENTIFIED_HOLD` 및 불일치 내용을 보고한다. **어느 쪽도 실제 인간 간 인과 동등성이나 외부 독립 정책 비교를 증명하지 않는다.** 제작자 합성 예제·훼손 입력 **14개**·미식별 보류 대조군을 사용했으며, PR #200의 CI 결과는 구조검사와 과학 검증을 구분한다.
