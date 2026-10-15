@@ -121,3 +121,10 @@ After merge, execution must record the merged executable-spec commit and preserv
 ## Result-preservation rule
 
 The negative result is preserved without retuning `benchmark.py`. `verify_result.py` re-executes the frozen benchmark and compares it to `RESULT.json`.
+
+
+## Derived-recovery dependence — Original 1 English / 원본2 한국어 (2026-10-15)
+
+**English:** E009 defines `recovery = clamp((.58*harm + .42*capture)*(1-.55*reversibility))`, then separately weights harm, capture, and recovery in regret. This is not three independent observations. Extra restoration costs may be legitimate, but the same injury could otherwise receive overlapping weights. A recovery-weight sensitivity test is required before attributing the result to independent recovery evidence. Frozen preregistered E009 outcomes remain unchanged. Methodological predecessors: Keeney (1971), DOI 10.1287/opre.19.4.875; OECD/JRC (2008), DOI 10.1787/9789264043466-en.
+
+**한국어:** E009 복구비용은 피해·포획·가역성에서 계산한 파생값이며, 손실 함수에서 피해·포획·복구비용을 함께 가중한다. 실제로 별도 발생하는 복구비용이면 타당하지만 동일 피해의 중복 가중일 수도 있다. 복구비용 가중치 민감도를 확인해야 하며, 원본의 부정결과를 소급 수정하지 않는다. 위 선행연구는 방법론적 참고이지 E009 가중치의 타당성 입증이 아니다.
