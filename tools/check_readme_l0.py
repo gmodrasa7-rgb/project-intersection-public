@@ -67,6 +67,12 @@ def audit(body):
             errors.append("FIRST_VIEW_READING_BUDGET_EXCEEDED:" + label)
         if any(key not in opening for key in (question, caution, reader_link)):
             errors.append("HUMAN_QUESTION_OR_UNCERTAINTY_HIDDEN:" + label)
+        # The uncertainty itself, not just its bold label, must remain
+        # visible before a reader opens the specialist section.
+        specific_caution = ("not a proven universal theorem" if label == "EN"
+                            else "보편법칙의 증명이 아니다")
+        if specific_caution not in opening:
+            errors.append("FIRST_VIEW_UNCERTAINTY_WAS_PROMOTED:" + label)
         if "summary>" not in expanded or "research" not in opening.lower() and label == "EN":
             errors.append("DISCLOSURE_OR_RESEARCH_ROUTE_LOST:" + label)
         if section.index("<details>") > section.index("</details>") or section.index("</details>") > section.index(anchor):
