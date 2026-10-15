@@ -285,6 +285,21 @@
       "known_divergences": [
         "English and Korean versions preserve the same limits but semantic equivalence is unverified."
       ]
+    },
+    {
+      "id": "PI-TERM-VCCD-20261013",
+      "original_1_english": "research/PI_VCCD_TERMINOLOGY_2026-10-13_EN.md",
+      "original_2_korean": "research/PI_VCCD_TERMINOLOGY_2026-10-13_KO.md",
+      "kind": "unapproved_complementary_terminology_proposal_no_new_empirical_result",
+      "structural_pair_present": true,
+      "meaning_review_status": "NOT_INDEPENDENTLY_VERIFIED",
+      "original_conception_language": "NOT_INDEPENDENTLY_ADJUDICATED",
+      "independent_review_receipt": null,
+      "one_sided_edit_exception": null,
+      "known_divergences": [
+        "Candidate only; historical RGBM goal and L0 founding purpose are not replaced.",
+        "File-pair presence does not certify semantic equivalence, provenance reassignment or scientific validation."
+      ]
     }
   ],
   "legacy_priority_unresolved": [
@@ -326,13 +341,13 @@
     }
   ],
   "metrics": {
-    "markdown_total": 148,
+    "markdown_total": 150,
     "filename_classes": {
       "UNMARKED_LANGUAGE_UNVERIFIED": 42,
       "LEGACY_MIXED_READER_ENTRY": 2,
-      "KO_SUFFIX_UNVERIFIED": 63,
+      "KO_SUFFIX_UNVERIFIED": 64,
       "ORDERED_BILINGUAL_FOUNDER_OR_GOVERNANCE": 2,
-      "EN_SUFFIX_UNVERIFIED": 18,
+      "EN_SUFFIX_UNVERIFIED": 19,
       "COMBINED_NAMING_UNVERIFIED": 21
     },
     "meaning_verified_pairs": 0,
@@ -1162,6 +1177,18 @@
       "content_equivalence": "NOT_REVIEWED"
     },
     {
+      "path": "research/PI_VCCD_TERMINOLOGY_2026-10-13_EN.md",
+      "filename_class": "EN_SUFFIX_UNVERIFIED",
+      "counterpart_path": "research/PI_VCCD_TERMINOLOGY_2026-10-13_KO.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "research/PI_VCCD_TERMINOLOGY_2026-10-13_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": "research/PI_VCCD_TERMINOLOGY_2026-10-13_EN.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
       "path": "research/PUBLIC_EVIDENCE_INDEX_EN.md",
       "filename_class": "EN_SUFFIX_UNVERIFIED",
       "counterpart_path": "research/PUBLIC_EVIDENCE_INDEX_KO.md",
@@ -1396,6 +1423,16 @@
       "meaning_review": "NOT_INDEPENDENTLY_VERIFIED",
       "method_scope": "One question, two comparison baselines, project-code rerun distinct from independent held-out outcome design; original E009 negative verdict retained",
       "ci_status": "NOT_INFERRED_FROM_REGISTRY"
+    },
+    {
+      "as_of": "2026-10-16",
+      "status": "UNMERGED_DRAFT_TERMINOLOGY_PAIR_INDEXED_NO_SCIENCE_CLAIM",
+      "new_documents": [
+        "research/PI_VCCD_TERMINOLOGY_2026-10-13_EN.md",
+        "research/PI_VCCD_TERMINOLOGY_2026-10-13_KO.md"
+      ],
+      "new_edition_pairs": 1,
+      "editorial_notes": "Indexed two already drafted candidate editions. Kept current main README byte-identical, historical tree baseline unchanged, no endorsement or independent meaning review."
     }
   ],
   "path_layout_policy": "Keep the project root entry-only; bilingual full research editions live in existing research/ and their original historical combined documents retain stable root URLs."
