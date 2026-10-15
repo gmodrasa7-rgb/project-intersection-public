@@ -30,10 +30,14 @@ The original `XG_ALONE_INEFFECTIVE` threshold flag is **retained unchanged**. Wh
 ## Validity repairs — policy versus set and role reversal
 
 - **No false empty-set verdict:** `floor_exit_gate(case)` screens the necessary living/exit floors for one *candidate policy* and returns `FLOOR_EXIT_PASS` or `FLOOR_EXIT_FAIL`. One rejected policy is not an empty mutual-acceptability kernel.
-- `candidate_set_status(candidates, exhaustive=True)` may report `NO_MUTUALLY_ACCEPTABLE_SET` only when **every candidate fails a necessary floor/exit condition** and the action inventory has been independently established as exhaustive. `exhaustive=True` is a caller declaration; the code cannot verify completeness. Otherwise return `UNRESOLVED_ACTION_COVERAGE`. One surviving candidate requires full MAK++ evaluation and does **not** prove acceptability.
+- `candidate_set_status(candidates, exhaustive=True)` reports `CONDITIONAL_EMPTY_IF_SCOPE_COMPLETE` when **every supplied candidate fails a necessary floor/exit condition**. The flag is only a caller assertion, not an independently verified completeness certificate: an unlisted viable option can overturn the apparent empty set. With unknown coverage report `UNRESOLVED_ACTION_COVERAGE`. One survivor requires full MAK++ review and does **not** prove acceptability. Never automatically upgrade the conditional status to `NO_MUTUALLY_ACCEPTABLE_SET`.
 - Exact 96 frozen treatment coordinates must match the predeclared PT/XG grid. Replacing a PT level with an unregistered value while preserving row count is rejected.
 - `actor_fixed_role_reversals` creates **48 actor-fixed reciprocal pairs**, swapping relative PT and XG when A and B exchange suppressor/target roles. It records those pairs; it does not assume equal outcomes or certify higher-order rule consistency. Simple A/B label symmetry alone is insufficient.
 - The world-specific payoff equations are synthetic and deliberately sign-selecting; tests prove only instrumentation behavior, not empirical support for either guarantee hypothesis.
+
+### Choice-set coverage is an assumption, not an observation
+
+A finite list of tested actions is not automatically the full feasible action set. A caller setting `exhaustive=True` does not supply an independent audit of unobserved alternatives. The resulting `CONDITIONAL_EMPTY_IF_SCOPE_COMPLETE` is therefore **a conditional inference**, not a proven universal impossibility. This fail-closed distinction follows the general open-world caution in the [W3C OWL 2 Primer](https://www.w3.org/TR/owl-primer/) and is related to the distinction between evidence and maintained assumptions in [Manski (2005), *Partial identification with missing data*](https://doi.org/10.1016/j.ijar.2004.10.006). Those works are prior-art analogies, not project empirical validation.
 
 ### Necessary-condition visibility across all four guarantee assignments
 
