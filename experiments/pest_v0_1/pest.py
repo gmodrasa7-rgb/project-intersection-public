@@ -115,6 +115,10 @@ def validate_design(cases):
         reversed_case = lookup.get((c.world, c.PT_i, c.PT_j, opposite, c.XG_i, c.XG_j))
         if reversed_case is None:
             raise ValueError("missing actual A/B role reversal")
+        for field in ("future_threat", "target_growth", "perceived_enforcement",
+                      "floor_after", "exit_after"):
+            if getattr(c, field) != getattr(reversed_case, field):
+                raise ValueError("causal input drift across role reversal: " + field)
         if psi_proxy(c) != psi_proxy(reversed_case):
             raise ValueError("identity-dependent synthetic physics")
         if kernel(c) != kernel(reversed_case):
@@ -134,6 +138,8 @@ def paired_contrasts(cases):
                        "both_high_minus_both_low": psi(1, 1) - psi(0, 0),
                        "own_effect_at_target_low": psi(0, 1) - psi(0, 0),
                        "target_effect_at_own_low": psi(1, 0) - psi(0, 0),
+                       "own_effect_at_target_high": psi(1, 1) - psi(1, 0),
+                       "target_effect_at_own_high": psi(1, 1) - psi(0, 1),
                        "XG_ALONE_INEFFECTIVE": psi(1, 1) >= psi(0, 0) - DELTA})
     return output
 
