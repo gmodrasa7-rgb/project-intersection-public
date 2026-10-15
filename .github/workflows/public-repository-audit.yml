@@ -471,10 +471,7 @@ jobs:
           en_route = Path("navigation/START_HERE_EN.md").read_text(encoding="utf-8")
           ko_route = Path("navigation/START_HERE_KO.md").read_text(encoding="utf-8")
           for link in [
-              "PUBLIC_EVIDENCE_INDEX.md",
-              "RESEARCH_STATUS_POLICY.md",
               "RESEARCH_TOC.md",
-              "RESEARCH_OVERVIEW.md",
               "AUTONOMOUS_RESEARCH_LOOP.md",
               "AUTONOMOUS_RESEARCH_STATE.json",
               "CONTRIBUTION_COST_ACCOUNTING_REGRESSION.md",
@@ -488,6 +485,13 @@ jobs:
               "experiments/e008/README.md",
           ]:
               require(link in en_route and link in ko_route, f"Parallel language routes lost required navigation link: {link}")
+
+          # Reader navigation must provide distinct language editions, not a legacy-mixed shortcut.
+          for stem in ("PUBLIC_EVIDENCE_INDEX", "RESEARCH_STATUS_POLICY", "RESEARCH_OVERVIEW"):
+              require(f"research/{stem}_EN.md" in en_route,
+                      f"Missing English original 1 research edition route: {stem}")
+              require(f"research/{stem}_KO.md" in ko_route,
+                      f"Missing Korean original 2 research edition route: {stem}")
 
           # Autonomous continuity must remain resumable without founder reconstruction.
           require(autonomous_state.get("schema_version") == "1.1", "Autonomous state schema version changed unexpectedly; update the audit rule with any deliberate schema migration.")
