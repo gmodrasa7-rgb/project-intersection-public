@@ -47,6 +47,28 @@ This protocol exists so Project Intersection can be resumed by a future human or
 
 같은 방향의 synthetic/toy 검사가 2회 연속이면, 다음 회차는 원칙적으로 독립 외부증거·현실/역사 사례·독립 비판으로 이동한다.
 
+
+### 3.1 CCPH real-world observation integrated with each research cycle — Original 1 English (2026-10-15)
+
+**CCPH is a historical–present–future-traceable case database, not a synthetic benchmark.** When ordinary Project Intersection research yields a materially verifiable real event (merged correction, independently checked discovery, external response, funding/support result, negative result, real contribution, repair or discontinuation), record it in the existing [observed project events ledger](knowledge/ccph-observed-project-events-v0_1.json). This uses research as its own longitudinal field setting, **not** an invented score. It establishes an operational rule for authorized future work, **not** continuous background collection.
+
+A case links actual source and event date, recorder/rediscovery dates, source contributor and beneficiary roles, material revision, observed before/after, rights and resource costs where legitimately evidenced, review status and uncertain downstream effects. Maintain distinct epistemic discovery, actual outcome and affected actor continuance. A merged PR is a **verified artifact change** but is not, on its own, evidence of causal scientific improvement or societal benefit. Treat unknown future effects as UNKNOWN, not zero and not guaranteed gains. Preserve successful, neutral, negative and contradictory cases.
+
+**Minimal transaction:** Reuse existing provenance; deduplicate by stable event ID; append a real event or versioned correction; verify the public source links, optional upstream-event references, JSON shape and privacy limits; commit and reread. Stronger claims require independent follow-up or valid comparisons, not number of labels, citations or files. Do not force the founder to repeat prior explanation or give private source dialogues to publish a case. Prior art, original copyright and monetary liability remain separate.
+
+**Already observed:** Public merged PRs [#167](https://github.com/gmodrasa7-rgb/project-intersection-public/pull/167), [#168](https://github.com/gmodrasa7-rgb/project-intersection-public/pull/168), [#169](https://github.com/gmodrasa7-rgb/project-intersection-public/pull/169) ground three real research-process entries; no actual external causal benefit has been measured. Future cases can include real beneficiaries and wider social influence, only with lawful evidence and applicable consent.
+
+### 3.1 CCPH를 실제 연구 과정에 결합 — 원본2 한국어 (2026-10-15)
+
+**CCPH는 벤치마크가 아니라 과거 재발굴·현재 기록·미래 역추적형 현실 사례 데이터베이스다.** Project Intersection에서 연구하다 실제 증거를 확인할 수 있는 사건이 발생할 때마다 [기존 실제 관측 원장](knowledge/ccph-observed-project-events-v0_1.json)에 축적한다. 새로운 문제 발견, 현실 관측, 연구 변경·수정, 후속 사회적 영향이 각각 기록과 연구 발전의 소재가 된다. 별도 가상 벤치마크를 만들거나 인위적 점수를 생산할 필요가 없다. 단, 이는 **앞으로 권한을 가진 실행자가 적용할 운영 규칙**이며 무인 자동수집을 시작했다는 주장이 아니다.
+
+**연구의 진행과 기록의 결합:** 실제 문제 발견 → 증거·선행연구·원기여자 확인 → 연구와 실행 → 관측 가능한 변경·효과·비용 구분 → CCPH 사건 라벨과 출처 기록 → 이후 새 증거가 나오면 기존 사건과 연결하고 판단을 버전으로 수정한다. 긍정·중립·부정·미확인·실패와 우연한 동시발견을 모두 보존한다.
+
+**관측과 성과의 구분:** 커밋·변경 파일 수·출처 인용은 실제 연구 활동의 **관측 가능한 흔적**이다. 그러나 연구가 몇 % 발전했다거나 외부 사회에 편익을 제공했다는 결론이 아니다. 그 판단에는 독립된 현실 결과, 가능하면 대조·시점·반례가 필요하다. 별도로 개체별 혜택·부담·존속·이탈·복구권을 평가한다. 알 수 없는 것은 UNKNOWN으로 둔다.
+
+**최소 검증 절차:** 기존 기록 재사용 → 중복 사건 ID 검사 → 원출처·사건·기록 시각 구분 → 기여·영향·비용 라벨 추가 → JSON 및 선행 사건 링크 검사 → 동의·민감정보 감사 → 커밋·재조회. 기여자에게 재설명·추가 검증 노동을 전가하지 않는다. 사적 대화나 개인 건강·금융 자료를 무단 공개하지 않는다. 최초 판단·상충 증거·교정 이력은 보존한다.
+
+
 ## 4. 선행조사 게이트
 
 새 용어·claim·실험을 만들기 전에 기존 이론·논문·실패사례·자연실험·측정변수·인접 분야 동형구조를 먼저 확인한다.
