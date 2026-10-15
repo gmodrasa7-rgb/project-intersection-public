@@ -123,11 +123,21 @@ def validate_design(cases):
             raise ValueError("identity-dependent synthetic physics")
         if kernel(c) != kernel(reversed_case):
             raise ValueError("XG role-consistency failure")
+        # R1-R4 are causal guarantee contrasts only if pre-treatment inputs
+        # are equal within the same world, PT setting, and named actor.
+        # Floor/exit after intervention may legitimately differ by XG.
+        baseline = lookup.get((c.world, c.PT_i, c.PT_j, c.suppressor, 0, 0))
+        if baseline is None:
+            raise ValueError("missing paired unprotected guarantee cell")
+        for field in ("future_threat", "target_growth", "perceived_enforcement"):
+            if getattr(c, field) != getattr(baseline, field):
+                raise ValueError("pretreatment input drift across XG: " + field)
     return expected
 
 
 def paired_contrasts(cases):
     """Diagnostic contrasts. Do not publish as preregistered experimental results."""
+    validate_design(cases)  # never compute treatment contrasts on confounded pairs
     lookup = {(c.world, c.PT_i, c.PT_j, c.suppressor, c.XG_i, c.XG_j): c
               for c in cases}
     output = []
