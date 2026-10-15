@@ -39,7 +39,10 @@ jobs:
           b=json.loads(Path("/tmp/b.json").read_text())
           c=json.loads(Path("/tmp/c.json").read_text())
           assert a["checks_passed"] == 28
-          assert b["queries"] == 16
+          # Topic regression cases may increase as the routing taxonomy expands.
+          # Guard the historical minimum and result consistency, not a frozen count.
+          assert b["queries"] >= 16
+          assert b["queries"] == len(b["details"])
           assert c["tested_queries"] == 3
           assert c["binary_byte_checks"] == "MATCHED_COMMIT_TREE"
           statuses = [x["status"] for x in c["case_results"]]
