@@ -20,6 +20,11 @@ POLICIES = (
     "ROBUST_CONSTRAINED", "PROJECT_V2",
 )
 SCHEMA = "E008_OPTIONAL_NUMERIC_COMPLETION_V0_1"
+# Input-only schema: unrecognized top-level keys must never carry result claims.
+ALLOWED_COMPLETION_FIELDS = frozenset({
+    "schema", "source_git_blob_sha1", "evidence_status",
+    "method_declaration", "role_swap_specification", "cases",
+})
 
 
 def require(test, reason):
@@ -113,6 +118,8 @@ def audit_declared_role_twins(rows, original):
 
 def validate_completion(completion, original):
     require(type(completion) is dict, "completion must be object")
+    require(set(completion) <= ALLOWED_COMPLETION_FIELDS,
+            "unknown top-level field: input-only evidence boundary")
     require(completion.get("schema") == SCHEMA, "schema version mismatch")
     require(completion.get("source_git_blob_sha1") == FROZEN_GIT_BLOB_SHA1,
             "wrong source lineage")
@@ -271,6 +278,10 @@ def self_test(original):
     mutations = [
         ("false independence", lambda x: x.update(evidence_status="EMPIRICAL_VALIDATED")),
         ("injected winner", lambda x: x.update(winner="PROJECT_V2")),
+        ("renamed result claim", lambda x: x.update(
+            claimed_results={"winner": "PROJECT_V2"})),
+        ("renamed independence claim", lambda x: x.update(
+            external_validation_report={"status": "VALIDATED"})),
         ("missing case", lambda x: x["cases"].pop()),
         ("duplicate case", lambda x: x["cases"][1].update(
             case_id=x["cases"][0]["case_id"])),
