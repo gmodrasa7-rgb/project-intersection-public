@@ -160,6 +160,35 @@ class TestPEST(unittest.TestCase):
             self.assertEqual({k: v for k, v in r.items() if k != "j"},
                              {k: v for k, v in twin.items() if k != "j"})
 
+    def test_reduced_suppression_must_show_protected_floor_failure(self):
+        # A favorable incentive contrast must not hide a post-treatment
+        # violation of minimum living or effective-exit conditions.
+        cases = tuple(replace(c, floor_after=.10)
+                      if (c.world == "survival_fear"
+                          and c.PT_i == .75 and c.PT_j == .75
+                          and c.XG_i == 1 and c.XG_j == 1)
+                      else c for c in self.cases)
+        self.assertEqual(validate_design(cases), 96)
+        rows = [r for r in paired_contrasts(cases)
+                if r["world"] == "survival_fear"
+                and r["PT_i"] == .75 and r["PT_j"] == .75]
+        self.assertEqual(len(rows), 2)  # name-swap twins, not independent n
+        for row in rows:
+            self.assertLess(row["both_high_minus_both_low"], -DELTA)
+            screens = row["floor_exit_screens"]
+            self.assertEqual(set(screens), {
+                "R1_BOTH_PROTECTED", "R2_NEITHER_PROTECTED",
+                "R3_TARGET_ONLY", "R4_SUPPRESSOR_ONLY"})
+            self.assertEqual(screens["R1_BOTH_PROTECTED"], "FLOOR_EXIT_FAIL")
+            self.assertEqual(screens["R2_NEITHER_PROTECTED"], "FLOOR_EXIT_PASS")
+            self.assertEqual(screens["R3_TARGET_ONLY"], "FLOOR_EXIT_PASS")
+            self.assertEqual(screens["R4_SUPPRESSOR_ONLY"], "FLOOR_EXIT_PASS")
+
+    def test_floor_exit_screens_default_to_necessary_pass_not_mak_proof(self):
+        for row in paired_contrasts(self.cases):
+            self.assertEqual(set(row["floor_exit_screens"].values()),
+                             {"FLOOR_EXIT_PASS"})
+
     def test_identity_swap_no_payoff_change(self):
         a = Case("backlash", "A", .75, .75, 1, 1)
         self.assertEqual(psi_proxy(a), psi_proxy(replace(a, suppressor="B")))
