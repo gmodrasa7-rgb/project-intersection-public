@@ -105,7 +105,7 @@ def specialist_concept_errors(english_overview: str, korean_overview: str) -> li
             errors.append("SPECIALIST_TERMS_HEADING_MISSING_OR_DUPLICATE:" + label)
             continue
         tail = body.split(heading, 1)[1]
-        ranked = re.findall(r"(?m)^\\| (?:[1-9]|10) \\|", tail)
+        ranked = re.findall(r"(?m)^\| (?:[1-9]|10) \|", tail)
         if len(ranked) != 10 or term not in tail or ccph not in tail:
             errors.append("SPECIALIST_TEN_TERMS_LOST:" + label)
     return errors
