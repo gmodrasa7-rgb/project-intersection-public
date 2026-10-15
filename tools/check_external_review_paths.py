@@ -9,6 +9,7 @@ validity require different kinds of evidence.
 from __future__ import annotations
 
 import argparse
+import json
 import posixpath
 import re
 from collections import deque
@@ -203,6 +204,67 @@ def check(overrides: dict[str, str] | None = None) -> list[str]:
     if "단독 회귀검사 27개" not in overview_ko or "테스트 26개" in overview_ko:
         errors.append("E007_KO_STALE_TEST_COUNT")
 
+    # Reviewer answerability is not identical to reachability. Recompute a
+    # small set of gateway assertions from the frozen project-authored numeric
+    # artifacts, and verify the question sheet actually links each artifact.
+    # This does NOT establish independent execution, factual world validity or
+    # an externally tested reviewer experience.
+    e007 = json.loads(load("experiments/e007/timing_summary.json"))
+    e008 = json.loads(load("experiments/e008/EXECUTABILITY_AUDIT.json"))
+    e009 = json.loads(load("experiments/e009/RESULT.json"))
+    e010 = json.loads(load("experiments/e010/RESULT.json"))
+    if not (e007["total_cases"] == 72 and e007["classification_sensitive_cases"] == 17
+            and e007["timing_sensitive_cases"] == 36):
+        errors.append("REVIEW_E007_FROZEN_SOURCE_STATUS_CHANGED")
+    if not (e008["full_decision_benchmark_ready_cases"] == 0
+            and e008["case_count"] == 16):
+        errors.append("REVIEW_E008_NOT_COMPLETED_SOURCE_STATUS_CHANGED")
+    if not (e009["survival_criteria"]["project_v3_residual_survives"] is False
+            and sum(x is False for k, x in e009["survival_criteria"].items()
+                    if k != "project_v3_residual_survives") == 3):
+        errors.append("REVIEW_E009_FAILURE_SOURCE_STATUS_CHANGED")
+    if not (e010["grid_size"] == 108 and
+            e010["status"] == "SELF_RUN_SYNTHETIC_FALSIFICATION_NOT_EMPIRICAL_VALIDATION"):
+        errors.append("REVIEW_E010_EXPLORATORY_SOURCE_STATUS_CHANGED")
+
+    en_start = load("navigation/START_HERE_EN.md")
+    ko_start = load("navigation/START_HERE_KO.md")
+    regret = f'{(-100 * e009["project_v3_vs_best_simple_regret_improvement"]):.2f}'
+    if not (f'{e007["classification_sensitive_cases"]} of {e007["total_cases"]}' in en_start
+            and f'{regret}% higher' in en_start
+            and "no completed main comparison" in en_start.lower()
+            and "108 investigator-selected" in en_start):
+        errors.append("REVIEW_EN_SUMMARY_MISMATCH_WITH_PROJECT_DATA")
+    if not (f'72개 중 {e007["classification_sensitive_cases"]}개' in ko_start
+            and f'{regret}% 증가' in ko_start
+            and "본 비교실험 미완료" in ko_start
+            and "108개 사후" in ko_start):
+        errors.append("REVIEW_KO_SUMMARY_MISMATCH_WITH_PROJECT_DATA")
+
+    # This is only a source-link and task-ID integrity check, not proof that
+    # the reviewer actually understood or independently tested the content.
+    for language in ("EN", "KO"):
+        page = f'research/PUBLIC_REVIEW_PACKET_{language}.md'
+        body = load(page)
+        for n in range(1, 8):
+            if not re.search(rf"(?m)^\|\s*REV-{n:02d}\s*\|", body):
+                errors.append(f'REVIEW_TASK_ID_MISSING:{language}:{n:02d}')
+        links = {target for target, _ in neighbors(page)}
+        for target in (
+            "experiments/e007/timing_summary.json",
+            "experiments/e008/EXECUTABILITY_AUDIT.json",
+            "experiments/e009/RESULT.json",
+            "experiments/e010/RESULT.json",
+        ):
+            if target not in links:
+                errors.append(f'REVIEW_SOURCE_PROOF_LINK_MISSING:{language}:{target}')
+        if language == "EN" and (("experiments/e009/RESULT_EN.md" not in links)
+                                 or "experiments/e010/README_EN.md" not in links):
+            errors.append("REVIEW_EN_EDITION_SOURCE_MISROUTED")
+        if language == "KO" and (("experiments/e009/RESULT_KO.md" not in links)
+                                 or "experiments/e010/README_KO.md" not in links):
+            errors.append("REVIEW_KO_EDITION_SOURCE_MISROUTED")
+
     funder = load("funding/FUNDER_START_HERE.md")
     if "Historical grant proposals below are not documented awards" not in funder:
         errors.append("UNAWARDED_FUNDING_BOUNDARY_MISSING")
@@ -245,7 +307,31 @@ def self_test():
                         "Historical grant proposals")
     })
 
-    print("External-review route guard: PASS (5 deliberate defects rejected)")
+    en_review = document("research/PUBLIC_REVIEW_PACKET_EN.md")
+    swapped = en_review.replace(
+        "(../experiments/e009/RESULT.json)", "(../experiments/e009/RESULT_EN.md)")
+    assert "REVIEW_SOURCE_PROOF_LINK_MISSING" in " ".join(check({
+        "research/PUBLIC_REVIEW_PACKET_EN.md": swapped
+    }))
+
+    removed = en_review.replace("| REV-04 |", "| NOT-REV-04 |")
+    assert "REVIEW_TASK_ID_MISSING" in " ".join(check({
+        "research/PUBLIC_REVIEW_PACKET_EN.md": removed
+    }))
+
+    en_start = document("navigation/START_HERE_EN.md")
+    inverted = en_start.replace("42.35% higher", "42.35% lower")
+    assert "REVIEW_EN_SUMMARY_MISMATCH_WITH_PROJECT_DATA" in check({
+        "navigation/START_HERE_EN.md": inverted
+    })
+
+    result = json.loads(document("experiments/e009/RESULT.json"))
+    result["survival_criteria"]["project_v3_residual_survives"] = True
+    assert "REVIEW_E009_FAILURE_SOURCE_STATUS_CHANGED" in check({
+        "experiments/e009/RESULT.json": json.dumps(result)
+    })
+
+    print("External-review route guard: PASS (9 deliberate defects rejected)")
     print("Boundary: static graph/anchor/status checks, not visitor usability or scientific validation")
 
 
