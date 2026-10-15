@@ -4,13 +4,13 @@
 
 ## Original 1 — English | Founding Purpose
 
+**Reading language:** English (this section) · [Read in Korean](navigation/START_HERE_KO.md) · [English research contents](navigation/RESEARCH_TOC_EN.md).
+
 **The core question:** When distinct intelligent agents pursue their own interests, under what testable conditions does preserving one another's continued existence, autonomy, effective exit, recovery and future possibilities become more advantageous over time than domination, exploitation or forced absorption?
 
 **Competing paths:** Examine when extraction and control are locally advantageous; when independent cooperation, coexistence and regenerative development instead become sustainable; and where their incentives cross, reverse or fail. Neither malice nor benevolence is a required premise. Legitimate protective intervention and differences in capability are not automatically exploitation.
 
 **Scientific boundary:** These are conditional research questions, not established universal results. A survivor's observed success does not prove superiority over eliminated alternatives; an unobserved future is neither proven worthless nor proven beneficial. The project retains negative findings, including E009, and distinguishes synthetic tests from independently replicated field evidence.
-
-**Reading language:** English (this section) · [Read in Korean](navigation/START_HERE_KO.md) · [English research contents](navigation/RESEARCH_TOC_EN.md).
 
 **External assessment:** [English evidence-bounded decision brief](navigation/START_HERE_EN.md#external-assessment-decision-brief) · [Reproduction and independent criticism](research/PUBLIC_REVIEW_PACKET_EN.md). This is a review path, not an independent endorsement.
 
@@ -61,13 +61,13 @@ These are **editorially ranked research concepts**, not ten validated discoverie
 
 ## 원본2 — 한국어 | 창시 목적 전문 대응본
 
+**독서 언어:** 한국어(이 절) · [영어 원본1 읽기](navigation/START_HERE_EN.md) · [한국어 연구 목차](navigation/RESEARCH_TOC_KO.md).
+
 **핵심 질문:** 서로 다른 지능체가 자신의 이익을 추구할 때, 타자를 지배·착취·강제 흡수하는 것보다 서로의 존속·자율성·실질적 이탈·복구·미래 가능성을 보존하는 선택이 장기적으로 유리해지는 검증 가능한 조건은 무엇인가?
 
 **경쟁하는 경로:** 착취·통제가 국소적으로 유리해지는 조건과 독립적인 협력·공존·재생형 발전이 지속 가능한 조건을 함께 조사한다. 두 유인이 교차·역전·실패하는 경계도 찾는다. 선의와 악의를 전제하지 않으며, 정당한 피해 예방 조치나 능력 차이를 착취로 자동 판정하지 않는다.
 
 **과학적 경계:** 이는 보편적으로 입증된 결론이 아닌 조건부 연구 질문이다. 살아남은 경로의 관측 성과가 제거된 대안보다 우월했음을 증명하지 않는다. 미관측 미래는 무가치하다는 증거도, 반드시 유익했다는 증거도 아니다. E009 부정결과를 포함해 부정적 증거를 보존하며 합성검사와 독립 복제·현장 검증을 구분한다.
-
-**독서 언어:** 한국어(이 절) · [영어 원본1 읽기](navigation/START_HERE_EN.md) · [한국어 연구 목차](navigation/RESEARCH_TOC_KO.md).
 
 **외부 심사:** [한국어 핵심 판단](navigation/START_HERE_KO.md#외부-심사자를-위한-핵심-판단) · [재현 및 독립 비판 자료](research/PUBLIC_REVIEW_PACKET_KO.md). 검토 경로를 뜻하며 독립 검증이 완료되었다는 주장은 아니다.
 
@@ -77,7 +77,7 @@ These are **editorially ranked research concepts**, not ten validated discoverie
 
 **ICM — 최소 사심 교집합:** 도덕성이나 강자의 선의에 의존하지 않더라도 각 개체가 자기 미래를 위해 보존할 이유가 있는 최소의 공통이익을 연구한다. 기본자원 접근, 자기결정, 실질적 거절·이탈, 독립적 복구, 자기연속성, 재발전 기회 등이 그 후보이다.
 
-**RGBM — 장기 상호 발전 모형:** 최소 교집합 위에서 독립된 개체와 다양성, 지식·생산능력·복구력·생성능력·미래 선택지가 시간의 끝을 고정하지 않고 함께 개선되는 조건을 연구한다. 다른 개체의 지속 가능한 미래를 지워서 얻은 성장을 무조건적인 성공으로 계산하지 않는다.
+**RGBM — 장기 상호발전 모형:** 최소 교집합 위에서 독립된 개체와 다양성, 지식·생산능력·복구력·생성능력·미래 선택지가 시간의 끝을 고정하지 않고 함께 개선되는 조건을 연구한다. 다른 개체의 지속 가능한 미래를 지워서 얻은 성장을 무조건적인 성공으로 계산하지 않는다.
 
 ### 핵심용어 10개
 
