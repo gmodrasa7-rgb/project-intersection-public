@@ -14,13 +14,16 @@
 
 **The core question:** Under which testable conditions does protecting another intelligent agent's continued existence, effective exit, recovery and possibilities serve each agent's interests better than domination, exploitation or forced absorption?
 
-**Competing paths:** Compare short-term extraction and control against long-term voluntary cooperation and regenerative development. Find where incentives cross or reverse, including harms to excluded third parties. Neither good intentions nor bad intentions are necessary; power differences and protective rules are not automatically exploitation.
-
 **Scientific boundary:** Cooperation is **not a proven universal theorem**. The unobserved contribution of an excluded actor is **unknown**, not zero and not proof of hidden greatness. Project-run synthetic results are not independent real-world validation.
 
-**Evidence so far:** [E007](experiments/e007/README_EN.md) found 17/72 classification changes in selected synthetic timing scenarios. [E008](experiments/e008/README_EN.md) has no completed main result. [E009](experiments/e009/RESULT_EN.md) found the project's complex candidate worse than simpler baselines in its preregistered synthetic comparison. [E010](experiments/e010/README_EN.md) is exploratory and post-hoc. None proves a long-run social law.
-
 **Choose your route:** [Understand the question](research/RESEARCH_OVERVIEW_EN.md) · [Explore real histories and overlooked contribution](research/CCPH_RESEARCH_ATLAS_EN.md) · [Challenge the negative result](experiments/e009/RESULT_EN.md).
+
+<details>
+<summary>Technical purpose, evidence, rights and reviewer routes</summary>
+
+**Competing paths:** Compare short-term extraction and control against long-term voluntary cooperation and regenerative development. Find where incentives cross or reverse, including harms to excluded third parties. Neither good intentions nor bad intentions are necessary; power differences and protective rules are not automatically exploitation.
+
+**Evidence so far:** [E007](experiments/e007/README_EN.md) found 17/72 classification changes in selected synthetic timing scenarios. [E008](experiments/e008/README_EN.md) has no completed main result. [E009](experiments/e009/RESULT_EN.md) found the project's complex candidate worse than simpler baselines in its preregistered synthetic comparison. [E010](experiments/e010/README_EN.md) is exploratory and post-hoc. None proves a long-run social law.
 
 **External assessment:** [English skeptical-reader guide](navigation/START_HERE_EN.md#external-assessment-decision-brief) · [Independent review and reproduction](research/PUBLIC_REVIEW_PACKET_EN.md) · [Research funding review](funding/FUNDER_START_HERE.md#original-1--english).
 
@@ -44,6 +47,8 @@
 
 **Citation and reuse:** [Citation](CITATION.cff) · [Attribution and source rights](ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md) · [Earlier authorship and derivation](PRIOR_ART_RIGHTS_AND_DERIVATION_EN_KO.md). The longer historical founding statement remains recoverable in [the preceding Git revision](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/3fefa0c121341a0569e026f34a9e87479afa52a4/README.md).
 
+</details>
+
 ### Ten core concepts
 
 [All ten concepts, precise definitions and limitations](research/RESEARCH_OVERVIEW_EN.md#ten-core-concepts) are preserved for technical reading. CCPH is a historical/current/future **contribution and impact provenance database**. The **Continuance–Contribution Pathways Hypothesis** is one hypothesis within it, not its definition or a proven social outcome.
@@ -60,13 +65,16 @@
 
 **핵심 질문:** 서로 다른 지능체가 자기이익을 추구할 때, 지배·착취·강제 흡수보다 상대의 존속·실효적 이탈·복구·미래 선택지를 보존하는 것이 각자에게 유리해지는 검증 가능한 조건은 무엇인가?
 
-**경쟁하는 경로:** 단기 착취·통제와 장기 자발적 협력·재생형 발전을 비교한다. 제3자 피해를 포함해 유인이 교차하거나 역전되는 조건을 찾는다. 선의와 악의를 전제하지 않으며, 능력 차이나 정당한 피해 예방을 자동으로 착취라 판정하지 않는다.
-
 **과학적 경계:** 협력이 언제나 우월하다는 **보편법칙의 증명이 아니다**. 배제된 개체의 미관측 기여는 **미확인**이지 0도, 숨은 위대함의 증거도 아니다. 자체 합성실험은 현실에서의 독립적 입증과 다르다.
 
-**현재 근거:** [E007](experiments/e007/README_KO.md)은 선정된 72개 합성 조건 중 17개 분류 변화. [E008](experiments/e008/README_KO.md)은 본실험 결과 없음. [E009](experiments/e009/RESULT_KO.md)는 사전등록된 합성 비교에서 복잡한 후보 모형이 단순 기준선보다 열세였다. [E010](experiments/e010/README_KO.md)은 사후 탐색적 분석이다. 어느 결과도 사회 전체의 장기 법칙을 입증하지 않는다.
-
 **어디부터 읽을까:** [연구 질문 이해](research/RESEARCH_OVERVIEW_KO.md) · [실제 역사와 간과된 기여](research/CCPH_RESEARCH_ATLAS_KO.md) · [부정결과 검토](experiments/e009/RESULT_KO.md).
+
+<details>
+<summary>상세 연구 목적·반례·증거상태·권리·심사 경로 펼치기</summary>
+
+**경쟁하는 경로:** 단기 착취·통제와 장기 자발적 협력·재생형 발전을 비교한다. 제3자 피해를 포함해 유인이 교차하거나 역전되는 조건을 찾는다. 선의와 악의를 전제하지 않으며, 능력 차이나 정당한 피해 예방을 자동으로 착취라 판정하지 않는다.
+
+**현재 근거:** [E007](experiments/e007/README_KO.md)은 선정된 72개 합성 조건 중 17개 분류 변화. [E008](experiments/e008/README_KO.md)은 본실험 결과 없음. [E009](experiments/e009/RESULT_KO.md)는 사전등록된 합성 비교에서 복잡한 후보 모형이 단순 기준선보다 열세였다. [E010](experiments/e010/README_KO.md)은 사후 탐색적 분석이다. 어느 결과도 사회 전체의 장기 법칙을 입증하지 않는다.
 
 **외부 심사:** [한국어 독립 판단 경로](navigation/START_HERE_KO.md#외부-심사자를-위한-핵심-판단) · [재현과 반증 안내](research/PUBLIC_REVIEW_PACKET_KO.md) · [연구비 지원 검토](funding/FUNDER_START_HERE.md#원본2--한국어).
 
@@ -89,6 +97,8 @@
 **처음 읽을 자료:** [한국어 안내](navigation/START_HERE_KO.md) · [한국어 증거 원장](research/PUBLIC_EVIDENCE_INDEX_KO.md) · [E007 재현](experiments/e007/README_KO.md) · [E009 부정결과](experiments/e009/RESULT_KO.md) · [선행연구·검토](research/PUBLIC_REVIEW_PACKET_KO.md#3a-선행연구와-프로젝트의-검증-가능한-추가-기여-구분) · [한국어 전체 목차](navigation/RESEARCH_TOC_KO.md).
 
 **출처 표시 및 재사용:** [인용 정보](CITATION.cff) · [기여·출처·권리](ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md) · [선행 원저작과 응용](PRIOR_ART_RIGHTS_AND_DERIVATION_EN_KO.md). 축약하기 전 창시 목적 전문도 [이전 Git 판본](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/3fefa0c121341a0569e026f34a9e87479afa52a4/README.md)에 보존돼 있다.
+
+</details>
 
 ### 핵심용어 10개
 
