@@ -5,6 +5,8 @@ Last full evidence review recorded / 마지막 전반적 증거 검토 기록: *
 
 This page is a due-diligence interface for funders, research partners, reviewers, and critics. It separates what can be checked now from what is still a hypothesis, a private research lead, or an unresolved validation debt.
 
+**CCPH-01 bounded instrument / 2026-10-15 (SELF-TESTED TOOL; NO AI RESULT):** [Bilingual protocol](experiments/ccph_01/README.md) · [40-case frozen Python checker](experiments/ccph_01/pilot.py). Locally passed author-fixture integrity and alert-scoring self-tests (20 correct / 20 deliberately faulty); 4-policy LLM comparison, independent discovery/replication, actual fixes, cost-benefit and causal CCPH claims are **NOT TESTED**. / 공개 시연 과제 40개 및 측정기 자체검사 완료. 실제 AI 비교·외부 독립검증·교정·장기 기여·CCPH 인과 검증은 미실행.
+
 이 문서는 펀더·연구 파트너·검토자·비판자가 현재 확인할 수 있는 증거와 아직 가설·비공개 연구후보·미해결 검증부채인 항목을 분리하기 위한 실사 인터페이스다.
 
 **Focused v0.2 corrigendum / 부분식별·누락 실패 정정 (2026-10-14):** [v0.2 original audit code and bilingual explanation](experiments/coalition_externality_probe/README.md) · [108,864-case finite-world oracle script](experiments/coalition_externality_probe/partial_identification_audit_v02.py). The v0.1 65 self-checks did NOT detect two errors: known member harm and known blocked exit could be masked by unobserved C; the evaluator did not record whether A/B/C covered all affected parties. New separately versioned checks compare a symbolic classification against an independently specified toy Boolean enumerator. **Original v0.1 output is preserved as historical/partially defective; v0.2 is still self-run synthetic and not a deployed remedy.** / v0.1 자체검사 65건 통과와 무관하게 C 미관측이 알려진 참여자 위반을 가리고, 숨은 D 피해자 등록 여부를 검사하지 못했다. 원본 불변, v0.2 후속 시험만 추가. 현실 피해·독립검증은 미확인.
