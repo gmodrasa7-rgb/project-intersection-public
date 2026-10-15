@@ -54,6 +54,11 @@ Preserve negative results, correction history, affected-party costs, effective e
 - [Public review packet](../PUBLIC_REVIEW_PACKET.md): claims, rerun boundaries and challenge routes.
 - [Failure and regression index](../FAILURE_REGRESSION_INDEX.md): unsuccessful and corrected work.
 - [Funding entry](../funding/FUNDER_START_HERE.md) and [public sponsorship ledger](../funding/SPONSORSHIP_PUBLIC_LEDGER.md): support context, not a verified funding receipt.
+- [Autonomous research loop](../AUTONOMOUS_RESEARCH_LOOP.md) and [machine-readable state](../AUTONOMOUS_RESEARCH_STATE.json): continuity and recovery without requiring the human founder to reconstruct past work.
+- [Contribution-cost regression](../CONTRIBUTION_COST_ACCOUNTING_REGRESSION.md): research output versus contributors' actual benefits, costs and losses.
+- [Knowledge explorer](../knowledge/explorer.html): evidence-linked navigation, not a replacement for original sources.
+- [Contributor guidelines](../CONTRIBUTING.md): provenance, language editions, counterexamples and privacy.
+- [Long-horizon intervention model](../LONG_HORIZON_MIN_INTERVENTION_E2E.md): model and limitations, not a universal theorem.
 - [Detailed earlier Korean reader map](../START_HERE_KO.md): historical material maintained for provenance; it is **not** a clean English edition.
 
 <!-- PI-SECTION: limitations -->
