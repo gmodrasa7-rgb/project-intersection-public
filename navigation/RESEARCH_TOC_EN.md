@@ -1,0 +1,86 @@
+# Research Contents — Original 1: English
+
+<!-- PI-LANGUAGE: en -->
+<!-- PI-MIRROR: navigation/RESEARCH_TOC_KO.md -->
+
+**Reading route:** [English start](START_HERE_EN.md) · [Original 2: Korean contents](RESEARCH_TOC_KO.md) · [Independent English review](AI_REVIEW_EN.md) · [Founding purpose](../README.md).
+
+This is a **language-consistent navigation index**. Original 1 denotes release order, **not** the research originator's working language or a grant of authorship. It is not an independent scientific assessment, a newly verified translation of legacy material, or a claim that all links lead to English content.
+
+Many historical sources are Korean-only or bilingual; linked **source titles, filenames, mathematical identifiers and citations remain unchanged**. A reader should treat a link as a route to an original, not an implicit translation. Refer to the [public evidence index](../PUBLIC_EVIDENCE_INDEX.md) for each claim's evidence class and limitations.
+
+## 1. Founding question and research status
+
+- [Founding research purpose](../README.md)
+- [Research overview](../RESEARCH_OVERVIEW.md)
+- [Evidence and status rules](../RESEARCH_STATUS_POLICY.md)
+- [Core research framing (historical bilingual file)](../PUBLIC_PREAMBLE_VOLUNTARY_COEXISTENCE_2026-10-13_EN_KO.md)
+
+## 2. Roadmaps and executable research gates
+
+- [Current v0.2.3 research-gate specification](../research/PI_ROADMAP_OPERATIONAL_GATES_V0_2_3_EN_KO.md)
+- [Earlier v0.2 roadmap and failure regressions](../research/RESEARCH_ROADMAP_v0_2_EN_KO.md)
+- [Research continuity process](../AUTONOMOUS_RESEARCH_LOOP.md)
+- [Recorded execution state (machine data)](../AUTONOMOUS_RESEARCH_STATE.json)
+
+## 3. Results and their non-interchangeable evidence levels
+
+- [E007 — synthetic timing and replication scope](../experiments/e007/README.md)
+- [E008 — preregistered specification, no main result](../experiments/e008/README.md)
+- [E009 — preregistered negative synthetic result](../experiments/e009/RESULT.md)
+- [E010 — post-hoc exploratory synthetic calculations (Korean-only)](../experiments/e010/README_KO.md)
+- [Full public claim and evidence ledger](../PUBLIC_EVIDENCE_INDEX.md)
+- [Failure and correction regressions](../FAILURE_REGRESSION_INDEX.md)
+
+## 4. CCPH: continuance, support and contribution pathways
+
+- [Historical cases, assistance, indirect influence, negative results](../CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md)
+- [Proposed event lineage schema; not a populated societal database](../knowledge/ccph-impact-lineage-event-schema-v0_1.json)
+- [Synthetic CCPH pilot](../experiments/ccph_01/README.md)
+- [Epistemic probe and limitations](../experiments/ccph_epistemic_probe_v01/README.md)
+
+## 5. Coexistence, incentives, power and affected third parties
+
+- [Long-horizon minimum-intervention model](../LONG_HORIZON_MIN_INTERVENTION_E2E.md)
+- [Cooperation and excluded-party externality counterexamples](../experiments/coalition_externality_probe/README.md)
+- [Continuance resources and exhaustion thresholds](../research/CONTINUANCE_RESOURCE_THRESHOLD_v0_1_EN_KO.md)
+- [Symmetric harm and power protocol (Korean-only)](../protocols/INTERSECTION_SYMMETRIC_HARM_POWER_PROTOCOL_v0_2_KO.md)
+
+## 6. Reasoning integrity, model uncertainty and adversarial tests
+
+- [English research text on semantic transformations](../research/AGENTIC_SEMANTIC_TRANSFORMATION_FIDELITY_2026-10-13_EN.md)
+- [Korean counterpart (switches reader language)](../research/AGENTIC_SEMANTIC_TRANSFORMATION_FIDELITY_2026-10-13_KO.md)
+- [Historical double-standard case and limitations](../experiments/gpt_double_standard_20261014/REPORT_EN_KO.md)
+- [Self-observability and audit access hypotheses](../research/AI_SELF_OBSERVABILITY_AUDIT_DILEMMA_2026-10-13_EN_KO.md)
+- [Cross-model debate and prior art](../research/CROSS_MODEL_DEBATE_PRIOR_ART_2026-10-15_EN_KO.md)
+
+## 7. Research origin, upstream scholars, reuse and contribution costs
+
+- [Prior-art citations and project novelty limits](../PRIOR_ART_AND_ATTRIBUTION.md)
+- [Source rights and derivation records](../PRIOR_ART_RIGHTS_AND_DERIVATION_EN_KO.md)
+- [Contributor continuance and losses](../TECHNOLOGY_PROGRESS_CONTRIBUTOR_CONTINUITY_EN_KO.md)
+- [Credit versus copyright/payment boundaries](../ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md)
+- [Separate contributor cost/benefit ledger](../CONTRIBUTION_COST_ACCOUNTING_REGRESSION.md)
+
+## 8. Independent criticism, replication and knowledge navigation
+
+- [Claims, citations, reproducibility checks and limits](../PUBLIC_REVIEW_PACKET.md)
+- [Historical mixed-language AI review entry](../AI_REVIEW_START_HERE.md)
+- [Knowledge graph as an index, not proof](../knowledge/README.md)
+- [Interactive source explorer](../knowledge/explorer.html)
+- [Contributor instructions in English then Korean](../CONTRIBUTING.md)
+
+## 9. Funding, governance and practical sustainability
+
+- [Research-support starting point](../funding/FUNDER_START_HERE.md)
+- [Public sponsorship ledger; do not assume receipts](../funding/SPONSORSHIP_PUBLIC_LEDGER.md)
+- [Rights, legal and tax uncertainties](../funding/LEGAL_TAX_RISK_REGISTER_2026-10-13_EN_KO.md)
+- [GitHub/local handoff, recovery and audit](../continuity/GITHUB_LOCAL_HANDOFF_PROTOCOL.md)
+
+## 10. Scope, languages and verification status
+
+- [Research status policy](../RESEARCH_STATUS_POLICY.md) and [failure regression index](../FAILURE_REGRESSION_INDEX.md) govern the interpretation of these links.
+- A negative result remains negative; a local rerun is not independent scientific verification.
+- The [earlier detailed bilingual index](../RESEARCH_TOC.md) remains available for historical continuity, but is **not** a clean single-language page and cannot certify translation completeness.
+- [Language-edition registry](../knowledge/language-edition-register.json) distinguishes paired paths, untranslated sources and unresolved semantic checks.
+- Source files and historical credit must never be erased to make a language metric look better. Only an independently reviewed, traceable translation may claim content-level parity.

@@ -1,5 +1,8 @@
 # Project Intersection — cross-model public review entrance
 
+> **Language-specific review routes:** [Original 1 — English](navigation/AI_REVIEW_EN.md) · [원본2 — 한국어](navigation/AI_REVIEW_KO.md). The text below is maintained as a historical mixed-language review index, not as a single-language reader interface. / 이 아래는 과거 혼합 언어 검토 색인이며 현재 독립 언어 검토 안내는 위 링크를 이용한다.
+
+
 **Three-level independent review route / 3단계 독립검토 경로:** **(1) Entry / 탐색:** [README](README.md) → [machine-readable index](AI_DISCOVERY_INDEX.json). **(2) Interpretation / 이해·판정:** [evidence index](PUBLIC_EVIDENCE_INDEX.md) + [status rules](RESEARCH_STATUS_POLICY.md) + [review packet](PUBLIC_REVIEW_PACKET.md) + [attribution](ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md). **(3) Original artifacts / 원자료 직접 확인:** [E007](E007_TIMING_RESULT.md), [E009 negative result](experiments/e009/RESULT.md), [E010 exploratory synthetic](experiments/e010/README_KO.md), [source-linked knowledge graph](knowledge/README.md), [failure log](FAILURE_REGRESSION_INDEX.md). Verify original sources and report discrepancies; **index presence is not proof, and project reruns are not external replication**. / 색인 존재·자체 재실행을 증명·외부 독립재현으로 승격하지 않는다.
 
 **2026-10-13 independent-reasoning challenge:** [Agentic semantic transformation — English Original 1](research/AGENTIC_SEMANTIC_TRANSFORMATION_FIDELITY_2026-10-13_EN.md) / [한국어 원본2](research/AGENTIC_SEMANTIC_TRANSFORMATION_FIDELITY_2026-10-13_KO.md). Reviewer tasks: propose one meaningful inversion that passes the README structural CI, one beneficial theory revision incorrectly blocked by a rigid safeguard, and a self-citation cycle traced to a single original source. **Do not claim actual model causality or founder intent without controlled evidence.**
