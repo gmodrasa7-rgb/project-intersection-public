@@ -40,12 +40,17 @@ The first public map of the private research program is available here:
 
 It exposes the research structure, theory families, experiment families, unresolved gaps, and validation boundaries before the underlying private materials are selectively published.
 
+## Core conceptual boundaries
+
+The [ten core concepts](../README.md#ten-core-concepts) distinguish the **research aim** (voluntary coexistence and mutual development), **candidate models** (ICM and RGBM), **competing mechanisms** (exploitation without malice, incentive crossovers, consumptive versus regenerative trajectories), **epistemic limits** (the Paradox of the Unknown and counterfactual extinction), **actor-specific outcomes** (effective exit, continuance and recovery), and **real-world event evidence** (the CCPH database). These are not interchangeable outcome scores or ten independently demonstrated discoveries.
+
+**CCPH** means an extensible, versioned database for historically recovered, currently observed and later traceable effects, including direct and indirect contributions, harms, assistance and unresolved links. The **Continuance–Contribution Pathways Hypothesis** is one research track within that database, while synthetic probes are subordinate instrumentation. Absence of observation does not identify a missing event as zero or prove a lost future would have been valuable.
+
+**Research levels:** L0 objective > L1 falsifiable hypotheses > L2 methods and independent evidence > L3 operational safeguards. Test cooperation and coercive/extractive alternatives symmetrically. Do not infer exploitation solely from power differences or voluntary agreement merely from nominal consent.
+
 ## Opening Question
 
-If a monkey could create a human,
-
-could it confine that human  
-within rules created by the monkey?
+If a monkey developed a human, how long could it control that human through rules and coercion?
 
 Can a human perfectly control a child,
 
@@ -60,7 +65,7 @@ for harm prevention, safety, and responsibility.
 
 But if a new intelligent agent can learn, develop,  
 and acquire capabilities and perspectives  
-that its creator did not anticipate,
+that its developer did not anticipate,
 
 a more fundamental question appears.
 
