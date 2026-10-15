@@ -78,6 +78,22 @@ def readme_errors(body: str) -> list[str]:
             errors.append("README_CORE_TERMINOLOGY_DRIFT:" + heading)
     if "Continuance–Contribution Pathways Hypothesis" not in first_en or "내부의 가설 연구축" not in first_ko:
         errors.append("README_CCPH_DATABASE_VERSUS_HYPOTHESIS_BOUNDARY_MISSING")
+    # Check information order, not the wording of the illustration or the scientific claim.
+    for lang, section, intro, reading, glossary, paths in (
+        ("EN", first_en, "**Opening thought experiment:**", "**First reading path:**",
+         "### Ten core concepts", ("research/RESEARCH_OVERVIEW_EN.md",
+          "research/CCPH_RESEARCH_ATLAS_EN.md", "experiments/e009/RESULT_EN.md")),
+        ("KO", first_ko, "**시작 질문:**", "**처음 읽을 자료:**",
+         "### 핵심용어 10개", ("research/RESEARCH_OVERVIEW_KO.md",
+          "research/CCPH_RESEARCH_ATLAS_KO.md", "experiments/e009/RESULT_KO.md")),
+    ):
+        if any(token not in section for token in (intro, reading, glossary)):
+            errors.append("README_HUMAN_FIRST_SECTION_MISSING:" + lang)
+            continue
+        if not section.index(intro) < section.index(reading) < section.index(glossary):
+            errors.append("README_HUMAN_FIRST_ORDER_INVERTED:" + lang)
+        if any(target not in section[:section.index(glossary)] for target in paths):
+            errors.append("README_HUMAN_FIRST_READING_ROUTES_MISSING:" + lang)
     return errors
 
 
@@ -114,6 +130,11 @@ def guide_errors(path: str, body: str, language: str) -> list[str]:
     for mandatory in required:
         if mandatory not in links:
             errors.append(f"{path}:REQUIRED_ROUTE_MISSING:{mandatory}")
+    # Opening explanation must precede the technical external-review matrix.
+    simple_opening = "Suppose one researcher" if language == "en" else "한 연구자가 다른 연구자의 경고를"
+    review_heading = "### External assessment: decision brief" if language == "en" else "### 외부 심사자를 위한 핵심 판단"
+    if simple_opening not in body or review_heading not in body or body.index(simple_opening) > body.index(review_heading):
+        errors.append(f"{path}:HUMAN_EXPLANATION_AFTER_EXPERT_REVIEW_OR_MISSING")
     if language == "en" and "START_HERE_KO.md" not in body:
         errors.append(f"{path}:COUNTERPART_NOT_DISCOVERABLE")
     if language == "ko" and "START_HERE_EN.md" not in body:
@@ -206,6 +227,10 @@ def self_test(en: str, ko: str, readme: str) -> None:
         readme_errors(readme.replace(KO_README, "## Korean version", 1)),
         readme_errors(readme.replace("CCPH — contribution and impact provenance database", "CCPH — validated AI harness", 1)),
         readme_errors(readme.replace("### 핵심용어 10개", "### 이름이 지워짐", 1)),
+        readme_errors(readme.replace("**Opening thought experiment:**", "**Other:**", 1)),
+        readme_errors(readme.replace("**시작 질문:**", "**다른 주제:**", 1)),
+        guide_errors(EN_PATH, en.replace("Suppose one researcher", "Technical report first", 1), "en"),
+        guide_errors(KO_PATH, ko.replace("한 연구자가 다른 연구자의 경고를", "전문용어 목록을", 1), "ko"),
     ]
     assert all(mutations), "Mutation bypassed language guard"
     print(f"Language routing mutation regressions: {len(mutations)} / {len(mutations)} PASS")
