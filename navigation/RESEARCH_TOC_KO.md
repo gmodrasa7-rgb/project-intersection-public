@@ -36,6 +36,8 @@
 
 ## 4. CCPH: 존속·지원·기여 경로
 
+- [한국어 CCPH 선행 증거 지도(CP64–CP79)](../CCPH_RESEARCH_ATLAS_KO.md)
+
 - [역사사례·지원·간접영향·부정결과](../CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md)
 - [제안된 사건 계보 규격·사회 전수 데이터 아님](../knowledge/ccph-impact-lineage-event-schema-v0_1.json)
 - [CCPH 합성 파일럿](../experiments/ccph_01/README.md)
