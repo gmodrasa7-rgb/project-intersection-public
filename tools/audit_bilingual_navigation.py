@@ -193,7 +193,7 @@ def inspect(registry: dict, overrides: dict[str, str] | None = None, full_invent
                 if pid == "PI-NAV-TOC":
                     suffix = "_EN.md" if lang == "en" else "_KO.md"
                     for stem in ("RESEARCH_OVERVIEW", "PUBLIC_EVIDENCE_INDEX", "RESEARCH_STATUS_POLICY"):
-                        target = "../" + stem + suffix
+                        target = "../research/" + stem + suffix
                         if target not in linked:
                             issues.append("PREFERRED_LANGUAGE_RESEARCH_ROUTE_MISSING:" + path + ":" + target)
                 for source in core:
@@ -256,10 +256,10 @@ def run_mutations(registry: dict) -> None:
     tampered = copy.deepcopy(registry)
     tampered["pair_catalog"][0]["meaning_review_status"] = "REVIEWED"
     assert any("WITHOUT_RECEIPT" in x for x in inspect(tampered, full_inventory=False))
-    core_en = "PUBLIC_EVIDENCE_INDEX_EN.md"
+    core_en = "research/PUBLIC_EVIDENCE_INDEX_EN.md"
     corrupted = (ROOT / core_en).read_text(encoding="utf-8").replace("0.090022", "0.990022", 1)
     assert any("E009_NUMERIC_PARITY_FAILED" in x for x in inspect(registry, overrides={core_en: corrupted}, full_inventory=False))
-    ccph_en = "CCPH_RESEARCH_ATLAS_EN.md"
+    ccph_en = "research/CCPH_RESEARCH_ATLAS_EN.md"
     damaged = (ROOT / ccph_en).read_text(encoding="utf-8").replace("CP79", "CPXX", 1)
     assert any("CCPH_PRIMARY_CASE_ID_PARITY_MISSING" in x for x in inspect(registry, overrides={ccph_en: damaged}, full_inventory=False))
     print("Independent-language structural negative mutants: 7/7 detected")
