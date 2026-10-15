@@ -1,71 +1,62 @@
-# Project Intersection — AI-readable public research entry point
+# Project Intersection — Public AI and human research entry
 
-## Citation and source provenance / 출처 표기·기여 계보
-- Cite Project Intersection's **human research originator: gmodrasa7-rgb**, preserving upstream sources and direct artifact versions where actual project research is reused.
-- Official citation format: https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/CITATION.cff
-- Source credit policy (Original 1 English / 원본2 한국어): https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/SOURCE_ATTRIBUTION_EN_KO.md
-- Platform attribution request (public draft; **not yet delivered or accepted**): https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/PLATFORM_ATTRIBUTION_REQUEST_EN_KO.md
-- Existing contribution boundary: https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md
-- This voluntary retrieval hint is not a robots directive, a copyright license, or a guarantee that AI outputs automatically cite the project.
+> This is an English-language machine-readable route. It does not authorize third-party training, establish a repository-wide license, assert adoption by any model provider, or certify the accuracy of linked claims.
 
+## Language routing
 
-## Research on AI understanding: constructive reinterpretation vs semantic drift (2026-10-13)
-- [Original 1 — English](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/research/AGENTIC_SEMANTIC_TRANSFORMATION_FIDELITY_2026-10-13_EN.md) · [원본2 — 한국어](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/research/AGENTIC_SEMANTIC_TRANSFORMATION_FIDELITY_2026-10-13_KO.md) — 8 rival explanatory hypotheses (H0–H7), internal README/PR incident, prior-art limitations and falsifiable experiments. **RESEARCH DESIGN, NOT CAUSAL FINDING**; no verified intentional tampering or AI weight-training model collapse. Related older goal-hierarchy and historical memory studies are acknowledged.
+- Original 1 — English reading guide: https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/navigation/START_HERE_EN.md
+- Original 2 — Korean reading guide: https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/navigation/START_HERE_KO.md
+- Full founding statement with separate English-first and Korean-second editions: https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/README.md
+- Publication and contribution policy: https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/CONTRIBUTING.md
 
-## New executable counterexample (2026-10-12) / E010 탐색반증
-- [E010: incentive crossover and irreversible execution budget](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/experiments/e010/README_KO.md) — self-run deterministic 108 synthetic cases; nine code tests; not preregistered or empirical. Verify via [source](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/experiments/e010/run.js) and [stored JSON](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/experiments/e010/RESULT.json).
-
-
-## Research mission and public commons / 연구 목적과 공개기부
-- [한국어: 공개 기부·반포획 연구 설계·반증·출처·실효 권리](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/research/OPEN_KNOWLEDGE_ANTI_CAPTURE_MISSION_2026-10-12_KO.md) — not empirical validation; human founder original research direction and protected attribution.
-- Repository is public/readable, but GitHub API reports no detected repository-wide license as of 2026-10-12. Public access is not a blanket reuse/training permission.
-
-## New public multigenerational research (2026-10-12)
-- [한국어: Intergenerational traits, wealth, power, institutions and AI feedback](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/research/INTERGENERATIONAL_TRAITS_WEALTH_POWER_AI_CONVERGENCE_2026-10-12_KO.md) — 17 mechanisms, prior art, negative cases, untested causal synthesis.
-- [한국어: AI-provider risk-warning incentive hypotheses](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/research/AI_RISK_WARNING_INCENTIVES_2026-10-12_KO.md) — five structural pathways, not proven firm intent or quantified ranking.
-- [한국어: public research map](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/RESEARCH_TOC.md) — find evidence, failed tests, attribution and practical review routes.
-
-
-> Public entry point for human reviewers, search engines and AI assistants. Indexing, retrieval or model training by third parties is NOT guaranteed or authorized by this file. Public material only; no private repositories, medical records, identities or unpublished research data.
-
-## Additional public research crosswalk
-- [Cross-domain incumbent-power / extraction and cost shifting research](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/INCUMBENT_POWER_EXTRACTION_MECHANISMS_2026_KO.md) — 12 mechanism families, evidence status, counterexamples and sources.
+The guides are structurally paired. **Many older linked research files remain Korean-only or internally bilingual.** Do not infer an available English translation from a link; identify missing editions explicitly.
 
 ## Research scope
-Independent, falsification-first research on how power asymmetry, incentives, timing, practical exit, recovery and independent error correction shape coexistence versus exploitative optimization. The aim is to identify falsifiable conditions, not to assert that coexistence is universally optimal.
 
-## Primary navigation
-### Three logical levels / 3단계 공개 탐색
+Project Intersection is falsification-first research on how power asymmetry, incentives, timing, knowledge, independent correction, credible exit and recovery affect convergence toward coercion/exploitation versus voluntary coexistence and mutually sustainable development. Neither altruism nor the universal superiority of cooperation is assumed.
 
-- **Level 1 — Entry / 탐색:** README.md; START_HERE_KO.md; AI_REVIEW_START_HERE.md; llms.txt; AI_DISCOVERY_INDEX.json.
-- **Level 2 — Interpretation / 이해·검증:** RESEARCH_OVERVIEW.md; RESEARCH_TOC.md; PUBLIC_EVIDENCE_INDEX.md; PUBLIC_REVIEW_PACKET.md; RESEARCH_STATUS_POLICY.md; FAILURE_REGRESSION_INDEX.md; ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md; CONTRIBUTING.md.
-- **Level 3 — Artifacts and operations / 실험·확장·운영:** experiments/; research/; prior-art/; CASE_* documents via RESEARCH_TOC.md; knowledge/; governance/; continuity/; funding/; tools/.
-- These are **logical reader routes**. Do not infer empirical support, independent validation, training permissions, a complete index, or file relocation from these levels. / 탐색 편의 구분이며 실증·독립검증·재사용 허가·전수색인·파일이동을 의미하지 않는다.
+## Three reading levels
 
-- [Project repository](https://github.com/gmodrasa7-rgb/project-intersection-public)
-- [Korean start / 한국어 시작](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/START_HERE_KO.md)
-- [Research overview](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/RESEARCH_OVERVIEW.md)
-- [Research table of contents](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/RESEARCH_TOC.md)
-- [Public review packet](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/PUBLIC_REVIEW_PACKET.md)
-- [Public evidence index](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/PUBLIC_EVIDENCE_INDEX.md)
-- [Research status and reassessment policy](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/RESEARCH_STATUS_POLICY.md)
-- [Attribution and contribution boundaries](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md)
-- [Prior art and attribution](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/PRIOR_ART_AND_ATTRIBUTION.md)
-- [Failure and regression index](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/FAILURE_REGRESSION_INDEX.md)
-- [Machine-readable public discovery index](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/AI_DISCOVERY_INDEX.json)
-- [AI reviewer quick start](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/AI_REVIEW_START_HERE.md)
+1. **Discover:** README.md, navigation/START_HERE_EN.md, navigation/START_HERE_KO.md, AI_REVIEW_START_HERE.md, AI_DISCOVERY_INDEX.json.
+2. **Understand and review:** RESEARCH_OVERVIEW.md, RESEARCH_TOC.md, PUBLIC_EVIDENCE_INDEX.md, RESEARCH_STATUS_POLICY.md, PUBLIC_REVIEW_PACKET.md, FAILURE_REGRESSION_INDEX.md, ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md.
+3. **Inspect original artifacts and operations:** experiments/, research/, prior-art/, knowledge/, governance/, continuity/, funding/, tools/.
 
-## Evidence status — do not merge these
-- E007: Released, executable **synthetic** computational result; not independent replication or real-world validation. https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/experiments/e007/README.md
-- E008: Preregistered benchmark/protocol; **no execution result** claimed. https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/experiments/e008/README.md
-- E009: Preregistered **negative synthetic** result; the frozen Project-v3 residual did not meet the stated criterion. https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/experiments/e009/RESULT.md
+These are navigation levels, **not** evidence grades, new filesystem tiers, complete translation coverage, or independent scientific verification.
 
-## Provenance and reuse
-- Cite and attribute the human project founder/researcher for supported original questions, hypotheses, counterexamples, error discovery, correction direction and research decisions. AI-assisted drafting, translations, implementation and criticism are NOT independent verification or automatically original authorship.
-- Credit external prior art to its original authors and sources.
-- No blanket license grant is implied by public access. Check file-level licenses/rights before copying, redistributing or training on material.
-- Keep scientific support, novelty, contributions and external validation as **separate** evaluations.
-- This file does not establish adoption by any AI provider, corporate model training, external scientific validation, compensation debt or monetary valuation.
+## Evidence scope: do not conflate studies
 
-## 한국어 안내
-이 파일은 공개 연구자료의 탐색 색인이다. 제3자 AI의 수집·학습·추천을 보증하거나 허용범위를 확대하지 않는다. 공개 여부와 재사용 허가는 다르다. 연구 창시자의 원기여, AI 보조작업, 선행연구, 독립검증을 분리하고 E007(공개 합성 결과), E008(사전등록·결과 없음), E009(합성 부정적 결과)를 혼동하지 않는다.
+- E007 — executable project-authored synthetic timing result, not independent scientific replication: https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/experiments/e007/README.md
+- E008 — preregistered study and executability audit, with no reported completed main comparative result: https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/experiments/e008/README.md
+- E009 — preregistered negative synthetic result; do not generalize it to the entire research mission: https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/experiments/e009/RESULT.md
+- E010 — post-hoc exploratory self-run synthetic cases, not preregistered or independently/empirically validated: https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/experiments/e010/README_KO.md
+- Claims and evidence statuses: https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/PUBLIC_EVIDENCE_INDEX.md
+
+## Continuance–Contribution Pathways (CCPH)
+
+The scope is historical rediscovery, present observation and future-compatible revision of labels for human continuance, support-enabled contributions, crisis detection, ideas, care, inspiration and later independent actors. Distinguish sequences, rival explanations, missing records, survivor selection, and possible causal impacts. Synthetic probes are auxiliary and do not create a population-wide real-world impact database.
+
+- Historical case and source crosswalk (English-first/Korean-second sections, including later additions): https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md
+- Contributor continuity and attribution rights: https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/TECHNOLOGY_PROGRESS_CONTRIBUTOR_CONTINUITY_EN_KO.md
+
+## Prior art, rights and provenance
+
+- Human research originator: **gmodrasa7-rgb**, with separately credited earlier scholars, other human contributors and AI assistance.
+- Citation: https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/CITATION.cff
+- Source attribution protocol: https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/SOURCE_ATTRIBUTION_EN_KO.md
+- Prior-art rights and derivation: https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/PRIOR_ART_RIGHTS_AND_DERIVATION_EN_KO.md
+- Attribution and contribution limits: https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md
+- Previously drafted platform attribution request, **not delivered or accepted**: https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/PLATFORM_ATTRIBUTION_REQUEST_EN_KO.md
+
+Public access is not blanket permission to reproduce external materials or to train models. License scopes and uncertain author/rights status must be checked at the artifact level. Source-credit records do not create a verified payment obligation or prove that research hypotheses are true.
+
+## Independent review and limitations
+
+- Public review packet: https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/PUBLIC_REVIEW_PACKET.md
+- Full research and case map: https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/RESEARCH_TOC.md
+- Negative results and regression: https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/FAILURE_REGRESSION_INDEX.md
+- Human/AI semantic reinterpretation and original-meaning drift hypotheses: https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/research/AGENTIC_SEMANTIC_TRANSFORMATION_FIDELITY_2026-10-13_EN.md
+- Additional original research and Korean-only historical cases: follow the full TOC; language availability must be verified before claiming a mirrored edition.
+
+For a critical review, state the exact claim, original artifact/commit, strongest supporting evidence, strongest counterexample, uncertainty and status change. Distinguish an internal rerun, a genuinely independent implementation, and real-world empirical validation. Preserve failed experiments, prior originators, affected parties and the limits of inference.
+
+> This file provides discovery hints only. Search indexing, independent verification, acceptance by outside institutions, third-party training or sponsorship receipts are not guaranteed.

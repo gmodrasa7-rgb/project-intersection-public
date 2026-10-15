@@ -208,7 +208,7 @@ def check_public_path(path, label):
 
 levels = (discovery.get("navigation_levels") or {})
 for group, expected_len in [
-    ("level_1_discovery", 5),
+    ("level_1_discovery", 7),
     ("level_2_understanding_and_audit", 8),
     ("level_3_artifacts_and_operations", 9),
 ]:
