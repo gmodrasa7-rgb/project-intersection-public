@@ -54,6 +54,11 @@ CCPH는 과거 사례를 재발굴하고 현재의 존속·영향을 관찰하�
 - [외부 검토 자료](../PUBLIC_REVIEW_PACKET.md): 주장·재실행 경계·반증 경로.
 - [실패·회귀검사 색인](../FAILURE_REGRESSION_INDEX.md): 실패 및 수정 이력.
 - [연구지원 안내](../funding/FUNDER_START_HERE.md)와 [공개 후원장부](../funding/SPONSORSHIP_PUBLIC_LEDGER.md): 실제 지원금 수령이 검증되었다는 뜻은 아니다.
+- [자율 연구 연속성 운영](../AUTONOMOUS_RESEARCH_LOOP.md)과 [기계 판독 상태](../AUTONOMOUS_RESEARCH_STATE.json): 창시자에게 반복 복구 노동을 요구하지 않기 위한 절차.
+- [기여자 비용 별도 회귀검사](../CONTRIBUTION_COST_ACCOUNTING_REGRESSION.md): 연구 성과와 기여자의 실익·손실 구분.
+- [지식그래프 탐색기](../knowledge/explorer.html): 원자료를 대체하지 않는 출처 연계 탐색.
+- [기여 안내](../CONTRIBUTING.md): 출처·언어판·반례·개인정보 규칙.
+- [장기 최소침해 모형](../LONG_HORIZON_MIN_INTERVENTION_E2E.md): 보편법칙이 아닌 제한된 모형과 한계.
 - [기존 한국어 상세 탐색문](../START_HERE_KO.md): 기여·출처 이력 보존을 위한 종전 자료이며 언어 혼재를 모두 해결한 판본은 아니다.
 
 <!-- PI-SECTION: limitations -->
