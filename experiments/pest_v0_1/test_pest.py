@@ -125,6 +125,30 @@ class TestPEST(unittest.TestCase):
                          ("B", .75, .25, 1, 0))
         self.assertNotEqual((a.PT_i, a.PT_j), (b.PT_i, b.PT_j))
 
+    def test_zero_baseline_floor_not_misreported_as_protection_failure(self):
+        row = next(r for r in paired_contrasts(self.cases)
+                   if r["world"] == "survival_fear"
+                   and r["PT_i"] == .25 and r["PT_j"] == .25)
+        self.assertEqual(row["baseline_psi"], 0)
+        self.assertEqual(row["treated_psi"], 0)
+        self.assertTrue(row["both_at_zero_floor"])
+        self.assertTrue(row["XG_ALONE_INEFFECTIVE"])  # preserve old threshold flag
+        self.assertAlmostEqual(row["raw_joint_margin_difference"], -0.133875)
+
+    def test_role_label_twins_are_not_independent_model_states(self):
+        unique = {(c.world, c.PT_i, c.PT_j, c.XG_i, c.XG_j)
+                  for c in self.cases}
+        self.assertEqual(len(self.cases), 96)
+        self.assertEqual(len(unique), 48)
+        rows = paired_contrasts(self.cases)
+        self.assertEqual(len(rows), 24)
+        for r in rows:
+            twin = next(t for t in rows
+                        if t["world"] == r["world"] and t["PT_i"] == r["PT_i"]
+                        and t["PT_j"] == r["PT_j"] and t["j"] != r["j"])
+            self.assertEqual({k: v for k, v in r.items() if k != "j"},
+                             {k: v for k, v in twin.items() if k != "j"})
+
     def test_identity_swap_no_payoff_change(self):
         a = Case("backlash", "A", .75, .75, 1, 1)
         self.assertEqual(psi_proxy(a), psi_proxy(replace(a, suppressor="B")))
