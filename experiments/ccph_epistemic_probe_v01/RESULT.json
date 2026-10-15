@@ -16,13 +16,13 @@
     "illustrative_events": 11,
     "checks_passed": 121,
     "failed_checks": 0,
-    "output_only_positive": 1,
     "raw_event_count_positive": 8,
     "confirmed_true_warning_events": 1,
     "confirmed_valid_logic_events": 1,
     "unresolved_warning_events": 1,
     "unique_artifacts_in_3_mentions": 2,
-    "terminal_projection_noninjective": true
+    "terminal_projection_noninjective": true,
+    "outcome_only_positive": 1
   },
   "logical_claim": "In the stipulated example worlds, terminal_net 0 is consistent with true ignored warning and false ignored warning. A function of terminal_net alone cannot recover both epistemic statuses.",
   "negative_controls": [
