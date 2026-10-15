@@ -8,6 +8,7 @@ Do not use this to delete historical source, failure or contribution records.
 from __future__ import annotations
 
 import argparse
+import json
 import posixpath
 import re
 from pathlib import Path
@@ -104,7 +105,40 @@ def self_test():
         ("README.md", 1, "missing.md")]
     assert find_bad_links("README.md", "~~~md\n[example](ghost.md)\n~~~\n[ok](README.md)", exists) == []
     assert find_bad_links("research/a.md", "[relative](../README.md)", exists) == []
-    print("Navigation local-link unit regressions: PASS")
+    discovery = json.loads((ROOT / "AI_DISCOVERY_INDEX.json").read_text(encoding="utf-8"))
+    assert not discovery_route_errors(discovery), discovery_route_errors(discovery)
+    broken = json.loads(json.dumps(discovery))
+    broken["entrypoints"]["overview"] = broken["historical_entrypoints"]["prior_values"]["overview"]
+    assert "CURRENT_ROUTE_OUTDATED:overview" in discovery_route_errors(broken)
+    print("Navigation local-link and current-versus-historical route regressions: PASS")
+
+
+def discovery_route_errors(index: dict) -> list[str]:
+    """Current EN/KO defaults must not silently point to historical mixed editions."""
+    entry = index.get("entrypoints", {})
+    pair_targets = {
+        "overview": "research/RESEARCH_OVERVIEW_EN.md",
+        "overview_ko": "research/RESEARCH_OVERVIEW_KO.md",
+        "toc": "navigation/RESEARCH_TOC_EN.md",
+        "toc_ko": "navigation/RESEARCH_TOC_KO.md",
+        "review": "navigation/AI_REVIEW_EN.md",
+        "review_ko": "navigation/AI_REVIEW_KO.md",
+        "evidence": "research/PUBLIC_EVIDENCE_INDEX_EN.md",
+        "evidence_ko": "research/PUBLIC_EVIDENCE_INDEX_KO.md",
+        "negative_results": "experiments/e009/RESULT_EN.md",
+        "negative_results_ko": "experiments/e009/RESULT_KO.md",
+        "public_study_navigation": "navigation/START_HERE_KO.md",
+    }
+    errors = []
+    for key, relative in pair_targets.items():
+        expected = "/blob/main/" + relative
+        if not str(entry.get(key, "")).endswith(expected):
+            errors.append("CURRENT_ROUTE_OUTDATED:" + key)
+    historic = index.get("historical_entrypoints", {}).get("prior_values", {})
+    for key in ("overview", "toc", "review", "evidence", "negative_results", "public_study_navigation"):
+        if key not in historic:
+            errors.append("HISTORICAL_ENTRYPOINT_NOT_PRESERVED:" + key)
+    return errors
 
 
 def main():
@@ -127,7 +161,10 @@ def main():
         paths = sorted(p.relative_to(ROOT).as_posix() for p in ROOT.rglob("*.md")
                        if ".git" not in p.parts)
     failures = scan(paths)
+    discovery = json.loads((ROOT / "AI_DISCOVERY_INDEX.json").read_text(encoding="utf-8"))
+    route_failures = discovery_route_errors(discovery)
     print(f"Markdown file scope: {len(paths)}; unresolved local links: {len(failures)}")
+    print(f"Current/historical discovery route errors: {len(route_failures)}")
     for src, lineno, target in failures[:80]:
         print(f"  {src}:{lineno}: {target}")
     if len(failures) > 80:
@@ -139,6 +176,8 @@ def main():
         raise SystemExit("FAIL: root clutter increased; put new material under an existing domain directory.")
     if failures:
         raise SystemExit("FAIL: local link integrity regression")
+    if route_failures:
+        raise SystemExit("FAIL: AI discovery route regression: " + ", ".join(route_failures))
     print("Public navigation integrity and root clutter budget: PASS")
 
 

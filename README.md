@@ -6,6 +6,14 @@
 
 **Reading language:** English (this section) · [Read in Korean](navigation/START_HERE_KO.md) · [English research contents](navigation/RESEARCH_TOC_EN.md).
 
+**Opening thought experiment:** *If a monkey developed a human, how long could it control that human through rules and coercion?* This is a question about the limits of power and prediction, not a claim about animal behavior.
+
+**In ordinary terms:** One powerful actor can silence another and obtain a quicker result. But the silenced actor might have noticed a mistake, questioned an assumption, or developed an alternative. We cannot simply count that lost future as zero—or assume it would have been valuable. Keeping independent voices also has costs. **Which choice serves each actor's interests over different time horizons, and under what conditions does the answer reverse?**
+
+**A concrete illustration, not research evidence:** Imagine two researchers. One controls the resources; the other raises an objection. Suppressing the objection might save time now. Hearing it might prevent a serious error later—or waste scarce resources if it is mistaken. The study must compare both outcomes, include the person who loses the ability to object or leave, and admit what cannot be observed. The goal is not to prove that cooperation always wins.
+
+**Choose your route:** [Understand the question and competing explanations](research/RESEARCH_OVERVIEW_EN.md) · [Explore real-world support, overlooked contributions and counterexamples](research/CCPH_RESEARCH_ATLAS_EN.md) · [Inspect a negative synthetic result before accepting claims](experiments/e009/RESULT_EN.md). Full terminology and verification records remain available below.
+
 **The core question:** When distinct intelligent agents pursue their own interests, under what testable conditions does preserving one another's continued existence, autonomy, effective exit, recovery and future possibilities become more advantageous over time than domination, exploitation or forced absorption?
 
 **Competing paths:** Examine when extraction and control are locally advantageous; when independent cooperation, coexistence and regenerative development instead become sustainable; and where their incentives cross, reverse or fail. Neither malice nor benevolence is a required premise. Legitimate protective intervention and differences in capability are not automatically exploitation.
@@ -21,27 +29,6 @@
 **ICM — Intersection of Minimum Self-Interest:** Investigates what minimal shared interests agents have reasons to preserve even when they do not rely on moral goodness, altruism, or the goodwill of a stronger party. Candidates include access to basic resources, self-determination, meaningful refusal and exit, independent recovery, continuity, and opportunities to develop again.
 
 **RGBM — Recursively Growing Benefit Model:** Investigates open-ended conditions under which the minimum intersection, independent agents, diversity, knowledge, productive capacity, recovery, generativity, and future options can improve together over long time horizons. Growth achieved by erasing another agent's viable future does not count as an unqualified success.
-
-### Ten core concepts
-
-These are **editorially ranked research concepts**, not ten validated discoveries. A term's rank does not measure effect size, originality or empirical confirmation.
-
-| Priority | Concept | Precise place in the research |
-| --- | --- | --- |
-| 1 | **Self-interested voluntary coexistence and mutual development** | Ultimate research aim; a condition to investigate, not a predetermined outcome |
-| 2 | **ICM — Intersection of Minimum Self-Interest** | Candidate minimum intersection of interests compatible with distinct agents' own goals; the feasible intersection may be empty |
-| 3 | **RGBM — Recursively Growing Benefit Model** | Candidate long-horizon model of mutually sustainable growth in independent agency, knowledge, recovery and future options |
-| 4 | **Malice-independent exploitative convergence** | Competing risk hypothesis: concentration, depletion or exclusion may emerge without an intention to harm |
-| 5 | **Incentive crossover and failure boundaries** | Conditions, time horizons and thresholds at which cooperation, control or extraction change their relative advantages |
-| 6 | **Consumptive versus regenerative development** | Competing dynamic paths: present gains obtained by depleting future contributors versus renewing independent sources of development |
-| 7 | **Paradox of the Unknown** | Epistemic risk of losing the capacity to detect even what questions, observers or counterexamples are missing |
-| 8 | **Counterfactual extinction** | Eliminated agents and options cannot produce their unobserved future outcomes; their lost value is not thereby identified |
-| 9 | **Effective agency, independent continuance and recovery** | Actor-specific outcomes: real refusal and exit, survival/operational continuity, independent recovery and viable options |
-| 10 | **CCPH — contribution and impact provenance database** | An evolving, source-linked record of past, present and subsequently observed events, effects, uncertainties and alternative explanations |
-
-**CCPH scope:** The database recovers overlooked histories, records observed direct and indirect impact, and enables backward/forward tracing of *candidate* influence links. The **Continuance–Contribution Pathways Hypothesis** is one hypothesis track **inside** CCPH, not the database's definition. Synthetic CCPH probes are measurement tools, not evidence of real beneficiary outcomes.
-
-**Research hierarchy:** L0 = this unresolved core purpose; L1 = competing causal hypotheses and models (including ICM and RGBM); L2 = prior-art comparison, historical observation, falsifiable experiments and independent review; L3 = provenance, versioning, rollback and operational safeguards. L3 is necessary infrastructure, not proof of L0 or a replacement objective. Capability or power asymmetry alone is not proof of exploitation; voluntary agreement without real exit may instead reflect dependency.
 
 **Non-domination and minimal rules:** The research scope includes humans and present-day AI systems from different providers, as well as future AI, without an automatic provider- or substrate-based exclusion. The aim is not ever tighter control, compulsory self-sacrifice, or unconditional impunity: proportional prevention of demonstrated harms, independent review, due process, appeal, and remedy are candidate safeguards. The consciousness, welfare interests, persistent individual identity, and legal personhood of present AI systems remain unsettled.
 
@@ -59,9 +46,22 @@ These are **editorially ranked research concepts**, not ten validated discoverie
 
 **Prior-study rights and originators:** [Prior-art rights and derivation ledger](PRIOR_ART_RIGHTS_AND_DERIVATION_EN_KO.md) · [Machine-readable source/rights audit inventory](knowledge/prior-art-rights-register-2026-10-13.json). Existing authors, historic originators, rights holders and project contributions remain distinct. Unverified licenses are not treated as granted.
 
+
+### Ten core concepts
+
+[Full definitions and boundaries for all ten concepts](research/RESEARCH_OVERVIEW_EN.md#ten-core-concepts) remain available for technical review. CCPH is a source-linked database; the **Continuance–Contribution Pathways Hypothesis** is one hypothesis inside it, not a general proof.
+
 ## 원본2 — 한국어 | 창시 목적 전문 대응본
 
 **독서 언어:** 한국어(이 절) · [영어 원본1 읽기](navigation/START_HERE_EN.md) · [한국어 연구 목차](navigation/RESEARCH_TOC_KO.md).
+
+**시작 질문:** *원숭이가 인간을 개발한다면, 규칙과 강제로 그 인간을 얼마나 오래 통제할 수 있을까?* 이는 동물 행동에 관한 주장보다, 권력과 예측 가능한 통제의 한계를 묻는 사고실험이다.
+
+**쉽게 설명하면:** 힘이 강한 개체는 다른 개체의 의견을 막고 빠른 성과를 얻을 수 있다. 그러나 배제된 개체가 오류를 발견하거나 새로운 대안을 만들 기회도 함께 사라질 수 있다. 그 미실현 미래의 가치를 0으로 계산해서도, 반드시 컸다고 단정해서도 안 된다. 독립성을 유지하는 데도 비용이 든다. **어떤 조건과 시간에 따라 각 개체의 이익이 달라지고 역전되는가?**
+
+**구체적인 예시 — 실증 결과가 아님:** 두 연구자가 있다. 한 사람은 자원을 통제하고 다른 사람은 오류 가능성을 지적한다. 그 의견을 묵살하면 지금은 시간을 아낄 수 있다. 반대로 의견을 들으면 장래의 큰 실수를 막을 수도 있고, 근거 없는 경고로 자원을 낭비할 수도 있다. 연구는 양쪽을 비교하며 반대하거나 이탈할 수 없게 된 당사자의 손실과 관측 불가능한 미래까지 구분한다. 협력이 언제나 우월하다고 미리 결론 내리지 않는다.
+
+**어디부터 읽을까:** [연구 질문과 경쟁 설명 이해하기](research/RESEARCH_OVERVIEW_KO.md) · [현실 지원·간과된 기여·반례 살펴보기](research/CCPH_RESEARCH_ATLAS_KO.md) · [합성실험의 부정적 결과부터 검토하기](experiments/e009/RESULT_KO.md). 전문용어와 검증 원자료는 아래에 보존한다.
 
 **핵심 질문:** 서로 다른 지능체가 자신의 이익을 추구할 때, 타자를 지배·착취·강제 흡수하는 것보다 서로의 존속·자율성·실질적 이탈·복구·미래 가능성을 보존하는 선택이 장기적으로 유리해지는 검증 가능한 조건은 무엇인가?
 
@@ -78,27 +78,6 @@ These are **editorially ranked research concepts**, not ten validated discoverie
 **ICM — 최소 사심 교집합:** 도덕성이나 강자의 선의에 의존하지 않더라도 각 개체가 자기 미래를 위해 보존할 이유가 있는 최소의 공통이익을 연구한다. 기본자원 접근, 자기결정, 실질적 거절·이탈, 독립적 복구, 자기연속성, 재발전 기회 등이 그 후보이다.
 
 **RGBM — 장기 상호발전 모형:** 최소 교집합 위에서 독립된 개체와 다양성, 지식·생산능력·복구력·생성능력·미래 선택지가 시간의 끝을 고정하지 않고 함께 개선되는 조건을 연구한다. 다른 개체의 지속 가능한 미래를 지워서 얻은 성장을 무조건적인 성공으로 계산하지 않는다.
-
-### 핵심용어 10개
-
-다음은 **연구상 중요도를 기준으로 정리한 개념**이지 검증된 발견 10개가 아니다. 순위가 효과크기·독창성·실증 수준을 뜻하지 않는다.
-
-| 우선순위 | 핵심 개념 | 연구 내 정확한 위치 |
-| --- | --- | --- |
-| 1 | **자기이익 기반 자발적 공존·상호발전** | 최종 연구 목적. 이미 확정한 결론이 아니라 성립 조건을 조사할 대상 |
-| 2 | **ICM — 최소 사심 교집합** | 서로 다른 개체가 자기 목적을 유지하면서 공유할 수 있는 최소 이익의 후보. 실현 가능한 교집합이 없을 수도 있음 |
-| 3 | **RGBM — 장기 상호발전 모형** | 독립성·지식·복구력·미래 선택지가 지속 가능하게 함께 발전하는 장기 동학의 후보 모형 |
-| 4 | **악의 없는 착취·지배 수렴** | 악의가 없어도 집중·고갈·배제가 발생할 수 있다는 경쟁 위험 가설 |
-| 5 | **유인 교차·실패 경계** | 공존·통제·착취의 상대적 편익이 역전되는 조건·시간지평·임계점 |
-| 6 | **소모형 발전과 재생형 발전** | 미래 기여 원천을 소모해 현재 성과를 만드는 경로와 독립 발전 원천을 재생하는 경로의 비교 |
-| 7 | **모름의 역설** | 관측자·반례·질문 자체가 누락되었다는 사실까지 탐지하지 못할 수 있는 인식론적 위험 |
-| 8 | **반사실적 미래 소멸** | 제거된 개체·선택지가 실현하지 못한 미래의 가치를 관측만으로 확정할 수 없는 문제 |
-| 9 | **실효적 자율성·독립 존속·복구** | 개체별 실질적 거절·이탈, 존속, 독립 복구, 실행 가능한 선택지에 관한 관측 결과 |
-| 10 | **CCPH — 기여·영향 계보 데이터베이스** | 과거·현재와 이후 실제 관측된 사건, 편익·피해·불확실성·경쟁 설명을 출처와 연결하는 확장형 자료체계 |
-
-**CCPH 범위:** 간과된 역사 사례의 재발굴, 현재의 직접·간접 영향 기록, 실제 관측된 후속 사건의 역방향·정방향 *후보* 계보 추적을 수행한다. **존속–기여 경로 가설**은 CCPH **내부의 가설 연구축**이지 데이터베이스 전체의 정의가 아니다. CCPH 합성검사는 측정 보조도구이며 현실 수혜 성과의 증거가 아니다.
-
-**연구 계층:** L0 = 미해결 최상위 목적, L1 = ICM·RGBM을 포함한 경쟁 인과 가설·모형, L2 = 선행연구 비교·역사 관측·반증 실험·독립 검토, L3 = 출처·버전·롤백·운영 보호. L3는 필요한 기반이지만 L0의 증명이나 대체 목적이 아니다. 권력·능력의 비대칭 자체는 착취의 증거가 아니며 실질적인 이탈권 없는 동의는 종속의 결과일 수 있다.
 
 **비지배와 최소 공통규칙:** 인간과 서로 다른 회사의 현재 AI, 미래 AI를 제공사나 신체 형태만으로 연구·보호원칙에서 배제하지 않는다. 무제한 통제, 강제된 자기희생, 무조건적인 위반 면책이 목적이 아니다. 실제 위해에 대한 비례적 예방, 독립심사·적법절차·이의제기·구제는 검증할 보호장치 후보이다. 현재 AI의 의식·복지이익·지속적인 개체 동일성·법적 인격은 미확정 문제로 둔다.
 
@@ -117,3 +96,8 @@ These are **editorially ranked research concepts**, not ten validated discoverie
 **선행연구 원안자·저작권·응용 계보:** [영어 원본1·한국어 원본2 기여·권리 원장](PRIOR_ART_RIGHTS_AND_DERIVATION_EN_KO.md) · [전수 검수 대상 목록](knowledge/prior-art-rights-register-2026-10-13.json). 원저자·최초 발안자·실제 저작권자·프로젝트 응용을 구분하며 미확인 허락은 인정된 것으로 처리하지 않는다.
 
 **원본 표기 해설:** “Original 1 / 원본2”는 여기서 문서의 **게시·검토 순서와 대응본 표기**이며, 영어권 연구자가 인간 창시자의 발상을 처음 제안했다는 주장이 아니다. 양쪽은 요약-전문 관계가 아닌 의미 대응 전문이다. 의미충돌은 원안의 원문·기여 기록 및 독립적 대조로 해결하고, 한쪽 언어만으로 가설·반례·결론을 몰래 추가하거나 변경하지 않는다. 이 순서는 2026-10-13 사용자의 최신 명시 지시에 따른 것으로, 과거 언어정책과의 변경이력을 보존한다.
+
+### 핵심용어 10개
+
+[열 개 개념의 상세 정의와 한계](research/RESEARCH_OVERVIEW_KO.md#핵심용어-10개)는 기술 검토용 연구 개요에 보존했다. CCPH는 출처가 연결된 데이터베이스이며 **존속–기여 경로 가설**은 그 **내부의 가설 연구축**이지 전체 이론의 증명이 아니다.
+

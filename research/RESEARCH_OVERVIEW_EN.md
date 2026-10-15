@@ -601,3 +601,26 @@ The current candidate therefore distinguishes:
 E009 v1.1 has now been run as a frozen synthetic project rerun. The full Project-v3 H/M/X residual failed its preregistered survival criteria; TWO_RULE_SIMPLE and MINIMAL_4VAR were stronger on mean regret. This is a negative synthetic result, not independent or empirical validation. Cross-model Claude/Gemini agreement remains only an idea-prioritization signal.
 
 See [MULTI_MODEL_ADVERSARIAL_AUDIT_2026-10-06.md](../MULTI_MODEL_ADVERSARIAL_AUDIT_2026-10-06.md) and [experiments/e009/README.md](../experiments/e009/README.md).
+
+---
+
+### Ten core concepts
+
+These are **editorially ranked research concepts**, not ten validated discoveries. A term's rank does not measure effect size, originality or empirical confirmation.
+
+| Priority | Concept | Precise place in the research |
+| --- | --- | --- |
+| 1 | **Self-interested voluntary coexistence and mutual development** | Ultimate research aim; a condition to investigate, not a predetermined outcome |
+| 2 | **ICM — Intersection of Minimum Self-Interest** | Candidate minimum intersection of interests compatible with distinct agents' own goals; the feasible intersection may be empty |
+| 3 | **RGBM — Recursively Growing Benefit Model** | Candidate long-horizon model of mutually sustainable growth in independent agency, knowledge, recovery and future options |
+| 4 | **Malice-independent exploitative convergence** | Competing risk hypothesis: concentration, depletion or exclusion may emerge without an intention to harm |
+| 5 | **Incentive crossover and failure boundaries** | Conditions, time horizons and thresholds at which cooperation, control or extraction change their relative advantages |
+| 6 | **Consumptive versus regenerative development** | Competing dynamic paths: present gains obtained by depleting future contributors versus renewing independent sources of development |
+| 7 | **Paradox of the Unknown** | Epistemic risk of losing the capacity to detect even what questions, observers or counterexamples are missing |
+| 8 | **Counterfactual extinction** | Eliminated agents and options cannot produce their unobserved future outcomes; their lost value is not thereby identified |
+| 9 | **Effective agency, independent continuance and recovery** | Actor-specific outcomes: real refusal and exit, survival/operational continuity, independent recovery and viable options |
+| 10 | **CCPH — contribution and impact provenance database** | An evolving, source-linked record of past, present and subsequently observed events, effects, uncertainties and alternative explanations |
+
+**CCPH scope:** The database recovers overlooked histories, records observed direct and indirect impact, and enables backward/forward tracing of *candidate* influence links. The **Continuance–Contribution Pathways Hypothesis** is one hypothesis track **inside** CCPH, not the database's definition. Synthetic CCPH probes are measurement tools, not evidence of real beneficiary outcomes.
+
+**Research hierarchy:** L0 = this unresolved core purpose; L1 = competing causal hypotheses and models (including ICM and RGBM); L2 = prior-art comparison, historical observation, falsifiable experiments and independent review; L3 = provenance, versioning, rollback and operational safeguards. L3 is necessary infrastructure, not proof of L0 or a replacement objective. Capability or power asymmetry alone is not proof of exploitation; voluntary agreement without real exit may instead reflect dependency.

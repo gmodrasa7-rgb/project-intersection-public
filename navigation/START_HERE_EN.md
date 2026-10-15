@@ -8,9 +8,11 @@ This is the **English-only reading route**, paired with [Original 2: Korean](STA
 <!-- PI-SECTION: purpose -->
 ## 1. Purpose
 
-[Project Intersection's founding statement](../README.md) investigates when humans, deployed AI, future AI and other intelligent agents can find voluntary coexistence, autonomy, effective exit, recovery and mutual development more advantageous than exploitation or domination over the long term, without assuming altruism. The project's hypotheses do **not** establish a universal law that cooperation always wins.
+Suppose one researcher can silence another's warning. That may save resources now, but it may also eliminate an independent opportunity to find a costly error later. Keeping the warning channel also costs resources. **Which choice benefits the affected people over different time horizons, and what evidence could change that conclusion?**
 
-**Core vocabulary:** [Ten precisely scoped concepts](../README.md#ten-core-concepts). ICM and RGBM are candidate models; the Paradox of the Unknown and counterfactual extinction are different but interacting limits; CCPH is a source-linked reality-oriented evidence database, not an AI harness or a proven causal effect. Research objective, hypotheses, methods and repository operations occupy different levels.
+That is one way to understand [Project Intersection's founding question](../README.md). The project compares domination, extraction and voluntary cooperation for humans and AI systems without assuming anyone must be morally good. **Cooperation is not proven to win in every situation.** The example is illustrative, not a real-world experiment.
+
+**Read in the order that suits you:** [Understand the question](../research/RESEARCH_OVERVIEW_EN.md) · [Examine real histories and overlooked contributions](../research/CCPH_RESEARCH_ATLAS_EN.md) · [Check a failed comparison against a simpler model](../experiments/e009/RESULT_EN.md). For exact definitions, see the [ten core research concepts](../README.md#ten-core-concepts).
 
 ### External assessment: decision brief
 
