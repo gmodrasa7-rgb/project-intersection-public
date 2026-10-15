@@ -49,6 +49,34 @@ def audit(body):
         errors.append("RECOVERY_REQUIREMENT_REMOVED")
     if "currently deployed AI" not in english or "현재 배포된 AI" not in korean:
         errors.append("PRESENT_AI_EXCLUDED")
+    # Prevent a future edit from pushing technical material ahead of the first
+    # human question. The collapsed material remains available in Markdown source
+    # and through an explicit GitHub reader interaction.
+    for label, section, question, caution, reader_link, cap, anchor in (
+        ("EN", english, "**Opening thought experiment:**", "**Scientific boundary:**",
+         "**Choose your route:**", 2300, "### Ten core concepts"),
+        ("KO", korean, "**시작 질문:**", "**과학적 경계:**",
+         "**어디부터 읽을까:**", 1700, "### 핵심용어 10개"),
+    ):
+        if section.count("<details>") != 1 or section.count("</details>") != 1:
+            errors.append("DISCLOSURE_COUNT_DRIFT:" + label)
+            continue
+        opening = section.split("<details>", 1)[0]
+        expanded = section.split("<details>", 1)[1].split("</details>", 1)[0]
+        if len(opening) > cap:
+            errors.append("FIRST_VIEW_READING_BUDGET_EXCEEDED:" + label)
+        if any(key not in opening for key in (question, caution, reader_link)):
+            errors.append("HUMAN_QUESTION_OR_UNCERTAINTY_HIDDEN:" + label)
+        # The uncertainty itself, not just its bold label, must remain
+        # visible before a reader opens the specialist section.
+        specific_caution = ("not a proven universal theorem" if label == "EN"
+                            else "보편법칙의 증명이 아니다")
+        if specific_caution not in opening:
+            errors.append("FIRST_VIEW_UNCERTAINTY_WAS_PROMOTED:" + label)
+        if "summary>" not in expanded or "research" not in opening.lower() and label == "EN":
+            errors.append("DISCLOSURE_OR_RESEARCH_ROUTE_LOST:" + label)
+        if section.index("<details>") > section.index("</details>") or section.index("</details>") > section.index(anchor):
+            errors.append("DISCLOSURE_ORDER_DRIFT:" + label)
     return errors
 
 
@@ -85,6 +113,10 @@ def test_mutations(text):
       "lost_en_priority": text.replace("**Priority 0 — prevent recurrence before expansion:**", "**Unclear priority:**", 1),
       "lost_ko_priority": text.replace("**제0 최우선 원칙 — 확장보다 재발 방지:**", "**기타:**", 1),
       "lost_root_cause": text.replace("underlying causes", "unspecified causes", 1),
+      "disclosure_removed": text.replace("<details>", "<open-details>", 1),
+      "hide_english_question": text.replace("**Opening thought experiment:**", "**Intro hidden:**", 1),
+      "hide_korean_question": text.replace("**시작 질문:**", "**미확인 질문:**", 1),
+      "wrong_disclosure_order": text.replace("</details>", "</details>\\n\\n<details>", 1),
     }
     for name, test in mutants.items():
         assert audit(test), "Mutation bypassed safeguard: " + name
