@@ -189,7 +189,9 @@ def audit_e009_focus_gate(en: str, ko: str, frozen: dict, e008: dict) -> list[st
     for label, tokens in required.items():
         section = sections.get(label, "")
         for token in tokens:
-            if token not in section:
+            exact_zero = (token in ("0 hours", "0시간") and
+                          re.search(r"(?<![0-9])" + re.escape(token), section) is None)
+            if token not in section or exact_zero:
                 errors.append("FOCUS_BOUNDARY_LOST:" + label + ":" + token)
 
     a = frozen["stress_primary"]
