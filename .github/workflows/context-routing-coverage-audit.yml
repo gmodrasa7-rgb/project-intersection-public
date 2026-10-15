@@ -33,7 +33,7 @@ jobs:
           old=json.loads(Path("/tmp/legacy.json").read_text())
           a=json.loads(Path("/tmp/coverage.json").read_text())
           assert old["checks_passed"] == 28
-          assert a["queries"] == 16
+          assert a["queries"] == 24
           assert a["gold_family_instances"] > 16
           assert a["v02_family_covered"] >= a["legacy_family_covered"]
           assert a["v02_cases_explicitly_reporting_incompleteness"] > 0
