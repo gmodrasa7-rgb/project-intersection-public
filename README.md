@@ -22,6 +22,8 @@
 
 **Evidence and contribution boundary:** This is a research aim, not a proven universal theorem that cooperation always wins. Separate synthetic calculation, real-world evidence, independent external replication, and unresolved questions; preserve negative results and the provenance of the human research originator, earlier scholars, and assisting AI systems. Measure the research's progress separately from its human contributors' actual benefits and costs.
 
+**Choose a review task (direct evidence, not endorsements):** [What failed? — E009 negative result](experiments/e009/RESULT_EN.md) · [Can I rerun the model? — E007 instructions](experiments/e007/README_EN.md) · [What is truly new? — prior-art comparison](research/PUBLIC_REVIEW_PACKET_EN.md#3a-prior-art-versus-what-would-be-an-incremental-project-contribution) · [What would funding test? — funder review](funding/FUNDER_START_HERE.md#original-1--english). See the [English claim-status ledger](research/PUBLIC_EVIDENCE_INDEX_EN.md) before generalizing any result.
+
 **Priority 0 — prevent recurrence before expansion:** Before publishing or promoting a new claim, experiment, translation, funding description, or automated change, trace relevant known failures to their underlying causes, define the independently inspectable source and affected parties, apply the smallest reversible prevention with an explicit rollback path, and verify a regression that would detect the same failure again. If evidence, permission, translation equivalence, or a required check is unknown, label it **unverified** and do not present it as completed or independently validated. Preserve negative results, provenance, independent refusal/exit, and contributors' recovery costs. A passed check covers only what was actually tested; it does not guarantee zero future failures. [Contribution and prevention rules](CONTRIBUTING.md) · [Failure lineage](FAILURE_REGRESSION_INDEX.md).
 
 **First reading path:** [English reading route](navigation/START_HERE_EN.md) · [Research overview](research/RESEARCH_OVERVIEW_EN.md) · [Evidence index](research/PUBLIC_EVIDENCE_INDEX_EN.md) · [Reproduction and review](research/PUBLIC_REVIEW_PACKET_EN.md) · [English research contents](navigation/RESEARCH_TOC_EN.md) · [Historical detailed index](RESEARCH_TOC.md) · [English independent review](navigation/AI_REVIEW_EN.md) · [Attribution](ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md).
@@ -49,6 +51,8 @@
 **하위 연구와 구현 가설:** 초지능 격차, 유기기질·체화 연구 및 인식 패러다임 변화, 전 과정 공개원장과 기여보상, AR·블랙박스 기반 ICM 인프라, 세대간 권력재생산, AI 기업 위험담론, 합성실험은 모두 최상위 목적을 구체화하거나 반증하는 **하위 연구축**이지 그 목적을 대체하지 않는다.
 
 **증거·기여 경계:** 이는 연구 목표이며 협력이 모든 조건에서 우월하다는 보편법칙의 증명이 아니다. 합성계산·현실 증거·외부 독립복제·미해결 질문을 구별하고 부정결과와 원기여 인간 연구자·선행연구자·보조 AI의 기여 계보를 보존한다. 연구 성과와 실제 기여자의 비용·편익도 따로 측정한다.
+
+**심사 과제별 원자료 바로가기(추천·보증 아님):** [무엇이 실패했는가? — E009 부정결과](experiments/e009/RESULT_KO.md) · [직접 재실행할 수 있는가? — E007 안내](experiments/e007/README_KO.md) · [무엇이 새로운가? — 선행연구 비교](research/PUBLIC_REVIEW_PACKET_KO.md#3a-선행연구와-프로젝트의-검증-가능한-추가-기여-구분) · [지원금으로 무엇을 검증하는가? — 후원 심사](funding/FUNDER_START_HERE.md#원본2--한국어). 결과 일반화에 앞서 [한국어 주장·증거 원장](research/PUBLIC_EVIDENCE_INDEX_KO.md)을 확인한다.
 
 **제0 최우선 원칙 — 확장보다 재발 방지:** 새로운 주장·실험·번역·연구지원 설명·자동 변경을 게시하거나 검증된 결과로 승격하기 전에, 관련된 기존 실패의 **발생 원인**을 역추적하고, 독립적으로 확인 가능한 원출처·영향 당사자를 구분하며, 가장 작고 되돌릴 수 있는 예방책과 동일 실패를 잡는 회귀검사를 마련한다. 증거·허락·번역 의미 일치·필수 검사가 확인되지 않으면 **미검증**으로 표시하고 완료·독립검증으로 포장하지 않는다. 부정결과·기여 계보·실질적 거절과 이탈·기여자의 복구비용을 보존한다. 자동검사 통과는 검사된 범위만 뜻하며 모든 미래 오류가 사라졌다는 보증이 아니다. [기여·예방 규칙](CONTRIBUTING.md) · [실패 이력](FAILURE_REGRESSION_INDEX.md).
 
