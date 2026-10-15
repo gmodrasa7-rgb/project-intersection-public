@@ -9,7 +9,7 @@
 
 **Optional analytic-axis candidate (not renamed canon):** Project Intersection — **PI–VCCD (Voluntary Coexistence and Capability Dynamics)**.
 
-**Korean counterpart:** 자발적 공존·실효역량 동학.
+**Korean counterpart:** The full Korean term and its context are maintained in [Original 2 — Korean](PI_VCCD_TERMINOLOGY_2026-10-13_KO.md).
 
 A term must describe the phenomenon to be explained, including negative cases, not presume the desired conclusion. Here:
 
@@ -32,7 +32,7 @@ RGBM is also used elsewhere: a *Reduced Gradient Bubble Model* in decompression 
 
 The Project Intersection research program is broader than any individual model.
 
-**ICM: explicit historical terminology collision.** One historical top-level text uses ICM for the *intersection of minimum self-interest*; a separate operational-definition document expands ICM as **Independent Continuance Margin** (자립존속여력). These are related but **not literal synonyms**: the former is a candidate set/intersection of interests, while the latter is a multidimensional viability/agency/recovery *operational margin*. Treat their relationship as a research mapping requiring a dated semantic crosswalk, not as an automatic expansion or resolved identity. The public README currently uses the former reading.
+**ICM: explicit historical terminology collision.** One historical top-level text uses ICM for the *intersection of minimum self-interest*; a separate operational-definition document expands ICM as **Independent Continuance Margin** (see the Korean equivalent in [Original 2 — Korean](PI_VCCD_TERMINOLOGY_2026-10-13_KO.md)). These are related but **not literal synonyms**: the former is a candidate set/intersection of interests, while the latter is a multidimensional viability/agency/recovery *operational margin*. Treat their relationship as a research mapping requiring a dated semantic crosswalk, not as an automatic expansion or resolved identity. The public README currently uses the former reading.
 
 **PI–VCCD** names the study of conditions under which ICM-compatible, independently accessible capabilities and voluntary coexistence can persist, expand, fail or recover through time. It is **not** the assertion that they always do so.
 
