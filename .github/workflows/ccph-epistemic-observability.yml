@@ -78,3 +78,24 @@ jobs:
           assert p.classify_event({"kind":"LOGIC","truth":"FALSE","novel":"TRUE","checked":True}) == "E_LOGIC_INVALID"
           print("Independent CI wrapper checks passed on fixed synthetic oracle, not real data.")
           PY
+      - name: Verify published compact receipt equals computed output
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          computed = json.loads(Path("/tmp/ccph-probe.json").read_text())
+          receipt = json.loads(Path("experiments/ccph_epistemic_probe_v01/RESULT.json").read_text())
+          o = receipt["output"]
+          assert o["synthetic_warning_worlds"] == computed["synthetic_warning_worlds"]
+          assert o["illustrative_events"] == computed["illustrative_events"]
+          assert o["checks_passed"] == computed["checks_passed"]
+          assert o["failed_checks"] == computed["failed_checks"]
+          assert o["terminal_projection_noninjective"] == computed["distinct_epistemic_states_same_terminal_observation"]
+          assert o["unique_artifacts_in_3_mentions"] == computed["unique_artifacts_in_3_mentions"]
+          for name in ["outcome_only_positive", "raw_event_count_positive",
+                       "confirmed_true_warning_events", "confirmed_valid_logic_events",
+                       "unresolved_warning_events"]:
+            assert o[name] == computed["toy_counts"][name], name
+          assert receipt["evidence_status"] == computed["evidence_class"]
+          print("CCPH compact receipt parity with fresh synthetic computation: PASS")
+          PY
