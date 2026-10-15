@@ -9,6 +9,7 @@ from __future__ import annotations
 import argparse
 import copy
 import json
+import hashlib
 import re
 import subprocess
 import sys
@@ -25,8 +26,6 @@ PAIRED_NAV = {
     "PI-NAV-REVIEW": (6, "AI_REVIEW"),
 }
 TOC_CRITICAL = (
-    "../PUBLIC_EVIDENCE_INDEX.md",
-    "../RESEARCH_STATUS_POLICY.md",
     "../experiments/e009/RESULT.md",
     "../CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md",
     "../PRIOR_ART_RIGHTS_AND_DERIVATION_EN_KO.md",
@@ -72,6 +71,19 @@ def list_paths_from_section_links(links: list[str]) -> list[str]:
     return [unquote(urlsplit(raw).path) for raw in links if not urlsplit(raw).scheme]
 
 
+def comparable_source_path(raw: str) -> str:
+    """The *_EN/KO editions are the same source position, not the same file."""
+    if raw.endswith("_EN.md") or raw.endswith("_KO.md"):
+        stem = raw[:-6]
+        if stem.endswith(("RESEARCH_OVERVIEW", "PUBLIC_EVIDENCE_INDEX", "RESEARCH_STATUS_POLICY")):
+            return stem + ".md"
+    return raw
+
+
+def git_blob_digest(content: bytes) -> str:
+    return hashlib.sha1(b"blob " + str(len(content)).encode("ascii") + b"\\x00" + content).hexdigest()
+
+
 def inspect(registry: dict, overrides: dict[str, str] | None = None, full_inventory: bool = True) -> list[str]:
     overrides = overrides or {}
     issues = []
@@ -114,6 +126,33 @@ def inspect(registry: dict, overrides: dict[str, str] | None = None, full_invent
             issues.append("MEANING_REVIEW_CLAIM_WITHOUT_RECEIPT:" + pid)
         if pair.get("meaning_review_status") not in ("NOT_INDEPENDENTLY_VERIFIED", "STALE", "REVIEWED"):
             issues.append("UNKNOWN_MEANING_REVIEW_STATUS:" + pid)
+        if pid.startswith("PI-CORE-"):
+            expected_source = pair.get("source_legacy_path", "")
+            if not (ROOT / expected_source).is_file():
+                issues.append("LEGACY_SOURCE_MISSING:" + pid)
+            else:
+                actual_hash = git_blob_digest((ROOT / expected_source).read_bytes())
+                if actual_hash != pair.get("source_blob_sha_at_split"):
+                    issues.append("CORE_SOURCE_CHANGED_WITHOUT_NEW_EDITION_REVIEW:" + pid)
+            for lang, path, other in (("en", en, ko), ("ko", ko, en)):
+                body = load(path)
+                if f"<!-- PI-LANGUAGE: {lang} -->" not in body:
+                    issues.append("CORE_LANGUAGE_MARKER_MISSING:" + path)
+                if f"<!-- PI-MIRROR: {other} -->" not in body:
+                    issues.append("CORE_COUNTERPART_MARKER_MISSING:" + path)
+                if f"<!-- PI-SOURCE: {expected_source} -->" not in body:
+                    issues.append("CORE_SOURCE_MARKER_MISSING:" + path)
+                if lang == "en" and HANGUL.search(visible_text(body)):
+                    issues.append("CORE_ENGLISH_SCRIPT_LEAK:" + path)
+                if lang == "ko" and len(HANGUL.findall(visible_text(body))) < 200:
+                    issues.append("CORE_KOREAN_BODY_MISSING:" + path)
+                for target in relative_links(path, body):
+                    if target and not ((ROOT / path).parent / target).exists():
+                        issues.append("CORE_BROKEN_LINK:" + path + ":" + target)
+            if pid == "PI-CORE-PUBLIC-EVIDENCE-INDEX":
+                for metric in ("0.090022", "0.063241", "0.065323", "42.35%"):
+                    if metric not in load(en) or metric not in load(ko):
+                        issues.append("E009_NUMERIC_PARITY_FAILED:" + metric)
         if pid not in PAIRED_NAV:
             continue
 
@@ -144,6 +183,12 @@ def inspect(registry: dict, overrides: dict[str, str] | None = None, full_invent
                     issues.append("NAV_SECTION_SEQUENCE_DRIFT:" + path)
                 core = TOC_CRITICAL if pid == "PI-NAV-TOC" else REVIEW_CRITICAL
                 linked = set(relative_links(path, body))
+                if pid == "PI-NAV-TOC":
+                    suffix = "_EN.md" if lang == "en" else "_KO.md"
+                    for stem in ("RESEARCH_OVERVIEW", "PUBLIC_EVIDENCE_INDEX", "RESEARCH_STATUS_POLICY"):
+                        target = "../" + stem + suffix
+                        if target not in linked:
+                            issues.append("PREFERRED_LANGUAGE_RESEARCH_ROUTE_MISSING:" + path + ":" + target)
                 for source in core:
                     if source not in linked:
                         issues.append("REQUIRED_EVIDENCE_ROUTE_MISSING:" + path + ":" + source)
@@ -152,7 +197,7 @@ def inspect(registry: dict, overrides: dict[str, str] | None = None, full_invent
         ko_sections = sections(load(ko))
         if pid == "PI-NAV-TOC" and len(en_sections) == 10 and len(ko_sections) == 10:
             for (number, a), (_, b) in zip(en_sections[:9], ko_sections[:9]):
-                if list_paths_from_section_links(a) != list_paths_from_section_links(b):
+                if [comparable_source_path(x) for x in list_paths_from_section_links(a)] != [comparable_source_path(x) for x in list_paths_from_section_links(b)]:
                     issues.append(f"TOC_PARALLEL_SOURCE_ORDER_DRIFT:section_{number}")
 
     snapshot = registry.get("metrics", {})
@@ -166,7 +211,7 @@ def inspect(registry: dict, overrides: dict[str, str] | None = None, full_invent
 
 
 def changed_pair_errors(registry: dict, base: str) -> list[str]:
-    """Gate only our reader-facing navigation pairs; older historical files are reports."""
+    """Gate explicit new publication pairs; legacy source files remain inspectable."""
     out = []
     try:
         changed = set(subprocess.check_output(
@@ -176,7 +221,7 @@ def changed_pair_errors(registry: dict, base: str) -> list[str]:
     except (subprocess.CalledProcessError, OSError):
         return ["INVALID_GIT_DIFF_BASE"]
     for p in registry.get("pair_catalog", []):
-        if p.get("id") not in PAIRED_NAV:
+        if p.get("id") not in PAIRED_NAV and not p.get("id", "").startswith("PI-CORE-"):
             continue
         en, ko = p["original_1_english"], p["original_2_korean"]
         if (en in changed) != (ko in changed):
@@ -184,7 +229,7 @@ def changed_pair_errors(registry: dict, base: str) -> list[str]:
             if not (p.get("meaning_review_status") == "STALE"
                     and isinstance(exc, str) and len(exc.strip()) >= 20
                     and REGISTER in changed):
-                out.append("ONE_SIDED_NAVIGATION_UPDATE:" + p["id"])
+                out.append("ONE_SIDED_PUBLIC_EDITION_UPDATE:" + p["id"])
     return out
 
 
@@ -204,7 +249,10 @@ def run_mutations(registry: dict) -> None:
     tampered = copy.deepcopy(registry)
     tampered["pair_catalog"][0]["meaning_review_status"] = "REVIEWED"
     assert any("WITHOUT_RECEIPT" in x for x in inspect(tampered, full_inventory=False))
-    print("Independent-language structural negative mutants: 5/5 detected")
+    core_en = "PUBLIC_EVIDENCE_INDEX_EN.md"
+    corrupted = (ROOT / core_en).read_text(encoding="utf-8").replace("0.090022", "0.990022", 1)
+    assert any("E009_NUMERIC_PARITY_FAILED" in x for x in inspect(registry, overrides={core_en: corrupted}, full_inventory=False))
+    print("Independent-language structural negative mutants: 6/6 detected")
 
 
 def main():
