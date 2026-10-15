@@ -207,6 +207,23 @@ def paired_contrasts(cases):
                            branch: floor_exit_gate(lookup[(world, pi, pj, name, xi, xj)])
                            for branch, (xi, xj) in BRANCHES.items()
                        },
+                       # PASS is a threshold classification, not preservation of
+                       # living/exit levels. A large decline can remain above 0.50.
+                       # Keep raw outcomes for all four arms, without treating this
+                       # single role-level proxy as per-agent welfare evidence.
+                       "floor_exit_values": {
+                           branch: {
+                               "floor_after": lookup[(world, pi, pj, name, xi, xj)].floor_after,
+                               "exit_after": lookup[(world, pi, pj, name, xi, xj)].exit_after,
+                           }
+                           for branch, (xi, xj) in BRANCHES.items()
+                       },
+                       "joint_floor_change": (
+                           lookup[(world, pi, pj, name, 1, 1)].floor_after
+                           - lookup[(world, pi, pj, name, 0, 0)].floor_after),
+                       "joint_exit_change": (
+                           lookup[(world, pi, pj, name, 1, 1)].exit_after
+                           - lookup[(world, pi, pj, name, 0, 0)].exit_after),
                        "baseline_psi": psi(0, 0),
                        "treated_psi": psi(1, 1),
                        "both_at_zero_floor": psi(0, 0) == 0 and psi(1, 1) == 0,
