@@ -1,7 +1,7 @@
 # Project Intersection — Research Overview — Original 1: English
 
 <!-- PI-LANGUAGE: en -->
-<!-- PI-MIRROR: RESEARCH_OVERVIEW_KO.md -->
+<!-- PI-MIRROR: research/RESEARCH_OVERVIEW_KO.md -->
 <!-- PI-SOURCE: RESEARCH_OVERVIEW.md -->
 
 **Source and scope:** This is the independently readable English section extracted from the [historical combined research overview](../RESEARCH_OVERVIEW.md) on 2026-10-15. The earlier embedded Korean explanatory interlude is preserved in [Korean Original 2](RESEARCH_OVERVIEW_KO.md), not erased. The appended English adversarial stress note is restored below. The old full source is not overwritten.
