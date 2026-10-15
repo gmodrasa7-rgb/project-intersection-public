@@ -23,7 +23,7 @@ LINKS = re.compile(r"!?(?:\[[^\]\n]*\])\(([^)\n]+)\)")
 PAIRED_NAV = {
     "PI-NAV-START": (7, "START_HERE"),
     "PI-NAV-TOC": (10, "RESEARCH_TOC"),
-    "PI-NAV-REVIEW": (6, "AI_REVIEW"),
+    "PI-NAV-REVIEW": (7, "AI_REVIEW"),
 }
 TOC_CRITICAL = (
     "../CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md",
