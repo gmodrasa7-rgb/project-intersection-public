@@ -23,6 +23,7 @@ on:
       - "experiments/e007/LICENSE_STATUS.md"
       - "experiments/e007/**"
       - "experiments/picb_v1/**"
+      - "experiments/pest_v0_1/**"
       - "experiments/e008/**"
       - "experiments/e009/**"
       - "experiments/e010/**"
@@ -61,6 +62,7 @@ on:
       - "experiments/e007/LICENSE_STATUS.md"
       - "experiments/e007/**"
       - "experiments/picb_v1/**"
+      - "experiments/pest_v0_1/**"
       - "experiments/e008/**"
       - "experiments/e009/**"
       - "experiments/e010/**"
@@ -130,6 +132,19 @@ jobs:
           print('UNIFIED PICB/E007/E008/E009 PASS: four distinct evidence scopes; E008 has no result; E009 negative survives; PICB 32 unresolved of 64.')
           print('PROHIBITED INFERENCE: self-code CI passing does not establish independent scientific validation, truthful human/AI preferences or universal cooperation.')
           PY
+
+      - name: Gate PEST design integrity and block unregistered execution
+        shell: bash
+        run: |
+          set -euo pipefail
+          python experiments/pest_v0_1/pest.py --validate-only
+          python -m unittest discover -s experiments/pest_v0_1 -p 'test_*.py' -v
+          if python experiments/pest_v0_1/pest.py --execute > /tmp/pest-execute.log 2>&1; then
+            echo "PEST HOLD gate bypassed: unregistered execution succeeded" >&2
+            exit 1
+          fi
+          grep -q "HOLD: no preregistered execution" /tmp/pest-execute.log
+          echo "PEST DESIGN-ONLY PASS; scientific execution remains blocked"
 
       - name: Refuse README purpose demotion and incomplete EN1/KO2 editions
         run: python tools/check_readme_l0.py
