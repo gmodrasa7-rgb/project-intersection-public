@@ -74,7 +74,7 @@ Preserve negative results, correction history, affected-party costs, effective e
 - [English research contents](RESEARCH_TOC_EN.md): first English reading route. [Historical detailed research index](../RESEARCH_TOC.md): underlying legacy bilingual case inventory and provenance.
 - [Public review packet](../research/PUBLIC_REVIEW_PACKET_EN.md): claims, rerun boundaries and challenge routes.
 - [Failure and regression index](../FAILURE_REGRESSION_INDEX.md): unsuccessful and corrected work.
-- [Funding entry](../funding/FUNDER_START_HERE.md) and [public sponsorship ledger](../funding/SPONSORSHIP_PUBLIC_LEDGER.md): support context, not a verified funding receipt.
+- [Funding entry — English section](../funding/FUNDER_START_HERE.md#original-1--english) and [public sponsorship ledger](../funding/SPONSORSHIP_PUBLIC_LEDGER.md): support context, not a verified funding receipt.
 - [Autonomous research loop](../AUTONOMOUS_RESEARCH_LOOP.md) and [machine-readable state](../AUTONOMOUS_RESEARCH_STATE.json): continuity and recovery without requiring the human founder to reconstruct past work.
 - [Contribution-cost regression](../CONTRIBUTION_COST_ACCOUNTING_REGRESSION.md): research output versus contributors' actual benefits, costs and losses.
 - [Knowledge explorer](../knowledge/explorer.html): evidence-linked navigation, not a replacement for original sources.

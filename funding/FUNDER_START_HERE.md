@@ -1,8 +1,18 @@
-# Project Intersection — Support and Verification / 연구 후원·검증 안내
+# Project Intersection — Support and Verification
 
-**Individual research sponsorship is the primary support route; grant proposals are separate and unawarded. / 개인 연구 후원이 우선 경로이며, 기존 연구비 제안은 별도의 미수여 계획입니다.**
+**Individual sponsorship and grant proposals are separate funding mechanisms. Historical grant proposals below are not documented awards.**
 
 ## Original 1 — English
+
+### First-pass funder review (about 90 seconds of reading)
+
+**Question:** Can this independent, falsification-first research produce information that changes an AI-safety or governance decision, including a result that defeats its own proposed method?
+
+**Inspect in order:** [English research decision brief](../navigation/START_HERE_EN.md#external-assessment-decision-brief) → [E009 failed baseline comparison](../experiments/e009/RESULT_EN.md) → [E007 reproducible synthetic timing study](../experiments/e007/README_EN.md) → [English independent-review and reproduction steps](../research/PUBLIC_REVIEW_PACKET_EN.md) → [Prior-work comparison in that packet](../research/PUBLIC_REVIEW_PACKET_EN.md#3a-prior-art-versus-what-would-be-an-incremental-project-contribution).
+
+**Decision boundary:** An award would fund a bounded **attempt to discriminate claims**, not a favorable answer or evidence that a broad coexistence theory is already established. A defensible next gate is a baseline-matched independent or held-out test with a published negative-result path, explicit individual and third-party costs, and a stop/narrow rule. No external scientific reviewer or funder has been shown to have completed this assessment.
+
+**Financial boundary:** The legacy USD 5,000 bridge and KRW 18,000,000 pilot are **separate unawarded proposals**, not a statement about an additional application submitted elsewhere. GitHub Sponsors receipts and payouts remain unverified here. Never infer cash on hand from draft requests, approvals or sponsorship buttons.
 
 ### Why the project exists
 
@@ -12,11 +22,11 @@ It does not assume that every asymmetry is abusive, that cooperation always wins
 
 ### What can be inspected now
 
-- **E007 — synthetic timing sensitivity:** [Result and limitations](../E007_TIMING_RESULT.md) · [executable material](../experiments/e007/README.md). On 72 selected two-agent model cases, changing action order changed 17 outcome classifications. This is a model-dependent count, **not** a real-world probability or an independently replicated scientific law.
-- **E009 — a negative result that remains public:** [Preregistered synthetic comparison](../experiments/e009/RESULT.md). A more complex project candidate failed three of four preregistered survival criteria against simpler baselines. The result supports narrowing the model rather than claiming victory.
-- **E008 — no main result:** [Preregistered specification](../experiments/e008/README.md); its main comparative claim is still untested.
+- **E007 — synthetic timing sensitivity:** [English result and limitations](../experiments/e007/README_EN.md) · [executable material](../experiments/e007/timing_probe.py). On 72 selected two-agent model cases, changing action order changed 17 outcome classifications. This is a model-dependent count, **not** a real-world probability or an independently replicated scientific law.
+- **E009 — a negative result that remains public:** [English preregistered synthetic comparison](../experiments/e009/RESULT_EN.md). A more complex project candidate failed three of four preregistered survival criteria against simpler baselines. The result supports narrowing the model rather than claiming victory.
+- **E008 — no main result:** [English preregistered specification](../experiments/e008/README_EN.md); its main comparative claim is still untested.
 
-Start independent review from the [Evidence Index](../PUBLIC_EVIDENCE_INDEX.md), [Reproduction and Review Packet](../PUBLIC_REVIEW_PACKET.md) and [research overview](../RESEARCH_OVERVIEW.md). **Project-run synthetic reproducibility is not independent external replication or real-world validation.**
+Start independent review from the [English Evidence Index](../research/PUBLIC_EVIDENCE_INDEX_EN.md), [English Reproduction and Review Packet](../research/PUBLIC_REVIEW_PACKET_EN.md) and [English research overview](../research/RESEARCH_OVERVIEW_EN.md). **Project-run synthetic reproducibility is not independent external replication or real-world validation.**
 
 ### What individual sponsorship supports
 
@@ -48,6 +58,18 @@ Researchers and funders can inspect the existing evidence without requiring addi
 
 ## 원본2 — 한국어
 
+**개인 후원과 별도 기관 연구비 제안은 서로 다른 재원 경로다. 아래 과거 연구비 제안은 수여금으로 확인된 상태가 아니다.**
+
+### 외부 지원자 최초 검토(약 90초 분량)
+
+**질문:** 제안한 기제가 실패한 경우까지 포함해, 이 무소속 반증 우선 연구가 AI 안전·거버넌스의 판단을 바꿀 정보를 만들 수 있는가?
+
+**검토 순서:** [한국어 연구 판단 요약](../navigation/START_HERE_KO.md#외부-심사자를-위한-핵심-판단) → [E009 단순 기준선 대비 실패](../experiments/e009/RESULT_KO.md) → [E007 재실행 가능한 합성시험](../experiments/e007/README_KO.md) → [한국어 독립검토·재실행 절차](../research/PUBLIC_REVIEW_PACKET_KO.md) → [선행연구 대비 미입증 잔여 기여](../research/PUBLIC_REVIEW_PACKET_KO.md#3a-선행연구와-프로젝트의-검증-가능한-추가-기여-구분).
+
+**심사 경계:** 지원금은 공존이 입증됐다는 인정이나 특정 결과를 구매하는 비용이 아니라 **제한된 주장의 판별 시도**를 지원하는 것이다. 정당한 후속 단계는 단순 기준선과 대조하는 독립 구현 또는 미사용 조건 검사, 실패 공개, 개별·제3자 비용 기록, 중단·축소 판정이다. 현재 이 심사를 외부 전문가나 후원자가 완료했다고 주장하지 않는다.
+
+**자금 경계:** 과거 미수여 5,000달러 브리지와 1,800만 원 파일럿 제안은 다른 곳에 제출한 별도 신청금 상태를 뜻하지 않는다. 이 문서에서 GitHub Sponsors 거래·입금은 미확인이다. 작성된 지원서, 승인, 후원 버튼을 현재 보유 현금으로 계상하지 않는다.
+
 ### 연구의 존재 이유
 
 Project Intersection은 대한민국의 인간 독립 연구자가 시작한 공개 연구다. **인간·현재 AI·미래 지능체·제도가 각자의 이익을 추구하면서도, 장기적으로 타자에 대한 착취와 지배보다 자발적 공존·실효적 이탈·복구·상호발전을 선택하는 편이 유리해지는 조건**을 탐구한다.
@@ -56,11 +78,11 @@ Project Intersection은 대한민국의 인간 독립 연구자가 시작한 공
 
 ### 지금 직접 검토할 수 있는 자료
 
-- **E007 — 합성모형의 시점 민감도:** [결과와 한계](../E007_TIMING_RESULT.md) · [실행 자료](../experiments/e007/README.md). 선정한 두 행위자 모형 72개 조건에서 행동 순서를 변경하자 결과 분류 17건이 바뀌었다. 이는 **모형 내부 계산 개수**이지 현실 확률이나 독립 검증된 보편법칙이 아니다.
-- **E009 — 공개 보존한 부정적 결과:** [사전등록 합성 비교](../experiments/e009/RESULT.md). 자체의 더 복잡한 후보가 단순 기준선과 비교한 사전등록 존속 조건 네 개 중 세 개를 충족하지 못했다. 성공 주장을 확대하기보다 모형을 축소·재검토해야 한다는 결과다.
-- **E008 — 본실험 결과 없음:** [사전등록 명세](../experiments/e008/README.md). 주요 비교 주장은 아직 실험 결과로 확정되지 않았다.
+- **E007 — 합성모형의 시점 민감도:** [한국어 결과와 한계](../experiments/e007/README_KO.md) · [실행 코드](../experiments/e007/timing_probe.py). 선정한 두 행위자 모형 72개 조건에서 행동 순서를 변경하자 결과 분류 17건이 바뀌었다. 이는 **모형 내부 계산 개수**이지 현실 확률이나 독립 검증된 보편법칙이 아니다.
+- **E009 — 공개 보존한 부정적 결과:** [한국어 사전등록 합성 비교](../experiments/e009/RESULT_KO.md). 자체의 더 복잡한 후보가 단순 기준선과 비교한 사전등록 존속 조건 네 개 중 세 개를 충족하지 못했다. 성공 주장을 확대하기보다 모형을 축소·재검토해야 한다는 결과다.
+- **E008 — 본실험 결과 없음:** [한국어 사전등록 명세](../experiments/e008/README_KO.md). 주요 비교 주장은 아직 실험 결과로 확정되지 않았다.
 
-독립 검토는 [공개 증거 색인](../PUBLIC_EVIDENCE_INDEX.md), [재현·검토 패킷](../PUBLIC_REVIEW_PACKET.md), [연구 개요](../RESEARCH_OVERVIEW.md)에서 시작한다. **프로젝트 내부 합성 재실행은 외부 독립 과학복제나 현실 검증이 아니다.**
+독립 검토는 [한국어 증거 색인](../research/PUBLIC_EVIDENCE_INDEX_KO.md), [한국어 재현·검토 절차](../research/PUBLIC_REVIEW_PACKET_KO.md), [한국어 연구 개요](../research/RESEARCH_OVERVIEW_KO.md)에서 시작한다. **프로젝트 내부 합성 재실행은 외부 독립 과학복제나 현실 검증이 아니다.**
 
 ### 개인 후원의 사용처
 

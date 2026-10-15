@@ -65,6 +65,21 @@ Current narrow findings: E007 is an internally reproducible timing-sensitivity s
 
 No independent replication, general ICM efficacy in the field, legal payment finding, determined AI moral standing, or universally dominant cooperation theorem is established by these artifacts.
 
+### 3a. Prior art versus what would be an incremental project contribution
+
+A valuable research question and a novel scientific result are **different decisions**. The comparison below states prior authors' contributions before any project-specific residual. It does **not** award novelty or causal validation to Project Intersection.
+
+| Established source and concept | Project-specific question still worth testing | Present evidence boundary |
+| --- | --- | --- |
+| [W. Ross Ashby (1956)](https://doi.org/10.5962/bhl.title.5851): limitations of regulation under insufficient variety | Do additional role-reversal and independent-repair constraints improve outcomes over a constrained decision baseline? | Not established as an incremental held-out or field improvement |
+| [Albert O. Hirschman (1970)](../PRIOR_ART_SAFETY_GOVERNANCE_CROSSWALK.md): exit and voice as existing ideas | Can a purported exit still occur after a same-period hostile action under alternative timing conventions? | [E007](../experiments/e007/README_EN.md) documents a narrow model-sensitive result, not a new discovery of the concept of exit |
+| [George Stigler (1971)](https://doi.org/10.2307/3003160) and [Lisanne Bainbridge (1983)](https://doi.org/10.1016/0005-1098(83)90046-8): capture incentives and automation's monitoring burdens | Can an independent evaluator, effective intervention and recovery be measured jointly without shifting loss to an excluded party? | [Coalition externality](../experiments/coalition_externality_probe/README.md) is project-designed synthetic probing, not measured field benefit |
+| Existing scholarship on social support and downstream contribution, recorded in the [CCPH atlas](CCPH_RESEARCH_ATLAS_EN.md) | Can source-linked, revisable event lineage distinguish recognized outputs, ignored valid warnings, support-enabled entry and later independent contributions? | Schema and curated prior cases exist; no population-wide, independent causal effect estimate |
+
+**Strongest counterposition:** A simple baseline may capture all decision-relevant benefits at much lower cost; [E009](../experiments/e009/RESULT_EN.md) already demonstrated one such synthetic failure. An independently implemented, preregistered or properly held-out comparison must find incremental value **without** increased irreversible harms, asymmetric labor transfer, or evaluator capture before stronger claims are promoted. Otherwise narrow or reject the incremental claim while preserving the underlying question.
+
+Research assessment should weigh the *contents* and limits of these outputs, rather than repository size, commit count or academic status alone. This is consistent with [DORA's research-assessment design guidance](https://sfdora.org/2020/05/19/rethinking-research-assessment-ideas-for-action/), the [Leiden Manifesto](https://leidenmanifesto.org/) and [TOP 2025](https://doi.org/10.1186/s41073-026-00223-0). These references guide assessment practice; they do **not** validate the research hypotheses.
+
 <!-- PI-SECTION: cases -->
 ## 4. Case trails, missing gains and actual human contribution
 
