@@ -216,8 +216,7 @@ class ProposalGateTests(unittest.TestCase):
         self.assertEqual(result["regressed_holdout_indices"], [])
         self.assertEqual(result["decision"], "HOLD_REGRESSION")
 
-    def test_holdout_label_tamper_cannot_change_development_score(self):
-        base_dev = gate.assess(self.base)["candidate_development"]
+    def test_holdout_case_tamper_prevents_any_scoring(self):
         data = json.loads(gate.abstention.CASES.read_text(encoding="utf-8"))
         data["holdout_unknown"] = [
             "unknown holdout scenario alpha",
@@ -227,8 +226,11 @@ class ProposalGateTests(unittest.TestCase):
         with TemporaryDirectory() as tmp:
             path = Path(tmp) / "cases.json"
             path.write_text(json.dumps(data), encoding="utf-8")
-            result = gate.assess(self.base, cases_path=path)
-        self.assertEqual(result["candidate_development"], base_dev)
+            with patch.object(gate, "grade", side_effect=AssertionError("SCORING_FORBIDDEN")):
+                result = gate.assess(self.base, cases_path=path)
+        self.assertEqual(result["decision"], "HOLD_BENCHMARK_DRIFT")
+        self.assertFalse(result["evaluation_executed"])
+        self.assertNotIn("candidate_development", result)
 
 
 if __name__ == "__main__":
