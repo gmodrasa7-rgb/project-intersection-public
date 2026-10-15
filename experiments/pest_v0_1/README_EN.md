@@ -9,7 +9,7 @@
 
 Does protecting a potential suppressor's own continued existence (`XG_j`) reduce its willingness to restrict a growing target (`i`)? Is this different from protecting the target (`XG_i`)? The initial proposed `H_target: d PSI / d XG_i < 0` is retained and challenged by `H_actor: d PSI / d XG_j < 0`. Both can fail. In the absence of exogenous variation or a credible counterfactual, an observed correlation is not causal proof.
 
-The **unit of analysis** is a fixed world/mechanism × `PT_i` × `PT_j` × suppressor identity × guarantee assignment. Powers change owners under A/B reversal while role-specific parameters remain fixed. Risk-management measures protecting third parties are not coded as growth-suppression actions without evidence of their purpose and alternatives.
+The **unit of analysis** is a fixed world/mechanism × `PT_i` × `PT_j` × suppressor identity × guarantee assignment. An A/B name-swap with fixed role parameters is only a **label-invariance control**. The additional actor-fixed reversal swaps which named actor is suppressor while preserving each actor's original PT and XG; the two checks must not be conflated. Risk-management measures protecting third parties are not coded as growth-suppression actions without evidence of their purpose and alternatives.
 
 ## Locked-in design candidate (lock only after review and merging)
 
@@ -26,6 +26,14 @@ The **unit of analysis** is a fixed world/mechanism × `PT_i` × `PT_j` × suppr
 The 96 formal cells contain **48 distinct numerical model states** if the identity label is ignored. A/B swaps duplicate the same role-based deterministic formula; this is a label-invariance smoke test, **not 96 independent observations or a demonstrated reversal of real actors' incentives**. The 24 paired contrast rows likewise contain 12 distinct mechanism/PT settings repeated under A/B labels.
 
 The original `XG_ALONE_INEFFECTIVE` threshold flag is **retained unchanged**. When both the untreated and protected `PSI` equal zero, that flag is also true even though there was no positive suppression incentive to reduce at baseline. Such cells require a separate `both_at_zero_floor` interpretation, not an empirical claim of failed protection. The diagnostic now also returns `baseline_psi`, `treated_psi` and `raw_joint_margin_difference` to expose clipping by `max(0, raw_margin)`. For example, in `survival_fear` at `PT_i = PT_j = 0.25`, both clipped scores are zero while the raw margin changes by −0.133875. Neither raw margin nor clipped score measures observed behavior.
+
+## Validity repairs — policy versus set and role reversal
+
+- **No false empty-set verdict:** `floor_exit_gate(case)` screens the necessary living/exit floors for one *candidate policy* and returns `FLOOR_EXIT_PASS` or `FLOOR_EXIT_FAIL`. One rejected policy is not an empty mutual-acceptability kernel.
+- `candidate_set_status(candidates, exhaustive=True)` may report `NO_MUTUALLY_ACCEPTABLE_SET` only when **every candidate fails a necessary floor/exit condition** and the action inventory has been independently established as exhaustive. `exhaustive=True` is a caller declaration; the code cannot verify completeness. Otherwise return `UNRESOLVED_ACTION_COVERAGE`. One surviving candidate requires full MAK++ evaluation and does **not** prove acceptability.
+- Exact 96 frozen treatment coordinates must match the predeclared PT/XG grid. Replacing a PT level with an unregistered value while preserving row count is rejected.
+- `actor_fixed_role_reversals` creates **48 actor-fixed reciprocal pairs**, swapping relative PT and XG when A and B exchange suppressor/target roles. It records those pairs; it does not assume equal outcomes or certify higher-order rule consistency. Simple A/B label symmetry alone is insufficient.
+- The world-specific payoff equations are synthetic and deliberately sign-selecting; tests prove only instrumentation behavior, not empirical support for either guarantee hypothesis.
 
 ## Execution gate
 
