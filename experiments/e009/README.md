@@ -140,3 +140,32 @@ python experiments/e009/secondary_verdict_audit.py
 기존 `verify_result.py`는 같은 프로젝트가 작성한 E009 동결 시뮬레이션을 재실행한다. 별도로 추가한 `secondary_verdict_audit.py`는 **원 실험의 정책·결정·판정 함수를 불러오지 않고** 사전등록 생존조건 네 개를 다시 계산한다. 공개 요약수치, 가중치 프로필 세 개의 행 수, 평균값 집계, 동결 코드의 바이트 해시 및 Git 객체 해시를 확인하고, 의도적으로 변조한 음성 대조군 다섯 개가 모두 차단되는지 검사한다. 이 검사는 기존 공개 저장소 거버넌스 CI에 연결했다.
 
 위의 두 명령어를 저장소 루트에서 순서대로 실행할 수 있다. **증거 한계:** 두 검사는 동일 프로젝트가 만든 데이터와 평가 환경을 사용한다. 16개 합성 결과함수·정책·가중치를 독립적으로 다시 구현하거나 외부 현실 효과를 증명한 것이 아니다. 판정 수치의 별도 계산은 새로운 실험이나 제3자 독립 복제가 아니다. E009의 기존 부정적 결과는 유지되며, 외부 이해관계 없는 평가자의 맹검 독립 구현은 아직 확보되지 않았다.
+
+
+## Post-hoc declared-vs-referenced complexity inputs — Original 1 English (2026-10-16)
+
+**New bounded anomaly, not a correction to frozen E009:** The preregistered protocol charges `0.0035 × declared policy input count` and lists counts of 5 for `MAK_PLUS_POINTWISE` and 3 for `TWO_RULE_SIMPLE`. However, direct inspection of the frozen `choose()` implementation finds only `harm_action` and `harm_inaction` referenced in those two policy decision branches. The third common alias `reversibility` is loaded globally but not used in either decision branch. The other policies have 6, 7 and 11 syntactically referenced input dimensions, matching their respective declared counts. This is a **measurement-definition ambiguity**, not proof of deceptive coding or a programming error: a declared complexity proxy may intentionally count design/oversight burden beyond active features. Syntactic referencing is not the same as true behavioral or causal feature importance.
+
+**Conditional post-hoc sensitivity — not a preregistered result:** If, and only if, complexity cost is redefined as the number of distinct input dimensions referenced in the decision branch, the published synthetic stress-set regrets shift by the exact difference `0.0035 × (referenced − declared)`, with frozen decisions, consequences and unpenalized oracle unchanged. Regret is nonnegative before this nonnegative penalty, so no zero-clipping changes this accounting calculation.
+
+| Policy | Declared → referenced | Published mean regret → hypothetical repriced regret |
+| --- | --- | --- |
+| MAK_PLUS_POINTWISE | 5 → 2 | 0.096127399 → 0.085627399 |
+| TWO_RULE_SIMPLE | 3 → 2 | 0.063240512 → 0.059740512 |
+| SECURITY_BOUNDED | 6 → 6 | 0.100897475 → 0.100897475 |
+| MINIMAL_4VAR | 7 → 7 | 0.065323097 → 0.065323097 |
+| PROJECT_V3 | 11 → 11 | 0.090021688 → 0.090021688 |
+
+Under this *hypothetical* repricing, `MAK_PLUS_POINTWISE` and `PROJECT_V3` swap regret rank, while the best simple comparator remains `TWO_RULE_SIMPLE`, widening the latter's lead over Project-v3 from **42.35% to approximately 50.69%**. This **does not** retrospectively change the frozen E009 published metric, thresholds, status, baseline selection, or independent-validation gap. The lesson is to preregister an operational definition of complexity separately from the observed behavior; input count, developer effort, evaluation expense and computational runtime are different possible cost models.
+
+**Executable check:** `python experiments/e009/complexity_input_dependency_audit.py` parses the frozen source via Python AST, rejects a mutated policy branch that adds a new syntactic input reference, checks the published table under the stated conditional cost model, and prints the narrow result. The original E009 `RESULT.json`, `benchmark.py` and execution receipt remain untouched. This test is project-lineage post-hoc analysis, not a new blinded run or real-world evidence.
+
+## 사후 복잡성 변수 수 불일치 감사 — 원본2 한국어 (2026-10-16)
+
+**새로 발견한 제한적 불일치이며 E009 동결 원본을 수정하지 않는다.** 사전등록된 벌점은 `0.0035 × 선언된 정책 입력변수 수`이고, `MAK_PLUS_POINTWISE`와 `TWO_RULE_SIMPLE`에 각각 5개와 3개를 부여한다. 하지만 동결된 `choose()` 코드를 조사하면 두 정책의 실제 조건식은 `harm_action`, `harm_inaction` 두 변수만 참조한다. 공통 별칭 `reversibility`는 함수 입구에서 불러오지만 이 두 정책의 결정 조건식에는 사용되지 않는다. 나머지 세 정책에서 정적으로 참조하는 입력 차원 6·7·11개는 선언된 숫자와 같다. **이것은 측정 정의의 불확실성이다.** 선언된 벌점에 실제 참조하지 않는 변수와 별도의 설계·감사 부담까지 포함하려는 의도가 있을 수 있으므로 허위 코딩이나 확정적 구현 오류로 단정하지 않는다. 정적 변수 참조는 실제 행동 변화·인과적 중요도와 동일하지 않다.
+
+**조건부 사후 민감도 검사:** 정책의 복잡성 비용을 실제 결정 분기에서 정적으로 참조한 고유 변수 개수로 바꾼다는 가정에서만, 기존 합성 결과의 평균 regret에 `0.0035 × (참조 수 − 선언 수)`를 가감할 수 있다. 정책 선택·결과함수·벌점이 없는 오라클은 그대로 두며, 벌점 제외 regret은 음수가 아니므로 0 하한 절단 효과가 발생하지 않는다. 위 영문 표는 원래 점수와 가정하의 점수를 병렬 표시한 것으로 동결 결과를 대체하지 않는다.
+
+이 가정을 적용하면 MAK+와 Project-v3의 regret 순위는 역전되지만 가장 낮은 regret의 단순 기준선은 계속 TWO_RULE_SIMPLE이다. Project-v3의 해당 기준선 대비 열세는 **약 42.35%에서 약 50.69%**가 된다. 사전등록된 생존조건, 발표된 부정적 결과, 독립 검증 미확보 상태는 변하지 않는다. 변수 참조 수·개발 비용·실행 시간·평가 비용을 동일한 복잡성 개념으로 취급하지 말고, 후속 연구에서는 서로 다른 비용 모형을 별도로 사전등록해야 한다.
+
+**실행 검사:** `python experiments/e009/complexity_input_dependency_audit.py`는 Python AST로 동결된 정책 코드를 검사하고, 인위적으로 변수 참조를 추가한 음성 대조군을 탐지하며, 가정에 따른 기존 결과 수치를 재계산한다. 원래 `RESULT.json`, `benchmark.py`, 실행 영수증은 수정하지 않았다. 이 검사는 같은 프로젝트 계보의 사후 분석이며 외부 맹검 복제나 현실 검증이 아니다.
