@@ -15,6 +15,7 @@
 
 - [창시 목적 전문](../README.md)
 - [연구 개요](../research/RESEARCH_OVERVIEW_KO.md)
+- [핵심용어 10개와 주장 경계](../README.md#핵심용어-10개)
 - [증거·상태 구분 규칙](../research/RESEARCH_STATUS_POLICY_KO.md)
 - [핵심 연구 틀(기존 혼합 언어 자료)](../PUBLIC_PREAMBLE_VOLUNTARY_COEXISTENCE_2026-10-13_EN_KO.md)
 
@@ -34,7 +35,7 @@
 - [공개 주장·증거 원장](../research/PUBLIC_EVIDENCE_INDEX_KO.md)
 - [실패·교정 회귀검사](../FAILURE_REGRESSION_INDEX.md)
 
-## 4. CCPH: 존속·지원·기여 경로
+## 4. CCPH 증거 데이터베이스: 지원·존속·기여 계보
 
 - [한국어 CCPH 선행 증거 지도(CP64–CP79)](../research/CCPH_RESEARCH_ATLAS_KO.md)
 
