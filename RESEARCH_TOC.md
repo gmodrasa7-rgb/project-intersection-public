@@ -1,5 +1,8 @@
 # Public Navigation Layer / 공개 탐색층
 
+> **Language-specific primary indexes / 언어별 독립 목차:** [Original 1 — English](navigation/RESEARCH_TOC_EN.md) · [원본2 — 한국어](navigation/RESEARCH_TOC_KO.md). This is the historical mixed-language research index, kept for citations and research provenance. / 이 문서는 인용과 기여 계보 보존용 기존 혼합 언어 상세 목차이며 언어별 독서 시작점은 위 두 경로다.
+
+
 **Goal / 최종목표:** Test conditions where humans, deployed AI and future intelligent agents voluntarily preserve one another's continued existence, autonomy, practical exit, recovery and options **because doing so serves their long-term interests**, without assuming altruism or permanent domination. / 선의·자기희생을 전제하지 않고 자발적 공존이 각자의 장기이익에 유리한 조건과 반례를 연구한다. [EN1/KO2 founding purpose / 창시 목적 전문](README.md).
 
 **Three logical levels / 3단계 자료 경로:** **L1 Discovery / 탐색** — [README](README.md), [한국어 시작](START_HERE_KO.md), [AI 시작](AI_REVIEW_START_HERE.md), [machine index](AI_DISCOVERY_INDEX.json); **L2 Interpretation and independent audit / 이해·검증** — [overview](RESEARCH_OVERVIEW.md), [evidence](PUBLIC_EVIDENCE_INDEX.md), [review packet](PUBLIC_REVIEW_PACKET.md), [status](RESEARCH_STATUS_POLICY.md), [failures](FAILURE_REGRESSION_INDEX.md), [attribution](ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md), [contributing](CONTRIBUTING.md), and this TOC; **L3 Original artifacts and operations / 원본·실험·운영** — [experiments](experiments/), [research](research/), [prior art](prior-art/), [cases below](#5-evidence-counterexamples-reviews-and-audits), [knowledge](knowledge/README.md), [governance](governance/), [continuity](continuity/), [funding](funding/), [tools](tools/). This map is a **reader interface, not an evidence ranking or new file hierarchy**. / 이는 독서·감사를 돕는 논리적 지도이며 증거등급이나 물리적 파일 이동이 아니다.
