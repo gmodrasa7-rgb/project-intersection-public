@@ -19,10 +19,10 @@ These five questions are a reader-oriented navigation proposal, **not** a measur
 | NAV-Q1 | What is the founding problem and what is unproven? | [Founding statement](../README.md), [English overview](RESEARCH_OVERVIEW_EN.md) | A research aim is not a universal coexistence theorem |
 | NAV-Q2 | Which claims are executed, proposed, negative, or unresolved? | [English evidence ledger](PUBLIC_EVIDENCE_INDEX_EN.md), [status policy](RESEARCH_STATUS_POLICY_EN.md) | E007 synthetic, E008 HOLD, E009 negative, E010 post-hoc have different statuses |
 | NAV-Q3 | Which strong project claim failed and under what specification? | [E009 result](../experiments/e009/RESULT.md), [failure index](../FAILURE_REGRESSION_INDEX.md) | A bounded failure is not a universal refutation |
-| NAV-Q4 | Can a newcomer reproduce the public artifacts at a fixed commit? | [E007 guide](../experiments/e007/README.md), commands below | Rerunning identical project code is not independent scientific replication |
+| NAV-Q4 | Can a newcomer reproduce the public artifacts at a fixed commit? | [E007 guide](../experiments/e007/README_EN.md), commands below | Rerunning identical project code is not independent scientific replication |
 | NAV-Q5 | Who created, translated, funded, independently verified or paid the costs, and under what rights? | [Attribution policy](../ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md), [prior-art rights](../PRIOR_ART_RIGHTS_AND_DERIVATION_EN_KO.md) | Credit does not automatically prove licensing or monetary liability |
 
-Additional routes: [E008 protocol](../experiments/e008/README.md); [E010 original Korean analysis](../experiments/e010/README_KO.md); [CCPH real-world support and negative cases](CCPH_RESEARCH_ATLAS_EN.md); [continuity protocol](../continuity/GITHUB_LOCAL_HANDOFF_PROTOCOL.md); [funding due diligence](../funding/DUE_DILIGENCE.md). Links to older materials can change reading language; their current languages are not implied.
+Additional routes: [E008 protocol](../experiments/e008/README_EN.md); [E010 original Korean analysis](../experiments/e010/README_KO.md); [CCPH real-world support and negative cases](CCPH_RESEARCH_ATLAS_EN.md); [continuity protocol](../continuity/GITHUB_LOCAL_HANDOFF_PROTOCOL.md); [funding due diligence](../funding/DUE_DILIGENCE.md). Links to older materials can change reading language; their current languages are not implied.
 
 <!-- PI-SECTION: reproduce -->
 ## 2. Reproduce without nonpublic data
