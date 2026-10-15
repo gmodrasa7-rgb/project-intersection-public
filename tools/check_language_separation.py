@@ -53,6 +53,12 @@ def readme_errors(body: str) -> list[str]:
         errors.append("README_ENGLISH_SECTION_CONTAINS_KOREAN_PROSE")
     if "## Start here / 여기서 시작" in body:
         errors.append("README_LEGACY_MIXED_ROUTER_NOT_REMOVED")
+    first_en = body.split(EN_README, 1)[1].split(KO_README, 1)[0]
+    first_ko = body.split(KO_README, 1)[1]
+    if "navigation/START_HERE_KO.md" not in first_en[:300]:
+        errors.append("README_TOP_KOREAN_SWITCH_MISSING")
+    if "navigation/START_HERE_EN.md" not in first_ko[:300]:
+        errors.append("README_TOP_ENGLISH_SWITCH_MISSING")
     for link in ("navigation/START_HERE_EN.md", "navigation/START_HERE_KO.md"):
         if link not in body:
             errors.append("README_LANGUAGE_ROUTE_MISSING:" + link)
