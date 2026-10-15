@@ -1,6 +1,8 @@
 # CCPH Epistemic Observability Probe v0.1
 # 존속–기여 경로: 발견과 최종성과의 구별 합성시험
 
+**Scope correction / 연구 중심과 보조 시험기의 분리 (2026-10-15):** CCPH is **not an AI harness**. Its primary human-founder-specified subject is **support-enabled continuance and emergent contribution of real people and societies**: grants such as BlueDot Impact, scholarships, poverty relief, healthcare, education, caregiving, mentorship, and further independent beneficiaries. Read [primary founder-corrected EN/KO social support research](../../CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md#ccph-priority-correction-support-enabled-continuance-and-contribution--original-1-english-2026-10-15). This toy tests **one minor recording failure mode**, not social support, personal value, grant impact or the CCPH thesis. / **CCPH는 하네스가 아니다.** 중심은 실제 연구지원·장학금·빈곤층·의료·돌봄 지원으로 열리는 개체의 존속·교육·사회 참여와 후속 기여의 인과 경로다. 이 가상 코드는 채점 누락을 보조로 검사할 뿐 실제 수혜자·지원 효과를 관측하지 않는다.
+
 Date: 2026-10-15.
 Evidence: PROJECT_SELF_RUN_POST_HOC_DETERMINISTIC_SYNTHETIC_DIAGNOSTIC.
 Not a preregistered trial, real human/AI study, independent replication, empirical welfare effect, credit ownership proof, or monetary evaluation.
