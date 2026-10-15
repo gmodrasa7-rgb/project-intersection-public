@@ -1,0 +1,46 @@
+name: Public English/Korean language separation
+
+on:
+  pull_request:
+    paths:
+      - "**/*.md"
+      - "*.md"
+      - "tools/check_language_separation.py"
+      - ".github/workflows/language-separation.yml"
+  push:
+    branches: [main]
+    paths:
+      - "**/*.md"
+      - "*.md"
+      - "tools/check_language_separation.py"
+      - ".github/workflows/language-separation.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  language-entry-regression:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate founding-page separation, paired guides and negative mutations
+        run: python tools/check_language_separation.py --self-test
+      - name: Gate newly added Markdown language editions
+        if: github.event_name == 'pull_request' || github.event_name == 'push'
+        shell: bash
+        env:
+          BASE_SHA: ${{ github.event_name == 'pull_request' && github.event.pull_request.base.sha || github.event.before }}
+        run: |
+          set -euo pipefail
+          if ! git cat-file -e "${BASE_SHA}^{commit}" 2>/dev/null; then
+            echo "No comparable prior commit (initial push); static landing-page guard already ran."
+            exit 0
+          fi
+          mapfile -d '' added < <(git diff --diff-filter=A --name-only -z "${BASE_SHA}" HEAD -- '*.md')
+          python tools/check_language_separation.py --added "${added[@]}"
