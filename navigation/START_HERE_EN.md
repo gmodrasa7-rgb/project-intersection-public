@@ -1,0 +1,62 @@
+# Start Here — Original 1: English
+
+<!-- PI-LANGUAGE: en -->
+<!-- PI-MIRROR: navigation/START_HERE_KO.md -->
+
+This is the **English-only reading route**, paired with [Original 2: Korean](START_HERE_KO.md). “Original 1” identifies publication order, **not** the nationality or language of the research originator. This guide is a navigation layer, not a replacement for research artifacts or an assertion of translation certification.
+
+<!-- PI-SECTION: purpose -->
+## 1. Purpose
+
+[Project Intersection's founding statement](../README.md) investigates when humans, deployed AI, future AI and other intelligent agents can find voluntary coexistence, autonomy, effective exit, recovery and mutual development more advantageous than exploitation or domination over the long term, without assuming altruism. The project's hypotheses do **not** establish a universal law that cooperation always wins.
+
+<!-- PI-SECTION: levels -->
+## 2. Three reading levels
+
+| Level | Question | Sources |
+| --- | --- | --- |
+| 1 — Discover | What is the question and where should I begin? | [Founding statement](../README.md), [research overview](../RESEARCH_OVERVIEW.md), [AI reviewer entry](../AI_REVIEW_START_HERE.md) |
+| 2 — Understand and audit | Which claims, sources, limitations, failures and rights are recorded? | [Evidence index](../PUBLIC_EVIDENCE_INDEX.md), [research contents](../RESEARCH_TOC.md), [status policy](../RESEARCH_STATUS_POLICY.md), [review packet](../PUBLIC_REVIEW_PACKET.md) |
+| 3 — Inspect artifacts | What can be rerun, contradicted or corrected? | [Experiments](../experiments/), [research](../research/), [prior art](../prior-art/), [knowledge](../knowledge/README.md), [governance](../governance/) |
+
+These are **reading routes**, not an evidence ranking or new physical hierarchy.
+
+<!-- PI-SECTION: evidence -->
+## 3. Evidence status: do not merge different claims
+
+| Study | What is established within the released project artifacts | What is not established |
+| --- | --- | --- |
+| [E007](../experiments/e007/README.md) | Executable synthetic timing result | Independent scientific or empirical validation |
+| [E008](../experiments/e008/README.md) | Preregistered design and executable-readiness checks | A completed main comparative result |
+| [E009](../experiments/e009/RESULT.md) | Preregistered negative synthetic result | Universal failure of coexistence hypotheses |
+| [E010](../experiments/e010/README_KO.md) | Post-hoc exploratory synthetic calculations | Preregistration, independent or real-world validation |
+
+For claim-by-claim limitations, use the [public evidence index](../PUBLIC_EVIDENCE_INDEX.md). A successful CI run is not independent replication.
+
+<!-- PI-SECTION: ccph -->
+## 4. CCPH: real-world continuance and contribution histories
+
+The CCPH research direction is to recover historical cases, document present continuance and influence, and preserve revisable labels allowing later backward and forward tracing of **candidate** contribution pathways. This includes support-enabled continuance, scholarships, social assistance, crisis detection, ideas, care, indirect inspiration, and downstream work by other people. See the [CCPH case and prior-art crosswalk](../CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md).
+
+The research distinguishes observed sequences from causal effects, recognized contributions from unobserved ones, and human rights to basic continuance from economic output. Its synthetic probes are auxiliary tools, **not** a completed population-wide impact database or demonstrated treatment effect.
+
+<!-- PI-SECTION: rights -->
+## 5. Originators, sources, rights and affected people
+
+Start with [contribution and attribution boundaries](../ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md), [prior art](../PRIOR_ART_AND_ATTRIBUTION.md), and the [source and rights ledger](../PRIOR_ART_RIGHTS_AND_DERIVATION_EN_KO.md). Credit original scholars, the project's human originator, and AI assistance without merging their roles. Public availability does **not** imply a repository-wide license, permission to train models, a payment obligation, or proof of scientific validity.
+
+Preserve negative results, correction history, affected-party costs, effective exit, and recovery.
+
+<!-- PI-SECTION: navigation -->
+## 6. Further routes
+
+- [Full table of contents](../RESEARCH_TOC.md): detailed historical studies, cases and research variants.
+- [Public review packet](../PUBLIC_REVIEW_PACKET.md): claims, rerun boundaries and challenge routes.
+- [Failure and regression index](../FAILURE_REGRESSION_INDEX.md): unsuccessful and corrected work.
+- [Funding entry](../funding/FUNDER_START_HERE.md) and [public sponsorship ledger](../funding/SPONSORSHIP_PUBLIC_LEDGER.md): support context, not a verified funding receipt.
+- [Detailed earlier Korean reader map](../START_HERE_KO.md): historical material maintained for provenance; it is **not** a clean English edition.
+
+<!-- PI-SECTION: limitations -->
+## 7. Language and audit limitations
+
+This English route is paired section-by-section with its [Korean counterpart](START_HERE_KO.md). Many **historical linked source files remain Korean-only or internally bilingual**; their current language status is not hidden. A link does not certify an English translation. Machine checks verify structure, language leakage and local-link presence, **not** scientific correctness or semantic translation equivalence. Untranslated sources remain discoverable rather than being invented, erased or silently paraphrased.
