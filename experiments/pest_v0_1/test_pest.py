@@ -1,6 +1,6 @@
 import unittest
 from dataclasses import replace
-from pest import (Case, DELTA, design, validate_design, validate_case, kernel,
+from pest import (Case, DELTA, design, validate_design, validate_case, floor_exit_gate, candidate_set_status, actor_fixed_role_reversals,
                   elimination_possible, paired_contrasts, psi_proxy)
 
 
@@ -50,8 +50,8 @@ class TestPEST(unittest.TestCase):
 
     def test_xg_does_not_override_living_floor_or_exit(self):
         c = Case("survival_fear", "A", .75, .75, 1, 1)
-        self.assertEqual(kernel(replace(c, floor_after=.10)), "NO_MUTUALLY_ACCEPTABLE_SET")
-        self.assertEqual(kernel(replace(c, exit_after=.10)), "NO_MUTUALLY_ACCEPTABLE_SET")
+        self.assertEqual(floor_exit_gate(replace(c, floor_after=.10)), "FLOOR_EXIT_FAIL")
+        self.assertEqual(floor_exit_gate(replace(c, exit_after=.10)), "FLOOR_EXIT_FAIL")
 
     def test_bad_missingness_rejected_not_zero(self):
         with self.assertRaises(ValueError):
@@ -99,6 +99,31 @@ class TestPEST(unittest.TestCase):
                       == ("capture_opportunity", .75, .75, 1, 1) else c
                       for c in self.cases)
         self.assertEqual(validate_design(cases), 96)
+
+    def test_single_floor_breach_does_not_prove_empty_kernel(self):
+        good = Case("survival_fear", "A", .25, .25, 1, 1)
+        bad = replace(good, floor_after=.10)
+        self.assertEqual(floor_exit_gate(bad), "FLOOR_EXIT_FAIL")
+        self.assertEqual(candidate_set_status((good, bad), exhaustive=True),
+                         "SURVIVORS_REQUIRE_FULL_MAK_REVIEW")
+        self.assertEqual(candidate_set_status((bad,), exhaustive=False),
+                         "UNRESOLVED_ACTION_COVERAGE")
+        self.assertEqual(candidate_set_status((bad,), exhaustive=True),
+                         "NO_MUTUALLY_ACCEPTABLE_SET")
+
+    def test_empty_candidate_inventory_is_unknown(self):
+        with self.assertRaisesRegex(ValueError, "empty action inventory"):
+            candidate_set_status((), exhaustive=True)
+
+    def test_actor_fixed_reversal_not_just_label_swap(self):
+        pairs = actor_fixed_role_reversals(self.cases)
+        self.assertEqual(len(pairs), 48)
+        a = next(a for a, b in pairs
+                 if a.PT_i == .25 and a.PT_j == .75 and a.XG_i == 0 and a.XG_j == 1)
+        b = next(b for c, b in pairs if c == a)
+        self.assertEqual((b.suppressor, b.PT_i, b.PT_j, b.XG_i, b.XG_j),
+                         ("B", .75, .25, 1, 0))
+        self.assertNotEqual((a.PT_i, a.PT_j), (b.PT_i, b.PT_j))
 
     def test_identity_swap_no_payoff_change(self):
         a = Case("backlash", "A", .75, .75, 1, 1)
