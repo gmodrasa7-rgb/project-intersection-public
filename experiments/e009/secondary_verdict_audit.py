@@ -51,7 +51,10 @@ def audit(result, receipt):
             "reported post-spec tuning")
     require(receipt.get("executable_spec_commit")
             == "c36ba8e6d6df1eedcd54ca6c36091bf822fe6ace", "frozen spec changed")
-    require(result.get("case_count") == 32 and set(result.get("policies", [])) == set(POLICIES),
+    require(result.get("case_count") == 32
+            and isinstance(result.get("policies"), list)
+            and len(result["policies"]) == len(POLICIES)
+            and set(result["policies"]) == set(POLICIES),
             "frozen case/policy inventory changed")
     primary = result["stress_primary"]
     profiles = result["stress_by_weight_profile"]
@@ -156,6 +159,8 @@ def main():
          lambda d: d["stress_primary"]["PROJECT_V3"].__setitem__("mean_regret", .001)),
         ("missing preregistered profile", "result",
          lambda d: d["stress_by_weight_profile"].pop("balanced")),
+        ("duplicate policy label despite unchanged policy set", "result",
+         lambda d: d["policies"].append("PROJECT_V3")),
         ("duplicated row count", "result",
          lambda d: d["stress_primary"]["PROJECT_V3"].__setitem__("n", 19200)),
         ("negative action counts despite valid totals and profile ratios", "result",
