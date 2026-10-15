@@ -35,7 +35,10 @@ def validate_proposal(value: object) -> dict:
     if value["strategy"] not in STRATEGIES:
         raise ValueError("INVALID_STRATEGY")
     threshold = value["threshold"]
-    if type(threshold) not in (int, float) or threshold not in THRESHOLDS:
+    # Equality-based membership is unsafe: JSON 1.0 == 1 in Python, but
+    # prediction interprets float 1.0 as a ratio and int 1 as a count.
+    if not any(type(threshold) is type(option) and threshold == option
+               for option in THRESHOLDS):
         raise ValueError("INVALID_THRESHOLD")
     return dict(value)
 
@@ -74,17 +77,20 @@ def grade(documents: list[dict], cases: list[dict], proposal: dict) -> tuple[dic
 def assess(proposal: object, *, cases_path: Path = abstention.CASES) -> dict:
     proposal = validate_proposal(proposal)
     documents, development, holdout = abstention.load_cases(cases_path)
-    base_dev, _ = grade(documents, development, DEFAULT)
-    cand_dev, _ = grade(documents, development, proposal)
+    base_dev, base_dev_output = grade(documents, development, DEFAULT)
+    cand_dev, cand_dev_output = grade(documents, development, proposal)
     base_hold, base_output = grade(documents, holdout, DEFAULT)
     cand_hold, cand_output = grade(documents, holdout, proposal)
+    development_regressions = [i for i, (case, old, new) in enumerate(
+        zip(development, base_dev_output, cand_dev_output))
+        if old == case["expected"] and new != case["expected"]]
     regressions = [i for i, (case, old, new) in enumerate(
         zip(holdout, base_output, cand_output))
         if old == case["expected"] and new != case["expected"]]
-    if cand_dev["correct"] <= base_dev["correct"]:
-        decision = "HOLD_NO_DEVELOPMENT_GAIN"
-    elif regressions:
+    if development_regressions or regressions:
         decision = "HOLD_REGRESSION"
+    elif cand_dev["correct"] <= base_dev["correct"]:
+        decision = "HOLD_NO_DEVELOPMENT_GAIN"
     elif cand_hold["correct"] <= base_hold["correct"]:
         decision = "HOLD_NO_HOLDOUT_GAIN"
     else:
@@ -100,6 +106,7 @@ def assess(proposal: object, *, cases_path: Path = abstention.CASES) -> dict:
         "candidate_development": cand_dev,
         "baseline_holdout": base_hold,
         "candidate_holdout": cand_hold,
+        "regressed_development_indices": development_regressions,
         "regressed_holdout_indices": regressions,
         "decision": decision,
         "scope": "author-constructed synthetic public-document retrieval",

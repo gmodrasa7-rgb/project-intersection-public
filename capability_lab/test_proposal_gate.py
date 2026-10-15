@@ -3,6 +3,7 @@ import copy
 import io
 import json
 import unittest
+from unittest.mock import patch
 from pathlib import Path
 from tempfile import TemporaryDirectory
 
@@ -78,6 +79,10 @@ class ProposalGateTests(unittest.TestCase):
             dict(self.base, strategy="__import__('os').system('id')"),
             dict(self.base, strategy="../secrets"),
             dict(self.base, threshold=True),
+            dict(self.base, threshold=0.0),
+            dict(self.base, threshold=1.0),
+            dict(self.base, threshold=2.0),
+            dict(self.base, threshold=3.0),
             dict(self.base, threshold="0"),
             dict(self.base, threshold=-1),
             dict(self.base, threshold=0.300000001),
@@ -154,6 +159,26 @@ class ProposalGateTests(unittest.TestCase):
                                        report["baseline_development"]["correct"])
                     self.assertGreater(report["candidate_holdout"]["correct"],
                                        report["baseline_holdout"]["correct"])
+
+    def test_development_regression_blocks_even_with_better_average(self):
+        documents, dev, hold = gate.abstention.load_cases()
+        wrong = "__impossible_document_id__"
+        old_dev = [dev[0]["expected"]] + [wrong] * (len(dev) - 1)
+        new_dev = [wrong] + [row["expected"] for row in dev[1:]]
+        old_hold = [wrong] * len(hold)
+        new_hold = [row["expected"] for row in hold]
+        results = [
+            ({"correct": 1}, old_dev),
+            ({"correct": len(dev)-1}, new_dev),
+            ({"correct": 0}, old_hold),
+            ({"correct": len(hold)}, new_hold),
+        ]
+        with patch.object(gate, "grade", side_effect=results):
+            result = gate.assess(
+                dict(self.base, strategy="unique_overlap", threshold=0.3))
+        self.assertEqual(result["regressed_development_indices"], [0])
+        self.assertEqual(result["regressed_holdout_indices"], [])
+        self.assertEqual(result["decision"], "HOLD_REGRESSION")
 
     def test_holdout_label_tamper_cannot_change_development_score(self):
         base_dev = gate.assess(self.base)["candidate_development"]
