@@ -192,6 +192,12 @@ def paired_contrasts(cases):
         def psi(xi, xj):
             return psi_proxy(lookup[(world, pi, pj, name, xi, xj)])
         output.append({"world": world, "PT_i": pi, "PT_j": pj, "j": name,
+                       "baseline_psi": psi(0, 0),
+                       "treated_psi": psi(1, 1),
+                       "both_at_zero_floor": psi(0, 0) == 0 and psi(1, 1) == 0,
+                       "raw_joint_margin_difference": (
+                           utility_margin(lookup[(world, pi, pj, name, 1, 1)])
+                           - utility_margin(lookup[(world, pi, pj, name, 0, 0)])),
                        "both_high_minus_both_low": psi(1, 1) - psi(0, 0),
                        "own_effect_at_target_low": psi(0, 1) - psi(0, 0),
                        "target_effect_at_own_low": psi(1, 0) - psi(0, 0),
