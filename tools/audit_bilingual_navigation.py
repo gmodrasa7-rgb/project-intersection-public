@@ -26,7 +26,6 @@ PAIRED_NAV = {
     "PI-NAV-REVIEW": (6, "AI_REVIEW"),
 }
 TOC_CRITICAL = (
-    "../experiments/e009/RESULT.md",
     "../CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md",
     "../PRIOR_ART_RIGHTS_AND_DERIVATION_EN_KO.md",
     "../CONTRIBUTION_COST_ACCOUNTING_REGRESSION.md",
@@ -34,8 +33,6 @@ TOC_CRITICAL = (
 REVIEW_CRITICAL = (
     "../experiments/e007/README.md",
     "../experiments/e008/README.md",
-    "../experiments/e009/RESULT.md",
-    "../experiments/e010/README_KO.md",
     "../CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md",
 )
 
@@ -75,10 +72,14 @@ def comparable_source_path(raw: str) -> str:
     """The *_EN/KO editions are the same source position, not the same file."""
     if raw.endswith("_EN.md") or raw.endswith("_KO.md"):
         stem = raw[:-6]
-        if stem.endswith(("RESEARCH_OVERVIEW", "PUBLIC_EVIDENCE_INDEX", "RESEARCH_STATUS_POLICY")):
+        if stem.endswith(("RESEARCH_OVERVIEW", "PUBLIC_EVIDENCE_INDEX", "RESEARCH_STATUS_POLICY", "PUBLIC_REVIEW_PACKET")):
             return stem + ".md"
         if stem.endswith("CCPH_RESEARCH_ATLAS"):
             return "CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md"
+        if stem.endswith("experiments/e009/RESULT"):
+            return stem + ".md"
+        if stem.endswith("experiments/e010/README"):
+            return stem + "_KO.md"
     return raw
 
 
@@ -156,10 +157,74 @@ def inspect(registry: dict, overrides: dict[str, str] | None = None, full_invent
                     label = f"CP{number}"
                     if f"| {label} |" not in load(en) or f"| {label} |" not in load(ko):
                         issues.append("CCPH_PRIMARY_CASE_ID_PARITY_MISSING:" + label)
+            if pid == "PI-CORE-PUBLIC-REVIEW-PACKET":
+                for q in ("NAV-Q1", "NAV-Q2", "NAV-Q3", "NAV-Q4", "NAV-Q5"):
+                    if q not in load(en) or q not in load(ko):
+                        issues.append("REVIEW_QUESTION_MISSING:" + q)
+                if "git rev-parse HEAD" not in load(en) or "git rev-parse HEAD" not in load(ko):
+                    issues.append("REVIEW_REPRODUCIBILITY_COMMAND_MISSING")
             if pid == "PI-CORE-PUBLIC-EVIDENCE-INDEX":
                 for metric in ("0.090022", "0.063241", "0.065323", "42.35%"):
                     if metric not in load(en) or metric not in load(ko):
                         issues.append("E009_NUMERIC_PARITY_FAILED:" + metric)
+        if pid.startswith("PI-EXP-"):
+            source = pair.get("source_legacy_path", "")
+            if not (ROOT / source).is_file():
+                issues.append("EXPERIMENT_SOURCE_MISSING:" + pid)
+            else:
+                if git_blob_digest((ROOT / source).read_bytes()) != pair.get("source_blob_sha_at_split"):
+                    issues.append("EXPERIMENT_SOURCE_DRIFT:" + pid)
+            for lang, path, other in (("en", en, ko), ("ko", ko, en)):
+                body = load(path)
+                # Historical E010 Korean original predates edition routing. Do not edit it
+                # solely to pass a new metadata standard or alter its historic source blob.
+                if not (pid == "PI-EXP-E010-ANALYSIS" and lang == "ko"):
+                    if f"<!-- PI-LANGUAGE: {lang} -->" not in body:
+                        issues.append("EXPERIMENT_LANGUAGE_MARKER_MISSING:" + path)
+                    if f"<!-- PI-MIRROR: {other} -->" not in body:
+                        issues.append("EXPERIMENT_COUNTERPART_MARKER_MISSING:" + path)
+                if lang == "en" and HANGUL.search(visible_text(body)):
+                    issues.append("EXPERIMENT_ENGLISH_SCRIPT_LEAK:" + path)
+                if lang == "ko" and len(HANGUL.findall(visible_text(body))) < 200:
+                    issues.append("EXPERIMENT_KOREAN_PROSE_MISSING:" + path)
+                for target in relative_links(path, body):
+                    if target and not ((ROOT / path).parent / target).exists():
+                        issues.append("EXPERIMENT_BROKEN_LINK:" + path + ":" + target)
+            if pid == "PI-EXP-E009-RESULT":
+                keys = ("TWO_RULE_SIMPLE", "MINIMAL_4VAR", "PROJECT_V3",
+                        "MAK_PLUS_POINTWISE", "SECURITY_BOUNDED")
+                def numeric_rows(body: str) -> dict[str, tuple[str, ...]]:
+                    rows = {}
+                    for line in body.splitlines():
+                        cells = [x.strip() for x in line.split("|")[1:-1]]
+                        if len(cells) == 6 and cells[0] in keys:
+                            rows[cells[0]] = tuple(cells[1:])
+                    return rows
+                source_rows = numeric_rows(load(source))
+                if len(source_rows) != len(keys):
+                    issues.append("E009_FROZEN_RESULT_MISSING_POLICIES")
+                if numeric_rows(load(en)) != source_rows or numeric_rows(load(ko)) != source_rows:
+                    issues.append("E009_NUMERIC_TABLE_DRIFT")
+                for token in ("0.090022", "0.063241", "0.065323", "42.35%",
+                              "PROJECT_V3_RESIDUAL_SURVIVES = FALSE"):
+                    if token not in load(en) or token not in load(ko):
+                        issues.append("E009_NEGATIVE_VERDICT_MISSING:" + token)
+            if pid == "PI-EXP-E010-ANALYSIS":
+                row_labels = ("0.10", "0.50", "0.80", "0.95")
+                def fixed_grid(body: str) -> list[tuple[str, str, str]]:
+                    result = []
+                    for line in body.splitlines():
+                        cells = [x.strip() for x in line.split("|")[1:-1]]
+                        if len(cells) == 3 and cells[0] in row_labels:
+                            result.append(tuple(cells))
+                    return result
+                ko_rows = fixed_grid(load(ko))
+                if len(ko_rows) != 4 or fixed_grid(load(en)) != ko_rows:
+                    issues.append("E010_FIXED_GRID_DRIFT")
+                for token in ("108", "60", "48", "U_C = c/(1-δ)",
+                              "U_E = g(1-x)-F + δ(c-d)/(1-δ)", "H_exposure = q*(τ_o+τ_e)*(1-r)"):
+                    if token not in load(en) or token not in load(ko):
+                        issues.append("E010_MODEL_ASSUMPTION_MISSING:" + token)
         if pid not in PAIRED_NAV:
             continue
 
@@ -199,6 +264,18 @@ def inspect(registry: dict, overrides: dict[str, str] | None = None, full_invent
                 for source in core:
                     if source not in linked:
                         issues.append("REQUIRED_EVIDENCE_ROUTE_MISSING:" + path + ":" + source)
+                for stem in ("PUBLIC_REVIEW_PACKET",):
+                    required = "../research/" + stem + ("_EN.md" if lang == "en" else "_KO.md")
+                    if required not in linked:
+                        issues.append("REVIEW_READER_LANGUAGE_ROUTE_MISSING:" + path)
+                if pid == "PI-NAV-TOC":
+                    experiment_paths = (
+                        "../experiments/e009/RESULT_" + ("EN.md" if lang == "en" else "KO.md"),
+                        "../experiments/e010/README_" + ("EN.md" if lang == "en" else "KO.md"),
+                    )
+                    for candidate in experiment_paths:
+                        if candidate not in linked:
+                            issues.append("EXPERIMENT_READER_LANGUAGE_ROUTE_MISSING:" + path + ":" + candidate)
 
         en_sections = sections(load(en))
         ko_sections = sections(load(ko))
@@ -228,10 +305,17 @@ def changed_pair_errors(registry: dict, base: str) -> list[str]:
     except (subprocess.CalledProcessError, OSError):
         return ["INVALID_GIT_DIFF_BASE"]
     for p in registry.get("pair_catalog", []):
-        if p.get("id") not in PAIRED_NAV and not p.get("id", "").startswith("PI-CORE-"):
+        if p.get("id") not in PAIRED_NAV and not p.get("id", "").startswith(("PI-CORE-", "PI-EXP-")):
             continue
         en, ko = p["original_1_english"], p["original_2_korean"]
         if (en in changed) != (ko in changed):
+            # One exceptional first publication: the English E010 translation is new,
+            # while its pre-existing historical Korean original is immutable.
+            if (p.get("id") == "PI-EXP-E010-ANALYSIS"
+                    and en in changed and ko not in changed
+                    and subprocess.run(["git", "cat-file", "-e", base + ":" + en],
+                        cwd=ROOT, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL).returncode != 0):
+                continue
             exc = p.get("one_sided_edit_exception")
             if not (p.get("meaning_review_status") == "STALE"
                     and isinstance(exc, str) and len(exc.strip()) >= 20
@@ -248,7 +332,7 @@ def run_mutations(registry: dict) -> None:
     mutants = [
         ({en: base_en.replace("## 3.", "## 7.", 1)}, None),
         ({en: base_en.replace("Founding question", "한글 침입", 1)}, None),
-        ({ko: base_ko.replace("../experiments/e009/RESULT.md", "../absent.md", 1)}, None),
+        ({ko: base_ko.replace("../experiments/e009/RESULT_KO.md", "../absent.md", 1)}, None),
         ({en: base_en.replace("<!-- PI-MIRROR:", "<!-- missing:", 1)}, None),
     ]
     for changed, _ in mutants:
@@ -262,7 +346,13 @@ def run_mutations(registry: dict) -> None:
     ccph_en = "research/CCPH_RESEARCH_ATLAS_EN.md"
     damaged = (ROOT / ccph_en).read_text(encoding="utf-8").replace("| CP79 |", "| CPXX |", 1)
     assert any("CCPH_PRIMARY_CASE_ID_PARITY_MISSING" in x for x in inspect(registry, overrides={ccph_en: damaged}, full_inventory=False))
-    print("Independent-language structural negative mutants: 7/7 detected")
+    e009 = "experiments/e009/RESULT_KO.md"
+    wrong = (ROOT / e009).read_text(encoding="utf-8").replace("0.239404", "0.339404", 1)
+    assert "E009_NUMERIC_TABLE_DRIFT" in inspect(registry, overrides={e009: wrong}, full_inventory=False)
+    e010 = "experiments/e010/README_EN.md"
+    wrong_grid = (ROOT / e010).read_text(encoding="utf-8").replace("| 0.95 | 21 | 6 |", "| 0.95 | 20 | 7 |", 1)
+    assert "E010_FIXED_GRID_DRIFT" in inspect(registry, overrides={e010: wrong_grid}, full_inventory=False)
+    print("Independent-language structural negative mutants: 9/9 detected")
 
 
 def main():
