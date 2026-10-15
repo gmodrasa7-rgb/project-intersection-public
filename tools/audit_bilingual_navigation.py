@@ -154,7 +154,7 @@ def inspect(registry: dict, overrides: dict[str, str] | None = None, full_invent
             if pid == "PI-CORE-CCPH-RESEARCH-ATLAS":
                 for number in range(64, 80):
                     label = f"CP{number}"
-                    if label not in load(en) or label not in load(ko):
+                    if f"| {label} |" not in load(en) or f"| {label} |" not in load(ko):
                         issues.append("CCPH_PRIMARY_CASE_ID_PARITY_MISSING:" + label)
             if pid == "PI-CORE-PUBLIC-EVIDENCE-INDEX":
                 for metric in ("0.090022", "0.063241", "0.065323", "42.35%"):
@@ -260,7 +260,7 @@ def run_mutations(registry: dict) -> None:
     corrupted = (ROOT / core_en).read_text(encoding="utf-8").replace("0.090022", "0.990022", 1)
     assert any("E009_NUMERIC_PARITY_FAILED" in x for x in inspect(registry, overrides={core_en: corrupted}, full_inventory=False))
     ccph_en = "research/CCPH_RESEARCH_ATLAS_EN.md"
-    damaged = (ROOT / ccph_en).read_text(encoding="utf-8").replace("CP79", "CPXX", 1)
+    damaged = (ROOT / ccph_en).read_text(encoding="utf-8").replace("| CP79 |", "| CPXX |", 1)
     assert any("CCPH_PRIMARY_CASE_ID_PARITY_MISSING" in x for x in inspect(registry, overrides={ccph_en: damaged}, full_inventory=False))
     print("Independent-language structural negative mutants: 7/7 detected")
 
