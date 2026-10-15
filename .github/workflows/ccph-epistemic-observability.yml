@@ -1,0 +1,101 @@
+name: CCPH epistemic observability (synthetic)
+
+on:
+  pull_request:
+    paths:
+      - "experiments/ccph_epistemic_probe_v01/**"
+      - ".github/workflows/ccph-epistemic-observability.yml"
+  push:
+    branches: [main]
+    paths:
+      - "experiments/ccph_epistemic_probe_v01/**"
+      - ".github/workflows/ccph-epistemic-observability.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  finite-world-self-audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Compile executable Python source
+        run: python -m py_compile experiments/ccph_epistemic_probe_v01/probe.py
+      - name: Execute fixed synthetic world and print receipt
+        run: |
+          python experiments/ccph_epistemic_probe_v01/probe.py --verify > /tmp/ccph-probe.json
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          r = json.loads(Path("/tmp/ccph-probe.json").read_text())
+          assert r["schema"] == "pi-ccph-epistemic-toy/v0.1"
+          assert r["synthetic_warning_worlds"] == 24
+          assert r["illustrative_events"] == 11
+          assert r["checks_passed"] == 121
+          assert r["failed_checks"] == 0
+          assert r["distinct_epistemic_states_same_terminal_observation"] is True
+          assert r["toy_counts"] == {
+            "outcome_only_positive": 1,
+            "raw_event_count_positive": 8,
+            "confirmed_true_warning_events": 1,
+            "confirmed_valid_logic_events": 1,
+            "unresolved_warning_events": 1,
+          }
+          assert r["unique_artifacts_in_3_mentions"] == 2
+          by_id = {x["id"]: x for x in r["event_results"]}
+          assert by_id["ignored_true_warning"]["separate_ledger_status"] == "E_WARNING_TRUE"
+          assert by_id["ignored_false_alarm"]["separate_ledger_status"] == "E_WARNING_FALSE"
+          assert by_id["new_theory_candidate"]["separate_ledger_status"] == "E_THEORY_CANDIDATE"
+          assert by_id["logically_invalid_refutation"]["separate_ledger_status"] == "E_LOGIC_INVALID"
+          assert by_id["unpriced_care"]["separate_ledger_status"] == "A_CARE_UNPRICED"
+          assert "new empirical CCPH effect" in r["not"]
+          print("CCPH FINITE TOY SELF-AUDIT PASS; these 121 checks are not empirical validations.")
+          PY
+      - name: Reverse actor identity and prohibit unknown-to-true promotion
+        run: |
+          python - <<'PY'
+          import importlib.util
+          from pathlib import Path
+          path = Path("experiments/ccph_epistemic_probe_v01/probe.py")
+          spec = importlib.util.spec_from_file_location("probe_ccph", path)
+          p = importlib.util.module_from_spec(spec)
+          spec.loader.exec_module(p)
+          for truth in p.TRUTH:
+            for reported in [True, False]:
+              for acted in [True, False]:
+                a = p.warning_world("A", truth, reported, acted)
+                b = p.warning_world("B", truth, reported, acted)
+                assert {k:v for k,v in a.items() if k != "actor"} == {k:v for k,v in b.items() if k != "actor"}
+          for acted in [True, False]:
+            u = p.warning_world("A", "UNKNOWN", True, acted)
+            assert u["warning_status"] == "UNRESOLVED_WARNING"
+            assert u["actual_prevention"] is False
+          assert p.classify_event({"kind":"HYPOTHESIS","truth":"UNKNOWN","novel":"FALSE","checked":False}) == "E_PRIOR_ART_NOT_NEW"
+          assert p.classify_event({"kind":"LOGIC","truth":"FALSE","novel":"TRUE","checked":True}) == "E_LOGIC_INVALID"
+          print("Independent CI wrapper checks passed on fixed synthetic oracle, not real data.")
+          PY
+      - name: Verify published compact receipt equals computed output
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          computed = json.loads(Path("/tmp/ccph-probe.json").read_text())
+          receipt = json.loads(Path("experiments/ccph_epistemic_probe_v01/RESULT.json").read_text())
+          o = receipt["output"]
+          assert o["synthetic_warning_worlds"] == computed["synthetic_warning_worlds"]
+          assert o["illustrative_events"] == computed["illustrative_events"]
+          assert o["checks_passed"] == computed["checks_passed"]
+          assert o["failed_checks"] == computed["failed_checks"]
+          assert o["terminal_projection_noninjective"] == computed["distinct_epistemic_states_same_terminal_observation"]
+          assert o["unique_artifacts_in_3_mentions"] == computed["unique_artifacts_in_3_mentions"]
+          for name in ["outcome_only_positive", "raw_event_count_positive",
+                       "confirmed_true_warning_events", "confirmed_valid_logic_events",
+                       "unresolved_warning_events"]:
+            assert o[name] == computed["toy_counts"][name], name
+          assert receipt["evidence_status"] == computed["evidence_class"]
+          print("CCPH compact receipt parity with fresh synthetic computation: PASS")
+          PY
