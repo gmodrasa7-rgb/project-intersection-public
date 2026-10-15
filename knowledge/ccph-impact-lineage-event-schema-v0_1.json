@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/knowledge/ccph-impact-lineage-event-schema-v0_1.json",
   "title": "Project Intersection CCPH opt-in impact-lineage event v0.1",
-  "description": "An evidence-limited event and influence-claim record. Never infer legal guilt, rights ownership, causal effect, compensation, or human worth from a tag. Not an exhaustive log.",
+  "description": "CCPH historical-to-future case database: evidence-limited, opt-in, revision-preserving event/impact labels, with past rediscovery, present observation and future-append compatible backward and forward traversal. This file is only a schema, not populated records or an operational data collection system.",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -391,6 +391,99 @@
           "description": "Use a versioned correction rather than silent replacement."
         }
       }
+    },
+    "traceability": {
+      "type": "object",
+      "description": "Optional backward-compatible extension. Store the dated discovery process and direct source links; derive forward descendants by indexing source links. Does not establish causation or legal ownership.",
+      "additionalProperties": false,
+      "required": [
+        "collection_mode",
+        "recorded_at",
+        "rediscovered_at",
+        "upstream_event_refs",
+        "label_revision_refs"
+      ],
+      "properties": {
+        "collection_mode": {
+          "enum": [
+            "HISTORICAL_REDISCOVERY",
+            "PRESENT_OBSERVATION",
+            "FUTURE_EVENT_APPEND",
+            "SYNTHETIC_TEST"
+          ],
+          "description": "FUTURE_EVENT_APPEND labels actual events entered later; it does not forecast future occurrences."
+        },
+        "recorded_at": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time",
+          "description": "When database operator appended the record, distinct from event_time."
+        },
+        "rediscovered_at": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time",
+          "description": "When the case was rediscovered, null if not applicable; never retrodate label creation."
+        },
+        "upstream_event_refs": {
+          "type": "array",
+          "description": "Stable references to precursor event IDs with independent status; source-of-influence hypotheses are not causal proof. Reverse lookup traverses these pointers; forward lookup inverts them in an index, with no duplicate stored descendants.",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "event_id",
+              "relation_status",
+              "evidence_ids"
+            ],
+            "properties": {
+              "event_id": {
+                "type": "string",
+                "minLength": 3
+              },
+              "relation_status": {
+                "enum": [
+                  "DOCUMENTED_EXPOSURE",
+                  "CORRELATED",
+                  "HYPOTHESIZED",
+                  "CAUSALLY_SUPPORTED",
+                  "DISPUTED",
+                  "UNVERIFIED"
+                ]
+              },
+              "evidence_ids": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "uniqueItems": true
+              },
+              "notes": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "label_revision_refs": {
+          "type": "array",
+          "description": "Stable pointers to previous append-only label/revision records, preserving contradictory interpretations and reasons for corrections.",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "scope_limitations": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Missing historical sources, privacy limits, record survival and sampling boundaries."
+        }
+      }
     }
   },
   "examples": [
@@ -454,6 +547,16 @@
         "adjudicator_separation": "SAME_AS_RECORDER",
         "unresolved_claims": [],
         "version_of_event": null
+      },
+      "traceability": {
+        "collection_mode": "SYNTHETIC_TEST",
+        "recorded_at": null,
+        "rediscovered_at": null,
+        "upstream_event_refs": [],
+        "label_revision_refs": [],
+        "scope_limitations": [
+          "Synthetic case: no history reconstructed or future event recorded."
+        ]
       }
     }
   ],
@@ -501,5 +604,5 @@
       }
     }
   ],
-  "$comment": "Guardrails here are necessary but not sufficient. Verify context-sensitive privacy, lawful purposes, identities, claim and participant rights outside automated schema validation. Unseen links remain unknown, not zero."
+  "$comment": "The event database is not society-wide collection and should preserve uncertain and negative labels. Bidirectional search is a proposed indexing behavior; this JSON Schema alone does not implement an index, causal reasoning or record ingestion."
 }

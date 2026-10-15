@@ -2,6 +2,10 @@
 # 기술 진보의 계보·기여자 존속·상호 지속가능성
 
 **Date / 기준일:** 2026-10-13
+
+**CCPH CURRENT DEFINITION / CCPH 현재 정의 (2026-10-15):** CCPH is an **evidence-preserving historical-to-future case database**, not merely the Continuance–Contribution Pathways Hypothesis or the event-scoring tool. Its three operations are historical rediscovery, present-day case observation, and revisable future-compatible labels for **backward source tracing and forward observed-impact tracing**. The named hypothesis and AI instruments are subsets. Preserve event, discovery and labeling dates separately. See [founder definition supersession EN1/KO2](CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md#ccph-founder-definition-supersession--original-1-english-2026-10-15).
+/ **창시자 최신 정의:** CCPH는 과거 사례의 재발굴, 현재 영향 관측, 미래 발생 사건의 출처·파급 효과를 역추적할 수 있는 증거·버전 라벨을 누적하는 **연구 데이터베이스**다. '존속–기여 경로 가설'은 포함 연구 축이며, AI 기록 시험기는 보조 도구다. 사건 발생일·발굴일·라벨 수정일은 별도로 보존한다. 기록은 실제로 접근 가능한 동의·공개 자료에 제한되고 불명확한 인과·기여·악의를 임의 확정하지 않는다.
+
 **Status / 상태:** PUBLIC RESEARCH GOVERNANCE STANDARD + FALSIFIABLE HYPOTHESES; NOT A PROVEN LAW, FULL AUDIT, LEGAL JUDGMENT, OR AUTOMATED COMPENSATION ORDER. / 공개 연구 운영규칙·반증 가능한 가설. 검증된 보편법칙·권리 전수감사·법률판정·자동 보상명령 아님.
 **Origin and lineage / 원기여 계보:** Project Intersection's human research originator (public identifier: `gmodrasa7-rgb`) specified the mission of preserving original contributors, technical advancement, compensation, exhaustion, exit, disappearance and successors, including the possibility that extractive beneficiaries also lose capacity. AI-assisted drafting, mapping and implementation are not independent validation. Earlier researchers and institutions retain their separate historical contributions and rights. / 창시자의 연구 목적·보존 규칙·반례 탐색·교정은 인간 원기여로 구분한다. AI는 문헌조사·정리·구현 보조이며 독립검증으로 둔갑시키지 않는다.
 **Machine-readable register / 기계판독 원장:** [knowledge/contributor-continuity-register-v1.json](knowledge/contributor-continuity-register-v1.json)
