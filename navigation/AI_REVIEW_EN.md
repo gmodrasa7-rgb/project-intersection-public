@@ -9,7 +9,7 @@ Independent reviewers and other AI systems may analyze **public** artifacts. Thi
 
 ## 1. Separate the claims before evaluating them
 
-Use the [founding research purpose](../README.md), [claim evidence index](../PUBLIC_EVIDENCE_INDEX.md), [status and evidence policy](../RESEARCH_STATUS_POLICY.md), and [full review packet](../PUBLIC_REVIEW_PACKET.md). Distinguish observations, original project calculations, historical examples, speculation, external replication and evidence of direct real-world effects. An index entry is not evidence of its own correctness.
+Use the [founding research purpose](../README.md), [claim evidence index](../PUBLIC_EVIDENCE_INDEX_EN.md), [status and evidence policy](../RESEARCH_STATUS_POLICY_EN.md), and [full review packet](../PUBLIC_REVIEW_PACKET.md). Distinguish observations, original project calculations, historical examples, speculation, external replication and evidence of direct real-world effects. An index entry is not evidence of its own correctness.
 
 ## 2. Known experiment boundaries
 
