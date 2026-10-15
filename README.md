@@ -16,6 +16,8 @@
 
 **Scientific boundary:** Cooperation is **not a proven universal theorem**. The unobserved contribution of an excluded actor is **unknown**, not zero and not proof of hidden greatness. Project-run synthetic results are not independent real-world validation.
 
+**Contrary evidence visible before expanding:** [E009](experiments/e009/RESULT_EN.md) found the project's Project-v3 candidate **42.35% worse on mean regret** than the best simple baseline in its preregistered synthetic benchmark (3 of 4 criteria failed). [E008](experiments/e008/README_EN.md) has **no completed main policy result**. Neither establishes real-world causal effects.
+
 **Choose your route:** [Understand the question](research/RESEARCH_OVERVIEW_EN.md) · [Explore real histories and overlooked contribution](research/CCPH_RESEARCH_ATLAS_EN.md) · [Challenge the negative result](experiments/e009/RESULT_EN.md).
 
 <details>
@@ -66,6 +68,8 @@
 **핵심 질문:** 서로 다른 지능체가 자기이익을 추구할 때, 지배·착취·강제 흡수보다 상대의 존속·실효적 이탈·복구·미래 선택지를 보존하는 것이 각자에게 유리해지는 검증 가능한 조건은 무엇인가?
 
 **과학적 경계:** 협력이 언제나 우월하다는 **보편법칙의 증명이 아니다**. 배제된 개체의 미관측 기여는 **미확인**이지 0도, 숨은 위대함의 증거도 아니다. 자체 합성실험은 현실에서의 독립적 입증과 다르다.
+
+**펼치지 않아도 보이는 불리한 증거:** [E009](experiments/e009/RESULT_KO.md) 사전등록 합성 비교에서 Project-v3의 평균 후회값은 최선의 단순 기준선보다 **42.35% 나빴고**, 기준 4개 중 3개에 실패했다. [E008](experiments/e008/README_KO.md)은 **정책 본 비교실험 결과가 없다**. 둘 다 현실의 인과효과를 확정하지 않는다.
 
 **어디부터 읽을까:** [연구 질문 이해](research/RESEARCH_OVERVIEW_KO.md) · [실제 역사와 간과된 기여](research/CCPH_RESEARCH_ATLAS_KO.md) · [부정결과 검토](experiments/e009/RESULT_KO.md).
 
