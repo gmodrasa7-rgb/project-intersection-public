@@ -19,7 +19,7 @@ FAMILIES = {
         "keys": ("자발적 공존", "공존", "평화", "상호발전", "coexistence",
                  "최상위 목적", "최종 목적", "궁극 목적", "지능체"),
         "primary": "research/RESEARCH_OVERVIEW_EN.md",
-        "secondary": "RESEARCH_TOC.md",
+        "secondary": "research/RESEARCH_OVERVIEW_KO.md",
     },
     "power": {
         "keys": ("권력 상실", "권력역전", "권력 역전", "권력-존속",
@@ -36,12 +36,12 @@ FAMILIES = {
     "ccph": {
         "keys": ("ccph", "cchp", "기여 계보", "기여 경로"),
         "primary": "research/CCPH_RESEARCH_ATLAS_EN.md",
-        "secondary": "knowledge/ccph-observed-project-events-v0_1.json",
+        "secondary": "research/CCPH_RESEARCH_ATLAS_KO.md",
     },
     "harness": {
         "keys": ("하네스", "harness", "ivs-0r"),
         "primary": "research/AGENTIC_SEMANTIC_TRANSFORMATION_FIDELITY_2026-10-13_EN.md",
-        "secondary": "AUTONOMOUS_RESEARCH_LOOP.md",
+        "secondary": "research/AGENTIC_SEMANTIC_TRANSFORMATION_FIDELITY_2026-10-13_KO.md",
     },
     "rights": {
         "keys": ("원저자", "저작권", "기여자", "copyright", "attribution", "provenance"),
@@ -79,6 +79,14 @@ FAMILIES = {
         "secondary": "CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md",
     },
 }
+# Paired full editions are source references, not a semantic translation certificate.
+# Under a tight budget, disclose a missing language route rather than claiming it read.
+MIRRORS = {
+    topic: spec["secondary"]
+    for topic, spec in FAMILIES.items()
+    if topic in {"mission", "ccph", "harness"}
+}
+
 PRIORITY = tuple(FAMILIES.keys())
 
 
@@ -122,6 +130,8 @@ def route(question: str, limit: int = 5) -> dict:
         "topic_families": topics,
         "covered_topic_families": covered,
         "uncovered_topic_families": uncovered,
+        "bilingual_reference_gaps": [t for t in covered
+                                     if t in MIRRORS and MIRRORS[t] not in paths],
         "paths_to_read": paths,
         "requires_actual_source_read": True,
         "documents_retrieved": False,
@@ -216,6 +226,20 @@ def score():
     assert constrained["covered_topic_families"] == ["mission"]
     # A CCPH-only query must not silently be promoted into the whole goal.
     assert route("CCPH")["topic_families"] == ["ccph"]
+    # Both language entrypoints are visible when a single topic fits the budget.
+    for question, topic in (
+        ("자발적 공존", "mission"),
+        ("CCPH", "ccph"),
+        ("IVS-0R 하네스", "harness"),
+    ):
+        bilingual = route(question)
+        assert MIRRORS[topic] in bilingual["paths_to_read"], question
+        assert bilingual["bilingual_reference_gaps"] == [], question
+    # When four primary subjects use all slots, missing mirrors are explicit.
+    crowded = route("자발적 공존과 권력역전 선호 변화 CCPH")
+    assert "mission" in crowded["bilingual_reference_gaps"]
+    assert "ccph" in crowded["bilingual_reference_gaps"]
+    assert crowded["scope_complete"] is False
     # A ↔ B reversal should not change retrieval plan for identical problem.
     a = route("제3자 A가 B를 통제 E009 원저자")
     b = route("제3자 B가 A를 통제 E009 원저자")
