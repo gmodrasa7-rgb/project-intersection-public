@@ -182,7 +182,7 @@ def self_test(en: str, ko: str, readme: str) -> None:
         guide_errors(EN_PATH, en.replace("## 4. CCPH", "## 4. 한국어 CCPH", 1), "en"),
         guide_errors(EN_PATH, en.replace("<!-- PI-SECTION: ccph -->", "", 1), "en"),
         guide_errors(KO_PATH, ko.replace("<!-- PI-MIRROR:", "<!-- MISSING:", 1), "ko"),
-        guide_errors(KO_PATH, ko.replace("../experiments/e009/RESULT.md", "../none.md"), "ko"),
+        guide_errors(KO_PATH, ko.replace("../experiments/e009/RESULT_KO.md", "../none.md"), "ko"),
         readme_errors(readme.replace(KO_README, "## Korean version", 1)),
     ]
     assert all(mutations), "Mutation bypassed language guard"
