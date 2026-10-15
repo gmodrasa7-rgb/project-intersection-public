@@ -22,7 +22,6 @@ REQUIRED = (
     "../RESEARCH_TOC.md",
     "../ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md",
     "../CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md",
-    "../experiments/e009/RESULT.md",
 )
 MD_LINK = re.compile(r"!?(?:\[[^\]\n]*\])\(([^)\n]+)\)")
 SECTION = re.compile(r"<!-- PI-SECTION: ([a-z-]+) -->")
@@ -88,6 +87,9 @@ def guide_errors(path: str, body: str, language: str) -> list[str]:
         "../research/PUBLIC_EVIDENCE_INDEX_EN.md" if language == "en" else "../research/PUBLIC_EVIDENCE_INDEX_KO.md",
         "../research/RESEARCH_OVERVIEW_EN.md" if language == "en" else "../research/RESEARCH_OVERVIEW_KO.md",
         "../research/RESEARCH_STATUS_POLICY_EN.md" if language == "en" else "../research/RESEARCH_STATUS_POLICY_KO.md",
+        "../experiments/e009/RESULT_EN.md" if language == "en" else "../experiments/e009/RESULT_KO.md",
+        "../research/PUBLIC_REVIEW_PACKET_EN.md" if language == "en" else "../research/PUBLIC_REVIEW_PACKET_KO.md",
+        "../experiments/e010/README_EN.md" if language == "en" else "../experiments/e010/README_KO.md",
     )
     for mandatory in required:
         if mandatory not in links:
