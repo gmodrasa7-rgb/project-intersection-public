@@ -16,6 +16,8 @@
       "AI_DISCOVERY_INDEX.json"
     ],
     "level_2_understanding_and_audit": [
+      "research/PUBLIC_REVIEW_PACKET_KO.md",
+      "research/PUBLIC_REVIEW_PACKET_EN.md",
       "RESEARCH_OVERVIEW.md",
       "RESEARCH_TOC.md",
       "PUBLIC_EVIDENCE_INDEX.md",
@@ -119,7 +121,10 @@
         "limitation_en": "Credit is not a verified payment obligation or blanket reuse permission.",
         "limitation_ko": "기여 기록만으로 금전채무나 전체 재사용 허가를 확정하지 않는다."
       }
-    ]
+    ],
+    "human_guide_en": "research/PUBLIC_REVIEW_PACKET_EN.md",
+    "human_guide_ko": "research/PUBLIC_REVIEW_PACKET_KO.md",
+    "human_guide_legacy": "PUBLIC_REVIEW_PACKET.md"
   },
   "canonical_boundary": "Public navigation and evidence index only; private core research source is not republished.",
   "languages": [
@@ -310,6 +315,13 @@
     "historic_bilingual_contents": "RESEARCH_TOC.md",
     "historic_bilingual_ai_review": "AI_REVIEW_START_HERE.md",
     "semantic_translation_certification": "NOT_DONE",
-    "editorial_repair_cost_policy": "reuse project files and Git provenance; do not require recurring founder reconstruction"
+    "editorial_repair_cost_policy": "reuse project files and Git provenance; do not require recurring founder reconstruction",
+    "english_full_public_review": "research/PUBLIC_REVIEW_PACKET_EN.md",
+    "korean_full_public_review": "research/PUBLIC_REVIEW_PACKET_KO.md",
+    "e009_english_negative_result": "experiments/e009/RESULT_EN.md",
+    "e009_korean_negative_result": "experiments/e009/RESULT_KO.md",
+    "e010_english_exploratory_analysis": "experiments/e010/README_EN.md",
+    "e010_korean_historical_original": "experiments/e010/README_KO.md",
+    "semantic_parity": "SOURCE_CONSTRAINED_STRUCTURAL_AND_NUMBER_PARITY_ONLY__INDEPENDENT_LINGUISTIC_REVIEW_PENDING"
   }
 }
