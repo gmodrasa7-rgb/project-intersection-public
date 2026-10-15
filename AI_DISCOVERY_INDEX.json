@@ -322,6 +322,12 @@
     "e010_korean_historical_original": "experiments/e010/README_KO.md",
     "semantic_parity": "SOURCE_CONSTRAINED_STRUCTURAL_AND_NUMBER_PARITY_ONLY__INDEPENDENT_LINGUISTIC_REVIEW_PENDING",
     "full_review_english": "research/PUBLIC_REVIEW_PACKET_EN.md",
-    "full_review_korean": "research/PUBLIC_REVIEW_PACKET_KO.md"
+    "full_review_korean": "research/PUBLIC_REVIEW_PACKET_KO.md",
+    "e007_english_timing_report": "experiments/e007/README_EN.md",
+    "e007_korean_timing_report": "experiments/e007/README_KO.md",
+    "e008_english_preregistration": "experiments/e008/README_EN.md",
+    "e008_korean_preregistration": "experiments/e008/README_KO.md",
+    "e008_main_policy_result": "NOT_EXECUTED",
+    "e007_result_scope": "PROJECT_RERUN_SYNTHETIC_TIMING_72_36_17_WITH_IMPLEMENTATION_ORDER_LIMIT"
   }
 }

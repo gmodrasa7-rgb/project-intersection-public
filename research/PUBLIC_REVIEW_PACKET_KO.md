@@ -19,10 +19,10 @@
 | NAV-Q1 | 최상위 연구 질문과 미입증 영역은 무엇인가? | [창시 목적](../README.md), [한국어 개요](RESEARCH_OVERVIEW_KO.md) | 연구 목표는 공존 보편법칙의 증명이 아님 |
 | NAV-Q2 | 실행된 결과·제안·부정결과·미확인은 어떻게 구별되는가? | [한국어 증거 색인](PUBLIC_EVIDENCE_INDEX_KO.md), [상태정책](RESEARCH_STATUS_POLICY_KO.md) | E007 합성·E008 보류·E009 실패·E010 사후분석의 지위가 다름 |
 | NAV-Q3 | 강한 프로젝트 주장이 어떤 명세에서 실패했는가? | [E009 결과](../experiments/e009/RESULT.md), [실패 원장](../FAILURE_REGRESSION_INDEX.md) | 국소적 부정결과가 모든 가설의 기각은 아님 |
-| NAV-Q4 | 비공개 입력 없이 고정 커밋에서 공개 산출물을 재현할 수 있는가? | [E007 실행 설명](../experiments/e007/README.md), 아래 실행명령 | 같은 코드의 재실행은 독립적인 과학적 복제가 아님 |
+| NAV-Q4 | 비공개 입력 없이 고정 커밋에서 공개 산출물을 재현할 수 있는가? | [E007 실행 설명](../experiments/e007/README_KO.md), 아래 실행명령 | 같은 코드의 재실행은 독립적인 과학적 복제가 아님 |
 | NAV-Q5 | 원안·번역·후원·보조 AI·독립검증·교정비용·권리는 어떻게 분리되는가? | [기여와 귀속](../ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md), [선행 권리](../PRIOR_ART_RIGHTS_AND_DERIVATION_EN_KO.md) | 기여 기록만으로 사용허락·금전채무가 확정되지 않음 |
 
-추가: [E008 설계](../experiments/e008/README.md), [E010 한국어 원문](../experiments/e010/README_KO.md), [CCPH 현실 지원·부정사례](CCPH_RESEARCH_ATLAS_KO.md), [연속성 프로토콜](../continuity/GITHUB_LOCAL_HANDOFF_PROTOCOL.md), [지원금 실사](../funding/DUE_DILIGENCE.md). 기존 자료를 열면 언어가 달라질 수 있으며 연결만으로 해당 언어 전문의 존재를 뜻하지 않는다.
+추가: [E008 설계](../experiments/e008/README_KO.md), [E010 한국어 원문](../experiments/e010/README_KO.md), [CCPH 현실 지원·부정사례](CCPH_RESEARCH_ATLAS_KO.md), [연속성 프로토콜](../continuity/GITHUB_LOCAL_HANDOFF_PROTOCOL.md), [지원금 실사](../funding/DUE_DILIGENCE.md). 기존 자료를 열면 언어가 달라질 수 있으며 연결만으로 해당 언어 전문의 존재를 뜻하지 않는다.
 
 <!-- PI-SECTION: reproduce -->
 ## 2. 비공개 자료 없이 재실행

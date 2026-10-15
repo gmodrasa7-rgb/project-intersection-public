@@ -27,8 +27,8 @@ Many historical sources are Korean-only or bilingual; linked **source titles, fi
 
 ## 3. Results and their non-interchangeable evidence levels
 
-- [E007 — synthetic timing and replication scope](../experiments/e007/README.md)
-- [E008 — preregistered specification, no main result](../experiments/e008/README.md)
+- [E007 — synthetic timing and replication scope](../experiments/e007/README_EN.md)
+- [E008 — preregistered specification, no main result](../experiments/e008/README_EN.md)
 - [E009 — preregistered negative synthetic result](../experiments/e009/RESULT_EN.md)
 - [E010 — English translation of the post-hoc exploratory synthetic analysis](../experiments/e010/README_EN.md)
 - [Full public claim and evidence ledger](../research/PUBLIC_EVIDENCE_INDEX_EN.md)

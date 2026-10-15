@@ -27,8 +27,8 @@
 
 ## 3. 실험 결과와 서로 다른 증거 등급
 
-- [E007 — 합성 시간조건·재현 범위](../experiments/e007/README.md)
-- [E008 — 사전등록 설계·본실험 결과 없음](../experiments/e008/README.md)
+- [E007 — 합성 시간조건·재현 범위](../experiments/e007/README_KO.md)
+- [E008 — 사전등록 설계·본실험 결과 없음](../experiments/e008/README_KO.md)
 - [E009 — 사전등록 합성 부정결과](../experiments/e009/RESULT_KO.md)
 - [E010 — 사후 탐색적 합성계산(한국어 원문)](../experiments/e010/README_KO.md)
 - [공개 주장·증거 원장](../research/PUBLIC_EVIDENCE_INDEX_KO.md)

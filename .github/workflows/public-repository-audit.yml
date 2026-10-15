@@ -481,7 +481,6 @@ jobs:
               "knowledge/explorer.html",
               "CONTRIBUTING.md",
               "LONG_HORIZON_MIN_INTERVENTION_E2E.md",
-              "experiments/e008/README.md",
           ]:
               require(link in en_route and link in ko_route, f"Parallel language routes lost required navigation link: {link}")
 
@@ -500,6 +499,14 @@ jobs:
           ]:
               require(en_path in en_route, f"English original 1 route missing: {en_path}")
               require(ko_path in ko_route, f"Korean original 2 route missing: {ko_path}")
+
+          # E007/E008 original studies need language-specific reader routes without
+          # changing the underlying frozen original experiment and preregistration.
+          for study in ("e007", "e008"):
+              require(f"experiments/{study}/README_EN.md" in en_route,
+                      f"English experiment reading route missing: {study}")
+              require(f"experiments/{study}/README_KO.md" in ko_route,
+                      f"Korean experiment reading route missing: {study}")
 
           # Autonomous continuity must remain resumable without founder reconstruction.
           require(autonomous_state.get("schema_version") == "1.1", "Autonomous state schema version changed unexpectedly; update the audit rule with any deliberate schema migration.")

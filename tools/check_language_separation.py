@@ -90,6 +90,8 @@ def guide_errors(path: str, body: str, language: str) -> list[str]:
         "../experiments/e009/RESULT_EN.md" if language == "en" else "../experiments/e009/RESULT_KO.md",
         "../research/PUBLIC_REVIEW_PACKET_EN.md" if language == "en" else "../research/PUBLIC_REVIEW_PACKET_KO.md",
         "../experiments/e010/README_EN.md" if language == "en" else "../experiments/e010/README_KO.md",
+        "../experiments/e007/README_EN.md" if language == "en" else "../experiments/e007/README_KO.md",
+        "../experiments/e008/README_EN.md" if language == "en" else "../experiments/e008/README_KO.md",
     )
     for mandatory in required:
         if mandatory not in links:
