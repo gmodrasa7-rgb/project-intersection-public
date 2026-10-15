@@ -6,6 +6,8 @@
 
 **Reading language:** English (this section) · [Read in Korean](navigation/START_HERE_KO.md) · [English research contents](navigation/RESEARCH_TOC_EN.md).
 
+**External assessment:** [English evidence-bounded decision brief](navigation/START_HERE_EN.md#external-assessment-decision-brief) · [Reproduction and independent criticism](research/PUBLIC_REVIEW_PACKET_EN.md). This is a review path, not an independent endorsement.
+
 **Scoped open-research license:** In the founding-purpose paragraphs explicitly named in [this EN/KO scope notice](RESEARCH_RIGHTS_SCOPE_EN_KO.md), copyright-protected original expression controlled by the rightsholder is offered under **CC BY-SA 4.0** (attribution + share alike, commercial reuse allowed). This is *not* a whole-repository license and does *not* bind all AI outputs.
 
 **Ultimate research purpose:** Identify, challenge, and test the conditions under which humans, currently deployed AI systems, future AI systems, and other potential intelligent agents can pursue their own survival, freedom, and development while finding it more beneficial over the long run to preserve one another's continued existence, autonomy, independence, effective exit, recovery, and future options than to dominate, exploit, forcibly absorb, or remove them.
@@ -29,6 +31,8 @@
 ## 원본2 — 한국어 | 창시 목적 전문 대응본
 
 **독서 언어:** 한국어(이 절) · [영어 원본1 읽기](navigation/START_HERE_EN.md) · [한국어 연구 목차](navigation/RESEARCH_TOC_KO.md).
+
+**외부 심사:** [한국어 핵심 판단](navigation/START_HERE_KO.md#외부-심사자를-위한-핵심-판단) · [재현 및 독립 비판 자료](research/PUBLIC_REVIEW_PACKET_KO.md). 검토 경로를 뜻하며 독립 검증이 완료되었다는 주장은 아니다.
 
 **한정된 공개연구 이용조건:** [영어 원본1·한국어 원본2 적용 범위](RESEARCH_RIGHTS_SCOPE_EN_KO.md)에 명시된 창시 목적 서술 중 저작권자의 보호 표현에 **CC BY-SA 4.0**을 적용한다. 상업 이용은 가능하지만 적용되는 복제·배포에는 출처 표시와 개작 조건을 준수해야 한다. 저장소 전체 라이선스나 모든 AI 출력의 자동 인용 의무는 아니다.
 
