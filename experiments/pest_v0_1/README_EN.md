@@ -21,6 +21,12 @@ The **unit of analysis** is a fixed world/mechanism × `PT_i` × `PT_j` × suppr
 - Report results by mechanism and transferability setting, including opposite-sign, zero, floor/exit breach, identity swap, and missed-risk cases; do not collapse all worlds into an overall success score.
 - A nonempty MAK++ is **not** established by this code. It implements only an explicit floor/exit screening proxy and role-label invariance.
 
+### Interpretation safeguards (post-hoc design audit; not a new result)
+
+The 96 formal cells contain **48 distinct numerical model states** if the identity label is ignored. A/B swaps duplicate the same role-based deterministic formula; this is a label-invariance smoke test, **not 96 independent observations or a demonstrated reversal of real actors' incentives**. The 24 paired contrast rows likewise contain 12 distinct mechanism/PT settings repeated under A/B labels.
+
+The original `XG_ALONE_INEFFECTIVE` threshold flag is **retained unchanged**. When both the untreated and protected `PSI` equal zero, that flag is also true even though there was no positive suppression incentive to reduce at baseline. Such cells require a separate `both_at_zero_floor` interpretation, not an empirical claim of failed protection. The diagnostic now also returns `baseline_psi`, `treated_psi` and `raw_joint_margin_difference` to expose clipping by `max(0, raw_margin)`. For example, in `survival_fear` at `PT_i = PT_j = 0.25`, both clipped scores are zero while the raw margin changes by −0.133875. Neither raw margin nor clipped score measures observed behavior.
+
 ## Execution gate
 
 These run **schema and adversarial smoke tests only**, not preregistered results:
