@@ -456,5 +456,50 @@
         "version_of_event": null
       }
     }
-  ]
+  ],
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "record_class": {
+            "const": "REAL_OBSERVED"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "evidence": {
+            "minItems": 1
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "privacy_and_control": {
+            "properties": {
+              "publication_scope": {
+                "const": "PUBLIC_NONIDENTIFYING"
+              }
+            }
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "privacy_and_control": {
+            "properties": {
+              "participant_consent": {
+                "not": {
+                  "const": "UNKNOWN_DO_NOT_PUBLISH"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "$comment": "Guardrails here are necessary but not sufficient. Verify context-sensitive privacy, lawful purposes, identities, claim and participant rights outside automated schema validation. Unseen links remain unknown, not zero."
 }
