@@ -10,13 +10,31 @@ This is the **English-only reading route**, paired with [Original 2: Korean](STA
 
 [Project Intersection's founding statement](../README.md) investigates when humans, deployed AI, future AI and other intelligent agents can find voluntary coexistence, autonomy, effective exit, recovery and mutual development more advantageous than exploitation or domination over the long term, without assuming altruism. The project's hypotheses do **not** establish a universal law that cooperation always wins.
 
+### External assessment: decision brief
+
+**Research question (unresolved):** Under what conditions can agents with different capabilities and authority prefer voluntary coexistence, effective exit, recovery and mutual development over extraction or domination, including after power reversals?
+
+**Candidate contribution (novelty not established):** Test long-horizon incentives **together with** outcomes for individual agents, excluded third parties, reversibility, unrecorded contributions and the costs of control. Compare these candidates against existing game theory, social science and AI evaluation. These underlying concepts are not presented as newly invented by this project.
+
+| Independent reviewer asks | English evidence | Current verdict |
+| --- | --- | --- |
+| Does implementation timing alter the conclusion? | [E007](../experiments/e007/README_EN.md) | Outcome classifications differ in **17 of 72 selected synthetic configurations**. Historical errors and corrections are disclosed |
+| Did the proposed method beat a simpler baseline? | [E009](../experiments/e009/RESULT_EN.md) | **No**, within the preregistered synthetic test: Project-v3 failed 3 of 4 criteria; mean regret was **42.35% higher** than the best simple baseline |
+| Is the next comparison completed? | [E008](../experiments/e008/README_EN.md) | Preregistered specification and readiness checks; **no completed main comparison** |
+| Do the explorations confirm the general theory? | [E010](../experiments/e010/README_EN.md) | **108 investigator-selected post-hoc synthetic configurations**; no independent or empirical validation |
+| Has this project established real-world causal impacts of support and overlooked contributions? | [CCPH source atlas](../research/CCPH_RESEARCH_ATLAS_EN.md) | Prior studies and cases are catalogued; **no project-estimated causal treatment effect** |
+
+**Strongest boundary:** Project-authored code and project-run checks are **not** independent replication. No universal cooperation theorem or verified real-world benefit is established. Use the [English evidence ledger](../research/PUBLIC_EVIDENCE_INDEX_EN.md), [review and reproduction packet](../research/PUBLIC_REVIEW_PACKET_EN.md) and [English contents](RESEARCH_TOC_EN.md) to inspect exact claims, original sources and failure histories.
+
+**Decision worth making:** Whether a **small, independently falsifiable pilot** merits support, not whether a large archive itself proves the research claims. The next discriminating check is an independent reimplementation or held-out comparison against a simple baseline, preserving negative outcomes. Funding eligibility and scientific validity require separate judgments.
+
 <!-- PI-SECTION: levels -->
 ## 2. Three reading levels
 
 | Level | Question | Sources |
 | --- | --- | --- |
 | 1 — Discover | What is the question and where should I begin? | [Founding statement](../README.md), [research overview](../research/RESEARCH_OVERVIEW_EN.md), [English AI review](AI_REVIEW_EN.md) |
-| 2 — Understand and audit | Which claims, sources, limitations, failures and rights are recorded? | [Evidence index](../research/PUBLIC_EVIDENCE_INDEX_EN.md), [research contents](../RESEARCH_TOC.md), [status policy](../research/RESEARCH_STATUS_POLICY_EN.md), [review packet](../research/PUBLIC_REVIEW_PACKET_EN.md) |
+| 2 — Understand and audit | Which claims, sources, limitations, failures and rights are recorded? | [Evidence index](../research/PUBLIC_EVIDENCE_INDEX_EN.md), [English research contents](RESEARCH_TOC_EN.md), [status policy](../research/RESEARCH_STATUS_POLICY_EN.md), [review packet](../research/PUBLIC_REVIEW_PACKET_EN.md) |
 | 3 — Inspect artifacts | What can be rerun, contradicted or corrected? | [Experiments](../experiments/), [research](../research/), [prior art](../prior-art/), [knowledge](../knowledge/README.md), [governance](../governance/) |
 
 These are **reading routes**, not an evidence ranking or new physical hierarchy.
