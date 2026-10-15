@@ -1,7 +1,7 @@
 # CCPH Evidence Atlas — Original 1: English
 
 <!-- PI-LANGUAGE: en -->
-<!-- PI-MIRROR: CCPH_RESEARCH_ATLAS_KO.md -->
+<!-- PI-MIRROR: research/CCPH_RESEARCH_ATLAS_KO.md -->
 <!-- PI-SOURCE: CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md -->
 
 **Status:** A navigable, provenance-preserving excerpt of the [full historical prior-art crosswalk](../CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md), not a replacement or independent primary-source verification. [Korean Original 2](CCPH_RESEARCH_ATLAS_KO.md) · [English evidence ledger](PUBLIC_EVIDENCE_INDEX_EN.md).
