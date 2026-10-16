@@ -8,7 +8,8 @@ class ContinuityStressTests(unittest.TestCase):
         x = joint_adoption(.5, .2, 0)
         self.assertAlmostEqual(x["share_survival"]["A"], .9)
         self.assertAlmostEqual(x["share_survival"]["B"], .9)
-        self.assertEqual(x["p_a_adoption_interval"], [1/6,5/6])
+        self.assertAlmostEqual(x["p_a_adoption_interval"][0], 1/6)
+        self.assertAlmostEqual(x["p_a_adoption_interval"][1], 5/6)
         self.assertTrue(x["weak_joint_adoption"])
 
     def test_role_symmetry_under_swapped_probability(self):
@@ -41,7 +42,8 @@ class ContinuityStressTests(unittest.TestCase):
         self.assertTrue(x["weak_joint_adoption"])
         self.assertFalse(x["strict_joint_adoption"])
         self.assertAlmostEqual(x["share_minus_capture"]["A"], 0)
-        self.assertEqual(x["p_a_adoption_interval"], [.5,.5])
+        self.assertAlmostEqual(x["p_a_adoption_interval"][0], .5)
+        self.assertAlmostEqual(x["p_a_adoption_interval"][1], .5)
 
     def test_degenerate_all_probabilities_tie_not_division_by_zero(self):
         for p in (0,.5,1):
