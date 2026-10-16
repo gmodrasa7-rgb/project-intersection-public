@@ -11,6 +11,22 @@ This is a **language-consistent navigation index**. Original 1 denotes release o
 
 Many historical sources are Korean-only or bilingual; linked **source titles, filenames, mathematical identifiers and citations remain unchanged**. A reader should treat a link as a route to an original, not an implicit translation. Refer to the [public evidence index](../research/PUBLIC_EVIDENCE_INDEX_EN.md) for each claim's evidence class and limitations.
 
+## 0. The five questions that give the archive its meaning
+
+**Core object:** Determine whether voluntary long-run coexistence is incentive-compatible for *each* actor—including people, AI systems and excluded third parties—when power, time horizons and the ability to leave change. Compare against genuine domination/extraction alternatives; do not presuppose success.
+
+| Research question | Why these files belong together | Evidence status |
+| --- | --- | --- |
+| **Can every non-hostile actor continue and recover?** | [Continuance floor](../research/CONTINUANCE_RESOURCE_THRESHOLD_v0_1_EN_KO.md), [long-horizon model](../LONG_HORIZON_MIN_INTERVENTION_E2E.md) | Candidate modeling, not general validation |
+| **Would compliance persist if exit truly worked?** | [E007 timing and executable refusal counterexample](../experiments/e007/README_EN.md) | 17/72 selected synthetic classification changes; no field result |
+| **Does restraint remain rational after power reverses?** | [Coalition and excluded-party modeling](../experiments/coalition_externality_probe/README.md), [independent review](../research/PUBLIC_REVIEW_PACKET_EN.md) | Conditional models; equilibrium and real causation not established |
+| **What might disappear with an excluded contributor?** | [CCPH sources and contrary cases](../research/CCPH_RESEARCH_ATLAS_EN.md), [missing-contribution limits](../research/CONTRIBUTOR_LOSS_UNKNOWN_PARADOX_v0_1_EN_KO.md) | Historically grounded leads; missing counterfactual effects unidentified |
+| **Do proposed safeguards beat simpler rivals?** | [E008 unfinished comparison](../experiments/e008/README_EN.md), [E009 negative result](../experiments/e009/RESULT_EN.md), [E010 exploratory analysis](../experiments/e010/README_EN.md) | No main E008 result; E009 failed 3/4 criteria; E010 post-hoc |
+
+**Do not equate layers:** ICM/RGBM are candidate explanatory models; CCPH is a source-and-impact lineage database; IVS-0R and repository checks test judgments or integrity. None replaces the scientific question. If an incentive-compatible coexistence region is not found, report tested boundaries and what remains unidentified—not a manufactured conclusion.
+
+**Read this table first, then use the topic-by-topic archive below.** Root files include many older entry pages, historical snapshots and operating records; directory order is not priority. The [current reader guide](START_HERE_EN.md) and [claim evidence ledger](../research/PUBLIC_EVIDENCE_INDEX_EN.md) govern interpretation, not file counts.
+
 ## 1. Founding question and research status
 
 - [Founding research purpose](../README.md)
