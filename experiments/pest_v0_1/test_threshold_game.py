@@ -3,7 +3,7 @@ import unittest
 from dataclasses import replace
 
 from threshold_game import (
-    Game, audit, ex_ante, feasible_allocations, multi_agent_capacity,
+    Game, audit, ex_ante, feasible_allocations, joint_ex_ante_window, multi_agent_capacity,
     post_transition, robust_response, shock_survival,
 )
 
@@ -50,6 +50,19 @@ class SurvivalThresholdTests(unittest.TestCase):
         self.assertEqual(ex_ante(self.game, p)["ex_ante_preference"], "TIE")
         self.assertEqual(ex_ante(self.game, p - .001)["ex_ante_preference"], "PLEDGE")
         self.assertEqual(ex_ante(self.game, p + .001)["ex_ante_preference"], "CAPTURE")
+
+    def test_joint_adoption_window_only_if_both_want_to_sign(self):
+        a = joint_ex_ante_window(self.game, .5)
+        self.assertTrue(a["weak_mutual_adoption_by_survival_payoff"])
+        self.assertFalse(a["both_roles_have_post_transition_preservation_incentive"])
+        self.assertAlmostEqual(a["closed_probability_interval_for_joint_weak_support"][0], 1/6)
+        self.assertAlmostEqual(a["closed_probability_interval_for_joint_weak_support"][1], 5/6)
+        self.assertFalse(joint_ex_ante_window(self.game, .9)["weak_mutual_adoption_by_survival_payoff"])
+        self.assertFalse(joint_ex_ante_window(self.game, .1)["weak_mutual_adoption_by_survival_payoff"])
+
+    def test_joint_adoption_weak_tie_boundaries(self):
+        self.assertTrue(joint_ex_ante_window(self.game, 1/6)["weak_mutual_adoption_by_survival_payoff"])
+        self.assertTrue(joint_ex_ante_window(self.game, 5/6)["weak_mutual_adoption_by_survival_payoff"])
 
     def test_q_zero_protection_or_neutrality(self):
         game = replace(self.game, shock_probability=0)
