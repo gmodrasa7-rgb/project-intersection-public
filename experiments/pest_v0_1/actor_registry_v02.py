@@ -265,11 +265,16 @@ def harms(s: Scenario, effects: tuple[Effect, ...]) -> dict:
     elif unknown or not human_scored:
         status="UNRESOLVED_HUMAN_EVIDENCE"
     else:
-        status="LIMITED_HUMAN_SCREEN_PASS_NOT_GLOBAL_COEXISTENCE"
+        # Unverified caller-assigned EVIDENCED strings are not actual evidence.
+        # No external signed receipt, independent review or source checks exist
+        # in this synthetic helper: never silently certify even a local PASS.
+        status="UNRESOLVED_HUMAN_EVIDENCE_SELF_ASSERTED"
     return {
         "verdict": status, "individual_human_breaches": sorted(bad),
         "unknown_human_evidence": sorted(unknown), "events": events,
         "economic_totals_are_not_rights_clearance": True,
+        "provenance_labels_are_self_declared_not_receipts": True,
+        "independent_external_source_validation_performed": False,
         "scanned_all_real_world_people": False,
         "unlisted_actor_residual": "NOT_ASSESSED_NOT_ASSUMED_SAFE",
         "complete_global_safety_proven": False,
