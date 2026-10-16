@@ -31,7 +31,7 @@
 | **Y1** | Independent highly capable actor, unaffiliated with C in this scenario |
 | **Y0** | Independent lower-capability actor, unaffiliated with C in this scenario |
 
-Y1 and Y0 do not specify whether an actor is human or AI. Declare actor **kind** independently; do not assume a capability threshold, infer rights from high or low capability, or assign Y1 and Y0 simultaneously without a dated state change. D is now **a C executive, not generic humanity**. The prior D=human role in the PEST-D historical thought experiment is deprecated *only as a general mapping*: its negative controls remain valid as hypothetical individual-party harms after relabeling, not as evidence concerning all D executives.
+Independent does not mean economically isolated: a Y actor may also be K (customer), E (shareholder) or N (previously dismissed), without being currently employed as D/F/G/H. Y1 and Y0 do not specify whether an actor is human or AI. Declare actor **kind** independently; do not assume a capability threshold, infer rights from high or low capability, or assign Y1 and Y0 simultaneously without a dated state change. D is now **a C executive, not generic humanity**. The prior D=human role in the PEST-D historical thought experiment is deprecated *only as a general mapping*: its negative controls remain valid as hypothetical individual-party harms after relabeling, not as evidence concerning all D executives.
 
 ## II. Proposed supplementary Earth roles — AI-assisted additions, subject to founder review
 
