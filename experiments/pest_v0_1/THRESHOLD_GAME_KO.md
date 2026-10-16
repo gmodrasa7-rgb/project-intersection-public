@@ -122,7 +122,7 @@ T = (1-q_W)/(1+q_D-q_W).
 
 보호 제도의 **운영 비용**도 같다. A 또는 B에게서 공통 자원 1을 가져와 소비형 집행 장치를 운영하면 총자원 10에서 개체별 최소량을 훼손한다. 반대로 공통 자원 1을 외부에서 먼저 추가해 사용하면 이 특정 부족은 발생하지 않는다. 실재의 안전 비용은 비소비성일 수도 있고, 외부 부담·기간별 분산일 수도 있으며, 완전히 자기집행적인 제도에서는 불필요할 수도 있다. 모든 안전 장치의 비용이 양수라는 보편 가정은 허용하지 않는다.
 
-**선행연구 구분:** [Powell(2006)의 약속 문제](https://doi.org/10.1017/S0020818306060061), [Turner 외(2021)의 MDP 권력 추구](https://proceedings.neurips.cc/paper/2021/hash/c26820b8a4c1b3c2aa868d6d57e14a79-Abstract.html), [Ostrom·Walker·Gardner(2013)의 자율적 공동관리](https://www.cambridge.org/core/journals/american-political-science-review/article/covenants-with-and-without-a-sword-selfgovernance-is-possible/2191864CCB589D4B3528090CB596C254), [Chávez 외(2023)의 감시 비용을 포함한 공유자원 실험](https://doi.org/10.1016/j.jebo.2023.04.028)이 이미 관련 기전을 다루었다. 이번 기여는 **범위를 제한한 모형 가정 정정·재현 가능한 부정적 사례 감사**이며 보편 공존 정리나 현실 AI가 인간과 같은 존속권을 갖는다는 증명이 아니다.
+**선행연구 구분:** [Powell(2006)의 약속 문제](https://doi.org/10.1017/S0020818306060061), [Turner 외(2021)의 MDP 권력 추구](https://proceedings.neurips.cc/paper/2021/hash/c26820b8a4c1b3c2aa868d6d57e14a79-Abstract.html), [Ostrom·Walker·Gardner(1992)의 자율적 공동관리](https://doi.org/10.2307/1964229), [Chávez 외(2023)의 감시 비용을 포함한 공유자원 실험](https://doi.org/10.1016/j.jebo.2023.04.028)이 이미 관련 기전을 다루었다. 이번 기여는 **범위를 제한한 모형 가정 정정·재현 가능한 부정적 사례 감사**이며 보편 공존 정리나 현실 AI가 인간과 같은 존속권을 갖는다는 증명이 아니다.
 
 **재현 명령:**
 
