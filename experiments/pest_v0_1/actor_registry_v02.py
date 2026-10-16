@@ -185,8 +185,8 @@ def validate(s: Scenario) -> dict:
         elif x.role in ("Y1", "Y0"):
             if x.c_id is not None or e_map[x.entity_id] not in {"PERSON", "AI"}:
                 raise ValueError("Y independent capable actor must be separately typed person/AI")
-            if any(k.entity_id == x.entity_id and k.role in C_SCOPED for k in s.memberships):
-                raise ValueError("Y no-C-affiliation declaration conflicts with C-scoped membership")
+            if any(k.entity_id == x.entity_id and k.role in {"D", "F", "G", "H"} for k in s.memberships):
+                raise ValueError("Y independent status conflicts with current C management/employment")
             if x.entity_id in s.b_ids or x.entity_id == s.a_id:
                 raise ValueError("Y without C not B/A of this scenario")
     if any({"Y1", "Y0"} <= {m.role for m in s.memberships if m.entity_id == eid}
