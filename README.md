@@ -18,7 +18,7 @@
 
 **Contrary evidence visible before expanding:** [E009](experiments/e009/RESULT_EN.md) found the project's Project-v3 candidate **42.35% worse on mean regret** than the best simple baseline in its preregistered synthetic benchmark (3 of 4 criteria failed). [E008](experiments/e008/README_EN.md) has **no completed main policy result**. Neither establishes real-world causal effects.
 
-**Choose your route:** [Understand the question](research/RESEARCH_OVERVIEW_EN.md) · [Explore real histories and overlooked contribution](research/CCPH_RESEARCH_ATLAS_EN.md) · [Challenge the negative result](experiments/e009/RESULT_EN.md).
+**Choose your route:** [What you can learn or challenge](navigation/START_HERE_EN.md#external-assessment-decision-brief) · [Run one counterexample](research/PUBLIC_REVIEW_PACKET_EN.md#one-executable-counterexample) · [Real histories](research/CCPH_RESEARCH_ATLAS_EN.md).
 
 <details>
 <summary>Technical purpose, evidence, rights and reviewer routes</summary>
@@ -45,7 +45,7 @@
 
 **Priority 0 — prevent recurrence before expansion:** Trace **underlying causes** before promoting a result. Check original sources, affected people, language meaning and independent limits; use a reversible correction with **rollback** and a targeted **regression** test. Mark unknown evidence as unverified. [Failure and correction record](FAILURE_REGRESSION_INDEX.md) · [Contribution rules](CONTRIBUTING.md).
 
-**First reading path:** [English guide](navigation/START_HERE_EN.md) · [English evidence ledger](research/PUBLIC_EVIDENCE_INDEX_EN.md) · [E007 reproduction](experiments/e007/README_EN.md) · [E009 negative result](experiments/e009/RESULT_EN.md) · [Prior-art and review](research/PUBLIC_REVIEW_PACKET_EN.md#3a-prior-art-versus-what-would-be-an-incremental-project-contribution) · [Full contents](navigation/RESEARCH_TOC_EN.md).
+**First reading path:** [Research question](research/RESEARCH_OVERVIEW_EN.md) · [English guide](navigation/START_HERE_EN.md) · [English evidence ledger](research/PUBLIC_EVIDENCE_INDEX_EN.md) · [E007 reproduction](experiments/e007/README_EN.md) · [E009 negative result](experiments/e009/RESULT_EN.md) · [Prior-art and review](research/PUBLIC_REVIEW_PACKET_EN.md#3a-prior-art-versus-what-would-be-an-incremental-project-contribution) · [Full contents](navigation/RESEARCH_TOC_EN.md).
 
 **Citation and reuse:** [Citation](CITATION.cff) · [Attribution and source rights](ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md) · [Earlier authorship and derivation](PRIOR_ART_RIGHTS_AND_DERIVATION_EN_KO.md). The longer historical founding statement remains recoverable in [the preceding Git revision](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/3fefa0c121341a0569e026f34a9e87479afa52a4/README.md).
 
@@ -71,7 +71,7 @@
 
 **펼치지 않아도 보이는 불리한 증거:** [E009](experiments/e009/RESULT_KO.md) 사전등록 합성 비교에서 Project-v3의 평균 후회값은 최선의 단순 기준선보다 **42.35% 나빴고**, 기준 4개 중 3개에 실패했다. [E008](experiments/e008/README_KO.md)은 **정책 본 비교실험 결과가 없다**. 둘 다 현실의 인과효과를 확정하지 않는다.
 
-**어디부터 읽을까:** [연구 질문 이해](research/RESEARCH_OVERVIEW_KO.md) · [실제 역사와 간과된 기여](research/CCPH_RESEARCH_ATLAS_KO.md) · [부정결과 검토](experiments/e009/RESULT_KO.md).
+**어디부터 읽을까:** [배우거나 반박할 핵심 가치](navigation/START_HERE_KO.md#외부-심사자를-위한-핵심-판단) · [반례 하나 직접 실행](research/PUBLIC_REVIEW_PACKET_KO.md#직접-실행하는-반례-하나) · [실제 역사](research/CCPH_RESEARCH_ATLAS_KO.md).
 
 <details>
 <summary>상세 연구 목적·반례·증거상태·권리·심사 경로 펼치기</summary>
@@ -98,7 +98,7 @@
 
 **제0 최우선 원칙 — 확장보다 재발 방지:** 새로운 주장을 승격하기 전 실패의 **발생 원인**·원출처·영향 당사자·언어의 의미를 검토한다. 되돌릴 수 있는 교정, **되돌릴** 경로, 동일 오류를 잡는 **회귀검사**를 갖춘다. 불확실하면 미검증이라 표시한다. [실패·교정 기록](FAILURE_REGRESSION_INDEX.md) · [기여·예방 규칙](CONTRIBUTING.md).
 
-**처음 읽을 자료:** [한국어 안내](navigation/START_HERE_KO.md) · [한국어 증거 원장](research/PUBLIC_EVIDENCE_INDEX_KO.md) · [E007 재현](experiments/e007/README_KO.md) · [E009 부정결과](experiments/e009/RESULT_KO.md) · [선행연구·검토](research/PUBLIC_REVIEW_PACKET_KO.md#3a-선행연구와-프로젝트의-검증-가능한-추가-기여-구분) · [한국어 전체 목차](navigation/RESEARCH_TOC_KO.md).
+**처음 읽을 자료:** [연구 질문](research/RESEARCH_OVERVIEW_KO.md) · [한국어 안내](navigation/START_HERE_KO.md) · [한국어 증거 원장](research/PUBLIC_EVIDENCE_INDEX_KO.md) · [E007 재현](experiments/e007/README_KO.md) · [E009 부정결과](experiments/e009/RESULT_KO.md) · [선행연구·검토](research/PUBLIC_REVIEW_PACKET_KO.md#3a-선행연구와-프로젝트의-검증-가능한-추가-기여-구분) · [한국어 전체 목차](navigation/RESEARCH_TOC_KO.md).
 
 **출처 표시 및 재사용:** [인용 정보](CITATION.cff) · [기여·출처·권리](ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md) · [선행 원저작과 응용](PRIOR_ART_RIGHTS_AND_DERIVATION_EN_KO.md). 축약하기 전 창시 목적 전문도 [이전 Git 판본](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/3fefa0c121341a0569e026f34a9e87479afa52a4/README.md)에 보존돼 있다.
 

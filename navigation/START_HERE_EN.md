@@ -18,7 +18,15 @@ That is one way to understand [Project Intersection's founding question](../READ
 
 **Research question (unresolved):** Under what conditions can agents with different capabilities and authority prefer voluntary coexistence, effective exit, recovery and mutual development over extraction or domination, including after power reversals?
 
-**Candidate contribution (novelty not established):** Test long-horizon incentives **together with** outcomes for individual agents, excluded third parties, reversibility, unrecorded contributions and the costs of control. Compare these candidates against existing game theory, social science and AI evaluation. These underlying concepts are not presented as newly invented by this project.
+**What is worth evaluating here:** a conditional research program connecting self-interested coexistence to each affected agent's continued ability to choose, leave, recover and develop. The current concrete contribution is a set of inspectable model failures and competing explanations. A new universal theory or incremental predictive advantage has not been established.
+
+**Three questions connect the artifacts to that purpose:**
+
+1. **Would cooperation remain chosen if refusal were feasible?** Remaining inside a system can reflect a blocked exit. E007 supplies an executable counterexample: the same declared EXIT succeeds if resolved before an attack and fails if the attack first destroys the exit destination. This tests one condition for practical choice; it does not establish a cooperative equilibrium.
+2. **Does a more elaborate protection policy actually improve outcomes?** E009 preserves a failed proposal against simple baselines. This lets a reviewer inspect the price of added complexity and reject the proposal without rejecting the whole research question.
+3. **What can we know about futures that were removed?** The [existing identification discussion](../research/RESEARCH_OVERVIEW_EN.md) separates observed survivor outcomes from missing counterfactual contributions. CCPH supplies source-linked histories for examination; missing outcomes cannot be assigned either zero value or guaranteed future value.
+
+**Use the artifacts without accepting the framework:** inspect or, within the stated licenses, adapt the timing counterexample; challenge the frozen policy comparison; or identify a source-supported counterexample in the historical atlas. Exit, repeated incentives and missing-data identification have established predecessors; [prior-art comparison](../research/PUBLIC_REVIEW_PACKET_EN.md#3a-prior-art-versus-what-would-be-an-incremental-project-contribution) identifies the claimed residual. IVS-0R and repository checks support this research; their success does not answer these three questions.
 
 | Independent reviewer asks | English evidence | Current verdict |
 | --- | --- | --- |
@@ -32,7 +40,7 @@ That is one way to understand [Project Intersection's founding question](../READ
 
 **Decision worth making:** Whether a **small, independently falsifiable pilot** merits support, not whether a large archive itself proves the research claims. The next discriminating check is an independent reimplementation or held-out comparison against a simple baseline, preserving negative outcomes. Funding eligibility and scientific validity require separate judgments.
 
-**One concrete external task:** [E009 independent decision gate](../research/E009_INDEPENDENT_DECISION_GATE_EN.md) — rerun the negative result, then test PROJECT_V3 against simple baselines under independently fixed cases and consequence rules. **No outside result has been obtained yet.**
+**Start with one check:** [Executable exit counterexample and pinned rerun](../research/PUBLIC_REVIEW_PACKET_EN.md#one-executable-counterexample) needs Python only after checkout. For the harder unanswered question, use the [E009 independent decision gate](../research/E009_INDEPENDENT_DECISION_GATE_EN.md). No outside result has been obtained yet.
 
 <!-- PI-SECTION: levels -->
 ## 2. Three reading levels
@@ -48,14 +56,7 @@ These are **reading routes**, not an evidence ranking or new physical hierarchy.
 <!-- PI-SECTION: evidence -->
 ## 3. Evidence status: do not merge different claims
 
-| Study | What is established within the released project artifacts | What is not established |
-| --- | --- | --- |
-| [E007](../experiments/e007/README_EN.md) | Executable synthetic timing result | Independent scientific or empirical validation |
-| [E008](../experiments/e008/README_EN.md) | Preregistered design and executable-readiness checks | A completed main comparative result |
-| [E009](../experiments/e009/RESULT_EN.md) | Preregistered negative synthetic result | Universal failure of coexistence hypotheses |
-| [E010](../experiments/e010/README_EN.md) | Post-hoc exploratory synthetic calculations | Preregistration, independent or real-world validation |
-
-For claim-by-claim limitations, use the [public evidence index](../research/PUBLIC_EVIDENCE_INDEX_EN.md). A successful CI run is not independent replication.
+Read a result on five separate dimensions: **what was claimed, what was executed, who independently checked it, where it applies, and who bears the costs**. The table above distinguishes E007 execution, E008 incompleteness, E009 failure and E010 exploration. The [evidence ledger](../research/PUBLIC_EVIDENCE_INDEX_EN.md) supplies claim-level detail. Passing repository checks establishes none of the missing scientific dimensions.
 
 <!-- PI-SECTION: ccph -->
 

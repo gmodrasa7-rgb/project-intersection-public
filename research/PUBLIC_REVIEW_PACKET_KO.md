@@ -45,17 +45,56 @@
 <!-- PI-SECTION: reproduce -->
 ## 2. 비공개 자료 없이 재실행
 
-E007 자동검사 기준은 **파이썬 3.12**다. 실행한 `git rev-parse HEAD` 결과를 기록한다. 패키지 설치에 인터넷이 필요할 수 있지만 비공개 노트·유료 AI 구독은 필요하지 않다.
+### 직접 실행하는 반례 하나
+
+**질문:** EXIT 행동이 제공되면 실제 이탈도 가능한가? 기존 E007 예제에서 A는 공격하고 B는 EXIT를 선택한다. B의 초기 이탈 목적지 수준은 1, 자원은 3이며 공격의 목적지 훼손량은 2다. 두 실행의 개체·행동·파라미터는 같고 처리 시점만 달라진다.
+
+아래 명령은 계속 바뀌는 기본 브랜치 대신 **변하지 않는 산출물 기준 커밋**을 사용한다. 이 판본은 이번 안내 수정 이전이지만 검토 대상 모형과 부정결과를 모두 포함한다. 새 복제 폴더에서 실행하며 기존 작업 폴더를 쓴다면 수정 중인 작업부터 보존한다. 기준 환경은 Python 3.12다. 예제와 E009 검증은 표준 라이브러리만 사용하므로 패키지 설치나 유료 모델이 필요 없다. Bash 또는 호환 터미널 명령이며, 내려받을 때만 네트워크가 필요하다.
 
 ```bash
 git clone https://github.com/gmodrasa7-rgb/project-intersection-public.git
 cd project-intersection-public
+git checkout --detach a8b5bd591ae303abfc0c636e95c8b6e5a02aa6c7
 git rev-parse HEAD
+python - <<'PYTHON'
+import sys
+sys.path.insert(0, "experiments/e007")
+from model import Params, State, Action, stage_and_transition
+from timing_variants import stage_and_transition_execute_first
+p = Params(sabotage_damage=2, enforcement_penalty=0.0)
+s = State(xb=1, monitoring=False, enforcement=False)
+results = (
+    ("exit_first", stage_and_transition(s, Action.ATTACK, Action.EXIT, p)),
+    ("attack_first", stage_and_transition_execute_first(
+        s, Action.ATTACK, Action.EXIT, p, leader="A")),
+)
+for name, (_, _, state) in results:
+    print(name, state.exited_b, state.xb, state.rb)
+PYTHON
+python experiments/e009/verify_result.py
+```
+
+
+| 처리 시점 | B의 실제 이탈 | 남은 이탈 목적지 | B의 자원 |
+| --- | --- | ---: | ---: |
+| `exit_first` | `True` | 1 | 3 |
+| `attack_first` | `False` | 0 | 2 |
+
+**확인할 수 있는 것:** 이 합성 상태전이에서 제공된 선택지와 실행 가능한 선택지는 다르다. **남는 질문:** 현실에서 어느 시점이 타당한지, 공격이 전략적으로 선택되는지, 자발적 공존이 안정적인지는 이 예제로 확정할 수 없다. [기존 반례 검사](../experiments/e007/test_e007_timing_variants.py), [시점 구현](../experiments/e007/timing_variants.py), [독립 구현 명세](../experiments/e007/INDEPENDENT_REIMPLEMENTATION_PROTOCOL.md)를 직접 확인한다. 개체 표지를 바꾸거나 동시 처리 조건을 적용하는 반박도 유효하다. 더 넓은 E007 기준 모형에는 이미 공개된 A 우선 공격 처리 결함이 있으며, 이번 예제가 그것을 고치거나 숨기지 않는다.
+
+두 번째 명령은 E009를 **다시 실행**해 생성 결과와 해시를 고정 기록에 대조한다. 저장된 성공 표시만 읽는 검사가 아니다. 예상 마지막 문장은 `E009 result reproduction passed: frozen benchmark reproduces committed negative synthetic result.`다. 결과가 다르면 검토 발견사항으로 남긴다. 출력 일치와 프로젝트 작성 예제는 독립적인 과학적 검증을 뜻하지 않는다.
+
+**다음에 검토할 실질적 반론:** E009에서 심각한 피해 비율은 Project-v3 1.65625%, TWO_RULE_SIMPLE 0.03125%인데 해당 기준은 통과했다. 이 두 정책의 상대비는 53배, 절대 차이는 1.625%포인트다. 실제 피해 기준은 다른 비교대상인 SECURITY_BOUNDED와 MINIMAL_4VAR 중 낮은 피해율 0%를 사용한다. 그 기준선 대비 차이 1.65625%포인트가 사전등록 허용치 2%포인트보다 작아서 통과한 것이다. 산술 모순이 아니라 수용 기준 선택의 중요성을 드러낸다. 전체 후보는 여전히 4개 중 3개 기준에 실패했다. [원본 수치](../experiments/e009/RESULT.json)와 [실행 코드의 기준](../experiments/e009/benchmark.py)을 검토하고, 더 적절한 문턱값은 별도 명세의 시험에서 제안하되 역사적 결과를 고쳐 쓰지 않는다. 어느 비율도 현실의 피해 발생률이 아니다.
+
+### 선택적으로 더 넓게 재현하기
+
+동일한 고정 판본에서 아래 기존 명령으로 E007 전체 격자와 다른 기록을 검토한다. 실제 실행환경과 출력을 남기며, 같은 프로젝트 코드 재실행과 독립 구현을 구별한다.
+
+```bash
 python -m pip install -r experiments/e007/requirements.txt
 python -m pytest -q -p no:cacheprovider experiments/e007
 python experiments/e007/timing_probe.py --summary-only --check
 python experiments/e008/validate.py
-python experiments/e009/verify_result.py
 python experiments/picb_v1/benchmark.py --verify
 ```
 
