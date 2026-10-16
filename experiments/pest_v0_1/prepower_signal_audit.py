@@ -103,8 +103,8 @@ def pooling_certificate(
     best response only for the stage-zero toy payoff. Stage-one payoff
     comparisons are a second scenario; independent verification is absent.
     """
-    if type(capture_incentive_prior) is not Fraction or not 0 <= capture_incentive_prior <= 1:
-        raise ValueError("prior must be Fraction in [0,1]")
+    if type(capture_incentive_prior) is not Fraction or not 0 < capture_incentive_prior < 1:
+        raise ValueError("prior must be Fraction strictly between 0 and 1 for a two-type pooling claim")
     if type(observed_pre_power_promises) is not int or observed_pre_power_promises < 1:
         raise ValueError("number of toy promises must be a positive integer")
     if preservation_case.type_label == appropriation_case.type_label:
