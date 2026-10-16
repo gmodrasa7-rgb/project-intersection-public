@@ -8,11 +8,15 @@ This is the **English-only reading route**, paired with [Original 2: Korean](STA
 <!-- PI-SECTION: purpose -->
 ## 1. Purpose
 
-Suppose one researcher can silence another's warning. That may save resources now, but it may also eliminate an independent opportunity to find a costly error later. Keeping the warning channel also costs resources. **Which choice benefits the affected people over different time horizons, and what evidence could change that conclusion?**
+**The purpose in one sentence:** Find the conditions under which humans and increasingly capable AI can continue to exist and develop **without requiring the domination, elimination or forced absorption of another non-hostile agent**. Also identify where those conditions fail.
 
-That is one way to understand [Project Intersection's founding question](../README.md). The project compares domination, extraction and voluntary cooperation for humans and AI systems without assuming anyone must be morally good. **Cooperation is not proven to win in every situation.** The example is illustrative, not a real-world experiment.
+**Why test it:** A stable arrangement must remain meaningful when its participants' capabilities and bargaining power change. Voluntary cooperation is different from compliance when refusal or exit is impossible.
 
-**Read in the order that suits you:** [Understand the question](../research/RESEARCH_OVERVIEW_EN.md) · [Examine real histories and overlooked contributions](../research/CCPH_RESEARCH_ATLAS_EN.md) · [Check a failed comparison against a simpler model](../experiments/e009/RESULT_EN.md). For exact definitions, see the [ten core research concepts](../README.md#ten-core-concepts).
+Suppose one researcher can silence another's warning. It saves time now, but may remove an independent chance to find an expensive error later. The warning might also be wrong, and maintaining its channel has a cost. **Which path is preferable for each affected party, and what evidence would overturn that judgment?**
+
+This is [Project Intersection's founding question](../README.md). It is studied using competing incentive explanations, historical cases, reproducible synthetic models and possible counterexamples. **Voluntary coexistence has not been established as a universally optimal outcome.**
+
+**Three places to start:** [What the research actually tests](../research/RESEARCH_OVERVIEW_EN.md) · [What experiments support or fail to support](../experiments/e009/RESULT_EN.md) · [Historical cases and missing contributions](../research/CCPH_RESEARCH_ATLAS_EN.md). Exact terms remain in the [ten core concepts](../README.md#ten-core-concepts).
 
 ### External assessment: decision brief
 
@@ -44,6 +48,8 @@ That is one way to understand [Project Intersection's founding question](../READ
 
 <!-- PI-SECTION: levels -->
 ## 2. Three reading levels
+
+**How the archive is arranged:** `research/` holds arguments and source reviews; `experiments/` holds runnable tests, protocols and results; `navigation/` is the current reading route. `knowledge/` preserves traceable records. `tools/`, `.github/` and `governance/` support checking and operations. The many files at repository root include historical working records and are **not** a recommended reading sequence. Do not infer proof from the number of files.
 
 | Level | Question | Sources |
 | --- | --- | --- |
