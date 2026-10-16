@@ -7,6 +7,7 @@ A/B operational continuity and human rights are evaluated on separate axes.
 Only a screening model: all outputs are conditional on specified choice sets,
 access, supplies, human-specific rights assumptions, and temporal granularity.
 """
+# HISTORICAL PROVISIONAL HUMAN-D THOUGHT EXPERIMENT ONLY.\n# D in the canonical 2026-10-17 A-S ontology means C executive.\n# This script preserves a generic human party as a constructed negative control.\n
 from __future__ import annotations
 
 import argparse
