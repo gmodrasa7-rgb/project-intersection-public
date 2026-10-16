@@ -205,9 +205,11 @@ class RoleRegistryV02Tests(unittest.TestCase):
         self.assertEqual(x["verdict"],"UNRESOLVED_HUMAN_EVIDENCE")
         self.assertEqual(x["unlisted_actor_residual"],"NOT_ASSESSED_NOT_ASSUMED_SAFE")
 
-    def test_evidenced_no_breach_does_not_mean_global_safety(self):
+    def test_self_declared_evidence_does_not_certify_human_safety(self):
         x=harms(base(),(Effect("P1",0,False,False,"EVIDENCED"),))
-        self.assertEqual(x["verdict"],"LIMITED_HUMAN_SCREEN_PASS_NOT_GLOBAL_COEXISTENCE")
+        self.assertEqual(x["verdict"],"UNRESOLVED_HUMAN_EVIDENCE_SELF_ASSERTED")
+        self.assertTrue(x["provenance_labels_are_self_declared_not_receipts"])
+        self.assertFalse(x["independent_external_source_validation_performed"])
         self.assertFalse(x["complete_global_safety_proven"])
 
     def test_bad_effect_schema_fails(self):
