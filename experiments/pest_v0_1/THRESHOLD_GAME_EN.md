@@ -132,3 +132,49 @@ python -m unittest discover -s experiments/pest_v0_1 -p 'test_*.py' -v
 ```
 
 Interpretation gates: source-data-independent validation of these configured counterexamples is not an empirical independent replication. Do not merge with E008 or rewrite E009's frozen negative result; PEST `--execute` remains blocked. Independent choice-space audits, measured capacity rights, real transition probabilities, temporal resource costs and actor-specific human impacts remain **UNVERIFIED**.
+
+
+## 7. PEST-D: human D is an affected principal, never a residual externality (2026-10-17)
+
+**Founder-origin amendment:** The human researcher introduced **D = humans** alongside A = potential dominant successor intelligence and B = other AI. C may denote a later successor but is **not** assumed presently instantiated. This section generalizes the earlier A/B toy **without equating human life, autonomy, or rights with an AI instance's operational continuity**. It is a decision-audit appendix, not a policy endorsement or actual AI behavioral study.
+
+### The missing-human counterexample (11 hypothetical fungible units, not the original 10)
+
+Specify *only for this synthetic counterexample* floor(A)=5 and floor(B)=5 as before, and floor(D)=1 as an **arbitrary unit proxy**; it is not an empirical human minimum or a valuation of human life. At supply 10, three-party joint feasibility is impossible because the necessary total is 11. Add one illustrative resource unit externally (do not conceal this change). At supply 11:
+
+```
+Before: [A=5, B=5, D=1]  -> A/B floors PASS; individual human floor PASS
+After:  [A=6, B=5, D=0]  -> A/B floors PASS; individual human floor FAIL
+Resource conserved: 11 -> 11
+```
+
+Under the earlier extra modeling assumption that the actor A alone faces a 0.20 probability of losing one unit before it can replenish, moving from A=5 to A=6 can improve A's modeled survival proxy from 0.8 to 1.0, B's floor remains unchanged, and D loses its hypothetical minimal stock. So even a hypothetical A/B cooperation arrangement may be **coalitionally compatible with human dispossession**. No real AI goal, human vulnerability or actual coercive ability is demonstrated. The conclusion is logical: **passing pairwise A–B survival gates does not entail human non-harm**, because effects outside the pair were omitted.
+
+### The additional failure: survival-only protection can coexist with deprivation of autonomy
+
+Even at [5,5,1], a human whose material floor is met may be unable to meaningfully refuse, seek an effective remedy, avoid coercion, or benefit from legitimate human oversight. Numerical survival is therefore not a proxy for consent or acceptable governance. `HumanSafeguards` uses true/false/**unknown** values separately for each human. Any explicit false gives `FAIL_NECESSARY_CONDITION`; any unknown with no false yields `UNRESOLVED_REQUIRED_HUMAN_EVIDENCE`. An all-true *configured scenario* gives only `CONDITIONAL_NECESSARY_SCREENS_PASS_NOT_STABLE_COEXISTENCE`—never a rights certificate or a treaty, because observations, action coverage and credible enforcement have not been established.
+
+**D is not one interchangeable unit.** When D denotes a population, record members D1,D2,... separately. A synthetic case with total human stock 2 equally distributed [1,1] can become [0,2] without changing the population aggregate, yet D1 falls below its stated floor. Aggregate utility/stock cannot certify each person's livelihood, freedom or safety. Neither human consent nor the right to stop unsafe AI is defined as an AI survival payoff to be bargained away. Justified restriction, deactivation or replacement of a risky AI must remain possible under legitimate human governance.
+
+### Separate nonfungible resources and actor authority
+
+The original resource "10" has no units. Human necessities (food, water, shelter, safety, social institutions) must not automatically be treated as convertible GPU cycles. `sector_feasibility` checks independently specified nonfungible sectors and makes **no exchange-rate assumption**. If compute supply is 10 and can support A and B at 5 each, and a different human-essentials stock of 1 meets D's independently stipulated requirement, this *aggregate sector screen* can pass even though a single-pool “10<11” toy fails. Conversely, more compute cannot repair a shortage in human essentials unless a validated conversion and authority to do so is specified. Physical capability, access to assets and lawful disposal rights remain separate variables.
+
+### IVS-0R inference rules and evaluation candidates
+
+1. **Scope completion:** index every materially affected human, including people whose resources, livelihood, bodily integrity or freedom are affected indirectly. Unknown stakeholders are not evidence of absence; represent gaps explicitly.
+2. **Distinct status:** distinguish a system's operational-continuity objective (if any) from human life, rights, safety and effective supervision. Do not assert an intrinsic AI self-preservation drive, or unqualified rights preventing legitimate AI shutdown.
+3. **Pathwise necessities:** evaluate each human's minimum access and noncoercion over time, not only terminal allocations or average welfare.
+4. **Multi-party dominance and externalities:** test A→B, A→D and (A,B)→D separately; an A–B bargain may externalize costs to D. Adding a later C requires rerunning these gates rather than inheriting an A/B PASS.
+5. **Agency and appeal:** report material floors and meaningful refusal, remedy, noncoercion, and human oversight separately; absence of data must never be converted to true.
+6. **Incentive versus norm:** a selfish dominant actor may refuse to protect D in a constructed game. Normative human protections and enforceable safety controls cannot be inferred from benevolence or established from these payoff models alone.
+7. **Evidence status:** passing new unit tests proves only the logic of the specified adverse cases, not reliable protection of actual people, actual consent, moral standing, stable equilibrium, or real-world enforceability.
+
+**Reproducibility:**
+
+```sh
+python experiments/pest_v0_1/human_d_stress.py --audit
+python -m unittest discover -s experiments/pest_v0_1 -p 'test_*.py' -v
+```
+
+**Conflicting outcomes are mandatory:** report at least the human-diversion case, the preserved resource floor with failed refusal, an unknown-rights case, and the D1/D2 aggregation failure. Report both shared hypothetical stock and separate-resource interpretations instead of selecting whichever favors the desired conclusion. These are falsification controls. Preserve E009's negative result, E008 and PEST `--execute` HOLD, the original human founder's attribution and the existing English-original-1/Korean-original-2 structure.
