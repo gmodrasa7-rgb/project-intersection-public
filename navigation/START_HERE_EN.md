@@ -3,99 +3,82 @@
 <!-- PI-LANGUAGE: en -->
 <!-- PI-MIRROR: navigation/START_HERE_KO.md -->
 
-This is the **English-only reading route**, paired with [Original 2: Korean](START_HERE_KO.md). “Original 1” identifies publication order, **not** the nationality or language of the research originator. This guide is a navigation layer, not a replacement for research artifacts or an assertion of translation certification.
+**For first-time readers:** This is the English reading route. [Original 2 — Korean](START_HERE_KO.md) follows the same research argument. “Original 1” is publication order, not the originator's initial language. This page is a navigation and research-logic map, not independently validated science.
 
 <!-- PI-SECTION: purpose -->
 ## 1. Purpose
 
-**The purpose in one sentence:** Find the conditions under which humans and increasingly capable AI can continue to exist and develop **without requiring the domination, elimination or forced absorption of another non-hostile agent**. Also identify where those conditions fail.
+**One problem:** As AI capabilities and control of resources diverge, humans, current AI systems and future agents may have incentives to dominate, exploit, replace or absorb others. Retaining independent counterparts may also incur real costs. **When, if ever, is voluntary coexistence stable in each participant's own long-term interest—including after power changes hands?**
 
-**Why test it:** A stable arrangement must remain meaningful when its participants' capabilities and bargaining power change. Voluntary cooperation is different from compliance when refusal or exit is impossible.
+This project does **not** assume that benevolence guarantees cooperation, or that an actor should sacrifice its existence for someone else's aggregate benefit. Nor does it assume that any power difference or proportionate harm prevention is exploitation.
 
-Suppose one researcher can silence another's warning. It saves time now, but may remove an independent chance to find an expensive error later. The warning might also be wrong, and maintaining its channel has a cost. **Which path is preferable for each affected party, and what evidence would overturn that judgment?**
+**Three possible answers remain open:** (a) coexistence is stable in a specified region of conditions; (b) only coercive or externally subsidized restraint works in that region; (c) no mutually acceptable stable arrangement has been identified in the tested choice set. The third does **not** establish a universal impossibility when possible alternatives remain unexamined.
 
-This is [Project Intersection's founding question](../README.md). It is studied using competing incentive explanations, historical cases, reproducible synthetic models and possible counterexamples. **Voluntary coexistence has not been established as a universally optimal outcome.**
+Suppose one researcher can suppress another's warning. It may prevent costly delay, or eliminate an independent path to a discovery. The warning might be wrong. **The test is not whether silence looks efficient now, but which strategy remains preferable when future consequences, reversals and affected outsiders are counted.** This example is explanatory, not empirical evidence.
 
-**Three places to start:** [What the research actually tests](../research/RESEARCH_OVERVIEW_EN.md) · [What experiments support or fail to support](../experiments/e009/RESULT_EN.md) · [Historical cases and missing contributions](../research/CCPH_RESEARCH_ATLAS_EN.md). Exact terms remain in the [ten core concepts](../README.md#ten-core-concepts).
+[Founding question and its English/Korean originals](../README.md) · [Full research argument](../research/RESEARCH_OVERVIEW_EN.md).
 
 ### External assessment: decision brief
 
-**Research question (unresolved):** Under what conditions can agents with different capabilities and authority prefer voluntary coexistence, effective exit, recovery and mutual development over extraction or domination, including after power reversals?
+**Do not grade this research by the number of models, tests or documents.** Ask whether it can distinguish a stable voluntary equilibrium from submission under blocked exit or one-sided subsidy. The following five questions organize all subordinate artifacts:
 
-**What is worth evaluating here:** a conditional research program connecting self-interested coexistence to each affected agent's continued ability to choose, leave, recover and develop. The current concrete contribution is a set of inspectable model failures and competing explanations. A new universal theory or incremental predictive advantage has not been established.
-
-**Three questions connect the artifacts to that purpose:**
-
-1. **Would cooperation remain chosen if refusal were feasible?** Remaining inside a system can reflect a blocked exit. E007 supplies an executable counterexample: the same declared EXIT succeeds if resolved before an attack and fails if the attack first destroys the exit destination. This tests one condition for practical choice; it does not establish a cooperative equilibrium.
-2. **Does a more elaborate protection policy actually improve outcomes?** E009 preserves a failed proposal against simple baselines. This lets a reviewer inspect the price of added complexity and reject the proposal without rejecting the whole research question.
-3. **What can we know about futures that were removed?** The [existing identification discussion](../research/RESEARCH_OVERVIEW_EN.md) separates observed survivor outcomes from missing counterfactual contributions. CCPH supplies source-linked histories for examination; missing outcomes cannot be assigned either zero value or guaranteed future value.
-
-**Use the artifacts without accepting the framework:** inspect or, within the stated licenses, adapt the timing counterexample; challenge the frozen policy comparison; or identify a source-supported counterexample in the historical atlas. Exit, repeated incentives and missing-data identification have established predecessors; [prior-art comparison](../research/PUBLIC_REVIEW_PACKET_EN.md#3a-prior-art-versus-what-would-be-an-incremental-project-contribution) identifies the claimed residual. IVS-0R and repository checks support this research; their success does not answer these three questions.
-
-| Independent reviewer asks | English evidence | Current verdict |
+| Question to resolve | What would count as a discriminating test? | Current research route |
 | --- | --- | --- |
-| Does implementation timing alter the conclusion? | [E007](../experiments/e007/README_EN.md) | Outcome classifications differ in **17 of 72 selected synthetic configurations**. Historical errors and corrections are disclosed |
-| Did the proposed method beat a simpler baseline? | [E009](../experiments/e009/RESULT_EN.md) | **No**, within the preregistered synthetic test: Project-v3 failed 3 of 4 criteria; mean regret was **42.35% higher** than the best simple baseline |
-| Is the next comparison completed? | [E008](../experiments/e008/README_EN.md) | Preregistered specification and readiness checks; **no completed main comparison** |
-| Do the explorations confirm the general theory? | [E010](../experiments/e010/README_EN.md) | **108 investigator-selected post-hoc synthetic configurations**; no independent or empirical validation |
-| Has this project established real-world causal impacts of support and overlooked contributions? | [CCPH source atlas](../research/CCPH_RESEARCH_ATLAS_EN.md) | Prior studies and cases are catalogued; **no project-estimated causal treatment effect** |
+| **1. Survival:** Can each non-hostile participant continue independently? | Track each actor's continuance floor, recovery capacity and exclusion costs; not just total output | [Resource thresholds](../research/CONTINUANCE_RESOURCE_THRESHOLD_v0_1_EN_KO.md) |
+| **2. Voluntariness:** Can an actor actually refuse or leave? | Compare nominal permission against executable exit before and after disruption | [E007 timing test](../experiments/e007/README_EN.md) |
+| **3. Incentive stability:** Would a stronger actor still prefer restraint when deviation is feasible? | Compare short and long horizons, credible enforcement **after** harm, endogenous costs and simple rivals | [Coalition/externality probe](../experiments/coalition_externality_probe/README.md) |
+| **4. Power reversal:** Do the same rules survive roles switching? | Swap real decision power and outcomes, not just names or prompt wording | [Review protocol and rivals](../research/PUBLIC_REVIEW_PACKET_EN.md) |
+| **5. Lost alternatives:** What is known about eliminated future options and affected third parties? | Separate observed effects, bounds on missing outcomes and unsupported extrapolation | [CCPH source atlas](../research/CCPH_RESEARCH_ATLAS_EN.md) |
 
-**Strongest boundary:** Project-authored code and project-run checks are **not** independent replication. No universal cooperation theorem or verified real-world benefit is established. Use the [English evidence ledger](../research/PUBLIC_EVIDENCE_INDEX_EN.md), [review and reproduction packet](../research/PUBLIC_REVIEW_PACKET_EN.md) and [English contents](RESEARCH_TOC_EN.md) to inspect exact claims, original sources and failure histories.
+**A candidate formal test (not a theorem):** For a feasible voluntary policy `C`, specify each actor's long-horizon payoff `U_i` and feasible unilateral deviations `d_i`. Test `U_i(C | history) >= U_i(d_i, C_-i | history)` **for each actor, including after a reversal**, while independently checking continuance, genuine refusal/exit, repair and third-party effects. This inequality alone does not prove an equilibrium when choices, information, credibility or future states are unspecified. If the candidate set is incomplete, report **unresolved**, not impossible.
 
-**Decision worth making:** Whether a **small, independently falsifiable pilot** merits support, not whether a large archive itself proves the research claims. The next discriminating check is an independent reimplementation or held-out comparison against a simple baseline, preserving negative outcomes. Funding eligibility and scientific validity require separate judgments.
-
-**Start with one check:** [Executable exit counterexample and pinned rerun](../research/PUBLIC_REVIEW_PACKET_EN.md#one-executable-counterexample) needs Python only after checkout. For the harder unanswered question, use the [E009 independent decision gate](../research/E009_INDEPENDENT_DECISION_GATE_EN.md). No outside result has been obtained yet.
+**What could refute the optimistic hypothesis?** A replicable configuration where unilateral extraction remains preferable after actual continuation, remedy, enforcement cost and missing actors are fairly modeled; or a policy where cooperation is recorded only because an actor cannot refuse. Counterexamples must be retained. The project's own model never receives automatic priority.
 
 <!-- PI-SECTION: levels -->
 ## 2. Three reading levels
 
-**How the archive is arranged:** `research/` holds arguments and source reviews; `experiments/` holds runnable tests, protocols and results; `navigation/` is the current reading route. `knowledge/` preserves traceable records. `tools/`, `.github/` and `governance/` support checking and operations. The many files at repository root include historical working records and are **not** a recommended reading sequence. Do not infer proof from the number of files.
+**For a visitor: research question → evidence and failures → one independent check.** The repository root contains historical and operational files, not an ordered syllabus. `research/` is arguments and sources; `experiments/` is methods, code and outcomes; `knowledge/` is provenance data; `navigation/` is guided access; `tools/`, `governance/`, `.github/` and `continuity/` support integrity. Neither a navigation index nor a passing CI test is scientific evidence.
 
-| Level | Question | Sources |
+| Reading depth | Open this first | Then |
 | --- | --- | --- |
-| 1 — Discover | What is the question and where should I begin? | [Founding statement](../README.md), [research overview](../research/RESEARCH_OVERVIEW_EN.md), [English AI review](AI_REVIEW_EN.md) |
-| 2 — Understand and audit | Which claims, sources, limitations, failures and rights are recorded? | [Evidence index](../research/PUBLIC_EVIDENCE_INDEX_EN.md), [English research contents](RESEARCH_TOC_EN.md), [status policy](../research/RESEARCH_STATUS_POLICY_EN.md), [review packet](../research/PUBLIC_REVIEW_PACKET_EN.md) |
-| 3 — Inspect artifacts | What can be rerun, contradicted or corrected? | [Experiments](../experiments/), [research](../research/), [prior art](../prior-art/), [knowledge](../knowledge/README.md), [governance](../governance/) |
-
-These are **reading routes**, not an evidence ranking or new physical hierarchy.
+| **Understand in five minutes** | [This guide](START_HERE_EN.md) | [Current topic-based contents](RESEARCH_TOC_EN.md) |
+| **Audit evidence** | [Claim-and-evidence ledger](../research/PUBLIC_EVIDENCE_INDEX_EN.md) | [Status definitions](../research/RESEARCH_STATUS_POLICY_EN.md) |
+| **Challenge a claim** | [Reproduction and independent criticism](../research/PUBLIC_REVIEW_PACKET_EN.md) | [One executable E007 counterexample](../experiments/e007/README_EN.md) |
 
 <!-- PI-SECTION: evidence -->
-## 3. Evidence status: do not merge different claims
+## 3. What is known, what failed, what is still unknown?
 
-Read a result on five separate dimensions: **what was claimed, what was executed, who independently checked it, where it applies, and who bears the costs**. The table above distinguishes E007 execution, E008 incompleteness, E009 failure and E010 exploration. The [evidence ledger](../research/PUBLIC_EVIDENCE_INDEX_EN.md) supplies claim-level detail. Passing repository checks establishes none of the missing scientific dimensions.
+| Record | Actual status | It does NOT establish |
+| --- | --- | --- |
+| [E007](../experiments/e007/README_EN.md) | 17 of 72 selected synthetic configurations changed classification with timing | Voluntary cooperation in real societies |
+| [E008](../experiments/e008/README_EN.md) | Protocol and readiness analysis; **no completed main comparison** | Any completed policy comparison |
+| [E009](../experiments/e009/RESULT_EN.md) | Preregistered synthetic negative result: Project-v3 **42.35% higher mean regret (worse)** than the best simple baseline, **3/4 criteria failed** | That the overarching coexistence question is false |
+| [E010](../experiments/e010/README_EN.md) | Investigator-selected, post-hoc synthetic exploration (108 investigator-selected states) | Independent or real-world validation |
+| [CCPH](../research/CCPH_RESEARCH_ATLAS_EN.md) | Historical sources, possible continuance/contribution pathways and counterexamples | Project-estimated causal effects of assistance |
+
+**Not established:** An empirically tested general coexistence equilibrium, dependable behavior of any named present AI under hypothetical superintelligence conditions, independent scientific replication, and a universal theorem. A model self-check verifies only its specified computation.
+
+**Highest-value next test:** Freeze one small, independent, power-reversal experiment with a simple extraction baseline and a cooperation candidate; include a potentially excluded third actor, endogenous post-harm enforcement, feasible exit and recovery, and at least one credible countermodel. Publish exact assumptions, failure thresholds and missing-data bounds **before** calling any outcomes confirmatory. No such new independent result is claimed here.
 
 <!-- PI-SECTION: ccph -->
+## 4. CCPH: contribution and impact histories, not a safety harness
 
-[English CCPH source atlas](../research/CCPH_RESEARCH_ATLAS_EN.md) records direct support and counterexamples CP64–CP79 with original scholars and explicit causal limits.
-
-## 4. CCPH: real-world continuance and contribution histories
-
-The CCPH research direction is to recover historical cases, document present continuance and influence, and preserve revisable labels allowing later backward and forward tracing of **candidate** contribution pathways. This includes support-enabled continuance, scholarships, social assistance, crisis detection, ideas, care, indirect inspiration, and downstream work by other people. See the [CCPH case and prior-art crosswalk](../CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md).
-
-The research distinguishes observed sequences from causal effects, recognized contributions from unobserved ones, and human rights to basic continuance from economic output. Its synthetic probes are auxiliary tools, **not** a completed population-wide impact database or demonstrated treatment effect.
+CCPH catalogs historical and present instances of support, neglected warnings, discoveries, scholarships, care, lost opportunities and follow-on contributions; future pathways remain revisable hypotheses. It is not a proof that every preserved agent will be beneficial. [Examine source-backed cases](../research/CCPH_RESEARCH_ATLAS_EN.md) and the [larger historical crosswalk](../CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md). Selection, counterfactual outcomes and causation remain separate.
 
 <!-- PI-SECTION: rights -->
-## 5. Originators, sources, rights and affected people
+## 5. Origins, source rights, and affected parties
 
-Start with [contribution and attribution boundaries](../ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md), [prior art](../PRIOR_ART_AND_ATTRIBUTION.md), and the [source and rights ledger](../PRIOR_ART_RIGHTS_AND_DERIVATION_EN_KO.md). Credit original scholars, the project's human originator, and AI assistance without merging their roles. Public availability does **not** imply a repository-wide license, permission to train models, a payment obligation, or proof of scientific validity.
-
-Preserve negative results, correction history, affected-party costs, effective exit, and recovery.
+Preserve the human research originator, earlier scholars, AI assistance and affected agents as distinct sources of claims and costs. Publication is not a blanket license or independent validation. Follow the [attribution boundaries](../ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md) and [prior-art rights register](../PRIOR_ART_RIGHTS_AND_DERIVATION_EN_KO.md). The English-first arrangement does not rewrite a Korean-language research history.
 
 <!-- PI-SECTION: navigation -->
-## 6. Further routes
+## 6. Further reading only when needed
 
-- [English research contents](RESEARCH_TOC_EN.md): first English reading route. [Historical detailed research index](../RESEARCH_TOC.md): underlying legacy bilingual case inventory and provenance.
-- [Public review packet](../research/PUBLIC_REVIEW_PACKET_EN.md): claims, rerun boundaries and challenge routes.
-- [Failure and regression index](../FAILURE_REGRESSION_INDEX.md): unsuccessful and corrected work.
-- [Funding entry — English section](../funding/FUNDER_START_HERE.md#original-1--english) and [public sponsorship ledger](../funding/SPONSORSHIP_PUBLIC_LEDGER.md): support context, not a verified funding receipt.
-- [Autonomous research loop](../AUTONOMOUS_RESEARCH_LOOP.md) and [machine-readable state](../AUTONOMOUS_RESEARCH_STATE.json): continuity and recovery without requiring the human founder to reconstruct past work.
-- [Contribution-cost regression](../CONTRIBUTION_COST_ACCOUNTING_REGRESSION.md): research output versus contributors' actual benefits, costs and losses.
-- [Knowledge explorer](../knowledge/explorer.html): evidence-linked navigation, not a replacement for original sources.
-- [Contributor guidelines](../CONTRIBUTING.md): provenance, language editions, counterexamples and privacy.
-- [Long-horizon intervention model](../LONG_HORIZON_MIN_INTERVENTION_E2E.md): model and limitations, not a universal theorem.
-- [Detailed earlier Korean reader map](../START_HERE_KO.md): historical material maintained for provenance; it is **not** a clean English edition.
+[Full historical research inventory](../RESEARCH_TOC.md) · [Independent review packet](../research/PUBLIC_REVIEW_PACKET_EN.md) · [Failure and regression history](../FAILURE_REGRESSION_INDEX.md) · [Research support context](../funding/FUNDER_START_HERE.md#original-1--english) · [Contribution rules](../CONTRIBUTING.md).
+
+
+**Technical and historical links (not an introductory reading requirement):** [Long-horizon model](../LONG_HORIZON_MIN_INTERVENTION_E2E.md) · [Research continuity process](../AUTONOMOUS_RESEARCH_LOOP.md) · [Execution-state record](../AUTONOMOUS_RESEARCH_STATE.json) · [Separate contributor costs](../CONTRIBUTION_COST_ACCOUNTING_REGRESSION.md) · [Knowledge provenance guide](../knowledge/README.md) · [Optional source explorer](../knowledge/explorer.html).
 
 <!-- PI-SECTION: limitations -->
-## 7. Language and audit limitations
+## 7. Integrity and translation limits
 
-This English route is paired section-by-section with its [Korean counterpart](START_HERE_KO.md). Many **historical linked source files remain Korean-only or internally bilingual**; their current language status is not hidden. A link does not certify an English translation. Machine checks verify structure, language leakage and local-link presence, **not** scientific correctness or semantic translation equivalence. Untranslated sources remain discoverable rather than being invented, erased or silently paraphrased.
+This page and the [Korean counterpart](START_HERE_KO.md) have parallel arguments, but matching headings and passing automated checks are not semantic translation certification. Older source files may mix languages or lack a translation. Preserve original source locations, provenance, dissent and failed experiments; do not silently reinterpret them as proven claims.
