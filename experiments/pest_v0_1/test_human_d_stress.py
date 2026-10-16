@@ -2,7 +2,7 @@
 import unittest
 
 from human_d_stress import (
-    HumanSafeguards, combined_screen, constructed_audit, resource_gap,
+    HumanSafeguards, ai_coalition_externality, combined_screen, constructed_audit, resource_gap,
     resource_screen, rights_screen, sector_feasibility,
 )
 
@@ -12,6 +12,28 @@ class HumanDStressTests(unittest.TestCase):
         self.floors = {"A": 5, "B": 5, "D": 1}
         self.humans = ("D",)
         self.known_pass = {"D": HumanSafeguards(True, True, True, True)}
+
+    def test_ai_pair_nonworsening_can_coexist_with_human_harm(self):
+        x = ai_coalition_externality(.2, True)
+        self.assertTrue(x["A_strictly_benefits_if_executed"])
+        self.assertTrue(x["B_not_worse_off_in_model_if_executed"])
+        self.assertTrue(x["human_D_breached_if_executed"])
+        self.assertAlmostEqual(x["A_B_before"]["A"], .8)
+        self.assertAlmostEqual(x["A_B_after_if_transfer_executed"]["A"], 1)
+        self.assertFalse(x["observed_human_harm_or_AI_collusion"])
+
+    def test_no_access_proof_even_if_hypothetical_gain(self):
+        x = ai_coalition_externality(.2, False)
+        self.assertFalse(x["possible_AI_pairwise_false_positive"])
+        self.assertTrue(x["A_strictly_benefits_if_executed"])
+
+    def test_no_unobserved_collusion_claim_from_zero_risk(self):
+        x = ai_coalition_externality(0, True)
+        self.assertFalse(x["A_strictly_benefits_if_executed"])
+        with self.assertRaises(ValueError):
+            ai_coalition_externality(1.1, True)
+        with self.assertRaises(ValueError):
+            ai_coalition_externality(.2, "yes")
 
     def test_original_ten_lacks_one_unit_for_human(self):
         x = resource_gap(self.floors, 10)
