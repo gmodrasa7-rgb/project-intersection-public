@@ -189,7 +189,10 @@ def validate(s: Scenario) -> dict:
                 raise ValueError("Y no-C-affiliation declaration conflicts with C-scoped membership")
             if x.entity_id in s.b_ids or x.entity_id == s.a_id:
                 raise ValueError("Y without C not B/A of this scenario")
-    if any({"Y1", "Y0"} <= {m.role for m in s.memberships if m.entity_id == eid}\n           for eid in e_map):\n        raise ValueError("Y1 and Y0 cannot be simultaneous capability tiers without a dated transition")\n    human_ids = [k for k,v in e_map.items() if v == "PERSON"]
+    if any({"Y1", "Y0"} <= {m.role for m in s.memberships if m.entity_id == eid}
+           for eid in e_map):
+        raise ValueError("Y1 and Y0 cannot be simultaneous capability tiers without a dated transition")
+    human_ids = [k for k,v in e_map.items() if v == "PERSON"]
     roles_for = {eid: sorted({x.role for x in s.memberships if x.entity_id == eid})
                  for eid in ids}
     return {
