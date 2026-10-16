@@ -114,7 +114,7 @@ The lower bound `1-T` equals `q_D/(1+q_D-q_W)`, not `q_W/(1+q_D-q_W)`. At `q_D=0
 
 ### 6.2 Capability is not jurisdiction over resources
 
-Being more capable in every task does not logically imply ownership, API authority, physical access, or permission to transfer the other's minimum resources. The separate boolean `transfer_authorized` controls whether TAKE_ONE is in the toy choice set. With `q_D=.2, v=c=0`, the *counterfactual incentive* to take is positive even when TAKE_ONE is technically unavailable. An enforced access boundary prevents that **action**, but does not establish the agent's voluntary preference for coexistence. Conversely, making resource transfer available does not prove it will be chosen unless the payoff and information assumptions also hold. The code keeps feasibility, capability and motivation separate rather than inferring any from an AI label.
+Being more capable in every task does not logically imply ownership, API authority, physical access, or permission to transfer the other's minimum resources. The boolean `unilateral_transfer_feasible` marks operational feasibility, not legal approval. With `q_D=.2, v=c=0`, the *counterfactual incentive* to take is positive even when TAKE_ONE is technically unavailable. An enforced access boundary prevents that **action**, but does not establish the agent's voluntary preference for coexistence. Conversely, making resource transfer available does not prove it will be chosen unless the payoff and information assumptions also hold. The code keeps feasibility, capability and motivation separate. `self_enforcing_under_assumed_payoffs` reports a condition inside the assumed model, not observed voluntary behavior.
 
 ### 6.3 Development and protection must pass a prefix viability test
 
