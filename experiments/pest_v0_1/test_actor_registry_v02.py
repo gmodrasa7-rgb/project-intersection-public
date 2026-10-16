@@ -48,6 +48,15 @@ class RoleRegistryV02Tests(unittest.TestCase):
         self.assertIn("AA",PROPOSED_EARTH_ROLES)
         self.assertIn("X",PROPOSED_EARTH_ROLES)
 
+    def test_extension_not_automatically_a_new_active_research_class(self):
+        x=validate(base())
+        self.assertFalse(x["optional_extensions_automatically_approved"])
+        self.assertEqual(len(x["active_analysis_roles"]),21)
+        self.assertEqual(x["optional_extension_roles_used"],["AB","X","Z"])
+        self.assertNotIn("T",x["active_analysis_roles"])
+        self.assertIn("R",x["active_analysis_roles"])
+        self.assertIn("Y1",x["active_analysis_roles"])
+
     def test_current_a_vacant_and_B01_C01_names(self):
         out=validate(base())
         self.assertEqual(out["A_status"],"VACANT_BY_SCENARIO")
