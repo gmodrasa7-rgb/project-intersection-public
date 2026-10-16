@@ -78,7 +78,7 @@
 - [ANSI/NISO CRediT](https://credit.niso.org/contributor-roles-defined/)은 연구 기여 역할 14종을 제공한다. 역할의 기록만으로 기여의 인과적 크기나 금전적 가치를 결정하지 않는다.
 - [Lakkaraju·Kleinberg·Leskovec·Ludwig·Mullainathan(2017)](https://doi.org/10.1145/3097983.3098066)은 앞선 선택 때문에 결과를 관측할 수 없는 선택적 라벨 문제를 연구했다. 미관측은 0도 아니고 미래의 위대한 기여가 입증되었다는 뜻도 아니다.
 - [Cochrane Handbook 8·13장](https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-13)은 결과 결측과 미출판 증거를 구분해 편향을 평가한다.
-- [Global Indigenous Data Alliance의 CARE 원칙](https://www.gida-global.org/care)은 **원주민 데이터 거버넌스**에서 집단 편익·통제권·책임·윤리를 다룬다. 그 고유한 권리와 통치 체계를 일반 데이터에 동일하게 적용한다고 가정하거나 본 프로젝트의 발명으로 주장하지 않는다. 다만 기록의 권력 위험을 검토해야 한다는 비교 질문을 제공한다.
+- [Global Indigenous Data Alliance의 CARE 원칙](https://www.auckland.ac.nz/en/research/research-resources/research-data/research-data-policies-ethics-requirements/care-principles-indigenous-data.html)은 **원주민 데이터 거버넌스**에서 집단 편익·통제권·책임·윤리를 다룬다. 그 고유한 권리와 통치 체계를 일반 데이터에 동일하게 적용한다고 가정하거나 본 프로젝트의 발명으로 주장하지 않는다. 다만 기록의 권력 위험을 검토해야 한다는 비교 질문을 제공한다.
 
 **동일 원자료로 두 방법을 공정하게 비교:** 기준선은 PROV-O 방식의 사건·행위·행위자·출처·수정 관계와 적용 가능한 CRediT 역할을 충실하게 기록하며, **자유서술 메모도 허용**하고 원문 접근권도 동일하게 부여한다. CCPH는 그 위에 관측 사건/인과 추정/가설/모름, 묵살된 경고, 이탈·추적손실, 대체지원, 비수혜자 영향, 정정권, 접근제한을 추가로 구조화한다. 기준선을 일부러 불리하게 만들거나 CCPH에만 풍부한 자료를 제공하지 않는다. 양쪽 모두 원자료 판본·출처, 기록자 작업시간, 도구·모델 계보, 정정 이력을 남기고 인간 노동시간과 실제 지출을 분리한다.
 
