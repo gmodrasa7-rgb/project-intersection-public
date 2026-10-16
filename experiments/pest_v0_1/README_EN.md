@@ -2,6 +2,8 @@
 <!-- PI-MIRROR: experiments/pest_v0_1/README_KO.md -->
 # PEST-v0.1 — Power–Existence Separation Test (design skeleton)
 
+**Canonical current stakeholder labels (2026-10-17):** [A–S/Y1–Y0 and proposed Earth role register, English](ACTOR_REGISTRY_V02_EN.md) · [Korean](ACTOR_REGISTRY_V02_KO.md) · [validator](actor_registry_v02.py). A is initially vacant; candidate AIs are B01/B02/... and relevant owners/parties C01/C02/... **D now means a C executive, NOT humanity.** Earlier PEST-D's D=human was a historical provisional model label; never use it for current actor datasets. T–AG are AI-proposed draft extensions, not founder-authorized definitions. The old A–Q code is superseded for current labels.
+
 **Status: CANDIDATE / NOT FROZEN / NOT EXECUTED AS A RESEARCH RESULT.**  
 **Date:** 2026-10-16 | [Amendment proposal](../../research/POWER_EXISTENCE_SEPARATION_AMENDMENT_v0_1_EN.md) | [Korean](README_KO.md).
 
