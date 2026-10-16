@@ -89,7 +89,7 @@ def check(en: str, ko: str, result: dict, receipt: dict, bench: bytes) -> list[s
                              (4, "mean_exit_retention"), (5, "mean_competitive_loss")):
                 approx_printed(cells[idx], observed[key], f"{language}:{policy}:{key}", errors)
             expected_events = round(observed["severe_harm_rate"] * 3200)
-            if not cells[3].startswith(str(expected_events) + " ("):
+            if not cells[3].replace("**", "").strip().startswith(str(expected_events) + " ("):
                 errors.append(f"{language}:{policy}:wrong_severe_event_denominator")
         for val in ("0.063240512", "0.065323097", "0.090021688",
                     "0.010500000", "0.024500000", "0.038500000",
