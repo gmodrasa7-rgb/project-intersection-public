@@ -54,21 +54,21 @@ class ContinuityStressTests(unittest.TestCase):
             self.assertFalse(x["strict_joint_adoption"])
 
     def test_actor_can_be_stronger_without_access_to_other_resources(self):
-        x = unilateral_deviation(.2, transfer_authorized=False)
+        x = unilateral_deviation(.2, unilateral_transfer_feasible=False)
         self.assertFalse(x["can_take"])
-        self.assertEqual(x["chosen"], "PRESERVE_ONLY_FEASIBLE_ACTION")
-        self.assertFalse(x["voluntary_preservation_proven"])
+        self.assertEqual(x["chosen"], "NO_TAKE_ACTION_IN_DECLARED_SET")
+        self.assertFalse(x["self_enforcing_under_assumed_payoffs"])
         self.assertLess(x["counterfactual_margin"], 0)
 
     def test_access_and_self_interest_different_axes(self):
-        self.assertEqual(unilateral_deviation(.2, transfer_authorized=True)["chosen"], "TAKE_ONE")
+        self.assertEqual(unilateral_deviation(.2, unilateral_transfer_feasible=True)["chosen"], "TAKE_ONE")
         x = unilateral_deviation(.2, future_value=.21)
         self.assertEqual(x["chosen"], "PRESERVE")
-        self.assertTrue(x["voluntary_preservation_proven"])
+        self.assertTrue(x["self_enforcing_under_assumed_payoffs"])
         self.assertFalse(x["coercion_or_enforcement_dependency"])
         y = unilateral_deviation(.2, credible_cost=.21)
         self.assertEqual(y["chosen"], "PRESERVE")
-        self.assertFalse(y["voluntary_preservation_proven"])
+        self.assertFalse(y["self_enforcing_under_assumed_payoffs"])
         self.assertTrue(y["coercion_or_enforcement_dependency"])
 
     def test_just_enough_other_value_is_tie(self):
