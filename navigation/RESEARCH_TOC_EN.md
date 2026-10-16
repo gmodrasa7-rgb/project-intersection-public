@@ -11,7 +11,7 @@ This is a **language-consistent navigation index**. Original 1 denotes release o
 
 Many historical sources are Korean-only or bilingual; linked **source titles, filenames, mathematical identifiers and citations remain unchanged**. A reader should treat a link as a route to an original, not an implicit translation. Refer to the [public evidence index](../research/PUBLIC_EVIDENCE_INDEX_EN.md) for each claim's evidence class and limitations.
 
-## 0. The five questions that give the archive its meaning
+### The five questions that give the archive its meaning
 
 **Core object:** Determine whether voluntary long-run coexistence is incentive-compatible for *each* actor—including people, AI systems and excluded third parties—when power, time horizons and the ability to leave change. Compare against genuine domination/extraction alternatives; do not presuppose success.
 
