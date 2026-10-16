@@ -4,11 +4,15 @@ on:
   pull_request:
     paths:
       - "experiments/e009/**"
+      - "research/papers/E009_NEGATIVE_RESULT_METHODS_*.md"
+      - "tools/verify_e009_manuscript.py"
       - ".github/workflows/e009-prereg-audit.yml"
   push:
     branches: [main]
     paths:
       - "experiments/e009/**"
+      - "research/papers/E009_NEGATIVE_RESULT_METHODS_*.md"
+      - "tools/verify_e009_manuscript.py"
       - ".github/workflows/e009-prereg-audit.yml"
   workflow_dispatch:
 
@@ -53,3 +57,6 @@ jobs:
           print('Scope: deterministic PROJECT-LINEAGE posthoc synthetic audit, not external or empirical validation')
           PY
           fi
+
+      - name: Cross-check both E009 manuscript editions against frozen JSON, receipts and eight negative controls
+        run: python tools/verify_e009_manuscript.py --self-test
