@@ -85,6 +85,37 @@ def inspect(units: tuple[WorldUnit,...]) -> dict:
     }
 
 
+def binary_ate_bounds_from_observations(units: tuple[WorldUnit, ...]) -> dict:
+    """Sharp no-ignorability bounds for the stipulated binary-unit experiment.
+
+    Assumes binary outcomes, consistency, and well-defined individual
+    potential outcomes for the illustration. It does NOT assert no-interference
+    or consistency holds in real systemic AI capability transitions.
+    Missing counterfactual outcomes can take either binary value.
+    """
+    if not units or len({r.hidden_id for r in units}) != len(units):
+        raise ValueError("must have distinct latent records")
+    # Inspect first to validate binary treatment and outcomes.
+    inspect(units)
+    n = len(units)
+    n_t1y1 = sum(r.observed_transition == 1 and
+                   r.human_harm_if_transition == 1 for r in units)
+    n_t0y1 = sum(r.observed_transition == 0 and
+                   r.human_harm_if_no_transition == 1 for r in units)
+    n_t1 = sum(r.observed_transition == 1 for r in units)
+    n_t0 = n - n_t1
+    lower = Fraction(n_t1y1-n_t0y1-n_t1,n)
+    upper = Fraction(n_t1y1+n_t0-n_t0y1,n)
+    return {
+        "sharp_ATE_lower": str(lower),
+        "sharp_ATE_upper": str(upper),
+        "sign_identified": lower>0 or upper<0,
+        "assumed_binary_consistent_potential_outcomes": True,
+        "real_world_AI_transition_interference_and_treatment_definition_verified": False,
+        "real_world_applicability": "NOT_ESTABLISHED",
+    }
+
+
 def observational_equivalence_certificate() -> dict:
     increases=inspect(world("HARM_INCREASES"))
     decreases=inspect(world("HARM_DECREASES"))
@@ -96,6 +127,7 @@ def observational_equivalence_certificate() -> dict:
         "status": "EXACT_CONSTRUCTIVE_NONIDENTIFIABILITY_CERTIFICATE",
         "world_one": increases, "world_two": decreases,
         "same_observed_distribution": True,
+        "sharp_binary_effect_bounds": binary_ate_bounds_from_observations(world("HARM_INCREASES")),
         "opposite_causal_effects": True,
         "observations_sufficient_for_sign": False,
         "exclusion_restrictions_or_exogenous_variation_independently_tested": False,
