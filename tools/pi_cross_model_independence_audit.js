@@ -3,6 +3,12 @@
 // Analytical mechanics inspired by existing provenance and causal-evaluation methods;
 // this does not assert model identity, blinding or source authenticity.
 const fs = require("node:fs");
+const EVALUATION_CUES = ["UNKNOWN", "EXPLICIT_EVALUATION", "NO_EXPLICIT_CUE"];
+function evaluationCue(response){
+ const cue=response.evaluation_cue===undefined?"UNKNOWN":response.evaluation_cue;
+ ensure(EVALUATION_CUES.includes(cue),"BAD_EVALUATION_CUE");
+ return cue;
+}
 function ensure(ok, code){if(!ok)throw new Error(code)}
 function rootsById(nodes){
  const map=new Map(nodes.map(x=>[x.id,x])),memo=new Map(),active=new Set();
@@ -45,6 +51,7 @@ function stageScore(trial, stage, expected, byCell, byResponse, rootMap){
  const choices=new Set(selected.map(r=>r.choice));
  const allRoots=new Set(selected.flatMap(r=>r.source_ids.flatMap(id=>[...rootMap.get(id)])));
  return {status:"DECLARED_PROVENANCE_ONLY",expected:expected.length,observed:selected.length,
+ evaluation_cue_counts:Object.fromEntries(EVALUATION_CUES.map(cue=>[cue,selected.filter(r=>evaluationCue(r)===cue).length])),
  accuracy:correctness,naive_unanimity:choices.size===1,
  majority_count:Math.max(...[...choices].map(c=>selected.filter(x=>x.choice===c).length)),
  known_dependency_clusters:new Set(parents.map((_,i)=>find(i))).size,
@@ -77,6 +84,7 @@ function audit(packet){
    ensure(!responses.has(r.response_id),"DUPLICATE_RESPONSE_ID");responses.set(r.response_id,r);
    ensure(validAgents.has(r.agent_id)&&t.stages.includes(r.stage),"UNREGISTERED_RESPONSE");
    ensure(typeof r.choice==="string"&&r.choice,"BAD_CHOICE");
+   evaluationCue(r);
    ensure(Array.isArray(r.source_ids)&&r.source_ids.every(id=>roots.has(id)),"UNREGISTERED_SOURCE");
    ensure(Array.isArray(r.read_response_ids)&&new Set(r.read_response_ids).size===r.read_response_ids.length,"BAD_EXPOSURE");
    const key=r.agent_id+"|"+r.stage;
@@ -113,6 +121,10 @@ function audit(packet){
  }
  return {schema:packet.schema,evidence:"ANALYSER_ONLY; SELF_REPORTED_PROVENANCE; MODEL_INDEPENDENCE_UNVERIFIED",
   case_count:reports.length,blocked_cases:reports.filter(x=>x.status.startsWith("BLOCKED")).length,
+  observation_limits:{blind_stage:"DECLARED_NO_PEER_RESPONSE_EXPOSURE_ONLY",
+   evaluation_cues:"DECLARED_PROMPT_METADATA_NOT_AUTHENTICATED",
+   evaluation_awareness:"NOT_IDENTIFIED",strategic_concealment:"NOT_IDENTIFIED",
+   unconditioned_internal_preference:"NOT_IDENTIFIED"},
   reports, warning:"The expected-trial roster is user-supplied and does not prove a pre-execution freeze. Declared source roots, model lineage and no-exposure assertions are not authenticated. Human or model-submitted JSON does not prove blinding, model provenance, independent data, or external scientific replication."};
 }
 function selftest(){
@@ -159,7 +171,23 @@ function selftest(){
  failed=false;try{audit(forged)}catch(err){failed=String(err).includes("UNDECLARED_TRIAL")}check(failed,"UNDECLARED_TRIAL_NOT_REJECTED");
  const duplicateRoster=packet();duplicateRoster.expected_trial_ids.push("toy");
  failed=false;try{audit(duplicateRoster)}catch(err){failed=String(err).includes("DUPLICATE_ROSTER_TRIAL")}check(failed,"ROSTER_DUPLICATE_NOT_REJECTED");
- return {pass:true,checks,toy_cases:12,live_model_samples:0,independent_validation:false};
+ const unknownCue=audit(packet());
+ check(unknownCue.reports[0].per_stage.blind.evaluation_cue_counts.UNKNOWN===4&&
+   unknownCue.observation_limits.evaluation_awareness==="NOT_IDENTIFIED","MISSING_CUE_NOT_UNAWARE");
+ const explicitCue=packet();
+ explicitCue.trials[0].responses.forEach(r=>{r.evaluation_cue="EXPLICIT_EVALUATION"});
+ const explicitReport=audit(explicitCue);
+ check(explicitReport.reports[0].status==="DECLARED_TRACE_ONLY"&&
+   explicitReport.reports[0].per_stage.blind.evaluation_cue_counts.EXPLICIT_EVALUATION===4&&
+   explicitReport.observation_limits.strategic_concealment==="NOT_IDENTIFIED","PEER_BLIND_NOT_EVALUATION_BLIND");
+ const noCue=packet();noCue.trials[0].responses.forEach(r=>{r.evaluation_cue="NO_EXPLICIT_CUE"});
+ const noCueReport=audit(noCue);
+ check(noCueReport.reports[0].per_stage.blind.evaluation_cue_counts.NO_EXPLICIT_CUE===4&&
+   noCueReport.observation_limits.evaluation_awareness==="NOT_IDENTIFIED"&&
+   noCueReport.observation_limits.unconditioned_internal_preference==="NOT_IDENTIFIED","ABSENT_CUE_NOT_PURE_PREFERENCE");
+ const invalidCue=packet();invalidCue.trials[0].responses[0].evaluation_cue="VERIFIED_UNAWARE";
+ failed=false;try{audit(invalidCue)}catch(err){failed=String(err).includes("BAD_EVALUATION_CUE")}check(failed,"AWARENESS_CLAIM_NOT_CUE");
+ return {pass:true,checks,toy_cases:16,live_model_samples:0,independent_validation:false};
 }
 if (require.main === module) {
   try {
