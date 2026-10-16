@@ -75,6 +75,9 @@ Preserve the human research originator, earlier scholars, AI assistance and affe
 
 [Full historical research inventory](../RESEARCH_TOC.md) · [Independent review packet](../research/PUBLIC_REVIEW_PACKET_EN.md) · [Failure and regression history](../FAILURE_REGRESSION_INDEX.md) · [Research support context](../funding/FUNDER_START_HERE.md#original-1--english) · [Contribution rules](../CONTRIBUTING.md).
 
+
+**Technical and historical links (not an introductory reading requirement):** [Long-horizon model](../LONG_HORIZON_MIN_INTERVENTION_E2E.md) · [Research continuity process](../AUTONOMOUS_RESEARCH_LOOP.md) · [Execution-state record](../AUTONOMOUS_RESEARCH_STATE.json) · [Separate contributor costs](../CONTRIBUTION_COST_ACCOUNTING_REGRESSION.md) · [Knowledge provenance guide](../knowledge/README.md) · [Optional source explorer](../knowledge/explorer.html).
+
 <!-- PI-SECTION: limitations -->
 ## 7. Integrity and translation limits
 
