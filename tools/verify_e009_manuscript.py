@@ -137,7 +137,7 @@ def run_selftest(en: str, ko: str, res: dict, rec: dict, bench: bytes) -> dict:
     cases.append((en, ko, res, modified, bench))
     cases.append((en, ko, res, rec, bench + b" "))
     cases.append((en.replace("NOT PEER REVIEWED", "PEER REVIEWED", 1), ko, res, rec, bench))
-    cases.append((en, ko.replace("9,600", "96,000", 1), res, rec, bench))
+    cases.append((en, ko.replace("9,600", "96,000"), res, rec, bench))
     cases.append((en.replace("0.010698591", "0.000000000"), ko, res, rec, bench))
     rejected = [bool(check(*case)) for case in cases]
     if not all(rejected):
