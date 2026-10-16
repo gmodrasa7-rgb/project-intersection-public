@@ -682,7 +682,7 @@ Next falsifiable checks: (1) change who controls the enforcer after a power reve
 
 **Evidence discipline:** These are two **separate** games; combining their thresholds cannot prove universal coexistence. An empty core does not imply violence or extinction. A nonempty core does not certify consent, human rights, safe exit, or protections for outsiders. Actual victim welfare and third-party welfare remain **null/unknown** in the script. Existing E009 negative evidence is not overwritten. E008 preregistration is unaffected.
 
-**Reproduce:** Run python experiments/power_transition_probe.py --verify (16 local unit checks: 7 earlier plus 9 new), or run without --verify for JSON scenarios. This is synthetic arithmetic plus code-path checking, not empirical observation or independent scientific replication.
+**Reproduce:** Run python experiments/power_transition_probe.py --verify (22 current unit checks: 7 earlier audited, 9 horizon/coalition and 6 detection-budget boundary checks), or run without --verify for JSON scenarios. This is synthetic arithmetic plus code-path checking, not empirical observation or independent scientific replication.
 
 **Credit:** The relevant power-shift commitment literature includes [Powell (2004)](https://doi.org/10.1017/S000305540400111X) and [Powell (2006)](https://doi.org/10.1017/S0020818306060061). Coalitional core nonemptiness comes from Bondareva (1963) and Shapley (1967). The project's incremental contribution here is an auditable juxtaposition of two different failure modes with explicitly missing welfare measures; improved predictive power over simpler baselines is **not yet established**.
 
