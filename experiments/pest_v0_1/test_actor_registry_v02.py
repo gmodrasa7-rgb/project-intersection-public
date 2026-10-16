@@ -108,8 +108,17 @@ class RoleRegistryV02Tests(unittest.TestCase):
         out=validate(base())
         self.assertNotIn("I1",out["overlapping_role_entity_ids"])
         s=base()
-        with self.assertRaisesRegex(ValueError,"Y no-C-affiliation"):
+        with self.assertRaisesRegex(ValueError,"Y independent status"):
             validate(replace(s,memberships=(*s.memberships,Role("I1","G","C01"))))
+
+    def test_Y_independent_can_be_customer_shareholder_or_former_employee(self):
+        s=base()
+        out=validate(replace(s,memberships=(
+            *s.memberships,
+            Role("I1","K","C01"),
+            Role("I1","E","C01"),
+            Role("I1","N","C01"))))
+        self.assertIn("I1",out["overlapping_role_entity_ids"])
 
     def test_independent_low_ability_supported_but_no_simultaneous_Y1(self):
         s=base()
