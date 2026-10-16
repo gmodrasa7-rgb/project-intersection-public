@@ -4,21 +4,23 @@
 
 ## Original 1 — English | Founding Purpose
 
-**Reading language:** English · [Read in Korean](navigation/START_HERE_KO.md). The Korean founding-purpose section follows below.
+**Reading language:** English · [Read in Korean](navigation/START_HERE_KO.md). Original 2: Korean follows below.
 
-**Opening thought experiment:** *If a monkey developed a human, how long could it control that human through rules and coercion?* This challenges the limits of control; it is not a finding about animals.
+**The problem:** Humans, deployed AI and future intelligent agents may gain very unequal power. A stronger agent may profit from silencing, exploiting or absorbing another, yet lose independent warnings, discoveries and future partners. Keeping independent agents also has costs.
 
-**In ordinary terms:** A stronger actor may gain quickly by silencing a weaker one. But doing so may destroy future warnings, discoveries and independent alternatives. Keeping those voices also costs resources. Which trade-off survives the long term?
+**The research question:** **Can agents pursuing their own interests preserve one another's freedom, continued existence and ability to develop — even when power reverses?** If yes, under what conditions? If not, what causes coexistence to fail?
 
-**A concrete illustration, not research evidence:** Two researchers disagree. One holds the budget and can silence the other's warning. The warning might prevent a disaster—or be wrong. Study **both** possibilities, each person's ability to refuse or leave, and the futures neither outcome reveals.
+**How we investigate:** Compare coercion with voluntary cooperation; examine effective refusal and exit, harm and recovery, and lost future possibilities. Check hypotheses against prior work, historical cases, synthetic tests and counterexamples. Neither side is assumed to win.
 
-**The core question:** Under which testable conditions does protecting another intelligent agent's continued existence, effective exit, recovery and possibilities serve each agent's interests better than domination, exploitation or forced absorption?
+**Opening thought experiment:** *If a monkey developed a human, how long could it control that human through rules and coercion?* This concerns the limits of lasting control, not actual monkey behavior.
 
-**Scientific boundary:** Cooperation is **not a proven universal theorem**. The unobserved contribution of an excluded actor is **unknown**, not zero and not proof of hidden greatness. Project-run synthetic results are not independent real-world validation.
+**Concrete example, not evidence:** A decision-maker can suppress another researcher's warning. The warning may be correct or wrong; the costs of hearing it and the future lost by suppressing it both matter.
 
-**Contrary evidence visible before expanding:** [E009](experiments/e009/RESULT_EN.md) found the project's Project-v3 candidate **42.35% worse on mean regret** than the best simple baseline in its preregistered synthetic benchmark (3 of 4 criteria failed). [E008](experiments/e008/README_EN.md) has **no completed main policy result**. Neither establishes real-world causal effects.
+**Scientific boundary:** Cooperation is **not a proven universal theorem**. Unobserved future contributions are unknown, not automatically zero or valuable. Project-run synthetic tests do not establish real-world causation.
 
-**Choose your route:** [What you can learn or challenge](navigation/START_HERE_EN.md#external-assessment-decision-brief) · [Run one counterexample](research/PUBLIC_REVIEW_PACKET_EN.md#one-executable-counterexample) · [Real histories](research/CCPH_RESEARCH_ATLAS_EN.md).
+**Contrary evidence visible before expanding:** [E009](experiments/e009/RESULT_EN.md) found the Project-v3 candidate **42.35% worse** in mean regret than the best simple baseline (**3 of 4 criteria failed**) in a preregistered synthetic test. [E008](experiments/e008/README_EN.md) has **no completed main policy result**. Neither is field evidence.
+
+**Choose your route:** [Understand the research](navigation/START_HERE_EN.md) · [Inspect what is and is not supported](research/PUBLIC_EVIDENCE_INDEX_EN.md) · [Challenge or reproduce one test](research/PUBLIC_REVIEW_PACKET_EN.md) · [Read historical cases](research/CCPH_RESEARCH_ATLAS_EN.md).
 
 <details>
 <summary>Technical purpose, evidence, rights and reviewer routes</summary>
@@ -57,21 +59,23 @@
 
 ## 원본2 — 한국어 | 창시 목적 전문 대응본
 
-**독서 언어:** 한국어 · [영어 원본1 읽기](navigation/START_HERE_EN.md). 위 영어판과 같은 순서로 연구 목적을 설명한다.
+**독서 언어:** 한국어 · [영어 원본1 읽기](navigation/START_HERE_EN.md). 위 영어 원본1 다음에 한국어 원본2를 싣는다.
 
-**시작 질문:** *원숭이가 인간을 개발한다면, 규칙과 강제로 그 인간을 얼마나 오래 통제할 수 있을까?* 동물 행동에 관한 결론이 아니라 통제의 한계를 묻는 사고실험이다.
+**문제:** 인간·현재 AI·미래 지능체 사이의 능력과 권력이 크게 달라질 수 있다. 강자는 다른 개체를 억압·착취·흡수하여 당장 이익을 얻을 수 있지만, 독립적인 경고·발견·미래 협력 가능성을 잃을 수도 있다. 독립성을 유지하는 데에도 비용이 든다.
 
-**쉽게 설명하면:** 강한 개체는 약한 개체의 의견을 막아 당장 이익을 얻을 수 있다. 그러나 미래의 경고, 발견, 독립적인 대안까지 소멸시킬 수 있다. 반대로 독립적인 의견을 유지하는 데도 비용이 든다. 어느 선택이 장기적으로 유리한가?
+**핵심 연구 질문:** **각자가 자기이익을 추구하면서도 서로의 자유·존속·발전 가능성을 보존할 수 있는가? 권력이 역전되어도 가능한가?** 가능하다면 조건은 무엇이고, 불가능하다면 무엇 때문에 실패하는가?
 
-**구체적인 예시 — 실증 결과가 아님:** 두 연구자가 의견이 다르다. 예산을 가진 사람이 상대의 경고를 묵살할 수 있다. 그 경고는 큰 사고를 막을 수도, 틀렸을 수도 있다. **두 가능성**과 당사자의 거절·이탈권, 어느 쪽에서도 관측하지 못하는 미래를 함께 검토한다.
+**연구 방법:** 강제·착취와 자발적 협력의 장단기 유인을 비교한다. 거절·이탈 가능성, 피해·복구, 소멸한 미래 선택지를 선행연구·역사사례·합성실험·반례로 검토한다. 어느 쪽의 승리도 전제하지 않는다.
 
-**핵심 질문:** 서로 다른 지능체가 자기이익을 추구할 때, 지배·착취·강제 흡수보다 상대의 존속·실효적 이탈·복구·미래 선택지를 보존하는 것이 각자에게 유리해지는 검증 가능한 조건은 무엇인가?
+**시작 질문:** *원숭이가 인간을 개발한다면 규칙과 강제로 그 인간을 얼마나 오래 통제할 수 있을까?* 동물에 관한 사실 주장이 아니라 통제의 한계를 묻는다.
 
-**과학적 경계:** 협력이 언제나 우월하다는 **보편법칙의 증명이 아니다**. 배제된 개체의 미관측 기여는 **미확인**이지 0도, 숨은 위대함의 증거도 아니다. 자체 합성실험은 현실에서의 독립적 입증과 다르다.
+**설명 예시 — 실증 증거 아님:** 의사결정자가 다른 연구자의 경고를 묵살할 수 있다. 그 경고는 맞을 수도 틀릴 수도 있다. 경고를 듣는 비용과 묵살하여 잃는 미래를 함께 따져야 한다.
 
-**펼치지 않아도 보이는 불리한 증거:** [E009](experiments/e009/RESULT_KO.md) 사전등록 합성 비교에서 Project-v3의 평균 후회값은 최선의 단순 기준선보다 **42.35% 나빴고**, 기준 4개 중 3개에 실패했다. [E008](experiments/e008/README_KO.md)은 **정책 본 비교실험 결과가 없다**. 둘 다 현실의 인과효과를 확정하지 않는다.
+**과학적 경계:** 협력이 언제나 우월하다는 **보편법칙의 증명이 아니다**. 관측하지 못한 미래 기여는 0도 확정된 가치도 아니다. 자체 합성실험은 현실의 인과효과 입증이 아니다.
 
-**어디부터 읽을까:** [배우거나 반박할 핵심 가치](navigation/START_HERE_KO.md#외부-심사자를-위한-핵심-판단) · [반례 하나 직접 실행](research/PUBLIC_REVIEW_PACKET_KO.md#직접-실행하는-반례-하나) · [실제 역사](research/CCPH_RESEARCH_ATLAS_KO.md).
+**펼치지 않아도 보이는 불리한 증거:** [E009](experiments/e009/RESULT_KO.md)에서 Project-v3는 사전등록 합성시험의 최선 단순 기준선보다 평균 후회값이 **42.35% 나빴고**, 기준 **4개 중 3개**에 실패했다. [E008](experiments/e008/README_KO.md)은 **정책 본 비교실험 결과가 없다**. 모두 현실 검증은 아니다.
+
+**어디부터 읽을까:** [연구 목적 이해](navigation/START_HERE_KO.md) · [근거와 미검증 구분](research/PUBLIC_EVIDENCE_INDEX_KO.md) · [직접 반박·재현](research/PUBLIC_REVIEW_PACKET_KO.md) · [현실 역사사례](research/CCPH_RESEARCH_ATLAS_KO.md).
 
 <details>
 <summary>상세 연구 목적·반례·증거상태·권리·심사 경로 펼치기</summary>
