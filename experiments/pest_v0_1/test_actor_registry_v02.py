@@ -106,15 +106,18 @@ class RoleRegistryV02Tests(unittest.TestCase):
 
     def test_independent_high_ability_not_automatically_AI(self):
         out=validate(base())
-        self.assertIn("I1",out["overlapping_role_entity_ids"]) if False else self.assertNotIn("I1",out["overlapping_role_entity_ids"])
+        self.assertNotIn("I1",out["overlapping_role_entity_ids"])
         s=base()
         with self.assertRaisesRegex(ValueError,"Y no-C-affiliation"):
             validate(replace(s,memberships=(*s.memberships,Role("I1","G","C01"))))
 
-    def test_independent_low_ability_supported(self):
+    def test_independent_low_ability_supported_but_no_simultaneous_Y1(self):
         s=base()
-        v=validate(replace(s,memberships=(*s.memberships,Role("I1","Y0"))))
+        membership=tuple(x for x in s.memberships if x.entity_id!="I1")
+        v=validate(replace(s,memberships=(*membership,Role("I1","Y0"))))
         self.assertEqual(v["A_status"],"VACANT_BY_SCENARIO")
+        with self.assertRaisesRegex(ValueError,"Y1 and Y0"):
+            validate(replace(s,memberships=(*s.memberships,Role("I1","Y0"))))
 
     def test_societal_role_not_locked_to_owning_company(self):
         s=base()
