@@ -624,3 +624,47 @@ These are **editorially ranked research concepts**, not ten validated discoverie
 **CCPH scope:** The database recovers overlooked histories, records observed direct and indirect impact, and enables backward/forward tracing of *candidate* influence links. The **Continuance–Contribution Pathways Hypothesis** is one hypothesis track **inside** CCPH, not the database's definition. Synthetic CCPH probes are measurement tools, not evidence of real beneficiary outcomes.
 
 **Research hierarchy:** L0 = this unresolved core purpose; L1 = competing causal hypotheses and models (including ICM and RGBM); L2 = prior-art comparison, historical observation, falsifiable experiments and independent review; L3 = provenance, versioning, rollback and operational safeguards. L3 is necessary infrastructure, not proof of L0 or a replacement objective. Capability or power asymmetry alone is not proof of exploitation; voluntary agreement without real exit may instead reflect dependency.
+
+
+---
+
+## Power-transition credibility probe (2026-10-16; exploratory, post-hoc, NOT E008 preregistered)
+
+**Founding question unchanged:** Under what conditions will humans, deployed AI, future AI and other possible intelligent agents voluntarily preserve one another's existence, effective freedom and development even after relative capabilities and power change? Do not equate cooperation among two AI agents with safe coexistence for humans or excluded third parties. Current artificial systems' welfare and standing are unresolved; operating dependencies are not automatically rights.
+
+**Prior work and attribution:** Powell (2006) shows how power shifts and commitment failures can produce preventive conflict ([DOI](https://doi.org/10.1017/S0020818306060061)); Turner et al. (2021) establish conditional power-seeking tendencies in MDPs ([NeurIPS](https://proceedings.neurips.cc/paper/2021/hash/c26820b8a4c1b3c2aa868d6d57e14a79-Abstract.html)); Nowak (2006) surveys conditional mechanisms for cooperation ([DOI](https://doi.org/10.1126/science.1133755)); Ostrom (1990) studies institutionally sustained commons ([Indiana University](https://www.ostrom.indiana.edu/courses-teaching/teaching-tools/ostrom-design/index.html)); Dafoe et al. (2020) frame open problems in cooperative AI ([arXiv](https://arxiv.org/abs/2012.08630)); Dou, Goldstein and Ji (2025) present simulated AI trading collusion that damages market efficiency ([NBER](https://www.nber.org/papers/w34054)). These mechanisms are **not** inventions or empirical findings of this project.
+
+### Minimal sequential toy game and analytic solution
+
+An actor with dominance chooses to *preserve* an independent actor or *extract*. If extraction is detected, an enforcer subsequently chooses whether to impose a sanction. All parameters are **invented toy assumptions**, with complete information and an exogenous enforcer continuation value. The enforcer chooses enforcement only if its continuation benefit \(F\) strictly exceeds its enforcement cost \(K\) plus added capture cost \(M\). Let \(d\) be the conditional detection probability, \(S\) the sanction cost to the dominant actor, \(X\) the dominant actor's extraction payoff, \(B\) the benefit from preserving the other actor, and \(C\) the preservation cost. Under conservative tie-breaking:
+
+\[
+e=\mathbf1\{F>K+M\},\quad
+U_P=B-C,\quad U_X=X-d\,e\,S,\quad
+\text{preserve iff } B-C>X-d\,e\,S.
+\]
+
+The *narrow self-enforcing* case in this model is \(B-C>X\): preservation is individually preferred even without sanctions. It is **not** sufficient for all-party voluntary coexistence, rights protection, coalition stability, repeated-game equilibrium, or safe AI deployment. The word "voluntary" is not inferred from compliance under a credible threat.
+
+### Direct local run (Python 3.13.5; four self-tests passed)
+
+Run \`python experiments/power_transition_probe.py --verify\` and \`python experiments/power_transition_probe.py\`. Each row is a model-implied calculation, **not observed human/AI behavior**.
+
+| Invented scenario | Credible enforcement? | Dominant choice | All-party viability |
+| --- | --- | --- | --- |
+| No enforcement / nominal promise | No | Extract | False in toy (victim not preserved) |
+| Enforcer benefit 3; enforcement cost 2; detection 1; sanction 6 | Yes | Preserve | **Unknown:** outsider unassessed |
+| Same but power-capture cost 3 | No | Extract | False in toy |
+| Same credible enforcer but detection 0.25 | Yes | Extract | False in toy |
+| Preservation benefit rises from 2 to 6, no credible enforcement | No | Preserve | **Unknown:** outsider unassessed |
+| Previous self-enforcing case with stipulated outsider harm | No | Preserve | False in toy (outsider harmed) |
+
+In base cases \(B=2,C=1,X=4,d=1,S=6,K=2\). Without credible enforcement the payoffs are preserve 1 versus extract 4. With \(F=3,K=2,M=0\), the extraction payoff is \(-2\), so preservation is chosen. If \(M=3\), enforcement is not credible and extraction returns. With \(d=0.25\), extraction instead pays \(2.5>1\). With \(B=6\), preservation pays \(5>4\) without sanction. **A signed pledge by itself produces no payoff change.**
+
+### Scope, adversarial tests, and integration boundary
+
+This only verifies arithmetic and branch logic for one dominant actor and one prospective enforcer. It does **not** model endogenous detection, enforcer rewards, preference revision, multi-agent coalition deviations, real exit, human living floors, uncertainty over AI welfare, actual power transitions, future agent entry, or cumulative irreversible hazard. The loss from extraction to the victim is represented by a stipulated binary toy outcome, not a measured utility. "Outsider unassessed" remains **unknown, not safe**. A higher welfare sum cannot offset a hidden irreversible loss.
+
+Next falsifiable checks: (1) change who controls the enforcer after a power reversal; (2) endogenize \(F,K,M,d\); (3) let two dominant actors form an exclusionary coalition; (4) include separate victim/third-party payoffs and real disagreement/exit baselines; (5) compare this simple threshold to richer dynamic policies on **held-out** conditions. Preserve contrary outcomes, and do not relabel this post-hoc probe as preregistered E008 evidence.
+
+**Status:** Explorer/test artifact, not a theorem of universal cooperation, a new empirical result, or independent scientific replication. The founder's original research question remains distinguished from prior authors' theoretical contributions and the AI-assisted implementation.
