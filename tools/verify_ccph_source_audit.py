@@ -119,7 +119,7 @@ def audit(data: dict, en: str, ko: str) -> list[str]:
     }
     for ident, by_language in appendix.items():
         for edition, body in (("en", en), ("ko", ko)):
-            table = body.split("\\n## 3.", 1)[0]
+            table = body.split("\n## 3.", 1)[0]
             rows = [line for line in table.splitlines() if line.startswith(f"| {ident} |")]
             if len(rows) != 1 or any(term not in rows[0] for term in by_language[edition]):
                 errors.append(f"{ident}:{edition}_supplement_source_boundary_lost")
@@ -171,8 +171,13 @@ def self_test(data: dict, en: str, ko: str) -> dict:
     m = copy.deepcopy(data)
     m["methods"]["observed_correction_count"] = 6
     bad.append(m)
+    corrupted_en = en.replace("about **2.4**", "about **3.5**", 1)
+    corrupted_ko = ko.replace("논문 약 1편 증가(약 7%)", "논문 약 1편 증가(약 70%)", 1)
+    assert corrupted_en != en and corrupted_ko != ko, "mutation target absent"
     rejected = sum(bool(audit(x, en, ko)) for x in bad)
-    assert rejected == len(bad), (rejected, len(bad))
+    rejected += bool(audit(data, corrupted_en, ko))
+    rejected += bool(audit(data, en, corrupted_ko))
+    assert rejected == len(bad) + 2, (rejected, len(bad) + 2)
     return {
         "status": "PASS_COMMITTED_RECEIPT_INTEGRITY_ONLY",
         "case_count": len(data["records"]),
