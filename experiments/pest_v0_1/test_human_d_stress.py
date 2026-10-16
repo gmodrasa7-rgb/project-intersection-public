@@ -120,7 +120,7 @@ class HumanDStressTests(unittest.TestCase):
     def test_exact_actor_inventory_prevents_unseen_human(self):
         with self.assertRaisesRegex(ValueError, "identical actor IDs"):
             resource_screen(self.floors, {"A": 5, "B": 5}, 11, self.humans)
-        with self.assertRaisesRegex(ValueError, "every additional actor"):
+        with self.assertRaisesRegex(ValueError, "human_ids must"):
             resource_screen(self.floors, {"A": 5, "B": 5, "D": 1}, 11, ("D2",))
 
     def test_unknown_human_not_silently_scored_zero_welfare(self):
