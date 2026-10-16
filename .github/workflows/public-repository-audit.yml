@@ -626,8 +626,8 @@ jobs:
           import json
           from pathlib import Path
           data = json.loads(Path("/tmp/pi-cross-model-selftest.json").read_text(encoding="utf-8"))
-          assert data["pass"] is True and data["checks"] == 15, data
+          assert data["pass"] is True and data["checks"] == 19, data
           assert data["live_model_samples"] == 0
           assert data["independent_validation"] is False
-          print("Provenance roster, blind exposure, correlated roots and missing whole-trial guards PASS; no live model runs")
+          print("Provenance roster, blind exposure, evaluation-cue boundary, correlated roots and missing whole-trial guards PASS; no live model runs")
           PY

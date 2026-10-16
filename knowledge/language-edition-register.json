@@ -1,6 +1,6 @@
 {
   "schema_version": "pi-language-edition-register/v0.1",
-  "updated": "2026-10-16",
+  "updated": "2026-10-17",
   "baseline_repository_tree_sha": "b2055f40a1e0cabe38f3c6e8c984228c1c2a7e0f",
   "baseline_scope": "Historical inventory retained; two GPT proposal-gate editions added on review branch; baseline tree SHA is historical, not the current head.",
   "policy": {
@@ -326,11 +326,11 @@
     }
   ],
   "metrics": {
-    "markdown_total": 148,
+    "markdown_total": 149,
     "filename_classes": {
       "UNMARKED_LANGUAGE_UNVERIFIED": 42,
       "LEGACY_MIXED_READER_ENTRY": 2,
-      "KO_SUFFIX_UNVERIFIED": 63,
+      "KO_SUFFIX_UNVERIFIED": 64,
       "ORDERED_BILINGUAL_FOUNDER_OR_GOVERNANCE": 2,
       "EN_SUFFIX_UNVERIFIED": 18,
       "COMBINED_NAMING_UNVERIFIED": 21
@@ -877,6 +877,12 @@
       "path": "experiments/e010/README_KO.md",
       "filename_class": "KO_SUFFIX_UNVERIFIED",
       "counterpart_path": "experiments/e010/README_EN.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "experiments/gpt_double_standard_20261014/FAIL_REPORT_20261017_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": null,
       "content_equivalence": "NOT_REVIEWED"
     },
     {
