@@ -50,10 +50,10 @@ Suppose one researcher can suppress another's warning. It may prevent costly del
 
 | Record | Actual status | It does NOT establish |
 | --- | --- | --- |
-| [E007](../experiments/e007/README_EN.md) | In 72 selected synthetic configurations, 17 changed classification with timing | Voluntary cooperation in real societies |
-| [E008](../experiments/e008/README_EN.md) | Protocol and readiness analysis; **main comparison not completed** | Any completed policy comparison |
-| [E009](../experiments/e009/RESULT_EN.md) | Preregistered synthetic negative result: Project-v3 **42.35% worse mean regret** than the best simple baseline, **3/4 criteria failed** | That the overarching coexistence question is false |
-| [E010](../experiments/e010/README_EN.md) | Investigator-selected, post-hoc synthetic exploration (108 states) | Independent or real-world validation |
+| [E007](../experiments/e007/README_EN.md) | 17 of 72 selected synthetic configurations changed classification with timing | Voluntary cooperation in real societies |
+| [E008](../experiments/e008/README_EN.md) | Protocol and readiness analysis; **no completed main comparison** | Any completed policy comparison |
+| [E009](../experiments/e009/RESULT_EN.md) | Preregistered synthetic negative result: Project-v3 **42.35% higher mean regret (worse)** than the best simple baseline, **3/4 criteria failed** | That the overarching coexistence question is false |
+| [E010](../experiments/e010/README_EN.md) | Investigator-selected, post-hoc synthetic exploration (108 investigator-selected states) | Independent or real-world validation |
 | [CCPH](../research/CCPH_RESEARCH_ATLAS_EN.md) | Historical sources, possible continuance/contribution pathways and counterexamples | Project-estimated causal effects of assistance |
 
 **Not established:** An empirically tested general coexistence equilibrium, dependable behavior of any named present AI under hypothetical superintelligence conditions, independent scientific replication, and a universal theorem. A model self-check verifies only its specified computation.
@@ -73,7 +73,7 @@ Preserve the human research originator, earlier scholars, AI assistance and affe
 <!-- PI-SECTION: navigation -->
 ## 6. Further reading only when needed
 
-[Full historical research inventory](../RESEARCH_TOC.md) · [Independent review packet](../research/PUBLIC_REVIEW_PACKET_EN.md) · [Failure and regression history](../FAILURE_REGRESSION_INDEX.md) · [Research support context](../funding/FUNDER_START_HERE.md) · [Contribution rules](../CONTRIBUTING.md).
+[Full historical research inventory](../RESEARCH_TOC.md) · [Independent review packet](../research/PUBLIC_REVIEW_PACKET_EN.md) · [Failure and regression history](../FAILURE_REGRESSION_INDEX.md) · [Research support context](../funding/FUNDER_START_HERE.md#original-1--english) · [Contribution rules](../CONTRIBUTING.md).
 
 <!-- PI-SECTION: limitations -->
 ## 7. Integrity and translation limits
