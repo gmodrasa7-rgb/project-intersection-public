@@ -59,7 +59,8 @@
         "field_example": "offers_not_completions",
         "missing_or_counterfactual_truth": "UNKNOWN_WHEN_NOT_IDENTIFIED",
         "public_private_scope": "PUBLIC_PAGE_ONLY"
-      }
+      },
+      "atlas_existing_link": "https://blog.bluedot.org/p/2022-ai-alignment-course-impact"
     },
     {
       "id": "CP66",
@@ -86,7 +87,8 @@
         "field_example": "heterogeneous_subgroups_and_attrition",
         "missing_or_counterfactual_truth": "UNKNOWN_WHEN_NOT_IDENTIFIED",
         "public_private_scope": "PUBLIC_PAGE_ONLY"
-      }
+      },
+      "atlas_existing_link": "https://www.nber.org/papers/w27834"
     },
     {
       "id": "CP69",
@@ -113,7 +115,8 @@
         "field_example": "assignment_exposure_age",
         "missing_or_counterfactual_truth": "UNKNOWN_WHEN_NOT_IDENTIFIED",
         "public_private_scope": "PUBLIC_PAGE_ONLY"
-      }
+      },
+      "atlas_existing_link": "https://doi.org/10.1257/aer.20150572"
     },
     {
       "id": "CP73",
@@ -140,7 +143,8 @@
         "field_example": "negative_and_remaining_positive",
         "missing_or_counterfactual_truth": "UNKNOWN_WHEN_NOT_IDENTIFIED",
         "public_private_scope": "PUBLIC_PAGE_ONLY"
-      }
+      },
+      "atlas_existing_link": "https://doi.org/10.1257/aeri.20190224"
     },
     {
       "id": "CP76",
@@ -167,7 +171,8 @@
         "field_example": "attrition_and_screening_beyond",
         "missing_or_counterfactual_truth": "UNKNOWN_WHEN_NOT_IDENTIFIED",
         "public_private_scope": "PUBLIC_PAGE_ONLY"
-      }
+      },
+      "atlas_existing_link": "https://doi.org/10.1038/s41467-019-12189-3"
     },
     {
       "id": "CP77",
@@ -194,7 +199,8 @@
         "field_example": "heterogeneous_nonrecipient_and_negative",
         "missing_or_counterfactual_truth": "UNKNOWN_WHEN_NOT_IDENTIFIED",
         "public_private_scope": "PUBLIC_PAGE_ONLY"
-      }
+      },
+      "atlas_existing_link": "https://doi.org/10.1016/j.econedurev.2021.102221"
     }
   ],
   "reassessment": {
