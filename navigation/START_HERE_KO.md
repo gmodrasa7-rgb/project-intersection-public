@@ -75,6 +75,9 @@ CCPH는 과거·현재에 관측된 연구 지원, 장학금, 돌봄, 위기 경
 
 [과거 상세 연구목차](../RESEARCH_TOC.md) · [외부 검토와 반증](../research/PUBLIC_REVIEW_PACKET_KO.md) · [실패·수정 이력](../FAILURE_REGRESSION_INDEX.md) · [연구지원 실사](../funding/FUNDER_START_HERE.md#원본2--한국어) · [기여 규칙](../CONTRIBUTING.md).
 
+
+**전문가용 추가 자료 — 처음부터 읽을 필요 없음:** [장기 모형](../LONG_HORIZON_MIN_INTERVENTION_E2E.md) · [연구 연속성 절차](../AUTONOMOUS_RESEARCH_LOOP.md) · [실행 상태 기록](../AUTONOMOUS_RESEARCH_STATE.json) · [기여자 비용 원장](../CONTRIBUTION_COST_ACCOUNTING_REGRESSION.md) · [지식·출처 안내](../knowledge/README.md) · [선택적 출처 탐색기](../knowledge/explorer.html).
+
 <!-- PI-SECTION: limitations -->
 ## 7. 번역·검증 한계
 
