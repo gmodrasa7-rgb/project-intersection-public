@@ -49,7 +49,7 @@ ROLE_KIND = {
 }
 C_SCOPED_ROLES = set("DEFGHIJKLMN")
 SOCIETY_ROLES = set("OPQ")
-LINK_KINDS = {"owns", "operates", "develops", "affiliated", "related"}
+LINK_KINDS = {"owned_by", "operated_by", "developed_by", "affiliated_with", "related_to"}
 
 
 @dataclass(frozen=True)
@@ -126,7 +126,7 @@ def validate(reg: Registry) -> dict:
     if len(set(pairs)) != len(pairs):
         raise ValueError("duplicate B-C link")
     for x in reg.links:
-        if x.b_id not in reg.b_ids or x.c_id not in reg.c_ids or x.relation not in LINK_KINDS:
+        if x.b_id not in (set(reg.b_ids) | ({reg.a_id} if reg.a_id is not None else set())) or x.c_id not in reg.c_ids or x.relation not in LINK_KINDS:
             raise ValueError("invalid B-C relationship or undeclared organization")
     if any(not any(x.b_id == b for x in reg.links) for b in reg.b_ids):
         raise ValueError("every B requires its own documented C relation")
@@ -174,7 +174,7 @@ def promote_simulated_b(reg: Registry, b_id: str) -> Registry:
     return Registry(actors=reg.actors,
                     b_ids=tuple(b for b in reg.b_ids if b != b_id),
                     c_ids=reg.c_ids,
-                    links=tuple(x for x in reg.links if x.b_id != b_id),
+                    links=reg.links,  # preserve prior affiliation after B becomes A
                     stakeholders=reg.stakeholders,
                     a_id=b_id, a_simulated_assertion=True)
 
@@ -246,7 +246,7 @@ def constructed_audit() -> dict:
         actors=(Actor("b1", "AI"), Actor("b2", "AI"), Actor("c1", "ORG"),
                 Actor("c2", "ORG"), *people),
         b_ids=("b1", "b2"), c_ids=("c1", "c2"),
-        links=(BToC("b1", "c1", "owns"), BToC("b2", "c2", "operates")),
+        links=(BToC("b1", "c1", "owned_by"), BToC("b2", "c2", "operated_by")),
         stakeholders=(
             Stakeholder("d1", "D", "c1"), Stakeholder("e1", "E", "c1"),
             Stakeholder("e1", "O"), Stakeholder("f1", "F", "c1"),
