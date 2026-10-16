@@ -193,6 +193,7 @@ def validate(s: Scenario) -> dict:
            for eid in e_map):
         raise ValueError("Y1 and Y0 cannot be simultaneous capability tiers without a dated transition")
     human_ids = [k for k,v in e_map.items() if v == "PERSON"]
+    optional_used = sorted({m.role for m in s.memberships if m.role in PROPOSED_EARTH_ROLES})
     roles_for = {eid: sorted({x.role for x in s.memberships if x.entity_id == eid})
                  for eid in ids}
     return {
@@ -207,6 +208,10 @@ def validate(s: Scenario) -> dict:
         "overlapping_role_entity_ids": sorted(k for k,v in roles_for.items() if len(v) > 1),
         "explicitly_listed_human_count": len(human_ids),
         "role_types": {"FOUNDER": sorted(FOUNDER_ROLES), "PROPOSED_EXTENSION": sorted(PROPOSED_EARTH_ROLES)},
+        "active_analysis_roles": sorted(FOUNDER_ROLES),
+        "optional_extension_roles_used": optional_used,
+        "optional_extensions_automatically_approved": False,
+        "role_proliferation_requirements": "novel mechanism, independent measurement, decision relevance, baseline comparison",
         "stakeholder_inventory_verified_complete": False,
         "unidentified_affected_parties_declared": s.unidentified_affected_parties,
         "claims_actual_singularity_exists": False,
