@@ -15,6 +15,7 @@ as a provisional human label and must not be imported as canonical.
 Computations are synthetic role/impact *integrity checks*, not evidence
 of real ASI existence, stable equilibria, human welfare outcomes or causality.
 """
+# HISTORICAL A-Q v0.1 ONLY: superseded by actor_registry_v02.py.\n# The current founder-defined roles are A-S and Y1/Y0; D means C executive.\n# Preserve this legacy model for audit, not current role lookup.\n
 from __future__ import annotations
 
 from dataclasses import dataclass
