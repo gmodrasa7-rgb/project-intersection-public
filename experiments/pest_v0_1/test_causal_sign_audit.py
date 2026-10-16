@@ -3,7 +3,7 @@ import unittest
 from fractions import Fraction
 
 from causal_sign_audit import (
-    WorldUnit, TemporalRole, world, inspect,
+    WorldUnit, TemporalRole, world, inspect, binary_ate_bounds_from_observations,
     observational_equivalence_certificate, role_time_audit, audit
 )
 
@@ -35,6 +35,21 @@ class CausalSignAuditTests(unittest.TestCase):
             p_zero=Fraction(observed[f"T{treatment}_Y0"])
             p_one=Fraction(observed[f"T{treatment}_Y1"])
             self.assertEqual(p_one/(p_zero+p_one),Fraction(1,2))
+
+    def test_sharp_binary_potential_outcome_bounds_straddle_zero(self):
+        x=binary_ate_bounds_from_observations(world("HARM_INCREASES"))
+        y=binary_ate_bounds_from_observations(world("HARM_DECREASES"))
+        self.assertEqual(x,y)
+        self.assertEqual(x["sharp_ATE_lower"],"-1/2")
+        self.assertEqual(x["sharp_ATE_upper"],"1/2")
+        self.assertFalse(x["sign_identified"])
+        self.assertFalse(x["real_world_AI_transition_interference_and_treatment_definition_verified"])
+
+    def test_bounds_flag_systemic_transition_not_experiment(self):
+        x=observational_equivalence_certificate()
+        self.assertEqual(x["sharp_binary_effect_bounds"]["sharp_ATE_lower"],"-1/2")
+        self.assertEqual(x["sharp_binary_effect_bounds"]["sharp_ATE_upper"],"1/2")
+        self.assertEqual(x["sharp_binary_effect_bounds"]["real_world_applicability"],"NOT_ESTABLISHED")
 
     def test_certificate_never_claims_real_A(self):
         x=observational_equivalence_certificate()
