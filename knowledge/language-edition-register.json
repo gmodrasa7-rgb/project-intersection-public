@@ -345,6 +345,22 @@
         "Human founder role assignments A-S/Y0/Y1 are authoritative; proposed T-AG groups are AI-assisted, not originator approved.",
         "English/Korean semantic equivalence is unverified and the models have no field validation."
       ]
+    },
+    {
+      "id": "PI-PTCV-2026-WORKING-PAPER",
+      "original_1_english": "papers/power-transition-coexistence/WORKING_PAPER_EN.md",
+      "original_2_korean": "papers/power-transition-coexistence/WORKING_PAPER_KO.md",
+      "kind": "unsubmitted_theoretical_methodological_AI_power_transition_cooperation_evaluation_paper",
+      "structural_pair_present": true,
+      "meaning_review_status": "NOT_INDEPENDENTLY_VERIFIED",
+      "original_conception_language": "KOREAN_HUMAN_RESEARCH_QUESTIONS_AI_ASSISTED_EN_AND_KO_DRAFTS",
+      "independent_review_receipt": null,
+      "one_sided_edit_exception": null,
+      "known_divergences": [
+        "Two papers are corresponding drafts, not independently certified sentence-by-sentence translations.",
+        "No unique new game theory theorem, measured real-AI behavior, actual human injury, empirical effectiveness estimate or academic peer review is claimed.",
+        "Named human authorship and affiliation are not invented; final human approval is pending."
+      ]
     }
   ],
   "legacy_priority_unresolved": [
@@ -386,13 +402,13 @@
     }
   ],
   "metrics": {
-    "markdown_total": 156,
+    "markdown_total": 158,
     "filename_classes": {
       "UNMARKED_LANGUAGE_UNVERIFIED": 42,
       "LEGACY_MIXED_READER_ENTRY": 2,
-      "KO_SUFFIX_UNVERIFIED": 67,
+      "KO_SUFFIX_UNVERIFIED": 68,
       "ORDERED_BILINGUAL_FOUNDER_OR_GOVERNANCE": 2,
-      "EN_SUFFIX_UNVERIFIED": 22,
+      "EN_SUFFIX_UNVERIFIED": 23,
       "COMBINED_NAMING_UNVERIFIED": 21
     },
     "meaning_verified_pairs": 0,
@@ -1093,6 +1109,18 @@
       "path": "navigation/START_HERE_KO.md",
       "filename_class": "KO_SUFFIX_UNVERIFIED",
       "counterpart_path": "navigation/START_HERE_EN.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "papers/power-transition-coexistence/WORKING_PAPER_EN.md",
+      "filename_class": "EN_SUFFIX_UNVERIFIED",
+      "counterpart_path": "papers/power-transition-coexistence/WORKING_PAPER_KO.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "papers/power-transition-coexistence/WORKING_PAPER_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": "papers/power-transition-coexistence/WORKING_PAPER_EN.md",
       "content_equivalence": "NOT_REVIEWED"
     },
     {
