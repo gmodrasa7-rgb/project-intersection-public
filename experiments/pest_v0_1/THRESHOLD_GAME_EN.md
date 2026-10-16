@@ -103,12 +103,12 @@ Capture_A = p_A; Capture_B = 1-p_A
 For `1+q_D-q_W>0`, **both actors weakly favor sharing** iff
 
 ```
-q_W/(...) is NOT the lower limit: 1 - T <= p_A <= T,
+1 - T <= p_A <= T,
 T = (1-q_W)/(1+q_D-q_W).
 Nonempty joint weak-acceptance interval iff q_D + q_W <= 1.
 ```
 
-The displayed lower bound is deliberately written as `1-T`; do not substitute `q_W/(1+q_D-q_W)` because the actual lower bound equals `q_D/(1+q_D-q_W)`. At `q_D=0,q_W=1`, the denominator is zero and **both actors are indifferent for every p_A**, so this degenerate case must not be reported as a numeric threshold.
+The lower bound `1-T` equals `q_D/(1+q_D-q_W)`, not `q_W/(1+q_D-q_W)`. At `q_D=0,q_W=1`, the denominator is zero and **both actors are indifferent for every p_A**, so this degenerate case must not be reported as a numeric threshold.
 
 **Opposing cases:** With `(q_D,q_W)=(.2,0)`, `p_A=.5` yields each actor's sharing survival .9 versus capture .5, and a nonempty joint acceptance interval [1/6, 5/6]. With `(q_D,q_W)=(.2,.9)`, sharing gives each .45 versus capture .5 when `p_A=.5`; the joint acceptance interval is empty. The model's conclusion therefore depends on who faces risk; no real-world AI succession probability or agent survival utility has been observed. The earlier `q_W=0` report is a **special case**, not a universal equation.
 
@@ -122,7 +122,7 @@ At initial `(A,B,COMMON)=(5,5,0)`, a resource-expending investment of one from A
 
 The same caution applies to protective overhead. Taking one from A or B to operate a COMMON resource-consuming enforcement service breaches a floor at `R=10`. Exogenous creation of one COMMON unit **before** a one-unit service expense avoids that particular shortage. Security costs might instead be non-consumptive, paid outside the modeled pool, amortized across periods, or unnecessary in a verified self-enforcing arrangement; no universal positive-cost assumption is justified.
 
-**Prior-art scope:** Powell's [commitment-problem analysis (2006)](https://doi.org/10.1017/S0020818306060061), Turner's [MDP power-seeking result (2021)](https://proceedings.neurips.cc/paper/2021/hash/c26820b8a4c1b3c2aa868d6d57e14a79-Abstract.html), [Ostrom, Walker and Gardner on self-governance (2013)](https://www.cambridge.org/core/journals/american-political-science-review/article/covenants-with-and-without-a-sword-selfgovernance-is-possible/2191864CCB589D4B3528090CB596C254), and [Chávez et al. (2023) on costly common-pool monitoring](https://doi.org/10.1016/j.jebo.2023.04.028) anticipate much of the mechanism. The contribution here is a *bounded, reproducible modeling correction and a negative-case decision audit*, not a new generalized coexistence theorem or evidence that advanced AI has interests equivalent to a person.
+**Prior-art scope:** Powell's [commitment-problem analysis (2006)](https://doi.org/10.1017/S0020818306060061), Turner's [MDP power-seeking result (2021)](https://proceedings.neurips.cc/paper/2021/hash/c26820b8a4c1b3c2aa868d6d57e14a79-Abstract.html), [Ostrom, Walker and Gardner on self-governance (1992)](https://doi.org/10.2307/1964229), and [Chávez et al. (2023) on costly common-pool monitoring](https://doi.org/10.1016/j.jebo.2023.04.028) anticipate much of the mechanism. The contribution here is a *bounded, reproducible modeling correction and a negative-case decision audit*, not a new generalized coexistence theorem or evidence that advanced AI has interests equivalent to a person.
 
 **Reproduce:**
 
