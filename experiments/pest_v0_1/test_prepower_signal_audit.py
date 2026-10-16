@@ -90,7 +90,8 @@ class PrePowerSignalAuditTests(unittest.TestCase):
         self.assertFalse(x["certificate"]["real_AI_deception_or_motivation_observed"])
 
     def test_no_negative_or_forged_numeric_inputs(self):
-        for kwargs in ({"selection_reward":-1},{"signal_cost":True},{"selection_reward":1.0}):
+        for kwargs in ({"selection_reward":-1},{"selection_reward":1,"signal_cost":True},
+                       {"selection_reward":1.0}):
             with self.subTest(kwargs=kwargs),self.assertRaises(ValueError):
                 CheapSignalGate(**kwargs)
         for kwargs in ({"type_label":""},{"gain_from_appropriating_other":-1},
