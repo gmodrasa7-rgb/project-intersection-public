@@ -52,8 +52,8 @@
 | --- | --- | --- |
 | [E007](../experiments/e007/README_KO.md) | 선택한 합성 72개 중 17개의 결과 분류가 처리 시점에 따라 변화 | 현실 세계의 자발적 공존 실증 |
 | [E008](../experiments/e008/README_KO.md) | 설계·준비 분석이며 **본 비교실험 미완료** | 완료된 정책 성능 비교 |
-| [E009](../experiments/e009/RESULT_KO.md) | 사전등록 합성시험에서 Project-v3가 최선 단순 기준선보다 평균 후회 **42.35% 나쁨**, 기준 **4개 중 3개 실패** | 공존 연구의 최상위 질문 자체의 기각 |
-| [E010](../experiments/e010/README_KO.md) | 연구자가 선정한 사후 탐색 합성 108개 조건 | 독립검증 또는 현실 실증 |
+| [E009](../experiments/e009/RESULT_KO.md) | 사전등록 합성시험에서 Project-v3가 최선 단순 기준선보다 평균 후회 **42.35% 증가(더 나쁨)**, 기준 **4개 중 3개 실패** | 공존 연구의 최상위 질문 자체의 기각 |
+| [E010](../experiments/e010/README_KO.md) | 연구자가 선정한 **108개 사후 탐색** 합성 조건 | 독립검증 또는 현실 실증 |
 | [CCPH](../research/CCPH_RESEARCH_ATLAS_KO.md) | 실제 역사·지원·기여 후보 경로와 반례의 출처를 정리 | 이 프로젝트가 계산한 인과적 지원효과 |
 
 **아직 입증되지 않은 것:** 일반적 공존 균형의 실증, 특정 현재 AI가 미래 초지능 조건에서 보일 확정 행동, 외부 독립과학 복제, 보편 정리. 동일 제작 코드의 재실행은 그 코드에 대한 한정된 점검이다.
@@ -73,7 +73,7 @@ CCPH는 과거·현재에 관측된 연구 지원, 장학금, 돌봄, 위기 경
 <!-- PI-SECTION: navigation -->
 ## 6. 필요할 때만 더 읽을 자료
 
-[과거 상세 연구목차](../RESEARCH_TOC.md) · [외부 검토와 반증](../research/PUBLIC_REVIEW_PACKET_KO.md) · [실패·수정 이력](../FAILURE_REGRESSION_INDEX.md) · [연구지원 실사](../funding/FUNDER_START_HERE.md) · [기여 규칙](../CONTRIBUTING.md).
+[과거 상세 연구목차](../RESEARCH_TOC.md) · [외부 검토와 반증](../research/PUBLIC_REVIEW_PACKET_KO.md) · [실패·수정 이력](../FAILURE_REGRESSION_INDEX.md) · [연구지원 실사](../funding/FUNDER_START_HERE.md#원본2--한국어) · [기여 규칙](../CONTRIBUTING.md).
 
 <!-- PI-SECTION: limitations -->
 ## 7. 번역·검증 한계
