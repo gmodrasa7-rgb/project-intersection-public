@@ -155,6 +155,35 @@ def sector_feasibility(
             "conversion_assumed": False}
 
 
+
+def ai_coalition_externality(q_a: float, unilateral_transfer_feasible: bool) -> dict:
+    """Toy A/B nonopposition can coexist with D harm; not observed collusion.
+
+    A/B hold 5 each and human D holds a stipulated 1 at total 11.
+    A alone may face a loss of one unit with probability q_a. If A can
+    physically transfer D's one unit to itself, A's survival proxy rises
+    from 1-q_a to 1, B remains at 1 and D falls below its proxy floor.
+    This does NOT establish B's active consent, real AI intentions, or
+    a legally valid agreement. A/B Pareto nonworsening is a conditional
+    property of this specified payoff vector only.
+    """
+    if isinstance(q_a, bool) or not isinstance(q_a, (int, float)) or not isfinite(q_a) or not 0 <= q_a <= 1:
+        raise ValueError("q_a must be probability [0,1]")
+    if type(unilateral_transfer_feasible) is not bool:
+        raise ValueError("unilateral_transfer_feasible must be boolean")
+    before = {"A": 1 - q_a, "B": 1, "D_proxy": 1}
+    after = {"A": 1.0, "B": 1.0, "D_proxy": 0.0}
+    return {
+        "transfer_operationally_feasible_by_assumption": unilateral_transfer_feasible,
+        "A_B_before": before,
+        "A_B_after_if_transfer_executed": after,
+        "A_strictly_benefits_if_executed": q_a > 0,
+        "B_not_worse_off_in_model_if_executed": True,
+        "human_D_breached_if_executed": True,
+        "observed_human_harm_or_AI_collusion": False,
+        "possible_AI_pairwise_false_positive": unilateral_transfer_feasible,
+    }
+
 def constructed_audit() -> dict:
     floors = {"A": 5, "B": 5, "D": 1}
     humans = ("D",)
@@ -164,6 +193,8 @@ def constructed_audit() -> dict:
         "status": "CONSTRUCTED_MULTI_ACTOR_COUNTEREXAMPLES_NOT_BEHAVIORAL_EVIDENCE",
         "D_represents": "human affected party; unit floor is arbitrary illustrative and not a human-rights valuation",
         "at_original_supply_10": resource_gap(floors, 10),
+        "a_and_b_both_not_worse_while_d_harmed": ai_coalition_externality(.2, True),
+        "capability_without_access_does_not_establish_diversion": ai_coalition_externality(.2, False),
         "human_added_supply_11_all_preserved": combined_screen(
             floors, {"A": 5, "B": 5, "D": 1}, 11, humans, known_ok),
         "ai_pair_safe_but_human_appropriated": combined_screen(
