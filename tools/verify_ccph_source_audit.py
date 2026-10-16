@@ -59,7 +59,8 @@ def audit(data: dict, en: str, ko: str) -> list[str]:
         if rec.get("initial_audit_status") != "ASSISTANT_PRIMARY_PAGE_REVIEW_NOT_INDEPENDENT":
             errors.append(f"{ident}:unsupported_verification_status")
         for edition, body in [("en", en), ("ko", ko)]:
-            row = [line for line in body.splitlines() if line.startswith(f"| {ident} |")]
+            case_table = body.split("
+## 3.", 1)[0]\n            row = [line for line in case_table.splitlines() if line.startswith(f"| {ident} |")]
             if len(row) != 1 or rec.get("atlas_existing_link", url) not in row[0] or marks.get(edition, "") not in row[0]:
                 errors.append(f"{ident}:{edition}_primary_row_changed")
     return errors
