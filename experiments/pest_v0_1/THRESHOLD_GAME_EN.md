@@ -39,6 +39,9 @@ Sharing preferred ex ante iff p < 1/(1+q).
 
 At `p=0.5, q=0.2`, the two rates are 0.90 and 0.50; at `p=0.9` they are 0.82 and 0.90. Thus unequal beliefs about who becomes dominant can destroy unanimous *ex-ante* support even **if** sharing could be enforced. More importantly, the ex-ante preference does **not** make a promised sharing arrangement sequentially credible: with `v=c=0`, the future dominant actor rationally reneges. This distinction corrects the tempting but invalid step "both signed while weak, so protection persists when one is strong." The probabilities are illustrative input coordinates, **not measured frequencies of AI succession**.
 
+**Joint adoption boundary for two candidates.** Because exactly one of A or B becomes dominant, `p_B=1-p_A`. Both weakly prefer a genuinely implemented sharing regime to guaranteed capture, evaluated *solely by survival probability*, exactly when
+`q/(1+q) <= p_A <= 1/(1+q)`. With `q=.2` this interval is `[1/6,5/6]`: an actor predicting `p_A=.9` would veto sharing under these stipulated payoffs, though its weaker counterpart favors it. **Even inside the interval** a mere promise still fails ex-post when `v=c=0, q>0`; mutual ex-ante adoption and sequential implementation are logically independent gates. This bound is directly derived from the two actor-specific inequalities, not a survey or frequency estimate.
+
 ### Four disjoint gates
 
 1. **Aggregate feasibility:** total resources meet the applicable minimums plus any reserve. For three holders needing five each, 10<15 even if all refuse to attack.
