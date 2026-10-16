@@ -150,13 +150,13 @@ class StakeholderAQTests(unittest.TestCase):
         r=fixture()
         with self.assertRaisesRegex(ValueError,"societal role"):
             validate(replace(r,stakeholders=(*r.stakeholders,
-                                              Stakeholder("q1","Q","c1")))
+                                              Stakeholder("q1","Q","c1"))))
 
     def test_employee_role_cannot_bleed_between_companies(self):
         r=fixture()
         with self.assertRaisesRegex(ValueError,"specific C"):
             validate(replace(r,stakeholders=(*r.stakeholders,
-                                              Stakeholder("g1","G","nonexistent-C")))
+                                              Stakeholder("g1","G","nonexistent-C"))))
 
     def test_B_without_association_cannot_be_hidden(self):
         r=fixture()
