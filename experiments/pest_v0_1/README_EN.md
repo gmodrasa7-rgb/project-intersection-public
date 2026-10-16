@@ -146,3 +146,8 @@ python -m unittest discover -s experiments/pest_v0_1 -p 'test_*.py' -v
 [Full English appendix and exact standard-library code](THRESHOLD_GAME_EN.md) · [Korean matched edition](THRESHOLD_GAME_KO.md) · [calculation](threshold_game.py) · [negative controls](test_threshold_game.py).
 
 The user-origin 10/5/5 problem is a **separate illustrative decision audit**, not part of the 96-cell PEST factorial, not an externally observed AI behavior, and not a completed causal policy result. It distinguishes ex-ante willingness to sign, ex-post incentive compatibility, credible enforcement versus voluntary preservation, nonidentified future contributions, role-name swaps, and a third-agent resource impossibility. Existing PEST formal 96 cells and E007–E010 historical conclusions remain unchanged; `--execute` stays on HOLD.
+
+
+### Human D: third-party rights and coalition externalities (2026-10-17)
+
+The human founder subsequently added **D = humans** (not another AI). See §7 of the [English threshold-game appendix](THRESHOLD_GAME_EN.md) / [Korean counterpart](THRESHOLD_GAME_KO.md), the [human D constructed audit](human_d_stress.py) and [tests](test_human_d_stress.py). These negative controls expose a scenario where A/B both meet their own floors while D loses its minimum, a separate nonconsensual-control case despite material adequacy, group-aggregation concealment, and non-fungible human/AI resource sectors. Neither passing A/B coordination nor declaring four human safeguards TRUE proves human rights, informed consent, enforceable oversight or full long-run coexistence. Human living conditions, legitimate governance and the authority to stop unsafe AI are not treated as fungible AI survival tokens. **Design-only / NOT behavioral evidence / NOT merged.**
