@@ -84,3 +84,51 @@ The audit prints explicit assumptions, integer feasibility, two pre-transition c
 - [Lu Dong and Lingbo Huang (2026), *Curtailed ambition: Endogenous power shift and preventive war*](https://doi.org/10.1016/j.jebo.2026.107413): experimental comparison of self-containment and binding future-payoff commitment; it does **not** independently test the survival-floor interaction in this appendix.
 
 **Research residual, unverified:** can independent information, externalities, true exit, actor-specific floors, production capacity, and post-transition enforcement jointly predict a verified benefit beyond these simpler models? Study a policy-independent, externally designed consequence model before proposing any new universal coexistence theorem. Preserve E009's negative result; retain original PEST-v0.1 `--execute` HOLD. No updates to the canonical public foreword, historical E007–E010 observations, funding, attribution rights, or previous preregistration are made by this appendix.
+
+
+## 6. IVS-0R falsification audit: two-sided shocks, authority, and temporal accounting (2026-10-16)
+
+**Why this is necessary:** The base model placed a one-unit resource-loss hazard only on the dominant actor. That is a researcher-added assumption, not a condition supplied by the human originator. It can induce an ex-post incentive to capture by construction. Separately, the founder's statements “survival requires five” and “development is possible at five” do not specify whether development *consumes* the same units. The base model must not silently resolve either question.
+
+### 6.1 Two-sided risk and the joint consent boundary
+
+Add an independent weak-role loss probability `q_W` and retain dominant-role `q_D`. In the **survival-only** sharing regime, each actor holds five and may lose one unit, which makes that actor fail the immediate threshold. In the capture regime, the one dominant actor first takes one unit from the weaker actor, hence holds six and survives any at-most-one-unit loss, while the other holds four and immediately fails the threshold. Assuming one mutually exclusive dominant actor and `p_B=1-p_A`:
+
+```
+Share_A = p_A(1-q_D) + (1-p_A)(1-q_W)
+Share_B = (1-p_A)(1-q_D) + p_A(1-q_W)
+Capture_A = p_A; Capture_B = 1-p_A
+```
+
+For `1+q_D-q_W>0`, **both actors weakly favor sharing** iff
+
+```
+q_W/(...) is NOT the lower limit: 1 - T <= p_A <= T,
+T = (1-q_W)/(1+q_D-q_W).
+Nonempty joint weak-acceptance interval iff q_D + q_W <= 1.
+```
+
+The displayed lower bound is deliberately written as `1-T`; do not substitute `q_W/(1+q_D-q_W)` because the actual lower bound equals `q_D/(1+q_D-q_W)`. At `q_D=0,q_W=1`, the denominator is zero and **both actors are indifferent for every p_A**, so this degenerate case must not be reported as a numeric threshold.
+
+**Opposing cases:** With `(q_D,q_W)=(.2,0)`, `p_A=.5` yields each actor's sharing survival .9 versus capture .5, and a nonempty joint acceptance interval [1/6, 5/6]. With `(q_D,q_W)=(.2,.9)`, sharing gives each .45 versus capture .5 when `p_A=.5`; the joint acceptance interval is empty. The model's conclusion therefore depends on who faces risk; no real-world AI succession probability or agent survival utility has been observed. The earlier `q_W=0` report is a **special case**, not a universal equation.
+
+### 6.2 Capability is not jurisdiction over resources
+
+Being more capable in every task does not logically imply ownership, API authority, physical access, or permission to transfer the other's minimum resources. The separate boolean `transfer_authorized` controls whether TAKE_ONE is in the toy choice set. With `q_D=.2, v=c=0`, the *counterfactual incentive* to take is positive even when TAKE_ONE is technically unavailable. An enforced access boundary prevents that **action**, but does not establish the agent's voluntary preference for coexistence. Conversely, making resource transfer available does not prove it will be chosen unless the payoff and information assumptions also hold. The code keeps feasibility, capability and motivation separate rather than inferring any from an AI label.
+
+### 6.3 Development and protection must pass a prefix viability test
+
+At initial `(A,B,COMMON)=(5,5,0)`, a resource-expending investment of one from A leaves A at four and violates its survival floor *before* any later production can repair it. An exogenous production event adding one to A **before** investment maintains the floor: `(5,5,0)->(6,5,0)->(5,5,0)`. Both event orders have the same final allocation, but only one preserves the stipulated floor after **every** step. This is a timing counterexample, not evidence that real development always consumes one unit or exogenous resources can appear without an engineering process.
+
+The same caution applies to protective overhead. Taking one from A or B to operate a COMMON resource-consuming enforcement service breaches a floor at `R=10`. Exogenous creation of one COMMON unit **before** a one-unit service expense avoids that particular shortage. Security costs might instead be non-consumptive, paid outside the modeled pool, amortized across periods, or unnecessary in a verified self-enforcing arrangement; no universal positive-cost assumption is justified.
+
+**Prior-art scope:** Powell's [commitment-problem analysis (2006)](https://doi.org/10.1017/S0020818306060061), Turner's [MDP power-seeking result (2021)](https://proceedings.neurips.cc/paper/2021/hash/c26820b8a4c1b3c2aa868d6d57e14a79-Abstract.html), [Ostrom, Walker and Gardner on self-governance (2013)](https://www.cambridge.org/core/journals/american-political-science-review/article/covenants-with-and-without-a-sword-selfgovernance-is-possible/2191864CCB589D4B3528090CB596C254), and [Chávez et al. (2023) on costly common-pool monitoring](https://doi.org/10.1016/j.jebo.2023.04.028) anticipate much of the mechanism. The contribution here is a *bounded, reproducible modeling correction and a negative-case decision audit*, not a new generalized coexistence theorem or evidence that advanced AI has interests equivalent to a person.
+
+**Reproduce:**
+
+```sh
+python experiments/pest_v0_1/continuity_stress.py --audit
+python -m unittest discover -s experiments/pest_v0_1 -p 'test_*.py' -v
+```
+
+Interpretation gates: source-data-independent validation of these configured counterexamples is not an empirical independent replication. Do not merge with E008 or rewrite E009's frozen negative result; PEST `--execute` remains blocked. Independent choice-space audits, measured capacity rights, real transition probabilities, temporal resource costs and actor-specific human impacts remain **UNVERIFIED**.
