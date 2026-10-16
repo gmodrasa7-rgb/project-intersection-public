@@ -287,7 +287,7 @@
       ]
     },
     {
-      "id": "PI-EXP-E048-E051-FEEDBACK",
+      "id": "PI-RESEARCH-E048-E051-FEEDBACK",
       "original_1_english": "experiments/dynamic_feedback/README_EN.md",
       "original_2_korean": "experiments/dynamic_feedback/README_KO.md",
       "kind": "bounded_prior_internal_synthetic_disclosure_not_external_replication",
@@ -298,7 +298,8 @@
       "one_sided_edit_exception": null,
       "known_divergences": [
         "Historical internal E048/E049 calculations are disclosed but were not independently rerun.",
-        "E050 repeat is project-lineage same-mechanism synthetic, E051 is unexecuted, licensing remains HOLD."
+        "E050 repeat is project-lineage same-mechanism synthetic, E051 is unexecuted, licensing remains HOLD.",
+        "This new public pair is not a split from a pinned pre-existing combined source and must not be registered as PI-EXP source-preserving derivative."
       ]
     }
   ],
@@ -1439,7 +1440,7 @@
         "experiments/dynamic_feedback/README_KO.md"
       ],
       "new_edition_pairs": 1,
-      "editorial_notes": "Registered existing PR #58 limited public bilingual synthetic disclosure and license HOLD; preserved current main source-pinned public evidence index exactly. No claim of externally validated E050 or executed E051."
+      "editorial_notes": "Registered existing PR #58 limited public bilingual synthetic disclosure and license HOLD; preserved current main source-pinned public evidence index exactly. No claim of externally validated E050 or executed E051. Corrected pair type to PI-RESEARCH because these two newly authored public editions have no frozen combined source; strict historical PI-EXP source markers would be false."
     }
   ],
   "path_layout_policy": "Keep the project root entry-only; bilingual full research editions live in existing research/ and their original historical combined documents retain stable root URLs."
