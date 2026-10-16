@@ -60,7 +60,7 @@ def audit(data: dict, en: str, ko: str) -> list[str]:
             errors.append(f"{ident}:unsupported_verification_status")
         for edition, body in [("en", en), ("ko", ko)]:
             row = [line for line in body.splitlines() if line.startswith(f"| {ident} |")]
-            if len(row) != 1 or url not in row[0] or marks.get(edition, "") not in row[0]:
+            if len(row) != 1 or rec.get("atlas_existing_link", url) not in row[0] or marks.get(edition, "") not in row[0]:
                 errors.append(f"{ident}:{edition}_primary_row_changed")
     return errors
 
