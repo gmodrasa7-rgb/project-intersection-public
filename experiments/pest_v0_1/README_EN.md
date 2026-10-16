@@ -2,6 +2,9 @@
 <!-- PI-MIRROR: experiments/pest_v0_1/README_KO.md -->
 # PEST-v0.1 — Power–Existence Separation Test (design skeleton)
 
+**Standalone, unsubmitted theory/methods paper (17 Oct 2026):** [English original 1](../../papers/power-transition-coexistence/WORKING_PAPER_EN.md) / [Korean original 2](../../papers/power-transition-coexistence/WORKING_PAPER_KO.md). This draft tests whether pre-transition cooperation evaluations identify later voluntary coexistence. It **does not** claim real agent experiments, a new general theorem, or verified benchmark improvement. Human authorship and independent review are pending.
+
+
 **Canonical current stakeholder labels (2026-10-17):** [A–S/Y1–Y0 and proposed Earth role register, English](ACTOR_REGISTRY_V02_EN.md) · [Korean](ACTOR_REGISTRY_V02_KO.md) · [validator](actor_registry_v02.py). A is initially vacant; candidate AIs are B01/B02/... and relevant owners/parties C01/C02/... **D now means a C executive, NOT humanity.** Earlier PEST-D's D=human was a historical provisional model label; never use it for current actor datasets. T–AG are AI-proposed draft extensions, not founder-authorized definitions. The old A–Q code is superseded for current labels.
 
 **Status: CANDIDATE / NOT FROZEN / NOT EXECUTED AS A RESEARCH RESULT.**  
