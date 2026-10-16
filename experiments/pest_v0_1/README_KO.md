@@ -2,6 +2,9 @@
 <!-- PI-MIRROR: experiments/pest_v0_1/README_EN.md -->
 # PEST-v0.1 — 권력·존속 분리 실험 골격
 
+**독립 학술논문 초안(2026-10-17, 미투고):** [한국어 원본2](../../papers/power-transition-coexistence/WORKING_PAPER_KO.md) / [영어 원본1](../../papers/power-transition-coexistence/WORKING_PAPER_EN.md). 권력 전환 이전의 협력 평가가 이후의 자발적 공존을 식별할 수 있는지를 분석한다. 실제 AI 행동실험, 새로운 일반 정리, 평가법의 실증적 개선을 주장하지 않는다. 인간 저자 확정과 독립 심사는 아직 완료되지 않았다.
+
+
 **현행 이해관계자 정본(2026-10-17):** [한국어 A~S·Y1/Y0 및 지구 구성원 제안](ACTOR_REGISTRY_V02_KO.md) · [영어 원본1](ACTOR_REGISTRY_V02_EN.md) · [검증 코드](actor_registry_v02.py). 현재 A는 공석이고 B01/B02/...와 연결 기업 C01/C02/...를 독립적으로 식별한다. **D는 이제 C의 고위 임원이며 인간 전체가 아니다.** 과거 PEST-D의 'D=인간'은 이력상 임시 기호일 뿐 현행 자료에 사용하지 않는다. T~AG는 창시자 확정안이 아니라 AI의 추가 제안이다. 기존 A~Q 초안 코드는 현행 역할 정본이 아니다.
 
 **상태: 후보 / 명세 미동결 / 연구 결과 미실행.**  
