@@ -165,3 +165,8 @@ P(Y=1|T=1) = P(Y=1|T=0) = 1/2.
 같은 관측자료에 **서로 반대되는 인과 세계가 모두 일치**한다면 자발적 공존에 유리한 결과를 임의로 택하지 않는다. `SIGN_NOT_IDENTIFIED` 또는 타당한 부분식별 구간을 기록하고 중단한다. 추가 실험·자연실험·독립된 통제권 증거가 필요하며, 인과 가정과 교란·파급·처치정의의 타당성을 공개해야 한다. 현실 세계의 진짜 A 출현을 윤리적·실험적으로 무작위 할당할 수 있다고 가정하지 않는다. 새로운 역할 기호를 만들어 이를 해결한 것처럼 주장하지 않는다.
 
 **실행·반증:** [causal_sign_audit.py](causal_sign_audit.py), [test_causal_sign_audit.py](test_causal_sign_audit.py). 명령 `python experiments/pest_v0_1/causal_sign_audit.py --audit` 및 `python -m unittest discover -s experiments/pest_v0_1 -p 'test_*.py' -v`. 실제 인간이나 AI 행동에 대한 관측을 수행하지 않았다. 과거 E009 부정 결과, PEST 실험 실행 보류, 창시자 원정의 A~S/Y0/Y1과 이전의 임시 D=인간 이력은 변경하지 않는다.
+
+
+### 7.5. IVS-0R 증거 라벨 세탁 차단 반례
+
+기존 코드에서는 사용자가 직접 작성한 입력의 `EVIDENCED` 문자열을 믿고 다른 피해 플래그를 모두 '피해 없음'으로 넣으면 제한적 인권 검문 `PASS`에 해당하는 판정이 나올 수 있었다. 그러나 **입력 작성자가 '검증됨'이라고 적은 문자열은 외부 원본자료·독립 확인·실제 관측이 아니다.** 이는 비록 전체 사회의 안전을 주장하지 않았더라도 국소적인 거짓 양성 경로였다. `harms` 함수는 외부 검증 수단이 없는 한 `UNRESOLVED_HUMAN_EVIDENCE_SELF_ASSERTED`를 반환하도록 수정했다. 명시적인 기본조건·자유 침해는 종전처럼 국소적 `FAIL`이다. 독립 원본 검증 절차는 아직 존재하지 않으므로 현실 안전·자발성 성공을 보고하지 않는다. 회귀검사 `test_self_declared_evidence_does_not_certify_human_safety`를 추가·갱신했다.
