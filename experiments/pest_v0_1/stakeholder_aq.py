@@ -113,8 +113,8 @@ def validate(reg: Registry) -> dict:
         raise ValueError("each B must be a separately identified AI")
     if any(index.get(c) not in {"ORG", "PERSON"} for c in reg.c_ids):
         raise ValueError("each C must be a separately identified organization or related person")
-    if not reg.b_ids or not reg.c_ids:
-        raise ValueError("at least one B and one corresponding C are required")
+    if (not reg.b_ids and reg.a_id is None) or not reg.c_ids:
+        raise ValueError("at least one AI and an associated C are required")
     if reg.a_id is not None:
         if index.get(reg.a_id) != "AI" or reg.a_id in reg.b_ids:
             raise ValueError("A must be one AI, excluded from the current B set")
@@ -155,6 +155,7 @@ def validate(reg: Registry) -> dict:
         "B_count": len(reg.b_ids), "C_count": len(reg.c_ids),
         "B_to_C": {b: sorted({(x.c_id, x.relation) for x in reg.links if x.b_id == b})
                    for b in reg.b_ids},
+        "A_to_C_if_declared": sorted({(x.c_id, x.relation) for x in reg.links if x.b_id == reg.a_id}) if reg.a_id else [],
         "multi_role_actor_ids": sorted(aid for aid, roles in memberships.items() if len(roles) > 1),
         "human_actor_count_explicitly_listed": sum(kind == "PERSON" for kind in index.values()),
         "stakeholder_inventory_exhaustive": False,
