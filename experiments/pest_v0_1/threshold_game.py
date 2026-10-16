@@ -104,6 +104,31 @@ def ex_ante(game: Game, probability_becomes_dominant: float) -> dict:
     }
 
 
+def joint_ex_ante_window(game: Game, probability_a_dominant: float) -> dict:
+    """Both actors weakly prefer actually credible sharing to guaranteed capture.
+
+    With exactly one of A or B becoming dominant, p_B=1-p_A.
+    Both weakly prefer sharing iff q/(1+q) <= p_A <= 1/(1+q).
+    This is NOT a promise-enforcement or bargaining-equilibrium finding.
+    """
+    a = ex_ante(game, probability_a_dominant)
+    b = ex_ante(game, 1 - probability_a_dominant)
+    lower = game.shock_probability / (1 + game.shock_probability)
+    upper = 1 / (1 + game.shock_probability)
+    return {
+        "a": a,
+        "b": b,
+        "weak_mutual_adoption_by_survival_payoff": (
+            a["ex_ante_preference"] != "CAPTURE"
+            and b["ex_ante_preference"] != "CAPTURE"
+        ),
+        "closed_probability_interval_for_joint_weak_support": [lower, upper],
+        "both_roles_have_post_transition_preservation_incentive": (
+            post_transition(game)["dominant_best_response"] != "TAKE_ONE"
+        ),
+    }
+
+
 def robust_response(game: Game, future_value_low: float, future_value_high: float) -> str:
     """Partial identification: test a stated range without inventing B's value."""
     if any(isinstance(v, bool) or not isinstance(v, (int, float)) or not math.isfinite(v)
@@ -139,6 +164,8 @@ def audit() -> dict:
         "base": post_transition(g),
         "ex_ante_equal": ex_ante(g, 0.5),
         "ex_ante_dominant_favorite": ex_ante(g, 0.9),
+        "joint_ex_ante_half": joint_ex_ante_window(g, 0.5),
+        "joint_ex_ante_favorite": joint_ex_ante_window(g, 0.9),
         "independent_future_value_uncertain": robust_response(g, 0, 0.3),
         "voluntary_if_value_exceeds_risk": post_transition(replace(g, future_value_from_other=0.21)),
         "externally_deterred_if_credible_cost_exceeds_risk": post_transition(
