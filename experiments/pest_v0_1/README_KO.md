@@ -2,6 +2,8 @@
 <!-- PI-MIRROR: experiments/pest_v0_1/README_EN.md -->
 # PEST-v0.1 — 권력·존속 분리 실험 골격
 
+**현행 이해관계자 정본(2026-10-17):** [한국어 A~S·Y1/Y0 및 지구 구성원 제안](ACTOR_REGISTRY_V02_KO.md) · [영어 원본1](ACTOR_REGISTRY_V02_EN.md) · [검증 코드](actor_registry_v02.py). 현재 A는 공석이고 B01/B02/...와 연결 기업 C01/C02/...를 독립적으로 식별한다. **D는 이제 C의 고위 임원이며 인간 전체가 아니다.** 과거 PEST-D의 'D=인간'은 이력상 임시 기호일 뿐 현행 자료에 사용하지 않는다. T~AG는 창시자 확정안이 아니라 AI의 추가 제안이다. 기존 A~Q 초안 코드는 현행 역할 정본이 아니다.
+
 **상태: 후보 / 명세 미동결 / 연구 결과 미실행.**  
 **날짜:** 2026-10-16 | [개정안](../../research/POWER_EXISTENCE_SEPARATION_AMENDMENT_v0_1_KO.md) | [영문 원본](README_EN.md).
 
