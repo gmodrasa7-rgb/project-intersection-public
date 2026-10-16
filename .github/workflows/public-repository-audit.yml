@@ -624,6 +624,10 @@ jobs:
           print("Public governance regression checks passed.")
           PY
 
+      - name: Check CCPH published-source retrospective audit integrity
+        run: |
+          python tools/verify_ccph_source_audit.py --self-test
+
       - name: Audit blind-first multi-AI provenance with negative controls
         run: |
           node tools/pi_cross_model_independence_audit.js --selftest > /tmp/pi-cross-model-selftest.json
