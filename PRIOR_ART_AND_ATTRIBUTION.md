@@ -1,5 +1,42 @@
 # Prior Art and Attribution / 선행연구·귀속
 
+
+## CCPH internal upstream impact accounting — Original 1 English (2026-10-15)
+
+**Founder's research correction.** Historical records of prior research, its originators, authors, institutions, negative results and downstream history serve **two independent purposes**: respect and preserve their original contributions/rights, AND empirically investigate how those contributions have helped, harmed, changed or enabled Project Intersection. This is an internal case stream of the wider CCPH historical–present–future-traceable database. The older Continuance–Contribution Pathways Hypothesis is a subset, not the definition of the database.
+
+**Bidirectional path.** Previous researcher/work → Project Intersection documented exposure/use → precise question, theory, protocol, code or experiment changed → verified or unverified downstream result; and conversely, current result → previous artifact/version/diff → prior source and original contributor(s) where identifiable. Record failed adoption, negative results, multiple contributors and competing explanations. Citation alone does not establish actual use, causality, ownership or measurable gain.
+
+**Required evidence-linked fields for materially used prior work, via existing registries rather than copies:**
+1. Original author(s), work/DOI/URL/date/version, upstream sources and rights status; distinguish first originator from cited author.
+2. Exact Project target artifact, version or commit, use date, AI/human contribution split.
+3. Influence role: source idea, conceptual background, method reused, empirical evidence, warning, objection/counterexample, independently discovered parallel method or unverified inspiration.
+4. Documented before/after difference in decisions, anomalies detected, theories, test coverage, error rate, cost, time or artifacts; if no valid quantitative metric exists, describe the observed change without invented numbers.
+5. Grade: CITED_ONLY / DOCUMENTED_USE / OBSERVED_CHANGE / COMPARATIVE_EFFECT / CAUSAL_EFFECT_SUPPORTED / DISPUTED / UNKNOWN. A before/after difference alone does not identify the causal effect of a cited paper.
+6. Forward descendants, costs/benefits for each actor, competing precursor sources, negative outcomes and correction/review history, without assigning all descendant value to every ancestor.
+
+**Existing evidence pointer.** The E007 timing/game-form prior-art table already present below connects extensive/sequential-game research (including von Neumann–Morgenstern and Selten) to an identified project-specific timing experiment and later game-form correction. This supports a documented methodological relationship; it does **not** quantify the upstream authors' marginal effect on E007. Preserve the human founder's question and correction, upstream scholars' original research, later AI implementation, and any independent verification separately.
+
+**Unexecuted discrimination test.** Freeze the original PI artifact, same tasks and evaluator, compare adopted method with plausible controls/alternatives under matched costs and conditions, separately report measured gains, losses and the expense of reconstruction. Nonuse and failed adoption are negative controls; never claim percentage improvement or monetary value from citations alone. No additional experiment is claimed to have run here.
+
+## CCPH 내부 선행기여 영향 추적 — 원본2 한국어 (2026-10-15)
+
+**창시자의 문제 정의:** 우리 연구에서 과거 연구자·발견자·원저자·기관·실패·반례와 역사 기록을 보존하는 이유는 **출처와 권리 존중**뿐 아니라 **그들의 기여가 Project Intersection의 어떤 문제를 해결하고 새로운 지식·연구·실험을 얼마나 발전시켰는지 확인하기 위해서**다. 이는 과거 재발굴·현재 관측·미래 역추적용 CCPH 데이터베이스 내부의 실증 사례다. 기존 존속–기여 경로 가설은 CCPH가 포괄하는 한 연구 축이다.
+
+**두 방향의 계보:** 선행연구→우리 연구 적용→변경 전후→후속 결과를 추적하고, 현재 결과→과거 버전과 커밋→선행 자료→확인 가능한 원저자로 거슬러 올라간다. 실패한 응용과 미확정 관계도 보존한다. 출처 표시와 실제 활용, 관측된 변화, 인과적으로 입증된 개선은 다르다.
+
+**항목별 필수 기록:** (1) 원저자·자료·시점·버전·DOI·권리, (2) 실제 영향을 받은 프로젝트 파일·실험·커밋, (3) 재사용한 이론·방법·데이터·경고·반례·영감과 인간/AI 역할, (4) 검증 가능한 전후 정확도·오류 탐지·새 가설·실험 범위·시간·비용의 변화, (5) 단순 인용 / 실제 활용 / 변경 관측 / 대조 비교 / 인과효과 식별 / 분쟁 / 미확인, (6) 이후 기여·부작용·다중 원인·반례·수정 이력.
+
+**기존 확인 가능한 예시:** 아래 E007 게임이론 선행연구 표는 순차·확장형 게임 연구자와 Project Intersection의 타이밍 실험 및 게임형식 교정을 연결한다. 확인되는 것은 **문서화된 방법론적 연결**이다. 특정 원저자가 E007을 몇 % 향상시켰다는 효과크기는 관측되지 않았다. 창시자의 독립 연구 질문·교정과 외부 선행연구, AI 구현·정리, 독립검증을 분리한다.
+
+**남은 검증:** 같은 문제·예산·평가기준 아래 기여 연구의 적용 여부를 비교하고 반대사례·공동 원인·경로누락·관측 편향을 검사해야 순증분 효과를 판단할 수 있다. 기록자가 특정 조직이나 AI의 단독 성과로 흡수하지 못하도록 원본·충돌·정정·미확인 자료를 남긴다. 측정되지 않은 기여를 0으로 단정하지 않는다.
+
+
+**2026-10-15 cross-model debate and correction prior-art crosswalk / 다중 AI 토론·교정 선행연구 교차감사:** [English Original 1 / 한국어 원본2 — 27 source-linked references, 10 case families, six discriminating tests](research/CROSS_MODEL_DEBATE_PRIOR_ART_2026-10-15_EN_KO.md). This is a targeted literature audit, **not new GPT-6 execution, independent empirical validation or a novelty claim**. / 27개 원출처·10개 사례·6개 분별실험, 신규 실증·독립재현 아님.
+
+
+**2026-10-13 rights & originator cross-reference / 원안자·저작권 연결:** [25 documented prior sources, explicit PI applications, unknown-rights safeguards / 선행자료 25건 원저자·응용·권리 미확인 표시](PRIOR_ART_RIGHTS_AND_DERIVATION_EN_KO.md). Source authors are not automatically first inventors or copyright holders. / 논문 저자를 곧바로 최초 발안자나 저작권자라고 단정하지 않는다. 본 자료가 공개됐다는 사실만으로 무제한 복제권이 생기지 않는다.
+
 Date: 2026-10-04  
 Status: **public prior-art boundary**
 
@@ -27,6 +64,14 @@ Project Intersection은 내부 용어로 다시 이름 붙였다는 이유만으
 | Knowledge hiding | Catherine E. Connelly; David Zweig; Jane Webster; John P. Trougakos (2012) | Journal of Organizational Behavior; DOI 10.1002/job.737 | Intentional concealment must be distinguished from non-sharing, transfer failure, and ordinary loss. |
 | Long-term data attrition | Timothy H. Vines et al. (2014) | PLOS Biology; DOI 10.1371/journal.pbio.1001745 | Record loss can correlate strongly with age without establishing strategic capture. |
 | Provenance and records controls | W3C PROV Working Group (2013); ISO 15489-1:2016 | W3C Recommendations; ISO records-management standard | Provenance, derivation, versioning, access, authenticity, integrity, reliability, and usability are established engineering/records-management concerns. |
+
+## 2026-10-14 E007 timing/game-form prior-art boundary
+
+| Established concept | Credited prior authors/reviewers | Checked source | What the Project Intersection implementation adds — and does not invent |
+|---|---|---|---|
+| Sequential vs simultaneous actions, information sets, equilibrium/backward-induction and order-of-play effects | John von Neumann & Oskar Morgenstern (1944, modern game-theory foundations); Reinhard Selten (1975, extensive-game equilibrium refinements); Don Ross (2023 revised overview, secondary source); MIT Sloan faculty/course material (2004) | [Don Ross, *Game Theory*, Stanford Encyclopedia of Philosophy, 2023 edition, §§2.3–2.6](https://plato.stanford.edu/archives/fall2023/entries/game-theory/index.html); [MIT OpenCourseWare, *Game Theory for Managers*, lectures 3–6](https://ocw.mit.edu/courses/15-040-game-theory-for-managers-spring-2004/pages/lecture-notes/) | Action timing, first/last-moving effects and distinct strategic game forms **are prior art**. E007 is a specific founder-directed research question and a narrow auditable synthetic implementation/counterexample, not the invention of game theory, timing sensitivity, backward induction or simultaneous-action analysis. The 2026-10-14 A-before-B code-order defect, and matched simultaneous control, are project-specific implementation findings, *not* independent replication or empirical cooperation evidence. |
+
+Source hierarchy / 선행연구 계보: the SEP entry is **Don Ross's later explanatory review**, not a claim that Ross invented extensive-form games; the original mathematical/game-theoretic traditions predate E007. The exact attribution to every historical founder of each timing concept remains researchable and must not be inferred from a secondary citation alone. / 역사적 발명 순위까지 단정하지 않으며, 인간 연구자의 E007 문제설정·반증노동과 AI 보조 코드 구현을 구분한다.
 
 ## Current correction
 

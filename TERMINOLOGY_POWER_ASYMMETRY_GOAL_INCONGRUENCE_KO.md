@@ -17,6 +17,8 @@
 핵심:
 `POWER != GOAL != INFORMATION != INCUMBENCY != BEHAVIOR`
 
+**대외 표기 원칙:** PA·GI·IA·INC·BHV는 저장된 연구변수와 과거 논문 연결을 위해 보존하지만 신규 독자용 서술에서는 **권력 비대칭·목표 불일치·정보 비대칭·기존 지위·관측 행동**을 풀어쓴다. 단축어끼리 조합해 특정 인물·집단을 가해자로 지정하지 않는다. 이 정책은 용어 명료화이며 권리조사를 대신하지 않는다.
+
 ## 2. PA — Power Asymmetry
 
 정의: 두 행위자 또는 행위자 집합 사이에서 의사결정, 자원, 정보, 평가, 규칙설정, 대체수단, 협상력 등에 대한 실제 영향능력이 비대칭인 상태.
@@ -85,11 +87,11 @@ PA/GI/INC만으로 BHV를 자동 판정하지 않는다.
 
 ## 7. Project-specific variables
 
-`STI = Short-Term Incentive`와 `ERP = Evaluation-Reprocessing Power`는 기존 문헌 개념을 Project가 특정 검증목적에 맞게 운영화한 변수다.
+**단기 유인(Short-Horizon Incentives)**과 **평가 재처리권(Evaluation-Reprocessing Authority)**은 기존 유인·평가 개념을 연구에 맞춰 분리한 변수다. 과거 기술 문서의 `STI`·`ERP` 코드는 데이터 복원용 별칭으로만 유지한다. `STI`는 의학의 성매개감염, `ERP`는 전사적 자원관리로 오인될 수 있으므로 신규 대외 사용을 중단한다.
 
 따라서 분석은 다음처럼 쓴다.
 
-`PA + GI + IA + INC + STI + ERP + verification/exit/recovery conditions -> behavior/convergence risk may change`
+`power_asymmetry + goal_incongruence + information_asymmetry + incumbency + short_horizon_incentives + evaluation_reprocessing_authority + verification/exit/recovery conditions -> behavior/convergence risk may change`
 
 그러나:
 `PA alone -> no behavioral conclusion`

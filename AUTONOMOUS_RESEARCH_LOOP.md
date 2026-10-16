@@ -47,6 +47,28 @@ This protocol exists so Project Intersection can be resumed by a future human or
 
 같은 방향의 synthetic/toy 검사가 2회 연속이면, 다음 회차는 원칙적으로 독립 외부증거·현실/역사 사례·독립 비판으로 이동한다.
 
+
+### 3.1 CCPH real-world observation integrated with each research cycle — Original 1 English (2026-10-15)
+
+**CCPH is a historical–present–future-traceable case database, not a synthetic benchmark.** When ordinary Project Intersection research yields a materially verifiable real event (merged correction, independently checked discovery, external response, funding/support result, negative result, real contribution, repair or discontinuation), record it in the existing [observed project events ledger](knowledge/ccph-observed-project-events-v0_1.json). This uses research as its own longitudinal field setting, **not** an invented score. It establishes an operational rule for authorized future work, **not** continuous background collection.
+
+A case links actual source and event date, recorder/rediscovery dates, source contributor and beneficiary roles, material revision, observed before/after, rights and resource costs where legitimately evidenced, review status and uncertain downstream effects. Maintain distinct epistemic discovery, actual outcome and affected actor continuance. A merged PR is a **verified artifact change** but is not, on its own, evidence of causal scientific improvement or societal benefit. Treat unknown future effects as UNKNOWN, not zero and not guaranteed gains. Preserve successful, neutral, negative and contradictory cases.
+
+**Minimal transaction:** Reuse existing provenance; deduplicate by stable event ID; append a real event or versioned correction; verify the public source links, optional upstream-event references, JSON shape and privacy limits; commit and reread. Stronger claims require independent follow-up or valid comparisons, not number of labels, citations or files. Do not force the founder to repeat prior explanation or give private source dialogues to publish a case. Prior art, original copyright and monetary liability remain separate.
+
+**Already observed:** Public merged PRs [#167](https://github.com/gmodrasa7-rgb/project-intersection-public/pull/167), [#168](https://github.com/gmodrasa7-rgb/project-intersection-public/pull/168), [#169](https://github.com/gmodrasa7-rgb/project-intersection-public/pull/169) ground three real research-process entries; no actual external causal benefit has been measured. Future cases can include real beneficiaries and wider social influence, only with lawful evidence and applicable consent.
+
+### 3.1 CCPH를 실제 연구 과정에 결합 — 원본2 한국어 (2026-10-15)
+
+**CCPH는 벤치마크가 아니라 과거 재발굴·현재 기록·미래 역추적형 현실 사례 데이터베이스다.** Project Intersection에서 연구하다 실제 증거를 확인할 수 있는 사건이 발생할 때마다 [기존 실제 관측 원장](knowledge/ccph-observed-project-events-v0_1.json)에 축적한다. 새로운 문제 발견, 현실 관측, 연구 변경·수정, 후속 사회적 영향이 각각 기록과 연구 발전의 소재가 된다. 별도 가상 벤치마크를 만들거나 인위적 점수를 생산할 필요가 없다. 단, 이는 **앞으로 권한을 가진 실행자가 적용할 운영 규칙**이며 무인 자동수집을 시작했다는 주장이 아니다.
+
+**연구의 진행과 기록의 결합:** 실제 문제 발견 → 증거·선행연구·원기여자 확인 → 연구와 실행 → 관측 가능한 변경·효과·비용 구분 → CCPH 사건 라벨과 출처 기록 → 이후 새 증거가 나오면 기존 사건과 연결하고 판단을 버전으로 수정한다. 긍정·중립·부정·미확인·실패와 우연한 동시발견을 모두 보존한다.
+
+**관측과 성과의 구분:** 커밋·변경 파일 수·출처 인용은 실제 연구 활동의 **관측 가능한 흔적**이다. 그러나 연구가 몇 % 발전했다거나 외부 사회에 편익을 제공했다는 결론이 아니다. 그 판단에는 독립된 현실 결과, 가능하면 대조·시점·반례가 필요하다. 별도로 개체별 혜택·부담·존속·이탈·복구권을 평가한다. 알 수 없는 것은 UNKNOWN으로 둔다.
+
+**최소 검증 절차:** 기존 기록 재사용 → 중복 사건 ID 검사 → 원출처·사건·기록 시각 구분 → 기여·영향·비용 라벨 추가 → JSON 및 선행 사건 링크 검사 → 동의·민감정보 감사 → 커밋·재조회. 기여자에게 재설명·추가 검증 노동을 전가하지 않는다. 사적 대화나 개인 건강·금융 자료를 무단 공개하지 않는다. 최초 판단·상충 증거·교정 이력은 보존한다.
+
+
 ## 4. 선행조사 게이트
 
 새 용어·claim·실험을 만들기 전에 기존 이론·논문·실패사례·자연실험·측정변수·인접 분야 동형구조를 먼저 확인한다.
@@ -259,6 +281,31 @@ material mutation 직전 최신 target SHA/ref를 다시 읽는다.
 `AUTH_PERMISSION / CONFLICT_STALE_SHA / PATH_EXISTS / RATE_LIMIT / TOOL_NETWORK / INVALID_CONTENT / TEST_FAILURE / UNKNOWN`
 
 복구 불가 시 기존 정본을 보존하고 다음 단일 checkpoint를 남긴다.
+
+### 9.1 Automated-write refusal and evidence-state contract — Original 1 English (2026-10-16)
+
+**Scope and origin.** October 14–16 scheduled research feedback reported GitHub write attempts rejected with `This tool call was blocked by OpenAI's safety checks.` This is a *reported host refusal*, not evidence that GitHub received or rejected an API request. At this revision, the repository's Section 9 listed API/network failures without a host-safety category. An enabled schedule, a run timestamp, an agent's intention, and even a newly created branch do not prove a substantive repository write.
+
+**Fail-closed classification.** Use `HOST_SAFETY_REFUSAL` separately from `AUTH_PERMISSION`, `CONFLICT_STALE_SHA`, `PATH_EXISTS`, `RATE_LIMIT`, `TOOL_NETWORK`, `INVALID_CONTENT` and `TEST_FAILURE`. Upon an explicit host safety refusal, stop the denied mutation. **Do not** relay the refused payload through another API, identity, GitHub Action, client or tool; do not split or reword it to evade the control. The refusal's underlying policy rationale is UNKNOWN without host evidence. Only a read-only check of the intended branch, file SHA/content, PR or main is appropriate to determine whether anything actually persisted. A harmless branch creation alone is not the proposed material delta.
+
+**Receipt states.** Record the intended path and pre-write blob SHA when known, action class, error verbatim if available, read-only remote observation, and status from `PLANNED / REFUSED_NOT_SAVED / WRITE_UNCONFIRMED / READBACK_CONFIRMED / TESTED_VERIFIED`. Treat `REFUSED_NOT_SAVED` as the default after an explicit refusal unless remote evidence independently proves an earlier write; do not label a write as successful based on a task summary, CI badge, scheduling status, or commit unrelated to the intended change. A scientific-result claim also requires independent scientific evidence: `TESTED_VERIFIED` here certifies only the stated repository transaction and scoped regressions.
+
+**Ownership and checkpoint.** The hourly critical-research task gathers criticism and independent sources **read-only**; the hourly public-repository task alone owns proposed GitHub mutations. A separately initiated review must read existing PRs and exact file contents before proposing a change, avoiding simultaneous writes, duplicate experiments, and counting same-lineage AI feedback as independent evidence. Keep an unsaved proposal within an authorized private receipt if feasible; do not publish it via a new route after host refusal. Preserve one next evidence-bearing checkpoint without requiring the human originator to reconstruct or repair the work.
+
+**Minimal regression cases (specification, not executed by this paragraph):** explicit host refusal → `REFUSED_NOT_SAVED`; GitHub write acknowledgment but mismatched remote bytes → `WRITE_UNCONFIRMED`; branch exists but intended file unmodified → no material write; draft-PR CI green without a main merge → no main-state claim; matching remote content and relevant checks → `TESTED_VERIFIED` for repository integrity **only**. A future executor should attach actual receipts for these cases; the existence of this rule is not proof that a runtime enforces it.
+
+### 9.1 예약작업 쓰기 거부·증거상태 계약 — 원본2 한국어 (2026-10-16)
+
+**범위와 출처.** 10월 14~16일 예약 연구 피드백에는 GitHub 쓰기 시도가 `This tool call was blocked by OpenAI's safety checks.`로 거부됐다는 보고가 있다. 이는 **호스트 안전검사 거부 보고**이며 GitHub가 API 요청을 실제로 받거나 거부했다는 증거는 아니다. 이 개정 전 9절에는 API·네트워크 실패만 분류돼 있고 호스트 안전검사 항목이 없었다. 예약 활성화, 실행 시각, 실행자의 의도, 새 브랜치 생성만으로 실질적 저장을 입증할 수 없다.
+
+**실패 시 차단 분류.** `HOST_SAFETY_REFUSAL`을 `AUTH_PERMISSION`, `CONFLICT_STALE_SHA`, `PATH_EXISTS`, `RATE_LIMIT`, `TOOL_NETWORK`, `INVALID_CONTENT`, `TEST_FAILURE`와 구분한다. 명시적인 호스트 안전 거부를 받으면 해당 변경을 중지한다. 거부된 내용을 다른 API·계정·GitHub Actions·클라이언트·도구로 다시 보내거나 분할·문구 변경으로 통제를 회피하지 않는다. 거부의 구체적 정책 원인은 호스트 근거가 없으면 UNKNOWN이다. 지정 브랜치·파일 SHA와 본문·PR·main을 **읽기 전용**으로 확인해 저장 여부를 판별한다. 브랜치만 생성됐으면 material delta를 저장한 것이 아니다.
+
+**실행 영수증 상태.** 가능한 경우 대상 경로와 쓰기 전 blob SHA, 작업 종류, 오류 원문, 원격 읽기 관측, 상태 `PLANNED / REFUSED_NOT_SAVED / WRITE_UNCONFIRMED / READBACK_CONFIRMED / TESTED_VERIFIED`를 남긴다. 명시적 거부 직후에는 이전 저장이 원격 증거로 별도 확인되지 않는 한 `REFUSED_NOT_SAVED`다. 예약 실행 보고·CI 배지·해당 변경과 무관한 커밋으로 저장 성공을 선언하지 않는다. `TESTED_VERIFIED`도 명시된 저장 트랜잭션과 범위 내 회귀검사만 인증할 뿐, 독립적인 과학적 타당성을 뜻하지 않는다.
+
+**담당 분리와 체크포인트.** 매시간 연구·비판 예약작업은 외부증거와 반례를 **읽기만** 하고, 공개자료실 예약작업만 GitHub 변경 담당이다. 별도 검토는 기존 PR 및 실제 파일을 재확인하고 동시 수정·중복 실험·동일 AI 계보 피드백의 독립 증거 오인을 방지한다. 미저장 제안은 허용된 비공개 작업 기록에만 남길 수 있으며 안전거부 이후 다른 경로로 공개하지 않는다. 인간 원기여자에게 설명·검수·복구를 다시 떠넘기지 않고 증거가 있는 다음 단일 체크포인트를 남긴다.
+
+**최소 회귀 사례(이 문단 자체는 실행 결과가 아닌 규격):** 호스트 안전 거부 → `REFUSED_NOT_SAVED`; GitHub 수신 확인 후 원격 본문 불일치 → `WRITE_UNCONFIRMED`; 브랜치만 있고 파일 미변경 → 실질 저장 없음; 초안 PR의 CI만 성공하고 main 미병합 → main 변경 주장 금지; 본문 대조와 관련 검사가 모두 통과 → 해당 저장 무결성에 한하여 `TESTED_VERIFIED`. 후속 실행자는 실제 검증 영수증을 남겨야 하며 규칙 문구 자체가 런타임 강제를 입증하지 않는다.
+
 
 ## 10. 상태파일
 

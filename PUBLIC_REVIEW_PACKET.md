@@ -9,20 +9,19 @@ This file is the shortest reviewer path through Project Intersection. It does no
 
 ---
 
-## 1. Ten-minute review path / 10분 검토 경로
+## 1. Five-question review path / 다섯 질문 독립검토 경로
 
-1. [README](README.md) — project purpose and hard limits.
-2. [Public Evidence Index](PUBLIC_EVIDENCE_INDEX.md) — what is publicly checkable now.
-3. [Knowledge Graph Explorer](knowledge/explorer.html) — structured entity/relation view; linked source artifacts remain authoritative.
-4. [E007 timing result](E007_TIMING_RESULT.md) and [reproduction package](experiments/e007/README.md) — narrow executable synthetic result.
-5. [E008 preregistration](experiments/e008/README.md) — discriminating benchmark specification plus pre-execution mutual-acceptability v1.1 and volitional-agency/living-condition v1.2 amendments; no result yet.
-6. [E009 negative result](experiments/e009/RESULT.md) and [reproduction verifier](experiments/e009/verify_result.py) — the full Project-v3 residual did not survive the preregistered synthetic comparison; not independent validation.
-7. [Research Status & Reassessment Policy](RESEARCH_STATUS_POLICY.md) — evidence classes, reassessment, and non-laundering rules.
-8. [Prior Art & Attribution](PRIOR_ART_AND_ATTRIBUTION.md) and [Core/Gaps Crosswalk](CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md) — what is prior art and what remains unresolved.
-9. [Failure Regression Index](FAILURE_REGRESSION_INDEX.md) — known process/research failures and required regression barriers.
-10. [Attribution & Contribution Boundary](ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md) — founder, AI-assistance, and external-source attribution rules.
-11. [Autonomous Research Continuity](AUTONOMOUS_RESEARCH_LOOP.md) and [state](AUTONOMOUS_RESEARCH_STATE.json) — public recovery path without founder reconstruction.
-12. [Funding due diligence](funding/DUE_DILIGENCE.md) — what support buys and what it does not buy.
+**Use this path to navigate, not to infer that independent review has occurred.** It is a short route to original artifacts, not a replacement for the [evidence ledger](PUBLIC_EVIDENCE_INDEX.md) or the complete [research map](RESEARCH_TOC.md). The five questions are an information-architecture proposal, **not a measured reduction in user search time**. / **이 경로의 존재는 독립 검토 완료를 뜻하지 않는다.** 원자료로 이동하는 안내이며 실제 이해도·탐색시간 단축은 외부 이용자 시험으로 검증해야 한다.
+
+| ID | Original 1 — English: reviewer question | 원본2 — 한국어: 검토 질문 | Shortest primary route / 최단 경로 | Required boundary / 판정 주의 |
+| --- | --- | --- | --- | --- |
+| **NAV-Q1** | What is the founding question, and what is *not* established? | 최상위 연구 질문과 미입증 영역은 무엇인가? | [Founding purpose](README.md) → [overview](RESEARCH_OVERVIEW.md) | Research aim ≠ universally confirmed cooperation / 목적 ≠ 공존 보편법칙 |
+| **NAV-Q2** | Which findings are reproducible, merely proposed, negative, or unresolved? | 재실행 가능·미실행·부정결과·미확인은 어떻게 나뉘는가? | [Evidence ledger](PUBLIC_EVIDENCE_INDEX.md) → [status policy](RESEARCH_STATUS_POLICY.md) | E007 synthetic, E008 HOLD, E009 negative, E010 exploratory are **different** / 결과 지위 불일치 |
+| **NAV-Q3** | Where does the project's strongest simplified claim fail? | 프로젝트 주장에 불리한 반례와 실패는 어디에 있는가? | [E009 negative result](experiments/e009/RESULT.md) → [failure lineage](FAILURE_REGRESSION_INDEX.md) | Negative result is bounded; neither universal failure nor proof of E010 / 부정결과의 범위를 제한 |
+| **NAV-Q4** | Can I run the published code at a fixed commit without hidden inputs? | 고정 커밋에서 비공개 입력 없이 계산을 재실행할 수 있는가? | [E007 executable guide](experiments/e007/README.md) → [commands below](#1a-reproduce-from-a-fresh-checkout--처음-받은-자료-재현하기) | Project rerun ≠ independent scientific replication / 자체 재실행 ≠ 독립 검증 |
+| **NAV-Q5** | Who originated and contributed what, under which rights, and how are corrections retained? | 원안·선행연구·AI 보조·권리·수정·기여는 어떻게 분리되는가? | [Attribution boundary](ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md) → [prior-art rights](PRIOR_ART_RIGHTS_AND_DERIVATION_EN_KO.md) → [contributing](CONTRIBUTING.md) | Credit ≠ legal license or verified monetary compensation / 기여 인지 ≠ 이용허락·금전정산 확정 |
+
+**Optional specialty paths / 전문 목적별 추가 경로:** [knowledge graph and its incomplete coverage](knowledge/README.md) · [E008 protocol with no main result](experiments/e008/README.md) · [E010 posthoc toy model](experiments/e010/README_KO.md) · [public continuity protocol](continuity/GITHUB_LOCAL_HANDOFF_PROTOCOL.md) · [funding due diligence](funding/DUE_DILIGENCE.md) · [full source/case map](RESEARCH_TOC.md). Every route is optional; disagreement or funding does not change scientific status. / 관련 분야를 선택적으로 탐색하며 후원·비판 여부에 따라 증거 판정을 바꾸지 않는다.
 
 ---
 
@@ -40,6 +39,7 @@ python -m pytest -q -p no:cacheprovider experiments/e007
 python experiments/e007/timing_probe.py --summary-only --check
 python experiments/e008/validate.py
 python experiments/e009/verify_result.py
+python experiments/picb_v1/benchmark.py --verify
 ```
 
 | Check / 검사 | Expected boundary / 기대 결과와 한계 |
@@ -48,10 +48,25 @@ python experiments/e009/verify_result.py
 | E007 timing / 시점 | 72 total, 36 history-or-classification-sensitive, 17 classification-sensitive / 합성조건 수이며 현실 확률 아님 |
 | E008 | 16 cases, 8 reversal pairs; specification audit only, no experiment result / 명세검사만 수행·실험결과 없음 |
 | E009 | Frozen benchmark reproduces committed negative result and hashes / 고정 코드·저장 결과·해시 일치; Project-v3 잔차 미통과 유지 |
+| PICB v1 | 64 first-principles toy opportunities; full continuity abstains 32/64, protected choices violate no modeled floors/exits/irreversible cap; no independent replication or consent inference / 합성 64건 중 32건 보류, 선택된 결과의 조건 위반 0건. 독립 검증 아님 |
 
 A mismatch is a finding to report, not a reason to retune the frozen benchmark. Dependency installation requires internet access; subsequent checks use local artifacts. A project-authored rerun is not independent replication.
 
 불일치는 보고할 결과다. 숫자를 맞추려고 고정 벤치마크를 수정하지 않는다. 의존성 설치에는 인터넷이 필요하고 이후 검사는 로컬 자료를 사용한다. 프로젝트 측 재실행을 독립 복제로 세지 않는다.
+
+---
+
+## 1b. Focused case trails / 사례별 심층 경로
+
+These are **additional, bounded case traces**. They are deliberately placed after the short review route so the start page does not disguise partial/synthetic evidence as a general conclusion. / 다음은 구체 사례와 누락된 성과변수의 상세 기록이다. 일반 검토 경로의 필수 단계가 아니며 미관측·합성 결과를 일반 결론으로 승격하지 않는다.
+
+**PICB v1 first-principles benchmark / 초심 재구축:** [Equal-full English Original 1 and Korean Original 2](experiments/picb_v1/README.md) · [first machine result / 최초 합성 실행 원자료](experiments/picb_v1/RESULT.json) · [code](experiments/picb_v1/benchmark.py) · [pre-result PR #128](https://github.com/gmodrasa7-rgb/project-intersection-public/pull/128) · [first scored GitHub CI](https://github.com/gmodrasa7-rgb/project-intersection-public/actions/runs/38522691981). The first preregistered project-lineage synthetic run includes 64 abstract decisions, six policies, 32 matched relabel pairs, and an explicit 32/64 abstention boundary for the continuity rule. Effective-exit addition to the participation-only rule made no further difference in this suite; this is a negative incremental observation, not evidence that exit is unimportant. / 64개 합성 조건, 여섯 정책, 32개 명칭반전 쌍을 검사했다. 존속 제약의 32건 선택 보류와 이탈권 변수의 추가 식별효과 없음도 숨기지 않는다. 실제 동의·장기균형·현실 생존·독립 검증은 미실행이며 E007/E008/E009는 변경되지 않았다.
+
+**P0 founder-corrected missing positive outcome / 인간 창시자가 복원한 성과변수:** PICB v1 currently measures **NO actual contribution artifacts made by preserved agents or newly entering agents, and NO contributions made possible by their downstream knowledge or successors**. The founder identified this substantive omission after the literature review; it was already addressed in earlier [CLUP dynamic discovery-production research](research/CONTRIBUTOR_LOSS_UNKNOWN_PARADOX_v0_1_EN_KO.md) but omitted during benchmark translation. The full [PICB EN1/KO2 correction](experiments/picb_v1/README.md) now predefines prospective lineage-, cost-, novelty-, validation- and counterfactual-aware measurements. **No actual data were newly obtained or inferred, and missing future outputs are UNKNOWN rather than 0.** / 공존으로 존속·증가한 개체의 실제 창작·발명·오류교정·후속 세대 기여물은 현재 PICB의 실험 성과에 포함되어 있지 않다. 그 누락을 인간 창시자가 지적했으며 기존 정본과 연결해 복원했다. 미관측 미래의 기여는 0이나 확정적 양수로 계산하지 않는다.
+
+**2026-10-14 founder-origin contribution pathway audit / 인간 창시자 원안 보존 연구:** [Continuance–Contribution Pathways in full English 1 + Korean 2 and all human OC01–OC19 / HC01–HC15 case entries](CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md) · [10 focused nodes and 12 scoped links in partial knowledge graph](knowledge/graph.json) · [separate PICB outcome-register proposals](experiments/picb_v1/README.md) · [actual evidence-status ledger](PUBLIC_EVIDENCE_INDEX.md). **Output may be a crisis warning even when ignored, a new perspective, an inspiration event or an independently validated downstream artifact; detecting a threat ≠ averting harm; reported inspiration ≠ exclusive causal credit.** Prior art includes Bell et al. *Lost Einsteins*, NASA near-miss safety reporting, Burt's brokerage, Jaffe et al. diffusion and Centola/Macy complex contagion. Case rows are purposive, overlapping/multi-actor, unrandomized; **NOT proof of 34 causally identified successes.** PICB's synthetic 64 conditions test none of those positive real outcomes. / **존속–기여 경로 가설은 기존 공개정본으로 연결한다.** 위기 감지·묵살된 경고·영감·후속성과의 기여자는 다를 수 있으며, 19+15 인간 사례는 인과적 성공 34건이 아니다. 사후 직접 기여와 미관측 미래 반사실을 분리한다.
+
+**Case-specific causal audit / 개별 원인 감사:** [GPT-6 human/AI role-reversal output asymmetry, consolidated EN1/KO2 review](experiments/gpt_double_standard_20261014/REPORT_EN_KO.md) · [negative-case regression F-R016](FAILURE_REGRESSION_INDEX.md). **Observed conversation and synthetic checks only**; model internals, independent GPT-6 replication, and effective permanent correction remain UNIDENTIFIED / 미검증. This is supplementary to—not a replacement for—the independent E007/E009 review path.
 
 ---
 
@@ -78,19 +93,21 @@ A mismatch is a finding to report, not a reason to retune the frozen benchmark. 
 
 ---
 
-## 3. Current evidence ladder / 현재 증거 사다리
+## 3. Independent evidence dimensions / 독립 증거 차원 — 단일 서열 금지
 
-`CONCEPT / HYPOTHESIS`
-< `SYNTHETIC_RESULT`
-< `EXECUTABLE`
-< `PROJECT_RERUN`
-< `THIRD_PARTY_RERUN`
-< `INDEPENDENT_IMPLEMENTATION`
-< `EMPIRICAL_VALIDATION`
+The old one-dimensional "evidence ladder" was misleading: a runnable program, a third-party rerun, a causal field study and the rights of a human contributor address **different questions**, not successive levels of a universal score. / 기존 '증거 사다리'는 실행·재현·현실인과·기여자 권리를 단일 서열로 오해하게 만들었다. 각 차원을 별도 기록한다.
 
-These are not interchangeable. A passing workflow is operational evidence about a repository state, not real-world validation of a scientific claim.
+| Dimension / 구분 | What to verify / 실제 확인할 것 | Never infer / 자동 추정 금지 |
+|---|---|---|
+| **Claim status / 주장 상태** | Scope, hypotheses, counterexamples, `HOLD`, `UNSUPPORTED`, `NARROWED` | A useful question is already true / 중요성이 참의 증거 |
+| **Artifact & execution / 구현·실행** | Specification, executable code, checks, `PROJECT_RERUN`, failed runs | Running code proves causation / 실행이 인과 증명 |
+| **Independence / 검증 계보** | Same-code outside rerun vs clean-room implementation vs independent measurement; who selected tests | Third-party rerun guarantees independent assumptions / 재실행만으로 독립성 확정 |
+| **Empirical applicability / 현실 적용성** | Field measurement, selection, confounders, causal identification, transfer limits | A synthetic result is a real-world rate / 합성 격자를 현실 발생률로 일반화 |
+| **Credit, rights and continuance / 출처·권리·존속** | Originators, upstream licenses, AI assistance, actual cost, access, exit, recovery and compensation evidence | A low scientific score erases contributions, or a high score creates a legal payment obligation / 연구 점수가 기여·금전채무를 자동 결정 |
 
-이 등급은 서로 대체할 수 없다. CI 통과는 저장소 상태에 대한 운영 증거이지 현실세계 과학주장의 검증이 아니다.
+**Apply all axes to each claim.** E007 remains a project-executable synthetic timing study; E008 has no computational policy result; E009 preserves a negative synthetic comparison; the current posthoc E010 analytic study is distinct from the unmerged, construct-mismatched historical E010 safety-inspection draft. None establishes universal voluntary coexistence, independent field validation, or a legal attribution/payment ruling. / 연구의 최상위 목적은 인간·현재 AI·미래 지능체가 선의·자기희생 없이도 자발적 공존을 장기 자기이익으로 선택하는 조건과 반례를 밝히는 것이다. 위 결과는 그 목적의 검증을 돕는 좁은 자료이며 목적을 입증한 것은 아니다.
+
+For canonical scope and exact source links use [status policy](RESEARCH_STATUS_POLICY.md), [evidence ledger](PUBLIC_EVIDENCE_INDEX.md), and [mission-first research map](RESEARCH_TOC.md). / 추가 자료는 별도 요약·원장으로 복제하지 않고 기존 정본을 참조한다.
 
 ---
 
@@ -168,9 +185,16 @@ The highest-value external actions are not additional praise or same-lineage sum
 
 Use [GitHub issue #19 — Independent verification request](https://github.com/gmodrasa7-rgb/project-intersection-public/issues/19) or [CONTRIBUTING.md](CONTRIBUTING.md) to return results without reconstructing the project in conversation.
 
-Negative results and KILL decisions are valid contributions.
+Negative results and documented pause/stop decisions are valid contributions. / 부정결과와 근거를 갖춘 보류·중단 판단도 유효한 기여이다.
 
 ---
+
+## 8a. Design sources and falsification boundary / 자료실 설계의 선행연구·반증 경계
+
+**Original 1 — English:** This review-navigation change adapts, rather than claims to invent, existing principles: Daniele Procida's [Diátaxis](https://diataxis.fr/) (user-need-specific content; do not force empty folders); Wilkinson et al. (2016), [FAIR](https://doi.org/10.1038/sdata.2016.18) (qualified findability and provenance); Barker et al. (2022), [FAIR4RS](https://doi.org/10.1038/s41597-022-01710-x) (software identifiers and reuse); Grant et al. (2026), [TOP 2025](https://doi.org/10.1186/s41073-026-00223-0) (separating reporting, verification practice and verification studies); and the [Turing Way research compendia](https://book.the-turing-way.org/reproducible-research/compendia/) (reproducible inputs, environment and outputs). The five short questions are a **Project-specific selection**, not a validated new standard. For usability, a future independent tree test should measure wrong turns, direct retrieval, time, and interpretation accuracy; no external human test has been run here.
+
+**원본2 — 한국어:** 이 변경은 기존 선행원칙을 활용한 응용이지 원리 자체의 독창적 발명이 아니다. **Daniele Procida의 Diátaxis**(독자별 문서 필요), **Wilkinson 등(2016)의 FAIR**(탐색·출처), **Barker 등(2022)의 FAIR4RS**(연구코드 식별·재사용), **Grant 등(2026)의 TOP 2025**(보고·검증활동·검증연구 구별), **The Turing Way 참여자들의 연구 패키징**(입력·환경·결과 연결)을 인용한다. 다섯 질문의 선정은 Project Intersection에 맞춘 설계 제안이며 독립 검증된 새 표준이 아니다. 이용자 이해·길찾기 성공률·오해율·소요시간의 외부 실험은 **미실행**이다.
+
 
 ## 8. Stop rule / 중단 규칙
 
@@ -185,3 +209,14 @@ Further documentation is justified only when it:
 - prevents founder reconstruction burden.
 
 Otherwise prefer empirical, independent, or adversarial work.
+
+
+## 9. Blind-first claim-discrimination request / 블라인드 우선 주장 판별 요청
+
+**Original 1 — English.** For a reviewer who has previously seen model-generated summaries or the founder's criticisms, agreement is not independent discovery. Record (i) which original source files were actually opened, (ii) which executable files were run and which output hashes were checked, (iii) which counterexample was independently constructed **before** seeing others' criticism, (iv) known prior scholarship and Project-origin attribution, and (v) a disconfirming condition. Do not request the founder to repeat or supply information already available in the repository. Compare blinded reviewer outputs across fresh context and criticism-conditioned context before inferring an improvement in independent reasoning. This is a proposed reviewer protocol; no blind performance benchmark or outside review has been conducted.
+
+**Concrete narrow challenge.** Read [Coalition Externality v0.1/v0.2 and the new post-hoc credible response subprobe](experiments/coalition_externality_probe/README.md). Check the historical three formerly positive classifications downgraded under unknown affected scope; distinguish ex-ante C/D joining, ex-post incentive to punish, A's attack/no-attack/target-switch, under-reporting and sanction transfer/destruction. Verify that both full participation and zero participation can be Nash equilibria without implying a unique predicted social outcome. Construct a counterexample that reverses the expected policy ranking or reports an implementation mismatch; cite exact code path. A run of the Project's own code is **internal reproduction**, not independent implementation; a favorable synthetic score is not external evidence.
+
+**원본2 — 한국어.** 이전 AI 요약이나 창시자의 비판을 본 검토자의 동의는 독립 발견이 아니다. 원자료 중 실제 열람한 파일, 직접 실행한 코드와 출력 검증, 타인의 지적을 보기 전에 독립 구성한 반례, 선행연구·원기여 경계, 반증 조건을 구분하여 기록한다. 새 대화 조건과 기존 비판을 제공한 조건을 블라인드 비교하기 전에는 독립 추론 성능 향상으로 승격하지 않는다. 이미 저장소에 있는 자료를 다시 창시자에게 요구하지 않는다. **이것은 독립 실험이 완료된 보고서가 아니라 외부 검토자가 재사용할 제안 절차다.**
+
+**구체 과제:** [연합 외부효과 v0.1/v0.2와 사후 제재 유인 별도 계산](experiments/coalition_externality_probe/README.md)을 검사한다. 미관측 영향권에서 기존 허용 3건이 판단유보로 바뀐 기록을 보존하고, 사전 연합 참여·사후 제재·A의 표적 선택·신고 누락·제재의 파괴/이전을 구분한다. 전원 참여와 무참여가 동시에 균형일 수 있으므로 임의로 편리한 균형을 선택하지 않는다. 선행 평가를 재서술하는 대신 코드의 새 반례 또는 오류, 정책 순위의 반전 조건을 구체적으로 제시한다. 프로젝트 코드 재실행만으로 독립 구현이나 현장 실증을 주장하지 않는다.

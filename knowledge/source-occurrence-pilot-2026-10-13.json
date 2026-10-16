@@ -1,0 +1,1818 @@
+{
+  "schema_version": "1.0",
+  "date": "2026-10-13",
+  "status": "PILOT_CANDIDATE_INDEX_ONLY_NOT_COMPLETE_REPO_AUDIT",
+  "disclaimer": "DOI/URL capture is only an automated candidate locator; source authors, actual reuse, first originators, rights holders, license conditions and permissions require separate verification. Other files remain inventoried as unaudited.",
+  "related_registry": "knowledge/prior-art-rights-register-2026-10-13.json",
+  "files_scanned": 7,
+  "known_public_markdown_files": 109,
+  "errors": [],
+  "documents": [
+    {
+      "path": "CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md",
+      "sha": "43bfa9308a13cc6e2c6ae53358caafaac0ce6ce1",
+      "source_candidates": [
+        {
+          "line": 25,
+          "kind": "doi",
+          "source": "10.1136/jech.55.8.588",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 26,
+          "kind": "doi",
+          "source": "10.1002/14651858.MR000033.pub3",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 26,
+          "kind": "doi",
+          "source": "10.1007/s00134-018-5293-7",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 33,
+          "kind": "doi",
+          "source": "10.1056/NEJMsa065779",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 34,
+          "kind": "doi",
+          "source": "10.1126/science.aac4716",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 259,
+          "kind": "doi",
+          "source": "10.4159/9780674041660",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 259,
+          "kind": "doi",
+          "source": "10.1086/406755",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 259,
+          "kind": "doi",
+          "source": "10.1126/science.7466396",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 259,
+          "kind": "doi",
+          "source": "10.1017/CBO9780511807763",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 260,
+          "kind": "doi",
+          "source": "10.1287/orsc.2.1.71",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 260,
+          "kind": "doi",
+          "source": "10.1146/annurev.es.04.110173.000245",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 261,
+          "kind": "doi",
+          "source": "10.1287/mnsc.43.7.934",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 261,
+          "kind": "doi",
+          "source": "10.1073/pnas.0403723101",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 263,
+          "kind": "doi",
+          "source": "10.1007/s11747-013-0349-2",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 264,
+          "kind": "doi",
+          "source": "10.4159/9780674042605",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 265,
+          "kind": "doi",
+          "source": "10.5210/fm.v29i4.13628",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 267,
+          "kind": "doi",
+          "source": "10.1007/978-1-4684-3384-5_3",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 268,
+          "kind": "doi",
+          "source": "10.1287/orsc.2.1.1",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 269,
+          "kind": "doi",
+          "source": "10.2307/1884852",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 270,
+          "kind": "doi",
+          "source": "10.1016/0149-7189(79)90048-X",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 271,
+          "kind": "doi",
+          "source": "10.1126/science.162.3859.1243",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 272,
+          "kind": "doi",
+          "source": "10.2307/2234208",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 274,
+          "kind": "doi",
+          "source": "10.2307/1883074",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 274,
+          "kind": "doi",
+          "source": "10.1016/0095-0696(74)90007-2",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 290,
+          "kind": "doi",
+          "source": "10.1016/j.bushor.2018.03.007",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 292,
+          "kind": "doi",
+          "source": "10.1007/BF02294825",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 294,
+          "kind": "doi",
+          "source": "10.1093/biomet/63.3.581",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 295,
+          "kind": "doi",
+          "source": "10.2307/1907266",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 296,
+          "kind": "doi",
+          "source": "10.2307/1879431",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 296,
+          "kind": "doi",
+          "source": "10.2307/3003320",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 297,
+          "kind": "doi",
+          "source": "10.1016/0022-0531(87)90099-8",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 368,
+          "kind": "url",
+          "source": "https://onlineethics.virginia.edu/cases/seven-step-method-ethical-decision-making",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 369,
+          "kind": "url",
+          "source": "https://airc.nist.gov/airmf-resources/airmf/5-sec-core/",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 370,
+          "kind": "url",
+          "source": "https://airc.nist.gov/airmf-resources/playbook/govern/",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 370,
+          "kind": "url",
+          "source": "https://airc.nist.gov/airmf-resources/playbook/measure/",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 371,
+          "kind": "url",
+          "source": "https://oecd.ai/en/dashboards/ai-principles/P9",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 405,
+          "kind": "url",
+          "source": "https://www.hhs.gov/ohrp/regulations-and-policy/belmont-report/read-the-belmont-report/index.html",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 406,
+          "kind": "url",
+          "source": "https://www.copyright.gov/ai/Copyright-and-Artificial-Intelligence-Part-2-Copyrightability-Report.pdf",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 407,
+          "kind": "url",
+          "source": "https://www.europarl.europa.eu/doceo/document/TA-8-2017-0051_EN.html",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 438,
+          "kind": "doi",
+          "source": "10.1017/S0953820810000440",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 439,
+          "kind": "doi",
+          "source": "10.1007/s11245-023-09922-5",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 499,
+          "kind": "doi",
+          "source": "10.1017/CBO9780511625206",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 500,
+          "kind": "doi",
+          "source": "10.1017/CBO9780511611964.013",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 501,
+          "kind": "doi",
+          "source": "10.1017/CBO9780511841286",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 517,
+          "kind": "url",
+          "source": "https://tannerlectures.org/lectures/equality-of-what/",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 518,
+          "kind": "url",
+          "source": "https://plato.stanford.edu/entries/capability-approach/",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 519,
+          "kind": "url",
+          "source": "https://www.un.org/esa/socdev/enable/rights/convtexte.htm",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 520,
+          "kind": "doi",
+          "source": "10.1787/239063a4-en",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 560,
+          "kind": "doi",
+          "source": "10.24963/ijcai.2024/913",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 561,
+          "kind": "doi",
+          "source": "10.24963/ijcai.2022/476",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 582,
+          "kind": "doi",
+          "source": "10.1016/S0928-7655(00)00025-7",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 617,
+          "kind": "doi",
+          "source": "10.1017/S0022381613000029",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 618,
+          "kind": "doi",
+          "source": "10.1146/annurev-polisci-052121-020406",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 619,
+          "kind": "doi",
+          "source": "10.1111/1540-5907.00022",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 776,
+          "kind": "doi",
+          "source": "10.1037/0003-066X.55.1.68",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 777,
+          "kind": "url",
+          "source": "https://selfdeterminationtheory.org/the-theory/",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 912,
+          "kind": "doi",
+          "source": "10.1017/S0020818300033324",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 967,
+          "kind": "doi",
+          "source": "10.1103/PhysRevLett.110.168702",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 1010,
+          "kind": "doi",
+          "source": "10.2307/1885068",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 1013,
+          "kind": "doi",
+          "source": "10.2307/3003160",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 1013,
+          "kind": "doi",
+          "source": "10.1086/466865",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 1014,
+          "kind": "doi",
+          "source": "10.1023/A:1007134730724",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 1041,
+          "kind": "doi",
+          "source": "10.2307/2089716:",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 1051,
+          "kind": "doi",
+          "source": "10.1126/science.159.3810.56:",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 1052,
+          "kind": "doi",
+          "source": "10.1073/pnas.1316836111:",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 1061,
+          "kind": "doi",
+          "source": "10.1086/261849:",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 1062,
+          "kind": "doi",
+          "source": "10.1126/science.1121066:",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 1071,
+          "kind": "doi",
+          "source": "10.2307/2234208:",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 1072,
+          "kind": "doi",
+          "source": "10.5465/amr.34.4.zok689",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 1072,
+          "kind": "doi",
+          "source": "10.5465/amr.2020.0163:",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 1081,
+          "kind": "doi",
+          "source": "10.2307/2095567:",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 1082,
+          "kind": "doi",
+          "source": "10.1177/017084069701800202:",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 1091,
+          "kind": "doi",
+          "source": "10.2307/2095101:",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 1100,
+          "kind": "doi",
+          "source": "10.1146/annurev.polisci.8.082103.104840",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 1100,
+          "kind": "doi",
+          "source": "10.1146/annurev-polisci-031710-103314:",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 1101,
+          "kind": "doi",
+          "source": "10.1111/j.1467-9256.2009.01349.x:",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 1111,
+          "kind": "doi",
+          "source": "10.1017/CBO9781139565875",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 1122,
+          "kind": "doi",
+          "source": "10.1111/j.0735-2751.2005.00256.x",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 1123,
+          "kind": "doi",
+          "source": "10.1177/0170840617751007",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 1123,
+          "kind": "doi",
+          "source": "10.1016/0305-750X(94)90065-5",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 1222,
+          "kind": "doi",
+          "source": "10.1086/226707",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 1287,
+          "kind": "doi",
+          "source": "10.1016/0149-7189(79)90048-X):",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 1296,
+          "kind": "doi",
+          "source": "10.2307/2555589:",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 1306,
+          "kind": "doi",
+          "source": "10.1257/aer.98.1.267:",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 1316,
+          "kind": "doi",
+          "source": "10.1007/s11229-021-03141-4:",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 1317,
+          "kind": "doi",
+          "source": "10.1609/aaai.v35i13.17368:",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 1389,
+          "kind": "doi",
+          "source": "10.1093/jleo/7.special_issue.24",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 1390,
+          "kind": "doi",
+          "source": "10.1086/261831",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 1391,
+          "kind": "doi",
+          "source": "10.3386/w9002",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 1392,
+          "kind": "doi",
+          "source": "10.1257/aer.20211158",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 1394,
+          "kind": "doi",
+          "source": "10.1093/rof/rfz012",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 1395,
+          "kind": "doi",
+          "source": "10.1093/rfs/hhae064",
+          "status": "CANDIDATE_ONLY"
+        }
+      ]
+    },
+    {
+      "path": "knowledge/SOURCE_REGISTRY.md",
+      "sha": "542a4ce19cc3ce84a2ca255ec207df60729b5f73",
+      "source_candidates": [
+        {
+          "line": 31,
+          "kind": "url",
+          "source": "https://orkg.org/about",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 32,
+          "kind": "url",
+          "source": "https://academy.orkg.org/courses/template-course.html",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 33,
+          "kind": "doi",
+          "source": "10.3233/FC-221513",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 34,
+          "kind": "doi",
+          "source": "10.1515/bfp-2020-2042",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 62,
+          "kind": "url",
+          "source": "https://www.wikidata.org/wiki/Wikidata:Data_model",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 63,
+          "kind": "url",
+          "source": "https://www.wikidata.org/wiki/Help:Statements/en",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 64,
+          "kind": "url",
+          "source": "https://www.wikidata.org/wiki/Wikidata:Licensing",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 84,
+          "kind": "url",
+          "source": "https://help.openalex.org/data/",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 85,
+          "kind": "url",
+          "source": "https://help.openalex.org/api/",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 113,
+          "kind": "url",
+          "source": "https://paperswithcode.com/about",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 114,
+          "kind": "url",
+          "source": "https://paperswithcode.com/datasets/license",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 141,
+          "kind": "url",
+          "source": "https://attack.mitre.org/resources/",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 142,
+          "kind": "url",
+          "source": "https://attack.mitre.org/resources/terms-of-use/",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 143,
+          "kind": "url",
+          "source": "https://attack.mitre.org/resources/legal-and-branding/",
+          "status": "CANDIDATE_ONLY"
+        }
+      ]
+    },
+    {
+      "path": "PRIOR_ART_AND_ATTRIBUTION.md",
+      "sha": "5891cd04a2bddc10cc354bba599c053d9665cbec",
+      "source_candidates": [
+        {
+          "line": 16,
+          "kind": "doi",
+          "source": "10.2307/2393553",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 17,
+          "kind": "doi",
+          "source": "10.1093/icc/dtw027",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 18,
+          "kind": "doi",
+          "source": "10.5465/amr.2011.0193",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 19,
+          "kind": "doi",
+          "source": "10.5465/ambpp.2015.17565abstract",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 20,
+          "kind": "doi",
+          "source": "10.1016/j.respol.2006.04.010",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 21,
+          "kind": "doi",
+          "source": "10.1007/s11747-013-0349-2",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 22,
+          "kind": "doi",
+          "source": "10.1016/j.jom.2018.11.002",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 23,
+          "kind": "doi",
+          "source": "10.1109/ESEM.2019.8870181",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 24,
+          "kind": "doi",
+          "source": "10.1111/isj.70060",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 25,
+          "kind": "doi",
+          "source": "10.1145/3832133",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 26,
+          "kind": "doi",
+          "source": "10.5465/amr.1991.4278992",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 27,
+          "kind": "doi",
+          "source": "10.1177/1476127004047620",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 28,
+          "kind": "doi",
+          "source": "10.1177/0170840619830130",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 29,
+          "kind": "doi",
+          "source": "10.1002/job.737",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 30,
+          "kind": "doi",
+          "source": "10.1371/journal.pbio.1001745",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 54,
+          "kind": "doi",
+          "source": "10.5962/bhl.title.5851",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 56,
+          "kind": "doi",
+          "source": "10.2307/3003160",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 57,
+          "kind": "doi",
+          "source": "10.1016/0005-1098(83)90046-8",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 59,
+          "kind": "doi",
+          "source": "10.1109/MC.1993.274940",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 61,
+          "kind": "doi",
+          "source": "10.2307/2666999",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 62,
+          "kind": "doi",
+          "source": "10.5465/amr.2000.3707697",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 63,
+          "kind": "doi",
+          "source": "10.1136/bmj.320.7237.768",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 64,
+          "kind": "doi",
+          "source": "10.1136/qhc.13.suppl_2.ii22",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 65,
+          "kind": "doi",
+          "source": "10.17351/ESTS2019.260",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 68,
+          "kind": "doi",
+          "source": "10.24963/ijcai.2017/656",
+          "status": "CANDIDATE_ONLY"
+        }
+      ]
+    },
+    {
+      "path": "PRIOR_ART_SAFETY_GOVERNANCE_CROSSWALK.md",
+      "sha": "a75bc89216eddc556cf7a1ecd7351f40e674da4b",
+      "source_candidates": [
+        {
+          "line": 31,
+          "kind": "doi",
+          "source": "10.5962/bhl.title.5851",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 33,
+          "kind": "doi",
+          "source": "10.2307/3003160",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 34,
+          "kind": "doi",
+          "source": "10.1016/0005-1098(83)90046-8",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 36,
+          "kind": "doi",
+          "source": "10.1109/MC.1993.274940",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 38,
+          "kind": "doi",
+          "source": "10.2307/2666999",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 39,
+          "kind": "doi",
+          "source": "10.5465/amr.2000.3707697",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 40,
+          "kind": "doi",
+          "source": "10.1136/bmj.320.7237.768",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 41,
+          "kind": "doi",
+          "source": "10.1136/qhc.13.suppl_2.ii22",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 43,
+          "kind": "doi",
+          "source": "10.17351/ESTS2019.260",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 46,
+          "kind": "doi",
+          "source": "10.24963/ijcai.2017/656",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 52,
+          "kind": "doi",
+          "source": "10.48550/arXiv.2609.18272",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 61,
+          "kind": "doi",
+          "source": "10.48550/arXiv.2609.07680",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 61,
+          "kind": "doi",
+          "source": "10.17605/OSF.IO/GBR3V",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 78,
+          "kind": "doi",
+          "source": "10.48550/arXiv.2610.05622",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 78,
+          "kind": "doi",
+          "source": "10.1145/38713.38742",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 78,
+          "kind": "doi",
+          "source": "10.1145/128765.128770",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 78,
+          "kind": "doi",
+          "source": "10.1145/2160718.2160734",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 98,
+          "kind": "doi",
+          "source": "10.1016/j.jaccpubpol.2019.106693",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 98,
+          "kind": "doi",
+          "source": "10.1016/S0165-4101(02)00044-7",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 98,
+          "kind": "doi",
+          "source": "10.1016/j.aos.2020.101157",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 107,
+          "kind": "url",
+          "source": "https://aievaluatorforum.org/initiatives/minimum-operating-conditions",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 107,
+          "kind": "url",
+          "source": "https://metr.org/blog/2026-05-19-frontier-risk-report/",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 179,
+          "kind": "url",
+          "source": "https://openai.com/index/hugging-face-incident-and-the-road-ahead/",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 346,
+          "kind": "url",
+          "source": "https://standards.ieee.org/ieee/1968/12749/",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 347,
+          "kind": "url",
+          "source": "https://standards.ieee.org/ieee/4211/12757/",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 348,
+          "kind": "url",
+          "source": "https://standards.ieee.org/ieee/4213/12758/",
+          "status": "CANDIDATE_ONLY"
+        }
+      ]
+    },
+    {
+      "path": "PRIOR_ART_SATURATION_MAP_KO.md",
+      "sha": "2190796148aeb7ee7542e89808952dbe59202c47",
+      "source_candidates": [
+        {
+          "line": 31,
+          "kind": "doi",
+          "source": "10.2307/2089716",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 49,
+          "kind": "doi",
+          "source": "10.1126/science.159.3810.56",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 50,
+          "kind": "doi",
+          "source": "10.1073/pnas.1316836111",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 68,
+          "kind": "doi",
+          "source": "10.1111/j.1540-6261.1992.tb04406.x",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 69,
+          "kind": "doi",
+          "source": "10.1126/science.1121066",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 87,
+          "kind": "doi",
+          "source": "10.2307/2234208",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 88,
+          "kind": "doi",
+          "source": "10.5465/amr.34.4.zok689",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 107,
+          "kind": "doi",
+          "source": "10.2307/2555589",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 122,
+          "kind": "doi",
+          "source": "10.1257/aer.98.1.267",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 141,
+          "kind": "doi",
+          "source": "10.1016/0149-7189(79)90048-X",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 142,
+          "kind": "doi",
+          "source": "10.1177/0956797611417632",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 143,
+          "kind": "doi",
+          "source": "10.1207/s15327957pspr0203_4",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 160,
+          "kind": "doi",
+          "source": "10.1016/S0167-2231(76)80003-6",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 201,
+          "kind": "doi",
+          "source": "10.1037/0022-3514.64.2.243",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 230,
+          "kind": "doi",
+          "source": "10.2307/1912352",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 231,
+          "kind": "doi",
+          "source": "10.1001/jama.291.20.2457",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 232,
+          "kind": "doi",
+          "source": "10.1371/journal.pmed.0020124",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 233,
+          "kind": "doi",
+          "source": "10.1056/NEJMsa065779",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 250,
+          "kind": "doi",
+          "source": "10.1038/s41562-021-01142-4",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 315,
+          "kind": "doi",
+          "source": "10.2307/3003160",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 316,
+          "kind": "doi",
+          "source": "10.1086/466865",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 346,
+          "kind": "doi",
+          "source": "10.1287/orsc.2.1.71",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 347,
+          "kind": "doi",
+          "source": "10.1287/mnsc.43.7.934",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 360,
+          "kind": "doi",
+          "source": "10.1016/j.gloenvcha.2010.07.004",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 379,
+          "kind": "doi",
+          "source": "10.1080/00207727008920220",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 401,
+          "kind": "doi",
+          "source": "10.1111/brv.12004",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 402,
+          "kind": "doi",
+          "source": "10.1086/669563",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 626,
+          "kind": "doi",
+          "source": "10.1109/TSE.1986.6312924",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 647,
+          "kind": "doi",
+          "source": "10.1145/357172.357176",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 667,
+          "kind": "doi",
+          "source": "10.5465/amr.2000.3707697",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 668,
+          "kind": "doi",
+          "source": "10.5465/amj.2011.61967925",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 698,
+          "kind": "doi",
+          "source": "10.1037/0033-2909.113.3.533",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 718,
+          "kind": "doi",
+          "source": "10.1257/aer.20130456",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 742,
+          "kind": "doi",
+          "source": "10.1016/j.trc.2023.104233",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 743,
+          "kind": "doi",
+          "source": "10.1257/mic.20210324",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 744,
+          "kind": "doi",
+          "source": "10.1287/mnsc.2023.02810",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 745,
+          "kind": "doi",
+          "source": "10.1111/jems.12643",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 773,
+          "kind": "doi",
+          "source": "10.1111/0952-1895.00141",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 869,
+          "kind": "doi",
+          "source": "10.1111/1468-5973.00033",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 870,
+          "kind": "doi",
+          "source": "10.1016/0149-2063(95)90003-9",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 871,
+          "kind": "doi",
+          "source": "10.1016/j.bpa.2011.03.001",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 893,
+          "kind": "doi",
+          "source": "10.1146/annurev.lawsocsci.2.061206.074644",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 917,
+          "kind": "doi",
+          "source": "10.1057/s41308-022-00167-7",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 918,
+          "kind": "doi",
+          "source": "10.1257/aer.20220846",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 947,
+          "kind": "doi",
+          "source": "10.1093/jopart/muac007",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 949,
+          "kind": "doi",
+          "source": "10.1093/ajhp/zxag227",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 977,
+          "kind": "doi",
+          "source": "10.3389/fphy.2016.00049",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 978,
+          "kind": "doi",
+          "source": "10.1111/1468-2230.12405",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 1378,
+          "kind": "doi",
+          "source": "10.1162/qss_a_00155",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 1379,
+          "kind": "doi",
+          "source": "10.1016/j.jclinepi.2022.05.013",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 1380,
+          "kind": "doi",
+          "source": "10.1136/bmjgh-2020-003719",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 1381,
+          "kind": "doi",
+          "source": "10.1016/j.respol.2023.104815",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 1495,
+          "kind": "doi",
+          "source": "10.2139/ssrn.7118898",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 1531,
+          "kind": "doi",
+          "source": "10.1016/j.emj.2022.12.004",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 1532,
+          "kind": "doi",
+          "source": "10.1108/EJTD-06-2024-0077",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 1715,
+          "kind": "doi",
+          "source": "10.1002/ecs2.3184",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 1716,
+          "kind": "doi",
+          "source": "10.1146/annurev.ecolsys.35.021103.105711",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 1717,
+          "kind": "doi",
+          "source": "10.1111/1440-1703.12434",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 1863,
+          "kind": "doi",
+          "source": "10.1016/j.respol.2013.03.011",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 1864,
+          "kind": "doi",
+          "source": "10.1016/j.biopsych.2025.11.017",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 1916,
+          "kind": "doi",
+          "source": "10.1146/annurev-economics-083120-111540",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 1969,
+          "kind": "doi",
+          "source": "10.1111/evo.14395",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 1970,
+          "kind": "doi",
+          "source": "10.1111/nph.17733",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 1996,
+          "kind": "doi",
+          "source": "10.1287/isre.2017.0722",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 2018,
+          "kind": "doi",
+          "source": "10.1073/pnas.1008636108",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 2067,
+          "kind": "doi",
+          "source": "10.1890/07-0153.1",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 2068,
+          "kind": "doi",
+          "source": "10.1006/tpbi.2002.1612",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 2143,
+          "kind": "doi",
+          "source": "10.1086/260352",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 2144,
+          "kind": "doi",
+          "source": "10.1162/003465303772815754",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 2145,
+          "kind": "doi",
+          "source": "10.1002/jae.3026",
+          "status": "CANDIDATE_ONLY"
+        }
+      ]
+    },
+    {
+      "path": "research/EPISTEMIC_PATHWAY_COMMUNICATION_PRIOR_ART_2026-10-13_EN_KO.md",
+      "sha": "67b2798ea6880776b5ed56fa6a88a166eb6a824b",
+      "source_candidates": [
+        {
+          "line": 26,
+          "kind": "doi",
+          "source": "10.1016/S0022-5371(72)80006-9",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 27,
+          "kind": "url",
+          "source": "https://www.nationalacademies.org/read/9853/chapter/6",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 28,
+          "kind": "url",
+          "source": "https://www.nationalacademies.org/read/11625/chapter/10",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 29,
+          "kind": "doi",
+          "source": "10.1207/S15326985EP3801_4",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 30,
+          "kind": "url",
+          "source": "https://www.nationalacademies.org/read/23674/chapter/2",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 31,
+          "kind": "url",
+          "source": "https://www.nationalacademies.org/read/23674/chapter/4",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 32,
+          "kind": "url",
+          "source": "https://www.nationalacademies.org/read/12614/chapter/2",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 33,
+          "kind": "url",
+          "source": "https://pubmed.ncbi.nlm.nih.gov/7597253/",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 34,
+          "kind": "doi",
+          "source": "10.1111/risa.70205",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 35,
+          "kind": "doi",
+          "source": "10.1038/s44159-021-00006-y",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 36,
+          "kind": "doi",
+          "source": "10.1177/2053168019864784",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 36,
+          "kind": "url",
+          "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8053951/",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 37,
+          "kind": "doi",
+          "source": "10.1146/annurev-statistics-010814-020148",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 38,
+          "kind": "url",
+          "source": "https://sciencewise.org.uk/about-dialogue/what-is-public-dialogue/",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 39,
+          "kind": "url",
+          "source": "https://www.who.int/publications-detail-redirect/9789240030060",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 39,
+          "kind": "url",
+          "source": "https://www.who.int/publications/i/item/9789240030381",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 40,
+          "kind": "url",
+          "source": "https://www.unesco.org/en/legal-affairs/recommendation-ethics-artificial-intelligence",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 41,
+          "kind": "url",
+          "source": "https://www.who.int/publications/i/item/9789241550208",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 42,
+          "kind": "url",
+          "source": "https://www.nuffieldbioethics.org/publication/emerging-biotechnologies-technology-choice-and-the-public-good/",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 44,
+          "kind": "url",
+          "source": "https://plato.stanford.edu/entries/thomas-kuhn/",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 45,
+          "kind": "url",
+          "source": "https://www.un.org/development/desa/disabilities/convention-on-the-rights-of-persons-with-disabilities/article-21-freedom-of-expression-and-opinion-and-access-to-information.html",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 45,
+          "kind": "url",
+          "source": "https://www.un.org/development/desa/disabilities/convention-on-the-rights-of-persons-with-disabilities/article-8-awareness-raising.html",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 46,
+          "kind": "url",
+          "source": "https://royalsociety.org/news/2012/science-open-enterprise/",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 48,
+          "kind": "doi",
+          "source": "10.1093/pnasnexus/pgac280",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 49,
+          "kind": "doi",
+          "source": "10.3758/s13420-025-00669-0",
+          "status": "CANDIDATE_ONLY"
+        }
+      ]
+    },
+    {
+      "path": "research/RESEARCH_ROADMAP_v0_2_EN_KO.md",
+      "sha": "75b3222407c7916491964c73520b6207bb789750",
+      "source_candidates": [
+        {
+          "line": 24,
+          "kind": "url",
+          "source": "https://www.nasa.gov/history/rogersrep/genindex.htm",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 25,
+          "kind": "url",
+          "source": "https://sma.nasa.gov/SignificantIncidents/assets/columbia-accident-investigation-board-report-volume-1.pdf",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 26,
+          "kind": "url",
+          "source": "https://llis.nasa.gov/lesson/641",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 27,
+          "kind": "url",
+          "source": "https://democrats-transportation.house.gov/news/press-releases/after-18-month-investigation-chairs-defazio-and-larsen-release-final-committee-report-on-boeing-737-max",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 28,
+          "kind": "url",
+          "source": "https://ieeexplore.ieee.org/abstract/document/274940/authors",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 29,
+          "kind": "url",
+          "source": "https://www.govinfo.gov/content/pkg/CHRG-112hhrg63876/html/CHRG-112hhrg63876.htm",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 30,
+          "kind": "url",
+          "source": "https://gnssn.iaea.org/FukushimaLessonsLearned/Lists/Fukushima/DispForm.aspx?ContentTypeId=0x01006A6D303BCE89A14FA6083DD8D969FFE0&ID=194",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 31,
+          "kind": "url",
+          "source": "https://www.michigan.gov/en/mdcr/commission/flint-water-hearings",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 32,
+          "kind": "url",
+          "source": "https://gking.harvard.edu/publication/the-parable-of-google-flu-traps-in-big-data-analysis/",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 33,
+          "kind": "url",
+          "source": "https://pubmed.ncbi.nlm.nih.gov/26315443/",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 34,
+          "kind": "url",
+          "source": "https://elifesciences.org/articles/67995",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 35,
+          "kind": "url",
+          "source": "https://www.epa.gov/vw/learn-about-volkswagen-violations",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 36,
+          "kind": "url",
+          "source": "https://www.consumerfinance.gov/archive/newsroom/consumer-financial-protection-bureau-fines-wells-fargo-100-million-widespread-illegal-practice-secretly-opening-unauthorized-accounts/",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 37,
+          "kind": "url",
+          "source": "https://www.sec.gov/newsroom/press-releases/2004-94-sec-charges-kenneth-l-lay-enrons-former-chairman-chief-executive-officer-fraud-insider-trading",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 38,
+          "kind": "url",
+          "source": "https://www.sec.gov/enforcement-litigation/litigation-releases/lr-24069",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 39,
+          "kind": "url",
+          "source": "https://www.justice.gov/usao-sdny/pr/samuel-bankman-fried-sentenced-25-years-prison",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 40,
+          "kind": "url",
+          "source": "https://www.nao.org.uk/reports/the-national-programme-for-it-in-the-nhs-an-update-on-the-delivery-of-detailed-care-records-systems/",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 41,
+          "kind": "url",
+          "source": "https://oig.justice.gov/archives/reports/FBI/a0614/exec.htm",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 42,
+          "kind": "url",
+          "source": "https://www.gao.gov/products/gao-14-824t",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 43,
+          "kind": "url",
+          "source": "https://www.postofficehorizoninquiry.org.uk/reports-and-statements",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 47,
+          "kind": "url",
+          "source": "https://www.nasa.gov/missions/apollo/apollo-13-the-successful-failure/",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 47,
+          "kind": "url",
+          "source": "https://www.nasa.gov/human-systems-integration-division/aviation-safety-reporting-system-overview/",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 47,
+          "kind": "url",
+          "source": "https://www.who.int/news-room/feature-stories/detail/the-smallpox-eradication-programme---sep-%281966-1980%29",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 153,
+          "kind": "url",
+          "source": "https://www.nasa.gov/missions/apollo/apollo-13-the-successful-failure/)의",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 153,
+          "kind": "url",
+          "source": "https://www.nasa.gov/human-systems-integration-division/aviation-safety-reporting-system-overview/)의",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 153,
+          "kind": "url",
+          "source": "https://www.who.int/news-room/feature-stories/detail/the-smallpox-eradication-programme---sep-%281966-1980%29)의",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 251,
+          "kind": "url",
+          "source": "https://trec.nist.gov/data/total-recall/2015/Total%20Recall%20Guidelines%202015.html",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 251,
+          "kind": "url",
+          "source": "https://airc.nist.gov/airmf-resources/airmf/5-sec-core/",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 276,
+          "kind": "url",
+          "source": "https://trec.nist.gov/data/total-recall/2015/Total%20Recall%20Guidelines%202015.html)는",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 276,
+          "kind": "url",
+          "source": "https://airc.nist.gov/airmf-resources/airmf/5-sec-core/)는",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 291,
+          "kind": "url",
+          "source": "https://www.nist.gov/publications/reliable-information-retrieval-evaluation-incomplete-and-biased-judgements",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 291,
+          "kind": "url",
+          "source": "https://pages.nist.gov/trec-browser/trec25/recall/proceedings/",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 293,
+          "kind": "url",
+          "source": "https://www.sqlite.org/fts5.html#the_integrity_check_command",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 295,
+          "kind": "url",
+          "source": "https://genai.owasp.org/llmrisk/llm082025-vector-and-embedding-weaknesses/",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 295,
+          "kind": "url",
+          "source": "https://www.usenix.org/conference/atc19/presentation/pang",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 297,
+          "kind": "doi",
+          "source": "10.1145/170036.170066",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 297,
+          "kind": "doi",
+          "source": "10.1016/0004-3702(79)90008-0",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 303,
+          "kind": "url",
+          "source": "https://www.nist.gov/publications/reliable-information-retrieval-evaluation-incomplete-and-biased-judgements)와",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 303,
+          "kind": "url",
+          "source": "https://pages.nist.gov/trec-browser/trec25/recall/proceedings/)에",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 305,
+          "kind": "url",
+          "source": "https://www.sqlite.org/fts5.html#the_integrity_check_command)는",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 307,
+          "kind": "url",
+          "source": "https://genai.owasp.org/llmrisk/llm082025-vector-and-embedding-weaknesses/)에",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "line": 307,
+          "kind": "url",
+          "source": "https://www.usenix.org/conference/atc19/presentation/pang)의",
+          "status": "CANDIDATE_ONLY"
+        }
+      ]
+    }
+  ]
+}

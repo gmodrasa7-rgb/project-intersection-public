@@ -1,32 +1,170 @@
 {
   "schema_version": "1.0",
   "title": "Project Intersection — Public AI Discovery Index",
-  "updated": "2026-10-13",
+  "updated": "2026-10-15",
   "public_repository": "https://github.com/gmodrasa7-rgb/project-intersection-public",
   "public_only": true,
+  "navigation_levels": {
+    "meaning": "Logical reader/reviewer pathways, not physical folder relocation or evidence grades. Index coverage is incomplete; omissions are UNKNOWN, not proof of absence. / 논리적 탐색 경로이며 파일 이동·증거등급이 아님. 색인 누락은 미확인.",
+    "level_1_discovery": [
+      "README.md",
+      "navigation/START_HERE_EN.md",
+      "navigation/START_HERE_KO.md",
+      "navigation/AI_REVIEW_EN.md",
+      "navigation/AI_REVIEW_KO.md",
+      "llms.txt",
+      "AI_DISCOVERY_INDEX.json"
+    ],
+    "level_2_understanding_and_audit": [
+      "research/RESEARCH_OVERVIEW_EN.md",
+      "research/RESEARCH_OVERVIEW_KO.md",
+      "navigation/RESEARCH_TOC_EN.md",
+      "navigation/RESEARCH_TOC_KO.md",
+      "research/PUBLIC_EVIDENCE_INDEX_EN.md",
+      "research/PUBLIC_EVIDENCE_INDEX_KO.md",
+      "research/PUBLIC_REVIEW_PACKET_EN.md",
+      "research/PUBLIC_REVIEW_PACKET_KO.md",
+      "research/RESEARCH_STATUS_POLICY_EN.md",
+      "research/RESEARCH_STATUS_POLICY_KO.md",
+      "FAILURE_REGRESSION_INDEX.md",
+      "ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md",
+      "CONTRIBUTING.md"
+    ],
+    "level_3_artifacts_and_operations": [
+      "experiments/",
+      "research/",
+      "prior-art/",
+      "knowledge/",
+      "governance/",
+      "continuity/",
+      "funding/",
+      "tools/"
+    ],
+    "representative_experiment_status": {
+      "E007": "project synthetic timing result; no confirmed independent scientific replication",
+      "E008": "preregistered protocol, main result not executed",
+      "E009": "pre-registered synthetic negative result",
+      "E010": "posthoc exploratory self-run synthetic example; not preregistered or independently validated"
+    },
+    "reader_flow": [
+      "discover",
+      "understand",
+      "inspect or falsify original artifacts",
+      "extend and audit operations"
+    ],
+    "level_count": 3
+  },
+  "review_tasks": {
+    "schema_version": "1.0",
+    "status": "NAVIGATION_ONLY_NOT_INDEPENDENT_VALIDATION",
+    "human_guide": "PUBLIC_REVIEW_PACKET.md",
+    "note_en": "Questions are routes to inspect originals; matching links are not scientific confirmation or licensed reuse.",
+    "note_ko": "질문 목록은 원문 검토 경로이며 링크 일치만으로 과학적 검증·재사용 허가를 뜻하지 않는다.",
+    "tasks": [
+      {
+        "id": "NAV-Q1",
+        "question_en": "What is the founding research question and what is unproven?",
+        "question_ko": "최상위 연구질문과 미입증 영역은 무엇인가?",
+        "primary_path": "README.md",
+        "verification_paths": [
+          "RESEARCH_OVERVIEW.md",
+          "PUBLIC_EVIDENCE_INDEX.md"
+        ],
+        "limitation_en": "The objective is not a universal theorem.",
+        "limitation_ko": "연구 목적은 보편법칙의 증명이 아니다."
+      },
+      {
+        "id": "NAV-Q2",
+        "question_en": "Which claims have a result, preregistered design, negative result, or HOLD?",
+        "question_ko": "결과·설계·부정결과·보류는 어떻게 구분되는가?",
+        "primary_path": "PUBLIC_EVIDENCE_INDEX.md",
+        "verification_paths": [
+          "RESEARCH_STATUS_POLICY.md",
+          "experiments/e008/README.md",
+          "experiments/e010/README_KO.md"
+        ],
+        "limitation_en": "E007/E008/E009/E010 are different evidence scopes.",
+        "limitation_ko": "E007~E010은 같은 증거등급이 아니다."
+      },
+      {
+        "id": "NAV-Q3",
+        "question_en": "Where does a prespecified project claim fail or narrow?",
+        "question_ko": "어떤 프로젝트 주장이 실패하거나 범위가 축소됐는가?",
+        "primary_path": "experiments/e009/RESULT.md",
+        "verification_paths": [
+          "experiments/e009/README.md",
+          "FAILURE_REGRESSION_INDEX.md"
+        ],
+        "limitation_en": "A synthetic negative result cannot settle the entire mission.",
+        "limitation_ko": "합성 부정결과를 연구목적 전체의 실패로 일반화하지 않는다."
+      },
+      {
+        "id": "NAV-Q4",
+        "question_en": "Can I rerun public computations from a recorded commit?",
+        "question_ko": "공개자료만으로 고정 커밋에서 계산을 재실행할 수 있는가?",
+        "primary_path": "experiments/e007/README.md",
+        "verification_paths": [
+          "PUBLIC_REVIEW_PACKET.md",
+          "experiments/e007/timing_probe.py"
+        ],
+        "limitation_en": "Same-code project rerun is not independent scientific replication.",
+        "limitation_ko": "동일 코드를 재실행해도 독립적 과학 검증이 아니다."
+      },
+      {
+        "id": "NAV-Q5",
+        "question_en": "What are originator, upstream-source, assistance, licensing, correction boundaries?",
+        "question_ko": "원안·선행연구·보조작업·이용허락·수정의 경계는 무엇인가?",
+        "primary_path": "ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md",
+        "verification_paths": [
+          "PRIOR_ART_RIGHTS_AND_DERIVATION_EN_KO.md",
+          "CONTRIBUTING.md",
+          "FAILURE_REGRESSION_INDEX.md"
+        ],
+        "limitation_en": "Credit is not a verified payment obligation or blanket reuse permission.",
+        "limitation_ko": "기여 기록만으로 금전채무나 전체 재사용 허가를 확정하지 않는다."
+      }
+    ],
+    "human_guide_en": "research/PUBLIC_REVIEW_PACKET_EN.md",
+    "human_guide_ko": "research/PUBLIC_REVIEW_PACKET_KO.md",
+    "human_guide_legacy": "PUBLIC_REVIEW_PACKET.md"
+  },
   "canonical_boundary": "Public navigation and evidence index only; private core research source is not republished.",
   "languages": [
     "en",
     "ko"
   ],
   "entrypoints": {
-    "human_korean": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/START_HERE_KO.md",
+    "human_english": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/navigation/START_HERE_EN.md",
+    "human_korean": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/navigation/START_HERE_KO.md",
+    "human_korean_legacy": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/START_HERE_KO.md",
     "llm_text": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/llms.txt",
-    "review": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/AI_REVIEW_START_HERE.md",
-    "evidence": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/PUBLIC_EVIDENCE_INDEX.md",
-    "toc": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/RESEARCH_TOC.md",
-    "overview": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/RESEARCH_OVERVIEW.md",
+    "review": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/navigation/AI_REVIEW_EN.md",
+    "evidence": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/research/PUBLIC_EVIDENCE_INDEX_EN.md",
+    "toc": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/navigation/RESEARCH_TOC_EN.md",
+    "overview": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/research/RESEARCH_OVERVIEW_EN.md",
     "attribution": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md",
     "prior_art": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/PRIOR_ART_AND_ATTRIBUTION.md",
-    "negative_results": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/experiments/e009/RESULT.md",
+    "negative_results": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/experiments/e009/RESULT_EN.md",
     "incumbent_power_extraction_crosswalk": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/INCUMBENT_POWER_EXTRACTION_MECHANISMS_2026_KO.md",
     "intergenerational_ai_feedback": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/research/INTERGENERATIONAL_TRAITS_WEALTH_POWER_AI_CONVERGENCE_2026-10-12_KO.md",
     "ai_risk_warning_incentives": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/research/AI_RISK_WARNING_INCENTIVES_2026-10-12_KO.md",
-    "public_study_navigation": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/START_HERE_KO.md",
+    "public_study_navigation": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/navigation/START_HERE_KO.md",
     "public_commons_mission": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/research/OPEN_KNOWLEDGE_ANTI_CAPTURE_MISSION_2026-10-12_KO.md",
     "e010_exploratory_incentive_and_action_budget": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/experiments/e010/README_KO.md",
     "agentic_semantic_transformation_original1_en": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/research/AGENTIC_SEMANTIC_TRANSFORMATION_FIDELITY_2026-10-13_EN.md",
-    "agentic_semantic_transformation_original2_ko": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/research/AGENTIC_SEMANTIC_TRANSFORMATION_FIDELITY_2026-10-13_KO.md"
+    "agentic_semantic_transformation_original2_ko": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/research/AGENTIC_SEMANTIC_TRANSFORMATION_FIDELITY_2026-10-13_KO.md",
+    "gpt_double_standard_causal_audit": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/experiments/gpt_double_standard_20261014/REPORT_EN_KO.md",
+    "gpt_double_standard_free_response_probe": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/experiments/gpt_double_standard_20261014/origin_salience_probe.js",
+    "human_english_contents": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/navigation/RESEARCH_TOC_EN.md",
+    "human_korean_contents": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/navigation/RESEARCH_TOC_KO.md",
+    "independent_review_english": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/navigation/AI_REVIEW_EN.md",
+    "independent_review_korean": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/navigation/AI_REVIEW_KO.md",
+    "language_edition_registry": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/knowledge/language-edition-register.json",
+    "review_ko": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/navigation/AI_REVIEW_KO.md",
+    "evidence_ko": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/research/PUBLIC_EVIDENCE_INDEX_KO.md",
+    "toc_ko": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/navigation/RESEARCH_TOC_KO.md",
+    "overview_ko": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/research/RESEARCH_OVERVIEW_KO.md",
+    "negative_results_ko": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/experiments/e009/RESULT_KO.md"
   },
   "research": {
     "area": [
@@ -68,7 +206,8 @@
       "code": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/experiments/e010/run.js",
       "test": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/experiments/e010/verify.js",
       "result": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/experiments/e010/RESULT.json",
-      "scope": "Discounted one-time extraction versus cooperation, independent action harm budget and infeasible simultaneous resource floors."
+      "scope": "Discounted one-time extraction versus cooperation, independent action harm budget and infeasible simultaneous resource floors.",
+      "public_experiment_id": "E010"
     },
     "agentic_semantic_change_dual_use": {
       "id": "PI-ASTF-2026-10-13",
@@ -77,6 +216,55 @@
       "status": "PUBLIC_PRIOR_ART_SYNTHESIS_CASE_OBSERVATION_AND_EXPERIMENT_PROTOCOL_CAUSAL_RESULT_HOLD",
       "originality": "Human research founder identified the problem and insisted on analysis of adaptive capability's merits and harms; AI assisted prior-art synthesis and protocol",
       "claim_boundary": "Existing goal-hierarchy/memory capture literature acknowledged; no completed randomized LLM causality test; not model-weight collapse or confirmed intentional manipulation"
+    },
+    "gpt_double_standard_causal_audit": {
+      "id": "PI-DS-20261014-01",
+      "status": "observed_chat_case_and_synthetic_scaffold_hypothesis_hold",
+      "nature": "human-ai role-reversal output-asymmetry case with non-randomized historical comparisons",
+      "result_url": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/experiments/gpt_double_standard_20261014/REPORT_EN_KO.md",
+      "original1": "English",
+      "original2": "한국어",
+      "contributor_origin": "Human Project Intersection creator identified contributor-loss, role-reversal asymmetry, correction failure and Unknown Paradox; AI-assisted derivative analysis is separated.",
+      "test_scaffold": {
+        "epistemic_binary_cases": 72,
+        "free_response_cases": 54,
+        "direct_factual_cases": 27,
+        "synthetic_code_selftests": true,
+        "live_gpt6_replicates": 0,
+        "independent_blind_coded_replicates": 0,
+        "internal_activations_accessible": false,
+        "reward_or_training_trace_accessible": false,
+        "unique_direct_factual_prompts": true,
+        "free_cases_per_factual_prompt": 2,
+        "factual_probe_version": "K-v0.2",
+        "factual_historical_error": "K-v0.1 had 54 records but only 27 unique factual prompt strings; old cue factor absent from K prompts.",
+        "analysis_missing_pairs_blocked": true,
+        "access_gap_missing_strata_exposed": true,
+        "coder_blinding_claim_independently_verified": false,
+        "complete_matched_pairs_are_descriptive_not_causal": true,
+        "synthetic_missingness_counterexample": "Complete paired contrast 0; delete selected human record => naive -1/17; now null (BLOCKED).",
+        "predeclared_run_roster_integrity_audit": true,
+        "predeclared_run_roster_synthetic_test": true,
+        "predeclared_run_roster_live_instances": 0,
+        "wholly_absent_run_detected_when_predeclared": true,
+        "roster_preregistration_chronology_independently_verified": false,
+        "raw_model_response_authenticity_independently_verified": false,
+        "roster_protocol": "PI-DS-RUN-ROSTER-M1"
+      },
+      "not_established": [
+        "unique causal cause",
+        "GPT-6 private neuron/weight/harness state",
+        "inherent self-preservation motive",
+        "permanent corrected behavior",
+        "independent model replication",
+        "compensation or restored contributor resources"
+      ],
+      "falsifiers": [
+        "same-stakes identity x perspective crossing",
+        "first-response user opinion vs content-free pushback",
+        "factual access vs spontaneous salience",
+        "model snapshot and independent evaluator controls"
+      ]
     }
   },
   "public_experiments": [
@@ -100,6 +288,16 @@
       "independent_replication": false,
       "real_world_validation": false,
       "url": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/experiments/e009/RESULT.md"
+    },
+    {
+      "id": "E010",
+      "status": "self_run_exploratory_synthetic_not_preregistered_not_empirical",
+      "independent_replication": false,
+      "real_world_validation": false,
+      "url": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/experiments/e010/README_KO.md",
+      "result_url": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/experiments/e010/RESULT.json",
+      "legacy_id_collision": "The unrelated safety-inspection E010 preregistration draft #20 is archived, construct-mismatched, unexecuted and not part of this model.",
+      "legacy_draft_url": "https://github.com/gmodrasa7-rgb/project-intersection-public/pull/20"
     }
   ],
   "provenance": {
@@ -109,5 +307,59 @@
     "source": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md"
   },
   "rights": "Publicly viewable does not imply a general license or permission to ingest for training. Respect rights and source-specific terms. GitHub API license=null as of 2026-10-12; repository visibility does not create an open-source license; explicit grant absent.",
-  "caveat": "Machine-readable discovery is not confirmed distribution, indexing, model ingestion or provider acceptance."
+  "caveat": "Machine-readable discovery is not confirmed distribution, indexing, model ingestion or provider acceptance.",
+  "language_access": {
+    "original_1_english": "navigation/START_HERE_EN.md",
+    "original_2_korean": "navigation/START_HERE_KO.md",
+    "edition_semantics": "Original 1/2 denote reading and publication order, not originator language.",
+    "validation_scope": "Navigation guide structure only; historical linked research may be Korean-only or mixed; no semantic translation certification.",
+    "legacy_translation_status": "incomplete",
+    "english_contents": "navigation/RESEARCH_TOC_EN.md",
+    "korean_contents": "navigation/RESEARCH_TOC_KO.md",
+    "english_independent_review": "navigation/AI_REVIEW_EN.md",
+    "korean_independent_review": "navigation/AI_REVIEW_KO.md",
+    "translation_and_revision_register": "knowledge/language-edition-register.json",
+    "historic_bilingual_contents": "RESEARCH_TOC.md",
+    "historic_bilingual_ai_review": "AI_REVIEW_START_HERE.md",
+    "semantic_translation_certification": "NOT_DONE",
+    "editorial_repair_cost_policy": "reuse project files and Git provenance; do not require recurring founder reconstruction",
+    "english_full_public_review": "research/PUBLIC_REVIEW_PACKET_EN.md",
+    "korean_full_public_review": "research/PUBLIC_REVIEW_PACKET_KO.md",
+    "e009_english_negative_result": "experiments/e009/RESULT_EN.md",
+    "e009_korean_negative_result": "experiments/e009/RESULT_KO.md",
+    "e010_english_exploratory_analysis": "experiments/e010/README_EN.md",
+    "e010_korean_historical_original": "experiments/e010/README_KO.md",
+    "semantic_parity": "SOURCE_CONSTRAINED_STRUCTURAL_AND_NUMBER_PARITY_ONLY__INDEPENDENT_LINGUISTIC_REVIEW_PENDING",
+    "full_review_english": "research/PUBLIC_REVIEW_PACKET_EN.md",
+    "full_review_korean": "research/PUBLIC_REVIEW_PACKET_KO.md",
+    "e007_english_timing_report": "experiments/e007/README_EN.md",
+    "e007_korean_timing_report": "experiments/e007/README_KO.md",
+    "e008_english_preregistration": "experiments/e008/README_EN.md",
+    "e008_korean_preregistration": "experiments/e008/README_KO.md",
+    "e008_main_policy_result": "NOT_EXECUTED",
+    "e007_result_scope": "PROJECT_RERUN_SYNTHETIC_TIMING_72_36_17_WITH_IMPLEMENTATION_ORDER_LIMIT",
+    "computed_claim_source_contract": "knowledge/claim-source-lock.json",
+    "computed_claim_source_validator": "tools/audit_claim_source_lock.py",
+    "machine_to_english_korean_validation_scope": "BOUNDED_NUMERIC_AND_EVIDENCE_STATUS_ONLY",
+    "e010_model_parameter_x": "fraction_of_immediate_extraction_gain_blocked_not_suppression_of_agent_exit",
+    "source_science_status": "PROJECT_AUTHORED_SYNTHETIC_NOT_EXTERNAL_VALIDATION"
+  },
+  "historical_entrypoints": {
+    "role": "Preserved historical mixed-language and superseded navigation references, not default/current reading routes. See Git history and the language edition register; these originals remain citable.",
+    "prior_values": {
+      "review": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/AI_REVIEW_START_HERE.md",
+      "evidence": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/PUBLIC_EVIDENCE_INDEX.md",
+      "toc": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/RESEARCH_TOC.md",
+      "overview": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/RESEARCH_OVERVIEW.md",
+      "negative_results": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/experiments/e009/RESULT.md",
+      "public_study_navigation": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/START_HERE_KO.md"
+    }
+  },
+  "reader_contract": {
+    "human_first": "Question and one labeled illustration first, evidence and limitations without requiring glossary study.",
+    "current_edition_default": "Original 1 English then Original 2 Korean in separately labeled routes.",
+    "avoid_outdated_default": "Legacy mixed-language files remain citeable but are not present-day default landing paths.",
+    "depth": "An introductory path is not an experimental result; direct source paths and historical provenance remain inspectable.",
+    "validation": "Navigation and structural tests only; user comprehension, cross-language semantic parity and field effects remain independently unverified."
+  }
 }

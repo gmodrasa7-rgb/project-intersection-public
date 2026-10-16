@@ -26,5 +26,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - name: Execute deterministic real-README adversarial and legitimacy controls
         run: python experiments/semantic_fidelity_probe/probe.py

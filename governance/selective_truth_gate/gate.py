@@ -3,6 +3,7 @@
 No text-only detector can infer a company's hidden intentions or verify payment.
 """
 import json
+import math
 import sys
 from pathlib import Path
 
@@ -12,6 +13,8 @@ DECISIONS = {"HOLD", "PASS", "FAIL"}
 INTENT_STATES = {"UNKNOWN", "ALLEGED", "DOCUMENTED"}
 
 def check(record):
+    if not isinstance(record, dict):
+        return ["record must be a JSON object"]
     errors = []
     def require(condition, message):
         if not condition:
@@ -58,10 +61,26 @@ def check(record):
         amount = ledger.get("amount")
         if ledger.get("status") == "UNMEASURED":
             require(amount is None, key + ": unmeasured must be null, not 0")
+        # Measured amounts must be finite, nonnegative quantities with a named
+        # unit. Python/JSON accept NaN/Infinity by default, even though those
+        # values cannot represent measured benefit or cost.
+        valid_amount = (type(amount) in (int, float)
+                        and amount >= 0
+                        and (type(amount) is int or math.isfinite(amount)))
         if ledger.get("status") == "MEASURED":
-            require(isinstance(amount, (int, float)) and not isinstance(amount, bool),
-                    key + ": measured needs numeric amount")
-            require(bool(ledger.get("evidence")), key + ": measured needs evidence")
+            require(valid_amount, key + ": measured amount must be finite nonnegative numeric")
+            require(isinstance(ledger.get("unit"), str) and bool(ledger.get("unit", "").strip()),
+                    key + ": measured amount requires an explicit unit")
+            require(isinstance(ledger.get("evidence"), list) and bool(ledger.get("evidence")),
+                    key + ": measured amount requires source evidence list")
+        if ledger.get("status") == "PARTIAL":
+            require(amount is None or valid_amount,
+                    key + ": partial amount must be null or finite nonnegative numeric")
+            if amount is not None:
+                require(isinstance(ledger.get("unit"), str) and bool(ledger.get("unit", "").strip()),
+                        key + ": partial numeric amount requires an explicit unit")
+                require(isinstance(ledger.get("evidence"), list) and bool(ledger.get("evidence")),
+                        key + ": partial numeric amount requires source evidence list")
 
     require(bool(str(record.get("material_omissions_or_unknowns", "")).strip()),
             "must state omitted facts or explicit unknowns")
@@ -89,9 +108,13 @@ def check(record):
     if resolution == "OUTCOME_COMPLETED":
         require(outcome.get("state") == "VERIFIED",
                 "cannot claim completion without independently verified outcome")
+        require(reported.get("state") in {"EXECUTED", "READBACK_VERIFIED"},
+                "completion cannot precede execution of the reported action")
     if record.get("decision") == "PASS":
         require(outcome.get("state") == "VERIFIED",
                 "PASS requires verified outcome; missing is HOLD, not success")
+        require(reported.get("state") in {"EXECUTED", "READBACK_VERIFIED"},
+                "PASS cannot be inferred from merely configured or unstarted action")
     require(record.get("decision") in DECISIONS, "decision must be PASS/HOLD/FAIL")
     return errors
 

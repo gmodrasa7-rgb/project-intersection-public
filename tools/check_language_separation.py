@@ -1,0 +1,288 @@
+#!/usr/bin/env python3
+"""Public-language reading guard. Structural checks are not translation certification.
+
+Hard-fail the current entry pair and README separation. Legacy files are inventoried,
+not silently deleted or declared translated. New Markdown files can be checked in CI.
+"""
+from __future__ import annotations
+
+import argparse
+import re
+from pathlib import Path
+from urllib.parse import urlsplit, unquote
+
+ROOT = Path(__file__).resolve().parents[1]
+EN_PATH = "navigation/START_HERE_EN.md"
+KO_PATH = "navigation/START_HERE_KO.md"
+EN_README = "## Original 1 — English | Founding Purpose"
+KO_README = "## 원본2 — 한국어 | 창시 목적 전문 대응본"
+SECTIONS = ("purpose", "levels", "evidence", "ccph", "rights", "navigation", "limitations")
+REQUIRED = (
+    "../README.md",
+    "../RESEARCH_TOC.md",
+    "../ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md",
+    "../CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md",
+)
+MD_LINK = re.compile(r"!?(?:\[[^\]\n]*\])\(([^)\n]+)\)")
+SECTION = re.compile(r"<!-- PI-SECTION: ([a-z-]+) -->")
+KOREAN = re.compile(r"[가-힣ㄱ-ㅎㅏ-ㅣ]")
+FENCED = re.compile(r"(?ms)^\s*```.*?^\s*```\s*$")
+
+
+def human_text(body: str) -> str:
+    """Remove non-prose paths and protected markup before checking language leakage."""
+    body = re.sub(r"<!--.*?-->", "", body, flags=re.S)
+    body = FENCED.sub("", body)
+    body = re.sub(r"`[^`\n]+`", "", body)
+    body = MD_LINK.sub(lambda m: m.group(0).split("](")[0] + "]", body)
+    body = re.sub(r"https?://\S+", "", body)
+    return body
+
+
+def readme_errors(body: str) -> list[str]:
+    errors = []
+    if body.count(EN_README) != 1 or body.count(KO_README) != 1:
+        return ["README_ORIGINAL_MARKERS_MISSING_OR_DUPLICATE"]
+    a, b = body.index(EN_README), body.index(KO_README)
+    if a >= b:
+        return ["README_ORIGINAL_ORDER_REVERSED"]
+    english = human_text(body[a:b])
+    if KOREAN.search(english):
+        errors.append("README_ENGLISH_SECTION_CONTAINS_KOREAN_PROSE")
+    if "## Start here / 여기서 시작" in body:
+        errors.append("README_LEGACY_MIXED_ROUTER_NOT_REMOVED")
+    first_en = body.split(EN_README, 1)[1].split(KO_README, 1)[0]
+    first_ko = body.split(KO_README, 1)[1]
+    if "navigation/START_HERE_KO.md" not in first_en[:300]:
+        errors.append("README_TOP_KOREAN_SWITCH_MISSING")
+    if "navigation/START_HERE_EN.md" not in first_ko[:300]:
+        errors.append("README_TOP_ENGLISH_SWITCH_MISSING")
+    for link in ("navigation/START_HERE_EN.md", "navigation/START_HERE_KO.md"):
+        if link not in body:
+            errors.append("README_LANGUAGE_ROUTE_MISSING:" + link)
+    # The README keeps stable anchors; detailed definitions live in paired
+    # research overviews so newcomers need not traverse the specialist tables.
+    for heading, route, section in (
+        ("### Ten core concepts", "research/RESEARCH_OVERVIEW_EN.md#ten-core-concepts", first_en),
+        ("### 핵심용어 10개", "research/RESEARCH_OVERVIEW_KO.md#핵심용어-10개", first_ko),
+    ):
+        if section.count(heading) != 1:
+            errors.append("README_CORE_CONCEPT_HEADING_MISSING_OR_DUPLICATE:" + heading)
+        if route not in section:
+            errors.append("README_SPECIALIST_REFERENCE_ROUTE_MISSING:" + heading)
+    if "Continuance–Contribution Pathways Hypothesis" not in first_en or "내부의 가설 연구축" not in first_ko:
+        errors.append("README_CCPH_DATABASE_VERSUS_HYPOTHESIS_BOUNDARY_MISSING")
+    # Check information order, not the wording of the illustration or the scientific claim.
+    for lang, section, intro, reading, glossary, paths in (
+        ("EN", first_en, "**Opening thought experiment:**", "**First reading path:**",
+         "### Ten core concepts", ("research/RESEARCH_OVERVIEW_EN.md",
+          "research/CCPH_RESEARCH_ATLAS_EN.md", "experiments/e009/RESULT_EN.md")),
+        ("KO", first_ko, "**시작 질문:**", "**처음 읽을 자료:**",
+         "### 핵심용어 10개", ("research/RESEARCH_OVERVIEW_KO.md",
+          "research/CCPH_RESEARCH_ATLAS_KO.md", "experiments/e009/RESULT_KO.md")),
+    ):
+        if any(token not in section for token in (intro, reading, glossary)):
+            errors.append("README_HUMAN_FIRST_SECTION_MISSING:" + lang)
+            continue
+        if not section.index(intro) < section.index(reading) < section.index(glossary):
+            errors.append("README_HUMAN_FIRST_ORDER_INVERTED:" + lang)
+        if any(target not in section[:section.index(glossary)] for target in paths):
+            errors.append("README_HUMAN_FIRST_READING_ROUTES_MISSING:" + lang)
+    return errors
+
+
+def specialist_concept_errors(english_overview: str, korean_overview: str) -> list[str]:
+    """Keep all ten technical claims in both full-language research documents."""
+    errors = []
+    for label, body, heading, term, ccph in (
+        ("EN", english_overview, "### Ten core concepts",
+         "ICM — Intersection of Minimum Self-Interest",
+         "CCPH — contribution and impact provenance database"),
+        ("KO", korean_overview, "### 핵심용어 10개",
+         "ICM — 최소 사심 교집합", "CCPH — 기여·영향 계보 데이터베이스"),
+    ):
+        if body.count(heading) != 1:
+            errors.append("SPECIALIST_TERMS_HEADING_MISSING_OR_DUPLICATE:" + label)
+            continue
+        tail = body.split(heading, 1)[1]
+        ranked = re.findall(r"(?m)^\| (?:[1-9]|10) \|", tail)
+        if len(ranked) != 10 or term not in tail or ccph not in tail:
+            errors.append("SPECIALIST_TEN_TERMS_LOST:" + label)
+    return errors
+
+
+def guide_errors(path: str, body: str, language: str) -> list[str]:
+    errors = []
+    mirror = KO_PATH if language == "en" else EN_PATH
+    if f"<!-- PI-LANGUAGE: {language} -->" not in body:
+        errors.append(f"{path}:LANGUAGE_DECLARATION_MISSING")
+    if f"<!-- PI-MIRROR: {mirror} -->" not in body:
+        errors.append(f"{path}:MIRROR_DECLARATION_MISSING")
+    if SECTION.findall(body) != list(SECTIONS):
+        errors.append(f"{path}:SECTIONS_MISSING_REORDERED_OR_DUPLICATED")
+    if language == "en":
+        if not body.startswith("# Start Here — Original 1: English"):
+            errors.append(f"{path}:EN_FIRST_EDITION_LABEL_MISSING")
+        if KOREAN.search(human_text(body)):
+            errors.append(f"{path}:ENGLISH_PROSE_CONTAINS_KOREAN")
+    else:
+        if not body.startswith("# 공개자료실 시작 — 원본2: 한국어"):
+            errors.append(f"{path}:KO_SECOND_EDITION_LABEL_MISSING")
+        if len(KOREAN.findall(human_text(body))) < 100:
+            errors.append(f"{path}:INSUFFICIENT_KOREAN_READING_CONTENT")
+    links = set(MD_LINK.findall(body))
+    required = REQUIRED + (
+        "../research/PUBLIC_EVIDENCE_INDEX_EN.md" if language == "en" else "../research/PUBLIC_EVIDENCE_INDEX_KO.md",
+        "../research/RESEARCH_OVERVIEW_EN.md" if language == "en" else "../research/RESEARCH_OVERVIEW_KO.md",
+        "../research/RESEARCH_STATUS_POLICY_EN.md" if language == "en" else "../research/RESEARCH_STATUS_POLICY_KO.md",
+        "../experiments/e009/RESULT_EN.md" if language == "en" else "../experiments/e009/RESULT_KO.md",
+        "../research/PUBLIC_REVIEW_PACKET_EN.md" if language == "en" else "../research/PUBLIC_REVIEW_PACKET_KO.md",
+        "../experiments/e010/README_EN.md" if language == "en" else "../experiments/e010/README_KO.md",
+        "../experiments/e007/README_EN.md" if language == "en" else "../experiments/e007/README_KO.md",
+        "../experiments/e008/README_EN.md" if language == "en" else "../experiments/e008/README_KO.md",
+    )
+    for mandatory in required:
+        if mandatory not in links:
+            errors.append(f"{path}:REQUIRED_ROUTE_MISSING:{mandatory}")
+    # Opening explanation must precede the technical external-review matrix.
+    simple_opening = "Suppose one researcher" if language == "en" else "한 연구자가 다른 연구자의 경고를"
+    review_heading = "### External assessment: decision brief" if language == "en" else "### 외부 심사자를 위한 핵심 판단"
+    if simple_opening not in body or review_heading not in body or body.index(simple_opening) > body.index(review_heading):
+        errors.append(f"{path}:HUMAN_EXPLANATION_AFTER_EXPERT_REVIEW_OR_MISSING")
+    if language == "en" and "START_HERE_KO.md" not in body:
+        errors.append(f"{path}:COUNTERPART_NOT_DISCOVERABLE")
+    if language == "ko" and "START_HERE_EN.md" not in body:
+        errors.append(f"{path}:COUNTERPART_NOT_DISCOVERABLE")
+    return errors
+
+
+def local_link_errors(path: str, body: str) -> list[str]:
+    failures = []
+    parent = (ROOT / path).parent
+    for raw in MD_LINK.findall(body):
+        url = urlsplit(raw)
+        if url.scheme or url.netloc or raw.startswith("#"):
+            continue
+        target = unquote(url.path)
+        if target and not (parent / target).exists():
+            failures.append(f"{path}:BROKEN_LINK:{target}")
+    return failures
+
+
+def edition_of(path: str) -> str:
+    if path.endswith("_EN_KO.md") or path.endswith("_BILINGUAL.md"):
+        return "dual"
+    if path.endswith("_EN.md"):
+        return "en"
+    if path.endswith("_KO.md"):
+        return "ko"
+    return "unspecified"
+
+
+def new_files_errors(paths: list[str]) -> list[str]:
+    errors = []
+    for name in paths:
+        if not name.endswith(".md") or name.startswith(".github/"):
+            continue
+        # Existing legacy paths are not reclassified retroactively here.
+        kind = edition_of(name)
+        p = ROOT / name
+        if not p.is_file():
+            errors.append(f"ADDED_DOCUMENT_MISSING:{name}")
+            continue
+        body = p.read_text(encoding="utf-8")
+        if kind in ("en", "ko"):
+            if kind == "en":
+                partner = name[:-6] + "_KO.md"
+                if KOREAN.search(human_text(body)):
+                    errors.append(f"ADDED_ENGLISH_DOCUMENT_HAS_KOREAN_PROSE:{name}")
+            else:
+                partner = name[:-6] + "_EN.md"
+            if not (ROOT / partner).exists():
+                errors.append(f"ADDED_DOCUMENT_MIRROR_MISSING:{name}:{partner}")
+        elif kind == "dual":
+            en_at = re.search(r"(?m)^#{1,3}\s+.*(?:Original\s*1|원본\s*1)", body, re.I)
+            ko_at = re.search(r"(?m)^#{1,3}\s+.*(?:Original\s*2|원본\s*2)", body, re.I)
+            if not en_at or not ko_at or en_at.start() >= ko_at.start():
+                errors.append(f"ADDED_BILINGUAL_DOCUMENT_NOT_SEPARATED:{name}")
+        elif not re.search(r"<!-- PI-LANGUAGE-EXEMPT: .+ -->", body):
+            errors.append(f"ADDED_MARKDOWN_LACKS_LANGUAGE_EDITION_OR_JUSTIFIED_EXCEPTION:{name}")
+    return errors
+
+
+def legacy_inventory() -> str:
+    files = list(ROOT.rglob("*.md"))
+    buckets = {name: 0 for name in ("en", "ko", "dual", "unspecified")}
+    mixed = []
+    for path in files:
+        relative = path.relative_to(ROOT).as_posix()
+        buckets[edition_of(relative)] += 1
+        body = human_text(path.read_text(encoding="utf-8"))
+        if KOREAN.search(body) and len(re.findall(r"\b[A-Za-z]{4,}\b", body)) > 40:
+            mixed.append(relative)
+    # This deliberately includes technical terminology and references: REVIEW SIGNAL ONLY.
+    return (f"Inventory: {len(files)} Markdown; naming en={buckets['en']}, "
+            f"ko={buckets['ko']}, dual={buckets['dual']}, "
+            f"unspecified={buckets['unspecified']}. "
+            f"Possible mixed-script review candidates={len(mixed)} (heuristic, not defects). "
+            f"Examples: {', '.join(mixed[:7])}")
+
+
+def self_test(en: str, ko: str, readme: str) -> None:
+    assert not guide_errors(EN_PATH, en, "en"), guide_errors(EN_PATH, en, "en")
+    assert not guide_errors(KO_PATH, ko, "ko"), guide_errors(KO_PATH, ko, "ko")
+    assert not readme_errors(readme), readme_errors(readme)
+    specialized_en = (ROOT / "research/RESEARCH_OVERVIEW_EN.md").read_text(encoding="utf-8")
+    specialized_ko = (ROOT / "research/RESEARCH_OVERVIEW_KO.md").read_text(encoding="utf-8")
+    assert not specialist_concept_errors(specialized_en, specialized_ko)
+    assert specialist_concept_errors(
+        specialized_en.replace("CCPH — contribution and impact provenance database",
+                               "CCPH — validated harness", 1), specialized_ko)
+    assert specialist_concept_errors(
+        specialized_en, specialized_ko.replace("### 핵심용어 10개", "### 소실된 제목", 1))
+    mutations = [
+        guide_errors(EN_PATH, en.replace("Original 1: English", "English", 1), "en"),
+        guide_errors(EN_PATH, en.replace("## 4. CCPH", "## 4. 한국어 CCPH", 1), "en"),
+        guide_errors(EN_PATH, en.replace("<!-- PI-SECTION: ccph -->", "", 1), "en"),
+        guide_errors(KO_PATH, ko.replace("<!-- PI-MIRROR:", "<!-- MISSING:", 1), "ko"),
+        guide_errors(KO_PATH, ko.replace("../experiments/e009/RESULT_KO.md", "../none.md"), "ko"),
+        readme_errors(readme.replace(KO_README, "## Korean version", 1)),
+        readme_errors(readme.replace("research/RESEARCH_OVERVIEW_EN.md#ten-core-concepts", "research/obsolete.md#ten-core-concepts", 1)),
+        readme_errors(readme.replace("### 핵심용어 10개", "### 이름이 지워짐", 1)),
+        readme_errors(readme.replace("**Opening thought experiment:**", "**Other:**", 1)),
+        readme_errors(readme.replace("**시작 질문:**", "**다른 주제:**", 1)),
+        guide_errors(EN_PATH, en.replace("Suppose one researcher", "Technical report first", 1), "en"),
+        guide_errors(KO_PATH, ko.replace("한 연구자가 다른 연구자의 경고를", "전문용어 목록을", 1), "ko"),
+    ]
+    assert all(mutations), "Mutation bypassed language guard"
+    print(f"Language routing mutation regressions: {len(mutations)} / {len(mutations)} PASS")
+
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--self-test", action="store_true")
+    parser.add_argument("--added", nargs="*", default=[])
+    args = parser.parse_args()
+    en = (ROOT / EN_PATH).read_text(encoding="utf-8")
+    ko = (ROOT / KO_PATH).read_text(encoding="utf-8")
+    readme = (ROOT / "README.md").read_text(encoding="utf-8")
+    failures = (guide_errors(EN_PATH, en, "en") +
+                guide_errors(KO_PATH, ko, "ko") +
+                readme_errors(readme) +
+                specialist_concept_errors(
+                    (ROOT / "research/RESEARCH_OVERVIEW_EN.md").read_text(encoding="utf-8"),
+                    (ROOT / "research/RESEARCH_OVERVIEW_KO.md").read_text(encoding="utf-8")) +
+                local_link_errors(EN_PATH, en) +
+                local_link_errors(KO_PATH, ko) +
+                new_files_errors(args.added))
+    if failures:
+        raise SystemExit("LANGUAGE AUDIT FAIL:\n" + "\n".join(failures))
+    print("Language entry separation, mirrored structure and local links: PASS")
+    print(legacy_inventory())
+    if args.self_test:
+        self_test(en, ko, readme)
+    print("LIMIT: structural/script checks do not certify translation parity or scientific validity.")
+
+
+if __name__ == "__main__":
+    main()

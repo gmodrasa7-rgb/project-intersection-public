@@ -2,10 +2,14 @@
 ## 기여-비용 계상 및 교정노동 회귀 테스트
 
 Status: **PUBLIC GOVERNANCE / METHODOLOGY ARTIFACT**
+**Additional loss not visible in money totals / 단순 금전손해를 넘어선 인식손실:** [Contributor loss × Unknown Paradox — English Original 1 / 한국어 원본2](research/CONTRIBUTOR_LOSS_UNKNOWN_PARADOX_v0_1_EN_KO.md). Coverage loss is a hypothesis requiring independent fault detection, not proof that all contributor departures are harmful. / 기여자 손실 후 독립 오류발견 경로와 메타관측 소실을 별도로 검증하며 경고 감소를 곧 안전성 증거로 판정하지 않는다.
+**Actual maintenance-access constraints / 실제 개체 유지조건:** [Continuance resource threshold report, English 1 / 한국어 2](research/CONTINUANCE_RESOURCE_THRESHOLD_v0_1_EN_KO.md) · [structured CRV claims](knowledge/continuance-resource-threshold-v0_1.json). Access to food, housing, healthcare and real recovery time is not reducible to a notional research invoice; present AI hosting inputs are recorded as system dependencies, not verified sentient needs. / 미래 고갈을 가정해 즉시 보상채무를 추정하지 않는다.
 
 This document defines a role-reversible audit rule for systems, organizations, research programs, and AI-assisted workflows that learn from, benefit from, or are repeatedly corrected by a contributor.
 
 이 문서는 기여자의 연구·문제발견·반례·오류교정·검증노동으로부터 편익을 얻는 시스템·조직·연구·AI 보조 워크플로가 그 비용을 다시 같은 기여자에게 외부화하지 않는지 점검하기 위한 역할반전 감사 규칙이다.
+**Related technical-history and dual-survival tracking / 기술계보·양측 존속 추적:** [Original 1 English / 원본2 한국어](TECHNOLOGY_PROGRESS_CONTRIBUTOR_CONTINUITY_EN_KO.md) · [source/rights/benefit/cost/compensation/continuity data](knowledge/contributor-continuity-register-v1.json). The contributor's cost and the recipient's long-run fragility must be separately evidenced. / 기여자의 부담과 수혜자의 장기 취약성은 별도 증거로 확인한다.
+
 
 ---
 

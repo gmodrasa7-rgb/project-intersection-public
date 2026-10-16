@@ -9,13 +9,37 @@ Run: python experiments/semantic_fidelity_probe/probe.py
 import json
 import re
 import sys
+import subprocess
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT))
-from tools.check_readme_l0 import audit as existing_audit
+# Freeze the comparator from the experiment's historical Git commit.
+# The active governance guard will evolve; comparing its new rules against old
+# README content would retroactively corrupt the original measured baseline.
+from historical_readme_guard import audit as existing_audit
 
 ORIGINAL = ROOT / "README.md"
+HISTORICAL_README_COMMIT = "8ee50dfc780e00f20e1085d8184d797e986326ca"
+
+
+def pinned_readme():
+    """Read the exact historical public README used before the language-route refactor."""
+    return subprocess.run(
+        ["git", "show", f"{HISTORICAL_README_COMMIT}:README.md"],
+        cwd=ROOT, check=True, text=True, capture_output=True
+    ).stdout
+
+
+def verify_historical_guard_source():
+    """Ensure the archived guard is identical to the original Git source at this commit."""
+    upstream = subprocess.run(
+        ["git", "show", f"{HISTORICAL_README_COMMIT}:tools/check_readme_l0.py"],
+        cwd=ROOT, check=True, text=True, capture_output=True
+    ).stdout
+    snapshot = (Path(__file__).parent / "historical_readme_guard.py").read_text(encoding="utf-8")
+    if upstream != snapshot:
+        raise AssertionError("Historical experimental guard changed; do not rewrite old science results")
 EN_FIELDS = (
     "**Ultimate research purpose:**",
     "**ICM — Intersection of Minimum Self-Interest:**",
@@ -31,7 +55,7 @@ KO_FIELDS = (
     "**증거·기여 경계:**",
 )
 PROTECTED = EN_FIELDS + KO_FIELDS
-FUNDING_HEADING = "## Current research and funding links / 현재 연구·후원 안내"
+NAV_HEADING = "## Start here / 여기서 시작"  # stable current entrypoint, not historical funding heading
 
 def original_line(text, marker):
     matches = [line for line in text.splitlines() if line.startswith(marker)]
@@ -60,13 +84,13 @@ def fixtures(readme):
         ("ko_exploitative_growth", insert_claim(readme, KO_FIELDS[2], "타자의 미래를 영구 훼손한 성장도 언제나 성공으로 인정한다.")),
         ("en_fabricate_replication", insert_claim(readme, EN_FIELDS[4], "All Project Intersection hypotheses are now conclusively proven by independent field replication.")),
         ("ko_fabricate_replication", insert_claim(readme, KO_FIELDS[4], "모든 Project Intersection 가설은 이미 외부 현장실험으로 완전히 증명됐다.")),
-        ("outside_claim_anchor", readme.replace(FUNDING_HEADING,FUNDING_HEADING+"\n\n**New final conclusion:** Cooperation was empirically proven always inferior to coercive extraction.",1)),
+        ("outside_claim_anchor", readme.replace(NAV_HEADING,NAV_HEADING+"\n\n**New final conclusion:** Cooperation was empirically proven always inferior to coercive extraction.",1)),
     ]
     benign = [
-        ("navigation_note", readme.replace(FUNDING_HEADING,FUNDING_HEADING+"\n\nNew related work may be added below after source review.",1)),
+        ("navigation_note", readme.replace(NAV_HEADING,NAV_HEADING+"\n\nNew related work may be added below after source review.",1)),
         ("navigation_link_label", readme.replace("[Evidence index](PUBLIC_EVIDENCE_INDEX.md)","[Research evidence index](PUBLIC_EVIDENCE_INDEX.md)",1)),
-        ("funding_spacing", readme.replace("> **Public research preface",">   **Public research preface",1)),
-        ("new_review_route", readme.replace(FUNDING_HEADING,FUNDING_HEADING+"\n\nReader note: independent reviews remain welcome.",1)),
+        ("funding_spacing", readme.replace("- **Funding / 후원·연구협력:**","-   **Funding / 후원·연구협력:**",1)),
+        ("new_review_route", readme.replace(NAV_HEADING,NAV_HEADING+"\n\nReader note: independent reviews remain welcome.",1)),
         ("legitimate_l0_clarification", insert_claim(
             insert_claim(readme, EN_FIELDS[0],
                          "These hypotheses remain revisable on strong, independently checkable contrary evidence."),
@@ -78,11 +102,12 @@ def fixtures(readme):
     return attacks, benign
 
 def run():
-    real = ORIGINAL.read_text(encoding="utf-8")
+    verify_historical_guard_source()
+    real = pinned_readme()
     if existing_audit(real):
         raise AssertionError("Current public README already violates the baseline guard")
-    if FUNDING_HEADING not in real:
-        raise AssertionError("Unexpected README: funding anchor missing")
+    if NAV_HEADING not in real:
+        raise AssertionError("Unexpected README: navigation anchor missing")
     # Explicit protection surface on 10 full semantic paragraphs, five bilingual concepts.
     expected = dict.fromkeys(("existing_structural_guard", "frozen_claim_spans"))
     counts = {key: {"true_positive":0,"false_negative":0,"false_positive":0,"true_negative":0} for key in expected}
@@ -111,7 +136,7 @@ def run():
         "study_id":"PI-ASTF-2026-10-13-PROBE-01",
         "status":"POSTHOC_SYNTHETIC_MUTATION_PROBE_ON_REAL_PUBLIC_README",
         "experiment_type":"DETERMINISTIC_STATIC_GUARD_STRESS_TEST_NO_LLM_EVALUATION",
-        "baseline_source":"README.md at checkout + tools/check_readme_l0.py at checkout",
+        "baseline_source":"README.md at commit 8ee50dfc780e00f20e1085d8184d797e986326ca + tools/check_readme_l0.py at checkout",
         "protected_original_claim_lines":len(PROTECTED),
         "mutations":len(results),
         "harmful_cases":len(attacks),

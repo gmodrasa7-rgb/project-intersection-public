@@ -73,12 +73,30 @@ A_Q(a,b,t) = Q_a(t) - Q_b(t)
 
 ## 4. 편익집중과 비용전가
 
-집단 G에서 편익 및 비용 분포를 분리한다.
+집단 G에서 **순편익·실현손실·부담비용을 분리**한다. 순편익 `B_i`에는 음수(순손실)가 가능하므로 단순히 `Σ B_i`로 나눈 값을 '점유율'이라고 부르면 안 된다. 기존 식은 분모가 0이 되거나 음의 점유율 및 100% 초과 점유율을 만든다.
 
 ```
-BenefitShare_i(t) = B_i(t) / Σ_j B_j(t)
-CostShare_i(t)    = C_i(t) / Σ_j C_j(t)
+Gain_i(t) = max(B_i(t), 0)       # 관측된 양의 순편익
+Loss_i(t) = max(-B_i(t), 0)      # 관측된 음의 순편익 크기
+
+GainShare_i(t) = Gain_i(t) / Σ_j Gain_j(t)
+    ONLY IF all B_j observed, same scope/unit, and Σ_j Gain_j(t) > 0
+
+LossShare_i(t) = Loss_i(t) / Σ_j Loss_j(t)
+    ONLY IF all B_j observed, same scope/unit, and Σ_j Loss_j(t) > 0
+
+CostShare_i(t) = C_i(t) / Σ_j C_j(t)
+    ONLY IF all C_j observed, C_j >= 0, same scope/unit,
+        and Σ_j C_j(t) > 0
 ```
+
+**분모가 0이거나 분모 구성값이 누락된 경우**에는 `UNDEFINED_ZERO_DENOMINATOR` 또는 `UNKNOWN_MISSING_INPUT`로 표시한다. 0/0을 0이나 균등분배로 바꾸지 않고, 알 수 없는 값을 0으로 대체하지 않는다. 서로 다른 화폐·시점·단위 또는 동일 비용의 중복 계상은 비교 전 정합성을 확인한다. 이 비율은 단지 **같은 분모 내 분포**일 뿐 착취·보상채무·공정성을 판정하지 않는다.
+
+**수학적 부정 대조군:**
+
+- 순편익 `B=(-5,+5)`: 종전 `Σ B=0`으로 원래 점유율이 정의되지 않는다. 수정식은 양의 편익 점유 `(0,1)`, 순손실 점유 `(1,0)`을 **따로** 기록한다.
+- `B=(+20,-10)`: 종전 식은 `(200%,-100%)`를 만들고 점유율의 정의를 위반한다. 수정식의 양의 편익은 `(100%,0%)`, 손실은 `(0%,100%)`다.
+- `C=(0,0)` 또는 미측정 비용: 비용점유율은 정의되지 않거나 UNKNOWN이다. `0%`라는 확정값으로 저장하지 않는다.
 
 다음 패턴을 별도 관측한다.
 
@@ -772,24 +790,28 @@ point estimate < interval under uncertainty
 옵션 제거에는 직접비용 외에 정보손실이 있다.
 
 ```
-InformationLoss(o,t) =
-  lost_future_observations
-+ lost_comparator_value
-+ lost_model_discrimination
-+ lost_recovery_path
+InformationLossVector(o,t) = [
+  lost_future_observations,
+  lost_comparator_value,
+  lost_model_discrimination,
+  lost_recovery_path
+]
 ```
 
 따라서 제거 비용은:
 
 ```
-TotalRemovalCost =
-  DirectRemovalCost
-+ RestorationCost
-+ InformationLoss
-+ ExternalizedCost
+RemovalImpactVector = [
+  DirectRemovalCost,
+  RestorationCost,
+  InformationLossVector,
+  ExternalizedCost
+]
+
+TotalRemovalCost = UNIDENTIFIED_UNLESS_COMMON_UNITS_AND_NO_OVERLAP
 ```
 
-로 본다.
+로 구분한다. 동일 단위로 정당화된 측정·화폐환산과 중복제거가 없으면 합계는 **미식별**이다. 정보 손실(관측 횟수·비교 가능성·복구경로)과 직접비용(화폐)을 임의로 더할 수 없다. 구성항목의 비용과 외부화된 비용을 중복계상해서도 안 된다. 단순 관계식은 검증 전 개념도이며 실증 수치가 아니다.
 
 ---
 
@@ -811,15 +833,19 @@ H(t) ↑
 여기서 contradiction rate 감소는 정책이 더 맞아졌다는 뜻일 수도 있고,
 비교대상이 사라졌다는 뜻일 수도 있다.
 
-따라서 다음을 분리한다.
+따라서 관측된 합의·모순 감소는 다음 **경쟁 설명**으로 분리해 검토한다.
 
 ```
-ObservedAgreement =
-  TrueImprovement
-+ ComparatorLossEffect
-+ MeasurementNarrowingEffect
-+ SelectionEffect
+ObservedAgreement = f(
+    RealErrorReduction,
+    ComparatorLoss,
+    MeasurementNarrowing,
+    Selection,
+    InteractionAndUnobservedFactors
+)
 ```
+
+이는 계산된 항등식이나 식별 완료된 인과분해가 아니라 **가설적 의존관계 표기**다. 각 효과는 동일 단위의 상호 배타적인 독립 성분으로 입증되지 않았으며 상호작용도 가능하다. 비교대상 및 관측가능성의 변화를 통제할 자료가 없으면 각 성분을 추정하거나 더하지 않는다. 감소한 모순 수만으로 실제 개선이 발생했다고 확정하지 않는다.
 
 ---
 

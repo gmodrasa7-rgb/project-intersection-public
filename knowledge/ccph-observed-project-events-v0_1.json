@@ -1,0 +1,323 @@
+{
+  "ledger_version": "0.1.0",
+  "dataset_name": "CCPH — observed real-world Project Intersection changes / Project Intersection 실제 연구 변경 관측",
+  "objective_en": "Collect real, verifiable changes produced during ordinary project research, rather than benchmark scores. Attach later confirmed intellectual and societal consequences without rewriting earlier uncertainty.",
+  "objective_ko": "별도 벤치마크 점수가 아니라 일상적인 실제 연구 수행의 변경·기여·비용과 후속 영향을 증거별로 누적하며, 미래 증거가 생기면 과거 판단을 버전으로 수정한다.",
+  "schema_ref": "knowledge/ccph-impact-lineage-event-schema-v0_1.json",
+  "coverage": {
+    "included_pr_numbers": [
+      167,
+      168,
+      169
+    ],
+    "recorded_event_count": 3,
+    "verified_changed_file_occurrences": 8,
+    "selection": "PURPOSIVE_NOT_EXHAUSTIVE",
+    "external_social_impact_verified": false,
+    "causal_benefit_estimates": 0,
+    "caveat": "Event and file counts are activity measurements, not impact-size, improvement percent, scientific validation, causal attribution or compensation assessment."
+  },
+  "source_boundary": "All evidence pointers are public GitHub repository URLs; third-party source bodies, conversation transcripts, private personal and financial data are not copied.",
+  "records": [
+    {
+      "schema_version": "0.1.0",
+      "event_id": "PI-CCPH-GH-PR-167",
+      "record_class": "REAL_OBSERVED",
+      "event_kind": "ATTRIBUTION_OR_REUSE",
+      "event_time": "2026-10-15T00:25:59Z",
+      "participants": [
+        {
+          "actor_ref": "PI_PUBLIC_REPOSITORY",
+          "actor_type": "GROUP",
+          "role": "Public research collaboration and target repository; not a legal person or sole inventor"
+        }
+      ],
+      "influence_edges": [],
+      "outcomes": [
+        {
+          "actor_ref": "PI_PUBLIC_REPOSITORY",
+          "ledger": "O_OUTCOME",
+          "direction": "UNKNOWN",
+          "measurement": "VERIFIED",
+          "quantity": 3,
+          "unit": "changed_files_in_merged_PR",
+          "description": "Merged 3 changed repository files introducing an AI-mediated impact lineage schema, the bilingual continuity policy extension and TOC link. / AI 매개 영향계보 스키마·영한 연구정본·목차 링크가 포함된 변경 파일 3개가 병합됨. File count measures changes, not usefulness, welfare or improvement.",
+          "evidence_ids": [
+            "GH-PR-167",
+            "GH-COMMIT-167"
+          ]
+        },
+        {
+          "actor_ref": "PI_PUBLIC_REPOSITORY",
+          "ledger": "A_ACTOR_CONTINUITY_AND_RIGHTS",
+          "direction": "UNKNOWN",
+          "measurement": "UNKNOWN",
+          "quantity": null,
+          "unit": null,
+          "description": "Actual contributor effort, compensation, lost opportunities, consent beyond public metadata, social benefit and harm not quantified.",
+          "evidence_ids": []
+        }
+      ],
+      "evidence": [
+        {
+          "evidence_id": "GH-PR-167",
+          "status": "PRIMARY",
+          "source_pointer": "https://github.com/gmodrasa7-rgb/project-intersection-public/pull/167",
+          "rights_or_permission": "UNKNOWN",
+          "independent_review": "NO"
+        },
+        {
+          "evidence_id": "GH-COMMIT-167",
+          "status": "PRIMARY",
+          "source_pointer": "https://github.com/gmodrasa7-rgb/project-intersection-public/commit/e081440a893d6b6c73169e956ebbb150ad5b0f38",
+          "rights_or_permission": "UNKNOWN",
+          "independent_review": "NO"
+        }
+      ],
+      "uncertainty": {
+        "unobserved_actors": "POSSIBLE",
+        "unobserved_edges": "POSSIBLE",
+        "selection_mechanism": "Nonrepresentative, deliberately selected adjacent merged PRs #167–169 in Project Intersection public repository; excludes private/offline work and other PRs.",
+        "counterfactual_identified": false,
+        "limitations": [
+          "A verified repository change is not an independently established causal improvement.",
+          "Prior art and named contributors to each component require distinct source-level audits.",
+          "No claim that this selection is complete or unbiased."
+        ]
+      },
+      "privacy_and_control": {
+        "publication_scope": "PUBLIC_NONIDENTIFYING",
+        "participant_consent": "PUBLIC_RECORD_WITH_REVIEW",
+        "subject_correction_channel": "https://github.com/gmodrasa7-rgb/project-intersection-public/issues",
+        "collect_only_minimum_data": true,
+        "retention_or_withdrawal_rule": "Link public provenance and allow versioned corrections. Handle requests affecting third-party privacy or law case by case; never re-publish private raw dialogue."
+      },
+      "review": {
+        "status": "UNREVIEWED",
+        "adjudicator_separation": "SAME_AS_RECORDER",
+        "unresolved_claims": [
+          "Marginal scientific improvement",
+          "Contribution and cost distribution",
+          "External downstream societal effects"
+        ],
+        "version_of_event": null
+      },
+      "traceability": {
+        "collection_mode": "PRESENT_OBSERVATION",
+        "recorded_at": "2026-10-15T00:43:10.705Z",
+        "rediscovered_at": null,
+        "upstream_event_refs": [],
+        "label_revision_refs": [],
+        "scope_limitations": [
+          "Only selected public GitHub changes, not full research history or offline influences."
+        ]
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "event_id": "PI-CCPH-GH-PR-168",
+      "record_class": "REAL_OBSERVED",
+      "event_kind": "VALIDATION_OR_ERROR_CORRECTION",
+      "event_time": "2026-10-15T00:31:44Z",
+      "participants": [
+        {
+          "actor_ref": "PI_PUBLIC_REPOSITORY",
+          "actor_type": "GROUP",
+          "role": "Public research collaboration and target repository; not a legal person or sole inventor"
+        }
+      ],
+      "influence_edges": [],
+      "outcomes": [
+        {
+          "actor_ref": "PI_PUBLIC_REPOSITORY",
+          "ledger": "O_OUTCOME",
+          "direction": "UNKNOWN",
+          "measurement": "VERIFIED",
+          "quantity": 4,
+          "unit": "changed_files_in_merged_PR",
+          "description": "Merged 4 changed files correcting CCPH's principal definition to a historical-present-future-traceable database, preserving previous text. / CCPH 최상위 정의를 과거·현재·미래 역추적 가능 데이터베이스로 정정하는 변경 파일 4개가 병합됨. File count measures changes, not usefulness, welfare or improvement.",
+          "evidence_ids": [
+            "GH-PR-168",
+            "GH-COMMIT-168"
+          ]
+        },
+        {
+          "actor_ref": "PI_PUBLIC_REPOSITORY",
+          "ledger": "A_ACTOR_CONTINUITY_AND_RIGHTS",
+          "direction": "UNKNOWN",
+          "measurement": "UNKNOWN",
+          "quantity": null,
+          "unit": null,
+          "description": "Actual contributor effort, compensation, lost opportunities, consent beyond public metadata, social benefit and harm not quantified.",
+          "evidence_ids": []
+        }
+      ],
+      "evidence": [
+        {
+          "evidence_id": "GH-PR-168",
+          "status": "PRIMARY",
+          "source_pointer": "https://github.com/gmodrasa7-rgb/project-intersection-public/pull/168",
+          "rights_or_permission": "UNKNOWN",
+          "independent_review": "NO"
+        },
+        {
+          "evidence_id": "GH-COMMIT-168",
+          "status": "PRIMARY",
+          "source_pointer": "https://github.com/gmodrasa7-rgb/project-intersection-public/commit/37bf7e2ddf884c84c7dd2aeea1bfa35107ce4550",
+          "rights_or_permission": "UNKNOWN",
+          "independent_review": "NO"
+        }
+      ],
+      "uncertainty": {
+        "unobserved_actors": "POSSIBLE",
+        "unobserved_edges": "POSSIBLE",
+        "selection_mechanism": "Nonrepresentative, deliberately selected adjacent merged PRs #167–169 in Project Intersection public repository; excludes private/offline work and other PRs.",
+        "counterfactual_identified": false,
+        "limitations": [
+          "A verified repository change is not an independently established causal improvement.",
+          "Prior art and named contributors to each component require distinct source-level audits.",
+          "No claim that this selection is complete or unbiased."
+        ]
+      },
+      "privacy_and_control": {
+        "publication_scope": "PUBLIC_NONIDENTIFYING",
+        "participant_consent": "PUBLIC_RECORD_WITH_REVIEW",
+        "subject_correction_channel": "https://github.com/gmodrasa7-rgb/project-intersection-public/issues",
+        "collect_only_minimum_data": true,
+        "retention_or_withdrawal_rule": "Link public provenance and allow versioned corrections. Handle requests affecting third-party privacy or law case by case; never re-publish private raw dialogue."
+      },
+      "review": {
+        "status": "UNREVIEWED",
+        "adjudicator_separation": "SAME_AS_RECORDER",
+        "unresolved_claims": [
+          "Marginal scientific improvement",
+          "Contribution and cost distribution",
+          "External downstream societal effects"
+        ],
+        "version_of_event": null
+      },
+      "traceability": {
+        "collection_mode": "PRESENT_OBSERVATION",
+        "recorded_at": "2026-10-15T00:43:10.705Z",
+        "rediscovered_at": null,
+        "upstream_event_refs": [
+          {
+            "event_id": "PI-CCPH-GH-PR-167",
+            "relation_status": "DOCUMENTED_EXPOSURE",
+            "evidence_ids": [
+              "GH-PR-168"
+            ],
+            "notes": "Successive explicit project documentation correction, not exclusive causal attribution."
+          }
+        ],
+        "label_revision_refs": [],
+        "scope_limitations": [
+          "Only selected public GitHub changes, not full research history or offline influences."
+        ]
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "event_id": "PI-CCPH-GH-PR-169",
+      "record_class": "REAL_OBSERVED",
+      "event_kind": "ATTRIBUTION_OR_REUSE",
+      "event_time": "2026-10-15T00:36:01Z",
+      "participants": [
+        {
+          "actor_ref": "PI_PUBLIC_REPOSITORY",
+          "actor_type": "GROUP",
+          "role": "Public research collaboration and target repository; not a legal person or sole inventor"
+        }
+      ],
+      "influence_edges": [],
+      "outcomes": [
+        {
+          "actor_ref": "PI_PUBLIC_REPOSITORY",
+          "ledger": "O_OUTCOME",
+          "direction": "UNKNOWN",
+          "measurement": "VERIFIED",
+          "quantity": 1,
+          "unit": "changed_files_in_merged_PR",
+          "description": "Merged one existing prior-art file revision to distinguish upstream citation, documented use, observed change and independently established effects. / 선행연구의 인용·실제 적용·관측된 변경·인과효과를 분리하는 기존 출처 정본 1개가 갱신됨. File count measures changes, not usefulness, welfare or improvement.",
+          "evidence_ids": [
+            "GH-PR-169",
+            "GH-COMMIT-169"
+          ]
+        },
+        {
+          "actor_ref": "PI_PUBLIC_REPOSITORY",
+          "ledger": "A_ACTOR_CONTINUITY_AND_RIGHTS",
+          "direction": "UNKNOWN",
+          "measurement": "UNKNOWN",
+          "quantity": null,
+          "unit": null,
+          "description": "Actual contributor effort, compensation, lost opportunities, consent beyond public metadata, social benefit and harm not quantified.",
+          "evidence_ids": []
+        }
+      ],
+      "evidence": [
+        {
+          "evidence_id": "GH-PR-169",
+          "status": "PRIMARY",
+          "source_pointer": "https://github.com/gmodrasa7-rgb/project-intersection-public/pull/169",
+          "rights_or_permission": "UNKNOWN",
+          "independent_review": "NO"
+        },
+        {
+          "evidence_id": "GH-COMMIT-169",
+          "status": "PRIMARY",
+          "source_pointer": "https://github.com/gmodrasa7-rgb/project-intersection-public/commit/fac83f794d943badf6e3484d23102e98674f2241",
+          "rights_or_permission": "UNKNOWN",
+          "independent_review": "NO"
+        }
+      ],
+      "uncertainty": {
+        "unobserved_actors": "POSSIBLE",
+        "unobserved_edges": "POSSIBLE",
+        "selection_mechanism": "Nonrepresentative, deliberately selected adjacent merged PRs #167–169 in Project Intersection public repository; excludes private/offline work and other PRs.",
+        "counterfactual_identified": false,
+        "limitations": [
+          "A verified repository change is not an independently established causal improvement.",
+          "Prior art and named contributors to each component require distinct source-level audits.",
+          "No claim that this selection is complete or unbiased."
+        ]
+      },
+      "privacy_and_control": {
+        "publication_scope": "PUBLIC_NONIDENTIFYING",
+        "participant_consent": "PUBLIC_RECORD_WITH_REVIEW",
+        "subject_correction_channel": "https://github.com/gmodrasa7-rgb/project-intersection-public/issues",
+        "collect_only_minimum_data": true,
+        "retention_or_withdrawal_rule": "Link public provenance and allow versioned corrections. Handle requests affecting third-party privacy or law case by case; never re-publish private raw dialogue."
+      },
+      "review": {
+        "status": "UNREVIEWED",
+        "adjudicator_separation": "SAME_AS_RECORDER",
+        "unresolved_claims": [
+          "Marginal scientific improvement",
+          "Contribution and cost distribution",
+          "External downstream societal effects"
+        ],
+        "version_of_event": null
+      },
+      "traceability": {
+        "collection_mode": "PRESENT_OBSERVATION",
+        "recorded_at": "2026-10-15T00:43:10.705Z",
+        "rediscovered_at": null,
+        "upstream_event_refs": [
+          {
+            "event_id": "PI-CCPH-GH-PR-168",
+            "relation_status": "DOCUMENTED_EXPOSURE",
+            "evidence_ids": [
+              "GH-PR-169"
+            ],
+            "notes": "Successive explicit project documentation correction, not exclusive causal attribution."
+          }
+        ],
+        "label_revision_refs": [],
+        "scope_limitations": [
+          "Only selected public GitHub changes, not full research history or offline influences."
+        ]
+      }
+    }
+  ]
+}

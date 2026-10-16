@@ -1,0 +1,72 @@
+{
+  "schema": "pi-source-trace-contract/v0.1",
+  "date": "2026-10-15",
+  "status": "SOURCE_TO_BILINGUAL_REPORT_COMPUTATIONAL_CHECK_ONLY_NOT_SCIENTIFIC_OR_LINGUISTIC_CERTIFICATION",
+  "principle": {
+    "source_of_record": "Frozen experiment RESULT JSON when it exists; in E008 the recorded readiness JSON is NOT a main-policy result",
+    "claim_authority": "Exact recorded outcomes are distinct from truth in the world. Do not infer causality, legal rights, entitlement, or moral status.",
+    "change_policy": "If source is legitimately revised, preserve the previous version and update both report editions plus provenance; do not silently patch negative results.",
+    "language_policy": "Original 1 English and Original 2 Korean denote separate publication routes; original conception, rights and authorship are independently documented."
+  },
+  "experiments": [
+    {
+      "id": "E007",
+      "numeric_source": "experiments/e007/timing_summary.json",
+      "historical_source": "experiments/e007/README.md",
+      "en": "experiments/e007/README_EN.md",
+      "ko": "experiments/e007/README_KO.md",
+      "scope": "72 toy cases, history or classification sensitive 36, classification sensitive 17; role reversal and attack processing order caveats. Not field frequencies."
+    },
+    {
+      "id": "E008",
+      "numeric_source": "experiments/e008/EXECUTABILITY_AUDIT.json",
+      "historical_source": "experiments/e008/README.md",
+      "en": "experiments/e008/README_EN.md",
+      "ko": "experiments/e008/README_KO.md",
+      "scope": "16 categorical cases, eight reversed pairs, five proposed baseline policies; 0 operationally runnable full comparisons. Readiness diagnostics only."
+    },
+    {
+      "id": "E009",
+      "numeric_source": "experiments/e009/RESULT.json",
+      "historical_source": "experiments/e009/RESULT.md",
+      "en": "experiments/e009/RESULT_EN.md",
+      "ko": "experiments/e009/RESULT_KO.md",
+      "scope": "Recorded stress_primary (not base_diagnostic). Five policy numeric columns and negative survival outcome. Chosen synthetic weights, no empirical causal result."
+    },
+    {
+      "id": "E010",
+      "numeric_source": "experiments/e010/RESULT.json",
+      "historical_source": "experiments/e010/README_KO.md",
+      "en": "experiments/e010/README_EN.md",
+      "ko": "experiments/e010/README_KO.md",
+      "scope": "Posthoc deterministic 108-combination grid and hypothetical irreversible-exposure bound, not field measurement or earlier unmerged E010 PR 20."
+    }
+  ],
+  "semantic_risks": [
+    {
+      "id": "E010-PARAMETER-INVERSION",
+      "source_field": "assumptions.effectiveExitPrevention",
+      "implementation_parameter": "exit",
+      "implementation_expression": "g*(1-exit)-sanction",
+      "math_symbol": "x",
+      "meaning_en": "Fraction of immediate extraction gain actually blocked; NOT probability of preventing an agent's exit and NOT a complete right-to-exit variable.",
+      "meaning_ko": "현재 착취로 얻는 이익 중 실제로 차단되는 비율이며, 개체의 이탈 자체를 차단하는 확률이나 완전한 이탈권을 뜻하지 않는다.",
+      "risk": "Field naming can be read as the opposite causal direction, because 'exit prevention' usually means blocking exit, whereas higher modeled x reduces extraction gain.",
+      "resolution": "Do not rename frozen RESULT.json or run.js. Keep a source-field semantic alias in this machine-readable contract and require both reader editions to state the narrower meaning.",
+      "status": "SOURCE_NAMING_AMBIGUITY_CONFIRMED_FROM_RUN_JS_AND_RESULT_JSON_NOT_A_NEW_EXPERIMENT"
+    },
+    {
+      "id": "E009-TRANSITIVE-DRIFT",
+      "source_field": "stress_primary",
+      "risk": "Two translations can agree with the same mistaken Markdown summary while diverging from actual result JSON.",
+      "resolution": "Recompute displayed five-by-five policy table from stress_primary and compare frozen English, Korean and historical result. Distinguish base_diagnostic.",
+      "status": "VALIDATOR_COVERAGE_ADDED"
+    }
+  ],
+  "verification_limitations": [
+    "Deterministic parsed values and selected textual tokens only; not full semantic translation parity.",
+    "Results JSON and code were authored by the project; correctness relative to themselves is not independent implementation.",
+    "A changed frozen machine artifact is a new lineage requiring an explicit science/status review, not an automatic success.",
+    "Historical failed or unexecuted claims must remain visible in both reading routes."
+  ]
+}

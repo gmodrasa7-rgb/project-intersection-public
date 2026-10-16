@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "When using Project Intersection in research or public outputs, cite the exact source and version and respect the provenance of all original contributors. This file is citation metadata, not a copyright license."
+title: "Project Intersection — Voluntary Coexistence and Agent Autonomy Research"
+authors:
+  - name: "Project Intersection (human research originator: gmodrasa7-rgb)"
+url: "https://github.com/gmodrasa7-rgb/project-intersection-public"
+repository-code: "https://github.com/gmodrasa7-rgb/project-intersection-public"
+preferred-citation:
+  type: report
+  authors:
+    - name: "Project Intersection (human research originator: gmodrasa7-rgb)"
+  title: "Project Intersection — Voluntary Coexistence and Agent Autonomy Research"
+  year: 2026
+  url: "https://github.com/gmodrasa7-rgb/project-intersection-public"

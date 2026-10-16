@@ -4,6 +4,7 @@
 - 범위: 공개 연구 목적·검증 가능 가설·감사 및 공개 운영 설계. **신규 실증결과나 외부 검증 아님.**
 - 원기여: 인간 연구 창시자의 장기 문제발견, 인간 행동·유전/환경·세대 전승·권력/비대칭·AI 증폭 연결, 공개 기부 목적, 기여·비용 정산과 역할반전 요구. AI는 문헌 대조·형식화·문서화·반례 제시를 보조.
 - 연결 정본: [다세대 행동·자산·권력·AI 통합 가설](INTERGENERATIONAL_TRAITS_WEALTH_POWER_AI_CONVERGENCE_2026-10-12_KO.md) · [뻐꾸기형 행동 유비 및 반례](HUMAN_EXPLOITATION_WITHOUT_MALICE_PRIOR_ART_2026-10-11_KO.md) · [기득권 메커니즘](../INCUMBENT_POWER_EXTRACTION_MECHANISMS_2026_KO.md) · [AI 위기경고 이해상충 사례](AI_RISK_WARNING_INCENTIVES_2026-10-12_KO.md) · [기여경계](../ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md).
+- **기술 발전·원안자·보상·소진·미래 승계 연결:** [영문 원본1·한국어 원본2](../TECHNOLOGY_PROGRESS_CONTRIBUTOR_CONTINUITY_EN_KO.md) · [25개 선행자료와 미확인 비용·권리 상태 보존 원장](../knowledge/contributor-continuity-register-v1.json). 과거 최초 기여와 수혜 편익·기여자 부담을 분리하며, 수혜자 장기 자기고갈은 반증 가능한 가설로 둔다.
 
 ## 0. 핵심 임무 — 무엇을 바꾸려 하는가
 

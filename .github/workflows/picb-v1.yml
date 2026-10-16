@@ -1,0 +1,78 @@
+name: PICB v1 first-principles benchmark and full-population integrity
+
+on:
+  pull_request:
+    paths:
+      - "experiments/picb_v1/**"
+      - ".github/workflows/picb-v1.yml"
+  push:
+    branches: [main]
+    paths:
+      - "experiments/picb_v1/**"
+      - ".github/workflows/picb-v1.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  picb:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Guard founder-origin positive contribution outcome and frozen PICB v1 source
+        shell: bash
+        run: |
+          python - <<'PY'
+          import subprocess
+          from pathlib import Path
+          p = Path("experiments/picb_v1/README.md").read_text(encoding="utf-8")
+          c = Path("CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md").read_text(encoding="utf-8")
+          expected_source = "abdefdfeb440715d503074a8e4005cd5b0f69a7d"
+          source = subprocess.check_output(
+              ["git", "hash-object", "experiments/picb_v1/benchmark.py"], text=True
+          ).strip()
+          assert source == expected_source, "Frozen first PICB spec was modified"
+          for phrase in (
+              "### P0 positive-outcome omission correction",
+              "### P0 핵심 성과변수 누락 정정",
+              "NO NEW OBSERVED DATA",
+              "신규 실측 데이터 0",
+              "CONTRIBUTOR_LOSS_UNKNOWN_PARADOX",
+              "newly enabled agents",
+              "P0 second correction: detection and inspiration",
+              "signal_reporter_id",
+              "inspirer_id",
+              "edge_evidence_status",
+              "위기 탐지·영감은 결과물이 없어도",
+              "실제 기여물",
+              "UNKNOWN",
+              "미관측",
+          ):
+              assert phrase in p, "Missing output or evidence boundary: " + phrase
+          for phrase in (
+              "### P0 recovered positive contribution-output axis",
+              "### P0 복원한 긍정적 기여물 성과축",
+              "2026-10-14 founder correction: risk detection",
+              "2026-10-14 인간 창시자 정정",
+              "C6 나비효과 경로 검사",
+          ):
+              assert phrase in c, "Crosswalk lost original-positive-outcome origin: " + phrase
+          print("PICB P0 POSITIVE OUTCOME GATE PASS: preserved/new agent contributions explicit; no fabricated observations")
+          PY
+
+      - name: Core schema, role-label and negative-control self-tests
+        run: python experiments/picb_v1/benchmark.py --self-test
+      - name: Freeze-before-result enforcement; run only on merged main
+        shell: bash
+        run: |
+          if [[ -f experiments/picb_v1/RESULT.json ]]; then
+            python experiments/picb_v1/benchmark.py --verify
+          elif [[ "${{ github.event_name }}" == "push" && "${{ github.ref }}" == "refs/heads/main" ]]; then
+            echo "PICB FIRST SCORED PROJECT-LINEAGE EXECUTION, after pre-result commit"
+            echo "PREREG_MAIN_COMMIT=${GITHUB_SHA}"
+            git hash-object experiments/picb_v1/benchmark.py
+            python experiments/picb_v1/benchmark.py --run
+          else
+            echo "HOLD: spec PR may execute self-tests only. No scored outcome before main preregistration merge."
+          fi

@@ -29,14 +29,19 @@ A relation such as `supported_by` therefore does **not** mean universal validati
 
 ## 2. Files
 
+**CCPH real events / 현실 연구 사건 (2026-10-15):** [CCPH observed Project Intersection event ledger](ccph-observed-project-events-v0_1.json) contains three *actual verified public GitHub research-process changes* (PRs #167–169), linked to the [event schema](ccph-impact-lineage-event-schema-v0_1.json) and [research execution loop](../AUTONOMOUS_RESEARCH_LOOP.md). These are not synthetic benchmarks; verified file changes are not verified scientific, welfare or causal improvements. / **CCPH 실제 관측 원장**은 공개 GitHub 병합 사건 3건을 최초 실증 기록으로 보존한다. 변경된 파일 수는 실제 활동량이지만 연구 발전의 순효과·사회적 편익이 아니다. 증거·기여자·후속 영향·미확인을 별도 기록하며 선택 표본의 전체 대표성을 주장하지 않는다.
+
+
 - `schema-v1.json` — machine-readable field contract.
-- `graph.json` — current public structured dataset.
+- `graph.json` — dated, incomplete public navigation subset. `meta.updated_at` is the last graph update, not the latest Git `main`. Missing entities or edges are UNKNOWN, not proof of absence.
 - `explorer.html` — dependency-free browser/search interface.
 - `validate.py` — integrity and provenance checks.
 - `SOURCE_REGISTRY.md` / `source-registry.json` — audited external design references, originators, verified influence, and rights/licensing boundaries.
 - `.github/workflows/knowledge-graph-audit.yml` — CI validation.
 
 The canonical scientific source remains the linked artifact and Git history. `graph.json` is a navigation/index layer.
+
+**Coverage boundary (2026-10-14 focused update):** `graph.json` was extended with **7 original focused nodes and 8 evidence-qualified edges, plus 3 additional prior-art nodes and 4 evidence-qualified edges** for the founder's Continuance–Contribution Pathways Hypothesis, 19 ordinary-contributor and 15 human survival/exclusion case records (case groups, not one independently verified graph node per case), upstream research, PICB v1 synthetic outcome limits and counterexamples. Its `meta.updated_at: 2026-10-14` dates this **focused index edit only**, not a complete re-crawl or comprehensive scientific review. Missing entries/edges remain UNKNOWN, not proven absence. / 2026-10-14 일부 갱신은 존속–기여 경로 가설·19+15 인간 사례그룹·선행연구·PICB 결과 경계·부정대조만 색인했다. 그래프 전체 전수검수·34개 실증 인과사례 확보가 아니다. 누락은 존재하지 않음이 아니라 미색인/UNKNOWN으로 유지한다.
 
 ## 3. Information-architecture references
 

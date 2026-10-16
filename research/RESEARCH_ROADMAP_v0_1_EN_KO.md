@@ -1,9 +1,13 @@
-# Project Intersection — Research Roadmap v0.1
-# Project Intersection — 연구 로드맵 v0.1
+# PI Roadmap — Project Intersection Research Roadmap v0.1
+# PI 로드맵 — Project Intersection 연구 로드맵 v0.1
 
 **Status / 상태: ACTIVE PROCESS DESIGN / 연구 운영 설계 — 2026-10-13.** This is a repeatable research workflow, **not** proof that a complete literature search, cross-model verification, scientific breakthrough, funded expansion or independent validation has been achieved. / 이 문서는 반복 연구 절차이며 선행연구 전수완료·교차검증 완료·신발견·후원금 확보·독립검증 성취를 선언하지 않는다.
 
 **Edition order:** Original 1 — English; 원본2 — 한국어. The initial research questions were developed primarily through a Korean-speaking human researcher working with LLMs. Edition order does not transfer intellectual origin or prior-art credit. / 게시 순서가 원기여·선행연구의 귀속을 바꾸지 않는다.
+
+**Canonical short name / 공식 약칭 (2026-10-13): PI Roadmap (PI 로드맵).** This is the stable name for the Project Intersection-wide research roadmap, distinct from IVS-0R execution, validation and persistence procedures. The six-stage v0.1 text remains the substantive baseline. The existing file path and incoming links are preserved. Future substantive revisions receive a new version, a dated change log, source/evidence basis, status and regression review rather than silently rewriting the baseline. This title/alias clarification does not claim that any new research stage has been completed.
+
+**한글 대응:** Project Intersection 전체 연구 로드맵의 공식 약칭을 **PI 로드맵**으로 고정한다. IVS-0R의 실행·검증·영속화 절차와 구분한다. 기존 여섯 단계와 v0.1 본문은 내용상 기준선으로 보존하고, 기존 파일 경로와 링크도 유지한다. 실질적 개선은 새 버전, 날짜별 변경 이력, 출처·증거, 검증 상태, 회귀점검을 기록한 뒤 반영한다. 이번 명칭 정리는 연구 단계 완료나 새로운 실증 결과를 뜻하지 않는다.
 
 ## Original 1 — English
 
