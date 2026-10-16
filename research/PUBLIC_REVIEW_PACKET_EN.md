@@ -45,17 +45,56 @@ To submit a challenge, use the [independent reproduction and critique issue temp
 <!-- PI-SECTION: reproduce -->
 ## 2. Reproduce without nonpublic data
 
-Use **Python 3.12** as the E007 CI reference environment and record `git rev-parse HEAD`. A dependency install can require network access, but public tests do not require private notes or paid AI APIs.
+### One executable counterexample
+
+**Question:** does an available EXIT action guarantee an effective exit? In this existing E007 example, A attacks and B chooses EXIT; B starts with exit-destination level 1 and resources 3, while the attack's sabotage is 2. Both runs share the same actors, actions and parameters. Only action timing changes.
+
+The commands below use an **immutable artifact baseline**, not the moving default branch. This baseline predates this reader revision but contains the exact model and negative result being reviewed. Use a new clone; for an existing checkout, preserve any local work first. Python 3.12 is the reference runtime; the example and E009 verifier use the standard library, no package install or paid model service. These are shell commands for Bash or a compatible terminal; network is needed to clone, not to execute them afterward.
 
 ```bash
 git clone https://github.com/gmodrasa7-rgb/project-intersection-public.git
 cd project-intersection-public
+git checkout --detach a8b5bd591ae303abfc0c636e95c8b6e5a02aa6c7
 git rev-parse HEAD
+python - <<'PYTHON'
+import sys
+sys.path.insert(0, "experiments/e007")
+from model import Params, State, Action, stage_and_transition
+from timing_variants import stage_and_transition_execute_first
+p = Params(sabotage_damage=2, enforcement_penalty=0.0)
+s = State(xb=1, monitoring=False, enforcement=False)
+results = (
+    ("exit_first", stage_and_transition(s, Action.ATTACK, Action.EXIT, p)),
+    ("attack_first", stage_and_transition_execute_first(
+        s, Action.ATTACK, Action.EXIT, p, leader="A")),
+)
+for name, (_, _, state) in results:
+    print(name, state.exited_b, state.xb, state.rb)
+PYTHON
+python experiments/e009/verify_result.py
+```
+
+
+| Timing convention | B actually exits | Remaining exit destination | B resources |
+| --- | --- | ---: | ---: |
+| `exit_first` | `True` | 1 | 3 |
+| `attack_first` | `False` | 0 | 2 |
+
+**What the example establishes:** in this toy transition, a declared option and an executable option differ. **What it leaves open:** which timing describes an actual setting, whether attack is strategically chosen, and whether voluntary coexistence is stable. Inspect [the existing counterexample test](../experiments/e007/test_e007_timing_variants.py), [timing implementation](../experiments/e007/timing_variants.py) and [independent specification](../experiments/e007/INDEPENDENT_REIMPLEMENTATION_PROTOCOL.md). Renaming actors or using simultaneous resolution is a useful challenge; the wider E007 baseline has a disclosed fixed A-first attack-order defect. This demonstration does not repair or conceal it.
+
+The second command **re-executes** E009 and compares generated results and hashes with the frozen records; it does not merely read a stored success flag. Expected final line: `E009 result reproduction passed: frozen benchmark reproduces committed negative synthetic result.` A mismatch is a review finding. Neither matching output nor this project-authored example establishes independent scientific validation.
+
+**A substantive objection to examine next:** E009's severe-harm criterion passed even though Project-v3's rate was 1.65625%, compared with 0.03125% for TWO_RULE_SIMPLE. That comparison is 53 times the rate and a 1.625 percentage-point increase. The actual harm criterion uses a different reference: the lower harm rate of SECURITY_BOUNDED and MINIMAL_4VAR, which is 0%. Project-v3 therefore passes at 1.65625 percentage points above that reference, below the preregistered 2-point tolerance. This is not an arithmetic contradiction: it exposes a consequential choice of acceptance threshold. The overall candidate still failed 3/4 criteria. Review the [original numbers](../experiments/e009/RESULT.json) and [executable criteria](../experiments/e009/benchmark.py); argue for a different threshold in a separately specified test, without rewriting this historical result. No rate here describes real-world injury.
+
+### Broader reproduction, optional
+
+At that same pinned checkout, these existing commands examine the larger E007 grid and other recorded artifacts. Record the actual runtime and output; identical project-code reruns remain distinct from independent implementations.
+
+```bash
 python -m pip install -r experiments/e007/requirements.txt
 python -m pytest -q -p no:cacheprovider experiments/e007
 python experiments/e007/timing_probe.py --summary-only --check
 python experiments/e008/validate.py
-python experiments/e009/verify_result.py
 python experiments/picb_v1/benchmark.py --verify
 ```
 
