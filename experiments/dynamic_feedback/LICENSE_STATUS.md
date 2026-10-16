@@ -1,5 +1,8 @@
 # License status / 재사용 경계
 
+<!-- PI-LANGUAGE-EXEMPT: This short shared license-and-rights boundary must be visible to readers of both the English Original 1 and Korean Original 2 research editions under one stable LICENSE_STATUS.md URL; English notice precedes the complete Korean notice. This is a rights status only, not a research-language-equivalence or scientific-validation claim. -->
+
+
 **LICENSE HOLD: public reading and inspection do not grant a general reuse license.**
 This directory is LIMITED PUBLIC RESEARCH, not an Apache-2.0, CC BY, MIT, or other open-source/content license release. E007's separate folder-scoped license does NOT apply here or to private research. Do not infer permission for derivative distribution or commercial redistribution solely from publication. Source lineage: founder-led Project Intersection questions and corrections; AI-assisted implementation and same-mechanism checking. Third-party prior art retains its original attribution. An explicit lawful license and compatibility decision are pending; research credit is not conditional on new work.
 
