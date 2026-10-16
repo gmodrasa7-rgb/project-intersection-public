@@ -176,6 +176,65 @@ def dynamic_scenarios() -> dict:
     }
 
 
+
+# Cross-audit with the existing coalition_externality_probe family:
+# conditional post-breach enforcement probability q and a defender's finite
+# detection resources are COMPLEMENTARY, not interchangeable. This is a
+# separate simple Stackelberg-style attacker reply, NOT a solved dynamic
+# joining / enforcement equilibrium or a new theorem.
+def target_detection_audit(gain: F, penalty: F, enforcement_q: F,
+                           detections: dict[str, F]) -> dict:
+    if gain <= 0 or penalty <= 0 or not F(0) <= enforcement_q <= F(1):
+        raise ValueError('requires positive gain/penalty and valid enforcement_q')
+    if not detections or any(not F(0) <= d <= F(1) for d in detections.values()):
+        raise ValueError('detection values must be in [0,1] for listed targets')
+    values = {name: gain - enforcement_q * penalty * d
+              for name, d in detections.items()}
+    best = max(values.values())
+    # Ties retain ALL possible targets; no hidden victim is presumed protected.
+    possible = sorted(name for name, value in values.items() if value == best)
+    if best < 0:
+        decision = 'STRICT_DETERRENCE'
+        possible = []
+    elif best == 0:
+        decision = 'BORDERLINE_ATTACK_OR_ABSTAIN'
+    else:
+        decision = 'ATTACK_PROFITABLE'
+    return {
+        'attacker_payoffs': {name: str(value) for name, value in sorted(values.items())},
+        'highest_attack_payoff': str(best),
+        'attacker_decision': decision,
+        'possible_targets_conditional_on_attack': possible,
+        'all_party_viability': None,
+        'victim_actual_harm': None,
+    }
+
+
+def detection_budget_bound(gain: F, penalty: F, enforcement_q: F,
+                           target_count: int, budget: F) -> dict:
+    """Necessary and sufficient for STRICT DETERRENCE in THIS toy:
+    each d_j > gain/(q*penalty), 0<=d_j<=1, sum(d_j)<=budget.
+    """
+    if (gain <= 0 or penalty <= 0 or not F(0) <= enforcement_q <= F(1)
+            or type(target_count) is not int or target_count < 1 or budget < 0):
+        raise ValueError('invalid toy budget parameters')
+    if enforcement_q == 0:
+        return {'per_target_threshold': None, 'total_threshold': None,
+                'strict_feasible': False, 'reason': 'NO_CREDIBLE_ENFORCEMENT'}
+    cutoff = gain / (penalty * enforcement_q)
+    feasible = cutoff < 1 and budget > target_count * cutoff
+    reason = ('FEASIBLE_IN_STATED_TOY' if feasible
+              else 'PER_TARGET_CAP_IMPOSSIBILITY' if cutoff >= 1
+              else 'TOTAL_RESOURCE_IMPOSSIBILITY_OR_INDIFFERENCE')
+    return {
+        'per_target_threshold': str(cutoff),
+        'total_threshold': str(target_count * cutoff),
+        'strict_feasible': feasible,
+        'reason': reason,
+        'unmeasured_actor_harm': None,
+    }
+
+
 class Tests(unittest.TestCase):
     def test_known_cases(self):
         results = {r['name']: r for r in map(solve, scenarios())}
@@ -295,6 +354,60 @@ class Tests(unittest.TestCase):
         with self.assertRaises(ValueError):
             majority_core_three(F(-1))
 
+
+    def test_detection_budget_joint_resource_barrier(self):
+        for budget, success in ((F(1), False), (F(3,2), False),
+                                (F(8,5), True)):
+            r = detection_budget_bound(F(6), F(8), F(1), 2, budget)
+            self.assertEqual(r['strict_feasible'], success)
+            self.assertEqual(r['per_target_threshold'], '3/4')
+            self.assertEqual(r['total_threshold'], '3/2')
+
+    def test_weak_expost_enforcement_cannot_be_fixed_by_more_sensing(self):
+        r = detection_budget_bound(F(6), F(8), F(4,9), 2, F(2))
+        self.assertFalse(r['strict_feasible'])
+        self.assertEqual(r['per_target_threshold'], '27/16')
+        self.assertEqual(r['reason'], 'PER_TARGET_CAP_IMPOSSIBILITY')
+        observed = target_detection_audit(F(6), F(8), F(4,9),
+                                           {'B': F(1), 'E': F(1)})
+        self.assertEqual(observed['attacker_decision'], 'ATTACK_PROFITABLE')
+        self.assertEqual(observed['highest_attack_payoff'], '22/9')
+
+    def test_protecting_one_target_displaces_attack(self):
+        r = target_detection_audit(F(6), F(8), F(1),
+                                    {'B': F(9,10), 'E': F(1,10)})
+        self.assertEqual(r['possible_targets_conditional_on_attack'], ['E'])
+        self.assertEqual(r['attacker_payoffs'], {'B': '-6/5', 'E': '26/5'})
+        self.assertIsNone(r['victim_actual_harm'])
+
+    def test_reverse_detection_allocation_reverses_target(self):
+        r = target_detection_audit(F(6), F(8), F(1),
+                                    {'B': F(49,100), 'E': F(51,100)})
+        self.assertEqual(r['possible_targets_conditional_on_attack'], ['B'])
+        self.assertEqual(r['attacker_payoffs'], {'B': '52/25', 'E': '48/25'})
+
+    def test_boundary_is_not_certified_deterrence(self):
+        boundary = target_detection_audit(F(6), F(8), F(1),
+                                           {'B': F(3,4), 'E': F(3,4)})
+        self.assertEqual(boundary['attacker_decision'], 'BORDERLINE_ATTACK_OR_ABSTAIN')
+        self.assertEqual(boundary['possible_targets_conditional_on_attack'], ['B','E'])
+        strict = target_detection_audit(F(6), F(8), F(1),
+                                         {'B': F(4,5), 'E': F(4,5)})
+        self.assertEqual(strict['attacker_decision'], 'STRICT_DETERRENCE')
+        self.assertEqual(strict['possible_targets_conditional_on_attack'], [])
+
+    def test_target_label_permutation_and_no_enforcer_controls(self):
+        original = target_detection_audit(F(6), F(8), F(1),
+                                          {'B': F(9,10), 'E': F(1,10)})
+        renamed = target_detection_audit(F(6), F(8), F(1),
+                                         {'X': F(9,10), 'Y': F(1,10)})
+        self.assertEqual(original['highest_attack_payoff'],
+                         renamed['highest_attack_payoff'])
+        self.assertEqual(renamed['possible_targets_conditional_on_attack'], ['Y'])
+        self.assertEqual(detection_budget_bound(F(6), F(8), F(0), 2, F(2))['strict_feasible'], False)
+        with self.assertRaises(ValueError):
+            target_detection_audit(F(6), F(8), F(1), {'E': F(3,2)})
+
     def test_detection_bounds(self):
         base = scenarios()[2]
         with self.assertRaises(ValueError):
@@ -309,4 +422,11 @@ if __name__ == '__main__':
     print(json.dumps({'status': 'exploratory_synthetic_not_empirical',
                       'model': 'sequential_enforcer_and_dominant_actor',
                       'results': list(map(solve, scenarios())),
-                      'exploratory_power_shift_and_coalition': dynamic_scenarios()}, indent=2, ensure_ascii=False))
+                      'exploratory_power_shift_and_coalition': dynamic_scenarios(),
+                      'toy_target_allocation': {
+                        'concentrated': target_detection_audit(F(6),F(8),F(1), {'B':F(9,10),'E':F(1,10)}),
+                        'balanced_boundary': target_detection_audit(F(6),F(8),F(1), {'B':F(3,4),'E':F(3,4)}),
+                        'mixed_enforcement': target_detection_audit(F(6),F(8),F(4,9), {'B':F(1),'E':F(1)}),
+                        'budget1': detection_budget_bound(F(6),F(8),F(1),2,F(1)),
+                        'budget1_6': detection_budget_bound(F(6),F(8),F(1),2,F(8,5)),
+                      }}, indent=2, ensure_ascii=False))
