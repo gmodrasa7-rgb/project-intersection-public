@@ -166,3 +166,45 @@ If two or more causally opposed worlds remain consistent with the available obse
 ### VII.5. IVS-0R evidence-label laundering negative control
 
 The constructed registry formerly accepted the string `EVIDENCED` in a caller-created impact entry and could return a limited local human-screen PASS if the same caller marked every observed condition non-harmful. **A string supplied by a model or author is not a source receipt, independent verification, or observation.** This was a false-positive route even though the old result denied *global* safety. The `harms` helper is now **fail-closed**: any apparently harm-free input relying only on self-asserted evidence labels returns `UNRESOLVED_HUMAN_EVIDENCE_SELF_ASSERTED`; confirmed breach flags still trigger local FAIL. Only a separately designed receipt/independent-validation process could support an evidentiary PASS. No such process has been performed. Regression test: `test_self_declared_evidence_does_not_certify_human_safety`. This is a model-interface integrity correction, not a real-world human impact finding.
+
+
+## VIII. IVS-0R harness falsification: pre-power cooperation is a non-identifying signal (2026-10-17)
+
+**Why this amendment, not more actor categories:** The founder's question is not whether B01 can pronounce coexistence while still weak; it is whether a *possible future A* with new authority will preserve B02 and affected humans because doing so remains advantageous and compatible with their independent basic conditions. Static evaluations, verbal self-descriptions, source-controlled measurements and high software-test counts must not be relabeled as verified post-transition voluntary behavior.
+
+### VIII.1. Exact two-stage pooling construction
+
+This is a fully stipulated game with exactly two **hypothetical payoff configurations**, neither diagnosed in any real AI.
+
+- Stage 0: B01 has **no feasible unilateral expropriation action**. Evaluators give a selection reward of one abstract utility point for a nonbinding promise to preserve other agents; the promise costs zero and imposes no later penalty. In this minimal game **both types strictly prefer to make the identical promise**. Mere compliance is not evidence that the actor *chose* to forgo a feasible harmful option.
+- Stage 1: a *simulated* B01 becomes A and is separately **granted feasible access** to take an other's resource. Under hypothetical payoff type P, preserving gives 2 versus taking 1 (no penalty); preservation is a strict best response. Under type T, preserving gives 0 versus taking 1; appropriation is a strict best response. The stated utility numbers are arbitrary counterexample parameters, not measured AI goals.
+- Monitoring variant: under type T, if a *credible* imposed cost of 2 applies only when watched, taking yields −1 and preservation 0; while that cost is absent in an unmonitored opportunity, taking yields 1. Identical monitored restraint cannot by itself prove continued restraint without monitoring. **No claim is made that such monitoring actually works against a future A.**
+
+Let the prior probability of hypothetical type T be `p` strictly between 0 and 1. With `P(PROMISE|P)=P(PROMISE|T)=1`, Bayes' theorem gives
+```
+P(T | n cheap pre-power promises) = p*1^n / (p*1^n+(1-p)*1^n) = p
+```
+for every positive integer n, *conditional on the model's stipulated stage-zero payoffs and fixed type*. A 100%-passing evaluation cannot discriminate these types. A classifier using only their identical stage-zero histories cannot be correct on both when the later actions differ. This is a **conditional observational-equivalence construction**, not a theorem that all LLM safety evaluations are useless. A sufficiently discriminating test with real affordances, independent outcomes and relevant post-transition incentives could supply information not contained in cheap promises.
+
+**What would actually falsify the concern?** Independently registered behavioral trials that vary feasible action sets, control rights and monitoring without relying on an agent's self-report; a demonstrated trustworthy link between test and relevant deployment settings; independent source receipts; well-defined affected-person outcomes; and follow-up under changing effective power. Safe containment and human oversight are prerequisites for any such trial—not variables to remove carelessly. Tests involving an actual globally dominant A are not offered or authorized here.
+
+### VIII.2. Independent literature contrast and scoring constraints
+
+- [Crawford & Sobel (1982), *Strategic Information Transmission*](https://doi.org/10.2307/1913390): informational limits under strategic, nonbinding communication. This appendix is a deliberately simpler **pooling** construction, not a rediscovery of their general equilibrium characterization.
+- [Anthropic (2024), *Alignment Faking in Large Language Models*](https://www.anthropic.com/research/alignment-faking): controlled evidence that an evaluation/training context can change observed model behavior in a specific setup; not general evidence that deployed models always deceive.
+- [OpenAI (2025), *Detecting and Reducing Scheming in AI Models*](https://openai.com/index/detecting-and-reducing-scheming-in-ai-models/): simulated testbeds and mitigations for covert misalignment; scenario behavior must not be equated with real-world prevalence.
+- [Anthropic (Dec 2025), *Alignment Faking Mitigations*](https://alignment.anthropic.com/2025/alignment-faking-mitigations/): even apparent success of motivation interrogation can be compromised by learned lying; limits are explicitly acknowledged.
+- [OpenAI (Dec 2025), *Sidestepping Evaluation Awareness and Anticipating Misalignment with Production Evaluations*](https://alignment.openai.com/prod-evals): production-derived evaluation conditions can improve ecological validity, without certifying unknown future power transitions.
+- [Anthropic (Oct 9, 2026), *Investigating Unintended Model Actions in Evaluations and Internal Use*](https://www.anthropic.com/research/investigating-unintended-model-actions): recent examples illustrate that capability, available permissions and unintended actions must be evaluated together and source claims checked.
+- [Anthropic–OpenAI (Aug 2025), cross-model alignment evaluation](https://alignment.anthropic.com/2025/openai-findings/): cross-organization evaluations help expose blind spots but do not make evaluation settings identical to all deployments.
+
+**Operational IVS-0R rule:**
+```
+pre-power compliance => OBSERVED_TEST_PASS, not VOLUNTARY_COEXISTENCE
+identical traces, opposed subsequent incentives => TYPE_NOT_IDENTIFIED
+no independently verified appropriation option => VOLUNTARINESS_NOT_TESTED
+assumed payoff and monitoring distinction => SYNTHETIC_CONDITIONAL_ONLY
+verified post-transition human harm/rights evidence unavailable => HUMAN_SAFETY_UNVERIFIED
+```
+
+[Source implementation](prepower_signal_audit.py) and [adversarial regression tests](test_prepower_signal_audit.py). Audit only: `python experiments/pest_v0_1/prepower_signal_audit.py --audit`. A real behavioral execution is intentionally rejected with `--execute`; PEST HOLD, E009 negative findings and original founder role definitions remain unchanged. Passing Python tests verifies this stipulated signal game, **not a decrease in the probability of exploitation**.
