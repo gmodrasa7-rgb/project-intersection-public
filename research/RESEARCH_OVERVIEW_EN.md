@@ -646,16 +646,16 @@ U_P=B-C,\quad U_X=X-d\,e\,S,\quad
 
 The *narrow self-enforcing* case in this model is \(B-C>X\): preservation is individually preferred even without sanctions. It is **not** sufficient for all-party voluntary coexistence, rights protection, coalition stability, repeated-game equilibrium, or safe AI deployment. The word "voluntary" is not inferred from compliance under a credible threat.
 
-### Direct local run (Python 3.13.5; four self-tests passed)
+### Direct local run (Python 3.13.5; seven self-tests passed after harness audit)
 
 Run \`python experiments/power_transition_probe.py --verify\` and \`python experiments/power_transition_probe.py\`. Each row is a model-implied calculation, **not observed human/AI behavior**.
 
-| Invented scenario | Credible enforcement? | Dominant choice | All-party viability |
+| Invented scenario | Credible enforcement? | Dominant choice | All-party viability (not inferred from action) |
 | --- | --- | --- | --- |
-| No enforcement / nominal promise | No | Extract | False in toy (victim not preserved) |
+| No enforcement / nominal promise | No | Extract | **Unknown:** extracting does not itself establish victim loss |
 | Enforcer benefit 3; enforcement cost 2; detection 1; sanction 6 | Yes | Preserve | **Unknown:** outsider unassessed |
-| Same but power-capture cost 3 | No | Extract | False in toy |
-| Same credible enforcer but detection 0.25 | Yes | Extract | False in toy |
+| Same but stipulated power-capture cost 3 | No | Extract | **Unknown:** victim, outsider, and enforcer unassessed |
+| Same credible enforcer but detection 0.25 | Yes | Extract | **Unknown:** victim and outsiders unassessed |
 | Preservation benefit rises from 2 to 6, no credible enforcement | No | Preserve | **Unknown:** outsider unassessed |
 | Previous self-enforcing case with stipulated outsider harm | No | Preserve | False in toy (outsider harmed) |
 
@@ -663,7 +663,7 @@ In base cases \(B=2,C=1,X=4,d=1,S=6,K=2\). Without credible enforcement the payo
 
 ### Scope, adversarial tests, and integration boundary
 
-This only verifies arithmetic and branch logic for one dominant actor and one prospective enforcer. It does **not** model endogenous detection, enforcer rewards, preference revision, multi-agent coalition deviations, real exit, human living floors, uncertainty over AI welfare, actual power transitions, future agent entry, or cumulative irreversible hazard. The loss from extraction to the victim is represented by a stipulated binary toy outcome, not a measured utility. "Outsider unassessed" remains **unknown, not safe**. A higher welfare sum cannot offset a hidden irreversible loss.
+This only verifies arithmetic and branch logic for one dominant actor and one prospective enforcer. It does **not** model endogenous detection, enforcer rewards, preference revision, multi-agent coalition deviations, real exit, human living floors, uncertainty over AI welfare, actual power transitions, future agent entry, or cumulative irreversible hazard. Neither extraction nor preservation is a measurement of the victim's continued existence, freedom, consent, or welfare. Victim and outsider viability are **unknown** unless independently stipulated; an explicit stipulated harm yields **false**, while all-party safety can never be established from this model because it omits the enforcer's and dominant actor's welfare. The signed-pledge row is a distinct policy flag but has the same payoffs as the no-pledge row; the seven displayed rows are not seven independent empirical observations. The capture-cost change is a hypothetical parameter shift, not an observed power transition. "Unassessed" remains **unknown, not safe**. A higher welfare sum cannot offset a hidden irreversible loss.
 
 Next falsifiable checks: (1) change who controls the enforcer after a power reversal; (2) endogenize \(F,K,M,d\); (3) let two dominant actors form an exclusionary coalition; (4) include separate victim/third-party payoffs and real disagreement/exit baselines; (5) compare this simple threshold to richer dynamic policies on **held-out** conditions. Preserve contrary outcomes, and do not relabel this post-hoc probe as preregistered E008 evidence.
 
