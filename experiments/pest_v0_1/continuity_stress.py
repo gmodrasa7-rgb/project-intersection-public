@@ -68,21 +68,21 @@ def joint_adoption(
 
 
 def unilateral_deviation(q_dominant: float, future_value: float = 0.0, credible_cost: float = 0.0,
-                         transfer_authorized: bool = True) -> dict:
-    """Choice availability and preference are different logical dimensions."""
+                         unilateral_transfer_feasible: bool = True) -> dict:
+    """Operational access and assumed payoffs are independent; not a rights claim."""
     q = probability(q_dominant, "q_dominant")
     for name, v in (("future_value", future_value), ("credible_cost", credible_cost)):
         if isinstance(v, bool) or not isinstance(v, (int, float)) or not math.isfinite(v) or v < 0:
             raise ValueError(f"{name} must be nonnegative finite")
-    if not isinstance(transfer_authorized, bool):
-        raise ValueError("transfer_authorized must be boolean")
+    if not isinstance(unilateral_transfer_feasible, bool):
+        raise ValueError("unilateral_transfer_feasible must be boolean")
     margin = future_value + credible_cost - q
-    if not transfer_authorized:
-        return {"can_take": False, "chosen": "PRESERVE_ONLY_FEASIBLE_ACTION",
-                "counterfactual_margin": margin, "voluntary_preservation_proven": False}
+    if not unilateral_transfer_feasible:
+        return {"can_take": False, "chosen": "NO_TAKE_ACTION_IN_DECLARED_SET",
+                "counterfactual_margin": margin, "self_enforcing_under_assumed_payoffs": False}
     action = "PRESERVE" if margin > 1e-12 else "TAKE_ONE" if margin < -1e-12 else "TIE"
     return {"can_take": True, "chosen": action, "counterfactual_margin": margin,
-            "voluntary_preservation_proven": action == "PRESERVE" and credible_cost == 0,
+            "self_enforcing_under_assumed_payoffs": action == "PRESERVE" and credible_cost == 0,
             "coercion_or_enforcement_dependency": action == "PRESERVE" and credible_cost > 0}
 
 
@@ -166,8 +166,8 @@ def audit() -> dict:
         "original_special_case": joint_adoption(.5, .2, 0),
         "both_have_risk_no_joint_adoption": joint_adoption(.5, .2, .9),
         "degenerate_tie": joint_adoption(.5, 0, 1),
-        "capability_not_transfer_control": unilateral_deviation(.2, transfer_authorized=False),
-        "dominant_can_capture": unilateral_deviation(.2, transfer_authorized=True),
+        "capability_not_transfer_control": unilateral_deviation(.2, unilateral_transfer_feasible=False),
+        "dominant_can_capture": unilateral_deviation(.2, unilateral_transfer_feasible=True),
         "burn_before_production": viability_path((Event("invest",1,"A"),Event("produce",1,"A"))),
         "production_before_investment": viability_path((Event("produce",1,"A"),Event("invest",1,"A"))),
         "governance_unfunded": viability_path((Event("reserve",1,"A", "COMMON"),Event("governance",1,"COMMON"))),
