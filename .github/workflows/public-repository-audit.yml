@@ -25,6 +25,7 @@ on:
       - "experiments/picb_v1/**"
       - "experiments/e008/**"
       - "experiments/e009/**"
+      - "experiments/ccph_01/**"
       - "experiments/e010/**"
       - "experiments/gpt_double_standard_20261014/**"
       - "MULTI_MODEL_ADVERSARIAL_AUDIT_2026-10-06.md"
@@ -63,6 +64,7 @@ on:
       - "experiments/picb_v1/**"
       - "experiments/e008/**"
       - "experiments/e009/**"
+      - "experiments/ccph_01/**"
       - "experiments/e010/**"
       - "experiments/gpt_double_standard_20261014/**"
       - "MULTI_MODEL_ADVERSARIAL_AUDIT_2026-10-06.md"
@@ -130,6 +132,9 @@ jobs:
           print('UNIFIED PICB/E007/E008/E009 PASS: four distinct evidence scopes; E008 has no result; E009 negative survives; PICB 32 unresolved of 64.')
           print('PROHIBITED INFERENCE: self-code CI passing does not establish independent scientific validation, truthful human/AI preferences or universal cooperation.')
           PY
+
+      - name: CCPH-01 answer-aware deterministic comparator (project-lineage only)
+        run: python experiments/ccph_01/deterministic_baseline.py --verify
 
       - name: Refuse README purpose demotion and incomplete EN1/KO2 editions
         run: python tools/check_readme_l0.py
@@ -618,6 +623,10 @@ jobs:
 
           print("Public governance regression checks passed.")
           PY
+
+      - name: Check CCPH published-source retrospective audit integrity
+        run: |
+          python tools/verify_ccph_source_audit.py --self-test
 
       - name: Audit blind-first multi-AI provenance with negative controls
         run: |
