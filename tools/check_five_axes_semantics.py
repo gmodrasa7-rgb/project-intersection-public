@@ -69,7 +69,7 @@ def inspect(bodies: dict[str, str], reg: dict) -> list[str]:
             if keyword not in content:
                 problems.append(f"{p}: REQUIRED_BOUNDARY_ABSENT: {keyword}")
         found = [int(m.group(1)) for m in
-                 re.finditer(r"(?m)^## (\\d+)\\.", content)]
+                 re.finditer(r"(?m)^## (\d+)\.", content)]
         if found != list(range(8)):
             problems.append(f"{p}: SECTION_SEQUENCE_DRIFT: {found}")
         if "http" not in content:
