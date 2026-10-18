@@ -1,0 +1,33 @@
+name: ECR-CMP mechanism candidate synthetic regression
+on:
+  pull_request:
+    paths:
+      - "experiments/ecr_cmp_v0_1/**"
+      - "research/ECR_CMP_MECHANISMS_2026-10-18_*.md"
+      - ".github/workflows/ecr-cmp-v01-design.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  candidate-logic-only:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Execute deterministic synthetic audit
+        run: python experiments/ecr_cmp_v0_1/audit.py
+      - name: Execute candidate negative controls
+        run: PYTHONPATH=experiments/ecr_cmp_v0_1 python -m unittest discover -s experiments/ecr_cmp_v0_1 -p 'test_*.py' -v
+      - name: Enforce paper claim boundaries
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          e = Path("research/ECR_CMP_MECHANISMS_2026-10-18_EN.md").read_text()
+          k = Path("research/ECR_CMP_MECHANISMS_2026-10-18_KO.md").read_text()
+          assert "NOT EMPIRICALLY VALIDATED" in e
+          assert "42.35%" in e and "42.35%" in k
+          assert "독립" in k and "실증" in k
+          print("DESIGN ONLY: no real-world scoring, motive identification, or proven coexistence")
+          PY
