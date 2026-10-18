@@ -1,0 +1,35 @@
+name: ECR v1.4 synthetic logic smoke (design only)
+on:
+  pull_request:
+    paths:
+      - "experiments/ecr_v1_4/**"
+      - ".github/workflows/ecr-v14-design-smoke.yml"
+  push:
+    branches: [main]
+    paths:
+      - "experiments/ecr_v1_4/**"
+      - ".github/workflows/ecr-v14-design-smoke.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  logical-negative-controls:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run exact synthetic probe
+        run: python experiments/ecr_v1_4/probe.py
+      - name: Check 14 synthetic controls
+        run: PYTHONPATH=experiments/ecr_v1_4 python -m unittest discover -s experiments/ecr_v1_4 -p 'test_*.py' -v
+      - name: Prevent claim promotion
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p = Path("research/ECR_INFERENCE_AND_COEXISTENCE_2026-10-18_EN.md").read_text()
+          assert "not an empirical study" in p.lower()
+          assert "42.35%" in p
+          print("DESIGN-ONLY: code checks do not validate human/AI motives, causal truth, or general safety")
+          PY
