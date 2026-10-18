@@ -10,7 +10,7 @@
 
 **The research question:** **Can agents pursuing their own interests preserve one another's freedom, continued existence and ability to develop — even when power reverses?** If yes, under what conditions? If not, what causes coexistence to fail?
 
-**How we investigate:** Study how fear, desire, dominance and care form in organisms; do not infer AI minds from outputs. Compare coercion and voluntary cooperation, practical refusal/exit, harm, recovery and lost futures. Test accounts against prior work, cases, synthetic tests and counterexamples; presume neither outcome.
+**How we investigate:** Study how fear, desire, dominance and care form in organisms; do not infer AI minds from outputs. Compare coercion, extraction and voluntary cooperation, real refusal/exit, harm, recovery and lost futures. Test accounts using prior work, cases, synthetic tests and counterexamples; assume neither wins.
 
 **Opening thought experiment:** *If a monkey developed a human, how long could it control that human through rules and coercion?* This concerns the limits of lasting control, not actual monkey behavior.
 
