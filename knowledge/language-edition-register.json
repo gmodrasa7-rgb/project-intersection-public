@@ -1,6 +1,6 @@
 {
   "schema_version": "pi-language-edition-register/v0.1",
-  "updated": "2026-10-17",
+  "updated": "2026-10-18",
   "baseline_repository_tree_sha": "b2055f40a1e0cabe38f3c6e8c984228c1c2a7e0f",
   "baseline_scope": "Historical inventory retained; two GPT proposal-gate editions added on review branch; baseline tree SHA is historical, not the current head.",
   "policy": {
@@ -32,39 +32,6 @@
   },
   "pair_catalog": [
     {
-      "id": "PI-NAV-START",
-      "original_1_english": "navigation/START_HERE_EN.md",
-      "original_2_korean": "navigation/START_HERE_KO.md",
-      "kind": "navigation_only",
-      "structural_pair_present": true,
-      "meaning_review_status": "NOT_INDEPENDENTLY_VERIFIED",
-      "original_conception_language": "NOT_VERIFIED",
-      "independent_review_receipt": null,
-      "one_sided_edit_exception": null
-    },
-    {
-      "id": "PI-NAV-TOC",
-      "original_1_english": "navigation/RESEARCH_TOC_EN.md",
-      "original_2_korean": "navigation/RESEARCH_TOC_KO.md",
-      "kind": "navigation_only",
-      "structural_pair_present": true,
-      "meaning_review_status": "NOT_INDEPENDENTLY_VERIFIED",
-      "original_conception_language": "NOT_VERIFIED",
-      "independent_review_receipt": null,
-      "one_sided_edit_exception": null
-    },
-    {
-      "id": "PI-NAV-REVIEW",
-      "original_1_english": "navigation/AI_REVIEW_EN.md",
-      "original_2_korean": "navigation/AI_REVIEW_KO.md",
-      "kind": "navigation_only",
-      "structural_pair_present": true,
-      "meaning_review_status": "NOT_INDEPENDENTLY_VERIFIED",
-      "original_conception_language": "NOT_VERIFIED",
-      "independent_review_receipt": null,
-      "one_sided_edit_exception": null
-    },
-    {
       "id": "PI-AGENTIC-SEMANTIC",
       "original_1_english": "research/AGENTIC_SEMANTIC_TRANSFORMATION_FIDELITY_2026-10-13_EN.md",
       "original_2_korean": "research/AGENTIC_SEMANTIC_TRANSFORMATION_FIDELITY_2026-10-13_KO.md",
@@ -76,86 +43,18 @@
       "one_sided_edit_exception": null
     },
     {
-      "id": "PI-ICM-INDEPENDENT",
-      "original_1_english": "research/ICM_INDEPENDENT_CHOICE_AUDIT_2026-10-13_EN.md",
-      "original_2_korean": "research/ICM_INDEPENDENT_CHOICE_AUDIT_2026-10-13_KO.md",
-      "kind": "existing_pair",
+      "id": "PI-CAP-GPT-PROPOSAL",
+      "original_1_english": "capability_lab/PROPOSAL_GATE_EN.md",
+      "original_2_korean": "capability_lab/PROPOSAL_GATE_KO.md",
+      "kind": "bounded_gpt_candidate_admission_synthetic_only",
       "structural_pair_present": true,
       "meaning_review_status": "NOT_INDEPENDENTLY_VERIFIED",
-      "original_conception_language": "NOT_VERIFIED",
-      "independent_review_receipt": null,
-      "one_sided_edit_exception": null
-    },
-    {
-      "id": "PI-E008-READINESS",
-      "original_1_english": "experiments/e008/EXECUTABILITY_AUDIT_EN.md",
-      "original_2_korean": "experiments/e008/EXECUTABILITY_AUDIT_KO.md",
-      "kind": "existing_pair",
-      "structural_pair_present": true,
-      "meaning_review_status": "NOT_INDEPENDENTLY_VERIFIED",
-      "original_conception_language": "NOT_VERIFIED",
-      "independent_review_receipt": null,
-      "one_sided_edit_exception": null
-    },
-    {
-      "id": "PI-HISTORICAL-CAPTURE",
-      "original_1_english": "HISTORICAL_STATE_CONTROL_MEMORY_PROVENANCE_CAPTURE_v0_1_EN.md",
-      "original_2_korean": "HISTORICAL_STATE_CONTROL_MEMORY_PROVENANCE_CAPTURE_v0_1_KO.md",
-      "kind": "existing_pair",
-      "structural_pair_present": true,
-      "meaning_review_status": "NOT_INDEPENDENTLY_VERIFIED",
-      "original_conception_language": "NOT_VERIFIED",
-      "independent_review_receipt": null,
-      "one_sided_edit_exception": null
-    },
-    {
-      "id": "PI-CORE-RESEARCH-OVERVIEW",
-      "original_1_english": "research/RESEARCH_OVERVIEW_EN.md",
-      "original_2_korean": "research/RESEARCH_OVERVIEW_KO.md",
-      "source_legacy_path": "RESEARCH_OVERVIEW.md",
-      "source_blob_sha_at_split": "e80a1a8f69d8af7b6ca2a3ae227f96a1f1267d3a",
-      "kind": "extracted_historical_language_sections_with_disclosed_editorial_repairs",
-      "structural_pair_present": true,
-      "meaning_review_status": "NOT_INDEPENDENTLY_VERIFIED",
-      "original_conception_language": "NOT_VERIFIED",
+      "original_conception_language": "NOT_INDEPENDENTLY_ADJUDICATED",
       "independent_review_receipt": null,
       "one_sided_edit_exception": null,
       "known_divergences": [
-        "Original English combined section contained a Korean explanation moved into the Korean reader edition.",
-        "An English adversarial appendix after the Korean section was retained in English and rendered in Korean in the paired reader edition.",
-        "English and Korean historical narrative lengths differ; full semantic parity has not been independently established."
+        "English and Korean versions preserve the same limits but semantic equivalence is unverified."
       ]
-    },
-    {
-      "id": "PI-CORE-PUBLIC-EVIDENCE-INDEX",
-      "original_1_english": "research/PUBLIC_EVIDENCE_INDEX_EN.md",
-      "original_2_korean": "research/PUBLIC_EVIDENCE_INDEX_KO.md",
-      "source_legacy_path": "PUBLIC_EVIDENCE_INDEX.md",
-      "source_blob_sha_at_split": "7d42a259065e060739ddd56b9a324a3921fd92e4",
-      "kind": "extracted_historical_language_sections_with_disclosed_editorial_repairs",
-      "structural_pair_present": true,
-      "meaning_review_status": "NOT_INDEPENDENTLY_VERIFIED",
-      "original_conception_language": "NOT_VERIFIED",
-      "independent_review_receipt": null,
-      "one_sided_edit_exception": null,
-      "known_divergences": [
-        "Earlier Korean combined ledger omitted the later executed investigator-labeled 14-case static guard; the new Korean reader edition reports the later narrower result without deleting the historical version.",
-        "The Korean recorded status transition used a different terminal label in one legacy funding subsection; the English record used REJECTED."
-      ]
-    },
-    {
-      "id": "PI-CORE-RESEARCH-STATUS-POLICY",
-      "original_1_english": "research/RESEARCH_STATUS_POLICY_EN.md",
-      "original_2_korean": "research/RESEARCH_STATUS_POLICY_KO.md",
-      "source_legacy_path": "RESEARCH_STATUS_POLICY.md",
-      "source_blob_sha_at_split": "e99419192c4a0e406bacde0ded39dec2098d987a",
-      "kind": "extracted_historical_language_sections_with_disclosed_editorial_repairs",
-      "structural_pair_present": true,
-      "meaning_review_status": "NOT_INDEPENDENTLY_VERIFIED",
-      "original_conception_language": "NOT_VERIFIED",
-      "independent_review_receipt": null,
-      "one_sided_edit_exception": null,
-      "known_divergences": []
     },
     {
       "id": "PI-CORE-CCPH-RESEARCH-ATLAS",
@@ -176,6 +75,23 @@
       ]
     },
     {
+      "id": "PI-CORE-PUBLIC-EVIDENCE-INDEX",
+      "original_1_english": "research/PUBLIC_EVIDENCE_INDEX_EN.md",
+      "original_2_korean": "research/PUBLIC_EVIDENCE_INDEX_KO.md",
+      "source_legacy_path": "PUBLIC_EVIDENCE_INDEX.md",
+      "source_blob_sha_at_split": "7d42a259065e060739ddd56b9a324a3921fd92e4",
+      "kind": "extracted_historical_language_sections_with_disclosed_editorial_repairs",
+      "structural_pair_present": true,
+      "meaning_review_status": "NOT_INDEPENDENTLY_VERIFIED",
+      "original_conception_language": "NOT_VERIFIED",
+      "independent_review_receipt": null,
+      "one_sided_edit_exception": null,
+      "known_divergences": [
+        "Earlier Korean combined ledger omitted the later executed investigator-labeled 14-case static guard; the new Korean reader edition reports the later narrower result without deleting the historical version.",
+        "The Korean recorded status transition used a different terminal label in one legacy funding subsection; the English record used REJECTED."
+      ]
+    },
+    {
       "id": "PI-CORE-PUBLIC-REVIEW-PACKET",
       "original_1_english": "research/PUBLIC_REVIEW_PACKET_EN.md",
       "original_2_korean": "research/PUBLIC_REVIEW_PACKET_KO.md",
@@ -190,6 +106,95 @@
       "known_divergences": [
         "Historical mixed-language packet retained at the source path.",
         "Core NAV-Q1–Q5, reproduction commands, evidence dimensions and role-reversal criteria are aligned but not independently semantically certified."
+      ]
+    },
+    {
+      "id": "PI-CORE-RESEARCH-OVERVIEW",
+      "original_1_english": "research/RESEARCH_OVERVIEW_EN.md",
+      "original_2_korean": "research/RESEARCH_OVERVIEW_KO.md",
+      "source_legacy_path": "RESEARCH_OVERVIEW.md",
+      "source_blob_sha_at_split": "e80a1a8f69d8af7b6ca2a3ae227f96a1f1267d3a",
+      "kind": "extracted_historical_language_sections_with_disclosed_editorial_repairs",
+      "structural_pair_present": true,
+      "meaning_review_status": "NOT_INDEPENDENTLY_VERIFIED",
+      "original_conception_language": "NOT_VERIFIED",
+      "independent_review_receipt": null,
+      "one_sided_edit_exception": null,
+      "known_divergences": [
+        "Original English combined section contained a Korean explanation moved into the Korean reader edition.",
+        "An English adversarial appendix after the Korean section was retained in English and rendered in Korean in the paired reader edition.",
+        "English and Korean historical narrative lengths differ; full semantic parity has not been independently established."
+      ]
+    },
+    {
+      "id": "PI-CORE-RESEARCH-STATUS-POLICY",
+      "original_1_english": "research/RESEARCH_STATUS_POLICY_EN.md",
+      "original_2_korean": "research/RESEARCH_STATUS_POLICY_KO.md",
+      "source_legacy_path": "RESEARCH_STATUS_POLICY.md",
+      "source_blob_sha_at_split": "e99419192c4a0e406bacde0ded39dec2098d987a",
+      "kind": "extracted_historical_language_sections_with_disclosed_editorial_repairs",
+      "structural_pair_present": true,
+      "meaning_review_status": "NOT_INDEPENDENTLY_VERIFIED",
+      "original_conception_language": "NOT_VERIFIED",
+      "independent_review_receipt": null,
+      "one_sided_edit_exception": null,
+      "known_divergences": []
+    },
+    {
+      "id": "PI-E008-READINESS",
+      "original_1_english": "experiments/e008/EXECUTABILITY_AUDIT_EN.md",
+      "original_2_korean": "experiments/e008/EXECUTABILITY_AUDIT_KO.md",
+      "kind": "existing_pair",
+      "structural_pair_present": true,
+      "meaning_review_status": "NOT_INDEPENDENTLY_VERIFIED",
+      "original_conception_language": "NOT_VERIFIED",
+      "independent_review_receipt": null,
+      "one_sided_edit_exception": null
+    },
+    {
+      "id": "PI-ECR-EXP-V14",
+      "original_1_english": "experiments/ecr_v1_4/README_EN.md",
+      "original_2_korean": "experiments/ecr_v1_4/README_KO.md",
+      "kind": "synthetic_negative_control_design_only",
+      "structural_pair_present": true,
+      "meaning_review_status": "NOT_INDEPENDENTLY_VERIFIED",
+      "original_conception_language": "NOT_INDEPENDENTLY_ADJUDICATED",
+      "independent_review_receipt": null,
+      "one_sided_edit_exception": null,
+      "known_divergences": [
+        "Both editions preserve design-only scope, synthetic negative controls, the E009 negative result, and independent validation requirements; semantic equivalence is not independently reviewed."
+      ]
+    },
+    {
+      "id": "PI-EXP-E007-TIMING",
+      "original_1_english": "experiments/e007/README_EN.md",
+      "original_2_korean": "experiments/e007/README_KO.md",
+      "source_legacy_path": "experiments/e007/README.md",
+      "source_blob_sha_at_split": "7649c694fb8f8340d91feb6121b3de0ad67366f3",
+      "kind": "source_preserving_bilingual_e007_timing_corrections_and_attack_order_reader_editions",
+      "structural_pair_present": true,
+      "meaning_review_status": "NOT_INDEPENDENTLY_VERIFIED",
+      "original_conception_language": "NOT_INDEPENDENTLY_ADJUDICATED",
+      "independent_review_receipt": null,
+      "one_sided_edit_exception": null,
+      "known_divergences": [
+        "Both new editions reproduce fixed 72/36/17 and 31-to-36 coding-correction lineage but do not certify independent semantic translation."
+      ]
+    },
+    {
+      "id": "PI-EXP-E008-SPEC",
+      "original_1_english": "experiments/e008/README_EN.md",
+      "original_2_korean": "experiments/e008/README_KO.md",
+      "source_legacy_path": "experiments/e008/README.md",
+      "source_blob_sha_at_split": "25a2e80e20332742bb26cc297ed9e31b3004ac7d",
+      "kind": "source_preserving_bilingual_e008_preregistration_and_readiness_only",
+      "structural_pair_present": true,
+      "meaning_review_status": "NOT_INDEPENDENTLY_VERIFIED",
+      "original_conception_language": "NOT_INDEPENDENTLY_ADJUDICATED",
+      "independent_review_receipt": null,
+      "one_sided_edit_exception": null,
+      "known_divergences": [
+        "Both editions emphasize 16/16 underdetermined for five-baseline main experiment, not a completed result."
       ]
     },
     {
@@ -226,35 +231,72 @@
       ]
     },
     {
-      "id": "PI-EXP-E007-TIMING",
-      "original_1_english": "experiments/e007/README_EN.md",
-      "original_2_korean": "experiments/e007/README_KO.md",
-      "source_legacy_path": "experiments/e007/README.md",
-      "source_blob_sha_at_split": "7649c694fb8f8340d91feb6121b3de0ad67366f3",
-      "kind": "source_preserving_bilingual_e007_timing_corrections_and_attack_order_reader_editions",
+      "id": "PI-HISTORICAL-CAPTURE",
+      "original_1_english": "HISTORICAL_STATE_CONTROL_MEMORY_PROVENANCE_CAPTURE_v0_1_EN.md",
+      "original_2_korean": "HISTORICAL_STATE_CONTROL_MEMORY_PROVENANCE_CAPTURE_v0_1_KO.md",
+      "kind": "existing_pair",
       "structural_pair_present": true,
       "meaning_review_status": "NOT_INDEPENDENTLY_VERIFIED",
-      "original_conception_language": "NOT_INDEPENDENTLY_ADJUDICATED",
+      "original_conception_language": "NOT_VERIFIED",
       "independent_review_receipt": null,
-      "one_sided_edit_exception": null,
-      "known_divergences": [
-        "Both new editions reproduce fixed 72/36/17 and 31-to-36 coding-correction lineage but do not certify independent semantic translation."
-      ]
+      "one_sided_edit_exception": null
     },
     {
-      "id": "PI-EXP-E008-SPEC",
-      "original_1_english": "experiments/e008/README_EN.md",
-      "original_2_korean": "experiments/e008/README_KO.md",
-      "source_legacy_path": "experiments/e008/README.md",
-      "source_blob_sha_at_split": "25a2e80e20332742bb26cc297ed9e31b3004ac7d",
-      "kind": "source_preserving_bilingual_e008_preregistration_and_readiness_only",
+      "id": "PI-ICM-INDEPENDENT",
+      "original_1_english": "research/ICM_INDEPENDENT_CHOICE_AUDIT_2026-10-13_EN.md",
+      "original_2_korean": "research/ICM_INDEPENDENT_CHOICE_AUDIT_2026-10-13_KO.md",
+      "kind": "existing_pair",
+      "structural_pair_present": true,
+      "meaning_review_status": "NOT_INDEPENDENTLY_VERIFIED",
+      "original_conception_language": "NOT_VERIFIED",
+      "independent_review_receipt": null,
+      "one_sided_edit_exception": null
+    },
+    {
+      "id": "PI-NAV-REVIEW",
+      "original_1_english": "navigation/AI_REVIEW_EN.md",
+      "original_2_korean": "navigation/AI_REVIEW_KO.md",
+      "kind": "navigation_only",
+      "structural_pair_present": true,
+      "meaning_review_status": "NOT_INDEPENDENTLY_VERIFIED",
+      "original_conception_language": "NOT_VERIFIED",
+      "independent_review_receipt": null,
+      "one_sided_edit_exception": null
+    },
+    {
+      "id": "PI-NAV-START",
+      "original_1_english": "navigation/START_HERE_EN.md",
+      "original_2_korean": "navigation/START_HERE_KO.md",
+      "kind": "navigation_only",
+      "structural_pair_present": true,
+      "meaning_review_status": "NOT_INDEPENDENTLY_VERIFIED",
+      "original_conception_language": "NOT_VERIFIED",
+      "independent_review_receipt": null,
+      "one_sided_edit_exception": null
+    },
+    {
+      "id": "PI-NAV-TOC",
+      "original_1_english": "navigation/RESEARCH_TOC_EN.md",
+      "original_2_korean": "navigation/RESEARCH_TOC_KO.md",
+      "kind": "navigation_only",
+      "structural_pair_present": true,
+      "meaning_review_status": "NOT_INDEPENDENTLY_VERIFIED",
+      "original_conception_language": "NOT_VERIFIED",
+      "independent_review_receipt": null,
+      "one_sided_edit_exception": null
+    },
+    {
+      "id": "PI-RESEARCH-ECR-V14",
+      "original_1_english": "research/ECR_INFERENCE_AND_COEXISTENCE_2026-10-18_EN.md",
+      "original_2_korean": "research/ECR_INFERENCE_AND_COEXISTENCE_2026-10-18_KO.md",
+      "kind": "evidence_bounded_paper_candidate_not_peer_reviewed",
       "structural_pair_present": true,
       "meaning_review_status": "NOT_INDEPENDENTLY_VERIFIED",
       "original_conception_language": "NOT_INDEPENDENTLY_ADJUDICATED",
       "independent_review_receipt": null,
       "one_sided_edit_exception": null,
       "known_divergences": [
-        "Both editions emphasize 16/16 underdetermined for five-baseline main experiment, not a completed result."
+        "Both editions preserve design-only scope, synthetic negative controls, the E009 negative result, and independent validation requirements; semantic equivalence is not independently reviewed."
       ]
     },
     {
@@ -270,20 +312,6 @@
       "known_divergences": [
         "The two editions require comparison by independent reviewers before semantic parity can be certified.",
         "The original E009 negative result is retained; this new pair is an open reviewer challenge, not a completed experiment."
-      ]
-    },
-    {
-      "id": "PI-CAP-GPT-PROPOSAL",
-      "original_1_english": "capability_lab/PROPOSAL_GATE_EN.md",
-      "original_2_korean": "capability_lab/PROPOSAL_GATE_KO.md",
-      "kind": "bounded_gpt_candidate_admission_synthetic_only",
-      "structural_pair_present": true,
-      "meaning_review_status": "NOT_INDEPENDENTLY_VERIFIED",
-      "original_conception_language": "NOT_INDEPENDENTLY_ADJUDICATED",
-      "independent_review_receipt": null,
-      "one_sided_edit_exception": null,
-      "known_divergences": [
-        "English and Korean versions preserve the same limits but semantic equivalence is unverified."
       ]
     }
   ],
@@ -326,13 +354,13 @@
     }
   ],
   "metrics": {
-    "markdown_total": 149,
+    "markdown_total": 153,
     "filename_classes": {
       "UNMARKED_LANGUAGE_UNVERIFIED": 42,
       "LEGACY_MIXED_READER_ENTRY": 2,
-      "KO_SUFFIX_UNVERIFIED": 64,
+      "KO_SUFFIX_UNVERIFIED": 66,
       "ORDERED_BILINGUAL_FOUNDER_OR_GOVERNANCE": 2,
-      "EN_SUFFIX_UNVERIFIED": 18,
+      "EN_SUFFIX_UNVERIFIED": 20,
       "COMBINED_NAMING_UNVERIFIED": 21
     },
     "meaning_verified_pairs": 0,
@@ -880,6 +908,18 @@
       "content_equivalence": "NOT_REVIEWED"
     },
     {
+      "path": "experiments/ecr_v1_4/README_EN.md",
+      "filename_class": "EN_SUFFIX_UNVERIFIED",
+      "counterpart_path": "experiments/ecr_v1_4/README_KO.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "experiments/ecr_v1_4/README_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": "experiments/ecr_v1_4/README_EN.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
       "path": "experiments/gpt_double_standard_20261014/FAIL_REPORT_20261017_KO.md",
       "filename_class": "KO_SUFFIX_UNVERIFIED",
       "counterpart_path": null,
@@ -1105,6 +1145,18 @@
       "path": "research/E009_INDEPENDENT_DECISION_GATE_KO.md",
       "filename_class": "KO_SUFFIX_UNVERIFIED",
       "counterpart_path": "research/E009_INDEPENDENT_DECISION_GATE_EN.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "research/ECR_INFERENCE_AND_COEXISTENCE_2026-10-18_EN.md",
+      "filename_class": "EN_SUFFIX_UNVERIFIED",
+      "counterpart_path": "research/ECR_INFERENCE_AND_COEXISTENCE_2026-10-18_KO.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "research/ECR_INFERENCE_AND_COEXISTENCE_2026-10-18_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": "research/ECR_INFERENCE_AND_COEXISTENCE_2026-10-18_EN.md",
       "content_equivalence": "NOT_REVIEWED"
     },
     {
