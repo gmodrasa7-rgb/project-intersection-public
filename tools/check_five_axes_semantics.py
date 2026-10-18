@@ -117,7 +117,7 @@ def run_self_tests(bodies: dict[str, str], reg: dict) -> int:
     for name, path, before, after in checks:
         assert before in bodies[path], f"Bad self-test fixture: {name}"
         changed = dict(bodies)
-        changed[path] = changed[path].replace(before, after, 1)
+        changed[path] = changed[path].replace(before, after)
         assert inspect(changed, reg), f"FALSE PASS: {name}"
     changed_reg = json.loads(json.dumps(reg))
     changed_reg["pair_catalog"] = [
