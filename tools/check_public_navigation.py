@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """Deterministic repository-local Markdown link integrity and landing clutter budget.
 
-Only checks existing local files/directories, not remote websites or fragment
-anchors. No network, third-party dependency, or scientific verification claim.
+Checks local paths across Markdown and checks same-repository main-branch URLs
+and GitHub-style heading anchors for a bounded set of public reader entrypoints.
+External websites and scientific truth are NOT verified. No network or third-party dependencies.
 Do not use this to delete historical source, failure or contribution records.
 """
 from __future__ import annotations
@@ -11,6 +12,7 @@ import argparse
 import json
 import posixpath
 import re
+import unicodedata
 from pathlib import Path
 from urllib.parse import unquote, urlsplit
 
@@ -28,6 +30,20 @@ CORE = (
     "CONTRIBUTING.md",
     "START_HERE_EVIDENCE_FUNDING_BILINGUAL.md",
 )
+READER_ENTRYPOINTS = (
+    "README.md",
+    "AI_REVIEW_START_HERE.md",
+    "navigation/START_HERE_EN.md",
+    "navigation/START_HERE_KO.md",
+    "navigation/RESEARCH_TOC_EN.md",
+    "navigation/RESEARCH_TOC_KO.md",
+    "research/PUBLIC_EVIDENCE_INDEX_EN.md",
+    "research/PUBLIC_EVIDENCE_INDEX_KO.md",
+    "research/PUBLIC_REVIEW_PACKET_EN.md",
+    "research/PUBLIC_REVIEW_PACKET_KO.md",
+)
+SELF_REPO = "/gmodrasa7-rgb/project-intersection-public/"
+
 LINK = re.compile(r"!?\[[^\]\n]*\]\(([^)\n]+)\)")
 FENCE = re.compile(r"^\s{0,3}(\x60{3,}|~{3,})")
 
@@ -81,6 +97,103 @@ def find_bad_links(source: str, body: str, exists):
     return bad
 
 
+
+def reader_target(source: str, destination: str):
+    """Resolve an entrypoint link; preserve #fragment for heading validation.
+
+    Only GitHub links to THIS repo on main count as internal absolute links.
+    Historical commit URLs, external sites and other branches stay untested.
+    """
+    raw = destination.strip()
+    if raw.startswith("<"):
+        raw = raw[1:].split(">", 1)[0]
+    else:
+        raw = raw.split()[0] if raw else ""
+    if not raw or raw.startswith("//"):
+        return None
+    parsed = urlsplit(raw)
+    if parsed.scheme or parsed.netloc:
+        prefix = SELF_REPO + "blob/main/"
+        tree_prefix = SELF_REPO + "tree/main/"
+        if (parsed.scheme != "https" or parsed.netloc != "github.com"
+                or not (parsed.path.startswith(prefix) or parsed.path.startswith(tree_prefix))):
+            return None
+        candidate = parsed.path[len(prefix):] if parsed.path.startswith(prefix) else parsed.path[len(tree_prefix):]
+        target = unquote(candidate)
+    else:
+        target = local_target(source, raw)
+        if target is None and raw.startswith("#"):
+            target = source
+    if target is None:
+        return None
+    return target, unquote(parsed.fragment)
+
+
+def github_heading_anchors(body: str):
+    """Approximate GitHub heading slugs; explicit anchors and duplicate headings included.
+
+    This catches ordinary broken headings, not GitHub's full Markdown rendering.
+    """
+    result = set()
+    seen = {}
+    for _, line in iter_live_lines(body):
+        for name in re.findall(r'<a\s+(?:id|name)=["\']([^"\']+)["\']', line):
+            result.add(name)
+        match = re.match(r"^\s{0,3}#{1,6}\s+(.+?)\s*#*\s*$", line)
+        if not match:
+            continue
+        heading = re.sub(r"!\[([^\]]*)\]\([^)]+\)", r"\1", match.group(1))
+        heading = re.sub(r"\[([^\]]*)\]\([^)]+\)", r"\1", heading)
+        heading = re.sub(r"<[^>]+>", "", heading)
+        heading = heading.replace(chr(96), "").replace("*", "").replace("~", "")
+        heading = "".join(
+            char for char in heading.lower()
+            if char.isspace() or char in "-_" or
+            not unicodedata.category(char).startswith(("P", "S"))
+        ).strip()
+        base = re.sub(r"\s", "-", heading)
+        index = seen.get(base, 0)
+        seen[base] = index + 1
+        result.add(base if not index else f"{base}-{index}")
+    return result
+
+
+def find_bad_reader_links(source: str, body: str, exists, read_text):
+    """Check the first-reader routes including anchored and self-repository main URLs."""
+    bad = []
+    anchor_cache = {}
+    for lineno, line in iter_live_lines(body):
+        for match in LINK.finditer(line):
+            resolved = reader_target(source, match.group(1))
+            if resolved is None:
+                continue
+            target, fragment = resolved
+            if target.startswith("!") or not exists(target):
+                bad.append((source, lineno, target))
+            elif fragment and target.endswith(".md"):
+                if target not in anchor_cache:
+                    anchor_cache[target] = github_heading_anchors(read_text(target))
+                if fragment not in anchor_cache[target]:
+                    bad.append((source, lineno, target + "#" + fragment))
+    return bad
+
+
+def scan_reader_entrypoints():
+    paths = {p.relative_to(ROOT).as_posix() for p in ROOT.rglob("*") if ".git" not in p.parts}
+    errors = []
+    for source in READER_ENTRYPOINTS:
+        full = ROOT / source
+        if not full.is_file():
+            errors.append((source, 0, "!ENTRYPOINT-MISSING"))
+            continue
+        errors.extend(find_bad_reader_links(
+            source, full.read_text(encoding="utf-8"),
+            lambda p: p in paths,
+            lambda p: (ROOT / p).read_text(encoding="utf-8"),
+        ))
+    return errors
+
+
 def scan(paths):
     all_paths = {p.relative_to(ROOT).as_posix() for p in ROOT.rglob("*") if ".git" not in p.parts}
     exists = lambda p: p in all_paths
@@ -105,6 +218,17 @@ def self_test():
         ("README.md", 1, "missing.md")]
     assert find_bad_links("README.md", "~~~md\n[example](ghost.md)\n~~~\n[ok](README.md)", exists) == []
     assert find_bad_links("research/a.md", "[relative](../README.md)", exists) == []
+    fake = {"README.md": "# Purpose\n## Repeated\n## Repeated\n",
+            "guide.md": "# Target heading\n"}
+    assert github_heading_anchors(fake["README.md"]) >= {"purpose", "repeated", "repeated-1"}
+    assert not find_bad_reader_links(
+        "README.md", "[ok](guide.md#target-heading) [external](https://example.org/x#absent)",
+        lambda p: p in fake, lambda p: fake[p])
+    assert find_bad_reader_links(
+        "README.md", "[bad](guide.md#absent) [local-bad](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/ghost.md)",
+        lambda p: p in fake, lambda p: fake[p]) == [
+            ("README.md", 1, "guide.md#absent"), ("README.md", 1, "ghost.md")]
+    assert reader_target("README.md", "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/guide.md#target-heading") == ("guide.md", "target-heading")
     discovery = json.loads((ROOT / "AI_DISCOVERY_INDEX.json").read_text(encoding="utf-8"))
     assert not discovery_route_errors(discovery), discovery_route_errors(discovery)
     broken = json.loads(json.dumps(discovery))
@@ -163,8 +287,12 @@ def main():
     failures = scan(paths)
     discovery = json.loads((ROOT / "AI_DISCOVERY_INDEX.json").read_text(encoding="utf-8"))
     route_failures = discovery_route_errors(discovery)
+    reader_failures = scan_reader_entrypoints()
     print(f"Markdown file scope: {len(paths)}; unresolved local links: {len(failures)}")
     print(f"Current/historical discovery route errors: {len(route_failures)}")
+    print(f"Critical reader-route path/anchor errors: {len(reader_failures)}")
+    for src, lineno, target in reader_failures[:40]:
+        print(f"  READER {src}:{lineno}: {target}")
     for src, lineno, target in failures[:80]:
         print(f"  {src}:{lineno}: {target}")
     if len(failures) > 80:
@@ -178,6 +306,8 @@ def main():
         raise SystemExit("FAIL: local link integrity regression")
     if route_failures:
         raise SystemExit("FAIL: AI discovery route regression: " + ", ".join(route_failures))
+    if reader_failures:
+        raise SystemExit("FAIL: public reader link/anchor regression")
     print("Public navigation integrity and root clutter budget: PASS")
 
 
