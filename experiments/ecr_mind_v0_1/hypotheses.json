@@ -141,6 +141,15 @@
       "potential_discriminator": "record opportunity, third-party impact and motive contrasts separately",
       "strong_counterexample": "same label produces different harms or same harm from different motives",
       "evidence": "LITERATURE_LED_RESEARCH_QUESTION"
+    },
+    {
+      "id": "MIND-16",
+      "construct": "power as selection/revelation vs psychological transformation",
+      "source_id": "Galinsky2006_Hogeveen2014_Keltner2003",
+      "competing_explanation": "preexisting status-seeking traits and changes in available action, reward, or sampling can explain the same post-power behavior",
+      "potential_discriminator": "ethically randomized short-term decision authority with matched payoff/opportunity, before-after perspective-taking measures and role reversal",
+      "strong_counterexample": "post-role behavior changes while cognitive measure does not, or cognitive shift occurs without changed opportunities; longitudinal confounding remains",
+      "evidence": "LITERATURE_LED_RESEARCH_QUESTION"
     }
   ]
 }
