@@ -27,6 +27,14 @@ Python 3.10+, standard library only, repository root:
 
 Expected design conclusion: 7 tests selected, 8 behavioral classes among 9 policies, nonempty unresolved class, actual_minds_inferred=false and empirical_validation=false. 29 regression assertions include brute-force proof no 0–6-test subset reproduces the full partition, and negative controls for invented mind claims. Passing tests is software verification of declared cases only.
 
+## IVS-0R upstream personal-inference regression (24 more synthetic tests)
+The extra [inference_guard.py](inference_guard.py) does **not** process real dialogue text. It accepts only abstract provenance and claim-type flags and rejects: relabeling declared equal autonomy as a domination motive; treating a current self-report of feeling as proof of hidden biology; assigning exact historical dates from a previous assistant's unsupported summary; asking an already answered normative question again; and publishing private mental-health, genetic, or family observations by default. It separates a direct feeling report from a causal explanation, and a declared value from a permanent trait. A confirmed primary quote and exact timestamp can verify a historical statement **only**, not the person's lifelong character. No individual diagnosis is possible.
+
+    PYTHONPATH=experiments/ecr_mind_v0_1 python -m unittest discover -s experiments/ecr_mind_v0_1 -p 'test_*.py' -v
+    python experiments/ecr_mind_v0_1/inference_guard.py
+
+**Expected regression inventory:** original 29 finite contrast tests + 24 new evidence-scope tests = 53, subject to actual GitHub Actions confirmation. This software guard is a local research artifact, not a change to any deployed ChatGPT model, safety system or user-memory controls; it cannot guarantee future model responses follow the protocol. The public repository contains only fabricated metadata tests, not private original user statements.
+
 ## Real research continuation and stop criteria
 1. Register behavioral construct, instrument validity, ecological context, affected target and consent.
 2. Measure multiple *independent types* of evidence—behavior, bodily state, learning, and where appropriate neural correlates or self-report—in real ethical prospective studies.
