@@ -166,6 +166,20 @@
       ]
     },
     {
+      "id": "PI-ECR-MIND-OPEN-DATA-20261018",
+      "original_1_english": "research/ECR_MIND_OPEN_DATA_ROUTES_2026-10-18_EN.md",
+      "original_2_korean": "research/ECR_MIND_OPEN_DATA_ROUTES_2026-10-18_KO.md",
+      "kind": "real_public_dataset_feasibility_review_not_empirical_reanalysis",
+      "structural_pair_present": true,
+      "meaning_review_status": "NOT_INDEPENDENTLY_VERIFIED",
+      "original_conception_language": "NOT_INDEPENDENTLY_ADJUDICATED",
+      "independent_review_receipt": null,
+      "one_sided_edit_exception": null,
+      "known_divergences": [
+        "Both editions identify dataset accessions ds003745, ds004128, ds005123 and no-data-analysed status; independent semantic review pending."
+      ]
+    },
+    {
       "id": "PI-ECR-MIND-PAPER-20261018",
       "original_1_english": "research/ECR_MIND_FOUNDATIONS_2026-10-18_EN.md",
       "original_2_korean": "research/ECR_MIND_FOUNDATIONS_2026-10-18_KO.md",
@@ -354,13 +368,13 @@
     }
   ],
   "metrics": {
-    "markdown_total": 153,
+    "markdown_total": 155,
     "filename_classes": {
       "UNMARKED_LANGUAGE_UNVERIFIED": 42,
       "LEGACY_MIXED_READER_ENTRY": 2,
-      "KO_SUFFIX_UNVERIFIED": 66,
+      "KO_SUFFIX_UNVERIFIED": 67,
       "ORDERED_BILINGUAL_FOUNDER_OR_GOVERNANCE": 2,
-      "EN_SUFFIX_UNVERIFIED": 20,
+      "EN_SUFFIX_UNVERIFIED": 21,
       "COMBINED_NAMING_UNVERIFIED": 21
     },
     "meaning_verified_pairs": 0,
@@ -1157,6 +1171,18 @@
       "path": "research/ECR_MIND_FOUNDATIONS_2026-10-18_KO.md",
       "filename_class": "KO_SUFFIX_UNVERIFIED",
       "counterpart_path": "research/ECR_MIND_FOUNDATIONS_2026-10-18_EN.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "research/ECR_MIND_OPEN_DATA_ROUTES_2026-10-18_EN.md",
+      "filename_class": "EN_SUFFIX_UNVERIFIED",
+      "counterpart_path": "research/ECR_MIND_OPEN_DATA_ROUTES_2026-10-18_KO.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "research/ECR_MIND_OPEN_DATA_ROUTES_2026-10-18_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": "research/ECR_MIND_OPEN_DATA_ROUTES_2026-10-18_EN.md",
       "content_equivalence": "NOT_REVIEWED"
     },
     {
