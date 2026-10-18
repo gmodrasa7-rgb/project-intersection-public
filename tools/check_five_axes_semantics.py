@@ -29,7 +29,7 @@ REQUIRED = {
     EN: (
         "MER — Mind–Experience–Response",
         "ECR — Entity–Constituency–Relation",
-        "Behavioral data",  # checked via source-location paragraph below
+        "behavioral data",  # checked via source-location paragraph below
         "43 consented participants",
         "1 excluded for imaging artifacts",
         "10 for excessive motion",
