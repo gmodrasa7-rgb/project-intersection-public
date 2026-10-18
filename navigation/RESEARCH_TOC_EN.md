@@ -85,6 +85,7 @@ Many historical sources are Korean-only or bilingual; linked **source titles, fi
 
 ## 8. Independent criticism, replication and knowledge navigation
 
+- [IVS-0R mechanism/role-reversal independent decision gate](../research/PUBLIC_REVIEW_PACKET_EN.md#7a-ivs-0r-integrated-decision-gate--three-day-research-correction-2026-10-19)
 - [Claims, citations, reproducibility checks and limits](../research/PUBLIC_REVIEW_PACKET_EN.md)
 - [Historical mixed-language AI review entry](../AI_REVIEW_START_HERE.md)
 - [Knowledge graph as an index, not proof](../knowledge/README.md)

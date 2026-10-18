@@ -288,6 +288,35 @@ def check(overrides: dict[str, str] | None = None) -> list[str]:
                                  or "experiments/e010/README_KO.md" not in links):
             errors.append("REVIEW_KO_EDITION_SOURCE_MISROUTED")
 
+    # IVS-0R research-order, evidentiary limits and cross-language routes.
+    # This is a static publishing guard, not a claim of causal identification.
+    for language in ("EN", "KO"):
+        page = f"research/PUBLIC_REVIEW_PACKET_{language}.md"
+        toc = f"navigation/RESEARCH_TOC_{language}.md"
+        body = load(page)
+        titles = local_heading_ids(body)
+        target_anchor = next((a for a in titles if a.startswith("7a-ivs-0r-")), None)
+        routes = set(neighbors(toc))
+        if not target_anchor or (page, target_anchor) not in routes:
+            errors.append("IVS0R_CROSS_LANGUAGE_REVIEW_ROUTE_MISSING:" + language)
+        required_tokens = (
+            ("2×2×2", "UNIDENTIFIED", "NOT_COMPARABLE", "SYNTHETIC_ONLY",
+             "CONDITIONAL_PASS", "GENERAL_COEXISTENCE_PROVEN",
+             "42.35%", "PR #211", "PR #212", "PR #213",
+             "model/version or human sample")
+            if language == "EN" else
+            ("2×2×2", "UNIDENTIFIED", "NOT_COMPARABLE", "SYNTHETIC_ONLY",
+             "CONDITIONAL_PASS", "GENERAL_COEXISTENCE_PROVEN",
+             "42.35%", "PR #211", "PR #212", "PR #213",
+             "model/version 또는 사람 표본")
+        )
+        if any(token not in body for token in required_tokens):
+            errors.append("IVS0R_MECHANISM_EVIDENCE_GATE_MISSING:" + language)
+        if "no completed main policy comparison" not in body.lower() and language == "EN":
+            errors.append("IVS0R_E008_UNFINISHED_GUARD_LOST:EN")
+        if "본 정책 비교실험 미완료" not in body and language == "KO":
+            errors.append("IVS0R_E008_UNFINISHED_GUARD_LOST:KO")
+
     funder = load("funding/FUNDER_START_HERE.md")
     if "Historical grant proposals below are not documented awards" not in funder:
         errors.append("UNAWARDED_FUNDING_BOUNDARY_MISSING")
@@ -371,7 +400,24 @@ def self_test():
         "experiments/e009/RESULT.json": json.dumps(result)
     })
 
-    print("External-review route guard: PASS (12 deliberate defects rejected)")
+    # IVS-0R gate: removal, evidence inflation and reader-route drift.
+    new_en = document("research/PUBLIC_REVIEW_PACKET_EN.md")
+    assert "IVS0R_MECHANISM_EVIDENCE_GATE_MISSING:EN" in check({
+        "research/PUBLIC_REVIEW_PACKET_EN.md":
+        new_en.replace("UNIDENTIFIED", "KNOWN_WITHOUT_OBSERVATION")
+    })
+    new_ko = document("research/PUBLIC_REVIEW_PACKET_KO.md")
+    assert "IVS0R_E008_UNFINISHED_GUARD_LOST:KO" in check({
+        "research/PUBLIC_REVIEW_PACKET_KO.md":
+        new_ko.replace("본 정책 비교실험 미완료", "본 정책 비교실험 검증 완료")
+    })
+    new_toc = document("navigation/RESEARCH_TOC_EN.md")
+    assert "IVS0R_CROSS_LANGUAGE_REVIEW_ROUTE_MISSING:EN" in check({
+        "navigation/RESEARCH_TOC_EN.md":
+        new_toc.replace("PUBLIC_REVIEW_PACKET_EN.md#7a-", "PUBLIC_REVIEW_PACKET_EN.md#missing-")
+    })
+
+    print("External-review route guard: PASS (15 deliberate defects rejected)")
     print("Boundary: static graph/anchor/status checks, not visitor usability or scientific validation")
 
 
