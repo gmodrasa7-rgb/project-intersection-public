@@ -341,13 +341,13 @@
     }
   ],
   "metrics": {
-    "markdown_total": 149,
+    "markdown_total": 151,
     "filename_classes": {
       "UNMARKED_LANGUAGE_UNVERIFIED": 42,
       "LEGACY_MIXED_READER_ENTRY": 2,
-      "KO_SUFFIX_UNVERIFIED": 64,
+      "KO_SUFFIX_UNVERIFIED": 65,
       "ORDERED_BILINGUAL_FOUNDER_OR_GOVERNANCE": 2,
-      "EN_SUFFIX_UNVERIFIED": 18,
+      "EN_SUFFIX_UNVERIFIED": 19,
       "COMBINED_NAMING_UNVERIFIED": 21
     },
     "meaning_verified_pairs": 0,
