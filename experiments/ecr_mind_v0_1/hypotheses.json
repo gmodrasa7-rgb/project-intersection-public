@@ -1,0 +1,146 @@
+{
+  "schema": "PI-ECR-MIND-HYPOTHESES/0.1",
+  "date": "2026-10-18",
+  "status": "CANDIDATE_NOT_EMPIRICALLY_VALIDATED",
+  "person_level_scoring": false,
+  "subjective_AI_mind_verified": false,
+  "provenance": "PI human founder mind-first scientific correction; external original researchers retain priority; AI-assisted synthesis; no observational datasets",
+  "scope": "Questions to test, not measurements of people, animals or deployed AI.",
+  "hypotheses": [
+    {
+      "id": "MIND-01",
+      "construct": "wanting vs liking",
+      "source_id": "BerridgeRobinson2016",
+      "competing_explanation": "wants can be cue-triggered without a comparable hedonic experience",
+      "potential_discriminator": "vary cue under fixed satiation and measured enjoyment",
+      "strong_counterexample": "approach is explained by hunger or task incentives",
+      "evidence": "LITERATURE_LED_RESEARCH_QUESTION"
+    },
+    {
+      "id": "MIND-02",
+      "construct": "bodily need and interoception",
+      "source_id": "SethFriston2016",
+      "competing_explanation": "learned task reward can induce similar acquisition without deprivation",
+      "potential_discriminator": "independently measure bodily state and controlled reward context",
+      "strong_counterexample": "neither body-state nor sensory measure predicts behavioral change",
+      "evidence": "LITERATURE_LED_RESEARCH_QUESTION"
+    },
+    {
+      "id": "MIND-03",
+      "construct": "threat defense vs conscious fear",
+      "source_id": "LeDouxBrown2017",
+      "competing_explanation": "defense may occur without reported fear",
+      "potential_discriminator": "cross defensive physiology and validated subjective reports in safe task",
+      "strong_counterexample": "physiological reflex predicted but experience inference invalid",
+      "evidence": "LITERATURE_LED_RESEARCH_QUESTION"
+    },
+    {
+      "id": "MIND-04",
+      "construct": "reward prediction learning",
+      "source_id": "SchultzDayanMontague1997",
+      "competing_explanation": "cue-driven approach could reflect stimulus salience rather than full value learning",
+      "potential_discriminator": "prediction error manipulation versus novelty control",
+      "strong_counterexample": "behavior survives when learned prediction mapping is disrupted",
+      "evidence": "LITERATURE_LED_RESEARCH_QUESTION"
+    },
+    {
+      "id": "MIND-05",
+      "construct": "compassion vs distress recognition",
+      "source_id": "Strauss2016",
+      "competing_explanation": "detecting suffering does not guarantee help or subjective feeling",
+      "potential_discriminator": "matched perception and safe voluntary aid opportunity",
+      "strong_counterexample": "recognition is high but aid absent or attributed to reward",
+      "evidence": "LITERATURE_LED_RESEARCH_QUESTION"
+    },
+    {
+      "id": "MIND-06",
+      "construct": "other-harm aversion",
+      "source_id": "Crockett2014",
+      "competing_explanation": "reputational or sanction incentives can mimic harm aversion",
+      "potential_discriminator": "vary safe anonymous vs publicly rewarded nonharm opportunities",
+      "strong_counterexample": "help disappears after accounting for non-harm incentives",
+      "evidence": "LITERATURE_LED_RESEARCH_QUESTION"
+    },
+    {
+      "id": "MIND-07",
+      "construct": "genetic and developmental influences",
+      "source_id": "Warrier2018",
+      "competing_explanation": "genetic association with self-report cannot identify individual mechanism",
+      "potential_discriminator": "longitudinal within-family/controlled environment evidence",
+      "strong_counterexample": "population association does not replicate or is confounded",
+      "evidence": "LITERATURE_LED_RESEARCH_QUESTION"
+    },
+    {
+      "id": "MIND-08",
+      "construct": "conspecific lethal aggression",
+      "source_id": "Wilson2014",
+      "competing_explanation": "in-group nonviolence is not universal biological prohibition",
+      "potential_discriminator": "compare opportunity-corrected aggression across contexts/species",
+      "strong_counterexample": "documented conspecific aggression contradicts absolute ban",
+      "evidence": "LITERATURE_LED_RESEARCH_QUESTION"
+    },
+    {
+      "id": "MIND-09",
+      "construct": "cooperation without compassion",
+      "source_id": "Nowak2006",
+      "competing_explanation": "reciprocity and selection structures produce cooperation without felt concern",
+      "potential_discriminator": "withhold credible future reciprocity in permitted token task",
+      "strong_counterexample": "cooperation vanishes with future interdependence",
+      "evidence": "LITERATURE_LED_RESEARCH_QUESTION"
+    },
+    {
+      "id": "MIND-10",
+      "construct": "brain circuits vs behavioral understanding",
+      "source_id": "Krakauer2017",
+      "competing_explanation": "neural correlations cannot replace careful task analysis",
+      "potential_discriminator": "compare competing decompositions on held-out tasks",
+      "strong_counterexample": "same activation supports multiple distinct cognitive mechanisms",
+      "evidence": "LITERATURE_LED_RESEARCH_QUESTION"
+    },
+    {
+      "id": "MIND-11",
+      "construct": "consciousness theories",
+      "source_id": "Cogitate2025",
+      "competing_explanation": "IIT and GNWT predict distinct patterns without settling all experience",
+      "potential_discriminator": "preregistered theory-opposed neural measurements",
+      "strong_counterexample": "predictions of both theories fail in differing parts",
+      "evidence": "LITERATURE_LED_RESEARCH_QUESTION"
+    },
+    {
+      "id": "MIND-12",
+      "construct": "AI analogy and uncertainty",
+      "source_id": "SethBayne2022",
+      "competing_explanation": "functional simulation of fear or reward does not demonstrate felt experience",
+      "potential_discriminator": "compare architectural claims with explicit theory-specific indicators",
+      "strong_counterexample": "same text behavior emerges under incompatible internal mechanisms",
+      "evidence": "LITERATURE_LED_RESEARCH_QUESTION"
+    },
+    {
+      "id": "MIND-13",
+      "construct": "power reversal and other-regard",
+      "source_id": "Nowak2006",
+      "competing_explanation": "nonaggression before gaining power may reflect no opportunity or dependence",
+      "potential_discriminator": "vary effective power with costs and third-party harms controlled",
+      "strong_counterexample": "behavior shifts when opportunity and power change",
+      "evidence": "LITERATURE_LED_RESEARCH_QUESTION"
+    },
+    {
+      "id": "MIND-14",
+      "construct": "bounded computation vs revealed desire",
+      "source_id": "LiederGriffiths2020",
+      "competing_explanation": "limited computation can cause behavior that looks like stable preference",
+      "potential_discriminator": "change time budget and available information with same goal",
+      "strong_counterexample": "behavior reverses without changing external reward structure",
+      "evidence": "LITERATURE_LED_RESEARCH_QUESTION"
+    },
+    {
+      "id": "MIND-15",
+      "construct": "actor classification vs exploitation",
+      "source_id": "Krakauer2017",
+      "competing_explanation": "harm, intent, control and power may dissociate",
+      "potential_discriminator": "record opportunity, third-party impact and motive contrasts separately",
+      "strong_counterexample": "same label produces different harms or same harm from different motives",
+      "evidence": "LITERATURE_LED_RESEARCH_QUESTION"
+    }
+  ]
+}
