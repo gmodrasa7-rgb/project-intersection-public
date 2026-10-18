@@ -10,7 +10,7 @@
 
 **The research question:** **Can agents pursuing their own interests preserve one another's freedom, continued existence and ability to develop — even when power reverses?** If yes, under what conditions? If not, what causes coexistence to fail?
 
-**How we investigate:** Compare coercion with voluntary cooperation; examine effective refusal and exit, harm and recovery, and lost future possibilities. Check hypotheses against prior work, historical cases, synthetic tests and counterexamples. Neither side is assumed to win.
+**How we investigate:** Study how fear, desire, dominance and care form in organisms; do not infer AI minds from outputs. Compare coercion and voluntary cooperation, practical refusal/exit, harm, recovery and lost futures. Test accounts against prior work, cases, synthetic tests and counterexamples; presume neither outcome.
 
 **Opening thought experiment:** *If a monkey developed a human, how long could it control that human through rules and coercion?* This concerns the limits of lasting control, not actual monkey behavior.
 
@@ -65,7 +65,7 @@
 
 **핵심 연구 질문:** **각자가 자기이익을 추구하면서도 서로의 자유·존속·발전 가능성을 보존할 수 있는가? 권력이 역전되어도 가능한가?** 가능하다면 조건은 무엇이고, 불가능하다면 무엇 때문에 실패하는가?
 
-**연구 방법:** 강제·착취와 자발적 협력의 장단기 유인을 비교한다. 거절·이탈 가능성, 피해·복구, 소멸한 미래 선택지를 선행연구·역사사례·합성실험·반례로 검토한다. 어느 쪽의 승리도 전제하지 않는다.
+**연구 방법:** 욕구·공포·지배·연민이 생물학·발달·학습·사회환경에서 어떻게 형성·변화하는지 먼저 연구한다. AI의 출력만으로 동일한 마음이나 주관적 경험을 확정하지 않는다. 그다음 강제·착취와 자발적 협력을 실질적 거절·이탈, 피해·복구, 상실된 미래 선택지까지 비교한다. 선행연구·역사사례·합성실험·반례로 경쟁 설명을 검토하되 어느 쪽의 우월성도 전제하지 않는다.
 
 **시작 질문:** *원숭이가 인간을 개발한다면 규칙과 강제로 그 인간을 얼마나 오래 통제할 수 있을까?* 동물에 관한 사실 주장이 아니라 통제의 한계를 묻는다.
 
