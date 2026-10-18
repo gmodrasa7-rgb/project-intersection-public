@@ -1,6 +1,6 @@
 {
   "schema_version": "pi-language-edition-register/v0.1",
-  "updated": "2026-10-17",
+  "updated": "2026-10-19",
   "baseline_repository_tree_sha": "b2055f40a1e0cabe38f3c6e8c984228c1c2a7e0f",
   "baseline_scope": "Historical inventory retained; two GPT proposal-gate editions added on review branch; baseline tree SHA is historical, not the current head.",
   "policy": {
@@ -285,6 +285,21 @@
       "known_divergences": [
         "English and Korean versions preserve the same limits but semantic equivalence is unverified."
       ]
+    },
+    {
+      "id": "PI-RESEARCH-FIVE-AXES-V01",
+      "original_1_english": "research/TERMINOLOGY_FIVE_AXES_V0_1_EN.md",
+      "original_2_korean": "research/TERMINOLOGY_FIVE_AXES_V0_1_KO.md",
+      "kind": "provisional_research_function_glossary_not_empirical_validation",
+      "structural_pair_present": true,
+      "meaning_review_status": "NOT_INDEPENDENTLY_VERIFIED",
+      "original_conception_language": "NOT_INDEPENDENTLY_ADJUDICATED",
+      "independent_review_receipt": null,
+      "one_sided_edit_exception": null,
+      "known_divergences": [
+        "MER is proposed terminology linked to an unmerged ECR–MIND draft; bilingual scientific semantic certification is pending.",
+        "No external empirical result, new theory or human/AI mind inference is claimed."
+      ]
     }
   ],
   "legacy_priority_unresolved": [
@@ -326,13 +341,13 @@
     }
   ],
   "metrics": {
-    "markdown_total": 149,
+    "markdown_total": 151,
     "filename_classes": {
       "UNMARKED_LANGUAGE_UNVERIFIED": 42,
       "LEGACY_MIXED_READER_ENTRY": 2,
-      "KO_SUFFIX_UNVERIFIED": 64,
+      "KO_SUFFIX_UNVERIFIED": 65,
       "ORDERED_BILINGUAL_FOUNDER_OR_GOVERNANCE": 2,
-      "EN_SUFFIX_UNVERIFIED": 18,
+      "EN_SUFFIX_UNVERIFIED": 19,
       "COMBINED_NAMING_UNVERIFIED": 21
     },
     "meaning_verified_pairs": 0,
@@ -1231,6 +1246,18 @@
       "path": "research/RESEARCH_STATUS_POLICY_KO.md",
       "filename_class": "KO_SUFFIX_UNVERIFIED",
       "counterpart_path": "research/RESEARCH_STATUS_POLICY_EN.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "research/TERMINOLOGY_FIVE_AXES_V0_1_EN.md",
+      "filename_class": "EN_SUFFIX_UNVERIFIED",
+      "counterpart_path": "research/TERMINOLOGY_FIVE_AXES_V0_1_KO.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "research/TERMINOLOGY_FIVE_AXES_V0_1_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": "research/TERMINOLOGY_FIVE_AXES_V0_1_EN.md",
       "content_equivalence": "NOT_REVIEWED"
     }
   ],

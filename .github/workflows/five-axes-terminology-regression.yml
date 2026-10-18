@@ -1,0 +1,34 @@
+name: Five-axis IVS-0R terminology regression (text-level only)
+on:
+  pull_request:
+    paths:
+      - "research/TERMINOLOGY_FIVE_AXES_V0_1_EN.md"
+      - "research/TERMINOLOGY_FIVE_AXES_V0_1_KO.md"
+      - "navigation/START_HERE_EN.md"
+      - "navigation/START_HERE_KO.md"
+      - "knowledge/language-edition-register.json"
+      - "tools/check_five_axes_semantics.py"
+      - ".github/workflows/five-axes-terminology-regression.yml"
+  push:
+    branches: [main]
+    paths:
+      - "research/TERMINOLOGY_FIVE_AXES_V0_1_EN.md"
+      - "research/TERMINOLOGY_FIVE_AXES_V0_1_KO.md"
+      - "navigation/START_HERE_EN.md"
+      - "navigation/START_HERE_KO.md"
+      - "knowledge/language-edition-register.json"
+      - "tools/check_five_axes_semantics.py"
+      - ".github/workflows/five-axes-terminology-regression.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  terminology-and-negative-controls:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Check five-axis source, scope and metadata plus 12 deliberate mutations
+        run: python tools/check_five_axes_semantics.py --self-test

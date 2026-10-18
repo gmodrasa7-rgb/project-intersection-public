@@ -16,7 +16,7 @@ This project does **not** assume that benevolence guarantees cooperation, or tha
 
 Suppose one researcher can suppress another's warning. It may prevent costly delay, or eliminate an independent path to a discovery. The warning might be wrong. **The test is not whether silence looks efficient now, but which strategy remains preferable when future consequences, reversals and affected outsiders are counted.** This example is explanatory, not empirical evidence.
 
-[Founding question and its English/Korean originals](../README.md) · [Full research argument](../research/RESEARCH_OVERVIEW_EN.md).
+[Founding question and its English/Korean originals](../README.md) · [Full research argument](../research/RESEARCH_OVERVIEW_EN.md) · [Provisional five-axis terminology and falsifiers](../research/TERMINOLOGY_FIVE_AXES_V0_1_EN.md).
 
 ### External assessment: decision brief
 
