@@ -152,6 +152,20 @@
       "one_sided_edit_exception": null
     },
     {
+      "id": "PI-ECR-EXP-V14",
+      "original_1_english": "experiments/ecr_v1_4/README_EN.md",
+      "original_2_korean": "experiments/ecr_v1_4/README_KO.md",
+      "kind": "synthetic_negative_control_design_only",
+      "structural_pair_present": true,
+      "meaning_review_status": "NOT_INDEPENDENTLY_VERIFIED",
+      "original_conception_language": "NOT_INDEPENDENTLY_ADJUDICATED",
+      "independent_review_receipt": null,
+      "one_sided_edit_exception": null,
+      "known_divergences": [
+        "Both editions preserve design-only scope, synthetic negative controls, the E009 negative result, and independent validation requirements; semantic equivalence is not independently reviewed."
+      ]
+    },
+    {
       "id": "PI-EXP-E007-TIMING",
       "original_1_english": "experiments/e007/README_EN.md",
       "original_2_korean": "experiments/e007/README_KO.md",
@@ -214,20 +228,6 @@
       "known_divergences": [
         "Historically conceived Korean original remains unchanged; Original 1 English means publication-route order only.",
         "E010 collision with unmerged historical static safety audit PR #20 is explicit."
-      ]
-    },
-    {
-      "id": "PI-EXP-ECR-V14",
-      "original_1_english": "experiments/ecr_v1_4/README_EN.md",
-      "original_2_korean": "experiments/ecr_v1_4/README_KO.md",
-      "kind": "synthetic_negative_control_design_only",
-      "structural_pair_present": true,
-      "meaning_review_status": "NOT_INDEPENDENTLY_VERIFIED",
-      "original_conception_language": "NOT_INDEPENDENTLY_ADJUDICATED",
-      "independent_review_receipt": null,
-      "one_sided_edit_exception": null,
-      "known_divergences": [
-        "Both editions preserve design-only scope, synthetic negative controls, the E009 negative result, and independent validation requirements; semantic equivalence is not independently reviewed."
       ]
     },
     {
