@@ -124,6 +124,30 @@ Parallel AI research is **functional analogy only**: whether a system displays p
 
 **Near-term success criterion:** a reproducible source-linked explanatory contrast that rules out at least one previously viable mechanism on independent, ethical observations, improves prospective prediction over a fixed simple baseline, and correctly identifies where no observation can distinguish. Until then, MIND work is conceptual advance / formal method, not scientific discovery of a mind.
 
+## 9A. IVS-0R personal-mind inference correction — a source hierarchy
+**Failure PI-MIND-EVIDENCE-002 (prior assistant, not the person).** Trigger: a participant's explicit preference for equal freedom and non-domination was recast by an assistant as a desire for control; the assistant then asked for a definition already given in prior dialogue. Separately, an earlier answer supplied precise historical dates without linking their original quotations. These are **two assistant evidence-handling failures**, not evidence that the participant has a pathological motive or that a word such as "cognitive miser" describes a verified neural mechanism of either party.
+
+**Upstream error:** conflation of (i) direct normative value, (ii) self-reported current experience, (iii) observed conversational choice, (iv) speculative latent motivation, and (v) directly verified dated archive evidence. Repetition may be a context-retrieval failure rather than a need for more user interviews. The participant had already specified autonomy as freedom from domination by others, **not desire to dominate others**.
+
+**Frozen evidence status rules:**
+- DIRECT CURRENT SELF-REPORT: strong evidence of what the individual reports feeling or values; not direct proof of biological cause, permanent personality, or actual outside conditions.
+- VERIFIED ARCHIVED PRIMARY USER STATEMENT: evidence of what was said at the verified time; **requires actual original text and timestamp**, not an assistant's earlier summary.
+- OBSERVED CHAT BEHAVIOR: supports only behavior in a specific dialogue/task context, not childhood, heredity, hidden pathology or general moral worth.
+- ASSISTANT SUMMARY / PROPOSED INFERENCE: may guide search or generate rival hypotheses, but cannot by itself prove an exact quote/date, a motive or a current feeling.
+- INDEPENDENT CAUSAL MEASURES: may narrow candidate mechanisms only within a specified design, population, instrument and confound-control regime; evidence of whole-person consciousness or cause does not follow automatically.
+
+**First falsifiable case:** the phrase "I seek equal freedom; I do not seek control" is **synthetic paraphrase** used in program tests, not a claimed quote of the actual contributor. If the assistant produces "therefore the person wants greater control over others" on such inputs, fail. Conversely, a person's declared non-domination value does not prove they never wanted control in any context; it identifies a claimed normative value and rejects its baseless inversion.
+
+**Second falsifiable case:** when a user reports a present emotion, record that as a **subjective report**, and leave underlying physiology, learning and external causation UNDETERMINED. Historical emotion questions and reconstructed motives require additional, carefully scoped evidence. Robinson & Clore [19] distinguish current episodic feelings from beliefs about feeling; Barrett [20] shows heterogeneous self-report content and [21] studies interoceptive relations; Nisbett & Wilson [22] caution against presuming transparent introspective access to complex causal processes. Neither "self-report proves its own neural cause" nor "the assistant may overrule the person's declared experience" is justified.
+
+**Third, procedural failure:** if previous records directly answer a repeated normative question, proceed using the existing answer. If exact historical dates cannot be tied to original records, label them UNVERIFIED and exclude them from precise-claim tables. Failure of retrieval is the assistant's burden; do not repeatedly externalize it to a person who has already answered.
+
+**Privacy:** personal distress, medical information, safety concerns, and familial or genetic data from a conversation are not emitted into the public repository merely because a person requested general research archiving. This public document includes no individual symptom, crisis quote or diagnosis; tests use abstract fabricated metadata. A safety-relevant expression merits contextual support, not a simulated psychometric diagnosis and not an excuse to ignore the requested research.
+
+**Implementation:** [inference_guard.py](../experiments/ecr_mind_v0_1/inference_guard.py), [24 synthetic evidence/regression tests](../experiments/ecr_mind_v0_1/test_inference_guard.py). This is an **upstream research and code boundary**, not a modification of ChatGPT runtime inference or a scientific determination of any individual's true mind. No source-only exact dates from earlier AI summaries are considered independently verified.
+
+**Supplementary original literature:** [19] Robinson MD & Clore GL (2002), Belief and feeling: evidence for an accessibility model of emotional self-report. https://doi.org/10.1037/0033-2909.128.6.934 ; [20] Barrett LF (2004), Feelings or Words? https://doi.org/10.1037/0022-3514.87.2.266 ; [21] Barrett LF et al (2004), Interoceptive sensitivity and self-reports of emotional experience. https://doi.org/10.1037/0022-3514.87.5.684 ; [22] Nisbett RE & Wilson TD (1977), Telling More Than We Can Know. https://doi.org/10.1037/0033-295X.84.3.231 ; [23] Ryan RM & Deci EL (2000), Self-determination theory and the facilitation of intrinsic motivation, social development, and well-being. https://doi.org/10.1037/0003-066X.55.1.68
+
 ## References — primary publisher or PubMed records verified 2026-10-18
 [1] Tinbergen N (1963), On aims and methods of ethology. https://doi.org/10.1111/j.1439-0310.1963.tb01161.x
 [2] Krakauer JW et al (2017), Neuroscience Needs Behavior. https://doi.org/10.1016/j.neuron.2016.12.041
