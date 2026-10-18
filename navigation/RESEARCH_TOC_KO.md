@@ -85,6 +85,7 @@
 
 ## 8. 외부 검토·재현·지식탐색
 
+- [IVS-0R 마음기전·역할반전 독립 판단 게이트](../research/PUBLIC_REVIEW_PACKET_KO.md#7a-ivs-0r-통합-판단-게이트--최근-3일-연구-교정2026-10-19)
 - [주장·출처·재현 점검·한계](../research/PUBLIC_REVIEW_PACKET_KO.md)
 - [기존 혼합 언어 AI 검토 안내](../AI_REVIEW_START_HERE.md)
 - [증거가 아닌 탐색용 지식그래프](../knowledge/README.md)
