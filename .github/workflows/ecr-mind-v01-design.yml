@@ -1,0 +1,37 @@
+name: ECR MIND mechanism contrast research design
+on:
+  pull_request:
+    paths:
+      - "experiments/ecr_mind_v0_1/**"
+      - "research/ECR_MIND_FOUNDATIONS_2026-10-18_*.md"
+      - ".github/workflows/ecr-mind-v01-design.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  toy-selection-check-only:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Finite exact experiment selection demonstration
+        run: python experiments/ecr_mind_v0_1/discriminate.py
+      - name: Run negative and minimality regressions
+        run: PYTHONPATH=experiments/ecr_mind_v0_1 python -m unittest discover -s experiments/ecr_mind_v0_1 -p 'test_*.py' -v
+      - name: Research-status guard
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import json
+          e = Path('research/ECR_MIND_FOUNDATIONS_2026-10-18_EN.md').read_text()
+          k = Path('research/ECR_MIND_FOUNDATIONS_2026-10-18_KO.md').read_text()
+          h = json.loads(Path('experiments/ecr_mind_v0_1/hypotheses.json').read_text())
+          assert 'NOT EMPIRICALLY VALIDATED' in e
+          assert '42.35%' in e and '42.35%' in k
+          assert '실증' in k and '마음' in k
+          assert h['person_level_scoring'] is False
+          assert h['subjective_AI_mind_verified'] is False
+          print('DESIGN_ONLY: no actual mind inferred; no human scoring or validated AGI coexistence')
+          PY
