@@ -1,5 +1,7 @@
 # PRIOR ART SATURATION MAP / 선행연구 포화지도
 
+**상시 연구 최우선순위:** 신규 이론·실험보다 관련·선행 원저자 논문 조사·수집·검증·중복제거·기록·저장부터 진행. 문헌 포화는 단순 인용건수가 아닌 연구질문별 기제·반례·식별방법의 포괄성을 증거로 판정. [정본 운영규칙](PRIOR_ART_FIRST_RESEARCH_POLICY_EN_KO.md). **이 연결 추가가 신규 문헌 검색 완료나 포화 달성을 의미하지 않음.**
+
 **선행연구 저자·저작권·응용 연결(2026-10-13):** [선행 연구 계보 원장](PRIOR_ART_RIGHTS_AND_DERIVATION_EN_KO.md)의 PA-019(Emerson)·PA-020(Merton) 등과 [권리감사 대상 파일 목록](knowledge/prior-art-rights-register-2026-10-13.json)을 함께 참조한다. 출처 인용과 저작권 이용허락은 별개이며, 최초 원안자·실제 권리자가 확인되지 않으면 추정하지 않는다.
 
 상태: `ACTIVE SATURATION SEARCH / NOT A TRUTH REGISTRY`
