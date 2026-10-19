@@ -16,7 +16,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Check 27 declared synthetic counterexamples
+      - name: Check 40 bounded synthetic negative controls
         run: python -m unittest discover -s experiments/ecr_mer_bridge_v0_1 -p 'test_*.py' -v
       - name: Maintain scientific claim and source boundary
         run: |
@@ -29,7 +29,13 @@ jobs:
           assert "42.35%" in e and "42.35%" in k
           assert "2018" in e and "2026" in k
           assert code.count("def test_") == 27
+          addition = Path("experiments/ecr_mer_bridge_v0_1/test_incentive_history.py").read_text()
+          a = Path("research/ECR_MER_ADVERSARIAL_PRIOR_ART_2026-10-19_EN.md").read_text()
+          b = Path("research/ECR_MER_ADVERSARIAL_PRIOR_ART_2026-10-19_KO.md").read_text()
+          assert addition.count("def test_") == 13
+          assert "S20" in a and "20건" in b
+          assert "42.35%" in a and "42.35%" in b
           assert "NOT_IDENTIFIED" in e and "NOT_IDENTIFIED" in k
           assert "학술 독창성 미확정" in k
-          print("PASS: 27 finite toy controls and conservative scientific boundary; NOT empirical validation")
+          print("PASS: 40 finite toy controls and conservative scientific boundary; NOT empirical validation")
           PY
