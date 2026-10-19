@@ -1,0 +1,23 @@
+name: IVS-0R cost-observation status guard
+on:
+  push:
+    paths:
+      - "tools/ivs0r_cost_observation_guard.py"
+      - ".github/workflows/ivs0r-cost-status-guard.yml"
+  pull_request:
+    paths:
+      - "tools/ivs0r_cost_observation_guard.py"
+      - ".github/workflows/ivs0r-cost-status-guard.yml"
+  workflow_dispatch:
+jobs:
+  synthetic_branches:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Fail if unknown cost collides with zero
+        run: python tools/ivs0r_cost_observation_guard.py
