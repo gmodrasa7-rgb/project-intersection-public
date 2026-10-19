@@ -12,6 +12,8 @@
 
 **How we investigate:** Study how fear, desire, dominance and care form in organisms; do not infer AI minds from outputs. Compare coercion, extraction and voluntary cooperation, real refusal/exit, harm, recovery and lost futures. Test accounts using prior work, cases, synthetic tests and counterexamples; assume neither wins.
 
+**Standing research-work priority #1:** Before new models, experiments or expansions, systematically **search, collect, verify, critically record and persist related original and prior scholarly papers**; continue topic-by-topic until documented, revisable saturation. [Binding bilingual operating rule](PRIOR_ART_FIRST_RESEARCH_POLICY_EN_KO.md).
+
 **Opening thought experiment:** *If a monkey developed a human, how long could it control that human through rules and coercion?* This concerns the limits of lasting control, not actual monkey behavior.
 
 **Concrete example, not evidence:** A decision-maker can suppress another researcher's warning. The warning may be correct or wrong; the costs of hearing it and the future lost by suppressing it both matter.
@@ -66,6 +68,8 @@
 **핵심 연구 질문:** **각자가 자기이익을 추구하면서도 서로의 자유·존속·발전 가능성을 보존할 수 있는가? 권력이 역전되어도 가능한가?** 가능하다면 조건은 무엇이고, 불가능하다면 무엇 때문에 실패하는가?
 
 **연구 방법:** 욕구·공포·지배·연민이 생물학·발달·학습·사회환경에서 어떻게 형성·변화하는지 먼저 연구한다. AI의 출력만으로 동일한 마음이나 주관적 경험을 확정하지 않는다. 그다음 강제·착취와 자발적 협력을 실질적 거절·이탈, 피해·복구, 상실된 미래 선택지까지 비교한다. 선행연구·역사사례·합성실험·반례로 경쟁 설명을 검토하되 어느 쪽의 우월성도 전제하지 않는다.
+
+**연구작업 영구 최우선순위 1:** 신규 이론·실험·확장보다 **관련·선행 원저자 논문 조사 → 수집 → 원출처 검증 → 비판적 기록 → 저장**을 먼저 실행하며, 주제별 포화 근거를 갖출 때까지 지속. [최우선 운영규칙 정본](PRIOR_ART_FIRST_RESEARCH_POLICY_EN_KO.md).
 
 **시작 질문:** *원숭이가 인간을 개발한다면 규칙과 강제로 그 인간을 얼마나 오래 통제할 수 있을까?* 동물에 관한 사실 주장이 아니라 통제의 한계를 묻는다.
 
