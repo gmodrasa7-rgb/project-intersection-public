@@ -20,8 +20,6 @@
 
 **Contrary evidence visible before expanding:** [E009](experiments/e009/RESULT_EN.md) found the Project-v3 candidate **42.35% worse** in mean regret than the best simple baseline (**3 of 4 criteria failed**) in a preregistered synthetic test. [E008](experiments/e008/README_EN.md) has **no completed main policy result**. Neither is field evidence.
 
-**External adversarial challenge — test the core endogenous-incentive question:** [Falsify or narrow our claim (#220, English/Korean)](https://github.com/gmodrasa7-rgb/project-intersection-public/issues/220). Prior-art counterexamples and negative findings welcome; this invitation is not an independent review result.
-
 **Choose your route:** [Understand the research](navigation/START_HERE_EN.md) · [Inspect what is and is not supported](research/PUBLIC_EVIDENCE_INDEX_EN.md) · [Challenge or reproduce one test](research/PUBLIC_REVIEW_PACKET_EN.md) · [Read historical cases](research/CCPH_RESEARCH_ATLAS_EN.md).
 
 <details>
@@ -31,7 +29,7 @@
 
 **Evidence so far:** [E007](experiments/e007/README_EN.md) found 17/72 classification changes in selected synthetic timing scenarios. [E008](experiments/e008/README_EN.md) has no completed main result. [E009](experiments/e009/RESULT_EN.md) found the project's complex candidate worse than simpler baselines in its preregistered synthetic comparison. [E010](experiments/e010/README_EN.md) is exploratory and post-hoc. None proves a long-run social law.
 
-**External assessment:** [English skeptical-reader guide](navigation/START_HERE_EN.md#external-assessment-decision-brief) · [Independent review and reproduction](research/PUBLIC_REVIEW_PACKET_EN.md) · [Research funding review](funding/FUNDER_START_HERE.md#original-1--english).
+**External assessment:** [Independent self-interest challenge (#220)](https://github.com/gmodrasa7-rgb/project-intersection-public/issues/220) · [English skeptical-reader guide](navigation/START_HERE_EN.md#external-assessment-decision-brief) · [Independent review and reproduction](research/PUBLIC_REVIEW_PACKET_EN.md) · [Research funding review](funding/FUNDER_START_HERE.md#original-1--english).
 
 **Scoped open-research license:** Some founding-purpose expression is offered under **CC BY-SA 4.0** only within the boundaries of the [EN/KO rights notice](RESEARCH_RIGHTS_SCOPE_EN_KO.md), not across this whole repository or all AI output.
 
@@ -77,8 +75,6 @@
 
 **펼치지 않아도 보이는 불리한 증거:** [E009](experiments/e009/RESULT_KO.md)에서 Project-v3는 사전등록 합성시험의 최선 단순 기준선보다 평균 후회값이 **42.35% 나빴고**, 기준 **4개 중 3개**에 실패했다. [E008](experiments/e008/README_KO.md)은 **정책 본 비교실험 결과가 없다**. 모두 현실 검증은 아니다.
 
-**외부 반증 요청 — 내재적 유인 핵심 질문:** [자발적 공존이 성립하지 않는 조건 제시하기 (#220, 영·한)](https://github.com/gmodrasa7-rgb/project-intersection-public/issues/220). 선행연구 반례와 부정 결과 환영. 요청 게시 자체는 독립검증 성과가 아님.
-
 **어디부터 읽을까:** [연구 목적 이해](navigation/START_HERE_KO.md) · [근거와 미검증 구분](research/PUBLIC_EVIDENCE_INDEX_KO.md) · [직접 반박·재현](research/PUBLIC_REVIEW_PACKET_KO.md) · [현실 역사사례](research/CCPH_RESEARCH_ATLAS_KO.md).
 
 <details>
@@ -88,7 +84,7 @@
 
 **현재 근거:** [E007](experiments/e007/README_KO.md)은 선정된 72개 합성 조건 중 17개 분류 변화. [E008](experiments/e008/README_KO.md)은 본실험 결과 없음. [E009](experiments/e009/RESULT_KO.md)는 사전등록된 합성 비교에서 복잡한 후보 모형이 단순 기준선보다 열세였다. [E010](experiments/e010/README_KO.md)은 사후 탐색적 분석이다. 어느 결과도 사회 전체의 장기 법칙을 입증하지 않는다.
 
-**외부 심사:** [한국어 독립 판단 경로](navigation/START_HERE_KO.md#외부-심사자를-위한-핵심-판단) · [재현과 반증 안내](research/PUBLIC_REVIEW_PACKET_KO.md) · [연구비 지원 검토](funding/FUNDER_START_HERE.md#원본2--한국어).
+**외부 심사:** [독립 자기이익 반증 요청 (#220)](https://github.com/gmodrasa7-rgb/project-intersection-public/issues/220) · [한국어 독립 판단 경로](navigation/START_HERE_KO.md#외부-심사자를-위한-핵심-판단) · [재현과 반증 안내](research/PUBLIC_REVIEW_PACKET_KO.md) · [연구비 지원 검토](funding/FUNDER_START_HERE.md#원본2--한국어).
 
 **한정된 공개연구 이용조건:** 일부 창시 목적 표현만 [영어 원본1·한국어 원본2 이용허락 범위](RESEARCH_RIGHTS_SCOPE_EN_KO.md)에 따라 **CC BY-SA 4.0**을 적용한다. 저장소 전체나 모든 AI 출력의 일반 이용허락은 아니다.
 
