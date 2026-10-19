@@ -1,3 +1,4 @@
+<!-- PI-LANGUAGE-EXEMPT: Bounded bilingual code-reproduction README only; the full research text is the separately registered EN1 and KO2 edition pair, without translation certification. -->
 # ECR–MER identification bridge v0.1 | 합성 반례·부정대조
 
 **Original 1 English / Original 2 한국어:** [English research paper](../../research/ECR_MER_CAUSAL_IDENTIFICATION_BRIDGE_2026-10-19_EN.md) · [한국어 연구 보고서](../../research/ECR_MER_CAUSAL_IDENTIFICATION_BRIDGE_2026-10-19_KO.md).
