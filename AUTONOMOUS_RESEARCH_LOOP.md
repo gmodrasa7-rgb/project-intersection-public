@@ -13,7 +13,7 @@ This protocol exists so Project Intersection can be resumed by a future human or
 
 목표는 다음 루프를 **가역적·감사가능·출처추적 가능**하게 반복하는 것이다.
 
-`상태복구 → 무결성검사 → 미해결 1개 선택 → 선행연구 확인 → 최소 결정검사 → 실행 → KEEP/MODIFY/HOLD/KILL/UNRESOLVED → 저장 → read-back → 다음 checkpoint`
+`상태복구 → 무결성검사 → 연구질문 선택 → 선행·관련 원저자 논문 조사·수집 → 원출처 교차검증·중복제거 → 문헌 원장 기록 → 저장·read-back → 포화/미해결 공백 판정 → 후속 실험·모형·검사 → 결과 저장 → 다음 checkpoint`
 
 실행자가 바뀌어도 같은 공개 상태에서 재개할 수 있어야 한다.
 
@@ -22,13 +22,14 @@ This protocol exists so Project Intersection can be resumed by a future human or
 새 실행자는 기억이나 과거 대화보다 다음 공개 파일을 먼저 읽는다.
 
 1. `README.md`
-2. `AUTONOMOUS_RESEARCH_STATE.json`
-3. `PUBLIC_EVIDENCE_INDEX.md`
-4. `RESEARCH_STATUS_POLICY.md`
-5. `RESEARCH_TOC.md`
-6. `PRIOR_ART_AND_ATTRIBUTION.md`
-7. `CONTRIBUTION_COST_ACCOUNTING_REGRESSION.md`
-8. 관련 claim / experiment / provenance 파일
+2. **`PRIOR_ART_FIRST_RESEARCH_POLICY_EN_KO.md` — 최우선 연구작업 지침**
+3. `AUTONOMOUS_RESEARCH_STATE.json`
+4. `PUBLIC_EVIDENCE_INDEX.md`
+5. `RESEARCH_STATUS_POLICY.md`
+6. `RESEARCH_TOC.md`
+7. `PRIOR_ART_AND_ATTRIBUTION.md`
+8. `CONTRIBUTION_COST_ACCOUNTING_REGRESSION.md`
+9. 관련 claim / experiment / provenance 파일
 
 비공개 저장소나 사적 대화가 접근 가능하면 보조 자료로 사용할 수 있지만, 공개 연구의 핵심 상태를 복구하기 위한 필수 단일 실패지점으로 만들지 않는다.
 
@@ -36,14 +37,17 @@ This protocol exists so Project Intersection can be resumed by a future human or
 
 한 회차에는 최대 하나의 material research delta만 만든다.
 
-우선순위:
+**최상위 상시 연구 우선순위: 관련·선행 원저자 논문 조사·수집·검증·기록·저장.** 이 우선순위는 [독립 정본 정책](PRIOR_ART_FIRST_RESEARCH_POLICY_EN_KO.md)에 고정한다. 문헌 포화 판정은 연구질문별로 하고, 후속 회차에서도 신규 반례·논문·인용 경로가 생기면 재개한다.
 
-1. persistence / provenance / broken-state 복구;
-2. 기존 claim을 죽이거나 크게 좁힐 수 있는 반례;
-3. 선행연구로 이미 설명되는 부분 제거;
-4. 독립 재현·외부 비판·현실/역사 검증;
-5. 새로운 synthetic/toy 실험;
-6. 문서량 증가.
+연구 수행순위:
+
+1. **선행·관련 논문 수집 → 원저자·DOI/출처 검증 → 중복·반례 감사 → 기존 원장 기록 → GitHub/접근 가능한 로컬에 저장 후 read-back**;
+2. 수집자료에 의해 기존 주장을 죽이거나 좁힐 수 있는 반례·측정·경쟁설명 평가;
+3. 충분한 선행근거 비교 후 독립 재현·현실/역사 검증;
+4. 선행연구 공백이 명확할 때 필요한 최소 신규 이론·실험 설계;
+5. 합성/toy 실험과 문서 확장 (과학적 근거와 별도 라벨).
+
+예외: 문서·출처 소실을 막기 위한 무결성 복구와 권리·개인정보 보호는 선행 가능하지만, 정상 연구의 1순위는 변경되지 않는다. 새로운 논문이 단순 반복인지 실질 새 메커니즘·반례인지 분리하여 기록한다.
 
 같은 방향의 synthetic/toy 검사가 2회 연속이면, 다음 회차는 원칙적으로 독립 외부증거·현실/역사 사례·독립 비판으로 이동한다.
 
