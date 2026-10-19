@@ -20,6 +20,8 @@
 
 **Contrary evidence visible before expanding:** [E009](experiments/e009/RESULT_EN.md) found the Project-v3 candidate **42.35% worse** in mean regret than the best simple baseline (**3 of 4 criteria failed**) in a preregistered synthetic test. [E008](experiments/e008/README_EN.md) has **no completed main policy result**. Neither is field evidence.
 
+**External adversarial challenge — test the core endogenous-incentive question:** [Falsify or narrow our claim (#220, English/Korean)](https://github.com/gmodrasa7-rgb/project-intersection-public/issues/220). Prior-art counterexamples and negative findings welcome; this invitation is not an independent review result.
+
 **Choose your route:** [Understand the research](navigation/START_HERE_EN.md) · [Inspect what is and is not supported](research/PUBLIC_EVIDENCE_INDEX_EN.md) · [Challenge or reproduce one test](research/PUBLIC_REVIEW_PACKET_EN.md) · [Read historical cases](research/CCPH_RESEARCH_ATLAS_EN.md).
 
 <details>
@@ -74,6 +76,8 @@
 **과학적 경계:** 협력이 언제나 우월하다는 **보편법칙의 증명이 아니다**. 관측하지 못한 미래 기여는 0도 확정된 가치도 아니다. 자체 합성실험은 현실의 인과효과 입증이 아니다.
 
 **펼치지 않아도 보이는 불리한 증거:** [E009](experiments/e009/RESULT_KO.md)에서 Project-v3는 사전등록 합성시험의 최선 단순 기준선보다 평균 후회값이 **42.35% 나빴고**, 기준 **4개 중 3개**에 실패했다. [E008](experiments/e008/README_KO.md)은 **정책 본 비교실험 결과가 없다**. 모두 현실 검증은 아니다.
+
+**외부 반증 요청 — 내재적 유인 핵심 질문:** [자발적 공존이 성립하지 않는 조건 제시하기 (#220, 영·한)](https://github.com/gmodrasa7-rgb/project-intersection-public/issues/220). 선행연구 반례와 부정 결과 환영. 요청 게시 자체는 독립검증 성과가 아님.
 
 **어디부터 읽을까:** [연구 목적 이해](navigation/START_HERE_KO.md) · [근거와 미검증 구분](research/PUBLIC_EVIDENCE_INDEX_KO.md) · [직접 반박·재현](research/PUBLIC_REVIEW_PACKET_KO.md) · [현실 역사사례](research/CCPH_RESEARCH_ATLAS_KO.md).
 
