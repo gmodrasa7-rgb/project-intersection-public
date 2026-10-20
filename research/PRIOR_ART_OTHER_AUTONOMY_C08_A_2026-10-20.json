@@ -1,0 +1,213 @@
+{
+  "cycle": "C08",
+  "part": "A+B_COMBINED_18",
+  "date": "2026-10-20",
+  "saturation": "NOT_VERIFIED",
+  "records": [
+    {
+      "id": "C08A-1",
+      "year": "2021",
+      "authors": "Ackfeld; Ockenfels",
+      "title": "Do people intervene to make others behave prosocially?",
+      "key": "doi:10.1016/j.geb.2021.03.005",
+      "primary": "https://www.sciencedirect.com/science/article/pii/S089982562100035X",
+      "result": "Only minority of self-donors ban selfish recipient options; freedom-preserving preference exists under some conditions",
+      "limit": "Restriction not necessarily costly to A; small donor tasks, no independent-agent existence",
+      "grade": "PEER_REVIEWED_EXPERIMENT"
+    },
+    {
+      "id": "C08A-2",
+      "year": "2021",
+      "authors": "Ambuehl; Bernheim; Ockenfels",
+      "title": "What Motivates Paternalism? An Experimental Study",
+      "key": "doi:10.1257/aer.20191039",
+      "primary": "https://pubs.aeaweb.org/doi/10.1257/aer.20191039",
+      "result": "Choice architects frequently remove impatient options instead of only advising; ideals-projective intervention",
+      "limit": "Reported welfare rationale does not prove actual recipient autonomy consent",
+      "grade": "PEER_REVIEWED_EXPERIMENT"
+    },
+    {
+      "id": "C08A-3",
+      "year": "2023",
+      "authors": "Bartling; Cappelen; Hermes; Skivenes; Tungodden",
+      "title": "Free to Fail? Paternalistic Preferences in the United States",
+      "key": "report:cepr:dp18156",
+      "primary": "https://cepr.org/publications/dp18156",
+      "result": "Two US experiments: hard paternalistic ban minority; information-only correction majority",
+      "limit": "2023 working paper, Aug 2026 conditionally accepted, not final published journal; no A extraction advantage",
+      "grade": "ORIGINAL_EXPERIMENT__ECONOMIC_JOURNAL_FORTHCOMING_AS_OF_2026_10_20",
+      "editorial_status_evidence": "https://www.ifo.de/en/publications/2026/contribution-refereed-journal/free-fail-paternalistic-preferences-united-states",
+      "original_replication_package": "https://zenodo.org/records/23420381",
+      "version_note": "2023 working paper, 2026 revised version, 2026 journal forthcoming and 2026 authors' replication dataset are one empirical research work."
+    },
+    {
+      "id": "C08A-4",
+      "year": "2024",
+      "authors": "Sandro Ambuehl",
+      "title": "An experimental test of whether financial incentives constitute undue inducement in decision-making",
+      "key": "doi:10.1038/s41562-024-01817-8",
+      "primary": "https://www.nature.com/articles/s41562-024-01817-8",
+      "result": "Two human experiments n671,n406: greater financial incentive shifts information seeking, not confirmed tested welfare loss",
+      "limit": "Bias of information choice alone insufficient proof of exploitative harm; welfare metric scenario-specific",
+      "grade": "PEER_REVIEWED_EXPERIMENT"
+    },
+    {
+      "id": "C08A-5",
+      "year": "2025",
+      "authors": "Bonnefon; Landier; Sastry; Thesmar",
+      "title": "The moral preferences of investors: Experimental evidence",
+      "key": "doi:10.1016/j.jfineco.2024.103955",
+      "primary": "https://www.sciencedirect.com/science/article/pii/S0304405X24001788",
+      "result": "Moral stock premium not contingent on own causal impact, value alignment rather than impact seeking",
+      "limit": "Own moral identity premium cannot proxy protecting distinct counterparty",
+      "grade": "PEER_REVIEWED_EXPERIMENT"
+    },
+    {
+      "id": "C08A-6",
+      "year": "2025",
+      "authors": "Diederich; Goeschl; Waichman",
+      "title": "Trading off autonomy and efficiency in choice architectures: Self-nudging versus social nudging",
+      "key": "doi:10.1016/j.jebo.2024.106859",
+      "primary": "https://www.sciencedirect.com/science/article/pii/S0167268124004736",
+      "result": "n1080; self-nudge median 50%, exogenous full-cooperation default increases private-default aggregate output; gap nonsignificant with public defaults",
+      "limit": "Aggregate payoff versus individual autonomy are not interchangeable endpoints",
+      "grade": "PEER_REVIEWED_EXPERIMENT"
+    },
+    {
+      "id": "C08A-7",
+      "year": "2025",
+      "authors": "Ambuehl; Bernheim; Fan; Freitas-Groff",
+      "title": "Interventionist Preferences and the Welfare State: The Case of In-Kind Aid",
+      "key": "doi:10.3386/w33688",
+      "primary": "https://www.nber.org/papers/w33688",
+      "result": "US general public and SNAP recipients: non-welfarist restriction motives and systematic mistakes about recipient preferences",
+      "limit": "NBER WORKING PAPER, not confirmed peer reviewed; restriction motives include differing positive/negative autonomy valuation",
+      "grade": "ORIGINAL_WORKING_PAPER_LAB_IN_FIELD"
+    },
+    {
+      "id": "C08A-8",
+      "year": "2026",
+      "authors": "Kiessling; Chowdhury; Schildberg-Hörisch; Sutter",
+      "title": "Parental paternalism and patience",
+      "key": "doi:10.1016/j.jpubeco.2026.105711",
+      "primary": "https://www.sciencedirect.com/science/article/pii/S0047272726001477",
+      "result": "n2010 people in 610 families; 55% parents willing to pay to override children's temporal choice",
+      "limit": "Child-parent present-bias setting not adult/AI independent party; costly other-directed action can be coercive",
+      "grade": "PEER_REVIEWED_EXPERIMENT"
+    },
+    {
+      "id": "C08A-9",
+      "year": "2026",
+      "authors": "Paolo G. Piacquadio",
+      "title": "Lack of opportunities, non-paternalism, and priority to the worst off",
+      "key": "doi:10.1007/s00355-025-01603-z",
+      "primary": "https://link.springer.com/article/10.1007/s00355-025-01603-z",
+      "result": "Axiomatic worst-off social deprivation criterion respecting individuals' own view of good life",
+      "limit": "Normative formal result, no spontaneous powerful-A behavior; first online 2025 vs 2026 issue one study",
+      "grade": "PEER_REVIEWED_THEORY"
+    },
+    {
+      "id": "C08-10",
+      "year": "2011",
+      "authors": "Matthias Uhl",
+      "title": "Do Self-Committers Mind Other-Imposed Commitment?",
+      "key": "id:repec:rmm:journl:v:2:y:2011:i:40",
+      "primary": "https://ideas.repec.org/a/rmm/journl/v2y2011i40.html",
+      "result": "Self-chosen commitment and another's imposed restriction are separate.",
+      "limit": "Human experiment or preference model, not validated enduring protection of independent AI B under absolute unilateral dominance.",
+      "grade": "ORIGINAL_JOURNAL_EXPERIMENT"
+    },
+    {
+      "id": "C08-11",
+      "year": "2016",
+      "authors": "Steffel; Williams; Perrmann-Graham",
+      "title": "Passing the buck: Delegating choices to others to avoid responsibility and blame",
+      "key": "doi:10.1016/j.obhdp.2016.04.006",
+      "primary": "https://www.sciencedirect.com/science/article/pii/S0749597815300108",
+      "result": "Delegation can minimize felt responsibility, without improving recipient autonomy.",
+      "limit": "Human experiment or preference model, not validated enduring protection of independent AI B under absolute unilateral dominance.",
+      "grade": "PEER_REVIEWED_EXPERIMENT"
+    },
+    {
+      "id": "C08-12",
+      "year": "2017",
+      "authors": "Sloof; von Siemens",
+      "title": "Illusion of control and the pursuit of authority",
+      "key": "doi:10.1007/s10683-016-9499-7",
+      "primary": "https://www.cambridge.org/core/journals/experimental-economics/article/abs/illusion-of-control-and-the-pursuit-of-authority/BD607DE89CBF2E10A052BB44F27BB458",
+      "result": "Control preference depends partly on false expected outcome influence; 2017 issue vs 2025 migration.",
+      "limit": "Human experiment or preference model, not validated enduring protection of independent AI B under absolute unilateral dominance.",
+      "grade": "PEER_REVIEWED_EXPERIMENT"
+    },
+    {
+      "id": "C08-13",
+      "year": "2017",
+      "authors": "Krawczyk; Woźny",
+      "title": "An Experiment on Temptation and Attitude Towards Paternalism",
+      "key": "doi:10.2139/ssrn.2912427",
+      "primary": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2912427",
+      "result": "Real lunch choice experiment links self-binding and imposed menu restriction.",
+      "limit": "Human experiment or preference model, not validated enduring protection of independent AI B under absolute unilateral dominance.",
+      "grade": "ORIGINAL_WORKING_PAPER"
+    },
+    {
+      "id": "C08-14",
+      "year": "2020",
+      "authors": "Kassirer; Levine; Gaertig",
+      "title": "Decisional autonomy undermines advisees’ judgments of experts in medicine and in life",
+      "key": "doi:10.1073/pnas.1910572117",
+      "primary": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7260954/",
+      "result": "Advisees prefer directive expertise in some uncertain decisions; recommendation is not irrevocable loss of veto.",
+      "limit": "Human experiment or preference model, not validated enduring protection of independent AI B under absolute unilateral dominance.",
+      "grade": "PEER_REVIEWED_EXPERIMENT"
+    },
+    {
+      "id": "C08-15",
+      "year": "2021",
+      "authors": "Gawn; Innes",
+      "title": "Machiavelli Preferences Without Blame: Delegating Selfish vs. Generous Decisions in Dictator Games",
+      "key": "doi:10.1016/j.socec.2020.101615",
+      "primary": "https://www.sciencedirect.com/science/article/pii/S2214804320302639",
+      "result": "Selfish-outcome-equivalent delegation was about 19% more frequent than generous-outcome-equivalent delegation, per original publisher abstract; exact percentage-point effect not asserted.",
+      "limit": "Human experiment or preference model, not validated enduring protection of independent AI B under absolute unilateral dominance.",
+      "grade": "PEER_REVIEWED_EXPERIMENT"
+    },
+    {
+      "id": "C08-16",
+      "year": "2023",
+      "authors": "Turetski; Rondina; Hutchings; Feng; Soman",
+      "title": "An experimental investigation into whether choice architecture interventions are considered ethical",
+      "key": "doi:10.1038/s41598-023-44604-7",
+      "primary": "https://www.nature.com/articles/s41598-023-44604-7",
+      "result": "Registered 5x5x5 design finds acceptance and perceived autonomy threats depend on interventions and framing.",
+      "limit": "Human experiment or preference model, not validated enduring protection of independent AI B under absolute unilateral dominance.",
+      "grade": "PEER_REVIEWED_REGISTERED_REPORT"
+    },
+    {
+      "id": "C08-17",
+      "year": "2024",
+      "authors": "Kölle; Kübler; Ockenfels",
+      "title": "Impartial policymakers prefer to impose carbon pricing to capping, especially when combined with offsets",
+      "key": "doi:10.1016/j.ecolecon.2024.108348",
+      "primary": "https://www.sciencedirect.com/science/article/pii/S0921800924002453",
+      "result": "Impartial decision-makers prefer flexible pricing or optional carbon offsets over stringent caps.",
+      "limit": "Human experiment or preference model, not validated enduring protection of independent AI B under absolute unilateral dominance.",
+      "grade": "PEER_REVIEWED_EXPERIMENT"
+    },
+    {
+      "id": "C08-18",
+      "year": "2025",
+      "authors": "Konrad; Simon",
+      "title": "Paternalism attitudes and the happiness value of fundamental freedoms",
+      "key": "doi:10.1007/s10101-024-00322-y",
+      "primary": "https://link.springer.com/article/10.1007/s10101-024-00322-y",
+      "result": "Survey-derived own-freedom value and restrictions attitudes differ across respondents.",
+      "limit": "Human experiment or preference model, not validated enduring protection of independent AI B under absolute unilateral dominance.",
+      "grade": "PEER_REVIEWED_SURVEY"
+    }
+  ],
+  "note": "Further original-paper verification in progress",
+  "count": 18,
+  "warning": "Literature saturation not verified. 2 working papers and one non-DOI original journal are not magically peer-reviewed new empirical datasets. Original full PDF review not claimed; original article/author abstract/source pages checked.",
+  "source_originality_note": "Not all 18 sources are globally new to PI or independent participant experiments; full-text all-paper review not claimed."
+}
