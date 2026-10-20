@@ -33,7 +33,7 @@
 
 **Evidence so far:** [E007](experiments/e007/README_EN.md) found 17/72 classification changes in selected synthetic timing scenarios. [E008](experiments/e008/README_EN.md) has no completed main result. [E009](experiments/e009/RESULT_EN.md) found the project's complex candidate worse than simpler baselines in its preregistered synthetic comparison. [E010](experiments/e010/README_EN.md) is exploratory and post-hoc. None proves a long-run social law.
 
-**Research viability & independence (PI-RISE v0.1.0, main operational design):** [Operational sustainability gate](operations/PI_RISE_V0_1_0_EN_KO.md) — does not certify funding, health, motive or science.
+**Research viability, funding and accounting (PI-RISE v0.2.0):** [Integrated operating protocol](operations/PI_RISE_V0_2_0_EN_KO.md) — no awards, cash receipt or independent validation certified.
 
 **External assessment:** [Independent self-interest challenge (#220)](https://github.com/gmodrasa7-rgb/project-intersection-public/issues/220) · [English skeptical-reader guide](navigation/START_HERE_EN.md#external-assessment-decision-brief) · [Independent review and reproduction](research/PUBLIC_REVIEW_PACKET_EN.md) · [Research funding review](funding/FUNDER_START_HERE.md#original-1--english).
 
@@ -56,7 +56,6 @@
 **First reading path:** [Historical cases](research/CCPH_RESEARCH_ATLAS_EN.md) · [Research question](research/RESEARCH_OVERVIEW_EN.md) · [English guide](navigation/START_HERE_EN.md) · [English evidence ledger](research/PUBLIC_EVIDENCE_INDEX_EN.md) · [E009 negative result](experiments/e009/RESULT_EN.md) · [Prior-art and review](research/PUBLIC_REVIEW_PACKET_EN.md#3a-prior-art-versus-what-would-be-an-incremental-project-contribution) · [Full contents](navigation/RESEARCH_TOC_EN.md).
 
 **Citation and reuse:** [Citation](CITATION.cff) · [Attribution and source rights](ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md) · [Earlier authorship and derivation](PRIOR_ART_RIGHTS_AND_DERIVATION_EN_KO.md). The longer historical founding statement remains recoverable in [the preceding Git revision](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/3fefa0c121341a0569e026f34a9e87479afa52a4/README.md).
-
 </details>
 ### Ten core concepts
 [All ten concepts, precise definitions and limitations](research/RESEARCH_OVERVIEW_EN.md#ten-core-concepts) are preserved for technical reading. CCPH is a historical/current/future **contribution and impact provenance database**. The **Continuance–Contribution Pathways Hypothesis** is one hypothesis within it, not its definition or a proven social outcome.

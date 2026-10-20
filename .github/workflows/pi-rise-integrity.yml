@@ -3,20 +3,30 @@ on:
   pull_request:
     paths:
       - "operations/PI_RISE_*"
+      - "funding/GRANTS_CONTRACTS_PUBLIC_LEDGER_EN_KO.md"
+      - "funding/SPONSORSHIP_PUBLIC_LEDGER.md"
+      - "funding/README.md"
+      - "funding/FUNDER_START_HERE.md"
       - "tools/pi_rise_check.py"
       - "tools/pi_rise_cutset.py"
       - "tools/pi_rise_budget.py"
       - "tools/pi_rise_vac.py"
+      - "tools/pi_rise_finance_audit.py"
       - "tests/test_pi_rise_*.py"
       - ".github/workflows/pi-rise-integrity.yml"
   push:
     branches: [main]
     paths:
       - "operations/PI_RISE_*"
+      - "funding/GRANTS_CONTRACTS_PUBLIC_LEDGER_EN_KO.md"
+      - "funding/SPONSORSHIP_PUBLIC_LEDGER.md"
+      - "funding/README.md"
+      - "funding/FUNDER_START_HERE.md"
       - "tools/pi_rise_check.py"
       - "tools/pi_rise_cutset.py"
       - "tools/pi_rise_budget.py"
       - "tools/pi_rise_vac.py"
+      - "tools/pi_rise_finance_audit.py"
       - "tests/test_pi_rise_*.py"
       - ".github/workflows/pi-rise-integrity.yml"
   workflow_dispatch:
@@ -44,6 +54,10 @@ jobs:
         run: |
           python3 tools/pi_rise_vac.py > /tmp/pi_rise_vac.json
           python3 -c 'import json; x=json.load(open("/tmp/pi_rise_vac.json")); assert x["status"]=="FORMAL_TOY_NOT_FIELD_VALIDATED"; assert x["month_budget"]["total_usd_month"]=="4850.00"; assert x["high_generation_same_review"]["last_backlog"]==16; assert x["low_generation"]["last_backlog"]==0'
+      - name: Guard PI-RISE funding metadata (not actual bank attestation)
+        run: |
+          python3 tools/pi_rise_finance_audit.py operations/PI_RISE_FINANCE_PIPELINE_V0_1_0.json --check-paths > /tmp/pi_rise_finance_status.json
+          python3 -c 'import json; x=json.load(open("/tmp/pi_rise_finance_status.json")); assert x["result"] == "STRUCTURE_ONLY_NOT_EXTERNAL_VERIFICATION"; assert x["cash_aggregation_performed"] is False; assert x["stage_counts"]["PAID_VERIFIED"] == 0'
       - name: Verify synthetic example expected status
         run: |
           python3 tools/pi_rise_check.py operations/PI_RISE_SYNTHETIC_EXAMPLE_V0_1_0.json > /tmp/pi_rise_synthetic_result.json

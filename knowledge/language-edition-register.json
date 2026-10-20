@@ -483,14 +483,14 @@
     }
   ],
   "metrics": {
-    "markdown_total": 197,
+    "markdown_total": 199,
     "filename_classes": {
       "UNMARKED_LANGUAGE_UNVERIFIED": 42,
       "LEGACY_MIXED_READER_ENTRY": 2,
       "KO_SUFFIX_UNVERIFIED": 90,
       "ORDERED_BILINGUAL_FOUNDER_OR_GOVERNANCE": 2,
       "EN_SUFFIX_UNVERIFIED": 30,
-      "COMBINED_NAMING_UNVERIFIED": 31
+      "COMBINED_NAMING_UNVERIFIED": 33
     },
     "meaning_verified_pairs": 0,
     "meaning_verified_pairs_is_a_status_count_not_a_claim_that_no_reviews_ever_occurred": true
@@ -1085,6 +1085,12 @@
       "content_equivalence": "NOT_REVIEWED"
     },
     {
+      "path": "funding/GRANTS_CONTRACTS_PUBLIC_LEDGER_EN_KO.md",
+      "filename_class": "COMBINED_NAMING_UNVERIFIED",
+      "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
       "path": "funding/LEGAL_TAX_RISK_REGISTER_2026-10-13_EN_KO.md",
       "filename_class": "COMBINED_NAMING_UNVERIFIED",
       "counterpart_path": null,
@@ -1200,6 +1206,12 @@
     },
     {
       "path": "operations/PI_RISE_V0_1_0_EN_KO.md",
+      "filename_class": "COMBINED_NAMING_UNVERIFIED",
+      "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "operations/PI_RISE_V0_2_0_EN_KO.md",
       "filename_class": "COMBINED_NAMING_UNVERIFIED",
       "counterpart_path": null,
       "content_equivalence": "NOT_REVIEWED"
@@ -2050,6 +2062,17 @@
       "new_edition_pairs": 1,
       "editorial_notes": "All R1-R21 grouped without new hypotheses; arbitrary equal-prior committee's info versus hazard classification diverges; omit-model and hard ethics gate preserved.",
       "reviewer_actions": "Externally review original prior authors, translation, meaningful real B action rights; status UNTESTED."
+    },
+    {
+      "as_of": "2026-10-21",
+      "status": "PI_RISE_V020_FINANCE_INTEGRATION_STRUCTURAL_ONLY",
+      "new_documents": [
+        "funding/GRANTS_CONTRACTS_PUBLIC_LEDGER_EN_KO.md",
+        "operations/PI_RISE_V0_2_0_EN_KO.md"
+      ],
+      "new_edition_pairs": 0,
+      "editorial_notes": "New finance control and public institutional ledger registered, predecessor research and RVD C06 entries preserved. EN/KO parity not independently reviewed.",
+      "reviewer_actions": "Do not infer financial awards or verified translation from the registry."
     }
   ],
   "path_layout_policy": "Keep the project root entry-only; bilingual full research editions live in existing research/ and their original historical combined documents retain stable root URLs."

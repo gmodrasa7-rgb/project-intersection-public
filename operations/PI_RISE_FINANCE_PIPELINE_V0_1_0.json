@@ -1,0 +1,77 @@
+{
+  "schema_version": "0.1.0",
+  "as_of": "2026-10-21",
+  "classification": "PUBLIC_STATUS_ONLY_NO_PRIVATE_TRANSACTIONS",
+  "authority": "operations/PI_RISE_V0_2_0_EN_KO.md",
+  "cash_aggregation_allowed": false,
+  "entries": [
+    {
+      "id": "SPONSORS_CHANNEL",
+      "kind": "PERSONAL_SPONSORSHIP_CHANNEL",
+      "stage": "UNKNOWN",
+      "proposal": {
+        "currency": null,
+        "amount": null
+      },
+      "award_evidence": "UNVERIFIED",
+      "receipt_evidence": "UNVERIFIED",
+      "receipt_record_ref": null,
+      "restrictions": "TWO_USE_SPONSOR_POLICY",
+      "budget_relation": "SINGLE_CANONICAL_LEDGER",
+      "publication": "MAIN",
+      "source_ref": "funding/SPONSORSHIP_PUBLIC_LEDGER.md",
+      "note": "Approved channel was researcher reported, transactions and net payout not bank-reconciled here."
+    },
+    {
+      "id": "BRIDGE_30D_HISTORICAL",
+      "kind": "GRANT_PROPOSAL",
+      "stage": "DRAFT",
+      "proposal": {
+        "currency": "USD",
+        "amount": "5000.00"
+      },
+      "award_evidence": "NOT_EVIDENCED",
+      "receipt_evidence": "UNVERIFIED",
+      "receipt_record_ref": null,
+      "restrictions": "FUNDER_TERMS_NOT_VERIFIED",
+      "budget_relation": "HISTORICAL_ALTERNATIVE_DO_NOT_ADD",
+      "publication": "MAIN",
+      "source_ref": "funding/30_DAY_BRIDGE.md",
+      "note": "Preserved prepared proposal, not shown as submitted or awarded."
+    },
+    {
+      "id": "PILOT_90D_HISTORICAL",
+      "kind": "GRANT_PROPOSAL",
+      "stage": "DRAFT",
+      "proposal": {
+        "currency": "KRW",
+        "amount": "18000000"
+      },
+      "award_evidence": "NOT_EVIDENCED",
+      "receipt_evidence": "UNVERIFIED",
+      "receipt_record_ref": null,
+      "restrictions": "FUNDER_TERMS_NOT_VERIFIED",
+      "budget_relation": "SEPARATE_PHASE_NOT_SECURED",
+      "publication": "MAIN",
+      "source_ref": "funding/90_DAY_PILOT.md",
+      "note": "Preserved follow-on proposal, not money received."
+    },
+    {
+      "id": "EI_X1_PR257_CANDIDATE",
+      "kind": "UNMERGED_FUNDING_DRAFT",
+      "stage": "DRAFT",
+      "proposal": {
+        "currency": null,
+        "amount": null
+      },
+      "award_evidence": "NOT_EVIDENCED",
+      "receipt_evidence": "UNVERIFIED",
+      "receipt_record_ref": null,
+      "restrictions": "UNKNOWN",
+      "budget_relation": "ALTERNATIVE_DRAFT_DO_NOT_ADD",
+      "publication": "OPEN_PR",
+      "source_ref": "https://github.com/gmodrasa7-rgb/project-intersection-public/pull/257",
+      "note": "Unmerged research/funding candidate; do not infer application submission."
+    }
+  ]
+}

@@ -2,6 +2,8 @@
 
 **Individual sponsorship and grant proposals are separate funding mechanisms. Historical grant proposals below are not documented awards.**
 
+**Finance / 회계 현황 정본 (2026-10-21):** [PI-RISE v0.2.0 integrated governance](../operations/PI_RISE_V0_2_0_EN_KO.md) · [public proposal/award status registry](../operations/PI_RISE_FINANCE_PIPELINE_V0_1_0.json) · [grants/contracts summary ledger](GRANTS_CONTRACTS_PUBLIC_LEDGER_EN_KO.md) · [single individual-sponsorship ledger](SPONSORSHIP_PUBLIC_LEDGER.md). An application, planned budget, AI credit, award or open PR is not a verified unrestricted bank receipt. / 공개 회계 문서는 실제 지급·세금 분류의 인증서가 아님.
+
 ## Original 1 — English
 
 ### First-pass funder review (about 90 seconds of reading)
