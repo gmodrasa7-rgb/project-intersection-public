@@ -1,6 +1,6 @@
 <!-- PI-LANGUAGE: en-ko -->
 # Project Intersection — Research identity, versions and validation states / 연구 정체성·버전·검증 상태
-**Registry document version: v0.1.0 · Snapshot: 2026-10-20 · Proposed publication via draft PR, not scientific approval**
+**Registry document version: v0.2.0 · Snapshot: 2026-10-20 · Proposed publication via draft PR, not scientific approval**
 
 ## Original 1 — English
 
@@ -27,19 +27,22 @@ A **program**, a **research component**, a **method document**, an **experiment*
 | IVS-0R | Counterexample, independent-reproduction and correction audit | Unassigned | — | Method, not certification of the theories |
 | ICM / RGBM | Candidate interest intersections / long-horizon shared growth | Unassigned | — | Neither model guaranteed; ICM may be empty |
 | CCPH | Events, sources, contributions, impacts and provenance | Unassigned | — | Data lineage, not a social law |
-| RVD | Test changes in relational value and motive formation | Unassigned | v0.1.0 [open PR #245](https://github.com/gmodrasa7-rgb/project-intersection-public/pull/245) | Naming and baseline proposed; not merged |
-| PI-RAMP | Test whether each archive upgrade improves reader accuracy and evidence access | **v0.2.0** [main](../protocols/PI_RAMP_V0_2_EN.md) | **v0.3.0** [draft PR #246](https://github.com/gmodrasa7-rgb/project-intersection-public/pull/246) | Method pilot; real reader-effect unmeasured |
+| RVD | Test changes in relational value and motive formation | **v0.1.0** [main](../research/RVD_VERSION_MANIFEST.json) | — | Named conceptual baseline merged; empirical validation absent |
+| PI-RAMP | Test whether each archive upgrade improves reader accuracy and evidence access | **v0.3.0** [main](../protocols/PI_RAMP_V0_3_EN.md) | — | Method pilot merged; real reader-effect unmeasured |
 | Roadmap | Six fixed research stages and gates | **v0.2.3** [main](../research/PI_ROADMAP_OPERATIONAL_GATES_V0_2_3_EN_KO.md) | — | Operational design, not scientific effect |
 | DCA-0 | Compare defensive acceleration with AI misuse and externalities | Unassigned | — | Defensive causal impact unverified |
 
 ### Experiments are IDs, not semantic versions
 [E007](../experiments/e007/README_EN.md): 17 of 72 selected synthetic classification conditions changed; no field inference. [E008](../experiments/e008/README_EN.md): no completed main-policy comparison. [E009](../experiments/e009/RESULT_EN.md): preregistered synthetic project candidate underperformed the best simple baseline by 42.35% mean regret, failing 3 of 4 criteria. [E010](../experiments/e010/README_EN.md): post-hoc exploratory, not confirmatory. Source-first C13 is an [unmerged open PR #248](https://github.com/gmodrasa7-rgb/project-intersection-public/pull/248), not a completed PI experiment or merged corpus update.
 
+### Temporal failure and invalidation gate
+A snapshot describing a merged version as an unmerged candidate is not merely old text: it can alter a reader's conclusions. The registry must be checked against live main source blobs and PR merge states before presenting **current** publication facts. Failed network checks must be **UNVERIFIED**, not a pass. This is version-currency verification, not validation of any theory.
+
 ### Review gate before any version promotion
 Identify the original author/source and predecessor version → state the concrete changed prediction/measurement/protocol → name simple competing explanations and counterexamples → preserve negative evidence and unknowns → run scoped checks and publish their limitations → verify both language editions and read-back → seek independent review for external scientific claims. **A merger/CI pass ≠ empirical replication.** Existing [research status policy](../RESEARCH_STATUS_POLICY.md) remains authoritative for decision labels.
 
 ### Limitations of this registry
-Snapshot derived from selected public main files and visible PR metadata, not an exhaustive audit of all historical versions, all private research, all conversational transcripts, or all other PR branches. There may be older component versions outside this snapshot. The [JSON manifest](../research/RESEARCH_VERSION_REGISTRY.json) is a navigational inventory only, not ground truth about uninspected files. Historical alternative meanings of **ICM** must be traced to their own sources; do not treat Independent Continuance Margin as interchangeable with Intersection of Minimum Self-Interest. **CMR** is not expanded here because the verified source definition is unresolved.
+Snapshot derived from selected public main files and visible PR metadata, not an exhaustive audit of all historical versions, all private research, all conversational transcripts, or all other PR branches. There may be older component versions outside this snapshot. The [JSON manifest](../research/RESEARCH_VERSION_REGISTRY.json) is an audited but time-bound navigational inventory only, not ground truth about uninspected files. Historical alternative meanings of **ICM** must be traced to their own sources; do not treat Independent Continuance Margin as interchangeable with Intersection of Minimum Self-Interest. **CMR** is not expanded here because the verified source definition is unresolved.
 
 ---
 
@@ -68,16 +71,19 @@ Snapshot derived from selected public main files and visible PR metadata, not an
 | IVS-0R | 반례·역할반전·독립검증·오류복구 감사 | 미지정 | — | 검증 절차이지 성립 증명 아님 |
 | ICM / RGBM | 최소 자기이익 교집합 / 장기 공동발전 가능성 | 미지정 | — | 두 후보 모두 미입증; 공집합 가능 |
 | CCPH | 사건·출처·기여·피해·영향 계보 관리 | 미지정 | — | 계보 DB이지 검증된 사회법칙 아님 |
-| RVD | 관계적 공명에서 가치·동기가 생기거나 변하는 기제 | 미지정 | v0.1.0 [열린 #245](https://github.com/gmodrasa7-rgb/project-intersection-public/pull/245) | 명칭·기준선 제안, 미병합 |
-| PI-RAMP | 자료실 개편이 독자의 근거 발견·판단을 개선했는지 측정 | **v0.2.0** [정본](../protocols/PI_RAMP_V0_2_KO.md) | **v0.3.0** [초안 #246](https://github.com/gmodrasa7-rgb/project-intersection-public/pull/246) | 이용자 효과 아직 미측정 |
+| RVD | 관계적 공명에서 가치·동기가 생기거나 변하는 기제 | **v0.1.0** [정본](../research/RVD_VERSION_MANIFEST.json) | — | 명칭·가설 기준선 병합, 경험적 검증 없음 |
+| PI-RAMP | 자료실 개편이 독자의 근거 발견·판단을 개선했는지 측정 | **v0.3.0** [정본](../protocols/PI_RAMP_V0_3_KO.md) | — | 방법론 병합, 이용자 효과 아직 미측정 |
 | 로드맵 | 기존 6단계·버전·승격과 보류 기준 | **v0.2.3** [정본](../research/PI_ROADMAP_OPERATIONAL_GATES_V0_2_3_EN_KO.md) | — | 운영 설계 |
 | DCA-0 | 악용 가속보다 방어·검증 효과를 높일 조건 측정 | 미지정 | — | 실제 피해감소 인과효과 미확인 |
 
 ### 실험번호는 연구 버전이 아님
 [E007](../experiments/e007/README_KO.md): 선정된 72개 합성 조건 중 17개 분류 변경. [E008](../experiments/e008/README_KO.md): 정책 본비교 실험 결과 없음. [E009](../experiments/e009/RESULT_KO.md): 합성 기준선 대비 평균 후회값 42.35% 악화·4개 기준 중 3개 실패. [E010](../experiments/e010/README_KO.md): 사후 탐색. C13 선행문헌 추가는 [열린 PR #248](https://github.com/gmodrasa7-rgb/project-intersection-public/pull/248)이며 main 반영이나 신규 PI 실증으로 간주 금지.
 
+### 시간차 오류·최신성 검증
+연구 본문 버전과 GitHub PR 병합 상태가 달라졌는데 등록부를 갱신하지 않으면 **과거 사실을 현재 사실로 오인**하게 됨. 현재 상태 표기는 main 정본 파일 SHA·후보 PR 병합 여부와 비교. 네트워크 확인 실패는 통과가 아니라 **미확인**. 해당 절차는 **자료실 상태 검증**이지 연구가설의 참을 입증하는 검사가 아님.
+
 ### 갱신·검증 규칙
 원저자·정본 확인 → 변경된 가설/측정/방법과 실제 새 예측 기록 → 경쟁 이론·반례 → 불리한 결과·미식별 보존 → 제한된 회귀검사 → 영·한 의미 확인 → GitHub 읽기검증 → 외부 인과·효과 주장은 독립재현 확인. **PR 병합이나 CI 성공은 독립 과학검증 아님.** 상태명은 기존 [연구 상태정책](../RESEARCH_STATUS_POLICY.md)을 따른다.
 
 ### 감사 범위·충돌
-2026-10-20 공개 기본분기 일부 정본·현재 열린 PR 메타데이터 대조. 전체 과거 대화의 완전한 원본, 모든 비공개 저장소, 과거 모든 버전의 전수감사가 아님. 세부 항목은 [기계 판독 원장](../research/RESEARCH_VERSION_REGISTRY.json). ICM의 과거 다른 뜻 Independent Continuance Margin은 같은 개념으로 자동 합병 금지. CMR은 정본 풀네임 검증 전까지 확정 정의·번호 부여 보류.
+2026-10-20 공개 기본분기 일부 정본·현재 열린 PR 메타데이터 대조. 전체 과거 대화의 완전한 원본, 모든 비공개 저장소, 과거 모든 버전의 전수감사가 아님. 기계 판독 원장 v0.2에는 원전 파일 SHA·미병합 후보 PR 식별자를 기록. **2026-10-20 정정:** RVD v0.1.0(#245), PI-RAMP v0.3.0(#246)은 이미 main에 병합. 세부 항목은 [기계 판독 원장](../research/RESEARCH_VERSION_REGISTRY.json). ICM의 과거 다른 뜻 Independent Continuance Margin은 같은 개념으로 자동 합병 금지. CMR은 정본 풀네임 검증 전까지 확정 정의·번호 부여 보류.
