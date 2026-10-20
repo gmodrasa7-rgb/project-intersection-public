@@ -472,6 +472,17 @@
         "Independent bilingual semantic parity is not established.",
         "No field experiment, AI phenomenal experience measurement or historical child deprivation test was performed."
       ]
+    },
+    {
+      "id": "PI-NAV-ACCESS",
+      "original_1_english": "navigation/ACCESS_MAP_EN.md",
+      "original_2_korean": "navigation/ACCESS_MAP_KO.md",
+      "kind": "navigation_only",
+      "structural_pair_present": true,
+      "meaning_review_status": "NOT_INDEPENDENTLY_VERIFIED",
+      "original_conception_language": "NOT_VERIFIED",
+      "independent_review_receipt": null,
+      "one_sided_edit_exception": null
     }
   ],
   "legacy_priority_unresolved": [
@@ -513,19 +524,25 @@
     }
   ],
   "metrics": {
-    "markdown_total": 209,
+    "markdown_total": 212,
     "filename_classes": {
-      "UNMARKED_LANGUAGE_UNVERIFIED": 42,
+      "UNMARKED_LANGUAGE_UNVERIFIED": 43,
       "LEGACY_MIXED_READER_ENTRY": 2,
-      "KO_SUFFIX_UNVERIFIED": 93,
+      "KO_SUFFIX_UNVERIFIED": 94,
       "ORDERED_BILINGUAL_FOUNDER_OR_GOVERNANCE": 2,
-      "EN_SUFFIX_UNVERIFIED": 32,
+      "EN_SUFFIX_UNVERIFIED": 33,
       "COMBINED_NAMING_UNVERIFIED": 38
     },
     "meaning_verified_pairs": 0,
     "meaning_verified_pairs_is_a_status_count_not_a_claim_that_no_reviews_ever_occurred": true
   },
   "inventory": [
+    {
+      "path": ".github/ACCESSIBILITY.md",
+      "filename_class": "UNMARKED_LANGUAGE_UNVERIFIED",
+      "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
     {
       "path": ".github/ISSUE_TEMPLATE/independent-replication.md",
       "filename_class": "UNMARKED_LANGUAGE_UNVERIFIED",
@@ -1172,6 +1189,18 @@
       "path": "learning/ISHPP_HUMAN_AI_CURRICULUM_v0_1_KO.md",
       "filename_class": "KO_SUFFIX_UNVERIFIED",
       "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "navigation/ACCESS_MAP_EN.md",
+      "filename_class": "EN_SUFFIX_UNVERIFIED",
+      "counterpart_path": "navigation/ACCESS_MAP_KO.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "navigation/ACCESS_MAP_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": "navigation/ACCESS_MAP_EN.md",
       "content_equivalence": "NOT_REVIEWED"
     },
     {
@@ -2217,6 +2246,18 @@
       "new_edition_pairs": 0,
       "editorial_notes": "Registered bounded RVD-R11 13-case sensitivity audit while preserving concurrently merged MER-CIR/PI-RISE research and current navigation. Corrects open upper bound, rejects post-hoc model changes and fabricated statistical CI, 20 synthetic negative mutations. Not empirical or independent validation.",
       "reviewer_actions": "Independently calibrate hidden-reward bounds, utility scale, choice noise and real B identity prior to experimental interpretation."
+    },
+    {
+      "as_of": "2026-10-21",
+      "status": "PI_ACCESS_V0_1_0_TASK_ROUTING_STRUCTURAL_ONLY",
+      "new_documents": [
+        ".github/ACCESSIBILITY.md",
+        "navigation/ACCESS_MAP_EN.md",
+        "navigation/ACCESS_MAP_KO.md"
+      ],
+      "new_edition_pairs": 1,
+      "editorial_notes": "Task-oriented EN/KO source maps and a public accessibility feedback route. Bilingual structure and local Markdown paths checked; independent screen-reader tests, actual time-to-evidence and semantic parity not certified. Accessibility file placed in GitHub-supported .github/ folder to preserve zero new root Markdown.",
+      "reviewer_actions": "Test phone/keyboard/screen reader and counterexample navigation independently; verify adverse results remain visible."
     }
   ],
   "path_layout_policy": "Keep the project root entry-only; bilingual full research editions live in existing research/ and their original historical combined documents retain stable root URLs."

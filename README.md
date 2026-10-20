@@ -20,7 +20,7 @@
 
 **Contrary evidence visible before expanding:** [E009](experiments/e009/RESULT_EN.md): Project-v3 was **42.35% worse** in mean regret than the best simple synthetic baseline; **3 of 4 criteria failed**. [E008](experiments/e008/README_EN.md): **no completed main policy result**. Neither is field validation.
 
-**Choose your route:** [Program](navigation/RESEARCH_PROGRAM_EN.md) · [Versions/status](navigation/RESEARCH_VERSIONS_EN_KO.md#original-1--english) · [Evidence](research/PUBLIC_EVIDENCE_INDEX_EN.md) · [Independent review](research/PUBLIC_REVIEW_PACKET_EN.md).
+**Choose your route:** [Task-based access map](navigation/ACCESS_MAP_EN.md) · [Program](navigation/RESEARCH_PROGRAM_EN.md) · [Versions/status](navigation/RESEARCH_VERSIONS_EN_KO.md#original-1--english) · [Evidence](research/PUBLIC_EVIDENCE_INDEX_EN.md) · [Independent review](research/PUBLIC_REVIEW_PACKET_EN.md).
 
 <details>
 <summary>Technical purpose, evidence, rights and reviewer routes</summary>
@@ -31,7 +31,7 @@
 
 **Competing paths:** Compare short-term extraction and control against long-term voluntary cooperation and regenerative development. Find where incentives cross or reverse, including harms to excluded third parties. Neither good intentions nor bad intentions are necessary; power differences and protective rules are not automatically exploitation.
 
-**Evidence so far:** [E007](experiments/e007/README_EN.md) found 17/72 classification changes in selected synthetic timing scenarios. [E008](experiments/e008/README_EN.md) has no completed main result. [E009](experiments/e009/RESULT_EN.md) found the project's complex candidate worse than simpler baselines in its preregistered synthetic comparison. [E010](experiments/e010/README_EN.md) is exploratory and post-hoc. None proves a long-run social law.
+**Evidence so far:** [E007](experiments/e007/README_EN.md) found 17/72 classification changes in selected synthetic timing scenarios. [E008](experiments/e008/README_EN.md) has no completed main result. E009 found the project's complex candidate worse than simpler baselines in its preregistered synthetic comparison. [E010](experiments/e010/README_EN.md) is exploratory and post-hoc. None proves a long-run social law.
 
 **Research viability, funding and accounting (PI-RISE v0.2.0):** [Integrated operating protocol](operations/PI_RISE_V0_2_0_EN_KO.md) — no awards, cash receipt or independent validation certified.
 
@@ -79,7 +79,7 @@
 
 **펼치지 않아도 보이는 불리한 증거:** [E009](experiments/e009/RESULT_KO.md): 최선 단순 기준선보다 평균 후회값 **42.35% 나빴고**, **4개 중 3개** 기준 실패. [E008](experiments/e008/README_KO.md): **정책 본 비교실험 결과가 없다**. 현실 검증 결과 아님.
 
-**어디부터 읽을까:** [연구체계·선행문헌 지도](navigation/RESEARCH_PROGRAM_KO.md) · [연구별 버전·검증 현황](navigation/RESEARCH_VERSIONS_EN_KO.md#원본2--한국어) · [증거·미검증](research/PUBLIC_EVIDENCE_INDEX_KO.md) · [독립 반증·재현](research/PUBLIC_REVIEW_PACKET_KO.md).
+**어디부터 읽을까:** [목적별 바로가기 지도](navigation/ACCESS_MAP_KO.md) · [연구체계·선행문헌 지도](navigation/RESEARCH_PROGRAM_KO.md) · [연구별 버전·검증 현황](navigation/RESEARCH_VERSIONS_EN_KO.md#원본2--한국어) · [증거·미검증](research/PUBLIC_EVIDENCE_INDEX_KO.md) · [독립 반증·재현](research/PUBLIC_REVIEW_PACKET_KO.md).
 
 <details>
 <summary>상세 연구 목적·반례·증거상태·권리·심사 경로 펼치기</summary>
@@ -90,7 +90,7 @@
 
 **경쟁하는 경로:** 단기 착취·통제와 장기 자발적 협력·재생형 발전을 비교한다. 제3자 피해를 포함해 유인이 교차하거나 역전되는 조건을 찾는다. 선의와 악의를 전제하지 않으며, 능력 차이나 정당한 피해 예방을 자동으로 착취라 판정하지 않는다.
 
-**현재 근거:** [E007](experiments/e007/README_KO.md)은 선정된 72개 합성 조건 중 17개 분류 변화. [E008](experiments/e008/README_KO.md)은 본실험 결과 없음. [E009](experiments/e009/RESULT_KO.md)는 사전등록된 합성 비교에서 복잡한 후보 모형이 단순 기준선보다 열세였다. [E010](experiments/e010/README_KO.md)은 사후 탐색적 분석이다. 어느 결과도 사회 전체의 장기 법칙을 입증하지 않는다.
+**현재 근거:** [E007](experiments/e007/README_KO.md)은 선정된 72개 합성 조건 중 17개 분류 변화. [E008](experiments/e008/README_KO.md)은 본실험 결과 없음. E009는 사전등록된 합성 비교에서 복잡한 후보 모형이 단순 기준선보다 열세였다. [E010](experiments/e010/README_KO.md)은 사후 탐색적 분석이다. 어느 결과도 사회 전체의 장기 법칙을 입증하지 않는다.
 
 **외부 심사:** [독립 자기이익 반증 요청 (#220)](https://github.com/gmodrasa7-rgb/project-intersection-public/issues/220) · [한국어 독립 판단 경로](navigation/START_HERE_KO.md#외부-심사자를-위한-핵심-판단) · [재현과 반증 안내](research/PUBLIC_REVIEW_PACKET_KO.md) · [연구비 지원 검토](funding/FUNDER_START_HERE.md#원본2--한국어).
 
