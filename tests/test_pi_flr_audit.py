@@ -150,6 +150,15 @@ class FLRValidationTests(unittest.TestCase):
                                     "MISSING_REQUIRED_ARTIFACTS"):
             rise.audit(broken, ROOT)
 
+    def test_meta_link_guard_cannot_be_silently_removed(self):
+        """The CI contract rejects removal of repository-wide link verification."""
+        broken = self.workflow.replace(
+            "python3 tools/check_public_navigation.py --strict-all",
+            "python3 tools/check_public_navigation.py --strict-core")
+        self.assertNotEqual(broken, self.workflow)
+        with self.assertRaisesRegex(flr.FLRError, "CI_WHOLE_REPOSITORY_LINK_GUARD"):
+            flr.check_ci_contract(broken)
+
     def test_unfiltered_ci_contract(self):
         self.assertTrue(flr.check_ci_contract(self.workflow))
 
