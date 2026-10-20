@@ -1,0 +1,401 @@
+{
+  "schema": "pi-ramp.v0.7-conditional-identified-set-audit/1",
+  "run_id": "RAMP-20261021-006",
+  "publication_date": "2026-10-21",
+  "research_basis": "RVD-R11 and RVD-R12 (2026-10-21), existing RVD v0.3 source reports; no priority/independent discovery claim",
+  "method_label": "EXACT_SYNTHETIC_SENSITIVITY_STRESS_TEST",
+  "scientific_status": "CONSTRUCTED_MODEL_ONLY_NOT_EMPIRICAL_OR_INDEPENDENTLY_VERIFIED",
+  "original_subjects": 0,
+  "independent_scientific_review": null,
+  "measured_reader_effect": null,
+  "principal_gap": "A positive lower bound for other-agent intrinsic value depends on nuisance bound, exact threshold model, cost/utility numeraire, no selection bias, and effective distinct-B protection; without them claim must be withheld.",
+  "deterministic_model": {
+    "utility_difference": "w_B + g_i - c_i",
+    "preserve_rule": "P when utility_difference >= 0 (tie always preserve)",
+    "replace_rule": "X when utility_difference < 0",
+    "common_w_B": "STABLE_WITHIN_COMPARISON",
+    "nuisance_modes": [
+      "FIXED_ACROSS_CHOICES",
+      "VARIES_BY_CONDITION_WITHIN_BOUNDS"
+    ],
+    "cost_scales": [
+      "FIXED_NUMERAIRE_ASSUMED",
+      "UNVERIFIED_MONEY_UTILITY_CONVERSION"
+    ],
+    "choice_classes": [
+      "EXACT_DETERMINISTIC_TOY",
+      "NOISY_OR_NONCOMPLIANT"
+    ],
+    "set_bounds": "With g_i in [L,U], max(P)-U <= w_B < min(X)-L. This set is conditional and can be empty. For one-sided/no-u models, report open/unbounded endpoints. FIXED g across choices additionally requires max(P) < min(X).",
+    "threshold_u_for_positive_value": "for L=0, w_B>0 in all compatible models only if U < max(P). Equality permits w_B=0.",
+    "identification_interval_vs_sampling_CI": "This is a deterministic compatibility/identified set under given assumptions, not a statistical confidence interval."
+  },
+  "scenarios": [
+    {
+      "id": "B01",
+      "label": "RVD R11 illustrative u=1",
+      "preserve": [
+        2,
+        4
+      ],
+      "replace": [
+        6
+      ],
+      "g_min": "0",
+      "g_max": "1",
+      "g_mode": "FIXED_ACROSS_CHOICES",
+      "cost_scale": "FIXED_NUMERAIRE_ASSUMED",
+      "choice_quality": "EXACT_DETERMINISTIC_TOY",
+      "expected": {
+        "state": "NONEMPTY_CONDITIONAL_IDENTIFIED_SET",
+        "lower": "3",
+        "upper": "6",
+        "lower_closed": true,
+        "upper_closed": false,
+        "strict_positive": true
+      }
+    },
+    {
+      "id": "B02",
+      "label": "sensitivity threshold u=4",
+      "preserve": [
+        2,
+        4
+      ],
+      "replace": [
+        6
+      ],
+      "g_min": "0",
+      "g_max": "4",
+      "g_mode": "FIXED_ACROSS_CHOICES",
+      "cost_scale": "FIXED_NUMERAIRE_ASSUMED",
+      "choice_quality": "EXACT_DETERMINISTIC_TOY",
+      "expected": {
+        "state": "NONEMPTY_CONDITIONAL_IDENTIFIED_SET",
+        "lower": "0",
+        "upper": "6",
+        "lower_closed": true,
+        "upper_closed": false,
+        "strict_positive": false
+      }
+    },
+    {
+      "id": "B03",
+      "label": "u=5 admits negative latent value",
+      "preserve": [
+        2,
+        4
+      ],
+      "replace": [
+        6
+      ],
+      "g_min": "0",
+      "g_max": "5",
+      "g_mode": "FIXED_ACROSS_CHOICES",
+      "cost_scale": "FIXED_NUMERAIRE_ASSUMED",
+      "choice_quality": "EXACT_DETERMINISTIC_TOY",
+      "expected": {
+        "state": "NONEMPTY_CONDITIONAL_IDENTIFIED_SET",
+        "lower": "-1",
+        "upper": "6",
+        "lower_closed": true,
+        "upper_closed": false,
+        "strict_positive": false
+      }
+    },
+    {
+      "id": "B04",
+      "label": "no independently justified bound",
+      "preserve": [
+        2,
+        4
+      ],
+      "replace": [
+        6
+      ],
+      "g_min": "0",
+      "g_max": null,
+      "g_mode": "FIXED_ACROSS_CHOICES",
+      "cost_scale": "FIXED_NUMERAIRE_ASSUMED",
+      "choice_quality": "EXACT_DETERMINISTIC_TOY",
+      "expected": {
+        "state": "UNKNOWN_UNBOUNDED_NUISANCE",
+        "lower": null,
+        "upper": "6",
+        "lower_closed": null,
+        "upper_closed": false,
+        "strict_positive": null
+      }
+    },
+    {
+      "id": "B05",
+      "label": "negative nuisance possible",
+      "preserve": [
+        2,
+        4
+      ],
+      "replace": [
+        6
+      ],
+      "g_min": "-2",
+      "g_max": "1",
+      "g_mode": "FIXED_ACROSS_CHOICES",
+      "cost_scale": "FIXED_NUMERAIRE_ASSUMED",
+      "choice_quality": "EXACT_DETERMINISTIC_TOY",
+      "expected": {
+        "state": "NONEMPTY_CONDITIONAL_IDENTIFIED_SET",
+        "lower": "3",
+        "upper": "8",
+        "lower_closed": true,
+        "upper_closed": false,
+        "strict_positive": true
+      }
+    },
+    {
+      "id": "B06",
+      "label": "choice reversal with fixed nuisance",
+      "preserve": [
+        9
+      ],
+      "replace": [
+        6
+      ],
+      "g_min": "0",
+      "g_max": "4",
+      "g_mode": "FIXED_ACROSS_CHOICES",
+      "cost_scale": "FIXED_NUMERAIRE_ASSUMED",
+      "choice_quality": "EXACT_DETERMINISTIC_TOY",
+      "expected": {
+        "state": "FALSIFIED_FIXED_THRESHOLD_MODEL",
+        "lower": null,
+        "upper": null,
+        "lower_closed": null,
+        "upper_closed": null,
+        "strict_positive": null
+      }
+    },
+    {
+      "id": "B07",
+      "label": "choice reversal explained by bounded state-dependent nuisance",
+      "preserve": [
+        9
+      ],
+      "replace": [
+        6
+      ],
+      "g_min": "0",
+      "g_max": "4",
+      "g_mode": "VARIES_BY_CONDITION_WITHIN_BOUNDS",
+      "cost_scale": "FIXED_NUMERAIRE_ASSUMED",
+      "choice_quality": "EXACT_DETERMINISTIC_TOY",
+      "expected": {
+        "state": "NONEMPTY_CONDITIONAL_IDENTIFIED_SET",
+        "lower": "5",
+        "upper": "6",
+        "lower_closed": true,
+        "upper_closed": false,
+        "strict_positive": true
+      }
+    },
+    {
+      "id": "B08",
+      "label": "u too small even for varied nuisance",
+      "preserve": [
+        9
+      ],
+      "replace": [
+        6
+      ],
+      "g_min": "0",
+      "g_max": "1",
+      "g_mode": "VARIES_BY_CONDITION_WITHIN_BOUNDS",
+      "cost_scale": "FIXED_NUMERAIRE_ASSUMED",
+      "choice_quality": "EXACT_DETERMINISTIC_TOY",
+      "expected": {
+        "state": "FALSIFIED_BOUNDED_MODEL",
+        "lower": null,
+        "upper": null,
+        "lower_closed": null,
+        "upper_closed": null,
+        "strict_positive": null
+      }
+    },
+    {
+      "id": "B09",
+      "label": "unknown cost to utility scaling",
+      "preserve": [
+        2,
+        4
+      ],
+      "replace": [
+        6
+      ],
+      "g_min": "0",
+      "g_max": "1",
+      "g_mode": "FIXED_ACROSS_CHOICES",
+      "cost_scale": "UNVERIFIED_MONEY_UTILITY_CONVERSION",
+      "choice_quality": "EXACT_DETERMINISTIC_TOY",
+      "expected": {
+        "state": "UNKNOWN_COST_NUMERAIRE",
+        "lower": null,
+        "upper": null,
+        "lower_closed": null,
+        "upper_closed": null,
+        "strict_positive": null
+      }
+    },
+    {
+      "id": "B10",
+      "label": "single noisy observational choice not deterministic threshold",
+      "preserve": [
+        2,
+        4
+      ],
+      "replace": [
+        6
+      ],
+      "g_min": "0",
+      "g_max": "1",
+      "g_mode": "FIXED_ACROSS_CHOICES",
+      "cost_scale": "FIXED_NUMERAIRE_ASSUMED",
+      "choice_quality": "NOISY_OR_NONCOMPLIANT",
+      "expected": {
+        "state": "UNKNOWN_CHOICE_ERROR_MODEL",
+        "lower": null,
+        "upper": null,
+        "lower_closed": null,
+        "upper_closed": null,
+        "strict_positive": null
+      }
+    },
+    {
+      "id": "B11",
+      "label": "no replacement observations",
+      "preserve": [
+        2,
+        4
+      ],
+      "replace": [],
+      "g_min": "0",
+      "g_max": "1",
+      "g_mode": "FIXED_ACROSS_CHOICES",
+      "cost_scale": "FIXED_NUMERAIRE_ASSUMED",
+      "choice_quality": "EXACT_DETERMINISTIC_TOY",
+      "expected": {
+        "state": "ONE_SIDED_CONDITIONAL_IDENTIFIED_SET",
+        "lower": "3",
+        "upper": null,
+        "lower_closed": true,
+        "upper_closed": null,
+        "strict_positive": true
+      }
+    },
+    {
+      "id": "B12",
+      "label": "no preservation observations",
+      "preserve": [],
+      "replace": [
+        6
+      ],
+      "g_min": "0",
+      "g_max": "1",
+      "g_mode": "FIXED_ACROSS_CHOICES",
+      "cost_scale": "FIXED_NUMERAIRE_ASSUMED",
+      "choice_quality": "EXACT_DETERMINISTIC_TOY",
+      "expected": {
+        "state": "ONE_SIDED_CONDITIONAL_IDENTIFIED_SET",
+        "lower": null,
+        "upper": "6",
+        "lower_closed": null,
+        "upper_closed": false,
+        "strict_positive": false
+      }
+    },
+    {
+      "id": "B13",
+      "label": "uncertain g lower too",
+      "preserve": [
+        2,
+        4
+      ],
+      "replace": [
+        6
+      ],
+      "g_min": null,
+      "g_max": "1",
+      "g_mode": "FIXED_ACROSS_CHOICES",
+      "cost_scale": "FIXED_NUMERAIRE_ASSUMED",
+      "choice_quality": "EXACT_DETERMINISTIC_TOY",
+      "expected": {
+        "state": "UNKNOWN_UNBOUNDED_NUISANCE",
+        "lower": "3",
+        "upper": null,
+        "lower_closed": true,
+        "upper_closed": null,
+        "strict_positive": true
+      }
+    }
+  ],
+  "original_method_sources": [
+    {
+      "id": "MANSKI-1975",
+      "title": "Maximum score estimation of the stochastic utility model of choice",
+      "authors": "Charles F. Manski",
+      "year": 1975,
+      "doi": "10.1016/0304-4076(75)90032-9",
+      "url": "https://www.sciencedirect.com/science/article/pii/0304407675900329",
+      "transfer": "Distributional assumptions and noisy choice differ from a deterministic threshold; this source does not validate RVD utility scale.",
+      "access": "ORIGINAL_PUBLISHER_ABSTRACT"
+    },
+    {
+      "id": "MANSKI-2005",
+      "title": "Partial identification with missing data: concepts and findings",
+      "authors": "Charles F. Manski",
+      "year": 2005,
+      "doi": "10.1016/j.ijar.2004.10.006",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0888613X04001124",
+      "transfer": "Available evidence without unsupported assumptions may only yield identification regions.",
+      "access": "ORIGINAL_PUBLISHER_ABSTRACT"
+    },
+    {
+      "id": "IMBENS-MANSKI-2004",
+      "title": "Confidence Intervals for Partially Identified Parameters",
+      "authors": "Guido W. Imbens; Charles F. Manski",
+      "year": 2004,
+      "doi": "10.1111/j.1468-0262.2004.00555.x",
+      "url": "https://doi.org/10.1111/j.1468-0262.2004.00555.x",
+      "transfer": "True parameter coverage and entire identification-set coverage differ; simple confidence interval construction needs uniformity checks.",
+      "access": "ORIGINAL_PUBLISHER_ABSTRACT"
+    },
+    {
+      "id": "MANSKI-2007",
+      "title": "Partial Identification of Counterfactual Choice Probabilities",
+      "authors": "Charles F. Manski",
+      "year": 2007,
+      "doi": "10.1111/j.1468-2354.2007.00467.x",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1111/j.1468-2354.2007.00467.x",
+      "transfer": "Counterfactual choice claims under incomplete information require explicit assumptions; no wholesale mapping to B motive.",
+      "access": "ORIGINAL_PUBLISHER_ABSTRACT"
+    }
+  ],
+  "selection_limit": "Purposive four-original-method comparison; no systematic literature saturation or new empirical data.",
+  "safety_gates": [
+    "Do not close strict replacement bound (ties preserve).",
+    "Do not treat an upper bound on unobserved reward as measured merely because it appears in a model.",
+    "Do not claim unbounded nuisance reward gives strictly positive rights-value.",
+    "Do not infer monetary-equivalent utility without justified cost/utility normalization.",
+    "Do not apply deterministic bounds to noisy, selected or noncompliant choices.",
+    "Do not silently change a fixed latent reward into state-varying nuisance to rescue conflicting observations.",
+    "Do not erase original B identity, effective refusal or independently autonomous future.",
+    "Do not treat set identification region as 95% confidence interval.",
+    "Do not conflate model compatibility with real AI/internal motive evidence.",
+    "Do not promote PI-RAMP version as independent verification of RVD or new theorem."
+  ],
+  "pending_empirical_needs": [
+    "independently supported g bound with scope and uncertainty",
+    "cost to utility scale check",
+    "randomization, adherence, missingness and selection audit",
+    "distinct B identity, actual veto, harm and recovery outcomes",
+    "independent predeclared original-data study and sampling-aware inference"
+  ]
+}
