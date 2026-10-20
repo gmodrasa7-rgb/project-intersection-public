@@ -28,7 +28,7 @@ A **program**, a **research component**, a **method document**, an **experiment*
 | ICM / RGBM | Candidate interest intersections / long-horizon shared growth | Unassigned | — | Neither model guaranteed; ICM may be empty |
 | CCPH | Events, sources, contributions, impacts and provenance | Unassigned | — | Data lineage, not a social law |
 | RVD | Test changes in relational value and motive formation | **v0.2.0** [main](../research/RVD_VERSION_MANIFEST.json) | — | Adds R6–R9 counterexample/specification; empirical validation absent |
-| PI-RAMP | Test whether each archive upgrade improves reader accuracy and evidence access | **v0.4.0** [main](../protocols/PI_RAMP_V0_4_EN_KO.md) | — | Bounded C01–C12 source-identity audit; reader-effect unmeasured |
+| PI-RAMP | Test whether each archive upgrade improves reader accuracy and evidence access | **v0.5.0** [main](../protocols/PI_RAMP_V0_5_EN_KO.md) | — | Six similar-title research lineages and partial replication/analogy distinguished; reader-effect unmeasured |
 | Roadmap | Six fixed research stages and gates | **v0.2.3** [main](../research/PI_ROADMAP_OPERATIONAL_GATES_V0_2_3_EN_KO.md) | — | Operational design, not scientific effect |
 | DCA-0 | Compare defensive acceleration with AI misuse and externalities | Unassigned | — | Defensive causal impact unverified |
 | DCA-1 | Test whether adaptive defense displaces harm or merely blocks action | **v0.2.0** [main](../research/DCA1_ADAPTATION_DISPLACEMENT_IDENTIFICATION_2026-10-20_KO.md) | — | Original-source review and synthetic counterexamples; no field validation |
@@ -76,7 +76,7 @@ The version register answers **which current document/version**; [PI-CIG claim i
 | ICM / RGBM | 최소 자기이익 교집합 / 장기 공동발전 가능성 | 미지정 | — | 두 후보 모두 미입증; 공집합 가능 |
 | CCPH | 사건·출처·기여·피해·영향 계보 관리 | 미지정 | — | 계보 DB이지 검증된 사회법칙 아님 |
 | RVD | 관계적 공명에서 가치·동기가 생기거나 변하는 기제 | **v0.2.0** [정본](../research/RVD_VERSION_MANIFEST.json) | — | R6–R9 반례·측정명세 추가, 경험적 검증 없음 |
-| PI-RAMP | 자료실 개편이 독자의 근거 발견·판단을 개선했는지 측정 | **v0.4.0** [정본](../protocols/PI_RAMP_V0_4_EN_KO.md) | — | C01–C12 출처 식별 감사, 이용자 효과 미측정 |
+| PI-RAMP | 자료실 개편이 독자의 근거 발견·판단을 개선했는지 측정 | **v0.5.0** [정본](../protocols/PI_RAMP_V0_5_EN_KO.md) | — | 6개 유사문헌 쌍·부분 재현/유추 관계 분리, 이용자 효과 미측정 |
 | 로드맵 | 기존 6단계·버전·승격과 보류 기준 | **v0.2.3** [정본](../research/PI_ROADMAP_OPERATIONAL_GATES_V0_2_3_EN_KO.md) | — | 운영 설계 |
 | DCA-0 | 악용 가속보다 방어·검증 효과를 높일 조건 측정 | 미지정 | — | 실제 피해감소 인과효과 미확인 |
 | DCA-1 | 적응형 공격·피해 전가·동기 미식별 반례 검사 | **v0.2.0** [정본](../research/DCA1_ADAPTATION_DISPLACEMENT_IDENTIFICATION_2026-10-20_KO.md) | — | 선행문헌·합성 반례, 현실 인과검증 없음 |
