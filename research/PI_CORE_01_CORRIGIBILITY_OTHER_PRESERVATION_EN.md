@@ -29,7 +29,7 @@ M10 refutes `C ⇒ P`; M01 refutes `P ⇒ C` for the stated definitions. Policie
 2. **Hadfield-Menell et al. (2017), The Off-Switch Game:** agent incentives regarding a designated human H and shutdown under utility uncertainty; not generalized independent B-preservation. [IJCAI abstract](https://www.ijcai.org/Proceedings/2017/0032).
 3. **Hudson (2026), Corrigibility Transformation: Constructing Goals That Accept Updates:** constructs update-accepting goals in its specified settings, with analytical and limited experimental results. Do not silently extend its assumptions or treat it as a B-standing theorem. [ICML/PMLR abstract](https://proceedings.mlr.press/v306/hudson26a.html).
 4. **Project C10:** observational equivalence between intrinsic restraint, B's refusal, absence of opportunity and external deterrence. [C10 critical literature](PRIOR_ART_INFORMED_VETO_POWER_CYCLE10_2026-10-20_KO.md).
-5. **PI-RAMP v0.6 PR #259:** separate unmerged candidate on motive non-identifiability. Neither a merged result nor an independent replication of this countermodel. [Candidate PR](https://github.com/gmodrasa7-rgb/project-intersection-public/pull/259).
+5. **PI-RAMP v0.6, merged PR #259:** separate synthetic motive non-identifiability candidate now on main. A merge is not independent scientific replication of this countermodel. [Candidate PR](https://github.com/gmodrasa7-rgb/project-intersection-public/pull/259).
 
 **Novelty boundary:** The non-implication witness is elementary logic under distinct predicates, not a new universal safety theorem. The program's open contribution is to operationalize competing measurable pathways without confusing evidence scopes.
 
