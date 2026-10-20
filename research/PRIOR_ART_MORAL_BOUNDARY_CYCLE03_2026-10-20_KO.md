@@ -98,7 +98,7 @@ D_A,B(t) = h(R_A,B, preferences_A, exploitative_payoffs_X, viable_exit_B, availa
 ### 2.1 Research proposition C03-R (untested conditional, not empirical claim)
 For the *same B* with attributes fixed, compare A's choice under counterbalanced states:
 ```
-Own लाभ from extraction: zero / positive / independently dominant
+Actor A's own benefit from extraction: zero / positive / independently dominant
 Perceived B category: human / nonhuman biological / synthetic / unknown
 Information on B sentience: constant / positive / negative / genuinely unavailable
 Moral relevance label: explicitly protected / unclassified / instrumentally 'replaceable'
