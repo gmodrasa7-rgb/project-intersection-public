@@ -1,7 +1,7 @@
 {
   "registry_id": "PI-FLR",
   "schema_version": "0.1.0",
-  "release_version": "0.1.2",
+  "release_version": "0.1.3",
   "as_of": "2026-10-21",
   "korean_name": "오류·학습·복구 재귀원장",
   "english_name": "Failure–Learning–Repair Registry",
@@ -52,6 +52,13 @@
       "detector": "tools/pi_flr_experiment_identity.py::audit_identity",
       "workflow": ".github/workflows/pi-flr-integrity.yml",
       "mutation_test": "test_regression_e010_identity_collision"
+    },
+    {
+      "id": "FLR-C05",
+      "title": "Whole-repository Markdown crosslink gate including unmerged candidates",
+      "detector": "tools/check_public_navigation.py::find_bad_links",
+      "workflow": ".github/workflows/pi-flr-integrity.yml",
+      "mutation_test": "test_regression_missing_branch_link_target"
     }
   ],
   "cases": [
@@ -382,6 +389,50 @@
           "kind": "LIMITATION_RECORDED",
           "evidence_url": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/knowledge/language-edition-register.json",
           "note": "Candidate branch register omission is historical; current merged register status must not be inferred from the old email."
+        }
+      ]
+    },
+    {
+      "id": "FLR-0007",
+      "title_ko": "PI-CORE RG-0 후보 영문 2개 문서의 미존재 C10 대상 링크",
+      "title_en": "Two RG-0 draft EN documents linked to a crosswalk missing in the failing commit",
+      "category": "REFERENCE_INTEGRITY",
+      "root_cause": "At GitHub Actions run 39479053663, two RG-0 v0.7 English candidate Markdown files linked to research/PI_CORE_01_RG0_C10_CROSSWALK_V0_7_EN.md which was absent in that checkout.",
+      "trigger": "PR #250 candidate modifications to RG-0 specification and six test cases before publication reference completeness.",
+      "observable": "check_public_navigation.py --strict-all reported unresolved local links: 2: research/PI_CORE_01_RG0_SIX_CASES_V0_7_EN.md:6 and research/PI_CORE_01_RG0_SPEC_V0_7_EN.md:6, both to the same missing C10 crosswalk.",
+      "impact": "Candidate's public governance workflow failed; branch document bundle was not link-complete at that commit. This is not a currently published main broken link.",
+      "counterfactual": "Resolving every newly introduced local link against the candidate's complete head before opening PR detects both missing targets and rejects partial bundles.",
+      "repair": "At the later inspected PR #250 head the crosswalk target exists and both references resolve; this is a candidate-state observation only, not evidence of merge or successful current PR CI. Add a dedicated negative mutation and an all-PR navigation gate.",
+      "preventive_control_ids": [
+        "FLR-C05"
+      ],
+      "regression_test": "test_regression_missing_branch_link_target",
+      "limitations": [
+        "PR #250 is open and unmerged; main has none of these RG-0 v0.7 English files.",
+        "An old failed run does not prove present candidate still fails.",
+        "No independent semantic or scientific verification."
+      ],
+      "events": [
+        {
+          "seq": 1,
+          "date": "2026-10-21",
+          "kind": "FAILURE_OBSERVED",
+          "evidence_url": "https://github.com/gmodrasa7-rgb/project-intersection-public/actions/runs/39479053663",
+          "note": "Exact job log reported two unresolved RG-0 v0.7 links to the missing C10 English crosswalk at lines 6."
+        },
+        {
+          "seq": 2,
+          "date": "2026-10-21",
+          "kind": "ROOT_CAUSE_REVIEWED",
+          "evidence_url": "https://github.com/gmodrasa7-rgb/project-intersection-public/pull/250",
+          "note": "Source is open RG-0 v0.7 PR #250; GitHub candidate head now contains both source files and C10 crosswalk, while main lacks the draft."
+        },
+        {
+          "seq": 3,
+          "date": "2026-10-21",
+          "kind": "LIMITATION_RECORDED",
+          "evidence_url": "https://github.com/gmodrasa7-rgb/project-intersection-public/pull/250",
+          "note": "Current draft link target presence does not imply a merged result or independence of scientific claims."
         }
       ]
     }
