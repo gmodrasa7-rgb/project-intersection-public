@@ -367,11 +367,11 @@
     }
   ],
   "metrics": {
-    "markdown_total": 168,
+    "markdown_total": 169,
     "filename_classes": {
       "UNMARKED_LANGUAGE_UNVERIFIED": 42,
       "LEGACY_MIXED_READER_ENTRY": 2,
-      "KO_SUFFIX_UNVERIFIED": 79,
+      "KO_SUFFIX_UNVERIFIED": 80,
       "ORDERED_BILINGUAL_FOUNDER_OR_GOVERNANCE": 2,
       "EN_SUFFIX_UNVERIFIED": 21,
       "COMBINED_NAMING_UNVERIFIED": 22
@@ -1299,6 +1299,12 @@
       "content_equivalence": "NOT_REVIEWED"
     },
     {
+      "path": "research/PRIOR_ART_VOICE_VETO_AUTONOMY_CYCLE12_2026-10-20_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
       "path": "research/PRIOR_ART_VOLUNTARY_COHABITATION_POWER_CYCLE04_2026-10-20_KO.md",
       "filename_class": "KO_SUFFIX_UNVERIFIED",
       "counterpart_path": null,
@@ -1610,6 +1616,16 @@
       "new_edition_pairs": 0,
       "editorial_notes": "C11 source-critical original-author study report added to main concurrently after PI-RAMP branch fork; registered without changing its substance, source attribution, or claiming translation parity.",
       "reviewer_actions": "Independent source and bibliographic deduplication, study/report grouping, and scientific claim checks remain pending."
+    },
+    {
+      "as_of": "2026-10-20",
+      "status": "CONCURRENT_SOURCE_REGISTERED_NOT_SCIENTIFICALLY_VERIFIED",
+      "new_documents": [
+        "research/PRIOR_ART_VOICE_VETO_AUTONOMY_CYCLE12_2026-10-20_KO.md"
+      ],
+      "new_edition_pairs": 0,
+      "editorial_notes": "Registered ongoing C12 original-author report without modifying its source claims or implying a second research study per report.",
+      "reviewer_actions": "Verify DOI and original-text support separately."
     }
   ],
   "path_layout_policy": "Keep the project root entry-only; bilingual full research editions live in existing research/ and their original historical combined documents retain stable root URLs."
