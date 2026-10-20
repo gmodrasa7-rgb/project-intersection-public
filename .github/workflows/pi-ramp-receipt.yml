@@ -4,8 +4,11 @@ on:
   pull_request:
     paths:
       - "protocols/PI_RAMP_V0_3_*.md"
+      - "protocols/PI_RAMP_V0_4_EN_KO.md"
+      - "research/PRIOR_ART_*2026-10-20.json"
       - "evaluation/pi_ramp/**"
       - "tools/check_pi_ramp_receipts.py"
+      - "tools/audit_prior_art_c01_c12_identity.py"
       - ".github/workflows/pi-ramp-receipt.yml"
   push:
     branches: [main]
@@ -31,3 +34,7 @@ jobs:
         run: python tools/check_pi_ramp_receipts.py
       - name: Challenge nine invalid receipts
         run: python tools/check_pi_ramp_receipts.py --self-test
+      - name: Audit original-author literature fingerprints, source lineage and near-title contrast
+        run: python tools/audit_prior_art_c01_c12_identity.py
+      - name: Refuse 11 dangerous record collisions and unjustified study-dedup claims
+        run: python tools/audit_prior_art_c01_c12_identity.py --self-test
