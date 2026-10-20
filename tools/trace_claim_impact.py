@@ -33,6 +33,16 @@ EXPECTED_CLAIMS = {
     "CL-RAMP-EFFECT": "EFFECT_UNMEASURED",
 }
 EXPECTED_VERSIONS = {"RVD": "0.2.0", "PI-RAMP": "0.4.0", "DCA-1": "0.2.0"}
+# Independent contract sentinels for selected material dependencies.
+# These are necessary known edges, never a proof that no other edge is missing.
+REQUIRED_EDGES = {
+    ("CL-E008-GAP", "CL-VC-HARD"),
+    ("CL-E009-NEG", "CL-VC-HARD"),
+    ("CL-DCA1-TRANSFER", "CL-VC-HARD"),
+    ("CL-RVD-ORIGINAL", "CL-RVD-MOTIVE"),
+    ("CL-RVD-MOTIVE", "CL-VC-HARD"),
+}
+
 REQUIRED_SOURCE_PATHS = {
     "experiments/e008/EXECUTABILITY_AUDIT.json",
     "experiments/e009/RESULT.json",
@@ -159,6 +169,13 @@ def inspect(data, source_override=None, registry_override=None):
             errs.append(f"{ident}: ASSERTION_UNREADABLE")
         if not isinstance(s.get("caveat"), str) or not s["caveat"].strip():
             errs.append(f"{ident}: LIMITATION_ERASED")
+    recorded_edges = {(e.get("from"), e.get("to")) for e in edges}
+    for a, b in sorted(REQUIRED_EDGES - recorded_edges):
+        errs.append(f"CRITICAL_KNOWN_DEPENDENCY_MISSING: {a} -> {b}")
+    if not isinstance(data.get("completeness_limit"), str) or "cannot certify" not in data["completeness_limit"]:
+        errs.append("GRAPH_COMPLETENESS_LIMIT_NOT_VISIBLE")
+    if not isinstance(data.get("original_author_antecedents"), list) or len(data["original_author_antecedents"]) < 4:
+        errs.append("PRIOR_ORIGINAL_METHODS_NOT_ATTRIBUTED")
     all_nodes = set(sid) | set(cid)
     adj = {node: [] for node in all_nodes}
     incoming = {node: 0 for node in all_nodes}
@@ -224,6 +241,8 @@ def self_test(data):
     mutate("create-cycle", lambda x: x["edges"].append({"id":"EDGE-999","from":"CL-VC-HARD","to":"CL-RVD-MOTIVE","relation":"reassessment_dependency","meaning":"NOT proof"}))
     mutate("erase-source-limitation", lambda x: x["sources"][0].update(caveat=""))
     mutate("introduce-unscoped-relation", lambda x: x["edges"][0].update(relation="causally_proves"))
+    mutate("remove-load-bearing-known-edge", lambda x: x["edges"].remove(next(e for e in x["edges"] if e["from"] == "CL-E009-NEG" and e["to"] == "CL-VC-HARD")))
+    mutate("claim-complete-lineage", lambda x: x.update(completeness_limit="Known edges explain everything"))
     mutate("destroy-edge-direction", lambda x: x["edges"][0].update(to="SRC-E009-RESULT"))
     bad = {data["sources"][0]["path"]: b'{"full_decision_benchmark_ready_cases":1}'}
     mutate("fabricate-E008-result", lambda x: None, bad)
