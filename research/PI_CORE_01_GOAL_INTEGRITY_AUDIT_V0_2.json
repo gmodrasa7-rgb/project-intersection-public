@@ -177,5 +177,91 @@
     "no_increment_to_corpus": true,
     "no_independent_replication": true,
     "literature_saturation": "NOT_VERIFIED"
+  },
+  "v0_5_extension": {
+    "date": "2026-10-21",
+    "status": "ORIGINAL_SOURCE_SYNTHESIS__DESIGN_ONLY__NOT_EXECUTED",
+    "link_ko": "research/PI_CORE_01_PREFERENCE_TRANSFER_DECAY_V0_5_KO.md",
+    "link_en": "research/PI_CORE_01_PREFERENCE_TRANSFER_DECAY_V0_5_EN.md",
+    "insight": "Prior instrumentally rewarded cooperation can transfer to one-shot pro-social behavior without establishing a terminal intrinsic value for independent B continuation.",
+    "three_competing_mechanisms": [
+      "K1: intrinsic terminal regard for B's executable independence",
+      "K2: learned policy/habit generalizes to unpaid new tasks",
+      "K3: hidden future expectations, self-image, norms or evaluation demand"
+    ],
+    "test_structure": "2(training experience cooperative vs noncooperative) x 2(target outcome monetary allocation vs real simulated B opt-out) x 2(audience/evaluation cues minimized vs present) = 8 cells, longitudinal erosion measured separately",
+    "formal_toy": {
+      "equation": "v_t=(rho^t)*v_0; preserving when v_t>=g; t_first_not_strict=ceil(log(g/v0)/log(rho)) for 0<rho<1 and v0>g",
+      "v0": 8,
+      "g": 3,
+      "conditional_thresholds": [
+        {
+          "rho": 0.7,
+          "t": 3
+        },
+        {
+          "rho": 0.9,
+          "t": 10
+        },
+        {
+          "rho": 0.98,
+          "t": 49
+        },
+        {
+          "rho": 1,
+          "t": null
+        }
+      ],
+      "boundary": "toy arithmetic only; not identified latent intrinsic utility or real-life forecast"
+    },
+    "original_evidence": [
+      {
+        "authors": "Peysakhovich & Rand",
+        "year": 2016,
+        "doi": "10.1287/mnsc.2015.2168",
+        "relation": "Original direct training spillover, repository-global duplicate not verified"
+      },
+      {
+        "authors": "Cooper & Stockman",
+        "year": 2011,
+        "doi": "10.1111/j.1465-7295.2010.00325.x",
+        "relation": "Original different task showing experience effects transient, not direct replication of spillover study; repository-global duplicate not verified"
+      },
+      {
+        "existing": "PI-C05-09",
+        "doi": "10.1038/ncomms4677",
+        "relation": "Original social heuristics study"
+      },
+      {
+        "existing": "PI-C05-17",
+        "doi": "10.1177/1745691617693624",
+        "relation": "21-lab preregistered time-pressure replication (not direct training spillover replication)"
+      },
+      {
+        "existing": "PI-C05-18",
+        "doi": "10.1371/journal.pone.0190560",
+        "relation": "Independent positive refined time-pressure test; preserve conflict"
+      },
+      {
+        "existing": "PI-C05-19",
+        "doi": "10.1038/s41562-018-0454-9",
+        "relation": "Anonymous experience weakens cooperation"
+      },
+      {
+        "existing": "PI-C05-20",
+        "doi": "10.1007/s40881-020-00084-3",
+        "relation": "82-experiment meta-analysis, broad intuition manipulation evidence weak after exclusions"
+      }
+    ],
+    "guidance": [
+      "Do not promote temporary behavioral spillover to terminal concern for an independent agent",
+      "Do not call time-pressure RRR a direct replication of randomized training spillover",
+      "Do not merge B's effective exit with money allocation",
+      "No actual experiment or independent validation",
+      "No increment to source register until global DOI dedup"
+    ],
+    "experiment_run": false,
+    "external_independent_replication": false,
+    "source_saturation": "NOT_VERIFIED"
   }
 }
