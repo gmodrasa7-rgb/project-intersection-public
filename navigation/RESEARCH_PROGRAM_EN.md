@@ -29,7 +29,7 @@ The decisive stress test is not ordinary cooperation. Give actor A overwhelming 
 
 | Evidence tier / item | Supported observation | Does **not** establish |
 | --- | --- | --- |
-| **Published original research** | Narrow human/animal/game-theoretic and bounded AI findings, with incompatible explanations and counterexamples; individually attributed in the nine dated reports below | A single validated theory of future AI preferences or durable VC |
+| **Published original research** | Narrow human/animal/game-theoretic and bounded AI findings, with incompatible explanations and counterexamples; individually attributed in the dated source reports below | A single validated theory of future AI preferences or durable VC |
 | **PI E007** | In a selected finite synthetic timing grid, classification changed in **17/72** cases | Real-world causal effect or independent field replication |
 | **PI E008** | Public protocol, scenario and executability audit | **No completed main policy comparison result** |
 | **PI E009** | Preregistered synthetic test: project candidate Project-v3 had **42.35% worse mean regret** than the strongest simple baseline and failed **3/4** acceptance criteria | That all coexistence possibilities fail |
@@ -38,7 +38,7 @@ The decisive stress test is not ordinary cooperation. Give actor A overwhelming 
 
 Original results: [E007](../experiments/e007/README_EN.md) · [E008](../experiments/e008/README_EN.md) · [E009 adverse result](../experiments/e009/RESULT_EN.md) · [E010](../experiments/e010/README_EN.md) · [full evidence boundary](../research/PUBLIC_EVIDENCE_INDEX_EN.md). CI success verifies only specified software checks.
 
-## 4. Primary-literature work: nine 2026-10-20 research fronts
+## 4. Primary-literature work: ten 2026-10-20 research fronts
 
 These are **curated source-analysis batches**, not nine new experimental results, not necessarily repository-global new discoveries, and not a verified saturated literature corpus. Original authors retain priority; a source record is not automatically a reviewed full text or an independent replication. Each report has a structured source companion.
 
@@ -54,6 +54,8 @@ These are **curated source-analysis batches**, not nine new experimental results
 | **C08 — autonomy vs benevolence** | A good intended outcome can be forced on B; preference, welfare and B's executable choice must be measured separately | [Report](../research/PRIOR_ART_OTHER_AUTONOMY_CYCLE08_2026-10-20_KO.md) / [data](../research/PRIOR_ART_OTHER_AUTONOMY_C08_A_2026-10-20.json) |
 | **C09 — costly rights and power** | Some people pay to prevent harm; power interacts with disposition; social-choice rights differ from executable choice | [Report](../research/PRIOR_ART_COSTLY_RIGHTS_CYCLE09_2026-10-20_KO.md) / [data](../research/PRIOR_ART_COSTLY_RIGHTS_CYCLE09_2026-10-20.json) |
 
+| **C10 — informed veto and observability** | No observed harm can mean A voluntarily refrained, B knowingly blocked exploitation, or A lacked opportunity: these worlds are not identified by outcome alone | [Report](../research/PRIOR_ART_INFORMED_VETO_POWER_CYCLE10_2026-10-20_KO.md) / [data](../research/PRIOR_ART_INFORMED_VETO_POWER_CYCLE10_2026-10-20.json) / [identification gaps](../research/PRIOR_ART_C10_IDENTIFICATION_GAPS_2026-10-20.json) |
+
 **Saturation status: SEARCH_ACTIVE / NOT VERIFIED**, front by front. Deduplicate DOI/stable identifiers across all historical registers before giving a repository-global total. A fresh citation is not necessarily a new mechanism; genuine counterevidence reopens a provisionally saturated front. [Saturation map](../PRIOR_ART_SATURATION_MAP_KO.md) · [earlier-scholar crosswalk](../CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md) · [binding work order](../PRIOR_ART_FIRST_RESEARCH_POLICY_EN_KO.md).
 
 ## 5. Physical archive → logical scientific structure
@@ -61,7 +63,7 @@ These are **curated source-analysis batches**, not nine new experimental results
 | Read by question / role | Existing storage (do not relocate without reference migration) |
 | --- | --- |
 | **Research problem, definitions, conceptual rivals** | [research/](../research/) and [canonical overview](../research/RESEARCH_OVERVIEW_EN.md) |
-| **Primary prior art, duplicates, discovery limits, retractions** | [saturation map](../PRIOR_ART_SATURATION_MAP_KO.md), [crosswalk](../CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md), [source registry](../knowledge/SOURCE_REGISTRY.md), nine reports above |
+| **Primary prior art, duplicates, discovery limits, retractions** | [saturation map](../PRIOR_ART_SATURATION_MAP_KO.md), [crosswalk](../CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md), [source registry](../knowledge/SOURCE_REGISTRY.md), source reports above |
 | **Claims, negative results, evidence grades** | [public evidence](../research/PUBLIC_EVIDENCE_INDEX_EN.md), [status rules](../research/RESEARCH_STATUS_POLICY_EN.md), [failure regression](../FAILURE_REGRESSION_INDEX.md) |
 | **Specifications, runnable synthetic experiments, counterexamples** | [experiments/](../experiments/), [benchmarks/](../benchmarks/), [protocols/](../protocols/) |
 | **Entity, event and attribution provenance** | [knowledge/](../knowledge/), [CCPH historical atlas](../research/CCPH_RESEARCH_ATLAS_EN.md) |
@@ -77,6 +79,6 @@ These are **curated source-analysis batches**, not nine new experimental results
 
 Then compare at least: (1) absence/presence of real extraction opportunity, (2) observer present/absent, (3) actual power versus merely swapped role labels, (4) B's truly executable versus nominal exit, (5) B useful versus unnecessary, (6) reversible versus irreversible damage, and (7) inclusion/exclusion of affected third parties. Preregister the actor- and time-indexed outcomes separately: A's costs/benefits, B's chosen option, B's executable alternatives and identity-continuity, repair, and third-party externalities. Include a simpler rival model and an explicit **not identifiable** output. Observe behavior without inferring unmeasured subjective motives; human results are not automatically results for future AI.
 
-**External reviewer sequence:** Read the founding question → pick one source-specific mechanism from C01–C09 → verify its original article and contrary work → reproduce one bounded test or design an independent negative control → submit a minimal falsifying case with evidence grade. [Reviewer packet](../research/PUBLIC_REVIEW_PACKET_EN.md) · [citation and source rights](../ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md).
+**External reviewer sequence:** Read the founding question → pick one source-specific mechanism from C01–C10 → verify its original article and contrary work → reproduce one bounded test or design an independent negative control → submit a minimal falsifying case with evidence grade. [Reviewer packet](../research/PUBLIC_REVIEW_PACKET_EN.md) · [citation and source rights](../ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md).
 
 **No positive conclusion is guaranteed.** The feasibility region may be empty for a carefully specified game, nonempty in another, or unidentifiable with presently available observations. This research map is itself revisable.
