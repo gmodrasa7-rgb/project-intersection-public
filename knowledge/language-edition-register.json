@@ -412,6 +412,21 @@
         "Two versions discuss the same formal R14–R17 scope, but independent semantic translation parity remains unverified.",
         "No RVD new field experiment; programming witnesses are illustrative arithmetic, not observed agent motivation."
       ]
+    },
+    {
+      "id": "PI-MER-RVD-CYCLE05-20261021",
+      "original_1_english": "research/RVD_CYCLE05_EXCLUSION_TRANSPORT_SENSITIVITY_2026-10-21_EN.md",
+      "original_2_korean": "research/RVD_CYCLE05_EXCLUSION_TRANSPORT_SENSITIVITY_2026-10-21_KO.md",
+      "kind": "conceptual_causal_exclusion_sensitivity_and_transport_bound",
+      "structural_pair_present": true,
+      "meaning_review_status": "NOT_INDEPENDENTLY_VERIFIED",
+      "original_conception_language": "KO_HUMAN_LED_QUESTION_AI_DRAFT",
+      "independent_review_receipt": null,
+      "one_sided_edit_exception": null,
+      "known_divergences": [
+        "Independent EN/KO semantic review not completed.",
+        "Toy randomized Z does not identify a real agent's intrinsic value or prove transportability."
+      ]
     }
   ],
   "legacy_priority_unresolved": [
@@ -453,13 +468,13 @@
     }
   ],
   "metrics": {
-    "markdown_total": 192,
+    "markdown_total": 194,
     "filename_classes": {
       "UNMARKED_LANGUAGE_UNVERIFIED": 42,
       "LEGACY_MIXED_READER_ENTRY": 2,
-      "KO_SUFFIX_UNVERIFIED": 88,
+      "KO_SUFFIX_UNVERIFIED": 89,
       "ORDERED_BILINGUAL_FOUNDER_OR_GOVERNANCE": 2,
-      "EN_SUFFIX_UNVERIFIED": 28,
+      "EN_SUFFIX_UNVERIFIED": 29,
       "COMBINED_NAMING_UNVERIFIED": 30
     },
     "meaning_verified_pairs": 0,
@@ -1607,6 +1622,18 @@
       "content_equivalence": "NOT_REVIEWED"
     },
     {
+      "path": "research/RVD_CYCLE05_EXCLUSION_TRANSPORT_SENSITIVITY_2026-10-21_EN.md",
+      "filename_class": "EN_SUFFIX_UNVERIFIED",
+      "counterpart_path": "research/RVD_CYCLE05_EXCLUSION_TRANSPORT_SENSITIVITY_2026-10-21_KO.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "research/RVD_CYCLE05_EXCLUSION_TRANSPORT_SENSITIVITY_2026-10-21_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": "research/RVD_CYCLE05_EXCLUSION_TRANSPORT_SENSITIVITY_2026-10-21_EN.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
       "path": "research/TERMINOLOGY_FIVE_AXES_V0_1_EN.md",
       "filename_class": "EN_SUFFIX_UNVERIFIED",
       "counterpart_path": "research/TERMINOLOGY_FIVE_AXES_V0_1_KO.md",
@@ -1968,6 +1995,17 @@
       "new_edition_pairs": 1,
       "editorial_notes": "RVD R14-R17: policy/motive identifiability separation, hypothetical auxiliary-gain intervention, conditional robust margin and executable other-agent exit. No claim of published new theorem, AI feeling or field proof.",
       "reviewer_actions": "Audit primary author papers, EN/KO semantic equivalence, utility and intervention assumptions; conduct ethical preregistered tests under a real, independently feasible B exit."
+    },
+    {
+      "as_of": "2026-10-21",
+      "status": "RVD_V050_EXCLUSION_AND_TRANSPORT_PROPOSAL_UNTESTED",
+      "new_documents": [
+        "research/RVD_CYCLE05_EXCLUSION_TRANSPORT_SENSITIVITY_2026-10-21_EN.md",
+        "research/RVD_CYCLE05_EXCLUSION_TRANSPORT_SENSITIVITY_2026-10-21_KO.md"
+      ],
+      "new_edition_pairs": 1,
+      "editorial_notes": "R18–R21 randomized intervention pathway nonidentification, exclusion leakage sensitivity outer bounds, target support/transport assumptions and original B feasible exit. Synthetic and not observed AI behavior.",
+      "reviewer_actions": "Independently audit authors' full texts, semantically check bilingual papers, preregister ethically valid actions, no claim promotion."
     }
   ],
   "path_layout_policy": "Keep the project root entry-only; bilingual full research editions live in existing research/ and their original historical combined documents retain stable root URLs."

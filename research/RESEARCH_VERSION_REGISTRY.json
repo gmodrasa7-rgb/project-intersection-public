@@ -135,14 +135,14 @@
       "id": "RVD",
       "title": "Resonance–Value Dynamics",
       "what": "Candidate study of relational value and motivational change under coexistence and exploitation",
-      "how": "Distinguish motive-identification from decision-relevant behavior: test reward-split invariance, policy divergence under independently justified interventions, conditional robust margins over model/environment sets, and B's executable exit.",
-      "current_version": "0.4.0",
+      "how": "Separate randomized total behavioral effects from identity-value mediation; sensitivity bound exclusion leakage; explicitly evaluate target environment support and original B's executable refusal, exit and recovery.",
+      "current_version": "0.5.0",
       "candidate_version": null,
       "publication_state": "MAIN",
       "evidence_state": "CONCEPTUAL_HYPOTHESIS_UNTESTED",
       "source": "research/RVD_VERSION_MANIFEST.json",
       "candidate_pr": null,
-      "current_source_blob_sha": "52c4fd4856847fddb39e79855a78eeb55ef04d19"
+      "current_source_blob_sha": "fb849aaca4fa8f8746cc200046304e7f8bec4515"
     },
     {
       "id": "PI-RAMP",
@@ -277,5 +277,6 @@
   },
   "audit_limitation": "Live PR states and source blobs may change; automated checks are necessary for currency, but cannot prove completeness of historical or private research. Main has advanced independently during this audit (RVD v0.2.0; DCA-1 v0.2.0). These records are a dated snapshot, not a live guarantee.",
   "revision_note_rvd_v0_3_0": "Version metadata updated from 0.2.0 to 0.3.0 following Cycle 03 conceptual/partial-identification specification. No experimental evidence promoted. Previous registry value retained in Git history; claim impact overlay reviewed and rebased.",
-  "revision_note_rvd_v0_4_0": "RVD spec extension only, R14-R17. Previous 0.3.0 preserved in Git history and source-change review. No new observed agents, field validation, AI subjective reports, or scientific confidence promotion."
+  "revision_note_rvd_v0_4_0": "RVD spec extension only, R14-R17. Previous 0.3.0 preserved in Git history and source-change review. No new observed agents, field validation, AI subjective reports, or scientific confidence promotion.",
+  "revision_note_rvd_v0_5_0": "RVD R18–R21 causal-exclusion and transportability conceptual protocol added. v0.4.0 retained in Git history. No original experimental or independent evidence grade promotion."
 }
