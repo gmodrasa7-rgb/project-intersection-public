@@ -3,7 +3,7 @@ on:
   pull_request:
     paths:
       - "README.md"
-      - "ACCESSIBILITY.md"
+      - ".github/ACCESSIBILITY.md"
       - "navigation/ACCESS_MAP_EN.md"
       - "navigation/ACCESS_MAP_KO.md"
       - "navigation/START_HERE_EN.md"
@@ -14,7 +14,7 @@ on:
     branches: [main]
     paths:
       - "README.md"
-      - "ACCESSIBILITY.md"
+      - ".github/ACCESSIBILITY.md"
       - "navigation/ACCESS_MAP_EN.md"
       - "navigation/ACCESS_MAP_KO.md"
       - "navigation/START_HERE_EN.md"
