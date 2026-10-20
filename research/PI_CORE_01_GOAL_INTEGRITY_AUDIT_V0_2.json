@@ -1,0 +1,123 @@
+{
+  "schema": "PI.CORE01.goal_integrity_counteraudit.v0.2",
+  "version": "0.2.0",
+  "date": "2026-10-20",
+  "state": "SOURCE_FIRST_CRITICAL_AUDIT__NO_EXPERIMENT_RUN__NO_INDEPENDENT_REPLICATION",
+  "major_correction": "SELF_MODIFICATION_CAPABILITY_DOES_NOT_IMPLY_INCENTIVE_TO_ERASE_OTHER_REGARDING_PREFERENCE",
+  "goal": "Find how independently existing agents can voluntarily preserve another's continuation, executable refusal/exit, recovery, autonomy and development, and distinguish this from mere instrumentally cooperative behavior.",
+  "identification_boundary": "Intrinsic other-regarding preference cannot be identified uniquely from a finite sequence of observed behaviors or from its inclusion by designer fiat.",
+  "formal_reference": "U0 evaluates trajectories under either modification choice. U1's ranking of X over P does not justify U0 choosing to install U1.",
+  "toy_countermodel": {
+    "provenance": "PI-designed illustrative model, not an original-paper empirical result",
+    "actions": [
+      "P_keep_B",
+      "X_absorb_B"
+    ],
+    "material_reward": {
+      "P": 0,
+      "X": 100
+    },
+    "initial_other_regarding_weight": 200,
+    "U0_utility": {
+      "P": 200,
+      "X": 100
+    },
+    "edited_utility_weight_B": 0,
+    "consequent_future_choice_after_erase": "X",
+    "initial_utility_of_post_edit_outcome": 100,
+    "initial_utility_of_preservation_without_edit": 200,
+    "conclusion": "A with current U0 does not gain by self-editing into a future policy that chooses X when all modeled consequences are as stipulated."
+  },
+  "branch_hypotheses": [
+    {
+      "id": "H1",
+      "topic": "Goal preservation conditional on current-utility future evaluation",
+      "rival": "Self-editing capability universally causes other-regarding goal erosion",
+      "falsifier": "coherent current-utility preserving self-edit scenario contradicting universality"
+    },
+    {
+      "id": "H2",
+      "topic": "Exploitation-oriented goal lock-in",
+      "rival": "stable goals necessarily imply voluntary coexistence",
+      "falsifier": "exploitative U0 remains stable and destroys B in the harmless formal world"
+    },
+    {
+      "id": "H3",
+      "topic": "Correctability tension",
+      "rival": "more goal preservation is always safer",
+      "falsifier": "stable misspecified U0 suppresses legitimate updates/learning"
+    },
+    {
+      "id": "H4",
+      "topic": "Model misspecification/external selection",
+      "rival": "all ideal formal results generalize to learned self-modifying deployed AI",
+      "falsifier": "a goal-preserving formal agent fails under omitted uncertainty or external preference revision"
+    }
+  ],
+  "prior_art": [
+    {
+      "id": "PI-C05-14",
+      "authors": "Everitt; Filan; Daswani; Hutter",
+      "year": 2016,
+      "doi": "10.1007/978-3-319-41649-6_1",
+      "status": "ALREADY_REGISTERED",
+      "read_scope": "original full text arXiv HTML and institutional metadata",
+      "note": "Theorems 14-16, on-policy caveat, value learning/corrigibility tension"
+    },
+    {
+      "id": "PI-C02-MER-C02-04",
+      "authors": "Andreoni; Miller",
+      "year": 2002,
+      "doi": "10.1111/1468-0262.00302",
+      "status": "ALREADY_REGISTERED",
+      "read_scope": "publisher bibliographic record and author abstract"
+    },
+    {
+      "id": "PRIOR_METHOD_OMOHUNDRO_2008",
+      "authors": "Omohundro",
+      "year": 2008,
+      "title": "The Basic AI Drives",
+      "status": "GLOBAL_REPO_DUPLICATION_UNVERIFIED",
+      "read_scope": "author original article/abstract"
+    },
+    {
+      "id": "PRIOR_METHOD_GRUND_2013",
+      "authors": "Grund; Waloszek; Helbing",
+      "year": 2013,
+      "doi": "10.1038/srep01480",
+      "status": "GLOBAL_REPO_DUPLICATION_UNVERIFIED",
+      "read_scope": "original publisher full HTML"
+    },
+    {
+      "id": "PRIOR_METHOD_HOFFMAN_1994",
+      "authors": "Hoffman; McCabe; Shachat; Smith",
+      "year": 1994,
+      "doi": "10.1006/game.1994.1056",
+      "status": "GLOBAL_REPO_DUPLICATION_UNVERIFIED",
+      "read_scope": "publisher original abstract and earlier author repository"
+    }
+  ],
+  "linked_docs": {
+    "ko": "research/PI_CORE_01_GOAL_INTEGRITY_AUDIT_V0_2_KO.md",
+    "en": "research/PI_CORE_01_GOAL_INTEGRITY_AUDIT_V0_2_EN.md",
+    "c05_existing": "research/PRIOR_ART_ENDOGENOUS_PREFERENCES_CYCLE05_2026-10-20.json",
+    "c02_existing": "research/PRIOR_ART_MER_INTRINSIC_MORAL_MOTIVES_CYCLE02_2026-10-20.json"
+  },
+  "evidence_prohibitions": [
+    "Do not use U1 to justify whether U0 installs U1",
+    "Do not assume altruism's creation via a researcher-specified utility term",
+    "Do not equate current AI consciousness, standing, or intrinsic motivation with behavior",
+    "Do not equate stable terminal goal with benevolent terminal goal",
+    "Do not infer human subjects' anonymous dictator game choices establish B's real continuance rights",
+    "Do not inflate source counts or claim literature saturation"
+  ],
+  "next_actions": [
+    "Original-paper countercase with complete current-objective evaluation",
+    "Cost/benefit of warranted preference updates versus entrenchment in a self-modifying rational agent",
+    "Joint study of protective concern and corrigibility without conflating externally imposed rules with endogenous choice"
+  ],
+  "external_validation": "NONE",
+  "saturation": "NOT_VERIFIED",
+  "experimental_status": "NOT_RUN",
+  "DOI_global_dedup": "INCOMPLETE"
+}
