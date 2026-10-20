@@ -48,7 +48,7 @@ assert 0.2 < 8/9 < 1.0
 print(json.dumps({"model": "DCA-1-two-target-best-response", "version": "1.0",
                   "unit": "arbitrary abstract toy units", "empirical": False,
                   "predefined_parameters": {"A": A.__dict__, "B": B.__dict__},
-                  "outcomes": scenarios, "checks_passed": 8,
+                  "outcomes": scenarios, "scenario_assertions_passed": 8, "input_validation_assertion_sites": 2,
                   "caveats": [
                       "Single perfectly informed attacker, one target per round; no retaliation/defense costs.",
                       "Forced private-payoff maximization; no intrinsic preferences estimated.",
