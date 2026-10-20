@@ -79,6 +79,15 @@ class SignalTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "INVALID_RUN_IDENTITY"):
             self.check([run(1, sha="z")], [alert()])
 
+    def test_rerun_same_id_now_success_requires_conflict_boundary(self):
+        x = self.check([run(1, conclusion="success")], [alert()])
+        self.assertEqual(x["clusters"][0]["verdict"],
+                         "ALERT_CONFLICT_OR_RERUN_SUCCESS_IN_SAMPLE")
+
+    def test_newer_failure_is_not_treated_as_original_failure(self):
+        x = self.check([run(1), run(2, sha="b", conclusion="failure", time="2026-10-20T19:01:00Z")], [alert()])
+        self.assertEqual(x["clusters"][0]["verdict"], "NEWER_FAILURE_IN_SAMPLE")
+
     def test_same_time_uses_run_id_tiebreaker(self):
         x = self.check([run(1), run(2, sha="b", conclusion="success")], [alert()])
         self.assertEqual(x["clusters"][0]["verdict"], "SUPERSEDED_BY_SUCCESS_IN_SAMPLE")
