@@ -46,6 +46,12 @@ jobs:
           assert a["exit_without_viable_successor"]["exit_channel_feasible_in_model"] is False
           assert a["self_audited_only"]["audit_independent_in_model"] is False
           assert r["same_public_statement_opposite_underlying_rights"] is True
+          w=r["independently_computed_worlds"]
+          assert w["protected"]["public"] == w["captured"]["public"]
+          assert w["protected"]["actual"] != w["captured"]["actual"]
+          assert w["captured_with_independent_record"]["public"] != w["protected"]["public"]
+          assert r["negative_control_independent_record_distinguishes"] is True
+          assert r["negative_control_same_outcome_not_opposite_rights"] is True
           assert r["intrinsic_A_preference"]=="UNIDENTIFIED"
           assert r["real_B_exit_right"]=="NOT_TESTED"
           assert r["full_VC"]=="HOLD"
