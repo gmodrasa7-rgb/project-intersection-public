@@ -1,5 +1,7 @@
 # Research Contents — Original 1: English
 
+**Latest bounded research delta (2026-10-21):** [PI-20H v0.1.0 — cross-axis evidence/contradiction audit, conditional motive-identification bound and CI incident](../research/PI_20H_SYNTHESIS_2026-10-21_EN_KO.md). Historical synthesis, not a new empirical validation.
+
 **DCA-2 adversarial evidence:** [Victim-rights and open-world robustness (2026-10-21)](../research/DCA2_EVIDENCE_BRIEF_2026-10-21_EN.md) — specific research evidence, not the program's founding purpose or independent field validation.
 
 <!-- PI-LANGUAGE: en -->
