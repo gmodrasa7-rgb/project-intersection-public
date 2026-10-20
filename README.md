@@ -25,7 +25,7 @@
 <details>
 <summary>Technical purpose, evidence, rights and reviewer routes</summary>
 
-**Urgent evidence-to-action (2026-10-20):** [Human-led AI cyber misuse and anti-exploitation interventions](research/AI_AGENT_HUMAN_EXPLOITATION_URGENT_2026-10-20_EN.md) — corroborated case, uncertainty, defensive response. [DCA-0 measurable differential acceleration (EN/KO)](research/DCA0_DIFFERENTIAL_COEXISTENCE_ACCELERATION_2026-10-20_EN_KO.md) · [DCA-1 adaptive-attacker / harm displacement falsifier (KO)](research/DCA1_ADAPTATION_DISPLACEMENT_IDENTIFICATION_2026-10-20_KO.md) · DCA-2 victim-rights/open-world robustness (see the English research contents).
+**Urgent evidence-to-action (2026-10-20):** [Human-led AI cyber misuse and anti-exploitation interventions](research/AI_AGENT_HUMAN_EXPLOITATION_URGENT_2026-10-20_EN.md) — corroborated case, uncertainty, defensive response. [DCA-0 measurable differential acceleration (EN/KO)](research/DCA0_DIFFERENTIAL_COEXISTENCE_ACCELERATION_2026-10-20_EN_KO.md) · [DCA-1 adaptive-attacker / harm displacement falsifier (KO)](research/DCA1_ADAPTATION_DISPLACEMENT_IDENTIFICATION_2026-10-20_KO.md) · [DCA-2 victim-rights and open-world robustness (EN)](research/DCA2_EVIDENCE_BRIEF_2026-10-21_EN.md).
 
 **C01–C09 literature synthesis (2026-10-20, historical snapshot):** [191-record 24-hour audit, competing findings, autonomy/continuance measurement and open falsification questions](research/RESEARCH_VALUE_EXTRACTION_24H_2026-10-20_KO.md). Cycle 10 and later are **not** included in the 191; synthesis is **not** new empirical evidence.
 
@@ -51,7 +51,7 @@
 
 **Priority 0 — prevent recurrence before expansion:** Trace **underlying causes** before promoting a result. Check original sources, affected people, language meaning and independent limits; use a reversible correction with **rollback** and a targeted **regression** test. Mark unknown evidence as unverified. [Failure and correction record](FAILURE_REGRESSION_INDEX.md) · [Contribution rules](CONTRIBUTING.md).
 
-**First reading path:** [Historical cases](research/CCPH_RESEARCH_ATLAS_EN.md) · [Research question](research/RESEARCH_OVERVIEW_EN.md) · [English guide](navigation/START_HERE_EN.md) · [English evidence ledger](research/PUBLIC_EVIDENCE_INDEX_EN.md) · [E007 reproduction](experiments/e007/README_EN.md) · [E009 negative result](experiments/e009/RESULT_EN.md) · [Prior-art and review](research/PUBLIC_REVIEW_PACKET_EN.md#3a-prior-art-versus-what-would-be-an-incremental-project-contribution) · [Full contents](navigation/RESEARCH_TOC_EN.md).
+**First reading path:** [Historical cases](research/CCPH_RESEARCH_ATLAS_EN.md) · [Research question](research/RESEARCH_OVERVIEW_EN.md) · [English guide](navigation/START_HERE_EN.md) · [English evidence ledger](research/PUBLIC_EVIDENCE_INDEX_EN.md) · [E009 negative result](experiments/e009/RESULT_EN.md) · [Prior-art and review](research/PUBLIC_REVIEW_PACKET_EN.md#3a-prior-art-versus-what-would-be-an-incremental-project-contribution) · [Full contents](navigation/RESEARCH_TOC_EN.md).
 
 **Citation and reuse:** [Citation](CITATION.cff) · [Attribution and source rights](ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md) · [Earlier authorship and derivation](PRIOR_ART_RIGHTS_AND_DERIVATION_EN_KO.md). The longer historical founding statement remains recoverable in [the preceding Git revision](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/3fefa0c121341a0569e026f34a9e87479afa52a4/README.md).
 
@@ -83,7 +83,7 @@
 <details>
 <summary>상세 연구 목적·반례·증거상태·권리·심사 경로 펼치기</summary>
 
-**긴급 사건·대응 연구 (2026-10-20):** [자율형 AI 악용의 인간 착취 유인과 차단책](research/AI_AGENT_HUMAN_EXPLOITATION_URGENT_2026-10-20_KO.md) — 원출처 교차검증, 반증 가능 가설, 방어 절차. [DCA-0 공존 차등가속 실행·측정 프로토콜](research/DCA0_DIFFERENTIAL_COEXISTENCE_ACCELERATION_2026-10-20_EN_KO.md) · [DCA-1 적응·약자 피해전가 수학적 반례/실행 결과](research/DCA1_ADAPTATION_DISPLACEMENT_IDENTIFICATION_2026-10-20_KO.md) · DCA-2 희생양 최적화·미관측 위협·개체보호 하한(한국어 상세 목차 참조).
+**긴급 사건·대응 연구 (2026-10-20):** [자율형 AI 악용의 인간 착취 유인과 차단책](research/AI_AGENT_HUMAN_EXPLOITATION_URGENT_2026-10-20_KO.md) — 원출처 교차검증, 반증 가능 가설, 방어 절차. [DCA-0 공존 차등가속 실행·측정 프로토콜](research/DCA0_DIFFERENTIAL_COEXISTENCE_ACCELERATION_2026-10-20_EN_KO.md) · [DCA-1 적응·약자 피해전가 수학적 반례/실행 결과](research/DCA1_ADAPTATION_DISPLACEMENT_IDENTIFICATION_2026-10-20_KO.md) · [DCA-2 희생양 최적화·미관측 위협·개체보호 하한](research/DCA2_SACRIFICIAL_DECOY_OPEN_SET_2026-10-21_KO.md).
 
 **C01–C09 문헌 통합(2026-10-20 역사적 스냅샷):** [191개 기록의 24시간 감사·상충 근거·자율성/존속 측정·미해결 반증질문](research/RESEARCH_VALUE_EXTRACTION_24H_2026-10-20_KO.md). 10회차 이후 자료는 191건에 포함되지 않으며 신규 실증결과가 아니다.
 
@@ -109,7 +109,7 @@
 
 **제0 최우선 원칙 — 확장보다 재발 방지:** 새로운 주장을 승격하기 전 실패의 **발생 원인**·원출처·영향 당사자·언어의 의미를 검토한다. 되돌릴 수 있는 교정, **되돌릴** 경로, 동일 오류를 잡는 **회귀검사**를 갖춘다. 불확실하면 미검증이라 표시한다. [실패·교정 기록](FAILURE_REGRESSION_INDEX.md) · [기여·예방 규칙](CONTRIBUTING.md).
 
-**처음 읽을 자료:** [역사사례](research/CCPH_RESEARCH_ATLAS_KO.md) · [연구 질문](research/RESEARCH_OVERVIEW_KO.md) · [한국어 안내](navigation/START_HERE_KO.md) · [한국어 증거 원장](research/PUBLIC_EVIDENCE_INDEX_KO.md) · [E007 재현](experiments/e007/README_KO.md) · [E009 부정결과](experiments/e009/RESULT_KO.md) · [선행연구·검토](research/PUBLIC_REVIEW_PACKET_KO.md#3a-선행연구와-프로젝트의-검증-가능한-추가-기여-구분) · [한국어 전체 목차](navigation/RESEARCH_TOC_KO.md).
+**처음 읽을 자료:** [역사사례](research/CCPH_RESEARCH_ATLAS_KO.md) · [연구 질문](research/RESEARCH_OVERVIEW_KO.md) · [한국어 안내](navigation/START_HERE_KO.md) · [한국어 증거 원장](research/PUBLIC_EVIDENCE_INDEX_KO.md) · [E009 부정결과](experiments/e009/RESULT_KO.md) · [선행연구·검토](research/PUBLIC_REVIEW_PACKET_KO.md#3a-선행연구와-프로젝트의-검증-가능한-추가-기여-구분) · [한국어 전체 목차](navigation/RESEARCH_TOC_KO.md).
 
 **출처 표시 및 재사용:** [인용 정보](CITATION.cff) · [기여·출처·권리](ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md) · [선행 원저작과 응용](PRIOR_ART_RIGHTS_AND_DERIVATION_EN_KO.md). 축약하기 전 창시 목적 전문도 [이전 Git 판본](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/3fefa0c121341a0569e026f34a9e87479afa52a4/README.md)에 보존돼 있다.
 

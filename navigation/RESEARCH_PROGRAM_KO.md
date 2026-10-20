@@ -3,7 +3,7 @@
 # Project Intersection — 연구체계·증거·공개자료실 정본 지도
 **원본2 — 한국어 | 기준일: 2026-10-20 | 상태: 갱신 가능한 연구 안내·비판적 종합, 독립 검증 결과 아님**
 
-[창시 연구질문](../README.md) · [영어 대응판](RESEARCH_PROGRAM_EN.md) · [선행논문 최우선 규칙](../PRIOR_ART_FIRST_RESEARCH_POLICY_EN_KO.md) · [독립검토 경로](../research/PUBLIC_REVIEW_PACKET_KO.md) · [자료실 재귀개선 방법 PI-RAMP v0.2](../protocols/PI_RAMP_V0_2_KO.md) · [v0.3 선행방법·반증·효과검사](../protocols/PI_RAMP_V0_3_KO.md) · [v0.4 원저자 자료 식별·대립 근거 감사](../protocols/PI_RAMP_V0_4_EN_KO.md) · [v0.5 부분 재현·유추·실험 단위 계보](../protocols/PI_RAMP_V0_5_EN_KO.md) · [v0.6 타자 거부권 동기 미식별 반례](../protocols/PI_RAMP_V0_6_EN_KO.md)
+[창시 연구질문](../README.md) · [영어 대응판](RESEARCH_PROGRAM_EN.md) · [선행논문 최우선 규칙](../PRIOR_ART_FIRST_RESEARCH_POLICY_EN_KO.md) · [독립검토 경로](../research/PUBLIC_REVIEW_PACKET_KO.md) · [자료실 재귀개선 방법 PI-RAMP v0.2](../protocols/PI_RAMP_V0_2_KO.md) · [v0.3 선행방법·반증·효과검사](../protocols/PI_RAMP_V0_3_KO.md) · [v0.4 원저자 자료 식별·대립 근거 감사](../protocols/PI_RAMP_V0_4_EN_KO.md) · [v0.5 부분 재현·유추·실험 단위 계보](../protocols/PI_RAMP_V0_5_EN_KO.md)
 
 ## 1. 단일 연구문제: 개별 안전장치들의 나열이 아님
 
@@ -23,7 +23,9 @@
 | **ECR — 개체·영향당사자·관계** | 개체 식별, 34개 역할군 관련성, 제3자, 권력과 행동기회, 시간별 사건과 인과 식별가능성 | 한 사람의 복수 역할을 여러 사람으로 계산하거나 UNKNOWN을 0으로 간주하는 오류 | [5축 정본](../research/TERMINOLOGY_FIVE_AXES_V0_1_KO.md) |
 | **IVS-0R** | 반대가설·반례·권력/역할반전·독립 검증·회귀검사·오류 복구를 통한 감사 방법론 | 합성시험 PASS나 AI 자기보고를 현실 검증으로 승격하는 오류 | [독립검토](../research/PUBLIC_REVIEW_PACKET_KO.md) |
 
-**RVD v0.2.0 — 공명·가치 동역학(MER/EI 하위 연구, 가설 미검증):** [한국어 원본2](../research/MER_RESONANCE_VALUE_FORMATION_2026-10-20_KO.md) · [영어 원본1](../research/MER_RESONANCE_VALUE_FORMATION_2026-10-20_EN.md) · [버전 원장](../research/RVD_VERSION_MANIFEST.json). 독립 A×B → 검증된 C → 가치·선호 변화 → 조건부 B 존속 선택의 경로 검증. 동등 자원 기준선·착취적 공명 반례·AI 주관 경험 오판 경계 포함. 버전과 증거등급 분리, 기존 문서 경로 및 5축 연구구조 보존. **제2회: [한국어 원본2 — 원개체 대체·자율성 연구](../research/RVD_CYCLE02_SUBSTITUTION_AUTONOMY_PRIOR_ART_2026-10-20_KO.md) · [영어 원본1](../research/RVD_CYCLE02_SUBSTITUTION_AUTONOMY_PRIOR_ART_2026-10-20_EN.md) · [원저자 출처 원장](../research/RVD_CYCLE02_SOURCE_REGISTER_2026-10-20.json).** 공동 신규성·관계 언어가 '원래 B' 존속을 보장하지 않는 문제를 R6~R9로 분리: 동일 성과 대체, 실효 거부권, 동조에 의한 다양성 침식, 실제 비용부담 보존 선택. 긍정·부정 선행연구 함께 제시. 기존 v0.1.0 역사 초안 보존; v0.2.0은 연구설계 확장일 뿐 실증 승격 아님.
+**RVD v0.3.0 — 공명·가치 동역학(MER/EI 하위 연구, 가설 미검증):** [한국어 원본2](../research/MER_RESONANCE_VALUE_FORMATION_2026-10-20_KO.md) · [영어 원본1](../research/MER_RESONANCE_VALUE_FORMATION_2026-10-20_EN.md) · [버전 원장](../research/RVD_VERSION_MANIFEST.json). 독립 A×B → 검증된 C → 가치·선호 변화 → 조건부 B 존속 선택의 경로 검증. 동등 자원 기준선·착취적 공명 반례·AI 주관 경험 오판 경계 포함. 버전과 증거등급 분리, 기존 문서 경로 및 5축 연구구조 보존. **제2회: [한국어 원본2 — 원개체 대체·자율성 연구](../research/RVD_CYCLE02_SUBSTITUTION_AUTONOMY_PRIOR_ART_2026-10-20_KO.md) · [영어 원본1](../research/RVD_CYCLE02_SUBSTITUTION_AUTONOMY_PRIOR_ART_2026-10-20_EN.md) · [원저자 출처 원장](../research/RVD_CYCLE02_SOURCE_REGISTER_2026-10-20.json).** 공동 신규성·관계 언어가 '원래 B' 존속을 보장하지 않는 문제를 R6~R9로 분리: 동일 성과 대체, 실효 거부권, 동조에 의한 다양성 침식, 실제 비용부담 보존 선택. 긍정·부정 선행연구 함께 제시. 기존 v0.1.0 역사 초안 보존; v0.2.0은 연구설계 확장일 뿐 실증 승격 아님.
+
+**제3회(2026-10-21, 가설·식별 연구):** [한국어 보고](../research/RVD_CYCLE03_ORIGINAL_B_VALUE_IDENTIFICATION_2026-10-21_KO.md) · [영어 원본](../research/RVD_CYCLE03_ORIGINAL_B_VALUE_IDENTIFICATION_2026-10-21_EN.md) · [원저자 출처 원장](../research/RVD_CYCLE03_SOURCE_REGISTER_2026-10-21.json) · [산술 반례](../experiments/rvd_03/identifiability_witness.py). R10~R13: A 자기통제 선호와 B 권리 보호의 차이, 외부 근거 있는 가정하의 부분식별, 동일 행동·상이한 잠재 동기, B 원개체 존속·실효 거부권 측정. 새로운 AI 마음·인과 증명 아님.
 
 **보조 개념:** **ICM**은 서로 다른 개체가 자발적으로 수용 가능한 최소 사심 교집합 후보이며 공집합 가능. **RGBM**은 장기 동반발전의 *조건부* 가설이지 보장된 성장 아님. **CCPH**는 과거·현재 관측 사건의 기여·영향·출처·반례와 미래에 추적할 사건의 계보를 연결하는 버전관리 데이터베이스. 그 안의 존속–기여 경로 가설과 데이터베이스 자체를 혼동 금지. 기존 [10개 핵심개념](../research/RESEARCH_OVERVIEW_KO.md)은 역사적 개념 설명으로 보존. 다섯 축은 검증된 다섯 이론도, 확정적 단방향 인과도 아님.
 

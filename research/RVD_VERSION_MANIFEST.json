@@ -4,7 +4,7 @@
   "research_name_en": "Resonance–Value Dynamics",
   "research_name_ko": "공명·가치 동역학",
   "acronym": "RVD",
-  "current_version": "v0.2.0",
+  "current_version": "v0.3.0",
   "version_scheme": "MAJOR.MINOR.PATCH",
   "inception_date": "2026-10-20",
   "parent_axes": [
@@ -43,7 +43,11 @@
     "NO_EMPIRICAL_PROMOTION_FROM_VERSION_NUMBER",
     "SYNERGY_DOES_NOT_IMPLY_ORIGINAL_B_PRESERVATION",
     "IDENTICAL_OUTPUT_IS_NOT_NUMERICAL_CONTINUITY_OF_B",
-    "ORIGINAL_HYPOTHESIS_AND_NEGATIVE_CASES_IMMUTABLE"
+    "ORIGINAL_HYPOTHESIS_AND_NEGATIVE_CASES_IMMUTABLE",
+    "OWN_CONTROL_VALUE_DOES_NOT_IMPLY_OTHERS_CONTROL_RIGHTS_PROTECTION",
+    "PRESERVATION_ACTION_DOES_NOT_POINT_IDENTIFY_LATENT_MOTIVE",
+    "BOUNDS_REQUIRE_EXTERNALLY_JUSTIFIED_NONIDENTITY_VALUE_CAP",
+    "B_MATERIAL_WELFARE_NOT_EQUAL_EXECUTABLE_VETO"
   ],
   "hypothesis_ids": [
     "RVD-R1",
@@ -54,7 +58,11 @@
     "RVD-R6",
     "RVD-R7",
     "RVD-R8",
-    "RVD-R9"
+    "RVD-R9",
+    "RVD-R10",
+    "RVD-R11",
+    "RVD-R12",
+    "RVD-R13"
   ],
   "research_documents": {
     "original_1_english": "research/MER_RESONANCE_VALUE_FORMATION_2026-10-20_EN.md",
@@ -64,7 +72,11 @@
     "cycle02_en": "research/RVD_CYCLE02_SUBSTITUTION_AUTONOMY_PRIOR_ART_2026-10-20_EN.md",
     "cycle02_ko": "research/RVD_CYCLE02_SUBSTITUTION_AUTONOMY_PRIOR_ART_2026-10-20_KO.md",
     "cycle02_source_register": "research/RVD_CYCLE02_SOURCE_REGISTER_2026-10-20.json",
-    "cycle02_synthetic_logical_witness": "experiments/rvd_02/substitution_witness.py"
+    "cycle02_synthetic_logical_witness": "experiments/rvd_02/substitution_witness.py",
+    "cycle03_en": "research/RVD_CYCLE03_ORIGINAL_B_VALUE_IDENTIFICATION_2026-10-21_EN.md",
+    "cycle03_ko": "research/RVD_CYCLE03_ORIGINAL_B_VALUE_IDENTIFICATION_2026-10-21_KO.md",
+    "cycle03_source_register": "research/RVD_CYCLE03_SOURCE_REGISTER_2026-10-21.json",
+    "cycle03_toy_code": "experiments/rvd_03/identifiability_witness.py"
   },
   "change_rules": {
     "MAJOR": "Scientific construct or estimand redefinition breaking compatibility",
@@ -89,7 +101,7 @@
     {
       "version": "v0.2.0",
       "date": "2026-10-20",
-      "state": "CURRENT_SPECIFICATION_EXTENSION",
+      "state": "HISTORICAL_SPECIFICATION_EXTENSION",
       "change": "Cycle 02 critical original-author literature crosswalk, finite substitute/absorption counterexample, testable R6 original-agent substitution, R7 autonomy-driven novelty, R8 resonance erosion and R9 costly identity-specific preservation. Added bilingual documents and DOI source ledger.",
       "scientific_promotion": false,
       "empirical_data_added": false,
@@ -97,8 +109,20 @@
       "source_crosswalk_scope": "11 source lineages including conceptual work; not complete systematic review; not literature saturation",
       "previous_version": "v0.1.0",
       "synthetic_logic_test": "3 constructed payoff cases + observational-equivalence witness; no empirical observation"
+    },
+    {
+      "version": "v0.3.0",
+      "date": "2026-10-21",
+      "state": "CURRENT_SPECIFICATION_EXTENSION",
+      "previous_version": "v0.2.0",
+      "change": "R10 own-control versus other-rights protection, R11 conditional revealed-value bounds, R12 latent-motive observational equivalence, R13 original entity freedom/identity independent of output metrics. Eight antecedent source records and standalone arithmetic witness.",
+      "source_register": "research/RVD_CYCLE03_SOURCE_REGISTER_2026-10-21.json",
+      "empirical_data_added": false,
+      "independent_replication": false,
+      "scientific_promotion": false,
+      "simulation_or_logic_only": true
     }
   ],
-  "next_gate": "Original-author full-text and DOI lineage critical review; independent, non-harmful, preregisterable matched-resource evaluation of RVD-R6/R7 before interpreting R2/R3. Report null, negative, unidentifiable cases.",
+  "next_gate": "Independent DOI/full-text source lineage audit; ethical preregistration of original-B preservation under cost schedules and exogenously justified upper bounds on nonidentity payoffs, with explicit UNIDENTIFIED output.",
   "contribution_boundary": "Human originator's resonance concept; AI-assisted organization and version record. Historical quotations from earlier AI summaries not independently re-read."
 }

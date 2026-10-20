@@ -1,7 +1,7 @@
 {
   "schema_version": "0.2.0",
   "registry_document_version": "0.2.0",
-  "snapshot_date": "2026-10-20",
+  "snapshot_date": "2026-10-21",
   "main_basis_commit": "e7d657448f82dc53a3b45f9eda360536ac09dbfa",
   "audit_scope": "Selected public main files and open PR metadata; prior conversations only partial retrieval, not a complete chat export or private-repository inventory",
   "terminology_spec_version": "0.1",
@@ -135,14 +135,14 @@
       "id": "RVD",
       "title": "Resonance–Value Dynamics",
       "what": "Candidate study of relational value and motivational change under coexistence and exploitation",
-      "how": "Distinguish mutually generated value from manipulation; empirical and negative controls needed",
-      "current_version": "0.2.0",
+      "how": "Separately test joint novelty, original B's executable veto, and the own/other control preference gap; output behavior alone cannot point-identify an inner motive. Partial value bounds require independently justified assumptions.",
+      "current_version": "0.3.0",
       "candidate_version": null,
       "publication_state": "MAIN",
       "evidence_state": "CONCEPTUAL_HYPOTHESIS_UNTESTED",
       "source": "research/RVD_VERSION_MANIFEST.json",
       "candidate_pr": null,
-      "current_source_blob_sha": "dbafa6796fad696b09cca967773dac1f2af9a495"
+      "current_source_blob_sha": "00c6938cdb4cf7f552e13b270e09a66342c58bea"
     },
     {
       "id": "PI-RAMP",
@@ -275,5 +275,6 @@
     "outcome": "negative / no-main-result / unresolved / supported within declared scope",
     "independence": "evaluator and source lineage, not number of AI responses"
   },
-  "audit_limitation": "Live PR states and source blobs may change; automated checks are necessary for currency, but cannot prove completeness of historical or private research. Main has advanced independently during this audit (RVD v0.2.0; DCA-1 v0.2.0). These records are a dated snapshot, not a live guarantee."
+  "audit_limitation": "Live PR states and source blobs may change; automated checks are necessary for currency, but cannot prove completeness of historical or private research. Main has advanced independently during this audit (RVD v0.2.0; DCA-1 v0.2.0). These records are a dated snapshot, not a live guarantee.",
+  "revision_note_rvd_v0_3_0": "Version metadata updated from 0.2.0 to 0.3.0 following Cycle 03 conceptual/partial-identification specification. No experimental evidence promoted. Previous registry value retained in Git history; claim impact overlay reviewed and rebased."
 }

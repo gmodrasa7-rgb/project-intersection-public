@@ -61,13 +61,13 @@
     {
       "id": "SRC-RVD-MANIFEST",
       "path": "research/RVD_VERSION_MANIFEST.json",
-      "sha": "dbafa6796fad696b09cca967773dac1f2af9a495",
+      "sha": "00c6938cdb4cf7f552e13b270e09a66342c58bea",
       "probe": {
         "kind": "json_exact",
         "field": "scientific_status.empirical_validation",
         "expected": "UNTESTED"
       },
-      "caveat": "Version and scientific status are distinct"
+      "caveat": "Version v0.3.0 expands conceptual hypotheses and conditional bounds only. It does not verify an AI mind, independent long-run preferences, or real VC; status still UNTESTED."
     },
     {
       "id": "SRC-RVD-CYCLE02",
@@ -304,5 +304,36 @@
     }
   ],
   "completeness_limit": "Two real dependency worlds can share the same recorded graph while only one contains a missing load-bearing edge. Reachability alone cannot certify absence of impacts; all applicable retained claims still require independent source/contract checks.",
-  "identity_and_novelty": "PI-CIG is an applied, bounded configuration/re-review utility, not a novel general-purpose truth-maintenance theorem, an implemented ATMS, or proven PROV-compliant software."
+  "identity_and_novelty": "PI-CIG is an applied, bounded configuration/re-review utility, not a novel general-purpose truth-maintenance theorem, an implemented ATMS, or proven PROV-compliant software.",
+  "review_history": [
+    {
+      "review_id": "PI-CIG-RVD-V030-20261021",
+      "date": "2026-10-21",
+      "source_id": "SRC-RVD-MANIFEST",
+      "changed_path": "research/RVD_VERSION_MANIFEST.json",
+      "old_source_sha": "dbafa6796fad696b09cca967773dac1f2af9a495",
+      "new_source_sha": "00c6938cdb4cf7f552e13b270e09a66342c58bea",
+      "upstream_change": "Named conceptual R10–R13, study of own decision-rights vs other original B preservation, conditional revealed-value bounds and synthetic observational-equivalence witnesses; v0.2.0 to v0.3.0.",
+      "affected_claims_and_paths": [
+        {
+          "id": "CL-RVD-ORIGINAL",
+          "unchanged_status": "FORMAL_COUNTEREXAMPLE_ONLY"
+        },
+        {
+          "id": "CL-RVD-MOTIVE",
+          "unchanged_status": "MECHANISM_UNIDENTIFIED"
+        },
+        {
+          "id": "CL-VC-HARD",
+          "unchanged_status": "UNRESOLVED"
+        }
+      ],
+      "scientific_promotion": false,
+      "independent_validation": false,
+      "version_registry": "research/RESEARCH_VERSION_REGISTRY.json",
+      "declared_dependencies_complete": false,
+      "result": "SCOPED_SOURCE_AND_PROVENANCE_REVIEW_DONE_NO_SCIENTIFIC_VERDICT",
+      "limitation": "Only existing declared dependency edges are reviewed; no claim that all missing dependencies have been discovered. Source blob changed for a legitimate theory-specification version update."
+    }
+  ]
 }
