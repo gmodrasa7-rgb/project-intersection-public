@@ -182,7 +182,7 @@
       "primary": "https://www.cambridge.org/core/journals/journal-of-experimental-political-science/article/rejecting-nonpaternalist-motivation-an-experimental-test/54FA433EB812CB08685CD71810DD1A48",
       "metadata": "https://chen.ac/",
       "design": "human third-party spectators can pay 2 cents to impose their fairness view on two workers; randomized feedback about true level of shared fairness beliefs; original registered and Harvard replication data",
-      "result": "Spectators overestimated others' support for their view; learning actual support did not alter paying to impose their own distribution. Some actors impose own ideals despite revealed disagreement.",
+      "result": "Participants could pay 2 cents to impose own fairness distribution. Telling them the true proportion of other people endorsing their view did not alter willingness to impose; this did NOT literally elicit every affected recipient's individual informed veto.",
       "counter": "The 2018 SSRN working paper and 2021 online Cambridge and 2022 printed journal are ONE publication/study; no independent repeated sampling claim. Imposing distribution at own 2-cent expense is NOT cost-bearing respect for B's freedom.",
       "mechanism": "COSTLY_IMPOSITION_OF_PERSONAL_MORAL_IDEAL",
       "strength": "DIRECT_NEGATIVE_STRONG",
@@ -197,7 +197,7 @@
       "authors": "James C. Cox; Vjollca Sadiraj; Susan Xu Tang",
       "title": "Morally monotonic choice in public good games",
       "doi": "10.1007/s10683-022-09787-2",
-      "primary": "https://www.cambridge.org/core/journals/experimental-economics/article/abs/morally-monotonic-choice-in-public-good-games/",
+      "primary": "https://doi.org/10.1007/s10683-022-09787-2",
       "metadata": "https://excen.gsu.edu/jccox/selected",
       "design": "original mathematical social-choice/reference-point model and new human public-good experiment compared with three earlier studies; equal-payoff give/take framing",
       "result": "Model including morally salient reference points accounts for greater provision than payoff-equivalent appropriation; data favor moral monotonicity over several specified classic preferences models.",
@@ -215,7 +215,7 @@
       "authors": "Toshiji Kawagoe; Hirokazu Takizawa; Tetsuo Yamamori",
       "title": "Asymmetric volunteer's dilemma game: Theory and experiment",
       "doi": "10.1016/j.geb.2023.10.009",
-      "primary": "https://www.sciencedirect.com/science/article/pii/S0899825623001466",
+      "primary": "https://doi.org/10.1016/j.geb.2023.10.009",
       "metadata": "https://ideas.repec.org/a/eee/gamebe/v142y2023icp955-977.html",
       "design": "original mathematical comparison of risk-dominant vs quantal-response/regret vs inequity aversion; new laboratory asymmetric volunteer's dilemma conditions",
       "result": "Some low-cost actors volunteered, but risk-dominance predictions were not universally supported; quantal-response equilibrium best fitted compared models in reported specification.",
@@ -281,6 +281,20 @@
       "canonical_key": "doi:10.1038/s41562-025-02196-4",
       "read_scope": "Original publisher/author HTML where available; otherwise original abstract/index. NOT all publisher PDFs fully read.",
       "global_repo_first_discovery": "UNVERIFIED"
+    }
+  ],
+  "source_verification_errata": [
+    {
+      "id": "C10-10",
+      "reason": "Original DOI page confirmed; unverified journal PII replaced with DOI resolver"
+    },
+    {
+      "id": "C10-09",
+      "reason": "Verified DOI points to exact publisher article; replaced guessed publisher slug"
+    },
+    {
+      "id": "C10-08",
+      "reason": "Constrain inference to experimental elicitation of group support rather than claim all affected receivers had an independent veto"
     }
   ]
 }
