@@ -3,7 +3,7 @@
 <!-- PI-LANGUAGE: ko -->
 <!-- PI-MIRROR: navigation/RESEARCH_TOC_EN.md -->
 
-**독서 경로:** [한국어 시작](START_HERE_KO.md) · [영어 원본1 목차](RESEARCH_TOC_EN.md) · [한국어 외부 검토 안내](AI_REVIEW_KO.md) · [창시 목적](../README.md).
+**독서 경로:** [정본 연구체계·원저자 9회차 지도](RESEARCH_PROGRAM_KO.md) · [한국어 시작](START_HERE_KO.md) · [영어 원본1 목차](RESEARCH_TOC_EN.md) · [한국어 외부 검토 안내](AI_REVIEW_KO.md) · [창시 목적](../README.md).
 
 이 문서는 **한국어로 일관된 탐색 목차**다. 원본1은 게시 순서이지 연구 창시자가 어떤 언어로 먼저 발안했는지 또는 저작권이 누구에게 귀속되는지를 뜻하지 않는다. 과거 문서 전체를 번역했다거나 독립 검증했다는 의미도 아니다.
 
