@@ -19,6 +19,10 @@
 
 **Adoption/abandonment test:** require a real evidence-based benefit (fewer unjustified claims, better recovery or lower verification burden) *net of administrative cost*. If not observed, simplify, narrow or discontinue PI-RISE. Public synthetic examples and code do not establish operational effectiveness.
 
+**Conditional dependency failure model (PI-RISE-CUT v0.1.0):** [Read the explicitly hypothetical minimal-cut analysis](PI_RISE_CUT_V0_1_0_EN_KO.md). Under the stated Boolean assumptions there are four single-point research-operation dependencies and two two-component failures. This illustrates vulnerability *within a toy dependency graph*, not actual investigator fragility or a measured real-world risk.
+
+**Evidence integrity correction:** A JSON field marked `VERIFIED` is an input assertion, **not a bank or restoration audit**. The checker labels compute, recovery and evidence checks as self-reported, rejects unknown fields, and cannot authenticate receipts or consent. A false user assertion cannot be eliminated by schema validation.
+
 **Version status:** v0.1.0 candidate until main merge. Later revisions require verifiable changes and tests, not simply accumulated files. The public status must never be interpreted as grant disbursement or an external validation certificate.
 
 ---
@@ -106,6 +110,9 @@
 - **월간:** 실제 연구비 유입·비용·자원 집중·복구시험·과학적 반례 공개 여부 감사.
 - **변경 직후:** 출처, 버전, 경합 PR, 사전 상태와 변경 이유를 기록하고 재실행·읽기검증.
 - **성능 확인 전:** 새 데이터나 임계값으로 현재 버전의 운영효과를 주장하지 말 것.
+
+### 6a. 추가된 실패경로 모듈 — PI-RISE-CUT v0.1.0
+[최소 실패조합과 선행 결함수 방법론](PI_RISE_CUT_V0_1_0_EN_KO.md): 가정된 8개 요소에 대한 논리적 최소 실패집합 6개를 탐색. 연구자 참여·지속조건·과학적 무결성·연구 독립성이 단일 의존점, 로컬·원격 연산 동시 장애 및 로컬·공개 자료 동시 장애가 이중 실패조합. 이는 실환경의 실패확률·건강·연구비 전망을 측정하지 않음. **입력 `VERIFIED` 역시 사용자가 표기한 상태일 뿐, 이 코드가 실제 은행 명세나 로컬 복원을 독립 확인한 게 아님.**
 
 ### 7. 다음 버전 게이트
 - v0.1.0 **설계:** 6개 자원 게이트, 재정 확인과 미확인 분리, 로컬 체크 도구, 합성 예제.
