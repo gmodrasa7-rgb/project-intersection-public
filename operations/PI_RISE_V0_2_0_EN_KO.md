@@ -2,7 +2,7 @@
 # PI-RISE v0.2.0 — Integrated Research Continuance, Funding & Accounting
 ## 연구 존속·자금조달·예산·회계 통합 운영정본
 
-**2026-10-21 · Operational protocol; CANDIDATE until merged · NOT a funding award, certified accounting system, tax opinion, bank reconciliation, or scientific result.**
+**2026-10-21 · MAIN operational protocol (merged PR #272) · NOT a funding award, certified accounting system, tax opinion, bank reconciliation, or scientific result.**
 
 ## Original 1 — English | Concise operational synopsis (not a certified translation)
 PI-RISE v0.2.0 routes *all* research viability, finance, funding and accounting decisions through one **control plane**, while preserving separate authoritative source ledgers. Private household and personal finance never belong in the public repository. Existing sponsorship has one canonical two-use ledger; institutional grants/contracts have a distinct restricted-funds public summary ledger; their bank receipts and contracts remain private. A public opportunity-status registry links historical proposals and unmerged drafts but neither aggregates pledges into cash nor certifies receipt. Funding proposals, AI credits, contracted funds, unrestricted personal cash and owed/past-contribution claims are distinct classes. Double-charging and double-counting are prohibited.
