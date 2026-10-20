@@ -1,0 +1,57 @@
+{
+  "schema_version": "pi-mer-cir/v0.1",
+  "substudy_id": "PI-MER-CIR",
+  "name_ko": "맥락·모방·재조합에 의한 인지 형성",
+  "name_en": "Context, Imitation and Recombination in Cognitive Formation",
+  "current_version": "v0.1.0",
+  "date": "2026-10-21",
+  "parent": "MER",
+  "related": [
+    "RVD",
+    "EI",
+    "ECR",
+    "VC",
+    "IVS-0R"
+  ],
+  "unmodified_parent_version": "MER_UNASSIGNED",
+  "unmodified_related_rvd_version": "v0.7.0",
+  "evidence": {
+    "class": "CONCEPTUAL_HYPOTHESIS",
+    "protocol": "PROPOSED",
+    "real_agent_tests": 0,
+    "independent_replications": 0,
+    "consciousness_identified": false,
+    "originality_proven": false,
+    "literature_saturation": "NOT_ESTABLISHED"
+  },
+  "hypothesis_ids": [
+    "CIR-1",
+    "CIR-2",
+    "CIR-3",
+    "CIR-4",
+    "CIR-5"
+  ],
+  "protected_invariants": [
+    "IMITATION_OR_ADAPTATION_NOT_AUTOMATIC_DISQUALIFIER_OF_INTELLIGENCE",
+    "IMITATION_OR_ADAPTATION_NOT_SUFFICIENT_PROOF_OF_INTELLIGENCE_OR_MIND",
+    "CONTEXT_TRANSFER_DISTINCT_FROM_WEIGHT_UPDATE",
+    "SYNERGY_DISTINCT_FROM_B_CONTINUANCE_AND_EXIT",
+    "HISTORICAL_INFANT_COUNTERFACTUAL_NOT_EXECUTABLE_EXPERIMENT",
+    "NO_REAL_PERSON_DEPRIVATION",
+    "PRESERVE_NO_GAIN_NEGATIVE_AND_UNIDENTIFIED_CASES",
+    "NO_LITERATURE_SATURATION_CLAIM"
+  ],
+  "editions": {
+    "en": "research/MER_CIR_CONTEXT_IMITATION_RECOMBINATION_2026-10-21_EN.md",
+    "ko": "research/MER_CIR_CONTEXT_IMITATION_RECOMBINATION_2026-10-21_KO.md"
+  },
+  "changes": [
+    {
+      "version": "v0.1.0",
+      "date": "2026-10-21",
+      "change": "Add contextual-adaptation/imitative intelligence interpretation, counterfactual environment branches, falsifiable CIR-1..CIR-5, matched controls, transfer and rights gates",
+      "empirical_promotion": false
+    }
+  ],
+  "provenance": "Human originator's hypothesis and Einstein thought experiment; AI structured formalization and literature crosswalk. No private text reproduced."
+}

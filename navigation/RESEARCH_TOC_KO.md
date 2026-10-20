@@ -1,7 +1,5 @@
 # 연구 전체 목차 — 원본2: 한국어
 
-**최근 20시간 연구 증류(2026-10-21):** [PI-20H v0.1.0 — VC·EI·MER·ECR·IVS-0R 교차증거·반례·동기 식별하한·CI 원인 감사](../research/PI_20H_SYNTHESIS_2026-10-21_EN_KO.md). 기존 연구 증류·조건부 추론이며 신규 실증 아님.
-
 **DCA-2 반증·원전 검토:** [희생양 최적화·미관측 위협·개체보호 하한 (2026-10-21)](../research/DCA2_SACRIFICIAL_DECOY_OPEN_SET_2026-10-21_KO.md) — 개별 연구 결과이며 최종 공존목표나 독립 실증검증의 대체물 아님.
 
 **최근 문헌감사·측정 설계(역사적 C01–C09):** [24시간 고가치 연구 추출: 191개 원장 기록·상충 근거·후견주의와 실질 자율성 구분·내재 동기 미식별](../research/RESEARCH_VALUE_EXTRACTION_24H_2026-10-20_KO.md). [이후 제10회](../research/PRIOR_ART_INFORMED_VETO_POWER_CYCLE10_2026-10-20_KO.md)는 스냅샷에 포함되지 않음. 신실험 결과 아님.
@@ -16,6 +14,8 @@
 **원자료 이동 전 안내:** [연구 개요](../RESEARCH_OVERVIEW.md), [공개 증거](../PUBLIC_EVIDENCE_INDEX.md), [검토 자료](../research/PUBLIC_REVIEW_PACKET_KO.md), [CCPH 교차지도](../CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md)는 표본 구간에서 영어와 한국어 문자가 모두 관측됐다. [E010](../experiments/e010/README_KO.md)은 관측 구간에서 한국어 비중이 높고, [E009 결과](../experiments/e009/RESULT.md)에서는 검사한 구간에 한글 문자가 발견되지 않았다. 이는 **문자 분포 신호이지 번역 완료나 문서 전체 언어 인증이 아니다.** 연결 문서에 들어가기 전에 [표본 관측과 한계](../knowledge/language-edition-register.json)를 확인할 수 있다.
 
 일부 과거 연구는 한국어만 존재하거나 두 언어가 혼재되어 있다. **원출처 파일명·논문 제목·수학적 식별자·인용**은 그대로 보존한다. 연결된 원문을 번역 완료 문서로 오인하지 않도록 하며, 개별 주장과 증거등급은 [공개 증거 색인](../research/PUBLIC_EVIDENCE_INDEX_KO.md)을 따른다.
+
+**MER 신규 판정규격(2026-10-21):** [MER-CIR v0.1.0 한국어](../research/MER_CIR_CONTEXT_IMITATION_RECOMBINATION_2026-10-21_KO.md) · [영어](../research/MER_CIR_CONTEXT_IMITATION_RECOMBINATION_2026-10-21_EN.md). 문맥학습·모방·재조합을 지능 후보 기제로 취급하되 상호작용 초과효과·선택 지속성·주관경험은 별도 미검증 판정.
 
 ### 모든 자료가 답하려는 다섯 질문
 
