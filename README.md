@@ -56,7 +56,6 @@
 **First reading path:** [Historical cases](research/CCPH_RESEARCH_ATLAS_EN.md) · [Research question](research/RESEARCH_OVERVIEW_EN.md) · [English guide](navigation/START_HERE_EN.md) · [English evidence ledger](research/PUBLIC_EVIDENCE_INDEX_EN.md) · [E009 negative result](experiments/e009/RESULT_EN.md) · [Prior-art and review](research/PUBLIC_REVIEW_PACKET_EN.md#3a-prior-art-versus-what-would-be-an-incremental-project-contribution) · [Full contents](navigation/RESEARCH_TOC_EN.md).
 
 **Citation and reuse:** [Citation](CITATION.cff) · [Attribution and source rights](ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md) · [Earlier authorship and derivation](PRIOR_ART_RIGHTS_AND_DERIVATION_EN_KO.md). The longer historical founding statement remains recoverable in [the preceding Git revision](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/3fefa0c121341a0569e026f34a9e87479afa52a4/README.md).
-
 </details>
 ### Ten core concepts
 [All ten concepts, precise definitions and limitations](research/RESEARCH_OVERVIEW_EN.md#ten-core-concepts) are preserved for technical reading. CCPH is a historical/current/future **contribution and impact provenance database**. The **Continuance–Contribution Pathways Hypothesis** is one hypothesis within it, not its definition or a proven social outcome.
