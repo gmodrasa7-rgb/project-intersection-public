@@ -1,0 +1,110 @@
+{
+  "schema_version": "pi-rvd-cycle04-source-register/v0.1",
+  "as_of": "2026-10-21",
+  "rvd_spec_version": "v0.4.0",
+  "distinct_source_records": 8,
+  "claim_status": "SOURCE_CRITICAL_SYNTHESIS_ONLY",
+  "new_project_empirical_studies": 0,
+  "independent_RVD_replications": 0,
+  "comprehensive_full_text_review": false,
+  "global_literature_saturation": "NOT_VERIFIED",
+  "non_duplication": "2018 NeurIPS main item, 2023 ICML journal/proceedings and related preprints are not counted as independent replications; Manski C03 and off-switch predecessor retained as known overlap.",
+  "human_contribution": "Original A/B→C resonance concept, original entity B autonomy under power asymmetry and observation vs mind challenges originated in the human-led project.",
+  "ai_contribution": "Synthesis and test specification, not discovery of established reward-invariance theorems.",
+  "limitations": [
+    "Scholarly abstracts, proceedings and some original-page material reviewed; no exhaustive full text verification.",
+    "No field experiment and no measurement of a real agent reward function.",
+    "Decision-invariant predictions conditional on complete model class and chosen environmental scope; neither complete in practice.",
+    "No change to B's moral/legal status inferred from output alone."
+  ],
+  "sources": [
+    {
+      "id": "NG_HARADA_RUSSELL_1999",
+      "authors": "Andrew Y. Ng; Daishi Harada; Stuart Russell",
+      "year": 1999,
+      "title": "Policy invariance under reward transformations: Theory and application to reward shaping",
+      "url": "https://ai.stanford.edu/~ang/papers/shaping-icml99.pdf",
+      "study_type": "ORIGINAL_THEORETICAL_RL",
+      "contribution": "Potential-based reward shaping and reward transformation invariances for optimal-policy preservation in specified MDP settings.",
+      "overlap": "EARLIER_FIELD_CLASSIC_NOT_NEW_RVD_THEOREM",
+      "review_scope": "Original paper first page/abstract verified; no full theorem reproduction."
+    },
+    {
+      "id": "ARMSTRONG_MINDERMANN_2018",
+      "authors": "Stuart Armstrong; Sören Mindermann",
+      "year": 2018,
+      "title": "Occam's razor is insufficient to infer the preferences of irrational agents",
+      "url": "https://papers.neurips.cc/paper_files/paper/2018/hash/d89a66c7c80a29b1bdbab0f2a1a94af8-Abstract.html",
+      "study_type": "ORIGINAL_THEORETICAL_IRL",
+      "contribution": "Planner/reward inference nonuniqueness and limits of simplicity priors.",
+      "overlap": "ORIGINAL_PRIOR_THEOREM_NOT_RVD_DISCOVERY",
+      "review_scope": "Conference author's abstract and published record checked."
+    },
+    {
+      "id": "SKALSE_ETAL_2023",
+      "authors": "Joar Skalse; Matthew Farrugia-Roberts; Stuart Russell; Alessandro Abate; Adam Gleave",
+      "year": 2023,
+      "title": "Invariance in Policy Optimisation and Partial Identifiability in Reward Learning",
+      "url": "https://proceedings.mlr.press/v202/skalse23a.html",
+      "study_type": "ORIGINAL_THEORETICAL_ICML",
+      "contribution": "Reward ambiguity under demonstrations/comparisons and downstream decision tolerance are distinct.",
+      "overlap": "ORIGINAL_PAPER_PREPRINT_NOT_INDEPENDENT_REPLICATION",
+      "review_scope": "PMLR original peer-reviewed record and abstract checked; arXiv edition not independently counted."
+    },
+    {
+      "id": "SKALSE_ABATE_2023",
+      "authors": "Joar Skalse; Alessandro Abate",
+      "year": 2023,
+      "title": "Misspecification in Inverse Reinforcement Learning",
+      "url": "https://ojs.aaai.org/index.php/AAAI/article/view/26766",
+      "study_type": "ORIGINAL_THEORETICAL_AAAI",
+      "contribution": "Formal consequences of misspecified planning models for inferred reward functions.",
+      "overlap": "ORIGINAL_AUTHOR_PRIOR_ART",
+      "review_scope": "AAAI journal proceedings abstract and record."
+    },
+    {
+      "id": "SKALSE_ABATE_2025",
+      "authors": "Joar Max Viktor Skalse; Alessandro Abate",
+      "year": 2025,
+      "title": "Partial Identifiability in Inverse Reinforcement Learning for Agents with Non-Exponential Discounting",
+      "url": "https://ojs.aaai.org/index.php/AAAI/article/view/34977",
+      "study_type": "ORIGINAL_THEORETICAL_AAAI",
+      "contribution": "Non-exponential discounting can sustain policy-relevant inverse reward ambiguity.",
+      "overlap": "ORIGINAL_AUTHOR_PRIOR_ART",
+      "review_scope": "AAAI proceedings abstract and record."
+    },
+    {
+      "id": "MANSKI_2003",
+      "authors": "Charles F. Manski",
+      "year": 2003,
+      "title": "Partial Identification of Probability Distributions",
+      "url": "https://link.springer.com/book/10.1007/b97478",
+      "study_type": "METHODOLOGICAL_MONOGRAPH",
+      "contribution": "Identification bounds and assumption sensitivity rather than unwarranted point-estimates.",
+      "overlap": "ALREADY_IN_RVD_CYCLE03",
+      "review_scope": "Publisher description checked; not a new separate study."
+    },
+    {
+      "id": "SEN_1977",
+      "authors": "Amartya Sen",
+      "year": 1977,
+      "title": "Rational Fools: A Critique of the Behavioural Foundations of Economic Theory",
+      "url": "https://sen.scholars.harvard.edu/publications/rational-fools-critique-behavioural-foundations-economic-theory",
+      "study_type": "CONCEPTUAL_ECONOMIC_PHILOSOPHY",
+      "contribution": "Cautions against conflating observed choice, welfare, preference and commitment.",
+      "overlap": "CONCEPTUAL_ANTECEDENT_NOT_EMPIRICAL_RVD_RESULT",
+      "review_scope": "Original-author record; full original text not independently reviewed."
+    },
+    {
+      "id": "HADFIELD_MENELL_2017",
+      "authors": "Dylan Hadfield-Menell; Anca Dragan; Pieter Abbeel; Stuart Russell",
+      "year": 2017,
+      "title": "The Off-Switch Game",
+      "url": "https://www.ijcai.org/Proceedings/2017/0032",
+      "study_type": "ORIGINAL_THEORETICAL_IJCAI",
+      "contribution": "Under specific uncertainty models, an agent can value allowing supervisory intervention.",
+      "overlap": "PREVIOUS_PROJECT_CORRIGIBILITY_ANTECEDENT_NOT_NEW",
+      "review_scope": "IJCAI original abstract and record."
+    }
+  ]
+}

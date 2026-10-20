@@ -397,6 +397,21 @@
         "Neither edition has independently certified semantic equivalence or comprehensive original-source full text review.",
         "Arithmetic counterexamples are synthetic and do not measure model minds or rights."
       ]
+    },
+    {
+      "id": "PI-MER-RVD-CYCLE04-20261021",
+      "original_1_english": "research/RVD_CYCLE04_MOTIVE_POLICY_DIVERGENCE_2026-10-21_EN.md",
+      "original_2_korean": "research/RVD_CYCLE04_MOTIVE_POLICY_DIVERGENCE_2026-10-21_KO.md",
+      "kind": "conceptual_decision_relevant_partial_identification_and_toy_counterexamples",
+      "structural_pair_present": true,
+      "meaning_review_status": "NOT_INDEPENDENTLY_VERIFIED",
+      "original_conception_language": "KO_HUMAN_LED_PROJECT_AI_SYNTHESIS",
+      "independent_review_receipt": null,
+      "one_sided_edit_exception": null,
+      "known_divergences": [
+        "Two versions discuss the same formal R14–R17 scope, but independent semantic translation parity remains unverified.",
+        "No RVD new field experiment; programming witnesses are illustrative arithmetic, not observed agent motivation."
+      ]
     }
   ],
   "legacy_priority_unresolved": [
@@ -438,13 +453,13 @@
     }
   ],
   "metrics": {
-    "markdown_total": 189,
+    "markdown_total": 191,
     "filename_classes": {
       "UNMARKED_LANGUAGE_UNVERIFIED": 42,
       "LEGACY_MIXED_READER_ENTRY": 2,
-      "KO_SUFFIX_UNVERIFIED": 87,
+      "KO_SUFFIX_UNVERIFIED": 88,
       "ORDERED_BILINGUAL_FOUNDER_OR_GOVERNANCE": 2,
-      "EN_SUFFIX_UNVERIFIED": 27,
+      "EN_SUFFIX_UNVERIFIED": 28,
       "COMBINED_NAMING_UNVERIFIED": 29
     },
     "meaning_verified_pairs": 0,
@@ -1574,6 +1589,18 @@
       "content_equivalence": "NOT_REVIEWED"
     },
     {
+      "path": "research/RVD_CYCLE04_MOTIVE_POLICY_DIVERGENCE_2026-10-21_EN.md",
+      "filename_class": "EN_SUFFIX_UNVERIFIED",
+      "counterpart_path": "research/RVD_CYCLE04_MOTIVE_POLICY_DIVERGENCE_2026-10-21_KO.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "research/RVD_CYCLE04_MOTIVE_POLICY_DIVERGENCE_2026-10-21_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": "research/RVD_CYCLE04_MOTIVE_POLICY_DIVERGENCE_2026-10-21_EN.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
       "path": "research/TERMINOLOGY_FIVE_AXES_V0_1_EN.md",
       "filename_class": "EN_SUFFIX_UNVERIFIED",
       "counterpart_path": "research/TERMINOLOGY_FIVE_AXES_V0_1_KO.md",
@@ -1924,6 +1951,17 @@
       "new_edition_pairs": 0,
       "editorial_notes": "PI-RAMP v0.6 eight-source audit and 48-cell exact toy-model nonidentification witness. Concurrent RVD03 R12 contains the prior general additive-motive nonidentification; RVD03 R11 has separate conditional bounds. These are crosslinked, not independently discovered equivalent novel theorems. DCA2 and RVD03 source records preserved.",
       "reviewer_actions": "Only claim model-specific observational equivalence, not independent experiments, full corpus saturation, causal motive verification or reader improvement."
+    },
+    {
+      "as_of": "2026-10-21",
+      "status": "RVD_V040_LOGICAL_COUNTEREXAMPLES_UNTESTED",
+      "new_documents": [
+        "research/RVD_CYCLE04_MOTIVE_POLICY_DIVERGENCE_2026-10-21_EN.md",
+        "research/RVD_CYCLE04_MOTIVE_POLICY_DIVERGENCE_2026-10-21_KO.md"
+      ],
+      "new_edition_pairs": 1,
+      "editorial_notes": "RVD R14-R17: policy/motive identifiability separation, hypothetical auxiliary-gain intervention, conditional robust margin and executable other-agent exit. No claim of published new theorem, AI feeling or field proof.",
+      "reviewer_actions": "Audit primary author papers, EN/KO semantic equivalence, utility and intervention assumptions; conduct ethical preregistered tests under a real, independently feasible B exit."
     }
   ],
   "path_layout_policy": "Keep the project root entry-only; bilingual full research editions live in existing research/ and their original historical combined documents retain stable root URLs."
