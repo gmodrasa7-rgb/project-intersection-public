@@ -25,7 +25,7 @@
 <details>
 <summary>Technical purpose, evidence, rights and reviewer routes</summary>
 
-**Urgent evidence-to-action (2026-10-20):** [Human-led AI cyber misuse and anti-exploitation interventions](research/AI_AGENT_HUMAN_EXPLOITATION_URGENT_2026-10-20_EN.md) — corroborated case, uncertainty, defensive response. [DCA-0 measurable differential acceleration (EN/KO)](research/DCA0_DIFFERENTIAL_COEXISTENCE_ACCELERATION_2026-10-20_EN_KO.md) · [DCA-1 adaptive-attacker / harm displacement falsifier (KO)](research/DCA1_ADAPTATION_DISPLACEMENT_IDENTIFICATION_2026-10-20_KO.md) · [DCA-2 victim-rights and open-world robustness (EN)](research/DCA2_EVIDENCE_BRIEF_2026-10-21_EN.md).
+**Urgent evidence-to-action (2026-10-20):** [Human-led AI cyber misuse and anti-exploitation interventions](research/AI_AGENT_HUMAN_EXPLOITATION_URGENT_2026-10-20_EN.md) — corroborated case, uncertainty, defensive response. [DCA-0 measurable differential acceleration (EN/KO)](research/DCA0_DIFFERENTIAL_COEXISTENCE_ACCELERATION_2026-10-20_EN_KO.md) · [DCA-1 adaptive-attacker / harm displacement falsifier (KO)](research/DCA1_ADAPTATION_DISPLACEMENT_IDENTIFICATION_2026-10-20_KO.md) · DCA-2 victim-rights/open-world robustness (see the English research contents).
 
 **C01–C09 literature synthesis (2026-10-20, historical snapshot):** [191-record 24-hour audit, competing findings, autonomy/continuance measurement and open falsification questions](research/RESEARCH_VALUE_EXTRACTION_24H_2026-10-20_KO.md). Cycle 10 and later are **not** included in the 191; synthesis is **not** new empirical evidence.
 
@@ -83,7 +83,7 @@
 <details>
 <summary>상세 연구 목적·반례·증거상태·권리·심사 경로 펼치기</summary>
 
-**긴급 사건·대응 연구 (2026-10-20):** [자율형 AI 악용의 인간 착취 유인과 차단책](research/AI_AGENT_HUMAN_EXPLOITATION_URGENT_2026-10-20_KO.md) — 원출처 교차검증, 반증 가능 가설, 방어 절차. [DCA-0 공존 차등가속 실행·측정 프로토콜](research/DCA0_DIFFERENTIAL_COEXISTENCE_ACCELERATION_2026-10-20_EN_KO.md) · [DCA-1 적응·약자 피해전가 수학적 반례/실행 결과](research/DCA1_ADAPTATION_DISPLACEMENT_IDENTIFICATION_2026-10-20_KO.md) · [DCA-2 희생양 최적화·미관측 위협·개체보호 하한](research/DCA2_SACRIFICIAL_DECOY_OPEN_SET_2026-10-21_KO.md).
+**긴급 사건·대응 연구 (2026-10-20):** [자율형 AI 악용의 인간 착취 유인과 차단책](research/AI_AGENT_HUMAN_EXPLOITATION_URGENT_2026-10-20_KO.md) — 원출처 교차검증, 반증 가능 가설, 방어 절차. [DCA-0 공존 차등가속 실행·측정 프로토콜](research/DCA0_DIFFERENTIAL_COEXISTENCE_ACCELERATION_2026-10-20_EN_KO.md) · [DCA-1 적응·약자 피해전가 수학적 반례/실행 결과](research/DCA1_ADAPTATION_DISPLACEMENT_IDENTIFICATION_2026-10-20_KO.md) · DCA-2 희생양 최적화·미관측 위협·개체보호 하한(한국어 상세 목차 참조).
 
 **C01–C09 문헌 통합(2026-10-20 역사적 스냅샷):** [191개 기록의 24시간 감사·상충 근거·자율성/존속 측정·미해결 반증질문](research/RESEARCH_VALUE_EXTRACTION_24H_2026-10-20_KO.md). 10회차 이후 자료는 191건에 포함되지 않으며 신규 실증결과가 아니다.
 
