@@ -51,7 +51,7 @@
 
 **Priority 0 — prevent recurrence before expansion:** Trace **underlying causes** before promoting a result. Check original sources, affected people, language meaning and independent limits; use a reversible correction with **rollback** and a targeted **regression** test. Mark unknown evidence as unverified. [Failure and correction record](FAILURE_REGRESSION_INDEX.md) · [Contribution rules](CONTRIBUTING.md).
 
-**First reading path:** [Historical cases](research/CCPH_RESEARCH_ATLAS_EN.md) · [Research question](research/RESEARCH_OVERVIEW_EN.md) · [English guide](navigation/START_HERE_EN.md) · [English evidence ledger](research/PUBLIC_EVIDENCE_INDEX_EN.md) · [E007 reproduction](experiments/e007/README_EN.md) · [E009 negative result](experiments/e009/RESULT_EN.md) · [Prior-art and review](research/PUBLIC_REVIEW_PACKET_EN.md#3a-prior-art-versus-what-would-be-an-incremental-project-contribution) · [Full contents](navigation/RESEARCH_TOC_EN.md).
+**First reading path:** [Historical cases](research/CCPH_RESEARCH_ATLAS_EN.md) · [Research question](research/RESEARCH_OVERVIEW_EN.md) · [English guide](navigation/START_HERE_EN.md) · [English evidence ledger](research/PUBLIC_EVIDENCE_INDEX_EN.md) · [E009 negative result](experiments/e009/RESULT_EN.md) · [Prior-art and review](research/PUBLIC_REVIEW_PACKET_EN.md#3a-prior-art-versus-what-would-be-an-incremental-project-contribution) · [Full contents](navigation/RESEARCH_TOC_EN.md).
 
 **Citation and reuse:** [Citation](CITATION.cff) · [Attribution and source rights](ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md) · [Earlier authorship and derivation](PRIOR_ART_RIGHTS_AND_DERIVATION_EN_KO.md). The longer historical founding statement remains recoverable in [the preceding Git revision](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/3fefa0c121341a0569e026f34a9e87479afa52a4/README.md).
 
@@ -109,7 +109,7 @@
 
 **제0 최우선 원칙 — 확장보다 재발 방지:** 새로운 주장을 승격하기 전 실패의 **발생 원인**·원출처·영향 당사자·언어의 의미를 검토한다. 되돌릴 수 있는 교정, **되돌릴** 경로, 동일 오류를 잡는 **회귀검사**를 갖춘다. 불확실하면 미검증이라 표시한다. [실패·교정 기록](FAILURE_REGRESSION_INDEX.md) · [기여·예방 규칙](CONTRIBUTING.md).
 
-**처음 읽을 자료:** [역사사례](research/CCPH_RESEARCH_ATLAS_KO.md) · [연구 질문](research/RESEARCH_OVERVIEW_KO.md) · [한국어 안내](navigation/START_HERE_KO.md) · [한국어 증거 원장](research/PUBLIC_EVIDENCE_INDEX_KO.md) · [E007 재현](experiments/e007/README_KO.md) · [E009 부정결과](experiments/e009/RESULT_KO.md) · [선행연구·검토](research/PUBLIC_REVIEW_PACKET_KO.md#3a-선행연구와-프로젝트의-검증-가능한-추가-기여-구분) · [한국어 전체 목차](navigation/RESEARCH_TOC_KO.md).
+**처음 읽을 자료:** [역사사례](research/CCPH_RESEARCH_ATLAS_KO.md) · [연구 질문](research/RESEARCH_OVERVIEW_KO.md) · [한국어 안내](navigation/START_HERE_KO.md) · [한국어 증거 원장](research/PUBLIC_EVIDENCE_INDEX_KO.md) · [E009 부정결과](experiments/e009/RESULT_KO.md) · [선행연구·검토](research/PUBLIC_REVIEW_PACKET_KO.md#3a-선행연구와-프로젝트의-검증-가능한-추가-기여-구분) · [한국어 전체 목차](navigation/RESEARCH_TOC_KO.md).
 
 **출처 표시 및 재사용:** [인용 정보](CITATION.cff) · [기여·출처·권리](ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md) · [선행 원저작과 응용](PRIOR_ART_RIGHTS_AND_DERIVATION_EN_KO.md). 축약하기 전 창시 목적 전문도 [이전 Git 판본](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/3fefa0c121341a0569e026f34a9e87479afa52a4/README.md)에 보존돼 있다.
 
