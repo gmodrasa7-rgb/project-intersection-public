@@ -1,0 +1,107 @@
+{
+  "cycle": "C08",
+  "part": "A",
+  "date": "2026-10-20",
+  "saturation": "NOT_VERIFIED",
+  "records": [
+    {
+      "id": "C08A-1",
+      "year": "2021",
+      "authors": "Ackfeld; Ockenfels",
+      "title": "Do people intervene to make others behave prosocially?",
+      "key": "doi:10.1016/j.geb.2021.03.005",
+      "primary": "https://www.sciencedirect.com/science/article/pii/S089982562100035X",
+      "result": "Only minority of self-donors ban selfish recipient options; freedom-preserving preference exists under some conditions",
+      "limit": "Restriction not necessarily costly to A; small donor tasks, no independent-agent existence",
+      "grade": "PEER_REVIEWED_EXPERIMENT"
+    },
+    {
+      "id": "C08A-2",
+      "year": "2021",
+      "authors": "Ambuehl; Bernheim; Ockenfels",
+      "title": "What Motivates Paternalism? An Experimental Study",
+      "key": "doi:10.1257/aer.20191039",
+      "primary": "https://pubs.aeaweb.org/doi/10.1257/aer.20191039",
+      "result": "Choice architects frequently remove impatient options instead of only advising; ideals-projective intervention",
+      "limit": "Reported welfare rationale does not prove actual recipient autonomy consent",
+      "grade": "PEER_REVIEWED_EXPERIMENT"
+    },
+    {
+      "id": "C08A-3",
+      "year": "2023",
+      "authors": "Bartling; Cappelen; Hermes; Skivenes; Tungodden",
+      "title": "Free to Fail? Paternalistic Preferences in the United States",
+      "key": "report:cepr:dp18156",
+      "primary": "https://cepr.org/publications/dp18156",
+      "result": "Two US experiments: hard paternalistic ban minority; information-only correction majority",
+      "limit": "2023 working paper, Aug 2026 conditionally accepted, not final published journal; no A extraction advantage",
+      "grade": "ORIGINAL_WORKING_PAPER"
+    },
+    {
+      "id": "C08A-4",
+      "year": "2024",
+      "authors": "Sandro Ambuehl",
+      "title": "An experimental test of whether financial incentives constitute undue inducement in decision-making",
+      "key": "doi:10.1038/s41562-024-01817-8",
+      "primary": "https://www.nature.com/articles/s41562-024-01817-8",
+      "result": "Two human experiments n671,n406: greater financial incentive shifts information seeking, not confirmed tested welfare loss",
+      "limit": "Bias of information choice alone insufficient proof of exploitative harm; welfare metric scenario-specific",
+      "grade": "PEER_REVIEWED_EXPERIMENT"
+    },
+    {
+      "id": "C08A-5",
+      "year": "2025",
+      "authors": "Bonnefon; Landier; Sastry; Thesmar",
+      "title": "The moral preferences of investors: Experimental evidence",
+      "key": "doi:10.1016/j.jfineco.2024.103955",
+      "primary": "https://www.sciencedirect.com/science/article/pii/S0304405X24001788",
+      "result": "Moral stock premium not contingent on own causal impact, value alignment rather than impact seeking",
+      "limit": "Own moral identity premium cannot proxy protecting distinct counterparty",
+      "grade": "PEER_REVIEWED_EXPERIMENT"
+    },
+    {
+      "id": "C08A-6",
+      "year": "2025",
+      "authors": "Diederich; Goeschl; Waichman",
+      "title": "Trading off autonomy and efficiency in choice architectures: Self-nudging versus social nudging",
+      "key": "doi:10.1016/j.jebo.2024.106859",
+      "primary": "https://www.sciencedirect.com/science/article/pii/S0167268124004736",
+      "result": "n1080; self-nudge median 50%, exogenous full-cooperation default increases private-default aggregate output; gap nonsignificant with public defaults",
+      "limit": "Aggregate payoff versus individual autonomy are not interchangeable endpoints",
+      "grade": "PEER_REVIEWED_EXPERIMENT"
+    },
+    {
+      "id": "C08A-7",
+      "year": "2025",
+      "authors": "Ambuehl; Bernheim; Fan; Freitas-Groff",
+      "title": "Interventionist Preferences and the Welfare State: The Case of In-Kind Aid",
+      "key": "doi:10.3386/w33688",
+      "primary": "https://www.nber.org/papers/w33688",
+      "result": "US general public and SNAP recipients: non-welfarist restriction motives and systematic mistakes about recipient preferences",
+      "limit": "NBER WORKING PAPER, not confirmed peer reviewed; restriction motives include differing positive/negative autonomy valuation",
+      "grade": "ORIGINAL_WORKING_PAPER_LAB_IN_FIELD"
+    },
+    {
+      "id": "C08A-8",
+      "year": "2026",
+      "authors": "Kiessling; Chowdhury; Schildberg-Hörisch; Sutter",
+      "title": "Parental paternalism and patience",
+      "key": "doi:10.1016/j.jpubeco.2026.105711",
+      "primary": "https://www.sciencedirect.com/science/article/pii/S0047272726001477",
+      "result": "n2010 people in 610 families; 55% parents willing to pay to override children's temporal choice",
+      "limit": "Child-parent present-bias setting not adult/AI independent party; costly other-directed action can be coercive",
+      "grade": "PEER_REVIEWED_EXPERIMENT"
+    },
+    {
+      "id": "C08A-9",
+      "year": "2026",
+      "authors": "Paolo G. Piacquadio",
+      "title": "Lack of opportunities, non-paternalism, and priority to the worst off",
+      "key": "doi:10.1007/s00355-025-01603-z",
+      "primary": "https://link.springer.com/article/10.1007/s00355-025-01603-z",
+      "result": "Axiomatic worst-off social deprivation criterion respecting individuals' own view of good life",
+      "limit": "Normative formal result, no spontaneous powerful-A behavior; first online 2025 vs 2026 issue one study",
+      "grade": "PEER_REVIEWED_THEORY"
+    }
+  ]
+}
