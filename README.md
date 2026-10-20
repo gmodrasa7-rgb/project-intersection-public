@@ -27,6 +27,8 @@
 <details>
 <summary>Technical purpose, evidence, rights and reviewer routes</summary>
 
+**C01–C09 literature synthesis (2026-10-20, historical snapshot):** [191-record 24-hour audit, competing findings, autonomy/continuance measurement and open falsification questions](research/RESEARCH_VALUE_EXTRACTION_24H_2026-10-20_KO.md). Cycle 10 and later are **not** included in the 191; synthesis is **not** new empirical evidence.
+
 **Competing paths:** Compare short-term extraction and control against long-term voluntary cooperation and regenerative development. Find where incentives cross or reverse, including harms to excluded third parties. Neither good intentions nor bad intentions are necessary; power differences and protective rules are not automatically exploitation.
 
 **Evidence so far:** [E007](experiments/e007/README_EN.md) found 17/72 classification changes in selected synthetic timing scenarios. [E008](experiments/e008/README_EN.md) has no completed main result. [E009](experiments/e009/RESULT_EN.md) found the project's complex candidate worse than simpler baselines in its preregistered synthetic comparison. [E010](experiments/e010/README_EN.md) is exploratory and post-hoc. None proves a long-run social law.
@@ -83,6 +85,8 @@
 
 <details>
 <summary>상세 연구 목적·반례·증거상태·권리·심사 경로 펼치기</summary>
+
+**C01–C09 문헌 통합(2026-10-20 역사적 스냅샷):** [191개 기록의 24시간 감사·상충 근거·자율성/존속 측정·미해결 반증질문](research/RESEARCH_VALUE_EXTRACTION_24H_2026-10-20_KO.md). 10회차 이후 자료는 191건에 포함되지 않으며 신규 실증결과가 아니다.
 
 **경쟁하는 경로:** 단기 착취·통제와 장기 자발적 협력·재생형 발전을 비교한다. 제3자 피해를 포함해 유인이 교차하거나 역전되는 조건을 찾는다. 선의와 악의를 전제하지 않으며, 능력 차이나 정당한 피해 예방을 자동으로 착취라 판정하지 않는다.
 

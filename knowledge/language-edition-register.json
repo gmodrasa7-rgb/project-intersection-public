@@ -352,11 +352,11 @@
     }
   ],
   "metrics": {
-    "markdown_total": 164,
+    "markdown_total": 165,
     "filename_classes": {
       "UNMARKED_LANGUAGE_UNVERIFIED": 42,
       "LEGACY_MIXED_READER_ENTRY": 2,
-      "KO_SUFFIX_UNVERIFIED": 76,
+      "KO_SUFFIX_UNVERIFIED": 77,
       "ORDERED_BILINGUAL_FOUNDER_OR_GOVERNANCE": 2,
       "EN_SUFFIX_UNVERIFIED": 20,
       "COMBINED_NAMING_UNVERIFIED": 22
@@ -1338,6 +1338,12 @@
       "content_equivalence": "NOT_REVIEWED"
     },
     {
+      "path": "research/RESEARCH_VALUE_EXTRACTION_24H_2026-10-20_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
       "path": "research/TERMINOLOGY_FIVE_AXES_V0_1_EN.md",
       "filename_class": "EN_SUFFIX_UNVERIFIED",
       "counterpart_path": "research/TERMINOLOGY_FIVE_AXES_V0_1_KO.md",
@@ -1540,6 +1546,16 @@
       "new_edition_pairs": 1,
       "editorial_notes": "Registered pre-existing 2026-10-20 source-critical single-language reports and literature-first policy alongside newly authored navigation/RESEARCH_PROGRAM_EN and KO. The C01-C10 reports are mostly Korean-original research notes; no missing English counterparts invented. Legacy metadata retained.",
       "reviewer_actions": "Independent English/Korean scientific claim comparison and historical corpus-wide source deduplication remain pending."
+    },
+    {
+      "as_of": "2026-10-20",
+      "status": "CONCURRENT_MAIN_SYNTHESIS_REGISTERED_NOT_INDEPENDENTLY_REVIEWED",
+      "new_documents": [
+        "research/RESEARCH_VALUE_EXTRACTION_24H_2026-10-20_KO.md"
+      ],
+      "new_edition_pairs": 0,
+      "editorial_notes": "Registered concurrent 24-hour prior-art C01–C09 synthesis on protected main during safe branch merge; date and evidence limits retained in README technical details and Korean TOC.",
+      "reviewer_actions": "C10 and later not part of the report's 191 curated records; verify manuscript source metadata before inferring corpus-global uniqueness."
     }
   ],
   "path_layout_policy": "Keep the project root entry-only; bilingual full research editions live in existing research/ and their original historical combined documents retain stable root URLs."
