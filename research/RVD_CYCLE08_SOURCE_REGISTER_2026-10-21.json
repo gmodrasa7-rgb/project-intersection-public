@@ -1,0 +1,86 @@
+{
+  "schema_version": "pi-rvd-cycle08-primary-lineage/v0.1",
+  "as_of": "2026-10-21",
+  "scientific_version": "v0.8.0",
+  "source_count": 6,
+  "new_distinct_to_rvd_c07": 2,
+  "no_field_experiments": true,
+  "full_text_audited": false,
+  "literature_saturation": "NOT_VERIFIED",
+  "original_project_thesis": "Original human-initiated A×B→C resonance and original B survival/autonomy under asymmetrical power",
+  "derived_application": "AI-assisted adversarial trust ownership, unverified independent witness and bounded quorum model test",
+  "conflict_limits": [
+    "Byzantine fault thresholds depend on exact synchrony/authentication/network assumptions; no generalized n>3f safety theorem claimed for RVD.",
+    "Toy 'quorum' is a stipulated approval gate rather than full Byzantine consensus.",
+    "An A-controllable log can be misleading, but independent observers may get other evidence.",
+    "Unbounded attacker power cannot be simultaneously assumed with permanently invulnerable external enforcement."
+  ],
+  "sources": [
+    {
+      "id": "SALTZER_SCHROEDER_1975",
+      "authors": "Jerome H. Saltzer; Michael D. Schroeder",
+      "year": 1975,
+      "title": "The Protection of Information in Computer Systems",
+      "doi": "10.1109/PROC.1975.9939",
+      "url": "https://www.mit.edu/~Saltzer/publications/pubs.html",
+      "status": "ALREADY_CITED_RVD_C07",
+      "role": "complete mediation, privilege separation, least privilege",
+      "boundary": "Design principle not proof of independent root or future AI rights."
+    },
+    {
+      "id": "LAMPORT_SHOSTAK_PEASE_1982",
+      "authors": "Leslie Lamport; Robert Shostak; Marshall Pease",
+      "year": 1982,
+      "title": "The Byzantine Generals Problem",
+      "doi": "10.1145/357172.357176",
+      "url": "https://www.microsoft.com/en-us/research/publication/byzantine-generals-problem/",
+      "status": "DISTINCT_ORIGINAL_ANTECEDENT",
+      "role": "agreement under inconsistent/hostile messages and explicit fault assumptions",
+      "boundary": "Byzantine agreement thresholds do NOT directly establish original B's veto, non-retaliation, or freedom."
+    },
+    {
+      "id": "DOUCEUR_2002",
+      "authors": "John R. Douceur",
+      "year": 2002,
+      "title": "The Sybil Attack",
+      "doi": "10.1007/3-540-45748-8_24",
+      "url": "https://www.microsoft.com/en-us/research/publication/the-sybil-attack/",
+      "status": "DISTINCT_ORIGINAL_ANTECEDENT",
+      "role": "one actor may control multiple apparent identities, undermining naive independent signers",
+      "boundary": "Independent authorities and key custody must be grounded in a specific system; not a proof of every quorum vulnerability."
+    },
+    {
+      "id": "ALPERN_SCHNEIDER_1985",
+      "authors": "Bowen Alpern; Fred B. Schneider",
+      "year": 1985,
+      "title": "Defining Liveness",
+      "doi": "10.1016/0020-0190(85)90056-0",
+      "url": "https://www.sciencedirect.com/science/article/pii/0020019085900560",
+      "status": "ALREADY_CITED_RVD_C07",
+      "role": "safety versus liveness, no bad outcome versus eventual possible progress",
+      "boundary": "A one-step exit test cannot establish unbounded liveness/fair scheduling or post-exit survival."
+    },
+    {
+      "id": "HIRSCHMAN_1970",
+      "authors": "Albert O. Hirschman",
+      "year": 1970,
+      "title": "Exit, Voice, and Loyalty",
+      "doi": null,
+      "url": "https://books.google.com/books/about/Exit_Voice_and_Loyalty.html?id=Owe3AAAAIAAJ",
+      "status": "ALREADY_CITED_RVD_C07",
+      "role": "voice distinct from actionable exit and its consequences",
+      "boundary": "Organizational analysis is not a cryptographic security guarantee."
+    },
+    {
+      "id": "SCHNEIDER_2000",
+      "authors": "Fred B. Schneider",
+      "year": 2000,
+      "title": "Enforceable Security Policies",
+      "doi": null,
+      "url": "https://ecommons.cornell.edu/entities/publication/73f44364-f45e-40b5-b581-301a42619b0d",
+      "status": "ALREADY_CITED_RVD_C07",
+      "role": "formal boundaries of execution monitoring",
+      "boundary": "Runtime enforcement does not reveal endogenous compliance when unmonitored."
+    }
+  ]
+}

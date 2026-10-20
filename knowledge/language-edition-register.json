@@ -457,6 +457,21 @@
         "Independent EN/KO semantic parity remains unverified.",
         "Rights of a simulated principal B are not actual external rights, and enforced denial is not endogenous A motive."
       ]
+    },
+    {
+      "id": "PI-MER-RVD-CYCLE08-20261021",
+      "original_1_english": "research/RVD_CYCLE08_AUTHORITY_CLOSURE_AND_INDEPENDENT_WITNESSES_2026-10-21_EN.md",
+      "original_2_korean": "research/RVD_CYCLE08_AUTHORITY_CLOSURE_AND_INDEPENDENT_WITNESSES_2026-10-21_KO.md",
+      "kind": "draft_hypothetical_trust_owner_model_unvalidated",
+      "structural_pair_present": true,
+      "meaning_review_status": "NOT_INDEPENDENTLY_VERIFIED",
+      "original_conception_language": "KO_HUMAN_PROJECT_AI_ASSISTED",
+      "independent_review_receipt": null,
+      "one_sided_edit_exception": null,
+      "known_divergences": [
+        "Cycle08 is a draft proposal; canonical main RVD version remains 0.7.0.",
+        "Not a real signer-custody, original B standing, deployed model, or autonomous-agent test."
+      ]
     }
   ],
   "legacy_priority_unresolved": [
@@ -498,13 +513,13 @@
     }
   ],
   "metrics": {
-    "markdown_total": 201,
+    "markdown_total": 203,
     "filename_classes": {
       "UNMARKED_LANGUAGE_UNVERIFIED": 42,
       "LEGACY_MIXED_READER_ENTRY": 2,
-      "KO_SUFFIX_UNVERIFIED": 91,
+      "KO_SUFFIX_UNVERIFIED": 92,
       "ORDERED_BILINGUAL_FOUNDER_OR_GOVERNANCE": 2,
-      "EN_SUFFIX_UNVERIFIED": 31,
+      "EN_SUFFIX_UNVERIFIED": 32,
       "COMBINED_NAMING_UNVERIFIED": 33
     },
     "meaning_verified_pairs": 0,
@@ -1706,6 +1721,18 @@
       "content_equivalence": "NOT_REVIEWED"
     },
     {
+      "path": "research/RVD_CYCLE08_AUTHORITY_CLOSURE_AND_INDEPENDENT_WITNESSES_2026-10-21_EN.md",
+      "filename_class": "EN_SUFFIX_UNVERIFIED",
+      "counterpart_path": "research/RVD_CYCLE08_AUTHORITY_CLOSURE_AND_INDEPENDENT_WITNESSES_2026-10-21_KO.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "research/RVD_CYCLE08_AUTHORITY_CLOSURE_AND_INDEPENDENT_WITNESSES_2026-10-21_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": "research/RVD_CYCLE08_AUTHORITY_CLOSURE_AND_INDEPENDENT_WITNESSES_2026-10-21_EN.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
       "path": "research/TERMINOLOGY_FIVE_AXES_V0_1_EN.md",
       "filename_class": "EN_SUFFIX_UNVERIFIED",
       "counterpart_path": "research/TERMINOLOGY_FIVE_AXES_V0_1_KO.md",
@@ -2122,6 +2149,17 @@
       "new_edition_pairs": 0,
       "editorial_notes": "Main received unrelated fundraising and operational records after this branch started. Registered filenames only without editing their scientific, fiscal, or original content.",
       "reviewer_actions": "Independent finance and language parity review remains with PI-RISE."
+    },
+    {
+      "as_of": "2026-10-21",
+      "status": "RVD_CYCLE08_DRAFT_NOT_MAIN_VERSION",
+      "new_documents": [
+        "research/RVD_CYCLE08_AUTHORITY_CLOSURE_AND_INDEPENDENT_WITNESSES_2026-10-21_EN.md",
+        "research/RVD_CYCLE08_AUTHORITY_CLOSURE_AND_INDEPENDENT_WITNESSES_2026-10-21_KO.md"
+      ],
+      "new_edition_pairs": 1,
+      "editorial_notes": "Draft trust-control study with hypothetical owners and compromise bounds, 0 new R-numbered hypotheses; v0.8.0 release still HOLD pending authorized version-manifest update.",
+      "reviewer_actions": "Independent original-author and EN/KO review before any version promotion; deployed-rights and AI motive remain UNTESTED."
     }
   ],
   "path_layout_policy": "Keep the project root entry-only; bilingual full research editions live in existing research/ and their original historical combined documents retain stable root URLs."
