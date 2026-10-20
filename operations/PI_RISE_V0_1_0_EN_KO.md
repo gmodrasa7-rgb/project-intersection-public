@@ -1,8 +1,8 @@
-<!-- PI-LANGUAGE: en-ko | PI-RISE v0.1.0 | Candidate on review branch, not merged -->
+<!-- PI-LANGUAGE: en-ko | PI-RISE v0.1.0 | Merged operational design, not real-world validation -->
 # PI-RISE v0.1.0 — Research Independence & Sustainability Engine
 ## 연구 독립성·지속가능성 운영체계
 
-**Status:** DRAFT / candidate, operational design, not a validated scientific theory or secured funding.
+**Status:** MAIN OPERATIONAL DESIGN v0.1.0; not independently verified as effective, not validated science or secured funding.
 **Date:** 2026-10-21. This is a NEW integration contract over existing records, not a retrospective renaming or revision of those records.
 
 ## Original 1 — English | Concise synopsis (not a certified translation)
@@ -23,7 +23,7 @@
 
 **Evidence integrity correction:** A JSON field marked `VERIFIED` is an input assertion, **not a bank or restoration audit**. The checker labels compute, recovery and evidence checks as self-reported, rejects unknown fields, and cannot authenticate receipts or consent. A false user assertion cannot be eliminated by schema validation.
 
-**Version status:** v0.1.0 candidate until main merge. Later revisions require verifiable changes and tests, not simply accumulated files. The public status must never be interpreted as grant disbursement or an external validation certificate.
+**Version status:** v0.1.0 is merged into main under PR #261. This documents a proposed operating method, not realized personal financial sustainability or independently reproduced scientific validity. Later revisions require verifiable changes and tests, not simply accumulated files. The public status must never be interpreted as grant disbursement or an external validation certificate.
 
 ---
 ## 원본 2 — 한국어 | 상세 운영규약 (영문 요약과 의미 동일성 미검증)
@@ -47,7 +47,7 @@
 | 외부지원·실사 | [자금지원 안내](../funding/FUNDER_START_HERE.md), [실사](../funding/DUE_DILIGENCE.md) | 권력비대칭/이해상충 검사 | 지원자에게 검증되지 않은 성과 보증 |
 | 증거·반례 | [연구증거색인](../research/PUBLIC_EVIDENCE_INDEX_EN.md), [E009](../experiments/e009/RESULT_EN.md) | 축소해도 불리한 결과와 원저자 계보 보존 | 제출을 위해 부정 결과 숨김 |
 | 공개/로컬 연속성 | [GitHub↔Local handoff](../continuity/GITHUB_LOCAL_HANDOFF_PROTOCOL.md) | 읽기검증·로컬복구 의존조건 감시 | 로컬저장 완료를 GitHub 쓰기로 대체 |
-| 자료 개선/버전 | [PI-RAMP](../protocols/PI_RAMP_V0_5_EN_KO.md), [버전원장](../navigation/RESEARCH_VERSIONS_EN_KO.md) | 업그레이드의 운영성과 확인 | 버전번호 증가를 과학적 진전으로 환산 |
+| 자료 개선/버전 | [PI-RAMP](../protocols/PI_RAMP_V0_6_EN_KO.md), [버전원장](../navigation/RESEARCH_VERSIONS_EN_KO.md) | 업그레이드의 운영성과 확인 | 버전번호 증가를 과학적 진전으로 환산 |
 | 신규 자원확보 초안 | [PI-EI-X1 + 지원계획 draft PR #257](https://github.com/gmodrasa7-rgb/project-intersection-public/pull/257) | 별도 미병합 지원제안으로 추적 | 검토 초안을 기수여 연구비로 계상 |
 
 **참조 상태:** 위 PR은 조회 시점 미병합 초안. 추후 병합 여부는 그때 다시 확인. 자료의 내용이 바뀌어도 자동으로 재정 사실이 되지 않음.
@@ -115,7 +115,7 @@
 [최소 실패조합과 선행 결함수 방법론](PI_RISE_CUT_V0_1_0_EN_KO.md): 가정된 8개 요소에 대한 논리적 최소 실패집합 6개를 탐색. 연구자 참여·지속조건·과학적 무결성·연구 독립성이 단일 의존점, 로컬·원격 연산 동시 장애 및 로컬·공개 자료 동시 장애가 이중 실패조합. 이는 실환경의 실패확률·건강·연구비 전망을 측정하지 않음. **입력 `VERIFIED` 역시 사용자가 표기한 상태일 뿐, 이 코드가 실제 은행 명세나 로컬 복원을 독립 확인한 게 아님.**
 
 ### 7. 다음 버전 게이트
-- v0.1.0 **설계:** 6개 자원 게이트, 재정 확인과 미확인 분리, 로컬 체크 도구, 합성 예제.
+- v0.1.0 **정본 운영 설계(실환경 유효성 미검증):** 6개 자원 게이트, 재정 확인과 미확인 분리, 로컬 체크 도구, 합성 예제.
 - v0.2.0 후보 **실운영 검증 후:** 비공개 실제 증빙으로 최소 1회 지출·수입 대사(사용자 권한), 연산 서비스 장애 및 실제 복구 재현, 사용자 부담 측정; 실패/비용 보고.
 - v1.0.0 후보 **독립 실행 뒤:** 담당자 외 검토자가 공개 합성 사례를 같은 결론으로 재현하고, 실제 운영에서 절차가 작동했다는 증빙 및 롤백 검증. '과학적으로 공존 증명'과 별개.
 - 기존 운영정본 변경 없이 별도 문서로 추가. 버전은 0.1.0 → 0.2.0이 **진전 증거가 아니라 방법 변경**임을 명시.

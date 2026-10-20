@@ -2,7 +2,7 @@
 # Project Intersection — Research identity, versions and validation states / 연구 정체성·버전·검증 상태
 **Registry document version: v0.2.0 · Snapshot: 2026-10-20 · Repository navigation and source-status audit, not scientific approval**
 
-**New operating-system candidate (2026-10-21):** [PI-RISE v0.1.0](../operations/PI_RISE_V0_1_0_EN_KO.md), separate from VC/MER/EI/ECR/IVS-0R scientific work and from PI-RAMP archive governance; **unmerged and not validated**. [Machine version receipt](../operations/PI_RISE_VERSION_MANIFEST.json).
+**New operating-system release (2026-10-21):** [PI-RISE v0.1.0](../operations/PI_RISE_V0_1_0_EN_KO.md), separate from VC/MER/EI/ECR/IVS-0R science and PI-RAMP archive governance; **merged operational design, not validated field effect**. [Machine version receipt](../operations/PI_RISE_VERSION_MANIFEST.json).
 
 ## Original 1 — English
 
