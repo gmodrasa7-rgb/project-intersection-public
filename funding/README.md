@@ -3,6 +3,8 @@
 
 Status date / 상태 기준일: **2026-10-04**
 
+**PI-RISE-VAC v0.1.0 candidate:** [Verification-aware resource allocation / 검증역량 제약 최적화](../operations/PI_RISE_VAC_V0_1_0_EN_KO.md) · [synthetic queue script](../tools/pi_rise_vac.py). $4,800–4,900/month assumes $3,750 hypothetical researcher gross, $400 reviewer reserve, $450–550 *all-in* AI spend, $200 buffer; reviewer participation and scientific effects **NOT verified**.
+
 **PI-RISE-BUDGET v0.1.0 main operational scenario (merged 2026-10-21):** [Net researcher pay versus independently reviewable research budget](../operations/PI_RISE_BUDGET_V0_1_0_EN_KO.md) · [Decimal calculator](../tools/pi_rise_budget.py). $3,785/month is a hypothetical 20% reserve scenario, not a certified tax rate or receipt. Old proposals unchanged.
 
 **PI-RISE v0.1.0 main / 연구 지속가능성:** [Operational independence, subsistence and recovery](../operations/PI_RISE_V0_1_0_EN_KO.md). A merged operational integration of existing funding and stewardship records; not a new fund receipt, personal account, or amendment to the canonical sponsorship policy.
