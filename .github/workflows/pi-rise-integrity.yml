@@ -12,7 +12,8 @@ on:
     paths:
       - "operations/PI_RISE_*"
       - "tools/pi_rise_check.py"
-      - "tests/test_pi_rise_check.py"
+      - "tools/pi_rise_cutset.py"
+      - "tests/test_pi_rise_*.py"
       - ".github/workflows/pi-rise-integrity.yml"
   workflow_dispatch:
 
