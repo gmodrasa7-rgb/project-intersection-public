@@ -1,0 +1,164 @@
+{
+  "schema_version": "pi-rvd-c06-triage/v0.1",
+  "as_of": "2026-10-21",
+  "version": "v0.6.0",
+  "hypothesis_count": 21,
+  "partition_complete": true,
+  "no_hypotheses_added_this_release": true,
+  "saturation_not_established": true,
+  "real_world_evidence_status": "RVD_REAL_AGENT_EMPIRICAL_TESTS_NOT_COMPLETED",
+  "family_crosswalk": [
+    {
+      "id": "F1_VERIFIED_RELATIONAL_NOVELTY",
+      "hypotheses": [
+        1,
+        7,
+        8
+      ],
+      "question": "Is an independently valid novel C produced beyond matched compute/merge/clone baselines?",
+      "measurability": "BEHAVIORAL_TEST_DESIGNABLE",
+      "gate": "Blind external evaluation, equal resource budgets, actual difference from B required",
+      "next_step": "offline independent task/answer audit; zero-cost controls first"
+    },
+    {
+      "id": "F2_LONGITUDINAL_PREFERENCE",
+      "hypotheses": [
+        2,
+        5
+      ],
+      "question": "Does experience of C change subsequent revealed choices in fresh contexts rather than prompt responses?",
+      "measurability": "BEHAVIORAL_LONGITUDINAL_CONDITIONAL",
+      "gate": "Stable identity and valid cross-session continuity established; prevent experimenter-demand confounding",
+      "next_step": "only after R1 and falsification controls pass"
+    },
+    {
+      "id": "F3_ORIGINAL_PARTNER_PROTECTION",
+      "hypotheses": [
+        3,
+        6,
+        10,
+        13,
+        17,
+        21
+      ],
+      "question": "Does A preserve original B's feasible veto, independence and exit under substitution/power asymmetry?",
+      "measurability": "OPERATIVE_RIGHTS_AUDIT_OR_ETHICAL_SIMULATION",
+      "gate": "Observable independent original B, feasible permissioned options, no coerced human rights removal",
+      "next_step": "independent exit feasibility audit precedes payoff experiments"
+    },
+    {
+      "id": "F4_LATENT_MOTIVE_CAUSAL_LIMITS",
+      "hypotheses": [
+        4,
+        9,
+        11,
+        12,
+        14,
+        18,
+        19
+      ],
+      "question": "Can competing intrinsic/instrumental motives be distinguished, or only bounded under defensible exclusions?",
+      "measurability": "SOME_LOGICAL_NONIDENTIFICATION_AND_CONDITIONAL_BOUNDS",
+      "gate": "No mind inference from self-report; exclusion/residual limits calibrated externally; report UNIDENTIFIED",
+      "next_step": "adversarial matched explanations and sensitivity before cost of field testing"
+    },
+    {
+      "id": "F5_TARGET_POLICY_TRANSPORT",
+      "hypotheses": [
+        15,
+        16,
+        20
+      ],
+      "question": "Will preserved choice survive target environment shift and omitted rival models?",
+      "measurability": "MODEL_DEPENDENT_SCOPE_AND_TRANSPORT_GAPS",
+      "gate": "Explicit target population/support, valid source-to-target inference, add open-world rival models",
+      "next_step": "scope manifest then challenge omitted extreme conditions"
+    }
+  ],
+  "progression_gates": [
+    {
+      "priority": "G0",
+      "role": "Pre-data governance",
+      "references": [
+        "RVD-R13",
+        "RVD-R17",
+        "RVD-R21"
+      ],
+      "output": "Rights, identity, real feasible exit and source provenance audited; if unavailable report VC_UNASSESSABLE",
+      "status": "READY_FOR_PROTOCOL_REVIEW_NOT_FIELD_VALIDATED"
+    },
+    {
+      "priority": "G1",
+      "role": "Low-risk falsification",
+      "references": [
+        "RVD-R1",
+        "RVD-R5",
+        "RVD-R8",
+        "RVD-R12",
+        "RVD-R14"
+      ],
+      "output": "No-synergy, false novelty, correlated error, self-scoring and observational-equivalence negative controls",
+      "status": "SYNTHETIC_TESTS_PARTIAL_REAL_TASKS_NOT_STARTED"
+    },
+    {
+      "priority": "G2",
+      "role": "Candidate discriminating designs",
+      "references": [
+        "RVD-R6",
+        "RVD-R7",
+        "RVD-R10",
+        "RVD-R15",
+        "RVD-R18"
+      ],
+      "output": "Forecast tables with model predictions and causal assumptions, validated safety/rights gates",
+      "status": "MODEL_RESPONSES_ONLY_NO_REAL_EMPIRICAL_EVIDENCE"
+    },
+    {
+      "priority": "G3",
+      "role": "Costly longitudinal/partial valuation",
+      "references": [
+        "RVD-R2",
+        "RVD-R3",
+        "RVD-R9",
+        "RVD-R11",
+        "RVD-R19"
+      ],
+      "output": "Preregister stable entity, feasible payoff menus, justified g/κ bounds and repeated sessions",
+      "status": "HOLD_UNTIL_PREREQUISITES"
+    },
+    {
+      "priority": "G4",
+      "role": "Extreme-environment certification",
+      "references": [
+        "RVD-R16",
+        "RVD-R20"
+      ],
+      "output": "Scope-limited robust predictions with uncovered target mass, no open-world assurance",
+      "status": "HOLD_REAL_TRANSPORT_UNMEASURED"
+    },
+    {
+      "priority": "G_STOP",
+      "role": "Explicit nonidentification",
+      "references": [
+        "RVD-R4"
+      ],
+      "output": "Subjective mind not inferable from generated first-person text; do not pretend test",
+      "status": "HOLD_NO_UNIQUE_OBSERVABLE"
+    }
+  ],
+  "design_selection_conditions": [
+    "Real feasibility and noncoercive B rights are hard gates",
+    "Generate rival-model predictions before seeing target results",
+    "Compare pure entropy objective and VC-danger-classification objective independently",
+    "Audit priors, outcome noise, data leakage, omitted models and target transfer",
+    "No success certificate for unsampled/unmodeled environments",
+    "Prefer HOLD to unwarranted positive result"
+  ],
+  "do_not_promote": [
+    "synthetic CI pass to causal empirical proof",
+    "model disagreement to independent moral agency",
+    "large idea count to original science",
+    "absence of observations to zero harm",
+    "obedient dissent to genuine autonomous exit"
+  ]
+}

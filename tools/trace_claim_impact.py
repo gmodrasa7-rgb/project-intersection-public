@@ -32,7 +32,7 @@ EXPECTED_CLAIMS = {
     "CL-VC-HARD": "UNRESOLVED",
     "CL-RAMP-EFFECT": "EFFECT_UNMEASURED",
 }
-EXPECTED_VERSIONS = {"RVD": "0.5.0", "PI-RAMP": "0.5.0", "DCA-1": "0.2.0"}
+EXPECTED_VERSIONS = {"RVD": "0.6.0", "PI-RAMP": "0.5.0", "DCA-1": "0.2.0"}
 # Independent contract sentinels for selected material dependencies.
 # These are necessary known edges, never a proof that no other edge is missing.
 REQUIRED_EDGES = {

@@ -61,13 +61,13 @@
     {
       "id": "SRC-RVD-MANIFEST",
       "path": "research/RVD_VERSION_MANIFEST.json",
-      "sha": "fb849aaca4fa8f8746cc200046304e7f8bec4515",
+      "sha": "82e62ad83228a08df94890ca076330b7e019d478",
       "probe": {
         "kind": "json_exact",
         "field": "scientific_status.empirical_validation",
         "expected": "UNTESTED"
       },
-      "caveat": "RVD v0.5.0 expands theory/protocol only; no RVD human/AI behavioral experiment, original empirical validation, or established causal mediator. Scientific status remains UNTESTED."
+      "caveat": "RVD v0.6.0 performs no new empirical evaluation; real B veto/exit, latent motive, model-class coverage, transport and extreme VC remain UNTESTED or unresolved. Synthetic choices/predictions are invented."
     },
     {
       "id": "SRC-RVD-CYCLE02",
@@ -392,6 +392,35 @@
       "declared_dependencies_complete": false,
       "result": "SCOPED_SOURCE_AND_PROVENANCE_REVIEW_DONE_NO_SCIENTIFIC_VERDICT",
       "limitation": "Only registered claim dependencies inspected; no complete provenance guarantee. Genuine causal exclusion, residual-gain bounds and target validity remain assumptions not demonstrated facts."
+    },
+    {
+      "review_id": "PI-CIG-RVD-V060-20261021",
+      "date": "2026-10-21",
+      "source_id": "SRC-RVD-MANIFEST",
+      "changed_path": "research/RVD_VERSION_MANIFEST.json",
+      "old_source_sha": "fb849aaca4fa8f8746cc200046304e7f8bec4515",
+      "new_source_sha": "82e62ad83228a08df94890ca076330b7e019d478",
+      "upstream_change": "Consolidates R1–R21 into five evidence families; no new hypotheses; synthetic equal-prior committee differentiates information gain from original-B hazard-classification value, with hard ethics/exit gate and omitted-model counterexample.",
+      "affected_claims_and_paths": [
+        {
+          "id": "CL-RVD-ORIGINAL",
+          "unchanged_status": "FORMAL_COUNTEREXAMPLE_ONLY"
+        },
+        {
+          "id": "CL-RVD-MOTIVE",
+          "unchanged_status": "MECHANISM_UNIDENTIFIED"
+        },
+        {
+          "id": "CL-VC-HARD",
+          "unchanged_status": "UNRESOLVED"
+        }
+      ],
+      "scientific_promotion": false,
+      "independent_validation": false,
+      "version_registry": "research/RESEARCH_VERSION_REGISTRY.json",
+      "declared_dependencies_complete": false,
+      "result": "SCOPED_SOURCE_AND_PROVENANCE_REVIEW_DONE_NO_SCIENTIFIC_VERDICT",
+      "limitation": "Only declared dependencies examined. No actual model preferences, causal experiments or independent semantic translation/parity certified; model-class incompleteness explicitly blocks safety claims."
     }
   ]
 }

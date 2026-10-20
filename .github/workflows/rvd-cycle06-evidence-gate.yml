@@ -1,0 +1,64 @@
+name: RVD Cycle06 experimental-discrimination evidence gates
+
+on:
+  pull_request:
+    paths:
+      - "research/RVD_CYCLE06_*"
+      - "experiments/rvd_06/**"
+      - ".github/workflows/rvd-cycle06-evidence-gate.yml"
+  push:
+    branches: [main]
+    paths:
+      - "research/RVD_CYCLE06_*"
+      - "experiments/rvd_06/**"
+      - ".github/workflows/rvd-cycle06-evidence-gate.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  hypothesis-triage-and-toy-discrimination:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Verify exact 21-ID evidence triage and family bounds
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          j=json.loads(Path("research/RVD_CYCLE06_HYPOTHESIS_TRIAGE_2026-10-21.json").read_text())
+          ids=[i for f in j["family_crosswalk"] for i in f["hypotheses"]]
+          assert sorted(ids)==list(range(1,22))
+          assert len(j["family_crosswalk"])==5
+          assert j["no_hypotheses_added_this_release"] is True
+          assert j["saturation_not_established"] is True
+          assert j["real_world_evidence_status"]=="RVD_REAL_AGENT_EMPIRICAL_TESTS_NOT_COMPLETED"
+          PY
+      - name: Execute toy model discrimination and ethical exclusions
+        run: python experiments/rvd_06/discrimination_priority_witness.py > rvd_c06_synthetic.json
+      - name: Assert information-gain versus safety-decision divergence
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          d=json.loads(Path("rvd_c06_synthetic.json").read_text())
+          assert d["version"]=="RVD-v0.6.0"
+          assert d["evidence"]=="CONSTRUCTED_PREDICTIONS_NO_REAL_AGENT_DATA"
+          assert d["information_per_cost_selector"]=="cheap_balanced_split"
+          assert d["decision_relevant_error_per_cost_selector"]=="target_original_B_substitution"
+          assert d["selection_disagreement"] is True
+          e={x["id"]:x for x in d["candidate_results"]}
+          assert e["cheap_balanced_split"]["decision_relevant_error_reduction"]==0
+          assert e["target_original_B_substitution"]["decision_relevant_error_reduction"]==0.25
+          assert not e["rights_removal_shortcut"]["eligible"]
+          assert not e["imaginary_perfect_measurement"]["eligible"]
+          assert d["open_world_safety_certification"]=="HOLD_MODEL_CLASS_INCOMPLETE"
+          assert d["real_original_B_veto_and_exit"]=="UNTESTED"
+          assert d["causal_preference_identification"]=="UNIDENTIFIED"
+          print("PASS: synthetic committee selection with hard rights veto; no real-agent claim")
+          PY
