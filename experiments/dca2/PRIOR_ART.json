@@ -1,0 +1,136 @@
+{
+  "cycle": "DCA-2",
+  "date": "2026-10-21",
+  "status": "SEARCH_ACTIVE_NOT_SATURATED",
+  "question": "Scarce defense allocation under attacker adaptation, individual safety floors, moralized victim costs and the limits of voluntary exit",
+  "query_families": [
+    "Grossklags Christin Chuang weakest target 2008 DOI",
+    "interdependent security Kunreuther Heal 2003",
+    "Gan An Vorobeychik protection externality 2015 AAAI",
+    "Nguyen Sinha Tambe robust adversarial uncertainty AAAI",
+    "Guo Gan inducibility attacker tie break 2019",
+    "Kiekintveld randomized security resource allocation 2009",
+    "Graser partner choice 2025 PLOS defect leave",
+    "Khatun Shen Tanimoto optional participation limits 2025 PRE"
+  ],
+  "actual_routes": [
+    "AAAI publisher abstract",
+    "PLOS primary full HTML selected sections",
+    "APS publisher abstract only",
+    "TUM institutional bibliography",
+    "UTEP first-author-affiliated source",
+    "RePEc independent bibliography crosscheck",
+    "Existing GitHub DCA-0, DCA-1 and prior-art map",
+    "GitHub code keyword search returned 0 indexed excerpts—not proof of canonical novelty"
+  ],
+  "source_count_in_receipt": 8,
+  "new_unique_papers_added_to_canonical_corpus": "NOT_DETERMINED",
+  "previously_registered_reused": [
+    "10.1023/A:1024119208153"
+  ],
+  "independent_field_replication": "NOT_OBSERVED",
+  "full_disciplines_saturation": false,
+  "source_records": [
+    {
+      "id": "DCA2-PA01",
+      "authors": "Grossklags, Jens; Christin, Nicolas; Chuang, John",
+      "year": 2008,
+      "title": "Secure or Insure? A Game-Theoretic Analysis of Information Security Games",
+      "doi": "10.1145/1367497.1367526",
+      "source_url": "https://portal.fis.tum.de/en/publications/secure-or-insure-a-game-theoretic-analysis-of-information-securit/",
+      "primary_causal_or_formal_mechanism": "Game theory: weakest-target; protection vs insurance; social vs private optima",
+      "access_level": "INSTITUTIONAL_ABSTRACT_AND_DOI_CHECKED",
+      "limitations": "Full ACM text not examined; Berkeley host 403"
+    },
+    {
+      "id": "DCA2-PA02",
+      "authors": "Kunreuther, Howard; Heal, Geoffrey",
+      "year": 2003,
+      "title": "Interdependent Security",
+      "doi": "10.1023/A:1024119208153",
+      "source_url": "https://ideas.repec.org/a/kap/jrisku/v26y2003i2-3p231-49.html",
+      "primary_causal_or_formal_mechanism": "Interdependent protection investment and equilibria",
+      "access_level": "PREVIOUS_DCA1_PRIOR_ART_REUSED",
+      "limitations": "Not a new independent result; abstract/index verified"
+    },
+    {
+      "id": "DCA2-PA03",
+      "authors": "Gan, Jiarui; An, Bo; Vorobeychik, Yevgeniy",
+      "year": 2015,
+      "title": "Security Games with Protection Externalities",
+      "doi": "10.1609/aaai.v29i1.9323",
+      "source_url": "https://ojs.aaai.org/index.php/AAAI/article/view/9323",
+      "primary_causal_or_formal_mechanism": "Positive protection spillovers; counterexample to no-spillover assumption",
+      "access_level": "PUBLISHER_ABSTRACT_REVIEWED",
+      "limitations": "No transitive spillover measured in our toy"
+    },
+    {
+      "id": "DCA2-PA04",
+      "authors": "Nguyen, Thanh; Sinha, Arunesh; Tambe, Milind",
+      "year": 2016,
+      "title": "Conquering Adversary Behavioral Uncertainty in Security Games: An Efficient Modeling Robust Based Algorithm",
+      "doi": "10.1609/aaai.v30i1.9960",
+      "source_url": "https://ojs.aaai.org/index.php/AAAI/article/view/9960",
+      "primary_causal_or_formal_mechanism": "Robust uncertainty intervals over attacker behavior",
+      "access_level": "PUBLISHER_ABSTRACT_REVIEWED",
+      "limitations": "Does not justify out-of-set attacker claims"
+    },
+    {
+      "id": "DCA2-PA05",
+      "authors": "Guo, Qingyu; Gan, Jiarui; Fang, Fei; Tran-Thanh, Long; Tambe, Milind; An, Bo",
+      "year": 2019,
+      "title": "On the Inducibility of Stackelberg Equilibrium for Security Games",
+      "doi": "10.1609/aaai.v33i01.33012020",
+      "source_url": "https://ojs.aaai.org/index.php/AAAI/article/view/4031",
+      "primary_causal_or_formal_mechanism": "Defender-favorable follower tie assumptions can be unrealistic",
+      "access_level": "PUBLISHER_ABSTRACT_REVIEWED",
+      "limitations": "Our toy is not a general Stackelberg equilibrium"
+    },
+    {
+      "id": "DCA2-PA06",
+      "authors": "Kiekintveld, Christopher; Jain, Manish; Tsai, Jason; Pita, James; Ordóñez, Fernando; Tambe, Milind",
+      "year": 2009,
+      "title": "Computing Optimal Randomized Resource Allocations for Massive Security Games",
+      "doi": null,
+      "source_url": "https://www.cs.utep.edu/kiekintveld/papers/2009/kjtpot-massive-security-games.htm",
+      "primary_causal_or_formal_mechanism": "Randomized protection under observed strategic responses",
+      "access_level": "AUTHOR_ABSTRACT_REVIEWED",
+      "limitations": "No mixed strategy computed here"
+    },
+    {
+      "id": "DCA2-PA07",
+      "authors": "Graser, Christopher; Fujiwara-Greve, Takako; García, Julián; van Veelen, Matthijs",
+      "year": 2025,
+      "title": "Repeated games with partner choice",
+      "doi": "10.1371/journal.pcbi.1012810",
+      "source_url": "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1012810",
+      "primary_causal_or_formal_mechanism": "Exit increases cooperation in simulations; defect-and-leave mutants limit immediate universal cooperation",
+      "access_level": "ORIGINAL_JOURNAL_HTML_PARTIALLY_REVIEWED",
+      "limitations": "Not field evidence of AI intrinsic preferences"
+    },
+    {
+      "id": "DCA2-PA08",
+      "authors": "Khatun, Khadija; Shen, Chen; Tanimoto, Jun",
+      "year": 2025,
+      "title": "Optional participation only provides a narrow scope for sustaining cooperation",
+      "doi": "10.1103/PhysRevE.111.024306",
+      "source_url": "https://journals.aps.org/pre/abstract/10.1103/PhysRevE.111.024306",
+      "primary_causal_or_formal_mechanism": "Conditional cooperation under optional participation, outside payoff and motivations",
+      "access_level": "PUBLISHER_ABSTRACT_ONLY",
+      "limitations": "Subscription full text inaccessible"
+    }
+  ],
+  "crosscheck_limitations": [
+    "DOI/name were matched to scholarly publisher or institutional metadata; some inaccessible full texts not read",
+    "A paper studying security resources does not independently validate an AI agent or the DCA-2 arbitrary numerical model",
+    "Three attacker types selected by model designer, not sampled from world",
+    "A perfect-information attacker, known static pure defense and zero spillovers are simplifications",
+    "No literature saturation, no real-world defense interventions, no proof of AI consciousness or intrinsic motives"
+  ],
+  "next_fronts": [
+    "Positive cross-target protection spillovers and optimal resource sufficiency",
+    "Mixed randomized defender strategies vs nonstationary attacker observation",
+    "Causal identification of genuine informed veto and agent intention",
+    "Human data and defender harm-displacement field measures with explicit authorization"
+  ]
+}
