@@ -4,7 +4,7 @@
 
 **New operating-system release (2026-10-21):** [PI-RISE v0.1.0](../operations/PI_RISE_V0_1_0_EN_KO.md), separate from VC/MER/EI/ECR/IVS-0R science and PI-RAMP archive governance; **merged operational design, not validated field effect**. [Machine version receipt](../operations/PI_RISE_VERSION_MANIFEST.json).
 
-**Verification-aware allocation submodule CANDIDATE:** [PI-RISE-VAC v0.1.0](../operations/PI_RISE_VAC_V0_1_0_EN_KO.md), [version manifest](../operations/PI_RISE_VAC_VERSION_MANIFEST.json). Formal synthetic reviewer-backlog and budget arithmetic; not real independent evaluation or a change to parent PI-RISE / PI-RISE-BUDGET status. / **검증역량 제약 배분 후보:** 고성능 모델 사용의 검증부채 증가 가설을 반증 가능하게 정의, 실증 미실시.
+**Verification-aware allocation submodule MAIN (2026-10-21):** [PI-RISE-VAC v0.1.0](../operations/PI_RISE_VAC_V0_1_0_EN_KO.md), [version manifest](../operations/PI_RISE_VAC_VERSION_MANIFEST.json). Formal synthetic reviewer-backlog and budget arithmetic; not real independent evaluation or a change to parent PI-RISE / PI-RISE-BUDGET status. / **검증역량 제약 배분 정본 운영모형:** 고성능 모델 사용의 검증부채 증가 가설을 반증 가능하게 정의, 실증 미실시.
 
 ## Original 1 — English
 
