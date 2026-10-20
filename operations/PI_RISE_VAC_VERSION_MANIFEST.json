@@ -2,7 +2,7 @@
   "component_id": "PI-RISE-VAC",
   "long_name": "Project Intersection Verification-Aware Capacity",
   "version": "0.1.0",
-  "release_status": "UNMERGED_CANDIDATE",
+  "release_status": "MAIN_OPERATIONAL_SYNTHETIC_NOT_FIELD_VALIDATED",
   "date": "2026-10-21",
   "parent_protocol": "PI-RISE v0.1.0 MAIN; parent is not upgraded",
   "parent_budget_protocol": "PI-RISE-BUDGET v0.1.0 MAIN; not amended",
@@ -12,7 +12,7 @@
   "artifacts": [
     {
       "path": "operations/PI_RISE_VAC_V0_1_0_EN_KO.md",
-      "git_blob_sha": "307a37e703b5b33435cab27f9464a399e63e89a0"
+      "git_blob_sha": "3874d0cb32acc99c4ba51ebf259924583cdcd3f7"
     },
     {
       "path": "tools/pi_rise_vac.py",
@@ -47,5 +47,15 @@
     "funding/30_DAY_BRIDGE.md",
     "funding/90_DAY_PILOT.md",
     "operations/PI_RISE_BUDGET_V0_1_0_EN_KO.md"
-  ]
+  ],
+  "main_pr": 269,
+  "main_merge_commit": "0dc01e52211b4b18fbf74fe63a1f80c6fa525d0d",
+  "ci_receipt": {
+    "pr_head_sha": "aa3a833364d2d29ce0f145d4c6be837ba1f418da",
+    "workflows_passed": 7,
+    "synthetic_tests_passed": 52,
+    "actual_reviewers_hired": false,
+    "independent_field_validation": false
+  },
+  "status_caveat": "The PR release receipt must itself be merged for this metadata to appear on main."
 }
