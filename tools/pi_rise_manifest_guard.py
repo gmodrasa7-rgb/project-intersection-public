@@ -74,19 +74,23 @@ def audit(data: dict, root: Path = ROOT) -> dict:
     artifacts = data.get("artifacts")
     _require(type(artifacts) is list, "ARTIFACTS_NOT_ARRAY")
     seen = set()
+    parsed = []
     for item in artifacts:
         _require(type(item) is dict and set(item) == {"path", "git_blob_sha"},
                  "INVALID_ARTIFACT_RECORD")
         path, expected = item["path"], item["git_blob_sha"]
         _require(type(path) is str and path not in seen, "DUPLICATE_OR_INVALID_PATH")
-        seen.add(path)
         _require(type(expected) is str and SHA.fullmatch(expected) is not None,
                  "INVALID_SHA:" + path)
-        actual = git_blob_sha(_file(root, path).read_bytes())
-        _require(expected == actual, "STALE_GIT_BLOB_SHA:" + path +
-                 ":expected=" + expected + ":actual=" + actual)
+        file_path = _file(root, path)
+        seen.add(path)
+        parsed.append((path, expected, file_path))
     _require(REQUIRED_ARTIFACTS.issubset(seen),
              "MISSING_REQUIRED_ARTIFACTS:" + ",".join(sorted(REQUIRED_ARTIFACTS - seen)))
+    for path, expected, file_path in parsed:
+        actual = git_blob_sha(file_path.read_bytes())
+        _require(expected == actual, "STALE_GIT_BLOB_SHA:" + path +
+                 ":expected=" + expected + ":actual=" + actual)
 
     _file(root, SPONSORSHIP)
     for ref in [data.get("predecessor"), *(data.get("preserved_submodules") or [])]:
