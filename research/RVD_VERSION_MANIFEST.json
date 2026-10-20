@@ -4,7 +4,7 @@
   "research_name_en": "Resonance–Value Dynamics",
   "research_name_ko": "공명·가치 동역학",
   "acronym": "RVD",
-  "current_version": "v0.5.0",
+  "current_version": "v0.6.0",
   "version_scheme": "MAJOR.MINOR.PATCH",
   "inception_date": "2026-10-20",
   "parent_axes": [
@@ -56,7 +56,12 @@
     "INTRINSIC_VALUE_LOWER_BOUND_REQUIRES_EXTERNALLY_JUSTIFIED_RESIDUAL_AND_LEAKAGE_BOUNDS",
     "SOURCE_ENVIRONMENT_SUCCESS_DOES_NOT_ESTABLISH_TARGET_TRANSPORT",
     "TARGET_SUPPORT_AND_B_ACTUAL_EXIT_SEPARATE_FROM_C_OUTPUT",
-    "NO_REAL_AGENT_EMPIRICAL_CLAIM_FROM_SYNTHETIC_C05"
+    "NO_REAL_AGENT_EMPIRICAL_CLAIM_FROM_SYNTHETIC_C05",
+    "EXPERIMENTAL_INFORMATION_GAIN_NOT_EQUAL_TO_COEXISTENCE_RISK_REDUCTION",
+    "RIGHTS_AND_NONHARMFUL_FEASIBILITY_ARE_HARD_GATES",
+    "CLOSED_WORLD_MODEL_IDENTIFICATION_NOT_OPEN_WORLD_SAFETY",
+    "21_HYPOTHESES_ARE_NOT_21_EMPIRICAL_REPLICATIONS",
+    "ACTUAL_RVD_AGENT_EXPERIMENT_STATUS_REMAINS_UNTESTED"
   ],
   "hypothesis_ids": [
     "RVD-R1",
@@ -101,7 +106,12 @@
     "cycle05_en": "research/RVD_CYCLE05_EXCLUSION_TRANSPORT_SENSITIVITY_2026-10-21_EN.md",
     "cycle05_ko": "research/RVD_CYCLE05_EXCLUSION_TRANSPORT_SENSITIVITY_2026-10-21_KO.md",
     "cycle05_source_register": "research/RVD_CYCLE05_SOURCE_REGISTER_2026-10-21.json",
-    "cycle05_toy_code": "experiments/rvd_05/intervention_transport_witness.py"
+    "cycle05_toy_code": "experiments/rvd_05/intervention_transport_witness.py",
+    "cycle06_en": "research/RVD_CYCLE06_DISCRIMINATION_PORTFOLIO_2026-10-21_EN.md",
+    "cycle06_ko": "research/RVD_CYCLE06_DISCRIMINATION_PORTFOLIO_2026-10-21_KO.md",
+    "cycle06_source_register": "research/RVD_CYCLE06_SOURCE_REGISTER_2026-10-21.json",
+    "cycle06_hypothesis_triage": "research/RVD_CYCLE06_HYPOTHESIS_TRIAGE_2026-10-21.json",
+    "cycle06_synthetic_code": "experiments/rvd_06/discrimination_priority_witness.py"
   },
   "change_rules": {
     "MAJOR": "Scientific construct or estimand redefinition breaking compatibility",
@@ -162,7 +172,7 @@
     {
       "version": "v0.5.0",
       "date": "2026-10-21",
-      "state": "CURRENT_SPECIFICATION_EXTENSION",
+      "state": "HISTORICAL_SPECIFICATION_EXTENSION",
       "previous_version": "v0.4.0",
       "change": "R18 randomized intervention non-ID of latent pathway, R19 exclusion-leakage sensitivity outer bound, R20 target-environment uncovered-mass transfer bounds, R21 executable original-B rights distinct from protective choices. Five antecedent scholarly lineages and reproducible toy CI.",
       "new_project_empirical_observations": 0,
@@ -170,8 +180,23 @@
       "independent_replication": false,
       "scientific_promotion": false,
       "previous_negative_results_preserved": true
+    },
+    {
+      "version": "v0.6.0",
+      "date": "2026-10-21",
+      "state": "CURRENT_SPECIFICATION_EXTENSION",
+      "previous_version": "v0.5.0",
+      "change": "Evidence-preparation pivot: all R1–R21 grouped into five falsification families; no new numbered hypothesis. Testable toy distinguishes expected information gain per invented cost from hazardous original-B-preservation model classification, enforces ethical vetoes, demonstrates omitted-model danger.",
+      "new_hypotheses": 0,
+      "hypotheses_total": 21,
+      "source_lineages": 6,
+      "empirical_data_added": false,
+      "synthetic_logic_only": true,
+      "independent_replication": false,
+      "scientific_promotion": false,
+      "previous_negative_results_preserved": true
     }
   ],
-  "next_gate": "Independent original-author full-text lineage review and externally justified bounds on exclusion leakage and target support, then ethically preregistered randomized tests. No transport, inner-mind, or extreme VC claim without real identifiable data.",
+  "next_gate": "Independently audit actual B veto/exit feasibility and causal variables; construct externally justified rival-model forecasts and ethically preregistered real test before any empirical evidence promotion. No open-world safety certificate from toy model-class experiment selection.",
   "contribution_boundary": "Human originator's resonance concept; AI-assisted organization and version record. Historical quotations from earlier AI summaries not independently re-read."
 }
