@@ -70,6 +70,8 @@ def check_ci_contract(text):
             "CI_HISTORY_AUDIT_NOT_EXECUTED")
     require("python3 tools/pi_flr_experiment_identity.py" in text,
             "CI_IDENTITY_GUARD_NOT_EXECUTED")
+    require("python3 tools/check_public_navigation.py --strict-all" in text,
+            "CI_WHOLE_REPOSITORY_LINK_GUARD_NOT_EXECUTED")
     return True
 
 
