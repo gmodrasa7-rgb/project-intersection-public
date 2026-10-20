@@ -1,7 +1,7 @@
 {
   "registry_id": "PI-FLR",
   "schema_version": "0.1.0",
-  "release_version": "0.1.0",
+  "release_version": "0.1.1",
   "as_of": "2026-10-21",
   "korean_name": "오류·학습·복구 재귀원장",
   "english_name": "Failure–Learning–Repair Registry",
@@ -45,6 +45,13 @@
       "detector": "tools/pi_flr_audit.py::check_ci_contract",
       "workflow": ".github/workflows/pi-flr-integrity.yml",
       "mutation_test": "test_regression_path_filtered_ci"
+    },
+    {
+      "id": "FLR-C04",
+      "title": "E010 experiment lineage collision and evidence-grade firewall",
+      "detector": "tools/pi_flr_experiment_identity.py::audit_identity",
+      "workflow": ".github/workflows/pi-flr-integrity.yml",
+      "mutation_test": "test_regression_e010_identity_collision"
     }
   ],
   "cases": [
@@ -223,6 +230,71 @@
           "kind": "LIMITATION_RECORDED",
           "evidence_url": "https://github.com/gmodrasa7-rgb/project-intersection-public/pull/275",
           "note": "Cannot claim enforced required status checks or permanent recurrence prevention without branch settings verification."
+        }
+      ]
+    },
+    {
+      "id": "FLR-0004",
+      "title_ko": "E010 실험번호 재사용으로 별개 연구의 증거·사전등록 상태 충돌",
+      "title_en": "E010 identifier collision across unrelated blocked and published experiments",
+      "category": "EVIDENCE_DRIFT",
+      "root_cause": "Two independent studies shared experiment identifier E010 without globally enforced provenance and uniqueness boundaries: the blocked 2026-10-06 safety-inspection draft and the published 2026-10-12 exploratory one-shot synthetic experiment.",
+      "trigger": "The unmerged historic PR #20 and main's E010 used identical experiment label while representing distinct constructions, results and validation status.",
+      "observable": "GitHub PR #91 explicitly documents P0 E010 identity collision. Published experiments/e010/README_KO.md distinguishes legacy PR #20 from 108-case posthoc result; experiments/e010/RESULT.json declares a different model and synthetic status.",
+      "impact": "Risk of attributing a blocked dynamic-inspection preregistration, prior-art or negative outcome to unrelated published E010, thereby misleading researchers about evidence and novelty.",
+      "counterfactual": "If historical design and modern E010 were merged on identifier alone, a green CI could fail to distinguish an unexecuted preregistration from a self-run exploratory synthetic result.",
+      "repair": "PR #91 separated lineage in canonical README and bilingual evidence registers; added governance CI to reject benchmark import, study model replacement, false preregistration or scientific status promotion. PI-FLR-C04 now independently replays those invariants in all-PR CI.",
+      "preventive_control_ids": [
+        "FLR-C04"
+      ],
+      "regression_test": "test_regression_e010_identity_collision",
+      "limitations": [
+        "The detector protects this known E010 collision, not global uniqueness of all past or future experiment identifiers.",
+        "A GitHub PR claim and status guard are not scientific reproduction or empirical validation.",
+        "No information obtained from Gmail; this case was independently verified from GitHub sources."
+      ],
+      "events": [
+        {
+          "seq": 1,
+          "date": "2026-10-13",
+          "kind": "FAILURE_OBSERVED",
+          "evidence_url": "https://github.com/gmodrasa7-rgb/project-intersection-public/pull/91",
+          "note": "Pull request identifies a P0 collision: legacy blocked safety-inspection E010 vs independently published exploratory E010."
+        },
+        {
+          "seq": 2,
+          "date": "2026-10-13",
+          "kind": "ROOT_CAUSE_REVIEWED",
+          "evidence_url": "https://github.com/gmodrasa7-rgb/project-intersection-public/pull/20",
+          "note": "Archived October 6 safety-inspection draft never produced a scientific E010 result; canonical E010 is a different model."
+        },
+        {
+          "seq": 3,
+          "date": "2026-10-13",
+          "kind": "REPAIR_APPLIED",
+          "evidence_url": "https://github.com/gmodrasa7-rgb/project-intersection-public/pull/91",
+          "note": "Bilingual source registry and E010 result identity protections introduced without combining experiment histories."
+        },
+        {
+          "seq": 4,
+          "date": "2026-10-13",
+          "kind": "CI_PASS_OBSERVED",
+          "evidence_url": "https://github.com/gmodrasa7-rgb/project-intersection-public/actions/runs/38402285949",
+          "note": "Original E010 analytic falsification/recorded-result workflow passed for PR #91 head."
+        },
+        {
+          "seq": 5,
+          "date": "2026-10-13",
+          "kind": "FIX_MERGED",
+          "evidence_url": "https://github.com/gmodrasa7-rgb/project-intersection-public/commit/17ad983c793c363c88f29dc03a651605c0f16712",
+          "note": "PR #91 correction merged; blocked PR #20 remained separate and unmerged."
+        },
+        {
+          "seq": 6,
+          "date": "2026-10-21",
+          "kind": "LIMITATION_RECORDED",
+          "evidence_url": "https://github.com/gmodrasa7-rgb/project-intersection-public/pull/91",
+          "note": "A corrected known identity collision alone does not establish repository-wide uniqueness or reliability of future identifiers."
         }
       ]
     }
