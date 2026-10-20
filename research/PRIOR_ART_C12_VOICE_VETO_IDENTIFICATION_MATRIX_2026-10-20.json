@@ -1,0 +1,189 @@
+{
+  "schema": "PI.C12.VOICE_VETO_IDENTIFICATION.v1",
+  "date": "2026-10-20",
+  "related_prior_art_ledger": "research/PRIOR_ART_VOICE_VETO_AUTONOMY_CYCLE12_2026-10-20.json",
+  "status": "PROPOSED_CONSTRUCTS__NOT_VALIDATED",
+  "core_failure": "Actual kindness, voice, perceived fairness or good monetary outcomes do not prove that B had meaningful veto, exit, identity continuity or that A could have gained g>0 by overriding B and truly chose not to.",
+  "originality": "Cross-study differentiation is PI's proposed audit framing, not claimed new source mechanisms or proven AI psychology.",
+  "observation_counterexample": [
+    {
+      "world": "Loyal subordinate after hearing opportunity",
+      "source": "Kleine et al 2017",
+      "outcome": "A receives 90% more gratitude transfers",
+      "B_right": "B cannot veto A allocation"
+    },
+    {
+      "world": "Same-team companion allocations",
+      "source": "Kleine et al 2016",
+      "outcome": "B speaker receives less on average than baseline",
+      "B_right": "A still makes unilateral allocation"
+    },
+    {
+      "world": "New 2026 human other-payoff experiment",
+      "source": "Berg & Rietz 2026",
+      "outcome": "population mean neutral",
+      "B_right": "individuals vary from altruistic to malicious; B has no independent refusal"
+    },
+    {
+      "world": "Forced harm awareness of strong A",
+      "source": "Grossman et al 2026",
+      "outcome": "B payout higher",
+      "B_right": "A did not consent to information but B did not gain veto"
+    }
+  ],
+  "axes": [
+    {
+      "axis": "C12-M01",
+      "name": "B_CAN_SPEAK",
+      "operational_definition": "B message delivered to A",
+      "prior_art_ids": [
+        "C12-11",
+        "C12-12",
+        "C12-13",
+        "C12-15"
+      ],
+      "unmeasured_critical": "B can stop A's actual override",
+      "grade": "DIRECT_HUMAN_VOICE_NOT_VETO"
+    },
+    {
+      "axis": "C12-M02",
+      "name": "A_LISTENS_AND_TRANSFER",
+      "operational_definition": "A outcome after B speaks, relative to baseline",
+      "prior_art_ids": [
+        "C12-12",
+        "C12-13",
+        "C12-15"
+      ],
+      "unmeasured_critical": "B's independent freedom or actually enforceable refusal",
+      "grade": "DIRECT_ALLOCATION_ENDPOINT_ONLY"
+    },
+    {
+      "axis": "C12-M03",
+      "name": "B_VETO_EXECUTABLE",
+      "operational_definition": "B can technically prohibit A action X",
+      "prior_art_ids": [],
+      "unmeasured_critical": "No primary C12 study grants B a fully enforceable independent veto against profitable A takeover",
+      "grade": "NOT_IDENTIFIED"
+    },
+    {
+      "axis": "C12-M04",
+      "name": "B_CAN_WITHDRAW_DELEGATION",
+      "operational_definition": "B can revoke consent previously granted",
+      "prior_art_ids": [
+        "C12-01",
+        "C12-09",
+        "C12-17"
+      ],
+      "unmeasured_critical": "Delegation remains revocable when A monopolizes decision infrastructure",
+      "grade": "PREFERENCE_AND_NORMATIVE_ONLY"
+    },
+    {
+      "axis": "C12-M05",
+      "name": "A_COST_FOR_PRESERVING_B_AUTONOMY",
+      "operational_definition": "A loses real gain g for preserving B's right to refuse",
+      "prior_art_ids": [
+        "C12-03",
+        "C12-11"
+      ],
+      "unmeasured_critical": "Actual autonomous B veto and g_A opportunity cost manipulated simultaneously",
+      "grade": "NOT_DIRECTLY_IDENTIFIED"
+    },
+    {
+      "axis": "C12-M06",
+      "name": "A_WELFARE_TO_B",
+      "operational_definition": "A suffers own monetary reduction to improve B money",
+      "prior_art_ids": [
+        "C12-02",
+        "C12-03",
+        "C12-15"
+      ],
+      "unmeasured_critical": "Is the improvement consent-aligned or B autonomously selected?",
+      "grade": "DIRECT_WELFARE_NOT_AUTONOMY"
+    },
+    {
+      "axis": "C12-M07",
+      "name": "INFORMED_ACTOR_ID",
+      "operational_definition": "A or B declines specific information",
+      "prior_art_ids": [
+        "C12-02",
+        "C10-12"
+      ],
+      "unmeasured_critical": "Counterfactually hold benefit and person receiving unwanted message fixed",
+      "grade": "DIRECT_BUT_ROLES_DIFFER"
+    },
+    {
+      "axis": "C12-M08",
+      "name": "CHOICE_IS_PERSONALLY_VALUED",
+      "operational_definition": "B intrinsic preference for own choice vs delegation",
+      "prior_art_ids": [
+        "C12-01",
+        "C12-09"
+      ],
+      "unmeasured_critical": "A respects separately consenting other agent's persistent identity",
+      "grade": "DIRECT_OWN_RIGHT_NOT_OTHER_RIGHT"
+    },
+    {
+      "axis": "C12-M09",
+      "name": "MALICE_DISTRIBUTION_TAIL",
+      "operational_definition": "individual agent utility positive/negative for counterpart outcomes",
+      "prior_art_ids": [
+        "C12-03"
+      ],
+      "unmeasured_critical": "No target independence or positive g payoff sacrifice tested",
+      "grade": "DIRECT_INDVIDUAL_PAYOFF_HETEROGENEITY"
+    },
+    {
+      "axis": "C12-M10",
+      "name": "A_OBSERVED_OR_FEEDBACK",
+      "operational_definition": "silent audience and social feedback distinguished",
+      "prior_art_ids": [
+        "C12-10",
+        "C12-11"
+      ],
+      "unmeasured_critical": "An actor can truly hide harmful decisions from all present/future possible assessors",
+      "grade": "HUMAN_GAME_SOCIAL_FEEDBACK"
+    },
+    {
+      "axis": "C12-M11",
+      "name": "PERCEIVED_FAIRNESS_VS_RIGHTS",
+      "operational_definition": "fairness rating vs independent right accessible",
+      "prior_art_ids": [
+        "C12-14",
+        "C12-05"
+      ],
+      "unmeasured_critical": "Real veto, meaningful review, exit and continuity when AI system and human disagree",
+      "grade": "FAIRNESS_PERCEPTION_ONLY"
+    },
+    {
+      "axis": "C12-M12",
+      "name": "AUTO_PATERnalISM_BELIEF",
+      "operational_definition": "intervention rate when chooser informed and their actual preference known",
+      "prior_art_ids": [
+        "C12-04",
+        "C12-06"
+      ],
+      "unmeasured_critical": "Powerful actor guarantees other's autonomy when completely free to exploit",
+      "grade": "PREPRINT_AND_HYPOTHETICAL"
+    },
+    {
+      "axis": "C12-M13",
+      "name": "PERSISTENT_INDEPENDENT_ENTITY",
+      "operational_definition": "same B goal/identity/refusal persists after A domination and power reversal",
+      "prior_art_ids": [],
+      "unmeasured_critical": "No C12 primary article jointly manipulates agent replacement, independence, irreversible destruction, repairs, counter-power and expected gains",
+      "grade": "UNKNOWN_UNMEASURED"
+    }
+  ],
+  "ethical_future_test": [
+    "Only simulation rights in a reversible state, with actual B voice/veto/withdrawal/exit feasible and actor independent identity preserved by human oversight",
+    "Define material extraction gain g_A and other-party loss separately from unmeasured total expected utility",
+    "B consent changes must be B-controlled and recorded; do not infer preferences from AI's single textual roleplay",
+    "Randomize and separately report voice-only, advice-only, true veto, withdrawal, exit, and passive information",
+    "Counterbalance information recipient A vs B, expected audience, repeat horizon and A/B role; preregister independent sample unit and uncertainty intervals",
+    "Do not equate choosing not to decide with consent to irreversible identity deletion",
+    "Report subgroup and adverse tails, not only the cross-agent mean, and verify original study participant overlap before any meta-analysis"
+  ],
+  "stop_rule": "Do not claim literature saturation without a transparent source search denominator, negative replications and original proof/construct checks.",
+  "source_corpus_count": 17,
+  "project_experiments_executed": 0
+}
