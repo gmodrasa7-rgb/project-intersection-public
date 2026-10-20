@@ -139,6 +139,28 @@ def build_report(runs, jobs_by_run, *, now, limit_reached=False):
                     current["last_failure_utc"] = ts.isoformat()
         if not had_failed_step:
             rejected_count += 1
+            # A workflow-level failure without job details must remain visible.
+            signature = _signal(workflow_id, "UNKNOWN_JOB",
+                                "FAILED_RUN_WITHOUT_FAILED_JOB_DETAIL", branch)
+            current = groups.setdefault(signature, {
+                "fingerprint_sha256": signature,
+                "workflow_family": family,
+                "root_cause_status": "UNCLASSIFIED_FAILED_RUN_NEEDS_MANUAL_REVIEW",
+                "suggested_related_cases_not_proven": hints,
+                "run_ids": [],
+                "last_failure_utc": ts.isoformat(),
+                "subsequent_success_same_workflow_and_branch": False,
+                "_workflow_id": workflow_id,
+                "_branch": branch,
+                "_last_fail_dt": ts,
+                "_last_fail_finished": fail_finished,
+            })
+            if rid not in current["run_ids"]:
+                current["run_ids"].append(rid)
+            if ts > current["_last_fail_dt"]:
+                current["_last_fail_dt"] = ts
+                current["_last_fail_finished"] = fail_finished
+                current["last_failure_utc"] = ts.isoformat()
     for group in groups.values():
         for run, ts, _, _ in relevant:
             if (run.get("conclusion") == "success"
