@@ -24,13 +24,14 @@ MANIFEST = "research/RESEARCH_VERSION_REGISTRY.json"
 GUIDE = "navigation/RESEARCH_VERSIONS_EN_KO.md"
 README = "README.md"
 IDS = {"PI", "VC", "MER", "EI", "ECR", "IVS-0R", "ICM", "RGBM",
-       "CCPH", "RVD", "PI-RAMP", "PI-ROADMAP", "DCA-0",
+       "CCPH", "RVD", "PI-RAMP", "PI-ROADMAP", "DCA-0", "DCA-1",
        "E007", "E008", "E009", "E010", "C13"}
 VERSION = re.compile(r"^(?:0|[1-9]\d*)\.(?:0|[1-9]\d*)\.(?:0|[1-9]\d*)$")
 STATES = {"MAIN", "MAIN_WITH_UNMERGED_PROPOSAL", "PROPOSAL_ONLY"}
 FIXED_EVIDENCE = {
     "RVD": "CONCEPTUAL_HYPOTHESIS_UNTESTED",
     "PI-RAMP": "PILOT_NO_READER_EFFECT_MEASUREMENT",
+    "DCA-1": "SYNTHETIC_COUNTEREXAMPLE_NO_FIELD_VALIDATION",
     "E008": "NO_MAIN_POLICY_RESULT",
     "E009": "SYNTHETIC_NEGATIVE_RESULT",
     "E010": "EXPLORATORY_POSTHOC",
@@ -40,6 +41,7 @@ VERSIONED_SOURCES = {
     "RVD": "research/RVD_VERSION_MANIFEST.json",
     "PI-RAMP": "protocols/PI_RAMP_V0_3_KO.md",
     "PI-ROADMAP": "research/PI_ROADMAP_OPERATIONAL_GATES_V0_2_3_EN_KO.md",
+    "DCA-1": "research/DCA1_ADAPTATION_DISPLACEMENT_IDENTIFICATION_2026-10-20_KO.md",
 }
 
 def blob_sha(content: bytes) -> str:
@@ -141,7 +143,7 @@ def check_local(record: dict, root: Path = ROOT, override: dict[str, bytes] | No
                 problems.append(f"GUIDE: MISSING_{tag}")
         if readme.count("navigation/RESEARCH_VERSIONS_EN_KO.md") != 2:
             problems.append("README: TWO_LANGUAGE_ROUTES_REQUIRED")
-        for rid in ("RVD", "PI-RAMP", "ECR"):
+        for rid in ("RVD", "PI-RAMP", "ECR", "DCA-1"):
             lines = [line for line in guide.splitlines() if line.startswith("| " + rid + " |")]
             if len(lines) != 2:
                 problems.append(f"GUIDE: EN_KO_ROW_MISSING_{rid}")
@@ -215,6 +217,7 @@ def self_test(record: dict) -> int:
     case("E008-fabricated-result", lambda d: row(d,"E008").update(evidence_state="FIELD_SUCCESS"))
     case("E009-negative-erased", lambda d: row(d,"E009").update(evidence_state="SUPPORTED"))
     case("E010-posthoc-as-confirmatory", lambda d: row(d,"E010").update(evidence_state="CONFIRMED"))
+    case("DCA1-synthetic-as-field", lambda d: row(d,"DCA-1").update(evidence_state="FIELD_VERIFIED"))
     case("escape-source-path", lambda d: row(d,"VC").update(source="../private.json"))
     case("invent-schema-version", lambda d: d.update(schema_version="1.0.0"))
     for name, obj, extra in mutations:
@@ -231,7 +234,7 @@ def self_test(record: dict) -> int:
     if not any("CANDIDATE_PR_CLOSED" in x for x in r) or not any("LIVE_MAIN_BLOB_CHANGED" in x for x in r):
         print("FALSE PASS: simulated time/race mutation")
         return 1
-    print(f"PASS: 18 negative controls detected (16 local including guide redaction + 2 remote classes)")
+    print(f"PASS: 19 negative controls detected (17 local including guide redaction + 2 remote classes)")
     return 0
 
 def main() -> int:
