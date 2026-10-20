@@ -29,7 +29,8 @@ class WatchTests(unittest.TestCase):
         out = watch.build_report([], {}, now=NOW)
         self.assertEqual(out["failure_fingerprint_count"], 0)
         self.assertFalse(out["automatic_closure_enabled"])
-        self.assertNotIn("FULL", out["observation_coverage"])
+        self.assertEqual(out["observation_coverage"],
+                         "BOUNDED_WINDOW_NOT_FULL_REPOSITORY_HISTORY")
 
     def test_repeated_failures_cluster_without_duplicate_incident(self):
         r = [run(101), run(102)]
