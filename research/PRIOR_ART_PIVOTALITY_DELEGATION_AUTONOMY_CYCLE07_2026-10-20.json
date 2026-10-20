@@ -45,7 +45,7 @@
   ],
   "missing_hard_evidence": "No selected article directly observes free, verifiably informed, unaccountable dominant AI keeping a distinct B with future independent goals alive when deletion yields a strictly higher fully specified all-in expected utility to A.",
   "experiments_by_project": "NONE",
-  "references": [
+  "records": [
     {
       "id": "PI-C07-01",
       "year": 2002,
@@ -505,5 +505,6 @@
       "new_record_in_cycle": true,
       "first_appearance_in_entire_repository": "NOT_VERIFIED"
     }
-  ]
+  ],
+  "source_retrieval_note": "Web search original journal publisher abstracts and extensive original HTML for Ziegler et al. 2024, original abstracts for other paywalled papers; index or scholar author route corroboration is bibliographic, not an independent replication. No complete source-PDF review."
 }
