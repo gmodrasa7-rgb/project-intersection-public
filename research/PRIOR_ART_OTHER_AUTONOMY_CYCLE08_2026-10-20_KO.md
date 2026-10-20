@@ -19,7 +19,7 @@
 
 **B. 타자의 가치/복지를 위한 행동과 실제 개선효과는 다름**
 - [Bonnefon, Landier, Sastry & Thesmar (2025), Journal of Financial Economics](https://doi.org/10.1016/j.jfineco.2024.103955): 투자자들은 도덕적 속성의 주식에 비용을 지불했지만, 자신의 매수가 실제 사회적 외부효과를 바꾸는지에 따라 지불의사를 민감하게 조정했다는 증거는 없었음. **가치정합성(value alignment) vs 인과적 영향(impact seeking)** 구분. 투자 결과는 실제 B 보호의 직접 지표가 아님.
-- [Gawn & Innes (2021), Journal of Behavioral and Experimental Economics](https://doi.org/10.1016/j.socec.2020.101615): 공개적 비난을 회피할 상황이 없어도 이기적 결과와 같은 효력을 내는 위임에서 위임 선택이 약 19%p 높게 관측. 위임행동 자체는 타자의 자율성 증거가 아니라 자신의 배분목적을 관철하는 수단일 수 있음.
+- [Gawn & Innes (2021), Journal of Behavioral and Experimental Economics](https://doi.org/10.1016/j.socec.2020.101615): 공개적 비난을 회피할 상황이 없어도 이기적 결과와 같은 효력을 내는 위임에서 위임 선택이 약 19% 더 자주 관측. 위임행동 자체는 타자의 자율성 증거가 아니라 자신의 배분목적을 관철하는 수단일 수 있음.
 - [Steffel, Williams & Perrmann-Graham (2016), Organizational Behavior and Human Decision Processes](https://doi.org/10.1016/j.obhdp.2016.04.006): 다른 사람을 위한 부담스러운 선택을 결과 개선보다 책임·비난의 전가 때문에 다른 사람에게 위임하기도 함. 위임은 수혜자의 B-자율성 확대와 다름.
 - [Sloof & von Siemens (2017), Experimental Economics](https://doi.org/10.1007/s10683-016-9499-7): 결과에 실제 영향을 못 미치는 통제권에도 비용을 지불했지만, 그 통제권이 도움이 된다고 잘못 기대하는 정도와 연관. '통제권에 돈을 지불했다'는 증거로 순수 내재적 권력선호를 확정하지 말 것. Cambridge 플랫폼의 2025년 표시는 **2017권의 재게시**, 새 연구 아님.
 - [Ambuehl (2024), Nature Human Behaviour](https://doi.org/10.1038/s41562-024-01817-8): 실제 실험 671/406명. 높은 보상은 자기에게 유리한 정보를 찾도록 만들었지만, 시험한 조건에서 그 왜곡이 실제 선택복지를 해친다는 강한 추론은 반증됨. **편향된 정보탐색 != 측정된 손해**. 따라서 8회차의 모든 정보오류가 강제의 해악으로 이어진다고 단정하지 않음.
