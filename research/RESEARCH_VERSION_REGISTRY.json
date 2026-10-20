@@ -1,0 +1,216 @@
+{
+  "schema_version": "0.1.0",
+  "registry_document_version": "0.1.0",
+  "snapshot_date": "2026-10-20",
+  "main_basis_commit": "f3e26cfb36134a5e11509ea97f3cf9f714928a58",
+  "audit_scope": "Selected public main files and open PR metadata; prior conversations only partial retrieval, not a complete chat export or private-repository inventory",
+  "terminology_spec_version": "0.1",
+  "principles": [
+    "Component version != program version != experimental support",
+    "A documented terminology spec v0.1 does not assign independent v0.1 to all five axes",
+    "A proposed PR version must not be presented as released on main",
+    "No result promotion from documentation, citation counts or CI success",
+    "Never replace an original version or negative result; record source, scope, falsifier and diff",
+    "UNASSIGNED means no verified separate release/version, not version zero"
+  ],
+  "entries": [
+    {
+      "id": "PI",
+      "title": "Entire voluntary-coexistence research program",
+      "what": "Overall conditional question; competing explanations and hard power-reversal test",
+      "how": "Compare actual voluntary protection, feasible exploitation, third-party effects",
+      "current_version": "UNASSIGNED",
+      "candidate_version": null,
+      "publication_state": "MAIN",
+      "evidence_state": "DESIGN_AND_SYNTHETIC_ONLY",
+      "source": "README.md"
+    },
+    {
+      "id": "VC",
+      "title": "Voluntary Coexistence",
+      "what": "Outcome: effective refusal, exit, independent continuance and recovery",
+      "how": "Identify actors' feasible options and measure outcomes across role reversal",
+      "current_version": "UNASSIGNED",
+      "candidate_version": null,
+      "publication_state": "MAIN",
+      "evidence_state": "OUTCOME_NOT_UNIVERSALLY_VALIDATED",
+      "source": "research/TERMINOLOGY_FIVE_AXES_V0_1_KO.md"
+    },
+    {
+      "id": "MER",
+      "title": "Mind–Experience–Response",
+      "what": "Study formation of motivation, possible experience and observed response separately",
+      "how": "Compare competing motive models; forbid behavior-to-experience shortcuts",
+      "current_version": "UNASSIGNED",
+      "candidate_version": null,
+      "publication_state": "MAIN",
+      "evidence_state": "MECHANISMS_UNVALIDATED",
+      "source": "research/TERMINOLOGY_FIVE_AXES_V0_1_KO.md"
+    },
+    {
+      "id": "EI",
+      "title": "Endogenous Incentives",
+      "what": "When maintaining other agents becomes individually preferable without external punishment",
+      "how": "Bound payoff, opportunity, learning, time and power; test incentive reversal",
+      "current_version": "UNASSIGNED",
+      "candidate_version": null,
+      "publication_state": "MAIN",
+      "evidence_state": "HYPOTHESES_UNVALIDATED",
+      "source": "research/TERMINOLOGY_FIVE_AXES_V0_1_KO.md"
+    },
+    {
+      "id": "ECR",
+      "title": "Entity–Constituency–Relation",
+      "what": "Identify actors, affected third parties, roles, relationships, actual power and action opportunities",
+      "how": "Separate actor-count from roles; assess causal identifiability and reversal",
+      "current_version": "UNASSIGNED",
+      "candidate_version": "1.4",
+      "publication_state": "MAIN_WITH_PROPOSED_PR",
+      "evidence_state": "DESIGN_ONLY; CANDIDATE_PR_211_UNMERGED",
+      "source": "research/TERMINOLOGY_FIVE_AXES_V0_1_KO.md"
+    },
+    {
+      "id": "IVS-0R",
+      "title": "Independent challenge and correction workflow",
+      "what": "Audit claims, counterexamples, negative evidence, reversals, provenance and rollback",
+      "how": "Attempt independent reproduction and fail-closed evidence promotion",
+      "current_version": "UNASSIGNED",
+      "candidate_version": null,
+      "publication_state": "MAIN",
+      "evidence_state": "METHOD_NOT_SCIENTIFIC_CERTIFICATION",
+      "source": "research/TERMINOLOGY_FIVE_AXES_V0_1_KO.md"
+    },
+    {
+      "id": "ICM",
+      "title": "Intersection of Minimum Self-Interest",
+      "what": "Candidate overlapping acceptable choices; intersection may be empty",
+      "how": "Specify feasible sets, exit, third parties and failure cases",
+      "current_version": "UNASSIGNED",
+      "candidate_version": null,
+      "publication_state": "MAIN",
+      "evidence_state": "CANDIDATE_MODEL",
+      "source": "README.md"
+    },
+    {
+      "id": "RGBM",
+      "title": "Recursively Growing Benefit Model",
+      "what": "Candidate long-run mutual development without erasing independent options",
+      "how": "Test dynamic, resource-scarce and exclusionary alternatives",
+      "current_version": "UNASSIGNED",
+      "candidate_version": null,
+      "publication_state": "MAIN",
+      "evidence_state": "CANDIDATE_MODEL",
+      "source": "README.md"
+    },
+    {
+      "id": "CCPH",
+      "title": "Contribution-and-impact provenance database",
+      "what": "Track event, author, source, counterevidence, cost and affected parties",
+      "how": "Audit lineage; distinguish recorded event from untested hypothesis",
+      "current_version": "UNASSIGNED",
+      "candidate_version": null,
+      "publication_state": "MAIN",
+      "evidence_state": "DATA_MODEL_NOT_PROOF",
+      "source": "research/RESEARCH_OVERVIEW_KO.md"
+    },
+    {
+      "id": "RVD",
+      "title": "Resonance–Value Dynamics",
+      "what": "Candidate study of relational value and motivational change under coexistence and exploitation",
+      "how": "Distinguish mutually generated value from manipulation; empirical and negative controls needed",
+      "current_version": "UNASSIGNED",
+      "candidate_version": "0.1.0",
+      "publication_state": "PR_OPEN_UNMERGED",
+      "evidence_state": "PROPOSAL_ONLY_PR_245",
+      "source": "research/MER_RESONANCE_VALUE_FORMATION_2026-10-20_KO.md"
+    },
+    {
+      "id": "PI-RAMP",
+      "title": "Research Archive Meta-Protocol",
+      "what": "Measure whether archive changes improve evidence discovery, falsification and reader correctness",
+      "how": "Predeclare reader tasks, negative controls, correction and rollback",
+      "current_version": "0.2.0",
+      "candidate_version": "0.3.0",
+      "publication_state": "MAIN_AND_DRAFT_PR",
+      "evidence_state": "EFFECT_UNMEASURED_CANDIDATE_PR_246",
+      "source": "protocols/PI_RAMP_V0_2_KO.md"
+    },
+    {
+      "id": "PI-ROADMAP",
+      "title": "Six-stage research roadmap",
+      "what": "Preserve claim→original work→bounded saturation→critique→attribution→test gate",
+      "how": "Audit stage gate, version history and rollback",
+      "current_version": "0.2.3",
+      "candidate_version": null,
+      "publication_state": "MAIN",
+      "evidence_state": "DESIGN_ONLY",
+      "source": "research/PI_ROADMAP_OPERATIONAL_GATES_V0_2_3_EN_KO.md"
+    },
+    {
+      "id": "DCA-0",
+      "title": "Defensive coexistence differential acceleration",
+      "what": "Study measurable defensive intervention against agentic misuse and human-driven exploitation",
+      "how": "Compare harm reduction, defensive speed, misuse externalities and independent audits",
+      "current_version": "UNASSIGNED",
+      "candidate_version": null,
+      "publication_state": "MAIN",
+      "evidence_state": "DEFENSIVE_EFFECT_UNVERIFIED",
+      "source": "research/DCA0_DIFFERENTIAL_COEXISTENCE_ACCELERATION_2026-10-20_EN_KO.md"
+    },
+    {
+      "id": "E007",
+      "title": "Synthetic timing experiment",
+      "what": "Check classification sensitivity to selected observation timings",
+      "how": "Replay 72 synthetic conditions; inspect 17 changed classifications",
+      "current_version": "UNASSIGNED",
+      "candidate_version": null,
+      "publication_state": "MAIN",
+      "evidence_state": "SYNTHETIC_ONLY",
+      "source": "experiments/e007/README_KO.md"
+    },
+    {
+      "id": "E008",
+      "title": "Experiment awaiting primary comparison",
+      "what": "Planned main policy benchmark",
+      "how": "Run preregistered primary comparison and preserve failures",
+      "current_version": "UNASSIGNED",
+      "candidate_version": null,
+      "publication_state": "MAIN",
+      "evidence_state": "NO_MAIN_POLICY_RESULT",
+      "source": "experiments/e008/README_KO.md"
+    },
+    {
+      "id": "E009",
+      "title": "Negative-result synthetic benchmark",
+      "what": "Project-v3 worse than best simple baseline in declared mean-regret comparison",
+      "how": "Reproduce baseline and report 42.35% worse; 3/4 criteria failed",
+      "current_version": "UNASSIGNED",
+      "candidate_version": null,
+      "publication_state": "MAIN",
+      "evidence_state": "SYNTHETIC_NEGATIVE_RESULT",
+      "source": "experiments/e009/RESULT_KO.md"
+    },
+    {
+      "id": "E010",
+      "title": "Exploratory synthetic analysis",
+      "what": "Post-hoc hypothesis exploration, not confirmatory evidence",
+      "how": "Keep exploration separate from preregistered evaluation",
+      "current_version": "UNASSIGNED",
+      "candidate_version": null,
+      "publication_state": "MAIN",
+      "evidence_state": "EXPLORATORY_POSTHOC",
+      "source": "experiments/e010/README_KO.md"
+    },
+    {
+      "id": "C13",
+      "title": "Literature search cycle 13",
+      "what": "Source-led prior art on veto structure and minority exclusion",
+      "how": "Verify original author lineage, article versus study, externality and countercases",
+      "current_version": "UNASSIGNED",
+      "candidate_version": null,
+      "publication_state": "PR_OPEN_UNMERGED",
+      "evidence_state": "LITERATURE_SYNTHESIS_NOT_PI_EMPIRICAL_RESULT",
+      "source": "https://github.com/gmodrasa7-rgb/project-intersection-public/pull/248"
+    }
+  ]
+}
