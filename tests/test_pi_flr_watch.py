@@ -1,6 +1,6 @@
 """Offline PI-FLR watch adversarial regression: network-free synthetic GitHub fixtures."""
 import copy
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 import sys
 import unittest
@@ -15,7 +15,10 @@ NOW = "2026-10-21T00:00:00Z"
 
 def run(n, *, name="PI-RISE synthetic-only integrity", conclusion="failure",
         created_at="2026-10-20T18:00:00Z", branch="main", workflow_id=13):
+    started = datetime.fromisoformat(created_at.replace("Z", "+00:00"))
+    finished = started + timedelta(minutes=2)
     return {"id": n, "name": name, "conclusion": conclusion, "created_at": created_at,
+            "run_started_at": started.isoformat(), "updated_at": finished.isoformat(),
             "status": "completed", "workflow_id": workflow_id, "head_branch": branch}
 
 
@@ -52,6 +55,52 @@ class WatchTests(unittest.TestCase):
         j = {101:[job(501),job(502)]}
         out=watch.build_report(r,j,now=NOW)
         self.assertEqual(out["groups"][0]["run_count"],1)
+
+    def test_distinct_branches_never_merged_as_one_failure_signal(self):
+        runs = [run(101, branch="main"), run(102, branch="research/new-experiment")]
+        jobs = {101:[job(501)], 102:[job(502)]}
+        result = watch.build_report(runs, jobs, now=NOW)
+        self.assertEqual(result["failure_fingerprint_count"], 2)
+
+    def test_success_started_before_failure_completed_is_not_recovery(self):
+        first = run(101, created_at="2026-10-20T18:00:00Z")
+        next_run = run(102, conclusion="success",
+                       created_at="2026-10-20T18:01:00Z")
+        result = watch.build_report([first, next_run], {101:[job(501)]}, now=NOW)
+        self.assertFalse(result["groups"][0][
+            "subsequent_success_same_workflow_and_branch"])
+
+    def test_missing_failure_completion_time_cannot_prove_recovery(self):
+        failed = run(101)
+        failed.pop("updated_at")
+        later = run(102, conclusion="success",
+                    created_at="2026-10-20T21:00:00Z")
+        result = watch.build_report([failed, later], {101:[job(501)]}, now=NOW)
+        self.assertFalse(result["groups"][0][
+            "subsequent_success_same_workflow_and_branch"])
+
+    def test_branch_names_not_exposed(self):
+        secret = "private-branch-account-123"
+        result = watch.build_report([run(101, branch=secret)],
+                                    {101:[job(501)]}, now=NOW)
+        import json
+        self.assertNotIn(secret, json.dumps(result))
+
+    def test_action_required_without_job_still_visible(self):
+        candidate = run(101, conclusion="action_required")
+        result = watch.build_report([candidate], {101:[]}, now=NOW)
+        self.assertEqual(result["failure_fingerprint_count"], 1)
+        self.assertEqual(result["groups"][0]["resolution_status"],
+                         "NOT_AUTOMATICALLY_CLOSED")
+
+    def test_startup_failure_without_job_still_visible(self):
+        candidate = run(101, conclusion="startup_failure")
+        result = watch.build_report([candidate], {101:[]}, now=NOW)
+        self.assertEqual(result["failure_fingerprint_count"], 1)
+
+    def test_report_without_failed_job_is_not_clean(self):
+        result = watch.build_report([run(101)], {101:[]}, now=NOW)
+        self.assertGreater(result["failure_fingerprint_count"], 0)
 
     def test_success_after_failure_does_not_mark_case_closed(self):
         r = [run(101),run(102,conclusion="success",
@@ -98,7 +147,9 @@ class WatchTests(unittest.TestCase):
     def test_empty_failed_job_list_reported_not_fabricated_cause(self):
         out=watch.build_report([run(101)],{101:[]},now=NOW)
         self.assertEqual(out["failed_run_without_failed_job_step"],1)
-        self.assertEqual(out["failure_fingerprint_count"],0)
+        self.assertEqual(out["failure_fingerprint_count"],1)
+        self.assertEqual(out["groups"][0]["root_cause_status"],
+                         "UNCLASSIFIED_FAILED_RUN_NEEDS_MANUAL_REVIEW")
 
     def test_job_without_step_produces_unknown_step_fingerprint(self):
         j=job(501);j["steps"]=[]
@@ -164,6 +215,25 @@ class WatchTests(unittest.TestCase):
         tampered=raw.replace("actions: read","actions: write")
         with self.assertRaisesRegex(watch.WatchError,"WATCH_NOT_READ_ONLY"):
             watch.validate_workflow_contract(tampered)
+
+    def test_additional_permission_scope_rejected(self):
+        raw=(ROOT/".github/workflows/pi-flr-watch.yml").read_text(encoding="utf-8")
+        mutated=raw.replace("  actions: read", "  actions: read\n  pull-requests: write")
+        with self.assertRaisesRegex(watch.WatchError,"WATCH_NOT_READ_ONLY"):
+            watch.validate_workflow_contract(mutated)
+
+    def test_job_level_permission_override_rejected(self):
+        raw=(ROOT/".github/workflows/pi-flr-watch.yml").read_text(encoding="utf-8")
+        mutated=raw.replace("    runs-on: ubuntu-latest",
+                            "    permissions: write-all\n    runs-on: ubuntu-latest")
+        with self.assertRaisesRegex(watch.WatchError,"WATCH_NOT_READ_ONLY"):
+            watch.validate_workflow_contract(mutated)
+
+    def test_missing_artifact_must_fail_schedule(self):
+        raw=(ROOT/".github/workflows/pi-flr-watch.yml").read_text(encoding="utf-8")
+        mutated=raw.replace("if-no-files-found: error", "if-no-files-found: warn")
+        with self.assertRaisesRegex(watch.WatchError,"WATCH_MISSING_RECEIPT_NOT_FATAL"):
+            watch.validate_workflow_contract(mutated)
 
     def test_disable_watcher_schedule_detected(self):
         raw=(ROOT/".github/workflows/pi-flr-watch.yml").read_text(encoding="utf-8")
