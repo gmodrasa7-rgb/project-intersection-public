@@ -1,0 +1,128 @@
+{
+  "schema_version": "pi-rvd-cycle03-source-register/v0.1",
+  "date": "2026-10-21",
+  "version": "v0.3.0",
+  "source_records_count": 8,
+  "original_experiments_executed_by_project": 0,
+  "independent_replications_of_RVD": 0,
+  "primary_research_vs_prior_synthesis": "Original authors own prior results. Buffat 2023 replicates Bartling 2014, not RVD.",
+  "checked_scope": "Publisher and author bibliographic pages, accessible abstracts/descriptions; earlier Project C02/C05 & RVD cycle02 text searched for overlap; global/full-text DOI deduplication not completed.",
+  "saturation": "NOT_VERIFIED",
+  "method_boundary": "Partial-identification bounds are conditional adaptation, not an original proven result or a mind detector.",
+  "records": [
+    {
+      "id": "Bartling_Fehr_Herz_2014",
+      "title": "The Intrinsic Value of Decision Rights",
+      "year": 2014,
+      "authors": [
+        "Björn Bartling",
+        "Ernst Fehr",
+        "Holger Herz"
+      ],
+      "doi": "10.3982/ECTA11573",
+      "url": "https://doi.org/10.3982/ECTA11573",
+      "role": "own_control_intrinsic_value_original",
+      "boundary": "Self decision rights do not imply positive valuation of the distinct original B's veto.",
+      "prior_project_overlap": "NOT_FOUND_IN_CHECKED_RVD_C02_C05_TEXT"
+    },
+    {
+      "id": "Buffat_Praxmarer_Sutter_2023",
+      "title": "The intrinsic value of decision rights: A replication and an extension to team decision making",
+      "year": 2023,
+      "authors": [
+        "Justin Buffat",
+        "Matthias Praxmarer",
+        "Matthias Sutter"
+      ],
+      "doi": "10.1016/j.jebo.2023.03.019",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0167268123000926",
+      "role": "genuine_replication_of_Bartling_individual_result_and_exploratory_team_heterogeneity",
+      "boundary": "Team context findings exploratory; not a replication of RVD or artificial mind.",
+      "prior_project_overlap": "NOT_FOUND_IN_CHECKED_RVD_C02_C05_TEXT"
+    },
+    {
+      "id": "Ferreira_Hanaki_Tarroux_2020",
+      "title": "On the roots of the intrinsic value of decision rights: Experimental evidence",
+      "year": 2020,
+      "authors": [
+        "João V. Ferreira",
+        "Nobuyuki Hanaki",
+        "Benoît Tarroux"
+      ],
+      "doi": "10.1016/j.geb.2019.10.008",
+      "url": "https://www.sciencedirect.com/science/article/pii/S089982561930154X",
+      "role": "distinct_motives_of_control_self_reliance_power_independence",
+      "boundary": "Self-reliance measured in France/Japan in specific designs; not B-preservation.",
+      "prior_project_overlap": "NOT_FOUND_IN_CHECKED_RVD_C02_C05_TEXT"
+    },
+    {
+      "id": "Owens_Grossman_Fackler_2014",
+      "title": "The Control Premium: A Preference for Payoff Autonomy",
+      "year": 2014,
+      "authors": [
+        "David Owens",
+        "Zachary Grossman",
+        "Ryan Fackler"
+      ],
+      "doi": "10.1257/mic.6.4.138",
+      "url": "https://www.aeaweb.org/articles?id=10.1257/mic.6.4.138",
+      "role": "own_payoff_control_premium",
+      "boundary": "Own control premium does not show other-rights preservation.",
+      "prior_project_overlap": "NOT_FOUND_IN_CHECKED_RVD_C02_C05_TEXT"
+    },
+    {
+      "id": "Andreoni_Miller_2002",
+      "title": "Giving According to GARP",
+      "year": 2002,
+      "authors": [
+        "James Andreoni",
+        "John Miller"
+      ],
+      "doi": "10.1111/1468-0262.00302",
+      "url": "https://ideas.repec.org/a/ecm/emetrp/v70y2002i2p737-753.html",
+      "role": "revealed_preference_consistency_under_budgets",
+      "boundary": "GARP consistency cannot uniquely decompose latent motives.",
+      "prior_project_overlap": "ALREADY_CITED_IN_PRIOR_PROJECT_C02"
+    },
+    {
+      "id": "Rabin_1993",
+      "title": "Incorporating Fairness into Game Theory and Economics",
+      "year": 1993,
+      "authors": [
+        "Matthew Rabin"
+      ],
+      "doi": null,
+      "url": "https://rabin.scholars.harvard.edu/publications/incorporating-fairness-game-theory-and-economics",
+      "role": "intention_and_fairness_as_alternative_latent_motives",
+      "boundary": "Fairness response is not unconditional preservation of the same entity.",
+      "prior_project_overlap": "ALREADY_RELEVANT_IN_PRIOR_PROJECT_C02"
+    },
+    {
+      "id": "Falk_Fischbacher_2006",
+      "title": "A theory of reciprocity",
+      "year": 2006,
+      "authors": [
+        "Armin Falk",
+        "Urs Fischbacher"
+      ],
+      "doi": "10.1016/j.geb.2005.03.001",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0899825605000254",
+      "role": "identical_outcomes_different_intentions_reciprocity",
+      "boundary": "Intention-responsive preferences can explain apparent protection; old C02 antecedent.",
+      "prior_project_overlap": "ALREADY_RELEVANT_IN_PRIOR_PROJECT_C02"
+    },
+    {
+      "id": "Manski_2003",
+      "title": "Partial Identification of Probability Distributions",
+      "year": 2003,
+      "authors": [
+        "Charles F. Manski"
+      ],
+      "doi": null,
+      "url": "https://www.cemmap.ac.uk/wp-content/legacy/forms/manskipaper.pdf",
+      "role": "epistemic_method_of_sets_and_bounds",
+      "boundary": "No unique motive is identified absent defensible restrictions; not an RVD validation.",
+      "prior_project_overlap": "NOT_FOUND_IN_CHECKED_RVD_C02_C05_TEXT"
+    }
+  ]
+}

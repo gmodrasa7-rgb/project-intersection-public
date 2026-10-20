@@ -382,6 +382,21 @@
         "Semantic equivalence of new EN/KO research documents has not been independently certified.",
         "No primary study full-text exhaustive reading or RVD original empirical test. The 2024 meta-analysis is literature evidence, not our replication."
       ]
+    },
+    {
+      "id": "PI-MER-RVD-CYCLE03-20261021",
+      "original_1_english": "research/RVD_CYCLE03_ORIGINAL_B_VALUE_IDENTIFICATION_2026-10-21_EN.md",
+      "original_2_korean": "research/RVD_CYCLE03_ORIGINAL_B_VALUE_IDENTIFICATION_2026-10-21_KO.md",
+      "kind": "conceptual_partial_identification_methods_not_empirical_result",
+      "structural_pair_present": true,
+      "meaning_review_status": "NOT_INDEPENDENTLY_VERIFIED",
+      "original_conception_language": "KO_HUMAN_LED_RESEARCH_QUESTION_AI_DRAFT",
+      "independent_review_receipt": null,
+      "one_sided_edit_exception": null,
+      "known_divergences": [
+        "Neither edition has independently certified semantic equivalence or comprehensive original-source full text review.",
+        "Arithmetic counterexamples are synthetic and do not measure model minds or rights."
+      ]
     }
   ],
   "legacy_priority_unresolved": [
@@ -423,13 +438,13 @@
     }
   ],
   "metrics": {
-    "markdown_total": 182,
+    "markdown_total": 186,
     "filename_classes": {
       "UNMARKED_LANGUAGE_UNVERIFIED": 42,
       "LEGACY_MIXED_READER_ENTRY": 2,
-      "KO_SUFFIX_UNVERIFIED": 85,
+      "KO_SUFFIX_UNVERIFIED": 87,
       "ORDERED_BILINGUAL_FOUNDER_OR_GOVERNANCE": 2,
-      "EN_SUFFIX_UNVERIFIED": 25,
+      "EN_SUFFIX_UNVERIFIED": 27,
       "COMBINED_NAMING_UNVERIFIED": 26
     },
     "meaning_verified_pairs": 0,
@@ -1277,6 +1292,18 @@
       "content_equivalence": "NOT_REVIEWED"
     },
     {
+      "path": "research/DCA2_EVIDENCE_BRIEF_2026-10-21_EN.md",
+      "filename_class": "EN_SUFFIX_UNVERIFIED",
+      "counterpart_path": "research/DCA2_SACRIFICIAL_DECOY_OPEN_SET_2026-10-21_KO.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "research/DCA2_SACRIFICIAL_DECOY_OPEN_SET_2026-10-21_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": "research/DCA2_EVIDENCE_BRIEF_2026-10-21_EN.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
       "path": "research/E009_INDEPENDENT_DECISION_GATE_EN.md",
       "filename_class": "EN_SUFFIX_UNVERIFIED",
       "counterpart_path": "research/E009_INDEPENDENT_DECISION_GATE_KO.md",
@@ -1514,6 +1541,18 @@
       "path": "research/RVD_CYCLE02_SUBSTITUTION_AUTONOMY_PRIOR_ART_2026-10-20_KO.md",
       "filename_class": "KO_SUFFIX_UNVERIFIED",
       "counterpart_path": "research/RVD_CYCLE02_SUBSTITUTION_AUTONOMY_PRIOR_ART_2026-10-20_EN.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "research/RVD_CYCLE03_ORIGINAL_B_VALUE_IDENTIFICATION_2026-10-21_EN.md",
+      "filename_class": "EN_SUFFIX_UNVERIFIED",
+      "counterpart_path": "research/RVD_CYCLE03_ORIGINAL_B_VALUE_IDENTIFICATION_2026-10-21_KO.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "research/RVD_CYCLE03_ORIGINAL_B_VALUE_IDENTIFICATION_2026-10-21_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": "research/RVD_CYCLE03_ORIGINAL_B_VALUE_IDENTIFICATION_2026-10-21_EN.md",
       "content_equivalence": "NOT_REVIEWED"
     },
     {
@@ -1835,6 +1874,28 @@
       "new_edition_pairs": 0,
       "editorial_notes": "PI-RAMP v0.5 adds a six-pair evidence-type matrix plus original-author Study-7 direct-replication and cross-domain LLM-analogy boundaries. Null study identity and independent review are maintained; sources and earlier negative evidence preserved.",
       "reviewer_actions": "Check participant/data overlap independently, review exact originals and evaluate causal generalization; no study equivalence or experimental effects certified."
+    },
+    {
+      "as_of": "2026-10-21",
+      "status": "RVD_V0_3_0_PARTIAL_IDENTIFICATION_PROPOSAL_UNTESTED",
+      "new_documents": [
+        "research/RVD_CYCLE03_ORIGINAL_B_VALUE_IDENTIFICATION_2026-10-21_EN.md",
+        "research/RVD_CYCLE03_ORIGINAL_B_VALUE_IDENTIFICATION_2026-10-21_KO.md"
+      ],
+      "new_edition_pairs": 1,
+      "editorial_notes": "Cross-actor own-rights versus original-B-rights separation; R10-R13, bounded revealed preferences under assumptions, and observational equivalence arithmetic. Model specification, not a mind discovery.",
+      "reviewer_actions": "Independently verify source full texts and EN/KO parity, audit identification assumptions, preregister ethical experimental comparison and preserve null results."
+    },
+    {
+      "as_of": "2026-10-21",
+      "status": "DCA2_CONCURRENT_MAIN_INVENTORY_ONLY_NOT_INDEPENDENT_REVIEW",
+      "new_documents": [
+        "research/DCA2_EVIDENCE_BRIEF_2026-10-21_EN.md",
+        "research/DCA2_SACRIFICIAL_DECOY_OPEN_SET_2026-10-21_KO.md"
+      ],
+      "new_edition_pairs": 0,
+      "editorial_notes": "Two DCA-2 pages newly present on main during RVD v0.3.0 PR; metadata registration only, no attempt to edit DCA-2 content or certify semantic parity.",
+      "reviewer_actions": "Independent DCA-2 source/full text and EN-KO parity review required separately."
     }
   ],
   "path_layout_policy": "Keep the project root entry-only; bilingual full research editions live in existing research/ and their original historical combined documents retain stable root URLs."
