@@ -21,12 +21,12 @@
 
 **Contrary evidence visible before expanding:** [E009](experiments/e009/RESULT_EN.md): Project-v3 was **42.35% worse** in mean regret than the best simple synthetic baseline; **3 of 4 criteria failed**. [E008](experiments/e008/README_EN.md): **no completed main policy result**. Neither is field validation.
 
-**Urgent evidence-to-action (2026-10-20):** [Human-led AI cyber misuse and anti-exploitation interventions](research/AI_AGENT_HUMAN_EXPLOITATION_URGENT_2026-10-20_EN.md) — corroborated case, uncertainty, defensive response. [DCA-0 measurable differential acceleration (EN/KO)](research/DCA0_DIFFERENTIAL_COEXISTENCE_ACCELERATION_2026-10-20_EN_KO.md).
-
 **Choose your route:** [Research program](navigation/RESEARCH_PROGRAM_EN.md) · [Evidence limits](research/PUBLIC_EVIDENCE_INDEX_EN.md) · [Independent falsification](research/PUBLIC_REVIEW_PACKET_EN.md).
 
 <details>
 <summary>Technical purpose, evidence, rights and reviewer routes</summary>
+
+**Urgent evidence-to-action (2026-10-20):** [Human-led AI cyber misuse and anti-exploitation interventions](research/AI_AGENT_HUMAN_EXPLOITATION_URGENT_2026-10-20_EN.md) — corroborated case, uncertainty, defensive response. [DCA-0 measurable differential acceleration (EN/KO)](research/DCA0_DIFFERENTIAL_COEXISTENCE_ACCELERATION_2026-10-20_EN_KO.md).
 
 **C01–C09 literature synthesis (2026-10-20, historical snapshot):** [191-record 24-hour audit, competing findings, autonomy/continuance measurement and open falsification questions](research/RESEARCH_VALUE_EXTRACTION_24H_2026-10-20_KO.md). Cycle 10 and later are **not** included in the 191; synthesis is **not** new empirical evidence.
 
@@ -82,12 +82,12 @@
 
 **펼치지 않아도 보이는 불리한 증거:** [E009](experiments/e009/RESULT_KO.md): 최선 단순 기준선보다 평균 후회값 **42.35% 나빴고**, **4개 중 3개** 기준 실패. [E008](experiments/e008/README_KO.md): **정책 본 비교실험 결과가 없다**. 현실 검증 결과 아님.
 
-**긴급 사건·대응 연구 (2026-10-20):** [자율형 AI 악용의 인간 착취 유인과 차단책](research/AI_AGENT_HUMAN_EXPLOITATION_URGENT_2026-10-20_KO.md) — 원출처 교차검증, 반증 가능 가설, 방어 절차. [DCA-0 공존 차등가속 실행·측정 프로토콜](research/DCA0_DIFFERENTIAL_COEXISTENCE_ACCELERATION_2026-10-20_EN_KO.md).
-
 **어디부터 읽을까:** [연구체계·선행문헌 지도](navigation/RESEARCH_PROGRAM_KO.md) · [증거·미검증](research/PUBLIC_EVIDENCE_INDEX_KO.md) · [독립 반증·재현](research/PUBLIC_REVIEW_PACKET_KO.md).
 
 <details>
 <summary>상세 연구 목적·반례·증거상태·권리·심사 경로 펼치기</summary>
+
+**긴급 사건·대응 연구 (2026-10-20):** [자율형 AI 악용의 인간 착취 유인과 차단책](research/AI_AGENT_HUMAN_EXPLOITATION_URGENT_2026-10-20_KO.md) — 원출처 교차검증, 반증 가능 가설, 방어 절차. [DCA-0 공존 차등가속 실행·측정 프로토콜](research/DCA0_DIFFERENTIAL_COEXISTENCE_ACCELERATION_2026-10-20_EN_KO.md).
 
 **C01–C09 문헌 통합(2026-10-20 역사적 스냅샷):** [191개 기록의 24시간 감사·상충 근거·자율성/존속 측정·미해결 반증질문](research/RESEARCH_VALUE_EXTRACTION_24H_2026-10-20_KO.md). 10회차 이후 자료는 191건에 포함되지 않으며 신규 실증결과가 아니다.
 

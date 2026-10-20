@@ -1,7 +1,7 @@
-# MER: Resonance and endogenous formation of relational value — Original 1 (English)
+# RVD v0.1.0 — Resonance–Value Dynamics (MER sub-study) — Original 1 (English)
 <!-- PI-LANGUAGE: en -->
 <!-- PI-MIRROR: research/MER_RESONANCE_VALUE_FORMATION_2026-10-20_KO.md -->
-**2026-10-20 · v0.1 · CONCEPTUAL_HYPOTHESIS / UNTESTED / NOVELTY_UNASSESSED.**
+**2026-10-20 · RVD v0.1.0 · CONCEPTUAL_HYPOTHESIS / UNTESTED / NOVELTY_UNASSESSED.**
 **Axes:** MER (mind–experience–response) × EI × ECR × VC; IVS-0R falsification.
 **Provenance:** Human Project Intersection originator supplied the recurring “independent A + independent B → novel C / resonance” research intuition and requested this integration; assisting AI formalized competing hypotheses and tests. A new conversation on 2026-10-20 explicitly revisited the term. Earlier quotations/dates recalled in a prior AI answer have **not** been independently re-read from the original historical transcripts for this record: do not use them as verified verbatim archival evidence. No private chat is published.
 
@@ -48,3 +48,21 @@ Do **not** claim invention of interactive creativity, collective intelligence, s
 | R5 | Demand, role framing, context and evaluator effects explain changes | UNTESTED |
 
 **Scientific status:** Human-originated concept and AI-assisted research design; no original experiment, preregistration, independent replication, or evidence for this AI's intrinsic subjective feelings. [E009 negative finding](../experiments/e009/RESULT_EN.md) remains unchanged.
+
+## 7. RVD formal name, version semantics and supersession boundary
+
+**RVD = Resonance–Value Dynamics / 공명·가치 동역학.** It names a candidate *interaction-to-value* research mechanism under MER and EI, **not** a sixth validated scientific pillar or a replacement for VC, ECR, IVS-0R, ICM or RGBM.
+
+**Research chain:** `independent A × independent B → candidate C → measurable change in valuation (ΔV) → candidate change in choice/motivation (ΔM) → conditional test of VC`. A and B must retain separable identity, opt-out and causal contribution; a joint output C does not automatically entail new motives, intrinsic care or preserved autonomy. Independent counterexamples including extractive "resonance" stay in scope.
+
+**Stable hypothesis IDs:** `RVD-R1` through `RVD-R5` correspond to R1–R5 above. Old titles, paths and citations remain valid historical aliases.
+
+**Release history:**
+- **v0.1 (2026-10-20, historical label):** initial bilingual resonance/value formation conceptual documents. No experimental validation.
+- **v0.1.0 (2026-10-20, current named baseline):** formally assigns RVD identity, stable RVD-R1…RVD-R5 labels, version and acceptance rules. **Naming-only scientific change**; all five hypotheses remain UNTESTED and novelty remains unassessed.
+
+**Versioning policy:** `MAJOR.MINOR.PATCH`. MAJOR for incompatible changes in scientific constructs/estimands; MINOR for new falsifiable hypotheses, measures or preregisterable methods; PATCH for documentation, links, provenance or translation corrections that do not alter claim scope. Every revision must keep a changelog, old claims/negative evidence, human/AI contribution and source lineage, and an explicit distinction between *version maturity* and *empirical evidence grade*. `v1.0.0` would signify a stable specification **only**, never automatic scientific validation.
+
+**Next scientific gate (not a promised release):** original-author prior-art crosswalk on joint creativity and endogenous preferences → independent preregistration for RVD-R1 with matched baselines and actual autonomy costs → later longitudinal RVD-R2/R3 tests only if discriminating evidence warrants them. Unidentifiable and negative outcomes remain first-class records.
+
+[Machine-readable RVD version manifest](RVD_VERSION_MANIFEST.json).
