@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""PI-FLR 0.2: bounded, read-only GitHub Actions failure signal clustering.
+"""PI-FLR 0.2.1: bounded, read-only GitHub Actions failure signal clustering.
 
 Failure step ≠ diagnosed root cause. Green after red ≠ proven remedy.
 Never reads Gmail, downloads logs, changes issues/commits, or closes cases.
@@ -7,7 +7,6 @@ Only public numeric IDs, hash fingerprints and fixed allowlisted labels are expo
 """
 from __future__ import annotations
 import argparse
-from collections import defaultdict
 from datetime import datetime, timedelta, timezone
 import hashlib
 import json
@@ -59,9 +58,9 @@ def _number(value):
     return value
 
 
-def _signal(workflow_id, job_name, step_name):
+def _signal(workflow_id, job_name, step_name, branch=""):
     # Never emit arbitrary job/step text: labels could carry secrets or PII.
-    data = json.dumps([_number(workflow_id), str(job_name), str(step_name)],
+    data = json.dumps([_number(workflow_id), str(job_name), str(step_name), str(branch)],
                       ensure_ascii=False, separators=(",", ":"))
     return hashlib.sha256(data.encode("utf-8")).hexdigest()
 
@@ -100,6 +99,10 @@ def build_report(runs, jobs_by_run, *, now, limit_reached=False):
         jobs = jobs_by_run[rid]
         _require(isinstance(jobs, list), "INVALID_JOB_LIST")
         had_failed_step = False
+        branch = run.get("head_branch")
+        _require(isinstance(branch, str) and bool(branch),
+                 "FAILURE_BRANCH_NOT_IDENTIFIABLE")
+        fail_finished = _utc(run["updated_at"]) if run.get("updated_at") else None
         for job in jobs:
             if job.get("conclusion") not in FAIL:
                 continue
@@ -110,7 +113,8 @@ def build_report(runs, jobs_by_run, *, now, limit_reached=False):
                 failures = [{"name": "UNKNOWN_STEP"}]
             for step in failures:
                 had_failed_step = True
-                signature = _signal(workflow_id, job.get("name", ""), step.get("name", ""))
+                signature = _signal(workflow_id, job.get("name", ""),
+                                    step.get("name", ""), branch)
                 current = groups.setdefault(signature, {
                     "fingerprint_sha256": signature,
                     "workflow_family": family,
@@ -120,15 +124,17 @@ def build_report(runs, jobs_by_run, *, now, limit_reached=False):
                     "last_failure_utc": "",
                     "subsequent_success_same_workflow_and_branch": False,
                     "_workflow_id": workflow_id,
-                    "_branch": run.get("head_branch", ""),
+                    "_branch": branch,
                     "_last_fail_dt": ts,
+                    "_last_fail_finished": fail_finished,
                 })
                 if rid not in current["run_ids"]:
                     current["run_ids"].append(rid)
                 if ts > current["_last_fail_dt"]:
                     current["_last_fail_dt"] = ts
                     current["last_failure_utc"] = ts.isoformat()
-                    current["_branch"] = run.get("head_branch", "")
+                    current["_branch"] = branch
+                    current["_last_fail_finished"] = fail_finished
                 elif not current["last_failure_utc"]:
                     current["last_failure_utc"] = ts.isoformat()
         if not had_failed_step:
@@ -138,7 +144,9 @@ def build_report(runs, jobs_by_run, *, now, limit_reached=False):
             if (run.get("conclusion") == "success"
                     and run.get("workflow_id") == group["_workflow_id"]
                     and run.get("head_branch") == group["_branch"]
-                    and ts > group["_last_fail_dt"]):
+                    and group["_last_fail_finished"] is not None
+                    and run.get("run_started_at") is not None
+                    and _utc(run["run_started_at"]) > group["_last_fail_finished"]):
                 group["subsequent_success_same_workflow_and_branch"] = True
         group["run_count"] = len(group["run_ids"])
         # Dedup by actual run IDs, even if several jobs had same step signature.
@@ -150,13 +158,14 @@ def build_report(runs, jobs_by_run, *, now, limit_reached=False):
         del group["_workflow_id"]
         del group["_branch"]
         del group["_last_fail_dt"]
+        del group["_last_fail_finished"]
         group["resolution_status"] = "NOT_AUTOMATICALLY_CLOSED"
         group["subsequent_green_is_not_proof_of_repair"] = True
 
     public_groups = sorted(groups.values(),
                            key=lambda g: (-g["run_count"], g["fingerprint_sha256"]))
     return {
-        "schema": "PI-FLR-WATCH/0.2.0",
+        "schema": "PI-FLR-WATCH/0.2.1",
         "scope": "RECENT_BOUNDED_GITHUB_ACTIONS_METADATA_ONLY",
         "repository": REPO,
         "window_hours": MAX_AGE_HOURS,
@@ -195,7 +204,7 @@ def _get_json(endpoint, token):
         "Accept": "application/vnd.github+json",
         "Authorization": "Bearer " + token,
         "X-GitHub-Api-Version": "2022-11-28",
-        "User-Agent": "PI-FLR-ReadOnly-Watch/0.2.0",
+        "User-Agent": "PI-FLR-ReadOnly-Watch/0.2.1",
     })
     try:
         with urlopen(req, timeout=20) as response:
