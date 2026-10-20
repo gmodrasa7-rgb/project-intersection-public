@@ -47,7 +47,7 @@ class FinanceAuditTests(unittest.TestCase):
         for item in x["entries"][1:3]:
             item["stage"] = "PAID_VERIFIED"
             item["receipt_evidence"] = "BANK_RECONCILED_DECLARED"
-            item["receipt_record_ref"] = "funding/GRANTS_CONTRACTS_PUBLIC_LEDGER.md#verified-row-1"
+            item["receipt_record_ref"] = "funding/GRANTS_CONTRACTS_PUBLIC_LEDGER_EN_KO.md#verified-row-1"
         with self.assertRaises(mod.AuditError): mod.audit(x)
 
     def test_reject_float_currency_and_signed_amounts(self):
