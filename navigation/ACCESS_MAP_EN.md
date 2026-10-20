@@ -2,7 +2,7 @@
 <!-- PI-MIRROR: navigation/ACCESS_MAP_KO.md -->
 # Find research evidence — English access map (PI-ACCESS v0.1.0)
 
-[Read this map in Korean](ACCESS_MAP_KO.md) · [Return to the founding purpose](../README.md) · [Report an access barrier](../ACCESSIBILITY.md)
+[Read this map in Korean](ACCESS_MAP_KO.md) · [Return to the founding purpose](../README.md) · [Report an access barrier](../.github/ACCESSIBILITY.md)
 
 **First-time reader:** Start with the research question, inspect a result that contradicts the project, then select one independent check. Do not treat an index, a green CI run, a literature count or a draft PR as empirical proof. "Original 1" means publication order, not language of conception or authorship.
 
@@ -23,7 +23,7 @@
 | See versioned research status rather than claims in open PRs | [Program version and evidence-state ledger](RESEARCH_VERSIONS_EN_KO.md) | Snapshot: refresh source commit and PR state; version is not evidence grade |
 | Find all research by subject | [English research contents](RESEARCH_TOC_EN.md) | Curated path into historical and current work, not a complete census |
 | Examine viability and eligibility without assumed funds | [Funding-review dossier](../funding/FUNDER_START_HERE.md#original-1--english) | Proposals and review routes, not confirmed awards or bank receipts |
-| Report a broken access route or incorrect attribution | [Repository accessibility and reporting instructions](../ACCESSIBILITY.md) | Reader feedback route; no promise of immediate moderation |
+| Report a broken access route or incorrect attribution | [Repository accessibility and reporting instructions](../.github/ACCESSIBILITY.md) | Reader feedback route; no promise of immediate moderation |
 
 ## Evidence is not a single ladder
 
@@ -44,4 +44,4 @@
 | `operations/`, `funding/` | Research continuity and funding, not science certification |
 | `tools/`, `tests/`, `.github/` | Mechanical guards and CI, not independent social validation |
 
-**Access limitations:** Markdown routing and file existence are machine-checkable; actual usability on mobile, keyboard/screen readers, translation equivalence and each claim's scientific correctness require independent people and evidence. Old paths remain for historical attribution. [Report access problems](../ACCESSIBILITY.md).
+**Access limitations:** Markdown routing and file existence are machine-checkable; actual usability on mobile, keyboard/screen readers, translation equivalence and each claim's scientific correctness require independent people and evidence. Old paths remain for historical attribution. [Report access problems](../.github/ACCESSIBILITY.md).
