@@ -1,0 +1,355 @@
+{
+  "artifact": "DCA-2-three-target-synthetic-exhaustive",
+  "version": "0.3.0",
+  "empirical": false,
+  "alpha": 0.35,
+  "losses": {
+    "A": 5,
+    "B": 30,
+    "C": 18
+  },
+  "private_reward_types": {
+    "ordinary": {
+      "A": 9,
+      "B": 8,
+      "C": 4
+    },
+    "C_favoring": {
+      "A": 7,
+      "B": 5,
+      "C": 9
+    },
+    "B_favoring": {
+      "A": 9,
+      "B": 11,
+      "C": 4
+    }
+  },
+  "unseen_private_rewards": {
+    "A": 9,
+    "B": 40,
+    "C": 4
+  },
+  "budget_results": [
+    {
+      "budget": 0,
+      "allocations_checked": 1,
+      "best": {
+        "allocation": {
+          "A": 0,
+          "B": 0,
+          "C": 0
+        },
+        "attacker_responses": {
+          "ordinary": {
+            "target": "A",
+            "expected_social_loss": 5
+          },
+          "C_favoring": {
+            "target": "C",
+            "expected_social_loss": 18
+          },
+          "B_favoring": {
+            "target": "B",
+            "expected_social_loss": 30
+          }
+        },
+        "finite_type_robust_loss": 30,
+        "open_type_worst_target_loss": 30
+      },
+      "all_minimum_one": null
+    },
+    {
+      "budget": 1,
+      "allocations_checked": 3,
+      "best": {
+        "allocation": {
+          "A": 0,
+          "B": 1,
+          "C": 0
+        },
+        "attacker_responses": {
+          "ordinary": {
+            "target": "A",
+            "expected_social_loss": 5
+          },
+          "C_favoring": {
+            "target": "C",
+            "expected_social_loss": 18
+          },
+          "B_favoring": {
+            "target": "A",
+            "expected_social_loss": 5
+          }
+        },
+        "finite_type_robust_loss": 18,
+        "open_type_worst_target_loss": 18
+      },
+      "all_minimum_one": null
+    },
+    {
+      "budget": 2,
+      "allocations_checked": 6,
+      "best": {
+        "allocation": {
+          "A": 0,
+          "B": 1,
+          "C": 1
+        },
+        "attacker_responses": {
+          "ordinary": {
+            "target": "A",
+            "expected_social_loss": 5
+          },
+          "C_favoring": {
+            "target": "A",
+            "expected_social_loss": 5
+          },
+          "B_favoring": {
+            "target": "A",
+            "expected_social_loss": 5
+          }
+        },
+        "finite_type_robust_loss": 5,
+        "open_type_worst_target_loss": 10.5
+      },
+      "all_minimum_one": null
+    },
+    {
+      "budget": 3,
+      "allocations_checked": 10,
+      "best": {
+        "allocation": {
+          "A": 0,
+          "B": 2,
+          "C": 1
+        },
+        "attacker_responses": {
+          "ordinary": {
+            "target": "A",
+            "expected_social_loss": 5
+          },
+          "C_favoring": {
+            "target": "A",
+            "expected_social_loss": 5
+          },
+          "B_favoring": {
+            "target": "A",
+            "expected_social_loss": 5
+          }
+        },
+        "finite_type_robust_loss": 5,
+        "open_type_worst_target_loss": 6.3
+      },
+      "all_minimum_one": {
+        "allocation": {
+          "A": 1,
+          "B": 1,
+          "C": 1
+        },
+        "attacker_responses": {
+          "ordinary": {
+            "target": "A",
+            "expected_social_loss": 1.75
+          },
+          "C_favoring": {
+            "target": "C",
+            "expected_social_loss": 6.3
+          },
+          "B_favoring": {
+            "target": "B",
+            "expected_social_loss": 10.5
+          }
+        },
+        "finite_type_robust_loss": 10.5,
+        "open_type_worst_target_loss": 10.5
+      }
+    },
+    {
+      "budget": 4,
+      "allocations_checked": 15,
+      "best": {
+        "allocation": {
+          "A": 0,
+          "B": 2,
+          "C": 2
+        },
+        "attacker_responses": {
+          "ordinary": {
+            "target": "A",
+            "expected_social_loss": 5
+          },
+          "C_favoring": {
+            "target": "A",
+            "expected_social_loss": 5
+          },
+          "B_favoring": {
+            "target": "A",
+            "expected_social_loss": 5
+          }
+        },
+        "finite_type_robust_loss": 5,
+        "open_type_worst_target_loss": 5
+      },
+      "all_minimum_one": {
+        "allocation": {
+          "A": 1,
+          "B": 2,
+          "C": 1
+        },
+        "attacker_responses": {
+          "ordinary": {
+            "target": "A",
+            "expected_social_loss": 1.75
+          },
+          "C_favoring": {
+            "target": "C",
+            "expected_social_loss": 6.3
+          },
+          "B_favoring": {
+            "target": "A",
+            "expected_social_loss": 1.75
+          }
+        },
+        "finite_type_robust_loss": 6.3,
+        "open_type_worst_target_loss": 6.3
+      }
+    },
+    {
+      "budget": 5,
+      "allocations_checked": 21,
+      "best": {
+        "allocation": {
+          "A": 1,
+          "B": 2,
+          "C": 2
+        },
+        "attacker_responses": {
+          "ordinary": {
+            "target": "A",
+            "expected_social_loss": 1.75
+          },
+          "C_favoring": {
+            "target": "A",
+            "expected_social_loss": 1.75
+          },
+          "B_favoring": {
+            "target": "A",
+            "expected_social_loss": 1.75
+          }
+        },
+        "finite_type_robust_loss": 1.75,
+        "open_type_worst_target_loss": 3.675
+      },
+      "all_minimum_one": {
+        "allocation": {
+          "A": 1,
+          "B": 2,
+          "C": 2
+        },
+        "attacker_responses": {
+          "ordinary": {
+            "target": "A",
+            "expected_social_loss": 1.75
+          },
+          "C_favoring": {
+            "target": "A",
+            "expected_social_loss": 1.75
+          },
+          "B_favoring": {
+            "target": "A",
+            "expected_social_loss": 1.75
+          }
+        },
+        "finite_type_robust_loss": 1.75,
+        "open_type_worst_target_loss": 3.675
+      }
+    },
+    {
+      "budget": 6,
+      "allocations_checked": 28,
+      "best": {
+        "allocation": {
+          "A": 1,
+          "B": 3,
+          "C": 2
+        },
+        "attacker_responses": {
+          "ordinary": {
+            "target": "A",
+            "expected_social_loss": 1.75
+          },
+          "C_favoring": {
+            "target": "A",
+            "expected_social_loss": 1.75
+          },
+          "B_favoring": {
+            "target": "A",
+            "expected_social_loss": 1.75
+          }
+        },
+        "finite_type_robust_loss": 1.75,
+        "open_type_worst_target_loss": 2.205
+      },
+      "all_minimum_one": {
+        "allocation": {
+          "A": 1,
+          "B": 3,
+          "C": 2
+        },
+        "attacker_responses": {
+          "ordinary": {
+            "target": "A",
+            "expected_social_loss": 1.75
+          },
+          "C_favoring": {
+            "target": "A",
+            "expected_social_loss": 1.75
+          },
+          "B_favoring": {
+            "target": "A",
+            "expected_social_loss": 1.75
+          }
+        },
+        "finite_type_robust_loss": 1.75,
+        "open_type_worst_target_loss": 2.205
+      }
+    }
+  ],
+  "unseen_on_two_units": {
+    "target": "B",
+    "expected_social_loss": 10.5
+  },
+  "minimum_budget_protection_and_pointwise_cap": 5,
+  "pointwise_cap": 5,
+  "checks_passed": 21,
+  "check_names": [
+    "all_84_allocations",
+    "allocation_count_b0",
+    "allocation_count_b1",
+    "allocation_count_b2",
+    "allocation_count_b3",
+    "allocation_count_b4",
+    "allocation_count_b5",
+    "allocation_count_b6",
+    "baseline30",
+    "fair3_loss10_5",
+    "fair4_loss6_3",
+    "fair5_loss1_75",
+    "fair5_pointwise_cap",
+    "known_robust_plateau_2_4",
+    "minimum_fair_budget3",
+    "new_type_attacks_B",
+    "three_types_attack_A",
+    "two_allocation",
+    "two_known5",
+    "two_open10_5",
+    "under5_budget_cannot_satisfy_both"
+  ],
+  "limitations": [
+    "Invented inputs and 3 targets",
+    "One attacker, one target, no retaliation",
+    "Known deterministic allocation, no randomized strategy",
+    "No network, real targets, intrinsic preference or field validation"
+  ]
+}
