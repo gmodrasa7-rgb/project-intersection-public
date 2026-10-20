@@ -3,7 +3,7 @@
   "reference_date": "2026-10-21",
   "research_phase": "SOURCE_COLLECTION_CLASSIFICATION_AND_UNDERSTANDING_FIRST",
   "canonical_RVD_main_version_not_changed": "v0.7.0",
-  "external_original_publications_count": 10,
+  "external_original_publications_count": 11,
   "novel_RVD_empirical_results": 0,
   "independent_reproductions_of_RVD": 0,
   "global_saturation": "NOT_ESTABLISHED",
@@ -12,7 +12,8 @@
     "Original B identity and feasible rejection are not inferred from any listed human social-preference games.",
     "Externally forced action and endogenous desire are distinct estimands.",
     "A/B AI analogue not established by studies on humans.",
-    "Prior authorship and date-based edition deduplication required."
+    "Prior authorship and date-based edition deduplication required.",
+    "Adversarial Volz et al. 2017 comparison: harm-to-other vs harm-to-self tradeoffs produce distinct biases, so Crockett 2014 human findings cannot imply broad costly B preservation."
   ],
   "key_originality_claim": "Human-led question of original B freedom under extreme dominance, not invention of social preferences, warm glow, or reward-crowding-out",
   "study_prioritization": [
@@ -145,6 +146,20 @@
       "competing_mechanism": "penalty can reframe moral obligation as a purchasable license",
       "original_B_link": "External control may induce exploitation/license inference rather than increase intrinsic coexistence",
       "status": "VERIFIED_PUBLISHER_ABSTRACT_NOT_FULL_TEXT"
+    },
+    {
+      "key": "VOLZ_ETAL_2017",
+      "type": "EXPERIMENTAL_ADVERSARIAL_EXTENSION",
+      "authors": "Lukas J. Volz; B. Locke Welborn; Matthias S. Gobel; Michael S. Gazzaniga; Scott T. Grafton",
+      "title": "Harm to self outweighs benefit to others in moral decision making",
+      "year": 2017,
+      "doi": "10.1073/pnas.1706693114",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5544327/",
+      "competing_mechanism": "Replicates reluctance to profit by harming others but finds self-protective bias when people must suffer harm to benefit another person; outcome depends on which harm/reward exchange is offered.",
+      "original_B_link": "Direct counterweight to overgeneralizing Crockett 2014 into unconditional preference to protect any other or to bear any price.",
+      "status": "FULL_PMC_SOURCE_ABSTRACT_METHOD_AND_DISCUSSION_REVIEWED",
+      "prior_project": "NOT_IDENTIFIED_IN_C03_LEDGER"
     }
-  ]
+  ],
+  "correction_notice": "Crockett et al. 2014 includes a 2015 PNAS citation correction (DOI 10.1073/pnas.1424572112), NOT an independent replication. Volz et al. 2017 is a distinct empirical extension reporting conditional egocentric bias alongside replicated other-harm avoidance."
 }
