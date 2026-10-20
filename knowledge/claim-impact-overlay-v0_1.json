@@ -265,5 +265,44 @@
       "relation": "reassessment_dependency",
       "meaning": "If upstream changes, reassess downstream scope; this does NOT prove, disprove, or inherit epistemic confidence"
     }
-  ]
+  ],
+  "original_author_antecedents": [
+    {
+      "author": "Jon Doyle",
+      "year": 1979,
+      "title": "A Truth Maintenance System",
+      "doi": "10.1016/0004-3702(79)90008-0",
+      "publisher_or_author": "https://groups.csail.mit.edu/medg/ftp/doyle/",
+      "supported_inheritance": "belief/reason dependency maintenance",
+      "limit": "Does not prove PI research claims or guarantee every dependency is represented"
+    },
+    {
+      "author": "Johan de Kleer",
+      "year": 1986,
+      "title": "An assumption-based TMS",
+      "doi": "10.1016/0004-3702(86)90080-9",
+      "publisher_or_author": "https://www.sciencedirect.com/science/article/pii/0004370286900809",
+      "supported_inheritance": "assumptions and context-specific justifications",
+      "limit": "PI-CIG does not implement full ATMS assumption environments"
+    },
+    {
+      "author": "W3C PROV Working Group",
+      "year": 2013,
+      "title": "PROV-DM: The PROV Data Model",
+      "url": "https://www.w3.org/TR/prov-dm/",
+      "supported_inheritance": "versioned sources, derivations, provenance of provenance",
+      "limit": "Local typed JSON is NOT conformant PROV serialization"
+    },
+    {
+      "author": "Jesus Salas",
+      "year": 2026,
+      "title": "Change-Provenant Supervision: Governing Learned Artifacts Under Policy Change",
+      "url": "https://arxiv.org/abs/2609.28574",
+      "review_status": "preprint; external peer review not established",
+      "supported_inheritance": "recorded graph alone cannot certify edge completeness; separate candidate impact from current-contract revalidation",
+      "limit": "Controlled artifacts and learned supervision; not empirical validation of PI's societal/agent claims"
+    }
+  ],
+  "completeness_limit": "Two real dependency worlds can share the same recorded graph while only one contains a missing load-bearing edge. Reachability alone cannot certify absence of impacts; all applicable retained claims still require independent source/contract checks.",
+  "identity_and_novelty": "PI-CIG is an applied, bounded configuration/re-review utility, not a novel general-purpose truth-maintenance theorem, an implemented ATMS, or proven PROV-compliant software."
 }
