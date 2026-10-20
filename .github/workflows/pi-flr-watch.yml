@@ -3,6 +3,12 @@ on:
   schedule:
     - cron: '17 * * * *'
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/pi-flr-watch.yml'
+      - 'tools/pi_flr_watch.py'
+      - 'tests/test_pi_flr_watch.py'
 
 permissions:
   contents: read
