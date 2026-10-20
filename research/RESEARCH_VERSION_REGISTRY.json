@@ -2,7 +2,7 @@
   "schema_version": "0.2.0",
   "registry_document_version": "0.2.0",
   "snapshot_date": "2026-10-20",
-  "main_basis_commit": "f55f6eda0e8994eff7e0c16d79a1ca821b80d18f",
+  "main_basis_commit": "8c10bfc088db6b43099a9fb90e8481fb3d66908f",
   "audit_scope": "Selected public main files and open PR metadata; prior conversations only partial retrieval, not a complete chat export or private-repository inventory",
   "terminology_spec_version": "0.1",
   "principles": [
@@ -149,13 +149,13 @@
       "title": "Research Archive Meta-Protocol",
       "what": "Measure whether archive changes improve evidence discovery, falsification and reader correctness",
       "how": "Predeclare reader tasks, negative controls, correction and rollback",
-      "current_version": "0.3.0",
+      "current_version": "0.4.0",
       "candidate_version": null,
       "publication_state": "MAIN",
       "evidence_state": "PILOT_NO_READER_EFFECT_MEASUREMENT",
-      "source": "protocols/PI_RAMP_V0_3_KO.md",
+      "source": "protocols/PI_RAMP_V0_4_EN_KO.md",
       "candidate_pr": null,
-      "current_source_blob_sha": "3220d823663470be80d4a6b7bdf366436883c299"
+      "current_source_blob_sha": "4427b4f10f8f5b51bebb0ac3fd0031cc02431962"
     },
     {
       "id": "PI-ROADMAP",
