@@ -17,7 +17,7 @@
   "artifacts": [
     {
       "path": "operations/PI_RISE_V0_1_0_EN_KO.md",
-      "blob_sha": "c7c9eec77c1719591e274e13dda2990d5654e7b9"
+      "blob_sha": "46b7e5900d6a39038b79a293ddff903763ca58fc"
     },
     {
       "path": "operations/PI_RISE_SCHEMA_V0_1_0.json",
@@ -29,19 +29,38 @@
     },
     {
       "path": "tools/pi_rise_check.py",
-      "blob_sha": "2cd3a9dbe06a0ddc98250a60ad2bb445c1d3fd71"
+      "blob_sha": "6ac2e3540296573c3d4179b40f2df835510e35f9"
     },
     {
       "path": "tests/test_pi_rise_check.py",
-      "blob_sha": "bb89a4d29cc4f432153ba804cedd9e283560f2eb"
+      "blob_sha": "da1e41a60861dcae63eeac8023db888380be96ec"
+    },
+    {
+      "path": "operations/PI_RISE_CUT_V0_1_0_EN_KO.md",
+      "blob_sha": "9a751b09f8333f260f90e4384a653c92b528d870"
+    },
+    {
+      "path": "tools/pi_rise_cutset.py",
+      "blob_sha": "8837d1444283402adef7eb1545999dd365026625"
+    },
+    {
+      "path": "tests/test_pi_rise_cutset.py",
+      "blob_sha": "8c85b358826dfe83d718e47d476d0ef9e5e340d1"
+    },
+    {
+      "path": ".github/workflows/pi-rise-integrity.yml",
+      "blob_sha": "8d53f49cb04466bd98ae5c29aaabd9fd747d14ae"
     }
   ],
   "evaluation": {
     "scientific_status": "NOT_APPLICABLE_OPERATIONAL_METHOD",
     "real_world_sustainability_effect": "UNVERIFIED",
     "independent_replication": "NOT_DONE",
-    "unit_tests": "GITHUB_ACTIONS_SYNTHETIC_REGRESSION_PASSED_ON_INITIAL_PR",
-    "no_grant_or_cash_verified_by_this_release": true
+    "unit_tests": "SYNTHETIC_REGRESSION_IMPLEMENTED; CURRENT_HEAD_RUN_NOT_YET_VERIFIED",
+    "no_grant_or_cash_verified_by_this_release": true,
+    "scope": "PI-RISE checker + hypothetical dependency fault tree, not real personal finance or independently restored files",
+    "inferred_grant_awards": "NONE",
+    "provenance_status": "SELF_REPORTED_FIELDS_NOT_REAL_WORLD_CERTIFICATE"
   },
   "privacy": {
     "public_examples": "SYNTHETIC_ONLY",
@@ -51,5 +70,11 @@
   "migration": {
     "prior_records_immutable": true,
     "requires_re_read_of_main_before_merge": true
-  }
+  },
+  "revision_notes": [
+    "base method version remains candidate v0.1.0 (not merged)",
+    "added PI-RISE-CUT v0.1.0 synthetic diagnostic and negative tests",
+    "verified cash statuses are input assertions not independent bank verification",
+    "conflict-safe rebuild on newer main without overwriting concurrent research"
+  ]
 }
