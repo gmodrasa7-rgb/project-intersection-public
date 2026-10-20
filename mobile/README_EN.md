@@ -1,6 +1,6 @@
 # Project Intersection mobile research guide — English (v0.1.0)
 
-[한국어판](README_KO.md) · [Public research repository](https://github.com/gmodrasa7-rgb/project-intersection-public)
+[Korean edition](README_KO.md) · [Public research repository](https://github.com/gmodrasa7-rgb/project-intersection-public)
 
 ## Purpose
 A preliminary installable **Progressive Web App (PWA)** for reading the research question, starting with contrary evidence, and preparing public submissions of primary prior art, falsifiers, questions and reproduction failures from a smartphone.
