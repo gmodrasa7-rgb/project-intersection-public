@@ -70,6 +70,45 @@ class RISETests(unittest.TestCase):
         s["continuity"]["local_restore_tested"] = False
         self.assertEqual(assess(s)["overall"], "HOLD_EXPANSION")
 
+    def test_unknown_root_field_rejected_instead_of_ignored(self):
+        s = copy.deepcopy(self.s)
+        s["finance_override_cash"] = 50000000
+        with self.assertRaises(InputError):
+            assess(s)
+
+    def test_unknown_nested_field_rejected(self):
+        s = copy.deepcopy(self.s)
+        s["finance"]["incoming_unrestricted_cash_krw"] = 60000000
+        with self.assertRaises(InputError):
+            assess(s)
+
+    def test_false_independence_attestation_not_certified(self):
+        s = copy.deepcopy(self.s)
+        s["finance"]["liquid_cash_krw"]["amount"] = 10000000
+        x = assess(s)
+        self.assertEqual(x["overall"], "OPERATE_ELIGIBLE")
+        self.assertEqual(x["gates"]["continuity"], "RECOVERY_SELF_REPORTED")
+        self.assertEqual(x["gates"]["compute"], "FALLBACK_TEST_SELF_REPORTED")
+        self.assertIn("NO_RECEIPT_VERIFICATION", x["claims"])
+
+    def test_paid_verified_pipeline_is_not_added_to_cash(self):
+        s = copy.deepcopy(self.s)
+        s["funding_pipeline"][0]["stage"] = "PAID_VERIFIED"
+        s["funding_pipeline"][0]["proposed_amount_krw"] = 10**12
+        x = assess(s)
+        self.assertEqual(x["overall"], "CONSERVE")
+        self.assertIs(x["pipeline_counted_as_cash"], False)
+
+    def test_invalid_source_ref_and_unknown_entry_field_are_rejected(self):
+        s = copy.deepcopy(self.s)
+        s["funding_pipeline"][0]["secret"] = "DO_NOT_LOG"
+        with self.assertRaises(InputError):
+            assess(s)
+        del s["funding_pipeline"][0]["secret"]
+        s["funding_pipeline"][0]["source_ref"] = "X" * 201
+        with self.assertRaises(InputError):
+            assess(s)
+
     def test_unverified_and_paused_researcher_still_pauses(self):
         s = copy.deepcopy(self.s)
         s["finance"]["liquid_cash_krw"] = {"status": "UNVERIFIED", "amount": None}
