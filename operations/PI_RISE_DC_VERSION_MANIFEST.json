@@ -1,7 +1,7 @@
 {
   "component": "PI-RISE-DC",
   "version": "0.1.0",
-  "publication_state": "CANDIDATE_UNMERGED",
+  "publication_state": "MAIN_OPERATIONAL_SYNTHETIC_NOT_FIELD_VALIDATED",
   "date": "2026-10-21",
   "full_name": "Project Intersection Dual Clock — Liquidity Timing & Evidence Workload",
   "parent": "PI-RISE v0.1.0",
@@ -20,7 +20,7 @@
   "artifact_blobs": [
     {
       "path": "operations/PI_RISE_DC_V0_1_0_EN_KO.md",
-      "sha": "0ccf8138c941edbc6a35749517f5e7a7a433b39c"
+      "sha": "e26f701bf5c38036aecda595b53ed7f61eeb337e"
     },
     {
       "path": "tools/pi_rise_dual_clock.py",
@@ -51,5 +51,15 @@
     "funding/90_DAY_PILOT.md",
     "tools/pi_rise_vac.py"
   ],
-  "review_status": "NOT_YET_EXECUTED_INDEPENDENTLY"
+  "review_status": "INTERNAL_CI_PASSED_NO_EXTERNAL_REPRODUCTION",
+  "main_pr": 278,
+  "main_merge_commit": "e6677f0f3de639821b0d08a49c35dd798f452c47",
+  "test_receipt": {
+    "pr_head_sha": "b06aeec0ebdcd4eaac2cd8785e4ac3021d056258",
+    "pi_rise_suite_tests": 87,
+    "ci_workflows": 8,
+    "all_passed": true,
+    "field_validation": false,
+    "external_reviewer_contracted": false
+  }
 }
