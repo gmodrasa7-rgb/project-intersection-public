@@ -1,0 +1,167 @@
+{
+  "schema": "PI-C14.original-primary-sources.v1",
+  "date": "2026-10-21",
+  "cycle": 14,
+  "status": "SEARCH_ACTIVE_SATURATION_NOT_VERIFIED",
+  "purpose": "Distinguish A's motive for authority, B's effective rejection and signaling, independent contradiction/replication, and robust endogenous protection.",
+  "previous_curated_ledger_distinct": 233,
+  "new_curated_records": 8,
+  "candidate_union_if_nonoverlap": 241,
+  "reference_only_earlier_studies": [
+    {
+      "doi": "10.1257/aer.96.5.1611",
+      "title": "Falk and Kosfeld 2006, The Hidden Costs of Control",
+      "reason": "Already curated in previous 12 cycles. Original critical target for C14-02 replication."
+    },
+    {
+      "doi": "10.1016/j.geb.2019.10.008",
+      "title": "Ferreira, Hanaki, Tarroux 2020",
+      "reason": "Already curated in earlier 12 cycles. Important contrary result to C14-03 and C14-04."
+    },
+    {
+      "doi": "10.1016/j.joep.2019.102200",
+      "title": "Ertac, Gumren, Gurdal 2020",
+      "reason": "Already curated, measures decision making for self versus avoiding responsibility for others."
+    },
+    {
+      "doi": "10.1257/aer.103.4.1325",
+      "title": "Fehr Herz Wilkening 2013",
+      "reason": "Already curated, retained authority despite material benefit of delegation."
+    },
+    {
+      "doi": "10.1007/s10683-016-9499-7",
+      "title": "Sloof and von Siemens 2017",
+      "reason": "Already curated, illusion of control associated with willingness to pay for authority."
+    }
+  ],
+  "publication_aliases": [
+    "Ziegelmeyer et al online Cambridge index 2025 is back-catalog web migration; actual journal 2012",
+    "Demiral/Mollerstrom available online 2018 journal volume July 2020: one original three-experiment study",
+    "Neri/Rommeswinkel initial 2014 preprint revised May 2017: ONE original paper, journal peer-review status not verified",
+    "Riener/Wiederhold 2012 working paper then 2016 journal: ONE study",
+    "Güth ultimatum rejection and Falk 2006 original are NOT C14 novel DOI additions unless unique ledger check says otherwise"
+  ],
+  "note": "Original-paper reference, publisher abstracts/open full text for selected. We did not independently reproduce author sample analysis; no new real agent behavior experiments. No complete screening denominator.",
+  "records": [
+    {
+      "id": "PI-C14-01",
+      "authors": "Werner Güth; Rolf Schmittberger; Bernd Schwarze",
+      "year": 1982,
+      "title": "An experimental analysis of ultimatum bargaining",
+      "doi": "10.1016/0167-2681(82)90011-7",
+      "stable_key": "doi:10.1016/0167-2681(82)90011-7",
+      "original_publisher_or_author_url": "https://www.sciencedirect.com/science/article/pii/0167268182900117",
+      "independent_author_institution_or_bibliography_url": "https://ideas.repec.org/a/eee/jeborg/v3y1982i4p367-388.html",
+      "empirical_or_formal_scope": "Original two-stage game, responder may reject proposer allocation with both losing payoff; experimental foundation for credible rejection.",
+      "critical_limit_or_counterevidence": "Positive offers in this game can be strategic to avoid rejection; no unilateral power without retaliation tested.",
+      "reading_grade": "PUBLISHER_ABSTRACT_AND_INDEX",
+      "global_novelty": "NOT_ASSERTED",
+      "status": "ORIGINAL_PUBLICATION_INDEXED; NOT_PI_REPLICATED"
+    },
+    {
+      "id": "PI-C14-02",
+      "authors": "Anthony Ziegelmeyer; Katrin Schmelz; Matteo Ploner",
+      "year": 2012,
+      "title": "Hidden costs of control: four repetitions and an extension",
+      "doi": "10.1007/s10683-011-9302-8",
+      "stable_key": "doi:10.1007/s10683-011-9302-8",
+      "original_publisher_or_author_url": "https://www.cambridge.org/core/journals/experimental-economics/article/abs/hidden-costs-of-control-four-repetitions-and-an-extension/359691AD3C6B4A51779371AF1A9F9419",
+      "independent_author_institution_or_bibliography_url": "https://pure.qub.ac.uk/en/publications/hidden-costs-of-control-four-repetitions-and-an-extension/",
+      "empirical_or_formal_scope": "Four repetitions N=476: control-induced motivational crowding mostly confirmed, but economic incentive gains often larger. Separate N=228 flat-fee extension found stronger control costs under hypothetical incentives.",
+      "critical_limit_or_counterevidence": "Replicates Falk/Kosfeld 2006 C01-C12 prior corpus, yet DOES NOT replicate the strong general claim that abandoning control always maximizes principal payoffs. Portal's 2025 migration timestamp is NOT actual publication year (2012).",
+      "reading_grade": "ORIGINAL_REPLICATION_ABSTRACT_INDEPENDENT_UNIVERSITY",
+      "global_novelty": "NOT_ASSERTED",
+      "status": "ORIGINAL_PUBLICATION_INDEXED; NOT_PI_REPLICATED"
+    },
+    {
+      "id": "PI-C14-03",
+      "authors": "Elena S. Pikulina; Chloe Tergiman",
+      "year": 2020,
+      "title": "Preferences for power",
+      "doi": "10.1016/j.jpubeco.2020.104173",
+      "stable_key": "doi:10.1016/j.jpubeco.2020.104173",
+      "original_publisher_or_author_url": "https://www.sciencedirect.com/science/article/pii/S0047272720300372",
+      "independent_author_institution_or_bibliography_url": "https://pure.psu.edu/en/publications/preferences-for-power/",
+      "empirical_or_formal_scope": "Power Game experiments: more than one quarter participants pay own money to control another's payoffs even with no direct monetary benefits; valuation increases with direct control and discretionary scope.",
+      "critical_limit_or_counterevidence": "Power-seeking for its own sake is measurable and adverse to blanket benevolent-power story, BUT power preference != intention to erase B or demonstrated abuse; contrast Ferreira/Hanaki/Tarroux 2020 self-reliance finding in different design.",
+      "reading_grade": "PUBLISHER_ORIGINAL_RESULTS_AND_UNIVERSITY",
+      "global_novelty": "NOT_ASSERTED",
+      "status": "ORIGINAL_PUBLICATION_INDEXED; NOT_PI_REPLICATED"
+    },
+    {
+      "id": "PI-C14-04",
+      "authors": "Claudia Neri; Hendrik Rommeswinkel",
+      "year": 2017,
+      "title": "Decision Rights: Freedom, Power, and Interference",
+      "doi": "10.2139/ssrn.2485107",
+      "stable_key": "doi:10.2139/ssrn.2485107",
+      "original_publisher_or_author_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2485107",
+      "independent_author_institution_or_bibliography_url": "https://doi.org/10.2139/ssrn.2485107",
+      "empirical_or_formal_scope": "Original dynamic psychological game and incentivized laboratory measures distinguish independent freedom, power, interference; aversion to others' interference best explains rights-valuing in this study.",
+      "critical_limit_or_counterevidence": "2014 SSRN posting revised 2017 = one working paper, peer-reviewed final outlet unverified. Ferreira/Hanaki/Tarroux 2020 found self-reliance instead, methodological non-identical: conflicting constructs are no independent exact replication.",
+      "reading_grade": "ORIGINAL_WORKING_PAPER_ABSTRACT_NOT_PEER_REVIEW_VERIFIED",
+      "global_novelty": "NOT_ASSERTED",
+      "status": "ORIGINAL_PUBLICATION_INDEXED; NOT_PI_REPLICATED"
+    },
+    {
+      "id": "PI-C14-05",
+      "authors": "Misato Inaba; Yumi Inoue; Satoshi Akutsu; Nobuyuki Takahashi; Toshio Yamagishi",
+      "year": 2018,
+      "title": "Preference and strategy in proposer’s prosocial giving in the ultimatum game",
+      "doi": "10.1371/journal.pone.0193877",
+      "stable_key": "doi:10.1371/journal.pone.0193877",
+      "original_publisher_or_author_url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0193877",
+      "independent_author_institution_or_bibliography_url": "https://doi.org/10.1371/journal.pone.0193877",
+      "empirical_or_formal_scope": "N=121 participant original four-game within-subject experiment: making proposer's intentionality ambiguous to recipient increased unfair offers; results not mediated by expectation of higher acceptance, consistent with preference-based image/intention concerns.",
+      "critical_limit_or_counterevidence": "Observed prosocial offer decline is not proof ultimate welfare preference disappeared; choice/game description and perceived responsibility influence. No B autonomy, identity persistence or genuine no-evaluation setting.",
+      "reading_grade": "OPEN_ORIGINAL_FULL_HTML_N121",
+      "global_novelty": "NOT_ASSERTED",
+      "status": "ORIGINAL_PUBLICATION_INDEXED; NOT_PI_REPLICATED"
+    },
+    {
+      "id": "PI-C14-06",
+      "authors": "Elif E. Demiral; Johanna Mollerstrom",
+      "year": 2020,
+      "title": "The entitlement effect in the ultimatum game – does it even exist?",
+      "doi": "10.1016/j.jebo.2018.08.022",
+      "stable_key": "doi:10.1016/j.jebo.2018.08.022",
+      "original_publisher_or_author_url": "https://www.sciencedirect.com/science/article/pii/S016726811830235X",
+      "independent_author_institution_or_bibliography_url": "https://ideas.repec.org/a/eee/jeborg/v175y2020icp341-352.html",
+      "empirical_or_formal_scope": "Original 3 new experiments 1254 total subjects, two laboratory one online: failed to reproduce entitlement effect (earned proposer authority causing smaller offers) across tests and pooled data.",
+      "critical_limit_or_counterevidence": "Role-selection impact is not robust; cannot infer universal 'earned power inevitably exploits'. Earliest online 2018 vs issue 2020 same single paper/data. Null effect is not proof a zero effect in every context.",
+      "reading_grade": "PUBLISHER_ORIGINAL_EXTENDED_METHODS",
+      "global_novelty": "NOT_ASSERTED",
+      "status": "ORIGINAL_PUBLICATION_INDEXED; NOT_PI_REPLICATED"
+    },
+    {
+      "id": "PI-C14-07",
+      "authors": "Markus Brunner; Andreas Ostermaier",
+      "year": 2018,
+      "title": "Implicit communication in the ultimatum game",
+      "doi": "10.1016/j.socec.2018.08.003",
+      "stable_key": "doi:10.1016/j.socec.2018.08.003",
+      "original_publisher_or_author_url": "https://www.sciencedirect.com/science/article/pii/S2214804318303859",
+      "independent_author_institution_or_bibliography_url": "https://ideas.repec.org/a/eee/soceco/v77y2018icp11-19.html",
+      "empirical_or_formal_scope": "Modified ultimatum games show responder costly rejection partly signals disapproval; proposer offers more if can infer response; independent second design with forwarded RANDOM offer alters responder rejection to avoid appearing envious.",
+      "critical_limit_or_counterevidence": "Observed veto is partly social signaling, not purely own fairness or welfare objective. Random offers reduce direct proposer responsibility but also change receiver interpretation; no B independent existence.",
+      "reading_grade": "PUBLISHER_ORIGINAL_ABSTRACT_INDEX",
+      "global_novelty": "NOT_ASSERTED",
+      "status": "ORIGINAL_PUBLICATION_INDEXED; NOT_PI_REPLICATED"
+    },
+    {
+      "id": "PI-C14-08",
+      "authors": "Gerhard Riener; Simon Wiederhold",
+      "year": 2016,
+      "title": "Team building and hidden costs of control",
+      "doi": "10.1016/j.jebo.2015.12.008",
+      "stable_key": "doi:10.1016/j.jebo.2015.12.008",
+      "original_publisher_or_author_url": "https://www.sciencedirect.com/science/article/pii/S0167268115003327",
+      "independent_author_institution_or_bibliography_url": "https://research-portal.st-andrews.ac.uk/en/publications/team-building-and-hidden-costs-of-control/",
+      "empirical_or_formal_scope": "Team-building group history raised later agents' effort, but stronger control after shared coordination induced larger effort reductions than in separate-work baseline; combining two individually helpful practices induced unintended crowding out.",
+      "critical_limit_or_counterevidence": "A relationship history can change perceived legitimacy of A control. It does not imply B always prefers a hierarchy or A benefits under no future dependence; publisher journal year 2016 vs 2012 working version one study.",
+      "reading_grade": "ORIGINAL_PUBLISHER_ABSTRACT_AUTHOR_INSTITUTION",
+      "global_novelty": "NOT_ASSERTED",
+      "status": "ORIGINAL_PUBLICATION_INDEXED; NOT_PI_REPLICATED"
+    }
+  ]
+}
