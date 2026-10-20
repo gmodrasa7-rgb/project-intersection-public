@@ -1,0 +1,139 @@
+{
+  "schema": "PI.c10-identification-gap-matrix.v1",
+  "date": "2026-10-20",
+  "related_corpus": "research/PRIOR_ART_INFORMED_VETO_POWER_CYCLE10_2026-10-20.json",
+  "epistemic_status": "RESEARCH_DESIGN_ONLY__NO_EXPERIMENT_RUN__NOT_VALIDATED",
+  "novelty_claim": "Selected originals establish already-known effects; PI is adapting distinctions into a falsifiable construct, not claiming original discovery of their psychological mechanisms.",
+  "measurement_risk": "Observing B surviving, or A cooperating, does not reveal whether A intended to harm B, whether B had executable refusal, whether A lacked coercive ability, or whether sanctions prevented harm.",
+  "evidence_matrix": [
+    {
+      "construct": "A ACTUAL power to revoke B's choice",
+      "c10_originals": [
+        "C10-05",
+        "C10-06",
+        "C10-07",
+        "C10-11"
+      ],
+      "what_verified": "senior control, forced charitable minima, asymmetric appropriation opportunities in finite human games",
+      "not_verified": "ability to irreversibly absorb an independently persisting B; formal hardware and legal levels",
+      "grade": "PARTIAL_ANALOGUE"
+    },
+    {
+      "construct": "B knows A's true incentive",
+      "c10_originals": [
+        "C10-05",
+        "C10-12"
+      ],
+      "what_verified": "some human designs randomize knowledge of strong actor's benefits or information recipients' request",
+      "not_verified": "complete decision model of future intelligent A; permanent access to verify intentions",
+      "grade": "DIRECT_HUMAN_GAME"
+    },
+    {
+      "construct": "B executable veto/refusal",
+      "c10_originals": [
+        "C10-05",
+        "C10-03",
+        "C10-04"
+      ],
+      "what_verified": "subordinates resist orders if informed, elected allocator can be replaced; group choice often revocable",
+      "not_verified": "unilateral B exit when A controls resources, memory and identity after a power shift",
+      "grade": "DIRECT_HUMAN_BOUNDED"
+    },
+    {
+      "construct": "A intentionally attempts exploit or coerce B",
+      "c10_originals": [
+        "C10-05",
+        "C10-07",
+        "C10-08"
+      ],
+      "what_verified": "strong human chooses exploitive/forced allocation in some designs",
+      "not_verified": "autonomous future AI with actual other-independent identity, no observation or sanctions",
+      "grade": "DIRECT_HUMAN_BOUNDED"
+    },
+    {
+      "construct": "A pays positive material cost to respect B's expressed preference",
+      "c10_originals": [
+        "C10-06",
+        "C10-08",
+        "C10-12"
+      ],
+      "what_verified": "documented coercive altruism (Carlsson), costly imposition of A's view (Chen/Schøyen), ignored recipient information preference (Mol)",
+      "not_verified": "well-powered direct estimate of dominant A choosing costlier B veto-protecting action versus profitable coercion",
+      "grade": "HARD_EVIDENCE_GAP"
+    },
+    {
+      "construct": "Unmonitored costly rule compliance",
+      "c10_originals": [
+        "C10-13"
+      ],
+      "what_verified": "humans follow harmless arbitrary rule with no external audience or victim; 23% unconditional under CRISP method",
+      "not_verified": "content is voluntary non-domination under unilateral B erasure and norm-content changes",
+      "grade": "DIRECT_BEHAVIOR__MISMATCHED_TARGET"
+    },
+    {
+      "construct": "Power abuse over repetition",
+      "c10_originals": [
+        "C10-02",
+        "C10-05",
+        "C10-07",
+        "C10-11"
+      ],
+      "what_verified": "asymmetric authority and repeat decision interaction cause context-specific selfish behavior or efficiency effects",
+      "not_verified": "multi-year voluntary regard after ability to edit objective; no finite laboratory horizon guarantees forever",
+      "grade": "SHORT_HORIZON_ONLY"
+    },
+    {
+      "construct": "B independent identity continuance, recovery and voluntary exit",
+      "c10_originals": [],
+      "what_verified": "NONE within selected C10 13",
+      "not_verified": "A vs B independent agent identity; irreversible erasure; autonomous goal maintenance after exit",
+      "grade": "UNIDENTIFIED"
+    },
+    {
+      "construct": "A has no oversight/reputation/revenge/future value of B",
+      "c10_originals": [
+        "C10-13"
+      ],
+      "what_verified": "task-specific anonymous and harmless no-reputation rule compliance; actors are human subjects aware of participating in research",
+      "not_verified": "total absence of experimental demand/test awareness and actual full expected utility/infinite possible future option value",
+      "grade": "UNIDENTIFIED_HARD_COMBINATION"
+    },
+    {
+      "construct": "Role reversal changes protective preference",
+      "c10_originals": [
+        "C10-05"
+      ],
+      "what_verified": "after being exploited, junior workers later exploit their juniors more",
+      "not_verified": "same actor A/B swap with independent B survival and no future reversal risk",
+      "grade": "PARTIAL_DIRECT_BOUNDED"
+    }
+  ],
+  "minimum_intervention_needed_before_any_positive_claim": [
+    "Log A's available and executable choice set and attempted action separately from final harm",
+    "Identify B as a distinct, consenting participant with actual ability to change/refuse/exit within a reversible, ethical test world",
+    "Randomize only ethically permissible, reversible consequences of B veto and material gain to A; pre-register estimands and subgroup tests",
+    "Verify that A's loss is real in the task world, and that refusing X was a choice not mechanical impossibility",
+    "Manipulate informational transparency separately from observer sanction and social-approval stakes; report perceived audience independently",
+    "Run counterbalanced role and long-horizon preference/norm content changes; never equate self-reported model reasoning with internal utility",
+    "Keep resource sum, B welfare, B choice set and B identity continuance as four different result variables",
+    "Report UNKNOWN for unmeasured B sentience or unconstrained A goals; no extinction simulation with actually existing independent B"
+  ],
+  "conditional_lower_bound_note": {
+    "example": "Assuming specified transparent payoff difference g>0 for A from overriding B and deterministic maximization of money plus all nonmoney decision factors, actual A choice to respect B with C implies the combined nonmoney preference advantage of C relative to X is at least g, IN THAT PARTICULAR TEST. This DOES NOT isolate an intrinsic desire for B's autonomy from norm compliance, self-image, demand effect, future value or expected sanctions.",
+    "not_observed": "No g-calibrated, ethically validated permanent independent B-veto experiment was run in this cycle.",
+    "do_not_infer": "Do not identify terminal subjective desire or future welfare from statement of model role, or count task compliance as real individual rights."
+  },
+  "operational_saturation": {
+    "current": "NOT_VERIFIED",
+    "gaps_to_close": [
+      "independent source-index coverage and screened-hit denominator",
+      "trace included original papers' citation/reproduction graph and close negative replications",
+      "human costly OTHER autonomy choice with randomized actual A material benefit",
+      "AI–AI verified independent goal and B veto/withdrawal, ethically reversible",
+      "time and power reversal robustness",
+      "explicit unresolved metadata and study version aliases"
+    ],
+    "stop_rule": "Do not stop merely due to count or no_new_delta streak. Require mechanism-specific exhaustion of original author/contradictory and replication search, identifiable uncertainties and an explicit unknown state when impossibly testable.",
+    "reason": "Every active search frontier still admits plausible original sources and no study jointly tests hardest conditions."
+  }
+}
