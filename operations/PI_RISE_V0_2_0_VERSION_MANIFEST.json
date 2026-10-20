@@ -64,11 +64,11 @@
     },
     {
       "path": "navigation/RESEARCH_VERSIONS_EN_KO.md",
-      "git_blob_sha": "dea7e9ca636bc37b0b36e4cb3d502b75800f787a"
+      "git_blob_sha": "010fcd3701c154043637c4322c94b685f49cadaa"
     },
     {
       "path": "tools/pi_rise_manifest_guard.py",
-      "git_blob_sha": "130c11716327c2c4a3b35a5eab8d75a6b53263c0"
+      "git_blob_sha": "8267d5e63095fd956e10da677b4408ca78e1a3f4"
     },
     {
       "path": "tests/test_pi_rise_manifest_guard.py",
