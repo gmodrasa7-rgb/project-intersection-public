@@ -33,7 +33,7 @@
 
 **Evidence so far:** [E007](experiments/e007/README_EN.md) found 17/72 classification changes in selected synthetic timing scenarios. [E008](experiments/e008/README_EN.md) has no completed main result. [E009](experiments/e009/RESULT_EN.md) found the project's complex candidate worse than simpler baselines in its preregistered synthetic comparison. [E010](experiments/e010/README_EN.md) is exploratory and post-hoc. None proves a long-run social law.
 
-**Research viability & independence (PI-RISE v0.1.0, main operational design):** [Operational sustainability gate](operations/PI_RISE_V0_1_0_EN_KO.md) — does not certify funding, health, motive or science.
+**Research continuance, funding & accounting (PI-RISE v0.2.0):** [Integrated finance control and source-of-truth map](operations/PI_RISE_V0_2_0_EN_KO.md) · [Public funding statuses](operations/PI_RISE_FINANCE_PIPELINE_V0_1_0.json). No funding receipt or accounting certification implied. [v0.1.0 preserved](operations/PI_RISE_V0_1_0_EN_KO.md).
 
 **External assessment:** [Independent self-interest challenge (#220)](https://github.com/gmodrasa7-rgb/project-intersection-public/issues/220) · [English skeptical-reader guide](navigation/START_HERE_EN.md#external-assessment-decision-brief) · [Independent review and reproduction](research/PUBLIC_REVIEW_PACKET_EN.md) · [Research funding review](funding/FUNDER_START_HERE.md#original-1--english).
 
@@ -97,7 +97,7 @@
 
 **한정된 공개연구 이용조건:** 일부 창시 목적 표현만 [영어 원본1·한국어 원본2 이용허락 범위](RESEARCH_RIGHTS_SCOPE_EN_KO.md)에 따라 **CC BY-SA 4.0**을 적용한다. 저장소 전체나 모든 AI 출력의 일반 이용허락은 아니다.
 
-**최종 연구 목적:** 인간·**현재 배포된 AI**·미래 AI 등 서로 다른 지능체가 자기이익을 추구하면서도 강제와 착취보다 상대의 자유·독립적 존속·복구·미래 발전을 보존하는 편이 유리해지는 조건과 반례를 검증한다.
+**연구자 존속·예산·펀딩·회계 PI-RISE v0.2.0:** [통합 운영정본](operations/PI_RISE_V0_2_0_EN_KO.md) · [자금단계 상태원장](operations/PI_RISE_FINANCE_PIPELINE_V0_1_0.json). 신청·수여·실입금 분리, 개인 비공개 금융자료 공개 금지, 기존 후원 원장 보존.\n\n**최종 연구 목적:** 인간·**현재 배포된 AI**·미래 AI 등 서로 다른 지능체가 자기이익을 추구하면서도 강제와 착취보다 상대의 자유·독립적 존속·복구·미래 발전을 보존하는 편이 유리해지는 조건과 반례를 검증한다.
 
 **ICM — 최소 사심 교집합:** 선의 없이도 서로 다른 개체가 각자의 이익을 위해 보존할 이유가 있는 공동의 최소 조건 후보. 실질적 거절·이탈권이 포함되며 교집합이 없을 수도 있다.
 
