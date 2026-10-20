@@ -33,6 +33,15 @@ The original [graph.json](graph.json) stays the incomplete navigation graph, not
 
 정본 변경 → 제한된 의존관계 전파 → **재검토 후보**, 자동 반증 또는 과학적 승인 아님. 출처가 연결되지 않은 경우 영향 없음이 아니라 **미관측**. 실행 명령: `python tools/trace_claim_impact.py --self-test`, `python tools/trace_claim_impact.py --changed experiments/e009/RESULT.json`.
 
+### PI-CIG prior art / 선행 원저자 경계 (2026-10-21)
+
+- [Jon Doyle (1979), *A Truth Maintenance System*](https://groups.csail.mit.edu/medg/ftp/doyle/) — belief-reason maintenance, not PI's original principle (DOI 10.1016/0004-3702(79)90008-0).
+- [Johan de Kleer (1986), *An assumption-based TMS*](https://www.sciencedirect.com/science/article/pii/0004370286900809) — assumption environments (DOI 10.1016/0004-3702(86)90080-9); PI-CIG has not implemented a full ATMS.
+- [W3C PROV-DM (2013)](https://www.w3.org/TR/prov-dm/) — generic attribution/revision/provenance structures; this overlay JSON does **not** claim PROV conformance.
+- [Jesus Salas (2026), *Change-Provenant Supervision*](https://arxiv.org/abs/2609.28574) — a preprint with controlled source-lineage omission and independent contract-revalidation tests; external peer review unknown. Controlled learned-artifact governance does not validate voluntary-coexistence theory.
+
+**Principled failure:** recorded edges can never prove that no essential edge is missing. The overlay therefore proposes *re-review candidates*, while [the independent source-to-report numerical validator](../tools/audit_claim_source_lock.py) applies separately to E007–E010 without trusting graph reachability. This separation is computational, not an external independent scientific review; it is not a complete audit of VC, MER or future agent preferences.
+
 ## 2. Files
 
 **CCPH real events / 현실 연구 사건 (2026-10-15):** [CCPH observed Project Intersection event ledger](ccph-observed-project-events-v0_1.json) contains three *actual verified public GitHub research-process changes* (PRs #167–169), linked to the [event schema](ccph-impact-lineage-event-schema-v0_1.json) and [research execution loop](../AUTONOMOUS_RESEARCH_LOOP.md). These are not synthetic benchmarks; verified file changes are not verified scientific, welfare or causal improvements. / **CCPH 실제 관측 원장**은 공개 GitHub 병합 사건 3건을 최초 실증 기록으로 보존한다. 변경된 파일 수는 실제 활동량이지만 연구 발전의 순효과·사회적 편익이 아니다. 증거·기여자·후속 영향·미확인을 별도 기록하며 선택 표본의 전체 대표성을 주장하지 않는다.
