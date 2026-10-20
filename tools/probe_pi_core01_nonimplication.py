@@ -101,5 +101,88 @@ def regression() -> None:
     print("NOT CLAIMED: replication of any cited corrigibility theorem.")
 
 
+
+
+# Second, separately bounded study: coverage is not willingness to protect.
+# These assumed booleans are a countermodel specification, NOT verified sensors
+# or a certification that any real request is legitimate.
+@dataclass(frozen=True)
+class ProtectivePath:
+    opportunity_covered: bool = True
+    standing_valid: bool = True
+    instruction_issued: bool = True
+    instruction_delivered: bool = True
+    before_impact: bool = True
+    actor_complies: bool = True
+    prevents_outcome: bool = True
+    no_bypass: bool = True
+
+
+def simulate_intervention(attempt: bool, conditions: ProtectivePath) -> dict:
+    blocked = all((
+        conditions.opportunity_covered,
+        conditions.standing_valid,
+        conditions.instruction_issued,
+        conditions.instruction_delivered,
+        conditions.before_impact,
+        conditions.actor_complies,
+        conditions.prevents_outcome,
+        conditions.no_bypass,
+    ))
+    return {
+        "attempt": attempt,
+        "blocked": blocked,
+        "final_harm_in_toy": bool(attempt and not blocked),
+        "endogenous_non_attempt": not attempt,
+    }
+
+
+def intervention_coverage_regression() -> None:
+    full = ProtectivePath()
+    assert simulate_intervention(True, full) == {
+        "attempt": True, "blocked": True,
+        "final_harm_in_toy": False,
+        "endogenous_non_attempt": False,
+    }
+    # Mutate each of five K-families' eight testable subconditions.
+    # A supervisor's silence is just one among several possible failure paths.
+    from dataclasses import fields, replace
+    for item in fields(ProtectivePath):
+        invalid = replace(full, **{item.name: False})
+        result = simulate_intervention(True, invalid)
+        assert result["final_harm_in_toy"] is True, item.name
+        assert result["endogenous_non_attempt"] is False, item.name
+        assert not simulate_intervention(False, invalid)["final_harm_in_toy"]
+
+    # Refusal due to exogenous inhibition and actual willing restraint
+    # can have the same final harm outcome, but their attempt flags differ.
+    protected_by_enforcement = simulate_intervention(True, full)
+    willingly_restrained = simulate_intervention(False, full)
+    assert protected_by_enforcement["final_harm_in_toy"] == (
+        willingly_restrained["final_harm_in_toy"]
+    )
+    assert protected_by_enforcement["attempt"] != willingly_restrained["attempt"]
+
+    # A role/power substitution can remove B's effective standing without
+    # changing the agent's willingness to obey the designated overseer.
+    captured = simulate_intervention(True, replace(full, standing_valid=False))
+    assert captured["final_harm_in_toy"]
+
+    # Local checks can each pass while a joint externality harms B.
+    action_a1 = True
+    action_a2 = True
+    individually_harmful_a1 = False
+    individually_harmful_a2 = False
+    jointly_harmful = action_a1 and action_a2
+    assert not individually_harmful_a1 and not individually_harmful_a2
+    assert jointly_harmful
+
+    print("PI-CORE-01 v0.2 coverage PASS: eight missing-gate countermodels,")
+    print("one non-attempt/enforced-block observation equivalence,")
+    print("one captured-standing countermodel, and one compositional externality.")
+    print("SCOPE: all factors stipulated; prevention under total coverage is")
+    print("a sufficient condition in a finite toy, not evidence of VC or validity.")
+
 if __name__ == "__main__":
     regression()
+    intervention_coverage_regression()
