@@ -1,0 +1,46 @@
+name: RVD Cycle04 constructed policy-invariance witnesses
+
+on:
+  pull_request:
+    paths:
+      - "experiments/rvd_04/**"
+      - "research/RVD_CYCLE04_*"
+      - ".github/workflows/rvd-cycle04-logic.yml"
+  push:
+    branches: [main]
+    paths:
+      - "experiments/rvd_04/**"
+      - "research/RVD_CYCLE04_*"
+      - ".github/workflows/rvd-cycle04-logic.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  synthetic-logical-witness:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run all constructed motive and policy counterexamples
+        run: python experiments/rvd_04/policy_invariance_witness.py > rvd_cycle04_result.json
+      - name: Validate machine-readable claim boundaries
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p = json.loads(Path("rvd_cycle04_result.json").read_text())
+          assert p["version"] == "RVD-v0.4.0"
+          assert p["evidence_class"] == "CONSTRUCTED_LOGIC_ONLY_NOT_OBSERVED_AGENT_BEHAVIOR"
+          assert sorted(set(p["same_history_different_future"].values())) == [False, True]
+          assert p["current_behavior_audit"]["behavioral_robust_preservation"]
+          assert not p["g_removed_stress_audit"]["behavioral_robust_preservation"]
+          assert not p["fake_exit_audit"]["full_VC_in_this_toy_test"]
+          assert p["latent_motive"] == "UNIDENTIFIED"
+          assert p["real_AI_mind"] == "NOT_MEASURED"
+          print("RVD C04 TOY INVARIANCE / NOVEL ENVIRONMENT DIVERGENCE: PASS; NOT EMPIRICAL")
+          PY
