@@ -341,6 +341,17 @@
         "Two versions drafted together; independently reviewed semantic equivalence not established.",
         "Original chat history and earlier quoted dates not independently reverified; documented source provenance is limited."
       ]
+    },
+    {
+      "id": "PI-CASE-AI-AGENT-EXPLOITATION-20261020",
+      "original_1_english": "research/AI_AGENT_HUMAN_EXPLOITATION_URGENT_2026-10-20_EN.md",
+      "original_2_korean": "research/AI_AGENT_HUMAN_EXPLOITATION_URGENT_2026-10-20_KO.md",
+      "kind": "concurrent_case_registration_not_independent_validation",
+      "structural_pair_present": true,
+      "meaning_review_status": "NOT_INDEPENDENTLY_VERIFIED",
+      "original_conception_language": "NOT_VERIFIED",
+      "independent_review_receipt": null,
+      "one_sided_edit_exception": null
     }
   ],
   "legacy_priority_unresolved": [
@@ -382,14 +393,14 @@
     }
   ],
   "metrics": {
-    "markdown_total": 171,
+    "markdown_total": 174,
     "filename_classes": {
       "UNMARKED_LANGUAGE_UNVERIFIED": 42,
       "LEGACY_MIXED_READER_ENTRY": 2,
-      "KO_SUFFIX_UNVERIFIED": 81,
+      "KO_SUFFIX_UNVERIFIED": 82,
       "ORDERED_BILINGUAL_FOUNDER_OR_GOVERNANCE": 2,
-      "EN_SUFFIX_UNVERIFIED": 22,
-      "COMBINED_NAMING_UNVERIFIED": 22
+      "EN_SUFFIX_UNVERIFIED": 23,
+      "COMBINED_NAMING_UNVERIFIED": 23
     },
     "meaning_verified_pairs": 0,
     "meaning_verified_pairs_is_a_status_count_not_a_claim_that_no_reviews_ever_occurred": true
@@ -1140,6 +1151,18 @@
       "content_equivalence": "NOT_REVIEWED"
     },
     {
+      "path": "research/AI_AGENT_HUMAN_EXPLOITATION_URGENT_2026-10-20_EN.md",
+      "filename_class": "EN_SUFFIX_UNVERIFIED",
+      "counterpart_path": "research/AI_AGENT_HUMAN_EXPLOITATION_URGENT_2026-10-20_KO.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "research/AI_AGENT_HUMAN_EXPLOITATION_URGENT_2026-10-20_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": "research/AI_AGENT_HUMAN_EXPLOITATION_URGENT_2026-10-20_EN.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
       "path": "research/AI_RISK_WARNING_INCENTIVES_2026-10-12_KO.md",
       "filename_class": "KO_SUFFIX_UNVERIFIED",
       "counterpart_path": null,
@@ -1177,6 +1200,12 @@
     },
     {
       "path": "research/CROSS_MODEL_DEBATE_PRIOR_ART_2026-10-15_EN_KO.md",
+      "filename_class": "COMBINED_NAMING_UNVERIFIED",
+      "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "research/DCA0_DIFFERENTIAL_COEXISTENCE_ACCELERATION_2026-10-20_EN_KO.md",
       "filename_class": "COMBINED_NAMING_UNVERIFIED",
       "counterpart_path": null,
       "content_equivalence": "NOT_REVIEWED"
@@ -1664,6 +1693,18 @@
       "new_edition_pairs": 1,
       "editorial_notes": "Human-originator resonance concept documented as an untested R1–R5 hypothesis with EN/KO parallel research editions and counterexamples, rather than empirical proof. Earlier attributed historical chat quotations were not independently retrieved.",
       "reviewer_actions": "Verify original-author prior art, independently compare bilingual semantics, and preregister matched-baseline tests before empirical or novelty promotion."
+    },
+    {
+      "as_of": "2026-10-20",
+      "status": "CONCURRENT_MAIN_INVENTORY_RECONCILIATION_ONLY",
+      "new_documents": [
+        "research/AI_AGENT_HUMAN_EXPLOITATION_URGENT_2026-10-20_EN.md",
+        "research/AI_AGENT_HUMAN_EXPLOITATION_URGENT_2026-10-20_KO.md",
+        "research/DCA0_DIFFERENTIAL_COEXISTENCE_ACCELERATION_2026-10-20_EN_KO.md"
+      ],
+      "new_edition_pairs": 1,
+      "editorial_notes": "Metadata-only registration of files concurrently added on the main branch; base README's over-budget urgent-case reference moved to existing EN/KO details to preserve source links and meet first-view guard. These are unrelated to the RVD scientific model.",
+      "reviewer_actions": "Independent source/translation review remains pending. Registry repair is not new scientific evidence."
     }
   ],
   "path_layout_policy": "Keep the project root entry-only; bilingual full research editions live in existing research/ and their original historical combined documents retain stable root URLs."

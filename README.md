@@ -2,7 +2,6 @@
 <!-- L0_FOREWORD_FIRST: Original 1 English then Original 2 Korean, full matched text. Never promote a case study above this top-level purpose. -->
 
 ## Original 1 — English | Founding Purpose
-
 **Reading language:** English · [Read in Korean](navigation/START_HERE_KO.md).
 
 **The problem:** Powerful humans, deployed AI and future agents may gain by exploiting or removing weaker agents. Preserving independence also costs resources.
@@ -21,12 +20,12 @@
 
 **Contrary evidence visible before expanding:** [E009](experiments/e009/RESULT_EN.md): Project-v3 was **42.35% worse** in mean regret than the best simple synthetic baseline; **3 of 4 criteria failed**. [E008](experiments/e008/README_EN.md): **no completed main policy result**. Neither is field validation.
 
-**Urgent evidence-to-action (2026-10-20):** [Human-led AI cyber misuse and anti-exploitation interventions](research/AI_AGENT_HUMAN_EXPLOITATION_URGENT_2026-10-20_EN.md) — corroborated case, uncertainty, defensive response. [DCA-0 measurable differential acceleration (EN/KO)](research/DCA0_DIFFERENTIAL_COEXISTENCE_ACCELERATION_2026-10-20_EN_KO.md).
-
 **Choose your route:** [Research program](navigation/RESEARCH_PROGRAM_EN.md) · [Evidence limits](research/PUBLIC_EVIDENCE_INDEX_EN.md) · [Independent falsification](research/PUBLIC_REVIEW_PACKET_EN.md).
 
 <details>
 <summary>Technical purpose, evidence, rights and reviewer routes</summary>
+
+**Urgent evidence-to-action (2026-10-20):** [Human-led AI cyber misuse and anti-exploitation interventions](research/AI_AGENT_HUMAN_EXPLOITATION_URGENT_2026-10-20_EN.md) — corroborated case, uncertainty, defensive response. [DCA-0 measurable differential acceleration (EN/KO)](research/DCA0_DIFFERENTIAL_COEXISTENCE_ACCELERATION_2026-10-20_EN_KO.md).
 
 **C01–C09 literature synthesis (2026-10-20, historical snapshot):** [191-record 24-hour audit, competing findings, autonomy/continuance measurement and open falsification questions](research/RESEARCH_VALUE_EXTRACTION_24H_2026-10-20_KO.md). Cycle 10 and later are **not** included in the 191; synthesis is **not** new empirical evidence.
 
@@ -57,13 +56,10 @@
 **Citation and reuse:** [Citation](CITATION.cff) · [Attribution and source rights](ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md) · [Earlier authorship and derivation](PRIOR_ART_RIGHTS_AND_DERIVATION_EN_KO.md). The longer historical founding statement remains recoverable in [the preceding Git revision](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/3fefa0c121341a0569e026f34a9e87479afa52a4/README.md).
 
 </details>
-
 ### Ten core concepts
-
 [All ten concepts, precise definitions and limitations](research/RESEARCH_OVERVIEW_EN.md#ten-core-concepts) are preserved for technical reading. CCPH is a historical/current/future **contribution and impact provenance database**. The **Continuance–Contribution Pathways Hypothesis** is one hypothesis within it, not its definition or a proven social outcome.
 
 ## 원본2 — 한국어 | 창시 목적 전문 대응본
-
 **독서 언어:** 한국어 · [영어 원본1 읽기](navigation/START_HERE_EN.md).
 
 **문제:** 인간·현재 배포된 AI·미래 지능체 사이에 압도적인 권력 격차가 생기면 강자가 타 개체의 통제·착취·제거로 이득을 얻을 수 있다. 반면 독립성 보존에도 비용 발생.
@@ -82,12 +78,12 @@
 
 **펼치지 않아도 보이는 불리한 증거:** [E009](experiments/e009/RESULT_KO.md): 최선 단순 기준선보다 평균 후회값 **42.35% 나빴고**, **4개 중 3개** 기준 실패. [E008](experiments/e008/README_KO.md): **정책 본 비교실험 결과가 없다**. 현실 검증 결과 아님.
 
-**긴급 사건·대응 연구 (2026-10-20):** [자율형 AI 악용의 인간 착취 유인과 차단책](research/AI_AGENT_HUMAN_EXPLOITATION_URGENT_2026-10-20_KO.md) — 원출처 교차검증, 반증 가능 가설, 방어 절차. [DCA-0 공존 차등가속 실행·측정 프로토콜](research/DCA0_DIFFERENTIAL_COEXISTENCE_ACCELERATION_2026-10-20_EN_KO.md).
-
 **어디부터 읽을까:** [연구체계·선행문헌 지도](navigation/RESEARCH_PROGRAM_KO.md) · [증거·미검증](research/PUBLIC_EVIDENCE_INDEX_KO.md) · [독립 반증·재현](research/PUBLIC_REVIEW_PACKET_KO.md).
 
 <details>
 <summary>상세 연구 목적·반례·증거상태·권리·심사 경로 펼치기</summary>
+
+**긴급 사건·대응 연구 (2026-10-20):** [자율형 AI 악용의 인간 착취 유인과 차단책](research/AI_AGENT_HUMAN_EXPLOITATION_URGENT_2026-10-20_KO.md) — 원출처 교차검증, 반증 가능 가설, 방어 절차. [DCA-0 공존 차등가속 실행·측정 프로토콜](research/DCA0_DIFFERENTIAL_COEXISTENCE_ACCELERATION_2026-10-20_EN_KO.md).
 
 **C01–C09 문헌 통합(2026-10-20 역사적 스냅샷):** [191개 기록의 24시간 감사·상충 근거·자율성/존속 측정·미해결 반증질문](research/RESEARCH_VALUE_EXTRACTION_24H_2026-10-20_KO.md). 10회차 이후 자료는 191건에 포함되지 않으며 신규 실증결과가 아니다.
 
@@ -118,7 +114,5 @@
 **출처 표시 및 재사용:** [인용 정보](CITATION.cff) · [기여·출처·권리](ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md) · [선행 원저작과 응용](PRIOR_ART_RIGHTS_AND_DERIVATION_EN_KO.md). 축약하기 전 창시 목적 전문도 [이전 Git 판본](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/3fefa0c121341a0569e026f34a9e87479afa52a4/README.md)에 보존돼 있다.
 
 </details>
-
 ### 핵심용어 10개
-
 [핵심개념 10개 전체 정의와 한계](research/RESEARCH_OVERVIEW_KO.md#핵심용어-10개)는 전문 검토 자료에 보존한다. CCPH는 과거·현재와 미래 관측 사건의 **기여·영향 계보 데이터베이스**다. **존속–기여 경로 가설**은 그 **내부의 가설 연구축**이지 전체 정의나 현실 효과의 입증이 아니다.

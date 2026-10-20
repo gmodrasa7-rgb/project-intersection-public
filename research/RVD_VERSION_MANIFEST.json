@@ -1,0 +1,80 @@
+{
+  "schema_version": "pi-rvd-version-manifest/v0.1",
+  "research_id": "PI-MER-RVD",
+  "research_name_en": "Resonance–Value Dynamics",
+  "research_name_ko": "공명·가치 동역학",
+  "acronym": "RVD",
+  "current_version": "v0.1.0",
+  "version_scheme": "MAJOR.MINOR.PATCH",
+  "inception_date": "2026-10-20",
+  "parent_axes": [
+    "MER",
+    "EI"
+  ],
+  "related_axes": [
+    "ECR",
+    "VC",
+    "IVS-0R"
+  ],
+  "version_is_evidence_grade": false,
+  "scientific_status": {
+    "class": "CONCEPTUAL_HYPOTHESIS",
+    "empirical_validation": "UNTESTED",
+    "independent_replication": "NONE",
+    "novelty_assessment": "NOT_COMPLETED",
+    "prior_art_saturation": "NOT_VERIFIED",
+    "ai_subjective_experience": "NOT_IDENTIFIED"
+  },
+  "core_chain": [
+    "INDEPENDENT_A_AND_B",
+    "TESTABLE_RELATIONAL_NOVELTY_C",
+    "VALUATION_CHANGE_CANDIDATE",
+    "MOTIVATION_OR_CHOICE_CHANGE_CANDIDATE",
+    "CONDITIONAL_VOLUNTARY_COEXISTENCE_TEST"
+  ],
+  "protected_invariants": [
+    "A_AND_B_DISTINCT_WITH_REAL_REFUSAL_EXIT",
+    "R1_DOES_NOT_PROVE_R2",
+    "R2_DOES_NOT_PROVE_R3",
+    "R3_DOES_NOT_PROVE_R4",
+    "PRESERVE_NEGATIVE_AND_UNIDENTIFIED_RESULTS",
+    "PROTECT_FOUNDER_PRIOR_ART_AND_AI_ASSISTANCE_ATTRIBUTION",
+    "NO_EMPIRICAL_PROMOTION_FROM_VERSION_NUMBER"
+  ],
+  "hypothesis_ids": [
+    "RVD-R1",
+    "RVD-R2",
+    "RVD-R3",
+    "RVD-R4",
+    "RVD-R5"
+  ],
+  "research_documents": {
+    "original_1_english": "research/MER_RESONANCE_VALUE_FORMATION_2026-10-20_EN.md",
+    "original_2_korean": "research/MER_RESONANCE_VALUE_FORMATION_2026-10-20_KO.md",
+    "navigation_en": "navigation/RESEARCH_PROGRAM_EN.md",
+    "navigation_ko": "navigation/RESEARCH_PROGRAM_KO.md"
+  },
+  "change_rules": {
+    "MAJOR": "Scientific construct or estimand redefinition breaking compatibility",
+    "MINOR": "New falsifiable mechanism, metric or test protocol",
+    "PATCH": "Editorial, attribution, citations, translation, routing, no claim-scope expansion",
+    "all_versions": "Record dates, primary-source antecedents, independent challenges, negative results, provenance, and uncertainties; version does not imply scientific confirmation"
+  },
+  "history": [
+    {
+      "version": "v0.1",
+      "date": "2026-10-20",
+      "state": "HISTORICAL_DRAFT_LABEL",
+      "change": "Initial bilingual resonance/value formation conceptual documents; no tests"
+    },
+    {
+      "version": "v0.1.0",
+      "date": "2026-10-20",
+      "state": "CURRENT_NAMED_BASELINE",
+      "change": "Named RVD, stabilized hypothesis IDs RVD-R1 through RVD-R5 and version governance; existing empirical status unchanged",
+      "scientific_promotion": false
+    }
+  ],
+  "next_gate": "Original-author literature deduplication and critical crosswalk before any independently preregistered RVD-R1 matched-baseline evaluation; no implied schedule",
+  "contribution_boundary": "Human originator's resonance concept; AI-assisted organization and version record. Historical quotations from earlier AI summaries not independently re-read."
+}
