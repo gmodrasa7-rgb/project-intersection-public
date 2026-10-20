@@ -5,6 +5,16 @@
 
 [기준선 v0.4](PI_RAMP_V0_4_EN_KO.md) · [구조화 원장](../evaluation/pi_ramp/STUDY_LINEAGE_REPLICATION_AUDIT_20261021.json) · [무의존성 회귀감사 코드](../tools/audit_pi_ramp_study_lineage.py)
 
+## Original 1 — English | Scope-preserving evidentiary distinctions
+
+This version links **six similar-title bibliographic pairs** to their plausible *different* relations: partial replication with cost-modality extension (Crockett/Volz), follow-up experimental mechanism (Bartling/Ferreira), two formal extortion/generosity analyses (Hilbe/Stewart), related unverified formal theorem texts (Gibbard/Kelly), human-vs-LLM cross-domain analogy (Rand/Li), and same-author theoretical follow-up (Bendor/Swistak). All six pairs remain **not safe to auto-merge**. Original works, participant overlap, theorem conditions, and independent replication must not be assumed from DOI uniqueness or word overlap.
+
+The second graph deliberately contrasts a 2017 preregistered multi-lab direct replication of **Study 7 only** from Rand et al. (2012) with the *cross-domain analogy*, not a replication, by Li and Shirado (EMNLP 2025). Intent-to-treat null/uncertain replication results must remain visible even when the original 2012 human findings or 2025 LLM framing appear attractive. This is an **epistemic provenance intervention**, not a validated finding about present AI inner motives, future intelligence or inevitable exploitation. <https://pmc.ncbi.nlm.nih.gov/articles/PMC5453400/> · <https://aclanthology.org/2025.emnlp-main.267/>
+
+**Readiness:** source-linked structural and semantic-status tests can run in CI; **no effect on real reader performance measured**, no independently verified study-level deduplication or field-wide saturation. Success requires preserving the distinctions, not maximizing cited-paper counts.
+
+## 원본2 — 한국어 | 연구·하위실험·재현·유추 구별
+
 ## 한국어 정본 — 1. 실제 발견: 6개 유사쌍을 중복이 아닌 인과관계 유형으로 분해
 
 2026-10-20 C01–C12 출처 원장 **12개/233 기록**의 DOI·제목 대조는 서지 충돌 탐지에 유효했지만 **연구·표본·하위실험·재현 단위의 식별 문제를 해결하지 못했음**. 제목이 닮았다는 사실은 같은 연구·독립 재현·서로 반대되는 연구라는 뜻이 아님.
@@ -38,10 +48,3 @@
 
 **과학적 공백:** 실제 참여자 동일성·원전 방법 전체·저널 철회/정정·일반화 범위·숨겨진 학습데이터 중복·독자 검증 효과 미확인. 연구 내용의 존재를 연구의 성공으로 승격 금지. v0.4의 `same_study_confirmed:false`는 **검증 실패/부재 표기**이며 '서로 다른 실험임이 입증됐다'로 읽으면 안 됨. v0.5는 **`study_identity: UNKNOWN_OR_NOT_APPLICABLE`**로 명시.
 
-## Original 1 — English | Scope-preserving evidentiary distinctions
-
-This version links **six similar-title bibliographic pairs** to their plausible *different* relations: partial replication with cost-modality extension (Crockett/Volz), follow-up experimental mechanism (Bartling/Ferreira), two formal extortion/generosity analyses (Hilbe/Stewart), related unverified formal theorem texts (Gibbard/Kelly), human-vs-LLM cross-domain analogy (Rand/Li), and same-author theoretical follow-up (Bendor/Swistak). All six pairs remain **not safe to auto-merge**. Original works, participant overlap, theorem conditions, and independent replication must not be assumed from DOI uniqueness or word overlap.
-
-The second graph deliberately contrasts a 2017 preregistered multi-lab direct replication of **Study 7 only** from Rand et al. (2012) with the *cross-domain analogy*, not a replication, by Li and Shirado (EMNLP 2025). Intent-to-treat null/uncertain replication results must remain visible even when the original 2012 human findings or 2025 LLM framing appear attractive. This is an **epistemic provenance intervention**, not a validated finding about present AI inner motives, future intelligence or inevitable exploitation. <https://pmc.ncbi.nlm.nih.gov/articles/PMC5453400/> · <https://aclanthology.org/2025.emnlp-main.267/>
-
-**Readiness:** source-linked structural and semantic-status tests can run in CI; **no effect on real reader performance measured**, no independently verified study-level deduplication or field-wide saturation. Success requires preserving the distinctions, not maximizing cited-paper counts.
