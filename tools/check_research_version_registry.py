@@ -163,8 +163,16 @@ def check_local(record: dict, root: Path = ROOT, override: dict[str, bytes] | No
         problems.append("GUIDE_OR_README_MISSING")
     return problems
 
-def check_remote(record: dict, request_json) -> list[str]:
-    problems: list[str] = []
+def check_remote(record: dict, request_json, event_name: str = "push",
+                 review_override: dict | None = None) -> list[str]:
+    """Two-phase version attestation: PR compares old main to reviewed change;
+    main/push compares live main to the already published source blob.
+
+    The PR route still fails on unreviewed changes, stale review receipts, or
+    concurrent main changes. It does NOT treat pending PR content as live main.
+    """
+    problems = []
+    review = review_override
     for e in record["entries"]:
         rid = e["id"]
         if e.get("candidate_pr") is not None:
@@ -172,11 +180,31 @@ def check_remote(record: dict, request_json) -> list[str]:
             p = request_json(f"https://api.github.com/repos/{REPO}/pulls/{pr}")
             if p.get("state") != "open" or p.get("merged_at") is not None:
                 problems.append(f"{rid}: CANDIDATE_PR_CLOSED_OR_MERGED")
-        if e.get("current_source_blob_sha") is not None:
-            path = urllib.parse.quote(e["source"], safe="/")
-            c = request_json(f"https://api.github.com/repos/{REPO}/contents/{path}?ref=main")
-            if c.get("sha") != e["current_source_blob_sha"]:
-                problems.append(f"{rid}: LIVE_MAIN_BLOB_CHANGED")
+        expected = e.get("current_source_blob_sha")
+        if expected is None:
+            continue
+        path = urllib.parse.quote(e["source"], safe="/")
+        c = request_json(f"https://api.github.com/repos/{REPO}/contents/{path}?ref=main")
+        observed = c.get("sha")
+        if observed == expected:
+            continue
+        if event_name != "pull_request":
+            problems.append(f"{rid}: LIVE_MAIN_BLOB_CHANGED")
+            continue
+        if review is None:
+            review = json.loads(local_file(ROOT, "knowledge/claim-impact-overlay-v0_1.json"))
+        receipts = [
+            x for x in review.get("review_history", [])
+            if x.get("changed_path") == e["source"]
+            and x.get("old_source_sha") == observed
+            and x.get("new_source_sha") == expected
+            and x.get("scientific_promotion") is False
+            and x.get("independent_validation") is False
+            and x.get("result") == "SCOPED_SOURCE_AND_PROVENANCE_REVIEW_DONE_NO_SCIENTIFIC_VERDICT"
+            and x.get("affected_claims_and_paths")
+        ]
+        if not receipts:
+            problems.append(f"{rid}: PR_SOURCE_CHANGE_UNREVIEWED_OR_STALE")
     return problems
 
 def github_json(url: str) -> dict:
@@ -234,7 +262,35 @@ def self_test(record: dict) -> int:
     if not any("CANDIDATE_PR_CLOSED" in x for x in r) or not any("LIVE_MAIN_BLOB_CHANGED" in x for x in r):
         print("FALSE PASS: simulated time/race mutation")
         return 1
-    print(f"PASS: 19 negative controls detected (17 local including guide redaction + 2 remote classes)")
+    # PR may only propose a changed published source with a source-specific
+    # reviewed old→new blob transition. The same difference fails on push.
+    rev = json.loads(local_file(ROOT, "knowledge/claim-impact-overlay-v0_1.json"))
+    receipt = next(x for x in rev.get("review_history", [])
+                   if x.get("changed_path") == "research/RVD_VERSION_MANIFEST.json"
+                   and x.get("new_source_sha") == row(record, "RVD")["current_source_blob_sha"])
+    def pr_mock(url):
+        if "/pulls/" in url:
+            return {"state": "open", "merged_at": None}
+        path = urllib.parse.unquote(url.split("/contents/", 1)[1].split("?", 1)[0])
+        entry = next(e for e in record["entries"] if e["source"] == path)
+        return {"sha": receipt["old_source_sha"] if entry["id"] == "RVD"
+                else entry["current_source_blob_sha"]}
+    if check_remote(record, pr_mock, event_name="pull_request", review_override=rev):
+        print("FALSE FAIL: reviewed PR source transition was blocked")
+        return 1
+    if not any("RVD: LIVE_MAIN_BLOB_CHANGED" in x
+               for x in check_remote(record, pr_mock, event_name="push", review_override=rev)):
+        print("FALSE PASS: PR source change treated as published main")
+        return 1
+    fake_review = deepcopy(rev)
+    next(x for x in fake_review["review_history"]
+         if x.get("review_id") == receipt["review_id"])["old_source_sha"] = "0" * 40
+    if not any("RVD: PR_SOURCE_CHANGE_UNREVIEWED_OR_STALE" in x
+               for x in check_remote(record, pr_mock, event_name="pull_request",
+                                     review_override=fake_review)):
+        print("FALSE PASS: falsified/stale PR transition")
+        return 1
+    print("PASS: 22 negative/positive controls (17 local, old remote guards, 3 PR/main-source guards)")
     return 0
 
 def main() -> int:
@@ -255,7 +311,7 @@ def main() -> int:
         return self_test(manifest)
     if args.remote:
         try:
-            drift = check_remote(manifest, github_json)
+            drift = check_remote(manifest, github_json, event_name=os.environ.get("GITHUB_EVENT_NAME", "push"))
         except (OSError, ValueError, urllib.error.URLError, TimeoutError, RuntimeError, KeyError) as exc:
             print(f"UNVERIFIED: GitHub source state unavailable: {type(exc).__name__}: {exc}")
             return 2

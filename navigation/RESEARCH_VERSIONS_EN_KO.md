@@ -27,7 +27,7 @@ A **program**, a **research component**, a **method document**, an **experiment*
 | IVS-0R | Counterexample, independent-reproduction and correction audit | Unassigned | — | Method, not certification of the theories |
 | ICM / RGBM | Candidate interest intersections / long-horizon shared growth | Unassigned | — | Neither model guaranteed; ICM may be empty |
 | CCPH | Events, sources, contributions, impacts and provenance | Unassigned | — | Data lineage, not a social law |
-| RVD | Test changes in relational value and motive formation | **v0.2.0** [main](../research/RVD_VERSION_MANIFEST.json) | — | Adds R6–R9 counterexample/specification; empirical validation absent |
+| RVD | Test relational value, original-B rights and non-identifiability of inner motives | **v0.3.0** [main](../research/RVD_VERSION_MANIFEST.json) | — | R10–R13, conditional bounds and synthetic motive-equivalence; empirical validation absent |
 | PI-RAMP | Test whether each archive upgrade improves reader accuracy and evidence access | **v0.5.0** [main](../protocols/PI_RAMP_V0_5_EN_KO.md) | — | Six similar-title research lineages and partial replication/analogy distinguished; reader-effect unmeasured |
 | Roadmap | Six fixed research stages and gates | **v0.2.3** [main](../research/PI_ROADMAP_OPERATIONAL_GATES_V0_2_3_EN_KO.md) | — | Operational design, not scientific effect |
 | DCA-0 | Compare defensive acceleration with AI misuse and externalities | Unassigned | — | Defensive causal impact unverified |
@@ -75,7 +75,7 @@ The version register answers **which current document/version**; [PI-CIG claim i
 | IVS-0R | 반례·역할반전·독립검증·오류복구 감사 | 미지정 | — | 검증 절차이지 성립 증명 아님 |
 | ICM / RGBM | 최소 자기이익 교집합 / 장기 공동발전 가능성 | 미지정 | — | 두 후보 모두 미입증; 공집합 가능 |
 | CCPH | 사건·출처·기여·피해·영향 계보 관리 | 미지정 | — | 계보 DB이지 검증된 사회법칙 아님 |
-| RVD | 관계적 공명에서 가치·동기가 생기거나 변하는 기제 | **v0.2.0** [정본](../research/RVD_VERSION_MANIFEST.json) | — | R6–R9 반례·측정명세 추가, 경험적 검증 없음 |
+| RVD | 공명·원개체 B의 권리·마음의 내적 동기 식별 한계 연구 | **v0.3.0** [정본](../research/RVD_VERSION_MANIFEST.json) | — | R10–R13 조건부 부분식별·합성 관측동등 반례, 경험적 검증 없음 |
 | PI-RAMP | 자료실 개편이 독자의 근거 발견·판단을 개선했는지 측정 | **v0.5.0** [정본](../protocols/PI_RAMP_V0_5_EN_KO.md) | — | 6개 유사문헌 쌍·부분 재현/유추 관계 분리, 이용자 효과 미측정 |
 | 로드맵 | 기존 6단계·버전·승격과 보류 기준 | **v0.2.3** [정본](../research/PI_ROADMAP_OPERATIONAL_GATES_V0_2_3_EN_KO.md) | — | 운영 설계 |
 | DCA-0 | 악용 가속보다 방어·검증 효과를 높일 조건 측정 | 미지정 | — | 실제 피해감소 인과효과 미확인 |
