@@ -173,6 +173,21 @@ class WatchTests(unittest.TestCase):
         self.assertEqual(f,watch._signal(13,"same job","step"))
         self.assertNotEqual(f,watch._signal(13,"same job","different"))
 
+    def test_green_rerun_cannot_erase_uninspected_failed_attempt(self):
+        ok = run(101, conclusion="success")
+        ok["run_attempt"] = 3
+        result = watch.build_report([ok], {}, now=NOW)
+        self.assertEqual(result["prior_attempts_not_inspected"], 2)
+        self.assertEqual(result["observation_coverage"],
+                         "PARTIAL_PRIOR_RERUN_ATTEMPTS_UNINSPECTED")
+        self.assertEqual(result["failure_fingerprint_count"], 0)
+
+    def test_invalid_attempt_metadata_fails_closed(self):
+        item = run(101)
+        item["run_attempt"] = 0
+        with self.assertRaisesRegex(watch.WatchError, "INVALID_RUN_ATTEMPT"):
+            watch.build_report([item], {101:[job(501)]}, now=NOW)
+
     def test_partial_scan_marker(self):
         out=watch.build_report([],{ },now=NOW,limit_reached=True)
         self.assertEqual(out["observation_coverage"],"PARTIAL_LIMIT_REACHED")
