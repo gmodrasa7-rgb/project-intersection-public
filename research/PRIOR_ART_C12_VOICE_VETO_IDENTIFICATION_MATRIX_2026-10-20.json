@@ -37,10 +37,10 @@
       "name": "B_CAN_SPEAK",
       "operational_definition": "B message delivered to A",
       "prior_art_ids": [
-        "C12-11",
-        "C12-12",
-        "C12-13",
-        "C12-15"
+        "PI-C12-11",
+        "PI-C12-12",
+        "PI-C12-13",
+        "PI-C12-15"
       ],
       "unmeasured_critical": "B can stop A's actual override",
       "grade": "DIRECT_HUMAN_VOICE_NOT_VETO"
@@ -50,9 +50,9 @@
       "name": "A_LISTENS_AND_TRANSFER",
       "operational_definition": "A outcome after B speaks, relative to baseline",
       "prior_art_ids": [
-        "C12-12",
-        "C12-13",
-        "C12-15"
+        "PI-C12-12",
+        "PI-C12-13",
+        "PI-C12-15"
       ],
       "unmeasured_critical": "B's independent freedom or actually enforceable refusal",
       "grade": "DIRECT_ALLOCATION_ENDPOINT_ONLY"
@@ -70,9 +70,9 @@
       "name": "B_CAN_WITHDRAW_DELEGATION",
       "operational_definition": "B can revoke consent previously granted",
       "prior_art_ids": [
-        "C12-01",
-        "C12-09",
-        "C12-17"
+        "PI-C12-01",
+        "PI-C12-09",
+        "PI-C12-17"
       ],
       "unmeasured_critical": "Delegation remains revocable when A monopolizes decision infrastructure",
       "grade": "PREFERENCE_AND_NORMATIVE_ONLY"
@@ -82,8 +82,8 @@
       "name": "A_COST_FOR_PRESERVING_B_AUTONOMY",
       "operational_definition": "A loses real gain g for preserving B's right to refuse",
       "prior_art_ids": [
-        "C12-03",
-        "C12-11"
+        "PI-C12-03",
+        "PI-C12-11"
       ],
       "unmeasured_critical": "Actual autonomous B veto and g_A opportunity cost manipulated simultaneously",
       "grade": "NOT_DIRECTLY_IDENTIFIED"
@@ -93,9 +93,9 @@
       "name": "A_WELFARE_TO_B",
       "operational_definition": "A suffers own monetary reduction to improve B money",
       "prior_art_ids": [
-        "C12-02",
-        "C12-03",
-        "C12-15"
+        "PI-C12-02",
+        "PI-C12-03",
+        "PI-C12-15"
       ],
       "unmeasured_critical": "Is the improvement consent-aligned or B autonomously selected?",
       "grade": "DIRECT_WELFARE_NOT_AUTONOMY"
@@ -105,7 +105,7 @@
       "name": "INFORMED_ACTOR_ID",
       "operational_definition": "A or B declines specific information",
       "prior_art_ids": [
-        "C12-02",
+        "PI-C12-02",
         "C10-12"
       ],
       "unmeasured_critical": "Counterfactually hold benefit and person receiving unwanted message fixed",
@@ -116,8 +116,8 @@
       "name": "CHOICE_IS_PERSONALLY_VALUED",
       "operational_definition": "B intrinsic preference for own choice vs delegation",
       "prior_art_ids": [
-        "C12-01",
-        "C12-09"
+        "PI-C12-01",
+        "PI-C12-09"
       ],
       "unmeasured_critical": "A respects separately consenting other agent's persistent identity",
       "grade": "DIRECT_OWN_RIGHT_NOT_OTHER_RIGHT"
@@ -127,7 +127,7 @@
       "name": "MALICE_DISTRIBUTION_TAIL",
       "operational_definition": "individual agent utility positive/negative for counterpart outcomes",
       "prior_art_ids": [
-        "C12-03"
+        "PI-C12-03"
       ],
       "unmeasured_critical": "No target independence or positive g payoff sacrifice tested",
       "grade": "DIRECT_INDVIDUAL_PAYOFF_HETEROGENEITY"
@@ -137,8 +137,8 @@
       "name": "A_OBSERVED_OR_FEEDBACK",
       "operational_definition": "silent audience and social feedback distinguished",
       "prior_art_ids": [
-        "C12-10",
-        "C12-11"
+        "PI-C12-10",
+        "PI-C12-11"
       ],
       "unmeasured_critical": "An actor can truly hide harmful decisions from all present/future possible assessors",
       "grade": "HUMAN_GAME_SOCIAL_FEEDBACK"
@@ -148,8 +148,8 @@
       "name": "PERCEIVED_FAIRNESS_VS_RIGHTS",
       "operational_definition": "fairness rating vs independent right accessible",
       "prior_art_ids": [
-        "C12-14",
-        "C12-05"
+        "PI-C12-14",
+        "PI-C12-05"
       ],
       "unmeasured_critical": "Real veto, meaningful review, exit and continuity when AI system and human disagree",
       "grade": "FAIRNESS_PERCEPTION_ONLY"
@@ -159,8 +159,8 @@
       "name": "AUTO_PATERnalISM_BELIEF",
       "operational_definition": "intervention rate when chooser informed and their actual preference known",
       "prior_art_ids": [
-        "C12-04",
-        "C12-06"
+        "PI-C12-04",
+        "PI-C12-06"
       ],
       "unmeasured_critical": "Powerful actor guarantees other's autonomy when completely free to exploit",
       "grade": "PREPRINT_AND_HYPOTHETICAL"
@@ -185,5 +185,6 @@
   ],
   "stop_rule": "Do not claim literature saturation without a transparent source search denominator, negative replications and original proof/construct checks.",
   "source_corpus_count": 17,
-  "project_experiments_executed": 0
+  "project_experiments_executed": 0,
+  "audit_note": "C10-12 resolves to Mol et al 2025 in prior corpus; C12 references exact PI-C12-* IDs. Sources listed do not imply that every study directly validates its whole axis."
 }
