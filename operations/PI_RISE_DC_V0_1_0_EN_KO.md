@@ -1,8 +1,8 @@
-<!-- PI-LANGUAGE: en-ko | PI-RISE-DC v0.1.0 | pre-merge candidate; artificial examples only -->
+<!-- PI-LANGUAGE: en-ko | PI-RISE-DC v0.1.0 | merged operational example; artificial inputs only -->
 # PI-RISE-DC v0.1.0 — Dual Clock, Liquidity Prefix & Evidence Workload
 ## 두 시계: 지급시점 유동성·검증 노동량
 
-**Status 2026-10-21:** Candidate operational-method submodule of PI-RISE (not a new scientific finding, not a bank audit, not a funded contract). Parent PI-RISE, PI-RISE-BUDGET and PI-RISE-VAC remain at current versions. No actual funding, user balances, payments, humans' health, external reviewers or AI model performance measured.
+**Status 2026-10-21:** MAIN operational-method submodule, merged in PR #278; not field validated; parent PI-RISE v0.2.0 unchanged. of PI-RISE (not a new scientific finding, not a bank audit, not a funded contract). Parent PI-RISE, PI-RISE-BUDGET and PI-RISE-VAC remain at current versions. No actual funding, user balances, payments, humans' health, external reviewers or AI model performance measured.
 
 ## Original 1 — English | Original release-order edition
 
