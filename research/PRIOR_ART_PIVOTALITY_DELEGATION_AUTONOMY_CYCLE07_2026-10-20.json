@@ -506,5 +506,13 @@
       "first_appearance_in_entire_repository": "NOT_VERIFIED"
     }
   ],
-  "source_retrieval_note": "Web search original journal publisher abstracts and extensive original HTML for Ziegler et al. 2024, original abstracts for other paywalled papers; index or scholar author route corroboration is bibliographic, not an independent replication. No complete source-PDF review."
+  "source_retrieval_note": "Web search original journal publisher abstracts and extensive original HTML for Ziegler et al. 2024, original abstracts for other paywalled papers; index or scholar author route corroboration is bibliographic, not an independent replication. No complete source-PDF review.",
+  "repo_crosswalk_duplicate_audit": {
+    "source": "CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md on same branch",
+    "already_mentioned_by_title_or_doi_in_large_crosswalk": [
+      "PI-C07-03 Antisocial punishment across societies (Herrmann/Thöni/Gächter 2008)"
+    ],
+    "exact_7_cycle_doi_duplicate_count": 0,
+    "unknown": "Other repo files/version history/private files not exhaustively searched. Do not treat missing title in one crosswalk as new-to-repository."
+  }
 }
