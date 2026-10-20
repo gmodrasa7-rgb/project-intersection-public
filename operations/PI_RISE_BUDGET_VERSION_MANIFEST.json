@@ -2,7 +2,7 @@
   "component_id": "PI-RISE-BUDGET",
   "full_name": "Project Intersection — Research Independence & Sustainability Engine / Minimum Viable Research Budget",
   "version": "0.1.0",
-  "status": "UNMERGED_CANDIDATE",
+  "status": "MAIN_OPERATIONAL_MODEL_NOT_TAX_CERTIFIED",
   "date": "2026-10-21",
   "method": "Decimal conservative monthly-ceiling scenario",
   "parent": "operations/PI_RISE_V0_1_0_EN_KO.md",
@@ -31,12 +31,20 @@
     "sponsor_legal_tax": "UNKNOWN",
     "actual_review": "NOT_DONE",
     "scientific_value": "NOT_CLAIMED",
-    "published_examples": "SYNTHETIC_ONLY"
+    "published_examples": "SYNTHETIC_ONLY",
+    "continuation_budget": "HYPOTHETICAL_SCENARIO_ONLY"
   },
   "prices_and_rates": {
     "usd_krw_reference": "1326 2026-10-20 historical",
     "model_plan": "Plus $20; Pro100 $100",
     "reserve_rate": "HYPOTHETICAL 20%, NOT LAW",
     "power_usd": "HYPOTHETICAL $15"
+  },
+  "main_merge_commit": "39036f459973f87d6fe7a5c6616adf4c8dfc89bf",
+  "main_pr": 266,
+  "ci_receipt": {
+    "tests_in_pi_rise_suite": 38,
+    "pr_workflows_passed": 7,
+    "scientific_efficacy": "NOT_EVALUATED"
   }
 }
