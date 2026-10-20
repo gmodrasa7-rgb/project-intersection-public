@@ -150,9 +150,8 @@ class FLRValidationTests(unittest.TestCase):
     def test_version_only_update_rejected(self):
         newer = self.case()
         newer["release_version"] = "0.1.1"
-        # Registry changed by the version itself; the caller must append a
-        # justifying event/change. This policy is enforced in a later upgrade.
-        self.assertTrue(flr.compare_history(newer, self.record))
+        with self.assertRaisesRegex(flr.FLRError, "EMPTY_VERSION_BUMP"):
+            flr.compare_history(newer, self.record)
 
     def test_private_data_policy_fail_closed(self):
         x = self.case()
