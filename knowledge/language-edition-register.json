@@ -2,7 +2,7 @@
   "schema_version": "pi-language-edition-register/v0.1",
   "updated": "2026-10-20",
   "baseline_repository_tree_sha": "b2055f40a1e0cabe38f3c6e8c984228c1c2a7e0f",
-  "baseline_scope": "Historical inventory retained; two GPT proposal-gate editions added on review branch; baseline tree SHA is historical, not the current head.",
+  "baseline_scope": "Historical baseline tree SHA retained (not current HEAD). Incremental registration of PI version guide and concurrently merged DCA-1 KO source; translation equivalence unverified.",
   "policy": {
     "original_1": "en",
     "original_2": "ko",
@@ -408,14 +408,14 @@
     }
   ],
   "metrics": {
-    "markdown_total": 176,
+    "markdown_total": 178,
     "filename_classes": {
       "UNMARKED_LANGUAGE_UNVERIFIED": 42,
       "LEGACY_MIXED_READER_ENTRY": 2,
-      "KO_SUFFIX_UNVERIFIED": 83,
+      "KO_SUFFIX_UNVERIFIED": 84,
       "ORDERED_BILINGUAL_FOUNDER_OR_GOVERNANCE": 2,
       "EN_SUFFIX_UNVERIFIED": 24,
-      "COMBINED_NAMING_UNVERIFIED": 23
+      "COMBINED_NAMING_UNVERIFIED": 24
     },
     "meaning_verified_pairs": 0,
     "meaning_verified_pairs_is_a_status_count_not_a_claim_that_no_reviews_ever_occurred": true
@@ -1094,6 +1094,12 @@
       "content_equivalence": "NOT_REVIEWED"
     },
     {
+      "path": "navigation/RESEARCH_VERSIONS_EN_KO.md",
+      "filename_class": "COMBINED_NAMING_UNVERIFIED",
+      "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
       "path": "navigation/START_HERE_EN.md",
       "filename_class": "EN_SUFFIX_UNVERIFIED",
       "counterpart_path": "navigation/START_HERE_KO.md",
@@ -1234,6 +1240,12 @@
     {
       "path": "research/DCA0_DIFFERENTIAL_COEXISTENCE_ACCELERATION_2026-10-20_EN_KO.md",
       "filename_class": "COMBINED_NAMING_UNVERIFIED",
+      "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "research/DCA1_ADAPTATION_DISPLACEMENT_IDENTIFICATION_2026-10-20_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
       "counterpart_path": null,
       "content_equivalence": "NOT_REVIEWED"
     },
