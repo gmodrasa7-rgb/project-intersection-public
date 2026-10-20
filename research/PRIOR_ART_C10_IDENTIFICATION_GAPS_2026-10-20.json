@@ -262,6 +262,35 @@
       "finite behavior does not uniquely prove inner motivation",
       "do not infer AGI future behavior from bounded human experiments"
     ],
-    "saturation": "NOT_VERIFIED"
+    "saturation": "NOT_VERIFIED",
+    "methodology_original_sources_doc_ko": "research/C10_METHOD_PRIOR_ART_2026-10-20_KO.md",
+    "methodology_original_sources_doc_en": "research/C10_METHOD_PRIOR_ART_2026-10-20_EN.md",
+    "five_arm_spec_ko": "research/C10_FIVE_ARM_SPEC_V0_1_KO.md",
+    "five_arm_spec_en": "research/C10_FIVE_ARM_SPEC_V0_1_EN.md",
+    "five_arm_estimation_boundary": "Four opportunity-on cells needed for veto×sanction additive interaction; fifth opportunity-off is a negative control, not evidence of benign motivation. Anticipated veto modifies A's attempts; observed total policy effect is not mechanical blocking effect.",
+    "verified_original_methods": [
+      {
+        "year": 2013,
+        "authors": "Bravo & Squazzoni",
+        "doi": "10.1371/journal.pone.0069871",
+        "relation": "original 2×3 exit×incentive experiment; B's opting out of public goods is not B's veto over unilateral coercion",
+        "raw_reanalysis": false
+      },
+      {
+        "year": 2006,
+        "authors": "Falk & Kosfeld",
+        "doi": "10.1257/aer.96.5.1611",
+        "relation": "original control motivation effect; net utility is context-sensitive",
+        "raw_reanalysis": false
+      },
+      {
+        "year": 2012,
+        "authors": "Ziegelmeyer, Schmelz & Ploner",
+        "doi": "10.1007/s10683-011-9302-8",
+        "relation": "four replications qualify original's net-benefit strength",
+        "raw_reanalysis": false
+      }
+    ],
+    "duplicate_status": "existing C10-05 and C02 separately marked; no repository-global DOI novelty claim; historical source counts unchanged"
   }
 }
