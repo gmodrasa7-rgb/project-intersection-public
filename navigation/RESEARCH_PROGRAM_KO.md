@@ -5,6 +5,8 @@
 
 [창시 연구질문](../README.md) · [영어 대응판](RESEARCH_PROGRAM_EN.md) · [선행논문 최우선 규칙](../PRIOR_ART_FIRST_RESEARCH_POLICY_EN_KO.md) · [독립검토 경로](../research/PUBLIC_REVIEW_PACKET_KO.md) · [자료실 재귀개선 방법 PI-RAMP v0.2](../protocols/PI_RAMP_V0_2_KO.md) · [v0.3 선행방법·반증·효과검사](../protocols/PI_RAMP_V0_3_KO.md) · [v0.4 원저자 자료 식별·대립 근거 감사](../protocols/PI_RAMP_V0_4_EN_KO.md) · [v0.5 부분 재현·유추·실험 단위 계보](../protocols/PI_RAMP_V0_5_EN_KO.md) · [v0.6 원개체 B 보호 동기 비식별·RVD03 교차검증](../protocols/PI_RAMP_V0_6_EN_KO.md)
 
+**연구축 교차문제(초안):** [PI-CORE-01 v0.2 — 감독 교정, 독립 타자 지위, 개입 경로의 누락·동기 비식별](../research/PI_CORE_01_CORRIGIBILITY_OTHER_PRESERVATION_KO.md) · [비파괴 참조 지도](ARCHIVE_MAP_KO.md). **유한모형 반례이며 독립 실증 아님.**
+
 ## 1. 단일 연구문제: 개별 안전장치들의 나열이 아님
 
 **인간·현재 배포된 AI·미래 지능체 등 서로 다른 개체가 각자의 이익을 추구하면서도 상대의 독립적 존속·실질적 거부/이탈·복구·발전을 자발적이고 장기적으로 보존할 수 있는가? 압도적 권력과 역할이 역전되는 상황에서도 가능하다면 성립 조건, 실패한다면 실패 조건은 무엇인가?**

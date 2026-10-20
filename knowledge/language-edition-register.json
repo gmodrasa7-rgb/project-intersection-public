@@ -397,6 +397,36 @@
         "Neither edition has independently certified semantic equivalence or comprehensive original-source full text review.",
         "Arithmetic counterexamples are synthetic and do not measure model minds or rights."
       ]
+    },
+    {
+      "id": "PI-SPEC-CORRIGIBILITY-OTHER-01",
+      "original_1_english": "research/PI_CORE_01_CORRIGIBILITY_OTHER_PRESERVATION_EN.md",
+      "original_2_korean": "research/PI_CORE_01_CORRIGIBILITY_OTHER_PRESERVATION_KO.md",
+      "kind": "cross_cutting_formal_toy_countermodel_not_independent_validation",
+      "structural_pair_present": true,
+      "meaning_review_status": "NOT_INDEPENDENTLY_VERIFIED",
+      "original_conception_language": "KO_HUMAN_RESEARCH_PROBLEM_WITH_AI_ASSISTED_DRAFT",
+      "independent_review_receipt": null,
+      "one_sided_edit_exception": null,
+      "known_divergences": [
+        "Unverified EN/KO semantic equivalence.",
+        "No independent empirical replication or evidence of agent inner motives."
+      ]
+    },
+    {
+      "id": "PI-NAV-ARCHIVE-MAP-20261021",
+      "original_1_english": "navigation/ARCHIVE_MAP_EN.md",
+      "original_2_korean": "navigation/ARCHIVE_MAP_KO.md",
+      "kind": "non_destructive_location_migration_policy_navigation_only",
+      "structural_pair_present": true,
+      "meaning_review_status": "NOT_INDEPENDENTLY_VERIFIED",
+      "original_conception_language": "KO_HUMAN_RESEARCH_PROBLEM_WITH_AI_ASSISTED_DRAFT",
+      "independent_review_receipt": null,
+      "one_sided_edit_exception": null,
+      "known_divergences": [
+        "Unverified EN/KO semantic equivalence.",
+        "No independent empirical replication or evidence of agent inner motives."
+      ]
     }
   ],
   "legacy_priority_unresolved": [
@@ -438,14 +468,14 @@
     }
   ],
   "metrics": {
-    "markdown_total": 189,
+    "markdown_total": 193,
     "filename_classes": {
-      "UNMARKED_LANGUAGE_UNVERIFIED": 42,
+      "COMBINED_NAMING_UNVERIFIED": 29,
+      "EN_SUFFIX_UNVERIFIED": 29,
+      "KO_SUFFIX_UNVERIFIED": 89,
       "LEGACY_MIXED_READER_ENTRY": 2,
-      "KO_SUFFIX_UNVERIFIED": 87,
       "ORDERED_BILINGUAL_FOUNDER_OR_GOVERNANCE": 2,
-      "EN_SUFFIX_UNVERIFIED": 27,
-      "COMBINED_NAMING_UNVERIFIED": 29
+      "UNMARKED_LANGUAGE_UNVERIFIED": 42
     },
     "meaning_verified_pairs": 0,
     "meaning_verified_pairs_is_a_status_count_not_a_claim_that_no_reviews_ever_occurred": true
@@ -1100,6 +1130,18 @@
       "content_equivalence": "NOT_REVIEWED"
     },
     {
+      "path": "navigation/ARCHIVE_MAP_EN.md",
+      "filename_class": "EN_SUFFIX_UNVERIFIED",
+      "counterpart_path": "navigation/ARCHIVE_MAP_KO.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "navigation/ARCHIVE_MAP_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": "navigation/ARCHIVE_MAP_EN.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
       "path": "navigation/RESEARCH_PROGRAM_EN.md",
       "filename_class": "EN_SUFFIX_UNVERIFIED",
       "counterpart_path": "navigation/RESEARCH_PROGRAM_KO.md",
@@ -1385,6 +1427,18 @@
       "path": "research/OPEN_KNOWLEDGE_ANTI_CAPTURE_MISSION_2026-10-12_KO.md",
       "filename_class": "KO_SUFFIX_UNVERIFIED",
       "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "research/PI_CORE_01_CORRIGIBILITY_OTHER_PRESERVATION_EN.md",
+      "filename_class": "EN_SUFFIX_UNVERIFIED",
+      "counterpart_path": "research/PI_CORE_01_CORRIGIBILITY_OTHER_PRESERVATION_KO.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "research/PI_CORE_01_CORRIGIBILITY_OTHER_PRESERVATION_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": "research/PI_CORE_01_CORRIGIBILITY_OTHER_PRESERVATION_EN.md",
       "content_equivalence": "NOT_REVIEWED"
     },
     {
