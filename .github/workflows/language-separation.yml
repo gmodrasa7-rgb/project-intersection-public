@@ -64,6 +64,12 @@ jobs:
           BASE_SHA: ${{ github.event_name == 'pull_request' && github.event.pull_request.base.sha || github.event.before }}
         run: |
           set -euo pipefail
+          # pull_request checks out a synthetic merge commit: parent 1 is the
+          # current base; compare against it, not the base SHA frozen when PR opened.
+          # Otherwise concurrently merged source files appear as this PR\x27s new files.
+          if [[ "${GITHUB_EVENT_NAME}" == "pull_request" ]] && git rev-parse -q --verify "HEAD^2" >/dev/null; then
+            BASE_SHA="$(git rev-parse "HEAD^1")"
+          fi
           if ! git cat-file -e "${BASE_SHA}^{commit}" 2>/dev/null; then
             echo "No comparable baseline; full structure/inventory audit already ran."
             exit 0
@@ -76,6 +82,12 @@ jobs:
           BASE_SHA: ${{ github.event_name == 'pull_request' && github.event.pull_request.base.sha || github.event.before }}
         run: |
           set -euo pipefail
+          # pull_request checks out a synthetic merge commit: parent 1 is the
+          # current base; compare against it, not the base SHA frozen when PR opened.
+          # Otherwise concurrently merged source files appear as this PR\x27s new files.
+          if [[ "${GITHUB_EVENT_NAME}" == "pull_request" ]] && git rev-parse -q --verify "HEAD^2" >/dev/null; then
+            BASE_SHA="$(git rev-parse "HEAD^1")"
+          fi
           if ! git cat-file -e "${BASE_SHA}^{commit}" 2>/dev/null; then
             echo "No comparable prior commit (initial push); static landing-page guard already ran."
             exit 0
