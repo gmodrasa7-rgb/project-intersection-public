@@ -1,0 +1,33 @@
+name: PI-CORE-01 bounded non-implication witness
+
+on:
+  pull_request:
+    paths:
+      - "research/PI_CORE_01_CORRIGIBILITY_OTHER_PRESERVATION_*.md"
+      - "tools/probe_pi_core01_nonimplication.py"
+      - ".github/workflows/pi-core01-nonimplication.yml"
+  push:
+    branches: [main]
+    paths:
+      - "research/PI_CORE_01_CORRIGIBILITY_OTHER_PRESERVATION_*.md"
+      - "tools/probe_pi_core01_nonimplication.py"
+      - ".github/workflows/pi-core01-nonimplication.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  bounded-logical-witness:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Distinguish designated correction and third-party preservation
+        run: python tools/probe_pi_core01_nonimplication.py
+      - name: Check repository links and archive root budget
+        run: |
+          python tools/check_public_navigation.py --self-test
+          python tools/check_public_navigation.py --strict-all
