@@ -22,9 +22,11 @@ class InputError(ValueError):
     pass
 
 
-def _obj(value, name):
+def _obj(value, name, allowed=None):
     if not isinstance(value, dict):
         raise InputError(f"{name}: expected object")
+    if allowed is not None and set(value).difference(allowed):
+        raise InputError(f"{name}: unknown fields")
     return value
 
 
@@ -35,7 +37,7 @@ def _bool(value, name):
 
 
 def _amount(value, name):
-    obj = _obj(value, name)
+    obj = _obj(value, name, {"status", "amount"})
     if obj.get("status") not in ("VERIFIED", "UNVERIFIED"):
         raise InputError(f"{name}: invalid status")
     amount = obj.get("amount")
@@ -49,7 +51,11 @@ def _amount(value, name):
 
 
 def assess(data):
-    root = _obj(data, "root")
+    root = _obj(data, "root", {
+        "schema_version", "synthetic", "private_only",
+        "no_double_count_verified", "finance", "funding_pipeline", "compute",
+        "continuity", "evidence", "independence", "capacity",
+    })
     if root.get("schema_version") != VERSION:
         raise InputError("unknown schema version: fail closed")
     synthetic = _bool(root.get("synthetic"), "synthetic")
@@ -57,7 +63,9 @@ def assess(data):
     if not synthetic and not private_only:
         raise InputError("real inputs must be private_only=true")
     disjoint = _bool(root.get("no_double_count_verified"), "no_double_count_verified")
-    finance = _obj(root.get("finance"), "finance")
+    finance = _obj(root.get("finance"), "finance", {
+        "liquid_cash_krw", "immediate_liabilities_krw", "essential_monthly_burn_krw",
+    })
     liquid = _amount(finance.get("liquid_cash_krw"), "liquid_cash_krw")
     liabilities = _amount(finance.get("immediate_liabilities_krw"), "immediate_liabilities_krw")
     burn = _amount(finance.get("essential_monthly_burn_krw"), "essential_monthly_burn_krw")
@@ -66,7 +74,11 @@ def assess(data):
     if not isinstance(pipeline, list):
         raise InputError("funding_pipeline: expected list")
     for entry in pipeline:
-        x = _obj(entry, "funding entry")
+        x = _obj(entry, "funding entry", {"label", "stage", "proposed_amount_krw", "source_ref"})
+        if not isinstance(x.get("label"), str) or not 1 <= len(x["label"]) <= 80:
+            raise InputError("funding label: invalid")
+        if x.get("source_ref") is not None and (not isinstance(x.get("source_ref"), str) or len(x["source_ref"]) > 200):
+            raise InputError("source_ref: invalid")
         if x.get("stage") not in STAGES:
             raise InputError("funding stage: unsupported")
         val = x.get("proposed_amount_krw")
@@ -75,11 +87,11 @@ def assess(data):
         # Deliberately NEVER add pipeline values to cash: even PAID_VERIFIED
         # requires private cash-ledger reconciliation, not automatic addition.
 
-    compute = _obj(root.get("compute"), "compute")
-    continuity = _obj(root.get("continuity"), "continuity")
-    evidence = _obj(root.get("evidence"), "evidence")
-    independence = _obj(root.get("independence"), "independence")
-    capacity = _obj(root.get("capacity"), "capacity")
+    compute = _obj(root.get("compute"), "compute", {"free_fallback_tested"})
+    continuity = _obj(root.get("continuity"), "continuity", {"github_readback_tested", "local_restore_tested"})
+    evidence = _obj(root.get("evidence"), "evidence", {"negative_results_preserved"})
+    independence = _obj(root.get("independence"), "independence", {"sponsor_conclusion_control"})
+    capacity = _obj(root.get("capacity"), "capacity", {"researcher_can_work"})
     fallback = _bool(compute.get("free_fallback_tested"), "free_fallback_tested")
     github = _bool(continuity.get("github_readback_tested"), "github_readback_tested")
     local = _bool(continuity.get("local_restore_tested"), "local_restore_tested")
@@ -107,9 +119,9 @@ def assess(data):
 
     gates = {
         "financial": financial_action,
-        "compute": "FALLBACK_VERIFIED" if fallback else "FALLBACK_NOT_TESTED",
-        "continuity": "RECOVERY_TESTED" if github and local else "RESTORE_NOT_VERIFIED",
-        "evidence": "NEGATIVE_RESULT_PRESERVED" if negative else "HOLD_EVIDENCE",
+        "compute": "FALLBACK_TEST_SELF_REPORTED" if fallback else "FALLBACK_NOT_TESTED",
+        "continuity": "RECOVERY_SELF_REPORTED" if github and local else "RESTORE_NOT_VERIFIED",
+        "evidence": "PRESERVATION_SELF_REPORTED" if negative else "HOLD_EVIDENCE",
         "independence": "REVIEW" if control == "UNKNOWN" else ("FAIL" if control == "YES" else "DECLARED_NO_CONTROL"),
         "capacity": can_work,
     }
@@ -133,7 +145,8 @@ def assess(data):
         "gates": gates,
         "pipeline_entries_checked": len(pipeline),
         "pipeline_counted_as_cash": False,
-        "claims": ["OPERATIONAL_RULE_ONLY", "NO_RECEIPT_VERIFICATION", "NO_SCIENTIFIC_VALIDATION"],
+        "input_evidence_scope": "SYNTHETIC" if synthetic else "SELF_REPORTED_NOT_INDEPENDENTLY_RECONCILED",
+        "claims": ["OPERATIONAL_RULE_ONLY", "NO_RECEIPT_VERIFICATION", "NO_RESTORE_ATTESTATION", "NO_SCIENTIFIC_VALIDATION"],
     }
 
 
@@ -143,6 +156,11 @@ def main():
     args = parser.parse_args()
     try:
         data = json.loads(args.path.read_text(encoding="utf-8"))
+        if isinstance(data, dict) and data.get("synthetic") is False:
+            # Refuse real-person data under the publicly checked-out repository.
+            # This is path containment, NOT a proof of file privacy elsewhere.
+            if args.path.resolve().is_relative_to(Path(__file__).resolve().parents[1]):
+                raise InputError("private data inside repository tree")
         print(json.dumps(assess(data), ensure_ascii=False, indent=2))
     except (InputError, OSError, json.JSONDecodeError) as exc:
         # No source text or input content is printed on failure.
