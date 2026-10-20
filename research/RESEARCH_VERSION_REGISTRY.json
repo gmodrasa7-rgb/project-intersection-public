@@ -2,7 +2,7 @@
   "schema_version": "0.2.0",
   "registry_document_version": "0.2.0",
   "snapshot_date": "2026-10-20",
-  "main_basis_commit": "77038d8a99dfc6e704d168e9a16cb754d001e62f",
+  "main_basis_commit": "f55f6eda0e8994eff7e0c16d79a1ca821b80d18f",
   "audit_scope": "Selected public main files and open PR metadata; prior conversations only partial retrieval, not a complete chat export or private-repository inventory",
   "terminology_spec_version": "0.1",
   "principles": [
@@ -136,13 +136,13 @@
       "title": "Resonance–Value Dynamics",
       "what": "Candidate study of relational value and motivational change under coexistence and exploitation",
       "how": "Distinguish mutually generated value from manipulation; empirical and negative controls needed",
-      "current_version": "0.1.0",
+      "current_version": "0.2.0",
       "candidate_version": null,
       "publication_state": "MAIN",
       "evidence_state": "CONCEPTUAL_HYPOTHESIS_UNTESTED",
       "source": "research/RVD_VERSION_MANIFEST.json",
       "candidate_pr": null,
-      "current_source_blob_sha": "e65874b966e3a86ebfac9a9420a13e12aa81c491"
+      "current_source_blob_sha": "dbafa6796fad696b09cca967773dac1f2af9a495"
     },
     {
       "id": "PI-RAMP",
@@ -182,6 +182,19 @@
       "source": "research/DCA0_DIFFERENTIAL_COEXISTENCE_ACCELERATION_2026-10-20_EN_KO.md",
       "candidate_pr": null,
       "current_source_blob_sha": null
+    },
+    {
+      "id": "DCA-1",
+      "title": "Adaptive defense and harm-displacement counterexample",
+      "what": "Does faster defense merely shift harm or conceal adaptive threats and the absence of voluntary restraint?",
+      "how": "Trace original studies, construct explicit harm-displacement and adaptive-attack synthetic counterexamples, preserve lawful autonomy outcomes",
+      "current_version": "0.2.0",
+      "candidate_version": null,
+      "publication_state": "MAIN",
+      "evidence_state": "SYNTHETIC_COUNTEREXAMPLE_NO_FIELD_VALIDATION",
+      "source": "research/DCA1_ADAPTATION_DISPLACEMENT_IDENTIFICATION_2026-10-20_KO.md",
+      "candidate_pr": null,
+      "current_source_blob_sha": "5f8db22570d8c4ee9e98a6f098157a953aef7aee"
     },
     {
       "id": "E007",
@@ -262,5 +275,5 @@
     "outcome": "negative / no-main-result / unresolved / supported within declared scope",
     "independence": "evaluator and source lineage, not number of AI responses"
   },
-  "audit_limitation": "Live PR states and source blobs may change; automated checks are necessary for currency, but cannot prove completeness of historical or private research."
+  "audit_limitation": "Live PR states and source blobs may change; automated checks are necessary for currency, but cannot prove completeness of historical or private research. Main has advanced independently during this audit (RVD v0.2.0; DCA-1 v0.2.0). These records are a dated snapshot, not a live guarantee."
 }
