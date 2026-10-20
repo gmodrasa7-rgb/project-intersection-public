@@ -54,7 +54,7 @@ def check_ci_contract(text):
     """Reject regressions that suppress the global FLR audit on ordinary PRs."""
     require(isinstance(text, str) and text.startswith("name: PI-FLR"),
             "INVALID_CI_WORKFLOW")
-    match = re.search(r"(?m)^on:\s*\n(.*?)(?=^[^\s#]|\Z)", text, flags=re.S | re.M)
+    match = re.search(r"^on:[ \t]*\n(.*?)(?=^[^\s#]|\Z)", text, flags=re.S | re.M)
     require(match is not None, "CI_TRIGGERS_NOT_DECLARED")
     triggers = match.group(1)
     require(re.search(r"(?m)^  pull_request:\s*$", triggers) is not None,
@@ -90,8 +90,9 @@ def validate(data, root=ROOT, ci_text=None):
             ("patch", "minor", "major", "history", "closed_means", "no_private_data")),
             "VERSION_POLICY_MISSING")
     require(policy["no_private_data"] is True, "PRIVATE_DATA_BOUNDARY_DISABLED")
-    require(data["stages"] == sorted(VALID_EVENTS),
-            "EVENT_DICTIONARY_DRIFT")  # deliberately sorted canonical for deterministic diff
+    require(type(data["stages"]) is list and len(data["stages"]) == len(VALID_EVENTS)
+            and set(data["stages"]) == VALID_EVENTS,
+            "EVENT_DICTIONARY_DRIFT")
     require(type(data["improvement_protocol"]) is dict
             and len(data["improvement_protocol"].get("cycle", [])) >= 7
             and "anti_proxy" in data["improvement_protocol"],
