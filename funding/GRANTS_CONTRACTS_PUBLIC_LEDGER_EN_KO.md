@@ -5,6 +5,8 @@
 
 **Owner/control:** [PI-RISE v0.2.0](../operations/PI_RISE_V0_2_0_EN_KO.md). **Scope:** institutional grants, paid research-evaluation contracts and similarly restricted project funds ONLY; not personal GitHub Sponsors, personal employment income, household cash, historical claims, or in-kind compute credits. Individual Sponsorship has its unchanged [sole canonical ledger](SPONSORSHIP_PUBLIC_LEDGER.md).
 
+## Original 1 — English | Source-separated public accounting register
+
 ### Ledger A — verified awards / 확정 수여·계약 (not cash)
 Only a funder award letter or signed agreement within authorized disclosure rights qualifies. Preserve restrictions and payment schedule privately. No confirmed rows as of this record.
 
@@ -28,6 +30,8 @@ Each row must have matching private bank and contract proof, a reporting window,
 **Status boundary:** Budget scenarios [PI-RISE-BUDGET](../operations/PI_RISE_BUDGET_V0_1_0_EN_KO.md), the [USD 5,000 bridge](30_DAY_BRIDGE.md), [KRW 18,000,000 pilot](90_DAY_PILOT.md) and [proposal-stage registry](../operations/PI_RISE_FINANCE_PIPELINE_V0_1_0.json) are NOT entries in either cash or award table. A verified sponsorship receipt is recorded only in [its pre-existing canonical ledger](SPONSORSHIP_PUBLIC_LEDGER.md), not here.
 
 **Validation:** arithmetic checks cannot validate bank records, signed contracts, tax treatment, restricted-use eligibility or completeness. A blank table means no PUBLIC RECONCILED ROW, not absence of all money. Before recording any row, check privately with actual authorization and supporting evidence.
+
+## 원본2 — 한국어 | 공개 장부 운영 경계
 
 ### 한국어 판정 원칙
 - **계약/수여 ≠ 실입금**, **실입금 ≠ 자유로운 개인 생활비**.
