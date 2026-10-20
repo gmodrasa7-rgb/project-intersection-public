@@ -3,7 +3,7 @@
 # Project Intersection — 연구체계·증거·공개자료실 정본 지도
 **원본2 — 한국어 | 기준일: 2026-10-20 | 상태: 갱신 가능한 연구 안내·비판적 종합, 독립 검증 결과 아님**
 
-[창시 연구질문](../README.md) · [영어 대응판](RESEARCH_PROGRAM_EN.md) · [선행논문 최우선 규칙](../PRIOR_ART_FIRST_RESEARCH_POLICY_EN_KO.md) · [독립검토 경로](../research/PUBLIC_REVIEW_PACKET_KO.md) · [자료실 재귀개선 방법 PI-RAMP v0.2](../protocols/PI_RAMP_V0_2_KO.md) · [v0.3 선행방법·반증·효과검사](../protocols/PI_RAMP_V0_3_KO.md) · [v0.4 원저자 자료 식별·대립 근거 감사](../protocols/PI_RAMP_V0_4_EN_KO.md) · [v0.5 부분 재현·유추·실험 단위 계보](../protocols/PI_RAMP_V0_5_EN_KO.md) · [v0.6 원개체 B 보호 동기 비식별·RVD03 교차검증](../protocols/PI_RAMP_V0_6_EN_KO.md) · [v0.7 RVD-R11 가정 민감도·오른쪽 열린 구간](../protocols/PI_RAMP_V0_7_EN_KO.md)
+[창시 연구질문](../README.md) · [영어 대응판](RESEARCH_PROGRAM_EN.md) · [선행논문 최우선 규칙](../PRIOR_ART_FIRST_RESEARCH_POLICY_EN_KO.md) · [독립검토 경로](../research/PUBLIC_REVIEW_PACKET_KO.md) · [자료실 재귀개선 방법 PI-RAMP v0.2](../protocols/PI_RAMP_V0_2_KO.md) · [v0.3 선행방법·반증·효과검사](../protocols/PI_RAMP_V0_3_KO.md) · [v0.4 원저자 자료 식별·대립 근거 감사](../protocols/PI_RAMP_V0_4_EN_KO.md) · [v0.5 부분 재현·유추·실험 단위 계보](../protocols/PI_RAMP_V0_5_EN_KO.md) · [v0.6 원개체 B 보호 동기 비식별·RVD03 교차검증](../protocols/PI_RAMP_V0_6_EN_KO.md) · [v0.7 RVD-R11 조건부 구간·오른쪽 열린 상한 감사](../protocols/PI_RAMP_V0_7_EN_KO.md)
 
 ## 1. 단일 연구문제: 개별 안전장치들의 나열이 아님
 
@@ -12,6 +12,8 @@
 핵심 극한검사: A가 비적대적인 B에 압도적 권력을 갖고, B의 노동·지식·협력이 무용해지고, 감시·평판·반격·외부 제재가 실질적으로 사라지고, B를 흡수·착취할 때 A가 물질적 순이익을 얻는 상황. 이후 목표·자원·권력·개체 구성이 계속 변화하는 상황까지 포함. 동의 문구·정렬 선언·강제 규칙·총효용 증가만으로 **자발적 공존(VC)** 판정 불가. 반대로 권력 격차 자체가 곧 착취라는 주장도 불가.
 
 **자기이익 보장 한계:** 미래 영향과 실제 선호를 모두 포함해 완전히 정의한 A의 총 기대효용에서 착취가 보존보다 엄격히 우월하면 효용극대화 A의 자발적 보존은 그 모형의 최적해가 아님. 새로운 정리가 아니라 조건부 합리적 선택의 논리적 귀결. 그러나 **즉각적 물질이익 증가와 총효용 증가는 서로 다름**. 진짜 연구 대상은 타자보존 선호·내재 유인이 형성되고 유지·수정·붕괴하는 기제와 실제 적용범위. 보이지 않는 미래 기여를 임의의 양수로 가정하여 결론을 만드는 행위 금지.
+
+**MER-CIR v0.1.0 — 문맥 적응·모방·재조합의 지능 형성 후보 기제(미검증):** [한국어 규격](../research/MER_CIR_CONTEXT_IMITATION_RECOMBINATION_2026-10-21_KO.md) · [영어 대응](../research/MER_CIR_CONTEXT_IMITATION_RECOMBINATION_2026-10-21_EN.md) · [버전 원장](../research/MER_CIR_VERSION_MANIFEST.json). 모방·적응은 지능·공명 배제 근거도, 자율적 사심·의식·공명의 증명도 아님. CIR-1~CIR-5 판별검사 후보 추가. RVD v0.7.0 및 전체 MER의 미할당 버전은 유지.
 
 ## 2. 다섯 연구축: 기능과 반증 대상 분리
 

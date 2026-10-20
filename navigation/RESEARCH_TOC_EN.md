@@ -1,7 +1,5 @@
 # Research Contents — Original 1: English
 
-**Latest bounded research delta (2026-10-21):** [PI-20H v0.1.0 — cross-axis evidence/contradiction audit, conditional motive-identification bound and CI incident](../research/PI_20H_SYNTHESIS_2026-10-21_EN_KO.md). Historical synthesis, not a new empirical validation.
-
 **DCA-2 adversarial evidence:** [Victim-rights and open-world robustness (2026-10-21)](../research/DCA2_EVIDENCE_BRIEF_2026-10-21_EN.md) — specific research evidence, not the program's founding purpose or independent field validation.
 
 <!-- PI-LANGUAGE: en -->
@@ -14,6 +12,8 @@ This is a **language-consistent navigation index**. Original 1 denotes release o
 **Opening linked sources:** [Research overview](../RESEARCH_OVERVIEW.md), [public evidence](../PUBLIC_EVIDENCE_INDEX.md), [review packet](../research/PUBLIC_REVIEW_PACKET_EN.md) and the [CCPH crosswalk](../CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md) visibly contain both scripts in a bounded source inspection. [E010](../experiments/e010/README_KO.md) is Korean-dominant in that inspection; [E009 result](../experiments/e009/RESULT.md) had no Hangul in the inspected range. These are **script signals, not verified complete language editions**. See [source-language observation and limits](../knowledge/language-edition-register.json) before following legacy links.
 
 Many historical sources are Korean-only or bilingual; linked **source titles, filenames, mathematical identifiers and citations remain unchanged**. A reader should treat a link as a route to an original, not an implicit translation. Refer to the [public evidence index](../research/PUBLIC_EVIDENCE_INDEX_EN.md) for each claim's evidence class and limitations.
+
+**New MER methodological criterion (2026-10-21):** [MER-CIR v0.1.0 EN](../research/MER_CIR_CONTEXT_IMITATION_RECOMBINATION_2026-10-21_EN.md) · [KO](../research/MER_CIR_CONTEXT_IMITATION_RECOMBINATION_2026-10-21_KO.md). Contextual learning, imitation and recombination may be mechanisms of intelligence; incremental synergy, enduring choice and subjective experience remain separate untested claims.
 
 ### The five questions that give the archive its meaning
 

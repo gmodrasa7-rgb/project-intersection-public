@@ -13,6 +13,8 @@ The decisive stress test is not ordinary cooperation. Give actor A overwhelming 
 
 **Boundary of a self-interest guarantee:** If exploiting B is strictly better than preserving B in A's *fully specified total expected utility*, with all modeled continuation consequences included, a utility-maximizing A will not voluntarily maximize the worse alternative. This is elementary conditional rational-choice logic, not a new project theorem. **A higher immediate material return from exploitation is not the same as higher total utility.** The researchable question is where stable other-regarding preferences and/or real endogenous consequences arise, how they change, and what breaks them. Do not invent invisible future benefits merely to force a preferred conclusion.
 
+**MER-CIR v0.1.0 — contextual adaptation, imitation and recombination as candidate intelligence mechanisms (untested):** [English specification](../research/MER_CIR_CONTEXT_IMITATION_RECOMBINATION_2026-10-21_EN.md) · [Korean edition](../research/MER_CIR_CONTEXT_IMITATION_RECOMBINATION_2026-10-21_KO.md) · [version manifest](../research/MER_CIR_VERSION_MANIFEST.json). Adaptation/imitation alone neither disproves intelligence nor proves independent preferences, consciousness or resonance. New candidate discriminating tests CIR-1…CIR-5; RVD v0.7.0 and the overall unassigned MER version are unchanged.
+
 ## 2. The research architecture: five different jobs
 
 | Component | Scientific role | Primary failure to detect | Canonical reading |
