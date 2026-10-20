@@ -1,0 +1,34 @@
+name: PI-FLR recursive failure learning integrity
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  registry-integrity:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Execute original failure replays and registry mutation tests
+        run: python3 -m unittest discover -s tests -p 'test_pi_flr_audit.py' -v
+      - name: Audit PI-FLR evidence, immutable history and recursive CI coverage
+        env:
+          PI_EVENT_NAME: ${{ github.event_name }}
+          PI_EVENT_BEFORE: ${{ github.event.before }}
+        run: |
+          set -euo pipefail
+          BASE=""
+          if [ "$PI_EVENT_NAME" = "pull_request" ] && git rev-parse -q --verify "HEAD^2" >/dev/null; then
+            # Synthetic PR merge commit first parent is its current base branch.
+            BASE="$(git rev-parse 'HEAD^1')"
+          elif [ "$PI_EVENT_NAME" = "push" ]; then
+            BASE="$PI_EVENT_BEFORE"
+          fi
+          python3 tools/pi_flr_audit.py --baseline-commit "$BASE"
