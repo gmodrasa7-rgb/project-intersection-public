@@ -423,11 +423,11 @@
     }
   ],
   "metrics": {
-    "markdown_total": 178,
+    "markdown_total": 179,
     "filename_classes": {
       "UNMARKED_LANGUAGE_UNVERIFIED": 42,
       "LEGACY_MIXED_READER_ENTRY": 2,
-      "KO_SUFFIX_UNVERIFIED": 84,
+      "KO_SUFFIX_UNVERIFIED": 85,
       "ORDERED_BILINGUAL_FOUNDER_OR_GOVERNANCE": 2,
       "EN_SUFFIX_UNVERIFIED": 25,
       "COMBINED_NAMING_UNVERIFIED": 23
@@ -1253,6 +1253,12 @@
       "content_equivalence": "NOT_REVIEWED"
     },
     {
+      "path": "research/DCA1_ADAPTATION_DISPLACEMENT_IDENTIFICATION_2026-10-20_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
       "path": "research/E009_INDEPENDENT_DECISION_GATE_EN.md",
       "filename_class": "EN_SUFFIX_UNVERIFIED",
       "counterpart_path": "research/E009_INDEPENDENT_DECISION_GATE_KO.md",
@@ -1781,6 +1787,16 @@
       "new_edition_pairs": 1,
       "editorial_notes": "RVD Cycle02 explicitly separates generation of value C from durable preservation of the original independent B under profitable substitution; adds R6-R9, an author/publisher DOI crosswalk with conflicting evidence, and a machine-readable source ledger. v0.2.0 is a falsifiable protocol upgrade, not an empirical finding.",
       "reviewer_actions": "Independently confirm full texts, original-author bibliographic lineage, EN/KO semantic equivalence, real exit/power-change variables, preregister non-harmful controlled tests; preserve adverse evidence."
+    },
+    {
+      "as_of": "2026-10-20",
+      "status": "CONCURRENT_MAIN_SINGLE_KO_CASE_REGISTRATION_NO_SCIENTIFIC_REVIEW",
+      "new_documents": [
+        "research/DCA1_ADAPTATION_DISPLACEMENT_IDENTIFICATION_2026-10-20_KO.md"
+      ],
+      "new_edition_pairs": 0,
+      "editorial_notes": "DCA1 source appeared on main concurrently with the RVD v0.2.0 branch; language inventory entry added without editing the other study or implying scientific/translation review.",
+      "reviewer_actions": "Inspect the independent DCA1 study, evidence grade, and language correspondence separately."
     }
   ],
   "path_layout_policy": "Keep the project root entry-only; bilingual full research editions live in existing research/ and their original historical combined documents retain stable root URLs."
