@@ -1,0 +1,51 @@
+{
+  "component_id": "PI-RISE-VAC",
+  "long_name": "Project Intersection Verification-Aware Capacity",
+  "version": "0.1.0",
+  "release_status": "UNMERGED_CANDIDATE",
+  "date": "2026-10-21",
+  "parent_protocol": "PI-RISE v0.1.0 MAIN; parent is not upgraded",
+  "parent_budget_protocol": "PI-RISE-BUDGET v0.1.0 MAIN; not amended",
+  "nature": "OPERATIONAL_HYPOTHESIS_AND_SYNTHETIC_TESTS",
+  "scientific_status": "NO_REAL_MODEL_DATA_NO_EXTERNAL_REPLICATION",
+  "actual_funding_received": "UNKNOWN",
+  "artifacts": [
+    {
+      "path": "operations/PI_RISE_VAC_V0_1_0_EN_KO.md",
+      "git_blob_sha": "307a37e703b5b33435cab27f9464a399e63e89a0"
+    },
+    {
+      "path": "tools/pi_rise_vac.py",
+      "git_blob_sha": "40bd8840d7040ad46b584d4626397986e7c6000a"
+    },
+    {
+      "path": "tests/test_pi_rise_vac.py",
+      "git_blob_sha": "51511a3b8f62b2fd6b21a5282faaf5ea3834c05e"
+    }
+  ],
+  "methods": [
+    {
+      "origin": "Little 1961",
+      "doi": "10.1287/opre.9.3.383",
+      "role": "stationary queue law, not a causal proof of model effect"
+    },
+    {
+      "origin": "NIST AI RMF MEASURE",
+      "url": "https://airc.nist.gov/airmf-resources/airmf/5-sec-core/",
+      "role": "independent testing and provenance methodology"
+    }
+  ],
+  "claims": {
+    "c1": "$3750 gross human under hypothetical 20pct deduction (not legal tax)",
+    "c2": "AI stack all-in $450-550 inclusive of baseline $35",
+    "c3": "$400 reserve is not externally contracted reviewer",
+    "c4": "total 4800-4900 per month, synthetic only",
+    "c5": "proof-of-work requires observed comparison; no model benchmarking done"
+  },
+  "does_not_modify": [
+    "funding/SPONSORSHIP_PUBLIC_LEDGER.md",
+    "funding/30_DAY_BRIDGE.md",
+    "funding/90_DAY_PILOT.md",
+    "operations/PI_RISE_BUDGET_V0_1_0_EN_KO.md"
+  ]
+}
