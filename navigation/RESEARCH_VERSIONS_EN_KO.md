@@ -8,6 +8,8 @@
 
 **Verification-aware allocation submodule MAIN (2026-10-21):** [PI-RISE-VAC v0.1.0](../operations/PI_RISE_VAC_V0_1_0_EN_KO.md), [version manifest](../operations/PI_RISE_VAC_VERSION_MANIFEST.json). Formal synthetic reviewer-backlog and budget arithmetic; not real independent evaluation or a change to parent PI-RISE / PI-RISE-BUDGET status. / **검증역량 제약 배분 정본 운영모형:** 고성능 모델 사용의 검증부채 증가 가설을 반증 가능하게 정의, 실증 미실시.
 
+**Operational submodule CANDIDATE 2026-10-21:** [PI-RISE-DC v0.1.0](../operations/PI_RISE_DC_V0_1_0_EN_KO.md) · [version manifest](../operations/PI_RISE_DC_VERSION_MANIFEST.json). Payment-timing liquidity and review-hour witnesses, not realized cash or empirical research validation. / **PI-RISE-DC 후보:** 지급시점별 자금·주장별 검증노동 분리.
+
 ## Original 1 — English
 
 ### What we research in one paragraph

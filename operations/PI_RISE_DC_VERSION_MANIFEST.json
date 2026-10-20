@@ -1,0 +1,55 @@
+{
+  "component": "PI-RISE-DC",
+  "version": "0.1.0",
+  "publication_state": "CANDIDATE_UNMERGED",
+  "date": "2026-10-21",
+  "full_name": "Project Intersection Dual Clock — Liquidity Timing & Evidence Workload",
+  "parent": "PI-RISE v0.1.0",
+  "prior_siblings": [
+    "PI-RISE-BUDGET v0.1.0",
+    "PI-RISE-VAC v0.1.0"
+  ],
+  "methods": {
+    "cash": "Finite transaction prefix constraint with separately restricted accounts; elementary deterministic arithmetic",
+    "review": "Claim-specific reviewer hours and priority; synthetic queue",
+    "not_new_theorems": true
+  },
+  "scientific_status": "SYNTHETIC_ONLY_NOT_INDEPENDENTLY_VALIDATED",
+  "actual_cash_receipts": "UNKNOWN",
+  "actual_reviewers": "NOT_ATTESTED",
+  "artifact_blobs": [
+    {
+      "path": "operations/PI_RISE_DC_V0_1_0_EN_KO.md",
+      "sha": "0ccf8138c941edbc6a35749517f5e7a7a433b39c"
+    },
+    {
+      "path": "tools/pi_rise_dual_clock.py",
+      "sha": "2f461fc00ab2e88e37b2f0737c260d28785abd59"
+    },
+    {
+      "path": "tests/test_pi_rise_dual_clock.py",
+      "sha": "426f5e76cd937b80ad1d0af6a1d374abc82e35ee"
+    }
+  ],
+  "prior_original_works": [
+    {
+      "doi": "10.1287/opre.9.3.383",
+      "year": 1961
+    },
+    {
+      "doi": "10.1016/j.ejor.2024.05.037",
+      "year": 2024
+    },
+    {
+      "doi": "10.1038/sdata.2016.18",
+      "year": 2016
+    }
+  ],
+  "does_not_modify": [
+    "funding/SPONSORSHIP_PUBLIC_LEDGER.md",
+    "funding/30_DAY_BRIDGE.md",
+    "funding/90_DAY_PILOT.md",
+    "tools/pi_rise_vac.py"
+  ],
+  "review_status": "NOT_YET_EXECUTED_INDEPENDENTLY"
+}

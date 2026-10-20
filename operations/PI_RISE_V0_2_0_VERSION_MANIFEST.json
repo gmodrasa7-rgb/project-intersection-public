@@ -48,7 +48,7 @@
     },
     {
       "path": "funding/README.md",
-      "git_blob_sha": "c6fbfddcd9918e7bee7bae3b0220b6133e947d42"
+      "git_blob_sha": "43fbb4ed5fb054a5d2ba8bebc2709049a43be4f6"
     },
     {
       "path": "funding/FUNDER_START_HERE.md",
@@ -56,15 +56,15 @@
     },
     {
       "path": ".github/workflows/pi-rise-integrity.yml",
-      "git_blob_sha": "ffc47c4237064be93057ef00ff1af11352bdfad7"
+      "git_blob_sha": "d23b7a91a0f946712b811c7accc62eab71dbc581"
     },
     {
       "path": "knowledge/language-edition-register.json",
-      "git_blob_sha": "5ce5018162b863a221af3abbdeaeca582062df70"
+      "git_blob_sha": "1d3f13d23a821f61df6e9162505a36f61c7231b6"
     },
     {
       "path": "navigation/RESEARCH_VERSIONS_EN_KO.md",
-      "git_blob_sha": "b1ad24a5a923e04ccd3b83851121cc07657d24d5"
+      "git_blob_sha": "3b49edf69e506f1f8f0dbf49b3d96ffa8fae6f80"
     },
     {
       "path": "tools/pi_rise_manifest_guard.py",
