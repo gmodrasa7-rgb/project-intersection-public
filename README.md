@@ -8,7 +8,7 @@
 
 **Core question:** **Can distinct self-interested agents voluntarily preserve one another's freedom, independent continuance, real refusal/exit, recovery and development—even after power reversal? When does this fail?**
 
-**Research structure:** **VC** defines the outcome; **MER** investigates motive/experience/response; **EI** tests endogenous incentives; **ECR** identifies actors, relationships and affected parties; **IVS-0R** tests counterexamples. **ICM/RGBM** are candidate models; **CCPH** tracks event/contribution provenance. [Research map, evidence and literature corpus](navigation/RESEARCH_PROGRAM_EN.md).
+**Research structure:** **VC**: outcome · **MER**: motives/possible experience/responses · **EI**: endogenous incentives · **ECR**: actors/affected parties · **IVS-0R**: falsification. **ICM/RGBM**: candidate models · **CCPH**: provenance. [Research map](navigation/RESEARCH_PROGRAM_EN.md).
 
 **Hardest case:** A no longer needs B, faces no detection, punishment or reputation loss, and gains materially from exploiting B. Roles, goals and power may change. Rules and cooperation scores alone cannot settle this case.
 
@@ -20,7 +20,7 @@
 
 **Contrary evidence visible before expanding:** [E009](experiments/e009/RESULT_EN.md): Project-v3 was **42.35% worse** in mean regret than the best simple synthetic baseline; **3 of 4 criteria failed**. [E008](experiments/e008/README_EN.md): **no completed main policy result**. Neither is field validation.
 
-**Choose your route:** [Research program](navigation/RESEARCH_PROGRAM_EN.md) · [Current research versions](navigation/RESEARCH_VERSIONS_EN_KO.md#original-1--english) · [Evidence limits](research/PUBLIC_EVIDENCE_INDEX_EN.md) · [Independent falsification](research/PUBLIC_REVIEW_PACKET_EN.md).
+**Choose your route:** [Program](navigation/RESEARCH_PROGRAM_EN.md) · [Versions/status](navigation/RESEARCH_VERSIONS_EN_KO.md#original-1--english) · [Evidence](research/PUBLIC_EVIDENCE_INDEX_EN.md) · [Independent review](research/PUBLIC_REVIEW_PACKET_EN.md).
 
 <details>
 <summary>Technical purpose, evidence, rights and reviewer routes</summary>
