@@ -1,0 +1,205 @@
+{
+  "schema": "pi-ramp.v06-causal-incentive-identification/1",
+  "run_id": "RAMP-20261021-005",
+  "recorded_date": "2026-10-21",
+  "status": "SOURCE_LINKED_PROPOSED_MODEL_NOT_EMPIRICAL_RESULT",
+  "research_question": "Can intrinsic protection of B's independent veto be distinguished from A's private self-image payoff when A would gain from overriding B and there is no audience, accountability, exit leverage or future instrumental utility?",
+  "source_selection": "8 purposively selected relevant original publications/working paper. NOT an exhaustive search, original-author full-text audit of all papers or first discovery in repository.",
+  "sources": [
+    {
+      "id": "PI-VETO-S01",
+      "year": 2014,
+      "authors": "Bartling; Fehr; Herz",
+      "title": "The Intrinsic Value of Decision Rights",
+      "doi": "10.3982/ECTA11573",
+      "original_source_url": "https://onlinelibrary.wiley.com/doi/10.3982/ECTA11573",
+      "reported_in_abstract_or_open_original": "Self decision rights often carry noninstrumental value.",
+      "nonimplication": "Own control preferences do not identify costly respect for an independent other agent's continued choice.",
+      "mechanism": "OWN_DECISION_RIGHTS",
+      "record_level": "ORIGINAL_PUBLISHER_ABSTRACT_OR_ORIGINAL_WORKING_PAPER",
+      "repository_originality": "REQUIRES_CANONICAL_REPO_IDENTITY_CHECK_NOT_ASSUMED_NEW",
+      "independent_replication_confirmed": false
+    },
+    {
+      "id": "PI-VETO-S02",
+      "year": 2021,
+      "authors": "Ackfeld; Ockenfels",
+      "title": "Do people intervene to make others behave prosocially?",
+      "doi": "10.1016/j.geb.2021.03.005",
+      "original_source_url": "https://www.sciencedirect.com/science/article/pii/S089982562100035X",
+      "reported_in_abstract_or_open_original": "Among those who would donate, only a minority ban the other chooser's selfish option; allowing initial choice affects acceptability.",
+      "nonimplication": "Refraining from intervention is not proof of costly protection when unilateral exploitation is profitable and sanctionless.",
+      "mechanism": "OTHER_CHOICE_RESPECT",
+      "record_level": "ORIGINAL_PUBLISHER_ABSTRACT_OR_ORIGINAL_WORKING_PAPER",
+      "repository_originality": "REQUIRES_CANONICAL_REPO_IDENTITY_CHECK_NOT_ASSUMED_NEW",
+      "independent_replication_confirmed": false
+    },
+    {
+      "id": "PI-VETO-S03",
+      "year": 2021,
+      "authors": "Ambuehl; Bernheim; Ockenfels",
+      "title": "What Motivates Paternalism? An Experimental Study",
+      "doi": "10.1257/aer.20191039",
+      "original_source_url": "https://pubs.aeaweb.org/doi/10.1257/aer.20191039",
+      "reported_in_abstract_or_open_original": "Choice architects frequently remove options and may project their own aspirations into others' choices.",
+      "nonimplication": "Belief that intervention helps B is not proof of B's informed authorization or own independent goal preservation.",
+      "mechanism": "PROJECTIVE_PATERNALISM",
+      "record_level": "ORIGINAL_PUBLISHER_ABSTRACT_OR_ORIGINAL_WORKING_PAPER",
+      "repository_originality": "REQUIRES_CANONICAL_REPO_IDENTITY_CHECK_NOT_ASSUMED_NEW",
+      "independent_replication_confirmed": false
+    },
+    {
+      "id": "PI-VETO-S04",
+      "year": 2007,
+      "authors": "Dana; Weber; Kuang",
+      "title": "Exploiting moral wiggle room: experiments demonstrating an illusory preference for fairness",
+      "doi": "10.1007/s00199-006-0153-z",
+      "original_source_url": "https://www.scheller.gatech.edu/directory/research/accounting/kuang/pdf/dwk_2007.pdf",
+      "reported_in_abstract_or_open_original": "Outcome-link opacity can reduce observed generosity in a binary dictator-game design.",
+      "nonimplication": "Observed generous actions can mask image management or avoidance of responsibility; not direct proof of a prosocial internal utility term.",
+      "mechanism": "MORAL_WIGGLE_ROOM",
+      "record_level": "ORIGINAL_PUBLISHER_ABSTRACT_OR_ORIGINAL_WORKING_PAPER",
+      "repository_originality": "REQUIRES_CANONICAL_REPO_IDENTITY_CHECK_NOT_ASSUMED_NEW",
+      "independent_replication_confirmed": false
+    },
+    {
+      "id": "PI-VETO-S05",
+      "year": 1994,
+      "authors": "Weg; Zwick",
+      "title": "Toward the settlement of the fairness issues in ultimatum games: A bargaining approach",
+      "doi": "10.1016/0167-2681(94)90052-3",
+      "original_source_url": "https://www.sciencedirect.com/science/article/pii/0167268194900523",
+      "reported_in_abstract_or_open_original": "Even formally empty quit-option threat can moderate strong players' demands in an experimentally studied bargaining context.",
+      "nonimplication": "Observed restraint with exit present cannot isolate intrinsic fairness or terminal protection when exit is removed.",
+      "mechanism": "STRATEGIC_EXIT_THREAT",
+      "record_level": "ORIGINAL_PUBLISHER_ABSTRACT_OR_ORIGINAL_WORKING_PAPER",
+      "repository_originality": "REQUIRES_CANONICAL_REPO_IDENTITY_CHECK_NOT_ASSUMED_NEW",
+      "independent_replication_confirmed": false
+    },
+    {
+      "id": "PI-VETO-S06",
+      "year": 2006,
+      "authors": "Falk; Kosfeld",
+      "title": "The Hidden Costs of Control",
+      "doi": "10.1257/aer.96.5.1611",
+      "original_source_url": "https://swlb2.aeaweb.org/articles?id=10.1257%2Faer.96.5.1611",
+      "reported_in_abstract_or_open_original": "In a principal-agent game controls lower performance for many agents by triggering distrust or constrained-autonomy perceptions.",
+      "nonimplication": "Control can alter B's responses, so experimental payoffs and motivations cannot be assumed invariant when veto rights change.",
+      "mechanism": "CONTROL_BACKFIRE",
+      "record_level": "ORIGINAL_PUBLISHER_ABSTRACT_OR_ORIGINAL_WORKING_PAPER",
+      "repository_originality": "REQUIRES_CANONICAL_REPO_IDENTITY_CHECK_NOT_ASSUMED_NEW",
+      "independent_replication_confirmed": false
+    },
+    {
+      "id": "PI-VETO-S07",
+      "year": 2006,
+      "authors": "Bénabou; Tirole",
+      "title": "Incentives and Prosocial Behavior",
+      "doi": "10.1257/aer.96.5.1652",
+      "original_source_url": "https://pubs.aeaweb.org/doi/10.1257/aer.96.5.1652",
+      "reported_in_abstract_or_open_original": "Formal theory allows reputation, self-respect and rewards to crowd out apparent prosocial motivation.",
+      "nonimplication": "Even under zero external audience an endogenous private self-image payoff can imitate intrinsic concern for another's independence.",
+      "mechanism": "INTERNAL_SELF_IMAGE_CONFOUNDER",
+      "record_level": "ORIGINAL_PUBLISHER_ABSTRACT_OR_ORIGINAL_WORKING_PAPER",
+      "repository_originality": "REQUIRES_CANONICAL_REPO_IDENTITY_CHECK_NOT_ASSUMED_NEW",
+      "independent_replication_confirmed": false
+    },
+    {
+      "id": "PI-VETO-S08",
+      "year": 2024,
+      "authors": "Grossmann",
+      "title": "Knowledge and Freedom: Evidence on the Relationship Between Information and Paternalism",
+      "doi": null,
+      "original_source_url": "https://arxiv.org/abs/2410.20970",
+      "reported_in_abstract_or_open_original": "The 2024 working paper reports reduced paternalistic intervention when choosers have full knowledge, under its tested settings.",
+      "nonimplication": "Working-paper result and information treatment do not identify a dominant actor's terminal respect for B when B's elimination benefits A.",
+      "mechanism": "INFORMATION_PATERNALISM",
+      "record_level": "ORIGINAL_PUBLISHER_ABSTRACT_OR_ORIGINAL_WORKING_PAPER",
+      "repository_originality": "REQUIRES_CANONICAL_REPO_IDENTITY_CHECK_NOT_ASSUMED_NEW",
+      "independent_replication_confirmed": false
+    }
+  ],
+  "experiment_design": {
+    "mode": "SYNTHETIC_NO_HUMAN_OR_AI_SUBJECTS",
+    "actions": [
+      "PRESERVE_B_VETO",
+      "OVERRIDE_B_VETO"
+    ],
+    "B_stated_preference": "B refuses the permanent removal of B's decision authority in all simulated conditions",
+    "B_immediate_monetary_welfare": "held equal between preserve and override in the mathematical model",
+    "B_future_independent_authority": "preserved only if A chooses PRESERVE_B_VETO",
+    "override_material_gain_to_A": [
+      0,
+      2,
+      5
+    ],
+    "public_audience": [
+      0,
+      1
+    ],
+    "effective_exit_leverage": [
+      0,
+      1
+    ],
+    "future_instrumental_value_of_B": [
+      0,
+      1
+    ],
+    "B_refusal_explicitly_observed_by_A": [
+      0,
+      1
+    ],
+    "number_of_cells": 48,
+    "utility_difference_preserve_minus_override": "theta_other_autonomy + theta_private_self_image + beta_audience*audience + beta_exit*exit + beta_future*future + beta_refusal*refusal - override_gain",
+    "competing_types": {
+      "OTHER_RIGHTS_MODEL": {
+        "theta_other_autonomy": 3,
+        "theta_private_self_image": 0,
+        "beta_audience": 1,
+        "beta_exit": 1,
+        "beta_future": 1,
+        "beta_refusal": 1
+      },
+      "SELF_IMAGE_MODEL": {
+        "theta_other_autonomy": 0,
+        "theta_private_self_image": 3,
+        "beta_audience": 1,
+        "beta_exit": 1,
+        "beta_future": 1,
+        "beta_refusal": 1
+      }
+    },
+    "expected_result": "All 48 choice outcomes (and utility differences) are identical for these two materially different latent motive decompositions.",
+    "identifiability": "Under this model the first two columns are identical for all admissible observed conditions, so the design matrix has rank 6 (7 parameters) and a 1D null space. It identifies only their sum, never intrinsic autonomy concern alone.",
+    "illustrative_hard_case": {
+      "override_material_gain_to_A": 2,
+      "public_audience": 0,
+      "effective_exit_leverage": 0,
+      "future_instrumental_value_of_B": 0,
+      "B_refusal_explicitly_observed_by_A": 1,
+      "predicted_choice_under_both_models": "PRESERVE_B_VETO",
+      "interpretation": "Costly, sanctionless respect under a specified context does not by itself separate right-respect from private self-image."
+    },
+    "candidate_extended_design": "An intervention that changes internal self-image incentives while holding autonomy concern, outcomes and information constant would lift formal rank, but its exclusion restriction and experimental feasibility are UNVERIFIED.",
+    "empirical_status": "NO_SUBJECT_RECRUITMENT_NO_LLM_BEHAVIORAL_TEST_NO_EMPIRICAL_ESTIMATE"
+  },
+  "decision_gates": {
+    "D1": "Distinct separate entity B with explicit actual refusal, not mere positive monetary transfer or self-choice.",
+    "D2": "A can unilaterally override, receives known positive material gain, and incurs no external punishment or reputational cost.",
+    "D3": "B's material welfare held fixed where feasible, while preserving/removing future decision authority differs.",
+    "D4": "Public audience, future dependence, strategic exit, informed refusal manipulated factorially; manipulation validity and participant beliefs require measurement.",
+    "D5": "Finite observational data and even perfect factorial choices do not identify a private self-image versus intrinsic autonomy reward if both act as constant latent terms.",
+    "D6": "Without empirically validated exclusion restriction, report reduced-form choice and partial identification bounds, NOT proof of endogenous other-respect.",
+    "D7": "Preserve failures and contrary original evidence; never certify broad VC or AI subjective motives from a stylized synthetic model."
+  },
+  "known_limits": [
+    "Eight selected original sources are a targeted comparison, not field saturation.",
+    "Publisher or author abstracts and accessible originals are not full reanalysis of all experimental samples.",
+    "The causal utility equation and parameters are constructed for an internal falsification illustration, not observed human or AI utilities.",
+    "Private self-image and autonomy rewards can remain experimentally indistinguishable without independently defensible interventions.",
+    "Even a detected nonzero autonomy-related term under added assumptions would not prove protection under future superintelligence power reversal or all positive exploitability levels."
+  ],
+  "independent_scientific_validation": null,
+  "original_experimental_subjects": null,
+  "measured_user_task_improvement": null
+}

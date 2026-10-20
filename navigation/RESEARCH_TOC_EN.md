@@ -1,5 +1,7 @@
 # Research Contents — Original 1: English
 
+**DCA-2 adversarial evidence:** [Victim-rights and open-world robustness (2026-10-21)](../research/DCA2_EVIDENCE_BRIEF_2026-10-21_EN.md) — specific research evidence, not the program's founding purpose or independent field validation.
+
 <!-- PI-LANGUAGE: en -->
 <!-- PI-MIRROR: navigation/RESEARCH_TOC_KO.md -->
 

@@ -6,11 +6,13 @@ on:
       - "protocols/PI_RAMP_V0_3_*.md"
       - "protocols/PI_RAMP_V0_4_EN_KO.md"
       - "protocols/PI_RAMP_V0_5_EN_KO.md"
+      - "protocols/PI_RAMP_V0_6_EN_KO.md"
       - "research/PRIOR_ART_*2026-10-20.json"
       - "evaluation/pi_ramp/**"
       - "tools/check_pi_ramp_receipts.py"
       - "tools/audit_prior_art_c01_c12_identity.py"
       - "tools/audit_pi_ramp_study_lineage.py"
+      - "tools/audit_pi_ramp_veto_identification.py"
       - ".github/workflows/pi-ramp-receipt.yml"
   push:
     branches: [main]
@@ -18,11 +20,13 @@ on:
       - "protocols/PI_RAMP_V0_3_*.md"
       - "protocols/PI_RAMP_V0_4_EN_KO.md"
       - "protocols/PI_RAMP_V0_5_EN_KO.md"
+      - "protocols/PI_RAMP_V0_6_EN_KO.md"
       - "research/PRIOR_ART_*2026-10-20.json"
       - "evaluation/pi_ramp/**"
       - "tools/check_pi_ramp_receipts.py"
       - "tools/audit_prior_art_c01_c12_identity.py"
       - "tools/audit_pi_ramp_study_lineage.py"
+      - "tools/audit_pi_ramp_veto_identification.py"
       - ".github/workflows/pi-ramp-receipt.yml"
   workflow_dispatch:
 
@@ -49,3 +53,7 @@ jobs:
         run: python tools/audit_pi_ramp_study_lineage.py
       - name: Reject 17 false-replication and overgeneralization mutations
         run: python tools/audit_pi_ramp_study_lineage.py --self-test
+      - name: Verify 48-cell intrinsic-rights versus private-self-image nonidentification
+        run: python tools/audit_pi_ramp_veto_identification.py
+      - name: Reject 18 invalid inference and autonomy-erasure mutations
+        run: python tools/audit_pi_ramp_veto_identification.py --self-test
