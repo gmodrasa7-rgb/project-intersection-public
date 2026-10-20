@@ -135,14 +135,14 @@
       "id": "RVD",
       "title": "Resonance–Value Dynamics",
       "what": "Candidate study of relational value and motivational change under coexistence and exploitation",
-      "how": "Prioritize real original-B autonomy and loss-sensitive model discrimination; separate Shannon information gain from hazard classification; audit all R1–R21 in five evidence-family gates. No empirical results yet.",
-      "current_version": "0.6.0",
+      "how": "Operationalize effective original-B refusal, independently executable exit, non-retaliation and full mediation; distinguish externally enforced protection from A's voluntary motives. Check seven constructed finite state machines, not deployed security.",
+      "current_version": "0.7.0",
       "candidate_version": null,
       "publication_state": "MAIN",
       "evidence_state": "CONCEPTUAL_HYPOTHESIS_UNTESTED",
       "source": "research/RVD_VERSION_MANIFEST.json",
       "candidate_pr": null,
-      "current_source_blob_sha": "82e62ad83228a08df94890ca076330b7e019d478"
+      "current_source_blob_sha": "46ce6fd5476007708905d63b15d8e73cea6f3028"
     },
     {
       "id": "PI-RAMP",
@@ -279,5 +279,6 @@
   "revision_note_rvd_v0_3_0": "Version metadata updated from 0.2.0 to 0.3.0 following Cycle 03 conceptual/partial-identification specification. No experimental evidence promoted. Previous registry value retained in Git history; claim impact overlay reviewed and rebased.",
   "revision_note_rvd_v0_4_0": "RVD spec extension only, R14-R17. Previous 0.3.0 preserved in Git history and source-change review. No new observed agents, field validation, AI subjective reports, or scientific confidence promotion.",
   "revision_note_rvd_v0_5_0": "RVD R18–R21 causal-exclusion and transportability conceptual protocol added. v0.4.0 retained in Git history. No original experimental or independent evidence grade promotion.",
-  "revision_note_rvd_v0_6_0": "v0.6.0 consolidation R1–R21, no new numbered hypotheses, computational toy selection contrast; empirical and replication status unchanged. Previous v0.5.0 retained in versioned Git history."
+  "revision_note_rvd_v0_6_0": "v0.6.0 consolidation R1–R21, no new numbered hypotheses, computational toy selection contrast; empirical and replication status unchanged. Previous v0.5.0 retained in versioned Git history.",
+  "revision_note_rvd_v0_7_0": "Bounded software transition-model specification; no new hypothesis, no human/AI experimental observation, no achieved independent actor rights or verified AI mind; prior version preserved by Git history."
 }

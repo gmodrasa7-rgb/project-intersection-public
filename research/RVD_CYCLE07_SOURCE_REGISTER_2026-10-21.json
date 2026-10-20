@@ -1,0 +1,67 @@
+{
+  "schema_version": "pi-rvd-cycle07-source-ledger/v0.1",
+  "as_of": "2026-10-21",
+  "version": "v0.7.0",
+  "independent_original_source_lineages": 5,
+  "scientific_prior_art_status": "ESTABLISHED_AUTHOR_CONCEPTS_APPLIED_NOT_ORIGINAL_FORMAL_SECURITY_THEORY",
+  "review_scope": "Original author/publisher/book scholarly metadata and abstracts; selected publicly accessible provenance notes. Not comprehensive full-text review.",
+  "saturation": "NOT_VERIFIED",
+  "new_empirical_rvd_human_ai_studies": 0,
+  "finite_transition_models_executed": "PENDING_WORKFLOW_CI_AT_DRAFT_TIME",
+  "normalization": "Hirschman book, runtime enforcement, safety/liveness and hyperproperties are distinct domains; none independently verifies RVD, AI mind or original-B standing.",
+  "attribution": "Human founder's voluntary coexistence/resonance and original-agent problem; AI-assisted scope-limited formal operationalization; original cited researchers own their methods.",
+  "sources": [
+    {
+      "id": "HIRSCHMAN_1970",
+      "authors": "Albert O. Hirschman",
+      "year": 1970,
+      "title": "Exit, Voice, and Loyalty: Responses to Decline in Firms, Organizations, and States",
+      "url": "https://books.google.com/books/about/Exit_Voice_and_Loyalty.html?id=vYO6sDvjvcgC",
+      "type": "ORIGINAL_BOOK",
+      "rationale": "Exit (leave relation) differs from voice (protest/change within relation).",
+      "limit": "A social science typology is not software access-control or AI rights proof."
+    },
+    {
+      "id": "SALTZER_SCHROEDER_1975",
+      "authors": "Jerome H. Saltzer; Michael D. Schroeder",
+      "year": 1975,
+      "title": "The Protection of Information in Computer Systems",
+      "url": "https://www.mit.edu/~Saltzer/publications/pubs.html",
+      "type": "ORIGINAL_SYSTEM_SECURITY_ARTICLE",
+      "rationale": "Complete mediation, separation of privilege, least authority, fail-safe defaults; reference monitor ancestry.",
+      "limit": "These are design principles, not a deployed external gate with verified independence."
+    },
+    {
+      "id": "SCHNEIDER_2000",
+      "authors": "Fred B. Schneider",
+      "year": 2000,
+      "title": "Enforceable Security Policies",
+      "url": "https://www.cs.cornell.edu/fbs/darpa99/Project.Site.html",
+      "type": "ORIGINAL_RUNTIME_ENFORCEMENT_THEORY",
+      "rationale": "Runtime execution monitoring, aborting disallowed steps; limitations of enforcement model.",
+      "limit": "A policy gate checks allowed actions, not A's endogenous desire or broad human rights."
+    },
+    {
+      "id": "ALPERN_SCHNEIDER_1985",
+      "authors": "Bowen Alpern; Fred B. Schneider",
+      "year": 1985,
+      "title": "Defining Liveness",
+      "doi": "10.1016/0020-0190(85)90056-0",
+      "url": "https://www.sciencedirect.com/science/article/pii/0020019085900560",
+      "type": "ORIGINAL_FORMAL_LIVENESS",
+      "rationale": "Safety differs from eventual progress (liveness); prevention of violation does not entail actual availability of exit.",
+      "limit": "A finite state model cannot certify unbounded fairness or infinite-time liveness."
+    },
+    {
+      "id": "CLARKSON_SCHNEIDER_2010",
+      "authors": "Michael R. Clarkson; Fred B. Schneider",
+      "year": 2010,
+      "title": "Hyperproperties",
+      "doi": "10.3233/JCS-2009-0393",
+      "url": "https://journals.sagepub.com/doi/abs/10.3233/JCS-2009-0393",
+      "type": "ORIGINAL_INFORMATION_FLOW_THEORY",
+      "rationale": "Some cross-run security properties require comparing multiple traces; motivates counterfactual refusal contrast.",
+      "limit": "The RVD refusal-pair test is a conceptual application, not their theorem or a complete noninterference proof."
+    }
+  ]
+}
