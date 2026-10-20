@@ -1,0 +1,59 @@
+{
+  "component_id": "PI-RISE-CASH-TIMING",
+  "version": "0.1.0",
+  "checked_on": "2026-10-21",
+  "parent": "PI-RISE v0.2.0 main",
+  "artifact_kind": "OPERATIONAL_DECISION_AND_FUNDER_DISCOVERY_NOT_EMPIRICAL_VALIDATION",
+  "publication_state": "VERIFY_GIT_BRANCH_OR_MAIN_AT_READ_TIME",
+  "source_role": "OFFICIAL_FUNDER_PAGE_SUMMARY_TIME_BOUNDED_NO_AUTOMATIC_REVALIDATION",
+  "claims": {
+    "grant_submission": "NOT_PROVEN",
+    "grant_award": "NOT_PROVEN",
+    "bank_receipt": "NOT_PROVEN",
+    "time_to_usable_cash": "UNKNOWN",
+    "independent_scientific_replication": "NOT_PERFORMED",
+    "adverse_synthetic_evidence": "PRESERVED_E009",
+    "source_sites_checked": "2026-10-21"
+  },
+  "official_sources": [
+    "https://bluedot.org/grants/rapid",
+    "https://www.gtr-foundation.org/gtr-ai-safety-fund",
+    "https://funds.effectivealtruism.org/funds/transformative-ai"
+  ],
+  "costs_and_data": "NO_PRIVATE_FINANCIAL_INPUT_OR_API_PAID_SERVICE",
+  "artifacts": [
+    {
+      "path": "operations/PI_RISE_CASH_TIMING_V0_1_0_EN_KO.md",
+      "git_blob_sha": "023adcf23504b605754d285dbc8783b562e7e1d0"
+    },
+    {
+      "path": "operations/PI_RISE_OPPORTUNITY_REGISTRY_V0_1_0.json",
+      "git_blob_sha": "74cc5c007eddf31d3d15a0aedc2dba8ba0fad62b"
+    },
+    {
+      "path": "funding/PI_RISE_APPLICANT_PACK_EN_KO.md",
+      "git_blob_sha": "410a2f081a41b60c06cbfdabadc90a3fca2595a9"
+    },
+    {
+      "path": "tools/pi_rise_opportunity_audit.py",
+      "git_blob_sha": "bad807f71163bcdeb21d2866b8fc7a86aff2cca8"
+    },
+    {
+      "path": "tests/test_pi_rise_opportunity_audit.py",
+      "git_blob_sha": "a7652624cb826d6cfd45bc395694141db10d7743"
+    },
+    {
+      "path": "funding/README.md",
+      "git_blob_sha": "c6fbfddcd9918e7bee7bae3b0220b6133e947d42"
+    },
+    {
+      "path": "knowledge/language-edition-register.json",
+      "git_blob_sha": "5ce5018162b863a221af3abbdeaeca582062df70"
+    },
+    {
+      "path": ".github/workflows/pi-rise-integrity.yml",
+      "git_blob_sha": "ffc47c4237064be93057ef00ff1af11352bdfad7"
+    }
+  ],
+  "revision_gate": "Status or rules must be reverified against exact official page and relevant applicant evidence, no synthetic-to-bank certification."
+}

@@ -1,0 +1,109 @@
+{
+  "schema": "0.1.0",
+  "as_of": "2026-10-21",
+  "kind": "DISCOVERY_NOT_APPLICATION_OR_REVENUE",
+  "financial_accounting_effect": "NONE",
+  "researcher_private_details": "NOT_INCLUDED",
+  "records": [
+    {
+      "id": "BLUEDOT_RAPID_2026",
+      "name": "BlueDot Impact Rapid Grants",
+      "official_url": "https://bluedot.org/grants/rapid",
+      "source_checked_on": "2026-10-21",
+      "source_class": "FUNDER_PRIMARY_PAGE",
+      "applicability": {
+        "geography": "SOUTH_KOREA_NOT_IN_LISTED_RESTRICTIONS",
+        "experience": "NO_FORMAL_RESTRICTION_VERIFIED",
+        "researcher_time": "EXPLICIT_LIVING_COSTS",
+        "scope": "AI_SAFETY_RESEARCH"
+      },
+      "availability": "APPLICATION_DESCRIBED",
+      "deadline_state": "NOT_LISTED",
+      "decision": {
+        "type": "UNKNOWN",
+        "days": null
+      },
+      "payout": {
+        "type": "AFTER_CLAIM_AND_REQUIRED_CHECKS",
+        "days": null
+      },
+      "published_ceiling": {
+        "currency": "USD",
+        "amount": "20000"
+      },
+      "application_proof": "UNKNOWN_NOT_EVIDENCED_IN_REPOSITORY",
+      "award_proof": "UNKNOWN_NOT_EVIDENCED_IN_REPOSITORY",
+      "cash_proof": "NONE_RECONCILED_IN_THIS_REGISTRY",
+      "time_to_usable_cash": "UNKNOWN",
+      "action": "Prepare plan and budget; check terms before submission; do not infer urgency from the Rapid name."
+    },
+    {
+      "id": "GTR_AI_SAFETY_2026",
+      "name": "GTR AI Safety Fund",
+      "official_url": "https://www.gtr-foundation.org/gtr-ai-safety-fund",
+      "source_checked_on": "2026-10-21",
+      "source_class": "FUNDER_PRIMARY_PAGE",
+      "applicability": {
+        "geography": "NO_GEOGRAPHIC_FOCUS",
+        "experience": "CREDENTIALS_NOT_DECISIVE",
+        "researcher_time": "FLEXIBLE_INDIVIDUAL_SUPPORT",
+        "scope": "ADVANCED_AI_CATASTROPHIC_RISK"
+      },
+      "availability": "ROLLING_EXPLICIT",
+      "deadline_state": "ROLLING",
+      "decision": {
+        "type": "INITIAL_FEEDBACK_TARGET_NOT_FINAL_AWARD",
+        "days": 21
+      },
+      "payout": {
+        "type": "UNKNOWN",
+        "days": null
+      },
+      "published_ceiling": {
+        "currency": null,
+        "amount": null
+      },
+      "application_proof": "UNKNOWN_NOT_EVIDENCED_IN_REPOSITORY",
+      "award_proof": "UNKNOWN_NOT_EVIDENCED_IN_REPOSITORY",
+      "cash_proof": "NONE_RECONCILED_IN_THIS_REGISTRY",
+      "time_to_usable_cash": "UNKNOWN",
+      "action": "Produce 1–3 page proposal and CV; address other funding sources without inventing submissions."
+    },
+    {
+      "id": "EA_TRANSFORMATIVE_AI_2026",
+      "name": "EA Funds Transformative AI Fund",
+      "official_url": "https://funds.effectivealtruism.org/funds/transformative-ai",
+      "source_checked_on": "2026-10-21",
+      "source_class": "FUNDER_PRIMARY_PAGE",
+      "applicability": {
+        "geography": "NOT_VERIFIED",
+        "experience": "INDIVIDUALS_EXPLICIT",
+        "researcher_time": "EARLY_STAGE_SUPPORT_POSSIBLE_NOT_EARMARKED",
+        "scope": "TRANSFORMATIVE_AI_SAFETY_AND_OTHER_IMPLICATIONS"
+      },
+      "availability": "ROLLING_EXPLICIT",
+      "deadline_state": "ROLLING",
+      "decision": {
+        "type": "UNKNOWN",
+        "days": null
+      },
+      "payout": {
+        "type": "UNKNOWN",
+        "days": null
+      },
+      "published_ceiling": {
+        "currency": null,
+        "amount": null
+      },
+      "application_proof": "UNKNOWN_NOT_EVIDENCED_IN_REPOSITORY",
+      "award_proof": "UNKNOWN_NOT_EVIDENCED_IN_REPOSITORY",
+      "cash_proof": "NONE_RECONCILED_IN_THIS_REGISTRY",
+      "time_to_usable_cash": "UNKNOWN",
+      "action": "Use a narrow falsifiable 30/90-day project application; confirm restrictions and decision timeline."
+    }
+  ],
+  "nonnumeric_notes": {
+    "manifund": "Official site retrieval timed out in this review; historical draft remains in existing research funding docs, not treated as verified currently accepting applications.",
+    "all": "A source page is not a grant application receipt, bank statement, legal eligibility opinion or disbursement guarantee."
+  }
+}

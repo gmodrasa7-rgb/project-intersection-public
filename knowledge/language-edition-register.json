@@ -498,14 +498,14 @@
     }
   ],
   "metrics": {
-    "markdown_total": 201,
+    "markdown_total": 203,
     "filename_classes": {
       "UNMARKED_LANGUAGE_UNVERIFIED": 42,
       "LEGACY_MIXED_READER_ENTRY": 2,
       "KO_SUFFIX_UNVERIFIED": 91,
       "ORDERED_BILINGUAL_FOUNDER_OR_GOVERNANCE": 2,
       "EN_SUFFIX_UNVERIFIED": 31,
-      "COMBINED_NAMING_UNVERIFIED": 33
+      "COMBINED_NAMING_UNVERIFIED": 35
     },
     "meaning_verified_pairs": 0,
     "meaning_verified_pairs_is_a_status_count_not_a_claim_that_no_reviews_ever_occurred": true
@@ -1112,6 +1112,12 @@
       "content_equivalence": "NOT_REVIEWED"
     },
     {
+      "path": "funding/PI_RISE_APPLICANT_PACK_EN_KO.md",
+      "filename_class": "COMBINED_NAMING_UNVERIFIED",
+      "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
       "path": "funding/README.md",
       "filename_class": "UNMARKED_LANGUAGE_UNVERIFIED",
       "counterpart_path": null,
@@ -1209,6 +1215,12 @@
     },
     {
       "path": "operations/PI_RISE_BUDGET_V0_1_0_EN_KO.md",
+      "filename_class": "COMBINED_NAMING_UNVERIFIED",
+      "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "operations/PI_RISE_CASH_TIMING_V0_1_0_EN_KO.md",
       "filename_class": "COMBINED_NAMING_UNVERIFIED",
       "counterpart_path": null,
       "content_equivalence": "NOT_REVIEWED"
@@ -2122,6 +2134,17 @@
       "new_edition_pairs": 0,
       "editorial_notes": "Main received unrelated fundraising and operational records after this branch started. Registered filenames only without editing their scientific, fiscal, or original content.",
       "reviewer_actions": "Independent finance and language parity review remains with PI-RISE."
+    },
+    {
+      "as_of": "2026-10-21",
+      "status": "PI_RISE_CASH_TIMING_DISCOVERY_NOT_GRANT_APPLICATION",
+      "new_documents": [
+        "operations/PI_RISE_CASH_TIMING_V0_1_0_EN_KO.md",
+        "funding/PI_RISE_APPLICANT_PACK_EN_KO.md"
+      ],
+      "new_edition_pairs": 0,
+      "editorial_notes": "Time-to-usable-cash condition and funder-ready evidence packet, both bilingual-named, semantically unverified. No submissions or bank statements.",
+      "reviewer_actions": "Check original sources, consent, fiscal conditions and bilingual meaning before release promotion."
     }
   ],
   "path_layout_policy": "Keep the project root entry-only; bilingual full research editions live in existing research/ and their original historical combined documents retain stable root URLs."
