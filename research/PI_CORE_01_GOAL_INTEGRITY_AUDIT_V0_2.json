@@ -119,5 +119,63 @@
   "external_validation": "NONE",
   "saturation": "NOT_VERIFIED",
   "experimental_status": "NOT_RUN",
-  "DOI_global_dedup": "INCOMPLETE"
+  "DOI_global_dedup": "INCOMPLETE",
+  "v0_3_extension": {
+    "date": "2026-10-20",
+    "status": "ORIGINAL_SOURCE_CHECKED__PROPOSED_FORMAL_DIAGNOSTICS__NO_PI_EXPERIMENT",
+    "ko": "research/PI_CORE_01_CORRIGIBILITY_COMPATIBILITY_V0_3_KO.md",
+    "en": "research/PI_CORE_01_CORRIGIBILITY_COMPATIBILITY_V0_3_EN.md",
+    "existing_sources_preserved": true,
+    "update": "Self-modification preservation, designed corrigibility, and voluntarily protecting an independent B are three different estimands. Everitt Thm16 is on-policy, with modification-independent rho/u and optimal realistic policy, and excludes guarantees against utility-input/percept tampering.",
+    "minimal_formal_boundary": "If E_U0[trajectory after correction]<E_U0[status quo] and the latter is feasible, strict U0-maximizing A cannot voluntarily accept correction absent additional U0-valued information/meta-goal or outside force.",
+    "original_source_evidence": [
+      {
+        "authors": "Everitt et al.",
+        "year": 2016,
+        "doi": "10.1007/978-3-319-41649-6_1",
+        "already": "PI-C05-14",
+        "claim": "Theorems 14–16; goal integrity and corrigibility/value learning tensions"
+      },
+      {
+        "authors": "Soares et al.",
+        "year": 2015,
+        "stable": "AAAI 2015 Workshop Corrigibility",
+        "status": "original slides and original publication mirror"
+      },
+      {
+        "authors": "Hadfield-Menell et al.",
+        "year": 2017,
+        "doi": "10.24963/ijcai.2017/32",
+        "already": "C04 linked",
+        "claim": "off-switch uncertainty under shared-human-utility premise"
+      },
+      {
+        "authors": "Carey and Everitt",
+        "year": 2023,
+        "stable": "PMLR:v216/carey23a",
+        "claim": "shutdown instructability plus overseer autonomy/harm"
+      },
+      {
+        "authors": "Garber et al.",
+        "year": 2025,
+        "doi": "10.1609/aaai.v39i26.34940",
+        "claim": "partial observability counterexample to automatic deference"
+      },
+      {
+        "authors": "Hudson",
+        "year": 2026,
+        "stable": "PMLR:v306/hudson26a",
+        "claim": "constructive goal transformation, conditions, bounded gridworld and prompt-level LM; not spontaneously adopted by original A"
+      },
+      {
+        "authors": "Hadfield-Menell et al.",
+        "year": 2017,
+        "stable": "NeurIPS:Inverse Reward Design",
+        "claim": "reward as context-dependent evidence rather than intrinsic true objective"
+      }
+    ],
+    "no_increment_to_corpus": true,
+    "no_independent_replication": true,
+    "literature_saturation": "NOT_VERIFIED"
+  }
 }
