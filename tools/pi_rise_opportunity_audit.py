@@ -94,7 +94,7 @@ def audit(data):
             require(upper["currency"] is None, n+"_unbounded_ceiling")
         else:
             require(upper["currency"] == "USD" and type(upper["amount"]) is str
-                    and re.fullmatch(r"[1-9][0-9]{0,9}(?:\\.[0-9]{1,2})?", upper["amount"]),
+                    and re.fullmatch(r"[1-9][0-9]{0,9}(?:\.[0-9]{1,2})?", upper["amount"]),
                     n+"_invalid_ceiling")
             try:
                 require(Decimal(upper["amount"]) > 0, n+"_nonpositive_ceiling")
