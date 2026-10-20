@@ -4,6 +4,10 @@
 
 ## Primary research logic — route before artifacts
 
+- Canonical evidence-first research program (English): https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/navigation/RESEARCH_PROGRAM_EN.md
+- Canonical evidence-first research program (Korean): https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/navigation/RESEARCH_PROGRAM_KO.md
+- Research work priority #1 (original literature collection, critical deduplication and persistence): https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/PRIOR_ART_FIRST_RESEARCH_POLICY_EN_KO.md
+
 - Core unresolved question: Can humans, current AI systems and future agents maintain voluntary long-run coexistence in each actor's self-interest when power reverses, refusal is feasible, and third-party effects and endogenously costly enforcement are counted? Conditions of failure are part of the object; this is not a proved universal theorem.
 - Read the English argument: https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/navigation/START_HERE_EN.md
 - Read the Korean argument: https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/navigation/START_HERE_KO.md

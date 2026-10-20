@@ -3,7 +3,7 @@
 <!-- PI-LANGUAGE: en -->
 <!-- PI-MIRROR: navigation/RESEARCH_TOC_KO.md -->
 
-**Reading route:** [English start](START_HERE_EN.md) · [Original 2: Korean contents](RESEARCH_TOC_KO.md) · [Independent English review](AI_REVIEW_EN.md) · [Founding purpose](../README.md).
+**Reading route:** [Canonical research program and source fronts](RESEARCH_PROGRAM_EN.md) · [English start](START_HERE_EN.md) · [Original 2: Korean contents](RESEARCH_TOC_KO.md) · [Independent English review](AI_REVIEW_EN.md) · [Founding purpose](../README.md).
 
 This is a **language-consistent navigation index**. Original 1 denotes release order, **not** the research originator's working language or a grant of authorship. It is not an independent scientific assessment, a newly verified translation of legacy material, or a claim that all links lead to English content.
 

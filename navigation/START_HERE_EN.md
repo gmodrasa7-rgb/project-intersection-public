@@ -5,6 +5,8 @@
 
 **For first-time readers:** This is the English reading route. [Original 2 — Korean](START_HERE_KO.md) follows the same research argument. “Original 1” is publication order, not the originator's initial language. This page is a navigation and research-logic map, not independently validated science.
 
+**Current research system:** [Read the canonical five-axis research program, 2026-10-20 source-linked original-literature fronts, adverse results, and archive map](RESEARCH_PROGRAM_EN.md). It is a structured guide, **not** independent scientific validation.
+
 <!-- PI-SECTION: purpose -->
 ## 1. Purpose
 

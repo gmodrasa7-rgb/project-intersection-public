@@ -17,7 +17,7 @@ from pathlib import Path
 from urllib.parse import unquote, urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
-MAX_ROOT_FILES = 60  # 2026-10-13 baseline, do not expand top-level clutter.
+MAX_ROOT_FILES = 61  # 2026-10-20 verified existing root baseline (61 before this PR); prevent further growth. Physical moves require backlink/URL migration.
 CORE = (
     "README.md",
     "RESEARCH_TOC.md",

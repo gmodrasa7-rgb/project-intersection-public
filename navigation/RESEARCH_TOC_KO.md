@@ -1,11 +1,11 @@
 # 연구 전체 목차 — 원본2: 한국어
 
+**최근 문헌감사·측정 설계(역사적 C01–C09):** [24시간 고가치 연구 추출: 191개 원장 기록·상충 근거·후견주의와 실질 자율성 구분·내재 동기 미식별](../research/RESEARCH_VALUE_EXTRACTION_24H_2026-10-20_KO.md). [이후 제10회](../research/PRIOR_ART_INFORMED_VETO_POWER_CYCLE10_2026-10-20_KO.md)는 스냅샷에 포함되지 않음. 신실험 결과 아님.
+
 <!-- PI-LANGUAGE: ko -->
 <!-- PI-MIRROR: navigation/RESEARCH_TOC_EN.md -->
 
-**독서 경로:** [한국어 시작](START_HERE_KO.md) · [영어 원본1 목차](RESEARCH_TOC_EN.md) · [한국어 외부 검토 안내](AI_REVIEW_KO.md) · [창시 목적](../README.md).
-
-**최근 문헌감사·측정 설계(역사적 C01–C09):** [24시간 고가치 연구 추출: 191개 원장 기록·상충 근거·후견주의와 실질 자율성 구분·내재 동기 미식별](../research/RESEARCH_VALUE_EXTRACTION_24H_2026-10-20_KO.md). [이후 제10회](../research/PRIOR_ART_INFORMED_VETO_POWER_CYCLE10_2026-10-20_KO.md)는 스냅샷에 포함되지 않음. 신실험 결과 아님.
+**독서 경로:** [정본 연구체계·원저자 선행연구 지도](RESEARCH_PROGRAM_KO.md) · [한국어 시작](START_HERE_KO.md) · [영어 원본1 목차](RESEARCH_TOC_EN.md) · [한국어 외부 검토 안내](AI_REVIEW_KO.md) · [창시 목적](../README.md).
 
 이 문서는 **한국어로 일관된 탐색 목차**다. 원본1은 게시 순서이지 연구 창시자가 어떤 언어로 먼저 발안했는지 또는 저작권이 누구에게 귀속되는지를 뜻하지 않는다. 과거 문서 전체를 번역했다거나 독립 검증했다는 의미도 아니다.
 

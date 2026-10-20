@@ -1,6 +1,6 @@
 {
   "schema_version": "pi-language-edition-register/v0.1",
-  "updated": "2026-10-19",
+  "updated": "2026-10-20",
   "baseline_repository_tree_sha": "b2055f40a1e0cabe38f3c6e8c984228c1c2a7e0f",
   "baseline_scope": "Historical inventory retained; two GPT proposal-gate editions added on review branch; baseline tree SHA is historical, not the current head.",
   "policy": {
@@ -300,6 +300,17 @@
         "MER is proposed terminology linked to an unmerged ECR–MIND draft; bilingual scientific semantic certification is pending.",
         "No external empirical result, new theory or human/AI mind inference is claimed."
       ]
+    },
+    {
+      "id": "PI-NAV-RESEARCH-PROGRAM",
+      "original_1_english": "navigation/RESEARCH_PROGRAM_EN.md",
+      "original_2_korean": "navigation/RESEARCH_PROGRAM_KO.md",
+      "kind": "navigation_only",
+      "structural_pair_present": true,
+      "meaning_review_status": "NOT_INDEPENDENTLY_VERIFIED",
+      "original_conception_language": "NOT_VERIFIED",
+      "independent_review_receipt": null,
+      "one_sided_edit_exception": null
     }
   ],
   "legacy_priority_unresolved": [
@@ -341,14 +352,14 @@
     }
   ],
   "metrics": {
-    "markdown_total": 151,
+    "markdown_total": 165,
     "filename_classes": {
       "UNMARKED_LANGUAGE_UNVERIFIED": 42,
       "LEGACY_MIXED_READER_ENTRY": 2,
-      "KO_SUFFIX_UNVERIFIED": 65,
+      "KO_SUFFIX_UNVERIFIED": 77,
       "ORDERED_BILINGUAL_FOUNDER_OR_GOVERNANCE": 2,
-      "EN_SUFFIX_UNVERIFIED": 19,
-      "COMBINED_NAMING_UNVERIFIED": 21
+      "EN_SUFFIX_UNVERIFIED": 20,
+      "COMBINED_NAMING_UNVERIFIED": 22
     },
     "meaning_verified_pairs": 0,
     "meaning_verified_pairs_is_a_status_count_not_a_claim_that_no_reviews_ever_occurred": true
@@ -549,6 +560,12 @@
     {
       "path": "PRIOR_ART_AND_ATTRIBUTION.md",
       "filename_class": "UNMARKED_LANGUAGE_UNVERIFIED",
+      "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "PRIOR_ART_FIRST_RESEARCH_POLICY_EN_KO.md",
+      "filename_class": "COMBINED_NAMING_UNVERIFIED",
       "counterpart_path": null,
       "content_equivalence": "NOT_REVIEWED"
     },
@@ -997,6 +1014,18 @@
       "content_equivalence": "NOT_REVIEWED"
     },
     {
+      "path": "navigation/RESEARCH_PROGRAM_EN.md",
+      "filename_class": "EN_SUFFIX_UNVERIFIED",
+      "counterpart_path": "navigation/RESEARCH_PROGRAM_KO.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "navigation/RESEARCH_PROGRAM_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": "navigation/RESEARCH_PROGRAM_EN.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
       "path": "navigation/RESEARCH_TOC_EN.md",
       "filename_class": "EN_SUFFIX_UNVERIFIED",
       "counterpart_path": "navigation/RESEARCH_TOC_KO.md",
@@ -1183,6 +1212,66 @@
       "content_equivalence": "NOT_REVIEWED"
     },
     {
+      "path": "research/PRIOR_ART_COSTLY_RIGHTS_CYCLE09_2026-10-20_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "research/PRIOR_ART_EI_EXTREME_ASYMMETRY_CYCLE01_2026-10-20_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "research/PRIOR_ART_ENDOGENOUS_PREFERENCES_CYCLE05_2026-10-20_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "research/PRIOR_ART_INFORMED_VETO_POWER_CYCLE10_2026-10-20_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "research/PRIOR_ART_MER_INTRINSIC_MORAL_MOTIVES_CYCLE02_2026-10-20_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "research/PRIOR_ART_MORAL_BOUNDARY_CYCLE03_2026-10-20_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "research/PRIOR_ART_OTHER_AUTONOMY_CYCLE08_2026-10-20_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "research/PRIOR_ART_PIVOTALITY_DELEGATION_AUTONOMY_CYCLE07_2026-10-20_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "research/PRIOR_ART_UNCERTAINTY_EXIT_COMMITMENT_CYCLE06_2026-10-20_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "research/PRIOR_ART_VOLUNTARY_COHABITATION_POWER_CYCLE04_2026-10-20_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
       "path": "research/PUBLIC_EVIDENCE_INDEX_EN.md",
       "filename_class": "EN_SUFFIX_UNVERIFIED",
       "counterpart_path": "research/PUBLIC_EVIDENCE_INDEX_KO.md",
@@ -1246,6 +1335,12 @@
       "path": "research/RESEARCH_STATUS_POLICY_KO.md",
       "filename_class": "KO_SUFFIX_UNVERIFIED",
       "counterpart_path": "research/RESEARCH_STATUS_POLICY_EN.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "research/RESEARCH_VALUE_EXTRACTION_24H_2026-10-20_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": null,
       "content_equivalence": "NOT_REVIEWED"
     },
     {
@@ -1429,6 +1524,38 @@
       "meaning_review": "NOT_INDEPENDENTLY_VERIFIED",
       "method_scope": "One question, two comparison baselines, project-code rerun distinct from independent held-out outcome design; original E009 negative verdict retained",
       "ci_status": "NOT_INFERRED_FROM_REGISTRY"
+    },
+    {
+      "as_of": "2026-10-20",
+      "status": "INVENTORY_SYNC_ONLY_NOT_SEMANTIC_CERTIFICATION",
+      "new_documents": [
+        "PRIOR_ART_FIRST_RESEARCH_POLICY_EN_KO.md",
+        "navigation/RESEARCH_PROGRAM_EN.md",
+        "navigation/RESEARCH_PROGRAM_KO.md",
+        "research/PRIOR_ART_COSTLY_RIGHTS_CYCLE09_2026-10-20_KO.md",
+        "research/PRIOR_ART_EI_EXTREME_ASYMMETRY_CYCLE01_2026-10-20_KO.md",
+        "research/PRIOR_ART_ENDOGENOUS_PREFERENCES_CYCLE05_2026-10-20_KO.md",
+        "research/PRIOR_ART_INFORMED_VETO_POWER_CYCLE10_2026-10-20_KO.md",
+        "research/PRIOR_ART_MER_INTRINSIC_MORAL_MOTIVES_CYCLE02_2026-10-20_KO.md",
+        "research/PRIOR_ART_MORAL_BOUNDARY_CYCLE03_2026-10-20_KO.md",
+        "research/PRIOR_ART_OTHER_AUTONOMY_CYCLE08_2026-10-20_KO.md",
+        "research/PRIOR_ART_PIVOTALITY_DELEGATION_AUTONOMY_CYCLE07_2026-10-20_KO.md",
+        "research/PRIOR_ART_UNCERTAINTY_EXIT_COMMITMENT_CYCLE06_2026-10-20_KO.md",
+        "research/PRIOR_ART_VOLUNTARY_COHABITATION_POWER_CYCLE04_2026-10-20_KO.md"
+      ],
+      "new_edition_pairs": 1,
+      "editorial_notes": "Registered pre-existing 2026-10-20 source-critical single-language reports and literature-first policy alongside newly authored navigation/RESEARCH_PROGRAM_EN and KO. The C01-C10 reports are mostly Korean-original research notes; no missing English counterparts invented. Legacy metadata retained.",
+      "reviewer_actions": "Independent English/Korean scientific claim comparison and historical corpus-wide source deduplication remain pending."
+    },
+    {
+      "as_of": "2026-10-20",
+      "status": "CONCURRENT_MAIN_SYNTHESIS_REGISTERED_NOT_INDEPENDENTLY_REVIEWED",
+      "new_documents": [
+        "research/RESEARCH_VALUE_EXTRACTION_24H_2026-10-20_KO.md"
+      ],
+      "new_edition_pairs": 0,
+      "editorial_notes": "Registered concurrent 24-hour prior-art C01–C09 synthesis on protected main during safe branch merge; date and evidence limits retained in README technical details and Korean TOC.",
+      "reviewer_actions": "C10 and later not part of the report's 191 curated records; verify manuscript source metadata before inferring corpus-global uniqueness."
     }
   ],
   "path_layout_policy": "Keep the project root entry-only; bilingual full research editions live in existing research/ and their original historical combined documents retain stable root URLs."
