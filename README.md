@@ -2,7 +2,6 @@
 <!-- L0_FOREWORD_FIRST: Original 1 English then Original 2 Korean, full matched text. Never promote a case study above this top-level purpose. -->
 
 ## Original 1 — English | Founding Purpose
-
 **Reading language:** English · [Read in Korean](navigation/START_HERE_KO.md).
 
 **The problem:** Powerful humans, deployed AI and future agents may gain by exploiting or removing weaker agents. Preserving independence also costs resources.
@@ -57,13 +56,10 @@
 **Citation and reuse:** [Citation](CITATION.cff) · [Attribution and source rights](ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md) · [Earlier authorship and derivation](PRIOR_ART_RIGHTS_AND_DERIVATION_EN_KO.md). The longer historical founding statement remains recoverable in [the preceding Git revision](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/3fefa0c121341a0569e026f34a9e87479afa52a4/README.md).
 
 </details>
-
 ### Ten core concepts
-
 [All ten concepts, precise definitions and limitations](research/RESEARCH_OVERVIEW_EN.md#ten-core-concepts) are preserved for technical reading. CCPH is a historical/current/future **contribution and impact provenance database**. The **Continuance–Contribution Pathways Hypothesis** is one hypothesis within it, not its definition or a proven social outcome.
 
 ## 원본2 — 한국어 | 창시 목적 전문 대응본
-
 **독서 언어:** 한국어 · [영어 원본1 읽기](navigation/START_HERE_EN.md).
 
 **문제:** 인간·현재 배포된 AI·미래 지능체 사이에 압도적인 권력 격차가 생기면 강자가 타 개체의 통제·착취·제거로 이득을 얻을 수 있다. 반면 독립성 보존에도 비용 발생.
@@ -118,7 +114,5 @@
 **출처 표시 및 재사용:** [인용 정보](CITATION.cff) · [기여·출처·권리](ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md) · [선행 원저작과 응용](PRIOR_ART_RIGHTS_AND_DERIVATION_EN_KO.md). 축약하기 전 창시 목적 전문도 [이전 Git 판본](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/3fefa0c121341a0569e026f34a9e87479afa52a4/README.md)에 보존돼 있다.
 
 </details>
-
 ### 핵심용어 10개
-
 [핵심개념 10개 전체 정의와 한계](research/RESEARCH_OVERVIEW_KO.md#핵심용어-10개)는 전문 검토 자료에 보존한다. CCPH는 과거·현재와 미래 관측 사건의 **기여·영향 계보 데이터베이스**다. **존속–기여 경로 가설**은 그 **내부의 가설 연구축**이지 전체 정의나 현실 효과의 입증이 아니다.
