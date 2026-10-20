@@ -423,13 +423,13 @@
     }
   ],
   "metrics": {
-    "markdown_total": 183,
+    "markdown_total": 185,
     "filename_classes": {
       "UNMARKED_LANGUAGE_UNVERIFIED": 42,
       "LEGACY_MIXED_READER_ENTRY": 2,
-      "KO_SUFFIX_UNVERIFIED": 85,
+      "KO_SUFFIX_UNVERIFIED": 86,
       "ORDERED_BILINGUAL_FOUNDER_OR_GOVERNANCE": 2,
-      "EN_SUFFIX_UNVERIFIED": 25,
+      "EN_SUFFIX_UNVERIFIED": 26,
       "COMBINED_NAMING_UNVERIFIED": 27
     },
     "meaning_verified_pairs": 0,
@@ -1283,6 +1283,18 @@
       "content_equivalence": "NOT_REVIEWED"
     },
     {
+      "path": "research/DCA2_EVIDENCE_BRIEF_2026-10-21_EN.md",
+      "filename_class": "EN_SUFFIX_UNVERIFIED",
+      "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "research/DCA2_SACRIFICIAL_DECOY_OPEN_SET_2026-10-21_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
       "path": "research/E009_INDEPENDENT_DECISION_GATE_EN.md",
       "filename_class": "EN_SUFFIX_UNVERIFIED",
       "counterpart_path": "research/E009_INDEPENDENT_DECISION_GATE_KO.md",
@@ -1851,6 +1863,17 @@
       "new_edition_pairs": 0,
       "editorial_notes": "Source-linked 8-work comparison and 48-cell exact arithmetic witness: right-respect versus private self-image latent utility terms remain observationally equivalent under modeled conditions. Zero real participants, no reader-effect results or independent replication.",
       "reviewer_actions": "Reassess original sources' design/coverage, validate actual B-refusal measurement and any exclusion restrictions; preserve rival explanations."
+    },
+    {
+      "as_of": "2026-10-21",
+      "status": "CONCURRENT_DCA2_FILES_REGISTERED_WITHOUT_FALSE_SEMANTIC_PAIRING",
+      "new_documents": [
+        "research/DCA2_EVIDENCE_BRIEF_2026-10-21_EN.md",
+        "research/DCA2_SACRIFICIAL_DECOY_OPEN_SET_2026-10-21_KO.md"
+      ],
+      "new_edition_pairs": 0,
+      "editorial_notes": "DCA2 English evidence brief and Korean sacrificial-decoy report had different titles and claim scopes; both are tracked as existing independent editions, not declared semantically matched translation pair. No DCA2 research claims modified.",
+      "reviewer_actions": "Review DCA2 own scientific and language equivalence status independently; no effect or translation parity certified."
     }
   ],
   "path_layout_policy": "Keep the project root entry-only; bilingual full research editions live in existing research/ and their original historical combined documents retain stable root URLs."
