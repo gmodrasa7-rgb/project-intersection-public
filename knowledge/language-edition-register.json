@@ -498,14 +498,14 @@
     }
   ],
   "metrics": {
-    "markdown_total": 204,
+    "markdown_total": 206,
     "filename_classes": {
       "UNMARKED_LANGUAGE_UNVERIFIED": 42,
       "LEGACY_MIXED_READER_ENTRY": 2,
-      "KO_SUFFIX_UNVERIFIED": 91,
+      "KO_SUFFIX_UNVERIFIED": 92,
       "ORDERED_BILINGUAL_FOUNDER_OR_GOVERNANCE": 2,
       "EN_SUFFIX_UNVERIFIED": 31,
-      "COMBINED_NAMING_UNVERIFIED": 36
+      "COMBINED_NAMING_UNVERIFIED": 37
     },
     "meaning_verified_pairs": 0,
     "meaning_verified_pairs_is_a_status_count_not_a_claim_that_no_reviews_ever_occurred": true
@@ -1490,6 +1490,12 @@
       "content_equivalence": "NOT_REVIEWED"
     },
     {
+      "path": "research/PI_20H_SYNTHESIS_2026-10-21_EN_KO.md",
+      "filename_class": "COMBINED_NAMING_UNVERIFIED",
+      "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
       "path": "research/PI_ROADMAP_CHANGE_TRAP_V0_2_1_EN_KO.md",
       "filename_class": "COMBINED_NAMING_UNVERIFIED",
       "counterpart_path": null,
@@ -1504,6 +1510,12 @@
     {
       "path": "research/PI_ROADMAP_OPERATIONAL_GATES_V0_2_3_EN_KO.md",
       "filename_class": "COMBINED_NAMING_UNVERIFIED",
+      "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "research/PRIOR_ART_C14_MOTIVES_VETO_REPLICATION_2026-10-21_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
       "counterpart_path": null,
       "content_equivalence": "NOT_REVIEWED"
     },
