@@ -38,6 +38,10 @@ jobs:
         run: |
           python3 tools/pi_rise_opportunity_audit.py operations/PI_RISE_OPPORTUNITY_REGISTRY_V0_1_0.json > /tmp/pi_rise_opportunities.json
           python3 -c 'import json; x=json.load(open("/tmp/pi_rise_opportunities.json")); assert x["status"] == "OFFLINE_METADATA_INVARIANTS_ONLY"; assert x["funder_pages_recorded"] == 3; assert x["submission_verified"] is False and x["award_verified"] is False and x["bank_receipt_verified"] is False and x["arrival_time_inferred"] is False'
+      - name: Verify liquidity prefix and review-hour synthetic counterexamples
+        run: |
+          python3 tools/pi_rise_dual_clock.py > /tmp/pi_rise_dc.json
+          python3 -c 'import json; x=json.load(open("/tmp/pi_rise_dc.json")); assert x["empirical_status"]=="TOY_SCENARIOS_ONLY"; assert x["delayed_payment"]["minimum_initial_cash_by_pool_usd"]["unrestricted"]=="3950.00"; assert x["delayed_payment"]["minimum_initial_cash_by_pool_usd"]["restricted_project"]=="900.00"; assert x["one_hard_claim"]["history"][0]["unreviewed_hours"]=="12.00"; assert x["five_easy_claims"]["history"][0]["completed_claims"]==5'
       - name: Verify synthetic example expected status
         run: |
           python3 tools/pi_rise_check.py operations/PI_RISE_SYNTHETIC_EXAMPLE_V0_1_0.json > /tmp/pi_rise_synthetic_result.json
