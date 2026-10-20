@@ -23,7 +23,7 @@ For a bounded **hypothetical** choice, A can obtain known additional gain g ≥ 
 
 **rB ≥ max(0, g − U − T).**
 
-This follows by rearrangement, **not by a real experiment**. If U or T is unknown or unbounded, return **UNIDENTIFIED**, never zero and never a positive bound. Even setting the observable sanction channel to zero is insufficient when self-image remains unrestricted. Synthetic examples (same modeled observed protection): (g,U,T) = (2,0.4,0.2) implies conditional minimum 1.4; (2,1,1.5) implies 0; (2,0,UNKNOWN) is UNIDENTIFIED. The numerical coefficients are fabricated pedagogical inputs; they are not estimated for any human or AI.
+This follows by rearrangement, **not by a real experiment**. [Fail-closed Python witness](../tools/pi_motive_lower_bound.py) · [automated regression contract](../.github/workflows/pi-motive-bound.yml) (14 synthetic tests; not an empirical certification). If U or T is unknown or unbounded, return **UNIDENTIFIED**, never zero and never a positive bound. Even setting the observable sanction channel to zero is insufficient when self-image remains unrestricted. Synthetic examples (same modeled observed protection): (g,U,T) = (2,0.4,0.2) implies conditional minimum 1.4; (2,1,1.5) implies 0; (2,0,UNKNOWN) is UNIDENTIFIED. The numerical coefficients are fabricated pedagogical inputs; they are not estimated for any human or AI.
 
 **Crucial falsifiers:** A lacks actual exploitation authority (the observed protection is externally enforced); B's effective veto/exit is absent; t hides other motives; g excludes future incentives; bounds are asserted without independent evidence; original B is silently substituted by another beneficiary; the model omits a strategically relevant observer. In any such case the purported B-specific bound must be **HOLD/INVALID**, even when the chosen action appears generous. Conversely, latent-motive nonidentification alone cannot prove that lasting voluntary coexistence is impossible. This combines, but does not supersede, [PI-RAMP 0.6](../protocols/PI_RAMP_V0_6_EN_KO.md) and [RVD 0.7](RVD_CYCLE07_EFFECTIVE_REFUSAL_EXIT_2026-10-21_EN.md).
 
@@ -73,7 +73,7 @@ Current main includes C14; [C13 proposed branch PR #248](https://github.com/gmod
 
 **rB ≥ max(0, g − U − T).**
 
-이는 C14의 제재 설명과 PI-RAMP v0.6의 자기이미지 반례를 결합한 **조건부 부등식 유도**. 사람·AI의 실제 마음을 측정한 결과 아님.
+이는 C14의 제재 설명과 PI-RAMP v0.6의 자기이미지 반례를 결합한 **조건부 부등식 유도**. [미식별·허위 양성 방어용 검산기](../tools/pi_motive_lower_bound.py) · [CI 계약](../.github/workflows/pi-motive-bound.yml) (합성 반례시험 14건, 실증 아님). 사람·AI의 실제 마음을 측정한 결과 아님.
 
 | 가상 입력 (g,U,T) | 논리적 하한 | 해석 |
 | --- | ---: | --- |
