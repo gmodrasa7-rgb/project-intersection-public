@@ -1,34 +1,8 @@
 name: PI-RISE synthetic-only integrity
 on:
   pull_request:
-    paths:
-      - "operations/PI_RISE_*"
-      - "funding/GRANTS_CONTRACTS_PUBLIC_LEDGER_EN_KO.md"
-      - "funding/SPONSORSHIP_PUBLIC_LEDGER.md"
-      - "funding/README.md"
-      - "funding/FUNDER_START_HERE.md"
-      - "tools/pi_rise_check.py"
-      - "tools/pi_rise_cutset.py"
-      - "tools/pi_rise_budget.py"
-      - "tools/pi_rise_vac.py"
-      - "tools/pi_rise_finance_audit.py"
-      - "tests/test_pi_rise_*.py"
-      - ".github/workflows/pi-rise-integrity.yml"
   push:
     branches: [main]
-    paths:
-      - "operations/PI_RISE_*"
-      - "funding/GRANTS_CONTRACTS_PUBLIC_LEDGER_EN_KO.md"
-      - "funding/SPONSORSHIP_PUBLIC_LEDGER.md"
-      - "funding/README.md"
-      - "funding/FUNDER_START_HERE.md"
-      - "tools/pi_rise_check.py"
-      - "tools/pi_rise_cutset.py"
-      - "tools/pi_rise_budget.py"
-      - "tools/pi_rise_vac.py"
-      - "tools/pi_rise_finance_audit.py"
-      - "tests/test_pi_rise_*.py"
-      - ".github/workflows/pi-rise-integrity.yml"
   workflow_dispatch:
 
 permissions:
@@ -42,6 +16,8 @@ jobs:
       - uses: actions/checkout@v4
       - name: Unit regression tests (no credentials, network services or real finances)
         run: python3 -m unittest discover -s tests -p 'test_pi_rise_*.py' -v
+      - name: Enforce PI-RISE canonical pointers, Git blob hashes and publication contract
+        run: python3 tools/pi_rise_manifest_guard.py
       - name: Verify minimal cut sets are model-conditional and countable
         run: |
           python3 tools/pi_rise_cutset.py > /tmp/pi_rise_cutset.json
