@@ -79,6 +79,7 @@ def build_report(runs, jobs_by_run, *, now, limit_reached=False):
     seen_run_ids = set()
     relevant = []
     rejected_count = 0
+    unseen_rerun_history = 0
     for run in runs:
         rid = _number(run.get("id"))
         _require(rid not in seen_run_ids, "DUPLICATE_RUN_ID")
@@ -90,6 +91,9 @@ def build_report(runs, jobs_by_run, *, now, limit_reached=False):
             continue
         if run.get("status") != "completed":
             continue
+        attempts = run.get("run_attempt", 1)
+        _require(type(attempts) is int and attempts >= 1, "INVALID_RUN_ATTEMPT")
+        unseen_rerun_history += max(0, attempts - 1)
         workflow_id = _number(run.get("workflow_id"))
         family, hints = _family(run.get("name"))
         relevant.append((run, ts, family, hints))
@@ -194,9 +198,12 @@ def build_report(runs, jobs_by_run, *, now, limit_reached=False):
         "observed_at_utc": moment.isoformat(),
         "scanned_completed_runs": len(relevant),
         "failed_run_without_failed_job_step": rejected_count,
+        "prior_attempts_not_inspected": unseen_rerun_history,
         "failure_fingerprint_count": len(public_groups),
-        "observation_coverage": "PARTIAL_LIMIT_REACHED" if limit_reached else
-                                "BOUNDED_WINDOW_NOT_FULL_REPOSITORY_HISTORY",
+        "observation_coverage": (
+            "PARTIAL_LIMIT_REACHED" if limit_reached else
+            "PARTIAL_PRIOR_RERUN_ATTEMPTS_UNINSPECTED" if unseen_rerun_history else
+            "BOUNDED_WINDOW_NOT_FULL_REPOSITORY_HISTORY"),
         "no_emails_or_raw_logs_exported": True,
         "automatic_closure_enabled": False,
         "groups": public_groups,
