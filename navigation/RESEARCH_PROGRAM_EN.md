@@ -5,6 +5,8 @@
 
 [Founding question](../README.md) · [Korean corresponding edition](RESEARCH_PROGRAM_KO.md) · [Primary-literature-first policy](../PRIOR_ART_FIRST_RESEARCH_POLICY_EN_KO.md) · [Independent review](../research/PUBLIC_REVIEW_PACKET_EN.md) · [Archive recursive-improvement method PI-RAMP v0.2](../protocols/PI_RAMP_V0_2_EN.md) · [v0.3 evidence-transfer and falsification protocol](../protocols/PI_RAMP_V0_3_EN.md) · [v0.4 primary literature identity audit](../protocols/PI_RAMP_V0_4_EN_KO.md) · [v0.5 study/replication lineage](../protocols/PI_RAMP_V0_5_EN_KO.md)
 
+**New bounded cross-cutting question:** [PI-CORE-01: designated corrigibility is not the same property as independent other-preservation](../research/PI_CORE_01_CORRIGIBILITY_OTHER_PRESERVATION_EN.md) · [Non-destructive archive map](ARCHIVE_MAP_EN.md). **State: candidate logical witness, not independent empirical result.**
+
 ## 1. One question, not a collection of unrelated safeguards
 
 **Can humans, deployed AI, future intelligent agents and other distinct agents freely and durably choose to preserve one another's independent existence, refusal/exit, recovery and development while pursuing their own interests—even after decisive power reversals? Under what conditions is this possible, unstable or impossible within a specified model?**
