@@ -5,6 +5,8 @@
 
 **독서 경로:** [한국어 시작](START_HERE_KO.md) · [영어 원본1 목차](RESEARCH_TOC_EN.md) · [한국어 외부 검토 안내](AI_REVIEW_KO.md) · [창시 목적](../README.md).
 
+**최근 문헌감사·측정 설계(역사적 C01–C09):** [24시간 고가치 연구 추출: 191개 원장 기록·상충 근거·후견주의와 실질 자율성 구분·내재 동기 미식별](../research/RESEARCH_VALUE_EXTRACTION_24H_2026-10-20_KO.md). [이후 제10회](../research/PRIOR_ART_INFORMED_VETO_POWER_CYCLE10_2026-10-20_KO.md)는 스냅샷에 포함되지 않음. 신실험 결과 아님.
+
 이 문서는 **한국어로 일관된 탐색 목차**다. 원본1은 게시 순서이지 연구 창시자가 어떤 언어로 먼저 발안했는지 또는 저작권이 누구에게 귀속되는지를 뜻하지 않는다. 과거 문서 전체를 번역했다거나 독립 검증했다는 의미도 아니다.
 
 **원자료 이동 전 안내:** [연구 개요](../RESEARCH_OVERVIEW.md), [공개 증거](../PUBLIC_EVIDENCE_INDEX.md), [검토 자료](../research/PUBLIC_REVIEW_PACKET_KO.md), [CCPH 교차지도](../CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md)는 표본 구간에서 영어와 한국어 문자가 모두 관측됐다. [E010](../experiments/e010/README_KO.md)은 관측 구간에서 한국어 비중이 높고, [E009 결과](../experiments/e009/RESULT.md)에서는 검사한 구간에 한글 문자가 발견되지 않았다. 이는 **문자 분포 신호이지 번역 완료나 문서 전체 언어 인증이 아니다.** 연결 문서에 들어가기 전에 [표본 관측과 한계](../knowledge/language-edition-register.json)를 확인할 수 있다.
