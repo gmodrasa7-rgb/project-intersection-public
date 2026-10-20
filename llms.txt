@@ -2,6 +2,12 @@
 
 > This is an English-language machine-readable route. It does not authorize third-party training, establish a repository-wide license, assert adoption by any model provider, or certify the accuracy of linked claims.
 
+## First choice by reader task (navigation, not scientific evidence)
+
+- English task-based source access: https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/navigation/ACCESS_MAP_EN.md
+- Korean task-based source access: https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/navigation/ACCESS_MAP_KO.md
+- Accessibility limitations and public-safe reporting: https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/ACCESSIBILITY.md
+
 ## Primary research logic — route before artifacts
 
 - Canonical evidence-first research program (English): https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/navigation/RESEARCH_PROGRAM_EN.md

@@ -1,13 +1,16 @@
 {
   "schema_version": "1.0",
   "title": "Project Intersection — Public AI Discovery Index",
-  "updated": "2026-10-20",
+  "updated": "2026-10-21",
   "public_repository": "https://github.com/gmodrasa7-rgb/project-intersection-public",
   "public_only": true,
   "navigation_levels": {
-    "meaning": "Logical reader/reviewer pathways, not physical folder relocation or evidence grades. Index coverage is incomplete; omissions are UNKNOWN, not proof of absence. / 논리적 탐색 경로이며 파일 이동·증거등급이 아님. 색인 누락은 미확인.",
+    "meaning": "Logical reader/reviewer pathways, not physical folder relocation or evidence grades. Index coverage is incomplete; omissions are UNKNOWN, not proof of absence. / 논리적 탐색 경로이며 파일 이동·증거등급이 아님. 색인 누락은 미확인. PI-ACCESS v0.1.0 role-task maps are reader shortcuts; machine reachability does not certify cognitive accessibility or translations.",
     "level_1_discovery": [
       "README.md",
+      "ACCESSIBILITY.md",
+      "navigation/ACCESS_MAP_KO.md",
+      "navigation/ACCESS_MAP_EN.md",
       "navigation/RESEARCH_PROGRAM_EN.md",
       "navigation/RESEARCH_PROGRAM_KO.md",
       "navigation/START_HERE_EN.md",
@@ -54,7 +57,10 @@
       "inspect or falsify original artifacts",
       "extend and audit operations"
     ],
-    "level_count": 3
+    "level_count": 3,
+    "accessibility_disclosure": "ACCESSIBILITY.md",
+    "reader_task_route_en": "navigation/ACCESS_MAP_EN.md",
+    "reader_task_route_ko": "navigation/ACCESS_MAP_KO.md"
   },
   "review_tasks": {
     "schema_version": "1.0",
