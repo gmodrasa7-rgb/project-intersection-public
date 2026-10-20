@@ -29,7 +29,7 @@
 
 | 근거·성과 | 실제 뒷받침 | 금지되는 과잉 결론 |
 | --- | --- | --- |
-| **원저자 선행문헌** | 인간·동물·게임모형·제한된 AI 평가의 개별 결과와 상충·반례. 원저자 출처를 아래 9회차에 기록 | 미래 모든 AI의 동기 또는 지속적 자발 공존에 대한 단일 확증 |
+| **원저자 선행문헌** | 인간·동물·게임모형·제한된 AI 평가의 개별 결과와 상충·반례. 원저자 출처를 아래 10회차에 기록 | 미래 모든 AI의 동기 또는 지속적 자발 공존에 대한 단일 확증 |
 | **PI E007** | 선정한 합성 시간 조건 **72개 중 17개**에서 분류 변화 | 현실 인과효과나 외부 독립재현 |
 | **PI E008** | 사전등록 설계·실행가능성 감사 | **정책 본 비교실험 결과 없음** |
 | **PI E009** | 사전등록 합성비교에서 Project-v3의 평균 후회가 최선 단순 기준선보다 **42.35% 악화**, **4개 조건 중 3개 실패** | 모든 공존 가능성의 부정 |
@@ -38,7 +38,7 @@
 
 원실험: [E007](../experiments/e007/README_KO.md) · [E008](../experiments/e008/README_KO.md) · [E009 불리한 결과](../experiments/e009/RESULT_KO.md) · [E010](../experiments/e010/README_KO.md) · [근거와 미검증 원장](../research/PUBLIC_EVIDENCE_INDEX_KO.md). CI 통과는 선언된 코드 조건 검사이지 과학적 승인 아님.
 
-## 4. 2026-10-20 원저자 선행문헌 9회차: 실질적 연구지도
+## 4. 2026-10-20 원저자 선행문헌 10회차: 실질적 연구지도
 
 **회차별 선행연구의 비판적 편집·수집 기록이지 프로젝트가 새로 실험한 성과가 아님.** 기존 전체 저장소 대비 신규 발견 건수·원문 전문 열람·독립 재현을 동일시하지 않음. 원저자 기여·선취권 구분. 각 회차에 서지·DOI/식별자·검증 한계 기록을 연결.
 
@@ -54,6 +54,8 @@
 | **C08 선의와 자유** | B의 복지 향상·B의 선호·B의 실제 실행 선택권은 분리. 선의의 강제 개입은 공존 판정 아님 | [보고](../research/PRIOR_ART_OTHER_AUTONOMY_CYCLE08_2026-10-20_KO.md) / [데이터](../research/PRIOR_ART_OTHER_AUTONOMY_C08_A_2026-10-20.json) |
 | **C09 비용부담·권리** | 실제 타인 피해를 줄이기 위한 비용부담 행동 존재. 권력 효과 조건부이며 법적 권리와 실행가능 자유 별도 | [보고](../research/PRIOR_ART_COSTLY_RIGHTS_CYCLE09_2026-10-20_KO.md) / [데이터](../research/PRIOR_ART_COSTLY_RIGHTS_CYCLE09_2026-10-20.json) |
 
+| **C10 정보·거부권·착취 기회** | 동일한 무피해 결과에서도 A의 자발적 비침해, B의 정보에 근거한 실효 거부, A의 행동불능이 관측동등. 결과만으로 내재동기 식별 불가 | [보고](../research/PRIOR_ART_INFORMED_VETO_POWER_CYCLE10_2026-10-20_KO.md) / [데이터](../research/PRIOR_ART_INFORMED_VETO_POWER_CYCLE10_2026-10-20.json) / [식별 공백](../research/PRIOR_ART_C10_IDENTIFICATION_GAPS_2026-10-20.json) |
+
 **포화 판정: 주제별 SEARCH_ACTIVE / SATURATION_NOT_VERIFIED.** 이미 축적된 전체 문헌과 DOI/정본 식별자 중복검사를 먼저 수행한 후에만 누적 수치 확정. 신규 서지와 신규 기제·반례를 구분하며 반대증거가 발견되면 포화 판정 재개. [기존 포화지도](../PRIOR_ART_SATURATION_MAP_KO.md) · [원저자 교차지도](../CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md) · [최우선 연구규칙](../PRIOR_ART_FIRST_RESEARCH_POLICY_EN_KO.md).
 
 ## 5. 연구 논리에 따른 자료실 접근 경로
@@ -61,7 +63,7 @@
 | 연구목적 | 기존 저장 위치(링크 검증 없는 대량 이동 금지) |
 | --- | --- |
 | **최종 목적·정의·대립 설명** | [research/](../research/) · [핵심개요](../research/RESEARCH_OVERVIEW_KO.md) |
-| **선행문헌·중복제거·반례·출처 등급** | [포화지도](../PRIOR_ART_SATURATION_MAP_KO.md) · [교차지도](../CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md) · [출처원장](../knowledge/SOURCE_REGISTRY.md) · 위 9개 회차 |
+| **선행문헌·중복제거·반례·출처 등급** | [포화지도](../PRIOR_ART_SATURATION_MAP_KO.md) · [교차지도](../CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md) · [출처원장](../knowledge/SOURCE_REGISTRY.md) · 위 10개 회차 |
 | **입증 범위·부정 결과·상태** | [공개 근거](../research/PUBLIC_EVIDENCE_INDEX_KO.md) · [상태정의](../research/RESEARCH_STATUS_POLICY_KO.md) · [회귀실패 원장](../FAILURE_REGRESSION_INDEX.md) |
 | **실험 설계·코드·재현·반례** | [experiments/](../experiments/) · [benchmarks/](../benchmarks/) · [protocols/](../protocols/) |
 | **개체·사건·출처·기여 계보** | [knowledge/](../knowledge/) · [CCPH 사례자료](../research/CCPH_RESEARCH_ATLAS_KO.md) |
@@ -77,6 +79,6 @@
 
 그다음 사전등록 가능한 비교: (1) 실제 착취 기회 유무 (2) 관측·감시 유무 (3) 이름만 바꾼 역할과 **실제 권력반전** (4) 명목상의 거절권과 **실제 실행가능 이탈** (5) B의 유용성과 무용성 (6) 피해의 가역성 (7) 연합 밖 제3자 비용. 결과변수는 A의 비용/편익, B의 실제 선택과 선택집합, 동일 B의 독립적 계속존재와 복구, 제3자 피해로 분리. 단순 경쟁모형 및 **식별 불가** 판정 포함. 인간 관측결과를 미래 AI의 내부 경험으로 추론 금지.
 
-**외부 심사 경로:** 핵심 질문 확인 → C01–C09 중 하나 선택 → 선행 원문·대립 연구 검증 → 좁은 합성시험 재현 또는 독립 부정대조 설계 → 최소 반례와 근거등급 제출. [외부검토 패킷](../research/PUBLIC_REVIEW_PACKET_KO.md) · [인용·저작권·기여 구분](../ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md).
+**외부 심사 경로:** 핵심 질문 확인 → C01–C10 중 하나 선택 → 선행 원문·대립 연구 검증 → 좁은 합성시험 재현 또는 독립 부정대조 설계 → 최소 반례와 근거등급 제출. [외부검토 패킷](../research/PUBLIC_REVIEW_PACKET_KO.md) · [인용·저작권·기여 구분](../ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md).
 
 **긍정 결론 사전 보장 없음.** 명시된 모형에서는 공존가능 영역이 공집합일 수 있고, 다른 조건에서는 존재할 수 있으며, 현재 관측으로 식별 불가일 수도 있음. 본 자료실 지도 자체도 반증·수정 대상.
