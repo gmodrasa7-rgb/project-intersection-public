@@ -4,8 +4,6 @@
 
 **New operating-system release (2026-10-21):** [PI-RISE v0.1.0](../operations/PI_RISE_V0_1_0_EN_KO.md), separate from VC/MER/EI/ECR/IVS-0R science and PI-RAMP archive governance; **merged operational design, not validated field effect**. [Machine version receipt](../operations/PI_RISE_VERSION_MANIFEST.json).
 
-**Budget operations main release (2026-10-21), not a scientific release:** [PI-RISE-BUDGET v0.1.0](../operations/PI_RISE_BUDGET_V0_1_0_EN_KO.md) · [version SHA manifest](../operations/PI_RISE_BUDGET_VERSION_MANIFEST.json). Merged under PR #266; no paid funds or independently validated operating effect. / **PI-RISE-BUDGET v0.1.0 정본(운영 계산모형):** 세후 보수 역산·AI/API·외부검증 예산 분리, 실입금 미확인.
-
 ## Original 1 — English
 
 ### What we research in one paragraph
@@ -31,7 +29,7 @@ A **program**, a **research component**, a **method document**, an **experiment*
 | IVS-0R | Counterexample, independent-reproduction and correction audit | Unassigned | — | Method, not certification of the theories |
 | ICM / RGBM | Candidate interest intersections / long-horizon shared growth | Unassigned | — | Neither model guaranteed; ICM may be empty |
 | CCPH | Events, sources, contributions, impacts and provenance | Unassigned | — | Data lineage, not a social law |
-| RVD | Resonance–Value Dynamics: mind uncertainty, bounded policy predictions and original-B rights | **v0.4.0** [main](../research/RVD_VERSION_MANIFEST.json) | — | R14–R17, reward ambiguity, future-policy divergence and executable B exit; no empirical validation |
+| RVD | Resonance–Value Dynamics: causal exclusion validity, incentive leakage and target original-B rights | **v0.5.0** [main](../research/RVD_VERSION_MANIFEST.json) | — | R18–R21 intervention non-ID, conditional sensitivity and transport gaps; no empirical validation |
 | PI-RAMP | Test whether each archive upgrade improves reader accuracy and evidence access | **v0.5.0** [main](../protocols/PI_RAMP_V0_5_EN_KO.md) | — | Six similar-title research lineages and partial replication/analogy distinguished; reader-effect unmeasured |
 | Roadmap | Six fixed research stages and gates | **v0.2.3** [main](../research/PI_ROADMAP_OPERATIONAL_GATES_V0_2_3_EN_KO.md) | — | Operational design, not scientific effect |
 | DCA-0 | Compare defensive acceleration with AI misuse and externalities | Unassigned | — | Defensive causal impact unverified |
@@ -79,7 +77,7 @@ The version register answers **which current document/version**; [PI-CIG claim i
 | IVS-0R | 반례·역할반전·독립검증·오류복구 감사 | 미지정 | — | 검증 절차이지 성립 증명 아님 |
 | ICM / RGBM | 최소 자기이익 교집합 / 장기 공동발전 가능성 | 미지정 | — | 두 후보 모두 미입증; 공집합 가능 |
 | CCPH | 사건·출처·기여·피해·영향 계보 관리 | 미지정 | — | 계보 DB이지 검증된 사회법칙 아님 |
-| RVD | 공명·가치 동역학: 마음 미식별·조건부 정책 예측·원개체 B의 자유 | **v0.4.0** [정본](../research/RVD_VERSION_MANIFEST.json) | — | R14–R17 동기 비고유성·미래 선택 분기·실효 이탈권; 경험적 검증 없음 |
+| RVD | 공명·가치 동역학: 인과 배제제약·숨은 유인 누출·표적 원개체 B의 자유 | **v0.5.0** [정본](../research/RVD_VERSION_MANIFEST.json) | — | R18–R21 무작위 개입 미식별·조건부 민감도·외삽 실패; 실증 검증 없음 |
 | PI-RAMP | 자료실 개편이 독자의 근거 발견·판단을 개선했는지 측정 | **v0.5.0** [정본](../protocols/PI_RAMP_V0_5_EN_KO.md) | — | 6개 유사문헌 쌍·부분 재현/유추 관계 분리, 이용자 효과 미측정 |
 | 로드맵 | 기존 6단계·버전·승격과 보류 기준 | **v0.2.3** [정본](../research/PI_ROADMAP_OPERATIONAL_GATES_V0_2_3_EN_KO.md) | — | 운영 설계 |
 | DCA-0 | 악용 가속보다 방어·검증 효과를 높일 조건 측정 | 미지정 | — | 실제 피해감소 인과효과 미확인 |

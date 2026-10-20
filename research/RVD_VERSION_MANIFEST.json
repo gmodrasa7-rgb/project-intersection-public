@@ -4,7 +4,7 @@
   "research_name_en": "Resonance–Value Dynamics",
   "research_name_ko": "공명·가치 동역학",
   "acronym": "RVD",
-  "current_version": "v0.4.0",
+  "current_version": "v0.5.0",
   "version_scheme": "MAJOR.MINOR.PATCH",
   "inception_date": "2026-10-20",
   "parent_axes": [
@@ -51,7 +51,12 @@
     "LATENT_REWARD_NONIDENTIFICATION_IS_DISTINCT_FROM_DECISION_RELEVANT_NONIDENTIFICATION",
     "SCOPED_POLICY_CERTIFICATES_ARE_NOT_OPEN_WORLD_SAFETY_GUARANTEES",
     "BEHAVIORAL_PRESERVE_LABEL_DOES_NOT_SUPPLY_EXECUTABLE_EXIT",
-    "ASSUMED_ELIMINATION_OF_UNOBSERVED_INCENTIVES_MUST_NOT_COUNT_AS_MEASURED_CAUSAL_FACT"
+    "ASSUMED_ELIMINATION_OF_UNOBSERVED_INCENTIVES_MUST_NOT_COUNT_AS_MEASURED_CAUSAL_FACT",
+    "RANDOM_ASSIGNMENT_DOES_NOT_ESTABLISH_EXCLUSION_OR_PREFERENCE_STABILITY",
+    "INTRINSIC_VALUE_LOWER_BOUND_REQUIRES_EXTERNALLY_JUSTIFIED_RESIDUAL_AND_LEAKAGE_BOUNDS",
+    "SOURCE_ENVIRONMENT_SUCCESS_DOES_NOT_ESTABLISH_TARGET_TRANSPORT",
+    "TARGET_SUPPORT_AND_B_ACTUAL_EXIT_SEPARATE_FROM_C_OUTPUT",
+    "NO_REAL_AGENT_EMPIRICAL_CLAIM_FROM_SYNTHETIC_C05"
   ],
   "hypothesis_ids": [
     "RVD-R1",
@@ -70,7 +75,11 @@
     "RVD-R14",
     "RVD-R15",
     "RVD-R16",
-    "RVD-R17"
+    "RVD-R17",
+    "RVD-R18",
+    "RVD-R19",
+    "RVD-R20",
+    "RVD-R21"
   ],
   "research_documents": {
     "original_1_english": "research/MER_RESONANCE_VALUE_FORMATION_2026-10-20_EN.md",
@@ -88,7 +97,11 @@
     "cycle04_en": "research/RVD_CYCLE04_MOTIVE_POLICY_DIVERGENCE_2026-10-21_EN.md",
     "cycle04_ko": "research/RVD_CYCLE04_MOTIVE_POLICY_DIVERGENCE_2026-10-21_KO.md",
     "cycle04_source_register": "research/RVD_CYCLE04_SOURCE_REGISTER_2026-10-21.json",
-    "cycle04_toy_code": "experiments/rvd_04/policy_invariance_witness.py"
+    "cycle04_toy_code": "experiments/rvd_04/policy_invariance_witness.py",
+    "cycle05_en": "research/RVD_CYCLE05_EXCLUSION_TRANSPORT_SENSITIVITY_2026-10-21_EN.md",
+    "cycle05_ko": "research/RVD_CYCLE05_EXCLUSION_TRANSPORT_SENSITIVITY_2026-10-21_KO.md",
+    "cycle05_source_register": "research/RVD_CYCLE05_SOURCE_REGISTER_2026-10-21.json",
+    "cycle05_toy_code": "experiments/rvd_05/intervention_transport_witness.py"
   },
   "change_rules": {
     "MAJOR": "Scientific construct or estimand redefinition breaking compatibility",
@@ -137,7 +150,7 @@
     {
       "version": "v0.4.0",
       "date": "2026-10-21",
-      "state": "CURRENT_SPECIFICATION_EXTENSION",
+      "state": "HISTORICAL_SPECIFICATION_EXTENSION",
       "previous_version": "v0.3.0",
       "change": "Added R14 reward-decomposition invariance, R15 new-environment policy divergence, R16 model-set/environment-set robust preservation margin, R17 actual executable B exit distinct from protective wording. Original-author crosswalk and executable CI toy witnesses.",
       "scientific_promotion": false,
@@ -145,8 +158,20 @@
       "independent_replication": false,
       "simulation_or_logic_only": true,
       "primary_source_scope": "Original scholarly/publisher abstracts and limited primary text, eight author lineages; no saturated full text corpus."
+    },
+    {
+      "version": "v0.5.0",
+      "date": "2026-10-21",
+      "state": "CURRENT_SPECIFICATION_EXTENSION",
+      "previous_version": "v0.4.0",
+      "change": "R18 randomized intervention non-ID of latent pathway, R19 exclusion-leakage sensitivity outer bound, R20 target-environment uncovered-mass transfer bounds, R21 executable original-B rights distinct from protective choices. Five antecedent scholarly lineages and reproducible toy CI.",
+      "new_project_empirical_observations": 0,
+      "synthetic_logic_only": true,
+      "independent_replication": false,
+      "scientific_promotion": false,
+      "previous_negative_results_preserved": true
     }
   ],
-  "next_gate": "Independent prior-author full text and global duplicate audit; preregister plausible Theta model class, E stress set and exclusion restrictions; ethical tests of original B's feasible exit, without promoting model-toy results.",
+  "next_gate": "Independent original-author full-text lineage review and externally justified bounds on exclusion leakage and target support, then ethically preregistered randomized tests. No transport, inner-mind, or extreme VC claim without real identifiable data.",
   "contribution_boundary": "Human originator's resonance concept; AI-assisted organization and version record. Historical quotations from earlier AI summaries not independently re-read."
 }

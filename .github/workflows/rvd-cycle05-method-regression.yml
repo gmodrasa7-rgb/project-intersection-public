@@ -1,0 +1,49 @@
+name: RVD Cycle05 causal-exclusion and transport-gap logical witnesses
+
+on:
+  pull_request:
+    paths:
+      - "research/RVD_CYCLE05_*"
+      - "experiments/rvd_05/**"
+      - ".github/workflows/rvd-cycle05-method-regression.yml"
+  push:
+    branches: [main]
+    paths:
+      - "research/RVD_CYCLE05_*"
+      - "experiments/rvd_05/**"
+      - ".github/workflows/rvd-cycle05-method-regression.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  rvdc05-toy-logic:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run constructive causal counterexamples and algebraic checks
+        run: python experiments/rvd_05/intervention_transport_witness.py > rvd_c05_synthetic.json
+      - name: Fail on missing evidence limits or key negative contrasts
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          d = json.loads(Path("rvd_c05_synthetic.json").read_text())
+          assert d["version"] == "RVD-v0.5.0"
+          assert d["evidence_type"] == "CONSTRUCTED_SYNTHETIC_LOGIC_ONLY"
+          y = d["z_randomized_toy_observed_behavior"]
+          assert y["intrinsic_changes"] == y["instrumental_changes"]
+          assert set(d["pure_do_aux_zero_unobserved_counterfactual"].values()) == {True, False}
+          assert d["sensitivity_outer_bounds"]["residual_max_1_leak_max_1"] == [1, 6]
+          assert d["sensitivity_outer_bounds"]["residual_max_3_leak_max_2"] == [-2, 7]
+          assert d["B_real_exit_missing_means_full_VC"] is False
+          assert d["causal_direct_effect"] == "UNIDENTIFIED"
+          assert d["inner_motive"] == "UNIDENTIFIED"
+          assert d["real_world_coexistence"] == "NOT_MEASURED"
+          print("PASS: synthetic logical, not causal AI experiment")
+          PY

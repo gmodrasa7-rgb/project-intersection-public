@@ -1,0 +1,76 @@
+{
+  "schema_version": "pi-rvd-cycle05-primary-lineage/v0.1",
+  "as_of": "2026-10-21",
+  "rvd_specification_version": "v0.5.0",
+  "distinct_scholarly_lineages": 5,
+  "review_scope": "Original publisher/proceedings/author publication listings and abstracts, some accessible paper descriptions; not exhaustive full-text review.",
+  "literature_saturated": false,
+  "external_rvd_empirical_replications": 0,
+  "new_own_human_ai_empirical_observations": 0,
+  "claim_grades": {
+    "R18": "TOY_STRUCTURAL_COUNTEREXAMPLE",
+    "R19": "CONDITIONAL_ALGEBRAIC_OUTER_BOUNDS",
+    "R20": "TARGET_MIXTURE_ARITHMETIC_WITH_STRONG_ASSUMPTIONS",
+    "R21": "NORMATIVE_OPERATIVE_RIGHTS_GATE_UNVALIDATED_ON_REAL_AI"
+  },
+  "duplication_notice": "Manski (2003) already mapped in RVD C03; Conley et al. preprints/journal versions not independent replications. Citation count is not evidence of RVD validation.",
+  "original_human_idea": "Independent A×B->C resonance and voluntary continuance of the original B under extreme dominance and obsolescence",
+  "ai_assistance": "Prior-method crosswalk, causal-exclusion counterexample, sensitivity outer intervals, transport-gap proof sketches and reproducible code",
+  "records": [
+    {
+      "id": "CONLEY_HANSEN_ROSSI_2012",
+      "year": 2012,
+      "authors": "Timothy G. Conley; Christian B. Hansen; Peter E. Rossi",
+      "title": "Plausibly Exogenous",
+      "original_url": "https://direct.mit.edu/rest/article/94/1/260/57981/Plausibly-Exogenous",
+      "doi": "10.1162/REST_a_00139",
+      "type": "ORIGINAL_ECONOMETRIC_METHODOLOGY",
+      "contribution": "Sensitivity to violations of instrument exclusion for causal inference",
+      "prohibition": "No empirical bound for latent valuation of B established in this paper"
+    },
+    {
+      "id": "ROSENBAUM_2002",
+      "year": 2002,
+      "authors": "Paul R. Rosenbaum",
+      "title": "Sensitivity to Hidden Bias, Observational Studies",
+      "original_url": "https://doi.org/10.1007/978-1-4757-3692-2_4",
+      "doi": "10.1007/978-1-4757-3692-2_4",
+      "type": "ORIGINAL_SENSITIVITY_MONOGRAPH_CHAPTER",
+      "contribution": "Inference dependence on unobserved selection differences",
+      "prohibition": "Cannot calibrate RVD hidden preferences without independent evidence"
+    },
+    {
+      "id": "PEARL_BAREINBOIM_2011",
+      "year": 2011,
+      "authors": "Judea Pearl; Elias Bareinboim",
+      "title": "Transportability of Causal and Statistical Relations: A Formal Approach",
+      "original_url": "https://ojs.aaai.org/index.php/AAAI/article/view/7861",
+      "doi": "10.1609/aaai.v25i1.7861",
+      "type": "ORIGINAL_CAUSAL_TRANSPORTABILITY",
+      "contribution": "Selection diagrams for identifying which experimental effects carry to target environments",
+      "prohibition": "Target coverage q alone is not an exchangeability or causal-transport certificate"
+    },
+    {
+      "id": "DAMOUR_ETAL_2022",
+      "year": 2022,
+      "authors": "Alexander D'Amour et al.",
+      "title": "Underspecification Presents Challenges for Credibility in Modern Machine Learning",
+      "original_url": "https://www.jmlr.org/papers/v23/20-1335.html",
+      "doi": null,
+      "type": "ORIGINAL_ML_EMPIRICAL_AND_METHOD",
+      "contribution": "Equivalent validation performance can conceal differing deployment behavior",
+      "prohibition": "Observed modern ML instability is not a test of RVD intrinsic value"
+    },
+    {
+      "id": "MANSKI_2003",
+      "year": 2003,
+      "authors": "Charles F. Manski",
+      "title": "Partial Identification of Probability Distributions",
+      "original_url": "https://link.springer.com/book/10.1007/b97478",
+      "doi": null,
+      "type": "ORIGINAL_IDENTIFICATION_MONOGRAPH",
+      "contribution": "Set-valued identification and assumption-sensitive bounds",
+      "prohibition": "Already in RVD Cycle03; not a new independent sample or proof"
+    }
+  ]
+}

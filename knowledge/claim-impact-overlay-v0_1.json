@@ -61,13 +61,13 @@
     {
       "id": "SRC-RVD-MANIFEST",
       "path": "research/RVD_VERSION_MANIFEST.json",
-      "sha": "52c4fd4856847fddb39e79855a78eeb55ef04d19",
+      "sha": "fb849aaca4fa8f8746cc200046304e7f8bec4515",
       "probe": {
         "kind": "json_exact",
         "field": "scientific_status.empirical_validation",
         "expected": "UNTESTED"
       },
-      "caveat": "RVD v0.4.0 adds conceptual decision-relevant reward ambiguity and conditional robust-choice test only. Does not demonstrate mind, future voluntary coexistence or independent exit. Empirical status UNTESTED."
+      "caveat": "RVD v0.5.0 expands theory/protocol only; no RVD human/AI behavioral experiment, original empirical validation, or established causal mediator. Scientific status remains UNTESTED."
     },
     {
       "id": "SRC-RVD-CYCLE02",
@@ -363,6 +363,35 @@
       "declared_dependencies_complete": false,
       "result": "SCOPED_SOURCE_AND_PROVENANCE_REVIEW_DONE_NO_SCIENTIFIC_VERDICT",
       "limitation": "Declared edges only; no full lineage coverage. Reward-invariance and partial identification are antecedent scholarship; synthetic counterexample demonstrates no real agent incentive."
+    },
+    {
+      "review_id": "PI-CIG-RVD-V050-20261021",
+      "date": "2026-10-21",
+      "source_id": "SRC-RVD-MANIFEST",
+      "changed_path": "research/RVD_VERSION_MANIFEST.json",
+      "old_source_sha": "52c4fd4856847fddb39e79855a78eeb55ef04d19",
+      "new_source_sha": "fb849aaca4fa8f8746cc200046304e7f8bec4515",
+      "upstream_change": "R18 randomized treatment does not isolate w from g, R19 leakage/residual-gain sensitivity outer interval, R20 unobserved target support bound with no causal transport presumed, R21 separate B's feasible freedom. RVD 0.4.0 to 0.5.0.",
+      "affected_claims_and_paths": [
+        {
+          "id": "CL-RVD-ORIGINAL",
+          "unchanged_status": "FORMAL_COUNTEREXAMPLE_ONLY"
+        },
+        {
+          "id": "CL-RVD-MOTIVE",
+          "unchanged_status": "MECHANISM_UNIDENTIFIED"
+        },
+        {
+          "id": "CL-VC-HARD",
+          "unchanged_status": "UNRESOLVED"
+        }
+      ],
+      "scientific_promotion": false,
+      "independent_validation": false,
+      "version_registry": "research/RESEARCH_VERSION_REGISTRY.json",
+      "declared_dependencies_complete": false,
+      "result": "SCOPED_SOURCE_AND_PROVENANCE_REVIEW_DONE_NO_SCIENTIFIC_VERDICT",
+      "limitation": "Only registered claim dependencies inspected; no complete provenance guarantee. Genuine causal exclusion, residual-gain bounds and target validity remain assumptions not demonstrated facts."
     }
   ]
 }
