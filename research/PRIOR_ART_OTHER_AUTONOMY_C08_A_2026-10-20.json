@@ -35,7 +35,10 @@
       "primary": "https://cepr.org/publications/dp18156",
       "result": "Two US experiments: hard paternalistic ban minority; information-only correction majority",
       "limit": "2023 working paper, Aug 2026 conditionally accepted, not final published journal; no A extraction advantage",
-      "grade": "ORIGINAL_WORKING_PAPER"
+      "grade": "ORIGINAL_EXPERIMENT__ECONOMIC_JOURNAL_FORTHCOMING_AS_OF_2026_10_20",
+      "editorial_status_evidence": "https://www.ifo.de/en/publications/2026/contribution-refereed-journal/free-fail-paternalistic-preferences-united-states",
+      "original_replication_package": "https://zenodo.org/records/23420381",
+      "version_note": "2023 working paper, 2026 revised version, 2026 journal forthcoming and 2026 authors' replication dataset are one empirical research work."
     },
     {
       "id": "C08A-4",
@@ -165,7 +168,7 @@
       "title": "Machiavelli Preferences Without Blame: Delegating Selfish vs. Generous Decisions in Dictator Games",
       "key": "doi:10.1016/j.socec.2020.101615",
       "primary": "https://www.sciencedirect.com/science/article/pii/S2214804320302639",
-      "result": "Selfish-equivalent delegation is about 19 percentage points more frequent than generous-equivalent delegation.",
+      "result": "Selfish-outcome-equivalent delegation was about 19% more frequent than generous-outcome-equivalent delegation, per original publisher abstract; exact percentage-point effect not asserted.",
       "limit": "Human experiment or preference model, not validated enduring protection of independent AI B under absolute unilateral dominance.",
       "grade": "PEER_REVIEWED_EXPERIMENT"
     },
@@ -205,5 +208,6 @@
   ],
   "note": "Further original-paper verification in progress",
   "count": 18,
-  "warning": "Literature saturation not verified. 2 working papers and one non-DOI original journal are not magically peer-reviewed new empirical datasets. Original full PDF review not claimed; original article/author abstract/source pages checked."
+  "warning": "Literature saturation not verified. 2 working papers and one non-DOI original journal are not magically peer-reviewed new empirical datasets. Original full PDF review not claimed; original article/author abstract/source pages checked.",
+  "source_originality_note": "Not all 18 sources are globally new to PI or independent participant experiments; full-text all-paper review not claimed."
 }
