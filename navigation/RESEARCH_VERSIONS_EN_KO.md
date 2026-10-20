@@ -1,6 +1,6 @@
 <!-- PI-LANGUAGE: en-ko -->
 # Project Intersection — Research identity, versions and validation states / 연구 정체성·버전·검증 상태
-**Registry document version: v0.2.0 · Snapshot: 2026-10-20 · Proposed publication via draft PR, not scientific approval**
+**Registry document version: v0.2.0 · Snapshot: 2026-10-20 · Repository navigation and source-status audit, not scientific approval**
 
 ## Original 1 — English
 
