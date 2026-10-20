@@ -47,6 +47,9 @@ Snapshot derived from selected public main files and visible PR metadata, not an
 
 ---
 
+### Claim impact tracing — PI-CIG v0.1
+The version register answers **which current document/version**; [PI-CIG claim impact overlay](../knowledge/claim-impact-overlay-v0_1.json) and [deterministic checker](../tools/trace_claim_impact.py) answer **which recorded claims require reassessment when a source changes**. This is a partial dependency overlay (8 source artifacts, 7 claims, 15 scoped edges), not the full research graph. A changed source hash requires review, **not automatic claim falsification**. Unmapped sources remain **UNKNOWN**, not unaffected. Independent replication and field validation remain unverified. Example: change to E009 numeric evidence flags the E009 negative-result record and the VC hardest-case research question for review; it does **not** prove coexistence possible or impossible.
+
 ## 원본2 — 한국어
 
 ### 지금 무엇을 연구하는가
@@ -89,3 +92,7 @@ Snapshot derived from selected public main files and visible PR metadata, not an
 
 ### 감사 범위·충돌
 2026-10-20 공개 기본분기 일부 정본·현재 열린 PR 메타데이터 대조. 전체 과거 대화의 완전한 원본, 모든 비공개 저장소, 과거 모든 버전의 전수감사가 아님. 기계 판독 원장 v0.2에는 원전 파일 SHA·미병합 후보 PR 식별자를 기록. **2026-10-20 정정 이력:** RVD v0.1.0(#245)·PI-RAMP v0.3.0(#246) 병합 사실을 반영했고, 이후 RVD가 v0.2.0으로 변경되고 DCA-1 v0.2.0이 정본에 추가된 사실도 반영. 세부 항목은 [기계 판독 원장](../research/RESEARCH_VERSION_REGISTRY.json). ICM의 과거 다른 뜻 Independent Continuance Margin은 같은 개념으로 자동 합병 금지. CMR은 정본 풀네임 검증 전까지 확정 정의·번호 부여 보류.
+
+### 주장 의존관계·자동 재검토 — PI-CIG v0.1
+버전 등록부가 **현재 정본 버전**을 식별한다면, [PI-CIG 주장 의존성 원장](../knowledge/claim-impact-overlay-v0_1.json)과 [실행 검사기](../tools/trace_claim_impact.py)는 **원전 변경이 어떤 주장들의 재검토를 요구하는지** 계산한다. 이번 적용 범위는 원전 8개·주장 7개·명시 관계 15개에 한정. **원전 변경 ≠ 반증 ≠ 독립검증**. 그래프에 없는 출처·주장은 영향 없음이 아니라 미분류. E009 수치가 바뀌면 E009의 불리한 합성 결과와 VC 극한조건 연구 질문을 함께 재평가 대상으로 표시하되, 공존의 실증 성립/불가능 판정은 자동으로 내리지 않는다.
+
