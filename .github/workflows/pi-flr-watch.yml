@@ -3,6 +3,12 @@ on:
   schedule:
     - cron: '17 * * * *'
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/pi-flr-watch.yml'
+      - 'tools/pi_flr_watch.py'
+      - 'tests/test_pi_flr_watch.py'
 
 permissions:
   contents: read
@@ -30,5 +36,5 @@ jobs:
         with:
           name: pi-flr-readonly-watch
           path: pi_flr_watch_report.json
-          if-no-files-found: warn
+          if-no-files-found: error
           retention-days: 14

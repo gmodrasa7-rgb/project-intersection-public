@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""PI-FLR 0.2: bounded, read-only GitHub Actions failure signal clustering.
+"""PI-FLR 0.2.1: bounded, read-only GitHub Actions failure signal clustering.
 
 Failure step ≠ diagnosed root cause. Green after red ≠ proven remedy.
 Never reads Gmail, downloads logs, changes issues/commits, or closes cases.
@@ -7,7 +7,6 @@ Only public numeric IDs, hash fingerprints and fixed allowlisted labels are expo
 """
 from __future__ import annotations
 import argparse
-from collections import defaultdict
 from datetime import datetime, timedelta, timezone
 import hashlib
 import json
@@ -27,7 +26,7 @@ KNOWN = {
     "Public repository governance audit": ("GOVERNANCE", ["FLR-0007"]),
     "PI-FLR recursive failure learning integrity": ("PI_FLR", []),
 }
-FAIL = {"failure", "timed_out"}
+FAIL = {"failure", "timed_out", "startup_failure", "action_required"}
 MAX_RUNS = 160
 MAX_FAILED_RUNS = 32
 MAX_GROUP_EVIDENCE = 8
@@ -59,9 +58,9 @@ def _number(value):
     return value
 
 
-def _signal(workflow_id, job_name, step_name):
+def _signal(workflow_id, job_name, step_name, branch=""):
     # Never emit arbitrary job/step text: labels could carry secrets or PII.
-    data = json.dumps([_number(workflow_id), str(job_name), str(step_name)],
+    data = json.dumps([_number(workflow_id), str(job_name), str(step_name), str(branch)],
                       ensure_ascii=False, separators=(",", ":"))
     return hashlib.sha256(data.encode("utf-8")).hexdigest()
 
@@ -80,6 +79,7 @@ def build_report(runs, jobs_by_run, *, now, limit_reached=False):
     seen_run_ids = set()
     relevant = []
     rejected_count = 0
+    unseen_rerun_history = 0
     for run in runs:
         rid = _number(run.get("id"))
         _require(rid not in seen_run_ids, "DUPLICATE_RUN_ID")
@@ -91,6 +91,9 @@ def build_report(runs, jobs_by_run, *, now, limit_reached=False):
             continue
         if run.get("status") != "completed":
             continue
+        attempts = run.get("run_attempt", 1)
+        _require(type(attempts) is int and attempts >= 1, "INVALID_RUN_ATTEMPT")
+        unseen_rerun_history += max(0, attempts - 1)
         workflow_id = _number(run.get("workflow_id"))
         family, hints = _family(run.get("name"))
         relevant.append((run, ts, family, hints))
@@ -100,6 +103,10 @@ def build_report(runs, jobs_by_run, *, now, limit_reached=False):
         jobs = jobs_by_run[rid]
         _require(isinstance(jobs, list), "INVALID_JOB_LIST")
         had_failed_step = False
+        branch = run.get("head_branch")
+        _require(isinstance(branch, str) and bool(branch),
+                 "FAILURE_BRANCH_NOT_IDENTIFIABLE")
+        fail_finished = _utc(run["updated_at"]) if run.get("updated_at") else None
         for job in jobs:
             if job.get("conclusion") not in FAIL:
                 continue
@@ -110,7 +117,8 @@ def build_report(runs, jobs_by_run, *, now, limit_reached=False):
                 failures = [{"name": "UNKNOWN_STEP"}]
             for step in failures:
                 had_failed_step = True
-                signature = _signal(workflow_id, job.get("name", ""), step.get("name", ""))
+                signature = _signal(workflow_id, job.get("name", ""),
+                                    step.get("name", ""), branch)
                 current = groups.setdefault(signature, {
                     "fingerprint_sha256": signature,
                     "workflow_family": family,
@@ -120,25 +128,51 @@ def build_report(runs, jobs_by_run, *, now, limit_reached=False):
                     "last_failure_utc": "",
                     "subsequent_success_same_workflow_and_branch": False,
                     "_workflow_id": workflow_id,
-                    "_branch": run.get("head_branch", ""),
+                    "_branch": branch,
                     "_last_fail_dt": ts,
+                    "_last_fail_finished": fail_finished,
                 })
                 if rid not in current["run_ids"]:
                     current["run_ids"].append(rid)
                 if ts > current["_last_fail_dt"]:
                     current["_last_fail_dt"] = ts
                     current["last_failure_utc"] = ts.isoformat()
-                    current["_branch"] = run.get("head_branch", "")
+                    current["_branch"] = branch
+                    current["_last_fail_finished"] = fail_finished
                 elif not current["last_failure_utc"]:
                     current["last_failure_utc"] = ts.isoformat()
         if not had_failed_step:
             rejected_count += 1
+            # A workflow-level failure without job details must remain visible.
+            signature = _signal(workflow_id, "UNKNOWN_JOB",
+                                "FAILED_RUN_WITHOUT_FAILED_JOB_DETAIL", branch)
+            current = groups.setdefault(signature, {
+                "fingerprint_sha256": signature,
+                "workflow_family": family,
+                "root_cause_status": "UNCLASSIFIED_FAILED_RUN_NEEDS_MANUAL_REVIEW",
+                "suggested_related_cases_not_proven": hints,
+                "run_ids": [],
+                "last_failure_utc": ts.isoformat(),
+                "subsequent_success_same_workflow_and_branch": False,
+                "_workflow_id": workflow_id,
+                "_branch": branch,
+                "_last_fail_dt": ts,
+                "_last_fail_finished": fail_finished,
+            })
+            if rid not in current["run_ids"]:
+                current["run_ids"].append(rid)
+            if ts > current["_last_fail_dt"]:
+                current["_last_fail_dt"] = ts
+                current["_last_fail_finished"] = fail_finished
+                current["last_failure_utc"] = ts.isoformat()
     for group in groups.values():
         for run, ts, _, _ in relevant:
             if (run.get("conclusion") == "success"
                     and run.get("workflow_id") == group["_workflow_id"]
                     and run.get("head_branch") == group["_branch"]
-                    and ts > group["_last_fail_dt"]):
+                    and group["_last_fail_finished"] is not None
+                    and run.get("run_started_at") is not None
+                    and _utc(run["run_started_at"]) > group["_last_fail_finished"]):
                 group["subsequent_success_same_workflow_and_branch"] = True
         group["run_count"] = len(group["run_ids"])
         # Dedup by actual run IDs, even if several jobs had same step signature.
@@ -150,22 +184,26 @@ def build_report(runs, jobs_by_run, *, now, limit_reached=False):
         del group["_workflow_id"]
         del group["_branch"]
         del group["_last_fail_dt"]
+        del group["_last_fail_finished"]
         group["resolution_status"] = "NOT_AUTOMATICALLY_CLOSED"
         group["subsequent_green_is_not_proof_of_repair"] = True
 
     public_groups = sorted(groups.values(),
                            key=lambda g: (-g["run_count"], g["fingerprint_sha256"]))
     return {
-        "schema": "PI-FLR-WATCH/0.2.0",
+        "schema": "PI-FLR-WATCH/0.2.1",
         "scope": "RECENT_BOUNDED_GITHUB_ACTIONS_METADATA_ONLY",
         "repository": REPO,
         "window_hours": MAX_AGE_HOURS,
         "observed_at_utc": moment.isoformat(),
         "scanned_completed_runs": len(relevant),
         "failed_run_without_failed_job_step": rejected_count,
+        "prior_attempts_not_inspected": unseen_rerun_history,
         "failure_fingerprint_count": len(public_groups),
-        "observation_coverage": "PARTIAL_LIMIT_REACHED" if limit_reached else
-                                "BOUNDED_WINDOW_NOT_FULL_REPOSITORY_HISTORY",
+        "observation_coverage": (
+            "PARTIAL_LIMIT_REACHED" if limit_reached else
+            "PARTIAL_PRIOR_RERUN_ATTEMPTS_UNINSPECTED" if unseen_rerun_history else
+            "BOUNDED_WINDOW_NOT_FULL_REPOSITORY_HISTORY"),
         "no_emails_or_raw_logs_exported": True,
         "automatic_closure_enabled": False,
         "groups": public_groups,
@@ -179,9 +217,24 @@ def validate_workflow_contract(text):
              and re.search(r"(?m)^    - cron: ['\"]17 \* \* \* \*['\"]", text) is not None,
              "WATCH_SCHEDULE_NOT_DECLARED")
     _require("workflow_dispatch:" in text, "WATCH_MANUAL_TRIGGER_MISSING")
-    _require("actions: read" in text and "contents: read" in text
-             and "issues: write" not in text and "contents: write" not in text,
+    _require("  push:\n    branches: [main]" in text and
+             "'tools/pi_flr_watch.py'" in text and
+             "'tests/test_pi_flr_watch.py'" in text,
+             "WATCH_MAIN_SMOKE_TRIGGER_MISSING")
+    # Parse the actual top-level permissions block, not unrelated strings
+    # or comments elsewhere. Every unrecognized or write-scoped key fails closed.
+    _require(text.count("permissions:") == 1 and
+             re.search(r"(?m)^[ ]{4,}permissions:", text) is None,
              "WATCH_NOT_READ_ONLY")
+    permission_match = re.search(
+        r"(?m)^permissions:[ \t]*\n((?:[ \t]+[^\n]*\n)*)", text)
+    _require(permission_match is not None, "WATCH_NOT_READ_ONLY")
+    perms = [line.strip() for line in permission_match.group(1).splitlines()
+             if line.strip() and not line.lstrip().startswith("#")]
+    _require(sorted(perms) == ["actions: read", "contents: read"],
+             "WATCH_NOT_READ_ONLY")
+    _require("if-no-files-found: error" in text,
+             "WATCH_MISSING_RECEIPT_NOT_FATAL")
     _require("python3 -m unittest discover -s tests -p 'test_pi_flr_watch.py'" in text,
              "WATCH_SELF_TEST_MISSING")
     _require("python3 tools/pi_flr_watch.py" in text, "WATCH_SCAN_NOT_EXECUTED")
@@ -195,7 +248,7 @@ def _get_json(endpoint, token):
         "Accept": "application/vnd.github+json",
         "Authorization": "Bearer " + token,
         "X-GitHub-Api-Version": "2022-11-28",
-        "User-Agent": "PI-FLR-ReadOnly-Watch/0.2.0",
+        "User-Agent": "PI-FLR-ReadOnly-Watch/0.2.1",
     })
     try:
         with urlopen(req, timeout=20) as response:

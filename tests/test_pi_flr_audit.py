@@ -30,9 +30,9 @@ class FLRValidationTests(unittest.TestCase):
 
     def test_valid_initial_registry(self):
         out = flr.validate(self.record)
-        self.assertEqual(out["version"], "0.2.0")
+        self.assertEqual(out["version"], "0.2.1")
         self.assertEqual(out["cases"], 7)
-        self.assertEqual(out["controls"], 6)
+        self.assertEqual(out["controls"], 7)
 
     def test_regression_original_naming_failure(self):
         """Original FLR-0001 unnamed ledger is rejected by the real language guard."""
@@ -160,6 +160,23 @@ class FLRValidationTests(unittest.TestCase):
         with self.assertRaisesRegex(flr.FLRError, "CI_WHOLE_REPOSITORY_LINK_GUARD"):
             flr.check_ci_contract(broken)
 
+    def test_report_unknown_failures_never_disappear(self):
+        """C07 cannot hide a failed run solely because no job details exist."""
+        observed = {
+            "id": 901, "name": "Public repository governance audit",
+            "workflow_id": 31, "head_branch": "main",
+            "status": "completed", "conclusion": "failure",
+            "created_at": "2026-10-20T17:00:00Z",
+            "updated_at": "2026-10-20T17:05:00Z",
+            "run_attempt": 1,
+        }
+        record = watch.build_report([observed], {901: []},
+                                    now="2026-10-21T00:00:00Z")
+        self.assertEqual(record["failed_run_without_failed_job_step"], 1)
+        self.assertEqual(record["failure_fingerprint_count"], 1)
+        self.assertEqual(record["groups"][0]["resolution_status"],
+                         "NOT_AUTOMATICALLY_CLOSED")
+
     def test_watch_deduplicates_distinct_runs(self):
         """FLR-C06: same failure step on distinct runs is one signal cluster, not a proven cause."""
         runs = [
@@ -223,21 +240,21 @@ class FLRValidationTests(unittest.TestCase):
 
     def test_case_deletion_against_prior_version_rejected(self):
         newer = self.case()
-        newer["release_version"] = "0.2.1"
+        newer["release_version"] = "0.2.2"
         newer["cases"] = newer["cases"][1:]
         with self.assertRaisesRegex(flr.FLRError, "HISTORICAL_CASE_DELETED"):
             flr.compare_history(newer, self.record)
 
     def test_case_metadata_rewrite_against_prior_version_rejected(self):
         newer = self.case()
-        newer["release_version"] = "0.2.1"
+        newer["release_version"] = "0.2.2"
         newer["cases"][0]["root_cause"] = "silently rewritten"
         with self.assertRaisesRegex(flr.FLRError, "HISTORICAL_CASE_METADATA_REWRITTEN"):
             flr.compare_history(newer, self.record)
 
     def test_event_erasal_against_prior_version_rejected(self):
         newer = self.case()
-        newer["release_version"] = "0.2.1"
+        newer["release_version"] = "0.2.2"
         newer["cases"][0]["events"][0]["note"] = "rewritten history"
         with self.assertRaisesRegex(flr.FLRError, "HISTORICAL_EVIDENCE_REWRITTEN"):
             flr.compare_history(newer, self.record)
@@ -251,20 +268,20 @@ class FLRValidationTests(unittest.TestCase):
         newer["cases"][0]["events"].append(fresh)
         with self.assertRaisesRegex(flr.FLRError, "VERSION_BUMP_REQUIRED"):
             flr.compare_history(newer, self.record)
-        newer["release_version"] = "0.2.1"
+        newer["release_version"] = "0.2.2"
         self.assertTrue(flr.compare_history(newer, self.record))
         self.assertEqual(flr.validate(newer)["cases"], 7)
 
     def test_control_deletion_against_prior_version_rejected(self):
         newer = self.case()
-        newer["release_version"] = "0.2.1"
+        newer["release_version"] = "0.2.2"
         newer["control_registry"] = newer["control_registry"][1:]
         with self.assertRaisesRegex(flr.FLRError, "HISTORICAL_CONTROL_REMOVED"):
             flr.compare_history(newer, self.record)
 
     def test_version_only_update_rejected(self):
         newer = self.case()
-        newer["release_version"] = "0.2.1"
+        newer["release_version"] = "0.2.2"
         with self.assertRaisesRegex(flr.FLRError, "EMPTY_VERSION_BUMP"):
             flr.compare_history(newer, self.record)
 
