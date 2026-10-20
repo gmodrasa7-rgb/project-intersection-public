@@ -4,7 +4,7 @@
   "korean_name": "연구 독립성·지속가능성 운영체계",
   "artifact_kind": "OPERATIONAL_PROTOCOL_NOT_SCIENTIFIC_HYPOTHESIS",
   "version": "0.1.0",
-  "version_status": "CANDIDATE_UNMERGED",
+  "version_status": "MAIN_OPERATIONAL_DESIGN_NOT_FIELD_VALIDATED",
   "as_of": "2026-10-21",
   "predecessor": "NO_PREDECESSOR_FOR_THIS_NEW_INTEGRATION_CONTRACT",
   "does_not_replace": [
@@ -12,12 +12,12 @@
     "funding/30_DAY_BRIDGE.md",
     "funding/90_DAY_PILOT.md",
     "continuity/GITHUB_LOCAL_HANDOFF_PROTOCOL.md",
-    "protocols/PI_RAMP_V0_5_EN_KO.md"
+    "protocols/PI_RAMP_V0_6_EN_KO.md"
   ],
   "artifacts": [
     {
       "path": "operations/PI_RISE_V0_1_0_EN_KO.md",
-      "blob_sha": "92932248b444f1b801ca46a640707220d9ad3df3"
+      "blob_sha": "5d4365d352449b7cc5aeb58601d46c0f79a96c54"
     },
     {
       "path": "operations/PI_RISE_SCHEMA_V0_1_0.json",
@@ -56,11 +56,16 @@
     "scientific_status": "NOT_APPLICABLE_OPERATIONAL_METHOD",
     "real_world_sustainability_effect": "UNVERIFIED",
     "independent_replication": "NOT_DONE",
-    "unit_tests": "PR_CI_CHECKER_AND_CUTSET_TESTS_PASSED_ON_2026_10_21; OTHER_WORKFLOW_CHECKS_PENDING_RECHECK",
+    "unit_tests": "SYNTHETIC_REGRESSION_PASSED_IN_MERGED_PR",
     "no_grant_or_cash_verified_by_this_release": true,
     "scope": "PI-RISE checker + hypothetical dependency fault tree, not real personal finance or independently restored files",
     "inferred_grant_awards": "NONE",
-    "provenance_status": "SELF_REPORTED_FIELDS_NOT_REAL_WORLD_CERTIFICATE"
+    "provenance_status": "SELF_REPORTED_FIELDS_NOT_REAL_WORLD_CERTIFICATE",
+    "ci_baseline": {
+      "head_sha": "b86d3b34f4d38a0f8fca3202b5f31c3b451d236c",
+      "all_nine_pr_workflows_passed": true,
+      "only_simulated_operation_evidence": true
+    }
   },
   "privacy": {
     "public_examples": "SYNTHETIC_ONLY",
@@ -75,6 +80,9 @@
     "base method version remains candidate v0.1.0 (not merged)",
     "added PI-RISE-CUT v0.1.0 synthetic diagnostic and negative tests",
     "verified cash statuses are input assertions not independent bank verification",
-    "conflict-safe rebuild on newer main without overwriting concurrent research"
-  ]
+    "conflict-safe rebuild on newer main without overwriting concurrent research",
+    "post-merge candidate labels corrected under separate PR; may appear only after that PR merges"
+  ],
+  "main_release_commit": "a17cce645d12a8de6fc54f77af18d25089acc3a0",
+  "main_release_pr": 261
 }
