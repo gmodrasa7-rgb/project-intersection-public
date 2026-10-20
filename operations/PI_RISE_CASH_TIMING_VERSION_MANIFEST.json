@@ -36,7 +36,7 @@
     },
     {
       "path": "tools/pi_rise_opportunity_audit.py",
-      "git_blob_sha": "b4dff2ec50679029dad5f11f3e29de262d6e847d"
+      "git_blob_sha": "bad807f71163bcdeb21d2866b8fc7a86aff2cca8"
     },
     {
       "path": "tests/test_pi_rise_opportunity_audit.py",
