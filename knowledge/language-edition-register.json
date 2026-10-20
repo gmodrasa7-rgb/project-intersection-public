@@ -423,14 +423,14 @@
     }
   ],
   "metrics": {
-    "markdown_total": 182,
+    "markdown_total": 183,
     "filename_classes": {
       "UNMARKED_LANGUAGE_UNVERIFIED": 42,
       "LEGACY_MIXED_READER_ENTRY": 2,
       "KO_SUFFIX_UNVERIFIED": 85,
       "ORDERED_BILINGUAL_FOUNDER_OR_GOVERNANCE": 2,
       "EN_SUFFIX_UNVERIFIED": 25,
-      "COMBINED_NAMING_UNVERIFIED": 26
+      "COMBINED_NAMING_UNVERIFIED": 27
     },
     "meaning_verified_pairs": 0,
     "meaning_verified_pairs_is_a_status_count_not_a_claim_that_no_reviews_ever_occurred": true
@@ -1193,6 +1193,12 @@
       "content_equivalence": "NOT_REVIEWED"
     },
     {
+      "path": "protocols/PI_RAMP_V0_6_EN_KO.md",
+      "filename_class": "COMBINED_NAMING_UNVERIFIED",
+      "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
       "path": "reports/AI_FINAL_CONVERGENCE_RISK_TOP10_KO.md",
       "filename_class": "KO_SUFFIX_UNVERIFIED",
       "counterpart_path": null,
@@ -1835,6 +1841,16 @@
       "new_edition_pairs": 0,
       "editorial_notes": "PI-RAMP v0.5 adds a six-pair evidence-type matrix plus original-author Study-7 direct-replication and cross-domain LLM-analogy boundaries. Null study identity and independent review are maintained; sources and earlier negative evidence preserved.",
       "reviewer_actions": "Check participant/data overlap independently, review exact originals and evaluate causal generalization; no study equivalence or experimental effects certified."
+    },
+    {
+      "as_of": "2026-10-21",
+      "status": "V06_SYNTHETIC_MOTIVE_NONIDENTIFICATION_NOT_EMPIRICAL_VALIDATION",
+      "new_documents": [
+        "protocols/PI_RAMP_V0_6_EN_KO.md"
+      ],
+      "new_edition_pairs": 0,
+      "editorial_notes": "Source-linked 8-work comparison and 48-cell exact arithmetic witness: right-respect versus private self-image latent utility terms remain observationally equivalent under modeled conditions. Zero real participants, no reader-effect results or independent replication.",
+      "reviewer_actions": "Reassess original sources' design/coverage, validate actual B-refusal measurement and any exclusion restrictions; preserve rival explanations."
     }
   ],
   "path_layout_policy": "Keep the project root entry-only; bilingual full research editions live in existing research/ and their original historical combined documents retain stable root URLs."
