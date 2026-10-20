@@ -109,7 +109,7 @@ def audit(data, check_paths=False, root=None):
         if item["receipt_evidence"] == "BANK_RECONCILED_DECLARED":
             require(item["stage"] == "PAID_VERIFIED" and type(ref) is str
                     and (ref.startswith("funding/SPONSORSHIP_PUBLIC_LEDGER.md#")
-                         or ref.startswith("funding/GRANTS_CONTRACTS_PUBLIC_LEDGER.md#")),
+                         or ref.startswith("funding/GRANTS_CONTRACTS_PUBLIC_LEDGER_EN_KO.md#")),
                     prefix + " declared receipt must point to dedicated public ledger row")
             require(ref not in payment_refs, prefix + " duplicate payment reference")
             payment_refs.add(ref)
