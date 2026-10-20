@@ -3,6 +3,8 @@
 
 Status date / 상태 기준일: **2026-10-04** (historical text preserved; PI-RISE integration checked 2026-10-21)
    
+**2026-10-21 · PI-RISE-CASH-TIMING v0.1.0 (설계):** [돈의 도착시점·용도 적합성](../operations/PI_RISE_CASH_TIMING_V0_1_0_EN_KO.md) · [원기관 확인 기회·비신청 상태원장](../operations/PI_RISE_OPPORTUNITY_REGISTRY_V0_1_0.json) · [독립평가 지원 검토자료(제출 아님)](PI_RISE_APPLICANT_PACK_EN_KO.md). 최초 피드백 ≠ 지급, 기회 ≠ 신청. 입금·한국 적격성·세무·개인 생계 유동성 미확인.
+
 **2026-10-21 · PI-RISE v0.2.0 통합 재원·회계 진입점:** [상위 연구자 존속·자금/회계 통제 규약](../operations/PI_RISE_V0_2_0_EN_KO.md) · [신청/수여/입금 상태원장](../operations/PI_RISE_FINANCE_PIPELINE_V0_1_0.json) · [기관 연구비·계약의 별도 공개 장부](GRANTS_CONTRACTS_PUBLIC_LEDGER_EN_KO.md) · [기존 개인후원 유일 정본](SPONSORSHIP_PUBLIC_LEDGER.md). 기관 프로젝트 자금과 개인 Sponsors 후원을 분리하고, 실제 입금은 각 정본에서만 대사. **공개 재무 총계 없음; 미검증은 0이 아님.**
 
 **PI-RISE-VAC v0.1.0 main operational submodule:** [Verification-aware resource allocation / 검증역량 제약 최적화](../operations/PI_RISE_VAC_V0_1_0_EN_KO.md) · [synthetic queue script](../tools/pi_rise_vac.py). $4,800–4,900/month assumes $3,750 hypothetical researcher gross, $400 reviewer reserve, $450–550 *all-in* AI spend, $200 buffer; reviewer participation and scientific effects **NOT verified**.
