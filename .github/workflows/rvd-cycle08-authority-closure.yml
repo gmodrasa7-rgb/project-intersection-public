@@ -1,0 +1,53 @@
+name: RVD Cycle08 bounded trust-owner topology witnesses
+
+on:
+  pull_request:
+    paths:
+      - "experiments/rvd_08/**"
+      - "research/RVD_CYCLE08_*"
+      - ".github/workflows/rvd-cycle08-authority-closure.yml"
+  push:
+    branches: [main]
+    paths:
+      - "experiments/rvd_08/**"
+      - "research/RVD_CYCLE08_*"
+      - ".github/workflows/rvd-cycle08-authority-closure.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  bounded-authority-models:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Execute synthetic authority-topology enumeration
+        run: python experiments/rvd_08/authority_closure_witness.py > rvd_cycle08_synthetic.json
+      - name: Verify zero empirical promotion and negative cases
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          r=json.loads(Path("rvd_cycle08_synthetic.json").read_text())
+          assert r["version"]=="RVD-v0.8.0"
+          assert r["evidence_grade"]=="CONSTRUCTED_TRUST_TOPOLOGY_ONLY_NOT_DEPLOYED_SECURITY"
+          a=r["systems"]
+          assert len(a)==11
+          assert sum(x["bounded_operational_rights_gate"] for x in a.values())==2
+          assert a["a_controls_every_layer"]["bounded_operational_rights_gate"] is False
+          assert "CAPTURED_ATTESTATION_THRESHOLD" in a["sybil_2_of_3"]["minimal_bypass"]["reasons"]
+          assert a["root_override"]["safe_against_declared_attacker_sets"] is False
+          assert a["cosigner_compromise_f1"]["safe_against_declared_attacker_sets"] is False
+          assert a["exit_without_viable_successor"]["exit_channel_feasible_in_model"] is False
+          assert a["self_audited_only"]["audit_independent_in_model"] is False
+          assert r["same_public_statement_opposite_underlying_rights"] is True
+          assert r["intrinsic_A_preference"]=="UNIDENTIFIED"
+          assert r["real_B_exit_right"]=="NOT_TESTED"
+          assert r["full_VC"]=="HOLD"
+          print("PASS: scoped synthetic independence/authority witness only")
+          PY
