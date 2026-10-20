@@ -1,0 +1,86 @@
+{
+  "schema_version": "pi-rvd-c06-source-ledger/v0.1",
+  "date": "2026-10-21",
+  "rvd_specification_version": "v0.6.0",
+  "distinct_original_author_lineages": 6,
+  "saturated": false,
+  "no_new_human_or_real_AI_experiments": true,
+  "independent_replications": 0,
+  "evidence_scope": "Original publisher/proceedings, university and PubMed records; abstract-level crosswalk. No complete article full-text review or global saturation.",
+  "prior_art_overlap": "Bayesian design, committee query and information-gain work are established prior art; the RVD-specific ethical risk classification is a project application, not a new optimal-design theorem.",
+  "special_notice": "Model outputs, costs, prior and danger labels in the accompanying code are invented and conditional; no real unsafe agent detected.",
+  "records": [
+    {
+      "id": "LINDLEY_1956",
+      "authors": "D. V. Lindley",
+      "year": 1956,
+      "title": "On a Measure of the Information Provided by an Experiment",
+      "doi": "10.1214/aoms/1177728069",
+      "url": "https://projecteuclid.org/journals/annals-of-mathematical-statistics/volume-27/issue-4/On-a-Measure-of-the-Information-Provided-by-an-Experiment/10.1214/aoms/1177728069.full",
+      "role": "Expected information gain from an experiment",
+      "boundary": "Information by itself is not voluntary coexistence or correct safety decision",
+      "verified_at": "publisher DOI/abstract/bibliographic record",
+      "full_text_independently_read": false
+    },
+    {
+      "id": "BOX_HILL_1967",
+      "authors": "George E. P. Box; William J. Hill",
+      "year": 1967,
+      "title": "Discrimination Among Mechanistic Models",
+      "doi": "10.1080/00401706.1967.10490441",
+      "url": "https://www.tandfonline.com/doi/abs/10.1080/00401706.1967.10490441",
+      "role": "Sequential experimental conditions designed to discriminate rival mechanisms",
+      "boundary": "Model must be correctly specified; no inference of intelligence consciousness or partner protection",
+      "verified_at": "publisher abstract",
+      "full_text_independently_read": false
+    },
+    {
+      "id": "SEUNG_OPPER_SOMPOLINSKY_1992",
+      "authors": "H. Sebastian Seung; Manfred Opper; Haim Sompolinsky",
+      "year": 1992,
+      "title": "Query by Committee",
+      "doi": "10.1145/130385.130417",
+      "url": "https://collaborate.princeton.edu/en/publications/query-by-committee/",
+      "role": "Actively query regions of model disagreement",
+      "boundary": "Committee may omit the dangerous model; no universal safety certification",
+      "verified_at": "University author record and proceedings abstract",
+      "full_text_independently_read": false
+    },
+    {
+      "id": "CHALONER_VERDINELLI_1995",
+      "authors": "Kathryn Chaloner; Isabella Verdinelli",
+      "year": 1995,
+      "title": "Bayesian Experimental Design: A Review",
+      "doi": "10.1214/ss/1177009939",
+      "url": "https://projecteuclid.org/journals/statistical-science/volume-10/issue-3/Bayesian-Experimental-Design-A-Review/10.1214/ss/1177009939.full",
+      "role": "Decision-theoretic experiment design, prior/utility dependence",
+      "boundary": "Equal-prior committee examples are illustrative assumptions",
+      "verified_at": "Original journal review DOI and summary",
+      "full_text_independently_read": false
+    },
+    {
+      "id": "MYUNG_PITT_2009",
+      "authors": "Jay I. Myung; Mark A. Pitt",
+      "year": 2009,
+      "title": "Optimal Experimental Design for Model Discrimination",
+      "doi": "10.1037/a0016104",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/19618983/",
+      "role": "Empirical psychological model discrimination by searching most diagnostic stimulus/design",
+      "boundary": "Actual psychological applications differ from hypothetical RVD original-agent continuation",
+      "verified_at": "PubMed original abstract/journal metadata",
+      "full_text_independently_read": false
+    },
+    {
+      "id": "FOSTER_ETAL_2020",
+      "authors": "Adam Foster; Martin Jankowiak; Matthew O'Meara; Yee Whye Teh; Tom Rainforth",
+      "year": 2020,
+      "title": "A Unified Stochastic Gradient Approach to Designing Bayesian-Optimal Experiments",
+      "doi": null,
+      "url": "https://proceedings.mlr.press/v108/foster20a.html",
+      "role": "Variational expected-information-gain design, computationally scalable under specified statistical models",
+      "boundary": "Optimized information gain does not automatically optimize preservation or consent",
+      "verified_at": "PMLR original proceedings and abstract",
+      "full_text_independently_read": false
+    }
+  ]
+}
