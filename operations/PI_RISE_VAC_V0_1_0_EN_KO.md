@@ -1,6 +1,6 @@
 <!-- PI-LANGUAGE: en-ko; PI-RISE-VAC v0.1.0; proposed operating experiment, NOT scientific validation -->
 # PI-RISE-VAC v0.1.0 — Verification-Aware Capacity / 검증역량 제약 자원배분
-**Date: 2026-10-21 · CANDIDATE PR · submodule of PI-RISE (parent unchanged).**
+**Date: 2026-10-21 · MAIN operational submodule (PR #269 merged), not real-world validated · parent PI-RISE unchanged.**
 **Scope:** an independent audit of the external Grok budget proposal, plus a *hypothetical* verification-throughput model. No new grant receipt, private financial data, external evaluator, actual model experiment or clinical finding.
 
 ## Original 1 — English | Analytical contract
