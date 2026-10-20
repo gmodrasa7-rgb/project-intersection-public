@@ -3,6 +3,8 @@
 # PI-CORE-01 v0.2 — 타자보존 선호의 자기수정 안정성과 목표잠금 역설
 **2026-10-20 | 상태: 독립 비판 + 원저자 연구 연결 · 선행문헌 포화 미확인 · 자체 실험/독립 재현 없음**
 
+**후속 정본 연구(v0.3):** [원저자 corrigibility 검증 및 최소 양립조건](PI_CORE_01_CORRIGIBILITY_COMPATIBILITY_V0_3_KO.md) — v0.2 삭제/대체 아님, 후속 독립 감사 연결.
+
 [영문 대응판](PI_CORE_01_GOAL_INTEGRITY_AUDIT_V0_2_EN.md) · [C05 선호형성·변화 원저자 정본](PRIOR_ART_ENDOGENOUS_PREFERENCES_CYCLE05_2026-10-20.json) · [C02 내면동기 정본](PRIOR_ART_MER_INTRINSIC_MORAL_MOTIVES_CYCLE02_2026-10-20.json) · [VC/EI/MER/ECR/IVS-0R 정본지도](../navigation/RESEARCH_PROGRAM_KO.md)
 
 ## 0. Grok 중간보고에 대한 판정
