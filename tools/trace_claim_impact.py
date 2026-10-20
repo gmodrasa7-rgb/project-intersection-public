@@ -32,7 +32,7 @@ EXPECTED_CLAIMS = {
     "CL-VC-HARD": "UNRESOLVED",
     "CL-RAMP-EFFECT": "EFFECT_UNMEASURED",
 }
-EXPECTED_VERSIONS = {"RVD": "0.2.0", "PI-RAMP": "0.4.0", "DCA-1": "0.2.0"}
+EXPECTED_VERSIONS = {"RVD": "0.2.0", "PI-RAMP": "0.5.0", "DCA-1": "0.2.0"}
 # Independent contract sentinels for selected material dependencies.
 # These are necessary known edges, never a proof that no other edge is missing.
 REQUIRED_EDGES = {
@@ -48,7 +48,7 @@ REQUIRED_SOURCE_PATHS = {
     "experiments/e009/RESULT.json",
     "experiments/dca1/RESULT.json",
     "research/RVD_VERSION_MANIFEST.json",
-    "protocols/PI_RAMP_V0_4_EN_KO.md",
+    "protocols/PI_RAMP_V0_5_EN_KO.md",
 }
 
 def read(path, override=None):
