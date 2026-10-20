@@ -1,0 +1,42 @@
+{
+  "component_id": "PI-RISE-BUDGET",
+  "full_name": "Project Intersection — Research Independence & Sustainability Engine / Minimum Viable Research Budget",
+  "version": "0.1.0",
+  "status": "UNMERGED_CANDIDATE",
+  "date": "2026-10-21",
+  "method": "Decimal conservative monthly-ceiling scenario",
+  "parent": "operations/PI_RISE_V0_1_0_EN_KO.md",
+  "parent_version_unchanged": true,
+  "does_not_modify": [
+    "funding/30_DAY_BRIDGE.md",
+    "funding/90_DAY_PILOT.md",
+    "funding/SPONSORSHIP_PUBLIC_LEDGER.md"
+  ],
+  "artifact_shas": [
+    {
+      "path": "operations/PI_RISE_BUDGET_V0_1_0_EN_KO.md",
+      "sha": "ea87a960853b90efa6aa96168139e50321ad17bb"
+    },
+    {
+      "path": "tools/pi_rise_budget.py",
+      "sha": "cdb7c97e88318f45cbabccbe7c92fc05692b4931"
+    },
+    {
+      "path": "tests/test_pi_rise_budget.py",
+      "sha": "03c16fa9ffbc832601176c0213ef796337bf7b33"
+    }
+  ],
+  "proof_boundary": {
+    "cash_received": "UNVERIFIED",
+    "sponsor_legal_tax": "UNKNOWN",
+    "actual_review": "NOT_DONE",
+    "scientific_value": "NOT_CLAIMED",
+    "published_examples": "SYNTHETIC_ONLY"
+  },
+  "prices_and_rates": {
+    "usd_krw_reference": "1326 2026-10-20 historical",
+    "model_plan": "Plus $20; Pro100 $100",
+    "reserve_rate": "HYPOTHETICAL 20%, NOT LAW",
+    "power_usd": "HYPOTHETICAL $15"
+  }
+}

@@ -5,6 +5,7 @@ on:
       - "operations/PI_RISE_*"
       - "tools/pi_rise_check.py"
       - "tools/pi_rise_cutset.py"
+      - "tools/pi_rise_budget.py"
       - "tests/test_pi_rise_*.py"
       - ".github/workflows/pi-rise-integrity.yml"
   push:
@@ -13,6 +14,7 @@ on:
       - "operations/PI_RISE_*"
       - "tools/pi_rise_check.py"
       - "tools/pi_rise_cutset.py"
+      - "tools/pi_rise_budget.py"
       - "tests/test_pi_rise_*.py"
       - ".github/workflows/pi-rise-integrity.yml"
   workflow_dispatch:
@@ -32,6 +34,10 @@ jobs:
         run: |
           python3 tools/pi_rise_cutset.py > /tmp/pi_rise_cutset.json
           python3 -c 'import json; x=json.load(open("/tmp/pi_rise_cutset.json")); assert x["status"] == "SYNTHETIC_FAULT_TREE_MODEL_ONLY"; assert len(x["active_research_cut_sets"]) == 6; assert len(x["record_cut_sets"]) == 1'
+      - name: Budget scenario guard
+        run: |
+          python3 tools/pi_rise_budget.py > /tmp/pi_rise_budget.json
+          python3 -c 'import json; x=json.load(open("/tmp/pi_rise_budget.json")); assert x["minimum_20pc"]["monthly_usd"] == "3785.00"; assert x["small_review_20pc"]["monthly_usd"] == "4265.00"; assert x["preserved_5000_bridge_comparison"]["personal_net_shortfall_usd"] == "440.00"'
       - name: Verify synthetic example expected status
         run: |
           python3 tools/pi_rise_check.py operations/PI_RISE_SYNTHETIC_EXAMPLE_V0_1_0.json > /tmp/pi_rise_synthetic_result.json

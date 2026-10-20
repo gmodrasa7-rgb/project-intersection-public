@@ -4,6 +4,8 @@
 
 **New operating-system release (2026-10-21):** [PI-RISE v0.1.0](../operations/PI_RISE_V0_1_0_EN_KO.md), separate from VC/MER/EI/ECR/IVS-0R science and PI-RAMP archive governance; **merged operational design, not validated field effect**. [Machine version receipt](../operations/PI_RISE_VERSION_MANIFEST.json).
 
+**Budget operations candidate, not a scientific release:** [PI-RISE-BUDGET v0.1.0](../operations/PI_RISE_BUDGET_V0_1_0_EN_KO.md) · [version SHA manifest](../operations/PI_RISE_BUDGET_VERSION_MANIFEST.json). Unmerged, no paid funds or independently validated operating effect. / **PI-RISE-BUDGET v0.1.0 후보:** 세후 보수 역산·AI/API·외부검증 예산 분리, 실입금 미확인.
+
 ## Original 1 — English
 
 ### What we research in one paragraph

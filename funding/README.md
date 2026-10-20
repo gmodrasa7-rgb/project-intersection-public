@@ -3,6 +3,8 @@
 
 Status date / 상태 기준일: **2026-10-04**
 
+**PI-RISE-BUDGET v0.1.0 candidate (2026-10-21):** [Net researcher pay versus independently reviewable research budget](../operations/PI_RISE_BUDGET_V0_1_0_EN_KO.md) · [Decimal calculator](../tools/pi_rise_budget.py). $3,785/month is a hypothetical 20% reserve scenario, not a certified tax rate or receipt. Old proposals unchanged.
+
 **PI-RISE v0.1.0 main / 연구 지속가능성:** [Operational independence, subsistence and recovery](../operations/PI_RISE_V0_1_0_EN_KO.md). A merged operational integration of existing funding and stewardship records; not a new fund receipt, personal account, or amendment to the canonical sponsorship policy.
 
 **Fastest funder review / 외부 지원자 90초 시작:** [Funder brief, evidence, negative result and contact route / 90초 자금지원 안내](FUNDER_START_HERE.md).

@@ -453,14 +453,14 @@
     }
   ],
   "metrics": {
-    "markdown_total": 191,
+    "markdown_total": 192,
     "filename_classes": {
       "UNMARKED_LANGUAGE_UNVERIFIED": 42,
       "LEGACY_MIXED_READER_ENTRY": 2,
       "KO_SUFFIX_UNVERIFIED": 88,
       "ORDERED_BILINGUAL_FOUNDER_OR_GOVERNANCE": 2,
       "EN_SUFFIX_UNVERIFIED": 28,
-      "COMBINED_NAMING_UNVERIFIED": 29
+      "COMBINED_NAMING_UNVERIFIED": 30
     },
     "meaning_verified_pairs": 0,
     "meaning_verified_pairs_is_a_status_count_not_a_claim_that_no_reviews_ever_occurred": true
@@ -1154,6 +1154,12 @@
       "path": "navigation/START_HERE_KO.md",
       "filename_class": "KO_SUFFIX_UNVERIFIED",
       "counterpart_path": "navigation/START_HERE_EN.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "operations/PI_RISE_BUDGET_V0_1_0_EN_KO.md",
+      "filename_class": "COMBINED_NAMING_UNVERIFIED",
+      "counterpart_path": null,
       "content_equivalence": "NOT_REVIEWED"
     },
     {
