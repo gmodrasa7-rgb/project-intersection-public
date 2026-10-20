@@ -3,6 +3,8 @@
 
 Status date / 상태 기준일: **2026-10-04**
 
+**PI-RISE v0.1.0 candidate / 연구 지속가능성:** [Operational independence, subsistence and recovery](../operations/PI_RISE_V0_1_0_EN_KO.md). An unmerged integration of existing funding and stewardship records; not a new fund receipt, personal account, or amendment to the canonical sponsorship policy.
+
 **Fastest funder review / 외부 지원자 90초 시작:** [Funder brief, evidence, negative result and contact route / 90초 자금지원 안내](FUNDER_START_HERE.md).
 **New individual sponsorship governance / 개인 연구 후원 운영기준 (2026-10-13):** [One canonical two-use policy + public ledger](SPONSORSHIP_PUBLIC_LEDGER.md) · [Legal/tax risk register](LEGAL_TAX_RISK_REGISTER_2026-10-13_EN_KO.md). / **신규 개인 후원**의 자율적 사용처는 연구자 1인 인건비와 LLM 사용료의 두 가지로 한정한다. 별도 **30일 연구비 제안**의 4개 항목, **90일 파일럿**, 유상 계약은 다른 재원으로 유지하며 이중계상을 금지한다. 개인 Sponsors 거래액·입금액은 원자료 미확인 상태로 0이라고 단정하지 않는다.
 
