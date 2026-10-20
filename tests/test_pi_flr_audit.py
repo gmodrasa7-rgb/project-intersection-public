@@ -14,6 +14,7 @@ sys.path.insert(0, str(ROOT / "tools"))
 import pi_flr_audit as flr
 import pi_rise_manifest_guard as rise
 import check_language_separation as language
+import pi_flr_experiment_identity as identity
 
 
 class FLRValidationTests(unittest.TestCase):
@@ -27,9 +28,9 @@ class FLRValidationTests(unittest.TestCase):
 
     def test_valid_initial_registry(self):
         out = flr.validate(self.record)
-        self.assertEqual(out["version"], "0.1.0")
-        self.assertEqual(out["cases"], 3)
-        self.assertEqual(out["controls"], 3)
+        self.assertEqual(out["version"], "0.1.1")
+        self.assertEqual(out["cases"], 4)
+        self.assertEqual(out["controls"], 4)
 
     def test_regression_original_naming_failure(self):
         """Original FLR-0001 unnamed ledger is rejected by the real language guard."""
@@ -63,6 +64,36 @@ class FLRValidationTests(unittest.TestCase):
         self.assertNotEqual(broken, self.workflow)
         with self.assertRaisesRegex(flr.FLRError, "CI_PATH_OR_BRANCH_FILTER"):
             flr.check_ci_contract(broken)
+
+    def test_regression_e010_identity_collision(self):
+        """FLR-0004: different blocked inspection draft must never replace main E010."""
+        current = json.loads((ROOT / identity.RESULT).read_text(encoding="utf-8"))
+        source = (ROOT / identity.README).read_text(encoding="utf-8")
+        self.assertEqual(identity.audit_identity(current, source, False)["status"],
+                         "PUBLIC_E010_IDENTITY_BOUNDARY_PASS")
+        old_study = copy.deepcopy(current)
+        old_study["model"] = "dynamic_inspector_authority_safety_audit"
+        with self.assertRaisesRegex(identity.IdentityError, "E010_IDENTITY_REPLACED"):
+            identity.audit_identity(old_study, source, False)
+
+    def test_e010_cannot_be_false_preregistered(self):
+        current = json.loads((ROOT / identity.RESULT).read_text(encoding="utf-8"))
+        source = (ROOT / identity.README).read_text(encoding="utf-8")
+        current["status"] = "PREREGISTERED_EMPIRICALLY_VALIDATED"
+        with self.assertRaisesRegex(identity.IdentityError, "E010_EVIDENCE_GRADE"):
+            identity.audit_identity(current, source, False)
+
+    def test_e010_colliding_lineage_notice_must_remain(self):
+        current = json.loads((ROOT / identity.RESULT).read_text(encoding="utf-8"))
+        source = (ROOT / identity.README).read_text(encoding="utf-8")
+        with self.assertRaisesRegex(identity.IdentityError, "E010_LEGACY_IDENTITY_COLLISION"):
+            identity.audit_identity(current, source.replace("실험 ID 충돌 경고", ""), False)
+
+    def test_e010_blocked_legacy_executable_not_imported(self):
+        current = json.loads((ROOT / identity.RESULT).read_text(encoding="utf-8"))
+        source = (ROOT / identity.README).read_text(encoding="utf-8")
+        with self.assertRaisesRegex(identity.IdentityError, "E010_BLOCKED_LEGACY_BENCHMARK"):
+            identity.audit_identity(current, source, True)
 
     def test_unfiltered_ci_contract(self):
         self.assertTrue(flr.check_ci_contract(self.workflow))
@@ -108,21 +139,21 @@ class FLRValidationTests(unittest.TestCase):
 
     def test_case_deletion_against_prior_version_rejected(self):
         newer = self.case()
-        newer["release_version"] = "0.1.1"
+        newer["release_version"] = "0.1.2"
         newer["cases"] = newer["cases"][1:]
         with self.assertRaisesRegex(flr.FLRError, "HISTORICAL_CASE_DELETED"):
             flr.compare_history(newer, self.record)
 
     def test_case_metadata_rewrite_against_prior_version_rejected(self):
         newer = self.case()
-        newer["release_version"] = "0.1.1"
+        newer["release_version"] = "0.1.2"
         newer["cases"][0]["root_cause"] = "silently rewritten"
         with self.assertRaisesRegex(flr.FLRError, "HISTORICAL_CASE_METADATA_REWRITTEN"):
             flr.compare_history(newer, self.record)
 
     def test_event_erasal_against_prior_version_rejected(self):
         newer = self.case()
-        newer["release_version"] = "0.1.1"
+        newer["release_version"] = "0.1.2"
         newer["cases"][0]["events"][0]["note"] = "rewritten history"
         with self.assertRaisesRegex(flr.FLRError, "HISTORICAL_EVIDENCE_REWRITTEN"):
             flr.compare_history(newer, self.record)
@@ -136,20 +167,20 @@ class FLRValidationTests(unittest.TestCase):
         newer["cases"][0]["events"].append(fresh)
         with self.assertRaisesRegex(flr.FLRError, "VERSION_BUMP_REQUIRED"):
             flr.compare_history(newer, self.record)
-        newer["release_version"] = "0.1.1"
+        newer["release_version"] = "0.1.2"
         self.assertTrue(flr.compare_history(newer, self.record))
-        self.assertEqual(flr.validate(newer)["cases"], 3)
+        self.assertEqual(flr.validate(newer)["cases"], 4)
 
     def test_control_deletion_against_prior_version_rejected(self):
         newer = self.case()
-        newer["release_version"] = "0.1.1"
+        newer["release_version"] = "0.1.2"
         newer["control_registry"] = newer["control_registry"][1:]
         with self.assertRaisesRegex(flr.FLRError, "HISTORICAL_CONTROL_REMOVED"):
             flr.compare_history(newer, self.record)
 
     def test_version_only_update_rejected(self):
         newer = self.case()
-        newer["release_version"] = "0.1.1"
+        newer["release_version"] = "0.1.2"
         with self.assertRaisesRegex(flr.FLRError, "EMPTY_VERSION_BUMP"):
             flr.compare_history(newer, self.record)
 
