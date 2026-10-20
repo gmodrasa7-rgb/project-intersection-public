@@ -1,21 +1,28 @@
-name: PI-RAMP v0.3 receipt consistency and negative controls
+name: PI-RAMP source, evidence-unit and receipt regressions
 
 on:
   pull_request:
     paths:
       - "protocols/PI_RAMP_V0_3_*.md"
       - "protocols/PI_RAMP_V0_4_EN_KO.md"
+      - "protocols/PI_RAMP_V0_5_EN_KO.md"
       - "research/PRIOR_ART_*2026-10-20.json"
       - "evaluation/pi_ramp/**"
       - "tools/check_pi_ramp_receipts.py"
       - "tools/audit_prior_art_c01_c12_identity.py"
+      - "tools/audit_pi_ramp_study_lineage.py"
       - ".github/workflows/pi-ramp-receipt.yml"
   push:
     branches: [main]
     paths:
       - "protocols/PI_RAMP_V0_3_*.md"
+      - "protocols/PI_RAMP_V0_4_EN_KO.md"
+      - "protocols/PI_RAMP_V0_5_EN_KO.md"
+      - "research/PRIOR_ART_*2026-10-20.json"
       - "evaluation/pi_ramp/**"
       - "tools/check_pi_ramp_receipts.py"
+      - "tools/audit_prior_art_c01_c12_identity.py"
+      - "tools/audit_pi_ramp_study_lineage.py"
       - ".github/workflows/pi-ramp-receipt.yml"
   workflow_dispatch:
 
@@ -30,11 +37,15 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Validate pilot receipt against actual repository paths
+      - name: Validate v0.3 pilot receipt
         run: python tools/check_pi_ramp_receipts.py
-      - name: Challenge nine invalid receipts
+      - name: Reject 9 falsified receipt mutations
         run: python tools/check_pi_ramp_receipts.py --self-test
-      - name: Audit original-author literature fingerprints, source lineage and near-title contrast
+      - name: Audit 233 original-author record identities and six title-related contrasts
         run: python tools/audit_prior_art_c01_c12_identity.py
-      - name: Refuse 11 dangerous record collisions and unjustified study-dedup claims
+      - name: Reject 11 dangerous DOI, claim and study-dedup mutations
         run: python tools/audit_prior_art_c01_c12_identity.py --self-test
+      - name: Audit v0.5 partial-replication, modality and cross-domain lineage
+        run: python tools/audit_pi_ramp_study_lineage.py
+      - name: Reject 17 false-replication and overgeneralization mutations
+        run: python tools/audit_pi_ramp_study_lineage.py --self-test

@@ -1,0 +1,182 @@
+{
+  "schema": "pi-ramp.study-evidence-lineage/v0.5",
+  "audit_id": "RAMP-20261021-004",
+  "recorded_date": "2026-10-21",
+  "predecessor": "evaluation/pi_ramp/PRIOR_ART_C01_C12_IDENTITY_AUDIT_20261020.json",
+  "scope": "Six v0.4 near-title candidate pairs and one hidden human-study-7 replication bridge; NOT global study-level deduplication.",
+  "status": "SOURCE_LINKED_PROVISIONAL_REVIEW_NOT_INDEPENDENT_VALIDATION",
+  "external_primary_review": "SOURCE_ABSTRACT_OR_SPECIFIED_OPEN_ARTICLE",
+  "study_identity_verified_count": null,
+  "independently_replication_verified_count": null,
+  "measured_reader_effect": null,
+  "no_automatic_merges": true,
+  "pairs": [
+    {
+      "ids": [
+        "C09-16",
+        "C09-17"
+      ],
+      "relation": "PARTIAL_TASK_REPLICATION_WITH_MODALITY_EXTENSION",
+      "evidence": "OPEN_ORIGINAL_ARTICLE",
+      "sources": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC4260587/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5544327/"
+      ],
+      "specific": "2017 work (63 participants, four harm/reward conditions) reproduces other-harm aversion but also tests willingness to accept own harm for others' monetary benefit; not a direct full-protocol repetition.",
+      "sample_overlap": "DISTINCT_RECRUITMENT_DESCRIBED",
+      "reading_limit": "Open publisher-author archived article and method details for 2017; source-level claim for 2014, no replication of every original task.",
+      "pair_id": "P1",
+      "study_identity": "UNKNOWN_OR_NOT_APPLICABLE",
+      "independent_replication_certified": false,
+      "auto_merge_authorized": false,
+      "claim_scope": "CONTEXT_BOUND_ONLY"
+    },
+    {
+      "ids": [
+        "PI-C07-09",
+        "PI-C07-15"
+      ],
+      "relation": "FOLLOWUP_MECHANISM_DISTINCTION",
+      "evidence": "ORIGINAL_PUBLISHER_ABSTRACTS",
+      "sources": [
+        "https://onlinelibrary.wiley.com/doi/10.3982/ECTA11573",
+        "https://www.sciencedirect.com/science/article/abs/pii/S089982561930154X"
+      ],
+      "specific": "2014 reveals intrinsic value of one's own decision rights; 2020 France/Japan experiment distinguishes independence, power and self-reliance motives. Neither tests A's valuation of B's independent continuance.",
+      "sample_overlap": "UNKNOWN",
+      "reading_limit": "Publisher abstracts verified; no overlap of participant-level datasets independently established.",
+      "pair_id": "P2",
+      "study_identity": "UNKNOWN_OR_NOT_APPLICABLE",
+      "independent_replication_certified": false,
+      "auto_merge_authorized": false,
+      "claim_scope": "CONTEXT_BOUND_ONLY"
+    },
+    {
+      "ids": [
+        "EI-C01-13",
+        "EI-C01-14"
+      ],
+      "relation": "DISTINCT_FORMAL_EVOLUTIONARY_ANALYSES",
+      "evidence": "ORIGINAL_OPEN_ARTICLES_AND_METADATA",
+      "sources": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC3637695/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC3780848/"
+      ],
+      "specific": "Different author teams and papers in 2013 test evolutionary regimes of extortion and generosity; results depend on modelled population/strategy assumptions and are not unconditional coexistence proofs.",
+      "sample_overlap": "NOT_APPLICABLE_FORMAL",
+      "reading_limit": "Formal work; simulation/code/model parameter identity not independently reproduced.",
+      "pair_id": "P3",
+      "study_identity": "UNKNOWN_OR_NOT_APPLICABLE",
+      "independent_replication_certified": false,
+      "auto_merge_authorized": false,
+      "claim_scope": "CONTEXT_BOUND_ONLY"
+    },
+    {
+      "ids": [
+        "C09-02",
+        "C09-04"
+      ],
+      "relation": "RELATED_FORMAL_PARETO_RIGHTS_RESPONSE",
+      "evidence": "BIBLIOGRAPHIC_ORIGINAL_METADATA_ONLY",
+      "sources": [
+        "https://ideas.repec.org/a/eee/jetheo/v7y1974i4p388-410.html",
+        "https://doi.org/10.1016/0022-0531(76)90071-5"
+      ],
+      "specific": "Separate 1974 Gibbard and 1976 Kelly formal publications in related rights/Pareto lineage; precise theorem dependence and logical entailment cannot be certified from paywalled abstract-free bibliographic records.",
+      "sample_overlap": "NOT_APPLICABLE_FORMAL",
+      "reading_limit": "No accessible full original theorem texts; theoretical relationship is PROVISIONAL, not proved.",
+      "pair_id": "P4",
+      "study_identity": "UNKNOWN_OR_NOT_APPLICABLE",
+      "independent_replication_certified": false,
+      "auto_merge_authorized": false,
+      "claim_scope": "CONTEXT_BOUND_ONLY"
+    },
+    {
+      "ids": [
+        "PI-C05-07",
+        "PI-C04-11"
+      ],
+      "relation": "CROSS_DOMAIN_ANALOGY_NOT_REPLICATION",
+      "evidence": "ORIGINAL_PUBLISHER_AND_ACL_TEXT",
+      "sources": [
+        "https://www.nature.com/articles/nature11467",
+        "https://aclanthology.org/2025.emnlp-main.267/"
+      ],
+      "specific": "Rand et al 2012 report 10 human economic-game studies; Li/Shirado EMNLP 2025 test LLM social-dilemma prompts, not a participant-level replication or a causal proof that high intelligence is predatory.",
+      "sample_overlap": "DISTINCT_ENTITY_CLASS",
+      "reading_limit": "Human paper source abstract and ACL conference original; model/evaluation details not independently rerun.",
+      "pair_id": "P5",
+      "study_identity": "UNKNOWN_OR_NOT_APPLICABLE",
+      "independent_replication_certified": false,
+      "auto_merge_authorized": false,
+      "claim_scope": "CONTEXT_BOUND_ONLY"
+    },
+    {
+      "ids": [
+        "EI-C01-04",
+        "EI-C01-05"
+      ],
+      "relation": "SAME_AUTHORS_FORMAL_FOLLOWUP",
+      "evidence": "ORIGINAL_PUBLISHER_ABSTRACT_AND_INDEX",
+      "sources": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC42214/",
+        "https://www.cambridge.org/core/journals/american-political-science-review/article/abs/evolutionary-stability-of-cooperation/526FBDB8D994719E6CC8D77273391D60"
+      ],
+      "specific": "Bendor/Swistak 1995 distinguishes evolutionary stability notions; 1997 paper develops robustness under a specified evolutionary dynamic. Same authorship ≠ same publication or independently replicated empirical cohort.",
+      "sample_overlap": "NOT_APPLICABLE_FORMAL",
+      "reading_limit": "Formal theorem proofs not independently reproduced; 1997 printed publication year preferred to later online-hosting date.",
+      "pair_id": "P6",
+      "study_identity": "UNKNOWN_OR_NOT_APPLICABLE",
+      "independent_replication_certified": false,
+      "auto_merge_authorized": false,
+      "claim_scope": "CONTEXT_BOUND_ONLY"
+    }
+  ],
+  "replication_edges": [
+    {
+      "edge_id": "E-RAND-STUDY7-RRR",
+      "from": "PI-C05-07",
+      "to": "PI-C05-17",
+      "relation": "PREREGISTERED_DIRECT_REPLICATION_OF_SUBSTUDY",
+      "replicated_unit": "Rand et al 2012 Study 7 time-pressure causal manipulation ONLY (not all ten studies)",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5453400/",
+      "original_source": "https://www.nature.com/articles/nature11467",
+      "result": "Original reporting a positive time-pressure contrast, 2017 preregistered multilab intent-to-treat pooled comparison near zero; restriction to treatment compliers may introduce selection bias.",
+      "evidence_status": "ORIGINAL_REPLICATION_ARTICLE_ABSTRACT_AND_SOURCE_NOTES",
+      "generalization": "Does not establish that all spontaneous cooperation findings fail; cannot generalize to LLM agents.",
+      "shares_original_participants": false,
+      "claims_full_original_article_replicated": false
+    },
+    {
+      "edge_id": "E-RAND-LLM-ANALOGY",
+      "from": "PI-C05-07",
+      "to": "PI-C04-11",
+      "relation": "CROSS_DOMAIN_ANALOGY_NOT_REPLICATION",
+      "replicated_unit": null,
+      "source": "https://aclanthology.org/2025.emnlp-main.267/",
+      "original_source": "https://www.nature.com/articles/nature11467",
+      "result": "Conceptual human-to-LLM comparison of reasoning and cooperative economic-game behavior; distinct agents, interventions and experimental context.",
+      "evidence_status": "ORIGINAL_PUBLISHER_AND_ACL_ABSTRACTS",
+      "generalization": "Cross-domain comparison cannot directly validate human causal mechanism in current/future AI.",
+      "shares_original_participants": false,
+      "claims_full_original_article_replicated": false
+    }
+  ],
+  "safety_gates": [
+    "source_record_id != report_id != experimental_study_id != task_or_study_subset",
+    "partial conceptual replication does not license entire-article replication claim",
+    "new paper or same author does not prove independent study or independent sample",
+    "unknown dataset overlap is UNKNOWN, never False by default",
+    "contradictory or negative result retained; do not collapse outcomes across cost modalities",
+    "formal theory and nonhuman model evaluation may not be pooled as human participant replications",
+    "metadata lookup and original abstract do not certify all original methodological details",
+    "external source evidence is not proof of a general theorem of voluntary coexistence"
+  ],
+  "known_limits": [
+    "Six title-similar pairs were selected by an algorithm, not systematically or exhaustively searched.",
+    "Other same-study report pairs may have dissimilar titles or non-DOI identifiers and remain undetected.",
+    "No complete originator-cohort linkage, independent full-text audit or reanalysis for all six pairs.",
+    "Formal theorem derivation and sample-overlap checks require original paper contents and/or registered data.",
+    "Source-level provenance and audit tests do not measure archive usability or guarantee claim truth."
+  ]
+}
