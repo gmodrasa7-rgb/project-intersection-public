@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.1.0",
-  "registry_document_version": "0.1.0",
+  "schema_version": "0.2.0",
+  "registry_document_version": "0.2.0",
   "snapshot_date": "2026-10-20",
-  "main_basis_commit": "f3e26cfb36134a5e11509ea97f3cf9f714928a58",
+  "main_basis_commit": "77038d8a99dfc6e704d168e9a16cb754d001e62f",
   "audit_scope": "Selected public main files and open PR metadata; prior conversations only partial retrieval, not a complete chat export or private-repository inventory",
   "terminology_spec_version": "0.1",
   "principles": [
@@ -23,7 +23,9 @@
       "candidate_version": null,
       "publication_state": "MAIN",
       "evidence_state": "DESIGN_AND_SYNTHETIC_ONLY",
-      "source": "README.md"
+      "source": "README.md",
+      "candidate_pr": null,
+      "current_source_blob_sha": null
     },
     {
       "id": "VC",
@@ -34,7 +36,9 @@
       "candidate_version": null,
       "publication_state": "MAIN",
       "evidence_state": "OUTCOME_NOT_UNIVERSALLY_VALIDATED",
-      "source": "research/TERMINOLOGY_FIVE_AXES_V0_1_KO.md"
+      "source": "research/TERMINOLOGY_FIVE_AXES_V0_1_KO.md",
+      "candidate_pr": null,
+      "current_source_blob_sha": null
     },
     {
       "id": "MER",
@@ -45,7 +49,9 @@
       "candidate_version": null,
       "publication_state": "MAIN",
       "evidence_state": "MECHANISMS_UNVALIDATED",
-      "source": "research/TERMINOLOGY_FIVE_AXES_V0_1_KO.md"
+      "source": "research/TERMINOLOGY_FIVE_AXES_V0_1_KO.md",
+      "candidate_pr": null,
+      "current_source_blob_sha": null
     },
     {
       "id": "EI",
@@ -56,7 +62,9 @@
       "candidate_version": null,
       "publication_state": "MAIN",
       "evidence_state": "HYPOTHESES_UNVALIDATED",
-      "source": "research/TERMINOLOGY_FIVE_AXES_V0_1_KO.md"
+      "source": "research/TERMINOLOGY_FIVE_AXES_V0_1_KO.md",
+      "candidate_pr": null,
+      "current_source_blob_sha": null
     },
     {
       "id": "ECR",
@@ -65,9 +73,11 @@
       "how": "Separate actor-count from roles; assess causal identifiability and reversal",
       "current_version": "UNASSIGNED",
       "candidate_version": "1.4",
-      "publication_state": "MAIN_WITH_PROPOSED_PR",
+      "publication_state": "MAIN_WITH_UNMERGED_PROPOSAL",
       "evidence_state": "DESIGN_ONLY; CANDIDATE_PR_211_UNMERGED",
-      "source": "research/TERMINOLOGY_FIVE_AXES_V0_1_KO.md"
+      "source": "research/TERMINOLOGY_FIVE_AXES_V0_1_KO.md",
+      "candidate_pr": 211,
+      "current_source_blob_sha": null
     },
     {
       "id": "IVS-0R",
@@ -78,7 +88,9 @@
       "candidate_version": null,
       "publication_state": "MAIN",
       "evidence_state": "METHOD_NOT_SCIENTIFIC_CERTIFICATION",
-      "source": "research/TERMINOLOGY_FIVE_AXES_V0_1_KO.md"
+      "source": "research/TERMINOLOGY_FIVE_AXES_V0_1_KO.md",
+      "candidate_pr": null,
+      "current_source_blob_sha": null
     },
     {
       "id": "ICM",
@@ -89,7 +101,9 @@
       "candidate_version": null,
       "publication_state": "MAIN",
       "evidence_state": "CANDIDATE_MODEL",
-      "source": "README.md"
+      "source": "README.md",
+      "candidate_pr": null,
+      "current_source_blob_sha": null
     },
     {
       "id": "RGBM",
@@ -100,7 +114,9 @@
       "candidate_version": null,
       "publication_state": "MAIN",
       "evidence_state": "CANDIDATE_MODEL",
-      "source": "README.md"
+      "source": "README.md",
+      "candidate_pr": null,
+      "current_source_blob_sha": null
     },
     {
       "id": "CCPH",
@@ -111,29 +127,35 @@
       "candidate_version": null,
       "publication_state": "MAIN",
       "evidence_state": "DATA_MODEL_NOT_PROOF",
-      "source": "research/RESEARCH_OVERVIEW_KO.md"
+      "source": "research/RESEARCH_OVERVIEW_KO.md",
+      "candidate_pr": null,
+      "current_source_blob_sha": null
     },
     {
       "id": "RVD",
       "title": "Resonance–Value Dynamics",
       "what": "Candidate study of relational value and motivational change under coexistence and exploitation",
       "how": "Distinguish mutually generated value from manipulation; empirical and negative controls needed",
-      "current_version": "UNASSIGNED",
-      "candidate_version": "0.1.0",
-      "publication_state": "PR_OPEN_UNMERGED",
-      "evidence_state": "PROPOSAL_ONLY_PR_245",
-      "source": "research/MER_RESONANCE_VALUE_FORMATION_2026-10-20_KO.md"
+      "current_version": "0.1.0",
+      "candidate_version": null,
+      "publication_state": "MAIN",
+      "evidence_state": "CONCEPTUAL_HYPOTHESIS_UNTESTED",
+      "source": "research/RVD_VERSION_MANIFEST.json",
+      "candidate_pr": null,
+      "current_source_blob_sha": "e65874b966e3a86ebfac9a9420a13e12aa81c491"
     },
     {
       "id": "PI-RAMP",
       "title": "Research Archive Meta-Protocol",
       "what": "Measure whether archive changes improve evidence discovery, falsification and reader correctness",
       "how": "Predeclare reader tasks, negative controls, correction and rollback",
-      "current_version": "0.2.0",
-      "candidate_version": "0.3.0",
-      "publication_state": "MAIN_AND_DRAFT_PR",
-      "evidence_state": "EFFECT_UNMEASURED_CANDIDATE_PR_246",
-      "source": "protocols/PI_RAMP_V0_2_KO.md"
+      "current_version": "0.3.0",
+      "candidate_version": null,
+      "publication_state": "MAIN",
+      "evidence_state": "PILOT_NO_READER_EFFECT_MEASUREMENT",
+      "source": "protocols/PI_RAMP_V0_3_KO.md",
+      "candidate_pr": null,
+      "current_source_blob_sha": "3220d823663470be80d4a6b7bdf366436883c299"
     },
     {
       "id": "PI-ROADMAP",
@@ -144,7 +166,9 @@
       "candidate_version": null,
       "publication_state": "MAIN",
       "evidence_state": "DESIGN_ONLY",
-      "source": "research/PI_ROADMAP_OPERATIONAL_GATES_V0_2_3_EN_KO.md"
+      "source": "research/PI_ROADMAP_OPERATIONAL_GATES_V0_2_3_EN_KO.md",
+      "candidate_pr": null,
+      "current_source_blob_sha": "96be95f5c3f05039c7dca0c72c5514f1a0a7dc1b"
     },
     {
       "id": "DCA-0",
@@ -155,7 +179,9 @@
       "candidate_version": null,
       "publication_state": "MAIN",
       "evidence_state": "DEFENSIVE_EFFECT_UNVERIFIED",
-      "source": "research/DCA0_DIFFERENTIAL_COEXISTENCE_ACCELERATION_2026-10-20_EN_KO.md"
+      "source": "research/DCA0_DIFFERENTIAL_COEXISTENCE_ACCELERATION_2026-10-20_EN_KO.md",
+      "candidate_pr": null,
+      "current_source_blob_sha": null
     },
     {
       "id": "E007",
@@ -166,7 +192,9 @@
       "candidate_version": null,
       "publication_state": "MAIN",
       "evidence_state": "SYNTHETIC_ONLY",
-      "source": "experiments/e007/README_KO.md"
+      "source": "experiments/e007/README_KO.md",
+      "candidate_pr": null,
+      "current_source_blob_sha": null
     },
     {
       "id": "E008",
@@ -177,7 +205,9 @@
       "candidate_version": null,
       "publication_state": "MAIN",
       "evidence_state": "NO_MAIN_POLICY_RESULT",
-      "source": "experiments/e008/README_KO.md"
+      "source": "experiments/e008/README_KO.md",
+      "candidate_pr": null,
+      "current_source_blob_sha": null
     },
     {
       "id": "E009",
@@ -188,7 +218,9 @@
       "candidate_version": null,
       "publication_state": "MAIN",
       "evidence_state": "SYNTHETIC_NEGATIVE_RESULT",
-      "source": "experiments/e009/RESULT_KO.md"
+      "source": "experiments/e009/RESULT_KO.md",
+      "candidate_pr": null,
+      "current_source_blob_sha": null
     },
     {
       "id": "E010",
@@ -199,7 +231,9 @@
       "candidate_version": null,
       "publication_state": "MAIN",
       "evidence_state": "EXPLORATORY_POSTHOC",
-      "source": "experiments/e010/README_KO.md"
+      "source": "experiments/e010/README_KO.md",
+      "candidate_pr": null,
+      "current_source_blob_sha": null
     },
     {
       "id": "C13",
@@ -208,9 +242,25 @@
       "how": "Verify original author lineage, article versus study, externality and countercases",
       "current_version": "UNASSIGNED",
       "candidate_version": null,
-      "publication_state": "PR_OPEN_UNMERGED",
+      "publication_state": "PROPOSAL_ONLY",
       "evidence_state": "LITERATURE_SYNTHESIS_NOT_PI_EMPIRICAL_RESULT",
-      "source": "https://github.com/gmodrasa7-rgb/project-intersection-public/pull/248"
+      "source": "https://github.com/gmodrasa7-rgb/project-intersection-public/pull/248",
+      "candidate_pr": 248,
+      "current_source_blob_sha": null
     }
-  ]
+  ],
+  "snapshot_kind": "CURATED_CURRENT_STATUS_NOT_A_RELEASE_TAG",
+  "freshness_policy": {
+    "offline": "Validate manifest structure, direct version anchors, evidence boundaries and negative controls",
+    "remote": "Check GitHub main source blob SHA and candidate PR open/unmerged state; network errors = UNVERIFIED not PASS",
+    "release": "Version contract != scientific evidence or independent validation",
+    "on_change": "Update registry in the same PR as research version changes; preserve old versions and negative findings"
+  },
+  "evidence_separation": {
+    "publication": "main vs unmerged proposal",
+    "method": "prior-art / modeling / synthetic / field / independent replication",
+    "outcome": "negative / no-main-result / unresolved / supported within declared scope",
+    "independence": "evaluator and source lineage, not number of AI responses"
+  },
+  "audit_limitation": "Live PR states and source blobs may change; automated checks are necessary for currency, but cannot prove completeness of historical or private research."
 }
