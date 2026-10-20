@@ -1,5 +1,7 @@
 # PRIOR ART SATURATION MAP / 선행연구 포화지도
 
+**2026-10-20 / 3회차: 도덕적 보호대상 경계·인식·개체분류 문헌 조사** — [원저자 26편 심층 대조·재현·반례·IVS-0R 구분](research/PRIOR_ART_MORAL_BOUNDARY_CYCLE03_2026-10-20_KO.md) · [DOI 23편·비DOI 3편 원저자·출처·지식상태 JSON](research/PRIOR_ART_MORAL_BOUNDARY_CYCLE03_2026-10-20.json). **주요 원저자 근거:** 동물의 식량분류가 고통/보호 평가에 영향(Bratanova 2011), Bastian(2012) 연구 1·2의 등록 직접 재현(Jacobs 2024), 상황 관련 동물지능 인식의 부분/혼합 재현(Tian 2021), 관점취하기 개입의 전반적 영효과(Ladak 2023), 로봇 경험 귀속과 자기이익 기반 가해판단(Si 2026). **강한 한계:** `perceived_moral_patiency != actual_sentience`, 마음인식 척도 1/2/3차원 충돌, LLM 행동결과 ≠ 내재적 선호, 프리프린트 2편 별도 등급. **문헌 포화:** `SEARCH_ACTIVE / SATURATION_NOT_VERIFIED`.
+
 **2026-10-20 / 2회차 MER 내재적 동기·무감시 문헌 연구:** [원저자 22편 + 보조 메타/종설 2편, 상충 결과·식별 논리·2025–2026 재현 연구](research/PRIOR_ART_MER_INTRINSIC_MORAL_MOTIVES_CYCLE02_2026-10-20_KO.md) · [원저자·DOI·출처·범위·연도정규화 JSON](research/PRIOR_ART_MER_INTRINSIC_MORAL_MOTIVES_CYCLE02_2026-10-20.json). **핵심:** 겉으로 관대한 선택도 침묵이탈·정보회피·규범동조·보상구조·익명성·금액·선택지 확대에 따라 달라짐. 무감시 조건의 제한적 공정성 증거도 별도로 보존. **문헌 포화: SEARCH_ACTIVE / SATURATION_NOT_VERIFIED.**
 
 **2026-10-20 / 1회차 EI 극단적 비대칭 문헌 감사:** [원저자 20편·반례·수학적 경계·측정 제안 (KO)](research/PRIOR_ART_EI_EXTREME_ASYMMETRY_CYCLE01_2026-10-20_KO.md) · [DOI/출처·검증수준·미해결 전선 JSON 20건](research/PRIOR_ART_EI_EXTREME_ASYMMETRY_CYCLE01_2026-10-20.json). **결과:** 권력 우위·상대교체권 아래 관측 협력과 착취가 동시 증가할 수 있고(Hilbe et al. 2016), 전략과 보상이 함께 변하면 협력이 붕괴할 수 있음(Stewart & Plotkin 2014). **판정:** 주제별 `SEARCH_ACTIVE / SATURATION_NOT_VERIFIED`; 포괄적 문헌검색 완료나 신규 실험 결과 아님.
