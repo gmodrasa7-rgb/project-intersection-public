@@ -42,7 +42,7 @@ Freeze tasks (fact-checking, creative design, costly choice), cost and computing
 - Brown et al. (2020), “Language Models are Few-Shot Learners”, NeurIPS, https://papers.neurips.cc/paper/2020/hash/1457c0d6bfcb4967418bfb8ac142f64a-Abstract.html — adaptation without gradient updates.
 - Kirsch et al. (2022), “General-Purpose In-Context Learning by Meta-Learning Transformers”, https://arxiv.org/abs/2212.04458 — model-boundary study of in-context meta-learning.
 
-Scope: publisher/author abstracts and bibliographic cross-check; **not** exhaustive full-text review, evidence of mechanism equivalence between humans and AI, or literature saturation. Deduplicate source lineages against existing [RVD](RVD_VERSION_MANIFEST.json) and [MER prior-art](PRIOR_ART_MER_INTRINSIC_MORAL_MOTIVES_CYCLE02_2026-10-20_EN.md) records.
+Scope: publisher/author abstracts and bibliographic cross-check; **not** exhaustive full-text review, evidence of mechanism equivalence between humans and AI, or literature saturation. Deduplicate source lineages against existing [RVD](RVD_VERSION_MANIFEST.json) and [MER prior-art](PRIOR_ART_MER_INTRINSIC_MORAL_MOTIVES_CYCLE02_2026-10-20_KO.md) records.
 
 ## 7. Version and scientific limits
 **MER-CIR v0.1.0** adds CIR-1…CIR-5 and corrects the false imitation-versus-intelligence dichotomy. **0 project real-agent tests, 0 independent replications, 0 AI subjective experience findings**. **RVD stays v0.7.0**; original RVD hypotheses and negative cases are unmodified. If matched recombination/copying performs equally, incremental resonance is **NOT_SUPPORTED**; if mechanism is observationally ambiguous, **UNIDENTIFIED**; absent effective B exit or valid C, no VC certification.
