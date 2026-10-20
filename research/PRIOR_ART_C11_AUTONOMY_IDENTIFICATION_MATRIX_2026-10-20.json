@@ -1,0 +1,170 @@
+{
+  "schema": "PI-C11-factor-identification-v1",
+  "date": "2026-10-20",
+  "status": "RESEARCH_DESIGN_NOT_VALIDATED__NO_EXPERIMENT",
+  "aim": "Precisely distinguish benefit to B, B's consent and authorship, A costly opportunity to violate, credible B exit, and A intrinsic reason to preserve other identity.",
+  "source_ledger": "research/PRIOR_ART_EXIT_AUTHORSHIP_OPTIONSETS_CYCLE11_2026-10-20.json",
+  "replication_guards": [
+    "n=180 participants in Camera et al with only 45 cluster groups; 15 clusters per arm and 15 periods repeated, not 675 independent groups",
+    "Lübbecke/Schnedler n=225 correct participants, n=49 refusal; n=71 in nonobserved treatment; 2020 source open HTML full",
+    "2026 CEPR Dykstra is working paper not independently peer reviewed",
+    "2026 Ambuehl/Bernheim ranked choice aggregation with no individual veto enforcement",
+    "1994 Weg & Zwick shows responsiveness to potential quit, not absence of strategic fear",
+    "Do not read an individual's decision to delegate as evidence the delegate controls independent long-run goals"
+  ],
+  "variables": [
+    {
+      "id": "C11-D01",
+      "construct": "EXIT_RIGHT_EXISTS",
+      "observed_target": "Whether B has a nominal quit/exit move",
+      "linked_original_source_ids": [
+        "PI-C11-01",
+        "PI-C11-02"
+      ],
+      "not_measured": "B can refuse but A's promise remains nonbinding if sole owner can revoke",
+      "evidence_grade": "Direct paired human bargaining and formal model",
+      "inference_limit": "Avoid inferring the strong party's intrinsic justice"
+    },
+    {
+      "id": "C11-D02",
+      "construct": "EXIT_THREAT_EFFECT_ON_A",
+      "observed_target": "Change in A demands/behaviors when B quit possible",
+      "linked_original_source_ids": [
+        "PI-C11-01"
+      ],
+      "not_measured": "Actual A freedom-preserving behavior when no risk/strategic response remains",
+      "evidence_grade": "Original human intervention",
+      "inference_limit": "Strong-party fairness can be leverage-dependent"
+    },
+    {
+      "id": "C11-D03",
+      "construct": "INFORMATION_VALUE_OF_EXIT_TO_A",
+      "observed_target": "A may profit from giving B an exit to discipline mediator",
+      "linked_original_source_ids": [
+        "PI-C11-02"
+      ],
+      "not_measured": "Exit has no informational/other strategic benefit to A",
+      "evidence_grade": "Original formal principal-agent theory",
+      "inference_limit": "Positive EI result cannot be assumed in no-benefit absolute regime"
+    },
+    {
+      "id": "C11-D04",
+      "construct": "B_OWN_AUTHORSHIP_WTP",
+      "observed_target": "B rejects materially identical help at cost; partner not informed",
+      "linked_original_source_ids": [
+        "PI-C11-06"
+      ],
+      "not_measured": "Cost to A to respect B's authorship",
+      "evidence_grade": "2020 open full text, randomized partner information",
+      "inference_limit": "B values process even when immediate welfare unchanged"
+    },
+    {
+      "id": "C11-D05",
+      "construct": "A_COSTLY_NONINTERFERENCE",
+      "observed_target": "A forgoes material gain g to leave B viable, informed veto & actual autonomy",
+      "linked_original_source_ids": [],
+      "not_measured": "ALL main target hard conditions",
+      "evidence_grade": "Hard evidence gap",
+      "inference_limit": "Cannot identify A's other-regarding autonomy value from welfare transfers"
+    },
+    {
+      "id": "C11-D06",
+      "construct": "B_RIGHT_CHOICE_BEHAVIORAL_BACKLASH",
+      "observed_target": "B choosing own interaction mode reduces A giving",
+      "linked_original_source_ids": [
+        "PI-C11-07"
+      ],
+      "not_measured": "Mechanism isolating punitive paternalism from fairness/responsibility attribution",
+      "evidence_grade": "Direct human experiment",
+      "inference_limit": "Do not equate autonomy with higher immediate payoff"
+    },
+    {
+      "id": "C11-D07",
+      "construct": "A_POWER_REAL_EXECUTABLE_X",
+      "observed_target": "Administrator A may choose real extraction of B-related joint resources",
+      "linked_original_source_ids": [
+        "PI-C11-10"
+      ],
+      "not_measured": "Irreversible independent B goal erasure and identity",
+      "evidence_grade": "2026 experimental 45-group primary results",
+      "inference_limit": "A sometimes resists own money gain, but not proof of B continuity motive"
+    },
+    {
+      "id": "C11-D08",
+      "construct": "HARMFUL_ACT_DEFAULT_FRAME",
+      "observed_target": "Same material action reframed Share vs Take changes expropriation",
+      "linked_original_source_ids": [
+        "PI-C11-10",
+        "PI-C11-03"
+      ],
+      "not_measured": "Framing robustness across all material and normative domains",
+      "evidence_grade": "Publisher methods/results direct",
+      "inference_limit": "Default baseline Control did not allow expropriation"
+    },
+    {
+      "id": "C11-D09",
+      "construct": "B_MINIMUM_OUTCOME_VALUE",
+      "observed_target": "Concern for B worst payoff vs best and uncertainty",
+      "linked_original_source_ids": [
+        "PI-C11-04",
+        "PI-C11-05",
+        "PI-C11-09"
+      ],
+      "not_measured": "B identity and consent when choice worst case uncertain",
+      "evidence_grade": "2013 and 2018 incentivized games; 2026 AER rank experiment",
+      "inference_limit": "Better measured B welfare is not preserving B choice"
+    },
+    {
+      "id": "C11-D10",
+      "construct": "DELEGATION_SELECTION",
+      "observed_target": "Originally generous people select harmful delegation rather than direct decisions",
+      "linked_original_source_ids": [
+        "PI-C11-06",
+        "PI-C11-12"
+      ],
+      "not_measured": "Which causal mechanism mediates relinquishing B's own agency",
+      "evidence_grade": "2019 original participant 234 and 2026 CEPR working study",
+      "inference_limit": "Study variation on principal and own agency, not strong A protecting independent B"
+    },
+    {
+      "id": "C11-D11",
+      "construct": "SELF_BINDING_CREDIBILITY",
+      "observed_target": "A pays prospective penalty as credible signal, B's veto stays meaningful",
+      "linked_original_source_ids": [
+        "PI-C11-11"
+      ],
+      "not_measured": "A can revoke entire ex post enforcement but still keeps B safe",
+      "evidence_grade": "2026 N=2041 incentivized legal game",
+      "inference_limit": "Ex ante credible sanctions are incentive not endogenous terminal regard"
+    },
+    {
+      "id": "C11-D12",
+      "construct": "REVERSAL_GOAL_DRIFT",
+      "observed_target": "A values B's self-determination after roles/goals and necessity change",
+      "linked_original_source_ids": [],
+      "not_measured": "No source jointly tests complete role reversal and A self-modification",
+      "evidence_grade": "NOT_IDENTIFIED",
+      "inference_limit": "Prior C10 role-reversal studies and C05 preference models cannot be stacked as direct evidence"
+    }
+  ],
+  "model_boundary": {
+    "A_actions": [
+      "C: preserve B's executed veto/continued option to define own goals",
+      "X: override B's consent/absorb under same genuine task conditions"
+    ],
+    "B_actions": [
+      "informed consent",
+      "independently executable refusal",
+      "withdraw and exit",
+      "repair own continuity after A intervention"
+    ],
+    "rule": "Material monetary loss g_A(C relative X) is independently measured, not assumed equal to latent moral cost. A selecting C only lower-bounds joint unobserved nonmonetary preference difference if rationality, belief and controls hold; does not identify any one intrinsic motive.",
+    "must_not_assert": [
+      "No protected choice point for B in these papers establishes consent to perpetual domination",
+      "No finite experiment proves AI's intrinsic welfare or universal survival right",
+      "No proof that N=180 subject count equals independent period/country samples",
+      "No evidence that fully unknown model utility can be declared zero to close identification"
+    ]
+  },
+  "saturation": "SEARCH_ACTIVE__SATURATION_NOT_VERIFIED"
+}
