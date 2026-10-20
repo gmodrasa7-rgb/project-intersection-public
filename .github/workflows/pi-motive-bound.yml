@@ -1,0 +1,28 @@
+name: PI-20H conditional motive-bound self-test
+on:
+  pull_request:
+    paths:
+      - "tools/pi_motive_lower_bound.py"
+      - "research/PI_20H_SYNTHESIS_2026-10-21_EN_KO.md"
+      - ".github/workflows/pi-motive-bound.yml"
+  push:
+    branches: [main]
+    paths:
+      - "tools/pi_motive_lower_bound.py"
+      - "research/PI_20H_SYNTHESIS_2026-10-21_EN_KO.md"
+      - ".github/workflows/pi-motive-bound.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  fail-closed-synthetic-identification:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Guard unidentified motives and missing rights against false positive bounds
+        run: python tools/pi_motive_lower_bound.py --self-test
