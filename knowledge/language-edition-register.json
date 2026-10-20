@@ -367,11 +367,11 @@
     }
   ],
   "metrics": {
-    "markdown_total": 167,
+    "markdown_total": 168,
     "filename_classes": {
       "UNMARKED_LANGUAGE_UNVERIFIED": 42,
       "LEGACY_MIXED_READER_ENTRY": 2,
-      "KO_SUFFIX_UNVERIFIED": 78,
+      "KO_SUFFIX_UNVERIFIED": 79,
       "ORDERED_BILINGUAL_FOUNDER_OR_GOVERNANCE": 2,
       "EN_SUFFIX_UNVERIFIED": 21,
       "COMBINED_NAMING_UNVERIFIED": 22
@@ -1257,6 +1257,12 @@
       "content_equivalence": "NOT_REVIEWED"
     },
     {
+      "path": "research/PRIOR_ART_EXIT_AUTHORSHIP_OPTIONSETS_CYCLE11_2026-10-20_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
       "path": "research/PRIOR_ART_INFORMED_VETO_POWER_CYCLE10_2026-10-20_KO.md",
       "filename_class": "KO_SUFFIX_UNVERIFIED",
       "counterpart_path": null,
@@ -1594,6 +1600,16 @@
       "new_edition_pairs": 1,
       "editorial_notes": "PI-RAMP v0.2.0 draws methods from primary Cochrane/PRISMA, FAIR, W3C PROV, Diataxis, NASA configuration management, Google SRE, DORA and The Turing Way. This is a suggested adaptation, not validation. Previous PR #236 registered as retrospective example with effects unmeasured.",
       "reviewer_actions": "Test predeclared reader tasks before/after, obtain an independent review receipt, confirm primary-source study/report deduplication; no claim of effectiveness or translation parity."
+    },
+    {
+      "as_of": "2026-10-20",
+      "status": "CONCURRENT_MAIN_SOURCE_REGISTERED_STRUCTURAL_ONLY",
+      "new_documents": [
+        "research/PRIOR_ART_EXIT_AUTHORSHIP_OPTIONSETS_CYCLE11_2026-10-20_KO.md"
+      ],
+      "new_edition_pairs": 0,
+      "editorial_notes": "C11 source-critical original-author study report added to main concurrently after PI-RAMP branch fork; registered without changing its substance, source attribution, or claiming translation parity.",
+      "reviewer_actions": "Independent source and bibliographic deduplication, study/report grouping, and scientific claim checks remain pending."
     }
   ],
   "path_layout_policy": "Keep the project root entry-only; bilingual full research editions live in existing research/ and their original historical combined documents retain stable root URLs."
