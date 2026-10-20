@@ -53,7 +53,7 @@ class VACRegressions(unittest.TestCase):
 
     def test_capacity_zero_not_silent_external_attestation(self):
         x = queue_path(arrivals_per_week=[1,2], verified_capacity_per_week=[0,0])
-        self.assertEqual(x["independent_external_attested"], "UNKNOWN_NOT_PROVIDED")
+        self.assertEqual(x["external_attestation_input_unverified"], "UNKNOWN_NOT_PROVIDED")
 
     def test_empty_and_mismatched_week_series_rejected(self):
         for a,c in (([],[]), ([1],[1,2])):
