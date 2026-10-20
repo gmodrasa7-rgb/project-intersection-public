@@ -87,8 +87,8 @@ def queue_path(*, arrivals_per_week, verified_capacity_per_week,
         "verifier_overload_observed_in_synthetic_model": (
             sum(arrival) > sum(capacity)
         ),
-        "independent_external_attested": (
-            "UNKNOWN_NOT_PROVIDED" if ext is None else ext
+        "external_attestation_input_unverified": (
+            "UNKNOWN_NOT_PROVIDED" if ext is None else {"claimed_count": ext, "credential_validation": "NOT_PERFORMED"}
         ),
         "measurements": "SYNTHETIC_INPUT_ONLY",
     }
