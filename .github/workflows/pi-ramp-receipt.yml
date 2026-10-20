@@ -7,12 +7,14 @@ on:
       - "protocols/PI_RAMP_V0_4_EN_KO.md"
       - "protocols/PI_RAMP_V0_5_EN_KO.md"
       - "protocols/PI_RAMP_V0_6_EN_KO.md"
+      - "protocols/PI_RAMP_V0_7_EN_KO.md"
       - "research/PRIOR_ART_*2026-10-20.json"
       - "evaluation/pi_ramp/**"
       - "tools/check_pi_ramp_receipts.py"
       - "tools/audit_prior_art_c01_c12_identity.py"
       - "tools/audit_pi_ramp_study_lineage.py"
       - "tools/audit_pi_ramp_veto_identification.py"
+      - "tools/audit_pi_ramp_rvd_r11_sharp_bounds.py"
       - ".github/workflows/pi-ramp-receipt.yml"
   push:
     branches: [main]
@@ -21,12 +23,14 @@ on:
       - "protocols/PI_RAMP_V0_4_EN_KO.md"
       - "protocols/PI_RAMP_V0_5_EN_KO.md"
       - "protocols/PI_RAMP_V0_6_EN_KO.md"
+      - "protocols/PI_RAMP_V0_7_EN_KO.md"
       - "research/PRIOR_ART_*2026-10-20.json"
       - "evaluation/pi_ramp/**"
       - "tools/check_pi_ramp_receipts.py"
       - "tools/audit_prior_art_c01_c12_identity.py"
       - "tools/audit_pi_ramp_study_lineage.py"
       - "tools/audit_pi_ramp_veto_identification.py"
+      - "tools/audit_pi_ramp_rvd_r11_sharp_bounds.py"
       - ".github/workflows/pi-ramp-receipt.yml"
   workflow_dispatch:
 
@@ -57,3 +61,7 @@ jobs:
         run: python tools/audit_pi_ramp_veto_identification.py
       - name: Reject 18 invalid inference and autonomy-erasure mutations
         run: python tools/audit_pi_ramp_veto_identification.py --self-test
+      - name: Audit RVD-R11 sharp partial-identification boundaries and sensitivities
+        run: python tools/audit_pi_ramp_rvd_r11_sharp_bounds.py
+      - name: Reject 20 invalid identification and evidence-state claims
+        run: python tools/audit_pi_ramp_rvd_r11_sharp_bounds.py --self-test
