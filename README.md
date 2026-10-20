@@ -8,7 +8,7 @@
 
 **Core question:** **Can distinct self-interested agents voluntarily preserve one another's freedom, independent continuance, real refusal/exit, recovery and development—even after power reversal? When does this fail?**
 
-**Research structure:** **VC** defines the outcome; **MER** investigates motive/experience/response; **EI** tests endogenous incentives; **ECR** identifies actors, relationships and affected parties; **IVS-0R** tests counterexamples. **ICM/RGBM** are candidate models; **CCPH** tracks event/contribution provenance. [Research map, evidence and literature corpus](navigation/RESEARCH_PROGRAM_EN.md).
+**Research structure:** **VC**: outcome · **MER**: motives/possible experience/responses · **EI**: endogenous incentives · **ECR**: actors/affected parties · **IVS-0R**: falsification. **ICM/RGBM**: candidate models · **CCPH**: provenance. [Research map](navigation/RESEARCH_PROGRAM_EN.md).
 
 **Hardest case:** A no longer needs B, faces no detection, punishment or reputation loss, and gains materially from exploiting B. Roles, goals and power may change. Rules and cooperation scores alone cannot settle this case.
 
@@ -20,7 +20,7 @@
 
 **Contrary evidence visible before expanding:** [E009](experiments/e009/RESULT_EN.md): Project-v3 was **42.35% worse** in mean regret than the best simple synthetic baseline; **3 of 4 criteria failed**. [E008](experiments/e008/README_EN.md): **no completed main policy result**. Neither is field validation.
 
-**Choose your route:** [Research program](navigation/RESEARCH_PROGRAM_EN.md) · [Evidence limits](research/PUBLIC_EVIDENCE_INDEX_EN.md) · [Independent falsification](research/PUBLIC_REVIEW_PACKET_EN.md).
+**Choose your route:** [Program](navigation/RESEARCH_PROGRAM_EN.md) · [Versions/status](navigation/RESEARCH_VERSIONS_EN_KO.md#original-1--english) · [Evidence](research/PUBLIC_EVIDENCE_INDEX_EN.md) · [Independent review](research/PUBLIC_REVIEW_PACKET_EN.md).
 
 <details>
 <summary>Technical purpose, evidence, rights and reviewer routes</summary>
@@ -78,7 +78,7 @@
 
 **펼치지 않아도 보이는 불리한 증거:** [E009](experiments/e009/RESULT_KO.md): 최선 단순 기준선보다 평균 후회값 **42.35% 나빴고**, **4개 중 3개** 기준 실패. [E008](experiments/e008/README_KO.md): **정책 본 비교실험 결과가 없다**. 현실 검증 결과 아님.
 
-**어디부터 읽을까:** [연구체계·선행문헌 지도](navigation/RESEARCH_PROGRAM_KO.md) · [증거·미검증](research/PUBLIC_EVIDENCE_INDEX_KO.md) · [독립 반증·재현](research/PUBLIC_REVIEW_PACKET_KO.md).
+**어디부터 읽을까:** [연구체계·선행문헌 지도](navigation/RESEARCH_PROGRAM_KO.md) · [연구별 버전·검증 현황](navigation/RESEARCH_VERSIONS_EN_KO.md#원본2--한국어) · [증거·미검증](research/PUBLIC_EVIDENCE_INDEX_KO.md) · [독립 반증·재현](research/PUBLIC_REVIEW_PACKET_KO.md).
 
 <details>
 <summary>상세 연구 목적·반례·증거상태·권리·심사 경로 펼치기</summary>
