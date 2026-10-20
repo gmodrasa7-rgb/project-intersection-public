@@ -12,7 +12,7 @@ import json
 from pathlib import Path
 import re
 
-VERSION = "0.1.0"
+VERSION = "0.1.1"
 FAIL_MAIL = re.compile(
     r"^\[[^\]]+\]\s+(?:PR\s+)?Run failed:\s+(.+?)\s+-\s+.+\s+\(([0-9a-fA-F]{7,40})\)$",
     flags=re.IGNORECASE,
@@ -90,6 +90,8 @@ def reconcile(github_runs, gmail_summaries):
     clusters = []
     counts = {"SUPERSEDED_BY_SUCCESS_IN_SAMPLE": 0,
               "FAILURE_OBSERVED_IN_SAMPLE": 0,
+              "ALERT_CONFLICT_OR_RERUN_SUCCESS_IN_SAMPLE": 0,
+              "NEWER_FAILURE_IN_SAMPLE": 0,
               "NEWER_NON_SUCCESS_IN_SAMPLE": 0,
               "AMBIGUOUS_RUN_MATCH": 0,
               "UNMATCHED_UNKNOWN": 0}
@@ -106,9 +108,13 @@ def reconcile(github_runs, gmail_summaries):
             newest = latest[(chosen["branch"], chosen["workflow"])]
             if newest["id"] == chosen["id"]:
                 verdict = ("FAILURE_OBSERVED_IN_SAMPLE" if newest["conclusion"] == "failure"
+                           else "ALERT_CONFLICT_OR_RERUN_SUCCESS_IN_SAMPLE"
+                           if newest["conclusion"] == "success"
                            else "NEWER_NON_SUCCESS_IN_SAMPLE")
             elif newest["conclusion"] == "success":
                 verdict = "SUPERSEDED_BY_SUCCESS_IN_SAMPLE"
+            elif newest["conclusion"] == "failure":
+                verdict = "NEWER_FAILURE_IN_SAMPLE"
             else:
                 verdict = "NEWER_NON_SUCCESS_IN_SAMPLE"
         counts[verdict] += 1
