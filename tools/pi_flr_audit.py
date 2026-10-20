@@ -68,6 +68,8 @@ def check_ci_contract(text):
             "CI_MUTATION_TESTS_NOT_EXECUTED")
     require("python3 tools/pi_flr_audit.py" in text and "--baseline-commit" in text,
             "CI_HISTORY_AUDIT_NOT_EXECUTED")
+    require("python3 tools/pi_flr_experiment_identity.py" in text,
+            "CI_IDENTITY_GUARD_NOT_EXECUTED")
     return True
 
 
