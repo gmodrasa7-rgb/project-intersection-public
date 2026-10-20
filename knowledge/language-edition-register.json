@@ -408,11 +408,11 @@
     }
   ],
   "metrics": {
-    "markdown_total": 177,
+    "markdown_total": 178,
     "filename_classes": {
       "UNMARKED_LANGUAGE_UNVERIFIED": 42,
       "LEGACY_MIXED_READER_ENTRY": 2,
-      "KO_SUFFIX_UNVERIFIED": 83,
+      "KO_SUFFIX_UNVERIFIED": 84,
       "ORDERED_BILINGUAL_FOUNDER_OR_GOVERNANCE": 2,
       "EN_SUFFIX_UNVERIFIED": 24,
       "COMBINED_NAMING_UNVERIFIED": 24
@@ -1244,6 +1244,12 @@
       "content_equivalence": "NOT_REVIEWED"
     },
     {
+      "path": "research/DCA1_ADAPTATION_DISPLACEMENT_IDENTIFICATION_2026-10-20_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
       "path": "research/E009_INDEPENDENT_DECISION_GATE_EN.md",
       "filename_class": "EN_SUFFIX_UNVERIFIED",
       "counterpart_path": "research/E009_INDEPENDENT_DECISION_GATE_KO.md",
@@ -1759,6 +1765,16 @@
       "new_edition_pairs": 0,
       "editorial_notes": "Registered one bilingual v0.4 audit report. Machine-checkable evidence snapshot covers 233 source records C01-C12, 203 DOI and 30 other-identifier records, six similar-title review candidates. No independent study-level equivalence or user-task improvement claimed.",
       "reviewer_actions": "Review six candidate pairs with original methods/samples; no automatic merge; preserve opposing effects and unmeasured outcomes."
+    },
+    {
+      "as_of": "2026-10-20",
+      "status": "CONCURRENT_MAIN_DCA1_REGISTERED_WITHOUT_REWRITING_SCIENTIFIC_CONTENT",
+      "new_documents": [
+        "research/DCA1_ADAPTATION_DISPLACEMENT_IDENTIFICATION_2026-10-20_KO.md"
+      ],
+      "new_edition_pairs": 0,
+      "editorial_notes": "Preserved original DCA1 study added to main while PI-RAMP v0.4 was authored. Registered its existing Korean document without inventing an English counterpart or implying semantic parity, field validation, or independent review.",
+      "reviewer_actions": "DCA1 source evidence and translation independent checks remain separate."
     }
   ],
   "path_layout_policy": "Keep the project root entry-only; bilingual full research editions live in existing research/ and their original historical combined documents retain stable root URLs."
