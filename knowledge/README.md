@@ -27,6 +27,12 @@ Relations carry qualifiers such as scope, evidence class, and source path.
 
 A relation such as `supported_by` therefore does **not** mean universal validation. Its qualifier must state the supported scope.
 
+## 1A. Bounded claim-impact overlay (PI-CIG v0.1)
+
+The original [graph.json](graph.json) stays the incomplete navigation graph, not a source of truth. [PI-CIG overlay](claim-impact-overlay-v0_1.json) adds a small, independently versioned **change-impact** graph, without overwriting the original schema or asserting a complete citation graph. The [checker](../tools/trace_claim_impact.py) verifies the specified Git blob SHA and critical source assertions; changed input traverses explicit edges to a set of **claims needing reassessment**, never to automatic falsification.
+
+정본 변경 → 제한된 의존관계 전파 → **재검토 후보**, 자동 반증 또는 과학적 승인 아님. 출처가 연결되지 않은 경우 영향 없음이 아니라 **미관측**. 실행 명령: `python tools/trace_claim_impact.py --self-test`, `python tools/trace_claim_impact.py --changed experiments/e009/RESULT.json`.
+
 ## 2. Files
 
 **CCPH real events / 현실 연구 사건 (2026-10-15):** [CCPH observed Project Intersection event ledger](ccph-observed-project-events-v0_1.json) contains three *actual verified public GitHub research-process changes* (PRs #167–169), linked to the [event schema](ccph-impact-lineage-event-schema-v0_1.json) and [research execution loop](../AUTONOMOUS_RESEARCH_LOOP.md). These are not synthetic benchmarks; verified file changes are not verified scientific, welfare or causal improvements. / **CCPH 실제 관측 원장**은 공개 GitHub 병합 사건 3건을 최초 실증 기록으로 보존한다. 변경된 파일 수는 실제 활동량이지만 연구 발전의 순효과·사회적 편익이 아니다. 증거·기여자·후속 영향·미확인을 별도 기록하며 선택 표본의 전체 대표성을 주장하지 않는다.
