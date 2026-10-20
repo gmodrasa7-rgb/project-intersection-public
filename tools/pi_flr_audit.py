@@ -72,6 +72,8 @@ def check_ci_contract(text):
             "CI_IDENTITY_GUARD_NOT_EXECUTED")
     require("python3 tools/check_public_navigation.py --strict-all" in text,
             "CI_WHOLE_REPOSITORY_LINK_GUARD_NOT_EXECUTED")
+    require("python3 -m unittest discover -s tests -p 'test_pi_flr_watch.py'" in text,
+            "CI_WATCHER_REGRESSION_NOT_EXECUTED")
     return True
 
 
@@ -171,6 +173,9 @@ def validate(data, root=ROOT, ci_text=None):
                     "CI_PASS_OBSERVED" in kinds, "CLAIMED_MERGE_WITHOUT_REPAIR_OR_CI")
     check_ci_contract(ci_text if ci_text is not None
                       else (root / CI_PATH).read_text(encoding="utf-8"))
+    from pi_flr_watch import validate_workflow_contract
+    validate_workflow_contract(
+        (root / ".github/workflows/pi-flr-watch.yml").read_text(encoding="utf-8"))
     return {"result":"PI_FLR_STRUCTURAL_AND_HISTORY_READY",
             "version":data["release_version"],"cases":len(ids),
             "controls":len(control_ids),
