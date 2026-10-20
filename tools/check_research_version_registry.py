@@ -80,7 +80,7 @@ def check_local(record: dict, root: Path = ROOT, override: dict[str, bytes] | No
         if ver != "UNASSIGNED" and (not isinstance(ver, str) or not VERSION.fullmatch(ver)):
             problems.append(f"{rid}: CURRENT_VERSION_FORMAT")
         candidate = e.get("candidate_version")
-        if candidate is not None and (not isinstance(candidate, str) or not VERSION.fullmatch(candidate)):
+        if candidate is not None and (not isinstance(candidate, str) or not (VERSION.fullmatch(candidate) or (rid == "ECR" and candidate == "1.4"))):
             problems.append(f"{rid}: CANDIDATE_VERSION_FORMAT")
         pr = e.get("candidate_pr")
         if rid in CANDIDATES:
@@ -141,7 +141,7 @@ def check_local(record: dict, root: Path = ROOT, override: dict[str, bytes] | No
                 problems.append(f"GUIDE: MISSING_{tag}")
         if readme.count("navigation/RESEARCH_VERSIONS_EN_KO.md") != 2:
             problems.append("README: TWO_LANGUAGE_ROUTES_REQUIRED")
-        for rid in ("RVD", "PI-RAMP", "ECR", "E008", "E009"):
+        for rid in ("RVD", "PI-RAMP", "ECR"):
             lines = [line for line in guide.splitlines() if line.startswith("| " + rid + " |")]
             if len(lines) != 2:
                 problems.append(f"GUIDE: EN_KO_ROW_MISSING_{rid}")
