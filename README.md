@@ -10,7 +10,7 @@
 
 **Core question:** **Can distinct self-interested agents voluntarily preserve one another's freedom, independent continuance, real refusal/exit, recovery and development—even after power reversal? When does this fail?**
 
-**Research structure:** **VC** defines the outcome; **MER** investigates motive/experience/response; **EI** tests endogenous incentives; **ECR** identifies actors, relationships and affected parties; **IVS-0R** tests counterexamples. **ICM/RGBM** are candidate models; **CCPH** tracks event/contribution provenance. [Research map, evidence and nine literature fronts](navigation/RESEARCH_PROGRAM_EN.md).
+**Research structure:** **VC** defines the outcome; **MER** investigates motive/experience/response; **EI** tests endogenous incentives; **ECR** identifies actors, relationships and affected parties; **IVS-0R** tests counterexamples. **ICM/RGBM** are candidate models; **CCPH** tracks event/contribution provenance. [Research map, evidence and literature corpus](navigation/RESEARCH_PROGRAM_EN.md).
 
 **Hardest case:** A no longer needs B, faces no detection, punishment or reputation loss, and gains materially from exploiting B. Roles, goals and power may change. Rules and cooperation scores alone cannot settle this case.
 
@@ -67,7 +67,7 @@
 
 **핵심 연구 질문:** **각자가 자기 이익을 추구하면서도 타자의 자유·독립적 존속·실질적 거부/이탈·복구·발전을 자발적으로 보존할 수 있는가? 권력반전 이후에도 가능한 조건과 실패 조건은 무엇인가?**
 
-**연구체계:** **VC**는 최종 목표·결과, **MER**는 동기·가능한 경험·반응의 형성, **EI**는 내재적 유인, **ECR**은 개체·영향당사자·관계 식별, **IVS-0R**은 반례·독립 검증. **ICM/RGBM**은 후보 모형, **CCPH**는 기여·영향 사건의 계보 데이터베이스. [9회차 선행연구까지 연결한 정본 연구지도](navigation/RESEARCH_PROGRAM_KO.md).
+**연구체계:** **VC**는 최종 목표·결과, **MER**는 동기·가능한 경험·반응의 형성, **EI**는 내재적 유인, **ECR**은 개체·영향당사자·관계 식별, **IVS-0R**은 반례·독립 검증. **ICM/RGBM**은 후보 모형, **CCPH**는 기여·영향 사건의 계보 데이터베이스. [원저자 선행연구를 연결한 정본 연구지도](navigation/RESEARCH_PROGRAM_KO.md).
 
 **가장 어려운 조건:** A에게 B가 더는 필요 없고, 감시·응징·평판 부담이 없으며, B의 착취가 A에게 물질적으로 이익. 이후 목표·권력·역할까지 변화. 강제 규칙이나 높은 협력률만으로 해답 아님.
 
