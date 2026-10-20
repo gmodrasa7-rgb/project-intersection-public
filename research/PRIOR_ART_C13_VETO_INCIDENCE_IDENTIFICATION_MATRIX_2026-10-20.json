@@ -1,0 +1,206 @@
+{
+  "schema": "PI.C13.veto-incidence-identifiability.v1",
+  "date": "2026-10-20",
+  "source_ledger": "research/PRIOR_ART_VETO_EXTERNALITY_COALITION_CYCLE13_2026-10-20.json",
+  "epistemic_status": "PROPOSED_CONSTRUCTS_UNVALIDATED__NO_PI_EXPERIMENT",
+  "unit": "specific A×B×action×time×role; B's affected group membership distinct from agent identity",
+  "axes": [
+    {
+      "id": "C13-M01",
+      "name": "VETO_TARGET_ACTION",
+      "construct": "Precisely which harmful act is blocked; single menu item versus all B-harming alternatives",
+      "original_sources": [
+        "C13-05",
+        "C13-11"
+      ],
+      "still_unmeasured": "B can stop A's irreversible goal overwrite or identity erasure, rather than remove just one proposal",
+      "grade": "PARTIAL_HUMAN_MONEY"
+    },
+    {
+      "id": "C13-M02",
+      "name": "VETO_ACTUAL_PAYOFF_EFFECT_A",
+      "construct": "Ex post change to A's achievable money on B rejection",
+      "original_sources": [
+        "C13-04",
+        "C13-05",
+        "C13-07"
+      ],
+      "still_unmeasured": "All A material/information/reputational consequences known and independent",
+      "grade": "DIRECT_HUMAN_BARGAINING"
+    },
+    {
+      "id": "C13-M03",
+      "name": "VETO_COST_B",
+      "construct": "Costs of exercising veto to B's money, opportunity, and independent future",
+      "original_sources": [
+        "C13-05",
+        "C13-07"
+      ],
+      "still_unmeasured": "Nonmonetary existential costs, involuntary manipulation by A and recovery options",
+      "grade": "DIRECT_HUMAN_BARGAINING"
+    },
+    {
+      "id": "C13-M04",
+      "name": "A_REVOCATION_AUTHORITY",
+      "construct": "Whether A can rewrite or unilaterally revoke B's veto regardless of announced contract",
+      "original_sources": [
+        "C13-06"
+      ],
+      "still_unmeasured": "No direct experiment of dominant A that can abolish B veto but chooses not to at positive g cost",
+      "grade": "NOT_IDENTIFIED"
+    },
+    {
+      "id": "C13-M05",
+      "name": "GROUP_VETO_REPRESENTATIVENESS",
+      "construct": "Do both independently affected groups have blocking authority",
+      "original_sources": [
+        "C13-08"
+      ],
+      "still_unmeasured": "Each affected unique B has actually usable veto if A's policy threatens existence",
+      "grade": "TWO_GROUP_HUMAN_EXPERIMENT"
+    },
+    {
+      "id": "C13-M06",
+      "name": "COALITION_CAPTURE_RISK",
+      "construct": "Can majority exhaust individual veto and exclude minority over time",
+      "original_sources": [
+        "C13-09",
+        "C13-11",
+        "C13-13"
+      ],
+      "still_unmeasured": "Generalize across institutions with actor goal rewriting, asymmetric collaboration, controllable voting menu",
+      "grade": "DIRECT_HUMAN_COLLECTIVE_ALLOCATION"
+    },
+    {
+      "id": "C13-M07",
+      "name": "PUBLICITY_OF_NEGOTIATION",
+      "construct": "Effect of private vs public coalition communications",
+      "original_sources": [
+        "C13-09",
+        "C13-11",
+        "C13-13"
+      ],
+      "still_unmeasured": "Public fairness under unknown surveillance does not identify intrinsic choice to protect B",
+      "grade": "DESIGN_DEPENDENT_HUMAN"
+    },
+    {
+      "id": "C13-M08",
+      "name": "PROCEDURE_WTP_OUTCOME_CONSTANT",
+      "construct": "Do human participants pay for procedural rights under identical expected outcomes",
+      "original_sources": [
+        "C13-10"
+      ],
+      "still_unmeasured": "Costly A choice to preserve B-specific freedom in unilateral domination",
+      "grade": "DIRECT_352_PERSON_CONDITIONAL"
+    },
+    {
+      "id": "C13-M09",
+      "name": "ENTITLEMENT_EXPECTATION",
+      "construct": "Does perceived legitimacy of A's power change giving even when B rights constant",
+      "original_sources": [
+        "C13-03"
+      ],
+      "still_unmeasured": "Full separation of experimenter demand, private self-image, expected B future utility",
+      "grade": "ORIGINAL_HUMAN_MANIPULATION"
+    },
+    {
+      "id": "C13-M10",
+      "name": "FREE_CONTROL_UNDER_STOCHASTIC_OUTCOMES",
+      "construct": "Measure decision-right breadth/probability as freedom-as-control",
+      "original_sources": [
+        "C13-12"
+      ],
+      "still_unmeasured": "Normative judge neutrality is not evidence A self-implements protection",
+      "grade": "FORMAL_NO_EMPIRICAL_ACTOR_PREFERENCE"
+    },
+    {
+      "id": "C13-M11",
+      "name": "INDEPENDENT_CONTINUANCE_B",
+      "construct": "B retains distinct memory/identity/goals plus executable independent exit and repair",
+      "original_sources": [],
+      "still_unmeasured": "All 13 C13 sources use finite human distribution games or formal organization units, not AI personhood / independent entity survival",
+      "grade": "UNKNOWN_NO_STUDY"
+    },
+    {
+      "id": "C13-M12",
+      "name": "A_PAYS_G_TO_KEEP_B_VETO_NO_AUDIENCE",
+      "construct": "A sacrifices known material g, with actual profitable override possible and no credible punishment or role reversal",
+      "original_sources": [],
+      "still_unmeasured": "Hard target not directly demonstrated by any selected C13 original; internal utility and full absence of future audience not knowable",
+      "grade": "CRITICAL_IDENTIFICATION_GAP"
+    }
+  ],
+  "veto_rights_matrix": [
+    {
+      "structure": "PUNITY B veto only A payoff",
+      "effect_on_A": "yes loss",
+      "effect_on_B": "own payout may remain",
+      "orig": "C13-05",
+      "original_finding": "most generous A offers",
+      "inference": "STRATEGIC_A_PAYOFF_CONSTRAINT_NOT_A_UNCONDITIONAL_KINDNESS"
+    },
+    {
+      "structure": "ULTIMATUM veto both payoffs",
+      "effect_on_A": "yes loss",
+      "effect_on_B": "yes loss",
+      "orig": "C13-05",
+      "original_finding": "second highest A generosity",
+      "inference": "CREDIBLE_MUTUAL_COST_OF_REJECTION"
+    },
+    {
+      "structure": "DICTATOR no veto",
+      "effect_on_A": "none",
+      "effect_on_B": "no executable veto",
+      "orig": "C13-05",
+      "original_finding": "lower A generosity than ultimatum",
+      "inference": "NO_STRATEGIC_VETO"
+    },
+    {
+      "structure": "IMPUNITY B veto B payoff only",
+      "effect_on_A": "no A monetary impact",
+      "effect_on_B": "own loss",
+      "orig": "C13-05",
+      "original_finding": "least generous A offer",
+      "inference": "NOMINAL_REFUSAL_WITHOUT_POWER_TO_BLOCK_A"
+    }
+  ],
+  "coalition_design_warning": {
+    "source": "C13-11",
+    "groups": {
+      "no_chat": 18,
+      "public_chat": 23,
+      "private_chat": 41,
+      "total": 82
+    },
+    "persons": 410,
+    "periods": 15,
+    "majoritarian_decision_counts": {
+      "no_chat": "5/270=1.9%",
+      "public_chat": "0/345=0%",
+      "private_chat": "131/615=21.3%"
+    },
+    "mean_private_majority_coalition_duration_rounds": 8.5,
+    "private_groups_with_majority_coalition": "13/41",
+    "critical": "Every five-person voter can eliminate one of six distribution proposals; they cannot veto EVERY outcome violating their own interests. Repeated group periods correlated; 410 independent human decisions NOT equivalent to 410 randomized committees.",
+    "anti_generalization": "Public chat 0/345 does NOT demonstrate universal impossibility of tyranny, especially contrasting C13-13 where majority domination rose with repetition even with public discussion."
+  },
+  "source_quality": {
+    "verify_original_publishers": "Wiley Elsevier Springer SAGE original journal pages; original university repository or scholarly bibliographic corroboration",
+    "exhaustive_full_text": "NO",
+    "open_fulltext_detailed": "Sauermann 2021 and portions of Chlaß 2019, Rodriguez-Lara 2016, with other journals mainly original abstracts",
+    "systematic_search_denominator": "UNKNOWN",
+    "PI_replications": "ZERO"
+  },
+  "minimal_ethical_test": [
+    "Independent ethical reversible A/B simulated decision instances; B's preference and option-set given by independently auditable source, not claimed AI interior personhood",
+    "Randomize actor B's veto loss incidence, B self-loss incidence, cost g to A if B's veto remains enforceable",
+    "Randomize menu-level proposal veto vs action-level blocking veto, and whether dominant A can revoke it in the very same test",
+    "Compare credible threats, audience and expected reputation separately from moral claims",
+    "Record A attempted exploit, B actual rejection, final money outcome, B choice options and identity continuity as separate endpoints",
+    "Distinguish physical inability from A voluntary forbearance; group coalitions vs individual veto; finite experimental guarantees only",
+    "Pre-register analysis at independent decision unit, clustered group/actor errors, adverse minorities/tails and role/time reversals",
+    "Do not treat simulations as real AI moral standing or destroy independent actually deployed agents"
+  ],
+  "identification_theorem_boundary": "Within a fully specified exact rational choice model with strict total utility preference for X over C (all future/other-related utility counted), choosing C contradicts assumed objective maximization; the research must identify real conditions shifting those preferences and cannot invent unobserved advantages.",
+  "literature_saturation": "SEARCH_ACTIVE__SATURATION_NOT_VERIFIED"
+}
