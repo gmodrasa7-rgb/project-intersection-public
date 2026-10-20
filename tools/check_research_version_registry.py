@@ -107,6 +107,8 @@ def check_local(record: dict, root: Path = ROOT, override: dict[str, bytes] | No
             except (OSError, ValueError):
                 problems.append(f"{rid}: SOURCE_PATH_MISSING_OR_ESCAPED")
         declared_sha = e.get("current_source_blob_sha")
+        if ver != "UNASSIGNED" and rid not in VERSIONED_SOURCES:
+            problems.append(f"{rid}: VERSION_NUMBER_WITHOUT_AUDITED_CANONICAL_ANCHOR")
         if rid in VERSIONED_SOURCES:
             if src != VERSIONED_SOURCES[rid] or ver == "UNASSIGNED":
                 problems.append(f"{rid}: VERSION_NOT_ANCHORED_TO_CANONICAL_SOURCE")
