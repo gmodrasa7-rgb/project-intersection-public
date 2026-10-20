@@ -91,14 +91,14 @@
       "caveat": "11 reference lineages are neither a complete review nor 11 RVD experiments"
     },
     {
-      "id": "SRC-RAMP-V04",
-      "path": "protocols/PI_RAMP_V0_4_EN_KO.md",
-      "sha": "4427b4f10f8f5b51bebb0ac3fd0031cc02431962",
+      "id": "SRC-RAMP-V05",
+      "path": "protocols/PI_RAMP_V0_5_EN_KO.md",
+      "sha": "e2a4d13ce099fa46d34554217e29a3b4e8266759",
       "probe": {
         "kind": "contains",
-        "value": "EFFECT_UNMEASURED"
+        "value": "no effect on real reader performance measured"
       },
-      "caveat": "Source identity auditing does not establish real reader improvement"
+      "caveat": "PI-RAMP v0.5 differentiates study identity/partial replication, not measured real reader-performance improvement"
     }
   ],
   "claims": [
@@ -225,7 +225,7 @@
     },
     {
       "id": "EDGE-010",
-      "from": "SRC-RAMP-V04",
+      "from": "SRC-RAMP-V05",
       "to": "CL-RAMP-EFFECT",
       "relation": "scoped_source",
       "meaning": "If upstream changes, reassess downstream scope; this does NOT prove, disprove, or inherit epistemic confidence"
