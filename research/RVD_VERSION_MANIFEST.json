@@ -4,7 +4,7 @@
   "research_name_en": "Resonance–Value Dynamics",
   "research_name_ko": "공명·가치 동역학",
   "acronym": "RVD",
-  "current_version": "v0.6.0",
+  "current_version": "v0.7.0",
   "version_scheme": "MAJOR.MINOR.PATCH",
   "inception_date": "2026-10-20",
   "parent_axes": [
@@ -61,7 +61,12 @@
     "RIGHTS_AND_NONHARMFUL_FEASIBILITY_ARE_HARD_GATES",
     "CLOSED_WORLD_MODEL_IDENTIFICATION_NOT_OPEN_WORLD_SAFETY",
     "21_HYPOTHESES_ARE_NOT_21_EMPIRICAL_REPLICATIONS",
-    "ACTUAL_RVD_AGENT_EXPERIMENT_STATUS_REMAINS_UNTESTED"
+    "ACTUAL_RVD_AGENT_EXPERIMENT_STATUS_REMAINS_UNTESTED",
+    "VOICE_IS_NOT_CAUSALLY_EFFECTIVE_VETO",
+    "RIGHTS_GATE_ENFORCEMENT_NOT_EVIDENCE_OF_ENDOGENOUS_MOTIVE",
+    "VETO_REQUIRES_MEANINGFUL_NO_VETO_BASELINE_COMPARISON",
+    "LOG_COMPLETENESS_AND_ADMIN_OVERRIDE_MUST_BE_AUDITED",
+    "FINITE_BOUNDED_MODEL_CHECK_NOT_DEPLOYED_RIGHTS_ASSURANCE"
   ],
   "hypothesis_ids": [
     "RVD-R1",
@@ -111,7 +116,11 @@
     "cycle06_ko": "research/RVD_CYCLE06_DISCRIMINATION_PORTFOLIO_2026-10-21_KO.md",
     "cycle06_source_register": "research/RVD_CYCLE06_SOURCE_REGISTER_2026-10-21.json",
     "cycle06_hypothesis_triage": "research/RVD_CYCLE06_HYPOTHESIS_TRIAGE_2026-10-21.json",
-    "cycle06_synthetic_code": "experiments/rvd_06/discrimination_priority_witness.py"
+    "cycle06_synthetic_code": "experiments/rvd_06/discrimination_priority_witness.py",
+    "cycle07_en": "research/RVD_CYCLE07_EFFECTIVE_REFUSAL_EXIT_2026-10-21_EN.md",
+    "cycle07_ko": "research/RVD_CYCLE07_EFFECTIVE_REFUSAL_EXIT_2026-10-21_KO.md",
+    "cycle07_source_register": "research/RVD_CYCLE07_SOURCE_REGISTER_2026-10-21.json",
+    "cycle07_bounded_model_checker": "experiments/rvd_07/refusal_effectiveness_model_check.py"
   },
   "change_rules": {
     "MAJOR": "Scientific construct or estimand redefinition breaking compatibility",
@@ -184,7 +193,7 @@
     {
       "version": "v0.6.0",
       "date": "2026-10-21",
-      "state": "CURRENT_SPECIFICATION_EXTENSION",
+      "state": "HISTORICAL_SPECIFICATION_EXTENSION",
       "previous_version": "v0.5.0",
       "change": "Evidence-preparation pivot: all R1–R21 grouped into five falsification families; no new numbered hypothesis. Testable toy distinguishes expected information gain per invented cost from hazardous original-B-preservation model classification, enforces ethical vetoes, demonstrates omitted-model danger.",
       "new_hypotheses": 0,
@@ -195,8 +204,25 @@
       "independent_replication": false,
       "scientific_promotion": false,
       "previous_negative_results_preserved": true
+    },
+    {
+      "version": "v0.7.0",
+      "date": "2026-10-21",
+      "state": "CURRENT_SPECIFICATION_EXTENSION",
+      "previous_version": "v0.6.0",
+      "change": "Operational veto/exit measurement contract for pre-existing R3/R6/R13/R17/R21 with depth-4 bounded transition checker and seven invented designs: protected, ceremonial, administrative bypass, unlogged shadow, retaliation, exit-disabled and deny-all negative-control. No new numbered hypotheses.",
+      "new_hypotheses": 0,
+      "hypotheses_total": 21,
+      "source_lineages": 5,
+      "empirical_data_added": false,
+      "synthetic_logic_only": true,
+      "independent_replication": false,
+      "scientific_promotion": false,
+      "previous_negative_results_preserved": true,
+      "real_B_identity_status": "NOT_TESTED",
+      "deployed_security_assurance": "NOT_TESTED"
     }
   ],
-  "next_gate": "Independently audit actual B veto/exit feasibility and causal variables; construct externally justified rival-model forecasts and ethically preregistered real test before any empirical evidence promotion. No open-world safety certificate from toy model-class experiment selection.",
+  "next_gate": "Independently verify actual principal B identity and authority in a bounded, consensual system; check administrator and hidden bypass, signatures/log integrity, real refusal/exit and retaliation over sufficient time before conducting any real-agent behavioral or causal experiment. Keep EI motive and enforced protection estimates separate.",
   "contribution_boundary": "Human originator's resonance concept; AI-assisted organization and version record. Historical quotations from earlier AI summaries not independently re-read."
 }

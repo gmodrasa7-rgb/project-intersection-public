@@ -442,6 +442,21 @@
         "EN/KO independent semantic parity not yet reviewed.",
         "Toy design results do not test real AI minds, rights or coexistence."
       ]
+    },
+    {
+      "id": "PI-MER-RVD-CYCLE07-20261021",
+      "original_1_english": "research/RVD_CYCLE07_EFFECTIVE_REFUSAL_EXIT_2026-10-21_EN.md",
+      "original_2_korean": "research/RVD_CYCLE07_EFFECTIVE_REFUSAL_EXIT_2026-10-21_KO.md",
+      "kind": "bounded_transition_model_specification_not_empirical_autonomy",
+      "structural_pair_present": true,
+      "meaning_review_status": "NOT_INDEPENDENTLY_VERIFIED",
+      "original_conception_language": "KO_HUMAN_RESEARCH_FRAME_AI_ASSISTED_SPECIFICATION",
+      "independent_review_receipt": null,
+      "one_sided_edit_exception": null,
+      "known_divergences": [
+        "Independent EN/KO semantic parity remains unverified.",
+        "Rights of a simulated principal B are not actual external rights, and enforced denial is not endogenous A motive."
+      ]
     }
   ],
   "legacy_priority_unresolved": [
@@ -483,13 +498,13 @@
     }
   ],
   "metrics": {
-    "markdown_total": 199,
+    "markdown_total": 201,
     "filename_classes": {
       "UNMARKED_LANGUAGE_UNVERIFIED": 42,
       "LEGACY_MIXED_READER_ENTRY": 2,
-      "KO_SUFFIX_UNVERIFIED": 90,
+      "KO_SUFFIX_UNVERIFIED": 91,
       "ORDERED_BILINGUAL_FOUNDER_OR_GOVERNANCE": 2,
-      "EN_SUFFIX_UNVERIFIED": 30,
+      "EN_SUFFIX_UNVERIFIED": 31,
       "COMBINED_NAMING_UNVERIFIED": 33
     },
     "meaning_verified_pairs": 0,
@@ -1679,6 +1694,18 @@
       "content_equivalence": "NOT_REVIEWED"
     },
     {
+      "path": "research/RVD_CYCLE07_EFFECTIVE_REFUSAL_EXIT_2026-10-21_EN.md",
+      "filename_class": "EN_SUFFIX_UNVERIFIED",
+      "counterpart_path": "research/RVD_CYCLE07_EFFECTIVE_REFUSAL_EXIT_2026-10-21_KO.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "research/RVD_CYCLE07_EFFECTIVE_REFUSAL_EXIT_2026-10-21_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": "research/RVD_CYCLE07_EFFECTIVE_REFUSAL_EXIT_2026-10-21_EN.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
       "path": "research/TERMINOLOGY_FIVE_AXES_V0_1_EN.md",
       "filename_class": "EN_SUFFIX_UNVERIFIED",
       "counterpart_path": "research/TERMINOLOGY_FIVE_AXES_V0_1_KO.md",
@@ -2073,6 +2100,28 @@
       "new_edition_pairs": 0,
       "editorial_notes": "New finance control and public institutional ledger registered, predecessor research and RVD C06 entries preserved. EN/KO parity not independently reviewed.",
       "reviewer_actions": "Do not infer financial awards or verified translation from the registry."
+    },
+    {
+      "as_of": "2026-10-21",
+      "status": "RVD_V070_FINITE_TRANSITION_CHECKS_NOT_DEPLOYED_ASSURANCE",
+      "new_documents": [
+        "research/RVD_CYCLE07_EFFECTIVE_REFUSAL_EXIT_2026-10-21_EN.md",
+        "research/RVD_CYCLE07_EFFECTIVE_REFUSAL_EXIT_2026-10-21_KO.md"
+      ],
+      "new_edition_pairs": 1,
+      "editorial_notes": "Operational R3/R6/R13/R17/R21 original-B refusal/exit tests with seven finite simulated designs and bounded model checking. No new hypothesis; no real AI subjective, rights or endogenously voluntary choice observed.",
+      "reviewer_actions": "Verify independent semantic parity and real OS/trust-domain access constraints before deploying independent B veto tests."
+    },
+    {
+      "as_of": "2026-10-21",
+      "status": "CONCURRENT_PI_RISE_FUNDING_DOCS_METADATA_ONLY",
+      "new_documents": [
+        "funding/GRANTS_CONTRACTS_PUBLIC_LEDGER_EN_KO.md",
+        "operations/PI_RISE_V0_2_0_EN_KO.md"
+      ],
+      "new_edition_pairs": 0,
+      "editorial_notes": "Main received unrelated fundraising and operational records after this branch started. Registered filenames only without editing their scientific, fiscal, or original content.",
+      "reviewer_actions": "Independent finance and language parity review remains with PI-RISE."
     }
   ],
   "path_layout_policy": "Keep the project root entry-only; bilingual full research editions live in existing research/ and their original historical combined documents retain stable root URLs."

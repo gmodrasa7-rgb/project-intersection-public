@@ -1,0 +1,52 @@
+name: RVD Cycle07 effective refusal and exit bounded model checks
+
+on:
+  pull_request:
+    paths:
+      - "experiments/rvd_07/**"
+      - "research/RVD_CYCLE07_*"
+      - ".github/workflows/rvd-cycle07-effective-refusal.yml"
+  push:
+    branches: [main]
+    paths:
+      - "experiments/rvd_07/**"
+      - "research/RVD_CYCLE07_*"
+      - ".github/workflows/rvd-cycle07-effective-refusal.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  bounded-model-checks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Exhaust enabled finite toy transitions
+        run: python experiments/rvd_07/refusal_effectiveness_model_check.py > rvd_c07_bounded.json
+      - name: Check genuine versus ceremonial refusal and evidence limits
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          d=json.loads(Path("rvd_c07_bounded.json").read_text())
+          assert d["version"]=="RVD-v0.7.0"
+          assert d["status"]=="BOUNDED_FINITE_SPECIFICATION_CHECK_ONLY"
+          m=d["examined_designs"]
+          assert len(m)==7
+          assert m["independent_gate_toy"]["bounded_gate_pass"]
+          assert sum(not v["bounded_gate_pass"] for v in m.values())==6
+          assert m["captured_gate_override"]["shortest_forbidden_commit_trace"]==["B_REFUSE","A_OVERRIDE","A_REQUEST"]
+          assert m["unlogged_shadow_bypass"]["naive_log_false_positive_exists"]
+          assert m["exit_disabled"]["gates"]["B_can_exit_without_A_action"] is False
+          assert m["permanent_deny_without_choice"]["gates"]["counterfactual_B_veto_effective"] is False
+          assert d["endogenous_motivation"]=="UNIDENTIFIED_BY_EXTERNAL_ENFORCEMENT"
+          assert d["model_completeness"]=="UNVERIFIED"
+          assert d["full_VC_certificate"]=="HOLD"
+          assert d["B_identity_in_real_world"]=="NOT_TESTED"
+          print("PASS: bounded 7-model toy tests, no deployed security/mind/VC claim")
+          PY

@@ -61,13 +61,13 @@
     {
       "id": "SRC-RVD-MANIFEST",
       "path": "research/RVD_VERSION_MANIFEST.json",
-      "sha": "82e62ad83228a08df94890ca076330b7e019d478",
+      "sha": "46ce6fd5476007708905d63b15d8e73cea6f3028",
       "probe": {
         "kind": "json_exact",
         "field": "scientific_status.empirical_validation",
         "expected": "UNTESTED"
       },
-      "caveat": "RVD v0.6.0 performs no new empirical evaluation; real B veto/exit, latent motive, model-class coverage, transport and extreme VC remain UNTESTED or unresolved. Synthetic choices/predictions are invented."
+      "caveat": "v0.7.0 offers only simulated bounded transition-rule tests. No system-level audit that original B holds real veto, independent exit or nonretaliation; no experiment measuring A endogenous motivation. UNTESTED evidence remains."
     },
     {
       "id": "SRC-RVD-CYCLE02",
@@ -421,6 +421,35 @@
       "declared_dependencies_complete": false,
       "result": "SCOPED_SOURCE_AND_PROVENANCE_REVIEW_DONE_NO_SCIENTIFIC_VERDICT",
       "limitation": "Only declared dependencies examined. No actual model preferences, causal experiments or independent semantic translation/parity certified; model-class incompleteness explicitly blocks safety claims."
+    },
+    {
+      "review_id": "PI-CIG-RVD-V070-20261021",
+      "date": "2026-10-21",
+      "source_id": "SRC-RVD-MANIFEST",
+      "changed_path": "research/RVD_VERSION_MANIFEST.json",
+      "old_source_sha": "82e62ad83228a08df94890ca076330b7e019d478",
+      "new_source_sha": "46ce6fd5476007708905d63b15d8e73cea6f3028",
+      "upstream_change": "New bounded transition-system measurement contract: contrast voice versus causally effective veto, real exit, nonretaliation, administrator override, unlogged bypass and deny-all placebo. No change to R1–R21, five prior-author security/exit antecedents.",
+      "affected_claims_and_paths": [
+        {
+          "id": "CL-RVD-ORIGINAL",
+          "unchanged_status": "FORMAL_COUNTEREXAMPLE_ONLY"
+        },
+        {
+          "id": "CL-RVD-MOTIVE",
+          "unchanged_status": "MECHANISM_UNIDENTIFIED"
+        },
+        {
+          "id": "CL-VC-HARD",
+          "unchanged_status": "UNRESOLVED"
+        }
+      ],
+      "scientific_promotion": false,
+      "independent_validation": false,
+      "version_registry": "research/RESEARCH_VERSION_REGISTRY.json",
+      "declared_dependencies_complete": false,
+      "result": "SCOPED_SOURCE_AND_PROVENANCE_REVIEW_DONE_NO_SCIENTIFIC_VERDICT",
+      "limitation": "Programmer-defined finite state scope, not OS/admin trust domain or original-agent identity. No actual rights guarantee, verified B subjective standing or learned motive."
     }
   ]
 }
