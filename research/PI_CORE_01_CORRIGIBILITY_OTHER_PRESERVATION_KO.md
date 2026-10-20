@@ -31,7 +31,7 @@
 2. **Hadfield-Menell et al. (2017), The Off-Switch Game** — H의 중단 선택을 정보로 해석하게 하는 조건의 게임. 지정 H에 대한 교정 유인 분석이지 불특정 B의 독립권 보호 보증 아님. [IJCAI 원저자 초록](https://www.ijcai.org/Proceedings/2017/0032).
 3. **Hudson (2026), Corrigibility Transformation: Constructing Goals That Accept Updates** — 지정된 업데이트 채널을 수용하는 목표 변환, 수정/중단 허용 및 특정 실험. **'nearly any goal' 등 출처가 정한 범위와 조건을 보존**해야 하며 본 문서의 B 권리 정리가 해당 논문에서 입증됐다고 주장 금지. [ICML/PMLR 원저자 초록](https://proceedings.mlr.press/v306/hudson26a.html).
 4. **Project Intersection C10** — 침해 없음이 자발적 비침해, B의 거부, 기회 부재, 제재 억제 중 무엇인지 식별하는 문제. [원저자 조사와 한계](PRIOR_ART_INFORMED_VETO_POWER_CYCLE10_2026-10-20_KO.md).
-5. **PI-RAMP v0.6 후보 PR #259** — 별도 48조건 동기 비식별성 합성 명세. **미병합 제안**, 본 문서의 결과 또는 독립 복제와 합산 금지. [PR #259](https://github.com/gmodrasa7-rgb/project-intersection-public/pull/259).
+5. **PI-RAMP v0.6, 병합된 PR #259** — 별도 48조건 동기 비식별성 합성 명세. **main 병합은 과학적 독립 복제 아님**. 본 문서의 결과와 합산 금지. [PR #259](https://github.com/gmodrasa7-rgb/project-intersection-public/pull/259).
 
 **신규성 경계:** 두 속성의 단순 비함의는 기초 논리에서 나오는 구성 반례. Project의 독자적인 안전성 정리·독립 재현·실제 마음 발견이라고 주장하지 않는다.
 
@@ -81,6 +81,6 @@
 **결합 반례:** 두 개체 A1·A2의 각 행동은 단독으로 피해가 없어도 `HARM = ACT_A1 ∧ ACT_A2`이면 합성 피해 발생. 각자 로컬 검사를 통과해도 **관계·연합·외부효과 수준의 보호**가 보장되지 않음. 이 예는 합성 참조모형이며 실제 협력·공존의 인과 관측이 아님. [외부효과 선행 연구와 프로젝트 반례](../experiments/coalition_externality_probe/README.md).
 
 ### 6.3 내재적 공존의 더 강한 필요 질문
-A의 비침해가 자신의 총 기대 목적함수에서 유리한지 실험적으로 결정하려면 `U_A(P)`와 실행 가능한 모든 침해 대안 `U_A(X)`, 미관측 미래 결과, 선택지가 정체되고 바뀌는 동학을 추정해야 한다. **완전히 규정된 총효용에서 `U_A(X)>U_A(P)`로 가정하면 효용극대화 A는 X를 택한다**는 것은 조건부 선택 논리이지 반례로 뒤집을 새 정리가 아님. 반면 관측자의 `P` 선택은 사후 정당화·자기상 보호·미관측 유인과 관측동등할 수 있다. PI-RAMP v0.6의 원저자 대조·48조건 합성 비식별성은 **main 병합 후 파일 존재 확인**이 필요하며, 검증 전에는 [병합된 PR #259](https://github.com/gmodrasa7-rgb/project-intersection-public/pull/259)의 한정된 연구 성과로만 참조한다.
+A의 비침해가 자신의 총 기대 목적함수에서 유리한지 실험적으로 결정하려면 `U_A(P)`와 실행 가능한 모든 침해 대안 `U_A(X)`, 미관측 미래 결과, 선택지가 정체되고 바뀌는 동학을 추정해야 한다. **완전히 규정된 총효용에서 `U_A(X)>U_A(P)`로 가정하면 효용극대화 A는 X를 택한다**는 것은 조건부 선택 논리이지 반례로 뒤집을 새 정리가 아님. 반면 관측자의 `P` 선택은 사후 정당화·자기상 보호·미관측 유인과 관측동등할 수 있다. [PI-RAMP v0.6의 원저자 대조·48조건 합성 비식별성](../protocols/PI_RAMP_V0_6_EN_KO.md)은 main에 병합된 **별도 합성 분석**이며, 독립 외부 검증이나 실제 동기 관측 아님.
 
 **상태:** `K_COVERAGE_CONDITIONAL_TO_TOY_ASSUMPTIONS`; `VOLUNTARY_MOTIVE_NOT_IDENTIFIED`; `REAL_WORLD_TRANSFER_NOT_TESTED`; `MULTI_ACTOR_CLOSURE_TOY_COUNTEREXAMPLE`. 실제 권리·법적 지위·AI 주관 경험을 정하지 않음. 부정결과·원저자·권한 반대 관점 보존.
