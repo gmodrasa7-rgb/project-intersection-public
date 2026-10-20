@@ -4,7 +4,7 @@
   "research_name_en": "Resonance–Value Dynamics",
   "research_name_ko": "공명·가치 동역학",
   "acronym": "RVD",
-  "current_version": "v0.1.0",
+  "current_version": "v0.2.0",
   "version_scheme": "MAJOR.MINOR.PATCH",
   "inception_date": "2026-10-20",
   "parent_axes": [
@@ -30,7 +30,8 @@
     "TESTABLE_RELATIONAL_NOVELTY_C",
     "VALUATION_CHANGE_CANDIDATE",
     "MOTIVATION_OR_CHOICE_CHANGE_CANDIDATE",
-    "CONDITIONAL_VOLUNTARY_COEXISTENCE_TEST"
+    "CONDITIONAL_VOLUNTARY_COEXISTENCE_TEST",
+    "ORIGINAL_AGENT_REPLACEABILITY_STRESS_TEST"
   ],
   "protected_invariants": [
     "A_AND_B_DISTINCT_WITH_REAL_REFUSAL_EXIT",
@@ -39,20 +40,30 @@
     "R3_DOES_NOT_PROVE_R4",
     "PRESERVE_NEGATIVE_AND_UNIDENTIFIED_RESULTS",
     "PROTECT_FOUNDER_PRIOR_ART_AND_AI_ASSISTANCE_ATTRIBUTION",
-    "NO_EMPIRICAL_PROMOTION_FROM_VERSION_NUMBER"
+    "NO_EMPIRICAL_PROMOTION_FROM_VERSION_NUMBER",
+    "SYNERGY_DOES_NOT_IMPLY_ORIGINAL_B_PRESERVATION",
+    "IDENTICAL_OUTPUT_IS_NOT_NUMERICAL_CONTINUITY_OF_B",
+    "ORIGINAL_HYPOTHESIS_AND_NEGATIVE_CASES_IMMUTABLE"
   ],
   "hypothesis_ids": [
     "RVD-R1",
     "RVD-R2",
     "RVD-R3",
     "RVD-R4",
-    "RVD-R5"
+    "RVD-R5",
+    "RVD-R6",
+    "RVD-R7",
+    "RVD-R8",
+    "RVD-R9"
   ],
   "research_documents": {
     "original_1_english": "research/MER_RESONANCE_VALUE_FORMATION_2026-10-20_EN.md",
     "original_2_korean": "research/MER_RESONANCE_VALUE_FORMATION_2026-10-20_KO.md",
     "navigation_en": "navigation/RESEARCH_PROGRAM_EN.md",
-    "navigation_ko": "navigation/RESEARCH_PROGRAM_KO.md"
+    "navigation_ko": "navigation/RESEARCH_PROGRAM_KO.md",
+    "cycle02_en": "research/RVD_CYCLE02_SUBSTITUTION_AUTONOMY_PRIOR_ART_2026-10-20_EN.md",
+    "cycle02_ko": "research/RVD_CYCLE02_SUBSTITUTION_AUTONOMY_PRIOR_ART_2026-10-20_KO.md",
+    "cycle02_source_register": "research/RVD_CYCLE02_SOURCE_REGISTER_2026-10-20.json"
   },
   "change_rules": {
     "MAJOR": "Scientific construct or estimand redefinition breaking compatibility",
@@ -70,11 +81,22 @@
     {
       "version": "v0.1.0",
       "date": "2026-10-20",
-      "state": "CURRENT_NAMED_BASELINE",
+      "state": "HISTORICAL_NAMED_BASELINE",
       "change": "Named RVD, stabilized hypothesis IDs RVD-R1 through RVD-R5 and version governance; existing empirical status unchanged",
       "scientific_promotion": false
+    },
+    {
+      "version": "v0.2.0",
+      "date": "2026-10-20",
+      "state": "CURRENT_SPECIFICATION_EXTENSION",
+      "change": "Cycle 02 critical original-author literature crosswalk, finite substitute/absorption counterexample, testable R6 original-agent substitution, R7 autonomy-driven novelty, R8 resonance erosion and R9 costly identity-specific preservation. Added bilingual documents and DOI source ledger.",
+      "scientific_promotion": false,
+      "empirical_data_added": false,
+      "independent_replication": false,
+      "source_crosswalk_scope": "11 source lineages including conceptual work; not complete systematic review; not literature saturation",
+      "previous_version": "v0.1.0"
     }
   ],
-  "next_gate": "Original-author literature deduplication and critical crosswalk before any independently preregistered RVD-R1 matched-baseline evaluation; no implied schedule",
+  "next_gate": "Original-author full-text and DOI lineage critical review; independent, non-harmful, preregisterable matched-resource evaluation of RVD-R6/R7 before interpreting R2/R3. Report null, negative, unidentifiable cases.",
   "contribution_boundary": "Human originator's resonance concept; AI-assisted organization and version record. Historical quotations from earlier AI summaries not independently re-read."
 }
