@@ -1,0 +1,49 @@
+name: Research version and evidence-state drift guard
+
+on:
+  pull_request:
+    paths:
+      - "research/RESEARCH_VERSION_REGISTRY.json"
+      - "research/RVD_VERSION_MANIFEST.json"
+      - "research/PI_ROADMAP_OPERATIONAL_GATES_V0_2_3_EN_KO.md"
+      - "navigation/RESEARCH_VERSIONS_EN_KO.md"
+      - "protocols/PI_RAMP_V0_3_KO.md"
+      - "README.md"
+      - "tools/check_research_version_registry.py"
+      - ".github/workflows/research-version-drift.yml"
+  push:
+    branches: [main]
+    paths:
+      - "research/RESEARCH_VERSION_REGISTRY.json"
+      - "research/RVD_VERSION_MANIFEST.json"
+      - "research/PI_ROADMAP_OPERATIONAL_GATES_V0_2_3_EN_KO.md"
+      - "navigation/RESEARCH_VERSIONS_EN_KO.md"
+      - "protocols/PI_RAMP_V0_3_KO.md"
+      - "README.md"
+      - "tools/check_research_version_registry.py"
+      - ".github/workflows/research-version-drift.yml"
+  schedule:
+    - cron: "19 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pull-requests: read
+
+jobs:
+  version-source-and-negative-control:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Check local versions, origin anchors and negative results
+        run: python tools/check_research_version_registry.py
+      - name: Test 18 deliberate source/status falsifications
+        run: python tools/check_research_version_registry.py --self-test
+      - name: Verify live GitHub main and open PR state (network failure is UNVERIFIED)
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python tools/check_research_version_registry.py --remote
