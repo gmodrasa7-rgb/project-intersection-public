@@ -33,6 +33,8 @@
 
 **Evidence so far:** [E007](experiments/e007/README_EN.md) found 17/72 classification changes in selected synthetic timing scenarios. [E008](experiments/e008/README_EN.md) has no completed main result. [E009](experiments/e009/RESULT_EN.md) found the project's complex candidate worse than simpler baselines in its preregistered synthetic comparison. [E010](experiments/e010/README_EN.md) is exploratory and post-hoc. None proves a long-run social law.
 
+**Research viability & independence (PI-RISE v0.1.0 candidate):** [Operational sustainability gate](operations/PI_RISE_V0_1_0_EN_KO.md) — does not certify funding, health, motive or science.
+
 **External assessment:** [Independent self-interest challenge (#220)](https://github.com/gmodrasa7-rgb/project-intersection-public/issues/220) · [English skeptical-reader guide](navigation/START_HERE_EN.md#external-assessment-decision-brief) · [Independent review and reproduction](research/PUBLIC_REVIEW_PACKET_EN.md) · [Research funding review](funding/FUNDER_START_HERE.md#original-1--english).
 
 **Scoped open-research license:** Some founding-purpose expression is offered under **CC BY-SA 4.0** only within the boundaries of the [EN/KO rights notice](RESEARCH_RIGHTS_SCOPE_EN_KO.md), not across this whole repository or all AI output.
