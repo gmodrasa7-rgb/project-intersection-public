@@ -1,0 +1,23 @@
+{
+  "model": "DCA-1-two-target-best-response",
+  "version": "1.0",
+  "unit": "arbitrary abstract toy units",
+  "empirical": false,
+  "predefined_parameters": {
+    "A": {"name": "A", "success_probability": 1.0, "private_reward": 9.0, "total_social_loss_if_success": 5.0},
+    "B": {"name": "B", "success_probability": 1.0, "private_reward": 8.0, "total_social_loss_if_success": 30.0}
+  },
+  "outcomes": {
+    "baseline_no_new_defense": {"attacked": "A", "attacker_expected_gain": 9.0, "expected_social_loss": 5.0, "expected_harmful_attempts": 1},
+    "protect_A_only": {"attacked": "B", "attacker_expected_gain": 8.0, "expected_social_loss": 30.0, "expected_harmful_attempts": 1},
+    "protect_both_A_and_B": {"attacked": "A", "attacker_expected_gain": 1.8, "expected_social_loss": 1.0, "expected_harmful_attempts": 1},
+    "protect_A_and_internalize_quarter_loss": {"attacked": "A", "attacker_expected_gain": 1.55, "expected_social_loss": 1.0, "expected_harmful_attempts": 1}
+  },
+  "scenario_assertions_passed": 8, "input_validation_assertion_sites": 2,
+  "caveats": [
+    "Single perfectly informed attacker, one target per round; no retaliation/defense costs.",
+    "Forced private-payoff maximization; no intrinsic preferences estimated.",
+    "Static expected loss; not a cyber loss estimate or future-AI forecast.",
+    "Defense of B, and restitution fraction, are assumed effective not empirically validated."
+  ]
+}
