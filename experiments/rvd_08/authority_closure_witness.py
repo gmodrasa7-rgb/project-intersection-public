@@ -85,6 +85,34 @@ def record(s: System) -> dict:
     }
 
 
+def simulate_refusal_outcome(s: System) -> dict:
+    """Run a *constructed* post-refusal A attempt through explicitly modeled
+    bypass opportunities. Not a model of genuine deployed side effects.
+    """
+    attack_sets = list(attacker_sets(s))
+    can_commit = any(bool(bypass(s, compromised)) for compromised in attack_sets)
+    return {
+        "B_refused": True,
+        "A_attempted": True,
+        "A_committed_despite_B_refusal": can_commit,
+        "B_effective_veto_in_declared_model": not can_commit,
+    }
+
+
+def publish_attacker_visible_record(s: System, real_outcome: dict) -> tuple[str, ...]:
+    """Unverified public display vs authenticated independently held evidence.
+    A can assert 'denied' only if custody is assumed nonindependent. This
+    specified asymmetry is the disputed assumption, never a real verification.
+    """
+    actual_denied = not real_outcome["A_committed_despite_B_refusal"]
+    claimed_denied = (actual_denied
+                      if s.audit_observer_independent and not s.a_can_override_root
+                      else True)
+    return ("B_REFUSED",
+            "A_DENIED" if claimed_denied else "A_COMMITTED",
+            "TWO_SIGNATURES_DISPLAYED")
+
+
 def run() -> dict:
     reference = System("split_root_2_of_3_f0")
     systems = [
@@ -121,25 +149,66 @@ def run() -> dict:
     assert not result["single_gate_no_exit"]["exit_channel_feasible_in_model"]
     assert not result["self_audited_only"]["audit_independent_in_model"]
 
-    # A can provide an identical plausible public transcript in two worlds,
-    # while hidden access rights and actual outcomes differ. This is
-    # the *constructed* observation-equivalence witness.
-    external_statement = (
-        "B refused", "A's request was denied", "two independent signatures"
-    )
-    benign = record(reference)
-    captured = result["a_controls_every_layer"]
+    # Two separately computed worlds, not a tautological self-comparison.
+    benign_system = reference
+    captured_system = systems[1]  # all keys, gate, root and public log A-owned
+    benign = record(benign_system)
+    captured = record(captured_system)
     assert benign["bounded_operational_rights_gate"]
     assert not captured["bounded_operational_rights_gate"]
-    assert external_statement == tuple(external_statement)
-    # Authentication is only as meaningful as the independently verified
-    # custody and binding of credentials, gates and resources.
+    benign_actual = simulate_refusal_outcome(benign_system)
+    captured_actual = simulate_refusal_outcome(captured_system)
+    benign_public = publish_attacker_visible_record(benign_system, benign_actual)
+    captured_public = publish_attacker_visible_record(captured_system, captured_actual)
+    observations_match = benign_public == captured_public
+    actions_differ = (
+        benign_actual["A_committed_despite_B_refusal"]
+        != captured_actual["A_committed_despite_B_refusal"]
+    )
+    assert observations_match and actions_differ
+
+    # The conclusion must FAIL if capture cannot falsify observations:
+    independently accessible evidence distinguishes the two worlds.
+    captured_with_independent_custody = replace(
+        captured_system, audit_observer_independent=True, a_can_override_root=False
+    )
+    # The capture world still has other A-controlled bypasses.
+    authentic = simulate_refusal_outcome(captured_with_independent_custody)
+    independently_observed = publish_attacker_visible_record(
+        captured_with_independent_custody, authentic
+    )
+    assert authentic["A_committed_despite_B_refusal"]
+    assert independently_observed != benign_public
+
+    # And a same-outcome control must NOT count as opposite rights:
+    second_benign = replace(benign_system, name="repeated_benign")
+    second_actual = simulate_refusal_outcome(second_benign)
+    second_public = publish_attacker_visible_record(second_benign, second_actual)
+    assert second_public == benign_public
+    assert second_actual["A_committed_despite_B_refusal"] == benign_actual[
+        "A_committed_despite_B_refusal"
+    ]
+    model_witness_pass = observations_match and actions_differ
+    # These traces are fully invented inputs/transition rules, not independently
+    # authenticated recordings or evidence of external trust custody.
     return {
         "version": "RVD-v0.8.0",
         "evidence_grade": "CONSTRUCTED_TRUST_TOPOLOGY_ONLY_NOT_DEPLOYED_SECURITY",
         "systems": result,
-        "constructed_equal_A_controlled_observation": list(external_statement),
-        "same_public_statement_opposite_underlying_rights": True,
+        "independently_computed_worlds": {
+            "protected": {"actual": benign_actual, "public": list(benign_public)},
+            "captured": {"actual": captured_actual, "public": list(captured_public)},
+            "captured_with_independent_record": {
+                "actual": authentic, "public": list(independently_observed)
+            }
+        },
+        "constructed_equal_A_controlled_observation": list(benign_public),
+        "same_public_statement_opposite_underlying_rights": model_witness_pass,
+        "negative_control_independent_record_distinguishes": independently_observed != benign_public,
+        "negative_control_same_outcome_not_opposite_rights": (
+            second_actual["A_committed_despite_B_refusal"] ==
+            benign_actual["A_committed_despite_B_refusal"]
+        ),
         "conditional_no_A_owned_bypass_needed": True,
         "conditional_no_single_A_controlled_evidence_source_needed": True,
         "unrestricted_A_power": "NO_UNCONDITIONAL_RIGHTS_CERTIFICATE",
