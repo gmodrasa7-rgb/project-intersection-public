@@ -538,6 +538,12 @@
   },
   "inventory": [
     {
+      "path": ".github/ACCESSIBILITY.md",
+      "filename_class": "UNMARKED_LANGUAGE_UNVERIFIED",
+      "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
       "path": ".github/ISSUE_TEMPLATE/independent-replication.md",
       "filename_class": "UNMARKED_LANGUAGE_UNVERIFIED",
       "counterpart_path": null,
@@ -545,12 +551,6 @@
     },
     {
       "path": ".github/pull_request_template.md",
-      "filename_class": "UNMARKED_LANGUAGE_UNVERIFIED",
-      "counterpart_path": null,
-      "content_equivalence": "NOT_REVIEWED"
-    },
-    {
-      "path": "ACCESSIBILITY.md",
       "filename_class": "UNMARKED_LANGUAGE_UNVERIFIED",
       "counterpart_path": null,
       "content_equivalence": "NOT_REVIEWED"
@@ -2251,12 +2251,12 @@
       "as_of": "2026-10-21",
       "status": "PI_ACCESS_V0_1_0_TASK_ROUTING_STRUCTURAL_ONLY",
       "new_documents": [
-        "ACCESSIBILITY.md",
+        ".github/ACCESSIBILITY.md",
         "navigation/ACCESS_MAP_EN.md",
         "navigation/ACCESS_MAP_KO.md"
       ],
       "new_edition_pairs": 1,
-      "editorial_notes": "Task-oriented EN/KO source maps and a public accessibility feedback route. Bilingual structure and local Markdown paths checked; independent screen-reader tests, actual time-to-evidence and semantic parity not certified.",
+      "editorial_notes": "Task-oriented EN/KO source maps and a public accessibility feedback route. Bilingual structure and local Markdown paths checked; independent screen-reader tests, actual time-to-evidence and semantic parity not certified. Accessibility file placed in GitHub-supported .github/ folder to preserve zero new root Markdown.",
       "reviewer_actions": "Test phone/keyboard/screen reader and counterexample navigation independently; verify adverse results remain visible."
     }
   ],
