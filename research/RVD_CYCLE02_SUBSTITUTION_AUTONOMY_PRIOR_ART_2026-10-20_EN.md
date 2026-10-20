@@ -80,3 +80,5 @@ Let `U_A^P = value_A(C, autonomy_B, future options, intrinsic care, ...) − pre
 - Next gate: expert-verified DOI/full-paper critical crosswalk and pre-registration for R6/R7 with realistic, nonharmful cases; independent evaluators and real account of costs. Preserve null, adverse and nonidentifiable cases.
 
 **Version history:** v0.1 initial conceptual draft → v0.1.0 named reproducible baseline → **v0.2.0 additional competing mechanisms R6–R9 and test-ready design**. No prior artifact was deleted or renamed. No irreversible action on living or potentially affected entities is proposed.
+
+**Executed logical counterexample (not a field test):** [RVD v0.2.0 standard-library Python witness](../experiments/rvd_02/substitution_witness.py), runnable as `python experiments/rvd_02/substitution_witness.py`, checks three preconstructed payoff cases and a pair of observationally indistinguishable motive stories. A positive constructed joint gain of +45 coexists with an A-only preservation disadvantage of −35 and the selected absorption option. This is a **programmed arithmetic test of model consistency**, not a measurement of real AI, human motivation, or consciousness.
