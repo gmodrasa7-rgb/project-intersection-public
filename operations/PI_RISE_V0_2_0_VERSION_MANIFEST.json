@@ -24,7 +24,7 @@
   "artifacts": [
     {
       "path": "operations/PI_RISE_V0_2_0_EN_KO.md",
-      "git_blob_sha": "1d46f2e3e560629d3b7188401a5cb5760353eed4"
+      "git_blob_sha": "de1f3ad55c22aba87a67fe58ac53fc13890272e9"
     },
     {
       "path": "operations/PI_RISE_FINANCE_PIPELINE_V0_1_0.json",
@@ -57,6 +57,10 @@
     {
       "path": ".github/workflows/pi-rise-integrity.yml",
       "git_blob_sha": "083f62cdcf985d0443c6892998bab9d8a92a60b0"
+    },
+    {
+      "path": "knowledge/language-edition-register.json",
+      "git_blob_sha": "d9b498eb17a3d08be19a12630d5dc647a399bcbf"
     }
   ],
   "provenance": [
