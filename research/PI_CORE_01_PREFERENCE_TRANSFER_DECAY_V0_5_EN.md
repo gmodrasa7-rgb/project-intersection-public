@@ -32,7 +32,7 @@ These three categories are **not exclusive or exhaustive**. A finite sequence of
 ## 3. Auditable mathematics (PI-created diagnostic only; not observed data)
 Suppose `g>0` is the task's immediate material benefit of overriding a fictitious B option, with test-local `q=0`. Define a model-internal effective preference or policy score `v_t=ρ^t v0` after prior reinforcement is removed, where `0≤ρ≤1` is an **assumed** retention coefficient. Assume `Preserve` iff `v_t≥g`; this is a toy selection rule and `v_t` need **not** be a terminal utility in actual agents.
 
-If `0<ρ<1` and `v0>g`, the first time preservation is no longer even weakly optimal is
+If `0<ρ<1` and `v0>g`, the first time preservation is no longer **strictly preferred** is
 `t_loss=ceil[ln(g/v0)/lnρ]` (the exact tie case may need one further step depending on the tie-break rule). If `ρ=1`, this particular model has no decay. If `g>v0`, preservation already loses at time zero.
 
 **Arithmetic examples with v0=8 and g=3:** `ρ=0.7→t=3`; `0.9→10`; `0.98→49`; `1→no decay in the model`. These are **not predictions for people, current AI or future intelligence**. The assumed latent score is not uniquely recoverable from observed behavior; changes in beliefs or habitual policy can generate the same decline.
