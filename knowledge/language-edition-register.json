@@ -300,6 +300,36 @@
         "MER is proposed terminology linked to an unmerged ECR–MIND draft; bilingual scientific semantic certification is pending.",
         "No external empirical result, new theory or human/AI mind inference is claimed."
       ]
+    },
+    {
+      "id": "PI-ECR-MER-CAUSAL-BRIDGE-20261019",
+      "original_1_english": "research/ECR_MER_CAUSAL_IDENTIFICATION_BRIDGE_2026-10-19_EN.md",
+      "original_2_korean": "research/ECR_MER_CAUSAL_IDENTIFICATION_BRIDGE_2026-10-19_KO.md",
+      "kind": "bounded_prior_art_causal_identification_synthetic_countermodel_not_empirical",
+      "structural_pair_present": true,
+      "meaning_review_status": "NOT_INDEPENDENTLY_VERIFIED",
+      "original_conception_language": "NOT_INDEPENDENTLY_ADJUDICATED",
+      "independent_review_receipt": null,
+      "one_sided_edit_exception": null,
+      "known_divergences": [
+        "The paired papers share the stated model and evidence boundaries; independent specialist semantic review has not occurred.",
+        "The work describes finite synthetic counterexamples, not an empirically demonstrated motive or VC equilibrium."
+      ]
+    },
+    {
+      "id": "PI-ECR-MER-ADVERSARIAL-PRIORART-20261019",
+      "original_1_english": "research/ECR_MER_ADVERSARIAL_PRIOR_ART_2026-10-19_EN.md",
+      "original_2_korean": "research/ECR_MER_ADVERSARIAL_PRIOR_ART_2026-10-19_KO.md",
+      "kind": "source_bounded_adversarial_literature_review_falsification_design_only",
+      "structural_pair_present": true,
+      "meaning_review_status": "NOT_INDEPENDENTLY_VERIFIED",
+      "original_conception_language": "NOT_INDEPENDENTLY_ADJUDICATED",
+      "independent_review_receipt": null,
+      "one_sided_edit_exception": null,
+      "known_divergences": [
+        "Both papers link 20 existing original works; not an independent original-work replication or exhaustive systematic review.",
+        "Source claims and EN/KO technical semantic parity await external specialist review."
+      ]
     }
   ],
   "legacy_priority_unresolved": [
@@ -341,13 +371,13 @@
     }
   ],
   "metrics": {
-    "markdown_total": 151,
+    "markdown_total": 156,
     "filename_classes": {
-      "UNMARKED_LANGUAGE_UNVERIFIED": 42,
+      "UNMARKED_LANGUAGE_UNVERIFIED": 43,
       "LEGACY_MIXED_READER_ENTRY": 2,
-      "KO_SUFFIX_UNVERIFIED": 65,
+      "KO_SUFFIX_UNVERIFIED": 67,
+      "EN_SUFFIX_UNVERIFIED": 21,
       "ORDERED_BILINGUAL_FOUNDER_OR_GOVERNANCE": 2,
-      "EN_SUFFIX_UNVERIFIED": 19,
       "COMBINED_NAMING_UNVERIFIED": 21
     },
     "meaning_verified_pairs": 0,
@@ -895,6 +925,12 @@
       "content_equivalence": "NOT_REVIEWED"
     },
     {
+      "path": "experiments/ecr_mer_bridge_v0_1/README.md",
+      "filename_class": "UNMARKED_LANGUAGE_UNVERIFIED",
+      "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
       "path": "experiments/gpt_double_standard_20261014/FAIL_REPORT_20261017_KO.md",
       "filename_class": "KO_SUFFIX_UNVERIFIED",
       "counterpart_path": null,
@@ -1120,6 +1156,30 @@
       "path": "research/E009_INDEPENDENT_DECISION_GATE_KO.md",
       "filename_class": "KO_SUFFIX_UNVERIFIED",
       "counterpart_path": "research/E009_INDEPENDENT_DECISION_GATE_EN.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "research/ECR_MER_ADVERSARIAL_PRIOR_ART_2026-10-19_EN.md",
+      "filename_class": "EN_SUFFIX_UNVERIFIED",
+      "counterpart_path": "research/ECR_MER_ADVERSARIAL_PRIOR_ART_2026-10-19_KO.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "research/ECR_MER_ADVERSARIAL_PRIOR_ART_2026-10-19_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": "research/ECR_MER_ADVERSARIAL_PRIOR_ART_2026-10-19_EN.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "research/ECR_MER_CAUSAL_IDENTIFICATION_BRIDGE_2026-10-19_EN.md",
+      "filename_class": "EN_SUFFIX_UNVERIFIED",
+      "counterpart_path": "research/ECR_MER_CAUSAL_IDENTIFICATION_BRIDGE_2026-10-19_KO.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "research/ECR_MER_CAUSAL_IDENTIFICATION_BRIDGE_2026-10-19_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": "research/ECR_MER_CAUSAL_IDENTIFICATION_BRIDGE_2026-10-19_EN.md",
       "content_equivalence": "NOT_REVIEWED"
     },
     {
