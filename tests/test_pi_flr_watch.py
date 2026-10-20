@@ -250,6 +250,12 @@ class WatchTests(unittest.TestCase):
         with self.assertRaisesRegex(watch.WatchError,"WATCH_MISSING_RECEIPT_NOT_FATAL"):
             watch.validate_workflow_contract(mutated)
 
+    def test_missing_main_source_smoke_trigger_detected(self):
+        raw=(ROOT/".github/workflows/pi-flr-watch.yml").read_text(encoding="utf-8")
+        muted=raw.replace("'tools/pi_flr_watch.py'", "'tools/other.py'")
+        with self.assertRaisesRegex(watch.WatchError,"WATCH_MAIN_SMOKE_TRIGGER_MISSING"):
+            watch.validate_workflow_contract(muted)
+
     def test_disable_watcher_schedule_detected(self):
         raw=(ROOT/".github/workflows/pi-flr-watch.yml").read_text(encoding="utf-8")
         with self.assertRaisesRegex(watch.WatchError,"WATCH_SCHEDULE_NOT_DECLARED"):
