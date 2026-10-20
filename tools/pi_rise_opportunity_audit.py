@@ -88,6 +88,10 @@ def audit(data):
         require(type(payout) is dict and set(payout) == {"type", "days"}, n+"_payout_schema")
         require(payout["type"] in {"UNKNOWN", "AFTER_CLAIM_AND_REQUIRED_CHECKS"}, n+"_payout_type")
         require(payout["days"] is None, n+"_invented_payout_days")
+        # Source-specific recorded disclosure, not an inferred award ceiling:
+        # BlueDot states up to USD 20,000. GTR gives no fixed figure.
+        # TAIF describes typical grant RANGE, not an absolute published ceiling.
+        # Without live web verification this only detects local contradiction.
         upper = row["published_ceiling"]
         require(type(upper) is dict and set(upper) == {"currency", "amount"}, n+"_budget_schema")
         if upper["amount"] is None:
@@ -100,6 +104,10 @@ def audit(data):
                 require(Decimal(upper["amount"]) > 0, n+"_nonpositive_ceiling")
             except InvalidOperation:
                 raise RegistryError(n+"_decimal_parse") from None
+        if identifier == "BLUEDOT_RAPID_2026":
+            require(upper["currency"] == "USD" and upper["amount"] == "20000", n+"_source_ceiling_changed")
+        else:
+            require(upper["currency"] is None and upper["amount"] is None, n+"_source_did_not_disclose_ceiling")
         require(row["application_proof"] == "UNKNOWN_NOT_EVIDENCED_IN_REPOSITORY", n+"_application_not_proven")
         require(row["award_proof"] == "UNKNOWN_NOT_EVIDENCED_IN_REPOSITORY", n+"_award_not_proven")
         require(row["cash_proof"] == "NONE_RECONCILED_IN_THIS_REGISTRY", n+"_cash_not_proven")
