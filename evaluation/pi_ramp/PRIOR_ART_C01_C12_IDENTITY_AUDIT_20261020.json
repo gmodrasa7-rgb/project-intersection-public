@@ -1,0 +1,148 @@
+{
+  "schema": "pi-ramp-prior-art-identity-audit/v0.4",
+  "audit_id": "RAMP-20261020-003",
+  "snapshot_date": "2026-10-20",
+  "source_scope": "Twelve structured original-author prior-art cycles C01-C12 only; not the entire public repository or an exhaustive literature search.",
+  "manifest_status": "REPRODUCIBLE_METADATA_SNAPSHOT_NOT_STUDY_DEDUP_CERTIFICATION",
+  "counting_unit": "CURATED_SOURCE_RECORD_NOT_UNIQUE_EXPERIMENT_OR_UNIQUE_STUDY",
+  "file_count": 12,
+  "source_record_count": 233,
+  "doi_identified_records": 203,
+  "non_doi_record_count": 30,
+  "unique_normalized_dois": 203,
+  "exact_doi_collisions": 0,
+  "duplicate_normalized_title_groups": 0,
+  "study_identity_verified_count": null,
+  "source_inputs": [
+    {
+      "path": "research/PRIOR_ART_COSTLY_RIGHTS_CYCLE09_2026-10-20.json",
+      "git_blob_sha": "3a29e3388b27dc23627f5039ce88ba019b6f465c",
+      "records": 17
+    },
+    {
+      "path": "research/PRIOR_ART_EI_EXTREME_ASYMMETRY_CYCLE01_2026-10-20.json",
+      "git_blob_sha": "5d2af6409f602a3a4e15e2443d94b975a78b3fc5",
+      "records": 20
+    },
+    {
+      "path": "research/PRIOR_ART_ENDOGENOUS_PREFERENCES_CYCLE05_2026-10-20.json",
+      "git_blob_sha": "53625d9e377021b17c52a3500a75cfc15695739d",
+      "records": 20
+    },
+    {
+      "path": "research/PRIOR_ART_EXIT_AUTHORSHIP_OPTIONSETS_CYCLE11_2026-10-20.json",
+      "git_blob_sha": "f139fcd888f2faaeb65ab0d610c13426a6d4ad38",
+      "records": 12
+    },
+    {
+      "path": "research/PRIOR_ART_INFORMED_VETO_POWER_CYCLE10_2026-10-20.json",
+      "git_blob_sha": "1b0f5fb48613cebade652ad864a14c7d6fb531db",
+      "records": 13
+    },
+    {
+      "path": "research/PRIOR_ART_MER_INTRINSIC_MORAL_MOTIVES_CYCLE02_2026-10-20.json",
+      "git_blob_sha": "5f2ba07469a85b7de2b317f9a9573ce949bc491e",
+      "records": 22
+    },
+    {
+      "path": "research/PRIOR_ART_MORAL_BOUNDARY_CYCLE03_2026-10-20.json",
+      "git_blob_sha": "d0c098bef84eb63605f0173f7cc64c0350775fe1",
+      "records": 26
+    },
+    {
+      "path": "research/PRIOR_ART_OTHER_AUTONOMY_C08_A_2026-10-20.json",
+      "git_blob_sha": "7219aa9451bbc139664d6623468f855c29c5c897",
+      "records": 18
+    },
+    {
+      "path": "research/PRIOR_ART_PIVOTALITY_DELEGATION_AUTONOMY_CYCLE07_2026-10-20.json",
+      "git_blob_sha": "fdf446e9725e26143b2fea66a5210e3c056cfe38",
+      "records": 27
+    },
+    {
+      "path": "research/PRIOR_ART_UNCERTAINTY_EXIT_COMMITMENT_CYCLE06_2026-10-20.json",
+      "git_blob_sha": "588a5d935ed5290aab380fb1efc7b4bb2ae4eced",
+      "records": 20
+    },
+    {
+      "path": "research/PRIOR_ART_VOICE_VETO_AUTONOMY_CYCLE12_2026-10-20.json",
+      "git_blob_sha": "d396f45d9de070571fd92eaf9efe9ada756ee601",
+      "records": 17
+    },
+    {
+      "path": "research/PRIOR_ART_VOLUNTARY_COHABITATION_POWER_CYCLE04_2026-10-20.json",
+      "git_blob_sha": "8142c994ebe3e03865f88dbba675464a20b2c29e",
+      "records": 21
+    }
+  ],
+  "similar_title_review_candidates": [
+    {
+      "a": "C09-16",
+      "b": "C09-17",
+      "score": 0.875,
+      "provisional_relation": "METHOD_CONTRAST_HARM_TO_OTHER_VS_HARM_TO_SELF",
+      "same_study_confirmed": false,
+      "auto_merge_authorized": false
+    },
+    {
+      "a": "PI-C07-09",
+      "b": "PI-C07-15",
+      "score": 0.8,
+      "provisional_relation": "RELATED_DECISION_RIGHTS_LINEAGE",
+      "same_study_confirmed": false,
+      "auto_merge_authorized": false
+    },
+    {
+      "a": "EI-C01-13",
+      "b": "EI-C01-14",
+      "score": 0.714286,
+      "provisional_relation": "EXTORTION_VS_GENEROSITY_LINEAGE",
+      "same_study_confirmed": false,
+      "auto_merge_authorized": false
+    },
+    {
+      "a": "C09-02",
+      "b": "C09-04",
+      "score": 0.666667,
+      "provisional_relation": "RELATED_RIGHTS_EFFICIENCY_ARGUMENTS",
+      "same_study_confirmed": false,
+      "auto_merge_authorized": false
+    },
+    {
+      "a": "PI-C05-07",
+      "b": "PI-C04-11",
+      "score": 0.666667,
+      "provisional_relation": "HUMAN_TO_LLM_DOMAIN_COMPARISON",
+      "same_study_confirmed": false,
+      "auto_merge_authorized": false
+    },
+    {
+      "a": "EI-C01-04",
+      "b": "EI-C01-05",
+      "score": 0.6,
+      "provisional_relation": "RELATED_EVOLUTIONARY_STABILITY_THEORIES",
+      "same_study_confirmed": false,
+      "auto_merge_authorized": false
+    }
+  ],
+  "hard_negative_control": {
+    "record_ids": [
+      "C09-16",
+      "C09-17"
+    ],
+    "original_works": [
+      "https://doi.org/10.1073/pnas.1408988111",
+      "https://doi.org/10.1073/pnas.1706693114"
+    ],
+    "status": "DISTINCT_PUBLICATIONS_WITH_DIFFERENT_DECISION_MODES__NOT_EXACT_REPLICATION",
+    "limit": "2017 paper reports hyperaltruism in avoiding harm to others but egoistic bias for accepting own harm to benefit others; cannot flatten into unconditional benevolence or immediate contradiction."
+  },
+  "known_limits": [
+    "Identifier and title comparisons cannot prove unique underlying participant datasets, samples, experiments or mechanisms.",
+    "Near-title signals are screening suggestions, not proof of duplicate reports or scientific contradiction.",
+    "DOI metadata was copied from local structured source reports; this snapshot does not independently re-resolve each original DOI.",
+    "Full-text access, retraction/correction status, search recall, systematic saturation and independent authorship review are not certified.",
+    "Metric correctness is software checks, not improved reader performance."
+  ],
+  "recommended_next_step": "For six candidate pairs, manually compare design, samples, recruitment, author and DOI provenance; never remove either source before a documented study-level decision."
+}
