@@ -1,0 +1,195 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PI-RISE snapshot input 0.1.0 — private real data, synthetic public examples only",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "synthetic",
+    "private_only",
+    "no_double_count_verified",
+    "finance",
+    "funding_pipeline",
+    "compute",
+    "continuity",
+    "evidence",
+    "independence",
+    "capacity"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "0.1.0"
+    },
+    "synthetic": {
+      "type": "boolean"
+    },
+    "private_only": {
+      "type": "boolean",
+      "description": "For actual data must be true and stored only under user's authorized private storage."
+    },
+    "no_double_count_verified": {
+      "type": "boolean"
+    },
+    "finance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "liquid_cash_krw",
+        "immediate_liabilities_krw",
+        "essential_monthly_burn_krw"
+      ],
+      "properties": {
+        "liquid_cash_krw": {
+          "$ref": "#/$defs/amount"
+        },
+        "immediate_liabilities_krw": {
+          "$ref": "#/$defs/amount"
+        },
+        "essential_monthly_burn_krw": {
+          "$ref": "#/$defs/amount"
+        }
+      }
+    },
+    "funding_pipeline": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "label",
+          "stage"
+        ],
+        "properties": {
+          "label": {
+            "type": "string",
+            "maxLength": 80
+          },
+          "stage": {
+            "enum": [
+              "DRAFT",
+              "SUBMITTED",
+              "UNDER_REVIEW",
+              "AWARDED_UNPAID",
+              "PAID_VERIFIED",
+              "REJECTED",
+              "UNKNOWN"
+            ]
+          },
+          "proposed_amount_krw": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "minimum": 0
+          },
+          "source_ref": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "maxLength": 200
+          }
+        }
+      }
+    },
+    "compute": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "free_fallback_tested"
+      ],
+      "properties": {
+        "free_fallback_tested": {
+          "type": "boolean"
+        }
+      }
+    },
+    "continuity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "github_readback_tested",
+        "local_restore_tested"
+      ],
+      "properties": {
+        "github_readback_tested": {
+          "type": "boolean"
+        },
+        "local_restore_tested": {
+          "type": "boolean"
+        }
+      }
+    },
+    "evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "negative_results_preserved"
+      ],
+      "properties": {
+        "negative_results_preserved": {
+          "type": "boolean"
+        }
+      }
+    },
+    "independence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "sponsor_conclusion_control"
+      ],
+      "properties": {
+        "sponsor_conclusion_control": {
+          "enum": [
+            "NO",
+            "YES",
+            "UNKNOWN"
+          ]
+        }
+      }
+    },
+    "capacity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "researcher_can_work"
+      ],
+      "properties": {
+        "researcher_can_work": {
+          "enum": [
+            "YES",
+            "LIMITED",
+            "NO",
+            "UNKNOWN"
+          ]
+        }
+      }
+    }
+  },
+  "$defs": {
+    "amount": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "amount"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "VERIFIED",
+            "UNVERIFIED"
+          ]
+        },
+        "amount": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        }
+      },
+      "description": "If status is UNVERIFIED, amount must be null; checker enforces semantic constraint."
+    }
+  }
+}

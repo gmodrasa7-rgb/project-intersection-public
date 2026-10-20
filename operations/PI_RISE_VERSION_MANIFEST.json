@@ -1,0 +1,55 @@
+{
+  "component_id": "PI-RISE",
+  "long_name": "Project Intersection Research Independence & Sustainability Engine",
+  "korean_name": "연구 독립성·지속가능성 운영체계",
+  "artifact_kind": "OPERATIONAL_PROTOCOL_NOT_SCIENTIFIC_HYPOTHESIS",
+  "version": "0.1.0",
+  "version_status": "CANDIDATE_UNMERGED",
+  "as_of": "2026-10-21",
+  "predecessor": "NO_PREDECESSOR_FOR_THIS_NEW_INTEGRATION_CONTRACT",
+  "does_not_replace": [
+    "funding/SPONSORSHIP_PUBLIC_LEDGER.md",
+    "funding/30_DAY_BRIDGE.md",
+    "funding/90_DAY_PILOT.md",
+    "continuity/GITHUB_LOCAL_HANDOFF_PROTOCOL.md",
+    "protocols/PI_RAMP_V0_5_EN_KO.md"
+  ],
+  "artifacts": [
+    {
+      "path": "operations/PI_RISE_V0_1_0_EN_KO.md",
+      "blob_sha": "c7c9eec77c1719591e274e13dda2990d5654e7b9"
+    },
+    {
+      "path": "operations/PI_RISE_SCHEMA_V0_1_0.json",
+      "blob_sha": "0db3c59cde30b59478e95f20aa33fd3b8063a9aa"
+    },
+    {
+      "path": "operations/PI_RISE_SYNTHETIC_EXAMPLE_V0_1_0.json",
+      "blob_sha": "d6fff228a4580fe70d862a25b30365bd64d3e470"
+    },
+    {
+      "path": "tools/pi_rise_check.py",
+      "blob_sha": "2cd3a9dbe06a0ddc98250a60ad2bb445c1d3fd71"
+    },
+    {
+      "path": "tests/test_pi_rise_check.py",
+      "blob_sha": "bb89a4d29cc4f432153ba804cedd9e283560f2eb"
+    }
+  ],
+  "evaluation": {
+    "scientific_status": "NOT_APPLICABLE_OPERATIONAL_METHOD",
+    "real_world_sustainability_effect": "UNVERIFIED",
+    "independent_replication": "NOT_DONE",
+    "unit_tests": "GITHUB_ACTIONS_SYNTHETIC_REGRESSION_PASSED_ON_INITIAL_PR",
+    "no_grant_or_cash_verified_by_this_release": true
+  },
+  "privacy": {
+    "public_examples": "SYNTHETIC_ONLY",
+    "personal_finance_location": "AUTHORIZED_LOCAL_PRIVATE_STORAGE_ONLY",
+    "no_relay_of_medical_bank_identity_family_data": true
+  },
+  "migration": {
+    "prior_records_immutable": true,
+    "requires_re_read_of_main_before_merge": true
+  }
+}

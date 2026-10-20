@@ -1,0 +1,32 @@
+name: PI-RISE synthetic-only integrity
+on:
+  pull_request:
+    paths:
+      - "operations/PI_RISE_*"
+      - "tools/pi_rise_check.py"
+      - "tests/test_pi_rise_check.py"
+      - ".github/workflows/pi-rise-integrity.yml"
+  push:
+    branches: [main]
+    paths:
+      - "operations/PI_RISE_*"
+      - "tools/pi_rise_check.py"
+      - "tests/test_pi_rise_check.py"
+      - ".github/workflows/pi-rise-integrity.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  synthetic-check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Unit regression tests (no credentials, network services or real finances)
+        run: python3 -m unittest discover -s tests -p 'test_pi_rise_check.py' -v
+      - name: Verify synthetic example expected status
+        run: |
+          python3 tools/pi_rise_check.py operations/PI_RISE_SYNTHETIC_EXAMPLE_V0_1_0.json > /tmp/pi_rise_synthetic_result.json
+          python3 -c 'import json; x=json.load(open("/tmp/pi_rise_synthetic_result.json")); assert x["example_is_synthetic"] is True; assert x["overall"] == "CONSERVE"; assert x["pipeline_counted_as_cash"] is False'

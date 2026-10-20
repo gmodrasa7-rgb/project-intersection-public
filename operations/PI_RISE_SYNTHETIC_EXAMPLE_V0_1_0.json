@@ -1,0 +1,44 @@
+{
+  "schema_version": "0.1.0",
+  "synthetic": true,
+  "private_only": false,
+  "no_double_count_verified": true,
+  "finance": {
+    "liquid_cash_krw": {
+      "status": "VERIFIED",
+      "amount": 4000000
+    },
+    "immediate_liabilities_krw": {
+      "status": "VERIFIED",
+      "amount": 0
+    },
+    "essential_monthly_burn_krw": {
+      "status": "VERIFIED",
+      "amount": 2000000
+    }
+  },
+  "funding_pipeline": [
+    {
+      "label": "FICTITIOUS DEMO PROPOSAL ONLY",
+      "stage": "AWARDED_UNPAID",
+      "proposed_amount_krw": 30000000,
+      "source_ref": null
+    }
+  ],
+  "compute": {
+    "free_fallback_tested": true
+  },
+  "continuity": {
+    "github_readback_tested": true,
+    "local_restore_tested": true
+  },
+  "evidence": {
+    "negative_results_preserved": true
+  },
+  "independence": {
+    "sponsor_conclusion_control": "NO"
+  },
+  "capacity": {
+    "researcher_can_work": "YES"
+  }
+}
