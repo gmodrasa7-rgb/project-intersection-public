@@ -11,6 +11,7 @@ on:
       - "tools/pi_rise_cutset.py"
       - "tools/pi_rise_budget.py"
       - "tools/pi_rise_vac.py"
+      - "tools/pi_rise_finance_audit.py"
       - "tests/test_pi_rise_*.py"
       - ".github/workflows/pi-rise-integrity.yml"
   push:
@@ -25,6 +26,7 @@ on:
       - "tools/pi_rise_cutset.py"
       - "tools/pi_rise_budget.py"
       - "tools/pi_rise_vac.py"
+      - "tools/pi_rise_finance_audit.py"
       - "tests/test_pi_rise_*.py"
       - ".github/workflows/pi-rise-integrity.yml"
   workflow_dispatch:
