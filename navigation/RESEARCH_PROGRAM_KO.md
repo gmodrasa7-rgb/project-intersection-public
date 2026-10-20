@@ -3,7 +3,7 @@
 # Project Intersection — 연구체계·증거·공개자료실 정본 지도
 **원본2 — 한국어 | 기준일: 2026-10-20 | 상태: 갱신 가능한 연구 안내·비판적 종합, 독립 검증 결과 아님**
 
-[창시 연구질문](../README.md) · [영어 대응판](RESEARCH_PROGRAM_EN.md) · [선행논문 최우선 규칙](../PRIOR_ART_FIRST_RESEARCH_POLICY_EN_KO.md) · [독립검토 경로](../research/PUBLIC_REVIEW_PACKET_KO.md) · [자료실 재귀개선 방법 PI-RAMP v0.2](../protocols/PI_RAMP_V0_2_KO.md) · [v0.3 선행방법·반증·효과검사](../protocols/PI_RAMP_V0_3_KO.md) · [v0.4 원저자 자료 식별·대립 근거 감사](../protocols/PI_RAMP_V0_4_EN_KO.md)
+[창시 연구질문](../README.md) · [영어 대응판](RESEARCH_PROGRAM_EN.md) · [선행논문 최우선 규칙](../PRIOR_ART_FIRST_RESEARCH_POLICY_EN_KO.md) · [독립검토 경로](../research/PUBLIC_REVIEW_PACKET_KO.md) · [자료실 재귀개선 방법 PI-RAMP v0.2](../protocols/PI_RAMP_V0_2_KO.md) · [v0.3 선행방법·반증·효과검사](../protocols/PI_RAMP_V0_3_KO.md) · [v0.4 원저자 자료 식별·대립 근거 감사](../protocols/PI_RAMP_V0_4_EN_KO.md) · [v0.5 부분 재현·유추·실험 단위 계보](../protocols/PI_RAMP_V0_5_EN_KO.md)
 
 ## 1. 단일 연구문제: 개별 안전장치들의 나열이 아님
 
