@@ -26,7 +26,7 @@ KNOWN = {
     "Public repository governance audit": ("GOVERNANCE", ["FLR-0007"]),
     "PI-FLR recursive failure learning integrity": ("PI_FLR", []),
 }
-FAIL = {"failure", "timed_out"}
+FAIL = {"failure", "timed_out", "startup_failure", "action_required"}
 MAX_RUNS = 160
 MAX_FAILED_RUNS = 32
 MAX_GROUP_EVIDENCE = 8
@@ -210,9 +210,20 @@ def validate_workflow_contract(text):
              and re.search(r"(?m)^    - cron: ['\"]17 \* \* \* \*['\"]", text) is not None,
              "WATCH_SCHEDULE_NOT_DECLARED")
     _require("workflow_dispatch:" in text, "WATCH_MANUAL_TRIGGER_MISSING")
-    _require("actions: read" in text and "contents: read" in text
-             and "issues: write" not in text and "contents: write" not in text,
+    # Parse the actual top-level permissions block, not unrelated strings
+    # or comments elsewhere. Every unrecognized or write-scoped key fails closed.
+    _require(text.count("permissions:") == 1 and
+             re.search(r"(?m)^[ ]{4,}permissions:", text) is None,
              "WATCH_NOT_READ_ONLY")
+    permission_match = re.search(
+        r"(?m)^permissions:[ \t]*\n((?:[ \t]+[^\n]*\n)*)", text)
+    _require(permission_match is not None, "WATCH_NOT_READ_ONLY")
+    perms = [line.strip() for line in permission_match.group(1).splitlines()
+             if line.strip() and not line.lstrip().startswith("#")]
+    _require(sorted(perms) == ["actions: read", "contents: read"],
+             "WATCH_NOT_READ_ONLY")
+    _require("if-no-files-found: error" in text,
+             "WATCH_MISSING_RECEIPT_NOT_FATAL")
     _require("python3 -m unittest discover -s tests -p 'test_pi_flr_watch.py'" in text,
              "WATCH_SELF_TEST_MISSING")
     _require("python3 tools/pi_flr_watch.py" in text, "WATCH_SCAN_NOT_EXECUTED")
