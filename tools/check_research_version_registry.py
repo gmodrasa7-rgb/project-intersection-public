@@ -39,7 +39,7 @@ FIXED_EVIDENCE = {
 CANDIDATES = {"ECR": (211, "1.4"), "C13": (248, None)}
 VERSIONED_SOURCES = {
     "RVD": "research/RVD_VERSION_MANIFEST.json",
-    "PI-RAMP": "protocols/PI_RAMP_V0_4_EN_KO.md",
+    "PI-RAMP": "protocols/PI_RAMP_V0_5_EN_KO.md",
     "PI-ROADMAP": "research/PI_ROADMAP_OPERATIONAL_GATES_V0_2_3_EN_KO.md",
     "DCA-1": "research/DCA1_ADAPTATION_DISPLACEMENT_IDENTIFICATION_2026-10-20_KO.md",
 }
@@ -207,7 +207,7 @@ def self_test(record: dict) -> int:
     case("duplicate-actor", lambda d: d["entries"].append(deepcopy(d["entries"][0])))
     case("erase-VC", lambda d: d["entries"].remove(row(d,"VC")))
     case("invent-RVD-version", lambda d: row(d,"RVD").update(current_version="9.9.9"))
-    case("downgrade-RAMP-number", lambda d: row(d,"PI-RAMP").update(current_version="0.3.0"))
+    case("downgrade-RAMP-number", lambda d: row(d,"PI-RAMP").update(current_version="0.4.0"))
     case("invent-version-without-source", lambda d: row(d,"VC").update(current_version="1.0.0"))
     case("corrupt-source-SHA", lambda d: row(d,"RVD").update(current_source_blob_sha="0"*40))
     case("erase-source-SHA", lambda d: row(d,"PI-RAMP").update(current_source_blob_sha=None))

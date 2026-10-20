@@ -1,0 +1,308 @@
+{
+  "schema": "pi-claim-impact-overlay/v0.1.0",
+  "snapshot_date": "2026-10-21",
+  "scope": "SELECTED_MAIN_ONLY_NOT_COMPLETE_CLAIM_INVENTORY",
+  "upstream_graph": "knowledge/graph.json",
+  "version_registry": "research/RESEARCH_VERSION_REGISTRY.json",
+  "status_contract": "research/RESEARCH_STATUS_POLICY_KO.md",
+  "core_rules": [
+    "Source SHA mismatch triggers HOLD_FOR_REVIEW not automatic falsification",
+    "No upward scientific confidence via dependencies or passing CI",
+    "Changed documentation and changed experimental payload are separate provenance classes",
+    "Scientific uncertainty is not assumed false or zero",
+    "Only explicitly registered edges propagate review; partial overlay must not imply unregistered claims unaffected",
+    "Negative findings and source limitations survive all renaming and new versions",
+    "No direct AI subjective experience claims from text outputs"
+  ],
+  "sources": [
+    {
+      "id": "SRC-E008-READINESS",
+      "path": "experiments/e008/EXECUTABILITY_AUDIT.json",
+      "sha": "251077fd934ebac935c992e1f47899a271a7e7bf",
+      "probe": {
+        "kind": "json_exact",
+        "field": "full_decision_benchmark_ready_cases",
+        "expected": 0
+      },
+      "caveat": "Readiness diagnostic, not a policy outcome"
+    },
+    {
+      "id": "SRC-E009-RESULT",
+      "path": "experiments/e009/RESULT.json",
+      "sha": "c1c610297eaf3aab0ffeb9b2a59b9e520c40af58",
+      "probe": {
+        "kind": "json_exact",
+        "field": "project_v3_vs_best_simple_regret_improvement",
+        "expected": -0.42348132449545167
+      },
+      "caveat": "Researcher-designed synthetic consequence engine"
+    },
+    {
+      "id": "SRC-DCA1-RESULT",
+      "path": "experiments/dca1/RESULT.json",
+      "sha": "eff8666b0e90b71770ee813f9d651f0ce9bb4efd",
+      "probe": {
+        "kind": "json_exact",
+        "field": "empirical",
+        "expected": false
+      },
+      "caveat": "Toy best-response calculation, not observed cyber harm"
+    },
+    {
+      "id": "SRC-DCA1-PAPER",
+      "path": "research/DCA1_ADAPTATION_DISPLACEMENT_IDENTIFICATION_2026-10-20_KO.md",
+      "sha": "5f8db22570d8c4ee9e98a6f098157a953aef7aee",
+      "probe": {
+        "kind": "contains",
+        "value": "현실 검증 아님"
+      },
+      "caveat": "Source-first literature + constructed counterexample"
+    },
+    {
+      "id": "SRC-RVD-MANIFEST",
+      "path": "research/RVD_VERSION_MANIFEST.json",
+      "sha": "dbafa6796fad696b09cca967773dac1f2af9a495",
+      "probe": {
+        "kind": "json_exact",
+        "field": "scientific_status.empirical_validation",
+        "expected": "UNTESTED"
+      },
+      "caveat": "Version and scientific status are distinct"
+    },
+    {
+      "id": "SRC-RVD-CYCLE02",
+      "path": "research/RVD_CYCLE02_SUBSTITUTION_AUTONOMY_PRIOR_ART_2026-10-20_KO.md",
+      "sha": "4c242b7ffbd3ac3777b4ae03380558940bcdbbbc",
+      "probe": {
+        "kind": "contains",
+        "value": "실증 없음"
+      },
+      "caveat": "Structured counterexample; no empirical behavior observation"
+    },
+    {
+      "id": "SRC-RVD-PRIORART",
+      "path": "research/RVD_CYCLE02_SOURCE_REGISTER_2026-10-20.json",
+      "sha": "543266fec50db8114cb933c7f3eeb0e6b3fbc751",
+      "probe": {
+        "kind": "json_exact",
+        "field": "count_distinct_source_records",
+        "expected": 11
+      },
+      "caveat": "11 reference lineages are neither a complete review nor 11 RVD experiments"
+    },
+    {
+      "id": "SRC-RAMP-V05",
+      "path": "protocols/PI_RAMP_V0_5_EN_KO.md",
+      "sha": "e2a4d13ce099fa46d34554217e29a3b4e8266759",
+      "probe": {
+        "kind": "contains",
+        "value": "no effect on real reader performance measured"
+      },
+      "caveat": "PI-RAMP v0.5 differentiates study identity/partial replication, not measured real reader-performance improvement"
+    }
+  ],
+  "claims": [
+    {
+      "id": "CL-E008-GAP",
+      "title_ko": "E008 본비교 결과 부재",
+      "title_en": "E008 no main policy comparison",
+      "status": "NO_MAIN_RESULT",
+      "scope": "0 runnable full comparisons of the 16 specified cases; not policy failure or success",
+      "action": "Preserve uncomputed; require frozen baselines and full comparable inputs"
+    },
+    {
+      "id": "CL-E009-NEG",
+      "title_ko": "E009 복잡 후보의 합성 부정결과",
+      "title_en": "E009 synthetic adverse result",
+      "status": "SYNTHETIC_NEGATIVE",
+      "scope": "Project-v3 42.35% worse mean regret than best simple comparator; no field claim",
+      "action": "Reproduce source comparison and keep failed criteria visible"
+    },
+    {
+      "id": "CL-DCA1-TRANSFER",
+      "title_ko": "DCA-1 방어 피해전가 가능성",
+      "title_en": "DCA-1 displacement witness",
+      "status": "TOY_COUNTEREXAMPLE_ONLY",
+      "scope": "A protected-only scenario shifts an illustrative attack to B; no real-world effectiveness estimate",
+      "action": "Check loss for all affected parties and adaptive alternatives"
+    },
+    {
+      "id": "CL-RVD-ORIGINAL",
+      "title_ko": "RVD-R6 원개체 존속 반례",
+      "title_en": "RVD-R6 original-agent substitution contrast",
+      "status": "FORMAL_COUNTEREXAMPLE_ONLY",
+      "scope": "Relational output C does not logically ensure original agent B's autonomy or survival",
+      "action": "Separate value-C preservation from B's executable exit and numerical continuity"
+    },
+    {
+      "id": "CL-RVD-MOTIVE",
+      "title_ko": "RVD 동기 형성 식별 보류",
+      "title_en": "RVD motive formation remains unidentified",
+      "status": "MECHANISM_UNIDENTIFIED",
+      "scope": "Behavioral output and synthetic models alone do not identify subjective experience or enduring preference",
+      "action": "Construct discriminating observations, conflicting mechanism baselines and null-result gates"
+    },
+    {
+      "id": "CL-VC-HARD",
+      "title_ko": "VC 극한조건 자발적 공존 판정 보류",
+      "title_en": "VC hardest-case voluntary preservation unresolved",
+      "status": "UNRESOLVED",
+      "scope": "Cannot claim stable voluntary continuance after genuine power reversal and profitable exploitation; also cannot assert impossibility universally",
+      "action": "Assess real action opportunity, absence of sanctions, preference stability, exit and third-party effects separately"
+    },
+    {
+      "id": "CL-RAMP-EFFECT",
+      "title_ko": "PI-RAMP 자료실 개선 효과 미측정",
+      "title_en": "PI-RAMP reader-improvement effect unmeasured",
+      "status": "EFFECT_UNMEASURED",
+      "scope": "Process source-identity audit not an independent usability/causal comparison",
+      "action": "Prerecord reader tasks, measure before/after correctness and preserve null or adverse outcomes"
+    }
+  ],
+  "edges": [
+    {
+      "id": "EDGE-001",
+      "from": "SRC-E008-READINESS",
+      "to": "CL-E008-GAP",
+      "relation": "scoped_source",
+      "meaning": "If upstream changes, reassess downstream scope; this does NOT prove, disprove, or inherit epistemic confidence"
+    },
+    {
+      "id": "EDGE-002",
+      "from": "SRC-E009-RESULT",
+      "to": "CL-E009-NEG",
+      "relation": "scoped_source",
+      "meaning": "If upstream changes, reassess downstream scope; this does NOT prove, disprove, or inherit epistemic confidence"
+    },
+    {
+      "id": "EDGE-003",
+      "from": "SRC-DCA1-RESULT",
+      "to": "CL-DCA1-TRANSFER",
+      "relation": "scoped_source",
+      "meaning": "If upstream changes, reassess downstream scope; this does NOT prove, disprove, or inherit epistemic confidence"
+    },
+    {
+      "id": "EDGE-004",
+      "from": "SRC-DCA1-PAPER",
+      "to": "CL-DCA1-TRANSFER",
+      "relation": "limitation_boundary",
+      "meaning": "If upstream changes, reassess downstream scope; this does NOT prove, disprove, or inherit epistemic confidence"
+    },
+    {
+      "id": "EDGE-005",
+      "from": "SRC-RVD-CYCLE02",
+      "to": "CL-RVD-ORIGINAL",
+      "relation": "scoped_source",
+      "meaning": "If upstream changes, reassess downstream scope; this does NOT prove, disprove, or inherit epistemic confidence"
+    },
+    {
+      "id": "EDGE-006",
+      "from": "SRC-RVD-MANIFEST",
+      "to": "CL-RVD-ORIGINAL",
+      "relation": "version_and_evidence_boundary",
+      "meaning": "If upstream changes, reassess downstream scope; this does NOT prove, disprove, or inherit epistemic confidence"
+    },
+    {
+      "id": "EDGE-007",
+      "from": "SRC-RVD-MANIFEST",
+      "to": "CL-RVD-MOTIVE",
+      "relation": "limitation_boundary",
+      "meaning": "If upstream changes, reassess downstream scope; this does NOT prove, disprove, or inherit epistemic confidence"
+    },
+    {
+      "id": "EDGE-008",
+      "from": "SRC-RVD-PRIORART",
+      "to": "CL-RVD-MOTIVE",
+      "relation": "original_source_crosswalk",
+      "meaning": "If upstream changes, reassess downstream scope; this does NOT prove, disprove, or inherit epistemic confidence"
+    },
+    {
+      "id": "EDGE-009",
+      "from": "SRC-RVD-CYCLE02",
+      "to": "CL-RVD-MOTIVE",
+      "relation": "competing_mechanisms",
+      "meaning": "If upstream changes, reassess downstream scope; this does NOT prove, disprove, or inherit epistemic confidence"
+    },
+    {
+      "id": "EDGE-010",
+      "from": "SRC-RAMP-V05",
+      "to": "CL-RAMP-EFFECT",
+      "relation": "scoped_source",
+      "meaning": "If upstream changes, reassess downstream scope; this does NOT prove, disprove, or inherit epistemic confidence"
+    },
+    {
+      "id": "EDGE-011",
+      "from": "CL-E008-GAP",
+      "to": "CL-VC-HARD",
+      "relation": "reassessment_dependency",
+      "meaning": "If upstream changes, reassess downstream scope; this does NOT prove, disprove, or inherit epistemic confidence"
+    },
+    {
+      "id": "EDGE-012",
+      "from": "CL-E009-NEG",
+      "to": "CL-VC-HARD",
+      "relation": "reassessment_dependency",
+      "meaning": "If upstream changes, reassess downstream scope; this does NOT prove, disprove, or inherit epistemic confidence"
+    },
+    {
+      "id": "EDGE-013",
+      "from": "CL-DCA1-TRANSFER",
+      "to": "CL-VC-HARD",
+      "relation": "reassessment_dependency",
+      "meaning": "If upstream changes, reassess downstream scope; this does NOT prove, disprove, or inherit epistemic confidence"
+    },
+    {
+      "id": "EDGE-014",
+      "from": "CL-RVD-ORIGINAL",
+      "to": "CL-RVD-MOTIVE",
+      "relation": "reassessment_dependency",
+      "meaning": "If upstream changes, reassess downstream scope; this does NOT prove, disprove, or inherit epistemic confidence"
+    },
+    {
+      "id": "EDGE-015",
+      "from": "CL-RVD-MOTIVE",
+      "to": "CL-VC-HARD",
+      "relation": "reassessment_dependency",
+      "meaning": "If upstream changes, reassess downstream scope; this does NOT prove, disprove, or inherit epistemic confidence"
+    }
+  ],
+  "original_author_antecedents": [
+    {
+      "author": "Jon Doyle",
+      "year": 1979,
+      "title": "A Truth Maintenance System",
+      "doi": "10.1016/0004-3702(79)90008-0",
+      "publisher_or_author": "https://groups.csail.mit.edu/medg/ftp/doyle/",
+      "supported_inheritance": "belief/reason dependency maintenance",
+      "limit": "Does not prove PI research claims or guarantee every dependency is represented"
+    },
+    {
+      "author": "Johan de Kleer",
+      "year": 1986,
+      "title": "An assumption-based TMS",
+      "doi": "10.1016/0004-3702(86)90080-9",
+      "publisher_or_author": "https://www.sciencedirect.com/science/article/pii/0004370286900809",
+      "supported_inheritance": "assumptions and context-specific justifications",
+      "limit": "PI-CIG does not implement full ATMS assumption environments"
+    },
+    {
+      "author": "W3C PROV Working Group",
+      "year": 2013,
+      "title": "PROV-DM: The PROV Data Model",
+      "url": "https://www.w3.org/TR/prov-dm/",
+      "supported_inheritance": "versioned sources, derivations, provenance of provenance",
+      "limit": "Local typed JSON is NOT conformant PROV serialization"
+    },
+    {
+      "author": "Jesus Salas",
+      "year": 2026,
+      "title": "Change-Provenant Supervision: Governing Learned Artifacts Under Policy Change",
+      "url": "https://arxiv.org/abs/2609.28574",
+      "review_status": "preprint; external peer review not established",
+      "supported_inheritance": "recorded graph alone cannot certify edge completeness; separate candidate impact from current-contract revalidation",
+      "limit": "Controlled artifacts and learned supervision; not empirical validation of PI's societal/agent claims"
+    }
+  ],
+  "completeness_limit": "Two real dependency worlds can share the same recorded graph while only one contains a missing load-bearing edge. Reachability alone cannot certify absence of impacts; all applicable retained claims still require independent source/contract checks.",
+  "identity_and_novelty": "PI-CIG is an applied, bounded configuration/re-review utility, not a novel general-purpose truth-maintenance theorem, an implemented ATMS, or proven PROV-compliant software."
+}

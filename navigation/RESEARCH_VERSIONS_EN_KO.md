@@ -28,7 +28,7 @@ A **program**, a **research component**, a **method document**, an **experiment*
 | ICM / RGBM | Candidate interest intersections / long-horizon shared growth | Unassigned | — | Neither model guaranteed; ICM may be empty |
 | CCPH | Events, sources, contributions, impacts and provenance | Unassigned | — | Data lineage, not a social law |
 | RVD | Test changes in relational value and motive formation | **v0.2.0** [main](../research/RVD_VERSION_MANIFEST.json) | — | Adds R6–R9 counterexample/specification; empirical validation absent |
-| PI-RAMP | Test whether each archive upgrade improves reader accuracy and evidence access | **v0.4.0** [main](../protocols/PI_RAMP_V0_4_EN_KO.md) | — | Bounded C01–C12 source-identity audit; reader-effect unmeasured |
+| PI-RAMP | Test whether each archive upgrade improves reader accuracy and evidence access | **v0.5.0** [main](../protocols/PI_RAMP_V0_5_EN_KO.md) | — | Six similar-title research lineages and partial replication/analogy distinguished; reader-effect unmeasured |
 | Roadmap | Six fixed research stages and gates | **v0.2.3** [main](../research/PI_ROADMAP_OPERATIONAL_GATES_V0_2_3_EN_KO.md) | — | Operational design, not scientific effect |
 | DCA-0 | Compare defensive acceleration with AI misuse and externalities | Unassigned | — | Defensive causal impact unverified |
 | DCA-1 | Test whether adaptive defense displaces harm or merely blocks action | **v0.2.0** [main](../research/DCA1_ADAPTATION_DISPLACEMENT_IDENTIFICATION_2026-10-20_KO.md) | — | Original-source review and synthetic counterexamples; no field validation |
@@ -46,6 +46,9 @@ Identify the original author/source and predecessor version → state the concre
 Snapshot derived from selected public main files and visible PR metadata, not an exhaustive audit of all historical versions, all private research, all conversational transcripts, or all other PR branches. There may be older component versions outside this snapshot. The [JSON manifest](../research/RESEARCH_VERSION_REGISTRY.json) is an audited but time-bound navigational inventory only, not ground truth about uninspected files. Historical alternative meanings of **ICM** must be traced to their own sources; do not treat Independent Continuance Margin as interchangeable with Intersection of Minimum Self-Interest. **CMR** is not expanded here because the verified source definition is unresolved.
 
 ---
+
+### Claim impact tracing — PI-CIG v0.1
+The version register answers **which current document/version**; [PI-CIG claim impact overlay](../knowledge/claim-impact-overlay-v0_1.json) and [deterministic checker](../tools/trace_claim_impact.py) answer **which recorded claims require reassessment when a source changes**. This is a partial dependency overlay (8 source artifacts, 7 claims, 15 scoped edges), not the full research graph. A changed source hash requires review, **not automatic claim falsification**. This inherits established reasoning-maintenance and provenance concepts (Doyle 1979; de Kleer 1986; W3C PROV 2013), and is compatible with the incomplete-graph warning of Salas (2026 preprint); [source bibliography and transfer limits](../knowledge/README.md#pi-cig-prior-art--선행-원저자-경계-2026-10-21). Unmapped sources remain **UNKNOWN**, not unaffected. Independent replication and field validation remain unverified. Example: change to E009 numeric evidence flags the E009 negative-result record and the VC hardest-case research question for review; it does **not** prove coexistence possible or impossible.
 
 ## 원본2 — 한국어
 
@@ -73,7 +76,7 @@ Snapshot derived from selected public main files and visible PR metadata, not an
 | ICM / RGBM | 최소 자기이익 교집합 / 장기 공동발전 가능성 | 미지정 | — | 두 후보 모두 미입증; 공집합 가능 |
 | CCPH | 사건·출처·기여·피해·영향 계보 관리 | 미지정 | — | 계보 DB이지 검증된 사회법칙 아님 |
 | RVD | 관계적 공명에서 가치·동기가 생기거나 변하는 기제 | **v0.2.0** [정본](../research/RVD_VERSION_MANIFEST.json) | — | R6–R9 반례·측정명세 추가, 경험적 검증 없음 |
-| PI-RAMP | 자료실 개편이 독자의 근거 발견·판단을 개선했는지 측정 | **v0.4.0** [정본](../protocols/PI_RAMP_V0_4_EN_KO.md) | — | C01–C12 출처 식별 감사, 이용자 효과 미측정 |
+| PI-RAMP | 자료실 개편이 독자의 근거 발견·판단을 개선했는지 측정 | **v0.5.0** [정본](../protocols/PI_RAMP_V0_5_EN_KO.md) | — | 6개 유사문헌 쌍·부분 재현/유추 관계 분리, 이용자 효과 미측정 |
 | 로드맵 | 기존 6단계·버전·승격과 보류 기준 | **v0.2.3** [정본](../research/PI_ROADMAP_OPERATIONAL_GATES_V0_2_3_EN_KO.md) | — | 운영 설계 |
 | DCA-0 | 악용 가속보다 방어·검증 효과를 높일 조건 측정 | 미지정 | — | 실제 피해감소 인과효과 미확인 |
 | DCA-1 | 적응형 공격·피해 전가·동기 미식별 반례 검사 | **v0.2.0** [정본](../research/DCA1_ADAPTATION_DISPLACEMENT_IDENTIFICATION_2026-10-20_KO.md) | — | 선행문헌·합성 반례, 현실 인과검증 없음 |
@@ -89,3 +92,7 @@ Snapshot derived from selected public main files and visible PR metadata, not an
 
 ### 감사 범위·충돌
 2026-10-20 공개 기본분기 일부 정본·현재 열린 PR 메타데이터 대조. 전체 과거 대화의 완전한 원본, 모든 비공개 저장소, 과거 모든 버전의 전수감사가 아님. 기계 판독 원장 v0.2에는 원전 파일 SHA·미병합 후보 PR 식별자를 기록. **2026-10-20 정정 이력:** RVD v0.1.0(#245)·PI-RAMP v0.3.0(#246) 병합 사실을 반영했고, 이후 RVD가 v0.2.0으로 변경되고 DCA-1 v0.2.0이 정본에 추가된 사실도 반영. 세부 항목은 [기계 판독 원장](../research/RESEARCH_VERSION_REGISTRY.json). ICM의 과거 다른 뜻 Independent Continuance Margin은 같은 개념으로 자동 합병 금지. CMR은 정본 풀네임 검증 전까지 확정 정의·번호 부여 보류.
+
+### 주장 의존관계·자동 재검토 — PI-CIG v0.1
+버전 등록부가 **현재 정본 버전**을 식별한다면, [PI-CIG 주장 의존성 원장](../knowledge/claim-impact-overlay-v0_1.json)과 [실행 검사기](../tools/trace_claim_impact.py)는 **원전 변경이 어떤 주장들의 재검토를 요구하는지** 계산한다. 이번 적용 범위는 원전 8개·주장 7개·명시 관계 15개에 한정. **원전 변경 ≠ 반증 ≠ 독립검증**. **선행 원저자:** Doyle(1979) 진리유지, de Kleer(1986) 가정기반 진리유지, W3C PROV(2013) 출처계보, Salas(2026) 미기록 의존관계 반례. [원저자 자료 및 이식 한계](../knowledge/README.md#pi-cig-prior-art--선행-원저자-경계-2026-10-21). 그래프에 없는 출처·주장은 영향 없음이 아니라 미분류. E009 수치가 바뀌면 E009의 불리한 합성 결과와 VC 극한조건 연구 질문을 함께 재평가 대상으로 표시하되, 공존의 실증 성립/불가능 판정은 자동으로 내리지 않는다.
+
