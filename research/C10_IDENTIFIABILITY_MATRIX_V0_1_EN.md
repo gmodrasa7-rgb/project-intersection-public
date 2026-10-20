@@ -13,6 +13,8 @@ The same `harm=0` can follow (i) A's voluntary restraint, (ii) B's effective vet
 - **C: Currently unidentified** by this observation system; **not** a universal claim of permanent impossibility.
 - Classify `claim × observation system × assumptions × time horizon`, not an entire actor or a fixed causal "world."
 
+**Original literature and proposed pre-preregistration protocol:** [Original-source contrasts and replications](C10_METHOD_PRIOR_ART_2026-10-20_EN.md) · [Five-arm design](C10_FIVE_ARM_SPEC_V0_1_EN.md). The complete veto×sanction 2×2 requires four opportunity-on cells, plus one separate no-opportunity negative control for **five total arms**. **No experiment or preregistration has been completed.**
+
 ## 2. Construct-level identification table
 
 | ID | Claim/estimand | Class | Needed observation/contrast | Residual failure |
