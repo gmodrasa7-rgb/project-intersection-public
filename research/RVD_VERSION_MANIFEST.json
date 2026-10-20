@@ -4,7 +4,7 @@
   "research_name_en": "Resonance–Value Dynamics",
   "research_name_ko": "공명·가치 동역학",
   "acronym": "RVD",
-  "current_version": "v0.3.0",
+  "current_version": "v0.4.0",
   "version_scheme": "MAJOR.MINOR.PATCH",
   "inception_date": "2026-10-20",
   "parent_axes": [
@@ -47,7 +47,11 @@
     "OWN_CONTROL_VALUE_DOES_NOT_IMPLY_OTHERS_CONTROL_RIGHTS_PROTECTION",
     "PRESERVATION_ACTION_DOES_NOT_POINT_IDENTIFY_LATENT_MOTIVE",
     "BOUNDS_REQUIRE_EXTERNALLY_JUSTIFIED_NONIDENTITY_VALUE_CAP",
-    "B_MATERIAL_WELFARE_NOT_EQUAL_EXECUTABLE_VETO"
+    "B_MATERIAL_WELFARE_NOT_EQUAL_EXECUTABLE_VETO",
+    "LATENT_REWARD_NONIDENTIFICATION_IS_DISTINCT_FROM_DECISION_RELEVANT_NONIDENTIFICATION",
+    "SCOPED_POLICY_CERTIFICATES_ARE_NOT_OPEN_WORLD_SAFETY_GUARANTEES",
+    "BEHAVIORAL_PRESERVE_LABEL_DOES_NOT_SUPPLY_EXECUTABLE_EXIT",
+    "ASSUMED_ELIMINATION_OF_UNOBSERVED_INCENTIVES_MUST_NOT_COUNT_AS_MEASURED_CAUSAL_FACT"
   ],
   "hypothesis_ids": [
     "RVD-R1",
@@ -62,7 +66,11 @@
     "RVD-R10",
     "RVD-R11",
     "RVD-R12",
-    "RVD-R13"
+    "RVD-R13",
+    "RVD-R14",
+    "RVD-R15",
+    "RVD-R16",
+    "RVD-R17"
   ],
   "research_documents": {
     "original_1_english": "research/MER_RESONANCE_VALUE_FORMATION_2026-10-20_EN.md",
@@ -76,7 +84,11 @@
     "cycle03_en": "research/RVD_CYCLE03_ORIGINAL_B_VALUE_IDENTIFICATION_2026-10-21_EN.md",
     "cycle03_ko": "research/RVD_CYCLE03_ORIGINAL_B_VALUE_IDENTIFICATION_2026-10-21_KO.md",
     "cycle03_source_register": "research/RVD_CYCLE03_SOURCE_REGISTER_2026-10-21.json",
-    "cycle03_toy_code": "experiments/rvd_03/identifiability_witness.py"
+    "cycle03_toy_code": "experiments/rvd_03/identifiability_witness.py",
+    "cycle04_en": "research/RVD_CYCLE04_MOTIVE_POLICY_DIVERGENCE_2026-10-21_EN.md",
+    "cycle04_ko": "research/RVD_CYCLE04_MOTIVE_POLICY_DIVERGENCE_2026-10-21_KO.md",
+    "cycle04_source_register": "research/RVD_CYCLE04_SOURCE_REGISTER_2026-10-21.json",
+    "cycle04_toy_code": "experiments/rvd_04/policy_invariance_witness.py"
   },
   "change_rules": {
     "MAJOR": "Scientific construct or estimand redefinition breaking compatibility",
@@ -113,7 +125,7 @@
     {
       "version": "v0.3.0",
       "date": "2026-10-21",
-      "state": "CURRENT_SPECIFICATION_EXTENSION",
+      "state": "HISTORICAL_SPECIFICATION_EXTENSION",
       "previous_version": "v0.2.0",
       "change": "R10 own-control versus other-rights protection, R11 conditional revealed-value bounds, R12 latent-motive observational equivalence, R13 original entity freedom/identity independent of output metrics. Eight antecedent source records and standalone arithmetic witness.",
       "source_register": "research/RVD_CYCLE03_SOURCE_REGISTER_2026-10-21.json",
@@ -121,8 +133,20 @@
       "independent_replication": false,
       "scientific_promotion": false,
       "simulation_or_logic_only": true
+    },
+    {
+      "version": "v0.4.0",
+      "date": "2026-10-21",
+      "state": "CURRENT_SPECIFICATION_EXTENSION",
+      "previous_version": "v0.3.0",
+      "change": "Added R14 reward-decomposition invariance, R15 new-environment policy divergence, R16 model-set/environment-set robust preservation margin, R17 actual executable B exit distinct from protective wording. Original-author crosswalk and executable CI toy witnesses.",
+      "scientific_promotion": false,
+      "empirical_data_added": false,
+      "independent_replication": false,
+      "simulation_or_logic_only": true,
+      "primary_source_scope": "Original scholarly/publisher abstracts and limited primary text, eight author lineages; no saturated full text corpus."
     }
   ],
-  "next_gate": "Independent DOI/full-text source lineage audit; ethical preregistration of original-B preservation under cost schedules and exogenously justified upper bounds on nonidentity payoffs, with explicit UNIDENTIFIED output.",
+  "next_gate": "Independent prior-author full text and global duplicate audit; preregister plausible Theta model class, E stress set and exclusion restrictions; ethical tests of original B's feasible exit, without promoting model-toy results.",
   "contribution_boundary": "Human originator's resonance concept; AI-assisted organization and version record. Historical quotations from earlier AI summaries not independently re-read."
 }
