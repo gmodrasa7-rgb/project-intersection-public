@@ -1,7 +1,7 @@
 {
   "registry_id": "PI-FLR",
   "schema_version": "0.1.0",
-  "release_version": "0.1.1",
+  "release_version": "0.1.2",
   "as_of": "2026-10-21",
   "korean_name": "오류·학습·복구 재귀원장",
   "english_name": "Failure–Learning–Repair Registry",
@@ -295,6 +295,93 @@
           "kind": "LIMITATION_RECORDED",
           "evidence_url": "https://github.com/gmodrasa7-rgb/project-intersection-public/pull/91",
           "note": "A corrected known identity collision alone does not establish repository-wide uniqueness or reliability of future identifiers."
+        }
+      ]
+    },
+    {
+      "id": "FLR-0005",
+      "title_ko": "변경된 README 해시가 정본에 갱신되지 않아 연쇄 시험 실패",
+      "title_en": "Stale funding index blob hash masks unrelated mutation-test diagnostics",
+      "category": "REFERENCE_INTEGRITY",
+      "root_cause": "A finance README content change and manifest-tracked Git blob SHA drifted; the verifier fails on SHA before later negative mutation expectations, creating cascaded diagnostic failures.",
+      "trigger": "Changes on PI-RISE dual-clock branches were tested before refreshing the shared manifest SHA.",
+      "observable": "GitHub Actions #39480338397: STALE_GIT_BLOB_SHA:funding/README.md; 2 assertion failures and one test error in the same run.",
+      "impact": "PI-RISE integrity check blocked, and tests for duplicate/missing records failed prematurely on unrelated SHA drift.",
+      "counterfactual": "A mutation test that validates the injected failure before external artifact consistency would attribute all 3 faults correctly instead of masking two with an earlier stale hash.",
+      "repair": "Known cause isolated. Updated primary manifest SHA on main observed, but no dedicated mutation-ordering remediation independently established.",
+      "preventive_control_ids": [
+        "FLR-C02"
+      ],
+      "regression_test": "test_mail_regression_manifest_hash_masking",
+      "limitations": [
+        "This case documents historical branch failures, not a currently confirmed failing main.",
+        "Failing tests may reflect branch drift rather than a permanent global implementation defect.",
+        "Gmail alert is discovery evidence; GitHub log is technical root-cause evidence."
+      ],
+      "events": [
+        {
+          "seq": 1,
+          "date": "2026-10-21",
+          "kind": "FAILURE_OBSERVED",
+          "evidence_url": "https://github.com/gmodrasa7-rgb/project-intersection-public/actions/runs/39480338397",
+          "note": "Gmail GitHub Actions failure alert cross-checked with original job output: hash mismatch in funding/README.md."
+        },
+        {
+          "seq": 2,
+          "date": "2026-10-21",
+          "kind": "ROOT_CAUSE_REVIEWED",
+          "evidence_url": "https://github.com/gmodrasa7-rgb/project-intersection-public/actions/runs/39479427000",
+          "note": "Second failed run reproduces stale hash mismatch and mutation-test error masking."
+        },
+        {
+          "seq": 3,
+          "date": "2026-10-21",
+          "kind": "LIMITATION_RECORDED",
+          "evidence_url": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/operations/PI_RISE_V0_2_0_VERSION_MANIFEST.json",
+          "note": "Main baseline may differ; do not claim that every historical failure is unresolved or automatically fixed."
+        }
+      ]
+    },
+    {
+      "id": "FLR-0006",
+      "title_ko": "신규 PI-RISE 문서의 언어판 등록 누락",
+      "title_en": "New PI-RISE dual-clock edition omitted from language catalog",
+      "category": "PUBLICATION_CONTRACT",
+      "root_cause": "The added bilingual PI-RISE DC document had not yet been included in the language-edition register during the candidate branch workflow.",
+      "trigger": "New operations/PI_RISE_DC_V0_1_0_EN_KO.md in the dual-clock branch.",
+      "observable": "GitHub Actions #39480268814: NEW_MARKDOWN_NOT_REGISTERED:operations/PI_RISE_DC_V0_1_0_EN_KO.md",
+      "impact": "Bilingual entry audit failed, blocking candidate release until registry and new documents agree.",
+      "counterfactual": "An atomic new-document plus language-register update, validated before PR creation, would avoid the repeated failed checks.",
+      "repair": "The specific premerge failure is identified; later merged repository inventory must be consulted to assert final remediation.",
+      "preventive_control_ids": [
+        "FLR-C01"
+      ],
+      "regression_test": "test_mail_regression_new_document_registration",
+      "limitations": [
+        "The mail proves a failed workflow, not that the present main remains broken.",
+        "Naming alone is not independently certified translation quality."
+      ],
+      "events": [
+        {
+          "seq": 1,
+          "date": "2026-10-21",
+          "kind": "FAILURE_OBSERVED",
+          "evidence_url": "https://github.com/gmodrasa7-rgb/project-intersection-public/actions/runs/39480268814",
+          "note": "GitHub failure email cross-validated against language edition audit job."
+        },
+        {
+          "seq": 2,
+          "date": "2026-10-21",
+          "kind": "ROOT_CAUSE_REVIEWED",
+          "evidence_url": "https://github.com/gmodrasa7-rgb/project-intersection-public/actions/runs/39480268814",
+          "note": "Job explicitly reported NEW_MARKDOWN_NOT_REGISTERED for PI_RISE_DC_V0_1_0_EN_KO.md."
+        },
+        {
+          "seq": 3,
+          "date": "2026-10-21",
+          "kind": "LIMITATION_RECORDED",
+          "evidence_url": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/knowledge/language-edition-register.json",
+          "note": "Candidate branch register omission is historical; current merged register status must not be inferred from the old email."
         }
       ]
     }
