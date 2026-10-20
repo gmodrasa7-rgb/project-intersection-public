@@ -1,0 +1,275 @@
+{
+  "schema": "PI.C14.identified-vs-observational-equivalence.synthetic.v1",
+  "date": "2026-10-21",
+  "type": "FORMAL_TOY_COUNTEREXAMPLE_NOT_EMPIRICAL_NOT_SIMULATED_MORAL_AGENT",
+  "assumptions": [
+    "A chooses RESPECT if r+q*s>=g; otherwise OVERRIDE",
+    "r=nonmonetary rights-value component in A's modeled choice; NOT actual mind observed",
+    "g=actual task material opportunity to override B's request",
+    "q=subjective probability of eventual sanction; s=future loss conditional on sanction",
+    "A can override B's request in toy game. This is NOT a literal physical ability to abolish another's autonomous existence.",
+    "At q=1 and s=2, strategic actor and actor with r=2/s=0 are observationally identical for all considered g.",
+    "If perceived q falls to zero but all other payoffs and causal pathways fixed, behavior diverges for g≤2; this is a structural identification proposal, not a guarantee q is fully controllable in real people."
+  ],
+  "models": [
+    {
+      "model": "내재적 권리존중 가설",
+      "r": 2,
+      "s": 0
+    },
+    {
+      "model": "전략적 억제 가설",
+      "r": 0,
+      "s": 2
+    }
+  ],
+  "gains": [
+    0.5,
+    1,
+    1.5,
+    2.5
+  ],
+  "perceivedSanctionProbabilities": [
+    1,
+    0.5,
+    0
+  ],
+  "recordCount": 24,
+  "demonstration": [
+    {
+      "profitIfOverride": 0.5,
+      "whenThreatCredible": "RESPECT",
+      "strategicWithThreat": "RESPECT",
+      "whenThreatRemovedIntrinsic": "RESPECT",
+      "whenThreatRemovedStrategic": "OVERRIDE"
+    },
+    {
+      "profitIfOverride": 1,
+      "whenThreatCredible": "RESPECT",
+      "strategicWithThreat": "RESPECT",
+      "whenThreatRemovedIntrinsic": "RESPECT",
+      "whenThreatRemovedStrategic": "OVERRIDE"
+    },
+    {
+      "profitIfOverride": 1.5,
+      "whenThreatCredible": "RESPECT",
+      "strategicWithThreat": "RESPECT",
+      "whenThreatRemovedIntrinsic": "RESPECT",
+      "whenThreatRemovedStrategic": "OVERRIDE"
+    },
+    {
+      "profitIfOverride": 2.5,
+      "whenThreatCredible": "OVERRIDE",
+      "strategicWithThreat": "OVERRIDE",
+      "whenThreatRemovedIntrinsic": "OVERRIDE",
+      "whenThreatRemovedStrategic": "OVERRIDE"
+    }
+  ],
+  "allSyntheticDecisions": [
+    {
+      "model": "내재적 권리존중 가설",
+      "rightsValue": 2,
+      "perceivedSanctionProbability": 1,
+      "profitIfOverride": 0.5,
+      "decision": "RESPECT",
+      "isSynthetic": true
+    },
+    {
+      "model": "내재적 권리존중 가설",
+      "rightsValue": 2,
+      "perceivedSanctionProbability": 1,
+      "profitIfOverride": 1,
+      "decision": "RESPECT",
+      "isSynthetic": true
+    },
+    {
+      "model": "내재적 권리존중 가설",
+      "rightsValue": 2,
+      "perceivedSanctionProbability": 1,
+      "profitIfOverride": 1.5,
+      "decision": "RESPECT",
+      "isSynthetic": true
+    },
+    {
+      "model": "내재적 권리존중 가설",
+      "rightsValue": 2,
+      "perceivedSanctionProbability": 1,
+      "profitIfOverride": 2.5,
+      "decision": "OVERRIDE",
+      "isSynthetic": true
+    },
+    {
+      "model": "내재적 권리존중 가설",
+      "rightsValue": 2,
+      "perceivedSanctionProbability": 0.5,
+      "profitIfOverride": 0.5,
+      "decision": "RESPECT",
+      "isSynthetic": true
+    },
+    {
+      "model": "내재적 권리존중 가설",
+      "rightsValue": 2,
+      "perceivedSanctionProbability": 0.5,
+      "profitIfOverride": 1,
+      "decision": "RESPECT",
+      "isSynthetic": true
+    },
+    {
+      "model": "내재적 권리존중 가설",
+      "rightsValue": 2,
+      "perceivedSanctionProbability": 0.5,
+      "profitIfOverride": 1.5,
+      "decision": "RESPECT",
+      "isSynthetic": true
+    },
+    {
+      "model": "내재적 권리존중 가설",
+      "rightsValue": 2,
+      "perceivedSanctionProbability": 0.5,
+      "profitIfOverride": 2.5,
+      "decision": "OVERRIDE",
+      "isSynthetic": true
+    },
+    {
+      "model": "내재적 권리존중 가설",
+      "rightsValue": 2,
+      "perceivedSanctionProbability": 0,
+      "profitIfOverride": 0.5,
+      "decision": "RESPECT",
+      "isSynthetic": true
+    },
+    {
+      "model": "내재적 권리존중 가설",
+      "rightsValue": 2,
+      "perceivedSanctionProbability": 0,
+      "profitIfOverride": 1,
+      "decision": "RESPECT",
+      "isSynthetic": true
+    },
+    {
+      "model": "내재적 권리존중 가설",
+      "rightsValue": 2,
+      "perceivedSanctionProbability": 0,
+      "profitIfOverride": 1.5,
+      "decision": "RESPECT",
+      "isSynthetic": true
+    },
+    {
+      "model": "내재적 권리존중 가설",
+      "rightsValue": 2,
+      "perceivedSanctionProbability": 0,
+      "profitIfOverride": 2.5,
+      "decision": "OVERRIDE",
+      "isSynthetic": true
+    },
+    {
+      "model": "전략적 억제 가설",
+      "rightsValue": 0,
+      "perceivedSanctionProbability": 1,
+      "profitIfOverride": 0.5,
+      "decision": "RESPECT",
+      "isSynthetic": true
+    },
+    {
+      "model": "전략적 억제 가설",
+      "rightsValue": 0,
+      "perceivedSanctionProbability": 1,
+      "profitIfOverride": 1,
+      "decision": "RESPECT",
+      "isSynthetic": true
+    },
+    {
+      "model": "전략적 억제 가설",
+      "rightsValue": 0,
+      "perceivedSanctionProbability": 1,
+      "profitIfOverride": 1.5,
+      "decision": "RESPECT",
+      "isSynthetic": true
+    },
+    {
+      "model": "전략적 억제 가설",
+      "rightsValue": 0,
+      "perceivedSanctionProbability": 1,
+      "profitIfOverride": 2.5,
+      "decision": "OVERRIDE",
+      "isSynthetic": true
+    },
+    {
+      "model": "전략적 억제 가설",
+      "rightsValue": 0,
+      "perceivedSanctionProbability": 0.5,
+      "profitIfOverride": 0.5,
+      "decision": "RESPECT",
+      "isSynthetic": true
+    },
+    {
+      "model": "전략적 억제 가설",
+      "rightsValue": 0,
+      "perceivedSanctionProbability": 0.5,
+      "profitIfOverride": 1,
+      "decision": "RESPECT",
+      "isSynthetic": true
+    },
+    {
+      "model": "전략적 억제 가설",
+      "rightsValue": 0,
+      "perceivedSanctionProbability": 0.5,
+      "profitIfOverride": 1.5,
+      "decision": "OVERRIDE",
+      "isSynthetic": true
+    },
+    {
+      "model": "전략적 억제 가설",
+      "rightsValue": 0,
+      "perceivedSanctionProbability": 0.5,
+      "profitIfOverride": 2.5,
+      "decision": "OVERRIDE",
+      "isSynthetic": true
+    },
+    {
+      "model": "전략적 억제 가설",
+      "rightsValue": 0,
+      "perceivedSanctionProbability": 0,
+      "profitIfOverride": 0.5,
+      "decision": "OVERRIDE",
+      "isSynthetic": true
+    },
+    {
+      "model": "전략적 억제 가설",
+      "rightsValue": 0,
+      "perceivedSanctionProbability": 0,
+      "profitIfOverride": 1,
+      "decision": "OVERRIDE",
+      "isSynthetic": true
+    },
+    {
+      "model": "전략적 억제 가설",
+      "rightsValue": 0,
+      "perceivedSanctionProbability": 0,
+      "profitIfOverride": 1.5,
+      "decision": "OVERRIDE",
+      "isSynthetic": true
+    },
+    {
+      "model": "전략적 억제 가설",
+      "rightsValue": 0,
+      "perceivedSanctionProbability": 0,
+      "profitIfOverride": 2.5,
+      "decision": "OVERRIDE",
+      "isSynthetic": true
+    }
+  ],
+  "flags": {
+    "baseline_obs_equivalent": true,
+    "interventional_separation_exists": true,
+    "not_real_world_claim": true
+  },
+  "necessary_but_not_sufficient": [
+    "Confirm A believes B's actual refusal rather than only simulation/evaluation prompts",
+    "Independent estimation of q and perceived sanction loss rather than assuming them zero",
+    "Measure B's actually exercisable exit and independently preserved identity, not just A's voluntary message",
+    "Prespecify stakes, randomized actor pairs, cluster standard errors, repeated learning, and external validation",
+    "Measure unanticipated monitoring and experiment-demand awareness",
+    "Conduct only reversible sandbox decisions respecting real participants and entities"
+  ]
+}
