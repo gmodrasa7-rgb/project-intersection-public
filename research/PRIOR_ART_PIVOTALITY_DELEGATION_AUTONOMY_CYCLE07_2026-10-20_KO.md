@@ -121,6 +121,9 @@ Outcomes must be participant-specific `B_independent_future`, `B_actual_exit`, `
 | Teaching future AI to care for others induces voluntary fairness | Klockmann/von Schenk/Villeval 2022: only explicit future **self**-risk increased actual fairness under tested task; declarations differed |
 
 ## 4. Receipt and saturation limits
+**Earlier source presence correction:** exact comparison to existing `CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md` finds **Herrmann/Thöni/Gächter (2008), Antisocial punishment across societies** already cited there. That original author study is newly *curated in C07* but is **not** a first discovery for the repository. Other past source mentions could exist outside the crosswalk and have not been exhaustively disproven.
+
+
 **Core new curated corpus:** 27 unique DOI journal publications, including **2 original comment/reply works** (not independent new empirical experiments); source-wise original authors, publisher URLs, separate methodology and negative caveats in JSON.
 **Existing cycle corpus C01–C06:** 129 unique exact normalized keys across those six curated rounds; verify direct key intersections before claiming 156. Do not equate exact-key uniqueness with globally new literature absent from historical repo. **Full-text access:** original publisher HTML extensively examined for 2024 JEEA multi-unit and 2026 Elsevier open-access summaries; several other publisher articles paywalled, assessed at abstract/metadata level. NO assertion of universal PDF full-text scrutiny, no direct independent replication run by PI.
 **Originality precedence:** Falk/Szech, Ziegler/Romagnoli/Offerman, the Fehr school, Hamman/Loewenstein/Weber, Bartling/Fischbacher, Hüholt/Szech and Klockmann/von Schenk/Villeval retain full upstream credit. PI's contribution at this stage is an explicitly nonvalidated cross-field variable disentanglement and falsifier map, not source mechanisms reinvented as new acronyms.
