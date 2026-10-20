@@ -311,6 +311,21 @@
       "original_conception_language": "NOT_VERIFIED",
       "independent_review_receipt": null,
       "one_sided_edit_exception": null
+    },
+    {
+      "id": "PI-PROTOCOL-RAMP-V02",
+      "original_1_english": "protocols/PI_RAMP_V0_2_EN.md",
+      "original_2_korean": "protocols/PI_RAMP_V0_2_KO.md",
+      "kind": "proposed_recursive_archive_method_not_empirical_validation",
+      "structural_pair_present": true,
+      "meaning_review_status": "NOT_INDEPENDENTLY_VERIFIED",
+      "original_conception_language": "NOT_INDEPENDENTLY_ADJUDICATED",
+      "independent_review_receipt": null,
+      "one_sided_edit_exception": null,
+      "known_divergences": [
+        "The two editions were drafted in one session but scientific semantic equivalence has not been independently checked.",
+        "Retrospective PR #236 has no measured before/after reader outcomes; structural checks are not evidence of impact."
+      ]
     }
   ],
   "legacy_priority_unresolved": [
@@ -352,13 +367,13 @@
     }
   ],
   "metrics": {
-    "markdown_total": 165,
+    "markdown_total": 167,
     "filename_classes": {
       "UNMARKED_LANGUAGE_UNVERIFIED": 42,
       "LEGACY_MIXED_READER_ENTRY": 2,
-      "KO_SUFFIX_UNVERIFIED": 77,
+      "KO_SUFFIX_UNVERIFIED": 78,
       "ORDERED_BILINGUAL_FOUNDER_OR_GOVERNANCE": 2,
-      "EN_SUFFIX_UNVERIFIED": 20,
+      "EN_SUFFIX_UNVERIFIED": 21,
       "COMBINED_NAMING_UNVERIFIED": 22
     },
     "meaning_verified_pairs": 0,
@@ -1080,6 +1095,18 @@
       "content_equivalence": "NOT_REVIEWED"
     },
     {
+      "path": "protocols/PI_RAMP_V0_2_EN.md",
+      "filename_class": "EN_SUFFIX_UNVERIFIED",
+      "counterpart_path": "protocols/PI_RAMP_V0_2_KO.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "protocols/PI_RAMP_V0_2_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": "protocols/PI_RAMP_V0_2_EN.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
       "path": "reports/AI_FINAL_CONVERGENCE_RISK_TOP10_KO.md",
       "filename_class": "KO_SUFFIX_UNVERIFIED",
       "counterpart_path": null,
@@ -1556,6 +1583,17 @@
       "new_edition_pairs": 0,
       "editorial_notes": "Registered concurrent 24-hour prior-art C01–C09 synthesis on protected main during safe branch merge; date and evidence limits retained in README technical details and Korean TOC.",
       "reviewer_actions": "C10 and later not part of the report's 191 curated records; verify manuscript source metadata before inferring corpus-global uniqueness."
+    },
+    {
+      "as_of": "2026-10-20",
+      "status": "PROPOSED_METHOD_NOT_EFFECT_VALIDATED",
+      "new_documents": [
+        "protocols/PI_RAMP_V0_2_EN.md",
+        "protocols/PI_RAMP_V0_2_KO.md"
+      ],
+      "new_edition_pairs": 1,
+      "editorial_notes": "PI-RAMP v0.2.0 draws methods from primary Cochrane/PRISMA, FAIR, W3C PROV, Diataxis, NASA configuration management, Google SRE, DORA and The Turing Way. This is a suggested adaptation, not validation. Previous PR #236 registered as retrospective example with effects unmeasured.",
+      "reviewer_actions": "Test predeclared reader tasks before/after, obtain an independent review receipt, confirm primary-source study/report deduplication; no claim of effectiveness or translation parity."
     }
   ],
   "path_layout_policy": "Keep the project root entry-only; bilingual full research editions live in existing research/ and their original historical combined documents retain stable root URLs."
