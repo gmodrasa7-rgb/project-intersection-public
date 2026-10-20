@@ -1,0 +1,63 @@
+name: PI-CIG claim source impact and re-review guard
+
+on:
+  pull_request:
+    paths:
+      - "knowledge/claim-impact-overlay-v0_1.json"
+      - "tools/trace_claim_impact.py"
+      - ".github/workflows/claim-impact-guard.yml"
+      - "research/RESEARCH_VERSION_REGISTRY.json"
+      - "research/RVD_VERSION_MANIFEST.json"
+      - "research/RVD_CYCLE02_SUBSTITUTION_AUTONOMY_PRIOR_ART_2026-10-20_KO.md"
+      - "research/RVD_CYCLE02_SOURCE_REGISTER_2026-10-20.json"
+      - "research/DCA1_ADAPTATION_DISPLACEMENT_IDENTIFICATION_2026-10-20_KO.md"
+      - "protocols/PI_RAMP_V0_4_EN_KO.md"
+      - "experiments/e008/EXECUTABILITY_AUDIT.json"
+      - "experiments/e009/RESULT.json"
+      - "experiments/dca1/RESULT.json"
+  push:
+    branches: [main]
+    paths:
+      - "knowledge/claim-impact-overlay-v0_1.json"
+      - "tools/trace_claim_impact.py"
+      - ".github/workflows/claim-impact-guard.yml"
+      - "research/RESEARCH_VERSION_REGISTRY.json"
+      - "research/RVD_VERSION_MANIFEST.json"
+      - "research/RVD_CYCLE02_SUBSTITUTION_AUTONOMY_PRIOR_ART_2026-10-20_KO.md"
+      - "research/RVD_CYCLE02_SOURCE_REGISTER_2026-10-20.json"
+      - "research/DCA1_ADAPTATION_DISPLACEMENT_IDENTIFICATION_2026-10-20_KO.md"
+      - "protocols/PI_RAMP_V0_4_EN_KO.md"
+      - "experiments/e008/EXECUTABILITY_AUDIT.json"
+      - "experiments/e009/RESULT.json"
+      - "experiments/dca1/RESULT.json"
+  schedule:
+    - cron: "5 2 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  scoped-claim-review:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate source hashes, status boundaries, DAG acyclicity and version linkage
+        run: python tools/trace_claim_impact.py
+      - name: Challenge claim-evidence laundering and propagation false passes
+        run: python tools/trace_claim_impact.py --self-test
+      - name: Identify affected claims on changed research input (report only)
+        shell: bash
+        run: |
+          if git rev-parse HEAD^ >/dev/null 2>&1; then
+            python tools/trace_claim_impact.py --changed-base HEAD^
+          else
+            echo 'UNVERIFIED: parent commit not available; cannot report change impact'
+            exit 2
+          fi
