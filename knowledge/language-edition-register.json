@@ -367,6 +367,21 @@
         "Scientific EN/KO claim equivalence has not been independently audited.",
         "Real before/after reader-task outcomes remain null; no improvement is certified."
       ]
+    },
+    {
+      "id": "PI-MER-RVD-CYCLE02-20261020",
+      "original_1_english": "research/RVD_CYCLE02_SUBSTITUTION_AUTONOMY_PRIOR_ART_2026-10-20_EN.md",
+      "original_2_korean": "research/RVD_CYCLE02_SUBSTITUTION_AUTONOMY_PRIOR_ART_2026-10-20_KO.md",
+      "kind": "hypothesis_expansion_and_primary_author_literature_critical_crosswalk",
+      "structural_pair_present": true,
+      "meaning_review_status": "NOT_INDEPENDENTLY_VERIFIED",
+      "original_conception_language": "KO_HUMAN_LED_CONCEPT_AI_EDITORIAL_PROPOSAL",
+      "independent_review_receipt": null,
+      "one_sided_edit_exception": null,
+      "known_divergences": [
+        "Semantic equivalence of new EN/KO research documents has not been independently certified.",
+        "No primary study full-text exhaustive reading or RVD original empirical test. The 2024 meta-analysis is literature evidence, not our replication."
+      ]
     }
   ],
   "legacy_priority_unresolved": [
@@ -408,13 +423,13 @@
     }
   ],
   "metrics": {
-    "markdown_total": 176,
+    "markdown_total": 178,
     "filename_classes": {
       "UNMARKED_LANGUAGE_UNVERIFIED": 42,
       "LEGACY_MIXED_READER_ENTRY": 2,
-      "KO_SUFFIX_UNVERIFIED": 83,
+      "KO_SUFFIX_UNVERIFIED": 84,
       "ORDERED_BILINGUAL_FOUNDER_OR_GOVERNANCE": 2,
-      "EN_SUFFIX_UNVERIFIED": 24,
+      "EN_SUFFIX_UNVERIFIED": 25,
       "COMBINED_NAMING_UNVERIFIED": 23
     },
     "meaning_verified_pairs": 0,
@@ -1466,6 +1481,18 @@
       "content_equivalence": "NOT_REVIEWED"
     },
     {
+      "path": "research/RVD_CYCLE02_SUBSTITUTION_AUTONOMY_PRIOR_ART_2026-10-20_EN.md",
+      "filename_class": "EN_SUFFIX_UNVERIFIED",
+      "counterpart_path": "research/RVD_CYCLE02_SUBSTITUTION_AUTONOMY_PRIOR_ART_2026-10-20_KO.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "research/RVD_CYCLE02_SUBSTITUTION_AUTONOMY_PRIOR_ART_2026-10-20_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": "research/RVD_CYCLE02_SUBSTITUTION_AUTONOMY_PRIOR_ART_2026-10-20_EN.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
       "path": "research/TERMINOLOGY_FIVE_AXES_V0_1_EN.md",
       "filename_class": "EN_SUFFIX_UNVERIFIED",
       "counterpart_path": "research/TERMINOLOGY_FIVE_AXES_V0_1_KO.md",
@@ -1743,6 +1770,17 @@
       "new_edition_pairs": 1,
       "editorial_notes": "Registered source-transfer v0.3, pilot null outcomes and reproducible negative-control receipt tests without changing existing DCA/MER research records.",
       "reviewer_actions": "Measure four tasks before/after with locked snapshots and obtain independent evaluation before promoting effect."
+    },
+    {
+      "as_of": "2026-10-20",
+      "status": "RVD_V0_2_0_CONCEPTUAL_SPECIFICATION_NOT_VALIDATION",
+      "new_documents": [
+        "research/RVD_CYCLE02_SUBSTITUTION_AUTONOMY_PRIOR_ART_2026-10-20_EN.md",
+        "research/RVD_CYCLE02_SUBSTITUTION_AUTONOMY_PRIOR_ART_2026-10-20_KO.md"
+      ],
+      "new_edition_pairs": 1,
+      "editorial_notes": "RVD Cycle02 explicitly separates generation of value C from durable preservation of the original independent B under profitable substitution; adds R6-R9, an author/publisher DOI crosswalk with conflicting evidence, and a machine-readable source ledger. v0.2.0 is a falsifiable protocol upgrade, not an empirical finding.",
+      "reviewer_actions": "Independently confirm full texts, original-author bibliographic lineage, EN/KO semantic equivalence, real exit/power-change variables, preregister non-harmful controlled tests; preserve adverse evidence."
     }
   ],
   "path_layout_policy": "Keep the project root entry-only; bilingual full research editions live in existing research/ and their original historical combined documents retain stable root URLs."
