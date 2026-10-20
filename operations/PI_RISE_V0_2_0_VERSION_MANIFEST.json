@@ -12,7 +12,7 @@
   ],
   "ledger_ownership": {
     "individual_sponsorship": "funding/SPONSORSHIP_PUBLIC_LEDGER.md",
-    "institutional_grants_and_contracts": "funding/GRANTS_CONTRACTS_PUBLIC_LEDGER.md",
+    "institutional_grants_and_contracts": "funding/GRANTS_CONTRACTS_PUBLIC_LEDGER_EN_KO.md",
     "public_application_pipeline": "operations/PI_RISE_FINANCE_PIPELINE_V0_1_0.json",
     "personal_and_raw_financial_records": "USER_AUTHORIZED_PRIVATE_LOCAL_ONLY"
   },
@@ -56,7 +56,7 @@
     },
     {
       "path": ".github/workflows/pi-rise-integrity.yml",
-      "git_blob_sha": "0392b5c33eb25eefa8bd2393a5c23ad99fcc1377"
+      "git_blob_sha": "2cba8ca6d5c9a822917016bd844678921640aa26"
     },
     {
       "path": "knowledge/language-edition-register.json",
@@ -65,6 +65,14 @@
     {
       "path": "navigation/RESEARCH_VERSIONS_EN_KO.md",
       "git_blob_sha": "59333888d547393c6532822082cc7e679246978d"
+    },
+    {
+      "path": "tools/pi_rise_manifest_guard.py",
+      "git_blob_sha": "130c11716327c2c4a3b35a5eab8d75a6b53263c0"
+    },
+    {
+      "path": "tests/test_pi_rise_manifest_guard.py",
+      "git_blob_sha": "8ac2023f92a118a4c4b512c05381122c26c29996"
     }
   ],
   "provenance": [
