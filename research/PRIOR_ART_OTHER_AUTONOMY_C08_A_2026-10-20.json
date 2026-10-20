@@ -1,6 +1,6 @@
 {
   "cycle": "C08",
-  "part": "A",
+  "part": "A+B_COMBINED_18",
   "date": "2026-10-20",
   "saturation": "NOT_VERIFIED",
   "records": [
@@ -102,7 +102,108 @@
       "result": "Axiomatic worst-off social deprivation criterion respecting individuals' own view of good life",
       "limit": "Normative formal result, no spontaneous powerful-A behavior; first online 2025 vs 2026 issue one study",
       "grade": "PEER_REVIEWED_THEORY"
+    },
+    {
+      "id": "C08-10",
+      "year": "2011",
+      "authors": "Matthias Uhl",
+      "title": "Do Self-Committers Mind Other-Imposed Commitment?",
+      "key": "id:repec:rmm:journl:v:2:y:2011:i:40",
+      "primary": "https://ideas.repec.org/a/rmm/journl/v2y2011i40.html",
+      "result": "Self-chosen commitment and another's imposed restriction are separate.",
+      "limit": "Human experiment or preference model, not validated enduring protection of independent AI B under absolute unilateral dominance.",
+      "grade": "ORIGINAL_JOURNAL_EXPERIMENT"
+    },
+    {
+      "id": "C08-11",
+      "year": "2016",
+      "authors": "Steffel; Williams; Perrmann-Graham",
+      "title": "Passing the buck: Delegating choices to others to avoid responsibility and blame",
+      "key": "doi:10.1016/j.obhdp.2016.04.006",
+      "primary": "https://www.sciencedirect.com/science/article/pii/S0749597815300108",
+      "result": "Delegation can minimize felt responsibility, without improving recipient autonomy.",
+      "limit": "Human experiment or preference model, not validated enduring protection of independent AI B under absolute unilateral dominance.",
+      "grade": "PEER_REVIEWED_EXPERIMENT"
+    },
+    {
+      "id": "C08-12",
+      "year": "2017",
+      "authors": "Sloof; von Siemens",
+      "title": "Illusion of control and the pursuit of authority",
+      "key": "doi:10.1007/s10683-016-9499-7",
+      "primary": "https://www.cambridge.org/core/journals/experimental-economics/article/abs/illusion-of-control-and-the-pursuit-of-authority/BD607DE89CBF2E10A052BB44F27BB458",
+      "result": "Control preference depends partly on false expected outcome influence; 2017 issue vs 2025 migration.",
+      "limit": "Human experiment or preference model, not validated enduring protection of independent AI B under absolute unilateral dominance.",
+      "grade": "PEER_REVIEWED_EXPERIMENT"
+    },
+    {
+      "id": "C08-13",
+      "year": "2017",
+      "authors": "Krawczyk; Woźny",
+      "title": "An Experiment on Temptation and Attitude Towards Paternalism",
+      "key": "doi:10.2139/ssrn.2912427",
+      "primary": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2912427",
+      "result": "Real lunch choice experiment links self-binding and imposed menu restriction.",
+      "limit": "Human experiment or preference model, not validated enduring protection of independent AI B under absolute unilateral dominance.",
+      "grade": "ORIGINAL_WORKING_PAPER"
+    },
+    {
+      "id": "C08-14",
+      "year": "2020",
+      "authors": "Kassirer; Levine; Gaertig",
+      "title": "Decisional autonomy undermines advisees’ judgments of experts in medicine and in life",
+      "key": "doi:10.1073/pnas.1910572117",
+      "primary": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7260954/",
+      "result": "Advisees prefer directive expertise in some uncertain decisions; recommendation is not irrevocable loss of veto.",
+      "limit": "Human experiment or preference model, not validated enduring protection of independent AI B under absolute unilateral dominance.",
+      "grade": "PEER_REVIEWED_EXPERIMENT"
+    },
+    {
+      "id": "C08-15",
+      "year": "2021",
+      "authors": "Gawn; Innes",
+      "title": "Machiavelli Preferences Without Blame: Delegating Selfish vs. Generous Decisions in Dictator Games",
+      "key": "doi:10.1016/j.socec.2020.101615",
+      "primary": "https://www.sciencedirect.com/science/article/pii/S2214804320302639",
+      "result": "Selfish-equivalent delegation is about 19 percentage points more frequent than generous-equivalent delegation.",
+      "limit": "Human experiment or preference model, not validated enduring protection of independent AI B under absolute unilateral dominance.",
+      "grade": "PEER_REVIEWED_EXPERIMENT"
+    },
+    {
+      "id": "C08-16",
+      "year": "2023",
+      "authors": "Turetski; Rondina; Hutchings; Feng; Soman",
+      "title": "An experimental investigation into whether choice architecture interventions are considered ethical",
+      "key": "doi:10.1038/s41598-023-44604-7",
+      "primary": "https://www.nature.com/articles/s41598-023-44604-7",
+      "result": "Registered 5x5x5 design finds acceptance and perceived autonomy threats depend on interventions and framing.",
+      "limit": "Human experiment or preference model, not validated enduring protection of independent AI B under absolute unilateral dominance.",
+      "grade": "PEER_REVIEWED_REGISTERED_REPORT"
+    },
+    {
+      "id": "C08-17",
+      "year": "2024",
+      "authors": "Kölle; Kübler; Ockenfels",
+      "title": "Impartial policymakers prefer to impose carbon pricing to capping, especially when combined with offsets",
+      "key": "doi:10.1016/j.ecolecon.2024.108348",
+      "primary": "https://www.sciencedirect.com/science/article/pii/S0921800924002453",
+      "result": "Impartial decision-makers prefer flexible pricing or optional carbon offsets over stringent caps.",
+      "limit": "Human experiment or preference model, not validated enduring protection of independent AI B under absolute unilateral dominance.",
+      "grade": "PEER_REVIEWED_EXPERIMENT"
+    },
+    {
+      "id": "C08-18",
+      "year": "2025",
+      "authors": "Konrad; Simon",
+      "title": "Paternalism attitudes and the happiness value of fundamental freedoms",
+      "key": "doi:10.1007/s10101-024-00322-y",
+      "primary": "https://link.springer.com/article/10.1007/s10101-024-00322-y",
+      "result": "Survey-derived own-freedom value and restrictions attitudes differ across respondents.",
+      "limit": "Human experiment or preference model, not validated enduring protection of independent AI B under absolute unilateral dominance.",
+      "grade": "PEER_REVIEWED_SURVEY"
     }
   ],
-  "note": "Further original-paper verification in progress"
+  "note": "Further original-paper verification in progress",
+  "count": 18,
+  "warning": "Literature saturation not verified. 2 working papers and one non-DOI original journal are not magically peer-reviewed new empirical datasets. Original full PDF review not claimed; original article/author abstract/source pages checked."
 }
