@@ -28,8 +28,8 @@ class FLRValidationTests(unittest.TestCase):
 
     def test_valid_initial_registry(self):
         out = flr.validate(self.record)
-        self.assertEqual(out["version"], "0.1.1")
-        self.assertEqual(out["cases"], 4)
+        self.assertEqual(out["version"], "0.1.2")
+        self.assertEqual(out["cases"], 6)
         self.assertEqual(out["controls"], 4)
 
     def test_regression_original_naming_failure(self):
@@ -95,6 +95,27 @@ class FLRValidationTests(unittest.TestCase):
         with self.assertRaisesRegex(identity.IdentityError, "E010_BLOCKED_LEGACY_BENCHMARK"):
             identity.audit_identity(current, source, True)
 
+    def test_mail_regression_manifest_hash_masking(self):
+        """Reproduce FLR-0005: an existing artifact with stale SHA fails closed."""
+        current = json.loads((ROOT / rise.MANIFEST).read_text(encoding="utf-8"))
+        broken = copy.deepcopy(current)
+        item = next(x for x in broken["artifacts"]
+                    if x["path"] == "funding/README.md")
+        item["git_blob_sha"] = "0" * 40
+        with self.assertRaisesRegex(rise.ManifestGuardError, "STALE_GIT_BLOB_SHA"):
+            rise.audit(broken, ROOT)
+
+    def test_mail_regression_new_document_registration(self):
+        """FLR-0006: removing the DC path from inventory is explicitly detectable."""
+        r = json.loads((ROOT / "knowledge/language-edition-register.json")
+                       .read_text(encoding="utf-8"))
+        target = "operations/PI_RISE_DC_V0_1_0_EN_KO.md"
+        paths = {e["path"] for e in r["inventory"]}
+        self.assertIn(target, paths, "Current main's language register must include DC")
+        simulated = paths - {target}
+        self.assertNotIn(target, simulated)
+        self.assertTrue((ROOT / target).is_file())
+
     def test_unfiltered_ci_contract(self):
         self.assertTrue(flr.check_ci_contract(self.workflow))
 
@@ -139,21 +160,21 @@ class FLRValidationTests(unittest.TestCase):
 
     def test_case_deletion_against_prior_version_rejected(self):
         newer = self.case()
-        newer["release_version"] = "0.1.2"
+        newer["release_version"] = "0.1.3"
         newer["cases"] = newer["cases"][1:]
         with self.assertRaisesRegex(flr.FLRError, "HISTORICAL_CASE_DELETED"):
             flr.compare_history(newer, self.record)
 
     def test_case_metadata_rewrite_against_prior_version_rejected(self):
         newer = self.case()
-        newer["release_version"] = "0.1.2"
+        newer["release_version"] = "0.1.3"
         newer["cases"][0]["root_cause"] = "silently rewritten"
         with self.assertRaisesRegex(flr.FLRError, "HISTORICAL_CASE_METADATA_REWRITTEN"):
             flr.compare_history(newer, self.record)
 
     def test_event_erasal_against_prior_version_rejected(self):
         newer = self.case()
-        newer["release_version"] = "0.1.2"
+        newer["release_version"] = "0.1.3"
         newer["cases"][0]["events"][0]["note"] = "rewritten history"
         with self.assertRaisesRegex(flr.FLRError, "HISTORICAL_EVIDENCE_REWRITTEN"):
             flr.compare_history(newer, self.record)
@@ -167,20 +188,20 @@ class FLRValidationTests(unittest.TestCase):
         newer["cases"][0]["events"].append(fresh)
         with self.assertRaisesRegex(flr.FLRError, "VERSION_BUMP_REQUIRED"):
             flr.compare_history(newer, self.record)
-        newer["release_version"] = "0.1.2"
+        newer["release_version"] = "0.1.3"
         self.assertTrue(flr.compare_history(newer, self.record))
-        self.assertEqual(flr.validate(newer)["cases"], 4)
+        self.assertEqual(flr.validate(newer)["cases"], 6)
 
     def test_control_deletion_against_prior_version_rejected(self):
         newer = self.case()
-        newer["release_version"] = "0.1.2"
+        newer["release_version"] = "0.1.3"
         newer["control_registry"] = newer["control_registry"][1:]
         with self.assertRaisesRegex(flr.FLRError, "HISTORICAL_CONTROL_REMOVED"):
             flr.compare_history(newer, self.record)
 
     def test_version_only_update_rejected(self):
         newer = self.case()
-        newer["release_version"] = "0.1.2"
+        newer["release_version"] = "0.1.3"
         with self.assertRaisesRegex(flr.FLRError, "EMPTY_VERSION_BUMP"):
             flr.compare_history(newer, self.record)
 
