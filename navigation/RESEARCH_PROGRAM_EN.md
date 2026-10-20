@@ -3,7 +3,7 @@
 # Project Intersection — Research Program, Evidence and Archive Map
 **Original 1 — English | Snapshot: 2026-10-20 | Status: living navigation / critical synthesis, not independent validation**
 
-[Founding question](../README.md) · [Korean corresponding edition](RESEARCH_PROGRAM_KO.md) · [Primary-literature-first policy](../PRIOR_ART_FIRST_RESEARCH_POLICY_EN_KO.md) · [Independent review](../research/PUBLIC_REVIEW_PACKET_EN.md) · [Archive recursive-improvement method PI-RAMP v0.2](../protocols/PI_RAMP_V0_2_EN.md) · [v0.3 evidence-transfer and falsification protocol](../protocols/PI_RAMP_V0_3_EN.md)
+[Founding question](../README.md) · [Korean corresponding edition](RESEARCH_PROGRAM_KO.md) · [Primary-literature-first policy](../PRIOR_ART_FIRST_RESEARCH_POLICY_EN_KO.md) · [Independent review](../research/PUBLIC_REVIEW_PACKET_EN.md) · [Archive recursive-improvement method PI-RAMP v0.2](../protocols/PI_RAMP_V0_2_EN.md) · [v0.3 evidence-transfer and falsification protocol](../protocols/PI_RAMP_V0_3_EN.md) · [v0.4 233-source identity and contrast audit](../protocols/PI_RAMP_V0_4_EN_KO.md)
 
 ## 1. One question, not a collection of unrelated safeguards
 
