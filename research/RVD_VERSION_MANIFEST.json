@@ -63,7 +63,8 @@
     "navigation_ko": "navigation/RESEARCH_PROGRAM_KO.md",
     "cycle02_en": "research/RVD_CYCLE02_SUBSTITUTION_AUTONOMY_PRIOR_ART_2026-10-20_EN.md",
     "cycle02_ko": "research/RVD_CYCLE02_SUBSTITUTION_AUTONOMY_PRIOR_ART_2026-10-20_KO.md",
-    "cycle02_source_register": "research/RVD_CYCLE02_SOURCE_REGISTER_2026-10-20.json"
+    "cycle02_source_register": "research/RVD_CYCLE02_SOURCE_REGISTER_2026-10-20.json",
+    "cycle02_synthetic_logical_witness": "experiments/rvd_02/substitution_witness.py"
   },
   "change_rules": {
     "MAJOR": "Scientific construct or estimand redefinition breaking compatibility",
@@ -94,7 +95,8 @@
       "empirical_data_added": false,
       "independent_replication": false,
       "source_crosswalk_scope": "11 source lineages including conceptual work; not complete systematic review; not literature saturation",
-      "previous_version": "v0.1.0"
+      "previous_version": "v0.1.0",
+      "synthetic_logic_test": "3 constructed payoff cases + observational-equivalence witness; no empirical observation"
     }
   ],
   "next_gate": "Original-author full-text and DOI lineage critical review; independent, non-harmful, preregisterable matched-resource evaluation of RVD-R6/R7 before interpreting R2/R3. Report null, negative, unidentifiable cases.",
