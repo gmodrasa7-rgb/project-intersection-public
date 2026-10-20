@@ -1,0 +1,34 @@
+name: PI-FLR read-only failure signal watch
+on:
+  schedule:
+    - cron: '17 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: read
+
+concurrency:
+  group: pi-flr-readonly-watch
+  cancel-in-progress: false
+
+jobs:
+  observe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Test privacy, deduplication, and false-recovery negative mutations
+        run: python3 -m unittest discover -s tests -p 'test_pi_flr_watch.py' -v
+      - name: Scan public GitHub Actions metadata without modifying repository
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 tools/pi_flr_watch.py --output pi_flr_watch_report.json
+      - name: Keep a bounded machine-readable incident candidate receipt
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pi-flr-readonly-watch
+          path: pi_flr_watch_report.json
+          if-no-files-found: warn
+          retention-days: 14
