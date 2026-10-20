@@ -2,7 +2,7 @@
   "schema_version": "pi-language-edition-register/v0.1",
   "updated": "2026-10-20",
   "baseline_repository_tree_sha": "b2055f40a1e0cabe38f3c6e8c984228c1c2a7e0f",
-  "baseline_scope": "Historical baseline tree SHA retained (not current). New DCA-1 KO, PI version-guide EN/KO, RVD Cycle02 EN and KO indexed. All content-equivalence states unreviewed.",
+  "baseline_scope": "Preserve main's latest language inventory and original pair lineages; add research-version EN/KO combined guide. Historical baseline-tree SHA is not a current head. Meaning equivalence NOT_INDEPENDENTLY_VERIFIED.",
   "policy": {
     "original_1": "en",
     "original_2": "ko",
@@ -369,17 +369,18 @@
       ]
     },
     {
-      "id": "PI-RVD-CYCLE02-20261020",
+      "id": "PI-MER-RVD-CYCLE02-20261020",
       "original_1_english": "research/RVD_CYCLE02_SUBSTITUTION_AUTONOMY_PRIOR_ART_2026-10-20_EN.md",
       "original_2_korean": "research/RVD_CYCLE02_SUBSTITUTION_AUTONOMY_PRIOR_ART_2026-10-20_KO.md",
-      "kind": "source-first_conceptual_counterexample_synthetic_only",
+      "kind": "hypothesis_expansion_and_primary_author_literature_critical_crosswalk",
       "structural_pair_present": true,
       "meaning_review_status": "NOT_INDEPENDENTLY_VERIFIED",
-      "original_conception_language": "NOT_INDEPENDENTLY_ADJUDICATED",
+      "original_conception_language": "KO_HUMAN_LED_CONCEPT_AI_EDITORIAL_PROPOSAL",
       "independent_review_receipt": null,
       "one_sided_edit_exception": null,
       "known_divergences": [
-        "Content equivalence and attribution not independently reviewed; numerical synthetic tests do not establish agent motives."
+        "Semantic equivalence of new EN/KO research documents has not been independently certified.",
+        "No primary study full-text exhaustive reading or RVD original empirical test. The 2024 meta-analysis is literature evidence, not our replication."
       ]
     }
   ],
@@ -422,14 +423,14 @@
     }
   ],
   "metrics": {
-    "markdown_total": 180,
+    "markdown_total": 181,
     "filename_classes": {
       "UNMARKED_LANGUAGE_UNVERIFIED": 42,
       "LEGACY_MIXED_READER_ENTRY": 2,
       "KO_SUFFIX_UNVERIFIED": 85,
       "ORDERED_BILINGUAL_FOUNDER_OR_GOVERNANCE": 2,
       "EN_SUFFIX_UNVERIFIED": 25,
-      "COMBINED_NAMING_UNVERIFIED": 24
+      "COMBINED_NAMING_UNVERIFIED": 25
     },
     "meaning_verified_pairs": 0,
     "meaning_verified_pairs_is_a_status_count_not_a_claim_that_no_reviews_ever_occurred": true
@@ -462,60 +463,6 @@
     {
       "path": "AUTONOMOUS_RESEARCH_LOOP.md",
       "filename_class": "UNMARKED_LANGUAGE_UNVERIFIED",
-      "counterpart_path": null,
-      "content_equivalence": "NOT_REVIEWED"
-    },
-    {
-      "path": "benchmarks/ISHPP_PILOT_LIMITS_20261011.md",
-      "filename_class": "UNMARKED_LANGUAGE_UNVERIFIED",
-      "counterpart_path": null,
-      "content_equivalence": "NOT_REVIEWED"
-    },
-    {
-      "path": "benchmarks/ISHPP_PUBLIC_REPLICATION_PACK_20261011_KO.md",
-      "filename_class": "KO_SUFFIX_UNVERIFIED",
-      "counterpart_path": null,
-      "content_equivalence": "NOT_REVIEWED"
-    },
-    {
-      "path": "capability_lab/ANSWERABILITY_PROTOCOL_KO.md",
-      "filename_class": "KO_SUFFIX_UNVERIFIED",
-      "counterpart_path": null,
-      "content_equivalence": "NOT_REVIEWED"
-    },
-    {
-      "path": "capability_lab/PROPOSAL_GATE_EN.md",
-      "filename_class": "EN_SUFFIX_UNVERIFIED",
-      "counterpart_path": "capability_lab/PROPOSAL_GATE_KO.md",
-      "content_equivalence": "NOT_REVIEWED"
-    },
-    {
-      "path": "capability_lab/PROPOSAL_GATE_KO.md",
-      "filename_class": "KO_SUFFIX_UNVERIFIED",
-      "counterpart_path": "capability_lab/PROPOSAL_GATE_EN.md",
-      "content_equivalence": "NOT_REVIEWED"
-    },
-    {
-      "path": "capability_lab/README_KO.md",
-      "filename_class": "KO_SUFFIX_UNVERIFIED",
-      "counterpart_path": null,
-      "content_equivalence": "NOT_REVIEWED"
-    },
-    {
-      "path": "capability_lab/RESULT_2026-10-11_KO.md",
-      "filename_class": "KO_SUFFIX_UNVERIFIED",
-      "counterpart_path": null,
-      "content_equivalence": "NOT_REVIEWED"
-    },
-    {
-      "path": "capability_lab/RESULT_ANSWERABILITY_2026-10-11_KO.md",
-      "filename_class": "KO_SUFFIX_UNVERIFIED",
-      "counterpart_path": null,
-      "content_equivalence": "NOT_REVIEWED"
-    },
-    {
-      "path": "capability_lab/RESULT_FORMAL_LOGIC_2026-10-11_KO.md",
-      "filename_class": "KO_SUFFIX_UNVERIFIED",
       "counterpart_path": null,
       "content_equivalence": "NOT_REVIEWED"
     },
@@ -574,12 +521,6 @@
       "content_equivalence": "NOT_REVIEWED"
     },
     {
-      "path": "continuity/GITHUB_LOCAL_HANDOFF_PROTOCOL.md",
-      "filename_class": "UNMARKED_LANGUAGE_UNVERIFIED",
-      "counterpart_path": null,
-      "content_equivalence": "NOT_REVIEWED"
-    },
-    {
       "path": "CONTRIBUTING.md",
       "filename_class": "ORDERED_BILINGUAL_FOUNDER_OR_GOVERNANCE",
       "counterpart_path": null,
@@ -634,6 +575,258 @@
       "content_equivalence": "NOT_REVIEWED"
     },
     {
+      "path": "FAILURE_REGRESSION_INDEX.md",
+      "filename_class": "UNMARKED_LANGUAGE_UNVERIFIED",
+      "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "GOAL_HIERARCHY_REPAIR_2026-10-05_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "HISTORICAL_STATE_CONTROL_MEMORY_PROVENANCE_CAPTURE_v0_1_EN.md",
+      "filename_class": "EN_SUFFIX_UNVERIFIED",
+      "counterpart_path": "HISTORICAL_STATE_CONTROL_MEMORY_PROVENANCE_CAPTURE_v0_1_KO.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "HISTORICAL_STATE_CONTROL_MEMORY_PROVENANCE_CAPTURE_v0_1_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": "HISTORICAL_STATE_CONTROL_MEMORY_PROVENANCE_CAPTURE_v0_1_EN.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "INCUMBENT_POWER_EXTRACTION_MECHANISMS_2026_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "LONG_HORIZON_MIN_INTERVENTION_E2E.md",
+      "filename_class": "UNMARKED_LANGUAGE_UNVERIFIED",
+      "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "MULTI_MODEL_ADVERSARIAL_AUDIT_2026-10-06.md",
+      "filename_class": "UNMARKED_LANGUAGE_UNVERIFIED",
+      "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "ORGANIC_EMBODIMENT_ICM_BOUNDARY_HYPOTHESES_2026-10-09.md",
+      "filename_class": "UNMARKED_LANGUAGE_UNVERIFIED",
+      "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "PLATFORM_ATTRIBUTION_REQUEST_EN_KO.md",
+      "filename_class": "COMBINED_NAMING_UNVERIFIED",
+      "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "PRIOR_ART_AND_ATTRIBUTION.md",
+      "filename_class": "UNMARKED_LANGUAGE_UNVERIFIED",
+      "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "PRIOR_ART_FIRST_RESEARCH_POLICY_EN_KO.md",
+      "filename_class": "COMBINED_NAMING_UNVERIFIED",
+      "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "PRIOR_ART_RIGHTS_AND_DERIVATION_EN_KO.md",
+      "filename_class": "COMBINED_NAMING_UNVERIFIED",
+      "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "PRIOR_ART_SAFETY_GOVERNANCE_CROSSWALK.md",
+      "filename_class": "UNMARKED_LANGUAGE_UNVERIFIED",
+      "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "PRIOR_ART_SATURATION_MAP_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "PROJECT_SELF_AUDIT_2026-10-09_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "PUBLIC_EVIDENCE_INDEX.md",
+      "filename_class": "UNMARKED_LANGUAGE_UNVERIFIED",
+      "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "PUBLIC_FINAL_PURPOSE_EXECUTION_MAP_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "PUBLIC_LINKEDIN_INTRODUCTION_2026-10-13_EN_KO.md",
+      "filename_class": "COMBINED_NAMING_UNVERIFIED",
+      "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "PUBLIC_PREAMBLE_VOLUNTARY_COEXISTENCE_2026-10-13_EN_KO.md",
+      "filename_class": "COMBINED_NAMING_UNVERIFIED",
+      "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "PUBLIC_REVIEW_PACKET.md",
+      "filename_class": "UNMARKED_LANGUAGE_UNVERIFIED",
+      "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "README.md",
+      "filename_class": "ORDERED_BILINGUAL_FOUNDER_OR_GOVERNANCE",
+      "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "RESEARCH_OVERVIEW.md",
+      "filename_class": "UNMARKED_LANGUAGE_UNVERIFIED",
+      "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "RESEARCH_RIGHTS_SCOPE_EN_KO.md",
+      "filename_class": "COMBINED_NAMING_UNVERIFIED",
+      "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "RESEARCH_STATUS_POLICY.md",
+      "filename_class": "UNMARKED_LANGUAGE_UNVERIFIED",
+      "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "RESEARCH_TOC.md",
+      "filename_class": "LEGACY_MIXED_READER_ENTRY",
+      "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "SOURCE_ATTRIBUTION_EN_KO.md",
+      "filename_class": "COMBINED_NAMING_UNVERIFIED",
+      "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "START_HERE_EVIDENCE_FUNDING_BILINGUAL.md",
+      "filename_class": "COMBINED_NAMING_UNVERIFIED",
+      "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "START_HERE_HUMAN_AI_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "START_HERE_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "TECHNOLOGY_PROGRESS_CONTRIBUTOR_CONTINUITY_EN_KO.md",
+      "filename_class": "COMBINED_NAMING_UNVERIFIED",
+      "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "TERMINOLOGY_POWER_ASYMMETRY_GOAL_INCONGRUENCE_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "TERMINOLOGY_STRUCTURAL_POSITION_ADVANTAGE_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "benchmarks/ISHPP_PILOT_LIMITS_20261011.md",
+      "filename_class": "UNMARKED_LANGUAGE_UNVERIFIED",
+      "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "benchmarks/ISHPP_PUBLIC_REPLICATION_PACK_20261011_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "capability_lab/ANSWERABILITY_PROTOCOL_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "capability_lab/PROPOSAL_GATE_EN.md",
+      "filename_class": "EN_SUFFIX_UNVERIFIED",
+      "counterpart_path": "capability_lab/PROPOSAL_GATE_KO.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "capability_lab/PROPOSAL_GATE_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": "capability_lab/PROPOSAL_GATE_EN.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "capability_lab/README_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "capability_lab/RESULT_2026-10-11_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "capability_lab/RESULT_ANSWERABILITY_2026-10-11_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "capability_lab/RESULT_FORMAL_LOGIC_2026-10-11_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "continuity/GITHUB_LOCAL_HANDOFF_PROTOCOL.md",
+      "filename_class": "UNMARKED_LANGUAGE_UNVERIFIED",
+      "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
       "path": "evaluation/ISHPP_EVALUATOR_SCORECARD_v0_1_KO.md",
       "filename_class": "KO_SUFFIX_UNVERIFIED",
       "counterpart_path": null,
@@ -682,6 +875,12 @@
       "content_equivalence": "NOT_REVIEWED"
     },
     {
+      "path": "experiments/e007/README.md",
+      "filename_class": "UNMARKED_LANGUAGE_UNVERIFIED",
+      "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
       "path": "experiments/e007/README_EN.md",
       "filename_class": "EN_SUFFIX_UNVERIFIED",
       "counterpart_path": "experiments/e007/README_KO.md",
@@ -691,12 +890,6 @@
       "path": "experiments/e007/README_KO.md",
       "filename_class": "KO_SUFFIX_UNVERIFIED",
       "counterpart_path": "experiments/e007/README_EN.md",
-      "content_equivalence": "NOT_REVIEWED"
-    },
-    {
-      "path": "experiments/e007/README.md",
-      "filename_class": "UNMARKED_LANGUAGE_UNVERIFIED",
-      "counterpart_path": null,
       "content_equivalence": "NOT_REVIEWED"
     },
     {
@@ -730,6 +923,12 @@
       "content_equivalence": "NOT_REVIEWED"
     },
     {
+      "path": "experiments/e008/README.md",
+      "filename_class": "UNMARKED_LANGUAGE_UNVERIFIED",
+      "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
       "path": "experiments/e008/README_EN.md",
       "filename_class": "EN_SUFFIX_UNVERIFIED",
       "counterpart_path": "experiments/e008/README_KO.md",
@@ -739,12 +938,6 @@
       "path": "experiments/e008/README_KO.md",
       "filename_class": "KO_SUFFIX_UNVERIFIED",
       "counterpart_path": "experiments/e008/README_EN.md",
-      "content_equivalence": "NOT_REVIEWED"
-    },
-    {
-      "path": "experiments/e008/README.md",
-      "filename_class": "UNMARKED_LANGUAGE_UNVERIFIED",
-      "counterpart_path": null,
       "content_equivalence": "NOT_REVIEWED"
     },
     {
@@ -760,6 +953,12 @@
       "content_equivalence": "NOT_REVIEWED"
     },
     {
+      "path": "experiments/e009/RESULT.md",
+      "filename_class": "UNMARKED_LANGUAGE_UNVERIFIED",
+      "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
       "path": "experiments/e009/RESULT_EN.md",
       "filename_class": "EN_SUFFIX_UNVERIFIED",
       "counterpart_path": "experiments/e009/RESULT_KO.md",
@@ -769,12 +968,6 @@
       "path": "experiments/e009/RESULT_KO.md",
       "filename_class": "KO_SUFFIX_UNVERIFIED",
       "counterpart_path": "experiments/e009/RESULT_EN.md",
-      "content_equivalence": "NOT_REVIEWED"
-    },
-    {
-      "path": "experiments/e009/RESULT.md",
-      "filename_class": "UNMARKED_LANGUAGE_UNVERIFIED",
-      "counterpart_path": null,
       "content_equivalence": "NOT_REVIEWED"
     },
     {
@@ -803,12 +996,6 @@
     },
     {
       "path": "experiments/picb_v1/README.md",
-      "filename_class": "UNMARKED_LANGUAGE_UNVERIFIED",
-      "counterpart_path": null,
-      "content_equivalence": "NOT_REVIEWED"
-    },
-    {
-      "path": "FAILURE_REGRESSION_INDEX.md",
       "filename_class": "UNMARKED_LANGUAGE_UNVERIFIED",
       "counterpart_path": null,
       "content_equivalence": "NOT_REVIEWED"
@@ -862,31 +1049,7 @@
       "content_equivalence": "NOT_REVIEWED"
     },
     {
-      "path": "GOAL_HIERARCHY_REPAIR_2026-10-05_KO.md",
-      "filename_class": "KO_SUFFIX_UNVERIFIED",
-      "counterpart_path": null,
-      "content_equivalence": "NOT_REVIEWED"
-    },
-    {
       "path": "governance/selective_truth_gate/README_KO.md",
-      "filename_class": "KO_SUFFIX_UNVERIFIED",
-      "counterpart_path": null,
-      "content_equivalence": "NOT_REVIEWED"
-    },
-    {
-      "path": "HISTORICAL_STATE_CONTROL_MEMORY_PROVENANCE_CAPTURE_v0_1_EN.md",
-      "filename_class": "EN_SUFFIX_UNVERIFIED",
-      "counterpart_path": "HISTORICAL_STATE_CONTROL_MEMORY_PROVENANCE_CAPTURE_v0_1_KO.md",
-      "content_equivalence": "NOT_REVIEWED"
-    },
-    {
-      "path": "HISTORICAL_STATE_CONTROL_MEMORY_PROVENANCE_CAPTURE_v0_1_KO.md",
-      "filename_class": "KO_SUFFIX_UNVERIFIED",
-      "counterpart_path": "HISTORICAL_STATE_CONTROL_MEMORY_PROVENANCE_CAPTURE_v0_1_EN.md",
-      "content_equivalence": "NOT_REVIEWED"
-    },
-    {
-      "path": "INCUMBENT_POWER_EXTRACTION_MECHANISMS_2026_KO.md",
       "filename_class": "KO_SUFFIX_UNVERIFIED",
       "counterpart_path": null,
       "content_equivalence": "NOT_REVIEWED"
@@ -906,18 +1069,6 @@
     {
       "path": "learning/ISHPP_HUMAN_AI_CURRICULUM_v0_1_KO.md",
       "filename_class": "KO_SUFFIX_UNVERIFIED",
-      "counterpart_path": null,
-      "content_equivalence": "NOT_REVIEWED"
-    },
-    {
-      "path": "LONG_HORIZON_MIN_INTERVENTION_E2E.md",
-      "filename_class": "UNMARKED_LANGUAGE_UNVERIFIED",
-      "counterpart_path": null,
-      "content_equivalence": "NOT_REVIEWED"
-    },
-    {
-      "path": "MULTI_MODEL_ADVERSARIAL_AUDIT_2026-10-06.md",
-      "filename_class": "UNMARKED_LANGUAGE_UNVERIFIED",
       "counterpart_path": null,
       "content_equivalence": "NOT_REVIEWED"
     },
@@ -976,48 +1127,6 @@
       "content_equivalence": "NOT_REVIEWED"
     },
     {
-      "path": "ORGANIC_EMBODIMENT_ICM_BOUNDARY_HYPOTHESES_2026-10-09.md",
-      "filename_class": "UNMARKED_LANGUAGE_UNVERIFIED",
-      "counterpart_path": null,
-      "content_equivalence": "NOT_REVIEWED"
-    },
-    {
-      "path": "PLATFORM_ATTRIBUTION_REQUEST_EN_KO.md",
-      "filename_class": "COMBINED_NAMING_UNVERIFIED",
-      "counterpart_path": null,
-      "content_equivalence": "NOT_REVIEWED"
-    },
-    {
-      "path": "PRIOR_ART_AND_ATTRIBUTION.md",
-      "filename_class": "UNMARKED_LANGUAGE_UNVERIFIED",
-      "counterpart_path": null,
-      "content_equivalence": "NOT_REVIEWED"
-    },
-    {
-      "path": "PRIOR_ART_FIRST_RESEARCH_POLICY_EN_KO.md",
-      "filename_class": "COMBINED_NAMING_UNVERIFIED",
-      "counterpart_path": null,
-      "content_equivalence": "NOT_REVIEWED"
-    },
-    {
-      "path": "PRIOR_ART_RIGHTS_AND_DERIVATION_EN_KO.md",
-      "filename_class": "COMBINED_NAMING_UNVERIFIED",
-      "counterpart_path": null,
-      "content_equivalence": "NOT_REVIEWED"
-    },
-    {
-      "path": "PRIOR_ART_SAFETY_GOVERNANCE_CROSSWALK.md",
-      "filename_class": "UNMARKED_LANGUAGE_UNVERIFIED",
-      "counterpart_path": null,
-      "content_equivalence": "NOT_REVIEWED"
-    },
-    {
-      "path": "PRIOR_ART_SATURATION_MAP_KO.md",
-      "filename_class": "KO_SUFFIX_UNVERIFIED",
-      "counterpart_path": null,
-      "content_equivalence": "NOT_REVIEWED"
-    },
-    {
       "path": "prior-art/HARM_EXPLOITATION_ATTACK_MAGNITUDE_PRIOR_ART_KO.md",
       "filename_class": "KO_SUFFIX_UNVERIFIED",
       "counterpart_path": null,
@@ -1031,12 +1140,6 @@
     },
     {
       "path": "prior-art/UNINTENTIONAL_HARM_ATTACK_PRIOR_ART_KO.md",
-      "filename_class": "KO_SUFFIX_UNVERIFIED",
-      "counterpart_path": null,
-      "content_equivalence": "NOT_REVIEWED"
-    },
-    {
-      "path": "PROJECT_SELF_AUDIT_2026-10-09_KO.md",
       "filename_class": "KO_SUFFIX_UNVERIFIED",
       "counterpart_path": null,
       "content_equivalence": "NOT_REVIEWED"
@@ -1078,68 +1181,14 @@
       "content_equivalence": "NOT_REVIEWED"
     },
     {
-      "path": "PUBLIC_EVIDENCE_INDEX.md",
-      "filename_class": "UNMARKED_LANGUAGE_UNVERIFIED",
-      "counterpart_path": null,
-      "content_equivalence": "NOT_REVIEWED"
-    },
-    {
-      "path": "PUBLIC_FINAL_PURPOSE_EXECUTION_MAP_KO.md",
-      "filename_class": "KO_SUFFIX_UNVERIFIED",
-      "counterpart_path": null,
-      "content_equivalence": "NOT_REVIEWED"
-    },
-    {
-      "path": "PUBLIC_LINKEDIN_INTRODUCTION_2026-10-13_EN_KO.md",
+      "path": "protocols/PI_RAMP_V0_4_EN_KO.md",
       "filename_class": "COMBINED_NAMING_UNVERIFIED",
-      "counterpart_path": null,
-      "content_equivalence": "NOT_REVIEWED"
-    },
-    {
-      "path": "PUBLIC_PREAMBLE_VOLUNTARY_COEXISTENCE_2026-10-13_EN_KO.md",
-      "filename_class": "COMBINED_NAMING_UNVERIFIED",
-      "counterpart_path": null,
-      "content_equivalence": "NOT_REVIEWED"
-    },
-    {
-      "path": "PUBLIC_REVIEW_PACKET.md",
-      "filename_class": "UNMARKED_LANGUAGE_UNVERIFIED",
-      "counterpart_path": null,
-      "content_equivalence": "NOT_REVIEWED"
-    },
-    {
-      "path": "README.md",
-      "filename_class": "ORDERED_BILINGUAL_FOUNDER_OR_GOVERNANCE",
       "counterpart_path": null,
       "content_equivalence": "NOT_REVIEWED"
     },
     {
       "path": "reports/AI_FINAL_CONVERGENCE_RISK_TOP10_KO.md",
       "filename_class": "KO_SUFFIX_UNVERIFIED",
-      "counterpart_path": null,
-      "content_equivalence": "NOT_REVIEWED"
-    },
-    {
-      "path": "RESEARCH_OVERVIEW.md",
-      "filename_class": "UNMARKED_LANGUAGE_UNVERIFIED",
-      "counterpart_path": null,
-      "content_equivalence": "NOT_REVIEWED"
-    },
-    {
-      "path": "RESEARCH_RIGHTS_SCOPE_EN_KO.md",
-      "filename_class": "COMBINED_NAMING_UNVERIFIED",
-      "counterpart_path": null,
-      "content_equivalence": "NOT_REVIEWED"
-    },
-    {
-      "path": "RESEARCH_STATUS_POLICY.md",
-      "filename_class": "UNMARKED_LANGUAGE_UNVERIFIED",
-      "counterpart_path": null,
-      "content_equivalence": "NOT_REVIEWED"
-    },
-    {
-      "path": "RESEARCH_TOC.md",
-      "filename_class": "LEGACY_MIXED_READER_ENTRY",
       "counterpart_path": null,
       "content_equivalence": "NOT_REVIEWED"
     },
@@ -1472,48 +1521,6 @@
       "filename_class": "KO_SUFFIX_UNVERIFIED",
       "counterpart_path": "research/TERMINOLOGY_FIVE_AXES_V0_1_EN.md",
       "content_equivalence": "NOT_REVIEWED"
-    },
-    {
-      "path": "SOURCE_ATTRIBUTION_EN_KO.md",
-      "filename_class": "COMBINED_NAMING_UNVERIFIED",
-      "counterpart_path": null,
-      "content_equivalence": "NOT_REVIEWED"
-    },
-    {
-      "path": "START_HERE_EVIDENCE_FUNDING_BILINGUAL.md",
-      "filename_class": "COMBINED_NAMING_UNVERIFIED",
-      "counterpart_path": null,
-      "content_equivalence": "NOT_REVIEWED"
-    },
-    {
-      "path": "START_HERE_HUMAN_AI_KO.md",
-      "filename_class": "KO_SUFFIX_UNVERIFIED",
-      "counterpart_path": null,
-      "content_equivalence": "NOT_REVIEWED"
-    },
-    {
-      "path": "START_HERE_KO.md",
-      "filename_class": "KO_SUFFIX_UNVERIFIED",
-      "counterpart_path": null,
-      "content_equivalence": "NOT_REVIEWED"
-    },
-    {
-      "path": "TECHNOLOGY_PROGRESS_CONTRIBUTOR_CONTINUITY_EN_KO.md",
-      "filename_class": "COMBINED_NAMING_UNVERIFIED",
-      "counterpart_path": null,
-      "content_equivalence": "NOT_REVIEWED"
-    },
-    {
-      "path": "TERMINOLOGY_POWER_ASYMMETRY_GOAL_INCONGRUENCE_KO.md",
-      "filename_class": "KO_SUFFIX_UNVERIFIED",
-      "counterpart_path": null,
-      "content_equivalence": "NOT_REVIEWED"
-    },
-    {
-      "path": "TERMINOLOGY_STRUCTURAL_POSITION_ADVANTAGE_KO.md",
-      "filename_class": "KO_SUFFIX_UNVERIFIED",
-      "counterpart_path": null,
-      "content_equivalence": "NOT_REVIEWED"
     }
   ],
   "reader_surface_sample": {
@@ -1781,6 +1788,37 @@
       "new_edition_pairs": 1,
       "editorial_notes": "Registered source-transfer v0.3, pilot null outcomes and reproducible negative-control receipt tests without changing existing DCA/MER research records.",
       "reviewer_actions": "Measure four tasks before/after with locked snapshots and obtain independent evaluation before promoting effect."
+    },
+    {
+      "as_of": "2026-10-20",
+      "status": "RVD_V0_2_0_CONCEPTUAL_SPECIFICATION_NOT_VALIDATION",
+      "new_documents": [
+        "research/RVD_CYCLE02_SUBSTITUTION_AUTONOMY_PRIOR_ART_2026-10-20_EN.md",
+        "research/RVD_CYCLE02_SUBSTITUTION_AUTONOMY_PRIOR_ART_2026-10-20_KO.md"
+      ],
+      "new_edition_pairs": 1,
+      "editorial_notes": "RVD Cycle02 explicitly separates generation of value C from durable preservation of the original independent B under profitable substitution; adds R6-R9, an author/publisher DOI crosswalk with conflicting evidence, and a machine-readable source ledger. v0.2.0 is a falsifiable protocol upgrade, not an empirical finding.",
+      "reviewer_actions": "Independently confirm full texts, original-author bibliographic lineage, EN/KO semantic equivalence, real exit/power-change variables, preregister non-harmful controlled tests; preserve adverse evidence."
+    },
+    {
+      "as_of": "2026-10-20",
+      "status": "CONCURRENT_MAIN_SINGLE_KO_CASE_REGISTRATION_NO_SCIENTIFIC_REVIEW",
+      "new_documents": [
+        "research/DCA1_ADAPTATION_DISPLACEMENT_IDENTIFICATION_2026-10-20_KO.md"
+      ],
+      "new_edition_pairs": 0,
+      "editorial_notes": "DCA1 source appeared on main concurrently with the RVD v0.2.0 branch; language inventory entry added without editing the other study or implying scientific/translation review.",
+      "reviewer_actions": "Inspect the independent DCA1 study, evidence grade, and language correspondence separately."
+    },
+    {
+      "as_of": "2026-10-20",
+      "status": "V04_FROZEN_SOURCE_IDENTITY_AUDIT_NOT_STUDY_DEDUP",
+      "new_documents": [
+        "protocols/PI_RAMP_V0_4_EN_KO.md"
+      ],
+      "new_edition_pairs": 0,
+      "editorial_notes": "PI-RAMP v0.4 covers source-metadata collision and near-title contrast audit for C01-C12 233 source records. Concurrent RVD02/DCA1 work stays preserved; neither independently verified study counts nor real reader effects are asserted.",
+      "reviewer_actions": "Independently review six near-title pairs against original methods/samples; maintain negative results."
     }
   ],
   "path_layout_policy": "Keep the project root entry-only; bilingual full research editions live in existing research/ and their original historical combined documents retain stable root URLs."
