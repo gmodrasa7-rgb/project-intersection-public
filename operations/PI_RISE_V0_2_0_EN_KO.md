@@ -4,8 +4,14 @@
 
 **2026-10-21 · Operational protocol; CANDIDATE until merged · NOT a funding award, certified accounting system, tax opinion, bank reconciliation, or scientific result.**
 
-## 원본 1 — 한국어 운영정본
+## Original 1 — English | Concise operational synopsis (not a certified translation)
+PI-RISE v0.2.0 routes *all* research viability, finance, funding and accounting decisions through one **control plane**, while preserving separate authoritative source ledgers. Private household and personal finance never belong in the public repository. Existing sponsorship has one canonical two-use ledger; institutional grants/contracts have a distinct restricted-funds public summary ledger; their bank receipts and contracts remain private. A public opportunity-status registry links historical proposals and unmerged drafts but neither aggregates pledges into cash nor certifies receipt. Funding proposals, AI credits, contracted funds, unrestricted personal cash and owed/past-contribution claims are distinct classes. Double-charging and double-counting are prohibited.
 
+The new protocol preserves PI-RISE v0.1.0, PI-RISE-BUDGET and PI-RISE-VAC without retroactively changing prior proposals, scientific findings or donor restrictions. Operational success requires actual reconciliations and lower researcher burden, not added documents or synthetic tests. No awarded grant, verified bank deposit, Korean tax treatment, independent research replication, or actual researcher runway is established by this release.
+
+---
+
+## 원본2 — 한국어 | 상세 운영정본 (영문 요약과 의미 동등성 독립검증 전)
 ### 1. 목적과 적용범위
 연구자 생활조건·거절권·연구 연산·독립검증·문헌/실험 정본·자금 확보·실제 입출금을 하나의 **의사결정 체계**로 연결한다. 자금의 *정본 원장*을 하나로 합치거나 역사적 원본을 덮어쓰지 않는다. **PI-RISE는 조정·검증·조회 단일 진입점이고 각 금전 거래에는 출처별 단일 정본**이 있다.
 
@@ -53,8 +59,3 @@
 - 기계검사의 범위: 필수필드·중복 ID·단계 모순·금액 자료형·정본 참조/중복 영수증 참조. **은행/수여/개인정보 진위 인증 아님.**
 - 7일 단위 또는 자금·계약 상태 변동 즉시, 사용자 승인·권한이 있을 때 정본과 동기화. 실제 자동 예약 실행을 이 문서가 생성하지 않음.
 - **v0.2 운영 성공:** 실제 출처별 공개/비공개 대사와 계정 간 이중계상 방지, 자금확보 판단의 오류 감소, 연구자 시간 절감이 측정되어야 함. 미관측이면 실효성 미검증. 승인·후원자 확정·계약·수입은 아직 이 문서로 입증되지 않음.
-
-## Original 2 — English | Summary of the operating boundary
-PI-RISE v0.2.0 routes *all* research viability, finance, funding and accounting decisions through one **control plane**, while preserving separate authoritative source ledgers. Private household and personal finance never belong in the public repository. Existing sponsorship has one canonical two-use ledger; institutional grants/contracts have a distinct restricted-funds public summary ledger; their bank receipts and contracts remain private. A public opportunity-status registry links historical proposals and unmerged drafts but neither aggregates pledges into cash nor certifies receipt. Funding proposals, AI credits, contracted funds, unrestricted personal cash and owed/past-contribution claims are distinct classes. Double-charging and double-counting are prohibited.
-
-The new protocol preserves PI-RISE v0.1.0, PI-RISE-BUDGET and PI-RISE-VAC without retroactively changing prior proposals, scientific findings or donor restrictions. Operational success requires actual reconciliations and lower researcher burden, not added documents or synthetic tests. No awarded grant, verified bank deposit, Korean tax treatment, independent research replication, or actual researcher runway is established by this release.
