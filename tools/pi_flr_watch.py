@@ -217,6 +217,10 @@ def validate_workflow_contract(text):
              and re.search(r"(?m)^    - cron: ['\"]17 \* \* \* \*['\"]", text) is not None,
              "WATCH_SCHEDULE_NOT_DECLARED")
     _require("workflow_dispatch:" in text, "WATCH_MANUAL_TRIGGER_MISSING")
+    _require("  push:\n    branches: [main]" in text and
+             "'tools/pi_flr_watch.py'" in text and
+             "'tests/test_pi_flr_watch.py'" in text,
+             "WATCH_MAIN_SMOKE_TRIGGER_MISSING")
     # Parse the actual top-level permissions block, not unrelated strings
     # or comments elsewhere. Every unrecognized or write-scoped key fails closed.
     _require(text.count("permissions:") == 1 and
