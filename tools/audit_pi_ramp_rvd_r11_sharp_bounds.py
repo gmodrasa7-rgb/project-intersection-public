@@ -73,7 +73,7 @@ def infer(case: dict) -> dict:
     return dict(state=state,lower=render(lo),upper=render(hi),
                 lower_closed=True if lo is not None else None,
                 upper_closed=False if hi is not None else None,
-                strict_positive=(lo>0) if lo is not None else None)
+                strict_positive=(lo>0) if lo is not None else (False if state == "ONE_SIDED_CONDITIONAL_IDENTIFIED_SET" else None))
 
 
 def possible(case: dict, w: Fraction) -> bool:
