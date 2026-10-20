@@ -18,6 +18,8 @@ jobs:
           fetch-depth: 0
       - name: Execute original failure replays and registry mutation tests
         run: python3 -m unittest discover -s tests -p 'test_pi_flr_audit.py' -v
+      - name: Correlate provider CI alerts without status-laundering (synthetic inputs)
+        run: python3 -m unittest discover -s tests -p 'test_pi_signal_reconcile.py' -v
       - name: Guard distinct E010 historical experiment identities and evidence status
         run: python3 tools/pi_flr_experiment_identity.py
       - name: Validate repository-wide local links on every PR and main push
