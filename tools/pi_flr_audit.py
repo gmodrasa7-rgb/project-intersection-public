@@ -194,7 +194,9 @@ def compare_history(now, old):
     require(set(prior_controls) <= set(next_controls), "HISTORICAL_CONTROL_REMOVED")
     for key, old_ctrl in prior_controls.items():
         require(old_ctrl == next_controls[key], "HISTORICAL_CONTROL_REWRITTEN:"+key)
-    if now != old:
+    changed_payload = {k:v for k,v in now.items() if k != "release_version"} != (
+        {k:v for k,v in old.items() if k != "release_version"})
+    if changed_payload:
         require(after_version > before_version, "VERSION_BUMP_REQUIRED_FOR_REGISTRY_CHANGE")
     else:
         require(after_version == before_version, "EMPTY_VERSION_BUMP")
