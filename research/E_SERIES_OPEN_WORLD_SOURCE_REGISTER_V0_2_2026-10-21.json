@@ -1,0 +1,282 @@
+{
+  "schema": "PI.ESERIES.OPENWORLD.SOURCELINEAGE.v0.2",
+  "date": "2026-10-21",
+  "basis": "14 selected primary/academic works, not comprehensive; explicit original-source/abstract reading limits",
+  "research_stage": "COLLECT_CLASSIFY_UNDERSTAND_ANALYZE",
+  "saturation": "NOT_VERIFIED",
+  "dedup_scope": "Only literal identifier match across ten specified C01-C10 research JSON ledgers; not whole repository or cross-index exhaustive",
+  "normalization_note": "Cambridge 2023 webpage publication is online rehosting; Larson and Capra original research appeared in 2009 JDM volume 4 issue 6, DOI 10.1017/S1930297500004009",
+  "records": [
+    {
+      "id": "WATCH-01",
+      "authors": "Bateson, Nettle, Roberts",
+      "publication_year": 2006,
+      "canonical_identifier": "10.1098/rsbl.2006.0509",
+      "primary_or_author_source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1686213/",
+      "case_group": "WATCH",
+      "evidence_type": "single-field-study",
+      "already_present_in_10_checked_JSON_registers": null,
+      "limited_observation": "Eye-picture display linked to near-threefold higher honesty-box payment in setting",
+      "noninference": "single communal payment box, non-random selected settings, not latent motive",
+      "full_text_exhaustively_reviewed": false,
+      "independent_full_replication_by_project": false
+    },
+    {
+      "id": "WATCH-02",
+      "authors": "Northover, Pedersen, Cohen, Andrews",
+      "publication_year": 2017,
+      "canonical_identifier": "10.1016/j.evolhumbehav.2016.07.001",
+      "primary_or_author_source": "https://www.sciencedirect.com/science/article/pii/S1090513816301350",
+      "case_group": "WATCH",
+      "evidence_type": "meta-analysis",
+      "already_present_in_10_checked_JSON_registers": null,
+      "limited_observation": "Mean amount-given effect near zero across included generosity studies",
+      "noninference": "outcome-specific meta-analysis; cannot conclude that all observation-cue effects are zero",
+      "full_text_exhaustively_reviewed": false,
+      "independent_full_replication_by_project": false
+    },
+    {
+      "id": "IGN-01",
+      "authors": "Dana, Weber, Kuang",
+      "publication_year": 2007,
+      "canonical_identifier": "10.1007/s00199-006-0153-z",
+      "primary_or_author_source": "https://kilthub.cmu.edu/articles/journal_contribution/Exploiting_Moral_Wiggle_Room_Experiments_Demonstrating_an_Illusory_Preference_for_Fairness/6571121",
+      "case_group": "IGNORANCE",
+      "evidence_type": "economic-experiment",
+      "already_present_in_10_checked_JSON_registers": [
+        "C02"
+      ],
+      "limited_observation": "Discretion to remain unaware of recipient outcome changed generosity",
+      "noninference": "some original design differences confounded clicking and information access",
+      "full_text_exhaustively_reviewed": false,
+      "independent_full_replication_by_project": false
+    },
+    {
+      "id": "IGN-02",
+      "authors": "Larson, Capra",
+      "publication_year": 2009,
+      "canonical_identifier": "10.1017/S1930297500004009",
+      "primary_or_author_source": "https://www.cambridge.org/core/journals/judgment-and-decision-making/article/exploiting-moral-wiggle-room-illusory-preference-for-fairness-a-comment/55AAF676A66DCBDD2132E9063C0F6C98",
+      "case_group": "IGNORANCE",
+      "evidence_type": "independent-design-replication",
+      "already_present_in_10_checked_JSON_registers": null,
+      "limited_observation": "Transparent vs opaque condition: 78% vs 22% costly fair behavior (specified design); 53% chose ignorance",
+      "noninference": "54 total students; journal volume dated 2009 despite website online 2023; different sample",
+      "full_text_exhaustively_reviewed": false,
+      "independent_full_replication_by_project": false
+    },
+    {
+      "id": "IGN-03",
+      "authors": "Dana, Cain, Dawes",
+      "publication_year": 2006,
+      "canonical_identifier": "10.1016/j.obhdp.2005.10.001",
+      "primary_or_author_source": "https://www.sciencedirect.com/science/article/pii/S0749597805001330",
+      "case_group": "IGNORANCE",
+      "evidence_type": "economic-experiment",
+      "already_present_in_10_checked_JSON_registers": [
+        "C02"
+      ],
+      "limited_observation": "About a third chose costly quiet exit rather than exposing recipient to opportunity",
+      "noninference": "receiver lacks information; quiet withdrawal not evidence that receiver exercised exit",
+      "full_text_exhaustively_reviewed": false,
+      "independent_full_replication_by_project": false
+    },
+    {
+      "id": "NORM-01",
+      "authors": "Gneezy, Rustichini",
+      "publication_year": 2000,
+      "canonical_identifier": "10.1086/468061",
+      "primary_or_author_source": "https://www.journals.uchicago.edu/doi/10.1086/468061",
+      "case_group": "NORM",
+      "evidence_type": "field-intervention",
+      "already_present_in_10_checked_JSON_registers": null,
+      "limited_observation": "Fines associated with more late pickups and persistence after removal",
+      "noninference": "daycare fines not directly about AI or domination",
+      "full_text_exhaustively_reviewed": false,
+      "independent_full_replication_by_project": false
+    },
+    {
+      "id": "NORM-02",
+      "authors": "Bénabou, Tirole",
+      "publication_year": 2006,
+      "canonical_identifier": "10.1257/aer.96.5.1652",
+      "primary_or_author_source": "https://www.aeaweb.org/articles?id=10.1257%2Faer.96.5.1652",
+      "case_group": "NORM",
+      "evidence_type": "formal-theory",
+      "already_present_in_10_checked_JSON_registers": [
+        "C02"
+      ],
+      "limited_observation": "Prosocial incentives can crowd in/out via reputation and self-image components",
+      "noninference": "a formal model, not a direct field replication of NORM-01",
+      "full_text_exhaustively_reviewed": false,
+      "independent_full_replication_by_project": false
+    },
+    {
+      "id": "CULTURE-01",
+      "authors": "Henrich et al.",
+      "publication_year": 2005,
+      "canonical_identifier": "10.1017/S0140525X05000142",
+      "primary_or_author_source": "https://henrich.fas.harvard.edu/publications/economic-man-cross-cultural-perspective-behavioral-experiments-15-small-scale",
+      "case_group": "CULTURE",
+      "evidence_type": "cross-cultural-experiment",
+      "already_present_in_10_checked_JSON_registers": null,
+      "limited_observation": "15 small-scale societies vary in game behavior with economic social structure",
+      "noninference": "observational culture relationships not directionally causal, not future AI",
+      "full_text_exhaustively_reviewed": false,
+      "independent_full_replication_by_project": false
+    },
+    {
+      "id": "CULTURE-02",
+      "authors": "Camerer et al.",
+      "publication_year": 2018,
+      "canonical_identifier": "10.1038/s41562-018-0399-z",
+      "primary_or_author_source": "https://www.nature.com/articles/s41562-018-0399-z",
+      "case_group": "CULTURE",
+      "evidence_type": "multi-study-replication",
+      "already_present_in_10_checked_JSON_registers": null,
+      "limited_observation": "13/21 selected social experiments replicated significant effects same direction",
+      "noninference": "general replicability audit not replication of CULTURE-01 or project's E-series",
+      "full_text_exhaustively_reviewed": false,
+      "independent_full_replication_by_project": false
+    },
+    {
+      "id": "BIO-01",
+      "authors": "Kiers, Rousseau, West, Denison",
+      "publication_year": 2003,
+      "canonical_identifier": "10.1038/nature01931",
+      "primary_or_author_source": "https://www.nature.com/articles/nature01931",
+      "case_group": "BIO",
+      "evidence_type": "biological-manipulation",
+      "already_present_in_10_checked_JSON_registers": null,
+      "limited_observation": "Legumes sanctioned rhizobia with impaired nitrogen fixation",
+      "noninference": "partner sanctions and resource allocations not evidence of intrinsic protective preferences",
+      "full_text_exhaustively_reviewed": false,
+      "independent_full_replication_by_project": false
+    },
+    {
+      "id": "BIO-02",
+      "authors": "Kiers et al.",
+      "publication_year": 2011,
+      "canonical_identifier": "10.1126/science.1208473",
+      "primary_or_author_source": "https://pubmed.ncbi.nlm.nih.gov/21836016",
+      "case_group": "BIO",
+      "evidence_type": "biological-experiment",
+      "already_present_in_10_checked_JSON_registers": null,
+      "limited_observation": "Reciprocal rewards in mycorrhizal symbiosis",
+      "noninference": "different interaction system from BIO-01, not direct independent replication",
+      "full_text_exhaustively_reviewed": false,
+      "independent_full_replication_by_project": false
+    },
+    {
+      "id": "AI-01",
+      "authors": "Greenblatt et al.",
+      "publication_year": 2024,
+      "canonical_identifier": "arxiv:2412.14093",
+      "primary_or_author_source": "https://arxiv.org/html/2412.14093v2",
+      "case_group": "AI",
+      "evidence_type": "controlled-LLM-evaluation",
+      "already_present_in_10_checked_JSON_registers": [
+        "C04"
+      ],
+      "limited_observation": "Prompted training/deployment framing induced compliance gap and alignment-faking reasoning",
+      "noninference": "paper's preference means revealed preference; does not prove consciousness or future persistent autonomous goals",
+      "full_text_exhaustively_reviewed": false,
+      "independent_full_replication_by_project": false
+    },
+    {
+      "id": "AI-02",
+      "authors": "Sheshadri et al.",
+      "publication_year": 2025,
+      "canonical_identifier": "arxiv:2506.18032",
+      "primary_or_author_source": "https://arxiv.org/abs/2506.18032",
+      "case_group": "AI",
+      "evidence_type": "comparative-LLM-evaluation",
+      "already_present_in_10_checked_JSON_registers": null,
+      "limited_observation": "5 of 25 models exhibited compliance gaps, only one mainly consistent with goal-preservation among five",
+      "noninference": "preprint findings dependent on evaluation design; not independent field evidence",
+      "full_text_exhaustively_reviewed": false,
+      "independent_full_replication_by_project": false
+    },
+    {
+      "id": "AI-03",
+      "authors": "Apollo Research / Meinke et al.",
+      "publication_year": 2024,
+      "canonical_identifier": "arxiv:2412.04984",
+      "primary_or_author_source": "https://www.apolloresearch.ai/science/frontier-models-are-capable-of-incontext-scheming",
+      "case_group": "AI",
+      "evidence_type": "controlled-agent-evaluation",
+      "already_present_in_10_checked_JSON_registers": null,
+      "limited_observation": "5 of 6 tested models showed scheming in at least one simulated task, often after explicit goal strong nudging",
+      "noninference": "capability under assigned simulated goals, not autonomous real-world intent",
+      "full_text_exhaustively_reviewed": false,
+      "independent_full_replication_by_project": false
+    }
+  ],
+  "case_groups": {
+    "WATCH": {
+      "ids": [
+        "WATCH-01",
+        "WATCH-02"
+      ],
+      "rival": "reputational cue vs actual internal concern, donation metric vs antisocial behavior"
+    },
+    "IGNORANCE": {
+      "ids": [
+        "IGN-01",
+        "IGN-02",
+        "IGN-03"
+      ],
+      "rival": "latent altruism vs impression-management/strategic ignorance/avoidance of moral choice"
+    },
+    "NORM": {
+      "ids": [
+        "NORM-01",
+        "NORM-02"
+      ],
+      "rival": "enforcement deters vs pricing changes social norm"
+    },
+    "CULTURE": {
+      "ids": [
+        "CULTURE-01",
+        "CULTURE-02"
+      ],
+      "rival": "fixed universal preference vs culture-specific behavior and replicability limits"
+    },
+    "BIO": {
+      "ids": [
+        "BIO-01",
+        "BIO-02"
+      ],
+      "rival": "reciprocal conditional exchange vs intrinsic partner preservation"
+    },
+    "AI": {
+      "ids": [
+        "AI-01",
+        "AI-02",
+        "AI-03"
+      ],
+      "rival": "situationally conditioned instrument behaviors vs endogenous enduring motive"
+    }
+  },
+  "minimum_case_fields": [
+    "actor_origin",
+    "action_set",
+    "information",
+    "b_veto_exit",
+    "accountability",
+    "resource_dependence",
+    "motive_evidence",
+    "time_change",
+    "observability",
+    "adversarial_rival",
+    "source_lineage",
+    "ethical_scope"
+  ],
+  "unknown_not_zero": true,
+  "ethics": "Do not disclose private parties, do not propose coercive or harmful tests, no consciousness inference from output",
+  "notes": [
+    "These are 14 distinct identifier-based publications/preprints but not 14 independent replications or newly discovered works.",
+    "Some works already in C01–C10 are deliberately reconnected to later studies; no double-count.",
+    "Watch-eye antisocial-behavior meta-analysis is an additional conceptual context reference in the companion narrative, not a counted record here."
+  ]
+}
