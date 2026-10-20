@@ -3,7 +3,7 @@
   "version": "0.2.0",
   "as_of": "2026-10-21",
   "artifact_kind": "OPERATIONAL_CONTROL_AND_FINANCE_INTEGRATION_NOT_SCIENCE",
-  "release_state": "BRANCH_CANDIDATE_UNTIL_PR_MERGED",
+  "release_state": "MAIN_OPERATIONAL_PROTOCOL_NOT_FIELD_VALIDATED",
   "predecessor": "operations/PI_RISE_V0_1_0_EN_KO.md",
   "preserved_submodules": [
     "operations/PI_RISE_BUDGET_V0_1_0_EN_KO.md",
@@ -24,7 +24,7 @@
   "artifacts": [
     {
       "path": "operations/PI_RISE_V0_2_0_EN_KO.md",
-      "git_blob_sha": "00aecccebb2461948111777686b0c629e9fa5e66"
+      "git_blob_sha": "1c9cb8ee879c93446f7d2688956488c9957231f4"
     },
     {
       "path": "operations/PI_RISE_FINANCE_PIPELINE_V0_1_0.json",
@@ -61,6 +61,10 @@
     {
       "path": "knowledge/language-edition-register.json",
       "git_blob_sha": "ceae6777fd83935bc887edfb6b00065c78b8c371"
+    },
+    {
+      "path": "navigation/RESEARCH_VERSIONS_EN_KO.md",
+      "git_blob_sha": "59333888d547393c6532822082cc7e679246978d"
     }
   ],
   "provenance": [
@@ -70,8 +74,16 @@
     "no double-counting of parallel proposals"
   ],
   "next_gate": [
-    "PR continuous integration",
-    "post-merge readback",
-    "independent real receipts reconciliation under lawful permission"
-  ]
+    "PRIVATE_AUTHORIZED_RECEIPT_RECONCILIATION_BEFORE_FINANCIAL_CLAIMS",
+    "ACTUAL_INDEPENDENT_ACCOUNTING_AND_OPERATIONAL_REVIEW_IF_REQUESTED",
+    "PRESERVE_NEGATIVE_SCIENTIFIC_EVIDENCE_AND_INDEPENDENT_EXIT"
+  ],
+  "main_pr": 272,
+  "main_merge_commit": "cd64f394710d20606b94eb986e440b0a2d897027",
+  "test_receipt": {
+    "scope": "PUBLIC_METADATA_AND_SYNTHETIC_ONLY",
+    "pr_head_sha": "2b9634427665cfa80fb45695e4533639d76ee198",
+    "nine_relevant_pr_workflows_passed": true,
+    "real_bank_or_legal_verification": false
+  }
 }

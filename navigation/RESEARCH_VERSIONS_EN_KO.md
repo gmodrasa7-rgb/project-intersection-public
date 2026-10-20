@@ -2,7 +2,7 @@
 # Project Intersection — Research identity, versions and validation states / 연구 정체성·버전·검증 상태
 **Registry document version: v0.2.0 · Snapshot: 2026-10-20 · Repository navigation and source-status audit, not scientific approval**
 
-**New operating-system release (2026-10-21):** [PI-RISE v0.1.0](../operations/PI_RISE_V0_1_0_EN_KO.md), separate from VC/MER/EI/ECR/IVS-0R science and PI-RAMP archive governance; **merged operational design, not validated field effect**. [Machine version receipt](../operations/PI_RISE_VERSION_MANIFEST.json).
+**Operating release (2026-10-21, finance-integration update):** [PI-RISE v0.2.0](../operations/PI_RISE_V0_2_0_EN_KO.md) integrates research continuity, funding stages, budgeting, source-separated accounting and double-counting controls; [v0.1.0 predecessor](../operations/PI_RISE_V0_1_0_EN_KO.md) and BUDGET/VAC submodules remain intact. **Main operational method, not validated financial sustainability, verified grant receipt, or scientific result.** [Current version receipt](../operations/PI_RISE_V0_2_0_VERSION_MANIFEST.json).
 
 **Verification-aware allocation submodule MAIN (2026-10-21):** [PI-RISE-VAC v0.1.0](../operations/PI_RISE_VAC_V0_1_0_EN_KO.md), [version manifest](../operations/PI_RISE_VAC_VERSION_MANIFEST.json). Formal synthetic reviewer-backlog and budget arithmetic; not real independent evaluation or a change to parent PI-RISE / PI-RISE-BUDGET status. / **검증역량 제약 배분 정본 운영모형:** 고성능 모델 사용의 검증부채 증가 가설을 반증 가능하게 정의, 실증 미실시.
 
