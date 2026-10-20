@@ -27,10 +27,11 @@ A **program**, a **research component**, a **method document**, an **experiment*
 | IVS-0R | Counterexample, independent-reproduction and correction audit | Unassigned | — | Method, not certification of the theories |
 | ICM / RGBM | Candidate interest intersections / long-horizon shared growth | Unassigned | — | Neither model guaranteed; ICM may be empty |
 | CCPH | Events, sources, contributions, impacts and provenance | Unassigned | — | Data lineage, not a social law |
-| RVD | Test changes in relational value and motive formation | **v0.1.0** [main](../research/RVD_VERSION_MANIFEST.json) | — | Named conceptual baseline merged; empirical validation absent |
+| RVD | Test changes in relational value and motive formation | **v0.2.0** [main](../research/RVD_VERSION_MANIFEST.json) | — | Adds R6–R9 counterexample/specification; empirical validation absent |
 | PI-RAMP | Test whether each archive upgrade improves reader accuracy and evidence access | **v0.3.0** [main](../protocols/PI_RAMP_V0_3_EN.md) | — | Method pilot merged; real reader-effect unmeasured |
 | Roadmap | Six fixed research stages and gates | **v0.2.3** [main](../research/PI_ROADMAP_OPERATIONAL_GATES_V0_2_3_EN_KO.md) | — | Operational design, not scientific effect |
 | DCA-0 | Compare defensive acceleration with AI misuse and externalities | Unassigned | — | Defensive causal impact unverified |
+| DCA-1 | Test whether adaptive defense displaces harm or merely blocks action | **v0.2.0** [main](../research/DCA1_ADAPTATION_DISPLACEMENT_IDENTIFICATION_2026-10-20_KO.md) | — | Original-source review and synthetic counterexamples; no field validation |
 
 ### Experiments are IDs, not semantic versions
 [E007](../experiments/e007/README_EN.md): 17 of 72 selected synthetic classification conditions changed; no field inference. [E008](../experiments/e008/README_EN.md): no completed main-policy comparison. [E009](../experiments/e009/RESULT_EN.md): preregistered synthetic project candidate underperformed the best simple baseline by 42.35% mean regret, failing 3 of 4 criteria. [E010](../experiments/e010/README_EN.md): post-hoc exploratory, not confirmatory. Source-first C13 is an [unmerged open PR #248](https://github.com/gmodrasa7-rgb/project-intersection-public/pull/248), not a completed PI experiment or merged corpus update.
@@ -71,10 +72,11 @@ Snapshot derived from selected public main files and visible PR metadata, not an
 | IVS-0R | 반례·역할반전·독립검증·오류복구 감사 | 미지정 | — | 검증 절차이지 성립 증명 아님 |
 | ICM / RGBM | 최소 자기이익 교집합 / 장기 공동발전 가능성 | 미지정 | — | 두 후보 모두 미입증; 공집합 가능 |
 | CCPH | 사건·출처·기여·피해·영향 계보 관리 | 미지정 | — | 계보 DB이지 검증된 사회법칙 아님 |
-| RVD | 관계적 공명에서 가치·동기가 생기거나 변하는 기제 | **v0.1.0** [정본](../research/RVD_VERSION_MANIFEST.json) | — | 명칭·가설 기준선 병합, 경험적 검증 없음 |
+| RVD | 관계적 공명에서 가치·동기가 생기거나 변하는 기제 | **v0.2.0** [정본](../research/RVD_VERSION_MANIFEST.json) | — | R6–R9 반례·측정명세 추가, 경험적 검증 없음 |
 | PI-RAMP | 자료실 개편이 독자의 근거 발견·판단을 개선했는지 측정 | **v0.3.0** [정본](../protocols/PI_RAMP_V0_3_KO.md) | — | 방법론 병합, 이용자 효과 아직 미측정 |
 | 로드맵 | 기존 6단계·버전·승격과 보류 기준 | **v0.2.3** [정본](../research/PI_ROADMAP_OPERATIONAL_GATES_V0_2_3_EN_KO.md) | — | 운영 설계 |
 | DCA-0 | 악용 가속보다 방어·검증 효과를 높일 조건 측정 | 미지정 | — | 실제 피해감소 인과효과 미확인 |
+| DCA-1 | 적응형 공격·피해 전가·동기 미식별 반례 검사 | **v0.2.0** [정본](../research/DCA1_ADAPTATION_DISPLACEMENT_IDENTIFICATION_2026-10-20_KO.md) | — | 선행문헌·합성 반례, 현실 인과검증 없음 |
 
 ### 실험번호는 연구 버전이 아님
 [E007](../experiments/e007/README_KO.md): 선정된 72개 합성 조건 중 17개 분류 변경. [E008](../experiments/e008/README_KO.md): 정책 본비교 실험 결과 없음. [E009](../experiments/e009/RESULT_KO.md): 합성 기준선 대비 평균 후회값 42.35% 악화·4개 기준 중 3개 실패. [E010](../experiments/e010/README_KO.md): 사후 탐색. C13 선행문헌 추가는 [열린 PR #248](https://github.com/gmodrasa7-rgb/project-intersection-public/pull/248)이며 main 반영이나 신규 PI 실증으로 간주 금지.
@@ -86,4 +88,4 @@ Snapshot derived from selected public main files and visible PR metadata, not an
 원저자·정본 확인 → 변경된 가설/측정/방법과 실제 새 예측 기록 → 경쟁 이론·반례 → 불리한 결과·미식별 보존 → 제한된 회귀검사 → 영·한 의미 확인 → GitHub 읽기검증 → 외부 인과·효과 주장은 독립재현 확인. **PR 병합이나 CI 성공은 독립 과학검증 아님.** 상태명은 기존 [연구 상태정책](../RESEARCH_STATUS_POLICY.md)을 따른다.
 
 ### 감사 범위·충돌
-2026-10-20 공개 기본분기 일부 정본·현재 열린 PR 메타데이터 대조. 전체 과거 대화의 완전한 원본, 모든 비공개 저장소, 과거 모든 버전의 전수감사가 아님. 기계 판독 원장 v0.2에는 원전 파일 SHA·미병합 후보 PR 식별자를 기록. **2026-10-20 정정:** RVD v0.1.0(#245), PI-RAMP v0.3.0(#246)은 이미 main에 병합. 세부 항목은 [기계 판독 원장](../research/RESEARCH_VERSION_REGISTRY.json). ICM의 과거 다른 뜻 Independent Continuance Margin은 같은 개념으로 자동 합병 금지. CMR은 정본 풀네임 검증 전까지 확정 정의·번호 부여 보류.
+2026-10-20 공개 기본분기 일부 정본·현재 열린 PR 메타데이터 대조. 전체 과거 대화의 완전한 원본, 모든 비공개 저장소, 과거 모든 버전의 전수감사가 아님. 기계 판독 원장 v0.2에는 원전 파일 SHA·미병합 후보 PR 식별자를 기록. **2026-10-20 정정 이력:** RVD v0.1.0(#245)·PI-RAMP v0.3.0(#246) 병합 사실을 반영했고, 이후 RVD가 v0.2.0으로 변경되고 DCA-1 v0.2.0이 정본에 추가된 사실도 반영. 세부 항목은 [기계 판독 원장](../research/RESEARCH_VERSION_REGISTRY.json). ICM의 과거 다른 뜻 Independent Continuance Margin은 같은 개념으로 자동 합병 금지. CMR은 정본 풀네임 검증 전까지 확정 정의·번호 부여 보류.
