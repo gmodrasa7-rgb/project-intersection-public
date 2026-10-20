@@ -457,6 +457,21 @@
         "Independent EN/KO semantic parity remains unverified.",
         "Rights of a simulated principal B are not actual external rights, and enforced denial is not endogenous A motive."
       ]
+    },
+    {
+      "id": "PI-MER-CIR-20261021",
+      "original_1_english": "research/MER_CIR_CONTEXT_IMITATION_RECOMBINATION_2026-10-21_EN.md",
+      "original_2_korean": "research/MER_CIR_CONTEXT_IMITATION_RECOMBINATION_2026-10-21_KO.md",
+      "kind": "contextual_imitation_recombination_hypotheses_and_protocol_untested",
+      "structural_pair_present": true,
+      "meaning_review_status": "NOT_INDEPENDENTLY_VERIFIED",
+      "original_conception_language": "KO_HUMAN_ORIGINATOR_AI_ASSISTED_STRUCTURING",
+      "independent_review_receipt": null,
+      "one_sided_edit_exception": null,
+      "known_divergences": [
+        "Independent bilingual semantic parity is not established.",
+        "No field experiment, AI phenomenal experience measurement or historical child deprivation test was performed."
+      ]
     }
   ],
   "legacy_priority_unresolved": [
@@ -498,14 +513,14 @@
     }
   ],
   "metrics": {
-    "markdown_total": 204,
+    "markdown_total": 208,
     "filename_classes": {
       "UNMARKED_LANGUAGE_UNVERIFIED": 42,
       "LEGACY_MIXED_READER_ENTRY": 2,
-      "KO_SUFFIX_UNVERIFIED": 91,
+      "KO_SUFFIX_UNVERIFIED": 93,
       "ORDERED_BILINGUAL_FOUNDER_OR_GOVERNANCE": 2,
-      "EN_SUFFIX_UNVERIFIED": 31,
-      "COMBINED_NAMING_UNVERIFIED": 36
+      "EN_SUFFIX_UNVERIFIED": 32,
+      "COMBINED_NAMING_UNVERIFIED": 37
     },
     "meaning_verified_pairs": 0,
     "meaning_verified_pairs_is_a_status_count_not_a_claim_that_no_reviews_ever_occurred": true
@@ -1472,6 +1487,18 @@
       "content_equivalence": "NOT_REVIEWED"
     },
     {
+      "path": "research/MER_CIR_CONTEXT_IMITATION_RECOMBINATION_2026-10-21_EN.md",
+      "filename_class": "EN_SUFFIX_UNVERIFIED",
+      "counterpart_path": "research/MER_CIR_CONTEXT_IMITATION_RECOMBINATION_2026-10-21_KO.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "research/MER_CIR_CONTEXT_IMITATION_RECOMBINATION_2026-10-21_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": "research/MER_CIR_CONTEXT_IMITATION_RECOMBINATION_2026-10-21_EN.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
       "path": "research/MER_RESONANCE_VALUE_FORMATION_2026-10-20_EN.md",
       "filename_class": "EN_SUFFIX_UNVERIFIED",
       "counterpart_path": "research/MER_RESONANCE_VALUE_FORMATION_2026-10-20_KO.md",
@@ -1490,6 +1517,12 @@
       "content_equivalence": "NOT_REVIEWED"
     },
     {
+      "path": "research/PI_20H_SYNTHESIS_2026-10-21_EN_KO.md",
+      "filename_class": "COMBINED_NAMING_UNVERIFIED",
+      "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
       "path": "research/PI_ROADMAP_CHANGE_TRAP_V0_2_1_EN_KO.md",
       "filename_class": "COMBINED_NAMING_UNVERIFIED",
       "counterpart_path": null,
@@ -1504,6 +1537,12 @@
     {
       "path": "research/PI_ROADMAP_OPERATIONAL_GATES_V0_2_3_EN_KO.md",
       "filename_class": "COMBINED_NAMING_UNVERIFIED",
+      "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "research/PRIOR_ART_C14_MOTIVES_VETO_REPLICATION_2026-10-21_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
       "counterpart_path": null,
       "content_equivalence": "NOT_REVIEWED"
     },
@@ -2151,6 +2190,17 @@
       "new_edition_pairs": 0,
       "editorial_notes": "Time-to-usable-cash condition and funder-ready evidence packet, both bilingual-named, semantically unverified. No submissions or bank statements.",
       "reviewer_actions": "Check original sources, consent, fiscal conditions and bilingual meaning before release promotion."
+    },
+    {
+      "as_of": "2026-10-21",
+      "status": "MER_CIR_V0_1_0_PROPOSED_UNTESTED",
+      "new_documents": [
+        "research/MER_CIR_CONTEXT_IMITATION_RECOMBINATION_2026-10-21_EN.md",
+        "research/MER_CIR_CONTEXT_IMITATION_RECOMBINATION_2026-10-21_KO.md"
+      ],
+      "new_edition_pairs": 1,
+      "editorial_notes": "Contextual adaptation and imitation may be components of intelligence, without proving subjective experience, autonomous motive or extra resonance. Structural EN/KO pair only; existing MER and RVD statuses preserved.",
+      "reviewer_actions": "Preregister matched controls; independent bilingual comparison and primary-literature saturation remain outstanding."
     }
   ],
   "path_layout_policy": "Keep the project root entry-only; bilingual full research editions live in existing research/ and their original historical combined documents retain stable root URLs."

@@ -60,11 +60,11 @@
     },
     {
       "path": "knowledge/language-edition-register.json",
-      "git_blob_sha": "1d3f13d23a821f61df6e9162505a36f61c7231b6"
+      "git_blob_sha": "513be83d92a7a6bb85a430a1475a5511546e5ab9"
     },
     {
       "path": "navigation/RESEARCH_VERSIONS_EN_KO.md",
-      "git_blob_sha": "e640b05c5d196a5d7ee035b7f8d7a300e10069f5"
+      "git_blob_sha": "cba9754655486b35b38575cba1b447ca92d57e1a"
     },
     {
       "path": "tools/pi_rise_manifest_guard.py",
@@ -80,7 +80,9 @@
     "no private cash figures introduced",
     "no merged PR draft considered funded",
     "no double-counting of parallel proposals",
-    "2026-10-21 RVD v0.7.0 concurrent navigation and bilingual-index update: only two publication artifact SHA references synchronized, no change in funded receipts, budget validity, status or ownership."
+    "2026-10-21 RVD v0.7.0 concurrent navigation and bilingual-index update: only two publication artifact SHA references synchronized, no change in funded receipts, budget validity, status or ownership.",
+    "2026-10-21 PI-20H C14 language-inventory correction: synchronized only the current registered-inventory SHA; financial authority, cash-receipt and release-status claims unchanged.",
+    "2026-10-21 MER-CIR context/learning research addition: synchronized two linked public publication blob hashes only; cash, grants, budgets and evidence status unchanged."
   ],
   "next_gate": [
     "PRIVATE_AUTHORIZED_RECEIPT_RECONCILIATION_BEFORE_FINANCIAL_CLAIMS",
