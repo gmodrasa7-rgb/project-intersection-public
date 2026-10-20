@@ -1,0 +1,33 @@
+name: PI-RAMP v0.3 receipt consistency and negative controls
+
+on:
+  pull_request:
+    paths:
+      - "protocols/PI_RAMP_V0_3_*.md"
+      - "evaluation/pi_ramp/**"
+      - "tools/check_pi_ramp_receipts.py"
+      - ".github/workflows/pi-ramp-receipt.yml"
+  push:
+    branches: [main]
+    paths:
+      - "protocols/PI_RAMP_V0_3_*.md"
+      - "evaluation/pi_ramp/**"
+      - "tools/check_pi_ramp_receipts.py"
+      - ".github/workflows/pi-ramp-receipt.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  evidence-receipt-guard:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate pilot receipt against actual repository paths
+        run: python tools/check_pi_ramp_receipts.py
+      - name: Challenge nine invalid receipts
+        run: python tools/check_pi_ramp_receipts.py --self-test

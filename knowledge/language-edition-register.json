@@ -352,6 +352,21 @@
       "original_conception_language": "NOT_VERIFIED",
       "independent_review_receipt": null,
       "one_sided_edit_exception": null
+    },
+    {
+      "id": "PI-PROTOCOL-RAMP-V03",
+      "original_1_english": "protocols/PI_RAMP_V0_3_EN.md",
+      "original_2_korean": "protocols/PI_RAMP_V0_3_KO.md",
+      "kind": "evidence_transfer_task_based_pilot_not_validated",
+      "structural_pair_present": true,
+      "meaning_review_status": "NOT_INDEPENDENTLY_VERIFIED",
+      "original_conception_language": "NOT_INDEPENDENTLY_ADJUDICATED",
+      "independent_review_receipt": null,
+      "one_sided_edit_exception": null,
+      "known_divergences": [
+        "Scientific EN/KO claim equivalence has not been independently audited.",
+        "Real before/after reader-task outcomes remain null; no improvement is certified."
+      ]
     }
   ],
   "legacy_priority_unresolved": [
@@ -393,13 +408,13 @@
     }
   ],
   "metrics": {
-    "markdown_total": 174,
+    "markdown_total": 176,
     "filename_classes": {
       "UNMARKED_LANGUAGE_UNVERIFIED": 42,
       "LEGACY_MIXED_READER_ENTRY": 2,
-      "KO_SUFFIX_UNVERIFIED": 82,
+      "KO_SUFFIX_UNVERIFIED": 83,
       "ORDERED_BILINGUAL_FOUNDER_OR_GOVERNANCE": 2,
-      "EN_SUFFIX_UNVERIFIED": 23,
+      "EN_SUFFIX_UNVERIFIED": 24,
       "COMBINED_NAMING_UNVERIFIED": 23
     },
     "meaning_verified_pairs": 0,
@@ -1133,6 +1148,18 @@
       "content_equivalence": "NOT_REVIEWED"
     },
     {
+      "path": "protocols/PI_RAMP_V0_3_EN.md",
+      "filename_class": "EN_SUFFIX_UNVERIFIED",
+      "counterpart_path": "protocols/PI_RAMP_V0_3_KO.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "protocols/PI_RAMP_V0_3_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": "protocols/PI_RAMP_V0_3_EN.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
       "path": "reports/AI_FINAL_CONVERGENCE_RISK_TOP10_KO.md",
       "filename_class": "KO_SUFFIX_UNVERIFIED",
       "counterpart_path": null,
@@ -1705,6 +1732,17 @@
       "new_edition_pairs": 1,
       "editorial_notes": "Metadata-only registration of files concurrently added on the main branch; base README's over-budget urgent-case reference moved to existing EN/KO details to preserve source links and meet first-view guard. These are unrelated to the RVD scientific model.",
       "reviewer_actions": "Independent source/translation review remains pending. Registry repair is not new scientific evidence."
+    },
+    {
+      "as_of": "2026-10-20",
+      "status": "V03_PILOT_NO_READER_EFFECT_PROVEN",
+      "new_documents": [
+        "protocols/PI_RAMP_V0_3_EN.md",
+        "protocols/PI_RAMP_V0_3_KO.md"
+      ],
+      "new_edition_pairs": 1,
+      "editorial_notes": "Registered source-transfer v0.3, pilot null outcomes and reproducible negative-control receipt tests without changing existing DCA/MER research records.",
+      "reviewer_actions": "Measure four tasks before/after with locked snapshots and obtain independent evaluation before promoting effect."
     }
   ],
   "path_layout_policy": "Keep the project root entry-only; bilingual full research editions live in existing research/ and their original historical combined documents retain stable root URLs."

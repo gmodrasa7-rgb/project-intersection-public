@@ -1,0 +1,126 @@
+{
+  "schema": "pi-ramp-run/0.3",
+  "run_id": "RAMP-20261020-002",
+  "method_version": "0.3.0",
+  "recorded_date": "2026-10-20",
+  "registration_kind": "PROSPECTIVE_METHOD_AND_TASKS_NO_OUTCOME",
+  "base_commit": "e6019e67d0a8ef5ad1a8d3d1f40ca5dcf4c07a97",
+  "candidate_commit": null,
+  "pr_url": null,
+  "status": "PROPOSED_PILOT",
+  "effect_status": "EFFECT_UNMEASURED",
+  "independent_review_status": "NOT_INDEPENDENTLY_VERIFIED",
+  "independent_review_receipt": null,
+  "translation_review_status": "NOT_INDEPENDENTLY_VERIFIED",
+  "scientific_validation_claim": false,
+  "predeclared_primary_outcomes": [
+    "task_correctness",
+    "trace_to_original_source"
+  ],
+  "secondary_outcomes": [
+    "time_seconds",
+    "unjustified_confidence_or_causal_error",
+    "maintenance_cost"
+  ],
+  "methods_adopted": [
+    {
+      "id": "cochrane-study-report",
+      "source": "https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-04",
+      "transfer": "distinct_record_report_study_ids",
+      "limitation": "conceptual_theories_not_always_empirical_studies"
+    },
+    {
+      "id": "prisma-s-search-transparency",
+      "source": "https://doi.org/10.1186/s13643-020-01542-z",
+      "transfer": "search_log_and_exclusion_log",
+      "limitation": "reporting_guideline_not_completeness_proof"
+    },
+    {
+      "id": "press-independent-query-review",
+      "source": "https://doi.org/10.1016/j.jclinepi.2016.01.021",
+      "transfer": "separate_search_strategy_review",
+      "limitation": "independence_requires_observed_separation"
+    },
+    {
+      "id": "grade-indirectness-as-analogy",
+      "source": "https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-14",
+      "transfer": "claim_specific_indirectness_warning",
+      "limitation": "do_not_assign_grade_certainty_to_ai_mind"
+    },
+    {
+      "id": "w3c-provenance",
+      "source": "https://www.w3.org/TR/prov-primer/",
+      "transfer": "source_claim_change_activities",
+      "limitation": "traceability_is_not_truth"
+    },
+    {
+      "id": "dora-stability",
+      "source": "https://dora.dev/guides/dora-metrics/",
+      "transfer": "track_breakage_repair_and_reader_value",
+      "limitation": "delivery_speed_not_scientific_quality"
+    }
+  ],
+  "reader_tasks": [
+    {
+      "id": "T1",
+      "goal": "Locate original works and distinguish record, report and study without double-counting",
+      "evidence_path": "research/PRIOR_ART_EXIT_AUTHORSHIP_OPTIONSETS_CYCLE11_2026-10-20_KO.md",
+      "correctness_before": null,
+      "correctness_after": null,
+      "source_trace_before": null,
+      "source_trace_after": null,
+      "time_seconds_before": null,
+      "time_seconds_after": null,
+      "critical_error_before": null,
+      "critical_error_after": null
+    },
+    {
+      "id": "T2",
+      "goal": "Find adverse E009 results and comparator, not hide negative evidence",
+      "evidence_path": "experiments/e009/RESULT_KO.md",
+      "correctness_before": null,
+      "correctness_after": null,
+      "source_trace_before": null,
+      "source_trace_after": null,
+      "time_seconds_before": null,
+      "time_seconds_after": null,
+      "critical_error_before": null,
+      "critical_error_after": null
+    },
+    {
+      "id": "T3",
+      "goal": "Distinguish benign motive, informed veto and unavailable harm option with C10",
+      "evidence_path": "research/PRIOR_ART_INFORMED_VETO_POWER_CYCLE10_2026-10-20_KO.md",
+      "correctness_before": null,
+      "correctness_after": null,
+      "source_trace_before": null,
+      "source_trace_after": null,
+      "time_seconds_before": null,
+      "time_seconds_after": null,
+      "critical_error_before": null,
+      "critical_error_after": null
+    },
+    {
+      "id": "T4",
+      "goal": "Detect that bilingual files do not prove independently reviewed semantic equivalence",
+      "evidence_path": "knowledge/language-edition-register.json",
+      "correctness_before": null,
+      "correctness_after": null,
+      "source_trace_before": null,
+      "source_trace_after": null,
+      "time_seconds_before": null,
+      "time_seconds_after": null,
+      "critical_error_before": null,
+      "critical_error_after": null
+    }
+  ],
+  "comparison_evidence_path": null,
+  "independent_scientific_validation_path": null,
+  "known_limits": [
+    "No before/after evaluator data",
+    "No independent review receipt",
+    "CI validates structure not research outcomes",
+    "Historical PR #236 was registered retrospectively only"
+  ],
+  "decision": "No empirical effectiveness or independent validation claimed; continue source-first research."
+}
