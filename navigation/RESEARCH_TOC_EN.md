@@ -13,6 +13,8 @@ This is a **language-consistent navigation index**. Original 1 denotes release o
 
 Many historical sources are Korean-only or bilingual; linked **source titles, filenames, mathematical identifiers and citations remain unchanged**. A reader should treat a link as a route to an original, not an implicit translation. Refer to the [public evidence index](../research/PUBLIC_EVIDENCE_INDEX_EN.md) for each claim's evidence class and limitations.
 
+**New MER methodological criterion (2026-10-21):** [MER-CIR v0.1.0 EN](../research/MER_CIR_CONTEXT_IMITATION_RECOMBINATION_2026-10-21_EN.md) · [KO](../research/MER_CIR_CONTEXT_IMITATION_RECOMBINATION_2026-10-21_KO.md). Contextual learning, imitation and recombination may be mechanisms of intelligence; incremental synergy, enduring choice and subjective experience remain separate untested claims.
+
 ### The five questions that give the archive its meaning
 
 **Core object:** Determine whether voluntary long-run coexistence is incentive-compatible for *each* actor—including people, AI systems and excluded third parties—when power, time horizons and the ability to leave change. Compare against genuine domination/extraction alternatives; do not presuppose success.
