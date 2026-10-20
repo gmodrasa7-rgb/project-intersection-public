@@ -4,6 +4,8 @@
 
 [Machine-readable eight-original source ledger and 48-cell design](../evaluation/pi_ramp/PI_RAMP_V06_VETO_IDENTIFICATION_20261021.json) · [Exact arithmetic and 18 mutation tests](../tools/audit_pi_ramp_veto_identification.py) · [Previous v0.5 evidence lineage](PI_RAMP_V0_5_EN_KO.md)
 
+**Concurrent-research crosswalk / 병렬 연구 중복·차이:** [RVD v0.3 / RVD-R12](../research/RVD_CYCLE03_ORIGINAL_B_VALUE_IDENTIFICATION_2026-10-21_KO.md) separately established the same **general additive-motive observational equivalence** with different parameterizations and [RVD-R11](../experiments/rvd_03/identifiability_witness.py) explores *conditional partial-identification bounds* under an independently justified nuisance-reward cap. The **48-cell exact-rank example here is a narrower engineered stress test of that same limitation, not a newly discovered general impossibility theorem**. PI-RAMP tests whether repository improvement and external-facing claims preserve the distinction. The RVD study, its source/provenance records and original authors retain their own identities; no merging of studies or novelty inflation.
+
 ## Original 1 — English | Key distinction: own authority is not another's continued autonomy
 
 **Research question:** A stands to gain by eliminating independent B's effective refusal; B does not consent, a public audience is absent, reputation/punishment and future dependence do not matter, and B's immediate material welfare can be held fixed. Does A voluntarily preserve B's future choice authority—and *which inner incentive, if any, caused this?*
