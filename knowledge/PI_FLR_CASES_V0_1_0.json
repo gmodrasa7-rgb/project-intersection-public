@@ -1,0 +1,246 @@
+{
+  "registry_id": "PI-FLR",
+  "schema_version": "0.1.0",
+  "release_version": "0.1.0",
+  "as_of": "2026-10-21",
+  "korean_name": "오류·학습·복구 재귀원장",
+  "english_name": "Failure–Learning–Repair Registry",
+  "parent_protocol": "PI-RAMP",
+  "classification": "PUBLIC_OPERATIONAL_EVIDENCE_NOT_SCIENTIFIC_PROOF",
+  "release_rules": {
+    "patch": "Add case, event, evidence, counterexample or stricter detector without breaking schema",
+    "minor": "Change compatible validation rules or controlled data fields",
+    "major": "Incompatible schema or interpretation",
+    "history": "Existing case metadata and historical events immutable; append events, add cases, bump release_version",
+    "closed_means": "Regression detected and repair observed only; zero future recurrence NOT certified",
+    "no_private_data": true
+  },
+  "stages": [
+    "FAILURE_OBSERVED",
+    "ROOT_CAUSE_REVIEWED",
+    "REPAIR_APPLIED",
+    "CI_PASS_OBSERVED",
+    "FIX_MERGED",
+    "LIMITATION_RECORDED",
+    "RECURRENCE_OBSERVED"
+  ],
+  "control_registry": [
+    {
+      "id": "FLR-C01",
+      "title": "New Markdown language-edition gate",
+      "detector": "tools/check_language_separation.py::new_files_errors",
+      "workflow": "CI language-entry-regression",
+      "mutation_test": "test_regression_original_naming_failure"
+    },
+    {
+      "id": "FLR-C02",
+      "title": "PI-RISE canonical path and Git blob SHA guard",
+      "detector": "tools/pi_rise_manifest_guard.py::audit",
+      "workflow": ".github/workflows/pi-rise-integrity.yml",
+      "mutation_test": "test_regression_original_manifest_pointer"
+    },
+    {
+      "id": "FLR-C03",
+      "title": "Unfiltered PR/main CI regression guard",
+      "detector": "tools/pi_flr_audit.py::check_ci_contract",
+      "workflow": ".github/workflows/pi-flr-integrity.yml",
+      "mutation_test": "test_regression_path_filtered_ci"
+    }
+  ],
+  "cases": [
+    {
+      "id": "FLR-0001",
+      "title_ko": "신규 회계 문서 언어판 명명 누락",
+      "title_en": "New finance Markdown without language-edition marker",
+      "category": "PUBLICATION_CONTRACT",
+      "root_cause": "New markdown path lacked the mandatory _EN_KO.md suffix or a justified exception, while language-entry regression gated new documents.",
+      "trigger": "Addition of funding/GRANTS_CONTRACTS_PUBLIC_LEDGER.md to PI-RISE v0.2.0 draft.",
+      "observable": "ADDED_MARKDOWN_LACKS_LANGUAGE_EDITION_OR_JUSTIFIED_EXCEPTION:funding/GRANTS_CONTRACTS_PUBLIC_LEDGER.md",
+      "impact": "PR #272 checks failed; publication blocked for that revision, not a research falsification.",
+      "counterfactual": "If the gate had not run, an edition-undeclared document could have been published unnoticed.",
+      "repair": "Renamed to funding/GRANTS_CONTRACTS_PUBLIC_LEDGER_EN_KO.md; registered bilingual inventory; reran CI.",
+      "preventive_control_ids": [
+        "FLR-C01"
+      ],
+      "regression_test": "test_regression_original_naming_failure",
+      "limitations": [
+        "Naming checks do not independently certify English/Korean semantic parity.",
+        "Historic failures remain historical and should not be deleted."
+      ],
+      "events": [
+        {
+          "seq": 1,
+          "date": "2026-10-21",
+          "kind": "FAILURE_OBSERVED",
+          "evidence_url": "https://github.com/gmodrasa7-rgb/project-intersection-public/actions/runs/39473357593",
+          "note": "language-entry-regression #529 failed at Gate newly added Markdown language editions."
+        },
+        {
+          "seq": 2,
+          "date": "2026-10-21",
+          "kind": "ROOT_CAUSE_REVIEWED",
+          "evidence_url": "https://github.com/gmodrasa7-rgb/project-intersection-public/commit/61410123f17b9b8d8c42f782abbfd9f723246505",
+          "note": "Old ledger filename rejected by new-file language contract."
+        },
+        {
+          "seq": 3,
+          "date": "2026-10-21",
+          "kind": "REPAIR_APPLIED",
+          "evidence_url": "https://github.com/gmodrasa7-rgb/project-intersection-public/pull/272",
+          "note": "Candidate revised to suffixed bilingual filename."
+        },
+        {
+          "seq": 4,
+          "date": "2026-10-21",
+          "kind": "CI_PASS_OBSERVED",
+          "evidence_url": "https://github.com/gmodrasa7-rgb/project-intersection-public/actions/runs/39473869285",
+          "note": "Latest language separation run #535 passed for PR head."
+        },
+        {
+          "seq": 5,
+          "date": "2026-10-21",
+          "kind": "FIX_MERGED",
+          "evidence_url": "https://github.com/gmodrasa7-rgb/project-intersection-public/pull/272",
+          "note": "Revised PI-RISE candidate merged; code pass does not validate translations."
+        }
+      ]
+    },
+    {
+      "id": "FLR-0002",
+      "title_ko": "병합 성공 후 회계 정본 소유권 경로 잔존",
+      "title_en": "Stale canonical ledger owner after successful merge",
+      "category": "REFERENCE_INTEGRITY",
+      "root_cause": "A human-maintained ledger_ownership pointer was excluded from the original manifest's artifact-path SHA checks; CI success implied insufficient coverage.",
+      "trigger": "Rename of finance ledger without updating operations/PI_RISE_V0_2_0_VERSION_MANIFEST.json ledger_ownership field.",
+      "observable": "institutional_grants_and_contracts pointed to nonexistent funding/GRANTS_CONTRACTS_PUBLIC_LEDGER.md while artifact list already referenced _EN_KO.md.",
+      "impact": "Published release manifest contained a dead canonical ownership reference despite passing CI.",
+      "counterfactual": "A reviewer trusting only the green CI result would infer the canonical path was reliable.",
+      "repair": "Corrected ledger_ownership to _EN_KO.md, added fail-closed publication/path/hash guard and updated manifest tracked checksums.",
+      "preventive_control_ids": [
+        "FLR-C02"
+      ],
+      "regression_test": "test_regression_original_manifest_pointer",
+      "limitations": [
+        "Structural/sha checks do not prove the underlying financial claims.",
+        "Protection from bypass requires branch rule configuration."
+      ],
+      "events": [
+        {
+          "seq": 1,
+          "date": "2026-10-21",
+          "kind": "FAILURE_OBSERVED",
+          "evidence_url": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/operations/PI_RISE_V0_2_0_VERSION_MANIFEST.json",
+          "note": "Observed stale ledger ownership pointer and missing target on main."
+        },
+        {
+          "seq": 2,
+          "date": "2026-10-21",
+          "kind": "ROOT_CAUSE_REVIEWED",
+          "evidence_url": "https://github.com/gmodrasa7-rgb/project-intersection-public/pull/275",
+          "note": "Tracked artifacts were individually hashed but ledger_ownership was not cross-checked."
+        },
+        {
+          "seq": 3,
+          "date": "2026-10-21",
+          "kind": "REPAIR_APPLIED",
+          "evidence_url": "https://github.com/gmodrasa7-rgb/project-intersection-public/pull/275",
+          "note": "Added 13 mutation/unit checks and canonical pointer validation."
+        },
+        {
+          "seq": 4,
+          "date": "2026-10-21",
+          "kind": "CI_PASS_OBSERVED",
+          "evidence_url": "https://github.com/gmodrasa7-rgb/project-intersection-public/actions/runs/39475253359",
+          "note": "PR 275 synthetic-only integrity workflow succeeded; 75 unit tests, including 13 new tests."
+        },
+        {
+          "seq": 5,
+          "date": "2026-10-21",
+          "kind": "FIX_MERGED",
+          "evidence_url": "https://github.com/gmodrasa7-rgb/project-intersection-public/commit/92da42c993d212b2c5221a6370322dee1c09c0a7",
+          "note": "PR 275 merged; main manifest 13/13 tracked hashes matched in subsequent readback."
+        }
+      ]
+    },
+    {
+      "id": "FLR-0003",
+      "title_ko": "경로 필터로 인한 CI 게이트 사각지대",
+      "title_en": "Path-filtered workflow could miss invariant-breaking PRs",
+      "category": "GUARD_COVERAGE",
+      "root_cause": "Original pi-rise-integrity workflow was path-filtered; edits outside selected paths were not assured to run its global integrity invariants.",
+      "trigger": "Repository-wide invariants were treated as if only a few paths could invalidate them.",
+      "observable": "Older .github/workflows/pi-rise-integrity.yml had pull_request.paths and push.paths conditions.",
+      "impact": "A structurally green or skipped CI state was not sufficient evidence that cross-references stayed valid.",
+      "counterfactual": "Cross-document or future changes outside the allowlist could evade the relevant gate.",
+      "repair": "PR 275 removed restrictive path filters for PI-RISE. PI-FLR itself adds an unfiltered PR/main workflow contract plus mutation check.",
+      "preventive_control_ids": [
+        "FLR-C03"
+      ],
+      "regression_test": "test_regression_path_filtered_ci",
+      "limitations": [
+        "Unfiltered CI runs can still be bypassed by repository settings, branch rules, admin privilege or workflow edits.",
+        "No zero-future-incident guarantee; main branch required-check enforcement not verified."
+      ],
+      "events": [
+        {
+          "seq": 1,
+          "date": "2026-10-21",
+          "kind": "FAILURE_OBSERVED",
+          "evidence_url": "https://github.com/gmodrasa7-rgb/project-intersection-public/pull/275",
+          "note": "Review of prior PI-RISE workflow identified selective trigger paths."
+        },
+        {
+          "seq": 2,
+          "date": "2026-10-21",
+          "kind": "ROOT_CAUSE_REVIEWED",
+          "evidence_url": "https://github.com/gmodrasa7-rgb/project-intersection-public/pull/275",
+          "note": "Required-check execution coverage and changed-file coverage were incorrectly coupled."
+        },
+        {
+          "seq": 3,
+          "date": "2026-10-21",
+          "kind": "REPAIR_APPLIED",
+          "evidence_url": "https://github.com/gmodrasa7-rgb/project-intersection-public/pull/275",
+          "note": "Expanded PI-RISE checks to each PR and main push."
+        },
+        {
+          "seq": 4,
+          "date": "2026-10-21",
+          "kind": "CI_PASS_OBSERVED",
+          "evidence_url": "https://github.com/gmodrasa7-rgb/project-intersection-public/actions/runs/39475253359",
+          "note": "PR-triggered CI succeeded after trigger policy change."
+        },
+        {
+          "seq": 5,
+          "date": "2026-10-21",
+          "kind": "FIX_MERGED",
+          "evidence_url": "https://github.com/gmodrasa7-rgb/project-intersection-public/commit/92da42c993d212b2c5221a6370322dee1c09c0a7",
+          "note": "New CI trigger merged; branch protection is separate unresolved governance control."
+        },
+        {
+          "seq": 6,
+          "date": "2026-10-21",
+          "kind": "LIMITATION_RECORDED",
+          "evidence_url": "https://github.com/gmodrasa7-rgb/project-intersection-public/pull/275",
+          "note": "Cannot claim enforced required status checks or permanent recurrence prevention without branch settings verification."
+        }
+      ]
+    }
+  ],
+  "improvement_protocol": {
+    "cycle": [
+      "OBSERVE",
+      "MINIMAL_REPRODUCER",
+      "CAUSAL_HYPOTHESIS",
+      "REPAIR",
+      "NEGATIVE_MUTATION",
+      "INDEPENDENT_CI_RECEIPT",
+      "RELEASE_VERSION",
+      "FOLLOWUP_RECURRENCE_CHECK"
+    ],
+    "invariant": "No event removed and no root-cause or attribution silently rewritten; changed interpretations via appended notes and new version.",
+    "anti_proxy": "CI pass is a limited code assertion, not proof of real-world truth, financial receipt, semantic parity, universal safety, or zero future incidents.",
+    "next_expansion": "New cases should include adversarial tests for the original trigger and a test for the control itself; preserve counterexample with full evidence scope.",
+    "governance_gap": "Branch protection/required checks and administrative bypass settings are not verified in this registry."
+  }
+}
