@@ -28,6 +28,8 @@
 | PA08 | Adil Khan·Khaled AlKhanbashi·Azza Mohamed (2026-08-31), *Evaluating Indirect Prompt Injection Defenses in Tool-Using LLM Agents: Security, Utility, and Replication*, [Computers DOI 10.3390/computers15090570](https://doi.org/10.3390/computers15090570) | AgentDojo banking 2회 반복: GPT-5.4 기본 0/288 ASR도 공격목표 실행 가능성 차이를 반영해야 함. GPT-5.4-mini에서 정상과제 성공률 무방어 75.0%, Tool Filter 25.0%; 공격 차단처럼 보이는 행동집합 축소의 비용 관찰. | 같은 벤치마크 반복은 독립 데이터셋 재현 아님. Holm 다중비교 교정 후 해당 모델 방어 비교 유의성 확보 안 됨. 다른 모델·미래 배포로 외삽 금지. |
 | PA09 | Fengpeng Li 외 (2026-10-01), *PACE: Provenance-Aware Capability Enforcement for Tool-Using LLM Agents*, [arXiv:2610.01349](https://arxiv.org/abs/2610.01349) | 명시된 실행권한과 도구 **실행 직전 효과**의 검사를 제안. 저자 실험 79개 적격 공격 열 중 62개에서 가장 낮은 ASR, 14개 동률; 적응공격 탐색 0/30. | 저자 프리프린트, 독립 복제 불명. 0/30=우회 불가능 증명 아님; iid 단순 이항 95% 단측 상한조차 약 9.5%, 실제 30 탐색 시도는 비독립일 수 있어 해당 신뢰구간 그대로 적용 불가. |
 
+**추가 대립 원저자(2026, 초록 수준):** [PACT, arXiv:2605.11039](https://arxiv.org/abs/2605.11039)은 전체 도구 호출보다 *권한에 영향을 주는 인자*의 출처 추적 필요성을 제시하고, 저자 실험에서도 신뢰출처 추론 오류가 남는다고 명시. [AGATE, arXiv:2609.30830](https://arxiv.org/abs/2609.30830)는 도구 권한·출처 경계의 이점과 동시에 정상 11개 파일작업 중 6개에서 거부 발생, 파라미터 재작성 우회 사례까지 보고. **두 논문 역시 유사한 출처·권한 강제 분야의 원저자 프리프린트이지 독립적 실제 피해 감소 인증 아님.** 총 문헌 수에 기존 계보와 동일 데이터셋의 평가를 중복 산정하지 않음.
+
 **추가 보강 계보(중복 카운트 제외):** [Nasr 외(2025) arXiv:2510.09023](https://arxiv.org/abs/2510.09023): 강하게 적응한 공격이 다수 방어를 우회하는 반대 근거(저자 프리프린트). [Gordon–Loeb (2002)](https://doi.org/10.1145/581271.581274) 보안투자 비용의 최적성이 비단조적일 수 있다는 관련 이론(DCA-0에서 이미 기록). [The Same Zero (2026) arXiv:2610.04504](https://arxiv.org/abs/2610.04504)는 같은 0% ASR의 다른 보장조건을 지적하는 최근 프리프린트; 단독 저작/검증 수준이 높다는 전제 없이 논점 후보로만 기록.
 
 ### 선행 상충결과를 오독하지 않는 방법
