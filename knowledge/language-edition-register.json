@@ -468,14 +468,14 @@
     }
   ],
   "metrics": {
-    "markdown_total": 195,
+    "markdown_total": 197,
     "filename_classes": {
-      "UNMARKED_LANGUAGE_UNVERIFIED": 42,
+      "UNMARKED_LANGUAGE_UNVERIFIED": 43,
       "LEGACY_MIXED_READER_ENTRY": 2,
       "KO_SUFFIX_UNVERIFIED": 89,
       "ORDERED_BILINGUAL_FOUNDER_OR_GOVERNANCE": 2,
       "EN_SUFFIX_UNVERIFIED": 29,
-      "COMBINED_NAMING_UNVERIFIED": 31
+      "COMBINED_NAMING_UNVERIFIED": 32
     },
     "meaning_verified_pairs": 0,
     "meaning_verified_pairs_is_a_status_count_not_a_claim_that_no_reviews_ever_occurred": true
@@ -1070,6 +1070,12 @@
       "content_equivalence": "NOT_REVIEWED"
     },
     {
+      "path": "funding/GRANTS_CONTRACTS_PUBLIC_LEDGER.md",
+      "filename_class": "UNMARKED_LANGUAGE_UNVERIFIED",
+      "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
       "path": "funding/LEGAL_TAX_RISK_REGISTER_2026-10-13_EN_KO.md",
       "filename_class": "COMBINED_NAMING_UNVERIFIED",
       "counterpart_path": null,
@@ -1185,6 +1191,12 @@
     },
     {
       "path": "operations/PI_RISE_V0_1_0_EN_KO.md",
+      "filename_class": "COMBINED_NAMING_UNVERIFIED",
+      "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "operations/PI_RISE_V0_2_0_EN_KO.md",
       "filename_class": "COMBINED_NAMING_UNVERIFIED",
       "counterpart_path": null,
       "content_equivalence": "NOT_REVIEWED"
@@ -2012,6 +2024,10 @@
       "new_edition_pairs": 1,
       "editorial_notes": "R18–R21 randomized intervention pathway nonidentification, exclusion leakage sensitivity outer bounds, target support/transport assumptions and original B feasible exit. Synthetic and not observed AI behavior.",
       "reviewer_actions": "Independently audit authors' full texts, semantically check bilingual papers, preregister ethically valid actions, no claim promotion."
+    },
+    {
+      "date": "2026-10-21",
+      "note": "PI-RISE v0.2 integrated financial control: two new Markdown paths registered; language names are structural metadata, not certified translation parity; no human meaning review receipt."
     }
   ],
   "path_layout_policy": "Keep the project root entry-only; bilingual full research editions live in existing research/ and their original historical combined documents retain stable root URLs."
