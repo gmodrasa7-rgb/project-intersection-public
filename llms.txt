@@ -6,7 +6,7 @@
 
 - English task-based source access: https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/navigation/ACCESS_MAP_EN.md
 - Korean task-based source access: https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/navigation/ACCESS_MAP_KO.md
-- Accessibility limitations and public-safe reporting: https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/ACCESSIBILITY.md
+- Accessibility limitations and public-safe reporting: https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/.github/ACCESSIBILITY.md
 
 ## Primary research logic — route before artifacts
 
