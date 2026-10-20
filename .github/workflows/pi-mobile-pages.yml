@@ -1,0 +1,47 @@
+name: PI Mobile Pages
+on:
+  pull_request:
+    paths:
+      - "mobile/**"
+      - ".github/workflows/pi-mobile-pages.yml"
+  push:
+    branches: ["main"]
+    paths:
+      - "mobile/**"
+      - ".github/workflows/pi-mobile-pages.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: JavaScript syntax
+        run: |
+          node --check mobile/app.js
+          node --check mobile/service-worker.js
+      - name: No-dependency smoke test
+        run: node mobile/check.mjs
+  deploy:
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    needs: validate
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    concurrency:
+      group: pi-mobile-pages
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: mobile
+      - uses: actions/deploy-pages@v4
+        id: deployment
