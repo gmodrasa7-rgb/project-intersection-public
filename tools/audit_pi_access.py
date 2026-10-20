@@ -14,7 +14,7 @@ from urllib.parse import unquote, urlsplit
 ROOT = Path(__file__).resolve().parents[1]
 EN = "navigation/ACCESS_MAP_EN.md"
 KO = "navigation/ACCESS_MAP_KO.md"
-POLICY = "ACCESSIBILITY.md"
+POLICY = ".github/ACCESSIBILITY.md"
 README = "README.md"
 EN_START = "navigation/START_HERE_EN.md"
 KO_START = "navigation/START_HERE_KO.md"
@@ -88,8 +88,7 @@ def find_errors(overrides: dict[str, str] | None = None) -> list[str]:
             wanted = paths[0 if lang == "en" else 1]
             if wanted not in link_paths:
                 issues.append("MISSING_TASK_ROUTE:" + lang + ":" + name)
-        if "NOT_REVIEWED" not in body and not any(token in body for token in
-                  ("independently", "독립")):
+        if not any(token in body for token in ("not independent", "독립적", "NOT_REVIEWED")):
             issues.append("VERIFICATION_LIMIT_NOT_DISCLOSED:" + lang)
         for title, destination, fragment in links:
             if destination.startswith("../") or not (ROOT / destination).is_file():
