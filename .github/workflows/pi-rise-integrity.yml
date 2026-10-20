@@ -3,7 +3,7 @@ on:
   pull_request:
     paths:
       - "operations/PI_RISE_*"
-      - "funding/GRANTS_CONTRACTS_PUBLIC_LEDGER.md"
+      - "funding/GRANTS_CONTRACTS_PUBLIC_LEDGER_EN_KO.md"
       - "funding/SPONSORSHIP_PUBLIC_LEDGER.md"
       - "funding/README.md"
       - "funding/FUNDER_START_HERE.md"
@@ -18,7 +18,7 @@ on:
     branches: [main]
     paths:
       - "operations/PI_RISE_*"
-      - "funding/GRANTS_CONTRACTS_PUBLIC_LEDGER.md"
+      - "funding/GRANTS_CONTRACTS_PUBLIC_LEDGER_EN_KO.md"
       - "funding/SPONSORSHIP_PUBLIC_LEDGER.md"
       - "funding/README.md"
       - "funding/FUNDER_START_HERE.md"
