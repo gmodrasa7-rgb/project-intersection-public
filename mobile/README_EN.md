@@ -1,4 +1,4 @@
-# Project Intersection mobile research guide — English (v0.2.0)
+# Project Intersection mobile research guide — English (v0.2.1)
 
 [Korean edition](README_KO.md) · [Public research repository](https://github.com/gmodrasa7-rgb/project-intersection-public)
 
@@ -40,3 +40,23 @@ Enable GitHub Pages with GitHub Actions as its publishing source. After merge, `
 3. 'Copy AI audit prompt' copies a prompt only; no AI inference, automatic source checking or external transmission occurs.
 4. The user manually reviews and submits the public GitHub Issue after signing in. Oversized prefilling URLs are blocked without discarding the draft.
 5. Real Android/iOS, screen-reader, privacy and user-comprehension testing remain open.
+
+## PI-MOBILE v0.2.1 — Anti-extraction and participant rights
+
+**Principle:** Consent alone does not establish the absence of exploitation. Nor does the absence of payment automatically classify every voluntary act identically. Assess the allocation of benefit, time, costs, bargaining power, attribution, refusal, and exit.
+
+1. **Reading and learning:** Free and available without accounts or contributions. Case exercise choices and notes are not automatically submitted to a project server.
+2. **Small unsolicited notes only:** Readers may optionally point to a known link, minor error or ask a question. No new research, experiment, large-scale review or replication is requested. No money is promised for small unsolicited feedback, and this is disclosed before posting.
+3. **Intensive labor closed:** Systematic literature surveys, translation, coding, replication, bulk classification and substantial auditing are **not recruited** via this app. A future invitation must first disclose real funding, work scope, compensation, payment terms, provenance, publication rights, refusal, exit and dispute resolution. No funded work is offered by this notice.
+4. **Rights and attribution:** Distinguish founder, earlier scholars, source authors, tipsters, reviewers and assisting AI. The app asks for no additional blanket copyright assignment. GitHub terms and third-party licenses still apply. Acknowledgment is not automatically adequate compensation; preexisting contribution disputes remain separate.
+5. **Exit and public records:** Users may leave an unsubmitted draft. Public GitHub Issues disclose accounts and text. Later deletion or editing requests cannot guarantee erasure from forks, indexes, caches, or quotations. Anonymous intake is not implemented.
+6. **Future benefits:** Funding, commercial exploitation or exclusive capture should trigger a fresh review of benefits, costs and independently agreed rights. This neither creates automatic payouts nor certifies funding.
+7. **Scope:** The guard covers this mobile app, not unrelated GitHub Issue templates, PRs or external calls for labor. Broader project governance requires separate review.
+
+### Original guidance and scope
+- UNESCO (2021), *Recommendation on Open Science*: recognition and risks of exploitation in open science. https://www.unesco.org/en/legal-affairs/recommendation-open-science
+- ECSA, *Ten Principles of Citizen Science*. https://ecsa.citizen-science.net/10-principles/
+- Zooniverse, *Acknowledging Volunteers*. https://help.zooniverse.org/transcription-project-guide/project-launch/
+- CARE, *Principles for Indigenous Data Governance*, developed for the specific historical and political context of Indigenous data sovereignty. Cited as a comparative framework for collective benefit and authority, not a universally applicable legal rule. https://doi.org/10.5334/dsj-2020-043
+
+**Unverified:** real user outcomes, fairness of future payment, enforceable copyright and withdrawal rights. CI success does not certify ethical practice.
