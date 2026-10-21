@@ -450,6 +450,34 @@
       "declared_dependencies_complete": false,
       "result": "SCOPED_SOURCE_AND_PROVENANCE_REVIEW_DONE_NO_SCIENTIFIC_VERDICT",
       "limitation": "Programmer-defined finite state scope, not OS/admin trust domain or original-agent identity. No actual rights guarantee, verified B subjective standing or learned motive."
+    },
+    {
+      "review_id": "PI-CIG-ROADMAP-WORK-ORDER-20261021-1",
+      "date": "2026-10-21",
+      "changed_path": "research/PI_ROADMAP_OPERATIONAL_GATES_V0_2_3_EN_KO.md",
+      "old_source_sha": "96be95f5c3f05039c7dca0c72c5514f1a0a7dc1b",
+      "new_source_sha": "cec68b0fe7eacf7f94ed2fb9781255d7258fa849",
+      "upstream_change": "Align active S3 and machine-readable work order with the standing 2026-10-20 prior-art-first policy; fixed search-round counts and resource pauses cannot alone establish saturation. Content correction 2026-10-21.1 within roadmap v0.2.3; six stages and DESIGN_ONLY unchanged.",
+      "affected_claims_and_paths": [
+        {
+          "path": "AUTONOMOUS_RESEARCH_STATE.json",
+          "effect": "Research work order and retained evidence-target scope clarified; independent-validation goals and negative-result freeze preserved."
+        },
+        {
+          "path": "research/PI_ROADMAP_OPERATIONAL_GATES_V0_2_3_EN_KO.md",
+          "effect": "Both S3 editions now require scoped coverage, citation/contrary searches, material novelty and residual unknowns."
+        },
+        {
+          "path": "tools/check_roadmap_bilingual_gate.py",
+          "effect": "Existing CI entrypoint checks the active cross-artifact work-order and saturation boundary."
+        }
+      ],
+      "scientific_promotion": false,
+      "independent_validation": false,
+      "version_registry": "research/RESEARCH_VERSION_REGISTRY.json",
+      "declared_dependencies_complete": false,
+      "result": "SCOPED_SOURCE_AND_PROVENANCE_REVIEW_DONE_NO_SCIENTIFIC_VERDICT",
+      "limitation": "No new source search, saturation finding, actual executor-policy violation or reader-benefit measurement. Historical roadmap editions retained."
     }
   ]
 }

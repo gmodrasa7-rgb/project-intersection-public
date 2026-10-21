@@ -56,10 +56,12 @@ The six-stage sequence is **immutable**; PIA/IVS-0R/G1–G8/R01–R12/TG1–TG5/
 |---|---|---|
 | **S1 theory** | One original claim, variables, testable disconfirmer and direct alternative | Original meaning changed or no potential falsifier |
 | **S2 prior research** | Original source/author, failure and opposite case, rights scope | Primary source unknown → PARTIAL, no invented provenance |
-| **S3 bounded saturation** | Date, languages, fields and search limits; two scoped zero-new-competitor rounds if feasible | New contradictor, method change, regime drift → return S2–S4 |
+| **S3 bounded saturation** | Question, mechanisms, fields/languages, databases and access gaps; citation chains, contrary searches, material novelty and residual unknowns, with a recorded justification | Inadequate coverage → SEARCH_ACTIVE / UNKNOWN; material counterevidence or method/regime change → reopen S2–S4 |
 | **S4 critique and reuse** | Strongest rebuttal, simple baseline, transfer TG1–TG5, hidden-state HP1–HP3 and role reversal | Unsupported mechanism/transfer or unmitigated major harm → HOLD promotion |
 | **S5 contributions** | Originator/upstream/correction lineage; rights, beneficiary, burden, UNKNOWN | Erased originator or unlicensed disclosure → HOLD and repair |
 | **S6 test and advance** | Predeclared comparison, held-out negative, cost, rollback and read-back | No run → DESIGN, failed result → preserve negative, high risk → stop release |
+
+**Work-order correction (2026-10-21.1):** The [standing prior-art-first policy](../PRIOR_ART_FIRST_RESEARCH_POLICY_EN_KO.md) governs research execution; S1 frames an existing question, not permission to invent a new theory before S2. **Two zero-result rounds are not sufficient for saturation.** Check diversified coverage, backward/forward citation chains, independent contrary searches, material novelty and residual unknowns; record a scoped, revisable judgment. **A resource-limited pause is not saturation.** New experiments require the relevant saved search/comparison checkpoint, not exhaustive worldwide coverage. This supersedes the fixed-round wording inherited from v0.1/v0.2; their historical text remains traceable.
 
 Low-risk reversible desktop research with clearly labeled uncertainty can proceed even when a critical real-world claim is held.
 
@@ -161,10 +163,12 @@ Project Intersection은 인간·AI·미래 지능체 등이 선의나 자기희�
 |---|---|---|
 | **S1 이론 구체화** | 인간 원안 1개, 변수, 반증조건, 대안설명 | 원뜻 변경·반증 가능성 부재 |
 | **S2 선행연구 조사·수집** | 원출처·저자·부정/실패사례·권리범위 | 원출처 불명은 PARTIAL, 출처 발명 금지 |
-| **S3 포화 확인** | 시점·언어·검색범위와 가능한 경우 제한 범위 신규 경쟁설명 0건 2회 | 새 반례·환경 변화 시 S2~S4 재개 |
+| **S3 포화 확인** | 질문·기제·분야/언어·DB·접근 공백, 인용 추적·반대 검색·실질 신규 정보·잔여 미관측과 판단 근거 기록 | 범위 불충분 → SEARCH_ACTIVE / UNKNOWN; 실질 반례·방법/환경 변화 → S2~S4 재개 |
 | **S4 검수·정제·응용** | 최강 반론·단순 기준선·전이 TG1~TG5·미관측 HP1~HP3·입장반전 | 전이 불확실·중대한 비가역 피해면 해당 승격 HOLD |
 | **S5 기여자 기록** | 원안·선행·교정·권리·수혜·비용·UNKNOWN | 원안 삭제·무허가 공개면 보류 후 교정 |
 | **S6 신연구 가속·검증** | 사전 기준·미사용 부정결과·시간·복구·재조회 | 미실행은 DESIGN, 실패는 부정결과 보존, 중대위험은 공개 중단 |
+
+**실행순서 교정 (2026-10-21.1):** 연구 수행은 [선행조사 우선 정책](../PRIOR_ART_FIRST_RESEARCH_POLICY_EN_KO.md)을 따른다. S1은 기존 질문의 범위 설정이며 S2보다 먼저 새 이론을 만들라는 허가가 아니다. **검색 결과 0건 두 번은 포화의 충분조건이 아니다.** 분야별 검색범위·전후방 인용 추적·독립 반대 검색·실질 신규 정보·잔여 미관측을 검토하고 범위가 한정된 재개방 가능 판단을 기록한다. **자원 부족으로 중단해도 포화는 아니다.** 새 실험에는 관련 조사·비교 기록의 저장이 필요하며 전 세계 문헌의 완전한 탐색을 요구하지 않는다. v0.1/v0.2에서 이어진 고정 회차 문구를 대체하되 역사적 원문은 추적 가능하게 보존한다.
 
 중대 피해의 적용·승격은 보류하되 저위험·가역적 문헌 연구는 미검증임을 밝히고 진행할 수 있다.
 
