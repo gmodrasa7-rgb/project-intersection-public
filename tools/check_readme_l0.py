@@ -19,7 +19,9 @@ def audit(body):
     errors = []
     visible = re.sub(r"<!--.*?-->", "", body, flags=re.S)
     lines = [line.strip() for line in visible.splitlines() if line.strip()]
-    if lines[:2] != ["# Project Intersection", "## 15초 | 목표와 연구"]:
+    if (not lines or lines[0] != "# Project Intersection"
+            or len(lines) < 4 or not lines[1].startswith("**Language:** English (primary)")
+            or lines[2:4] != ["## English — Primary", "### 15 seconds | Purpose and research"]):
         errors.append("L0_NOT_FIRST")
     if body.count(EN) != 1 or body.count(KO) != 1:
         errors.append("UNPAIRED_ORIGINAL")
@@ -30,29 +32,34 @@ def audit(body):
         return errors
     # The human-first staged entry is the L0 purpose, never a new scientific result.
     # Keep it short and keep an explicit counterexample and lack of validation visible.
+    korean_start = body.find("## 한국어 — Secondary")
+    if korean_start < 0 or not a < korean_start < b:
+        errors.append("KOREAN_SECONDARY_BOUNDARY_MISSING_OR_REVERSED")
+        return errors
     entry = body[:a]
     first_view = entry.split("<details>", 1)[0]
     required_first_view = (
-        "## 15초 | 목표와 연구",
-        "자발적 평화·공존·발전·번영",
-        "서로 다른 개체",
-        "선행 원저자 논문",
-        "문헌 포화는 아직 확정하지 않는다",
-        "외부 독립검증도 **아직 없다**",
-        "42.35% 나빴다",
-        "experiments/e009/RESULT_KO.md",
+        "## English — Primary",
+        "### 15 seconds | Purpose and research",
+        "voluntary peace, coexistence, cooperation, development and prosperity",
+        "independent continuance",
+        "original research papers",
+        "Literature saturation has not been established",
+        "independent external validation is not yet established",
+        "42.35% higher mean regret",
+        "experiments/e009/RESULT_EN.md",
     )
     if len(first_view) > 1700 or any(t not in first_view for t in required_first_view):
         errors.append("PROGRESSIVE_L0_FIRST_VIEW_CHANGED_OR_OVERSIZED")
     if (entry.count("<details>"), entry.count("</details>")) != (3, 2):
         errors.append("PROGRESSIVE_ENTRY_DISCLOSURE_MISMATCH")
-    one = "<summary><strong>1분 | 왜 묻고, 무엇부터 조사하나?</strong></summary>"
-    five = "<summary><strong>5분 | 무엇을 확인했고, 어떻게 반증할 수 있나?</strong></summary>"
+    one = "<summary><strong>1 minute | Why this question, and what is studied first?</strong></summary>"
+    five = "<summary><strong>5 minutes | What is known, and how can it be challenged?</strong></summary>"
     if entry.count(one) != 1 or entry.count(five) != 1 or entry.index(one) >= entry.index(five):
         errors.append("PROGRESSIVE_ENTRY_STAGE_MISSING_OR_REORDERED")
     if body.count("<details>") != body.count("</details>"):
         errors.append("PROGRESSIVE_ENTRY_UNBALANCED")
-    english = body[a:b]
+    english = body[a:korean_start]
     subsequent = body[b:]
     next_h2 = re.search(r"^## ", subsequent[len(KO):], re.M)
     korean = subsequent[:len(KO) + next_h2.start()] if next_h2 else subsequent
@@ -82,7 +89,7 @@ def audit(body):
         ("KO", korean, "**시작 질문:**", "**과학적 경계:**",
          "**어디부터 읽을까:**", 1700, "### 핵심용어 10개"),
     ):
-        expected = (2, 2) if label == "EN" else (1, 2)
+        expected = (1, 2) if label == "EN" else (1, 2)
         if (section.count("<details>"), section.count("</details>")) != expected:
             errors.append("DISCLOSURE_COUNT_DRIFT:" + label)
             continue
@@ -168,10 +175,10 @@ def test_mutations(text):
       "hide_english_question": text.replace("**Opening thought experiment:**", "**Intro hidden:**", 1),
       "hide_korean_question": text.replace("**시작 질문:**", "**미확인 질문:**", 1),
       "wrong_disclosure_order": text.replace("</details>", "</details>\\n\\n<details>", 1),
-      "hidden_15s_failure": text.replace("42.35% 나빴다", "42.35% 개선됐다", 1),
-      "hidden_15s_validity": text.replace("외부 독립검증도 **아직 없다**", "외부 독립검증 완료", 1),
-      "missing_1minute": text.replace("<summary><strong>1분 | 왜 묻고, 무엇부터 조사하나?</strong></summary>", "<summary>Other</summary>", 1),
-      "missing_5minute": text.replace("<summary><strong>5분 | 무엇을 확인했고, 어떻게 반증할 수 있나?</strong></summary>", "<summary>Other</summary>", 1),
+      "hidden_15s_failure": text.replace("42.35% higher mean regret", "42.35% lower mean regret", 1),
+      "hidden_15s_validity": text.replace("independent external validation is not yet established", "externally validated", 1),
+      "missing_1minute": text.replace("<summary><strong>1 minute | Why this question, and what is studied first?</strong></summary>", "<summary>Other</summary>", 1),
+      "missing_5minute": text.replace("<summary><strong>5 minutes | What is known, and how can it be challenged?</strong></summary>", "<summary>Other</summary>", 1),
     }
     for name, test in mutants.items():
         assert audit(test), "Mutation bypassed safeguard: " + name
