@@ -125,7 +125,7 @@ def validate(data, registry, workflow):
     need(data["efficiency"]["status_default"] == "NOT_OBSERVED" and
          "not zero" in data["efficiency"]["unknown_policy"].lower(),
          "UNKNOWN_OR_ABSENCE_PROMOTED_TO_ZERO")
-    need("not publish raw personal chats" in data["efficiency"]["privacy_boundary"].lower(),
+    need("do not ingest or publish raw personal chats" in data["efficiency"]["privacy_boundary"].lower(),
          "RAW_PERSONAL_CHATS_MAY_LEAK")
     need("do not demand" in data["efficiency"]["cost_boundary"].lower(),
          "HUMAN_CORRECTION_LABOR_GUARD_REMOVED")
@@ -204,8 +204,18 @@ def main():
                 result["history"]="APPEND_ONLY_VERIFIED"
             else:
                 result["history"]="FIRST_PUBLICATION_OR_BASELINE_ABSENT"
-        if arg.path:
-            result["preflight"]=preflight(data,arg.path)
+        changed=list(arg.path)
+        if not changed and arg.baseline_commit:
+            diff=subprocess.run(["git","diff","--name-only",arg.baseline_commit,"HEAD"],
+                                cwd=ROOT,text=True,capture_output=True,check=False)
+            if diff.returncode == 0:
+                changed=[name for name in diff.stdout.splitlines() if name]
+            else:
+                result["preflight_coverage"]="NOT_OBSERVED_INVALID_DIFF_BASE"
+        if changed:
+            result["preflight"]=preflight(data,changed)
+        elif "preflight_coverage" not in result:
+            result["preflight_coverage"]="NO_CHANGED_PATHS_OR_NOT_PROVIDED"
         print(json.dumps(result,ensure_ascii=False,sort_keys=True))
     except (OSError,ValueError,KeyError,TypeError) as exc:
         raise SystemExit("PI_FLR_PRIOR_ART_FAIL:"+str(exc)) from None
