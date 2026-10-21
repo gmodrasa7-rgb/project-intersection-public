@@ -119,15 +119,15 @@
       "id": "C15-08",
       "key": "doi:10.1016/j.econlet.2016.03.004",
       "year": 2016,
-      "authors": "H. Nax; A. [authorship to verify]",
+      "authors": "Ilkka Leppänen",
       "title": "Consistent conjectures and the evolutionary stability of other-regarding preferences",
-      "type": "PEER_REVIEWED_THEORETICAL_NOTE_METADATA_AUTHORS_UNVERIFIED",
+      "type": "PEER_REVIEWED_THEORETICAL_NOTE_PUBLISHER_AND_AALTO_AUTHORS_VERIFIED",
       "primary": "https://www.sciencedirect.com/science/article/abs/pii/S0165176516300684",
-      "crosscheck": "https://doi.org/10.1016/j.econlet.2016.03.004",
+      "crosscheck": "https://research.aalto.fi/fi/publications/consistent-conjectures-and-the-evolutionary-stability-of-other-re",
       "finding": "Under consistent conjectures, stable other-regarding preference approaches zero in the large finite population limit; under zero conjectures the direction can depend on strategic complementarity.",
-      "counter": "DOI/title/model outcome verified from publisher original, authors not independently verified in this turn; retain UNKNOWN rather than invent. Non-observed economy and abstract-only proof scope.",
+      "counter": "Large-population result conditioned on players' consistent conjectures and model strategic settings; not a theorem that other-regarding concerns cannot evolve in any environment. Publisher introduction and institutional original title/author verified.",
       "original_prior_relation": "Potential disconfirming boundary to universal evolutionary selection of altruism; no data collected by PI.",
-      "grade": "ORIGINAL_PUBLISHER_ABSTRACT_AUTHORS_NEED_VERIFICATION"
+      "grade": "ORIGINAL_PUBLISHER_EXTENDED_HTML_AALTO_UNIVERSITY_AUTHOR_METADATA"
     }
   ],
   "epistemic_constraint": "Publisher abstract/institution record/HTML where accessible; not all theorem proofs were verified. No actual independent AI rights or free-exit human test is claimed."
