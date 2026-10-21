@@ -293,14 +293,15 @@ class FLRValidationTests(unittest.TestCase):
 
 
     def test_regression_english_first_english_only(self):
-        """FLR-0008: the production language guard rejects Hangul inside EN original."""
+        """FLR-0008: real README language detector rejects Hangul in EN founding purpose."""
         sample = (
-            "# Project Intersection\\n"
-            "## English — Primary\\n"
-            + language.EN_README + "\\n"
-            + "[Korean](navigation/START_HERE_KO.md) 한국어 본문 유입\\n"
-            + language.KO_README + "\\n"
-            + "[English](navigation/START_HERE_EN.md)\\n"
+            "# Project Intersection\n"
+            "## English — Primary\n"
+            + language.EN_README + "\n"
+            + "[Korean](navigation/START_HERE_KO.md) 한국어 본문 유입\n"
+            + "## 한국어 — Secondary\n"
+            + language.KO_README + "\n"
+            + "[English](navigation/START_HERE_EN.md)\n"
         )
         self.assertIn("README_ENGLISH_SECTION_CONTAINS_KOREAN_PROSE",
                       language.readme_errors(sample))
