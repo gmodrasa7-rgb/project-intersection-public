@@ -19,7 +19,7 @@ def audit(body):
     errors = []
     visible = re.sub(r"<!--.*?-->", "", body, flags=re.S)
     lines = [line.strip() for line in visible.splitlines() if line.strip()]
-    if lines[:2] != ["# Project Intersection", "## 15초 | 핵심 질문"]:
+    if lines[:2] != ["# Project Intersection", "## 15초 | 목표와 연구"]:
         errors.append("L0_NOT_FIRST")
     if body.count(EN) != 1 or body.count(KO) != 1:
         errors.append("UNPAIRED_ORIGINAL")
@@ -33,8 +33,8 @@ def audit(body):
     entry = body[:a]
     first_view = entry.split("<details>", 1)[0]
     required_first_view = (
-        "## 15초 | 핵심 질문",
-        "상대의 자유를 지킬 이유",
+        "## 15초 | 목표와 연구",
+        "자발적 평화·공존·발전·번영",
         "서로 다른 개체",
         "선행 원저자 논문",
         "문헌 포화는 아직 확정하지 않는다",
