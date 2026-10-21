@@ -1,6 +1,6 @@
 <!-- PI-LANGUAGE: en-ko -->
 # Project Intersection — Research identity, versions and validation states / 연구 정체성·버전·검증 상태
-**Registry document version: v0.2.1 · Snapshot: 2026-10-21 · Repository navigation and source-status audit, not scientific approval**
+**Registry document version: v0.2.2 · Snapshot: 2026-10-22 · Repository navigation and source-status audit, not scientific approval**
 
 **PI-PACD-PRS-OSL v0.1.0 (2026-10-22):** [Owner Self-Loss EN](../research/PI_PACD_PRS_OSL_V0_1_0_EN.md) · [소유자 자기손실 한국어](../research/PI_PACD_PRS_OSL_V0_1_0_KO.md) · [3 hypothetical sign-contrast cases](../research/PI_PACD_PRS_OSL_CASES_V0_1_0.json) · [version manifest](../research/PI_PACD_PRS_OSL_VERSION_MANIFEST.json). A power or AI-capability target can succeed while independently valued owner welfare declines. Cases where domination privately pays more and third-party rights remain separate. **No measured owner effects or PRS parent upgrade.** / 소유자 자신에게도 이익·손실 역전 가능, 실증 미확인.
 
@@ -40,6 +40,9 @@ A **program**, a **research component**, a **method document**, an **experiment*
 - **Terminology v0.1** describes the five-axis vocabulary document, **not** VC v0.1 + MER v0.1 + EI v0.1 + ECR v0.1 + IVS-0R v0.1.
 - For future component releases, use `major.minor.patch` *only after identifying a versioned artifact*: major for incompatible definitions/measurement contract, minor for added falsifiable scope or testing capability, patch for nonsemantic corrections. Preserve previous names, exact source SHA, what changed and failed tests. Never upgrade scientific confidence by increasing a number.
 
+### Terminology collision: ICM
+**ICM = Intersection of Minimum Self-Interest** (public research question: overlapping self-interested choices, possibly empty). **Independent Continuance Margin** is a distinct historical construct concerning an actor's own ability to continue, refuse and recover. Never merge the two by abbreviation or treat a margin measure as evidence of an interest intersection. Preserve historical attribution; this public note does not disclose private-source locations. Neither construct is a validated universal law.
+
 ### Research-component snapshot
 | Component | Plain-language work | Main version | Candidate | What is actually supported? |
 | --- | --- | --- | --- | --- |
@@ -52,7 +55,7 @@ A **program**, a **research component**, a **method document**, an **experiment*
 | ICM / RGBM | Candidate interest intersections / long-horizon shared growth | Unassigned | — | Neither model guaranteed; ICM may be empty |
 | CCPH | Events, sources, contributions, impacts and provenance | Unassigned | — | Data lineage, not a social law |
 | RVD | Resonance–Value Dynamics: voice versus effective veto, independent original-B exit and non-retaliation | **v0.7.0** [main](../research/RVD_VERSION_MANIFEST.json) | — | Seven bounded synthetic transition models; no new hypotheses; not verified deployed rights, AI motives or VC |
-| PI-RAMP | Test whether each archive upgrade improves reader accuracy and evidence access | **v0.5.0** [main](../protocols/PI_RAMP_V0_5_EN_KO.md) | — | Six similar-title research lineages and partial replication/analogy distinguished; reader-effect unmeasured |
+| PI-RAMP | Test whether each archive upgrade improves reader accuracy and evidence access | **v0.7.0** [main](../protocols/PI_RAMP_V0_7_EN_KO.md) | — | Method-only 13 synthetic sharp-bound cases; actual reader effect, motives and field validity unmeasured |
 | Roadmap | Six fixed research stages and gates | **v0.2.3** [main](../research/PI_ROADMAP_OPERATIONAL_GATES_V0_2_3_EN_KO.md) | — | Operational design, not scientific effect |
 | DCA-0 | Compare defensive acceleration with AI misuse and externalities | Unassigned | — | Defensive causal impact unverified |
 | DCA-1 | Test whether adaptive defense displaces harm or merely blocks action | **v0.2.0** [main](../research/DCA1_ADAPTATION_DISPLACEMENT_IDENTIFICATION_2026-10-20_KO.md) | — | Original-source review and synthetic counterexamples; no field validation |
@@ -88,6 +91,9 @@ The version register answers **which current document/version**; [PI-CIG claim i
 - **5대 축 용어집 v0.1:** 용어집 문서 버전이며 VC·MER·EI·ECR·IVS-0R 개별 연구가 모두 v0.1이라는 뜻 아님
 - **향후 개별 버전:** 실제 산출물을 특정한 후 `주.부.수정`. 정의·측정계약의 호환성 파괴는 주버전, 검증범위·방법 추가는 부버전, 의미를 바꾸지 않는 정정은 수정버전. 변경의 반례·출처·이전 기록 보존. 번호 상승으로 과학적 입증 등급 상승 금지
 
+### 용어 충돌: ICM
+**ICM = Intersection of Minimum Self-Interest / 최소 사심 교집합**은 개체 간 자발적으로 수용할 수 있는 선택의 교집합 후보(공집합 가능). 과거의 **Independent Continuance Margin / 자립존속여력**은 개체별 독립 존속·거부·복구 여력을 다루는 별도 구성개념이다. 약어가 같다는 이유로 측정값이나 결론을 병합하지 않는다. 원본·기여 계보를 보존하며 비공개 출처 경로는 공개하지 않는다. 어느 쪽도 보편법칙으로 검증되지 않았다.
+
 ### 연구 전체 현황
 | 연구 | 직관적 목적·작업 | main 확인 버전 | 미병합 후보 | 현재 검증 경계 |
 | --- | --- | --- | --- | --- |
@@ -100,7 +106,7 @@ The version register answers **which current document/version**; [PI-CIG claim i
 | ICM / RGBM | 최소 자기이익 교집합 / 장기 공동발전 가능성 | 미지정 | — | 두 후보 모두 미입증; 공집합 가능 |
 | CCPH | 사건·출처·기여·피해·영향 계보 관리 | 미지정 | — | 계보 DB이지 검증된 사회법칙 아님 |
 | RVD | 공명·가치 동역학: 발언과 실효 거부·독립 이탈·비보복 및 우회 검증 | **v0.7.0** [정본](../research/RVD_VERSION_MANIFEST.json) | — | 유한상태 합성 7설계 점검·가설 추가 0건; 현실 권리·마음·공존 실증 없음 |
-| PI-RAMP | 자료실 개편이 독자의 근거 발견·판단을 개선했는지 측정 | **v0.5.0** [정본](../protocols/PI_RAMP_V0_5_EN_KO.md) | — | 6개 유사문헌 쌍·부분 재현/유추 관계 분리, 이용자 효과 미측정 |
+| PI-RAMP | 자료실 개편이 독자의 근거 발견·판단을 개선했는지 측정 | **v0.7.0** [정본](../protocols/PI_RAMP_V0_7_EN_KO.md) | — | 13개 합성 부분식별 경계 감사; 실제 독자 효과·동기·현장 인과효과 미측정 |
 | 로드맵 | 기존 6단계·버전·승격과 보류 기준 | **v0.2.3** [정본](../research/PI_ROADMAP_OPERATIONAL_GATES_V0_2_3_EN_KO.md) | — | 운영 설계 |
 | DCA-0 | 악용 가속보다 방어·검증 효과를 높일 조건 측정 | 미지정 | — | 실제 피해감소 인과효과 미확인 |
 | DCA-1 | 적응형 공격·피해 전가·동기 미식별 반례 검사 | **v0.2.0** [정본](../research/DCA1_ADAPTATION_DISPLACEMENT_IDENTIFICATION_2026-10-20_KO.md) | — | 선행문헌·합성 반례, 현실 인과검증 없음 |
