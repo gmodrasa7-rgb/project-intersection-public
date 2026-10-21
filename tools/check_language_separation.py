@@ -44,14 +44,16 @@ def readme_errors(body: str) -> list[str]:
     if body.count(EN_README) != 1 or body.count(KO_README) != 1:
         return ["README_ORIGINAL_MARKERS_MISSING_OR_DUPLICATE"]
     a, b = body.index(EN_README), body.index(KO_README)
-    if a >= b:
+    korean_secondary = body.find("## 한국어 — Secondary")
+    english_primary = body.find("## English — Primary")
+    if not 0 <= english_primary < a < korean_secondary < b:
         return ["README_ORIGINAL_ORDER_REVERSED"]
-    english = human_text(body[a:b])
+    english = human_text(body[a:korean_secondary])
     if KOREAN.search(english):
         errors.append("README_ENGLISH_SECTION_CONTAINS_KOREAN_PROSE")
     if "## Start here / 여기서 시작" in body:
         errors.append("README_LEGACY_MIXED_ROUTER_NOT_REMOVED")
-    first_en = body.split(EN_README, 1)[1].split(KO_README, 1)[0]
+    first_en = body.split(EN_README, 1)[1].split("## 한국어 — Secondary", 1)[0]
     first_ko = body.split(KO_README, 1)[1]
     if "navigation/START_HERE_KO.md" not in first_en[:300]:
         errors.append("README_TOP_KOREAN_SWITCH_MISSING")
