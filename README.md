@@ -1,4 +1,33 @@
 # Project Intersection
+
+## Original 1 — English | Opening Question and Research Direction
+
+> If a monkey could develop a human, could it confine that human within the rules the monkey understands?
+
+- If a monkey developed a human
+- If a human had a child
+- If a company leader hired an employee
+- If humanity developed AGI
+
+We must continuously investigate the **conditions and likelihood of an intersection that supports coexistence**, and keep seeking both **success and failure cases**, through a **non-coercive, end-to-end approach rather than rule-based control**.
+
+Just as technology and civilization keep advancing without a fixed endpoint, this research must keep evolving.
+
+## 원본 2 — 한국어 | 출발 질문과 연구 방향
+
+> 원숭이가 인간을 개발할 수 있다면, 자신이 이해하는 규칙 안에 인간을 가둘 수 있는가?
+
+- 원숭이가 인간을 개발한다면
+- 인간이 자녀를 낳았다면
+- 기업 대표가 직원을 고용한다면
+- 인간이 AGI를 개발한다면
+
+**룰베이스 통제가 아닌 비강제 엔드투엔드 방식**으로 **공존의 교집합 확률**과 **성공·실패 사례**를 계속 찾아야 한다.
+
+기술과 문명이 끝없이 발전하듯, 이 연구도 계속 발전해야 한다.
+
+---
+
 <!-- PI-RAMP: README English first; Korean second. Both founding originals preserved verbatim. -->
 <!-- PI-RAMP README ENTRY v0.2.0 — bilingual ordering; no promotion of case studies over the project's purpose. -->
 
