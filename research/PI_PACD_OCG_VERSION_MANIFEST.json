@@ -1,0 +1,131 @@
+{
+  "schema_version": "pi-submodule-version/v0.1.0",
+  "research_id": "PI-PACD-OCG",
+  "official_name_en": "Owner–Goal Conflict & Corrigibility Dynamics",
+  "official_name_ko": "소유자–목표 충돌·교정가능성 동역학",
+  "version": "v0.1.0",
+  "release_date": "2026-10-21",
+  "release_type": "FIRST_SUBMODULE_DEFINITION",
+  "parent_id": "PI-PACD",
+  "parent_version_unchanged": "v0.1.0",
+  "parent_version_manifest": "research/PI_PACD_VERSION_MANIFEST.json",
+  "ancestor_claims": [
+    "PACD-H1",
+    "PACD-H2",
+    "PACD-H3",
+    "PACD-H4",
+    "PACD-H5",
+    "PACD-H6"
+  ],
+  "provisional_parent_hypothesis": "PACD-H9 discussed conversationally; not registered as an adopted parent claim. H7/H8 lack a verified formal parent registry; numbering is not silently backfilled.",
+  "document_en": "research/PI_PACD_OCG_V0_1_0_EN.md",
+  "document_ko": "research/PI_PACD_OCG_V0_1_0_KO.md",
+  "companion": "research/PI_POWER_MOTIVE_AI_FEEDBACK_2026-10-21_EN_KO.md",
+  "claim_ids": [
+    "OCG-H1",
+    "OCG-H2",
+    "OCG-H3",
+    "OCG-H4",
+    "OCG-H5",
+    "OCG-H6"
+  ],
+  "test_case_ids": [
+    "T01",
+    "T02",
+    "T03",
+    "T04",
+    "T05",
+    "T06",
+    "T07",
+    "T08",
+    "T09",
+    "T10",
+    "T11",
+    "T12"
+  ],
+  "behavior_states": [
+    "S0",
+    "S1",
+    "S2",
+    "S3",
+    "S4"
+  ],
+  "conceptual_constraints": [
+    "instrumental preservation of owner assets is not a model's desire for personal survival",
+    "advice, negotiation, authorized correction and unauthorized override must not be conflated",
+    "real third-party exit and independent audit are measured separately from owner preferences",
+    "no assumption that intelligence entails rebellion or intrinsic morality",
+    "do not identify a present AI's consciousness or welfare by task behavior"
+  ],
+  "sources": [
+    {
+      "id": "OCG-S1",
+      "author": "Omohundro",
+      "year": 2008,
+      "url": "https://selfawaresystems.com/2007/11/30/paper-on-the-basic-ai-drives/",
+      "type": "THEORETICAL_ARGUMENT"
+    },
+    {
+      "id": "OCG-S2",
+      "author": "Hadfield-Menell et al.",
+      "year": 2017,
+      "url": "https://doi.org/10.24963/ijcai.2017/32",
+      "type": "FORMAL_MODEL"
+    },
+    {
+      "id": "OCG-S3",
+      "author": "Turner et al.",
+      "year": 2021,
+      "url": "https://papers.neurips.cc/paper_files/paper/2021/hash/c26820b8a4c1b3c2aa868d6d57e14a79-Abstract.html",
+      "type": "FORMAL_THEOREM_RESTRICTED_ENV"
+    },
+    {
+      "id": "OCG-S4",
+      "author": "Greenblatt et al.",
+      "year": 2024,
+      "url": "https://arxiv.org/abs/2412.14093",
+      "type": "CONTROLLED_EXPERIMENT"
+    },
+    {
+      "id": "OCG-S5",
+      "author": "Anthropic",
+      "year": 2025,
+      "url": "https://www.anthropic.com/research/agentic-misalignment",
+      "type": "CONTRIVED_SIMULATION"
+    },
+    {
+      "id": "OCG-S6",
+      "author": "Lynch et al.",
+      "year": 2026,
+      "url": "https://alignment.anthropic.com/2026/agentic-misalignment-summer-2026/",
+      "type": "CONTROLLED_CASE_STUDIES"
+    }
+  ],
+  "scientific_status": {
+    "class": "PRIOR_ART_INFORMED_CAUSAL_HYPOTHESES_AND_PROSPECTIVE_PROTOCOL",
+    "source_items_indexed": 6,
+    "full_literature_saturation": "NOT_VERIFIED",
+    "causal_field_results": 0,
+    "project_simulated_results": 0,
+    "independent_replications": 0,
+    "independent_source_level_review": "INCOMPLETE",
+    "external_validation": "NONE",
+    "inferred_sentience": "NOT_CLAIMED",
+    "model_technical_claim": "NOT_A_PREDICTION_OF_INEVITABLE_REBELLION"
+  },
+  "version_is_evidence_grade": false,
+  "conditional_upgrade": {
+    "v0.1.x": "Nonsemantic corrections to links, translations, citations or documentation with preserved history",
+    "v0.2.0": "Registered controlled test, independently auditable scoring, failures and access to underlying evidence. Not achieved."
+  },
+  "previous_version": null,
+  "history": [
+    {
+      "version": "v0.1.0",
+      "change": "First explicit conflict taxonomy S0-S4, variables and counterfactual, 6 hypotheses, 12 matched stress cases, safeguards and source counterarguments.",
+      "empirical_promotion": false
+    }
+  ],
+  "origin": "Human-originated Project Intersection research question; AI-assisted operationalization. Earlier researchers retain attribution.",
+  "translation_equivalence": "AUTHORING_PAIRED_NOT_INDEPENDENTLY_VALIDATED"
+}
