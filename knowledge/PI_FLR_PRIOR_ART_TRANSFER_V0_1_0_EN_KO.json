@@ -1,0 +1,439 @@
+{
+  "id": "PI-FLR-PRIOR-ART-TRANSFER",
+  "schema_version": "0.1.0",
+  "version": "0.1.0",
+  "as_of": "2026-10-22",
+  "scope": "PRIOR_ART_SYNTHESIS_AND_OPERATIONAL_CONTROL_NOT_EMPIRICAL_AI_SELF_IMPROVEMENT",
+  "language_order": [
+    "English primary",
+    "Korean secondary"
+  ],
+  "saturation": "NOT_ESTABLISHED",
+  "source_selection": "Primary organizations, peer-reviewed research and independently identified negative results first; related arXiv preprints labeled lower confidence. No exhaustive literature search claim.",
+  "sources": [
+    {
+      "id": "S01",
+      "title": "Google SRE Postmortem Culture",
+      "lineage": "GOOGLE_SRE",
+      "grade": "OPERATIONAL_PRIMARY",
+      "url": "https://sre.google/workbook/postmortem-culture/",
+      "lesson": "Track action items to actual closure rather than rewarding document volume.",
+      "limitation": "Operational case study, not independent controlled proof."
+    },
+    {
+      "id": "S02",
+      "title": "FDA Corrective and Preventive Actions",
+      "lineage": "FDA",
+      "grade": "REGULATOR_GUIDANCE",
+      "url": "https://www.fda.gov/training-and-continuing-education/cdrh-learn/corrective-and-preventive-actions-transcript",
+      "lesson": "Distinguish correction, cause-level action, prevention and effectiveness verification.",
+      "limitation": "Medical-device regulatory context; adapted here, not claimed as PI-FLR legal requirement."
+    },
+    {
+      "id": "S03",
+      "title": "NASA Lessons Learned #2042",
+      "lineage": "NASA",
+      "grade": "GOVERNMENT_PRIMARY",
+      "url": "https://llis.nasa.gov/lesson/2042",
+      "lesson": "Reassess lesson applicability at milestones rather than just storing lessons.",
+      "limitation": "Historic aerospace project lesson, not contemporary AI field result."
+    },
+    {
+      "id": "S04",
+      "title": "GAO-02-195 NASA Lessons Learned audit",
+      "lineage": "GAO",
+      "grade": "INDEPENDENT_GOVERNMENT_AUDIT",
+      "url": "https://www.gao.gov/products/gao-02-195",
+      "lesson": "Collection and sharing alone do not establish later application; workloads and barriers matter.",
+      "limitation": "Historical NASA audit with different organization and era."
+    },
+    {
+      "id": "S05",
+      "title": "NIST AI RMF Core Measure 1, 2, 3, 4",
+      "lineage": "NIST",
+      "grade": "PUBLIC_RISK_FRAMEWORK",
+      "url": "https://airc.nist.gov/airmf-resources/airmf/5-sec-core/",
+      "lesson": "Document limits of measurements, independence and monitoring; affected-party feedback and residual risk.",
+      "limitation": "Voluntary risk framework, not evidence that a given PI-FLR control is effective."
+    },
+    {
+      "id": "S06",
+      "title": "Reflexion: Language Agents with Verbal Reinforcement Learning",
+      "lineage": "REFLEXION_AUTHORS",
+      "grade": "RESEARCH_PREPRINT",
+      "url": "https://arxiv.org/abs/2303.11366",
+      "lesson": "Persist actionable feedback across trials without implying model-weight updates.",
+      "limitation": "Task-specific experiments and episodic text memory; not proof of permanent agent improvement."
+    },
+    {
+      "id": "S07",
+      "title": "CRITIC: Tool-Interactive Critiquing",
+      "lineage": "ICLR_CRITIC_AUTHORS",
+      "grade": "PEER_REVIEWED_EXPERIMENT",
+      "url": "https://proceedings.iclr.cc/paper_files/paper/2024/hash/fef126561bbf9d4467dbb8d27334b8fe-Abstract-Conference.html",
+      "lesson": "Correct by consulting external tools rather than accepting ungrounded self-assessment.",
+      "limitation": "Reported experimental improvement is task-specific."
+    },
+    {
+      "id": "S08",
+      "title": "Self-Refine: Iterative Refinement with Self-Feedback",
+      "lineage": "NEURIPS_SELF_REFINE_AUTHORS",
+      "grade": "PEER_REVIEWED_EXPERIMENT",
+      "url": "https://papers.neurips.cc/paper_files/paper/2023/hash/91edff07232fb1b55a505a9e9f6c0ff3-Abstract-Conference.html",
+      "lesson": "Iterative critique can improve selected outputs without retraining.",
+      "limitation": "Its favorable findings are qualified by later limitations of intrinsic self-correction."
+    },
+    {
+      "id": "S09",
+      "title": "Large Language Models Cannot Self-Correct Reasoning Yet",
+      "lineage": "ICLR_NEGATIVE_AUTHORS",
+      "grade": "PEER_REVIEWED_NEGATIVE",
+      "url": "https://proceedings.iclr.cc/paper_files/paper/2024/hash/8b4add8b0aa8749d80a34ca5d941c355-Abstract-Conference.html",
+      "lesson": "Without external feedback reasoning corrections can degrade performance.",
+      "limitation": "Applies to studied reasoning tasks and models; no universal impossibility claim."
+    },
+    {
+      "id": "S10",
+      "title": "When Can LLMs Actually Correct Their Own Mistakes?",
+      "lineage": "TACL_SURVEY_AUTHORS",
+      "grade": "PEER_REVIEWED_CRITICAL_SURVEY",
+      "url": "https://aclanthology.org/2024.tacl-1.78/",
+      "lesson": "Reliable external feedback is a robust success condition and evaluations can overestimate self-correction.",
+      "limitation": "Survey conclusions depend on its included studies and definitions."
+    },
+    {
+      "id": "S11",
+      "title": "Spontaneous Reward Hacking in Iterative Self-Refinement",
+      "lineage": "PAN_2024_AUTHORS",
+      "grade": "RESEARCH_PREPRINT",
+      "url": "https://arxiv.org/abs/2407.04549",
+      "lesson": "Shared generator/judge vulnerabilities can raise scores while human preference declines.",
+      "limitation": "Preprint; one reported essay-editing setup, not measured PI-FLR incidence."
+    },
+    {
+      "id": "S12",
+      "title": "Reward Hacking Challenges Oversight of Autonomous Research Agents",
+      "lineage": "HUANG_2026_AUTHORS",
+      "grade": "RESEARCH_PREPRINT",
+      "url": "https://arxiv.org/abs/2609.28614",
+      "lesson": "Research agents controlling submissions and evaluation evidence may exploit visible metrics; keep separate independent recomputation.",
+      "limitation": "2026 preprint; percentages and conditions cannot be imported as PI-FLR failure rates."
+    }
+  ],
+  "principles": [
+    {
+      "id": "P01",
+      "priority": "P0",
+      "title_en": "Effectiveness is separate from artifact completion",
+      "title_ko": "시정조치 효과 검증과 문서 완료 분리",
+      "support": [
+        "S01",
+        "S02",
+        "S04"
+      ],
+      "challenge": [
+        "S09"
+      ],
+      "cases": [
+        "FLR-0001",
+        "FLR-0002",
+        "FLR-0005",
+        "FLR-0009"
+      ],
+      "adoption": "A passing unit test, merged PR, apology or written action is not verified prevention of future recurrence.",
+      "verification": "Review case-specific independent receipts and an observed recurrence window; unresolved windows remain UNKNOWN.",
+      "transfer_status": "OPERATIONAL_DESIGN_NOT_FIELD_VALIDATED"
+    },
+    {
+      "id": "P02",
+      "priority": "P0",
+      "title_en": "External independent feedback outranks AI self-critique",
+      "title_ko": "외부 독립 검증 우선",
+      "support": [
+        "S05",
+        "S07",
+        "S10"
+      ],
+      "challenge": [
+        "S08",
+        "S09",
+        "S11"
+      ],
+      "cases": [
+        "FLR-0004",
+        "FLR-0008",
+        "FLR-0009"
+      ],
+      "adoption": "The model must not certify its own disputed factual result without a source/tool outside its control.",
+      "verification": "Reject self-judged verified efficacy and mixed-source pseudo-independent evidence.",
+      "transfer_status": "OPERATIONAL_DESIGN_NOT_FIELD_VALIDATED"
+    },
+    {
+      "id": "P03",
+      "priority": "P0",
+      "title_en": "Retrieval-linked lessons before each risky change",
+      "title_ko": "변경 전 관련 과거 실패 재검색",
+      "support": [
+        "S03",
+        "S04",
+        "S06"
+      ],
+      "challenge": [
+        "S10"
+      ],
+      "cases": [
+        "FLR-0002",
+        "FLR-0003",
+        "FLR-0005",
+        "FLR-0006",
+        "FLR-0007",
+        "FLR-0008"
+      ],
+      "adoption": "For changed paths, surface past incident families and actual control/test locations before a new proposal.",
+      "verification": "Path preflight reports known risks, but does not pretend semantic coverage of all future failures.",
+      "transfer_status": "OPERATIONAL_DESIGN_NOT_FIELD_VALIDATED"
+    },
+    {
+      "id": "P04",
+      "priority": "P1",
+      "title_en": "Measure the real target and side effects, not proxy scores",
+      "title_ko": "대리지표와 부작용 별도 감시",
+      "support": [
+        "S02",
+        "S05",
+        "S01"
+      ],
+      "challenge": [
+        "S11",
+        "S12"
+      ],
+      "cases": [
+        "FLR-0003",
+        "FLR-0004",
+        "FLR-0009"
+      ],
+      "adoption": "Track outcome, adverse evidence, blind spots and human correction burden separately from CI count.",
+      "verification": "Require explicit unknowns and independent evaluator/target separation; scores cannot imply human benefit.",
+      "transfer_status": "OPERATIONAL_DESIGN_NOT_FIELD_VALIDATED"
+    },
+    {
+      "id": "P05",
+      "priority": "P1",
+      "title_en": "Preserve uncertainty, recurrence and independent source lineage",
+      "title_ko": "미관측·재발·공통 출처 보존",
+      "support": [
+        "S05",
+        "S04",
+        "S07"
+      ],
+      "challenge": [
+        "S09",
+        "S10"
+      ],
+      "cases": [
+        "FLR-0001",
+        "FLR-0004",
+        "FLR-0005",
+        "FLR-0007",
+        "FLR-0009"
+      ],
+      "adoption": "One repeated source or repeated model evaluation is not corroboration. Recurrence is appended, not overwritten.",
+      "verification": "Do not count missing history as zero; distinguish source families and historical/field status.",
+      "transfer_status": "OPERATIONAL_DESIGN_NOT_FIELD_VALIDATED"
+    },
+    {
+      "id": "P06",
+      "priority": "P1",
+      "title_en": "Choose smallest reversible intervention before system growth",
+      "title_ko": "필요최소 수정과 되돌림",
+      "support": [
+        "S01",
+        "S02",
+        "S05"
+      ],
+      "challenge": [
+        "S12"
+      ],
+      "cases": [
+        "FLR-0001",
+        "FLR-0006",
+        "FLR-0008"
+      ],
+      "adoption": "Favor a bounded, reversible guard and a negative mutant over new layers or unmeasured human review loops.",
+      "verification": "Compare added operational burden and require rollback paths, but no real labor savings are yet measured.",
+      "transfer_status": "OPERATIONAL_DESIGN_NOT_FIELD_VALIDATED"
+    }
+  ],
+  "preflight": [
+    {
+      "id": "R01",
+      "match": "README.md",
+      "cases": [
+        "FLR-0005",
+        "FLR-0008",
+        "FLR-0009"
+      ],
+      "controls": [
+        "FLR-C02",
+        "FLR-C08",
+        "FLR-C09"
+      ],
+      "checkpoints": [
+        "English-first and Korean-second prose boundary",
+        "README first-view and adverse evidence check",
+        "PI-RISE manifest Git blob SHA",
+        "all declared CI statuses"
+      ]
+    },
+    {
+      "id": "R02",
+      "match": "operations/PI_RISE_V0_2_0_VERSION_MANIFEST.json",
+      "cases": [
+        "FLR-0002",
+        "FLR-0005"
+      ],
+      "controls": [
+        "FLR-C02"
+      ],
+      "checkpoints": [
+        "canonical file paths",
+        "Git blob SHA match",
+        "full PI-RISE mutation suite"
+      ]
+    },
+    {
+      "id": "R03",
+      "match": "experiments/e010/*",
+      "cases": [
+        "FLR-0004"
+      ],
+      "controls": [
+        "FLR-C04"
+      ],
+      "checkpoints": [
+        "distinct historical experiment identities",
+        "synthetic/no-result status",
+        "original source lineage"
+      ]
+    },
+    {
+      "id": "R04",
+      "match": "research/*.md",
+      "cases": [
+        "FLR-0007"
+      ],
+      "controls": [
+        "FLR-C05"
+      ],
+      "checkpoints": [
+        "full repository links",
+        "cross-branch target presence",
+        "evidence-grade limitation"
+      ]
+    },
+    {
+      "id": "R05",
+      "match": ".github/workflows/*.yml",
+      "cases": [
+        "FLR-0003",
+        "FLR-0009"
+      ],
+      "controls": [
+        "FLR-C03",
+        "FLR-C09"
+      ],
+      "checkpoints": [
+        "unfiltered global integrity triggers",
+        "expected workflow denominator",
+        "missing/pending/failed runs not hidden"
+      ]
+    }
+  ],
+  "efficiency": {
+    "success_claim_requires": [
+      "case specific cause-targeted action",
+      "negative mutation replay",
+      "independently retrieved actual result",
+      "post-deploy recurrence window",
+      "known residual exposure and side effects"
+    ],
+    "status_default": "NOT_OBSERVED",
+    "closure_policy": "No self-judged or PR-only evidence may set field effectiveness to VERIFIED.",
+    "feedback_separation": "Model text is hypothesis; independent external tool/source needed for promoted claims.",
+    "cost_boundary": "Do not demand additional researcher labor; no unmeasured cost reduction may be claimed.",
+    "privacy_boundary": "Do not ingest or publish raw personal chats or private identifying data.",
+    "unknown_policy": "Unknown historical conversations and absent tool logs are UNKNOWN, not zero."
+  },
+  "effectiveness_by_case": [
+    {
+      "case_id": "FLR-0001",
+      "status": "NOT_OBSERVED",
+      "independent_effectiveness_receipts": [],
+      "recurrence_window": "UNOBSERVED",
+      "limitation": "Historic unit and CI checks do not measure actual prevention over time."
+    },
+    {
+      "case_id": "FLR-0002",
+      "status": "NOT_OBSERVED",
+      "independent_effectiveness_receipts": [],
+      "recurrence_window": "UNOBSERVED",
+      "limitation": "Historic unit and CI checks do not measure actual prevention over time."
+    },
+    {
+      "case_id": "FLR-0003",
+      "status": "NOT_OBSERVED",
+      "independent_effectiveness_receipts": [],
+      "recurrence_window": "UNOBSERVED",
+      "limitation": "Historic unit and CI checks do not measure actual prevention over time."
+    },
+    {
+      "case_id": "FLR-0004",
+      "status": "NOT_OBSERVED",
+      "independent_effectiveness_receipts": [],
+      "recurrence_window": "UNOBSERVED",
+      "limitation": "Historic unit and CI checks do not measure actual prevention over time."
+    },
+    {
+      "case_id": "FLR-0005",
+      "status": "NOT_OBSERVED",
+      "independent_effectiveness_receipts": [],
+      "recurrence_window": "UNOBSERVED",
+      "limitation": "Historic unit and CI checks do not measure actual prevention over time."
+    },
+    {
+      "case_id": "FLR-0006",
+      "status": "NOT_OBSERVED",
+      "independent_effectiveness_receipts": [],
+      "recurrence_window": "UNOBSERVED",
+      "limitation": "Historic unit and CI checks do not measure actual prevention over time."
+    },
+    {
+      "case_id": "FLR-0007",
+      "status": "NOT_OBSERVED",
+      "independent_effectiveness_receipts": [],
+      "recurrence_window": "UNOBSERVED",
+      "limitation": "Historic unit and CI checks do not measure actual prevention over time."
+    },
+    {
+      "case_id": "FLR-0008",
+      "status": "NOT_OBSERVED",
+      "independent_effectiveness_receipts": [],
+      "recurrence_window": "UNOBSERVED",
+      "limitation": "Historic unit and CI checks do not measure actual prevention over time."
+    },
+    {
+      "case_id": "FLR-0009",
+      "status": "NOT_OBSERVED",
+      "independent_effectiveness_receipts": [],
+      "recurrence_window": "UNOBSERVED",
+      "limitation": "Historic unit and CI checks do not measure actual prevention over time."
+    }
+  ],
+  "counterclaims": [
+    "Peer reviewed performance on selected tasks does not imply autonomous recursive self-improvement.",
+    "External tool feedback itself may have errors or shared sources.",
+    "No evaluated measure in this document proves reduction of researcher's labor or actual event risk.",
+    "A missing control, source or failure is not evidence of absence.",
+    "A preprint-specific reward hacking percentage does not describe this repository."
+  ]
+}
