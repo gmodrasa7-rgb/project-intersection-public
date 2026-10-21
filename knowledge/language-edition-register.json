@@ -530,6 +530,20 @@
         "2023 preprint statistics may be revised in 2026 Economic Journal version.",
         "New Zenodo metadata exists but primary data/README code cannot be downloaded in current environment; no original table reproduction."
       ]
+    },
+    {
+      "id": "PI-C15-ENTRY",
+      "original_1_english": "research/C15_REVIEW_EN.md",
+      "original_2_korean": "research/C15_REVIEW_KO.md",
+      "kind": "navigation_only",
+      "structural_pair_present": true,
+      "meaning_review_status": "NOT_INDEPENDENTLY_VERIFIED",
+      "original_conception_language": "ko_historical_entry_preserved",
+      "independent_review_receipt": null,
+      "one_sided_edit_exception": null,
+      "known_divergences": [
+        "English document is a brief newly written navigation companion, not a verified full translation of C15 Korean research."
+      ]
     }
   ],
   "legacy_priority_unresolved": [
@@ -571,12 +585,12 @@
     }
   ],
   "metrics": {
-    "markdown_total": 230,
+    "markdown_total": 231,
     "filename_classes": {
       "UNMARKED_LANGUAGE_UNVERIFIED": 46,
       "LEGACY_MIXED_READER_ENTRY": 2,
       "KO_SUFFIX_UNVERIFIED": 105,
-      "EN_SUFFIX_UNVERIFIED": 36,
+      "EN_SUFFIX_UNVERIFIED": 37,
       "ORDERED_BILINGUAL_FOUNDER_OR_GOVERNANCE": 2,
       "COMBINED_NAMING_UNVERIFIED": 39
     },
@@ -1497,9 +1511,15 @@
       "content_equivalence": "NOT_REVIEWED"
     },
     {
+      "path": "research/C15_REVIEW_EN.md",
+      "filename_class": "EN_SUFFIX_UNVERIFIED",
+      "counterpart_path": "research/C15_REVIEW_KO.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
       "path": "research/C15_REVIEW_KO.md",
       "filename_class": "KO_SUFFIX_UNVERIFIED",
-      "counterpart_path": null,
+      "counterpart_path": "research/C15_REVIEW_EN.md",
       "content_equivalence": "NOT_REVIEWED"
     },
     {
