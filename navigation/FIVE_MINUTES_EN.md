@@ -6,6 +6,10 @@
 
 ## 1. What is being investigated?
 
+**Does raising a child give parents ownership of every future choice? Does hiring an employee give an employer ownership of that person's life?** Legitimate caregiving and contractual authority must be distinguished from permanent domination.
+
+**If a monkey developed a human, could it permanently confine that human to the rules it understands?** This analogy opens questions about capability and the legitimacy of control over future AI. It does not settle animal behavior, current AI consciousness, or legal rights.
+
 The project asks when humans, deployed AI and future agents with different goals and capabilities can **voluntarily preserve one another's freedom, independent continuance, recovery and development** without domination. Good intentions are not assumed, nor is exploitation always presumed inefficient.
 
 **Thought experiment:** A has overwhelming power over B and no longer needs B. Exploiting B pays off; there is no monitoring, retaliation or reputational cost. Is there any self-interested reason for A to preserve B's freedom and continuance? Would the answer survive a reversal of power? This is a research question, not an empirical result.
