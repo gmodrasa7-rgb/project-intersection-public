@@ -1,0 +1,191 @@
+{
+  "schema": "ProjectIntersection.PriorArt.C17.v1",
+  "date": "2026-10-21",
+  "cycle": 17,
+  "scope": "Host sanction, partner fidelity, evolved dependence, negotiated outside option, indirect reciprocity",
+  "status": "SEARCH_ACTIVE / SATURATION_NOT_VERIFIED",
+  "source_count": {
+    "original_studies": 6,
+    "scholarly_correspondence": 2,
+    "existing_antecedent_excluded": 1,
+    "formal_systematic_search_total": "UNKNOWN",
+    "repo_doi_audit": "18 public prior-art JSON + knowledge/source-registry.json; exact DOI 0 hits in that scoped sample; unscanned Markdown/private/locally saved files UNKNOWN"
+  },
+  "records": [
+    {
+      "id": "PI-C17-01",
+      "type": "original_theory",
+      "authors": "Claire de Mazancourt; Michel Loreau; Ulf Dieckmann",
+      "year": 2005,
+      "title": "Understanding mutualism when there is adaptation to the partner",
+      "doi": "10.1111/j.0022-0477.2004.00952.x",
+      "source": "https://besjournals.onlinelibrary.wiley.com/doi/10.1111/j.0022-0477.2004.00952.x",
+      "access": "ORIGINAL_HTML_FULLTEXT_REVIEWED",
+      "mechanism": "evolved dependence vs proximate mutualism vs ultimate benefit",
+      "claim": "Current partner-dependence is not equivalent to counterfactual long-term benefit",
+      "countercase": "A formerly harmful interaction can become obligate following coadaptation",
+      "limitations": "Evolutionary ecology argument; ultimate effects difficult to measure; no human/AI right testing"
+    },
+    {
+      "id": "PI-C17-02",
+      "type": "original_empirical_and_model",
+      "authors": "Diana E Marco; Juan P Carbajal; Sergio Cannas; Rebeca Pérez-Arnedo; Ángeles Hidalgo-Perea; José Olivares; José E Ruiz-Sainz; Juan Sanjuán",
+      "year": 2009,
+      "title": "An experimental and modelling exploration of the host-sanction hypothesis in legume-rhizobia mutualism",
+      "doi": "10.1016/j.jtbi.2009.03.033",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/19358857/",
+      "publisher": "https://www.sciencedirect.com/science/article/pii/S0022519309001428",
+      "same_work_preprint": "10.1038/npre.2008.1964.1",
+      "access": "PUBLISHER_AND_PUBMED_ABSTRACT_INDEXED_FULLTEXT_EXCERPTS_ONLY",
+      "mechanism": "sanction absent under measured indicators; persistence without sanctions in specified model",
+      "claim": "Certain rhizobium-host populations can persist despite cheaters under some conditions",
+      "countercase": "Kiers 2003 reports a sanction-like response under another intervention",
+      "limitations": "Not same-protocol independent replication of Kiers; full original PDF/independent model rerun not completed"
+    },
+    {
+      "id": "PI-C17-03",
+      "type": "original_theory",
+      "authors": "E Glen Weyl; Megan E Frederickson; Douglas W Yu; Naomi E Pierce",
+      "year": 2010,
+      "title": "Economic contract theory tests models of mutualism",
+      "doi": "10.1073/pnas.1005294107",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2936620/",
+      "crosscheck": "https://pubmed.ncbi.nlm.nih.gov/20733067/",
+      "same_work_preprint_title": "Are Mutualisms Maintained by Host Sanctions or Partner Fidelity Feedback?",
+      "access": "ORIGINAL_ABSTRACT_AND_PARTIAL_HTML",
+      "mechanism": "partner fidelity feedback as alternative to costly host sanction",
+      "claim": "Coevolutionary model plus re-reading prior empirical cases favors PFF in specified conditions",
+      "countercase": "Kiers et al 2011 question definition of host sanctions and biological realism",
+      "limitations": "Model plus interpreted prior data, not a new experimental test; formal proof not independently audited"
+    },
+    {
+      "id": "PI-C17-04",
+      "type": "original_theory",
+      "authors": "Erol Akçay; Ellen L Simms",
+      "year": 2011,
+      "title": "Negotiation, Sanctions, and Context Dependency in the Legume-Rhizobium Mutualism",
+      "doi": "10.1086/659997",
+      "source": "https://www.journals.uchicago.edu/doi/abs/10.1086/659997",
+      "crosscheck": "https://pubmed.ncbi.nlm.nih.gov/21670573/",
+      "access": "ORIGINAL_PUBLISHER_ABSTRACT",
+      "mechanism": "negotiation and outside-option dependence",
+      "claim": "Apparent increased host choice may worsen outcome; sanctions alone insufficient for cooperation",
+      "countercase": "Outside-option improvement and effective choice are not monotone across bargaining conditions",
+      "limitations": "Theoretical ecological bargaining model; not field causal proof or a finding about AI rights"
+    },
+    {
+      "id": "PI-C17-05",
+      "type": "original_empirical",
+      "authors": "Stephanie S Porter; Ellen L Simms",
+      "year": 2014,
+      "title": "Selection for cheating across disparate environments in the legume-rhizobium mutualism",
+      "doi": "10.1111/ele.12318",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/25039752/",
+      "access": "ORIGINAL_INDEXED_ABSTRACT",
+      "mechanism": "selection for exploitation in forced single-pair host/symbiont pairing",
+      "claim": "Rhizobia cheating favored across contrasting environments in observed system",
+      "countercase": "Stable-looking mutualism need not imply selection for unconditional cooperation",
+      "limitations": "Single partner pairing blocks partner choice; statistical full text and raw data not checked"
+    },
+    {
+      "id": "PI-C17-06",
+      "type": "original_human_experiment",
+      "authors": "Dirk Engelmann; Urs Fischbacher",
+      "year": 2009,
+      "title": "Indirect reciprocity and strategic reputation building in an experimental helping game",
+      "doi": "10.1016/j.geb.2008.12.006",
+      "source": "https://www.sciencedirect.com/science/article/pii/S0899825609000025",
+      "access": "ORIGINAL_PUBLISHER_ABSTRACT",
+      "mechanism": "pure indirect reciprocity vs strategic reputation",
+      "claim": "Pure indirect reciprocity observed while strategic concerns still substantially influence helping decisions",
+      "countercase": "Removal of reputation-building option does not remove all prosocial incentive or identify B-preservation value",
+      "limitations": "Experiment design/sample/full paper not independently reviewed"
+    },
+    {
+      "id": "PI-C17-L1",
+      "type": "scholarly_comment_not_independent_experiment",
+      "authors": "E Toby Kiers; R Ford Denison; Atsushi Kawakita; Edward Allen Herre",
+      "year": 2011,
+      "title": "The biological reality of host sanctions and partner fidelity",
+      "doi": "10.1073/pnas.1014546108",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3024659/",
+      "access": "ORIGINAL_LETTER_TEXT_EXCERPT",
+      "mechanism": "definition dispute; multi-symbiont biological constraints",
+      "claim": "Objection to Weyl et al 2010's interpretation and biological assumptions",
+      "countercase": "Weyl et al 2011 reply",
+      "limitations": "Opinion/correspondence not independent replication"
+    },
+    {
+      "id": "PI-C17-L2",
+      "type": "scholarly_reply_not_independent_experiment",
+      "authors": "E Glen Weyl; Megan E Frederickson; Douglas W Yu; Naomi E Pierce",
+      "year": 2011,
+      "title": "Reply to Kiers et al.: Economic and biological clarity in the theory of mutualism",
+      "doi": "10.1073/pnas.1015734108",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3024685/",
+      "access": "ORIGINAL_REPLY_TEXT_EXCERPT",
+      "mechanism": "host modularity; multi-symbiont extensions",
+      "claim": "Reply to Kiers criticism while retaining PFF framework",
+      "countercase": "Kiers et al 2011 letter",
+      "limitations": "Correspondence not independent empirical result"
+    }
+  ],
+  "known_existing_not_new": [
+    {
+      "authors": "E Toby Kiers et al.",
+      "year": 2003,
+      "doi": "10.1038/nature01931",
+      "registered_in": "C16-02"
+    }
+  ],
+  "excluded_from_original_count": [
+    {
+      "authors": "Megan E Frederickson",
+      "year": 2013,
+      "doi": "10.1086/673757",
+      "reason": "REVIEW_NOT_ORIGINAL_EMPIRICAL_STUDY"
+    }
+  ],
+  "question_to_mechanism_matrix": {
+    "cooperation_with_sanctions": "HS",
+    "cooperation_without_sanctions": "PFF|evolved_dependence|self_image|intrinsic_other_regard|UNKNOWN",
+    "partner_exit_is_costly": "dependency_and_possibly_actual_benefit_need_counterfactual_disentangling",
+    "more_choice_improves_autonomy": "NOT_GENERICALLY_IDENTIFIABLE_FROM_OPTION_COUNT",
+    "reputation_free_help": "NOT_SUFFICIENT_TO_IDENTIFY_UNCONDITIONAL_OTHER_PRESERVATION"
+  },
+  "search_receipt": {
+    "date": "2026-10-21",
+    "sources": [
+      "PNAS/PMC",
+      "Harvard DASH",
+      "Wiley/Journal of Ecology",
+      "Elsevier/Journal of Theoretical Biology",
+      "The American Naturalist/University of Chicago",
+      "PubMed",
+      "Ecology Letters/PubMed",
+      "Games and Economic Behavior/Elsevier"
+    ],
+    "query_groups": [
+      "mutualism sanctions not necessary partner fidelity feedback",
+      "host sanction hypothesis legume rhizobia experimental model",
+      "economic contract theory mutualism Weyl Kiers reply",
+      "selection for cheating disparate environments",
+      "evolved dependence proximate ultimate mutualism",
+      "negotiation sanctions context dependency",
+      "indirect reciprocity strategic reputation experimental helping"
+    ],
+    "search_result_denominator": "UNKNOWN",
+    "source_recency_or_retraction_check": "NOT_EXHAUSTIVE",
+    "independent_replications_new": "0",
+    "full_study_datasets_reviewed": "0"
+  },
+  "unresolved": [
+    "2011 controversy independent experimental followups",
+    "sanction operational construct alignment across studies",
+    "evolved-dependence longitudinal empirical tests",
+    "cross-domain transfer validity to human or AI agents",
+    "original full-text/access for all candidates",
+    "actual opt-out costs and independent continuance outcomes",
+    "full repository/global DOI dedup audit"
+  ]
+}
