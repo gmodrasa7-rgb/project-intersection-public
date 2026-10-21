@@ -1,6 +1,9 @@
 <!-- PI-LANGUAGE-EXEMPT: Korean-only original selective source audit; no independent English translation or meaning-equivalence review is claimed -->
 <!-- PI-LANGUAGE: ko; source-backed selective literature review; scientific status: PROVISIONAL PRIOR-ART SYNTHESIS, NOT a new experiment -->
 # E시리즈 근본 재감사 — 원저자 선행연구·상충 근거·미해결 조건
+
+**후속 정정/중복감사(2026-10-21):** [기존 선행연구 228개 원장기록 대조, 7개 선별출처 재인용, 보이지 않는 분모와 양·음 친사회성 반례](E_SERIES_HIDDEN_DENOMINATOR_PRIOR_ART_AUDIT_2026-10-21.md). 본 문서는 당시 선별 검토이며 이미 정리된 C02·C05·C09·C12·C14 및 RVD 출처를 충분히 통합하지 않았음. 신규학술성과·문헌포화 아님.
+
 **기준일:** 2026-10-21 · **문서:** E-REASSESSMENT v0.1 (문헌조사 기록용; VC/EI/MER/ECR/IVS-0R 버전 승격 아님)
 **성격:** 기존 공개 E007–E010과 선별 원저자 문헌 비교; 논문 전문 및 원자료 전체 독립 재분석 미실시; 주제별 문헌 포화 판정 금지.
 **제약:** 신작 E실험 추가 없음, 수치로 연구 능력/가치 점수화하지 않음, 개인·사적 기록 공개하지 않음, 지원금/연구 성과 과장 금지.

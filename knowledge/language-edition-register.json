@@ -540,13 +540,13 @@
     }
   ],
   "metrics": {
-    "markdown_total": 215,
+    "markdown_total": 216,
     "filename_classes": {
-      "UNMARKED_LANGUAGE_UNVERIFIED": 44,
+      "UNMARKED_LANGUAGE_UNVERIFIED": 45,
       "LEGACY_MIXED_READER_ENTRY": 2,
       "KO_SUFFIX_UNVERIFIED": 95,
-      "ORDERED_BILINGUAL_FOUNDER_OR_GOVERNANCE": 2,
       "EN_SUFFIX_UNVERIFIED": 34,
+      "ORDERED_BILINGUAL_FOUNDER_OR_GOVERNANCE": 2,
       "COMBINED_NAMING_UNVERIFIED": 38
     },
     "meaning_verified_pairs": 0,
@@ -1509,6 +1509,12 @@
     },
     {
       "path": "research/E_SERIES_FOUNDATIONAL_PRIOR_ART_REASSESSMENT_2026-10-21.md",
+      "filename_class": "UNMARKED_LANGUAGE_UNVERIFIED",
+      "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "research/E_SERIES_HIDDEN_DENOMINATOR_PRIOR_ART_AUDIT_2026-10-21.md",
       "filename_class": "UNMARKED_LANGUAGE_UNVERIFIED",
       "counterpart_path": null,
       "content_equivalence": "NOT_REVIEWED"
