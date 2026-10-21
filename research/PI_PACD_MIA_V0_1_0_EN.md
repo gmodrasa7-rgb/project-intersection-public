@@ -70,9 +70,19 @@ The useful distinction is therefore not just “obedience versus rebellion.” I
 
 **No compulsory solution** follows from any one mechanism. Investigate cooperation as a potentially endogenous long-run incentive, reject forced self-sacrifice, and openly retain cases where the feasible ICM is empty.
 
+## 7. Two observed institutional pathways — not model experiments
+
+**RC01 · Shared pricing gate (US).** The [DOJ RealPage court-record hub](https://www.justice.gov/atr/case/us-and-plaintiff-states-v-realpage-inc) records the 2024 complaint and January 2025 amended complaint alleging competing landlords pooled commercially sensitive information into a common pricing algorithm. It lists a **Greystar final judgment (March 2, 2026)** separately from **proposed** decrees for other defendants. Regulatory allegations and procedural events are not automatically adjudicated facts about all conduct. This is an actual institutional pathway for **shared control and information flows**, not evidence that independent autonomous Q-learners learned retaliation. The relevant real-world intervention is independent price choice, restrictions on sensitive information pooling, and enforceable compliance. Consumer/renter welfare effects require case-specific evidence.
+
+**RC02 · Cloud switching gate (UK).** The [UK CMA cloud final investigation record, 2025](https://www.gov.uk/cma-cases/cloud-services-market-investigation) identifies competition concerns including switching fees, interoperability and licensing barriers. In its [March 31, 2026 intervention update](https://www.gov.uk/government/news/cma-announces-package-of-actions-on-business-software-and-cloud-services), CMA reports actions by Microsoft and Amazon to address egress and interoperability barriers while continuing oversight. This is a **documented institutional contestability intervention**, not proof that effective exit has become universal or that AI has subjective goals.
+
+**Cross-case discrimination:** RealPage examines **multiple principal businesses sharing a common decision-information gate**; UK cloud concerns the **infrastructure exit/portability gate**. Neither case by itself measures AGI behavior. Their combined relevance is PACD's human–institution–AI environment: disaggregating ownership, shared decision infrastructure, ability to switch, and actual third-party impact, instead of treating all high profits or centralization as evidence of motive.
+
+**Data to seek next:** dated complaints versus final findings, compliance and actual harm metrics, market structure before/after intervention, true data portability, switching and retaliation costs, and third-party representation. No new field evidence collected here.
+
 ## 7. Version and follow-up gate
 
-- **PI-PACD-MIA v0.1.0:** new bounded source-contradiction ledger, causal alternatives, owner/outsider split and prospective intervention matrix.
+- **PI-PACD-MIA v0.1.0:** 7 research originals and 3 official regulatory sources, causal alternatives, causal alternatives, owner/outsider split and prospective intervention matrix.
 - **Parent PACD v0.1.0, OCG v0.1.0, PRS v0.1.0:** unchanged; publication of this document does not imply their v0.2.0 criteria passed.
 - **MIA v0.2.0 (NOT achieved):** source-level independent reproduction and predeclared multiple-context policy tests, third-party independent outcomes, explicit failures, and longitudinal data quality notes.
 - **Research priority:** prioritize published replication packages and negative evidence before more handcrafted synthetic E-series scores. <PENDING> markers for sources not read in full; report the evidence boundary honestly.
