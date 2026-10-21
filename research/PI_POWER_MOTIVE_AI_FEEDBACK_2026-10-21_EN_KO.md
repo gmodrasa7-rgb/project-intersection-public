@@ -4,6 +4,7 @@
 - **Status / 상태:** CAUSAL HYPOTHESES / 인과 가설. Independent empirical validation: **not completed / 미완료**.
 - **Provenance / 기여 계보:** Project Intersection 창시자의 문제제기를 AI가 구조화한 연구 기록. 새로운 실험·원저자 문헌감사의 결과가 아님.
 - **Higher-order objective / 상위 목적:** 인간·현재 AI·미래 지능체 등 서로 다른 개체의 장기적 **자발적 공존·자유·독립적 존속·실질적 거절/이탈·복구·발전**. 이 문서는 최종 목적을 변경하지 않음.
+- **Follow-up dynamics / 후속 권력 흐름 모형:** [PI-PACD v0.1.0 — Power Accumulation & Convergence Dynamics / 권력 축적·수렴 동역학](PI_PACD_POWER_ACCUMULATION_CONVERGENCE_DYNAMICS_V0_1_0_EN_KO.md). This related analysis maps stocks, flows and converging veto/control gateways; it does not replace PMAF motives and selection hypotheses.
 - **Related axes / 연결:** MER · ECR · EI · VC · IVS-0R.
 
 ## Original 1 — English
