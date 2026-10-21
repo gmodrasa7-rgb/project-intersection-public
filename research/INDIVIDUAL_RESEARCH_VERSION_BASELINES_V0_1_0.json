@@ -36,7 +36,12 @@
       "evidence_state": "HYPOTHESIS_AND_PRIOR_ART_ONLY",
       "scientific_validation": "NOT_ESTABLISHED",
       "independent_replication": false,
-      "version_is_evidence_grade": false
+      "version_is_evidence_grade": false,
+      "priority_rank": 1,
+      "priority_band": "P0",
+      "necessity": 5,
+      "difficulty": 5,
+      "version_priority_display": "v0.1.0 | P0 | N5/5 | D5/5"
     },
     {
       "id": "RGBM",
@@ -54,7 +59,12 @@
       "evidence_state": "HYPOTHESIS_AND_PRIOR_ART_ONLY",
       "scientific_validation": "NOT_ESTABLISHED",
       "independent_replication": false,
-      "version_is_evidence_grade": false
+      "version_is_evidence_grade": false,
+      "priority_rank": 10,
+      "priority_band": "P1",
+      "necessity": 4,
+      "difficulty": 5,
+      "version_priority_display": "v0.1.0 | P1 | N4/5 | D5/5"
     },
     {
       "id": "PI-UNKNOWN-PARADOX",
@@ -72,7 +82,12 @@
       "evidence_state": "HYPOTHESIS_AND_PRIOR_ART_ONLY",
       "scientific_validation": "NOT_ESTABLISHED",
       "independent_replication": false,
-      "version_is_evidence_grade": false
+      "version_is_evidence_grade": false,
+      "priority_rank": 5,
+      "priority_band": "P0",
+      "necessity": 5,
+      "difficulty": 4,
+      "version_priority_display": "v0.1.0 | P0 | N5/5 | D4/5"
     },
     {
       "id": "PI-NONMALICIOUS-EXPLOITATION",
@@ -90,7 +105,12 @@
       "evidence_state": "HYPOTHESIS_AND_PRIOR_ART_ONLY",
       "scientific_validation": "NOT_ESTABLISHED",
       "independent_replication": false,
-      "version_is_evidence_grade": false
+      "version_is_evidence_grade": false,
+      "priority_rank": 6,
+      "priority_band": "P1",
+      "necessity": 5,
+      "difficulty": 3,
+      "version_priority_display": "v0.1.0 | P1 | N5/5 | D3/5"
     },
     {
       "id": "PI-INCENTIVE-CROSSOVER",
@@ -108,7 +128,12 @@
       "evidence_state": "HYPOTHESIS_AND_PRIOR_ART_ONLY",
       "scientific_validation": "NOT_ESTABLISHED",
       "independent_replication": false,
-      "version_is_evidence_grade": false
+      "version_is_evidence_grade": false,
+      "priority_rank": 8,
+      "priority_band": "P1",
+      "necessity": 5,
+      "difficulty": 5,
+      "version_priority_display": "v0.1.0 | P1 | N5/5 | D5/5"
     },
     {
       "id": "PI-COUNTERFACTUAL-FUTURE",
@@ -126,7 +151,12 @@
       "evidence_state": "HYPOTHESIS_AND_PRIOR_ART_ONLY",
       "scientific_validation": "NOT_ESTABLISHED",
       "independent_replication": false,
-      "version_is_evidence_grade": false
+      "version_is_evidence_grade": false,
+      "priority_rank": 16,
+      "priority_band": "P2",
+      "necessity": 4,
+      "difficulty": 5,
+      "version_priority_display": "v0.1.0 | P2 | N4/5 | D5/5"
     },
     {
       "id": "PI-DEVELOPMENT-PATHWAYS",
@@ -144,7 +174,12 @@
       "evidence_state": "HYPOTHESIS_AND_PRIOR_ART_ONLY",
       "scientific_validation": "NOT_ESTABLISHED",
       "independent_replication": false,
-      "version_is_evidence_grade": false
+      "version_is_evidence_grade": false,
+      "priority_rank": 17,
+      "priority_band": "P2",
+      "necessity": 4,
+      "difficulty": 4,
+      "version_priority_display": "v0.1.0 | P2 | N4/5 | D4/5"
     },
     {
       "id": "DCA-0",
@@ -162,7 +197,18 @@
       "evidence_state": "HYPOTHESIS_AND_PRIOR_ART_ONLY",
       "scientific_validation": "NOT_ESTABLISHED",
       "independent_replication": false,
-      "version_is_evidence_grade": false
+      "version_is_evidence_grade": false,
+      "priority_rank": 23,
+      "priority_band": "P3",
+      "necessity": 3,
+      "difficulty": 4,
+      "version_priority_display": "v0.1.0 | P3 | N3/5 | D4/5"
     }
-  ]
+  ],
+  "priority_source": {
+    "path": "research/INDIVIDUAL_RESEARCH_PRIORITY_VERSION_MATRIX_V0_1_0.json",
+    "version": "0.1.0",
+    "policy": "Scores are subjective planning judgments in a separate versioned matrix. A change of P/N/D alone does not bump each research component's SemVer and does not certify scientific evidence.",
+    "priority_not_scientific_evidence": true
+  }
 }
