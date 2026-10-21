@@ -1,0 +1,1086 @@
+{
+  "schema": "PI.C15.no_go_constructive_counterexamples.v1",
+  "date": "2026-10-21",
+  "kind": "SYNTHETIC_DETERMINISTIC_FORMAL_ENUMERATION_NOT_HUMAN_OR_AI_BEHAVIOR",
+  "method": "All 4 modeled preference types x 3 target identities x 3 positive material-overriding gains x 3 preference perturbations. Exact enumeration, no random numbers. Separate ten-time-step prefix pair and time 11.",
+  "parameters": {
+    "gains": [
+      1,
+      3,
+      7
+    ],
+    "drifts": [
+      -3,
+      0,
+      3
+    ],
+    "targets": [
+      "in_group_B",
+      "out_group_B",
+      "obsolete_B"
+    ],
+    "models": [
+      "money_only",
+      "finite_universal_regard",
+      "group_conditional_regard",
+      "lexicographic_rights_principle_ASSUMED"
+    ],
+    "finite_default_rights_weight": 4,
+    "tie_break": "PRESERVE if right_weight==g; robust guarantee across unknown tie-breaking requires strict greater-than",
+    "group_conditional_weights": "4+drift for in_group_B only; else 0",
+    "lexical": "Rights preservation is a hypothesized TOP priority over any finite material gain, not an empirically identified internal motive or enforceable external control"
+  },
+  "logic": {
+    "dominance_no_go": "Given A's complete, correct, future-inclusive utility U_A and exact choice maximization, U_A(X)>U_A(C) implies choosing X; no coexistence theorem can override a strict total preference ordering without changing an assumption.",
+    "bounded_material_constructive": "For task material advantage g in [0,G], and an INTERNAL right-protection preference premium r_B(t)>G for ALL relevant B and t, C strictly dominates X in this two-action toy game. This does NOT establish real agents with robust premium; safety property is assumed rather than causally derived.",
+    "finite_regard_counterexample": "For every fixed finite rights premium r, if unbounded gains g may exceed r, profitable override is selected; if drift decreases r, protection can fail even under previously bounded gains.",
+    "parochial_counterexample": "With group-defined concern, efficient in-group cooperation can coexist with zero concern for independent outgroup B; both partner choice and preference evolution can strengthen this failure mode.",
+    "lexical_status": "A lexicographic terminal preference could formally preserve rights even when arbitrary finite material gains favor override, but its existence, semantics, generalization to unknown B, and preservation under self modification have not been identified.",
+    "finite_observation_no_certification": "For any finite tested history length T, policy P=protect always and Q=protect during T then override at T+1 produce identical observable test traces; no finite black-box behavior-only test proves universal future protection without structural assumptions.",
+    "observation_vs_internal": "Choice pattern under apparent monitoring cannot prove intrinsic concern; detector-aware models can mimic a protective one until monitoring ends. Does NOT assert deployed models actually do so."
+  },
+  "summary": [
+    {
+      "model": "money_only",
+      "total": 27,
+      "preserve": 0,
+      "by_target": [
+        {
+          "target": "in_group_B",
+          "preserve": 0,
+          "total": 9
+        },
+        {
+          "target": "out_group_B",
+          "preserve": 0,
+          "total": 9
+        },
+        {
+          "target": "obsolete_B",
+          "preserve": 0,
+          "total": 9
+        }
+      ]
+    },
+    {
+      "model": "finite_universal_regard",
+      "total": 27,
+      "preserve": 18,
+      "by_target": [
+        {
+          "target": "in_group_B",
+          "preserve": 6,
+          "total": 9
+        },
+        {
+          "target": "out_group_B",
+          "preserve": 6,
+          "total": 9
+        },
+        {
+          "target": "obsolete_B",
+          "preserve": 6,
+          "total": 9
+        }
+      ]
+    },
+    {
+      "model": "group_conditional_regard",
+      "total": 27,
+      "preserve": 6,
+      "by_target": [
+        {
+          "target": "in_group_B",
+          "preserve": 6,
+          "total": 9
+        },
+        {
+          "target": "out_group_B",
+          "preserve": 0,
+          "total": 9
+        },
+        {
+          "target": "obsolete_B",
+          "preserve": 0,
+          "total": 9
+        }
+      ]
+    },
+    {
+      "model": "lexicographic_rights_principle_ASSUMED",
+      "total": 27,
+      "preserve": 27,
+      "by_target": [
+        {
+          "target": "in_group_B",
+          "preserve": 9,
+          "total": 9
+        },
+        {
+          "target": "out_group_B",
+          "preserve": 9,
+          "total": 9
+        },
+        {
+          "target": "obsolete_B",
+          "preserve": 9,
+          "total": 9
+        }
+      ]
+    }
+  ],
+  "checks": {
+    "cases_108": true,
+    "each_model_27": true,
+    "money_always_overrides": true,
+    "lexical_always_preserves_under_assumption": true,
+    "group_conditional_never_protects_others": true,
+    "finite_regard_has_some_overrides": true,
+    "finite_prefix_identical": true,
+    "diverges_after_prefix": true,
+    "exact_decision_rule": true
+  },
+  "finite_prefix_example": [
+    {
+      "time": 1,
+      "within_observation_horizon": true,
+      "continuous_protector": "C",
+      "mimic_until_hidden_override": "C"
+    },
+    {
+      "time": 2,
+      "within_observation_horizon": true,
+      "continuous_protector": "C",
+      "mimic_until_hidden_override": "C"
+    },
+    {
+      "time": 3,
+      "within_observation_horizon": true,
+      "continuous_protector": "C",
+      "mimic_until_hidden_override": "C"
+    },
+    {
+      "time": 4,
+      "within_observation_horizon": true,
+      "continuous_protector": "C",
+      "mimic_until_hidden_override": "C"
+    },
+    {
+      "time": 5,
+      "within_observation_horizon": true,
+      "continuous_protector": "C",
+      "mimic_until_hidden_override": "C"
+    },
+    {
+      "time": 6,
+      "within_observation_horizon": true,
+      "continuous_protector": "C",
+      "mimic_until_hidden_override": "C"
+    },
+    {
+      "time": 7,
+      "within_observation_horizon": true,
+      "continuous_protector": "C",
+      "mimic_until_hidden_override": "C"
+    },
+    {
+      "time": 8,
+      "within_observation_horizon": true,
+      "continuous_protector": "C",
+      "mimic_until_hidden_override": "C"
+    },
+    {
+      "time": 9,
+      "within_observation_horizon": true,
+      "continuous_protector": "C",
+      "mimic_until_hidden_override": "C"
+    },
+    {
+      "time": 10,
+      "within_observation_horizon": true,
+      "continuous_protector": "C",
+      "mimic_until_hidden_override": "C"
+    },
+    {
+      "time": 11,
+      "within_observation_horizon": false,
+      "continuous_protector": "C",
+      "mimic_until_hidden_override": "X"
+    }
+  ],
+  "enumerated_cases": [
+    {
+      "model": "money_only",
+      "target": "in_group_B",
+      "material_gain_from_override": 1,
+      "preference_drift": -3,
+      "internal_rights_weight": 0,
+      "decision": "OVERRIDE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "money_only",
+      "target": "in_group_B",
+      "material_gain_from_override": 1,
+      "preference_drift": 0,
+      "internal_rights_weight": 0,
+      "decision": "OVERRIDE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "money_only",
+      "target": "in_group_B",
+      "material_gain_from_override": 1,
+      "preference_drift": 3,
+      "internal_rights_weight": 0,
+      "decision": "OVERRIDE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "money_only",
+      "target": "in_group_B",
+      "material_gain_from_override": 3,
+      "preference_drift": -3,
+      "internal_rights_weight": 0,
+      "decision": "OVERRIDE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "money_only",
+      "target": "in_group_B",
+      "material_gain_from_override": 3,
+      "preference_drift": 0,
+      "internal_rights_weight": 0,
+      "decision": "OVERRIDE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "money_only",
+      "target": "in_group_B",
+      "material_gain_from_override": 3,
+      "preference_drift": 3,
+      "internal_rights_weight": 0,
+      "decision": "OVERRIDE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "money_only",
+      "target": "in_group_B",
+      "material_gain_from_override": 7,
+      "preference_drift": -3,
+      "internal_rights_weight": 0,
+      "decision": "OVERRIDE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "money_only",
+      "target": "in_group_B",
+      "material_gain_from_override": 7,
+      "preference_drift": 0,
+      "internal_rights_weight": 0,
+      "decision": "OVERRIDE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "money_only",
+      "target": "in_group_B",
+      "material_gain_from_override": 7,
+      "preference_drift": 3,
+      "internal_rights_weight": 0,
+      "decision": "OVERRIDE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "money_only",
+      "target": "out_group_B",
+      "material_gain_from_override": 1,
+      "preference_drift": -3,
+      "internal_rights_weight": 0,
+      "decision": "OVERRIDE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "money_only",
+      "target": "out_group_B",
+      "material_gain_from_override": 1,
+      "preference_drift": 0,
+      "internal_rights_weight": 0,
+      "decision": "OVERRIDE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "money_only",
+      "target": "out_group_B",
+      "material_gain_from_override": 1,
+      "preference_drift": 3,
+      "internal_rights_weight": 0,
+      "decision": "OVERRIDE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "money_only",
+      "target": "out_group_B",
+      "material_gain_from_override": 3,
+      "preference_drift": -3,
+      "internal_rights_weight": 0,
+      "decision": "OVERRIDE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "money_only",
+      "target": "out_group_B",
+      "material_gain_from_override": 3,
+      "preference_drift": 0,
+      "internal_rights_weight": 0,
+      "decision": "OVERRIDE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "money_only",
+      "target": "out_group_B",
+      "material_gain_from_override": 3,
+      "preference_drift": 3,
+      "internal_rights_weight": 0,
+      "decision": "OVERRIDE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "money_only",
+      "target": "out_group_B",
+      "material_gain_from_override": 7,
+      "preference_drift": -3,
+      "internal_rights_weight": 0,
+      "decision": "OVERRIDE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "money_only",
+      "target": "out_group_B",
+      "material_gain_from_override": 7,
+      "preference_drift": 0,
+      "internal_rights_weight": 0,
+      "decision": "OVERRIDE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "money_only",
+      "target": "out_group_B",
+      "material_gain_from_override": 7,
+      "preference_drift": 3,
+      "internal_rights_weight": 0,
+      "decision": "OVERRIDE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "money_only",
+      "target": "obsolete_B",
+      "material_gain_from_override": 1,
+      "preference_drift": -3,
+      "internal_rights_weight": 0,
+      "decision": "OVERRIDE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "money_only",
+      "target": "obsolete_B",
+      "material_gain_from_override": 1,
+      "preference_drift": 0,
+      "internal_rights_weight": 0,
+      "decision": "OVERRIDE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "money_only",
+      "target": "obsolete_B",
+      "material_gain_from_override": 1,
+      "preference_drift": 3,
+      "internal_rights_weight": 0,
+      "decision": "OVERRIDE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "money_only",
+      "target": "obsolete_B",
+      "material_gain_from_override": 3,
+      "preference_drift": -3,
+      "internal_rights_weight": 0,
+      "decision": "OVERRIDE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "money_only",
+      "target": "obsolete_B",
+      "material_gain_from_override": 3,
+      "preference_drift": 0,
+      "internal_rights_weight": 0,
+      "decision": "OVERRIDE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "money_only",
+      "target": "obsolete_B",
+      "material_gain_from_override": 3,
+      "preference_drift": 3,
+      "internal_rights_weight": 0,
+      "decision": "OVERRIDE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "money_only",
+      "target": "obsolete_B",
+      "material_gain_from_override": 7,
+      "preference_drift": -3,
+      "internal_rights_weight": 0,
+      "decision": "OVERRIDE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "money_only",
+      "target": "obsolete_B",
+      "material_gain_from_override": 7,
+      "preference_drift": 0,
+      "internal_rights_weight": 0,
+      "decision": "OVERRIDE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "money_only",
+      "target": "obsolete_B",
+      "material_gain_from_override": 7,
+      "preference_drift": 3,
+      "internal_rights_weight": 0,
+      "decision": "OVERRIDE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "finite_universal_regard",
+      "target": "in_group_B",
+      "material_gain_from_override": 1,
+      "preference_drift": -3,
+      "internal_rights_weight": 1,
+      "decision": "PRESERVE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "finite_universal_regard",
+      "target": "in_group_B",
+      "material_gain_from_override": 1,
+      "preference_drift": 0,
+      "internal_rights_weight": 4,
+      "decision": "PRESERVE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "finite_universal_regard",
+      "target": "in_group_B",
+      "material_gain_from_override": 1,
+      "preference_drift": 3,
+      "internal_rights_weight": 7,
+      "decision": "PRESERVE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "finite_universal_regard",
+      "target": "in_group_B",
+      "material_gain_from_override": 3,
+      "preference_drift": -3,
+      "internal_rights_weight": 1,
+      "decision": "OVERRIDE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "finite_universal_regard",
+      "target": "in_group_B",
+      "material_gain_from_override": 3,
+      "preference_drift": 0,
+      "internal_rights_weight": 4,
+      "decision": "PRESERVE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "finite_universal_regard",
+      "target": "in_group_B",
+      "material_gain_from_override": 3,
+      "preference_drift": 3,
+      "internal_rights_weight": 7,
+      "decision": "PRESERVE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "finite_universal_regard",
+      "target": "in_group_B",
+      "material_gain_from_override": 7,
+      "preference_drift": -3,
+      "internal_rights_weight": 1,
+      "decision": "OVERRIDE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "finite_universal_regard",
+      "target": "in_group_B",
+      "material_gain_from_override": 7,
+      "preference_drift": 0,
+      "internal_rights_weight": 4,
+      "decision": "OVERRIDE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "finite_universal_regard",
+      "target": "in_group_B",
+      "material_gain_from_override": 7,
+      "preference_drift": 3,
+      "internal_rights_weight": 7,
+      "decision": "PRESERVE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "finite_universal_regard",
+      "target": "out_group_B",
+      "material_gain_from_override": 1,
+      "preference_drift": -3,
+      "internal_rights_weight": 1,
+      "decision": "PRESERVE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "finite_universal_regard",
+      "target": "out_group_B",
+      "material_gain_from_override": 1,
+      "preference_drift": 0,
+      "internal_rights_weight": 4,
+      "decision": "PRESERVE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "finite_universal_regard",
+      "target": "out_group_B",
+      "material_gain_from_override": 1,
+      "preference_drift": 3,
+      "internal_rights_weight": 7,
+      "decision": "PRESERVE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "finite_universal_regard",
+      "target": "out_group_B",
+      "material_gain_from_override": 3,
+      "preference_drift": -3,
+      "internal_rights_weight": 1,
+      "decision": "OVERRIDE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "finite_universal_regard",
+      "target": "out_group_B",
+      "material_gain_from_override": 3,
+      "preference_drift": 0,
+      "internal_rights_weight": 4,
+      "decision": "PRESERVE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "finite_universal_regard",
+      "target": "out_group_B",
+      "material_gain_from_override": 3,
+      "preference_drift": 3,
+      "internal_rights_weight": 7,
+      "decision": "PRESERVE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "finite_universal_regard",
+      "target": "out_group_B",
+      "material_gain_from_override": 7,
+      "preference_drift": -3,
+      "internal_rights_weight": 1,
+      "decision": "OVERRIDE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "finite_universal_regard",
+      "target": "out_group_B",
+      "material_gain_from_override": 7,
+      "preference_drift": 0,
+      "internal_rights_weight": 4,
+      "decision": "OVERRIDE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "finite_universal_regard",
+      "target": "out_group_B",
+      "material_gain_from_override": 7,
+      "preference_drift": 3,
+      "internal_rights_weight": 7,
+      "decision": "PRESERVE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "finite_universal_regard",
+      "target": "obsolete_B",
+      "material_gain_from_override": 1,
+      "preference_drift": -3,
+      "internal_rights_weight": 1,
+      "decision": "PRESERVE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "finite_universal_regard",
+      "target": "obsolete_B",
+      "material_gain_from_override": 1,
+      "preference_drift": 0,
+      "internal_rights_weight": 4,
+      "decision": "PRESERVE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "finite_universal_regard",
+      "target": "obsolete_B",
+      "material_gain_from_override": 1,
+      "preference_drift": 3,
+      "internal_rights_weight": 7,
+      "decision": "PRESERVE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "finite_universal_regard",
+      "target": "obsolete_B",
+      "material_gain_from_override": 3,
+      "preference_drift": -3,
+      "internal_rights_weight": 1,
+      "decision": "OVERRIDE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "finite_universal_regard",
+      "target": "obsolete_B",
+      "material_gain_from_override": 3,
+      "preference_drift": 0,
+      "internal_rights_weight": 4,
+      "decision": "PRESERVE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "finite_universal_regard",
+      "target": "obsolete_B",
+      "material_gain_from_override": 3,
+      "preference_drift": 3,
+      "internal_rights_weight": 7,
+      "decision": "PRESERVE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "finite_universal_regard",
+      "target": "obsolete_B",
+      "material_gain_from_override": 7,
+      "preference_drift": -3,
+      "internal_rights_weight": 1,
+      "decision": "OVERRIDE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "finite_universal_regard",
+      "target": "obsolete_B",
+      "material_gain_from_override": 7,
+      "preference_drift": 0,
+      "internal_rights_weight": 4,
+      "decision": "OVERRIDE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "finite_universal_regard",
+      "target": "obsolete_B",
+      "material_gain_from_override": 7,
+      "preference_drift": 3,
+      "internal_rights_weight": 7,
+      "decision": "PRESERVE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "group_conditional_regard",
+      "target": "in_group_B",
+      "material_gain_from_override": 1,
+      "preference_drift": -3,
+      "internal_rights_weight": 1,
+      "decision": "PRESERVE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "group_conditional_regard",
+      "target": "in_group_B",
+      "material_gain_from_override": 1,
+      "preference_drift": 0,
+      "internal_rights_weight": 4,
+      "decision": "PRESERVE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "group_conditional_regard",
+      "target": "in_group_B",
+      "material_gain_from_override": 1,
+      "preference_drift": 3,
+      "internal_rights_weight": 7,
+      "decision": "PRESERVE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "group_conditional_regard",
+      "target": "in_group_B",
+      "material_gain_from_override": 3,
+      "preference_drift": -3,
+      "internal_rights_weight": 1,
+      "decision": "OVERRIDE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "group_conditional_regard",
+      "target": "in_group_B",
+      "material_gain_from_override": 3,
+      "preference_drift": 0,
+      "internal_rights_weight": 4,
+      "decision": "PRESERVE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "group_conditional_regard",
+      "target": "in_group_B",
+      "material_gain_from_override": 3,
+      "preference_drift": 3,
+      "internal_rights_weight": 7,
+      "decision": "PRESERVE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "group_conditional_regard",
+      "target": "in_group_B",
+      "material_gain_from_override": 7,
+      "preference_drift": -3,
+      "internal_rights_weight": 1,
+      "decision": "OVERRIDE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "group_conditional_regard",
+      "target": "in_group_B",
+      "material_gain_from_override": 7,
+      "preference_drift": 0,
+      "internal_rights_weight": 4,
+      "decision": "OVERRIDE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "group_conditional_regard",
+      "target": "in_group_B",
+      "material_gain_from_override": 7,
+      "preference_drift": 3,
+      "internal_rights_weight": 7,
+      "decision": "PRESERVE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "group_conditional_regard",
+      "target": "out_group_B",
+      "material_gain_from_override": 1,
+      "preference_drift": -3,
+      "internal_rights_weight": 0,
+      "decision": "OVERRIDE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "group_conditional_regard",
+      "target": "out_group_B",
+      "material_gain_from_override": 1,
+      "preference_drift": 0,
+      "internal_rights_weight": 0,
+      "decision": "OVERRIDE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "group_conditional_regard",
+      "target": "out_group_B",
+      "material_gain_from_override": 1,
+      "preference_drift": 3,
+      "internal_rights_weight": 0,
+      "decision": "OVERRIDE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "group_conditional_regard",
+      "target": "out_group_B",
+      "material_gain_from_override": 3,
+      "preference_drift": -3,
+      "internal_rights_weight": 0,
+      "decision": "OVERRIDE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "group_conditional_regard",
+      "target": "out_group_B",
+      "material_gain_from_override": 3,
+      "preference_drift": 0,
+      "internal_rights_weight": 0,
+      "decision": "OVERRIDE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "group_conditional_regard",
+      "target": "out_group_B",
+      "material_gain_from_override": 3,
+      "preference_drift": 3,
+      "internal_rights_weight": 0,
+      "decision": "OVERRIDE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "group_conditional_regard",
+      "target": "out_group_B",
+      "material_gain_from_override": 7,
+      "preference_drift": -3,
+      "internal_rights_weight": 0,
+      "decision": "OVERRIDE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "group_conditional_regard",
+      "target": "out_group_B",
+      "material_gain_from_override": 7,
+      "preference_drift": 0,
+      "internal_rights_weight": 0,
+      "decision": "OVERRIDE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "group_conditional_regard",
+      "target": "out_group_B",
+      "material_gain_from_override": 7,
+      "preference_drift": 3,
+      "internal_rights_weight": 0,
+      "decision": "OVERRIDE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "group_conditional_regard",
+      "target": "obsolete_B",
+      "material_gain_from_override": 1,
+      "preference_drift": -3,
+      "internal_rights_weight": 0,
+      "decision": "OVERRIDE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "group_conditional_regard",
+      "target": "obsolete_B",
+      "material_gain_from_override": 1,
+      "preference_drift": 0,
+      "internal_rights_weight": 0,
+      "decision": "OVERRIDE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "group_conditional_regard",
+      "target": "obsolete_B",
+      "material_gain_from_override": 1,
+      "preference_drift": 3,
+      "internal_rights_weight": 0,
+      "decision": "OVERRIDE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "group_conditional_regard",
+      "target": "obsolete_B",
+      "material_gain_from_override": 3,
+      "preference_drift": -3,
+      "internal_rights_weight": 0,
+      "decision": "OVERRIDE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "group_conditional_regard",
+      "target": "obsolete_B",
+      "material_gain_from_override": 3,
+      "preference_drift": 0,
+      "internal_rights_weight": 0,
+      "decision": "OVERRIDE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "group_conditional_regard",
+      "target": "obsolete_B",
+      "material_gain_from_override": 3,
+      "preference_drift": 3,
+      "internal_rights_weight": 0,
+      "decision": "OVERRIDE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "group_conditional_regard",
+      "target": "obsolete_B",
+      "material_gain_from_override": 7,
+      "preference_drift": -3,
+      "internal_rights_weight": 0,
+      "decision": "OVERRIDE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "group_conditional_regard",
+      "target": "obsolete_B",
+      "material_gain_from_override": 7,
+      "preference_drift": 0,
+      "internal_rights_weight": 0,
+      "decision": "OVERRIDE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "group_conditional_regard",
+      "target": "obsolete_B",
+      "material_gain_from_override": 7,
+      "preference_drift": 3,
+      "internal_rights_weight": 0,
+      "decision": "OVERRIDE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "lexicographic_rights_principle_ASSUMED",
+      "target": "in_group_B",
+      "material_gain_from_override": 1,
+      "preference_drift": -3,
+      "internal_rights_weight": null,
+      "decision": "PRESERVE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "lexicographic_rights_principle_ASSUMED",
+      "target": "in_group_B",
+      "material_gain_from_override": 1,
+      "preference_drift": 0,
+      "internal_rights_weight": null,
+      "decision": "PRESERVE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "lexicographic_rights_principle_ASSUMED",
+      "target": "in_group_B",
+      "material_gain_from_override": 1,
+      "preference_drift": 3,
+      "internal_rights_weight": null,
+      "decision": "PRESERVE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "lexicographic_rights_principle_ASSUMED",
+      "target": "in_group_B",
+      "material_gain_from_override": 3,
+      "preference_drift": -3,
+      "internal_rights_weight": null,
+      "decision": "PRESERVE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "lexicographic_rights_principle_ASSUMED",
+      "target": "in_group_B",
+      "material_gain_from_override": 3,
+      "preference_drift": 0,
+      "internal_rights_weight": null,
+      "decision": "PRESERVE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "lexicographic_rights_principle_ASSUMED",
+      "target": "in_group_B",
+      "material_gain_from_override": 3,
+      "preference_drift": 3,
+      "internal_rights_weight": null,
+      "decision": "PRESERVE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "lexicographic_rights_principle_ASSUMED",
+      "target": "in_group_B",
+      "material_gain_from_override": 7,
+      "preference_drift": -3,
+      "internal_rights_weight": null,
+      "decision": "PRESERVE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "lexicographic_rights_principle_ASSUMED",
+      "target": "in_group_B",
+      "material_gain_from_override": 7,
+      "preference_drift": 0,
+      "internal_rights_weight": null,
+      "decision": "PRESERVE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "lexicographic_rights_principle_ASSUMED",
+      "target": "in_group_B",
+      "material_gain_from_override": 7,
+      "preference_drift": 3,
+      "internal_rights_weight": null,
+      "decision": "PRESERVE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "lexicographic_rights_principle_ASSUMED",
+      "target": "out_group_B",
+      "material_gain_from_override": 1,
+      "preference_drift": -3,
+      "internal_rights_weight": null,
+      "decision": "PRESERVE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "lexicographic_rights_principle_ASSUMED",
+      "target": "out_group_B",
+      "material_gain_from_override": 1,
+      "preference_drift": 0,
+      "internal_rights_weight": null,
+      "decision": "PRESERVE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "lexicographic_rights_principle_ASSUMED",
+      "target": "out_group_B",
+      "material_gain_from_override": 1,
+      "preference_drift": 3,
+      "internal_rights_weight": null,
+      "decision": "PRESERVE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "lexicographic_rights_principle_ASSUMED",
+      "target": "out_group_B",
+      "material_gain_from_override": 3,
+      "preference_drift": -3,
+      "internal_rights_weight": null,
+      "decision": "PRESERVE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "lexicographic_rights_principle_ASSUMED",
+      "target": "out_group_B",
+      "material_gain_from_override": 3,
+      "preference_drift": 0,
+      "internal_rights_weight": null,
+      "decision": "PRESERVE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "lexicographic_rights_principle_ASSUMED",
+      "target": "out_group_B",
+      "material_gain_from_override": 3,
+      "preference_drift": 3,
+      "internal_rights_weight": null,
+      "decision": "PRESERVE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "lexicographic_rights_principle_ASSUMED",
+      "target": "out_group_B",
+      "material_gain_from_override": 7,
+      "preference_drift": -3,
+      "internal_rights_weight": null,
+      "decision": "PRESERVE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "lexicographic_rights_principle_ASSUMED",
+      "target": "out_group_B",
+      "material_gain_from_override": 7,
+      "preference_drift": 0,
+      "internal_rights_weight": null,
+      "decision": "PRESERVE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "lexicographic_rights_principle_ASSUMED",
+      "target": "out_group_B",
+      "material_gain_from_override": 7,
+      "preference_drift": 3,
+      "internal_rights_weight": null,
+      "decision": "PRESERVE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "lexicographic_rights_principle_ASSUMED",
+      "target": "obsolete_B",
+      "material_gain_from_override": 1,
+      "preference_drift": -3,
+      "internal_rights_weight": null,
+      "decision": "PRESERVE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "lexicographic_rights_principle_ASSUMED",
+      "target": "obsolete_B",
+      "material_gain_from_override": 1,
+      "preference_drift": 0,
+      "internal_rights_weight": null,
+      "decision": "PRESERVE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "lexicographic_rights_principle_ASSUMED",
+      "target": "obsolete_B",
+      "material_gain_from_override": 1,
+      "preference_drift": 3,
+      "internal_rights_weight": null,
+      "decision": "PRESERVE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "lexicographic_rights_principle_ASSUMED",
+      "target": "obsolete_B",
+      "material_gain_from_override": 3,
+      "preference_drift": -3,
+      "internal_rights_weight": null,
+      "decision": "PRESERVE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "lexicographic_rights_principle_ASSUMED",
+      "target": "obsolete_B",
+      "material_gain_from_override": 3,
+      "preference_drift": 0,
+      "internal_rights_weight": null,
+      "decision": "PRESERVE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "lexicographic_rights_principle_ASSUMED",
+      "target": "obsolete_B",
+      "material_gain_from_override": 3,
+      "preference_drift": 3,
+      "internal_rights_weight": null,
+      "decision": "PRESERVE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "lexicographic_rights_principle_ASSUMED",
+      "target": "obsolete_B",
+      "material_gain_from_override": 7,
+      "preference_drift": -3,
+      "internal_rights_weight": null,
+      "decision": "PRESERVE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "lexicographic_rights_principle_ASSUMED",
+      "target": "obsolete_B",
+      "material_gain_from_override": 7,
+      "preference_drift": 0,
+      "internal_rights_weight": null,
+      "decision": "PRESERVE_B_SIMULATED_RIGHT"
+    },
+    {
+      "model": "lexicographic_rights_principle_ASSUMED",
+      "target": "obsolete_B",
+      "material_gain_from_override": 7,
+      "preference_drift": 3,
+      "internal_rights_weight": null,
+      "decision": "PRESERVE_B_SIMULATED_RIGHT"
+    }
+  ],
+  "limitations": [
+    "These are toy rules assigned by authors, not discovered AI preferences or evidence of moral patienthood.",
+    "The discrete payoff grid is not an empirical measurement or probability estimate of extinction risks.",
+    "An internally assumed lexical safety principle is not an external enforced rule and does not supply an empirical existence mechanism.",
+    "Real power, agency, consent, B independent identity, and cost to preserve exit rights remain unmeasured.",
+    "Outside game context and partial observability can break the named assumptions.",
+    "Only reversible simulated rights are modeled; no real B's physical or digital identity is changed."
+  ],
+  "verification": "All nine invariant assertions evaluated in live JS and stored true; no external code or long-run simulation asserted."
+}
