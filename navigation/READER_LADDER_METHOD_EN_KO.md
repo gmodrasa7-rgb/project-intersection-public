@@ -40,4 +40,4 @@
 
 **재귀개선:** 언어 의미대응, README 첫 화면 분량, 부정결과 가시성, 링크 정상성, 원기여 보존, 되돌릴 수 있는 변경을 점검한다. 입문서가 다시 복잡해지면 새 문서를 늘리기 전에 불필요한 경로부터 줄인다.
 
-**Version v0.2.0 QA scope:** Reader timings and conversion are unmeasured; documentation guidelines do not prove any scientific claims. Keep README guardrails, EN/KO parity, E009 adverse outcome, E008 no main result, and stable original source links. External original studies newly linked in the five-minute pages are sources for conditional *mechanisms and rival explanations*, not conclusive evidence that AGI will behave a specified way. 
+**v0.2.0 검증 범위:** 실제 독서시간·이해도·다음 단계 진입률은 아직 측정하지 않았다. 문서 설계의 모범사례는 연구 가설의 실증 근거가 아니다. README 원본 순서, 영한 의미 대응, E009 부정결과, E008 본실험 미완료, 원문 링크와 이력 보존을 우선 검수한다. 5분 소개의 선행 원저자 자료는 조건부 기제·경쟁설명에 관한 것이며 미래 AGI의 특정 행동을 입증하지 않는다. 
