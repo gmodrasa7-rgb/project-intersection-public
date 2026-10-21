@@ -1,0 +1,30 @@
+name: PACD-PRS finite counterexample gate
+on:
+  pull_request:
+    paths:
+      - "tools/pacd_prs_gate.py"
+      - "tests/test_pacd_prs_gate.py"
+      - "research/PI_PACD_PRS_V0_1_0_RESULT.json"
+      - ".github/workflows/pacd-prs-gate.yml"
+  push:
+    paths:
+      - "tools/pacd_prs_gate.py"
+      - "tests/test_pacd_prs_gate.py"
+      - "research/PI_PACD_PRS_V0_1_0_RESULT.json"
+      - ".github/workflows/pacd-prs-gate.yml"
+permissions:
+  contents: read
+jobs:
+  bounded-logic-regression:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Assert authored cases and policies
+        run: python -m unittest discover -s tests -p "test_pacd_prs_gate.py" -v
+      - name: Verify stored deterministic result snapshot
+        run: |
+          python tools/pacd_prs_gate.py > /tmp/pacd_prs_actual.json
+          diff -u research/PI_PACD_PRS_V0_1_0_RESULT.json /tmp/pacd_prs_actual.json
