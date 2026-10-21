@@ -540,14 +540,14 @@
     }
   ],
   "metrics": {
-    "markdown_total": 216,
+    "markdown_total": 217,
     "filename_classes": {
       "UNMARKED_LANGUAGE_UNVERIFIED": 45,
       "LEGACY_MIXED_READER_ENTRY": 2,
       "KO_SUFFIX_UNVERIFIED": 95,
       "EN_SUFFIX_UNVERIFIED": 34,
       "ORDERED_BILINGUAL_FOUNDER_OR_GOVERNANCE": 2,
-      "COMBINED_NAMING_UNVERIFIED": 38
+      "COMBINED_NAMING_UNVERIFIED": 39
     },
     "meaning_verified_pairs": 0,
     "meaning_verified_pairs_is_a_status_count_not_a_claim_that_no_reviews_ever_occurred": true
@@ -1229,6 +1229,12 @@
       "path": "navigation/AI_REVIEW_KO.md",
       "filename_class": "KO_SUFFIX_UNVERIFIED",
       "counterpart_path": "navigation/AI_REVIEW_EN.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "navigation/RECENT_CHANGES_EN_KO.md",
+      "filename_class": "COMBINED_NAMING_UNVERIFIED",
+      "counterpart_path": null,
       "content_equivalence": "NOT_REVIEWED"
     },
     {
@@ -2309,6 +2315,16 @@
       "new_edition_pairs": 1,
       "editorial_notes": "13 original-author lineages in shared JSON ledger. Mixed EN_KO note prohibited by policy; replaced with separately tagged EN and KO research pages. No new RVD hypothesis/version, no field experiments or replication run.",
       "reviewer_actions": "Independently assess EN/KO semantic parity and original full texts, then reproduction precheck of published Ambuehl et al. data/code."
+    },
+    {
+      "as_of": "2026-10-21",
+      "status": "PI_ACCESS_CHANGE_NAVIGATION_NOT_SEMANTIC_CERTIFICATION",
+      "new_documents": [
+        "navigation/RECENT_CHANGES_EN_KO.md"
+      ],
+      "new_edition_pairs": 0,
+      "editorial_notes": "README bounded link budget retains two language-accessible change routes. Bilingual combined summary points to live GitHub commit, PR and CI feeds and labels frozen digest versus scientific validation. Not independently reviewed for semantic parity or research findings.",
+      "reviewer_actions": "Check mobile navigation, fresh source links, and whether static summary dates become stale."
     }
   ],
   "path_layout_policy": "Keep the project root entry-only; bilingual full research editions live in existing research/ and their original historical combined documents retain stable root URLs."
