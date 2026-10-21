@@ -1,4 +1,4 @@
-/* Project Intersection mobile guide v0.1.0: public-source links only; no tokens, trackers, or external runtime dependencies. */
+/* Project Intersection mobile guide v0.2.0: public-source links only; no tokens, trackers, or external runtime dependencies. */
 (() => {
   "use strict";
   const repo = "https://github.com/gmodrasa7-rgb/project-intersection-public";
@@ -10,7 +10,7 @@
       heroText: "인간과 AI 등 서로 다른 지능체가 착취·통제 대신 자발적 공존을 선택하는 조건과 실패 조건을 탐색하는 공개 연구.",
       startLink: "연구 원문 열기 ↗", installHint: "설치: 브라우저 메뉴 → 홈 화면에 추가. 설치 지원 여부는 브라우저마다 다름.",
       boundaryTitle: "검증 상태", boundaryText: "공존의 보편적 우월성은 입증되지 않았음. 부정결과와 미검증을 함께 공개.",
-      tabLearn: "이해하기", tabEvidence: "근거 확인", tabJoin: "연구 참여",
+      tabLearn: "이해하기", tabEvidence: "근거 확인", tabLab: "검증 실습", tabJoin: "연구 참여",
       learnTitle: "연구의 다섯 축", learnIntro: "결론보다 질문과 조건을 먼저 확인.",
       readTitle: "처음 읽는 순서", evidenceTitle: "불리한 증거부터",
       evidenceIntro: "합성시험·설계·미검증을 실제 검증과 혼동하지 않음.",
@@ -19,7 +19,7 @@
       typeLabel: "기여 유형", subjectLabel: "제목", descriptionLabel: "설명 / 반증 가능 조건",
       sourceLabel: "출처 URL 또는 DOI (선택)", privacyNotice: "제출 시 공개 GitHub Issue 작성 화면으로 이동. GitHub 로그인 필요. 자동 제출되지 않음. 의료·금융정보·비공개 대화·개인식별정보·비밀번호 입력 금지.",
       submitBtn: "GitHub에서 제보 검토·제출 ↗", reviewLink: "전문가용 독립 재현·비판 양식 ↗",
-      footerNote: "Project Intersection · 모바일 길잡이 v0.1.0 · 2026-10-21 기준 요약. 공개 출처만 링크. 민감정보·비공개 실록 제외.",
+      footerNote: "Project Intersection · 모바일 길잡이 v0.2.0 · 2026-10-21 기준 요약. 공개 출처만 링크. 민감정보·비공개 실록 제외.",
       issueTitles: ["반례", "선행연구", "재현", "오류", "질문"],
       issueTypes: ["반례 / Counterexample", "원저자 선행연구 / Prior art", "재현 결과 / Reproduction", "출처·표기 오류 / Correction", "연구 질문 / Question"],
       subjectPlaceholder: "핵심 주장·자료명·오류를 한 줄로",
@@ -54,7 +54,7 @@
       heroText: "An open research program asking when distinct humans, AI systems and future agents voluntarily choose coexistence over exploitation and control—and when that fails.",
       startLink: "Open original research ↗", installHint: "Install via your browser menu → Add to Home Screen. Availability varies by browser.",
       boundaryTitle: "Evidence boundary", boundaryText: "The universal superiority of coexistence has not been proven. Negative and missing results remain visible.",
-      tabLearn: "Understand", tabEvidence: "Check evidence", tabJoin: "Contribute",
+      tabLearn: "Understand", tabEvidence: "Check evidence", tabLab: "Review case", tabJoin: "Contribute",
       learnTitle: "Five research axes", learnIntro: "Questions and conditions before conclusions.",
       readTitle: "Suggested reading path", evidenceTitle: "Start with contrary evidence",
       evidenceIntro: "Synthetic tests, proposed studies and unverified claims are not field validation.",
@@ -63,7 +63,7 @@
       typeLabel: "Contribution type", subjectLabel: "Title", descriptionLabel: "Description / falsifiable condition",
       sourceLabel: "Source URL or DOI (optional)", privacyNotice: "This opens a public GitHub Issue draft. GitHub login is required. Nothing is submitted automatically. Do not include health or financial records, private chats, identifying details or credentials.",
       submitBtn: "Review and submit on GitHub ↗", reviewLink: "Independent reproduction / critique template ↗",
-      footerNote: "Project Intersection · mobile guide v0.1.0 · summary as of 2026-10-21. Public sources only. No private chronicle or sensitive information.",
+      footerNote: "Project Intersection · mobile guide v0.2.0 · summary as of 2026-10-21. Public sources only. No private chronicle or sensitive information.",
       issueTitles: ["Counterexample", "Prior art", "Reproduction", "Correction", "Question"],
       issueTypes: ["Counterexample", "Original prior art", "Reproduction result", "Source / wording correction", "Research question"],
       subjectPlaceholder: "Name the relevant claim, source or error",
@@ -112,7 +112,7 @@
     const t = copy[lang]; document.documentElement.lang = lang;
     $("ko").setAttribute("aria-pressed", String(lang === "ko"));
     $("en").setAttribute("aria-pressed", String(lang === "en"));
-    for (const id of ["heroTitle","heroText","startLink","installHint","boundaryTitle","boundaryText","tabLearn","tabEvidence","tabJoin","learnTitle","learnIntro","readTitle","evidenceTitle","evidenceIntro","evidenceNote","joinTitle","joinIntro","typeLabel","subjectLabel","descriptionLabel","sourceLabel","privacyNotice","submitBtn","reviewLink","footerNote"]) $(id).textContent = t[id];
+    for (const id of ["heroTitle","heroText","startLink","installHint","boundaryTitle","boundaryText","tabLearn","tabEvidence","tabLab","tabJoin","learnTitle","learnIntro","readTitle","evidenceTitle","evidenceIntro","evidenceNote","joinTitle","joinIntro","typeLabel","subjectLabel","descriptionLabel","sourceLabel","privacyNotice","submitBtn","reviewLink","footerNote"]) $(id).textContent = t[id];
     $("installBtn").textContent = t.appInstall;
     $("startLink").href = doc(lang === "ko" ? "navigation/START_HERE_KO.md" : "navigation/START_HERE_EN.md");
     $("subject").placeholder = t.subjectPlaceholder; $("description").placeholder = t.descriptionPlaceholder;
@@ -138,7 +138,7 @@
   }
   $("ko").addEventListener("click",()=>setLanguage("ko"));
   $("en").addEventListener("click",()=>setLanguage("en"));
-  function setLanguage(value){lang=value;try{localStorage.setItem("pi-mobile-lang",lang);}catch(_){}render();}
+  function setLanguage(value){lang=value;try{localStorage.setItem("pi-mobile-lang",lang);}catch(_){}render();document.dispatchEvent(new Event("pi-language-changed"));}
   for (const tab of document.querySelectorAll("[data-view]")) tab.addEventListener("click",()=>view(tab.dataset.view));
   $("issueForm").addEventListener("submit",(event)=>{
     event.preventDefault();
@@ -155,6 +155,10 @@
       t.sourcePrefix+": "+(source||"Not supplied / 미제공")+"\n\n"+
       "Evidence status / 검증 상태: unverified submission; project endorsement not implied.\n"+
       "Public post: exclude private/identifying information; original sources and rights must be checked.");
+    if (url.toString().length > 1900) {
+      $("privacyNotice").textContent=lang==="ko" ? "제보 링크 길이 초과. 내용을 줄인 뒤 다시 시도. 초안은 유지됨." : "Prefill URL too long. Shorten the draft; nothing was submitted.";
+      return;
+    }
     window.location.assign(url.toString());
   });
   window.addEventListener("beforeinstallprompt",(event)=>{

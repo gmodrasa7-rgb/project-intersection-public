@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="./styles.css">
   <title>Project Intersection | 모바일 연구</title>
   <script defer src="./app.js"></script>
+  <script defer src="./review-lab.js"></script>
 </head>
 <body>
   <a class="skip" href="#main">본문으로 이동 / Skip to content</a>
@@ -37,6 +38,7 @@
     <nav class="tabs" aria-label="Research sections">
       <button type="button" class="tab active" data-view="learn" aria-current="page" id="tabLearn">이해하기</button>
       <button type="button" class="tab" data-view="evidence" id="tabEvidence">근거 확인</button>
+      <button type="button" class="tab" data-view="lab" id="tabLab">검증 실습</button>
       <button type="button" class="tab" data-view="join" id="tabJoin">연구 참여</button>
     </nav>
     <section class="panel" data-panel="learn" aria-labelledby="learnTitle">
@@ -50,8 +52,39 @@
       <div id="evidenceCards" class="routes"></div>
       <p class="tiny" id="evidenceNote">본문은 읽기용 요약. 수치·상태·개정은 반드시 링크된 GitHub 원문 및 현재 커밋으로 확인.</p>
     </section>
+    <section class="panel" data-panel="lab" aria-labelledby="labTitle" hidden>
+      <div class="sectionhead"><p class="eyebrow">03 / REVIEW</p><h2 id="labTitle">원문 판별 실습</h2><p id="labIntro">원문과 한계 확인</p></div>
+      <div class="lab-box">
+        <label for="caseSelector" id="caseLabel">사례 선택</label>
+        <select id="caseSelector"></select>
+        <div class="lab-case">
+          <h3 id="labCaseTitle"></h3>
+          <p class="tiny" id="labStatus"></p>
+          <div class="lab-links">
+            <a id="frozenSource" class="btn secondary" href="#" target="_blank" rel="noopener noreferrer">고정 원문 ↗</a>
+            <a id="liveSource" class="btn secondary" href="#" target="_blank" rel="noopener noreferrer">최신 원문 ↗</a>
+          </div>
+        </div>
+        <label for="judgment" id="judgmentLabel">내 잠정 판단</label><select id="judgment"></select>
+        <button type="button" id="showExplanation" class="btn secondary">근거 범위 확인</button>
+        <p class="lab-feedback" id="labFeedback" role="status"></p>
+        <div id="labOutcome" class="lab-evidence" hidden>
+          <article><h4 id="supportHead">지지 범위</h4><p id="sourceSupport"></p></article>
+          <article><h4 id="limitHead">비지지 범위</h4><p id="sourceLimit"></p></article>
+          <article><h4 id="unknownHead">미확인</h4><p id="sourceUnknown"></p></article>
+        </div>
+        <label for="labNotes" id="notesLabel">반례·경쟁설명 (선택)</label>
+        <textarea id="labNotes" maxlength="480" rows="3"></textarea>
+        <p class="tiny" id="labPrivacy">판단·메모는 이 화면 안에서만 유지.</p>
+        <div class="lab-actions">
+          <button type="button" class="btn primary" id="issueTransfer">제보 초안으로 옮기기</button>
+          <button type="button" class="btn secondary" id="copyAIPrompt">AI 독립검증 요청문 복사</button>
+        </div>
+        <p class="tiny" id="copyStatus" role="status"></p>
+      </div>
+    </section>
     <section class="panel" data-panel="join" aria-labelledby="joinTitle" hidden>
-      <div class="sectionhead"><p class="eyebrow">03 / PARTICIPATE</p><h2 id="joinTitle">질문·반례·자료 제보</h2><p id="joinIntro">찬성 의견보다 반증, 선행 원저자 자료, 재현 실패를 우선 수집.</p></div>
+      <div class="sectionhead"><p class="eyebrow">04 / PARTICIPATE</p><h2 id="joinTitle">질문·반례·자료 제보</h2><p id="joinIntro">찬성 의견보다 반증, 선행 원저자 자료, 재현 실패를 우선 수집.</p></div>
       <form id="issueForm" class="issue-form">
         <label id="typeLabel" for="issueType">기여 유형</label>
         <select id="issueType" required>
@@ -74,7 +107,7 @@
     </section>
   </main>
   <footer>
-    <p id="footerNote">Project Intersection · 모바일 길잡이 v0.1.0 · 2026-10-21 기준 요약. 출처는 공개 저장소. 민감정보·비공개 실록을 포함하지 않음.</p>
+    <p id="footerNote">Project Intersection · 모바일 길잡이 v0.2.0 · 2026-10-21 기준 요약. 출처는 공개 저장소. 민감정보·비공개 실록을 포함하지 않음.</p>
     <a id="repoLink" href="https://github.com/gmodrasa7-rgb/project-intersection-public" target="_blank" rel="noopener noreferrer">공개 저장소 ↗</a>
   </footer>
 </body>
