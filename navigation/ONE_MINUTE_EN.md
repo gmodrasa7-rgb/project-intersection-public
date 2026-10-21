@@ -4,15 +4,15 @@
 
 [Read in Korean](ONE_MINUTE_KO.md) · [Full founding purpose](../README.md)
 
-## What might rulers do if they create intelligence beyond their own?
+## How could historical human power asymmetries change in an AGI era?
 
-Imagine one group controlling resources and rules while another cannot easily refuse or leave. Why would the powerful refrain from abuse? History offers examples of both exploitation and limits on power. **This scene is an illustration, not a documented event.**
+History includes cases where concentrated wealth, institutions, organizations, force and information enabled people to dominate or exploit others. It also contains examples of resistance, checks on power and cooperation.
 
-Now imagine AGI arriving. Existing authorities could become stronger—or lose their advantage. AI risks could arise from human use and also from AI's learned objectives and environment. Neither path is inevitable.
+**Why now?** Competition to develop AGI could reinforce existing power or disrupt it. Some AI risks could arise from human deployment incentives; others from AI learning, objectives and environments. Neither outcome is inevitable.
 
 **The research question:** Even when the stronger actor no longer needs the weaker and exploitation pays, under what conditions might distinct self-interested agents voluntarily preserve one another's **freedom, independent continuance, real refusal and exit, recovery and development**—including after power reversal?
 
-**What is known?** No general answer is proven. Original research and contrary historical cases come first. In the project's synthetic [E009 comparison](../experiments/e009/RESULT_EN.md), a complex candidate had **42.35% worse mean regret** than the best simple baseline. That is not real-world validation.
+**What is known?** No general answer is proven. Original papers, real-world cases and counterexamples come first. In our bounded synthetic [E009 comparison](../experiments/e009/RESULT_EN.md), a complex candidate performed **42.35% worse on mean regret** than the best simple baseline. This was not real-world validation.
 
 **Next:** [Five-minute explanation: history, AGI and objections](FIVE_MINUTES_EN.md) → [Research evidence and archives](ACCESS_MAP_EN.md)
 
