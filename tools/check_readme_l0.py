@@ -19,7 +19,7 @@ def audit(body):
     errors = []
     visible = re.sub(r"<!--.*?-->", "", body, flags=re.S)
     lines = [line.strip() for line in visible.splitlines() if line.strip()]
-    if lines[:2] != ["# Project Intersection", EN]:
+    if lines[:2] != ["# Project Intersection", "## 15초 | 핵심 질문"]:
         errors.append("L0_NOT_FIRST")
     if body.count(EN) != 1 or body.count(KO) != 1:
         errors.append("UNPAIRED_ORIGINAL")
@@ -28,6 +28,30 @@ def audit(body):
     if a >= b:
         errors.append("WRONG_EDITION_ORDER")
         return errors
+    # The human-first staged entry is the L0 purpose, never a new scientific result.
+    # Keep it short and keep an explicit counterexample and lack of validation visible.
+    entry = body[:a]
+    first_view = entry.split("<details>", 1)[0]
+    required_first_view = (
+        "## 15초 | 핵심 질문",
+        "상대의 자유를 지킬 이유",
+        "서로 다른 개체",
+        "선행 원저자 논문",
+        "문헌 포화는 아직 확정하지 않는다",
+        "외부 독립검증도 **아직 없다**",
+        "42.35% 나빴다",
+        "experiments/e009/RESULT_KO.md",
+    )
+    if len(first_view) > 1700 or any(t not in first_view for t in required_first_view):
+        errors.append("PROGRESSIVE_L0_FIRST_VIEW_CHANGED_OR_OVERSIZED")
+    if (entry.count("<details>"), entry.count("</details>")) != (3, 2):
+        errors.append("PROGRESSIVE_ENTRY_DISCLOSURE_MISMATCH")
+    one = "<summary><strong>1분 | 왜 묻고, 무엇부터 조사하나?</strong></summary>"
+    five = "<summary><strong>5분 | 무엇을 확인했고, 어떻게 반증할 수 있나?</strong></summary>"
+    if entry.count(one) != 1 or entry.count(five) != 1 or entry.index(one) >= entry.index(five):
+        errors.append("PROGRESSIVE_ENTRY_STAGE_MISSING_OR_REORDERED")
+    if body.count("<details>") != body.count("</details>"):
+        errors.append("PROGRESSIVE_ENTRY_UNBALANCED")
     english = body[a:b]
     subsequent = body[b:]
     next_h2 = re.search(r"^## ", subsequent[len(KO):], re.M)
@@ -58,7 +82,8 @@ def audit(body):
         ("KO", korean, "**시작 질문:**", "**과학적 경계:**",
          "**어디부터 읽을까:**", 1700, "### 핵심용어 10개"),
     ):
-        if section.count("<details>") != 1 or section.count("</details>") != 1:
+        expected = (2, 2) if label == "EN" else (1, 2)
+        if (section.count("<details>"), section.count("</details>")) != expected:
             errors.append("DISCLOSURE_COUNT_DRIFT:" + label)
             continue
         opening = section.split("<details>", 1)[0]
@@ -143,6 +168,10 @@ def test_mutations(text):
       "hide_english_question": text.replace("**Opening thought experiment:**", "**Intro hidden:**", 1),
       "hide_korean_question": text.replace("**시작 질문:**", "**미확인 질문:**", 1),
       "wrong_disclosure_order": text.replace("</details>", "</details>\\n\\n<details>", 1),
+      "hidden_15s_failure": text.replace("42.35% 나빴다", "42.35% 개선됐다", 1),
+      "hidden_15s_validity": text.replace("외부 독립검증도 **아직 없다**", "외부 독립검증 완료", 1),
+      "missing_1minute": text.replace("<summary><strong>1분 | 왜 묻고, 무엇부터 조사하나?</strong></summary>", "<summary>Other</summary>", 1),
+      "missing_5minute": text.replace("<summary><strong>5분 | 무엇을 확인했고, 어떻게 반증할 수 있나?</strong></summary>", "<summary>Other</summary>", 1),
     }
     for name, test in mutants.items():
         assert audit(test), "Mutation bypassed safeguard: " + name
