@@ -1,0 +1,53 @@
+name: README English-first language order
+
+on:
+  pull_request:
+    paths:
+      - README.md
+      - .github/workflows/readme-language-order.yml
+  push:
+    branches:
+      - main
+    paths:
+      - README.md
+      - .github/workflows/readme-language-order.yml
+
+permissions:
+  contents: read
+
+jobs:
+  verify-english-first:
+    name: English first, Korean second
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Reject reversed or missing README language sections
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+
+          readme = Path("README.md").read_text(encoding="utf-8")
+          markers = [
+              ("English primary introduction", "## English — Primary"),
+              ("English 15-second overview", "### 15 seconds | Purpose and research"),
+              ("English founding original", "## Original 1 — English | Founding Purpose"),
+              ("Korean secondary introduction", "## 한국어 — Secondary"),
+              ("Korean 15-second overview", "## 15초 | 목표와 연구"),
+              ("Korean founding original", "## 원본2 — 한국어 | 창시 목적 전문 대응본"),
+          ]
+          previous = -1
+          for description, marker in markers:
+              position = readme.find(marker)
+              if position == -1:
+                  raise SystemExit(f"FAIL: missing {description}: {marker!r}")
+              if position <= previous:
+                  raise SystemExit(f"FAIL: incorrect language order at {description}. English must precede Korean.")
+              previous = position
+
+          first_heading = next((line for line in readme.splitlines() if line.startswith("## ")), "")
+          if first_heading != "## English — Primary":
+              raise SystemExit("FAIL: README must open with the English primary section.")
+
+          print("PASS: English primary introduction and original precede Korean secondary introduction and original.")
+          PY
