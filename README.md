@@ -54,7 +54,7 @@ Project Intersection은 인간·현재 AI·미래 지능체 등 서로 다른 �
 
 </details>
 
-**그 이상 | 전문 자료실:** [선행연구 우선 원칙](PRIOR_ART_FIRST_RESEARCH_POLICY_EN_KO.md) · [전체 목차](navigation/RESEARCH_TOC_KO.md) · [연구 버전·상태](navigation/RESEARCH_VERSIONS_EN_KO.md) · [역사·현실 사례](research/CCPH_RESEARCH_ATLAS_KO.md) · [증거 원장](research/PUBLIC_EVIDENCE_INDEX_KO.md) · [연구비·회계](funding/FUNDER_START_HERE.md) · [용어 정본](research/RESEARCH_OVERVIEW_KO.md) · [기여·권리 경계](ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md).
+**그 이상 | 전문 자료실:** [선행연구 우선 원칙](PRIOR_ART_FIRST_RESEARCH_POLICY_EN_KO.md) · [전체 목차](navigation/RESEARCH_TOC_KO.md) · [목적별 자료 지도](navigation/ACCESS_MAP_KO.md) · [역사·현실 사례](research/CCPH_RESEARCH_ATLAS_KO.md) · [증거 원장](research/PUBLIC_EVIDENCE_INDEX_KO.md) · [연구비·회계](funding/FUNDER_START_HERE.md) · [용어 정본](research/RESEARCH_OVERVIEW_KO.md) · [기여·권리 경계](ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md).
 
 아래에는 **기존 영어 원본1·한국어 원본2의 창시 목적 및 상세 기록**을 보존했다. 안내문은 독서 순서만 바꿨으며 두 원문의 문구는 변경하지 않았다.
 
@@ -124,7 +124,7 @@ Project Intersection은 인간·현재 AI·미래 지능체 등 서로 다른 �
 </details>
 
 <details>
-<summary><strong>원본2 | 한국어 창시 목적 전문과 상세 기록</strong></summary>
+<summary><strong>Original 2 | Korean founding purpose and detailed references</strong></summary>
 
 ## 원본2 — 한국어 | 창시 목적 전문 대응본
 **독서 언어:** 한국어 · [영어 원본1 읽기](navigation/START_HERE_EN.md) · [1분 소개](navigation/ONE_MINUTE_KO.md) · [5분 안내](navigation/FIVE_MINUTES_KO.md).
