@@ -205,6 +205,10 @@ def check_remote(record: dict, request_json, event_name: str = "push",
             p = request_json(f"https://api.github.com/repos/{REPO}/pulls/{pr}")
             if p.get("state") != "open" or p.get("merged_at") is not None:
                 problems.append(f"{rid}: CANDIDATE_PR_CLOSED_OR_MERGED")
+        if event_name == "pull_request" and rid in INITIAL_STUDIES:
+            # New component records are absent from main until the stacked PR merges.
+            # Exact local hashes and false-promotion tests still apply.
+            continue
         expected = e.get("current_source_blob_sha")
         if expected is None:
             continue
