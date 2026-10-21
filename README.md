@@ -2,13 +2,13 @@
 <!-- L0_FOREWORD_FIRST: Original 1 English then Original 2 Korean, full matched text. Never promote a case study above this top-level purpose. -->
 
 ## Original 1 — English | Founding Purpose
-**Reading language:** English · [Read in Korean](navigation/START_HERE_KO.md).
+**Reading language:** English · [Read in Korean](navigation/START_HERE_KO.md) · [Korean in 1 minute](navigation/ONE_MINUTE_KO.md) · [English in 1 minute](navigation/ONE_MINUTE_EN.md) · [5-minute guide](navigation/FIVE_MINUTES_EN.md).
 
 **The problem:** Powerful humans, deployed AI and future agents may gain by exploiting or removing weaker agents. Preserving independence also costs resources.
 
 **Core question:** **Can distinct self-interested agents voluntarily preserve one another's freedom, independent continuance, real refusal/exit, recovery and development—even after power reversal? When does this fail?**
 
-**Research structure:** **VC**: outcome · **MER**: motives/possible experience/responses · **EI**: endogenous incentives · **ECR**: actors/affected parties · **IVS-0R**: falsification. **ICM/RGBM**: candidate models · **CCPH**: provenance. [Research map](navigation/RESEARCH_PROGRAM_EN.md).
+**Research structure:** Compare motives, incentives, affected parties and counterexamples. [Five-axis research map](navigation/RESEARCH_PROGRAM_EN.md).
 
 **Hardest case:** A no longer needs B, faces no detection, punishment or reputation loss, and gains materially from exploiting B. Roles, goals and power may change. Rules and cooperation scores alone cannot settle this case.
 
@@ -20,7 +20,7 @@
 
 **Contrary evidence visible before expanding:** [E009](experiments/e009/RESULT_EN.md): Project-v3 was **42.35% worse** in mean regret than the best simple synthetic baseline; **3 of 4 criteria failed**. [E008](experiments/e008/README_EN.md): **no completed main policy result**. Neither is field validation.
 
-**Choose your route:** [Changes](navigation/RECENT_CHANGES_EN_KO.md) · [Start](navigation/ACCESS_MAP_EN.md) · [Versions](navigation/RESEARCH_VERSIONS_EN_KO.md#original-1--english) · [Evidence](research/PUBLIC_EVIDENCE_INDEX_EN.md) · [Review](research/PUBLIC_REVIEW_PACKET_EN.md).
+**Choose your route:** [Topic map](navigation/ACCESS_MAP_EN.md) · [Evidence](research/PUBLIC_EVIDENCE_INDEX_EN.md) · [Critical review](research/PUBLIC_REVIEW_PACKET_EN.md).
 
 <details>
 <summary>Technical purpose, evidence, rights and reviewer routes</summary>
@@ -61,13 +61,13 @@
 [All ten concepts, precise definitions and limitations](research/RESEARCH_OVERVIEW_EN.md#ten-core-concepts) are preserved for technical reading. CCPH is a historical/current/future **contribution and impact provenance database**. The **Continuance–Contribution Pathways Hypothesis** is one hypothesis within it, not its definition or a proven social outcome.
 
 ## 원본2 — 한국어 | 창시 목적 전문 대응본
-**독서 언어:** 한국어 · [영어 원본1 읽기](navigation/START_HERE_EN.md).
+**독서 언어:** 한국어 · [영어 원본1 읽기](navigation/START_HERE_EN.md) · [1분 소개](navigation/ONE_MINUTE_KO.md) · [5분 안내](navigation/FIVE_MINUTES_KO.md).
 
 **문제:** 인간·현재 배포된 AI·미래 지능체 사이에 압도적인 권력 격차가 생기면 강자가 타 개체의 통제·착취·제거로 이득을 얻을 수 있다. 반면 독립성 보존에도 비용 발생.
 
 **핵심 연구 질문:** **각자가 자기 이익을 추구하면서도 타자의 자유·독립적 존속·실질적 거부/이탈·복구·발전을 자발적으로 보존할 수 있는가? 권력반전 이후에도 가능한 조건과 실패 조건은 무엇인가?**
 
-**연구체계:** **VC**는 최종 목표·결과, **MER**는 동기·가능한 경험·반응의 형성, **EI**는 내재적 유인, **ECR**은 개체·영향당사자·관계 식별, **IVS-0R**은 반례·독립 검증. **ICM/RGBM**은 후보 모형, **CCPH**는 기여·영향 사건의 계보 데이터베이스. [원저자 선행연구를 연결한 정본 연구지도](navigation/RESEARCH_PROGRAM_KO.md).
+**연구체계:** 동기·유인·영향 당사자·반례를 구분하여 조사한다. [5축 정본 연구지도](navigation/RESEARCH_PROGRAM_KO.md).
 
 **가장 어려운 조건:** A에게 B가 더는 필요 없고, 감시·응징·평판 부담이 없으며, B의 착취가 A에게 물질적으로 이익. 이후 목표·권력·역할까지 변화. 강제 규칙이나 높은 협력률만으로 해답 아님.
 

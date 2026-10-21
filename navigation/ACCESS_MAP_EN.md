@@ -4,6 +4,8 @@
 
 [Read this map in Korean](ACCESS_MAP_KO.md) · [Return to the founding purpose](../README.md) · [Report an access barrier](../.github/ACCESSIBILITY.md)
 
+**Read by depth:** [One-minute introduction](ONE_MINUTE_EN.md) → [Five-minute guide](FIVE_MINUTES_EN.md) → [full technical research map](RESEARCH_PROGRAM_EN.md). [Design sources and test limits](READER_LADDER_METHOD_EN_KO.md).
+
 **First-time reader:** Start with the research question, inspect a result that contradicts the project, then select one independent check. Do not treat an index, a green CI run, a literature count or a draft PR as empirical proof. "Original 1" means publication order, not language of conception or authorship.
 
 ## Choose one task, not a folder

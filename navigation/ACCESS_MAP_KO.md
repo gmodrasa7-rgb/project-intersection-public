@@ -4,6 +4,8 @@
 
 [영어 대응 지도](ACCESS_MAP_EN.md) · [최상위 창시 목적](../README.md) · [접근성 오류 신고 안내](../.github/ACCESSIBILITY.md)
 
+**독서 깊이 선택:** [처음 읽는 1분 소개](ONE_MINUTE_KO.md) → [깊이 읽는 5분 안내](FIVE_MINUTES_KO.md) → [전문 연구지도](RESEARCH_PROGRAM_KO.md). [선행사례 교집합과 검증 한계](READER_LADDER_METHOD_EN_KO.md).
+
 **첫 방문 권장 순서:** 연구질문 → 프로젝트에 불리한 증거 → 독립 반증 하나. 색인·CI 성공·논문 목록·미병합 PR은 실증이 아님. 원본1·원본2는 공개 순서이며 최초 발안 언어나 저작권의 서열이 아님.
 
 ## 폴더 대신 필요한 질문으로 접근
