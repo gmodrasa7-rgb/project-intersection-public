@@ -13,15 +13,17 @@
 
 **자기이익 보장 한계:** 미래 영향과 실제 선호를 모두 포함해 완전히 정의한 A의 총 기대효용에서 착취가 보존보다 엄격히 우월하면 효용극대화 A의 자발적 보존은 그 모형의 최적해가 아님. 새로운 정리가 아니라 조건부 합리적 선택의 논리적 귀결. 그러나 **즉각적 물질이익 증가와 총효용 증가는 서로 다름**. 진짜 연구 대상은 타자보존 선호·내재 유인이 형성되고 유지·수정·붕괴하는 기제와 실제 적용범위. 보이지 않는 미래 기여를 임의의 양수로 가정하여 결론을 만드는 행위 금지.
 
-**MER-CIR v0.1.0 — 문맥 적응·모방·재조합의 지능 형성 후보 기제(미검증):** [한국어 규격](../research/MER_CIR_CONTEXT_IMITATION_RECOMBINATION_2026-10-21_KO.md) · [영어 대응](../research/MER_CIR_CONTEXT_IMITATION_RECOMBINATION_2026-10-21_EN.md) · [버전 원장](../research/MER_CIR_VERSION_MANIFEST.json). 모방·적응은 지능·공명 배제 근거도, 자율적 사심·의식·공명의 증명도 아님. CIR-1~CIR-5 판별검사 후보 추가. RVD v0.7.0 및 전체 MER의 미할당 버전은 유지.
+**MER·EI 상위축 v0.1.0 (2026-10-21, 문헌·가설 정본, 미검증):** [MER](../research/MER_V0_1_0_KO.md) · [EI](../research/EI_V0_1_0_KO.md) · [MER 버전](../research/MER_VERSION_MANIFEST.json) · [EI 버전](../research/EI_VERSION_MANIFEST.json) · [원저·반례 교차원장](../research/MER_EI_SOURCE_CROSSWALK_2026-10-21.json). 하위 RVD v0.7.0·MER-CIR v0.1.0 변경 없이 보존. 과학적 독립검증·문헌 포화 없음.
+
+**MER-CIR v0.1.0 — 문맥 적응·모방·재조합의 지능 형성 후보 기제(미검증):** [한국어 규격](../research/MER_CIR_CONTEXT_IMITATION_RECOMBINATION_2026-10-21_KO.md) · [영어 대응](../research/MER_CIR_CONTEXT_IMITATION_RECOMBINATION_2026-10-21_EN.md) · [버전 원장](../research/MER_CIR_VERSION_MANIFEST.json). 모방·적응은 지능·공명 배제 근거도, 자율적 사심·의식·공명의 증명도 아님. CIR-1~CIR-5 판별검사 후보 추가. RVD v0.7.0은 유지. 전체 MER는 본 하위규격 최초 작성 당시 미할당, 이후 상위축 v0.1.0로 별도 버전 지정.
 
 ## 2. 다섯 연구축: 기능과 반증 대상 분리
 
 | 축 | 역할 | 핵심 오판 방지 | 원자료 |
 | --- | --- | --- | --- |
 | **VC — 자발적 공존** | 실질 거부·이탈·독립존속·복구·미래 발전의 목표와 결과변수. 권력반전 및 제3자까지 검사 | 복종을 협력으로, 개체 소멸을 합산이득으로 바꾸는 오류 | [5축 정본](../research/TERMINOLOGY_FIVE_AXES_V0_1_KO.md) |
-| **MER — 마음·경험·반응** | 동기 M, 주관적 경험 가능성 E, 관측 반응 R을 구분하고 욕구·공포·배려·지배·도덕판단의 형성 및 변화를 연구 | 반응만으로 내면동기나 현재 AI 의식을 입증했다고 주장하는 오류 | [선행문헌 C02](../research/PRIOR_ART_MER_INTRINSIC_MORAL_MOTIVES_CYCLE02_2026-10-20_KO.md) |
-| **EI — 내재적 유인** | 강자의 실제 선택·기회비용·목표·학습·선호 안정성·관측되지 않는 사익을 검증 | 연구자가 원하는 보상을 모형에 넣어 공존을 증명하는 순환논리 | [선행문헌 C01](../research/PRIOR_ART_EI_EXTREME_ASYMMETRY_CYCLE01_2026-10-20_KO.md) |
+| **MER — 마음·경험·반응** | 동기 M, 주관적 경험 가능성 E, 관측 반응 R을 구분하고 욕구·공포·배려·지배·도덕판단의 형성 및 변화를 연구 | 반응만으로 내면동기나 현재 AI 의식을 입증했다고 주장하는 오류 | [MER v0.1.0](../research/MER_V0_1_0_KO.md) · [선행문헌 C02](../research/PRIOR_ART_MER_INTRINSIC_MORAL_MOTIVES_CYCLE02_2026-10-20_KO.md) |
+| **EI — 내재적 유인** | 강자의 실제 선택·기회비용·목표·학습·선호 안정성·관측되지 않는 사익을 검증 | 연구자가 원하는 보상을 모형에 넣어 공존을 증명하는 순환논리 | [EI v0.1.0](../research/EI_V0_1_0_KO.md) · [선행문헌 C01](../research/PRIOR_ART_EI_EXTREME_ASYMMETRY_CYCLE01_2026-10-20_KO.md) |
 | **ECR — 개체·영향당사자·관계** | 개체 식별, 34개 역할군 관련성, 제3자, 권력과 행동기회, 시간별 사건과 인과 식별가능성 | 한 사람의 복수 역할을 여러 사람으로 계산하거나 UNKNOWN을 0으로 간주하는 오류 | [5축 정본](../research/TERMINOLOGY_FIVE_AXES_V0_1_KO.md) |
 | **IVS-0R** | 반대가설·반례·권력/역할반전·독립 검증·회귀검사·오류 복구를 통한 감사 방법론 | 합성시험 PASS나 AI 자기보고를 현실 검증으로 승격하는 오류 | [독립검토](../research/PUBLIC_REVIEW_PACKET_KO.md) |
 
