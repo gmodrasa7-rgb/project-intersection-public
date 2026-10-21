@@ -353,5 +353,17 @@ class FLRValidationTests(unittest.TestCase):
 
 
 
+    def test_regression_unmapped_material_change_blocks(self):
+        """C12: an unclassified material change may not be silently green."""
+        import pi_flr_replay_gate as replay
+        from types import SimpleNamespace
+        data=json.loads((ROOT/replay.TRANSFER_PATH).read_text(encoding="utf-8"))
+        p=replay.planned_replay(data,["README.md","research/new_evidence.json"])
+        self.assertIn("research/new_evidence.json",p["unmapped_material_paths"])
+        status=replay.execute(p,run=lambda *a,**kw:SimpleNamespace(returncode=0))
+        self.assertEqual(status["status"],"BLOCKED_UNMAPPED_MATERIAL")
+
+
+
 if __name__ == "__main__":
     unittest.main()
