@@ -44,9 +44,21 @@
       "scope": "AER publisher abstract, author webpage; full text not audited",
       "replication": {
         "available": true,
-        "url": "https://www.openicpsr.org/openicpsr/project/120765/version/V1/view",
-        "status": "PUBLIC_DATA_CODE_LOCATED_NOT_EXECUTED",
-        "independent_replication": false
+        "deposit_doi": "10.3886/E120765V1",
+        "repository_version": "V1",
+        "source_metadata_verified": true,
+        "author_readme_contents_read": false,
+        "author_stata_code_contents_read": false,
+        "raw_data_downloaded": false,
+        "author_tables_reproduced": false,
+        "independent_replication": false,
+        "old_url": "https://www.openicpsr.org/openicpsr/project/120765/version/V1/view",
+        "new_catalog_search": "https://www.icpsr.umich.edu/sites/search/studies?fq=PRINCIPAL_INVESTIGATORS_FACET%3AAmbuehl%2C+Sandro&q=&rows=50&sort=score+desc&start=0",
+        "access_context": "openICPSR retired August 2026; original DOI persists. Legacy direct download of ReadMe failed 403, cause unestablished. Official current ICPSR authentication/access not verified.",
+        "stage": "A0_METADATA_VERIFIED_A1_FILE_ACCESS_BLOCKED",
+        "preflight": "research/MER_EI_AER_2021_REPLICATION_ACCESS_GATE_2026-10-21.json",
+        "preflight_ko": "research/MER_EI_AER_2021_REPLICATION_PREFLIGHT_2026-10-21_KO.md",
+        "preflight_en": "research/MER_EI_AER_2021_REPLICATION_PREFLIGHT_2026-10-21_EN.md"
       }
     },
     {
@@ -208,5 +220,6 @@
       "scope": "Elsevier publisher abstract and university author publication listing; full text not independently audited",
       "dedup_ref": "https://www.ifo.de/en/cesifo/publications/2026/working-paper/choosing-not-choose-uncovering-intrinsic-preferences-choice"
     }
-  ]
+  ],
+  "replication_preflight_audit": "2026-10-21 metadata-level access verification and 2026 ICPSR migration caution; no experimental measurements added."
 }
