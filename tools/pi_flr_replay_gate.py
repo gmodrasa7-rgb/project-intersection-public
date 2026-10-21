@@ -1,0 +1,160 @@
+#!/usr/bin/env python3
+"""PI-FLR C11: executable, bounded replay of known regression guards.
+
+Prior-art preflight alone returns a suggestion, never proof that a check ran.
+This CI gate invokes an allowlisted set of actual checks for changed path families.
+No self-certified field effectiveness or proof of future nonrecurrence.
+"""
+from __future__ import annotations
+
+import argparse
+import json
+from pathlib import Path
+import re
+import subprocess
+from urllib.parse import urlsplit
+
+from pi_flr_prior_art_guard import PATH as TRANSFER_PATH, preflight, PriorArtError
+
+ROOT=Path(__file__).resolve().parents[1]
+RECEIPT="pi_flr_replay_receipt.json"
+# Hardcode commands here, not in agent-editable literature metadata. Never use shell=True.
+COMMANDS={
+    "README_L0":["python3","tools/check_readme_l0.py"],
+    "LANGUAGE":["python3","tools/check_language_separation.py","--self-test"],
+    "RISE_MANIFEST":["python3","tools/pi_rise_manifest_guard.py"],
+    "E010_LINEAGE":["python3","tools/pi_flr_experiment_identity.py"],
+    "NAV_LINKS":["python3","tools/check_public_navigation.py","--strict-all"],
+    "FLR_META":["python3","tools/pi_flr_audit.py"],
+    "FLR_MUTANTS":["python3","-m","unittest","discover","-s","tests","-p","test_pi_flr_replay_gate.py"],
+}
+# Match rule identifiers declared in the versioned data. These checks do real work.
+RULE_CHECKS={
+    "R01":("README_L0","LANGUAGE","RISE_MANIFEST"),
+    "R02":("RISE_MANIFEST",),
+    "R03":("E010_LINEAGE",),
+    "R04":("NAV_LINKS",),
+    "R05":("FLR_META","FLR_MUTANTS"),
+    "R06":("FLR_META","FLR_MUTANTS"),
+}
+
+
+class ReplayError(ValueError):
+    pass
+
+
+def require(ok, reason):
+    if not ok:
+        raise ReplayError(reason)
+
+
+def git_changed_paths(baseline, root=ROOT, run=subprocess.run):
+    require(isinstance(baseline,str) and re.fullmatch(r"[0-9a-fA-F]{40}",baseline),
+            "BASELINE_COMMIT_NOT_OBSERVED")
+    ref=run(["git","rev-parse","--verify",baseline+"^{commit}"],
+            cwd=root,capture_output=True,text=True,check=False)
+    require(ref.returncode==0,"BASELINE_COMMIT_NOT_ACCESSIBLE")
+    diff=run(["git","diff","--name-only","--diff-filter=ACMR",baseline,"HEAD"],
+             cwd=root,capture_output=True,text=True,check=False)
+    require(diff.returncode==0,"CHANGED_PATHS_NOT_OBSERVED")
+    names=[x for x in diff.stdout.splitlines() if x]
+    require(len(names)==len(set(names)),"DUPLICATE_CHANGED_PATH")
+    return names
+
+
+def planned_replay(data, paths):
+    require(isinstance(paths,list) and all(isinstance(x,str) and x for x in paths),
+            "PATHS_INVALID")
+    observed=preflight(data,sorted(set(paths)))["changed_paths"]
+    rules={r["id"] for r in data["preflight"]}
+    require(rules==set(RULE_CHECKS),"RULE_AND_EXECUTOR_DRIFT")
+    checks=set()
+    relevant=set()
+    for entry in observed:
+        rr=set(entry["known_risk_rules"])
+        if rr:
+            require(rr<=set(RULE_CHECKS),"KNOWN_RISK_WITHOUT_EXECUTABLE_CHECK")
+            relevant.add(entry["path"])
+            for r in rr:
+                checks.update(RULE_CHECKS[r])
+        require(entry["outcome"]=="CHECKS_NOT_EXECUTED_BY_PREFLIGHT",
+                "PREFLIGHT_FALSELY_CERTIFIED_EXECUTION")
+    require(checks<=set(COMMANDS),"UNTRUSTED_OR_MISSING_COMMAND")
+    return {"changed_paths":len(observed),
+            "matched_paths":sorted(relevant),
+            "check_ids":sorted(checks),
+            "unmatched_path_count":len(observed)-len(relevant),
+            "coverage":"KNOWN_PATH_FAMILIES_ONLY_NOT_ALL_FAILURES"}
+
+
+def execute(plan, root=ROOT, run=subprocess.run):
+    receipts=[]
+    for label in plan["check_ids"]:
+        require(label in COMMANDS,"UNALLOWLISTED_CHECK:"+str(label))
+        cmd=COMMANDS[label]
+        result=run(cmd,cwd=root,capture_output=True,text=True,check=False)
+        receipts.append({"check_id":label,
+                         "status":"PASS" if result.returncode==0 else "FAIL",
+                         "exit_code":int(result.returncode)})
+    fail=[x["check_id"] for x in receipts if x["status"]!="PASS"]
+    status=("BLOCKED_FAILED" if fail else
+            "NO_KNOWN_RISK_MATCHED" if not receipts else
+            "SCOPED_REPLAY_PASS")
+    return {"status":status,"executed":receipts,"failed_checks":fail,
+            "scope":"ACTUAL_ALLOWLISTED_SUBPROCESS_RESULTS_NOT_FIELD_EFFECTIVENESS"}
+
+
+def verify_contract(data, workflow):
+    require("python3 tools/pi_flr_replay_gate.py --baseline-commit \"$BASE\"" in workflow,
+            "CI_REPLAY_INVOCATION_MISSING")
+    require("path: pi_flr_replay_receipt.json" in workflow and
+            "if-no-files-found: error" in workflow,
+            "REPLAY_RECEIPT_NOT_PERSISTED_FAIL_CLOSED")
+    require("test_pi_flr_replay_gate.py" in workflow,
+            "REPLAY_NEGATIVE_MUTATIONS_NOT_RUN")
+    require(data.get("saturation")=="NOT_ESTABLISHED",
+            "LITERATURE_SATURATION_FALSELY_CLOSED")
+    return True
+
+
+def main():
+    ap=argparse.ArgumentParser()
+    ap.add_argument("--baseline-commit",default="")
+    ap.add_argument("--path",action="append",default=[])
+    ap.add_argument("--output",default=RECEIPT)
+    args=ap.parse_args()
+    receipt={"status":"BLOCKED_UNCONFIRMED","coverage":"NOT_OBSERVED",
+             "error_code":"NO_EXECUTION","source_version":"PI-FLR-v0.5.0"}
+    exit_bad=True
+    try:
+        raw=json.loads((ROOT/TRANSFER_PATH).read_text(encoding="utf-8"))
+        wf=(ROOT/".github/workflows/pi-flr-integrity.yml").read_text(encoding="utf-8")
+        verify_contract(raw,wf)
+        # Explicit paths support local manual smoke tests. CI must pass a real baseline.
+        paths=list(args.path)
+        if not paths:
+            paths=git_changed_paths(args.baseline_commit)
+        plan=planned_replay(raw,paths)
+        result=execute(plan)
+        head=subprocess.run(["git","rev-parse","HEAD"],cwd=ROOT,
+                            capture_output=True,text=True,check=False)
+        receipt={**result,**plan,"head_commit":head.stdout.strip() if
+                 head.returncode==0 else "UNKNOWN",
+                 "baseline_commit":args.baseline_commit or "EXPLICIT_PATH_SMOKE",
+                 "status":result["status"],
+                 "no_future_recurrence_proof":True}
+        exit_bad=result["status"]=="BLOCKED_FAILED"
+    except (OSError,ValueError,TypeError,KeyError,PriorArtError) as e:
+        # Keep a receipt even for a malformed baseline or policy failure.
+        receipt["error_code"]=str(e).splitlines()[0][:180]
+        receipt["status"]="BLOCKED_UNCONFIRMED"
+        exit_bad=True
+    target=Path(args.output)
+    target.write_text(json.dumps(receipt,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+    print(json.dumps(receipt,ensure_ascii=False,sort_keys=True))
+    if exit_bad:
+        raise SystemExit(1)
+
+
+if __name__=="__main__":
+    main()

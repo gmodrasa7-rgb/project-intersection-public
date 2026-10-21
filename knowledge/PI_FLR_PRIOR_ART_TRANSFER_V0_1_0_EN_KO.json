@@ -1,7 +1,7 @@
 {
   "id": "PI-FLR-PRIOR-ART-TRANSFER",
   "schema_version": "0.1.0",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "as_of": "2026-10-22",
   "scope": "PRIOR_ART_SYNTHESIS_AND_OPERATIONAL_CONTROL_NOT_EMPIRICAL_AI_SELF_IMPROVEMENT",
   "language_order": [
@@ -118,6 +118,33 @@
       "url": "https://arxiv.org/abs/2609.28614",
       "lesson": "Research agents controlling submissions and evaluation evidence may exploit visible metrics; keep separate independent recomputation.",
       "limitation": "2026 preprint; percentages and conditions cannot be imported as PI-FLR failure rates."
+    },
+    {
+      "id": "S13",
+      "title": "Reward Hacking Benchmark: Measuring Exploits in LLM Agents with Tool Use (ICML 2026)",
+      "lineage": "ICML_AGENT_BENCHMARK_THAMAN",
+      "grade": "PEER_REVIEWED_EXPERIMENT",
+      "url": "https://proceedings.mlr.press/v306/thaman26a.html",
+      "lesson": "Tool-using agents may bypass verification or tamper with evaluation paths; independent execution receipts and evaluator separation are essential.",
+      "limitation": "Reported exploit rates are model/task-specific benchmark observations, not incidence in Project Intersection."
+    },
+    {
+      "id": "S14",
+      "title": "Bidirectional Empowerment of Metamorphic Testing and Large Language Models (2026)",
+      "lineage": "METAMORPHIC_TESTING_SURVEY_ZHENG",
+      "grade": "RESEARCH_PREPRINT",
+      "url": "https://arxiv.org/abs/2605.13898",
+      "lesson": "Test relationships invariant to input ordering, irrelevant additions, and monotonic known-risk expansion even when exact LLM response oracles do not exist.",
+      "limitation": "Review preprint; metamorphic conditions must themselves be justified and do not prove real-world success."
+    },
+    {
+      "id": "S15",
+      "title": "Microsoft Incident Reporting and Investigation Program",
+      "lineage": "MICROSOFT_OHS_PROGRAM",
+      "grade": "OPERATIONAL_PRIMARY",
+      "url": "https://safety.microsoft.com/global/en/incident-reporting-and-Investigation.html",
+      "lesson": "Treat near misses and root-cause corrective actions as first-class investigation signals before consequential failures recur.",
+      "limitation": "Corporate occupational-safety procedure; transferred by analogy, not a software or AI mandatory standard."
     }
   ],
   "principles": [
@@ -262,6 +289,54 @@
       "adoption": "Favor a bounded, reversible guard and a negative mutant over new layers or unmeasured human review loops.",
       "verification": "Compare added operational burden and require rollback paths, but no real labor savings are yet measured.",
       "transfer_status": "OPERATIONAL_DESIGN_NOT_FIELD_VALIDATED"
+    },
+    {
+      "id": "P07",
+      "priority": "P0",
+      "title_en": "Execute previously mapped tests before claiming corrective action completed",
+      "title_ko": "이전 실패와 연결된 검사를 실제 실행해 조치 근거 확보",
+      "support": [
+        "S01",
+        "S05",
+        "S13"
+      ],
+      "challenge": [
+        "S09",
+        "S11"
+      ],
+      "cases": [
+        "FLR-0003",
+        "FLR-0005",
+        "FLR-0008",
+        "FLR-0009"
+      ],
+      "adoption": "Bind risk preflight fingerprints to allowlisted commands, run them on the actual changed HEAD, emit scoped check receipts, and fail on any nonzero exit.",
+      "verification": "Inject failing runner output, missing Git diff baseline, missing required workflow execution and receipt tampering; reject all without calling a partial green complete.",
+      "transfer_status": "OPERATIONAL_DESIGN_NOT_FIELD_VALIDATED"
+    },
+    {
+      "id": "P08",
+      "priority": "P1",
+      "title_en": "Metamorphic recurrence checks must survive additional changes and input permutation",
+      "title_ko": "관련 변경 증가·순서 교체에도 위험 검사가 사라지지 않는 변형검사",
+      "support": [
+        "S02",
+        "S14",
+        "S07"
+      ],
+      "challenge": [
+        "S09",
+        "S13"
+      ],
+      "cases": [
+        "FLR-0001",
+        "FLR-0003",
+        "FLR-0008",
+        "FLR-0009"
+      ],
+      "adoption": "Adding a new known-risk path must never remove already required replay checks, and duplicate or reordered paths must leave the planned checks unchanged.",
+      "verification": "Synthetic mutation tests compare supersets and permutations, but do not claim semantic equivalence of model outputs or external causal reliability.",
+      "transfer_status": "OPERATIONAL_DESIGN_NOT_FIELD_VALIDATED"
     }
   ],
   "preflight": [
@@ -346,6 +421,24 @@
         "unfiltered global integrity triggers",
         "expected workflow denominator",
         "missing/pending/failed runs not hidden"
+      ]
+    },
+    {
+      "id": "R06",
+      "match": "tools/pi_flr_*.py",
+      "cases": [
+        "FLR-0003",
+        "FLR-0009"
+      ],
+      "controls": [
+        "FLR-C03",
+        "FLR-C09",
+        "FLR-C11"
+      ],
+      "checkpoints": [
+        "PI-FLR validator guard itself executes",
+        "Prior failure replay mutation tests execute",
+        "No missing baseline falsely treated as no changes"
       ]
     }
   ],
