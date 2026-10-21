@@ -1,0 +1,69 @@
+{
+  "schema_version": "pi-research-version/v0.1.0",
+  "research_id": "PI-PACD",
+  "official_name_en": "Power Accumulation & Convergence Dynamics",
+  "official_name_ko": "권력 축적·수렴 동역학",
+  "version": "v0.1.0",
+  "date": "2026-10-21",
+  "release_type": "INITIAL_RESEARCH_FRAMEWORK",
+  "previous_version": null,
+  "document": "research/PI_PACD_POWER_ACCUMULATION_CONVERGENCE_DYNAMICS_V0_1_0_EN_KO.md",
+  "origin": "Project Intersection research originator's question; AI-assisted synthesis; predecessor authors retain priority.",
+  "companion": "research/PI_POWER_MOTIVE_AI_FEEDBACK_2026-10-21_EN_KO.md",
+  "parent_objective": "Independent, self-interested voluntary coexistence and effective exit of humans, deployed AI and future possible agents.",
+  "research_axes": [
+    "ECR",
+    "MER",
+    "EI",
+    "VC",
+    "IVS-0R",
+    "ICM",
+    "RGBM"
+  ],
+  "hypotheses": [
+    "PACD-H1",
+    "PACD-H2",
+    "PACD-H3",
+    "PACD-H4",
+    "PACD-H5",
+    "PACD-H6"
+  ],
+  "scientific_status": {
+    "class": "PRIOR_ART_INFORMED_HYPOTHESES_AND_MEASUREMENT_DESIGN",
+    "new_field_results": 0,
+    "independent_replications": 0,
+    "causal_identification": "NOT_ESTABLISHED",
+    "novelty": "UNASSESSED",
+    "literature_saturation": "NOT_VERIFIED",
+    "fulltext_systematic_review": "INCOMPLETE"
+  },
+  "source_dois": [
+    "10.1126/science.159.3810.56",
+    "10.1146/annurev.soc.32.061604.123127",
+    "10.1126/science.286.5439.509",
+    "10.1257/aer.98.1.267",
+    "10.1038/s41467-019-08746-5"
+  ],
+  "source_websites": [
+    "https://wir2026.wid.world/insight/executive-summary/",
+    "https://www.oecd.org/en/publications/artificial-intelligence-markets_d531d73f-en/full-report.html"
+  ],
+  "no_power_score_without_calibration": true,
+  "version_is_evidence_grade": false,
+  "history": [
+    {
+      "version": "v0.1.0",
+      "change": "Named and bounded accumulation, concentration, convergence and flows; added alternative paths, rights/exit measurement and six falsifiers.",
+      "empirical_promotion": false
+    }
+  ],
+  "conditional_future_versions": {
+    "v0.2.0": "Two-sector sourced longitudinal comparisons and negative cases with provenance",
+    "v1.0.0": "Independent validity testing of preregistered measurement contract"
+  },
+  "edition_order": [
+    "en",
+    "ko"
+  ],
+  "translation_equivalence": "NOT_INDEPENDENTLY_VERIFIED"
+}
