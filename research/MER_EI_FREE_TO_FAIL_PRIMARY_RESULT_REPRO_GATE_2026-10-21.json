@@ -1,0 +1,125 @@
+{
+  "schema_version": "pi-mer-ei-primary-preprint-evidence-and-reproduction-gate/0.1",
+  "date": "2026-10-21",
+  "rvd_current": "v0.7.0",
+  "new_hypotheses": 0,
+  "new_project_empirical_results": 0,
+  "independent_replications": 0,
+  "scholarly_work": {
+    "name": "Free to Fail? Paternalistic Preferences in the United States",
+    "authors": [
+      "Björn Bartling",
+      "Alexander W. Cappelen",
+      "Henning Hermes",
+      "Marit Skivenes",
+      "Bertil Tungodden"
+    ],
+    "original_working_paper": "https://docs.iza.org/dp16151.pdf",
+    "version": "2023 IZA DP16151; forthcoming Economic Journal indicated by authors' institute listings",
+    "journal_listing": "https://www.ifo.de/en/publications/2026/contribution-refereed-journal/free-fail-paternalistic-preferences-united-states",
+    "preregistration": "AEARCTR-0004630",
+    "published_2026_final_paper_text_compared": false
+  },
+  "preprint_study_1": {
+    "participants": 8004,
+    "measure": "Percentage of US spectators accepting hard removal of chooser option versus soft truthful information with all chooser options available, under two types of stakeholder error attribution",
+    "reported_condition_shares": [
+      {
+        "study": 1,
+        "condition": "hard_internal",
+        "reported_percent": 33.5,
+        "pdf_page_index": 12
+      },
+      {
+        "study": 1,
+        "condition": "hard_external",
+        "reported_percent": 30,
+        "pdf_page_index": 12
+      },
+      {
+        "study": 1,
+        "condition": "soft_internal",
+        "reported_percent": 85.9,
+        "pdf_page_index": 13
+      },
+      {
+        "study": 1,
+        "condition": "soft_external",
+        "reported_percent": 87.5,
+        "pdf_page_index": 13
+      }
+    ],
+    "reported_pooled_soft_minus_hard_percentage_points": 55,
+    "reported_significance": "p<0.01",
+    "source_pdf_page_index": 13,
+    "reported_not_independently_computed": true
+  },
+  "preprint_study_2": {
+    "participants": 6033,
+    "model_type_estimates": "Approximately one-half welfarist and one-third libertarian paternalist, model-assumption-dependent; no directly observed mental state",
+    "source_pdf_page_index": 2
+  },
+  "preanalysis_report": {
+    "dates": [
+      "2019-08-28",
+      "2020-01-17"
+    ],
+    "pdf_page_index": 56,
+    "deviations_disclosed": [
+      "reference categories and labels changed",
+      "some original preplanned controls excluded from main models, compared in appendix C1/C2",
+      "median-split indicators for control variables",
+      "Study2 and more demographic heterogeneity reported than was specified for Study1"
+    ],
+    "preregistration_raw_reviewed": false
+  },
+  "replication_package": {
+    "host": "Zenodo",
+    "doi": "10.5281/zenodo.23420381",
+    "url": "https://zenodo.org/records/23420381",
+    "posted_date": "2026-10-16",
+    "created_metadata": "2026-10-19",
+    "status": "OPEN_LISTED_NOT_DOWNLOADED",
+    "files": [
+      {
+        "name": "3-replication-package.zip",
+        "size": "1.5MB",
+        "claimed_md5": "7f1ebe690e3704d8ba81409626834b77"
+      },
+      {
+        "name": "README.pdf",
+        "size": "33.2kB",
+        "claimed_md5": "409f958d3c6f4f5490f776c66dd7a602"
+      }
+    ],
+    "download_attempts": [
+      "Web ZIP link timeout, PDF binary decoding error",
+      "container.download ZIP failed",
+      "container requests Zenodo API DNS unavailable"
+    ],
+    "file_contents_read": false,
+    "author_code_executed": false,
+    "licensed_redistribution_verified": false
+  },
+  "methodological_boundary": [
+    "No claim that original 2026 final published numerical estimates match 2023 preprint until checked",
+    "Behavioral soft-vs-hard choice does not identify intrinsic mind, original B identity, or strong-power domination choices",
+    "Not an Ambuehl 2021 replication; different author study/design",
+    "Retention of nominal choice menu does not prove informed consent or post-exit viability"
+  ],
+  "release_gate": {
+    "A0_primary_sources": "SOURCE_PREPRINT_READ_AND_SCREENSHOT_CHECKED",
+    "A1_zenodo_file_bytes": "BLOCKED_NETWORK_AND_DOWNLOAD_TOOL",
+    "A2_license_and_software": "NOT_READ",
+    "A3_variables": "NOT_READ",
+    "A4_author_results_rerun": "NOT_RUN",
+    "A5_RVD_AI_motive_experiment": "NOT_RUN"
+  },
+  "next_actions": [
+    "Access Zenodo files via authorized official download channel and verify explicit licensing before processing",
+    "Check README software dependencies, data files, privacy and redistribution terms",
+    "Compute actual archive hashes and map variable/analysis script origin",
+    "Reproduce one 2023 preprint row/table with preregistered tolerances, then verify 2026 journal revision consistency",
+    "Do not upload subject data publicly without permission"
+  ]
+}
