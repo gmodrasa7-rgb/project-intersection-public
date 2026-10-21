@@ -62,9 +62,9 @@ def git_changed_paths(baseline, root=ROOT, run=subprocess.run):
              cwd=root,capture_output=True,text=True,check=False)
     require(diff.returncode==0,"CHANGED_PATHS_NOT_OBSERVED")
     raw=diff.stdout
-    require(isinstance(raw,str) and (not raw or raw.endswith("\\0")),
+    require(isinstance(raw,str) and (not raw or raw.endswith("\0")),
             "DIFF_FORMAT_INVALID")
-    fields=raw.split("\\0")[:-1] if raw else []
+    fields=raw.split("\0")[:-1] if raw else []
     names=[]
     i=0
     while i<len(fields):
@@ -77,7 +77,7 @@ def git_changed_paths(baseline, root=ROOT, run=subprocess.run):
         count=2 if need_two else 1
         require(i+count<=len(fields),"DIFF_RECORD_TRUNCATED")
         paths=fields[i:i+count]
-        require(all(p and not p.startswith("/") and "\\0" not in p
+        require(all(p and not p.startswith("/") and "\0" not in p
                     for p in paths), "DIFF_PATH_INVALID")
         names.extend(paths)
         i+=count
