@@ -1,4 +1,4 @@
-# PI-PACD-CASE-20261021-01 | Free Grok usage limits and undisclosed allocation (v0.1.2; original observation v0.1.0)
+# PI-PACD-CASE-20261021-01 | Free Grok usage limits and undisclosed allocation (v0.1.3; original observation v0.1.0)
 
 <!-- PI-LANGUAGE: en -->
 <!-- PI-MIRROR: PI_PACD_CASE_2026_10_21_GROK_FREE_ACCESS_KO.md -->
@@ -154,3 +154,60 @@ Distinguish the report of an access restriction from a user's inference about th
 **Distinct-post count:** 16 original threads + 2 newly identified independent interpretation posts = **18 distinct threads**; nested comments are not counted as additional threads.
 
 **Critical distinction:** `DATA-FIRST-THEN-PAYWALL` (a public hypothesis of gathering free-user data and then restricting the free tier generally) is **not the same** as `GROK-A1` (assigning a particular user more free usage because their contributions are semantically valuable). Finding independent expressions of the first suspicion neither proves nor disproves the second.
+
+
+---
+
+## 6. Fourth testimony and server-error source audit — v0.1.3 (2026-10-22)
+
+**Scope:** Source-trace the 18 Reddit threads listed in v0.1.2 and add distinct user interpretations, user-experienced interruption, and two public technical error excerpts. The Reddit thread addresses/titles are recoverable through the search index; this does **not** certify every numerical anecdote, attached image or backend mechanism. No direct Grok calls or experiments performed.
+
+### 6.1 Source-level recoding of the prior 18
+
+- [T01](https://www.reddit.com/r/grok/comments/1tdrtzl/crazy_limits_on_chat/) explicitly concerns a free user's 2–5 hour wait after a few messages, but many **commenters are paid Lite/SuperGrok**; do not categorize all comments as free users.
+- [T08](https://www.reddit.com/r/grok/comments/1v4zgcw/text_limits_on_free_mode/) features commenter *guesses* about peak load and context costs, not provider-verified explanations.
+- [T09](https://www.reddit.com/r/grok/comments/1w4vw9y/update_on_the_grok_limit/) reports the same previously blocked account eventually responding again: a **counterexample to every UI block being a permanent user-specific access decision**.
+- [C03](https://www.reddit.com/r/grok/comments/1uik3yd/ive_hit_the_conversation_limit_today_and_found_a/) concerns a thread-too-long error, *not a free quota cap*. The third-party browser script mentioned by a user is neither verified nor endorsed here.
+- [I02](https://www.reddit.com/r/grok/comments/1sei4d8/can_anybody_actually_make_sense_of_the_business/) contains a speculation that the operator obtained enough data/capital then reduced free use, alongside competing perspectives. **It does not observe individual semantic-value budgeting**.
+
+### 6.2 Newly identified user experiences and conflicting interpretations
+
+| ID | Primary user post/thread | What it establishes — and what it does not |
+|---|---|---|
+| N01 | [May 2026: Free users new limit](https://www.reddit.com/r/grok/comments/1t9njje/free_users_new_limit/) | Comment argues free users supply interaction data as economic consideration; **interpretation, not quota policy** |
+| N02 | [Apr 2026: New Rate Limiting](https://www.reddit.com/r/grok/comments/1su83ni/new_rate_limiting/) | Former paying, now free user suspects provider acquired enough training feedback then cut costs; **separate thread expressing DATA-FIRST-THEN-PAYWALL** |
+| N03 | [Jul 2026: Return to daily limits?](https://www.reddit.com/r/grok/comments/1unei3m/do_you_think_that_they_will_change_back_to_daily/) | Comments disagree whether free data retained economic value or had already been exhausted; **market-value hypotheses only** |
+| N04 | [Sep 2026: Did Grok change the free limit?](https://www.reddit.com/r/GrokAiDiscussion/comments/1wqx867/did_grok_change_the_free_limit/) | Reports free accounts that previously had separate limits later stopping together; **device/IP pooling is commenters' conjecture**, not verified |
+| N05 | [May 2026: Grok message limit](https://www.reddit.com/r/grok/comments/1tt540p/grok_message_limit/) | Original author reports around 10 messages; another user reports 3 messages then 17.5h wait after a prior wait. No semantic value recorded |
+| N06 | [Apr 2026: High demand outage](https://www.reddit.com/r/grok/comments/1sslhhk/295_hours_now_and_grok_is_still_in_constant_high/) | Multi-hour high-demand unavailability, relevant countermechanism to intentional individual selection |
+| N07 | [Apr 2026: Free Grok closure](https://www.reddit.com/r/grok/comments/1sylkd1/its_over_for_free_grok_enjoyer/) | User reports losing access to prior creative-writing chats; **continuity and exit cost**, separate from motive |
+| N08 | [Jul 2026: Long chat consumes more](https://www.reddit.com/r/grok/comments/1ustm3y/weekly_limit_is_ridiculous_for_the_chat/) | Paid user says quota usage accelerates after long chat; already logged as C05 in v0.1.2, **not an additional distinct thread** |
+
+**Count:** 18 prior distinct Reddit threads + N01–N07 = **25 distinct community threads** represented in the case. Within-thread comments and N08/C05 are not double-counted. This is a purposive source count, not an independent factual confirmation count or population rate.
+
+### 6.3 Two published technical error excerpts — different product lane
+
+| Report | Reported string | Service/limit boundary |
+|---|---|---|
+| [LINUX DO forum, July 11, 2026](https://linux.do/t/topic/2562837) | `subscription:free-usage-exhausted`; `grok-4.5-build-free`; `tokens (actual/limit): 2040166/2000000`; rolling 24h | User-posted Grok **Build/CLI** free endpoint response |
+| [sub2api GitHub #4568, July 18, 2026](https://github.com/Wei-Shaw/sub2api/issues/4568) | Same class, `tokens (actual/limit): 1065554/1000000`; rolling 24h; HTTP 429 | User-posted third-party proxy/Build free OAuth response |
+
+Same model/error code **does not establish the same account, workload, region, policy date or consumer-app endpoint**. Different limits (1M vs 2M) demonstrate reported variation in these technical excerpts, **not a semantic-value quota mechanism**. The [grok-inspection source fixture](https://github.com/ywddd/grok-inspection/blob/main/ban_detector_test.go) reuses a similar 2M-token body and is **not counted as a third independent measurement**.
+
+A [March 2025 Grok 3 Reddit thread](https://www.reddit.com/r/grok/comments/1jbx8on) claims browser developer tools once exposed a `rate-limits` response with counters and reset window. Historic unreplicated testimony, **not a present-day documented consumer interface**.
+
+**Do not combine** Grok consumer chat on app/X, paid plan pools, Grok Build/CLI OAuth, or the separate commercial xAI API into a single quota dataset.
+
+### 6.4 Separate three competing hypotheses
+
+1. **GROK-A1-INDIVIDUAL:** under comparable time, workload, model and cumulative usage, a given account's budget is expanded based on provider-assessed information value.
+2. **GROK-A1-COHORT:** policy is adjusted for the entire free cohort as general training data, acquisition or retention value changes; no personalized semantic treatment required.
+3. **GROK-N0-COST:** useful, iterative work and long contexts consume more hidden tokens/compute, creating an *apparent* association between completion of knowledge-rich work and hitting limits even without value evaluation.
+
+These mechanisms can yield similar user experiences. The originating user's case raises INDIVIDUAL; much of the independent commentary concerns COHORT; quota/cost evidence is relevant to N0. **Never promote evidence for COHORT to proof of INDIVIDUAL**.
+
+### 6.5 Independently measurable harm, without asserting extraction
+
+Even with legitimate resource management, sudden interruption may destroy access to a user's accumulated draft, long-term project, or conversational continuity. C03 and N07 support collecting cases about portability, warning, export, independent alternatives and remedy. No recommendation to install unverified scripts.
+
+**Gate:** recurrent access-limit experiences; two technical server-error reports on the Build lane; **zero verified instances of individual semantic-value-dependent access**; zero proof of intentional extraction. Sources not saturated; original contributor owes no new tests.

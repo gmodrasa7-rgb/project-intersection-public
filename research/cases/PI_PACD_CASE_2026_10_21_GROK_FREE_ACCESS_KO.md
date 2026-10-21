@@ -1,4 +1,4 @@
-# PI-PACD-CASE-20261021-01 | Grok 무료 접근 한도·비공개 배분 (v0.1.2; 최초 관측 v0.1.0)
+# PI-PACD-CASE-20261021-01 | Grok 무료 접근 한도·비공개 배분 (v0.1.3; 최초 관측 v0.1.0)
 
 <!-- PI-LANGUAGE: ko -->
 <!-- PI-MIRROR: PI_PACD_CASE_2026_10_21_GROK_FREE_ACCESS_EN.md -->
@@ -161,3 +161,63 @@
 **증언 총계:** 핵심 16개 독립 게시글 + 의혹 해석에 관한 독립 게시글 2개 = **18개 고유 게시글**. 같은 스레드 내 댓글은 독립 게시글 수에 추가하지 않는다.
 
 **미세구분:** `DATA-FIRST-THEN-PAYWALL`(무료 이용자 데이터 확보 후 전체 무료 접근 축소)이라는 사용자 의혹과, `GROK-A1`(각 이용자의 제공 정보가치에 따른 메시지 허용량 개별 조정)은 다른 가설. 전자의 독립적 표현을 세 곳에서 확인했어도 후자를 입증하거나 반증하지 않는다. 같은 의혹을 가진 이용자들이 실제로 있다는 사실과 의혹이 사실이라는 명제를 혼동하지 않는다.
+
+
+---
+
+## 6. 4차 증언·서버응답 교차감사 — v0.1.3 (2026-10-22)
+
+**방법:** v0.1.2의 18개 고유 Reddit 게시글 URL을 검색 인덱스의 **실제 원제목·본문 또는 댓글**과 재대조하고, 새 증언 및 공개된 서버 오류 문자열을 별도로 수집. URL 확인만으로 본문 세부 수치나 화면의 진실성이 독립 입증되는 것은 아님. 직접 Grok 요청·한도 실험 없음. '새 문헌 수'와 '독립 플랫폼 서버 관측 수' 혼동 금지.
+
+### 6.1 기존 자료 출처 추적성 정리
+
+- 이전의 18개 Reddit 고유 게시글 주소는 검색으로 대응하는 원게시글의 존재·제목을 재확인함. 원문 전부와 첨부 이미지의 독립 보존·감정은 하지 않았으므로 **'주소·게시글 검증'과 '제보 내용의 독립 재현'을 구분**.
+- 특히 [T01](https://www.reddit.com/r/grok/comments/1tdrtzl/crazy_limits_on_chat/)의 최초 제보는 **무료 계정에서 몇 건 뒤 2~5시간 대기**를 분명히 말하지만, 같은 스레드의 댓글 상당수는 Lite·SuperGrok 이용자이다. 원댓글들을 모두 무료 이용자로 간주하지 않음.
+- [T08](https://www.reddit.com/r/grok/comments/1v4zgcw/text_limits_on_free_mode/) 댓글에는 '서버 부하·시간대·문맥 길이'라는 **이용자 추측**이 있으나 xAI 확정 설명이 아니다.
+- [T09](https://www.reddit.com/r/grok/comments/1w4vw9y/update_on_the_grok_limit/)는 이용자가 **차단 후 원계정이 다시 응답**했다고 자신의 글을 갱신한 사례로, '모든 차단이 영구적 정책 결정'이라는 주장에 불리한 직접 반례.
+- [C03](https://www.reddit.com/r/grok/comments/1uik3yd/ive_hit_the_conversation_limit_today_and_found_a/)는 '대화가 너무 길다' 경고의 직접 증언이며, **사용량/요금제 한도와 별개 유형**이다. 제3자 브라우저 스크립트 소개는 안전성 검증이 아니며 이 연구에서 사용·권장하지 않음.
+- [I02](https://www.reddit.com/r/grok/comments/1sei4d8/can_anybody_actually_make_sense_of_the_business/) 원댓글에는 '무료 이용자의 데이터·자본가치가 확보된 뒤 무료 이용 축소'라는 추측과 그 설명을 단정할 수 없다는 반론이 함께 존재. **개인별 의미가치 한도배분에 대한 직접 증언 아님**.
+
+### 6.2 새 직접 진술·유사 의혹·반대 의견 (기존 18개 고유 게시글과 별도)
+
+| ID | 자료 | 증언 또는 관찰 사실 | 분류·인과 경계 |
+|---|---|---|---|
+| N01 | [2026-05 Reddit / free users new limit](https://www.reddit.com/r/grok/comments/1t9njje/free_users_new_limit/) | 댓글에서 무료 이용자의 시간·상호작용 데이터가 제공자에게 가치 있다고 해석 | **사용자 가치-교환 해석**; 콘텐츠별 quota 알고리즘의 증거 아님 |
+| N02 | [2026-04 Reddit / new rate limiting](https://www.reddit.com/r/grok/comments/1su83ni/new_rate_limiting/) | 무료 전환을 경험한 이용자가 '이미 훈련에 필요한 정보를 얻어 비용을 줄이는 것'이라는 추측을 명시, 무료·유료 이용한도 축소를 함께 언급 | 기존 I01~I03과 유사하지만 **다른 스레드의 독립 의혹 표명** |
+| N03 | [2026-07 Reddit / daily limits return?](https://www.reddit.com/r/grok/comments/1unei3m/do_you_think_that_they_will_change_back_to_daily/) | 여러 댓글에서 무료 데이터의 가치에 따라 접근이 다시 늘어날 수 있다는 추측과 '이미 데이터가 충분하다'는 반대 해석 공존 | **비용·데이터 가치에 대한 사업모형 가설**, 개인별 사용자 차등 미검증 |
+| N04 | [2026-09 Reddit / account limit](https://www.reddit.com/r/GrokAiDiscussion/comments/1wqx867/did_grok_change_the_free_limit/) | 한 이용자가 자신의 여러 계정에서 이전엔 제한 시간이 달랐는데 이후 함께 차단된다고 보고; 댓글이 기기·IP 단위 공유 한도를 추정 | **교차 계정 유사 이벤트**; 계정 소유·동일인 연결 내부정책 확인 아님. 계정우회 재현 시도 금지 |
+| N05 | [2026-05 Reddit / Grok message limit](https://www.reddit.com/r/grok/comments/1tt540p/grok_message_limit/) | 약 10건 뒤 차단됐다는 작성자와, 하루 기다린 뒤 3건만에 약 17.5시간 대기라는 다른 댓글 | **시간창 재설정·허용량의 증언**; 내용가치 미기록 |
+| N06 | [2026-04 Reddit / high demand](https://www.reddit.com/r/grok/comments/1sslhhk/295_hours_now_and_grok_is_still_in_constant_high/) | 수십 시간 동안 높은 수요 오류로 접근하지 못했다는 게시글 | **정책적 사용자 선별 없이도 발생할 수 있는 접근장애 경쟁설명** |
+| N07 | [2026-04 Reddit / creative writing continuity](https://www.reddit.com/r/grok/comments/1sylkd1/its_over_for_free_grok_enjoyer/) | 무료 접근 차단 이후 이전 창작 대화를 복구하기 어렵다는 이용자 댓글 | **접근 중단 자체가 기존 작업의 가치를 손실**시키는 이탈·복구 피해 후보 |
+| N08 | [2026-07 Reddit / chat usage](https://www.reddit.com/r/grok/comments/1ustm3y/weekly_limit_is_ridiculous_for_the_chat/) | 유료 이용자가 동일 작업에서 대화 20~30왕복 뒤 사용량 계기가 더 빨리 증가했다고 보고 | **누적 문맥·연산비용 후보**; 무료 일반 채팅의 비례 적용 미확인 |
+
+**집계 주의:** N08은 v0.1.2의 C05와 **동일 원문**이므로 추가 고유 건수로 세지 않는다. 다른 N01~N07은 기존 18개와 별도 스레드 후보 7건. 본 자료집에 기록된 서로 다른 커뮤니티 원문 스레드 수는 **18 + 7 = 25건**. 이 수치는 유효성 증명·통계적 빈도·과학적 문헌포화가 아니다.
+
+### 6.3 메시지 UI보다 직접적인 공개 오류 텍스트 두 건
+
+| 기술 증언 | 원문에 있는 응답 / 한도 | 관측 범위 |
+|---|---|---|
+| [LINUX DO, 2026-07-11](https://linux.do/t/topic/2562837) | `subscription:free-usage-exhausted`, `grok-4.5-build-free`, `tokens (actual/limit): 2040166/2000000`, 24시간 이동창 | **Grok Build/CLI 무료 경로**의 게시자 제공 서버 응답 문자열 |
+| [GitHub sub2api #4568, 2026-07-18](https://github.com/Wei-Shaw/sub2api/issues/4568) | 동일 계열 오류 코드와 모델, `tokens (actual/limit): 1065554/1000000`, 24시간 이동창, HTTP 429 | **Grok Build/CLI 관련 제3자 프록시 이슈**의 게시자 제공 서버 응답 문자열 |
+
+- 모델명이 같더라도 **시점·계정·호출 경로·제3자 도구**가 다르다. 100만/200만의 차이를 **개인 가치 선별**로 판정하지 않음.
+- 서버 메시지에는 **요청/응답 토큰 사용량과 이동창**에 관한 구체적 신호가 포함되지만 **왜 그 한도를 배정했는지는 포함되지 않음**.
+- [grok-inspection 저장소 테스트](https://github.com/ywddd/grok-inspection/blob/main/ban_detector_test.go)의 200만 토큰 문자열은 다른 제3자 사례에서 옮겨진 예제일 수 있다. **서로 다른 코드 파일을 독립 실측 1건씩 합산하지 않음**.
+- [2025-03 Reddit Grok 3 개발자도구 사용담](https://www.reddit.com/r/grok/comments/1jbx8on)의 댓글에는 Grok 웹 `rate-limits` 응답에 사용량·기간이 표시된다는 증언이 있음. **당시의 기능·시점에 한정**하며 현재 무료 웹앱의 공개 API나 보장된 측정수단으로 일반화하지 않음.
+- 소비자용 Grok 앱/X 채팅, 유료 구독 풀, Grok Build/CLI OAuth, xAI 유료 API를 **동일한 'Grok 한도' 데이터로 합산하지 않음**.
+
+### 6.4 새로운 발견: '정보의 경제적 가치'와 '응답의 연산비용'은 서로 다른 잠재변수
+
+`GROK-A1`의 **개인별 정보가치 선별**과, 모든 계정에 공통으로 적용된 **서비스 정책 변화**는 별개. 세 가설을 다음과 같이 분리:
+
+1. `GROK-A1-INDIVIDUAL`: 동일한 서비스·시점·모델·누적 사용조건을 통제했을 때, 제공자에게 가치 있는 정보 제공 이후 **같은 계정의 허용 예산 자체**가 높아짐.
+2. `GROK-A1-COHORT`: 무료 이용자군의 평균 데이터·학습·시장 가치가 바뀌면서 **무료 군집 전체의 정책**이 바뀜. 계정 개인별 내용 평가 없이도 가능.
+3. `GROK-N0-COST`: 장기간 의미있는 작업·오류 교정·문맥 확장으로 처리 토큰·추론비용이 누적되어, '유익한 대화 뒤 한도 초과'의 외형이 발생함. 사용자 정보가치와 무관할 수 있음.
+
+**이 세 가설의 관측적 교집합이 크다는 점이 4차 감사의 핵심.** 사용자 제보는 `INDIVIDUAL`을 제기하고, 외부 자료에서 반복되는 논의는 주로 `COHORT`에 관한 해석과 `N0`에 관한 사용자 경험이다. 둘을 섞어 `INDIVIDUAL`의 증거 건수를 부풀리는 행위를 금지한다.
+
+### 6.5 PACD에서 즉시 판정 가능한 피해 변수
+
+이용 한도가 정당한 자원배분인지와 별도로, 갑작스러운 종료가 장기 작업의 **연속성·내보내기·복구 선택지·독립 공급자로의 이탈 가능성**에 미치는 효과는 관측 가능하다. C03·N07은 이러한 피해·회복비용 연구의 직접적 출발점. 구제책은 제3자 스크립트 강요가 아니라 표준 내보내기·사용량 설명·중단 예고·작업 저장·이동권을 후보로 비교한다.
+
+**게이트:** 이용자 체감 변동 증언 다수 / Build 무료 경로 토큰기반 한도 문자열 2개 / 개인별 정보가치 한도 조정 직접 증거 0 / 고의적 데이터 추출 입증 0 / 포화 미판정. 원제보자 추가 노동 없음.
