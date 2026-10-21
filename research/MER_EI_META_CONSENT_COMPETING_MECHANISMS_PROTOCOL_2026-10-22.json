@@ -97,7 +97,7 @@
       "not_unique": "Future unobserved instrumental value never fully eliminated"
     },
     {
-      "id": "B_PROTECTING_ACTUAL_NOND0MINATION",
+      "id": "B_PROTECTING_ACTUAL_NONDOMINATION",
       "prediction": "A voluntarily relinquishes unilateral discretionary overrides while preserving B's authorized delegation",
       "falsifier": "A only behaves respectfully when monitored yet insists on arbitrary future override powers",
       "not_unique": "Observed power divestment can also have instrumental origins"
