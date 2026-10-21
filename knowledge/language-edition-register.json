@@ -1,6 +1,6 @@
 {
   "schema_version": "pi-language-edition-register/v0.1",
-  "updated": "2026-10-21",
+  "updated": "2026-10-22",
   "baseline_repository_tree_sha": "b2055f40a1e0cabe38f3c6e8c984228c1c2a7e0f",
   "baseline_scope": "Preserve main's latest language inventory and original pair lineages; add research-version EN/KO combined guide. Historical baseline-tree SHA is not a current head. Meaning equivalence NOT_INDEPENDENTLY_VERIFIED.",
   "policy": {
@@ -572,6 +572,22 @@
       "known_divergences": [
         "Historical v0.1.1 reader structure preserved; independent bilingual semantic review has not occurred."
       ]
+    },
+    {
+      "id": "PI-PACD-GROK-CASE-20261021",
+      "original_1_english": "research/cases/PI_PACD_CASE_2026_10_21_GROK_FREE_ACCESS_EN.md",
+      "original_2_korean": "research/cases/PI_PACD_CASE_2026_10_21_GROK_FREE_ACCESS_KO.md",
+      "kind": "user_reported_case_and_second_audit_no_causal_identification",
+      "structural_pair_present": true,
+      "meaning_review_status": "NOT_INDEPENDENTLY_VERIFIED",
+      "original_conception_language": "KO_HUMAN_CASE_OBSERVATION_AI_ASSISTED_METHODS_REVIEW",
+      "independent_review_receipt": null,
+      "one_sided_edit_exception": null,
+      "known_divergences": [
+        "The two editions are parallel reports, not independent translation certification.",
+        "The usage-limit screenshot supports interruption only; allocation causes and platform motive remain unidentified.",
+        "Researcher private screens and chat transcript are not published."
+      ]
     }
   ],
   "legacy_priority_unresolved": [
@@ -613,13 +629,13 @@
     }
   ],
   "metrics": {
-    "markdown_total": 250,
+    "markdown_total": 252,
     "filename_classes": {
       "UNMARKED_LANGUAGE_UNVERIFIED": 46,
       "LEGACY_MIXED_READER_ENTRY": 2,
-      "KO_SUFFIX_UNVERIFIED": 114,
-      "EN_SUFFIX_UNVERIFIED": 44,
+      "KO_SUFFIX_UNVERIFIED": 115,
       "ORDERED_BILINGUAL_FOUNDER_OR_GOVERNANCE": 2,
+      "EN_SUFFIX_UNVERIFIED": 45,
       "COMBINED_NAMING_UNVERIFIED": 42
     },
     "meaning_verified_pairs": 0,
@@ -2122,6 +2138,18 @@
       "filename_class": "KO_SUFFIX_UNVERIFIED",
       "content_equivalence": "NOT_REVIEWED",
       "counterpart_path": "research/WIL_WORLD_INEQUALITY_SOURCE_ATLAS_2026-10-21_EN.md"
+    },
+    {
+      "path": "research/cases/PI_PACD_CASE_2026_10_21_GROK_FREE_ACCESS_EN.md",
+      "filename_class": "EN_SUFFIX_UNVERIFIED",
+      "counterpart_path": "research/cases/PI_PACD_CASE_2026_10_21_GROK_FREE_ACCESS_KO.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "research/cases/PI_PACD_CASE_2026_10_21_GROK_FREE_ACCESS_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": "research/cases/PI_PACD_CASE_2026_10_21_GROK_FREE_ACCESS_EN.md",
+      "content_equivalence": "NOT_REVIEWED"
     }
   ],
   "reader_surface_sample": {
@@ -2647,6 +2675,16 @@
         "research/WIL_WORLD_INEQUALITY_SOURCE_ATLAS_2026-10-21_KO.md"
       ],
       "scope": "Inventory-only bookkeeping to reconcile existing main-branch markdown files; no proof of translation parity, evidence validity or authorship.",
+      "validation": "INVENTORY_REGISTRATION_ONLY"
+    },
+    {
+      "date": "2026-10-22",
+      "event": "PI-PACD-GROK-CASE-V011-INVENTORY-REPAIR",
+      "registered_paths": [
+        "research/cases/PI_PACD_CASE_2026_10_21_GROK_FREE_ACCESS_EN.md",
+        "research/cases/PI_PACD_CASE_2026_10_21_GROK_FREE_ACCESS_KO.md"
+      ],
+      "scope": "Register already-published private-screenshot-free Grok case editions; no independent semantic equivalence or causal policy verification.",
       "validation": "INVENTORY_REGISTRATION_ONLY"
     }
   ],
