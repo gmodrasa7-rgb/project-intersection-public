@@ -270,7 +270,7 @@ class FLRValidationTests(unittest.TestCase):
             flr.compare_history(newer, self.record)
         newer["release_version"] = "0.6.1"
         self.assertTrue(flr.compare_history(newer, self.record))
-        self.assertEqual(flr.validate(newer)["cases"], 10
+        self.assertEqual(flr.validate(newer)["cases"], 10)
 
     def test_control_deletion_against_prior_version_rejected(self):
         newer = self.case()
