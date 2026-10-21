@@ -18,9 +18,9 @@
       "original_title": "No Harm Done? An Experimental Approach to the Nonidentity Problem",
       "original_publisher_url": "https://www.cambridge.org/core/journals/journal-of-the-american-philosophical-association/article/no-harm-done-an-experimental-approach-to-the-nonidentity-problem/5C31204BAC44389604E32CC1E54196DF",
       "original_evidence_scope": "Two human online dictator-game experimental arms. Baseline 177 dictators (354 total participants), mean B transfer $0.238. Identity-sensitive version 176 dictators with eleven potential B recipients per A (1936 potential recipients), mean transfer $0.155; p<0.001. B's membership in eligible payout recipient set changes with A's donation amount.",
-      "evidence_grade": "DIRECT_HUMAN_RANDOMIZED_ANALOGUE_WITH_LARGE_N_BUT_SMALL_STAKES",
+      "evidence_grade": "DIRECT_ORIGINAL_HUMAN_TWO_EXPERIMENT_COMPARISON__CROSS_STUDY_RANDOM_ASSIGNMENT_NOT_ESTABLISHED",
       "adversarial_countercase": "A transfers less when her choice also controls which B participates; self-identity/recipient tracking affects apparent altruism.",
-      "scope_limit": "This is monetary selection of real recipients, NOT destruction or actual nonexistence of anyone; 1936 B recipients cannot be treated as independent dictators; experimental design modifies social context beyond literal identity continuity; publication online 2021 / print 2022 same study.",
+      "scope_limit": "This is monetary selection of real recipients, NOT destruction or actual nonexistence of anyone; 1936 B recipients cannot be treated as independent dictators; experimental design modifies social context beyond literal identity continuity; publication online 2021 / print 2022 same study. Cross-experiment assignment randomization NOT established; the original reports separate recruitment dates/studies, so effects may incorporate procedure/sample differences.",
       "access_grade": "ORIGINAL_OPEN_FULL_HTML_NUMBERS_AND_METHODS",
       "global_repository_first_discovery": "NOT_ASSERTED"
     },
@@ -144,5 +144,11 @@
       "access_grade": "PUBLISHER_ORIGINAL_ABSTRACT_AND_METHODS_EXCERPTS",
       "global_repository_first_discovery": "NOT_ASSERTED"
     }
+  ],
+  "study_integrity_errata": [
+    "Kopec/Bruner compared two separate experiments; do not describe pooled participants as one randomized two-arm controlled RCT",
+    "C15-05 Daunis publisher says no datasets and no code; claim is conditional graph-theory abstract, no proof fully audited",
+    "Southan et al 2025 goal change analysis is contested philosophy, not experiment and not universal denial of planning agents' preference persistence",
+    "C15 original-publisher DOI records are not known to be global first discoveries across other PI archives"
   ]
 }
