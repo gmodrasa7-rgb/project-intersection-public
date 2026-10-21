@@ -20,6 +20,7 @@ jobs:
       - name: JavaScript syntax
         run: |
           node --check mobile/app.js
+          node --check mobile/review-lab.js
           node --check mobile/service-worker.js
       - name: No-dependency smoke test
         run: node mobile/check.mjs

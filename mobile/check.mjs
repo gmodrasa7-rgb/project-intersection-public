@@ -9,6 +9,12 @@ assert(html.includes('id="tabLab"') && html.includes('id="labOutcome"'));
 assert(read("service-worker.js").includes("review-lab.js"));
 assert(read("review-lab.js").includes("7913d78024ce98de3a4c3409e92e6d59adcf455a"));
 assert(read("review-lab.js").includes("SYNTHETIC_NEGATIVE") && read("review-lab.js").includes("NO_MAIN_RESULT"));
+assert(!read("review-lab.js").includes("fetch("),"review must not call arbitrary network services");
+assert(!read("review-lab.js").includes("P_CHRONICLE"),"no private archive reference");
+for(const p of ["experiments/e007/README_EN.md","experiments/e007/README_KO.md","experiments/e008/README_EN.md","experiments/e008/README_KO.md","experiments/e009/RESULT_EN.md","experiments/e009/RESULT_KO.md"]){
+  assert(existsSync(new URL("../"+p,root)),"missing provenance source "+p);
+}
+
 assert(html.includes('name="viewport"') && html.includes('id="issueForm"') && html.includes('id="axisGrid"'));
 assert(manifest.display === "standalone" && manifest.icons.some((i)=>i.sizes==="192x192") && manifest.icons.some((i)=>i.sizes==="512x512"));
 assert(js.includes("42.35%") && js.includes("NO RESULT / E008") && js.includes("PUBLIC_REVIEW_PACKET_KO.md"));
