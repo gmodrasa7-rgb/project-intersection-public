@@ -1,5 +1,7 @@
 # Research Contents — Original 1: English
 
+**World Inequality Lab source-atlas v0.1.0 (2026-10-21):** [WIL original-source map, WIR 2018/2022/2026, WID methods, competing estimates, and PI falsification limits](../research/WIL_WORLD_INEQUALITY_SOURCE_ATLAS_2026-10-21_EN.md) · [Korean counterpart](../research/WIL_WORLD_INEQUALITY_SOURCE_ATLAS_2026-10-21_KO.md) · [28-entry machine source registry](../research/WIL_SOURCE_REGISTRY_2026-10-21.csv). Indexed sources are not an exhaustive read or independent replication.
+
 **DCA-2 adversarial evidence:** [Victim-rights and open-world robustness (2026-10-21)](../research/DCA2_EVIDENCE_BRIEF_2026-10-21_EN.md) — specific research evidence, not the program's founding purpose or independent field validation.
 
 <!-- PI-LANGUAGE: en -->
