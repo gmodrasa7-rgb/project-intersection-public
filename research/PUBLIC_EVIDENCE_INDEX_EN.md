@@ -4,6 +4,8 @@
 <!-- PI-MIRROR: research/PUBLIC_EVIDENCE_INDEX_KO.md -->
 <!-- PI-SOURCE: PUBLIC_EVIDENCE_INDEX.md -->
 
+**2026-10-22 retrospective 48-hour measurement audit (no new empirical study):** The [nine-axis evidence/unknowns ledger](PI_48H_OBSERVATION_EVIDENCE_V0_1_0.json) maps nine *selected public records*, not nine new original papers, to opportunity, B's meta-consent, A's respect, residual arbitrary power, effective exit, recovered independence, original-B continuity, third-party costs and motive identifiability. Unmeasured axes remain `NOT_MEASURED`; toy assumptions remain `TOY_ASSUMED`. The [source-boundary checker](../tools/pi_48h_observation_guard.py) and [negative mutation checks](../tests/test_pi_48h_observation_guard.py) test only structural integrity and claim boundaries; they certify no real-world effects, motives or independent reproduction.
+
 **Status:** Public due-diligence index of bounded claims, results, sources and invalid inferences. [Korean Original 2](PUBLIC_EVIDENCE_INDEX_KO.md) · [Original historical combined record](../PUBLIC_EVIDENCE_INDEX.md) · [English research contents](../navigation/RESEARCH_TOC_EN.md).
 
 This English edition extracts the legacy English evidence ledger and E009 result boundary, and separately summarizes dated updates. This is not an independent translation quality assessment or independent scientific validation. Preserve experimental identifiers, source authorship, negative findings, and historical revisions.
