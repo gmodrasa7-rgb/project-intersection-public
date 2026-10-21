@@ -13,6 +13,8 @@
 
 **자기이익 보장 한계:** 미래 영향과 실제 선호를 모두 포함해 완전히 정의한 A의 총 기대효용에서 착취가 보존보다 엄격히 우월하면 효용극대화 A의 자발적 보존은 그 모형의 최적해가 아님. 새로운 정리가 아니라 조건부 합리적 선택의 논리적 귀결. 그러나 **즉각적 물질이익 증가와 총효용 증가는 서로 다름**. 진짜 연구 대상은 타자보존 선호·내재 유인이 형성되고 유지·수정·붕괴하는 기제와 실제 적용범위. 보이지 않는 미래 기여를 임의의 양수로 가정하여 결론을 만드는 행위 금지.
 
+**MER·EI 측정 교정(2026-10-22, 선행원저·미실행 설계):** [한국어 연구](../research/MER_EI_META_CONSENT_NONDOMINATION_2026-10-22_KO.md) · [영문](../research/MER_EI_META_CONSENT_NONDOMINATION_2026-10-22_EN.md) · [원저자 7계보 및 상충기제](../research/MER_EI_META_CHOICE_AND_NONDOMINATION_PRIMARY_SOURCES_2026-10-22.json) · [B의 상위의사에 대한 A의 존중·위임·철회 사전등록 초안](../research/MER_EI_META_CONSENT_COMPETING_MECHANISMS_PROTOCOL_2026-10-22.json). B의 자유를 직접 결정 강제로 오해 금지. A의 자발적 존중·지배 가능권력·내재적 동기를 독립 분리. 새 R 가설·실험·버전 증거 승격 없음.
+
 **MER·EI 상위축 v0.1.0 (2026-10-21, 문헌·가설 정본, 미검증):** [MER](../research/MER_V0_1_0_KO.md) · [EI](../research/EI_V0_1_0_KO.md) · [MER 버전](../research/MER_VERSION_MANIFEST.json) · [EI 버전](../research/EI_VERSION_MANIFEST.json) · [원저·반례 교차원장](../research/MER_EI_SOURCE_CROSSWALK_2026-10-21.json). 하위 RVD v0.7.0·MER-CIR v0.1.0 변경 없이 보존. 과학적 독립검증·문헌 포화 없음.
 
 **MER-CIR v0.1.0 — 문맥 적응·모방·재조합의 지능 형성 후보 기제(미검증):** [한국어 규격](../research/MER_CIR_CONTEXT_IMITATION_RECOMBINATION_2026-10-21_KO.md) · [영어 대응](../research/MER_CIR_CONTEXT_IMITATION_RECOMBINATION_2026-10-21_EN.md) · [버전 원장](../research/MER_CIR_VERSION_MANIFEST.json). 모방·적응은 지능·공명 배제 근거도, 자율적 사심·의식·공명의 증명도 아님. CIR-1~CIR-5 판별검사 후보 추가. RVD v0.7.0은 유지. 전체 MER는 본 하위규격 최초 작성 당시 미할당, 이후 상위축 v0.1.0로 별도 버전 지정.
