@@ -35,11 +35,20 @@
       <p class="mini" id="installHint">설치: 브라우저 메뉴 → 홈 화면에 추가. Android·iPhone에서 사용 가능.</p>
     </section>
     <div class="boundary" role="note"><strong id="boundaryTitle">검증 상태</strong><span id="boundaryText">공존의 보편적 우월성은 입증되지 않았음. 부정결과와 미검증을 함께 공개.</span></div>
+    
+    <section class="participation-rights" aria-labelledby="rightsTitle">
+      <h2 id="rightsTitle">참여자의 시간과 권리 우선</h2>
+      <p id="rightsSummary">읽기·학습만으로 충분하며 제보 의무 없음.</p>
+      <p id="rightsLabor">전수조사·번역·코딩·재현·대량 분류 노동은 보상·권리 조건 합의 전 모집하지 않음.</p>
+      <p id="rightsNoPay">자발적인 작은 제보에도 금전 보상 약속 없음. 앱은 추가적 저작권 양도를 요구하지 않으며 GitHub 약관은 별도 적용.</p>
+      <p id="rightsExit">GitHub 공개 게시 후에는 계정·내용 및 복제본이 남을 수 있음. 제보하지 않을 자유 보장.</p>
+      <a id="rightsPolicy" href="https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/mobile/README_KO.md" target="_blank" rel="noopener noreferrer">참여·보상 경계 보기 ↗</a>
+    </section>
     <nav class="tabs" aria-label="Research sections">
       <button type="button" class="tab active" data-view="learn" aria-current="page" id="tabLearn">이해하기</button>
       <button type="button" class="tab" data-view="evidence" id="tabEvidence">근거 확인</button>
       <button type="button" class="tab" data-view="lab" id="tabLab">검증 실습</button>
-      <button type="button" class="tab" data-view="join" id="tabJoin">연구 참여</button>
+      <button type="button" class="tab" data-view="join" id="tabJoin">제보(선택)</button>
     </nav>
     <section class="panel" data-panel="learn" aria-labelledby="learnTitle">
       <div class="sectionhead"><p class="eyebrow">01 / UNDERSTAND</p><h2 id="learnTitle">연구의 다섯 축</h2><p id="learnIntro">결론보다 질문과 조건을 먼저 확인.</p></div>
@@ -84,13 +93,13 @@
       </div>
     </section>
     <section class="panel" data-panel="join" aria-labelledby="joinTitle" hidden>
-      <div class="sectionhead"><p class="eyebrow">04 / PARTICIPATE</p><h2 id="joinTitle">질문·반례·자료 제보</h2><p id="joinIntro">찬성 의견보다 반증, 선행 원저자 자료, 재현 실패를 우선 수집.</p></div>
+      <div class="sectionhead"><p class="eyebrow">04 / PARTICIPATE</p><h2 id="joinTitle">선택적 질문·간단한 오류 알림</h2><p id="joinIntro">새 조사·검증 노동 요청 없음. 이미 알고 있는 자료 링크만 제보 가능.</p></div>
       <form id="issueForm" class="issue-form">
         <label id="typeLabel" for="issueType">기여 유형</label>
         <select id="issueType" required>
           <option value="counterexample">반례 / Counterexample</option>
           <option value="priorart">원저자 선행연구 / Prior art</option>
-          <option value="repro">재현 결과 / Reproduction</option>
+          <option value="repro" disabled>재현 노동 모집 중단(보상 협의 전)</option>
           <option value="correction">출처·표기 오류 / Correction</option>
           <option value="question">연구 질문 / Question</option>
         </select>
@@ -103,11 +112,11 @@
         <p class="privacy" id="privacyNotice">제출하면 공개 GitHub Issue 작성 화면으로 이동. 로그인 필요. 의료·금융정보·비공개 대화·개인식별정보·비밀번호 입력 금지. 자동 제출되지 않음.</p>
         <button type="submit" class="btn primary wide" id="submitBtn">GitHub에서 제보 검토·제출 ↗</button>
       </form>
-      <a class="review-link" id="reviewLink" href="https://github.com/gmodrasa7-rgb/project-intersection-public/issues/new?template=independent-replication.md" target="_blank" rel="noopener noreferrer">전문가용 독립 재현·비판 양식 ↗</a>
+      <p class="review-link" id="reviewLink">심층 재현·검증 노동 모집 중단(유상 조건 합의 전).</p>
     </section>
   </main>
   <footer>
-    <p id="footerNote">Project Intersection · 모바일 길잡이 v0.2.0 · 2026-10-21 기준 요약. 출처는 공개 저장소. 민감정보·비공개 실록을 포함하지 않음.</p>
+    <p id="footerNote">Project Intersection · 모바일 길잡이 v0.2.1 · 2026-10-21 기준 요약. 출처는 공개 저장소. 민감정보·비공개 실록을 포함하지 않음.</p>
     <a id="repoLink" href="https://github.com/gmodrasa7-rgb/project-intersection-public" target="_blank" rel="noopener noreferrer">공개 저장소 ↗</a>
   </footer>
 </body>

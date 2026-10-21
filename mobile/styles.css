@@ -25,3 +25,10 @@ footer{max-width:940px;border-top:1px solid var(--stroke);margin:auto;padding:22
 .lab-evidence p{font-size:13px;color:var(--accent);margin:0}
 .lab-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px}
 @media(max-width:540px){.tabs{grid-template-columns:repeat(2,minmax(0,1fr))}.lab-actions{grid-template-columns:1fr}}
+
+.participation-rights{margin:0 2px 25px;padding:18px;background:#152a3c;border:1px solid var(--stroke);border-radius:17px}
+.participation-rights h2{font-size:18px;color:var(--mint);margin:0 0 9px}
+.participation-rights p{color:var(--accent);font-size:13px;margin:0 0 9px}
+.participation-rights #rightsLabor{color:var(--gold);font-weight:700}
+.participation-rights a{font-size:13px;font-weight:700}
+.review-link{font-size:13px;font-weight:700;color:var(--gold)}

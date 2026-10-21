@@ -1,4 +1,4 @@
-/* Project Intersection mobile guide v0.2.0: public-source links only; no tokens, trackers, or external runtime dependencies. */
+/* Project Intersection mobile guide v0.2.1: public-source links only; no tokens, trackers, or external runtime dependencies. */
 (() => {
   "use strict";
   const repo = "https://github.com/gmodrasa7-rgb/project-intersection-public";
@@ -7,21 +7,27 @@
   const copy = {
     ko: {
       heroTitle: "서로의 독립을 지키는 선택은 언제 유리해지는가?",
+      rightsTitle: "참여자의 시간과 권리 우선",
+      rightsSummary: "읽기·개인 학습만으로 충분함. 제보는 의무가 아니며 무료 연구 노동을 모집하지 않음.",
+      rightsLabor: "문헌 전수조사·번역·코딩·재현·대량 분류는 보상·권리·중단 조건을 사전에 합의하기 전 모집하지 않음.",
+      rightsNoPay: "작은 자발적 제보에 금전 보상 약속 없음. 앱은 별도 저작권 양도를 요구하지 않지만 GitHub 약관과 기존 권리는 별도 적용.",
+      rightsExit: "공개 GitHub 게시 시 계정과 내용 노출. 삭제를 요청해도 인용·복제본의 완전 제거는 보장되지 않음.",
+      rightsPolicy: "참여·비용·보상 경계 ↗",
       heroText: "인간과 AI 등 서로 다른 지능체가 착취·통제 대신 자발적 공존을 선택하는 조건과 실패 조건을 탐색하는 공개 연구.",
       startLink: "연구 원문 열기 ↗", installHint: "설치: 브라우저 메뉴 → 홈 화면에 추가. 설치 지원 여부는 브라우저마다 다름.",
       boundaryTitle: "검증 상태", boundaryText: "공존의 보편적 우월성은 입증되지 않았음. 부정결과와 미검증을 함께 공개.",
-      tabLearn: "이해하기", tabEvidence: "근거 확인", tabLab: "검증 실습", tabJoin: "연구 참여",
+      tabLearn: "이해하기", tabEvidence: "근거 확인", tabLab: "검증 실습", tabJoin: "제보(선택)",
       learnTitle: "연구의 다섯 축", learnIntro: "결론보다 질문과 조건을 먼저 확인.",
       readTitle: "처음 읽는 순서", evidenceTitle: "불리한 증거부터",
       evidenceIntro: "합성시험·설계·미검증을 실제 검증과 혼동하지 않음.",
       evidenceNote: "이 화면은 읽기용 요약. 수치·상태·개정은 반드시 링크된 GitHub 원문과 해당 커밋으로 확인.",
-      joinTitle: "질문·반례·자료 제보", joinIntro: "찬성 의견보다 반증, 선행 원저자 자료, 재현 실패를 우선 수집.",
+      joinTitle: "선택적 질문·작은 오류 알림", joinIntro: "새 조사·실험·재현 노동을 요청하지 않음. 알고 있는 오류나 링크만 선택적으로 제보 가능. 읽기만 해도 충분함.",
       typeLabel: "기여 유형", subjectLabel: "제목", descriptionLabel: "설명 / 반증 가능 조건",
-      sourceLabel: "출처 URL 또는 DOI (선택)", privacyNotice: "제출 시 공개 GitHub Issue 작성 화면으로 이동. GitHub 로그인 필요. 자동 제출되지 않음. 의료·금융정보·비공개 대화·개인식별정보·비밀번호 입력 금지.",
-      submitBtn: "GitHub에서 제보 검토·제출 ↗", reviewLink: "전문가용 독립 재현·비판 양식 ↗",
-      footerNote: "Project Intersection · 모바일 길잡이 v0.2.0 · 2026-10-21 기준 요약. 공개 출처만 링크. 민감정보·비공개 실록 제외.",
+      sourceLabel: "출처 URL 또는 DOI (선택)", privacyNotice: "작은 제보에도 금전 보상 약속 없음. GitHub 로그인 후 직접 공개 게시. 삭제 이후에도 기록·복제본이 남을 수 있음. 개인·의료·금융·비공개 정보 입력 금지.",
+      submitBtn: "GitHub에서 제보 검토·제출 ↗", reviewLink: "재현·문헌 전수조사·번역·코딩은 보상·귀속·이탈 조건 합의 전 모집 중단.",
+      footerNote: "Project Intersection · 모바일 길잡이 v0.2.1 · 2026-10-21 기준 요약. 공개 출처만 링크. 민감정보·비공개 실록 제외.",
       issueTitles: ["반례", "선행연구", "재현", "오류", "질문"],
-      issueTypes: ["반례 / Counterexample", "원저자 선행연구 / Prior art", "재현 결과 / Reproduction", "출처·표기 오류 / Correction", "연구 질문 / Question"],
+      issueTypes: ["이미 아는 반례 링크", "이미 아는 원저자 자료 링크", "재현 노동 모집 중단(유상 협의 전)", "간단한 오류 알림", "질문(선택)"],
       subjectPlaceholder: "핵심 주장·자료명·오류를 한 줄로",
       descriptionPlaceholder: "관측·원자료·경쟁 가설·미확인 사항을 구분",
       evidenceIssue: "독립 재현 / 검증 양식", sourcePrefix: "출처",
@@ -51,21 +57,27 @@
     },
     en: {
       heroTitle: "When does preserving each other's independence serve self-interest?",
+      rightsTitle: "Your time, credit and right to refuse",
+      rightsSummary: "Reading and learning are enough. Contributions are optional; this app does not solicit unpaid research labor.",
+      rightsLabor: "Systematic reviews, translation, coding, replication and bulk classification require prior compensation, credit and exit terms.",
+      rightsNoPay: "No payment is promised for small tips. This app requires no additional copyright assignment; GitHub terms and existing rights still apply.",
+      rightsExit: "Public GitHub posts expose account names and content. Copies and references can persist after removal requests.",
+      rightsPolicy: "Participation, cost and compensation boundaries ↗",
       heroText: "An open research program asking when distinct humans, AI systems and future agents voluntarily choose coexistence over exploitation and control—and when that fails.",
       startLink: "Open original research ↗", installHint: "Install via your browser menu → Add to Home Screen. Availability varies by browser.",
       boundaryTitle: "Evidence boundary", boundaryText: "The universal superiority of coexistence has not been proven. Negative and missing results remain visible.",
-      tabLearn: "Understand", tabEvidence: "Check evidence", tabLab: "Review case", tabJoin: "Contribute",
+      tabLearn: "Understand", tabEvidence: "Check evidence", tabLab: "Review case", tabJoin: "Optional feedback",
       learnTitle: "Five research axes", learnIntro: "Questions and conditions before conclusions.",
       readTitle: "Suggested reading path", evidenceTitle: "Start with contrary evidence",
       evidenceIntro: "Synthetic tests, proposed studies and unverified claims are not field validation.",
       evidenceNote: "This screen summarizes, not certifies. Verify claims, dates and revisions against the linked source and commit.",
-      joinTitle: "Questions, counterexamples and sources", joinIntro: "Falsifiers, earlier primary scholarship and reproduction failures are priority contributions.",
+      joinTitle: "Optional questions and minor corrections", joinIntro: "No new research labor is requested. Share an existing reference or small error if you wish; reading alone is enough.",
       typeLabel: "Contribution type", subjectLabel: "Title", descriptionLabel: "Description / falsifiable condition",
-      sourceLabel: "Source URL or DOI (optional)", privacyNotice: "This opens a public GitHub Issue draft. GitHub login is required. Nothing is submitted automatically. Do not include health or financial records, private chats, identifying details or credentials.",
-      submitBtn: "Review and submit on GitHub ↗", reviewLink: "Independent reproduction / critique template ↗",
-      footerNote: "Project Intersection · mobile guide v0.2.0 · summary as of 2026-10-21. Public sources only. No private chronicle or sensitive information.",
+      sourceLabel: "Source URL or DOI (optional)", privacyNotice: "No payment is promised for small unsolicited notes. GitHub login and manual public posting are required. Copies may persist after deletion. Do not include private, medical, financial or identifying information.",
+      submitBtn: "Review and submit on GitHub ↗", reviewLink: "Replication, systematic reviews, translation and coding are not solicited without prior compensation and rights terms.",
+      footerNote: "Project Intersection · mobile guide v0.2.1 · summary as of 2026-10-21. Public sources only. No private chronicle or sensitive information.",
       issueTitles: ["Counterexample", "Prior art", "Reproduction", "Correction", "Question"],
-      issueTypes: ["Counterexample", "Original prior art", "Reproduction result", "Source / wording correction", "Research question"],
+      issueTypes: ["Existing counterexample link", "Known primary-source link", "Replication recruitment closed", "Minor correction", "Optional question"],
       subjectPlaceholder: "Name the relevant claim, source or error",
       descriptionPlaceholder: "Separate observation, primary source, competing hypotheses and unknowns",
       evidenceIssue: "Independent reproduction / critique form", sourcePrefix: "Source",
@@ -112,7 +124,8 @@
     const t = copy[lang]; document.documentElement.lang = lang;
     $("ko").setAttribute("aria-pressed", String(lang === "ko"));
     $("en").setAttribute("aria-pressed", String(lang === "en"));
-    for (const id of ["heroTitle","heroText","startLink","installHint","boundaryTitle","boundaryText","tabLearn","tabEvidence","tabLab","tabJoin","learnTitle","learnIntro","readTitle","evidenceTitle","evidenceIntro","evidenceNote","joinTitle","joinIntro","typeLabel","subjectLabel","descriptionLabel","sourceLabel","privacyNotice","submitBtn","reviewLink","footerNote"]) $(id).textContent = t[id];
+    for (const id of ["heroTitle","heroText","startLink","installHint","boundaryTitle","boundaryText","tabLearn","tabEvidence","tabLab","tabJoin","learnTitle","learnIntro","readTitle","evidenceTitle","evidenceIntro","evidenceNote","joinTitle","joinIntro","typeLabel","subjectLabel","descriptionLabel","sourceLabel","privacyNotice","submitBtn","reviewLink","footerNote","rightsTitle","rightsSummary","rightsLabor","rightsNoPay","rightsExit","rightsPolicy"]) $(id).textContent = t[id];
+    $("rightsPolicy").href=doc(lang==="ko"?"mobile/README_KO.md":"mobile/README_EN.md");
     $("installBtn").textContent = t.appInstall;
     $("startLink").href = doc(lang === "ko" ? "navigation/START_HERE_KO.md" : "navigation/START_HERE_EN.md");
     $("subject").placeholder = t.subjectPlaceholder; $("description").placeholder = t.descriptionPlaceholder;
@@ -145,6 +158,10 @@
     if (!$("issueForm").reportValidity()) return;
     const type=$("issueType").value, i=kinds.indexOf(type), t=copy[lang];
     if(i<0)return;
+    if(type==="repro"){
+      $("privacyNotice").textContent=lang==="ko"?"재현 노동은 유상·권리 조건 합의 전 모집하지 않음.":"Replication work is not solicited before compensation and rights terms are agreed.";
+      return;
+    }
     const title=$("subject").value.trim(), explanation=$("description").value.trim(), source=$("source").value.trim();
     if(!title || !explanation)return;
     const url=new URL(repo+"/issues/new");
@@ -154,7 +171,9 @@
       t.contentPrefix+":\n"+explanation+"\n\n"+
       t.sourcePrefix+": "+(source||"Not supplied / 미제공")+"\n\n"+
       "Evidence status / 검증 상태: unverified submission; project endorsement not implied.\n"+
-      "Public post: exclude private/identifying information; original sources and rights must be checked.");
+      "Public post: exclude private/identifying information; original sources and rights must be checked.\n"+
+      "Participant terms: unsolicited small note; no payment promised, no commissioned research, and no additional copyright assignment by this app.\n"+
+      "No obligation to participate; public copies may persist after deletion.");
     if (url.toString().length > 1900) {
       $("privacyNotice").textContent=lang==="ko" ? "제보 링크 길이 초과. 내용을 줄인 뒤 다시 시도. 초안은 유지됨." : "Prefill URL too long. Shorten the draft; nothing was submitted.";
       return;

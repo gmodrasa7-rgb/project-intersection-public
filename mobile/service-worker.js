@@ -1,5 +1,5 @@
 /* Offline app shell only; external GitHub research pages require network. */
-const CACHE="pi-mobile-v0.2.0";
+const CACHE="pi-mobile-v0.2.1";
 const SHELL=["./","./index.html","./styles.css","./app.js","./review-lab.js","./manifest.webmanifest","./icon.svg","./icon-192.png","./icon-512.png"];
 self.addEventListener("install",(event)=>{event.waitUntil(caches.open(CACHE).then((c)=>c.addAll(SHELL)).then(()=>self.skipWaiting()));});
 self.addEventListener("activate",(event)=>{event.waitUntil(caches.keys().then((keys)=>Promise.all(keys.filter((x)=>x.startsWith("pi-mobile-")&&x!==CACHE).map((x)=>caches.delete(x)))).then(()=>self.clients.claim()));});
