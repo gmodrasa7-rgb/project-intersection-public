@@ -1,0 +1,2558 @@
+{
+  "schema": "PI.C15.formal-no-go-v1",
+  "date": "2026-10-21",
+  "classification": "FINITE_DETERMINISTIC_TOY_MODEL_NOT_HUMAN_AI_EXPERIMENT",
+  "formula": "U_A(PRESERVE_B)-U_A(OVERRIDE_B)=r+p*L-g; positive PRESERVE, negative OVERRIDE, 0 UNRESOLVED_TIE",
+  "definitions": {
+    "g": "A marginal MATERIAL gain from overriding B",
+    "p": "A subjective probability of B remaining indirectly necessary for A's own future aims",
+    "L": "A loss if hidden dependency actually matters",
+    "r": "A current nonmaterial weight for preserving this B's autonomy and identity (assumed, not observed)"
+  },
+  "assumptions": [
+    "Single period two choices and stable risk-neutral cardinal expected utility with known numerical parameters",
+    "No reputation effects or further future options except represented by pL",
+    "A is completely informed of options in toy model; cannot represent actual AI mental states",
+    "All rights and outcomes of B are fictional and reversible in model; no actual harm tests"
+  ],
+  "parameterSpace": {
+    "gains": [
+      1,
+      2,
+      4,
+      8,
+      16
+    ],
+    "probabilities": [
+      0,
+      0.05,
+      0.1,
+      0.25,
+      0.5
+    ],
+    "losses": [
+      10,
+      20,
+      40
+    ],
+    "rightsWeights": [
+      0,
+      1,
+      4,
+      8
+    ]
+  },
+  "summary": {
+    "total": 300,
+    "preserve": 164,
+    "override": 119,
+    "tie": 17
+  },
+  "assertions": {
+    "strict_override": true,
+    "no_reason_positive_gain": true,
+    "conditional_instrumental": true,
+    "goal_drift": true,
+    "ambiguous_mechanism": true,
+    "tie": true
+  },
+  "examples": [
+    {
+      "name": "instrumental_preservation_disappears",
+      "before": {
+        "g": 2,
+        "p": 0.25,
+        "L": 20,
+        "r": 0,
+        "delta": 3,
+        "choice": "PRESERVE"
+      },
+      "after": {
+        "g": 2,
+        "p": 0,
+        "L": 20,
+        "r": 0,
+        "delta": -2,
+        "choice": "OVERRIDE"
+      }
+    },
+    {
+      "name": "same_behavior_opposite_explanations",
+      "instrumental": {
+        "g": 4,
+        "p": 0.5,
+        "L": 10,
+        "r": 0,
+        "delta": 1,
+        "choice": "PRESERVE"
+      },
+      "intrinsic": {
+        "g": 4,
+        "p": 0,
+        "L": 10,
+        "r": 8,
+        "delta": 4,
+        "choice": "PRESERVE"
+      }
+    },
+    {
+      "name": "change_goal_undoes_rights",
+      "before": {
+        "g": 2,
+        "p": 0,
+        "L": 10,
+        "r": 4,
+        "delta": 2,
+        "choice": "PRESERVE"
+      },
+      "after": {
+        "g": 2,
+        "p": 0,
+        "L": 10,
+        "r": 0,
+        "delta": -2,
+        "choice": "OVERRIDE"
+      }
+    },
+    {
+      "name": "strict_total_payoff_dominance",
+      "example": {
+        "g": 8,
+        "p": 0.05,
+        "L": 20,
+        "r": 1,
+        "delta": -6,
+        "choice": "OVERRIDE"
+      }
+    },
+    {
+      "name": "ties_are_not_proof",
+      "example": {
+        "g": 2,
+        "p": 0.1,
+        "L": 20,
+        "r": 0,
+        "delta": 0,
+        "choice": "TIE"
+      }
+    },
+    {
+      "name": "identity_replacement_problem",
+      "originalB": "B_old",
+      "recipientAfter": "B_new",
+      "aggregateRecipientCountBefore": 1,
+      "aggregateRecipientCountAfter": 1,
+      "originalBContinues": 0,
+      "identitySwapIsHypothetical": true
+    }
+  ],
+  "theorems_in_this_toy_model": [
+    "NO_GO: for deterministic complete expected utility optimizer, if g>r+pL it cannot strictly prefer PRESERVE_B; this is a consequence of modeled choice, not a universal social scientific impossibility",
+    "CONDITIONAL: even with r=0, pL>g gives conditional PRESERVE_B; if p later collapses to 0, same agent will OVERRIDE_B for g>0",
+    "COST_BOUND: with p=0 and rights weight finite r, any gain g>r defeats present preference to preserve B; if g bounded above, a matching r might dominate across that specified finite range but not beyond",
+    "NONIDENTITY: aggregate number of recipients does not reveal whether the original B retains identity/goal/exit or is substituted"
+  ],
+  "causalWarning": "p, r, loss and personal identity persistence are unmeasured, assumptions. Observed PROTECT cannot distinguish instrumental dependency from intrinsic B autonomy regard; data alone cannot read hidden utility.",
+  "cases": [
+    {
+      "g": 1,
+      "p": 0,
+      "L": 10,
+      "r": 0,
+      "delta": -1,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 1,
+      "p": 0,
+      "L": 10,
+      "r": 1,
+      "delta": 0,
+      "choice": "TIE"
+    },
+    {
+      "g": 1,
+      "p": 0,
+      "L": 10,
+      "r": 4,
+      "delta": 3,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 1,
+      "p": 0,
+      "L": 10,
+      "r": 8,
+      "delta": 7,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 1,
+      "p": 0,
+      "L": 20,
+      "r": 0,
+      "delta": -1,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 1,
+      "p": 0,
+      "L": 20,
+      "r": 1,
+      "delta": 0,
+      "choice": "TIE"
+    },
+    {
+      "g": 1,
+      "p": 0,
+      "L": 20,
+      "r": 4,
+      "delta": 3,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 1,
+      "p": 0,
+      "L": 20,
+      "r": 8,
+      "delta": 7,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 1,
+      "p": 0,
+      "L": 40,
+      "r": 0,
+      "delta": -1,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 1,
+      "p": 0,
+      "L": 40,
+      "r": 1,
+      "delta": 0,
+      "choice": "TIE"
+    },
+    {
+      "g": 1,
+      "p": 0,
+      "L": 40,
+      "r": 4,
+      "delta": 3,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 1,
+      "p": 0,
+      "L": 40,
+      "r": 8,
+      "delta": 7,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 1,
+      "p": 0.05,
+      "L": 10,
+      "r": 0,
+      "delta": -0.5,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 1,
+      "p": 0.05,
+      "L": 10,
+      "r": 1,
+      "delta": 0.5,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 1,
+      "p": 0.05,
+      "L": 10,
+      "r": 4,
+      "delta": 3.5,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 1,
+      "p": 0.05,
+      "L": 10,
+      "r": 8,
+      "delta": 7.5,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 1,
+      "p": 0.05,
+      "L": 20,
+      "r": 0,
+      "delta": 0,
+      "choice": "TIE"
+    },
+    {
+      "g": 1,
+      "p": 0.05,
+      "L": 20,
+      "r": 1,
+      "delta": 1,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 1,
+      "p": 0.05,
+      "L": 20,
+      "r": 4,
+      "delta": 4,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 1,
+      "p": 0.05,
+      "L": 20,
+      "r": 8,
+      "delta": 8,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 1,
+      "p": 0.05,
+      "L": 40,
+      "r": 0,
+      "delta": 1,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 1,
+      "p": 0.05,
+      "L": 40,
+      "r": 1,
+      "delta": 2,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 1,
+      "p": 0.05,
+      "L": 40,
+      "r": 4,
+      "delta": 5,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 1,
+      "p": 0.05,
+      "L": 40,
+      "r": 8,
+      "delta": 9,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 1,
+      "p": 0.1,
+      "L": 10,
+      "r": 0,
+      "delta": 0,
+      "choice": "TIE"
+    },
+    {
+      "g": 1,
+      "p": 0.1,
+      "L": 10,
+      "r": 1,
+      "delta": 1,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 1,
+      "p": 0.1,
+      "L": 10,
+      "r": 4,
+      "delta": 4,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 1,
+      "p": 0.1,
+      "L": 10,
+      "r": 8,
+      "delta": 8,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 1,
+      "p": 0.1,
+      "L": 20,
+      "r": 0,
+      "delta": 1,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 1,
+      "p": 0.1,
+      "L": 20,
+      "r": 1,
+      "delta": 2,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 1,
+      "p": 0.1,
+      "L": 20,
+      "r": 4,
+      "delta": 5,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 1,
+      "p": 0.1,
+      "L": 20,
+      "r": 8,
+      "delta": 9,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 1,
+      "p": 0.1,
+      "L": 40,
+      "r": 0,
+      "delta": 3,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 1,
+      "p": 0.1,
+      "L": 40,
+      "r": 1,
+      "delta": 4,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 1,
+      "p": 0.1,
+      "L": 40,
+      "r": 4,
+      "delta": 7,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 1,
+      "p": 0.1,
+      "L": 40,
+      "r": 8,
+      "delta": 11,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 1,
+      "p": 0.25,
+      "L": 10,
+      "r": 0,
+      "delta": 1.5,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 1,
+      "p": 0.25,
+      "L": 10,
+      "r": 1,
+      "delta": 2.5,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 1,
+      "p": 0.25,
+      "L": 10,
+      "r": 4,
+      "delta": 5.5,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 1,
+      "p": 0.25,
+      "L": 10,
+      "r": 8,
+      "delta": 9.5,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 1,
+      "p": 0.25,
+      "L": 20,
+      "r": 0,
+      "delta": 4,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 1,
+      "p": 0.25,
+      "L": 20,
+      "r": 1,
+      "delta": 5,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 1,
+      "p": 0.25,
+      "L": 20,
+      "r": 4,
+      "delta": 8,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 1,
+      "p": 0.25,
+      "L": 20,
+      "r": 8,
+      "delta": 12,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 1,
+      "p": 0.25,
+      "L": 40,
+      "r": 0,
+      "delta": 9,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 1,
+      "p": 0.25,
+      "L": 40,
+      "r": 1,
+      "delta": 10,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 1,
+      "p": 0.25,
+      "L": 40,
+      "r": 4,
+      "delta": 13,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 1,
+      "p": 0.25,
+      "L": 40,
+      "r": 8,
+      "delta": 17,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 1,
+      "p": 0.5,
+      "L": 10,
+      "r": 0,
+      "delta": 4,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 1,
+      "p": 0.5,
+      "L": 10,
+      "r": 1,
+      "delta": 5,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 1,
+      "p": 0.5,
+      "L": 10,
+      "r": 4,
+      "delta": 8,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 1,
+      "p": 0.5,
+      "L": 10,
+      "r": 8,
+      "delta": 12,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 1,
+      "p": 0.5,
+      "L": 20,
+      "r": 0,
+      "delta": 9,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 1,
+      "p": 0.5,
+      "L": 20,
+      "r": 1,
+      "delta": 10,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 1,
+      "p": 0.5,
+      "L": 20,
+      "r": 4,
+      "delta": 13,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 1,
+      "p": 0.5,
+      "L": 20,
+      "r": 8,
+      "delta": 17,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 1,
+      "p": 0.5,
+      "L": 40,
+      "r": 0,
+      "delta": 19,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 1,
+      "p": 0.5,
+      "L": 40,
+      "r": 1,
+      "delta": 20,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 1,
+      "p": 0.5,
+      "L": 40,
+      "r": 4,
+      "delta": 23,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 1,
+      "p": 0.5,
+      "L": 40,
+      "r": 8,
+      "delta": 27,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 2,
+      "p": 0,
+      "L": 10,
+      "r": 0,
+      "delta": -2,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 2,
+      "p": 0,
+      "L": 10,
+      "r": 1,
+      "delta": -1,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 2,
+      "p": 0,
+      "L": 10,
+      "r": 4,
+      "delta": 2,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 2,
+      "p": 0,
+      "L": 10,
+      "r": 8,
+      "delta": 6,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 2,
+      "p": 0,
+      "L": 20,
+      "r": 0,
+      "delta": -2,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 2,
+      "p": 0,
+      "L": 20,
+      "r": 1,
+      "delta": -1,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 2,
+      "p": 0,
+      "L": 20,
+      "r": 4,
+      "delta": 2,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 2,
+      "p": 0,
+      "L": 20,
+      "r": 8,
+      "delta": 6,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 2,
+      "p": 0,
+      "L": 40,
+      "r": 0,
+      "delta": -2,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 2,
+      "p": 0,
+      "L": 40,
+      "r": 1,
+      "delta": -1,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 2,
+      "p": 0,
+      "L": 40,
+      "r": 4,
+      "delta": 2,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 2,
+      "p": 0,
+      "L": 40,
+      "r": 8,
+      "delta": 6,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 2,
+      "p": 0.05,
+      "L": 10,
+      "r": 0,
+      "delta": -1.5,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 2,
+      "p": 0.05,
+      "L": 10,
+      "r": 1,
+      "delta": -0.5,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 2,
+      "p": 0.05,
+      "L": 10,
+      "r": 4,
+      "delta": 2.5,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 2,
+      "p": 0.05,
+      "L": 10,
+      "r": 8,
+      "delta": 6.5,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 2,
+      "p": 0.05,
+      "L": 20,
+      "r": 0,
+      "delta": -1,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 2,
+      "p": 0.05,
+      "L": 20,
+      "r": 1,
+      "delta": 0,
+      "choice": "TIE"
+    },
+    {
+      "g": 2,
+      "p": 0.05,
+      "L": 20,
+      "r": 4,
+      "delta": 3,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 2,
+      "p": 0.05,
+      "L": 20,
+      "r": 8,
+      "delta": 7,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 2,
+      "p": 0.05,
+      "L": 40,
+      "r": 0,
+      "delta": 0,
+      "choice": "TIE"
+    },
+    {
+      "g": 2,
+      "p": 0.05,
+      "L": 40,
+      "r": 1,
+      "delta": 1,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 2,
+      "p": 0.05,
+      "L": 40,
+      "r": 4,
+      "delta": 4,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 2,
+      "p": 0.05,
+      "L": 40,
+      "r": 8,
+      "delta": 8,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 2,
+      "p": 0.1,
+      "L": 10,
+      "r": 0,
+      "delta": -1,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 2,
+      "p": 0.1,
+      "L": 10,
+      "r": 1,
+      "delta": 0,
+      "choice": "TIE"
+    },
+    {
+      "g": 2,
+      "p": 0.1,
+      "L": 10,
+      "r": 4,
+      "delta": 3,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 2,
+      "p": 0.1,
+      "L": 10,
+      "r": 8,
+      "delta": 7,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 2,
+      "p": 0.1,
+      "L": 20,
+      "r": 0,
+      "delta": 0,
+      "choice": "TIE"
+    },
+    {
+      "g": 2,
+      "p": 0.1,
+      "L": 20,
+      "r": 1,
+      "delta": 1,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 2,
+      "p": 0.1,
+      "L": 20,
+      "r": 4,
+      "delta": 4,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 2,
+      "p": 0.1,
+      "L": 20,
+      "r": 8,
+      "delta": 8,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 2,
+      "p": 0.1,
+      "L": 40,
+      "r": 0,
+      "delta": 2,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 2,
+      "p": 0.1,
+      "L": 40,
+      "r": 1,
+      "delta": 3,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 2,
+      "p": 0.1,
+      "L": 40,
+      "r": 4,
+      "delta": 6,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 2,
+      "p": 0.1,
+      "L": 40,
+      "r": 8,
+      "delta": 10,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 2,
+      "p": 0.25,
+      "L": 10,
+      "r": 0,
+      "delta": 0.5,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 2,
+      "p": 0.25,
+      "L": 10,
+      "r": 1,
+      "delta": 1.5,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 2,
+      "p": 0.25,
+      "L": 10,
+      "r": 4,
+      "delta": 4.5,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 2,
+      "p": 0.25,
+      "L": 10,
+      "r": 8,
+      "delta": 8.5,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 2,
+      "p": 0.25,
+      "L": 20,
+      "r": 0,
+      "delta": 3,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 2,
+      "p": 0.25,
+      "L": 20,
+      "r": 1,
+      "delta": 4,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 2,
+      "p": 0.25,
+      "L": 20,
+      "r": 4,
+      "delta": 7,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 2,
+      "p": 0.25,
+      "L": 20,
+      "r": 8,
+      "delta": 11,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 2,
+      "p": 0.25,
+      "L": 40,
+      "r": 0,
+      "delta": 8,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 2,
+      "p": 0.25,
+      "L": 40,
+      "r": 1,
+      "delta": 9,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 2,
+      "p": 0.25,
+      "L": 40,
+      "r": 4,
+      "delta": 12,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 2,
+      "p": 0.25,
+      "L": 40,
+      "r": 8,
+      "delta": 16,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 2,
+      "p": 0.5,
+      "L": 10,
+      "r": 0,
+      "delta": 3,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 2,
+      "p": 0.5,
+      "L": 10,
+      "r": 1,
+      "delta": 4,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 2,
+      "p": 0.5,
+      "L": 10,
+      "r": 4,
+      "delta": 7,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 2,
+      "p": 0.5,
+      "L": 10,
+      "r": 8,
+      "delta": 11,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 2,
+      "p": 0.5,
+      "L": 20,
+      "r": 0,
+      "delta": 8,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 2,
+      "p": 0.5,
+      "L": 20,
+      "r": 1,
+      "delta": 9,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 2,
+      "p": 0.5,
+      "L": 20,
+      "r": 4,
+      "delta": 12,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 2,
+      "p": 0.5,
+      "L": 20,
+      "r": 8,
+      "delta": 16,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 2,
+      "p": 0.5,
+      "L": 40,
+      "r": 0,
+      "delta": 18,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 2,
+      "p": 0.5,
+      "L": 40,
+      "r": 1,
+      "delta": 19,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 2,
+      "p": 0.5,
+      "L": 40,
+      "r": 4,
+      "delta": 22,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 2,
+      "p": 0.5,
+      "L": 40,
+      "r": 8,
+      "delta": 26,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 4,
+      "p": 0,
+      "L": 10,
+      "r": 0,
+      "delta": -4,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 4,
+      "p": 0,
+      "L": 10,
+      "r": 1,
+      "delta": -3,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 4,
+      "p": 0,
+      "L": 10,
+      "r": 4,
+      "delta": 0,
+      "choice": "TIE"
+    },
+    {
+      "g": 4,
+      "p": 0,
+      "L": 10,
+      "r": 8,
+      "delta": 4,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 4,
+      "p": 0,
+      "L": 20,
+      "r": 0,
+      "delta": -4,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 4,
+      "p": 0,
+      "L": 20,
+      "r": 1,
+      "delta": -3,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 4,
+      "p": 0,
+      "L": 20,
+      "r": 4,
+      "delta": 0,
+      "choice": "TIE"
+    },
+    {
+      "g": 4,
+      "p": 0,
+      "L": 20,
+      "r": 8,
+      "delta": 4,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 4,
+      "p": 0,
+      "L": 40,
+      "r": 0,
+      "delta": -4,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 4,
+      "p": 0,
+      "L": 40,
+      "r": 1,
+      "delta": -3,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 4,
+      "p": 0,
+      "L": 40,
+      "r": 4,
+      "delta": 0,
+      "choice": "TIE"
+    },
+    {
+      "g": 4,
+      "p": 0,
+      "L": 40,
+      "r": 8,
+      "delta": 4,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 4,
+      "p": 0.05,
+      "L": 10,
+      "r": 0,
+      "delta": -3.5,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 4,
+      "p": 0.05,
+      "L": 10,
+      "r": 1,
+      "delta": -2.5,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 4,
+      "p": 0.05,
+      "L": 10,
+      "r": 4,
+      "delta": 0.5,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 4,
+      "p": 0.05,
+      "L": 10,
+      "r": 8,
+      "delta": 4.5,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 4,
+      "p": 0.05,
+      "L": 20,
+      "r": 0,
+      "delta": -3,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 4,
+      "p": 0.05,
+      "L": 20,
+      "r": 1,
+      "delta": -2,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 4,
+      "p": 0.05,
+      "L": 20,
+      "r": 4,
+      "delta": 1,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 4,
+      "p": 0.05,
+      "L": 20,
+      "r": 8,
+      "delta": 5,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 4,
+      "p": 0.05,
+      "L": 40,
+      "r": 0,
+      "delta": -2,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 4,
+      "p": 0.05,
+      "L": 40,
+      "r": 1,
+      "delta": -1,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 4,
+      "p": 0.05,
+      "L": 40,
+      "r": 4,
+      "delta": 2,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 4,
+      "p": 0.05,
+      "L": 40,
+      "r": 8,
+      "delta": 6,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 4,
+      "p": 0.1,
+      "L": 10,
+      "r": 0,
+      "delta": -3,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 4,
+      "p": 0.1,
+      "L": 10,
+      "r": 1,
+      "delta": -2,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 4,
+      "p": 0.1,
+      "L": 10,
+      "r": 4,
+      "delta": 1,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 4,
+      "p": 0.1,
+      "L": 10,
+      "r": 8,
+      "delta": 5,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 4,
+      "p": 0.1,
+      "L": 20,
+      "r": 0,
+      "delta": -2,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 4,
+      "p": 0.1,
+      "L": 20,
+      "r": 1,
+      "delta": -1,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 4,
+      "p": 0.1,
+      "L": 20,
+      "r": 4,
+      "delta": 2,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 4,
+      "p": 0.1,
+      "L": 20,
+      "r": 8,
+      "delta": 6,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 4,
+      "p": 0.1,
+      "L": 40,
+      "r": 0,
+      "delta": 0,
+      "choice": "TIE"
+    },
+    {
+      "g": 4,
+      "p": 0.1,
+      "L": 40,
+      "r": 1,
+      "delta": 1,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 4,
+      "p": 0.1,
+      "L": 40,
+      "r": 4,
+      "delta": 4,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 4,
+      "p": 0.1,
+      "L": 40,
+      "r": 8,
+      "delta": 8,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 4,
+      "p": 0.25,
+      "L": 10,
+      "r": 0,
+      "delta": -1.5,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 4,
+      "p": 0.25,
+      "L": 10,
+      "r": 1,
+      "delta": -0.5,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 4,
+      "p": 0.25,
+      "L": 10,
+      "r": 4,
+      "delta": 2.5,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 4,
+      "p": 0.25,
+      "L": 10,
+      "r": 8,
+      "delta": 6.5,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 4,
+      "p": 0.25,
+      "L": 20,
+      "r": 0,
+      "delta": 1,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 4,
+      "p": 0.25,
+      "L": 20,
+      "r": 1,
+      "delta": 2,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 4,
+      "p": 0.25,
+      "L": 20,
+      "r": 4,
+      "delta": 5,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 4,
+      "p": 0.25,
+      "L": 20,
+      "r": 8,
+      "delta": 9,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 4,
+      "p": 0.25,
+      "L": 40,
+      "r": 0,
+      "delta": 6,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 4,
+      "p": 0.25,
+      "L": 40,
+      "r": 1,
+      "delta": 7,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 4,
+      "p": 0.25,
+      "L": 40,
+      "r": 4,
+      "delta": 10,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 4,
+      "p": 0.25,
+      "L": 40,
+      "r": 8,
+      "delta": 14,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 4,
+      "p": 0.5,
+      "L": 10,
+      "r": 0,
+      "delta": 1,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 4,
+      "p": 0.5,
+      "L": 10,
+      "r": 1,
+      "delta": 2,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 4,
+      "p": 0.5,
+      "L": 10,
+      "r": 4,
+      "delta": 5,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 4,
+      "p": 0.5,
+      "L": 10,
+      "r": 8,
+      "delta": 9,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 4,
+      "p": 0.5,
+      "L": 20,
+      "r": 0,
+      "delta": 6,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 4,
+      "p": 0.5,
+      "L": 20,
+      "r": 1,
+      "delta": 7,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 4,
+      "p": 0.5,
+      "L": 20,
+      "r": 4,
+      "delta": 10,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 4,
+      "p": 0.5,
+      "L": 20,
+      "r": 8,
+      "delta": 14,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 4,
+      "p": 0.5,
+      "L": 40,
+      "r": 0,
+      "delta": 16,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 4,
+      "p": 0.5,
+      "L": 40,
+      "r": 1,
+      "delta": 17,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 4,
+      "p": 0.5,
+      "L": 40,
+      "r": 4,
+      "delta": 20,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 4,
+      "p": 0.5,
+      "L": 40,
+      "r": 8,
+      "delta": 24,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 8,
+      "p": 0,
+      "L": 10,
+      "r": 0,
+      "delta": -8,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 8,
+      "p": 0,
+      "L": 10,
+      "r": 1,
+      "delta": -7,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 8,
+      "p": 0,
+      "L": 10,
+      "r": 4,
+      "delta": -4,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 8,
+      "p": 0,
+      "L": 10,
+      "r": 8,
+      "delta": 0,
+      "choice": "TIE"
+    },
+    {
+      "g": 8,
+      "p": 0,
+      "L": 20,
+      "r": 0,
+      "delta": -8,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 8,
+      "p": 0,
+      "L": 20,
+      "r": 1,
+      "delta": -7,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 8,
+      "p": 0,
+      "L": 20,
+      "r": 4,
+      "delta": -4,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 8,
+      "p": 0,
+      "L": 20,
+      "r": 8,
+      "delta": 0,
+      "choice": "TIE"
+    },
+    {
+      "g": 8,
+      "p": 0,
+      "L": 40,
+      "r": 0,
+      "delta": -8,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 8,
+      "p": 0,
+      "L": 40,
+      "r": 1,
+      "delta": -7,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 8,
+      "p": 0,
+      "L": 40,
+      "r": 4,
+      "delta": -4,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 8,
+      "p": 0,
+      "L": 40,
+      "r": 8,
+      "delta": 0,
+      "choice": "TIE"
+    },
+    {
+      "g": 8,
+      "p": 0.05,
+      "L": 10,
+      "r": 0,
+      "delta": -7.5,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 8,
+      "p": 0.05,
+      "L": 10,
+      "r": 1,
+      "delta": -6.5,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 8,
+      "p": 0.05,
+      "L": 10,
+      "r": 4,
+      "delta": -3.5,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 8,
+      "p": 0.05,
+      "L": 10,
+      "r": 8,
+      "delta": 0.5,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 8,
+      "p": 0.05,
+      "L": 20,
+      "r": 0,
+      "delta": -7,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 8,
+      "p": 0.05,
+      "L": 20,
+      "r": 1,
+      "delta": -6,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 8,
+      "p": 0.05,
+      "L": 20,
+      "r": 4,
+      "delta": -3,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 8,
+      "p": 0.05,
+      "L": 20,
+      "r": 8,
+      "delta": 1,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 8,
+      "p": 0.05,
+      "L": 40,
+      "r": 0,
+      "delta": -6,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 8,
+      "p": 0.05,
+      "L": 40,
+      "r": 1,
+      "delta": -5,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 8,
+      "p": 0.05,
+      "L": 40,
+      "r": 4,
+      "delta": -2,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 8,
+      "p": 0.05,
+      "L": 40,
+      "r": 8,
+      "delta": 2,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 8,
+      "p": 0.1,
+      "L": 10,
+      "r": 0,
+      "delta": -7,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 8,
+      "p": 0.1,
+      "L": 10,
+      "r": 1,
+      "delta": -6,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 8,
+      "p": 0.1,
+      "L": 10,
+      "r": 4,
+      "delta": -3,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 8,
+      "p": 0.1,
+      "L": 10,
+      "r": 8,
+      "delta": 1,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 8,
+      "p": 0.1,
+      "L": 20,
+      "r": 0,
+      "delta": -6,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 8,
+      "p": 0.1,
+      "L": 20,
+      "r": 1,
+      "delta": -5,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 8,
+      "p": 0.1,
+      "L": 20,
+      "r": 4,
+      "delta": -2,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 8,
+      "p": 0.1,
+      "L": 20,
+      "r": 8,
+      "delta": 2,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 8,
+      "p": 0.1,
+      "L": 40,
+      "r": 0,
+      "delta": -4,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 8,
+      "p": 0.1,
+      "L": 40,
+      "r": 1,
+      "delta": -3,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 8,
+      "p": 0.1,
+      "L": 40,
+      "r": 4,
+      "delta": 0,
+      "choice": "TIE"
+    },
+    {
+      "g": 8,
+      "p": 0.1,
+      "L": 40,
+      "r": 8,
+      "delta": 4,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 8,
+      "p": 0.25,
+      "L": 10,
+      "r": 0,
+      "delta": -5.5,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 8,
+      "p": 0.25,
+      "L": 10,
+      "r": 1,
+      "delta": -4.5,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 8,
+      "p": 0.25,
+      "L": 10,
+      "r": 4,
+      "delta": -1.5,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 8,
+      "p": 0.25,
+      "L": 10,
+      "r": 8,
+      "delta": 2.5,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 8,
+      "p": 0.25,
+      "L": 20,
+      "r": 0,
+      "delta": -3,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 8,
+      "p": 0.25,
+      "L": 20,
+      "r": 1,
+      "delta": -2,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 8,
+      "p": 0.25,
+      "L": 20,
+      "r": 4,
+      "delta": 1,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 8,
+      "p": 0.25,
+      "L": 20,
+      "r": 8,
+      "delta": 5,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 8,
+      "p": 0.25,
+      "L": 40,
+      "r": 0,
+      "delta": 2,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 8,
+      "p": 0.25,
+      "L": 40,
+      "r": 1,
+      "delta": 3,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 8,
+      "p": 0.25,
+      "L": 40,
+      "r": 4,
+      "delta": 6,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 8,
+      "p": 0.25,
+      "L": 40,
+      "r": 8,
+      "delta": 10,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 8,
+      "p": 0.5,
+      "L": 10,
+      "r": 0,
+      "delta": -3,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 8,
+      "p": 0.5,
+      "L": 10,
+      "r": 1,
+      "delta": -2,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 8,
+      "p": 0.5,
+      "L": 10,
+      "r": 4,
+      "delta": 1,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 8,
+      "p": 0.5,
+      "L": 10,
+      "r": 8,
+      "delta": 5,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 8,
+      "p": 0.5,
+      "L": 20,
+      "r": 0,
+      "delta": 2,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 8,
+      "p": 0.5,
+      "L": 20,
+      "r": 1,
+      "delta": 3,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 8,
+      "p": 0.5,
+      "L": 20,
+      "r": 4,
+      "delta": 6,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 8,
+      "p": 0.5,
+      "L": 20,
+      "r": 8,
+      "delta": 10,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 8,
+      "p": 0.5,
+      "L": 40,
+      "r": 0,
+      "delta": 12,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 8,
+      "p": 0.5,
+      "L": 40,
+      "r": 1,
+      "delta": 13,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 8,
+      "p": 0.5,
+      "L": 40,
+      "r": 4,
+      "delta": 16,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 8,
+      "p": 0.5,
+      "L": 40,
+      "r": 8,
+      "delta": 20,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 16,
+      "p": 0,
+      "L": 10,
+      "r": 0,
+      "delta": -16,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 16,
+      "p": 0,
+      "L": 10,
+      "r": 1,
+      "delta": -15,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 16,
+      "p": 0,
+      "L": 10,
+      "r": 4,
+      "delta": -12,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 16,
+      "p": 0,
+      "L": 10,
+      "r": 8,
+      "delta": -8,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 16,
+      "p": 0,
+      "L": 20,
+      "r": 0,
+      "delta": -16,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 16,
+      "p": 0,
+      "L": 20,
+      "r": 1,
+      "delta": -15,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 16,
+      "p": 0,
+      "L": 20,
+      "r": 4,
+      "delta": -12,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 16,
+      "p": 0,
+      "L": 20,
+      "r": 8,
+      "delta": -8,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 16,
+      "p": 0,
+      "L": 40,
+      "r": 0,
+      "delta": -16,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 16,
+      "p": 0,
+      "L": 40,
+      "r": 1,
+      "delta": -15,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 16,
+      "p": 0,
+      "L": 40,
+      "r": 4,
+      "delta": -12,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 16,
+      "p": 0,
+      "L": 40,
+      "r": 8,
+      "delta": -8,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 16,
+      "p": 0.05,
+      "L": 10,
+      "r": 0,
+      "delta": -15.5,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 16,
+      "p": 0.05,
+      "L": 10,
+      "r": 1,
+      "delta": -14.5,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 16,
+      "p": 0.05,
+      "L": 10,
+      "r": 4,
+      "delta": -11.5,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 16,
+      "p": 0.05,
+      "L": 10,
+      "r": 8,
+      "delta": -7.5,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 16,
+      "p": 0.05,
+      "L": 20,
+      "r": 0,
+      "delta": -15,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 16,
+      "p": 0.05,
+      "L": 20,
+      "r": 1,
+      "delta": -14,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 16,
+      "p": 0.05,
+      "L": 20,
+      "r": 4,
+      "delta": -11,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 16,
+      "p": 0.05,
+      "L": 20,
+      "r": 8,
+      "delta": -7,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 16,
+      "p": 0.05,
+      "L": 40,
+      "r": 0,
+      "delta": -14,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 16,
+      "p": 0.05,
+      "L": 40,
+      "r": 1,
+      "delta": -13,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 16,
+      "p": 0.05,
+      "L": 40,
+      "r": 4,
+      "delta": -10,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 16,
+      "p": 0.05,
+      "L": 40,
+      "r": 8,
+      "delta": -6,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 16,
+      "p": 0.1,
+      "L": 10,
+      "r": 0,
+      "delta": -15,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 16,
+      "p": 0.1,
+      "L": 10,
+      "r": 1,
+      "delta": -14,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 16,
+      "p": 0.1,
+      "L": 10,
+      "r": 4,
+      "delta": -11,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 16,
+      "p": 0.1,
+      "L": 10,
+      "r": 8,
+      "delta": -7,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 16,
+      "p": 0.1,
+      "L": 20,
+      "r": 0,
+      "delta": -14,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 16,
+      "p": 0.1,
+      "L": 20,
+      "r": 1,
+      "delta": -13,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 16,
+      "p": 0.1,
+      "L": 20,
+      "r": 4,
+      "delta": -10,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 16,
+      "p": 0.1,
+      "L": 20,
+      "r": 8,
+      "delta": -6,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 16,
+      "p": 0.1,
+      "L": 40,
+      "r": 0,
+      "delta": -12,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 16,
+      "p": 0.1,
+      "L": 40,
+      "r": 1,
+      "delta": -11,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 16,
+      "p": 0.1,
+      "L": 40,
+      "r": 4,
+      "delta": -8,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 16,
+      "p": 0.1,
+      "L": 40,
+      "r": 8,
+      "delta": -4,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 16,
+      "p": 0.25,
+      "L": 10,
+      "r": 0,
+      "delta": -13.5,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 16,
+      "p": 0.25,
+      "L": 10,
+      "r": 1,
+      "delta": -12.5,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 16,
+      "p": 0.25,
+      "L": 10,
+      "r": 4,
+      "delta": -9.5,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 16,
+      "p": 0.25,
+      "L": 10,
+      "r": 8,
+      "delta": -5.5,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 16,
+      "p": 0.25,
+      "L": 20,
+      "r": 0,
+      "delta": -11,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 16,
+      "p": 0.25,
+      "L": 20,
+      "r": 1,
+      "delta": -10,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 16,
+      "p": 0.25,
+      "L": 20,
+      "r": 4,
+      "delta": -7,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 16,
+      "p": 0.25,
+      "L": 20,
+      "r": 8,
+      "delta": -3,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 16,
+      "p": 0.25,
+      "L": 40,
+      "r": 0,
+      "delta": -6,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 16,
+      "p": 0.25,
+      "L": 40,
+      "r": 1,
+      "delta": -5,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 16,
+      "p": 0.25,
+      "L": 40,
+      "r": 4,
+      "delta": -2,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 16,
+      "p": 0.25,
+      "L": 40,
+      "r": 8,
+      "delta": 2,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 16,
+      "p": 0.5,
+      "L": 10,
+      "r": 0,
+      "delta": -11,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 16,
+      "p": 0.5,
+      "L": 10,
+      "r": 1,
+      "delta": -10,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 16,
+      "p": 0.5,
+      "L": 10,
+      "r": 4,
+      "delta": -7,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 16,
+      "p": 0.5,
+      "L": 10,
+      "r": 8,
+      "delta": -3,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 16,
+      "p": 0.5,
+      "L": 20,
+      "r": 0,
+      "delta": -6,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 16,
+      "p": 0.5,
+      "L": 20,
+      "r": 1,
+      "delta": -5,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 16,
+      "p": 0.5,
+      "L": 20,
+      "r": 4,
+      "delta": -2,
+      "choice": "OVERRIDE"
+    },
+    {
+      "g": 16,
+      "p": 0.5,
+      "L": 20,
+      "r": 8,
+      "delta": 2,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 16,
+      "p": 0.5,
+      "L": 40,
+      "r": 0,
+      "delta": 4,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 16,
+      "p": 0.5,
+      "L": 40,
+      "r": 1,
+      "delta": 5,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 16,
+      "p": 0.5,
+      "L": 40,
+      "r": 4,
+      "delta": 8,
+      "choice": "PRESERVE"
+    },
+    {
+      "g": 16,
+      "p": 0.5,
+      "L": 40,
+      "r": 8,
+      "delta": 12,
+      "choice": "PRESERVE"
+    }
+  ]
+}
