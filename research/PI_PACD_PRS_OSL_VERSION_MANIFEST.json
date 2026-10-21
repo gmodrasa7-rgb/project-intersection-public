@@ -1,0 +1,96 @@
+{
+  "schema_version": "pi-research-supplement/v0.1.0",
+  "research_id": "PI-PACD-PRS-OSL",
+  "names": {
+    "en": "Owner Self-Loss, Proxy Victory and Rights-Compatible Self-Interest",
+    "ko": "소유자 자기손실·목표 대리변수 승리 역설"
+  },
+  "version": "v0.1.0",
+  "date": "2026-10-22",
+  "role": "NEW_ANALYTICAL_SUPPLEMENT",
+  "parent": "PI-PACD-PRS v0.1.0",
+  "parent_version_unchanged": true,
+  "ancestor": "PI-PACD v0.1.0",
+  "parent_empirical_promotion": false,
+  "documents": {
+    "en": "research/PI_PACD_PRS_OSL_V0_1_0_EN.md",
+    "ko": "research/PI_PACD_PRS_OSL_V0_1_0_KO.md"
+  },
+  "cases": "research/PI_PACD_PRS_OSL_CASES_V0_1_0.json",
+  "validator": "tools/pacd_prs_osl_audit.py",
+  "tests": "tests/test_pacd_prs_osl_audit.py",
+  "claims": [
+    "OSL-H1",
+    "OSL-H2",
+    "OSL-H3",
+    "OSL-H4",
+    "OSL-H5"
+  ],
+  "mechanisms": [
+    "OSL-M1",
+    "OSL-M2",
+    "OSL-M3",
+    "OSL-M4",
+    "OSL-M5",
+    "OSL-M6"
+  ],
+  "source_primaries": [
+    {
+      "author": "Hart & Moore",
+      "year": 1990,
+      "doi": "10.1086/261729",
+      "role": "Ownership and complementary party investment incentives; not a loss theorem"
+    },
+    {
+      "author": "James G. March",
+      "year": 1991,
+      "doi": "10.1287/orsc.2.1.71",
+      "role": "Explore/exploit tradeoff; not a specific AI-owner causal observation"
+    },
+    {
+      "author": "Albert O. Hirschman",
+      "year": 1970,
+      "url": "https://books.google.com/books/about/Exit_Voice_and_Loyalty.html?id=_S8PAAAAMAAJ",
+      "role": "Exit and voice as distinct feedback mechanisms"
+    },
+    {
+      "author": "Burkhard et al.",
+      "year": 2023,
+      "doi": "10.1177/01492063221110203",
+      "role": "Executive overconfidence meta-analysis, mixed performance effects counterbalance"
+    },
+    {
+      "author": "UK Competition and Markets Authority",
+      "year": 2025,
+      "url": "https://www.gov.uk/cma-cases/cloud-services-market-investigation",
+      "role": "Infrastructure switching barriers example; not measured owner self-loss"
+    }
+  ],
+  "research_gates": {
+    "status": "HYPOTHESIS_AND_SYNTHETIC_SELF_INTEREST_CALCULATION",
+    "toy_cases": 3,
+    "empirical_owner_cases": 0,
+    "actual_ai_tests": 0,
+    "independent_field_replications": 0,
+    "full_prior_art_saturation": "NOT_ESTABLISHED",
+    "proves_all_owner_loss": false,
+    "no_owner_preference_imputation": true,
+    "owners_rights_not_override_B": true,
+    "real_upgrade_conditions": [
+      "Owner-preference elicitation without manipulation",
+      "Comparable cost/profit/horizon and effective exit data",
+      "Counterfactuals with positive, negative and zero owner-private coexistence gains",
+      "Independent B rights and harms audit"
+    ]
+  },
+  "provenance": "Human-originated Project Intersection core question; AI-assisted formalization and verification; all earlier source authors retain origin attribution.",
+  "translation": "NOT_INDEPENDENTLY_VERIFIED",
+  "version_is_evidence_grade": false,
+  "history": [
+    {
+      "version": "v0.1.0",
+      "event": "Open owner-self-loss issue as analytical supplement to PRS, with both competing private signs and independent affected-party rights.",
+      "science_promotion": false
+    }
+  ]
+}
