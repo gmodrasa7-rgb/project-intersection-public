@@ -13,6 +13,7 @@
 | 연구 목적을 처음 이해 | [한국어 처음 읽는 연구 안내](START_HERE_KO.md) | 자기이익·권력반전·최종 목표, 보편법칙 입증 아님 |
 | 연구체계와 핵심 개념 파악 | [VC·MER·EI·ECR·IVS-0R 다섯 축 연구지도](RESEARCH_PROGRAM_KO.md) | 연구 가설과 반증 대상, 실증 5개 아님 |
 | 개별 주장별 실제 근거 확인 | [한국어 공개 증거 색인](../research/PUBLIC_EVIDENCE_INDEX_KO.md) | 주장별 출처·허용 결론·증거등급 |
+| 주장·원자료·반례·미해결을 한 번에 대조 | [연구지도 7절: 주장–근거–반례 결정표](RESEARCH_PROGRAM_KO.md#claim-evidence-decision) | 선정된 `main` 자료의 판정 통로. 독립검증·전체 주장 목록 아님 |
 | 프로젝트에 불리한 대표 결과 확인 | [E009 단순 기준선에 패한 부정결과](../experiments/e009/RESULT_KO.md) | 합성 비교의 불리한 결과, 현실 인간·AI 실험 아님 |
 | 직접 실행 가능한 제한적 실험 찾기 | [E007 시점 합성 실험과 재현 자료](../experiments/e007/README_KO.md) | 코드·합성결과, 독립 학술 재현 아님 |
 | 아직 수행하지 않은 실험 찾기 | [E008 미실행 정책 본실험](../experiments/e008/README_KO.md) | 사전등록 설계, 완료 결과 없음 |
