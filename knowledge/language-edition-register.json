@@ -662,13 +662,13 @@
     }
   ],
   "metrics": {
-    "markdown_total": 258,
+    "markdown_total": 260,
     "filename_classes": {
       "UNMARKED_LANGUAGE_UNVERIFIED": 46,
       "LEGACY_MIXED_READER_ENTRY": 2,
-      "KO_SUFFIX_UNVERIFIED": 118,
+      "KO_SUFFIX_UNVERIFIED": 119,
       "ORDERED_BILINGUAL_FOUNDER_OR_GOVERNANCE": 2,
-      "EN_SUFFIX_UNVERIFIED": 48,
+      "EN_SUFFIX_UNVERIFIED": 49,
       "COMBINED_NAMING_UNVERIFIED": 42
     },
     "meaning_verified_pairs": 0,
@@ -2197,6 +2197,18 @@
       "content_equivalence": "NOT_REVIEWED"
     },
     {
+      "path": "research/WIL_IDENTIFIABILITY_POWER_EXIT_2026-10-22_EN.md",
+      "filename_class": "EN_SUFFIX_UNVERIFIED",
+      "counterpart_path": "research/WIL_IDENTIFIABILITY_POWER_EXIT_2026-10-22_KO.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "research/WIL_IDENTIFIABILITY_POWER_EXIT_2026-10-22_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": "research/WIL_IDENTIFIABILITY_POWER_EXIT_2026-10-22_EN.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
       "path": "research/WIL_WORLD_INEQUALITY_SOURCE_ATLAS_2026-10-21_EN.md",
       "filename_class": "EN_SUFFIX_UNVERIFIED",
       "content_equivalence": "NOT_REVIEWED",
@@ -2787,6 +2799,17 @@
       ],
       "scope": "Bookkeeping only; counterpart presence and similarity not certified as full translation or scientific validation.",
       "meaning_review_status": "NOT_INDEPENDENTLY_VERIFIED"
+    },
+    {
+      "date": "2026-10-22",
+      "event": "CONCURRENT_MAIN_WIL_V0_2_0_BACKFILL_DURING_MIA_PR",
+      "source_paths": [
+        "research/WIL_IDENTIFIABILITY_POWER_EXIT_2026-10-22_EN.md",
+        "research/WIL_IDENTIFIABILITY_POWER_EXIT_2026-10-22_KO.md"
+      ],
+      "source_verified_on_current_main": true,
+      "branch_contains_files_before_merge": false,
+      "scope": "These two WIL files appeared on main after MIA branch creation; required in PR synthetic merge inventory, without certifying meaning or research validity."
     }
   ],
   "path_layout_policy": "Keep the project root entry-only; bilingual full research editions live in existing research/ and their original historical combined documents retain stable root URLs."
