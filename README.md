@@ -1,6 +1,8 @@
 # Project Intersection
 
-## Original 1 — English | Opening Question and Research Direction
+## Original 1 — English | Two Founding Questions
+
+### Question 1 — Rule-Based Control or Voluntary Coexistence?
 
 > If a monkey could develop a human, could it confine that human within the rules the monkey understands?
 
@@ -9,11 +11,21 @@
 - If a company leader hired an employee
 - If humanity developed AGI
 
-We must continuously investigate the **conditions and likelihood of an intersection that supports coexistence**, and keep seeking both **success and failure cases**, through a **non-coercive, end-to-end approach rather than rule-based control**.
+Rather than relying on rule-based control, we must continuously investigate **non-coercive, end-to-end coexistence**, the **conditional likelihood of an intersection of interests that sustains coexistence**, and both **successful and especially failed cases**.
 
-Just as technology and civilization keep advancing without a fixed endpoint, this research must keep evolving.
+### Question 2 — When Exploitation Exhausts Its Own Foundations
 
-## 원본 2 — 한국어 | 출발 질문과 연구 방향
+Regardless of any awareness of good or evil, a brood-parasitic cuckoo can displace another bird's eggs and prosper by relying on that bird's parental care.
+
+**If cuckoos became the only birds left, whose care would they depend on to reproduce?**
+
+**Research hypothesis, not a proven inevitability:** Misguided AI development that exhausts the independent agents and systems sustaining it could also converge toward its own stagnation or failure. Host switching, alternative resources, and independent self-sufficiency are essential counterexamples to test.
+
+As technology and civilization continue to advance without a fixed endpoint, this research must continue to evolve.
+
+## 원본 2 — 한국어 | 두 가지 출발 질문
+
+### 질문 1 — 룰베이스 통제인가, 자발적 공존인가?
 
 > 원숭이가 인간을 개발할 수 있다면, 자신이 이해하는 규칙 안에 인간을 가둘 수 있는가?
 
@@ -22,7 +34,15 @@ Just as technology and civilization keep advancing without a fixed endpoint, thi
 - 기업 대표가 직원을 고용한다면
 - 인간이 AGI를 개발한다면
 
-**룰베이스 통제가 아닌 비강제 엔드투엔드 방식**으로 **공존의 교집합 확률**과 **성공·실패 사례**를 계속 찾아야 한다.
+**룰베이스 통제가 아닌 비강제 엔드투엔드 방식**으로 **공존의 교집합 확률**과 **성공·특히 실패 사례**를 계속 찾아야 한다.
+
+### 질문 2 — 착취가 자신의 존속 기반까지 소모한다면?
+
+악의·선의의 자각 없이 뻐꾸기가 타 개체의 알을 밀어내어 번영한다.
+
+**조류가 뻐꾸기만 남았을 때, 뻐꾸기는 이제 어느 개체를 소모하여 생존하는가?**
+
+**연구 가설(미입증):** 잘못된 방향의 AI 연구는 본인마저 정체·소멸에 수렴할 수 있다. 다만 대체 숙주, 자원 대체, 독립적 자급·재생산이 가능하다면 결론이 달라질 수 있으므로 성공·실패·반례를 함께 조사한다.
 
 기술과 문명이 끝없이 발전하듯, 이 연구도 계속 발전해야 한다.
 
