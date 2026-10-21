@@ -13,6 +13,7 @@
 | Understand the question in plain language | [English beginner's research guide](START_HERE_EN.md) | Founding objective, actual self-interest and power reversal; not proof of a universal theorem |
 | Evaluate the full scientific architecture | [Five-axis VC–MER–EI–ECR–IVS-0R research map](RESEARCH_PROGRAM_EN.md) | The mechanisms and falsifiers; the five axes are not five verified findings |
 | Find an individual claim and its limits | [English claim-by-claim public evidence index](../research/PUBLIC_EVIDENCE_INDEX_EN.md) | Source, evidence state and allowed inference |
+| Trace an assertion from source through adverse evidence to a status gate | [Claim-to-source decision table (research map, section 7)](RESEARCH_PROGRAM_EN.md#claim-evidence-decision) | Bounded crosswalk, not independent validation or a comprehensive graph |
 | Inspect the project's strongest published adverse result | [E009 negative comparative result](../experiments/e009/RESULT_EN.md) | Synthetic benchmark: proposed complex policy worse than the best simpler baseline; not a human/AI field test |
 | Reproduce a bounded calculation | [E007 reproducible timing experiment](../experiments/e007/README_EN.md) | Code and synthetic outcomes; not independent scientific replication |
 | Check what was not yet run | [E008 unexecuted main study](../experiments/e008/README_EN.md) | Preregistered design; no completed main policy comparison |
