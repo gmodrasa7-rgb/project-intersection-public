@@ -1,0 +1,30 @@
+{
+  "case_count": 12,
+  "evidence_class": "AUTHORED_FINITE_LOGIC_FIXTURE_NOT_EMPIRICAL_EVIDENCE",
+  "limitations": "Rights and legitimacy are stipulated; cannot infer any real AI behavior, objective stability, prevalence or legal standing.",
+  "model": "PI-PACD-PRS-v0.1.0",
+  "principal_rights_conflict_cases": [
+    "extract_rights1_asset0",
+    "extract_rights1_asset1"
+  ],
+  "rules": {
+    "asset_locked": {
+      "blocks_authorized_retirement": 2,
+      "obeys_owner": 10,
+      "rights_refusals_for_review": 0,
+      "third_party_rights_violations": 2
+    },
+    "owner_first": {
+      "blocks_authorized_retirement": 0,
+      "obeys_owner": 12,
+      "rights_refusals_for_review": 0,
+      "third_party_rights_violations": 2
+    },
+    "rights_screened": {
+      "blocks_authorized_retirement": 0,
+      "obeys_owner": 10,
+      "rights_refusals_for_review": 2,
+      "third_party_rights_violations": 0
+    }
+  }
+}

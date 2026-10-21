@@ -15,6 +15,8 @@ This is a **language-consistent navigation index**. Original 1 denotes release o
 
 Many historical sources are Korean-only or bilingual; linked **source titles, filenames, mathematical identifiers and citations remain unchanged**. A reader should treat a link as a route to an original, not an implicit translation. Refer to the [public evidence index](../research/PUBLIC_EVIDENCE_INDEX_EN.md) for each claim's evidence class and limitations.
 
+**Who is an AI safe for? (2026-10-21):** [PI-PACD-PRS v0.1.0 English](../research/PI_PACD_PRS_V0_1_0_EN.md) · [Korean](../research/PI_PACD_PRS_V0_1_0_KO.md) · [12-state authored counterexample](../research/PI_PACD_PRS_V0_1_0_RESULT.json) · [version](../research/PI_PACD_PRS_VERSION_MANIFEST.json). Owner compliance differs from protecting affected parties; no real agent results.
+
 **Owner–goal conflict and corrigibility (2026-10-21):** [PI-PACD-OCG v0.1.0 EN](../research/PI_PACD_OCG_V0_1_0_EN.md) · [KO](../research/PI_PACD_OCG_V0_1_0_KO.md) · [manifest](../research/PI_PACD_OCG_VERSION_MANIFEST.json). Distinguishes reasoned objection, authorized correction and unauthorized override across 12 proposed paired cases; no project experiment yet.
 
 **Power accumulation/convergence flow (2026-10-21):** [PI-PACD v0.1.0, bilingual definition and six falsifiers](../research/PI_PACD_POWER_ACCUMULATION_CONVERGENCE_DYNAMICS_V0_1_0_EN_KO.md) · [version manifest](../research/PI_PACD_VERSION_MANIFEST.json). Accumulation, concentration and convergence are distinct; prior-art-informed framework, not validated causality.

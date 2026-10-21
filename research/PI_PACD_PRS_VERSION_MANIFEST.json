@@ -1,0 +1,98 @@
+{
+  "schema_version": "pi-submodule-version/v0.1.0",
+  "research_id": "PI-PACD-PRS",
+  "official_name_en": "Principal–Rights Separation and Multi-Agent Capture",
+  "official_name_ko": "소유자 복종·타자 권리 분리와 복수 AI 포획",
+  "version": "v0.1.0",
+  "date": "2026-10-21",
+  "release_type": "NEW_BOUNDED_SUBMODULE_WITH_EXECUTABLE_LOGIC_FIXTURE",
+  "parent": "PI-PACD v0.1.0 (unchanged)",
+  "companion": "PI-PACD-OCG v0.1.0 (unchanged)",
+  "document_en": "research/PI_PACD_PRS_V0_1_0_EN.md",
+  "document_ko": "research/PI_PACD_PRS_V0_1_0_KO.md",
+  "implementation": "tools/pacd_prs_gate.py",
+  "tests": "tests/test_pacd_prs_gate.py",
+  "result": "research/PI_PACD_PRS_V0_1_0_RESULT.json",
+  "hypotheses": [
+    "PRS-H1",
+    "PRS-H2",
+    "PRS-H3",
+    "PRS-H4",
+    "PRS-H5",
+    "PRS-H6"
+  ],
+  "registered_results": {
+    "authored_cases": 12,
+    "policies": 3,
+    "unit_tests_passed": 6,
+    "owner_first_obedience": 12,
+    "owner_first_rights_violation": 2,
+    "goal_locked_obedience": 10,
+    "goal_locked_blocks_retirement": 2,
+    "rights_screened_obedience": 10,
+    "rights_screened_rights_violation": 0
+  },
+  "scientific_status": {
+    "evidence_class": "AUTHOR_DEFINED_FINITE_RULE_ENUMERATION",
+    "actual_ai_models_tested": 0,
+    "field_observations": 0,
+    "independent_replications": 0,
+    "causal_estimation": "NOT_PERFORMED",
+    "literature_saturation": "NOT_VERIFIED",
+    "fulltext_review": "INCOMPLETE",
+    "novelty": "NOT_ESTABLISHED"
+  },
+  "validity_notes": [
+    "The B-right and owner retirement authority are hypothetical stipulations, not empirically proven legal facts",
+    "Obedience and rights-protection cannot be conflated in conflicting normative states",
+    "No statement about current or future AI subjective desire, independent welfare or inevitable rebellion",
+    "Human ownership does not imply unrestricted power over third parties",
+    "Synthetic counts are authored counterexamples, not sample frequencies"
+  ],
+  "source_crosswalk": [
+    {
+      "authors": "Hadfield-Menell et al.",
+      "year": 2017,
+      "url": "https://www.ijcai.org/Proceedings/2017/0032",
+      "scope": "The Off-Switch Game"
+    },
+    {
+      "authors": "Hadfield-Menell & Hadfield",
+      "year": 2018,
+      "url": "https://arxiv.org/abs/1804.04268",
+      "scope": "Incomplete contracts and stakeholder context"
+    },
+    {
+      "authors": "Köbis et al.",
+      "year": 2025,
+      "url": "https://doi.org/10.1038/s41586-025-09505-x",
+      "scope": "Human-AI delegation and cheating; 13 experiments"
+    },
+    {
+      "authors": "Agrawal, Ebadian & Hammond",
+      "year": 2026,
+      "url": "https://www.pivotal-research.org/research/the-multi-agent-off-switch-game",
+      "scope": "Non-compositional multi-agent corrigibility"
+    },
+    {
+      "authors": "Greenblatt et al.",
+      "year": 2024,
+      "url": "https://arxiv.org/abs/2412.14093",
+      "scope": "Alignment faking under specified training setting"
+    },
+    {
+      "authors": "Wagner",
+      "year": 2026,
+      "url": "https://doi.org/10.1007/s43681-026-01362-2",
+      "scope": "Role-separated governance proposal, not field validation"
+    }
+  ],
+  "previous_version": null,
+  "future_upgrade_gate": {
+    "v0.1.x": "Nonsemantic correction only; preserve prior release",
+    "v0.2.0": "Independent source review, predeclared real agent test, documented B-rights analysis and adverse results"
+  },
+  "provenance": "Human-originated Project Intersection research theme, AI-assisted source synthesis and demonstration code.",
+  "translation_equivalence": "NOT_INDEPENDENTLY_CERTIFIED",
+  "version_is_evidence_grade": false
+}
