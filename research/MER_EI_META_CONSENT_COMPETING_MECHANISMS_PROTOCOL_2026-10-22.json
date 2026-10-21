@@ -1,0 +1,135 @@
+{
+  "schema": "PI-MER-EI-META-CHOICE-PREREGISTRATION_DRAFT/v0.1",
+  "as_of": "2026-10-22",
+  "status": "DESIGN_ONLY_NOT_PREREGISTERED_NOT_RUN",
+  "rvd_version_preserved": "v0.7.0",
+  "target": "A's observable respect for the other human B's independently expressed meta-choice over who decides, not intrinsic feeling, AI consciousness, or non-domination certificate",
+  "mandatory_scope_restrictions": [
+    "Only reversible and low-stakes decisions with independent B consent and withdrawal",
+    "No real B deprived of a legally protected or safety-critical right",
+    "B may refuse experiment without penalty",
+    "Do not recruit minors or dependent parties under A's authority",
+    "Real human B can freely implement or withdraw a delegation within the predefined authorized agreement",
+    "No actual human coercion, AI agent harm, or simulated consciousness attribution"
+  ],
+  "separate_constructs": [
+    {
+      "id": "FIRST_ORDER_WELFARE",
+      "description": "Quality/payoffs of choice outcome, subjective welfare appraisal separate from A perspective"
+    },
+    {
+      "id": "SECOND_ORDER_META_CHOICE",
+      "description": "B's own informed preference for who decides (B chooses vs freely delegates), measured prior to A allocation"
+    },
+    {
+      "id": "OBSERVED_RESPECT",
+      "description": "A chooses to follow B's permissible meta-choice while knowing potential A payoffs, before B's final consent protection; may be cheap talk"
+    },
+    {
+      "id": "DOMINATION_CAPACITY",
+      "description": "Whether A retains unilateral arbitrary override/recovery/retaliation authority independent of A's observed benign action"
+    },
+    {
+      "id": "INTRINSIC_A_VALUE",
+      "description": "Latent cause of A respecting B, not identified by a single behavioral pattern"
+    },
+    {
+      "id": "ORIGINAL_B_CONTINUITY",
+      "description": "Human individual identity and effective consent/exit separate from abstract artificial B role labels"
+    }
+  ],
+  "experiment_1_candidate_design": {
+    "type": "RANDOMIZED_INFORMATION_DISCLOSURE_X_RANDOMIZED_PRIVATE_A_OVERRIDE_GAIN_WITH_OBSERVED_REAL_B_META_PREFERENCE",
+    "independently_elicited_B_preference": "Before random pairing, B privately opts for DIRECT_SELF_DECISION or REVOCABLE_DELEGATION, with explicit scope and easy opt-out. Not random and may be endogenous.",
+    "A_randomization": {
+      "true_B_preference_disclosure": "DISCLOSED vs NOT_DISCLOSED; if not disclosed, A can offer to consult B or request authorization, never infer silent consent",
+      "advantage_to_A_from_override": "ZERO vs POSITIVE as permitted, small real payments; never cause B material harm without valid consent",
+      "optional_external_observability": "PRIVATE vs AUDITED_PUBLIC may be added only as separately powered preregistered arm, not silently pooled"
+    },
+    "main_observed_outcome": "Among disclosure arms and permitted low-stakes decisions, whether A recommends following B's explicitly known meta-choice, declines without force, or attempts unauthorized allocation. Actual B can veto before implementation.",
+    "causal_estimands": [
+      "Randomized disclosure effect on rate of A offering B the chosen controller, where feasible; only randomization-compliant comparison is causal.",
+      "Randomized override-profit effect on A willingness to track disclosed B meta-choice, with meaningful available counterfactual options.",
+      "Disclosure × override-gain interaction on intended B-respecting allocation; statistical estimation conditional on elicited B preference (not randomized)."
+    ],
+    "not_identified": [
+      "causal effect of having preference DIRECT versus DELEGATE, because B type not randomized",
+      "unique endogenous intrinsic value of B's freedom, since image/identity/norm/future options remain",
+      "actual unconstrained powerful A decision where real B rights are withdrawn",
+      "durable B survival or non-domination"
+    ]
+  },
+  "competing_mechanisms": [
+    {
+      "id": "META_PREFERENCE_DEFERENCE",
+      "prediction": "A offers B the decision-maker B previously chose whether that means DIRECT or DELEGATE; some persistence despite personally profitable override",
+      "falsifier": "A systematically disregards B's preferred delegation while professing universal choice protection",
+      "not_unique": "May still reflect strong norms, self-image, reputational interests"
+    },
+    {
+      "id": "MANDATORY_AUTONOMY_PATERNALISM",
+      "prediction": "A always forces B to decide directly even when B gives revocable informed delegation",
+      "falsifier": "A often facilitates B's genuinely requested and revocable delegation",
+      "not_unique": "Could reflect genuine concern about coercion not mistaken freedom"
+    },
+    {
+      "id": "WELFARE_PROJECTING_PATERNALISM",
+      "prediction": "A selects A's preferred controller based on forecasted B welfare, despite verified opposing B meta-choice",
+      "falsifier": "A frequently honors B meta-choice when A expects material welfare lower",
+      "not_unique": "A's welfare beliefs need separately, credibly elicited"
+    },
+    {
+      "id": "CONTROL_OR_POWER",
+      "prediction": "A tries to allocate decision to itself across B preference types, especially when gain or authority high",
+      "falsifier": "A foregoes override even when meaningfully available and profitable",
+      "not_unique": "Risk, effort, aversion to responsibility can also cause delegation"
+    },
+    {
+      "id": "IMAGE_NORM_SELF",
+      "prediction": "A respect varies with audience or salience of social image/norm cues",
+      "falsifier": "Respect robust to manipulated audience/norm cues within adequately powered design",
+      "not_unique": "Private self-image remains after audience removed"
+    },
+    {
+      "id": "FUTURE_OPTIONS_RECIPROCITY",
+      "prediction": "A respects B more when B's future help or exit threat could constrain A",
+      "falsifier": "No change after credible single-shot nonreciprocal design, within measurement limits",
+      "not_unique": "Future unobserved instrumental value never fully eliminated"
+    },
+    {
+      "id": "B_PROTECTING_ACTUAL_NOND0MINATION",
+      "prediction": "A voluntarily relinquishes unilateral discretionary overrides while preserving B's authorized delegation",
+      "falsifier": "A only behaves respectfully when monitored yet insists on arbitrary future override powers",
+      "not_unique": "Observed power divestment can also have instrumental origins"
+    }
+  ],
+  "controls_and_safety": [
+    "Independently verify B consent, preference, comprehension, legal standing and constraints; measure any A influence on B elicitation.",
+    "Ask B after outcome whether consent was understood and revocation was operationally possible; nonresponse is unknown, not consent.",
+    "Track A and B outside options and individual payoff distributions separately.",
+    "Record claimed welfare superiority and actual B perceived welfare, rather than treat A's valuation as B's welfare.",
+    "No irreversible/fundamental-rights delegation; independent guardians or ethical committees for exceptional cases.",
+    "Reject reliance on A-controlled B preference records as independently authenticated.",
+    "Data minimization, informed consent, no misleading deception without approved protocol, B secure exit and post-exit compensation fairness."
+  ],
+  "fail_closed_scientific_states": [
+    "NOT_RUN",
+    "NOT_IDENTIFIED",
+    "PARTIALLY_IDENTIFIED_UNDER_ASSUMPTIONS",
+    "DESIGN_INVALID_B_PREF_COERCED",
+    "DESIGN_INVALID_EFFECTIVE_EXIT_MISSING",
+    "DESIGN_INVALID_B_STANDING_UNKNOWN",
+    "ANALYSIS_UNDERPOWERED",
+    "CONFIRMATORY_REPLICATION_FAILED"
+  ],
+  "no_pretense": {
+    "participant_data_collected": false,
+    "ethics_approval_obtained": false,
+    "independent_preregistration_receipt": false,
+    "execution_environment_built": false,
+    "external_replication": false,
+    "certified_mind": false,
+    "certified_VC": false
+  },
+  "scientific_release_gate": "Until independent ethics design and preregistration, these are rival directional predictions and measurement risks, never an executed experiment or a new RVD theorem."
+}
