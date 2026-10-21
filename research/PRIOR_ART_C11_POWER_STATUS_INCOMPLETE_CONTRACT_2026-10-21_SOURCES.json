@@ -1,0 +1,64 @@
+{
+  "version": "C11.0.1",
+  "date": "2026-10-21",
+  "status": "SEARCH_ACTIVE_SATURATION_NOT_VERIFIED",
+  "evidence_type": "PRIMARY_LITERATURE_SYNTHESIS_NOT_PROJECT_EXPERIMENT",
+  "global_repository_dedup": "NOT_COMPLETE",
+  "records": [
+    {
+      "key": "galinsky2006",
+      "title": "Power and Perspectives Not Taken",
+      "doi": "10.1111/j.1467-9280.2006.01824.x",
+      "crosscheck": "https://pubmed.ncbi.nlm.nih.gov/17201789/",
+      "overlap_with_preceding_research": true,
+      "verification": "publisher_abstract_pubmed"
+    },
+    {
+      "key": "decelles2012",
+      "title": "Does power corrupt or enable? When and why power facilitates self-interested behavior",
+      "doi": "10.1037/a0026811",
+      "crosscheck": "https://pubmed.ncbi.nlm.nih.gov/22250668/",
+      "overlap_with_preceding_research": true,
+      "verification": "pubmed_abstract"
+    },
+    {
+      "key": "hadar2026",
+      "title": "Elevated Power Promotes Prosocial Behavior More Than Elevated Status",
+      "doi": "10.1177/01461672251324678",
+      "journal_issue": "2026-07",
+      "online_first": "2025-03-28",
+      "crosscheck": "https://pubmed.ncbi.nlm.nih.gov/40152269/",
+      "overlap_with_preceding_research": "GLOBAL_NOT_VERIFIED",
+      "verification": "publisher_pubmed_abstract"
+    },
+    {
+      "key": "tewolde2026",
+      "title": "CoopEval: Benchmarking Cooperation-Sustaining Mechanisms and LLM Agents in Social Dilemmas",
+      "url": "https://proceedings.mlr.press/v306/tewolde26a.html",
+      "overlap_with_preceding_research": true,
+      "verification": "ICML_official_proceedings"
+    },
+    {
+      "key": "huang2026",
+      "title": "Mechanism Design Is Not Enough: Prosocial Agents for Cooperative AI",
+      "arxiv": "2605.08426",
+      "url": "https://arxiv.org/abs/2605.08426",
+      "overlap_with_preceding_research": "GLOBAL_NOT_VERIFIED",
+      "verification": "author_abstract_only_preprint_proof_not_audited"
+    },
+    {
+      "key": "akata2025",
+      "title": "Playing repeated games with large language models",
+      "doi": "10.1038/s41562-025-02172-y",
+      "url": "https://www.nature.com/articles/s41562-025-02172-y",
+      "overlap_with_preceding_research": "GLOBAL_NOT_VERIFIED",
+      "verification": "publisher_open_access_article"
+    }
+  ],
+  "limits": [
+    "Source records are not independent participant samples",
+    "Transfer to future agents not validated",
+    "No claim that intrinsic motive or consciousness was measured",
+    "C01-C10 and RVD prior overlapping findings preserved"
+  ]
+}
