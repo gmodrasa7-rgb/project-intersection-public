@@ -274,7 +274,18 @@
       "source_grade": "ORIGINAL_PEER_REVIEWED_THEORY",
       "reading_claim": "PRIMARY_PUBLISHER_OR_ORIGINAL_ABSTRACT_AND_HTML_REVIEWED_SELECTIVELY__NOT_ALL_FULL_TEXT",
       "independent_replication": "REFER_TO_DESIGN_AND_CHAIN_NOT_CITATION_COUNT",
-      "novelty_scope": "DISTINCT_C05_BIBLIOGRAPHIC_PUBLICATION_NOT_ASSUMED_NEW_TO_ALL_PRIOR_PI"
+      "novelty_scope": "DISTINCT_C05_BIBLIOGRAPHIC_PUBLICATION_NOT_ASSUMED_NEW_TO_ALL_PRIOR_PI",
+      "formal_corrigendum": {
+        "year": 2023,
+        "doi": "10.1016/j.geb.2023.04.002",
+        "title": "Evolution and Kantian morality: A correction and addendum",
+        "authors": "Ingela Alger; Jörgen W. Weibull",
+        "scope": "The FIRST component of Theorem 1 (specified homo moralis evolutionarily stable) is not withdrawn. The SECOND component, asserted sufficient conditions for instability of alternative goals, required nonempty sets not guaranteed by its original hypothesis and is repaired under stronger existence assumptions.",
+        "citation": "https://www.tse-fr.eu/publications/journal-article/evolution-and-kantian-morality-correction-and-addendum",
+        "updated_in_cycle": "C15_2026-10-21",
+        "formal_implication_for_PI": "Do not rely on stronger original second conclusion absent corrected existence and assumptions; review original 2023 correction as distinct derivative source, not independent experiment.",
+        "notes": "Added additive metadata without overwriting original original_source_findings; should be audited when theorem invoked."
+      }
     },
     {
       "id": "PI-C05-12",
