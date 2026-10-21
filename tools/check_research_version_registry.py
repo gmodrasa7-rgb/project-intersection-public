@@ -29,6 +29,8 @@ IDS = {"PI", "VC", "MER", "EI", "ECR", "IVS-0R", "ICM", "RGBM",
 VERSION = re.compile(r"^(?:0|[1-9]\d*)\.(?:0|[1-9]\d*)\.(?:0|[1-9]\d*)$")
 STATES = {"MAIN", "MAIN_WITH_UNMERGED_PROPOSAL", "PROPOSAL_ONLY"}
 FIXED_EVIDENCE = {
+    "MER": "MECHANISMS_UNVALIDATED",
+    "EI": "HYPOTHESES_UNVALIDATED",
     "RVD": "CONCEPTUAL_HYPOTHESIS_UNTESTED",
     "PI-RAMP": "PILOT_NO_READER_EFFECT_MEASUREMENT",
     "DCA-1": "SYNTHETIC_COUNTEREXAMPLE_NO_FIELD_VALIDATION",
@@ -38,8 +40,10 @@ FIXED_EVIDENCE = {
 }
 CANDIDATES = {"ECR": (211, "1.4"), "C13": (248, None)}
 VERSIONED_SOURCES = {
+    "MER": "research/MER_VERSION_MANIFEST.json",
+    "EI": "research/EI_VERSION_MANIFEST.json",
     "RVD": "research/RVD_VERSION_MANIFEST.json",
-    "PI-RAMP": "protocols/PI_RAMP_V0_5_EN_KO.md",
+    "PI-RAMP": "protocols/PI_RAMP_V0_7_EN_KO.md",
     "PI-ROADMAP": "research/PI_ROADMAP_OPERATIONAL_GATES_V0_2_3_EN_KO.md",
     "DCA-1": "research/DCA1_ADAPTATION_DISPLACEMENT_IDENTIFICATION_2026-10-20_KO.md",
 }
@@ -58,10 +62,15 @@ def check_local(record: dict, root: Path = ROOT, override: dict[str, bytes] | No
     override = override or {}
     def read(path: str) -> bytes:
         return override[path] if path in override else local_file(root, path)
-    if record.get("schema_version") != "0.2.0" or record.get("registry_document_version") != "0.2.0":
-        problems.append("SCHEMA_VERSION_NOT_0.2.0")
+    if record.get("schema_version") != "0.2.0" or record.get("registry_document_version") != "0.2.1":
+        problems.append("REGISTRY_SCHEMA_OR_DOCUMENT_VERSION_MISMATCH")
     if record.get("snapshot_kind") != "CURATED_CURRENT_STATUS_NOT_A_RELEASE_TAG":
         problems.append("SNAPSHOT_SCOPE_NOT_EXPLICIT")
+    icm = record.get("term_collision_policy", {}).get("ICM", {})
+    if (icm.get("public_research_meaning") != "Intersection of Minimum Self-Interest"
+            or icm.get("historical_alternative_meaning") != "Independent Continuance Margin"
+            or icm.get("equivalence") != "DISTINCT_NON_EQUIVALENT"):
+        problems.append("ICM: DISTINCT_CONSTRUCT_BOUNDARY_LOST")
     rows = record.get("entries")
     if not isinstance(rows, list):
         return problems + ["ENTRIES_MISSING"]
@@ -121,10 +130,10 @@ def check_local(record: dict, root: Path = ROOT, override: dict[str, bytes] | No
                     content = read(src)
                     if blob_sha(content) != declared_sha:
                         problems.append(f"{rid}: CANONICAL_SOURCE_CHANGED_SINCE_ATTESTATION")
-                    if rid == "RVD":
+                    if rid in ("RVD", "MER", "EI"):
                         source_ver = json.loads(content).get("current_version", "").lstrip("v")
                         if source_ver != ver:
-                            problems.append("RVD: MANIFEST_VERSION_MISMATCH")
+                            problems.append(f"{rid}: MANIFEST_VERSION_MISMATCH")
                     else:
                         name = "PI-RAMP" if rid == "PI-RAMP" else "Research Roadmap"
                         if not re.search(r"\bv" + re.escape(ver) + r"\b", content.decode("utf-8")[:1300], re.I):
@@ -143,7 +152,9 @@ def check_local(record: dict, root: Path = ROOT, override: dict[str, bytes] | No
                 problems.append(f"GUIDE: MISSING_{tag}")
         if readme.count("navigation/RESEARCH_VERSIONS_EN_KO.md") != 2:
             problems.append("README: TWO_LANGUAGE_ROUTES_REQUIRED")
-        for rid in ("RVD", "PI-RAMP", "ECR", "DCA-1"):
+        if not all(term in guide for term in ("Intersection of Minimum Self-Interest", "Independent Continuance Margin", "최소 사심 교집합", "자립존속여력")):
+            problems.append("GUIDE: ICM_DISAMBIGUATION_MISSING")
+        for rid in ("MER", "EI", "RVD", "PI-RAMP", "ECR", "DCA-1"):
             lines = [line for line in guide.splitlines() if line.startswith("| " + rid + " |")]
             if len(lines) != 2:
                 problems.append(f"GUIDE: EN_KO_ROW_MISSING_{rid}")
@@ -235,6 +246,10 @@ def self_test(record: dict) -> int:
     case("duplicate-actor", lambda d: d["entries"].append(deepcopy(d["entries"][0])))
     case("erase-VC", lambda d: d["entries"].remove(row(d,"VC")))
     case("invent-RVD-version", lambda d: row(d,"RVD").update(current_version="9.9.9"))
+    case("erase-registered-MER", lambda d: row(d,"MER").update(current_version="UNASSIGNED"))
+    case("invent-EI-version", lambda d: row(d,"EI").update(current_version="9.9.9"))
+    case("downgrade-RAMP-anchor", lambda d: row(d,"PI-RAMP").update(source="protocols/PI_RAMP_V0_5_EN_KO.md"))
+    case("collapse-ICM-constructs", lambda d: d["term_collision_policy"]["ICM"].update(equivalence="SAME"))
     case("downgrade-RAMP-number", lambda d: row(d,"PI-RAMP").update(current_version="0.4.0"))
     case("invent-version-without-source", lambda d: row(d,"VC").update(current_version="1.0.0"))
     case("corrupt-source-SHA", lambda d: row(d,"RVD").update(current_source_blob_sha="0"*40))
@@ -290,7 +305,7 @@ def self_test(record: dict) -> int:
                                      review_override=fake_review)):
         print("FALSE PASS: falsified/stale PR transition")
         return 1
-    print("PASS: 22 negative/positive controls (17 local, old remote guards, 3 PR/main-source guards)")
+    print("PASS: documented negative/positive version, term-identity and PR/main-source controls")
     return 0
 
 def main() -> int:
