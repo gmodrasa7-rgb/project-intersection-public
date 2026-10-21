@@ -2,6 +2,8 @@
 <!-- PI-RAMP: README English first; Korean second. Both founding originals preserved verbatim. -->
 <!-- PI-RAMP README ENTRY v0.2.0 — bilingual ordering; no promotion of case studies over the project's purpose. -->
 
+![Project Intersection — Voluntary peace, coexistence and cooperation among independent human and AI agents](assets/project-intersection-cover.webp)
+
 **Language:** English (primary) · [한국어 (secondary)](#한국어--secondary).
 
 ## English — Primary
