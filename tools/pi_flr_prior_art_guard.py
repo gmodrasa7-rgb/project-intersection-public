@@ -23,7 +23,7 @@ GRADES = {"OPERATIONAL_PRIMARY", "REGULATOR_GUIDANCE", "GOVERNMENT_PRIMARY",
           "PEER_REVIEWED_CRITICAL_SURVEY", "RESEARCH_PREPRINT"}
 SAFE_DOMAINS = {"sre.google","www.fda.gov","llis.nasa.gov","www.gao.gov",
                 "airc.nist.gov","arxiv.org","proceedings.iclr.cc",
-                "papers.neurips.cc","aclanthology.org"}
+                "papers.neurips.cc","aclanthology.org","safety.microsoft.com","proceedings.mlr.press"}
 PERMITTED = {"NOT_OBSERVED","REPAIR_CHECKED_SCOPED","RECURRENCE_OBSERVED"}
 
 
