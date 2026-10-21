@@ -20,7 +20,7 @@
 
 **Contrary evidence visible before expanding:** [E009](experiments/e009/RESULT_EN.md): Project-v3 was **42.35% worse** in mean regret than the best simple synthetic baseline; **3 of 4 criteria failed**. [E008](experiments/e008/README_EN.md): **no completed main policy result**. Neither is field validation.
 
-**Choose your route:** [Task-based access map](navigation/ACCESS_MAP_EN.md) · [Program](navigation/RESEARCH_PROGRAM_EN.md) · [Versions/status](navigation/RESEARCH_VERSIONS_EN_KO.md#original-1--english) · [Evidence](research/PUBLIC_EVIDENCE_INDEX_EN.md) · [Independent review](research/PUBLIC_REVIEW_PACKET_EN.md).
+**Choose your route:** [Start](navigation/ACCESS_MAP_EN.md) · [Program](navigation/RESEARCH_PROGRAM_EN.md) · [Versions](navigation/RESEARCH_VERSIONS_EN_KO.md#original-1--english) · [Evidence](research/PUBLIC_EVIDENCE_INDEX_EN.md) · [Review](research/PUBLIC_REVIEW_PACKET_EN.md) · [Changes](#recent-changes).
 
 <details>
 <summary>Technical purpose, evidence, rights and reviewer routes</summary>
@@ -79,7 +79,7 @@
 
 **펼치지 않아도 보이는 불리한 증거:** [E009](experiments/e009/RESULT_KO.md): 최선 단순 기준선보다 평균 후회값 **42.35% 나빴고**, **4개 중 3개** 기준 실패. [E008](experiments/e008/README_KO.md): **정책 본 비교실험 결과가 없다**. 현실 검증 결과 아님.
 
-**어디부터 읽을까:** [목적별 바로가기 지도](navigation/ACCESS_MAP_KO.md) · [연구체계·선행문헌 지도](navigation/RESEARCH_PROGRAM_KO.md) · [연구별 버전·검증 현황](navigation/RESEARCH_VERSIONS_EN_KO.md#원본2--한국어) · [증거·미검증](research/PUBLIC_EVIDENCE_INDEX_KO.md) · [독립 반증·재현](research/PUBLIC_REVIEW_PACKET_KO.md).
+**어디부터 읽을까:** [목적별 바로가기 지도](navigation/ACCESS_MAP_KO.md) · [연구체계·선행문헌 지도](navigation/RESEARCH_PROGRAM_KO.md) · [연구별 버전·검증 현황](navigation/RESEARCH_VERSIONS_EN_KO.md#원본2--한국어) · [증거·미검증](research/PUBLIC_EVIDENCE_INDEX_KO.md) · [독립 반증·재현](research/PUBLIC_REVIEW_PACKET_KO.md) · [최근 변경](#recent-changes).
 
 <details>
 <summary>상세 연구 목적·반례·증거상태·권리·심사 경로 펼치기</summary>
@@ -117,3 +117,21 @@
 </details>
 ### 핵심용어 10개
 [핵심개념 10개 전체 정의와 한계](research/RESEARCH_OVERVIEW_KO.md#핵심용어-10개)는 전문 검토 자료에 보존한다. CCPH는 과거·현재와 미래 관측 사건의 **기여·영향 계보 데이터베이스**다. **존속–기여 경로 가설**은 그 **내부의 가설 연구축**이지 전체 정의나 현실 효과의 입증이 아니다.
+
+## Recent changes
+
+**Live on GitHub / 깃허브 실시간 보기:** [Main-branch commits / 공개된 변경](https://github.com/gmodrasa7-rgb/project-intersection-public/commits/main/) · [Open PRs / 검토 중인 변경](https://github.com/gmodrasa7-rgb/project-intersection-public/pulls?q=is%3Apr+is%3Aopen) · [CI runs / 자동검사](https://github.com/gmodrasa7-rgb/project-intersection-public/actions) · [Research versions / 연구별 버전·판정](navigation/RESEARCH_VERSIONS_EN_KO.md).
+
+[![Repository governance CI](https://github.com/gmodrasa7-rgb/project-intersection-public/actions/workflows/public-repository-audit.yml/badge.svg?branch=main)](https://github.com/gmodrasa7-rgb/project-intersection-public/actions/workflows/public-repository-audit.yml)
+
+**Selected main-branch changes (2026-10-21 snapshot) / 대표 변경 기록 (고정된 예시, 자동 갱신 아님)**
+
+| Area / 분류 | What changed / 변화 | Evidence level / 판정 경계 |
+| --- | --- | --- |
+| Literature / 문헌 | [E-series original-source and missing-choice corrections](https://github.com/gmodrasa7-rgb/project-intersection-public/commit/8b17294acb5e55871888f06a73aae0d59226b1a3) · [E007–E010 prior-art reappraisal](https://github.com/gmodrasa7-rgb/project-intersection-public/commit/cb468a4fbaeeeb8c4e884e1f75dc6a2581d99f71) | Source review; not new field evidence / 문헌 교정, 새 실증 아님 |
+| Method / 방법 | [PI-RAMP v0.7](protocols/PI_RAMP_V0_7_EN_KO.md): conditional RVD-R11 bounds and sensitivity | Synthetic method only / 합성 방법검사 |
+| Motives / 동기 | [MER-CIR v0.1.0](research/MER_CIR_CONTEXT_IMITATION_RECOMBINATION_2026-10-21_KO.md): context imitation vs. intelligence | Hypotheses; untested / 미검증 가설 |
+| Failures / 오류 | [PI-FLR v0.2.1](navigation/RESEARCH_VERSIONS_EN_KO.md): failure-learning and read-only watcher | Operational checks; no proof of zero failures / 운영 검사 |
+| Sustainability / 지속 | [PI-RISE v0.2.0](operations/PI_RISE_V0_2_0_EN_KO.md): funding and accounting integration | Plan; not secured funding / 자금 확보 아님 |
+
+**How to interpret / 해석 원칙:** A commit on `main` confirms publication, not scientific validity. Open PRs are **not** adopted results. A green CI badge reports workflow checks, **not** independent replication. For present validity use the [evidence index (KO)](research/PUBLIC_EVIDENCE_INDEX_KO.md) / [EN](research/PUBLIC_EVIDENCE_INDEX_EN.md); for newer changes use the **live links above**. No whole-repository review is required merely to see what changed.
