@@ -30,9 +30,9 @@ class FLRValidationTests(unittest.TestCase):
 
     def test_valid_initial_registry(self):
         out = flr.validate(self.record)
-        self.assertEqual(out["version"], "0.2.1")
-        self.assertEqual(out["cases"], 7)
-        self.assertEqual(out["controls"], 7)
+        self.assertEqual(out["version"], "0.3.0")
+        self.assertEqual(out["cases"], 9)
+        self.assertEqual(out["controls"], 9)
 
     def test_regression_original_naming_failure(self):
         """Original FLR-0001 unnamed ledger is rejected by the real language guard."""
@@ -240,21 +240,21 @@ class FLRValidationTests(unittest.TestCase):
 
     def test_case_deletion_against_prior_version_rejected(self):
         newer = self.case()
-        newer["release_version"] = "0.2.2"
+        newer["release_version"] = "0.3.1"
         newer["cases"] = newer["cases"][1:]
         with self.assertRaisesRegex(flr.FLRError, "HISTORICAL_CASE_DELETED"):
             flr.compare_history(newer, self.record)
 
     def test_case_metadata_rewrite_against_prior_version_rejected(self):
         newer = self.case()
-        newer["release_version"] = "0.2.2"
+        newer["release_version"] = "0.3.1"
         newer["cases"][0]["root_cause"] = "silently rewritten"
         with self.assertRaisesRegex(flr.FLRError, "HISTORICAL_CASE_METADATA_REWRITTEN"):
             flr.compare_history(newer, self.record)
 
     def test_event_erasal_against_prior_version_rejected(self):
         newer = self.case()
-        newer["release_version"] = "0.2.2"
+        newer["release_version"] = "0.3.1"
         newer["cases"][0]["events"][0]["note"] = "rewritten history"
         with self.assertRaisesRegex(flr.FLRError, "HISTORICAL_EVIDENCE_REWRITTEN"):
             flr.compare_history(newer, self.record)
@@ -268,20 +268,20 @@ class FLRValidationTests(unittest.TestCase):
         newer["cases"][0]["events"].append(fresh)
         with self.assertRaisesRegex(flr.FLRError, "VERSION_BUMP_REQUIRED"):
             flr.compare_history(newer, self.record)
-        newer["release_version"] = "0.2.2"
+        newer["release_version"] = "0.3.1"
         self.assertTrue(flr.compare_history(newer, self.record))
-        self.assertEqual(flr.validate(newer)["cases"], 7)
+        self.assertEqual(flr.validate(newer)["cases"], 9)
 
     def test_control_deletion_against_prior_version_rejected(self):
         newer = self.case()
-        newer["release_version"] = "0.2.2"
+        newer["release_version"] = "0.3.1"
         newer["control_registry"] = newer["control_registry"][1:]
         with self.assertRaisesRegex(flr.FLRError, "HISTORICAL_CONTROL_REMOVED"):
             flr.compare_history(newer, self.record)
 
     def test_version_only_update_rejected(self):
         newer = self.case()
-        newer["release_version"] = "0.2.2"
+        newer["release_version"] = "0.3.1"
         with self.assertRaisesRegex(flr.FLRError, "EMPTY_VERSION_BUMP"):
             flr.compare_history(newer, self.record)
 
@@ -290,6 +290,32 @@ class FLRValidationTests(unittest.TestCase):
         x["release_rules"]["no_private_data"] = False
         with self.assertRaisesRegex(flr.FLRError, "PRIVATE_DATA_BOUNDARY"):
             flr.validate(x)
+
+
+    def test_regression_english_first_english_only(self):
+        """FLR-0008: the production language guard rejects Hangul inside EN original."""
+        sample = (
+            "# Project Intersection\\n"
+            "## English — Primary\\n"
+            + language.EN_README + "\\n"
+            + "[Korean](navigation/START_HERE_KO.md) 한국어 본문 유입\\n"
+            + language.KO_README + "\\n"
+            + "[English](navigation/START_HERE_EN.md)\\n"
+        )
+        self.assertIn("README_ENGLISH_SECTION_CONTAINS_KOREAN_PROSE",
+                      language.readme_errors(sample))
+
+    def test_regression_partial_green_is_not_global_release(self):
+        """FLR-0009: one green README checker cannot close the failed PI-RISE job."""
+        import pi_flr_conversation_audit as conversation
+        expected = ["README English-first language order",
+                    "PI-RISE synthetic-only integrity"]
+        results = [{"name": expected[0], "conclusion": "success"},
+                   {"name": expected[1], "conclusion": "failure"}]
+        report = conversation.validate_release_matrix(results, expected)
+        self.assertFalse(report["ready"])
+        self.assertEqual(report["status"], "BLOCKED_FAILED")
+        self.assertEqual(report["failed"], [expected[1]])
 
 
 if __name__ == "__main__":
