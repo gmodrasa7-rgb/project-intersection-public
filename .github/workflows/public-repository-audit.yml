@@ -471,10 +471,13 @@ jobs:
                   "README first visible screen exceeded 24 lines; shorten the 15-second entry.")
           require(len(re.findall(r"\[[^\]]+\]\([^)]+\)", first_view)) <= 7,
                   "README first visible screen exceeded 7 links; keep the first action legible.")
-          require(len(readme.splitlines()) <= 200,
-                  "README source exceeded 200 lines; move detailed material into the research TOC.")
-          require(len(re.findall(r"\[[^\]]+\]\([^)]+\)", readme)) <= 100,
-                  "README source exceeded 100 links; avoid excessive expanded-source navigation.")
+          # The English+Korean founding originals are preserved under collapsed
+          # sections. Apply the strict 24-line/7-link budget to the visible first
+          # screen above; retain a moderate source-cap for accidental duplication.
+          require(len(readme.splitlines()) <= 300,
+                  "README source exceeded 300 lines; check accidental duplication.")
+          require(len(re.findall(r"\[[^\]]+\]\([^)]+\)", readme)) <= 150,
+                  "README source exceeded 150 links; check expanded-reference duplication.")
           en_route = Path("navigation/START_HERE_EN.md").read_text(encoding="utf-8")
           ko_route = Path("navigation/START_HERE_KO.md").read_text(encoding="utf-8")
           for link in [
