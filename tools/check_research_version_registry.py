@@ -70,7 +70,7 @@ def check_local(record: dict, root: Path = ROOT, override: dict[str, bytes] | No
     override = override or {}
     def read(path: str) -> bytes:
         return override[path] if path in override else local_file(root, path)
-    if record.get("schema_version") != "0.2.0" or record.get("registry_document_version") != "0.3.0":
+    if record.get("schema_version") != "0.2.0" or record.get("registry_document_version") != "0.3.1":
         problems.append("REGISTRY_SCHEMA_OR_DOCUMENT_VERSION_MISMATCH")
     if record.get("snapshot_kind") != "CURATED_CURRENT_STATUS_NOT_A_RELEASE_TAG":
         problems.append("SNAPSHOT_SCOPE_NOT_EXPLICIT")
