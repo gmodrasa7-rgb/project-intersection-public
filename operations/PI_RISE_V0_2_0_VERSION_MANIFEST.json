@@ -44,7 +44,7 @@
     },
     {
       "path": "README.md",
-      "git_blob_sha": "60252d6b172700714800047b06bc4dfd098a0a82"
+      "git_blob_sha": "4c49e065a46d32b90a118c70465fbfb60235e840"
     },
     {
       "path": "funding/README.md",
@@ -90,7 +90,8 @@
     "2026-10-21 E-series literature critique: update linked language inventory SHA only; preserves finance status, ledgers and research evidence labels.",
     "2026-10-21 MER/EI EN/KO independent research metadata merged onto concurrently updated main language inventory; only language artifact SHA updated; finance figures/status unchanged.",
     "2026-10-21 E-series original literature source-dedup and monolingual critical audit; updated language registry SHA only; no accounting/payment/science validation status changed.",
-    "2026-10-21 README recent-changes access-only update (PR #297): synchronized README blob hash for navigation publication; no change to PI-RISE cash, funding, scientific validity, ownership, or current release claims."
+    "2026-10-21 README recent-changes access-only update (PR #297): synchronized README blob hash for navigation publication; no change to PI-RISE cash, funding, scientific validity, ownership, or current release claims.",
+    "2026-10-21 PR #297: preserve exactly two README EN/KO version routes; synchronize only its publication blob hash, no finance or scientific-status change."
   ],
   "next_gate": [
     "PRIVATE_AUTHORIZED_RECEIPT_RECONCILIATION_BEFORE_FINANCIAL_CLAIMS",
