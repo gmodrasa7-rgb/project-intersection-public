@@ -1,0 +1,35 @@
+name: Individual Research Version Baselines
+on:
+  pull_request:
+    paths:
+      - "research/INDIVIDUAL_RESEARCH_VERSION_BASELINES_V0_1_0.json"
+      - "research/INDIVIDUAL_RESEARCH_VERSIONS_V0_1_0_EN_KO.md"
+      - "research/RESEARCH_VERSION_REGISTRY.json"
+      - "research/DCA0_DIFFERENTIAL_COEXISTENCE_ACCELERATION_2026-10-20_EN_KO.md"
+      - "tools/check_individual_research_versions.py"
+      - ".github/workflows/individual-research-versions.yml"
+  push:
+    branches: [main]
+    paths:
+      - "research/INDIVIDUAL_RESEARCH_VERSION_BASELINES_V0_1_0.json"
+      - "research/INDIVIDUAL_RESEARCH_VERSIONS_V0_1_0_EN_KO.md"
+      - "research/RESEARCH_VERSION_REGISTRY.json"
+      - "research/DCA0_DIFFERENTIAL_COEXISTENCE_ACCELERATION_2026-10-20_EN_KO.md"
+      - "tools/check_individual_research_versions.py"
+      - ".github/workflows/individual-research-versions.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  pinned-version-boundaries:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Check source-pinned component versions
+        run: python tools/check_individual_research_versions.py
+      - name: Detect nine deliberate version, source and evidence falsifications
+        run: python tools/check_individual_research_versions.py --self-test

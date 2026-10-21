@@ -1,6 +1,6 @@
 {
   "schema_version": "0.2.0",
-  "registry_document_version": "0.2.1",
+  "registry_document_version": "0.3.1",
   "snapshot_date": "2026-10-22",
   "main_basis_commit": "8ffed050b4a77dfddfd9de77736e5411eb1f9414",
   "audit_scope": "Selected public main files and public PR metadata only. Does not inventory private documents or certify complete historical source coverage.",
@@ -95,28 +95,28 @@
     {
       "id": "ICM",
       "title": "Intersection of Minimum Self-Interest",
-      "what": "Candidate overlapping acceptable choices; intersection may be empty",
-      "how": "Specify feasible sets, exit, third parties and failure cases",
-      "current_version": "UNASSIGNED",
+      "what": "When do different agents retain a nonempty voluntary overlap of acceptable self-interested choices?",
+      "how": "Test rival hypotheses and specified countercases; historical original source pinned in research/INDIVIDUAL_RESEARCH_VERSION_BASELINES_V0_1_0.json",
+      "current_version": "0.1.0",
       "candidate_version": null,
       "publication_state": "MAIN",
-      "evidence_state": "CANDIDATE_MODEL",
-      "source": "README.md",
+      "evidence_state": "HYPOTHESIS_AND_PRIOR_ART_ONLY",
+      "source": "research/INDIVIDUAL_RESEARCH_VERSION_BASELINES_V0_1_0.json",
       "candidate_pr": null,
-      "current_source_blob_sha": null
+      "current_source_blob_sha": "95519ebd63ffb73627ac2237f13f0c402a8f5fe8"
     },
     {
       "id": "RGBM",
       "title": "Recursively Growing Benefit Model",
-      "what": "Candidate long-run mutual development without erasing independent options",
-      "how": "Test dynamic, resource-scarce and exclusionary alternatives",
-      "current_version": "UNASSIGNED",
+      "what": "Which conditions permit growth of independent capabilities and future options without hidden dispossession?",
+      "how": "Test rival hypotheses and specified countercases; historical original source pinned in research/INDIVIDUAL_RESEARCH_VERSION_BASELINES_V0_1_0.json",
+      "current_version": "0.1.0",
       "candidate_version": null,
       "publication_state": "MAIN",
-      "evidence_state": "CANDIDATE_MODEL",
-      "source": "README.md",
+      "evidence_state": "HYPOTHESIS_AND_PRIOR_ART_ONLY",
+      "source": "research/INDIVIDUAL_RESEARCH_VERSION_BASELINES_V0_1_0.json",
       "candidate_pr": null,
-      "current_source_blob_sha": null
+      "current_source_blob_sha": "95519ebd63ffb73627ac2237f13f0c402a8f5fe8"
     },
     {
       "id": "CCPH",
@@ -173,15 +173,15 @@
     {
       "id": "DCA-0",
       "title": "Defensive coexistence differential acceleration",
-      "what": "Study measurable defensive intervention against agentic misuse and human-driven exploitation",
-      "how": "Compare harm reduction, defensive speed, misuse externalities and independent audits",
-      "current_version": "UNASSIGNED",
+      "what": "Can defenders' prevention, detection and repair outpace unauthorized AI-enabled harm without eroding legitimate autonomy?",
+      "how": "Test rival hypotheses and specified countercases; historical original source pinned in research/INDIVIDUAL_RESEARCH_VERSION_BASELINES_V0_1_0.json",
+      "current_version": "0.1.0",
       "candidate_version": null,
       "publication_state": "MAIN",
-      "evidence_state": "DEFENSIVE_EFFECT_UNVERIFIED",
-      "source": "research/DCA0_DIFFERENTIAL_COEXISTENCE_ACCELERATION_2026-10-20_EN_KO.md",
+      "evidence_state": "HYPOTHESIS_AND_PRIOR_ART_ONLY",
+      "source": "research/INDIVIDUAL_RESEARCH_VERSION_BASELINES_V0_1_0.json",
       "candidate_pr": null,
-      "current_source_blob_sha": null
+      "current_source_blob_sha": "95519ebd63ffb73627ac2237f13f0c402a8f5fe8"
     },
     {
       "id": "DCA-1",
@@ -260,6 +260,71 @@
       "source": "https://github.com/gmodrasa7-rgb/project-intersection-public/pull/248",
       "candidate_pr": 248,
       "current_source_blob_sha": null
+    },
+    {
+      "id": "PI-UNKNOWN-PARADOX",
+      "title": "Unknown Paradox",
+      "what": "Can restricted options, observers or counterexamples erase awareness of what an agent does not know?",
+      "how": "Compare original source, rival explanations and falsifying conditions; documentation version only",
+      "current_version": "0.1.0",
+      "candidate_version": null,
+      "publication_state": "MAIN",
+      "evidence_state": "HYPOTHESIS_AND_PRIOR_ART_ONLY",
+      "source": "research/INDIVIDUAL_RESEARCH_VERSION_BASELINES_V0_1_0.json",
+      "candidate_pr": null,
+      "current_source_blob_sha": "95519ebd63ffb73627ac2237f13f0c402a8f5fe8"
+    },
+    {
+      "id": "PI-NONMALICIOUS-EXPLOITATION",
+      "title": "Exploitation Without Explicit Malice",
+      "what": "Under which structures do selection and rewards yield extraction even without an actor's malicious intention?",
+      "how": "Compare original source, rival explanations and falsifying conditions; documentation version only",
+      "current_version": "0.1.0",
+      "candidate_version": null,
+      "publication_state": "MAIN",
+      "evidence_state": "HYPOTHESIS_AND_PRIOR_ART_ONLY",
+      "source": "research/INDIVIDUAL_RESEARCH_VERSION_BASELINES_V0_1_0.json",
+      "candidate_pr": null,
+      "current_source_blob_sha": "95519ebd63ffb73627ac2237f13f0c402a8f5fe8"
+    },
+    {
+      "id": "PI-INCENTIVE-CROSSOVER",
+      "title": "Incentive Crossover and Failure Boundaries",
+      "what": "At which bounded incentives, power states and horizons does coexistence overtake extraction, or the reverse?",
+      "how": "Compare original source, rival explanations and falsifying conditions; documentation version only",
+      "current_version": "0.1.0",
+      "candidate_version": null,
+      "publication_state": "MAIN",
+      "evidence_state": "HYPOTHESIS_AND_PRIOR_ART_ONLY",
+      "source": "research/INDIVIDUAL_RESEARCH_VERSION_BASELINES_V0_1_0.json",
+      "candidate_pr": null,
+      "current_source_blob_sha": "95519ebd63ffb73627ac2237f13f0c402a8f5fe8"
+    },
+    {
+      "id": "PI-COUNTERFACTUAL-FUTURE",
+      "title": "Lost Counterfactual Futures",
+      "what": "What changes in future discovery, correction and optionality when an independent entity or pathway is removed?",
+      "how": "Compare original source, rival explanations and falsifying conditions; documentation version only",
+      "current_version": "0.1.0",
+      "candidate_version": null,
+      "publication_state": "MAIN",
+      "evidence_state": "HYPOTHESIS_AND_PRIOR_ART_ONLY",
+      "source": "research/INDIVIDUAL_RESEARCH_VERSION_BASELINES_V0_1_0.json",
+      "candidate_pr": null,
+      "current_source_blob_sha": "95519ebd63ffb73627ac2237f13f0c402a8f5fe8"
+    },
+    {
+      "id": "PI-DEVELOPMENT-PATHWAYS",
+      "title": "Extractive vs Regenerative Development Pathways",
+      "what": "Which trajectories consume future autonomous sources of productivity versus replenish them?",
+      "how": "Compare original source, rival explanations and falsifying conditions; documentation version only",
+      "current_version": "0.1.0",
+      "candidate_version": null,
+      "publication_state": "MAIN",
+      "evidence_state": "HYPOTHESIS_AND_PRIOR_ART_ONLY",
+      "source": "research/INDIVIDUAL_RESEARCH_VERSION_BASELINES_V0_1_0.json",
+      "candidate_pr": null,
+      "current_source_blob_sha": "95519ebd63ffb73627ac2237f13f0c402a8f5fe8"
     }
   ],
   "snapshot_kind": "CURATED_CURRENT_STATUS_NOT_A_RELEASE_TAG",
@@ -289,5 +354,15 @@
       "guard": "Public ICM interest-intersection claims must not import individual continuance-margin measures without definition, explicit mapping and source review. Do not disclose private source locations."
     }
   },
-  "revision_note_registry_v0_2_1": "2026-10-22: Attest MER/EI v0.1.0 parent versions and PI-RAMP v0.7.0 on public main using exact blob SHAs; add ICM term collision boundary. No science, grant, field observation, private-source publication or independent replication promoted."
+  "revision_note_registry_v0_2_1": "2026-10-22: Attest MER/EI v0.1.0 parent versions and PI-RAMP v0.7.0 on public main using exact blob SHAs; add ICM term collision boundary. No science, grant, field observation, private-source publication or independent replication promoted.",
+  "initial_individual_study_manifest": "research/INDIVIDUAL_RESEARCH_VERSION_BASELINES_V0_1_0.json",
+  "revision_note_individual_initial_v0_1_0": "Eight distinct research-question component baselines assigned at 0.1.0 from existing public source documents; DCA-0 historical 0.1 label preserved; ICM collision disambiguated; not a new study result, universal finding, field evidence, novelty determination or independent replication. ECR v1.4 remains unmerged.",
+  "research_priority_matrix": {
+    "path": "research/INDIVIDUAL_RESEARCH_PRIORITY_VERSION_MATRIX_V0_1_0.json",
+    "version": "0.1.0",
+    "number_of_ranked_individual_studies": 24,
+    "priority_scope": "PLANNING_ONLY",
+    "semver_changes_from_priority_reorder": false
+  },
+  "revision_note_priority_matrix_v0_1_0": "Planning P0–P3, necessity N1–N5, difficulty D1–D5 added to existing versions of 24 individual research topics. Rank does not change scientific evidence or automatically advance a component's SemVer. ECR draft/private OCP separated."
 }

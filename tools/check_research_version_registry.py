@@ -25,9 +25,14 @@ GUIDE = "navigation/RESEARCH_VERSIONS_EN_KO.md"
 README = "README.md"
 IDS = {"PI", "VC", "MER", "EI", "ECR", "IVS-0R", "ICM", "RGBM",
        "CCPH", "RVD", "PI-RAMP", "PI-ROADMAP", "DCA-0", "DCA-1",
-       "E007", "E008", "E009", "E010", "C13"}
+       "E007", "E008", "E009", "E010", "C13",
+       "PI-UNKNOWN-PARADOX", "PI-NONMALICIOUS-EXPLOITATION",
+       "PI-INCENTIVE-CROSSOVER", "PI-COUNTERFACTUAL-FUTURE",
+       "PI-DEVELOPMENT-PATHWAYS"}
 VERSION = re.compile(r"^(?:0|[1-9]\d*)\.(?:0|[1-9]\d*)\.(?:0|[1-9]\d*)$")
 STATES = {"MAIN", "MAIN_WITH_UNMERGED_PROPOSAL", "PROPOSAL_ONLY"}
+INITIAL_STUDIES = ["ICM","RGBM","PI-UNKNOWN-PARADOX","PI-NONMALICIOUS-EXPLOITATION","PI-INCENTIVE-CROSSOVER","PI-COUNTERFACTUAL-FUTURE","PI-DEVELOPMENT-PATHWAYS","DCA-0"]
+BASELINE_MANIFEST = "research/INDIVIDUAL_RESEARCH_VERSION_BASELINES_V0_1_0.json"
 FIXED_EVIDENCE = {
     "MER": "MECHANISMS_UNVALIDATED",
     "EI": "HYPOTHESES_UNVALIDATED",
@@ -38,6 +43,7 @@ FIXED_EVIDENCE = {
     "E009": "SYNTHETIC_NEGATIVE_RESULT",
     "E010": "EXPLORATORY_POSTHOC",
 }
+FIXED_EVIDENCE.update({rid: "HYPOTHESIS_AND_PRIOR_ART_ONLY" for rid in INITIAL_STUDIES})
 CANDIDATES = {"ECR": (211, "1.4"), "C13": (248, None)}
 VERSIONED_SOURCES = {
     "MER": "research/MER_VERSION_MANIFEST.json",
@@ -47,6 +53,8 @@ VERSIONED_SOURCES = {
     "PI-ROADMAP": "research/PI_ROADMAP_OPERATIONAL_GATES_V0_2_3_EN_KO.md",
     "DCA-1": "research/DCA1_ADAPTATION_DISPLACEMENT_IDENTIFICATION_2026-10-20_KO.md",
 }
+
+VERSIONED_SOURCES.update({rid: BASELINE_MANIFEST for rid in INITIAL_STUDIES})
 
 def blob_sha(content: bytes) -> str:
     return hashlib.sha1(f"blob {len(content)}\0".encode() + content).hexdigest()
@@ -62,7 +70,7 @@ def check_local(record: dict, root: Path = ROOT, override: dict[str, bytes] | No
     override = override or {}
     def read(path: str) -> bytes:
         return override[path] if path in override else local_file(root, path)
-    if record.get("schema_version") != "0.2.0" or record.get("registry_document_version") != "0.2.1":
+    if record.get("schema_version") != "0.2.0" or record.get("registry_document_version") != "0.3.1":
         problems.append("REGISTRY_SCHEMA_OR_DOCUMENT_VERSION_MISMATCH")
     if record.get("snapshot_kind") != "CURATED_CURRENT_STATUS_NOT_A_RELEASE_TAG":
         problems.append("SNAPSHOT_SCOPE_NOT_EXPLICIT")
@@ -130,7 +138,13 @@ def check_local(record: dict, root: Path = ROOT, override: dict[str, bytes] | No
                     content = read(src)
                     if blob_sha(content) != declared_sha:
                         problems.append(f"{rid}: CANONICAL_SOURCE_CHANGED_SINCE_ATTESTATION")
-                    if rid in ("RVD", "MER", "EI"):
+                    if rid in INITIAL_STUDIES:
+                        index = json.loads(content)
+                        matches = [x for x in index.get("entries", []) if x.get("id") == rid]
+                        if (len(matches) != 1 or matches[0].get("current_version") != ver
+                                or matches[0].get("evidence_state") != "HYPOTHESIS_AND_PRIOR_ART_ONLY"):
+                            problems.append(f"{rid}: BASELINE_ID_VERSION_OR_EVIDENCE_MISMATCH")
+                    elif rid in ("RVD", "MER", "EI"):
                         source_ver = json.loads(content).get("current_version", "").lstrip("v")
                         if source_ver != ver:
                             problems.append(f"{rid}: MANIFEST_VERSION_MISMATCH")
@@ -154,7 +168,7 @@ def check_local(record: dict, root: Path = ROOT, override: dict[str, bytes] | No
             problems.append("README: TWO_LANGUAGE_ROUTES_REQUIRED")
         if not all(term in guide for term in ("Intersection of Minimum Self-Interest", "Independent Continuance Margin", "최소 사심 교집합", "자립존속여력")):
             problems.append("GUIDE: ICM_DISAMBIGUATION_MISSING")
-        for rid in ("MER", "EI", "RVD", "PI-RAMP", "ECR", "DCA-1"):
+        for rid in ("MER", "EI", "RVD", "PI-RAMP", "ECR", "DCA-1", "ICM", "RGBM", "DCA-0"):
             lines = [line for line in guide.splitlines() if line.startswith("| " + rid + " |")]
             if len(lines) != 2:
                 problems.append(f"GUIDE: EN_KO_ROW_MISSING_{rid}")
@@ -191,6 +205,10 @@ def check_remote(record: dict, request_json, event_name: str = "push",
             p = request_json(f"https://api.github.com/repos/{REPO}/pulls/{pr}")
             if p.get("state") != "open" or p.get("merged_at") is not None:
                 problems.append(f"{rid}: CANDIDATE_PR_CLOSED_OR_MERGED")
+        if event_name == "pull_request" and rid in INITIAL_STUDIES:
+            # New component records are absent from main until the stacked PR merges.
+            # Exact local hashes and false-promotion tests still apply.
+            continue
         expected = e.get("current_source_blob_sha")
         if expected is None:
             continue
@@ -246,6 +264,10 @@ def self_test(record: dict) -> int:
     case("duplicate-actor", lambda d: d["entries"].append(deepcopy(d["entries"][0])))
     case("erase-VC", lambda d: d["entries"].remove(row(d,"VC")))
     case("invent-RVD-version", lambda d: row(d,"RVD").update(current_version="9.9.9"))
+    case("invent-ICM-version", lambda d: row(d,"ICM").update(current_version="9.9.9"))
+    case("erase-RGBM-source", lambda d: row(d,"RGBM").update(current_source_blob_sha=None))
+    case("misclassify-DCA0-evidence", lambda d: row(d,"DCA-0").update(evidence_state="FIELD_SUCCESS"))
+    case("delete-unknown-paradox", lambda d: d["entries"].remove(row(d,"PI-UNKNOWN-PARADOX")))
     case("erase-registered-MER", lambda d: row(d,"MER").update(current_version="UNASSIGNED"))
     case("invent-EI-version", lambda d: row(d,"EI").update(current_version="9.9.9"))
     case("downgrade-RAMP-anchor", lambda d: row(d,"PI-RAMP").update(source="protocols/PI_RAMP_V0_5_EN_KO.md"))
@@ -305,7 +327,7 @@ def self_test(record: dict) -> int:
                                      review_override=fake_review)):
         print("FALSE PASS: falsified/stale PR transition")
         return 1
-    print("PASS: documented negative/positive version, term-identity and PR/main-source controls")
+    print("PASS: documented negative/positive version, source, ICM identity and PR/main-source controls")
     return 0
 
 def main() -> int:

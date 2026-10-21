@@ -1,0 +1,38 @@
+name: Individual Research Priority and Version Integrity
+
+on:
+  pull_request:
+    paths:
+      - "research/INDIVIDUAL_RESEARCH_PRIORITY_VERSION_MATRIX_V0_1_0.json"
+      - "research/INDIVIDUAL_RESEARCH_PRIORITY_VERSION_MATRIX_V0_1_0_EN_KO.md"
+      - "research/INDIVIDUAL_RESEARCH_VERSION_BASELINES_V0_1_0.json"
+      - "research/INDIVIDUAL_RESEARCH_VERSIONS_V0_1_0_EN_KO.md"
+      - "tools/check_individual_research_priority.py"
+      - ".github/workflows/individual-research-priority.yml"
+  push:
+    branches: [main]
+    paths:
+      - "research/INDIVIDUAL_RESEARCH_PRIORITY_VERSION_MATRIX_V0_1_0.json"
+      - "research/INDIVIDUAL_RESEARCH_PRIORITY_VERSION_MATRIX_V0_1_0_EN_KO.md"
+      - "research/INDIVIDUAL_RESEARCH_VERSION_BASELINES_V0_1_0.json"
+      - "research/INDIVIDUAL_RESEARCH_VERSIONS_V0_1_0_EN_KO.md"
+      - "tools/check_individual_research_priority.py"
+      - ".github/workflows/individual-research-priority.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  priority-metadata-integrity:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Verify all 24 priority/need/difficulty and version-source boundaries
+        run: python tools/check_individual_research_priority.py
+      - name: Challenge ten fabricated scoring/version/source mutations
+        run: python tools/check_individual_research_priority.py --self-test
