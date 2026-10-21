@@ -1,0 +1,50 @@
+name: MER-EI sharp joint-potential-choice bounds verification
+on:
+  pull_request:
+    paths:
+      - "research/MER_EI_SOFT_HARD_PARTIAL_IDENTIFICATION_2026-10-22_*"
+      - "experiments/mer_ei/paternalism_partial_identification.py"
+      - ".github/workflows/mer-ei-soft-hard-bounds.yml"
+  push:
+    branches: [main]
+    paths:
+      - "research/MER_EI_SOFT_HARD_PARTIAL_IDENTIFICATION_2026-10-22_*"
+      - "experiments/mer_ei/paternalism_partial_identification.py"
+      - ".github/workflows/mer-ei-soft-hard-bounds.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  sharp-bounds-and-counterexamples:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Execute exact-rational and full 0.1 percent-grid bound enumeration
+        run: python experiments/mer_ei/paternalism_partial_identification.py > /tmp/mer_ei_bounds.json
+      - name: Check independent endpoint populations, nonidentification and honest evidence class
+        run: |
+          python - <<'PY'
+          import json
+          with open("/tmp/mer_ei_bounds.json") as f: r=json.load(f)
+          assert r["evidence"]=="SHARP_ARITHMETIC_BOUNDS_FROM_AUTHOR_REPORTED_2023_ROUNDED_MARGINALS"
+          assert r["new_empirical_data_created"] is False
+          assert r["no_monotonicity_assumption"] is True
+          assert r["no_other_agent_autonomy_claim"] is True
+          for name in ("internal_error","external_error"):
+              q=r["conditional_bounds"][name]
+              a,b=q["endpoint_joint_distributions_percent"]
+              assert a!=b
+              for d in (a,b):
+                  assert abs(sum(d.values())-100)<1e-7
+                  assert abs(d["soft_and_hard"]+d["soft_only"]-q["reported_marginal_soft"]*100)<1e-7
+                  assert abs(d["soft_and_hard"]+d["hard_only"]-q["reported_marginal_hard"]*100)<1e-7
+              assert q["counterfactual_joint_point_identified"] is False
+              assert q["intrinsic_motivation_identified"] is False
+          assert r["conditional_bounds"]["internal_error"]["soft_only_population_share_bound_pp"] == [52.4,66.5]
+          assert r["conditional_bounds"]["external_error"]["soft_only_population_share_bound_pp"] == [57.5,70.0]
+          print("PASS: exact sharp bounds, adversarial endpoint couples; no real RVD experiment")
+          PY
