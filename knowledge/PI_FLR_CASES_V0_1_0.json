@@ -1,7 +1,7 @@
 {
   "registry_id": "PI-FLR",
   "schema_version": "0.1.0",
-  "release_version": "0.5.1",
+  "release_version": "0.6.0",
   "as_of": "2026-10-22",
   "korean_name": "오류·학습·복구 재귀원장",
   "english_name": "Failure–Learning–Repair Registry",
@@ -101,6 +101,13 @@
       "detector": "tools/pi_flr_replay_gate.py::planned_replay;tools/pi_flr_replay_gate.py::execute",
       "workflow": ".github/workflows/pi-flr-integrity.yml",
       "mutation_test": "test_regression_replay_executes_prior_case_checks"
+    },
+    {
+      "id": "FLR-C12",
+      "title": "Unmapped material edits and deleted or renamed source paths never silently pass the replay gate",
+      "detector": "tools/pi_flr_replay_gate.py::git_changed_paths;tools/pi_flr_replay_gate.py::planned_replay",
+      "workflow": ".github/workflows/pi-flr-integrity.yml",
+      "mutation_test": "test_regression_unmapped_material_change_blocks"
     }
   ],
   "cases": [
@@ -630,6 +637,51 @@
           "note": "This fixes an observed unit-test fixture defect, not independent long-term recurrence control or autonomous model learning. Earlier negative mock detection failure remains preserved."
         }
       ]
+    },
+    {
+      "id": "FLR-0010",
+      "title_en": "Material changed files went unassigned to historical tests while replay reported scoped success",
+      "title_ko": "주요 변경 파일이 회귀검사 매핑에서 누락돼도 부분 성공으로 보고",
+      "category": "GUARD_COVERAGE",
+      "root_cause": "The C11 test selector reports unmatched changed paths but does not classify potentially material paths as release blocking; git diff also excludes deletions with --diff-filter=ACMR, so removed files do not enter its denominator. Missing test-selection coverage could be mistaken for safety.",
+      "trigger": "PR #348 executed C11 replay after adding multiple PI-FLR source, JSON and tests; coverage counter reported 8 changed paths but only 3 matched, and the exit status still indicated SCOPED_REPLAY_PASS.",
+      "observable": "GitHub PI-FLR run 39666295003 recorded changed_paths=8, matched_paths=3, unmatched_path_count=5 and status=SCOPED_REPLAY_PASS; the published code used --diff-filter=ACMR.",
+      "impact": "Potential failure of new or deleted high-impact files could escape incident-specific replays, while a green scoped receipt appeared to establish completion.",
+      "counterfactual": "A conservative selected-test gate would list every material change, inspect both sides of renames/deletions, and block release if a material path cannot be linked to at least one suitable regression.",
+      "repair": "Introduce coverage-closed changed-path selection, explicit matching for PI-FLR registry and test files, safe reject for unmapped code/config/data, and negative tests for deletes/renames and incomplete mapping; deployed effectiveness unobserved.",
+      "preventive_control_ids": [
+        "FLR-C11",
+        "FLR-C12"
+      ],
+      "regression_test": "test_regression_unmapped_material_change_blocks",
+      "limitations": [
+        "A matched path only proves a bounded local test was selected, not comprehensive semantic impact testing.",
+        "No independently observed real-world bug prevented; the CI log demonstrates selection omission, not a consequential production incident.",
+        "Full scientific effectiveness and branch required-check enforcement are not verified."
+      ],
+      "events": [
+        {
+          "seq": 1,
+          "date": "2026-10-22",
+          "kind": "FAILURE_OBSERVED",
+          "evidence_url": "https://github.com/gmodrasa7-rgb/project-intersection-public/actions/runs/39666295003",
+          "note": "Replayed check receipt gave a green SCOPED_REPLAY_PASS while 5/8 changed files had no known-risk mapping."
+        },
+        {
+          "seq": 2,
+          "date": "2026-10-22",
+          "kind": "ROOT_CAUSE_REVIEWED",
+          "evidence_url": "https://github.com/gmodrasa7-rgb/project-intersection-public/pull/348",
+          "note": "Selector's unmatched counter did not gate status; --diff-filter=ACMR excluded deleted file entries, creating an additional denominator blind spot."
+        },
+        {
+          "seq": 3,
+          "date": "2026-10-22",
+          "kind": "LIMITATION_RECORDED",
+          "evidence_url": "https://github.com/gmodrasa7-rgb/project-intersection-public/pull/348",
+          "note": "Observable static coverage gap recorded; remedy not called merged, field-verified or universally sound before new CI receipts."
+        }
+      ]
     }
   ],
   "improvement_protocol": {
@@ -645,7 +697,7 @@
     ],
     "invariant": "No event removed and no root-cause or attribution silently rewritten; changed interpretations via appended notes and new version.",
     "anti_proxy": "CI pass is a limited code assertion, not proof of real-world truth, financial receipt, semantic parity, universal safety, or zero future incidents.",
-    "next_expansion": "For each changed path, retrieve bounded historical case fingerprints, execute allowlisted replay on actual HEAD, and store a scoped machine-readable receipt. Missing baseline, check failure or absent receipt is a release blocker; synthetic metamorphic mutants test coverage monotonicity. Do not infer field recurrence prevention or model internal changes.",
+    "next_expansion": "Prior-art replay selects tests with coverage-closed material changed-file inventory; changed and deleted/renamed high-impact files without suitable mapping block release. Scope-only pass never proves all semantic effects, and source/provenance receipts cannot claim SLSA attestation or field recurrence reduction.",
     "governance_gap": "Branch protection/required checks and administrative bypass settings are not verified in this registry."
   }
 }

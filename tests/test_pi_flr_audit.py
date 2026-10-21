@@ -30,9 +30,9 @@ class FLRValidationTests(unittest.TestCase):
 
     def test_valid_initial_registry(self):
         out = flr.validate(self.record)
-        self.assertEqual(out["version"], "0.5.1")
-        self.assertEqual(out["cases"], 9)
-        self.assertEqual(out["controls"], 11)
+        self.assertEqual(out["version"], "0.6.0")
+        self.assertEqual(out["cases"], 10)
+        self.assertEqual(out["controls"], 12)
 
     def test_regression_original_naming_failure(self):
         """Original FLR-0001 unnamed ledger is rejected by the real language guard."""
@@ -240,21 +240,21 @@ class FLRValidationTests(unittest.TestCase):
 
     def test_case_deletion_against_prior_version_rejected(self):
         newer = self.case()
-        newer["release_version"] = "0.5.2"
+        newer["release_version"] = "0.6.1"
         newer["cases"] = newer["cases"][1:]
         with self.assertRaisesRegex(flr.FLRError, "HISTORICAL_CASE_DELETED"):
             flr.compare_history(newer, self.record)
 
     def test_case_metadata_rewrite_against_prior_version_rejected(self):
         newer = self.case()
-        newer["release_version"] = "0.5.2"
+        newer["release_version"] = "0.6.1"
         newer["cases"][0]["root_cause"] = "silently rewritten"
         with self.assertRaisesRegex(flr.FLRError, "HISTORICAL_CASE_METADATA_REWRITTEN"):
             flr.compare_history(newer, self.record)
 
     def test_event_erasal_against_prior_version_rejected(self):
         newer = self.case()
-        newer["release_version"] = "0.5.2"
+        newer["release_version"] = "0.6.1"
         newer["cases"][0]["events"][0]["note"] = "rewritten history"
         with self.assertRaisesRegex(flr.FLRError, "HISTORICAL_EVIDENCE_REWRITTEN"):
             flr.compare_history(newer, self.record)
@@ -268,20 +268,20 @@ class FLRValidationTests(unittest.TestCase):
         newer["cases"][0]["events"].append(fresh)
         with self.assertRaisesRegex(flr.FLRError, "VERSION_BUMP_REQUIRED"):
             flr.compare_history(newer, self.record)
-        newer["release_version"] = "0.5.2"
+        newer["release_version"] = "0.6.1"
         self.assertTrue(flr.compare_history(newer, self.record))
-        self.assertEqual(flr.validate(newer)["cases"], 9)
+        self.assertEqual(flr.validate(newer)["cases"], 10)
 
     def test_control_deletion_against_prior_version_rejected(self):
         newer = self.case()
-        newer["release_version"] = "0.5.2"
+        newer["release_version"] = "0.6.1"
         newer["control_registry"] = newer["control_registry"][1:]
         with self.assertRaisesRegex(flr.FLRError, "HISTORICAL_CONTROL_REMOVED"):
             flr.compare_history(newer, self.record)
 
     def test_version_only_update_rejected(self):
         newer = self.case()
-        newer["release_version"] = "0.5.2"
+        newer["release_version"] = "0.6.1"
         with self.assertRaisesRegex(flr.FLRError, "EMPTY_VERSION_BUMP"):
             flr.compare_history(newer, self.record)
 
@@ -350,6 +350,18 @@ class FLRValidationTests(unittest.TestCase):
         self.assertEqual(observed["failed_checks"],["RISE_MANIFEST"])
         with self.assertRaisesRegex(replay.ReplayError,"BASELINE_COMMIT_NOT_OBSERVED"):
             replay.git_changed_paths("")
+
+
+
+    def test_regression_unmapped_material_change_blocks(self):
+        """C12: an unclassified material change may not be silently green."""
+        import pi_flr_replay_gate as replay
+        from types import SimpleNamespace
+        data=json.loads((ROOT/replay.TRANSFER_PATH).read_text(encoding="utf-8"))
+        p=replay.planned_replay(data,["README.md","research/new_evidence.json"])
+        self.assertIn("research/new_evidence.json",p["unmapped_material_paths"])
+        status=replay.execute(p,run=lambda *a,**kw:SimpleNamespace(returncode=0))
+        self.assertEqual(status["status"],"BLOCKED_UNMAPPED_MATERIAL")
 
 
 

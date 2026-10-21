@@ -1,7 +1,7 @@
 {
   "id": "PI-FLR-PRIOR-ART-TRANSFER",
   "schema_version": "0.1.0",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "as_of": "2026-10-22",
   "scope": "PRIOR_ART_SYNTHESIS_AND_OPERATIONAL_CONTROL_NOT_EMPIRICAL_AI_SELF_IMPROVEMENT",
   "language_order": [
@@ -145,6 +145,42 @@
       "url": "https://safety.microsoft.com/global/en/incident-reporting-and-Investigation.html",
       "lesson": "Treat near misses and root-cause corrective actions as first-class investigation signals before consequential failures recur.",
       "limitation": "Corporate occupational-safety procedure; transferred by analogy, not a software or AI mandatory standard."
+    },
+    {
+      "id": "S16",
+      "title": "More Precise Regression Test Selection via Reasoning about Dependency (Liu et al. 2023)",
+      "lineage": "Liu2023_RTS",
+      "grade": "PEER_REVIEWED_EXPERIMENT",
+      "url": "https://www.cs.cornell.edu/~legunsen/pubs/LiuETAL23FineRTS.pdf",
+      "lesson": "Selective regression testing is a dependency coverage problem; missing affected tests can trade safety for speed, so absent impact mappings are an explicit uncertainty.",
+      "limitation": "Study is mainly about program-level RTS; mapping to heterogeneous Markdown and AI-runbook tests remains an engineering analogy."
+    },
+    {
+      "id": "S17",
+      "title": "Mind the Gap: The Difference Between Coverage and Mutation Score Can Guide Testing Efforts",
+      "lineage": "Jain2023_OracleGap",
+      "grade": "RESEARCH_PREPRINT",
+      "url": "https://arxiv.org/abs/2309.02395",
+      "lesson": "Execution and code coverage alone do not establish test oracle adequacy; surviving mutants and selection omissions reveal otherwise hidden gaps.",
+      "limitation": "Mutation or coverage scores are imperfect proxies for real incidents and must not be treated as future prevention rates."
+    },
+    {
+      "id": "S18",
+      "title": "NIST Secure Software Development Framework 1.1 SP 800-218",
+      "lineage": "NIST_SSDF",
+      "grade": "GOVERNMENT_PRIMARY",
+      "url": "https://csrc.nist.gov/pubs/sp/800/218/final",
+      "lesson": "Select, perform and record appropriate software tests and track discovered issues, not merely issue prescriptive changes.",
+      "limitation": "Generic software security framework; not direct evidence that this repository is compliant or safer."
+    },
+    {
+      "id": "S19",
+      "title": "SLSA Specification v1.2 Verified Build Provenance",
+      "lineage": "SLSA_STANDARD",
+      "grade": "PUBLIC_RISK_FRAMEWORK",
+      "url": "https://slsa.dev/spec/v1.2/",
+      "lesson": "A build or execution receipt needs traceable inputs, builder identity and verifiable linkage to exact artifact, with explicit trust and incompleteness boundaries.",
+      "limitation": "A locally generated JSON log with commit IDs is NOT a signed SLSA attestation and must never be labeled one."
     }
   ],
   "principles": [
@@ -337,6 +373,52 @@
       "adoption": "Adding a new known-risk path must never remove already required replay checks, and duplicate or reordered paths must leave the planned checks unchanged.",
       "verification": "Synthetic mutation tests compare supersets and permutations, but do not claim semantic equivalence of model outputs or external causal reliability.",
       "transfer_status": "OPERATIONAL_DESIGN_NOT_FIELD_VALIDATED"
+    },
+    {
+      "id": "P09",
+      "priority": "P0",
+      "title_en": "No green result when material changes have no suitable test mapping",
+      "title_ko": "주요 변경 파일이 검사에 연결되지 않으면 성공 판정 금지",
+      "support": [
+        "S16",
+        "S18",
+        "S19"
+      ],
+      "challenge": [
+        "S17",
+        "S09"
+      ],
+      "cases": [
+        "FLR-0010",
+        "FLR-0003",
+        "FLR-0009"
+      ],
+      "adoption": "Fail closed on an uncovered material path and count deleted and both renamed path sides in the denominator; opt into bounded coverage only when the paths are actually mapped.",
+      "verification": "Mutation checks inject unmapped JSON/Python, deletion and rename records and must prevent SCOPED_REPLAY_PASS while still allowing unrelated binary attachments.",
+      "transfer_status": "OPERATIONAL_DESIGN_NOT_FIELD_VALIDATED"
+    },
+    {
+      "id": "P10",
+      "priority": "P1",
+      "title_en": "Test-selection receipts describe observed inputs and blind spots, not certified prevention",
+      "title_ko": "검사 영수증에 실제 입력·미포괄 범위 기록, 효과 인증 금지",
+      "support": [
+        "S19",
+        "S18",
+        "S17"
+      ],
+      "challenge": [
+        "S09",
+        "S12"
+      ],
+      "cases": [
+        "FLR-0010",
+        "FLR-0005",
+        "FLR-0009"
+      ],
+      "adoption": "Store exact changed-path count, bounded command verdicts and unmatched-material status; do not relabel a workflow-generated JSON receipt as a signed external attestation.",
+      "verification": "Check that missing mapping, missing baseline, failed subprocess and tampered check plan never become an all-pass, and that status remains NOT_FIELD_EFFECTIVENESS.",
+      "transfer_status": "OPERATIONAL_DESIGN_NOT_FIELD_VALIDATED"
     }
   ],
   "preflight": [
@@ -440,6 +522,36 @@
         "Prior failure replay mutation tests execute",
         "No missing baseline falsely treated as no changes"
       ]
+    },
+    {
+      "id": "R07",
+      "match": "knowledge/PI_FLR_*.json",
+      "cases": [
+        "FLR-0010"
+      ],
+      "controls": [
+        "FLR-C12"
+      ],
+      "checkpoints": [
+        "PI-FLR registry and source-map test suite actually executed",
+        "No unbound new failure case or stale version",
+        "All changed high-impact JSON paths mapped"
+      ]
+    },
+    {
+      "id": "R08",
+      "match": "tests/test_pi_flr_*.py",
+      "cases": [
+        "FLR-0010"
+      ],
+      "controls": [
+        "FLR-C12"
+      ],
+      "checkpoints": [
+        "Test modifications re-run the FLR audit and mutation test suite",
+        "Failure injection actually changes expected outcome",
+        "No false-green changed-file coverage"
+      ]
     }
   ],
   "efficiency": {
@@ -520,6 +632,13 @@
       "independent_effectiveness_receipts": [],
       "recurrence_window": "UNOBSERVED",
       "limitation": "Historic unit and CI checks do not measure actual prevention over time."
+    },
+    {
+      "case_id": "FLR-0010",
+      "status": "NOT_OBSERVED",
+      "independent_effectiveness_receipts": [],
+      "recurrence_window": "UNOBSERVED",
+      "limitation": "Not independently field-verified: no long-term data yet show recurrence reduction."
     }
   ],
   "counterclaims": [

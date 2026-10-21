@@ -20,10 +20,10 @@ WORKFLOW = ".github/workflows/pi-flr-integrity.yml"
 GRADES = {"OPERATIONAL_PRIMARY", "REGULATOR_GUIDANCE", "GOVERNMENT_PRIMARY",
           "INDEPENDENT_GOVERNMENT_AUDIT", "PUBLIC_RISK_FRAMEWORK",
           "PEER_REVIEWED_EXPERIMENT", "PEER_REVIEWED_NEGATIVE",
-          "PEER_REVIEWED_CRITICAL_SURVEY", "RESEARCH_PREPRINT"}
+          "PEER_REVIEWED_CRITICAL_SURVEY", "RESEARCH_PREPRINT", "GOVERNMENT_PRIMARY"}
 SAFE_DOMAINS = {"sre.google","www.fda.gov","llis.nasa.gov","www.gao.gov",
                 "airc.nist.gov","arxiv.org","proceedings.iclr.cc",
-                "papers.neurips.cc","aclanthology.org","safety.microsoft.com","proceedings.mlr.press"}
+                "papers.neurips.cc","aclanthology.org","safety.microsoft.com","proceedings.mlr.press","www.cs.cornell.edu","csrc.nist.gov","slsa.dev"}
 PERMITTED = {"NOT_OBSERVED","REPAIR_CHECKED_SCOPED","RECURRENCE_OBSERVED"}
 
 
@@ -171,7 +171,7 @@ def compare_history(current, old):
         prior = old[key]
         after = current[key]
         if key == "effectiveness_by_case":
-            need(prior == after, "EFFICACY_HISTORY_MUTATED")
+            need(after[:len(prior)] == prior, "EFFICACY_HISTORY_MUTATED")
         else:
             need(after[:len(prior)] == prior, "HISTORIC_TRANSFER_REWRITTEN:"+key)
     need(current["improvement_observations"][:len(old["improvement_observations"])]

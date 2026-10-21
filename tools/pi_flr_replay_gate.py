@@ -27,6 +27,7 @@ COMMANDS={
     "NAV_LINKS":["python3","tools/check_public_navigation.py","--strict-all"],
     "FLR_META":["python3","tools/pi_flr_audit.py"],
     "FLR_MUTANTS":["python3","-m","unittest","discover","-s","tests","-p","test_pi_flr_replay_gate.py"],
+    "FLR_ALL_TESTS":["python3","-m","unittest","discover","-s","tests","-p","test_pi_flr_*.py"],
 }
 # Match rule identifiers declared in the versioned data. These checks do real work.
 RULE_CHECKS={
@@ -36,6 +37,8 @@ RULE_CHECKS={
     "R04":("NAV_LINKS",),
     "R05":("FLR_META","FLR_MUTANTS"),
     "R06":("FLR_META","FLR_MUTANTS"),
+    "R07":("FLR_META","FLR_ALL_TESTS"),
+    "R08":("FLR_META","FLR_ALL_TESTS"),
 }
 
 
@@ -49,17 +52,46 @@ def require(ok, reason):
 
 
 def git_changed_paths(baseline, root=ROOT, run=subprocess.run):
+    """Inventory both sides of renames and deletions with NUL-safe Git parsing."""
     require(isinstance(baseline,str) and re.fullmatch(r"[0-9a-fA-F]{40}",baseline),
             "BASELINE_COMMIT_NOT_OBSERVED")
     ref=run(["git","rev-parse","--verify",baseline+"^{commit}"],
             cwd=root,capture_output=True,text=True,check=False)
     require(ref.returncode==0,"BASELINE_COMMIT_NOT_ACCESSIBLE")
-    diff=run(["git","diff","--name-only","--diff-filter=ACMR",baseline,"HEAD"],
+    diff=run(["git","diff","--name-status","-z","--find-renames",baseline,"HEAD"],
              cwd=root,capture_output=True,text=True,check=False)
     require(diff.returncode==0,"CHANGED_PATHS_NOT_OBSERVED")
-    names=[x for x in diff.stdout.splitlines() if x]
-    require(len(names)==len(set(names)),"DUPLICATE_CHANGED_PATH")
-    return names
+    raw=diff.stdout
+    require(isinstance(raw,str) and (not raw or raw.endswith("\0")),
+            "DIFF_FORMAT_INVALID")
+    fields=raw.split("\0")[:-1] if raw else []
+    names=[]
+    i=0
+    while i<len(fields):
+        status=fields[i]
+        i+=1
+        need_two=status.startswith(("R","C"))
+        require(status in {"M","A","D","T"} or
+                (need_two and status[1:].isdigit()),
+                "UNSUPPORTED_GIT_STATUS:"+status)
+        count=2 if need_two else 1
+        require(i+count<=len(fields),"DIFF_RECORD_TRUNCATED")
+        paths=fields[i:i+count]
+        require(all(p and not p.startswith("/") and "\0" not in p
+                    for p in paths), "DIFF_PATH_INVALID")
+        names.extend(paths)
+        i+=count
+    return sorted(set(names))
+
+
+def is_material_unmapped_path(path):
+    """Conservative materiality; unknown artifacts alone are not proof of safety."""
+    import posixpath
+    ext=posixpath.splitext(path.lower())[1]
+    return (ext in {".py",".json",".jsonl",".md",".yml",".yaml",
+                    ".js",".ts",".toml",".sh",".csv",".lock",".ipynb"}
+            or path.startswith((".github/","tools/","tests/","experiments/"))
+            or posixpath.basename(path) in {"Dockerfile","Makefile","requirements.txt"})
 
 
 def planned_replay(data, paths):
@@ -70,6 +102,7 @@ def planned_replay(data, paths):
     require(rules==set(RULE_CHECKS),"RULE_AND_EXECUTOR_DRIFT")
     checks=set()
     relevant=set()
+    unmapped_material=[]
     for entry in observed:
         rr=set(entry["known_risk_rules"])
         if rr:
@@ -77,6 +110,8 @@ def planned_replay(data, paths):
             relevant.add(entry["path"])
             for r in rr:
                 checks.update(RULE_CHECKS[r])
+        if not rr and is_material_unmapped_path(entry["path"]):
+            unmapped_material.append(entry["path"])
         require(entry["outcome"]=="CHECKS_NOT_EXECUTED_BY_PREFLIGHT",
                 "PREFLIGHT_FALSELY_CERTIFIED_EXECUTION")
     require(checks<=set(COMMANDS),"UNTRUSTED_OR_MISSING_COMMAND")
@@ -84,7 +119,8 @@ def planned_replay(data, paths):
             "matched_paths":sorted(relevant),
             "check_ids":sorted(checks),
             "unmatched_path_count":len(observed)-len(relevant),
-            "coverage":"KNOWN_PATH_FAMILIES_ONLY_NOT_ALL_FAILURES"}
+            "unmapped_material_paths":sorted(unmapped_material),
+            "coverage":"MATERIAL_UNMAPPED_BLOCKS_SCOPE_PASS"}
 
 
 def execute(plan, root=ROOT, run=subprocess.run):
@@ -98,6 +134,7 @@ def execute(plan, root=ROOT, run=subprocess.run):
                          "exit_code":int(result.returncode)})
     fail=[x["check_id"] for x in receipts if x["status"]!="PASS"]
     status=("BLOCKED_FAILED" if fail else
+            "BLOCKED_UNMAPPED_MATERIAL" if plan.get("unmapped_material_paths") else
             "NO_KNOWN_RISK_MATCHED" if not receipts else
             "SCOPED_REPLAY_PASS")
     return {"status":status,"executed":receipts,"failed_checks":fail,
@@ -124,7 +161,7 @@ def main():
     ap.add_argument("--output",default=RECEIPT)
     args=ap.parse_args()
     receipt={"status":"BLOCKED_UNCONFIRMED","coverage":"NOT_OBSERVED",
-             "error_code":"NO_EXECUTION","source_version":"PI-FLR-v0.5.0"}
+             "error_code":"NO_EXECUTION","source_version":"PI-FLR-v0.6.0"}
     exit_bad=True
     try:
         raw=json.loads((ROOT/TRANSFER_PATH).read_text(encoding="utf-8"))
@@ -143,7 +180,7 @@ def main():
                  "baseline_commit":args.baseline_commit or "EXPLICIT_PATH_SMOKE",
                  "status":result["status"],
                  "no_future_recurrence_proof":True}
-        exit_bad=result["status"]=="BLOCKED_FAILED"
+        exit_bad=result["status"] in {"BLOCKED_FAILED","BLOCKED_UNMAPPED_MATERIAL"}
     except (OSError,ValueError,TypeError,KeyError,PriorArtError) as e:
         # Keep a receipt even for a malformed baseline or policy failure.
         receipt["error_code"]=str(e).splitlines()[0][:180]

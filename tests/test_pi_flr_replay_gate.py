@@ -128,5 +128,68 @@ class ReplayGateTests(unittest.TestCase):
         self.assertIn("NOT_FIELD_EFFECTIVENESS",out["scope"])
 
 
+    def test_unmapped_python_change_blocks_scoped_success(self):
+        plan=rg.planned_replay(self.data,["tools/unclassified_analysis.py"])
+        self.assertEqual(plan["unmapped_material_paths"],["tools/unclassified_analysis.py"])
+        result=rg.execute(plan,run=lambda *a,**k:self.fail("No allowed command"))
+        self.assertEqual(result["status"],"BLOCKED_UNMAPPED_MATERIAL")
+
+    def test_unmapped_json_cannot_be_cleared_by_other_green_check(self):
+        plan=rg.planned_replay(self.data,["README.md","experiments/e009/NEW_RESULT.json"])
+        result=rg.execute(plan,run=lambda *a,**k:SimpleNamespace(returncode=0))
+        self.assertEqual(result["status"],"BLOCKED_UNMAPPED_MATERIAL")
+        self.assertEqual(len(result["executed"]),3)
+        self.assertEqual(plan["unmapped_material_paths"],["experiments/e009/NEW_RESULT.json"])
+
+    def test_unmapped_markdown_cannot_disappear_into_no_risk(self):
+        plan=rg.planned_replay(self.data,["funding/NEW_RESEARCH_CLAIM.md"])
+        self.assertEqual(rg.execute(plan,run=lambda *a,**k:self.fail("no run"))["status"],
+                         "BLOCKED_UNMAPPED_MATERIAL")
+
+    def test_flr_registry_json_change_has_full_flr_test_selection(self):
+        p=rg.planned_replay(self.data,["knowledge/PI_FLR_CASES_V0_1_0.json"])
+        self.assertEqual(p["check_ids"],["FLR_ALL_TESTS","FLR_META"])
+        self.assertFalse(p["unmapped_material_paths"])
+
+    def test_flr_test_file_change_is_mapped(self):
+        p=rg.planned_replay(self.data,["tests/test_pi_flr_replay_gate.py"])
+        self.assertEqual(p["check_ids"],["FLR_ALL_TESTS","FLR_META"])
+
+    def test_delete_and_rename_both_ends_observed(self):
+        transcript="D\0README.md\0R100\0research/old.md\0research/new.md\0"
+        seen=[]
+        def fake(args,**kwargs):
+            seen.append(args)
+            return SimpleNamespace(returncode=0,
+                  stdout=transcript if "--name-status" in args else "hash")
+        result=rg.git_changed_paths("a"*40,run=fake)
+        self.assertEqual(result,sorted(["README.md","research/old.md","research/new.md"]))
+        self.assertIn("--name-status",seen[1])
+        self.assertIn("-z",seen[1])
+        self.assertNotIn("--diff-filter=ACMR",seen[1])
+
+    def test_git_rename_missing_second_path_fails_closed(self):
+        def fake(args,**kwargs):
+            return SimpleNamespace(returncode=0,stdout="R100\0old.py\0" if
+                                   "--name-status" in args else "hash")
+        with self.assertRaisesRegex(rg.ReplayError,"DIFF_RECORD_TRUNCATED"):
+            rg.git_changed_paths("a"*40,run=fake)
+
+    def test_no_git_diff_claim_without_nul_terminator(self):
+        def fake(args,**kwargs):
+            return SimpleNamespace(returncode=0,stdout="M\0tools/script.py" if
+                                   "--name-status" in args else "hash")
+        with self.assertRaisesRegex(rg.ReplayError,"DIFF_FORMAT_INVALID"):
+            rg.git_changed_paths("a"*40,run=fake)
+
+    def test_material_changes_monotone_risk_under_union(self):
+        a=rg.planned_replay(self.data,["README.md"])
+        b=rg.planned_replay(self.data,["README.md","new/unmapped_data.json"])
+        self.assertTrue(set(a["check_ids"])<=set(b["check_ids"]))
+        self.assertEqual(rg.execute(b,run=lambda *a,**k:SimpleNamespace(returncode=0))["status"],
+                         "BLOCKED_UNMAPPED_MATERIAL")
+
+
+
 if __name__=="__main__":
     unittest.main()
