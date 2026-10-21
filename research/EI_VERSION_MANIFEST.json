@@ -1,0 +1,43 @@
+{
+  "schema_version": "pi-axis-version/v0.1.0",
+  "axis_id": "EI",
+  "current_version": "v0.1.0",
+  "date": "2026-10-21",
+  "prior_version": "UNASSIGNED (no independent parent-axis release label)",
+  "release_type": "FIRST_PARENT_AXIS_BASELINE",
+  "document": "research/EI_V0_1_0_KO.md",
+  "source_ledger": "research/MER_EI_SOURCE_CROSSWALK_2026-10-21.json",
+  "hypotheses": [
+    "EI-MODELSET",
+    "EI-RIGHTS",
+    "EI-POWER",
+    "EI-REVISION"
+  ],
+  "scientific_status": {
+    "class": "PRIOR_ART_SYNTHESIS_AND_PROTOCOL",
+    "new_field_results": 0,
+    "independent_replications": 0,
+    "novelty": "UNASSESSED",
+    "literature_saturation": "NOT_VERIFIED",
+    "ai_consciousness": "UNIDENTIFIED",
+    "intrinsic_value": "UNIDENTIFIED"
+  },
+  "version_is_evidence_grade": false,
+  "substudies_unchanged": {
+    "RVD": "v0.7.0",
+    "MER-CIR": "v0.1.0"
+  },
+  "provenance": "Human-originated Project Intersection research; primary scholars retain priority; AI-assisted synthesis.",
+  "history": [
+    {
+      "version": "v0.1.0",
+      "change": "Formally version parent research axis; establish scoped definitions, source counterexamples, partial-identifiability and rights boundary.",
+      "empirical_promotion": false
+    }
+  ],
+  "editions": {
+    "ko": "research/EI_V0_1_0_KO.md",
+    "en": "research/EI_V0_1_0_EN.md"
+  },
+  "translation_equivalence": "NOT_INDEPENDENTLY_VERIFIED"
+}
