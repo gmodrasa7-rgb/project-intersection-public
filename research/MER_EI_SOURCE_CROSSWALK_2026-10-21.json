@@ -1,0 +1,102 @@
+{
+  "schema_version": "pi-mer-ei-source-crosswalk/v0.1.0",
+  "date": "2026-10-21",
+  "source_count": 9,
+  "prior_art_saturation": "NOT_VERIFIED",
+  "global_dedup": "INCOMPLETE",
+  "full_text_review": "PARTIAL",
+  "independent_replications_this_release": 0,
+  "scientific_scope": "Publisher original abstracts and prior PI curated source ledgers, not independent reproduction; duplicate versions consolidated.",
+  "sources": [
+    {
+      "id": "LOCKWOOD16",
+      "authors": "Lockwood et al.",
+      "year": 2016,
+      "doi": "10.1073/pnas.1603198113",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5024617/",
+      "contribution": "human prosocial reward learning",
+      "limitation": "fMRI and computational task; not durable B-rights",
+      "review_status": "ORIGINAL_METADATA_ABSTRACT_OR_PREEXISTING_LEDGER"
+    },
+    {
+      "id": "RHOADS25",
+      "authors": "Rhoads et al.",
+      "year": 2025,
+      "doi": "10.1038/s41467-025-64424-9",
+      "url": "https://www.nature.com/articles/s41467-025-64424-9",
+      "contribution": "joint self/other learning in three preregistered human studies",
+      "limitation": "not no-coercion AI preference",
+      "review_status": "ORIGINAL_METADATA_ABSTRACT_OR_PREEXISTING_LEDGER"
+    },
+    {
+      "id": "SKALSE23IRL",
+      "authors": "Skalse et al.",
+      "year": 2023,
+      "doi": null,
+      "url": "https://proceedings.mlr.press/v202/skalse23a.html",
+      "contribution": "partial reward identifiability under behavioral data",
+      "limitation": "not complete unknowability",
+      "review_status": "ORIGINAL_METADATA_ABSTRACT_OR_PREEXISTING_LEDGER"
+    },
+    {
+      "id": "SKALSE26",
+      "authors": "Skalse and Abate",
+      "year": 2026,
+      "doi": "10.1016/j.artint.2026.104525",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0004370226000512",
+      "contribution": "partial identifiability and misspecification",
+      "limitation": "2024 arXiv:2411.15951 is preprint of same work; not independent",
+      "review_status": "ORIGINAL_METADATA_ABSTRACT_OR_PREEXISTING_LEDGER"
+    },
+    {
+      "id": "SKALSE23SCALAR",
+      "authors": "Skalse and Abate",
+      "year": 2023,
+      "doi": null,
+      "url": "https://proceedings.mlr.press/v216/skalse23a.html",
+      "contribution": "scalar Markovian reward limits for certain task classes",
+      "limitation": "not impossibility of all scalar utilities",
+      "review_status": "ORIGINAL_METADATA_ABSTRACT_OR_PREEXISTING_LEDGER"
+    },
+    {
+      "id": "AGNIHOTRI26",
+      "authors": "Agnihotri et al.",
+      "year": 2026,
+      "doi": null,
+      "url": "https://proceedings.mlr.press/v306/agnihotri26a.html",
+      "contribution": "multiobjective constrained alignment as engineering comparison",
+      "limitation": "constraints not internal motive",
+      "review_status": "ORIGINAL_METADATA_ABSTRACT_OR_PREEXISTING_LEDGER"
+    },
+    {
+      "id": "HILBE16",
+      "authors": "Hilbe, Hagel and Milinski",
+      "year": 2016,
+      "doi": "10.1371/journal.pone.0163867",
+      "url": "https://doi.org/10.1371/journal.pone.0163867",
+      "contribution": "asymmetric partner switching, cooperation and extortion",
+      "limitation": "does not generalize all agents",
+      "review_status": "ORIGINAL_METADATA_ABSTRACT_OR_PREEXISTING_LEDGER"
+    },
+    {
+      "id": "HUBNER25",
+      "authors": "Hübner et al.",
+      "year": 2025,
+      "doi": "10.1093/pnasnexus/pgaf154",
+      "url": "https://academic.oup.com/pnasnexus/article/4/5/pgaf154/8128354",
+      "contribution": "conditional reciprocity social dilemma equilibrium",
+      "limitation": "not rights in power-monopoly",
+      "review_status": "ORIGINAL_METADATA_ABSTRACT_OR_PREEXISTING_LEDGER"
+    },
+    {
+      "id": "MCAULIFFE18",
+      "authors": "McAuliffe et al.",
+      "year": 2018,
+      "doi": "10.1038/s41562-018-0454-9",
+      "url": "https://doi.org/10.1038/s41562-018-0454-9",
+      "contribution": "some learned cooperative behaviors decline in self-interest-disfavoring settings",
+      "limitation": "not universal moral collapse",
+      "review_status": "ORIGINAL_METADATA_ABSTRACT_OR_PREEXISTING_LEDGER"
+    }
+  ]
+}
