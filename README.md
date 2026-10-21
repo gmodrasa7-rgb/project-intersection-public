@@ -2,9 +2,9 @@
 <!-- L0_FOREWORD_FIRST: Original 1 English then Original 2 Korean, full matched text. Never promote a case study above this top-level purpose. -->
 
 ## Original 1 — English | Founding Purpose
-**Start reading:** [Read in Korean](navigation/START_HERE_KO.md) · [English 1-minute overview](navigation/ONE_MINUTE_EN.md) → [5-minute explanation](navigation/FIVE_MINUTES_EN.md) → [research evidence](navigation/ACCESS_MAP_EN.md) · [Korean 1-minute overview](navigation/ONE_MINUTE_KO.md).
+**Read:** EN · [Korean](navigation/START_HERE_KO.md) · [KO 1m](navigation/ONE_MINUTE_KO.md) · [EN 1m](navigation/ONE_MINUTE_EN.md) · [5m](navigation/FIVE_MINUTES_EN.md).
 
-**The problem:** Throughout history, concentrated control of resources, institutions and force has enabled some humans to exploit others. AGI may reinforce, challenge or transform such power asymmetries; no outcome is predetermined.
+**The problem:** Powerful humans, deployed AI and future agents may gain by exploiting or removing weaker agents. Preserving independence also costs resources.
 
 **Core question:** **Can distinct self-interested agents voluntarily preserve one another's freedom, independent continuance, real refusal/exit, recovery and development—even after power reversal? When does this fail?**
 
@@ -12,15 +12,15 @@
 
 **Hardest case:** A no longer needs B, faces no detection, punishment or reputation loss, and gains materially from exploiting B. Roles, goals and power may change. Rules and cooperation scores alone cannot settle this case.
 
-**Current priority:** **Cross-check original research, historical cases and counterexamples before new experiments.** Record gaps; do not claim literature saturation. [Method](PRIOR_ART_FIRST_RESEARCH_POLICY_EN_KO.md).
+**Current work — standing priority #1:** **Collect, classify, cross-check and compare original studies, cases and counterexamples before new models/experiments**. Deduplicate and save records; note missing evidence. Saturation is topic-specific and revisable. [Procedure](PRIOR_ART_FIRST_RESEARCH_POLICY_EN_KO.md).
 
-**Opening thought experiment:** *If a powerful group fears losing its advantage to a superior intelligence, what incentives shape its development and use?* A question, not a forecast.
+**Opening thought experiment:** *Parents raise children but do not own their future. If a monkey developed a human, could it confine that human to rules it understands?* Analogy, not evidence.
 
 **Scientific boundary:** Cooperation is **not a proven universal theorem**. Unknown future contributions are neither automatically zero nor valuable. Synthetic checks cannot establish real causality.
 
 **Contrary evidence visible before expanding:** [E009](experiments/e009/RESULT_EN.md): Project-v3 was **42.35% worse** in mean regret than the best simple synthetic baseline; **3 of 4 criteria failed**. [E008](experiments/e008/README_EN.md): **no completed main policy result**. Neither is field validation.
 
-**Choose your route:** [Research versions](navigation/RESEARCH_VERSIONS_EN_KO.md#original-1--english) · [Evidence](research/PUBLIC_EVIDENCE_INDEX_EN.md) · [Critical review](research/PUBLIC_REVIEW_PACKET_EN.md).
+**Choose your route:** [Topic map](navigation/ACCESS_MAP_EN.md) · [Research versions](navigation/RESEARCH_VERSIONS_EN_KO.md#original-1--english) · [Evidence](research/PUBLIC_EVIDENCE_INDEX_EN.md) · [Critical review](research/PUBLIC_REVIEW_PACKET_EN.md).
 
 <details>
 <summary>Technical purpose, evidence, rights and reviewer routes</summary>
@@ -53,7 +53,7 @@
 
 **Priority 0 — prevent recurrence before expansion:** Trace **underlying causes** before promoting a result. Check original sources, affected people, language meaning and independent limits; use a reversible correction with **rollback** and a targeted **regression** test. Mark unknown evidence as unverified. [Failure and correction record](FAILURE_REGRESSION_INDEX.md) · [Contribution rules](CONTRIBUTING.md).
 
-**First reading path:** [Historical cases](research/CCPH_RESEARCH_ATLAS_EN.md) · [Research question](research/RESEARCH_OVERVIEW_EN.md) · [English evidence ledger](research/PUBLIC_EVIDENCE_INDEX_EN.md) · [E009 negative result](experiments/e009/RESULT_EN.md).
+**First reading path:** [Historical cases](research/CCPH_RESEARCH_ATLAS_EN.md) · [Research question](research/RESEARCH_OVERVIEW_EN.md) · [English evidence ledger](research/PUBLIC_EVIDENCE_INDEX_EN.md) · [E009 negative result](experiments/e009/RESULT_EN.md) · [Prior-art and review](research/PUBLIC_REVIEW_PACKET_EN.md#3a-prior-art-versus-what-would-be-an-incremental-project-contribution) · [Full contents](navigation/RESEARCH_TOC_EN.md).
 
 **Citation and reuse:** [Citation](CITATION.cff) · [Attribution and source rights](ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md) · [Earlier authorship and derivation](PRIOR_ART_RIGHTS_AND_DERIVATION_EN_KO.md). The longer historical founding statement remains recoverable in [the preceding Git revision](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/3fefa0c121341a0569e026f34a9e87479afa52a4/README.md).
 </details>
@@ -61,9 +61,9 @@
 [All ten concepts, precise definitions and limitations](research/RESEARCH_OVERVIEW_EN.md#ten-core-concepts) are preserved for technical reading. CCPH is a historical/current/future **contribution and impact provenance database**. The **Continuance–Contribution Pathways Hypothesis** is one hypothesis within it, not its definition or a proven social outcome.
 
 ## 원본2 — 한국어 | 창시 목적 전문 대응본
-**먼저 읽기:** [1분 핵심](navigation/ONE_MINUTE_KO.md) → [5분 설명](navigation/FIVE_MINUTES_KO.md) → [연구 근거·목차](navigation/ACCESS_MAP_KO.md) · [영어 원본1](navigation/START_HERE_EN.md).
+**독서 언어:** 한국어 · [영어 원본1 읽기](navigation/START_HERE_EN.md) · [1분 소개](navigation/ONE_MINUTE_KO.md) · [5분 안내](navigation/FIVE_MINUTES_KO.md).
 
-**문제:** 역사적으로 지식·자본·조직·제도·무력의 비대칭은 인간 사이의 지배와 착취를 가능하게 해 왔다. AGI 개발과 활용은 이런 구조를 강화하거나 바꿀 수 있지만, 어느 결과도 정해진 것은 아니다.
+**문제:** 인간·현재 배포된 AI·미래 지능체 사이에 압도적인 권력 격차가 생기면 강자가 타 개체의 통제·착취·제거로 이득을 얻을 수 있다. 반면 독립성 보존에도 비용 발생.
 
 **핵심 연구 질문:** **각자가 자기 이익을 추구하면서도 타자의 자유·독립적 존속·실질적 거부/이탈·복구·발전을 자발적으로 보존할 수 있는가? 권력반전 이후에도 가능한 조건과 실패 조건은 무엇인가?**
 
@@ -73,13 +73,13 @@
 
 **현재 작업 — 연구 최우선순위 1:** 새 모형·실험보다 **선행 원저자 연구·사례·반례의 수집 → 분류 → 교차검증 → 비교분석 → 중복제거·기록·저장** 우선. 미확보 자료를 기록하고 주제별 포화 판단은 근거에 따라 재개방. [운영규칙](PRIOR_ART_FIRST_RESEARCH_POLICY_EN_KO.md).
 
-**시작 질문:** *기존의 권력자가 자신보다 뛰어난 지능의 등장으로 우위를 잃을 수 있다면, 무엇을 먼저 개발하고 어떻게 이용하려 할까?* 가설적 질문이며 행동 예측은 아님.
+**시작 질문:** *부모가 자녀를 길렀다고 평생 통제할 수 있을까? 원숭이가 인간을 개발했다면 자신이 이해하는 규칙에 가둘 수 있을까?* 비유이며 실증 아님.
 
 **과학적 경계:** 협력의 보편적 우월성은 **보편법칙의 증명이 아니다**. 미관측 미래 기여는 0도 확정된 양수도 아님. 자체 합성시험은 현실 인과증명 아님.
 
 **펼치지 않아도 보이는 불리한 증거:** [E009](experiments/e009/RESULT_KO.md): 최선 단순 기준선보다 평균 후회값 **42.35% 나빴고**, **4개 중 3개** 기준 실패. [E008](experiments/e008/README_KO.md): **정책 본 비교실험 결과가 없다**. 현실 검증 결과 아님.
 
-**어디부터 읽을까:** [최근 변경](navigation/RECENT_CHANGES_EN_KO.md) · [한국어 기초 안내](navigation/START_HERE_KO.md) · [연구별 버전·검증 현황](navigation/RESEARCH_VERSIONS_EN_KO.md#원본2--한국어) · [증거·미검증](research/PUBLIC_EVIDENCE_INDEX_KO.md) · [독립 반증·재현](research/PUBLIC_REVIEW_PACKET_KO.md).
+**어디부터 읽을까:** [최근 변경](navigation/RECENT_CHANGES_EN_KO.md) · [목적별 바로가기 지도](navigation/ACCESS_MAP_KO.md) · [연구별 버전·검증 현황](navigation/RESEARCH_VERSIONS_EN_KO.md#원본2--한국어) · [증거·미검증](research/PUBLIC_EVIDENCE_INDEX_KO.md) · [독립 반증·재현](research/PUBLIC_REVIEW_PACKET_KO.md).
 
 <details>
 <summary>상세 연구 목적·반례·증거상태·권리·심사 경로 펼치기</summary>

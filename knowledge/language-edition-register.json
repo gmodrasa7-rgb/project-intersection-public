@@ -556,7 +556,7 @@
       "independent_review_receipt": null,
       "one_sided_edit_exception": null,
       "known_divergences": [
-        "Actual bilingual semantic parity has not been independently verified."
+        "Historical v0.1.1 reader structure preserved; independent bilingual semantic review has not occurred."
       ]
     },
     {
@@ -570,7 +570,7 @@
       "independent_review_receipt": null,
       "one_sided_edit_exception": null,
       "known_divergences": [
-        "Actual bilingual semantic parity has not been independently verified."
+        "Historical v0.1.1 reader structure preserved; independent bilingual semantic review has not occurred."
       ]
     }
   ],
@@ -2540,7 +2540,7 @@
       "scope": "Nine main-branch C15 Markdown artifacts registered after concurrent C15 addition; no content equivalence or scientific review certified",
       "note": "C15 short navigation root entry relocated under research directory with path-relative links changed; previous Git tree retains prior location."
     },
-    "2026-10-21: Registered EN/KO 1-minute and 5-minute paths and mixed-method record left unregistered by PR #310. Semantic equivalence is not independently certified."
+    "2026-10-21: Administrative-only backfill of v0.1.1 legacy reader documents in language inventory after PR #312 rollback; original content unchanged; independent translation parity remains unverified."
   ],
   "path_layout_policy": "Keep the project root entry-only; bilingual full research editions live in existing research/ and their original historical combined documents retain stable root URLs."
 }

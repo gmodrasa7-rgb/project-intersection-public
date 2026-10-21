@@ -1,19 +1,21 @@
 <!-- PI-LANGUAGE: en -->
 <!-- PI-MIRROR: navigation/ONE_MINUTE_KO.md -->
-# Project Intersection — one-minute overview
+# Project Intersection — one minute
 
-[Read in Korean](ONE_MINUTE_KO.md) · [Full founding purpose](../README.md)
+[Read in Korean](ONE_MINUTE_KO.md) · [Founding purpose](../README.md)
 
-## How could historical human power asymmetries change in an AGI era?
+## Does raising a child mean owning their future choices?
 
-History includes cases where concentrated wealth, institutions, organizations, force and information enabled people to dominate or exploit others. It also contains examples of resistance, checks on power and cooperation.
+Consider parents and children, employers and employees, humans and AI. Does raising, hiring or developing someone mean owning all of their choices?
 
-**Why now?** Competition to develop AGI could reinforce existing power or disrupt it. Some AI risks could arise from human deployment incentives; others from AI learning, objectives and environments. Neither outcome is inevitable.
+**If a monkey developed a human, could it forever confine that human to rules the monkey understands?** Now consider humans and future AI with even greater differences in capability.
 
-**The research question:** Even when the stronger actor no longer needs the weaker and exploitation pays, under what conditions might distinct self-interested agents voluntarily preserve one another's **freedom, independent continuance, real refusal and exit, recovery and development**—including after power reversal?
+**Core question:** Even if the stronger actor no longer needs the weaker and gains from exploitation, under what conditions can self-interested agents voluntarily preserve one another's **independent existence, freedom, real refusal and exit, recovery and development**? Would that survive a reversal of power?
 
-**What is known?** No general answer is proven. Original papers, real-world cases and counterexamples come first. In our bounded synthetic [E009 comparison](../experiments/e009/RESULT_EN.md), a complex candidate performed **42.35% worse on mean regret** than the best simple baseline. This was not real-world validation.
+**Method:** First collect original papers, real-world cases and counterevidence; check sources and rival explanations. Test only the remaining questions with bounded models.
 
-**Next:** [Five-minute explanation: history, AGI and objections](FIVE_MINUTES_EN.md) → [Research evidence and archives](ACCESS_MAP_EN.md)
+**Current state:** No universal coexistence law is **proven**. In the project's own synthetic [E009](../experiments/e009/RESULT_EN.md), the complex candidate had **42.35% worse mean regret** than the best simple baseline. It is not real-world human/AI validation.
 
-*One minute is an editorial target, not a measured reading time.*
+**Next:** [Five-minute guide](FIVE_MINUTES_EN.md) · [Find evidence by question](ACCESS_MAP_EN.md) · [Evidence and unknowns](../research/PUBLIC_EVIDENCE_INDEX_EN.md)
+
+*One minute is an editorial target, not a measured completion time.*
