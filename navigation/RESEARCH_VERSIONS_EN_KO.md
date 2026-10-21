@@ -1,6 +1,6 @@
 <!-- PI-LANGUAGE: en-ko -->
 # Project Intersection — Research identity, versions and validation states / 연구 정체성·버전·검증 상태
-**Registry document version: v0.3.0 · Snapshot: 2026-10-22 · Repository navigation and source-status audit, not scientific approval**
+**Registry document version: v0.3.1 · Snapshot: 2026-10-22 · Repository navigation and source-status audit, not scientific approval**
 
 **PI-PACD-PRS-OSL v0.1.0 (2026-10-22):** [Owner Self-Loss EN](../research/PI_PACD_PRS_OSL_V0_1_0_EN.md) · [소유자 자기손실 한국어](../research/PI_PACD_PRS_OSL_V0_1_0_KO.md) · [3 hypothetical sign-contrast cases](../research/PI_PACD_PRS_OSL_CASES_V0_1_0.json) · [version manifest](../research/PI_PACD_PRS_OSL_VERSION_MANIFEST.json). A power or AI-capability target can succeed while independently valued owner welfare declines. Cases where domination privately pays more and third-party rights remain separate. **No measured owner effects or PRS parent upgrade.** / 소유자 자신에게도 이익·손실 역전 가능, 실증 미확인.
 
@@ -28,6 +28,8 @@
 
 **Eight individual research component versions proposed:** [EN1/KO2 baseline specifications](../research/INDIVIDUAL_RESEARCH_VERSIONS_V0_1_0_EN_KO.md) · [pinned component manifest](../research/INDIVIDUAL_RESEARCH_VERSION_BASELINES_V0_1_0.json). v0.1.0 is a documentation version, never a scientific evidence grade. ECR v1.4 remains an unmerged candidate.
 
+**24-study planning matrix v0.1.0 (2026-10-22, proposed in stacked PR #346):** [Ranked English-first/Korean-second table](../research/INDIVIDUAL_RESEARCH_PRIORITY_VERSION_MATRIX_V0_1_0_EN_KO.md) · [machine-readable grades and source/status guards](../research/INDIVIDUAL_RESEARCH_PRIORITY_VERSION_MATRIX_V0_1_0.json). All 24 individual studies show existing component version with distinct P0–P3 research priority, N1–N5 necessity and D1–D5 methodological difficulty. Planning judgments only; NOT component SemVer upgrades or evidence grades. ECR v1.4 is an unmerged draft; OCP v0.15 is private historical research and only public-safe topic metadata is shown.
+
 ## Original 1 — English
 
 ### What we research in one paragraph
@@ -50,17 +52,17 @@ A **program**, a **research component**, a **method document**, an **experiment*
 | --- | --- | --- | --- | --- |
 | PI | Conditions and failure of self-interested voluntary coexistence | Unassigned | — | Overall hypothesis, no universal validation |
 | VC | Measure real independent continuance, refusal, exit and recovery | Unassigned | — | Outcome definition, not proven result |
-| MER | Compare mechanisms behind motivation, possible experience and behavior | **v0.1.0** | [Parent baseline](../research/MER_V0_1_0_EN.md) · [manifest](../research/MER_VERSION_MANIFEST.json) | Competing hypotheses; internal AI experience unresolved |
-| EI | Test if coexistence remains preferable without coercion or monitoring | **v0.1.0** | [Parent baseline](../research/EI_V0_1_0_EN.md) · [manifest](../research/EI_VERSION_MANIFEST.json) | Condition-dependent model proposals |
-| ECR | Identify agents, affected parties, opportunities and power reversal | Unassigned | v1.4 [draft PR #211](https://github.com/gmodrasa7-rgb/project-intersection-public/pull/211) | Proposed synthetic/causal-identification work, not merged |
+| MER | Compare mechanisms behind motivation, possible experience and behavior | **v0.1.0** · P0 · N5/5 · D5/5 | [Parent baseline](../research/MER_V0_1_0_EN.md) · [manifest](../research/MER_VERSION_MANIFEST.json) | Competing hypotheses; internal AI experience unresolved |
+| EI | Test if coexistence remains preferable without coercion or monitoring | **v0.1.0** · P0 · N5/5 · D5/5 | [Parent baseline](../research/EI_V0_1_0_EN.md) · [manifest](../research/EI_VERSION_MANIFEST.json) | Condition-dependent model proposals |
+| ECR | Identify agents, affected parties, opportunities and power reversal | Unassigned · P0 · N5/5 · D4/5 | v1.4 [draft PR #211](https://github.com/gmodrasa7-rgb/project-intersection-public/pull/211) | Proposed synthetic/causal-identification work, not merged |
 | IVS-0R | Counterexample, independent-reproduction and correction audit | Unassigned | — | Method, not certification of the theories |
-| ICM | Candidate intersection of minimum self-interest | **v0.1.0** | [component baseline](../research/INDIVIDUAL_RESEARCH_VERSIONS_V0_1_0_EN_KO.md) | May be empty; historical individual continuance margin is a distinct concept |
-| RGBM | Candidate long-run mutual development model | **v0.1.0** | [component baseline](../research/INDIVIDUAL_RESEARCH_VERSIONS_V0_1_0_EN_KO.md) | Unverified long-run trajectory, not a universal growth law |
+| ICM | Candidate intersection of minimum self-interest | **v0.1.0** · P0 · N5/5 · D5/5 | [component baseline](../research/INDIVIDUAL_RESEARCH_VERSIONS_V0_1_0_EN_KO.md) | May be empty; historical individual continuance margin is a distinct concept |
+| RGBM | Candidate long-run mutual development model | **v0.1.0** · P1 · N4/5 · D5/5 | [component baseline](../research/INDIVIDUAL_RESEARCH_VERSIONS_V0_1_0_EN_KO.md) | Unverified long-run trajectory, not a universal growth law |
 | CCPH | Events, sources, contributions, impacts and provenance | Unassigned | — | Data lineage, not a social law |
-| RVD | Resonance–Value Dynamics: voice versus effective veto, independent original-B exit and non-retaliation | **v0.7.0** [main](../research/RVD_VERSION_MANIFEST.json) | — | Seven bounded synthetic transition models; no new hypotheses; not verified deployed rights, AI motives or VC |
+| RVD | Resonance–Value Dynamics: voice versus effective veto, independent original-B exit and non-retaliation | **v0.7.0** [main](../research/RVD_VERSION_MANIFEST.json) · P1 · N4/5 · D5/5 | — | Seven bounded synthetic transition models; no new hypotheses; not verified deployed rights, AI motives or VC |
 | PI-RAMP | Test whether each archive upgrade improves reader accuracy and evidence access | **v0.7.0** [main](../protocols/PI_RAMP_V0_7_EN_KO.md) | — | Method-only 13 synthetic sharp-bound cases; actual reader effect, motives and field validity unmeasured |
 | Roadmap | Six fixed research stages and gates | **v0.2.3** [main](../research/PI_ROADMAP_OPERATIONAL_GATES_V0_2_3_EN_KO.md) | — | Operational design, not scientific effect |
-| DCA-0 | Compare defensive acceleration with AI misuse and externalities | **v0.1.0** | [component baseline](../research/INDIVIDUAL_RESEARCH_VERSIONS_V0_1_0_EN_KO.md) | Historical source said 0.1; empirical defensive effect unverified |
+| DCA-0 | Compare defensive acceleration with AI misuse and externalities | **v0.1.0** · P3 · N3/5 · D4/5 | [component baseline](../research/INDIVIDUAL_RESEARCH_VERSIONS_V0_1_0_EN_KO.md) | Historical source said 0.1; empirical defensive effect unverified |
 | DCA-1 | Test whether adaptive defense displaces harm or merely blocks action | **v0.2.0** [main](../research/DCA1_ADAPTATION_DISPLACEMENT_IDENTIFICATION_2026-10-20_KO.md) | — | Original-source review and synthetic counterexamples; no field validation |
 
 ### Experiments are IDs, not semantic versions
@@ -81,6 +83,8 @@ Snapshot derived from selected public main files and visible PR metadata, not an
 The version register answers **which current document/version**; [PI-CIG claim impact overlay](../knowledge/claim-impact-overlay-v0_1.json) and [deterministic checker](../tools/trace_claim_impact.py) answer **which recorded claims require reassessment when a source changes**. This is a partial dependency overlay (8 source artifacts, 7 claims, 15 scoped edges), not the full research graph. A changed source hash requires review, **not automatic claim falsification**. This inherits established reasoning-maintenance and provenance concepts (Doyle 1979; de Kleer 1986; W3C PROV 2013), and is compatible with the incomplete-graph warning of Salas (2026 preprint); [source bibliography and transfer limits](../knowledge/README.md#pi-cig-prior-art--선행-원저자-경계-2026-10-21). Unmapped sources remain **UNKNOWN**, not unaffected. Independent replication and field validation remain unverified. Example: change to E009 numeric evidence flags the E009 negative-result record and the VC hardest-case research question for review; it does **not** prove coexistence possible or impossible.
 
 **미지정 개별 연구 8개에 최초 v0.1.0 명세 부여(미병합 제안):** [영문1·한글2 연구별 명세](../research/INDIVIDUAL_RESEARCH_VERSIONS_V0_1_0_EN_KO.md) · [출처 고정 원장](../research/INDIVIDUAL_RESEARCH_VERSION_BASELINES_V0_1_0.json). 번호 부여는 실증·독립 검증이 아니며 ECR v1.4 초안은 그대로 둔다.
+
+**개별연구 24개 우선순위·필요도·난이도 v0.1.0 (2026-10-22, PR #346 제안):** [영문1·한글2 전체 순위표](../research/INDIVIDUAL_RESEARCH_PRIORITY_VERSION_MATRIX_V0_1_0_EN_KO.md) · [24개 기계판독 원장](../research/INDIVIDUAL_RESEARCH_PRIORITY_VERSION_MATRIX_V0_1_0.json). 기존 연구 버전 옆에 P등급·N1~5 필요도·D1~5 난이도 표기. 순위평가는 연구 성과·과학적 검증 등급이 아님. ECR v1.4 미병합, OCP v0.15 비공개 이력 분리.
 
 ## 원본2 — 한국어
 
@@ -104,17 +108,17 @@ The version register answers **which current document/version**; [PI-CIG claim i
 | --- | --- | --- | --- | --- |
 | PI | 타자의 독립존속을 지키는 선택의 성립·붕괴 조건 | 미지정 | — | 보편적 공존 미입증 |
 | VC | 자발적 공존의 실효 자유·거절·존속·복구 측정 | 미지정 | — | 결과변수 정의 단계 |
-| MER | 욕구·동기·가능한 경험과 관찰 행동의 관계 연구 | **v0.1.0** | [정본](../research/MER_V0_1_0_KO.md) · [원장](../research/MER_VERSION_MANIFEST.json) | 내면 인과·AI 경험 미검증 |
-| EI | 강제 없이 공존을 선택할 자기이익 조건 탐색 | **v0.1.0** | [정본](../research/EI_V0_1_0_KO.md) · [원장](../research/EI_VERSION_MANIFEST.json) | 조건부 이론·문헌 수준 |
-| ECR | 실제 개체·제3자·관계·권력·행동기회 식별 | 미지정 | v1.4 [초안 #211](https://github.com/gmodrasa7-rgb/project-intersection-public/pull/211) | 후보 합성검사, 정본 미병합 |
+| MER | 욕구·동기·가능한 경험과 관찰 행동의 관계 연구 | **v0.1.0** · P0 · N5/5 · D5/5 | [정본](../research/MER_V0_1_0_KO.md) · [원장](../research/MER_VERSION_MANIFEST.json) | 내면 인과·AI 경험 미검증 |
+| EI | 강제 없이 공존을 선택할 자기이익 조건 탐색 | **v0.1.0** · P0 · N5/5 · D5/5 | [정본](../research/EI_V0_1_0_KO.md) · [원장](../research/EI_VERSION_MANIFEST.json) | 조건부 이론·문헌 수준 |
+| ECR | 실제 개체·제3자·관계·권력·행동기회 식별 | 미지정 · P0 · N5/5 · D4/5 | v1.4 [초안 #211](https://github.com/gmodrasa7-rgb/project-intersection-public/pull/211) | 후보 합성검사, 정본 미병합 |
 | IVS-0R | 반례·역할반전·독립검증·오류복구 감사 | 미지정 | — | 검증 절차이지 성립 증명 아님 |
-| ICM | 최소 사심 교집합 | **v0.1.0** | [개별 명세](../research/INDIVIDUAL_RESEARCH_VERSIONS_V0_1_0_EN_KO.md) | 공집합 가능; 역사적 자립존속여력 ICM과 다른 개념 |
-| RGBM | 장기 상호발전 모형 | **v0.1.0** | [개별 명세](../research/INDIVIDUAL_RESEARCH_VERSIONS_V0_1_0_EN_KO.md) | 장기 동학은 미검증 후보 |
+| ICM | 최소 사심 교집합 | **v0.1.0** · P0 · N5/5 · D5/5 | [개별 명세](../research/INDIVIDUAL_RESEARCH_VERSIONS_V0_1_0_EN_KO.md) | 공집합 가능; 역사적 자립존속여력 ICM과 다른 개념 |
+| RGBM | 장기 상호발전 모형 | **v0.1.0** · P1 · N4/5 · D5/5 | [개별 명세](../research/INDIVIDUAL_RESEARCH_VERSIONS_V0_1_0_EN_KO.md) | 장기 동학은 미검증 후보 |
 | CCPH | 사건·출처·기여·피해·영향 계보 관리 | 미지정 | — | 계보 DB이지 검증된 사회법칙 아님 |
-| RVD | 공명·가치 동역학: 발언과 실효 거부·독립 이탈·비보복 및 우회 검증 | **v0.7.0** [정본](../research/RVD_VERSION_MANIFEST.json) | — | 유한상태 합성 7설계 점검·가설 추가 0건; 현실 권리·마음·공존 실증 없음 |
+| RVD | 공명·가치 동역학: 발언과 실효 거부·독립 이탈·비보복 및 우회 검증 | **v0.7.0** [정본](../research/RVD_VERSION_MANIFEST.json) · P1 · N4/5 · D5/5 | — | 유한상태 합성 7설계 점검·가설 추가 0건; 현실 권리·마음·공존 실증 없음 |
 | PI-RAMP | 자료실 개편이 독자의 근거 발견·판단을 개선했는지 측정 | **v0.7.0** [정본](../protocols/PI_RAMP_V0_7_EN_KO.md) | — | 13개 합성 부분식별 경계 감사; 실제 독자 효과·동기·현장 인과효과 미측정 |
 | 로드맵 | 기존 6단계·버전·승격과 보류 기준 | **v0.2.3** [정본](../research/PI_ROADMAP_OPERATIONAL_GATES_V0_2_3_EN_KO.md) | — | 운영 설계 |
-| DCA-0 | 악용 가속보다 방어·검증 효과를 높일 조건 측정 | **v0.1.0** | [개별 명세](../research/INDIVIDUAL_RESEARCH_VERSIONS_V0_1_0_EN_KO.md) | 원문 0.1 형식 정규화; 실제 효과 미입증 |
+| DCA-0 | 악용 가속보다 방어·검증 효과를 높일 조건 측정 | **v0.1.0** · P3 · N3/5 · D4/5 | [개별 명세](../research/INDIVIDUAL_RESEARCH_VERSIONS_V0_1_0_EN_KO.md) | 원문 0.1 형식 정규화; 실제 효과 미입증 |
 | DCA-1 | 적응형 공격·피해 전가·동기 미식별 반례 검사 | **v0.2.0** [정본](../research/DCA1_ADAPTATION_DISPLACEMENT_IDENTIFICATION_2026-10-20_KO.md) | — | 선행문헌·합성 반례, 현실 인과검증 없음 |
 
 ### 실험번호는 연구 버전이 아님
