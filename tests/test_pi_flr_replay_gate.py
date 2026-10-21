@@ -60,7 +60,7 @@ class ReplayGateTests(unittest.TestCase):
         called=[]
         def runner(cmd,**kwargs):
             called.append(cmd)
-            return SimpleNamespace(returncode=1 if "check_readme_l0.py" in cmd else 0)
+            return SimpleNamespace(returncode=1 if "tools/check_readme_l0.py" in cmd else 0)
         outcome=rg.execute(plan,run=runner)
         self.assertEqual(outcome["status"],"BLOCKED_FAILED")
         self.assertEqual(outcome["failed_checks"],["README_L0"])
