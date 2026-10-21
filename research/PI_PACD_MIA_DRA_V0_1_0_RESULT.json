@@ -1,0 +1,85 @@
+{
+  "method": "INDEPENDENT_CROSS_TAB_OF_UPSTREAM_DERIVED_CSV_NOT_RAW_QTABLE_REPRODUCTION",
+  "source": {
+    "repository": "kauelopes/algorithmic-collusion-without-deterrence",
+    "commit": "c59da3bf13714d56d912ebdef95e5b2bf1577f21",
+    "upstream_path": "analysis/data/audits_at_scale.csv",
+    "git_blob_sha": "bfd08e31068ca88209f759c1123034082f784c82",
+    "upstream_license": "MIT, author copyright 2026",
+    "reported_by": "Lopes de Moraes and De Losso (2026)",
+    "n": 1024
+  },
+  "totals": {
+    "single_attractor": 914,
+    "both_shocks_return": 998,
+    "down_returns": 1006,
+    "up_returns": 1006,
+    "down_only": 8,
+    "up_only": 8,
+    "neither_return": 10,
+    "naive_deviation_profitable": 78,
+    "naive_deviation_unprofitable": 946,
+    "two_agent_optimal_gain_positive": 901,
+    "single_attractor_and_two_agent_optimal_gain_positive": 800,
+    "naive_unprofitable_and_two_agent_optimal_gain_positive": 826,
+    "upward_shock_rival_price_falls": 822,
+    "downward_shock_rival_price_falls": 968,
+    "agent0_at_best_response_as_source_rounded": 59,
+    "agent1_at_best_response_as_source_rounded": 65,
+    "both_agents_at_best_response_as_source_rounded": 1
+  },
+  "strata": {
+    "single_attractor": {
+      "n": 914,
+      "two_agent_optimal_gain_positive": 800,
+      "naive_deviation_profitable": 52,
+      "both_shocks_return": 914,
+      "mean_gain_agent0_pct": 16.70326,
+      "mean_gain_agent1_pct": 16.244945
+    },
+    "multiple_attractors": {
+      "n": 110,
+      "two_agent_optimal_gain_positive": 101,
+      "naive_deviation_profitable": 26,
+      "both_shocks_return": 84,
+      "mean_gain_agent0_pct": 26.961182,
+      "mean_gain_agent1_pct": 24.814
+    },
+    "naive_deviation_unprofitable": {
+      "n": 946,
+      "two_agent_optimal_gain_positive": 826,
+      "naive_deviation_profitable": 0,
+      "both_shocks_return": 938,
+      "mean_gain_agent0_pct": 16.280042,
+      "mean_gain_agent1_pct": 16.33649
+    },
+    "naive_deviation_profitable": {
+      "n": 78,
+      "two_agent_optimal_gain_positive": 75,
+      "naive_deviation_profitable": 78,
+      "both_shocks_return": 60,
+      "mean_gain_agent0_pct": 36.302436,
+      "mean_gain_agent1_pct": 27.219231
+    }
+  },
+  "descriptive_rates": {
+    "single_attractor_positive_optimal_gain_both_pct": 87.527,
+    "naive_unprofitable_positive_optimal_gain_both_pct": 87.315,
+    "mean_optimal_gain_two_agents_pct": 17.485318,
+    "upward_shock_rival_price_falls_pct": 80.273,
+    "single_attractor_vs_multiple_naive_profitable_rate_ratio": 4.155
+  },
+  "structural_lemma": {
+    "premise": "Finite deterministic frozen-state map F:S->S has exactly one terminal directed cycle.",
+    "conclusion": "Every trajectory from any state reaches that unique cycle in at most |S| transitions; therefore convergence after any one-step shock entering S does not identify selective punishment.",
+    "proof": "Each state has one successor. Following successors from any initial state must repeat a state in finite time; repeated states form a directed cycle. Uniqueness of the terminal cycle forces arrival at it.",
+    "scope": "For original 15x15=225 state frozen greedy joint policy only; no proof about transient cost, intentions, stationary equilibrium or agents outside S."
+  },
+  "research_limits": [
+    "Author-exported derived 1024-row CSV, not original converged Q tables or new training.",
+    "No independent recomputation of basins, counterfactual shocks or Bellman best-response.",
+    "Best-response gains have been rounded to two decimal places by source.",
+    "Pairs in authored dataset cannot be assumed independent population draws for frequentist inference.",
+    "Economic incentives and third-party welfare cannot be inferred from these numerical columns."
+  ]
+}

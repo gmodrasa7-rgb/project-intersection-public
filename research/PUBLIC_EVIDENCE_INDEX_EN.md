@@ -14,6 +14,8 @@ This English edition extracts the legacy English evidence ledger and E009 result
 
 **2026-10-22 PI-PACD-MIA v0.1.0 — mechanism/source synthesis, NOT new empirical results:** [EN](PI_PACD_MIA_V0_1_0_EN.md) · [KO](PI_PACD_MIA_V0_1_0_KO.md) · [claim-source-rival ledger](PI_PACD_MIA_SOURCE_CROSSWALK_V0_1_0.json). Contradictory original Q-learning collusion interpretations (2020/2023/2026), additive/nonadditive group corrigibility conditional theorem (AAMAS 2026), UK CMA cloud and US DOJ RealPage procedural case record. No PI model trials or independent source replication. **DOJ allegations differ from final judgments.**
 
+**2026-10-22 MIA-DRA provenance-limited data calculation:** [study EN](PI_PACD_MIA_DRA_V0_1_0_EN.md) · [KO](PI_PACD_MIA_DRA_V0_1_0_KO.md) · [results](PI_PACD_MIA_DRA_V0_1_0_RESULT.json) · [source CSV](data/pacd_mia/audits_at_scale_source_2026.csv). Recomputed 800/914 unique-attractor pairs with positive optimized deviation gains for both actors, using **authors' already-derived** data and established functional-graph logic. No independent replay of original Q-tables, no field/outsider welfare observation.
+
 ## Focused updates subsequent to the last full scientific review
 
 **Important dates:** The last full evidence review recorded was **2026-10-06**. Identity/navigation corrections and narrower synthetic checks followed; this English reader edition is **not** a new complete scientific assessment.

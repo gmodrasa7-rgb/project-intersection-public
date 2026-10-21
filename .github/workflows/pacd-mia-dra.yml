@@ -1,0 +1,39 @@
+name: PACD-MIA-DRA pinned upstream derived-data check
+on:
+  pull_request:
+    paths:
+      - "research/data/pacd_mia/**"
+      - "research/PI_PACD_MIA_DRA*"
+      - "tools/pacd_mia_dra.py"
+      - "tests/test_pacd_mia_dra.py"
+      - ".github/workflows/pacd-mia-dra.yml"
+  push:
+    paths:
+      - "research/data/pacd_mia/**"
+      - "research/PI_PACD_MIA_DRA*"
+      - "tools/pacd_mia_dra.py"
+      - "tests/test_pacd_mia_dra.py"
+      - ".github/workflows/pacd-mia-dra.yml"
+permissions:
+  contents: read
+jobs:
+  pinned-data:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Regression and tampering tests
+        run: python -m unittest discover -s tests -p "test_pacd_mia_dra.py" -v
+      - name: Exact deterministic result verification
+        run: |
+          python tools/pacd_mia_dra.py > /tmp/pacd_dra_result.json
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          actual=json.loads(Path('/tmp/pacd_dra_result.json').read_text())
+          recorded=json.loads(Path('research/PI_PACD_MIA_DRA_V0_1_0_RESULT.json').read_text())
+          assert actual == recorded, 'DRA_RESULT_DRIFT'
+          print('PACD-DRA pinned-source cross-tabs: PASS')
+          PY

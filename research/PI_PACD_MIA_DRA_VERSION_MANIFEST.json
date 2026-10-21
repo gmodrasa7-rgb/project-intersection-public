@@ -1,0 +1,62 @@
+{
+  "schema_version": "pi-derived-data-reanalysis/v0.1.0",
+  "research_id": "PI-PACD-MIA-DRA",
+  "name_en": "Frozen-policy Data Reanalysis and Attractor Identification Boundary",
+  "name_ko": "학습 정지 정책의 상태 수렴·일탈 원자료 재집계",
+  "version": "v0.1.0",
+  "date": "2026-10-22",
+  "higher_components_unchanged": [
+    "PI-PACD v0.1.0",
+    "PI-PACD-MIA v0.1.0",
+    "PI-PACD-OCG v0.1.0",
+    "PI-PACD-PRS v0.1.0"
+  ],
+  "documents": {
+    "en": "research/PI_PACD_MIA_DRA_V0_1_0_EN.md",
+    "ko": "research/PI_PACD_MIA_DRA_V0_1_0_KO.md"
+  },
+  "result": "research/PI_PACD_MIA_DRA_V0_1_0_RESULT.json",
+  "code": "tools/pacd_mia_dra.py",
+  "tests": "tests/test_pacd_mia_dra.py",
+  "authored_derived_dataset": "research/data/pacd_mia/audits_at_scale_source_2026.csv",
+  "upstream_mit_license": "research/data/pacd_mia/SOURCE_LICENSE.txt",
+  "upstream": {
+    "repository": "kauelopes/algorithmic-collusion-without-deterrence",
+    "commit": "c59da3bf13714d56d912ebdef95e5b2bf1577f21",
+    "path": "analysis/data/audits_at_scale.csv",
+    "blob_sha": "bfd08e31068ca88209f759c1123034082f784c82",
+    "primary_paper": "https://arxiv.org/abs/2610.21867"
+  },
+  "observed_results_origin": "Independent deterministic cross-tab of authors' already-derived 1024 pairs, NOT independent agent training/Q-table/value-iteration reproduction",
+  "status": {
+    "statistical_population_representative": false,
+    "original_q_tables_recomputed": false,
+    "source_derived_table_cross_tabs": true,
+    "new_field_causal_findings": 0,
+    "new_ai_trials": 0,
+    "source_licenses_preserved": true,
+    "full_literature_saturation": false,
+    "new_theorem_novelty": false,
+    "independent_replication_of_paper": false,
+    "third_party_outcomes_measured": false,
+    "version_is_evidence_grade": false
+  },
+  "core_cross_tabs": {
+    "unique_attractor": 914,
+    "both_shocks_return": 998,
+    "unique_attractor_and_both_agents_optimal_deviation_positive": 800,
+    "naive_unprofitable_and_both_agents_optimal_deviation_positive": 826,
+    "both_agents_optimal_positive": 901
+  },
+  "formal_lemma": "Finite deterministic functional graph with one terminal cycle returns to that cycle after every within-state one-step shock. Known elementary graph fact; eventual convergence only.",
+  "future_gate": "Reproduce convergence classes and best responses from original frozen Q-tables and scripts, not merely the already-computed audit CSV, and independently measure harmed outsiders and real exit.",
+  "authorship": "Human-originated Project Intersection research target and AI-assisted bounded reanalysis; source authors retain original discovery attribution.",
+  "confidence_boundary": "No claims about AGI motives, actual collusion legality, rights of current AI, field harms, universal coexistence or causal risk.",
+  "history": [
+    {
+      "version": "v0.1.0",
+      "change": "Pinned 1024-row author-derived source, independent conditional cross-tabs, functional-graph lemma and explicit EI/VC non-identification.",
+      "experimental_promotion": false
+    }
+  ]
+}
