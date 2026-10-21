@@ -37,7 +37,7 @@ def audit(body):
         errors.append("KOREAN_SECONDARY_BOUNDARY_MISSING_OR_REVERSED")
         return errors
     entry = body[:a]
-    first_view = entry.split("<details>", 1)[0]
+    first_view = re.sub(r"<!--.*?-->", "", entry.split("<details>", 1)[0], flags=re.S)
     required_first_view = (
         "## English — Primary",
         "### 15 seconds | Purpose and research",
