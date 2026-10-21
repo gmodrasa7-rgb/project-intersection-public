@@ -123,12 +123,12 @@ Within T05, distinct commenters also describe a recent drop from long chats to 1
 
 | ID | Date | Original testimony | Use in audit |
 |---|---|---|---|
-| C01 | 2025-03-09 | [Free use throughout the day without encountering a cap](https://www.reddit.com/r/grok/comments/1j76nll/i_dont_understand_the_premium_tiers/) | Different historical policy period |
+| C01 | 2025-03-09 | [Free use throughout the day without encountering a cap](https://www.reddit.com/r/grok/comments/1j76nll) | Different historical policy period |
 | C02 | 2026-04-23 | [Reports of widespread multi-day outage / high demand](https://www.reddit.com/r/grok/comments/1stq9ad/how_tf_has_grok_been_unusable_for_3_5_days_and/) | Competing service-availability factor |
 | C03 | 2026-06-29 | [Several weeks of one thread, followed by conversation-too-long error](https://www.reddit.com/r/grok/comments/1uik3yd/ive_hit_the_conversation_limit_today_and_found_a/) | Thread/context limit distinct from rate quota |
 | C04 | 2026-06-27 | [Several same-tier paid accounts seemed to show daily/weekly/monthly quotas; author corrected monthly to weekly](https://www.reddit.com/r/LoveGrok/comments/1uh6trv/monthly_limit_reached_wtf/) | Account differences AND author's correction |
 | C05 | 2026-07-10 | [Paid long work conversations allegedly consumed quota faster than new threads](https://www.reddit.com/r/grok/comments/1ustm3y/weekly_limit_is_ridiculous_for_the_chat/) | Context/workload confounding |
-| C06 | 2026-07 | [Two paid accounts appeared to have different reset periods; another commenter cited a usage UI bug](https://www.reddit.com/r/grok/comments/1u824v8/two_accounts_two_rate_limits/) | Allocation difference vs display defect |
+| C06 | Mid-2026 | [Two paid accounts appeared to have different reset periods; another commenter cited a usage UI bug](https://www.reddit.com/r/grok/comments/1u824v8/two_accounts_two_rate_limits/) | Allocation difference vs display defect |
 
 Additional contextual reports, not included in the 16-thread core: [2026-05-10 long voice sessions reducing to 30–45 minutes (tier unclear)](https://www.reddit.com/r/grok/comments/1t9ecte/voice_and_text_chat_limit_reached_to_less_than_1/), [2026-09-22 1–2h of past conversations vs <3min on a later model](https://www.reddit.com/r/grok/comments/1wn4m8c/its_so_over_theres_literally_no_hope/), [2026-09-08 alleged post-midnight reduction in quota consumption and timezone counterarguments](https://www.reddit.com/r/grok/comments/1waraj9/grok_burns_way_fewer_credits_after_midnight/).
 
@@ -139,3 +139,18 @@ Additional contextual reports, not included in the 16-thread core: [2026-05-10 l
 User testimony **is relevant evidence of user-experienced events** without implying that the user's inferred backend mechanism is known. Self-selection, coinciding product rollouts, and mixing voice, text, paid and free tiers prevent a population-rate estimate. Preserve authors' corrections as counterevidence.
 
 **Case gate:** `GROK-A1=UNVERIFIED`, `GROK-A2=CONSISTENT WITH REPEATED USER-OBSERVED OPACITY, BACKEND UNKNOWN`; intentional extraction unestablished; literature and testimony not saturated. Collect more public testimony and counterexamples before new experimental demands; do not request more labor from the original reporter. Only link public material, not account identifiers or private screenshots.
+
+
+### 5.5 Independently expressed user **interpretations** of data extraction (two more posts + a comment)
+
+Distinguish the report of an access restriction from a user's inference about the provider's motive.
+
+| ID | Date | Public user interpretation | Evidentiary boundary |
+|---|---|---|---|
+| I01 | 2026-03-23 | User alleges free participants helped train/build the AI with their data, followed by paywalled or removed generated assets | Mainly Imagine/media access; not proof of data use or motive. [Original](https://www.reddit.com/r/grok/comments/1s1w6z2/fuck_elon_musk_he_delete_all_the_generated/) |
+| I02 | 2026-04-07 | Critic connects reduction of free access with the training value of broader, diverse human interactions | Public economic interpretation, not internal quota evidence. [Original](https://www.reddit.com/r/grok/comments/1sei4d8/can_anybody_actually_make_sense_of_the_business/) |
+| I03 | 2026-05-30 | Commenter in T03 speculates the provider collected free-user data and then had what it needed | Distinct opinion, **same T03 thread** (not counted again). [Original](https://www.reddit.com/r/grok/comments/1ts98dz/i_bring_news_for_this_new_sudden_update/) |
+
+**Distinct-post count:** 16 original threads + 2 newly identified independent interpretation posts = **18 distinct threads**; nested comments are not counted as additional threads.
+
+**Critical distinction:** `DATA-FIRST-THEN-PAYWALL` (a public hypothesis of gathering free-user data and then restricting the free tier generally) is **not the same** as `GROK-A1` (assigning a particular user more free usage because their contributions are semantically valuable). Finding independent expressions of the first suspicion neither proves nor disproves the second.
