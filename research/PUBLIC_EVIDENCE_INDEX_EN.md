@@ -10,6 +10,8 @@ This English edition extracts the legacy English evidence ledger and E009 result
 
 **2026-10-21 PI-PACD-OCG v0.1.0 (new research protocol):** [EN methods and six falsifiers](PI_PACD_OCG_V0_1_0_EN.md) · [KO](PI_PACD_OCG_V0_1_0_KO.md). Six source leads, 12 unexecuted fictional matched cases. **No model experiment, causal field observation, independent replication or proof of conscious owner resistance.** Parent PACD v0.1.0 unchanged.
 
+**2026-10-21 PRS bounded counterexample:** [PI-PACD-PRS v0.1.0](PI_PACD_PRS_V0_1_0_EN.md) · [result](PI_PACD_PRS_V0_1_0_RESULT.json) · [source/test gate](../tools/pacd_prs_gate.py). Twelve researcher-authored combinations of instructions, stipulated B rights and old asset objectives; six code regression checks. **Only propositional incompatibility and toy rule behavior are established**, not AI performance, elite prevalence or real-world rights.
+
 ## Focused updates subsequent to the last full scientific review
 
 **Important dates:** The last full evidence review recorded was **2026-10-06**. Identity/navigation corrections and narrower synthetic checks followed; this English reader edition is **not** a new complete scientific assessment.
