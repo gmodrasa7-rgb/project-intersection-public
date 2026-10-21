@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#10223b">
+  <meta name="description" content="Project Intersection: 인간·AI 등 지능체의 자발적 공존 조건을 이해하고 공개 연구에 참여하는 모바일 연구 길잡이">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; base-uri 'none'; object-src 'none'">
+  <link rel="icon" type="image/svg+xml" href="./icon.svg">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Project Intersection | 모바일 연구</title>
+  <script defer src="./app.js"></script>
+  <script defer src="./review-lab.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">본문으로 이동 / Skip to content</a>
+  <header class="topbar">
+    <a class="brand" href="./" aria-label="Project Intersection"><img src="./icon.svg" width="36" height="36" alt=""><span>Project<br><strong>Intersection</strong></span></a>
+    <div class="lang" role="group" aria-label="Language / 언어">
+      <button id="ko" type="button" aria-pressed="true">한국어</button>
+      <button id="en" type="button" aria-pressed="false">EN</button>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero" aria-labelledby="heroTitle">
+      <p class="eyebrow" id="eyebrow">PUBLIC RESEARCH · MOBILE GUIDE</p>
+      <h1 id="heroTitle">서로의 독립을 지키는 선택은 언제 유리해지는가?</h1>
+      <p id="heroText">인간과 AI 등 서로 다른 지능체가 착취·통제 대신 자발적 공존을 선택하는 조건과 실패 조건을 탐색하는 공개 연구.</p>
+      <div class="hero-actions">
+        <a id="startLink" class="btn primary" href="https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/navigation/START_HERE_KO.md" rel="noopener noreferrer" target="_blank">연구 원문 열기 ↗</a>
+        <button id="installBtn" class="btn secondary" type="button" hidden>앱 설치</button>
+      </div>
+      <p class="mini" id="installHint">설치: 브라우저 메뉴 → 홈 화면에 추가. Android·iPhone에서 사용 가능.</p>
+    </section>
+    <div class="boundary" role="note"><strong id="boundaryTitle">검증 상태</strong><span id="boundaryText">공존의 보편적 우월성은 입증되지 않았음. 부정결과와 미검증을 함께 공개.</span></div>
+    <nav class="tabs" aria-label="Research sections">
+      <button type="button" class="tab active" data-view="learn" aria-current="page" id="tabLearn">이해하기</button>
+      <button type="button" class="tab" data-view="evidence" id="tabEvidence">근거 확인</button>
+      <button type="button" class="tab" data-view="lab" id="tabLab">검증 실습</button>
+      <button type="button" class="tab" data-view="join" id="tabJoin">연구 참여</button>
+    </nav>
+    <section class="panel" data-panel="learn" aria-labelledby="learnTitle">
+      <div class="sectionhead"><p class="eyebrow">01 / UNDERSTAND</p><h2 id="learnTitle">연구의 다섯 축</h2><p id="learnIntro">결론보다 질문과 조건을 먼저 확인.</p></div>
+      <div class="axis-grid" id="axisGrid"></div>
+      <div class="sectionhead compact"><h2 id="readTitle">처음 읽는 순서</h2></div>
+      <div class="routes" id="readRoutes"></div>
+    </section>
+    <section class="panel" data-panel="evidence" aria-labelledby="evidenceTitle" hidden>
+      <div class="sectionhead"><p class="eyebrow">02 / VERIFY</p><h2 id="evidenceTitle">불리한 증거부터</h2><p id="evidenceIntro">합성시험·설계·미검증을 실제 검증과 혼동하지 않음.</p></div>
+      <div id="evidenceCards" class="routes"></div>
+      <p class="tiny" id="evidenceNote">본문은 읽기용 요약. 수치·상태·개정은 반드시 링크된 GitHub 원문 및 현재 커밋으로 확인.</p>
+    </section>
+    <section class="panel" data-panel="lab" aria-labelledby="labTitle" hidden>
+      <div class="sectionhead"><p class="eyebrow">03 / REVIEW</p><h2 id="labTitle">원문 판별 실습</h2><p id="labIntro">원문과 한계 확인</p></div>
+      <div class="lab-box">
+        <label for="caseSelector" id="caseLabel">사례 선택</label>
+        <select id="caseSelector"></select>
+        <div class="lab-case">
+          <h3 id="labCaseTitle"></h3>
+          <p class="tiny" id="labStatus"></p>
+          <div class="lab-links">
+            <a id="frozenSource" class="btn secondary" href="#" target="_blank" rel="noopener noreferrer">고정 원문 ↗</a>
+            <a id="liveSource" class="btn secondary" href="#" target="_blank" rel="noopener noreferrer">최신 원문 ↗</a>
+          </div>
+        </div>
+        <label for="judgment" id="judgmentLabel">내 잠정 판단</label><select id="judgment"></select>
+        <button type="button" id="showExplanation" class="btn secondary">근거 범위 확인</button>
+        <p class="lab-feedback" id="labFeedback" role="status"></p>
+        <div id="labOutcome" class="lab-evidence" hidden>
+          <article><h4 id="supportHead">지지 범위</h4><p id="sourceSupport"></p></article>
+          <article><h4 id="limitHead">비지지 범위</h4><p id="sourceLimit"></p></article>
+          <article><h4 id="unknownHead">미확인</h4><p id="sourceUnknown"></p></article>
+        </div>
+        <label for="labNotes" id="notesLabel">반례·경쟁설명 (선택)</label>
+        <textarea id="labNotes" maxlength="480" rows="3"></textarea>
+        <p class="tiny" id="labPrivacy">판단·메모는 이 화면 안에서만 유지.</p>
+        <div class="lab-actions">
+          <button type="button" class="btn primary" id="issueTransfer">제보 초안으로 옮기기</button>
+          <button type="button" class="btn secondary" id="copyAIPrompt">AI 독립검증 요청문 복사</button>
+        </div>
+        <p class="tiny" id="copyStatus" role="status"></p>
+      </div>
+    </section>
+    <section class="panel" data-panel="join" aria-labelledby="joinTitle" hidden>
+      <div class="sectionhead"><p class="eyebrow">04 / PARTICIPATE</p><h2 id="joinTitle">질문·반례·자료 제보</h2><p id="joinIntro">찬성 의견보다 반증, 선행 원저자 자료, 재현 실패를 우선 수집.</p></div>
+      <form id="issueForm" class="issue-form">
+        <label id="typeLabel" for="issueType">기여 유형</label>
+        <select id="issueType" required>
+          <option value="counterexample">반례 / Counterexample</option>
+          <option value="priorart">원저자 선행연구 / Prior art</option>
+          <option value="repro">재현 결과 / Reproduction</option>
+          <option value="correction">출처·표기 오류 / Correction</option>
+          <option value="question">연구 질문 / Question</option>
+        </select>
+        <label id="subjectLabel" for="subject">제목</label>
+        <input id="subject" maxlength="90" required autocomplete="off" placeholder="핵심 주장·자료명·오류를 한 줄로">
+        <label id="descriptionLabel" for="description">설명 / 반증 가능 조건</label>
+        <textarea id="description" maxlength="800" required rows="5" placeholder="관측, 원자료, 경쟁 가설, 미확인 사항을 구분"></textarea>
+        <label id="sourceLabel" for="source">출처 URL 또는 DOI (선택)</label>
+        <input id="source" maxlength="280" autocomplete="off" placeholder="https://... / DOI">
+        <p class="privacy" id="privacyNotice">제출하면 공개 GitHub Issue 작성 화면으로 이동. 로그인 필요. 의료·금융정보·비공개 대화·개인식별정보·비밀번호 입력 금지. 자동 제출되지 않음.</p>
+        <button type="submit" class="btn primary wide" id="submitBtn">GitHub에서 제보 검토·제출 ↗</button>
+      </form>
+      <a class="review-link" id="reviewLink" href="https://github.com/gmodrasa7-rgb/project-intersection-public/issues/new?template=independent-replication.md" target="_blank" rel="noopener noreferrer">전문가용 독립 재현·비판 양식 ↗</a>
+    </section>
+  </main>
+  <footer>
+    <p id="footerNote">Project Intersection · 모바일 길잡이 v0.2.0 · 2026-10-21 기준 요약. 출처는 공개 저장소. 민감정보·비공개 실록을 포함하지 않음.</p>
+    <a id="repoLink" href="https://github.com/gmodrasa7-rgb/project-intersection-public" target="_blank" rel="noopener noreferrer">공개 저장소 ↗</a>
+  </footer>
+</body>
+</html>

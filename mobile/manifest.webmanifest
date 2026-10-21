@@ -1,0 +1,32 @@
+{
+  "id": "./",
+  "name": "Project Intersection | Mobile Research",
+  "short_name": "PI Research",
+  "description": "Mobile guide for public research on voluntary coexistence, evidence, and independent contributions",
+  "lang": "ko",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#071524",
+  "theme_color": "#10223b",
+  "icons": [
+    {
+      "src": "./icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
