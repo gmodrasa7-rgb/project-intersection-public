@@ -60,11 +60,11 @@
     },
     {
       "path": "knowledge/language-edition-register.json",
-      "git_blob_sha": "b3050ce143503205dbf80b507c710f2c69fb34cf"
+      "git_blob_sha": "85ad3050cb8d07f2b54eee9b15877433dfd66cf0"
     },
     {
       "path": "navigation/RESEARCH_VERSIONS_EN_KO.md",
-      "git_blob_sha": "4bed45c6a76308e0f2fd645bd45af701bacc67ac"
+      "git_blob_sha": "591e3331f17540b8d7646b1ff0dcca0cadd0e924"
     },
     {
       "path": "tools/pi_rise_manifest_guard.py",
