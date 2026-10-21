@@ -1,6 +1,6 @@
 {
   "schema_version": "0.2.0",
-  "registry_document_version": "0.3.0",
+  "registry_document_version": "0.3.1",
   "snapshot_date": "2026-10-22",
   "main_basis_commit": "8ffed050b4a77dfddfd9de77736e5411eb1f9414",
   "audit_scope": "Selected public main files and public PR metadata only. Does not inventory private documents or certify complete historical source coverage.",
@@ -103,7 +103,7 @@
       "evidence_state": "HYPOTHESIS_AND_PRIOR_ART_ONLY",
       "source": "research/INDIVIDUAL_RESEARCH_VERSION_BASELINES_V0_1_0.json",
       "candidate_pr": null,
-      "current_source_blob_sha": "674d069939c97ea425ec654b119b8dd290161057"
+      "current_source_blob_sha": "95519ebd63ffb73627ac2237f13f0c402a8f5fe8"
     },
     {
       "id": "RGBM",
@@ -116,7 +116,7 @@
       "evidence_state": "HYPOTHESIS_AND_PRIOR_ART_ONLY",
       "source": "research/INDIVIDUAL_RESEARCH_VERSION_BASELINES_V0_1_0.json",
       "candidate_pr": null,
-      "current_source_blob_sha": "674d069939c97ea425ec654b119b8dd290161057"
+      "current_source_blob_sha": "95519ebd63ffb73627ac2237f13f0c402a8f5fe8"
     },
     {
       "id": "CCPH",
@@ -181,7 +181,7 @@
       "evidence_state": "HYPOTHESIS_AND_PRIOR_ART_ONLY",
       "source": "research/INDIVIDUAL_RESEARCH_VERSION_BASELINES_V0_1_0.json",
       "candidate_pr": null,
-      "current_source_blob_sha": "674d069939c97ea425ec654b119b8dd290161057"
+      "current_source_blob_sha": "95519ebd63ffb73627ac2237f13f0c402a8f5fe8"
     },
     {
       "id": "DCA-1",
@@ -272,7 +272,7 @@
       "evidence_state": "HYPOTHESIS_AND_PRIOR_ART_ONLY",
       "source": "research/INDIVIDUAL_RESEARCH_VERSION_BASELINES_V0_1_0.json",
       "candidate_pr": null,
-      "current_source_blob_sha": "674d069939c97ea425ec654b119b8dd290161057"
+      "current_source_blob_sha": "95519ebd63ffb73627ac2237f13f0c402a8f5fe8"
     },
     {
       "id": "PI-NONMALICIOUS-EXPLOITATION",
@@ -285,7 +285,7 @@
       "evidence_state": "HYPOTHESIS_AND_PRIOR_ART_ONLY",
       "source": "research/INDIVIDUAL_RESEARCH_VERSION_BASELINES_V0_1_0.json",
       "candidate_pr": null,
-      "current_source_blob_sha": "674d069939c97ea425ec654b119b8dd290161057"
+      "current_source_blob_sha": "95519ebd63ffb73627ac2237f13f0c402a8f5fe8"
     },
     {
       "id": "PI-INCENTIVE-CROSSOVER",
@@ -298,7 +298,7 @@
       "evidence_state": "HYPOTHESIS_AND_PRIOR_ART_ONLY",
       "source": "research/INDIVIDUAL_RESEARCH_VERSION_BASELINES_V0_1_0.json",
       "candidate_pr": null,
-      "current_source_blob_sha": "674d069939c97ea425ec654b119b8dd290161057"
+      "current_source_blob_sha": "95519ebd63ffb73627ac2237f13f0c402a8f5fe8"
     },
     {
       "id": "PI-COUNTERFACTUAL-FUTURE",
@@ -311,7 +311,7 @@
       "evidence_state": "HYPOTHESIS_AND_PRIOR_ART_ONLY",
       "source": "research/INDIVIDUAL_RESEARCH_VERSION_BASELINES_V0_1_0.json",
       "candidate_pr": null,
-      "current_source_blob_sha": "674d069939c97ea425ec654b119b8dd290161057"
+      "current_source_blob_sha": "95519ebd63ffb73627ac2237f13f0c402a8f5fe8"
     },
     {
       "id": "PI-DEVELOPMENT-PATHWAYS",
@@ -324,7 +324,7 @@
       "evidence_state": "HYPOTHESIS_AND_PRIOR_ART_ONLY",
       "source": "research/INDIVIDUAL_RESEARCH_VERSION_BASELINES_V0_1_0.json",
       "candidate_pr": null,
-      "current_source_blob_sha": "674d069939c97ea425ec654b119b8dd290161057"
+      "current_source_blob_sha": "95519ebd63ffb73627ac2237f13f0c402a8f5fe8"
     }
   ],
   "snapshot_kind": "CURATED_CURRENT_STATUS_NOT_A_RELEASE_TAG",
@@ -356,5 +356,13 @@
   },
   "revision_note_registry_v0_2_1": "2026-10-22: Attest MER/EI v0.1.0 parent versions and PI-RAMP v0.7.0 on public main using exact blob SHAs; add ICM term collision boundary. No science, grant, field observation, private-source publication or independent replication promoted.",
   "initial_individual_study_manifest": "research/INDIVIDUAL_RESEARCH_VERSION_BASELINES_V0_1_0.json",
-  "revision_note_individual_initial_v0_1_0": "Eight distinct research-question component baselines assigned at 0.1.0 from existing public source documents; DCA-0 historical 0.1 label preserved; ICM collision disambiguated; not a new study result, universal finding, field evidence, novelty determination or independent replication. ECR v1.4 remains unmerged."
+  "revision_note_individual_initial_v0_1_0": "Eight distinct research-question component baselines assigned at 0.1.0 from existing public source documents; DCA-0 historical 0.1 label preserved; ICM collision disambiguated; not a new study result, universal finding, field evidence, novelty determination or independent replication. ECR v1.4 remains unmerged.",
+  "research_priority_matrix": {
+    "path": "research/INDIVIDUAL_RESEARCH_PRIORITY_VERSION_MATRIX_V0_1_0.json",
+    "version": "0.1.0",
+    "number_of_ranked_individual_studies": 24,
+    "priority_scope": "PLANNING_ONLY",
+    "semver_changes_from_priority_reorder": false
+  },
+  "revision_note_priority_matrix_v0_1_0": "Planning P0–P3, necessity N1–N5, difficulty D1–D5 added to existing versions of 24 individual research topics. Rank does not change scientific evidence or automatically advance a component's SemVer. ECR draft/private OCP separated."
 }
