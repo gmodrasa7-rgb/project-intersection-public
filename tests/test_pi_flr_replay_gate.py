@@ -156,7 +156,7 @@ class ReplayGateTests(unittest.TestCase):
         self.assertEqual(p["check_ids"],["FLR_ALL_TESTS","FLR_META"])
 
     def test_delete_and_rename_both_ends_observed(self):
-        transcript="D\\0README.md\\0R100\\0research/old.md\\0research/new.md\\0"
+        transcript="D\0README.md\0R100\0research/old.md\0research/new.md\0"
         seen=[]
         def fake(args,**kwargs):
             seen.append(args)
@@ -170,14 +170,14 @@ class ReplayGateTests(unittest.TestCase):
 
     def test_git_rename_missing_second_path_fails_closed(self):
         def fake(args,**kwargs):
-            return SimpleNamespace(returncode=0,stdout="R100\\0old.py\\0" if
+            return SimpleNamespace(returncode=0,stdout="R100\0old.py\0" if
                                    "--name-status" in args else "hash")
         with self.assertRaisesRegex(rg.ReplayError,"DIFF_RECORD_TRUNCATED"):
             rg.git_changed_paths("a"*40,run=fake)
 
     def test_no_git_diff_claim_without_nul_terminator(self):
         def fake(args,**kwargs):
-            return SimpleNamespace(returncode=0,stdout="M\\0tools/script.py" if
+            return SimpleNamespace(returncode=0,stdout="M\0tools/script.py" if
                                    "--name-status" in args else "hash")
         with self.assertRaisesRegex(rg.ReplayError,"DIFF_FORMAT_INVALID"):
             rg.git_changed_paths("a"*40,run=fake)
