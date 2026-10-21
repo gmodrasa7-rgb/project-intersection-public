@@ -613,14 +613,14 @@
     }
   ],
   "metrics": {
-    "markdown_total": 242,
+    "markdown_total": 250,
     "filename_classes": {
       "UNMARKED_LANGUAGE_UNVERIFIED": 46,
       "LEGACY_MIXED_READER_ENTRY": 2,
-      "KO_SUFFIX_UNVERIFIED": 111,
-      "EN_SUFFIX_UNVERIFIED": 41,
+      "KO_SUFFIX_UNVERIFIED": 114,
+      "EN_SUFFIX_UNVERIFIED": 44,
       "ORDERED_BILINGUAL_FOUNDER_OR_GOVERNANCE": 2,
-      "COMBINED_NAMING_UNVERIFIED": 40
+      "COMBINED_NAMING_UNVERIFIED": 42
     },
     "meaning_verified_pairs": 0,
     "meaning_verified_pairs_is_a_status_count_not_a_claim_that_no_reviews_ever_occurred": true
@@ -1808,6 +1808,40 @@
       "content_equivalence": "NOT_REVIEWED"
     },
     {
+      "path": "research/PI_PACD_OCG_V0_1_0_EN.md",
+      "filename_class": "EN_SUFFIX_UNVERIFIED",
+      "content_equivalence": "NOT_REVIEWED",
+      "counterpart_path": "research/PI_PACD_OCG_V0_1_0_KO.md"
+    },
+    {
+      "path": "research/PI_PACD_OCG_V0_1_0_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "content_equivalence": "NOT_REVIEWED",
+      "counterpart_path": "research/PI_PACD_OCG_V0_1_0_EN.md"
+    },
+    {
+      "path": "research/PI_PACD_POWER_ACCUMULATION_CONVERGENCE_DYNAMICS_V0_1_0_EN_KO.md",
+      "filename_class": "COMBINED_NAMING_UNVERIFIED",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "research/PI_PACD_PRS_V0_1_0_EN.md",
+      "filename_class": "EN_SUFFIX_UNVERIFIED",
+      "content_equivalence": "NOT_REVIEWED",
+      "counterpart_path": "research/PI_PACD_PRS_V0_1_0_KO.md"
+    },
+    {
+      "path": "research/PI_PACD_PRS_V0_1_0_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "content_equivalence": "NOT_REVIEWED",
+      "counterpart_path": "research/PI_PACD_PRS_V0_1_0_EN.md"
+    },
+    {
+      "path": "research/PI_POWER_MOTIVE_AI_FEEDBACK_2026-10-21_EN_KO.md",
+      "filename_class": "COMBINED_NAMING_UNVERIFIED",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
       "path": "research/PI_ROADMAP_CHANGE_TRAP_V0_2_1_EN_KO.md",
       "filename_class": "COMBINED_NAMING_UNVERIFIED",
       "counterpart_path": null,
@@ -2076,6 +2110,18 @@
       "filename_class": "KO_SUFFIX_UNVERIFIED",
       "counterpart_path": "research/TERMINOLOGY_FIVE_AXES_V0_1_EN.md",
       "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "research/WIL_WORLD_INEQUALITY_SOURCE_ATLAS_2026-10-21_EN.md",
+      "filename_class": "EN_SUFFIX_UNVERIFIED",
+      "content_equivalence": "NOT_REVIEWED",
+      "counterpart_path": "research/WIL_WORLD_INEQUALITY_SOURCE_ATLAS_2026-10-21_KO.md"
+    },
+    {
+      "path": "research/WIL_WORLD_INEQUALITY_SOURCE_ATLAS_2026-10-21_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "content_equivalence": "NOT_REVIEWED",
+      "counterpart_path": "research/WIL_WORLD_INEQUALITY_SOURCE_ATLAS_2026-10-21_EN.md"
     }
   ],
   "reader_surface_sample": {
@@ -2586,6 +2632,22 @@
       "new_edition_pairs": 0,
       "editorial_notes": "A concurrent main-branch C16 Korean-only primary-literature working record entered during PR #316 CI; registered its path only; scientific, citation and translation reviews remain unverified.",
       "reviewer_actions": "Review primary source provenance, original-text access and future bilingual routes independently."
+    },
+    {
+      "date": "2026-10-21",
+      "event": "C17_PACD_AND_CONCURRENT_WIL_LANGUAGE_INVENTORY_REPAIR",
+      "registered_paths": [
+        "research/PI_PACD_OCG_V0_1_0_EN.md",
+        "research/PI_PACD_OCG_V0_1_0_KO.md",
+        "research/PI_PACD_POWER_ACCUMULATION_CONVERGENCE_DYNAMICS_V0_1_0_EN_KO.md",
+        "research/PI_PACD_PRS_V0_1_0_EN.md",
+        "research/PI_PACD_PRS_V0_1_0_KO.md",
+        "research/PI_POWER_MOTIVE_AI_FEEDBACK_2026-10-21_EN_KO.md",
+        "research/WIL_WORLD_INEQUALITY_SOURCE_ATLAS_2026-10-21_EN.md",
+        "research/WIL_WORLD_INEQUALITY_SOURCE_ATLAS_2026-10-21_KO.md"
+      ],
+      "scope": "Inventory-only bookkeeping to reconcile existing main-branch markdown files; no proof of translation parity, evidence validity or authorship.",
+      "validation": "INVENTORY_REGISTRATION_ONLY"
     }
   ],
   "path_layout_policy": "Keep the project root entry-only; bilingual full research editions live in existing research/ and their original historical combined documents retain stable root URLs."
