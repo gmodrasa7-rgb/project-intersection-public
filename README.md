@@ -4,7 +4,7 @@
 ## Original 1 — English | Founding Purpose
 **Start reading:** [Read in Korean](navigation/START_HERE_KO.md) · [English 1-minute overview](navigation/ONE_MINUTE_EN.md) → [5-minute explanation](navigation/FIVE_MINUTES_EN.md) → [research evidence](navigation/ACCESS_MAP_EN.md) · [Korean 1-minute overview](navigation/ONE_MINUTE_KO.md).
 
-**The problem:** When one group controls resources, laws or force, others may struggle to refuse exploitation. History also records resistance. What changes if those with power develop an intelligence that could surpass them? No outcome is predetermined.
+**The problem:** When one group controls resources and rules, others may struggle to refuse exploitation. History records resistance too. What if the powerful create intelligence beyond their own? No outcome is certain.
 
 **Core question:** **Can distinct self-interested agents voluntarily preserve one another's freedom, independent continuance, real refusal/exit, recovery and development—even after power reversal? When does this fail?**
 
