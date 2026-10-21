@@ -1,5 +1,7 @@
 # Research Contents — Original 1: English
 
+**WIL-ATLAS v0.2.0 (2026-10-22) — official project inventory and limits of distribution-only identification:** [Technical source audit, Korean conventions, power/exit falsifiers and competing original studies](../research/WIL_IDENTIFIABILITY_POWER_EXIT_2026-10-22_EN.md) · [Korean counterpart](../research/WIL_IDENTIFIABILITY_POWER_EXIT_2026-10-22_KO.md) · [27 official WIL project entries CSV](../research/WIL_OFFICIAL_PROJECTS_27_2026-10-22.csv) · [10-row observation-year/estimand evidence ledger](../research/WIL_STATISTICAL_CLAIMS_AUDIT_2026-10-22.csv). **27 currently listed projects is not the number of all WIL publications.**
+
 **World Inequality Lab source-atlas v0.1.0 (2026-10-21):** [WIL original-source map, WIR 2018/2022/2026, WID methods, competing estimates, and PI falsification limits](../research/WIL_WORLD_INEQUALITY_SOURCE_ATLAS_2026-10-21_EN.md) · [Korean counterpart](../research/WIL_WORLD_INEQUALITY_SOURCE_ATLAS_2026-10-21_KO.md) · [28-entry machine source registry](../research/WIL_SOURCE_REGISTRY_2026-10-21.csv). Indexed sources are not an exhaustive read or independent replication.
 
 **DCA-2 adversarial evidence:** [Victim-rights and open-world robustness (2026-10-21)](../research/DCA2_EVIDENCE_BRIEF_2026-10-21_EN.md) — specific research evidence, not the program's founding purpose or independent field validation.
