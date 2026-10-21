@@ -9,6 +9,7 @@ assert(html.includes('id="tabLab"') && html.includes('id="labOutcome"'));
 assert(html.includes('id="rightsTitle"') && html.includes('id="rightsLabor"'),"cost/right notice missing");
 assert(html.includes('value="repro" disabled'),"unpaid replication option must be disabled");
 assert(!html.includes('id="reviewLink" href='),"remove unpaid expert replication call");
+assert(!html.includes('id="issueTransfer"') && !read("review-lab.js").includes("issueTransfer"),"learning cannot be converted into a contribution draft");
 assert(js.includes('if(type==="repro")'),"runtime reproduction guard missing");
 assert(js.includes("rightsNoPay") && js.includes("rightsExit"),"credit, compensation and exit notice missing");
 assert(js.includes("Participant terms: unsolicited small note"),"public issue terms disclosure missing");

@@ -60,3 +60,5 @@ Enable GitHub Pages with GitHub Actions as its publishing source. After merge, `
 - CARE, *Principles for Indigenous Data Governance*, developed for the specific historical and political context of Indigenous data sovereignty. Cited as a comparative framework for collective benefit and authority, not a universally applicable legal rule. https://doi.org/10.5334/dsj-2020-043
 
 **Unverified:** real user outcomes, fairness of future payment, enforceable copyright and withdrawal rights. CI success does not certify ethical practice.
+
+**Additional v0.2.1 boundary:** The case exercise no longer creates or transfers a GitHub submission draft. Educational responses cannot be converted into project contributions from this panel. The optional AI review prompt is copied for personal use only; no model invocation or transmission occurs.
