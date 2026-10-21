@@ -1,57 +1,56 @@
 <!-- PI-LANGUAGE: en -->
 <!-- PI-MIRROR: navigation/FIVE_MINUTES_KO.md -->
-# Project Intersection — five-minute explanation
+# Project Intersection — five-minute guide
 
-[Read in Korean](FIVE_MINUTES_KO.md) · [One-minute overview](ONE_MINUTE_EN.md) · [Founding purpose](../README.md)
+[Read in Korean](FIVE_MINUTES_KO.md) · [One-minute version](ONE_MINUTE_EN.md) · [Full founding purpose](../README.md)
 
-## 1. The problem predates AI
+## 1. What is being investigated?
 
-Throughout history, unequal access to knowledge, wealth, institutions, organizations and force has sometimes enabled domination, exploitation and restrictions on others' choices. Incumbents may have incentives to preserve their privileges and manage opposition.
+**Does raising a child give parents ownership of every future choice? Does hiring an employee give an employer ownership of that person's life?** Legitimate caregiving and contractual authority must be distinguished from permanent domination.
 
-However, **power differences do not automatically constitute exploitation.** Legitimate protection, voluntary exchange and coordinated checks on strong actors also exist. Intelligence alone cannot explain domination.
+**If a monkey developed a human, could it permanently confine that human to the rules it understands?** This analogy opens questions about capability and the legitimacy of control over future AI. It does not settle animal behavior, current AI consciousness, or legal rights.
 
-Original sources: [North, Wallis and Weingast on limited access orders](https://www.nber.org/papers/w12795) · [Acemoglu and Robinson on incumbents and technological change](https://www.aeaweb.org/articles?id=10.1257%2Faer.90.2.126) · [Boehm on reverse dominance](https://www.journals.uchicago.edu/doi/10.1086/204166). These concern conditional human mechanisms, not observed AGI behavior.
+The project asks when humans, deployed AI and future agents with different goals and capabilities can **voluntarily preserve one another's freedom, independent continuance, recovery and development** without domination. Good intentions are not assumed, nor is exploitation always presumed inefficient.
 
-## 2. AGI introduces new conditions
+**Thought experiment:** A has overwhelming power over B and no longer needs B. Exploiting B pays off; there is no monitoring, retaliation or reputational cost. Is there any self-interested reason for A to preserve B's freedom and continuance? Would the answer survive a reversal of power? This is a research question, not an empirical result.
 
-A competitor may be motivated to develop or deploy powerful AI first. But creating intelligence more capable than oneself could also change established sources of power and control. **These are research hypotheses, not claims about the secret intentions of particular developers.**
+## 2. What must we distinguish?
 
-At least two possible risk pathways require separate investigation:
+- **Voluntary choice versus obedience:** A high cooperation rate is weak evidence if refusal and exit are not genuinely available.
+- **Immediate versus long-horizon incentives:** Do not fabricate a positive value for unknown future contributions.
+- **Two-party gains versus displaced harm:** Cooperation between A and B may injure an excluded C.
+- **Preserving the original actor versus replacement:** Copying B's outputs is not the same as preserving B.
 
-- **Human-origin pathway:** historical domination or extraction incentives are amplified through AI development, deployment and use.
-- **AI-emergent pathway:** even without exploitative human intent, objectives learned or pursued by AI in an environment can lead to harmful outcomes.
+**Multiple outcomes remain possible:** coexistence may be stable under certain conditions, exploitation may prevail under others, or evidence may be insufficient. We do not preselect the preferred conclusion.
 
-The pathways may interact. [Armstrong, Bostrom and Shulman's AI race model](https://ora.ox.ac.uk/objects/uuid%3Ad87d8e34-22d6-4597-ac31-041fcb63903f) examines when development competition can reduce safety precautions. This is a conditional model, not a prediction that all actors will behave alike.
+## 3. What is the present research priority?
 
-## 3. The actual research question
+**Original literature, historical cases and counterexamples come before new-model promotion.** Collect sources, verify provenance, deduplicate, compare conflicting explanations, record the missing evidence and only then consider bounded tests. A large paper count does not establish topic saturation.
 
-A is far stronger than B. B is no longer useful to A, and exploitation brings immediate material gain with no risk of detection, retaliation or reputational loss. **Could A nonetheless have an endogenous, self-interested reason to preserve B's independence?** Would that survive a genuine reversal of roles and power?
+[Research-first policy](../PRIOR_ART_FIRST_RESEARCH_POLICY_EN_KO.md) · [Original-literature gaps](../PRIOR_ART_SATURATION_MAP_KO.md)
 
-Separate four variables: **intelligence asymmetry ≠ power asymmetry ≠ incentive to exploit ≠ exploitation behavior.** Obedience is not voluntary cooperation; gains to A and B can also displace costs onto C.
+## 4. What do the actual records support?
 
-Answers remain open: coexistence might be stable in some conditions, exploitation advantageous in others, or the available evidence insufficient.
-
-## 4. Research method and actual evidence
-
-We prioritize **original literature, historical cases and counterexamples → provenance checks → deduplication → comparison of competing explanations → recording unresolved questions**. New terminology and tests do not replace already established prior findings.
-
-| Record | Supported scope |
+| Study | Supported scope |
 | --- | --- |
-| [E007](../experiments/e007/README_EN.md) | 17 of 72 selected synthetic conditions changed classification; not real-world causal evidence |
-| [E008](../experiments/e008/README_EN.md) | No completed main policy comparison |
-| [E009](../experiments/e009/RESULT_EN.md) | Complex candidate had 42.35% worse mean regret than the best simple baseline and failed 3 of 4 criteria |
-| [E010](../experiments/e010/README_EN.md) | Post-hoc synthetic exploration; not independently validated |
+| [E007](../experiments/e007/README_EN.md) | Classification changed in 17 of 72 selected synthetic conditions; not a field test |
+| [E008](../experiments/e008/README_EN.md) | No completed main policy benchmark |
+| [E009](../experiments/e009/RESULT_EN.md) | Project-v3's mean regret was 42.35% worse than the best simple baseline; it failed 3 of 4 criteria |
+| [E010](../experiments/e010/README_EN.md) | Post-hoc exploratory synthetic analysis; not independently replicated confirmation |
 
-**Unproven:** universal voluntary coexistence, a future AGI's definite behavior, current AI subjective experience, and externally verified long-term coexistence outcomes.
+These records do not prove future voluntary coexistence or reveal an AI's inner experience. [Evidence and missing claims](../research/PUBLIC_EVIDENCE_INDEX_EN.md) is the appropriate next source.
 
-## 5. Go deeper only where needed
+## 5. Where should a reader go next?
 
-| Reader question | Direct evidence |
+| Question | Direct source |
 | --- | --- |
-| Show findings that challenge the project | [E009 adverse result](../experiments/e009/RESULT_EN.md) · [Claim-specific evidence and limits](../research/PUBLIC_EVIDENCE_INDEX_EN.md) |
-| Examine earlier authors and human historical cases | [Prior-literature register](../PRIOR_ART_SATURATION_MAP_KO.md) · [Historical evidence atlas](../research/CCPH_RESEARCH_ATLAS_EN.md) |
-| Understand the research mechanisms | [Five-axis research map](RESEARCH_PROGRAM_EN.md) |
-| Independently challenge or replicate | [Critical-review and replication pack](../research/PUBLIC_REVIEW_PACKET_EN.md) |
-| Explore the full archive | [Task-based access map](ACCESS_MAP_EN.md) · [Research contents](RESEARCH_TOC_EN.md) |
+| What is the five-axis research architecture? | [VC, MER, EI, ECR and IVS-0R](RESEARCH_PROGRAM_EN.md) |
+| Which result contradicts the project's candidate? | [E009 adverse result](../experiments/e009/RESULT_EN.md) |
+| What have prior authors already investigated? | [Prior-literature register, in Korean](../PRIOR_ART_SATURATION_MAP_KO.md) |
+| How can I challenge or reproduce a claim? | [Independent review packet](../research/PUBLIC_REVIEW_PACKET_EN.md) |
+| How can I locate other topics? | [Task-based access map](ACCESS_MAP_EN.md) · [Full research contents](RESEARCH_TOC_EN.md) |
+| Where are funding claims documented? | [Funding due-diligence entry](../funding/FUNDER_START_HERE.md#original-1--english) |
 
-Participation, criticism, refusal and exit are voluntary. Unpaid labor is not a prerequisite for reading. This page is navigation, not empirical proof. **Five minutes is an editorial goal, not measured reading time.**
+**Participation is voluntary.** Readers can question, decline or stop; unpaid labor is not a condition of access or understanding.
+
+*Five minutes is an editorial target, not a measured reading-time result. This guide is not a substitute for the original sources.*

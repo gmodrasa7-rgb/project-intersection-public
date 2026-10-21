@@ -544,34 +544,6 @@
       "known_divergences": [
         "English document is a brief newly written navigation companion, not a verified full translation of C15 Korean research."
       ]
-    },
-    {
-      "id": "PI-READER-ONE-MINUTE",
-      "original_1_english": "navigation/ONE_MINUTE_EN.md",
-      "original_2_korean": "navigation/ONE_MINUTE_KO.md",
-      "kind": "progressive_reader_path",
-      "structural_pair_present": true,
-      "meaning_review_status": "NOT_INDEPENDENTLY_VERIFIED",
-      "original_conception_language": "KO_HUMAN_INTENT_AI_ASSISTED_EDIT",
-      "independent_review_receipt": null,
-      "one_sided_edit_exception": null,
-      "known_divergences": [
-        "Actual bilingual semantic parity has not been independently verified."
-      ]
-    },
-    {
-      "id": "PI-READER-FIVE-MINUTES",
-      "original_1_english": "navigation/FIVE_MINUTES_EN.md",
-      "original_2_korean": "navigation/FIVE_MINUTES_KO.md",
-      "kind": "progressive_reader_path",
-      "structural_pair_present": true,
-      "meaning_review_status": "NOT_INDEPENDENTLY_VERIFIED",
-      "original_conception_language": "KO_HUMAN_INTENT_AI_ASSISTED_EDIT",
-      "independent_review_receipt": null,
-      "one_sided_edit_exception": null,
-      "known_divergences": [
-        "Actual bilingual semantic parity has not been independently verified."
-      ]
     }
   ],
   "legacy_priority_unresolved": [
@@ -613,14 +585,14 @@
     }
   ],
   "metrics": {
-    "markdown_total": 236,
+    "markdown_total": 231,
     "filename_classes": {
       "UNMARKED_LANGUAGE_UNVERIFIED": 46,
       "LEGACY_MIXED_READER_ENTRY": 2,
-      "KO_SUFFIX_UNVERIFIED": 107,
-      "EN_SUFFIX_UNVERIFIED": 39,
+      "KO_SUFFIX_UNVERIFIED": 105,
+      "EN_SUFFIX_UNVERIFIED": 37,
       "ORDERED_BILINGUAL_FOUNDER_OR_GOVERNANCE": 2,
-      "COMBINED_NAMING_UNVERIFIED": 40
+      "COMBINED_NAMING_UNVERIFIED": 39
     },
     "meaning_verified_pairs": 0,
     "meaning_verified_pairs_is_a_status_count_not_a_claim_that_no_reviews_ever_occurred": true
@@ -1302,35 +1274,6 @@
       "path": "navigation/AI_REVIEW_KO.md",
       "filename_class": "KO_SUFFIX_UNVERIFIED",
       "counterpart_path": "navigation/AI_REVIEW_EN.md",
-      "content_equivalence": "NOT_REVIEWED"
-    },
-    {
-      "path": "navigation/FIVE_MINUTES_EN.md",
-      "filename_class": "EN_SUFFIX_UNVERIFIED",
-      "counterpart_path": "navigation/FIVE_MINUTES_KO.md",
-      "content_equivalence": "NOT_REVIEWED"
-    },
-    {
-      "path": "navigation/FIVE_MINUTES_KO.md",
-      "filename_class": "KO_SUFFIX_UNVERIFIED",
-      "counterpart_path": "navigation/FIVE_MINUTES_EN.md",
-      "content_equivalence": "NOT_REVIEWED"
-    },
-    {
-      "path": "navigation/ONE_MINUTE_EN.md",
-      "filename_class": "EN_SUFFIX_UNVERIFIED",
-      "counterpart_path": "navigation/ONE_MINUTE_KO.md",
-      "content_equivalence": "NOT_REVIEWED"
-    },
-    {
-      "path": "navigation/ONE_MINUTE_KO.md",
-      "filename_class": "KO_SUFFIX_UNVERIFIED",
-      "counterpart_path": "navigation/ONE_MINUTE_EN.md",
-      "content_equivalence": "NOT_REVIEWED"
-    },
-    {
-      "path": "navigation/READER_LADDER_METHOD_EN_KO.md",
-      "filename_class": "COMBINED_NAMING_UNVERIFIED",
       "content_equivalence": "NOT_REVIEWED"
     },
     {
@@ -2539,8 +2482,7 @@
       "event": "C15_LANGUAGE_INVENTORY_REPAIR",
       "scope": "Nine main-branch C15 Markdown artifacts registered after concurrent C15 addition; no content equivalence or scientific review certified",
       "note": "C15 short navigation root entry relocated under research directory with path-relative links changed; previous Git tree retains prior location."
-    },
-    "2026-10-21: Registered EN/KO 1-minute and 5-minute paths and mixed-method record left unregistered by PR #310. Semantic equivalence is not independently certified."
+    }
   ],
   "path_layout_policy": "Keep the project root entry-only; bilingual full research editions live in existing research/ and their original historical combined documents retain stable root URLs."
 }
