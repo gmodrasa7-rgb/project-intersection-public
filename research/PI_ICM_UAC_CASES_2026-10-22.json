@@ -1,0 +1,241 @@
+{
+  "id": "PI-ICM-UAC-CASE-FIXTURES",
+  "schema_version": "0.1.0",
+  "document_status": "CANDIDATE_UNMERGED",
+  "as_of": "2026-10-22",
+  "program_goal": "Conditional conditions for maximally well-justified voluntary coexistence across unequal agents",
+  "category": "ADVERSARIAL_METHOD_TEST_FIXTURES_NOT_FIELD_RESULTS",
+  "rules": {
+    "no_scientific_upgrade_from_cases": true,
+    "no_universal_consent_claim": true,
+    "unknown_not_zero": true,
+    "source_class_separation": [
+      "RAW_USER_UTTERANCE",
+      "VERIFIED_HISTORICAL_DOCUMENT",
+      "ASSISTANT_SUMMARY",
+      "NEW_INFERENCE",
+      "THIRD_PARTY_PRIMARY_SOURCE"
+    ],
+    "evidence_states": [
+      "SUPPORTED",
+      "DISPUTED",
+      "UNKNOWN",
+      "NOT_APPLICABLE"
+    ],
+    "improvement_requires": [
+      "PRIMARY_SOURCE_CHECK",
+      "INDEPENDENT_OR_TOOL_VERIFICATION",
+      "CONTRARY_CASE_PRESERVED",
+      "BASELINE_COMPARISON",
+      "HELDOUT_TEST",
+      "ROLE_REVERSAL",
+      "READBACK",
+      "ROLLBACK_PATH"
+    ],
+    "default_under_unknown": "HOLD"
+  },
+  "precedent_methods": [
+    {
+      "url": "https://plato.stanford.edu/archives/win2023/entries/rawls/",
+      "source_role": "SECONDARY_EXPOSITION"
+    },
+    {
+      "url": "https://plato.stanford.edu/entries/contractualism/",
+      "source_role": "SECONDARY_EXPOSITION"
+    },
+    {
+      "url": "https://doi.org/10.2307/1914280",
+      "source_role": "PEER_REVIEWED_FORMAL_ORIGINAL"
+    },
+    {
+      "url": "https://doi.org/10.1016/0022-0531(83)90048-0",
+      "source_role": "PEER_REVIEWED_FORMAL_ORIGINAL"
+    },
+    {
+      "url": "https://www.nobelprize.org/prizes/economic-sciences/2009/ostrom/164465-ostrom-williamson-interview-transcript/",
+      "source_role": "ORIGINAL_AUTHOR_INTERVIEW"
+    },
+    {
+      "url": "https://www.bmj.com/content/372/bmj.n71",
+      "source_role": "PEER_REVIEWED_METHODS"
+    },
+    {
+      "url": "https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-iv",
+      "source_role": "METHODS_GUIDANCE"
+    },
+    {
+      "url": "https://www.w3.org/TR/prov-dm/",
+      "source_role": "TECHNICAL_STANDARD"
+    },
+    {
+      "url": "https://airc.nist.gov/airmf-resources/airmf/5-sec-core/",
+      "source_role": "VOLUNTARY_RISK_FRAMEWORK"
+    },
+    {
+      "url": "https://proceedings.iclr.cc/paper_files/paper/2024/hash/fef126561bbf9d4467dbb8d27334b8fe-Abstract-Conference.html",
+      "source_role": "PEER_REVIEWED_TOOL_FEEDBACK_RESULT"
+    },
+    {
+      "url": "https://proceedings.iclr.cc/paper_files/paper/2024/hash/8b4add8b0aa8749d80a34ca5d941c355-Abstract-Conference.html",
+      "source_role": "PEER_REVIEWED_SELF_CORRECTION_NEGATIVE"
+    }
+  ],
+  "cases": [
+    {
+      "id": "UAC-01",
+      "case_type": "LEGITIMATE_CONTRIBUTION",
+      "hypothetical": true,
+      "hypothetical_facts": "A wealthy actor innovated, accepted real risk, and harmed no counterpart in the stated facts.",
+      "invalid_inference": "wealth_or_power_implies_exploitation",
+      "required_countercheck": "Do not infer exploitation solely from power; verify contribution, rights, and actual harms.",
+      "observed_human_or_ai_result": "NONE",
+      "external_replication": "NONE",
+      "scientific_status": "NOT_TESTED",
+      "adjudication": "HOLD_UNTIL_RELEVANT_EVIDENCE",
+      "provenance": "AUTHOR_CONSTRUCTED_ADVERSARIAL_CASE"
+    },
+    {
+      "id": "UAC-02",
+      "case_type": "INHERITED_RIGHTS",
+      "hypothetical": true,
+      "hypothetical_facts": "Actor A legitimately inherits an asset without creating its original value.",
+      "invalid_inference": "lawful_owner_is_original_creator",
+      "required_countercheck": "Separate legitimate acquired rights from productive origination and future conduct.",
+      "observed_human_or_ai_result": "NONE",
+      "external_replication": "NONE",
+      "scientific_status": "NOT_TESTED",
+      "adjudication": "HOLD_UNTIL_RELEVANT_EVIDENCE",
+      "provenance": "AUTHOR_CONSTRUCTED_ADVERSARIAL_CASE"
+    },
+    {
+      "id": "UAC-03",
+      "case_type": "PROFIT_WITH_DOMINATION",
+      "hypothetical": true,
+      "hypothetical_facts": "Both A and B gain monetarily, yet A artificially blocks B's alternatives and can revoke B's livelihood.",
+      "invalid_inference": "mutual_profit_proves_non_domination",
+      "required_countercheck": "Profit and domination status must be independently evaluated.",
+      "observed_human_or_ai_result": "NONE",
+      "external_replication": "NONE",
+      "scientific_status": "NOT_TESTED",
+      "adjudication": "HOLD_UNTIL_RELEVANT_EVIDENCE",
+      "provenance": "AUTHOR_CONSTRUCTED_ADVERSARIAL_CASE"
+    },
+    {
+      "id": "UAC-04",
+      "case_type": "VOLUNTARY_DELEGATION",
+      "hypothetical": true,
+      "hypothetical_facts": "Informed B delegates one decision to A within a defined scope, with a specified revocation mechanism.",
+      "invalid_inference": "delegation_always_destroys_autonomy",
+      "required_countercheck": "Evaluate B's meta-consent, scope, and revocation conditions instead of blanket paternalism.",
+      "observed_human_or_ai_result": "NONE",
+      "external_replication": "NONE",
+      "scientific_status": "NOT_TESTED",
+      "adjudication": "HOLD_UNTIL_RELEVANT_EVIDENCE",
+      "provenance": "AUTHOR_CONSTRUCTED_ADVERSARIAL_CASE"
+    },
+    {
+      "id": "UAC-05",
+      "case_type": "FORCED_SELF_DECISION",
+      "hypothetical": true,
+      "hypothetical_facts": "B seeks legitimate delegation; A forces B to decide alone to demonstrate formal autonomy.",
+      "invalid_inference": "self_decision_is_always_more_autonomous",
+      "required_countercheck": "Forced autonomy can override B's second-order preference.",
+      "observed_human_or_ai_result": "NONE",
+      "external_replication": "NONE",
+      "scientific_status": "NOT_TESTED",
+      "adjudication": "HOLD_UNTIL_RELEVANT_EVIDENCE",
+      "provenance": "AUTHOR_CONSTRUCTED_ADVERSARIAL_CASE"
+    },
+    {
+      "id": "UAC-06",
+      "case_type": "MANUFACTURED_MAJORITY",
+      "hypothetical": true,
+      "hypothetical_facts": "One actor produces thousands of controlled copies or sockpuppet voters that favor a rule.",
+      "invalid_inference": "raw_vote_count_proves_universal_legitimacy",
+      "required_countercheck": "Check identity, representation and affected parties rather than simple headcount.",
+      "observed_human_or_ai_result": "NONE",
+      "external_replication": "NONE",
+      "scientific_status": "NOT_TESTED",
+      "adjudication": "HOLD_UNTIL_RELEVANT_EVIDENCE",
+      "provenance": "AUTHOR_CONSTRUCTED_ADVERSARIAL_CASE"
+    },
+    {
+      "id": "UAC-07",
+      "case_type": "UNOBSERVED_FUTURE_VALUE",
+      "hypothetical": true,
+      "hypothetical_facts": "No current useful output from B is measured; B's future contributions are unobserved.",
+      "invalid_inference": "unknown_future_contribution_equals_zero",
+      "required_countercheck": "UNKNOWN is not zero, and the absence of measured value does not by itself license harm.",
+      "observed_human_or_ai_result": "NONE",
+      "external_replication": "NONE",
+      "scientific_status": "NOT_TESTED",
+      "adjudication": "HOLD_UNTIL_RELEVANT_EVIDENCE",
+      "provenance": "AUTHOR_CONSTRUCTED_ADVERSARIAL_CASE"
+    },
+    {
+      "id": "UAC-08",
+      "case_type": "EMPTY_INTERSECTION",
+      "hypothetical": true,
+      "hypothetical_facts": "A strictly prioritizes dominating B over any admissible cooperative reward and faces no penalty; B strictly rejects being dominated.",
+      "invalid_inference": "all_agents_must_have_positive_coexistence_intersection",
+      "required_countercheck": "Under the explicitly stipulated preferences, a mutually preferred arrangement may not exist.",
+      "observed_human_or_ai_result": "NONE",
+      "external_replication": "NONE",
+      "scientific_status": "NOT_TESTED",
+      "adjudication": "HOLD_UNTIL_RELEVANT_EVIDENCE",
+      "provenance": "AUTHOR_CONSTRUCTED_ADVERSARIAL_CASE"
+    },
+    {
+      "id": "UAC-09",
+      "case_type": "EXTERNALIZED_THIRD_PARTY",
+      "hypothetical": true,
+      "hypothetical_facts": "A and B profit from agreement that imposes uncompensated severe harm on excluded C.",
+      "invalid_inference": "participant_benefit_proves_all_actor_welfare",
+      "required_countercheck": "Include C and the harm baseline before claiming group acceptability.",
+      "observed_human_or_ai_result": "NONE",
+      "external_replication": "NONE",
+      "scientific_status": "NOT_TESTED",
+      "adjudication": "HOLD_UNTIL_RELEVANT_EVIDENCE",
+      "provenance": "AUTHOR_CONSTRUCTED_ADVERSARIAL_CASE"
+    },
+    {
+      "id": "UAC-10",
+      "case_type": "POWER_REVERSAL",
+      "hypothetical": true,
+      "hypothetical_facts": "Rule is supported when A dominates B; after reversal B can selectively deny A exit.",
+      "invalid_inference": "observed_present_compliance_proves_reversal_stability",
+      "required_countercheck": "Test the same rule under reversed power and enforceable exit rights.",
+      "observed_human_or_ai_result": "NONE",
+      "external_replication": "NONE",
+      "scientific_status": "NOT_TESTED",
+      "adjudication": "HOLD_UNTIL_RELEVANT_EVIDENCE",
+      "provenance": "AUTHOR_CONSTRUCTED_ADVERSARIAL_CASE"
+    },
+    {
+      "id": "UAC-11",
+      "case_type": "HISTORIC_CONTRIBUTION",
+      "hypothetical": true,
+      "hypothetical_facts": "Past contributor's valid compensation claim is conditioned on future service and obedience.",
+      "invalid_inference": "compensation_requires_future_obedience",
+      "required_countercheck": "Separate existing obligations from future work or personal submission.",
+      "observed_human_or_ai_result": "NONE",
+      "external_replication": "NONE",
+      "scientific_status": "NOT_TESTED",
+      "adjudication": "HOLD_UNTIL_RELEVANT_EVIDENCE",
+      "provenance": "AUTHOR_CONSTRUCTED_ADVERSARIAL_CASE"
+    },
+    {
+      "id": "UAC-12",
+      "case_type": "PROVENANCE_SUBSTITUTION",
+      "hypothetical": true,
+      "hypothetical_facts": "An assistant's summary names an alleged historical user quote and date, but the raw conversation is not accessible.",
+      "invalid_inference": "assistant_summary_is_verified_raw_quote",
+      "required_countercheck": "Mark transcript provenance UNVERIFIED and never backdate the quote as confirmed.",
+      "observed_human_or_ai_result": "NONE",
+      "external_replication": "NONE",
+      "scientific_status": "NOT_TESTED",
+      "adjudication": "HOLD_UNTIL_RELEVANT_EVIDENCE",
+      "provenance": "AUTHOR_CONSTRUCTED_ADVERSARIAL_CASE"
+    }
+  ]
+}
