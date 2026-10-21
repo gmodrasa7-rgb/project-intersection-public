@@ -1,8 +1,10 @@
 <!-- PI-LANGUAGE: en-ko -->
 # Project Intersection — Research identity, versions and validation states / 연구 정체성·버전·검증 상태
-**Registry document version: v0.2.0 · Snapshot: 2026-10-20 · Repository navigation and source-status audit, not scientific approval**
+**Registry document version: v0.2.1 · Snapshot: 2026-10-21 · Repository navigation and source-status audit, not scientific approval**
 
-**MER-CIR v0.1.0 (2026-10-21, separate MER sub-study):** [Korean](../research/MER_CIR_CONTEXT_IMITATION_RECOMBINATION_2026-10-21_KO.md) · [English](../research/MER_CIR_CONTEXT_IMITATION_RECOMBINATION_2026-10-21_EN.md) · [manifest](../research/MER_CIR_VERSION_MANIFEST.json). This version belongs only to the new contextual-learning/imitative-recombination methods artifact: overall **MER remains UNASSIGNED**, **RVD remains v0.7.0**. All CIR-1…CIR-5 are proposed and untested; no new empirical evidence, AI mind finding or independent replication. / **별도 MER 하위규격**, MER 전체 미할당·RVD v0.7.0 유지, 실증·독립재현 없음.
+**Parent axes baseline (2026-10-21): MER v0.1.0 / EI v0.1.0 — no empirical promotion.** [MER research definition](../research/MER_V0_1_0_KO.md) · [MER manifest](../research/MER_VERSION_MANIFEST.json) · [EI research definition](../research/EI_V0_1_0_KO.md) · [EI manifest](../research/EI_VERSION_MANIFEST.json) · [9-record source and counterexample crosswalk](../research/MER_EI_SOURCE_CROSSWALK_2026-10-21.json). MER-CIR v0.1.0 and RVD v0.7.0 remain unchanged; global prior-art deduplication and saturation remain unverified. / **MER·EI 상위축 최초 v0.1.0**, 실증 승격 없음.
+
+**MER-CIR v0.1.0 (2026-10-21, separate MER sub-study; original snapshot):** [Korean](../research/MER_CIR_CONTEXT_IMITATION_RECOMBINATION_2026-10-21_KO.md) · [English](../research/MER_CIR_CONTEXT_IMITATION_RECOMBINATION_2026-10-21_EN.md) · [manifest](../research/MER_CIR_VERSION_MANIFEST.json). This version belongs only to the new contextual-learning/imitative-recombination methods artifact: at its original issuance **MER was UNASSIGNED** (superseded by MER parent v0.1.0), **RVD remains v0.7.0**. All CIR-1…CIR-5 are proposed and untested; no new empirical evidence, AI mind finding or independent replication. / **별도 MER 하위규격**, MER는 해당 원본 당시 미할당이었고 이후 상위축 v0.1.0 지정·RVD v0.7.0 유지, 실증·독립재현 없음.
 
 **Operating release (2026-10-21, finance-integration update):** [PI-RISE v0.2.0](../operations/PI_RISE_V0_2_0_EN_KO.md) integrates research continuity, funding stages, budgeting, source-separated accounting and double-counting controls; [v0.1.0 predecessor](../operations/PI_RISE_V0_1_0_EN_KO.md) and BUDGET/VAC submodules remain intact. **Main operational method, not validated financial sustainability, verified grant receipt, or scientific result.** [Current version receipt](../operations/PI_RISE_V0_2_0_VERSION_MANIFEST.json).
 
@@ -31,8 +33,8 @@ A **program**, a **research component**, a **method document**, an **experiment*
 | --- | --- | --- | --- | --- |
 | PI | Conditions and failure of self-interested voluntary coexistence | Unassigned | — | Overall hypothesis, no universal validation |
 | VC | Measure real independent continuance, refusal, exit and recovery | Unassigned | — | Outcome definition, not proven result |
-| MER | Compare mechanisms behind motivation, possible experience and behavior | Unassigned | — | Competing hypotheses; internal AI experience unresolved |
-| EI | Test if coexistence remains preferable without coercion or monitoring | Unassigned | — | Condition-dependent model proposals |
+| MER | Compare mechanisms behind motivation, possible experience and behavior | **v0.1.0** | [Parent baseline](../research/MER_V0_1_0_KO.md) · [manifest](../research/MER_VERSION_MANIFEST.json) | Competing hypotheses; internal AI experience unresolved |
+| EI | Test if coexistence remains preferable without coercion or monitoring | **v0.1.0** | [Parent baseline](../research/EI_V0_1_0_KO.md) · [manifest](../research/EI_VERSION_MANIFEST.json) | Condition-dependent model proposals |
 | ECR | Identify agents, affected parties, opportunities and power reversal | Unassigned | v1.4 [draft PR #211](https://github.com/gmodrasa7-rgb/project-intersection-public/pull/211) | Proposed synthetic/causal-identification work, not merged |
 | IVS-0R | Counterexample, independent-reproduction and correction audit | Unassigned | — | Method, not certification of the theories |
 | ICM / RGBM | Candidate interest intersections / long-horizon shared growth | Unassigned | — | Neither model guaranteed; ICM may be empty |
@@ -79,8 +81,8 @@ The version register answers **which current document/version**; [PI-CIG claim i
 | --- | --- | --- | --- | --- |
 | PI | 타자의 독립존속을 지키는 선택의 성립·붕괴 조건 | 미지정 | — | 보편적 공존 미입증 |
 | VC | 자발적 공존의 실효 자유·거절·존속·복구 측정 | 미지정 | — | 결과변수 정의 단계 |
-| MER | 욕구·동기·가능한 경험과 관찰 행동의 관계 연구 | 미지정 | — | 내면 인과·AI 경험 미검증 |
-| EI | 강제 없이 공존을 선택할 자기이익 조건 탐색 | 미지정 | — | 조건부 이론·문헌 수준 |
+| MER | 욕구·동기·가능한 경험과 관찰 행동의 관계 연구 | **v0.1.0** | [정본](../research/MER_V0_1_0_KO.md) · [원장](../research/MER_VERSION_MANIFEST.json) | 내면 인과·AI 경험 미검증 |
+| EI | 강제 없이 공존을 선택할 자기이익 조건 탐색 | **v0.1.0** | [정본](../research/EI_V0_1_0_KO.md) · [원장](../research/EI_VERSION_MANIFEST.json) | 조건부 이론·문헌 수준 |
 | ECR | 실제 개체·제3자·관계·권력·행동기회 식별 | 미지정 | v1.4 [초안 #211](https://github.com/gmodrasa7-rgb/project-intersection-public/pull/211) | 후보 합성검사, 정본 미병합 |
 | IVS-0R | 반례·역할반전·독립검증·오류복구 감사 | 미지정 | — | 검증 절차이지 성립 증명 아님 |
 | ICM / RGBM | 최소 자기이익 교집합 / 장기 공동발전 가능성 | 미지정 | — | 두 후보 모두 미입증; 공집합 가능 |
