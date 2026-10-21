@@ -613,11 +613,11 @@
     }
   ],
   "metrics": {
-    "markdown_total": 236,
+    "markdown_total": 237,
     "filename_classes": {
       "UNMARKED_LANGUAGE_UNVERIFIED": 46,
       "LEGACY_MIXED_READER_ENTRY": 2,
-      "KO_SUFFIX_UNVERIFIED": 107,
+      "KO_SUFFIX_UNVERIFIED": 108,
       "EN_SUFFIX_UNVERIFIED": 39,
       "ORDERED_BILINGUAL_FOUNDER_OR_GOVERNANCE": 2,
       "COMBINED_NAMING_UNVERIFIED": 40
@@ -1814,6 +1814,12 @@
       "content_equivalence": "NOT_REVIEWED"
     },
     {
+      "path": "research/PRIOR_ART_C16_MUTUALISM_ASYMMETRY_2026-10-21_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
       "path": "research/PRIOR_ART_COSTLY_RIGHTS_CYCLE09_2026-10-20_KO.md",
       "filename_class": "KO_SUFFIX_UNVERIFIED",
       "counterpart_path": null,
@@ -2540,7 +2546,17 @@
       "scope": "Nine main-branch C15 Markdown artifacts registered after concurrent C15 addition; no content equivalence or scientific review certified",
       "note": "C15 short navigation root entry relocated under research directory with path-relative links changed; previous Git tree retains prior location."
     },
-    "2026-10-21: Administrative-only backfill of v0.1.1 legacy reader documents in language inventory after PR #312 rollback; original content unchanged; independent translation parity remains unverified."
+    "2026-10-21: Administrative-only backfill of v0.1.1 legacy reader documents in language inventory after PR #312 rollback; original content unchanged; independent translation parity remains unverified.",
+    {
+      "as_of": "2026-10-21",
+      "status": "C16_CONCURRENT_MAIN_MARKDOWN_INVENTORY_BACKFILL",
+      "new_documents": [
+        "research/PRIOR_ART_C16_MUTUALISM_ASYMMETRY_2026-10-21_KO.md"
+      ],
+      "new_edition_pairs": 0,
+      "editorial_notes": "A concurrent main-branch C16 Korean-only primary-literature working record entered during PR #316 CI; registered its path only; scientific, citation and translation reviews remain unverified.",
+      "reviewer_actions": "Review primary source provenance, original-text access and future bilingual routes independently."
+    }
   ],
   "path_layout_policy": "Keep the project root entry-only; bilingual full research editions live in existing research/ and their original historical combined documents retain stable root URLs."
 }

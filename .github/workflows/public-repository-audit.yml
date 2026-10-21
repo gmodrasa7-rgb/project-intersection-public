@@ -464,10 +464,17 @@ jobs:
                   and "과거 E010 안전감사 설계초안 PR #20" in evidence,
                   "Public evidence index lost E010 collision disclosure in EN/KO.")
 
-          # Landing-page regression: keep first-review cost bounded.
-          require(len(readme.splitlines()) <= 120, "README exceeded 120 lines; detailed research belongs in the existing TOC.")
-          require(len(re.findall(r"\[[^\]]+\]\([^)]+\)", readme)) <= 75,
-                  "README exceeded 75 links; move case inventories to the existing research TOC.")
+          # Progressive landing-page gate: bounded visible entry and a capped
+          # archival source (the complete EN/KO founding originals are folded).
+          first_view = readme.split("<details>", 1)[0]
+          require(len(first_view.splitlines()) <= 24,
+                  "README first visible screen exceeded 24 lines; shorten the 15-second entry.")
+          require(len(re.findall(r"\[[^\]]+\]\([^)]+\)", first_view)) <= 7,
+                  "README first visible screen exceeded 7 links; keep the first action legible.")
+          require(len(readme.splitlines()) <= 200,
+                  "README source exceeded 200 lines; move detailed material into the research TOC.")
+          require(len(re.findall(r"\[[^\]]+\]\([^)]+\)", readme)) <= 100,
+                  "README source exceeded 100 links; avoid excessive expanded-source navigation.")
           en_route = Path("navigation/START_HERE_EN.md").read_text(encoding="utf-8")
           ko_route = Path("navigation/START_HERE_KO.md").read_text(encoding="utf-8")
           for link in [
