@@ -30,9 +30,9 @@ class FLRValidationTests(unittest.TestCase):
 
     def test_valid_initial_registry(self):
         out = flr.validate(self.record)
-        self.assertEqual(out["version"], "0.3.0")
+        self.assertEqual(out["version"], "0.4.0")
         self.assertEqual(out["cases"], 9)
-        self.assertEqual(out["controls"], 9)
+        self.assertEqual(out["controls"], 10)
 
     def test_regression_original_naming_failure(self):
         """Original FLR-0001 unnamed ledger is rejected by the real language guard."""
@@ -240,21 +240,21 @@ class FLRValidationTests(unittest.TestCase):
 
     def test_case_deletion_against_prior_version_rejected(self):
         newer = self.case()
-        newer["release_version"] = "0.3.1"
+        newer["release_version"] = "0.4.1"
         newer["cases"] = newer["cases"][1:]
         with self.assertRaisesRegex(flr.FLRError, "HISTORICAL_CASE_DELETED"):
             flr.compare_history(newer, self.record)
 
     def test_case_metadata_rewrite_against_prior_version_rejected(self):
         newer = self.case()
-        newer["release_version"] = "0.3.1"
+        newer["release_version"] = "0.4.1"
         newer["cases"][0]["root_cause"] = "silently rewritten"
         with self.assertRaisesRegex(flr.FLRError, "HISTORICAL_CASE_METADATA_REWRITTEN"):
             flr.compare_history(newer, self.record)
 
     def test_event_erasal_against_prior_version_rejected(self):
         newer = self.case()
-        newer["release_version"] = "0.3.1"
+        newer["release_version"] = "0.4.1"
         newer["cases"][0]["events"][0]["note"] = "rewritten history"
         with self.assertRaisesRegex(flr.FLRError, "HISTORICAL_EVIDENCE_REWRITTEN"):
             flr.compare_history(newer, self.record)
@@ -268,20 +268,20 @@ class FLRValidationTests(unittest.TestCase):
         newer["cases"][0]["events"].append(fresh)
         with self.assertRaisesRegex(flr.FLRError, "VERSION_BUMP_REQUIRED"):
             flr.compare_history(newer, self.record)
-        newer["release_version"] = "0.3.1"
+        newer["release_version"] = "0.4.1"
         self.assertTrue(flr.compare_history(newer, self.record))
         self.assertEqual(flr.validate(newer)["cases"], 9)
 
     def test_control_deletion_against_prior_version_rejected(self):
         newer = self.case()
-        newer["release_version"] = "0.3.1"
+        newer["release_version"] = "0.4.1"
         newer["control_registry"] = newer["control_registry"][1:]
         with self.assertRaisesRegex(flr.FLRError, "HISTORICAL_CONTROL_REMOVED"):
             flr.compare_history(newer, self.record)
 
     def test_version_only_update_rejected(self):
         newer = self.case()
-        newer["release_version"] = "0.3.1"
+        newer["release_version"] = "0.4.1"
         with self.assertRaisesRegex(flr.FLRError, "EMPTY_VERSION_BUMP"):
             flr.compare_history(newer, self.record)
 
@@ -317,6 +317,21 @@ class FLRValidationTests(unittest.TestCase):
         self.assertFalse(report["ready"])
         self.assertEqual(report["status"], "BLOCKED_FAILED")
         self.assertEqual(report["failed"], [expected[1]])
+
+
+    def test_regression_prior_art_independence_and_preflight(self):
+        """C10: duplicate source lineages must not count as independent evidence."""
+        import pi_flr_prior_art_guard as pa
+        d=json.loads((ROOT/pa.PATH).read_text(encoding="utf-8"))
+        report=pa.preflight(d,["README.md"])
+        self.assertIn("FLR-0008",report["changed_paths"][0]["past_cases"])
+        self.assertEqual(report["changed_paths"][0]["outcome"],
+                         "CHECKS_NOT_EXECUTED_BY_PREFLIGHT")
+        bad=copy.deepcopy(d)
+        bad["principles"][0]["challenge"]=[]
+        with self.assertRaisesRegex(pa.PriorArtError,"SELF_CONFIRMATION"):
+            pa.validate(bad,self.record,(ROOT/pa.WORKFLOW).read_text(encoding="utf-8"))
+
 
 
 if __name__ == "__main__":

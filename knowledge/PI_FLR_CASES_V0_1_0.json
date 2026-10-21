@@ -1,7 +1,7 @@
 {
   "registry_id": "PI-FLR",
   "schema_version": "0.1.0",
-  "release_version": "0.3.0",
+  "release_version": "0.4.0",
   "as_of": "2026-10-22",
   "korean_name": "오류·학습·복구 재귀원장",
   "english_name": "Failure–Learning–Repair Registry",
@@ -87,6 +87,13 @@
       "detector": "tools/pi_flr_conversation_audit.py::validate_release_matrix",
       "workflow": ".github/workflows/pi-flr-integrity.yml",
       "mutation_test": "test_regression_partial_green_is_not_global_release"
+    },
+    {
+      "id": "FLR-C10",
+      "title": "Prior-art lineage, counterevidence and context-specific failure preflight before recursive improvement",
+      "detector": "tools/pi_flr_prior_art_guard.py::validate;tools/pi_flr_prior_art_guard.py::preflight",
+      "workflow": ".github/workflows/pi-flr-integrity.yml",
+      "mutation_test": "test_regression_prior_art_independence_and_preflight"
     }
   ],
   "cases": [
@@ -589,7 +596,7 @@
     ],
     "invariant": "No event removed and no root-cause or attribution silently rewritten; changed interpretations via appended notes and new version.",
     "anti_proxy": "CI pass is a limited code assertion, not proof of real-world truth, financial receipt, semantic parity, universal safety, or zero future incidents.",
-    "next_expansion": "Observed failure clustering is branch-specific and never proves causation. A failed run without jobs must remain visible. Earlier rerun attempts not inspected are counted as missing evidence; a later green requires completion-before-start ordering but still never automatically closes a case. Report artifact absence fails CI. First actual scheduled-run receipt remains separately unverified until an observed run/artifact is inspected.",
+    "next_expansion": "Before future modifications apply PI-FLR prior-art transfer mapping to changed paths; source-lineage and counterevidence must be checked. Effectiveness remains NOT_OBSERVED without a field recurrence window; passing static code tests cannot auto-close cases.",
     "governance_gap": "Branch protection/required checks and administrative bypass settings are not verified in this registry."
   }
 }
