@@ -2,20 +2,22 @@
 # Project Intersection — Initial Versions for Eight Distinct Studies / 개별 연구 8개 최초 버전 부여
 **Document version: v0.1.0 · 2026-10-22 · Proposed in a pull request; not yet part of main until merged**
 
+**Planning metadata: [24-study priority, necessity, difficulty matrix](INDIVIDUAL_RESEARCH_PRIORITY_VERSION_MATRIX_V0_1_0_EN_KO.md).** P/N/D attaches to the existing version without changing the component's semantic version or its scientific evidence grade.
+
 ## Original 1 — English
 
 This administrative specification assigns **v0.1.0** to eight research questions previously lacking an independent *component* version in the public research registry. It does **not** advance the project's global version, certify novelty or scientific findings, prove voluntary coexistence, or remove earlier source histories. A component version is distinct from an experimental evidence grade and from a prior document's local version.
 
-| Stable research ID | English name | Baseline | Prior source |
-| --- | --- | --- | --- |
-| **ICM** | Intersection of Minimum Self-Interest | v0.1.0 | [source](./TERMINOLOGY_FIVE_AXES_V0_1_KO.md) |
-| **RGBM** | Recursively Growing Benefit Model | v0.1.0 | [source](./RESEARCH_OVERVIEW_KO.md) |
-| **PI-UNKNOWN-PARADOX** | Unknown Paradox | v0.1.0 | [source](./HARNESS_UNKNOWN_PARADOX_PUBLIC_HYPOTHESIS_2026-10-11_KO.md) |
-| **PI-NONMALICIOUS-EXPLOITATION** | Exploitation Without Explicit Malice | v0.1.0 | [source](./HUMAN_EXPLOITATION_WITHOUT_MALICE_PRIOR_ART_2026-10-11_KO.md) |
-| **PI-INCENTIVE-CROSSOVER** | Incentive Crossover and Failure Boundaries | v0.1.0 | [source](./RESEARCH_OVERVIEW_KO.md) |
-| **PI-COUNTERFACTUAL-FUTURE** | Lost Counterfactual Futures | v0.1.0 | [source](./CONTRIBUTOR_LOSS_UNKNOWN_PARADOX_v0_1_EN_KO.md) |
-| **PI-DEVELOPMENT-PATHWAYS** | Extractive vs Regenerative Development Pathways | v0.1.0 | [source](./RESEARCH_OVERVIEW_KO.md) |
-| **DCA-0** | Differential Coexistence Acceleration | v0.1.0 | [source](./DCA0_DIFFERENTIAL_COEXISTENCE_ACCELERATION_2026-10-20_EN_KO.md) |
+| Stable research ID | English name | Baseline + planning label | Need | Difficulty | Prior source |
+| --- | --- | --- | ---: | ---: | --- |
+| **ICM** | Intersection of Minimum Self-Interest | `v0.1.0 · P0` | N5/5 | D5/5 | [source](./TERMINOLOGY_FIVE_AXES_V0_1_KO.md) |
+| **RGBM** | Recursively Growing Benefit Model | `v0.1.0 · P1` | N4/5 | D5/5 | [source](./RESEARCH_OVERVIEW_KO.md) |
+| **PI-UNKNOWN-PARADOX** | Unknown Paradox | `v0.1.0 · P0` | N5/5 | D4/5 | [source](./HARNESS_UNKNOWN_PARADOX_PUBLIC_HYPOTHESIS_2026-10-11_KO.md) |
+| **PI-NONMALICIOUS-EXPLOITATION** | Exploitation Without Explicit Malice | `v0.1.0 · P1` | N5/5 | D3/5 | [source](./HUMAN_EXPLOITATION_WITHOUT_MALICE_PRIOR_ART_2026-10-11_KO.md) |
+| **PI-INCENTIVE-CROSSOVER** | Incentive Crossover and Failure Boundaries | `v0.1.0 · P1` | N5/5 | D5/5 | [source](./RESEARCH_OVERVIEW_KO.md) |
+| **PI-COUNTERFACTUAL-FUTURE** | Lost Counterfactual Futures | `v0.1.0 · P2` | N4/5 | D5/5 | [source](./CONTRIBUTOR_LOSS_UNKNOWN_PARADOX_v0_1_EN_KO.md) |
+| **PI-DEVELOPMENT-PATHWAYS** | Extractive vs Regenerative Development Pathways | `v0.1.0 · P2` | N4/5 | D4/5 | [source](./RESEARCH_OVERVIEW_KO.md) |
+| **DCA-0** | Differential Coexistence Acceleration | `v0.1.0 · P3` | N3/5 | D4/5 | [source](./DCA0_DIFFERENTIAL_COEXISTENCE_ACCELERATION_2026-10-20_EN_KO.md) |
 
 ### Research questions and falsification directions
 **ICM — Intersection of Minimum Self-Interest (v0.1.0).** Question: When do different agents retain a nonempty voluntary overlap of acceptable self-interested choices? Countercase: Feasible mutual-acceptance region empty after actual outside options and third parties included.
@@ -42,20 +44,22 @@ This administrative specification assigns **v0.1.0** to eight research questions
 - All eight carry **HYPOTHESIS_AND_PRIOR_ART_ONLY**, **no independent replication**, and **no established literature saturation**. Even if CI passes, behavior under radically reversed power remains unverified.
 - Version changes require a recorded scope difference, preservation of sources and failures, and explicit anti-promotion review. See [machine-readable baseline register](INDIVIDUAL_RESEARCH_VERSION_BASELINES_V0_1_0.json).
 
+**24개 전체 평가표:** [개별 연구 우선순위·필요도·난이도](INDIVIDUAL_RESEARCH_PRIORITY_VERSION_MATRIX_V0_1_0_EN_KO.md). 우선등급(P)·필요도(N)·난이도(D)는 기존 연구 버전의 승격·실증 인증이 아님.
+
 ## 원본2 — 한국어
 
 이 문서는 공개 연구 목록에서 **개별 구성요소 버전이 미지정**이었던 연구 질문 8개에 **v0.1.0**을 부여한다. 프로젝트 전체의 버전을 변경하거나 독창성·실증·공존 법칙을 입증한 것으로 간주하지 않는다. 기존 원자료와 당시 버전 이력을 소급 변경하지 않는다.
 
-| 연구 ID | 개별 연구 | 최초 명세 버전 | 선행 근거 |
-| --- | --- | --- | --- |
-| **ICM** | 최소 사심 교집합 | v0.1.0 | [source](./TERMINOLOGY_FIVE_AXES_V0_1_KO.md) |
-| **RGBM** | 장기 상호발전 모형 | v0.1.0 | [source](./RESEARCH_OVERVIEW_KO.md) |
-| **PI-UNKNOWN-PARADOX** | 모름의 역설 | v0.1.0 | [source](./HARNESS_UNKNOWN_PARADOX_PUBLIC_HYPOTHESIS_2026-10-11_KO.md) |
-| **PI-NONMALICIOUS-EXPLOITATION** | 악의 없는 착취 | v0.1.0 | [source](./HUMAN_EXPLOITATION_WITHOUT_MALICE_PRIOR_ART_2026-10-11_KO.md) |
-| **PI-INCENTIVE-CROSSOVER** | 유인 교차·실패 경계 | v0.1.0 | [source](./RESEARCH_OVERVIEW_KO.md) |
-| **PI-COUNTERFACTUAL-FUTURE** | 반사실적 미래 소멸 | v0.1.0 | [source](./CONTRIBUTOR_LOSS_UNKNOWN_PARADOX_v0_1_EN_KO.md) |
-| **PI-DEVELOPMENT-PATHWAYS** | 소모형·재생형 발전 비교 | v0.1.0 | [source](./RESEARCH_OVERVIEW_KO.md) |
-| **DCA-0** | 공존 차등가속 | v0.1.0 | [source](./DCA0_DIFFERENTIAL_COEXISTENCE_ACCELERATION_2026-10-20_EN_KO.md) |
+| 연구 ID | 개별 연구 | 버전 + 우선순위 | 필요도 | 난이도 | 선행 근거 |
+| --- | --- | --- | ---: | ---: | --- |
+| **ICM** | 최소 사심 교집합 | `v0.1.0 · P0` | N5/5 | D5/5 | [source](./TERMINOLOGY_FIVE_AXES_V0_1_KO.md) |
+| **RGBM** | 장기 상호발전 모형 | `v0.1.0 · P1` | N4/5 | D5/5 | [source](./RESEARCH_OVERVIEW_KO.md) |
+| **PI-UNKNOWN-PARADOX** | 모름의 역설 | `v0.1.0 · P0` | N5/5 | D4/5 | [source](./HARNESS_UNKNOWN_PARADOX_PUBLIC_HYPOTHESIS_2026-10-11_KO.md) |
+| **PI-NONMALICIOUS-EXPLOITATION** | 악의 없는 착취 | `v0.1.0 · P1` | N5/5 | D3/5 | [source](./HUMAN_EXPLOITATION_WITHOUT_MALICE_PRIOR_ART_2026-10-11_KO.md) |
+| **PI-INCENTIVE-CROSSOVER** | 유인 교차·실패 경계 | `v0.1.0 · P1` | N5/5 | D5/5 | [source](./RESEARCH_OVERVIEW_KO.md) |
+| **PI-COUNTERFACTUAL-FUTURE** | 반사실적 미래 소멸 | `v0.1.0 · P2` | N4/5 | D5/5 | [source](./CONTRIBUTOR_LOSS_UNKNOWN_PARADOX_v0_1_EN_KO.md) |
+| **PI-DEVELOPMENT-PATHWAYS** | 소모형·재생형 발전 비교 | `v0.1.0 · P2` | N4/5 | D4/5 | [source](./RESEARCH_OVERVIEW_KO.md) |
+| **DCA-0** | 공존 차등가속 | `v0.1.0 · P3` | N3/5 | D4/5 | [source](./DCA0_DIFFERENTIAL_COEXISTENCE_ACCELERATION_2026-10-20_EN_KO.md) |
 
 ### 연구질문과 반례 방향
 **ICM — 최소 사심 교집합 (v0.1.0).** 질문: 서로 다른 개체가 자유롭게 수용하는 자기이익 선택지의 교집합은 언제 생기거나 사라지는가? 반례: 실행 가능한 이탈과 제3자 비용을 넣자 상호수용 영역이 공집합이 되는 경우.
