@@ -662,13 +662,13 @@
     }
   ],
   "metrics": {
-    "markdown_total": 256,
+    "markdown_total": 260,
     "filename_classes": {
       "UNMARKED_LANGUAGE_UNVERIFIED": 46,
       "LEGACY_MIXED_READER_ENTRY": 2,
-      "KO_SUFFIX_UNVERIFIED": 117,
+      "KO_SUFFIX_UNVERIFIED": 119,
       "ORDERED_BILINGUAL_FOUNDER_OR_GOVERNANCE": 2,
-      "EN_SUFFIX_UNVERIFIED": 47,
+      "EN_SUFFIX_UNVERIFIED": 49,
       "COMBINED_NAMING_UNVERIFIED": 42
     },
     "meaning_verified_pairs": 0,
@@ -1881,6 +1881,18 @@
       "content_equivalence": "NOT_REVIEWED"
     },
     {
+      "path": "research/PI_PACD_MIA_V0_1_0_EN.md",
+      "filename_class": "EN_SUFFIX_UNVERIFIED",
+      "counterpart_path": "research/PI_PACD_MIA_V0_1_0_KO.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "research/PI_PACD_MIA_V0_1_0_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": "research/PI_PACD_MIA_V0_1_0_EN.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
       "path": "research/PI_PACD_OCG_V0_1_0_EN.md",
       "filename_class": "EN_SUFFIX_UNVERIFIED",
       "content_equivalence": "NOT_REVIEWED",
@@ -2182,6 +2194,18 @@
       "path": "research/TERMINOLOGY_FIVE_AXES_V0_1_KO.md",
       "filename_class": "KO_SUFFIX_UNVERIFIED",
       "counterpart_path": "research/TERMINOLOGY_FIVE_AXES_V0_1_EN.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "research/WIL_IDENTIFIABILITY_POWER_EXIT_2026-10-22_EN.md",
+      "filename_class": "EN_SUFFIX_UNVERIFIED",
+      "counterpart_path": "research/WIL_IDENTIFIABILITY_POWER_EXIT_2026-10-22_KO.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "research/WIL_IDENTIFIABILITY_POWER_EXIT_2026-10-22_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": "research/WIL_IDENTIFIABILITY_POWER_EXIT_2026-10-22_EN.md",
       "content_equivalence": "NOT_REVIEWED"
     },
     {
@@ -2765,6 +2789,27 @@
       "new_edition_pairs": 1,
       "editorial_notes": "Original prior literature own-choice vs other B meta-choice, revocable delegation, non-domination and seven rival motive models. No new RVD/parent MER/EI versions, no actual experiment or direct mind measure.",
       "reviewer_actions": "Independent bilingual parity, raw original 2026 journal authors data permission, human-participant ethics approval and credible original B participant consent before any data collection."
+    },
+    {
+      "date": "2026-10-22",
+      "event": "PI_PACD_MIA_LANGUAGE_INVENTORY_APPEND",
+      "new_documents": [
+        "research/PI_PACD_MIA_V0_1_0_EN.md",
+        "research/PI_PACD_MIA_V0_1_0_KO.md"
+      ],
+      "scope": "Bookkeeping only; counterpart presence and similarity not certified as full translation or scientific validation.",
+      "meaning_review_status": "NOT_INDEPENDENTLY_VERIFIED"
+    },
+    {
+      "date": "2026-10-22",
+      "event": "CONCURRENT_MAIN_WIL_V0_2_0_BACKFILL_DURING_MIA_PR",
+      "source_paths": [
+        "research/WIL_IDENTIFIABILITY_POWER_EXIT_2026-10-22_EN.md",
+        "research/WIL_IDENTIFIABILITY_POWER_EXIT_2026-10-22_KO.md"
+      ],
+      "source_verified_on_current_main": true,
+      "branch_contains_files_before_merge": false,
+      "scope": "These two WIL files appeared on main after MIA branch creation; required in PR synthetic merge inventory, without certifying meaning or research validity."
     }
   ],
   "path_layout_policy": "Keep the project root entry-only; bilingual full research editions live in existing research/ and their original historical combined documents retain stable root URLs."
