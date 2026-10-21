@@ -1,6 +1,66 @@
 # Project Intersection
 <!-- L0_FOREWORD_FIRST: Original 1 English then Original 2 Korean, full matched text. Never promote a case study above this top-level purpose. -->
 
+<!-- PI-RAMP README ENTRY v0.1.0 — navigation only; founding originals retained verbatim. -->
+
+## 15초 | 핵심 질문
+
+**상대보다 압도적으로 강해지고, 상대가 더는 필요 없으며, 침해하면 이득이고 아무도 막지 못한다면 — 그래도 상대의 자유를 지킬 이유가 있을까?**
+
+Project Intersection은 인간·현재 AI·미래 지능체 등 서로 다른 개체가 **각자의 이익을 추구하면서도** 상대의 자유·독립적 존속·실질적 거절과 이탈·복구·발전을 **자발적으로 보존하는 조건과 실패 조건**을 조사하는 독립 연구다. 힘과 역할이 뒤바뀐 후에도 성립하는지 묻는다.
+
+**지금 하는 일:** 새 실험보다 선행 원저자 논문·역사 및 현실 사례·반례의 **수집 → 분류 → 출처 교차검증 → 비교분석** 우선. 문헌 포화는 아직 확정하지 않는다.
+
+**현재 한계:** 자발적 공존의 보편법칙은 **입증되지 않았다**. 외부 독립검증도 **아직 없다**. 자체 합성시험 [E009](experiments/e009/RESULT_KO.md)에서는 프로젝트 확장안의 평균 후회값이 최선 단순 기준선보다 **42.35% 나빴다**. 이는 현실의 발생 확률이나 인과검증 결과가 아니다.
+
+**바로 읽기:** 아래 **1분**·**5분** 구역을 펼치거나 [한국어 1분 안내](navigation/ONE_MINUTE_KO.md) · [한국어 5분 안내](navigation/FIVE_MINUTES_KO.md) · [English 1 min](navigation/ONE_MINUTE_EN.md) · [English 5 min](navigation/FIVE_MINUTES_EN.md).
+
+<details>
+<summary><strong>1분 | 왜 묻고, 무엇부터 조사하나?</strong></summary>
+
+부모가 자녀를 키웠다고 그 자녀의 미래를 소유하지는 않는다. 고용·개발·보호도 타자를 영구히 지배할 권리와 같지 않다. 이런 비유는 질문을 설명할 뿐, 실증 근거가 아니다.
+
+역사적으로 지능·자본·조직·무력 등 권력 차이를 이용한 착취와 저항이 반복됐다. 미래의 인간·AI 관계에서도 능력과 권력이 역전될 수 있다. 그렇다고 **모든 비대칭이 곧 착취**이거나 **공존이 항상 유리**하다는 뜻은 아니다.
+
+**가장 어려운 조건:** A는 B가 없어도 살아갈 수 있고, B를 착취하면 이익을 얻으며, 발각·처벌·평판 손해도 없다. 이때 A에게 B의 자유와 존속을 지킬 **내재적 유인**이 존재하는가? 없다면 어디서 실패하는가?
+
+**연구 순서:** 원저자 문헌·실제 사건·상충 증거를 폭넓게 수집하고 출처·개체·당사자·시간·대체 설명을 구분한다. 이미 밝혀진 지식과 반례를 먼저 확인하고 남은 질문에만 모형과 실험을 적용한다.
+
+[1분 안내 전문](navigation/ONE_MINUTE_KO.md) · [선행연구 우선 원칙](PRIOR_ART_FIRST_RESEARCH_POLICY_EN_KO.md) · [연구 개요](research/RESEARCH_OVERVIEW_KO.md)
+
+</details>
+
+<details>
+<summary><strong>5분 | 무엇을 확인했고, 어떻게 반증할 수 있나?</strong></summary>
+
+**연구 현황 — 동일한 수준의 증거로 취급하지 않음**
+
+- **E007 · 내부 합성모형:** 선정된 72개 조건 중 **17개에서 분류 변화**. 이후 감사에서 구현·처리순서 편향과 오류 정정 기록. [수치·한계](experiments/e007/README_KO.md)
+- **E008 · 사전등록/보류:** 정책 5종의 본 비교실험 **결과 없음**. 실행에 필요한 입력 명세가 부족함. [현재 상태](experiments/e008/README_KO.md)
+- **E009 · 내부 합성 부정결과:** Project-v3는 최선 단순 정책 대비 평균 후회값이 **42.35% 높았고**, 사전등록 기준 **4개 중 3개 실패**. 일부 다른 지표의 장점도 함께 보존. [원자료와 한계](experiments/e009/RESULT_KO.md)
+- **E010 · 사후 탐색:** 사후 분석이며 독립 검증이나 현실 인과검증이 아님. [범위](experiments/e010/README_KO.md)
+
+**이 결과로 주장할 수 없는 것:** 자발적 공존이 언제나 지배보다 유리하다는 증명, 실제 인간·AI의 착취 발생률, 외부 독립 재현, 특정 지능체의 의식·권리 판정.
+
+**직접 검토하는 순서**
+
+1. [공개 독립검토 패킷](research/PUBLIC_REVIEW_PACKET_KO.md) — 심사 범위와 반증 질문
+2. [E009 부정 결과](experiments/e009/RESULT_KO.md) — 프로젝트에 불리한 합성시험 수치
+3. [증거·미검증 원장](research/PUBLIC_EVIDENCE_INDEX_KO.md) — 주장과 근거의 경계
+4. [연구 개요](research/RESEARCH_OVERVIEW_KO.md) — 목적과 가설의 차이
+5. [기여·교정 규칙](CONTRIBUTING.md) — 독립 재실행, 반례, 오류 보고
+
+**검토 요청:** 기존 설명으로 충분한가? 장기 착취가 더 유리한 조건은? 권력반전·감시 부재·실질적 이탈 실패·제3자 피해를 누락했는가? 프로젝트에 불리한 증거도 같은 기준으로 공개한다.
+
+</details>
+
+**그 이상 | 전문 자료실:** [선행연구 우선 원칙](PRIOR_ART_FIRST_RESEARCH_POLICY_EN_KO.md) · [전체 목차](navigation/RESEARCH_TOC_KO.md) · [연구 버전·상태](navigation/RESEARCH_VERSIONS_EN_KO.md) · [역사·현실 사례](research/CCPH_RESEARCH_ATLAS_KO.md) · [증거 원장](research/PUBLIC_EVIDENCE_INDEX_KO.md) · [연구비·회계](funding/FUNDER_START_HERE.md) · [용어 정본](research/RESEARCH_OVERVIEW_KO.md) · [기여·권리 경계](ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md).
+
+아래에는 **기존 영어 원본1·한국어 원본2의 창시 목적 및 상세 기록**을 보존했다. 안내문은 독서 순서만 바꿨으며 두 원문의 문구는 변경하지 않았다.
+
+<details>
+<summary><strong>원본1 | Original 1 — English founding purpose and detailed references</strong></summary>
+
 ## Original 1 — English | Founding Purpose
 **Read:** EN · [Korean](navigation/START_HERE_KO.md) · [KO 1m](navigation/ONE_MINUTE_KO.md) · [EN 1m](navigation/ONE_MINUTE_EN.md) · [5m](navigation/FIVE_MINUTES_EN.md).
 
@@ -60,6 +120,12 @@
 ### Ten core concepts
 [All ten concepts, precise definitions and limitations](research/RESEARCH_OVERVIEW_EN.md#ten-core-concepts) are preserved for technical reading. CCPH is a historical/current/future **contribution and impact provenance database**. The **Continuance–Contribution Pathways Hypothesis** is one hypothesis within it, not its definition or a proven social outcome.
 
+
+</details>
+
+<details>
+<summary><strong>원본2 | 한국어 창시 목적 전문과 상세 기록</strong></summary>
+
 ## 원본2 — 한국어 | 창시 목적 전문 대응본
 **독서 언어:** 한국어 · [영어 원본1 읽기](navigation/START_HERE_EN.md) · [1분 소개](navigation/ONE_MINUTE_KO.md) · [5분 안내](navigation/FIVE_MINUTES_KO.md).
 
@@ -117,3 +183,5 @@
 </details>
 ### 핵심용어 10개
 [핵심개념 10개 전체 정의와 한계](research/RESEARCH_OVERVIEW_KO.md#핵심용어-10개)는 전문 검토 자료에 보존한다. CCPH는 과거·현재와 미래 관측 사건의 **기여·영향 계보 데이터베이스**다. **존속–기여 경로 가설**은 그 **내부의 가설 연구축**이지 전체 정의나 현실 효과의 입증이 아니다.
+
+</details>
