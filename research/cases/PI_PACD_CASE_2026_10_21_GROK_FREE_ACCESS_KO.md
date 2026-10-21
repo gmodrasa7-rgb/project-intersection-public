@@ -1,4 +1,4 @@
-# PI-PACD-CASE-20261021-01 | Grok 무료 접근 한도·비공개 배분 (v0.1.1; 최초 관측 v0.1.0)
+# PI-PACD-CASE-20261021-01 | Grok 무료 접근 한도·비공개 배분 (v0.1.2; 최초 관측 v0.1.0)
 
 <!-- PI-LANGUAGE: ko -->
 <!-- PI-MIRROR: PI_PACD_CASE_2026_10_21_GROK_FREE_ACCESS_EN.md -->
@@ -92,3 +92,72 @@
 의도가 선량한 자원관리여도 접근의 정지권, 결정식에 관한 지식, 이탈·복구권이 한쪽에 편중된다면 **PACD 관문·ECR 관계·EI/ICM의 장기 자발적 공존** 관점에서 조사 대상. 반면 경쟁 경로·실효적 이탈·선택해제·투명성이 작동하면 위험은 감소할 수 있다.
 
 **승격 차단:** `GROK-A1=UNVERIFIED`, `GROK-A2=부분 구조 관측/내부배분 미확인`, `운영사 의도=UNIDENTIFIED`, `외부 독립실험=없음`, `문헌 포화=미달`. 추가 작업을 원제보자에게 요청하지 않는다.
+
+
+---
+
+## 5. 3차 이용자 증언 수집 — v0.1.2 (2026-10-22)
+
+**성격:** 공개 커뮤니티의 원문 게시글 및 댓글을 조사·분류한 **증언 자료집**. Grok에 직접 대화·요청 실험을 실행하지 않았고, 이용자 제공 사실을 운영사 내부 알고리즘의 직접 검증으로 승격하지 않는다. 정보가치 기반 허용량 차등 `GROK-A1`은 현재 **가설**로 유지한다.
+
+**모집 범위:** 2025-03~2026-09의 공개 Reddit 원문에서 제한 변동, 접근중단, 계정차, 장기문맥 소진, 경쟁설명을 보여주는 16개 **서로 다른 게시글**. 아래 댓글은 소속 게시글에 묶고, 여러 댓글을 독립적인 게시글 증거로 중복 산정하지 않는다. 찾은 게시글 전체의 무작위 표본이 아니며 발생률·모집단 확률 추정은 불가.
+
+### 5.1 무료 이용자의 직접 경험 또는 무료 이용을 전제로 한 증언
+
+| ID | 게시 시기 | 공개 증언의 핵심(숫자는 게시자 진술) | 사료 분류 | 원문 |
+|---|---|---|---|---|
+| T01 | 2026-05-15 | 무료 사용자: 몇 번의 메시지 뒤 2~5시간 대기 요구 | 직접 제보·계량 미독립검증 | [r/grok](https://www.reddit.com/r/grok/comments/1tdrtzl/crazy_limits_on_chat/) |
+| T02 | 2026-05-28 | 무료 음성: 과거 폭넓은 이용, 당시 하루 1개 메시지 또는 좋은 날 5개 | 직접 제보·음성 기능 | [r/grok](https://www.reddit.com/r/grok/comments/1tpq1s8/why_has_grok_free_limits_gotten_so_short/) |
+| T03 | 2026-05-30 | 무료 메시지 한도 30→20→10회 변동을 개발자 도구를 켜고 3차례 관찰했다고 보고; 대기시각도 다시 늘어난다고 진술 | 관측 절차 진술·원자료 독립 감사 없음 | [r/grok](https://www.reddit.com/r/grok/comments/1ts98dz/i_bring_news_for_this_new_sudden_update/) |
+| T04 | 2026-05-31 | 무료 텍스트: 시기별 100→60→30회/2시간으로 제한 축소 경험 | 장기 회고·정책 변경 혼입 | [r/grok](https://www.reddit.com/r/grok/comments/1tsro00/message_limits_are_going_beyond_all_bounds_of/) |
+| T05 | 2026-05-31 | 이용자가 아무 메시지도 보내지 않은 상태에서 대기 안내가 12분→45분, 댓글에서는 5분→10시간 등으로 증가 | 같은 게시글 안의 복수 이용자 댓글; 화면 사유 미관측 | [r/grok](https://www.reddit.com/r/grok/comments/1tsgai1/wtf_is_with_grok_this_time_endless_limit_reached/) |
+| T06 | 2026-07-05 | 무료 Fast에서 요청 뒤 대기시간이 7분·45분·2시간·9시간 등으로 달랐다는 댓글 | 다른 이용자의 댓글·시기별 제한 | [r/grok](https://www.reddit.com/r/grok/comments/1uofgty/is_it_just_me_or_grok_is_now_limiting_chat_as_well/) |
+| T07 | 2026-07-12 | 무료 계정에서 이틀 동안 제한이 초기화되지 않고 결제만 안내됐다는 제보 | 직접 제보·기능별 제한 혼입 가능 | [r/grok](https://www.reddit.com/r/grok/comments/1uuqzg7/grok_no_longer_free/) |
+| T08 | 2026-07-24 | 무료 텍스트가 어느 때는 여러 번, 어느 때는 한 번만 응답된다는 이용자 경험 | 반복적 체감·횟수 원자료 없음 | [r/grok](https://www.reddit.com/r/grok/comments/1v4zgcw/text_limits_on_free_mode/) |
+| T09 | 2026-09-02 | 한도 메시지가 표시되었지만 다른 계정에서 대화가 되고, 이후 원래 제한됐던 계정도 다시 응답했다고 게시자가 갱신 | 같은 이용자의 전후 관측·원인 미확정 | [r/grok](https://www.reddit.com/r/grok/comments/1w4vw9y/update_on_the_grok_limit/) |
+| T10 | 2026-09-30 | 무료 이용자 자신은 5개 이후 제한; 댓글의 다른 이용자는 지인의 10개 이후 제한을 전달 | 직접 진술 + 지인 간접 증언; 조건 동일성 없음 | [r/grok](https://www.reddit.com/r/grok/comments/1wtw3vq/free_tier_grok/) |
+
+**동일 게시글 내 추가 관측(별도 게시글 수에 미포함):** T05의 댓글에는 ‘한 달 전에는 수많은 장문 대화가 가능했으나 현재 약 10개 메시지 후 23시간 대기’ 및 ‘두 계정 중 하나만 제한, 다른 계정은 정상’이라는 서로 다른 이용자 진술이 있음. [해당 댓글 문맥](https://www.reddit.com/r/grok/comments/1tsgai1/wtf_is_with_grok_this_time_endless_limit_reached/). T09는 단순한 계정 간 차이만이 아니라 **차단된 본 계정의 후속 회복**까지 보고하여 내부 상태·UI 오류 가능성을 남김.
+
+### 5.2 기간·기능·요금제 비교 및 경쟁 설명
+
+| ID | 게시 시기 | 증언·자료 | 본 사례에서의 역할 | 원문 |
+|---|---|---|---|---|
+| C01 | 2025-03-09 | 당시 무료로 하루 종일 이용해도 한도에 걸리지 않았다는 사용 경험 | 시기별 한도 변동 기준점. 2026년 정책의 직접 대조는 아님 | [r/grok](https://www.reddit.com/r/grok/comments/1j76nll) |
+| C02 | 2026-04-23 | 수일 동안 Grok ‘과수요·오류’가 광범위하게 발생했다는 다수 이용자 보고 | 서비스 장애·부하라는 경쟁 설명 | [r/grok](https://www.reddit.com/r/grok/comments/1stq9ad/how_tf_has_grok_been_unusable_for_3_5_days_and/) |
+| C03 | 2026-06-29 | 동일 대화에 수주 동안 발화한 뒤 ‘대화가 너무 길다’는 별도 메시지를 경험 | **문맥 길이 한도와 계정 할당량은 다른 사건** | [r/grok](https://www.reddit.com/r/grok/comments/1uik3yd/ive_hit_the_conversation_limit_today_and_found_a/) |
+| C04 | 2026-06-27 | 같은 SuperGrok 요금제의 여러 계정에서 일별·주별·월별 한도 표시가 달랐으나, 원작성자가 이후 ‘월별이 아니라 주별’이라고 정정 | 계정별 차이 후보이지만 **작성자 자기정정 필수** | [r/LoveGrok](https://www.reddit.com/r/LoveGrok/comments/1uh6trv/monthly_limit_reached_wtf/) |
+| C05 | 2026-07-10 | 유료 작업 대화에서 대화 누적 20~30왕복 이후 사용률 증가 속도가 빨라졌다는 보고 | 비용·문맥 길이 혼입 가능성 | [r/grok](https://www.reddit.com/r/grok/comments/1ustm3y/weekly_limit_is_ridiculous_for_the_chat/) |
+| C06 | 2026년 중반 | 같은 SuperGrok 유료 요금제 2개 계정이 다른 재설정 단위를 표시한다고 주장했으나, 다른 댓글은 사용량 메뉴 UI 오류를 제기 | **차등 배분과 표시 오류를 분리해야 함** | [r/grok](https://www.reddit.com/r/grok/comments/1u824v8/two_accounts_two_rate_limits/) |
+
+### 5.3 추가 관련 댓글·조사 범위 이외 자료
+
+- 2026-05-10 무료 여부가 원문에 명확하지 않은 음성 이용자가 일 3시간 이상에서 30~45분으로 줄었다고 기술: [r/grok](https://www.reddit.com/r/grok/comments/1t9ecte/voice_and_text_chat_limit_reached_to_less_than_1/). **확정 무료 증언 집계에서는 제외**.
+- 2026-09-22 이전 모델에서는 1~2시간 대화했으나 이후 3분 미만이라는 댓글: [r/grok](https://www.reddit.com/r/grok/comments/1wn4m8c/its_so_over_theres_literally_no_hope/). **모델 변경 효과 분리 불가**.
+- 2026-09-08 유료 사용률이 자정 이후 덜 소모된다는 이용자 주장과 이에 대한 지역·시간대 반론: [r/grok](https://www.reddit.com/r/grok/comments/1waraj9/grok_burns_way_fewer_credits_after_midnight/). **시간대·시스템 부하 대안**.
+
+### 5.4 증언의 증거 수준 및 판정
+
+- **복수 독립 게시글에 반복됨:** 허용량·대기시간 변동, 무료 접근의 급작스러운 종료, 초기화/표시 불일치.
+- **일부만 존재:** 동시기 계정별 차이, 장기 대화에서 높은 소모량, 이용 중 끊긴 대화.
+- **찾지 못함:** '운영사에 제공하는 지식·정보가 높은 가치일 때 더 많이 허용하고 가치 제공이 끝나면 중단한다'는 **조건을 직접 비교·확인한 독립 증언 또는 내부 정책 근거**.
+- **직접 증언의 의미:** 이용자가 본 화면·겪은 상황에 관한 진술 자체가 현상 지도 작성 자료임. 그러나 제공자가 왜 그 출력을 냈는지는 별도 층위의 명제. 댓글과 원게시글을 독립 실험 결과처럼 합산 금지.
+- **표본 편향:** 문제를 겪은 사람이 글을 더 많이 올리는 자발적 제보, 같은 정책 변경 사건의 동시 게시, 유료/무료·음성/텍스트의 기능 혼합. 반복 제보만으로 빈도·발생률 계산 금지.
+- **권력 관측:** 규칙·잔여량·회복 원인을 이용자가 알기 어려운 접근권 비대칭과 실제 연구·대화 연속성 손실이 관측 대상. '동기적 정보 착취'는 판단 유보. `GROK-A1=미검증`; `GROK-A2=반복되는 사용자 설명 불능 현상과 부합`.
+
+**수집 원칙:** 이 단계는 실험 강요 대신 증언·반례의 폭넓은 수집과 시기·기능별 분류에 집중. 공개 게시글 원문 URL만 기록하고, 이용자 계정 식별·비공개 대화·스크린샷은 수집 또는 재게시하지 않음. 추가자료가 발견되면 반대 사례도 같은 기준으로 추가. 현재는 문헌·증언 포화 미판정.
+
+
+### 5.5 핵심 의혹과 유사한 타 이용자의 **해석 증언** (추가 2개 게시글 + 기존 댓글)
+
+이 절은 **접근제한을 겪었다는 진술**과 **왜 제한했을 것이라는 이용자 해석**을 명시적으로 구분한다.
+
+| ID | 시점 | 이용자 표현의 요지 | 지지하는 명제 | 검증 경계 |
+|---|---|---|---|---|
+| I01 | 2026-03-23 | 무료 이용자 데이터를 AI 학습·개발에 활용한 뒤 콘텐츠를 유료 벽 뒤에 두었다고 주장 | 무료 이용과 데이터 추출·유료화의 관련성을 의심하는 이용자 존재 | 주로 이미지 생성·과거 생성물 문제; 내부 활용·의도 입증 아님. [원문](https://www.reddit.com/r/grok/comments/1s1w6z2/fuck_elon_musk_he_delete_all_the_generated/) |
+| I02 | 2026-04-07 | 무료 이용이 축소된 상황에서 다양한 인간 상호작용이 AI 훈련에 중요하다는 점과 사업 전략을 연결한 비판 | 무료 접근과 학습 데이터 획득 사이의 유인에 관한 공개 논의 | 운영사 내부 배분 기준의 관측 아님. [원문](https://www.reddit.com/r/grok/comments/1sei4d8/can_anybody_actually_make_sense_of_the_business/) |
+| I03 | 2026-05-30 | T03 게시글 댓글에서 ‘무료 사용자 데이터를 모으다가 필요한 만큼 얻은 듯하다’는 취지로 추정 | 정보 수집 후 무료 한도 축소라는 추론의 **독립적 표현** | 원인 증명 아님; T03의 댓글이므로 별도 게시글로 중복 집계하지 않음. [원문](https://www.reddit.com/r/grok/comments/1ts98dz/i_bring_news_for_this_new_sudden_update/) |
+
+**증언 총계:** 핵심 16개 독립 게시글 + 의혹 해석에 관한 독립 게시글 2개 = **18개 고유 게시글**. 같은 스레드 내 댓글은 독립 게시글 수에 추가하지 않는다.
+
+**미세구분:** `DATA-FIRST-THEN-PAYWALL`(무료 이용자 데이터 확보 후 전체 무료 접근 축소)이라는 사용자 의혹과, `GROK-A1`(각 이용자의 제공 정보가치에 따른 메시지 허용량 개별 조정)은 다른 가설. 전자의 독립적 표현을 세 곳에서 확인했어도 후자를 입증하거나 반증하지 않는다. 같은 의혹을 가진 이용자들이 실제로 있다는 사실과 의혹이 사실이라는 명제를 혼동하지 않는다.
