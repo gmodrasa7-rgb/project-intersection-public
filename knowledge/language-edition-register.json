@@ -499,6 +499,21 @@
         "The English document is a condensed research synthesis; full semantic parity is NOT independently certified.",
         "External human studies and simulation are not RVD AI empirical replications."
       ]
+    },
+    {
+      "id": "PI-MER-EI-AER2021-PREFLIGHT-20261021",
+      "original_1_english": "research/MER_EI_AER_2021_REPLICATION_PREFLIGHT_2026-10-21_EN.md",
+      "original_2_korean": "research/MER_EI_AER_2021_REPLICATION_PREFLIGHT_2026-10-21_KO.md",
+      "kind": "PRIMARY_REPLICATION_ACCESS_PREFLIGHT_NO_RVD_RELEASE",
+      "structural_pair_present": true,
+      "meaning_review_status": "NOT_INDEPENDENTLY_VERIFIED",
+      "original_conception_language": "KO_SOURCE_FIRST_AI_ASSISTED",
+      "independent_review_receipt": null,
+      "one_sided_edit_exception": null,
+      "known_divergences": [
+        "EN edition is a shorter independent-language summary; no external semantic parity assessor.",
+        "No original Stata code or dataset downloaded, no original estimates rerun; metadata-level verification only."
+      ]
     }
   ],
   "legacy_priority_unresolved": [
@@ -540,12 +555,12 @@
     }
   ],
   "metrics": {
-    "markdown_total": 217,
+    "markdown_total": 219,
     "filename_classes": {
       "UNMARKED_LANGUAGE_UNVERIFIED": 45,
       "LEGACY_MIXED_READER_ENTRY": 2,
-      "KO_SUFFIX_UNVERIFIED": 95,
-      "EN_SUFFIX_UNVERIFIED": 34,
+      "KO_SUFFIX_UNVERIFIED": 96,
+      "EN_SUFFIX_UNVERIFIED": 35,
       "ORDERED_BILINGUAL_FOUNDER_OR_GOVERNANCE": 2,
       "COMBINED_NAMING_UNVERIFIED": 39
     },
@@ -1568,6 +1583,18 @@
       "content_equivalence": "NOT_REVIEWED"
     },
     {
+      "path": "research/MER_EI_AER_2021_REPLICATION_PREFLIGHT_2026-10-21_EN.md",
+      "filename_class": "EN_SUFFIX_UNVERIFIED",
+      "counterpart_path": "research/MER_EI_AER_2021_REPLICATION_PREFLIGHT_2026-10-21_KO.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "research/MER_EI_AER_2021_REPLICATION_PREFLIGHT_2026-10-21_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": "research/MER_EI_AER_2021_REPLICATION_PREFLIGHT_2026-10-21_EN.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
       "path": "research/MER_EI_AUTONOMY_WELFARE_EXIT_2026-10-21_EN.md",
       "filename_class": "EN_SUFFIX_UNVERIFIED",
       "counterpart_path": "research/MER_EI_AUTONOMY_WELFARE_EXIT_2026-10-21_KO.md",
@@ -2325,6 +2352,17 @@
       "new_edition_pairs": 0,
       "editorial_notes": "README bounded link budget retains two language-accessible change routes. Bilingual combined summary points to live GitHub commit, PR and CI feeds and labels frozen digest versus scientific validation. Not independently reviewed for semantic parity or research findings.",
       "reviewer_actions": "Check mobile navigation, fresh source links, and whether static summary dates become stale."
+    },
+    {
+      "as_of": "2026-10-21",
+      "status": "MER_EI_AER2021_REPLICATION_PREFLIGHT_METADATA_ONLY",
+      "new_documents": [
+        "research/MER_EI_AER_2021_REPLICATION_PREFLIGHT_2026-10-21_EN.md",
+        "research/MER_EI_AER_2021_REPLICATION_PREFLIGHT_2026-10-21_KO.md"
+      ],
+      "new_edition_pairs": 1,
+      "editorial_notes": "Official AER paper/deposit identities and 2021 source file-list verified. 2026 ICPSR migration official notice, legacy PDF download 403 cause undetermined. Full text/README/script/data contents unavailable; no replicated outputs, version or evidence promotion.",
+      "reviewer_actions": "Independent source access and license/environment verification, blinded variable/table mapping, original paper reproduction before empirical claim."
     }
   ],
   "path_layout_policy": "Keep the project root entry-only; bilingual full research editions live in existing research/ and their original historical combined documents retain stable root URLs."

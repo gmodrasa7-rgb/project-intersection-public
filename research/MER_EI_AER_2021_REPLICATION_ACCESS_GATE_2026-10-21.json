@@ -1,0 +1,153 @@
+{
+  "schema_version": "pi-mer-ei-replication-access-readiness/0.1",
+  "as_of": "2026-10-21",
+  "project": "Project Intersection / MER-EI",
+  "work_type": "PRIMARY_REPLICATION_ACCESS_PREFLIGHT_NOT_A_REAL_REPLICATION",
+  "version_policy": {
+    "canonical_rvd": "v0.7.0",
+    "new_numbered_hypotheses": 0,
+    "scientific_promotion": false
+  },
+  "source_study": {
+    "citation": "Ambuehl, S.; Bernheim, B.D.; Ockenfels, A. (2021), What Motivates Paternalism? An Experimental Study, American Economic Review 111(3):787-830",
+    "article_doi": "10.1257/aer.20191039",
+    "article_url": "https://pubs.aeaweb.org/doi/10.1257/aer.20191039",
+    "deposit_doi": "10.3886/E120765V1",
+    "deposit_legacy_url": "https://www.openicpsr.org/openicpsr/project/120765/version/V1/view",
+    "icpsr_catalog_search": "https://www.icpsr.umich.edu/sites/search/studies?fq=PRINCIPAL_INVESTIGATORS_FACET%3AAmbuehl%2C+Sandro&q=&rows=50&sort=score+desc&start=0",
+    "deposit_version": "V1",
+    "deposit_release_date": "2021-02-19",
+    "sample_description_from_repository": "Laboratory experiment, student subjects, University of Cologne",
+    "sample_mode_from_repository": "web-based survey",
+    "observational_unit": "VARIES_CHECK_PAPER",
+    "finding_from_original_article_abstract": "Choice architects often remove impatient options to steer choosers toward the architect's ideals despite possibility of advice. This does not measure original-B persistent identity, or strong-A profitable exploitation.",
+    "published_package_not_independent_replication": true
+  },
+  "source_host_migration": {
+    "official_announcement": "https://www.icpsr.umich.edu/sites/icpsr/posts/shared/openicpsr-in-transition",
+    "old_site_retired_month": "2026-08",
+    "new_platform": "ICPSR self-published study catalog",
+    "old_doi_persists_according_to_publisher": true,
+    "new_study_files_located_after_migration": false,
+    "new_download_access_result": "NOT_ATTEMPTED_OR_NOT_CONFIRMED",
+    "legacy_download_access_result": "403_FORBIDDEN_IN_WEB_TOOL_FOR_README_DOWNLOAD_LINK",
+    "cause_of_legacy_403": "UNIDENTIFIED_DO_NOT_ATTRIBUTE_CAUSALLY_TO_MIGRATION",
+    "official_guidance": "Data access may require ICPSR sign-in and agreement to terms; no user credentials obtained."
+  },
+  "public_legacy_package_metadata": {
+    "readme": {
+      "path": "ReadMe.pdf",
+      "listed": true,
+      "size_kb_approx": 134.6,
+      "contents_read": false,
+      "software_and_environment": "UNKNOWN"
+    },
+    "script_folder_url": "https://www.openicpsr.org/openicpsr/project/120765/version/V1/view?path=%2Fopenicpsr%2F120765%2Ffcr%3Aversions%2FV1%2FdoFiles&type=folder",
+    "stata_do_files": [
+      {
+        "path": "doFiles/analysis.do",
+        "size_kb_approx": 90.5
+      },
+      {
+        "path": "doFiles/dataManagement.do",
+        "size_kb_approx": 104.9
+      },
+      {
+        "path": "doFiles/setup.do",
+        "size_bytes_reported": 20
+      },
+      {
+        "path": "doFiles/tableChoosers.do",
+        "size_bytes_reported": 577
+      }
+    ],
+    "data_folder_url": "https://www.openicpsr.org/openicpsr/project/120765/version/V1/view?path=%2Fopenicpsr%2F120765%2Ffcr%3Aversions%2FV1%2Fdata&type=folder",
+    "data_file_count_reported_by_legacy_listing": 18,
+    "sample_file_metadata": [
+      {
+        "file": "data/choosers1.csv",
+        "size_kb_approx": 55.2
+      },
+      {
+        "file": "data/choosers2.csv",
+        "size_kb_approx": 10.3
+      },
+      {
+        "file": "data/session1.tsv",
+        "size_kb_approx": 585
+      },
+      {
+        "file": "data/session10.tsv",
+        "size_kb_approx": 591.7
+      },
+      {
+        "file": "data/session11.tsv",
+        "size_kb_approx": 621.4
+      },
+      {
+        "file": "data/session13.tsv",
+        "size_kb_approx": 530.4
+      }
+    ],
+    "all_file_bodies_downloaded": false,
+    "exact_variable_names_and_types": "NOT_READ",
+    "raw_subject_rows_processed": 0,
+    "source_code_static_dependency_inspection": "NOT_READ",
+    "source_file_licenses": "NOT_VERIFIED"
+  },
+  "replication_ladder": [
+    {
+      "stage": "A0_SOURCE_IDENTITY",
+      "status": "PASSED_METADATA",
+      "proof": "Publisher article DOI and ICPSR deposit DOI/title/authors/date, original lab setting and four script filenames"
+    },
+    {
+      "stage": "A1_FILE_CONTENT_ACCESS",
+      "status": "BLOCKED",
+      "proof": "Legacy ReadMe download endpoint returned 403 in retrieval; new ICPSR download access not verified, do-files and raw files not fetched"
+    },
+    {
+      "stage": "A2_LICENSE_ENVIRONMENT",
+      "status": "NOT_ASSESSED",
+      "proof": "ReadMe contents unavailable; exact Stata versions/packages, custom ado dependencies and license not checked"
+    },
+    {
+      "stage": "A3_COLUMN_AND_TABLE_LINEAGE",
+      "status": "NOT_ASSESSED",
+      "proof": "No data rows or analysis.do instructions inspected"
+    },
+    {
+      "stage": "A4_AUTHOR_TABLE_REPRODUCTION",
+      "status": "NOT_RUN",
+      "proof": "No end-to-end Stata or trustworthy equivalent table comparison"
+    },
+    {
+      "stage": "A5_INDEPENDENT_MECHANISM_ANALYSIS",
+      "status": "NOT_RUN",
+      "proof": "No new causal identification or rival-model estimations performed"
+    }
+  ],
+  "negative_results_and_transfer": {
+    "source_claim_supported": "In this specific Cologne lab paradigm, the authors report ideals-projective choice-menu intervention even where advice exists.",
+    "RVD_interpretation_not_supported": [
+      "original B numerical identity or enduring subjective experience",
+      "long-term voluntary coexistence of actual artificial agents",
+      "preservation when power is overwhelming and exploitation is financially dominant",
+      "rejection of all image/warm-glow/future-instrumental motive alternatives"
+    ],
+    "core_discrimination": "A's belief that restricting choice benefits B vs actual B choice rights; descriptive paternalism is not causal estimate of intrinsic value of original B's autonomy.",
+    "evidence_grade": "PRIMARY_PUBLICATION_AND_PACKAGE_METADATA_ONLY",
+    "source_saturation": "NO",
+    "author_code_rerun": "NO",
+    "scientific_replication_claim": "PROHIBITED",
+    "copyright_and_subject_data_gate": "Only analyze permitted published materials; avoid uploading any raw subject dataset to public GitHub without verified redistribution license and privacy review."
+  },
+  "next_action_preconditions": [
+    "Resolve current official ICPSR study 120765 access using permitted sign-in and official terms, do not circumvent authentication.",
+    "Read and check ReadMe.pdf license, data dictionary, software version, installation and path assumptions.",
+    "Acquire original scripts/data lawfully into a nonpublic workspace; hash files and record permissions, version, license and PII review.",
+    "Map each original published main result/table to source do-file sections, data columns, sample restrictions and code steps.",
+    "Check Stata availability and cost; if unavailable, evaluate permitted independent R/Python reimplementation as an explicitly different reproduction route.",
+    "Only after actual rerun compare numeric original tables with a declared tolerance and detailed discrepancies; no claim promotion from metadata alone."
+  ]
+}
