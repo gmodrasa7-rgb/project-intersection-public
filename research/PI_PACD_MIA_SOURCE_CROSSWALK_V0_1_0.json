@@ -129,6 +129,55 @@
       "cautions": [
         "Human principal delegation experiments do not demonstrate institutional capture frequency or future AGI preferences."
       ]
+    },
+    {
+      "id": "MIA-S08",
+      "authors": "United States Department of Justice, Antitrust Division",
+      "year": 2026,
+      "title": "United States and Plaintiff States v. RealPage, Inc., case register and pleadings",
+      "venue": "DOJ federal antitrust case docket",
+      "url": "https://www.justice.gov/atr/case/us-and-plaintiff-states-v-realpage-inc",
+      "type": "OFFICIAL_CASE_RECORD_ALLEGATIONS_AND_DISTINCT_JUDGMENTS",
+      "supports": [
+        "MIA-C11"
+      ],
+      "cautions": [
+        "2024/2025 complaints about algorithmic rent data sharing are allegations; distinguish from final merits findings.",
+        "Greystar final judgment posted March 2, 2026; RealPage and other proposed consent decrees have distinct status.",
+        "This real-world pricing coordination case is not evidence that autonomous Q-learning agents learned retaliation."
+      ]
+    },
+    {
+      "id": "MIA-S09",
+      "authors": "United Kingdom Competition and Markets Authority",
+      "year": 2025,
+      "title": "Cloud services market investigation final decision",
+      "venue": "UK competition regulator official investigation",
+      "url": "https://www.gov.uk/cma-cases/cloud-services-market-investigation",
+      "type": "REGULATORY_MARKET_INVESTIGATION",
+      "supports": [
+        "MIA-C12"
+      ],
+      "cautions": [
+        "Reports switching/multi-cloud concerns, not proof that every cloud provider harmed every customer.",
+        "Cloud concentration is relevant to AI infrastructure governance but is not itself a measurement of AGI motives."
+      ]
+    },
+    {
+      "id": "MIA-S10",
+      "authors": "United Kingdom Competition and Markets Authority",
+      "year": 2026,
+      "title": "CMA announces package of actions on business software and cloud services",
+      "venue": "UK regulator official update 31 March 2026",
+      "url": "https://www.gov.uk/government/news/cma-announces-package-of-actions-on-business-software-and-cloud-services",
+      "type": "REGULATORY_ACTION_PROGRESS_REPORT",
+      "supports": [
+        "MIA-C12"
+      ],
+      "cautions": [
+        "Provider changes to egress fees and interoperability are reported actions, not proven long-term independent coexistence.",
+        "Ongoing oversight and impacts on real exit remain to be assessed."
+      ]
     }
   ],
   "claims": [
@@ -257,6 +306,29 @@
         "MIA-S01"
       ],
       "generalization": "HYPOTHESIS_ONLY"
+    },
+    {
+      "id": "MIA-C11",
+      "type": "REAL_WORLD_OFFICIAL_ALLEGATIONS_AND_CASE_EVENTS",
+      "status": "OFFICIAL_CASE_RECORD_MIXED_PROCEDURAL_STATES",
+      "statement": "US DOJ alleged shared competitor-sensitive rental data and pricing alignment through common pricing algorithm; filed proposed decrees for some parties and final judgment for Greystar by March 2026. This shows a legally investigated shared gateway, not adjudication that all allegations are true and not autonomous AI-learning proof.",
+      "sources_for": [
+        "MIA-S08"
+      ],
+      "rival_sources": [],
+      "generalization": "REALPAGE_CASE_ALLEGED_MECHANISMS_AND_DOCUMENTED_CASE_EVENTS"
+    },
+    {
+      "id": "MIA-C12",
+      "type": "REAL_WORLD_OFFICIAL_MARKET_FINDING_AND_RESPONSE",
+      "status": "REGULATOR_FINDINGS_AND_ONGOING_INTERVENTION",
+      "statement": "UK CMA 2025 cloud findings identify switching and interoperability barriers; its March 2026 statement reports fee/interoperability changes by two suppliers, with monitoring continuing.",
+      "sources_for": [
+        "MIA-S09",
+        "MIA-S10"
+      ],
+      "rival_sources": [],
+      "generalization": "UK_CLOUD_MARKETS_NOT_AI_SUBJECTIVE_INTERESTS"
     }
   ],
   "mechanisms": [
@@ -311,5 +383,38 @@
       "owner instruction that does not violate third-party rights"
     ],
     "status": "DESIGN_ONLY_NO_PI_MODEL_EXECUTION"
-  }
+  },
+  "real_world_case_front": [
+    {
+      "id": "MIA-RC01",
+      "name": "US rental pricing coordination, RealPage litigation",
+      "role": "A shared algorithmic information and pricing gate among distinct property managers, alleged by US DOJ; different parties have distinct proposed and final court decrees.",
+      "observed": "Complaint/docket and dated court documents exist; final judgment posted for Greystar 2026-03-02.",
+      "not_observed": "No identified independent autonomous Q-learners deciding to collude; no inferred mental states; no established harm estimate from this record alone.",
+      "intervention_candidates": [
+        "data sharing prohibition",
+        "independent pricing decisions",
+        "court oversight and final-judgment compliance"
+      ],
+      "evidence": [
+        "MIA-S08"
+      ]
+    },
+    {
+      "id": "MIA-RC02",
+      "name": "UK cloud infrastructure switching",
+      "role": "Concentration in compute infrastructure may raise effective exit costs for downstream AI developers/users.",
+      "observed": "CMA market investigation final decision 2025, March 2026 announcements of measures on egress fees and interoperability.",
+      "not_observed": "No inference of model motives, no independent proof that every downstream AI user can now exit.",
+      "intervention_candidates": [
+        "multi-cloud portability",
+        "fee change",
+        "software licensing interoperability"
+      ],
+      "evidence": [
+        "MIA-S09",
+        "MIA-S10"
+      ]
+    }
+  ]
 }
