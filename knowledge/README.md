@@ -126,3 +126,9 @@ When graph data conflicts with a source artifact or commit history:
 `SOURCE_ARTIFACT / COMMIT_HISTORY > GRAPH_INDEX`
 
 The graph must then be corrected.
+
+## 9. Methodological provenance crosswalk (2026-10-21)
+
+Use the [verified original-method references and adoption limits](../PRIOR_ART_FIRST_RESEARCH_POLICY_EN_KO.md) before adding a new graph schema or export. Cochrane separates records, reports and actual underlying studies; PRISMA 2020/PRISMA-S guide reporting of searches and exclusions; FAIR provides discoverability and qualified-reference principles; W3C PROV-O and RO-Crate provide optional interoperability targets; The Turing Way specifies reproducible research bundles; Diátaxis informs reader-facing routes. Existing [PI-RAMP v0.3](../protocols/PI_RAMP_V0_3_KO.md) already references several of these, so no new discovery or novelty is claimed.
+
+**Scope:** Existing graph and claim-impact overlay are *not* asserted FAIR-, PROV-O-, RO-Crate- or PRISMA-compliant. Source documents and Git history remain superior to the graph. An independent reader should be able to follow one bounded claim to an original study, negative or competing result, exact synthetic calculation where applicable, and explicit unknowns. No such reader-effect study has yet been performed.
