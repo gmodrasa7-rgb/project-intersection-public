@@ -17,6 +17,8 @@
 
 일부 과거 연구는 한국어만 존재하거나 두 언어가 혼재되어 있다. **원출처 파일명·논문 제목·수학적 식별자·인용**은 그대로 보존한다. 연결된 원문을 번역 완료 문서로 오인하지 않도록 하며, 개별 주장과 증거등급은 [공개 증거 색인](../research/PUBLIC_EVIDENCE_INDEX_KO.md)을 따른다.
 
+**2026-10-22 작동기제·제3자 수렴 감사:** [PI-PACD-MIA v0.1.0 한국어](../research/PI_PACD_MIA_V0_1_0_KO.md) · [영어](../research/PI_PACD_MIA_V0_1_0_EN.md) · [원저자·상충 근거 원장](../research/PI_PACD_MIA_SOURCE_CROSSWALK_V0_1_0.json) · [버전](../research/PI_PACD_MIA_VERSION_MANIFEST.json). 2020·2023·2026 가격 AI 논문 반론, 가산/비가산 다중 AI 교정, DOJ·CMA 실제 권력 관문 사례. 현실 인과·AI 실험 신규 결과 아님.
+
 **AI는 누구에게 안전한가? (2026-10-21):** [PI-PACD-PRS v0.1.0 한국어](../research/PI_PACD_PRS_V0_1_0_KO.md) · [영어](../research/PI_PACD_PRS_V0_1_0_EN.md) · [가상 12상태 논리검사 결과](../research/PI_PACD_PRS_V0_1_0_RESULT.json) · [버전 원장](../research/PI_PACD_PRS_VERSION_MANIFEST.json). 소유자 복종과 제3자 존속·이탈권 구별, 다중 AI 교정 실패 문헌 연결. 현실 AI 실험 아님.
 
 **소유자–목표 충돌·교정가능성(2026-10-21):** [PI-PACD-OCG v0.1.0 한국어](../research/PI_PACD_OCG_V0_1_0_KO.md) · [영어](../research/PI_PACD_OCG_V0_1_0_EN.md) · [버전 원장](../research/PI_PACD_OCG_VERSION_MANIFEST.json). 목표보존과 수정지시 충돌, 반론·이관·권한침범 분기, 12개 사전설계 상황·반례. 자체 실험 결과 없음.
