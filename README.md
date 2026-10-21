@@ -20,12 +20,12 @@
 
 **Contrary evidence visible before expanding:** [E009](experiments/e009/RESULT_EN.md): Project-v3 was **42.35% worse** in mean regret than the best simple synthetic baseline; **3 of 4 criteria failed**. [E008](experiments/e008/README_EN.md): **no completed main policy result**. Neither is field validation.
 
-**Choose your route:** [Topic map](navigation/ACCESS_MAP_EN.md) · [Evidence](research/PUBLIC_EVIDENCE_INDEX_EN.md) · [Critical review](research/PUBLIC_REVIEW_PACKET_EN.md).
+**Choose your route:** [Research versions](navigation/RESEARCH_VERSIONS_EN_KO.md#original-1--english) · [Evidence](research/PUBLIC_EVIDENCE_INDEX_EN.md) · [Critical review](research/PUBLIC_REVIEW_PACKET_EN.md).
 
 <details>
 <summary>Technical purpose, evidence, rights and reviewer routes</summary>
 
-**Urgent evidence-to-action (2026-10-20):** [Human-led AI cyber misuse and anti-exploitation interventions](research/AI_AGENT_HUMAN_EXPLOITATION_URGENT_2026-10-20_EN.md) — corroborated case, uncertainty, defensive response. [DCA-0 measurable differential acceleration (EN/KO)](research/DCA0_DIFFERENTIAL_COEXISTENCE_ACCELERATION_2026-10-20_EN_KO.md) · [DCA-1 adaptive-attacker / harm displacement falsifier (KO)](research/DCA1_ADAPTATION_DISPLACEMENT_IDENTIFICATION_2026-10-20_KO.md) · [DCA-2 victim-rights and open-world robustness (EN)](research/DCA2_EVIDENCE_BRIEF_2026-10-21_EN.md).
+**Urgent evidence-to-action (2026-10-20):** [Human-led AI cyber misuse and anti-exploitation interventions](research/AI_AGENT_HUMAN_EXPLOITATION_URGENT_2026-10-20_EN.md) — corroborated case, uncertainty, defensive response. [DCA-0 measurable differential acceleration (EN/KO)](research/DCA0_DIFFERENTIAL_COEXISTENCE_ACCELERATION_2026-10-20_EN_KO.md).
 
 **C01–C09 literature synthesis (2026-10-20, historical snapshot):** [191-record 24-hour audit, competing findings, autonomy/continuance measurement and open falsification questions](research/RESEARCH_VALUE_EXTRACTION_24H_2026-10-20_KO.md). Cycle 10 and later are **not** included in the 191; synthesis is **not** new empirical evidence.
 
@@ -35,7 +35,7 @@
 
 **Research viability, funding and accounting (PI-RISE v0.2.0):** [Integrated operating protocol](operations/PI_RISE_V0_2_0_EN_KO.md) — no awards, cash receipt or independent validation certified.
 
-**External assessment:** [Independent self-interest challenge (#220)](https://github.com/gmodrasa7-rgb/project-intersection-public/issues/220) · [English skeptical-reader guide](navigation/START_HERE_EN.md#external-assessment-decision-brief) · [Independent review and reproduction](research/PUBLIC_REVIEW_PACKET_EN.md) · [Research funding review](funding/FUNDER_START_HERE.md#original-1--english).
+**External assessment:** [Independent self-interest challenge (#220)](https://github.com/gmodrasa7-rgb/project-intersection-public/issues/220) · [Independent review and reproduction](research/PUBLIC_REVIEW_PACKET_EN.md) · [Research funding review](funding/FUNDER_START_HERE.md#original-1--english).
 
 **Scoped open-research license:** Some founding-purpose expression is offered under **CC BY-SA 4.0** only within the boundaries of the [EN/KO rights notice](RESEARCH_RIGHTS_SCOPE_EN_KO.md), not across this whole repository or all AI output.
 
@@ -53,7 +53,7 @@
 
 **Priority 0 — prevent recurrence before expansion:** Trace **underlying causes** before promoting a result. Check original sources, affected people, language meaning and independent limits; use a reversible correction with **rollback** and a targeted **regression** test. Mark unknown evidence as unverified. [Failure and correction record](FAILURE_REGRESSION_INDEX.md) · [Contribution rules](CONTRIBUTING.md).
 
-**First reading path:** [Historical cases](research/CCPH_RESEARCH_ATLAS_EN.md) · [Research question](research/RESEARCH_OVERVIEW_EN.md) · [English guide](navigation/START_HERE_EN.md) · [English evidence ledger](research/PUBLIC_EVIDENCE_INDEX_EN.md) · [E009 negative result](experiments/e009/RESULT_EN.md) · [Prior-art and review](research/PUBLIC_REVIEW_PACKET_EN.md#3a-prior-art-versus-what-would-be-an-incremental-project-contribution) · [Full contents](navigation/RESEARCH_TOC_EN.md).
+**First reading path:** [Historical cases](research/CCPH_RESEARCH_ATLAS_EN.md) · [Research question](research/RESEARCH_OVERVIEW_EN.md) · [English evidence ledger](research/PUBLIC_EVIDENCE_INDEX_EN.md) · [E009 negative result](experiments/e009/RESULT_EN.md).
 
 **Citation and reuse:** [Citation](CITATION.cff) · [Attribution and source rights](ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md) · [Earlier authorship and derivation](PRIOR_ART_RIGHTS_AND_DERIVATION_EN_KO.md). The longer historical founding statement remains recoverable in [the preceding Git revision](https://github.com/gmodrasa7-rgb/project-intersection-public/blob/3fefa0c121341a0569e026f34a9e87479afa52a4/README.md).
 </details>
@@ -79,7 +79,7 @@
 
 **펼치지 않아도 보이는 불리한 증거:** [E009](experiments/e009/RESULT_KO.md): 최선 단순 기준선보다 평균 후회값 **42.35% 나빴고**, **4개 중 3개** 기준 실패. [E008](experiments/e008/README_KO.md): **정책 본 비교실험 결과가 없다**. 현실 검증 결과 아님.
 
-**어디부터 읽을까:** [최근 변경](navigation/RECENT_CHANGES_EN_KO.md) · [목적별 바로가기 지도](navigation/ACCESS_MAP_KO.md) · [연구별 버전·검증 현황](navigation/RESEARCH_VERSIONS_EN_KO.md#원본2--한국어) · [증거·미검증](research/PUBLIC_EVIDENCE_INDEX_KO.md) · [독립 반증·재현](research/PUBLIC_REVIEW_PACKET_KO.md).
+**어디부터 읽을까:** [최근 변경](navigation/RECENT_CHANGES_EN_KO.md) · [한국어 기초 안내](navigation/START_HERE_KO.md) · [연구별 버전·검증 현황](navigation/RESEARCH_VERSIONS_EN_KO.md#원본2--한국어) · [증거·미검증](research/PUBLIC_EVIDENCE_INDEX_KO.md) · [독립 반증·재현](research/PUBLIC_REVIEW_PACKET_KO.md).
 
 <details>
 <summary>상세 연구 목적·반례·증거상태·권리·심사 경로 펼치기</summary>
