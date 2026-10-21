@@ -8,6 +8,8 @@
 
 This English edition extracts the legacy English evidence ledger and E009 result boundary, and separately summarizes dated updates. This is not an independent translation quality assessment or independent scientific validation. Preserve experimental identifiers, source authorship, negative findings, and historical revisions.
 
+**2026-10-21 PI-PACD-OCG v0.1.0 (new research protocol):** [EN methods and six falsifiers](PI_PACD_OCG_V0_1_0_EN.md) · [KO](PI_PACD_OCG_V0_1_0_KO.md). Six source leads, 12 unexecuted fictional matched cases. **No model experiment, causal field observation, independent replication or proof of conscious owner resistance.** Parent PACD v0.1.0 unchanged.
+
 ## Focused updates subsequent to the last full scientific review
 
 **Important dates:** The last full evidence review recorded was **2026-10-06**. Identity/navigation corrections and narrower synthetic checks followed; this English reader edition is **not** a new complete scientific assessment.
