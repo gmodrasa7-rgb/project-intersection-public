@@ -2,7 +2,7 @@
 <!-- L0_FOREWORD_FIRST: Original 1 English then Original 2 Korean, full matched text. Never promote a case study above this top-level purpose. -->
 
 ## Original 1 — English | Founding Purpose
-**Reading language:** English · [Read in Korean](navigation/START_HERE_KO.md) · [Korean in 1 minute](navigation/ONE_MINUTE_KO.md) · [English in 1 minute](navigation/ONE_MINUTE_EN.md) · [5-minute guide](navigation/FIVE_MINUTES_EN.md).
+**Read:** EN · [Korean](navigation/START_HERE_KO.md) · [KO 1m](navigation/ONE_MINUTE_KO.md) · [EN 1m](navigation/ONE_MINUTE_EN.md) · [5m](navigation/FIVE_MINUTES_EN.md).
 
 **The problem:** Powerful humans, deployed AI and future agents may gain by exploiting or removing weaker agents. Preserving independence also costs resources.
 
