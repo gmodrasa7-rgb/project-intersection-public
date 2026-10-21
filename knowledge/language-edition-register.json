@@ -662,14 +662,14 @@
     }
   ],
   "metrics": {
-    "markdown_total": 264,
+    "markdown_total": 265,
     "filename_classes": {
       "UNMARKED_LANGUAGE_UNVERIFIED": 46,
       "LEGACY_MIXED_READER_ENTRY": 2,
       "KO_SUFFIX_UNVERIFIED": 121,
       "ORDERED_BILINGUAL_FOUNDER_OR_GOVERNANCE": 2,
       "EN_SUFFIX_UNVERIFIED": 51,
-      "COMBINED_NAMING_UNVERIFIED": 42
+      "COMBINED_NAMING_UNVERIFIED": 43
     },
     "meaning_verified_pairs": 0,
     "meaning_verified_pairs_is_a_status_count_not_a_claim_that_no_reviews_ever_occurred": true
@@ -1767,6 +1767,12 @@
       "content_equivalence": "NOT_REVIEWED"
     },
     {
+      "path": "research/INDIVIDUAL_RESEARCH_VERSIONS_V0_1_0_EN_KO.md",
+      "filename_class": "COMBINED_NAMING_UNVERIFIED",
+      "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
       "path": "research/INTERGENERATIONAL_TRAITS_WEALTH_POWER_AI_CONVERGENCE_2026-10-12_KO.md",
       "filename_class": "KO_SUFFIX_UNVERIFIED",
       "counterpart_path": null,
@@ -2852,6 +2858,14 @@
         "research/PI_PACD_PRS_OSL_V0_1_0_KO.md"
       ],
       "scope": "paired filenames only, scientific novelty and translation meaning unverified"
+    },
+    {
+      "date": "2026-10-22",
+      "event": "INDIVIDUAL_STUDY_INITIAL_VERSION_BILINGUAL_COMBINED_DOCUMENT",
+      "new_documents": [
+        "research/INDIVIDUAL_RESEARCH_VERSIONS_V0_1_0_EN_KO.md"
+      ],
+      "scope": "English-original-1 and Korean-original-2 within one document; independent semantic parity not certified"
     }
   ],
   "path_layout_policy": "Keep the project root entry-only; bilingual full research editions live in existing research/ and their original historical combined documents retain stable root URLs."
