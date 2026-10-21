@@ -343,8 +343,8 @@ class FLRValidationTests(unittest.TestCase):
         self.assertEqual(set(plan["check_ids"]),
                          {"README_L0","LANGUAGE","RISE_MANIFEST"})
         def forced_failure(command, **kwargs):
-            return SimpleNamespace(returncode=1 if "pi_rise_manifest_guard.py"
-                                   in command else 0)
+            return SimpleNamespace(returncode=1 if
+                                   "tools/pi_rise_manifest_guard.py" in command else 0)
         observed=replay.execute(plan,run=forced_failure)
         self.assertEqual(observed["status"],"BLOCKED_FAILED")
         self.assertEqual(observed["failed_checks"],["RISE_MANIFEST"])
