@@ -514,6 +514,22 @@
         "EN edition is a shorter independent-language summary; no external semantic parity assessor.",
         "No original Stata code or dataset downloaded, no original estimates rerun; metadata-level verification only."
       ]
+    },
+    {
+      "id": "PI-MER-EI-FREE-TO-FAIL-20261021",
+      "original_1_english": "research/MER_EI_FREE_TO_FAIL_REPRO_READINESS_2026-10-21_EN.md",
+      "original_2_korean": "research/MER_EI_FREE_TO_FAIL_REPRO_READINESS_2026-10-21_KO.md",
+      "kind": "original_preprint_numeric_read_and_zenodo_access_gate_NO_RVD_PROMOTION",
+      "structural_pair_present": true,
+      "meaning_review_status": "NOT_INDEPENDENTLY_VERIFIED",
+      "original_conception_language": "KO_HUMAN_LED_RESEARCH_QUESTION_AI_PRIOR_SCHOLAR_SOURCE_REVIEW",
+      "independent_review_receipt": null,
+      "one_sided_edit_exception": null,
+      "known_divergences": [
+        "EN is scoped digest of Korean research report, unreviewed semantic equivalence.",
+        "2023 preprint statistics may be revised in 2026 Economic Journal version.",
+        "New Zenodo metadata exists but primary data/README code cannot be downloaded in current environment; no original table reproduction."
+      ]
     }
   ],
   "legacy_priority_unresolved": [
@@ -555,12 +571,12 @@
     }
   ],
   "metrics": {
-    "markdown_total": 219,
+    "markdown_total": 221,
     "filename_classes": {
       "UNMARKED_LANGUAGE_UNVERIFIED": 45,
       "LEGACY_MIXED_READER_ENTRY": 2,
-      "KO_SUFFIX_UNVERIFIED": 96,
-      "EN_SUFFIX_UNVERIFIED": 35,
+      "KO_SUFFIX_UNVERIFIED": 97,
+      "EN_SUFFIX_UNVERIFIED": 36,
       "ORDERED_BILINGUAL_FOUNDER_OR_GOVERNANCE": 2,
       "COMBINED_NAMING_UNVERIFIED": 39
     },
@@ -1607,6 +1623,18 @@
       "content_equivalence": "NOT_REVIEWED"
     },
     {
+      "path": "research/MER_EI_FREE_TO_FAIL_REPRO_READINESS_2026-10-21_EN.md",
+      "filename_class": "EN_SUFFIX_UNVERIFIED",
+      "counterpart_path": "research/MER_EI_FREE_TO_FAIL_REPRO_READINESS_2026-10-21_KO.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "research/MER_EI_FREE_TO_FAIL_REPRO_READINESS_2026-10-21_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": "research/MER_EI_FREE_TO_FAIL_REPRO_READINESS_2026-10-21_EN.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
       "path": "research/MER_RESONANCE_VALUE_FORMATION_2026-10-20_EN.md",
       "filename_class": "EN_SUFFIX_UNVERIFIED",
       "counterpart_path": "research/MER_RESONANCE_VALUE_FORMATION_2026-10-20_KO.md",
@@ -2363,6 +2391,17 @@
       "new_edition_pairs": 1,
       "editorial_notes": "Official AER paper/deposit identities and 2021 source file-list verified. 2026 ICPSR migration official notice, legacy PDF download 403 cause undetermined. Full text/README/script/data contents unavailable; no replicated outputs, version or evidence promotion.",
       "reviewer_actions": "Independent source access and license/environment verification, blinded variable/table mapping, original paper reproduction before empirical claim."
+    },
+    {
+      "as_of": "2026-10-21",
+      "status": "MER_EI_SOFT_HARD_PRIMARY_PREPRINT_READ_ZENODO_DOWNLOAD_BLOCKED",
+      "new_documents": [
+        "research/MER_EI_FREE_TO_FAIL_REPRO_READINESS_2026-10-21_EN.md",
+        "research/MER_EI_FREE_TO_FAIL_REPRO_READINESS_2026-10-21_KO.md"
+      ],
+      "new_edition_pairs": 1,
+      "editorial_notes": "Original 2023 IZA human study numeric hard/soft intervention effects read; 2026 Zenodo primary package discovered but source file bytes inaccessible. No additional RVD hypothesis, AI mental state observation, replicated table or RVD version change.",
+      "reviewer_actions": "Verify 2026 final journal revisions, independently download and checksum README+ZIP, inspect legitimate license and participant privacy, reproduce authors' study table."
     }
   ],
   "path_layout_policy": "Keep the project root entry-only; bilingual full research editions live in existing research/ and their original historical combined documents retain stable root URLs."
