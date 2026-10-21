@@ -530,6 +530,20 @@
         "2023 preprint statistics may be revised in 2026 Economic Journal version.",
         "New Zenodo metadata exists but primary data/README code cannot be downloaded in current environment; no original table reproduction."
       ]
+    },
+    {
+      "id": "PI-C15-ENTRY",
+      "original_1_english": "research/C15_REVIEW_EN.md",
+      "original_2_korean": "research/C15_REVIEW_KO.md",
+      "kind": "navigation_only",
+      "structural_pair_present": true,
+      "meaning_review_status": "NOT_INDEPENDENTLY_VERIFIED",
+      "original_conception_language": "ko_historical_entry_preserved",
+      "independent_review_receipt": null,
+      "one_sided_edit_exception": null,
+      "known_divergences": [
+        "English document is a brief newly written navigation companion, not a verified full translation of C15 Korean research."
+      ]
     }
   ],
   "legacy_priority_unresolved": [
@@ -571,12 +585,12 @@
     }
   ],
   "metrics": {
-    "markdown_total": 221,
+    "markdown_total": 231,
     "filename_classes": {
-      "UNMARKED_LANGUAGE_UNVERIFIED": 45,
+      "UNMARKED_LANGUAGE_UNVERIFIED": 46,
       "LEGACY_MIXED_READER_ENTRY": 2,
-      "KO_SUFFIX_UNVERIFIED": 97,
-      "EN_SUFFIX_UNVERIFIED": 36,
+      "KO_SUFFIX_UNVERIFIED": 105,
+      "EN_SUFFIX_UNVERIFIED": 37,
       "ORDERED_BILINGUAL_FOUNDER_OR_GOVERNANCE": 2,
       "COMBINED_NAMING_UNVERIFIED": 39
     },
@@ -1473,6 +1487,60 @@
       "content_equivalence": "NOT_REVIEWED"
     },
     {
+      "path": "research/C15_BOUNDARY_PART1_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "research/C15_FINDINGS_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "research/C15_LIMITS_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "research/C15_RESEARCH_STATUS_2026-10-21.md",
+      "filename_class": "UNMARKED_LANGUAGE_UNVERIFIED",
+      "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "research/C15_REVIEW_EN.md",
+      "filename_class": "EN_SUFFIX_UNVERIFIED",
+      "counterpart_path": "research/C15_REVIEW_KO.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "research/C15_REVIEW_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": "research/C15_REVIEW_EN.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "research/C15_SOURCES_A_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "research/C15_SOURCES_B_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "research/C15_THRESHOLD_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
       "path": "research/CCPH_RESEARCH_ATLAS_EN.md",
       "filename_class": "EN_SUFFIX_UNVERIFIED",
       "counterpart_path": "research/CCPH_RESEARCH_ATLAS_KO.md",
@@ -1678,6 +1746,12 @@
     },
     {
       "path": "research/PRIOR_ART_C14_MOTIVES_VETO_REPLICATION_2026-10-21_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "research/PRIOR_ART_C15_IDENTITY_DEPENDENCY_GOAL_DRIFT_2026-10-21_KO.md",
       "filename_class": "KO_SUFFIX_UNVERIFIED",
       "counterpart_path": null,
       "content_equivalence": "NOT_REVIEWED"
@@ -2402,6 +2476,12 @@
       "new_edition_pairs": 1,
       "editorial_notes": "Original 2023 IZA human study numeric hard/soft intervention effects read; 2026 Zenodo primary package discovered but source file bytes inaccessible. No additional RVD hypothesis, AI mental state observation, replicated table or RVD version change.",
       "reviewer_actions": "Verify 2026 final journal revisions, independently download and checksum README+ZIP, inspect legitimate license and participant privacy, reproduce authors' study table."
+    },
+    {
+      "date": "2026-10-21",
+      "event": "C15_LANGUAGE_INVENTORY_REPAIR",
+      "scope": "Nine main-branch C15 Markdown artifacts registered after concurrent C15 addition; no content equivalence or scientific review certified",
+      "note": "C15 short navigation root entry relocated under research directory with path-relative links changed; previous Git tree retains prior location."
     }
   ],
   "path_layout_policy": "Keep the project root entry-only; bilingual full research editions live in existing research/ and their original historical combined documents retain stable root URLs."
