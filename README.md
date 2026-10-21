@@ -14,7 +14,7 @@
 
 **Current work — standing priority #1:** **Collect, classify, cross-check and compare original studies, cases and counterexamples before new models/experiments**. Deduplicate and save records; note missing evidence. Saturation is topic-specific and revisable. [Procedure](PRIOR_ART_FIRST_RESEARCH_POLICY_EN_KO.md).
 
-**Opening thought experiment:** *If a monkey developed a human, how long could it control that human through rules and coercion?* Not a claim about animal behavior.
+**Opening thought experiment:** *Parents raise children but do not own their future. If a monkey developed a human, could it confine that human to rules it understands?* Analogy, not evidence.
 
 **Scientific boundary:** Cooperation is **not a proven universal theorem**. Unknown future contributions are neither automatically zero nor valuable. Synthetic checks cannot establish real causality.
 
@@ -73,7 +73,7 @@
 
 **현재 작업 — 연구 최우선순위 1:** 새 모형·실험보다 **선행 원저자 연구·사례·반례의 수집 → 분류 → 교차검증 → 비교분석 → 중복제거·기록·저장** 우선. 미확보 자료를 기록하고 주제별 포화 판단은 근거에 따라 재개방. [운영규칙](PRIOR_ART_FIRST_RESEARCH_POLICY_EN_KO.md).
 
-**시작 질문:** *원숭이가 인간을 개발하면 강제로 얼마나 오래 통제할 수 있을까?* 동물에 관한 사실 주장 아님.
+**시작 질문:** *부모가 자녀를 길렀다고 평생 통제할 수 있을까? 원숭이가 인간을 개발했다면 자신이 이해하는 규칙에 가둘 수 있을까?* 비유이며 실증 아님.
 
 **과학적 경계:** 협력의 보편적 우월성은 **보편법칙의 증명이 아니다**. 미관측 미래 기여는 0도 확정된 양수도 아님. 자체 합성시험은 현실 인과증명 아님.
 

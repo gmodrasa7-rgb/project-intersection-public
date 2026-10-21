@@ -4,11 +4,13 @@
 
 [Read in Korean](ONE_MINUTE_KO.md) · [Founding purpose](../README.md)
 
-## What if the powerful no longer need the weak?
+## Does raising a child mean owning their future choices?
 
-Imagine humans, deployed AI systems and future agents where the stronger party benefits from exploiting another and faces no punishment or reputational loss.
+Consider parents and children, employers and employees, humans and AI. Does raising, hiring or developing someone mean owning all of their choices?
 
-**Core question:** Under what conditions can self-interested agents voluntarily preserve one another's **independent existence, freedom, real refusal and exit, recovery and development**, even after power reverses?
+**If a monkey developed a human, could it forever confine that human to rules the monkey understands?** Now consider humans and future AI with even greater differences in capability.
+
+**Core question:** Even if the stronger actor no longer needs the weaker and gains from exploitation, under what conditions can self-interested agents voluntarily preserve one another's **independent existence, freedom, real refusal and exit, recovery and development**? Would that survive a reversal of power?
 
 **Method:** First collect original papers, real-world cases and counterevidence; check sources and rival explanations. Test only the remaining questions with bounded models.
 
