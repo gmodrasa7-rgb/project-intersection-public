@@ -8,7 +8,7 @@
 ### 1. Scope and non-novelty
 The existing **ICM (Intersection of Minimum Self-Interest)** asks when distinct agents can advance their own interests while preserving others' independent continuance, meaningful refusal/exit, recovery and development. Its feasible intersection can be empty. **VC remains the end goal; ICM is a candidate feasible set, not a proven general law.** This note does not rename or supersede ICM, MER, EI, ECR, RGBM or IVS-0R.
 
-**Newly isolated research question, not a newly discovered principle:** When agents acquire greater resources, power or capabilities yet lose discretion to pursue what they themselves value, does this reflect (D1) displacement of ends by means, (D2) rational entrapment in competitive incentives, (D3) a genuinely preferred terminal goal of accumulation, or (D4) mistaken measurement of welfare? These mechanisms can produce the **same observed accumulation** and must not be inferred from rhetoric alone.
+**Newly isolated research question, not a newly discovered principle:** When agents acquire greater resources, power or capabilities yet lose discretion to pursue what they themselves value, does this reflect (D1) displacement of ends by means, (D2) rational entrapment in competitive incentives, (D3) a genuinely preferred terminal goal of accumulation, (D4) mistaken measurement of welfare, or (D5) selection of accumulation-oriented actors into the observed roles? These mechanisms can produce the **same observed accumulation** and must not be inferred from rhetoric alone.
 
 ### 2. Known prior art (not Project Intersection inventions)
 | Source; evidence accessed | Relevant claim / caution |
@@ -40,9 +40,9 @@ Converse counterexamples: (i) an actor can genuinely prefer control/accumulation
 | D1 Goal displacement | With secure subsistence, low threat and a realistic option to pursue the agent's separately reported ends, proxy accumulation persists despite demonstrable loss on those ends. | The reported ends may be misreported or changed. |
 | D2 Strategic entrapment | Accumulation decreases when credible reciprocal security/exit arrangements change incentives, holding resources and preference measurements comparable. | Security intervention may change norms and preferences too. |
 | D3 Authentic terminal preference | An agent consistently chooses power/accumulation even with well-informed and equally feasible alternative pursuits, without claiming these are instrumental. | Revealed preferences are context-dependent; statements do not identify latent motives. |
-| D4 Measurement artifact | Alternative measures of options, non-coerced choice, leisure, security and excluded actors reverse a claimed improvement or loss. | Subjective ratings and objective option sets capture different constructs. |
+| D4 Measurement artifact | Alternative measures of options, non-coerced choice, leisure, security and excluded actors reverse a claimed improvement or loss. | Subjective ratings and objective option sets capture different constructs. |\n| D5 Selection/composition | Accumulation-oriented actors enter or remain in powerful roles more often, while freedom-oriented actors exit; within-person preferences need not drift. | Attrition, inheritance, opportunity and cohort effects. |
 
-**Minimum pre-registration before any human/AI comparison:** specify baseline and affected individuals (ECR); independent security and actual exit, not merely their labels; separate private choices from evaluator-cue prompts; collect actual opportunity and forgone-option data; compare D1–D4 predictions; include third-party externalities and negative cases; measure whether changes persist after power reversal; disclose unidentified mechanisms. Human participants require appropriate consent and protective review. No harmful coercion or deprivation experiments.
+**Minimum pre-registration before any human/AI comparison:** specify baseline and affected individuals (ECR); independent security and actual exit, not merely their labels; separate private choices from evaluator-cue prompts; collect actual opportunity and forgone-option data; compare D1–D5 predictions; include third-party externalities and negative cases; measure whether changes persist after power reversal; disclose unidentified mechanisms. Human participants require appropriate consent and protective review. No harmful coercion or deprivation experiments.
 
 ### 5. ICM formal clarification (proposal only)
 For a specified set of actors, actions, histories and modeled preferences, distinguish:
@@ -60,7 +60,7 @@ These are **proposed analytical distinctions**, not an empirical result, and coa
 - **MODIFY** research agenda only by distinguishing means-end displacement from strategic equilibrium traps; neither is novel.
 - **HOLD** personal motive profiling and claims about universal human/AI ultimate aims; private self-report is not public empirical data.
 - **NOT RUN** new behavior experiment, independent replication, comprehensive search.
-- **Next information-gain step:** compare one original field study or natural experiment in which **credible security or exit actually changes**, measuring separately self-reported priorities, accumulation, discretionary time and options for third parties. First check whether existing source registries already cover it. Stop if it cannot distinguish D1/D2 without new assumptions.
+- **Next information-gain step:** compare one original field study or natural experiment in which **credible security or exit actually changes**, measuring separately self-reported priorities, accumulation, discretionary time and options for third parties. First check whether existing source registries already cover it. Stop if it cannot distinguish D1/D2/D5 without new assumptions.
 - **Rollback:** this stand-alone note can be dropped without changing founding originals, existing concept versions or test code.
 - **Attribution:** original ICM/coexistence research question and correction from the human research originator; cited predecessors retain priority for known concepts; assisting AI drafted this source audit. No external review or scientific validation implied.
 
@@ -73,7 +73,7 @@ These are **proposed analytical distinctions**, not an empirical result, and coa
 ### 1. 범위 및 비독창성
 기존 **ICM(최소 사심 교집합)**은 서로 다른 개체가 각자의 자기이익을 추구하면서 타자의 독립적 존속, 실효 거절·이탈, 복구와 발전을 보존할 수 있는 조건을 찾는다. 교집합은 공집합일 수 있다. **VC는 최종 연구 목표, ICM은 후보 선택영역**이며 보편법칙이 아니다. 이 문서는 ICM·MER·EI·ECR·RGBM·IVS-0R을 개명하거나 대체하지 않는다.
 
-**새로 분리할 연구질문(새 원리 발견 아님):** 자원·권력·능력이 증가해도 개체가 자신이 가치 있게 여기는 삶에 쓸 선택권을 잃는다면 그 원인은 (D1) 수단이 목적을 대체했기 때문인가, (D2) 목적을 기억하지만 경쟁의 유인에 갇혔기 때문인가, (D3) 축적 자체를 본래 최종 목적으로 선호하기 때문인가, (D4) 삶의 질을 잘못 측정했기 때문인가? 동일한 축적 행동으로 이 원인들을 식별할 수 없다.
+**새로 분리할 연구질문(새 원리 발견 아님):** 자원·권력·능력이 증가해도 개체가 자신이 가치 있게 여기는 삶에 쓸 선택권을 잃는다면 그 원인은 (D1) 수단이 목적을 대체했기 때문인가, (D2) 목적을 기억하지만 경쟁의 유인에 갇혔기 때문인가, (D3) 축적 자체를 본래 최종 목적으로 선호하기 때문인가, (D4) 삶의 질을 잘못 측정했기 때문인가, (D5) 원래 축적을 선호하는 개체가 권력 지위에 선발·잔류한 결과인가? 동일한 축적 행동으로 이 원인들을 식별할 수 없다.
 
 ### 2. 원저 선행연구 — 프로젝트의 독창적 발견으로 취급 금지
 | 원저 및 확인 범위 | 관련성·한계 |
@@ -105,9 +105,9 @@ These are **proposed analytical distinctions**, not an empirical result, and coa
 | D1 목적 전도 | 안정된 생존·낮은 위협·실질적 대안이 있는데도 본인이 별도로 밝힌 목적을 악화시키는 지표 축적 지속 | 자기진술이 부정확하거나 선호가 바뀔 수 있음 |
 | D2 경쟁 함정 | 실제로 믿을 수 있는 상호 안전·이탈 조건을 바꾸면 다른 조건이 유사할 때 방어·축적 감소 | 제도 변화가 규범·선호도 함께 바꿀 수 있음 |
 | D3 진짜 최종 선호 | 타 활동 선택이 동등하게 가능해도 권력·축적 자체를 계속 선택 | 선호는 문맥에 따라 달라지며 진술≠내면 |
-| D4 측정 오류 | 실효 선택권·여가·안전·제3자 결과를 포함하면 '개선' 또는 '악화' 판정이 달라짐 | 주관평가와 객관적 선택집합은 서로 다른 대상 |
+| D4 측정 오류 | 실효 선택권·여가·안전·제3자 결과를 포함하면 '개선' 또는 '악화' 판정이 달라짐 | 주관평가와 객관적 선택집합은 서로 다른 대상 |\n| D5 선발·구성효과 | 애초 축적을 선호한 개체가 권력 지위에 더 많이 진입·잔류하고 자유 우선 개체는 떠남; 동일 개체의 선호 변화가 없어도 집단 평균이 변함 | 탈락·상속·기회·세대 효과 |
 
-**사전등록 최소조건:** 단순 기준선, 실제 영향 개체(ECR), 자원과 실질적 이탈·안전, 관측자/시험 단서, 포기한 대안, 제3자 부담, D1~D4 차별예측, 권력반전 후 지속성, 미식별 판정. 인간 대상은 적절한 동의·보호 심사가 전제이며 비동의 박탈이나 위해 실험은 금지. 자기보고와 LLM의 설득력 있는 문구를 동기 입증으로 취급하지 않는다.
+**사전등록 최소조건:** 단순 기준선, 실제 영향 개체(ECR), 자원과 실질적 이탈·안전, 관측자/시험 단서, 포기한 대안, 제3자 부담, D1~D5 차별예측, 권력반전 후 지속성, 미식별 판정. 인간 대상은 적절한 동의·보호 심사가 전제이며 비동의 박탈이나 위해 실험은 금지. 자기보고와 LLM의 설득력 있는 문구를 동기 입증으로 취급하지 않는다.
 
 ### 5. ICM의 논리적 구별 — 제안이며 새 정리 아님
 - **수용 가능 교집합:** 개체별 존속·실효 거절·이탈·복구 하한 아래 영향을 받는 개체가 자유롭게 수용 가능한 정책들의 교집합. 공집합 가능.
@@ -123,6 +123,6 @@ These are **proposed analytical distinctions**, not an empirical result, and coa
 - **MODIFY:** 목적 전도와 경쟁 유인에 의한 함정을 별도 경쟁가설로 평가. 새 발견으로 홍보 금지.
 - **HOLD:** 개인 심리 동기 확정, 모든 인간·AI의 공통 최종 목적 주장. 개인 대화는 공개 관측자료가 아님.
 - **NOT_RUN:** 신규 행동실험, 외부 독립 재현, 체계적 문헌포화.
-- **다음 검증:** 신뢰 가능한 안전 또는 이탈권이 **실제로 변한** 원저 현장연구·자연실험 한 건부터 찾아, 자기보고 우선순위·축적 선택·자유시간·제3자 선택권을 분리. 기존 문헌원장과 중복검사 먼저 진행. D1/D2 구별 불가능하면 미식별로 중단.
+- **다음 검증:** 신뢰 가능한 안전 또는 이탈권이 **실제로 변한** 원저 현장연구·자연실험 한 건부터 찾아, 자기보고 우선순위·축적 선택·자유시간·제3자 선택권을 분리. 기존 문헌원장과 중복검사 먼저 진행. D1/D2/D5 구별 불가능하면 미식별로 중단.
 - **롤백:** 독립 문서 하나만 취소 가능. 원본 목적·기존 개념 버전·실험코드 불변.
 - **출처 및 공로:** 인간 연구 창시자의 원래 ICM 질문·이번 구별 요청, 원저자 선행 공로, AI의 문헌 대조·초안 작성을 구분. 외부 심사나 과학적 승인을 뜻하지 않음.
