@@ -6,7 +6,7 @@
   "canonical_RVD_version": "v0.7.0",
   "new_RVD_hypotheses": 0,
   "new_RVD_empirical_studies": 0,
-  "external_distinct_studies": 14,
+  "external_distinct_studies": 16,
   "full_text_reviews_completed": "NOT_COMPREHENSIVE",
   "bibliography_saturated": false,
   "verification_policy": "Publisher/author/peer-reviewed originals preferred; where unavailable bibliographic databases and source abstract only. Distinguish public replication materials from independently rerun code or studies.",
@@ -19,7 +19,9 @@
     "Carlsson et al. report majority coercive minimum donations in one setup, whereas Ackfeld/Ockenfels find only a minority ban the selfish option in a different charitable setup; heterogeneity and design differences bar a universal prosocial-coercion rate.",
     "Gangadharan et al. 2018 report warm-glow donor types less paternalistic than altruistic donor types in specific donation-control tasks; welfare care and preserving beneficiary autonomy must be separately measured.",
     "Freundt/Herz/Kopp 2026 shows heterogeneous intrinsic preference for OWN decision rights, not direct evidence of protecting an ORIGINAL OTHER B's freedom.",
-    "Bartling et al. 2023 Study1 original-author preprint: 55pp hard-vs-soft intervention take-up difference in randomized human conditions; does not directly identify intrinsic other-B autonomy value."
+    "Bartling et al. 2023 Study1 original-author preprint: 55pp hard-vs-soft intervention take-up difference in randomized human conditions; does not directly identify intrinsic other-B autonomy value.",
+    "The 2017 Neri/Rommeswinkel vs 2020 Ferreira/Hanaki/Tarroux findings emphasize interference aversion vs self-reliance for OWN decision rights under different experimental methods, not a direct replication failure or simple universal preference.",
+    "New Feldhaus et al. 2026 8.9% OWN-choice value is sample/method-specific and must never be transferred to A valuing another original B's autonomy; meaningful delegation remains possible."
   ],
   "prior_overlap": "Bartling, Fehr and Herz (2014) already cited in RVD earlier cycle and not recounted as new source in this incremental ledger. Chlass working-paper and final article are versions of one scholarly lineage; Ambuehl openICPSR dataset is a replication PACKAGE, not a replication STUDY. Freundt/Herz/Kopp CESifo 2023 working paper and 2026 JPubE journal article are one underlying lineage, not independent replications. Bartling et al. 2023 IZA/working papers, forthcoming Economic Journal and Zenodo 2026 are one original research lineage, not independent studies/replications.",
   "unreviewed_gaps": [
@@ -237,7 +239,34 @@
       "interpretation": "Shows intervention modality choice among US human lab spectators; does not identify A's intrinsic original-B rights preference or strong-power exploitation behavior.",
       "scope": "2023 full IZA preprint targeted sections including random treatment, study sample, preanalysis changes and reported original numeric results; no raw participant data acquired.",
       "prior_project": "NEW_DISTINCT_SOURCE_LINEAGE_WITH_2023_PREPRINT_AND_2026_DEPOSIT_EDITION"
+    },
+    {
+      "id": "NERI_ROMMESWINKEL_2017",
+      "authors": "Claudia Neri; Hendrik Rommeswinkel",
+      "year": 2017,
+      "title": "Decision Rights: Freedom, Power, and Interference",
+      "doi": "10.2139/ssrn.2485107",
+      "publisher_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2485107",
+      "evidence_kind": "HUMAN_LAB_EXPERIMENT_WORKING_PAPER_NO_PEER_REVIEW_STATUS_ASSUMED",
+      "mechanism": "Under their decision-rights procedures, disutility from others' interference explained own-rights valuation more than freedom and power",
+      "rival_to": "intrinsic decision rights are a unitary preference not affected by decomposition or experiment",
+      "interpretation": "Contrast with Ferreira et al 2020 self-reliance under different task designs; neither tests powerful A preserving another B's own rights",
+      "scope": "Original author abstract and reference in 2020 journal source; working paper versions deduplicated"
+    },
+    {
+      "id": "FELDHAUS_LINGENS_LOESCHEL_ZUNKER_2026",
+      "authors": "Christoph Feldhaus; Jörg Lingens; Andreas Löschel; Gerald Zunker",
+      "year": 2026,
+      "title": "Measuring the intrinsic value of choice",
+      "doi": "10.1016/j.euroecorev.2025.105254",
+      "publisher_url": "https://www.sciencedirect.com/science/article/pii/S0014292125003046",
+      "evidence_kind": "HUMAN_INCENTIVIZED_ONLINE_EXPERIMENT_PUBLISHED_EUROPEAN_ECONOMIC_REVIEW",
+      "mechanism": "Authors estimate intrinsic value of participants' OWN choice at 8.9% of endowments averaged in that experiment, separated from the outcome-based value within their model",
+      "rival_to": "decision rights only have instrumental outcome payoff value",
+      "interpretation": "Own-right valuation cannot be imputed to A respecting original B; no general utility constant and no independent reproduction; publisher says data upon request",
+      "scope": "Original publisher abstract and RePEc author metadata, full text/data not independently reviewed"
     }
   ],
-  "replication_preflight_audit": "2026-10-21 metadata-level access verification and 2026 ICPSR migration caution; no experimental measurements added."
+  "replication_preflight_audit": "2026-10-21 metadata-level access verification and 2026 ICPSR migration caution; no experimental measurements added.",
+  "followup_meta_consent_source_register": "research/MER_EI_META_CHOICE_AND_NONDOMINATION_PRIMARY_SOURCES_2026-10-22.json"
 }

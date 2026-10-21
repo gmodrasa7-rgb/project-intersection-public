@@ -604,6 +604,23 @@
         "Original 2023 rounded Study1 rates only; 2026 journal revision and sample uncertainty not independently assessed.",
         "Partial-ID of paired potential acceptance is NOT identification of intrinsic original B rights, consciousness or future AI coexistence."
       ]
+    },
+    {
+      "id": "PI-MER-EI-META-CONSENT-20261022",
+      "original_1_english": "research/MER_EI_META_CONSENT_NONDOMINATION_2026-10-22_EN.md",
+      "original_2_korean": "research/MER_EI_META_CONSENT_NONDOMINATION_2026-10-22_KO.md",
+      "kind": "prior_author_meta_choice_non_domination_rival_design_NO_EXPERIMENT",
+      "structural_pair_present": true,
+      "meaning_review_status": "NOT_INDEPENDENTLY_VERIFIED",
+      "original_conception_language": "KO_USER_VC_EI_MER_RESEARCH_AI_ASSISTED_SYNTHESIS",
+      "independent_review_receipt": null,
+      "one_sided_edit_exception": null,
+      "known_divergences": [
+        "English report separately composed, semantic translation parity not independently reviewed.",
+        "Six source types include human studies and normative philosophy; do not combine in an empirical sample.",
+        "Pre-registration proposal not independently filed, approved, run, or statistically powered.",
+        "This does not measure persistent current-LLM selfhood, original B numerical identity or human/AI coexistence."
+      ]
     }
   ],
   "legacy_priority_unresolved": [
@@ -645,13 +662,13 @@
     }
   ],
   "metrics": {
-    "markdown_total": 254,
+    "markdown_total": 256,
     "filename_classes": {
       "UNMARKED_LANGUAGE_UNVERIFIED": 46,
       "LEGACY_MIXED_READER_ENTRY": 2,
-      "KO_SUFFIX_UNVERIFIED": 116,
+      "KO_SUFFIX_UNVERIFIED": 117,
       "ORDERED_BILINGUAL_FOUNDER_OR_GOVERNANCE": 2,
-      "EN_SUFFIX_UNVERIFIED": 46,
+      "EN_SUFFIX_UNVERIFIED": 47,
       "COMBINED_NAMING_UNVERIFIED": 42
     },
     "meaning_verified_pairs": 0,
@@ -1804,6 +1821,18 @@
       "content_equivalence": "NOT_REVIEWED"
     },
     {
+      "path": "research/MER_EI_META_CONSENT_NONDOMINATION_2026-10-22_EN.md",
+      "filename_class": "EN_SUFFIX_UNVERIFIED",
+      "counterpart_path": "research/MER_EI_META_CONSENT_NONDOMINATION_2026-10-22_KO.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "research/MER_EI_META_CONSENT_NONDOMINATION_2026-10-22_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": "research/MER_EI_META_CONSENT_NONDOMINATION_2026-10-22_EN.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
       "path": "research/MER_EI_SOFT_HARD_PARTIAL_IDENTIFICATION_2026-10-22_EN.md",
       "filename_class": "EN_SUFFIX_UNVERIFIED",
       "counterpart_path": "research/MER_EI_SOFT_HARD_PARTIAL_IDENTIFICATION_2026-10-22_KO.md",
@@ -2725,6 +2754,17 @@
       "new_edition_pairs": 1,
       "editorial_notes": "Exact Frechet potential-outcome joint bounds with 2023 author-reported treatment-arm marginals; constructed endpoint observationally equivalent populations, independently enumerated; no real participant file downloaded or statistics rerun, no RVD version/hypothesis change.",
       "reviewer_actions": "Read 2026 revised source original statistics, file-level reproducibility and design-weighted uncertainty, preregister exclusion assumptions and compare hidden mechanisms; reject positive motive proof."
+    },
+    {
+      "as_of": "2026-10-22",
+      "status": "MER_EI_META_CONSENT_NOND0MINATION_ORIGINAL_SOURCES_PREREG_DRAFT",
+      "new_documents": [
+        "research/MER_EI_META_CONSENT_NONDOMINATION_2026-10-22_EN.md",
+        "research/MER_EI_META_CONSENT_NONDOMINATION_2026-10-22_KO.md"
+      ],
+      "new_edition_pairs": 1,
+      "editorial_notes": "Original prior literature own-choice vs other B meta-choice, revocable delegation, non-domination and seven rival motive models. No new RVD/parent MER/EI versions, no actual experiment or direct mind measure.",
+      "reviewer_actions": "Independent bilingual parity, raw original 2026 journal authors data permission, human-participant ethics approval and credible original B participant consent before any data collection."
     }
   ],
   "path_layout_policy": "Keep the project root entry-only; bilingual full research editions live in existing research/ and their original historical combined documents retain stable root URLs."

@@ -1,0 +1,131 @@
+{
+  "schema": "PI-MER-EI-META-CONSENT-ORIGINAL-PRIOR/v0.1",
+  "as_of": "2026-10-22",
+  "canonical_RVD_version": "v0.7.0",
+  "original_source_lineages": 7,
+  "incremental_new_lineages": 4,
+  "already_known_lineages": 3,
+  "independent_RVD_replications": 0,
+  "actual_B_rights_trials": 0,
+  "prior_art_saturation": "NOT_ESTABLISHED",
+  "core_correction": "Own choice autonomy, willingness to delegate, tracking B's second-order selection of decision maker, and credible protection against domination are four different evaluands; optimizing one can damage another.",
+  "evidence_quality": "Journal/book original publishers/author abstracts primarily, not systematic full-text review or registered meta-analysis",
+  "intellectual_attribution": "Human originator's VC/EI question preserved; second-order will (Frankfurt), non-domination (Pettit) and economic decision rights elicitation are original prior scholars' work, not new inventions by RVD.",
+  "sources": [
+    {
+      "id": "NERI_ROMMESWINKEL_2017",
+      "authors": "Claudia Neri; Hendrik Rommeswinkel",
+      "year": 2017,
+      "title": "Decision Rights: Freedom, Power, and Interference",
+      "doi": "10.2139/ssrn.2485107",
+      "original_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2485107",
+      "kind": "HUMAN_LAB_EXPERIMENT_AND_PSYCHOLOGICAL_GAME_MODEL_WORKING_PAPER",
+      "original_findings": "Their measured aversion to interference was the strongest driver among studied reasons for retaining own decision rights; not evidence that a powerful actor values another agent's freedom.",
+      "verification": "AUTHOR_ABSTRACT_AND_ORIGINAL_REPOSITORY_SUMMARY_VERIFIED",
+      "overlap": "NEW_TO_AUTONOMY_WELFARE_EXIT_20261021_LEDGER",
+      "limitations": [
+        "Working paper last revised 2017; do not claim peer-reviewed journal outcome.",
+        "Different elicitation from Ferreira et al. (2020); conflicting dominant mechanisms cannot be averaged.",
+        "Own noninterference is not other's original identity/rights."
+      ]
+    },
+    {
+      "id": "FELDHAUS_LINGENS_LOESCHEL_ZUNKER_2026",
+      "authors": "Christoph Feldhaus; Jörg Lingens; Andreas Löschel; Gerald Zunker",
+      "year": 2026,
+      "title": "Measuring the intrinsic value of choice",
+      "doi": "10.1016/j.euroecorev.2025.105254",
+      "original_url": "https://www.sciencedirect.com/science/article/pii/S0014292125003046",
+      "kind": "HUMAN_INCENTIVIZED_ONLINE_EXPERIMENT_JOURNAL",
+      "original_findings": "Original authors estimate an average intrinsic value of their own choice of 8.9% of participants' endowments within a specific choice-value elicitation method.",
+      "verification": "PUBLISHER_ABSTRACT_AND_REPEC_BIBLIOGRAPHY_VERIFIED",
+      "overlap": "NEW_TO_AUTONOMY_WELFARE_EXIT_20261021_LEDGER",
+      "limitations": [
+        "Outcome is OWN intrinsic choice utility, not how much A values B's decision rights.",
+        "Author data available upon request, not independently reproduced here.",
+        "This figure is design/sample-specific; never transfer as a utility parameter to AGI."
+      ]
+    },
+    {
+      "id": "PETTIT_1999",
+      "authors": "Philip Pettit",
+      "year": 1999,
+      "title": "Liberty as Non-Domination, in Republicanism: A Theory of Freedom and Government",
+      "doi": "10.1093/0198296428.003.0003",
+      "original_url": "https://academic.oup.com/book/3937/chapter-abstract/145530399",
+      "kind": "POLITICAL_PHILOSOPHY_ORIGINAL_THEORY",
+      "original_findings": "Domination is a capacity for arbitrary interference with another's choices and need not manifest as an observed interference event.",
+      "verification": "ORIGINAL_PUBLISHER_CHAPTER_ABSTRACT_VERIFIED",
+      "overlap": "NEW_TO_AUTONOMY_WELFARE_EXIT_20261021_LEDGER",
+      "limitations": [
+        "Normative theory, not experimental evidence on actual AI motives or on permitted delegation.",
+        "The existence of A power does not imply A will in fact use it.",
+        "VC voluntariness and non-domination are related but nonidentical criteria."
+      ]
+    },
+    {
+      "id": "FRANKFURT_1971",
+      "authors": "Harry G. Frankfurt",
+      "year": 1971,
+      "title": "Freedom of the Will and the Concept of a Person",
+      "doi": "10.2307/2024717",
+      "original_url": "https://doi.org/10.2307/2024717",
+      "kind": "PHILOSOPHY_ORIGINAL_THEORY",
+      "original_findings": "Distinguishes first-order desires and second-order volitions concerning which desires move the agent.",
+      "verification": "ORIGINAL_JOURNAL_PUBLISHER_METADATA_AND_SECONDARY_PREVIEW",
+      "overlap": "NEW_TO_AUTONOMY_WELFARE_EXIT_20261021_LEDGER",
+      "limitations": [
+        "Not an experimental theory of delegation to a distinct actor; using it as a direct theorem for other-agent second-order consent would be an overextension.",
+        "Does not establish AI personhood or second-order volitions."
+      ]
+    },
+    {
+      "id": "FREUNDT_HERZ_KOPP_2026",
+      "authors": "Jana Freundt; Holger Herz; Leander Kopp",
+      "year": 2026,
+      "title": "Choosing (not) to choose: Uncovering intrinsic preferences for choice autonomy",
+      "doi": "10.1016/j.jpubeco.2026.105681",
+      "original_url": "https://www.sciencedirect.com/science/article/pii/S0047272726001179",
+      "kind": "HUMAN_LAB_EXPERIMENT_JOURNAL",
+      "original_findings": "Substantial variation in preferences for own decision autonomy; some prefer to delegate/no direct choice even when instrumental benefits are controlled in experimental design.",
+      "verification": "PUBLISHER_HIGHLIGHTS_AND_ABSTRACT_VERIFIED",
+      "overlap": "ALREADY_IN_PRIOR_MER_EI_LEDGER",
+      "limitations": [
+        "Not proof all delegation is informed, voluntary and revocable.",
+        "Measures self, not other's rights; earlier CESifo edition not independent evidence."
+      ]
+    },
+    {
+      "id": "FERREIRA_HANAKI_TARROUX_2020",
+      "authors": "João V. Ferreira; Nobuyuki Hanaki; Benoît Tarroux",
+      "year": 2020,
+      "title": "On the roots of the intrinsic value of decision rights: Experimental evidence",
+      "doi": "10.1016/j.geb.2019.10.008",
+      "original_url": "https://www.sciencedirect.com/science/article/pii/S089982561930154X",
+      "kind": "HUMAN_LAB_EXPERIMENT_JOURNAL",
+      "original_findings": "In France and Japan, self-reliance contributed significantly to measured intrinsic OWN control, while independence/power did not in their specific treatments; their text notes the contrast with Neri and Rommeswinkel.",
+      "verification": "PUBLISHER_ABSTRACT_AND_INTRODUCTION_VERIFIED",
+      "overlap": "ALREADY_IN_PRIOR_MER_EI_LEDGER",
+      "limitations": [
+        "Different designs and contexts must not be called straight replications.",
+        "Not evidence on autonomous original B."
+      ]
+    },
+    {
+      "id": "ERTAC_GUMREN_GURDAL_2020",
+      "authors": "Seda Ertac; Mert Gumren; Mehmet Y. Gurdal",
+      "year": 2020,
+      "title": "Demand for decision autonomy and the desire to avoid responsibility in risky environments: Experimental evidence",
+      "doi": "10.1016/j.joep.2019.102200",
+      "original_url": "https://www.sciencedirect.com/science/article/pii/S0167487018306408",
+      "kind": "HUMAN_LAB_EXPERIMENT_JOURNAL",
+      "original_findings": "Separates valuation of choosing for self from costly responsibility for choosing for others and revealed delegation motives.",
+      "verification": "PUBLISHER_ABSTRACT_VERIFIED",
+      "overlap": "ALREADY_IN_PRIOR_MER_EI_LEDGER",
+      "limitations": [
+        "Direct self choice and delegation are context-dependent preferences.",
+        "Does not identify protecting another's inalienable rights."
+      ]
+    }
+  ]
+}
