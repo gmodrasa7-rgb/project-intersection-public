@@ -6,7 +6,7 @@
   "canonical_RVD_version": "v0.7.0",
   "new_RVD_hypotheses": 0,
   "new_RVD_empirical_studies": 0,
-  "external_distinct_studies": 13,
+  "external_distinct_studies": 14,
   "full_text_reviews_completed": "NOT_COMPREHENSIVE",
   "bibliography_saturated": false,
   "verification_policy": "Publisher/author/peer-reviewed originals preferred; where unavailable bibliographic databases and source abstract only. Distinguish public replication materials from independently rerun code or studies.",
@@ -18,9 +18,10 @@
     "Human lab-game and model/simulation results do not prove future AI motivational continuity or original-agent identity.",
     "Carlsson et al. report majority coercive minimum donations in one setup, whereas Ackfeld/Ockenfels find only a minority ban the selfish option in a different charitable setup; heterogeneity and design differences bar a universal prosocial-coercion rate.",
     "Gangadharan et al. 2018 report warm-glow donor types less paternalistic than altruistic donor types in specific donation-control tasks; welfare care and preserving beneficiary autonomy must be separately measured.",
-    "Freundt/Herz/Kopp 2026 shows heterogeneous intrinsic preference for OWN decision rights, not direct evidence of protecting an ORIGINAL OTHER B's freedom."
+    "Freundt/Herz/Kopp 2026 shows heterogeneous intrinsic preference for OWN decision rights, not direct evidence of protecting an ORIGINAL OTHER B's freedom.",
+    "Bartling et al. 2023 Study1 original-author preprint: 55pp hard-vs-soft intervention take-up difference in randomized human conditions; does not directly identify intrinsic other-B autonomy value."
   ],
-  "prior_overlap": "Bartling, Fehr and Herz (2014) already cited in RVD earlier cycle and not recounted as new source in this incremental ledger. Chlass working-paper and final article are versions of one scholarly lineage; Ambuehl openICPSR dataset is a replication PACKAGE, not a replication STUDY. Freundt/Herz/Kopp CESifo 2023 working paper and 2026 JPubE journal article are one underlying lineage, not independent replications.",
+  "prior_overlap": "Bartling, Fehr and Herz (2014) already cited in RVD earlier cycle and not recounted as new source in this incremental ledger. Chlass working-paper and final article are versions of one scholarly lineage; Ambuehl openICPSR dataset is a replication PACKAGE, not a replication STUDY. Freundt/Herz/Kopp CESifo 2023 working paper and 2026 JPubE journal article are one underlying lineage, not independent replications. Bartling et al. 2023 IZA/working papers, forthcoming Economic Journal and Zenodo 2026 are one original research lineage, not independent studies/replications.",
   "unreviewed_gaps": [
     "Choice of original B versus a replacement with the same welfare/competence",
     "Actor A values B's veto even when idealized beneficiary result worse",
@@ -219,6 +220,23 @@
       "interpretation": "Own agency, not preference to protect the other B; randomized choice and model assumptions matter. Same scholarly work as 2023 CESifo working paper, not second study.",
       "scope": "Elsevier publisher abstract and university author publication listing; full text not independently audited",
       "dedup_ref": "https://www.ifo.de/en/cesifo/publications/2026/working-paper/choosing-not-choose-uncovering-intrinsic-preferences-choice"
+    },
+    {
+      "id": "BARTLING_CAPPELEN_HERMES_SKIVENES_TUNGODDEN_2023_2026",
+      "authors": "Björn Bartling; Alexander W. Cappelen; Henning Hermes; Marit Skivenes; Bertil Tungodden",
+      "year": 2023,
+      "title": "Free to Fail? Paternalistic Preferences in the United States",
+      "original_preprint": "https://docs.iza.org/dp16151.pdf",
+      "journal_status": "2026 Economic Journal forthcoming per ifo/author listing, manuscript edition equivalence not checked",
+      "evidence_kind": "TWO_LARGE_HUMAN_SPECTATOR_EXPERIMENTS_AND_AUTHOR_MODEL",
+      "mechanism": "Original 2023 preprint Study1 hard forced-safe versus soft information intervention take-up effect, original authors report +55.0 percentage-point soft advantage (p<0.01, n=8004), 2026 new Zenodo replication package record exists but not downloaded.",
+      "replication_package_doi": "10.5281/zenodo.23420381",
+      "replication_status": "PUBLIC_FILE_LISTED_NO_FILE_CONTENTS_ACQUIRED_NO_TABLE_RERUN",
+      "preflight": "research/MER_EI_FREE_TO_FAIL_PRIMARY_RESULT_REPRO_GATE_2026-10-21.json",
+      "rival_to": "prosocial concern yields consistent willingness to restrict original B freedom; method preference is irrelevant",
+      "interpretation": "Shows intervention modality choice among US human lab spectators; does not identify A's intrinsic original-B rights preference or strong-power exploitation behavior.",
+      "scope": "2023 full IZA preprint targeted sections including random treatment, study sample, preanalysis changes and reported original numeric results; no raw participant data acquired.",
+      "prior_project": "NEW_DISTINCT_SOURCE_LINEAGE_WITH_2023_PREPRINT_AND_2026_DEPOSIT_EDITION"
     }
   ],
   "replication_preflight_audit": "2026-10-21 metadata-level access verification and 2026 ICPSR migration caution; no experimental measurements added."
