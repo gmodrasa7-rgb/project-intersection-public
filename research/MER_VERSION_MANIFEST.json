@@ -34,5 +34,10 @@
       "change": "Formally version parent research axis; establish scoped definitions, source counterexamples, partial-identifiability and rights boundary.",
       "empirical_promotion": false
     }
-  ]
+  ],
+  "editions": {
+    "ko": "research/MER_V0_1_0_KO.md",
+    "en": "research/MER_V0_1_0_EN.md"
+  },
+  "translation_equivalence": "NOT_INDEPENDENTLY_VERIFIED"
 }
