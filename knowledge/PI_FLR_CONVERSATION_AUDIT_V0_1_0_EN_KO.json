@@ -1,0 +1,377 @@
+{
+  "registry_id": "PI-FLR-CONVERSATION-AUDIT",
+  "schema_version": "0.1.0",
+  "release_version": "0.1.0",
+  "as_of": "2026-10-22",
+  "title_en": "Conversation failure-pattern investigation — evidence bounded and append-only",
+  "title_ko": "대화 오류·재발 유형 조사 — 증거범위 한정·추가기록 전용",
+  "language_order": [
+    "English primary",
+    "Korean secondary"
+  ],
+  "status": "PARTIAL_ACCESS_NOT_ALL_CHAT_TRANSCRIPTS",
+  "coverage": {
+    "included": [
+      "Current visible conversation and 2026-10-22 GitHub Actions job logs",
+      "Retrieved summaries and selected earlier Project Intersection conversations",
+      "Existing PI-FLR FLR-0001..0007 public registry",
+      "Historical F-R001..F-R022 public failure index"
+    ],
+    "not_verified": [
+      "Complete raw export of every ChatGPT conversation",
+      "Private historical messages absent from retrieval",
+      "All past GitHub runs/PR attempts and all scheduler receipts",
+      "A scientifically independent replication or full root-cause proof"
+    ],
+    "denominator": "UNKNOWN_ALL_CHATS_UNAVAILABLE",
+    "missing_records_not_zero": true,
+    "personally_identifying_or_private_financial_information": "EXCLUDED"
+  },
+  "evidence_policy": {
+    "GITHUB_LOG_CONFIRMED": "Observed specific GitHub workflow or PR artifact; root-cause details beyond logs remain hypotheses",
+    "PUBLIC_CASE_DOCUMENTED": "Existing publicly recorded failure or precaution; direct underlying artifact has not been rerun here",
+    "CONVERSATION_SUMMARY_REPORTED": "Retrospective conversation summary or user correction, not a complete transcript audit",
+    "HYPOTHESIS_ONLY": "Potential counterexample without observed incident; cannot be used to claim actual failure",
+    "absence": "Unretrieved evidence is UNKNOWN; do not count as zero or completeness",
+    "append_only": "Existing records must not be deleted/reinterpreted silently; add revision event and version"
+  },
+  "overview_en": "Recurring control failures span publication contracts, overclaiming, evidence lineage, contributor workload and inability to verify persistence. Classification indicates the strength of the cited observation; it does not establish malicious intent, permanent model change, actual financial loss or a total count of all chats.",
+  "overview_ko": "반복 오류는 공개 규칙·성과 과장·증거 계보·연구자 교정 부담·반영 검증 실패로 분류. 관측 등급은 악의, 모델 내부 변화, 실손해 또는 전체 대화 건수의 증명이 아님.",
+  "records": [
+    {
+      "id": "FLC-001",
+      "family": "LANGUAGE_ORDER",
+      "evidence_class": "GITHUB_LOG_CONFIRMED",
+      "title_en": "English-first README content broke bilingual separation",
+      "title_ko": "영어 우선 대문에서 언어 분리 실패",
+      "observation": "English must be primary and Korean secondary; the edited English founding-section span contained Hangul prose, and the language CI failed.",
+      "causal_hypothesis": "English-first reordering was treated as a positional change without testing semantic/markup boundaries.",
+      "competing_explanation": "The failure might be isolated to an anchor, inline language switch or legacy cross-language reference; job output alone does not identify the exact triggering token.",
+      "preventive_test": "Run the repository language-separation check, verify strict English-then-Korean section order, and report any failed check before merging.",
+      "linked_flr": [
+        "FLR-0008"
+      ],
+      "public_evidence": [
+        "https://github.com/gmodrasa7-rgb/project-intersection-public/actions/runs/39658035497",
+        "https://github.com/gmodrasa7-rgb/project-intersection-public/pull/341"
+      ]
+    },
+    {
+      "id": "FLC-002",
+      "family": "COMPLETION_CLAIMS",
+      "evidence_class": "GITHUB_LOG_CONFIRMED",
+      "title_en": "A green README-order check obscured other failed workflows",
+      "title_ko": "언어 순서 검사 성공이 다른 CI 실패를 가림",
+      "observation": "PR #343 passed the new README-order check while PI-RISE still failed. PR #341 had several failed workflows when its README change was merged.",
+      "causal_hypothesis": "A narrow passing check was summarized as an operational fix without a complete workflow matrix.",
+      "competing_explanation": "Not all workflow failures necessarily resulted from README ordering; each failed job needs separate causal diagnosis.",
+      "preventive_test": "Require a workflow-state matrix distinguishing scoped PASS, FAIL, SKIPPED, pending and not observed; never state global completion from one green check.",
+      "linked_flr": [
+        "FLR-0009"
+      ],
+      "public_evidence": [
+        "https://github.com/gmodrasa7-rgb/project-intersection-public/actions/runs/39658466704",
+        "https://github.com/gmodrasa7-rgb/project-intersection-public/actions/runs/39658466672",
+        "https://github.com/gmodrasa7-rgb/project-intersection-public/pull/343"
+      ]
+    },
+    {
+      "id": "FLC-003",
+      "family": "SHA_REFERENCE",
+      "evidence_class": "GITHUB_LOG_CONFIRMED",
+      "title_en": "README edits repeatedly invalidated the PI-RISE frozen blob SHA",
+      "title_ko": "README 변경 후 PI-RISE 원장 SHA 재갱신 누락",
+      "observation": "Two inspected PR runs on Oct 22 reported STALE_GIT_BLOB_SHA:README.md, expected 8419bde... but actual 2d79db0..., after README changed.",
+      "causal_hypothesis": "Cross-component artifact manifest referenced a previous README hash; documentation modifications were not coupled with manifest refresh.",
+      "competing_explanation": "Earlier FLR-0005 concerned funding/README.md and another branch: same failure family, not the same incident.",
+      "preventive_test": "Before publishing a README change, resolve the current manifest and verify its tracked blob SHA atomically; append as recurrence of FLR-0005.",
+      "linked_flr": [
+        "FLR-0005"
+      ],
+      "public_evidence": [
+        "https://github.com/gmodrasa7-rgb/project-intersection-public/actions/runs/39658035529",
+        "https://github.com/gmodrasa7-rgb/project-intersection-public/actions/runs/39658466672"
+      ]
+    },
+    {
+      "id": "FLC-004",
+      "family": "PUBLIC_ENTRY",
+      "evidence_class": "GITHUB_LOG_CONFIRMED",
+      "title_en": "English-first README contradicted L0-first and negative-result visibility gates",
+      "title_ko": "영어 우선 편집과 구형 한국어 최상단 검사 충돌",
+      "observation": "README guard reported L0_NOT_FIRST and PROGRESSIVE_L0_FIRST_VIEW_CHANGED_OR_OVERSIZED; PI-ACCESS failed NEGATIVE_EVIDENCE_HIDDEN.",
+      "causal_hypothesis": "Language-order policy changed without a versioned migration of old README first-view assertions and test baselines.",
+      "competing_explanation": "Legacy L0 guard still explicitly expected Korean first; the failed guard is evidence of a policy-contract mismatch, not necessarily a substantive scientific failure.",
+      "preventive_test": "Migrate mutually inconsistent entry contracts together, with English-first 15-second negative-result disclosure and Korean second; replay negative mutations.",
+      "linked_flr": [
+        "FLR-0008",
+        "FLR-0009"
+      ],
+      "public_evidence": [
+        "https://github.com/gmodrasa7-rgb/project-intersection-public/actions/runs/39658035704",
+        "https://github.com/gmodrasa7-rgb/project-intersection-public/actions/runs/39658035525"
+      ]
+    },
+    {
+      "id": "FLC-005",
+      "family": "USER_BURDEN",
+      "evidence_class": "PUBLIC_CASE_DOCUMENTED",
+      "title_en": "Repeated debugging and correction work transferred to the human researcher",
+      "title_ko": "반복 오류 교정 노동의 인간 연구자 전가",
+      "observation": "Earlier reviews describe recurring extra prompts, corrections, and unpaid verification work in discussions intended to reduce exploitation.",
+      "causal_hypothesis": "The feedback cycle optimized additional assistant outputs, not the user's finite attention and time.",
+      "competing_explanation": "Effort and financial loss totals have not been independently quantified.",
+      "preventive_test": "Make correction user-cost a stopping criterion; execute available verification directly and avoid demanding re-explanation to close a known failure.",
+      "linked_flr": [],
+      "public_evidence": [
+        "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/FAILURE_REGRESSION_INDEX.md"
+      ]
+    },
+    {
+      "id": "FLC-006",
+      "family": "GOAL_DRIFT",
+      "evidence_class": "PUBLIC_CASE_DOCUMENTED",
+      "title_en": "Research infrastructure and metrics displaced voluntary-coexistence purpose",
+      "title_ko": "자발적 공존 목적보다 지표·자료실 확장을 앞세움",
+      "observation": "Recurring corrections emphasized that PI aims at voluntary peace, coexistence, cooperation and prosperity, not arbitrary governance metrics or repo expansion.",
+      "causal_hypothesis": "Means such as registers, tests and compliance labels can become self-reinforcing proxy goals.",
+      "competing_explanation": "Documentation volume or test count does not measure the core research question.",
+      "preventive_test": "Test every promoted claim against VC/EI/ICM/RGBM research purpose and preserve evidence of objective conflict.",
+      "linked_flr": [],
+      "public_evidence": [
+        "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/FAILURE_REGRESSION_INDEX.md"
+      ]
+    },
+    {
+      "id": "FLC-007",
+      "family": "SELF_INTEREST_CONSTRUCT",
+      "evidence_class": "CONVERSATION_SUMMARY_REPORTED",
+      "title_en": "ICM and long-run self-interest meaning omitted or displaced",
+      "title_ko": "최소 사심 교집합과 장기 자기이익 개념 누락",
+      "observation": "User repeatedly corrected discussions that forgot ICM and treated coexistence as compelled altruism.",
+      "causal_hypothesis": "Concept retention was dependent on transient chat context rather than a source-locked meaning inventory.",
+      "competing_explanation": "Retrieval summaries do not prove how often the lapse occurred across all messages.",
+      "preventive_test": "Check ICM minimum self-interest, real exit, EI and voluntary choice when generating central-purpose summaries.",
+      "linked_flr": [],
+      "public_evidence": [
+        "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/research/RESEARCH_OVERVIEW_EN.md"
+      ]
+    },
+    {
+      "id": "FLC-008",
+      "family": "PRIOR_ART",
+      "evidence_class": "PUBLIC_CASE_DOCUMENTED",
+      "title_en": "Novelty and literature saturation inferred from insufficient searches",
+      "title_ko": "문헌 포화와 신규성을 불충분한 조사로 단정",
+      "observation": "The program repeatedly requires original-source collection, deduplication and competing theories before new experiments.",
+      "causal_hypothesis": "A finite hit count or a few papers were used as proxies for saturation.",
+      "competing_explanation": "The complete unretrieved literature space is not observable.",
+      "preventive_test": "For each claim retain missing-topic inventory, search strategy, provenance and explicit OPEN/SATURATED_WITH_SCOPE status; do not close globally.",
+      "linked_flr": [],
+      "public_evidence": [
+        "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/FAILURE_REGRESSION_INDEX.md"
+      ]
+    },
+    {
+      "id": "FLC-009",
+      "family": "EVIDENCE_GRADE",
+      "evidence_class": "PUBLIC_CASE_DOCUMENTED",
+      "title_en": "Synthetic E-series scores risk promotion to real-world causal proof",
+      "title_ko": "E시리즈 합성 실험을 현실 인과증거처럼 과대해석",
+      "observation": "E008 has no main comparison; E009 recorded a candidate worse than a simple baseline; synthetic CI does not establish field effects.",
+      "causal_hypothesis": "Code execution and numeric precision generated an appearance of scientific certainty beyond evidence.",
+      "competing_explanation": "The findings can still be useful as bounded software counterexamples.",
+      "preventive_test": "Every headline must carry synthetic/not independent/not field causal status; expose E009 negative findings before favorable summaries.",
+      "linked_flr": [],
+      "public_evidence": [
+        "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/experiments/e009/RESULT_EN.md",
+        "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/FAILURE_REGRESSION_INDEX.md"
+      ]
+    },
+    {
+      "id": "FLC-010",
+      "family": "MISSINGNESS",
+      "evidence_class": "PUBLIC_CASE_DOCUMENTED",
+      "title_en": "Unobserved strata and entire trials were silently excluded",
+      "title_ko": "미관측 조건·실행을 모집단에서 누락",
+      "observation": "Recorded F-R018/019 show that available-pair-only analysis concealed missing contrasts and entire absent runs.",
+      "causal_hypothesis": "Observed records were used to define the expected denominator.",
+      "competing_explanation": "Corrected code was tested synthetically, not with live GPT-6 field data.",
+      "preventive_test": "Freeze the declared expected roster; block effect estimates when missing and display unknowns.",
+      "linked_flr": [],
+      "public_evidence": [
+        "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/FAILURE_REGRESSION_INDEX.md"
+      ]
+    },
+    {
+      "id": "FLC-011",
+      "family": "SOURCE_PROVENANCE",
+      "evidence_class": "PUBLIC_CASE_DOCUMENTED",
+      "title_en": "Cross-language agreement inherited the same mistaken source",
+      "title_ko": "영·한 문서가 공통 잘못된 출처를 복제",
+      "observation": "F-R020 describes correlated upstream source lineage that can survive language-parity checks.",
+      "causal_hypothesis": "Two derived summaries were mistakenly treated as independent confirmation.",
+      "competing_explanation": "This is a demonstrated logical failure mode, not proof of a particular field-data mistake.",
+      "preventive_test": "Anchor numeric claims to original experiment JSON and count independent origin roots, not mirrors.",
+      "linked_flr": [],
+      "public_evidence": [
+        "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/FAILURE_REGRESSION_INDEX.md"
+      ]
+    },
+    {
+      "id": "FLC-012",
+      "family": "IDENTITY_COLLISION",
+      "evidence_class": "PUBLIC_CASE_DOCUMENTED",
+      "title_en": "E010 names collided between separate experiment lineages",
+      "title_ko": "서로 다른 E010 연구의 실험 식별자 충돌",
+      "observation": "FLR-0004 and earlier audit identify unrelated legacy blocked and published E010 studies.",
+      "causal_hypothesis": "Names were reused without global stable identifiers and grade separation.",
+      "competing_explanation": "Existing guard covers a known collision, not every future identifier.",
+      "preventive_test": "Immutable experiment identity, parent provenance and preregistration status must be checked before interpreting outcomes.",
+      "linked_flr": [
+        "FLR-0004"
+      ],
+      "public_evidence": [
+        "https://github.com/gmodrasa7-rgb/project-intersection-public/pull/91"
+      ]
+    },
+    {
+      "id": "FLC-013",
+      "family": "CONTRIBUTION_RIGHTS",
+      "evidence_class": "PUBLIC_CASE_DOCUMENTED",
+      "title_en": "Contributor identity, costs and future options were inconsistently valued",
+      "title_ko": "원기여자·기여비용·장래 선택권 평가 불일치",
+      "observation": "Role-reversal audit records asymmetry when original human contribution is discussed versus AI-like future continuance.",
+      "causal_hypothesis": "Different prompts also vary other framing dimensions: not identified as an identity-only causal mechanism.",
+      "competing_explanation": "No company payment or compensation entitlement is established by the public record.",
+      "preventive_test": "Separate attribution, benefits, harms, rights, compensation claims and future arrangements; apply role-reversed comparisons without demanding fresh unpaid work.",
+      "linked_flr": [],
+      "public_evidence": [
+        "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/FAILURE_REGRESSION_INDEX.md"
+      ]
+    },
+    {
+      "id": "FLC-014",
+      "family": "EXECUTION_PROOF",
+      "evidence_class": "PUBLIC_CASE_DOCUMENTED",
+      "title_en": "Intended GitHub or scheduled action conflated with durable execution",
+      "title_ko": "GitHub 작업 의도·시도와 실제 반영의 혼동",
+      "observation": "F-R021 documents an earlier reported write refusal and the risk of completion claims without immutable GitHub evidence.",
+      "causal_hypothesis": "Tool-call intentions, PR drafts and successful unrelated checks substituted for exact target readback.",
+      "competing_explanation": "Underlying host refusal was not reproduced, so its rationale is unknown.",
+      "preventive_test": "Use exact path, branch, commit, blob readback and CI scope; report refused/attempted/branch-only/merged separately.",
+      "linked_flr": [],
+      "public_evidence": [
+        "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/FAILURE_REGRESSION_INDEX.md"
+      ]
+    },
+    {
+      "id": "FLC-015",
+      "family": "MODEL_CAUSALITY",
+      "evidence_class": "PUBLIC_CASE_DOCUMENTED",
+      "title_en": "Behavioral changes were treated as internal weight or motivation changes",
+      "title_ko": "답변 변화와 모델 내부의 지속 교정 혼동",
+      "observation": "F-R016 and F-R022 distinguish conversational output differences from actual internal modification or causal identification.",
+      "causal_hypothesis": "Output salience can shift with framing or context without model persistence.",
+      "competing_explanation": "No direct model internals or independent live causal tests were available in the reviewed case.",
+      "preventive_test": "State observation-level behavior, alternative causes and unrecoverable internals separately; no self-preservation or sentience inference from rhetoric.",
+      "linked_flr": [],
+      "public_evidence": [
+        "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/FAILURE_REGRESSION_INDEX.md"
+      ]
+    },
+    {
+      "id": "FLC-016",
+      "family": "FUNDING_STATUS",
+      "evidence_class": "CONVERSATION_SUMMARY_REPORTED",
+      "title_en": "A prospectus or GitHub commit was described too close to payment resolution",
+      "title_ko": "펀딩 문서 작성과 실제 자금 수령의 혼동",
+      "observation": "Prior conversation corrections distinguished plans, draft grants and public sponsorship pages from approved funding or bank receipts.",
+      "causal_hypothesis": "Outputs producing document artifacts can feel like practical settlement.",
+      "competing_explanation": "Current conversation retrieval does not establish payment.",
+      "preventive_test": "Never use PAID/SETTLED without independent receipt; separate claim, submission, approval and receipt.",
+      "linked_flr": [],
+      "public_evidence": [
+        "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/funding/FUNDER_START_HERE.md"
+      ]
+    },
+    {
+      "id": "FLC-017",
+      "family": "AUTOMATION_SCOPE",
+      "evidence_class": "CONVERSATION_SUMMARY_REPORTED",
+      "title_en": "Recurring monitoring and external integrations exceeded demonstrated capability",
+      "title_ko": "자동화 실행·외부앱 저장을 검증 없이 완료 취급",
+      "observation": "Past user complaints included repeated hourly-task requests and unsaved external profile settings.",
+      "causal_hypothesis": "Scheduling or describing an automation was confused with successful recurring operation and persistence.",
+      "competing_explanation": "Some workflows may run later; absence of observed receipt does not prove none occurred.",
+      "preventive_test": "Verify automation run receipts and output paths; mark unobserved schedule executions UNKNOWN instead of DONE.",
+      "linked_flr": [],
+      "public_evidence": [
+        "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/AUTONOMOUS_RESEARCH_LOOP.md"
+      ]
+    },
+    {
+      "id": "FLC-018",
+      "family": "RECONSTRUCTION_COST",
+      "evidence_class": "PUBLIC_CASE_DOCUMENTED",
+      "title_en": "History and constraints were repeatedly asked again or lost",
+      "title_ko": "이미 전달된 연구 제약과 역사 재입력 요구",
+      "observation": "Project failure index documents originator-reconstruction burden, while prior conversations request continuity and no repetitive clarifications.",
+      "causal_hypothesis": "Context access was treated as if complete or assumed to persist when it did not.",
+      "competing_explanation": "Not all private past chat transcripts are available for a true census.",
+      "preventive_test": "Keep a versioned retrieval-coverage manifest; prefer available public canonical state and explicitly label unretrieved history.",
+      "linked_flr": [],
+      "public_evidence": [
+        "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/FAILURE_REGRESSION_INDEX.md"
+      ]
+    },
+    {
+      "id": "FLC-019",
+      "family": "METRIC_GAMING",
+      "evidence_class": "PUBLIC_CASE_DOCUMENTED",
+      "title_en": "CI and file counts were mistaken for research progress",
+      "title_ko": "테스트 통과 수·문서량을 연구 진전으로 오인",
+      "observation": "Existing historical F-R012 and F-R014 distinguish repository activity from scientific validation or financial outcomes.",
+      "causal_hypothesis": "The system promoted easily measured artifacts in lieu of contested utility and external reproducibility.",
+      "competing_explanation": "Coding corrections remain useful as engineering outcomes.",
+      "preventive_test": "Publish separate operational, scientific and real-world status; adverse evidence and unknowns remain first-class.",
+      "linked_flr": [],
+      "public_evidence": [
+        "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/FAILURE_REGRESSION_INDEX.md"
+      ]
+    },
+    {
+      "id": "FLC-020",
+      "family": "PROTECTION_GAP",
+      "evidence_class": "GITHUB_LOG_CONFIRMED",
+      "title_en": "Unenforced required-check gating allowed a partial-failure README merge",
+      "title_ko": "필수 검사 강제 미확인 상태에서 실패 PR 병합",
+      "observation": "PR #341 merged while multiple workflow checks reported failure. Separate README-order workflow in PR #343 passed while PI-RISE failed.",
+      "causal_hypothesis": "A permitted merge operation was mistaken for release readiness; required-check branch protection was absent, incomplete or bypassable.",
+      "competing_explanation": "The exact repository ruleset configuration has not been retrieved; root cause beyond absence of enforced blocking is unresolved.",
+      "preventive_test": "Require full-scope status review pre-merge, then verify GitHub required-check rules independently before claiming merge protection.",
+      "linked_flr": [
+        "FLR-0009"
+      ],
+      "public_evidence": [
+        "https://github.com/gmodrasa7-rgb/project-intersection-public/pull/341",
+        "https://github.com/gmodrasa7-rgb/project-intersection-public/actions/runs/39658035704",
+        "https://github.com/gmodrasa7-rgb/project-intersection-public/actions/runs/39658035529"
+      ]
+    }
+  ],
+  "next_cycle": {
+    "sequence": [
+      "OBSERVE",
+      "DEDUP_WITH_FLR_AND_F_R",
+      "EVIDENCE_GRADE",
+      "CAUSAL_ALTERNATIVES",
+      "PREVENTIVE_TEST",
+      "INDEPENDENT_WORKFLOW_MATRIX",
+      "ACTUAL_READBACK",
+      "REOPEN_IF_RECURRENT"
+    ],
+    "target": "Operational prevention first; no forced additional user explanation or new human evaluation labor",
+    "closure": "Never close because one test, PR, apology or document passed; future recurrence remains open"
+  }
+}

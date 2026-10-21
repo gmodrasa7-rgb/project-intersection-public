@@ -18,6 +18,8 @@ jobs:
           fetch-depth: 0
       - name: Execute original failure replays and registry mutation tests
         run: python3 -m unittest discover -s tests -p 'test_pi_flr_audit.py' -v
+      - name: Conversation failure ledger negative mutants (bounded evidence only)
+        run: python3 -m unittest discover -s tests -p 'test_pi_flr_conversation_audit.py' -v
       - name: Offline scheduled failure watcher adversarial regressions
         run: python3 -m unittest discover -s tests -p 'test_pi_flr_watch.py' -v
       - name: Guard distinct E010 historical experiment identities and evidence status
@@ -38,3 +40,4 @@ jobs:
             BASE="$PI_EVENT_BEFORE"
           fi
           python3 tools/pi_flr_audit.py --baseline-commit "$BASE"
+          python3 tools/pi_flr_conversation_audit.py --baseline-commit "$BASE"

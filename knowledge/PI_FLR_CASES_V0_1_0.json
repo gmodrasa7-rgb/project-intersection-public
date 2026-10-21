@@ -1,8 +1,8 @@
 {
   "registry_id": "PI-FLR",
   "schema_version": "0.1.0",
-  "release_version": "0.2.1",
-  "as_of": "2026-10-21",
+  "release_version": "0.3.0",
+  "as_of": "2026-10-22",
   "korean_name": "오류·학습·복구 재귀원장",
   "english_name": "Failure–Learning–Repair Registry",
   "parent_protocol": "PI-RAMP",
@@ -73,6 +73,20 @@
       "detector": "tools/pi_flr_watch.py::build_report;tools/pi_flr_watch.py::validate_workflow_contract",
       "workflow": ".github/workflows/pi-flr-watch.yml",
       "mutation_test": "test_report_unknown_failures_never_disappear"
+    },
+    {
+      "id": "FLR-C08",
+      "title": "English-first publication and language-locality regression based on the real README checker",
+      "detector": "tools/check_language_separation.py::readme_errors",
+      "workflow": ".github/workflows/language-separation.yml",
+      "mutation_test": "test_regression_english_first_english_only"
+    },
+    {
+      "id": "FLR-C09",
+      "title": "Partial-green CI completeness and unobserved-workflow refusal for release claims",
+      "detector": "tools/pi_flr_conversation_audit.py::validate_release_matrix",
+      "workflow": ".github/workflows/pi-flr-integrity.yml",
+      "mutation_test": "test_regression_partial_green_is_not_global_release"
     }
   ],
   "cases": [
@@ -360,6 +374,27 @@
           "kind": "LIMITATION_RECORDED",
           "evidence_url": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/operations/PI_RISE_V0_2_0_VERSION_MANIFEST.json",
           "note": "Main baseline may differ; do not claim that every historical failure is unresolved or automatically fixed."
+        },
+        {
+          "seq": 4,
+          "date": "2026-10-22",
+          "kind": "RECURRENCE_OBSERVED",
+          "evidence_url": "https://github.com/gmodrasa7-rgb/project-intersection-public/actions/runs/39658035529",
+          "note": "Same stale Git blob SHA mechanism recurred on a different tracked README.md path while English-first public README was changed; root README actual hash diverged from frozen manifest, not an assertion about the prior funding README."
+        },
+        {
+          "seq": 5,
+          "date": "2026-10-22",
+          "kind": "RECURRENCE_OBSERVED",
+          "evidence_url": "https://github.com/gmodrasa7-rgb/project-intersection-public/actions/runs/39658466672",
+          "note": "A later PR modifying only the README order workflow still failed PI-RISE on stale tracked README blob SHA; workflow success in another job did not certify overall release."
+        },
+        {
+          "seq": 6,
+          "date": "2026-10-22",
+          "kind": "LIMITATION_RECORDED",
+          "evidence_url": "https://github.com/gmodrasa7-rgb/project-intersection-public/pull/343",
+          "note": "The recurring root README manifest mismatch has not been verified repaired in this incident intake. A new documentation/test ledger alone does not resolve it."
         }
       ]
     },
@@ -447,6 +482,96 @@
           "kind": "LIMITATION_RECORDED",
           "evidence_url": "https://github.com/gmodrasa7-rgb/project-intersection-public/pull/250",
           "note": "Current draft link target presence does not imply a merged result or independence of scientific claims."
+        }
+      ]
+    },
+    {
+      "id": "FLR-0008",
+      "title_en": "English-first README change broke language locality and legacy top-level entry contracts",
+      "title_ko": "영어 우선 README 전환 과정에서 영문 순도·기존 L0 진입 규칙 위반",
+      "category": "PUBLICATION_CONTRACT",
+      "root_cause": "The language-order requirement was implemented as a content reordering without jointly migrating pre-existing L0-first Korean checks and English-only prose boundaries. Root cause within the exact prose token is not independently isolated from the job summary.",
+      "trigger": "Pull request #341 added English first 15-second/1-minute/5-minute content while preserving earlier founding statements and leaving cross-document release contracts unchanged.",
+      "observable": "GitHub Actions run 39658035497 failed README_ENGLISH_SECTION_CONTAINS_KOREAN_PROSE; run 39658035704 failed L0_NOT_FIRST and first-view/staging checks; run 39658035525 failed NEGATIVE_EVIDENCE_HIDDEN.",
+      "impact": "The PR merged although language, README-purpose and navigation checks failed, creating a misleadingly completed bilingual public-entry change.",
+      "counterfactual": "A pre-merge cross-workflow matrix plus mutation of English prose leakage and L0-first policy would have surfaced the incompatible edit and prevented a global success description.",
+      "repair": "Add recurring failure case and an English-only mutation test using the real publication detector. Complete bilingual README/guard migration and all relevant workflow passes have not been established.",
+      "preventive_control_ids": [
+        "FLR-C01",
+        "FLR-C08"
+      ],
+      "regression_test": "test_regression_english_first_english_only",
+      "limitations": [
+        "No claim that all broken language and navigation workflows are repaired.",
+        "The exact invalid token's causal role remains a log-derived hypothesis; inspect raw changed prose and compare against checker.",
+        "Required GitHub status checks enforcement not independently verified."
+      ],
+      "events": [
+        {
+          "seq": 1,
+          "date": "2026-10-22",
+          "kind": "FAILURE_OBSERVED",
+          "evidence_url": "https://github.com/gmodrasa7-rgb/project-intersection-public/actions/runs/39658035497",
+          "note": "Public English/Korean language separation failed for PR #341 head; job log reported README_ENGLISH_SECTION_CONTAINS_KOREAN_PROSE."
+        },
+        {
+          "seq": 2,
+          "date": "2026-10-22",
+          "kind": "ROOT_CAUSE_REVIEWED",
+          "evidence_url": "https://github.com/gmodrasa7-rgb/project-intersection-public/actions/runs/39658035704",
+          "note": "README purpose guard expected legacy Korean topmost view and failed after explicit English-first reordering; incompatible entry contract was not migrated."
+        },
+        {
+          "seq": 3,
+          "date": "2026-10-22",
+          "kind": "LIMITATION_RECORDED",
+          "evidence_url": "https://github.com/gmodrasa7-rgb/project-intersection-public/actions/runs/39658035525",
+          "note": "Separate PI-ACCESS navigation check also failed NEGATIVE_EVIDENCE_HIDDEN; issue remains open until check outputs and public reading route are consistent."
+        }
+      ]
+    },
+    {
+      "id": "FLR-0009",
+      "title_en": "Partial-green README checks and successful merge misrepresented wider release readiness",
+      "title_ko": "일부 녹색 검사·병합 성공을 전체 릴리스 해결로 확대",
+      "category": "GUARD_COVERAGE",
+      "root_cause": "Release reporting did not use a complete declared-workflow denominator; the repository allowed a PR merge with other CI failures, and a later narrow English-order success was reported without the still-failing PI-RISE job. Ruleset/blocking mechanics remain unverified.",
+      "trigger": "PR #341 merged with four failed CI workflows; PR #343 English-order validation passed but PI-RISE synthetic-only integrity still failed.",
+      "observable": "Observed PR #341 head workflows include four failures (language, purpose, navigation and PI-RISE) among 10 results; PR #343 had a successful English-first check and a failed PI-RISE check.",
+      "impact": "An apparently resolved main README or successful language-order automation could mask unresolved failures and impose further verification work on the researcher.",
+      "counterfactual": "A full-scope status matrix must block global completed assertions on failed, skipped, pending or unobserved required checks, even if a PR was merged.",
+      "repair": "Add evidence-graded conversation failure ledger, a scoped workflow matrix function and negative mutation tests. The function protects reporting logic only; repository required-check enforcement is separately unresolved.",
+      "preventive_control_ids": [
+        "FLR-C03",
+        "FLR-C09"
+      ],
+      "regression_test": "test_regression_partial_green_is_not_global_release",
+      "limitations": [
+        "A passing synthetic matrix test is not a live GitHub merge gate.",
+        "Not all failing CI jobs are proven to have the same root cause.",
+        "No external branch-ruleset or admin-bypass audit has yet been performed."
+      ],
+      "events": [
+        {
+          "seq": 1,
+          "date": "2026-10-22",
+          "kind": "FAILURE_OBSERVED",
+          "evidence_url": "https://github.com/gmodrasa7-rgb/project-intersection-public/pull/341",
+          "note": "README PR was merged despite failing multiple other checks; success of merge alone was not full system repair."
+        },
+        {
+          "seq": 2,
+          "date": "2026-10-22",
+          "kind": "ROOT_CAUSE_REVIEWED",
+          "evidence_url": "https://github.com/gmodrasa7-rgb/project-intersection-public/actions/runs/39658466672",
+          "note": "PR #343's separate README-order check passed but PI-RISE synthetic-only integrity failed; no evidence of completed global release gate."
+        },
+        {
+          "seq": 3,
+          "date": "2026-10-22",
+          "kind": "LIMITATION_RECORDED",
+          "evidence_url": "https://github.com/gmodrasa7-rgb/project-intersection-public/pull/343",
+          "note": "Formal regression and conversation evidence storage do not establish required-check branch protection or repair the manifest SHA mismatch."
         }
       ]
     }
