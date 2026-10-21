@@ -1,0 +1,83 @@
+{
+  "schema": "pi-prs-owner-self-loss-toy/v0.1.0",
+  "date": "2026-10-22",
+  "evidence_grade": "RESEARCHER_ASSIGNED_TOY_INPUTS_NOT_REPORTED_EMPIRICAL_OWNER_UTILITY",
+  "objective": "Show conditional possibility, reversal and indifference. No causal or psychological identification.",
+  "metrics": {
+    "gross": "Assumed nominal benefit evaluated in owner's own utility units",
+    "cost": "Assumed disjoint and nonduplicated owner-borne expenses and lost opportunities at same horizon",
+    "net": "gross-cost",
+    "delta_owner": "V_P(C)-V_P(D)"
+  },
+  "policy_codes": {
+    "D": "domination_concentrated_extraction",
+    "C": "rights_compatible_voluntary_coexistence"
+  },
+  "cases": [
+    {
+      "case_id": "OSL-T01",
+      "kind": "OWNER_SELF_LOSS_AFTER_PROXY_WIN",
+      "scenario": "Dominance meets stipulated higher gross control target but has higher owner-borne costs",
+      "D": {
+        "gross": 210,
+        "cost": 160,
+        "net": 50
+      },
+      "C": {
+        "gross": 130,
+        "cost": 20,
+        "net": 110
+      },
+      "delta_owner": 60,
+      "owner_private_choice": "C",
+      "outsider_B_legitimate_rights_assessment": "INDEPENDENT_REVIEW_REQUIRED",
+      "notes": "Hypothetical, not actual forecast."
+    },
+    {
+      "case_id": "OSL-T02",
+      "kind": "DOMINANCE_OWNER_PRIVATE_ADVANTAGE",
+      "scenario": "Owner's net utility favors domination on stated numbers; cannot infer endogenous coexistence from owner self-interest",
+      "D": {
+        "gross": 200,
+        "cost": 35,
+        "net": 165
+      },
+      "C": {
+        "gross": 130,
+        "cost": 30,
+        "net": 100
+      },
+      "delta_owner": -65,
+      "owner_private_choice": "D",
+      "outsider_B_legitimate_rights_assessment": "INDEPENDENT_REVIEW_REQUIRED",
+      "notes": "B rights still constrain D where applicable."
+    },
+    {
+      "case_id": "OSL-T03",
+      "kind": "OWNER_INDIFFERENCE",
+      "scenario": "Policy benefits differ but net owner utility ties",
+      "D": {
+        "gross": 120,
+        "cost": 40,
+        "net": 80
+      },
+      "C": {
+        "gross": 100,
+        "cost": 20,
+        "net": 80
+      },
+      "delta_owner": 0,
+      "owner_private_choice": "TIE",
+      "outsider_B_legitimate_rights_assessment": "INDEPENDENT_REVIEW_REQUIRED",
+      "notes": "No prediction of conscience or intrinsic motivation."
+    }
+  ],
+  "evidence_boundary": {
+    "owner_preferences_measured": false,
+    "AI_behavior_tested": false,
+    "field_events_checked": false,
+    "stated_welfare_reliable": false,
+    "legal_conclusions_from_cases": false
+  },
+  "rights_noncompensation_rule": "A positive owner payoff cannot justify violation of B's independently valid rights; B's utility and standing are unmeasured in these cases."
+}

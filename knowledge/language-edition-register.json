@@ -662,13 +662,13 @@
     }
   ],
   "metrics": {
-    "markdown_total": 262,
+    "markdown_total": 264,
     "filename_classes": {
       "UNMARKED_LANGUAGE_UNVERIFIED": 46,
       "LEGACY_MIXED_READER_ENTRY": 2,
-      "KO_SUFFIX_UNVERIFIED": 120,
+      "KO_SUFFIX_UNVERIFIED": 121,
       "ORDERED_BILINGUAL_FOUNDER_OR_GOVERNANCE": 2,
-      "EN_SUFFIX_UNVERIFIED": 50,
+      "EN_SUFFIX_UNVERIFIED": 51,
       "COMBINED_NAMING_UNVERIFIED": 42
     },
     "meaning_verified_pairs": 0,
@@ -1922,6 +1922,18 @@
       "content_equivalence": "NOT_REVIEWED"
     },
     {
+      "path": "research/PI_PACD_PRS_OSL_V0_1_0_EN.md",
+      "filename_class": "EN_SUFFIX_UNVERIFIED",
+      "counterpart_path": "research/PI_PACD_PRS_OSL_V0_1_0_KO.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "research/PI_PACD_PRS_OSL_V0_1_0_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": "research/PI_PACD_PRS_OSL_V0_1_0_EN.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
       "path": "research/PI_PACD_PRS_V0_1_0_EN.md",
       "filename_class": "EN_SUFFIX_UNVERIFIED",
       "content_equivalence": "NOT_REVIEWED",
@@ -2831,6 +2843,15 @@
         "research/PI_PACD_MIA_DRA_V0_1_0_KO.md"
       ],
       "note": "English/Korean publication pairing inventory only; scientific and translation meaning parity not independently validated."
+    },
+    {
+      "date": "2026-10-22",
+      "event": "PRS_OWNER_SELF_LOSS_SUPPLEMENT_LANGUAGE_ENTRY",
+      "new_documents": [
+        "research/PI_PACD_PRS_OSL_V0_1_0_EN.md",
+        "research/PI_PACD_PRS_OSL_V0_1_0_KO.md"
+      ],
+      "scope": "paired filenames only, scientific novelty and translation meaning unverified"
     }
   ],
   "path_layout_policy": "Keep the project root entry-only; bilingual full research editions live in existing research/ and their original historical combined documents retain stable root URLs."
