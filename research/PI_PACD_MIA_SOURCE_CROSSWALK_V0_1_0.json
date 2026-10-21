@@ -1,0 +1,315 @@
+{
+  "schema_version": "pi-pacd-mia-source-ledger/v0.1.0",
+  "date": "2026-10-22",
+  "research_component": "PI-PACD-MIA",
+  "global_search_saturation": "NOT_ESTABLISHED",
+  "complete_fulltext_audit": "NOT_COMPLETED",
+  "novelty": "NOT_ESTABLISHED",
+  "evidence_boundary": "Original author articles and primary conference papers cross-checked for narrow statements; reported numeric values not independently recomputed.",
+  "sources": [
+    {
+      "id": "MIA-S01",
+      "authors": "Calvano, Calzolari, Denicolò, Pastorello",
+      "year": 2020,
+      "title": "Artificial Intelligence, Algorithmic Pricing, and Collusion",
+      "venue": "American Economic Review",
+      "doi": "10.1257/aer.20190623",
+      "url": "https://www.aeaweb.org/articles?id=10.1257/aer.20190623",
+      "type": "PEER_REVIEWED_SIMULATION",
+      "supports": [
+        "MIA-C01"
+      ],
+      "cautions": [
+        "Supracompetitive simulated prices are not real price evidence.",
+        "The reported punishment explanation is challenged by later mechanism audits."
+      ]
+    },
+    {
+      "id": "MIA-S02",
+      "authors": "Calvano, Calzolari, Denicolò, Pastorello",
+      "year": 2023,
+      "title": "Algorithmic collusion: Genuine or spurious?",
+      "venue": "International Journal of Industrial Organization",
+      "doi": "10.1016/j.ijindorg.2023.102973",
+      "url": "https://cris.unibo.it/handle/11585/952593",
+      "type": "PEER_REVIEWED_MODEL_COMPARISON",
+      "supports": [
+        "MIA-C02"
+      ],
+      "cautions": [
+        "Authors note high prices can arise without true collusive reward-punishment mechanism.",
+        "Experiments depend on algorithm, memory, timing, exploration rules."
+      ]
+    },
+    {
+      "id": "MIA-S03",
+      "authors": "Rocher, Tournier, de Montjoye",
+      "year": 2023,
+      "title": "Adversarial competition and collusion in algorithmic markets",
+      "venue": "Nature Machine Intelligence",
+      "doi": "10.1038/s42256-023-00646-0",
+      "url": "https://www.nature.com/articles/s42256-023-00646-0",
+      "type": "PEER_REVIEWED_SIMULATED_MARKET_MODEL",
+      "supports": [
+        "MIA-C03"
+      ],
+      "cautions": [
+        "Adversarial pricing in constructed markets; not incidence in deployment.",
+        "Mutual firm profit can coincide with consumer harm."
+      ]
+    },
+    {
+      "id": "MIA-S04",
+      "authors": "de Moraes, De-Losso",
+      "year": 2026,
+      "title": "Algorithmic Collusion Without Deterrence: Auditing the Punishment Mechanism in Q-Learning Pricing Agents",
+      "venue": "arXiv 2610.21867, ACM ICAIF 2026 conference-paper package; conference occurs November 2026",
+      "doi": "10.1145/3858063.3858865",
+      "url": "https://arxiv.org/abs/2610.21867",
+      "code": "https://github.com/kauelopes/algorithmic-collusion-without-deterrence",
+      "type": "AUTHOR_PRIMARY_MECHANISM_AUDIT_REPRODUCIBILITY_PACKAGE",
+      "supports": [
+        "MIA-C04",
+        "MIA-C05",
+        "MIA-C06"
+      ],
+      "cautions": [
+        "Pre-registered author conclusions cannot be treated as externally replicated by our project.",
+        "At 2026-10-22 the conference dates are in the future; code/paper available now.",
+        "914/1024 all-state single-attractor pairs, 80% rematching decline, 17.5% best-response gain are within the paper's simulated environment.",
+        "Original 2020 paper's stated statistics and updated mechanism criticism must be presented together."
+      ]
+    },
+    {
+      "id": "MIA-S05",
+      "authors": "Agrawal, Ebadian, Hammond",
+      "year": 2026,
+      "title": "The Multi-Agent Off-Switch Game",
+      "venue": "AAMAS 2026",
+      "doi": "10.65109/HQQZ1937",
+      "url": "https://ebadian.org/preprint/multiagent_offswitch_cr.pdf",
+      "type": "PEER_REVIEWED_THEORETICAL_MODEL",
+      "supports": [
+        "MIA-C07"
+      ],
+      "cautions": [
+        "Under additive utility in specified off-switch game, individual corrigibility composes; some non-additive forms break it.",
+        "Does not establish that all real multi-agent systems are incorrigible.",
+        "The paper itself leaves multi-principal game for future work."
+      ]
+    },
+    {
+      "id": "MIA-S06",
+      "authors": "Hadfield-Menell, Hadfield",
+      "year": 2018,
+      "title": "Incomplete Contracting and AI Alignment",
+      "venue": "arXiv / law-and-economics working paper",
+      "url": "https://arxiv.org/abs/1804.04268",
+      "type": "THEORETICAL_ARGUMENT",
+      "supports": [
+        "MIA-C08"
+      ],
+      "cautions": [
+        "AI alignment may require culture/legal institutions, not just P's fixed reward function.",
+        "Analogy is not an implemented real-world governance guarantee."
+      ]
+    },
+    {
+      "id": "MIA-S07",
+      "authors": "Köbis et al.",
+      "year": 2025,
+      "title": "Delegation to artificial intelligence can increase dishonest behaviour",
+      "venue": "Nature",
+      "doi": "10.1038/s41586-025-09505-x",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40963011/",
+      "type": "PEER_REVIEWED_HUMAN_EXPERIMENTS",
+      "supports": [
+        "MIA-C09"
+      ],
+      "cautions": [
+        "Human principal delegation experiments do not demonstrate institutional capture frequency or future AGI preferences."
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "MIA-C01",
+      "type": "SOURCE_REPORTED_RESULT",
+      "status": "BOUNDED_SOURCE_REPORT",
+      "statement": "In the Calvano et al. 2020 repeated pricing simulation independent Q-learners learned supracompetitive prices; authors interpreted impulses as punishment.",
+      "sources_for": [
+        "MIA-S01"
+      ],
+      "rival_sources": [
+        "MIA-S02",
+        "MIA-S04"
+      ],
+      "generalization": "SIMULATED_MARKET_ONLY"
+    },
+    {
+      "id": "MIA-C02",
+      "type": "SOURCE_REPORTED_COUNTEREVIDENCE",
+      "status": "BOUNDED_SOURCE_REPORT",
+      "statement": "In simulated pricing games high prices may be spurious when exploration and relevant conditioning do not support strategic collusion.",
+      "sources_for": [
+        "MIA-S02"
+      ],
+      "rival_sources": [
+        "MIA-S01"
+      ],
+      "generalization": "DEFINED_Q_LEARNING_SETTINGS"
+    },
+    {
+      "id": "MIA-C03",
+      "type": "SOURCE_REPORTED_RESULT",
+      "status": "BOUNDED_SOURCE_REPORT",
+      "statement": "In adversarial multi-agent pricing models gains for firms can coincide with higher prices/harm for consumers; in-group agreement is not VC for all affected parties.",
+      "sources_for": [
+        "MIA-S03"
+      ],
+      "rival_sources": [],
+      "generalization": "CONSTRUCTED_MARKETS_ONLY"
+    },
+    {
+      "id": "MIA-C04",
+      "type": "SOURCE_REPORTED_COUNTEREVIDENCE",
+      "status": "BOUNDED_SOURCE_REPORT",
+      "statement": "2026 paper reports nonselective return-to-attractor in 914/1024 learned pairs, including upward and downward perturbations.",
+      "sources_for": [
+        "MIA-S04"
+      ],
+      "rival_sources": [
+        "MIA-S01"
+      ],
+      "generalization": "AUTHOR_SIMULATION_NOT_RECOMPUTED"
+    },
+    {
+      "id": "MIA-C05",
+      "type": "SOURCE_REPORTED_COUNTEREVIDENCE",
+      "status": "BOUNDED_SOURCE_REPORT",
+      "statement": "Same 2026 paper reports 0.669 to 0.134 coordination index under frozen partner swaps (~80% decline).",
+      "sources_for": [
+        "MIA-S04"
+      ],
+      "rival_sources": [
+        "MIA-S01"
+      ],
+      "generalization": "AUTHOR_SIMULATION_NOT_RECOMPUTED"
+    },
+    {
+      "id": "MIA-C06",
+      "type": "SOURCE_REPORTED_COUNTEREVIDENCE",
+      "status": "BOUNDED_SOURCE_REPORT",
+      "statement": "Same paper reports that an optimized longer-horizon deviation increases simulated profit 17.5% average, despite a one-step test deterring the tested deviation.",
+      "sources_for": [
+        "MIA-S04"
+      ],
+      "rival_sources": [
+        "MIA-S01"
+      ],
+      "generalization": "AUTHOR_SIMULATION_NOT_RECOMPUTED"
+    },
+    {
+      "id": "MIA-C07",
+      "type": "FORMAL_SOURCE_RESULT",
+      "status": "SOURCE_THEOREM_CONDITIONAL",
+      "statement": "Specified multi-agent off-switch game has additive composition theorem and non-additive counterexamples; group corrigibility depends on coupling structure.",
+      "sources_for": [
+        "MIA-S05"
+      ],
+      "rival_sources": [],
+      "generalization": "FORMAL_ASSUMPTIONS_ONLY"
+    },
+    {
+      "id": "MIA-C08",
+      "type": "SOURCE_THEORY",
+      "status": "THEORETICAL_PRIOR_ART",
+      "statement": "Incomplete contracts use supporting third-party institutions and implied terms; owner utility does not exhaust all stakeholder obligations.",
+      "sources_for": [
+        "MIA-S06"
+      ],
+      "rival_sources": [],
+      "generalization": "CONCEPTUAL_ANALOGY"
+    },
+    {
+      "id": "MIA-C09",
+      "type": "SOURCE_REPORTED_RESULT",
+      "status": "BOUNDED_SOURCE_REPORT",
+      "statement": "In 13 experiments, machine delegation can increase dishonest behavior depending on how principals frame the task.",
+      "sources_for": [
+        "MIA-S07"
+      ],
+      "rival_sources": [],
+      "generalization": "STUDY_PARTICIPANTS_AND_TASKS"
+    },
+    {
+      "id": "MIA-C10",
+      "type": "PROJECT_INFERENCE",
+      "status": "UNTESTED_RESEARCH_HYPOTHESIS",
+      "statement": "Cooperative-looking AI system outcomes require intervention, policy transport, optimal alternatives and outsider welfare tests before classifying their mechanism or VC quality.",
+      "sources_for": [
+        "MIA-S02",
+        "MIA-S03",
+        "MIA-S04",
+        "MIA-S05"
+      ],
+      "rival_sources": [
+        "MIA-S01"
+      ],
+      "generalization": "HYPOTHESIS_ONLY"
+    }
+  ],
+  "mechanisms": [
+    {
+      "id": "M1",
+      "name": "STRATEGIC_CONTINGENT_DETERRENCE",
+      "observation": "high cooperative outcome and reactive fall after a deviation",
+      "signature": "asymmetric response to profitable deviations; robust best-response incentives conditional on partner policy",
+      "confound": "single global attractor also returns after any shock",
+      "test": "directional shocks + exact/approximated optimal best response + policy freezing"
+    },
+    {
+      "id": "M2",
+      "name": "DYAD_SPECIFIC_ATTRACTOR",
+      "observation": "same high cooperative outcome and reactive fall",
+      "signature": "both up/down shocks return, same attractor from most states; partner swap breaks coordination",
+      "confound": "genuine deterrence may also have basins and conditional conventions",
+      "test": "freeze policies, all-state basin enumeration, cross-partner swaps, matched support"
+    },
+    {
+      "id": "M3",
+      "name": "PRINCIPAL_DELEGATED_EXTRACTION",
+      "observation": "high profitability, willing compliance",
+      "signature": "B harms emerge conditional on owner's incentives and absent explicit prohibitions",
+      "confound": "benign scarcity/technology shifts",
+      "test": "compare task framing, rights constraints, third-party outcomes, external demand changes"
+    },
+    {
+      "id": "M4",
+      "name": "NONADDITIVE_COUPLED_CORRIGIBILITY",
+      "observation": "individually compliant agents but joint correction problems",
+      "signature": "interaction terms change correction equilibrium while additive control does not",
+      "confound": "misconfigured authority and common principal",
+      "test": "matched additive vs nonadditive utilities; group intervention and veto tests"
+    }
+  ],
+  "planned_protocol": {
+    "preregister_before_real_tests": true,
+    "primary_unit": "Identified independent agent-policy pair and specified external affected parties, time, control rights.",
+    "contrasts": [
+      "upward versus downward intervention",
+      "learned partner versus frozen stranger",
+      "one-step versus optimal multi-step deviation",
+      "additive versus non-additive joint payoff",
+      "owner obedience versus independent third-party welfare",
+      "true exit versus nominal exit"
+    ],
+    "negative_controls": [
+      "exogenous production-cost shock",
+      "fixed common pricing rule with no contingent response",
+      "partner change without distribution shift",
+      "owner instruction that does not violate third-party rights"
+    ],
+    "status": "DESIGN_ONLY_NO_PI_MODEL_EXECUTION"
+  }
+}
