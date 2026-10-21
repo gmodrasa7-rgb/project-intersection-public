@@ -5,6 +5,8 @@
 **Companion:** [PI-PACD-OCG v0.1.0](PI_PACD_OCG_V0_1_0_EN.md) (unchanged); [Korean study](PI_PACD_PRS_V0_1_0_KO.md); [manifest](PI_PACD_PRS_VERSION_MANIFEST.json).  
 **Provenance:** Project Intersection human researcher's challenge to owner-centric AI models; AI-assisted prior-art comparison and logic check. Independent scientific discovery not claimed.
 
+**Linked update (2026-10-22):** [Owner Self-Loss, PRS-OSL v0.1.0](PI_PACD_PRS_OSL_V0_1_0_EN.md). Owners' own long-horizon information, innovation, recovery and effective autonomy can decline after a proxy power victory; the opposite case is explicitly included. Original PRS v0.1.0 research status stays unchanged.
+
 ## 1. The error in an owner-only concept of safety
 
 Obeying the owner (**P-alignment**), allowing legitimate correction (**corrigibility**), and preserving the actual rights, exit and survival of an affected third party (**B-compatibility**) are different properties. If P legitimately directs harmless action they may align; if P directs an action violating B's independently valid rights, *unconditional* P-obedience and B-protection are mutually inconsistent. This does NOT imply that any AI independently gains authority to adjudicate the law or has proven standing as a rights holder.
