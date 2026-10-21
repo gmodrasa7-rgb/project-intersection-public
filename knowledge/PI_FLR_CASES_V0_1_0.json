@@ -1,7 +1,7 @@
 {
   "registry_id": "PI-FLR",
   "schema_version": "0.1.0",
-  "release_version": "0.5.0",
+  "release_version": "0.5.1",
   "as_of": "2026-10-22",
   "korean_name": "오류·학습·복구 재귀원장",
   "english_name": "Failure–Learning–Repair Registry",
@@ -586,6 +586,48 @@
           "kind": "LIMITATION_RECORDED",
           "evidence_url": "https://github.com/gmodrasa7-rgb/project-intersection-public/pull/343",
           "note": "Formal regression and conversation evidence storage do not establish required-check branch protection or repair the manifest SHA mismatch."
+        },
+        {
+          "seq": 4,
+          "date": "2026-10-22",
+          "kind": "RECURRENCE_OBSERVED",
+          "evidence_url": "https://github.com/gmodrasa7-rgb/project-intersection-public/actions/runs/39666153926",
+          "note": "During PR #348, C11 forced-failure regression unexpectedly returned SCOPED_REPLAY_PASS: mock compared basename with full argv path; CI failed and provided independent detection."
+        },
+        {
+          "seq": 5,
+          "date": "2026-10-22",
+          "kind": "ROOT_CAUSE_REVIEWED",
+          "evidence_url": "https://github.com/gmodrasa7-rgb/project-intersection-public/pull/348",
+          "note": "Mock predicates used 'pi_rise_manifest_guard.py' in command-list and 'check_readme_l0.py' in command-list, but argv contained tools/ prefixes; the injected error never fired."
+        },
+        {
+          "seq": 6,
+          "date": "2026-10-22",
+          "kind": "REPAIR_APPLIED",
+          "evidence_url": "https://github.com/gmodrasa7-rgb/project-intersection-public/pull/348",
+          "note": "Replaced basename membership predicates with exact allowlisted tools/... argv path membership in both existing and new mutation regressions."
+        },
+        {
+          "seq": 7,
+          "date": "2026-10-22",
+          "kind": "CI_PASS_OBSERVED",
+          "evidence_url": "https://github.com/gmodrasa7-rgb/project-intersection-public/actions/runs/39666295003",
+          "note": "Subsequent PR head passed PI-FLR registry and replay mutation tests; actual subprocess receipts reported FLR_META and FLR_MUTANTS pass. This is scoped code evidence."
+        },
+        {
+          "seq": 8,
+          "date": "2026-10-22",
+          "kind": "FIX_MERGED",
+          "evidence_url": "https://github.com/gmodrasa7-rgb/project-intersection-public/pull/348",
+          "note": "PR #348 squash merged after all four observed workflows were green; v0.5.0 C11 on main read back."
+        },
+        {
+          "seq": 9,
+          "date": "2026-10-22",
+          "kind": "LIMITATION_RECORDED",
+          "evidence_url": "https://github.com/gmodrasa7-rgb/project-intersection-public/pull/348",
+          "note": "This fixes an observed unit-test fixture defect, not independent long-term recurrence control or autonomous model learning. Earlier negative mock detection failure remains preserved."
         }
       ]
     }
