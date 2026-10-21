@@ -2,7 +2,7 @@
 <!-- L0_FOREWORD_FIRST: Original 1 English then Original 2 Korean, full matched text. Never promote a case study above this top-level purpose. -->
 
 ## Original 1 — English | Founding Purpose
-**Start reading:** [1-minute overview](navigation/ONE_MINUTE_EN.md) → [5-minute explanation](navigation/FIVE_MINUTES_EN.md) → [research evidence](navigation/ACCESS_MAP_EN.md) · [Korean 1-minute overview](navigation/ONE_MINUTE_KO.md) · [Read in Korean](navigation/START_HERE_KO.md).
+**Start reading:** [Read in Korean](navigation/START_HERE_KO.md) · [English 1-minute overview](navigation/ONE_MINUTE_EN.md) → [5-minute explanation](navigation/FIVE_MINUTES_EN.md) → [research evidence](navigation/ACCESS_MAP_EN.md) · [Korean 1-minute overview](navigation/ONE_MINUTE_KO.md).
 
 **The problem:** Throughout history, concentrated control of resources, institutions and force has enabled some humans to exploit others. AGI may reinforce, challenge or transform such power asymmetries; no outcome is predetermined.
 
