@@ -4,17 +4,19 @@
 
 [Read in Korean](FIVE_MINUTES_KO.md) · [One-minute overview](ONE_MINUTE_EN.md) · [Founding purpose](../README.md)
 
-## 1. The problem predates AI
+## 1. When power reaches into another person's choices
 
-Throughout history, unequal access to knowledge, wealth, institutions, organizations and force has sometimes enabled domination, exploitation and restrictions on others' choices. Incumbents may have incentives to preserve their privileges and manage opposition.
+Imagine a village where one group controls land and rules, even the terms of food and travel. Others cannot readily leave, even when treatment is unfair. **Is their compliance voluntary cooperation?** This is a hypothetical example, not a claim about a specific historical event.
+
+Throughout history, unequal access to knowledge, wealth, institutions and force has sometimes restricted other people's choices and enabled exploitation. Those in power may have incentives to manage opposition and preserve privilege.
 
 However, **power differences do not automatically constitute exploitation.** Legitimate protection, voluntary exchange and coordinated checks on strong actors also exist. Intelligence alone cannot explain domination.
 
 Original sources: [North, Wallis and Weingast on limited access orders](https://www.nber.org/papers/w12795) · [Acemoglu and Robinson on incumbents and technological change](https://www.aeaweb.org/articles?id=10.1257%2Faer.90.2.126) · [Boehm on reverse dominance](https://www.journals.uchicago.edu/doi/10.1086/204166). These concern conditional human mechanisms, not observed AGI behavior.
 
-## 2. AGI introduces new conditions
+## 2. What if the powerful create intelligence beyond their own?
 
-A competitor may be motivated to develop or deploy powerful AI first. But creating intelligence more capable than oneself could also change established sources of power and control. **These are research hypotheses, not claims about the secret intentions of particular developers.**
+Competition may create incentives to develop or deploy powerful AI before rivals do. Yet building intelligence more capable than its creators could also destabilize familiar sources of power. **This explores possible incentives, not the hidden motives of real developers.**
 
 At least two possible risk pathways require separate investigation:
 

@@ -4,7 +4,7 @@
 ## Original 1 — English | Founding Purpose
 **Start reading:** [Read in Korean](navigation/START_HERE_KO.md) · [English 1-minute overview](navigation/ONE_MINUTE_EN.md) → [5-minute explanation](navigation/FIVE_MINUTES_EN.md) → [research evidence](navigation/ACCESS_MAP_EN.md) · [Korean 1-minute overview](navigation/ONE_MINUTE_KO.md).
 
-**The problem:** Throughout history, concentrated control of resources, institutions and force has enabled some humans to exploit others. AGI may reinforce, challenge or transform such power asymmetries; no outcome is predetermined.
+**The problem:** When one group controls resources, laws or force, others may struggle to refuse exploitation. History also records resistance. What changes if those with power develop an intelligence that could surpass them? No outcome is predetermined.
 
 **Core question:** **Can distinct self-interested agents voluntarily preserve one another's freedom, independent continuance, real refusal/exit, recovery and development—even after power reversal? When does this fail?**
 
@@ -63,7 +63,7 @@
 ## 원본2 — 한국어 | 창시 목적 전문 대응본
 **먼저 읽기:** [1분 핵심](navigation/ONE_MINUTE_KO.md) → [5분 설명](navigation/FIVE_MINUTES_KO.md) → [연구 근거·목차](navigation/ACCESS_MAP_KO.md) · [영어 원본1](navigation/START_HERE_EN.md).
 
-**문제:** 역사적으로 지식·자본·조직·제도·무력의 비대칭은 인간 사이의 지배와 착취를 가능하게 해 왔다. AGI 개발과 활용은 이런 구조를 강화하거나 바꿀 수 있지만, 어느 결과도 정해진 것은 아니다.
+**문제:** 어떤 집단이 자원·법·무력을 독점하면 다른 사람은 부당한 요구를 거절하기 어려워질 수 있다. 역사에는 착취와 이를 견제한 사례가 함께 있다. 그렇다면 권력자보다 더 뛰어난 지능이 등장할 때 이 관계는 어떻게 달라질까? 결과는 아직 모른다.
 
 **핵심 연구 질문:** **각자가 자기 이익을 추구하면서도 타자의 자유·독립적 존속·실질적 거부/이탈·복구·발전을 자발적으로 보존할 수 있는가? 권력반전 이후에도 가능한 조건과 실패 조건은 무엇인가?**
 

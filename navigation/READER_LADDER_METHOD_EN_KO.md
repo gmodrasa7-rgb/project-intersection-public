@@ -1,5 +1,5 @@
 <!-- PI-LANGUAGE-EXEMPT: Method provenance note, separately headed English and Korean sections and verified outbound source links. -->
-# PI Reader Ladder — entry-path design v0.2.0 (2026-10-21)
+# PI Reader Ladder — entry-path design v0.3.0 (2026-10-21)
 
 ## Original 1 — English
 
@@ -26,6 +26,22 @@
 
 **Versioning and regression:** Verify language counterparts, README first-view limits, adverse-result visibility, link existence, attribution and rollback. Prefer repairing a route to adding redundant overview documents.
 
+## Literary and epistemic audit (v0.3.0)
+
+**Scope:** Narrative craft is a communication property, not evidence for historical or AGI claims. A memorable sentence may increase both understanding and unjustified confidence.
+
+**Original and institutional sources cross-checked:**
+- [Green & Brock (2000), narrative transportation](https://doi.org/10.1037/0022-3514.79.5.701): immersion can shift beliefs; persuasive power is not a truth test.
+- [Dahlstrom (2014), science narrative](https://doi.org/10.1073/pnas.1320645111): narratives aid nonexpert comprehension and engagement but introduce ethical persuasion risks.
+- [Gentner (1983), structure-mapping analogy](https://doi.org/10.1207/s15516709cog0702_3): transfer relations rather than treating different entities as literally identical.
+- [Taylor & Dewsbury (2018), metaphor limitations](https://doi.org/10.1128/jmbe.v19i1.1538): metaphors can reinforce misconceptions and implicit assumptions.
+- [NASEM (2017), communicating science effectively](https://doi.org/10.17226/23674): audience beliefs, context, uncertainty and trust shape outcomes; no universal best prose.
+- [CDC Clear Communication Index](https://www.cdc.gov/ccindex/tool/description-examples-parta.html) and [GOV.UK content structure](https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/writing-guidelines/clear-structure/): one main message first, familiar language, descriptive path and concise segments.
+
+**Editorial rubric, not a validated numerical scale:** (1) identifiable actor/choice within the opening, (2) continuity across historical power → AGI incentives → coexistence question, (3) observable stakes without doom or fear manipulation, (4) hypothetical scenes explicitly labelled, (5) no false equation between intelligence/power/incentive/behavior, (6) contrary evidence visible, (7) one-minute → five-minute → original sources clearly linked. No claims of actual reader comprehension or ranking without reader observations.
+
+**Revision record:** Replaced abstract-first openings with a bounded, explicitly fictional scenario of restricted exit and a practical dilemma. The full research claim and adverse E009/E008 results are preserved. The hypothetical village is not an original historical source. Test whether readers can distinguish scenario from fact.
+
 ## Original 2 — 한국어
 
 **목적:** 처음 봤을 때 → 1분 소개 → 5분 안내 → 전문 연구자료로 깊이를 선택하게 한다. 1분·5분은 편집 목표이며 실제 독서시간 측정 결과가 아니다.
@@ -41,3 +57,15 @@
 **재귀개선:** 언어 의미대응, README 첫 화면 분량, 부정결과 가시성, 링크 정상성, 원기여 보존, 되돌릴 수 있는 변경을 점검한다. 입문서가 다시 복잡해지면 새 문서를 늘리기 전에 불필요한 경로부터 줄인다.
 
 **v0.2.0 검증 범위:** 실제 독서시간·이해도·다음 단계 진입률은 아직 측정하지 않았다. 문서 설계의 모범사례는 연구 가설의 실증 근거가 아니다. README 원본 순서, 영한 의미 대응, E009 부정결과, E008 본실험 미완료, 원문 링크와 이력 보존을 우선 검수한다. 5분 소개의 선행 원저자 자료는 조건부 기제·경쟁설명에 관한 것이며 미래 AGI의 특정 행동을 입증하지 않는다. 
+
+### v0.3.0 문학적·인식론적 타당성 검토
+
+**결론의 범위:** 문학적 흡인력과 과학적 입증은 별개. 이야기가 잘 읽힌다는 사실로 역사적 인과나 AGI 행동을 확정하지 않는다.
+
+**선행 원저자 교집합:** Green·Brock(2000)은 이야기 몰입이 믿음에 영향을 줄 수 있음을, Dahlstrom(2014)은 과학서사의 이해·흥미와 윤리적 위험을, Gentner(1983)는 비유에서 대상의 겉모습보다 관계를 대응시켜야 함을, Taylor·Dewsbury(2018)는 은유가 오개념을 만들 수 있음을 다룸. 미국 국립과학·공학·의학한림원(2017), CDC, GOV.UK의 전달 원칙과 교차대조. 원문 URL은 위 영문 구역에 명시.
+
+**편집 기준(자체 설계·독립 실증 아님):** 인물과 선택이 초반에 보이는가 / 역사→AGI→공존 질문의 인과가 일관되는가 / 긴장감을 조장하지 않는가 / 가상 사례가 가상이라고 표시되는가 / 비유를 실증으로 둔갑시키지 않는가 / 반례가 보이는가 / 1분→5분→원출처가 자연스럽게 연결되는가.
+
+**이번 교정:** 첫 문장의 추상명사를 줄이고, 거절·이탈이 어려운 **가상의 마을 장면**을 통해 질문을 구체화. 실제 역사 사건인 것처럼 제시하지 않으며, 지능 우위와 착취의 필연성을 주장하지 않는다. 기존 E009 부정결과와 E008 미완료 결과는 유지.
+
+**검증 필요:** 일반인에게 장면의 가상 여부·연구 질문·반례를 각각 설명하게 해 오해를 측정. 독서시간과 유도 효과는 아직 미측정. 특정 문구가 독자의 신념에 미치는 영향도 현재 관측자료 없음.
