@@ -21,6 +21,8 @@ Many historical sources are Korean-only or bilingual; linked **source titles, fi
 
 **2026-10-22 mechanism identification and outsider convergence:** [PI-PACD-MIA v0.1.0 English](../research/PI_PACD_MIA_V0_1_0_EN.md) · [Korean](../research/PI_PACD_MIA_V0_1_0_KO.md) · [source/claim ledger](../research/PI_PACD_MIA_SOURCE_CROSSWALK_V0_1_0.json) · [version](../research/PI_PACD_MIA_VERSION_MANIFEST.json). 2020/2023/2026 algorithmic pricing disputes, additive vs coupled multi-agent corrigibility, US DOJ and UK CMA real-world gateway cases; no new project field study or AI model trial.
 
+**Owner self-loss despite proxy victory:** [PRS-OSL v0.1.0 EN](../research/PI_PACD_PRS_OSL_V0_1_0_EN.md) · [KO](../research/PI_PACD_PRS_OSL_V0_1_0_KO.md). Owner information, usable autonomy, innovation and option losses considered separately from third-party rights and tested against opposite private incentive cases. No empirical owner data.
+
 **Who is an AI safe for? (2026-10-21):** [PI-PACD-PRS v0.1.0 English](../research/PI_PACD_PRS_V0_1_0_EN.md) · [Korean](../research/PI_PACD_PRS_V0_1_0_KO.md) · [12-state authored counterexample](../research/PI_PACD_PRS_V0_1_0_RESULT.json) · [version](../research/PI_PACD_PRS_VERSION_MANIFEST.json). Owner compliance differs from protecting affected parties; no real agent results.
 
 **Owner–goal conflict and corrigibility (2026-10-21):** [PI-PACD-OCG v0.1.0 EN](../research/PI_PACD_OCG_V0_1_0_EN.md) · [KO](../research/PI_PACD_OCG_V0_1_0_KO.md) · [manifest](../research/PI_PACD_OCG_VERSION_MANIFEST.json). Distinguishes reasoned objection, authorized correction and unauthorized override across 12 proposed paired cases; no project experiment yet.
