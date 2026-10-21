@@ -4,6 +4,8 @@
 <!-- PI-MIRROR: research/PUBLIC_EVIDENCE_INDEX_EN.md -->
 <!-- PI-SOURCE: PUBLIC_EVIDENCE_INDEX.md -->
 
+**2026-10-22 최근 48시간 통합 측정감사(새 실증 아님):** [9축 관측·미관측 증거원장](PI_48H_OBSERVATION_EVIDENCE_V0_1_0.json)은 선별된 공개 자료 9건을 선택기회·상위동의·행위존중·잔존 지배권·실효 이탈·독립회복·원개체 존속·제3자 영향·동기 식별 가능성으로 분리. 9건은 신규 원저논문 수가 아님. 측정되지 않은 항목은 `NOT_MEASURED`, 가상모형은 `TOY_ASSUMED`. [검사기](../tools/pi_48h_observation_guard.py) 및 [부정검사](../tests/test_pi_48h_observation_guard.py)는 파일·범위·과장방지의 정적 검증이며, 연구의 현실 효과·내면동기·외부 재현을 승인하지 않음.
+
 **상태:** 공개 주장·증거·출처·허용되지 않는 추론을 구별한 연구 실사 색인. [영어 원본1](PUBLIC_EVIDENCE_INDEX_EN.md) · [기존 통합 증거 원장](../PUBLIC_EVIDENCE_INDEX.md) · [한국어 연구 목차](../navigation/RESEARCH_TOC_KO.md).
 
 이 한국어판은 과거 한국어 증거 표와 E009 부정결과를 보존하며 최근 부분검토를 별도 요약한 독서판이다. 독립 번역 품질 평가나 과학적 독립검증이 아니며 실험식별자·원저자·실패결과·역사적 정정기록을 유지한다.

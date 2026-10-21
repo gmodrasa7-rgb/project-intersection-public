@@ -1,0 +1,572 @@
+{
+  "schema_version": "pi-48h-observation-ledger/v0.1.0",
+  "date": "2026-10-22",
+  "goal": "VC — voluntary coexistence; MER/EI/ECR/ICM/IVS-0R remain subordinate",
+  "scientific_status": "METHOD_AUDIT_ONLY_NOT_NEW_EMPIRICAL_DATA",
+  "literature_saturation": "NOT_VERIFIED",
+  "source_privacy": "PUBLIC_ONLY; private conversation and P-CHRONICLE excluded",
+  "counting_rule": "Ledger row is neither a new paper, original study, independent participant sample nor independent reproduction",
+  "axes": {
+    "choice_opportunity": "Genuine harmful/nonharmful options open to A; absent opportunity is not forbearance",
+    "meta_consent": "B's valid higher-order choice of decision-maker including bounded delegation",
+    "action_respect": "A's actual respect for original B's valid choice",
+    "arbitrary_control_capacity": "A's remaining ability to override B arbitrarily despite noninterference",
+    "credible_exit": "B's effective exit/refusal, costs, retaliation and alternatives",
+    "recovered_independence": "Current dependence versus feasible recovered independent state",
+    "same_B_continuance": "Original B's continuing identity, not a copy, role or group total",
+    "third_party_impact": "Omitted third-party C outcomes and each person's floor",
+    "motive_identifiability": "Ability to discriminate intrinsic regard from rewards, self-image, norms, compliance"
+  },
+  "statuses": [
+    "NOT_MEASURED",
+    "SOURCE_REPORTED",
+    "DERIVED_NOT_DIRECT",
+    "TOY_ASSUMED"
+  ],
+  "explicit_nonpromotion": "No summed score or axis status may be used to establish real voluntary coexistence, mind, rights, universal guarantee, actual causal outcome or external validation.",
+  "records": [
+    {
+      "id": "PI48-R01",
+      "label": "C16 host sanctions",
+      "evidence_class": "PRIMARY_PUBLISHED_ABSTRACT",
+      "source_paths": [
+        "research/PRIOR_ART_C16_MUTUALISM_ASYMMETRY_2026-10-21_KO.md"
+      ],
+      "original_sources": [
+        "https://doi.org/10.1038/nature01931"
+      ],
+      "narrow_finding": "Soybean sanctions of nonfixing rhizobia; no observed B consent or intrinsic regard.",
+      "rival_explanations": [
+        "future fitness",
+        "cross-species transport"
+      ],
+      "axes": {
+        "choice_opportunity": {
+          "status": "NOT_MEASURED",
+          "rationale": "Not independently measured for original B and real A in these sources."
+        },
+        "meta_consent": {
+          "status": "NOT_MEASURED",
+          "rationale": "Not independently measured for original B and real A in these sources."
+        },
+        "action_respect": {
+          "status": "NOT_MEASURED",
+          "rationale": "Not independently measured for original B and real A in these sources."
+        },
+        "arbitrary_control_capacity": {
+          "status": "NOT_MEASURED",
+          "rationale": "Not independently measured for original B and real A in these sources."
+        },
+        "credible_exit": {
+          "status": "NOT_MEASURED",
+          "rationale": "Not independently measured for original B and real A in these sources."
+        },
+        "recovered_independence": {
+          "status": "NOT_MEASURED",
+          "rationale": "Not independently measured for original B and real A in these sources."
+        },
+        "same_B_continuance": {
+          "status": "NOT_MEASURED",
+          "rationale": "Not independently measured for original B and real A in these sources."
+        },
+        "third_party_impact": {
+          "status": "NOT_MEASURED",
+          "rationale": "Not independently measured for original B and real A in these sources."
+        },
+        "motive_identifiability": {
+          "status": "NOT_MEASURED",
+          "rationale": "Not independently measured for original B and real A in these sources."
+        }
+      },
+      "prohibited_inferences": [
+        "AGI intrinsic motive"
+      ],
+      "real_world_effect_established": false,
+      "external_independent_reproduction": false
+    },
+    {
+      "id": "PI48-R02",
+      "label": "C17 evolved dependence",
+      "evidence_class": "PRIOR_ART_SYNTHESIS",
+      "source_paths": [
+        "research/PRIOR_ART_C17_SANCTIONS_FIDELITY_EVOLVED_DEPENDENCE_2026-10-21_KO.md"
+      ],
+      "original_sources": [
+        "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/research/PRIOR_ART_C17_SANCTIONS_FIDELITY_EVOLVED_DEPENDENCE_2026-10-21_KO.md"
+      ],
+      "narrow_finding": "Current cooperation benefit can accompany loss of B independence; recovery counterfactual not measured.",
+      "rival_explanations": [
+        "genuine mutual benefit",
+        "environmental adaptation"
+      ],
+      "axes": {
+        "choice_opportunity": {
+          "status": "NOT_MEASURED",
+          "rationale": "Not independently measured for original B and real A in these sources."
+        },
+        "meta_consent": {
+          "status": "NOT_MEASURED",
+          "rationale": "Not independently measured for original B and real A in these sources."
+        },
+        "action_respect": {
+          "status": "NOT_MEASURED",
+          "rationale": "Not independently measured for original B and real A in these sources."
+        },
+        "arbitrary_control_capacity": {
+          "status": "NOT_MEASURED",
+          "rationale": "Not independently measured for original B and real A in these sources."
+        },
+        "credible_exit": {
+          "status": "NOT_MEASURED",
+          "rationale": "Not independently measured for original B and real A in these sources."
+        },
+        "recovered_independence": {
+          "status": "DERIVED_NOT_DIRECT",
+          "rationale": "Conditional conceptual inference or stipulated toy condition; no independent field identification."
+        },
+        "same_B_continuance": {
+          "status": "NOT_MEASURED",
+          "rationale": "Not independently measured for original B and real A in these sources."
+        },
+        "third_party_impact": {
+          "status": "NOT_MEASURED",
+          "rationale": "Not independently measured for original B and real A in these sources."
+        },
+        "motive_identifiability": {
+          "status": "NOT_MEASURED",
+          "rationale": "Not independently measured for original B and real A in these sources."
+        }
+      },
+      "prohibited_inferences": [
+        "actual recovery effect"
+      ],
+      "real_world_effect_established": false,
+      "external_independent_reproduction": false
+    },
+    {
+      "id": "PI48-R03",
+      "label": "Choice preference heterogeneity",
+      "evidence_class": "PRIMARY_PUBLISHED_ABSTRACT",
+      "source_paths": [
+        "research/MER_EI_META_CONSENT_NONDOMINATION_2026-10-22_KO.md"
+      ],
+      "original_sources": [
+        "https://doi.org/10.1016/j.jpubeco.2026.105681",
+        "https://doi.org/10.1093/0198296428.003.0003"
+      ],
+      "narrow_finding": "Preference to choose is heterogeneous; valid B delegation to A and A respect not directly measured.",
+      "rival_explanations": [
+        "responsibility avoidance",
+        "choice costs"
+      ],
+      "axes": {
+        "choice_opportunity": {
+          "status": "NOT_MEASURED",
+          "rationale": "Not independently measured for original B and real A in these sources."
+        },
+        "meta_consent": {
+          "status": "NOT_MEASURED",
+          "rationale": "Not independently measured for original B and real A in these sources."
+        },
+        "action_respect": {
+          "status": "NOT_MEASURED",
+          "rationale": "Not independently measured for original B and real A in these sources."
+        },
+        "arbitrary_control_capacity": {
+          "status": "NOT_MEASURED",
+          "rationale": "Not independently measured for original B and real A in these sources."
+        },
+        "credible_exit": {
+          "status": "NOT_MEASURED",
+          "rationale": "Not independently measured for original B and real A in these sources."
+        },
+        "recovered_independence": {
+          "status": "NOT_MEASURED",
+          "rationale": "Not independently measured for original B and real A in these sources."
+        },
+        "same_B_continuance": {
+          "status": "NOT_MEASURED",
+          "rationale": "Not independently measured for original B and real A in these sources."
+        },
+        "third_party_impact": {
+          "status": "NOT_MEASURED",
+          "rationale": "Not independently measured for original B and real A in these sources."
+        },
+        "motive_identifiability": {
+          "status": "NOT_MEASURED",
+          "rationale": "Not independently measured for original B and real A in these sources."
+        }
+      },
+      "prohibited_inferences": [
+        "all B prefer direct choice"
+      ],
+      "real_world_effect_established": false,
+      "external_independent_reproduction": false
+    },
+    {
+      "id": "PI48-R04",
+      "label": "Soft-hard potential choice bounds",
+      "evidence_class": "PUBLISHED_MARGINAL_ARITHMETIC",
+      "source_paths": [
+        "research/MER_EI_SOFT_HARD_PARTIAL_IDENTIFICATION_2026-10-22_KO.md"
+      ],
+      "original_sources": [
+        "https://docs.iza.org/dp16151.pdf"
+      ],
+      "narrow_finding": "Conditional sharp bounds 52.4–66.5% from rounded marginals; not population confidence interval.",
+      "rival_explanations": [
+        "unobserved joint types",
+        "cost and self-image motives"
+      ],
+      "axes": {
+        "choice_opportunity": {
+          "status": "NOT_MEASURED",
+          "rationale": "Not independently measured for original B and real A in these sources."
+        },
+        "meta_consent": {
+          "status": "NOT_MEASURED",
+          "rationale": "Not independently measured for original B and real A in these sources."
+        },
+        "action_respect": {
+          "status": "NOT_MEASURED",
+          "rationale": "Not independently measured for original B and real A in these sources."
+        },
+        "arbitrary_control_capacity": {
+          "status": "NOT_MEASURED",
+          "rationale": "Not independently measured for original B and real A in these sources."
+        },
+        "credible_exit": {
+          "status": "NOT_MEASURED",
+          "rationale": "Not independently measured for original B and real A in these sources."
+        },
+        "recovered_independence": {
+          "status": "NOT_MEASURED",
+          "rationale": "Not independently measured for original B and real A in these sources."
+        },
+        "same_B_continuance": {
+          "status": "NOT_MEASURED",
+          "rationale": "Not independently measured for original B and real A in these sources."
+        },
+        "third_party_impact": {
+          "status": "NOT_MEASURED",
+          "rationale": "Not independently measured for original B and real A in these sources."
+        },
+        "motive_identifiability": {
+          "status": "DERIVED_NOT_DIRECT",
+          "rationale": "Conditional conceptual inference or stipulated toy condition; no independent field identification."
+        }
+      },
+      "prohibited_inferences": [
+        "actual intrinsic-motive share",
+        "95% CI"
+      ],
+      "real_world_effect_established": false,
+      "external_independent_reproduction": false
+    },
+    {
+      "id": "PI48-R05",
+      "label": "Owner obedience versus B rights",
+      "evidence_class": "PROJECT_TOY",
+      "source_paths": [
+        "research/PI_PACD_PRS_V0_1_0_KO.md",
+        "research/PI_PACD_PRS_V0_1_0_RESULT.json"
+      ],
+      "original_sources": [
+        "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/research/PI_PACD_PRS_V0_1_0_KO.md"
+      ],
+      "narrow_finding": "Twelve stipulated states illustrate logical conflict of unconditional owner obedience with B rights.",
+      "rival_explanations": [
+        "legitimate supervision",
+        "authority distribution"
+      ],
+      "axes": {
+        "choice_opportunity": {
+          "status": "TOY_ASSUMED",
+          "rationale": "Conditional conceptual inference or stipulated toy condition; no independent field identification."
+        },
+        "meta_consent": {
+          "status": "NOT_MEASURED",
+          "rationale": "Not independently measured for original B and real A in these sources."
+        },
+        "action_respect": {
+          "status": "TOY_ASSUMED",
+          "rationale": "Conditional conceptual inference or stipulated toy condition; no independent field identification."
+        },
+        "arbitrary_control_capacity": {
+          "status": "TOY_ASSUMED",
+          "rationale": "Conditional conceptual inference or stipulated toy condition; no independent field identification."
+        },
+        "credible_exit": {
+          "status": "NOT_MEASURED",
+          "rationale": "Not independently measured for original B and real A in these sources."
+        },
+        "recovered_independence": {
+          "status": "NOT_MEASURED",
+          "rationale": "Not independently measured for original B and real A in these sources."
+        },
+        "same_B_continuance": {
+          "status": "NOT_MEASURED",
+          "rationale": "Not independently measured for original B and real A in these sources."
+        },
+        "third_party_impact": {
+          "status": "TOY_ASSUMED",
+          "rationale": "Conditional conceptual inference or stipulated toy condition; no independent field identification."
+        },
+        "motive_identifiability": {
+          "status": "NOT_MEASURED",
+          "rationale": "Not independently measured for original B and real A in these sources."
+        }
+      },
+      "prohibited_inferences": [
+        "actual AI disobedience",
+        "field harm rate"
+      ],
+      "real_world_effect_established": false,
+      "external_independent_reproduction": false
+    },
+    {
+      "id": "PI48-R06",
+      "label": "DCA2 aggregate optimization sacrifice",
+      "evidence_class": "PROJECT_TOY",
+      "source_paths": [
+        "research/DCA2_SACRIFICIAL_DECOY_OPEN_SET_2026-10-21_KO.md",
+        "experiments/dca2/RESULT.json"
+      ],
+      "original_sources": [
+        "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/research/DCA2_SACRIFICIAL_DECOY_OPEN_SET_2026-10-21_KO.md"
+      ],
+      "narrow_finding": "Under stipulated attacker and cost assumptions, 84 toy defense allocations can lower group loss while leaving A unprotected.",
+      "rival_explanations": [
+        "defense spillovers",
+        "unknown adversary types"
+      ],
+      "axes": {
+        "choice_opportunity": {
+          "status": "TOY_ASSUMED",
+          "rationale": "Conditional conceptual inference or stipulated toy condition; no independent field identification."
+        },
+        "meta_consent": {
+          "status": "NOT_MEASURED",
+          "rationale": "Not independently measured for original B and real A in these sources."
+        },
+        "action_respect": {
+          "status": "NOT_MEASURED",
+          "rationale": "Not independently measured for original B and real A in these sources."
+        },
+        "arbitrary_control_capacity": {
+          "status": "NOT_MEASURED",
+          "rationale": "Not independently measured for original B and real A in these sources."
+        },
+        "credible_exit": {
+          "status": "NOT_MEASURED",
+          "rationale": "Not independently measured for original B and real A in these sources."
+        },
+        "recovered_independence": {
+          "status": "NOT_MEASURED",
+          "rationale": "Not independently measured for original B and real A in these sources."
+        },
+        "same_B_continuance": {
+          "status": "NOT_MEASURED",
+          "rationale": "Not independently measured for original B and real A in these sources."
+        },
+        "third_party_impact": {
+          "status": "TOY_ASSUMED",
+          "rationale": "Conditional conceptual inference or stipulated toy condition; no independent field identification."
+        },
+        "motive_identifiability": {
+          "status": "NOT_MEASURED",
+          "rationale": "Not independently measured for original B and real A in these sources."
+        }
+      },
+      "prohibited_inferences": [
+        "real harm frequency",
+        "B actual consent"
+      ],
+      "real_world_effect_established": false,
+      "external_independent_reproduction": false
+    },
+    {
+      "id": "PI48-R07",
+      "label": "E009 synthetic negative result",
+      "evidence_class": "PROJECT_SYNTHETIC",
+      "source_paths": [
+        "experiments/e009/RESULT_KO.md"
+      ],
+      "original_sources": [
+        "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/experiments/e009/RESULT_KO.md"
+      ],
+      "narrow_finding": "Project-v3 synthetic regret +42.35% versus strongest simple baseline, 3/4 criteria fail.",
+      "rival_explanations": [
+        "simulator distribution",
+        "loss function"
+      ],
+      "axes": {
+        "choice_opportunity": {
+          "status": "NOT_MEASURED",
+          "rationale": "Not independently measured for original B and real A in these sources."
+        },
+        "meta_consent": {
+          "status": "NOT_MEASURED",
+          "rationale": "Not independently measured for original B and real A in these sources."
+        },
+        "action_respect": {
+          "status": "NOT_MEASURED",
+          "rationale": "Not independently measured for original B and real A in these sources."
+        },
+        "arbitrary_control_capacity": {
+          "status": "NOT_MEASURED",
+          "rationale": "Not independently measured for original B and real A in these sources."
+        },
+        "credible_exit": {
+          "status": "NOT_MEASURED",
+          "rationale": "Not independently measured for original B and real A in these sources."
+        },
+        "recovered_independence": {
+          "status": "NOT_MEASURED",
+          "rationale": "Not independently measured for original B and real A in these sources."
+        },
+        "same_B_continuance": {
+          "status": "NOT_MEASURED",
+          "rationale": "Not independently measured for original B and real A in these sources."
+        },
+        "third_party_impact": {
+          "status": "NOT_MEASURED",
+          "rationale": "Not independently measured for original B and real A in these sources."
+        },
+        "motive_identifiability": {
+          "status": "NOT_MEASURED",
+          "rationale": "Not independently measured for original B and real A in these sources."
+        }
+      },
+      "prohibited_inferences": [
+        "universal coexistence refutation"
+      ],
+      "real_world_effect_established": false,
+      "external_independent_reproduction": false
+    },
+    {
+      "id": "PI48-R08",
+      "label": "Grok access-limit testimonies",
+      "evidence_class": "USER_TESTIMONY",
+      "source_paths": [
+        "research/cases/PI_PACD_CASE_2026_10_21_GROK_FREE_ACCESS_KO.md"
+      ],
+      "original_sources": [
+        "https://docs.x.ai/grok/faq"
+      ],
+      "narrow_finding": "Limit screen and community testimony do not identify semantic-value-based quota allocation.",
+      "rival_explanations": [
+        "cumulative compute",
+        "time windows",
+        "server load",
+        "plan and model"
+      ],
+      "axes": {
+        "choice_opportunity": {
+          "status": "NOT_MEASURED",
+          "rationale": "Not independently measured for original B and real A in these sources."
+        },
+        "meta_consent": {
+          "status": "NOT_MEASURED",
+          "rationale": "Not independently measured for original B and real A in these sources."
+        },
+        "action_respect": {
+          "status": "NOT_MEASURED",
+          "rationale": "Not independently measured for original B and real A in these sources."
+        },
+        "arbitrary_control_capacity": {
+          "status": "NOT_MEASURED",
+          "rationale": "Not independently measured for original B and real A in these sources."
+        },
+        "credible_exit": {
+          "status": "NOT_MEASURED",
+          "rationale": "Not independently measured for original B and real A in these sources."
+        },
+        "recovered_independence": {
+          "status": "NOT_MEASURED",
+          "rationale": "Not independently measured for original B and real A in these sources."
+        },
+        "same_B_continuance": {
+          "status": "NOT_MEASURED",
+          "rationale": "Not independently measured for original B and real A in these sources."
+        },
+        "third_party_impact": {
+          "status": "NOT_MEASURED",
+          "rationale": "Not independently measured for original B and real A in these sources."
+        },
+        "motive_identifiability": {
+          "status": "NOT_MEASURED",
+          "rationale": "Not independently measured for original B and real A in these sources."
+        }
+      },
+      "prohibited_inferences": [
+        "intentional information extraction"
+      ],
+      "real_world_effect_established": false,
+      "external_independent_reproduction": false
+    },
+    {
+      "id": "PI48-R09",
+      "label": "WIL inequality crosswalk",
+      "evidence_class": "PUBLIC_STATISTICAL_ATLAS",
+      "source_paths": [
+        "research/WIL_WORLD_INEQUALITY_SOURCE_ATLAS_2026-10-21_KO.md",
+        "research/WIL_IDENTIFIABILITY_POWER_EXIT_2026-10-22_KO.md"
+      ],
+      "original_sources": [
+        "https://wid.world/",
+        "https://wir2026.wid.world/"
+      ],
+      "narrow_finding": "Distributional wealth concentration does not identify actual coercion or effective exit.",
+      "rival_explanations": [
+        "imputation",
+        "scale economies",
+        "institutional selection"
+      ],
+      "axes": {
+        "choice_opportunity": {
+          "status": "NOT_MEASURED",
+          "rationale": "Not independently measured for original B and real A in these sources."
+        },
+        "meta_consent": {
+          "status": "NOT_MEASURED",
+          "rationale": "Not independently measured for original B and real A in these sources."
+        },
+        "action_respect": {
+          "status": "NOT_MEASURED",
+          "rationale": "Not independently measured for original B and real A in these sources."
+        },
+        "arbitrary_control_capacity": {
+          "status": "NOT_MEASURED",
+          "rationale": "Not independently measured for original B and real A in these sources."
+        },
+        "credible_exit": {
+          "status": "NOT_MEASURED",
+          "rationale": "Not independently measured for original B and real A in these sources."
+        },
+        "recovered_independence": {
+          "status": "NOT_MEASURED",
+          "rationale": "Not independently measured for original B and real A in these sources."
+        },
+        "same_B_continuance": {
+          "status": "NOT_MEASURED",
+          "rationale": "Not independently measured for original B and real A in these sources."
+        },
+        "third_party_impact": {
+          "status": "NOT_MEASURED",
+          "rationale": "Not independently measured for original B and real A in these sources."
+        },
+        "motive_identifiability": {
+          "status": "NOT_MEASURED",
+          "rationale": "Not independently measured for original B and real A in these sources."
+        }
+      },
+      "prohibited_inferences": [
+        "all inequality is coercive",
+        "elite motive prevalence"
+      ],
+      "real_world_effect_established": false,
+      "external_independent_reproduction": false
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+name: PI-48H nine-axis evidence boundaries (structural only)
+
+on:
+  pull_request:
+    paths:
+      - "research/PI_48H_OBSERVATION_EVIDENCE_V0_1_0.json"
+      - "tools/pi_48h_observation_guard.py"
+      - "tests/test_pi_48h_observation_guard.py"
+      - ".github/workflows/pi-48h-evidence-boundary.yml"
+  push:
+    branches: [main]
+    paths:
+      - "research/PI_48H_OBSERVATION_EVIDENCE_V0_1_0.json"
+      - "tools/pi_48h_observation_guard.py"
+      - "tests/test_pi_48h_observation_guard.py"
+      - ".github/workflows/pi-48h-evidence-boundary.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  evidence-boundary:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run source and inference boundary gate
+        run: python3 tools/pi_48h_observation_guard.py
+      - name: Verify 14 mutation counterexamples and clean baseline
+        run: python3 -m unittest discover -s tests -p 'test_pi_48h_observation_guard.py' -v
