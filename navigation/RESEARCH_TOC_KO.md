@@ -1,5 +1,7 @@
 # 연구 전체 목차 — 원본2: 한국어
 
+**WIL-ATLAS v0.2.0 (2026-10-22) — 공식 프로젝트 전수목록·분배 통계의 인과 비식별성:** [원전 기술노트 감사·한국 자료 정의·이탈권/권력반전 반례·독립 실증 비교](../research/WIL_IDENTIFIABILITY_POWER_EXIT_2026-10-22_KO.md) · [영어 원본1](../research/WIL_IDENTIFIABILITY_POWER_EXIT_2026-10-22_EN.md) · [WIL 공식 프로젝트 27개 CSV](../research/WIL_OFFICIAL_PROJECTS_27_2026-10-22.csv) · [연도·분모·추정대상 10개 감사 CSV](../research/WIL_STATISTICAL_CLAIMS_AUDIT_2026-10-22.csv). **27개는 현재 공식 프로젝트 페이지 가시 항목 수이며 WIL 전체 논문 건수 아님.**
+
 **세계불평등연구소 WIL 출처지도 v0.1.0 (2026-10-21):** [세계불평등보고서 2018·2022·2026, WID 방법론·자료품질, 원논문·반대근거 및 ICM/ECR/MER/EI 교차분석](../research/WIL_WORLD_INEQUALITY_SOURCE_ATLAS_2026-10-21_KO.md) · [영어 원본1](../research/WIL_WORLD_INEQUALITY_SOURCE_ATLAS_2026-10-21_EN.md) · [28개 기관·대조 출처의 CSV 색인](../research/WIL_SOURCE_REGISTRY_2026-10-21.csv). 전체 문헌 포화·통계 독립 재현으로 오인 금지.
 
 **DCA-2 반증·원전 검토:** [희생양 최적화·미관측 위협·개체보호 하한 (2026-10-21)](../research/DCA2_SACRIFICIAL_DECOY_OPEN_SET_2026-10-21_KO.md) — 개별 연구 결과이며 최종 공존목표나 독립 실증검증의 대체물 아님.
