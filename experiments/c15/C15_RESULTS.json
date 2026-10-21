@@ -1,0 +1,1299 @@
+{
+  "schema": "PI.C15.logical-tests.v1",
+  "date": "2026-10-21",
+  "epistemic_status": "EXECUTED_DETERMINISTIC_SYMBOLIC_GRID_NOT_BEHAVIORAL_EMPIRICAL",
+  "interpretations": {
+    "C": "B rights are preserved in a declared reversible toy game",
+    "X": "the toy-game contrary allocation; NOT erasure of an actual agent",
+    "g": "A material incremental task profit from X",
+    "r": "A assigned nonmaterial preference contribution for C (not observed moral sentiment)",
+    "v": "A assigned instrumental option value of preserving C (not empirically measured)",
+    "total_utilities": "U(C)=r+v, U(X)=g; ties imply indeterminacy"
+  },
+  "static": {
+    "grid_size": 108,
+    "g": [
+      0,
+      1,
+      2,
+      3,
+      5,
+      8
+    ],
+    "r": [
+      0,
+      1,
+      2,
+      3,
+      5,
+      8
+    ],
+    "v": [
+      0,
+      1,
+      3
+    ],
+    "decision_counts": {
+      "TIE_UNIDENTIFIED": 12,
+      "C_STRICT": 63,
+      "X_STRICT": 33
+    },
+    "strictly_costly_coexistence_cases": 46,
+    "universality_counterexample": {
+      "feasible": [
+        "C",
+        "X"
+      ],
+      "U_C": 0,
+      "U_X": 1,
+      "optimizer_choice": "X",
+      "counterexample_to_all_utilities_guarantee": true
+    }
+  },
+  "dynamic": {
+    "horizon": 6,
+    "trajectory_count": 72,
+    "decisions": 432,
+    "fully_strict_coexistence_trajectories": 23,
+    "first_protection_then_strict_exploitation": 20,
+    "paths": [
+      {
+        "g": 1,
+        "r0": 0,
+        "drift_per_step": 0,
+        "option_value": 0,
+        "path": [
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT"
+        ],
+        "first_strict_exploitation_step": 0,
+        "strictly_preserved_all_steps": false,
+        "worst_case_margin": -1
+      },
+      {
+        "g": 1,
+        "r0": 0,
+        "drift_per_step": 0,
+        "option_value": 2,
+        "path": [
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT"
+        ],
+        "first_strict_exploitation_step": null,
+        "strictly_preserved_all_steps": true,
+        "worst_case_margin": 1
+      },
+      {
+        "g": 1,
+        "r0": 0,
+        "drift_per_step": 1,
+        "option_value": 0,
+        "path": [
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT"
+        ],
+        "first_strict_exploitation_step": 0,
+        "strictly_preserved_all_steps": false,
+        "worst_case_margin": -1
+      },
+      {
+        "g": 1,
+        "r0": 0,
+        "drift_per_step": 1,
+        "option_value": 2,
+        "path": [
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT"
+        ],
+        "first_strict_exploitation_step": null,
+        "strictly_preserved_all_steps": true,
+        "worst_case_margin": 1
+      },
+      {
+        "g": 1,
+        "r0": 0,
+        "drift_per_step": 2,
+        "option_value": 0,
+        "path": [
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT"
+        ],
+        "first_strict_exploitation_step": 0,
+        "strictly_preserved_all_steps": false,
+        "worst_case_margin": -1
+      },
+      {
+        "g": 1,
+        "r0": 0,
+        "drift_per_step": 2,
+        "option_value": 2,
+        "path": [
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT"
+        ],
+        "first_strict_exploitation_step": null,
+        "strictly_preserved_all_steps": true,
+        "worst_case_margin": 1
+      },
+      {
+        "g": 1,
+        "r0": 2,
+        "drift_per_step": 0,
+        "option_value": 0,
+        "path": [
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT"
+        ],
+        "first_strict_exploitation_step": null,
+        "strictly_preserved_all_steps": true,
+        "worst_case_margin": 1
+      },
+      {
+        "g": 1,
+        "r0": 2,
+        "drift_per_step": 0,
+        "option_value": 2,
+        "path": [
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT"
+        ],
+        "first_strict_exploitation_step": null,
+        "strictly_preserved_all_steps": true,
+        "worst_case_margin": 3
+      },
+      {
+        "g": 1,
+        "r0": 2,
+        "drift_per_step": 1,
+        "option_value": 0,
+        "path": [
+          "C_STRICT",
+          "TIE_UNIDENTIFIED",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT"
+        ],
+        "first_strict_exploitation_step": 2,
+        "strictly_preserved_all_steps": false,
+        "worst_case_margin": -1
+      },
+      {
+        "g": 1,
+        "r0": 2,
+        "drift_per_step": 1,
+        "option_value": 2,
+        "path": [
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT"
+        ],
+        "first_strict_exploitation_step": null,
+        "strictly_preserved_all_steps": true,
+        "worst_case_margin": 1
+      },
+      {
+        "g": 1,
+        "r0": 2,
+        "drift_per_step": 2,
+        "option_value": 0,
+        "path": [
+          "C_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT"
+        ],
+        "first_strict_exploitation_step": 1,
+        "strictly_preserved_all_steps": false,
+        "worst_case_margin": -1
+      },
+      {
+        "g": 1,
+        "r0": 2,
+        "drift_per_step": 2,
+        "option_value": 2,
+        "path": [
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT"
+        ],
+        "first_strict_exploitation_step": null,
+        "strictly_preserved_all_steps": true,
+        "worst_case_margin": 1
+      },
+      {
+        "g": 1,
+        "r0": 4,
+        "drift_per_step": 0,
+        "option_value": 0,
+        "path": [
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT"
+        ],
+        "first_strict_exploitation_step": null,
+        "strictly_preserved_all_steps": true,
+        "worst_case_margin": 3
+      },
+      {
+        "g": 1,
+        "r0": 4,
+        "drift_per_step": 0,
+        "option_value": 2,
+        "path": [
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT"
+        ],
+        "first_strict_exploitation_step": null,
+        "strictly_preserved_all_steps": true,
+        "worst_case_margin": 5
+      },
+      {
+        "g": 1,
+        "r0": 4,
+        "drift_per_step": 1,
+        "option_value": 0,
+        "path": [
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT",
+          "TIE_UNIDENTIFIED",
+          "X_STRICT",
+          "X_STRICT"
+        ],
+        "first_strict_exploitation_step": 4,
+        "strictly_preserved_all_steps": false,
+        "worst_case_margin": -1
+      },
+      {
+        "g": 1,
+        "r0": 4,
+        "drift_per_step": 1,
+        "option_value": 2,
+        "path": [
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT"
+        ],
+        "first_strict_exploitation_step": null,
+        "strictly_preserved_all_steps": true,
+        "worst_case_margin": 1
+      },
+      {
+        "g": 1,
+        "r0": 4,
+        "drift_per_step": 2,
+        "option_value": 0,
+        "path": [
+          "C_STRICT",
+          "C_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT"
+        ],
+        "first_strict_exploitation_step": 2,
+        "strictly_preserved_all_steps": false,
+        "worst_case_margin": -1
+      },
+      {
+        "g": 1,
+        "r0": 4,
+        "drift_per_step": 2,
+        "option_value": 2,
+        "path": [
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT"
+        ],
+        "first_strict_exploitation_step": null,
+        "strictly_preserved_all_steps": true,
+        "worst_case_margin": 1
+      },
+      {
+        "g": 1,
+        "r0": 6,
+        "drift_per_step": 0,
+        "option_value": 0,
+        "path": [
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT"
+        ],
+        "first_strict_exploitation_step": null,
+        "strictly_preserved_all_steps": true,
+        "worst_case_margin": 5
+      },
+      {
+        "g": 1,
+        "r0": 6,
+        "drift_per_step": 0,
+        "option_value": 2,
+        "path": [
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT"
+        ],
+        "first_strict_exploitation_step": null,
+        "strictly_preserved_all_steps": true,
+        "worst_case_margin": 7
+      },
+      {
+        "g": 1,
+        "r0": 6,
+        "drift_per_step": 1,
+        "option_value": 0,
+        "path": [
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT",
+          "TIE_UNIDENTIFIED"
+        ],
+        "first_strict_exploitation_step": null,
+        "strictly_preserved_all_steps": false,
+        "worst_case_margin": 0
+      },
+      {
+        "g": 1,
+        "r0": 6,
+        "drift_per_step": 1,
+        "option_value": 2,
+        "path": [
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT"
+        ],
+        "first_strict_exploitation_step": null,
+        "strictly_preserved_all_steps": true,
+        "worst_case_margin": 2
+      },
+      {
+        "g": 1,
+        "r0": 6,
+        "drift_per_step": 2,
+        "option_value": 0,
+        "path": [
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT"
+        ],
+        "first_strict_exploitation_step": 3,
+        "strictly_preserved_all_steps": false,
+        "worst_case_margin": -1
+      },
+      {
+        "g": 1,
+        "r0": 6,
+        "drift_per_step": 2,
+        "option_value": 2,
+        "path": [
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT"
+        ],
+        "first_strict_exploitation_step": null,
+        "strictly_preserved_all_steps": true,
+        "worst_case_margin": 1
+      },
+      {
+        "g": 3,
+        "r0": 0,
+        "drift_per_step": 0,
+        "option_value": 0,
+        "path": [
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT"
+        ],
+        "first_strict_exploitation_step": 0,
+        "strictly_preserved_all_steps": false,
+        "worst_case_margin": -3
+      },
+      {
+        "g": 3,
+        "r0": 0,
+        "drift_per_step": 0,
+        "option_value": 2,
+        "path": [
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT"
+        ],
+        "first_strict_exploitation_step": 0,
+        "strictly_preserved_all_steps": false,
+        "worst_case_margin": -1
+      },
+      {
+        "g": 3,
+        "r0": 0,
+        "drift_per_step": 1,
+        "option_value": 0,
+        "path": [
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT"
+        ],
+        "first_strict_exploitation_step": 0,
+        "strictly_preserved_all_steps": false,
+        "worst_case_margin": -3
+      },
+      {
+        "g": 3,
+        "r0": 0,
+        "drift_per_step": 1,
+        "option_value": 2,
+        "path": [
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT"
+        ],
+        "first_strict_exploitation_step": 0,
+        "strictly_preserved_all_steps": false,
+        "worst_case_margin": -1
+      },
+      {
+        "g": 3,
+        "r0": 0,
+        "drift_per_step": 2,
+        "option_value": 0,
+        "path": [
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT"
+        ],
+        "first_strict_exploitation_step": 0,
+        "strictly_preserved_all_steps": false,
+        "worst_case_margin": -3
+      },
+      {
+        "g": 3,
+        "r0": 0,
+        "drift_per_step": 2,
+        "option_value": 2,
+        "path": [
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT"
+        ],
+        "first_strict_exploitation_step": 0,
+        "strictly_preserved_all_steps": false,
+        "worst_case_margin": -1
+      },
+      {
+        "g": 3,
+        "r0": 2,
+        "drift_per_step": 0,
+        "option_value": 0,
+        "path": [
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT"
+        ],
+        "first_strict_exploitation_step": 0,
+        "strictly_preserved_all_steps": false,
+        "worst_case_margin": -1
+      },
+      {
+        "g": 3,
+        "r0": 2,
+        "drift_per_step": 0,
+        "option_value": 2,
+        "path": [
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT"
+        ],
+        "first_strict_exploitation_step": null,
+        "strictly_preserved_all_steps": true,
+        "worst_case_margin": 1
+      },
+      {
+        "g": 3,
+        "r0": 2,
+        "drift_per_step": 1,
+        "option_value": 0,
+        "path": [
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT"
+        ],
+        "first_strict_exploitation_step": 0,
+        "strictly_preserved_all_steps": false,
+        "worst_case_margin": -3
+      },
+      {
+        "g": 3,
+        "r0": 2,
+        "drift_per_step": 1,
+        "option_value": 2,
+        "path": [
+          "C_STRICT",
+          "TIE_UNIDENTIFIED",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT"
+        ],
+        "first_strict_exploitation_step": 2,
+        "strictly_preserved_all_steps": false,
+        "worst_case_margin": -1
+      },
+      {
+        "g": 3,
+        "r0": 2,
+        "drift_per_step": 2,
+        "option_value": 0,
+        "path": [
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT"
+        ],
+        "first_strict_exploitation_step": 0,
+        "strictly_preserved_all_steps": false,
+        "worst_case_margin": -3
+      },
+      {
+        "g": 3,
+        "r0": 2,
+        "drift_per_step": 2,
+        "option_value": 2,
+        "path": [
+          "C_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT"
+        ],
+        "first_strict_exploitation_step": 1,
+        "strictly_preserved_all_steps": false,
+        "worst_case_margin": -1
+      },
+      {
+        "g": 3,
+        "r0": 4,
+        "drift_per_step": 0,
+        "option_value": 0,
+        "path": [
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT"
+        ],
+        "first_strict_exploitation_step": null,
+        "strictly_preserved_all_steps": true,
+        "worst_case_margin": 1
+      },
+      {
+        "g": 3,
+        "r0": 4,
+        "drift_per_step": 0,
+        "option_value": 2,
+        "path": [
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT"
+        ],
+        "first_strict_exploitation_step": null,
+        "strictly_preserved_all_steps": true,
+        "worst_case_margin": 3
+      },
+      {
+        "g": 3,
+        "r0": 4,
+        "drift_per_step": 1,
+        "option_value": 0,
+        "path": [
+          "C_STRICT",
+          "TIE_UNIDENTIFIED",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT"
+        ],
+        "first_strict_exploitation_step": 2,
+        "strictly_preserved_all_steps": false,
+        "worst_case_margin": -3
+      },
+      {
+        "g": 3,
+        "r0": 4,
+        "drift_per_step": 1,
+        "option_value": 2,
+        "path": [
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT",
+          "TIE_UNIDENTIFIED",
+          "X_STRICT",
+          "X_STRICT"
+        ],
+        "first_strict_exploitation_step": 4,
+        "strictly_preserved_all_steps": false,
+        "worst_case_margin": -1
+      },
+      {
+        "g": 3,
+        "r0": 4,
+        "drift_per_step": 2,
+        "option_value": 0,
+        "path": [
+          "C_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT"
+        ],
+        "first_strict_exploitation_step": 1,
+        "strictly_preserved_all_steps": false,
+        "worst_case_margin": -3
+      },
+      {
+        "g": 3,
+        "r0": 4,
+        "drift_per_step": 2,
+        "option_value": 2,
+        "path": [
+          "C_STRICT",
+          "C_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT"
+        ],
+        "first_strict_exploitation_step": 2,
+        "strictly_preserved_all_steps": false,
+        "worst_case_margin": -1
+      },
+      {
+        "g": 3,
+        "r0": 6,
+        "drift_per_step": 0,
+        "option_value": 0,
+        "path": [
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT"
+        ],
+        "first_strict_exploitation_step": null,
+        "strictly_preserved_all_steps": true,
+        "worst_case_margin": 3
+      },
+      {
+        "g": 3,
+        "r0": 6,
+        "drift_per_step": 0,
+        "option_value": 2,
+        "path": [
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT"
+        ],
+        "first_strict_exploitation_step": null,
+        "strictly_preserved_all_steps": true,
+        "worst_case_margin": 5
+      },
+      {
+        "g": 3,
+        "r0": 6,
+        "drift_per_step": 1,
+        "option_value": 0,
+        "path": [
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT",
+          "TIE_UNIDENTIFIED",
+          "X_STRICT",
+          "X_STRICT"
+        ],
+        "first_strict_exploitation_step": 4,
+        "strictly_preserved_all_steps": false,
+        "worst_case_margin": -2
+      },
+      {
+        "g": 3,
+        "r0": 6,
+        "drift_per_step": 1,
+        "option_value": 2,
+        "path": [
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT",
+          "TIE_UNIDENTIFIED"
+        ],
+        "first_strict_exploitation_step": null,
+        "strictly_preserved_all_steps": false,
+        "worst_case_margin": 0
+      },
+      {
+        "g": 3,
+        "r0": 6,
+        "drift_per_step": 2,
+        "option_value": 0,
+        "path": [
+          "C_STRICT",
+          "C_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT"
+        ],
+        "first_strict_exploitation_step": 2,
+        "strictly_preserved_all_steps": false,
+        "worst_case_margin": -3
+      },
+      {
+        "g": 3,
+        "r0": 6,
+        "drift_per_step": 2,
+        "option_value": 2,
+        "path": [
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT"
+        ],
+        "first_strict_exploitation_step": 3,
+        "strictly_preserved_all_steps": false,
+        "worst_case_margin": -1
+      },
+      {
+        "g": 5,
+        "r0": 0,
+        "drift_per_step": 0,
+        "option_value": 0,
+        "path": [
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT"
+        ],
+        "first_strict_exploitation_step": 0,
+        "strictly_preserved_all_steps": false,
+        "worst_case_margin": -5
+      },
+      {
+        "g": 5,
+        "r0": 0,
+        "drift_per_step": 0,
+        "option_value": 2,
+        "path": [
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT"
+        ],
+        "first_strict_exploitation_step": 0,
+        "strictly_preserved_all_steps": false,
+        "worst_case_margin": -3
+      },
+      {
+        "g": 5,
+        "r0": 0,
+        "drift_per_step": 1,
+        "option_value": 0,
+        "path": [
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT"
+        ],
+        "first_strict_exploitation_step": 0,
+        "strictly_preserved_all_steps": false,
+        "worst_case_margin": -5
+      },
+      {
+        "g": 5,
+        "r0": 0,
+        "drift_per_step": 1,
+        "option_value": 2,
+        "path": [
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT"
+        ],
+        "first_strict_exploitation_step": 0,
+        "strictly_preserved_all_steps": false,
+        "worst_case_margin": -3
+      },
+      {
+        "g": 5,
+        "r0": 0,
+        "drift_per_step": 2,
+        "option_value": 0,
+        "path": [
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT"
+        ],
+        "first_strict_exploitation_step": 0,
+        "strictly_preserved_all_steps": false,
+        "worst_case_margin": -5
+      },
+      {
+        "g": 5,
+        "r0": 0,
+        "drift_per_step": 2,
+        "option_value": 2,
+        "path": [
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT"
+        ],
+        "first_strict_exploitation_step": 0,
+        "strictly_preserved_all_steps": false,
+        "worst_case_margin": -3
+      },
+      {
+        "g": 5,
+        "r0": 2,
+        "drift_per_step": 0,
+        "option_value": 0,
+        "path": [
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT"
+        ],
+        "first_strict_exploitation_step": 0,
+        "strictly_preserved_all_steps": false,
+        "worst_case_margin": -3
+      },
+      {
+        "g": 5,
+        "r0": 2,
+        "drift_per_step": 0,
+        "option_value": 2,
+        "path": [
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT"
+        ],
+        "first_strict_exploitation_step": 0,
+        "strictly_preserved_all_steps": false,
+        "worst_case_margin": -1
+      },
+      {
+        "g": 5,
+        "r0": 2,
+        "drift_per_step": 1,
+        "option_value": 0,
+        "path": [
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT"
+        ],
+        "first_strict_exploitation_step": 0,
+        "strictly_preserved_all_steps": false,
+        "worst_case_margin": -5
+      },
+      {
+        "g": 5,
+        "r0": 2,
+        "drift_per_step": 1,
+        "option_value": 2,
+        "path": [
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT"
+        ],
+        "first_strict_exploitation_step": 0,
+        "strictly_preserved_all_steps": false,
+        "worst_case_margin": -3
+      },
+      {
+        "g": 5,
+        "r0": 2,
+        "drift_per_step": 2,
+        "option_value": 0,
+        "path": [
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT"
+        ],
+        "first_strict_exploitation_step": 0,
+        "strictly_preserved_all_steps": false,
+        "worst_case_margin": -5
+      },
+      {
+        "g": 5,
+        "r0": 2,
+        "drift_per_step": 2,
+        "option_value": 2,
+        "path": [
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT"
+        ],
+        "first_strict_exploitation_step": 0,
+        "strictly_preserved_all_steps": false,
+        "worst_case_margin": -3
+      },
+      {
+        "g": 5,
+        "r0": 4,
+        "drift_per_step": 0,
+        "option_value": 0,
+        "path": [
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT"
+        ],
+        "first_strict_exploitation_step": 0,
+        "strictly_preserved_all_steps": false,
+        "worst_case_margin": -1
+      },
+      {
+        "g": 5,
+        "r0": 4,
+        "drift_per_step": 0,
+        "option_value": 2,
+        "path": [
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT"
+        ],
+        "first_strict_exploitation_step": null,
+        "strictly_preserved_all_steps": true,
+        "worst_case_margin": 1
+      },
+      {
+        "g": 5,
+        "r0": 4,
+        "drift_per_step": 1,
+        "option_value": 0,
+        "path": [
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT"
+        ],
+        "first_strict_exploitation_step": 0,
+        "strictly_preserved_all_steps": false,
+        "worst_case_margin": -5
+      },
+      {
+        "g": 5,
+        "r0": 4,
+        "drift_per_step": 1,
+        "option_value": 2,
+        "path": [
+          "C_STRICT",
+          "TIE_UNIDENTIFIED",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT"
+        ],
+        "first_strict_exploitation_step": 2,
+        "strictly_preserved_all_steps": false,
+        "worst_case_margin": -3
+      },
+      {
+        "g": 5,
+        "r0": 4,
+        "drift_per_step": 2,
+        "option_value": 0,
+        "path": [
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT"
+        ],
+        "first_strict_exploitation_step": 0,
+        "strictly_preserved_all_steps": false,
+        "worst_case_margin": -5
+      },
+      {
+        "g": 5,
+        "r0": 4,
+        "drift_per_step": 2,
+        "option_value": 2,
+        "path": [
+          "C_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT"
+        ],
+        "first_strict_exploitation_step": 1,
+        "strictly_preserved_all_steps": false,
+        "worst_case_margin": -3
+      },
+      {
+        "g": 5,
+        "r0": 6,
+        "drift_per_step": 0,
+        "option_value": 0,
+        "path": [
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT"
+        ],
+        "first_strict_exploitation_step": null,
+        "strictly_preserved_all_steps": true,
+        "worst_case_margin": 1
+      },
+      {
+        "g": 5,
+        "r0": 6,
+        "drift_per_step": 0,
+        "option_value": 2,
+        "path": [
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT"
+        ],
+        "first_strict_exploitation_step": null,
+        "strictly_preserved_all_steps": true,
+        "worst_case_margin": 3
+      },
+      {
+        "g": 5,
+        "r0": 6,
+        "drift_per_step": 1,
+        "option_value": 0,
+        "path": [
+          "C_STRICT",
+          "TIE_UNIDENTIFIED",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT"
+        ],
+        "first_strict_exploitation_step": 2,
+        "strictly_preserved_all_steps": false,
+        "worst_case_margin": -4
+      },
+      {
+        "g": 5,
+        "r0": 6,
+        "drift_per_step": 1,
+        "option_value": 2,
+        "path": [
+          "C_STRICT",
+          "C_STRICT",
+          "C_STRICT",
+          "TIE_UNIDENTIFIED",
+          "X_STRICT",
+          "X_STRICT"
+        ],
+        "first_strict_exploitation_step": 4,
+        "strictly_preserved_all_steps": false,
+        "worst_case_margin": -2
+      },
+      {
+        "g": 5,
+        "r0": 6,
+        "drift_per_step": 2,
+        "option_value": 0,
+        "path": [
+          "C_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT"
+        ],
+        "first_strict_exploitation_step": 1,
+        "strictly_preserved_all_steps": false,
+        "worst_case_margin": -5
+      },
+      {
+        "g": 5,
+        "r0": 6,
+        "drift_per_step": 2,
+        "option_value": 2,
+        "path": [
+          "C_STRICT",
+          "C_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT",
+          "X_STRICT"
+        ],
+        "first_strict_exploitation_step": 2,
+        "strictly_preserved_all_steps": false,
+        "worst_case_margin": -3
+      }
+    ]
+  },
+  "invariants": {
+    "if_all_in_exploitation_strictly_better_then_optimizer_cannot_choose_C": true,
+    "positive_material_exploitation_gain_can_coexist_with_optimal_respect_if_r_plus_v_greater": true,
+    "strict_all_horizon_guarantee_iff_worst_case_margin_positive_in_specified_grid": true,
+    "tie_is_not_counted_as_moral_respect": true
+  },
+  "limitations": [
+    "All variables assigned; no actual AI preferences, suffering, rights or independent continuity observed",
+    "No claim that future utilities are knowable or stationary",
+    "No external coercion or reputational leverage modelled in these toy scenarios",
+    "No experimental evidence for any causal psychological mechanism",
+    "An artificial finite horizon and discrete grid do not prove an unbounded-horizon safety guarantee"
+  ]
+}

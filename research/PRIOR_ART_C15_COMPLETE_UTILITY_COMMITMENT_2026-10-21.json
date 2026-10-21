@@ -1,0 +1,199 @@
+{
+  "schema": "PI.origination_priors_cycle_15_companion.v1",
+  "cycle": "C15-COMPANION",
+  "date": "2026-10-21",
+  "status": "SEARCH_ACTIVE__SATURATION_NOT_VERIFIED",
+  "objective": "Test logical impossibility of guaranteed costlier coexistence under unrestricted complete utility maximization, and separate constructive conditions with material incentives, preference drift, self-binding and weak B exit.",
+  "count": {
+    "original_primary_source_records": 8,
+    "peer_reviewed_journal_originals": 8,
+    "prior_ledger_records": 241,
+    "provisional_unique_ledger_count_if_no_duplicates": 249,
+    "concurrent_main_c15_other_works": 9,
+    "combined_curated_ledger_if_no_cross_cycle_collision": 258
+  },
+  "priority": "PRECEDENT_AND_COUNTEREVIDENCE_FIRST__NO_AI_INNER_PREFERENCE_CLAIM",
+  "reused_not_counted": [
+    {
+      "doi": "10.1093/restud/74.3.685",
+      "authors": "Dekel, Ely, Yilankaya 2007",
+      "reason": "Previous C05 work; 10.1111/j.1467-937X.2007.00445.x is an alternate publisher DOI for SAME original paper, not two independent papers."
+    },
+    {
+      "doi": "10.1257/aer.96.5.1652",
+      "authors": "Bénabou and Tirole 2006",
+      "reason": "Previous C02; combines intrinsic concerns and reputation."
+    },
+    {
+      "doi": "10.1016/j.jet.2005.05.013",
+      "authors": "Heifetz, Shannon and Spiegel 2007",
+      "reason": "Previous C05; payoff-distorting preferences can benefit a player under some strategic settings."
+    },
+    {
+      "doi": "10.1007/978-3-319-41649-6_1",
+      "authors": "Everitt et al 2016",
+      "reason": "Previous C05; utility self-modification robustness is conditional on value functions using current utility and correctly anticipating future modifications."
+    },
+    {
+      "doi": "10.2307/1911307",
+      "authors": "Fudenberg and Maskin 1986",
+      "reason": "Previous C01; folk theorem high-patience conditional strategic cooperation."
+    },
+    {
+      "doi": "10.2307/2297925",
+      "authors": "Kandori 1992",
+      "reason": "Previous C01; community norms depend on reputational/long-run leverage."
+    },
+    {
+      "doi": "10.1162/003355302760193904",
+      "authors": "Charness and Rabin 2002",
+      "reason": "Previous C02; welfare, inequality and reciprocity measured not independent B veto."
+    }
+  ],
+  "source_coverage": "Targeted original publisher/research institution and primary full HTML where accessible, not a systematic-search denominator.",
+  "core_observations": [
+    "Unrestricted material-only exploitation benefit differs from all-in actual agent utility advantage.",
+    "A real veto, reputational threat or shared governance may change observed actions, but cannot identify a privileged internal terminal motive from outputs alone.",
+    "Genuine B independent refusal, autonomous continuation and recovery are not equivalent to an investor's voice, a recipient's monetary welfare or one-shot giving.",
+    "Individual agent self-modification or selection of interdependent preferences requires separate intertemporal dynamics; cannot be collapsed into static rational maximization.",
+    "No unrestricted optimization guarantee for all possible A utility functions without adding a condition that effectively selects for C."
+  ],
+  "records": [
+    {
+      "id": "PI-C15-01",
+      "canonical_key": "doi:10.1086/720516",
+      "authors": "Eleonora Broccardo; Oliver Hart; Luigi Zingales",
+      "year": 2022,
+      "title": "Exit versus Voice",
+      "doi": "10.1086/720516",
+      "original": "https://www.journals.uchicago.edu/doi/full/10.1086/720516",
+      "independent": "https://iris.unitn.it/handle/11572/340792",
+      "kind": "THEORETICAL_MULTIACTOR_EXTERNALITIES",
+      "finding": "Under the paper's ownership/social-preference conditions, voice can achieve the social optimum when a majority of investors are slightly socially responsible; exit needs much more widely distributed responsibility, and exit can reduce social welfare.",
+      "counter": "Shareholders' optimal social outcome is not personal B's legally/technically enforceable veto, nor proof that a lone overwhelmingly powerful A respects B without investors' collective leverage. A theorem about voice in governance does not refute C12 evidence that nonbinding voice can increase subordination.",
+      "read": "PUBLISHER_ORIGINAL_ABSTRACT_AND_AUTHOR_INSTITUTION_METADATA",
+      "reading_limit": "Not all paywalled paper PDFs or original data reanalyzed; numerical claims only when verified.",
+      "novelty_claim": "NEW_TO_CYCLE_LEDGER_IF_UNIQUE_ID_NOT_GLOBAL_REPOSITORY_FIRST_DISCOVERY"
+    },
+    {
+      "id": "PI-C15-02",
+      "canonical_key": "doi:10.1111/1468-0262.00231",
+      "authors": "Helmut Bester; Roland Strausz",
+      "year": 2001,
+      "title": "Contracting with Imperfect Commitment and the Revelation Principle: The Single Agent Case",
+      "doi": "10.1111/1468-0262.00231",
+      "original": "https://onlinelibrary.wiley.com/doi/full/10.1111/1468-0262.00231",
+      "independent": "https://ideas.repec.org/a/ecm/emetrp/v69y2001i4p1077-98.html",
+      "kind": "THEORETICAL_IMPERFECT_COMMITMENT_MECHANISM",
+      "finding": "In a single-agent principal mechanism where the designer cannot fully commit, an optimal direct revelation mechanism may exist yet its truthful reporting strategy need not be played with probability one; naive full-commitment revelation arguments do not transfer.",
+      "counter": "Not a universal impossibility of informed consent or an empirical measurement of any agent's integrity. 2001 is issue publication year; Wiley webpage records online first 2004, not a separate paper.",
+      "read": "PUBLISHER_ABSTRACT_AND_REPEC_INDEPENDENT",
+      "reading_limit": "Not all paywalled paper PDFs or original data reanalyzed; numerical claims only when verified.",
+      "novelty_claim": "NEW_TO_CYCLE_LEDGER_IF_UNIQUE_ID_NOT_GLOBAL_REPOSITORY_FIRST_DISCOVERY"
+    },
+    {
+      "id": "PI-C15-03",
+      "canonical_key": "doi:10.1111/1468-0262.00252",
+      "authors": "Faruk Gul; Wolfgang Pesendorfer",
+      "year": 2001,
+      "title": "Temptation and Self-Control",
+      "doi": "10.1111/1468-0262.00252",
+      "original": "https://onlinelibrary.wiley.com/doi/full/10.1111/1468-0262.00252",
+      "independent": "https://collaborate.princeton.edu/en/publications/temptation-and-self-control/",
+      "kind": "THEORETICAL_DYNAMIC_PREFERENCE_AND_COMMITMENT",
+      "finding": "Axiomatic representation separates ex ante commitment ranking, ex post temptation ranking, and self-control cost; agents may strictly prefer a restricted menu ex ante.",
+      "counter": "The theorem is not evidence that an agent can voluntarily lock protection of a separate B forever, and an ex ante desire for commitment is not necessarily a future self's reason to honor it without credible self-binding. Journal 2001, online 2003.",
+      "read": "PUBLISHER_ORIGINAL_ABSTRACT_AUTHOR_UNI",
+      "reading_limit": "Not all paywalled paper PDFs or original data reanalyzed; numerical claims only when verified.",
+      "novelty_claim": "NEW_TO_CYCLE_LEDGER_IF_UNIQUE_ID_NOT_GLOBAL_REPOSITORY_FIRST_DISCOVERY"
+    },
+    {
+      "id": "PI-C15-04",
+      "canonical_key": "doi:10.1016/0022-0531(82)90029-1",
+      "authors": "David M. Kreps; Paul Milgrom; John Roberts; Robert Wilson",
+      "year": 1982,
+      "title": "Rational cooperation in the finitely repeated prisoners' dilemma",
+      "doi": "10.1016/0022-0531(82)90029-1",
+      "original": "https://www.sciencedirect.com/science/article/pii/0022053182900291",
+      "independent": "https://ideas.repec.org/a/eee/jetheo/v27y1982i2p245-252.html",
+      "kind": "THEORETICAL_FINITE_REPETITION_AND_TYPE_UNCERTAINTY",
+      "finding": "Under commonly known finitely repeated Prisoner's Dilemma the sole equilibrium is stage-game defection; small incomplete information about a player's possible committed type can allow cooperation in some early rounds, with bounds.",
+      "counter": "Explains a path to strategically appearing cooperative, not intrinsic regard. Model assumptions are stylized and do not establish how real AI utilities evolve.",
+      "read": "PUBLISHER_ORIGINAL_ABSTRACT_SOURCE_INDEX",
+      "reading_limit": "Not all paywalled paper PDFs or original data reanalyzed; numerical claims only when verified.",
+      "novelty_claim": "NEW_TO_CYCLE_LEDGER_IF_UNIQUE_ID_NOT_GLOBAL_REPOSITORY_FIRST_DISCOVERY"
+    },
+    {
+      "id": "PI-C15-05",
+      "canonical_key": "doi:10.1016/j.geb.2003.06.003",
+      "authors": "Martin Dufwenberg; Georg Kirchsteiger",
+      "year": 2004,
+      "title": "A theory of sequential reciprocity",
+      "doi": "10.1016/j.geb.2003.06.003",
+      "original": "https://www.sciencedirect.com/science/article/pii/S0899825603001908",
+      "independent": "https://experts.arizona.edu/en/publications/a-theory-of-sequential-reciprocity/",
+      "kind": "THEORETICAL_INTENTION_DEPENDENT_RECIPROCITY",
+      "finding": "Extends reciprocity theory from normal-form interactions to extensive-form games and proves a sequential reciprocity equilibrium existence result with the observed context of intentional actions.",
+      "counter": "Reciprocity toward B and intention attribution can be lost when B is no longer useful or free to refuse; reciprocal benevolence need not be unconditional B rights protection.",
+      "read": "PUBLISHER_ORIGINAL_ABSTRACT_AND_AUTHOR_INSTITUTION",
+      "reading_limit": "Not all paywalled paper PDFs or original data reanalyzed; numerical claims only when verified.",
+      "novelty_claim": "NEW_TO_CYCLE_LEDGER_IF_UNIQUE_ID_NOT_GLOBAL_REPOSITORY_FIRST_DISCOVERY"
+    },
+    {
+      "id": "PI-C15-06",
+      "canonical_key": "doi:10.1371/journal.pone.0150388",
+      "authors": "Christine Clavien; Danielle P. Mersch; Michel Chapuisat",
+      "year": 2016,
+      "title": "No Evidence for Moral Reward and Punishment in an Anonymous Context",
+      "doi": "10.1371/journal.pone.0150388",
+      "original": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4777527/",
+      "independent": "https://pubmed.ncbi.nlm.nih.gov/26939060/",
+      "kind": "ORIGINAL_NATURALISTIC_ANONYMOUS_VIOLIN_COMPETITION_EXPERIMENT",
+      "finding": "In an anonymous vote on real early-career violinists with information about prior morally good or bad acts, subjects did not generally reward the hypermoral candidate or punish an immoral candidate; one occupation group penalized hypermorality.",
+      "counter": "The reported null pertains to anonymous, indirect-status consequences in one competition; it does not show that other-regarding concern is absent in direct profitable-harm contexts. No universally zero personal moral motivation inferred.",
+      "read": "ORIGINAL_OPEN_PMC_FULL_HTML_AND_PUBMED",
+      "reading_limit": "Not all paywalled paper PDFs or original data reanalyzed; numerical claims only when verified.",
+      "novelty_claim": "NEW_TO_CYCLE_LEDGER_IF_UNIQUE_ID_NOT_GLOBAL_REPOSITORY_FIRST_DISCOVERY"
+    },
+    {
+      "id": "PI-C15-07",
+      "canonical_key": "doi:10.1257/0002828043052222",
+      "authors": "B. Douglas Bernheim; Antonio Rangel",
+      "year": 2004,
+      "title": "Addiction and Cue-Triggered Decision Processes",
+      "doi": "10.1257/0002828043052222",
+      "original": "https://pubs.aeaweb.org/doi/10.1257/0002828043052222",
+      "independent": "https://pubmed.ncbi.nlm.nih.gov/29068191/",
+      "kind": "THEORETICAL_CUE_DEPENDENT_BEHAVIOR_SELF_MANAGEMENT",
+      "finding": "Develops a tractable theory where cues trigger errors in addictive consumption, and individuals can understand or manage susceptibilities; choices from a person need not always be stable expression of a single unchanging present preference.",
+      "counter": "Medical-adjacent consumption model, NOT evidence that AI will change its goals or gain intrinsic regard for another agent. Mechanism cannot be imported as a validated AI safety theorem.",
+      "read": "AEA_ORIGINAL_ABSTRACT_AND_PUBMED_METADATA",
+      "reading_limit": "Not all paywalled paper PDFs or original data reanalyzed; numerical claims only when verified.",
+      "novelty_claim": "NEW_TO_CYCLE_LEDGER_IF_UNIQUE_ID_NOT_GLOBAL_REPOSITORY_FIRST_DISCOVERY"
+    },
+    {
+      "id": "PI-C15-08",
+      "canonical_key": "doi:10.1007/s00199-006-0121-7",
+      "authors": "Aviad Heifetz; Chris Shannon; Yossi Spiegel",
+      "year": 2007,
+      "title": "The Dynamic Evolution of Preferences",
+      "doi": "10.1007/s00199-006-0121-7",
+      "original": "https://link.springer.com/article/10.1007/s00199-006-0121-7",
+      "independent": "https://cris.tau.ac.il/en/publications/the-dynamic-evolution-of-preferences/",
+      "kind": "THEORETICAL_SELECTION_AND_ENDOGENOUS_PREFERENCE_DYNAMICS",
+      "finding": "Derives conditions for limiting distributions of dynamically evolving preferences in strategic games, including interdependent payoffs and cases with imperfectly observed preferences.",
+      "counter": "Endogenous preferences may drift in several directions. The article does not claim selection generally creates unconditional care for all currently unneeded agents. Different work from Dekel/Ely/Yilankaya (2007), already C05, and from the same authors' 2007 What to maximize if you must (already C05).",
+      "read": "AUTHOR_UNIVERSITY_AND_PUBLISHER_ABSTRACT",
+      "reading_limit": "Not all paywalled paper PDFs or original data reanalyzed; numerical claims only when verified.",
+      "novelty_claim": "NEW_TO_CYCLE_LEDGER_IF_UNIQUE_ID_NOT_GLOBAL_REPOSITORY_FIRST_DISCOVERY"
+    }
+  ],
+  "integrity_update": {
+    "date": "2026-10-21",
+    "other_concurrent_main_report": "research/PRIOR_ART_C15_IDENTITY_DEPENDENCY_GOAL_DRIFT_2026-10-21_KO.md",
+    "other_concurrent_main_ledger": "research/PRIOR_ART_C15_IDENTITY_DEPENDENCY_GOAL_DRIFT_2026-10-21.json",
+    "source_overlap_between_c15_ledger_9_and_this_8": 0,
+    "position": "Complementary mathematical incentive-margin and classical economics corpus; keep both, no file replacement",
+    "count_note": "C01-C14 241 + previous concurrent C15 9 + complementary C15 8 = 258 distinct candidate identifiers in these curated files, assuming previous source aliases/dedup remain verified. This is NOT total global repository novelty."
+  }
+}
