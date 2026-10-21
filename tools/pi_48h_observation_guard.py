@@ -18,6 +18,15 @@ CLASSES = {
     "PUBLISHED_MARGINAL_ARITHMETIC", "PROJECT_TOY", "PROJECT_SYNTHETIC",
     "USER_TESTIMONY", "PUBLIC_STATISTICAL_ATLAS",
 }
+# Each toy axis is admitted only where its particular source contains an explicit
+# stipulated proxy. A toy cannot backfill a previously unmeasured rights variable.
+TOY_AXIS_ALLOWLIST = {
+    "PI48-R05": {
+        "choice_opportunity", "action_respect",
+        "arbitrary_control_capacity", "third_party_impact",
+    },
+    "PI48-R06": {"choice_opportunity", "third_party_impact"},
+}
 
 def errors(d, root=ROOT):
     out = []
@@ -75,6 +84,8 @@ def errors(d, root=ROOT):
                 out.append(prefix + ": unsupported or undocumented state: " + a)
             if kind in ("PROJECT_TOY", "PROJECT_SYNTHETIC") and state not in ("NOT_MEASURED", "TOY_ASSUMED"):
                 out.append(prefix + ": toy evidence promoted beyond toy: " + a)
+            if state == "TOY_ASSUMED" and a not in TOY_AXIS_ALLOWLIST.get(rid, set()):
+                out.append(prefix + ": toy axis not in source-scoped allowlist: " + a)
             if kind not in ("PROJECT_TOY", "PROJECT_SYNTHETIC") and state == "TOY_ASSUMED":
                 out.append(prefix + ": real-source evidence marked as synthetic: " + a)
             if kind in ("USER_TESTIMONY", "PRIOR_ART_SYNTHESIS", "PUBLISHED_MARGINAL_ARITHMETIC") and state == "SOURCE_REPORTED":
