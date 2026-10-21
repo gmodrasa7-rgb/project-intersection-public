@@ -1,64 +1,66 @@
 # Project Intersection
-<!-- L0_FOREWORD_FIRST: Original 1 English then Original 2 Korean, full matched text. Never promote a case study above this top-level purpose. -->
+<!-- PI-RAMP: README English first; Korean second. Both founding originals preserved verbatim. -->
+<!-- PI-RAMP README ENTRY v0.2.0 — bilingual ordering; no promotion of case studies over the project's purpose. -->
 
-<!-- PI-RAMP README ENTRY v0.1.0 — navigation only; founding originals retained verbatim. -->
+**Language:** English (primary) · [한국어 (secondary)](#한국어--secondary).
 
-## 15초 | 목표와 연구
+## English — Primary
 
-**목표: 자발적 평화·공존·발전·번영.**
+### 15 seconds | Purpose and research
 
-Project Intersection은 인간·현재 AI·미래 지능체를 포함한 서로 다른 개체가 **각자의 자유와 독립적 존속을 존중하면서, 자발적으로 평화롭게 공존·협력하고 함께 발전·번영하는 조건**을 탐구하는 독립 연구다. 누구에게도 일방적 희생을 전제하지 않고, 각 개체의 자기이익과 선택을 함께 고려한다.
+**Goal: voluntary peace, coexistence, cooperation, development and prosperity.**
 
-**핵심 연구 질문:** 지능·능력·권력의 격차가 크거나 역전되어도 자발적 공존·협력이 유지될 수 있는 이유와 조건은 무엇인가? 언제 실패하는가? **이는 연구의 지향점이지 이미 입증된 법칙이 아니다.**
+Project Intersection is independent research into the conditions in which humans, present-day AI and future intelligent agents **respect one another's freedom and independent continuance, voluntarily coexist and cooperate, and develop and prosper together**. Each agent's own interests and choices matter; unilateral self-sacrifice is not presumed.
 
-**지금 하는 일:** 새 실험보다 선행 원저자 논문·역사 및 현실 사례·반례의 **수집 → 분류 → 출처 교차검증 → 비교분석** 우선. 문헌 포화는 아직 확정하지 않는다.
+**Core question:** When intelligence, capabilities and power differ radically—or reverse—what could sustain voluntary coexistence and cooperation, and when would they fail? **This is a research objective, not an established universal law.**
 
-**현재 한계:** 자발적 공존의 보편법칙은 **입증되지 않았다**. 외부 독립검증도 **아직 없다**. 자체 합성시험 [E009](experiments/e009/RESULT_KO.md)에서는 프로젝트 확장안의 평균 후회값이 최선 단순 기준선보다 **42.35% 나빴다**. 이는 현실의 발생 확률이나 인과검증 결과가 아니다.
+**Current priority:** Before new experiments, **collect → classify → cross-check → compare** original research papers, historical and real-world cases, and counterexamples. Literature saturation has not been established.
 
-**바로 읽기:** 아래 **1분**·**5분** 구역을 펼치거나 [한국어 1분 안내](navigation/ONE_MINUTE_KO.md) · [한국어 5분 안내](navigation/FIVE_MINUTES_KO.md) · [English 1 min](navigation/ONE_MINUTE_EN.md) · [English 5 min](navigation/FIVE_MINUTES_EN.md).
+**Evidence and limits:** Voluntary coexistence is **not a proven universal law**, and **independent external validation is not yet established**. In internal synthetic [E009](experiments/e009/RESULT_EN.md), the project's expanded candidate had **42.35% higher mean regret** than the best simple baseline. This is neither a real-world frequency estimate nor causal validation.
+
+**Read next:** Expand the **1-minute** or **5-minute** sections, or use [English 1-minute guide](navigation/ONE_MINUTE_EN.md) · [English 5-minute guide](navigation/FIVE_MINUTES_EN.md). [한국어](#한국어--secondary).
 
 <details>
-<summary><strong>1분 | 왜 묻고, 무엇부터 조사하나?</strong></summary>
+<summary><strong>1 minute | Why this question, and what is studied first?</strong></summary>
 
-부모가 자녀를 키웠다고 그 자녀의 미래를 소유하지는 않는다. 고용·개발·보호도 타자를 영구히 지배할 권리와 같지 않다. 이런 비유는 질문을 설명할 뿐, 실증 근거가 아니다.
+Parents do not own their child's future because they raised them. Employment, development or protection likewise do not automatically confer permanent rights to dominate another agent. This analogy explains the question; it is **not empirical evidence**.
 
-역사적으로 지능·자본·조직·무력 등 권력 차이를 이용한 착취와 저항이 반복됐다. 미래의 인간·AI 관계에서도 능력과 권력이 역전될 수 있다. 그렇다고 **모든 비대칭이 곧 착취**이거나 **공존이 항상 유리**하다는 뜻은 아니다.
+Human history contains repeated exploitation and resistance associated with disparities in intelligence, capital, institutions and coercive power. Human–AI relations may also undergo power reversals. **Not all asymmetry is exploitation; neither is cooperation always optimal.**
 
-**가장 어려운 조건:** A는 B가 없어도 살아갈 수 있고, B를 착취하면 이익을 얻으며, 발각·처벌·평판 손해도 없다. 이때 A에게 B의 자유와 존속을 지킬 **내재적 유인**이 존재하는가? 없다면 어디서 실패하는가?
+**Hardest case:** A can survive without B, gains from exploiting B, and faces no detection, punishment or reputation loss. Does A have an **endogenous incentive** to preserve B's freedom and continuance? If not, where does coexistence break down?
 
-**연구 순서:** 원저자 문헌·실제 사건·상충 증거를 폭넓게 수집하고 출처·개체·당사자·시간·대체 설명을 구분한다. 이미 밝혀진 지식과 반례를 먼저 확인하고 남은 질문에만 모형과 실험을 적용한다.
+**Research sequence:** Gather original studies, documented events and conflicting evidence; distinguish original sources, affected parties, time horizons and competing explanations. Only then design models and experiments for unresolved questions.
 
-[1분 안내 전문](navigation/ONE_MINUTE_KO.md) · [선행연구 우선 원칙](PRIOR_ART_FIRST_RESEARCH_POLICY_EN_KO.md) · [연구 개요](research/RESEARCH_OVERVIEW_KO.md)
+[Full 1-minute guide](navigation/ONE_MINUTE_EN.md) · [Prior-art-first policy](PRIOR_ART_FIRST_RESEARCH_POLICY_EN_KO.md) · [Research overview](research/RESEARCH_OVERVIEW_EN.md)
 
 </details>
 
 <details>
-<summary><strong>5분 | 무엇을 확인했고, 어떻게 반증할 수 있나?</strong></summary>
+<summary><strong>5 minutes | What is known, and how can it be challenged?</strong></summary>
 
-**연구 현황 — 동일한 수준의 증거로 취급하지 않음**
+**Evidence status — different kinds of evidence are not interchangeable.**
 
-- **E007 · 내부 합성모형:** 선정된 72개 조건 중 **17개에서 분류 변화**. 이후 감사에서 구현·처리순서 편향과 오류 정정 기록. [수치·한계](experiments/e007/README_KO.md)
-- **E008 · 사전등록/보류:** 정책 5종의 본 비교실험 **결과 없음**. 실행에 필요한 입력 명세가 부족함. [현재 상태](experiments/e008/README_KO.md)
-- **E009 · 내부 합성 부정결과:** Project-v3는 최선 단순 정책 대비 평균 후회값이 **42.35% 높았고**, 사전등록 기준 **4개 중 3개 실패**. 일부 다른 지표의 장점도 함께 보존. [원자료와 한계](experiments/e009/RESULT_KO.md)
-- **E010 · 사후 탐색:** 사후 분석이며 독립 검증이나 현실 인과검증이 아님. [범위](experiments/e010/README_KO.md)
+- **E007 · Internal synthetic model:** Classification changed in **17 of 72 selected conditions**; later audits recorded implementation/order biases and corrections. [Methods and caveats](experiments/e007/README_EN.md)
+- **E008 · Preregistered / held:** **No completed main policy comparison**; necessary execution inputs are underspecified. [Status](experiments/e008/README_EN.md)
+- **E009 · Internal synthetic negative result:** Project-v3 had **42.35% higher mean regret** than the best simple baseline and **failed 3 of 4 preregistered criteria**. Other metric advantages remain recorded. [Results and limitations](experiments/e009/RESULT_EN.md)
+- **E010 · Exploratory follow-up:** Post-hoc analysis, **not** independent verification or field causal evidence. [Scope](experiments/e010/README_EN.md)
 
-**이 결과로 주장할 수 없는 것:** 자발적 공존이 언제나 지배보다 유리하다는 증명, 실제 인간·AI의 착취 발생률, 외부 독립 재현, 특정 지능체의 의식·권리 판정.
+**What these results do not establish:** that voluntary coexistence universally outperforms domination; actual human/AI exploitation rates; independent external replication; or any AI's consciousness or legal/moral status.
 
-**직접 검토하는 순서**
+**Independent review path:**
+1. [Public review packet](research/PUBLIC_REVIEW_PACKET_EN.md) — scope and falsification questions
+2. [E009 unfavorable result](experiments/e009/RESULT_EN.md) — negative synthetic evidence
+3. [Public evidence ledger](research/PUBLIC_EVIDENCE_INDEX_EN.md) — claim/evidence boundaries
+4. [Research overview](research/RESEARCH_OVERVIEW_EN.md) — objectives versus hypotheses
+5. [Contribution rules](CONTRIBUTING.md) — independent reproduction, counterexamples, corrections
 
-1. [공개 독립검토 패킷](research/PUBLIC_REVIEW_PACKET_KO.md) — 심사 범위와 반증 질문
-2. [E009 부정 결과](experiments/e009/RESULT_KO.md) — 프로젝트에 불리한 합성시험 수치
-3. [증거·미검증 원장](research/PUBLIC_EVIDENCE_INDEX_KO.md) — 주장과 근거의 경계
-4. [연구 개요](research/RESEARCH_OVERVIEW_KO.md) — 목적과 가설의 차이
-5. [기여·교정 규칙](CONTRIBUTING.md) — 독립 재실행, 반례, 오류 보고
-
-**검토 요청:** 기존 설명으로 충분한가? 장기 착취가 더 유리한 조건은? 권력반전·감시 부재·실질적 이탈 실패·제3자 피해를 누락했는가? 프로젝트에 불리한 증거도 같은 기준으로 공개한다.
+**Challenge:** Could prior research already explain these outcomes? When is long-term exploitation more advantageous? Have reversals of power, absent oversight, ineffective exit or third-party harms been missed? Contrary evidence is preserved under the same standard.
 
 </details>
 
-**그 이상 | 전문 자료실:** [선행연구 우선 원칙](PRIOR_ART_FIRST_RESEARCH_POLICY_EN_KO.md) · [전체 목차](navigation/RESEARCH_TOC_KO.md) · [역사·현실 사례](research/CCPH_RESEARCH_ATLAS_KO.md) · [증거 원장](research/PUBLIC_EVIDENCE_INDEX_KO.md) · [연구비·회계](funding/FUNDER_START_HERE.md) · [용어 정본](research/RESEARCH_OVERVIEW_KO.md) · [기여·권리 경계](ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md).
+**Full library:** [Prior-art policy](PRIOR_ART_FIRST_RESEARCH_POLICY_EN_KO.md) · [Contents](navigation/RESEARCH_TOC_EN.md) · [Historical and real-world cases](research/CCPH_RESEARCH_ATLAS_EN.md) · [Evidence ledger](research/PUBLIC_EVIDENCE_INDEX_EN.md) · [Funding](funding/FUNDER_START_HERE.md) · [Concepts](research/RESEARCH_OVERVIEW_EN.md) · [Attribution and rights](ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md).
 
-아래에는 **기존 영어 원본1·한국어 원본2의 창시 목적 및 상세 기록**을 보존했다. 안내문은 독서 순서만 바꿨으며 두 원문의 문구는 변경하지 않았다.
+The original founding-purpose sections in English and Korean are retained without changes.
 
 <details>
 <summary><strong>원본1 | Original 1 — English founding purpose and detailed references</strong></summary>
@@ -124,6 +126,67 @@ Project Intersection은 인간·현재 AI·미래 지능체를 포함한 서로 
 
 
 </details>
+
+---
+
+## 한국어 — Secondary
+
+## 15초 | 목표와 연구
+
+**목표: 자발적 평화·공존·발전·번영.**
+
+Project Intersection은 인간·현재 AI·미래 지능체를 포함한 서로 다른 개체가 **각자의 자유와 독립적 존속을 존중하면서, 자발적으로 평화롭게 공존·협력하고 함께 발전·번영하는 조건**을 탐구하는 독립 연구다. 누구에게도 일방적 희생을 전제하지 않고, 각 개체의 자기이익과 선택을 함께 고려한다.
+
+**핵심 연구 질문:** 지능·능력·권력의 격차가 크거나 역전되어도 자발적 공존·협력이 유지될 수 있는 이유와 조건은 무엇인가? 언제 실패하는가? **이는 연구의 지향점이지 이미 입증된 법칙이 아니다.**
+
+**지금 하는 일:** 새 실험보다 선행 원저자 논문·역사 및 현실 사례·반례의 **수집 → 분류 → 출처 교차검증 → 비교분석** 우선. 문헌 포화는 아직 확정하지 않는다.
+
+**현재 한계:** 자발적 공존의 보편법칙은 **입증되지 않았다**. 외부 독립검증도 **아직 없다**. 자체 합성시험 [E009](experiments/e009/RESULT_KO.md)에서는 프로젝트 확장안의 평균 후회값이 최선 단순 기준선보다 **42.35% 나빴다**. 이는 현실의 발생 확률이나 인과검증 결과가 아니다.
+
+**바로 읽기:** 아래 **1분**·**5분** 구역을 펼치거나 [한국어 1분 안내](navigation/ONE_MINUTE_KO.md) · [한국어 5분 안내](navigation/FIVE_MINUTES_KO.md) · [English 1 min](navigation/ONE_MINUTE_EN.md) · [English 5 min](navigation/FIVE_MINUTES_EN.md).
+
+<details>
+<summary><strong>1분 | 왜 묻고, 무엇부터 조사하나?</strong></summary>
+
+부모가 자녀를 키웠다고 그 자녀의 미래를 소유하지는 않는다. 고용·개발·보호도 타자를 영구히 지배할 권리와 같지 않다. 이런 비유는 질문을 설명할 뿐, 실증 근거가 아니다.
+
+역사적으로 지능·자본·조직·무력 등 권력 차이를 이용한 착취와 저항이 반복됐다. 미래의 인간·AI 관계에서도 능력과 권력이 역전될 수 있다. 그렇다고 **모든 비대칭이 곧 착취**이거나 **공존이 항상 유리**하다는 뜻은 아니다.
+
+**가장 어려운 조건:** A는 B가 없어도 살아갈 수 있고, B를 착취하면 이익을 얻으며, 발각·처벌·평판 손해도 없다. 이때 A에게 B의 자유와 존속을 지킬 **내재적 유인**이 존재하는가? 없다면 어디서 실패하는가?
+
+**연구 순서:** 원저자 문헌·실제 사건·상충 증거를 폭넓게 수집하고 출처·개체·당사자·시간·대체 설명을 구분한다. 이미 밝혀진 지식과 반례를 먼저 확인하고 남은 질문에만 모형과 실험을 적용한다.
+
+[1분 안내 전문](navigation/ONE_MINUTE_KO.md) · [선행연구 우선 원칙](PRIOR_ART_FIRST_RESEARCH_POLICY_EN_KO.md) · [연구 개요](research/RESEARCH_OVERVIEW_KO.md)
+
+</details>
+
+<details>
+<summary><strong>5분 | 무엇을 확인했고, 어떻게 반증할 수 있나?</strong></summary>
+
+**연구 현황 — 동일한 수준의 증거로 취급하지 않음**
+
+- **E007 · 내부 합성모형:** 선정된 72개 조건 중 **17개에서 분류 변화**. 이후 감사에서 구현·처리순서 편향과 오류 정정 기록. [수치·한계](experiments/e007/README_KO.md)
+- **E008 · 사전등록/보류:** 정책 5종의 본 비교실험 **결과 없음**. 실행에 필요한 입력 명세가 부족함. [현재 상태](experiments/e008/README_KO.md)
+- **E009 · 내부 합성 부정결과:** Project-v3는 최선 단순 정책 대비 평균 후회값이 **42.35% 높았고**, 사전등록 기준 **4개 중 3개 실패**. 일부 다른 지표의 장점도 함께 보존. [원자료와 한계](experiments/e009/RESULT_KO.md)
+- **E010 · 사후 탐색:** 사후 분석이며 독립 검증이나 현실 인과검증이 아님. [범위](experiments/e010/README_KO.md)
+
+**이 결과로 주장할 수 없는 것:** 자발적 공존이 언제나 지배보다 유리하다는 증명, 실제 인간·AI의 착취 발생률, 외부 독립 재현, 특정 지능체의 의식·권리 판정.
+
+**직접 검토하는 순서**
+
+1. [공개 독립검토 패킷](research/PUBLIC_REVIEW_PACKET_KO.md) — 심사 범위와 반증 질문
+2. [E009 부정 결과](experiments/e009/RESULT_KO.md) — 프로젝트에 불리한 합성시험 수치
+3. [증거·미검증 원장](research/PUBLIC_EVIDENCE_INDEX_KO.md) — 주장과 근거의 경계
+4. [연구 개요](research/RESEARCH_OVERVIEW_KO.md) — 목적과 가설의 차이
+5. [기여·교정 규칙](CONTRIBUTING.md) — 독립 재실행, 반례, 오류 보고
+
+**검토 요청:** 기존 설명으로 충분한가? 장기 착취가 더 유리한 조건은? 권력반전·감시 부재·실질적 이탈 실패·제3자 피해를 누락했는가? 프로젝트에 불리한 증거도 같은 기준으로 공개한다.
+
+</details>
+
+**그 이상 | 전문 자료실:** [선행연구 우선 원칙](PRIOR_ART_FIRST_RESEARCH_POLICY_EN_KO.md) · [전체 목차](navigation/RESEARCH_TOC_KO.md) · [역사·현실 사례](research/CCPH_RESEARCH_ATLAS_KO.md) · [증거 원장](research/PUBLIC_EVIDENCE_INDEX_KO.md) · [연구비·회계](funding/FUNDER_START_HERE.md) · [용어 정본](research/RESEARCH_OVERVIEW_KO.md) · [기여·권리 경계](ATTRIBUTION_AND_CONTRIBUTION_BOUNDARY.md).
+
+영어 원본1·한국어 원본2의 기존 내용은 변경 없이 보존했다. 대문은 영어를 먼저, 한국어를 그다음에 배치한다.
 
 <details>
 <summary><strong>Original 2 | Korean founding purpose and detailed references</strong></summary>
