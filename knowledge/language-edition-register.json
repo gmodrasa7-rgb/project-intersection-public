@@ -524,11 +524,11 @@
     }
   ],
   "metrics": {
-    "markdown_total": 212,
+    "markdown_total": 213,
     "filename_classes": {
       "UNMARKED_LANGUAGE_UNVERIFIED": 43,
       "LEGACY_MIXED_READER_ENTRY": 2,
-      "KO_SUFFIX_UNVERIFIED": 94,
+      "KO_SUFFIX_UNVERIFIED": 95,
       "ORDERED_BILINGUAL_FOUNDER_OR_GOVERNANCE": 2,
       "EN_SUFFIX_UNVERIFIED": 33,
       "COMBINED_NAMING_UNVERIFIED": 38
@@ -1488,6 +1488,12 @@
     {
       "path": "research/EPISTEMIC_PATHWAY_COMMUNICATION_PRIOR_ART_2026-10-13_EN_KO.md",
       "filename_class": "COMBINED_NAMING_UNVERIFIED",
+      "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "research/E_SERIES_FOUNDATIONAL_PRIOR_ART_REASSESSMENT_2026-10-21_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
       "counterpart_path": null,
       "content_equivalence": "NOT_REVIEWED"
     },
