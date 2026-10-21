@@ -1,0 +1,36 @@
+{
+  "schema": "C15.synthetic.v1",
+  "date": "2026-10-21",
+  "data_kind": "DETERMINISTIC_PARAMETER_GRID_NOT_HUMAN_OR_AI_EXPERIMENT",
+  "cases": 48,
+  "parameters": {
+    "gains": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "rights": [
+      0,
+      1,
+      3,
+      9
+    ],
+    "future": [
+      0,
+      1,
+      3
+    ]
+  },
+  "choice_rule": "C iff rights+future>=gain; ties broken in favor C",
+  "summary": {
+    "coexistBase": 29,
+    "coexistNoFuture": 21,
+    "coexistTwiceGain": 18,
+    "collapseWhenFutureLost": 8,
+    "collapseWhenGainDoubled": 11,
+    "unconditionalMaterialOnlyViolations": 0
+  },
+  "limitation": "Choice of r and f is arbitrary; this grid establishes only logical sensitivity of the stipulated utility model, not estimates of real agents or new general impossibility theorems.",
+  "regeneration": "node experiments/c15/run.mjs"
+}
