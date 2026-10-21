@@ -1,0 +1,68 @@
+{
+  "schema": "PI.C15.robust-margin.v1",
+  "status": "EXECUTED_FINITE_DETERMINISTIC_TEST_NOT_AGENT_EXPERIMENT",
+  "date": "2026-10-21",
+  "bounded_shock_scenarios": 486,
+  "always_strictly_preserved": 276,
+  "not_strictly_guaranteed": 210,
+  "sharp_bound": "r0+v0-g0 > dg+dr+dv iff strict C for all independently feasible shocks in this toy model",
+  "proof": "The lowest margin occurs at g=g0+dg, r=r0-dr and v=v0-dv. All box corners are feasible. If the margin is zero the optimum is not uniquely C; if below zero X uniquely dominates.",
+  "parameters": {
+    "g0": [
+      1,
+      3,
+      5
+    ],
+    "r0": [
+      2,
+      4,
+      6
+    ],
+    "v0": [
+      2,
+      4
+    ],
+    "each_d": [
+      0,
+      1,
+      2
+    ]
+  },
+  "examples": {
+    "safe": {
+      "g0": 1,
+      "r0": 2,
+      "v0": 2,
+      "max_exploitation_gain_shock": 0,
+      "max_protection_value_loss": 0,
+      "max_option_value_loss": 0,
+      "worst_margin": 3,
+      "all_shock_realizations_strictly_coexist": true
+    },
+    "tie_possible": {
+      "g0": 1,
+      "r0": 2,
+      "v0": 2,
+      "max_exploitation_gain_shock": 0,
+      "max_protection_value_loss": 1,
+      "max_option_value_loss": 2,
+      "worst_margin": 0,
+      "all_shock_realizations_strictly_coexist": false
+    },
+    "override_possible": {
+      "g0": 1,
+      "r0": 2,
+      "v0": 2,
+      "max_exploitation_gain_shock": 0,
+      "max_protection_value_loss": 2,
+      "max_option_value_loss": 2,
+      "worst_margin": -1,
+      "all_shock_realizations_strictly_coexist": false
+    }
+  },
+  "limitations": [
+    "Assumes additive normalized utilities r+v vs g.",
+    "No claim about moral preferences or real independent B.",
+    "Strict protection on a finite box is not unbounded longitudinal or self-modification safety."
+  ]
+}
