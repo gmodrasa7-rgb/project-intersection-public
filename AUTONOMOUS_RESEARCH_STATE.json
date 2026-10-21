@@ -4,8 +4,8 @@
   "public_repository": "gmodrasa7-rgb/project-intersection-public",
   "canonical_boundary": "Public continuation pointer only; source artifacts and commit history outrank this state file.",
   "recovery_entrypoint": "AUTONOMOUS_RESEARCH_LOOP.md",
-  "current_public_head": "9de1f28ee824546bebfbbb13528136c9f31b7e79",
-  "updated_at": "2026-10-14T06:40:00Z",
+  "current_public_head": "544ea858829859bc6b4f2ffb1323a10e11ebdda7",
+  "updated_at": "2026-10-21T03:27:06Z",
   "execution_policy": {
     "atomic_material_delta_per_run": 1,
     "require_prior_art_gate": true,
@@ -18,13 +18,14 @@
     "require_benefit_cost_separation": true,
     "block_repeated_user_repair_burden": true,
     "e008_result_requires_frozen_executable_scoring_protocol": true,
-    "freeze_internal_complexity_expansion_after_negative_incremental_result": true
+    "freeze_internal_complexity_expansion_after_negative_incremental_result": true,
+    "research_work_policy": "PRIOR_ART_FIRST_RESEARCH_POLICY_EN_KO.md"
   },
   "priority_order": [
     "persistence_provenance_integrity",
-    "independent_external_or_empirical_validation",
-    "strong_counterexample_or_kill_test",
     "prior_art_novelty_narrowing",
+    "strong_counterexample_or_kill_test",
+    "independent_external_or_empirical_validation",
     "new_synthetic_test",
     "documentation_only"
   ],
@@ -309,7 +310,7 @@
     },
     "note": "Negative E009 result reproduced after merge. Project-v3 incremental residual remains reduced/rejected for this synthetic benchmark; no generation or independent-evidence promotion."
   },
-  "next_checkpoint": "F004: freeze simplification after the negative E009 result. Use TWO_RULE_SIMPLE and MINIMAL_4VAR as active baselines in a blinded or lineage-separated holdout; do not retune Project-v3 in place. F001 external lineage remains the highest evidence upgrade. F003 and F005 remain separate frontiers.",
+  "next_checkpoint": "Apply PRIOR_ART_FIRST_RESEARCH_POLICY_EN_KO.md before choosing new research work: collect, cross-check, deduplicate, critically compare, save and read back the relevant source record. The following retained frontier targets describe evidence needs, not permission to skip that checkpoint. F004: freeze simplification after the negative E009 result. Use TWO_RULE_SIMPLE and MINIMAL_4VAR as active baselines in a blinded or lineage-separated holdout; do not retune Project-v3 in place. F001 external lineage remains the highest evidence upgrade. F003 and F005 remain separate frontiers.",
   "current_public_head_semantics": "Head observed immediately before this state-file write. The commit containing this file must be resolved from Git history because a Git-tracked file cannot self-embed its own containing commit hash without changing that hash.",
   "resolved_process_findings": [
     {
@@ -319,6 +320,18 @@
       "repair": "Interpret the field as the pre-write basis head; resolve the containing commit and post-write blob by Git history/read-back.",
       "strongest_counterexample": "An external immutable tag or separate attestation service could name the state commit after creation, but no such independent attestation is established here.",
       "rollback": "Restore AUTONOMOUS_RESEARCH_STATE.json blob d5a777a13d5b7600e253dce513dd7f41fbb17b6d if downstream consumers cannot handle schema 1.1."
+    },
+    {
+      "id": "P002_PRIOR_ART_WORK_ORDER_DRIFT",
+      "revision": "2026-10-21.1",
+      "status": "SCOPED_SOURCE_CORRECTION_NOT_EXECUTOR_VALIDATION",
+      "basis_commit": "544ea858829859bc6b4f2ffb1323a10e11ebdda7",
+      "finding": "The standing 2026-10-20 policy requires prior-art-first research, but priority_order ranked it fourth; the active 0.2.3 roadmap still listed two zero-new-competitor rounds for saturation. Existing guards checked required markers/booleans without testing this work-order conflict.",
+      "repair": "Put prior art first after integrity work; retain evidence-upgrade targets with an explicit work-order boundary; replace fixed-round saturation with scoped coverage, citation/contrary searches, material novelty and residual-unknown justification; extend the existing roadmap CI guard.",
+      "strongest_counterexample": "An exhaustive-search prerequisite can itself obstruct useful research. Budget-limited pauses are permitted and recorded as pauses, not saturation; experiments need the relevant saved search/comparison checkpoint, not worldwide completeness.",
+      "rollback": "Revert the single correction commit together with its source-hash registry and review receipt; preserve independent-replication targets and existing negative evidence.",
+      "limitation": "No observation that an executor actually violated the policy; static consistency checks do not certify search quality, semantic completeness or research benefit.",
+      "previous_operating_decision": "EXTERNAL_VALIDATION_FIRST_INTERNAL_COMPLEXITY_FREEZE"
     }
   ],
   "last_checkpoint_result": {
@@ -359,7 +372,7 @@
   "current_operating_decision": {
     "id": "OD-2026-10-06-EXTERNAL-FIRST",
     "status": "ACTIVE",
-    "decision": "EXTERNAL_VALIDATION_FIRST_INTERNAL_COMPLEXITY_FREEZE",
+    "decision": "PRIOR_ART_FIRST_EXTERNAL_EVIDENCE_TARGET_INTERNAL_COMPLEXITY_FREEZE",
     "basis": [
       "E009 Project-v3 residual failed preregistered synthetic survival criteria.",
       "TWO_RULE_SIMPLE and MINIMAL_4VAR outperformed PROJECT_V3 on mean regret in the frozen synthetic rerun.",
@@ -367,6 +380,7 @@
       "E008 is preregistered but has no frozen executable scoring/consequence protocol, so generating a result now would add post-spec design degrees of freedom."
     ],
     "allowed_next": [
+      "prior-art collection, critical comparison, source verification, deduplication, persistence and read-back before selecting a new experiment",
       "lineage-separated E007 rerun or clean-room implementation",
       "empirical or external holdout work",
       "freeze an executable E008 scoring/consequence protocol before any E008 result",
@@ -377,7 +391,9 @@
       "E008 result generation before executable scoring/consequence protocol is frozen",
       "documentation-only expansion without lower verification cost or repaired contradiction"
     ],
-    "external_verification_issue": "https://github.com/gmodrasa7-rgb/project-intersection-public/issues/19"
+    "external_verification_issue": "https://github.com/gmodrasa7-rgb/project-intersection-public/issues/19",
+    "work_order_boundary": "Evidence-upgrade preference and internal-complexity freeze only. Research execution follows PRIOR_ART_FIRST_RESEARCH_POLICY_EN_KO.md first; operational/privacy integrity repairs may precede research. No external-replication or source-search completion is inferred.",
+    "revision": "2026-10-21.1"
   },
   "last_maintenance_checkpoint": {
     "check_date": "2026-10-14",
