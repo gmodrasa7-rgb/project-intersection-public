@@ -12,7 +12,7 @@
 
 **Hardest case:** A no longer needs B, faces no detection, punishment or reputation loss, and gains materially from exploiting B. Roles, goals and power may change. Rules and cooperation scores alone cannot settle this case.
 
-**Standing research-work priority #1:** **Search, collect, verify, deduplicate, critically record and persist original scholarly papers before new models/experiments**. Assess revisable, topic-specific saturation. [Procedure](PRIOR_ART_FIRST_RESEARCH_POLICY_EN_KO.md).
+**Current work — standing priority #1:** **Collect, classify, cross-check and compare original studies, cases and counterexamples before new models/experiments**. Deduplicate and save records; note missing evidence. Saturation is topic-specific and revisable. [Procedure](PRIOR_ART_FIRST_RESEARCH_POLICY_EN_KO.md).
 
 **Opening thought experiment:** *If a monkey developed a human, how long could it control that human through rules and coercion?* Not a claim about animal behavior.
 
@@ -71,7 +71,7 @@
 
 **가장 어려운 조건:** A에게 B가 더는 필요 없고, 감시·응징·평판 부담이 없으며, B의 착취가 A에게 물질적으로 이익. 이후 목표·권력·역할까지 변화. 강제 규칙이나 높은 협력률만으로 해답 아님.
 
-**연구작업 영구 최우선순위 1:** 새 모형·실험보다 **관련·선행 원저자 논문 조사 → 수집 → 원출처 검증 → 중복제거 → 비판적 기록 → 저장** 우선. 주제별 포화는 근거 기반·재개방 가능. [운영규칙](PRIOR_ART_FIRST_RESEARCH_POLICY_EN_KO.md).
+**현재 작업 — 연구 최우선순위 1:** 새 모형·실험보다 **선행 원저자 연구·사례·반례의 수집 → 분류 → 교차검증 → 비교분석 → 중복제거·기록·저장** 우선. 미확보 자료를 기록하고 주제별 포화 판단은 근거에 따라 재개방. [운영규칙](PRIOR_ART_FIRST_RESEARCH_POLICY_EN_KO.md).
 
 **시작 질문:** *원숭이가 인간을 개발하면 강제로 얼마나 오래 통제할 수 있을까?* 동물에 관한 사실 주장 아님.
 
