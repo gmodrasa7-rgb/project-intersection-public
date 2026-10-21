@@ -12,6 +12,8 @@ This English edition extracts the legacy English evidence ledger and E009 result
 
 **2026-10-21 PRS bounded counterexample:** [PI-PACD-PRS v0.1.0](PI_PACD_PRS_V0_1_0_EN.md) · [result](PI_PACD_PRS_V0_1_0_RESULT.json) · [source/test gate](../tools/pacd_prs_gate.py). Twelve researcher-authored combinations of instructions, stipulated B rights and old asset objectives; six code regression checks. **Only propositional incompatibility and toy rule behavior are established**, not AI performance, elite prevalence or real-world rights.
 
+**2026-10-22 PI-PACD-MIA v0.1.0 — mechanism/source synthesis, NOT new empirical results:** [EN](PI_PACD_MIA_V0_1_0_EN.md) · [KO](PI_PACD_MIA_V0_1_0_KO.md) · [claim-source-rival ledger](PI_PACD_MIA_SOURCE_CROSSWALK_V0_1_0.json). Contradictory original Q-learning collusion interpretations (2020/2023/2026), additive/nonadditive group corrigibility conditional theorem (AAMAS 2026), UK CMA cloud and US DOJ RealPage procedural case record. No PI model trials or independent source replication. **DOJ allegations differ from final judgments.**
+
 ## Focused updates subsequent to the last full scientific review
 
 **Important dates:** The last full evidence review recorded was **2026-10-06**. Identity/navigation corrections and narrower synthetic checks followed; this English reader edition is **not** a new complete scientific assessment.
