@@ -15,6 +15,8 @@
 
 일부 과거 연구는 한국어만 존재하거나 두 언어가 혼재되어 있다. **원출처 파일명·논문 제목·수학적 식별자·인용**은 그대로 보존한다. 연결된 원문을 번역 완료 문서로 오인하지 않도록 하며, 개별 주장과 증거등급은 [공개 증거 색인](../research/PUBLIC_EVIDENCE_INDEX_KO.md)을 따른다.
 
+**권력 축적·수렴 동역학(2026-10-21):** [PI-PACD v0.1.0, 영어 원본1·한국어 원본2](../research/PI_PACD_POWER_ACCUMULATION_CONVERGENCE_DYNAMICS_V0_1_0_EN_KO.md) · [버전 원장](../research/PI_PACD_VERSION_MANIFEST.json). 축적·집중·수렴을 분리하고 강화·분산 경로와 반증조건 기록. 실증 법칙 아님.
+
 **기존 권력·인간 기질·AI 자기강화 연구가설(2026-10-21):** [PI-PMAF v0.1.0 영어 원본1·한국어 원본2](../research/PI_POWER_MOTIVE_AI_FEEDBACK_2026-10-21_EN_KO.md) — 선축적 자본·권력, 엘리트 선발, 악의 없는 착취 유인, AI 보상 전이, 공존 반증조건. 집단 분포·현실 인과 입증 아님.
 
 **MER 신규 판정규격(2026-10-21):** [MER-CIR v0.1.0 한국어](../research/MER_CIR_CONTEXT_IMITATION_RECOMBINATION_2026-10-21_KO.md) · [영어](../research/MER_CIR_CONTEXT_IMITATION_RECOMBINATION_2026-10-21_EN.md). 문맥학습·모방·재조합을 지능 후보 기제로 취급하되 상호작용 초과효과·선택 지속성·주관경험은 별도 미검증 판정.
