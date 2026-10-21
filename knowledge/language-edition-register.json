@@ -613,12 +613,12 @@
     }
   ],
   "metrics": {
-    "markdown_total": 240,
+    "markdown_total": 242,
     "filename_classes": {
       "UNMARKED_LANGUAGE_UNVERIFIED": 46,
       "LEGACY_MIXED_READER_ENTRY": 2,
       "KO_SUFFIX_UNVERIFIED": 111,
-      "EN_SUFFIX_UNVERIFIED": 39,
+      "EN_SUFFIX_UNVERIFIED": 41,
       "ORDERED_BILINGUAL_FOUNDER_OR_GOVERNANCE": 2,
       "COMBINED_NAMING_UNVERIFIED": 40
     },
@@ -1664,9 +1664,15 @@
       "content_equivalence": "NOT_REVIEWED"
     },
     {
+      "path": "research/EI_V0_1_0_EN.md",
+      "filename_class": "EN_SUFFIX_UNVERIFIED",
+      "counterpart_path": "research/EI_V0_1_0_KO.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
       "path": "research/EI_V0_1_0_KO.md",
       "filename_class": "KO_SUFFIX_UNVERIFIED",
-      "counterpart_path": null,
+      "counterpart_path": "research/EI_V0_1_0_EN.md",
       "content_equivalence": "NOT_REVIEWED"
     },
     {
@@ -1778,9 +1784,15 @@
       "content_equivalence": "NOT_REVIEWED"
     },
     {
+      "path": "research/MER_V0_1_0_EN.md",
+      "filename_class": "EN_SUFFIX_UNVERIFIED",
+      "counterpart_path": "research/MER_V0_1_0_KO.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
       "path": "research/MER_V0_1_0_KO.md",
       "filename_class": "KO_SUFFIX_UNVERIFIED",
-      "counterpart_path": null,
+      "counterpart_path": "research/MER_V0_1_0_EN.md",
       "content_equivalence": "NOT_REVIEWED"
     },
     {
