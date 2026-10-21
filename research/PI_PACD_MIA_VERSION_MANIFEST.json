@@ -1,0 +1,68 @@
+{
+  "schema_version": "pi-research-submodule/v0.1.0",
+  "research_id": "PI-PACD-MIA",
+  "title_ko": "작동기제 식별·배제당사자 수렴 감사",
+  "title_en": "Mechanism Identification & Outsider-Sensitive Convergence Audit",
+  "version": "v0.1.0",
+  "date": "2026-10-22",
+  "parent_version_unchanged": "PI-PACD v0.1.0",
+  "siblings_unchanged": [
+    "PI-PACD-OCG v0.1.0",
+    "PI-PACD-PRS v0.1.0"
+  ],
+  "documents": {
+    "en": "research/PI_PACD_MIA_V0_1_0_EN.md",
+    "ko": "research/PI_PACD_MIA_V0_1_0_KO.md"
+  },
+  "evidence_ledger": "research/PI_PACD_MIA_SOURCE_CROSSWALK_V0_1_0.json",
+  "audit_tool": "tools/pacd_mia_audit.py",
+  "regression_tests": "tests/test_pacd_mia_audit.py",
+  "mechanisms": [
+    "M1",
+    "M2",
+    "M3",
+    "M4"
+  ],
+  "hypotheses": [
+    "MIA-H1",
+    "MIA-H2",
+    "MIA-H3",
+    "MIA-H4",
+    "MIA-H5",
+    "MIA-H6",
+    "MIA-H7"
+  ],
+  "origin": "Project Intersection human researcher; AI-assisted primary-source comparison, counterarguments, test protocol and registry; original researchers credited.",
+  "evidence_state": {
+    "source_references": 10,
+    "claims": 12,
+    "official_real_case_fronts": 2,
+    "project_empirical_ai_trials": 0,
+    "project_field_causal_studies": 0,
+    "independent_replications": 0,
+    "mechanism_validated_in_deployment": false,
+    "literature_saturation": "NOT_ESTABLISHED",
+    "new_theory_novelty": "NOT_ESTABLISHED",
+    "translations": "NOT_INDEPENDENTLY_VERIFIED"
+  },
+  "scope_cautions": [
+    "2026 de Moraes and De-Losso simulation results are authors' reports, not re-executed by Project Intersection",
+    "AAMAS 2026 additivity theorem is conditional on its off-switch game model",
+    "DOJ allegations must be separated from final judgments and proposed consent decrees",
+    "UK CMA cloud authority is about switching market structure, not AI subjective motives",
+    "In-group cooperation can have third-party losses; outsider payoff and exit must be independent measures"
+  ],
+  "future_release_gates": {
+    "v0.1.x": "Fix citation, typo, translation or structural audit while preserving archive",
+    "v0.2.0": "Independent source reproduction, registered interventions on agent behavior, adversarial counterexamples and independently traced external party effects."
+  },
+  "empirical_promotion": false,
+  "version_is_evidence_grade": false,
+  "history": [
+    {
+      "version": "v0.1.0",
+      "change": "First source-contradiction audit linking high-price observation versus mechanisms, collective additive boundary, outsider impacts and actual regulator cases.",
+      "empirical_promotion": false
+    }
+  ]
+}
