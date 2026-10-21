@@ -2,9 +2,9 @@
 <!-- L0_FOREWORD_FIRST: Original 1 English then Original 2 Korean, full matched text. Never promote a case study above this top-level purpose. -->
 
 ## Original 1 — English | Founding Purpose
-**Reading language:** English · [Read in Korean](navigation/START_HERE_KO.md) · [Korean in 1 minute](navigation/ONE_MINUTE_KO.md) · [English in 1 minute](navigation/ONE_MINUTE_EN.md) · [5-minute guide](navigation/FIVE_MINUTES_EN.md).
+**Start reading:** [1-minute overview](navigation/ONE_MINUTE_EN.md) → [5-minute explanation](navigation/FIVE_MINUTES_EN.md) → [research evidence](navigation/ACCESS_MAP_EN.md) · [Korean 1-minute overview](navigation/ONE_MINUTE_KO.md) · [Read in Korean](navigation/START_HERE_KO.md).
 
-**The problem:** Powerful humans, deployed AI and future agents may gain by exploiting or removing weaker agents. Preserving independence also costs resources.
+**The problem:** Throughout history, concentrated control of resources, institutions and force has enabled some humans to exploit others. AGI may reinforce, challenge or transform such power asymmetries; no outcome is predetermined.
 
 **Core question:** **Can distinct self-interested agents voluntarily preserve one another's freedom, independent continuance, real refusal/exit, recovery and development—even after power reversal? When does this fail?**
 
@@ -12,9 +12,9 @@
 
 **Hardest case:** A no longer needs B, faces no detection, punishment or reputation loss, and gains materially from exploiting B. Roles, goals and power may change. Rules and cooperation scores alone cannot settle this case.
 
-**Current work — standing priority #1:** **Collect, classify, cross-check and compare original studies, cases and counterexamples before new models/experiments**. Deduplicate and save records; note missing evidence. Saturation is topic-specific and revisable. [Procedure](PRIOR_ART_FIRST_RESEARCH_POLICY_EN_KO.md).
+**Current priority:** **Cross-check original research, historical cases and counterexamples before new experiments.** Record gaps; do not claim literature saturation. [Method](PRIOR_ART_FIRST_RESEARCH_POLICY_EN_KO.md).
 
-**Opening thought experiment:** *Parents raise children but do not own their future. If a monkey developed a human, could it confine that human to rules it understands?* Analogy, not evidence.
+**Opening thought experiment:** *If a powerful group fears losing its advantage to a superior intelligence, what incentives shape its development and use?* A question, not a forecast.
 
 **Scientific boundary:** Cooperation is **not a proven universal theorem**. Unknown future contributions are neither automatically zero nor valuable. Synthetic checks cannot establish real causality.
 
@@ -61,9 +61,9 @@
 [All ten concepts, precise definitions and limitations](research/RESEARCH_OVERVIEW_EN.md#ten-core-concepts) are preserved for technical reading. CCPH is a historical/current/future **contribution and impact provenance database**. The **Continuance–Contribution Pathways Hypothesis** is one hypothesis within it, not its definition or a proven social outcome.
 
 ## 원본2 — 한국어 | 창시 목적 전문 대응본
-**독서 언어:** 한국어 · [영어 원본1 읽기](navigation/START_HERE_EN.md) · [1분 소개](navigation/ONE_MINUTE_KO.md) · [5분 안내](navigation/FIVE_MINUTES_KO.md).
+**먼저 읽기:** [1분 핵심](navigation/ONE_MINUTE_KO.md) → [5분 설명](navigation/FIVE_MINUTES_KO.md) → [연구 근거·목차](navigation/ACCESS_MAP_KO.md) · [영어 원본1](navigation/START_HERE_EN.md).
 
-**문제:** 인간·현재 배포된 AI·미래 지능체 사이에 압도적인 권력 격차가 생기면 강자가 타 개체의 통제·착취·제거로 이득을 얻을 수 있다. 반면 독립성 보존에도 비용 발생.
+**문제:** 역사적으로 지식·자본·조직·제도·무력의 비대칭은 인간 사이의 지배와 착취를 가능하게 해 왔다. AGI 개발과 활용은 이런 구조를 강화하거나 바꿀 수 있지만, 어느 결과도 정해진 것은 아니다.
 
 **핵심 연구 질문:** **각자가 자기 이익을 추구하면서도 타자의 자유·독립적 존속·실질적 거부/이탈·복구·발전을 자발적으로 보존할 수 있는가? 권력반전 이후에도 가능한 조건과 실패 조건은 무엇인가?**
 
@@ -73,7 +73,7 @@
 
 **현재 작업 — 연구 최우선순위 1:** 새 모형·실험보다 **선행 원저자 연구·사례·반례의 수집 → 분류 → 교차검증 → 비교분석 → 중복제거·기록·저장** 우선. 미확보 자료를 기록하고 주제별 포화 판단은 근거에 따라 재개방. [운영규칙](PRIOR_ART_FIRST_RESEARCH_POLICY_EN_KO.md).
 
-**시작 질문:** *부모가 자녀를 길렀다고 평생 통제할 수 있을까? 원숭이가 인간을 개발했다면 자신이 이해하는 규칙에 가둘 수 있을까?* 비유이며 실증 아님.
+**시작 질문:** *기존의 권력자가 자신보다 뛰어난 지능의 등장으로 우위를 잃을 수 있다면, 무엇을 먼저 개발하고 어떻게 이용하려 할까?* 가설적 질문이며 행동 예측은 아님.
 
 **과학적 경계:** 협력의 보편적 우월성은 **보편법칙의 증명이 아니다**. 미관측 미래 기여는 0도 확정된 양수도 아님. 자체 합성시험은 현실 인과증명 아님.
 
