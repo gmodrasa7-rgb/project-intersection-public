@@ -478,6 +478,42 @@
       "declared_dependencies_complete": false,
       "result": "SCOPED_SOURCE_AND_PROVENANCE_REVIEW_DONE_NO_SCIENTIFIC_VERDICT",
       "limitation": "No new source search, saturation finding, actual executor-policy violation or reader-benefit measurement. Historical roadmap editions retained."
+    },
+    {
+      "review_id": "PI-CIG-VERSION-CURRENCY-20261022",
+      "date": "2026-10-22",
+      "changed_path": "research/RESEARCH_VERSION_REGISTRY.json",
+      "old_source_sha": "869d3ed67bf6f9a76e26c9933a74ea706741136b",
+      "new_source_sha": "b29f2c783a6a6b1d039a5e2acfedbed188f0f740",
+      "upstream_change": "MER/EI previously unassigned registry entries now attest public main manifest v0.1.0; PI-RAMP registry v0.5.0 corrected to already published v0.7.0. Historical PI-RAMP v0.5 evidence and current v0.7 limited-synthetic sharp-bounds method are not conflated. ICM construct collision disambiguated.",
+      "affected_claims_and_paths": [
+        {
+          "id": "CL-RAMP-EFFECT",
+          "unchanged_status": "EFFECT_UNMEASURED"
+        },
+        {
+          "id": "CL-RVD-MOTIVE",
+          "unchanged_status": "MECHANISM_UNIDENTIFIED"
+        },
+        {
+          "id": "CL-VC-HARD",
+          "unchanged_status": "UNRESOLVED"
+        },
+        {
+          "path": "research/MER_VERSION_MANIFEST.json",
+          "effect": "Version-navigation only; mechanistic AI motive remains unverified."
+        },
+        {
+          "path": "research/EI_VERSION_MANIFEST.json",
+          "effect": "Version-navigation only; endogenous motive under extreme power not established."
+        }
+      ],
+      "scientific_promotion": false,
+      "independent_validation": false,
+      "version_registry": "research/RESEARCH_VERSION_REGISTRY.json",
+      "declared_dependencies_complete": false,
+      "result": "SCOPED_SOURCE_AND_PROVENANCE_REVIEW_DONE_NO_SCIENTIFIC_VERDICT",
+      "limitation": "A manually curated public-main version correction; no empirical agent measurement, field causation, complete literature saturation, or independent validation. Readers must still check source main SHA and PR state."
     }
   ]
 }
