@@ -34,10 +34,21 @@ def audit(body):
     )
     offsets = [body.find(marker) for marker in founding_markers]
     if (not lines or lines[0] != "# Project Intersection"
-            or len(lines) < 2 or lines[1] != founding_markers[0]
+            or len(lines) < 2 or not lines[1].startswith("**At a glance (English):**")
             or any(p < 0 for p in offsets)
             or offsets != sorted(offsets)):
         errors.append("L0_NOT_FIRST")
+    top_view = body.split("<details>", 1)[0]
+    required_top = (
+        "**At a glance (English):**",
+        "**Two founding questions:**",
+        "**Evidence boundary:**",
+        "Independent external replication is not established",
+        "42.35% higher mean regret",
+        "E008 has no completed main policy comparison",
+    )
+    if any(token not in top_view for token in required_top):
+        errors.append("FIRST_SCREEN_PURPOSE_OR_ADVERSE_EVIDENCE_MISSING")
     guide_start = body.find("## English — Primary")
     if guide_start < 0:
         return errors
