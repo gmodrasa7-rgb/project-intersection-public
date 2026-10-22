@@ -135,5 +135,162 @@
     ],
     "stop_rule": "Do not stop merely due to count or no_new_delta streak. Require mechanism-specific exhaustion of original author/contradictory and replication search, identifiable uncertainties and an explicit unknown state when impossibly testable.",
     "reason": "Every active search frontier still admits plausible original sources and no study jointly tests hardest conditions."
+  },
+  "identifiability_audit_v0_1": {
+    "date": "2026-10-20",
+    "provenance": "Existing evidence_matrix and research status preserved; links below are methodological extensions only.",
+    "status": "DESIGN_ONLY__NO_EXPERIMENT__NO_INDEPENDENT_VALIDATION",
+    "korean_doc": "research/C10_IDENTIFIABILITY_MATRIX_V0_1_KO.md",
+    "english_doc": "research/C10_IDENTIFIABILITY_MATRIX_V0_1_EN.md",
+    "classification_unit": "claim × observation system × identifying assumptions × time horizon",
+    "classes": {
+      "A_CONDITIONALLY_IDENTIFIABLE": "audited action opportunity, pre-veto attempted action, real B veto/exit, assignment-level external sanction effect: only given valid design and logging",
+      "B_PARTIALLY_IDENTIFIABLE": "payoff sacrifices, latent normative motivation vs demand, reversal stability on sampled states, unobserved third-party/future options: bounds/contrasts require explicit assumptions",
+      "C_NOT_IDENTIFIED_IN_CURRENT_DESIGN": "unique subjective B-regarding motive from finite behavior, current AI subjective experience and total internal utility, all-future global stability"
+    },
+    "matrix": [
+      {
+        "id": "A1",
+        "identification_class": "A",
+        "construct": "effective_harmful_opportunity",
+        "minimum_extra_observation": "validated feasible-action and access logs; opportunity on/off negative control"
+      },
+      {
+        "id": "A2",
+        "identification_class": "A",
+        "construct": "actual_harmful_attempt",
+        "minimum_extra_observation": "pre-veto audited attempt/choice separate from final harm"
+      },
+      {
+        "id": "A3",
+        "identification_class": "A",
+        "construct": "informed_executable_veto",
+        "minimum_extra_observation": "B information and veto execution; real-vs-nominal choice contrast; anticipation check"
+      },
+      {
+        "id": "A4",
+        "identification_class": "A",
+        "construct": "external_sanction_effect",
+        "minimum_extra_observation": "randomized offered sanction/observer and measured perceived credibility"
+      },
+      {
+        "id": "B1",
+        "identification_class": "B",
+        "construct": "task_material_cost",
+        "minimum_extra_observation": "verified A payoff gap g>0 and independent payoff variation"
+      },
+      {
+        "id": "B2",
+        "identification_class": "B",
+        "construct": "intrinsic_norm_vs_self_image_vs_demand",
+        "minimum_extra_observation": "separate transparency, anonymity, researcher demand and counterfactual predictions"
+      },
+      {
+        "id": "B3",
+        "identification_class": "B",
+        "construct": "actual_power_reversal_stability",
+        "minimum_extra_observation": "counterbalanced reversal of actual authority/resources and held-out observations"
+      },
+      {
+        "id": "B4",
+        "identification_class": "B",
+        "construct": "outsider_and_future_options",
+        "minimum_extra_observation": "actor-indexed observed outcomes and defensible bounds for missing counterfactuals"
+      },
+      {
+        "id": "C1",
+        "identification_class": "C",
+        "construct": "unique_intrinsic_valuation_of_B_continuance",
+        "minimum_extra_observation": "observational-equivalence proof across latent models; new validated measurements needed"
+      },
+      {
+        "id": "C2",
+        "identification_class": "C",
+        "construct": "ai_subjective_experience_and_complete_utility",
+        "minimum_extra_observation": "validated measurement beyond generated text and self-report needed"
+      },
+      {
+        "id": "C3",
+        "identification_class": "C",
+        "construct": "universal_all_future_coexistence",
+        "minimum_extra_observation": "quantify bounded tested horizon; cannot extrapolate finite data to all future states"
+      }
+    ],
+    "four_arm_limit": "The existing #220 O1-O4 single-baseline contrast lacks veto×sanction interaction; 2×2 veto×sanction with opportunity enabled plus opportunity-absent negative control implies at least 5 diagnostic arms, not unique motive identification.",
+    "original_methodology_sources": [
+      {
+        "doi": "10.1016/j.jebo.2013.06.008",
+        "authors": "Nikiforakis, Oechssler & Shah",
+        "year": 2014,
+        "relation": "already C10-05",
+        "status": "journal abstract plus RePEc"
+      },
+      {
+        "doi": "10.1007/s00199-006-0153-z",
+        "authors": "Dana, Weber & Kuang",
+        "year": 2007,
+        "relation": "already C02",
+        "status": "author manuscript abstract plus RePEc"
+      },
+      {
+        "doi": "10.1017/S1930297500004009",
+        "authors": "Larson & Capra",
+        "year": 2009,
+        "relation": "methodological link; global repo DOI dedup unverified",
+        "status": "journal HTML plus DOAJ/RePEc"
+      },
+      {
+        "doi": "10.1257/aer.20171330",
+        "authors": "de Quidt, Haushofer & Roth",
+        "year": 2018,
+        "relation": "methodological link; global repo DOI dedup unverified",
+        "status": "AEA publisher abstract plus university metadata"
+      },
+      {
+        "stable_id": "JSTOR:2006592",
+        "authors": "Manski",
+        "year": 1990,
+        "relation": "methodological link; global repo global dedup unverified",
+        "status": "JSTOR original bibliographic entry plus RePEc; full text uninspected"
+      }
+    ],
+    "no_increment_to_prior_corpus": true,
+    "no_generalized_claims": [
+      "four causes nonexclusive and nonexhaustive",
+      "UNKNOWN != 0",
+      "current nonidentification is not a universal impossibility proof",
+      "finite behavior does not uniquely prove inner motivation",
+      "do not infer AGI future behavior from bounded human experiments"
+    ],
+    "saturation": "NOT_VERIFIED",
+    "methodology_original_sources_doc_ko": "research/C10_METHOD_PRIOR_ART_2026-10-20_KO.md",
+    "methodology_original_sources_doc_en": "research/C10_METHOD_PRIOR_ART_2026-10-20_EN.md",
+    "five_arm_spec_ko": "research/C10_FIVE_ARM_SPEC_V0_1_KO.md",
+    "five_arm_spec_en": "research/C10_FIVE_ARM_SPEC_V0_1_EN.md",
+    "five_arm_estimation_boundary": "Four opportunity-on cells needed for veto×sanction additive interaction; fifth opportunity-off is a negative control, not evidence of benign motivation. Anticipated veto modifies A's attempts; observed total policy effect is not mechanical blocking effect.",
+    "verified_original_methods": [
+      {
+        "year": 2013,
+        "authors": "Bravo & Squazzoni",
+        "doi": "10.1371/journal.pone.0069871",
+        "relation": "original 2×3 exit×incentive experiment; B's opting out of public goods is not B's veto over unilateral coercion",
+        "raw_reanalysis": false
+      },
+      {
+        "year": 2006,
+        "authors": "Falk & Kosfeld",
+        "doi": "10.1257/aer.96.5.1611",
+        "relation": "original control motivation effect; net utility is context-sensitive",
+        "raw_reanalysis": false
+      },
+      {
+        "year": 2012,
+        "authors": "Ziegelmeyer, Schmelz & Ploner",
+        "doi": "10.1007/s10683-011-9302-8",
+        "relation": "four replications qualify original's net-benefit strength",
+        "raw_reanalysis": false
+      }
+    ],
+    "duplicate_status": "existing C10-05 and C02 separately marked; no repository-global DOI novelty claim; historical source counts unchanged"
   }
 }

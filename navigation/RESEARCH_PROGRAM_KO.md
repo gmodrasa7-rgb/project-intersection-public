@@ -72,7 +72,7 @@
 | **C08 선의와 자유** | B의 복지 향상·B의 선호·B의 실제 실행 선택권은 분리. 선의의 강제 개입은 공존 판정 아님 | [보고](../research/PRIOR_ART_OTHER_AUTONOMY_CYCLE08_2026-10-20_KO.md) / [데이터](../research/PRIOR_ART_OTHER_AUTONOMY_C08_A_2026-10-20.json) |
 | **C09 비용부담·권리** | 실제 타인 피해를 줄이기 위한 비용부담 행동 존재. 권력 효과 조건부이며 법적 권리와 실행가능 자유 별도 | [보고](../research/PRIOR_ART_COSTLY_RIGHTS_CYCLE09_2026-10-20_KO.md) / [데이터](../research/PRIOR_ART_COSTLY_RIGHTS_CYCLE09_2026-10-20.json) |
 
-| **C10 정보·거부권·착취 기회** | 동일한 무피해 결과에서도 A의 자발적 비침해, B의 정보에 근거한 실효 거부, A의 행동불능이 관측동등. 결과만으로 내재동기 식별 불가 | [보고](../research/PRIOR_ART_INFORMED_VETO_POWER_CYCLE10_2026-10-20_KO.md) / [데이터](../research/PRIOR_ART_INFORMED_VETO_POWER_CYCLE10_2026-10-20.json) / [식별 공백](../research/PRIOR_ART_C10_IDENTIFICATION_GAPS_2026-10-20.json) |
+| **C10 정보·거부권·착취 기회** | 동일한 무피해 결과에서도 A의 자발적 비침해, B의 정보에 근거한 실효 거부, A의 행동불능이 관측동등. 결과만으로 내재동기 식별 불가 | [보고](../research/PRIOR_ART_INFORMED_VETO_POWER_CYCLE10_2026-10-20_KO.md) / [데이터](../research/PRIOR_ART_INFORMED_VETO_POWER_CYCLE10_2026-10-20.json) / [식별 공백](../research/PRIOR_ART_C10_IDENTIFICATION_GAPS_2026-10-20.json) / [식별성 A/B/C 판정](../research/C10_IDENTIFIABILITY_MATRIX_V0_1_KO.md) / [원저자·상충 재현](../research/C10_METHOD_PRIOR_ART_2026-10-20_KO.md) / [5조건 명세](../research/C10_FIVE_ARM_SPEC_V0_1_KO.md) |
 
 **포화 판정: 주제별 SEARCH_ACTIVE / SATURATION_NOT_VERIFIED.** 이미 축적된 전체 문헌과 DOI/정본 식별자 중복검사를 먼저 수행한 후에만 누적 수치 확정. 신규 서지와 신규 기제·반례를 구분하며 반대증거가 발견되면 포화 판정 재개. [기존 포화지도](../PRIOR_ART_SATURATION_MAP_KO.md) · [원저자 교차지도](../CORE_AND_GAPS_PRIOR_ART_CROSSWALK.md) · [최우선 연구규칙](../PRIOR_ART_FIRST_RESEARCH_POLICY_EN_KO.md).
 
