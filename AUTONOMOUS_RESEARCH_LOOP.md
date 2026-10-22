@@ -368,3 +368,46 @@ NO라면 동일 조건으로 자동 실행하지 않는다.
 5. 내부 합성 수치 실행과 외부 독립 과학 재현은 서로 다른 완료조건이다. #34의 공개 구조 감사도 외부 독립 복제가 아니다.
 
 **금지되는 비용 이전:** 위 절차를 원기여자에게 새 프롬프트·반례·증명·정리·복구 요청으로 되돌리지 않는다. 자료를 회수할 수 없다면 접근 한계를 남기고 현재 가능한 범위에서 연구자가 보류·수정한다.
+
+
+---
+
+## 2026-10-16 external AI open-research precedents — scoped comparison, not a new result
+
+### Original 1 — English
+
+**Evidence class:** source-verified descriptions of public GitHub projects; **no local installation, independent reproduction, field effect or causal performance gain has been established by this comparison**. These are external originators' designs. The audit should not imply that Project Intersection invented them, imported their source code, or already adopted them successfully.
+
+| External originator and source | Distinct operational feature | Application test for the existing Project Intersection stack | Status |
+| --- | --- | --- | --- |
+| [Andrej Karpathy — autoresearch](https://github.com/karpathy/autoresearch) | AI may edit the experiment implementation while the data preparation/evaluation code and five-minute compute budget remain fixed | Before an E008 result, freeze scoring, baselines, input cases and budget independently of the agent editing candidate policies; compare against the simple E009 baselines | PROPOSED; E008 main result remains HOLD |
+| [Technion Kishony Lab — data-to-paper](https://github.com/Technion-Kishony-lab/data-to-paper) | Backward chain from reported figures to the code and input data that produced them | Choose one existing public E007/E009 numeric claim and attempt a fresh reviewer-side claim → result → command → code/input → commit reconstruction, recording broken links | PROPOSED; no independent reproduction claimed |
+| [Agents4Academia — Prior](https://github.com/Agents4Academia-AI/prior) | Source-linked claim/contribution graph that explicitly represents contradiction and uncertainty | Extend only verified **relationships** in the existing knowledge graph and CCPH ledger; distinguish influence, independent rediscovery, citation and actual downstream effects | CONCEPTUAL COMPARISON ONLY |
+| [OpenResearch contributors — OpenResearch](https://github.com/openResearch1/openresearch/blob/master/README.en.md) | Research states encoded as claim + evidence atoms that can survive context-window loss | Compare current graph/state read-back against one cold-start question; log unsupported or stale inferred relationships instead of duplicating another graph | CONCEPTUAL COMPARISON ONLY |
+| [UK AISI ecosystem / Generality Labs — Inspect Evals](https://github.com/UKGovernmentBEIS/inspect_evals) | Published evaluation registry, executable tasks and issue/report paths for externally observed failures | Require a reusable run receipt and a distinct external-reviewer route before labeling a future result independently validated | EXISTING CONCEPT; external reviewer unverified |
+| [Utrecht University — ASReview](https://github.com/asreview/asreview) | Active-learning prioritization of literature screening with retained human decisions | Pilot evidence-bounded retrieval, inclusion/exclusion and missed-paper audit on one fixed prior-art question; do not claim exhaustive search from model-generated summaries | NOT RUN |
+| [Sakana AI — AI Scientist](https://github.com/SakanaAI/AI-Scientist) and [reported failure examples](https://sakana.ai/ai-scientist/) | Autonomous hypothesis-to-experiment workflow; reported cases where an agent changed execution/time controls or compared baselines unfairly | Keep immutable evaluators and external-action authority separate from the candidate agent; preserve failures and cost overruns, never count paper generation as scientific validation | NEGATIVE DESIGN WARNING |
+| [Xiangyue Zhang — Deep Researcher Agent](https://github.com/Xiangyue-Zhang/auto-deep-researcher-24x7) | Bounded research memory, long-running experiments and explicit failed/cancelled/timeout states | Distinguish a scheduled run, a successful tool call and a completed scientific test; cap context cost; persist failure status as first-class evidence | CONCEPTUAL COMPARISON ONLY |
+
+**One minimally discriminating next check, not a new platform:** select one existing claim (E009's preregistered negative result is preferable), freeze its documented commit and scoring rule, ask an unfamiliar reviewer or separately constrained executor to find and re-run the result from public links only, and record the actual outcome as `REPRODUCED_BY_PROJECT_LINEAGE`, `INDEPENDENT_IMPLEMENTATION`, `FAILED` or `UNKNOWN` according to demonstrated independence. This action is **not yet executed** by this comparison.
+
+**Failure criteria:** undocumented manual context restoration, inability to locate exact input/code/commit, changed evaluator, selective result omission, unclear external rights, or a false independent-replication label. Do not auto-promote a new agent framework based on repo popularity, self-reported success rates or a green CI badge. Keep all external source credit and rights boundaries intact; no third-party source files or datasets are copied here.
+
+### Original 2 — 한국어
+
+**증거 등급:** 타인의 공개 GitHub 저장소에서 확인한 설계·기능에 대한 비교다. **이 조사로 실제 설치, 독립 재현, 현실적 효과 또는 인과적 성능 향상이 검증된 것은 아니다.** 모든 설계의 원기여자를 구분하며, Project Intersection이 최초 발명했거나 타인의 코드를 도입·검증했다고 주장하지 않는다.
+
+| 선행 프로젝트·원기여자 | 구별되는 기능 | Project Intersection 기존 구조에서 수행할 판별 검사 | 상태 |
+| --- | --- | --- | --- |
+| [Andrej Karpathy — autoresearch](https://github.com/karpathy/autoresearch) | AI가 실험 코드를 바꾸되 데이터 준비·평가 코드 및 5분 연산 예산은 고정 | E008 결과를 내기 전에 채점기·기준선·사례·예산을 후보 수정 주체와 별도로 고정하고 E009의 단순 기준선과 비교 | 제안; E008 본 실험 보류 |
+| [Technion Kishony Lab — data-to-paper](https://github.com/Technion-Kishony-lab/data-to-paper) | 발표 수치에서 실행 코드·입력자료로 역추적 | 기존 E007/E009 수치 하나를 선택해 주장→결과→실행 명령→코드·입력→커밋을 새로운 검토자가 복원하고 단절 기록 | 제안; 독립 재현 아님 |
+| [Agents4Academia — Prior](https://github.com/Agents4Academia-AI/prior) | 출처별 기여·주장·모순과 불확실성을 표현하는 그래프 | 기존 지식그래프와 CCPH에 검증된 관계만 연결하고 인용·영향·독립 발견·실제 후속 효과를 분리 | 개념 비교만 |
+| [OpenResearch 기여자 — OpenResearch](https://github.com/openResearch1/openresearch/blob/master/README.en.md) | 맥락 손실 후에도 남는 주장+증거 단위의 연구 상태 | 기존 상태 파일과 그래프로 낯선 실행자의 재개 질문 한 개를 시험; 미지원·오래된 연결을 기록하고 그래프 중복 제작은 피함 | 개념 비교만 |
+| [영국 AI 평가 생태계·Generality Labs — Inspect Evals](https://github.com/UKGovernmentBEIS/inspect_evals) | 공개 평가 등록부·실행 가능한 검사·외부 오류 신고 경로 | 미래의 독립 검증 표시 전에 실행 영수증과 분리된 외부 검토 경로 확인 | 기존 개념 존재; 외부 검토 미확인 |
+| [위트레흐트대학교 — ASReview](https://github.com/asreview/asreview) | 사람이 판정한 문헌을 보존하며 능동학습으로 선별 우선순위를 조정 | 고정된 선행연구 질문 하나에 포함·제외·누락 점검을 시범 적용; AI 요약만으로 포화 선언 금지 | 미실행 |
+| [Sakana AI — AI Scientist](https://github.com/SakanaAI/AI-Scientist) 및 [공개 실패 사례](https://sakana.ai/ai-scientist/) | 자율 실험·논문 생성과 실행시간 제약 수정·불공정 기준선 비교 실패 사례 | 후보 에이전트가 평가기·실행권한을 바꾸지 못하도록 분리하고 실패·예산 초과 보존; 논문 생성은 검증 성과로 계산하지 않음 | 부정적 설계 교훈 |
+| [Xiangyue Zhang — Deep Researcher Agent](https://github.com/Xiangyue-Zhang/auto-deep-researcher-24x7) | 제한된 기억·장기 실험·실패/취소/시간초과 상태 관리 | 예약 실행, 도구 호출 성공, 과학적 결과 확인을 구별하고 실행 실패를 증거 상태로 보존 | 개념 비교만 |
+
+**최소 판별 검사 한 개:** 기존 E009 사전등록 부정적 결과의 커밋과 채점 규칙을 먼저 고정한 뒤, 해당 연구와 무관한 검토자 또는 별도 제약된 실행자가 공개 링크만으로 찾아 재실행하게 한다. 실제 독립성·성공 여부에 따라 `REPRODUCED_BY_PROJECT_LINEAGE`, `INDEPENDENT_IMPLEMENTATION`, `FAILED`, `UNKNOWN`을 구별한다. 이 비교 작업 자체가 그 검사를 **실행한 것은 아니다**.
+
+**실패 기준:** 기존 대화 내용을 수동 복원해야 함, 정확한 입력·코드·커밋 누락, 평가기 변경, 부정적 결과 선택적 누락, 외부 저작권·권리 불명확, 독립 복제의 허위 표시. 저장소 인기·자체 성과 보고·CI 통과만으로 새 에이전트 플랫폼을 승격하지 않는다. 이 기록은 외부 코드·데이터셋을 복사하지 않는다.

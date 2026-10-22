@@ -53,3 +53,21 @@ jobs:
           print('Scope: deterministic PROJECT-LINEAGE posthoc synthetic audit, not external or empirical validation')
           PY
           fi
+
+      - name: Detect non-nested E009 policies without altering frozen result
+        run: |
+          python experiments/e009/policy_identifiability_audit.py --self-test > /tmp/e009-policy-identifiability.json
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          x=json.loads(Path('/tmp/e009-policy-identifiability.json').read_text())
+          assert x['status']=='PROJECT_LINEAGE_POSTHOC_LOGIC_DIAGNOSTIC_NOT_INDEPENDENT_VALIDATION'
+          assert x['claims_incremental_feature_value'] is False
+          assert x['original_E009_benchmark_modified'] is False
+          assert x['negative_control_rejected'] is True
+          assert x['non_nestedness_witness']['minimal4_action']=='BLOCK'
+          assert x['non_nestedness_witness']['project_v3_action']=='EXPERIMENT'
+          assert x['stress_observation_endpoint_sensitivity']['unique_stress_decisions_per_policy']==3200
+          print('E009 POLICY IDENTIFIABILITY DIAGNOSTIC PASS: feature-only attribution invalid; frozen E009 preserved.')
+          print(json.dumps(x['stress_observation_endpoint_sensitivity'],sort_keys=True))
+          PY
