@@ -1,0 +1,211 @@
+{
+  "schema": "pi-ccph-source-audit/v0.1",
+  "date": "2026-10-16",
+  "status": "PROJECT_ASSISTED_OPEN_PAGE_AUDIT_INTERNAL_EXPLORATORY_ONLY",
+  "canonical_source": "research/CCPH_RESEARCH_ATLAS_EN.md + research/CCPH_RESEARCH_ATLAS_KO.md",
+  "scope": "Purposive six-case subset of existing public CP64-CP79; 5 corrected case interpretations and 1 intact comparator (CP66). Not a random sample or a new outcome dataset.",
+  "methods": {
+    "existing_baseline": "W3C PROV-O-style qualified attribution/version source with applicable NISO CRediT roles and unrestricted full-source free-text notes; no impoverished control.",
+    "candidate": "Same facts and source access with structured CCPH event/unknown/adverse/attrition/alternative-path/privacy labels.",
+    "observed_correction_count": 5,
+    "original_texts_retained_in_git_history": true,
+    "baseline_underperformance": "NOT_ESTIMATED",
+    "ccph_information_advantage": "NOT_ESTIMATED",
+    "blindness": "NONE_PREVIOUSLY_EXPOSED",
+    "independent_adjudicator": "NOT_OBTAINED",
+    "human_reviewer_minutes": "NOT_MEASURED",
+    "monetary_cost": "NOT_MEASURED",
+    "counterfactual_effects": "NOT_IDENTIFIED",
+    "long_term_coexistence_effect": "NOT_TESTED",
+    "publication_boundary": "The shared text contains no private individual-level records. Original publications retain their authors' rights. Source pages are linked rather than reproduced."
+  },
+  "prior_art": [
+    {
+      "name": "W3C PROV-O",
+      "url": "https://www.w3.org/TR/prov-o/"
+    },
+    {
+      "name": "ANSI/NISO CRediT",
+      "url": "https://credit.niso.org/contributor-roles-defined/"
+    },
+    {
+      "name": "Selective Labels",
+      "url": "https://doi.org/10.1145/3097983.3098066"
+    }
+  ],
+  "records": [
+    {
+      "id": "CP64",
+      "source_url": "https://blog.bluedot.org/p/2022-ai-alignment-course-impact",
+      "public_page_pinpoint": "Introduction / Impact",
+      "source_design_type": "operator_self_report",
+      "initial_audit_status": "ASSISTANT_PRIMARY_PAGE_REVIEW_NOT_INDEPENDENT",
+      "editorial_change": "changed",
+      "source_supported_paraphrase": "342 offers, 18 initial, 123 follow-up; 105 difference is not causal; 20 additional is operator counterfactual",
+      "strongest_limitation": "No participant-level causal increment known",
+      "atlas_row_anchor": {
+        "en": "342 offers to join",
+        "ko": "342명에게 참여를 제안"
+      },
+      "baseline_fair_access": {
+        "primary_url": "https://blog.bluedot.org/p/2022-ai-alignment-course-impact",
+        "claim_text_available": "342 offers, 18 initial, 123 follow-up; 105 difference is not causal; 20 additional is operator counterfactual",
+        "source_limit_available": "No participant-level causal increment known",
+        "free_text_notes_allowed": true,
+        "structured_provenance_allowed": true
+      },
+      "ccph_candidate_fields": {
+        "relation_to_baseline": "ADDITIONAL_LABELS_ONLY_NOT_NEW_SOURCE_FACTS",
+        "field_example": "offers_not_completions",
+        "missing_or_counterfactual_truth": "UNKNOWN_WHEN_NOT_IDENTIFIED",
+        "public_private_scope": "PUBLIC_PAGE_ONLY"
+      },
+      "atlas_existing_link": "https://blog.bluedot.org/p/2022-ai-alignment-course-impact"
+    },
+    {
+      "id": "CP66",
+      "source_url": "https://www.nber.org/papers/w27834",
+      "public_page_pinpoint": "Abstract; U.S. Department of Labor CLEAR four-year and two-year profiles",
+      "source_design_type": "randomized_scholarship_subgroups",
+      "initial_audit_status": "ASSISTANT_PRIMARY_PAGE_REVIEW_NOT_INDEPENDENT",
+      "editorial_change": "retained",
+      "source_supported_paraphrase": "~8pp BA completion in four-year-intent subgroup; CLEAR moderate rating; two-year-intent contrast no statistically significant education/skills gains",
+      "strongest_limitation": "No formal between-subgroups test; no independent downstream invention outcomes",
+      "atlas_row_anchor": {
+        "en": "moderate",
+        "ko": "인과증거 중간 등급"
+      },
+      "baseline_fair_access": {
+        "primary_url": "https://www.nber.org/papers/w27834",
+        "claim_text_available": "~8pp BA completion in four-year-intent subgroup; CLEAR moderate rating; two-year-intent contrast no statistically significant education/skills gains",
+        "source_limit_available": "No formal between-subgroups test; no independent downstream invention outcomes",
+        "free_text_notes_allowed": true,
+        "structured_provenance_allowed": true
+      },
+      "ccph_candidate_fields": {
+        "relation_to_baseline": "ADDITIONAL_LABELS_ONLY_NOT_NEW_SOURCE_FACTS",
+        "field_example": "heterogeneous_subgroups_and_attrition",
+        "missing_or_counterfactual_truth": "UNKNOWN_WHEN_NOT_IDENTIFIED",
+        "public_private_scope": "PUBLIC_PAGE_ONLY"
+      },
+      "atlas_existing_link": "https://www.nber.org/papers/w27834"
+    },
+    {
+      "id": "CP69",
+      "source_url": "https://www.aeaweb.org/articles?id=10.1257/aer.20150572",
+      "public_page_pinpoint": "Abstract",
+      "source_design_type": "random_offer_vs_movers",
+      "initial_audit_status": "ASSISTANT_PRIMARY_PAGE_REVIEW_NOT_INDEPENDENT",
+      "editorial_change": "changed",
+      "source_supported_paraphrase": "Younger-than-13 moves favorable; adolescent moves slightly negative; assignment to offer differs from take-up",
+      "strongest_limitation": "Age/selection contrast not universal mobility effect",
+      "atlas_row_anchor": {
+        "en": "adolescent moves",
+        "ko": "청소년기 이주"
+      },
+      "baseline_fair_access": {
+        "primary_url": "https://www.aeaweb.org/articles?id=10.1257/aer.20150572",
+        "claim_text_available": "Younger-than-13 moves favorable; adolescent moves slightly negative; assignment to offer differs from take-up",
+        "source_limit_available": "Age/selection contrast not universal mobility effect",
+        "free_text_notes_allowed": true,
+        "structured_provenance_allowed": true
+      },
+      "ccph_candidate_fields": {
+        "relation_to_baseline": "ADDITIONAL_LABELS_ONLY_NOT_NEW_SOURCE_FACTS",
+        "field_example": "assignment_exposure_age",
+        "missing_or_counterfactual_truth": "UNKNOWN_WHEN_NOT_IDENTIFIED",
+        "public_private_scope": "PUBLIC_PAGE_ONLY"
+      },
+      "atlas_existing_link": "https://doi.org/10.1257/aer.20150572"
+    },
+    {
+      "id": "CP73",
+      "source_url": "https://www.aeaweb.org/articles?id=10.1257/aeri.20190224",
+      "public_page_pinpoint": "Abstract",
+      "source_design_type": "randomized_longitudinal",
+      "initial_audit_status": "ASSISTANT_PRIMARY_PAGE_REVIEW_NOT_INDEPENDENT",
+      "editorial_change": "changed",
+      "source_supported_paraphrase": "Income/employment/consumption converge by year nine while skilled work/durable assets show lasting differences",
+      "strongest_limitation": "Convergence of some outcomes does not imply no lasting effect anywhere",
+      "atlas_row_anchor": {
+        "en": "durable assets and skilled work",
+        "ko": "내구재 자산과 숙련노동"
+      },
+      "baseline_fair_access": {
+        "primary_url": "https://www.aeaweb.org/articles?id=10.1257/aeri.20190224",
+        "claim_text_available": "Income/employment/consumption converge by year nine while skilled work/durable assets show lasting differences",
+        "source_limit_available": "Convergence of some outcomes does not imply no lasting effect anywhere",
+        "free_text_notes_allowed": true,
+        "structured_provenance_allowed": true
+      },
+      "ccph_candidate_fields": {
+        "relation_to_baseline": "ADDITIONAL_LABELS_ONLY_NOT_NEW_SOURCE_FACTS",
+        "field_example": "negative_and_remaining_positive",
+        "missing_or_counterfactual_truth": "UNKNOWN_WHEN_NOT_IDENTIFIED",
+        "public_private_scope": "PUBLIC_PAGE_ONLY"
+      },
+      "atlas_existing_link": "https://doi.org/10.1257/aeri.20190224"
+    },
+    {
+      "id": "CP76",
+      "source_url": "https://www.nature.com/articles/s41467-019-12189-3",
+      "public_page_pinpoint": "Abstract; Results: Future career impact; Results: On the screening mechanism",
+      "source_design_type": "threshold_based_observational",
+      "initial_audit_status": "ASSISTANT_PRIMARY_PAGE_REVIEW_NOT_INDEPENDENT",
+      "editorial_change": "changed",
+      "source_supported_paraphrase": "Near misses experience higher attrition; selected survivors have higher-impact publications; authors report tests beyond pure survivor screening",
+      "strongest_limitation": "Not full-cohort effect or reason to generally refuse grants",
+      "atlas_row_anchor": {
+        "en": "not explained solely by survivor screening",
+        "ko": "순수 생존자 선별만으로 설명되지"
+      },
+      "baseline_fair_access": {
+        "primary_url": "https://www.nature.com/articles/s41467-019-12189-3",
+        "claim_text_available": "Near misses experience higher attrition; selected survivors have higher-impact publications; authors report tests beyond pure survivor screening",
+        "source_limit_available": "Not full-cohort effect or reason to generally refuse grants",
+        "free_text_notes_allowed": true,
+        "structured_provenance_allowed": true
+      },
+      "ccph_candidate_fields": {
+        "relation_to_baseline": "ADDITIONAL_LABELS_ONLY_NOT_NEW_SOURCE_FACTS",
+        "field_example": "attrition_and_screening_beyond",
+        "missing_or_counterfactual_truth": "UNKNOWN_WHEN_NOT_IDENTIFIED",
+        "public_private_scope": "PUBLIC_PAGE_ONLY"
+      },
+      "atlas_existing_link": "https://doi.org/10.1038/s41467-019-12189-3"
+    },
+    {
+      "id": "CP77",
+      "source_url": "https://www.sciencedirect.com/science/article/pii/S0272775721001321",
+      "public_page_pinpoint": "Highlights; Abstract",
+      "source_design_type": "randomized_recruitment",
+      "initial_audit_status": "ASSISTANT_PRIMARY_PAGE_REVIEW_NOT_INDEPENDENT",
+      "editorial_change": "changed",
+      "source_supported_paraphrase": "Disadvantaged students' recruitment shifts without graduation-rate gain; advantaged subgroup has minor negative estimated outcomes",
+      "strongest_limitation": "Student displacement is not automatically new net graduation",
+      "atlas_row_anchor": {
+        "en": "advantaged students",
+        "ko": "유리한 경제조건 집단"
+      },
+      "baseline_fair_access": {
+        "primary_url": "https://www.sciencedirect.com/science/article/pii/S0272775721001321",
+        "claim_text_available": "Disadvantaged students' recruitment shifts without graduation-rate gain; advantaged subgroup has minor negative estimated outcomes",
+        "source_limit_available": "Student displacement is not automatically new net graduation",
+        "free_text_notes_allowed": true,
+        "structured_provenance_allowed": true
+      },
+      "ccph_candidate_fields": {
+        "relation_to_baseline": "ADDITIONAL_LABELS_ONLY_NOT_NEW_SOURCE_FACTS",
+        "field_example": "heterogeneous_nonrecipient_and_negative",
+        "missing_or_counterfactual_truth": "UNKNOWN_WHEN_NOT_IDENTIFIED",
+        "public_private_scope": "PUBLIC_PAGE_ONLY"
+      },
+      "atlas_existing_link": "https://doi.org/10.1016/j.econedurev.2021.102221"
+    }
+  ],
+  "reassessment": {
+    "retain": "No claim of added accuracy until independent blinded comparison.",
+    "expand": "Freeze new cases and obtain independent source-grounded annotation with balanced budgets, privacy/rights review.",
+    "stop": "If strong baseline matches CCPH at less cost or CCPH raises unsupported causal attribution, narrow or drop added fields."
+  }
+}
