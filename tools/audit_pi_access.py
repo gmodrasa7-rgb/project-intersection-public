@@ -137,7 +137,11 @@ def self_test():
         ({POLICY: base[POLICY].replace("issues/new", "contact-private", 2)}, "PRIVACY_REPORTING_AND_LIMITS_MISSING"),
         ({EN: base[EN].replace("[English claim-by-claim public evidence index]", "[x]", 1)}, "NONDESCRIPTIVE_LABEL"),
         ({KO: base[KO].replace("<!-- PI-LANGUAGE: ko -->", "<!-- PI-LANGUAGE: xx -->", 1)}, "LANGUAGE_DECLARATION_MISSING"),
-        ({README: base[README].replace("experiments/e009/RESULT_EN.md", "experiments/e009/BAD.md", 1)}, "NEGATIVE_EVIDENCE_HIDDEN"),
+        # Mutate the checked detailed opening, not the earlier founding preface.
+        ({README: base[README].replace(
+            "**Contrary evidence visible before expanding:** [E009](experiments/e009/RESULT_EN.md)",
+            "**Contrary evidence visible before expanding:** [E009](experiments/e009/BAD.md)", 1)},
+         "NEGATIVE_EVIDENCE_HIDDEN"),
     ]
     for overrides, expected in mutations:
         issues = find_errors(overrides)
