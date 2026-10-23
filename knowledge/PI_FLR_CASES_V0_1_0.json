@@ -1,8 +1,8 @@
 {
   "registry_id": "PI-FLR",
   "schema_version": "0.1.0",
-  "release_version": "0.6.0",
-  "as_of": "2026-10-22",
+  "release_version": "0.7.0",
+  "as_of": "2026-10-24",
   "korean_name": "오류·학습·복구 재귀원장",
   "english_name": "Failure–Learning–Repair Registry",
   "parent_protocol": "PI-RAMP",
@@ -108,6 +108,13 @@
       "detector": "tools/pi_flr_replay_gate.py::git_changed_paths;tools/pi_flr_replay_gate.py::planned_replay",
       "workflow": ".github/workflows/pi-flr-integrity.yml",
       "mutation_test": "test_regression_unmapped_material_change_blocks"
+    },
+    {
+      "id": "FLR-C13",
+      "title": "Scheduled watcher run gaps and freshness are measured from actual GitHub metadata, not inferred from cron declaration or green CI",
+      "detector": "tools/pi_flr_watch.py::schedule_observability",
+      "workflow": ".github/workflows/pi-flr-watch.yml",
+      "mutation_test": "test_regression_schedule_gap_not_hidden"
     }
   ],
   "cases": [
@@ -680,6 +687,43 @@
           "kind": "LIMITATION_RECORDED",
           "evidence_url": "https://github.com/gmodrasa7-rgb/project-intersection-public/pull/348",
           "note": "Observable static coverage gap recorded; remedy not called merged, field-verified or universally sound before new CI receipts."
+        }
+      ]
+    },
+    {
+      "id": "FLR-0011",
+      "title_ko": "매시간 오류 감시 선언과 실제 예약 실행 간격 불일치가 보고되지 않음",
+      "title_en": "Hourly watcher declaration concealed multi-hour gaps between observed scheduled runs",
+      "category": "GUARD_COVERAGE",
+      "root_cause": "The watcher validates the hourly cron syntax but does not calculate actual inter-run timing or freshness from GitHub Actions metadata. This is a missing observation control, not a proven diagnosis of GitHub scheduler behavior.",
+      "trigger": "Review of PI-FLR scheduled runs on 2026-10-23 revealed successful jobs several hours apart despite the declared 17 * * * * schedule.",
+      "observable": "Scheduled run 39962281077 began 2026-10-23 13:34:03 UTC and run 40003451698 began 18:27:37 UTC, 293.57 minutes apart; both succeeded. Their success does not certify hourly observation coverage.",
+      "impact": "A green watcher run could be misread as evidence that the repository was continuously checked hourly while substantial unobserved intervals remained.",
+      "counterfactual": "Calculate scheduled-run start gaps and current freshness independently of job conclusions, label truncated/insufficient samples UNKNOWN, and never infer scheduler root cause or an externally verified heartbeat.",
+      "repair": "Candidate v0.7.0 adds a bounded schedule-observability field and adversarial replay for green runs spaced hours apart. Deployment effectiveness and independent liveness are not yet observed.",
+      "preventive_control_ids": [
+        "FLR-C13"
+      ],
+      "regression_test": "test_regression_schedule_gap_not_hidden",
+      "limitations": [
+        "Observed start gaps do not prove the precise number of missing cron triggers or why they did not appear.",
+        "A self-watcher cannot detect its own indefinite silence; an independently operated external heartbeat remains unavailable.",
+        "GitHub API run-list limits and rerun history can make cadence observations incomplete; no false certification of reliable hourly coverage is allowed."
+      ],
+      "events": [
+        {
+          "seq": 1,
+          "date": "2026-10-24",
+          "kind": "FAILURE_OBSERVED",
+          "evidence_url": "https://github.com/gmodrasa7-rgb/project-intersection-public/actions/runs/40003451698",
+          "note": "Successful Oct 23 UTC scheduled watcher run was 293.57 minutes after the previous successful scheduled run 39962281077, not an observed 60-minute interval."
+        },
+        {
+          "seq": 2,
+          "date": "2026-10-24",
+          "kind": "ROOT_CAUSE_REVIEWED",
+          "evidence_url": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/tools/pi_flr_watch.py",
+          "note": "Current source checks scheduled cron declaration but has no measured schedule freshness or inter-run gap control; provider reason for interval gaps remains unknown."
         }
       ]
     }

@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
-"""PI-FLR 0.2.1: bounded, read-only GitHub Actions failure signal clustering.
+"""PI-FLR watch: bounded, read-only failure and schedule-observability signals.
 
 Failure step ≠ diagnosed root cause. Green after red ≠ proven remedy.
+An hourly cron declaration ≠ an observed hourly execution cadence.
 Never reads Gmail, downloads logs, changes issues/commits, or closes cases.
 Only public numeric IDs, hash fingerprints and fixed allowlisted labels are exported.
 """
@@ -20,6 +21,9 @@ from urllib.request import Request, urlopen
 
 REPO = "gmodrasa7-rgb/project-intersection-public"
 API = "https://api.github.com/repos/" + REPO
+WATCH_NAME = "PI-FLR read-only failure signal watch"
+SCHEDULE_DECLARED_MINUTES = 60
+SCHEDULE_ATTENTION_THRESHOLD_MINUTES = 120
 KNOWN = {
     "PI-RISE synthetic-only integrity": ("PI_RISE", ["FLR-0002", "FLR-0005"]),
     "Public English/Korean language separation": ("LANGUAGE", ["FLR-0001", "FLR-0006"]),
@@ -67,6 +71,55 @@ def _signal(workflow_id, job_name, step_name, branch=""):
 
 def _family(name):
     return KNOWN.get(name, ("OTHER_UNCLASSIFIED", []))
+
+
+def schedule_observability(runs, *, now, limit_reached=False):
+    """Report observed start gaps, not assumed missed cron triggers or their cause.
+
+    A self-monitor cannot prove its own future liveness. The GitHub run-list
+    sample may be truncated, and even a green watcher job says nothing about
+    the intended number of schedule events that GitHub never created.
+    """
+    moment = _utc(now)
+    cutoff = moment - timedelta(hours=MAX_AGE_HOURS)
+    observed = []
+    for run in runs:
+        if not (run.get("name") == WATCH_NAME
+                and run.get("event") == "schedule"
+                and run.get("head_branch") == "main"):
+            continue
+        _number(run.get("id"))
+        started = _utc(run.get("created_at"))
+        _require(started <= moment + timedelta(minutes=5), "RUN_IN_FUTURE")
+        if started >= cutoff:
+            observed.append(started)
+    observed.sort()
+    gaps = [(b-a).total_seconds()/60 for a, b in zip(observed, observed[1:])]
+    largest = round(max(gaps), 2) if gaps else None
+    age = round(max(0, (moment-observed[-1]).total_seconds()/60), 2) if observed else None
+    over_threshold = ((largest is not None and largest > SCHEDULE_ATTENTION_THRESHOLD_MINUTES)
+                      or (age is not None and age > SCHEDULE_ATTENTION_THRESHOLD_MINUTES))
+    if over_threshold:
+        state = "OBSERVED_GAP_OR_STALENESS"
+    elif limit_reached:
+        state = "UNKNOWN_TRUNCATED_RUN_SAMPLE"
+    elif len(observed) < 2:
+        state = "UNKNOWN_INSUFFICIENT_SCHEDULE_RUNS"
+    else:
+        state = "NO_EXCESS_GAP_IN_BOUNDED_SAMPLE"
+    return {
+        "state": state,
+        "declared_interval_minutes": SCHEDULE_DECLARED_MINUTES,
+        "attention_threshold_minutes": SCHEDULE_ATTENTION_THRESHOLD_MINUTES,
+        "sample_window_hours": MAX_AGE_HOURS,
+        "observed_scheduled_run_count": len(observed),
+        "latest_observed_start_utc": observed[-1].isoformat() if observed else None,
+        "minutes_since_latest_observed_start": age,
+        "largest_observed_interrun_gap_minutes": largest,
+        "scheduler_cause": "UNKNOWN",
+        "independent_heartbeat_verified": False,
+        "no_guarantee_of_complete_execution_history": True,
+    }
 
 
 def build_report(runs, jobs_by_run, *, now, limit_reached=False):
@@ -191,7 +244,7 @@ def build_report(runs, jobs_by_run, *, now, limit_reached=False):
     public_groups = sorted(groups.values(),
                            key=lambda g: (-g["run_count"], g["fingerprint_sha256"]))
     return {
-        "schema": "PI-FLR-WATCH/0.2.1",
+        "schema": "PI-FLR-WATCH/0.3.0",
         "scope": "RECENT_BOUNDED_GITHUB_ACTIONS_METADATA_ONLY",
         "repository": REPO,
         "window_hours": MAX_AGE_HOURS,
@@ -206,6 +259,8 @@ def build_report(runs, jobs_by_run, *, now, limit_reached=False):
             "BOUNDED_WINDOW_NOT_FULL_REPOSITORY_HISTORY"),
         "no_emails_or_raw_logs_exported": True,
         "automatic_closure_enabled": False,
+        "schedule_observability": schedule_observability(
+            runs, now=now, limit_reached=limit_reached),
         "groups": public_groups,
     }
 
@@ -311,6 +366,10 @@ def main():
                        encoding="utf-8")
         print(json.dumps({k: v for k, v in report.items() if k != "groups"},
                          ensure_ascii=False, sort_keys=True))
+        if report["schedule_observability"]["state"] == "OBSERVED_GAP_OR_STALENESS":
+            print("::warning title=PI-FLR schedule observability::"
+                  "Observed scheduled-run gap or stale start exceeds 120 minutes; "
+                  "cause unknown, no independent heartbeat.")
         print("No automatic repair, case closure, private email export or root-cause inference.")
     except (WatchError, ValueError, OSError, KeyError, TypeError) as exc:
         print("PI_FLR_WATCH_FAIL:" + str(exc), file=sys.stderr)
