@@ -40,6 +40,7 @@ RULE_CHECKS={
     "R06":("FLR_META","FLR_MUTANTS"),
     "R07":("FLR_META","FLR_ALL_TESTS"),
     "R08":("FLR_META","FLR_ALL_TESTS"),
+    "R09":("FLR_META","FLR_ALL_TESTS"),
 }
 
 

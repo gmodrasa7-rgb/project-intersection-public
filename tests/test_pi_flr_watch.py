@@ -28,6 +28,67 @@ def job(n, *, step="Unit regression tests", conclusion="failure"):
 
 
 class WatchTests(unittest.TestCase):
+    def test_schedule_gap_is_observed_even_when_each_job_is_green(self):
+        a = run(101, name=watch.WATCH_NAME, conclusion="success",
+                created_at="2026-10-20T16:00:00Z")
+        b = run(102, name=watch.WATCH_NAME, conclusion="success",
+                created_at="2026-10-20T21:00:00Z")
+        for item in (a, b):
+            item["event"] = "schedule"
+        result = watch.build_report([a,b],{},now=NOW)
+        cadence = result["schedule_observability"]
+        self.assertEqual(result["failure_fingerprint_count"], 0)
+        self.assertEqual(cadence["state"], "OBSERVED_GAP_OR_STALENESS")
+        self.assertEqual(cadence["largest_observed_interrun_gap_minutes"], 300)
+        self.assertEqual(cadence["scheduler_cause"], "UNKNOWN")
+        self.assertFalse(cadence["independent_heartbeat_verified"])
+
+    def test_push_and_manual_runs_cannot_fill_schedule_gaps(self):
+        earlier = run(101, name=watch.WATCH_NAME, conclusion="success",
+                      created_at="2026-10-20T16:00:00Z")
+        later = run(102, name=watch.WATCH_NAME, conclusion="success",
+                    created_at="2026-10-20T23:30:00Z")
+        irrelevant = run(103, name=watch.WATCH_NAME, conclusion="success",
+                         created_at="2026-10-20T20:00:00Z")
+        earlier["event"] = later["event"] = "schedule"
+        irrelevant["event"] = "workflow_dispatch"
+        cadence = watch.build_report([earlier, irrelevant, later], {}, now=NOW)[
+            "schedule_observability"]
+        self.assertEqual(cadence["observed_scheduled_run_count"], 2)
+        self.assertEqual(cadence["largest_observed_interrun_gap_minutes"], 450)
+
+    def test_one_recent_run_is_not_hourly_assurance(self):
+        recent = run(101, name=watch.WATCH_NAME, conclusion="success",
+                     created_at="2026-10-20T23:30:00Z")
+        recent["event"] = "schedule"
+        c = watch.build_report([recent], {}, now=NOW)["schedule_observability"]
+        self.assertEqual(c["state"], "UNKNOWN_INSUFFICIENT_SCHEDULE_RUNS")
+        self.assertIsNone(c["largest_observed_interrun_gap_minutes"])
+
+    def test_truncated_run_list_never_certifies_complete_cadence(self):
+        a = run(101, name=watch.WATCH_NAME, conclusion="success",
+                created_at="2026-10-20T22:00:00Z")
+        b = run(102, name=watch.WATCH_NAME, conclusion="success",
+                created_at="2026-10-20T23:00:00Z")
+        for item in (a,b):
+            item["event"]="schedule"
+        c=watch.build_report([a,b], {}, now=NOW,limit_reached=True)[
+            "schedule_observability"]
+        self.assertEqual(c["state"], "UNKNOWN_TRUNCATED_RUN_SAMPLE")
+
+    def test_no_schedule_runs_is_unknown_not_no_gaps(self):
+        c=watch.build_report([], {}, now=NOW)["schedule_observability"]
+        self.assertEqual(c["state"], "UNKNOWN_INSUFFICIENT_SCHEDULE_RUNS")
+
+    def test_in_progress_scheduled_run_proves_trigger_not_success(self):
+        a=run(101, name=watch.WATCH_NAME, conclusion=None,
+              created_at="2026-10-20T23:30:00Z")
+        a["event"]="schedule"
+        a["status"]="in_progress"
+        c=watch.build_report([a], {}, now=NOW)["schedule_observability"]
+        self.assertEqual(c["observed_scheduled_run_count"],1)
+        self.assertEqual(c["state"],"UNKNOWN_INSUFFICIENT_SCHEDULE_RUNS")
+
     def test_clean_empty_window_is_no_failure_not_assured_completeness(self):
         out = watch.build_report([], {}, now=NOW)
         self.assertEqual(out["failure_fingerprint_count"], 0)
