@@ -28,7 +28,22 @@ ACTION_FIELDS = {"id", "case_id", "control_id", "priority", "action_class",
                  "eligible_denominator_ko", "recurrence_numerator_ko",
                  "adverse_effects_ko", "rollback_ko"}
 OBS_FIELDS = {"id", "action_id", "unit", "status", "window", "eligible", "recurrences",
-              "false_blocks", "human_review_minutes", "evidence_urls", "limitation"}
+              "false_blocks", "human_review_minutes", "evidence_urls", "event_census",
+              "census_coverage", "limitation"}
+CENSUS_FIELDS = {"event_id", "unit", "outcome", "evidence_url"}
+FAIL_OUTCOMES = {"FLR-A001": "FALSE_GREEN_OBSERVED",
+                 "FLR-A002": "FALSE_PASS_UNMAPPED_PATH_OBSERVED"}
+OK_OUTCOMES = {"FLR-A001": "NO_FALSE_GREEN_OBSERVED",
+               "FLR-A002": "NO_FALSE_PASS_UNMAPPED_PATH_OBSERVED"}
+CENSUS_POLICY = {
+    "enumeration": "ENUMERATED_EVENTS_REQUIRED_NOT_FREE_FORM_COUNTS",
+    "population_coverage": "UNKNOWN_NOT_PROVEN_COMPLETE",
+    "classification_grade": "REPORTED_EVENT_LABEL_NOT_INDEPENDENTLY_VERIFIED",
+    "github_run_proof": "RUN_EXISTS_NOT_EVENT_OUTCOME_ATTESTED",
+    "rate_permission": "NOT_PERMITTED_UNTIL_INDEPENDENT_FRAME_AUDIT",
+    "human_review_time": "UNKNOWN_UNLESS_DIRECTLY_MEASURED",
+    "field_effectiveness_certified": False,
+}
 RATE_UNITS = {"FLR-A001": "RELEASE_READINESS_DECISION",
               "FLR-A002": "MATERIAL_CHANGED_PATH"}
 
@@ -99,10 +114,11 @@ def validate(data, registry, workflow, root=ROOT):
     require(set(data) == {"registry_id", "schema_version", "release_version",
                           "as_of", "classification", "language_order",
                           "privacy_policy", "source_limit", "sources", "intersection",
-                          "pilot_actions", "observations", "metric_contracts", "status_policy"},
+                          "pilot_actions", "observations", "metric_contracts",
+                          "census_policy", "status_policy"},
             "ACTION_SCHEMA_DRIFT")
     require(data["registry_id"] == "PI-FLR-ACTION-EFFECTIVENESS" and
-            data["schema_version"] == "0.2.0", "ACTION_IDENTITY_CHANGED")
+            data["schema_version"] == "0.3.0", "ACTION_IDENTITY_CHANGED")
     _version(data["release_version"])
     require(data["language_order"] == ["English primary", "Korean secondary"] and
             data["classification"] == "CROSS_INDUSTRY_DESIGN_TRANSFER_NOT_FIELD_EFFECTIVENESS",
@@ -193,7 +209,11 @@ def validate(data, registry, workflow, root=ROOT):
                     "INCOMPLETE_RATE_CONTRACT")
         contracts[action_id] = metric
     require(set(contracts) == set(RATE_UNITS), "RATE_CONTRACTS_INCOMPLETE")
+    # A valid GitHub run only proves context existence, NOT that a release
+    # decision/path event occurred, nor that the full population was sampled.
+    require(data["census_policy"] == CENSUS_POLICY, "CENSUS_PROVENANCE_OVERCLAIM")
     observations = set()
+    seen_events = set()
     for obs in data["observations"]:
         require(set(obs) == OBS_FIELDS, "OBSERVATION_SCHEMA_DRIFT")
         require(obs["id"] not in observations and
@@ -218,6 +238,38 @@ def validate(data, registry, workflow, root=ROOT):
         require(obs["evidence_urls"] and all(_trusted_url(x, {"github.com"}) and
                 urlsplit(x).path.startswith("/gmodrasa7-rgb/project-intersection-public/")
                 for x in obs["evidence_urls"]), "UNVERIFIABLE_OBSERVATION_RECEIPT")
+        require(obs["census_coverage"] == "BOUNDED_SAMPLE_POPULATION_UNKNOWN",
+                "CENSUS_POPULATION_FALSE_COMPLETENESS")
+        events = obs["event_census"]
+        require(type(events) is list and len(events) == obs["eligible"],
+                "CENSUS_COUNT_MISMATCH")
+        local_ids = set()
+        failures = 0
+        for event in events:
+            require(type(event) is dict and set(event) == CENSUS_FIELDS,
+                    "CENSUS_EVENT_SCHEMA")
+            eid = event["event_id"]
+            require(type(eid) is str and
+                    re.fullmatch(r"[A-Za-z0-9][A-Za-z0-9:_./@-]{0,127}", eid),
+                    "CENSUS_EVENT_ID_INVALID")
+            key = (obs["action_id"], eid)
+            require(key not in local_ids and key not in seen_events,
+                    "CENSUS_DUPLICATE_OR_REUSED_EVENT")
+            local_ids.add(key)
+            seen_events.add(key)
+            require(event["unit"] == obs["unit"],
+                    "CENSUS_UNIT_MISMATCH")
+            require(event["outcome"] in
+                    {FAIL_OUTCOMES[obs["action_id"]],
+                     OK_OUTCOMES[obs["action_id"]]},
+                    "CENSUS_OUTCOME_INCOMPATIBLE")
+            failures += (event["outcome"] == FAIL_OUTCOMES[obs["action_id"]])
+            require(event["evidence_url"] in obs["evidence_urls"],
+                    "CENSUS_EVENT_MISSING_SOURCE")
+        require(failures == obs["recurrences"], "CENSUS_OUTCOME_COUNT_MISMATCH")
+        require(set(obs["evidence_urls"]) ==
+                {event["evidence_url"] for event in events},
+                "CENSUS_UNUSED_OR_DUPLICATE_SOURCE")
         for url in obs["evidence_urls"]:
             require(_verified_github_run(url, obs["window"]),
                     "OBSERVED_RECEIPT_REMOTE_UNVERIFIED_NOT_ABSENT")
@@ -237,6 +289,8 @@ def validate(data, registry, workflow, root=ROOT):
             "source_families": len(families), "intersections": len(intersection_ids),
             "pilot_actions": len(action_ids), "metric_contract_count": len(contracts),
             "rate_efficacy_certified": False,
+            "population_completeness_certified": False,
+            "census_event_count": len(seen_events),
             "untriaged_case_count": len(cases.keys() - mapped_cases),
             "observations": len(observations), "field_effectiveness_verified": 0}
 
