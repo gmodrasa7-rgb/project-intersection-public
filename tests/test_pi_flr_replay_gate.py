@@ -155,6 +155,29 @@ class ReplayGateTests(unittest.TestCase):
         p=rg.planned_replay(self.data,["tests/test_pi_flr_replay_gate.py"])
         self.assertEqual(p["check_ids"],["FLR_ALL_TESTS","FLR_META"])
 
+
+    def test_new_reports_receive_executable_link_and_language_inventory_checks(self):
+        plan=rg.planned_replay(self.data,["reports/PI_24H_RESEARCH_TRIAGE_2026-10-25_EN_KO.md"])
+        self.assertEqual(plan["check_ids"],["LANG_INVENTORY","NAV_LINKS"])
+        self.assertEqual(plan["unmapped_material_paths"],[])
+        self.assertIn("reports/PI_24H_RESEARCH_TRIAGE_2026-10-25_EN_KO.md",
+                      plan["matched_paths"])
+
+    def test_language_inventory_registry_not_silently_unmapped(self):
+        plan=rg.planned_replay(self.data,["knowledge/language-edition-register.json"])
+        self.assertEqual(plan["check_ids"],["FLR_META","LANG_INVENTORY"])
+        self.assertEqual(plan["unmapped_material_paths"],[])
+
+    def test_added_unknown_material_still_blocks_even_with_mapped_report(self):
+        plan=rg.planned_replay(self.data,[
+            "reports/PI_24H_RESEARCH_TRIAGE_2026-10-25_EN_KO.md",
+            "knowledge/NEW_UNREVIEWED_CLAIMS.json"])
+        self.assertEqual(plan["unmapped_material_paths"],
+                         ["knowledge/NEW_UNREVIEWED_CLAIMS.json"])
+        result=rg.execute(plan,run=lambda *a,**k:SimpleNamespace(returncode=0))
+        self.assertEqual(result["status"],"BLOCKED_UNMAPPED_MATERIAL")
+        self.assertEqual(len(result["executed"]),2)
+
     def test_delete_and_rename_both_ends_observed(self):
         transcript="D\0README.md\0R100\0research/old.md\0research/new.md\0"
         seen=[]

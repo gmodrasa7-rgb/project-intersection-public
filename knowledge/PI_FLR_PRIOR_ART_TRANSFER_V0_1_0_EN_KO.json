@@ -1,7 +1,7 @@
 {
   "id": "PI-FLR-PRIOR-ART-TRANSFER",
   "schema_version": "0.1.0",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "as_of": "2026-10-22",
   "scope": "PRIOR_ART_SYNTHESIS_AND_OPERATIONAL_CONTROL_NOT_EMPIRICAL_AI_SELF_IMPROVEMENT",
   "language_order": [
@@ -551,6 +551,42 @@
         "Test modifications re-run the FLR audit and mutation test suite",
         "Failure injection actually changes expected outcome",
         "No false-green changed-file coverage"
+      ]
+    },
+    {
+      "id": "R09",
+      "match": "reports/*.md",
+      "cases": [
+        "FLR-0007",
+        "FLR-0008",
+        "FLR-0010"
+      ],
+      "controls": [
+        "FLR-C05",
+        "FLR-C08",
+        "FLR-C12"
+      ],
+      "checkpoints": [
+        "Review report links and provenance limitations",
+        "Verify full language edition inventory and marked scope",
+        "Keep failed or unverified evidence visible; path checks are not field effectiveness"
+      ]
+    },
+    {
+      "id": "R10",
+      "match": "knowledge/language-edition-register.json",
+      "cases": [
+        "FLR-0008",
+        "FLR-0010"
+      ],
+      "controls": [
+        "FLR-C08",
+        "FLR-C12"
+      ],
+      "checkpoints": [
+        "Run whole-language inventory mutation self-test",
+        "Run PI-FLR structural audit for changed registry risk",
+        "Reject inventory or semantic equivalence overclaims"
       ]
     }
   ],
