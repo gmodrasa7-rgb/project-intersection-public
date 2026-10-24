@@ -29,6 +29,8 @@ class ActionGateTests(unittest.TestCase):
         report = self.validate(self.data)
         self.assertEqual(report["status"], "DESIGN_TRANSFER_ONLY_NOT_FIELD_VERIFIED")
         self.assertEqual(report["pilot_actions"], 2)
+        self.assertEqual(report["metric_contract_count"], 2)
+        self.assertFalse(report["rate_efficacy_certified"])
         self.assertEqual(report["untriaged_case_count"], len(self.registry["cases"]) - 2)
         self.assertEqual(report["field_effectiveness_verified"], 0)
 
@@ -71,6 +73,7 @@ class ActionGateTests(unittest.TestCase):
         d = copy.deepcopy(self.data)
         d["observations"].append({
             "id": "FLR-O0001", "action_id": "FLR-A001",
+                        "unit": "RELEASE_READINESS_DECISION",
             "status": "OBSERVED_NOT_EFFECTIVENESS_CERTIFIED", "window": "2026-10",
             "eligible": 0, "recurrences": 0, "false_blocks": None,
             "human_review_minutes": None,
@@ -82,6 +85,7 @@ class ActionGateTests(unittest.TestCase):
         d = copy.deepcopy(self.data)
         d["observations"].append({
             "id": "FLR-O0001", "action_id": "FLR-A001",
+                        "unit": "RELEASE_READINESS_DECISION",
             "status": "OBSERVED_NOT_EFFECTIVENESS_CERTIFIED", "window": "2026-10",
             "eligible": 5, "recurrences": 0, "false_blocks": None,
             "human_review_minutes": None, "evidence_urls": [],
@@ -111,6 +115,7 @@ class ActionGateTests(unittest.TestCase):
     def _sample_observation(self):
         return {
             "id": "FLR-O0001", "action_id": "FLR-A001",
+                        "unit": "RELEASE_READINESS_DECISION",
             "status": "OBSERVED_NOT_EFFECTIVENESS_CERTIFIED",
             "window": "2026-10", "eligible": 1, "recurrences": 0,
             "false_blocks": None, "human_review_minutes": None,
@@ -194,6 +199,48 @@ class ActionGateTests(unittest.TestCase):
                 "project-intersection-public/actions/runs/123", "2026-10"))
             self.assertFalse(gate._verified_github_run(url + "/attempts/1", "2026-10"))
             net.assert_not_called()
+
+
+    def test_former_workflow_count_denominator_is_rejected(self):
+        d = copy.deepcopy(self.data)
+        d["metric_contracts"][0]["denominator_unit"] = "WORKFLOW_CHECK"
+        self.reject(d, "INCOMMENSURATE_RATE_UNITS")
+
+    def test_mixed_unit_numerator_is_rejected(self):
+        d = copy.deepcopy(self.data)
+        d["metric_contracts"][0]["numerator_unit"] = "FAILED_RELEASE_CLAIM"
+        self.reject(d, "INCOMMENSURATE_RATE_UNITS")
+
+    def test_missing_metric_contract_and_legacy_mislabel_rejected(self):
+        d = copy.deepcopy(self.data)
+        d["metric_contracts"].pop()
+        self.reject(d, "RATE_CONTRACTS_INCOMPLETE")
+        d = copy.deepcopy(self.data)
+        d["metric_contracts"][0]["legacy_denominator_status"] = (
+            "COMPATIBLE_UNIT_NOT_FIELD_VALIDATED")
+        self.reject(d, "LEGACY_DENOMINATOR_MISLABELED")
+
+    def test_observation_must_use_action_specific_event_units(self):
+        d = copy.deepcopy(self.data)
+        obs = self._sample_observation()
+        obs["unit"] = "WORKFLOW_CHECK"
+        d["observations"].append(obs)
+        self.reject(d, "OBSERVATION_DENOMINATOR_UNIT_MISMATCH")
+        d = copy.deepcopy(self.data)
+        obs = self._sample_observation()
+        obs["action_id"] = "FLR-A002"
+        d["observations"].append(obs)
+        self.reject(d, "OBSERVATION_DENOMINATOR_UNIT_MISMATCH")
+
+    def test_metric_contract_history_is_append_only(self):
+        old = copy.deepcopy(self.data)
+        newer = copy.deepcopy(old)
+        newer["release_version"] = "0.3.0"
+        newer["metric_contracts"][0]["denominator_definition_ko"] = (
+            "워크플로 수로 계산하라 — 잘못된 단위 변경")
+        with self.assertRaisesRegex(gate.ActionError,
+                                    "ACTION_HISTORY_REWRITTEN"):
+            gate.compare_history(newer, old)
 
 
 if __name__ == "__main__":
