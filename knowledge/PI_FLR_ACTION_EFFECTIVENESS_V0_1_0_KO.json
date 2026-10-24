@@ -1,39 +1,52 @@
 {
   "registry_id": "PI-FLR-ACTION-EFFECTIVENESS",
-  "schema_version": "0.1.0",
-  "release_version": "0.1.0",
+  "schema_version": "0.2.0",
+  "release_version": "0.2.0",
   "as_of": "2026-10-24",
   "classification": "CROSS_INDUSTRY_DESIGN_TRANSFER_NOT_FIELD_EFFECTIVENESS",
-  "language_order": ["English primary", "Korean secondary"],
+  "language_order": [
+    "English primary",
+    "Korean secondary"
+  ],
   "privacy_policy": "공개 원장에는 원문 개인대화, 연락처, 건강·재정정보, 실명 제보를 넣지 않는다. 익명·기밀 보고 체계가 실제로 구현된 것으로 주장하지 않는다.",
   "source_limit": "산업별 실무지침의 교집합이며 PI-FLR 재발률 감소에 관한 독립 실험 증거는 아니다. 출처 수는 효과크기가 아니다.",
   "sources": [
     {
-      "id": "A01", "family": "IHI_NPSF_RCA2", "grade": "PRACTICE_FRAMEWORK",
+      "id": "A01",
+      "family": "IHI_NPSF_RCA2",
+      "grade": "PRACTICE_FRAMEWORK",
       "url": "https://www.ihi.org/library/tools/rca2-improving-root-cause-analyses-and-actions-prevent-harm",
       "transfer": "사고 분석 자체보다 원인을 겨냥한 조치와 조치 강도 분류에 중점",
       "limitation": "의료 안전 실무도구를 소프트웨어 연구 기록에 이전한 것일 뿐 효과의 직접 검증은 아니다."
     },
     {
-      "id": "A02", "family": "GOOGLE_SRE", "grade": "OPERATOR_PRIMARY",
+      "id": "A02",
+      "family": "GOOGLE_SRE",
+      "grade": "OPERATOR_PRIMARY",
       "url": "https://sre.google/workbook/postmortem-culture/",
       "transfer": "조치의 추적번호, 우선순위, 명료한 성공기준 및 시스템 원인 중심 복기",
       "limitation": "운영 경험 사례이며 PI-FLR에서 동일한 예방효과가 난다는 보장은 없다."
     },
     {
-      "id": "A03", "family": "FDA_CAPA", "grade": "REGULATOR_EDUCATION",
+      "id": "A03",
+      "family": "FDA_CAPA",
+      "grade": "REGULATOR_EDUCATION",
       "url": "https://www.fda.gov/training-and-continuing-education/cdrh-learn/corrective-and-preventive-actions-transcript",
       "transfer": "즉시 수정, 원인 제거, 재발 방지, 효과검증과 부작용 검토 분리",
       "limitation": "의료기기 제도 해설이며 PI-FLR에 해당 규제가 적용된다는 의미는 아니다."
     },
     {
-      "id": "A04", "family": "NASA_ASRS", "grade": "GOVERNMENT_OPERATIONAL_PRIMARY",
+      "id": "A04",
+      "family": "NASA_ASRS",
+      "grade": "GOVERNMENT_OPERATIONAL_PRIMARY",
       "url": "https://asrs.arc.nasa.gov/",
       "transfer": "피해 발생 전 위험 징후와 근접 실패를 비징벌적으로 접수하는 설계",
       "limitation": "NASA의 실제 기밀성·독립성 제도가 PI-FLR에 구현된 것은 아니다."
     },
     {
-      "id": "A05", "family": "NIST_AI_RMF", "grade": "VOLUNTARY_FRAMEWORK",
+      "id": "A05",
+      "family": "NIST_AI_RMF",
+      "grade": "VOLUNTARY_FRAMEWORK",
       "url": "https://airc.nist.gov/airmf-resources/airmf/5-sec-core/",
       "transfer": "사후 감시, 위험 노출, 잔여 위험, 영향을 받는 사람의 이의제기와 복구",
       "limitation": "권고적 프레임워크이며 실행 결과 또는 독립 감사의 인증서가 아니다."
@@ -41,45 +54,79 @@
   ],
   "intersection": [
     {
-      "id": "I01", "sources": ["A01", "A02", "A03"],
+      "id": "I01",
+      "sources": [
+        "A01",
+        "A02",
+        "A03"
+      ],
       "rule_ko": "교육·사과·문서 추가보다 원인에 작용하는 기술적 차단을 우선 검토하되, 통제 강도는 현장 효과가 아니다.",
       "counterexample_ko": "강한 자동 차단도 과잉 차단으로 유효한 연구를 막을 수 있다."
     },
     {
-      "id": "I02", "sources": ["A02", "A03", "A05"],
+      "id": "I02",
+      "sources": [
+        "A02",
+        "A03",
+        "A05"
+      ],
       "rule_ko": "조치 완료, CI 합격, 재발 위험 감소를 각각 독립 상태로 관리하고 분자·분모·관측 기간을 함께 보존한다.",
       "counterexample_ko": "관측 기간이나 노출 기회가 불명확하면 재발 0건도 효과 증거로 인정하지 않는다."
     },
     {
-      "id": "I03", "sources": ["A01", "A04", "A05"],
+      "id": "I03",
+      "sources": [
+        "A01",
+        "A04",
+        "A05"
+      ],
       "rule_ko": "실패 전 경고와 무피해 근접 실패도 기록하되 신고자의 안전·기밀·이탈권을 우선한다.",
       "counterexample_ko": "기밀 운영체계가 없는 공개 GitHub 원장은 익명 신고 창구로 사용하면 안 된다."
     },
     {
-      "id": "I04", "sources": ["A03", "A05", "A02"],
+      "id": "I04",
+      "sources": [
+        "A03",
+        "A05",
+        "A02"
+      ],
       "rule_ko": "부작용과 인간 검토 노동도 결과지표에 포함하고 복구 가능한 최소 변경을 선택한다.",
       "counterexample_ko": "일반적인 CI 시간만으로 사람의 노동비용이나 실질 위험 감소를 역산할 수 없다."
     }
   ],
   "pilot_actions": [
     {
-      "id": "FLR-A001", "case_id": "FLR-0009", "control_id": "FLR-C09", "priority": "P0",
-      "action_class": "AUTOMATED_BLOCKING_GUARD", "status": "CONTROL_MAPPED_EFFECT_NOT_OBSERVED",
+      "id": "FLR-A001",
+      "case_id": "FLR-0009",
+      "control_id": "FLR-C09",
+      "priority": "P0",
+      "action_class": "AUTOMATED_BLOCKING_GUARD",
+      "status": "CONTROL_MAPPED_EFFECT_NOT_OBSERVED",
       "target_failure_ko": "부분 녹색 CI를 전체 릴리스 성공으로 과장",
       "competing_explanation_ko": "실제 전체 검사 결과가 아닌 선언된 검사 목록이 불완전했을 가능성",
       "eligible_denominator_ko": "해당 릴리스 주장 전에 판정해야 할 모든 필수 워크플로와 검사 항목 수",
       "recurrence_numerator_ko": "누락·실패·대기 검사가 있는데도 성공으로 판정된 사례 수",
-      "adverse_effects_ko": ["검사 누락으로 인한 거짓 음성", "실행 지연 및 사람 재검토 시간"],
+      "adverse_effects_ko": [
+        "검사 누락으로 인한 거짓 음성",
+        "실행 지연 및 사람 재검토 시간"
+      ],
       "rollback_ko": "오판을 판정한 영수증은 유지하고 변경만 되돌리며 기존 실패 이력은 삭제하지 않는다."
     },
     {
-      "id": "FLR-A002", "case_id": "FLR-0010", "control_id": "FLR-C12", "priority": "P0",
-      "action_class": "AUTOMATED_BLOCKING_GUARD", "status": "CONTROL_MAPPED_EFFECT_NOT_OBSERVED",
+      "id": "FLR-A002",
+      "case_id": "FLR-0010",
+      "control_id": "FLR-C12",
+      "priority": "P0",
+      "action_class": "AUTOMATED_BLOCKING_GUARD",
+      "status": "CONTROL_MAPPED_EFFECT_NOT_OBSERVED",
       "target_failure_ko": "주요 변경 파일이 검사에 연결되지 않았는데 성공으로 통과",
       "competing_explanation_ko": "경로 개명·삭제·새 확장자로 인해 감시 분모를 놓쳤을 가능성",
       "eligible_denominator_ko": "모든 변경된 주요 파일 경로 수: 삭제·이름변경 전후 경로 포함",
       "recurrence_numerator_ko": "필수 회귀검사와 매핑되지 않았는데 성공으로 분류된 주요 변경 경로 수",
-      "adverse_effects_ko": ["보수적 차단의 거짓 양성", "재검토에 소요된 사람의 시간"],
+      "adverse_effects_ko": [
+        "보수적 차단의 거짓 양성",
+        "재검토에 소요된 사람의 시간"
+      ],
       "rollback_ko": "잘못된 분류 규칙만 되돌리고 실패·반례·원전 기록은 영구 보존한다."
     }
   ],
@@ -92,5 +139,25 @@
     "near_miss_channel": "NOT_IMPLEMENTED_NO_CONFIDENTIALITY_PROMISE",
     "field_effectiveness_certified": false,
     "human_burden_reduction_certified": false
-  }
+  },
+  "metric_contracts": [
+    {
+      "action_id": "FLR-A001",
+      "denominator_unit": "RELEASE_READINESS_DECISION",
+      "numerator_unit": "RELEASE_READINESS_DECISION",
+      "legacy_denominator_status": "INVALID_WORKFLOW_CHECKS_AS_EVENT_DENOMINATOR",
+      "denominator_definition_ko": "릴리스 전체 성공·실패·보류에 관해 실제 내린 개별 준비상태 판정 사건 수이며, 워크플로 또는 검사 단계 개수가 아니다.",
+      "numerator_definition_ko": "동일 관측 기간의 준비상태 판정 사건 중 실패·미관측 검사 또는 대기 상태가 있어도 전체 성공으로 잘못 판정한 사건 수.",
+      "limit_ko": "기존 시범행동의 워크플로 검사 분모 문구는 역사 기록으로 보존하며 측정에 사용 금지; 같은 판정 사건을 서로 다른 단위로 중복 합산하지 않는다."
+    },
+    {
+      "action_id": "FLR-A002",
+      "denominator_unit": "MATERIAL_CHANGED_PATH",
+      "numerator_unit": "MATERIAL_CHANGED_PATH",
+      "legacy_denominator_status": "COMPATIBLE_UNIT_NOT_FIELD_VALIDATED",
+      "denominator_definition_ko": "각 판정 대상 변경 집합의 모든 중요 파일 경로 수로서 삭제된 경로와 이름변경의 이전·이후 경로도 포함한다.",
+      "numerator_definition_ko": "동일한 판정 대상 변경 집합에서 필요한 테스트 매핑이 누락되었으나 성공으로 취급된 중요 파일 경로 수.",
+      "limit_ko": "경로 분모·분자 단위 일치는 테스트 선택의 적절성 또는 외부 재발률 감소를 독립적으로 입증하지 않는다."
+    }
+  ]
 }
