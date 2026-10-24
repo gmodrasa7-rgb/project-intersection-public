@@ -1,7 +1,7 @@
 {
   "registry_id": "PI-FLR-ACTION-EFFECTIVENESS",
-  "schema_version": "0.2.0",
-  "release_version": "0.2.0",
+  "schema_version": "0.3.0",
+  "release_version": "0.3.0",
   "as_of": "2026-10-24",
   "classification": "CROSS_INDUSTRY_DESIGN_TRANSFER_NOT_FIELD_EFFECTIVENESS",
   "language_order": [
@@ -159,5 +159,14 @@
       "numerator_definition_ko": "동일한 판정 대상 변경 집합에서 필요한 테스트 매핑이 누락되었으나 성공으로 취급된 중요 파일 경로 수.",
       "limit_ko": "경로 분모·분자 단위 일치는 테스트 선택의 적절성 또는 외부 재발률 감소를 독립적으로 입증하지 않는다."
     }
-  ]
+  ],
+  "census_policy": {
+    "enumeration": "ENUMERATED_EVENTS_REQUIRED_NOT_FREE_FORM_COUNTS",
+    "population_coverage": "UNKNOWN_NOT_PROVEN_COMPLETE",
+    "classification_grade": "REPORTED_EVENT_LABEL_NOT_INDEPENDENTLY_VERIFIED",
+    "github_run_proof": "RUN_EXISTS_NOT_EVENT_OUTCOME_ATTESTED",
+    "rate_permission": "NOT_PERMITTED_UNTIL_INDEPENDENT_FRAME_AUDIT",
+    "human_review_time": "UNKNOWN_UNLESS_DIRECTLY_MEASURED",
+    "field_effectiveness_certified": false
+  }
 }
