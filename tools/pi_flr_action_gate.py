@@ -7,10 +7,12 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 from pathlib import Path
 import re
 import subprocess
 from urllib.parse import urlsplit
+from urllib.request import Request, urlopen
 
 ROOT = Path(__file__).resolve().parents[1]
 ACTION = "knowledge/PI_FLR_ACTION_EFFECTIVENESS_V0_1_0_KO.json"
@@ -49,6 +51,47 @@ def _trusted_url(url, domains):
     parts = urlsplit(url)
     return parts.scheme == "https" and parts.hostname in domains and not parts.username
 
+
+
+def _verified_github_run(url, window):
+    """Check source existence at GitHub; NEVER certify denominator or field efficacy.
+
+    Fail closed for 403, 404, 429, malformed payload and outages. These states
+    mean NOT_VERIFIED, not 'run absent'. Fixed host, repository and numeric ID
+    prevent observation URLs from becoming arbitrary network fetch targets.
+    """
+    parts = urlsplit(url)
+    match = re.fullmatch(
+        r"/gmodrasa7-rgb/project-intersection-public/actions/runs/([1-9][0-9]*)",
+        parts.path)
+    if not (parts.scheme == "https" and parts.netloc == "github.com" and
+            not parts.query and not parts.fragment and match and
+            isinstance(window, str) and re.fullmatch(r"[0-9]{4}-[0-9]{2}", window)):
+        return False
+    run_id = int(match.group(1))
+    endpoint = ("https://api.github.com/repos/gmodrasa7-rgb/"
+                "project-intersection-public/actions/runs/" + str(run_id))
+    headers = {"Accept": "application/vnd.github+json",
+               "X-GitHub-Api-Version": "2022-11-28",
+               "User-Agent": "PI-FLR-Receipt-Check/0.1"}
+    token = os.environ.get("GITHUB_TOKEN", "")
+    if token:
+        headers["Authorization"] = "Bearer " + token
+    try:
+        with urlopen(Request(endpoint, headers=headers), timeout=10) as response:
+            if response.status != 200:
+                return False
+            payload = json.loads(response.read(160000).decode("utf-8"))
+    except (OSError, ValueError, TypeError, UnicodeError):
+        return False
+    return (type(payload) is dict and payload.get("id") == run_id and
+            isinstance(payload.get("repository"), dict) and
+            payload["repository"].get("full_name") ==
+            "gmodrasa7-rgb/project-intersection-public" and
+            payload.get("html_url") == url and
+            payload.get("status") == "completed" and
+            isinstance(payload.get("created_at"), str) and
+            payload["created_at"].startswith(window + "-"))
 
 def validate(data, registry, workflow, root=ROOT):
     require(set(data) == {"registry_id", "schema_version", "release_version",
@@ -145,6 +188,9 @@ def validate(data, registry, workflow, root=ROOT):
         require(obs["evidence_urls"] and all(_trusted_url(x, {"github.com"}) and
                 urlsplit(x).path.startswith("/gmodrasa7-rgb/project-intersection-public/")
                 for x in obs["evidence_urls"]), "UNVERIFIABLE_OBSERVATION_RECEIPT")
+        for url in obs["evidence_urls"]:
+            require(_verified_github_run(url, obs["window"]),
+                    "OBSERVED_RECEIPT_REMOTE_UNVERIFIED_NOT_ABSENT")
     policy = data["status_policy"]
     require(policy == {"other_cases": "UNTRIAGED_NOT_ZERO",
                        "no_exposure": "UNKNOWN_NOT_ZERO",
