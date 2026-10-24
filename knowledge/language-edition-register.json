@@ -1,6 +1,6 @@
 {
   "schema_version": "pi-language-edition-register/v0.1",
-  "updated": "2026-10-22",
+  "updated": "2026-10-24",
   "baseline_repository_tree_sha": "b2055f40a1e0cabe38f3c6e8c984228c1c2a7e0f",
   "baseline_scope": "Preserve main's latest language inventory and original pair lineages; add research-version EN/KO combined guide. Historical baseline-tree SHA is not a current head. Meaning equivalence NOT_INDEPENDENTLY_VERIFIED.",
   "policy": {
@@ -662,14 +662,14 @@
     }
   ],
   "metrics": {
-    "markdown_total": 264,
+    "markdown_total": 265,
     "filename_classes": {
       "UNMARKED_LANGUAGE_UNVERIFIED": 46,
       "LEGACY_MIXED_READER_ENTRY": 2,
       "KO_SUFFIX_UNVERIFIED": 121,
       "ORDERED_BILINGUAL_FOUNDER_OR_GOVERNANCE": 2,
       "EN_SUFFIX_UNVERIFIED": 51,
-      "COMBINED_NAMING_UNVERIFIED": 42
+      "COMBINED_NAMING_UNVERIFIED": 43
     },
     "meaning_verified_pairs": 0,
     "meaning_verified_pairs_is_a_status_count_not_a_claim_that_no_reviews_ever_occurred": true
@@ -1952,6 +1952,12 @@
     },
     {
       "path": "research/PI_ROADMAP_CHANGE_TRAP_V0_2_1_EN_KO.md",
+      "filename_class": "COMBINED_NAMING_UNVERIFIED",
+      "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "research/PI_ROADMAP_DECISION_EVIDENCE_V0_2_4_EN_KO.md",
       "filename_class": "COMBINED_NAMING_UNVERIFIED",
       "counterpart_path": null,
       "content_equivalence": "NOT_REVIEWED"
