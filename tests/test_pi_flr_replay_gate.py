@@ -151,6 +151,16 @@ class ReplayGateTests(unittest.TestCase):
         self.assertEqual(p["check_ids"],["FLR_ALL_TESTS","FLR_META"])
         self.assertFalse(p["unmapped_material_paths"])
 
+    def test_language_registry_change_runs_full_inventory_and_cannot_false_green(self):
+        path = "knowledge/language-edition-register.json"
+        plan = rg.planned_replay(self.data, [path])
+        self.assertEqual(plan["check_ids"], ["BILINGUAL_INVENTORY"])
+        self.assertEqual(plan["unmapped_material_paths"], [])
+        bad = copy.deepcopy(self.data)
+        bad["preflight"] = [r for r in bad["preflight"] if r["id"] != "R09"]
+        with self.assertRaisesRegex(rg.ReplayError, "RULE_AND_EXECUTOR_DRIFT"):
+            rg.planned_replay(bad, [path])
+
     def test_flr_test_file_change_is_mapped(self):
         p=rg.planned_replay(self.data,["tests/test_pi_flr_replay_gate.py"])
         self.assertEqual(p["check_ids"],["FLR_ALL_TESTS","FLR_META"])
