@@ -1,8 +1,8 @@
 {
   "id": "PI-FLR-PRIOR-ART-TRANSFER",
   "schema_version": "0.1.0",
-  "version": "0.3.0",
-  "as_of": "2026-10-22",
+  "version": "0.3.1",
+  "as_of": "2026-10-24",
   "scope": "PRIOR_ART_SYNTHESIS_AND_OPERATIONAL_CONTROL_NOT_EMPIRICAL_AI_SELF_IMPROVEMENT",
   "language_order": [
     "English primary",
@@ -551,6 +551,36 @@
         "Test modifications re-run the FLR audit and mutation test suite",
         "Failure injection actually changes expected outcome",
         "No false-green changed-file coverage"
+      ]
+    },
+    {
+      "id": "R09",
+      "match": "knowledge/language-edition-register.json",
+      "cases": [
+        "FLR-0005"
+      ],
+      "controls": [
+        "FLR-C02"
+      ],
+      "checkpoints": [
+        "Run real bilingual inventory self-test for changed publication register, not list-only assertions",
+        "Rerun actual PI-RISE publisher SHA guard after language inventory edits",
+        "No self-certified independent translation parity or financial receipts"
+      ]
+    },
+    {
+      "id": "R10",
+      "match": "research/MER_EI_CONSENT_PROVIDER_ASYMMETRY_*.json",
+      "cases": [
+        "FLR-0010"
+      ],
+      "controls": [
+        "FLR-C12"
+      ],
+      "checkpoints": [
+        "Run dedicated primary-table coefficient, sampling-uncertainty and null-overclaim code",
+        "Run negative mutant tests for source and error classifications, including false empirical promotion",
+        "Never treat author-reported estimates as replicated participant data or identified latent mind"
       ]
     }
   ],

@@ -621,6 +621,23 @@
         "Pre-registration proposal not independently filed, approved, run, or statistically powered.",
         "This does not measure persistent current-LLM selfhood, original B numerical identity or human/AI coexistence."
       ]
+    },
+    {
+      "id": "PI-MER-EI-CONSENT-SUPPLY-20261024",
+      "original_1_english": "research/MER_EI_CONSENT_SUPPLY_ASYMMETRY_2026-10-24_EN.md",
+      "original_2_korean": "research/MER_EI_CONSENT_SUPPLY_ASYMMETRY_2026-10-24_KO.md",
+      "kind": "SOURCE_CRITICAL_ORIGINAL_HUMAN_PAPER_TABLE_AUDIT_NO_RVD_RELEASE",
+      "structural_pair_present": true,
+      "meaning_review_status": "NOT_INDEPENDENTLY_VERIFIED",
+      "original_conception_language": "KO_HUMAN_FOUNDER_VC_QUESTION_AI_ORIGINAL_PAPER_AUDIT",
+      "independent_review_receipt": null,
+      "one_sided_edit_exception": null,
+      "known_divergences": [
+        "EN is a condensed methods and source summary; independent bilingual semantic parity not certified.",
+        "Primary coefficients are from May 2025 WP version; November 2025 revised version not crosschecked.",
+        "Statistically nonsignificant A supply effect is NOT evidence that A disregarded enforceable B veto.",
+        "GPT-4o-mini analysis of self-reported reasons not validated measurement of latent mind."
+      ]
     }
   ],
   "legacy_priority_unresolved": [
@@ -662,13 +679,13 @@
     }
   ],
   "metrics": {
-    "markdown_total": 264,
+    "markdown_total": 266,
     "filename_classes": {
       "UNMARKED_LANGUAGE_UNVERIFIED": 46,
       "LEGACY_MIXED_READER_ENTRY": 2,
-      "KO_SUFFIX_UNVERIFIED": 121,
+      "KO_SUFFIX_UNVERIFIED": 122,
       "ORDERED_BILINGUAL_FOUNDER_OR_GOVERNANCE": 2,
-      "EN_SUFFIX_UNVERIFIED": 51,
+      "EN_SUFFIX_UNVERIFIED": 52,
       "COMBINED_NAMING_UNVERIFIED": 42
     },
     "meaning_verified_pairs": 0,
@@ -1809,6 +1826,18 @@
       "content_equivalence": "NOT_REVIEWED"
     },
     {
+      "path": "research/MER_EI_CONSENT_SUPPLY_ASYMMETRY_2026-10-24_EN.md",
+      "filename_class": "EN_SUFFIX_UNVERIFIED",
+      "counterpart_path": "research/MER_EI_CONSENT_SUPPLY_ASYMMETRY_2026-10-24_KO.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "research/MER_EI_CONSENT_SUPPLY_ASYMMETRY_2026-10-24_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": "research/MER_EI_CONSENT_SUPPLY_ASYMMETRY_2026-10-24_EN.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
       "path": "research/MER_EI_FREE_TO_FAIL_REPRO_READINESS_2026-10-21_EN.md",
       "filename_class": "EN_SUFFIX_UNVERIFIED",
       "counterpart_path": "research/MER_EI_FREE_TO_FAIL_REPRO_READINESS_2026-10-21_KO.md",
@@ -2852,6 +2881,17 @@
         "research/PI_PACD_PRS_OSL_V0_1_0_KO.md"
       ],
       "scope": "paired filenames only, scientific novelty and translation meaning unverified"
+    },
+    {
+      "as_of": "2026-10-24",
+      "status": "MER_EI_CONSENT_SUPPLY_PRIMARY_PAPER_ASYMMETRY_NO_RVD_PROMOTION",
+      "new_documents": [
+        "research/MER_EI_CONSENT_SUPPLY_ASYMMETRY_2026-10-24_EN.md",
+        "research/MER_EI_CONSENT_SUPPLY_ASYMMETRY_2026-10-24_KO.md"
+      ],
+      "new_edition_pairs": 1,
+      "editorial_notes": "Manual publisher May-2025 table extraction 4/7/8 and Appendix D; 5 source effects with published HC3 SE and approximate CI arithmetic; added independent working paper and 2026 contrary evidence; no raw data rerun, no additional RVD hypothesis/version, no AGI moral-status inference.",
+      "reviewer_actions": "Independently compare November 2025 revision; obtain lawful author data/code, evaluate confidence intervals/strategy-method, prereg separate B consent and A willingness experiments."
     }
   ],
   "path_layout_policy": "Keep the project root entry-only; bilingual full research editions live in existing research/ and their original historical combined documents retain stable root URLs."

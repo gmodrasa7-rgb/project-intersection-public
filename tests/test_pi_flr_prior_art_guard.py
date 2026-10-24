@@ -105,7 +105,8 @@ class PriorArtTests(unittest.TestCase):
             p.validate(self.data,self.cases,broken)
 
     def test_historic_source_cannot_be_rewritten_by_version(self):
-        d=copy.deepcopy(self.data);d["version"]="0.3.1"
+        d=copy.deepcopy(self.data);current=tuple(map(int,self.data["version"].split(".")))
+        d["version"]=".".join(map(str,(current[0],current[1],current[2]+1)))
         d["sources"][0]["lesson"]="a different unsupported reading"
         with self.assertRaisesRegex(p.PriorArtError,"HISTORIC_TRANSFER_REWRITTEN"):
             p.compare_history(d,self.data)
@@ -118,7 +119,8 @@ class PriorArtTests(unittest.TestCase):
             "limitation":"No subsequent real-world recurrence monitoring available."})
         with self.assertRaisesRegex(p.PriorArtError,"UNVERSIONED_PRIOR_ART_CHANGE"):
             p.compare_history(d,self.data)
-        d["version"]="0.3.1"
+        current=tuple(map(int,self.data["version"].split(".")))
+        d["version"]=".".join(map(str,(current[0],current[1],current[2]+1)))
         self.assertTrue(p.compare_history(d,self.data))
         self.check(d)
 

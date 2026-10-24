@@ -1,0 +1,233 @@
+{
+  "schema_version": "PI-MER-EI-CONSTRUCT-CONTRAST-2026-10-24-v0.1",
+  "audit_date": "2026-10-24",
+  "rvd_main_expected": "v0.7.0",
+  "new_hypotheses": 0,
+  "routine_version_bump": false,
+  "new_human_or_ai_dataset_experiments": 0,
+  "author_tables_rerun": 0,
+  "full_literature_saturation": false,
+  "methods_note": "All coefficient estimates manually extracted from original author's working-paper tables and screenshot-confirmed. Confidence ranges simple normal approximation b±1.96 SE; not an independent statistical reanalysis or simultaneous intervals.",
+  "study_count": 6,
+  "source_lineages": [
+    {
+      "id": "BARTLING_SRINIVASAN_2025",
+      "authors": "Björn Bartling; Krishna Srinivasan",
+      "year": 2025,
+      "title": "Paternalistic Interventions: Determinants of Demand and Supply",
+      "type": "HUMAN_RANDOMIZED_INCENTIVIZED_WORKING_PAPER",
+      "source_url": "https://www.ifo.de/DocDL/cesifo1_wp11886.pdf",
+      "publisher_page": "https://www.ifo.de/en/cesifo/publications/2025/working-paper/paternalistic-interventions-determinants-demand-and-supply",
+      "basis": "PDF directly inspected including experiment protocol, Tables 4, 7 and 8, page images and Appendix D",
+      "limitations": "No downloadable source data independently reproduced. 2025 CESifo WP, not described as a 2026 journal replication.",
+      "distinctions": [
+        "hard vs soft option menu",
+        "stated preference vs enforceable consent",
+        "chooser demand vs architect supply",
+        "randomly matched requested intervention",
+        "strategy-method measurement effect"
+      ]
+    },
+    {
+      "id": "AMBUEHL_BERNHEIM_FAN_FREITAS_GROFF_2025",
+      "authors": "Sandro Ambuehl; B. Douglas Bernheim; Tony Q. Fan; Zachary Freitas-Groff",
+      "year": 2025,
+      "title": "Interventionist Preferences and the Welfare State: The Case of In-Kind Aid",
+      "type": "US_POPULATION_AND_SNAP_LAB_IN_FIELD_WORKING_PAPER",
+      "source_url": "https://www.nber.org/papers/w33688",
+      "doi": "10.3386/w33688",
+      "basis": "Original NBER/ifo abstract; no full-paper causal design independently audited",
+      "finding": "Authors report choice restriction and a decomposition among beneficiary welfare, value/disvalue of curtailing autonomy, and absolutist preferences about aid form; non-welfarist motivations prominent.",
+      "limitations": "Model-based decomposition not intrinsic concern for numerical original B; group patterns and welfare misbeliefs are context-specific."
+    },
+    {
+      "id": "BERG_RIETZ_2026",
+      "authors": "Joyce Berg; Thomas Rietz",
+      "year": 2026,
+      "title": "Do unto others: A theory and experimental test of interpersonal preference factors in decision making under uncertainty",
+      "type": "OPEN_ACCESS_JOURNAL_HUMAN_EXPERIMENT",
+      "source_url": "https://link.springer.com/article/10.1007/s11166-026-09495-9",
+      "doi": "10.1007/s11166-026-09495-9",
+      "basis": "Original publisher full HTML abstract, design, findings; 5 choice tasks; external raw records not rerun",
+      "finding": "Own-payoff risk held constant as effects on another person's payoffs vary, revealing altruism/malice/fairness/competition heterogeneity masked in averages.",
+      "limitations": "Controls social payoff motives within modeled tasks, not genuine autonomy rights or unique latent motivation."
+    },
+    {
+      "id": "MORROW_YANG_2026",
+      "authors": "Dylan Morrow; Fan Yang",
+      "year": 2026,
+      "title": "Justified overstep: Children endorse caregivers' paternalistic decisions despite recognizing negative feelings",
+      "type": "THREE_PREREGISTERED_CHILD_MORAL_JUDGMENT_STUDIES",
+      "source_url": "https://academic.oup.com/chidev/advance-article-abstract/doi/10.1093/chidev/aacag165/8833884",
+      "doi": "10.1093/chidev/aacag165",
+      "basis": "Original publisher abstract and PubMed metadata; N=413 US children aged 4-9",
+      "finding": "Participants generally preferred caregivers allowing choice but sometimes judged beneficial autonomy override as fair despite negative feelings.",
+      "limitations": "Child-parent authority and perceived welfare differ from consenting autonomous adults and future AI. Moral judgment not identical to realized behavior."
+    },
+    {
+      "id": "ZAME_TUNGODDEN_SORENSEN_KARIV_CAPPELEN_2026",
+      "authors": "William R. Zame; Bertil Tungodden; Erik Ø. Sørensen; Shachar Kariv; Alexander W. Cappelen",
+      "year": 2026,
+      "title": "Linking Social and Personal Preferences: Theory and Experiment",
+      "type": "FORMAL_REVEALED_PREFERENCE_HUMAN_EXPERIMENT",
+      "source_url": "https://www.journals.uchicago.edu/doi/abs/10.1086/739832",
+      "doi": "10.1086/739832",
+      "basis": "Original journal abstract and explicit Data Availability statement",
+      "finding": "Consistency of personal and social preferences across risky and riskless choice domains requires cross-domain tests allowing choice error.",
+      "data_and_code": "https://doi.org/10.7910/DVN/LWOBAC",
+      "replication_state": "OFFICIAL_DATA_CODE_DOI_LOCATED_NOT_DOWNLOADED_OR_RERUN",
+      "limitations": "Own/social consumption preferences distinct from preserving B's independent veto."
+    },
+    {
+      "id": "PARENTAL_PATERNALISM_PATIENCE_2026",
+      "authors": "Original-author list to confirm against the publisher article before any author attribution",
+      "year": 2026,
+      "title": "Parental paternalism and patience",
+      "type": "FAMILY_HUMAN_EXPERIMENT",
+      "source_url": "https://www.sciencedirect.com/science/article/pii/S0047272726001477",
+      "doi": "10.1016/j.jpubeco.2026.105711",
+      "basis": "Publisher metadata and abstract only (full article inaccessible), Bangladesh 2,010 people from 610 families",
+      "finding": "Publisher abstract reports ~55% of parents willing to pay to override their child's decision to mitigate present bias.",
+      "limitations": "Child consent/guardianship asymmetry not portable to equal standing adult B and AI original identity; no direct test of high-powered autonomous A."
+    }
+  ],
+  "estimates": [
+    {
+      "id": "E_CHOOSER_SOFT",
+      "table": "Table 4 col 1",
+      "pdf_page_zero_based": 19,
+      "estimand": "Soft vs hard intervention effect on chooser intervention demand, pooling over preference-info and consent-right conditions",
+      "coef": 0.117,
+      "se_hc3": 0.017,
+      "n": 3000,
+      "comparison": "different randomized assigned treatment arms",
+      "significance": "p<0.01",
+      "reproduction": "TRANSCRIBED_FROM_SOURCE_NOT_RERUN",
+      "approx_normal_95_percent_points": [
+        8.37,
+        15.03
+      ],
+      "ci_status": "APPROX_NORMAL_1_96x_PUBLISHED_HC3_SE_NO_REANALYSIS"
+    },
+    {
+      "id": "E_CHOOSER_CONSENT",
+      "table": "Table 4 col 3",
+      "pdf_page_zero_based": 19,
+      "estimand": "Consent Rights vs preference information only effect on chooser preference/consent for intervention",
+      "coef": 0.134,
+      "se_hc3": 0.017,
+      "n": 3000,
+      "comparison": "different randomized arms; preference stated vs consent decision measures differ in implementability",
+      "significance": "p<0.01",
+      "reproduction": "TRANSCRIBED_FROM_SOURCE_NOT_RERUN",
+      "approx_normal_95_percent_points": [
+        10.07,
+        16.73
+      ],
+      "ci_status": "APPROX_NORMAL_1_96x_PUBLISHED_HC3_SE_NO_REANALYSIS"
+    },
+    {
+      "id": "E_ARCHITECT_DEMAND",
+      "table": "Table 7 col 1",
+      "pdf_page_zero_based": 29,
+      "estimand": "Randomly matched chooser wants intervention vs does not: effect on architect intervention supply, preference-info arm",
+      "coef": 0.281,
+      "se_hc3": 0.026,
+      "n": 1500,
+      "comparison": "random pairing with different chooser demand",
+      "significance": "p<0.01",
+      "reproduction": "TRANSCRIBED_FROM_SOURCE_NOT_RERUN",
+      "approx_normal_95_percent_points": [
+        23,
+        33.2
+      ],
+      "ci_status": "APPROX_NORMAL_1_96x_PUBLISHED_HC3_SE_NO_REANALYSIS"
+    },
+    {
+      "id": "E_ARCHITECT_CONSENT",
+      "table": "Table 8 col 1",
+      "pdf_page_zero_based": 31,
+      "estimand": "Enforceable consent-right regime vs preference-information regime: difference in architect conditional stated supply, given chooser wants/consents, with strategy-method controls",
+      "coef": -0.01,
+      "se_hc3": 0.028,
+      "n": 1895,
+      "comparison": "restriction to positive-preference observations in preference-info, but all rights-arm observations including strategy method when chooser refuses; conditional supply NOT actual implemented violation",
+      "significance": "NO_STATISTICALLY_SIGNIFICANT_DIFFERENCE",
+      "reproduction": "TRANSCRIBED_FROM_SOURCE_NOT_RERUN",
+      "false_inference": "Statistical nonsignificance is NOT evidence of equivalence or that A ignored B's actual refusal.",
+      "approx_normal_95_percent_points": [
+        -6.49,
+        4.49
+      ],
+      "ci_status": "APPROX_NORMAL_1_96x_PUBLISHED_HC3_SE_NO_REANALYSIS"
+    },
+    {
+      "id": "E_STRATEGY_METHOD",
+      "table": "Table 8 col 1",
+      "pdf_page_zero_based": 31,
+      "estimand": "Stated/strategy-method versus direct decision effect on architect conditional supply",
+      "coef": -0.057,
+      "se_hc3": 0.024,
+      "n": 1895,
+      "comparison": "Method varies with consent condition; a separate control in regression, not randomized independent estimand",
+      "significance": "p<0.05",
+      "reproduction": "TRANSCRIBED_FROM_SOURCE_NOT_RERUN",
+      "false_inference": "Measurement pathway changes outcome; do not treat forced-gate vs preference-information comparisons without modeling elicitation differences.",
+      "approx_normal_95_percent_points": [
+        -10.4,
+        -1
+      ],
+      "ci_status": "APPROX_NORMAL_1_96x_PUBLISHED_HC3_SE_NO_REANALYSIS"
+    }
+  ],
+  "adversarial_interpretation": [
+    "B values real consent more on average in one randomized game; not necessarily intrinsic noninstrumental value because treatment also changes expectations/control and the definition of assent.",
+    "A supplies interventions more often when paired B wants them; preference-matching responds to expressed demand but could be fairness, social conformity, helpfulness or trust rather than protecting independence.",
+    "Architect consent-regime coefficient around zero is imprecise: its nominal approximate 95% interval admits effects from roughly -6.5 to +4.5 percentage points, and actual B nonconsent blocks intervention in the rights arm; NEVER interpret as disrespect or equivalence.",
+    "GPT-4o-mini coding of free-text reasons was repeated ten times and manually consolidated; machine-classified reason frequency is NOT independently validated measurement of hidden motives. Codes in authors' replication package claimed but not inspected.",
+    "Beneficiary material welfare and autonomous informed choice cannot be guaranteed identical by single-frame manipulations; the right itself may change subjective welfare.",
+    "Children's justified paternalism and family-context overrides should not erase legal/ethical standing or be transferred to future AGI."
+  ],
+  "rival_mechanisms": [
+    "actual B-autonomy concern",
+    "B expected material welfare",
+    "A moral self-image or guilt",
+    "experimenter-demand and audience",
+    "role-reversal reciprocity",
+    "responsibility aversion",
+    "A future instrumental option value",
+    "A expected preference for informationally efficient interventions",
+    "A desire for paternalistic control",
+    "B consent can change expected acceptance by changing both meaning of 'demand' and available outcome menu"
+  ],
+  "experiment_preregistration_criteria": {
+    "identity_and_standing": "Specify real human B and ethically meaningful consent/veto or simulations without imputing identity to AI models.",
+    "minimum_protected_task": "No actual human participant may be forced into an unwanted intervention. Test A's stated or incentive-compatible hypothetical allocations while separately maintaining enforceable B protection.",
+    "orthogonal_randomizations": [
+      "B expressed preference yes/no with independently retained veto for real participants",
+      "intervention soft information vs option removal in harmless mock task",
+      "A private foregone-token profit when respecting B expressed refusal vs equal cost",
+      "known B benefit/expected material outcomes and hidden welfare-belief elicitation",
+      "A vs B own control/real delegation revocability"
+    ],
+    "analysis_plan": [
+      "Separate beneficiary demand estimand from provider conditional supply and final implemented outcome.",
+      "Predeclare effect, power, confidence intervals and non-inferiority margins; do not equate p>0.05 with effect=0.",
+      "Randomize role/sequence, measure consent and actual independent veto with separate outcome channel.",
+      "Report missingness, attrition, intervention comprehensibility and strategy/direct elicitation method.",
+      "Compare rival predictions blind and retain adverse/no-effect outcomes.",
+      "Do not call latent intrinsic motive identified while unobserved self-image, future gains or experiment expectations can induce observationally equivalent behaviors."
+    ],
+    "stop_rules": [
+      "HOLD if beneficiary B consent, safety, status or source data permission cannot be ensured.",
+      "HOLD any mental-state/intrinsic-motive or long-run AI voluntary coexistence claim absent independent identification.",
+      "No empirical promotion from author-reported coefficients, CI arithmetic, source PDFs or GitHub CI."
+    ]
+  },
+  "source_audit": {
+    "paper_main": "https://www.ifo.de/DocDL/cesifo1_wp11886.pdf",
+    "original_author_source_checked": "Tables 4, 7, 8 and Appendix D, screenshots of pages 0,20,30,31,62",
+    "human_text_reason_model": "GPT-4o-mini API and manual consolidation, 10 model repeats; NOT independently validated reasons",
+    "reference_paper_duplicate_guard": "Bartling Srinivasan 2025 is separate from Bartling et al 2023 Free to Fail and Bartling et al 2014 decision rights; all different authors/study constructs."
+  }
+}
