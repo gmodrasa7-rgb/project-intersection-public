@@ -22,6 +22,8 @@ jobs:
         run: python3 -m unittest discover -s tests -p 'test_pi_flr_conversation_audit.py' -v
       - name: Prior-art self-improvement counterevidence and applicability mutations
         run: python3 -m unittest discover -s tests -p 'test_pi_flr_prior_art_guard.py' -v
+      - name: Cross-industry corrective action and exposure denominator negative mutations
+        run: python3 -m unittest discover -s tests -p 'test_pi_flr_action_gate.py' -v
       - name: Regression replay metamorphic mutation tests
         run: python3 -m unittest discover -s tests -p 'test_pi_flr_replay_gate.py' -v
       - name: Offline scheduled failure watcher adversarial regressions
@@ -46,6 +48,7 @@ jobs:
           python3 tools/pi_flr_audit.py --baseline-commit "$BASE"
           python3 tools/pi_flr_conversation_audit.py --baseline-commit "$BASE"
           python3 tools/pi_flr_prior_art_guard.py --baseline-commit "$BASE"
+          python3 tools/pi_flr_action_gate.py --baseline-commit "$BASE"
           python3 tools/pi_flr_replay_gate.py --baseline-commit "$BASE" --output pi_flr_replay_receipt.json
       - name: Save scoped actual replay execution receipt
         if: always()
