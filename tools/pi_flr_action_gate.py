@@ -27,8 +27,10 @@ ACTION_FIELDS = {"id", "case_id", "control_id", "priority", "action_class",
                  "status", "target_failure_ko", "competing_explanation_ko",
                  "eligible_denominator_ko", "recurrence_numerator_ko",
                  "adverse_effects_ko", "rollback_ko"}
-OBS_FIELDS = {"id", "action_id", "status", "window", "eligible", "recurrences",
+OBS_FIELDS = {"id", "action_id", "unit", "status", "window", "eligible", "recurrences",
               "false_blocks", "human_review_minutes", "evidence_urls", "limitation"}
+RATE_UNITS = {"FLR-A001": "RELEASE_READINESS_DECISION",
+              "FLR-A002": "MATERIAL_CHANGED_PATH"}
 
 
 class ActionError(ValueError):
@@ -97,10 +99,10 @@ def validate(data, registry, workflow, root=ROOT):
     require(set(data) == {"registry_id", "schema_version", "release_version",
                           "as_of", "classification", "language_order",
                           "privacy_policy", "source_limit", "sources", "intersection",
-                          "pilot_actions", "observations", "status_policy"},
+                          "pilot_actions", "observations", "metric_contracts", "status_policy"},
             "ACTION_SCHEMA_DRIFT")
     require(data["registry_id"] == "PI-FLR-ACTION-EFFECTIVENESS" and
-            data["schema_version"] == "0.1.0", "ACTION_IDENTITY_CHANGED")
+            data["schema_version"] == "0.2.0", "ACTION_IDENTITY_CHANGED")
     _version(data["release_version"])
     require(data["language_order"] == ["English primary", "Korean secondary"] and
             data["classification"] == "CROSS_INDUSTRY_DESIGN_TRANSFER_NOT_FIELD_EFFECTIVENESS",
@@ -165,6 +167,32 @@ def validate(data, registry, workflow, root=ROOT):
                 "CLAIMED_CONTROL_NOT_PRESENT_IN_REPOSITORY")
     require({"FLR-0009", "FLR-0010"} <= mapped_cases,
             "P0_FALSE_GREEN_PILOTS_REMOVED")
+    # Formal measurement units precede any percentage calculation. Historic
+    # prose is preserved, but the old FLR-A001 workflow-count denominator is
+    # explicitly disallowed as a release-decision recurrence denominator.
+    contracts = {}
+    require(type(data["metric_contracts"]) is list, "RATE_CONTRACTS_MISSING")
+    for metric in data["metric_contracts"]:
+        require(type(metric) is dict and set(metric) == {
+                    "action_id", "denominator_unit", "numerator_unit",
+                    "legacy_denominator_status", "denominator_definition_ko",
+                    "numerator_definition_ko", "limit_ko"}, "RATE_CONTRACT_SCHEMA")
+        action_id = metric["action_id"]
+        require(action_id in RATE_UNITS and action_id in action_ids
+                and action_id not in contracts, "RATE_CONTRACT_ACTION_UNKNOWN")
+        require(metric["denominator_unit"] == RATE_UNITS[action_id]
+                and metric["numerator_unit"] == RATE_UNITS[action_id],
+                "INCOMMENSURATE_RATE_UNITS")
+        expected_legacy = ("INVALID_WORKFLOW_CHECKS_AS_EVENT_DENOMINATOR"
+                           if action_id == "FLR-A001" else
+                           "COMPATIBLE_UNIT_NOT_FIELD_VALIDATED")
+        require(metric["legacy_denominator_status"] == expected_legacy,
+                "LEGACY_DENOMINATOR_MISLABELED")
+        for key in ("denominator_definition_ko", "numerator_definition_ko", "limit_ko"):
+            require(type(metric[key]) is str and len(metric[key]) >= 45,
+                    "INCOMPLETE_RATE_CONTRACT")
+        contracts[action_id] = metric
+    require(set(contracts) == set(RATE_UNITS), "RATE_CONTRACTS_INCOMPLETE")
     observations = set()
     for obs in data["observations"]:
         require(set(obs) == OBS_FIELDS, "OBSERVATION_SCHEMA_DRIFT")
@@ -175,6 +203,8 @@ def validate(data, registry, workflow, root=ROOT):
         require(obs["action_id"] in action_ids and
                 obs["status"] == "OBSERVED_NOT_EFFECTIVENESS_CERTIFIED" and
                 len(obs["limitation"]) >= 20, "FALSE_FIELD_VERIFICATION")
+        require(obs["unit"] == contracts[obs["action_id"]]["denominator_unit"],
+                "OBSERVATION_DENOMINATOR_UNIT_MISMATCH")
         require(obs["window"] != "UNOBSERVED" and
                 isinstance(obs["eligible"], int) and not isinstance(obs["eligible"], bool) and
                 obs["eligible"] > 0 and
@@ -205,7 +235,8 @@ def validate(data, registry, workflow, root=ROOT):
             "ACTION_GUARD_NOT_EXECUTED_BY_CI")
     return {"status": "DESIGN_TRANSFER_ONLY_NOT_FIELD_VERIFIED",
             "source_families": len(families), "intersections": len(intersection_ids),
-            "pilot_actions": len(action_ids),
+            "pilot_actions": len(action_ids), "metric_contract_count": len(contracts),
+            "rate_efficacy_certified": False,
             "untriaged_case_count": len(cases.keys() - mapped_cases),
             "observations": len(observations), "field_effectiveness_verified": 0}
 
@@ -213,8 +244,8 @@ def validate(data, registry, workflow, root=ROOT):
 def compare_history(current, old):
     require(old["registry_id"] == "PI-FLR-ACTION-EFFECTIVENESS",
             "INVALID_ACTION_BASELINE")
-    for key in ("sources", "intersection", "pilot_actions", "observations"):
-        require(current[key][:len(old[key])] == old[key],
+    for key in ("sources", "intersection", "pilot_actions", "observations", "metric_contracts"):
+        require(current.get(key, [])[:len(old.get(key, []))] == old.get(key, []),
                 "ACTION_HISTORY_REWRITTEN:" + key)
     require(_version(current["release_version"]) >= _version(old["release_version"]),
             "ACTION_VERSION_REGRESSION")
