@@ -118,7 +118,8 @@ class PriorArtTests(unittest.TestCase):
             "limitation":"No subsequent real-world recurrence monitoring available."})
         with self.assertRaisesRegex(p.PriorArtError,"UNVERSIONED_PRIOR_ART_CHANGE"):
             p.compare_history(d,self.data)
-        d["version"]="0.3.1"
+        major,minor,patch = map(int,self.data["version"].split("."))
+        d["version"]=f"{major}.{minor}.{patch+1}"
         self.assertTrue(p.compare_history(d,self.data))
         self.check(d)
 
