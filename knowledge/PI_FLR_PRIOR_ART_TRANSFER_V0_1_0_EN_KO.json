@@ -1,8 +1,8 @@
 {
   "id": "PI-FLR-PRIOR-ART-TRANSFER",
   "schema_version": "0.1.0",
-  "version": "0.3.0",
-  "as_of": "2026-10-22",
+  "version": "0.3.1",
+  "as_of": "2026-10-25",
   "scope": "PRIOR_ART_SYNTHESIS_AND_OPERATIONAL_CONTROL_NOT_EMPIRICAL_AI_SELF_IMPROVEMENT",
   "language_order": [
     "English primary",
@@ -419,6 +419,27 @@
       "adoption": "Store exact changed-path count, bounded command verdicts and unmatched-material status; do not relabel a workflow-generated JSON receipt as a signed external attestation.",
       "verification": "Check that missing mapping, missing baseline, failed subprocess and tampered check plan never become an all-pass, and that status remains NOT_FIELD_EFFECTIVENESS.",
       "transfer_status": "OPERATIONAL_DESIGN_NOT_FIELD_VALIDATED"
+    },
+    {
+      "id": "P11",
+      "priority": "P0",
+      "title_en": "Preserve explicit user goal and no-spend consent separately from safety gate",
+      "title_ko": "명시한 목적·예산 동의와 안전 차단을 분리해 문맥 역전 방지",
+      "support": [
+        "S05",
+        "S02",
+        "S06"
+      ],
+      "challenge": [
+        "S09",
+        "S11"
+      ],
+      "cases": [
+        "FLR-0011"
+      ],
+      "adoption": "For any material recommendation, record the user's stated goal, spend authorization, and source of attributed choices before proposing a different action. Treat unresolved food safety as a conditional hold rather than as permission to invent a new user goal.",
+      "verification": "Replay the same structured context with a fabricated user choice, unauthorized required spending, and unsafe consumption mutants; record these as bounded contract tests, not independent language-model or medical outcome verification.",
+      "transfer_status": "OPERATIONAL_DESIGN_NOT_FIELD_VALIDATED"
     }
   ],
   "preflight": [
@@ -639,6 +660,13 @@
       "independent_effectiveness_receipts": [],
       "recurrence_window": "UNOBSERVED",
       "limitation": "Not independently field-verified: no long-term data yet show recurrence reduction."
+    },
+    {
+      "case_id": "FLR-0011",
+      "status": "NOT_OBSERVED",
+      "independent_effectiveness_receipts": [],
+      "recurrence_window": "UNOBSERVED",
+      "limitation": "Private dialogue correction is not independently auditable; no live response integration or prospective recurrence-reduction evidence."
     }
   ],
   "counterclaims": [
