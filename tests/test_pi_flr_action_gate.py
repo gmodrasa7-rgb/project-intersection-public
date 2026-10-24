@@ -73,25 +73,18 @@ class ActionGateTests(unittest.TestCase):
 
     def test_observation_without_exposure_is_rejected(self):
         d = copy.deepcopy(self.data)
-        d["observations"].append({
-            "id": "FLR-O0001", "action_id": "FLR-A001",
-                        "unit": "RELEASE_READINESS_DECISION",
-            "status": "OBSERVED_NOT_EFFECTIVENESS_CERTIFIED", "window": "2026-10",
-            "eligible": 0, "recurrences": 0, "false_blocks": None,
-            "human_review_minutes": None,
-            "evidence_urls": ["https://github.com/gmodrasa7-rgb/project-intersection-public/actions/runs/123"],
-            "limitation": "샘플 분모가 확인되지 않아 효과 측정 불가"})
+        obs = self._sample_observation()
+        obs["eligible"] = 0
+        obs["event_census"] = []
+        d["observations"].append(obs)
         self.reject(d, "MISSING_EXPOSURE_DENOMINATOR")
 
     def test_observation_without_receipt_is_rejected(self):
         d = copy.deepcopy(self.data)
-        d["observations"].append({
-            "id": "FLR-O0001", "action_id": "FLR-A001",
-                        "unit": "RELEASE_READINESS_DECISION",
-            "status": "OBSERVED_NOT_EFFECTIVENESS_CERTIFIED", "window": "2026-10",
-            "eligible": 5, "recurrences": 0, "false_blocks": None,
-            "human_review_minutes": None, "evidence_urls": [],
-            "limitation": "외부 로그가 확인되지 않아 효과 입증 불가"})
+        obs = self._sample_observation()
+        obs["eligible"] = 5
+        obs["evidence_urls"] = []
+        d["observations"].append(obs)
         self.reject(d, "UNVERIFIABLE_OBSERVATION_RECEIPT")
 
     def test_historical_observations_cannot_be_deleted(self):
