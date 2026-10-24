@@ -281,7 +281,8 @@ class ActionGateTests(unittest.TestCase):
         two = copy.deepcopy(one)
         two["id"] = "FLR-O0002"
         d["observations"] = [one, two]
-        self.reject(d, "CENSUS_DUPLICATE_OR_REUSED_EVENT")
+        with patch.object(gate, "_verified_github_run", return_value=True):
+            self.reject(d, "CENSUS_DUPLICATE_OR_REUSED_EVENT")
 
     def test_census_event_must_be_backed_by_declared_receipt(self):
         d = copy.deepcopy(self.data)
