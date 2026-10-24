@@ -31,6 +31,8 @@ class ActionGateTests(unittest.TestCase):
         self.assertEqual(report["pilot_actions"], 2)
         self.assertEqual(report["metric_contract_count"], 2)
         self.assertFalse(report["rate_efficacy_certified"])
+        self.assertFalse(report["population_completeness_certified"])
+        self.assertEqual(report["census_event_count"], 0)
         self.assertEqual(report["untriaged_case_count"], len(self.registry["cases"]) - 2)
         self.assertEqual(report["field_effectiveness_verified"], 0)
 
@@ -122,6 +124,14 @@ class ActionGateTests(unittest.TestCase):
             "evidence_urls": [
                 "https://github.com/gmodrasa7-rgb/project-intersection-public/actions/runs/123"
             ],
+            "census_coverage": "BOUNDED_SAMPLE_POPULATION_UNKNOWN",
+            "event_census": [{
+                "event_id": "claim:PR123:decision-1",
+                "unit": "RELEASE_READINESS_DECISION",
+                "outcome": "NO_FALSE_GREEN_OBSERVED",
+                "evidence_url":
+                    "https://github.com/gmodrasa7-rgb/project-intersection-public/actions/runs/123"
+            }],
             "limitation": "외부 실행이 존재해도 효과와 노출 분모는 독립 검증되지 않았다."
         }
 
@@ -241,6 +251,84 @@ class ActionGateTests(unittest.TestCase):
         with self.assertRaisesRegex(gate.ActionError,
                                     "ACTION_HISTORY_REWRITTEN"):
             gate.compare_history(newer, old)
+
+
+    def test_huge_free_form_denominator_fails_without_event_census(self):
+        d = copy.deepcopy(self.data)
+        obs = self._sample_observation()
+        obs["eligible"] = 1000000
+        d["observations"].append(obs)
+        self.reject(d, "CENSUS_COUNT_MISMATCH")
+
+    def test_false_zero_when_event_marks_recurrence_is_rejected(self):
+        d = copy.deepcopy(self.data)
+        obs = self._sample_observation()
+        obs["event_census"][0]["outcome"] = "FALSE_GREEN_OBSERVED"
+        d["observations"].append(obs)
+        self.reject(d, "CENSUS_OUTCOME_COUNT_MISMATCH")
+
+    def test_duplicate_event_identifier_cannot_inflate_denominator(self):
+        d = copy.deepcopy(self.data)
+        obs = self._sample_observation()
+        obs["eligible"] = 2
+        obs["event_census"].append(copy.deepcopy(obs["event_census"][0]))
+        d["observations"].append(obs)
+        self.reject(d, "CENSUS_DUPLICATE_OR_REUSED_EVENT")
+
+    def test_duplicate_event_across_observations_is_not_new_exposure(self):
+        d = copy.deepcopy(self.data)
+        one = self._sample_observation()
+        two = copy.deepcopy(one)
+        two["id"] = "FLR-O0002"
+        d["observations"] = [one, two]
+        self.reject(d, "CENSUS_DUPLICATE_OR_REUSED_EVENT")
+
+    def test_census_event_must_be_backed_by_declared_receipt(self):
+        d = copy.deepcopy(self.data)
+        obs = self._sample_observation()
+        obs["event_census"][0]["evidence_url"] = (
+            "https://github.com/gmodrasa7-rgb/project-intersection-public/actions/runs/999")
+        d["observations"].append(obs)
+        self.reject(d, "CENSUS_EVENT_MISSING_SOURCE")
+
+    def test_unsupported_outcome_and_cross_action_units_rejected(self):
+        d = copy.deepcopy(self.data)
+        obs = self._sample_observation()
+        obs["event_census"][0]["outcome"] = "UNMAPPED_FAILURE"
+        d["observations"].append(obs)
+        self.reject(d, "CENSUS_OUTCOME_INCOMPATIBLE")
+        d = copy.deepcopy(self.data)
+        obs = self._sample_observation()
+        obs["event_census"][0]["unit"] = "MATERIAL_CHANGED_PATH"
+        d["observations"].append(obs)
+        self.reject(d, "CENSUS_UNIT_MISMATCH")
+
+    def test_claimed_complete_population_is_not_certified(self):
+        d = copy.deepcopy(self.data)
+        obs = self._sample_observation()
+        obs["census_coverage"] = "COMPLETE_POPULATION"
+        d["observations"].append(obs)
+        self.reject(d, "CENSUS_POPULATION_FALSE_COMPLETENESS")
+        d = copy.deepcopy(self.data)
+        d["census_policy"]["rate_permission"] = "RATE_VERIFIED"
+        self.reject(d, "CENSUS_PROVENANCE_OVERCLAIM")
+
+    def test_enumerated_events_with_matching_counts_remain_noncausal(self):
+        d = copy.deepcopy(self.data)
+        obs = self._sample_observation()
+        obs["eligible"] = 2
+        obs["recurrences"] = 1
+        extra = copy.deepcopy(obs["event_census"][0])
+        extra["event_id"] = "claim:PR124:decision-2"
+        extra["outcome"] = "FALSE_GREEN_OBSERVED"
+        obs["event_census"].append(extra)
+        d["observations"].append(obs)
+        with patch.object(gate, "_verified_github_run", return_value=True):
+            report = self.validate(d)
+        self.assertEqual(report["census_event_count"], 2)
+        self.assertEqual(report["field_effectiveness_verified"], 0)
+        self.assertFalse(report["population_completeness_certified"])
+        self.assertFalse(report["rate_efficacy_certified"])
 
 
 if __name__ == "__main__":
