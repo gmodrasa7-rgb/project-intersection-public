@@ -176,5 +176,25 @@ class ActionGateTests(unittest.TestCase):
 
 
 
+    def test_receipt_network_target_fixed_and_lookalike_hosts_blocked(self):
+        url = self._sample_observation()["evidence_urls"][0]
+        with patch.object(gate, "urlopen", side_effect=OSError("temporary outage")) as net:
+            self.assertFalse(gate._verified_github_run(url, "2026-10"))
+            req = net.call_args.args[0]
+            self.assertEqual(req.full_url,
+                "https://api.github.com/repos/gmodrasa7-rgb/"
+                "project-intersection-public/actions/runs/123")
+            self.assertEqual(net.call_args.kwargs["timeout"], 10)
+        with patch.object(gate, "urlopen") as net:
+            self.assertFalse(gate._verified_github_run(
+                "https://github.com.evil.example/gmodrasa7-rgb/"
+                "project-intersection-public/actions/runs/123", "2026-10"))
+            self.assertFalse(gate._verified_github_run(
+                "https://github.com@evil.example/gmodrasa7-rgb/"
+                "project-intersection-public/actions/runs/123", "2026-10"))
+            self.assertFalse(gate._verified_github_run(url + "/attempts/1", "2026-10"))
+            net.assert_not_called()
+
+
 if __name__ == "__main__":
     unittest.main()
