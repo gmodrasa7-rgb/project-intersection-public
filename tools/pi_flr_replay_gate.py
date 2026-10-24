@@ -28,6 +28,7 @@ COMMANDS={
     "FLR_META":["python3","tools/pi_flr_audit.py"],
     "FLR_MUTANTS":["python3","-m","unittest","discover","-s","tests","-p","test_pi_flr_replay_gate.py"],
     "FLR_ALL_TESTS":["python3","-m","unittest","discover","-s","tests","-p","test_pi_flr_*.py"],
+    "MER_EI_SOURCE":["python3","tools/pi_flr_mer_ei_source_guard.py"],
 }
 # Match rule identifiers declared in the versioned data. These checks do real work.
 RULE_CHECKS={
@@ -39,6 +40,8 @@ RULE_CHECKS={
     "R06":("FLR_META","FLR_MUTANTS"),
     "R07":("FLR_META","FLR_ALL_TESTS"),
     "R08":("FLR_META","FLR_ALL_TESTS"),
+    "R09":("LANGUAGE","RISE_MANIFEST"),
+    "R10":("MER_EI_SOURCE","FLR_ALL_TESTS"),
 }
 
 
