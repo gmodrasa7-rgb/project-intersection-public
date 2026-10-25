@@ -76,3 +76,5 @@
 4. 2025 논문은 2023 집단주의 논쟁의 중국 행동계수 자체를 독립 재현한 실험은 **아님**. 이들의 별도 무작위 개입과 플랫폼 비교문제를 C18의 이질적 후속계보로 추가한 것.
 
 **검증 판정:** ZIP 진본성(공식 MD5) PASS; 현장 660/658·온라인 1043/960·1670/1496 수량 재현 PASS; 안전군 연락·QR 감소 재현 PASS; 논문 Fig.1 제목 N=1052 원자료와 CONFLICT; 사전등록 안전문구 vs 출판 조건 CONFLICT(설명 미확인); 직접 물품보존·타자 실효자율·강자의 내재동기 식별 NOT_OBSERVED; 전역 DOI 중복/원 논문 분석코드 완전 재실행 NOT_VERIFIED. 결론 `SEARCH_ACTIVE / SATURATION_NOT_VERIFIED / PI_CLAIM_HOLD` 보존. 창시 원문/E008 무결과/E009 42.35% 악화/독립검증 부재 변경 없음.
+
+- **재실행 도구 보존:** [Python 표준라이브러리 ZIP 해시·CSV 행수·조건별 전화/QR·χ² 재현기](../tools/verify_c18_hung_2025_raw.py). 공식 [Zenodo ZIP](https://zenodo.org/records/15040071/files/ResearchBox_2291.zip)을 별도로 내려받은 뒤 `python3 tools/verify_c18_hung_2025_raw.py <ZIP경로>` 실행. 2026-10-25 위와 동일한 ZIP으로 로컬 실행 **PASS**; 외부 환경 독립 실행은 미검증. 저자 전체 모델 재현과 구별.
