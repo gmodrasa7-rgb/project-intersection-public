@@ -128,11 +128,66 @@ class ReplayGateTests(unittest.TestCase):
         self.assertIn("NOT_FIELD_EFFECTIVENESS",out["scope"])
 
 
+    def test_current_reader_guard_code_has_precise_executable_replay(self):
+        for path, expected in (
+            ("tools/audit_pi_access.py", "PI_ACCESS"),
+            ("tools/check_readme_l0.py", "README_L0"),
+            (".github/workflows/public-repository-audit.yml", "FLR_ALL_TESTS"),
+        ):
+            plan=rg.planned_replay(self.data,[path])
+            self.assertIn(expected,plan["check_ids"])
+            self.assertEqual(plan["unmapped_material_paths"],[])
+        # No directory-wide exemption: an unknown Python edit remains blocked.
+        gap=rg.planned_replay(self.data,["tools/unclassified_analysis.py"])
+        self.assertEqual(gap["unmapped_material_paths"],["tools/unclassified_analysis.py"])
+
+
     def test_unmapped_python_change_blocks_scoped_success(self):
         plan=rg.planned_replay(self.data,["tools/unclassified_analysis.py"])
         self.assertEqual(plan["unmapped_material_paths"],["tools/unclassified_analysis.py"])
         result=rg.execute(plan,run=lambda *a,**k:self.fail("No allowed command"))
         self.assertEqual(result["status"],"BLOCKED_UNMAPPED_MATERIAL")
+
+    def test_c18_original_failure_paths_now_execute_relevant_checks(self):
+        paths=["PRIOR_ART_SATURATION_MAP_KO.md", "tools/verify_c18_hung_2025_raw.py"]
+        plan=rg.planned_replay(self.data,paths)
+        self.assertEqual(plan["check_ids"],["C18_RAW_TESTS","NAV_LINKS"])
+        self.assertEqual(plan["unmapped_material_paths"],[])
+        calls=[]
+        def fail_raw(cmd,**kwargs):
+            calls.append(cmd)
+            return SimpleNamespace(returncode=1 if "tests/test_c18_raw_verifier.py" in cmd else 0)
+        out=rg.execute(plan,run=fail_raw)
+        self.assertEqual(out["status"],"BLOCKED_FAILED")
+        self.assertEqual(out["failed_checks"],["C18_RAW_TESTS"])
+        self.assertEqual(len(calls),2)
+
+    def test_c18_mapping_does_not_exempt_neighboring_code_or_documents(self):
+        paths=["tools/verify_c18_hung_2025_raw.py", "tools/verify_c19_raw.py",
+               "PRIOR_ART_NEW_UNCLASSIFIED_KO.md"]
+        plan=rg.planned_replay(self.data,paths)
+        self.assertEqual(plan["unmapped_material_paths"],
+                         ["PRIOR_ART_NEW_UNCLASSIFIED_KO.md","tools/verify_c19_raw.py"])
+        out=rg.execute(plan,run=lambda *a,**k:SimpleNamespace(returncode=0))
+        self.assertEqual(out["status"],"BLOCKED_UNMAPPED_MATERIAL")
+
+    def test_c18_pair_and_test_changes_cannot_skip_inventory_or_raw_tests(self):
+        for lang in ("EN","KO"):
+            plan=rg.planned_replay(self.data,[
+                "research/PRIOR_ART_C18_CIVIC_HONESTY_PROXY_CONFLICT_2026-10-24_"+lang+".md"])
+            self.assertEqual(plan["check_ids"],["LANGUAGE","LANGUAGE_INVENTORY","NAV_LINKS"])
+        plan=rg.planned_replay(self.data,["tests/test_c18_raw_verifier.py"])
+        self.assertEqual(plan["check_ids"],["C18_RAW_TESTS"])
+        self.assertFalse(plan["unmapped_material_paths"])
+
+    def test_language_inventory_repair_has_actual_checks_and_stale_hash_guard(self):
+        plan=rg.planned_replay(self.data,["knowledge/language-edition-register.json"])
+        self.assertEqual(plan["check_ids"],["LANGUAGE","LANGUAGE_INVENTORY","RISE_MANIFEST"])
+        self.assertFalse(plan["unmapped_material_paths"])
+        # Explicit script execution fails if the test file is missing; discovery
+        # alone can return success after collecting zero tests.
+        self.assertEqual(rg.COMMANDS["C18_RAW_TESTS"],
+                         ["python3","tests/test_c18_raw_verifier.py","-v"])
 
     def test_unmapped_json_cannot_be_cleared_by_other_green_check(self):
         plan=rg.planned_replay(self.data,["README.md","experiments/e009/NEW_RESULT.json"])

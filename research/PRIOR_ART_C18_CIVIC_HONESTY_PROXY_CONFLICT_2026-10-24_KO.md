@@ -1,5 +1,6 @@
 # C18 — 정직성 현장실험·관측 대리지표 충돌 선행원저 감사
 
+- 언어 대응본: [English](PRIOR_ART_C18_CIVIC_HONESTY_PROXY_CONFLICT_2026-10-24_EN.md) — 2026-10-26 번역 추가; 독립 의미검토 미완료. 아래 날짜별 조사·결과 기록은 보존.
 - 조사일: 2026-10-24 KST
 - 연구축: VC · EI · MER · ECR · IVS-0R
 - 상태: **SEARCH_ACTIVE / SATURATION_NOT_VERIFIED / PI_CLAIM_HOLD**

@@ -24,6 +24,8 @@ jobs:
         run: python3 -m unittest discover -s tests -p 'test_pi_flr_prior_art_guard.py' -v
       - name: Regression replay metamorphic mutation tests
         run: python3 -m unittest discover -s tests -p 'test_pi_flr_replay_gate.py' -v
+      - name: C18 raw verifier adversarial regressions (synthetic fixtures, not source-data replication)
+        run: python3 tests/test_c18_raw_verifier.py -v
       - name: Offline scheduled failure watcher adversarial regressions
         run: python3 -m unittest discover -s tests -p 'test_pi_flr_watch.py' -v
       - name: Guard distinct E010 historical experiment identities and evidence status

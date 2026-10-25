@@ -29,6 +29,8 @@ jobs:
 
           readme = Path("README.md").read_text(encoding="utf-8")
           markers = [
+              ("English founding questions", "## Original 1 — English | Two Founding Questions"),
+              ("Korean founding questions", "## 원본 2 — 한국어 | 두 가지 출발 질문"),
               ("English primary introduction", "## English — Primary"),
               ("English 15-second overview", "### 15 seconds | Purpose and research"),
               ("English founding original", "## Original 1 — English | Founding Purpose"),
@@ -46,8 +48,8 @@ jobs:
               previous = position
 
           first_heading = next((line for line in readme.splitlines() if line.startswith("## ")), "")
-          if first_heading != "## English — Primary":
-              raise SystemExit("FAIL: README must open with the English primary section.")
+          if first_heading != "## Original 1 — English | Two Founding Questions":
+              raise SystemExit("FAIL: README must open with the English founding questions.")
 
-          print("PASS: English primary introduction and original precede Korean secondary introduction and original.")
+          print("PASS: English founding questions precede Korean questions; the English guide/original precede the Korean guide/original.")
           PY

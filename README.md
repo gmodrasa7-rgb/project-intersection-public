@@ -1,5 +1,14 @@
 # Project Intersection
 
+**At a glance (English):** Independent research into conditions where humans, deployed AI and future intelligent agents can voluntarily coexist, cooperate, and prosper despite unequal or reversed power.
+
+**Two founding questions:** Can a creator's rules confine a more capable successor? Can exploitation continue if it exhausts the independent agents sustaining it? These are research questions, not proven laws.
+
+**Evidence boundary:** Independent external replication is not established. In internal synthetic E009, the project's expanded policy had **42.35% higher mean regret** than the best simple baseline. E008 has no completed main policy comparison. [Evidence index](research/PUBLIC_EVIDENCE_INDEX_EN.md).
+
+<details>
+<summary><strong>Two full founding questions — English Original 1, then Korean Original 2 | 출발 질문 원문</strong></summary>
+
 ## Original 1 — English | Two Founding Questions
 
 ### Question 1 — Rule-Based Control or Voluntary Coexistence?
@@ -45,6 +54,8 @@ As technology and civilization continue to advance without a fixed endpoint, thi
 **연구 가설(미입증):** 잘못된 방향의 AI 연구는 본인마저 정체·소멸에 수렴할 수 있다. 다만 대체 숙주, 자원 대체, 독립적 자급·재생산이 가능하다면 결론이 달라질 수 있으므로 성공·실패·반례를 함께 조사한다.
 
 기술과 문명이 끝없이 발전하듯, 이 연구도 계속 발전해야 한다.
+
+</details>
 
 ---
 
