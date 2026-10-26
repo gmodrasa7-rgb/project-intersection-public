@@ -30,9 +30,24 @@ class FLRValidationTests(unittest.TestCase):
 
     def test_valid_initial_registry(self):
         out = flr.validate(self.record)
-        self.assertEqual(out["version"], "0.6.0")
-        self.assertEqual(out["cases"], 10)
-        self.assertEqual(out["controls"], 12)
+        self.assertEqual(out["version"], "0.7.0")
+        self.assertEqual(out["cases"], 11)
+        self.assertEqual(out["controls"], 13)
+
+    def test_regression_schedule_gap_not_hidden(self):
+        """FLR-0011: successful scheduled runs hours apart are not hourly coverage."""
+        observed = [
+            {"id": 39962281077, "name": watch.WATCH_NAME, "event": "schedule",
+             "head_branch": "main", "created_at": "2026-10-23T13:34:03Z"},
+            {"id": 40003451698, "name": watch.WATCH_NAME, "event": "schedule",
+             "head_branch": "main", "created_at": "2026-10-23T18:27:37Z"},
+        ]
+        result = watch.schedule_observability(
+            observed, now="2026-10-23T19:00:00Z")
+        self.assertEqual(result["state"], "OBSERVED_GAP_OR_STALENESS")
+        self.assertGreater(result["largest_observed_interrun_gap_minutes"], 290)
+        self.assertEqual(result["scheduler_cause"], "UNKNOWN")
+        self.assertFalse(result["independent_heartbeat_verified"])
 
     def test_regression_original_naming_failure(self):
         """Original FLR-0001 unnamed ledger is rejected by the real language guard."""
@@ -240,21 +255,21 @@ class FLRValidationTests(unittest.TestCase):
 
     def test_case_deletion_against_prior_version_rejected(self):
         newer = self.case()
-        newer["release_version"] = "0.6.1"
+        newer["release_version"] = "0.7.1"
         newer["cases"] = newer["cases"][1:]
         with self.assertRaisesRegex(flr.FLRError, "HISTORICAL_CASE_DELETED"):
             flr.compare_history(newer, self.record)
 
     def test_case_metadata_rewrite_against_prior_version_rejected(self):
         newer = self.case()
-        newer["release_version"] = "0.6.1"
+        newer["release_version"] = "0.7.1"
         newer["cases"][0]["root_cause"] = "silently rewritten"
         with self.assertRaisesRegex(flr.FLRError, "HISTORICAL_CASE_METADATA_REWRITTEN"):
             flr.compare_history(newer, self.record)
 
     def test_event_erasal_against_prior_version_rejected(self):
         newer = self.case()
-        newer["release_version"] = "0.6.1"
+        newer["release_version"] = "0.7.1"
         newer["cases"][0]["events"][0]["note"] = "rewritten history"
         with self.assertRaisesRegex(flr.FLRError, "HISTORICAL_EVIDENCE_REWRITTEN"):
             flr.compare_history(newer, self.record)
@@ -268,20 +283,20 @@ class FLRValidationTests(unittest.TestCase):
         newer["cases"][0]["events"].append(fresh)
         with self.assertRaisesRegex(flr.FLRError, "VERSION_BUMP_REQUIRED"):
             flr.compare_history(newer, self.record)
-        newer["release_version"] = "0.6.1"
+        newer["release_version"] = "0.7.1"
         self.assertTrue(flr.compare_history(newer, self.record))
-        self.assertEqual(flr.validate(newer)["cases"], 10)
+        self.assertEqual(flr.validate(newer)["cases"], 11)
 
     def test_control_deletion_against_prior_version_rejected(self):
         newer = self.case()
-        newer["release_version"] = "0.6.1"
+        newer["release_version"] = "0.7.1"
         newer["control_registry"] = newer["control_registry"][1:]
         with self.assertRaisesRegex(flr.FLRError, "HISTORICAL_CONTROL_REMOVED"):
             flr.compare_history(newer, self.record)
 
     def test_version_only_update_rejected(self):
         newer = self.case()
-        newer["release_version"] = "0.6.1"
+        newer["release_version"] = "0.7.1"
         with self.assertRaisesRegex(flr.FLRError, "EMPTY_VERSION_BUMP"):
             flr.compare_history(newer, self.record)
 

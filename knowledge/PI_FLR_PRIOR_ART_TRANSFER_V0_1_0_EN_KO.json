@@ -1,8 +1,8 @@
 {
   "id": "PI-FLR-PRIOR-ART-TRANSFER",
   "schema_version": "0.1.0",
-  "version": "0.3.1",
-  "as_of": "2026-10-24",
+  "version": "0.4.1",
+  "as_of": "2026-10-26",
   "scope": "PRIOR_ART_SYNTHESIS_AND_OPERATIONAL_CONTROL_NOT_EMPIRICAL_AI_SELF_IMPROVEMENT",
   "language_order": [
     "English primary",
@@ -181,6 +181,15 @@
       "url": "https://slsa.dev/spec/v1.2/",
       "lesson": "A build or execution receipt needs traceable inputs, builder identity and verifiable linkage to exact artifact, with explicit trust and incompleteness boundaries.",
       "limitation": "A locally generated JSON log with commit IDs is NOT a signed SLSA attestation and must never be labeled one."
+    },
+    {
+      "id": "S20",
+      "title": "GitHub Actions troubleshooting: scheduled runs may be delayed or dropped",
+      "lineage": "GITHUB_ACTIONS_PROVIDER_DOCS",
+      "grade": "OPERATIONAL_PRIMARY",
+      "url": "https://docs.github.com/en/actions/how-tos/troubleshoot-workflows",
+      "lesson": "Cron configuration is not a delivery guarantee; inspect actual workflow-run observations and preserve missing or delayed coverage as uncertainty.",
+      "limitation": "Provider documentation explains possible delays or drops but cannot establish the cause of any specific gap in this repository."
     }
   ],
   "principles": [
@@ -419,6 +428,27 @@
       "adoption": "Store exact changed-path count, bounded command verdicts and unmatched-material status; do not relabel a workflow-generated JSON receipt as a signed external attestation.",
       "verification": "Check that missing mapping, missing baseline, failed subprocess and tampered check plan never become an all-pass, and that status remains NOT_FIELD_EFFECTIVENESS.",
       "transfer_status": "OPERATIONAL_DESIGN_NOT_FIELD_VALIDATED"
+    },
+    {
+      "id": "P11",
+      "priority": "P0",
+      "title_en": "Scheduled monitor liveness must be measured, not inferred from green executions",
+      "title_ko": "예약 감시의 생존성과 실행 공백은 성공 표시가 아닌 실제 시각으로 측정",
+      "support": [
+        "S20",
+        "S05",
+        "S01"
+      ],
+      "challenge": [
+        "S19",
+        "S09"
+      ],
+      "cases": [
+        "FLR-0011"
+      ],
+      "adoption": "Compute observed scheduled-run intervals and freshness separately from job success; report UNKNOWN for truncated or insufficient samples, and require an external monitor before claiming independent liveness.",
+      "verification": "Adversarial tests use two successful jobs five hours apart, a manual run inserted between them, partial API windows and a lone fresh run; none may certify reliable hourly monitoring.",
+      "transfer_status": "OPERATIONAL_DESIGN_NOT_FIELD_VALIDATED"
     }
   ],
   "preflight": [
@@ -555,6 +585,21 @@
     },
     {
       "id": "R09",
+      "match": "tools/pi_flr_watch.py",
+      "cases": [
+        "FLR-0011"
+      ],
+      "controls": [
+        "FLR-C13"
+      ],
+      "checkpoints": [
+        "Observed scheduled starts, not only declared cron",
+        "Manual and push runs do not fill schedule gaps",
+        "Unknown provider cause, incomplete samples and no independent heartbeat"
+      ]
+    },
+    {
+      "id": "R10",
       "match": "knowledge/language-edition-register.json",
       "cases": [
         "FLR-0010"
@@ -565,7 +610,8 @@
       "checkpoints": [
         "New bilingual Markdown inventory agrees with actual tracked files",
         "No machine result upgrades semantic-translation review status",
-        "Decision-roadmap source links stay auditable"
+        "Decision-roadmap source links stay auditable",
+        "Changed language inventory also passes its dependent PI-RISE publication Git blob manifest"
       ]
     }
   ],
@@ -654,6 +700,13 @@
       "independent_effectiveness_receipts": [],
       "recurrence_window": "UNOBSERVED",
       "limitation": "Not independently field-verified: no long-term data yet show recurrence reduction."
+    },
+    {
+      "case_id": "FLR-0011",
+      "status": "NOT_OBSERVED",
+      "independent_effectiveness_receipts": [],
+      "recurrence_window": "UNOBSERVED",
+      "limitation": "Not independently field-verified: no proof the scheduler will fire hourly or that the self-watcher will detect its own indefinite silence."
     }
   ],
   "counterclaims": [

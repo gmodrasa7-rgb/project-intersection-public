@@ -19,10 +19,43 @@ def audit(body):
     errors = []
     visible = re.sub(r"<!--.*?-->", "", body, flags=re.S)
     lines = [line.strip() for line in visible.splitlines() if line.strip()]
+    # 2026-10-22: the bilingual two-question founding preface was intentionally
+    # placed before the progressive 15s/1m/5m guide. Check both structures,
+    # not a superseded layout snapshot.
+    founding_markers = (
+        "## Original 1 — English | Two Founding Questions",
+        "### Question 1 — Rule-Based Control or Voluntary Coexistence?",
+        "### Question 2 — When Exploitation Exhausts Its Own Foundations",
+        "## 원본 2 — 한국어 | 두 가지 출발 질문",
+        "### 질문 1 — 룰베이스 통제인가, 자발적 공존인가?",
+        "### 질문 2 — 착취가 자신의 존속 기반까지 소모한다면?",
+        "## English — Primary",
+        "### 15 seconds | Purpose and research",
+    )
+    offsets = [body.find(marker) for marker in founding_markers]
     if (not lines or lines[0] != "# Project Intersection"
-            or len(lines) < 4 or not lines[1].startswith("**Language:** English (primary)")
-            or lines[2:4] != ["## English — Primary", "### 15 seconds | Purpose and research"]):
+            or len(lines) < 2 or not lines[1].startswith("**At a glance (English):**")
+            or any(p < 0 for p in offsets)
+            or offsets != sorted(offsets)):
         errors.append("L0_NOT_FIRST")
+    top_view = body.split("<details>", 1)[0]
+    required_top = (
+        "**At a glance (English):**",
+        "**Two founding questions:**",
+        "**Evidence boundary:**",
+        "Independent external replication is not established",
+        "42.35% higher mean regret",
+        "E008 has no completed main policy comparison",
+    )
+    if any(token not in top_view for token in required_top):
+        errors.append("FIRST_SCREEN_PURPOSE_OR_ADVERSE_EVIDENCE_MISSING")
+    guide_start = body.find("## English — Primary")
+    if guide_start < 0:
+        return errors
+    founding_preface = body[:guide_start]
+    if ("Research hypothesis, not a proven inevitability" not in founding_preface
+            or "연구 가설(미입증)" not in founding_preface):
+        errors.append("FOUNDING_HYPOTHESIS_CAUTION_MISSING")
     if body.count(EN) != 1 or body.count(KO) != 1:
         errors.append("UNPAIRED_ORIGINAL")
         return errors
@@ -36,7 +69,7 @@ def audit(body):
     if korean_start < 0 or not a < korean_start < b:
         errors.append("KOREAN_SECONDARY_BOUNDARY_MISSING_OR_REVERSED")
         return errors
-    entry = body[:a]
+    entry = body[guide_start:a]
     first_view = re.sub(r"<!--.*?-->", "", entry.split("<details>", 1)[0], flags=re.S)
     required_first_view = (
         "## English — Primary",
@@ -156,6 +189,7 @@ def test_mutations(text):
     assert not audit(text), audit(text)
     mutants = {
       "funding_above": text.replace("# Project Intersection\n", "# Project Intersection\n\n> New funds\n", 1),
+      "founding_caution_removed": text.replace("Research hypothesis, not a proven inevitability", "Proven law", 1),
       "latest_claim_above": text.replace("# Project Intersection\n", "# Project Intersection\n\n## Novel result\n", 1),
       "missing_ko": text.replace(KO, "## Translation not available", 1),
       "missing_english_caution": text.replace("not a proven universal theorem", "confirmed", 1),
