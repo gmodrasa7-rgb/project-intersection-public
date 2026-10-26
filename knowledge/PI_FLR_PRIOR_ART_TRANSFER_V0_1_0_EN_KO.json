@@ -554,7 +554,7 @@
       ]
     },
     {
-      "id": "R09",
+      "id": "R10",
       "match": "knowledge/language-edition-register.json",
       "cases": [
         "FLR-0010"
@@ -565,7 +565,8 @@
       "checkpoints": [
         "New bilingual Markdown inventory agrees with actual tracked files",
         "No machine result upgrades semantic-translation review status",
-        "Decision-process source links stay auditable"
+        "Decision-process source links stay auditable",
+        "Changed language inventory also passes dependent PI-RISE publication Git blob manifest"
       ]
     }
   ],
