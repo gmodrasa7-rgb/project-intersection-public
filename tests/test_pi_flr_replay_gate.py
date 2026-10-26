@@ -128,6 +128,20 @@ class ReplayGateTests(unittest.TestCase):
         self.assertIn("NOT_FIELD_EFFECTIVENESS",out["scope"])
 
 
+    def test_current_reader_guard_code_has_precise_executable_replay(self):
+        for path, expected in (
+            ("tools/audit_pi_access.py", "PI_ACCESS"),
+            ("tools/check_readme_l0.py", "README_L0"),
+            (".github/workflows/public-repository-audit.yml", "FLR_ALL_TESTS"),
+        ):
+            plan=rg.planned_replay(self.data,[path])
+            self.assertIn(expected,plan["check_ids"])
+            self.assertEqual(plan["unmapped_material_paths"],[])
+        # No directory-wide exemption: an unknown Python edit remains blocked.
+        gap=rg.planned_replay(self.data,["tools/unclassified_analysis.py"])
+        self.assertEqual(gap["unmapped_material_paths"],["tools/unclassified_analysis.py"])
+
+
     def test_unmapped_python_change_blocks_scoped_success(self):
         plan=rg.planned_replay(self.data,["tools/unclassified_analysis.py"])
         self.assertEqual(plan["unmapped_material_paths"],["tools/unclassified_analysis.py"])
