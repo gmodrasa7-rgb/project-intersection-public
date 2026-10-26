@@ -25,6 +25,8 @@ COMMANDS={
     "RISE_MANIFEST":["python3","tools/pi_rise_manifest_guard.py"],
     "E010_LINEAGE":["python3","tools/pi_flr_experiment_identity.py"],
     "NAV_LINKS":["python3","tools/check_public_navigation.py","--strict-all"],
+    "BILINGUAL_INVENTORY":["python3","tools/audit_bilingual_navigation.py","--self-test"],
+    "ROADMAP_BILINGUAL":["python3","tools/check_roadmap_bilingual_gate.py","--self-test"],
     "PI_ACCESS":["python3","tools/audit_pi_access.py","--self-test"],
     "FLR_META":["python3","tools/pi_flr_audit.py"],
     "FLR_MUTANTS":["python3","-m","unittest","discover","-s","tests","-p","test_pi_flr_replay_gate.py"],
@@ -41,12 +43,15 @@ RULE_CHECKS={
     "R07":("FLR_META","FLR_ALL_TESTS"),
     "R08":("FLR_META","FLR_ALL_TESTS"),
     "R09":("FLR_META","FLR_ALL_TESTS"),
+    "R10":("BILINGUAL_INVENTORY","RISE_MANIFEST"),
 }
 
 
 # Precise, reviewed checks for existing material paths not represented in the
 # historical failure taxonomy. Unlisted material changes still block promotion.
 DIRECT_PATH_CHECKS = {
+    "tools/check_roadmap_bilingual_gate.py": ("ROADMAP_BILINGUAL",),
+    "research/PI_ROADMAP_DECISION_EVIDENCE_V0_2_4_EN_KO.md": ("ROADMAP_BILINGUAL",),
     "tools/audit_pi_access.py": ("PI_ACCESS", "NAV_LINKS"),
     "tools/check_readme_l0.py": ("README_L0",),
     ".github/workflows/public-repository-audit.yml": ("README_L0", "NAV_LINKS", "FLR_ALL_TESTS"),

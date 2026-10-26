@@ -16,6 +16,7 @@ import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "research/PI_ROADMAP_OPERATIONAL_GATES_V0_2_3_EN_KO.md"
+AMENDMENT = ROOT / "research/PI_ROADMAP_DECISION_EVIDENCE_V0_2_4_EN_KO.md"
 EN_HEAD = "## Original 1 — English (complete canonical text)"
 KO_HEAD = "## 원본2 — 한국어 (동등한 전문 정본)"
 END = "**Change receipt / 변경 영수증:**"
@@ -196,14 +197,105 @@ def self_test(raw: str) -> dict:
     return failures
 
 
+def audit_amendment(raw: str, e008: dict, e009: dict) -> list[str]:
+    """D24 structure and frozen-result parity only; never translation certification."""
+    errors = []
+    en_head = "## Original 1 — English (full)"
+    ko_head = "## 원본2 — 한국어 (동등한 전문)"
+    if (raw.count(en_head) != 1 or raw.count(ko_head) != 1
+            or raw.index(en_head) > raw.index(ko_head)):
+        return ["D24_EDITION_MISSING_DUPLICATED_OR_REVERSED"]
+    front, rest = raw.split(en_head, 1)
+    en, rest = rest.split(ko_head, 1)
+    ko = rest.split(END, 1)[0]
+    if "PROPOSED METHOD / NOT EXECUTED" not in front or END not in rest:
+        errors.append("D24_PROPOSAL_OR_CHANGE_RECEIPT_LOST")
+    ids = [f"D24-{i:02d}" for i in range(1, 7)]
+    states = ("GO_SCOPED", "HOLD_EVIDENCE", "HOLD_EXECUTABILITY",
+              "NEGATIVE_PRESERVED", "NOT_COMPARABLE", "STOP_RISK")
+    criteria = {k: v for k, v in e009["survival_criteria"].items()
+                if k.startswith("criterion_")}
+    failed = sum(v is False for v in criteria.values())
+    percent = f'{-100 * e009["project_v3_vs_best_simple_regret_improvement"]:.2f}%'
+    source_links = []
+    for lang, chapter in (("EN", en), ("KO", ko)):
+        headings = re.findall(r"^### (D24-\d\d)\.", chapter, re.M)
+        if headings != ids:
+            errors.append("D24_SECTION_ORDER_OR_COUNT:" + lang)
+            continue
+        parts = re.split(r"^### (D24-\d\d)\.[^\n]*\n", chapter, flags=re.M)
+        sections = dict(zip(parts[1::2], parts[2::2]))
+        source_links.append(set(re.findall(r"https://[^)\s]+", sections["D24-01"])))
+        if not all(s in sections["D24-02"] for s in states):
+            errors.append("D24_DECISION_STATE_LOST:" + lang)
+        fields = re.findall(r"^(\d+)\. \*\*", sections["D24-03"], re.M)
+        if fields != list("1234567"):
+            errors.append("D24_RECEIPT_FIELD_LOST_OR_DUPLICATED:" + lang)
+        if re.findall(r"\*\*S(\d+)\*\*", sections["D24-04"]) != list("123456"):
+            errors.append("D24_SIX_STAGE_INTERFACE_LOST:" + lang)
+        example = sections["D24-05"]
+        cases = e008["case_count"]
+        ready = e008["full_decision_benchmark_ready_cases"]
+        required = ([f"{cases} cases", f"**{ready}** full five-policy", percent,
+                     f"failed {failed}/{len(criteria)}", "worse", "Internal",
+                     "Competitive-loss metric favored"] if lang == "EN" else
+                    [f"{cases}사례", f"**{ready}개**", percent,
+                     f"{len(criteria)}개 중 {failed}개 실패", "악화", "내부 합성",
+                     "경쟁손실 지표는 V3에 유리"])
+        if (e008["baseline_count"] != 5 or ready != 0
+                or e009["project_v3_vs_best_simple_regret_improvement"] >= 0
+                or any(token not in example for token in required)):
+            errors.append("D24_FROZEN_SOURCE_CLAIM_DRIFT:" + lang)
+        trial = sections["D24-06"]
+        unexecuted = ("has **not** executed that test" if lang == "EN" else
+                      "이 시험은 아직 실행하지 않았다")
+        if "B0" not in trial or "B1" not in trial or unexecuted not in trial:
+            errors.append("D24_UNEXECUTED_COMPARISON_BOUNDARY_LOST:" + lang)
+    if len(source_links) != 2 or len(source_links[0]) < 5 or source_links[0] != source_links[1]:
+        errors.append("D24_PRIOR_ART_EDITION_LINK_DRIFT")
+    return errors
+
+
+def amendment_self_test(raw: str, e008: dict, e009: dict) -> dict:
+    ko_head = "## 원본2 — 한국어 (동등한 전문)"
+    en, ko = raw.split(ko_head, 1)
+    samples = {
+        "deleted_KO": en,
+        "reversed_editions": ko_head + ko + en,
+        "missing_KO_section": en + ko_head + ko.replace("### D24-03.", "### Missing.", 1),
+        "missing_KO_field": en + ko_head + ko.replace("6. **영향 당사자·자원:", "**영향 당사자·자원:", 1),
+        "missing_KO_state": en + ko_head + ko.replace("STOP_RISK", "STOP", 1),
+        "missing_EN_stage": en.replace("**S4**", "**stage**", 1) + ko_head + ko,
+        "extra_EN_stage": en.replace("### D24-05.", "**S7** extra stage.\n\n### D24-05.", 1) + ko_head + ko,
+        "extra_KO_field": en + ko_head + ko.replace("### D24-04.", "8. **추가:** 허가되지 않은 필드.\n\n### D24-04.", 1),
+        "false_EN_E008_result": en.replace("**0** full five-policy", "**1** full five-policy", 1) + ko_head + ko,
+        "wrong_KO_regret": en + ko_head + ko.replace("42.35%", "4.235%", 1),
+        "wrong_EN_failure_count": en.replace("failed 3/4", "failed 1/4", 1) + ko_head + ko,
+        "false_KO_trial_completion": en + ko_head + ko.replace("이 시험은 아직 실행하지 않았다", "시험을 완료했다", 1),
+        "one_sided_source_link": en + ko_head + ko.replace("https://www.darpa.mil/about/heilmeier-catechism", "https://example.invalid/source", 1),
+    }
+    failures = {"clean": len(audit_amendment(raw, e008, e009))}
+    for key, altered in samples.items():
+        assert altered != raw, key
+        failures[key] = len(audit_amendment(altered, e008, e009))
+    if failures["clean"] or any(v == 0 for k, v in failures.items() if k != "clean"):
+        raise AssertionError("D24 negative control failed: " + json.dumps(failures))
+    return failures
+
+
 if __name__ == "__main__":
     args = argparse.ArgumentParser()
     args.add_argument("--self-test", action="store_true")
     ns = args.parse_args()
     text = SOURCE.read_text(encoding="utf-8")
     state = json.loads(STATE.read_text(encoding="utf-8"))
-    issues = audit(text) + audit_work_order(state, text)
+    amendment = AMENDMENT.read_text(encoding="utf-8")
+    e008 = json.loads((ROOT / "experiments/e008/EXECUTABILITY_AUDIT.json").read_text(encoding="utf-8"))
+    e009 = json.loads((ROOT / "experiments/e009/RESULT.json").read_text(encoding="utf-8"))
+    issues = audit(text) + audit_work_order(state, text) + audit_amendment(amendment, e008, e009)
     print(json.dumps({"checked": SOURCE.relative_to(ROOT).as_posix(),
+                      "amendment_checked": AMENDMENT.relative_to(ROOT).as_posix(),
+                      "amendment_EN_KO_pairs": 6,
                       "EN_KO_pairs": len(IDS), "six_stages": True,
                       "structural_errors": len(issues),
                       "scope": "STRUCTURAL_ONLY_NOT_SEMANTIC_OR_SCIENTIFIC"},
@@ -217,3 +309,5 @@ if __name__ == "__main__":
               json.dumps(self_test(text), ensure_ascii=False))
         print("WORK_ORDER_INJECTION_RESULTS:",
               json.dumps(work_order_self_test(state, text), ensure_ascii=False))
+        print("D24_INJECTION_RESULTS:",
+              json.dumps(amendment_self_test(amendment, e008, e009), ensure_ascii=False))

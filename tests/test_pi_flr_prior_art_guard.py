@@ -10,6 +10,11 @@ sys.path.insert(0,str(ROOT/"tools"))
 import pi_flr_prior_art_guard as p
 
 
+def next_patch(version):
+    major, minor, patch = map(int, version.split("."))
+    return f"{major}.{minor}.{patch + 1}"
+
+
 class PriorArtTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
@@ -105,7 +110,7 @@ class PriorArtTests(unittest.TestCase):
             p.validate(self.data,self.cases,broken)
 
     def test_historic_source_cannot_be_rewritten_by_version(self):
-        d=copy.deepcopy(self.data);d["version"]="0.4.1"
+        d=copy.deepcopy(self.data);d["version"]=next_patch(self.data["version"])
         d["sources"][0]["lesson"]="a different unsupported reading"
         with self.assertRaisesRegex(p.PriorArtError,"HISTORIC_TRANSFER_REWRITTEN"):
             p.compare_history(d,self.data)
@@ -118,7 +123,7 @@ class PriorArtTests(unittest.TestCase):
             "limitation":"No subsequent real-world recurrence monitoring available."})
         with self.assertRaisesRegex(p.PriorArtError,"UNVERSIONED_PRIOR_ART_CHANGE"):
             p.compare_history(d,self.data)
-        d["version"]="0.4.1"
+        d["version"]=next_patch(self.data["version"])
         self.assertTrue(p.compare_history(d,self.data))
         self.check(d)
 

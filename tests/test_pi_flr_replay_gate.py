@@ -1,6 +1,7 @@
 """C11 replay: real-check invocation and metamorphic counterexamples.
 
-Tests execute a fake subprocess to check orchestration, not the real tools.
+Tests generally fake subprocesses to check orchestration; the stale-language
+regression additionally calls the real publication hash audit in-process.
 The deployed CI invokes those tools on the actual changed repository.
 """
 import copy
@@ -13,6 +14,7 @@ from types import SimpleNamespace
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/"tools"))
 import pi_flr_replay_gate as rg
+import pi_rise_manifest_guard as rise
 
 
 class ReplayGateTests(unittest.TestCase):
@@ -164,6 +166,53 @@ class ReplayGateTests(unittest.TestCase):
         p=rg.planned_replay(self.data,["knowledge/PI_FLR_CASES_V0_1_0.json"])
         self.assertEqual(p["check_ids"],["FLR_ALL_TESTS","FLR_META"])
         self.assertFalse(p["unmapped_material_paths"])
+
+    def test_language_registry_change_runs_full_inventory_and_cannot_false_green(self):
+        path = "knowledge/language-edition-register.json"
+        plan = rg.planned_replay(self.data, [path])
+        self.assertEqual(plan["check_ids"], ["BILINGUAL_INVENTORY", "RISE_MANIFEST"])
+        self.assertEqual(plan["unmapped_material_paths"], [])
+        bad = copy.deepcopy(self.data)
+        bad["preflight"] = [r for r in bad["preflight"] if r["id"] != "R10"]
+        with self.assertRaisesRegex(rg.ReplayError, "RULE_AND_EXECUTOR_DRIFT"):
+            rg.planned_replay(bad, [path])
+
+    def test_valid_inventory_cannot_hide_its_stale_publication_hash(self):
+        # PR #360 changed this artifact while its manifest retained the main SHA.
+        path = "knowledge/language-edition-register.json"
+        manifest = json.loads((ROOT / rise.MANIFEST).read_text(encoding="utf-8"))
+        next(x for x in manifest["artifacts"] if x["path"] == path)["git_blob_sha"] = (
+            "85ad3050cb8d07f2b54eee9b15877433dfd66cf0")
+        with self.assertRaisesRegex(rise.ManifestGuardError, "STALE_GIT_BLOB_SHA:" + path):
+            rise.audit(manifest, ROOT)
+        def runner(cmd, **kwargs):
+            if cmd == rg.COMMANDS["RISE_MANIFEST"]:
+                try:
+                    rise.audit(manifest, ROOT)
+                except rise.ManifestGuardError:
+                    return SimpleNamespace(returncode=1)
+            return SimpleNamespace(returncode=0)
+        out = rg.execute(rg.planned_replay(self.data, [path]), run=runner)
+        self.assertEqual(out["status"], "BLOCKED_FAILED")
+        self.assertEqual(out["failed_checks"], ["RISE_MANIFEST"])
+
+    def test_schedule_and_language_controls_cannot_replace_each_other(self):
+        watched = rg.planned_replay(self.data, ["tools/pi_flr_watch.py"])
+        self.assertEqual(watched["check_ids"], ["FLR_ALL_TESTS", "FLR_META", "FLR_MUTANTS"])
+        combined = rg.planned_replay(self.data, ["tools/pi_flr_watch.py",
+                                                "knowledge/language-edition-register.json"])
+        self.assertEqual(combined["check_ids"],
+                         ["BILINGUAL_INVENTORY", "FLR_ALL_TESTS", "FLR_META", "FLR_MUTANTS", "RISE_MANIFEST"])
+
+    def test_d24_document_and_validator_cannot_receive_navigation_only_coverage(self):
+        for path in ("research/PI_ROADMAP_DECISION_EVIDENCE_V0_2_4_EN_KO.md",
+                     "tools/check_roadmap_bilingual_gate.py"):
+            plan = rg.planned_replay(self.data, [path])
+            self.assertIn("ROADMAP_BILINGUAL", plan["check_ids"])
+            out = rg.execute(plan, run=lambda cmd, **kw: SimpleNamespace(
+                returncode=1 if cmd == rg.COMMANDS["ROADMAP_BILINGUAL"] else 0))
+            self.assertEqual(out["status"], "BLOCKED_FAILED")
+            self.assertEqual(out["failed_checks"], ["ROADMAP_BILINGUAL"])
 
     def test_flr_test_file_change_is_mapped(self):
         p=rg.planned_replay(self.data,["tests/test_pi_flr_replay_gate.py"])
