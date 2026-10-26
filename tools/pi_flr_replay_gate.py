@@ -25,6 +25,7 @@ COMMANDS={
     "RISE_MANIFEST":["python3","tools/pi_rise_manifest_guard.py"],
     "E010_LINEAGE":["python3","tools/pi_flr_experiment_identity.py"],
     "NAV_LINKS":["python3","tools/check_public_navigation.py","--strict-all"],
+    "BILINGUAL_INVENTORY":["python3","tools/audit_bilingual_navigation.py","--self-test"],
     "FLR_META":["python3","tools/pi_flr_audit.py"],
     "FLR_MUTANTS":["python3","-m","unittest","discover","-s","tests","-p","test_pi_flr_replay_gate.py"],
     "FLR_ALL_TESTS":["python3","-m","unittest","discover","-s","tests","-p","test_pi_flr_*.py"],
@@ -39,6 +40,7 @@ RULE_CHECKS={
     "R06":("FLR_META","FLR_MUTANTS"),
     "R07":("FLR_META","FLR_ALL_TESTS"),
     "R08":("FLR_META","FLR_ALL_TESTS"),
+    "R09":("BILINGUAL_INVENTORY",),
 }
 
 
