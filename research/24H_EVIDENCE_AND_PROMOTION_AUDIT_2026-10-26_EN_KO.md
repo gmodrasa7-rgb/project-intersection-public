@@ -2,7 +2,7 @@
 
 Snapshot: 2026-10-26 17:55 KST. Review window: approximately the preceding 24 hours. This is an **append-only decision snapshot**, not a new experiment, a complete review of every conversation, or an authorization to merge. Source-of-truth priority: actual GitHub head SHA/check runs > PR description > conversational report > inference.
 
-## English — Primary
+## Original 1 — English / Primary
 
 ### 1. Observed research and software results
 
@@ -31,7 +31,7 @@ Snapshot: 2026-10-26 17:55 KST. Review window: approximately the preceding 24 ho
 3. Run C18's recorded reproducer from pinned public data and record dataset hash, commands, denominators and discrepancies separately from the author's adjusted models; investigate preregistration treatment-text difference before claiming registered reproduction.
 4. Keep every unresolved gate **PROMOTION_HOLD**; no rule changes, deletion, auto-merge, or financial decisions.
 
-## 한국어 — Secondary
+## 원본 2 — 한국어 / Secondary
 
 ### 1. 실제 확인된 성과와 경계
 
