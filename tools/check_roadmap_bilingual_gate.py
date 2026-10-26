@@ -228,10 +228,10 @@ def audit_amendment(raw: str, e008: dict, e009: dict) -> list[str]:
         source_links.append(set(re.findall(r"https://[^)\s]+", sections["D24-01"])))
         if not all(s in sections["D24-02"] for s in states):
             errors.append("D24_DECISION_STATE_LOST:" + lang)
-        fields = re.findall(r"^([1-7])\. \*\*", sections["D24-03"], re.M)
+        fields = re.findall(r"^(\d+)\. \*\*", sections["D24-03"], re.M)
         if fields != list("1234567"):
             errors.append("D24_RECEIPT_FIELD_LOST_OR_DUPLICATED:" + lang)
-        if not all(f"**S{i}**" in sections["D24-04"] for i in range(1, 7)):
+        if re.findall(r"\*\*S(\d+)\*\*", sections["D24-04"]) != list("123456"):
             errors.append("D24_SIX_STAGE_INTERFACE_LOST:" + lang)
         example = sections["D24-05"]
         cases = e008["case_count"]
@@ -266,6 +266,8 @@ def amendment_self_test(raw: str, e008: dict, e009: dict) -> dict:
         "missing_KO_field": en + ko_head + ko.replace("6. **영향 당사자·자원:", "**영향 당사자·자원:", 1),
         "missing_KO_state": en + ko_head + ko.replace("STOP_RISK", "STOP", 1),
         "missing_EN_stage": en.replace("**S4**", "**stage**", 1) + ko_head + ko,
+        "extra_EN_stage": en.replace("### D24-05.", "**S7** extra stage.\n\n### D24-05.", 1) + ko_head + ko,
+        "extra_KO_field": en + ko_head + ko.replace("### D24-04.", "8. **추가:** 허가되지 않은 필드.\n\n### D24-04.", 1),
         "false_EN_E008_result": en.replace("**0** full five-policy", "**1** full five-policy", 1) + ko_head + ko,
         "wrong_KO_regret": en + ko_head + ko.replace("42.35%", "4.235%", 1),
         "wrong_EN_failure_count": en.replace("failed 3/4", "failed 1/4", 1) + ko_head + ko,
