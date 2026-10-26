@@ -1,8 +1,8 @@
 {
   "id": "PI-FLR-PRIOR-ART-TRANSFER",
   "schema_version": "0.1.0",
-  "version": "0.3.0",
-  "as_of": "2026-10-22",
+  "version": "0.3.1",
+  "as_of": "2026-10-26",
   "scope": "PRIOR_ART_SYNTHESIS_AND_OPERATIONAL_CONTROL_NOT_EMPIRICAL_AI_SELF_IMPROVEMENT",
   "language_order": [
     "English primary",
@@ -551,6 +551,22 @@
         "Test modifications re-run the FLR audit and mutation test suite",
         "Failure injection actually changes expected outcome",
         "No false-green changed-file coverage"
+      ]
+    },
+    {
+      "id": "R10",
+      "match": "knowledge/language-edition-register.json",
+      "cases": [
+        "FLR-0010"
+      ],
+      "controls": [
+        "FLR-C12"
+      ],
+      "checkpoints": [
+        "New bilingual Markdown inventory agrees with actual tracked files",
+        "No machine result upgrades semantic-translation review status",
+        "Decision-process source links stay auditable",
+        "Changed language inventory also passes dependent PI-RISE publication Git blob manifest"
       ]
     }
   ],

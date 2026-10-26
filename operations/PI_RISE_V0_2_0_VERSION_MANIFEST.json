@@ -60,7 +60,7 @@
     },
     {
       "path": "knowledge/language-edition-register.json",
-      "git_blob_sha": "85ad3050cb8d07f2b54eee9b15877433dfd66cf0"
+      "git_blob_sha": "2997f57c65357435557663b0fc3abfac61209597"
     },
     {
       "path": "navigation/RESEARCH_VERSIONS_EN_KO.md",
@@ -102,7 +102,8 @@
     "2026-10-22: Source-critical MER/EI paired-choice conditional bounds EN/KO added to concurrently edited main language inventory, and only associated publication SHA updated; finance evidence and receipts unchanged.",
     "2026-10-22: Added independent-language MER/EI meta-choice/non-domination prior research; synchronized only publisher-integrity language inventory SHA. No grant funds, budget, bank receipts, financial ownership or operational permissions changed.",
     "2026-10-22 independent audit: synchronize README publication blob after founding two-question preface; source text, cash status, grant approval and research findings are unchanged.",
-    "2026-10-22 independent reader audit: README now has a compact nine-line English evidence boundary and foldable verbatim English/Korean founding questions; publication SHA synchronized, no science/cash promotion."
+    "2026-10-22 independent reader audit: README now has a compact nine-line English evidence boundary and foldable verbatim English/Korean founding questions; publication SHA synchronized, no science/cash promotion.",
+    "2026-10-26 PR #366 integration candidate: repin language-edition inventory Git blob after adding the 24h decision snapshot; no finance receipt, science validation or promotion implied."
   ],
   "next_gate": [
     "PRIVATE_AUTHORIZED_RECEIPT_RECONCILIATION_BEFORE_FINANCIAL_CLAIMS",
