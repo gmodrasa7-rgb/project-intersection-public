@@ -26,6 +26,8 @@ COMMANDS={
     "E010_LINEAGE":["python3","tools/pi_flr_experiment_identity.py"],
     "NAV_LINKS":["python3","tools/check_public_navigation.py","--strict-all"],
     "PI_ACCESS":["python3","tools/audit_pi_access.py","--self-test"],
+    "LANGUAGE_INVENTORY":["python3","tools/audit_bilingual_navigation.py","--self-test"],
+    "C18_RAW_TESTS":["python3","tests/test_c18_raw_verifier.py","-v"],
     "FLR_META":["python3","tools/pi_flr_audit.py"],
     "FLR_MUTANTS":["python3","-m","unittest","discover","-s","tests","-p","test_pi_flr_replay_gate.py"],
     "FLR_ALL_TESTS":["python3","-m","unittest","discover","-s","tests","-p","test_pi_flr_*.py"],
@@ -46,6 +48,12 @@ RULE_CHECKS={
 # Precise, reviewed checks for existing material paths not represented in the
 # historical failure taxonomy. Unlisted material changes still block promotion.
 DIRECT_PATH_CHECKS = {
+    "knowledge/language-edition-register.json": ("LANGUAGE", "LANGUAGE_INVENTORY", "RISE_MANIFEST"),
+    "PRIOR_ART_SATURATION_MAP_KO.md": ("NAV_LINKS",),
+    "tools/verify_c18_hung_2025_raw.py": ("C18_RAW_TESTS",),
+    "tests/test_c18_raw_verifier.py": ("C18_RAW_TESTS",),
+    "research/PRIOR_ART_C18_CIVIC_HONESTY_PROXY_CONFLICT_2026-10-24_EN.md": ("LANGUAGE", "LANGUAGE_INVENTORY", "NAV_LINKS"),
+    "research/PRIOR_ART_C18_CIVIC_HONESTY_PROXY_CONFLICT_2026-10-24_KO.md": ("LANGUAGE", "LANGUAGE_INVENTORY", "NAV_LINKS"),
     "tools/audit_pi_access.py": ("PI_ACCESS", "NAV_LINKS"),
     "tools/check_readme_l0.py": ("README_L0",),
     ".github/workflows/public-repository-audit.yml": ("README_L0", "NAV_LINKS", "FLR_ALL_TESTS"),
