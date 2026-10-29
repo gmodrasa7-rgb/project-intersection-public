@@ -136,5 +136,21 @@
     "No independent semantic review",
     "No main merge or automated scientific promotion"
   ],
-  "rollback": "Revert only this delta commit; preserve historical data and failure ledgers."
+  "rollback": "Revert only this delta commit; preserve historical data and failure ledgers.",
+  "integration_history": [
+    {
+      "commit": "cda0b35547aa0b0577909bb875882584a821da5b",
+      "run": "https://github.com/gmodrasa7-rgb/project-intersection-public/actions/runs/40905825825",
+      "result": "5/6_CHECKS_PASSED; BLOCKED_UNMAPPED_MATERIAL",
+      "unmapped_paths": [
+        "knowledge/language-edition-register.json",
+        "research/C1_COLLINEARITY_RECEIPT_2026-10-30.json",
+        "research/PI_48H_RESEARCH_DELTA_2026-10-30.json",
+        "tools/c1_collinearity_audit.py"
+      ],
+      "repair": "Exact-path executable mapping, computed receipt validation and negative controls; unknown-file blocking retained",
+      "local_repair_validation": "8 check groups PASS; 28 replay tests PASS; explicit paths against uncommitted working tree",
+      "remote_repair_validation": "CONSULT_LATEST_PR_CHECKS"
+    }
+  ]
 }
