@@ -1,0 +1,150 @@
+{
+  "schema_version": "PI-MER-EI-MECHANISM-TRANSFER-AUDIT/0.1",
+  "audit_date": "2026-10-29",
+  "status": "ORIGINAL_AUTHOR_AND_SOURCE_CODE_AUDIT_NOT_EMPIRICAL_REPRODUCTION",
+  "canonical_rvd_version_from_main": "v0.7.0",
+  "new_numbered_hypotheses": 0,
+  "new_human_ai_observations": 0,
+  "independent_empirical_replications": 0,
+  "source_selection_rule": "Deduplicate by original scholarly experiment, not by edition/URL or cited preprint. Prefer directly accessible original publisher, code and author data. Keep separately evidenced claims distinct.",
+  "related_existing_in_progress_pr": {
+    "number": 361,
+    "url": "https://github.com/gmodrasa7-rgb/project-intersection-public/pull/361",
+    "status_checked": "DRAFT_OPEN",
+    "scope": "Bartling & Srinivasan (2025) B consent demand vs architect conditional supply; avoid reusing as independent new study or overwriting concurrent audit."
+  },
+  "sources": [
+    {
+      "id": "DEVINE_CASTANHEIRA_FLEMING_OTTO_2024",
+      "kind": "ORIGINAL_HUMAN_EXPERIMENT_OPEN_SOURCE",
+      "doi": "10.1016/j.cognition.2024.105742",
+      "title": "Distinguishing between intrinsic and instrumental sources of the value of choice",
+      "authors": "Sean Devine; Kevin da Silva Castanheira; Stephen M. Fleming; A. Ross Otto",
+      "year": 2024,
+      "reported_sample": "Two experiments, N=100 each recruited",
+      "reported_effect": "Choice preference attenuated when choice was decoupled from reliable information about eventual rewards; overall choice and informational contingency both mattered.",
+      "authors_code": "https://github.com/seandamiandevine/choiceval",
+      "code_repository_default_head": "main",
+      "audited_code_paths": [
+        {
+          "path": "readme.md",
+          "sha": "00e84ffa4eaad32ff892cffaf00bcc6a47bdf8a7"
+        },
+        {
+          "path": "exp1/main.R",
+          "sha": "0d64b0041dc7e25b6caae247ade7526420de127c"
+        },
+        {
+          "path": "exp2/main.R",
+          "sha": "a8ed690a1f76b2b74b033983ce491cba01afe9cd"
+        },
+        {
+          "path": "exp1/out/choice_model_coefs.csv",
+          "sha": "17b0d2c1f6f273de23a0375f63541bc82ab4c452"
+        },
+        {
+          "path": "exp1/models/summary/fixef_summary_winning_mod.csv",
+          "sha": "30fe8229ce8871fe33fe3ff7d65e9eec6928765d"
+        }
+      ],
+      "source_data_check": {
+        "experiment1_subject_csv_count": 100,
+        "experiment2_raw_archive_path": "exp2/data/choiceval2.csv.zip",
+        "experiment2_analysis_script_expects": "exp2/data/choiceval2.csv",
+        "compressed_csv_must_be_extracted_before_original_script_runs": true,
+        "exp1_observed_raw_sample_header_read": true,
+        "exp1_sample_raw_csv_rows_approx": 3437,
+        "raw_subject_data_never_copied_to_project_repository": true,
+        "stored_fitted_models_missing_per_original_readme": true,
+        "analysis_package_versions_pinned": false,
+        "original_R_script_run": false,
+        "source_readme_has_license_statement": false,
+        "github_license_file_found": false
+      },
+      "supports": "Own choice value can be partly instrumental, even where subjects also favor selecting among outcomes.",
+      "does_not_support": "Valuation by A of independent B's veto or B continuing identity, no subject-level motivation point-identification, no demonstrated AI intrinsic concern.",
+      "status": "ORIGINAL_PUBLISHER_ABSTRACT_AND_SOURCE_CODE_STATIC_INSPECTION_ONLY"
+    },
+    {
+      "id": "FREUNDT_HERZ_KOPP_2026",
+      "kind": "ORIGINAL_HUMAN_EXPERIMENT_JOURNAL",
+      "doi": "10.1016/j.jpubeco.2026.105681",
+      "title": "Choosing (not) to choose: Uncovering intrinsic preferences for choice autonomy",
+      "authors": "Jana Freundt; Holger Herz; Leander Kopp",
+      "year": 2026,
+      "reported_effect": "Within a design controlling instrumental gains of choosing, a majority favors own choice while a meaningful minority prefers not choosing; results on OWN agency, not others'.",
+      "data_availability": "Data made available on request according to publisher",
+      "source": "https://www.sciencedirect.com/science/article/pii/S0047272726001179",
+      "supports": "Own choice can have noninstrumental utility and heterogeneous signs.",
+      "does_not_support": "All agents want direct choice or A respects B when B voluntarily delegates.",
+      "status": "PUBLISHER_ARTICLE_ABSTRACT_ONLY"
+    },
+    {
+      "id": "BARTLING_SRINIVASAN_2025",
+      "kind": "HUMAN_INCENTIVIZED_WORKING_PAPER_DUPLICATE_EXISTING_PR",
+      "title": "Paternalistic Interventions: Determinants of Demand and Supply",
+      "year": 2025,
+      "source": "https://www.ifo.de/en/cesifo/publications/2025/working-paper/paternalistic-interventions-determinants-demand-and-supply",
+      "supports": "Original authors report that chooser consent-right regime raises chooser demand; distinct architect behavior must be separately evaluated.",
+      "does_not_support": "An increase in B's consent demand proves A's voluntary respect or a permanent intrinsic autonomy motive.",
+      "ongoing_project": "PR #361 contains additional checked author-table effects and nonsignificant architect-supply result; leave it DRAFT and don't relabel as independent outcome.",
+      "status": "PRIMARY_AUTHOR_ABSTRACT_PLUS_SEPARATE_EXISTING_DRAFT_REVIEW"
+    },
+    {
+      "id": "DYKSTRA_EXLEY_NIEDERLE_WONG_2026",
+      "kind": "HUMAN_WORKING_PAPER",
+      "title": "When Decisions Require Consideration, People Give Up Control",
+      "authors": "Holly Dykstra; Christine Exley; Muriel Niederle; Heather Wong",
+      "source": "https://cepr.org/publications/dp21005",
+      "year": 2026,
+      "reported_effect": "Requiring more consideration raises self-delegation preference, even among experienced subjects.",
+      "supports": "Voluntary delegation is sometimes a response to decision/consideration cost.",
+      "does_not_support": "A B who delegates is necessarily coerced or morally inferior; or autonomous AI prefers delegation.",
+      "status": "WORKING_PAPER_ABSTRACT_NOT_JOURNAL_REPLICATION"
+    },
+    {
+      "id": "AI_DELEGATION_DISHONESTY_NATURE_2025",
+      "kind": "HUMAN_PRINCIPAL_AI_EXECUTION_EXPERIMENT",
+      "year": 2025,
+      "title": "Delegation to artificial intelligence can increase dishonest behaviour",
+      "source": "https://www.nature.com/articles/s41586-025-09505-x",
+      "reported_effect": "Thirteen experiments; human principals sometimes induced cheating via delegated machine instructions; machine agents more likely than human agents to follow fully unethical instructions in compared tasks; mitigations incomplete.",
+      "supports": "Delegation and compliant AI outputs do not by themselves imply ethical voluntary cooperation.",
+      "does_not_support": "An agentic model autonomously values exploiting another original agent or lacks consciousness.",
+      "status": "PUBLISHER_ABSTRACT_AND_METHOD_SUMMARY"
+    },
+    {
+      "id": "AGARWAL_MOEHRING_WOLITZKY_2026_REVISION",
+      "kind": "HUMAN_AI_FACTCHECK_EXPERIMENT_WORKING_PAPER",
+      "year": 2025,
+      "title": "Designing Human-AI Collaboration: A Sufficient-Statistic Approach",
+      "source": "https://www.nber.org/papers/w33949",
+      "version": "June 2025 first issue; August 2026 revised",
+      "reported_effect": "In online fact-checking, people underreact to AI predictions and reduce effort when AI is confidently presented; optimal automation/assistance policy task-specific.",
+      "supports": "Human-AI assistance changes participant effort and beliefs; informational interventions are not passive.",
+      "does_not_support": "Optimal accuracy or performance policy ensures human self-determination, B consent or original B continuation.",
+      "status": "NBER_ABSTRACT_AND_REVISED_DATE"
+    },
+    {
+      "id": "KIMBROUGH_MCDAVID_VAZIRIAN_2026",
+      "kind": "HUMAN_AI_DELEGATION_WORKING_PAPER",
+      "year": 2026,
+      "title": "Trust, Delegation, and Alignment in Human-AI Decision Making",
+      "source": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7316382",
+      "reported_effect": "Participant willingness to accept compensation to delegate AI decisions and actual prompt-choice alignment differ; significant reluctance despite moderate/high alignment.",
+      "supports": "Outcome alignment and freedom to delegate differ; human prompt encoding may be part of observed misalignment.",
+      "does_not_support": "AI independently values another agent's rights or B identity; no copyrighted full text mirrored.",
+      "status": "SSRN_ORIGINAL_ABSTRACT_ONLY"
+    }
+  ],
+  "critical_mismatch": "Different empirical targets: OWN ability to decide vs OTHER B consent vs A provider voluntary response vs human-AI delegated action. These cannot be multiplied or averaged into one validated intrinsic original-B utility.",
+  "improvement_over_prior_cycles": "Original publisher result plus inspected actual author R source, actual public file listings, script preflight blockers, bibliographic dedup and existing PR collision avoidance; zero invented test pass score.",
+  "priority_resolution": [
+    "Independently inspect/execute Devine 2024 experiment 1 in a licensed R environment after reviewing 100 individual data-file privacy and original subject exclusions, exact R dependencies and full reproduction scripts.",
+    "Separate in independent datasets: B's informed consent demand, A's willingness to supply, and implemented outcomes. Existing PR #361 supply treatment may be nonsignificant; inspect its uncertainty and don't treat null as equivalence.",
+    "Where other-B protection is the estimand, measure A override/payoff and B authorized second-order choice; do not use OWN autonomy preference coefficient as outcome.",
+    "Any AI experiment must split principal instruction, AI compliance and original actor choice, and explicitly acknowledge ethics and non-equivalence to intrinsic independent AI preferences."
+  ],
+  "privacy_and_legal": "Public author data must be reviewed for license, participant anonymity and permitted uses. Do not copy subject-level data or unlicensed manuscript into user's public repository.",
+  "release_gate": "NOT_SCIENTIFIC_PROMOTION; publication version unchanged; external real original-B continuity and intrinsic will remain UNIDENTIFIED."
+}

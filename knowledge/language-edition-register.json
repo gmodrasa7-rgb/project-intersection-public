@@ -621,6 +621,22 @@
         "Pre-registration proposal not independently filed, approved, run, or statistically powered.",
         "This does not measure persistent current-LLM selfhood, original B numerical identity or human/AI coexistence."
       ]
+    },
+    {
+      "id": "PI-MER-EI-CROSS-ACTOR-INSTRUMENTAL-20261029",
+      "original_1_english": "research/MER_EI_INSTRUMENTAL_OTHER_AGENCY_AUDIT_2026-10-29_EN.md",
+      "original_2_korean": "research/MER_EI_INSTRUMENTAL_OTHER_AGENCY_AUDIT_2026-10-29_KO.md",
+      "kind": "original_code_and_external_mechanism_gap_audit_NO_NEW_RVD_HYPOTHESIS",
+      "structural_pair_present": true,
+      "meaning_review_status": "NOT_INDEPENDENTLY_VERIFIED",
+      "original_conception_language": "KO_USER_GOAL_AI_ASSISTED_ORIGINAL_AUTHOR_CODE_READING",
+      "independent_review_receipt": null,
+      "one_sided_edit_exception": null,
+      "known_divergences": [
+        "Human own choice and original other B consent are different constructs.",
+        "EN and KO drafted together without third-party semantic validation.",
+        "Public original code was statically inspected but R computations were not rerun; no real B intrinsic value measured."
+      ]
     }
   ],
   "legacy_priority_unresolved": [
@@ -662,13 +678,13 @@
     }
   ],
   "metrics": {
-    "markdown_total": 264,
+    "markdown_total": 266,
     "filename_classes": {
       "UNMARKED_LANGUAGE_UNVERIFIED": 46,
       "LEGACY_MIXED_READER_ENTRY": 2,
-      "KO_SUFFIX_UNVERIFIED": 121,
+      "KO_SUFFIX_UNVERIFIED": 122,
       "ORDERED_BILINGUAL_FOUNDER_OR_GOVERNANCE": 2,
-      "EN_SUFFIX_UNVERIFIED": 51,
+      "EN_SUFFIX_UNVERIFIED": 52,
       "COMBINED_NAMING_UNVERIFIED": 42
     },
     "meaning_verified_pairs": 0,
@@ -1821,6 +1837,18 @@
       "content_equivalence": "NOT_REVIEWED"
     },
     {
+      "path": "research/MER_EI_INSTRUMENTAL_OTHER_AGENCY_AUDIT_2026-10-29_EN.md",
+      "filename_class": "EN_SUFFIX_UNVERIFIED",
+      "counterpart_path": "research/MER_EI_INSTRUMENTAL_OTHER_AGENCY_AUDIT_2026-10-29_KO.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "research/MER_EI_INSTRUMENTAL_OTHER_AGENCY_AUDIT_2026-10-29_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": "research/MER_EI_INSTRUMENTAL_OTHER_AGENCY_AUDIT_2026-10-29_EN.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
       "path": "research/MER_EI_META_CONSENT_NONDOMINATION_2026-10-22_EN.md",
       "filename_class": "EN_SUFFIX_UNVERIFIED",
       "counterpart_path": "research/MER_EI_META_CONSENT_NONDOMINATION_2026-10-22_KO.md",
@@ -2852,6 +2880,17 @@
         "research/PI_PACD_PRS_OSL_V0_1_0_KO.md"
       ],
       "scope": "paired filenames only, scientific novelty and translation meaning unverified"
+    },
+    {
+      "as_of": "2026-10-29",
+      "status": "MER_EI_SOURCE_CODE_PREFLIGHT_INTRINSIC_VS_INSTRUMENTAL_NO_RVD_PROMOTION",
+      "new_documents": [
+        "research/MER_EI_INSTRUMENTAL_OTHER_AGENCY_AUDIT_2026-10-29_EN.md",
+        "research/MER_EI_INSTRUMENTAL_OTHER_AGENCY_AUDIT_2026-10-29_KO.md"
+      ],
+      "new_edition_pairs": 1,
+      "editorial_notes": "Original Devine et al. 2024 GitHub dataset and R code inspected by SHA, source provenance and possible reproduction blockers; separate 2026 own autonomy, 2025 B consent (already draft PR#361), 2025 AI delegated cheating and 2026 human-AI assistance rival estimands. No new numbered hypotheses, no source study rerun or RVD version promotion.",
+      "reviewer_actions": "Independent license/dependency and privacy verification, reproduction of one original R result; review existing PR #361 before any B-consent claim."
     }
   ],
   "path_layout_policy": "Keep the project root entry-only; bilingual full research editions live in existing research/ and their original historical combined documents retain stable root URLs."
