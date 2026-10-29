@@ -29,6 +29,8 @@ COMMANDS={
     "FLR_META":["python3","tools/pi_flr_audit.py"],
     "FLR_MUTANTS":["python3","-m","unittest","discover","-s","tests","-p","test_pi_flr_replay_gate.py"],
     "FLR_ALL_TESTS":["python3","-m","unittest","discover","-s","tests","-p","test_pi_flr_*.py"],
+    "LANGUAGE_INVENTORY":["python3","tools/audit_bilingual_navigation.py","--self-test"],
+    "C1_DELTA":["python3","tools/c1_collinearity_audit.py","--verify-artifacts"],
 }
 # Match rule identifiers declared in the versioned data. These checks do real work.
 RULE_CHECKS={
@@ -46,6 +48,10 @@ RULE_CHECKS={
 # Precise, reviewed checks for existing material paths not represented in the
 # historical failure taxonomy. Unlisted material changes still block promotion.
 DIRECT_PATH_CHECKS = {
+    "knowledge/language-edition-register.json": ("LANGUAGE", "LANGUAGE_INVENTORY", "RISE_MANIFEST"),
+    "research/C1_COLLINEARITY_RECEIPT_2026-10-30.json": ("C1_DELTA", "FLR_MUTANTS"),
+    "research/PI_48H_RESEARCH_DELTA_2026-10-30.json": ("C1_DELTA", "FLR_MUTANTS"),
+    "tools/c1_collinearity_audit.py": ("C1_DELTA", "FLR_MUTANTS"),
     "tools/audit_pi_access.py": ("PI_ACCESS", "NAV_LINKS"),
     "tools/check_readme_l0.py": ("README_L0",),
     ".github/workflows/public-repository-audit.yml": ("README_L0", "NAV_LINKS", "FLR_ALL_TESTS"),

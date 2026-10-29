@@ -1,0 +1,156 @@
+{
+  "schema_version": "PI-48H-RESEARCH-DELTA/1",
+  "window": {
+    "start": "2026-10-28T00:45:00+09:00",
+    "end": "2026-10-30T00:45:00+09:00",
+    "scope": "bounded research activity retrieval, not publication dates or exhaustive archive"
+  },
+  "base_commit": "e81e6657cc33ff6b522bbd90740428a31f7e1c65",
+  "status": "DRAFT_PROMOTION_HOLD",
+  "rvd_version": "v0.7.0",
+  "new_numbered_hypotheses": 0,
+  "new_human_or_live_ai_observations": 0,
+  "independent_empirical_replications": 0,
+  "incremental_items": [
+    {
+      "key": "C1_MODEL_OVERLAP",
+      "status": "CONDITIONAL_ALGEBRA_TOY_NOT_EMPIRICAL",
+      "source_document": "PI_C1_PREDICTION_IDENTIFICATION_AUDIT_2026-10-30_EN_KO.md, version 2",
+      "antecedent": "research/RVD_CYCLE05_EXCLUSION_TRANSPORT_SENSITIVITY_2026-10-21_EN.md",
+      "implementation": "tools/c1_collinearity_audit.py",
+      "receipt": "research/C1_COLLINEARITY_RECEIPT_2026-10-30.json",
+      "finding": "H2 allowing the same C1 utility term overlaps C1 by construction; no unique mechanism follows from relabeling",
+      "limits": [
+        "original calculation executable not recovered",
+        "new stdlib implementation has explicit invented coefficients",
+        "full-rank control is not causal identification",
+        "no eligible C1 dataset verified, not proof of global absence"
+      ]
+    },
+    {
+      "key": "doi:10.1038/s41598-024-65122-0",
+      "authors": "Mollie Gerver; Sanchayan Banerjee; Peter John",
+      "year": 2024,
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11211337/",
+      "status": "ORIGINAL_METHODS_AND_ABSTRACT_READ_NOT_REPRODUCED",
+      "N": 1518,
+      "finding": "Consent is self-selected; default presentation is randomized; all receive default. Group feeling contrast alone is not a causal effect of consent violation.",
+      "limits": [
+        "no raw data rerun",
+        "no new agent experiment",
+        "no proof of zero effect"
+      ]
+    },
+    {
+      "key": "arxiv:2601.22436",
+      "authors": "Weixiang Zhao; Yingshuo Wang; Yichen Zhang; Yang Deng; Yanyan Zhao; Wanxiang Che; Bing Qin; Ting Liu",
+      "url": "https://proceedings.mlr.press/v306/zhao26aw.html",
+      "code": "https://github.com/Dreamcatcher0622/Faithfulness",
+      "status": "PUBLISHER_ABSTRACT_AND_METADATA_NOT_REPRODUCED",
+      "publisher_counts": {
+        "frameworks": 4,
+        "backbones": 13,
+        "environments": 9
+      },
+      "arxiv_abstract_backbones": 10,
+      "finding": "Condensed experience may be disregarded or misinterpreted. Retrieval is not demonstrated causal use.",
+      "limits": [
+        "edition-specific counts not pooled",
+        "full experimental tables not independently audited",
+        "no project learning effect measured"
+      ]
+    },
+    {
+      "key": "arxiv:2605.29225v1",
+      "authors": "Jiahao Huang; Fei Cheng; Junfeng Jiang; Zefan Yu; Akiko Aizawa",
+      "url": "https://arxiv.org/abs/2605.29225v1",
+      "code": "https://github.com/Alab-NII/BenchTrace",
+      "data": "https://huggingface.co/datasets/huangjh16/BenchTrace",
+      "status": "AUTHOR_ABSTRACT_AND_DATA_CARD_NOT_REPRODUCED",
+      "episodes": 1821,
+      "tasks": 6,
+      "models": [
+        "Qwen3-32B",
+        "GPT-4.1"
+      ],
+      "reflection_end_to_end_pass_rate": "<30% for the studied models",
+      "finding": "Failure avoidance may improve while noisy histories impair retention and changed contexts cause negative transfer.",
+      "limits": [
+        "reflection pass rate is not universal task success",
+        "source package not downloaded or executed",
+        "no PI-FLR real outcome improvement measured"
+      ]
+    }
+  ],
+  "deduplication": [
+    {
+      "key": "CESifo:11886",
+      "action": "LINK_EXISTING_DRAFT_NOT_RECOPY",
+      "location": "https://github.com/gmodrasa7-rgb/project-intersection-public/pull/361",
+      "unresolved": "2026 revised tables not compared",
+      "draft": true,
+      "head_sha": "acd836d8b17d0cffba14fffd7e13c74996416b9f"
+    },
+    {
+      "key": "doi:10.1017/eec.2025.6",
+      "action": "ALREADY_IN_MAIN",
+      "location": "research/PRIOR_ART_INFORMED_VETO_POWER_CYCLE10_2026-10-20_KO.md"
+    },
+    {
+      "key": "doi:10.1016/j.jpubeco.2026.105711",
+      "action": "ALREADY_IN_MAIN_AND_DRAFT",
+      "location": "research/PRIOR_ART_OTHER_AUTONOMY_CYCLE08_2026-10-20_KO.md"
+    },
+    {
+      "key": "MER_EI_ORIGINAL_CODE_AUDIT",
+      "action": "LINK_EXISTING_DRAFT",
+      "location": "https://github.com/gmodrasa7-rgb/project-intersection-public/pull/367",
+      "draft": true,
+      "head_sha": "0cb851b732112838d46f26905688c5b4fd0d60e2"
+    },
+    {
+      "key": "MER_EI_MORAL_AVOIDANCE",
+      "action": "LINK_EXISTING_OPEN_PR",
+      "location": "https://github.com/gmodrasa7-rgb/project-intersection-public/pull/368",
+      "draft": false,
+      "head_sha": "a8e8c3dee06219a10304d23821225553ce9840a5"
+    }
+  ],
+  "unverified_carried_claims": [
+    {
+      "key": "BENCHTRACE_TASK_PROGRESS_CONTRAST",
+      "reported_values": [
+        23.9,
+        17.6
+      ],
+      "unit": "percent",
+      "status": "TABLE_NOT_REVERIFIED",
+      "use_in_quantitative_conclusions": false
+    }
+  ],
+  "limits": [
+    "No all-conversation or all-scheduled-task completeness claim",
+    "No external source raw data replicated",
+    "No change to E008 no-result or E009 adverse result",
+    "No existing FLR identifiers reassigned",
+    "No independent semantic review",
+    "No main merge or automated scientific promotion"
+  ],
+  "rollback": "Revert only this delta commit; preserve historical data and failure ledgers.",
+  "integration_history": [
+    {
+      "commit": "cda0b35547aa0b0577909bb875882584a821da5b",
+      "run": "https://github.com/gmodrasa7-rgb/project-intersection-public/actions/runs/40905825825",
+      "result": "5/6_CHECKS_PASSED; BLOCKED_UNMAPPED_MATERIAL",
+      "unmapped_paths": [
+        "knowledge/language-edition-register.json",
+        "research/C1_COLLINEARITY_RECEIPT_2026-10-30.json",
+        "research/PI_48H_RESEARCH_DELTA_2026-10-30.json",
+        "tools/c1_collinearity_audit.py"
+      ],
+      "repair": "Exact-path executable mapping, computed receipt validation and negative controls; unknown-file blocking retained",
+      "local_repair_validation": "8 check groups PASS; 28 replay tests PASS; explicit paths against uncommitted working tree",
+      "remote_repair_validation": "CONSULT_LATEST_PR_CHECKS"
+    }
+  ]
+}

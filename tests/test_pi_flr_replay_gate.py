@@ -13,9 +13,39 @@ from types import SimpleNamespace
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/"tools"))
 import pi_flr_replay_gate as rg
+import c1_collinearity_audit as c1
 
 
 class ReplayGateTests(unittest.TestCase):
+    def test_research_delta_exact_paths_execute_checks_without_directory_exemption(self):
+        for path in ("research/C1_COLLINEARITY_RECEIPT_2026-10-30.json",
+                     "research/PI_48H_RESEARCH_DELTA_2026-10-30.json",
+                     "tools/c1_collinearity_audit.py"):
+            plan = rg.planned_replay(self.data, [path])
+            self.assertIn("C1_DELTA", plan["check_ids"])
+            self.assertIn("FLR_MUTANTS", plan["check_ids"])
+            self.assertEqual(plan["unmapped_material_paths"], [])
+        unknown = "research/C1_UNREVIEWED_RESULT.json"
+        self.assertEqual(rg.planned_replay(self.data, [unknown])["unmapped_material_paths"], [unknown])
+
+    def test_c1_saved_rank_and_empirical_promotion_mutations_rejected(self):
+        computed = c1.audit()
+        receipt = json.loads((ROOT / "research/C1_COLLINEARITY_RECEIPT_2026-10-30.json").read_text())
+        ledger = json.loads((ROOT / "research/PI_48H_RESEARCH_DELTA_2026-10-30.json").read_text())
+        self.assertTrue(c1.validate_artifacts(receipt, ledger, computed))
+        wrong = copy.deepcopy(receipt)
+        wrong["exact_rank"] = 5
+        with self.assertRaisesRegex(ValueError, "SAVED_CALCULATION"):
+            c1.validate_artifacts(wrong, ledger, computed)
+        promoted = copy.deepcopy(ledger)
+        promoted["new_human_or_live_ai_observations"] = 16
+        with self.assertRaisesRegex(ValueError, "EMPIRICAL_PROMOTION"):
+            c1.validate_artifacts(receipt, promoted, computed)
+        promoted = copy.deepcopy(ledger)
+        promoted["unverified_carried_claims"][0]["use_in_quantitative_conclusions"] = True
+        with self.assertRaisesRegex(ValueError, "UNVERIFIED_TABLE"):
+            c1.validate_artifacts(receipt, promoted, computed)
+
     @classmethod
     def setUpClass(cls):
         cls.data=json.loads((ROOT/rg.TRANSFER_PATH).read_text(encoding="utf-8"))
