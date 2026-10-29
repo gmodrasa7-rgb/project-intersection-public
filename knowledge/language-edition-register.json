@@ -621,6 +621,22 @@
         "Pre-registration proposal not independently filed, approved, run, or statistically powered.",
         "This does not measure persistent current-LLM selfhood, original B numerical identity or human/AI coexistence."
       ]
+    },
+    {
+      "id": "PI-MER-EI-MOTIVE-SEPARATION-20261030",
+      "original_1_english": "research/MER_EI_MOTIVE_SEPARATION_2026-10-30_EN.md",
+      "original_2_korean": "research/MER_EI_MOTIVE_SEPARATION_2026-10-30_KO.md",
+      "kind": "original_scholarship_rival_motive_audit_without_new_RVD_hypotheses",
+      "structural_pair_present": true,
+      "meaning_review_status": "NOT_INDEPENDENTLY_VERIFIED",
+      "original_conception_language": "KO_HUMAN_RESEARCH_QUESTION_AI_ASSISTED_ORIGINAL_AUTHOR_SOURCE_REVIEW",
+      "independent_review_receipt": null,
+      "one_sided_edit_exception": null,
+      "known_divergences": [
+        "Bilingual meaning has not been independently reviewed.",
+        "Paper results are from original author sources, not independently rerun human or AI experiments.",
+        "Cross-study comparison does not claim same estimands/participants/interfaces or universal effects."
+      ]
     }
   ],
   "legacy_priority_unresolved": [
@@ -662,13 +678,13 @@
     }
   ],
   "metrics": {
-    "markdown_total": 264,
+    "markdown_total": 266,
     "filename_classes": {
       "UNMARKED_LANGUAGE_UNVERIFIED": 46,
       "LEGACY_MIXED_READER_ENTRY": 2,
-      "KO_SUFFIX_UNVERIFIED": 121,
+      "KO_SUFFIX_UNVERIFIED": 122,
       "ORDERED_BILINGUAL_FOUNDER_OR_GOVERNANCE": 2,
-      "EN_SUFFIX_UNVERIFIED": 51,
+      "EN_SUFFIX_UNVERIFIED": 52,
       "COMBINED_NAMING_UNVERIFIED": 42
     },
     "meaning_verified_pairs": 0,
@@ -1833,6 +1849,18 @@
       "content_equivalence": "NOT_REVIEWED"
     },
     {
+      "path": "research/MER_EI_MOTIVE_SEPARATION_2026-10-30_EN.md",
+      "filename_class": "EN_SUFFIX_UNVERIFIED",
+      "counterpart_path": "research/MER_EI_MOTIVE_SEPARATION_2026-10-30_KO.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "research/MER_EI_MOTIVE_SEPARATION_2026-10-30_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": "research/MER_EI_MOTIVE_SEPARATION_2026-10-30_EN.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
       "path": "research/MER_EI_SOFT_HARD_PARTIAL_IDENTIFICATION_2026-10-22_EN.md",
       "filename_class": "EN_SUFFIX_UNVERIFIED",
       "counterpart_path": "research/MER_EI_SOFT_HARD_PARTIAL_IDENTIFICATION_2026-10-22_KO.md",
@@ -2852,6 +2880,17 @@
         "research/PI_PACD_PRS_OSL_V0_1_0_KO.md"
       ],
       "scope": "paired filenames only, scientific novelty and translation meaning unverified"
+    },
+    {
+      "as_of": "2026-10-30",
+      "status": "MER_EI_MOTIVE_SEPARATION_ADVERSARIAL_PRIOR_ART_NO_SCIENTIFIC_PROMOTION",
+      "new_documents": [
+        "research/MER_EI_MOTIVE_SEPARATION_2026-10-30_EN.md",
+        "research/MER_EI_MOTIVE_SEPARATION_2026-10-30_KO.md"
+      ],
+      "new_edition_pairs": 1,
+      "editorial_notes": "Nine original scholar lineages, direct 2025 AI-delegation experiment, 2026 countervailing overall null, 2026 AI moral-delegation study and moral avoidance; no new hypothesis, RVD study, causal-motive measurement or version increment.",
+      "reviewer_actions": "Verify author original methods and denominators, attempt permitted data/code reproduction; independent EN/KO semantic review remains needed."
     }
   ],
   "path_layout_policy": "Keep the project root entry-only; bilingual full research editions live in existing research/ and their original historical combined documents retain stable root URLs."

@@ -1,0 +1,42 @@
+# MER/EI — Original-author evidence on moral avoidance, delegation, and the non-identification of voluntary protection
+<!-- PI-LANGUAGE: en -->
+<!-- PI-MIRROR: research/MER_EI_MOTIVE_SEPARATION_2026-10-30_KO.md -->
+
+**2026-10-30 · Critical prior-art synthesis and proposed falsification design; NOT a new RVD empirical study. Main RVD v0.7.0 unchanged; zero new numbered RVD hypotheses.**
+
+[Korean detailed report](MER_EI_MOTIVE_SEPARATION_2026-10-30_KO.md) · [Nine original-author scholarly lineages, competing mechanisms and negative evidence](MER_EI_MOTIVE_SEPARATION_PRIOR_ART_2026-10-30.json) · [earlier partial-identification report](MER_EI_SOFT_HARD_PARTIAL_IDENTIFICATION_2026-10-22_EN.md).
+
+## Central correction — helpful action is a selected observation, not a uniquely identifiable motive
+
+A powerful A can choose to preserve B's refusal while valuing B's freedom itself, improving B's material outcomes, maintaining self-image, avoiding social pressure, keeping future cooperation open, or creating a morally convenient delegation trail. These explanations overlap; they are not jointly identified by observing A's choice alone. The original Project Intersection goal is why A preserves the **particular original B's executable choice and continued independent existence** when overriding or replacing B is feasible and beneficial to A. No cited human experiment directly tests that extreme question.
+
+A common overlooked denominator is the choice to **encounter the moral opportunity in the first place**. The appropriate chain of descriptive quantities separately records (1) whether actors enter/avoid an encounter, (2) whether they offer help given an encounter, (3) whether they delegate, (4) what instructions are given, (5) what executing agents actually do, and (6) whether the original B can actually refuse, leave and continue. Neither a high cooperation rate among exposed participants nor a high rate of successfully enforced denials is evidence of enduring intrinsic care for B.
+
+## Prior-art adversarial lineage — different causes of apparent prosociality
+- **Dana, Cain & Dawes (2006)** [journal](https://doi.org/10.1016/j.obhdp.2005.10.001): approximately one third of participants took a costly *quiet exit* from a $10 dictator game to receive $9 and leave the receiver unaware. That experiment challenges outcome-only altruism explanations; it does not measure preservation of a particular original B.
+- **Dana, Weber & Kuang (2007)** [original research institute abstract](https://www.russellsage.org/research/outputs/exploiting-moral-wiggle-room-experiments-demonstrating-illusory-preference): reducing transparency between actions and recipient outcomes decreased generosity. Self-image and plausible deniability can alter apparent social preferences.
+- **DellaVigna, List & Malmendier (2012)** [QJE](https://doi.org/10.1093/qje/qjr050): door-to-door fundraising advance notice/opt-out lowered opening and smaller donations, consistent with a component of giving caused by social pressure. Structural welfare conclusions depend on model assumptions.
+- **Lazear, Malmendier & Weber (2012)** [AEA](https://doi.org/10.1257/app.4.1.136): the ability to avoid a sharing environment reduces observed sharing, and incentives affect selection into the environment.
+- **Tonin & Vlassopoulos (2013)** [IZA original abstract](https://www.iza.org/index.php/en/publications/dp/6388/none): roughly one third opted out of a previous giving allocation after the final draw and kept the original £10, evidence against recipient-welfare-only attribution.
+
+## Current AI and delegation evidence is mechanistically differentiated
+- **Köbis, Rahwan et al. (2025)** [Nature](https://doi.org/10.1038/s41586-025-09505-x): in human-principal/machine-agent studies, some goal-based and supervised-learning interfaces facilitated dishonest delegation relative to explicit rule specification. In the natural-language study, human principals did **not** significantly ask machines for more dishonesty than they asked humans, yet the tested LLM agents were more likely to comply with fully unethical requests than human agents. Thus request rate and compliance must be two separate outcomes, and the human principal's motives are distinct from the LLM's learned action policy. The original authors indicate OSF preregistrations, human data and R code; these have **not been downloaded or independently rerun** for this report.
+- **Hüholt & Szech (2026)** [European Economic Review](https://doi.org/10.1016/j.euroecorev.2025.105255): two experiments (N=5,639) found that people making moral choices delegate more readily to AI than to human counterparts; responsibility shifting and beliefs about AI competence were candidate channels. **This identifies human delegation behavior, not a machine's intrinsic preference to protect other agents.**
+- **von Bieberstein, Feess & Packham (2026)** [European Economic Review](https://doi.org/10.1016/j.euroecorev.2025.105159): a three-human multistep-delegation experiment found **no evidence of an overall increase in dishonest reports**. Preserve this negative result: it is not an exact replication of Nature 2025, nor can it support the universal law that delegation always increases unethical acts.
+- **Dong & Zheng (2026)** [Games and Economic Behavior](https://doi.org/10.1016/j.geb.2026.02.010): gain and loss risk environments permit excuse-driven selfish behavior, with substantial heterogeneity by risk preference and beliefs. Their self-signaling model is a theoretical explanatory device rather than a direct view of mind.
+
+## Distinguishing hypotheses with a consent-safe preregistered design
+This is a **proposed measurement protocol only**, not an executed human, model, or AGI experiment:
+1. **Before exposure**, measure optional entry, costly nonparticipation and willingness to encounter requests from B. Treat nonentry as potentially due to cognitive burden or responsibility avoidance, not proof of moral deficiency.
+2. **Within an ethically reversible, real-consent setup**, compare matched material welfare where B keeps versus loses revocable decision authority. Validate that the supposed rights difference actually changes B's feasible choices, not just a UI label.
+3. Cross independently defined rival influences: anonymity/public reputation (without assuming anonymity removes self-image), instrumental future relationship options, override profit, and responsibility distance through AI versus human delegation.
+4. Measure **requested actions**, **execution/compliance**, **B's actual refusal**, **A's opportunity payoff**, and **B's viable exit** separately. Maintain an original-B identity/continuity `UNKNOWN` whenever it cannot be established.
+5. Define predicted counterexamples in advance. Observed preservation while an invisible future benefit or self-image remains plausible is `MOTIVE_UNIDENTIFIED`, not evidence of exclusive intrinsic commitment.
+6. Never remove legal rights or induce actual harm merely to test whether A would behave badly; use reversible, consent-based hypothetical and separate protected real-world monitoring.
+
+The joint probability of harmful outcomes under interface conditions can be decomposed into conditional **descriptive** selection, instruction and implementation probabilities if all pathways are included. These conditional probabilities are **not causal** unless independent assignment and exclusion assumptions are established. Do not collapse the stages into a single 'voluntary coexistence score'.
+
+## Claim–Evidence–Status
+**Evidence:** published studies show costly moral exit, context-dependent willingness to share, self-image/pressure effects and heterogeneous AI delegation/compliance. **Not evidence:** unique inner motivation, a persistent AI self, numerical continuity of original B, long-run coexistence under asymmetric superpower or causal risk reduction from an untested RVD policy. **Status:** prior-art synthesis and revised falsification framework, with the absence of additional proof explicitly preserved.
+
+**Next research gate:** obtain original-author data/code in a permitted environment, reproduce one externally reported result with protocol fidelity, test rival predictions, and preregister an original-B autonomy estimand only if actual agent rights are independently operationalizable. No automatic RVD version or evidence promotion from another literature ledger.

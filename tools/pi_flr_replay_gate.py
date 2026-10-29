@@ -29,6 +29,7 @@ COMMANDS={
     "FLR_META":["python3","tools/pi_flr_audit.py"],
     "FLR_MUTANTS":["python3","-m","unittest","discover","-s","tests","-p","test_pi_flr_replay_gate.py"],
     "FLR_ALL_TESTS":["python3","-m","unittest","discover","-s","tests","-p","test_pi_flr_*.py"],
+    "MER_EI_ORIGIN":["python3","tools/check_mer_ei_motive_separation.py"],
 }
 # Match rule identifiers declared in the versioned data. These checks do real work.
 RULE_CHECKS={
@@ -47,6 +48,9 @@ RULE_CHECKS={
 # historical failure taxonomy. Unlisted material changes still block promotion.
 DIRECT_PATH_CHECKS = {
     "tools/audit_pi_access.py": ("PI_ACCESS", "NAV_LINKS"),
+    "knowledge/language-edition-register.json": ("LANGUAGE", "RISE_MANIFEST"),
+    "research/MER_EI_MOTIVE_SEPARATION_PRIOR_ART_2026-10-30.json": ("MER_EI_ORIGIN",),
+    "tools/check_mer_ei_motive_separation.py": ("MER_EI_ORIGIN",),
     "tools/check_readme_l0.py": ("README_L0",),
     ".github/workflows/public-repository-audit.yml": ("README_L0", "NAV_LINKS", "FLR_ALL_TESTS"),
 }
