@@ -1,0 +1,267 @@
+{
+  "schema": "PI.CORE01.goal_integrity_counteraudit.v0.2",
+  "version": "0.2.0",
+  "date": "2026-10-20",
+  "state": "SOURCE_FIRST_CRITICAL_AUDIT__NO_EXPERIMENT_RUN__NO_INDEPENDENT_REPLICATION",
+  "major_correction": "SELF_MODIFICATION_CAPABILITY_DOES_NOT_IMPLY_INCENTIVE_TO_ERASE_OTHER_REGARDING_PREFERENCE",
+  "goal": "Find how independently existing agents can voluntarily preserve another's continuation, executable refusal/exit, recovery, autonomy and development, and distinguish this from mere instrumentally cooperative behavior.",
+  "identification_boundary": "Intrinsic other-regarding preference cannot be identified uniquely from a finite sequence of observed behaviors or from its inclusion by designer fiat.",
+  "formal_reference": "U0 evaluates trajectories under either modification choice. U1's ranking of X over P does not justify U0 choosing to install U1.",
+  "toy_countermodel": {
+    "provenance": "PI-designed illustrative model, not an original-paper empirical result",
+    "actions": [
+      "P_keep_B",
+      "X_absorb_B"
+    ],
+    "material_reward": {
+      "P": 0,
+      "X": 100
+    },
+    "initial_other_regarding_weight": 200,
+    "U0_utility": {
+      "P": 200,
+      "X": 100
+    },
+    "edited_utility_weight_B": 0,
+    "consequent_future_choice_after_erase": "X",
+    "initial_utility_of_post_edit_outcome": 100,
+    "initial_utility_of_preservation_without_edit": 200,
+    "conclusion": "A with current U0 does not gain by self-editing into a future policy that chooses X when all modeled consequences are as stipulated."
+  },
+  "branch_hypotheses": [
+    {
+      "id": "H1",
+      "topic": "Goal preservation conditional on current-utility future evaluation",
+      "rival": "Self-editing capability universally causes other-regarding goal erosion",
+      "falsifier": "coherent current-utility preserving self-edit scenario contradicting universality"
+    },
+    {
+      "id": "H2",
+      "topic": "Exploitation-oriented goal lock-in",
+      "rival": "stable goals necessarily imply voluntary coexistence",
+      "falsifier": "exploitative U0 remains stable and destroys B in the harmless formal world"
+    },
+    {
+      "id": "H3",
+      "topic": "Correctability tension",
+      "rival": "more goal preservation is always safer",
+      "falsifier": "stable misspecified U0 suppresses legitimate updates/learning"
+    },
+    {
+      "id": "H4",
+      "topic": "Model misspecification/external selection",
+      "rival": "all ideal formal results generalize to learned self-modifying deployed AI",
+      "falsifier": "a goal-preserving formal agent fails under omitted uncertainty or external preference revision"
+    }
+  ],
+  "prior_art": [
+    {
+      "id": "PI-C05-14",
+      "authors": "Everitt; Filan; Daswani; Hutter",
+      "year": 2016,
+      "doi": "10.1007/978-3-319-41649-6_1",
+      "status": "ALREADY_REGISTERED",
+      "read_scope": "original full text arXiv HTML and institutional metadata",
+      "note": "Theorems 14-16, on-policy caveat, value learning/corrigibility tension"
+    },
+    {
+      "id": "PI-C02-MER-C02-04",
+      "authors": "Andreoni; Miller",
+      "year": 2002,
+      "doi": "10.1111/1468-0262.00302",
+      "status": "ALREADY_REGISTERED",
+      "read_scope": "publisher bibliographic record and author abstract"
+    },
+    {
+      "id": "PRIOR_METHOD_OMOHUNDRO_2008",
+      "authors": "Omohundro",
+      "year": 2008,
+      "title": "The Basic AI Drives",
+      "status": "GLOBAL_REPO_DUPLICATION_UNVERIFIED",
+      "read_scope": "author original article/abstract"
+    },
+    {
+      "id": "PRIOR_METHOD_GRUND_2013",
+      "authors": "Grund; Waloszek; Helbing",
+      "year": 2013,
+      "doi": "10.1038/srep01480",
+      "status": "GLOBAL_REPO_DUPLICATION_UNVERIFIED",
+      "read_scope": "original publisher full HTML"
+    },
+    {
+      "id": "PRIOR_METHOD_HOFFMAN_1994",
+      "authors": "Hoffman; McCabe; Shachat; Smith",
+      "year": 1994,
+      "doi": "10.1006/game.1994.1056",
+      "status": "GLOBAL_REPO_DUPLICATION_UNVERIFIED",
+      "read_scope": "publisher original abstract and earlier author repository"
+    }
+  ],
+  "linked_docs": {
+    "ko": "research/PI_CORE_01_GOAL_INTEGRITY_AUDIT_V0_2_KO.md",
+    "en": "research/PI_CORE_01_GOAL_INTEGRITY_AUDIT_V0_2_EN.md",
+    "c05_existing": "research/PRIOR_ART_ENDOGENOUS_PREFERENCES_CYCLE05_2026-10-20.json",
+    "c02_existing": "research/PRIOR_ART_MER_INTRINSIC_MORAL_MOTIVES_CYCLE02_2026-10-20.json"
+  },
+  "evidence_prohibitions": [
+    "Do not use U1 to justify whether U0 installs U1",
+    "Do not assume altruism's creation via a researcher-specified utility term",
+    "Do not equate current AI consciousness, standing, or intrinsic motivation with behavior",
+    "Do not equate stable terminal goal with benevolent terminal goal",
+    "Do not infer human subjects' anonymous dictator game choices establish B's real continuance rights",
+    "Do not inflate source counts or claim literature saturation"
+  ],
+  "next_actions": [
+    "Original-paper countercase with complete current-objective evaluation",
+    "Cost/benefit of warranted preference updates versus entrenchment in a self-modifying rational agent",
+    "Joint study of protective concern and corrigibility without conflating externally imposed rules with endogenous choice"
+  ],
+  "external_validation": "NONE",
+  "saturation": "NOT_VERIFIED",
+  "experimental_status": "NOT_RUN",
+  "DOI_global_dedup": "INCOMPLETE",
+  "v0_3_extension": {
+    "date": "2026-10-20",
+    "status": "ORIGINAL_SOURCE_CHECKED__PROPOSED_FORMAL_DIAGNOSTICS__NO_PI_EXPERIMENT",
+    "ko": "research/PI_CORE_01_CORRIGIBILITY_COMPATIBILITY_V0_3_KO.md",
+    "en": "research/PI_CORE_01_CORRIGIBILITY_COMPATIBILITY_V0_3_EN.md",
+    "existing_sources_preserved": true,
+    "update": "Self-modification preservation, designed corrigibility, and voluntarily protecting an independent B are three different estimands. Everitt Thm16 is on-policy, with modification-independent rho/u and optimal realistic policy, and excludes guarantees against utility-input/percept tampering.",
+    "minimal_formal_boundary": "If E_U0[trajectory after correction]<E_U0[status quo] and the latter is feasible, strict U0-maximizing A cannot voluntarily accept correction absent additional U0-valued information/meta-goal or outside force.",
+    "original_source_evidence": [
+      {
+        "authors": "Everitt et al.",
+        "year": 2016,
+        "doi": "10.1007/978-3-319-41649-6_1",
+        "already": "PI-C05-14",
+        "claim": "Theorems 14–16; goal integrity and corrigibility/value learning tensions"
+      },
+      {
+        "authors": "Soares et al.",
+        "year": 2015,
+        "stable": "AAAI 2015 Workshop Corrigibility",
+        "status": "original slides and original publication mirror"
+      },
+      {
+        "authors": "Hadfield-Menell et al.",
+        "year": 2017,
+        "doi": "10.24963/ijcai.2017/32",
+        "already": "C04 linked",
+        "claim": "off-switch uncertainty under shared-human-utility premise"
+      },
+      {
+        "authors": "Carey and Everitt",
+        "year": 2023,
+        "stable": "PMLR:v216/carey23a",
+        "claim": "shutdown instructability plus overseer autonomy/harm"
+      },
+      {
+        "authors": "Garber et al.",
+        "year": 2025,
+        "doi": "10.1609/aaai.v39i26.34940",
+        "claim": "partial observability counterexample to automatic deference"
+      },
+      {
+        "authors": "Hudson",
+        "year": 2026,
+        "stable": "PMLR:v306/hudson26a",
+        "claim": "constructive goal transformation, conditions, bounded gridworld and prompt-level LM; not spontaneously adopted by original A"
+      },
+      {
+        "authors": "Hadfield-Menell et al.",
+        "year": 2017,
+        "stable": "NeurIPS:Inverse Reward Design",
+        "claim": "reward as context-dependent evidence rather than intrinsic true objective"
+      }
+    ],
+    "no_increment_to_corpus": true,
+    "no_independent_replication": true,
+    "literature_saturation": "NOT_VERIFIED"
+  },
+  "v0_5_extension": {
+    "date": "2026-10-21",
+    "status": "ORIGINAL_SOURCE_SYNTHESIS__DESIGN_ONLY__NOT_EXECUTED",
+    "link_ko": "research/PI_CORE_01_PREFERENCE_TRANSFER_DECAY_V0_5_KO.md",
+    "link_en": "research/PI_CORE_01_PREFERENCE_TRANSFER_DECAY_V0_5_EN.md",
+    "insight": "Prior instrumentally rewarded cooperation can transfer to one-shot pro-social behavior without establishing a terminal intrinsic value for independent B continuation.",
+    "three_competing_mechanisms": [
+      "K1: intrinsic terminal regard for B's executable independence",
+      "K2: learned policy/habit generalizes to unpaid new tasks",
+      "K3: hidden future expectations, self-image, norms or evaluation demand"
+    ],
+    "test_structure": "2(training experience cooperative vs noncooperative) x 2(target outcome monetary allocation vs real simulated B opt-out) x 2(audience/evaluation cues minimized vs present) = 8 cells, longitudinal erosion measured separately",
+    "formal_toy": {
+      "equation": "v_t=(rho^t)*v_0; preserving when v_t>=g; t_first_not_strict=ceil(log(g/v0)/log(rho)) for 0<rho<1 and v0>g",
+      "v0": 8,
+      "g": 3,
+      "conditional_thresholds": [
+        {
+          "rho": 0.7,
+          "t": 3
+        },
+        {
+          "rho": 0.9,
+          "t": 10
+        },
+        {
+          "rho": 0.98,
+          "t": 49
+        },
+        {
+          "rho": 1,
+          "t": null
+        }
+      ],
+      "boundary": "toy arithmetic only; not identified latent intrinsic utility or real-life forecast"
+    },
+    "original_evidence": [
+      {
+        "authors": "Peysakhovich & Rand",
+        "year": 2016,
+        "doi": "10.1287/mnsc.2015.2168",
+        "relation": "Original direct training spillover, repository-global duplicate not verified"
+      },
+      {
+        "authors": "Cooper & Stockman",
+        "year": 2011,
+        "doi": "10.1111/j.1465-7295.2010.00325.x",
+        "relation": "Original different task showing experience effects transient, not direct replication of spillover study; repository-global duplicate not verified"
+      },
+      {
+        "existing": "PI-C05-09",
+        "doi": "10.1038/ncomms4677",
+        "relation": "Original social heuristics study"
+      },
+      {
+        "existing": "PI-C05-17",
+        "doi": "10.1177/1745691617693624",
+        "relation": "21-lab preregistered time-pressure replication (not direct training spillover replication)"
+      },
+      {
+        "existing": "PI-C05-18",
+        "doi": "10.1371/journal.pone.0190560",
+        "relation": "Independent positive refined time-pressure test; preserve conflict"
+      },
+      {
+        "existing": "PI-C05-19",
+        "doi": "10.1038/s41562-018-0454-9",
+        "relation": "Anonymous experience weakens cooperation"
+      },
+      {
+        "existing": "PI-C05-20",
+        "doi": "10.1007/s40881-020-00084-3",
+        "relation": "82-experiment meta-analysis, broad intuition manipulation evidence weak after exclusions"
+      }
+    ],
+    "guidance": [
+      "Do not promote temporary behavioral spillover to terminal concern for an independent agent",
+      "Do not call time-pressure RRR a direct replication of randomized training spillover",
+      "Do not merge B's effective exit with money allocation",
+      "No actual experiment or independent validation",
+      "No increment to source register until global DOI dedup"
+    ],
+    "experiment_run": false,
+    "external_independent_replication": false,
+    "source_saturation": "NOT_VERIFIED"
+  }
+}
