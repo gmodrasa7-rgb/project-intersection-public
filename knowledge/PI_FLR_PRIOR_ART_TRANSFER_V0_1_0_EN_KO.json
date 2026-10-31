@@ -421,7 +421,7 @@
       "transfer_status": "OPERATIONAL_DESIGN_NOT_FIELD_VALIDATED"
     },
     {
-      "id": "P11",
+      "id": "P12",
       "priority": "P0",
       "title_en": "Preserve explicit user goal and no-spend consent separately from safety gate",
       "title_ko": "명시한 목적·예산 동의와 안전 차단을 분리해 문맥 역전 방지",
@@ -435,7 +435,7 @@
         "S11"
       ],
       "cases": [
-        "FLR-0011"
+        "FLR-0012"
       ],
       "adoption": "For any material recommendation, record the user's stated goal, spend authorization, and source of attributed choices before proposing a different action. Treat unresolved food safety as a conditional hold rather than as permission to invent a new user goal.",
       "verification": "Replay the same structured context with a fabricated user choice, unauthorized required spending, and unsafe consumption mutants; record these as bounded contract tests, not independent language-model or medical outcome verification.",
@@ -662,7 +662,7 @@
       "limitation": "Not independently field-verified: no long-term data yet show recurrence reduction."
     },
     {
-      "case_id": "FLR-0011",
+      "case_id": "FLR-0012",
       "status": "NOT_OBSERVED",
       "independent_effectiveness_receipts": [],
       "recurrence_window": "UNOBSERVED",
