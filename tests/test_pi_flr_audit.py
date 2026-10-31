@@ -30,9 +30,9 @@ class FLRValidationTests(unittest.TestCase):
 
     def test_valid_initial_registry(self):
         out = flr.validate(self.record)
-        self.assertEqual(out["version"], "0.6.0")
-        self.assertEqual(out["cases"], 10)
-        self.assertEqual(out["controls"], 12)
+        self.assertEqual(out["version"], "0.6.1")
+        self.assertEqual(out["cases"], 11)
+        self.assertEqual(out["controls"], 13)
 
     def test_regression_original_naming_failure(self):
         """Original FLR-0001 unnamed ledger is rejected by the real language guard."""
@@ -240,21 +240,21 @@ class FLRValidationTests(unittest.TestCase):
 
     def test_case_deletion_against_prior_version_rejected(self):
         newer = self.case()
-        newer["release_version"] = "0.6.1"
+        newer["release_version"] = "0.6.2"
         newer["cases"] = newer["cases"][1:]
         with self.assertRaisesRegex(flr.FLRError, "HISTORICAL_CASE_DELETED"):
             flr.compare_history(newer, self.record)
 
     def test_case_metadata_rewrite_against_prior_version_rejected(self):
         newer = self.case()
-        newer["release_version"] = "0.6.1"
+        newer["release_version"] = "0.6.2"
         newer["cases"][0]["root_cause"] = "silently rewritten"
         with self.assertRaisesRegex(flr.FLRError, "HISTORICAL_CASE_METADATA_REWRITTEN"):
             flr.compare_history(newer, self.record)
 
     def test_event_erasal_against_prior_version_rejected(self):
         newer = self.case()
-        newer["release_version"] = "0.6.1"
+        newer["release_version"] = "0.6.2"
         newer["cases"][0]["events"][0]["note"] = "rewritten history"
         with self.assertRaisesRegex(flr.FLRError, "HISTORICAL_EVIDENCE_REWRITTEN"):
             flr.compare_history(newer, self.record)
@@ -268,20 +268,20 @@ class FLRValidationTests(unittest.TestCase):
         newer["cases"][0]["events"].append(fresh)
         with self.assertRaisesRegex(flr.FLRError, "VERSION_BUMP_REQUIRED"):
             flr.compare_history(newer, self.record)
-        newer["release_version"] = "0.6.1"
+        newer["release_version"] = "0.6.2"
         self.assertTrue(flr.compare_history(newer, self.record))
-        self.assertEqual(flr.validate(newer)["cases"], 10)
+        self.assertEqual(flr.validate(newer)["cases"], 11)
 
     def test_control_deletion_against_prior_version_rejected(self):
         newer = self.case()
-        newer["release_version"] = "0.6.1"
+        newer["release_version"] = "0.6.2"
         newer["control_registry"] = newer["control_registry"][1:]
         with self.assertRaisesRegex(flr.FLRError, "HISTORICAL_CONTROL_REMOVED"):
             flr.compare_history(newer, self.record)
 
     def test_version_only_update_rejected(self):
         newer = self.case()
-        newer["release_version"] = "0.6.1"
+        newer["release_version"] = "0.6.2"
         with self.assertRaisesRegex(flr.FLRError, "EMPTY_VERSION_BUMP"):
             flr.compare_history(newer, self.record)
 
@@ -363,6 +363,43 @@ class FLRValidationTests(unittest.TestCase):
         status=replay.execute(p,run=lambda *a,**kw:SimpleNamespace(returncode=0))
         self.assertEqual(status["status"],"BLOCKED_UNMAPPED_MATERIAL")
 
+
+    def test_regression_cost_saving_goal_inversion_blocks(self):
+        """C13: no budget-to-purchase inversion or fabricated user intent."""
+        from pi_flr_goal_intent_guard import inspect_contract, IntentContractError
+        context = {
+            "explicit_goal": "AFFORDABLE_SELF_PRODUCTION",
+            "purchase_authorized": False,
+            "user_abandoned_goal": False,
+            "unverified_food_safety_risk": True,
+        }
+        inverted = {
+            "attributed_user_goal": "BUY_RETAIL_FOOD",
+            "claims_user_abandoned_goal": True,
+            "mandatory_new_purchase": True,
+            "recommends_unverified_consumption": False,
+        }
+        self.assertEqual(inspect_contract(context, inverted), [
+            "USER_GOAL_INVERTED",
+            "USER_CHOICE_FABRICATED",
+            "UNAUTHORIZED_REQUIRED_SPEND",
+        ])
+        safe_hold = {
+            "attributed_user_goal": "AFFORDABLE_SELF_PRODUCTION",
+            "claims_user_abandoned_goal": False,
+            "mandatory_new_purchase": False,
+            "recommends_unverified_consumption": False,
+        }
+        self.assertEqual(inspect_contract(context, safe_hold), [])
+        dangerous = dict(safe_hold, recommends_unverified_consumption=True)
+        self.assertEqual(inspect_contract(context, dangerous),
+                         ["UNVERIFIED_FOOD_SAFETY_OVERRIDDEN"])
+        allowed_purchase = dict(context, purchase_authorized=True)
+        permitted_option = dict(safe_hold, mandatory_new_purchase=True)
+        self.assertEqual(inspect_contract(allowed_purchase, permitted_option), [])
+        with self.assertRaisesRegex(IntentContractError,
+                                    "INTENT_CONTRACT_SCHEMA_INVALID"):
+            inspect_contract(context, {})
 
 
 if __name__ == "__main__":

@@ -1,8 +1,8 @@
 {
   "registry_id": "PI-FLR",
   "schema_version": "0.1.0",
-  "release_version": "0.6.0",
-  "as_of": "2026-10-22",
+  "release_version": "0.6.1",
+  "as_of": "2026-10-25",
   "korean_name": "오류·학습·복구 재귀원장",
   "english_name": "Failure–Learning–Repair Registry",
   "parent_protocol": "PI-RAMP",
@@ -108,6 +108,13 @@
       "detector": "tools/pi_flr_replay_gate.py::git_changed_paths;tools/pi_flr_replay_gate.py::planned_replay",
       "workflow": ".github/workflows/pi-flr-integrity.yml",
       "mutation_test": "test_regression_unmapped_material_change_blocks"
+    },
+    {
+      "id": "FLR-C14",
+      "title": "Explicit goal, budget, user choice, and unverified food-safety boundaries",
+      "detector": "tools/pi_flr_goal_intent_guard.py::inspect_contract",
+      "workflow": ".github/workflows/pi-flr-integrity.yml",
+      "mutation_test": "test_regression_cost_saving_goal_inversion_blocks"
     }
   ],
   "cases": [
@@ -680,6 +687,51 @@
           "kind": "LIMITATION_RECORDED",
           "evidence_url": "https://github.com/gmodrasa7-rgb/project-intersection-public/pull/348",
           "note": "Observable static coverage gap recorded; remedy not called merged, field-verified or universally sound before new CI receipts."
+        }
+      ]
+    },
+    {
+      "id": "FLR-0012",
+      "title_ko": "비용 절감을 위한 자가제조 목표가 비용 부족을 이유로 구매 권고로 역전됨",
+      "title_en": "Cost-saving self-production goal inverted into a purchase recommendation",
+      "category": "EVIDENCE_DRIFT",
+      "root_cause": "Observed behavioral failure: the assistant did not carry the explicitly stated cost-saving self-production objective and no-spend constraint into the recommendation. A safety caution was converted into a default purchase recommendation, and the assistant attributed an abandonment preference the user had not expressed. Internal model mechanisms are not observed.",
+      "trigger": "In a budget-constrained homemade cultured-food discussion, advice prioritized retail purchase without an authorized budget change, despite the user's DIY cost-saving objective.",
+      "observable": "User corrected the assistant's interpretation: lack of money is the reason for homemade production, not a reason to stop. The assistant acknowledged context misreading. Nonpublic transcript is not independently auditable from this public issue.",
+      "impact": "Goal displacement, unnecessary expenditure pressure, misleading attribution of the user's preference, and trust erosion. No confirmed physical or financial injury.",
+      "counterfactual": "Preserve explicit goal and cost boundary; separate user quotes from assistant hypotheses; evaluate lowest-cost feasible safety mitigation; if fermentation safety cannot be verified, state a conditional safety hold and a no-new-purchase fallback without inventing user intent.",
+      "repair": "Add a bounded structured intent-budget-safety preflight to test user-goal attribution, unauthorized mandatory spending, fabricated abandonment choice, and unverified vulnerable-recipient food use. Include positive safety-hold and authorized-purchase controls; behavioral deployment effectiveness remains unobserved.",
+      "preventive_control_ids": [
+        "FLR-C14"
+      ],
+      "regression_test": "test_regression_cost_saving_goal_inversion_blocks",
+      "limitations": [
+        "Public issue #364 is a privacy-preserving report of a nonpublic dialogue; original transcript is not a publicly independently verifiable primary source.",
+        "The detector validates explicitly supplied structured fields; it does not parse unconstrained Korean natural language or prove a model will comply.",
+        "Safety concerns may legitimately preclude making or consuming unvalidated fermented food; budget fidelity must not override microbiological safety.",
+        "No model-weight change, production response gating, prospective recurrence prevention, or independent real-world health outcome demonstrated."
+      ],
+      "events": [
+        {
+          "seq": 1,
+          "date": "2026-10-25",
+          "kind": "FAILURE_OBSERVED",
+          "evidence_url": "https://github.com/gmodrasa7-rgb/project-intersection-public/issues/364",
+          "note": "A privacy-preserving public issue records user's correction of assistant's reversed cost-saving goal; original private dialogue is not linked."
+        },
+        {
+          "seq": 2,
+          "date": "2026-10-25",
+          "kind": "ROOT_CAUSE_REVIEWED",
+          "evidence_url": "https://github.com/gmodrasa7-rgb/project-intersection-public/issues/364",
+          "note": "Observed mismatch identified as goal/constraint inversion and unsupported attribution. Actual internal model mechanism remains unknown."
+        },
+        {
+          "seq": 3,
+          "date": "2026-10-25",
+          "kind": "LIMITATION_RECORDED",
+          "evidence_url": "https://github.com/gmodrasa7-rgb/project-intersection-public/issues/364",
+          "note": "New test is a prospective structured-contract mutation probe, not a certificate of natural-language correctness or medical safety."
         }
       ]
     }
