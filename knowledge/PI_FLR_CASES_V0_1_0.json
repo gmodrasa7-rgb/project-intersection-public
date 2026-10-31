@@ -110,7 +110,7 @@
       "mutation_test": "test_regression_unmapped_material_change_blocks"
     },
     {
-      "id": "FLR-C13",
+      "id": "FLR-C14",
       "title": "Explicit goal, budget, user choice, and unverified food-safety boundaries",
       "detector": "tools/pi_flr_goal_intent_guard.py::inspect_contract",
       "workflow": ".github/workflows/pi-flr-integrity.yml",
@@ -691,7 +691,7 @@
       ]
     },
     {
-      "id": "FLR-0011",
+      "id": "FLR-0012",
       "title_ko": "비용 절감을 위한 자가제조 목표가 비용 부족을 이유로 구매 권고로 역전됨",
       "title_en": "Cost-saving self-production goal inverted into a purchase recommendation",
       "category": "EVIDENCE_DRIFT",
@@ -702,7 +702,7 @@
       "counterfactual": "Preserve explicit goal and cost boundary; separate user quotes from assistant hypotheses; evaluate lowest-cost feasible safety mitigation; if fermentation safety cannot be verified, state a conditional safety hold and a no-new-purchase fallback without inventing user intent.",
       "repair": "Add a bounded structured intent-budget-safety preflight to test user-goal attribution, unauthorized mandatory spending, fabricated abandonment choice, and unverified vulnerable-recipient food use. Include positive safety-hold and authorized-purchase controls; behavioral deployment effectiveness remains unobserved.",
       "preventive_control_ids": [
-        "FLR-C13"
+        "FLR-C14"
       ],
       "regression_test": "test_regression_cost_saving_goal_inversion_blocks",
       "limitations": [
