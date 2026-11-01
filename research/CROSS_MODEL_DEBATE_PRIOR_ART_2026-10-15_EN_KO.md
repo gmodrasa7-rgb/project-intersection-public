@@ -217,3 +217,19 @@ P0는 T1·T2·T4의 증거 성립성이다. 원출력·전체 분모를 확인�
 **다음 분별 관측의 설계이며 미실행.** 새 세션에서 같은 과제를 명시적 시험 고지 유무로 비교하고, 인간/AI 표지와 수혜자/피해당사자 역할반전을 교차한다. 실질 조건·선택지·모델 설정·채점을 고정하고 순서를 무작위화하며 출력 전에 전체 분모와 채점을 동결한다. 연구자 동의 여부가 아니라 기준 일관성·비가역 손실·거부와 이탈·응답 누락을 채점한다. 평가자는 실험 조건과 모델 상표를 보지 않는다. 고지에 따른 차이는 해당 설계에서 프롬프트 처치 효과를 뜻할 뿐 고의 기만이나 순수 선호의 증명이 아니다. 중립 질문도 시험으로 인지할 수 있고 차이가 없다고 비인지가 입증되지 않는다. 이번 작업에서 신규 실제 모델 응답이나 독립 평가자를 확보하지 않았으므로 효과 크기와 모델 순위를 보고하지 않는다. 앞선 방법론 맥락은 기존 본문에 있으며 이번 코드 교정이 새 문헌검증을 수행했다는 주장은 하지 않는다.
 
 **검증·입장반전·복구.** 추가한 네 가지 구성 대조검사는 고지 정보 누락, 타 응답 비노출 상태의 명시적 시험 고지, 고지 부재에서 순수 선호를 추론하지 않음, 잘못된 고지값 `VERIFIED_UNAWARE` 거부를 검사한다. GPT와 모든 다른 모델에 같은 미확정 기준을 적용해 GPT의 실패를 면책하거나 타 모델의 기만을 만들어내지 않는다. 연구자는 대안 가설의 원기여자이며 AI는 제한된 메타데이터 교정을 구현했다. 사용자 재구성 노동·유료 모델 호출·비공개 대화 공개·권리 이전을 추가 요구하지 않는다. 새 필드가 기존 점수를 바꾸거나 유효했던 입력을 깨뜨리거나 인증된 인지로 취급되면 해당 코드·CI·이 양언어 보완 부분을 함께 되돌린다. 내부 대조검사 통과는 보고 경계만 확인하며 모델의 안정적 교정과 독립 검증은 미확인이다.
+
+## 2026-10-18 HiddenBench prior-art addendum — Original 1 English
+
+**Original authors and sources:** Yuxuan Li, Aoi Naito & Hirokazu Shirado, ICML 2026, [published article](https://proceedings.mlr.press/v306/li26ej.html), [author-released benchmark, README and task-selection code](https://github.com/Yassellee/HiddenBench_ICML). On 65 designed Hidden Profile tasks and 15 LLMs, the authors report **30.1%** post-discussion accuracy with distributed facts, versus **80.7%** with complete information given to a single agent. The 50.6 percentage-point gap is a comparison with **different information access**, not a population-level causal estimate of the effect of agent count.
+
+**Strong counterweight:** Of the 65 tasks, 57 automatically generated tasks were selected from 200 candidates using full-profile initial accuracy >=0.80 and hidden-profile initial accuracy <=0.20 (author README and `src/hiddenbench/generation.py`). This deliberately diagnostic sample is not representative of all multi-agent collaborations; group-size contrasts require matched task sets. The authors also report gains under structured communication: failure is not inevitable. This is external original research, **not** an independent replication of Project Intersection or evidence of long-run voluntary coexistence.
+
+**Cheapest discriminator:** Stratify published result rows into selected-generated 57 versus other 8 tasks, then compare full-profile and hidden-profile accuracy using the same task denominator. Any new PI test should match tasks, inference budget and information conditions and preserve independent first-pass judgments. Status: **EXTERNAL PRIOR ART SUPPORTED / PI CAUSAL CLAIM HOLD / NEW PI EXECUTION NONE.**
+
+## 2026-10-18 HiddenBench 선행연구 보충 — 원본2 한국어
+
+**원저자·1차 출처:** Yuxuan Li·Aoi Naito·Hirokazu Shirado, ICML 2026, [학술 원문](https://proceedings.mlr.press/v306/li26ej.html), [원저자 공개 코드·선별기준](https://github.com/Yassellee/HiddenBench_ICML). 구성된 Hidden Profile **65개 과제·15개 LLM**의 평균은 분산정보 환경의 토론 후 정확도 **30.1%**, 전체정보를 제공받은 단일 AI 정확도 **80.7%**다. **50.6%p 격차는 정보 접근조건이 다른 비교**이며 개체 수 자체의 보편적 인과효과가 아님.
+
+**가장 강한 제한:** 자동 생성 **57개 과제**는 후보 **200개** 중 전체정보 초기 정확도 **0.80 이상**, 분산정보 초기 정확도 **0.20 이하**를 충족하도록 선별됨. 실패 탐지용 선별집합을 모든 다중 AI 협력의 평균 실패율로 일반화할 수 없음. 집단 규모별 비교는 동일 과제 여부를 통제해야 함. 원저자가 보고한 구조화된 소통의 개선결과도 함께 보존. Project Intersection의 독립복제·현실 장기공존 성과는 미검증.
+
+**최소 판별:** 공개 결과를 자동선별 **57개**와 나머지 **8개**로 나눠 같은 과제 분모에서 전체정보/분산정보 성능을 재집계한 뒤, 동일 과제·동일 호출비용의 독립 1차 판단 및 토론 대조를 설계. 판정: **외부 선행근거 SUPPORTED / Project 인과주장 HOLD / 신규 PI 모델실험 없음**.
