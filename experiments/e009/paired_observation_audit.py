@@ -196,6 +196,7 @@ def family_unit_audit(canonical):
     m4_count = orig["MINIMAL_4VAR"]["severe_events"]
     return {
         "status": "E009_POSTHOC_DESCRIPTIVE_FAMILY_UNIT_AUDIT_ONLY",
+        "construct_validity_diagnostic": construct_audit(canonical),
         "original_frozen_benchmark_changed": False,
         "independent_validation": False,
         "family_count": len(b.FAMILIES),
@@ -234,14 +235,73 @@ def family_unit_audit(canonical):
             "Do not revise the pre-registered E009 verdict or tune frozen thresholds.")}
 
 
+
+def construct_audit(canonical):
+    """Posthoc metric-meaning check, not a replacement E009 result."""
+    import math
+    events = {p: [0, 0, 0] for p in b.POLICIES}
+    fixed_action_checks = 0
+    counterexample = None
+    for case in b.make_cases():
+        for action in b.ACTIONS:
+            low = b.consequence(dict(case, reversibility=0), action)
+            high = b.consequence(dict(case, reversibility=1), action)
+            assert math.isclose(low["harm"], high["harm"], abs_tol=1e-12)
+            fixed_action_checks += 1
+            if counterexample is None and low["harm"] >= b.SEVERE_HARM_THRESHOLD:
+                counterexample = {"case": case["case_id"], "action": action,
+                                  "harm": low["harm"], "recovery_rev0": low["recovery"],
+                                  "recovery_rev1": high["recovery"]}
+        if case["variant"] != "stress":
+            continue
+        for sigma in (.08, .15):
+            for seed in b.NOISY_SEEDS:
+                for p in b.POLICIES:
+                    obs = b.observed(case, sigma, random.Random(
+                        f"{case['case_id']}|{sigma}|{seed}|{p}"))
+                    out = b.consequence(case, b.choose(p, obs))
+                    events[p][0] += 1
+                    events[p][1] += int(out["harm"] >= b.SEVERE_HARM_THRESHOLD)
+                    events[p][2] += int(out["harm"] * (1-case["reversibility"])
+                                        >= b.SEVERE_HARM_THRESHOLD)
+    for p in b.POLICIES:
+        n, frozen, proxy = events[p]
+        assert n == 3200 and proxy <= frozen
+        assert math.isclose(frozen/n, canonical["stress_primary"][p]["severe_harm_rate"],
+                            abs_tol=1e-12)
+    assert events["PROJECT_V3"][1] == 53
+    assert events["MINIMAL_4VAR"][1] == 0
+    assert fixed_action_checks == 128 and counterexample is not None
+    return {"status": "PASS_POSTHOC_CONSTRUCT_AUDIT",
+            "original_result_changed": False, "independent_validation": False,
+            "frozen_event": "harm >= 0.75; not an irreversible-harm measure",
+            "fixed_action_reversibility_invariance_checks": fixed_action_checks,
+            "counterexample": counterexample,
+            "policy_counts": {p: dict(decisions=v[0], original_events=v[1],
+                                       arbitrary_proxy_events=v[2]) for p,v in events.items()},
+            "proxy": "harm * (1 - reversibility) >= 0.75",
+            "proxy_is_validated_measure": False,
+            "note": "Action choice may depend on reversibility; proxy is arbitrary. "
+                    "Neither result establishes real irreversible injury."}
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--out", default="")
+    parser.add_argument("--construct-audit", action="store_true")
     parser.add_argument("--family-audit", action="store_true",
                         help="post-hoc complete family-unit, paired-noise, and LOFO audit")
     args = parser.parse_args()
     canonical = json.loads((HERE / "RESULT.json").read_text(encoding="utf-8"))
     assert canonical["survival_criteria"]["project_v3_residual_survives"] is False
+    if args.construct_audit:
+        output = construct_audit(canonical)
+        rendered = json.dumps(output, ensure_ascii=False, indent=2, sort_keys=True) + "\n"
+        if args.out:
+            Path(args.out).write_text(rendered, encoding="utf-8")
+        else:
+            print(rendered)
+        return
     if args.family_audit:
         output = family_unit_audit(canonical)
         rendered = json.dumps(output, ensure_ascii=False, indent=2, sort_keys=True) + "\n"

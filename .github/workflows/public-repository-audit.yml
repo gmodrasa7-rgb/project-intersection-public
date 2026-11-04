@@ -108,6 +108,9 @@ jobs:
           node experiments/e008/readiness_audit.js --verify
           python experiments/e009/validate.py
           python experiments/e009/verify_result.py
+          python experiments/e009/secondary_verdict_audit.py
+          python experiments/e009/complexity_input_dependency_audit.py
+          python experiments/e009/voi_identifiability_audit.py
           python experiments/e009/paired_observation_audit.py --family-audit > /tmp/e009-posthoc.json
           python experiments/picb_v1/benchmark.py --verify
           python - <<'PY'

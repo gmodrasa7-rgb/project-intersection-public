@@ -26,6 +26,10 @@ Original E009: [result](../experiments/e009/RESULT_EN.md), [frozen benchmark](..
 
 **Decision now:** The full V3 residual is NOT SUPPORTED on this benchmark. Retain the two simple baselines as the default comparators. Do not tune or overwrite the frozen E009 code or result to reverse this verdict.
 
+## Post-hoc policy-comparison identification gate (2026-10-16)
+
+The frozen `MINIMAL_4VAR` and `PROJECT_V3` are **not nested rules differing only in additional features**. In one explicit shared input (`ENF=ID=OV=CUM=.2`, `harm_action=.89`, `harm_inaction=.30`, `reversibility=.30`, and `RF=SEL=INT=VOI=0`), the published policy functions choose `BLOCK` and `EXPERIMENT`, respectively. Thus their E009 outcome difference **does not identify the incremental value of the four additional inputs**: action thresholds and logic also differ. See the executable post-hoc [identifiability diagnostic](../experiments/e009/policy_identifiability_audit.py) (`python experiments/e009/policy_identifiability_audit.py --self-test`). Endpoint input toggles are in-model sensitivity probes and can be out-of-distribution; they are not causal evidence, a matched-rule ablation, or independent validation. A later discriminating study must hold the decision-rule architecture, observation budget, consequence specification, and evaluation cost conventions fixed across feature contrasts and preregister an external holdout. This correction does **not** change the frozen negative E009 verdict.
+
 ## Reviewer task A — independent person's rerun of project code
 
 ```sh
