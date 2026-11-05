@@ -29,6 +29,8 @@ COMMANDS={
     "FLR_META":["python3","tools/pi_flr_audit.py"],
     "FLR_MUTANTS":["python3","-m","unittest","discover","-s","tests","-p","test_pi_flr_replay_gate.py"],
     "FLR_ALL_TESTS":["python3","-m","unittest","discover","-s","tests","-p","test_pi_flr_*.py"],
+    "LANGUAGE_INVENTORY":["python3","tools/audit_bilingual_navigation.py","--self-test"],
+    "C1_DELTA":["python3","tools/c1_collinearity_audit.py","--verify-artifacts"],
 }
 # Match rule identifiers declared in the versioned data. These checks do real work.
 RULE_CHECKS={
@@ -46,6 +48,10 @@ RULE_CHECKS={
 # Precise, reviewed checks for existing material paths not represented in the
 # historical failure taxonomy. Unlisted material changes still block promotion.
 DIRECT_PATH_CHECKS = {
+    "knowledge/language-edition-register.json": ("LANGUAGE", "LANGUAGE_INVENTORY", "RISE_MANIFEST"),
+    "research/C1_COLLINEARITY_RECEIPT_2026-10-30.json": ("C1_DELTA", "FLR_MUTANTS"),
+    "research/PI_48H_RESEARCH_DELTA_2026-10-30.json": ("C1_DELTA", "FLR_MUTANTS"),
+    "tools/c1_collinearity_audit.py": ("C1_DELTA", "FLR_MUTANTS"),
     "tools/audit_pi_access.py": ("PI_ACCESS", "NAV_LINKS"),
     "tools/check_readme_l0.py": ("README_L0",),
     ".github/workflows/public-repository-audit.yml": ("README_L0", "NAV_LINKS", "FLR_ALL_TESTS"),
@@ -94,14 +100,29 @@ def git_changed_paths(baseline, root=ROOT, run=subprocess.run):
     return sorted(set(names))
 
 
+# Extension is not a safety classification: research sources and figures may be
+# binary, extensionless, or saved under mixed-case paths. Unknown paths in
+# evidence-bearing directories require an executable replay mapping/review.
+MATERIAL_PATH_PREFIXES = (
+    ".github/", "assets/", "benchmarks/", "capability_lab/", "continuity/",
+    "evaluation/", "evidence/", "experiments/", "funding/", "governance/",
+    "knowledge/", "learning/", "navigation/", "operations/", "prior-art/",
+    "protocols/", "reports/", "research/", "tests/", "tools/",
+)
+
+
 def is_material_unmapped_path(path):
-    """Conservative materiality; unknown artifacts alone are not proof of safety."""
+    """Fail closed on unreviewed research artifacts regardless of extension."""
     import posixpath
-    ext=posixpath.splitext(path.lower())[1]
+    lowered=path.lower()
+    ext=posixpath.splitext(lowered)[1]
     return (ext in {".py",".json",".jsonl",".md",".yml",".yaml",
-                    ".js",".ts",".toml",".sh",".csv",".lock",".ipynb"}
-            or path.startswith((".github/","tools/","tests/","experiments/"))
-            or posixpath.basename(path) in {"Dockerfile","Makefile","requirements.txt"})
+                    ".js",".ts",".toml",".sh",".csv",".lock",".ipynb",
+                    ".pdf",".txt",".bib",".tex",".rst",".tsv",".xml",
+                    ".html",".htm",".svg",".png",".jpg",".jpeg",
+                    ".webp",".parquet",".xlsx",".r",".rds"}
+            or lowered.startswith(MATERIAL_PATH_PREFIXES)
+            or posixpath.basename(lowered) in {"dockerfile","makefile","requirements.txt"})
 
 
 def planned_replay(data, paths):

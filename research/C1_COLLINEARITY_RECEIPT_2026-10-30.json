@@ -1,0 +1,21 @@
+{
+  "status": "SYNTHETIC_ALGEBRA_ONLY_NOT_EMPIRICAL_VALIDATION",
+  "python": "3.12.14",
+  "cases": 16,
+  "columns": 5,
+  "exact_rank": 4,
+  "repeated_case_rank": 4,
+  "distinct_interaction_control_rank": 5,
+  "max_probability_difference": 1.1102230246251565e-16,
+  "distinct_control_max_probability_difference": 0.09942170429059899,
+  "checks": {
+    "duplicate_column_rank_deficient": true,
+    "repeated_cases_do_not_restore_rank": true,
+    "reparameterized_predictions_equal_within_roundoff": true,
+    "distinct_interaction_control_full_rank": true,
+    "distinct_interaction_control_changes_predictions": true
+  },
+  "new_human_or_live_ai_observations": 0,
+  "independent_empirical_replications": 0,
+  "limitation": "Full rank is not causal or psychological identification. Invented coefficients; not the recovered original calculation code."
+}

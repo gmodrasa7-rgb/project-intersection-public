@@ -621,6 +621,21 @@
         "Pre-registration proposal not independently filed, approved, run, or statistically powered.",
         "This does not measure persistent current-LLM selfhood, original B numerical identity or human/AI coexistence."
       ]
+    },
+    {
+      "id": "PI-48H-DELTA-20261030",
+      "original_1_english": "research/PI_48H_RESEARCH_DELTA_2026-10-30_EN.md",
+      "original_2_korean": "research/PI_48H_RESEARCH_DELTA_2026-10-30_KO.md",
+      "kind": "source_critical_delta_and_synthetic_identification_audit",
+      "structural_pair_present": true,
+      "meaning_review_status": "NOT_INDEPENDENTLY_VERIFIED",
+      "original_conception_language": "KO_HUMAN_RESEARCH_QUESTION_AI_ASSISTED_SYNTHESIS",
+      "independent_review_receipt": null,
+      "one_sided_edit_exception": null,
+      "known_divergences": [
+        "No independent semantic review.",
+        "Source papers not independently reproduced; toy is not empirical evidence."
+      ]
     }
   ],
   "legacy_priority_unresolved": [
@@ -662,13 +677,13 @@
     }
   ],
   "metrics": {
-    "markdown_total": 264,
+    "markdown_total": 266,
     "filename_classes": {
       "UNMARKED_LANGUAGE_UNVERIFIED": 46,
       "LEGACY_MIXED_READER_ENTRY": 2,
-      "KO_SUFFIX_UNVERIFIED": 121,
+      "KO_SUFFIX_UNVERIFIED": 122,
       "ORDERED_BILINGUAL_FOUNDER_OR_GOVERNANCE": 2,
-      "EN_SUFFIX_UNVERIFIED": 51,
+      "EN_SUFFIX_UNVERIFIED": 52,
       "COMBINED_NAMING_UNVERIFIED": 42
     },
     "meaning_verified_pairs": 0,
@@ -1878,6 +1893,18 @@
       "path": "research/PI_20H_SYNTHESIS_2026-10-21_EN_KO.md",
       "filename_class": "COMBINED_NAMING_UNVERIFIED",
       "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "research/PI_48H_RESEARCH_DELTA_2026-10-30_EN.md",
+      "filename_class": "EN_SUFFIX_UNVERIFIED",
+      "counterpart_path": "research/PI_48H_RESEARCH_DELTA_2026-10-30_KO.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "research/PI_48H_RESEARCH_DELTA_2026-10-30_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": "research/PI_48H_RESEARCH_DELTA_2026-10-30_EN.md",
       "content_equivalence": "NOT_REVIEWED"
     },
     {
