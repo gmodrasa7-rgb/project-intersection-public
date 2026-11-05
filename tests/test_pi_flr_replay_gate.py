@@ -172,6 +172,35 @@ class ReplayGateTests(unittest.TestCase):
         self.assertEqual(gap["unmapped_material_paths"],["tools/unclassified_analysis.py"])
 
 
+    def test_unmapped_binary_and_extensionless_evidence_fail_closed(self):
+        # Previously .bin, images and extensionless research sources could
+        # return NO_KNOWN_RISK_MATCHED despite changing empirical evidence.
+        for path in (
+            "research/unreviewed_measurement.bin",
+            "knowledge/unregistered_primary_source",
+            "assets/research_figure.png",
+            "reports/unreviewed_appendix.pdf",
+            "benchmarks/unreviewed_scores.xlsx",
+            "RESEARCH/upper_case_unmapped_source",
+        ):
+            with self.subTest(path=path):
+                self.assertTrue(rg.is_material_unmapped_path(path))
+                plan=rg.planned_replay(self.data,[path])
+                self.assertEqual(plan["unmapped_material_paths"],[path])
+                outcome=rg.execute(
+                    plan,run=lambda *a,**k:self.fail("Unmapped input must not execute a check")
+                )
+                self.assertEqual(outcome["status"],"BLOCKED_UNMAPPED_MATERIAL")
+
+    def test_green_known_check_cannot_hide_unmapped_binary_evidence(self):
+        path="research/unmapped_observation.bin"
+        plan=rg.planned_replay(self.data,["README.md",path])
+        self.assertIn(path,plan["unmapped_material_paths"])
+        result=rg.execute(plan,run=lambda *a,**k:SimpleNamespace(returncode=0))
+        self.assertEqual(result["status"],"BLOCKED_UNMAPPED_MATERIAL")
+        self.assertTrue(result["executed"])
+        self.assertTrue(all(x["status"]=="PASS" for x in result["executed"]))
+
     def test_unmapped_python_change_blocks_scoped_success(self):
         plan=rg.planned_replay(self.data,["tools/unclassified_analysis.py"])
         self.assertEqual(plan["unmapped_material_paths"],["tools/unclassified_analysis.py"])
