@@ -100,14 +100,29 @@ def git_changed_paths(baseline, root=ROOT, run=subprocess.run):
     return sorted(set(names))
 
 
+# Extension is not a safety classification: research sources and figures may be
+# binary, extensionless, or saved under mixed-case paths. Unknown paths in
+# evidence-bearing directories require an executable replay mapping/review.
+MATERIAL_PATH_PREFIXES = (
+    ".github/", "assets/", "benchmarks/", "capability_lab/", "continuity/",
+    "evaluation/", "evidence/", "experiments/", "funding/", "governance/",
+    "knowledge/", "learning/", "navigation/", "operations/", "prior-art/",
+    "protocols/", "reports/", "research/", "tests/", "tools/",
+)
+
+
 def is_material_unmapped_path(path):
-    """Conservative materiality; unknown artifacts alone are not proof of safety."""
+    """Fail closed on unreviewed research artifacts regardless of extension."""
     import posixpath
-    ext=posixpath.splitext(path.lower())[1]
+    lowered=path.lower()
+    ext=posixpath.splitext(lowered)[1]
     return (ext in {".py",".json",".jsonl",".md",".yml",".yaml",
-                    ".js",".ts",".toml",".sh",".csv",".lock",".ipynb"}
-            or path.startswith((".github/","tools/","tests/","experiments/"))
-            or posixpath.basename(path) in {"Dockerfile","Makefile","requirements.txt"})
+                    ".js",".ts",".toml",".sh",".csv",".lock",".ipynb",
+                    ".pdf",".txt",".bib",".tex",".rst",".tsv",".xml",
+                    ".html",".htm",".svg",".png",".jpg",".jpeg",
+                    ".webp",".parquet",".xlsx",".r",".rds"}
+            or lowered.startswith(MATERIAL_PATH_PREFIXES)
+            or posixpath.basename(lowered) in {"dockerfile","makefile","requirements.txt"})
 
 
 def planned_replay(data, paths):
