@@ -66,7 +66,18 @@ Only reports of reproducing a known test discrepancy can count as `verified_uniq
 
 ---
 
+### 2026-10-16 bounded B3 sanity control — executed on the PR branch (not a completed 4-policy AI comparison)
+[Executable deterministic checker](deterministic_baseline.py) · [Public GitHub Actions receipt](https://github.com/gmodrasa7-rgb/project-intersection-public/actions/runs/38816289215) · [draft PR #199](https://github.com/gmodrasa7-rgb/project-intersection-public/pull/199).
+
+The checker used **the same project-authored, publicly visible expected outputs**. On the frozen 40-case fixture (20 authored faulty, 20 authored clean), a no-verification B0 found **0** warnings at **0** checks, whereas the answer-aware B3 found **20/20** with **0** clean false alarms using **124** evaluations. Four injected controls all passed (missing warning, false observed value, clean false alarm, duplicate claim). GitHub CI passed on Python 3.12. **This is an intentionally non-blind upper bound, NOT an independent AI experiment or fair budget-matched policy comparison.** The reported zero paid external API calls are not zero total compute or human costs. The real CCPH support-and-contribution research remains unvalidated; positive and negative actual downstream outcomes remain UNKNOWN. The frozen `pilot.py` corpus remains unchanged.
+
 ## 원본2 — 한국어
+
+**2026-10-16 범위 한정 B3 기준선 자체검사 — PR 브랜치에서 실행(4정책 AI 비교 완료가 아님).** [실행 코드](deterministic_baseline.py) · [공개 CI 실행 기록](https://github.com/gmodrasa7-rgb/project-intersection-public/actions/runs/38816289215) · [초안 PR #199](https://github.com/gmodrasa7-rgb/project-intersection-public/pull/199).
+
+동일 프로젝트가 만든 **이미 공개된 정답**을 사용했다. 동결된 40개 사례(의도된 오류 20, 정상 20)에서 아무 검증도 하지 않는 B0는 경고 **0건/검사 0회**, 정답을 알고 검사한 B3는 **124회 검사로 오류 20/20 확인, 정상 사례 오탐 0건**이었다. 경고 제거·관측값 변조·정상사례 오탐·중복 경고를 주입한 음성 대조검사 4개가 모두 통과했고 Python 3.12 공개 CI도 통과했다. **이 결과는 비블라인드 상한 점검이지 독립 AI 실험이나 작업량을 맞춘 공정한 정책 비교가 아니다.** 외부 유료 API 호출 0회는 총 컴퓨팅 비용 또는 인간 노동비용 0을 뜻하지 않는다. 실제 CCPH의 지원·기여 효과는 검증되지 않았고, 현실의 장기 성과는 미확인이다. 동결된 `pilot.py` 원본은 유지했다.
+
+
 
 **상태: 측정도구 자체검사 통과 / 실제 AI 비교 미실행 / CCPH 가설 미검증.** 기준일 2026-10-15.
 **기여 계보:** PICB v1에 실제 긍정 기여 성과변수가 누락됐다는 발견과 핵심 연구 질문은 Project Intersection 인간 창시자의 기여다. 이 파일럿 측정도구의 구현은 AI 지원 작업이며, 아래 선행연구를 새로 발명한 것이 아니다. 독립 인과검증도 아니다.
