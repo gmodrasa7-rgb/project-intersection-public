@@ -21,5 +21,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: python experiments/e008/validate.py
+      - name: E008 optional numerical-input contract negative controls
+        run: python experiments/e008/completion_contract.py --self-test
+      - name: E008 numeric-input status (must remain HOLD)
+        run: python experiments/e008/completion_contract.py
       - name: Audit E008 executability, frozen prereg source and synthetic counterexample
         run: node experiments/e008/readiness_audit.js --verify
