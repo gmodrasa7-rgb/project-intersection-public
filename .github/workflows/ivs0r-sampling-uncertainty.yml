@@ -1,0 +1,23 @@
+name: IVS-0R sampling uncertainty arithmetic
+on:
+  push:
+    paths:
+      - "experiments/coalition_externality_probe/sampling_uncertainty_r33_r34.py"
+      - ".github/workflows/ivs0r-sampling-uncertainty.yml"
+  pull_request:
+    paths:
+      - "experiments/coalition_externality_probe/sampling_uncertainty_r33_r34.py"
+      - ".github/workflows/ivs0r-sampling-uncertainty.yml"
+  workflow_dispatch:
+jobs:
+  synthetic_arithmetic:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Verify explicit finite-population arithmetic
+        run: python experiments/coalition_externality_probe/sampling_uncertainty_r33_r34.py
