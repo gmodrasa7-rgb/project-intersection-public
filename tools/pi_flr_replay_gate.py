@@ -29,6 +29,9 @@ COMMANDS={
     "FLR_META":["python3","tools/pi_flr_audit.py"],
     "FLR_MUTANTS":["python3","-m","unittest","discover","-s","tests","-p","test_pi_flr_replay_gate.py"],
     "FLR_ALL_TESTS":["python3","-m","unittest","discover","-s","tests","-p","test_pi_flr_*.py"],
+    # Data-free contract + negative controls; does not claim CI has author ZIP.
+    "FREE_TO_FAIL_RECEIPT":["python3","-m","unittest","discover","-s","tests","-p","test_free_to_fail_contract.py"],
+    "LANGUAGE_INVENTORY":["python3","tools/audit_bilingual_navigation.py","--self-test"],
 }
 # Match rule identifiers declared in the versioned data. These checks do real work.
 RULE_CHECKS={
@@ -49,6 +52,11 @@ DIRECT_PATH_CHECKS = {
     "tools/audit_pi_access.py": ("PI_ACCESS", "NAV_LINKS"),
     "tools/check_readme_l0.py": ("README_L0",),
     ".github/workflows/public-repository-audit.yml": ("README_L0", "NAV_LINKS", "FLR_ALL_TESTS"),
+    "experiments/mer_ei/independent_free_to_fail_replication.py": ("FREE_TO_FAIL_RECEIPT",),
+    "research/MER_EI_FREE_TO_FAIL_INDEPENDENT_RAW_REANALYSIS_2026-11-10.json": ("FREE_TO_FAIL_RECEIPT",),
+    "tests/test_free_to_fail_contract.py": ("FREE_TO_FAIL_RECEIPT",),
+    "knowledge/language-edition-register.json": ("LANGUAGE_INVENTORY",),
+    "tools/pi_flr_replay_gate.py": ("FLR_MUTANTS", "FREE_TO_FAIL_RECEIPT"),
 }
 
 

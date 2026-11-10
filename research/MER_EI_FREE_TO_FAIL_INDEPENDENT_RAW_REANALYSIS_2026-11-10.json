@@ -1,0 +1,92 @@
+{
+  "schema_version": "project-intersection/ivs0r-author-data-reanalysis-receipt/1",
+  "date_kst": "2026-11-10",
+  "scope": "Author-supplied human experiment data, independently recoded aggregate cells and eight OLS models; not a new sample, external lab replicate or AI-motivation test",
+  "baseline_public_main_sha": "e81e6657cc33ff6b522bbd90740428a31f7e1c65",
+  "prior_work_preserved": [
+    "research/MER_EI_FREE_TO_FAIL_PRIMARY_RESULT_REPRO_GATE_2026-10-21.json",
+    "research/MER_EI_SOFT_HARD_PARTIAL_IDENTIFICATION_2026-10-22_EN.md",
+    "research/MER_EI_SOFT_HARD_PARTIAL_IDENTIFICATION_2026-10-22_KO.md"
+  ],
+  "paper": {
+    "title": "Free to Fail? Paternalistic Preferences in the United States",
+    "authors": ["Björn Bartling", "Alexander W. Cappelen", "Henning Hermes", "Marit Skivenes", "Bertil Tungodden"],
+    "journal_doi": "10.1093/ej/ueag136",
+    "journal_online_date": "2026-10-29",
+    "model_table_reference": "2023 author draft Tables 2 and 3; full final 2026 tables not crosschecked"
+  },
+  "author_package": {
+    "zenodo_doi": "10.5281/zenodo.23420381",
+    "zip_filename": "3-replication-package.zip",
+    "zip_md5_verified": "7f1ebe690e3704d8ba81409626834b77",
+    "readme_pdf_md5_verified": "409f958d3c6f4f5490f776c66dd7a602",
+    "source_dataset_type": "deidentified author-collected online survey exports",
+    "source_privacy_disposition": "No individual respondent data, source archive, per-person row or personal attributes uploaded into Project Intersection"
+  },
+  "independent_script": "experiments/mer_ei/independent_free_to_fail_replication.py",
+  "independent_script_sha256": "f1bac459e60e2f69d83006a6b3ecb33890b29b89655b4f1de8b77ab860523b33",
+  "environment": {
+    "implementation": "Python 3 and NumPy (independent of author Stata 17 code)",
+    "author_stata_programs_executed": false,
+    "real_human_source_data_processed": true,
+    "independent_sample_or_external_lab_replication": false
+  },
+  "sample": {
+    "study1_imported": 8004,
+    "study1_retained": 8004,
+    "study2_imported": 6033,
+    "study2_retained": 6033,
+    "total_unique_spectator_records": 14037
+  },
+  "source_arm_counts": {
+    "study1_hard_internal": {"yes": 673, "n": 2008},
+    "study1_soft_internal": {"yes": 1714, "n": 1994},
+    "study1_hard_external": {"yes": 600, "n": 2000},
+    "study1_soft_external": {"yes": 1752, "n": 2002},
+    "study2_hard_internal": {"yes": 710, "n": 2006},
+    "study2_soft_internal": {"yes": 1651, "n": 2001},
+    "study2_mandatory_safe_allocation": {"yes": 1415, "n": 2026}
+  },
+  "numeric_checks": {
+    "study1_pooled_soft_minus_hard_pp": 54.9752596908,
+    "study1_pooled_HC1_normal_95ci_pp": [53.1908, 56.7597],
+    "study2_internal_soft_minus_hard_pp": 47.1149270828,
+    "study2_internal_HC1_normal_95ci_pp": [44.4404, 49.7895],
+    "study1_soft_external_interaction_pp": 5.0705501466,
+    "study1_interaction_HC1_se_pp": 1.8200403588,
+    "study1_pooled_latent_soft_only_frechet_point_bounds": [0.5497525969082856, 0.6823852295409182],
+    "study2_internal_latent_soft_only_frechet_point_bounds": [0.4711492708281951, 0.646061814556331],
+    "latent_type_bounds_prior_art_status": "ALREADY_DERIVED_BY_PROJECT_2026-10-22; EXACT_RAW_MARGINAL_RECALCULATION_ONLY",
+    "published_2023_principal_ols_models": 8,
+    "published_2023_principal_ols_models_matched_to_3_decimals": 8,
+    "negative_controls_rejected": 2,
+    "negative_controls_total": 2,
+    "wrong_archive_md5_negative_control": "REJECTED_EXIT_1",
+    "published_2023_HC1_principal_standard_errors_matched_to_3_decimals": true
+  },
+  "repro_command": "python3 experiments/mer_ei/independent_free_to_fail_replication.py --archive 3-replication-package.zip",
+  "gates": {
+    "A0_source_2023_tables_and_2026_publication_metadata": "PASS",
+    "A0_final_2026_typeset_table_all_values": "HOLD_NOT_VERIFIED",
+    "A1_real_archive_bytes_md5": "PASS",
+    "A2_readme_privacy_stata_requirements": "PASS_READ_ONLY",
+    "A3_seven_cells_14037_rows": "PASS",
+    "A4_independent_eight_ols_and_two_negative_controls": "PASS",
+    "A4_author_stata_24_exhibits": "HOLD_NOT_RUN",
+    "A5_original_B_or_AI_intrinsic_motive": "HOLD_NOT_IDENTIFIED"
+  },
+  "claim_status": {
+    "source_matched_human_experiment_contrast": "KEEP",
+    "historical_source_access_failure": "MODIFY_BY_ADDITIVE_RECEIPT_NOT_ERASURE",
+    "novelty_of_frechet_bounds": "NOVELTY_REJECTED_EXISTING_PROJECT_PRIOR_WORK",
+    "AI_autonomy_or_original_B_motive_transfer": "HOLD"
+  },
+  "publisher_data_and_rights": "Retain Bartling et al. attribution; the authors' ZIP README claims data redistribution permission. This repository adds only analysis code and aggregates.",
+  "open_limitations": [
+    "2026 final printed exhibits not directly compared row-by-row",
+    "24-exhibit author Stata workflow and Romano-Wolf family correction not executed",
+    "Individual-level joint potential outcomes and intrinsic motive are not identified",
+    "Real veto, delegation, manipulation, exit costs, retaliation, future original-B continuance and AI consciousness not measured",
+    "An independent laboratory has not rerun this independent script"
+  ]
+}
