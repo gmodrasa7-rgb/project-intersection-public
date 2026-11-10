@@ -1,6 +1,6 @@
 {
   "schema_version": "pi-language-edition-register/v0.1",
-  "updated": "2026-10-22",
+  "updated": "2026-11-10",
   "baseline_repository_tree_sha": "b2055f40a1e0cabe38f3c6e8c984228c1c2a7e0f",
   "baseline_scope": "Preserve main's latest language inventory and original pair lineages; add research-version EN/KO combined guide. Historical baseline-tree SHA is not a current head. Meaning equivalence NOT_INDEPENDENTLY_VERIFIED.",
   "policy": {
@@ -621,6 +621,23 @@
         "Pre-registration proposal not independently filed, approved, run, or statistically powered.",
         "This does not measure persistent current-LLM selfhood, original B numerical identity or human/AI coexistence."
       ]
+    },
+    {
+      "id": "PI-MER-EI-RAW-DATA-REANALYSIS-20261110",
+      "original_1_english": "research/MER_EI_FREE_TO_FAIL_INDEPENDENT_RAW_REANALYSIS_2026-11-10_EN.md",
+      "original_2_korean": "research/MER_EI_FREE_TO_FAIL_INDEPENDENT_RAW_REANALYSIS_2026-11-10_KO.md",
+      "kind": "existing_human_author_data_independent_reanalysis_not_new_spectator_sample",
+      "structural_pair_present": true,
+      "meaning_review_status": "NOT_INDEPENDENTLY_VERIFIED",
+      "original_conception_language": "KO_USER_RESEARCH_GOAL_AI_ASSISTED_REANALYSIS",
+      "independent_review_receipt": null,
+      "one_sided_edit_exception": null,
+      "known_divergences": [
+        "New author-CSV independent aggregation and eight principal 2023 OLS regressions; not new human subjects or AI-intrinsic self-motivation.",
+        "2026 final journal publication tables and all Stata outputs are not exhaustively independently replayed.",
+        "The 2026-10-22 Frechet partial-identification result was existing repository prior work; mathematical novelty not claimed.",
+        "Bilingual filename parity is not an independent semantic equivalence review."
+      ]
     }
   ],
   "legacy_priority_unresolved": [
@@ -662,13 +679,13 @@
     }
   ],
   "metrics": {
-    "markdown_total": 264,
+    "markdown_total": 266,
     "filename_classes": {
       "UNMARKED_LANGUAGE_UNVERIFIED": 46,
       "LEGACY_MIXED_READER_ENTRY": 2,
-      "KO_SUFFIX_UNVERIFIED": 121,
+      "KO_SUFFIX_UNVERIFIED": 122,
       "ORDERED_BILINGUAL_FOUNDER_OR_GOVERNANCE": 2,
-      "EN_SUFFIX_UNVERIFIED": 51,
+      "EN_SUFFIX_UNVERIFIED": 52,
       "COMBINED_NAMING_UNVERIFIED": 42
     },
     "meaning_verified_pairs": 0,
@@ -1809,6 +1826,18 @@
       "content_equivalence": "NOT_REVIEWED"
     },
     {
+      "path": "research/MER_EI_FREE_TO_FAIL_INDEPENDENT_RAW_REANALYSIS_2026-11-10_EN.md",
+      "filename_class": "EN_SUFFIX_UNVERIFIED",
+      "counterpart_path": "research/MER_EI_FREE_TO_FAIL_INDEPENDENT_RAW_REANALYSIS_2026-11-10_KO.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "research/MER_EI_FREE_TO_FAIL_INDEPENDENT_RAW_REANALYSIS_2026-11-10_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": "research/MER_EI_FREE_TO_FAIL_INDEPENDENT_RAW_REANALYSIS_2026-11-10_EN.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
       "path": "research/MER_EI_FREE_TO_FAIL_REPRO_READINESS_2026-10-21_EN.md",
       "filename_class": "EN_SUFFIX_UNVERIFIED",
       "counterpart_path": "research/MER_EI_FREE_TO_FAIL_REPRO_READINESS_2026-10-21_KO.md",
@@ -2852,6 +2881,15 @@
         "research/PI_PACD_PRS_OSL_V0_1_0_KO.md"
       ],
       "scope": "paired filenames only, scientific novelty and translation meaning unverified"
+    },
+    {
+      "date": "2026-11-10",
+      "event": "IVS_0R_FREE_TO_FAIL_INDEPENDENT_AUTHOR_DATA_REANALYSIS_LANGUAGE_PAIR",
+      "new_documents": [
+        "research/MER_EI_FREE_TO_FAIL_INDEPENDENT_RAW_REANALYSIS_2026-11-10_EN.md",
+        "research/MER_EI_FREE_TO_FAIL_INDEPENDENT_RAW_REANALYSIS_2026-11-10_KO.md"
+      ],
+      "scope": "Paired public evidence reports; source verified via author archive locally; independent semantic review pending; no novel Frechet claim; no new human data."
     }
   ],
   "path_layout_policy": "Keep the project root entry-only; bilingual full research editions live in existing research/ and their original historical combined documents retain stable root URLs."
