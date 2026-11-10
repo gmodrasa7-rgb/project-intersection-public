@@ -365,5 +365,31 @@ class FLRValidationTests(unittest.TestCase):
 
 
 
+    def test_required_ci_workflows_cannot_be_path_skipped(self):
+        """Both required checks must be unconditional for PR and main push."""
+        required = {
+            ".github/workflows/language-separation.yml": "language-entry-regression",
+            ".github/workflows/public-repository-audit.yml": "public-governance-regression",
+        }
+        unfiltered = "  pull_request:\n  push:\n    branches: [main]\n"
+
+        def valid(source, job):
+            header, delimiter, body = source.partition("\npermissions:\n")
+            return bool(delimiter and unfiltered in header
+                        and "    paths:" not in header and f"  {job}:" in body)
+
+        for path, job in required.items():
+            with self.subTest(path=path):
+                source = (ROOT / path).read_text(encoding="utf-8")
+                self.assertTrue(valid(source, job))
+                pull_mutant = source.replace(
+                    "  pull_request:\n",
+                    "  pull_request:\n    paths:\n      - 'docs/**'\n", 1)
+                push_mutant = source.replace(
+                    "    branches: [main]\n",
+                    "    branches: [main]\n    paths:\n      - 'docs/**'\n", 1)
+                self.assertFalse(valid(pull_mutant, job))
+                self.assertFalse(valid(push_mutant, job))
+
 if __name__ == "__main__":
     unittest.main()

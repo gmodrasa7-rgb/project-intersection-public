@@ -2,38 +2,8 @@ name: Public English/Korean language separation
 
 on:
   pull_request:
-    paths:
-      - "**/*.md"
-      - "*.md"
-      - "tools/check_language_separation.py"
-      - "tools/audit_bilingual_navigation.py"
-      - "tools/audit_claim_source_lock.py"
-      - "tools/check_external_review_paths.py"
-      - "knowledge/claim-source-lock.json"
-      - "experiments/e007/timing_summary.json"
-      - "experiments/e008/EXECUTABILITY_AUDIT.json"
-      - "experiments/e009/RESULT.json"
-      - "experiments/e010/RESULT.json"
-      - "experiments/e010/run.js"
-      - "knowledge/language-edition-register.json"
-      - ".github/workflows/language-separation.yml"
   push:
     branches: [main]
-    paths:
-      - "**/*.md"
-      - "*.md"
-      - "tools/check_language_separation.py"
-      - "tools/audit_bilingual_navigation.py"
-      - "tools/audit_claim_source_lock.py"
-      - "tools/check_external_review_paths.py"
-      - "knowledge/claim-source-lock.json"
-      - "experiments/e007/timing_summary.json"
-      - "experiments/e008/EXECUTABILITY_AUDIT.json"
-      - "experiments/e009/RESULT.json"
-      - "experiments/e010/RESULT.json"
-      - "experiments/e010/run.js"
-      - "knowledge/language-edition-register.json"
-      - ".github/workflows/language-separation.yml"
   workflow_dispatch:
 
 permissions:
