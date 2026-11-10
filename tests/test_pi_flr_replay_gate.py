@@ -142,6 +142,22 @@ class ReplayGateTests(unittest.TestCase):
         self.assertEqual(gap["unmapped_material_paths"],["tools/unclassified_analysis.py"])
 
 
+    def test_language_register_and_linked_rise_manifest_replay(self):
+        register=rg.planned_replay(self.data,["knowledge/language-edition-register.json"])
+        self.assertEqual(register["check_ids"],["LANGUAGE_INVENTORY","RISE_MANIFEST"])
+        self.assertEqual(register["unmapped_material_paths"],[])
+        manifest=rg.planned_replay(self.data,["operations/PI_RISE_V0_2_0_VERSION_MANIFEST.json"])
+        self.assertEqual(manifest["check_ids"],["RISE_MANIFEST"])
+        self.assertEqual(manifest["unmapped_material_paths"],[])
+
+    def test_language_registry_unmapped_mutant_remains_blocked(self):
+        from unittest.mock import patch
+        with patch.dict(rg.DIRECT_PATH_CHECKS, {}, clear=True):
+            plan=rg.planned_replay(self.data,["knowledge/language-edition-register.json"])
+            self.assertEqual(plan["unmapped_material_paths"],["knowledge/language-edition-register.json"])
+            self.assertEqual(rg.execute(plan,run=lambda *a,**k:self.fail("unexpected subprocess"))["status"],
+                             "BLOCKED_UNMAPPED_MATERIAL")
+
     def test_unmapped_python_change_blocks_scoped_success(self):
         plan=rg.planned_replay(self.data,["tools/unclassified_analysis.py"])
         self.assertEqual(plan["unmapped_material_paths"],["tools/unclassified_analysis.py"])
