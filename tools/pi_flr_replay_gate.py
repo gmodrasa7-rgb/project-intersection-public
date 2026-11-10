@@ -29,6 +29,8 @@ COMMANDS={
     "FLR_META":["python3","tools/pi_flr_audit.py"],
     "FLR_MUTANTS":["python3","-m","unittest","discover","-s","tests","-p","test_pi_flr_replay_gate.py"],
     "FLR_ALL_TESTS":["python3","-m","unittest","discover","-s","tests","-p","test_pi_flr_*.py"],
+    # Data-free conditional inference; user-level raw data never enter CI.
+    "IVS0R_SOFT_ONLY_ENVELOPE":["python3","experiments/mer_ei/soft_only_confidence_envelope.py","--self-test"],
     # Data-free contract + negative controls; does not claim CI has author ZIP.
     "FREE_TO_FAIL_RECEIPT":["python3","-m","unittest","discover","-s","tests","-p","test_free_to_fail_contract.py"],
     "LANGUAGE_INVENTORY":["python3","tools/audit_bilingual_navigation.py","--self-test"],
@@ -55,8 +57,10 @@ DIRECT_PATH_CHECKS = {
     "experiments/mer_ei/independent_free_to_fail_replication.py": ("FREE_TO_FAIL_RECEIPT",),
     "research/MER_EI_FREE_TO_FAIL_INDEPENDENT_RAW_REANALYSIS_2026-11-10.json": ("FREE_TO_FAIL_RECEIPT",),
     "tests/test_free_to_fail_contract.py": ("FREE_TO_FAIL_RECEIPT",),
+    "experiments/mer_ei/soft_only_confidence_envelope.py": ("IVS0R_SOFT_ONLY_ENVELOPE",),
+    "research/MER_EI_SOFT_ONLY_SIMULTANEOUS_INFERENCE_2026-11-10.json": ("IVS0R_SOFT_ONLY_ENVELOPE",),
     "knowledge/language-edition-register.json": ("LANGUAGE_INVENTORY",),
-    "tools/pi_flr_replay_gate.py": ("FLR_MUTANTS", "FREE_TO_FAIL_RECEIPT"),
+    "tools/pi_flr_replay_gate.py": ("FLR_MUTANTS", "FREE_TO_FAIL_RECEIPT", "IVS0R_SOFT_ONLY_ENVELOPE"),
 }
 
 
