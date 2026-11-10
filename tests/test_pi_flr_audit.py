@@ -365,5 +365,22 @@ class FLRValidationTests(unittest.TestCase):
 
 
 
+    def test_required_ci_workflows_cannot_be_path_skipped(self):
+        """Required release checks must run for every PR and main push."""
+        paths = (
+            ".github/workflows/language-separation.yml",
+            ".github/workflows/public-repository-audit.yml",
+        )
+        unfiltered = "  pull_request:\n  push:\n    branches: [main]\n"
+        for path in paths:
+            with self.subTest(path=path):
+                source = (ROOT / path).read_text(encoding="utf-8")
+                self.assertIn(unfiltered, source)
+                self.assertNotIn("    paths:", source)
+                mutant = source.replace("  pull_request:\n",
+                                        "  pull_request:\n    paths:\n      - 'docs/**'\n",
+                                        1)
+                self.assertNotIn(unfiltered, mutant)
+
 if __name__ == "__main__":
     unittest.main()
