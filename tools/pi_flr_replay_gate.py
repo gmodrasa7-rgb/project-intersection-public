@@ -22,6 +22,7 @@ RECEIPT="pi_flr_replay_receipt.json"
 COMMANDS={
     "README_L0":["python3","tools/check_readme_l0.py"],
     "LANGUAGE":["python3","tools/check_language_separation.py","--self-test"],
+    "LANGUAGE_INVENTORY":["python3","tools/audit_bilingual_navigation.py","--self-test"],
     "RISE_MANIFEST":["python3","tools/pi_rise_manifest_guard.py"],
     "E010_LINEAGE":["python3","tools/pi_flr_experiment_identity.py"],
     "NAV_LINKS":["python3","tools/check_public_navigation.py","--strict-all"],
@@ -46,6 +47,9 @@ RULE_CHECKS={
 # Precise, reviewed checks for existing material paths not represented in the
 # historical failure taxonomy. Unlisted material changes still block promotion.
 DIRECT_PATH_CHECKS = {
+    # Exact JSON artifacts: run the full bilingual inventory and hash-linked manifest checks.
+    "knowledge/language-edition-register.json": ("LANGUAGE_INVENTORY", "RISE_MANIFEST"),
+    "operations/PI_RISE_V0_2_0_VERSION_MANIFEST.json": ("RISE_MANIFEST",),
     "tools/audit_pi_access.py": ("PI_ACCESS", "NAV_LINKS"),
     "tools/check_readme_l0.py": ("README_L0",),
     ".github/workflows/public-repository-audit.yml": ("README_L0", "NAV_LINKS", "FLR_ALL_TESTS"),
