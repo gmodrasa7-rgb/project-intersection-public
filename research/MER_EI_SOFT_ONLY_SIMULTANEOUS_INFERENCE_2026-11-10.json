@@ -1,0 +1,68 @@
+{
+  "schema": "project-intersection/ivs0r-simultaneous-sampling-envelope/1",
+  "date_kst": "2026-11-10",
+  "dependency_status": "STACKED_ON_DRAFT_PR_370_NOT_IN_MAIN",
+  "source_receipt_path": "research/MER_EI_FREE_TO_FAIL_INDEPENDENT_RAW_REANALYSIS_2026-11-10.json",
+  "source_receipt_original_blob_sha": "9676645ed9ffa151ee6c517613dca525c7e0feb4",
+  "source_original_author_data": "Bartling et al., Free to Fail, author ZIP Zenodo DOI 10.5281/zenodo.23420381; no source respondent rows processed in this step",
+  "method": "Standard Frechet bounds plus two-sided Hoeffding (1963) for six marginals and Bonferroni simultaneous correction; not original theory",
+  "predecessor": "research/MER_EI_SOFT_HARD_PARTIAL_IDENTIFICATION_2026-10-22_KO.md",
+  "alpha_familywise": 0.05,
+  "number_of_marginals_simultaneously_protected": 6,
+  "coverage_interpretation": "Conditional on specified independent Bernoulli sampling and the randomized-arm causal assumptions, all three entire true Frechet identified sets lie inside their respective outer envelopes with joint probability at least 0.95. Not an optimal or sharp inference procedure.",
+  "identification_assumptions": [
+    "Independent Bernoulli sampled decisions within each intervention cell, a common target response distribution within a fixed error-attribution regime",
+    "As-if randomized soft/hard assignment, potential-outcome consistency, positivity and no interference",
+    "No unresolved selection, attrition or measurement error capable of breaking exchangeability",
+    "No transfer from US online study participants to all people or artificial intelligence"
+  ],
+  "original_1_english": "For each of the three comparable soft/hard conditions, compute pointwise Frechet bounds on the unobserved soft-only potential-response type. Separately protect all six sample means via a union bound: epsilon_i=sqrt(log(12/0.05)/(2*n_i)). Substitution of the simultaneous marginal envelopes yields conservative 95-percent outer confidence envelopes for the entire identified sets, not confidence in benevolent intent. Do not pool across the internal/external attribution regimes for latent-type claims without specifying a common mixture target. The point estimate, sampling coverage, behavioral motive, and external validity are four separate claims.",
+  "original_2_korean": "내부/외부 오류귀속 조건을 구분하여 동일 개체의 미관측 soft-only 잠재 선택유형에 Fréchet 부분식별 경계를 적용했다. 여섯 주변비율 각각에 Hoeffding 오차폭 epsilon_i=sqrt(log(12/0.05)/(2*n_i))를 두고 합집합 경계(Bonferroni)로 동시 95% 보수적 외피를 계산했다. 이는 가정하에서 모집단 잠재행동 유형의 전체 부분식별집합을 덮는 구간이지 선한 내재동기에 대한 확신이 아니다. 내부/외부 처치조건의 단순 합산을 개인별 유형 증명으로 승격하면 안 된다. 무작위배정·독립표본·이탈·측정오류가 확인되지 않으면 통계적 신뢰 주장을 보류한다.",
+  "strata": {
+    "study1_internal": {
+      "soft": {"yes": 1714, "n": 1994},
+      "hard": {"yes": 673, "n": 2008},
+      "soft_hard_rates_pct": [85.957874, 33.515936],
+      "soft_only_identified_set_point_pct": [52.441937, 66.484064],
+      "soft_only_simultaneous_outer_envelope_pct": [45.040620, 70.178250],
+      "hard_only_identified_set_point_pct": [0, 14.042126],
+      "hard_only_simultaneous_outer_envelope_pct": [0, 17.749258]
+    },
+    "study1_external": {
+      "soft": {"yes": 1752, "n": 2002},
+      "hard": {"yes": 600, "n": 2000},
+      "soft_hard_rates_pct": [87.512488, 30],
+      "soft_only_identified_set_point_pct": [57.512488, 70],
+      "soft_only_simultaneous_outer_envelope_pct": [50.111203, 73.701567],
+      "hard_only_identified_set_point_pct": [0, 12.487512],
+      "hard_only_simultaneous_outer_envelope_pct": [0, 16.187230]
+    },
+    "study2_internal": {
+      "soft": {"yes": 1651, "n": 2001},
+      "hard": {"yes": 710, "n": 2006},
+      "soft_hard_rates_pct": [82.508746, 35.393819],
+      "soft_only_identified_set_point_pct": [47.114927, 64.606181],
+      "soft_only_simultaneous_outer_envelope_pct": [39.718258, 68.302208],
+      "hard_only_identified_set_point_pct": [0, 17.491254],
+      "hard_only_simultaneous_outer_envelope_pct": [0, 21.191896]
+    }
+  },
+  "statuses": {
+    "aggregate_arithmetic": "REPLAYABLE_FROM_DRAFT_AUTHOR_DATA_RECEIPT",
+    "conditional_confidence_envelope": "METHOD_CONDITIONAL_NOT_EXACT_EXPERIMENT_RANDOMIZATION_INFERENCE",
+    "sampling_assumptions_independently_verified": "HOLD_NOT_VERIFIED",
+    "intrinsic_motive": "HOLD_NOT_IDENTIFIED",
+    "AI_generalization": "HOLD_NOT_IDENTIFIED",
+    "global_universal_coexistence": "HOLD_NOT_ESTABLISHED",
+    "new_scientific_theorem": "NOVELTY_REJECTED_STANDARD_MATH"
+  },
+  "next_discriminating_evidence": [
+    "Verify participant sampling, individual randomization, repeated recruitment and attrition from source documents",
+    "Reproduce full author Stata package and compare final 2026 publication, leaving the 2023-only reproduction limits visible",
+    "Measure real original-B veto, unpenalized refusal, exit, hidden benefits and power-reversal controls before an autonomy-motive inference"
+  ],
+  "primary_statistics_references": [
+    "Hoeffding W. (1963). doi:10.1080/01621459.1963.10500830",
+    "Imbens G., Manski C. (2004). doi:10.1111/j.1468-0262.2004.00555.x"
+  ]
+}
