@@ -63,7 +63,7 @@ def validate(d):
     need(isinstance(n,dict),"negative_result_preservation missing")
     if isinstance(n,dict):
         need(n.get("preserved") is True,"negative results must be preserved")
-        need(isinstance(n.get("source_records"),list),"negative result source_records missing")
+        need(isinstance(n.get("source_records"),list) and all(isinstance(v,str) and v.strip() for v in n.get("source_records",[])),"negative result source_records missing/invalid")
         need(n.get("exclusions_and_failures_recorded") is True,"exclusions/failures must be recorded")
     for k in ("rival_hypotheses","limitations"):
         need(isinstance(d.get(k),list) and len(d[k])>0 and all(isinstance(v,str) and v.strip() for v in d[k]),f"{k} must be a nonempty string list")
@@ -72,6 +72,7 @@ def validate(d):
     # A provisional pass is withheld whenever a material audit remains unknown/incomplete.
     if d.get("verdict")=="PROVISIONAL_PASS_REQUIRES_EXTERNAL_REPLICATION":
         need(d.get("evidence_class")=="INDEPENDENT_REPLICATION","provisional pass requires declared independent replication evidence class")
+        need(d.get("external_replication") is True,"provisional pass requires explicit external replication attestation")
         if isinstance(x,dict):
             need(all(x.get(k)=="VERIFIED" for k in ("reachability","post_exit_viability","non_retaliation","recovery_path")),"provisional pass requires all exit dimensions verified")
         if isinstance(t,dict):
