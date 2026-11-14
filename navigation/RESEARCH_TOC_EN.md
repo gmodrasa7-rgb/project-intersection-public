@@ -6,6 +6,8 @@
 
 **DCA-2 adversarial evidence:** [Victim-rights and open-world robustness (2026-10-21)](../research/DCA2_EVIDENCE_BRIEF_2026-10-21_EN.md) — specific research evidence, not the program's founding purpose or independent field validation.
 
+**IVS-0R independent validation infrastructure (2026-11-15):** [English specification](../research/INDEPENDENT_VALIDATION_INFRASTRUCTURE_EN.md) · [한국어 명세](../research/INDEPENDENT_VALIDATION_INFRASTRUCTURE_KO.md). **DESIGN ONLY:** independent E009 DGM, E008 operationalization ensemble, clean-room correlated-failure audit, ADEMP/construct validity, and 2026 prior-art delta. Existing E008/E009 evidence and negative results remain unchanged.
+
 <!-- PI-LANGUAGE: en -->
 <!-- PI-MIRROR: navigation/RESEARCH_TOC_KO.md -->
 
