@@ -133,7 +133,7 @@ Clean-room 결과는 명세 내 구현 재현성을 보일 수 있지만 구성�
 1. Morris, White & Crowther (2019), “Using simulation studies to evaluate statistical methods,” Statistics in Medicine 38(11), 2074–2102. ADEMP 및 시뮬레이션 보고. https://arxiv.org/abs/1712.03198
 2. Bartoš, Pawel & Siepe (2025), “Living Synthetic Benchmarks: A Neutral and Cumulative Framework for Simulation Studies.” 방법 개발과 DGM 개발 분리. https://arxiv.org/abs/2510.19489
 3. Bean 외 (2025), “Measuring what Matters: Construct Validity in Large Language Model Benchmarks,” NeurIPS 2025 Datasets and Benchmarks. https://arxiv.org/abs/2511.04703
-4. “Pitfalls in simulation studies” (2022), arXiv:2203.13076. 시뮬레이션 설계 유연성·선택 보고 위험. https://arxiv.org/abs/2203.13076
+4. Pawel, Kook & Reeve (2023), “Pitfalls and potentials in simulation studies: Questionable research practices in comparative simulation studies allow for spurious claims of superiority of any method,” Biometrical Journal. https://arxiv.org/abs/2203.13076 https://arxiv.org/abs/2203.13076
 5. Knight & Leveson (1986), “An Experimental Evaluation of the Assumption of Independence in Multiversion Programming.” DOI: 10.1109/TSE.1986.6312924
 6. Chakraborty (2026), arXiv:2604.22227. Codreanu (2026), arXiv:2602.19629. Gardner-Challis 외 (2026), arXiv:2602.20628.
 
