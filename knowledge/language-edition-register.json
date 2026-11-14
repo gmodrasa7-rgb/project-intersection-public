@@ -621,6 +621,21 @@
         "Pre-registration proposal not independently filed, approved, run, or statistically powered.",
         "This does not measure persistent current-LLM selfhood, original B numerical identity or human/AI coexistence."
       ]
+    },
+    {
+      "id": "PI-PROTOCOL-IVS0R-FALSIFICATION-GATE",
+      "original_1_english": "protocols/IVS0R_FALSIFICATION_AND_GATE_SPEC_EN.md",
+      "original_2_korean": "protocols/IVS0R_FALSIFICATION_AND_GATE_SPEC_KO.md",
+      "kind": "proposed_falsification_and_evidence_gate_protocol_not_scientific_validation",
+      "structural_pair_present": true,
+      "meaning_review_status": "NOT_INDEPENDENTLY_VERIFIED",
+      "original_conception_language": "KO_USER_SUPPLIED_DRAFT_AI_ASSISTED_CRITICAL_REVISION",
+      "independent_review_receipt": null,
+      "one_sided_edit_exception": null,
+      "known_divergences": [
+        "English and Korean editions were drafted as parallel complete editions; independent semantic equivalence review has not occurred.",
+        "Protocol thresholds are not calibrated and no empirical or external replication is claimed."
+      ]
     }
   ],
   "legacy_priority_unresolved": [
@@ -662,7 +677,7 @@
     }
   ],
   "metrics": {
-    "markdown_total": 264,
+    "markdown_total": 266,
     "filename_classes": {
       "UNMARKED_LANGUAGE_UNVERIFIED": 46,
       "LEGACY_MIXED_READER_ENTRY": 2,
@@ -1500,6 +1515,18 @@
       "path": "protocols/INTERSECTION_SYMMETRIC_HARM_POWER_PROTOCOL_v0_2_KO.md",
       "filename_class": "KO_SUFFIX_UNVERIFIED",
       "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "protocols/IVS0R_FALSIFICATION_AND_GATE_SPEC_EN.md",
+      "filename_class": "EN_SUFFIX_UNVERIFIED",
+      "counterpart_path": "protocols/IVS0R_FALSIFICATION_AND_GATE_SPEC_KO.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "protocols/IVS0R_FALSIFICATION_AND_GATE_SPEC_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": "protocols/IVS0R_FALSIFICATION_AND_GATE_SPEC_EN.md",
       "content_equivalence": "NOT_REVIEWED"
     },
     {

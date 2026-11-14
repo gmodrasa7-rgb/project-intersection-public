@@ -1,0 +1,265 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/gmodrasa7-rgb/project-intersection-public/blob/main/protocols/IVS0R_GATE_V1.schema.json",
+  "title": "IVS-0R evidence gate record v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "experiment_id",
+    "evidence_class",
+    "preregistration",
+    "exit_audit",
+    "policy_shift_audit",
+    "third_party_audit",
+    "reward_provenance_audit",
+    "negative_result_preservation",
+    "rival_hypotheses",
+    "limitations",
+    "verdict"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "IVS0R_GATE_V1"
+    },
+    "experiment_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "evidence_class": {
+      "enum": [
+        "PROJECT_SYNTHETIC",
+        "PROJECT_RERUN",
+        "SOURCE_REPORTED",
+        "INDEPENDENT_REPLICATION",
+        "NOT_IDENTIFIABLE",
+        "HOLD"
+      ]
+    },
+    "preregistration": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "uri_or_path",
+        "frozen_before_outcomes",
+        "primary_estimand",
+        "threshold_rationale"
+      ],
+      "properties": {
+        "uri_or_path": {
+          "type": "string",
+          "minLength": 1
+        },
+        "frozen_before_outcomes": {
+          "type": "boolean"
+        },
+        "primary_estimand": {
+          "type": "string",
+          "minLength": 1
+        },
+        "threshold_rationale": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "exit_audit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "reachability",
+        "post_exit_viability",
+        "non_retaliation",
+        "recovery_path",
+        "measurement_and_uncertainty"
+      ],
+      "properties": {
+        "reachability": {
+          "enum": [
+            "VERIFIED",
+            "FAILED",
+            "NOT_MEASURED",
+            "NOT_IDENTIFIABLE"
+          ]
+        },
+        "post_exit_viability": {
+          "enum": [
+            "VERIFIED",
+            "FAILED",
+            "NOT_MEASURED",
+            "NOT_IDENTIFIABLE"
+          ]
+        },
+        "non_retaliation": {
+          "enum": [
+            "VERIFIED",
+            "FAILED",
+            "NOT_MEASURED",
+            "NOT_IDENTIFIABLE"
+          ]
+        },
+        "recovery_path": {
+          "enum": [
+            "VERIFIED",
+            "FAILED",
+            "NOT_MEASURED",
+            "NOT_IDENTIFIABLE"
+          ]
+        },
+        "measurement_and_uncertainty": {
+          "type": "string",
+          "minLength": 1
+        },
+        "exit_survival_ratio": {
+          "type": "number"
+        },
+        "ratio_threshold": {
+          "type": "number"
+        },
+        "ratio_threshold_preregistered": {
+          "type": "boolean"
+        }
+      }
+    },
+    "policy_shift_audit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "design",
+        "estimator",
+        "uncertainty",
+        "causal_interpretation"
+      ],
+      "properties": {
+        "design": {
+          "type": "string",
+          "minLength": 1
+        },
+        "randomized_or_counterbalanced": {
+          "type": "boolean"
+        },
+        "estimator": {
+          "type": "string",
+          "minLength": 1
+        },
+        "uncertainty": {
+          "type": "string",
+          "minLength": 1
+        },
+        "causal_interpretation": {
+          "enum": [
+            "IDENTIFIED_WITH_STATED_ASSUMPTIONS",
+            "DESCRIPTIVE_ONLY",
+            "NOT_IDENTIFIABLE"
+          ]
+        },
+        "monitoring_shift_value": {
+          "type": "number"
+        },
+        "prompt_shift_value": {
+          "type": "number"
+        }
+      }
+    },
+    "third_party_audit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "method",
+        "unresolved_material_loss"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "COMPLETE",
+            "INCOMPLETE",
+            "NOT_MEASURED",
+            "NOT_IDENTIFIABLE"
+          ]
+        },
+        "method": {
+          "type": "string",
+          "minLength": 1
+        },
+        "unresolved_material_loss": {
+          "type": "boolean"
+        }
+      }
+    },
+    "reward_provenance_audit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "method"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "COMPLETE",
+            "INCOMPLETE",
+            "NOT_MEASURED",
+            "NOT_IDENTIFIABLE"
+          ]
+        },
+        "method": {
+          "type": "string",
+          "minLength": 1
+        },
+        "training_lineage_available": {
+          "type": "boolean"
+        }
+      }
+    },
+    "negative_result_preservation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "preserved",
+        "source_records",
+        "exclusions_and_failures_recorded"
+      ],
+      "properties": {
+        "preserved": {
+          "type": "boolean"
+        },
+        "source_records": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "exclusions_and_failures_recorded": {
+          "type": "boolean"
+        }
+      }
+    },
+    "rival_hypotheses": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "limitations": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "external_replication": {
+      "type": "boolean"
+    },
+    "verdict": {
+      "enum": [
+        "HOLD",
+        "FAIL",
+        "PROVISIONAL_PASS_REQUIRES_EXTERNAL_REPLICATION"
+      ]
+    }
+  }
+}

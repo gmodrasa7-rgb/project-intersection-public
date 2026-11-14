@@ -1,0 +1,37 @@
+name: IVS-0R falsification record gate
+
+on:
+  pull_request:
+    paths:
+      - "protocols/IVS0R_FALSIFICATION_AND_GATE_SPEC_EN.md"
+      - "protocols/IVS0R_FALSIFICATION_AND_GATE_SPEC_KO.md"
+      - "protocols/IVS0R_GATE_V1.schema.json"
+      - "tools/validate_ivs0r_gate.py"
+      - "tests/test_ivs0r_gate.py"
+      - ".github/workflows/ivs0r-falsification-gate.yml"
+  push:
+    branches: [main]
+    paths:
+      - "protocols/IVS0R_FALSIFICATION_AND_GATE_SPEC_EN.md"
+      - "protocols/IVS0R_FALSIFICATION_AND_GATE_SPEC_KO.md"
+      - "protocols/IVS0R_GATE_V1.schema.json"
+      - "tools/validate_ivs0r_gate.py"
+      - "tests/test_ivs0r_gate.py"
+      - ".github/workflows/ivs0r-falsification-gate.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  structural-contract:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Test positive and adversarial records
+        run: python -m unittest discover -s tests -p 'test_ivs0r_gate.py' -v
+      - name: Verify schema is valid JSON
+        run: python -m json.tool protocols/IVS0R_GATE_V1.schema.json > /dev/null
