@@ -160,6 +160,21 @@ class ReplayGateTests(unittest.TestCase):
         self.assertEqual(rg.execute(plan,run=lambda *a,**k:self.fail("no run"))["status"],
                          "BLOCKED_UNMAPPED_MATERIAL")
 
+    def test_ivs0r_protocol_artifacts_have_scoped_replay(self):
+        expected = {
+            "knowledge/language-edition-register.json": {"LANGUAGE","RISE_MANIFEST","NAV_LINKS"},
+            "protocols/IVS0R_FALSIFICATION_AND_GATE_SPEC_EN.md": {"LANGUAGE","NAV_LINKS"},
+            "protocols/IVS0R_FALSIFICATION_AND_GATE_SPEC_KO.md": {"LANGUAGE","NAV_LINKS"},
+            "protocols/IVS0R_GATE_V1.schema.json": {"IVS0R_SCHEMA"},
+            "tools/validate_ivs0r_gate.py": {"IVS0R_GATE"},
+            "tests/test_ivs0r_gate.py": {"IVS0R_GATE"},
+        }
+        for path, checks in expected.items():
+            with self.subTest(path=path):
+                plan=rg.planned_replay(self.data,[path])
+                self.assertEqual(set(plan["check_ids"]),checks)
+                self.assertEqual(plan["unmapped_material_paths"],[])
+
     def test_flr_registry_json_change_has_full_flr_test_selection(self):
         p=rg.planned_replay(self.data,["knowledge/PI_FLR_CASES_V0_1_0.json"])
         self.assertEqual(p["check_ids"],["FLR_ALL_TESTS","FLR_META"])
