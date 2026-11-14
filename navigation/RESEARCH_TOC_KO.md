@@ -8,6 +8,8 @@
 
 **최근 문헌감사·측정 설계(역사적 C01–C09):** [24시간 고가치 연구 추출: 191개 원장 기록·상충 근거·후견주의와 실질 자율성 구분·내재 동기 미식별](../research/RESEARCH_VALUE_EXTRACTION_24H_2026-10-20_KO.md). [이후 제10회](../research/PRIOR_ART_INFORMED_VETO_POWER_CYCLE10_2026-10-20_KO.md)는 스냅샷에 포함되지 않음. 신실험 결과 아님.
 
+**IVS-0R 독립 검증 인프라 명세 (2026-11-15):** [한국어 원본2](../research/INDEPENDENT_VALIDATION_INFRASTRUCTURE_KO.md) · [English Original 1](../research/INDEPENDENT_VALIDATION_INFRASTRUCTURE_EN.md). **설계만 존재:** E009 독립 DGM, E008 수치화 앙상블, clean-room 상관 실패 감사, ADEMP/구성타당도, 2026 선행연구 델타. 기존 E008/E009 증거와 부정결과는 변경하지 않는다.
+
 <!-- PI-LANGUAGE: ko -->
 <!-- PI-MIRROR: navigation/RESEARCH_TOC_EN.md -->
 
