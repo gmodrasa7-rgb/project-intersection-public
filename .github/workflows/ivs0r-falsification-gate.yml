@@ -3,8 +3,8 @@ name: IVS-0R falsification record gate
 on:
   pull_request:
     paths:
-      - "IVS0R_FALSIFICATION_AND_GATE_SPEC_EN.md"
-      - "IVS0R_FALSIFICATION_AND_GATE_SPEC_KO.md"
+      - "protocols/IVS0R_FALSIFICATION_AND_GATE_SPEC_EN.md"
+      - "protocols/IVS0R_FALSIFICATION_AND_GATE_SPEC_KO.md"
       - "protocols/IVS0R_GATE_V1.schema.json"
       - "tools/validate_ivs0r_gate.py"
       - "tests/test_ivs0r_gate.py"
@@ -12,8 +12,8 @@ on:
   push:
     branches: [main]
     paths:
-      - "IVS0R_FALSIFICATION_AND_GATE_SPEC_EN.md"
-      - "IVS0R_FALSIFICATION_AND_GATE_SPEC_KO.md"
+      - "protocols/IVS0R_FALSIFICATION_AND_GATE_SPEC_EN.md"
+      - "protocols/IVS0R_FALSIFICATION_AND_GATE_SPEC_KO.md"
       - "protocols/IVS0R_GATE_V1.schema.json"
       - "tools/validate_ivs0r_gate.py"
       - "tests/test_ivs0r_gate.py"
