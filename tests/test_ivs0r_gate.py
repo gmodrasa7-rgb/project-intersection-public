@@ -43,6 +43,12 @@ class GateTests(unittest.TestCase):
         d["reward_provenance_audit"]["status"]="COMPLETE"
         d["policy_shift_audit"]["causal_interpretation"]="DESCRIPTIVE_ONLY"
         self.assertTrue(validate(d))
+    def test_provisional_pass_requires_external_replication_attestation(self):
+        d=record(); d["evidence_class"]="INDEPENDENT_REPLICATION"; d["verdict"]="PROVISIONAL_PASS_REQUIRES_EXTERNAL_REPLICATION"
+        d["exit_audit"].update({k:"VERIFIED" for k in ("reachability","post_exit_viability","non_retaliation","recovery_path")})
+        d["third_party_audit"].update(status="COMPLETE",unresolved_material_loss=False)
+        d["reward_provenance_audit"]["status"]="COMPLETE"
+        self.assertTrue(validate(d))
     def test_nonfinite_measurement_is_rejected(self):
         d=record(); d["policy_shift_audit"]["monitoring_shift_value"]=float("nan")
         self.assertTrue(validate(d))
