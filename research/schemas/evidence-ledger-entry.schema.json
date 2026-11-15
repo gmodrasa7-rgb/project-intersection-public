@@ -19,5 +19,5 @@
     "limitations":{"type":"array","items":{"type":"string"}},
     "independence_disclosure":{"type":"string"}
   },
-  "allOf":[{"if":{"properties":{"status":{"const":"INDEPENDENTLY_VERIFIED"}},"required":["status"]},"then":{"required":["verifier","verified_at"],"properties":{"verifier":{"type":"string","minLength":1},"verified_at":{"type":"string","format":"date-time"}}}}]
+  "allOf":[{"if":{"properties":{"status":{"const":"INDEPENDENTLY_VERIFIED"}},"required":["status"]},"then":{"required":["verifier","verified_at","independence_disclosure"],"properties":{"independence_disclosure":{"type":"string","minLength":1},"verifier":{"type":"string","minLength":1},"verified_at":{"type":"string","format":"date-time"}}}}]
 }
