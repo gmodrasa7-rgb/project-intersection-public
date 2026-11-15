@@ -46,6 +46,7 @@ RULE_CHECKS={
 # Precise, reviewed checks for existing material paths not represented in the
 # historical failure taxonomy. Unlisted material changes still block promotion.
 DIRECT_PATH_CHECKS = {
+    "PRIOR_ART_SATURATION_MAP_KO.md": ("NAV_LINKS",),
     "tools/audit_pi_access.py": ("PI_ACCESS", "NAV_LINKS"),
     "tools/check_readme_l0.py": ("README_L0",),
     ".github/workflows/public-repository-audit.yml": ("README_L0", "NAV_LINKS", "FLR_ALL_TESTS"),
