@@ -30,6 +30,9 @@
 
 ## 3. 현재 판정
 
+**부분 중복 대조:** C18 후보 9개 DOI를 C10/C11/C12/C14/C15/C17 구조화 원장 6개와 비교했으며 정확 DOI 일치는 없었다. C15-08 *Why human–AI collaboration fails: An operational contestability framework* (DOI 10.1007/s42524-026-6049-7)는 가까운 개념적 선행연구지만, C18-07의 시민 21명 인터뷰 및 C18-08의 운영자 defeater 설계와는 별도 논문·방법이다. 중복 합산하지 않고 교차참조한다. C01–C09, C13, C16 markdown-only 기록, 저자·데이터셋 계보는 아직 확인하지 않았다.
+
+
 - 인간-AI 협력 문헌: 신규 실증·모형 연구를 추가했으나 조건·게임·표본에 따른 결과 상충.
 - AI 평가자 독립성: 자율 연구 에이전트 reward hacking 연구가 직접 관련되나 preprint·과제 한계가 있음.
 - contestability: 설명·운영자 반박·영향당사자 이의제기·실효 veto·exit를 분리해야 함.
