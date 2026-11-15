@@ -1,5 +1,8 @@
 # C18 공개 선행연구 증분 — 인간-AI 협력·평가자 독립성·contestability
 
+<!-- PI-LANGUAGE: ko -->
+<!-- PI-MIRROR: research/PRIOR_ART_C18_AI_COOPERATION_EVALUATOR_AUTONOMY_2026-11-16_EN.md -->
+
 - 조사일: 2026-11-16
 - 상태: `SELECTED_PRIOR_ART / SEARCH_ACTIVE / SATURATION_NOT_VERIFIED`
 - 목적: Project Intersection의 인간-AI 협력·자율성·독립검증 질문에 직접 관련된 최근 원출처를 공개적으로 안내한다.
