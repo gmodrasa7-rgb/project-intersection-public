@@ -133,6 +133,7 @@ class ReplayGateTests(unittest.TestCase):
             ("tools/audit_pi_access.py", "PI_ACCESS"),
             ("tools/check_readme_l0.py", "README_L0"),
             (".github/workflows/public-repository-audit.yml", "FLR_ALL_TESTS"),
+            ("PRIOR_ART_SATURATION_MAP_KO.md", "NAV_LINKS"),
         ):
             plan=rg.planned_replay(self.data,[path])
             self.assertIn(expected,plan["check_ids"])
