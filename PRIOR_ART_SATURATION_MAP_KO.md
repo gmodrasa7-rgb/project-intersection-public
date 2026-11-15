@@ -1,5 +1,8 @@
 # PRIOR ART SATURATION MAP / 선행연구 포화지도
 
+**2026-11-16 / C18 인간-AI 협력·평가자 독립성·contestability 증분 감사:** [공개 원출처 요약](research/PRIOR_ART_C18_AI_COOPERATION_EVALUATOR_AUTONOMY_2026-11-16_KO.md). 자율 연구 에이전트 reward hacking, LLM 사회규범·반복게임, 인간-AI 협력의 긍정·부정 실험, 영향당사자 contestability 문헌을 추가 연결. C18은 선별된 원출처 증분 목록이며 C01–C17과의 전역 DOI/데이터셋 중복검사, 양방향 인용망, 전문 선별이 끝나지 않았다. **문헌 포화·독립 재현·현실의 보편적 공존은 미입증.** `SEARCH_ACTIVE / SATURATION_NOT_VERIFIED`.
+
+
 **2026-10-21 / C17 제재·운명연동·진화된 의존의 학술 논쟁/반례 추적:** [원저자 6편·상호 반박 2편·선별 검색 영수증](research/PRIOR_ART_C17_SANCTIONS_FIDELITY_EVOLVED_DEPENDENCE_2026-10-21_KO.md) · [DOI/범위/접근등급 JSON 8건](research/PRIOR_ART_C17_SANCTIONS_FIDELITY_EVOLVED_DEPENDENCE_2026-10-21.json). Kiers(2003)의 제재 발견과 Marco 외(2009)의 미검출은 **설계·측정이 다른 결과**로 직접 재현 충돌을 확정할 수 없다. Weyl 외(2010)의 partner fidelity feedback 설명에 Kiers 외(2011)가 공개 반박하고 Weyl 외(2011)가 재반박했다. de Mazancourt 외(2005)는 **현재 의존/관계 유지 이익 ≠ 의존 형성 전 반사실적 장기 이익**을 구별한다. Akçay·Simms(2011)에서는 선택지 존재가 상대/상황에 따라 결과 악화를 낳을 수 있다. **협력 ≠ 독립·자발·이탈권 보존**. 원문/독립재현/인용망 미완료. `SEARCH_ACTIVE / SATURATION_NOT_VERIFIED`.
 
 **2026-10-21 / C16 비대칭 공생·이탈·제재의 생태학 원저자 선별조사:** [C16 원저자 3편·선별 검색 영수증·한계](research/PRIOR_ART_C16_MUTUALISM_ASYMMETRY_2026-10-21_KO.md) — Bshary·Grutter(2002/2005) 청소어-고객어의 이탈·추격, Kiers 외(2003) 콩-근류균의 제재. 기존 Noë·Hammerstein(1994)은 C01 등록으로 중복 제외. **제재/이탈로 유지되는 관측 협력은 내재적 타자존중이나 AI 극한 무제재 공존을 입증하지 않음.** 전역 중복 대조·인용망·반대원저 미완료; `SEARCH_ACTIVE / SATURATION_NOT_VERIFIED`.
