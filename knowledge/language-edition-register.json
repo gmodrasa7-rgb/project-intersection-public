@@ -1,6 +1,6 @@
 {
   "schema_version": "pi-language-edition-register/v0.1",
-  "updated": "2026-10-22",
+  "updated": "2026-11-16",
   "baseline_repository_tree_sha": "b2055f40a1e0cabe38f3c6e8c984228c1c2a7e0f",
   "baseline_scope": "Preserve main's latest language inventory and original pair lineages; add research-version EN/KO combined guide. Historical baseline-tree SHA is not a current head. Meaning equivalence NOT_INDEPENDENTLY_VERIFIED.",
   "policy": {
@@ -621,6 +621,34 @@
         "Pre-registration proposal not independently filed, approved, run, or statistically powered.",
         "This does not measure persistent current-LLM selfhood, original B numerical identity or human/AI coexistence."
       ]
+    },
+    {
+      "id": "PI-PRIOR-ART-C18-20261116",
+      "original_1_english": "research/PRIOR_ART_C18_AI_COOPERATION_EVALUATOR_AUTONOMY_2026-11-16_EN.md",
+      "original_2_korean": "research/PRIOR_ART_C18_AI_COOPERATION_EVALUATOR_AUTONOMY_2026-11-16_KO.md",
+      "kind": "selected_prior_art_increment_human_ai_cooperation_evaluator_independence_contestability",
+      "structural_pair_present": true,
+      "meaning_review_status": "NOT_INDEPENDENTLY_VERIFIED",
+      "original_conception_language": "KO_USER_RESEARCH_GOAL_AI_ASSISTED_LITERATURE_SEARCH_AND_SYNTHESIS",
+      "independent_review_receipt": null,
+      "one_sided_edit_exception": null,
+      "known_divergences": [
+        "The EN and KO editions are parallel summaries, not independently certified translations.",
+        "Some publisher records were inspected at abstract/metadata level only; the access status is disclosed in the Korean canonical detailed review.",
+        "C18 is an incremental selected-source map; global C01-C17 deduplication, full-text screening, citation chaining and saturation are incomplete.",
+        "No independent replication, AI consciousness or universal coexistence claim is supported."
+      ]
+    },
+    {
+      "id": "PI-C19-PRIOR-ART",
+      "original_1_english": "research/PRIOR_ART_C19_AGENTIC_REWARD_HACKING_NORMS_CONTESTABILITY_2026-11-16_EN.md",
+      "original_2_korean": "research/PRIOR_ART_C19_AGENTIC_REWARD_HACKING_NORMS_CONTESTABILITY_2026-11-16_KO.md",
+      "kind": "research_source_note",
+      "structural_pair_present": true,
+      "meaning_review_status": "NOT_INDEPENDENTLY_VERIFIED",
+      "original_conception_language": "NOT_VERIFIED",
+      "independent_review_receipt": null,
+      "one_sided_edit_exception": null
     }
   ],
   "legacy_priority_unresolved": [
@@ -662,13 +690,13 @@
     }
   ],
   "metrics": {
-    "markdown_total": 264,
+    "markdown_total": 268,
     "filename_classes": {
       "UNMARKED_LANGUAGE_UNVERIFIED": 46,
       "LEGACY_MIXED_READER_ENTRY": 2,
-      "KO_SUFFIX_UNVERIFIED": 121,
+      "KO_SUFFIX_UNVERIFIED": 123,
       "ORDERED_BILINGUAL_FOUNDER_OR_GOVERNANCE": 2,
-      "EN_SUFFIX_UNVERIFIED": 51,
+      "EN_SUFFIX_UNVERIFIED": 53,
       "COMBINED_NAMING_UNVERIFIED": 42
     },
     "meaning_verified_pairs": 0,
@@ -1990,6 +2018,30 @@
       "path": "research/PRIOR_ART_C17_SANCTIONS_FIDELITY_EVOLVED_DEPENDENCE_2026-10-21_KO.md",
       "filename_class": "KO_SUFFIX_UNVERIFIED",
       "counterpart_path": null,
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "research/PRIOR_ART_C18_AI_COOPERATION_EVALUATOR_AUTONOMY_2026-11-16_EN.md",
+      "filename_class": "EN_SUFFIX_UNVERIFIED",
+      "counterpart_path": "research/PRIOR_ART_C18_AI_COOPERATION_EVALUATOR_AUTONOMY_2026-11-16_KO.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "research/PRIOR_ART_C18_AI_COOPERATION_EVALUATOR_AUTONOMY_2026-11-16_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": "research/PRIOR_ART_C18_AI_COOPERATION_EVALUATOR_AUTONOMY_2026-11-16_EN.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "research/PRIOR_ART_C19_AGENTIC_REWARD_HACKING_NORMS_CONTESTABILITY_2026-11-16_EN.md",
+      "filename_class": "EN_SUFFIX_UNVERIFIED",
+      "counterpart_path": "research/PRIOR_ART_C19_AGENTIC_REWARD_HACKING_NORMS_CONTESTABILITY_2026-11-16_KO.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "research/PRIOR_ART_C19_AGENTIC_REWARD_HACKING_NORMS_CONTESTABILITY_2026-11-16_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": "research/PRIOR_ART_C19_AGENTIC_REWARD_HACKING_NORMS_CONTESTABILITY_2026-11-16_EN.md",
       "content_equivalence": "NOT_REVIEWED"
     },
     {
