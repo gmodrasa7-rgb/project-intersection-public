@@ -134,6 +134,8 @@ class ReplayGateTests(unittest.TestCase):
             ("tools/check_readme_l0.py", "README_L0"),
             (".github/workflows/public-repository-audit.yml", "FLR_ALL_TESTS"),
             ("PRIOR_ART_SATURATION_MAP_KO.md", "NAV_LINKS"),
+            ("knowledge/language-edition-register.json", "RISE_MANIFEST"),
+            ("operations/PI_RISE_V0_2_0_VERSION_MANIFEST.json", "RISE_MANIFEST"),
         ):
             plan=rg.planned_replay(self.data,[path])
             self.assertIn(expected,plan["check_ids"])
