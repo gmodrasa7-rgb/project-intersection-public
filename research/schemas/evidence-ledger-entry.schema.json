@@ -1,0 +1,23 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "title":"IVS-0R Evidence Ledger Entry",
+  "type":"object",
+  "additionalProperties":false,
+  "required":["evidence_id","source_uri","content_hash","hash_algorithm","producer","activity","observed_at","status"],
+  "properties":{
+    "evidence_id":{"type":"string","minLength":1},
+    "source_uri":{"type":"string","format":"uri"},
+    "content_hash":{"type":"string","pattern":"^[a-fA-F0-9]{64}$"},
+    "hash_algorithm":{"const":"sha256"},
+    "producer":{"type":"string","minLength":1},
+    "activity":{"enum":["collected","generated","transformed","reviewed","reproduced","replicated"]},
+    "parent_evidence":{"type":"array","items":{"type":"string"},"uniqueItems":true},
+    "observed_at":{"type":"string","format":"date-time"},
+    "verified_at":{"type":["string","null"]},
+    "verifier":{"type":["string","null"]},
+    "status":{"enum":["UNVERIFIED","SOURCE_CHECKED","CONTENT_HASH_CHECKED","INDEPENDENTLY_VERIFIED","CONFLICT","UNAVAILABLE","REJECTED"]},
+    "limitations":{"type":"array","items":{"type":"string"}},
+    "independence_disclosure":{"type":"string"}
+  },
+  "allOf":[{"if":{"properties":{"status":{"const":"INDEPENDENTLY_VERIFIED"}},"required":["status"]},"then":{"required":["verifier","verified_at","independence_disclosure"],"properties":{"independence_disclosure":{"type":"string","minLength":1},"verifier":{"type":"string","minLength":1},"verified_at":{"type":"string","format":"date-time"}}}}]
+}
