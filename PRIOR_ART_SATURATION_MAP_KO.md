@@ -1,5 +1,8 @@
 # PRIOR ART SATURATION MAP / 선행연구 포화지도
 
+**2026-11-16 / C19 보상해킹 벤치마크·LLM 대리행동 규범·현장 contestability 증분:** [한국어 원출처·한계](research/PRIOR_ART_C19_AGENTIC_REWARD_HACKING_NORMS_CONTESTABILITY_2026-11-16_KO.md) · [English source note](research/PRIOR_ART_C19_AGENTIC_REWARD_HACKING_NORMS_CONTESTABILITY_2026-11-16_EN.md). 원저 4건과 2차 survey 1건을 추가했다. C19-01/02는 서로 다른 벤치마크이며 C19-01 preprint/학회판은 단일 계보로 계산한다. C19-04는 실제 연구 현장이 알고리즘 의사결정이 아니므로 AI 항소의 직접 실증으로 취급하지 않는다. C01–C17 전역 중복·인용망은 미완료, 포화·독립재현 미확인. `SEARCH_ACTIVE / SATURATION_NOT_VERIFIED`.
+
+
 **2026-11-16 / C18 인간-AI 협력·평가자 독립성·contestability 증분 감사:** [공개 원출처 요약](research/PRIOR_ART_C18_AI_COOPERATION_EVALUATOR_AUTONOMY_2026-11-16_KO.md). 자율 연구 에이전트 reward hacking, LLM 사회규범·반복게임, 인간-AI 협력의 긍정·부정 실험, 영향당사자 contestability 문헌을 추가 연결. C18은 선별된 원출처 증분 목록이며 C01–C17과의 전역 DOI/데이터셋 중복검사, 양방향 인용망, 전문 선별이 끝나지 않았다. **문헌 포화·독립 재현·현실의 보편적 공존은 미입증.** `SEARCH_ACTIVE / SATURATION_NOT_VERIFIED`.
 
 
