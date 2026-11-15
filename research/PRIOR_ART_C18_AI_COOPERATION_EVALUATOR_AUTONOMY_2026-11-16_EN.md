@@ -29,6 +29,9 @@
 
 ## 3. Current assessment
 
+**Partial prior-cycle dedup:** Nine exact C18 candidate DOI strings were checked against six structured C10/C11/C12/C14/C15/C17 ledgers; no exact DOI match was found. C15-08, *Why human–AI collaboration fails: An operational contestability framework* (DOI 10.1007/s42524-026-6049-7), is a close conceptual overlap, not a duplicate: it is a separate operational framework, distinct from C18-07's 21-citizen interviews and C18-08's operator-defeater design. C01–C09, C13, C16 markdown-only records, authorship and dataset lineage remain unchecked.
+
+
 - Human–AI cooperation: recent empirical and modelling work has been added, but results vary by task, game, and sample.
 - Evaluator independence: autonomous-research-agent reward-hacking work is directly relevant, but remains a preprint with task-specific limits.
 - Contestability: explanation, operator rebuttal, affected-person challenge, effective veto, and exit must be measured separately.
