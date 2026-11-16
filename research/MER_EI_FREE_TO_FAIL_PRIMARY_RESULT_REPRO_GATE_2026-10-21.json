@@ -1,6 +1,6 @@
 {
   "schema_version": "pi-mer-ei-primary-preprint-evidence-and-reproduction-gate/0.1",
-  "date": "2026-10-21",
+  "date": "2026-11-17",
   "rvd_current": "v0.7.0",
   "new_hypotheses": 0,
   "new_project_empirical_results": 0,
@@ -18,7 +18,12 @@
     "version": "2023 IZA DP16151; forthcoming Economic Journal indicated by authors' institute listings",
     "journal_listing": "https://www.ifo.de/en/publications/2026/contribution-refereed-journal/free-fail-paternalistic-preferences-united-states",
     "preregistration": "AEARCTR-0004630",
-    "published_2026_final_paper_text_compared": false
+    "published_2026_final_paper_text_compared": false,
+    "journal_publication_date": "2026-10-29",
+    "journal_doi": "10.1093/ej/ueag136",
+    "journal_official_replication_doi": "10.5281/zenodo.23420380",
+    "journal_official_replication_url": "https://zenodo.org/records/23420380",
+    "journal_replication_note": "Journal landing page explicitly points to DOI 10.5281/zenodo.23420380 and states data/code are in journal repository and were checked for reproducibility. This is the publisher's statement, not an independent rerun by Project Intersection."
   },
   "preprint_study_1": {
     "participants": 8004,
@@ -75,37 +80,28 @@
   },
   "replication_package": {
     "host": "Zenodo",
-    "doi": "10.5281/zenodo.23420381",
-    "url": "https://zenodo.org/records/23420381",
-    "posted_date": "2026-10-16",
-    "created_metadata": "2026-10-19",
-    "status": "OPEN_LISTED_NOT_DOWNLOADED",
-    "files": [
-      {
-        "name": "3-replication-package.zip",
-        "size": "1.5MB",
-        "claimed_md5": "7f1ebe690e3704d8ba81409626834b77"
-      },
-      {
-        "name": "README.pdf",
-        "size": "33.2kB",
-        "claimed_md5": "409f958d3c6f4f5490f776c66dd7a602"
-      }
-    ],
-    "download_attempts": [
-      "Web ZIP link timeout, PDF binary decoding error",
-      "container.download ZIP failed",
-      "container requests Zenodo API DNS unavailable"
-    ],
-    "file_contents_read": false,
+    "journal_cited_official_doi": "10.5281/zenodo.23420380",
+    "journal_cited_official_url": "https://zenodo.org/records/23420380",
+    "previously_logged_different_record_doi": "10.5281/zenodo.23420381",
+    "previously_logged_different_record_url": "https://zenodo.org/records/23420381",
+    "record_identity_warning": "Do not treat .380 and .381 as identical or interchangeable. The journal article landing page explicitly cites .380. .381 is a separate record and was incorrectly treated as the journal-cited package in the earlier gate.",
+    "journal_cited_package_file_bytes": "NOT_DOWNLOADED",
+    "journal_cited_readme_contents": "NOT_READ",
+    "archive_hashes_verified": false,
     "author_code_executed": false,
-    "licensed_redistribution_verified": false
+    "license_and_software_reviewed": false,
+    "author_reported_reproducibility_check": "JOURNAL_STATES_CHECKED",
+    "project_independent_reproduction": "NOT_RUN",
+    "access_attempts_for_earlier_23420381": [
+      "web page metadata retrieved; ZIP and README listed but bytes not retrieved"
+    ]
   },
   "methodological_boundary": [
     "No claim that original 2026 final published numerical estimates match 2023 preprint until checked",
     "Behavioral soft-vs-hard choice does not identify intrinsic mind, original B identity, or strong-power domination choices",
     "Not an Ambuehl 2021 replication; different author study/design",
-    "Retention of nominal choice menu does not prove informed consent or post-exit viability"
+    "Retention of nominal choice menu does not prove informed consent or post-exit viability",
+    "Journal-published 2026 record and journal-cited Zenodo .380 supersede the older .381 record for official replication-package routing; no equivalence between .380 and .381 assumed."
   ],
   "release_gate": {
     "A0_primary_sources": "SOURCE_PREPRINT_READ_AND_SCREENSHOT_CHECKED",
@@ -116,10 +112,10 @@
     "A5_RVD_AI_motive_experiment": "NOT_RUN"
   },
   "next_actions": [
-    "Access Zenodo files via authorized official download channel and verify explicit licensing before processing",
-    "Check README software dependencies, data files, privacy and redistribution terms",
-    "Compute actual archive hashes and map variable/analysis script origin",
-    "Reproduce one 2023 preprint row/table with preregistered tolerances, then verify 2026 journal revision consistency",
+    "Open official journal-cited Zenodo DOI .380; download only its own README and archive via authorized tool",
+    "Verify .380 archive checksum against official metadata; inspect license, privacy and software before extracting/processing",
+    "Compare 2026 journal accepted manuscript and online appendix against 2023 IZA working paper; update every numeric claim with exact version provenance",
+    "Execute one author table independently and record exact environment/output before any evidence upgrade",
     "Do not upload subject data publicly without permission"
   ],
   "post_release_2026_10_22_partial_identification": {
