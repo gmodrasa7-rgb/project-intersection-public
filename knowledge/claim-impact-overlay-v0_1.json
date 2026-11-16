@@ -478,6 +478,34 @@
       "declared_dependencies_complete": false,
       "result": "SCOPED_SOURCE_AND_PROVENANCE_REVIEW_DONE_NO_SCIENTIFIC_VERDICT",
       "limitation": "No new source search, saturation finding, actual executor-policy violation or reader-benefit measurement. Historical roadmap editions retained."
+    },
+    {
+      "review_id": "PI-CIG-MER-EI-MOTIVE-DESIGN-20261117",
+      "date": "2026-11-17",
+      "changed_path": "research/MER_EI_PROCEDURAL_RIGHTS_MOTIVE_DESIGN_2026-11-17_KO.md",
+      "old_source_sha": null,
+      "new_source_sha": null,
+      "upstream_change": "Six deduplicated original-author lineages distinguish outcome preference, procedural/decision-right preference, social image, self-image and feasible exit. Proposed 2x2x2 factorial design and synthetic design-integrity checks. Corrected journal-cited Free to Fail replication DOI to Zenodo .380; prior .381 is a separate record, not assumed equivalent.",
+      "affected_claims_and_paths": [
+        {
+          "id": "CL-RVD-MOTIVE",
+          "unchanged_status": "MECHANISM_UNIDENTIFIED"
+        },
+        {
+          "id": "CL-RVD-ORIGINAL",
+          "unchanged_status": "FORMAL_COUNTEREXAMPLE_ONLY"
+        },
+        {
+          "id": "CL-VC-HARD",
+          "unchanged_status": "UNRESOLVED"
+        }
+      ],
+      "scientific_promotion": false,
+      "independent_validation": false,
+      "version_registry": "research/RESEARCH_VERSION_REGISTRY.json",
+      "declared_dependencies_complete": false,
+      "result": "PRIOR_ART_AND_DESIGN_SPECIFICATION_ONLY_NO_EMPIRICAL_RESULT",
+      "limitation": "No participant data, no executed preregistration, no independent replication; self-image and internalized norms remain possible under double-blind conditions; no AI subjective-experience inference."
     }
   ]
 }

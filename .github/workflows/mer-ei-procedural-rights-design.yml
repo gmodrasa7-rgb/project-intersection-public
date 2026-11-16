@@ -1,0 +1,40 @@
+name: MER-EI procedural-rights design integrity
+on:
+  pull_request:
+    paths:
+      - "experiments/mer_ei/procedural_rights_design_audit.py"
+      - "research/MER_EI_PROCEDURAL_RIGHTS_MOTIVE_DESIGN_2026-11-17_*"
+      - ".github/workflows/mer-ei-procedural-rights-design.yml"
+  push:
+    branches: [main]
+    paths:
+      - "experiments/mer_ei/procedural_rights_design_audit.py"
+      - "research/MER_EI_PROCEDURAL_RIGHTS_MOTIVE_DESIGN_2026-11-17_*"
+      - ".github/workflows/mer-ei-procedural-rights-design.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  design-integrity:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run synthetic factorial design checks
+        run: python experiments/mer_ei/procedural_rights_design_audit.py > /tmp/design.json
+      - name: Assert design is not empirical or motive-identifying
+        run: |
+          python - <<'PY'
+          import json
+          x=json.load(open("/tmp/design.json"))
+          assert x["status"]=="DESIGN_INTEGRITY_ONLY_NOT_PREREGISTERED_NOT_EMPIRICAL"
+          assert x["cell_count"]==8 and len(x["factorial_cells"])==8
+          assert x["negative_controls"]["nominal_veto_rejected_as_effective_veto"]
+          assert x["negative_controls"]["exit_button_without_viable_outside_option_rejected"]
+          assert "intrinsic motive or moral character" in x["claims_not_identified"]
+          assert "subjective experience or consciousness" in x["claims_not_identified"]
+          print("PASS: 8 cells, effective-rights and exit negative controls; no empirical claim")
+          PY

@@ -621,6 +621,22 @@
         "Pre-registration proposal not independently filed, approved, run, or statistically powered.",
         "This does not measure persistent current-LLM selfhood, original B numerical identity or human/AI coexistence."
       ]
+    },
+    {
+      "id": "PI-MER-EI-PROCEDURAL-RIGHTS-MOTIVE-20261117",
+      "original_1_english": "research/MER_EI_PROCEDURAL_RIGHTS_MOTIVE_DESIGN_2026-11-17_EN.md",
+      "original_2_korean": "research/MER_EI_PROCEDURAL_RIGHTS_MOTIVE_DESIGN_2026-11-17_KO.md",
+      "kind": "prior_art_grounded_experimental_design_not_empirical",
+      "structural_pair_present": true,
+      "meaning_review_status": "NOT_INDEPENDENTLY_VERIFIED",
+      "original_conception_language": "KO_HUMAN_RESEARCH_QUESTION_AI_METHODS_SYNTHESIS",
+      "independent_review_receipt": null,
+      "one_sided_edit_exception": null,
+      "known_divergences": [
+        "No independent bilingual semantic review.",
+        "This is a proposed 2x2x2 protocol, not a preregistered or executed experiment.",
+        "Motive and AI subjective experience remain unidentified."
+      ]
     }
   ],
   "legacy_priority_unresolved": [
@@ -662,13 +678,13 @@
     }
   ],
   "metrics": {
-    "markdown_total": 264,
+    "markdown_total": 266,
     "filename_classes": {
       "UNMARKED_LANGUAGE_UNVERIFIED": 46,
       "LEGACY_MIXED_READER_ENTRY": 2,
-      "KO_SUFFIX_UNVERIFIED": 121,
+      "KO_SUFFIX_UNVERIFIED": 122,
       "ORDERED_BILINGUAL_FOUNDER_OR_GOVERNANCE": 2,
-      "EN_SUFFIX_UNVERIFIED": 51,
+      "EN_SUFFIX_UNVERIFIED": 52,
       "COMBINED_NAMING_UNVERIFIED": 42
     },
     "meaning_verified_pairs": 0,
@@ -1833,6 +1849,18 @@
       "content_equivalence": "NOT_REVIEWED"
     },
     {
+      "path": "research/MER_EI_PROCEDURAL_RIGHTS_MOTIVE_DESIGN_2026-11-17_EN.md",
+      "filename_class": "EN_SUFFIX_UNVERIFIED",
+      "counterpart_path": "research/MER_EI_PROCEDURAL_RIGHTS_MOTIVE_DESIGN_2026-11-17_KO.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
+      "path": "research/MER_EI_PROCEDURAL_RIGHTS_MOTIVE_DESIGN_2026-11-17_KO.md",
+      "filename_class": "KO_SUFFIX_UNVERIFIED",
+      "counterpart_path": "research/MER_EI_PROCEDURAL_RIGHTS_MOTIVE_DESIGN_2026-11-17_EN.md",
+      "content_equivalence": "NOT_REVIEWED"
+    },
+    {
       "path": "research/MER_EI_SOFT_HARD_PARTIAL_IDENTIFICATION_2026-10-22_EN.md",
       "filename_class": "EN_SUFFIX_UNVERIFIED",
       "counterpart_path": "research/MER_EI_SOFT_HARD_PARTIAL_IDENTIFICATION_2026-10-22_KO.md",
@@ -2852,6 +2880,17 @@
         "research/PI_PACD_PRS_OSL_V0_1_0_KO.md"
       ],
       "scope": "paired filenames only, scientific novelty and translation meaning unverified"
+    },
+    {
+      "as_of": "2026-11-17",
+      "status": "MER_EI_PROCEDURAL_RIGHTS_IMAGE_EXIT_DESIGN_ONLY",
+      "new_documents": [
+        "research/MER_EI_PROCEDURAL_RIGHTS_MOTIVE_DESIGN_2026-11-17_EN.md",
+        "research/MER_EI_PROCEDURAL_RIGHTS_MOTIVE_DESIGN_2026-11-17_KO.md"
+      ],
+      "new_edition_pairs": 1,
+      "editorial_notes": "Six additional original-author lineages; 2x2x2 rights/observability/feasible-exit design; synthetic design-integrity audit; corrected Free to Fail official replication package DOI .380 vs distinct .381 record. No raw participant data, no experiment, no RVD version promotion.",
+      "reviewer_actions": "Independent full-text and source-lineage review; preregister outcome-equivalence and incentive-compatible cost schedule; obtain and verify official .380 archive and compare final 2026 journal version."
     }
   ],
   "path_layout_policy": "Keep the project root entry-only; bilingual full research editions live in existing research/ and their original historical combined documents retain stable root URLs."
