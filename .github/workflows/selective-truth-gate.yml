@@ -19,7 +19,7 @@ jobs:
   gate-regression:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
       - name: Test refusal to launder unknowns into success
         run: python -m unittest discover -s governance/selective_truth_gate -p "test_*.py" -v
       - name: Validate public synthetic records
