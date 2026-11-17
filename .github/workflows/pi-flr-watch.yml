@@ -23,7 +23,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
       - name: Test privacy, deduplication, and false-recovery negative mutations
         run: python3 -m unittest discover -s tests -p 'test_pi_flr_watch.py' -v
       - name: Scan public GitHub Actions metadata without modifying repository
