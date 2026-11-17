@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
-      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
       - name: Unit regression tests (no credentials, network services or real finances)
         run: python3 -m unittest discover -s tests -p 'test_pi_rise_*.py' -v
       - name: Enforce PI-RISE canonical pointers, Git blob hashes and publication contract
