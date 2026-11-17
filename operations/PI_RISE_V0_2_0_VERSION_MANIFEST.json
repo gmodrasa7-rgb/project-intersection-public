@@ -56,7 +56,7 @@
     },
     {
       "path": ".github/workflows/pi-rise-integrity.yml",
-      "git_blob_sha": "d23b7a91a0f946712b811c7accc62eab71dbc581"
+      "git_blob_sha": "ed445a4003292238af1dbba92224f7a8db2a8d17"
     },
     {
       "path": "knowledge/language-edition-register.json",

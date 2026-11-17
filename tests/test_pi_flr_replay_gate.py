@@ -142,6 +142,16 @@ class ReplayGateTests(unittest.TestCase):
         self.assertEqual(gap["unmapped_material_paths"],["tools/unclassified_analysis.py"])
 
 
+    def test_all_pi_rise_version_manifests_replay_blob_sha_guard(self):
+        for path in (
+            "operations/PI_RISE_V0_2_0_VERSION_MANIFEST.json",
+            "operations/PI_RISE_CASH_TIMING_VERSION_MANIFEST.json",
+            "operations/PI_RISE_VERSION_MANIFEST.json",
+        ):
+            plan = rg.planned_replay(self.data, [path])
+            self.assertEqual(plan["check_ids"], ["RISE_MANIFEST"])
+            self.assertEqual(plan["unmapped_material_paths"], [])
+
     def test_unmapped_python_change_blocks_scoped_success(self):
         plan=rg.planned_replay(self.data,["tools/unclassified_analysis.py"])
         self.assertEqual(plan["unmapped_material_paths"],["tools/unclassified_analysis.py"])
