@@ -49,6 +49,8 @@ DIRECT_PATH_CHECKS = {
     "tools/audit_pi_access.py": ("PI_ACCESS", "NAV_LINKS"),
     "tools/check_readme_l0.py": ("README_L0",),
     ".github/workflows/public-repository-audit.yml": ("README_L0", "NAV_LINKS", "FLR_ALL_TESTS"),
+    "operations/PI_RISE_CASH_TIMING_VERSION_MANIFEST.json": ("RISE_MANIFEST",),
+    "operations/PI_RISE_VERSION_MANIFEST.json": ("RISE_MANIFEST",),
 }
 
 
