@@ -52,7 +52,7 @@
     },
     {
       "path": ".github/workflows/pi-rise-integrity.yml",
-      "git_blob_sha": "640cd1478262b90db7e27d2905c8f44e4f36f3a5"
+      "git_blob_sha": "ed445a4003292238af1dbba92224f7a8db2a8d17"
     }
   ],
   "revision_gate": "Status or rules must be reverified against exact official page and relevant applicant evidence, no synthetic-to-bank certification."
