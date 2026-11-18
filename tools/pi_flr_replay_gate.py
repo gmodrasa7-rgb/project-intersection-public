@@ -25,6 +25,7 @@ COMMANDS={
     "RISE_MANIFEST":["python3","tools/pi_rise_manifest_guard.py"],
     "E010_LINEAGE":["python3","tools/pi_flr_experiment_identity.py"],
     "NAV_LINKS":["python3","tools/check_public_navigation.py","--strict-all"],
+    "BILINGUAL_NAV":["python3","tools/audit_bilingual_navigation.py","--self-test"],
     "PI_ACCESS":["python3","tools/audit_pi_access.py","--self-test"],
     "FLR_META":["python3","tools/pi_flr_audit.py"],
     "FLR_MUTANTS":["python3","-m","unittest","discover","-s","tests","-p","test_pi_flr_replay_gate.py"],
@@ -35,7 +36,7 @@ RULE_CHECKS={
     "R01":("README_L0","LANGUAGE","RISE_MANIFEST"),
     "R02":("RISE_MANIFEST",),
     "R03":("E010_LINEAGE",),
-    "R04":("NAV_LINKS",),
+    "R04":("NAV_LINKS","BILINGUAL_NAV"),
     "R05":("FLR_META","FLR_MUTANTS"),
     "R06":("FLR_META","FLR_MUTANTS"),
     "R07":("FLR_META","FLR_ALL_TESTS"),
@@ -48,6 +49,9 @@ RULE_CHECKS={
 DIRECT_PATH_CHECKS = {
     "tools/audit_pi_access.py": ("PI_ACCESS", "NAV_LINKS"),
     "tools/check_readme_l0.py": ("README_L0",),
+    "knowledge/language-edition-register.json": ("BILINGUAL_NAV",),
+    "navigation/RESEARCH_TOC_EN.md": ("NAV_LINKS", "BILINGUAL_NAV"),
+    "navigation/RESEARCH_TOC_KO.md": ("NAV_LINKS", "BILINGUAL_NAV"),
     ".github/workflows/public-repository-audit.yml": ("README_L0", "NAV_LINKS", "FLR_ALL_TESTS"),
 }
 
