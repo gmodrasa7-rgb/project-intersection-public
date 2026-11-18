@@ -204,6 +204,34 @@ class ReplayGateTests(unittest.TestCase):
                          "BLOCKED_UNMAPPED_MATERIAL")
 
 
+    def test_research_and_navigation_editions_run_bilingual_inventory_and_link_checks(self):
+        paths=[
+            "research/INDEPENDENT_VALIDATION_INFRASTRUCTURE_EN.md",
+            "research/INDEPENDENT_VALIDATION_INFRASTRUCTURE_KO.md",
+            "knowledge/language-edition-register.json",
+            "navigation/RESEARCH_TOC_EN.md",
+            "navigation/RESEARCH_TOC_KO.md",
+        ]
+        plan=rg.planned_replay(self.data,paths)
+        self.assertEqual(plan["check_ids"],["BILINGUAL_NAV","NAV_LINKS"])
+        self.assertEqual(plan["matched_paths"],sorted(paths))
+        self.assertEqual(plan["unmapped_material_paths"],[])
+        called=[]
+        outcome=rg.execute(plan,run=lambda cmd,**kwargs:(called.append(cmd) or SimpleNamespace(returncode=0)))
+        self.assertEqual(outcome["status"],"SCOPED_REPLAY_PASS")
+        self.assertEqual(called,[
+            ["python3","tools/audit_bilingual_navigation.py","--self-test"],
+            ["python3","tools/check_public_navigation.py","--strict-all"],
+        ])
+
+    def test_unclassified_navigation_markdown_still_blocks(self):
+        plan=rg.planned_replay(self.data,["navigation/UNCLASSIFIED_RESEARCH.md"])
+        self.assertEqual(plan["unmapped_material_paths"],["navigation/UNCLASSIFIED_RESEARCH.md"])
+        self.assertEqual(rg.execute(plan,run=lambda *a,**k:self.fail("No allowlisted check"))["status"],
+                         "BLOCKED_UNMAPPED_MATERIAL")
+
+
+
 
 if __name__=="__main__":
     unittest.main()
