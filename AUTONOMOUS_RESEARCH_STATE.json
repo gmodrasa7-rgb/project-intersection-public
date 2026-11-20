@@ -2,10 +2,10 @@
   "schema_version": "1.1",
   "status": "ACTIVE_CONTINUITY",
   "public_repository": "gmodrasa7-rgb/project-intersection-public",
-  "canonical_boundary": "Public continuation pointer only; source artifacts and commit history outrank this state file.",
+  "canonical_boundary": "Public continuation pointer only; current_public_head records the last verified main HEAD immediately before this state snapshot and may lag the commit that carries this snapshot. Resolve main live on every execution; source artifacts and commit history outrank this state file.",
   "recovery_entrypoint": "AUTONOMOUS_RESEARCH_LOOP.md",
-  "current_public_head": "544ea858829859bc6b4f2ffb1323a10e11ebdda7",
-  "updated_at": "2026-10-21T03:27:06Z",
+  "current_public_head": "e81e6657cc33ff6b522bbd90740428a31f7e1c65",
+  "updated_at": "2026-11-13T18:02:34Z",
   "execution_policy": {
     "atomic_material_delta_per_run": 1,
     "require_prior_art_gate": true,

@@ -13,6 +13,7 @@ from types import SimpleNamespace
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/"tools"))
 import pi_flr_replay_gate as rg
+import check_autonomous_research_state as state_check
 
 
 class ReplayGateTests(unittest.TestCase):
@@ -202,6 +203,60 @@ class ReplayGateTests(unittest.TestCase):
         self.assertTrue(set(a["check_ids"])<=set(b["check_ids"]))
         self.assertEqual(rg.execute(b,run=lambda *a,**k:SimpleNamespace(returncode=0))["status"],
                          "BLOCKED_UNMAPPED_MATERIAL")
+
+
+    def test_autonomous_state_change_maps_to_real_state_validation(self):
+        plan=rg.planned_replay(self.data,["AUTONOMOUS_RESEARCH_STATE.json"])
+        self.assertEqual(plan["check_ids"],["AUTONOMOUS_STATE"])
+        self.assertEqual(plan["unmapped_material_paths"],[])
+
+    def test_autonomous_state_checker_change_maps_to_itself(self):
+        plan=rg.planned_replay(self.data,["tools/check_autonomous_research_state.py"])
+        self.assertEqual(plan["check_ids"],["AUTONOMOUS_STATE"])
+        self.assertEqual(plan["unmapped_material_paths"],[])
+
+    def test_state_pointer_must_be_a_valid_ancestor_of_checkout(self):
+        data={
+            "schema_version":"1.1",
+            "status":"ACTIVE_CONTINUITY",
+            "public_repository":"gmodrasa7-rgb/project-intersection-public",
+            "canonical_boundary":"Pointer only; resolve main live.",
+            "current_public_head":"a"*40,
+            "updated_at":"2026-11-14T18:02:34Z",
+            "execution_policy":{"require_read_back":True},
+        }
+        replies=[
+            SimpleNamespace(returncode=0,stdout=""),
+            SimpleNamespace(returncode=0,stdout="b"*40+"\n"),
+            SimpleNamespace(returncode=0,stdout=""),
+            SimpleNamespace(returncode=0,stdout="2\n"),
+        ]
+        def runner(*args,**kwargs):
+            return replies.pop(0)
+        result=state_check.validate_state(data,run=runner)
+        self.assertEqual(result["status"],"PASS")
+        self.assertEqual(result["commits_after_pointer_in_checkout"],2)
+        self.assertFalse(result["scientific_validity_certified"])
+
+    def test_state_pointer_that_is_not_an_ancestor_fails_closed(self):
+        data={
+            "schema_version":"1.1",
+            "status":"ACTIVE_CONTINUITY",
+            "public_repository":"gmodrasa7-rgb/project-intersection-public",
+            "canonical_boundary":"Pointer only.",
+            "current_public_head":"a"*40,
+            "updated_at":"2026-11-14T18:02:34Z",
+            "execution_policy":{"require_read_back":True},
+        }
+        replies=[
+            SimpleNamespace(returncode=0,stdout=""),
+            SimpleNamespace(returncode=0,stdout="b"*40+"\n"),
+            SimpleNamespace(returncode=1,stdout=""),
+        ]
+        def runner(*args,**kwargs):
+            return replies.pop(0)
+        with self.assertRaisesRegex(state_check.StateError,"CURRENT_PUBLIC_HEAD_NOT_ANCESTOR"):
+            state_check.validate_state(data,run=runner)
 
 
 
