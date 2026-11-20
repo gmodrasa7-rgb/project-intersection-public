@@ -227,9 +227,9 @@ class ReplayGateTests(unittest.TestCase):
         }
         replies=[
             SimpleNamespace(returncode=0,stdout=""),
-            SimpleNamespace(returncode=0,stdout="b"*40+"\\n"),
+            SimpleNamespace(returncode=0,stdout="b"*40+"\n"),
             SimpleNamespace(returncode=0,stdout=""),
-            SimpleNamespace(returncode=0,stdout="2\\n"),
+            SimpleNamespace(returncode=0,stdout="2\n"),
         ]
         def runner(*args,**kwargs):
             return replies.pop(0)
@@ -250,7 +250,7 @@ class ReplayGateTests(unittest.TestCase):
         }
         replies=[
             SimpleNamespace(returncode=0,stdout=""),
-            SimpleNamespace(returncode=0,stdout="b"*40+"\\n"),
+            SimpleNamespace(returncode=0,stdout="b"*40+"\n"),
             SimpleNamespace(returncode=1,stdout=""),
         ]
         def runner(*args,**kwargs):
