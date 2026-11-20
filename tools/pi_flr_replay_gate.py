@@ -29,6 +29,7 @@ COMMANDS={
     "FLR_META":["python3","tools/pi_flr_audit.py"],
     "FLR_MUTANTS":["python3","-m","unittest","discover","-s","tests","-p","test_pi_flr_replay_gate.py"],
     "FLR_ALL_TESTS":["python3","-m","unittest","discover","-s","tests","-p","test_pi_flr_*.py"],
+    "AUTONOMOUS_STATE":["python3","tools/check_autonomous_research_state.py"],
 }
 # Match rule identifiers declared in the versioned data. These checks do real work.
 RULE_CHECKS={
@@ -49,6 +50,8 @@ DIRECT_PATH_CHECKS = {
     "tools/audit_pi_access.py": ("PI_ACCESS", "NAV_LINKS"),
     "tools/check_readme_l0.py": ("README_L0",),
     ".github/workflows/public-repository-audit.yml": ("README_L0", "NAV_LINKS", "FLR_ALL_TESTS"),
+    "AUTONOMOUS_RESEARCH_STATE.json": ("AUTONOMOUS_STATE",),
+    "tools/check_autonomous_research_state.py": ("AUTONOMOUS_STATE",),
 }
 
 
