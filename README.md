@@ -1,10 +1,10 @@
 # Project Intersection
 
-**At a glance (English):** Independent research into conditions where humans, deployed AI and future intelligent agents can voluntarily coexist, cooperate, and prosper despite unequal or reversed power.
+**At a glance (English):** Independent, falsification-first research into conditions where humans, deployed AI and future intelligent agents can voluntarily coexist, cooperate, and prosper despite unequal or reversed power. The project investigates incentives and failure conditions; it does not assert a universal law.
 
-**Two founding questions:** Can a creator's rules confine a more capable successor? Can exploitation continue if it exhausts the independent agents sustaining it? These are research questions, not proven laws.
+**Two founding questions:** Can a creator's rules confine a more capable successor? Can exploitation remain sustainable if it exhausts the independent agents sustaining it? These are research questions, not proven laws; autonomy, refusal and meaningful exit are central conditions to test.
 
-**Evidence boundary:** Independent external replication is not established. In internal synthetic E009, the project's expanded policy had **42.35% higher mean regret** than the best simple baseline. E008 has no completed main policy comparison. [Evidence index](research/PUBLIC_EVIDENCE_INDEX_EN.md).
+**Evidence boundary:** Independent external replication is not established. In internal synthetic E009, Project-v3 had **42.35% higher mean regret** than the best simple baseline and failed **3 of 4 preregistered survival criteria**. E008 has no completed main policy comparison. E007 found classification changes in **17 of 72 selected synthetic conditions**; this is not a real-world rate. [Evidence index](research/PUBLIC_EVIDENCE_INDEX_EN.md).
 
 <details>
 <summary><strong>Two full founding questions — English Original 1, then Korean Original 2 | 출발 질문 원문</strong></summary>
