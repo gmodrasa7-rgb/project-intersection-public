@@ -412,6 +412,22 @@ B 식별자가 없거나, 권한 출처가 불명확하거나, 검증기 독립�
 
 ---
 
+## EN — 9. Additional prior-art check: corrigibility is not B-preservation
+
+**Hudson, “Corrigibility Transformation: Constructing Goals That Accept Updates” (arXiv:2510.15395, 2025 preprint; current arXiv record inspected 2026-11-27).** The paper formalizes a transformation for goals to accept proper updates and shutdown, including recursive propagation and discouraging deliberate goal modification. It reports gridworld experiments. Its contribution sharpens the distinction between update-acceptance and the present document's target: accepting a designated update does not, by itself, establish that a particular B's identity, refusal, exit, causal influence, or recovery remains protected after that update. The update channel's legitimacy and the protected party's rights must be specified independently. The paper's results are model- and setup-dependent; they do not establish universal real-world corrigibility or intrinsic concern for B.
+
+- https://arxiv.org/abs/2510.15395
+- Directly inspected claims: abstract and introduction (formal transformation, recursive extension, gridworld experiments); experiment sections (two gridworld tasks). No independent reproduction was performed.
+
+## KO — 9. 추가 선행연구 대조: 교정 가능성은 B 보존과 다르다
+
+**Hudson, “Corrigibility Transformation: Constructing Goals That Accept Updates” (arXiv:2510.15395, 2025년 프리프린트; 2026-11-27 현재 arXiv 원문 확인).** 정당한 업데이트와 종료 요청을 수용하도록 목표를 변환하는 형식적 방법을 제시하고, 하위 에이전트로의 재귀적 전파와 의도적인 목표변경 억제까지 다룬다. 그리드월드 실험도 보고한다. 이 연구는 본 문서의 핵심 구분을 더 분명하게 만든다. 지정된 업데이트를 수용한다는 사실만으로 그 업데이트 이후 특정 B의 정체성·거부권·이탈권·인과적 영향력·복구가 보호된다는 결론은 나오지 않는다. 업데이트 채널의 정당성과 보호 대상의 권리는 별도로 명세해야 한다. 논문의 결과는 해당 모형과 실험설정에 한정되며 현실의 보편적 교정 가능성이나 B에 대한 내재적 배려를 입증하지 않는다.
+
+- https://arxiv.org/abs/2510.15395
+- 직접 확인 범위: 초록·서론(형식적 변환, 재귀적 확장, 그리드월드 실험) 및 실험 절(두 그리드월드 과제). 독립 재현은 수행하지 않았다.
+
+---
+
 ## Evidence and implementation status / 증거·구현 상태
 
 - C05 and C15 were read from the public `main` branch before drafting.
